@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte Microsoft 365 services pour communiquer et collaborer.
 ms.openlocfilehash: c2c81f1be38e0fe203b270eb132bff52be4482a7
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178323"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -50,7 +50,7 @@ Ce résumé vous permet de comprendre rapidement les modèles d’utilisation Of
 
 ![Image du résumé de Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
 
-## <a name="overview"></a>Aperçu
+## <a name="overview"></a>Présentation
 
 Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous pouvez les afficher en choisissant l’onglet en haut de la page du rapport. Toutes les valeurs du mois affichées dans la section supérieure du rapport font référence au dernier mois complet.
 
@@ -131,7 +131,7 @@ Les données de l’application de modèle couvrent actuellement le même ensemb
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>En quoi les données de l’application modèle diffèrent-elles des données des rapports d’utilisation ?
 
-Les données sous-jacentes que vous voyez dans l’application de modèle sont en correspondance avec les données que vous voyez dans les rapports d’activité du Centre d’administration Microsoft 365. Les principales différences sont que les données du Centre d’administration sont disponibles pour les 7/30/90/180 derniers jours, tandis que l’application modèle présente les données sur une base mensuelle pendant 12 mois au plus.
+Les données sous-jacentes que vous voyez dans l’application de modèle sont en correspondance avec les données que vous voyez dans les rapports d’activité du Centre d'administration Microsoft 365. Les principales différences sont que les données du Centre d’administration sont disponibles pour les 7/30/90/180 derniers jours, tandis que l’application modèle présente les données sur une base mensuelle pendant 12 mois au plus.
 
 En outre, les détails au niveau de l’utilisateur dans l’application de modèle sont disponibles uniquement pour le dernier mois complet pour les utilisateurs qui se sont vus attribuer une licence de produit et qui ont effectué une activité.
 
@@ -213,7 +213,7 @@ Si un partenaire dispose de droits d’administrateur délégués, il peut se co
 
 Oui, voir [Rendre anonymes les données collectées.](enable-usage-analytics.md#make-the-collected-data-anonymous)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Activer l'analyse de l'utilisation de Microsoft 365](enable-usage-analytics.md) (article)\
 [Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation](navigate-and-utilize-reports.md) (article)\

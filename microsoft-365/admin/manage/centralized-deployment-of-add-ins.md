@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
 ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564392"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176348"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -37,7 +37,7 @@ Une déploiement centralisé offre les avantages suivants :
 
 - Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
 
-- Lorsque l’application Office pertinente démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
+- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
 
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -62,7 +62,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
 ### <a name="office-requirements"></a>Office Conditions requises
 
-- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des valeurs suivantes :
+- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
   - Sur un appareil Windows, version 1704 ou ultérieure des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium.
   - Sur un Mac, version 15.34 ou ultérieure.
 
@@ -116,7 +116,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 
 - Déploiement centralisé prêt - Si les autres éléments sont vérifiés
 
-- Office plan : le plan de Office leur licence
+- Office plan : le plan de Office dont ils sont titulaires d’une licence
 
 - Activation d'Office - Si l'utilisateur a activé Office
 
@@ -127,7 +127,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 
 ## <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
 
-La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
+La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, notamment les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
 
 > [!NOTE]
 > Les groupes de sécurité sans extension messagerie ne sont pas actuellement pas pris en charge.

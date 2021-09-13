@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: d8ae4b902bd7544940834f3661d4461f1baebea7ba8170bd87248553dfe5cb05
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a487148601f9565a82f8046019fcf6cb4c2825c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177564"
 ---
 # <a name="troubleshoot-service-issues"></a>Résoudre des problèmes de service
 
@@ -87,7 +87,7 @@ La prise en charge de l’utilisation de la virgule comme séparateur dans les n
 
 Lorsque vous utilisez Azure Defender pour surveiller les serveurs, un client Microsoft Defender pour Endpoint est automatiquement créé. Les données de Microsoft Defender pour point de terminaison sont stockées en Europe par défaut.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)
 - [Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements](event-error-codes.md)

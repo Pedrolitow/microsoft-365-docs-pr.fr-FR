@@ -26,12 +26,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Découvrez comment configurer Microsoft Business Premium, Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business ou un abonnement Office 365 pour l’éducation.
-ms.openlocfilehash: 4b88e0a22f5609a70edca498e2642dc3a6ef64886212f79cf2586259d829a58f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 139235926d6e7ad740b16169fa6ec08fd55b74be
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176187"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 

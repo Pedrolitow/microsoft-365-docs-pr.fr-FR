@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180970"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Pilote Microsoft Cloud App Security avec Microsoft 365 Defender
 
@@ -83,7 +83,7 @@ Essayez les Sécurité des applications cloud didacticiels suivants :
 
 Pour plus d’informations sur le Microsoft Cloud App Security avancé, voir la [vidéo.](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 [Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote](eval-defender-investigate-respond.md)
 

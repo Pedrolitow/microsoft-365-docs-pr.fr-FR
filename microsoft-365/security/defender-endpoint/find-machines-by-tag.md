@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5cf987c71ff3da40149dd18ba2578ffc11bd01774b83ae24ee9a3b3fba7e7b23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f8c6c289cca61e5a0891af04ef97831a27b341f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833950"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177660"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 
@@ -81,7 +81,7 @@ Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Nom|Type|Description
 :---|:---|:---
 tag|Chaîne|Nom de la balise. **Obligatoire**.
-useStartsWithFilter|Valeur booléenne|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
+useStartsWithFilter|Boolean|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 

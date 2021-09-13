@@ -19,11 +19,11 @@ ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le Centre de conformité Microsoft 365 afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
 ms.openlocfilehash: 85362983749659bd6193e59b85e1d8f9eddaf83e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181307"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 

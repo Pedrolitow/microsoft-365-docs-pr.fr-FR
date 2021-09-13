@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Utilisez la protection contre la perte de données (DLP) dans SharePoint Online pour découvrir les documents qui contiennent des données sensibles dans l’ensemble de votre client.
 ms.openlocfilehash: e2ecaa6b4b230db09095a9f9e5008dfdf0698043
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573222"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182359"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -58,7 +58,7 @@ Enfin, la plage de confiance est le niveau de confiance auquel le type d'informa
 
 DLP dans SharePoint présente également la propriété LastSensitiveContentScan, qui peut vous aider à rechercher des fichiers analysés au cours d’une période spécifique. Pour obtenir des exemples de requête avec la propriété, voir les exemples de requêtes complexes `LastSensitiveContentScan` dans la section suivante. [](#examples-of-complex-queries)
 
-Vous pouvez utiliser non seulement des propriétés spécifiques à la DLP pour créer une requête SharePoint, mais également des propriétés de recherche eDiscovery standard telles que `Author` ou `FileExtension` . Vous pouvez utiliser des opérateurs pour créer des requêtes complexes. Pour obtenir la liste des propriétés et des opérateurs disponibles, consultez le billet de blog Utilisation des propriétés et des opérateurs de recherche avec [eDiscovery.](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery)
+Vous pouvez utiliser non seulement des propriétés spécifiques à DLP pour créer une requête, mais également des propriétés de SharePoint eDiscovery standard telles `Author` que ou `FileExtension` . Vous pouvez utiliser des opérateurs pour créer des requêtes complexes. Pour obtenir la liste des propriétés et des opérateurs disponibles, consultez le billet de blog Utilisation des propriétés et des opérateurs de recherche avec [eDiscovery.](/archive/blogs/quentin/using-search-properties-and-operators-with-ediscovery)
 
 ## <a name="examples-of-complex-queries"></a>Exemples
 
@@ -85,7 +85,7 @@ Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples 
 
 ****
 
-|Requête non prise en charge|Raison|
+|Requête non prise en charge|Reason|
 |---|---|
 |`SensitiveType:"Credit Card Number|.."`|Vous devez ajouter au moins un nombre.|
 |`SensitiveType:"NotARule"`|« NotARule » n’est pas un nom de type sensible valide. Seuls les noms dans [l’inventaire des types d’informations sensibles](/Exchange/what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help) fonctionnent dans les requêtes DLP.|

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 91bd008d44495e4c304b353fcbc22785915501e7cfbe000e5cc70eebe5842b7b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d3ac49b4afde0951e7a034c5c11114afbc52c293
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177515"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exemple de recherche avancée pour Microsoft Defender pour Office 365
 
@@ -40,9 +40,9 @@ Souhaitez-vous commencer à rechercher des menaces d’e-mail à l’aide de la 
 La section [Prise en main](/microsoft-365/security/office-365-security/defender-for-office-365#getting-started) de [l’article Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) présente des blocs de configuration initiale logiques qui ressemblent à ceci :
 
 1. Configurez tous les contrôles avec « Anti » dans le nom.
-   - Anti-programme malveillant
+   - Ant-programme malveillant
    - Anti-hameçonnage
-   - Anti-spam
+   - Anti-courrier indésirable
 2. Tout configurer avec « Coffre » dans le nom.
    - Liens sûrs
    - Pièces jointes fiables

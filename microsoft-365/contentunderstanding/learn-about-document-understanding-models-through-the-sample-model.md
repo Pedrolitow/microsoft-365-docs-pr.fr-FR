@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Découvrez les modèles de présentation des documents via le modèle d’échantillon.
 ms.openlocfilehash: e89c0723b978b4d5a206119e10b5a712668b406a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179803"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>En savoir plus sur les modèles de présentation des documents via un modèle d’échantillon
 
@@ -44,7 +44,7 @@ Vous ne pouvez pas seulement examiner et analyser le modèle d’échantillon po
 
 
 ## <a name="see-also"></a>Voir aussi
-[Créer un classificateur](create-a-classifier.md)
+[Créer un classifieur](create-a-classifier.md)
 
 [Créer un extracteur](create-an-extractor.md)
 

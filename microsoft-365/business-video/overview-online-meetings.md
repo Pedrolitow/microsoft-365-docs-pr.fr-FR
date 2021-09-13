@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment héberger des réunions en ligne pour votre entreprise.
-ms.openlocfilehash: 7b744410f8553a6da384142d6edc9a2377a8d8d74539dcb62d8011fdc045e988
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181738"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Héberger des réunions en ligne pour votre entreprise
 

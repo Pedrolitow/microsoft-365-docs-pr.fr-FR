@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources pour les utilisateurs qui utilisent Office 2007 ou Office 2010 pour les aider à planifier leur mise à niveau.
 ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58378034"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179708"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
@@ -44,7 +44,7 @@ Microsoft 365 inclut les licences et fonctionnalités pour vous assurer que votr
   
 Microsoft 365 est la façon de transformer numériquement votre entreprise en améliorant constamment les appareils et les expériences de productivité activés et sécurisés par le cloud Microsoft.
  
-|Ressource|Description|
+|Resource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Obtenez des informations sur les versions de Microsoft 365.|
 |[documentation Microsoft 365 entreprise](../admin/index.yml)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
@@ -54,7 +54,7 @@ Microsoft 365 est la façon de transformer numériquement votre entreprise en am
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Que se passe-t-il si je ne suis pas mis à niveau ?
 
-Vous pouvez choisir de ne pas mettre à niveau pour le moment. Vos serveurs et applications locaux continueront de s’exécuter. Toutefois, lorsque vous ne recevez plus de mises à jour de sécurité ou d’options de support, votre organisation peut être vulnérable aux violations de sécurité. Nous vous recommandons vivement de planifier votre mise à niveau prochainement. Vous pouvez mettre à niveau Microsoft 365 ou vers des versions plus récentes de vos serveurs et applications locaux.
+Vous pouvez choisir de ne pas mettre à niveau pour le moment. Vos serveurs et applications locaux continueront de s’exécuter. Toutefois, lorsque vous ne recevez plus de mises à jour de sécurité ou d’options de support, votre organisation peut être vulnérable aux violations de sécurité. Nous vous recommandons vivement de planifier votre mise à niveau prochainement. Vous pouvez mettre à niveau vers Microsoft 365 ou vers des versions plus récentes de vos serveurs et applications locaux.
 
 ## <a name="what-upgrade-options-are-available"></a>Quelles options de mise à niveau sont disponibles ?      
 
@@ -91,7 +91,7 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 
 - **Utilisez Office dans un navigateur gratuitement.** Créez, affichez et modifiez des Office dans votre navigateur. Accédez à ces fichiers à partir de n’importe quel appareil dispose d’un accès à Internet. 
 
-  [Office sur le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word sur le Web,](https://go.microsoft.com/fwlink/p/?linkid=746664) [Excel sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway,](https://go.microsoft.com/fwlink/p/?linkid=746675) [e-mail,](https://go.microsoft.com/fwlink/p/?linkid=746676) [](https://go.microsoft.com/fwlink/p/?linkid=746678)calendrier [et OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Pour commencer, visitez [Office.com](https://office.com) et connectez-vous à l’aide de [votre compte Microsoft.](https://account.microsoft.com/account) Si vous n’avez pas de compte Microsoft, vous pouvez en créer un [sur Office.com.](https://office.com)
+  [Office sur le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway,](https://go.microsoft.com/fwlink/p/?linkid=746675) [e-mail,](https://go.microsoft.com/fwlink/p/?linkid=746676)calendrier [et OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). [](https://go.microsoft.com/fwlink/p/?linkid=746678) Pour commencer, visitez [Office.com](https://office.com) et connectez-vous à l’aide de [votre compte Microsoft.](https://account.microsoft.com/account) Si vous n’avez pas de compte Microsoft, vous pouvez en créer un [sur Office.com.](https://office.com)
 
 - **Essayez Microsoft 365 Famille.** Démarrez une version [d Microsoft 365 Famille](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) pour voir comment elle fonctionne pour vous. Avec Microsoft 365 Famille, vous pourrez profiter du stockage cloud avec OneDrive.
 
@@ -112,6 +112,6 @@ Si vous choisissez de ne pas mettre à niveau maintenant, vos applications Offic
 - [Mettre à niveau des serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)
 - [Mettre à niveau des serveurs et clients Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
   
 [Politique de cycle de vie Microsoft](/lifecycle/)

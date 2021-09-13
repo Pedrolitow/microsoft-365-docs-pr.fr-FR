@@ -21,11 +21,11 @@ search.appverid: MET150
 description: En savoir plus sur Microsoft 365 l’inscription en libre-service et les programmes libre-service disponibles tels que Microsoft Power Apps, Microsoft Power Automate et Dynamics 365 for Finance.
 ms.date: 03/17/2021
 ms.openlocfilehash: 7c4986beb1c920865cee28f2729859e426944f3f
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178763"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service dans votre organisation
 
@@ -38,7 +38,7 @@ L’exemple suivant décrit le fonctionnement de l’inscription autonome pour u
 1. Les étudiants et les membres du corps enseignant ont des adresses de messagerie qui indiquent qu’ils sont associés à votre établissement. Par exemple, l’adresse de jakob@uw.edu peut indiquer un étudiant de l’Université de Washington.
 2. Les étudiants et les enseignants se connectent à notre [site web](https://go.microsoft.com/fwlink/p/?LinkId=536628)et utilisent leur adresse de messagerie pour s’inscrire aux services que votre organisation propose, tels Applications Microsoft 365 pour les grandes entreprises. Ils peuvent également s’inscrire à d’autres services gratuits que nous proposons.
 3. Nous validons leur adresse e-mail, puis ils peuvent commencer à utiliser Microsoft 365, Power BI ou d’autres services immédiatement.
-4. En tant qu’administrateur commercial, vous pouvez voir qui s’est inscrit à un abonnement en sélectionnant l’abonnement sur la **page** Gestion des licences dans la Centre d’administration Microsoft 365. Ainsi, vous pouvez voir s’il existe des licences nouvelles ou non reconnues pour les services dans votre client. Pour contrôler si les utilisateurs peuvent s’inscrire à des abonnements en libre-service, utilisez l’cmdlet [PowerShell Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings) avec le paramètre **AllowAdHocSubscriptions.** Pour plus d’informations, [voir Comment contrôler les paramètres libre-service ?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+4. En tant qu’administrateur commercial, vous pouvez voir qui s’est inscrit à un abonnement en sélectionnant l’abonnement sur la **page** Gestion des licences dans la Centre d'administration Microsoft 365. Ainsi, vous pouvez voir s’il existe des licences nouvelles ou non reconnues pour les services dans votre client. Pour contrôler si les utilisateurs peuvent s’inscrire à des abonnements en libre-service, utilisez l’cmdlet [PowerShell Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings) avec le paramètre **AllowAdHocSubscriptions.** Pour plus d’informations, [voir Comment contrôler les paramètres libre-service ?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="available-self-service-programs"></a>Programmes libre-service disponibles
 

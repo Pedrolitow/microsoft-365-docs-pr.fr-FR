@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer des règles de messagerie pour empêcher les ransomware.
-ms.openlocfilehash: 3dacaf51319f9a4b037d2e05c99ab9fa0e2e7e76807854c71997930e31193681
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 96822916753f2f70d481c213e7e31046f7081446
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181720"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>Créer des règles de messagerie pour empêcher les ransomware
 

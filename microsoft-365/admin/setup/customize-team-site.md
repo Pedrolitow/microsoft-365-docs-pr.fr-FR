@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Découvrez comment personnaliser, organiser et gérer votre site d SharePoint d’équipe avec des bibliothèques de documents, des listes et des hubs.
-ms.openlocfilehash: 27eeed7b6826ea3ba145cbbfea367ab70173dfdefd77d0d0639dbf47f67f9188
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176259"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
@@ -63,7 +63,7 @@ Pour en savoir plus sur les paramètres du site d’équipe, consultez La [Share
 
 Un site d’équipe inclut une bibliothèque de documents que vous pouvez commencer à utiliser immédiatement pour le stockage de fichiers et la gestion des documents.
 
-Pour commencer le chargement, voir [Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
+Pour commencer le chargement, [voir Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
 Découvrez comment modifier, supprimer, consulter des fichiers, etc. Pour plus d’informations, voir [Travailler avec des fichiers dans une bibliothèque de documents.](https://support.microsoft.com/office/a9d89171-1673-4892-9dd2-1ca52037dea2)
   
@@ -75,7 +75,7 @@ SharePoint comprend de nombreux modèles de listes que vous pouvez ajouter à vo
   
 Découvrez comment créer [une liste dans SharePoint](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online).
   
-Pour plus d’informations sur l’extension de vos listes avec d’autres colonnes, voir Créer une colonne dans [SharePoint liste ou bibliothèque.](https://support.microsoft.com/office/2b0361ae-1bd3-41a3-8329-269e5f81cfa2)
+Pour plus d’informations sur le développement de vos listes avec d’autres colonnes, voir Créer une colonne dans [SharePoint liste ou bibliothèque.](https://support.microsoft.com/office/2b0361ae-1bd3-41a3-8329-269e5f81cfa2)
   
 Si vous stockez un grand nombre de données dans une liste, voir Gérer les grandes [listes](https://support.microsoft.com/office/B8588DAE-9387-48C2-9248-C24122F07C59)et bibliothèques dans SharePoint .
   
@@ -109,7 +109,7 @@ Pour ajouter des utilisateurs à un groupe Microsoft 365, voir Ajouter des utili
   
 Découvrez comment gérer les demandes d’accès avec [Configurer et gérer les demandes d’accès.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Vous devez configurer des Office sur vos appareils afin de pouvoir modifier les fichiers stockés sur votre site d’équipe à partir de votre tablette ou téléphone. Si vous n'installez pas les applications Office sur votre tablette ou téléphone, vous pouvez consulter les fichiers de votre site d'équipe, mais pas les modifier. 
     

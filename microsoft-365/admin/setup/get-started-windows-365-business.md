@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: Découvrez comment acheter Windows 365 Business pour votre organisation et aider les utilisateurs à commencer à utiliser leurs PC Cloud.
 ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176244"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Démarrage avec les PC Windows 365 Business et Cloud
 
@@ -51,7 +51,7 @@ Vous pouvez acheter des abonnements 365 Windows 365 Business de deux manières d
 - Site [Windows produits 365](https://www.microsoft.com/windows-365/business/compare-plans-pricing)
 - Centre d’administration Microsoft 365
 
-Après avoir acheté un abonnement, vous pouvez utiliser la Centre d’administration Microsoft 365 pour attribuer des licences aux utilisateurs de votre organisation.
+Après avoir acheté un abonnement, vous pouvez utiliser la Centre d'administration Microsoft 365 pour attribuer des licences aux utilisateurs de votre organisation.
 
 ### <a name="buy-subscriptions-through-the-windows-365-products-site"></a>Acheter des abonnements via le site Windows produits 365
 
@@ -61,9 +61,9 @@ Si vous n’avez pas encore d’abonnement Microsoft 365, vous pouvez acheter vo
 2. Sur la page suivante, sélectionnez l’abonnement que vous souhaitez acheter, puis **sélectionnez Acheter maintenant.**
 3. Dans la page **Merci d’avoir choisi Windows 365** Entreprise, suivez les étapes pour configurer votre compte.
 4. À **l’étape 5 - Détails** de confirmation, si  vous êtes prêt à attribuer des licences aux utilisateurs, sélectionnez Commencer à aller à votre page d’accueil Windows 365 sur https://windows365.microsoft.com .
-5. Sur la page Windows 365, dans la section **Actions** rapides, **sélectionnez Gérer votre organisation.** Cela vous permet d’Centre d’administration Microsoft 365 où vous pouvez attribuer des licences aux utilisateurs.
+5. Sur la page Windows 365, dans la section **Actions** rapides, **sélectionnez Gérer votre organisation.** Cela vous permet d’Centre d'administration Microsoft 365 où vous pouvez attribuer des licences aux utilisateurs.
 
-Les utilisateurs sans rôle d’administrateur général ou de facturation peuvent utiliser l’achat en libre-service pour acheter un abonnement pour Windows 365 Business directement à partir du site des produits [Windows 365 Business.](https://www.microsoft.com/windows-365/business?rtc=1) Un utilisateur qui achète un abonnement de cette façon se voie accorder une vue limitée de [l’Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), où il peut attribuer des licences pour cet abonnement à d’autres utilisateurs de son organisation. L’attribution d’une licence à un autre utilisateur crée automatiquement un PC cloud Windows 365 Business, accessible à partir de la page d’accueil [Windows 365.](https://windows365.microsoft.com/)
+Les utilisateurs sans rôle d’administrateur général ou de facturation peuvent utiliser l’achat en libre-service pour acheter un abonnement pour Windows 365 Business directement à partir du site des produits [Windows 365 Business.](https://www.microsoft.com/windows-365/business?rtc=1) Un utilisateur qui achète un abonnement de cette façon se voie accorder une vue limitée de [l’Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), où il peut attribuer des licences pour cet abonnement à d’autres utilisateurs de son organisation. L’attribution d’une licence à un autre utilisateur crée automatiquement un PC cloud Windows 365 Business, accessible à partir de la page d’accueil [Windows 365.](https://windows365.microsoft.com/)
 
 > [!NOTE]
 > L’achat en libre-service n’est pas disponible en Inde, ni pour les clients du secteur public ou de l’éducation.
@@ -72,17 +72,17 @@ Pour en savoir plus sur l’achat en libre-service, consultez le FAQ sur les [ac
 
 ### <a name="buy-a-subscription-through-the-microsoft-admin-center"></a>Acheter un abonnement via le Centre d’administration Microsoft
 
-Si vous avez déjà un client Microsoft 365 et que vous êtes administrateur global ou de facturation, vous pouvez utiliser le Centre d’administration Microsoft 365 pour acheter un abonnement Windows 365 Business pour votre organisation.
+Si vous avez déjà un client Microsoft 365 et que vous êtes administrateur global ou de facturation, vous pouvez utiliser le Centre d'administration Microsoft 365 pour acheter un abonnement Windows 365 Business pour votre organisation.
 
 1. Dans le Centre d’administration Microsoft, go to the **Billing > Purchase services** page.
 2. Dans la page **Acheter des services,** recherchez **Windows 365 Business**. Lorsque vous le trouvez, sélectionnez **Détails.**
-3. Dans la page **Windows 365** Entreprise, dans la section **Processor/Ram/Stockage Options,** utilisez le **menu** Sélectionner un abonnement pour sélectionner un abonnement pour vos utilisateurs en fonction de leurs besoins en processeur, en RAM et en stockage. Consultez Windows options de resserrement [365 Business](windows-365-business-sizing.md) pour obtenir des instructions sur la sélection de l’abonnement qui répond le mieux aux besoins de vos utilisateurs.
+3. Dans la page **Windows 365** Entreprise, dans la section **Options processeur/Ram/Stockage,** utilisez le **menu** Sélectionner un abonnement pour sélectionner un abonnement pour vos utilisateurs en fonction de leurs besoins en processeur, en RAM et en stockage. Consultez Windows options de resserrement [365 Business](windows-365-business-sizing.md) pour obtenir des instructions sur la sélection de l’abonnement qui répond le mieux aux besoins de vos utilisateurs.
 4. Dans la page **d’achat,** entrez le nombre d’abonnements que vous souhaitez acheter, ainsi que vos informations de paiement. Ensuite, **sélectionnez Placer une commande.**
 5. Vous **êtes prêt !** s’affiche pour confirmer votre achat.
 
 ## <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
-Que vous avez acheté vos abonnements via le site des produits Windows 365 ou via le Centre d’administration Microsoft 365, vous pouvez attribuer des [licences](/microsoft-365/admin/manage/assign-licenses-to-users) aux utilisateurs via la **page** Facturation du Centre d’administration Microsoft 365.
+Que vous avez acheté vos abonnements via le site des produits Windows 365 ou via le Centre d'administration Microsoft 365, vous pouvez attribuer des [licences](/microsoft-365/admin/manage/assign-licenses-to-users) aux utilisateurs via la **page** Facturation du Centre d'administration Microsoft 365.
 
 Vous pouvez affecter différents types Windows licence 365 Business à un utilisateur, en fonction des besoins professionnels des utilisateurs. Consultez Windows options de resserrement [365 Business](windows-365-business-sizing.md) pour obtenir des conseils sur le type de licence qui peut convenir à vos utilisateurs.
 
@@ -104,7 +104,7 @@ Sur leur page d Windows 365, les utilisateurs voient les PC cloud accessibles da
 
 ![Windows famille 365.](../../media/deschutes/cloudpc-home.png)
 
-Les utilisateurs **peuvent sélectionner Ouvrir dans le navigateur** pour ouvrir leur PC cloud.
+Les utilisateurs peuvent **sélectionner Ouvrir dans le navigateur** pour ouvrir leur PC cloud.
 
 > [!NOTE]  
 > Les appareils mobiles ne sont actuellement pas pris en charge.
@@ -131,12 +131,12 @@ Sur la page d Windows 365, les utilisateurs peuvent effectuer des actions sur le
 
 - **Résolution des problèmes**: résolution des problèmes et tentative de résolution des problèmes qui empêchent peut-être un utilisateur de se connecter à son PC Cloud. Le tableau suivant décrit les états qui peuvent résulter des vérifications.
 
-    | Statut | Description |
+    | État | Description |
     |:-----|:-----|
     |Aucun problème détecté |Aucune des vérifications n’a détecté un problème avec le PC cloud. |
     |Problèmes résolus |Un problème a été détecté et résolu. |
     |Ne peut pas se connecter à Cloud PC. We’re working to fix it, try again later. |Un service Microsoft requis pour la connectivité n’est pas disponible. Essayez de vous connecter à nouveau ultérieurement. |
-    |Nous n’avons pas pu résoudre les problèmes avec votre PC Cloud. Contactez votre administrateur. |Un problème a été détecté, mais il n’a pas pu être résolu. Cela peut être dû à une mise à jour Windows jour ou à un autre problème. Si cette erreur persiste pendant une période prolongée, il se peut que le PC cloud devra être réinitialisé. |
+    |Nous n’avons pas pu résoudre les problèmes avec votre PC Cloud. Contactez votre administrateur. |Un problème a été détecté, mais il n’a pas pu être résolu. Cela peut être dû à une mise à jour Windows jour ou à un autre problème. Si cette erreur persiste pendant une période prolongée, il se peut que le PC Cloud devra être réinitialisé. |
 
 ### <a name="remote-desktop"></a>Bureau à distance
 
@@ -172,9 +172,9 @@ L’envoi de messages électroniques sortants directement sur le port 25 à part
 
 ## <a name="how-to-get-help"></a>Comment obtenir de l’aide
 
-Si vous avez besoin d’aide lors de la configuration de Windows 365 Business dans le Centre d’administration Microsoft 365, consultez Obtenir de l’aide [ou du support.](/microsoft-365/business-video/get-help-support)
+Si vous avez besoin d’aide lors de la configuration Windows 365 Entreprise dans le Centre d'administration Microsoft 365, consultez Obtenir de l’aide [ou du support.](/microsoft-365/business-video/get-help-support)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Windows 365 Business](https://www.microsoft.com/windows-365/business) <br/>
 [Options de dimensionnement de Windows 365 Business](windows-365-business-sizing.md) <br/>

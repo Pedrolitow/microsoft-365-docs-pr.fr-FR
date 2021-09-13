@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de messagerie et de document que vous pouvez rechercher à l’aide des outils de recherche eDiscovery Microsoft 365.
-ms.openlocfilehash: f0b6fac4610bbca8904f3dfe19abdc558a4f2818
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a9db904e2386e049e38412a4c2250239078f27f6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179947"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Requêtes par mot clé et conditions de recherche pour eDiscovery
 
@@ -57,18 +57,18 @@ Le tableau suivant répertorie les propriétés des messages électroniques qui 
 
 ****
 
-|Propriété|Description de la propriété|範例|Résultats de recherche renvoyés par les exemples|
+|Propriété|Description de la propriété|Exemples|Résultats de recherche renvoyés par les exemples|
 |---|---|---|---|
 |AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|Messages comportant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l’utilisation du caractère générique ( * ) renvoie des messages avec le mot « annual » dans le nom de fichier d’une pièce jointe. Le troisième exemple renvoie toutes les pièces jointes avec l’extension de fichier pptx.|
 |Cci|Champ Bcc d’un message électronique. <sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|Tous les exemples renvoient des messages dont « Pilar Pinilla » est en copie carbone invisible.|
-|Category|Catégories à rechercher. Les catégories peuvent être définies par les utilisateurs Outlook ou Outlook sur le web (anciennement Outlook Web App). Les valeurs possibles sont les suivantes : <ul><li>blue<li></li>green<li></li>orange<li></li>purple<li></li>red<li></li>yellow</li></ul>|`category:"Red Category"`|Messages auxquels a été attribuée la catégorie « red » dans les boîtes aux lettres source.|
-|Cc|Champ Cc d’un message électronique. <sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|Dans les deux exemples, les messages avec Pilar Pinilla spécifié dans le champ Cc.|
+|Category|Catégories à rechercher. Les catégories peuvent être définies par les utilisateurs Outlook ou Outlook sur le web (anciennement Outlook Web App). Les valeurs possibles sont les suivantes : <ul><li>blue<li>green<li>orange<li>purple<li>red<li>yellow</li></ul>|`category:"Red Category"`|Messages auxquels a été attribuée la catégorie « red » dans les boîtes aux lettres source.|
+|Cc|Champ Cc d’un message électronique. <sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|Dans les deux exemples, messages avec Pilar Pinilla spécifié dans le champ Cc.|
 |Folderid|ID de dossier (GUID) d’un dossier de boîte aux lettres spécifique. Si vous utilisez cette propriété, n’oubliez pas d’effectuer une recherche dans la boîte aux lettres dans qui se trouve le dossier spécifié. Seul le dossier spécifié sera recherché. Les sous-dossiers du dossier ne seront pas recherchés. Pour rechercher des sous-dossiers, vous devez utiliser la propriété Folderid du sous-dossier que vous souhaitez rechercher. <p> Pour plus d’informations sur la recherche de la propriété Folderid et l’utilisation d’un script pour obtenir les ID de dossier pour une boîte aux lettres spécifique, voir Utiliser la recherche de contenu pour les [collections ciblées.](use-content-search-for-targeted-collections.md)|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Le premier exemple renvoie tous les éléments du dossier de boîte aux lettres spécifié. Le deuxième exemple renvoie tous les éléments du dossier de boîte aux lettres spécifié qui ont été envoyés ou reçus par garthf@contoso.com.|
 |From|Expéditeur d'un message électronique.<sup>1</sup>|`from:pilarp@contoso.com` <p> `from:contoso.com`|Messages envoyés par l'utilisateur indiqué ou à partir d'un domaine spécifié.|
 |HasAttachment|Indique si un message a une pièce jointe. Utilisez les valeurs **true** ou **false**.|`from:pilar@contoso.com AND hasattachment:true`|Messages envoyés par l’utilisateur spécifié qui ont des pièces jointes.|
 |Importance|Importance d'un message électronique, que l'expéditeur peut préciser lors de l'envoi. Par défaut, les messages sont envoyés avec une importance normale, à moins que l'expéditeur préfère une importance **haute** ou **faible**.  |`importance:high` <p> `importance:medium` <p> `importance:low`|Messages marqués comme ayant une importance haute, normale ou faible.|
 |IsRead|Indique si les messages ont été lus. Utilisez les valeurs **true** ou **false**.|`isread:true` <p> `isread:false`|Le premier exemple renvoie des messages dont la propriété IsRead a la valeur **True**. Le deuxième exemple renvoie des messages dont la propriété IsRead a la valeur **False**.|
-|ItemClass|Utilisez cette propriété pour rechercher des types de données tiers spécifiques que votre organisation a importés dans Office 365. Utilisez la syntaxe suivante pour cette propriété :  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso` <p> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Le premier exemple renvoie les éléments Facebook qui contiennent le mot « contoso » dans la propriété Subject. Le deuxième exemple renvoie les éléments Twitter qui ont été publiés par Ann Beebe et qui contiennent l’expression de mot clé « Northwind Traders ». <p> Pour obtenir la liste complète des valeurs à utiliser pour les types de données tiers pour la propriété ItemClass, voir Utiliser la recherche de contenu pour rechercher des données tierces importées dans [Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
+|ItemClass|Utilisez cette propriété pour rechercher des types de données tiers spécifiques que votre organisation a importés Office 365. Utilisez la syntaxe suivante pour cette propriété :  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso` <p> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Le premier exemple renvoie les éléments Facebook qui contiennent le mot « contoso » dans la propriété Subject. Le deuxième exemple renvoie les éléments Twitter qui ont été publiés par Ann Beebe et qui contiennent l’expression de mot clé « Northwind Traders ». <p> Pour obtenir la liste complète des valeurs à utiliser pour les types de données tiers pour la propriété ItemClass, voir Utiliser la recherche de contenu pour rechercher des données tierces importées dans [Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
 |Kind|Type de message électronique à rechercher. Valeurs possibles : <p>  contacts <p>  docs <p>  email <p>  externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (renvoie des éléments de conversations, de réunions et d’appels Microsoft Teams) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|Le premier exemple renvoie des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple renvoie des messages électroniques, des conversations de messagerie instantanée (y compris Skype Entreprise conversations et conversations dans Microsoft Teams) et des messages vocaux qui répondent aux critères de recherche. Le troisième exemple renvoie les éléments qui ont été importés dans des boîtes aux lettres dans Microsoft 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, [voir l’archivage](https://www.microsoft.com/?ref=go)de données tierces dans Office 365 .|
 |Participants|Tous les champs de personnes dans un message électronique. Ces champs sont De, À, Cc et<sup>Cci. 1</sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:04/15/2016` <p> `received>=01/01/2016 AND received<=03/31/2016`|Messages reçus le 15 avril 2016. Le deuxième exemple renvoie tous les messages reçus entre le 1er janvier 2016 et le 31 mars 2016.|
@@ -88,10 +88,10 @@ Lorsque vous recherchez l’une des propriétés de destinataire (De, À, Cc, Cc
 
 Pour empêcher l’expansion des destinataires, ajoutez un caractère de caractères wild card (astérisque) à la fin de l’adresse e-mail et utilisez un nom de domaine réduit ; Par exemple, `participants:"ronnie@contoso*"` n’oubliez pas de entourer l’adresse e-mail de guillemets doubles.
 
-Toutefois, sachez que le fait d’empêcher l’extension des destinataires dans la requête de recherche peut entraîner le non-retour d’éléments pertinents dans les résultats de la recherche. Les messages électroniques Exchange peuvent être enregistrés dans différents formats de texte dans les champs du destinataire. Le développement des destinataires vise à atténuer ce fait en renvoyant des messages qui peuvent contenir différents formats de texte. Par conséquent, le fait d’empêcher l’expansion des destinataires peut entraîner le non-renvoi par la requête de recherche de tous les éléments qui peuvent être pertinents pour votre examen.
+Toutefois, sachez que le fait d’empêcher l’extension des destinataires dans la requête de recherche peut entraîner le non-retour d’éléments pertinents dans les résultats de la recherche. Les messages électroniques Exchange peuvent être enregistrés dans différents formats de texte dans les champs du destinataire. Le développement des destinataires vise à atténuer ce fait en renvoyant des messages qui peuvent contenir différents formats de texte. Par conséquent, empêcher l’extension des destinataires peut entraîner le non-renvoi par la requête de recherche de tous les éléments qui peuvent être pertinents pour votre enquête.
 
 > [!NOTE]
-> Si vous devez examiner ou réduire les éléments renvoyés par une requête de recherche en raison de l’extension des destinataires, envisagez d’utiliser Advanced eDiscovery. Vous pouvez rechercher des messages (en profitant de l’extension des destinataires), les ajouter à un jeu à réviser, puis utiliser des requêtes ou des filtres de jeu de révision pour examiner ou affiner les résultats. Pour plus d’informations, [voir Collecter des données pour un cas](collecting-data-for-ediscovery.md) et interroger les données dans un jeu à [réviser.](review-set-search.md)
+> Si vous devez examiner ou réduire les éléments renvoyés par une requête de recherche en raison de l’extension des destinataires, envisagez d’utiliser Advanced eDiscovery. Vous pouvez rechercher des messages (en profitant de l’extension des destinataires), les ajouter à un jeu à réviser, puis utiliser des requêtes ou des filtres de jeu de révision pour examiner ou affiner les résultats. Pour plus d’informations, voir [Collecter des données pour un cas](collecting-data-for-ediscovery.md) et interroger les données dans un jeu à [réviser.](review-set-search.md)
 
 ## <a name="searchable-site-properties"></a>Propriétés de site utilisables dans une requête
 
@@ -238,7 +238,7 @@ Créez une condition avec des propriétés communes lorsque vous recherchez des 
 |Sender/Author|Pour la messagerie électronique, personne ayant envoyé le message. Pour les documents, personne mentionnée dans le champ Auteur des documents Office. Vous pouvez saisir plusieurs noms, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
 |Taille (en octets)|Pour la messagerie électronique et les documents, taille de l’élément (en octets).|
 |Objet/Titre|Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme indiqué précédemment, la propriété Title est une métadonnées spécifiée dans Microsoft Office documents. Vous pouvez taper le nom de plusieurs sujet/titre, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
-|Étiquette de rétention|Pour les messages électroniques et les documents, les étiquettes de rétention qui ont été attribuées automatiquement aux messages et aux documents par les stratégies d’étiquette automatique ou les étiquettes de rétention qui ont été attribuées manuellement par les utilisateurs. Les étiquettes de rétention sont utilisées pour classer les e-mails et les documents pour la gouvernance des informations et appliquer des règles de rétention basées sur les paramètres définis par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette de rétention et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations sur les étiquettes de rétention, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)|
+|Étiquette de rétention|Pour les messages électroniques et les documents, les étiquettes de rétention qui ont été attribuées automatiquement aux messages et aux documents par les stratégies d’étiquette automatique ou les étiquettes de rétention qui ont été attribuées manuellement par les utilisateurs. Les étiquettes de rétention sont utilisées pour classifier les e-mails et les documents pour la gouvernance des informations et appliquer des règles de rétention basées sur les paramètres définis par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette de rétention et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations sur les étiquettes de rétention, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)|
 |
 
 ### <a name="conditions-for-mail-properties"></a>Conditions pour les propriétés de messagerie
@@ -399,7 +399,7 @@ Vous pouvez également utiliser les outils de recherche eDiscovery dans le centr
 - Invitation de partage qui nécessite que les utilisateurs se connectent à votre organisation en tant qu’utilisateur authentifié.
 - Un lien invité anonyme, qui permet à toute personne ayant ce lien d’accéder à la ressource sans avoir à être authentifiée.
 
-Voici quelques exemples :
+Voici quelques exemples :
 
 - La requête renvoie tous les éléments qui ont été partagés avec des personnes extérieures à votre organisation et  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` contiennent un numéro de carte de crédit.
 - La requête renvoie une liste de documents sur tous les sites d’équipe de l’organisation qui ont  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` été partagés avec des utilisateurs externes.
@@ -418,7 +418,7 @@ Qu’est-ce qui est considéré comme du contenu partagé avec des personnes ext
 Bien que la propriété indique si un document ou un site est partagé avec des utilisateurs externes, il existe quelques avertissements quant à ce que cette propriété fait et ne reflète  `ViewableByExternalUsers` pas. Dans les scénarios suivants, la valeur de la propriété ne sera pas mise à jour et les résultats d’une requête de recherche qui utilise cette propriété peuvent  `ViewableByExternalUsers` être imprécis.
 
 - Modifications apportées à la stratégie de partage, telles que la stratégie de non-partage externe pour un site ou pour l’organisation. La propriété affiche toujours les documents partagés précédemment comme étant accessibles en externe, même si l’accès externe a peut-être été révoqué.
-- Modifications apportées à l’appartenance à un groupe, telles que l’ajout ou la suppression d’utilisateurs externes à Microsoft 365 groupes ou Microsoft 365 groupes de sécurité. La propriété ne sera pas automatiquement mise à jour pour les éléments à qui le groupe a accès.
+- Modifications apportées à l’appartenance à un groupe, telles que l’ajout ou la suppression d’utilisateurs externes à Microsoft 365 groupes ou Microsoft 365 groupes de sécurité. La propriété ne sera pas automatiquement mise à jour pour les éléments accessibles par le groupe.
 - Envoi d’invitations de partage à des utilisateurs externes où le destinataire n’a pas accepté l’invitation et n’a donc pas encore accès au contenu.
 
 Dans ces scénarios, la propriété ne reflète pas l’état de partage actuel tant que le site ou la bibliothèque de documents n’a pas été  `ViewableByExternalUsers` réaxé et réindexé.
@@ -431,7 +431,7 @@ Les documents doivent être explicitement partagés avec un utilisateur spécifi
 
 ![Seuls les fichiers partagés avec des personnes spécifiques sont renvoyés par une requête de recherche qui utilise la propriété SharedWithUsersOWSUser.](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
 
-Seuls les documents partagés à l’aide de la troisième option (partagés avec des personnes **spécifiques)** seront renvoyés par une requête de recherche qui utilise la  `SharedWithUsersOWSUser` propriété.
+Seuls les documents partagés à l’aide de la troisième option (partagé avec des personnes **spécifiques)** seront renvoyés par une requête de recherche qui utilise la  `SharedWithUsersOWSUser` propriété.
 
 ## <a name="searching-for-skype-for-business-conversations"></a>Recherche de Skype Entreprise conversations
 
@@ -460,7 +460,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 Il existe une limite de 4 000 caractères pour les requêtes de recherche lors de la recherche de contenu dans SharePoint sites et OneDrive comptes.
 Voici comment le nombre total de caractères dans la requête de recherche est calculé :
 
-- Les caractères de la requête de recherche par mot clé (y compris les champs utilisateur et de filtre) sont comptabilisés dans cette limite.
+- Les caractères de la requête de recherche par mot clé (y compris les champs utilisateur et de filtre) comptent pour cette limite.
 - Les caractères d’une propriété d’emplacement (telles que les URL de tous les sites SharePoint ou des emplacements OneDrive recherchés) sont comptabilisés dans cette limite.
 - Caractères de tous les filtres d’autorisations de recherche appliqués à l’utilisateur exécutant le nombre de recherches par rapport à la limite.
 
@@ -489,4 +489,4 @@ Pour plus d’informations sur les limites de caractères, voir les limites de r
 
 - Vous pouvez exporter des éléments en fonction du type de message. Par exemple, pour exporter Skype conversations et conversations dans Microsoft Teams, utilisez la syntaxe `kind:im` . Pour renvoyer uniquement les messages électroniques, utilisez `kind:email` . Pour retourner des conversations, des réunions et des appels dans Microsoft Teams, utilisez `kind:microsoftteams` .
 
-- Comme indiqué précédemment, lorsque vous recherchez des sites, vous devez ajouter la fin de l’URL lorsque vous utilisez la propriété pour renvoyer uniquement les éléments `/` `path` d’un site spécifié. Si vous n’incluez pas la fin, les éléments d’un site avec un nom de chemin `/` d’accès similaire seront également renvoyés. Par exemple, si vous utilisez des éléments `path:sites/HelloWorld` provenant de sites nommés ou qui `sites/HelloWorld_East` `sites/HelloWorld_West` seraient également renvoyés. Pour renvoyer des éléments uniquement à partir du site HelloWorld, vous devez utiliser `path:sites/HelloWorld/` .
+- Comme indiqué précédemment, lors de la recherche de sites, vous devez ajouter la fin de l’URL lorsque vous utilisez la propriété pour renvoyer uniquement les éléments `/` `path` d’un site spécifié. Si vous n’incluez pas la fin, les éléments d’un site avec un nom de chemin `/` d’accès similaire seront également renvoyés. Par exemple, si vous utilisez des éléments `path:sites/HelloWorld` provenant de sites nommés ou qui `sites/HelloWorld_East` `sites/HelloWorld_West` seraient également renvoyés. Pour renvoyer des éléments uniquement à partir du site HelloWorld, vous devez utiliser `path:sites/HelloWorld/` .

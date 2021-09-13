@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Quip DataParser 17a-4 pour importer et archiver des données Quip dans Microsoft 365.
 ms.openlocfilehash: df27d4c222b1c7d57e1ef0df5763fdc7b3a486fa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567543"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178060"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>Configurer un connecteur pour archiver les données quip
 
@@ -77,6 +77,6 @@ Après avoir créé un connecteur Quip DataParser, vous pouvez afficher l’éta
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

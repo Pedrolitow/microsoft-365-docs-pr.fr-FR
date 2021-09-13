@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: c4bbc9cd47d3ceb8110a6a2f0e3136a364458abc
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180905"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes Microsoft 365 Defender service
 
@@ -51,7 +51,7 @@ Pour plus d’informations, [voir Microsoft Defender pour l’intégration de l�
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Où se trouve la page des paramètres pour l’ment du service ?
 
-Pour activer la Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation du portail Microsoft 365 Defender web. Cet élément de navigation n’est visible que si vous avez les [autorisations et licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+Pour activer la Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation du portail Microsoft 365 Defender web. Cet élément de navigation n’est visible que si vous avez les autorisations et [licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Comment créer une exception pour mon fichier/URL ?
 

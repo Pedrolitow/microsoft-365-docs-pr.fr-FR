@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: cb0f84cac5b03f6b51d2853966be26686f8a13ec417230da670cae3106ced20c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed4fe1e24a4414c4dad8f596df75705d1f6231a4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182223"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>En savoir plus et configurer la détection du signal du navigateur de gestion des risques internes (aperçu)
 
@@ -208,7 +208,7 @@ Vos appareils doivent être gérables à l’aide de la stratégie de groupe et 
 2. Ouvrez la **Console de gestion des stratégies de groupe** et accédez à votre unité d’organisation.
 3. Cliquez avec le bouton droit et **sélectionnez Créer un GPO dans ce domaine et l’lier ici.** Lorsque vous y invitez, attribuez un nom descriptif à cet objet de stratégie de groupe (GPO). Par exemple, *DLP Chrome Immediate PowerShell Script*.
 4. Après avoir créé l’GPO, cliquez avec le bouton droit et sélectionnez **Modifier.** Cette sélection vous prend à l’objet de stratégie de groupe.
-5. Accédez **aux paramètres** du panneau de configuration \>  \> **Préférences de l’ordinateur Tâches** \> **programmées.**
+5. Accédez **aux paramètres** du panneau de configuration \>  \> **Préférences de configuration de l’ordinateur** \> **Tâches programmées.**
 6. Cliquez avec le bouton droit sur la zone vierge sous **Tâches** programmées et sélectionnez **Nouvelle** tâche immédiate \> **(au moins Windows 7).**
 7. Entrez un nom *et une* description de *tâche.*
 8. Choisissez le compte correspondant pour exécuter la tâche immédiate. Par exemple, *NT Authority*.
@@ -238,7 +238,7 @@ Vos appareils doivent être gérables à l’aide de la stratégie de groupe et 
     - Avec le navigateur, téléchargez un fichier non exécutable sur le site web.
 3. Pour tester la détection du signal pour les fichiers imprimés sur des périphériques locaux ou réseau, les fichiers transférés ou copiés sur un partage réseau et les fichiers copiés sur des périphériques USB, effectuer les étapes suivantes à partir d’un appareil Windows pris en charge :
 
-    - Ouvrez un fichier non exécutable directement dans le navigateur. Le fichier doit être ouvert directement par le biais de l’Explorateur de fichiers ou ouvert dans un nouvel onglet de navigateur pour être affiché au lieu d’une page web.
+    - Ouvrez un fichier non exécutable directement dans le navigateur. Le fichier doit être ouvert directement via l’Explorateur de fichiers ou ouvert dans un nouvel onglet de navigateur pour être affiché plutôt que dans une page web.
     - Imprime le fichier.
     - Enregistrez le fichier sur un périphérique USB.
     - Enregistrez le fichier sur un lecteur réseau.

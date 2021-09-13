@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Découvrez comment sélectionner et exporter du contenu à partir d’un Advanced eDiscovery de révision pour les présentations ou les avis externes.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570856"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182416"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un groupe de révision dans Advanced eDiscovery
 
@@ -63,7 +63,7 @@ Utilisez les options suivantes pour configurer l’exportation. Toutes les optio
   
   - Rapports uniquement : seuls le fichier récapitulatif et le fichier de chargement sont créés.
   
-  - Fichiers libres et fichiers PST (le courrier électronique est ajouté aux fichiers PST lorsque cela est possible) : les fichiers sont exportés dans un format qui ressemble à la structure de répertoires d’origine visible par les utilisateurs dans leurs applications natives.  Pour plus d’informations, voir la section Sur les fichiers libres et la [structure d’exportation PST.](#loose-files-and-pst-export-structure)
+  - Fichiers libres et fichiers PST (le courrier électronique est ajouté aux fichiers PST lorsque cela est possible) : les fichiers sont exportés dans un format qui ressemble à la structure de répertoires d’origine visible par les utilisateurs dans leurs applications natives.  Pour plus d’informations, voir la section Sur les fichiers libres et [la structure d’exportation PST.](#loose-files-and-pst-export-structure)
   
   - Structure du répertoire condensé : les fichiers sont exportés et inclus dans le téléchargement.
   

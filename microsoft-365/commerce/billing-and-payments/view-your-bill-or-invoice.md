@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: 94cbfb02449abb75ff90659bfa678ea61694f2f2f5aac372ba3e31372d5ae59b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 319d8469ebdf1500f5f10e7fb84f69b9d87bed7c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181672"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 

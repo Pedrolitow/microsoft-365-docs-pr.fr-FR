@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b965c0a246939fca68bc4b9b75922c62618f9a18984f2ee88b55d5aa81081045
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f6fd4d8a606c0059633157d529ff09c74c9a47e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181072"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Hors-carte des appareils à partir du service Microsoft Defender for Endpoint
 
@@ -51,7 +51,7 @@ Suivez les instructions correspondantes en fonction de votre méthode de déploi
 ## <a name="offboard-windows-10-devices"></a>Appareils hors Windows 10 d’appareil
 - [Hors-carte des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Appareils de tableau de bord à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Appareils de tableau de bord à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Appareils hors appareil à l’aide des outils de gestion des périphériques mobiles](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
 
 ## <a name="offboard-servers"></a>Serveurs horsboard
 - [Serveurs horsboard](configure-server-endpoints.md#offboard-windows-servers)

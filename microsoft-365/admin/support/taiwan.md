@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ea6a80fd11222fdc355f7826f75a5a1f63bc26535f2ca0261a403e6d6b874ab2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 76536a2977da404c50ed75980d80683842429f9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861938"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180771"
 ---
 # <a name="contact-support-for-taiwan"></a>Contacter le support technique pour Taïwan
 

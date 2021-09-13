@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da5a98342fedf780f4897d0eb1b731c41faf87e9b820b5ced0347e3ab0757b43
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3749b51a25570045fe381db6d9136fa0e8d1b2fa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181787"
 ---
 # <a name="contact-support-for-lesotho"></a>Contacter le support technique pour Le Monde
 

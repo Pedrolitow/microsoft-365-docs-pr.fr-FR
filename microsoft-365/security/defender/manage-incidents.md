@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177500"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -48,11 +48,11 @@ Voici comment gérer vos incidents :
 - [Modifier le nom de l’incident](#edit-the-incident-name)
 - [Ajouter des balises d’incident](#add-incident-tags)
 - [Affectez l’incident à vous-même](#assign-incidents)
-- [Résoudre les problèmes](#resolve-an-incident)
+- [Les résoudre](#resolve-an-incident)
 - [Définir sa classification et sa détermination](#set-the-classification-and-determination)
 - [Ajouter des commentaires](#add-comments)
 
-Vous pouvez gérer les incidents à partir du volet Gérer **les incidents** pour un incident. Voici un exemple.
+Vous pouvez gérer les incidents à partir du volet **Gérer les incidents** pour un incident. Voici un exemple.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Exemple du volet Gérer les incidents d’un incident.":::
 
@@ -61,11 +61,11 @@ Vous pouvez afficher ce volet à partir du lien **Gérer l’incident** sur :
 - Volet des propriétés d’un incident dans la file d’attente des incidents.
 - **Page récapitulatif** d’un incident.
 
-Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet **Alertes,** créant ainsi un incident plus ou moins important qui inclut toutes les alertes pertinentes.
+Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet **Alertes,** créant ainsi un incident plus ou moins volumineux qui inclut toutes les alertes pertinentes.
 
 ## <a name="edit-the-incident-name"></a>Modifier le nom de l’incident
 
-Microsoft 365 Defender attribue automatiquement un nom basé sur des attributs d’alerte tels que le nombre de points de terminaison affectés, d’utilisateurs affectés, de sources ou de catégories de détection. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+Microsoft 365 Defender attribue automatiquement un nom basé sur des attributs d’alerte tels que le nombre de points de terminaison affectés, d’utilisateurs affectés, de sources ou de catégories de détection. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 
 Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’incident** dans le volet Gérer **l’incident.**
 
@@ -74,7 +74,7 @@ Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’inci
 
 ## <a name="add-incident-tags"></a>Ajouter des balises d’incident
 
-Vous pouvez ajouter des balises personnalisées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune. Vous pouvez ensuite filtrer la file d’attente des incidents pour tous les incidents qui contiennent une balise spécifique.
+Vous pouvez ajouter des balises personnalisées à un incident, par exemple pour marquer un groupe d’incidents avec une caractéristique commune. Vous pouvez filtrer ultérieurement la file d’attente des incidents pour tous les incidents qui contiennent une balise spécifique.
 
 Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des balises dans une liste de balises sélectionnées.
 
@@ -85,7 +85,7 @@ Pour affecter un incident, **sélectionnez Affecter à moi.** Cette action affec
 Vous pouvez obtenir la liste des incidents qui vous sont attribués en filtrant la file d’attente des incidents. 
 
 1. Dans la file d’attente des incidents, sélectionnez **Filtres.**
-2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi.**
+2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi**.
 3. **Sélectionnez** Appliquer, puis fermez le volet **Filtres.**
 
 Vous pouvez ensuite enregistrer l’URL résultante dans votre navigateur en tant que signet pour afficher rapidement la liste des incidents qui vous sont attribués.
@@ -100,13 +100,13 @@ Un incident qui n’est pas résolu s’affiche comme **étant actif.**
 
 La classification des incidents est de savoir s’il s’agit d’une alerte vraie ou d’une fausse alerte, que vous configurez à partir du champ **Classification.** 
 
-S’il s’agissait d’une alerte réelle, vous devez également spécifier le type de menace qu’il s’agissait avec le **champ Détermination.** La spécification du type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre ces modèles. 
+S’il s’agissait d’une alerte réelle, vous devez également spécifier le type de menace qu’il s’agissait du **champ Détermination.** Spécifier le type de menace permet à votre équipe de sécurité de voir les modèles de menace et d’agir pour défendre votre organisation contre celles-ci. 
 
 ## <a name="add-comments"></a>Ajouter des commentaires
 
 Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour les nouveaux incidents, commencez votre [enquête.](investigate-incidents.md)
 

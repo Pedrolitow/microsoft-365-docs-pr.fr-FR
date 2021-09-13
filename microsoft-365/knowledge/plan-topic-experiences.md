@@ -11,11 +11,11 @@ search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier la Sujets Microsoft Viva
 ms.openlocfilehash: deb4e219992400a5155b40a849a6df3a8bccbef1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179579"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
@@ -36,9 +36,9 @@ Pour en savoir plus sur la technologie d’IA derrière Topics, consultez La rub
 
 Gardez à l’esprit que Topics Doit accéder aux sites et fichiers que vos utilisateurs utilisent tous les jours. Le déploiement de rubriques Dans un environnement de test ou de développement peut ne pas produire de résultats utiles.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
-Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d’administration Microsoft 365 et configurer Rubriques.
+Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d'administration Microsoft 365 et configurer Rubriques.
 
 Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte par [la](set-up-topic-experiences.md)Sujets Microsoft Viva .
 
@@ -134,7 +134,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administration
 
-Lorsque vous définissez Rubriques, dans le cadre du processus d’installation, un centre de rubriques est automatiquement créé. Réfléchissez à ce que vous souhaitez nommer le centre de rubriques et à ce que doit être l’URL. Vous pouvez définir le nom et l’URL dans le cadre du processus d’installation, et vous pouvez modifier le nom (mais pas l’URL) plus loin dans la Centre d’administration Microsoft 365. Vous ne pouvez avoir qu’un seul centre de rubriques.
+Lorsque vous définissez Rubriques, dans le cadre du processus d’installation, un centre de rubriques est automatiquement créé. Réfléchissez à ce que vous souhaitez nommer le centre de rubriques et à ce que doit être l’URL. Vous pouvez définir le nom et l’URL dans le cadre du processus d’installation, et vous pouvez modifier le nom (mais pas l’URL) plus loin dans la Centre d'administration Microsoft 365. Vous ne pouvez avoir qu’un seul centre de rubriques.
 
 ## <a name="setup-checklist"></a>Liste de vérification du programme d’installation
 

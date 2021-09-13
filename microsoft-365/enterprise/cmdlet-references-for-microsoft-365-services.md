@@ -15,13 +15,13 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Recherchez Microsoft 365 références de cmdlet PowerShell pour Azure AD, Exchange Online, SharePoint Online, Skype Entreprise Online et la conformité & sécurité.
+description: Recherchez Microsoft 365 références de cmdlet PowerShell pour Azure AD, Exchange Online, SharePoint Online, Skype Entreprise Online et sécurité & conformité.
 ms.openlocfilehash: fc6cb250fe968c8dd8222422c517ce59352e4d69
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179740"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Références de cmdlet pour les services Microsoft 365
 
@@ -34,15 +34,15 @@ Cet article fournit des références de cmdlet pour les différents services Mic
 
 ## <a name="azure-active-directory-powershell-cmdlets"></a>Azure Active Directory Cmdlets PowerShell
 
-Les Azure Active Directory références de cmdlet PowerShell pour Graph sont dans la section Référence de la [documentation Azure Active Directory PowerShell for Graph.](/powershell/azure/active-directory/install-adv2)
+Les Azure Active Directory références de cmdlet PowerShell pour Graph sont dans la section Référence de la documentation powerShell Azure Active Directory pour [Graph de référence.](/powershell/azure/active-directory/install-adv2)
 
-Les Azure Active Directory de référence de la cmdlet Windows PowerShell module de Windows PowerShell se trouve dans la section Référence de la [documentation Azure Active Directory (MSOnline).](/powershell/azure/active-directory/overview)
+Le Azure Active Directory module de Windows PowerShell rubriques de référence de cmdlet se trouve dans la section Référence de la [documentation Azure Active Directory (MSOnline).](/powershell/azure/active-directory/overview)
 
 Pour Microsoft 365 instructions de connexion PowerShell, voir Connecter [à Microsoft 365 avec PowerShell.](connect-to-microsoft-365-powershell.md)
 
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlets Exchange Online PowerShell
 
-Exchange Online rubriques de référence sur les cmdlet sont dans la section Référence de la [documentation powershell Exchange Online.](/powershell/exchange/exchange-online-powershell)
+Exchange Online rubriques de référence sur les cmdlet se rapportent à la section Référence de [la documentation powerShell Exchange Online.](/powershell/exchange/exchange-online-powershell)
 
 Pour obtenir des instructions de connexion Exchange Online PowerShell, voir Connecter [à Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 

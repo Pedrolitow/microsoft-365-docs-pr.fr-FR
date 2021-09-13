@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9c9657521265890b842c910286d92c655297612f6c545c4abf12faa46e5d999
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182271"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les obstacles aux informations Microsoft 365
 
@@ -69,7 +69,7 @@ Si les personnes impliquées sont incluses dans une stratégie de cloisonnement 
 
 Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez les [obstacles aux](/MicrosoftTeams/information-barriers-in-teams)informations Microsoft Teams .
 
-Dans SharePoint online et OneDrive, les stratégies de obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
+Dans SharePoint online et OneDrive, les stratégies d’obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
 
 - Ajout d’un membre à un site
 - Accès au site ou au contenu par un utilisateur
@@ -99,13 +99,13 @@ Pour [définir ou modifier des stratégies de obstacle aux](information-barriers
 
 (Pour en savoir plus sur les rôles et les [autorisations,](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)voir Autorisations dans le Centre Office 365 sécurité & conformité.)
 
-Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que les paramètres, pour votre organisation.
+Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que des paramètres, pour votre organisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur les obstacles aux informations dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [En savoir plus sur les obstacles aux informations dans SharePoint Online](/sharepoint/information-barriers)
 - [En savoir plus sur les obstacles aux informations dans OneDrive](/onedrive/information-barriers)
-- [Voir les attributs qui peuvent être utilisés pour les stratégies de obstacle à l’information](information-barriers-attributes.md)
+- [Voir les attributs qui peuvent être utilisés pour les stratégies d’obstacle à l’information](information-barriers-attributes.md)
 - [Définir des stratégies pour les obstacles à l’information](information-barriers-policies.md)
 - [Modifier (ou supprimer) des stratégies de cloisonnement de l’information](information-barriers-edit-segments-policies.md)

@@ -16,11 +16,11 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et gérer les menaces détectées par les Antivirus Microsoft Defender sur vos Windows 10 mobiles.
 ms.openlocfilehash: d1a611143af1f438989a549133c6f7c1e7502357
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178627"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Examiner les menaces détectées et prendre des mesures
 
@@ -32,7 +32,7 @@ Antivirus Microsoft Defender détection et protection contre les types de menace
 - Tentatives d’hameçonnage
 - Tentatives de vol de données
 
-En tant qu’administrateur/professionnel de l’informatique, vous pouvez afficher des informations sur les détections de menaces sur Windows 10 appareils inscrits dans [Intune](/mem/intune/enrollment/device-enrollment) dans le Centre d’administration Microsoft 365. Vous verrez des informations récapitulatifs, telles que :
+En tant qu’administrateur/professionnel de l’informatique, vous pouvez afficher des informations sur les détections de menaces sur Windows 10 appareils inscrits dans [Intune](/mem/intune/enrollment/device-enrollment) dans le Centre d'administration Microsoft 365. Vous verrez des informations récapitulatifs, telles que :
 
 - Nombre d’appareils qui ont besoin d’une protection antivirus
 - Nombre d’appareils non conformes aux stratégies de sécurité
@@ -40,8 +40,8 @@ En tant qu’administrateur/professionnel de l’informatique, vous pouvez affic
 
 Plusieurs options s’offrent à vous pour afficher des informations spécifiques sur les détections de menaces et les appareils :
 
-- Page **Appareils actifs** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Voir [Gérer les détections de menaces sur la page Appareils actifs](#manage-threat-detections-on-the-active-devices-page) dans cet article.
-- Page **Menaces** actives dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Voir [Gérer les détections de menaces sur la page Menaces actives](#manage-threat-detections-on-the-active-threats-page) dans cet article.
+- Page **Appareils actifs** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Voir [Gérer les détections de menaces sur la page Appareils actifs](#manage-threat-detections-on-the-active-devices-page) dans cet article.
+- Page **Menaces** actives dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Voir [Gérer les détections de menaces sur la page Menaces actives](#manage-threat-detections-on-the-active-threats-page) dans cet article.
 - Page **Antivirus** dans <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. Voir [Gérer les détections de menaces Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) dans cet article.
 
 Pour plus d’informations, voir [Menaces détectées par Antivirus Microsoft Defender](threats-detected-defender-av.md).
@@ -50,7 +50,7 @@ Pour plus d’informations, voir [Menaces détectées par Antivirus Microsoft De
 
 La procédure suivante s’applique aux clients qui ont Microsoft 365 Business Premium.
 
-1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
+1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
 
 2. Dans la page de navigation, sélectionnez **Appareils**  >  **actifs.** Vous verrez une liste des appareils actifs et des détails, tels que l’état de protection, l’état de protection antivirus et le nombre de menaces actives détectées.
 
@@ -63,11 +63,11 @@ La procédure suivante s’applique aux clients qui ont Microsoft 365 Business P
 > [!NOTE]
 > La **carte** **Antivirus Microsoft Defender** la page Menaces actives étant déployées par phases, vous n’avez peut-être pas un accès immédiat à ces cartes.
 
-1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
+1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
 
 2. Sur la **Antivirus Microsoft Defender,** sélectionnez **Afficher les menaces actives.** (Sinon, dans le volet de navigation, sélectionnez **Santé**  >  **Menaces & antivirus**.)
 
-3. Dans la page **Menaces** actives, sélectionnez une menace détectée pour en savoir plus à ce sujet. Un flyout s’ouvre avec des détails sur cette menace, y compris les appareils concernés.
+3. Dans la page **Menaces** actives, sélectionnez une menace détectée pour en savoir plus. Un flyout s’ouvre avec des détails sur cette menace, y compris les appareils concernés.
 
 4. Dans le volant, sélectionnez un appareil pour afficher les actions disponibles, telles que la stratégie de mise à **jour,** **l’antivirus** de mise à **jour,** l’analyse rapide, etc.
 
@@ -77,12 +77,12 @@ Lorsque vous affichez des détails sur des menaces ou des appareils spécifiques
 
 | Opération | Description |
 |--|--|
-| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Vous avez besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
-| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Vous avez besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
+| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
+| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
 | Exécuter une analyse rapide | Démarre une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, tels que les clés de Registre et les dossiers Windows de démarrage. |
 | Exécuter une analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, y compris tous les fichiers et dossiers de l’appareil. Les résultats sont envoyés [à Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Mettre à jour un antivirus | Nécessite que l’appareil obtienne des mises à jour de [l’intelligence de sécurité](https://go.microsoft.com/fwlink/?linkid=2149926) pour la protection antivirus et anti-programme malveillant. |
-| Redémarrer l’appareil | Force un Windows 10 à redémarrer dans un délai de cinq minutes.<br><br>**IMPORTANT :** Le propriétaire ou l’utilisateur de l’appareil n’est pas averti automatiquement du redémarrage et risque de perdre du travail non notifié. |
+| Redémarrer l’appareil | Force un Windows 10 à redémarrer dans les cinq minutes.<br><br>**IMPORTANT :** Le propriétaire ou l’utilisateur de l’appareil n’est pas averti automatiquement du redémarrage et risque de perdre du travail non notifié. |
 
 ## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>Gérer les détections de menaces dans Microsoft Endpoint Manager
 
@@ -102,7 +102,7 @@ Le tableau suivant décrit les actions que vous pouvez voir dans Microsoft Endpo
 
 | Opération | Description |
 |--|--|
-| Redémarrer | Force un Windows 10 à redémarrer dans un délai de cinq minutes.<br><br>**IMPORTANT :** Le propriétaire ou l’utilisateur de l’appareil n’est pas averti automatiquement du redémarrage et risque de perdre du travail non notifié. |
+| Redémarrer | Force un Windows 10 à redémarrer dans les cinq minutes.<br><br>**IMPORTANT :** Le propriétaire ou l’utilisateur de l’appareil n’est pas averti automatiquement du redémarrage et risque de perdre du travail non notifié. |
 | Analyse rapide | Démarre une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, tels que les clés de Registre et les dossiers Windows de démarrage. Les résultats sont envoyés [à Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, y compris tous les fichiers et dossiers de l’appareil. Les résultats sont envoyés [à Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Synchronisation | Nécessite un appareil pour l’enregistrement avec Intune (partie de Microsoft Endpoint Manager). Lorsque l’appareil est connecté, il reçoit les actions ou stratégies en attente attribuées à l’appareil. |

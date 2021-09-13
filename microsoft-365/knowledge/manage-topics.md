@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment gérer des rubriques dans le centre de rubriques Sujets Microsoft Viva.
 ms.openlocfilehash: 87e944c232d552f5a0808765a1303750eb840387
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179587"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gérer les rubriques dans le centre de rubriques Sujets Microsoft Viva
 
@@ -59,14 +59,14 @@ Les gestionnaires de connaissances vous aident à guider les rubriques découver
 > [!Note] 
 > Dans la page Gérer **les rubriques,** chaque gestionnaire de connaissances pourra uniquement consulter les rubriques dans laquelle il a accès aux fichiers et pages sous-jacents connectés à la rubrique. Ce suppression d’autorisation sera reflété dans la liste des rubriques qui apparaissent  dans les onglets **Suggéré,** **Confirmé,** Publié et Supprimé. Le nombre de rubriques, toutefois, indique le nombre total dans l’organisation, quelles que soient les autorisations.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour gérer des rubriques dans le centre de rubriques, vous devez :
 - avoir une licence Rubriques Viva.
 
 - Avoir la Qui [**pouvez gérer les autorisations des rubriques.**](./topic-experiences-user-permissions.md) Les administrateurs d'informations peuvent accorder cette autorisation aux utilisateurs dans les paramètres d'autorisation Rubriques Viva. 
 
-Vous ne pourrez pas afficher la page Gérer les rubriques dans le centre de **rubriques,** sauf si vous avez la Qui pouvez gérer **les rubriques.**
+Vous ne pourrez pas afficher la page Gérer les rubriques dans le centre de **rubriques,** sauf si vous Qui pouvez gérer **les rubriques.**
 
 Dans le centre de rubriques, un gestionnaire de connaissances peut consulter les rubriques qui ont été identifiées aux emplacements sources que vous avez spécifiés, et peut les confirmer ou les supprimer. Un gestionnaire de connaissances peut également créer et publier de nouvelles pages de rubriques si aucune page n’a été trouvée dans la découverte de rubrique, ou modifier des pages existantes si elles doivent être mises à jour.
 
@@ -88,7 +88,7 @@ Pour consulter une rubrique suggérée :
     
    - Sélectionnez **le x** si vous souhaitez supprimer la rubrique.
 
-    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** confirmée.
+    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** Confirmée.
 
     Les rubriques supprimées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **l’onglet** Supprimé.
 

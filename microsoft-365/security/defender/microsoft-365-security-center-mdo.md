@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour Office 365 dans Microsoft 365 Defender
-description: Découvrez les modifications apportées au Centre de sécurité & conformité à Microsoft 365 Defender.
-keywords: Microsoft 365 sécurité, mise en place de Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, nouveau portail de sécurité, nouveau portail de sécurité Defender
+description: Découvrez les modifications apportées au Centre de sécurité & conformité Microsoft 365 Defender.
+keywords: Microsoft 365 sécurité, mise en Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, nouveau portail de sécurité, nouveau portail de sécurité Defender
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -18,11 +18,11 @@ ms.collection:
 ms.prod: m365-security
 ms.technology: m365d
 ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177452"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -91,7 +91,7 @@ Réunit les incidents et la gestion des alertes de vos e-mail, appareils, et ide
 
 Recherchez de façon proactive les menaces, les programmes malveillants et des activités malveillantes sur vos points de terminaison, boîtes aux lettres Office 365, etc. à l’aide de [Requêtes de repérage avancé](advanced-hunting-overview.md). Ces requêtes puissantes peuvent être utilisées pour localiser et examiner des indicateurs et entités de menaces connues et de menaces potentielles.
 
-[Les](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) règles de détection personnalisées peuvent être conçues à partir de requêtes de repérage avancées pour vous aider à surveiller de manière proactive les événements qui peuvent indiquer une activité de violation et des appareils mal configurés.
+[Les règles de détection](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) personnalisées peuvent être conçues à partir de requêtes de repérage avancées pour vous aider à surveiller de manière proactive les événements qui peuvent indiquer une activité de violation et des appareils mal configurés.
 
 Voici un exemple [de recherche avancée dans](advanced-hunting-example.md) Microsoft Defender pour Office 365.
 
@@ -99,7 +99,7 @@ Voici un exemple [de recherche avancée dans](advanced-hunting-example.md) Micro
 
 Le centre d’action montre les enquêtes créées par les fonctionnalités automatisées d’enquête et de réponse. Ce système automatisé et self-healing dans Microsoft 365 Defender peut aider les équipes de sécurité en répondant automatiquement à des événements spécifiques.
 
-En savoir plus sur le [Centre de l’action.](m365d-action-center.md)
+En savoir plus sur le [centre de actions.](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Analyses de menaces
 

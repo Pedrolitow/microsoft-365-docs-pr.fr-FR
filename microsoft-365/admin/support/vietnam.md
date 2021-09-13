@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c422e702a58260e6884eeb9493b9b1ad4484b08b043fd2a7aa7d5dcc2d702c0d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5228e3b65ab2f7cef88167934bd748900c395423
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178355"
 ---
 # <a name="contact-support-for-vietnam"></a>Contacter le support pour le Vietnam
 

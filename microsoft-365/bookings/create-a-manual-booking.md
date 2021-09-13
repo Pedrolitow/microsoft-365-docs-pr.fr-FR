@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Suivez ces instructions pour créer un rendez-vous et affecter un employé via l’application Microsoft Bookings.
 ms.openlocfilehash: 9af9b28eb1f00bfc41dbdff2d7df4111cb8bdd13
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181780"
 ---
 # <a name="create-a-manual-booking"></a>Créer une réservation manuelle
 

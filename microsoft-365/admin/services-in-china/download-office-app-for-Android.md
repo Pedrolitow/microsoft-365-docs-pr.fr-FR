@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: En savoir plus sur l Microsoft Office pour Android pour Office 365 géré par 21Vianet et comment la télécharger pour les clients en Chine.
+description: En savoir plus sur l’Microsoft Office pour Android pour Office 365 géré par 21Vianet et comment la télécharger pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: e898ea33d97d41640d4c0e6996742dc3e975baa0ce7e3350a117f5b9529f112d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: af66123ecee91e6c8f5ddd7cd1b441494ce8ca97
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176291"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>application Office android pour Office 365 géré par 21Vianet
 
-L Microsoft Office pour Android combine Word, Excel et PowerPoint applications mobiles en une seule application disponible en téléchargement pour les téléphones Android. Avec le application Office pour Android, vous pouvez vous connecter à Office 365 comme vous le feriez avec word, Excel et PowerPoint applications mobiles. Le application Office pour Android n’affecte pas les installations existantes de Word, Excel et PowerPoint.
+L Microsoft Office pour Android combine Word, Excel et PowerPoint applications mobiles en une seule application disponible en téléchargement pour les téléphones Android. Avec le application Office pour Android, vous pouvez vous connecter à Office 365 comme vous le feriez avec les applications mobiles Word, Excel et PowerPoint mobiles. Le application Office pour Android n’affecte pas les installations existantes de Word, Excel et PowerPoint.
 
 Quelques fonctionnalités application Office Android ne sont pas disponibles pour les Office 365 21Vianet :
 

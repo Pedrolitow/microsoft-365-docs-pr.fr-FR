@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8f4d0ca8034295a625f5b3fdf07bbc665276b474651c5515b49a9b5c465cafa4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179500"
 ---
 # <a name="admin-support"></a>Support pour les administrateurs
 
@@ -48,7 +48,7 @@ Détails du support :
 - Microsoft Manged Desktop du groupe « Test » et les appareils qui ne font pas partie Microsoft Manged Desktop sont hors de portée 
 
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Découvrez comment les administrateurs informatiques peuvent obtenir une assistance](../working-with-managed-desktop/admin-support.md)
 - [Découvrez comment les utilisateurs peuvent obtenir de l’aide](../working-with-managed-desktop/end-user-support.md)

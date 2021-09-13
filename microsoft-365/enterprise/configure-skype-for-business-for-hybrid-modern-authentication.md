@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Découvrez comment configurer une Skype Entreprise en local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
+description: Découvrez comment configurer l Skype Entreprise local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74046b89ba5ded65c9a645ca43e94b195ddf74896b0fd8832653ac8d96606b5f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9695815d0a085931b10f7f64b9fca2e997af9077
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179724"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 
@@ -62,9 +62,9 @@ Ce résumé décompose le processus en étapes qui pourraient sinon être perdue
 
 1. Activer l’authentification moderne pour SFBO (si elle n’est pas déjà allumée).
 
-1. Activer l’authentification moderne hybride pour Exchange local.
+1. Activer l’authentification moderne hybride Exchange local.
 
-1. Activer l’authentification moderne hybride pour Skype Entreprise local.
+1. Activer l’authentification moderne hybride Skype Entreprise en local.
 
 Ces étapes allument MA pour SFB, SFBO, EXCH et EXO, c’est-à-dire tous les produits qui peuvent participer à une configuration HMA de SFB et SFBO (y compris les dépendances sur EXCH/EXO). En d’autres termes, si vos utilisateurs sont des boîtes aux lettres d’accueil ou ont été créées dans une partie de l’hybride (EXO + SFBO, EXO + SFB, EXCH + SFBO ou EXCH + SFB), votre produit terminé ressemblera à ceci :
 
@@ -86,11 +86,11 @@ Une fois que vous avez vérifié que vous répondez aux conditions [préalables]
 
 - **ID client**
 
-  - GUID qui représente votre client Office 365 client (lors de la connexion de contoso.onmicrosoft.com).
+  - GUID qui représente votre client Office 365 client (à la connexion de contoso.onmicrosoft.com).
 
 - **URL de service Web CU5 SFB 2015**
 
-Vous aurez besoin d’URL de service web interne et externe pour tous les pools SfB 2015 déployés. Pour les obtenir, exécutez les commandes suivantes à partir Skype Entreprise Management Shell :
+Vous aurez besoin d’URL de service web interne et externe pour tous les pools SfB 2015 déployés. Pour les obtenir, exécutez la liste suivante à partir Skype Entreprise Management Shell :
 
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -104,7 +104,7 @@ Si vous utilisez un serveur Édition Standard, l’URL interne est vide. Dans ce
 
 ## <a name="turn-on-modern-authentication-for-exo"></a>Activer l’authentification moderne pour EXO
 
-Suivez les instructions [ci-après : Exchange Online : comment activer votre client pour l’authentification moderne.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
+Suivez les instructions ci-après [: Exchange Online : comment activer votre client pour l’authentification moderne.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
 
 ## <a name="turn-on-modern-authentication-for-sfbo"></a>Activer l’authentification moderne pour SFBO
 
@@ -173,7 +173,7 @@ Vous devez également vérifier les « Informations de configuration » Skype En
 
 ![Les informations de configuration d’Skype Entreprise client utilisant l’authentification moderne indiquent une URL d’autorité OAUTH Lync et EWS de https://login.windows.net/common/oauth2/authorize .](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
 
-Vous devez également maintenir la touche Ctrl en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type AuthN de « Bearer » qui représente le jeton du porteur utilisé \* dans OAuth.
+Vous devez également maintenir la touche CTRL en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type AuthN de « Bearer » qui représente le jeton du porteur utilisé \* dans OAuth.
 
 ## <a name="related-articles"></a>Articles connexes
 

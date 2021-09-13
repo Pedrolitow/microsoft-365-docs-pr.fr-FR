@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer des données à partir du système de mauvaise gestion physique de leur organisation Microsoft 365. Cela vous permet d’utiliser ces données dans les stratégies de gestion des risques internes pour vous aider à détecter l’accès à vos bâtiments physiques par des utilisateurs spécifiques qui peuvent indiquer une menace interne possible pour votre organisation.
 ms.openlocfilehash: ae513d01917c0fe4148d265865a77775a5ff2555
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179955"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurer un connecteur pour importer des données de mauvaise qualité physiques (aperçu)
 
@@ -35,7 +35,7 @@ La configuration d’un connecteur de badging physique comprend les tâches suiv
 
 - Exécution d’un script pour pousser les données de badging physique au point de terminaison de l’API.
 
-- Éventuellement, planifier l’exécuter automatiquement pour importer des données de mauvaise qualité physiques.
+- Éventuellement, planifier l’exécuter automatiquement pour importer les données de mauvaise qualité physiques.
 
 ## <a name="before-you-set-up-the-connector"></a>Avant de configurer le connecteur
 
@@ -55,7 +55,7 @@ La première étape consiste à créer et inscrire une nouvelle application dans
 
 - ID de client (également appelé *ID d’annuaire)*
 
-Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Inscrire une application avec le [Plateforme d’identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
+Pour obtenir des instructions détaillées sur la création d’une application dans Azure AD, voir Inscrire une application avec le [Plateforme d'identités Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Étape 2 : Préparer un fichier JSON avec des données de mauvaise qualité physiques
 
@@ -150,13 +150,13 @@ L’étape suivante consiste à créer un connecteur de badging physique dans le
 
 5. Dans la page **Révision,** examinez vos paramètres, puis cliquez sur **Terminer** pour créer le connecteur.
 
-6. Une page d’état confirme que le connecteur a été créé. Cette page contient également l’ID de travail. Vous pouvez copier l’ID de travail à partir de cette page ou de la page de volant du connecteur. Vous avez besoin de cet ID de travail lors de l’exécution du script.
+6. Une page d’état confirme que le connecteur a été créé. Cette page contient également l’ID de travail. Vous pouvez copier l’ID de travail à partir de cette page ou de la page volante du connecteur. Vous avez besoin de cet ID de travail lors de l’exécution du script.
 
    La page d’état contient également un lien vers le script. Reportez-vous à ce script pour comprendre comment publier le fichier JSON sur le point de terminaison de l’API.
 
 7. Cliquez sur **Terminé**.
 
-   Le nouveau connecteur s’affiche dans la liste sous **l’onglet Connecteurs.**
+   Le nouveau connecteur s’affiche dans la liste sous l’onglet **Connecteurs.**
 
 8. Cliquez sur le connecteur de badging physique que vous avez créé pour afficher la page volante, qui contient des propriétés et d’autres informations sur le connecteur.
 
@@ -204,7 +204,7 @@ Après avoir exécuté le script, le fichier JSON contenant les données de mauv
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Si le chargement réussit, le script affiche le message **Télécharger** réussite.
+   Si le téléchargement réussit, le script affiche **l’Télécharger message** Réussite.
 
    Si vous avez plusieurs fichiers JSON, vous devez exécuter le script pour chaque fichier.
 
@@ -253,7 +253,7 @@ Vous pouvez utiliser l’application Planification des tâches dans Windows pour
 
    1. Sous **Paramètres**, sélectionnez l’option  Tous les jours, puis choisissez une date et une heure pour exécuter le script pour la première fois. Le script sera tous les jours à la même heure spécifiée.
 
-   2. Sous **Paramètres avancés,** vérifiez que la **case à** cocher Activée est activée.
+   2. Sous **Paramètres avancés,** assurez-vous que **la case à** cocher Activée est activée.
 
    3. Cliquez sur **OK**.
 

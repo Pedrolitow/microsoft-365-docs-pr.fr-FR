@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 entreprise et la protection des données de travail sur les appareils de vos utilisateurs.
 ms.openlocfilehash: f92cd8d49ba645788549e5490102d76feff51dd3
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178628"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 entreprise
 

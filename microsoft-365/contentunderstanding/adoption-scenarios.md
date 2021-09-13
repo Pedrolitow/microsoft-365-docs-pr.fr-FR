@@ -16,11 +16,11 @@ search.appverid: ''
 localization_priority: Normal
 description: Trouvez des scénarios sur l’utilisation des SharePoint Syntex dans votre organisation.
 ms.openlocfilehash: 619acd5d71bc6f3ab1aa99d3b7fd068faa51d696
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175756"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Scénarios et cas d’usage pour Microsoft SharePoint Syntex
 
@@ -51,7 +51,7 @@ Par exemple, vous pouvez configurer un processus à l’aide SharePoint Syntex e
 Lorsque vous automatisez ce scénario, vous pouvez :
 
 - Gagnez du temps et de l’argent en extrayant automatiquement les données des factures au lieu de les faire manuellement.
-- Réduisez les erreurs potentielles et assurez-vous d’une meilleure conformité à l’aide de flux de travail pour vérifier les factures et vous informer de tout problème.
+- Réduisez les erreurs potentielles et assurez-vous d’une meilleure conformité à l’aide de flux de travail pour vérifier les factures et vous informer des problèmes éventuels.
 
 ## <a name="scenario-track-information-from-contracts-with-document-understanding"></a>Scénario : suivre les informations des contrats avec la compréhension des documents
 
@@ -63,7 +63,7 @@ Par exemple, vous pouvez configurer un processus pour identifier les contrats qu
 1. Une fois le modèle terminé, appliquez-le à une bibliothèque dans laquelle vous pouvez télécharger des contrats.
 1. Appliquez une étiquette de rétention au champ date, afin que les contrats soient conservés dans la bibliothèque pendant la durée requise.
 
-![Suivre et surveiller les contrats avec SharePoint Syntex et les étiquettes de rétention.](../media/content-understanding/process-contracts-flow.png)
+![Suivre et surveiller les contrats avec les étiquettes SharePoint Syntex rétention.](../media/content-understanding/process-contracts-flow.png)
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 
@@ -106,7 +106,7 @@ Lorsque vous automatisez ce scénario, vous pouvez :
 
 Par exemple, une société de petite entreprise peut utiliser SharePoint Syntex pour extraire des informations à partir de documents FDA afin de répondre aux questions de leurs responsables. Le fait d’avoir les réponses plus facilement accessibles peut réduire le temps nécessaire pour produire ces réponses et augmenter la disponibilité des données afin de générer des réponses plus précises aux questions de direction.
 
-Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils reviennent à leur équipe de direction.
+Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils font des rapports à leur équipe de direction.
 
 Lorsque vous automatisez ce scénario, vous pouvez :
 

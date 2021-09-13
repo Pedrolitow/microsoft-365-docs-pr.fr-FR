@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8037500c40b7af642625e1c1ff8ef0d257128f580ebbfb9e982428ce29752136
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2e4ee234b18a42103d4e1a7014af54090cffb015
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181906"
 ---
 # <a name="contact-support-for-colombia"></a>Contacter le support pour la Colombie
 

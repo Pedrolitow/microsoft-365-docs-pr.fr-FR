@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Affichez les stratégies et actions de l’appareil en vous Microsoft 365 aux entreprises à l’Microsoft 365 d’informations d’identification d’administrateur global.
 ms.openlocfilehash: a4494b7125576f927a0cd7f715311ae616c6497c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176620"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 

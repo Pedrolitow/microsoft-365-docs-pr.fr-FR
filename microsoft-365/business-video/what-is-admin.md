@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez les rôles d’administrateur dans Microsoft 365 entreprise.
-ms.openlocfilehash: aa38accad56bf6fc6af34289a118bc9cf81e82b1556a5c1dd72634bed85af6d2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47fe5628bb8464053111078891fc1038fcdd8fa6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180564"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>Qu’est-ce qu Microsoft 365 administrateur de serveur ?
 
@@ -42,8 +43,8 @@ Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour
 Voici comment modifier un rôle d’utilisateur en rôle d’administrateur :
 
 1. Lorsque vous vous Microsoft 365, sélectionnez le lanceur d’applications. Si vous voyez le bouton Administrateur, vous êtes un administrateur.
-1. Sélectionnez **Administrateur** pour passer au Centre d’administration Microsoft 365.
-1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Sélectionnez **Administrateur** pour passer au Centre d'administration Microsoft 365.
+1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 1. Sélectionnez la personne qui doit être administrateur. Les détails de l’utilisateur apparaissent dans la boîte de dialogue de droite.
 1. Choisissez **Gérer les rôles.**
 1. Cochez **la case Utilisateur (pas d’accès administrateur),** puis sélectionnez l’un des rôles d’administrateur. Pour en savoir plus sur un rôle, pointez sur le point d’exclamation (!) et lisez l’info-conseil. Pour donner à l’utilisateur le même rôle que le vôtre, sélectionnez **Administrateur général.**
@@ -54,8 +55,8 @@ Voici comment modifier un rôle d’utilisateur en rôle d’administrateur :
 Vous pouvez également créer un compte d’administrateur dédié pour une personne ou un service informatique :
 
 1. Lorsque vous vous Microsoft 365, sélectionnez le lanceur d’applications.
-1. Sélectionnez **Administrateur** pour passer au Centre d’administration Microsoft 365.
-1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Sélectionnez **Administrateur** pour passer au Centre d'administration Microsoft 365.
+1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 1. Sélectionnez **Ajouter un utilisateur.**
 1. Entrez le prénom  et le nom de l’utilisateur, le nom d’affichage **et** le nom d’utilisateur, puis sélectionnez **Suivant**.
 1. Choisissez **Créer un utilisateur sans licence de produit.** Cela ajoute un nouvel utilisateur, mais vous n’avez pas besoin de payer pour un abonnement mensuel. Sélectionnez **Suivant**.

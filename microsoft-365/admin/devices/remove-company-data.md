@@ -25,11 +25,11 @@ search.appverid:
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Découvrez comment utiliser Microsoft 365 entreprise pour supprimer les données d’entreprise dont vos utilisateurs ont sur leurs appareils ou Windows PC.
 ms.openlocfilehash: f249af524dcdc00601357428425c57da3b3f738c
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176644"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser Microsoft 365 entreprise pour supprimer les données d’en
   
 3. Dans la page **Gérer,** choisissez ou recherchez les données d’un utilisateur que vous souhaitez supprimer, puis choisissez le nom. 
     
-4. Dans le volet suivant, sélectionnez le ou les périphériques dans la liste **Appareils.** Dans le volet d’appareil qui s’ouvre, vous pouvez choisir de réinitialiser l’appareil aux paramètres d’usine ou de supprimer les données d’entreprise, en fonction du type d’appareil. 
+4. Dans le volet suivant, sélectionnez le ou les appareils dans la liste **Appareils.** Dans le volet d’appareil qui s’ouvre, vous pouvez choisir de réinitialiser l’appareil aux paramètres d’usine ou de supprimer les données d’entreprise, en fonction du type d’appareil. 
     
     ![Dans le volet Supprimer les données de l’entreprise, sélectionnez l’appareil à partir duquel vous souhaitez supprimer les données.](../../media/resetorremove.png)
   

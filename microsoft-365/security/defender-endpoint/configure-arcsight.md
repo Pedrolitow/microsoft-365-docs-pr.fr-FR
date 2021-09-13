@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1ab7e1f31fff1e4b553d5d301eb7fbe4749de19e
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177723"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>Configurer Micro Focus ArcSight pour tirer Defender pour les détections de points de terminaison
 
@@ -106,13 +106,13 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
    |Fichier de configuration|Tapez le nom du fichier de propriétés du client. Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée. <p> Par exemple, si le fichier de configuration dans le répertoire « flexagent » est nommé « WDATP-Connector.jsonparser.properties », vous devez taper « WDATP-Connector » comme nom du fichier de propriétés du client.|
    |URL des événements|Selon l’emplacement de votre centre de données, sélectionnez l’URL de l’UE ou des États-Unis : <ul><li>**Pour l’UE**:  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Pour les États-Unis**: `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Pour le Royaume-Uni**: `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
    |Type d’authentification|OAuth 2|
-   |Fichier de propriétés du client OAuth 2|Accédez à l’emplacement *du fichier wdatp-connector.properties.* Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée.|
+   |Fichier de propriétés du client OAuth 2|Accédez à l’emplacement du *fichier wdatp-connector.properties.* Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée.|
    |Jeton d’actualisation|Vous pouvez obtenir un jeton d’actualisation de deux manières : en générant un jeton d’actualisation à partir de la page des **paramètres SIEM** ou en utilisant l’outil restutil. <p> Pour plus d’informations sur la génération d’un jeton d’actualisation à partir de la configuration **préférences,** voir Activer l’intégration [SIEM dans Defender for Endpoint](enable-siem-integration.md). <p> **Obtenez votre jeton d’actualisation à l’aide de l’outil restutil**: <ol><li>Ouvrez une invite de commandes. Accédez à C: \\ *emplacement \_ du* dossier \current\bin où *\_ l’emplacement* du dossier représente l’emplacement où vous avez installé l’outil.</li><li>Type : `arcsight restutil token -config` à partir du répertoire bin. Par exemple : **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080**. Une fenêtre de navigateur Web s’ouvre.</li><li>Tapez vos informations d’identification, puis cliquez sur le champ mot de passe pour que la page soit redirigée. Dans l’invite de connexion, entrez vos informations d’identification.</li><li>Un jeton d’actualisation est affiché dans l’invite de commandes.</li><li>Copiez-le et collez-le dans **le champ Jeton d’actualisation.**|
    |
 
 7. Une fenêtre de navigateur est ouverte par le connecteur. Connectez-vous avec vos informations d’identification d’application. Une fois que vous vous êtes connecter, vous êtes invité à accorder l’autorisation à votre client OAuth2. Vous devez accorder des autorisations à votre client OAuth 2 pour que la configuration du connecteur puisse s’authentifier.
 
-   `redirect_uri`S’il s’agit d’une URL https, vous serez redirigé vers une URL sur l’hôte local. Vous verrez une page qui vous demande d’faire confiance au certificat fourni par le connecteur en cours d’exécution sur l’hôte local. Vous devez faire confiance à ce certificat si l’redirect_uri est un https.
+   `redirect_uri`S’il s’agit d’une URL https, vous serez redirigé vers une URL sur l’hôte local. Vous verrez une page qui vous demande d’faire confiance au certificat fourni par le connecteur s’exécutant sur l’hôte local. Vous devez faire confiance à ce certificat si le redirect_uri est un https.
 
    Toutefois, si vous spécifiez une URL http pour la redirect_uri, vous n’avez pas besoin de donner votre consentement pour l’approbation du certificat.
 
@@ -148,7 +148,7 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
 2. Cliquez sur **Installer**. Une fois l’installation terminée, l’Assistant Configuration de la console ArcSight s’ouvre.
 
-3. Tapez localhost dans **le nom d’hôte** du gestionnaire et 8443 dans le port du **gestionnaire,** puis cliquez sur **Suivant**.
+3. Tapez localhost dans **le nom d’hôte** du gestionnaire et 8443 dans **le port du gestionnaire,** puis cliquez sur **Suivant**.
 
 4. Sélectionnez **Utiliser la connexion directe,** puis cliquez sur **Suivant.**
 
@@ -170,7 +170,7 @@ Les détections defender pour les points de terminaison apparaissent en tant qu�
 
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>Résolution des problèmes de connexion Micro Focus ArcSight
 
-**Problème :** Échec de l’actualisation du jeton. Vous pouvez trouver le journal situé dans C: \\ *folder_location*  \current\logs où folder_location représente l’emplacement où vous avez installé l’outil. Ouvrez _agent.log_ et recherchez `ERROR/FATAL/WARN` .
+**Problème :** Échec de l’actualisation du jeton. Le journal se trouve dans C: \\ *folder_location*\current\logs où folder_location représente l’emplacement où vous avez installé  l’outil. Ouvrez _agent.log_ et recherchez `ERROR/FATAL/WARN` .
 
 **Symptôme :** Vous obtenez le message d’erreur suivant :
 
@@ -193,7 +193,7 @@ Les détections defender pour les points de terminaison apparaissent en tant qu�
 > [!NOTE]
 > Vérifiez que le connecteur est en cours d’exécution en arrêtant à nouveau le processus. Ensuite, démarrez à nouveau le connecteur et aucune fenêtre de navigateur ne doit s’apparaître.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Activer l’intégration SIEM dans Defender for Endpoint](enable-siem-integration.md)
 - [Tirer les détections vers vos outils SIEM](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)

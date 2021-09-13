@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: eabd58f43e1275b3ae7ae3b8563e97299fef1233
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928763"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175932"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -358,10 +358,6 @@ Le message indique :
 8. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
 
 9. Consultez l’Explorateur d’activités pour l’événement.
-
-### <a name="scenario-5-configure-a-policy-to-use-the-customized-business-justification"></a>Scénario 5 : Configurer une stratégie pour utiliser la justification métier personnalisée
-
-
 
 ## <a name="see-also"></a>Voir aussi
 

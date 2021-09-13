@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser un lien Tout le monde dans Microsoft 365 pour partager facilement vos fichiers métiers en externe.
-ms.openlocfilehash: 61b61c5d2bbf303e500f57662d63388a5ff703b9b252566ba1281cb2b17306bd
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbe6a12fd8d0c2b2ec16db32178f9c2559a08c22
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180644"
 ---
 # <a name="easily-share-files-externally"></a>Partager aisément des fichiers en externe
 

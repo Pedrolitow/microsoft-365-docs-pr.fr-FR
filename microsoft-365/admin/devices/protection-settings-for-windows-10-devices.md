@@ -30,11 +30,11 @@ search.appverid:
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger les fichiers de travail sur les appareils personnels Windows 10 vos utilisateurs.
 ms.openlocfilehash: 66ddde8321742d7bcaf6294e905fdd9601482c0a
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176652"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Définir ou modifier les paramètres de protection des applications pour Windows 10 appareils
 
@@ -55,7 +55,7 @@ Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent
 2. Dans le navigation de gauche, choisissez **Ajouter des** \> **stratégies** \> **d’appareils.**
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
 4. Sous **Type de stratégie**, sélectionnez **Gestion des applications pour Windows 10**.
-5. Under **Device type**, choose either **Personal** or **Company Owned**.
+5. Sous **Type d’appareil**, choisissez **Personnel** ou **Entreprise.**
 6. L'option **Chiffrer les fichiers de travail** est activée automatiquement. 
 7. Définissez **Empêcher les utilisateurs de copier des données d'entreprise dans leurs fichiers personnels et les obliger à enregistrer les fichiers professionnels dans OneDrive Entreprise** sur **Activé** si vous ne souhaitez pas que les utilisateurs enregistrent des fichiers professionnels sur leur PC. 
 9. Développez **récupérer des données sur Windows appareils mobiles.** Nous vous recommandons de **l’activer.**

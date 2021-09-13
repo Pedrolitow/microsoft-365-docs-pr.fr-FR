@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium vos utilisateurs et protège vos données.
 ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178275"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
@@ -51,7 +51,7 @@ Téléchargez [une infographie](m365-campaigns-protect-campaign-infographic.md) 
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurer des appareils iPhone et Android
 
-Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [appareils iPhone](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) et Android pour qu’ils fonctionnent en toute sécurité :
+Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [iPhone et](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) les appareils Android pour qu’ils fonctionnent en toute sécurité :
 
 - Configurer des appareils pour utiliser l’authentification multifacteur avec l’application d’authentification.
 - Utilisez les applications mobiles Microsoft, notamment Outlook Mobile, Word, OneDrive et d’autres applications Microsoft de l’App Store. Les applications de messagerie natives incluses sur les appareils iPhone et Android ne sont pas pris en charge. 
@@ -63,7 +63,7 @@ Une fois ces paramètres mis en place, vos utilisateurs sont invités à utilise
 
 Il est également important que les utilisateurs conservent leur périphérique de travail principal à jour :
 
-- Installez les dernières versions de Office applications de bureau et gardez-les à jour avec les mises à jour, lorsque vous y être invité.
+- Installez les dernières versions de Office applications de bureau et conservez-les à jour avec les mises à jour, lorsque vous y être invité.
 - Restez informé des mises à jour du système d’exploitation, telles que Windows mises à jour.
 
 Pour [les appareils Windows 10 mac](m365-campaigns-protect-pcs-macs.md)non Windows 10, les utilisateurs ont la responsabilité de s’assurer que les fonctionnalités de sécurité de base sont activées.
@@ -78,7 +78,7 @@ Pour en savoir plus sur ces recommandations, voir Protéger votre compte et vos 
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Collaborer à l’aide Microsoft Teams, OneDrive, SharePoint Online et d’autres outils
 
-Vos utilisateurs peuvent être tentés de partager et de stocker des fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et](share-files-and-videos.md) des vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
+Vos utilisateurs peuvent être tentés de partager et de stocker les fichiers de votre organisation à des endroits autres que Microsoft 365. Microsoft 365 facilite autant que possible la collaboration et le partage en toute sécurité. Vous pouvez [partager des fichiers et](share-files-and-videos.md) des vidéos directement à partir Microsoft Teams, OneDrive, Stream et même à partir d’un fichier. Le partage à partir de ces outils permet d’éviter la fuite de vos données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation.
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurer des appareils Windows 10 gérés
 

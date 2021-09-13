@@ -17,11 +17,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, d’indexation et de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
 ms.openlocfilehash: 7771f653550c050250126b7ff93b83ee2e175937
-ms.sourcegitcommit: fce9a89b8280f41779835b18dceb59fa17384acf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58666753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179891"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -41,7 +41,7 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 |Nombre maximal de groupes de balises par cas.  <br/> |1000 <br/> |
 |Nombre maximal de balises par cas.  <br/> |1000 <br/> |
 |Nombre maximal de travaux simultanés dans votre organisation pour ajouter du contenu à un groupe de révision. Ces travaux sont **nommés Ajout de données** à un jeu à réviser et sont affichés sous l’onglet **Travaux** dans un cas.| 10 <sup>4</sup> |
-|Nombre maximal de travaux simultanés pour ajouter du contenu à un jeu à réviser par utilisateur. Ces travaux sont **nommés Ajout de données** à un jeu à réviser et sont affichés sous l’onglet **Travaux** dans un cas. | 3  |
+|Nombre maximal de travaux simultanés pour ajouter du contenu à un jeu à réviser par utilisateur. Ces travaux sont **nommés Ajout de données** à un jeu à réviser et sont affichés sous l’onglet **Travaux** dans un cas. | 3 |
 |||
 
 ## <a name="hold-limits"></a>Limites de la durée de vie
@@ -50,7 +50,7 @@ Le tableau suivant répertorie les limites pour les Advanced eDiscovery cas.
 
 | Description de la limite | Limite |
 |:-----|:-----|
-|Nombre maximal de boîtes aux lettres dans une seule et même boîte aux lettres. Cette limite inclut le total combiné de boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Microsoft 365, Microsoft Teams et Yammer groupes. <br/> |1 000  <br/> |
+|Nombre maximal de boîtes aux lettres dans une seule et même boîte aux lettres. Cette limite inclut le total combiné de boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Microsoft 365, Microsoft Teams et Yammer groupes. <br/> |1,000  <br/> |
 |Nombre maximal de sites dans une seule et même période d’attente. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Microsoft 365, Microsoft Teams et Yammer groupes.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Limites d’indexation
@@ -76,11 +76,11 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10  | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions). |10 000 &nbsp; <sup>2</sup>|
 |Nombre maximal de caractères pour une requête de recherche pour SharePoint et OneDrive Entreprise sites (y compris les opérateurs et les conditions). |10 000<br>4 000 avec caractères génériques &nbsp; <sup>2</sup>|
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \* *_ ou _* set \***.|3  |  
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \* *_ ou _* set \***.|3 |  
 |Variantes maximales renvoyées lorsque vous utilisez un caractère générique de préfixe pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et **l’opérateur booléen NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |100|
-|Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1 000|
-|Nombre maximal de boîtes aux lettres qui peuvent être prévisualiser pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|1 000|
+|Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1,000|
+|Nombre maximal de boîtes aux lettres qui peuvent être prévisualiser pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|1,000|
 |Nombre maximal d’éléments provenant SharePoint sites OneDrive Entreprise affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |200|
 |Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites contiennent des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites ayant le plus de résultats sont disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |100|
@@ -116,7 +116,7 @@ Les limites décrites dans cette section sont liées à l’exportation de docum
 | Description de la limite | Limite |
 |:-----|:-----|
 |Taille maximale d’une exportation unique.|5 millions de documents ou 500 Go, selon la taille la plus petite|
-|Nombre maximal d’exportations simultanées par ensemble de révision. | 1  |
+|Nombre maximal d’exportations simultanées par ensemble de révision. | 1 |
 |||
 
 ## <a name="review-set-download-limits"></a>Examiner les limites de téléchargement définies

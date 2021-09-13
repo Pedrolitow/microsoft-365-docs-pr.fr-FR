@@ -20,11 +20,11 @@ description: Recommandations principales de l’équipe de cybersécurité de Mi
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: dc401f20a7f7425e619fc057dbe481341db993ff
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179132"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà
 
@@ -33,7 +33,7 @@ ms.locfileid: "58503226"
 
 Cet article inclut les principales recommandations de l’équipe de cybersécurité de Microsoft pour implémenter des fonctionnalités de sécurité pour protéger Microsoft 365 environnement. Cet article est adapté à partir d’une session Microsoft Ignite — [Secure Microsoft 365 like a cybersecurity pro: Top priorities for the first 30 days, 90 days, and beyond](https://www.youtube.com/watch?v=luignzNyR-o). Cette session a été développée et présentée par Mark Simos et Matt Kemelhar, architectes Enterprise cyber-sécurité.
 
-Contenu de cet article :
+Contenu de cet article :
 
 - [Résultats de la feuille de route](security-roadmap.md#Roadmap)
 - [30 jours : puissantes et rapides](security-roadmap.md#Thirdaydays)
@@ -49,8 +49,8 @@ Ces recommandations de feuille de route sont organisées en trois phases dans un
 
 |Période|Résultats|
 |---|---|
-|30 jours|Configuration rapide : <ul><li>Protections d’administration de base.</li><li>Journalisation et analyse.</li><li>Protections d’identité de base.</li></ul> <p> Configuration du client. <p> Préparez les parties prenantes.|
-|90 jours|Protections avancées : <ul><li>Comptes d’administrateur.</li><li>Les données et les comptes d’utilisateur.</li></ul> <p> Visibilité de la conformité, des menaces et des besoins des utilisateurs. <p> Adaptez et implémentez les stratégies et protections par défaut.|
+|30 jours|Configuration rapide : <ul><li>Protections d’administration de base.</li><li>Journalisation et analyse.</li><li>Protections d’identité de base.</li></ul> <p> Configuration du client. <p> Préparez les parties prenantes.|
+|90 jours|Protections avancées : <ul><li>Comptes d’administrateur.</li><li>Les données et les comptes d’utilisateur.</li></ul> <p> Visibilité de la conformité, des menaces et des besoins des utilisateurs. <p> Adaptez et implémentez des stratégies et des protections par défaut.|
 |Au-delà|Ajuster et affiner les stratégies et les contrôles clés. <p> Étend les protections aux dépendances sur site. <p> Intégration aux processus d’entreprise et de sécurité (juridique, menace interne, etc.).|
 |
 
@@ -78,10 +78,10 @@ Ces tâches prennent un peu plus de temps à planifier et à implémenter, mais 
 
 |Zone|Tâche|
 |---|---|
-|Gestion de la sécurité|<ul><li>Vérifiez le score de sécurité pour les actions recommandées pour votre environnement ( <https://security.microsoft.com/securescore> ).</li><li>Continuez à consulter régulièrement les tableaux de bord et les rapports dans Microsoft 365 Defender portail, Sécurité des applications cloud et les outils SIEM.</li><li>Recherchez et implémentez des mises à jour logicielles.</li><li>Effectuer des simulations d’attaques pour le harponnage, la pulvérisation de mots de passe et les attaques par mot de passe en force brute à l’aide d’une formation sur la [simulation](attack-simulation-training.md) d’attaques (incluse dans [Office 365 Threat Intelligence).](office-365-ti.md)</li><li>Recherchez les risques de partage en réexant les rapports intégrés dans Sécurité des applications cloud (sous l’onglet Examiner).</li><li>Consultez [le Gestionnaire](../../compliance/compliance-manager.md) de conformité pour vérifier l’état des réglementations qui s’appliquent à votre organisation (par exemple, R GDPR, NIST 800-171).</li></ul>|
+|Gestion de la sécurité|<ul><li>Vérifiez le score de sécurité pour les actions recommandées pour votre environnement ( <https://security.microsoft.com/securescore> ).</li><li>Continuez à consulter régulièrement les tableaux de bord et les rapports dans Microsoft 365 Defender portail, Sécurité des applications cloud et les outils SIEM.</li><li>Recherchez et implémentez des mises à jour logicielles.</li><li>Effectuer des simulations d’attaques pour le harponnage, la pulvérisation de mots de passe et les attaques par mot de passe en force brute à l’aide de la formation à la [simulation](attack-simulation-training.md) d’attaques (incluse dans [Office 365 Threat Intelligence](office-365-ti.md)).</li><li>Recherchez les risques de partage en réexant les rapports intégrés dans Sécurité des applications cloud (sous l’onglet Examiner).</li><li>Consultez [le Gestionnaire](../../compliance/compliance-manager.md) de conformité pour vérifier l’état des réglementations qui s’appliquent à votre organisation (par exemple, R GDPR, NIST 800-171).</li></ul>|
 |Protection contre les menaces|Implémenter des protections améliorées pour les comptes d’administrateur : <ul><li>Configurez [les stations de travail à](/security/compass/privileged-access-devices) accès privilégié (PAW) pour l’activité de l’administrateur.</li><li>Configurez [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>Configurez un outil de gestion des événements et des informations de sécurité (SIEM) pour collecter des données de journalisation à partir de Office 365, Sécurité des applications cloud et d’autres services, y compris AD FS. Le journal d’audit stocke les données pendant 90 jours seulement. La capture de ces données dans l’outil SIEM vous permet de stocker les données pendant une période plus longue.</li></ul>|
 |Gestion des identités et des accès|<ul><li>Activez et appliquez l’mf pour tous les utilisateurs.</li><li>Implémenter un ensemble [d’accès conditionnel et de stratégies associées.](microsoft-365-policies-configurations.md)</li></ul>|
-|Protection des informations| Adaptez et implémentez des stratégies de protection des informations. Ces ressources incluent des exemples : <ul><li>[Protection des informations Office 365 pour le RGPD](/compliance/regulatory/gdpr)</li><li>[Configurer Teams avec trois niveaux de protection](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Utilisez des stratégies de protection contre la perte de données et des outils de surveillance dans Microsoft 365 pour les données stockées dans Microsoft 365 (au lieu de Sécurité des applications cloud). <p> Utilisez Sécurité des applications cloud avec Microsoft 365 fonctionnalités d’alerte avancées (autres que la protection contre la perte de données).|
+|Protection des informations| Adaptez et implémentez des stratégies de protection des informations. Ces ressources incluent des exemples : <ul><li>[Protection des informations Office 365 pour le RGPD](/compliance/regulatory/gdpr)</li><li>[Configurer Teams avec trois niveaux de protection](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Utilisez des stratégies de protection contre la perte de données et des outils de surveillance Microsoft 365 pour les données stockées dans Microsoft 365 (au lieu de Sécurité des applications cloud). <p> Utilisez Sécurité des applications cloud avec Microsoft 365 fonctionnalités d’alerte avancées (autres que la protection contre la perte de données).|
 |
 
 ## <a name="beyond"></a>Au-delà

@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 43792367d4ec1cd31c2122badd74a32bc7ae8a19
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180982"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>Évaluer Microsoft Cloud App Security
 

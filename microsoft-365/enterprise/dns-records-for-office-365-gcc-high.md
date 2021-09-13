@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Enregistrements DNS pour Office 365 Cloud de la communauté du secteur public élevé'
 hideEdit: true
-ms.openlocfilehash: ff4a3e9f4711cc61352d1b547f195054eab9b3fb2181280718f386545fea83fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9edcda4616d50d05331db0e2d6c4d89967b02fdc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859058"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181205"
 ---
 # <a name="dns-records-for-office-365-gcc-high"></a>Enregistrements DNS pour Office 365 GCC High
 
 *Cet article s’applique aux Office 365 Cloud de la communauté du secteur public High et Microsoft 365 Cloud de la communauté du secteur public High*
 
-Dans le cadre de l’intégration à Office 365 Cloud de la communauté du secteur public High, vous devez ajouter vos domaines SMTP et SIP à votre client de services en ligne.  Pour ce faire, utilisez l'New-MsolDomain dans Azure AD PowerShell ou utilisez le portail [Azure Government pour](https://portal.azure.us) démarrer le processus d’ajout du domaine et de preuve de propriété.
+Dans le cadre de l’intégration à Office 365 Cloud de la communauté du secteur public High, vous devez ajouter vos domaines SMTP et SIP à votre client de services en ligne.  Pour ce faire, utilisez l'New-MsolDomain dans Azure AD PowerShell ou utilisez le portail [Azure Government pour](https://portal.azure.us) démarrer le processus d’ajout du domaine et prouver la propriété.
 
 Une fois vos domaines ajoutés à votre client et validés, utilisez les instructions suivantes pour ajouter les enregistrements DNS appropriés pour les services ci-dessous.  Vous devrez peut-être modifier le tableau ci-dessous pour répondre aux besoins de votre organisation en ce qui concerne le ou les enregistrement(s) MX entrant(s) et tous les enregistrement(s) de découverte automatique Exchange existant(s) que vous avez en place.  Nous vous recommandons vivement de coordonner ces enregistrements DNS avec votre équipe de messagerie afin d’éviter toute panne ou mauvaise remise des messages électroniques.
 

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Cet article fournit des liens pour les administrateurs système qui planifient les besoins en bande passante réseau ou améliorent les performances de Skype Entreprise Online.
-ms.openlocfilehash: 18bb48e746b60708b67d8372f25c538f41fb1dc229e31ec8f259f156c1105154
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6c210dc184f9164318215d37713a9136b556cc0b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179636"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimiser les performances de Skype Entreprise Online
 

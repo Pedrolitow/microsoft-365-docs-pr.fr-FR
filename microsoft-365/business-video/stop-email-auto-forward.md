@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment arrêter le forwarding automatique des e-mails en créant une règle de flux de messagerie pour éviter le vol d’informations propriétaires.
-ms.openlocfilehash: b3118fed41408ef83ba007ff9530b49b6072f8c51e9ca6cc07fc3526309decb5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5c13e43f29b6d49b13daf4eb0aa6e3d6fd8275ae
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180595"
 ---
 # <a name="stop-email-auto-forward"></a>Arrêter le courrier électronique à l’avance automatique
 
@@ -39,7 +40,7 @@ Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, i
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Exchange** **,** flux de  messagerie et sous l’onglet Règles, sélectionnez le signe plus et choisissez créer **une règle.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>sélectionnez **Exchange** **,** flux de messagerie  et sous l’onglet Règles, sélectionnez le signe plus et choisissez créer **une règle.**
 1. Sélectionnez **plus d’options.** Nommez votre nouvelle règle.
 1. Ensuite, ouvrez la drop-down pour **appliquer cette règle si**, sélectionnez **l’expéditeur,** puis **est interne externe**.
 1. Sélectionnez **À l’intérieur de** l’organisation, puis **OK**.
@@ -55,4 +56,4 @@ Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, i
 
 [Ajouter un autre alias de courrier pour un utilisateur](../admin/email/add-another-email-alias-for-a-user.md) (article)\
 [Configurer le transfert des e-mails dans Microsoft 365](../admin/email/configure-email-forwarding.md) (article)\
-Rechercher et résoudre les problèmes de remise des e-mails en [tant qu’administrateur Office 365 entreprise](/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)
+[Rechercher et résoudre les problèmes de remise des e-mails en tant qu’administrateur Office 365 entreprise](/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)

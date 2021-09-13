@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1aaafcb64bcfffe78959bc78dca8a774f27f3681fe2b17cb64559d17e45d87f5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f071c1aa1965649027b5237a12aef78e0774e60e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831126"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180172"
 ---
 # <a name="payment-information-for-nicaragua"></a>Informations de paiement pour le Nicaragua
 

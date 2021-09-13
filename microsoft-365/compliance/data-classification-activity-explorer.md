@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
 ms.openlocfilehash: 8aff58bfd37fbf4e8573546f84f7670424e6b4d8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176012"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activité
 
@@ -93,7 +93,7 @@ L’Explorateur d’activités collecte des informations d’activité à partir
 - protection supprimée
 - fichiers découverts 
 
-L’Explorateur d’activités rassemble également la stratégie **DLP** qui correspond aux événements de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via la protection contre la perte de données **(DLP)** de point de terminaison. Voici quelques exemples d’événements Windows 10 appareils mobiles :
+L’Explorateur d’activités rassemble également la stratégie **DLP** qui correspond aux événements provenant de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via la protection contre la perte de données **(DLP)** de point de terminaison. Voici quelques exemples d’événements Windows 10'appareils mobiles sont des fichiers :
 
 - suppressions
 - creations

@@ -1,5 +1,5 @@
 ---
-title: Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
+title: Utiliser Microsoft Defender pour les Office 365 avec Microsoft Defender pour le point de terminaison
 f1.keywords:
 - NOCSH
 keywords: intégrer, Microsoft Defender, Microsoft Defender pour point de terminaison
@@ -20,22 +20,22 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ed8d433cd997166ed7fd96034f91eb117b9309cd
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180881"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour Office 365 avec Microsoft Defender pour le point de terminaison
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour les Office 365 avec Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender pour Office 365](defender-for-office-365.md) peut être configuré pour fonctionner avec [Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection)
+[Microsoft Defender pour Office 365](defender-for-office-365.md) peut être configuré pour fonctionner avec [Microsoft Defender pour endpoint](/windows/security/threat-protection).
 
 L’intégration de Microsoft Defender pour Office 365 avec Microsoft Defender for Endpoint peut aider votre équipe des opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
 
-L’image suivante illustre à quoi ressemble l’onglet **Appareils** lorsque l’intégration de Microsoft Defender pour les points de terminaison est activée :
+L’image suivante illustre l’apparence de l’onglet **Appareils** lorsque l’intégration de Microsoft Defender for Endpoint est activée :
 
 ![Lorsque Microsoft Defender pour le point de terminaison est activé, vous pouvez voir une liste d’appareils avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
@@ -44,7 +44,7 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 > [!TIP]
 > Le Microsoft 365 Defender de l’entreprise remplace le Centre de sécurité Microsoft Defender. Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 - Votre organisation doit avoir Microsoft Defender pour Office 365 (ou Office 365 E5) et Microsoft Defender pour point de terminaison.
 
@@ -62,11 +62,11 @@ L’intégration de Microsoft Defender pour Office 365 microsoft Defender pour l
 
 3. Dans la page **Explorateur,** dans le coin supérieur droit de l’écran, sélectionnez **MDE Paramètres**.
 
-3. Dans le volant de connexion **Microsoft Defender pour** point de terminaison qui s’affiche, Connecter à Microsoft **Defender** pour le point de terminaison ( Activer/ Activer), puis sélectionnez ![ ](../../media/scc-toggle-on.png) **Fermer**.
+3. Dans le volant de connexion **Microsoft Defender** pour point de terminaison qui s’affiche, Connecter à **Microsoft Defender** pour le point de terminaison ( Activer/ Activer), puis sélectionnez ![ ](../../media/scc-toggle-on.png) **Fermer**.
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="Connexion MDE.":::
 
-4. Dans le volet de navigation, choisissez **Paramètres**. Sur la **page Paramètres,** choisissez **Points de terminaison**
+4. Dans le volet de navigation, choisissez **Paramètres**. Dans la **page Paramètres,** choisissez **Points de terminaison**
 
 5. Dans la page **Points de terminaison** qui s’ouvre, choisissez **Fonctionnalités avancées.**
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Utilisez un filtre de score de prédiction pour afficher les éléments qu’un modèle de codage prédictif est prévisible comme pertinent ou non pertinent.
 ms.openlocfilehash: 34a9b4da55443cae6c2334952f60b94953b0d9d4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177908"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Appliquer un filtre de score de prédiction à un jeu à réviser (aperçu)
 
@@ -35,7 +35,7 @@ Voici deux façons d’utiliser le filtre de score de prédiction :
 
 - Créez un modèle de codage prédictif de sorte qu’un filtre de score de prédiction correspondant soit créé.
 
-- Vous pouvez appliquer un filtre de score de prédiction après l’un des cycles de formation. Toutefois, vous pouvez attendre après avoir effectué plusieurs séries ou jusqu’à ce que le modèle soit stable avant d’utiliser le filtre de score de prédiction.
+- Vous pouvez appliquer un filtre de score de prédiction après l’un des cycles d’entraînement. Toutefois, vous pouvez attendre après avoir effectué plusieurs séries ou jusqu’à ce que le modèle soit stable avant d’utiliser le filtre de score de prédiction.
 
 ## <a name="apply-a-prediction-score-filter"></a>Appliquer un filtre de score de prédiction
 

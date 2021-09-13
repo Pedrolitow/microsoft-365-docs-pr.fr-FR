@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 469e01c26cd5a9a895abb0e4ea1f386fc374db67416479f147536050d32787e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c67a12be31a137acffed98bb38d6d1e7ab7fe648
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180403"
 ---
 # <a name="payment-information-for-cameroon"></a>Informations de paiement pour le Cameroun
 

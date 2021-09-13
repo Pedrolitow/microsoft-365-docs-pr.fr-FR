@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la mobilité : le score de productivité des utilisateurs.'
-ms.openlocfilehash: d3ea6e4803a1aa5d12084d626b60c058dd578832d8707e8269419683a0ed223d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823029"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178700"
 ---
 # <a name="mobility--people-experiences"></a>Mobilité : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie de mobilité fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Pour prendre en main les informations sur la mobilité, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -145,7 +145,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 2. **Corps :** Met en évidence l’importance de faciliter le travail à distance pour les personnes qui n’ont pas accès aux bureaux physiques de votre organisation.
 3. **Visualisation :** Affiche une courbe de tendance pour le pourcentage quotidien de personnes qui travaillent uniquement à distance, ainsi que pour le pourcentage quotidien de personnes qui travaillent également sur site. Les utilisateurs sont considérés sur site s’ils effectuent au moins trois heures d’activité Microsoft 365 Apps dans une journée.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

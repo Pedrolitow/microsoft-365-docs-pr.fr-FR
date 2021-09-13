@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment gérer les stratégies Windows 10 Professionnel appareil à l’Microsoft 365 Business Premium.
-ms.openlocfilehash: fa639da2b12f97e833d892d2b83939d42481c766f8c57c6f52adf7eb5fae0011
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38ed4cac88d500cec6ad4c4fe96a4fb701f1ad5b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181684"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>Gérer les stratégies Windows 10 Professionnel appareils
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser Microsoft 365 Business pour vous assurer que Antivirus Wind
 
 ## <a name="try-it"></a>Essayez !
 
-1. Connectez-vous au centre d’administration Microsoft 365.
+1. Connectez-vous au 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
 1. Sous **Stratégies,** choisissez Ajouter une stratégie.
 1. Dans le volet Ajouter **une** stratégie, entrez un nom sous nom de **stratégie,** puis sélectionnez Windows 10 **configuration** de l’appareil sous Type **de stratégie.**
 1. Choisissez **Secure Windows 10 pour** voir les sous-paramètres.

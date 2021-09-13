@@ -22,12 +22,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Cet article peut vous aider à résoudre Office 365 problèmes de performances et même résoudre certains des problèmes les plus courants.
-ms.openlocfilehash: 4c6291956dd42dbe6254c6fa016d2d5bcbfb6d0dbc4ca1db61e1d5ed74067ea0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ef459d6469881c71ea7d1da3a32eb42eb3ead6b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53905170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182123"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan de résolution des problèmes de performances pour Office 365
 
@@ -143,7 +143,7 @@ L’enregistreur d'PSR.exe vous permet d’enregistrer les problèmes au cours d
 
 3. Cliquez **sur Arrêter l’enregistrement** lorsque vous avez terminé les étapes. Si le problème de performances est un rendu de page, attendez que la page s’restituer avant d’arrêter l’enregistrement.
 
-4. Cliquez sur **Save (Enregistrer)**.
+4. Cliquez sur **Enregistrer**.
 
 ![Capture d’écran de l’enregistreur d’étapes PSR.exe.](../media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
 
@@ -328,9 +328,9 @@ Pour ajouter une colonne à Netmon :
 2. Cliquez **sur Choisir les colonnes.**
 3. Recherchez _le résumé NTLMSSP_ et _le delta_ du temps dans la liste, puis cliquez sur **Ajouter.**
 4. Déplacez les nouvelles colonnes en place avant ou derrière la colonne _Description_ afin de pouvoir les lire côte à côte.
-5. Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
-Même si vous n’ajoutez pas la colonne, le filtre Netmon fonctionne. Toutefois, votre dépannage sera beaucoup plus facile si vous voyez à quelle étape de l’authentification vous êtes.
+Même si vous n’ajoutez pas la colonne, le filtre Netmon fonctionne. Toutefois, votre résolution des problèmes sera beaucoup plus facile si vous voyez à quelle étape de l’authentification vous êtes.
 
 Lorsque vous recherchez des instances d’authentification proxy, n’oubliez pas d’étudier tous les cadres où il existe un défi NTLM ou un message d’authentification. Si nécessaire, cliquez avec le bouton droit sur la partie spécifique du trafic et recherchez le \> protocole TCP Conversations. N’ignorez pas les valeurs de delta de temps dans ces conversations.
 
@@ -369,7 +369,7 @@ Vous souhaitez examiner le décalage de temps ici. Il peut également être util
 2. Cliquez **sur Choisir les colonnes.**
 3. Recherchez _Time Delta_ dans la liste, puis cliquez sur **Ajouter.**
 4. Déplacez la nouvelle colonne en place avant ou derrière la colonne _Description_ afin de pouvoir les lire côte à côte.
-5. Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
 Si vous trouvez une requête intéressante, envisagez de l’isoler en cliquant avec le bouton droit sur cette requête dans le panneau Détails de l’image, en choisissant **Rechercher des conversations** \> **DNS**. Notez que le panneau Conversations réseau passe directement à la conversation spécifique dans son journal du trafic UDP.
 
@@ -379,7 +379,7 @@ Dans Wireshark, vous pouvez effectuer une colonne pour le temps DNS. Prenez votr
 
 [Une recherche sur SharePoint Online filtrée dans Wireshark par dns.time (en minuscules), avec l’heure des détails dans une colonne et triée par ordre croissant.](../media/1439dcc2-12ff-4ee2-9ef3-1484cf79c384.PNG)
 
-Si vous souhaitez faire plus d’investigation sur le temps de résolution DNS, essayez un PsPing sur le port DNS utilisé par TCP (par exemple,  `psping <IP address of DNS server>:53` ) . Voyez-vous toujours un problème de performances ? Si vous le faites, le problème est plus susceptible d’être un problème de réseau plus large qu’un problème spécifique de l’application DNS que vous touchez pour résoudre le problème. Il est également intéressant de mentionner, là encore, qu’un test ping sur outlook.office365.com vous indiquera où se trouve la résolution de noms DNS pour Outlook Online (par exemple, outlook-namnorthwest.office365.com).
+Si vous souhaitez faire plus d’investigation sur le temps de résolution DNS, essayez un PsPing sur le port DNS utilisé par TCP (par exemple,  `psping <IP address of DNS server>:53` ) . Voyez-vous toujours un problème de performances ? Si vous le faites, le problème est plus susceptible d’être un problème de réseau plus large qu’un problème spécifique de l’application DNS que vous touchez pour résoudre le problème. Il est également utile de mentionner, là encore, qu’un test ping sur outlook.office365.com vous indiquera où se trouve la résolution de noms DNS pour Outlook Online (par exemple, outlook-namnorthwest.office365.com).
 
 Si le problème semble spécifique au DNS, il peut être nécessaire de contacter votre service informatique pour examiner les configurations DNS et les forwardeurs DNS pour examiner ce problème plus en détail.
 
@@ -397,9 +397,9 @@ Il n’existe aucun outil de suivi ou de dépannage réseau spécifique à ce pr
 
 ### <a name="tcp-max-segment-size"></a>Taille maximale du segment TCP
 
-Se trouve dans la syn - SYN/ACK.  Effectuez cette vérification dans toute trace réseau de performances que vous avez prise pour vous assurer que les paquets TCP sont configurés pour transporter la quantité maximale de données possible.
+Se trouve dans la syn - SYN/ACK.  Effectuez cette vérification dans le suivi réseau de performances que vous avez pris pour vous assurer que les paquets TCP sont configurés pour transporter la quantité maximale de données possible.
 
-L’objectif est d’obtenir un MSS de 1 460 octets pour la transmission des données. Si vous êtes derrière un proxy ou si vous utilisez une nat, n’oubliez pas d’exécuter ce test à partir du client vers proxy/sortie/NAT, et du proxy/sortie/NAT à Office 365 pour obtenir de meilleurs résultats ! Il s’existe des sessions TCP différentes.
+L’objectif est d’obtenir un MSS de 1 460 octets pour la transmission des données. Si vous êtes derrière un proxy ou si vous utilisez un nat, n’oubliez pas d’exécuter ce test à partir du client vers proxy/sortie/NAT, et du proxy/sortie/NAT vers Office 365 pour obtenir de meilleurs résultats ! Il s’existe des sessions TCP différentes.
 
 #### <a name="tools"></a>Outils
 
@@ -422,11 +422,11 @@ Dans Wireshark, utilisez quelque chose comme  `frame contains "sphybridExample"`
 
 Plus important encore, si vous n’avez reçu aucune des informations d’adresse IP au moment du suivi, la recherche de votre URL dans la trace (partie de , par exemple), vous donnera des adresses IP pour filtrer `sphybridExample-my.sharepoint.com` par.
 
-Recherchez la connexion dans le suivi que vous souhaitez voir. Pour ce faire, vous pouvez analyser le suivi, en filtrant les adresses IP ou en sélectionnant des ID de conversation spécifiques à l’aide de la fenêtre Conversations réseau dans Netmon. Une fois que vous avez trouvé le paquet SYN, développez TCP (dans Netmon) ou le protocole de contrôle de transmission (dans Wireshark) dans le panneau Détails de l’image. Développez options TCP et MaxSegmentSize. Recherchez le cadre SYN-ACK associé et développez les options TCP et MaxSegmentSize. La plus petite des deux valeurs sera votre taille maximale de segment. Dans cette image, j’utilise la colonne intégrée dans Netmon appelée Résolution des problèmes TCP.
+Recherchez la connexion dans le suivi que vous souhaitez voir. Pour ce faire, vous pouvez analyser le suivi, en filtrant les adresses IP ou en sélectionnant des ID de conversation spécifiques à l’aide de la fenêtre Conversations réseau dans Netmon. Une fois que vous avez trouvé le paquet SYN, développez TCP (dans Netmon) ou le protocole de contrôle de transmission (dans Wireshark) dans le panneau Détails de l’image. Développez options TCP et MaxSegmentSize. Recherchez le cadre SYN-ACK associé et développez les options TCP et MaxSegmentSize. La plus petite des deux valeurs sera votre taille de segment maximale. Dans cette image, j’utilise la colonne intégrée dans Netmon appelée Résolution des problèmes TCP.
 
 ![Suivi réseau filtré dans Netmon à l’aide des colonnes intégrées.](../media/e073df13-71f8-497a-83b4-bb9f70bd9833.PNG)
 
-La colonne intégrée se trouve en haut du panneau **Détails du** cadre. (Pour revenir à votre affichage normal, cliquez à nouveau sur **Colonnes,** puis choisissez **Fuseau horaire.)**
+La colonne intégrée se trouve en haut du panneau **Détails du** cadre. (Pour revenir à votre affichage normal, cliquez **à** nouveau sur Colonnes, puis choisissez **Fuseau horaire.)**
 
 ![Où trouver la liste déroulante des colonnes pour l’option Résolution des problèmes TCP (en haut du résumé de la trame).](../media/64fd4baa-a872-4f07-b959-752d7d37fd62.PNG)
 
@@ -498,7 +498,7 @@ Ouvrez l’invite de commandes sur l’ordinateur client (via la cmd Démarrer \
 
 Nous ne couvrent pas les outils utilisés dans le dépannage propre à l’application dans cet article propre au réseau. Mais vous trouverez des ressources que vous *pouvez* utiliser [sur cette page.](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Gestion des points de terminaison Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 

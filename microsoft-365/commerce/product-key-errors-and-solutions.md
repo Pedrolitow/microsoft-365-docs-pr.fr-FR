@@ -21,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 ms.date: 05/01/2021
-ms.openlocfilehash: cfb46f4f248a24f9f6c24c33a3b7691e24e20feeb0b6f1899833881f0654fcea
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d93b45258b9004d0ae19795886d31ce1e7141601
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176171"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Vous avez des problèmes avec Microsoft 365 clé de produit pour les entreprises ?
 
@@ -53,7 +53,7 @@ S’il existe un message d’erreur lorsque vous essayez d’échanger une clé 
 > [!NOTE]
 > Lorsque vous achetez Microsoft 365 par le biais d’un partenaire, Microsoft vous envoie un courrier électronique contenant des instructions pour obtenir votre clé de produit et activer votre abonnement dans le Centre de gestion des licences en [volume.](https://go.microsoft.com/fwlink/p/?LinkID=282016) Pour en savoir plus sur les licences en volume, consultez l'[aide pour les clients du programme de licence en volume](https://go.microsoft.com/fwlink/p/?LinkId=534992).
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Rechercher et entrer votre clé de produit](enter-your-product-key.md) (article)\
 [Renouveler un abonnement](subscriptions/renew-your-subscription.md) (article)\

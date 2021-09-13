@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 576a891d683b970ff13f148b302e5c01c86901f3dd559850972522a0ae40cf71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5d8b0b95668cb46adf8d2da59939b5659e702ad6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182039"
 ---
 # <a name="reassign-profiles"></a>Réaffecter des profils
 

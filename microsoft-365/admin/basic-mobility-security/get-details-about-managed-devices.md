@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Utilisez Windows PowerShell pour obtenir des détails sur les périphériques de mobilité et de sécurité de base dans votre organisation.
 ms.openlocfilehash: 231eeb87d3f72ca4107c0ee6bef5bd60c713bb3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176867"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par la mobilité et la sécurité de base
 
@@ -33,7 +33,7 @@ Voici une répartition des détails de l’appareil à votre disposition.
 
 |**Detail**|**Ce qu’il faut rechercher dans PowerShell**|
 |:----------------|:------------------------------------------------------------------------------|
-|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged est*   :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
+|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged*   est :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
 |L’appareil est conforme aux stratégies de sécurité de votre appareil. Pour plus d’informations, voir [Créer des stratégies de sécurité d’appareil](create-device-security-policies.md)|La valeur du *paramètre isCompliant*   est :<br/>**True**   = l’appareil est conforme aux stratégies.<br/>**False**   = l’appareil n’est pas conforme aux stratégies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base.":::
@@ -73,7 +73,7 @@ Pour plus d’informations sur ces [étapes, voir Connecter à Microsoft 365 a
 
 2. Dans la boîte Windows PowerShell demande d’informations d’identification, tapez le nom d’utilisateur et le mot de passe de votre compte Microsoft 365 administrateur global, puis sélectionnez **OK.**
 
-3. Exécutez la commande suivante :
+3. Exécutez la commande suivante.
 
    ```powershell
    Connect-MsolService -Credential $UserCredential
@@ -88,7 +88,7 @@ Pour exécuter le script Get-MsolUserDeviceComplianceStatus.ps1, vous devez acti
 
 1. À partir de Windows bureau, sélectionnez **Démarrer,** puis tapez Windows PowerShell. Cliquez avec le bouton Windows PowerShell, puis sélectionnez **Exécuter en tant qu’administrateur.**
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante.
 
    ```powershell
    Set-ExecutionPolicy  RemoteSigned
@@ -100,7 +100,7 @@ Pour exécuter le script Get-MsolUserDeviceComplianceStatus.ps1, vous devez acti
 
 1. Ouvrez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante.
 
    ```powershell
    Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
@@ -201,7 +201,7 @@ Tout d’abord, enregistrez le script sur votre ordinateur.
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécutez le script pour obtenir des informations sur l’appareil d’un groupe d’utilisateurs
+## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécuter le script pour obtenir des informations sur l’appareil d’un groupe d’utilisateurs
 
 1. Ouvrez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
@@ -225,7 +225,7 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Microsoft Connecter été retiré](/collaborate/connect-redirect)
 

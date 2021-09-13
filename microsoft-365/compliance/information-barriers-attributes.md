@@ -13,12 +13,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79247ad0018f8bfb08e58254870fd510ca6fb0ad291a72b2bee4d16b9113ac4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175843"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributs pour les stratégies d’obstacle aux informations
 
@@ -60,7 +60,7 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les o
 |**Azure Active Directory de la propriété <br/> (nom complet LDAP)**|**Exchange de la propriété**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Société | Société |
+| Company | Company |
 | Service | Service |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |

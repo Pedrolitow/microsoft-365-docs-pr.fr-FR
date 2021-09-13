@@ -11,16 +11,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- admindeeplinkMAC
 search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment planifier et exécuter un programme pilote d’essai pour SharePoint Syntex votre organisation.
-ms.openlocfilehash: 336a4c164f15035168d8842b05cdd4b5c566a97a
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 51854dafb7ae9c1de350f5f9f29eedc191b8c2aa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863676"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181240"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Exécuter une version d’essai de Microsoft SharePoint Syntex
 
@@ -39,7 +41,7 @@ Vous pouvez obtenir la version d’essai à partir de l’une des sources suivan
 
 - Le [Centre d'administration Microsoft 365](https://admin.microsoft.com)
     1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
-    2. Go to **Billing**  >  **Purchase Services**.
+    2. Go to **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase Services**</a>.
     3. Faites défiler la page vers le bas jusqu’à la section **Modules complémentaires**.
     4. Sur la SharePoint Syntex, sélectionnez **Détails.**
     5. Sélectionnez **Obtenir un essai gratuit**.

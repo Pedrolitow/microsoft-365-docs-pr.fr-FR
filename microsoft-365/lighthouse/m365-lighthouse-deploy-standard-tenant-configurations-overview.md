@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment utiliser les lignes de base pour déployer des configurations client standard.
 ms.openlocfilehash: 5dc1f7da329ab1630d857ee337048a47ad06c9e9
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182098"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Vue d’ensemble de l’utilisation des lignes de base pour déployer des configurations client standard 
 
@@ -32,7 +32,7 @@ Microsoft 365 Lighthouse de référence fournissent un moyen extensible et évol
 
 Conçu pour aider les partenaires à favoriser l’adoption de la sécurité par les clients à leur propre rythme, Le Monde fournit un ensemble standard de paramètres de référence et de configurations prédéfinës pour Microsoft 365 services. Ces configurations de sécurité permettent de mesurer la progression de la sécurité Microsoft 365 conformité de vos locataires.
 
-Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de La station d’évaluation. Pour appliquer des lignes de base à un client, sélectionnez **Les** locataires dans le volet de navigation de gauche, puis sélectionnez un client. Ensuite, allez dans l’onglet **Plans de** déploiement et implémentez la ligne de base souhaitée.
+Vous pouvez afficher la ligne de base par défaut et ses étapes de déploiement à partir de l’intérieur de l’espace de travail. Pour appliquer des lignes de base à un client, sélectionnez **Les** locataires dans le volet de navigation de gauche, puis sélectionnez un client. Ensuite, allez dans l’onglet **Plans de** déploiement et implémentez la ligne de base souhaitée.
 
 ## <a name="standard-baseline-security-templates"></a>Modèles de sécurité standard de référence
 

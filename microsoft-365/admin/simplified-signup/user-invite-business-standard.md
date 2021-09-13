@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: Accepter l’invitation à rejoindre une Microsoft 365 Business Standard organisation
 ms.openlocfilehash: cdb77b7f0263aaeabad972dc5a005e42ce0d6deb
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178435"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Accepter une invitation par courrier électronique à un abonnement Microsoft 365 Business Standard client (utilisateur)
 

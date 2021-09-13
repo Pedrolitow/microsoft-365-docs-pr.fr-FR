@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser les outils inclus dans SharePoint Online pour optimiser les images dans SharePoint pages de sites modernes en ligne.
 ms.openlocfilehash: 0bc9132a890c25804fa262bd494452db702d2a06
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181174"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Optimiser les images dans les pages de sites modernes SharePoint Online
 

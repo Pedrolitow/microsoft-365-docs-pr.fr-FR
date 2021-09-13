@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Liste des pays dans lesquels la gouvernance des applications est disponible.
 ms.openlocfilehash: 926c2069a0fb53cb6211c6c686e2afc5b8bdc10b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255384"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181475"
 ---
 # <a name="app-governance-supported-countries"></a>Pays pris en charge par la gouvernance des applications
 

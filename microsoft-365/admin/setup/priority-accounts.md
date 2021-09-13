@@ -15,18 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Surveiller les messages électroniques ayant échoué et retardés envoyés vers ou depuis des comptes ayant un impact important sur l’entreprise.
-ms.openlocfilehash: 4ade66d811fd63cbf7bb28d254f21ee454741f13
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.openlocfilehash: 5d1122502c2ba7eff653874f5affba7774e9feb5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178475"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Gérer et surveiller les comptes de priorité
 
 Dans chaque Microsoft 365 organisation, il existe des personnes essentielles, telles que des cadres, des responsables, des responsables ou d’autres utilisateurs qui ont accès à des informations sensibles, propriétaires ou prioritaires.
 
-Pour aider votre organisation à protéger ces comptes, vous pouvez désormais désigner des utilisateurs spécifiques en tant que comptes prioritaires et tirer parti des fonctionnalités propres à l’application qui leur offrent une protection supplémentaire. À l’avenir, d’autres applications et fonctionnalités ront en charge les comptes prioritaires. Pour commencer, nous avons annoncé deux fonctionnalités : la **protection** de compte prioritaire et la surveillance du flux de messagerie **premium.**
+Pour aider votre organisation à protéger ces comptes, vous pouvez désormais désigner des utilisateurs spécifiques comme comptes prioritaires et tirer parti des fonctionnalités propres à l’application qui leur offrent une protection supplémentaire. À l’avenir, d’autres applications et fonctionnalités ront en charge les comptes prioritaires. Pour commencer, nous avons annoncé deux fonctionnalités : la **protection** de compte prioritaire et la surveillance du flux de messagerie **premium.**
 
 - Protection des comptes prioritaires **:** Microsoft Defender pour Office 365 (anciennement Office 365 Protection avancée contre les menaces) prend en charge les comptes prioritaires en tant que balises qui peuvent être utilisées dans les filtres dans les alertes, les rapports et les enquêtes. Pour plus d’informations, consultez [balises utilisateur dans Microsoft Defender pour Office 365](../../security/office-365-security/user-tags.md).
 
@@ -48,7 +48,7 @@ La **fonctionnalité de protection des** comptes prioritaires décrite dans cett
 La **fonctionnalité Premium surveillance** Flow courrier électronique décrite dans cette rubrique est disponible uniquement pour les organisations qui répondent aux exigences suivantes :
 
 - Votre organisation doit avoir un nombre de licences d’au moins 5 000, de l’un des produits suivants ou d’une combinaison des produits suivants : Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Par exemple, votre organisation peut avoir 3 000 licences Office 365 E3 et 2 500 Microsoft 365 E5, pour un total de 5 500 licences provenant des produits éligibles.
-- Votre organisation doit avoir au moins 50 utilisateurs Exchange Online actifs par mois.
+- Votre organisation doit avoir au moins 50 utilisateurs actifs mensuels pour une ou plusieurs charges de travail principales ( Teams, One Drive for Business, SharePoint Online, Exchange Online et Office applications.
 
 > [!NOTE]
 > Vous pouvez surveiller jusqu’à 250 comptes prioritaires.
@@ -59,7 +59,7 @@ Lorsque vous appliquez une protection de compte prioritaire à une boîte aux le
 
 Ajoutez des comptes de priorité à partir de la **page d’installation.**
 
-1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 2. Go to **Setup**  >  **Organizational knowledge**, and choose **View** under Monitor your most **important accounts**.
 
@@ -85,7 +85,7 @@ Ajoutez des comptes de priorité à partir de la page Utilisateurs actifs.
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>Supprimer un utilisateur de la liste des comptes prioritaires
 
-1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 2. Go to **Setup**  >  **Organizational knowledge**, and choose **View** under Monitor your most **important accounts**.
 
@@ -93,6 +93,6 @@ Ajoutez des comptes de priorité à partir de la page Utilisateurs actifs.
 
 4. Dans la page **Comptes prioritaires,** sélectionnez l’utilisateur ou les utilisateurs que vous souhaitez supprimer de la liste, puis choisissez Supprimer **des comptes.**
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Utilisation de comptes prioritaires dans Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)

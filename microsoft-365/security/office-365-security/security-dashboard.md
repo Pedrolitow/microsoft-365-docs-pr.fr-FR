@@ -20,11 +20,11 @@ description: Utilisez le nouveau tableau de bord de sécurité pour passer en re
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 18cde7063e8a25426b56ee184b71408016a6116d
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180868"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Tableau de bord de sécurité dans le Centre de sécurité & conformité
 

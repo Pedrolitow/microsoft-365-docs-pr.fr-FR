@@ -20,15 +20,15 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment gérer les paramètres Office scripts pour les utilisateurs de votre organisation.
 ms.openlocfilehash: 4af5d318552b371e9b7eef5be6750fde2c0b2ace
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178980"
 ---
 # <a name="manage-office-scripts-settings"></a>Gérer les paramètres de Office Scripts
 
-[Office scripts permet](/office/dev/scripts) aux utilisateurs d’automatiser les tâches en enregistrant, en éditant et en exécutant des scripts dans Excel sur le Web. Office Les scripts fonctionnent avec Power Automate, et les utilisateurs exécutent des scripts sur des workbooks à l’aide du connecteur Excel Online (Entreprise). Microsoft 365 administrateurs peuvent gérer les paramètres Office scripts à partir du Centre d’administration Microsoft 365.
+[Office scripts permet](/office/dev/scripts) aux utilisateurs d’automatiser les tâches en enregistrant, en éditant et en exécutant des scripts dans Excel sur le Web. Office Les scripts fonctionnent avec Power Automate, et les utilisateurs exécutent des scripts sur des workbooks à l’aide du connecteur Excel Online (Entreprise). Microsoft 365 administrateurs peuvent gérer les paramètres Office scripts à partir du Centre d'administration Microsoft 365.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -46,9 +46,9 @@ ms.locfileid: "58394203"
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Gérer la disponibilité des Office scripts et le partage des scripts
 
-1. Dans la Centre d’administration Microsoft 365, go to the **Paramètres** \> **Org settings** \> **[Services](https://go.microsoft.com/fwlink/p/?linkid=2053743)** tab.
+1. Dans la Centre d'administration Microsoft 365, go to the **Paramètres** \> **Org settings** \> **[Services](https://go.microsoft.com/fwlink/p/?linkid=2053743)** tab.
 
-2. Sélectionnez **Office scripts**.
+2. Sélectionnez **Office scripts.**
 
 3. Office Les scripts sont allumés par défaut, et tous les membres de votre organisation peuvent accéder à la fonctionnalité et les utiliser et partager des scripts. Pour désactiver la Office scripts pour votre organisation, désactiver la case à cocher Laisser les utilisateurs **automatiser leurs tâches Excel sur le Web** cocher.
 
@@ -73,7 +73,7 @@ ms.locfileid: "58394203"
 
     - Pour autoriser tous les utilisateurs à accéder Office scripts pour partager leurs scripts, laissez **Tout** le monde (par défaut) sélectionné.
 
-    - Pour autoriser uniquement les membres d’un groupe spécifique ayant accès à Office Scripts à partager leurs scripts, sélectionnez **Groupe** spécifique, puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
+    - Pour autoriser uniquement les membres d’un groupe spécifique ayant accès à Office Scripts à partager leurs scripts, sélectionnez Groupe **spécifique,** puis entrez le nom ou l’alias de messagerie du groupe pour l’ajouter à la liste d’adresses. Vous ne pouvez ajouter qu’un seul groupe à la liste d’utilisateurs et il doit s’agit de l’un des types suivants :
         - Microsoft 365 groupe
         - Groupe de distribution
         - Groupe de sécurité
@@ -103,7 +103,7 @@ ms.locfileid: "58394203"
 
 Étant donné que Office Scripts fonctionne avec Power Automate, nous vous recommandons de passer en revue vos stratégies de protection contre la perte de données (DLP) existantes pour vous assurer que les données de votre organisation restent protégées pendant que les utilisateurs utilisent Office Scripts. Pour plus d’informations, consultez [stratégies de protection contre la perte de données (DLP)](/power-automate/prevent-data-loss).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Office documentation technique sur les scripts](/office/dev/scripts/) (page de liens)\
 [Introduction à Office scripts dans Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (article)\

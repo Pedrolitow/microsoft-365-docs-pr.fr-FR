@@ -17,11 +17,11 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: bd6353a2afc1382737fb95ec07faba1807b7cfd1
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177668"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Configurer la correction pour la détection d’antivirus Microsoft Defender
 
@@ -52,10 +52,10 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 
 ****
 
-|Lieu|Paramètre|Description|Paramètre par défaut (s’il n’est pas configuré)|
+|Emplacement|Setting|Description|Paramètre par défaut (s’il n’est pas configuré)|
 |---|---|---|---|
 |Analyser|Créer un point de restauration du système|Un point de restauration système est créé chaque jour avant la tentative de nettoyage ou d’analyse|Désactivé|
-|Analyser|Activer la suppression des éléments du dossier d’historique d’analyse|Spécifier le nombre de jours pendant combien d’éléments doivent être conservés dans l’historique d’analyse|30 jours|
+|Analyser|Activer la suppression des éléments du dossier d’historique d’analyse|Spécifier le nombre de jours pendant combien d’éléments doivent être conservés dans l’historique d’analyse|30 jours|
 |Root|Désactiver la correction de routine|Vous pouvez spécifier si Antivirus Microsoft Defender les menaces sont automatiquement corrigés ou s’il doit demander à l’utilisateur du point de terminaison ce qu’il doit faire.|Désactivé (les menaces sont automatiquement corrigés)|
 |Quarantaine|Configurer la suppression des éléments du dossier de mise en quarantaine|Spécifier le nombre de jours pendant combien d’éléments doivent être mis en quarantaine avant d’être supprimés|90 jours|
 |Menaces|Spécifier les niveaux d’alerte contre les menaces pour lesquels aucune action par défaut ne doit être prise lorsqu’elle est détectée|Chaque menace détectée par le Antivirus Microsoft Defender est affectée à un niveau de menace (faible, moyen, élevé ou grave). Vous pouvez utiliser ce paramètre pour définir comment toutes les menaces pour chacun des niveaux de menace doivent être corrigés (mis en quarantaine, supprimés ou ignorés)|Non applicable|
@@ -63,7 +63,7 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 |
 
 > [!IMPORTANT]
-> Antivirus Microsoft Defender détecte et remédie aux fichiers en fonction de nombreux facteurs. Parfois, la réalisation d’une correction nécessite un redémarrage. Même si la détection est ultérieurement déterminée comme faux positif, le redémarrage doit être effectué pour s’assurer que toutes les autres étapes de correction ont été effectuées.
+> Antivirus Microsoft Defender détecte et remédie aux fichiers en fonction de nombreux facteurs. Parfois, la réalisation d’une correction nécessite un redémarrage. Même si la détection est ultérieurement déterminée comme faux positif, le redémarrage doit être effectué pour s’assurer que toutes les étapes de correction supplémentaires ont été effectuées.
 >
 > Si vous êtes certain Antivirus Microsoft Defender mis en quarantaine un fichier basé sur un faux positif, vous pouvez le restaurer à partir de la quarantaine après le redémarrage de l’appareil. Voir [Restaurer les fichiers mis en quarantaine dans Antivirus Microsoft Defender](restore-quarantined-files-microsoft-defender-antivirus.md).
 >

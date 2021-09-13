@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment ajouter des utilisateurs dans Microsoft 365 entreprise.
-ms.openlocfilehash: 097bc190fbee5c7fd000849458654afe00129a2217853be243c9b179d795ea00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 84edaeff1980955d1dfc00267ac1a0d63f48e9f1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180700"
 ---
 # <a name="add-a-new-user"></a>Ajouter un nouvel utilisateur
 
@@ -38,7 +39,7 @@ Lorsqu’une nouvelle personne rejoint votre entreprise, vous devez l’ajouter 
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Gestion** des utilisateurs, puis sélectionnez Ajouter un utilisateur.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>allez à Gestion des **utilisateurs,** puis sélectionnez Ajouter un utilisateur.
 1. Entrez le prénom  et le nom du nouvel **utilisateur.** Le **nom complet** est rempli automatiquement, mais vous pouvez le modifier.
 1. Entrez un nom **d’utilisateur**. Il s’agit de l’adresse e-mail du nouvel utilisateur. Si vous avez plusieurs domaines, sélectionnez le domaine correct dans la liste de listes.
 1. Pour créer automatiquement un mot de passe, sélectionnez **Générer automatiquement le mot de passe.**
@@ -48,4 +49,4 @@ Lorsqu’une nouvelle personne rejoint votre entreprise, vous devez l’ajouter 
 1. Si vous souhaitez que l’utilisateur soit administrateur, développez les **rôles,** cochez la case Utilisateur (pas d’accès **administrateur)** et sélectionnez un rôle d’administrateur dans la liste. Pour plus d’informations sur les rôles d’administrateur et sur la façon de les configurer, voir [Qu’est-ce qu’un administrateur](what-is-admin.md)?
 1. Sous **Informations de profil,** entrez des détails sur le travail, le service, le bureau, etc. de l’utilisateur. (Vous ou le nouvel utilisateur pouvez toujours ajouter ces informations ultérieurement.) Sélectionnez **Suivant**.
 1. Examinez les détails de l’utilisateur. Si vous devez acheter une licence supplémentaire pour cet utilisateur, vous verrez une notification sur la page de révision. Sélectionnez **Terminer l’ajout,** puis **fermez.**
-1. Vérifiez que l’utilisateur a été créé correctement : dans le Centre d’administration Microsoft 365,dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis **Utilisateurs actifs.** Le nouvel utilisateur doit être répertorié avec sa licence attribuée.
+1. Vérifiez que l’utilisateur a été créé correctement : dans la Centre d'administration Microsoft 365,dans le volet de navigation de gauche, sélectionnez Utilisateurs  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs.</a> Le nouvel utilisateur doit être répertorié avec sa licence attribuée.

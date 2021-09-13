@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble du programme d Microsoft 365 Business Premium pour les campagnes ou d’autres entreprises
 ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178267"
 ---
 # <a name="set-up-microsoft-365"></a>Configurer Microsoft 365
 
@@ -59,7 +59,7 @@ Pour configurer des appareils utilisateur :
 1. Chaque utilisateur [définit ses appareils mobiles.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
 2. Pour les appareils non utilisés, les utilisateurs peuvent configurer leurs [PC et Mac.](m365-campaigns-protect-pcs-macs.md)
 Pour le personnel clé, nous vous recommandons d’utiliser des [appareils gérés](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) pour une meilleure protection. Pour tous les appareils, vous devez configurer l’authentification [multifacteur.](m365-campaigns-multifactor-authenication.md)
-3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en en savoir plus sur le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut](m365-campaigns-protect-campaign-infographic.md) également aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
+3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en découvrir le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut](m365-campaigns-protect-campaign-infographic.md) également aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
 
 ## <a name="contact-support"></a>Contacter l’assistance
 

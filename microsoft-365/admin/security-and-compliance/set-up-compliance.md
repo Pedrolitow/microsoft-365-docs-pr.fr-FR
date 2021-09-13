@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 description: Configurer des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
 ms.openlocfilehash: 5e5aff344326874cef426e7a1a40656766564e7e
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178603"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 

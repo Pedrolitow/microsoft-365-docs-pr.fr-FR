@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Utilisez de grands cas dans Advanced eDiscovery pour ajouter d’autres éléments aux jeux de révision et tirer parti d’autres limites accrues.
 ms.openlocfilehash: 43211dbeed7621de64d696e21fa647d5023350bb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182439"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Utiliser de grands cas dans Advanced eDiscovery (prévisualisation)
 
@@ -55,13 +55,13 @@ Voici une liste des autres avantages des cas importants dans Advanced eDiscovery
 
 - **Révision**: chaque ensemble de révision prendra en charge jusqu’à 1 To de contenu de pré-expansion. Des métadonnées supplémentaires seront disponibles pour les filtres et les requêtes, notamment le nom de l’équipe, le nom du canal et le nom de conversation pour Teams contenu. Chaque transcription inclut un contenu basé sur le temps avant et après l’élément réactif. Pour les conversations de canal, le billet racine et toutes les réponses sont collectés pour le contenu réactif.  
 
-- **Exporter**: vous pouvez exporter de grands ensembles de contenu dans une seule tâche d’exportation. Le format de grande taille vous permet d’exporter 5 millions de documents ou 500 Go, selon la taille la plus petite d’une tâche d’exportation.
+- **Exporter**: vous pouvez exporter de grands ensembles de contenu en une seule tâche d’exportation. Le format de grande taille vous permet d’exporter 5 millions de documents ou 500 Go, selon la taille la plus petite d’une tâche d’exportation.
 
 En outre, le nouveau format de cas de grande taille inclut une interface utilisateur mise à jour qui affiche la taille totale de chaque jeu à réviser dans le cas. Les tailles des ensembles de révision sont affichées dans une colonne de l’onglet Révision **et** dans un volet volant qui persiste de chaque onglet dans le cas.
 
-![Statistiques de cas importantes dans Advanced eDiscovery’interface utilisateur.](..\media\LargeCaseUI.png)
+![Statistiques de cas de grande taille dans Advanced eDiscovery’interface utilisateur.](..\media\LargeCaseUI.png)
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - L’option d’exportation de contenu en tant que fichiers libres et **fichiers PST n’est** actuellement pas prise en charge dans les grands cas (l’option est grisée). Cette option d’exportation pour les cas importants sera bientôt prise en charge. Pour plus d’informations sur l’exportation de contenu, voir [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
 

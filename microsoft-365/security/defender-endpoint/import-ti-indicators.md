@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f5643c1474448f472477ee90da6b0798de11882a1a62245cc842a6e2d827db1a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8932b28c2e87431028ae608ea56b95f340485199
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179340"
 ---
 # <a name="import-indicators-api"></a>API Importer des indicateurs
 
@@ -36,7 +36,7 @@ ms.locfileid: "53889674"
 
 ## <a name="api-description"></a>Description de l’API
 
-Envoie ou met à jour le lot [d’entités](ti-indicator.md) d’indicateurs.
+Envoie ou met à jour le lot [d’entités](ti-indicator.md) d’indicateur.
 
 La notation CIDR pour les IPs n’est pas prise en charge.
 
@@ -73,7 +73,7 @@ Content-Type|string|application/json. **Obligatoire**.
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Indicateurs|List<[Indicator](ti-indicator.md)>|Liste des [indicateurs](ti-indicator.md). **Obligatoire**
 

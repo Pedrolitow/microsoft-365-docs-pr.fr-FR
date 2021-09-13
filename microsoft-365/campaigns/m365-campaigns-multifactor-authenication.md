@@ -1,5 +1,5 @@
 ---
-title: Configurez l’authentification multifacteur.
+title: Configurez l’authentification multi-facteurs.
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Configurer l’authentification multifacteur.
 ms.openlocfilehash: 81a6ff75cfa5ea0250962f3e21da7890ed795ccb
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180507"
 ---
 # <a name="set-up-multifactor-authentication-on-your-mobile-device"></a>Configurer l’authentification multifacteur sur votre appareil mobile
 
@@ -39,6 +39,6 @@ L’authentification multifacteur offre une sécurité renforcée pour votre ent
 
 Pour plus d’informations, [voir Configurer l’authentification multifacteur dans Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’application Outlook sur vos appareils
+## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’Outlook sur vos appareils
 
 Une fois que votre administrateur vous a demandé d’utiliser l’authentification multifacteur et que vous avez installé une application d’authentification comme second type d’authentification, nous vous recommandons d’installer et d’utiliser uniquement l’application Outlook pour accéder à votre courrier Microsoft 365. Voir [Configurer les appareils mobiles pour](../business/set-up-mobile-devices.md) savoir comment installer Office applications, y compris Outlook, sur votre téléphone.

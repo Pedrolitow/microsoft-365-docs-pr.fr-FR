@@ -12,12 +12,12 @@ ms.custom: ''
 search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment planifier et exécuter un programme pilote d’essai pour Sujets Microsoft Viva votre organisation.
-ms.openlocfilehash: 529d201203c45a5b3f39d1c6ac0f1a3a7f691aaba23098dafc32a42911247aca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53834682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181132"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>Exécuter une version d’Sujets Microsoft Viva
 
@@ -29,8 +29,8 @@ Les essais sont disponibles publiquement à partir de l’une des sources suivan
 
 - Page [Du produit Rubriques](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
-- Le [Centre d’administration Microsoft 365](https://admin.microsoft.com)
-    1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+- Le [Centre d'administration Microsoft 365](https://admin.microsoft.com)
+    1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
     2. Go to **Billing**  >  **Purchase Services**.
     3. Faites défiler la page vers le bas jusqu’à la section **Modules complémentaires**.
     4. Dans la vignette **Expériences des** **rubriques, sélectionnez Détails.**
@@ -54,7 +54,7 @@ Vous devez être un administrateur Microsoft 365 général ou un administrateur 
 
 La planification est essentielle pour une version d’essai efficace de Topics. La période d’essai est limitée et doit inclure la découverte et l’exploration de la qualité, de la gestion et des expériences des utilisateurs finux.
 
-#### <a name="discovery"></a>Découverte
+#### <a name="discovery"></a>Discovery
 
 Il existe deux options de stratégie de haut niveau pour la configuration de la découverte de sujets au cours d’une version d’essai :
 

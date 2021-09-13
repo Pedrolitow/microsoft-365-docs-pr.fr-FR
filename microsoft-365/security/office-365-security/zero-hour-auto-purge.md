@@ -22,12 +22,12 @@ ms.custom:
 description: La purge automatique (ZAP) de zéro heure déplace de manière indessurable les messages remis dans une boîte aux lettres Exchange Online vers le dossier Courrier indésirable ou la mise en quarantaine qui est trouvée comme courrier indésirable ou hameçonnage après la remise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50dddd695181cb3069d517cdc6bea4d5a0ef80580f0703907c821082069b7152
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fdfc39b8bd18d33f95b85028e3661008a17a1209
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56853724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179107"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purge automatique de zéro heure (ZAP) dans Exchange Online
 

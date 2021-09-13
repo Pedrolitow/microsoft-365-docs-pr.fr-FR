@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 99c19b4f9aa5532e93c8415a423cada17951f84583e7cd1f65482cccd504e733
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 367eae14bd2ecd17efa8197268890322ae3d2422
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887270"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180323"
 ---
 # <a name="payment-information-for-democratic-republic-of-congo"></a>Informations de paiement pour la République du Congo
 

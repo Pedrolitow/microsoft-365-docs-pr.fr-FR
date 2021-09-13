@@ -19,19 +19,19 @@ metadata:
   search.appverid:
   - MET150
   description: Questions fréquemment posées sur basic Mobility and Security.
-  ms.openlocfilehash: f899aecd313ffd4fbc1d94d44f2a1b9c41780984a9c8eb8383a51da661d80be8
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53826758"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59176875"
 title: Questions fréquemment posées sur la mobilité et la sécurité de base (FAQ)
 summary: Cet article contient des questions fréquemment posées sur Basic Mobility and Security, une fonctionnalité qui vous aide à gérer et sécuriser les appareils mobiles dans Microsoft 365. Si vous ne trouvez pas de réponse à votre question, faites-le nous savoir en laissant un commentaire sur la page afin que nous pouvons envisager d’ajouter votre question à cet article.
 sections:
 - name: Ignoré
   questions:
   - question: >
-      Comment puis-je obtenir la mobilité et la sécurité de base ? Je ne le vois pas dans la Centre d’administration Microsoft 365
+      Comment puis-je obtenir la mobilité et la sécurité de base ? Je ne le vois pas dans la Centre d'administration Microsoft 365
     answer: >
       1.  Activez La mobilité et la sécurité de base en allant sur la page [Office 365 sécurité & conformité.](https://protection.office.com/)
 
@@ -46,7 +46,7 @@ sections:
       La préparation du service peut prendre un certain temps. Une fois l’approvisionnement terminé, vous verrez la page Mobilité et sécurité de base. Si vous avez attendu 24 heures et que l’état est toujours en cours d’approvisionnement, contactez le support technique et nous vous aiderons à déterminer le problème.
   - question: >
       Que puis-je faire en cas d’échec de l’inscription des appareils ?
-    answer: "Si vous avez des difficultés à obtenir l’enregistrement d’un appareil, vérifiez d’abord les étapes suivantes :\n\n- Assurez-vous que l’appareil n’est pas déjà inscrit auprès d’un autre fournisseur de gestion d’appareils mobiles, tel qu’Intune.\n\n- Assurez-vous que la date et l’heure de l’appareil sont correctes.\n\n- Basculez vers un autre réseau WIFI ou cellulaire sur l’appareil.\n\n- Pour les appareils Android ou iOS, désinstallez et réinstallez l’application Portail d’entreprise Intune sur l’appareil.\n    \nSi l’inscription ne fonctionne toujours pas, voir [Résoudre les problèmes de mobilité et de sécurité de base.](troubleshoot.md)\n"
+    answer: "Si vous avez des difficultés à obtenir l’enregistrement d’un appareil, vérifiez d’abord les étapes suivantes :\n\n- Assurez-vous que l’appareil n’est pas déjà inscrit auprès d’un autre fournisseur de gestion d’appareils mobiles, tel qu’Intune.\n\n- Assurez-vous que la date et l’heure de l’appareil sont correctes.\n\n- Basculez vers un autre réseau WIFI ou cellulaire sur l’appareil.\n\n- Pour les appareils Android ou iOS, désinstallez et réinstallez l’application Portail d'entreprise Intune sur l’appareil.\n    \nSi l’inscription ne fonctionne toujours pas, voir [Résoudre les problèmes de mobilité et de sécurité de base.](troubleshoot.md)\n"
   - question: >
       Quelle est la différence entre Intune et Basic Mobility and Security ?
     answer: >
@@ -54,7 +54,7 @@ sections:
   - question: >
       Comment fonctionnent les stratégies pour la mobilité et la sécurité de base ? Comment les configurer ? Les désactiver ?
     answer: >
-      Une fois la configuration initiale de Basic Mobility and Security terminée, vous créez des stratégies et les appliquez à des groupes d’utilisateurs dans le Centre de sécurité & conformité. Les stratégies exigent que les utilisateurs des stratégies inscrivent leurs appareils dans Basic Mobility and Security avant que l’appareil puisse être utilisé pour accéder Microsoft 365 données. Les stratégies que vous avez définies déterminent les paramètres des appareils mobiles, par exemple, la fréquence de réinitialisation des mots de passe ou la nécessité d’un chiffrement des données. Pour plus d’informations, voir [Créer des stratégies de sécurité des](create-device-security-policies.md)appareils dans Basic Mobility and Security et   [Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center.md).
+      Une fois la configuration initiale de Basic Mobility and Security terminée, vous créez des stratégies et les appliquez à des groupes d’utilisateurs dans le Centre de sécurité & conformité. Les stratégies exigent que les utilisateurs des stratégies inscrivent leurs appareils dans Basic Mobility and Security avant que l’appareil puisse être utilisé pour accéder Microsoft 365 données. Les stratégies que vous avez définies déterminent les paramètres des appareils mobiles, par exemple, la fréquence de réinitialisation des mots de passe ou la nécessité d’un chiffrement des données. Pour plus d’informations, voir [Créer des stratégies de sécurité des](create-device-security-policies.md)appareils dans Basic Mobility and Security et   [Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center.md).
 
 
       Pour obtenir des instructions détaillées sur la création et le déploiement de stratégies d’appareil, voir Créer des stratégies de sécurité d’appareil [dans Basic Mobility and Security](create-device-security-policies.md).

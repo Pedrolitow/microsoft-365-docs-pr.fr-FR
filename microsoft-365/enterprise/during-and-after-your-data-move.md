@@ -17,11 +17,11 @@ f1.keywords:
 description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d2c78ace4fb25d060ecaeab96903ba577a1d7316
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394395"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181198"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -71,7 +71,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Office dans un navigateur
     
-- Applications Microsoft 365 pour les grandes entreprises
+- Microsoft 365 Apps for enterprise
     
 - Visio Pro pour Microsoft 365
     
@@ -112,13 +112,13 @@ En plus de Exchange Online, SharePoint Online et OneDrive Entreprise, Microsoft 
 - Teams messages de conversation, y compris les messages privés et les messages de canal.
 - Teams images utilisées dans les conversations.
 
-Teams fichiers sont stockés dans SharePoint Online et Teams de conversation sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique des conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la région du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
+Teams fichiers sont stockés dans SharePoint Online et Teams de conversation sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique de conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la région du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
-Skype Entreprise déplacements ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
+Skype Entreprise déplacements ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette date, le service ne sera plus accessible. 
   
-## <a name="related-topics"></a>Voir aussi 
+## <a name="related-topics"></a>Rubriques connexes 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

@@ -1,5 +1,5 @@
 ---
-title: Gérer les licences d’application ISV dans le Centre d’administration Microsoft 365
+title: Gérer les licences d’application ISV dans le Centre d'administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,29 +18,29 @@ ms.custom:
 - commerce_licensing
 search.appverid:
 - MET150
-description: Découvrez comment gérer les licences pour les applications de fournisseur de logiciels indépendants dans le Centre d’administration Microsoft 365.
+description: Découvrez comment gérer les licences pour les applications de fournisseur de logiciels indépendants dans le Centre d'administration Microsoft 365.
 ms.date: 06/15/2021
-ms.openlocfilehash: 360b1a954d8b34fbc91b086fdab532685438b7874f998ef4ddb8b7b07732d15a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181595"
 ---
-# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Gérer les licences d’application ISV dans le Centre d’administration Microsoft 365
+# <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Gérer les licences d’application ISV dans le Centre d'administration Microsoft 365
 
 Une application de fournisseur de logiciels indépendant (ISV) est une application que vous achetez auprès d’un fournisseur de logiciels autre que Microsoft.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>Attribuer des licences d’application ISV à des utilisateurs ou des groupes
 
-1. Dans la Centre d’administration Microsoft 365, allez à la page  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation.</a>
+1. Dans la Centre d'administration Microsoft 365, allez à la page  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation.</a>
 2. Sélectionnez l’application pour qui vous souhaitez attribuer des licences.
 3. Dans la page détails de la licence, **sélectionnez Attribuer des licences.**
-4. Dans le **volet Attribuer des licences,** commencez à taper le nom d’un utilisateur ou d’un groupe, puis choisissez-le dans les résultats pour l’ajouter à la liste.
+4. Dans le volet Attribuer **des licences,** commencez à taper le nom d’un utilisateur ou d’un groupe, puis choisissez-le dans les résultats pour l’ajouter à la liste.
 5. Lorsque vous avez terminé, sélectionnez **Attribuer**, puis choisissez **Fermer**.
 
 ## <a name="unassign-isv-app-licenses-from-users-or-groups"></a>Désattribuer des licences d’application ISV à des utilisateurs ou des groupes
@@ -62,7 +62,7 @@ Selon l’application isv que vous avez achetée, l’étape suivante peut consi
 2. Sélectionnez l’application que vous souhaitez installer dans votre compte.
 3. Dans la page détails de la licence, **sélectionnez Installer ce produit.** Vous êtes redirigé vers un autre site de plateforme où vous installez l’application dans votre environnement.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article) \
 [Désattribuer des licences à des utilisateurs](../../admin/manage/remove-licenses-from-users.md) (article)

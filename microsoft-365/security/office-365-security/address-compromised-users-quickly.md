@@ -16,11 +16,11 @@ description: Découvrez comment accélérer le processus de détection et de tra
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 4a90768038bde3126dd4ac3e5016f4d04aded9af
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177412"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis grâce à un examen et à une réponse automatisés
 
@@ -69,7 +69,7 @@ Vous avez plusieurs options pour naviguer vers une liste d’utilisateurs restre
 
 1. Ouvrez le portail Microsoft 365 Defender ( ) et allez à <https://security.microsoft.com> **Incidents &** \> **alertes**. Ou, pour aller directement à la page **Alertes,** utilisez <https://security.microsoft.com/alerts> .
 
-2. Dans la page **Alertes,** filtrez les résultats par période de temps et la stratégie nommée Utilisateur limité à **l’envoi de courrier électronique**.
+2. Dans la page **Alertes,** filtrez les résultats par période et la stratégie nommée Utilisateur ne peut pas envoyer **de courrier électronique.**
 
    ![La page Alertes du portail Microsoft 365 Defender filtré pour les utilisateurs restreints.](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
@@ -91,7 +91,7 @@ Pour en savoir plus, [consultez les détails d’une enquête.](air-view-investi
 
 - **Ne comptez pas sur une alerte de connexion suspecte comme seul indicateur.** Lorsqu’un compte d’utilisateur est compromis, il peut ou non déclencher une alerte de connexion suspecte. Parfois, c’est la série d’activités qui se produisent après qu’un compte est compromis qui déclenche une alerte. Vous souhaitez en savoir plus sur les alertes ? Voir [stratégies d’alerte.](../../compliance/alert-policies.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Passer en revue les autorisations requises pour utiliser les fonctionnalités AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: Priority
-ms.openlocfilehash: 693a636eae02ea3714f3de57fec87753f070cdf5996743af930de40419683b8b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a017a61c42a6e5e43db2be2e448ade7dbd620b5e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181241"
 ---
 # <a name="term-store-reports"></a>Rapports de banque de termes
 

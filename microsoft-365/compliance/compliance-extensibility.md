@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions Microsoft 365 conformité à l’aide de connecteurs de données tiers et d’API Microsoft Graph.
-ms.openlocfilehash: df3fcf74fb7e042bb13d482fe4433c36dc4c4896c15d094ffb5f408dd3925908
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181420"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>extensibilité Microsoft 365 conformité des données
 
@@ -39,23 +39,23 @@ Il existe deux blocs de construction clés pour l’extensibilité de la conform
 
 ## <a name="data-connectors"></a>Connecteurs de données
 
-Microsoft fournit des connecteurs de données tiers qui peuvent être configurés dans le Centre de conformité Microsoft 365. Pour obtenir la liste des connecteurs de données fournis par Microsoft, consultez la table [des connecteurs de données tiers.](archiving-third-party-data.md#third-party-data-connectors) Le tableau des connecteurs de données tiers récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après avoir importé et archivé des données dans Microsoft 365, ainsi que des liens vers les instructions pas à pas pour chaque connecteur.
+Microsoft fournit des connecteurs de données tiers qui peuvent être configurés dans le Centre de conformité Microsoft 365. Pour obtenir la liste des connecteurs de données fournis par Microsoft, consultez la table [des connecteurs de données tiers.](archiving-third-party-data.md#third-party-data-connectors) Le tableau des connecteurs de données tiers récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après avoir importé et archivé des données dans Microsoft 365, ainsi que des liens vers les instructions pas à pas pour chaque connecteur.
 
-Pour en savoir plus sur Microsoft 365 connecteurs de données, consultez [l’archivage de données tierces.](archiving-third-party-data.md) Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft 365, vous pouvez travailler avec un partenaire qui peut vous fournir un connecteur personnalisé. Pour obtenir la liste des partenaires avec qui vous pouvez travailler et le processus pas à pas pour cette méthode, voir Travailler avec un partenaire pour archiver des données [tierces.](work-with-partner-to-archive-third-party-data.md)
+Pour en savoir plus sur Microsoft 365 connecteurs de données, consultez [l’archivage de données tierces.](archiving-third-party-data.md) Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft 365, vous pouvez travailler avec un partenaire qui peut vous fournir un connecteur personnalisé. Pour obtenir la liste des partenaires avec qui vous pouvez travailler et le processus pas à pas pour cette méthode, voir Travailler avec un partenaire pour archiver des données [tierces.](work-with-partner-to-archive-third-party-data.md)
 
 ### <a name="prerequisites-for-data-connectors"></a>Conditions préalables pour les connecteurs de données
 
-La plupart des connecteurs de données disponibles dans le Centre de conformité Microsoft 365 pour importer et archiver des données tierces nécessitent que vous prépariez et effectuez des tâches de configuration dans la source de données tierce. Ces conditions préalables sont documentées en détail pour chaque connecteur de données tiers.
+La plupart des connecteurs de données disponibles dans le Centre de conformité Microsoft 365 pour importer et archiver des données tierces nécessitent que vous prépariez et effectuez des tâches de configuration dans la source de données tierce. Ces conditions préalables sont documentées en détail pour chaque connecteur de données tiers.
 
-Pour les connecteurs de données dans le Centre de conformité Microsoft 365 fourni par l’un des partenaires de Microsoft, votre organisation aura besoin d’une relation professionnelle avec le partenaire avant de pouvoir déployer un connecteur.
+Pour les connecteurs de données dans le Centre de conformité Microsoft 365 fourni par l’un des partenaires de Microsoft, votre organisation aura besoin d’une relation professionnelle avec le partenaire avant de pouvoir déployer un connecteur.
 
 Vous trouverez les exigences en matière de licences pour les connecteurs de données tiers dans le document de comparaison des licences [Microsoft 365 conformité.](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)
 
 ## <a name="apis"></a>API
 
-Microsoft 365 api de conformité sont disponibles dans le SDK Protection des données Microsoft, l’API Microsoft Graph et l’API activité Office 365 gestion des données. Certaines API de conformité font partie d’un nouvel ensemble d’API de sécurité et de conformité qui permettent aux développeurs pour les clients Microsoft 365, les éditeurs de logiciels indépendants, les intégrateurs de système et les fournisseurs de services de sécurité gérés de créer des solutions de sécurité et de conformité à valeur élevée.
+Microsoft 365 api de conformité sont disponibles dans le SDK Protection des données Microsoft, l’API Microsoft Graph et l’API activité Office 365 gestion des données. Certaines API de conformité font partie d’un nouvel ensemble d’API de sécurité et de conformité qui permettent aux développeurs pour les clients Microsoft 365, les éditeurs de logiciels indépendants, les intégrateurs de système et les fournisseurs de services de sécurité gérés de créer des solutions de sécurité et de conformité de grande valeur.
 
-Pour en savoir plus sur l’accès Graph API, voir [Vue d’ensemble](/graph/overview)de Microsoft Graph .
+Pour en savoir plus sur la façon d’accéder Graph API, voir [Vue d’ensemble](/graph/overview)de Microsoft Graph .
 
 ### <a name="microsoft-information-protection-mip-sdk"></a>SDK Protection des données Microsoft (MIP)
 
@@ -77,7 +77,7 @@ Les fonctionnalités de protection contre la perte de données [(DLP)](dlp-micro
 
 Ces deux API forment l’API microsoft Graph pour Teams DLP. Vous pouvez commencer en essayant [l’exemple d’application.](https://github.com/microsoftgraph/csharp-webhook-with-resource-data) Pour plus d’informations sur Microsoft Teams webhooks de messagerie, consultez la [documentation.](/graph/api/subscription-post-subscriptions)
 
-Pour les exigences de licence pour Teams DLP, voir Microsoft 365 licences pour la sécurité [et & conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)
+Pour les conditions de licence requises pour Teams DLP, voir Microsoft 365 recommandations en matière de licences pour la sécurité [& conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>API microsoft Graph pour eDiscovery (prévisualisation)
 

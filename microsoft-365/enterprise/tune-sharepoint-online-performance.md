@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contient des liens vers d’autres articles qui vous expliquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online.
-ms.openlocfilehash: e76969da9dce2d6cc87bc903960e9879f81bdc4e6895161df84367b0f95afff3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53878130"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179643"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 
@@ -38,7 +38,7 @@ Utilisez ces articles pour affiner les performances SharePoint Online.
 
 - [Utiliser l’outil Diagnostic de page pour SharePoint Online](page-diagnostics-for-spo.md)
 
-- [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
+- [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
 
 - [Aide relative aux performances des portails SharePoint Online](/sharepoint/dev/solution-guidance/portal-performance)
 
@@ -62,7 +62,7 @@ Utilisez ces articles pour affiner les performances SharePoint Online.
 
 - [Optimiser les iFrames dans les pages SharePoint portail moderne en ligne](modern-iframe-optimization.md)
 
-- [Optimiser les performances des SharePoint web dans les pages du portail moderne en ligne](modern-web-part-optimization.md)
+- [Optimiser les performances des SharePoint web dans les pages de portail moderne en ligne](modern-web-part-optimization.md)
 
 - [Optimiser les appels de page dans les pages SharePoint portail moderne en ligne](modern-page-call-optimization.md)
 

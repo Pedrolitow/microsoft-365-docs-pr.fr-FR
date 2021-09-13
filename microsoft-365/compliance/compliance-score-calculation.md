@@ -16,11 +16,11 @@ search.appverid:
 description: Comprendre comment le Gestionnaire de conformité Microsoft calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176084"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
 
@@ -41,13 +41,13 @@ Une valeur de score est affectée à trois niveaux :
     - **L’état d’implémentation** **est égal à Implémenté** ou **Autre implémentation** et
     - **Le résultat du** test est égal **à Réussi**.
 
-3. **Score d’évaluation**: ce score est la somme des scores de votre contrôle. Elle est calculée à l’aide de scores d’action. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptabilisées une seule fois, quelle que soit la fréquence de référencement dans un contrôle.
+3. **Score d’évaluation**: ce score est la somme de vos scores de contrôle. Elle est calculée à l’aide de scores d’action. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptabilisées une seule fois, quelle que soit la fréquence de référencement dans un contrôle.
 
 Le score de conformité global est calculé à l’aide de scores d’action, où chaque action Microsoft est comptée une fois, chaque action technique que vous gérez est comptée une seule fois et chaque action non technique que vous gérez est comptée une fois par groupe. Cette logique est conçue pour fournir la comptabilité la plus précise de la façon dont les actions sont implémentées et testées dans votre organisation. Vous remarquerez peut-être que votre score de conformité global peut différer de la moyenne de vos scores d’évaluation. En savoir plus [ci-dessous sur le score des actions.](#action-types-and-points)
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Score initial basé sur la ligne de base Microsoft 365 protection des données
   
-Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base dessine principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
+Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés pour la protection des données et la gouvernance générale des données. Cette ligne de base dessine principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
 
 Votre score initial est calculé en fonction de l’évaluation de base de la protection des données par défaut fournie à toutes les organisations. Lors de votre première visite, le Gestionnaire de conformité collecte déjà des signaux à partir de Microsoft 365 solutions. Vous verrez d’un coup d’œil les résultats de votre organisation par rapport aux principales normes et réglementations en matière de protection des données, ainsi que les suggestions d’actions d’amélioration à prendre.
 
@@ -110,13 +110,13 @@ Une valeur de score est attribuée aux actions selon qu’elles sont obligatoire
   
 Chaque action a une valeur attribuée dans le Gestionnaire de conformité en fonction du risque qu’elle représente :
 
-|**Type (Type)**|**Score attribué**|
+|**Type**|**Score attribué**|
 |:-----|:-----|
 | Obligatoire préventive | 27 |
 | Discrétionnaire préventive | 9  |
-| Inspecteur obligatoire | 3  |
-| Discrétionnaire de l’inspecteur | 1  |
-| Corrective obligatoire | 3  |
-| Correction discrétionnaire | 1  |
+| Inspecteur obligatoire | 3 |
+| Discrétionnaire de l’inspecteur | 1 |
+| Corrective obligatoire | 3 |
+| Correction discrétionnaire | 1 |
   
 ![Valeurs de point d’action du Gestionnaire de conformité.](../media/compliance-score-action-scoring.png "Valeurs de point d’action du Gestionnaire de conformité")

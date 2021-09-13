@@ -21,11 +21,11 @@ search.appverid:
 - MOE150
 description: Obtenez le rapport Yammer’utilisation de l’appareil pour connaître les appareils sur lesquels vos utilisateurs Yammer.
 ms.openlocfilehash: b9c05f54b1cc8f2483b3b167743bf0158c6dbc35
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177172"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer’utilisation des appareils
 
@@ -47,20 +47,20 @@ Vous pouvez afficher l’utilisation dans le rapport OneDrive en choisissant l�
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’utilisation de l’appareil : choisissez des colonnes.](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l' sign-on unique. <br/> |
 |Nom d’affichage  <br/> |Nom complet de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme.  <br/> |
 |État de l’utilisateur  <br/> |L’une des trois valeurs : Active, Deleted ou Suspended. Ces rapports affichent des données pour les utilisateurs actifs, suspendus et supprimés. Ils ne reflètent pas les utilisateurs en attente, car ceux-ci ne peuvent pas publier, lire ou aimer un message.   <br/> |
 |Date de changement d’état (UTC)  <br/> |Date à laquelle l’état de l’utilisateur a été modifié Yammer.  <br/> |
-|Date de la dernière activité (UTC)  <br/> |Dernière date (UTC) à laquelle l’utilisateur a participé à une Yammer’activité.  <br/> |
+|Date de la dernière activité (UTC)  <br/> |Dernière date (UTC) à laquelle l’utilisateur a participé à une activité Yammer jour.  <br/> |
 |Web  <br/> |Indique si l’utilisateur a utilisé Yammer sur le web.  <br/> |
 |Windows téléphone  <br/> | Indique si l’utilisateur a utilisé Yammer sur un téléphone Windows téléphone.  <br/> |
 |Téléphone Android  <br/> |Indique si l’utilisateur a utilisé Yammer sur un téléphone Android. <br/>|
 |iphone <br/> | Indique si l’utilisateur a utilisé Yammer sur un iPhone.  <br/> |
-|ipad  <br/> |Indique si l’utilisateur a utilisé des Yammer sur une iPad. <br/>|
+|ipad  <br/> |Indique si l’utilisateur a utilisé des Yammer sur un iPad. <br/>|
 |other  <br/> |Indique si l’utilisateur a utilisé Yammer sur un autre appareil, non répertorié précédemment. <br/>|
 |||

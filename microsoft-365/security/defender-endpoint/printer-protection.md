@@ -14,11 +14,11 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: d1a0b8af6dbf725623986582f5ee8e0b3912f0b5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179219"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
@@ -128,7 +128,7 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
 - Appliquez la stratégie à l’utilisateur :
 
-  Imprimantes du Panneau de configuration Des modèles d’administration de configuration utilisateur : liste des appareils d’impression connectés \> \> à USB \> approuvés
+  Imprimantes du Panneau de configuration des modèles d’administration de configuration utilisateur : liste des \> périphériques d’impression connectés \> \> usb approuvés
 
 :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="liste des périphériques d’impression connectés usb approuvés.":::
 

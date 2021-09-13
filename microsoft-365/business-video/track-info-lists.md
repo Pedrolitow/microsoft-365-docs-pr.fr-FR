@@ -1,5 +1,5 @@
 ---
-title: Utiliser les listes Microsoft pour suivre les informations professionnelles
+title: Utiliser Listes Microsoft pour suivre les informations professionnelles
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,21 +15,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: En savoir plus sur les listes Microsoft. Avec Listes Microsoft, vous pouvez suivre les détails des clients, tels que le type de client, l’avancement des commandes et l’avancement des commandes.
-ms.openlocfilehash: 3f427e32bf0b8ce6933eedd56bb3fac8e7e5d2ae3da667f8c7e8d5d95c00931f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: En savoir plus sur Listes Microsoft. Avec Listes Microsoft, vous pouvez suivre les détails des clients, tels que le type de client, l’avancement des commandes et l’avancement des commandes.
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180580"
 ---
-# <a name="use-microsoft-lists-to-track-business-info"></a>Utiliser les listes Microsoft pour suivre les informations professionnelles
+# <a name="use-microsoft-lists-to-track-business-info"></a>Utiliser Listes Microsoft pour suivre les informations professionnelles
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MnGM?autoplay=false]
 
 ## <a name="try-it"></a>Essayer
 
-Suivez les informations et organisez le travail avec les listes Microsoft. Créez une liste à partir de zéro, Excel, d’une liste existante ou d’un modèle. Vous pouvez commencer à partir Microsoft 365, Microsoft Teams ou SharePoint.
+Suivre les informations et organiser le travail avec Listes Microsoft. Créez une liste à partir de zéro, Excel, d’une liste existante ou d’un modèle. Vous pouvez commencer à partir Microsoft 365, Microsoft Teams ou SharePoint.
 
 ### <a name="add-an-item-to-the-list"></a>Ajouter un élément à la liste
 
@@ -40,7 +40,7 @@ Suivez les informations et organisez le travail avec les listes Microsoft. Crée
 ### <a name="share-the-list-with-partners-or-coworkers"></a>Partager la liste avec des partenaires ou des collègues
 
 1. Au-dessus de la liste, sélectionnez **Partager.**
-1. Entrez les personnes avec qui vous souhaitez partager ; Il peut s’agit d’un individu ou d’un groupe.
+1. Entrez les personnes avec qui vous souhaitez partager ; il peut s’agit d’un individu ou d’un groupe.
 1. Choisissez les autorisations.
 1. Sélectionnez **Accorder l’accès.**
 
@@ -72,6 +72,6 @@ Vous pouvez suivre la progression instantanément :
 
 - Double-cliquez sur un élément pour l’ouvrir et mettez à jour la progression de la commande.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Créer une liste à partir de l’application Listes](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

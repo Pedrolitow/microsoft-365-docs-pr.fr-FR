@@ -24,11 +24,11 @@ search.appverid:
 - MOE150
 description: Créez un espace de collaboration pour votre équipe avec Microsoft Teams.
 ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178284"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Créer des équipes pour la collaboration dans Microsoft Teams
 
@@ -55,12 +55,12 @@ Les campagnes peuvent également créer les équipes suivantes pour communiquer 
 2. **Une équipe de campagne générale :** Tout le monde peut l’utiliser pour les communications et le travail au quotidien. Les individus, les groupes ou les comités peuvent configurer des canaux dans cette équipe pour faire leur travail. Par exemple, les personnes qui planifient des événements peuvent configurer un canal pour discuter et coordonner la logistique des événements de campagne.
 3. **Une équipe partenaires :** Coordonnez-vous avec vos fournisseurs, partenaires ou volontaires sans leur permettre d’entrer en ligne de compte.
 
-![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes pour assurer une communication et une collaboration sécurisées au sein d’une campagne.](../media/m365-democracy-teams-collab.png)
+![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes permettant une communication et une collaboration sécurisées au sein d’une campagne.](../media/m365-democracy-teams-collab.png)
 
 Lorsque vous créez une équipe, voici les autres choses qui sont créées :
 
 - Un nouveau [groupe Microsoft 365'équipe](/MicrosoftTeams/office-365-groups)
-- Un site [SharePoint online et](/MicrosoftTeams/sharepoint-onedrive-interact) une bibliothèque de documents pour stocker des fichiers d’équipe
+- Un [site SharePoint online et](/MicrosoftTeams/sharepoint-onedrive-interact) une bibliothèque de documents pour stocker des fichiers d’équipe
 - Une boîte [Exchange Online](/MicrosoftTeams/exchange-teams-interact) et un calendrier partagés
 - Un bloc-notes OneNote
 - Liens vers d’autres applications Office 365 telles que planner et Power BI

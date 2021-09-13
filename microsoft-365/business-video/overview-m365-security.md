@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Découvrez les fonctionnalités de sécurité incluses dans Microsoft 365 entreprise.
 ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181744"
 ---
 # <a name="overview-of-security"></a>Vue d’ensemble de la sécurité
 
@@ -34,7 +34,7 @@ ms.locfileid: "58572106"
 
 Microsoft 365 Business Premium offre des fonctionnalités de protection contre les menaces, de protection des données et de gestion des appareils pour vous aider à protéger votre entreprise contre les menaces en ligne et l’accès non autorisé, ainsi qu’à protéger et gérer les données d’entreprise sur vos téléphones, tablettes et ordinateurs.
 
-|![Protection contre les menaces.](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des périphériques](../media/m365-business-security-device-management.png) <br/>[Gestion des appareils](#device-management) |
+|![Protection contre les menaces.](../media/m365-business-security-threat-protection.png)<br/>[Protection contre les menaces](#threat-protection)|![Collaborer avec un client](../media/m365-business-security-data-protection.png) <br/>[Protection des données](#data-protection) | ![Gestion des appareils](../media/m365-business-security-device-management.png) <br/>[Gestion des appareils](#device-management) |
 |--|--|--|
 
 ## <a name="threat-protection"></a>Protection contre les menaces
@@ -51,7 +51,7 @@ Les fonctionnalités de protection des Microsoft 365 Business Premium permettent
 
 Vous pouvez utiliser des stratégies de protection contre la perte de données [(DLP)](set-up-dlp.md) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin de ne pas les partager par erreur.
 
-[chiffrement de messages Office 365](/microsoft-365/compliance/ome) combine les fonctionnalités de chiffrement et de droits d’accès pour s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages. chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
+[chiffrement de messages Office 365](/microsoft-365/compliance/ome) combine les fonctionnalités de chiffrement et de droits d’accès pour garantir que seuls les destinataires prévus peuvent afficher le contenu des messages. chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
 
 [Archivage Exchange Online](/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description) est une solution d’archivage informatique qui fonctionne avec Microsoft Exchange ou Exchange Online pour fournir des fonctionnalités d’archivage avancées, notamment des archives et la redondance des données. Vous pouvez utiliser des stratégies de rétention pour aider votre organisation à réduire les responsabilités associées à la messagerie électronique et à d’autres communications. Si votre entreprise est tenue de conserver les communications liées à un litige, vous pouvez utiliser les conservations In-Place et les conservations pour litige pour conserver les e-mails associés.
 

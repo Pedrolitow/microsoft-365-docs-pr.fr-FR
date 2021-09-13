@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos Microsoft 365 client.
 ms.openlocfilehash: 4bf988aca4145d52d8e5e1bb68c6e8cf134be534
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575863"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179028"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 
@@ -88,7 +88,7 @@ Pour optimiser l’accès aux ressources cloud de Microsoft 365, configurez vos 
 
 Voici le flux de trafic résultant pour le tunneling fractionné, dans lequel la plupart du trafic vers Microsoft 365 applications cloud contournent la connexion VPN.
 
-![Trafic réseau des clients VPN avec tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![Trafic réseau provenant de clients VPN avec tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 Dans cette illustration, le client VPN envoie et reçoit un trafic de service cloud Microsoft 365 essentiel directement via Internet et vers la porte d’accès la plus proche dans le réseau global Microsoft.
 
@@ -105,7 +105,7 @@ Il existe deux informations réseau au niveau du client qui peuvent être affich
 
 Voici les informations réseau spécifiques pour chaque emplacement de bureau :
 
-- [Sortie du réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
+- [Sortie réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Meilleures performances détectées pour les clients proches de chez vous](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
 - [Utilisation d’une porte d’Exchange Online service non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Utilisation d’une porte d’entrée du service SharePoint Online non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)

@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment sécuriser les applications Office sur iOS à l’Microsoft 365 Business Premium.
-ms.openlocfilehash: bdab7e1ddbd55e64c1c568cc65ff3f700223d9dfd4c93213f51e8c0909fbc6c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 748a24aeeb7859726f37491511c4e120207ef59e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852766"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181685"
 ---
 # <a name="secure-office-apps-on-ios"></a>Sécuriser les applications Office sur iOS
 
@@ -36,7 +37,7 @@ Vous pouvez configurer une stratégie d’accès utilisateur qui oblige les util
 
 ## <a name="try-it"></a>Essayez !
 
-1. Connectez-vous au centre d’administration Microsoft 365.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
 1. Sous **Stratégies,** choisissez **Ajouter une stratégie.**
 1. Dans le **volet Ajouter une** stratégie, entrez un nom sous nom de stratégie, puis choisissez le type de stratégie que vous souhaitez sous Type de **stratégie.** 
 1. Activer la gestion de la façon dont les utilisateurs **accèdent Office fichiers** sur les appareils mobiles, puis assurez-vous que les trois paramètres suivants sont actifs :

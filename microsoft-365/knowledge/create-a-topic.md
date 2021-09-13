@@ -15,11 +15,11 @@ search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment créer une rubrique dans Sujets Microsoft Viva.
 ms.openlocfilehash: af4a56b98cd3e372cee242bb98742ba488a1f2b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179628"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Créer une rubrique dans Sujets Microsoft Viva
 
@@ -29,7 +29,7 @@ Dans Rubriques de Topics, vous pouvez créer une rubrique si une rubrique n’es
 > Bien que les informations d’une rubrique recueillies par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)notez que la description de la rubrique et les informations sur les personnes dans une rubrique créée manuellement sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher la rubrique. 
 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour créer une rubrique, vous devez :
 - avoir une licence Rubriques Viva.

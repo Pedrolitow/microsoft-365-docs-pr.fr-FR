@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans l’Union européenne
 ms.openlocfilehash: 2099f6b81fa7ecfff4c641d0e18bed3c9b0f4d7c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179795"
 ---
 # <a name="data-locations-for-the-european-union"></a>Emplacements de données pour l’Union européenne
 
@@ -57,7 +57,7 @@ Nous disposons de centres de données dans des emplacements géographiques en Al
 | Planificateur | Union européenne | Union européenne | Union européenne |
 | Yammer | Union européenne | Union européenne | Union européenne |
 | Services OneNote | France | Allemagne | Union européenne |
-| Flux | Union européenne | Union européenne | Union européenne |
+| Stream | Union européenne | Union européenne | Union européenne |
 | Tableau blanc collaboratif | Union européenne | Union européenne | Union européenne |
 | Formulaires | Union européenne | Union européenne | Union européenne |
 ||||| 

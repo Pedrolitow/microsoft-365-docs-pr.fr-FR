@@ -19,11 +19,11 @@ ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams des utilisateurs locaux dans un déploiement Exchange hybride.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 1dfd3ebe278f704cc878beaa1711f117d57551bc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175812"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 

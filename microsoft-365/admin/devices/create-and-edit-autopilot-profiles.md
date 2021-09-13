@@ -28,11 +28,11 @@ search.appverid:
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
 ms.openlocfilehash: 4f54b4baac1cd9364d852116115f07fae021b823
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176684"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 
@@ -40,7 +40,7 @@ ms.locfileid: "58360624"
 
 Un profil s'applique à un appareil ou à un groupe d'appareils,
   
-1. In the Centre d’administration Microsoft 365, choose **Devices** \> **AutoPilot**.
+1. In the Centre d'administration Microsoft 365, choose **Devices** \> **AutoPilot**.
   
 2. Dans la page **AutoPilot,** sélectionnez **l’onglet Profils** \> **Créer un profil.**
     

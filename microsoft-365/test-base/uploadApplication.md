@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 80ea369284e9b9677bbd1e51612915057eea3136b5e8c6172230e332187edb1e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26033189eb5d63aee632dba2254f2109d273ae0b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179043"
 ---
 # <a name="step-2-uploading-a-package"></a>Étape 2 : Téléchargement d’un package
 
@@ -110,7 +110,7 @@ Les étapes ci-dessous fournissent un guide sur la façon de remplir les détail
 
     :::image type="content" alt-text="Affichage des détails du test." source="Media/TestDetails.png":::
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Notre article suivant traite du chargement de vos fichiers binaires vers notre service.
 

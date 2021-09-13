@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0cfe75516c89cda7da8ef8628ee2fa33bb1f98d688c0ba14c25322ba7b7033cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d85110a4a92b4490717125b6148461127c0f0e49
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821294"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181876"
 ---
 # <a name="contact-support-for-costa-rica"></a>Contacter le support technique pour le Costa Rica
 

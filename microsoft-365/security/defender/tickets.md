@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
 ms.openlocfilehash: 1803d4408d50ecfd0e4f0a3c78016cd8914760f1
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177419"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-defender-portal-and-compliance-center"></a>Intégrer des tickets ServiceNow dans le portail Microsoft 365 Defender et le centre de conformité
 

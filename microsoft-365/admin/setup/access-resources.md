@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un Azure Active Directory joint Windows 10 appareil.
 ms.openlocfilehash: 2c0bb33fbfc99cf3683a53d8aa4c98fc70fb9253
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360332"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178555"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources sur site à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -50,7 +50,7 @@ Pour permettre aux appareils joints à Azure AD de votre organisation d’accéd
 
 Aucune étape supplémentaire n’est requise pour accéder aux ressources sur site pour les appareils joints à Azure AD. Cette fonctionnalité est intégrée à Windows 10.
 
-Si vous avez l’intention de vous connecter à l’appareil AADJ autre que la méthode de mot de passe comme le code confidentiel/la mesure Bio via la connexion d’informations d’identification WHFB, puis accéder aux ressources locales (partages, imprimantes, etc.), suivez cet [article.](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)
+Si vous envisagez de vous connecter à l’appareil AADJ autre que la méthode de mot de passe comme le code confidentiel/la mesure bio via la connexion d’informations d’identification WHFB, puis accéder aux ressources locales (partages, imprimantes, etc.), suivez cet [article.](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)
 
 Si votre organisation n’est pas prête à déployer dans la configuration d’appareil joint à Azure AD décrite ci-dessus, envisagez de définir la configuration de l’appareil joint à [Azure AD hybride.](manage-windows-devices.md)
 

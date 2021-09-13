@@ -12,25 +12,25 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1a5a36a59ad286aca59f8630e104f3eef656cac3c5b77e7ae30d53b2e2a99ba4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b76194037dec0ca6a660d2024a35c3376f06eab2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53860714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175827"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorateur de contenu de gestion des risques internes
 
-L’Explorateur  de contenu de gestion des risques internes permet aux utilisateurs affectés du rôle *Enquêteurs* de gestion des risques internes d’examiner le contexte et les détails du contenu associé à l’activité dans les alertes. Les données de cas dans l’Explorateur de contenu sont actualisées quotidiennement pour inclure de nouvelles activités. Pour toutes les alertes confirmées dans un cas, les copies des données et des fichiers de messages sont archivées sous forme de capture instantanée dans le temps des éléments, tout en conservant les fichiers et messages d’origine dans les sources de stockage. Si nécessaire, les fichiers de données de cas peuvent être exportés en tant que fichier de document portable (PDF) ou au format de fichier d’origine.
+L’Explorateur  de contenu de gestion des risques internes permet aux utilisateurs affectés au rôle *Enquêteurs* de gestion des risques internes d’examiner le contexte et les détails du contenu associé à l’activité dans les alertes. Les données de cas dans l’Explorateur de contenu sont actualisées quotidiennement pour inclure de nouvelles activités. Pour toutes les alertes confirmées dans un cas, les copies des données et des fichiers de messages sont archivées sous forme de capture instantanée dans le temps des éléments, tout en conservant les fichiers et messages d’origine dans les sources de stockage. Si nécessaire, les fichiers de données de cas peuvent être exportés en tant que fichier de document portable (PDF) ou au format de fichier d’origine.
 
-La copie des données et des messages est transparente pour l’utilisateur associé à l’alerte et pour le propriétaire du contenu. Dans les nouveaux cas, le contenu à remplir dans l’Explorateur de contenu prend généralement environ une heure. Pour les cas avec de grandes quantités de contenu, la création d’une capture instantanée peut prendre plus de temps. Si le contenu est toujours en cours de chargement dans l’Explorateur de contenu, vous verrez un indicateur de progression qui affiche le pourcentage d’achèvement.
+Dans les nouveaux cas, le contenu à remplir dans l’Explorateur de contenu prend généralement environ une heure. Pour les cas avec de grandes quantités de contenu, la création d’une capture instantanée peut prendre plus de temps. Si le contenu est toujours en cours de chargement dans l’Explorateur de contenu, vous verrez un indicateur de progression qui affiche le pourcentage d’achèvement.
 
 Dans certains cas, les données associées à un cas peuvent ne pas être disponibles en tant que capture instantanée pour révision dans l’Explorateur de contenu. Cette situation peut se produire lorsque des données de cas ont été supprimées ou déplacées, ou lorsqu’une erreur temporaire se produit lors du traitement des données de cas. Si cette situation se produit, sélectionnez **Afficher** les fichiers dans la barre d’avertissement pour afficher les noms de fichiers, le chemin d’accès et la raison de l’échec de chaque fichier. Si nécessaire, ces informations peuvent être exportées vers un .csv (valeurs séparées par des virgules).
 
 Si le contenu inclut des autorisations de gestion des droits de l’information, ces autorisations sont conservées pour le contenu copié et les *utilisateurs affectés* au rôle Enquêteurs de gestion des risques internes auront besoin de ces autorisations et droits s’ils ont besoin d’ouvrir et d’afficher les fichiers. Un ID de fichier unique est automatiquement attribué à chaque fichier et message dans le cas de gestion des risques internes à des fins de gestion. Les documents associés aux activités des indicateurs de périphérique ne sont pas inclus dans l’Explorateur de contenu.
 
 > [!NOTE]
-> L’Explorateur de contenu inclut les activités liées Microsoft Office fichiers. Les activités au niveau du site, par exemple lorsqu’un site SharePoint est supprimé ou si les autorisations de site sont modifiées, ne sont pas incluses dans l’Explorateur de contenu.
+> L’Explorateur de contenu inclut les activités des utilisateurs liées aux fichiers de service Microsoft 365, telles que l’activité des utilisateurs sur SharePoint, Exchange, Microsoft Teams et OneDrive Entreprise.
 
 ## <a name="column-options"></a>Options de colonne
 
@@ -53,7 +53,7 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente de c
 | **ID de famille** | L’ID de famille rassemble tous les éléments ; pour le courrier électronique, cette colonne inclut le message et toutes les pièces jointes ; pour les documents, cette colonne inclut le document et tous les éléments incorporés. |
 | **Classe de fichier** | Pour le contenu de SharePoint et OneDrive : **Document**; pour le contenu de Exchange : **e-mail** ou **pièce jointe**. |
 | **ID de fichier** | Identificateur de document unique dans le cas. |
-| **Icône de type de fichier** | Extension d’un fichier ; par exemple, docx, 1, pptx ou xlsx. Ce champ est la même propriété que la propriété de site FileExtension. |
+| **Icône de type de fichier** | Extension d’un fichier ; par exemple, docx, one, pptx ou xlsx. Ce champ est la même propriété que la propriété de site FileExtension. |
 | **ID** | Identificateur GUID du fichier. |
 | **ID non modifiable** | ID non permutable tel qu’il est stocké dans Office 365. |
 | **Type d’inclusion** | Type d’inclusion calculé pour **l’analyse : 0** - non inclus ; **1** - inclus ; **2** - inclus moins ; **3** : copie incluse. |
@@ -63,7 +63,7 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente de c
 | **Participants** | Liste de tous les participants d’un message ; par exemple, Sender, To, Cc, Bcc. |
 | **ID de tableau croisé dynamique** | ID d’un tableau croisé dynamique. |
 | **Received** | Date à laquelle un message électronique a été reçu par un destinataire. Ce champ est la même propriété que la propriété De messagerie reçu. |
-| **Destinataires** | Tous les champs de destinataire dans un message électronique. Ces champs sont À, Cc et Cci. |
+| **Recipients** | Tous les champs de destinataire dans un message électronique. Ces champs sont À, Cc et Cci. |
 | **ID représentant** | Identificateur numérique de chaque ensemble de doublons exacts. |
 | **Sender** | Expéditeur d’un message électronique. |
 | **Sender/Author** | Pour la messagerie électronique, personne ayant envoyé le message. Pour les documents, personne mentionnée dans le champ Auteur des documents Office. Vous pouvez saisir plusieurs noms, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur OR. |
@@ -74,7 +74,7 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente de c
 | **Subject** | Texte de la ligne d’objet d’un message électronique. |
 | **Objet/Titre** | Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme indiqué précédemment, la propriété Title est une métadonnées spécifiée dans Microsoft Office documents. Vous pouvez taper le nom de plusieurs sujet/titre, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur OR. |
 | **Liste des thèmes** | Liste des thèmes telle que calculée pour l’analyse. |
-| **Titre** | Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document. |
+| **Title** | Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document. |
 | **To** | Destinataire d’un message électronique dans le champ À. |
 
 ## <a name="filtering"></a>Filtrage
@@ -103,7 +103,7 @@ Vous pouvez utiliser un ou plusieurs filtres pour restreindre l’étendue d’u
 | **Participants** | Tous les champs de personnes dans un message électronique. Ces champs sont De, À, Cc et Cci. |
 | **Received** | Date à laquelle un message électronique a été reçu par un destinataire. |
 | **Domaines des destinataires** | Liste de tous les domaines des destinataires d’un message. |
-| **Destinataires** | Destinataires du message électronique. |
+| **Recipients** | Destinataires du message électronique. |
 | **Sender** | Champ Expéditeur (De) pour les types de messages.  Le format **est \<SmtpAddress> DisplayName**. |
 | **Domaine de l’expéditeur** | Domaine de l’expéditeur. |
 | **To** | Champ À d’un message électronique. |

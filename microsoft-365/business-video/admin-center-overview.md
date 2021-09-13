@@ -1,5 +1,5 @@
 ---
-title: Centre d’administration Microsoft 365 - Vue d’ensemble
+title: Centre d'administration Microsoft 365 - Vue d’ensemble
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -15,31 +15,32 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans Microsoft 365 gérer les tâches courantes ou l’affichage tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: 585deb5d4d1b7bf5758854ee90f31150ef1ed9e08b06c4402c90b7324965fad8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e3bee5487a0004f6741e51494c01f7e2c2355227
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180691"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
 - [Centre d’administration en affichage simplifié](#watch-the-admin-center-in-simplified-view)
 - [Centre d’administration en affichage Tableau de bord](#watch-the-admin-center-in-dashboard-view)
 
-Le Centre d’administration Microsoft 365 deux vues : l’affichage simplifié permet aux petites organisations de gérer leurs tâches les plus courantes. L’affichage Tableau de bord inclut des paramètres et des tâches plus complexes. Vous pouvez basculer entre eux à partir d’un bouton en haut du centre d’administration.
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> deux vues : l’affichage simplifié permet aux petites organisations de gérer leurs tâches les plus courantes. L’affichage Tableau de bord inclut des paramètres et des tâches plus complexes. Vous pouvez basculer entre eux à partir d’un bouton en haut du centre d’administration.
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>Regardez : Le Centre d’administration en affichage simplifié
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
-Avec le Centre d’administration Microsoft 365, vous pouvez réinitialiser les mots de passe, afficher votre facture, ajouter ou supprimer des utilisateurs, et bien plus encore en un seul endroit.
+Avec le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>vous pouvez réinitialiser les mots de passe, afficher votre facture, ajouter ou supprimer des utilisateurs, et bien plus encore en un seul endroit.
 
 Connectez-vous Office.com avec votre compte de travail, puis sélectionnez le lanceur d’applications.
 
@@ -61,11 +62,11 @@ Si vous avez besoin d’aide, sélectionnez **Aide & support technique.** Recher
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Le Centre d’administration Microsoft 365 est l’endroit où vous gérez votre entreprise dans le cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification de licences et la réinitialisation des mots de passe.
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> est l’endroit où vous gérez votre entreprise dans le cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification de licences et la réinitialisation des mots de passe.
 
-Les espaces de travail spécialisés, tels que la sécurité ou la gestion des appareils, permettent un contrôle plus granulaire. Pour plus d’informations sur la façon dont les centres d’administration fonctionnent ensemble, voir Qu’en est-il des types spécifiques de [rôles informatiques](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) et d’autres espaces de travail tels que la sécurité, la gestion des appareils ou Exchange ? dans cet article.
+Les espaces de travail spécialisés, tels que la sécurité ou la gestion des appareils, permettent un contrôle plus granulaire. Pour plus d’informations sur la façon dont les centres d’administration fonctionnent ensemble, voir Qu’en est-il des types spécifiques de [rôles informatiques](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) et d’autres espaces de travail tels que sécurité, gestion des appareils ou Exchange ? dans cet article.
 
-Pour obtenir le Centre d’administration Microsoft 365, admin.microsoft.com [](https://admin.microsoft.com) ou, si vous êtes déjà inscrit, sélectionnez le lanceur d’applications, puis choisissez **Administrateur.**
+To get to the Centre d'administration Microsoft 365, go to [admin.microsoft.com](https://admin.microsoft.com) or, if you’re already signed in, select the app launcher, and choose **Admin**.
 
 Dans la page d’accueil, vous pouvez créer des cartes pour les tâches que vous effectuez fréquemment. Pour ajouter une nouvelle carte, sélectionnez Ajouter une **carte,** puis sélectionnez le signe plus à côté de la carte que vous souhaitez ajouter. Lorsque vous avez terminé, fermez la fenêtre. Vous pouvez réorganiser les cartes en les sélectionnant, puis en les faisant glisser vers l’endroit voulu. Pour supprimer une carte, sélectionnez les trois points (autres actions), puis choisissez **Supprimer**.
 
@@ -90,7 +91,6 @@ Par défaut, la personne qui s’est abonnée et achète un abonnement Microsoft
 Si vous recevez le message «**Vous n’êtes** pas autorisé à accéder à cette page ou à effectuer cette action », vous n’êtes pas un administrateur.
 
 ### <a name="who-has-admin-permissions-in-my-business"></a>Au sein de mon entreprise, qui dispose d'autorisations d'administration ?
-<a name="bkmk_admin"> </a>
 
 Lorsque vous avez besoin de votre administrateur pour réinitialiser votre mot de passe, supprimer un compte ou effectuer d'autres tâches, vous devez contacter les personnes suivantes :
 
@@ -107,11 +107,11 @@ Si vous ne savez pas à qui contacter votre entreprise ou votre établissement s
 
 ## <a name="turn-on-targeted-release"></a>Activer la version ciblée
 
-1. Connectez-vous [admin.microsoft.com,](https://admin.microsoft.com)allez dans le volet  de navigation et sélectionnez \> **Paramètres’organisation.**
+1. Connectez-vous [admin.microsoft.com,](https://admin.microsoft.com)allez dans le volet de navigation et sélectionnez Paramètres onglet Profil d’organisation des  >  **paramètres** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"> **l’organisation.**</a>
 
 2. Go to the **Release preferences** card, and then select **Edit**.
 
-3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez la version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
+3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez La version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
 
 ## <a name="admin-center-feedback"></a>Commentaires du Centre d’administration
 
@@ -125,7 +125,7 @@ Vos questions ne sont-elles pas posées ici ? Go to the **Feedback** section at 
 
 Microsoft 365 est une solution complète et intelligente qui inclut des Office 365, des Windows 10 et des Enterprise Mobility + Security qui permet à chacun d’être créatif et de collaborer en toute sécurité. Les abonnements Microsoft 365 suivants sont disponibles dans le Centre d’administration pour que vous essayiez ou achetez maintenant :
 
-- Microsoft 365 Business
+- Microsoft 365 Entreprises
 - Microsoft 365 Entreprise E3
 - Microsoft 365 Entreprise E5
 
@@ -133,17 +133,17 @@ Pour plus d’informations, voir [Try or buy a Microsoft 365 subscription](../co
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment puis-je le faire savoir à Microsoft ?
 
-Nous sommes très aimés de votre part ! Le signalement des bogues et les commentaires de partage nous aident à améliorer Centre d’administration Microsoft 365 de partage. Pour nous faire  part de vos commentaires, sélectionnez le bouton Commentaires en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse e-mail si vous souhaitez que quelqu’un de l’équipe Centre d’administration Microsoft 365 suivi de vos commentaires. Nous ne pouvons pas nous engageons à suivre chaque commentaire, mais nous allons essayer !
+Nous sommes très aimés de votre part ! Le signalement des bogues et les commentaires de partage nous aident à améliorer Centre d'administration Microsoft 365 de partage. Pour nous faire  part de vos commentaires, sélectionnez le bouton Commentaires en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse e-mail si vous souhaitez que quelqu’un de l’équipe Centre d'administration Microsoft 365 suivi de vos commentaires. Nous ne pouvons pas nous engageons à suivre chaque commentaire, mais nous allons essayer !
 
 Vous pouvez également nous faire part de vos commentaires en dehors du Centre d’administration sur notre forum UserVoice. Vous pouvez utiliser cette page pour faire des suggestions de fonctionnalités qui peuvent être voteres par d’autres utilisateurs du forum : forum UserVoice pour le nouveau centre [d’administration.](https://go.microsoft.com/fwlink/?linkid=2024994)
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Qu’en est-il des types spécifiques de rôles informatiques et d’autres espaces de travail tels que la sécurité, la gestion des appareils ou Exchange ?
 
-Le Centre d’administration Microsoft 365 est le point d’entrée commun pour toutes les équipes et rôles gérant Microsoft 365. L’expérience, les informations et les contrôles sont personnalisés et personnalisables pour chaque administrateur et rôle. En outre, les espaces de travail spécialisés permettent un contrôle profond et granulaire. Ces espaces de travail spécialisés incluent SharePoint, Teams &amp; Skype, Exchange, sécurité, conformité, gestion des appareils et Azure Active Directory. Vous pouvez trouver les espaces de travail spécialisés à partir du volet de navigation dans le Centre d’administration Microsoft 365 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) à l’Centre d’administration Microsoft 365 .
+Le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> est le point d’entrée commun pour toutes les équipes et rôles gérant Microsoft 365. L’expérience, les informations et les contrôles sont personnalisés et personnalisables pour chaque administrateur et rôle. En outre, les espaces de travail spécialisés permettent un contrôle profond et granulaire. Ces espaces de travail spécialisés incluent SharePoint, Teams &amp; Skype, Exchange, sécurité, conformité, gestion des appareils et Azure Active Directory. Vous pouvez trouver les espaces de travail spécialisés à partir du volet de navigation dans le Centre d'administration Microsoft 365 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) à l’Centre d'administration Microsoft 365 .
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>Quelles options de langue sont disponibles dans le Centre d’administration ?
 
-Le Centre d’administration Microsoft 365 est entièrement localisée dans 40 langues.
+Le Centre d'administration Microsoft 365 est entièrement localisée dans 40 langues.
 
 |Langue |Locale |
 |---------|---------|
@@ -171,7 +171,7 @@ Le Centre d’administration Microsoft 365 est entièrement localisée dans 40 l
 |Lituanien | lt |
 |Letton | lv |
 |Néerlandais | nl |
-|Norvégien | Non |
+|Norvégien | non |
 |Polonais | pl |
 |Portugais (Brésil) | pt |
 |Portugais (Portugal) | pt-pt |
@@ -189,7 +189,7 @@ Le Centre d’administration Microsoft 365 est entièrement localisée dans 40 l
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Qu’est-ce qu Microsoft 365 administrateur de serveur ?](what-is-admin.md) (vidéo)\
 [Ajouter un administrateur](add-admin.md) (vidéo)\

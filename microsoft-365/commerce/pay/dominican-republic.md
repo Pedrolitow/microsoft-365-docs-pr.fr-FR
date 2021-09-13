@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bf96468b58c28ec5a2b4ab517a7d02d5e0abc9477afcab62010f90f5c4e77202
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e0c13fcc5309418beaf92f5f34ed83b7295e0ef3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852498"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180284"
 ---
 # <a name="payment-information-for-dominican-republic"></a>Informations de paiement pour la République dominicaine
 

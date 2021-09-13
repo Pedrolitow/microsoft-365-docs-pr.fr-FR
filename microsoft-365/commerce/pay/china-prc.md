@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eb8387ea5e18ce438b901fcc4159868fb3e41cbdb91ed1ccf68434f70e9aac0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ba47c83a81797f30c956ca16023b299e167566e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852522"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180347"
 ---
 # <a name="payment-information-for-china-prc"></a>Informations de paiement pour la Chine (RPC)
 

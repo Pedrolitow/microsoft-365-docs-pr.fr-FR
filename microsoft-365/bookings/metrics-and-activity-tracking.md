@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 060a9781-c8a2-4e85-a769-31e6417d05b3
 description: Diverses mesures sont disponibles sur la page principale Bookings, ce qui vous permet de suivre facilement les revenus et l’activité des clients.
-ms.openlocfilehash: 1ea7e863c4fdcf0697027dff9154885315db0de77dee810dfb485ff8bb4ed267
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a7185ac12d1f2185a3824ea3b27d52c89933cfbe
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181750"
 ---
 # <a name="microsoft-bookings-metrics-and-activity-tracking"></a>Mesures Microsoft Bookings et suivi de l’activité
 

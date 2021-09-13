@@ -18,13 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Découvrez comment placer des conservations sur les dépositaires et leurs sources de données pour conserver le contenu pertinent pour Advanced eDiscovery cas.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c5781d5dd2ce08c3b57695fa08720c1cc3ab38c6f41bceeb6f12a388232c70c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-mar2020
+- admindeeplinkMAC
+ms.openlocfilehash: 12fdc5e6282358f96dcc1d454156a7fccf7518a4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177955"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les Advanced eDiscovery
 
@@ -36,7 +38,7 @@ Dans certains cas, vous pouvez avoir un ensemble de dépositaires que vous avez 
 
 Pour afficher la stratégie de conservation des dépositaires :
 
-1. Dans la Centre de conformité Microsoft 365, cliquez **sur eDiscovery > Advanced** pour afficher la liste des cas dans votre organisation.
+1. Dans la Centre de conformité Microsoft 365, cliquez **sur eDiscovery > Advanced** pour afficher la liste des cas dans votre organisation.
 
 2. Go to the **Sources** tab to add custodians within your case. Pour savoir comment ajouter et placer des dépositaires en conservation dans un Advanced eDiscovery, voir Ajouter des [dépositaires à un cas.](add-custodians-to-case.md) Si vous avez déjà ajouté des dépositaires et les avez placés en conservation, allez à l’étape 3.
 
@@ -54,7 +56,7 @@ Lorsque vous créez une attente, vous avez les options suivantes pour l’étend
 
 Pour créer une mise en attente non privative pour Advanced eDiscovery cas :
 
-1. Dans la Centre de conformité Microsoft 365, cliquez **sur eDiscovery > Advanced** pour afficher la liste des cas dans votre organisation.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365,</a>cliquez **sur eDiscovery > Avancé** pour afficher la liste des cas dans votre organisation.
   
 2. Cliquez **sur Ouvrir** en face du cas où vous souhaitez créer les conserves.
   
@@ -137,7 +139,7 @@ Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise 
 
  - Lorsque la recherche est sur la boîte aux lettres d’un utilisateur, aucun groupe Microsoft 365 ou Microsoft Team dont l’utilisateur est membre n’est pas recherché. De même, lorsque vous placez une Microsoft 365 groupe ou microsoft Team, seules la boîte aux lettres de groupe et le site de groupe sont placés en attente . Les boîtes aux lettres et OneDrive Entreprise sites de membres du groupe ne sont pas placés en conservation, sauf si vous les ajoutez explicitement en tant que dépositaires ou que vous placez leurs sources de données en conservation. Par conséquent, si vous avez besoin de placer un groupe Microsoft 365 ou Microsoft Team en conservation pour un dépositaire spécifique, envisagez de ma mappage du site de groupe et de la boîte aux lettres de groupe au dépositaire (voir Gestion des dépositaires dans Advanced eDiscovery). Si le groupe Microsoft 365 ou l’équipe Microsoft n’est pas attribué à un seul dépositaire, envisagez d’ajouter la source à une conservation non-privative. 
  
- - Pour obtenir la liste des membres d’un groupe Microsoft 365 ou d’une équipe Microsoft, vous pouvez afficher les propriétés sur la page Groupes d'> d’accueil dans la Centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+ - Pour obtenir la liste des membres d’un groupe Microsoft 365 ou d’une équipe Microsoft, vous pouvez afficher les propriétés sur la page Groupes d’accueil dans le   >  [](https://go.microsoft.com/fwlink/p/?linkid=2052855) Centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

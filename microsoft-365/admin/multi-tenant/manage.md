@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Découvrez comment utiliser le s switcher de client et les affichages multi-locataires qui vous donnent la possibilité de gérer les locataires à partir d’un emplacement unique.
 ms.openlocfilehash: 6dbad8dbfaa84d490983cd5eccaf5ecf5d6979e5
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58393435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178747"
 ---
 # <a name="multi-tenant-management"></a>Gestion multi-locataires
 
@@ -38,7 +38,7 @@ La gestion multi-locataires offre une forme unifiée de gestion qui permet aux a
 
 ## <a name="move-between-tenants"></a>Passer d’un client à l’autre
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365,</a>sélectionnez le nom de l’organisation.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>sélectionnez le nom de l’organisation.
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="S’il s’est multi-locataire.":::
 
@@ -48,7 +48,7 @@ La gestion multi-locataires offre une forme unifiée de gestion qui permet aux a
 
 ## <a name="view-all-tenants-page"></a>Page Afficher tous les locataires
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365,</a>dans le navigation gauche, **sélectionnez Tous les locataires.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>dans le navigation gauche, **sélectionnez Tous les locataires.**
 - Dans la page **Tous les locataires,** vous pouvez
   - Évaluer l’état du service
   - Passer en revue l’utilisation des licences
@@ -61,7 +61,7 @@ Si vous avez marqué un client comme favori, il est automatiquement développé 
 
 L’affichage d’état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365,</a>dans l’affichage multi-clients, sélectionnez **État du service.**
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>dans l’affichage multi-clients, sélectionnez **État du service.**
 2. Dans l’affichage agrégé de la **page** État du service, vous pouvez également voir le nombre total d’incidents, le nombre total d’avis affectant l’un des clients gérés et le nombre de services avec des incidents actifs. Vous pouvez également voir combien de vos locataires sont affectés par les incidents et les avis.
 
     - Vous pouvez utiliser l’option de filtrage pour afficher les problèmes par type de problème ou par service
@@ -75,9 +75,9 @@ L’affichage d’état du service vous indique si des incidents ou des avis aff
 
 La liste des locataires concernés peut être exportée au format CSV afin que les administrateurs peuvent la partager avec les équipes de support technique.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un seul client dans le Centre d’administration Microsoft 365
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un seul client dans le Centre d'administration Microsoft 365
 
-Vous pouvez revenir au Centre d’administration Microsoft 365 pour n’importe quel client à partir de la page **Tous les** locataires.
+Vous pouvez revenir au Centre d'administration Microsoft 365 pour n’importe quel client à partir de la page **Tous les** locataires.
 
 1. Dans la page **Tous les locataires,** sélectionnez le nom du client pour lequel vous souhaitez afficher le Centre d’administration.
 2. Vous êtes dirigé vers le centre d’administration pour ce client.

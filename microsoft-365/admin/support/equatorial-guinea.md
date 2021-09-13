@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e75a5bc76ea8c82b138f52df2988b02db0f2f8400134ebdaa407c085f373d4b8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3898338fd7beae67109d70e0d8f5c7cd08547468
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181847"
 ---
 # <a name="contact-support-for-equatorial-guinea"></a>Contacter le support pour la Guinée guinéenne
 

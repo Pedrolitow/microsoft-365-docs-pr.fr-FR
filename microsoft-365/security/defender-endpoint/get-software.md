@@ -1,7 +1,7 @@
 ---
 title: Répertorier les logiciels
 description: Récupère une liste d’inventaire logiciel
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, api & gestion des vulnérabilités menace, Api Tvm Microsoft Defender pour Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 110b86974badde65450f4264daf9373f46f8993d
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58350027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181967"
 ---
 # <a name="list-software-inventory-api"></a>API d’inventaire de logiciels de liste
 
@@ -43,7 +43,7 @@ Récupère l’inventaire logiciel de l’organisation.
 <br>```$filter``` on:  ```id``` , , and ```name``` ```vendor``` properties.
 <br>```$top``` avec une valeur maximale de 10 000.
 <br>```$skip```.
-<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+<br>Consultez des exemples [dans les requêtes OData avec Microsoft Defender pour point de terminaison.](exposed-apis-odata-samples.md)
 
 ## <a name="permissions"></a>Autorisations
 
@@ -64,8 +64,7 @@ GET /api/Software
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String
-|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

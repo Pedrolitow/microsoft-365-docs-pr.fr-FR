@@ -20,15 +20,15 @@ ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment filtrer des données à l’aide de la fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 lorsque vous importez des fichiers PST dans Microsoft 365.
 ms.openlocfilehash: b893c0678d2821855bfc09ee703e3aa4cb8119cb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182360"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrer les données lors de l’importation de fichiers PST
 
-Utilisez la nouvelle fonctionnalité d’importation intelligente du service d’importation Microsoft 365 pour filtrer les éléments des fichiers PST qui sont réellement importés dans les boîtes aux lettres cibles. Voici le principe de fonctionnement :
+Utilisez la nouvelle fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 pour filtrer les éléments des fichiers PST réellement importés dans les boîtes aux lettres cibles. Voici le principe de fonctionnement :
   
 - Après avoir créé et soumis une tâche d’importation PST, les fichiers PST sont téléchargés vers une zone de stockage Azure dans le cloud Microsoft.
   
@@ -102,7 +102,7 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
   
       - **Type** : cette section affiche tous les types de messages trouvés dans les fichiers PST de la tâche d’importation. Vous pouvez décocher une case en de côté d’un type de message que vous souhaitez exclure. Vous ne pouvez pas exclure le type de message Autre. Consultez la section [Plus d’informations](#more-information) pour obtenir la liste des éléments de boîte aux lettres inclus dans la catégorie Autre.
   
-      - **Utilisateurs** : vous pouvez exclure les messages envoyés ou reçus par des personnes spécifiques. Pour exclure les personnes qui apparaissent dans le champ De :  , À : ou le champ Cc : des messages, cliquez sur Exclure les utilisateurs en de côté de ce type de destinataire. Tapez l’adresse de messagerie (adresse SMTP) de la personne, cliquez **sur Ajouter** une ![ nouvelle icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) pour les ajouter à la liste des utilisateurs exclus pour ce type de destinataire, puis cliquez sur **Enregistrer** pour enregistrer la liste des utilisateurs exclus. 
+      - **Utilisateurs** : vous pouvez exclure les messages envoyés ou reçus par des personnes spécifiques. Pour exclure les personnes qui apparaissent dans le champ De :  , À : ou le champ Cc : des messages, cliquez sur Exclure les utilisateurs en de côté de ce type de destinataire. Tapez l’adresse e-mail (adresse SMTP) de la personne, cliquez **sur Ajouter** une ![ nouvelle icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) pour les ajouter à la liste des utilisateurs exclus pour ce type de destinataire, puis cliquez sur **Enregistrer** pour enregistrer la liste des utilisateurs exclus. 
   
         > [!NOTE]
         > Microsoft 365'affiche pas les informations de données résultant de la définition du **filtre Personnes.** Toutefois, si vous définissez ce filtre pour exclure les messages envoyés ou reçus par des personnes spécifiques, ces messages seront exclus pendant le processus d’importation réel. 
@@ -131,7 +131,7 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Comment déterminer Microsoft 365 incréments du filtre d’âge ? Lorsque Microsoft 365 analyse un fichier PST, il examine l’horodaodaté envoyé ou reçu de chaque élément (si un élément possède un horodaté envoyé et reçu, la date la plus ancienne est sélectionnée). Ensuite, Microsoft 365 la valeur de l’année pour cet timestamp et la compare à la date actuelle pour déterminer l’âge de l’élément. Ces âges sont ensuite utilisés en tant que valeurs dans la liste de listes listes pour le **filtre Âge.** Par exemple, si un fichier PST a des messages de 2016, 2015  et 2014, les valeurs dans le filtre Âge sont **1 an,** **2 ans** et **3 ans**.
+- Comment déterminer Microsoft 365 incréments du filtre d’âge ? Lorsque Microsoft 365 analyse un fichier PST, il examine l’horodaodaté envoyé ou reçu de chaque élément (si un élément possède un horodaté envoyé et reçu, la date la plus ancienne est sélectionnée). Ensuite, Microsoft 365 la valeur de l’année pour cet timestamp et la compare à la date actuelle pour déterminer l’âge de l’élément. Ces âges sont ensuite utilisés comme valeurs dans la liste liste de listes pour le **filtre Âge.** Par exemple, si un fichier PST a des messages de 2016, 2015  et 2014, les valeurs dans le filtre Âge sont **1 an,** **2 ans** et **3 ans**.
   
 - Le tableau suivant répertorie les types de messages inclus dans la catégorie **Autre** dans le filtre **Type** de la page volante Autres **options** (voir l’étape 5b de la procédure précédente). Actuellement, vous ne pouvez pas exclure des éléments de la catégorie « Autre » lorsque vous importez des PST dans Office 365. 
   

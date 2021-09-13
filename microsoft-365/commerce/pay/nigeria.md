@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b4ee64be4be1e28784beb0828fabaa99faea08ee2683261c14ba5b7e5c5e6218
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: abc93b64f4808a8dc1223a8391b70f00e79b71f4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178212"
 ---
 # <a name="payment-information-for-nigeria"></a>Informations de paiement pour le Nigeria
 

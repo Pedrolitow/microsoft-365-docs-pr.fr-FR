@@ -1,5 +1,5 @@
 ---
-title: Attribuer les rôles d’administrateur Centre d’administration Microsoft 365
+title: Attribuer les rôles d’administrateur Centre d'administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -29,17 +29,17 @@ search.appverid:
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils peuvent effectuer des tâches spécifiques dans le Centre d’administration.
 ms.openlocfilehash: 0eeafd8c91a9430db09713902fb55d9491dcac8d
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177115"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
 Si vous êtes la personne qui a acheté votre abonnement Microsoft Business, vous êtes l’administrateur global. Cela signifie que vous avez un contrôle illimité sur les produits de vos abonnements et que vous pouvez accéder à la plupart des données.
 
-Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](about-admin-roles.md).
+Pour plus d’informations, consultez [À propos des rôles d’administrateur](about-admin-roles.md).
 
 Lorsque vous ajoutez de nouveaux utilisateurs, si vous ne  leur attribuez pas de rôle d’administrateur, ils sont dans le rôle d’utilisateur et n’ont pas de privilèges d’administrateur sur les centres d’administration Microsoft. Toutefois, si vous avez besoin d’aide pour ce faire, vous pouvez attribuer un rôle d’administrateur à un utilisateur. Par exemple, si vous avez besoin d’une personne pour réinitialiser les mots de passe, vous ne devez pas lui attribuer le rôle d’administrateur global, vous devez lui attribuer le rôle d’administrateur de mot de passe. Le fait d’avoir un trop grand nombre d’administrateurs généraux, avec un accès illimité à vos données et à votre entreprise en ligne, constitue un risque pour la sécurité.
 
@@ -61,7 +61,7 @@ Vous pouvez affecter des utilisateurs à un rôle de 2 manières différentes :
 1. Dans le Centre d’administration, allez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**Attributions de rôles.**</a> Choisissez les **onglets Azure AD** ou **Intune** pour afficher les rôles d’administrateur disponibles pour votre organisation.
 2. Sélectionnez le rôle d’administrateur à attribuer à l’utilisateur.
 3. Sélectionnez **Administrateurs affectés**  >  **Ajouter.**
-4. Tapez le nom **d’affichage** ou le nom d’utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste des suggestions.
+4. Tapez le nom d’affichage ou **le** nom d’utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste des suggestions.
 5. Ajoutez plusieurs utilisateurs jusqu’à ce que vous avez terminé.
 6. **Sélectionnez** Enregistrer, puis l’utilisateur est ajouté à la liste des administrateurs affectés.
 

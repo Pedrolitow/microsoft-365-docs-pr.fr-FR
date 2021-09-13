@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange administrateurs en ligne gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
-ms.openlocfilehash: e4c5e437ae72e3d3baac4140200670684af73cf1080c7b80edca044389465684
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Exchange administrateurs en ligne gèrent le courrier électronique et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
+ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53816018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177163"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos Exchange Online rôle d’administrateur principal
 
 Pour vous aider à administrer les [](assign-admin-roles.md) Microsoft 365, vous pouvez attribuer aux utilisateurs des autorisations pour gérer le courrier électronique et les boîtes aux lettres de votre organisation à partir du Centre [d’administration Exchange.](/exchange/exchange-admin-center) Pour ce faire, attribuez-leur le rôle d’administrateur Exchange.
   
- **Conseil**: lorsque vous affectez une personne au rôle Exchange’administration, attribuez-la également au rôle d’administrateur de service. Ainsi, ils peuvent voir des informations importantes dans le Centre d’administration Microsoft 365, telles que l’état d’Exchange Online service, ainsi que les notifications de modification et de publication.
+ **Conseil**: lorsque vous affectez une personne au rôle Exchange’administration, attribuez-la également au rôle d’administrateur de service. Ainsi, ils peuvent voir des informations importantes dans le Centre d'administration Microsoft 365, telles que l’état d’Exchange Online service, ainsi que les notifications de modification et de publication.
 
 Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lorsqu’ils sont affectés Exchange rôle d’administrateur principal :
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation.](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+- [Configurer une stratégie d’archivage et de](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres de votre organisation.
 
 - Configurer des fonctionnalités de boîte aux lettres telles que la stratégie de partage de boîte aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes extérieures à votre organisation.
 

@@ -20,13 +20,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
+- admindeeplinkMAC
 description: Découvrez comment Office 365 administrateurs globaux peuvent appliquer la marque de votre organisation aux messages électroniques chiffrés & contenu du portail de chiffrement.
-ms.openlocfilehash: 761cf2b85d13db34a0150e1ca21996ad0742e4bb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 87f6ffe0eed66e6cac329e71ad923355233eb657
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567567"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182456"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Ajouter la marque de votre organisation à votre Microsoft 365 chiffrement de messages pour les entreprises
 
@@ -46,7 +47,7 @@ Vous pouvez appliquer la personnalisation de votre entreprise pour personnaliser
 
 Vous pouvez également rétablir l’apparence par défaut à tout moment.
 
-Si vous souhaitez plus de contrôle, utilisez Chiffrement avancé de messages Office 365 pour créer plusieurs modèles pour les messages électroniques chiffrés provenant de votre organisation. Utilisez ces modèles pour contrôler des parties de l’expérience utilisateur final. Par exemple, spécifiez si les destinataires peuvent utiliser les comptes Google, Yahoo et Microsoft pour se connectent au portail de chiffrement. Utilisez des modèles pour répondre à plusieurs cas d’utilisation, tels que :
+Si vous souhaitez plus de contrôle, utilisez Chiffrement avancé de messages Office 365 pour créer plusieurs modèles pour les messages électroniques chiffrés provenant de votre organisation. Utilisez ces modèles pour contrôler des parties de l’expérience de l’utilisateur final. Par exemple, spécifiez si les destinataires peuvent utiliser les comptes Google, Yahoo et Microsoft pour se connectent au portail de chiffrement. Utilisez des modèles pour répondre à plusieurs cas d’utilisation, tels que :
 
 - Services individuels, tels que Finance, Ventes, etc.
 
@@ -56,13 +57,13 @@ Si vous souhaitez plus de contrôle, utilisez Chiffrement avancé de messages Of
 
 - Si vous souhaitez autoriser la révocation des e-mails
 
-- Indique si vous souhaitez que les courriers électroniques envoyés à des destinataires externes expirent après un nombre de jours spécifié.
+- Indique si vous souhaitez que les e-mails envoyés à des destinataires externes expirent après un nombre de jours spécifié.
 
 Une fois que vous avez créé les modèles, vous pouvez les appliquer aux e-mails chiffrés à l’aide Exchange règles de flux de messagerie. Si vous avez Chiffrement avancé de messages Office 365, vous pouvez révoquer les messages électroniques que vous avez personnalisés à l’aide de ces modèles.
 
 ## <a name="work-with-ome-branding-templates"></a>Utiliser des modèles de branding OME
 
-Vous pouvez modifier plusieurs fonctionnalités au sein d’un modèle de branding. Vous pouvez modifier, mais pas supprimer, le modèle par défaut. Si vous avez un chiffrement de messages avancé, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Windows PowerShell pour utiliser un modèle de branding à la fois.
+Vous pouvez modifier plusieurs fonctionnalités dans un modèle de branding. Vous pouvez modifier, mais pas supprimer, le modèle par défaut. Si vous avez un chiffrement de messages avancé, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Windows PowerShell pour utiliser un modèle de branding à la fois.
 
 - [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) : modifier le modèle de personnalisation par défaut ou un modèle de personnalisation que vous avez créé.
 - [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) : créer un modèle de branding, Chiffrement de messages avancé uniquement.
@@ -158,7 +159,7 @@ Pour supprimer un modèle de personnalisation :
 
 Après avoir modifié le modèle par défaut ou créé de nouveaux modèles de personnalisation, vous pouvez créer des règles de flux de messagerie Exchange pour appliquer votre personnalisation en fonction de certaines conditions. Une telle règle appliquera une personnalisation dans les scénarios suivants :
 
-- Si le courrier électronique a été chiffré manuellement par l’utilisateur final à l’aide Outlook ou Outlook sur le web, anciennement Outlook Web App
+- Si le courrier électronique a été chiffré manuellement par l’utilisateur final à l’aide de Outlook ou Outlook sur le web, anciennement Outlook Web App
 
 - Si le courrier a été automatiquement chiffré par une règle de flux Exchange de messagerie ou une stratégie de protection contre la perte de données
 
@@ -168,13 +169,13 @@ Pour plus d’informations sur la création d’une règle Exchange de flux de m
 
 2. Sélectionnez la **vignette** Administrateur.
 
-3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Branding for sales department.
 
-6. Dans **Appliquer cette règle si**, sélectionnez la condition L’expéditeur se trouve à l’intérieur de l’organisation et d’autres conditions que vous souhaitez dans la liste des conditions disponibles.  Par exemple, vous pouvez appliquer un modèle de branding particulier à :
+6. In **Apply this rule if**, select the condition The **sender is located inside the organization** and other conditions you want from the list of available conditions. Par exemple, vous pouvez appliquer un modèle de branding particulier à :
 
    - Tous les e-mails chiffrés envoyés par des membres du service financier
    - Messages électroniques chiffrés envoyés avec un certain mot clé, tel que « Externe » ou « Partenaire »
@@ -182,9 +183,9 @@ Pour plus d’informations sur la création d’une règle Exchange de flux de m
 
 7. Dans **l’exemple suivant,** **sélectionnez Modifier la sécurité des messages** Appliquer une \> **personnalisation aux messages OME.** Ensuite, dans la baisse, sélectionnez un modèle de branding.
 
-8. (Facultatif) Vous pouvez configurer la règle de flux de messagerie pour appliquer le chiffrement et la personnalisation. Dans **l’exemple suivant,** **sélectionnez Modifier la** sécurité des messages, puis chiffrement de messages Office 365 protection des **droits.** Sélectionnez un modèle RMS dans la liste, **sélectionnez Enregistrer,** puis **ok.**
+8. (Facultatif) Vous pouvez configurer la règle de flux de messagerie pour appliquer le chiffrement et la personnalisation. Dans **l’exemple suivant,** **sélectionnez Modifier la** sécurité des messages, puis sélectionnez Appliquer chiffrement de messages Office 365 protection des **droits.** Sélectionnez un modèle RMS dans la liste, **sélectionnez Enregistrer,** puis **ok.**
   
-   La liste des modèles inclut les modèles et options par défaut, ainsi que les modèles personnalisés que vous créez. Si la liste est vide, assurez-vous que vous avez chiffrement de messages Office 365 avec les nouvelles fonctionnalités. Pour obtenir des instructions, voir [Configurer de nouvelles fonctionnalités chiffrement de messages Office 365 de gestion.](set-up-new-message-encryption-capabilities.md) Pour plus d’informations sur les modèles par défaut, voir [Configuration et gestion des modèles pour Azure Information Protection.](/information-protection/deploy-use/configure-policy-templates) Pour plus d’informations sur l’option Ne pas **forwarder,** consultez [l’option Ne pas forwarder pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Pour plus d’informations sur **l’option chiffrer uniquement,** voir [l’option Chiffrer uniquement pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+   La liste des modèles inclut les modèles et options par défaut, ainsi que les modèles personnalisés que vous créez. Si la liste est vide, assurez-vous que vous avez chiffrement de messages Office 365 avec les nouvelles fonctionnalités. Pour obtenir des instructions, voir [Configurer de chiffrement de messages Office 365 nouvelles fonctionnalités.](set-up-new-message-encryption-capabilities.md) Pour plus d’informations sur les modèles par défaut, voir [Configuration et gestion des modèles pour Azure Information Protection.](/information-protection/deploy-use/configure-policy-templates) Pour plus d’informations **sur l’option** Ne pas forwarder, consultez [l’option Ne pas forwarder pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Pour plus d’informations sur **l’option chiffrer uniquement,** voir [l’option Chiffrer uniquement pour les e-mails.](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
    Choisissez **ajouter une action** si vous souhaitez spécifier une autre action.
 

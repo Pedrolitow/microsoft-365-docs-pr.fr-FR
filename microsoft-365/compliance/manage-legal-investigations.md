@@ -18,11 +18,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Utilisez les cas eDiscovery dans le Centre de conformité Microsoft 365 gérer l’enquête juridique de votre organisation.
 ms.openlocfilehash: 9eb41a67ae4ddfd39e1d40219861e0bd279fc7b8
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58507673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177956"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes judiciaires dans Microsoft 365
 
@@ -42,7 +42,7 @@ Les cas eDiscovery vous permet de contrôler qui peut créer, consulter et gére
 
 - [Recherchez du contenu](search-for-content.md) dans votre organisation.
 
-### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
+### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
 
 Comme dans la section précédente qui a répertorié des scripts pour les scénarios de recherche de contenu, nous avons également créé des scripts powerShell du Centre de sécurité & conformité pour vous aider à gérer les cas eDiscovery.
   
@@ -72,6 +72,6 @@ Voici une vue d’ensemble rapide du flux de travail intégré dans Advanced eDi
 
 - [Analyser les données de cas à](analyzing-data-in-review-set.md) l’aide d’outils d’analyse avancés.
 
-- [Exporter les données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
+- [Exporter des données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
 
 - [Gérer les travaux de longue durée](managing-jobs-ediscovery20.md) dans Advanced eDiscovery.

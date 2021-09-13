@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: Découvrez comment travailler avec les bureaux d’Connecter bureaux d’enregistrement activés et ajouter votre domaine à Microsoft 365.
-ms.openlocfilehash: f067e4982ad4154301658de1e2dafee2f944292e2481581eefa6a4d346c78ab8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12e1f227c0a157414b56fd04f99e5460a1eb05d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176436"
 ---
 # <a name="using-domain-connect"></a>Utilisation du domaine Connecter
 
@@ -50,10 +50,10 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer ou WildWestDomains (revendeurs GoDaddy utilisant l’hébergement DNS SecureServer)
   - [Hébergement web MadDog](https://maddogwebhosting.com/domains/)
-  - [SondesNames](https://www.cheapnames.com)
+  - [NamesDesSerrables](https://www.cheapnames.com)
 
 ## <a name="what-happens-to-my-email-and-website"></a>Qu’arrive-t-il à mon courrier électronique et mon site web ?
 
-Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
+Une fois l’installation terminé, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
 
 Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de Connecter domaine n’affectent pas votre site web.

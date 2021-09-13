@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 437fa595fecfbb60c01dd40bd5545a076255457a3136152f1455958328cd7e23
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ed2322a602541f0144669f5567302bb8a603738d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794485"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179451"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Accéder au portail Microsoft 365 Defender client MSSP
 
@@ -41,7 +41,7 @@ ms.locfileid: "53794485"
 > [!NOTE]
 > Ces étapes sont dirigées vers le MSSP.
 
-Par défaut, les clients MSSP accèdent à Microsoft 365 Defender client via l’URL suivante : `https://securitycenter.windows.com/` .
+Par défaut, les clients MSSP accèdent à Microsoft 365 Defender client via l’URL suivante `https://securitycenter.windows.com/` :
 
 Toutefois, les MSSP doivent utiliser une URL propre au client au format suivant : pour accéder au portail client  `https://securitycenter.windows.com?tid=customer_tenant_id` MSSP.
 
@@ -57,7 +57,7 @@ Utilisez les étapes suivantes pour obtenir l’ID de client MSSP client, puis u
 
 4. Accédez au portail client MSSP en remplaçant la `customer_tenant_id` valeur dans l’URL suivante : `https://securitycenter.windows.com/?tid=customer_tenant_id` .
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Accorder l’accès MSSP au portail](grant-mssp-access.md)
 - [Configurer des notifications d’alerte](configure-mssp-notifications.md)

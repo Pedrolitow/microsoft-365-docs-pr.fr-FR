@@ -20,11 +20,11 @@ ms.custom:
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous allez découvrir comment créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
 ms.openlocfilehash: 14ee1dbaac2b250e55957023580735676e2ab724
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571132"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176028"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -67,7 +67,7 @@ En d’autres termes, la DLP est suffisamment intelligente pour reconnaître la 
 - « Pouvez-vous me commander un nouvel ordinateur portable ? Utilisez mon numéro VISA 1111-1111-1111-1111, arrivant à expiration le 22/11 et envoyez-moi la date de remise estimée lorsque vous l’avez. »
 - « Le numéro de série de mon ordinateur portable est 2222-2222-2222-2222 et il a été acheté le 11/11/2010. En fait, mon visa de voyage est-il encore approuvé ? »
 
-Voir [les définitions d’entités](sensitive-information-type-entity-definitions.md) de type Informations sensibles qui expliquent comment chaque type d’informations est détecté.
+Voir [définitions d’entités de type Informations sensibles](sensitive-information-type-entity-definitions.md) qui expliquent comment chaque type d’informations est détecté.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Où commencer avec la protection contre la perte de données
 
@@ -91,7 +91,7 @@ Choisissez les emplacements à appliquer à la stratégie. Les stratégies DLP p
 
 ![Option de choix de tous les emplacements.](../media/DLP-create-test-tune-choose-locations.png)
 
-À la première étape **Paramètres** stratégie, acceptez simplement les valeurs par défaut pour le moment. Vous pouvez personnaliser les stratégies DLP, mais les valeurs par défaut sont un bon endroit pour commencer.
+À la première **étape Paramètres** stratégie, acceptez simplement les valeurs par défaut pour le moment. Vous pouvez personnaliser les stratégies DLP, mais les valeurs par défaut sont un bon endroit pour commencer.
 
 ![Options pour personnaliser le type de contenu à protéger.](../media/DLP-create-test-tune-default-customization-settings.png)
 
@@ -121,7 +121,7 @@ Pour faire la démonstration de la détection du TFN de manière assez discrète
 
 ![Numéro de fichier fiscal australien qui ne passe pas la sommes de contrôle.](../media/DLP-create-test-tune-email-test1.png)
 
-En comparaison, un e-mail avec les mots « Numéro de fichier fiscal » et un numéro TFN valide qui passe la liste de contrôle déclenche la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été tiré d’un site web qui génère des TFN valides, mais pas authentiques. Ces sites sont utiles car l’une des erreurs les plus courantes lors du test d’une stratégie DLP consiste à utiliser un nombre factice qui n’est pas valide et qui ne réussira pas la sommes de contrôle (et par conséquent ne déclenchera pas la stratégie).
+En comparaison, un e-mail avec les mots « Numéro de fichier fiscal » et un numéro TFN valide qui réussit la liste de contrôle déclenche la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été tiré d’un site web qui génère des TFN valides, mais pas authentiques. Ces sites sont utiles car l’une des erreurs les plus courantes lors du test d’une stratégie DLP consiste à utiliser un nombre factice qui n’est pas valide et qui ne réussira pas la sommes de contrôle (et par conséquent ne déclenchera pas la stratégie).
 
 ![Numéro de fichier fiscal australien qui passe le total de contrôle.](../media/DLP-create-test-tune-email-test2.png)
 
@@ -181,7 +181,7 @@ Si vous avez activé les conseils de stratégie, l’utilisateur commence à voi
 
 ## <a name="investigate-false-positives"></a>Examiner les faux positifs
 
-Les modèles de stratégie DLP ne sont pas parfaits. Il est probable que certains faux positifs se produisent dans votre environnement, c’est pourquoi il est si important de faciliter votre passage à un déploiement DLP, en prenant le temps de tester et d’affiner correctement vos stratégies.
+Les modèles de stratégie DLP ne sont pas parfaits. Il est probable que certains faux positifs se produisent dans votre environnement, c’est pourquoi il est important de faciliter votre passage à un déploiement DLP, en prenant le temps de tester et d’affiner correctement vos stratégies.
 
 Voici un exemple de faux positif. Cet e-mail est relativement dangereux. L’utilisateur fournit son numéro de téléphone mobile à une personne, ainsi que sa signature électronique.
 
@@ -214,7 +214,7 @@ Lorsque vous êtes satisfait que votre stratégie DLP détecte précisément et 
 
 ![Option d’activer la stratégie.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez que la stratégie prenne effet, Connecter au Centre de sécurité & conformité [PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
+Si vous attendez de voir à quel moment la stratégie prendra effet, Connecter au Centre de sécurité & conformité [PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la [cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) pour voir DistributionStatus.
 
 ![Exécution de l’cmdlet dans PowerShell.](../media/DLP-create-test-tune-PowerShell.png)
 
@@ -226,7 +226,7 @@ Les stratégies qui autorisent les substitutions utilisateur présentent cette o
 
 Les stratégies qui restreignent le contenu présentent l’avertissement à l’utilisateur dans le cadre du conseil de stratégie et l’empêchent d’envoyer le courrier électronique.
 
-![Conseil de stratégie pour que le contenu soit restreint.](../media/DLP-create-test-tune-restrict-warning.png)
+![Conseil de stratégie sur le fait que le contenu est restreint.](../media/DLP-create-test-tune-restrict-warning.png)
 
 ## <a name="summary"></a>Résumé
 

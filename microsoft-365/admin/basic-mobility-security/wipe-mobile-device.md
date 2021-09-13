@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer des informations des appareils inscrits.
 ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176796"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Effacement d’un appareil mobile dans Basic Mobility and Security
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base intégrées pour Micr
 
 Les appareils mobiles peuvent stocker des informations organisationnelles sensibles et fournir l’accès aux ressources Microsoft 365 de votre organisation. Pour protéger les informations de votre organisation, vous pouvez réinitialiser ou supprimer des données d’entreprise aux usine :
 
-- **Réinitialisation** aux usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
+- **Réinitialisation** d’usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
 
 - **Supprimer des données d’entreprise**: supprime uniquement les données de l’organisation et laisse les applications installées, les photos et les informations personnelles sur l’appareil mobile d’un utilisateur.
 
@@ -46,9 +46,9 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 ## <a name="wipe-a-mobile-device"></a>Effacer un appareil mobile
 
-1. Go to the [Centre d’administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Go to the [Centre d'administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
-2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** appareils mobiles dans la liste des résultats.
+2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** périphériques mobiles dans la liste des résultats.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de gestion des appareils mobiles Basic Mobility and Secruity.":::
 
@@ -60,7 +60,7 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 6. Sélectionnez le type de réinitialisation à distance que vous voulez effectuer.
 
-    - Pour réinitialiser entièrement l’appareil et restaurer ses paramètres d’usine, sélectionnez **Réinitialisation aux paramètres d’usine.**
+    - Pour réinitialiser entièrement l’appareil et restaurer ses paramètres d’usine, sélectionnez **Réinitialiser aux paramètres d’usine.**
     - Pour faire une effacement sélective et supprimer uniquement Microsoft 365'organisation, **sélectionnez Supprimer les données de l’entreprise.**
     - Pour supprimer l’appareil de votre organisation, **sélectionnez Supprimer l’appareil.**
 
@@ -89,4 +89,4 @@ La effacement est envoyée immédiatement à l’appareil mobile et l’appareil
 |Les profils de messagerie créés par Basic Mobility and Security sont supprimés et les messages électroniques mis en cache sur l’appareil sont supprimés.|Oui|N/D|
 
 > [!NOTE]
-> Portail d’entreprise’application est disponible dans l’App Store pour iOS et le Play Store pour les appareils Android.
+> Portail d'entreprise’application est disponible dans l’App Store pour iOS et le Play Store pour les appareils Android.

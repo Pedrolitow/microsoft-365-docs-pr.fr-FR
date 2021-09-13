@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment rechercher des ressources pour Rubriques Microsoft Viva.
 ms.openlocfilehash: e66252f93b3c32815e3a3a13217a59bb40fa17e6
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179595"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation de Rubriques Microsoft Viva
 

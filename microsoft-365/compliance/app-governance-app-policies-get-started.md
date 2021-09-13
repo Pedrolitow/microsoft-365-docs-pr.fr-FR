@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Démarrage avec En savoir plus sur les stratégies d’application.
 ms.openlocfilehash: 2f22e56195b94f07a6b8499bd69c60d65f37cce8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181486"
 ---
 # <a name="get-started-with-app-policies"></a>Démarrage avec des stratégies d’application
 

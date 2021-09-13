@@ -18,17 +18,17 @@ f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des invités gérés d’une organisation partenaire.
 ms.openlocfilehash: 7e3ddf12473095b0a7ac91ded01256e77c299ddf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177323"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 
 Vous pouvez utiliser [Azure Active Directory gestion des](/azure/active-directory/governance/entitlement-management-overview) droits d’accès pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire eux-mêmes sur le site ou l’équipe extranet et de recevoir un accès via un flux de travail d’approbation.
 
-Grâce à cette méthode de partage de ressources pour la collaboration, l’organisation partenaire peut aider à maintenir et approuver les invités de leur côté, réduisant ainsi la charge qui pèse sur votre service informatique et permettant aux personnes les plus familiarisés avec le contrat de collaboration de gérer l’accès des utilisateurs.
+Grâce à cette méthode de partage de ressources pour la collaboration, l’organisation partenaire peut aider à maintenir et approuver les invités de leur côté, réduisant ainsi la charge qui pèse sur votre service informatique et permettant aux personnes les plus familiarisatrices avec le contrat de collaboration de gérer l’accès des utilisateurs.
 
 Cet article décrit les étapes de création d’un package de ressources (dans ce cas, un site ou une équipe) que vous pouvez partager avec une organisation partenaire via un modèle d’inscription d’accès en libre-service. 
 
@@ -70,7 +70,7 @@ La première étape de la sélection des ressources à partager avec une organis
 
 Pour créer un catalogue
 1. Dans [Azure Active Directory,](https://aad.portal.azure.com)cliquez **sur Gouvernance des identités.**
-2. Cliquez **sur Catalogues**.
+2. Cliquez **sur Catalogues.**
 3. Cliquez **sur Nouveau catalogue.**
 4. Tapez un nom et une  description pour  le catalogue et assurez-vous que activés et activés pour les utilisateurs externes sont tous deux définies sur **Oui**.
 5. Cliquez sur **Créer**.
@@ -101,8 +101,8 @@ Pour créer un package d’accès
 10. Sous **Approbation,** **sélectionnez Oui** pour **Exiger l’approbation.**
 11. Sous **Premier approuveur,** choisissez l’un des sponsors que vous avez ajoutés précédemment ou choisissez un utilisateur spécifique.
 12. Cliquez **sur Ajouter un secours** et sélectionnez un approuveur de secours.
-13. Sous **Activer,** sélectionnez **Oui.**
-14. Cliquez **sur Suivant : Cycle de vie.**
+13. Under **Enable**, choose **Yes**.
+14. Cliquez **sur Suivant : Cycle de vie**.
 15. Choisissez les paramètres d’expiration et de révision d’accès que vous souhaitez utiliser, puis cliquez sur **Suivant : Révision + Créer.**
 16. Examinez vos paramètres, puis cliquez sur **Créer.**
 

@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
 ms.openlocfilehash: 7c5489a674145052eb40c533595a245a1d785247
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178436"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -36,7 +36,7 @@ Il existe deux façons d’obtenir des Microsoft 365 Business Standard :
 Pour vous inscrire et acheter des Microsoft 365 Business Standard (ou Microsoft 365 Apps) pour votre entreprise, complétez les étapes suivantes.
 
 > [!IMPORTANT]
-> La personne qui s’Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
+> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
 
 1. Dans la [page Microsoft 365 entreprise,](https://go.microsoft.com/fwlink/?linkid=2109654)sélectionnez Voir les plans & **tarifs.**
 2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur les informations incluses dans Microsoft 365. Sous Microsoft 365 Business Standard, sélectionnez **Acheter maintenant.**
@@ -76,12 +76,12 @@ Vous pouvez ajouter un domaine d’entreprise à tout moment pour accéder au re
 - Planificateur microsoft et Listes Microsoft
 - Le plus large éventail d’intégrations d’applications non-Microsoft (par exemple, Salesforce, Adobe) qui fonctionnent dans Teams et Office.
 
-#### <a name="next-steps"></a>Prochaines étapes
+#### <a name="next-steps"></a>Étapes suivantes
 
 Si vous souhaitez ajouter un domaine et créer un compte de messagerie professionnelle, vous pouvez suivre les étapes des articles ci-dessous :
 
 - [Ajouter un domaine à Microsoft 365](../setup/add-domain.md)
-- [Terminer la configuration](../setup/setup-business-standard.md#finish-setting-up)
+- [Terminez la configuration](../setup/setup-business-standard.md#finish-setting-up)
 
 ### <a name="option-2-create-a-new-business-email-account"></a>Option 2 : Créer un compte de messagerie professionnelle
 

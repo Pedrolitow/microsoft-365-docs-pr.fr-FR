@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 667e8ec2e28cfaf54d778ad784a5447a8d6139215f0dc0076307d49ac325429e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2fe2f49915e62eeb489fb7eff0ef08ce6a46660e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180740"
 ---
 # <a name="contact-support-for-timor-leste"></a>Contactez le support technique Timor-Leste
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 67229e22a3efbb24cd733d07a4ae78e257fd9d71
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: c1a51ec4d2e17275379eb40521f506e4a83d19ef
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58559141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177667"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
@@ -42,17 +42,17 @@ Le laboratoire d’évaluation de Microsoft Defender pour points de terminaison 
 
 Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concentrer sur l’exécution de vos propres scénarios de test et des simulations pré-réalisées pour voir les résultats de Defender for Endpoint.
 
-Vous disposez d’un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permet de tester la pile de protection complète de Defender for Endpoint.
+Vous aurez un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permettra de tester la pile de protection complète que Defender pour Endpoint offre.
 
 Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 pré-configurés pour que les versions de système d’exploitation les plus récentes et les composants de sécurité en place, ainsi que Office 2019 Standard soit installé.
 
-Vous pouvez également installer des simulateurs de menaces. Defender for Endpoint s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
+Vous pouvez également installer des simulateurs de menaces. Defender pour le point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 
- Installez votre simulateur préféré, exécutez des scénarios dans le laboratoire d’évaluation et voyez instantanément les résultats de la plateforme, le tout disponible sans frais supplémentaires. Vous aurez également un accès pratique à un large éventail de simulations que vous pouvez accéder et exécuter à partir du catalogue de simulations.
+Installez votre simulateur préféré, exécutez des scénarios dans le laboratoire d’évaluation et voyez instantanément les résultats de la plateforme, le tout disponible sans frais supplémentaires. Vous aurez également un accès pratique à un large éventail de simulations que vous pouvez accéder et exécuter à partir du catalogue de simulations.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez satisfaire [](minimum-requirements.md#licensing-requirements) aux exigences de licence ou avoir accès en version d’évaluation à Microsoft Defender for Endpoint pour accéder au laboratoire d’évaluation.
+Vous devrez satisfaire [](minimum-requirements.md#licensing-requirements) aux exigences de licence ou avoir accès en version d’évaluation à Microsoft Defender for Endpoint pour accéder au laboratoire d’évaluation.
 
 Vous devez avoir **les autorisations Gérer les paramètres** de sécurité pour :
 
@@ -81,7 +81,7 @@ Vous avez déjà un atelier ? Veillez à activer les nouveaux simulateurs de men
 
 ## <a name="setup-the-evaluation-lab"></a>Configurer le laboratoire d’évaluation
 
-1. Dans le volet de navigation, sélectionnez **Évaluation & didacticiels**  >  **Laboratoire** d’évaluation, puis sélectionnez **Laboratoire d’installation.**
+1. Dans le volet de navigation, sélectionnez **Évaluation & didacticiels** \> **Laboratoire** d’évaluation, puis sélectionnez **Laboratoire d’installation.**
 
     :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Image de la page d’accueil du laboratoire d’évaluation.":::
 
@@ -93,8 +93,8 @@ Vous avez déjà un atelier ? Veillez à activer les nouveaux simulateurs de men
 
     ![Image de l’agent des simulateurs d’installation.](images/install-agent.png)
 
-    >[!IMPORTANT]
-    >Vous devez d’abord accepter et donner votre consentement aux conditions générales et aux déclarations de partage d’informations.
+   > [!IMPORTANT]
+   > Vous devez d’abord accepter et donner votre consentement aux conditions générales et aux déclarations de partage d’informations.
 
 4. Sélectionnez l’agent de simulation de menace que vous souhaitez utiliser et entrez vos détails. Vous pouvez également choisir d’installer des simulateurs de menaces ultérieurement. Si vous choisissez d’installer des agents de simulation de menace lors de l’installation de l’atelier, vous profitez de leur installation pratique sur les appareils que vous ajoutez.
 
@@ -106,7 +106,7 @@ Une fois le processus de configuration de l’atelier terminé, vous pouvez ajou
 
 ## <a name="add-devices"></a>Ajouter des appareils
 
-Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter des Windows 10 ou des Windows server 2019.
+Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter Windows 10 ou Windows des appareils Server 2019.
 
 L’appareil sera configuré avec la version la plus récente du système d’exploitation et de Office 2019 Standard, ainsi que d’autres applications telles que Java, Python et SysIntenals.
 
@@ -126,7 +126,7 @@ Les composants de sécurité suivants sont pré-configurés dans les périphéri
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configurer la protection toujours en place.](configure-real-time-protection-microsoft-defender-antivirus.md)
+> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 Les paramètres d’examen automatisé dépendent des paramètres du client. Elle sera configurée pour être semi-automatisée par défaut. Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
 
@@ -139,13 +139,13 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuration de l’atelier avec options d’appareil.":::
 
-    > [!NOTE]
-    > En cas de problème lors du processus de création de l’appareil, vous serez averti et vous devrez envoyer une nouvelle demande. Si la création de l’appareil échoue, elle n’est pas comptabilisée dans le quota autorisé global.
+   > [!NOTE]
+   > En cas de problème lors du processus de création de l’appareil, vous serez averti et vous devrez envoyer une nouvelle demande. Si la création de l’appareil échoue, elle n’est pas comptabilisée dans le quota autorisé global.
 
 3. Les détails de connexion sont affichés. Sélectionnez **Copier** pour enregistrer le mot de passe de l’appareil.
 
-    > [!NOTE]
-    > Le mot de passe n’est affiché qu’une seule fois. N’oubliez pas de l’enregistrer pour une utilisation ultérieure.
+   > [!NOTE]
+   > Le mot de passe n’est affiché qu’une seule fois. N’oubliez pas de l’enregistrer pour une utilisation ultérieure.
 
     :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="Image de l’appareil ajouté avec les détails de connexion.":::
 
@@ -155,8 +155,8 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
     ![Image de l’onglet Appareils.](images/machines-tab.png)
 
-    > [!TIP]
-    > Dans la colonne **État du** simulateur, vous pouvez pointer sur l’icône d’informations pour connaître l’état d’installation d’un agent.
+   > [!TIP]
+   > Dans la colonne **État du** simulateur, vous pouvez pointer sur l’icône d’informations pour connaître l’état d’installation d’un agent.
 
 ## <a name="request-for-more-devices"></a>Demander plus d’appareils
 
@@ -173,7 +173,7 @@ Lorsque la demande est envoyée avec succès, vous verrez une bannière de confi
 
 Vous pouvez trouver l’état de votre demande dans l’onglet **Actions** de l’utilisateur, qui sera approuvé dans quelques heures.
 
-Une fois approuvés, les appareils demandés sont ajoutés à votre atelier et vous pouvez en créer d’autres.
+Une fois approuvés, les appareils demandés sont ajoutés à la mise en place de votre atelier et vous pouvez en créer d’autres.
 
 > [!TIP]
 > Pour en savoir plus sur votre atelier, n’oubliez pas de consulter notre bibliothèque de simulations.
@@ -206,8 +206,11 @@ Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [sc�
 
     ![Image de la connexion bureau à distance.](images/remote-connection.png)
 
-    >[!NOTE]
-    >Si vous n’avez pas de copie du mot de passe enregistrée lors  de la configuration initiale, vous pouvez réinitialiser le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu : Image du mot de passe de ![ réinitialisation.](images/reset-password-test-machine.png)<br>
+    > [!NOTE]
+    > Si vous n’avez pas de copie du mot de passe enregistrée lors  de la configuration initiale, vous pouvez réinitialiser le mot de passe en sélectionnant Réinitialiser le mot de passe dans le menu :
+    >
+    > ![Image de réinitialisation du mot de passe.](images/reset-password-test-machine.png)
+    >
     > L’appareil change son état en « Exécution de la réinitialisation du mot de passe », puis votre nouveau mot de passe vous sera présenté dans quelques minutes.
 
 3. Entrez le mot de passe qui a été affiché lors de l’étape de création de l’appareil.
@@ -238,8 +241,8 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 3. Choisissez une simulation ou parcourez la galerie de simulations pour parcourir les simulations disponibles.
 
     Vous pouvez obtenir la galerie de simulations à partir de :
-    - Tableau de bord d’évaluation principal dans la **vignette de vue d’ensemble simulations** ou
-    - En naviguant à partir du volet de navigation Évaluation et didacticiels  >  **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
+    - Tableau de bord d’évaluation principal dans la **vignette Vue d’ensemble simulations** ou
+    - En naviguant à partir  du volet de navigation Évaluation et didacticiels \> **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
 
 4. Sélectionnez les appareils sur lequel vous souhaitez exécuter la simulation.
 
@@ -251,13 +254,13 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
 Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer Microsoft Defender pour le point de terminaison qui a déclenché une investigation et une correction **automatisées.** Consultez les preuves collectées et analysées par la fonctionnalité.
 
-Recherchez des preuves d’attaque par le biais d’un recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.
+Recherchez des preuves d’attaque par le biais d’une recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.
 
 ## <a name="simulation-gallery"></a>Galerie de simulations
 
 Microsoft Defender pour le point de terminaison s’est associé à différentes plateformes de simulation de menaces pour vous donner un accès pratique pour tester les fonctionnalités de la plateforme directement à partir du portail.
 
-Affichez toutes les simulations disponibles en allant dans le catalogue **Simulations et** didacticiels  >  **Simulations** à partir du menu.
+Affichez toutes les simulations disponibles en allant au catalogue  **Simulations et** didacticiels \> **Simulations**  à partir du menu.
 
 Une liste d’agents de simulation de menace tiers pris en charge est répertoriée, et des types spécifiques de simulations ainsi que des descriptions détaillées sont fournis dans le catalogue.
 

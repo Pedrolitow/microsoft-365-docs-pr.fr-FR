@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 description: Obtenez le rapport Yammer d’activité des groupes de Yammer qui sont créés et utilisés dans votre organisation, ainsi que leur activité.
 ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177179"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer’activité des groupes
 
 Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport d'activité des groupes Yammer, vous pouvez obtenir des informations sur l'activité des groupes Yammer de votre organisation et voir combien de groupes Yammer sont créés et utilisés.
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
  
 ## <a name="how-do-i-get-to-the-yammer-groups-activity-report"></a>Comment puis-je obtenir le rapport d’Yammer groupes de travail ?
 
@@ -42,13 +42,13 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
   
 ## <a name="interpret-the-yammer-groups-activity-report"></a>Interpréter le rapport d'activité des groupes Yammer
 
-Vous pouvez afficher les activités des groupes dans le rapport Yammer en choisissant l’onglet **Activité des** groupes.<br/>![Microsoft 365- Rapport d’activité Yammer groupes microsoft.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
+Vous pouvez afficher les activités des groupes dans le rapport Yammer en choisissant l’onglet **Activité groupes.**<br/>![Microsoft 365- Rapport d’activité Yammer groupes Microsoft.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
-Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité des groupes : choisissez des colonnes.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité des groupes : choisissez des colonnes.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom du groupe  <br/> |Nom du groupe. <br/> |
@@ -59,7 +59,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |Date de la dernière activité (UTC)  <br/> | Date à laquelle un message a été lu, publié ou aimé au plus tard par le groupe.  <br/> |
 |Members  <br/> | Nombre de membres du groupe.  <br/> |
 |Publié  <br/> |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. <br/>|
-|Lecture  <br/> |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport.  <br/> |
+|Lire  <br/> |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport.  <br/> |
 |Aimé  <br/> |Nombre de messages aimés dans le groupe Yammer au cours de la période de rapport. <br/>|
 |Nom du réseau  <br/> |Nom complet du réseau à qui appartient le groupe. |
 |||

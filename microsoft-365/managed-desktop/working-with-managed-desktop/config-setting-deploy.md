@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 093697e0a8c491dbd0baf5f2966e08d989416e2496cf7972be35ba2377160e09
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: aad4995f9c329b0fd8fcbcc8b1d13379453c2a76
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182033"
 ---
-# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables : Microsoft Manged Desktop
+# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables - Microsoft Manged Desktop
 
 Après avoir apporté des modifications à vos catégories de paramètres et organisé un déploiement, la page État du déploiement vous permet de commencer à déployer vos paramètres dans des groupes. Cette page affiche un résumé de chaque paramètre configurable. En ouvrant une catégorie de paramètres, vous pouvez déployer des paramètres sur des groupes et suivre la progression de ces déploiements.
 
@@ -34,7 +34,7 @@ Révérence | La modification a été revenir à la dernière modification qui a
 
 ## <a name="deploy-changes"></a>Déployer les modifications
 
-Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions. Après avoir mis en place un déploiement, vous déployez les modifications à partir de la page État du déploiement.
+Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions. Une fois que vous avez mis en place un déploiement, vous déployez les modifications à partir de la page État du déploiement.
 
 **Pour déployer les modifications**
 
@@ -56,7 +56,7 @@ Lorsque les modifications sont terminées dans chaque groupe, l’état est **te
 
 ## <a name="revert-deployment"></a>Revert deployment
 
-Une fois que vous avez déployé une modification, vous pouvez revenir à **l’état de déploiement.** Lorsque vous inversez une modification en cours **ou** **terminée,** le déploiement actuel s’arrête. Le paramètre revient à la dernière version qui a été déployée sur tous les groupes.
+Une fois que vous avez déployé une modification, vous pouvez revenir à **l’état de déploiement.** Lorsque vous inversez une modification en cours **ou** **terminée,** le déploiement actuel s’arrête. Le paramètre revient à la dernière version qui a été déployée pour tous les groupes.
 
 Nous allons vous montrer les étapes à suivre pour inverser une modification à l’aide de l’image d’arrière-plan du Bureau à titre d’exemple. 
 
@@ -64,7 +64,7 @@ Nous allons vous montrer les étapes à suivre pour inverser une modification à
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Microsoft Manged Desktop, sélectionnez **Paramètres**.
-3. Dans **l’espace** de travail État du déploiement, sélectionnez le paramètre à revenir, puis sélectionnez le déploiement par étapes à inverser.
+3. Dans **l’espace** de travail État du déploiement, sélectionnez le paramètre que vous souhaitez inverser, puis sélectionnez le déploiement par étapes à inverser.
 4. Under **Need to revert this change?**, select **Revert deployment**.
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->

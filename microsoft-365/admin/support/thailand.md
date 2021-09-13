@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7bb8b119edf92bc0344a070bc9c3e7e8b30f414edc541708964694c3fe2040b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e501e49fa09d007f9c25a84b152e3e1a3f1656d0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893416"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180747"
 ---
 # <a name="contact-support-for-thailand"></a>Contacter le support technique pour la Thaïlande
 

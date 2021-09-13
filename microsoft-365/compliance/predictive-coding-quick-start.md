@@ -15,15 +15,15 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Découvrez comment commencer à utiliser le module de codage prédictif dans Advanced eDiscovery. Cet article vous explique le processus de bout en bout d’utilisation du codage prédictif pour identifier le contenu d’un jeu à réviser le plus pertinent pour votre enquête.
 ms.openlocfilehash: 0ca9e4ff8b42ced962b68fff9073e892d8ea5d4e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177883"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Démarrage rapide : codage prédictif dans Advanced eDiscovery (aperçu)
 
-Cet article présente un démarrage rapide pour l’utilisation du codage prédictif dans Advanced eDiscovery. Le module de codage prédictif dans Advanced eDiscovery utilise les fonctionnalités intelligentes d’apprentissage automatique dans Advanced eDiscovery pour vous aider à réduire la quantité de contenu à réviser. Le codage prédictif vous permet de réduire et de réduire les volumes importants de contenu de cas à un ensemble pertinent d’éléments que vous pouvez hiérarchiser pour révision. Pour ce faire, vous devez créer et former vos propres modèles de codage prédictifs qui vous aident à hiérarchiser l’examen des éléments les plus pertinents d’un jeu à réviser.
+Cet article présente un démarrage rapide pour l’utilisation du codage prédictif dans Advanced eDiscovery. Le module de codage prédictif dans Advanced eDiscovery utilise les fonctionnalités intelligentes d’apprentissage automatique dans Advanced eDiscovery pour vous aider à réduire la quantité de contenu à réviser. Le codage prédictif vous permet de réduire et de réduire les volumes importants de contenu de cas à un ensemble pertinent d’éléments que vous pouvez hiérarchiser pour révision. Pour ce faire, vous devez créer et former vos propres modèles de codage prédictifs qui vous permettent de hiérarchiser l’examen des éléments les plus pertinents d’un jeu à réviser.
 
 Voici un aperçu rapide du processus de codage prédictif :
 
@@ -37,7 +37,7 @@ Pour une vue d’ensemble détaillée du codage prédictif, voir En savoir plus 
 
 La première étape consiste à créer un modèle de codage prédictif dans le jeu à réviser
 
-1. Dans la Centre de conformité Microsoft 365, ouvrez un Advanced eDiscovery, puis sélectionnez l’onglet **Ensembles de révision.**
+1. Dans la Centre de conformité Microsoft 365, ouvrez un Advanced eDiscovery, puis sélectionnez l’onglet Ensembles **de révision.**
 
 2. Ouvrez un jeu à réviser, puis cliquez sur **Analyse** Gérer le  >  **codage prédictif (prévisualisation).**
 
@@ -111,6 +111,6 @@ Il est plus probable que vous dedessiez plusieurs séries de formation pour form
 
 Pour plus d’informations, voir [Effectuer des séries de formation supplémentaires](predictive-coding-train-model.md#perform-additional-training-rounds)
 
-## <a name="step-5-apply-the-final-prediction-score-filter-to-prioritize-review"></a>Étape 5 : Appliquer le filtre de score de prédiction final pour hiérarchiser l’examen
+## <a name="step-5-apply-the-final-prediction-score-filter-to-prioritize-review"></a>Étape 5 : Appliquer le filtre de score de prédiction final pour hiérarchiser la révision
 
-Répétez les instructions de l’étape 3 pour appliquer le score de prédiction final au jeu à réviser afin de hiérarchiser l’examen des éléments pertinents et non pertinents une fois que vous avez terminé toutes les séries de formation et stabilisé le modèle.
+Répétez les instructions de l’étape 3 pour appliquer le score de prédiction final au jeu à réviser afin de hiérarchiser la révision des éléments pertinents et non pertinents une fois que vous avez terminé toutes les séries de formation et stabilisé le modèle.

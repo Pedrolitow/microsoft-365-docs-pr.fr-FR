@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Inscrivez-vous pas à pas pour Microsoft 365 campagnes. Protégez votre campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: eaba43a9163b4ee1db5b653b04c0eedea7716297e510edd4eb5926b41a554bda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178276"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire aux Microsoft 365 campagnes 
 
@@ -53,7 +53,7 @@ Voici comment terminer votre inscription à l’Microsoft 365 campagnes.
 1. **Dans la page Créer votre ID d’utilisateur**:
     1. Dans **Nom d’utilisateur,** entrez le nom ou l’alias que vous souhaitez pour votre adresse de messagerie. Par exemple, vous souhaitez peut-être être appelé simplement Alice ou Rob. Dans une campagne plus large, AliceC ou AliceChavez peut être plus logique.
     2. Dans **votre entreprise,** entrez le nom de la campagne pour qui vous travaillez. Par exemple, ContosoCampaign. Si vous possédez déjà un domaine, utilisez ce nom ici. 
-    3. Dans **Sélectionner un domaine,** sélectionnez **.onmicrosoft.com** pour le moment. Nous pouvons vous configurer ultérieurement avec un domaine ou vous aider à Microsoft 365 à un domaine que vous possédez déjà.
+    3. Dans **Sélectionner un domaine,** sélectionnez **.onmicrosoft.com** pour l’instant. Nous pouvons vous configurer ultérieurement avec un domaine ou vous aider à Microsoft 365 à un domaine que vous possédez déjà.
     4. Créez un mot de passe et **sélectionnez Créer mon compte.**
     > [!NOTE]
     > Si votre campagne ou votre parti ne possède pas de domaine et que vous avez choisi le domaine de votre choix, vous pouvez en acheter un maintenant en le sélectionnant.
@@ -67,7 +67,7 @@ Voici comment terminer votre inscription à l’Microsoft 365 campagnes.
     1. Vérifiez que le coût par utilisateur est de 5,00 $. 
     2. Si vous souhaitez uniquement vous configurer pour l’instant, sélectionnez **Suivant.** 
     3. Facultatif : ajoutez des licences supplémentaires maintenant en modifiant le numéro dans le **champ utilisateur.** [Les membres du personnel avec qui vous travaillez peuvent se](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) voir attribuer des licences Microsoft 365 à tout moment.
-7. **Comment voulez-vous payer ? Page :** Sélectionnez une nouvelle carte de crédit, entrez les détails de votre carte de crédit professionnelle, puis **sélectionnez Commande.**  Si vous préférez, il est également possible d’utiliser un compte bancaire.
+7. **Comment voulez-vous payer ? Page**: Sélectionnez une nouvelle carte de **crédit,** entrez les détails de votre carte de crédit professionnelle, puis **sélectionnez Commande.** Si vous préférez, il est également possible d’utiliser un compte bancaire.
 8. **Cette page peut prendre un moment :** vous trouverez des détails sur l’endroit où vous vous connectez et votre ID d’utilisateur. Nous enverrons également ces informations à l’adresse de messagerie que vous avez entrée à l’étape 2 ci-dessus.
 
 Vos étapes d’inscription sont terminées ! Si vous souhaitez poursuivre les étapes suivantes, sélectionnez **Démarrer** le programme d’installation ou revenir plus tard pour terminer les étapes. Lorsque vous êtes prêt, vérifiez votre courrier électronique (à partir de l’étape 2) pour trouver votre nom d’utilisateur et votre mot de passe afin de pouvoir vous connecter la prochaine fois. Ces informations sont appelées informations d’identification d’administrateur ou d’administrateur global.
@@ -83,8 +83,8 @@ Si vous avez déjà un abonnement à Microsoft 365 pour les entreprises, par exe
     
     ![Sélectionnez Se connectez dans le coin supérieur droit.](../media/addtoexisting.png)
 3. Sur la page de signature, entrez l’alias d’administrateur de votre abonnement existant, par exemple *Alice@VoteContoso <span></span> .org*, choisissez Suivant, entrez votre mot de passe, puis **connectez-vous.**
-4. Sur **l’apparence, entrez** le nombre d’utilisateurs dont vous avez et choisissez **Suivant**. Vous n’avez pas besoin d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL d’invitation.
-5. Dans la page **Comment voulez-vous payer ?** entrez votre mode de paiement et choisissez **Commande.**
+4. Dans la **partie à quoi cela ressemble-t-il ?** Entrez le nombre d’utilisateurs dont vous avez et choisissez **Suivant**. Vous n’avez pas besoin d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL d’invitation.
+5. On the **How do you want to pay?** page, enter your payment method and choose Place **order**.
 
 Une fois ces étapes effectuées, vous êtes prêt à attribuer les nouvelles [licences](../admin/manage/assign-licenses-to-users.md) à votre équipe de campagne.
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer un affichage utilisateur personnalisé dans Microsoft 365.
-ms.openlocfilehash: 41cba32be3ee1e452462a398d5c7f0cc5a632061b4ce64ed3594d82f69887b68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b4177a561d13d76f6d5a0a1077fe8037d469ee48
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177091"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée
 
@@ -66,7 +66,7 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
     
 - **Utilisateurs sans permis** Sélectionnez cette case pour rechercher tous les utilisateurs qui n’ont pas reçu de licence. Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une boîte aux lettres Exchange mais qui n’ont pas de licence. Pour suivre ces utilisateurs spécifiquement, utilisez le filtre Utilisateurs sans permis Exchange boîtes aux lettres **ou d’archives.** Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une archive Exchange, mais n’ont pas de licence.
     
-- **Utilisateurs sans permis avec des boîtes aux lettres Exchange ou des archives** Sélectionnez cette case pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n’ont pas été affectés à Microsoft 365 licence. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à une archive Exchange de données. 
+- **Utilisateurs sans permis avec des boîtes aux lettres Exchange ou des archives** Sélectionnez cette case pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n’ont pas été affectés à Microsoft 365 licence. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à Exchange archive. 
 
 > [!NOTE]
 > Le **filtre des utilisateurs** sans Exchange boîtes aux lettres fonctionne dans les cas ci-après :
@@ -100,7 +100,7 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
     
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Filtres** et **Nouveau filtre.**
   
-3. Dans la page **Filtre personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste de listes de filtres.
+3. Dans la page **Filtre personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste liste de filtres.
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>Modifier ou supprimer un affichage utilisateur personnalisé
 
@@ -129,9 +129,9 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
   
 3. Dans la page **Filtre personnalisé,** modifiez les informations selon vos besoins, puis sélectionnez **Enregistrer.** Ou, pour supprimer le filtre, en bas de la page, sélectionnez **Supprimer**. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Vue d’ensemble Centre d’administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
+[Vue d’ensemble Centre d'administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
 [À propos des rôles d’administrateur](../add-users/about-admin-roles.md) (vidéo)\
 [Personnaliser le thème Microsoft 365 pour votre organisation](../setup/customize-your-organization-theme.md) (article)
 

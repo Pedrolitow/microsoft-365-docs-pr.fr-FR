@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur ICE 17a-4 ICE Connecter Chat DataParser pour importer et archiver des données ICE Connecter Chat dans Microsoft 365.
 ms.openlocfilehash: cf759aaecdfcde8f951cc09271b7e32226324664
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178099"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Configurer un connecteur pour archiver les données ICE Connecter Chat
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour ICE Connecter données de conversation 17a-4.](../media/ICEChatDataParserConnectorWorkflow.png)
 
-1. Votre organisation travaille avec 17a-4 pour configurer l’analyseur de données ICE.
+1. Votre organisation travaille avec 17a-4 pour configurer ice DataParser.
 
 2. Régulièrement, les éléments ICE Connecter Chat sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
@@ -77,6 +77,6 @@ Après avoir créé un connecteur ICE DataParser, vous pouvez afficher l’état
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

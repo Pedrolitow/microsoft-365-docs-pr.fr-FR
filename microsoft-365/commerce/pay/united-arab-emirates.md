@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2fb806042bd188d5ed99fd22bcb180f2d025b4e9b800cd7bdea3e19d02cacc60
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3441b08eefd38ac104e782dcb09e6a666f69562f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181535"
 ---
 # <a name="payment-information-for-united-arab-emirates"></a>Informations de paiement pour les Émirats arabes unis
 

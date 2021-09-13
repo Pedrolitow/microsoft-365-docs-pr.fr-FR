@@ -19,14 +19,14 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
-description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et le courrier électronique.
+description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
 ms.date: 03/30/2021
 ms.openlocfilehash: a7a2b8ee10c37b315e14504eae67672c34f79f08
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176347"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
@@ -37,7 +37,7 @@ Pour modifier l’adresse associée à votre facture ou abonnement, consultez Mo
 ## <a name="edit-organization-information"></a>Modifier les informations de l'organisation
 
 > [!IMPORTANT]
-> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine les services disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
+> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine quels services sont disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
 
 Pour modifier d’autres informations sur la page de profil de votre entreprise :
   
@@ -64,7 +64,7 @@ Chaque champ est décrit ci-dessous.
 
 En tant qu’administrateur, vous pouvez modifier votre adresse de messagerie de remplacement pour réinitialiser les mots de passe.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
 
 2. Dans l’en-tête, sélectionnez l’icône de votre profil, puis **sélectionnez Afficher le compte.**
 
@@ -81,7 +81,7 @@ Pour en savoir plus sur la modification d’autres informations de profil, voir 
   
 Vous pouvez modifier votre signature électronique dans Outlook Web App. Pour plus d'informations, voir [Paramètres du courrier](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Envoyer des courriers électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Modifier un nom d’utilisateur et une adresse e-mail](../add-users/change-a-user-name-and-email-address.md) (article)\

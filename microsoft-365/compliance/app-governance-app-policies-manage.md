@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Gérez vos stratégies de gouvernance des applications.
 ms.openlocfilehash: 270315e15a79b97b55aa729d4b7e9b39930ee82c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181481"
 ---
 # <a name="manage-app-policies"></a>Gérer les stratégies d’application
 

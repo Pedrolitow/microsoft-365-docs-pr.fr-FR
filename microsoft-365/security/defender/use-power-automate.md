@@ -1,5 +1,5 @@
 ---
-title: Utiliser Microsoft Power Automate.
+title: Utiliser Microsoft Power Automate
 description: Découvrez l’automatisation de l’alimentation Microsoft 365 Defender comment les utiliser.
 keywords: repérage avancé, repérage de menace, repérage de cybermenace, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, schéma, copies
 search.product: eADQiWindows 10XVcnh
@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 9d6b786076a218a5257bbd12669f62064ae51f2a
-ms.sourcegitcommit: b05b107774e8bca36c9ee19fdc4719d17e302f11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180904"
 ---
 # <a name="use-power-automate-in-microsoft-365-defender"></a>Utiliser Power Automate dans Microsoft 365 Defender
 

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails des réunions : les utilisateurs ont un score de productivité.'
-ms.openlocfilehash: e9de4ab128628b4308b1796ac0c83637283bba7f505e348206c36179a8c19e73
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 47a29ee208f9c6957a3fcf7d1a4b0c71518c680b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823116"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178707"
 ---
 # <a name="meetings--people-experiences"></a>Réunions : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie réunions fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Pour commencer à connaître les informations sur les réunions, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -140,7 +140,7 @@ Nous vous fournissons également des informations de support pour vous aider à 
         - Numérateur : nombre de personnes participant à des instances de réunions périodiques sur leur calendrier (prévu) au cours des 28 derniers jours
         - Dénominateur : nombre de personnes participant à une réunion Microsoft Teams en ligne au cours des 28 derniers jours
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

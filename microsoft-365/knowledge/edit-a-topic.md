@@ -15,11 +15,11 @@ ms.service: ''
 localization_priority: Normal
 description: Découvrez comment modifier une rubrique existante dans Sujets Microsoft Viva.
 ms.openlocfilehash: 4fb3089d0ce701477542fec7710db5de17638469
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179627"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Modifier une rubrique existante dans Sujets Microsoft Viva 
 
@@ -34,7 +34,7 @@ Dans Rubriques de Rubriques, vous pouvez modifier une rubrique existante. Vous d
 > [!Note] 
 > Alors que les informations d’une rubrique qui sont rassemblées par l’IA sont découpées en matière de [sécurité,](topic-experiences-security-trimming.md)la description de la rubrique et les informations de personnes que vous ajoutez manuellement lors de la modification d’une rubrique existante sont visibles pour tous les utilisateurs qui ont l’autorisation d’afficher les rubriques. 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour modifier une rubrique existante, vous devez :
 - avoir une licence Rubriques Viva.

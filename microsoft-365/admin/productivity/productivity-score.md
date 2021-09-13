@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le Niveau de productivité Microsoft reflète les mesures de l’expérience utilisateur et technologique, et comparez-les aux organisations de taille similaire.
-ms.openlocfilehash: f6c469f6b754e7a6ad54d968b555a2bec45e4d2aa8a72d99337ee6a8251e5f0e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ddbc1590abc1383035db1852345310bfc8dd196d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178683"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6561a052-02bb-479d-93ca-5a0f16faf2ee
 description: Obtenez la dernière version de l’analyse Microsoft 365'utilisation.
-ms.openlocfilehash: 500a757fa1e2af8a2f43f4fc84cc38542d234f3e044f7d13cbeb15400f83aa3a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2cc58814f1f2d01dd8e779751cdc6b0287faf29f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180724"
 ---
 # <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a>Obtenir la dernière version de l’analyse Microsoft 365'utilisation
 

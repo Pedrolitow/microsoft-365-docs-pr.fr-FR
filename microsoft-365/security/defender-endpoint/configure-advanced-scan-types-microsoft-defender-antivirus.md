@@ -17,11 +17,11 @@ ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
 ms.openlocfilehash: 9c25e0fd4dbdd9e8e2c05c0a3a49d767d5dbd3c6
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179372"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
@@ -67,7 +67,7 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 |Analyser les exécutables packés <p> **Analyse** \> **Analyser les exécutables packés**|Activé|Non disponible|
 |Analyser les lecteurs amovibles uniquement pendant les analyses complètes <p> **Analyse** \> **Analyser les lecteurs amovibles**|Désactivé|`-DisableRemovableDriveScanning`|
 |Spécifier le niveau de sous-dossiers dans un dossier d’archivage à analyser <p>**Analyse** \> **Spécifier la profondeur maximale pour analyser les fichiers d’archivage**|0|Non disponible|
-|Spécifiez la charge processeur maximale (en pourcentage) au cours d’une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
+|Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
 |Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Sans limite|Non disponible <p>La valeur par défaut de 0 ne s’applique pas à la limite|
 |Configurer une faible priorité du processeur pour les analyses programmées <p> **Analyse** \> **Configurer une faible priorité du processeur pour les analyses programmées**|Désactivé|Non disponible|
 |
@@ -96,7 +96,7 @@ L’analyse du courrier électronique permet d’analyser les fichiers de messag
 
 Les fichiers PST utilisés par Outlook 2003 ou une ancienne génération (où le type d’archive est non unicode) sont également analysés, mais Antivirus Microsoft Defender ne peut pas corriger les menaces détectées dans les fichiers PST.
 
-Si Antivirus Microsoft Defender une menace à l’intérieur d’un message électronique, elle vous indique les informations suivantes pour vous aider à identifier le courrier électronique compromis, afin que vous pouvez corriger la menace manuellement :
+Si Antivirus Microsoft Defender une menace à l’intérieur d’un message électronique, elle affiche les informations suivantes pour vous aider à identifier le courrier électronique compromis, afin que vous pouvez corriger la menace manuellement :
 
 - Sujet de l’e-mail
 - Nom de la pièce jointe

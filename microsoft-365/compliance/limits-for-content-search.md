@@ -16,23 +16,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Découvrez les limites en vigueur pour la recherche de contenu et les fonctionnalités core eDiscovery dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: f7f5d00604b6aff64f5e380e4fe30c5e09666ab52c216706b63ae0bab3a25318
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Découvrez les limites en vigueur pour la recherche de contenu et les fonctionnalités eDiscovery principales dans le Centre de conformité Microsoft 365.
+ms.openlocfilehash: db0f24d66fd7dc23a82a5ededfcfbc4d9edabad7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179884"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery
 
-Diverses limites sont appliquées aux outils de recherche eDiscovery dans le Centre de conformité Microsoft 365. Cela inclut les recherches qui s’exécutent sur la **page** de recherche de contenu et les recherches associées à un cas eDiscovery sur la page **Core eDiscovery.** Ces limites permettent de maintenir l’état et la qualité des services fournis aux organisations. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier les limites pour les recherches eDiscovery ou l’indexation de courrier électronique, mais vous devez les connaître afin de pouvoir prendre ces limites en considération lors de la planification, de l’exécution et du dépannage des recherches de découverte électronique.
+Diverses limites sont appliquées aux outils de recherche eDiscovery dans le Centre de conformité Microsoft 365. Cela inclut les recherches qui s’exécutent sur la **page** de recherche de contenu et les recherches associées à un cas eDiscovery sur la page **Core eDiscovery.** Ces limites permettent de maintenir l’état et la qualité des services fournis aux organisations. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier les limites pour les recherches eDiscovery ou l’indexation de courrier électronique, mais vous devez les connaître afin de pouvoir prendre ces limites en considération lors de la planification, de l’exécution et du dépannage des recherches de découverte électronique.
 
 Pour les limites liées à l’outil Advanced eDiscovery, voir [Limites dans Advanced eDiscovery](limits-ediscovery20.md)
 
 ## <a name="search-limits"></a>Limites de la recherche
 
-Le tableau suivant répertorie les limites de recherche lors de l’utilisation de l’outil de recherche de contenu dans le Centre de conformité Microsoft 365 et pour les recherches associées à un cas core eDiscovery.
+Le tableau suivant répertorie les limites de recherche lors de l’utilisation de l’outil de recherche de contenu dans le Centre de conformité Microsoft 365 et pour les recherches associées à un cas core eDiscovery.
 
 <br>
 
@@ -46,7 +46,7 @@ Le tableau suivant répertorie les limites de recherche lors de l’utilisation 
 |Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. Cette limite est très probablement atteint lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **Get-ComplianceSearch \| Start-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell.|10 |
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche de contenu.|100|
 |Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur pouvant éventuellement être affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche. Les éléments les plus récents sont affichés.|1 000 <sup>2</sup>|
-|Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S’il existe plus de 1 000 boîtes aux lettres contenant du contenu qui correspond à la requête de recherche, au maximum, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats de recherche seront disponibles en aperçu.|1 000|
+|Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S’il existe plus de 1 000 boîtes aux lettres contenant du contenu qui correspond à la requête de recherche, au maximum, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats de recherche seront disponibles en aperçu.|1,000|
 |Nombre maximal d’éléments trouvés dans SharePoint sites OneDrive Entreprise qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche. Les éléments les plus récents sont affichés.|200|
 |Nombre maximal de sites (en SharePoint et OneDrive Entreprise) qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites au total contiennent du contenu qui correspond à la requête de recherche, seuls les 200 premiers sites ayant le plus grand nombre de résultats de recherche seront disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche de contenu.|100|
@@ -60,7 +60,7 @@ Le tableau suivant répertorie les limites de recherche lors de l’utilisation 
 |||
 
 > [!NOTE]
-> <sup>1</sup> Bien que vous pouvez rechercher un nombre illimité de boîtes aux lettres dans une seule recherche, vous ne pouvez télécharger les résultats de recherche exportés qu’à partir d’un maximum de 100 000 boîtes aux lettres à l’aide de l’outil d’exportation eDiscovery dans le Centre de conformité Microsoft 365.
+> <sup>1</sup> Bien que vous pouvez rechercher un nombre illimité de boîtes aux lettres dans une seule recherche, vous ne pouvez télécharger les résultats de recherche exportés qu’à partir d’un maximum de 100 000 boîtes aux lettres à l’aide de l’outil d’exportation eDiscovery dans le Centre de conformité Microsoft 365.
 >
 > <sup>2 L’objectif</sup> de la page d’aperçu est d’afficher un échantillon limité des résultats. Même pour les recherches massives avec des milliers de résultats, le nombre d’éléments affichés sur la page d’aperçu peut, et souvent, être beaucoup moins élevé que la valeur maximale possible de 1 000. Pour voir les résultats de recherche complets, vous devez exporter les résultats.
 >
@@ -101,7 +101,7 @@ Le tableau suivant répertorie les limites lors de l’exportation des résultat
 |Nombre maximal d’exportations simultanées qui peuvent être exécuter en même temps au sein de votre organisation <p> **Remarque :** L’exécution **d’une exportation** de rapport uniquement est comptabilisée par rapport au nombre total d’exportations simultanées pour votre organisation. Si trois utilisateurs effectuent 3 exportations chacune, une seule autre exportation peut être effectuée. Qu’il s’agit d’exporter un rapport ou des résultats de recherche, aucune autre exportation ne peut être effectuée tant qu’une exportation n’est pas terminée.|10 |
 |Nombre maximal d’exportations qu’un seul utilisateur peut exécuter à tout moment|3|
 |Nombre maximal de boîtes aux lettres pour les résultats de recherche qui peuvent être téléchargées à l’aide de l’outil d’exportation eDiscovery|100 000|
-|Taille maximale du fichier PST qui peut être exporté <p> **Remarque :** Si les résultats de recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche pour la boîte aux lettres sont exportés dans deux (ou plusieurs) fichiers PST distincts. Si vous choisissez d’exporter tous les résultats de la recherche dans un seul fichier PST, le fichier PST sera déposé dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Voir [Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery.](change-the-size-of-pst-files-when-exporting-results.md) Les résultats de la recherche provenant d’une boîte aux lettres spécifique ne sont pas répartis entre plusieurs fichiers PST, sauf si le contenu d’une seule boîte aux lettres est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST contenant tous les messages d’un même dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés dans l’ordre chronologique, de sorte qu’ils seront ajoutés dans des fichiers PST supplémentaires en fonction de la date d’envoi.|10 Go|
+|Taille maximale du fichier PST qui peut être exporté <p> **Remarque :** Si les résultats de recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche pour la boîte aux lettres sont exportés dans deux (ou plusieurs) fichiers PST distincts. Si vous choisissez d’exporter tous les résultats de la recherche dans un seul fichier PST, le fichier PST sera déposé dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Voir [Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery.](change-the-size-of-pst-files-when-exporting-results.md) Les résultats de la recherche provenant d’une boîte aux lettres spécifique ne sont pas répartis entre plusieurs fichiers PST, sauf si le contenu d’une seule boîte aux lettres est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST contenant tous les messages d’un même dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés dans l’ordre chronologique, de sorte qu’ils seront ajoutés dans des fichiers PST supplémentaires en fonction de la date d’envoi.|10 Go|
 |Évaluer la fréquence à laquelle les résultats de recherche provenant de boîtes aux lettres et de sites sont téléchargés vers un emplacement stockage Azure Microsoft.|Maximum de 2 Go par heure|
 |||
 
@@ -123,7 +123,7 @@ Le tableau suivant décrit les limites d’indexation qui peuvent entraîner le 
 |Sortie maximale de l’parseur|2 millions de caractères|Quantité maximale de texte provenant de l’indexeur indexé. Par exemple, si l’utilisateur a extrait 8 millions de caractères d’un document, seuls les 2 premiers millions de caractères sont indexés.|
 |Nombre maximal de jetons d’annotation|2 millions|Lorsqu’un message électronique est indexé, chaque mot est annoté avec différentes instructions de traitement qui spécifient comment ce mot doit être indexé. Chaque ensemble d’instructions de traitement est appelé jeton d’annotation. Pour maintenir la qualité de service dans Office 365, il existe une limite de 2 millions de jetons d’annotation pour un message électronique.|
 |Taille maximale du corps dans l’index|67 millions de caractères|Nombre total de caractères dans le corps d’un message électronique et toutes ses pièces jointes. Lorsqu’un message électronique est indexé, tout le texte du corps du message et de toutes les pièces jointes est concaté en une seule chaîne. La taille maximale de cette chaîne indexée est de 67 millions de caractères.|
-|Nombre maximal de jetons uniques dans le corps|1 million|Comme indiqué précédemment, les jetons sont le résultat de l’extraction de texte à partir du contenu, de la suppression des signes de ponctuation et des espaces, puis de sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seuls 4 d’entre eux sont des jetons uniques. Il existe une limite de 1 million de jetons uniques par message électronique, ce qui permet d’éviter que l’index ne soit trop grand avec des jetons aléatoires.|
+|Nombre maximal de jetons uniques dans le corps|1 million|Comme indiqué précédemment, les jetons sont le résultat de l’extraction de texte à partir du contenu, de la suppression des signes de ponctuation et des espaces, puis de sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seuls 4 d’entre eux sont des jetons uniques. Il existe une limite de 1 million de jetons uniques par message électronique, ce qui permet d’éviter que l’index ne soit trop grand avec des jetons aléatoires.|
 |||
 
 ## <a name="more-information"></a>Plus d’informations

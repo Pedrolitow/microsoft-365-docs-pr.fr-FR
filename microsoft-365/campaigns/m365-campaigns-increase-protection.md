@@ -18,17 +18,18 @@ ms.custom:
 - Adm_O365
 - MiniMaven
 - MSB365
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365
-ms.openlocfilehash: 96aee5716374fda43c0258c55ab22d425001b8b5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7890d25b337bd143d8a5c79f0a2994a81fca8caf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180516"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Renforcer la protection contre les menaces pour Microsoft 365 abonnement
 
@@ -42,9 +43,9 @@ Pour plus d’informations, voir [Le Score de sécurité Microsoft.](../security
 
 Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les programmes malveillants, mais vous pouvez augmenter cette protection en bloquant les pièces jointes avec des types de fichiers couramment utilisés pour les programmes malveillants. Pour faire monter en haut la protection contre les programmes malveillants dans la messagerie électronique :
 
-1. Connectez-vous <https://protection.office.com> avec vos informations d’identification de compte d’administrateur.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account credentials.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+2. Dans le volet de navigation de gauche, sous **Gestion des menaces,** choisissez **Stratégie** \> **anti-programme malveillant.**
 
 3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
 
@@ -82,7 +83,7 @@ Pour créer une règle de transport de messagerie :
 
 6. Cliquez sur **Enregistrer**.
 
-|Paramètre|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
+|Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
 |Nom|Règle anti-ransomware : avertir les utilisateurs|
 |Appliquez cette règle si . . .|N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .|
@@ -90,7 +91,7 @@ Pour créer une règle de transport de messagerie :
 |Faites les choses suivantes . . .|Avertir le destinataire avec un message|
 |Fournir le texte du message|N’ouvrez pas ces types de fichiers à partir de personnes que vous ne connaissez pas, car elles peuvent contenir des macros contenant du code malveillant.|
 
-Pour plus d’informations, voir :
+Pour plus d’informations, consultez :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -102,7 +103,7 @@ Les pirates informatiques qui accèdent à la boîte aux lettres d’un utilisat
 
 Pour créer une règle de transport de messagerie, regardez [cette courte vidéo](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) ou suivez les étapes suivantes :
 
-1. Dans la Centre d’administration Microsoft 365, cliquez **sur Centres d’administration** \> **Exchange**.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>cliquez **sur Centres d’administration** \> **Exchange**.
 
 2. Dans la catégorie **de flux de messagerie,** cliquez sur **Règles.**
 
@@ -114,7 +115,7 @@ Pour créer une règle de transport de messagerie, regardez [cette courte vidéo
 
 6. Cliquez sur **Enregistrer**.
 
-|Paramètre|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
+|Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -130,9 +131,9 @@ Nous vous recommandons de commencer avec cette protection en créant une straté
 
 Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, regardez cette courte vidéo de [formation](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)ou suivez les étapes suivantes :
 
-1. Accédez à <https://protection.office.com>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a>.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. Dans le volet de navigation de gauche, sous **Gestion des menaces,** choisissez **Stratégie**.
 
 3. Dans la page **Stratégie,** choisissez **Anti-hameçonnage.**
 
@@ -181,13 +182,13 @@ Si vous ne voyez pas encore la **page** d’installation avec des cartes dans vo
 
 ### <a name="set-up-safe-attachments-in-the-security--compliance-center"></a>Configurer des Coffre jointes dans le Centre de conformité & sécurité
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante en regardant simplement un message électronique. Microsoft Defender pour Office 365 inclut Coffre protection contre les pièces jointes, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en regardant un message électronique. Microsoft Defender pour Office 365 inclut Coffre protection contre les pièces jointes, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
 
 Pour créer une stratégie Coffre pièces jointes, regardez cette [courte](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)vidéo ou suivez les étapes suivantes :
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. Dans le volet de navigation de gauche, sous **Gestion des menaces,** choisissez **Stratégie**.
 
 3. Dans la page Stratégie, choisissez **Coffre pièces jointes.**
 
@@ -201,7 +202,7 @@ Pour créer une stratégie Coffre pièces jointes, regardez cette [courte](https
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Bloquer les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
+|Nom|Bloquez les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
 |Description|Bloquer les messages électroniques et pièces jointes actuels et futurs avec les programmes malveillants détectés.|
 |Enregistrer les pièces jointes d’une réponse anti-programme malveillant inconnue|Select **Block - Block the current and future emails and attachments with detected malware**.|
 |Rediriger la pièce jointe lors de la détection|Activer la redirection (sélectionnez cette case) <br/> Entrez le compte d’administrateur ou une boîte aux lettres configurée pour la mise en quarantaine. <br/> Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces jointes arrive à son moment ou si une erreur se produit (sélectionnez cette zone).|
@@ -221,9 +222,9 @@ Nous vous recommandons d’y faire les choses suivantes :
 
 Pour configurer des Coffre, regardez cette courte vidéo de [formation](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)ou suivez les étapes suivantes :
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. Dans le volet de navigation de gauche, sous **Gestion des menaces,** choisissez **Stratégie**.
 
 3. Dans la page Stratégie, choisissez **Coffre liens.**
 
@@ -273,7 +274,7 @@ Une fois la fonctionnalité désactivée, vous pouvez rechercher des fichiers, d
 
 1. Go to the admin center at <https://admin.microsoft.com> and then choose **SharePoint** under **Admin centers** in the left nav.
 2. Dans le centre SharePoint’administration, allez à **Partage de** \> **stratégies.**
-3. Dans la **page** Partage, sous Liens de fichiers et de dossiers, sélectionnez Des personnes **spécifiques,** et sous Paramètres avancés pour les liens « Tout le monde », sélectionnez Ces liens doivent **expirer** dans ce nombre de jours et taper dans 14 (ou un autre nombre de jours pour limiter la durée de vie du lien). 
+3. Dans la **page** Partage, sous Liens de fichiers et de dossiers, sélectionnez Des personnes **spécifiques,** et sous Paramètres avancés pour les liens « Tout le monde », sélectionnez Ces liens doivent **expirer** dans ce nombre de jours, puis tapez 14 (ou un autre nombre de jours pour limiter la durée de vie du lien). 
 
    ![Choisissez des personnes spécifiques et définissez l’expiration du lien sur 14 jours.](../media/anyonelinks.png)
 
@@ -289,8 +290,9 @@ La figure suivante illustre les stratégies par défaut incluses dans Microsoft 
 
 Vous pouvez empêcher les membres de votre organisation de partager leurs calendriers, ou vous pouvez également gérer ce qu’ils peuvent partager. Par exemple, vous pouvez limiter le partage aux heures de libre/occupé uniquement.
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Paramètres** \> **Org Paramètres**.
-2. Dans la page  **Services,** choisissez Calendrier et choisissez si les membres de votre organisation peuvent partager leurs calendriers avec des personnes extérieures qui ont des Office 365 ou des Exchange, ou avec n’importe qui.
+1. Go to the admin center at <https://admin.microsoft.com> and choose **Paramètres** \> **Org Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>.
+
+1. Choisissez **Calendrier** et choisissez si les membres de votre organisation peuvent partager leurs calendriers avec des personnes extérieures Office 365 ou Exchange, ou avec n’importe qui.
 
    Si vous choisissez l’option partager avec tout le monde, vous pouvez également décider de partager uniquement des informations de libre/occupé.
 

@@ -26,12 +26,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Découvrez les différents types de groupes et comment les utiliser avec les différentes fonctionnalités de collaboration de Microsoft 365.
-ms.openlocfilehash: 8edbd9cea5e6dcfe775ada42d164e9df81436ec7f7d461d9035a3fb1e98fd0a3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb5eca7ae7ad01488c13222984eee349e5554d26
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176508"
 ---
 # <a name="email-collaboration"></a>Collaborer par message électronique
 
@@ -71,7 +71,7 @@ Le tableau suivant vous donne un coup d’œil rapide sur les différents types 
 
 [Gérer des groupes de distribution](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
     
-[Utiliser des Microsoft 365 de sites plutôt que des boîtes aux lettres de site](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)
+[Utiliser Microsoft 365 groupes de messagerie au lieu des boîtes aux lettres de site](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)
     
 [Créer des boîtes aux lettres partagées dans Microsoft 365](create-a-shared-mailbox.md)
     

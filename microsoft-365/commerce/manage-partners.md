@@ -16,15 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire.
 ms.date: 04/13/2021
-ms.openlocfilehash: 024f8c4154c4e646a5a72fbc0d1b0f980b8b5c8eb854e723d84dc0f5f464911c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181577"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations de partenariat
 
@@ -32,11 +33,11 @@ Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifi�
 
 1. Les administrateurs recherchent et contactent un partenaire à l’aide du formulaire à <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> l’adresse .
 2. Les partenaires envoient une demande par courrier électronique aux clients pour établir une relation de partenaire.
-3. Les clients acceptent l’invitation Centre d’administration Microsoft 365 et commencent à travailler avec le partenaire.
+3. Les clients acceptent l’invitation Centre d'administration Microsoft 365 et commencent à travailler avec le partenaire.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Que peut faire un partenaire pour mon organisation ou mon établissement scolaire ?
 
@@ -65,7 +66,7 @@ Le partenaire vous contacte et vous donne la possibilité d’en savoir plus à 
 
 Une fois que vous avez trouvé un partenaire et décidé de travailler avec lui, il vous envoie une invitation par courrier électronique.
 
-1. Dans l’e-mail, sélectionnez le lien vers le Centre d’administration Microsoft 365.
+1. Dans l’e-mail, sélectionnez le lien pour y <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
 2. Dans la page **Accepter & autoriser** le partenaire, sélectionnez le lien du contrat client **Microsoft** et lisez le document.
 3. Cochez la case pour reconnaître que vous avez lu le contrat.
 4. Sélectionnez **Accepter & autoriser**.
@@ -75,7 +76,7 @@ Une fois que vous avez trouvé un partenaire et décidé de travailler avec lui,
 
 Si vous avez déjà un partenaire mais que vous n’avez pas encore signé de contrat client Microsoft, vous devez accepter le contrat avant qu’il puisse effectuer des achats ou gérer vos abonnements en votre nom.
 
-1. Si vous recevez un e-mail de votre partenaire, sélectionnez le lien pour Centre d’administration Microsoft 365 ou sur la page Accepter <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">le</a> contrat.
+1. Si vous recevez un e-mail de votre partenaire, sélectionnez le lien pour Centre d'administration Microsoft 365 ou sur la page Accepter <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">le</a> contrat.
 2. Sélectionnez le lien du **contrat client Microsoft** et lisez le document.
 3. Cochez la case pour reconnaître que vous avez lu le contrat.
 4. Sélectionnez **Accepter**.

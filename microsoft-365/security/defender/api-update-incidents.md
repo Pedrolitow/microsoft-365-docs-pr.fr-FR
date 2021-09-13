@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4a083f4d891ef51b3156c2ad407a55de597cd6a754fa77d9d96fe5d6e3cffe4d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177499"
 ---
 # <a name="update-incidents-api"></a>API mettre à jour les incidents
 
@@ -82,7 +82,7 @@ Propriété|Type|Description
 ---|---|---
 statut|Énum|Spécifie l’état actuel de l’incident. Les valeurs possibles `Active` sont : , et `Resolved` `Redirected` .
 assignedTo|string|Propriétaire de l’incident.
-classification|Énum|Spécification de l’incident. Les valeurs possibles sont les suivantes : `Unknown`, `FalsePositive` et `TruePositive`.
+classification|Énum|Spécification de l’incident. Les valeurs possibles sont `Unknown`, `FalsePositive` et `TruePositive`.
 détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
 étiquettes|liste de chaînes|Liste des balises d’incident.
 comment|string|Commentaire à ajouter à l’incident.

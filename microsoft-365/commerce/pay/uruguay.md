@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 776178c6354b38dcd791db035d14ca589f191029ac473050183d526595e77114
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: edd87f0a584197306dd57472f8bb49ce67b6d471
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180164"
 ---
 # <a name="payment-information-for-uruguay"></a>Informations de paiement pour l’Uruguay
 

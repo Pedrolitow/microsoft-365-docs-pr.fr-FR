@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: f358e321f7e81eff425fe0f0db1be0f3348d2585
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58508249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179403"
 ---
 # <a name="alert-resource-type"></a>Type de ressource Alerte
 
@@ -52,7 +52,7 @@ ms.locfileid: "58508249"
 |[Liste des domaines associés](get-alert-related-domain-info.md)|Collection de domaines|Ré lister les URL associées à l’alerte.|
 |[Liste des fichiers associés](get-alert-related-files-info.md)|[Collection de](files.md) fichiers|Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)|
 |[Liste des IP associées](get-alert-related-ip-info.md)|Collection d’adresses IP|List IPs that are associated with the alert.|
-|[Obtenir des ordinateurs associés](get-alert-related-machine-info.md)|[Ordinateur](machine.md)|[L’ordinateur](machine.md) associé à [l’alerte](alerts.md).|
+|[Obtenir les ordinateurs associés](get-alert-related-machine-info.md)|[Ordinateur](machine.md)|[L’ordinateur](machine.md) associé à [l’alerte](alerts.md).|
 |[Obtenir des utilisateurs associés](get-alert-related-user-info.md)|[Utilisateur](user.md)|Utilisateur [associé](user.md) à [l’alerte.](alerts.md)|
 |
 
@@ -64,7 +64,7 @@ ms.locfileid: "58508249"
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|String|ID d’alerte.|
+|id|Chaîne|ID d’alerte.|
 |title|String|Titre de l’alerte.|
 |description|String|Description de l’alerte.|
 |alertCreationTime|Nullable DateTimeOffset|Date et heure (au UTC) de création de l’alerte.|
@@ -73,24 +73,24 @@ ms.locfileid: "58508249"
 |lastUpdateTime|Nullable DateTimeOffset|Date et heure (au UTC) de la dernière mise à jour de l’alerte.|
 |resolvedTime|Nullable DateTimeOffset|Date et heure à laquelle l’état de l’alerte a été modifié en « Résolu ».|
 |incidentId|Nullable Long|ID [d’incident](view-incidents-queue.md) de l’alerte.|
-|investigationId|Nullable Long|ID [d’examen](automated-investigations.md) lié à l’alerte.|
-|investigationState|Nullable, enum|L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
-|assignedTo|String|Propriétaire de l’alerte.|
-|rbacGroupName|String|Nom du groupe d’appareils RBAC.|
-|mitreTechniques|String|ID Enterprise technique mitre.|
-|relatedUser|String|Détails de l’utilisateur associé à une alerte spécifique.|
+|investigationId|Nullable Long|ID [d’investigation](automated-investigations.md) lié à l’alerte.|
+|investigationState|Nullable, enum|L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|assignedTo|Chaîne|Propriétaire de l’alerte.|
+|rbacGroupName|Chaîne|Nom du groupe d’appareils RBAC.|
+|mitreTechniques|Chaîne|ID Enterprise technique mitre.|
+|relatedUser|Chaîne|Détails de l’utilisateur associé à une alerte spécifique.|
 |Sévérité |Énum|Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
-|status|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).|
+|statut|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).|
 |classification|Nullable, enum|Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).|
 |détermination|Nullable, enum|Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
 |category|String|Catégorie de l’alerte.|
-|detectionSource|String|Source de détection.|
-|threatFamilyName|String|Famille de menaces.|
-|threatName|String|Nom de la menace.|
-|machineId|String|ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.|
-|computerDnsName|String|[nom complet](machine.md) de l’ordinateur.|
-|aadTenantId|String|ID Azure Active Directory de l’autre.|
-|détecteurId|String|ID du détecteur qui a déclenché l’alerte.|
+|detectionSource|Chaîne|Source de détection.|
+|threatFamilyName|Chaîne|Famille de menaces.|
+|threatName|Chaîne|Nom de la menace.|
+|machineId|Chaîne|ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.|
+|computerDnsName|Chaîne|[nom complet](machine.md) de l’ordinateur.|
+|aadTenantId|Chaîne|ID Azure Active Directory de l’ID de l’ID de l’Azure Active Directory.|
+|détecteurId|Chaîne|ID du détecteur qui a déclenché l’alerte.|
 |commentaires|Liste des commentaires d’alerte|L’objet Comment de l’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.|
 |Évidence|Liste des preuves d’alerte|Preuve liée à l’alerte. Voir l’exemple ci-dessous.|
 |

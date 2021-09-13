@@ -17,17 +17,17 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 1ee64608e9ce6ce24dc40f1729303ef99b162cab
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182009"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -64,7 +64,7 @@ Déléguée (compte professionnel ou scolaire)|RemediationTask.Read.Read|\'Lire 
 Propriété (id)|Type de données|Description|Exemple
 :---|:---|:---|:---
 id|Chaîne|ID d’appareil|w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName|String|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
+computerDnsName|Chaîne|Nom du périphérique|PC-SRV2012R2Foo.UserNameVldNet.local
 osPlatform|Chaîne|Système d’exploitation d’appareil|WindowsServer2012R2
 rbacGroupName|Chaîne|Nom du groupe d’appareils associé à cet appareil|Serveurs
 
@@ -120,4 +120,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 - [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

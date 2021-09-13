@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment vous inscrire à Microsoft 365 Business Premium (précédemment Microsoft 365 Business).
-ms.openlocfilehash: c0ff8a92e240c7b00b505fcd6acacff9c802c81ab7a3ee1be9ed62b9bd2e4a12
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Découvrez comment vous inscrire à Microsoft 365 Business Premium (précédemment appelé Microsoft 365 Business).
+ms.openlocfilehash: 339c0571d1deec988ad706db3aadcd1ca7cc679a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180620"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>S’inscrire à Microsoft 365 Business Premium abonnement
 
@@ -35,9 +36,9 @@ ms.locfileid: "53803529"
 
 ## <a name="try-it"></a>Essayez !
 
-Suivez ces étapes pour vous inscrire à Microsoft 365 Business Premium (précédemment Microsoft 365 Business) :
+Suivez ces étapes pour vous inscrire à Microsoft 365 Business Premium (précédemment appelé Microsoft 365 Business) :
 
-1. Pour vous inscrire à Microsoft 365 Business Premium, recherchez-le en ligne, puis sélectionnez-le.
+1. Pour vous inscrire à Microsoft 365 Business Premium, recherchez-le en ligne et sélectionnez-le.
 2. Choose  **For business,** and then  **Buy now**.
 3. Entrez votre adresse e-mail personnelle, **sélectionnez Suivant,** puis **Configurer le compte.**
 4. Entrez votre nom, votre numéro de téléphone et votre nom de société. Si vous&#39;souhaitez obtenir de l’aide d’un partenaire Microsoft, cochez la case en regard de je souhaite que **Microsoft partage mes informations.** Sélectionnez  **Suivant**.
@@ -47,4 +48,4 @@ Suivez ces étapes pour vous inscrire à Microsoft 365 Business Premium (précé
 8. Entrez le nombre d’utilisateurs, choisissez un plan de facturation, puis sélectionnez  **Suivant**.
 9.  Entrez l'&#39;de votre entreprise,  **puis** Suivant .
 10. Entrez les informations de votre carte de crédit, puis **commandez.** Après quelques instants, votre compte sera créé.
-11. À ce stade, vous pouvez sélectionner **Continuer** à configurer le compte ou vous pouvez vous Centre d’administration Microsoft 365 et terminer l’installation ultérieurement.
+11. À ce stade, vous pouvez sélectionner **Continuer** à configurer <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a> le compte ou vous pouvez vous Centre d'administration Microsoft 365 et terminer l’installation ultérieurement.

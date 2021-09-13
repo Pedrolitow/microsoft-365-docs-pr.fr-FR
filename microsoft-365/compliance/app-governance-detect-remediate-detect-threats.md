@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Corrigez les menaces liées aux applications.
 ms.openlocfilehash: 103616c9bee47455b75e0750194d876fc7a13600
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181462"
 ---
 # <a name="remediate-app-threats"></a>Corriger les menaces liées aux applications
 

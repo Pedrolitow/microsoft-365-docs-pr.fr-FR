@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Démarrage avec la détection et la correction des menaces d’application.
 ms.openlocfilehash: a57d888d2494fdcdc52e69b3738edba198b6363f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181456"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>Démarrage avec la détection et la correction des menaces d’application
 

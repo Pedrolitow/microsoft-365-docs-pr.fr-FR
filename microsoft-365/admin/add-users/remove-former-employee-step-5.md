@@ -26,15 +26,15 @@ search.appverid:
 - MOE150
 description: Suivez ces étapes pour bloquer l’accès à l’appareil mobile d’un ancien employé.
 ms.openlocfilehash: 8c5b279bc85d6c99fd8722d1f9fd4d4b3757e793
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177020"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>Étape 5 : effacer et bloquer l’appareil mobile d’un ancien employé
 
-Si votre ancien employé avait un téléphone d’organisation, vous pouvez utiliser le Centre d’administration Exchange pour effacer et bloquer cet appareil afin que toutes les données de l’organisation sont supprimées de l’appareil et qu’il ne puisse plus se connecter à Office 365. Si votre organisation utilise Basic Mobility and Security pour gérer les appareils mobiles, vous pouvez effacer et bloquer ces appareils à l’aide de Basic Mobility and Security.
+Si votre ancien employé avait un téléphone d’organisation, vous pouvez utiliser le Centre d’administration Exchange pour effacer et bloquer cet appareil afin que toutes les données de l’organisation sont supprimées de l’appareil et qu’elle ne puisse plus se connecter à Office 365. Si votre organisation utilise Basic Mobility and Security pour gérer les appareils mobiles, vous pouvez effacer et bloquer ces appareils à l’aide de Basic Mobility and Security.
 
 ## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>Effacer l’appareil mobile à l’aide Exchange d’administration
 
@@ -42,7 +42,7 @@ Si votre ancien employé avait un téléphone d’organisation, vous pouvez util
 2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
 3. Sélectionnez l’utilisateur, puis sous **Appareils mobiles,** **sélectionnez Afficher les détails.**
 4. Dans la page **Détails de l’appareil** mobile, sous **Appareils** mobiles, sélectionnez l’appareil mobile, sélectionnez Effacer le périphérique de effacement ![ des données, puis ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) sélectionnez **Bloquer**.
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
    > [!TIP]
    > Assurez-vous de supprimer ou de désactiver l’utilisateur de votre service Blackberry Enterprise local. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur.
 

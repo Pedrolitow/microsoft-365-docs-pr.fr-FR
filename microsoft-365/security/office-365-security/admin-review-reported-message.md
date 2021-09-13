@@ -14,11 +14,11 @@ description: Découvrez comment passer en revue les messages signalés et commen
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572466"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177403"
 ---
 # <a name="admin-review-for-reported-messages"></a>Révision par l’administrateur des messages signalés
 
@@ -64,7 +64,7 @@ Le message signalé sera marqué comme faux positif ou faux négatif, et un mess
 
 ## <a name="customize-the-messages-used-to-notify-users"></a>Personnaliser les messages utilisés pour avertir les utilisateurs
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** User reported \> **message settings** in the **Others** section.
+1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **Policies** User reported message \> **settings** in the **Others** section.
 
 2. Dans la page Soumissions d’utilisateurs, si vous souhaitez  spécifier le nom complet de l’expéditeur, cochez la case Spécifier l’adresse de messagerie Office 365 à utiliser en tant qu’expéditeur dans la section **Notifications** par courrier électronique pour les résultats de l’avis de l’administrateur, puis entrez le nom que vous souhaitez utiliser.  L’adresse de messagerie qui sera visible dans Outlook et toutes les réponses y seront.
 

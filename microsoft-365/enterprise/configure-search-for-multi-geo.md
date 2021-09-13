@@ -14,11 +14,11 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment configurer la recherche dans un environnement multigéogé. Seuls certains clients, tels que OneDrive, peuvent renvoyer des résultats dans un environnement multigéogé.
 ms.openlocfilehash: a991638e5f0b1270950b50823def61eb4d60669b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179748"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurer la recherche pour Microsoft 365 Multi-Geo
 
@@ -66,7 +66,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué fonctionn
 <thead>
 <tr class="header">
 <th align="left">Fonctionnalité</th>
-<th align="left">Mode de fonctionnement</th>
+<th align="left">Fonctionnement</th>
 <th align="left">Solution de contournement</th>
 </tr>
 </thead>

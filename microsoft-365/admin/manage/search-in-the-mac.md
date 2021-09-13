@@ -1,5 +1,5 @@
 ---
-title: Recherchez des tâches ou de la documentation dans le Centre d’administration Microsoft 365
+title: Recherchez des tâches ou de la documentation dans le Centre d'administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 description: Découvrez comment utiliser la fonctionnalité de recherche dans le Centre d’administration pour obtenir des résultats meilleurs et plus rapides.
 ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178924"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Effectuer une recherche dans le Centre d’administration Microsoft 365
 
 En tant qu’administrateur d’Microsoft 365 organisation, vous pouvez utiliser la recherche pour rechercher des utilisateurs, effectuer des actions, accéder à différents paramètres et lire la documentation. Avec les nouvelles fonctionnalités de recherche, la vitesse de recherche a été améliorée et vous pouvez désormais effectuer des recherches à partir de chaque page du Centre d’administration. La zone de recherche a été déplacée vers la zone bannière en haut du centre d’administration. Vous pouvez utiliser le raccourci **Alt+S pour** utiliser la recherche à partir de n’importe quelle page.
 
-:::image type="content" source="../../media/search-bar.png" alt-text="Capture d’écran : barre de recherche dans la Centre d’administration Microsoft 365":::
+:::image type="content" source="../../media/search-bar.png" alt-text="Capture d’écran : barre de recherche dans la Centre d'administration Microsoft 365":::
 
 Les résultats de la recherche sont organisés en différentes catégories. La plupart des catégories sont des éléments du Centre d’administration. Par exemple, les utilisateurs, les groupes, les boîtes aux lettres partagées ou les domaines. D’autres catégories indiquent les endroits où vous pouvez naviguer, les actions que vous pouvez prendre ou les paramètres de niveau application que vous pouvez modifier. Il existe également une catégorie liée à la documentation.
 
@@ -48,7 +48,7 @@ Si vous sélectionnez le menu à trois points (plus d’actions) à côté de le
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 
-**Astuces pour améliorer les résultats de la recherche utilisateur**
+**Astuces pour améliorer les résultats de recherche des utilisateurs**
 
 - Assurez-vous d’épeler correctement les noms des utilisateurs car les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionneront, mais une faute d’orthographe, comme Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
 - Pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.

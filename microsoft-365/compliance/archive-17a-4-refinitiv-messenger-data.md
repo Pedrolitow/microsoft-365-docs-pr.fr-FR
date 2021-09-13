@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur 17a-4 Refinitiv Eikon Messenger DataParser pour importer et archiver des données Refinitiv Eikon Messenger dans Microsoft 365.
 ms.openlocfilehash: ec3a32a1fcf08747e8ad67983ae0c0aff2650673
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178059"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>Configurer un connecteur pour archiver les données Refinitiv Eikon Messenger
 
-Utilisez [Refinitiv Eikon Messenger DataParser](https://www.17a-4.com/refinitiv-messenger-dataparser/) de 17a-4 LLC pour importer et archiver des données de Refinitiv Eikon Messenger vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur Refinitiv Eikon Messenger configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Refinitiv Eikon Messenger DataParser convertit les données Refinitiv Eikon Messenger au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
+Utilisez [Refinitiv Eikon Messenger DataParser](https://www.17a-4.com/refinitiv-messenger-dataparser/) de 17a-4 LLC pour importer et archiver des données de Refinitiv Eikon Messenger vers les boîtes aux lettres des utilisateurs de votre organisation Microsoft 365. DataParser inclut un connecteur Refinitiv Eikon Messenger configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Refinitiv Eikon Messenger DataParser convertit les données Refinitiv Eikon Messenger au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
 Une fois que les données Refinitiv Eikon Messenger sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Refinitiv Eikon Messenger pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -35,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Régulièrement, les éléments Refinitiv Eikon Messenger sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
-3. Le connecteur Refinitiv Eikon Messenger DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages à un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Refinitiv Eikon Messenger DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Un sous-dossier du dossier Boîte de réception nommé **Refinitiv Eikon Messenger DataParser** est créé dans les boîtes aux lettres utilisateur et les éléments Refinitiv Eikon Messenger sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque élément Refinitiv Eikon Messenger contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
@@ -77,6 +77,6 @@ Après avoir créé un connecteur Refinitiv Eikon Messenger DataParser, vous pou
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

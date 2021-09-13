@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez comment Exchange Online et Microsoft 365 transport TLS (Transport Layer Security) et FS (Transport Layer Security) pour sécuriser les communications électroniques. Obtenez également des informations sur le certificat émis par Microsoft pour Exchange Online.
-ms.openlocfilehash: ff2b7bf948e9ceead83b3d871073eb9be9c52d6a3898437212f717ff5cd4493e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895270"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175907"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie
 
@@ -96,7 +96,7 @@ Le nouveau certificat nécessite une connexion aux points de terminaison de la n
 
 1. Dans la fenêtre qui s’affiche, choisissez **Récupérer.**
 
-1. Lorsque l’utilitaire termine sa vérification, il renvoie un état. Si l’état affiche **OK,** votre serveur de messagerie peut valider correctement le nouveau certificat. Si ce n’est pas le cas, vous devez déterminer ce qui provoque l’échec des connexions. Vous devez probablement mettre à jour les paramètres d’un pare-feu. La liste complète des points de terminaison qui doivent être accessibles est la suivante :
+1. Lorsque l’utilitaire termine sa vérification, il renvoie un état. Si l’état affiche **OK,** votre serveur de messagerie peut valider correctement le nouveau certificat. Si ce n’est pas le cas, vous devez déterminer la cause de l’échec des connexions. Vous devez probablement mettre à jour les paramètres d’un pare-feu. La liste complète des points de terminaison qui doivent être accessibles est la suivante :
     - ocsp.globalsign.com
     - crl.globalsign.com
     - secure.globalsign.com   

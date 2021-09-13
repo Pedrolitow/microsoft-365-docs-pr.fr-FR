@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Découvrez comment créer et gérer des stratégies de gestion des données personnelles de votre organisation dans Microsoft 365, répondre aux alertes et résoudre les problèmes.
 ms.openlocfilehash: 49f772119cfc25284fecd66b2f3a79e063f11c09
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177859"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Créer et gérer des stratégies dans la gestion de la confidentialité (aperçu)
 
@@ -39,11 +39,11 @@ Pour en savoir plus sur les fonctionnalités de chaque modèle, voir ci-dessous.
 
 ### <a name="data-overexposure"></a>Surexposure des données
 
-La gestion de la confidentialité peut vous aider à détecter et gérer les situations dans lesquelles les données que vous avez stockées ne sont pas suffisamment sécurisées. Par exemple, si l’accès à un site interne est ouvert à un groupe trop large ou si vos paramètres d’autorisation n’ont pas été tenus à jour, les données personnelles stockées sur ce site peuvent être vulnérables à une violation. Vous pouvez utiliser le modèle de stratégie de données de la gestion de la confidentialité pour évaluer vos données et vous avertir des problèmes potentiels.
+La gestion de la confidentialité peut vous aider à détecter et gérer les situations dans lesquelles les données que vous avez stockées ne sont pas suffisamment sécurisées. Par exemple, si l’accès à un site interne est ouvert à un groupe trop large ou si vos paramètres d’autorisation n’ont pas été tenus à jour, les données personnelles stockées sur ce site peuvent être vulnérables à une violation. Vous pouvez utiliser le modèle de stratégie de données de gestion de la confidentialité pour évaluer vos données et vous avertir des problèmes potentiels.
 
 ### <a name="data-transfer"></a>Transfert de données
 
-Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple s’ils sont envoyés via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
+Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple si elles sont envoyées via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
 
 > [!NOTE]
 > Pendant la prévisualisation publique, certains clients exécutant des stratégies de transfert de données pour détecter les transferts entre régions peuvent rencontrer des problèmes de synchronisation qui ont un impact sur la visibilité des correspondances de stratégie dans les données Exchange et Teams données. Nous vous recommandons de vous concentrer sur SharePoint et OneDrive données lors de l’aperçu de ce type de stratégie.
@@ -64,7 +64,7 @@ Il existe deux chemins d’accès pour créer des stratégies de gestion de la c
 
 Pour commencer immédiatement avec une stratégie, sélectionnez l’un des trois types de stratégie pré-définies. Pour passer en revue les détails de l’un d’eux, vous pouvez sélectionner les paramètres d’affichage pour afficher les propriétés spécifiques qui sont à l’origine de la stratégie, y compris les types de données, les emplacements de données et les conditions qui déclenchent des correspondances de stratégie.
 
-Lorsque vous créez une stratégie directement à partir d’un modèle, de nombreux paramètres sont automatiquement choisis. Cela inclut l’option d’option par défaut de la stratégie. Si vous souhaitez afficher un aperçu de la stratégie en action avant de l’activer entièrement, recherchez-la dans votre liste après sa création, modifiez la stratégie et basculez-la en mode test. Pour plus d’informations, voir [Tester votre stratégie.](#test-your-policy)
+Lorsque vous créez une stratégie directement à partir d’un modèle, de nombreux paramètres sont automatiquement choisis. Cela inclut l’option d’option par défaut de la stratégie. Si vous souhaitez afficher un aperçu de la stratégie en action avant de l’activer entièrement, recherchez-la dans votre liste après sa création, modifiez la stratégie et basculez-la en mode test. Pour plus d’informations, [voir Tester votre stratégie.](#test-your-policy)
 
 ### <a name="create-custom-policy"></a>Créer une stratégie personnalisée
 
@@ -88,7 +88,7 @@ Une fois que vous avez passé en revue tous les paramètres de l’Assistant, ex
 
 Lors de la configuration d’une stratégie personnalisée, vous serez invité à sélectionner les types de données que votre stratégie doit surveiller. Les options sont les suivantes :
 
-- **Groupes de classification**: liste d’ensembles de données utilisables dans une recherche en fonction des principales réglementations en matière de confidentialité, telles que le R GDPR ou la LOI AMÉRICAINE. Afficher les détails d’un groupe pour voir les types d’informations sensibles qu’il couvre. Sélectionnez un ou plusieurs de ces ensembles pour les utiliser tels qu’ils sont. Les groupes actuellement disponibles sont les suivants :
+- **Groupes de classification**: liste d’ensembles de données utilisables dans une recherche en fonction des principales réglementations en matière de confidentialité, telles que le R GDPR ou hipaa. Afficher les détails d’un groupe pour voir les types d’informations sensibles qu’il couvre. Sélectionnez un ou plusieurs de ces ensembles pour les utiliser tels qu’ils sont. Les groupes actuellement disponibles sont les suivants :
   - Australia Health Records Act (HRIP Act) Enhanced
   - Amélioration de la loi sur la protection de la vie privée en Australie
   - (UE) Règlement général sur la protection des données (R GDPR) amélioré
@@ -117,7 +117,7 @@ La fonctionnalité de notification par courrier électronique est contrôlée au
 
 ## <a name="view-policy-details"></a>Afficher les détails de la stratégie
 
-Une fois votre stratégie créée, sélectionnez-la sur la page **principale Stratégies** pour voir sa vue d’ensemble complète. La page de détails de stratégie fournit des informations sur vos données, vous permet d’afficher du contenu sur des correspondances de stratégie spécifiques et vous donne des conseils sur les étapes suivantes. Si votre stratégie s’exécute en mode test, cette page est également l’endroit où vous pouvez activer votre stratégie lorsque le test est terminé.
+Une fois votre stratégie créée, sélectionnez-la sur la page **principale Stratégies** pour voir sa vue d’ensemble complète. La page de détails de stratégie fournit des informations sur vos données, vous permet d’afficher du contenu sur des correspondances de stratégie spécifiques et vous donne des conseils sur les étapes suivantes. Si votre stratégie est en cours d’exécution en mode test, cette page est également l’endroit où vous pouvez activer votre stratégie lorsque le test est terminé.
 
 Une fois que votre stratégie est active, vous pouvez continuer à consulter sa page de détails de stratégie pour voir les informations en cours sur les domaines problématiques, la gravité et les tendances des alertes, ainsi que les mesures correctives prises.
 
@@ -137,9 +137,9 @@ Après avoir évalué une alerte dans la  liste, vous pouvez utiliser l’action
 
 ### <a name="issues"></a>Problèmes
 
-Comme décrit dans la section Alertes, des problèmes sont créés lors de l’évaluation des alertes concernant les correspondances de stratégie. Pour suivre et résoudre les problèmes indiqués, visitez la page Problèmes. À partir de là, vous pouvez examiner les problèmes individuels, examiner les conditions d’origine, examiner les données et prendre les mesures nécessaires pour fermer le cas.
+Comme décrit dans la section Alertes, des problèmes sont créés lors de l’évaluation des alertes concernant les correspondances de stratégie. Pour suivre et résoudre les problèmes indiqués, visitez la page Problèmes. À partir de là, vous pouvez examiner les problèmes individuels, examiner les conditions d’analyse, examiner les données et prendre les mesures nécessaires pour fermer le cas.
 
-Cette page fournit la liste de tous les problèmes d’ouverture. Les problèmes sont répertoriés par nom et triés par gravité pour vous aider à hiérarchiser les cas, y compris les catégories élevée, moyenne et faible, ainsi que les catégories non classées. Sélectionnez un problème dans la liste pour examiner son contenu et prendre des mesures pour le résoudre. Vous pouvez évaluer la gravité des problèmes non signés lors de l’examen.
+Cette page fournit la liste de tous les problèmes ouverts. Les problèmes sont répertoriés par nom et triés par gravité pour vous aider à hiérarchiser les cas, y compris les catégories élevée, moyenne et faible, ainsi que les catégories non classées. Sélectionnez un problème dans la liste pour examiner son contenu et prendre des mesures pour le résoudre. Vous pouvez évaluer la gravité des problèmes non signés lors de l’examen.
 
 #### <a name="issue-overview"></a>Vue d’ensemble du problème
 

@@ -21,11 +21,11 @@ description: Cette rubrique vous dirige vers la configuration recommandée pour 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 838b9b01790b85c3903206285356cc6c22507821
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179116"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre locataire Microsoft 365 pour renforcer la sécurité
 
@@ -53,7 +53,7 @@ Le portail Microsoft 365 Defender inclut des fonctionnalités qui protègent vot
 |Zone|Stratégie par défaut ?|Recommandation|
 |---|---|---|
 |**Anti-hameçonnage**|Oui|Configurez la stratégie anti-hameçonnage par défaut comme décrit ici : Configurez les paramètres de [protection anti-hameçonnage](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)dans EOP et Defender pour Office 365 . <p> Plus d’informations : <ul><li>[Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Paramètres de stratégie anti-hameçonnage recommandés dans Microsoft Defender pour Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Perspicacité de l'usurpation d'identité](impersonation-insight.md)</li><li>[Informations sur l’usurpation d’intelligence dans EOP](learn-about-spoof-intelligence.md)</li><li>[Gérer la liste d’attente/d’accès au client](tenant-allow-block-list.md).</li></ul>|
-|**Moteur anti-programme malveillant**|Oui|Configurez la stratégie anti-programme malveillant par défaut comme décrit ici : Configurer les paramètres de [protection anti-programme malveillant dans EOP.](protect-against-threats.md#part-1---anti-malware-protection-in-eop) <p> Plus d’informations : <ul><li>[Protection contre les programmes malveillants](anti-malware-protection.md)</li><li>[Paramètres de stratégie anti-programme malveillant recommandés](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configurer des stratégies anti-programme malveillant](configure-anti-malware-policies.md)</li></ul>|
+|**Moteur anti-programme malveillant**|Oui|Configurez la stratégie anti-programme malveillant par défaut comme décrit ici : Configurez les paramètres de [protection anti-programme malveillant dans EOP.](protect-against-threats.md#part-1---anti-malware-protection-in-eop) <p> Plus d’informations : <ul><li>[Protection contre les programmes malveillants](anti-malware-protection.md)</li><li>[Paramètres de stratégie anti-programme malveillant recommandés](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[Configurer des stratégies anti-programme malveillant](configure-anti-malware-policies.md)</li></ul>|
 |**Pièces jointes sécurisées dans Defender pour Office 365**|Non|Configurez les paramètres globaux des pièces jointes Coffre et créez une stratégie de pièces jointes Coffre comme décrit ici : Configurez les paramètres des pièces [jointes](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)Coffre dans Microsoft Defender pour Office 365 . <p> Plus d’informations : <ul><li>[Paramètres recommandés Coffre pièces jointes](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Coffre Pièces jointes dans Microsoft Defender pour Office 365](safe-attachments.md)</li><li>[Définir des stratégies de pièces jointes fiables](set-up-safe-attachments-policies.md)</li><li>[Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Documents sécurisés dans Microsoft 365 E5](safe-docs.md)</li></ul>|
 |**Coffre Liens dans Microsoft Defender pour Office 365**|Non|Configurez les paramètres globaux des liens Coffre et créez une stratégie de liens Coffre comme décrit ici : Configurer les [paramètres](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)de liens Coffre dans Microsoft Defender pour Office 365 . <p> Plus d’informations : <ul><li>[Paramètres Coffre liens recommandés](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Configuration des stratégies de liens fiables](set-up-safe-links-policies.md)</li><li>[Coffre Liens dans Microsoft Defender pour Office 365](safe-links.md)</li><li>[Configurer les paramètres globaux pour Coffre liens vers Microsoft Defender pour Office 365](configure-global-settings-for-safe-links.md)</li></ul>|
 |**Anti-courrier indésirable (filtrage du courrier)**|Oui|Configurez la stratégie anti-courrier indésirable par défaut comme décrit ici : Configurer les paramètres de [protection anti-courrier](protect-against-threats.md#part-3---anti-spam-protection-in-eop) indésirable dans EOP <p> Plus d’informations : <ul><li>[Paramètres de stratégie anti-courrier indésirable recommandés](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[Protection contre le courrier indésirable dans EOP](anti-spam-protection.md)</li><li>[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)</li></ul>|
@@ -99,7 +99,7 @@ Recommandations de Microsoft pour la configuration SharePoint sites d’équipe 
 
 SharePoint sites d’équipe configurés au niveau de référence autorisent le partage de fichiers avec des utilisateurs externes à l’aide de liens d’accès anonyme. Cette approche est recommandée au lieu d’envoyer des fichiers par courrier électronique.
 
-Pour prendre en charge les objectifs de protection de référence, configurez les stratégies de partage à l’échelle du client comme recommandé ici. Les paramètres de partage pour des sites individuels peuvent être plus restrictifs que cette stratégie à l’échelle du client, mais pas plus permissifs.
+Pour prendre en charge les objectifs de protection de base, configurez les stratégies de partage à l’échelle du client comme recommandé ici. Les paramètres de partage pour des sites individuels peuvent être plus restrictifs que cette stratégie à l’échelle du client, mais pas plus permissifs.
 
 <br>
 

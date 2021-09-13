@@ -11,11 +11,11 @@ search.appverid: ''
 localization_priority: None
 description: Découvrez comment rechercher des rubriques dans Sujets Microsoft Viva.
 ms.openlocfilehash: 525ec03621d28c26ecdc717648b3e9d6dcf51024
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179556"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utilisez Recherche Microsoft pour rechercher des rubriques dans Sujets Microsoft Viva
 
@@ -47,7 +47,7 @@ Dans Rubriques de Contrôle, vous pouvez modifier manuellement une rubrique afin
 
 ## <a name="bookmarks-and-topics"></a>Signets et rubriques
 
-[Les signets](/microsoftsearch/manage-bookmarks) sont une fonctionnalité Recherche Microsoft qui permet aux personnes de trouver rapidement des sites et des outils importants à l’aide d’une simple recherche (par exemple, un outil de réservation de voyage sur un site externe en dehors de leur client Microsoft 365). Ils sont créés par les administrateurs de recherche dans le Centre d’administration Microsoft 365. 
+[Les signets](/microsoftsearch/manage-bookmarks) sont une fonctionnalité Recherche Microsoft qui permet aux personnes de trouver rapidement des sites et des outils importants à l’aide d’une simple recherche (par exemple, un outil de réservation de voyage sur un site externe en dehors de leur client Microsoft 365). Ils sont créés par les administrateurs de recherche dans le Centre d'administration Microsoft 365. 
 
 Pour les utilisateurs qui recherchent des informations sur la réservation d’un voyage pour le travail :
 

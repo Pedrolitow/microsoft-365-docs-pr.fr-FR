@@ -17,11 +17,11 @@ ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: d70d35bc1e2baa795e024da79ea613087bf511d4
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179371"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie
 
@@ -54,7 +54,7 @@ Pour configurer ces paramètres :
 
 5. Déployez l’objet de stratégie de groupe comme d’habitude.
 
-Lieu|Paramètre|Article
+Emplacement|Setting|Article
 ---|---|---|---
 MAPS|Configurer le remplacement de paramètre local pour la création de rapports à Microsoft MAPS|[Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 Quarantaine|Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md)
@@ -88,12 +88,12 @@ Vous pouvez désactiver ce paramètre pour vous assurer que seules les listes d�
 
 3. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender**.
 
-4. Double-cliquez **sur Configurer le comportement de fusion de l’administrateur local** pour les listes et définissez l’option sur **Désactivé.** Cliquez sur **OK**.
+4. Double-cliquez **sur Configurer le comportement de fusion de l’administrateur local** pour les listes et définissez l’option sur **Désactivé.** Cliquez sur **OK**.
 
 > [!NOTE]
 > Si vous désactivez la fusion de listes locales, elle remplacera les paramètres d’accès contrôlé aux dossiers. Elle remplace également les dossiers protégés ou les applications autorisées définies par l’administrateur local. Pour plus d’informations sur les paramètres d’accès contrôlé aux dossiers, voir Autoriser une application [bloquée dans Sécurité Windows](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)

@@ -15,11 +15,11 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment utiliser Rubriques Dans votre organisation.
 ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181139"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
@@ -103,7 +103,7 @@ Lorsque vous utilisez Rubriques Viva dans votre environnement Microsoft 365, vo
 
 - Gestionnaires d’informations : utilisateurs qui guident les rubriques tout au long du cycle de vie des rubriques. Les gestionnaires de connaissances utilisent la page Gérer les **rubriques** dans le centre de rubriques pour confirmer les rubriques suggérées par l’IA, supprimer les rubriques qui ne sont plus pertinentes, ainsi que modifier des rubriques existantes ou en créer de nouvelles, et sont les seuls utilisateurs qui y ont accès. Les administrateurs d’informations attribuent des autorisations de gestionnaire d’informations aux utilisateurs via les paramètres administrateur de Rubriques Viva du Centre d’administration Microsoft 365. 
 
-- Administrateurs du savoir : les administrateurs définissent Topics et les gèrent via les contrôles d’administration dans le Centre d’administration Microsoft 365. Actuellement, un administrateur général de Microsoft 365 ou SharePoint peut faire office d'administrateur d'informations.
+- Administrateurs du savoir : les administrateurs définissent Topics et les gèrent via les contrôles d’administration dans le Centre d'administration Microsoft 365. Actuellement, un administrateur général de Microsoft 365 ou SharePoint peut faire office d'administrateur d'informations.
 
 Pour plus d’informations, voir [Rôles Rubriques.](topic-experiences-roles.md)
 
@@ -123,7 +123,7 @@ Pour plus d’informations, [voir Gérer les rubriques dans le centre de rubriqu
 
 ## <a name="admin-controls"></a>Contrôles d’administration
 
-Les contrôles d’administration Centre d’administration Microsoft 365 vous permettent de gérer Des rubriques. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
+Les contrôles d’administration Centre d'administration Microsoft 365 vous permettent de gérer Des rubriques. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
 
 - Contrôler quels utilisateurs de votre organisation sont autorisés à consulter les rubriques dans les pages modernes de SharePoint ou dans les résultats de recherche SharePoint.
 - Contrôler les sites SharePoint qui seront analyser pour identifier les rubriques.

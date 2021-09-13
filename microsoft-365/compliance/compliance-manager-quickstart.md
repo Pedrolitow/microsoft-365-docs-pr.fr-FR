@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: 28e6763947e04f5c0f924f8c832de34a47dcf7ab32ec3e8e9bba14fddb7976ad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181385"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
-**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, les stratégies et les normes.
+**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, stratégies et normes.
 
 Le Gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le Gestionnaire de conformité offre également des fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Les évaluations disponibles dépendent de votre contrat de licence . [en savoir plus.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
@@ -31,7 +31,7 @@ Que vous soyez en déplacement vers le Gestionnaire de conformité pour la premi
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Première visite : connaître le Gestionnaire de conformité
 
-Le Gestionnaire de conformité se trouve dans le Centre de conformité Microsoft 365 à https://compliance.microsoft.com l’emplacement . L’administrateur général de votre organisation devra configurer des autorisations utilisateur et attribuer des [rôles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) avant de commencer à utiliser le Gestionnaire de conformité.
+Le Gestionnaire de conformité se trouve dans le Centre de conformité Microsoft 365 à https://compliance.microsoft.com l’emplacement . L’administrateur général de votre organisation devra configurer des autorisations utilisateur et attribuer des [rôles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) avant de commencer à utiliser le Gestionnaire de conformité.
 
 La première fois que vous visitez le Gestionnaire de conformité, vous voyez un score de conformité pour votre organisation. Le Gestionnaire de conformité évalue déjà votre environnement Microsoft 365 actuel par rapport à la ligne de base de protection des données. La meilleure façon de commencer à vous familiariser avec le Gestionnaire de conformité consiste à comprendre ce qu’il vous montre, ses éléments clés et comment personnaliser votre tableau de bord.
 

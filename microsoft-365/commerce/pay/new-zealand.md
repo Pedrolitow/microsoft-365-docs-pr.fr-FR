@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21711c1e992ef5c6cee0ead839f35327f90a04fe855213913b29283637cb273c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4ff9056421d32abf83970356f9f99d9aea2adc3f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180179"
 ---
 # <a name="payment-information-for-new-zealand"></a>Informations de paiement pour la Nouvelle-Zélande
 

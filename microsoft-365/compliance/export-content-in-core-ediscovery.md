@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas core eDiscovery dans Microsoft 365.
 ms.openlocfilehash: 68535f8623b26aa4f2b30dc88362f4550c256162
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175883"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exporter le contenu à partir d'une affaire d' eDiscovery de base
 
@@ -34,7 +34,7 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
 
 2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
 
-3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas dans qui vous souhaitez créer la attente.
+3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas où vous souhaitez créer la attente.
 
 4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Recherches.**
 
@@ -57,11 +57,11 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
 
 7. Cliquez sur la tâche d’exportation que vous avez créée pour afficher les informations d’état sur la page volante. Ces informations incluent le pourcentage d’éléments qui ont été transférés vers stockage Azure’emplacement.
 
-8. Une fois tous les éléments transférés, cliquez sur **Télécharger** les résultats pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de recherche, voir l’étape 2 de [l’exportation des résultats de recherche de contenu](export-search-results.md#step-2-download-the-search-results)
+8. Une fois tous les éléments transférés, cliquez sur **Télécharger** les résultats pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d’informations sur le téléchargement des résultats de recherche, voir l’étape 2 de [l’exportation des](export-search-results.md#step-2-download-the-search-results) résultats de recherche de contenu
 
 ### <a name="more-information-about-exporting-searches-from-a-case"></a>Plus d’informations sur l’exportation de recherches à partir d’un cas
 
-- Pour plus d’informations sur les fichiers d’exportation inclus lorsque vous exportez des résultats de recherche, voir [Exporter un rapport de recherche de contenu.](export-a-content-search-report.md#whats-included-in-the-report)
+- Pour plus d’informations sur les fichiers d’exportation inclus lorsque vous exportez des résultats de recherche, voir Exporter un rapport [de recherche de contenu.](export-a-content-search-report.md#whats-included-in-the-report)
 
 - Si vous redémarrez l’exportation, les modifications apportées aux requêtes des recherches qui font la tâche d’exportation n’affecteront pas les résultats de recherche récupérés. Lorsque vous redémarrez une exportation, le même travail de requête de recherche combiné qui a été exécuté lors de la création de la tâche d’exportation est ré-exécuté.
 

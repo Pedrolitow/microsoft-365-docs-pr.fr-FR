@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7b3aeec0c138747b93c33b0dd29025c2b0dc433c9b6536a5f862d5cc948d2d10
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4aba4116bba7700e6d421d8e59c38405c234fb59
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180195"
 ---
 # <a name="payment-information-for-iceland"></a>Informations de paiement pour l’Islande
 

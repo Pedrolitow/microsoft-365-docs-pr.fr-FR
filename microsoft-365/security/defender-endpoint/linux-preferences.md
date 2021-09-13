@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5dca5af9c4c4cd0ca32281311a0a0dc6625b731ed8ba92fb42c95d0e43ea1367
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53811179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179299"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -208,7 +208,7 @@ Spécifie un processus pour lequel toute l’activité de fichier est exclue de 
 
 |Description|Valeur|
 |---|---|
-|**Clé**|name|
+|**Clé**|nom|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|n’importe quelle chaîne|
 |**Comments**|Applicable uniquement *si $type* est *excluFileName*|
@@ -274,7 +274,7 @@ Type de menace pour lequel le comportement est configuré.
 |**Valeurs possibles**|potentially_unwanted_application <p> archive_bomb|
 |
 
-##### <a name="action-to-take"></a>Mesures à prendre
+##### <a name="action-to-take"></a>Action
 
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
@@ -402,7 +402,7 @@ Détermine si des échantillons suspects (susceptibles de contenir des menaces) 
 |---|---|
 |**Clé**|automaticSampleSubmissionConsent|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|aucune <p> safe (par défaut) <p> all|
+|**Valeurs possibles**|none <p> safe (par défaut) <p> all|
 |
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Activer/désactiver les mises à jour automatiques de l’intelligence de sécurité

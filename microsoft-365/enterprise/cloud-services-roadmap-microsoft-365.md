@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Feuille de route pour configurer vos services cloud pour Microsoft 365.
 ms.openlocfilehash: 050dc8e622bbfe9f1a065a74f4dffcdd3647074a
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58353767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179780"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Feuille de route des services cloud pour Microsoft 365
 

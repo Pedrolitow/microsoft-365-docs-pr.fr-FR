@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: None
 description: Découvrez les Apprentissage Microsoft Viva (prévisualisation) dans votre environnement Microsoft 365 de travail.
 ms.openlocfilehash: e08be19d9277a31401b62be71f1e180859ba29bb
-ms.sourcegitcommit: 73a17ecbc06cd3e5452814637ab0484ddcdea17a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "58942601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182110"
 ---
 # <a name="overview-of-microsoft-viva-learning-preview"></a>Vue d’Apprentissage Microsoft Viva (prévisualisation) 
 
@@ -53,7 +53,7 @@ Maintenez votre équipe engagée et à jour avec les compétences nécessaires s
 
 ## <a name="admin-roles"></a>Rôles d’administrateurs
 
-Les administrateurs définissent des autorisations et autorisent les sources de contenu d’apprentissage pour Learning (prévisualisation). Pour configurer Le Learning (prévisualisation), vous aurez besoin d’autorisations comme :
+Les administrateurs définissent des autorisations et autorisent les sources de contenu d’apprentissage pour Learning (prévisualisation). Pour configurer Learning (prévisualisation), vous aurez besoin d’autorisations comme :
 
 - Microsoft Teams administrateur
 - Microsoft 365 administrateur général ou administrateur SharePoint général
@@ -63,7 +63,7 @@ Les administrateurs définissent des autorisations et autorisent les sources de 
 
 L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à tous les membres de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [voir rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
 
-L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint’administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
+L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
 
 ## <a name="get-started"></a>Prise en main
 

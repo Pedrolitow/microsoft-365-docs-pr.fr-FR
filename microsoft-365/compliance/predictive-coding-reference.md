@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 3f6e25a940835eae16f897d60a3249ad670dd8fa9df01bf7bb4fd73937948025
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53865442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177899"
 ---
 # <a name="predictive-coding-reference-preview"></a>Référence de codage prédictif (aperçu)
 
@@ -35,7 +35,7 @@ Un jeu de contrôles est utilisé pendant le processus de formation d’un modè
 
 ## <a name="control-set-confusion-matrix"></a>Matrice de confusion des ensembles de contrôles
 
-Une fois que vous avez terminé une série d’entraînements, le modèle affecte un score de prédiction aux 10 éléments du jeu de contrôles que vous avez étiquetés au cours de la série de formation. Le modèle compare le score de prédiction de ces 10 éléments à l’étiquette réelle que vous avez affectée à l’élément pendant la série de formation. Sur la base de cette comparaison, le modèle identifie les classifications suivantes pour évaluer les performances de prévision du modèle :
+Une fois que vous avez terminé une série d’entraînements, le modèle affecte un score de prédiction aux 10 éléments du jeu de contrôles que vous avez étiquetés au cours de la série de formation. Le modèle compare le score de prédiction de ces 10 éléments à l’étiquette réelle que vous avez affectée à l’élément au cours de la série de formation. Sur la base de cette comparaison, le modèle identifie les classifications suivantes pour évaluer les performances de prévision du modèle :
 
 <br>
 
@@ -43,7 +43,7 @@ Une fois que vous avez terminé une série d’entraînements, le modèle affect
 
 |Étiquette|L’élément de prévision de modèle est pertinent|L’élément de prévision de modèle n’est pas pertinent|
 |---|---|---|
-|**Élément d’étiquettes de relecteur pertinent**|Vrai positif|Faux positif|
+|**Élément d’étiquettes de relecteur selon la pertinence**|Vrai positif|Faux positif|
 |**Élément d’étiquettes de relecteur non pertinent**|Faux négatif|Vrai négatif|
 |
 
@@ -67,7 +67,7 @@ Le taux d’intérêt est le pourcentage d’éléments dans le jeu à réviser 
 
 ## <a name="precision"></a>Précision
 
-La mesure de précision mesure la proportion d’éléments réellement pertinents parmi les éléments que le modèle prévoit était pertinents. Cela signifie que les éléments du jeu de contrôles où l’étiquette est pertinente par le réviseur et prévue comme pertinente par le modèle. La plage de scores pour cette mesure est de **0** à **1**. Un score plus proche de **1** indique que le modèle identifiera moins d’éléments non pertinents. La mesure de précision est affichée sur le tableau de bord du modèle et sur la page de présentation de chaque série de formation.
+La mesure de précision mesure la proportion d’éléments réellement pertinents parmi les éléments que le modèle prévoit était pertinents. Cela signifie que les éléments du jeu de contrôles où l’étiquette est pertinente par le réviseur et prévue comme pertinente par le modèle. La plage de scores pour cette mesure est de **0** à **1**. Un score plus proche de **1** indique que le modèle identifiera moins d’éléments non pertinents. La mesure de précision s’affiche sur le tableau de bord du modèle et sur la page volante de chaque série d’entraînement.
 
 ## <a name="prediction-score"></a>Score de prédiction
 
@@ -87,8 +87,8 @@ La métrique riche mesure le pourcentage d’éléments d’ensemble de révisio
 
 ## <a name="sampled-items"></a>Exemples d’éléments
 
-Le  terme éléments échantillonés est une référence à un échantillon aléatoire d’éléments d’un jeu à réviser (qui contiennent du texte) sélectionnés et associés à l’ensemble de contrôles lorsque vous créez un modèle de codage prédictif. Un échantillon aléatoire d’éléments est également sélectionné pour chaque série de formation. Les éléments sélectionnés pour le jeu de contrôles d’un modèle ne sont jamais inclus dans un jeu de formation pour ce même modèle. L’inverse est également vrai : les éléments des ensembles de formations ne sont jamais inclus dans le jeu de contrôles.
+Le  terme éléments échantillonés est une référence à un échantillon aléatoire d’éléments d’un jeu à réviser (qui contiennent du texte) sélectionnés et associés au jeu de contrôles lorsque vous créez un modèle de codage prédictif. Un échantillon aléatoire d’éléments est également sélectionné pour chaque série de formation. Les éléments sélectionnés pour le jeu de contrôles d’un modèle ne sont jamais inclus dans un jeu de formation pour ce même modèle. L’inverse est également vrai : les éléments des ensembles de formations ne sont jamais inclus dans le jeu de contrôles.
 
 ## <a name="training-set"></a>Ensemble de formations
 
-Le modèle sélectionne de manière aléatoire les éléments du jeu à réviser et les ajoute à un groupe de formation. Pendant une série de formations, les éléments de l’ensemble de formation (en plus des éléments du jeu de contrôles) vous sont présentés afin que vous pouvez étiqueter chacun d’eux comme « pertinent » ou « non pertinent ». Ce processus d’étiquetage ou de « formation » permet au modèle de savoir comment prévoir les éléments de l’avis qui sont pertinents ou non pertinents. Chaque fois que vous effectuez une série d’entraînements, le modèle sélectionne d’autres éléments dans la révision et les ajoute au groupe de formation pour cette série de formation. Les éléments du jeu de contrôles ne sont jamais sélectionnés pour un groupe de formation.
+Le modèle sélectionne de manière aléatoire les éléments du jeu à réviser et les ajoute à un groupe de formation. Pendant une série d’entraînements, les éléments de l’ensemble de formation (en plus des éléments du jeu de contrôles) vous sont présentés afin que vous pouvez étiqueter chacun d’eux comme « pertinent » ou « non pertinent ». Ce processus d’étiquetage ou de « formation » permet au modèle de savoir comment prévoir les éléments de l’avis qui sont pertinents ou non pertinents. Chaque fois que vous effectuez une série d’entraînements, le modèle sélectionne d’autres éléments dans la révision et les ajoute au groupe de formation pour cette série de formation. Les éléments du jeu de contrôles ne sont jamais sélectionnés pour un groupe de formation.

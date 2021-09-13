@@ -21,11 +21,11 @@ search.appverid:
 - BEA160
 description: Découvrez la différence entre l’Assistant Installation et la page Installation.
 ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565589"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176204"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Différence entre l’Assistant Installation et la page Installation
 
@@ -34,7 +34,7 @@ Microsoft 365 offre deux expériences d’installation :
 - Configuration initiale à l’aide de l’Assistant Installation
 - Configuration continue et avancée à l’aide de la page **Installation**
 
-L’Assistant Installation fournit une walkthrough guidée pour la configuration de l’Microsoft 365 de base. Une fois l’installation initiale terminée, vous pouvez vous rendre sur la **page** d’installation pour terminer la configuration et la configuration des services qui s’offrent à vous avec vos abonnements.
+L’Assistant Installation fournit une walkthrough guidée pour la configuration de l’Microsoft 365 de base. Après avoir terminé l’installation initiale, vous pouvez vous rendre sur la **page** d’installation pour terminer la configuration et la configuration des services qui s’offrent à vous avec vos abonnements.
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Utiliser l’Assistant Installation pour effectuer les tâches d’installation initiales
 
@@ -62,7 +62,7 @@ Vous verrez la liste complète des tâches d’installation organisées en caté
 
 Choisissez  Afficher pour toute tâche afin d’obtenir des informations rapides, telles que la description de la tâche, l’impact sur l’utilisateur, les conditions préalables, l’effort à implémenter et les statistiques de sécurité et d’adoption pour vous aider à comprendre les conséquences et l’impact avant de poursuivre.
 
-Vous verrez également l’état de la tâche (**démarrée,** pas **encore** démarrée ou **terminée).** Si vous travaillez à plusieurs tâches, que vous travaillez sur des tâches sur plusieurs jours ou si plusieurs administrateurs travaillent sur des tâches, vous pouvez effectuer le suivi en un coup d’œil des tâches qui ont été effectuées et de ceux qui nécessitent encore une attention particulière. 
+Vous verrez également l’état de la tâche (**démarrée,** pas **encore** démarrée ou **terminée).** Si vous travaillez sur plusieurs tâches, si vous travaillez sur des tâches sur plusieurs jours ou si plusieurs administrateurs travaillent sur des tâches, vous pouvez effectuer le suivi en un coup d’œil des tâches qui ont été achevées et de ceux qui nécessitent encore une attention particulière. 
 
 Pour accéder à des articles complets sur les fonctionnalités que vous êtes en train de définir, sélectionnez l’un des liens En **savoir plus.** La collection de tâches est toujours là, afin que vous pouvez revenir à la page **d’installation** à tout moment pour explorer davantage les ressources.
 

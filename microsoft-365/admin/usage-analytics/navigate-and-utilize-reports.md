@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Découvrez comment afficher les rapports à l’aide d’onglets et de filtres de navigation.
 ms.openlocfilehash: 4cd39fea09f4204701b4183d02cd64d87d591933
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180731"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Naviguer et utiliser les rapports dans Microsoft 365 analyse de l’utilisation
 

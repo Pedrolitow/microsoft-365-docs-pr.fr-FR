@@ -23,15 +23,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-description: Créez des groupes de distribution ou des listes dans le Centre d’administration Microsoft 365 de sorte que vous pouvez envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
-ms.openlocfilehash: 2aa7ded4fe29a43d2b1f0d3282467e8eaba6484d2ab40df99bd81f4bbe348bb6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Créez des groupes de distribution ou des listes dans le Centre d'administration Microsoft 365 de sorte que vous pouvez envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178532"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d’administration Microsoft 365
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d'administration Microsoft 365
   
 Utilisé lorsque vous souhaitez envoyer un courrier électronique à un groupe de personnes sans avoir à taper le nom de chaque destinataire, les groupes de distribution (listes de distribution) sont organisés par sujet de discussion particulier (par exemple, « Marketing ») ou par des utilisateurs qui partagent un travail commun qui les oblige à communiquer fréquemment. Elles vous permettent également de transférer automatiquement le message à plusieurs adresses e-mail.
 
@@ -75,8 +75,8 @@ Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le web da
   
 Consultez les [problèmes de groupe de](/office365/troubleshoot/groups/distribution-list-issues) distribution pour obtenir de l’aide sur les problèmes de liste de distribution. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\
-[Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d’administration Microsoft 365 (article)\
+[Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d'administration Microsoft 365 (article)\
 [Créer une boîte aux lettres ](../email/create-a-shared-mailbox.md)partagée (article)

@@ -16,12 +16,12 @@ description: Découvrez comment placer une boîte aux lettres en attente pour li
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 58de1f44c6c58125b37c8cf0800d48dc0ae86f2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4a3271952a1f517f97e6b0a13044d2fac102e8ec
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181324"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une attente pour litige
 
@@ -39,18 +39,18 @@ Voici ce qui se produit lorsque vous créez une attente pour litige.
 
 ## <a name="assign-an-exchange-online-plan-2-license"></a>Attribuer une licence Exchange Online Plan 2
 
-Pour placer une boîte aux lettres Exchange Online en attente pour litige, une licence Plan 2 doit lui Exchange Online attribuée. Si une boîte aux lettres est Exchange Online licence Plan 1, vous devez lui affecter une licence Archivage Exchange Online pour la placer en attente.
+Pour placer une boîte Exchange Online boîte aux lettres en attente pour litige, une licence Plan 2 Exchange Online lui est attribuée. Si une boîte aux lettres est Exchange Online licence Plan 1, vous devez lui affecter une licence Archivage Exchange Online pour la placer en attente.
 
 > [!NOTE]
 > Pour Office 365 Éducation organisations, la attente pour litige est prise en charge dans les abonnements Office 365 A1, qui incluent une licence Plan 1 Exchange Online avec des fonctionnalités supplémentaires. Pour plus d’informations, voir la section « fonctionnalités Exchange Online » dans la [description Office 365 Éducation service.](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>Placer une boîte aux lettres en attente pour litige
 
-Voici les étapes à suivre pour placer une boîte aux lettres en attente pour litige à l’aide du Centre d’administration Microsoft 365.
+Voici les étapes à suivre pour placer une boîte aux lettres en attente pour litige à l’aide du Centre d'administration Microsoft 365.
 
 1. Accédez à <https://admin.microsoft.com> et connectez-vous.
 
-2. Dans le volet de navigation du Centre d’administration, cliquez sur **Utilisateurs > utilisateurs actifs.**
+2. Dans le volet de navigation du Centre d’administration, cliquez sur **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 
 3. Sélectionnez l’utilisateur que vous souhaitez placer en attente pour litige.
 

@@ -22,11 +22,11 @@ ms.collection:
 description: Vous pouvez utiliser la Gestion des droits numériques (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 84f0443cd31f26549dc1f5dc06be6e7bf52b05dc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178164"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la Gestion des droits à l’information (IRM) à une liste ou une bibliothèque
 
@@ -71,7 +71,7 @@ Vous pouvez utiliser la Gestion des droits numériques (IRM) pour contrôler et 
 |Autoriser les utilisateurs à imprimer des documents à partir de cette liste ou bibliothèque|Cochez **la case Autoriser les visionneuses à** imprimer.|
 |Autorisez les personnes ayant au moins l’autorisation Afficher les éléments à exécuter du code ou des macros incorporés sur un document.|Cochez la case Autoriser les **visionneuses à exécuter** un script et un lecteur d’écran pour fonctionner sur les documents téléchargés. Si vous sélectionnez cette option, les utilisateurs peuvent exécuter du code pour extraire le contenu d’un document.           |
 |Sélectionnez cette option si vous souhaitez restreindre l’accès au contenu à une période spécifiée. Si vous sélectionnez cette option, les licences d’émission des personnes pour accéder au contenu expireront après le nombre de jours spécifié, et les utilisateurs devront revenir sur le serveur pour vérifier leurs informations d’identification et télécharger une nouvelle copie.|Cochez la case Après le téléchargement, les droits d’accès aux documents expireront après ce nombre de jours **(1-365),** puis spécifiez le nombre de jours pendant lesquels vous souhaitez que le document soit consultable.|
-| Empêcher les personnes de télécharger des documents qui ne la prise en charge de l’IRM dans cette liste ou cette bibliothèque. Si vous sélectionnez cette option, les personnes ne pourront télécharger aucun des types de fichiers suivants : les types de fichiers qui n’ont pas de logiciels de protection IRM correspondants installés sur tous les serveurs web frontaux. Types de fichiers SharePoint Server 2010 ne peuvent pas déchiffrer. Types de fichiers protégés par IRM dans un autre programme.|Cochez la case Ne pas autoriser les utilisateurs à télécharger des documents qui **ne la prisent pas en charge.**|
+| Empêcher les personnes de télécharger des documents qui ne la prise en charge de l’IRM dans cette liste ou cette bibliothèque. Si vous sélectionnez cette option, les personnes ne pourront télécharger aucun des types de fichiers suivants : les types de fichiers qui n’ont pas de logiciels de protection IRM correspondants installés sur tous les serveurs web frontaux. Types de fichiers SharePoint Server 2010 ne peuvent pas déchiffrer. Types de fichiers protégés par IRM dans un autre programme.|Cochez la case Ne pas autoriser les utilisateurs à télécharger des documents qui **ne la prisent pas en** charge.|
 |Supprimez les autorisations restreintes de cette liste ou bibliothèque à une date spécifique.|Cochez la case Arrêter **de restreindre l’accès** à la bibliothèque, puis sélectionnez la date de votre choix.|
 |Contrôler l’intervalle de mise en cache des informations d’identification pour le programme sous licence pour ouvrir le document.|Sélectionnez **la case à cocher Utilisateurs** pour vérifier leurs informations d’identification à l’aide de cet intervalle (jours), puis entrez l’intervalle de mise en cache des informations d’identification en nombre de jours.|
 |Autorisez la protection de groupe afin que les utilisateurs peuvent partager avec les membres du même groupe.|Sélectionnez **Autoriser la protection de** groupe, puis entrez le nom du groupe pour le partage.|
@@ -90,7 +90,7 @@ Sur un site, vous appliquez la gestion des droits numériques à l’ensemble d�
 > [!NOTE]
 > Les informations de cette page concernant la gestion des droits de l’information ont la place sur les termes qui font référence à la « Gestion des droits informatiques » dans les contrats de licence Microsoft SharePoint Server 2013 et SharePoint Server 2016. 
   
-### <a name="how-irm-can-help-protect-content"></a>Comment IRM peut aider à protéger le contenu
+### <a name="how-irm-can-help-protect-content"></a>Comment irm peut aider à protéger le contenu
 <a name="__toc256598176"> </a>
 
 La gestion des droits numériques permet de protéger le contenu restreint des manières suivantes :
@@ -134,7 +134,7 @@ Les types de restrictions qui sont appliquées à un fichier lorsqu’il est té
 |**Autorisations**|**Autorisations IRM**|
 |:-----|:-----|
 |Gérer les autorisations, Gérer un site Web|**Contrôle total** (tel que défini par le programme client) : cette autorisation permet généralement à un utilisateur de lire, modifier, copier, enregistrer et modifier des autorisations de contenu géré par des droits.|
-|Modifier des éléments, gérer des listes, ajouter et personnaliser des pages|**Modifier,** **copier** et enregistrer : un utilisateur ne peut imprimer un fichier que si la case Autoriser les utilisateurs à imprimer des **documents** est cocher sur la page gestion des droits relatifs à l’information Paramètres de la liste ou de la bibliothèque.|
+|Modifier des éléments, gérer des listes, ajouter et personnaliser des pages|**Modifier,** **copier** et enregistrer : un utilisateur ne peut imprimer un fichier que si la case Autoriser les utilisateurs à imprimer des **documents** est sélectionnée sur la page Paramètres gestion des droits relatifs à l’information pour la liste ou la bibliothèque.|
 |Afficher les éléments|**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur ne peut imprimer que si la case Autoriser les utilisateurs à imprimer des **documents** est sélectionnée sur la page de gestion des droits relatifs à l’information Paramètres de la liste ou de la bibliothèque.|
 |Autres|Aucune autre autorisation ne correspond directement aux autorisations IRM.|
    

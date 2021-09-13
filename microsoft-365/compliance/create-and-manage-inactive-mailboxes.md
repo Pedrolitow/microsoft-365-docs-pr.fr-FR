@@ -19,13 +19,14 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Conserver le contenu des boîtes aux lettres supprimées à l’aide de la fonctionnalité de boîtes aux lettres inactives Microsoft 365.
-ms.openlocfilehash: f0e95d5853580116db6f7c48396e601058e303e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 95548710e0a0f737deec6e5dc49ebc217c9ac50c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181295"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -42,7 +43,7 @@ Microsoft 365 permet de conserver le contenu des boîtes aux lettres supprimées
 
 - Si une conservation pour litige ou une stratégie de rétention (configurée pour conserver ou conserver puis supprimer du contenu) n’est pas appliquée à une boîte aux lettres avant sa suppression, son contenu ne sera ni conservé ni découvrable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
 
-- Pour plus d’informations sur la attente pour litige, [consultez la procédure de attente pour litige.](/exchange/security-and-compliance/in-place-and-litigation-holds) Pour plus d’informations sur les stratégies de rétention, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)
+- Pour plus d’informations sur la attente pour litige, voir [La attente pour litige.](/exchange/security-and-compliance/in-place-and-litigation-holds) Pour plus d’informations sur les stratégies de rétention, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)
   
 ## <a name="create-an-inactive-mailbox"></a>Créer une boîte aux lettres inactive
 
@@ -65,7 +66,7 @@ Pour obtenir des procédures pas à pas pour placer une boîte aux lettres en co
   
 ### <a name="step-2-delete-the-mailbox"></a>Étape 2 : Suppression de la boîte aux lettres
 
-Une fois que la boîte aux lettres est placée en conservation ou qu’une stratégie de rétention lui est appliquée, l’étape suivante consiste à supprimer la boîte aux lettres. La meilleure façon de supprimer une boîte aux lettres consiste à supprimer le compte d’utilisateur correspondant dans le Centre d’administration Microsoft 365. Pour plus d’informations sur la suppression de comptes d’utilisateurs, voir [Supprimer un utilisateur de votre organisation.](../admin/add-users/delete-a-user.md)
+Une fois que la boîte aux lettres est placée en conservation ou qu’une stratégie de rétention lui est appliquée, l’étape suivante consiste à supprimer la boîte aux lettres. La meilleure façon de supprimer une boîte aux lettres consiste à supprimer le compte d’utilisateur correspondant dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Pour plus d’informations sur la suppression de comptes d’utilisateurs, voir [Supprimer un utilisateur de votre organisation.](../admin/add-users/delete-a-user.md)
   
 > [!NOTE]
 > Vous pouvez également supprimer la boîte aux lettres en utilisant la cmdlet **Remove-Mailbox** dans Exchange Online PowerShell. Pour plus d’informations, voir Supprimer ou restaurer des boîtes aux [lettres utilisateur dans Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). 
@@ -74,15 +75,15 @@ Une fois que la boîte aux lettres est placée en conservation ou qu’une strat
 
 Pour afficher la liste des boîtes aux lettres inactives dans votre organisation :
 
-1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an Global administrator or a Compliance administrator account in your organization.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> and sign in using the credentials for an Global administrator or a Compliance administrator account in your organization.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis cliquez sur Gouvernance des informations **> rétention**.
+2. Dans le volet de navigation de gauche, cliquez sur **Afficher tout,** puis cliquez sur Rétention **de gouvernance des**  >  **informations.**
 
    ![Cliquez sur le bouton Boîte aux lettres inactive dans la page Rétention.](../media/MCCInactiveMailboxes1.png)
 
 3. Dans la page **Rétention,** cliquez sur **Boîte aux lettres inactive** pour afficher la liste des boîtes aux lettres inactives.
 
-4. Sélectionnez une boîte aux lettres inactive pour afficher une page volante avec des informations sur la boîte aux lettres inactive.
+4. Sélectionnez une boîte aux lettres inactive pour afficher une page de présentation avec des informations sur la boîte aux lettres inactive.
 
    ![La page de présentation affiche des détails sur la boîte aux lettres inactive.](../media/MCCInactiveMailboxes2.png)  
 

@@ -14,11 +14,11 @@ ms.collection:
 localization_priority: Priority
 description: Découvrez la principale différence entre un modèle de compréhension de document et un modèle de traitement de formulaire.
 ms.openlocfilehash: e9f9c417d8603be0d933607ccf527c6d821bcc72
-ms.sourcegitcommit: 7883556c05ceef228dc329f715e8a6213b40d921
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58931253"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181264"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 

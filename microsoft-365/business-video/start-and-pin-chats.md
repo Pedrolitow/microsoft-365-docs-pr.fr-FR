@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment démarrer et épingler des conversations dans Microsoft Teams.
-ms.openlocfilehash: bbfd6334b08797f5616bd1844b48af67d6352d9c80a9aa8c6674fc9ae0561fa9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893354"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180612"
 ---
 # <a name="chat-with-employees-and-customers"></a>Discutez avec vos employés et vos clients
 
@@ -35,7 +35,7 @@ Vous pouvez discuter en interne avec vos collègues ou avec un utilisateur invit
 
 ## <a name="try-it"></a>Essayez !
 
-Démarrez des conversations en tête à tête ou en groupe pour collaborer avec un petit groupe ou parler en privé, et épinglez des conversations pour un accès rapide.
+Démarrez les conversations de groupe ou 1:1 pour collaborer avec un petit groupe ou parler en privé, et épinglez des conversations pour un accès rapide.
 
 1. Dans  **les conversations,** vous pouvez avoir des conversations en tête à tête ou en groupe avec des personnes.
 2. Sélectionnez **Nouvelle conversation.** :::image type="icon" source="../media/new-chat-icon.png" border="false":::  

@@ -17,13 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Comprendre comment faire passer des fichiers hérités vers chiffrement de messages Office 365 (OME) pour votre organisation.
-ms.openlocfilehash: 324447fe09280cef52c607613f5db8fb61b4a0b2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a8f165aa9fde70cfc448e999dbc7abc8818e8cd5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179908"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -31,7 +32,7 @@ Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonc
   
 Avec chiffrement de messages Office 365, votre organisation peur envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
   
-Voici quelques exemples :
+Voici quelques exemples :
   
 - Un employé de la banque envoie des relevés de carte de crédit aux clients
 
@@ -69,7 +70,7 @@ Pour plus d’informations sur la création Exchange règles de flux de messager
 
 2. Sélectionnez la **vignette** Administrateur.
 
-3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
+3. In the [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), choose **Admin centers** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
@@ -125,7 +126,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 2. Sélectionnez la **vignette** Administrateur.
 
-3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
@@ -135,7 +136,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 7. In **Do the following**, select Modify the message **security** Remove the previous version \> **of OME**.
 
-8. Cliquez sur **Enregistrer**.
+8. Sélectionnez **Enregistrer**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utiliser Exchange Online PowerShell pour créer une règle pour supprimer le chiffrement des réponses électroniques chiffrées sans les nouvelles fonctionnalités OME
 
@@ -297,7 +298,7 @@ Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Of
   
  **Q. Ai-je besoin d’ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge chiffrement de messages Office 365 ?**
   
-Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste Exchange Online URL, voir [Microsoft 365 URL et plages d’adresses IP.](../enterprise/urls-and-ip-address-ranges.md)
+Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des EXCHANGE ONLINE, voir Microsoft 365 [URL et plages d’adresses IP.](../enterprise/urls-and-ip-address-ranges.md)
   
  **Q. À combien de destinataires puis-je envoyer Microsoft 365 message chiffré ?**
   

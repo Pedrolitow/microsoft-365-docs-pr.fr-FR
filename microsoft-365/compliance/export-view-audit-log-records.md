@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
-description: Dans cet article, vous allez découvrir comment exporter, configurer et afficher Microsoft 365 journaux d’audit.
+description: Dans cet article, vous allez apprendre à exporter, configurer et afficher les enregistrements du journal d’audit Microsoft 365'audit.
 ms.openlocfilehash: 33bcf3ee79a7ee27cc87825458d7d98cda590773
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182400"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
 
@@ -68,7 +68,7 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
 
    Le fichier CSV est ouvert dans **l’Éditeur de requêtes.** Il existe quatre colonnes **: CreationDate**, **UserIds**, **Operations** et **AuditData**. La **colonne AuditData** est un objet JSON qui contient plusieurs propriétés. L’étape suivante consiste à créer une colonne pour chaque propriété dans l’objet JSON.
 
-5. Cliquez avec le bouton droit sur le titre dans **la colonne AuditData,** cliquez sur **Transformer,** puis sur **JSON**. 
+5. Cliquez avec le bouton droit sur le titre dans **la colonne AuditData,** cliquez sur **Transformer,** puis cliquez sur **JSON**. 
 
    ![Cliquez avec le bouton droit sur la colonne AuditData, cliquez sur Transformer, puis sélectionnez JSON.](../media/JSONTransform.png)
 
@@ -82,13 +82,13 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
 
    ![Cliquez sur Charger plus pour afficher toutes les propriétés dans l’objet JSON.](../media/JSONTransformLoadJSONProperties.png)
 
-   Vous pouvez désélectionner la case à cocher en regard de toute propriété que vous ne souhaitez pas inclure. L’élimination de colonnes qui ne sont pas utiles pour votre examen est un bon moyen de réduire la quantité de données affichées dans le journal d’audit. 
+   Vous pouvez désélectionner la case à cocher en regard de toute propriété que vous ne souhaitez pas inclure. L’élimination des colonnes qui ne sont pas utiles pour votre examen est un bon moyen de réduire la quantité de données affichées dans le journal d’audit. 
 
    > [!NOTE]
    > Les propriétés JSON affichées dans la capture d’écran précédente (après avoir cliqué sur Charger **plus)** sont basées sur les propriétés trouvées dans la colonne **AuditData** des 1 000 premières lignes du fichier CSV. S’il existe différentes propriétés JSON dans les enregistrements après les 1 000 premières lignes, ces propriétés (et une colonne correspondante) ne sont pas incluses lorsque la colonne **AuditData** est fractionnées en plusieurs colonnes. Pour éviter cela, envisagez de ré-exécutez la recherche dans le journal d’audit et limitez les critères de recherche afin que moins d’enregistrements soient renvoyés. Une autre solution consiste à filtrer les éléments de la colonne **Opérations** pour réduire le nombre de lignes (avant d’effectuer l’étape 5 ci-dessus) avant de transformer l’objet JSON dans la colonne **AuditData.**
 
    > [!TIP]
-   > Pour afficher un attribut au sein d’une liste telle  que AuditData.AffectedItems, cliquez sur l’icône Développer dans le coin supérieur droit de la colonne à partir de celle-ci, puis sélectionnez Développer vers la nouvelle **ligne.**  À partir de là, il s’agit d’un enregistrement et vous pouvez cliquer sur l’icône Développer dans le coin supérieur droit de la colonne, afficher les attributs et sélectionner celui que vous souhaitez afficher ou extraire. 
+   > Pour afficher un attribut dans une liste telle qu’AuditData.AffectedItems, cliquez sur l’icône Développer dans le coin supérieur droit de la colonne à partir de la colonne à partir de qui vous souhaitez tirer un attribut, puis sélectionnez Développer vers la nouvelle **ligne.**   À partir de là, il s’agit d’un enregistrement et vous pouvez cliquer sur l’icône Développer dans le coin supérieur droit de la colonne, afficher les attributs et sélectionner celui que vous souhaitez afficher ou extraire. 
 
 8. Pour mettre en forme le titre des colonnes ajoutées pour chaque propriété JSON sélectionnée, faites l’une des choses suivantes.
 
@@ -96,11 +96,11 @@ L’étape suivante consiste à utiliser la fonctionnalité de transformation JS
 
     - Laissez la case à cocher Utiliser le nom de colonne d’origine comme **préfixe** sélectionnée pour ajouter le préfixe AuditData aux noms de colonnes ; par exemple, **AuditData.RecordType** ou **AuditData.SourceFileName**.
 
-9. Cliquez sur **OK**.
+9. Cliquez sur **OK**.
 
     La **colonne AuditData** est divisée en plusieurs colonnes. Chaque nouvelle colonne correspond à une propriété dans l’objet JSON AuditData. Chaque ligne de la colonne contient la valeur de la propriété. Si la propriété ne contient pas de valeur, la valeur *null* s’affiche. Dans Excel, les cellules avec des valeurs null sont vides.
   
-10. Sous **l’onglet** Accueil, cliquez sur Fermer **& charger** pour fermer l’Éditeur de requêtes Power et ouvrir le fichier CSV transformé dans un classe Excel.
+10. Sous **l’onglet** Accueil, cliquez sur Fermer **& charger** pour fermer l’éditeur power query et ouvrir le fichier CSV transformé dans un classe Excel classer.
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Utiliser PowerShell pour rechercher et exporter des enregistrements de journal d’audit
 
@@ -134,6 +134,6 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 Voici quelques conseils et exemples d’exportation et d’affichage du journal d’audit avant et après l’utilisation de la fonctionnalité de transformation JSON pour fractionner la colonne **AuditData** en plusieurs colonnes.
 
-- Filtrez la **colonne RecordType** pour afficher uniquement les enregistrements d’un service ou d’une zone fonctionnelle spécifique. Par exemple, pour afficher les événements liés au partage SharePoint, vous devez sélectionner **14** (valeur d’enum pour les enregistrements déclenchés par SharePoint activités de partage). Pour obtenir la liste des services qui correspondent aux valeurs d’énumérer affichées dans la colonne **RecordType,** voir Propriétés détaillées dans le [journal d’audit.](detailed-properties-in-the-office-365-audit-log.md)
+- Filtrez la **colonne RecordType** pour afficher uniquement les enregistrements d’un service ou d’une zone fonctionnelle spécifique. Par exemple, pour afficher les événements liés au partage SharePoint, vous devez sélectionner **14** (valeur d’enum pour les enregistrements déclenchés par SharePoint activités de partage). Pour obtenir la liste des services qui correspondent aux valeurs enum affichées dans la colonne **RecordType,** voir Propriétés détaillées dans le journal [d’audit.](detailed-properties-in-the-office-365-audit-log.md)
 
 - Filtrez **la colonne Opérations** pour afficher les enregistrements pour des activités spécifiques. Pour obtenir la liste de la plupart des opérations qui correspondent à une activité de recherche dans l’outil de recherche du journal d’audit dans le Centre de conformité Microsoft 365, consultez la section « Activités auditées » dans le journal [d’audit.](search-the-audit-log-in-security-and-compliance.md#audited-activities)

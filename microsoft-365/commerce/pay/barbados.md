@@ -12,12 +12,12 @@ ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 76e0e69e4fa517ccf6411c3c5f6dd5b7fb7c1fbf95f35c91276cd2598ac6bac4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e9bbd29db305eb5c335514621b442d9750b4cca8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837450"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180484"
 ---
 # <a name="payment-information-for-barbados"></a>Informations de paiement pour les Jamaïques
 

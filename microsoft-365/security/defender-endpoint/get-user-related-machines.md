@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs liés à l’utilisateur
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à l’utilisateur pour récupérer une collection d’appareils liés à un ID d’utilisateur dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à l’utilisateur pour récupérer une collection d’appareils liés à un ID d’utilisateur dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, utilisateur, alertes associées à l’utilisateur
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c0337c83419e2584c779abdd1bc88b75e6c1a63a5c7cc38fe1a719a6d6908029
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177587"
 ---
 # <a name="get-user-related-machines-api"></a>API Obtenir les ordinateurs liés à l’utilisateur
 
@@ -82,7 +82,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’utilisateur existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si l’utilisateur n’existe pas - 404 - In trouvé.
+En cas de réussite et si l’utilisateur existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si l’utilisateur n’existe pas - 200 OK avec un jeu vide.
 
 ## <a name="example"></a>Exemple
 

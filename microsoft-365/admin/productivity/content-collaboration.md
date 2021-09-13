@@ -20,11 +20,11 @@ search.appverid:
 - MOE150
 description: 'Détails de la collaboration de contenu : les utilisateurs peuvent obtenir un score de productivité.'
 ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178715"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
@@ -151,7 +151,7 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
       - **En externe :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en externe.
         -  Numérateur : nombre de personnes avec qui des fichiers ont été partagés en externe au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
-      - **En interne uniquement :** La partie bleue (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en interne uniquement.
+      - **En interne uniquement :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes ayant accès à OneDrive ou SharePoint et qui partagent des fichiers en interne uniquement.
         - Numérateur : nombre de personnes qui ont partagé des fichiers en interne uniquement au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
 4. **Lien vers des ressources :** Sélectionnez ce lien pour afficher le contenu de l’aide.

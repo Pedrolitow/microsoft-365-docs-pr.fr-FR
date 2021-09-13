@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182026"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
@@ -43,7 +43,7 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 **-h** : appelle [l’enregistreur Windows performance](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter un suivi détaillé des performances générales en plus du jeu de journaux standard.
 
-**-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut s’avérer utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais qui sont difficiles à reproduire à la demande.
+**-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut être utile lors du diagnostic des problèmes de dégradation des performances lents qui se produisent au fil du temps mais qui sont difficiles à reproduire à la demande.
 
 **-c** - Appels dans le [moniteur](/sysinternals/downloads/procmon) de processus pour la surveillance avancée de l’activité en temps réel du système de fichiers, du Registre et des processus/threads. Cela est particulièrement utile lors du dépannage de différents scénarios de compatibilité d’application.
 
@@ -84,4 +84,4 @@ L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lanc�
 >
 >   - **-r** : indique que l’outil est exécuté à partir d’un contexte distant (ou non interactif)
 >   - **-i** - Indicateur de scénario pour la collecte de suivi réseau avec d’autres journaux associés
->   - **-m** \# - Nombre de minutes à exécuter (5 minutes dans l’exemple ci-dessus)
+>   - **-m** \# - Nombre de minutes d’exécuter (5 minutes dans l’exemple ci-dessus)

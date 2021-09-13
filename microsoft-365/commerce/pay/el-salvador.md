@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 64f2294a33e1211a5552e682947171026dd9f0917c8661fe1680cb0445010ea9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b7492e412133152834c24864fac20376255eb2ad
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180267"
 ---
 # <a name="payment-information-for-el-salvador"></a>Informations de paiement pour el Salvador
 

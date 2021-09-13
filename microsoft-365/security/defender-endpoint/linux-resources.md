@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747662"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179292"
 ---
 # <a name="resources"></a>Ressources
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -169,7 +169,7 @@ Dans le portail Defender pour points de terminaison, deux catégories d’inform
   - Architecture du processeur
   - Si l’appareil est une machine virtuelle
 
-### <a name="known-issues"></a>Problèmes connus
+### <a name="known-issues"></a>Problèmes détectés
 
 - Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail Microsoft 365 Defender, même si le produit fonctionne comme prévu. Nous travaillons à résoudre ce problème.
 - Les utilisateurs connectés n’apparaissent pas sur le Microsoft 365 Defender web.

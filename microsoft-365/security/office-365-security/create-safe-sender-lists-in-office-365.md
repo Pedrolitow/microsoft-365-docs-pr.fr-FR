@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81ab9b0aabc9b9699e0cee27b0046748a2a585df511f271316e01200ce552221
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56800384"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177380"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs sûrs dans EOP
 
@@ -94,7 +94,7 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
 
    b. **Modifier les propriétés du message** \> **définir un en-tête de message**: **définissez l’en-tête de message** sur la \<CustomHeaderName\> **valeur** \<CustomHeaderValue\> .
 
-      Par exemple : `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si vous avez plusieurs domaines dans la règle, vous pouvez personnaliser le texte d’en-tête selon le cas.
+      Par exemple, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si vous avez plusieurs domaines dans la règle, vous pouvez personnaliser le texte d’en-tête selon le cas.
 
       Lorsqu’un message ignore le filtrage du courrier indésirable en raison d’une règle de flux de messagerie, la valeur est estampillée dans `SFV:SKN` l’en-tête **X-Forefront-Antispam-Report.** Si le message est issu d’une source qui se trouve sur la liste d’adresses IP permises, la valeur `IPV:CAL` est également ajoutée. Ces valeurs peuvent vous aider à résoudre les problèmes.
 
@@ -113,7 +113,7 @@ Lorsque les messages ignorent le filtrage du courrier indésirable en raison de 
 
 Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit précédemment, la meilleure option suivante consiste à ajouter le ou les serveurs de messagerie source à la liste d’adresses IP permises dans la stratégie de filtrage des connexions. Pour plus d’informations, [voir Configurer le filtrage des connexions dans EOP.](configure-the-connection-filter-policy.md)
 
-**Remarques** :
+**Remarques** :
 
 - Il est important que vous maintenez le nombre d’adresses IP autorisées au minimum, donc évitez d’utiliser des plages d’adresses IP entières autant que possible.
 
@@ -150,7 +150,7 @@ Par exemple, supposons que Blue Yonder Airlines ait embauché Margie’s Travel 
 
 - `5321.MailFrom`L’adresse est blueyonder.airlines@margiestravel.com.
 
-- L’adresse est blueyonder@news.blueyonderairlines.com, ce qui est ce que vous verrez `5322.From` dans Outlook.
+- L’adresse est blueyonder@news.blueyonderairlines.com, ce qui est ce que vous `5322.From` verrez dans Outlook.
 
 Coffre listes des expéditeurs et des listes de domaines sûrs dans les stratégies anti-courrier indésirable dans EOP inspectent uniquement les adresses, ce qui est similaire à celui des expéditeurs Outlook Coffre qui utilisent `5322.From` `5322.From` l’adresse.
 

@@ -19,11 +19,11 @@ ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
 ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182175"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -103,11 +103,11 @@ Si un Windows 10 est inscrit à Azure AD, il doit être déconnecté d’Azure A
 
 ## <a name="android"></a>Android
 
-Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs appareils. Vous pouvez le faire via l’application Microsoft Authenticator ou l’application Portail d’entreprise’application.
+Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs appareils. Vous pouvez le faire via l’application Microsoft Authenticator ou l’application Portail d'entreprise’application.
 
 - À partir de Microsoft Authenticator’application, les utilisateurs peuvent Paramètres > **inscription de l’appareil.** À partir de là, les utilisateurs peuvent désins inscrire et réenregistrer leur appareil.
 
-- À partir de Portail d’entreprise, les utilisateurs peuvent se rendre sur l’onglet **Appareils** et supprimer l’appareil. Ensuite, réinscrivez l’appareil à l’aide Portail d’entreprise.
+- À partir de Portail d'entreprise, les utilisateurs peuvent se rendre sur l’onglet **Appareils** et supprimer l’appareil. Ensuite, réinscrivez l’appareil à l’aide Portail d'entreprise.
 
 - Les utilisateurs peuvent également se désins inscrire et s’inscrire à leur nouvelle inscription en supprimant le compte de la page des paramètres du compte, puis en lisant le compte de travail.
 
@@ -125,12 +125,12 @@ Pour désins inscrire et réenregistrer un appareil Android à l’Paramètres p
 3. Une fois le compte supprimé, dans la **page** Comptes, sélectionnez Ajouter un **compte > compte de travail.**
 4. For **Workplace Join**, type your email address and select **Join** to complete registering the device.
 
-Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d’entreprise :
+Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d'entreprise :
 
-1. Lancez Portail d’entreprise et allez sur **l’onglet** Appareils.
+1. Lancez Portail d'entreprise et allez sur **l’onglet** Appareils.
 2. Sélectionnez l’appareil pour voir les détails de l’appareil.
 3. Dans le menu des points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
-4. Vous devez maintenant être déconnecté de l’application Portail d’entreprise’application. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
+4. Vous devez maintenant être déconnecté de l’application Portail d'entreprise’application. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
 
 Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Des informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
 

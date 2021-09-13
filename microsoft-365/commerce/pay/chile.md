@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3bc5cd0d9f83db0b751cd836300369916405459af36fe4baa5309803951fec48
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c0818a141b493be7f10eb29a6710c0d003286078
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180348"
 ---
 # <a name="payment-information-for-chile"></a>Informations de paiement pour le Chili
 

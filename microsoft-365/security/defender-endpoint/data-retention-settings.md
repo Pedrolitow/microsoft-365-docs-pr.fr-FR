@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: fbf9561e214be2180d57b3b4dcd2369061d7a7d6
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182020"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour endpoint
 
@@ -59,7 +59,7 @@ Vous pouvez mettre à jour les paramètres de rétention des données. Par défa
 
 3. Cliquez **sur Enregistrer les préférences.**
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
 - [Configurer les notifications d’alerte dans Defender pour le point de terminaison](configure-email-notifications.md)
 - [Configurer des fonctionnalités avancées](advanced-features.md)

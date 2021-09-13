@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565809"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181036"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Afficher et organiser la file d’attente d’incidents Microsoft Defender pour point de terminaison
 
@@ -38,7 +38,7 @@ La **file d’attente Incidents** affiche un ensemble d’incidents qui ont ét�
 
 Par défaut, la file d’attente affiche les incidents observés au cours des 30 derniers jours, avec l’incident le plus récent affiché en haut de la liste, ce qui vous aide à voir les incidents les plus récents en premier.
 
-Vous pouvez choisir parmi plusieurs options pour personnaliser l’affichage de file d’attente Incidents. 
+Plusieurs options s’offrent à vous pour personnaliser l’affichage de file d’attente Incidents. 
 
 Dans la barre de navigation supérieure, vous pouvez :
 - Personnaliser des colonnes pour ajouter ou supprimer des colonnes 
@@ -53,7 +53,7 @@ Dans la barre de navigation supérieure, vous pouvez :
 ## <a name="sort-and-filter-the-incidents-queue"></a>Trier et filtrer la file d’attente des incidents
 Vous pouvez appliquer les filtres suivants pour limiter la liste des incidents et obtenir une vue plus centrée.
 
-### <a name="severity"></a>Gravité
+### <a name="severity"></a>Severity
 
 Gravité de l’incident | Description
 :---|:---
@@ -78,7 +78,7 @@ Utilisez ce filtre pour afficher les incidents qui contiennent des étiquettes d
 
 Pour comprendre l’étendue de l’incident en un coup d’œil, les noms des incidents sont générés automatiquement en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories.
 
-Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leur nom.

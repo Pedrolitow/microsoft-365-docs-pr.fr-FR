@@ -1,5 +1,5 @@
 ---
-title: Migrer des données vers mon abonnement Microsoft 365 Business Standard abonnement
+title: Migrer des données vers mon abonnement Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,13 +15,13 @@ ms.custom:
 - AdminSurgePortfolio
 description: Migrez vos données Outlook, OneDrive et Teams vers Microsoft 365 Business Standard
 ms.openlocfilehash: 0a690c5092d3f288544edc5077605a6728bffc80
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178444"
 ---
-# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migrer des données vers mon abonnement Microsoft 365 Business Standard abonnement
+# <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migrer des données vers mon abonnement Microsoft 365 Business Standard
 
 Suivez les étapes de cet article pour déplacer vos données OneDrive, Outlook et Teams vers votre abonnement Microsoft 365 Business Standard abonnement.
 
@@ -70,7 +70,7 @@ Avec vos comptes Microsoft 365 personnels et d’entreprise synchronisés avec v
 
 - Si vous avez partagé des fichiers OneDrive auparavant, vous devrez les partager à nouveau dans votre nouvelle OneDrive pour travailler après les avoir déplacez. En outre, une fois que vous partagez ces fichiers, nous vous recommandons de supprimer les fichiers d’origine de OneDrive. Ainsi, les personnes ne pourront pas faire référence à des copies de fichiers que vous avez partagées avec eux précédemment.
 
-## <a name="step-set-up-outlook-for-email"></a>Étape : Configurer la Outlook courrier électronique
+## <a name="step-set-up-outlook-for-email"></a>Étape : configurer Outlook pour le courrier électronique
 
 1. Dans le menu Démarrer de Windows, recherchez Outlook, puis sélectionnez-le.
 
@@ -130,7 +130,7 @@ Une fois votre nouveau compte Microsoft Teams travail installé, vous pouvez rec
 
 Pour migrer vos contacts à partir de votre compte Teams personnel, recherchez l’adresse e-mail du contact et ajoutez l’utilisateur à votre nouveau compte Teams pour le travail.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Importer ou migrer du courrier à partir de Gmail ou d’un autre fournisseur de messagerie vers Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
 

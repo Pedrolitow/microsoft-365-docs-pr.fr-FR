@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Découvrez comment accéder à la fonctionnalité Bookings dans Microsoft 365.
 ms.openlocfilehash: 151534c2ba2effc265c8d836240a81ce88a17403
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178315"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Accès à Microsoft Bookings
 

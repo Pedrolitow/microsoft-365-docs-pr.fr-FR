@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
-description: Découvrez comment activer et gérer des applications tierces dans Centre d’administration Microsoft 365.
+description: Découvrez comment activer et gérer des applications tierces dans Centre d'administration Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: d7de6613ae77d70631b926ac1c2e72fab8b1837bacaf6f6f0e5a4735ef5dd06b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: df3c5372396394f1b2c80bb07aca0a79d8883bf4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181571"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements d’applications tierces pour votre organisation
 
-Vous pouvez gérer les licences et la facturation des applications tierces dans la nouvelle Centre d’administration Microsoft 365. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
+Vous pouvez gérer les licences et la facturation des applications tierces dans la nouvelle <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Comment obtenir des applications de logiciel en tant que service
 
@@ -38,7 +39,7 @@ Il existe plusieurs façons d’acheter des applications tierces.
 - **Achat de partenaire** : travaillez avec un partenaire via l’Partner Center pour acheter des abonnements.
 - **Proposition Microsoft** : répondre à une proposition de Microsoft Sales qui inclut des applications tierces.
 
-Une fois que les clients achètent les applications et acceptent le contrat client Microsoft, ils peuvent les gérer dans Centre d’administration Microsoft 365 ou Microsoft Store pour Entreprises.
+Une fois que les clients achètent les applications et acceptent le contrat client Microsoft, ils peuvent les gérer dans Centre d'administration Microsoft 365 ou Microsoft Store pour Entreprises.
 
 Les fournisseurs d’applications vendent leurs applications à un taux fixe ou en achetant des licences pour les utilisateurs.
 
@@ -74,7 +75,7 @@ Vous serez dirigé vers le site de l’éditeur d’application où vous pouvez 
 
 ## <a name="manage-third-party-apps"></a>Gérer les applications tierces
 
-Les administrateurs gèrent les applications tierces dans deux emplacements : Centre d’administration Microsoft 365 et le portail du fournisseur d’applications tiers.
+Les administrateurs gèrent les applications tierces dans deux emplacements : Centre d'administration Microsoft 365 et le portail du fournisseur d’applications tiers.
 
 Voici ce que vous pouvez faire dans chaque portail.
 
@@ -100,11 +101,11 @@ Les administrateurs peuvent modifier le nombre de licences dont leur organisatio
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. Sélectionnez **Modifier le nombre de licences.**
 
-## <a name="manage-payment-methods"></a>Gérer les méthodes de paiement
+## <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
 Un profil de facturation est attribué aux applications de logiciel en tant que service. Les profils de facturation vous permet de personnaliser les produits inclus sur votre facture et la façon dont vous payez vos factures. En voici la liste :
 
-- **Modes de paiement :** cartes de crédit ou transfert de chèque/virement
+- **Modes de paiement :** cartes de crédit ou virement bancaire
 - **Informations de contact** : adresse de facturation et nom du contact
 - **Rôles** : rôles qui vous permettent de modifier le profil de facturation, de payer les factures ou d’utiliser le mode de paiement sur le profil de facturation pour effectuer des achats.
 

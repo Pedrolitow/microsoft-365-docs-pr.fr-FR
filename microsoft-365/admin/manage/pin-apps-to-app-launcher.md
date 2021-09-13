@@ -15,11 +15,11 @@ ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: En tant qu’administrateur général, vous pouvez épingler jusqu’à trois applications au lanceur d’applications de vos utilisateurs.
 ms.openlocfilehash: bbb41dfcb72849287bb9ce87ab2c9d250b1b4d99
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178956"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Épingler des applications au lanceur d’applications de vos utilisateurs
 
@@ -29,7 +29,7 @@ Pour plus d’informations sur le lanceur d’applications [](https://support.mi
 
 ## <a name="use-the-azure-active-directory-portal-to-pin-apps"></a>Utiliser le portail Azure Active Directory pour épingler des applications
 
-1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Azure Active Directory**.
 3. In **Azure Active Directory**, choose **Enterprise applications** User  >  **settings**.
 4. Dans la **section Office 365 Paramètres,** choisissez **Ajouter une application.**
@@ -43,7 +43,7 @@ Pour plus d’informations sur le lanceur d’applications [](https://support.mi
 > L’interface utilisateur indique si vous devez acheter des licences Azure AD supplémentaires pour utiliser cette fonctionnalité. Pour plus d’informations, [voir Azure Active Directory tarification.](https://azure.microsoft.com/pricing/details/active-directory/)
 
 1. In **Azure Active Directory**, choose **Enterprise applications** New  >  **application** on the top of the All **applications** page.
-2. Dans la page Ajouter une **application,** choisissez **Application non galerie** ou Créez votre propre **application** si vous êtes dans la version d’aperçu de Azure Active Directory. 
+2. Dans la page Ajouter une **application,** choisissez **application non galerie** ou Créez votre propre **application** si vous êtes dans la version d’aperçu de Azure Active Directory. 
 3. Tapez un nom pour l’application, puis attribuez un utilisateur dans l’onglet **Utilisateurs et** groupes.
 4. Utilisez **l’onglet Propriétés** pour télécharger une icône pour l’application.
 5. Pour affecter une URL à l’application, sous l’onglet **Sign-on** unique, choisissez **Lié,** puis entrez une URL.

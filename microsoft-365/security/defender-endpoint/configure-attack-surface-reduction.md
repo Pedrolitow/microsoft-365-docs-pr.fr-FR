@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/11/2021
 ms.openlocfilehash: 79129d25c730f7948269c4291e53e3fc953af329
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177708"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>Configurer les fonctionnalités de la réduction de la surface d’attaque
 

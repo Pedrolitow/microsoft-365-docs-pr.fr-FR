@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Supprimez des groupes ou des stratégies pour désactiver la mobilité et la sécurité de base.
-ms.openlocfilehash: 06d53af28239721f08804949a53cd6b2251f89f44dc8709ea384e29872bf1c37
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826698"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176804"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Désactiver l’option Mobility et Security de base
 
@@ -32,7 +32,7 @@ Pour désactiver efficacement la mobilité et la sécurité de base, vous suppri
 Ces options suppriment l’application de la mobilité et de la sécurité de base pour les appareils de votre organisation. Malheureusement, vous ne pouvez pas simplement « mettre en service » Basic Mobility and Security après l’avoir installé.
 
 > [!IMPORTANT]
-> N’ignorez pas l’impact sur les appareils des utilisateurs lorsque vous supprimez des groupes de sécurité utilisateur des stratégies ou supprimez les stratégies elles-mêmes. Par exemple, les profils de messagerie et les e-mails mis en cache peuvent être supprimés, en fonction de l’appareil. Pour plus d’informations,  [voir que se passe-t-il lorsque](../../admin/basic-mobility-security/create-device-security-policies.md) vous supprimez une stratégie ou supprimez un utilisateur de la stratégie ?
+> N’ignorez pas l’impact sur les appareils des utilisateurs lorsque vous supprimez des groupes de sécurité utilisateur des stratégies ou supprimez les stratégies elles-mêmes. Par exemple, les profils de messagerie et les e-mails mis en cache peuvent être supprimés, en fonction de l’appareil. Pour plus d’informations,  [que se passe-t-il lorsque](../../admin/basic-mobility-security/create-device-security-policies.md) vous supprimez une stratégie ou supprimez un utilisateur de la stratégie ?
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Supprimer des groupes de sécurité utilisateur des stratégies d’appareil de mobilité et de sécurité de base
 

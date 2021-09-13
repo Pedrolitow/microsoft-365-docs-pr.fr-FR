@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
 ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179723"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
@@ -113,7 +113,7 @@ Ensuite, configurez de la Connexion Azure AD Connect sur APP1 pour écriture d
 
 6. Dans les **Connecter et** les pages de filtrage **domaine/ou,** sélectionnez **Suivant**.
 
-7. Dans la page **Fonctionnalités facultatives,** sélectionnez **Écriture écriture par** mot de passe, puis **sélectionnez Suivant**.
+7. Dans la page **Fonctionnalités facultatives,** sélectionnez **Écriture écriture par** mot de passe, puis sélectionnez **Suivant**.
 
 8. Dans la page **Prêt à configurer,** sélectionnez **Configurer** et attendez la fin du processus.
 
@@ -123,7 +123,7 @@ Vous êtes maintenant prêt à tester l’écriture écriture par mot de passe p
 
 La configuration qui en résulte ressemble à ceci :
 
-![L’entreprise simulée avec environnement de test d’authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
+![Environnement de test de l’entreprise simulée avec authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
 
 Cette configuration se compose des éléments suivants : 
 

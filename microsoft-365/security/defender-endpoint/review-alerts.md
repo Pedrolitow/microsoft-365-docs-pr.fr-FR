@@ -18,11 +18,11 @@ ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
 ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571276"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179212"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Passer en revue les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -42,7 +42,7 @@ Triez rapidement, examinez et prenez des mesures efficaces sur les alertes qui a
 
 ## <a name="getting-started-with-an-alert"></a>Mise en place d’une alerte
 
-Si vous sélectionnez le nom d’une alerte dans Defender pour le point de terminaison, vous serez sur sa page d’alerte. Sur la page d’alerte, toutes les informations s’afficheront dans le contexte de l’alerte sélectionnée. Chaque page d’alerte se compose de 4 sections :
+La sélection du nom d’une alerte dans Defender pour le point de terminaison vous placera sur sa page d’alerte. Sur la page d’alerte, toutes les informations s’afficheront dans le contexte de l’alerte sélectionnée. Chaque page d’alerte se compose de 4 sections :
 
 1. **Le titre de l’alerte** affiche le nom de l’alerte et est là pour vous rappeler quelle alerte a démarré votre enquête en cours, indépendamment de ce que vous avez sélectionné sur la page.
 2. [**Les ressources affectées**](#review-affected-assets) répertorient les cartes d’appareils et d’utilisateurs affectés par cette alerte qui peuvent être cliquées pour obtenir plus d’informations et d’actions.
@@ -77,11 +77,11 @@ La sélection d’un appareil ou d’une carte utilisateur dans les sections res
 
    ![Extrait du volet d’informations lorsqu’un appareil est sélectionné.](images/device-page-details.png)
 
-- Pour les utilisateurs, le volet d’informations affiche des informations détaillées sur l’utilisateur, telles que le nom SAM et le SID de l’utilisateur, ainsi que les types d’accès effectués par cet utilisateur, ainsi que les alertes et incidents qui lui sont associés. Vous pouvez sélectionner *Ouvrir la page utilisateur pour* poursuivre l’examen du point de vue de cet utilisateur.
+- Pour les utilisateurs, le volet d’informations affiche des informations détaillées sur l’utilisateur, telles que le nom SAM et le SID de l’utilisateur, ainsi que les types d’accès effectués par cet utilisateur, ainsi que les alertes et incidents qui lui sont associés. Vous pouvez sélectionner *Ouvrir la page utilisateur* pour poursuivre l’examen du point de vue de cet utilisateur.
 
    ![Extrait du volet d’informations lorsqu’un utilisateur est sélectionné.](images/user-page-details.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)
 - [Enquêter sur des incidents](investigate-incidents.md)

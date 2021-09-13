@@ -23,13 +23,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: Découvrez comment configurer l’option de publication pour les nouvelles mises à jour de produits et de fonctionnalités dans le Centre d’administration Microsoft 365.
+description: Découvrez comment configurer l’option de publication pour les nouvelles mises à jour de produits et de fonctionnalités dans le Centre d'administration Microsoft 365.
 ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178972"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
@@ -76,7 +76,7 @@ Si vous [définissez l’option](#set-up-the-release-option-in-the-admin-center)
   
 ## <a name="benefits-of-targeted-release"></a>Avantages de la publication ciblée
 
-La publication ciblée permet aux administrateurs, aux responsables des modifications ou à toute autre personne responsable de Microsoft 365 mises à jour de se préparer aux modifications à venir en leur permettant d':
+La publication ciblée permet aux administrateurs, aux responsables des modifications ou à toute autre personne responsable de Microsoft 365 mises à jour de se préparer aux modifications à venir en leur permettant de :
   
 - tester et valider les nouvelles mises à jour avant qu'elles soient publiées pour tous les utilisateurs au sein de l'organisation ;
     
@@ -95,7 +95,7 @@ Vous pouvez modifier la façon dont votre organisation reçoit Microsoft 365 mis
 > [!IMPORTANT]
 > Jusqu’à 24 heures peuvent être nécessaires pour que les modifications ci-dessous prennent effet dans Microsoft 365. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
   
-1. Dans le Centre d’administration, sélectionnez le **paramètre**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"></a>**Paramètres’organisation,** puis sous l’onglet Profil de l’organisation, choisissez Préférences **de publication.**
+1. Dans le centre d’administration, sélectionnez le **paramètre**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"></a>**Paramètres’organisation,** puis sous l’onglet Profil de l’organisation, choisissez Préférences **de publication.**
 
 5. Pour désactiver la publication ciblée, sélectionnez **Publication standard,** puis **sélectionnez Enregistrer les modifications.** 
     
@@ -107,9 +107,9 @@ Vous pouvez modifier la façon dont votre organisation reçoit Microsoft 365 mis
     
 9. Lorsque vous avez terminé d’ajouter des utilisateurs, **sélectionnez Enregistrer les modifications.**
   
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Découvrez comment gérer [les messages](/office365/admin/manage/message-center) dans votre centre de messages [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour obtenir des notifications sur les mises à jour et les Microsoft 365 à venir.
+Découvrez comment gérer [les messages](/office365/admin/manage/message-center) dans votre centre Microsoft 365 [messages pour](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) recevoir des notifications sur les mises à jour et les Microsoft 365 à venir.
 
 ## <a name="related-content"></a>Contenu associé
 

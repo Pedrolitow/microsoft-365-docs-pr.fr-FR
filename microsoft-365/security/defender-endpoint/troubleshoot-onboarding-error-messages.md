@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
 ms.openlocfilehash: 24d6873df2432adf5e56b62f01e784f65df4e980
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576187"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177547"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre des problèmes d’abonnement et de portail d’accès
 
@@ -74,7 +74,7 @@ Si le tableau de bord du portail et d’autres sections indiquent un message d�
 
 ![L’image des données n’est actuellement pas disponible.](images/atp-data-not-available.png)
 
-Vous devez autoriser le sous-domaine et tous ses `security.windows.com` sous-domaine. Par exemple : `*.security.windows.com`.
+Vous devez autoriser le sous-domaine et tous ses `security.windows.com` sous-domaine. Par exemple, `*.security.windows.com`.
 
 
 ## <a name="portal-communication-issues"></a>Problèmes de communication du portail

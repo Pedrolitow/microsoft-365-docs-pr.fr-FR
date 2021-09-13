@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment créer un centre de contenu dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 6ec19516b12166104ab6e78974d349f4113ab55b3bf188fb0291cb8a5429e0c2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a50a31d29cc53a70a7e13f9cd83e76933aa39cf8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850333"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179835"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Créer un centre de contenu dans Microsoft SharePoint Syntex
 
@@ -77,7 +77,7 @@ La bibliothèque de **Modèles** dans l’affichage centre de contenu par défau
 > Vous ne pouvez pas modifier le centre de contenu par défaut désigné. Il s’agit toujours du premier centre de contenu créé lors de l’installation. 
 
 ## <a name="see-also"></a>Voir aussi
-[Créer un classificateur](create-a-classifier.md)
+[Créer un classifieur](create-a-classifier.md)
 
 [Créer un extracteur](create-an-extractor.md)
 

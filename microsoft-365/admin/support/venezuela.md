@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 35b93728f4c7f68b6892e2ebbde8f29b11e8b3984055500506a0b82044fbfeba
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5fd2406c4619616e3460fe6afe63cc2cd25ab6c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178363"
 ---
 # <a name="contact-support-for-venezuela"></a>Contacter le support pour le Venezuela
 

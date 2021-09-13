@@ -17,15 +17,15 @@ search.appverid:
 description: Découvrez comment importer des données non Microsoft 365 dans un groupe de révision pour analyse dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 65244b74cd868c4ec308327d15a070e67b9ac551
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569044"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179883"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un groupe de révision
 
-Tous les documents que vous devez analyser dans Advanced eDiscovery sont situés dans Microsoft 365. Avec la fonctionnalité d’importation de données non-Microsoft 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans Microsoft 365 dans un groupe de révision. Cet article vous montre comment faire entrer vos documents non Microsoft 365 dans des Advanced eDiscovery pour analyse.
+Tous les documents que vous devez analyser dans Advanced eDiscovery sont pas situés dans Microsoft 365. Avec la fonctionnalité d’importation de données non-Microsoft 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans Microsoft 365 dans un groupe de révision. Cet article vous montre comment faire entrer vos documents non Microsoft 365 dans des Advanced eDiscovery pour analyse.
 
 ## <a name="requirements-to-upload-non-office-365-content"></a>Conditions requises pour télécharger du contenu non Office 365 contenu
 

@@ -1,5 +1,5 @@
 ---
-title: Feuille de route réseau pour les Microsoft 365
+title: Feuille de route réseau pour Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -16,13 +16,13 @@ ms.collection:
 ms.custom: ''
 description: Feuille de route pour l’Microsoft 365 réseau.
 ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177747"
 ---
-# <a name="networking-roadmap-for-microsoft-365"></a>Feuille de route réseau pour les Microsoft 365
+# <a name="networking-roadmap-for-microsoft-365"></a>Feuille de route réseau pour Microsoft 365
 
 Microsoft 365 entreprise inclut des services cloud de collaboration et de productivité, des Microsoft Intune et de nombreux services d’identité et de sécurité Microsoft Azure. Tous ces services cloud s’appuient sur la sécurité, les performances et la fiabilité des connexions à partir d’appareils clients via Internet ou des circuits dédiés. Pour héberger ces services et les rendre accessibles aux clients dans le monde entier, Microsoft a conçu une infrastructure réseau qui met en évidence les performances et l’intégration. 
 
@@ -30,7 +30,7 @@ Une partie essentielle de votre intégration Microsoft 365 consiste à vous assu
 
 Utilisez ces articles pour comprendre les différences clés et modifier vos équipements de périmètre, ordinateurs clients et réseau local pour obtenir les meilleures performances de la part de vos utilisateurs locaux.
 
-## <a name="plan"></a>Plan
+## <a name="plan"></a>Planification
 
 Dans la phase de planification de votre implémentation réseau :
 

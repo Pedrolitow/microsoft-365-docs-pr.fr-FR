@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Zoom DataParser 17a-4 pour importer et archiver des données Zoom dans Microsoft 365.
 ms.openlocfilehash: 2412969e2cbe5e6f601b9cf789585d931a4e7a3a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178035"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-data"></a>Configurer un connecteur pour archiver les données de zoom
 
@@ -77,6 +77,6 @@ Après avoir créé un connecteur Zoom DataParser, vous pouvez afficher l’éta
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment exporter ou télécharger du contenu à partir d’un jeu à réviser pour des présentations ou des avis externes dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8710f505d06e21d52a2445cd82780e8f0dff9b075623447a53be067bb9fe8d9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 25c64cad6877a05dba9df418955a6a79a539993a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182392"
 ---
 # <a name="export-case-data-in-advanced-ediscovery"></a>Exporter les données de cas dans Advanced eDiscovery
 
@@ -35,4 +35,4 @@ Il existe trois façons d’exporter des données à partir d’un jeu à révis
 **Ajoutez à un autre jeu à réviser :** Copiez les données d’un jeu à réviser vers un autre. Pour plus d’informations, voir [Ajouter des données d’un jeu à réviser à un autre.](add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
-> Dans Microsoft 365, les données sont hachées et ces hachages sont fournis dans le fichier de sortie à des fins de vérification. Cela est complété par les journaux d’audit et les fonctionnalités de rapport, telles que les statistiques de collecte, les rapports de jeu de charge et les rapports d’exportation (y compris le fichier de chargement d’exportation).
+> Dans Microsoft 365, les données sont hachées et ces hachages sont fournis dans le fichier de sortie à des fins de vérification. Cette fonctionnalité est complétée par les journaux d’audit et les fonctionnalités de rapports, telles que les statistiques de collecte, les rapports d’ensemble de charge et les rapports d’exportation (y compris le fichier de chargement d’exportation).

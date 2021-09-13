@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Aidez vos employés à apprendre à configurer Office applications qu’ils obtiennent avec Microsoft 365 Business Premium.
 ms.openlocfilehash: 7c7f28a13438d2cd5974d212d56c6885d8d4850c
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377762"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181745"
 ---
 # <a name="employee-quick-setup"></a>Configuration rapide pour les employés
 
@@ -66,7 +66,7 @@ Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="
 
 - Vous pouvez également copier des fichiers du Bureau ou du dossier Documents dans **OneDrive**.
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Image montrant comment enregistrer dans une OneDrive dossier Documents.":::
+    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Image montrant comment enregistrer pour OneDrive à partir du dossier Documents.":::
 
     > [!TIP]
     > Vous pouvez également stocker des fichiers sur [des sites](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) Microsoft 365.

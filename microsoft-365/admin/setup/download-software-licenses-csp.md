@@ -21,11 +21,11 @@ ms.custom:
 description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme fournisseur de solutions Cloud (CSP).
 ms.date: 01/27/2021
 ms.openlocfilehash: 5dd2e17685746859768a14d61537871a75fe6698
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178515"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel perpétuelle
 
@@ -33,12 +33,12 @@ Cet article explique comment télécharger des clés de licence logicielle et de
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global pour suivre les étapes de cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
+Vous devez être un administrateur global pour suivre les étapes de cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
 
 ## <a name="download-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel
 
 1. Dans le Centre d’administration Microsoft 365, accédez à la page **Factures** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sous **l’onglet** Produits, dans la section **Logiciels,** sélectionnez le logiciel à télécharger.
+2. Sous **l’onglet** Produits, dans la section **Logiciel,** sélectionnez le logiciel à télécharger.
 3. Dans la page détails de l’abonnement, dans la section **Téléchargements &** clés, choisissez la **version** du **produit,** la langue et le type de fichier **&** processeur, puis sélectionnez **Télécharger**.
 4. Pour télécharger la clé, **sélectionnez Copier la clé dans le Presse-papiers.**
 5. Dans le volet droit, **sélectionnez Copier,** puis fermez le volet.

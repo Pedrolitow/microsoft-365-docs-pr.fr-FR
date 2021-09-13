@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer l’application Administration Microsoft 365 mobile sur votre téléphone.
-ms.openlocfilehash: 591a5440d3257afad9728b75013737daebad73694322774db19e8eacb0700abb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180676"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installer l’Administration Microsoft 365'application mobile sur votre téléphone
 
@@ -39,7 +39,7 @@ Vous pouvez utiliser l’application mobile Administration Microsoft 365 pour g�
 2. Connectez-vous à l’aide de votre adresse de messagerie d’administrateur général, puis consultez le tableau de bord pour afficher l’état du service, surveiller les licences utilisateur et afficher les messages et les demandes de service.
 3. Voici quelques tâches courantes que vous pouvez effectuer avec l’application :
 
-### <a name="reset-a-users-password"></a>Réinitialiser le mot de passe d’un utilisateur
+### <a name="reset-a-users-password"></a>Réinitialiser le mot de passe d'un utilisateur
 
 1. Sous **Liens rapides,** sélectionnez **Utilisateurs.**
 2. Dans la page **Utilisateurs,** choisissez le nom de l’utilisateur, puis réinitialisez **le mot de passe.**

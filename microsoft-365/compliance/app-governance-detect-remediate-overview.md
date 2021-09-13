@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: En savoir plus sur la détection et la correction des menaces d’application.
 ms.openlocfilehash: 0812615a8a0ed78f0649a59a0f884f1c37a9e368
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181451"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>En savoir plus sur la détection et la correction des menaces d’application
 

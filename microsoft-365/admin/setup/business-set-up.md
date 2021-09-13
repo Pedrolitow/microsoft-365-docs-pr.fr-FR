@@ -31,11 +31,11 @@ search.appverid:
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
 ms.openlocfilehash: 7e01a27361ba681a6475c5e0165d8efbb16371a8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178548"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer des Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -123,11 +123,11 @@ Les stratégies que vous avez définies dans l’Assistant sont appliquées auto
 
 ## <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
 
-Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se connectez **et sécurité,** sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started. Pour obtenir des instructions [complètes, Windows 10 vos ordinateurs](secure-win-10-pcs.md) de sécurité.
+Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se **connectez-vous** et sécurité, sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started. Pour obtenir des instructions [complètes, Windows 10 vos ordinateurs](secure-win-10-pcs.md) de sécurité.
 
 ## <a name="deploy-office-365-client-apps"></a>Déployer Office 365 applications clientes
 
-Si vous avez choisi d’installer automatiquement des applications Office lors de l’installation, elles s’installeront sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
+Si vous avez choisi d’installer automatiquement des applications Office lors de l’installation, les applications s’installent sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
 
 Pour installer Office sur des appareils mobiles iOS ou Android, voir Configurer des appareils [mobiles pour Microsoft 365 Business Premium utilisateurs.](set-up-mobile-devices.md)
 

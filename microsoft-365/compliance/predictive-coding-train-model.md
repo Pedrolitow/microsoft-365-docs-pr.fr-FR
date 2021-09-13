@@ -15,17 +15,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: ''
 ms.openlocfilehash: 94351858da196edfd719d7b07ab6f125abf9d658
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177876"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Former un modèle de codage prédictif (prévisualisation)
 
 Après avoir créé un modèle de codage prédictif dans Advanced eDiscovery, l’étape suivante consiste à effectuer la première série de formations pour former le modèle à ce qui est pertinent et non pertinent dans votre jeu à réviser. Une fois que vous avez terminé la première série de formations, vous pouvez effectuer des séries de formation suivantes pour améliorer la capacité du modèle à prévoir du contenu pertinent et non pertinent.
 
-Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage prédictif dans Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
+Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage](predictive-coding-overview.md#the-predictive-coding-workflow) prédictif dans Advanced eDiscovery
 
 ## <a name="before-you-train-a-model"></a>Avant d’entraîner un modèle
 
@@ -53,9 +53,9 @@ Pour passer en revue le flux de travail de codage prédictif, voir [En savoir pl
 
 ## <a name="perform-additional-training-rounds"></a>Effectuer des séries de formation supplémentaires
 
-Après avoir effectué la première série de formations, vous pouvez effectuer des séries de formation suivantes en suivant les étapes de la section précédente. La seule différence est que le nombre de la série de formations sera mis à jour sous l’onglet **Vue d’ensemble du** modèle. Par exemple, après avoir effectué la première  série d’entraînements, vous pouvez cliquer sur Démarrer la série de formation suivante pour démarrer la deuxième série d’entraînements. Et ainsi de suite.
+Après avoir effectué la première série de formations, vous pouvez effectuer des séries de formation suivantes en suivant les étapes de la section précédente. La seule différence est que le nombre de la série de formations sera mis à jour sous l’onglet **Vue d’ensemble du** modèle. Par exemple, après avoir effectué la première  série de formations, vous pouvez cliquer sur Démarrer la série de formation suivante pour démarrer la deuxième série d’entraînements. Et ainsi de suite.
 
-Chaque série de formations (celles en cours et celles qui  sont terminées) s’affiche sous l’onglet Formation du modèle. Lorsque vous sélectionnez une série d’entraînements, une page volante avec des informations et des mesures pour la série s’affiche.
+Chaque série de formations (celles en cours et celles qui  sont terminées) s’affiche sous l’onglet Formation du modèle. Lorsque vous sélectionnez un cycle de formation, une page de présentation avec des informations et des mesures pour la série s’affiche.
 
 ## <a name="what-happens-after-you-perform-a-training-round"></a>Que se passe-t-il après avoir effectué une série de formations ?
 
@@ -65,7 +65,7 @@ Une fois que vous avez effectué la première série de formations, un travail e
 
 - Le modèle traite ensuite chaque élément de l’ensemble de révision et affecte un score de prédiction entre **0** (non pertinent) et **1** (pertinent).
 
-- Le modèle affecte un score de prédiction aux 10 éléments du jeu de contrôles que vous avez étiquetés pendant la série d’entraînement. Le modèle compare le score de prédiction de ces 10 éléments à l’étiquette réelle que vous avez affectée à l’élément au cours de la série de formation. Sur la base de cette comparaison, le modèle identifie la classification suivante (appelée matrice de *confusion* du jeu de contrôles) pour évaluer les performances de prévision du modèle :
+- Le modèle affecte un score de prédiction aux 10 éléments du jeu de contrôles que vous avez étiquetés pendant la série d’entraînement. Le modèle compare le score de prédiction de ces 10 éléments à l’étiquette réelle que vous avez affectée à l’élément pendant la série de formation. Sur la base de cette comparaison, le modèle identifie la classification suivante (appelée matrice de *confusion* du jeu de contrôles) pour évaluer les performances de prévision du modèle :
 
   <br>
 
@@ -73,7 +73,7 @@ Une fois que vous avez effectué la première série de formations, un travail e
 
   |Étiquette|L’élément de prévision de modèle est pertinent|L’élément de prévision de modèle n’est pas pertinent|
   |---|---|---|
-  |**Élément d’étiquettes de relecteur selon la pertinence**|Vrai positif|Faux positif|
+  |**Élément d’étiquettes de relecteur pertinent**|Vrai positif|Faux positif|
   |**Élément d’étiquettes de relecteur non pertinent**|Faux négatif|Vrai négatif|
   |
 
@@ -91,6 +91,6 @@ Après avoir effectué les séries de formation suivantes (après la première s
 
 - Le modèle mis à jour retrait chaque élément du jeu à réviser et affectait à chaque élément un score de prédiction mis à jour.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir effectué la première série de formations, vous pouvez effectuer d’autres séries de formations ou appliquer le filtre de score de prédiction du modèle au jeu à réviser pour afficher les éléments que le modèle a prévu comme pertinents ou non pertinents. Pour plus d’informations, voir [Appliquer un filtre de score de prédiction à un jeu à réviser.](predictive-coding-apply-prediction-filter.md)

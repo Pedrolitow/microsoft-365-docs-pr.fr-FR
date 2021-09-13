@@ -11,19 +11,19 @@ search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment configurer Sujets Microsoft Viva
 ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568695"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181157"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurer Sujets Microsoft Viva
 
-Vous pouvez utiliser la Centre d’administration Microsoft 365 pour configurer des [rubriques.](topic-experiences-overview.md) 
+Vous pouvez utiliser la Centre d'administration Microsoft 365 pour configurer des [rubriques.](topic-experiences-overview.md) 
 
 Il est important de planifier la meilleure façon de configurer des rubriques dans votre environnement. Veillez à lire [La Sujets Microsoft Viva](plan-topic-experiences.md) avant de commencer les procédures de cet article.
 
-Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d’administration Microsoft 365 et configurer Rubriques.
+Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d'administration Microsoft 365 et configurer Rubriques.
 
 > [!IMPORTANT]
 > Si vous avez configuré SharePoint [pour](/sharepoint/control-access-from-unmanaged-devices)exiger des appareils gérés, vous devez configurer Rubriques à partir d’un appareil géré.
@@ -46,14 +46,14 @@ Pour attribuer des licences :
 
 1. Dans le Centre d’administration Microsoft 365, sous **Utilisateurs**, cliquez sur **Utilisateurs actifs**.
 
-2. Sélectionnez les utilisateurs dont vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
+2. Sélectionnez les utilisateurs que vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
 
 3. Sous **Licences,** **sélectionnez Rubriques Titre.**
 
-4. Sous **Applications,** assurez-vous que Graph recherche de connecteurs avec **index (Rubriques Titres)** et **Rubriques De** l’affiche sont tous deux sélectionnés.
+4. Sous **Applications,** assurez-vous **que Graph connectors search with Index (Topics)** et **Topics Topics sont** tous deux sélectionnés.
 
    > [!div class="mx-imgBorder"]
-   > ![Sujets Microsoft Viva licences dans le Centre d’administration Microsoft 365.](../media/topic-experiences-licenses.png)
+   > ![Sujets Microsoft Viva licences dans le Centre d'administration Microsoft 365.](../media/topic-experiences-licenses.png)
 
 5. Cliquez sur **Enregistrer les modifications**.
 
@@ -65,7 +65,7 @@ Une fois les licences attribuées, l’accès aux rubriques peut prendre jusqu�
 > La première fois que la découverte de rubrique est activée, l’affichage De toutes les rubriques suggérées dans l’affichage Gérer les rubriques peut prendre jusqu’à deux semaines. La découverte de rubriques se poursuit au cours de la mise à jour ou de la mise à jour du contenu. Il est normal d’avoir des fluctuations dans le nombre de rubriques suggérées dans votre organisation, car les Rubriques Viva évaluent de nouvelles informations.
 
 Pour configurer des rubriques
-1. Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com)sélectionnez **Installation,** puis affichez la section **Fichiers et** contenu.
+1. Dans la [Centre d'administration Microsoft 365,](https://admin.microsoft.com)sélectionnez **Installation,** puis affichez la section **Fichiers et** contenu.
 2. Dans la section **Fichiers et contenu,** cliquez **Connecter personnes à connaître.**
 
     ![Connecter personnes à connaître.](../media/admin-org-knowledge-options.png) 
@@ -102,18 +102,18 @@ Pour configurer des rubriques
         - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
         - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
     - **Signifie (facultatif)**: si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
-    - **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
+    - **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
 
     Une fois que vous avez terminé et enregistré votre fichier .csv, sélectionnez **Parcourir** pour le localiser et le sélectionner.
     
     Sélectionnez **Suivant**.
 
-6. Sur la Qui pouvez voir les **rubriques** et où peuvent-elles les voir, vous allez configurer la visibilité des rubriques. Dans la Qui pouvez voir les paramètres des **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner :
+6. Sur la Qui pouvez voir les **rubriques** et où peuvent-elles les voir, vous allez configurer la visibilité des rubriques. Dans la Qui pouvez voir les paramètres des **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner:
     - **Tous les membres de mon organisation**
     - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
 
-    ![Qui pouvez voir les rubriques.](../media/ksetup2.png)  
+    ![Qui pouvez voir des rubriques.](../media/ksetup2.png)  
 
     > [!Note] 
     > Bien que ce paramètre vous permet de sélectionner n’importe quel utilisateur de votre organisation, seuls les utilisateurs qui ont des licences Expériences des rubriques qui leur sont attribuées pourront afficher les rubriques.
@@ -152,7 +152,7 @@ Pour configurer des rubriques
 
 ## <a name="manage-topic-experiences"></a>Gérer les expériences de rubrique
 
-Une fois que vous avez configuré Rubriques, vous pouvez modifier les paramètres que vous avez choisis lors de l’installation dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Si vous souhaitez en savoir plus, veuillez consulter les références suivantes :
+Une fois que vous avez configuré Rubriques, vous pouvez modifier les paramètres que vous avez choisis lors de l’installation dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Si vous souhaitez en savoir plus, veuillez consulter les références suivantes :
 
 - [Gérer la découverte de rubriques dans Sujets Microsoft Viva](topic-experiences-discovery.md)
 - [Gérer la visibilité des rubriques dans Sujets Microsoft Viva](topic-experiences-knowledge-rules.md)

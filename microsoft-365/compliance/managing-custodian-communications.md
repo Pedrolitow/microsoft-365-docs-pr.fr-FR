@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale en avertissant les dépositaires dans le cadre d’enquêtes juridiques.
-ms.openlocfilehash: 0cb845ee7aa110649d5c148868d0d8b1f16b2d801fb7b55c8b12170a121f975f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179868"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Travailler avec les communications dans Advanced eDiscovery
 

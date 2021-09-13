@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181127"
 ---
 # <a name="list-machines-api"></a>API De liste des ordinateurs
 
@@ -76,7 +76,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -131,6 +131,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Requêtes OData avec Microsoft Defender pour le point de terminaison](exposed-apis-odata-samples.md)

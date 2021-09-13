@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment récupérer le contenu d’une boîte aux lettres inactive dans Office 365 en le convertissant en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive.
-ms.openlocfilehash: 62b3412b0c6152ea0ceb3d902218654f6559c198c680743021bb18f0dcc9e0c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7f5ea9e3d47bf6b7ee6de495d2f5f47984cdf8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177804"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Récupérer une boîte aux lettres inactive
 
@@ -73,9 +73,9 @@ Utilisez la cmdlet **New-Mailbox** avec le  *paramètre InactiveMailbox*  pour r
 
    L’adresse SMTP principale de la boîte aux lettres inactive récupérée aura la même valeur que celle spécifiée par le paramètre *MicrosoftOnlineServicesID.*
 
-Après avoir récupéré une boîte aux lettres inactive, un nouveau compte d’utilisateur est également créé. Vous devez activer ce compte d’utilisateur en attribuant une licence. Pour attribuer une licence dans le Centre d’administration Microsoft 365, voir Ajouter des [utilisateurs et attribuer des licences en même temps.](../admin/add-users/add-users.md)
+Après avoir récupéré une boîte aux lettres inactive, un nouveau compte d’utilisateur est également créé. Vous devez activer ce compte d’utilisateur en attribuant une licence. Pour attribuer une licence dans le Centre d'administration Microsoft 365, voir Ajouter des [utilisateurs et attribuer des licences en même temps.](../admin/add-users/add-users.md)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - **Quelle est la principale différence entre la récupération et la restauration d'une boîte aux lettres inactive ?** Lorsque vous récupérez une boîte aux lettres inactive, la boîte aux lettres est convertie en une nouvelle boîte aux lettres, le contenu et la structure de dossiers de la boîte aux lettres inactive sont conservés et la boîte aux lettres est liée à un nouveau compte d'utilisateur. Une fois récupérée, la boîte aux lettres inactive n'existe plus et les modifications apportées au contenu dans la nouvelle boîte aux lettres affectent le contenu placé en attente dans la boîte aux lettres inactive. À l'inverse, lorsque vous restaurez une boîte aux lettres inactive, le contenu est simplement copié vers une autre boîte aux lettres. La boîte aux lettres inactive est conservée et reste une boîte aux lettres inactive. Toute modification apportée au contenu de la boîte aux lettres cible n'affecte pas le contenu d'origine conservé dans la boîte aux lettres inactive. La boîte aux lettres inactive peut toujours faire l'objet d'une recherche à l'aide de la découverte électronique inaltérable, son contenu peut être restauré vers une autre boîte aux lettres ou il peut être récupéré ou supprimé ultérieurement.
 

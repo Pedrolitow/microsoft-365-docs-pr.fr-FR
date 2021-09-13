@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Personnalisez votre page de signature avec une notification de confidentialité et de consentement pour Microsoft 365.
-ms.openlocfilehash: 4aad621567b678ec62abcd829beb7bf34b1ec3a5bbed94393ab8ac449498c0db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178260"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personnaliser votre page de signature avec une notification de confidentialité et de consentement
 

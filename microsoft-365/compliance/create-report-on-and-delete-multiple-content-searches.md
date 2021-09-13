@@ -20,11 +20,11 @@ ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports à l’aide du Centre de sécurité & conformité PowerShell.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574338"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182424"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -69,7 +69,7 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez à cette
    |`ExchangeLocation`|Adresse SMTP de la boîte aux lettres de l’utilisateur.|
    |`SharePointLocation`|URL du site OneDrive Entreprise de l’utilisateur ou URL de n’importe quel site de votre organisation. Pour l’URL OneDrive Entreprise sites web, utilisez ce format : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
    |`ContentMatchQuery`|Requête de recherche pour la recherche. Pour plus d’informations sur la création d’une requête de recherche, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)|
-   |`StartDate`|Pour le courrier électronique, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents SharePoint ou OneDrive Entreprise sites web, date de la dernière modification d’un document ou après celui-là.|
+   |`StartDate`|Pour le courrier électronique, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents SharePoint sites OneDrive Entreprise sites, date de la dernière modification d’un document ou après celui-là.|
    |`EndDate`|Pour le courrier électronique, date le ou avant qu’un message a été envoyé par un utilisateur. Pour les documents SharePoint ou OneDrive Entreprise sites web, la date à laquelle un document a été modifié pour la dernière fois ou avant celui-là.|
    |
 
@@ -174,7 +174,7 @@ Pour exécuter le script :
 
 3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par exemple,  `ContosoCase` . N’oubliez pas que ce nom est sensible à la cas, vous devez donc le taper de la même manière dans les étapes suivantes.
 
-4. À l’invite de fichiers **CSV source,** tapez le nom du fichier CSV, y compris l’extension .csv fichier . par exemple,  `ContosoCase.csv` .
+4. À **l’invite** de fichiers CSV source, tapez le nom du fichier CSV, y compris l’extension .csv fichier . par exemple,  `ContosoCase.csv` .
 
 5. Appuyez **sur Entrée** pour poursuivre l’exécution du script.
 
@@ -249,7 +249,7 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
 
 3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par  `ContosoCase` exemple. N’oubliez pas que ce nom est sensible à la cas, donc vous devez le taper comme vous l’avez fait lorsque vous avez écrit le script à l’étape 3.
 
-4. À l’invite chemin d’accès au fichier pour enregistrer le rapport dans un fichier **CSV (laisser** vide pour afficher simplement le rapport), tapez un nom de fichier complet (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension .csv fichier. Par exemple, vous pouvez taper pour l’enregistrer dans le répertoire actuel ou pour l’enregistrer  `ContosoCaseReport.csv`  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` dans un autre dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
+4. À l’invite chemin d’accès du fichier pour enregistrer le rapport dans un fichier **CSV (laissez** vide pour afficher simplement le rapport), tapez un nom de fichier complet (y compris l’extension de fichier .csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension .csv fichier. Par exemple, vous pouvez taper pour l’enregistrer dans le répertoire actuel ou pour  `ContosoCaseReport.csv` l’enregistrer dans un autre  `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport, mais pas l’enregistrer dans un fichier.
 
 5. Appuyez sur **Entrée**.
 
@@ -258,7 +258,7 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
    ![Exécutez le rapport de recherche pour afficher les estimations du groupe de recherche.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
-> Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document sera compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
+> Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document est compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
 
 ## <a name="step-5-run-the-script-to-delete-the-searches"></a>Étape 5 : Exécuter le script pour supprimer les recherches
 

@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpréter les frais, la facturation et les informations de paiement sur votre facture Microsoft 365 entreprise et comment modifier un numéro de bon de commande.
 ms.date: 05/04/2021
-ms.openlocfilehash: 996c1856eebb378531670bbb8f28f64bcdb409bddce2a089aa70e008a12f81bc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8881129b6d7013c731dbcb24ebd5f8e21e410b93
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181678"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -111,7 +111,7 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
 
 ::: moniker-end
 
@@ -127,7 +127,7 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 1. En bas des **détails de** modification pour le paiement par volet vocal, entrez votre numéro de bon de commande, puis sélectionnez **Enregistrer.**
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md) (article)\
 [Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](mexico-billing-info.md) (article) \

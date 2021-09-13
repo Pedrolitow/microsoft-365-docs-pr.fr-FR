@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Découvrez les options de paramètres globaux pour la gestion de la confidentialité.
 ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177836"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>Gérer les paramètres de gestion de la confidentialité (aperçu)
 

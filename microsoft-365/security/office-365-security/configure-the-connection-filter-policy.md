@@ -20,11 +20,11 @@ description: Les administrateurs peuvent apprendre à configurer le filtrage des
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6edcbbe885f8271b073afdff248106ce0d209960
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572442"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180893"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
@@ -148,7 +148,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-HostedConnectionFilterPolicy](/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné?
+## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien modifié la stratégie de filtrage des connexions par défaut, faites l’une des étapes suivantes :
 

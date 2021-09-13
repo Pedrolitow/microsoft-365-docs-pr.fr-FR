@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: e542a76e55e0ed9d75a1756026ff9a4f8c1d59ac
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567711"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179876"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gérer les dépositaires dans un Advanced eDiscovery de gestion
 
@@ -50,7 +50,7 @@ Pour afficher les détails sur un dépositaire, cliquez sur le dépositaire dans
 
   - **Ville** - ville dans laquelle se trouve le dépositaire.
 
-  - **État** : département ou province dans l’adresse du dépositaire.
+  - **État** : état ou province dans l’adresse du dépositaire.
 
   - **Pays/région** : pays/région où se trouve le dépositaire.
 
@@ -113,7 +113,7 @@ Pour déclencher le processus de ré-indexation afin de traiter les éléments p
 
 La ré-indexation des données des dépositaires est un processus de longue durée . la tâche correspondante créée est nommée **Re-indexation des données du dépositaire**. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou sous l’onglet **Dépositaires** en surveillant l’état dans la colonne État du travail **d’indexation.**
 
-Pour plus d’informations, voir :
+Pour plus d’informations, consultez :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 

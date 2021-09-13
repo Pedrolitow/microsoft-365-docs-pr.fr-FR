@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lorsque vous ajoutez plusieurs utilisateurs.
-ms.openlocfilehash: ff111850cf0dabda464653bc7503622d92e8468a430eb27a3dd2843f6ec5ade5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177099"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -33,7 +33,7 @@ Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les
 
 ## <a name="create-a-template"></a>Créer un modèle
 
-Les modèles sont faciles à créer. Vous pouvez sélectionner les modèles Utilisateurs actifs utilisateur, puis ajouter un modèle dans la liste de listes. Vous pouvez également ajouter un nouvel utilisateur et, lorsque vous avez terminé, vous avez la possibilité d’enregistrer l’entrée en tant que &mdash;   >    >  modèle. 
+Les modèles sont faciles à créer. Vous pouvez sélectionner des &mdash;   >    >  **modèles Utilisateurs actifs utilisateurs,**  puis ajouter un modèle dans la liste de listes. Vous pouvez également ajouter un nouvel utilisateur et, lorsque vous avez terminé, vous avez la possibilité d’enregistrer l’entrée en tant que modèle.
 
 Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs que vous choisissez pour les paramètres suivants sont enregistrées dans le modèle :
 
@@ -43,7 +43,7 @@ Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs 
 - Emplacement de la licence
 - Choix de licence
 - Choix de l’application
-- Rôle
+- Role
 - La plupart des informations de profil, telles que profil **de** travail, **service,** **Office,** **Office téléphone** et adresse **de rue** 
 
 Les informations suivantes sont propres à l’utilisateur et ne sont pas enregistrées dans le modèle :

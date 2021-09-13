@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le flux de travail de communications Advanced eDiscovery pour suivre l’état de vos notifications de mise en attente légale et, si nécessaire, les mettre à jour et les renvoyer.
-ms.openlocfilehash: 88dd3ef8e74dd67b196f574b1cfe8ba5c33a1a63afeac8701f19e36476e56767
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842133"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177963"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
@@ -62,7 +62,7 @@ Si un dépositaire n’a pas reconnu la notification de conservation, le flux de
 
 ## <a name="update-preservation-requirements"></a>Mettre à jour les exigences de conservation
   
-Au fur et à mesure de l’avancement du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Dans les termes eDiscovery, vous devez émettre à nouveau l’avis de mise en attente avec le contenu mis à jour.
+Au fur et à mesure de la progression du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Dans les termes eDiscovery, vous devez émettre à nouveau l’avis de mise en attente avec le contenu mis à jour.
 
 Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
@@ -72,7 +72,7 @@ Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
 3. Dans **l’Assistant Modifier la communication,** cliquez sur Définir le contenu du portail dans le volet gauche de l’Assistant, puis mettez à jour le contenu de l’avis. 
 
-4. Cliquez sur **Save (Enregistrer)**.
+4. Cliquez sur **Enregistrer**.
 
 L’avis de réé émission est envoyé à tous les dépositaires affectés à la notification de conservation légale. En outre, si l’avis de rappel ou d’escalade est activé, les flux de travail pour ces types de notifications redémarrent.
 

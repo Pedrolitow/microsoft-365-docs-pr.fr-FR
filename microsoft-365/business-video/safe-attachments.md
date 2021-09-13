@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment gérer les pièces jointes sécurisées.
-ms.openlocfilehash: 6bcb0bf316da4496dda3baca94cea4249b73dd6c0b5745490fbe26f632e98271
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9afbdef2c7b400cf0bee5ae1e1ac3a9de6588cb8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181696"
 ---
 # <a name="manage-safe-attachments"></a>Gérer les pièces jointes fiables
 

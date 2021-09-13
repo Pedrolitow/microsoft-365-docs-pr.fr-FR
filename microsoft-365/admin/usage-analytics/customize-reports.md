@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: Apprenez à personnaliser les rapports dans le navigateur et Power BI Desktop.
+description: Apprenez à personnaliser les rapports dans le navigateur et les Power BI Desktop.
 ms.openlocfilehash: 5dcdee05fbb413c7f1925f5e81c7e6596da111e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181786"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personnaliser les rapports dans l’analyse Microsoft 365'utilisation
 
@@ -77,7 +77,7 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
 
 7. Faites glisser **MonthName** vers la zone Champs, juste en-dessous du titre **Axe** de la zone **Visualisations**.
 
-    ![Nom du mois de glisser.](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
+    ![Drag Month Name.](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
 
 8. Dans la zone **Champs** de droite, développez la table **TenantProductUsage**.
 
@@ -129,7 +129,7 @@ Vous pouvez commencer par vous connecter directement aux API de rapports ODATA M
 
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>Utiliser le modèle d Microsoft 365 d’utilisation
 
-Vous pouvez également utiliser le fichier de modèle Power BI qui correspond aux rapports d’analyse Microsoft 365'utilisation de l’utilisateur comme point de départ pour se connecter aux données. L'avantage du fichier pbit est qu'il contient une chaîne de connexion déjà établie. Vous pouvez également tirer parti de toutes les mesures personnalisées créées, en plus des données renvoyées par le schéma de base.
+Vous pouvez également utiliser le fichier de modèle Power BI qui correspond aux rapports d’analyse Microsoft 365 d’utilisation de l’Microsoft 365 comme point de départ pour se connecter aux données. L'avantage du fichier pbit est qu'il contient une chaîne de connexion déjà établie. Vous pouvez également tirer parti de toutes les mesures personnalisées créées, en plus des données renvoyées par le schéma de base.
 
 Vous pouvez télécharger le fichier Power BI modèle à partir du [Centre de téléchargement Microsoft.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) Après avoir téléchargé le fichier Power BI de modèle, suivez les étapes suivantes pour commencer :
 

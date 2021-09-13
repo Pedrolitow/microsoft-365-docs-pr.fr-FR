@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Les publications du centre de messages sont en anglais uniquement, mais peuvent être affichées automatiquement dans la langue que vous spécifiez pour Microsoft 365.
 ms.openlocfilehash: 84d88c507b16e81fd63f28261cc27be4883584c3
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394251"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176316"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduction pour les publications du Centre de messagerie
 
@@ -40,7 +40,7 @@ Nous rédigeons les publications du Centre de messages uniquement en anglais en 
   
 ## <a name="set-your-preferred-language"></a>Définir la langue par défaut
 
-1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> ou la page d’accueil, sélectionnez l’icône des paramètres dans le coin supérieur droit de la fenêtre.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> ou la page d’accueil, sélectionnez l’icône des paramètres dans le coin supérieur droit de la fenêtre.
   
 2. Sous **Langue et fuseau horaire**, sélectionnez **Afficher tout** pour afficher les options disponibles. Sélectionnez la langue désirée dans le menu déroulant, puis cliquez sur **Enregistrer**. Microsoft 365 tentera alors d’actualiser votre choix, puis d’afficher la nouvelle langue. Si cela n'est pas immédiat ou semble prendre trop de temps, vous pouvez actualiser votre navigateur ou vous déconnecter, puis vous reconnecter.
   
@@ -50,9 +50,9 @@ Lorsque votre langue par défaut n'est pas l'anglais, les options de traduction 
   
 Pour configurer la traduction automatique des publications du Centre de messages et leur affichage dans la langue de votre choix, accédez à **État d'intégrité** \> **Centre de messages**. Un commutateur apparaîtra en haut de l'affichage de liste des messages pour activer ou désactiver la traduction automatique. Lorsque ce paramètre est désactivé, les publications sont affichées en anglais. Lorsque ce paramètre est activé, les messages s'affichent dans la langue de votre choix. Le paramètre choisi sera conservé pour chaque visite dans le Centre de messages. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Vue d’ensemble Centre d’administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
+[Vue d’ensemble Centre d'administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
 [Quel abonnement ai-je ?](../admin-overview/what-subscription-do-i-have.md) (article)\
 [Rester au fait des modifications](../manage/stay-on-top-of-updates.md) (article)
 

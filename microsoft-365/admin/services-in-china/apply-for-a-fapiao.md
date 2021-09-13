@@ -22,12 +22,12 @@ search.appverid:
 description: Découvrez comment envoyer votre demande Fapiao au système de gestion Fapiao 21Vianet après avoir effectué un paiement dans le Office 365 géré par 21Vianet en Chine.
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: b39794db35e3077021761776cafaf6ca6d6a9cdf695153e8942dfb137af248f8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178587"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Demander un fapiao pour Office 365 géré par 21Vianet
 
@@ -45,7 +45,7 @@ Il existe deux façons d’appliquer un Fapiao :
 
 2. Vous pouvez demander un fapiao à partir du Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration.</a>
 
-    ![Page Factures dans la Centre d’administration Microsoft 365.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
+    ![Page Factures dans la Centre d'administration Microsoft 365.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Étape 2 : s’inscrire auprès du système de gestion Fapiao 21Vianet
 

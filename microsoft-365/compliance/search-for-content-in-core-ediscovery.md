@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Recherchez du contenu qui peut être pertinent pour un cas core eDiscovery.
 ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175796"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Rechercher du contenu dans un cas core eDiscovery
 
@@ -47,7 +47,7 @@ Pour créer une recherche de découverte électronique principale :
 
 6. Dans la page **emplacements**, sélectionnez les emplacements de contenu à rechercher. Vous pouvez rechercher des boîtes aux lettres, les sites et des dossiers publics.
 
-    ![Choisissez les emplacements de contenu à placer en attente.](../media/ContentSearchLocations.png)
+    ![Choisissez les emplacements de contenu à mettre sous conservation.](../media/ContentSearchLocations.png)
   
    1. **Boîtes aux lettres Exchange** : définissez le bouton bascule sur **Activé**, puis cliquez sur **Sélectionner des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer les boîtes aux lettres des membres du groupe en conservation) à placer en conservation. Vous pouvez également effectuer une recherche dans la boîte aux lettres associée à une équipe Microsoft (pour les messages de canal), le groupe Office 365 et le groupe Yammer. Pour plus d’informations sur les données d’application stockées dans les boîtes aux lettres, consultez [Contenu stocké dans les boîtes aux lettres pour eDiscovery](what-is-stored-in-exo-mailbox.md).
 
@@ -59,7 +59,7 @@ Pour créer une recherche de découverte électronique principale :
 
 7. Dans la page **Définir vos conditions de recherche**, tapez une requête mot clé et ajoutez des conditions à la requête de recherche si nécessaire.
 
-   ![Configurez la requête de recherche.](../media/ContentSearchQuery.png)
+   ![Configurer la requête de recherche.](../media/ContentSearchQuery.png)
 
    1. Spécifiez des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour eDiscovery](keyword-queries-and-search-conditions.md).
 
@@ -80,6 +80,6 @@ Une fois la recherche terminée, vous pouvez prévisualiser les résultats de re
 
 - Lorsque vous cliquez **sur Choisir des utilisateurs,** des groupes ou des équipes pour spécifier les boîtes aux lettres à rechercher, le soche de boîte aux lettres qui s’affiche est vide. Il s’agit d’une conception pour améliorer les performances. Pour ajouter des destinataires à cette liste, cliquez sur Choisir des **utilisateurs,** des groupes ou des équipes, tapez un nom (un minimum de trois caractères) dans la zone de recherche, cochez la case en regard du nom, puis cliquez sur **Choisir.**
 
-- Vous pouvez ajouter des boîtes aux lettres inactives, des Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez des groupes Microsoft Teams, Yammer ou des groupes Office 365, la boîte aux lettres de groupe ou d’équipe est recherché . les boîtes aux lettres des membres du groupe ne sont pas recherchés.
+- Vous pouvez ajouter des boîtes aux lettres inactives, des Microsoft Teams, des groupes Yammer, des groupes Office 365 et des groupes de distribution à la liste des boîtes aux lettres à rechercher. L’utilisation de groupes de distribution dynamique n’est pas prise en charge. Si vous ajoutez des groupes Microsoft Teams, Yammer ou des groupes Office 365, la boîte aux lettres de groupe ou d’équipe est recherché ; les boîtes aux lettres des membres du groupe ne sont pas recherchés.
 
-- Pour ajouter des sites à la recherche, sélectionnez le bouton bascule, puis cliquez sur **Choisir des sites.** Tapez l’URL de chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365 web.
+- Pour ajouter des sites à la recherche, sélectionnez le bouton bascule, puis cliquez **sur Choisir des sites.** Tapez l’URL de chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Yammer ou un groupe Office 365 web.

@@ -20,15 +20,15 @@ metadata:
   - MET150
   description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
   ms.date: 09/15/2020
-  ms.openlocfilehash: 9cca88d8eb2d943d8d8d5377f4223e5a69251d6aa9048d8e0ab721373605cd4d
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53892638"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59180140"
 title: FAQ sur l’achat en libre-service
 summary: >
-  L’achat en libre-service permet aux utilisateurs d’essayer de nouvelles technologies et de développer des solutions qui, en fin de compte, profitent à leurs grandes organisations. Les équipes d’approvisionnement centralisée et les équipes techniques ont une visibilité pour tous les utilisateurs qui achètent et déploient des solutions d’achat en libre-service via <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">le Centre d’administration Microsoft 365</a>. Les administrateurs peuvent désactiver les achats en libre-service par produit via PowerShell. Pour plus d’informations, voir [Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce.](allowselfservicepurchase-powershell.md)
+  L’achat en libre-service permet aux utilisateurs d’essayer de nouvelles technologies et de développer des solutions qui, en fin de compte, profitent à leurs grandes organisations. Les équipes d’approvisionnement centralisée et les équipes techniques ont une visibilité pour tous les utilisateurs qui achètent et déploient des solutions d’achat en libre-service via <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">le Centre d'administration Microsoft 365</a>. Les administrateurs peuvent désactiver les achats en libre-service par produit via PowerShell. Pour plus d’informations, voir [Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce.](allowselfservicepurchase-powershell.md)
 
 
   L’achat en libre-service est disponible pour les plateformes Power Platform (Power BI, Power Apps et Power Automate), Project et Visio.
@@ -43,7 +43,7 @@ sections:
   - question: >
       Comment un client achète-t-il des services libre-service ?
     answer: >
-      Les clients peuvent effectuer un achat en libre-service en ligne à partir des sites web du produit ou à partir d’invites d’achat dans l’application. Les clients sont d’abord invités à entrer une adresse de messagerie pour s’assurer qu’ils sont un utilisateur dans un client Azure Active Directory (AD). Ensuite, ils sont dirigés vers la connexion à l’aide de leurs informations d’identification Azure AD. Après la signature, le client est invité à sélectionner le nombre d’abonnements qu’il souhaite acheter et à fournir le paiement par carte de crédit. Une fois l’achat terminé, ils peuvent commencer à utiliser leur abonnement. L’acheteur a accès à une vue limitée des <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> où il peut attribuer des licences au produit à d’autres personnes de son organisation.
+      Les clients peuvent effectuer un achat en libre-service en ligne à partir des sites web du produit ou à partir d’invites d’achat dans l’application. Les clients sont d’abord invités à entrer une adresse de messagerie pour s’assurer qu’ils sont un utilisateur dans un client Azure Active Directory (AD). Ensuite, ils sont dirigés vers la connexion à l’aide de leurs informations d’identification Azure AD. Après la signature, le client est invité à sélectionner le nombre d’abonnements qu’il souhaite acheter et à fournir le paiement par carte de crédit. Une fois l’achat terminé, ils peuvent commencer à utiliser leur abonnement. L’acheteur a accès à une vue limitée des <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> où il peut attribuer des licences au produit à d’autres personnes de son organisation.
   - question: >
       Quelles sont les options de paiement pour les achats en libre-service ?
     answer: >
@@ -66,11 +66,11 @@ sections:
   - question: >
       Qui les acheteur en libre-service peuvent-ils attribuer des licences ?
     answer: >
-      Les acheteur en libre-service peuvent uniquement attribuer des licences aux utilisateurs du même client Azure AD. L’acheteur a accès à une vue limitée du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> pour attribuer des licences. Les acheteur peuvent attribuer des licences aux produits qu’ils ont achetés par le biais d’un achat en libre-service, et peuvent uniquement attribuer ces licences aux utilisateurs du même client Azure AD.
+      Les acheteur en libre-service peuvent uniquement attribuer des licences aux utilisateurs du même client Azure AD. L’acheteur a accès à une vue limitée du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> pour attribuer des licences. Les acheteur peuvent attribuer des licences aux produits qu’ils ont achetés par le biais d’un achat en libre-service, et peuvent uniquement attribuer ces licences aux utilisateurs du même client Azure AD.
   - question: >
       Où l’acheteur libre-service voit-il et gère-t-il ses achats ?
     answer: >
-      Les acheteur en libre-service peuvent gérer leurs achats dans l’affichage limité du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Les acheteur peuvent toujours se rendre  au Centre d’administration à partir de la vignette Administrateur dans le lanceur d’applications intégré à toutes les applications Microsoft 365 et Dynamics Online. Les acheteur peuvent afficher les achats qu’ils ont effectués, acheter des abonnements supplémentaires au même service et attribuer des licences pour ces abonnements à d’autres utilisateurs de leur organisation. En outre, les acheteur peuvent afficher et payer leur facture, mettre à jour leur mode de paiement et annuler leur abonnement.
+      Les acheteur en libre-service peuvent gérer leurs achats dans l’affichage limité du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Les acheteur peuvent toujours se rendre  au Centre d’administration à partir de la vignette Administrateur dans le lanceur d’applications intégré à toutes les applications Microsoft 365 et Dynamics Online. Les acheteur peuvent afficher les achats qu’ils ont effectués, acheter des abonnements supplémentaires au même service et attribuer des licences pour ces abonnements à d’autres utilisateurs de leur organisation. En outre, les acheteur peuvent afficher et payer leur facture, mettre à jour leur mode de paiement et annuler leur abonnement.
 - name: Tarification
   questions:
   - question: >
@@ -86,7 +86,7 @@ sections:
   - question: >
       Quelles fonctionnalités un administrateur a-t-il pour les achats en libre-service ?
     answer: >
-      Les administrateurs peuvent afficher tous les achats en libre-service effectués dans leur organisation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Dans le Centre d’administration Power Platform, les administrateurs peuvent également afficher la capacité des achats en libre-service. Si nécessaire pour leur organisation, les administrateurs peuvent désactiver les achats en libre-service par produit via PowerShell. Les administrateurs ont les mêmes stratégies de gestion des données et d’accès que les produits achetés via un achat en libre-service ou de manière centralisée.
+      Les administrateurs peuvent afficher tous les achats en libre-service effectués dans leur organisation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Dans le Centre d’administration Power Platform, les administrateurs peuvent également afficher la capacité des achats en libre-service. Si nécessaire pour leur organisation, les administrateurs peuvent désactiver les achats en libre-service par produit via PowerShell. Les administrateurs ont les mêmes stratégies de gestion des données et d’accès que les produits achetés via un achat en libre-service ou de manière centralisée.
 
 
       Les administrateurs peuvent également contrôler si les utilisateurs de leur organisation peuvent effectuer des achats en libre-service. Pour plus d’informations, voir [Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce.](allowselfservicepurchase-powershell.md)
@@ -105,7 +105,7 @@ sections:
   - question: >
       Où l’administrateur voit-il les achats en libre-service ?
     answer: >
-      Les administrateurs globaux et de facturation peuvent voir les abonnements achetés via l’achat en libre-service dans **Facturation** Vos produits dans le  >   <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. Ils peuvent filtrer la liste des produits pour afficher uniquement les abonnements achetés via l’approvisionnement central, ou pour inclure les abonnements achetés via un achat en libre-service.
+      Les administrateurs globaux et de facturation peuvent voir les abonnements achetés via l’achat en libre-service dans **Facturation** Vos produits dans le  >   <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Ils peuvent filtrer la liste des produits pour afficher uniquement les abonnements achetés via l’approvisionnement central, ou pour inclure les abonnements achetés via un achat en libre-service.
 
 
       Les administrateurs peuvent voir le produit, le nom de l’acheteur, l’abonnement acheté, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés.
@@ -131,4 +131,4 @@ sections:
   questions:
   - question: >
       Quel est le rôle des partenaires de Microsoft dans les achats en libre-service ?
-    answer: Les partenaires qui ont des privilèges d’administration délégués peuvent voir les achats en libre-service dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365,</a>tout comme un administrateur. Les partenaires peuvent aider à prendre en charge une organisation qui souhaite centraliser les produits achetés via des achats en libre-service. En outre, les partenaires peuvent proposer des solutions pour étendre les fonctionnalités d’un achat en libre-service.
+    answer: Les partenaires qui ont des privilèges d’administration délégués peuvent voir les achats en libre-service dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>tout comme un administrateur. Les partenaires peuvent aider à prendre en charge une organisation qui souhaite centraliser les produits achetés via des achats en libre-service. En outre, les partenaires peuvent proposer des solutions pour étendre les fonctionnalités d’un achat en libre-service.

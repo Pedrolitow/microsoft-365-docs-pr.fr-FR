@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier la sécurité et la confidentialité Sujets Microsoft Viva de l’utilisateur
-ms.openlocfilehash: cf7e631970196b2995891ef302f9af33dd2ab0388b95a54ea04b4a3a24d0a838
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864038"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179555"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Sujets Microsoft Viva sécurité et confidentialité
 

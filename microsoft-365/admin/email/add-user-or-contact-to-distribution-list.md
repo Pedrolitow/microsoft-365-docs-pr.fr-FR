@@ -23,15 +23,15 @@ search.appverid:
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Découvrez comment ajouter un utilisateur ou Microsoft 365 contact tel qu’un employé, un partenaire ou un fournisseur à un groupe de distribution de courrier électronique.
 ms.openlocfilehash: af7581a7541835185a7cc8df12dcc58b779243ca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566327"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176580"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Ajouter un utilisateur ou un contact à un groupe de distribution
 
-En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter l’un de vos utilisateurs ou contacts à un groupe de distribution (voir Créer des groupes [de distribution dans Microsoft 365](../setup/create-distribution-lists.md)). Par exemple, vous pouvez ajouter des employés ou des partenaires externes ou des fournisseurs à un groupe de distribution de courrier électronique.
+En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter l’un de vos utilisateurs ou contacts à un groupe de distribution (voir Créer des groupes [de distribution dans Microsoft 365](../setup/create-distribution-lists.md)). Par exemple, vous pouvez ajouter des employés ou des partenaires ou fournisseurs externes à un groupe de distribution de courrier électronique.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Ajouter un utilisateur ou un contact à un groupe de distribution
 
@@ -51,9 +51,9 @@ En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Apprenez à [envoyer des courriers électroniques en tant que groupe de distribution dans Microsoft 365](../manage/send-email-as-distribution-list.md).
+Apprenez à [envoyer du courrier électronique en tant que groupe de distribution dans Microsoft 365](../manage/send-email-as-distribution-list.md).
 
 ## <a name="related-content"></a>Contenu associé
 

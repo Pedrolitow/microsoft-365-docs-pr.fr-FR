@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Cet article décrit comment planifier le lancement de votre portail dans SharePoint Online et les étapes à suivre pour un lancement réussi
 ms.openlocfilehash: 82c4db0ccf544c66746c2a8b01e9b932a7f64564
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179787"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planification de votre plan de déploiement de lancement de portail dans SharePoint Online
 
@@ -36,7 +36,7 @@ L’approche de déploiement est mise en évidence ci-dessous.
 
 ## <a name="portal-launch-scheduler"></a>Programme de lancement du portail
 
-Utilisez le programme de lancement du portail pour publier votre portail pour les utilisateurs de votre organisation en phases programmées. En savoir plus : 
+Utilisez le programme de lancement du portail pour publier votre portail pour les utilisateurs de votre organisation au cours des phases programmées. En savoir plus : 
 
 ![Calendar icon](https://docs.microsoft.com/Office/media/icons/calendar.png "Programme de lancement du portail")  [Portal Launch Scheduler](https://docs.microsoft.com/microsoft-365/enterprise/portallaunchscheduler)
 
@@ -66,7 +66,7 @@ Quelques facteurs de base doivent être pris en compte :
 Cette section a été un bref résumé pour l’optimisation des pages.  Pour plus d’informations, voir : [Création, lancement et maintenance d’un portail sain.](/sharepoint/portal-health)
 
 ## <a name="follow-a-wave--phased-roll-out-approach"></a>Suivre une approche de déploiement wave/progressive
-L’approche traditionnelle du big bang pour les lancements de site ne permet pas de vérifier que les personnalisations, les sources externes, les services ou les processus ont été testés à l’échelle droite. Cette approche ne signifie pas que le lancement prendra des mois, mais elle est recommandée sur au moins plusieurs jours en fonction de la taille de votre organisation. Le fait de suivre un plan de déploiement de vague vous permet de suspendre et de résoudre les problèmes avant de poursuivre la phase suivante, ce qui réduit le nombre potentiel d’utilisateurs touchés par les problèmes. SharePoint as a service scales your capacity based on usage and predicted usage and while we don’t need you to notify us of your launch, you should follow the guidelines to ensure success.
+L’approche traditionnelle du big bang pour les lancements de site ne permet pas de vérifier que les personnalisations, les sources externes, les services ou les processus ont été testés à l’échelle droite. Cette approche ne signifie pas que le lancement prendra des mois, mais elle est recommandée sur au moins plusieurs jours en fonction de la taille de votre organisation. Le fait de suivre un plan de déploiement de vague vous permet donc de suspendre et de résoudre les problèmes avant de poursuivre la phase suivante, ce qui réduit le nombre potentiel d’utilisateurs touchés par des problèmes. SharePoint as a service scales your capacity based on usage and predicted usage and while we don’t need you to notify us of your launch, you should follow the guidelines to ensure success.
   
 Comme illustré dans l’image suivante, le nombre d’utilisateurs invités est souvent beaucoup plus élevé que ceux qui utilisent réellement le site. Cette image illustre une stratégie de déploiement d’une version. Cette méthode permet d’identifier les façons d’améliorer SharePoint site avant que la plupart des utilisateurs ne le voient.
   
@@ -79,4 +79,4 @@ Pendant chacune des vagues, rassemblez les commentaires des utilisateurs sur les
 ### <a name="what-to-do"></a>Que faire :
 - Déterminez le calendrier de chaque phase et assurez-vous que vous avez une opportunité d’urgence/de pause, si vous devez effectuer des ajustements avant de continuer
 - Planifiez votre premier groupe d’utilisateurs que vous souhaitez activer, pour vous assurer que vous recevez les commentaires dont vous avez besoin pour aller de l’avant.  Dans la mesure du possible, sélectionnez un groupe actif d’utilisateurs qui fournira des commentaires en temps voulu.
-- Lorsque vous planifiez chaque vague, essayez de commencer par une petite base d’utilisateurs (moins de 5 000 utilisateurs). Augmentez la taille des groupes au cours de chaque vague. La création d’une approche échelonnée facilite les opportunités de pause selon les besoins.
+- Lorsque vous planifiez chaque vague, essayez de commencer par une petite base d’utilisateurs (moins de 5 000 utilisateurs). Augmentez la taille des groupes au cours de chaque vague. La création d’une approche échelonnée facilite les opportunités d’interruption selon les besoins.

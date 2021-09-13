@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: Acceptez une invitation par courrier électronique pour rejoindre une organisation Microsoft 365 Business Standard à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte.
 ms.openlocfilehash: 5fc7fd3fe42ef3e8aa200f4d0fa967b3be6bcdef
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178427"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Accepter une invitation par courrier électronique à une organisation Microsoft 365 Business Standard abonnement à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte (utilisateur)
 
@@ -46,7 +46,7 @@ Votre courrier électronique ressemble à ceci pour configurer votre compte d’
 
 6. Dans la page Bienvenue dans Microsoft 365, vous pouvez télécharger Office applications mobiles et de bureau, et configurer OneDrive.
 
-### <a name="next-steps"></a>Prochaines étapes
+### <a name="next-steps"></a>Étapes suivantes
 
 Téléchargez et commencez à [utiliser Office applications pour les entreprises.](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)
 

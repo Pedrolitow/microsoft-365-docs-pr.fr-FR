@@ -24,12 +24,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7de7c2d96a07988c87309768a12ddfac38f745047b5d654d5ffe38960cd8d938
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 949bce3c287c9b7764562586e28bc031fd0d56b6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53825654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176403"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser un domaine par défaut comme  *yourcompany.onmicrosoft. <sp
 
 Appeler le support Microsoft - Obtenir [de l’aide pour la configuration d’un domaine](../../business-video/get-help-support.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Acheter un domaine](buy-a-domain-name.md) (article)
 

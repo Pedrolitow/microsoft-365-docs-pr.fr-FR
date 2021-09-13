@@ -18,17 +18,17 @@ ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment accéder à la messagerie à partir de votre appareil mobile.
 ms.openlocfilehash: c003b90e704a51adcaca6d3887d1fc7286f40168
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566369"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176627"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Options d’accès à la messagerie à partir de votre appareil mobile
 
 Votre organisation configure les paramètres qui contrôlent les applications mobiles que vous pouvez utiliser pour accéder à votre compte de travail pour la messagerie, le calendrier et les contacts.
 
-Les Outlook pour Android et Outlook pour les applications mobiles iOS sont conçus pour votre courrier électronique scolaire ou scolaire. Ces applications fournissent des fonctionnalités telles que la boîte de réception [Focus,](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)qui conserve les messages électroniques importants au premier plan et au centre, et [Assistant Planification](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470), qui vous aide à trouver des heures de réunion qui fonctionnent avec des collègues et trouve simplement des salles de conférence disponibles.
+Les Outlook pour Android et Outlook pour les applications mobiles iOS sont conçus pour votre courrier électronique scolaire ou scolaire. Ces applications fournissent des fonctionnalités telles que la boîte de réception [Focus,](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)qui conserve les messages électroniques importants au premier plan et au centre, et [Assistant Planification,](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)qui vous aide à trouver des heures de réunion qui fonctionnent avec des collègues et trouve simplement des salles de conférence disponibles.
   
 ## <a name="end-user-experience"></a>Expérience utilisateur final
 

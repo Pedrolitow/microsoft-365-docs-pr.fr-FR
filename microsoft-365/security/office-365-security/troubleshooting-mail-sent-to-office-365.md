@@ -19,12 +19,12 @@ ms.custom:
 description: Cet article fournit des informations de dépannage pour les problèmes d’envoi de courrier électronique à des boîtes de réception Microsoft 365 & meilleures pratiques en matière de publipostage en bloc Microsoft 365 clients.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 751202d21e55f6a3e3f4ea2116e4a24f1ed10a044311573f3c1f0123e3e8cb00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56851342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59177339"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 

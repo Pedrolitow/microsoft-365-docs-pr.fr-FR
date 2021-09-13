@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: La mobilité et la sécurité de base font partie des plans Microsoft 365 de sécurité.
 ms.openlocfilehash: 74b6aeb5b768dc668a66bcb8c82f6c8393219561
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247430"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176900"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisir entre Basic Mobility and Security ou Intune
 
@@ -41,7 +41,7 @@ Basic Mobility and Security et Intune sont inclus dans une variété de plans, d
 |Microsoft 365 Business Standard|Oui|Non|
 |Office 365 E1 |Oui|Non|
 |Office 365 E3 |Oui|Non|
-|Office 365 E5 |Oui|Non|
+|Office 365 E5 |Oui|Non|
 |Microsoft 365 Business Premium |Oui|Oui|
 |Microsoft 365 Première ligne 3 |Oui|Oui|
 |Microsoft 365 Entreprise E3 |Oui|Oui|

@@ -19,15 +19,15 @@ search.appverid:
 - FRP150
 description: Découvrez les nouveaux noms d Microsoft 365'abonnement.
 ms.openlocfilehash: f08e3f6395d97dd5f0f54665d247c474db2556b6
-ms.sourcegitcommit: a7b289b8cc3a2eb79d5e46f20f2968adc0237da1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58394419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178732"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 est désormais Microsoft 365
 
-Nous avons modifié certains de nos noms d’abonnement Office 365 et Microsoft 365. Vous n’avez rien à faire. Vos services, applications et fonctionnalités restent inchangés, ainsi que le prix de votre abonnement. Le nom de votre abonnement sera automatiquement mis à jour dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d’administration Microsoft 365</a> et vos relevés de facturation seront mis à jour le 21 avril 2020 ou après.
+Nous avons modifié certains de nos noms d’abonnement Office 365 et Microsoft 365. Vous n’avez rien à faire. Vos services, applications et fonctionnalités restent inchangés, ainsi que le prix de votre abonnement. Le nom de votre abonnement sera automatiquement mis à jour dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d'administration Microsoft 365</a> et vos relevés de facturation seront mis à jour le 21 avril 2020 ou après.
 
 - **Office 365 Business Essentials** est désormais **Microsoft 365 Business Basic**
 - **Office 365 Business Premium** est désormais **Microsoft 365 Business Standard**
@@ -37,7 +37,7 @@ Nous avons modifié certains de nos noms d’abonnement Office 365 et Microsoft
 
 [Pour en savoir plus!](https://go.microsoft.com/fwlink/?linkid=2120533)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Abonnements et facturation](../commerce/index.yml) (page de lien)\
 [Consulter votre facture](../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\

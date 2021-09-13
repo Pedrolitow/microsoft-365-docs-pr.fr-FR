@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: bb181ab213cc02e5289681b8c3965a96bd8b8dcb
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182075"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
@@ -38,7 +38,7 @@ Le **paramètre Autoriser l’accès aux administrateurs** sans permis doit êtr
 Pour activer ce paramètre, suivez les étapes suivantes :
 
 1. Go to the Microsoft Endpoint Manager [admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Accédez à **gestion des licences Administrateur**  >  **de rôles**  >  **d’administration des locataires.**
+2. Accédez à **gestion des**  >  **licences Administrateur de**  >  **rôles d’administration des locataires.**
 3. Dans **Autoriser l’accès aux administrateurs** sans permis, sélectionnez **Oui.**
 
 > [!IMPORTANT]
@@ -49,13 +49,13 @@ Pour plus d’informations, [voir Administrateurs](/mem/intune/fundamentals/unli
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
-2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
+2. Exécutez les [outils d’évaluation de la préparation](readiness-assessment-tool.md).
+1. Achetez [Portail d’entreprise](../get-started/company-portal.md).
 1. Passer en revue les conditions préalables pour les comptes invités (cet article).
-1. Vérifiez [la configuration du réseau.](network.md)
-1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
-1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
-1. [Préparer les applications.](apps.md)
-1. [Préparez les lecteurs mappés.](mapped-drives.md)
-1. [Préparer les ressources d’impression.](printing.md)
-1. Noms des [périphériques d’adresse.](address-device-names.md)
+1. Vérifiez la[configuration réseau](network.md).
+1. [Préparer les certificats et les profils réseau](certs-wifi-lan.md).
+1. [Préparer l’accès utilisateur aux données](authentication.md).
+1. [Préparer les applications](apps.md).
+1. [Préparer les lecteurs mappés](mapped-drives.md).
+1. [Préparer les ressources d’impression](printing.md).
+1. [noms d’appareil](address-device-names.md) d’une adresse.

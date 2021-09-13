@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 description: Configurer la mobilité et la sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en faisant des actions telles que la wiping à distance d’un appareil.
 ms.openlocfilehash: 47f2f393c3d7147bb1444e8cad32d2d6a0d31133
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176820"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
-La mobilité et la sécurité de base intégrées pour Microsoft 365 vous permettent de sécuriser et de gérer les appareils mobiles des utilisateurs tels que les iPhone, iPad, Android et Windows mobiles. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
+La mobilité et la sécurité de base intégrées pour Microsoft 365 vous aident à sécuriser et gérer les appareils mobiles des utilisateurs tels que les iPhone, iPad, Android et Windows mobiles. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
 
 Vous avez des questions ? Pour obtenir un FORUM AUX QUESTIONS pour vous aider à répondre à des questions courantes, consultez forum aux questions fréquemment posées sur la mobilité [et la sécurité .](frequently-asked-questions.yml) Sachez que vous ne pouvez pas utiliser un compte d’administrateur délégué pour gérer la mobilité et la sécurité de base. Pour plus d’informations, [voir Partenaires : Proposer une administration déléguée.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
@@ -52,7 +52,7 @@ Si vous n’avez pas de domaine personnalisé associé à Microsoft 365 ou si vo
 
 Vous avez besoin d’aide pour la configuration des enregistrements ? Recherchez votre bureau d’enregistrement de domaines et sélectionnez le nom du bureau d’enregistrement pour passer à l’aide pas à pas pour créer un enregistrement DNS dans la liste fournie dans Ajouter des enregistrements [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)pour connecter votre domaine. Utilisez ces instructions pour créer des enregistrements CNAME décrits dans [Simplifier Windows inscription sans Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-Après avoir ajouté les deux enregistrements CNAME, revenir au Centre de sécurité & conformité et accéder à Gestion des appareils de protection contre la perte de données pour passer à  >     l’étape suivante.
+Après avoir ajouté les deux enregistrements CNAME, revenir au Centre de sécurité & conformité et accéder à la gestion des appareils de protection contre la perte de données pour passer à  >     l’étape suivante.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Étape 2 : (Obligatoire) Configurer un certificat APNs pour les appareils iOS
 
@@ -126,7 +126,7 @@ Une fois que vous avez créé et déployé une stratégie de gestion des apparei
 > [!IMPORTANT]
 > Si la langue préférée d’un utilisateur n’est pas prise en charge par le processus d’inscription, les utilisateurs peuvent recevoir des notifications d’inscription et des étapes sur leurs appareils mobiles dans une autre langue. Toutes les langues ne sont pas Microsoft 365 sont actuellement pris en charge pour le processus d’inscription sur les appareils mobiles.
 
-Les utilisateurs avec des appareils Android ou iOS doivent installer l’application Portail d’entreprise dans le cadre du processus d’inscription.
+Les utilisateurs avec des appareils Android ou iOS doivent installer l’application Portail d'entreprise dans le cadre du processus d’inscription.
 
 ## <a name="related-content"></a>Contenu associé
 

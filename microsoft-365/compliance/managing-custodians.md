@@ -18,14 +18,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil de gestion des dépositaires dans Advanced eDiscovery gérer les données d’un dossier juridique.
-ms.openlocfilehash: 92102a0748f37b2d6d18ab36baf6d50ef95e699e64c278bf5daf273e6c94b312
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 22297edbf73f561ad46e5fae521abeb371fdc88d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179867"
 ---
-# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Travailler avec des dépositaires et des sources de données non privatives dans Advanced eDiscovery
+# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Travailler avec des sources de données de consignataires et de non consignataires dans Advanced eDiscovery
 
 Lorsqu’une organisation répond à une enquête juridique, le flux de travail autour de l’identification, de la conservation et de la collecte de contenu potentiellement pertinent est basé sur les personnes de l’organisation qui sont les dépositaires des données pertinentes. Dans eDiscovery, ces personnes sont appelées *dépositaires* de données (ou uniquement *dépositaires)* et sont définies comme des « personnes ayant le contrôle administratif d’un document ou d’un fichier électronique ». Par exemple, le consignataire d’un courrier électronique peut être le propriétaire de la boîte aux lettres contenant le message concerné.
 

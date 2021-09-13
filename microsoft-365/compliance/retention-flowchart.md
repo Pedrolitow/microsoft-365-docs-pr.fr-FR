@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Utiliser un organigramme pour déterminer le résultat lorsqu’un élément possède plusieurs stratégies de rétention ou une étiquette de rétention et des stratégies de rétention
 ms.openlocfilehash: 45d67b3df71dc3be17bd545be77ce99afdff56b3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182215"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Organigramme pour déterminer quand un élément sera conservé ou supprimé définitivement
 

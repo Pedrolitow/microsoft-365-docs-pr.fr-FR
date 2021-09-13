@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails du travail d’équipe : les utilisateurs ont un score de productivité.'
-ms.openlocfilehash: db948c7a510c1bfe959b9f8aa07544f0ed9faf03909da9ec182ec18abdea5e82
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0924114a73a9bcf55a74744ee371de8c2d326d1c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822945"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178675"
 ---
 # <a name="teamwork--people-experiences"></a>Travail d’équipe : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie travail d’équipe fait partie des mesures qui relèvent des expériences utilisateur. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Pour commencer à comprendre les informations sur le travail d’équipe, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -155,7 +155,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
         Le nombre au centre du graphique de donut représente le nombre total d’espaces de travail partagés associés à Microsoft Teams’équipe.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de Veritas Contrôle dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
 ms.openlocfilehash: 4a02843315e6bd40bf650f5e5162c330519d4fbb
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58562864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180035"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>Configurer un connecteur pour archiver les données de la bibliothèque
 
-Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à des boîtes aux lettres utilisateur dans Microsoft 365 organisation. Il s’agit d’une plateforme de messagerie et de collaboration utilisée dans le secteur des services financiers. Veritas fournit un connecteur de données [de Typey](https://globanet.com/symphony) dans le Centre de conformité Microsoft 365 que vous pouvez configurer pour capturer des éléments à partir de la source de données tierces (régulièrement), puis importer ces éléments dans les boîtes aux lettres des utilisateurs. Le connecteur convertit le contenu d’un élément du compte DeLyy au format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à des boîtes aux lettres utilisateur dans Microsoft 365 organisation. Il s’agit d’une plateforme de messagerie et de collaboration utilisée dans le secteur des services financiers. Veritas fournit un connecteur de données [à la](https://globanet.com/symphony) Centre de conformité Microsoft 365 que vous pouvez configurer pour capturer des éléments à partir de la source de données tierces (régulièrement), puis importer ces éléments dans les boîtes aux lettres des utilisateurs. Le connecteur convertit le contenu d’un élément du compte DeLyy au format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365.
 
 Une fois les communications stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation collabore avec Elle pour configurer et configurer un site à Lasy.
 
-2. Une fois toutes les 24 heures, les messages de conversation de Cette ville sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu d’un message de conversation au format de message électronique.
+2. Une fois toutes les 24 heures, les messages de conversation de Lassy sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu d’un message de conversation au format de message électronique.
 
 3. Le connecteur Derme que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -47,7 +47,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ## <a name="step-1-set-up-the-symphony-connector"></a>Étape 1 : Configurer le connecteur De marche à pas
 
-La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données de Typey.
+La première étape consiste à accéder à la page **Connecteurs** de données dans la Centre de conformité Microsoft 365 et à créer un connecteur pour les données de Typey.
 
 1. Allez sur Connecteurs de données, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis cliquez **sur**  >  **Connecteurs de données.**
 
@@ -73,7 +73,7 @@ Pour maîtr les utilisateurs et terminer la configuration du connecteur dans le 
 
 2. Cliquez **sur** Suivant, examinez vos paramètres, puis allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 
-## <a name="step-4-monitor-the-symphony-connector"></a>Étape 4 : Surveiller le connecteur Dente
+## <a name="step-4-monitor-the-symphony-connector"></a>Étape 4 : Surveiller le connecteur de surveillance
 
 Une fois le connecteur créé, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
@@ -83,6 +83,6 @@ Une fois le connecteur créé, vous pouvez afficher l’état du connecteur dans
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

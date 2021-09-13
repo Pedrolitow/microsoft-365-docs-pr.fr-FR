@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d10b64e357b1cabb0d0d999c14f38ede6d6e99b5740849475055e8d66435554
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904274"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182032"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Paramètres configurables : Bureau géré Microsoft
 
@@ -43,7 +43,7 @@ Voici les catégories de paramètres configurables que vous pouvez personnaliser
 
 Chaque catégorie de paramètres peut être personnalisée et déployée seule. Vous pouvez déployer les modifications apportées à plusieurs catégories de paramètres en même temps, mais vous ne pouvez déployer qu’une seule modification à la fois dans une catégorie de paramètres.
 
-Par exemple :
+Par exemple :
 - Vous pouvez déployer les modifications apportées à l’image d’arrière-plan du bureau et aux sites de confiance, chacun en tant que son propre déploiement, en même temps. 
 - Vous ne pouvez pas déployer deux déploiements sur les pages de démarrage du navigateur en même temps. Le déploiement le plus récent arrête les déploiements précédents en cours.
 

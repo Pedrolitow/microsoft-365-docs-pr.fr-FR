@@ -24,11 +24,11 @@ search.appverid:
 - MET150
 description: Découvrez comment sécuriser les WINDOWS 10 une fois que vous avez Microsoft 365 Business Premium.
 ms.openlocfilehash: 23b2879b22299ad6c43ae5a8e03ee8060ec26789
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595525"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178468"
 ---
 # <a name="secure-windows-10-computers"></a>Sécuriser des ordinateurs Windows 10
 
@@ -39,7 +39,7 @@ Une fois [que](business-set-up.md) vous avez Microsoft 365 Business Premium, il 
 ## <a name="to-secure-your-windows-10-computers"></a>Pour sécuriser vos ordinateurs Windows 10 de bureau
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification d’administrateur général. 
-2. Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se connectez **et sécurité,** sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started.
+2. Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se **connectez-vous** et sécurité, sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started.
 3. Dans la page **Sécuriser vos ordinateurs Windows 10,** lisez toutes les informations pour comprendre ce que vous lisez et quel est l’impact sur l’utilisateur.
 
     On the top of the page, choose **Get started**.
@@ -47,7 +47,7 @@ Une fois [que](business-set-up.md) vous avez Microsoft 365 Business Premium, il 
 4. Dans le **volet Sécuriser Windows 10 ordinateurs,** sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, voir [Secure Windows 10 devices](../misc/secure-windows-10-devices.md) (article)\
 ). 
     
-    Pour la plupart des organisations, les options proposées ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des lignes de base de sécurité prédéfines pour sécuriser vos appareils Windows 10. Pour plus d’informations, voir [les lignes de base de sécurité pour Windows 10 appareils mobiles.](/mem/intune/protect/security-baselines)   
+    Pour la plupart des organisations, les options proposées ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des lignes de base de sécurité prédéfinëes pour sécuriser vos appareils Windows 10. Pour plus d’informations, voir [les lignes de base de sécurité pour Windows 10 appareils mobiles.](/mem/intune/protect/security-baselines)   
 
 1. Sélectionnez **Appliquer les paramètres.**
 

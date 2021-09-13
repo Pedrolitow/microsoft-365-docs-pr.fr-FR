@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: fca3a6ff838006b070a902dd37ff1cf32110a7b0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180994"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote
 
@@ -44,7 +44,7 @@ Le tableau suivant décrit les étapes de l’illustration.
 | |Étape  |Description  |
 |---------|---------|---------|
 |1|[Simulez des attaques](eval-defender-investigate-respond-simulate-attack.md)     |   Simulez des attaques sur votre environnement d’évaluation et utilisez le portail Microsoft 365 Defender pour répondre aux incidents.      |
-|2 |[Essayer les fonctionnalités de réponse aux incidents ](eval-defender-investigate-respond-additional.md)    |    Essayez les fonctionnalités dans Microsoft 365 Defender.     |
+|2|[Essayer les fonctionnalités de réponse aux incidents ](eval-defender-investigate-respond-additional.md)    |    Essayez les fonctionnalités dans Microsoft 365 Defender.     |
 ||||
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
