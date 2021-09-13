@@ -13,18 +13,18 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: a3f28772b76d5b8341571d3074dd8a5de31d635c3987abda66a1150676288cca
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 4ce4681ff5008cc3209789139bacd8441a7f724f
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53893758"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59183143"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft 365 Defender ?
+    - text: Qu’est-ce que Microsoft 365 Defender ?
       url: microsoft-365-defender.md
     - text: Vue d’ensemble Microsoft 365 Defender
       url: overview-security-center.md
@@ -56,7 +56,7 @@ landingContent:
       url: m365d-enable.md
     - text: Déployer les services pris en charge
       url: deploy-supported-services.md
-- title: Microsoft Defender pour Identity
+- title: Microsoft Defender pour Identity
   linkLists:
   - linkListType: overview
     links:
@@ -76,7 +76,7 @@ landingContent:
       url: microsoft-365-security-center-mdo.md
     - text: Redirection de Defender pour Office 365 dans Microsoft 365 Defender
       url: microsoft-365-security-mdo-redirection.md
-- title: Microsoft Defender pour point de terminaison
+- title: Microsoft Defender pour point de terminaison
   linkLists:
   - linkListType: overview
     links:
@@ -102,7 +102,7 @@ landingContent:
       url: investigate-incidents.md
     - text: Suivre et répondre aux menaces émergentes
       url: threat-analytics.md
-    - text: Examen et réponse automatisés
+    - text: Enquêtes et réponses automatisées
       url: m365d-autoir.md
     - text: Recherche des menaces
       url: advanced-hunting-overview.md

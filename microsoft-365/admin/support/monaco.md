@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9dfaa873daadac15c0732babf4e5980897a5728ecab86812e63d0deaae18d45a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 55850f4f10a6cb22997f3a5bc2aeefdd21cd70f1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182783"
 ---
 # <a name="contact-support-for-monaco"></a>Contacter le support pour Monaco
 

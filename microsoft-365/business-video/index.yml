@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: "Formation Microsoft\_365 pour les petites entreprises"
+title: Formation Microsoft 365 pour les petites entreprises
 summary: Découvrez comment configurer et gérer les Microsoft 365 pour votre entreprise.
 brand: m365
 metadata:
-  title: "Formation Microsoft\_365 pour les petites entreprises"
-  description: Configurer et gérer les Microsoft 365 dans le Centre d’administration Microsoft 365.
+  title: Formation Microsoft 365 pour les petites entreprises
+  description: Configurer et gérer les Microsoft 365 dans le Centre d'administration Microsoft 365.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -73,5 +73,5 @@ additionalContent:
           summary: Complétez les parcours de formation pour les entreprises moyennes et grandes.
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: Rechercher d’autres ressources d’administration
-          summary: Go to the Centre d’administration Microsoft 365 help site.
+          summary: Go to the Centre d'administration Microsoft 365 help site.
           url: ../admin/index.yml

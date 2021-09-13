@@ -11,11 +11,11 @@ ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179515"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
@@ -70,7 +70,7 @@ Microsoft Manged Desktop utilise ces paramètres pour l’expérience Page d’�
 |Bloquer l’utilisation de l’appareil jusqu’à ce que ces applications requises soient installées si elles sont affectées à l’utilisateur/l’appareil|Espace de travail moderne - Correction du temps|Espace de travail moderne - Bibliothèque cliente|
 
 
-L’expérience Page d’état de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
+L’expérience page État de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
 
 L’expérience se déroule comme suit :
 
@@ -90,7 +90,7 @@ L’expérience se déroule comme suit :
 - L’appareil doit avoir une connexion réseau câblé.
 - Si vous avez des appareils qui ont été enregistrés à l’aide du portail Microsoft Manged Desktop d’août 2020, désins inscrivez-les et inscrivez-les à nouveau.
 - Les appareils doivent avoir une image d’usine qui inclut la mise à jour cumulative [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) ou [20H1 2020.11C de novembre 2020,](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) si nécessaire, installée ou doit être réinventée avec la dernière image Microsoft Manged Desktop.
-- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise les Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement autopilot pré-mis en service dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
+- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement autopilot pré-mis en service dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Séquence d’événements dans Autopilot pour le déploiement pré-provisioné
 
@@ -127,7 +127,7 @@ Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne po
 ## <a name="required-applications"></a>Applications requises
 
 - Vous devez cibler des applications dans les groupes d’appareils Workplace modernes *Test,* First, Fast et Broad. Les applications doivent être installées dans le contexte « Système ». Veillez à effectuer le test avec ESP dans le groupe Test avant de les affecter à tous les groupes.
-- Aucune application ne doit exiger le redémarrage de l’appareil. Nous recommandons que les applications soient définies sur « Ne rien faire » lorsque vous créez le package d’application si elles nécessitent un redémarrage.
+- Aucune application ne doit nécessiter le redémarrage de l’appareil. Nous recommandons que les applications soient définies sur « Ne rien faire » lorsque vous créez le package d’application si elles nécessitent un redémarrage.
 - Limitez les applications requises aux applications principales dont un utilisateur a besoin immédiatement lorsqu’il se connecte à l’appareil.
 - Conservez la taille totale de toutes les applications collectivement sous 1 Go pour éviter les délai d’accès pendant la phase d’installation de l’application.
 - Dans l’idéal, les applications ne doivent pas avoir de dépendances. Si vous avez des applications qui *doivent* avoir des dépendances, assurez-vous de les configurer, de les tester et de les valider dans le cadre de votre évaluation ESP.
@@ -135,14 +135,14 @@ Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne po
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
-1. Portail [d’administration Access](access-admin-portal.md).
-1. [Ajoutez et vérifiez les contacts d’administrateur dans le portail d’administration.](add-admin-contacts.md)
-1. [Ajuster les paramètres après l’inscription.](conditional-access.md)
-1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. Accéder au[Portail d’administration](access-admin-portal.md).
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md).
+1. [Ajuster les paramètres après l’inscription](conditional-access.md).
+1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
-1. [Déployer des applications.](deploy-apps.md)
-1. [Configurer des appareils.](set-up-devices.md)
+1. [Déployer des applications](deploy-apps.md).
+1. [Configurer les appareils](set-up-devices.md).
 1. Configurer l’expérience de première expérience avec Autopilot et la page État de l’inscription (cet article).
-1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
-1. [Préparez vos utilisateurs à utiliser des appareils.](get-started-devices.md)
-1. [Prendre en main le contrôle d’application.](get-started-app-control.md)
+1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
+1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).
+1. [Démarrage avec le contrôle d’application](get-started-app-control.md).

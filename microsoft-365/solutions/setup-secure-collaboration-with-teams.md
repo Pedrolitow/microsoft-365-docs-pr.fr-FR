@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment configurer la collaboration de contenu sécurisée dans Teams protéger vos données en fonction de leur sensibilité.
 ms.openlocfilehash: 07f8f1193043b31c53346221791529b5b6162c30
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182896"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Configurer une collaboration sécurisée avec Microsoft 365 et Microsoft Teams
 
@@ -70,7 +70,7 @@ Pour configurer la collaboration sécurisée, vous utilisez ces fonctionnalités
 |---|---|---|
 |Microsoft Defender pour Office 365|Coffre Pièces jointes pour SPO, OneDrive et Teams; Coffre Documents ; Coffre Liens pour Teams|Microsoft 365 E1, E3 et E5|
 |SharePoint|Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage invité de site|Microsoft 365 E1, E3 et E5|
-|Microsoft Teams|Accès invité, équipes privées, canaux privés|Microsoft 365 E1, E3 et E5|
+|Microsoft Teams|Accès invité, équipes privées, canaux privés|Microsoft 365 E1, E3 et E5|
 |Conformité Microsoft 365|Étiquettes de confidentialité|Microsoft 365 E3 et E5|
 
 ## <a name="collaboration-governance"></a>Gouvernance de la collaboration
@@ -87,7 +87,7 @@ Ces *niveaux*( base *de* référence, sensible et hautement *sensible)* augmente
 
 |-|Niveau de référence|Niveau sensible|Niveau hautement sensible|
 |---|---|---|---|
-|Équipe publique ou privée|Les deux|Private|Private|
+|Équipe publique ou privée|Les deux|Privé|Privé|
 |Partage non authentifié|Blocked|Blocked|Blocked|
 |Partage de fichiers|Autorisé|Autorisé|Seuls les propriétaires d’équipe peuvent partager.|
 |Appartenance à une équipe|Tout le monde peut rejoindre des équipes publiques.<br>Approbation du propriétaire de l’équipe requise pour rejoindre des équipes privées.|Approbation du propriétaire de l’équipe requise pour rejoindre l’équipe.|Approbation du propriétaire de l’équipe requise pour rejoindre l’équipe.|
@@ -154,7 +154,7 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 
 |Formation :|Protéger les informations d’entreprise avec Microsoft 365|
 |---|---|
-|![Teams de formation sur la protection des informations.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à vous préparer à la certification Microsoft 365 certification : associé administrateur de sécurité et Microsoft 365 certifié : Enterprise certifications expertes en administration.<p>1 h - chemin d Learning - 5 modules|
+|![Teams de formation sur la protection des informations.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à vous préparer à la certification Microsoft 365 certification : associé administrateur de sécurité et Microsoft 365 certifié : Enterprise certifications expertes en administration.<p>1 h - chemin Learning - 5 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)

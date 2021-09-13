@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f3ee1f1d343bfdf6a3820928da85467b5c8f0d1c59390afba77c2d8ca81d789d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 177089e9659ee3780207a363d417909bc1e444a6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53837172"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182560"
 ---
 # <a name="payment-information-for-guam"></a>Informations de paiement pour Guam
 

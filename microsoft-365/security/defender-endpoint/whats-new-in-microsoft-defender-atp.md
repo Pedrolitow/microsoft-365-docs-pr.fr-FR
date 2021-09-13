@@ -17,24 +17,24 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03855c101c3d89f809e6d1410fddb006650595f5
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: a2652b3a324bd13ce8e438641b54eef5aa97125e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203016"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Les fonctionnalités suivantes sont généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint et les fonctionnalités de sécurité dans Windows 10 et Windows Server.
+Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles (GA) dans la dernière version de Microsoft Defender pour endpoint et les fonctionnalités de sécurité dans Windows 10 et Windows Server.
 
 Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionnalités d’aperçu.](preview.md)
 
@@ -46,11 +46,31 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
+
+Pour plus d’informations sur les nouveautés des autres produits de sécurité Microsoft Defender, voir :
+
+- [Nouveautés de Microsoft 365 Defender](../defender/whats-new.md)
+- [Nouveautés de Microsoft Defender pour Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [Nouveautés de Microsoft Defender pour l’identité](/defender-for-identity/whats-new)
+- [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres systèmes d’exploitation :
+- [Nouveautés de Defender pour Endpoint sur macOS](mac-whatsnew.md)
+- [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
+- [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
+
+
 ## <a name="august-2021"></a>Août 2021
 
-- [Microsoft Defender pour endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (prévisualisation) est une solution de protection de point de terminaison qui inclut une protection nouvelle génération, la réduction de la surface d’attaque, une gestion et des rapports centralisées et des API. Defender pour endpoint Plan 1 (prévisualisation) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, ont des Microsoft 365 E3 et n’ont pas encore Microsoft 365 E5. 
+- (Aperçu) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (prévisualisation) est une solution de protection de point de terminaison qui inclut une protection nouvelle génération, la réduction de la surface d’attaque, une gestion et des rapports centralisées et des API. Defender pour endpoint Plan 1 (prévisualisation) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, ont des Microsoft 365 E3 et n’ont pas encore Microsoft 365 E5. 
 
    Pour en savoir plus, [consultez Microsoft Defender pour Endpoint Plan 1 (prévisualisation).](defender-endpoint-plan-1.md) Les fonctionnalités [de Defender pour point](microsoft-defender-endpoint.md) de terminaison existantes seront appelées Defender pour Endpoint Plan 2. 
+
+- (Aperçu) [Filtrage de contenu Web](web-content-filtering.md)<br>  Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+
+## <a name="july-2021"></a>Juillet 2021
+
+- (Aperçu) [Rapport sur l’état et la conformité de l’appareil](machine-reports.md) <br>  Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 
 ## <a name="june-2021"></a>Juin 2021
 
@@ -81,159 +101,3 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 ## <a name="january-2021"></a>Janvier 2021
 
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint ajoute désormais la prise en charge Windows Virtual Desktop.
-
-## <a name="december-2020"></a>Décembre 2020
-
-- [Microsoft Defender pour point de terminaison iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge d’iOS. Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur iOS.
-
-## <a name="september-2020"></a>Septembre 2020
-
-- [Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge d’Android. Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Android.
-- [Prise en charge des menaces gestion des vulnérabilités macOS](tvm-supported-os.md)<br> Threat and gestion des vulnérabilités for macOS is now in public preview, and will continuously detect vulnerabilities on your macOS devices to help you prioritize remediation by focusing on risk. En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)
-
-## <a name="august-2020"></a>Août 2020
-
-- [Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge d’Android. Découvrez comment installer, configurer et utiliser Microsoft Defender pour Endpoint sur Android.
-
-## <a name="july-2020"></a>Juillet 2020
-
-- [Créer des indicateurs pour les certificats](manage-indicators.md) <br> Créez des indicateurs pour autoriser ou bloquer les certificats.
-
-## <a name="june-2020"></a>Juin 2020
-
-- [Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender pour le point de terminaison ajoute désormais la prise en charge de Linux. Découvrez comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Linux.
-
-- [Simulateurs d’attaques dans le laboratoire d’évaluation](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender pour le point de terminaison s’est associé à différentes plateformes de simulation de menaces pour vous donner un accès pratique pour tester les fonctionnalités de la plateforme dans le portail.
-
-## <a name="april-2020"></a>Avril 2020
-
-- [Prise en charge de l& API de gestion des menaces et des vulnérabilités](exposed-apis-list.md) <BR>Exécutez des appels d’API liés à la gestion des menaces et des vulnérabilités, tels que le score d’exposition aux menaces de votre organisation ou le score de sécurité de l’appareil, l’inventaire des vulnérabilités des logiciels et des appareils, la distribution des versions des logiciels, les informations sur les vulnérabilités des appareils, les informations de recommandation de sécurité. & En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
-
-## <a name="november-december-2019"></a>November-December 2019
-
-- [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender pour le point de terminaison sur macOS apporte la protection nouvelle génération aux appareils Mac. Les principaux composants de la plateforme de sécurité de point de terminaison unifiée seront désormais disponibles pour les appareils Mac, y compris [protection évolutive des points de terminaison](microsoft-defender-endpoint-mac.md).
-
-- [Informations de fin de vie & l’application de gestion des vulnérabilités et de la version de l’application](tvm-security-recommendation.md) <BR>Les applications et les versions d’applications qui ont atteint leur fin de vie sont marquées ou étiquetées comme telles afin que vous savez qu’elles ne seront plus pris en charge. Vous pouvez ensuite prendre des mesures pour désinstaller ou remplacer ces applications. Cela permet de réduire les risques liés à diverses expositions de vulnérabilités dues à des applications non associées.
-
-- [Schémas de & de recherche avancée de gestion des menaces et des vulnérabilités](advanced-hunting-schema-reference.md) <BR>Utilisez les tables gestion des menaces & des vulnérabilités dans le schéma de recherche avancé pour interroger sur l’inventaire logiciel, la base de connaissances des vulnérabilités, l’évaluation de la configuration de la sécurité et la base de connaissances sur la configuration de la sécurité.
-
- - [Contrôles d& d’accès basés sur les rôles gestion des menaces et vulnérabilités](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Utilisez les nouvelles autorisations pour permettre une flexibilité maximale pour créer des rôles orientés SecOps, des rôles orientés gestion des vulnérabilités de & menaces ou des rôles hybrides afin que seuls les utilisateurs autorisés accèdent à des données spécifiques pour accomplir leur tâche. Vous pouvez également atteindre une granularité encore plus grande en spécifiant si un rôle gestion des menaces & des vulnérabilités peut uniquement afficher les données liées aux vulnérabilités, ou créer et gérer des corrections et des exceptions.
-
-- [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
-
-## <a name="october-2019"></a>Octobre 2019
-
-- [Indicateurs pour les adresses IP, url/domaines](manage-indicators.md) <BR> Vous pouvez désormais autoriser ou bloquer des URL/domaines à l’aide de votre propre intelligence des menaces.
-
-- [Spécialistes des menaces Microsoft - Experts à la demande](microsoft-threat-experts.md) <BR> Vous avez maintenant la possibilité de consulter les Spécialistes des menaces Microsoft à partir de plusieurs endroits dans le portail pour vous aider dans le cadre de votre enquête.
-
-- [Applications Azure AD connectées](connected-applications.md)<br> La page Applications connectées fournit des informations sur les applications Azure AD connectées à Microsoft Defender pour endpoint dans votre organisation.
-
-- [Explorateur d’API](api-explorer.md)<br> L’Explorateur d’API facilite la construction et l’envoi de requêtes API, de test et d’envoi de demandes pour n’importe quel point de terminaison de l’API Microsoft Defender for Endpoint disponible.
-
-## <a name="september-2019"></a>Septembre 2019
-
-- [Paramètres de protection contre la falsification à l’aide d’Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Vous pouvez maintenant activer la protection contre les falsifications (ou désactiver) pour votre organisation dans Microsoft 365 Device Management Portal (Intune).
-
-- [Réponse en direct](live-response.md) <BR> Obtenir un accès instantané à un appareil à l’aide d’une connexion Shell distante. Faire des investigations approfondies et prendre des mesures de réponse immédiates pour contenir rapidement des menaces identifiées ( en temps réel).
-
-- [Laboratoire d’évaluation](evaluation-lab.md) <BR> Le laboratoire d’évaluation de Microsoft Defender pour points de terminaison est conçu pour éliminer la complexité de la configuration des appareils et de l’environnement afin de pouvoir vous concentrer sur l’évaluation des fonctionnalités de la plateforme, l’exécution de simulations et l’utilisation des fonctionnalités de prévention, de détection et de correction.
-
-- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Vous pouvez désormais intégrer Windows Server 2008 R2 SP1.
-
-## <a name="june-2019"></a>Juin 2019
-
-- [Gestion des & des menaces](next-gen-threat-and-vuln-mgt.md) <BR> Nouvelle fonctionnalité intégrée qui utilise une approche basée sur les risques pour la découverte, la hiér doncisation et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
-
-- [Rapport sur l’état et la conformité de l’appareil](machine-reports.md)  Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
-
-## <a name="may-2019"></a>Mai 2019
-
-- [Rapports de protection contre les menaces](threat-protection-reports.md)<BR>Le rapport sur la protection contre les menaces fournit des informations de haut niveau sur les alertes générées dans votre organisation.
-
-- [Spécialistes des menaces Microsoft](microsoft-threat-experts.md)<BR> Spécialistes des menaces Microsoft est le nouveau service de recherche de menace gérée dans Microsoft Defender pour point de terminaison qui fournit une recherche proactive, la hiérquage, ainsi que davantage de contexte et d’informations qui permettent aux centres d’opérations de sécurité d’identifier et de répondre rapidement et avec précision aux menaces. Il fournit une autre couche d’expertise et d’optique que les clients Microsoft peuvent utiliser pour renforcer les fonctionnalités d’opérations de sécurité dans le cadre Microsoft 365.
-
-- [Indicateurs](ti-indicator.md) <BR> Les API pour les indicateurs sont désormais généralement disponibles.
-
-- [Interopérabilité](partner-applications.md) <BR> Microsoft Defender pour endpoint prend en charge des applications tierces pour améliorer les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme.
-
-## <a name="april-2019"></a>Avril 2019
-
-- [Spécialistes des menaces Microsoft Fonctionnalité de notification d’attaque ciblée](microsoft-threat-experts.md) <BR> Les alertes de notification d’attaque ciblée d’Spécialistes des menaces Microsoft sont adaptées aux organisations pour fournir autant d’informations que possible rapidement, ce qui a pour effet d’attirer l’attention sur les menaces critiques sur leur réseau, notamment la chronologie, l’étendue de la violation et les méthodes d’intrusion.
-
-- [API Microsoft Defender pour point de terminaison](apis-intro.md) <BR> Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint.
-
-## <a name="february-2019"></a>Février 2019
-
-- [Incidents](view-incidents-queue.md) <BR> L’incident est une nouvelle entité dans Microsoft Defender pour point de terminaison qui regroupe toutes les alertes pertinentes et les entités associées pour donner un point de vue plus large aux attaques, offrant ainsi aux analystes une meilleure perspective du point de vue des menaces complexes.
-
-- [Intégrer des versions antérieures de Windows](onboard-downlevel.md)<BR> Intégrer des versions de Windows afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint.
-
-## <a name="october-2018"></a>Octobre 2018
-
-- [Règles de réduction de la surface d’attaque](attack-surface-reduction.md)<BR>Toutes les règles de réduction de la surface d’attaque sont désormais Windows Server 2019.
-
-- [Accès contrôlé aux dossiers](enable-controlled-folders.md)<BR> L’accès contrôlé aux dossiers est désormais pris en charge Windows Server 2019.
-
-- [Détection personnalisée](manage-indicators.md)<BR>Avec les détections personnalisées, vous pouvez créer des requêtes personnalisées pour surveiller les événements pour tout type de comportement, comme les menaces suspectes ou émergentes. Pour ce faire, vous pouvez tirer parti de la puissance du repérage avancé via la création de règles de détection personnalisées.
-
-- [Intégration à Azure Defender](configure-server-endpoints.md)<BR> Microsoft Defender pour point de terminaison s’intègre à Azure Defender pour fournir une solution de protection serveur complète. Avec cette intégration, Azure Defender peut tirer parti de la puissance de Microsoft Defender for Endpoint pour fournir une détection améliorée des menaces pour Windows serveurs.
-
-- [Prise en charge du fournisseur de services de sécurité géré (MSSP)](mssp-support.md)<BR> Microsoft Defender pour le point de terminaison ajoute la prise en charge de ce scénario en fournissant l’intégration MSSP. L’intégration permettra aux MSSP d’agir comme suit : accéder au portail Centre de sécurité Microsoft Defender du client MSSP, récupérer des notifications par courrier électronique et récupérer des alertes via les outils de gestion des événements et des informations de sécurité (SIEM).
-
-- [Contrôle d’appareil amovible](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/)<BR>Microsoft Defender pour le point de terminaison fournit plusieurs fonctionnalités de surveillance et de contrôle pour éviter les menaces provenant d’appareils amovibles, notamment de nouveaux paramètres permettant d’autoriser ou de bloquer des ID matériels spécifiques.
-
-- [Prise en charge des appareils iOS et Android](configure-endpoints-non-windows.md)<BR> Les appareils iOS et Android sont désormais pris en charge et peuvent être intégrés au service.
-
-- [Analyses de menaces](threat-analytics.md)<BR>
-L’analyse des menaces est un ensemble de rapports interactifs publiés par l’équipe de recherche de Microsoft Defender for Endpoint dès que des menaces émergentes et des épidémies sont identifiées. Les rapports aident les équipes en matière d’opérations de sécurité à évaluer l’impact sur leur environnement et fournissent des actions recommandées pour contenir, renforcer la résilience de l’organisation et éviter les menaces spécifiques.
-
-- Nouveauté de Windows 10 version 1809, il existe deux nouvelles règles de réduction de la surface d’attaque :
-  - Empêcher Adobe Reader de créer des processus enfants
-  - Empêcher Office application de communication de créer des processus enfants.
-
-- [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
-  - L’interface AMSI (Antimalware Scan Interface) a été étendue pour couvrir Office macros VBA. [Office VBA + AMSI : la part de la partie sur les macros malveillantes](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
-  - Antivirus Microsoft Defender, nouveauté de Windows 10 version 1809, peut désormais s’exécuter dans un [bac](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox) à sable (prévisualisation), ce qui augmente sa sécurité.
-  - [Configurez les paramètres de priorité du](configure-advanced-scan-types-microsoft-defender-antivirus.md) processeur pour Antivirus Microsoft Defender analyses.
-
-## <a name="march-2018"></a>Mars 2018
-
-- [Repérage avancé](advanced-hunting-overview.md)
-
-   Interroger des données à l’aide d’une recherche avancée dans Microsoft Defender pour point de terminaison.
-
-- [Règles de réduction de la surface d’attaque](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
-
-  Nouvelles règles de réduction de la surface d’attaque :
-
-  - Utiliser la protection avancée contre les ransomware
-  - Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)
-  - Bloquer les créations de processus provenant de commandes PSExec et WMI
-  - Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB
-  - Bloquer le contenu exécutable du client de messagerie et de la messagerie web
-
-- [Examen et correction automatisés](automated-investigations.md)<BR> Utiliser des enquêtes automatisées pour examiner et corriger les menaces.
-
-    > [!NOTE]
-    > Disponible à partir Windows 10 version 1803 ou ultérieure.
-
-- [Accès conditionnel](conditional-access.md) <br> Activez l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données.
-
-- [Centre de Community Microsoft Defender pour Community terminaison](community.md)<BR>
-    Le Centre d’administration Microsoft Defender pour Community est un endroit où les membres de la communauté peuvent découvrir, collaborer et partager des expériences sur le produit.
-
-- [Accès contrôlé aux dossiers](enable-controlled-folders.md)<BR>
-Vous pouvez désormais empêcher les processus nontrus d’écrire dans les secteurs de disque à l’aide de l’accès contrôlé aux dossiers.
-
-- [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)<BR>
-    Microsoft Defender pour point de terminaison offre une expérience d’opérations de sécurité centralisée pour les Windows et les plateformes non Windows web. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Centre de sécurité Microsoft Defender et mieux protéger le réseau de votre organisation.
-
-- [Contrôle d’accès basé sur un rôle (RBAC)](rbac.md)<BR>
-    À l’aide du contrôle d’accès basé sur un rôle (RBAC), vous pouvez créer des rôles et des groupes au sein de votre équipe des opérations de sécurité pour accorder un accès approprié au portail.
-
-
-- [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)<BR>
-Antivirus Microsoft Defender partage désormais l’état de détection entre Microsoft 365 services et interaérette avec Microsoft Defender pour Endpoint. Pour plus d’informations, voir Utiliser les technologies de nouvelle génération dans Antivirus Microsoft Defender via la [protection cloud.](cloud-protection-microsoft-defender-antivirus.md)
-
-    Bloquer à la première vue peut désormais bloquer les fichiers exécutables non portables (tels que JS, VBS ou macros) ainsi que les fichiers exécutables. Pour plus d’informations, voir [Activer bloquer à la première vue.](configure-block-at-first-sight-microsoft-defender-antivirus.md)

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e689bc57fb91f098f3368294e4c1e815db5c578448934f770c779de2dc3921a2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 41701c1a8f4aa14019025c373ce92b91487c2a25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182728"
 ---
 # <a name="contact-support-for-paraguay"></a>Contacter le support technique pour le Paraguay
 

@@ -18,11 +18,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des personnes extérieures à votre organisation.
 ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182888"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation
 

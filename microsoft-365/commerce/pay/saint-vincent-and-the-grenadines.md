@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e0e3aef57e4b7458d21f5b0917352728733505eb8b003cfc9a2e778754946fc9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7e4042b0323500bdfc5b212abdd7902fbdd75efb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896166"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182495"
 ---
 # <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>Informations de paiement pour Saint-Pierre-et-les-Grerès
 

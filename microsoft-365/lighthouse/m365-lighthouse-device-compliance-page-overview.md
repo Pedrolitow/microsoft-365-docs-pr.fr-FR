@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page de conformité des appareils.
 ms.openlocfilehash: c87f808a3694c1f256a8a4787591a93444cf792f
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203274"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page de conformité des appareils
 
@@ -93,7 +93,7 @@ L’Paramètres’onglet inclut également les options suivantes :
 
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Capture d’écran de l Paramètres onglet.":::
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Windows page 365 (Pc cloud) vue](m365-lighthouse-win365-page-overview.md) d’ensemble (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

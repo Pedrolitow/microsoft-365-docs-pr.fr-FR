@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 10c8c19c9d55ab4fdafe98684776a4e70009a92f96ccd4e45e0429a98a41db98
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b680e5bfdb86e7cfe7b5efe4d9748a11990cd370
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182792"
 ---
 # <a name="contact-support-for-gambia"></a>Contacter le support technique pour la République de France
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6978e597139f9abc98f7172987aa2627db57f6a7cf40df41a83d14cb4df1d458
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6e2f347b2ff2d82365fa9271d0553653650c3db3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797457"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182727"
 ---
 # <a name="contact-support-for-pitcairn-islands"></a>Contacter le support technique de Pitcairn (îles)
 

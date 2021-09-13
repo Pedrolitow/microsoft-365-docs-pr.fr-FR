@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: f0695f406bdc2063c58d87c61032d120442928e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573510"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183167"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Exemple d’attaque basée sur l’identité
 
@@ -64,7 +64,7 @@ Chaque processus peut être étendu pour afficher des détails supplémentaires.
  
 En sélectionnant **Voir dans la** chronologie, un analyste peut aller encore plus loin pour déterminer l’heure exacte de la compromission. 
 
-Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillante. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure afin de déterminer la source ou l’heure d’origine de l’attaque qui autrement est masquée par l’activité courante du système de fichiers et des utilisateurs. 
+Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillante. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure pour déterminer la source ou l’heure d’origine de l’attaque qui, sinon, est masquée par l’activité courante du système de fichiers et des utilisateurs. 
 
 Pour ce faire, un analyste commence au moment de la détection de l’alerte (en rouge) et fait défiler vers le bas dans le temps pour déterminer à quel moment l’activité d’origine qui a conduit à l’activité malveillante a réellement commencé. 
 
@@ -76,7 +76,7 @@ Dans l’image ci-dessous, l’analyste a filtré pour afficher uniquement les �
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Exemple de la façon Bloc-notes utilisé pour établir une connexion sortante malveillante."::: 
 
-Dans cet événement particulier, Bloc-notes utilisé pour établir une connexion sortante malveillante. Toutefois, il arrive souvent que les personnes malveillantes utilisent simplement iexplorer.exe pour établir des connexions pour télécharger une charge utile malveillante, car d’ordinaire, iexplorer.exe processus sont considérés comme une activité régulière du navigateur web.
+Dans cet événement particulier, Bloc-notes utilisé pour établir une connexion sortante malveillante. Toutefois, souvent, les personnes malveillantes utilisent simplement iexplorer.exe pour établir des connexions pour télécharger une charge utile malveillante, car en règle iexplorer.exe processus sont considérés comme une activité régulière du navigateur web.
 
 Un autre élément à rechercher dans la chronologie serait l’utilisation de PowerShell pour les connexions sortantes. L’analyste recherche les connexions PowerShell réussies avec des commandes telles qu’une connexion sortante à un site web hébergeant `IEX (New-Object Net.Webclient)` un fichier malveillant. 
 

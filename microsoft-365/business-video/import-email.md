@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment importer du courrier vers Microsoft 365 entreprise.
-ms.openlocfilehash: a40a51773dc62d11272eb02102c421aecf70f2b5a6c02a2867c94b47177668e6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7049642d071ff6b16a489a89c9355b35667a1e58
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182672"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>Importer du courrier électronique Microsoft 365 entreprise 
 

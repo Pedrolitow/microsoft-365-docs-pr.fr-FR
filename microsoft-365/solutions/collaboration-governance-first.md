@@ -17,11 +17,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment créer votre plan de gouvernance de collaboration
 ms.openlocfilehash: cd6da85f43d3dc72ee7b9ccd763872dbccfbeb78
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203693"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Créer votre plan de gouvernance de collaboration
 
@@ -65,7 +65,7 @@ Par exemple, l’une des principales fonctionnalités d’Microsoft 365 est la p
 
 ## <a name="think-about-governance-first"></a>Pensez d’abord à la gouvernance
 
-Votre investissement dans Microsoft 365 n’est aussi bon que la valeur du contenu et des expériences que vous activez. Ainsi, si vous pensez à la gouvernance au début de votre parcours, vous ne serez ni verrouillé ni activé trop longtemps avant d’avoir eu la possibilité de comprendre et d’évaluer les implications de chaque décision. Il existe plusieurs « tonalités et appels » que vous pouvez activer dans le Centre d’administration Microsoft 365 et pour des sites et des équipes individuels. Un plan de gouvernance efficace est essentiel pour atteindre les objectifs de l’entreprise, mais la gouvernance consiste à équilibrer les risques et les avantages. Si nous verrouilleons tout, les personnes trouveront un moyen de contourner les règles s’ils en ont besoin pour faire leur travail.
+Votre investissement dans Microsoft 365 n’est aussi bon que la valeur du contenu et des expériences que vous activez. Ainsi, si vous pensez à la gouvernance au début de votre parcours, vous ne serez ni verrouillé ni activé trop longtemps avant d’avoir eu la possibilité de comprendre et d’évaluer les implications de chaque décision. Il existe plusieurs « tonalités et appels » que vous pouvez activer dans le Centre d'administration Microsoft 365 et pour des sites et des équipes individuels. Un plan de gouvernance efficace est essentiel pour atteindre les objectifs de l’entreprise, mais la gouvernance consiste à équilibrer les risques et les avantages. Si nous verrouilleons tout, les personnes trouveront un moyen de contourner les règles s’ils en ont besoin pour faire leur travail.
 
 La réflexion sur la gouvernance vous permet d’abord :
 
@@ -133,7 +133,7 @@ En fin de compte, la réussite de vos efforts de planification de gouvernance d�
 
 - Pouvez-vous créer un programme Microsoft 365 Champions pour votre organisation ? En outre, envisagez de rejoindre le programme des champions du [Microsoft 365](https://aka.ms/O365Champions) mondial pour obtenir des idées et des approches pour votre propre programme de champions et pour vous connecter avec des personnes et des responsables réfléchis semblables, au sein et autour de Microsoft.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

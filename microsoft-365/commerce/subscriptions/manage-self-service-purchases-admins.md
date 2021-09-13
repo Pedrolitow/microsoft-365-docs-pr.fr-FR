@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs de leur organisation.
 ms.date: 03/26/2021
-ms.openlocfilehash: 3ab07fac52a55518f2d8259b35f1de808bb544685ef4c463ac9c5e9d3706a973
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182480"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
@@ -38,7 +38,7 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
@@ -142,7 +142,7 @@ Lorsque vous déplacez des utilisateurs vers un autre abonnement, l’ancien abo
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 ::: moniker-end
 
@@ -198,7 +198,7 @@ Lorsque vous choisissez d’annuler un abonnement d’achat en libre-service, le
 8. Fermez le volet droit.
 9. Sur la page des détails de l’abonnement, **l’état de l’abonnement** s’affiche **comme supprimé.**
 
-## <a name="need-help-contact-us"></a>Besoin d'aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.yml)
 

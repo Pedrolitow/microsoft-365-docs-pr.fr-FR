@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7098da4150b95b2567f068d83afa431ad3a71ca3b4ff996e5f0a2b7588f0c256
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183159"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3 : Effectuer un examen post-incident de votre premier incident
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer un examen post-incident de votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "53873474"
 
 Le National Institute of Standards and Technology (NIST) recommande qu’une fois que toutes les mesures ont été prises pour récupérer après l’attaque, les organisations doivent passer en revue l’incident pour en savoir plus et améliorer la posture ou les processus de sécurité. L’évaluation des différents aspects de la gestion des incidents devient importante lors de la préparation du prochain incident.
 
-Microsoft 365 Defender pouvez vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquetent les attaques conformément à une tactique ou une technique att&CK. 
+Microsoft 365 Defender pouvez vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquettent les attaques conformément à une technique ou une&CK att. 
 
 En m mappage d’alertes à cette infrastructure du secteur, vous pouvez :
 

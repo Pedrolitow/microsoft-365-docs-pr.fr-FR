@@ -1,5 +1,5 @@
 ---
-title: Incidents dans Microsoft 365 Defender
+title: Réponse aux incidents avec Microsoft 365 Defender
 description: Examinez les incidents rencontrés sur les appareils, les utilisateurs et les boîtes aux lettres dans Microsoft 365 Defender portail.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365, réponse aux incidents, cyber-attaque
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6a874f263290913a5a7b1d25a16eb1c75938eb3
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 6f55e1a30f61b8ed41ec2575b26a9346ba45cafd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58864001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183151"
 ---
-# <a name="incidents-in-microsoft-365-defender"></a>Incidents dans Microsoft 365 Defender
+# <a name="incident-response-with-microsoft-365-defender"></a>Réponse aux incidents avec Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -181,7 +181,7 @@ Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les
 - [Meilleures pratiques](/security/compass/security-operations)
 - [Vidéos et diapositives](/security/compass/security-operations-videos-and-decks)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 **Si vous êtes nouveau dans l’analyse** de la sécurité et la réponse aux incidents :
 

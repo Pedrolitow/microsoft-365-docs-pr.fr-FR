@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer Microsoft Office applications.
-ms.openlocfilehash: 6a19c10036ab7a941ed0e9683fb1307b0037209ee21a95ef56adc5bd7ac1a72c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3626b21a3c98fba1830350568440467869577ccb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182648"
 ---
 # <a name="install-office-apps"></a>Installer les applications Office 
 
@@ -43,7 +43,7 @@ Microsoft Office applications sont disponibles dans votre menu **Démarrer.** Si
 
 Les Office que vous avez installées apparaissent maintenant dans **votre** menu Démarrer.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Migrer votre contenu vers Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (article)
 

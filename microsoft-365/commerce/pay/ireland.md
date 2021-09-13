@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e6c2e68b87bf62f76ebd03a68a9540319d6b0fbc1e6d092c8ac230b258b8a182
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 801296a2c50978100340107b70672e8dafb627cf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880974"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182519"
 ---
 # <a name="payment-information-for-ireland"></a>Informations de paiement pour l’Irlande
 

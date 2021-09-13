@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Utilisateurs.
 ms.openlocfilehash: 102dcca973fed7a883dead0212a6f2965457cf9f
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203261"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page Utilisateurs 
 
@@ -54,7 +54,7 @@ L’onglet Réinitialisation du mot de passe affiche des informations détaillé
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Capture d’écran de l’onglet Réinitialisation du mot de passe.":::
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

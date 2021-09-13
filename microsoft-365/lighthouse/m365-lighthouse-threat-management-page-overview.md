@@ -17,11 +17,11 @@ ms.custom:
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Gestion des menaces.
 ms.openlocfilehash: f9ed274b295b40f9784a193a02dad925462a6e9e
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203267"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page Gestion des menaces 
 
@@ -30,7 +30,7 @@ ms.locfileid: "58365008"
 
 **S’applique à :**
 
-- Windows 10
+- Windows 10
 
 Antivirus Microsoft Defender protège les clients, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les programmes malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows 10 et incluse dans Microsoft 365 Business Premium.  
   
@@ -77,7 +77,7 @@ L’onglet Protection antivirus de la page Gestion des menaces affiche les appar
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Capture d’écran de l’onglet Antivirus.":::
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Déployer Microsoft 365 Lighthouse lignes de base](m365-lighthouse-deploy-baselines.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

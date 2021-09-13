@@ -19,12 +19,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment configurer des applications Microsoft 365 telles que Teams, OneDrive et SharePoint pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 1620af867057ee771936bfc15048ce6b15968e3230c5fb324acc7bc5141af20d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 291a5e6d75ac1b1a12a2403a9aeece9cb658afd0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203694"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborer avec des personnes extérieures à votre organisation
 
@@ -63,7 +63,7 @@ Lorsque vous travaillez sur un grand projet qui implique de nombreux invités d�
 
 Si certaines fonctionnalités de partage dans Microsoft 365 entrent en conflit avec vos stratégies de gouvernance, voir Limiter le partage dans [Microsoft 365](microsoft-365-limit-sharing.md) pour en savoir plus sur les options de limitation du partage.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Introduction à la collaboration sur les fichiers dans Microsoft 365](/sharepoint/intro-to-file-collaboration)
 

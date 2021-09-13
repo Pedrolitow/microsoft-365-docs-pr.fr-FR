@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fab50cd24bd8b3bf8e07717d14503ca1cf2106e227d5e28efea25f87e80b4455
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 27cbc0ec7286812cebc500952bc68adad3586eb8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838839"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183128"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Étape 2. Effectuer une évaluation de la préparation à l’intégration SOC à l’aide de l’infrastructure De confiance zéro
 

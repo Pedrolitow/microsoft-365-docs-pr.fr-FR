@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une adresse de messagerie de groupe.
-ms.openlocfilehash: 9dd9b6fb64de02b2e7063266cee9afd6e9dcc277fc43f903d58d3dce693c1eab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0854c41a4af52649c09fc8e5e3d121282e615d8e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882420"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182679"
 ---
 # <a name="create-a-group-email-address"></a>Créer une adresse e-mail de groupe
 
