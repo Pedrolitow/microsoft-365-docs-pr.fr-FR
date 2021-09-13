@@ -20,11 +20,11 @@ description: Découvrez les affichages campagne dans Microsoft Defender pour Off
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208668"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "58566651"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations ayant un module Office 365 Defender pour plan 2). Les affichages de campagne dans le Microsoft 365 Defender identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
+Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module Office 365 Plan 2). Les affichages de campagne dans le Microsoft 365 Defender identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
 - Examiner et répondre efficacement aux attaques par hameçonnage.
 - Mieux comprendre l’étendue de l’attaque.
@@ -60,7 +60,7 @@ Les affichages de campagne sont disponibles dans le portail Microsoft 365 Defend
 
 ![Vue d’ensemble des campagnes dans Microsoft 365 Defender portail.](../../media/campaigns-overview.png)
 
-Vous pouvez également obtenir les affichages de campagne à partir des pages :
+Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
 
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Campagnes**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Tous les e-mails** \> **Onglet Campagne**
@@ -73,7 +73,7 @@ Pour accéder aux affichages campagne, vous devez être membre  des groupes de r
 
 La page vue d’ensemble affiche des informations sur toutes les campagnes.
 
-Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage **et de programmes** malveillants.
+Sous l’onglet **Campagne** par défaut, la zone **Type** de campagne affiche un graphique à barres qui indique le nombre de destinataires par jour. Par défaut, le graphique affiche les données **de** hameçonnage et **de programmes** malveillants.
 
 > [!TIP]
 > Si vous ne voyez pas de données de campagne, essayez de modifier la plage de dates ou les [filtres.](#filters-and-settings)
@@ -116,7 +116,7 @@ En haut de la page **Campagne,** plusieurs paramètres de filtre et de requête 
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
-Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser**.
+Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser.**
 
 Les propriétés filtrables de campagne disponibles dans le bouton **Type** de campagne sont décrites dans la liste suivante :
 
@@ -161,7 +161,7 @@ Pour un filtrage plus avancé, y compris le  filtrage par plusieurs propriétés
 
 - Vous pouvez cliquer **sur Ajouter une condition pour** sélectionner plusieurs conditions.
 - Vous pouvez choisir l’opérateur **And** ou **Or** entre les conditions.
-- Vous pouvez sélectionner **l’élément de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
+- Vous pouvez sélectionner l’élément **de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
 
 Lorsque vous avez terminé, cliquez sur **le bouton Requête.**
 
@@ -214,7 +214,7 @@ Le diagramme contient les informations suivantes :
 
   ****
 
-  |Valeur|Verdict de filtrage du courrier indésirable|Description|
+  |Valeur|Verdict du filtre anti-courrier indésirable|Description|
   |---|---|---|
   |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|

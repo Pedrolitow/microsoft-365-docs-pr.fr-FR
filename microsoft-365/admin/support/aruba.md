@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4b948b71c846a1ed4510d19ee3514efd077dd4d237b080adf73f4dcdb557c7b3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bb4a996e8878b94fdbc32e2407934e4451e7faac
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208491"
 ---
 # <a name="contact-support-for-aruba"></a>Contacter le support pour Aruba
 

@@ -23,21 +23,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Connectez-vous Microsoft 365. Protégez votre entreprise, pratique ou campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: f5ef951bd8c0a6024ecbf9ae4ccb38a89bf327b157d672477dbd2de8aa33aac3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208163"
 ---
 # <a name="sign-in-to-microsoft-365"></a>Connectez-vous à Microsoft 365
 
 ## <a name="for-business-or-campaign-admins"></a>Pour les administrateurs d’entreprise ou de campagne
 
-Si vous vous êtes inscrit à Microsoft 365, vous êtes l’Microsoft 365 administrateur. Voici comment vous inscrire :
+Si vous vous êtes inscrit à Microsoft 365, vous êtes l’administrateur Microsoft 365 administrateur. Voici comment vous inscrire :
 
 1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse de messagerie que vous nous avez donnée à l’étape 2 des étapes [d’inscription.](m365-campaigns-sign-up.md#steps-to-sign-up)
-2. Dans le navigateur, go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
+2. Dans le navigateur, go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 3. Tapez votre nom d’utilisateur et votre mot de passe. Sélectionnez **Se connecter**.
 4. En haut à droite de la page, recherchez **l’aperçu sur le** contrôle. Sélectionnez **l’aperçu** afin de pouvoir utiliser tous les contrôles décrits dans La protection de haut [en haut pour votre campagne.](m365-campaigns-security-overview.md)
 

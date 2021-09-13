@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: b630c1b10722056c3d201eb300aba8f68a38bbca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568851"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208772"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "58568851"
 - Microsoft 365 Defender
 
 
-Cet article décrit le processus d’activer et de piloter Microsoft Defender pour le point de terminaison. Avant de commencer ce processus, assurez-vous [](eval-overview.md) que vous avez examiné le processus global d’évaluation des Microsoft 365 Defender et que vous avez créé l’environnement [d Microsoft 365 Defender d’évaluation.](eval-create-eval-environment.md) 
+Cet article décrit le processus permettant d’activer et de piloter Microsoft Defender pour le point de terminaison. Avant de commencer ce processus, assurez-vous [](eval-overview.md) que vous avez examiné le processus global d’évaluation des Microsoft 365 Defender et que vous avez créé l’environnement [d Microsoft 365 Defender d’évaluation.](eval-create-eval-environment.md) 
 <br>
 
 Utilisez les étapes suivantes pour activer et piloter Microsoft Defender pour endpoint.

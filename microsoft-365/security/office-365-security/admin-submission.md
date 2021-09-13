@@ -20,11 +20,11 @@ description: Les administrateurs peuvent apprendre à utiliser le portail Soumis
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208699"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -168,7 +168,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
-     - **Type (Type)**
+     - **Type**
      - **Raison**
      - **État**
      - **Résultat rescan**

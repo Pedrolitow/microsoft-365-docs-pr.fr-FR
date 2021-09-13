@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 2f4cfd4cb55d6a89acf8f78d60006851c14e603f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208524"
 ---
 # <a name="test-base-faq"></a>Test Base FAQ
 
@@ -47,7 +47,7 @@ Les tests OOB (Out-of-Box) vous fournissent une télémétrie normalisée sur vo
 
 ## <a name="testing"></a>Tests
 
-**Q : Les tests fonctionnels sont-ils nécessaires ?**
+**Q : Prise en charge des tests fonctionnels ?**
 
 **R :** Oui, la base de test prend en charge les tests fonctionnels. Les tests fonctionnels sont des tests qui permettent à nos clients d’exécuter leurs scripts pour exécuter des fonctionnalités personnalisées sur leur application. 
 
@@ -67,7 +67,7 @@ Consultez le guide de l’utilisateur d’intégration pour plus d’information
 
 **R :** Nous supportons toutes les langues et toutes les infrastructure. Nous appelons tous les scripts via PowerShell. 
 
-Vous devez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
+Vous devrez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
 
 **Q : À combien de temps la Base de test fournit-elle les résultats des tests ?**
 
@@ -79,7 +79,7 @@ Vous devez également fournir (télécharger) les fichiers binaires dépendants 
 
 Pour les tests OOB (Out-of-Box), vous pouvez spécifier si un redémarrage est nécessaire pour le _script d’installation._
 
-![Redémarrez l’image.](Media/reboot.png)
+![Image de redémarrage.](Media/reboot.png)
 
 Pour les tests fonctionnels, vous pouvez spécifier si un redémarrage est requis pour chaque script ajouté.
 
@@ -125,7 +125,7 @@ Nous travaillons toujours en étroite collaboration avec nos clients pour résou
 
 **R :** Pour l’instant, nous nous concentrons sur les applications de bureau, mais nous envisageons d’intégrer des applications web à l’avenir, mais nous ne prisent pas en charge les applications mobiles pour le moment.
 
-**Q : Quelle est la différence entre Test Base et LAPX ?**
+**Q : Quelle est la différence entre Base de test et LAPX ?**
 
 **R :** La principale différence entre base de test et LAPSP est que nos partenaires ententent leurs applications dans l’environnement Azure de base de test pour la validation s’exécute sur les mises à jour pré-publiées au lieu d’effectuer les tests eux-mêmes. 
 

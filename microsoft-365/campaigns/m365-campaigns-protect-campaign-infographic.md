@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Ce que vous pouvez faire pour protéger votre campagne contre les attaques numériques.
 ms.openlocfilehash: 66c59ecac414ce8b4dd297fe655e60386fa7ea16
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208172"
 ---
 # <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infographie : protégez-vous et votre campagne contre les menaces numériques
 

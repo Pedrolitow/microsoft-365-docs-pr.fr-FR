@@ -1,5 +1,5 @@
 ---
-title: Connecter des PC à Microsoft 365 Business Premium
+title: Connecter des PC à Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment connecter votre PC à Microsoft 365 Entreprise.
-ms.openlocfilehash: ef504bf6a0b6e3f4c97135c073862ffcd2be953104c91fbbdf57efa77cbcb33e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7afbf3a1a515b1f023d660e72a77144b93d66a89
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803581"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208244"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Connecter pc à Microsoft 365 Business Premium
 

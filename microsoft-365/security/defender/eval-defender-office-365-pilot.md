@@ -1,6 +1,6 @@
 ---
 title: Pilotez Microsoft Defender pour Office 365, utilisez l’évaluation dans votre environnement de production
-description: Étapes à suivre pour piloter votre évaluation avec des groupes d’utilisateurs actifs et existants afin de tester correctement les fonctionnalités de Microsoft Defender Office 365.
+description: Étapes pour piloter votre évaluation avec des groupes d’utilisateurs actifs et existants afin de tester correctement les fonctionnalités de Microsoft Defender pour Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: how-to
 ms.technology: m365d
 ms.openlocfilehash: 5e2588361cfc416b8d7aa8b51b8e12ded8a7ceca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208764"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloter Microsoft Defender pour Office 365
 **S’applique à :**
@@ -59,7 +59,7 @@ Les groupes de distribution peuvent être créés et définis directement Exchan
 
 :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="Ajoutez des groupes dans le panneau Groupes.":::
 
-4. Pour le type de groupe, *sélectionnez Distribution,* puis cliquez sur Suivant.
+4. Pour le type de groupe, *sélectionnez Distribution* et cliquez sur Suivant.
 
 :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="Choisissez un type de groupe de distribution ici.":::
 
@@ -109,7 +109,7 @@ Voici les stratégies [de sécurité prédéfini](../office-365-security/preset-
 
 8. Ajoutez des conditions pour appliquer les protections de référence ***MDO** _ à des utilisateurs pilotes spécifiques ou à des groupes d’utilisateurs, selon vos besoins. Cliquez sur _Next* pour continuer.
     - Par exemple, une condition Defender pour Office 365 pour les évaluations pilotes  peut être appliquée si les destinataires sont membres d’un groupe Defender pour *Office 365 Standard Protection* défini, puis géré en ajoutant/supprimant simplement des comptes via le groupe.
-  :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Ajoutez les conditions nécessaires pour appliquer le niveau de Office 365 Defender à votre groupe pilote.":::
+  :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Ajoutez les conditions nécessaires pour appliquer defender pour Office 365 niveau de sécurité à votre groupe pilote.":::
 
 9. Examinez et confirmez vos modifications pour attribuer des stratégies de sécurité prédéfines.
 10. Les stratégies de protection prédéfinie peuvent être gérées (ré-configurées, ré-appliquées, désactivées, etc.) en revenant au portail Microsoft 365 Defender >  Stratégies & règles > Stratégies de menace > et en cliquant sur la vignette stratégies de sécurité prédéfinie.
@@ -122,7 +122,7 @@ Il est *important de* prendre en compte la priorité que prennent ces stratégie
 
 Le tableau ci-dessous fournit des références et des instructions supplémentaires pour la configuration et l’affectation de stratégies de protection personnalisées :
 
-|Stratégie   |Description  |Référence  |
+|Politique   |Description  |Référence  |
 |:---------:|---------|---------|
 |Filtrage des connexions     |    Identifiez les serveurs de messagerie source bons ou mauvais par leurs adresses IP.     |     [Configurer la stratégie de filtrage des connexions par défaut dans EOP](../office-365-security/configure-the-connection-filter-policy.md)    |
 |Logiciel anti-programme malveillant    |    Protéger les utilisateurs contre les programmes malveillants de messagerie, y compris les actions à prendre et les personnes à avertir si des programmes malveillants sont détectés.     |    [Configurer des stratégies anti-programme malveillant dans EOP](../office-365-security/configure-anti-malware-policies.md)     |
@@ -130,7 +130,7 @@ Le tableau ci-dessous fournit des références et des instructions supplémentai
 |Anti-courrier indésirable     |    Protéger les utilisateurs contre le courrier indésirable, y compris les actions à prendre si du courrier indésirable est détecté.     |    [Configurer des stratégies anti-courrier indésirable dans Defender pour Office 365](../office-365-security/configure-your-spam-filter-policies.md)     |
 |Anti-hameçonnage     |   Protéger les utilisateurs contre les attaques par hameçonnage et configurer des conseils de sécurité sur les messages suspects      |     [Pour plus d’informations, voir Configurer les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](../office-365-security/configure-mdo-anti-phishing-policies.md)    |
 |Pièces jointes fiables     |    Protéger les utilisateurs contre le contenu malveillant dans les pièces jointes et les fichiers de courrier électronique SharePoint, OneDrive et Teams.     |    [Configurer des stratégies de pièces jointes sécurisées dans Defender pour Office 365](../office-365-security/set-up-safe-attachments-policies.md)     |
-|Liens sûrs     |     Protégez les utilisateurs contre l’ouverture et le partage de liens malveillants dans des messages électroniques ou Office applications de bureau.    |    [Configurer des stratégies de liens sécurisés dans Defender pour Office 365](../office-365-security/set-up-safe-links-policies.md)     |
+|Liens fiables     |     Protégez les utilisateurs contre l’ouverture et le partage de liens malveillants dans des messages électroniques ou Office applications de bureau.    |    [Configurer des stratégies de liens sécurisés dans Defender pour Office 365](../office-365-security/set-up-safe-links-policies.md)     |
 
 ## <a name="step-3-try-out-capabilities--get-familiar-with-simulation-monitoring-and-metrics"></a>Étape 3 : Tester les fonctionnalités : familiarisez-vous avec la simulation, la surveillance et les mesures
 
@@ -138,11 +138,11 @@ Maintenant que votre pilote est configuré et configuré, il est utile de se fam
 
 |Fonctionnalité  |Description  |Plus d’informations  |
 |---------|---------|---------|
-|Threat Explorer     | L’Explorateur de menaces est un outil puissant en temps quasi réel qui permet aux équipes des opérations de sécurité d’examiner les menaces et de répondre aux menaces et d’afficher des informations sur les programmes malveillants et le hameçonnage suspectés dans le courrier électronique et les fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.        | [Affichages dans l’Explorateur de menaces et détections en temps réel ](../office-365-security/threat-explorer-views.md)       | 
+|Threat Explorer     | L’Explorateur de menaces est un outil puissant en temps quasi réel qui permet aux équipes des opérations de sécurité d’examiner les menaces et de répondre aux menaces et d’afficher des informations sur les programmes malveillants et le hameçonnage suspectés dans les e-mails et les fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.        | [Affichages dans l’Explorateur de menaces et détections en temps réel ](../office-365-security/threat-explorer-views.md)       | 
 |Simulateur d’attaques     | Vous pouvez utiliser la formation sur la simulation d’attaques dans le portail Microsoft Defender 365 pour exécuter des scénarios d’attaque réaliste dans votre organisation, ce qui vous permet d’identifier et de trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre environnement.        |  [Simulateur d’attaques dans Microsoft Defender pour Office 365](../office-365-security/attack-simulator.md)       |
-|Tableau de bord Rapports     | Dans le menu de navigation de gauche, cliquez sur Rapports et développez l’en-tête & collaboration. Les rapports de collaboration de l'& de messagerie permettent de détecter les tendances de sécurité. Certains d’entre eux vous permettront d’agir (via des boutons tels que « Go to submissions », et d’autres qui afficheront des tendances, comme le résumé de l’état du flux de messagerie, les principaux programmes malveillants, les détections d’usurpation d’adresse, les utilisateurs compromis, la latence de messagerie, les liens Coffre et les rapports de pièces jointes Coffre. Ces mesures sont générées automatiquement.  |    [Afficher les rapports](../office-365-security/view-email-security-reports.md)     |
+|Tableau de bord rapports     | Dans le menu de navigation de gauche, cliquez sur Rapports et développez l’en-tête & collaboration. Les rapports de collaboration de l'& de messagerie permettent de détecter les tendances de sécurité. Certains d’entre eux vous permettront d’agir (via des boutons tels que « Go to submissions », et d’autres qui afficheront des tendances, comme le résumé de l’état du flux de messagerie, les principaux programmes malveillants, les détections d’usurpation d’adresse, les utilisateurs compromis, la latence de messagerie, les liens Coffre et les rapports de pièces jointes Coffre. Ces mesures sont générées automatiquement.  |    [Afficher les rapports](../office-365-security/view-email-security-reports.md)     |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 
 [Évaluer Microsoft Defender pour point de terminaison](eval-defender-endpoint-overview.md)

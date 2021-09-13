@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse de messagerie utilisée pour recevoir des notifications de facturation Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: eb2b50bb5032b30961a14d38bbdb6c04a04a1105ce7000adde8edc1e10a16cb4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208140"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -102,13 +102,13 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 
     Si vous utilisez Office 365 géré par 21Vianet en Chine, voir Afficher votre facture ou obtenir des Fapiaos pour Office 365 géré par [21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
@@ -118,7 +118,7 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service,** **sélectionnez Modifier l’adresse d’utilisation du service.**
 
-4. Dans le **volet Modifier l’adresse d’utilisation du service,** mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
+4. Dans le **volet Modifier l’adresse d’utilisation** du service, mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Modifier l'adresse de messagerie de secours à laquelle les notifications de facturation sont envoyées
 
@@ -128,7 +128,7 @@ Par défaut, les notifications de facturation de votre organisation sont envoyé
 
 2. Sélectionnez **l’icône Utilisateur,** puis **Mon compte.**
   
-3. Sélectionnez **Informations personnelles.**
+3. Sélectionnez **Informations personnelles**.
   
 4. Dans la **zone Détails du contact,** sélectionnez **Modifier.**
 
@@ -160,7 +160,7 @@ Vous pouvez également modifier l'adresse de messagerie de secours d'autres admi
 
 3. Dans le **volet Modifier les rôles** d’utilisateur, tapez l’adresse de messagerie de remplacement que vous souhaitez utiliser, puis sélectionnez **Enregistrer.**
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
 [Comprendre votre facture](understand-your-invoice2.md) (article)\

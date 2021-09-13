@@ -20,18 +20,18 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: 0be08294e241120e54711825fc91eccb7c663908a5ab32a91b08c2535171b7c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15b29887fcfd301e303d0918e5f3efc2acd7e908
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208092"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Informations de facturation pour Microsoft 365 entreprise au Mexique
 
 ## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. Où puis-je obtenir une facture pour mon achat Microsoft 365 pour les entreprises ?
 
-Votre facture est envoyée à l’adresse e-mail de notification de facturation enregistrée 24 heures après la confirmation de votre achat. Pour télécharger votre facture dans le Centre d’administration Microsoft 365, allez sur la page **Factures** et  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements.</a>
+Votre facture est envoyée à l’adresse e-mail de notification de facturation enregistrée 24 heures après la confirmation de votre achat. Pour télécharger votre facture dans le Centre d'administration Microsoft 365, allez sur la page **Factures** et  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements.</a>
 
 > [!IMPORTANT]
 > Si vous souhaitez que la facture inclue votre RFC, vous devez l’ajouter avant la confirmation d’achat.
@@ -61,7 +61,7 @@ Microsoft Corporation, en tant que résident fiscal aux États-Unis d’Amériqu
 
 Une facture générée par des entités étrangères (dans ce cas Microsoft Corporation) qui inclut la RFC respective est valide à des fins fiscales au Mexique. (Nous vous recommandons de consulter votre comptable pour plus d’informations).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
 [Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9e3d9854fea08042c8a06344fc132ee7cf56e20271d43f2f623881555ce25f47
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8eb8d01b9bdee78720daf18fb60d680e0a10ec01
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208356"
 ---
 # <a name="contact-support-for-zambia"></a>Contacter le support technique pour la Tanzanie
 

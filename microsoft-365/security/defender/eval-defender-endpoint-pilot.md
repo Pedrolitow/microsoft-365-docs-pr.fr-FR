@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: a8efc37b3ae5177540242bca5fdbeab5f4e613ba
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208771"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilote Microsoft Defender pour le point de terminaison
 
@@ -34,7 +34,7 @@ Cet article vous guide dans le processus d’exécution d’un pilote pour Micro
 
 Utilisez les étapes suivantes pour configurer le pilote de Microsoft Defender pour Endpoint. 
 
-![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+![Étapes d’ajout de Microsoft Defender pour l’identité à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - Étape 1. Vérifier le groupe pilote
 - Étape 2. Tester les fonctionnalités
@@ -62,7 +62,7 @@ L’inventaire des appareils vous permet de voir la liste des points de terminai
 Les menaces et gestion des vulnérabilités vous aident à vous concentrer sur les faiblesses qui posent le risque le plus urgent et le plus élevé pour l’organisation. À partir du tableau de bord, obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareils les plus exposées. 
 
 ### <a name="run-a-simulation"></a>Exécuter une simulation
-Microsoft Defender pour point de terminaison est livré avec des [scénarios](https://securitycenter.windows.com/tutorials) d’attaque « Faites-le vous-même » que vous pouvez exécuter sur vos appareils pilotes.  Chaque document inclut les exigences en matière de système d’exploitation et d’application, ainsi que des instructions détaillées propres à un scénario d’attaque. Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
+Microsoft Defender pour point de terminaison est livré avec des [scénarios](https://securitycenter.windows.com/tutorials) d’attaque « Faites-le vous-même » que vous pouvez exécuter sur vos appareils pilotes.  Chaque document inclut les exigences en matière de système d’exploitation et d’application, ainsi que des instructions détaillées propres à un scénario d’attaque. Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’investigation.
 
 Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [un appareil intégré.](../defender-endpoint/onboard-configure.md)
 
@@ -83,7 +83,7 @@ Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [
 > [!NOTE]
 > Les fichiers ou scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 [Évaluer Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation de Microsoft Defender pour le point de terminaison](eval-defender-endpoint-overview.md)

@@ -18,11 +18,11 @@ description: Les administrateurs peuvent apprendre à utiliser la stratégie de 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 8d10c4df273cfcff39bf93fa6532b57c4f8ef640
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208643"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 

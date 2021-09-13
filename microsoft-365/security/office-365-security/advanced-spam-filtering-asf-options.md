@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtrage avancé du courrier indésirable (ASF) disponibles dans les stratégies anti-courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f2646863c7b31fae6aa292cca23181996c266b158f168c471675d0f4c6bab69
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208691"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres de filtrage avancé du courrier indésirable (ASF) dans EOP
 
@@ -60,7 +60,7 @@ Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stra
   - **Ajouter le texte d’en-tête X par défaut (*AddXHeader*)**: la valeur d’en-tête X `X-CustomSpam: This message was filtered by the custom spam filter option` est ajoutée au message. Vous pouvez utiliser cette valeur dans les règles de boîte de réception ou les règles de flux de messagerie (également appelées règles de transport) pour affecter la remise du message.
   - **Envoyer un message Cci (*BccMessage*)**: les adresses de messagerie spécifiées (la valeur du paramètre *TestModeBccToRecipients* dans PowerShell) sont ajoutées au champ Cci du message, et le message est remis aux destinataires Cci supplémentaires. Dans le portail Microsoft 365 Defender, vous séparez plusieurs adresses de messagerie par des points-virgules (;). Dans PowerShell, vous séparez plusieurs adresses de messagerie par des virgules.
 
-  **Remarques** :
+  **Remarques** :
 
   - Le mode test n’est pas disponible pour les paramètres ASF suivants :
     - **Filtrage conditionnel de l’ID de** l’expéditeur : échec en dur (*MarkAsSpamFromAddressAuthFail*)

@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment créer une signature électronique à l’échelle de l’entreprise.
-ms.openlocfilehash: 2fa201a8c01aa69046a3e126a4ff774b728fa49d0631129f109bcf6a1cc7e6fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0585f1020779e70eff55c41b83ffe9337443afc9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208251"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Créer une signature électronique à l’échelle de l’entreprise
 
@@ -34,11 +35,11 @@ ms.locfileid: "53803617"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
-Une signature électronique à l’échelle de l’entreprise apparaît sur chaque courrier électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
+Une signature électronique à l’échelle de l’entreprise apparaît sur chaque message électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Exchange**.
+1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>sélectionnez **Exchange**.
 1. Sélectionnez **Flux de messagerie.**
 1. Sélectionnez **Ajouter +**, puis appliquer **les clauses d’exclusion de responsabilité.**
 1. Dans la page **Nouvelle règle** :

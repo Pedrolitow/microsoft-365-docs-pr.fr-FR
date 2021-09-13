@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bb4ae55c82e5653654484dddbebe7116afeee3e7bdae6c5beb70a1ff7deb3ad3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d4dddb33d9425bebaebc6a5e8dbb0b17e039eff1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893338"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208396"
 ---
 # <a name="contact-support-for-uae-united-arab-emirates"></a>Contacter le support pour les Émirats arabes unis (Émirats arabes unis)
 

@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 710e2adef0d04d9a7c45506f8b1bd4ec00d1d044
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208724"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
 
@@ -46,7 +46,7 @@ Le SOC doit définir une norme et un processus de haut niveau pour le développe
 
 Les activités de supervision SOC liées au développement de cas d’utilisation sont les suivantes : 
 
-- Configuration requise
+- Conditions requises
 - Besoins en personnel ou en formation
 - Licences logicielles
 - Contrat du fournisseur

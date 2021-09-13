@@ -24,11 +24,11 @@ search.appverid: MET150
 description: Ajoutez le stockage de fichiers dans Microsoft 365 abonnement. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
 ms.date: 04/02/2021
 ms.openlocfilehash: 5c08b105271f3b5297c1ca7258f7b723164e1fe0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208155"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
 
@@ -39,7 +39,7 @@ Si vous commencez à manquer d’espace de stockage pour vos collections de site
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global ou SharePoint pour effectuer les tâches de cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global ou SharePoint pour effectuer les tâches de cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Afficher le stockage disponible
 
@@ -77,7 +77,7 @@ Si vous avez déjà acheté du  stockage de fichiers supplémentaire via le modu
 3. Dans la page détails du produit, dans la section **Modules,** sélectionnez **Gérer les modules.**
 4. In the **Manage add-ons** pane, from the **Add-on** list, choose **Stockage de fichiers supplémentaire Office 365**.
 5. Dans la **zone de texte** Quantité, entrez le nombre de GB d’espace de stockage que vous souhaitez pour l’abonnement.
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>Mon plan est-il éligible au stockage de fichiers supplémentaire Office 365 ?
 

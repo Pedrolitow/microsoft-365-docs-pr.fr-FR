@@ -12,14 +12,14 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7868b4a5506ef06d4bedfdfe235a6724cf06b8602b3d381a1c837b9ac6db4843
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9d841987299746b7c9dc7a0801a833f734316e11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208467"
 ---
-# <a name="contact-support-for-trinidad-amp-tobago"></a>Contacter le support technique de &amp; Trinité-Tobago
+# <a name="contact-support-for-trinidad-amp-tobago"></a>Contacter le support technique de &amp; Trinité-et-Tobago
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 

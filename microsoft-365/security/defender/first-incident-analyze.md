@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 33022fa1ad57b7adf13139272bcdca09a1d9487b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208755"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Étape 1. Trier et analyser votre premier incident
 
@@ -36,7 +36,7 @@ ms.locfileid: "58568827"
 **S’applique à :**
 - Microsoft 365 Defender
 
-À mesure que vous consacrez du temps à établir, implémenter et maintenir des mesures de sécurité conformément aux normes de l’organisation, vous pouvez configurer des solutions de sécurité pour vous aider à identifier rapidement les risques et menaces de sécurité. Microsoft 365 Defender vous permet de détecter, de trier et d’examiner les incidents par le biais de son expérience à volet unique dans laquelle vous pouvez trouver les informations dont vous avez besoin pour prendre des décisions en temps voulu.
+À mesure que vous consacrez du temps à établir, implémenter et maintenir des mesures de sécurité conformément aux normes de l’organisation, vous pouvez configurer des solutions de sécurité pour vous aider à identifier rapidement les risques et menaces de sécurité. Microsoft 365 Defender vous permet de détecter, de trier et d’examiner les incidents par le biais de son expérience à volet unique où vous pouvez trouver les informations dont vous avez besoin pour prendre des décisions en temps voulu.
 
 Une fois qu’un incident de sécurité est détecté, Microsoft 365 Defender présente les détails dont vous aurez besoin pour trier ou hiérarchiser un incident ou des incidents par rapport à d’autres. Après avoir déterminé la définition des priorités, les analystes peuvent alors se concentrer sur l’étude des cas qui leur sont attribués.
 
@@ -54,7 +54,7 @@ Dans Microsoft 365 Defender, [les incidents sont identifiés](incidents-overview
 
 ## <a name="triage-your-incidents"></a>Trier vos incidents
 
-La réponse aux incidents Microsoft 365 Defender démarre une fois que vous avez trié la liste des incidents à l’aide de la méthode recommandée de hiérquisation de votre organisation. Pour trier, il faut affecter un niveau d’importance ou d’urgence aux incidents, ce qui détermine ensuite l’ordre dans lequel ils seront examinés.
+La réponse aux incidents Microsoft 365 Defender commence une fois que vous avez trié la liste des incidents à l’aide de la méthode recommandée de hiérquisation de votre organisation. Pour trier, il faut affecter un niveau d’importance ou d’urgence aux incidents, ce qui détermine ensuite l’ordre dans lequel ils seront examinés.
 
 Un exemple de guide utile pour déterminer l’incident à hiérarchiser dans Microsoft 365 Defender peut être résumé par la formule : *Gravité + Impact = Priorité*.
 
@@ -99,7 +99,7 @@ Il est également important de comprendre le contexte qui entoure les alertes. S
 
 Il existe plusieurs façons de lire et d’analyser des données à l’aide de Microsoft 365 Defender mais l’objectif final pour les analystes est de répondre aux incidents aussi rapidement que possible. Bien Microsoft 365 Defender réduire considérablement le temps moyen de correction [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) par le biais de la fonctionnalité d’investigation et de réponse automatisée de pointe du secteur, il existe toujours des cas qui nécessitent une analyse manuelle. [](m365d-autoir.md)
 
-Voici un exemple :
+Voici un exemple :
 
 1. Une fois la priorité de tri déterminée, un analyste lance une analyse approfondie en sélectionnant le nom de l’incident. Cette page affiche le résumé de **l’incident** dans lequel les données sont affichées dans des onglets pour faciliter l’analyse. Sous **l’onglet Alertes,** le type d’alertes s’affiche. Les analystes peuvent cliquer sur chaque alerte pour descendre dans la source de détection respective.
 
@@ -113,7 +113,7 @@ Voici un exemple :
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Exemple de page correspondante dans Microsoft Cloud App Security.":::
 
-3. Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs affectés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier.
+3. Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs concernés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Exemple de page d’utilisateur.":::
 

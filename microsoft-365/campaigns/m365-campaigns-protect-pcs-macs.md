@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Protégez les appareils BYOD (ByOD) non utilisés ou apportez-les à l’Microsoft 365.
-ms.openlocfilehash: 4ee7e200216833cf67f2a0800a0ed808893c325e5c14c43e50cf30df63831586
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Protégez les appareils BYOD (ByOD) non utilisés ou apportez-les avec Microsoft 365.
+ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53881768"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208171"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protéger les PC Windows 10 et les Mac non gérés
 
@@ -46,13 +46,13 @@ Vous pouvez gérer Windows 10 PC et Mac en les inscrivant dans Microsoft Intune,
 
 <!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
 -->
-Si votre ordinateur Windows 10 ou Mac n’est pas géré par votre organisation, assurez-vous de configurer ces fonctionnalités de sécurité.
+Si votre pc Windows 10 mac n’est pas géré par votre organisation, assurez-vous de configurer ces fonctionnalités de sécurité.
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 
 **Activer le chiffrement de l’appareil**<p>
 
-Le chiffrement de l’appareil est disponible sur un large Windows et vous permet de protéger vos données en les chiffrant. Si vous allumez le chiffrement de l’appareil, seules les personnes autorisées pourront accéder à votre appareil et à vos données. Pour obtenir [des instructions, voir](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) activer le chiffrement de l’appareil.
+Le chiffrement de l’appareil est disponible sur un large éventail Windows et permet de protéger vos données en les chiffrant. Si vous allumez le chiffrement de l’appareil, seules les personnes autorisées pourront accéder à votre appareil et à vos données. Pour obtenir [des instructions, voir](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) activer le chiffrement de l’appareil.
 
  Si le chiffrement de l’appareil n’est pas disponible sur votre appareil, vous pouvez activer le chiffrement [BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) standard à la place. (BitLocker n’est pas disponible Windows 10 Famille édition.) 
 
@@ -69,7 +69,7 @@ Vous devez toujours exécuter Windows pare-feu même si un autre pare-feu est al
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
 **Utiliser FileVault pour chiffrer votre disque Mac**<p>
-Le chiffrement de disque protège les données en cas de perte ou de vol d’appareils. Le chiffrement de disque intégral FileVault permet d’empêcher l’accès non autorisé aux informations sur votre disque de démarrage. Voir [utiliser FileVault pour chiffrer le disque de démarrage sur votre Mac](https://support.apple.com/HT204837) pour obtenir des instructions.
+Le chiffrement de disque protège les données en cas de perte ou de vol d’appareils. Le chiffrement de disque intégral FileVault permet d’empêcher l’accès non autorisé aux informations sur votre disque de démarrage. Voir [utiliser FileVault pour chiffrer le disque de démarrage sur votre Mac pour](https://support.apple.com/HT204837) obtenir des instructions.
 
 **Protéger votre mac contre les programmes malveillants**<p>
 Microsoft vous recommande d’installer et d’utiliser des logiciels antivirus fiables sur votre Mac. Consultez l’article suivant pour obtenir la liste des choix : [Best Mac antivirus 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).

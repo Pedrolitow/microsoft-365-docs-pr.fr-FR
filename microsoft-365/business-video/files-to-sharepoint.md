@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer des fichiers d’entreprise vers SharePoint.
-ms.openlocfilehash: 965eac5570a665109b39ecd700b3208f4cebc339db2e88add59a97078ae4c0b4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e7a778fea9d358d2c5b3e7944edfbb8b2b7fb0f1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53861830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208228"
 ---
 # <a name="move-files-to-sharepoint"></a>Déplacer des fichiers vers SharePoint
 

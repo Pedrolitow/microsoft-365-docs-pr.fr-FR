@@ -19,11 +19,11 @@ f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir comment collaborer avec des invités sur un document SharePoint et OneDrive.
 ms.openlocfilehash: db7e619e674a270745b783e85bca803b85ee54ff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208571"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborer avec des invités sur un document
 
@@ -41,7 +41,7 @@ Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [p
 
 Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
-![Capture d’écran Azure Active Directory la page relations Paramètres organisationnelle.](../media/azure-ad-organizational-relationships-settings.png)
+![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory.](../media/azure-ad-organizational-relationships-settings.png)
 
 Pour définir les paramètres de collaboration externe
 
@@ -66,7 +66,7 @@ Pour SharePoint et OneDrive, si vous souhaitez autoriser le partage de fichiers 
 
 Pour SharePoint, choisissez le paramètre le plus permissif qui sera nécessaire à n’importe quel site de votre organisation.
 
-![Capture d’écran SharePoint paramètres de partage au niveau de l’organisation.](../media/sharepoint-organization-external-sharing-controls.png)
+![Capture d’écran des paramètres de partage SharePoint au niveau de l’organisation.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 Pour définir les paramètres de partage SharePoint au niveau de l’organisation
@@ -88,7 +88,7 @@ Choisissez un lien parmi les types suivants, qui est ensuite sélectionné par d
 - **Uniquement les personnes de votre organisation** : choisissez cette option si vous souhaitez que la plupart des partages de fichiers et de dossiers soient avec des personnes de votre organisation.
 - **Personnes spécifiques** : envisagez cette option si vous prévoyez de partager beaucoup de fichiers et de dossiers avec vos invités. Ce type de lien fonctionne avec les invités et exige leur authentification.
  
-![Capture d’écran SharePoint paramètres de partage de fichiers et de dossiers au niveau de l’organisation.](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Capture d’écran des paramètres de partage de fichiers et dossiers au niveau de l’organisation dans SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Pour définir les paramètres SharePoint et OneDrive paramètres de lien par défaut au niveau de l’organisation
@@ -118,7 +118,7 @@ Pour définir des autorisations pour les liens qui autorisent le partage avec to
 
 Si vous partagez des fichiers et des dossiers situés dans un site SharePoint, vous devez également vérifier les paramètres de partage au niveau du site pour ce site.
 
-![Capture d’écran SharePoint paramètres de partage externe du site.](../media/sharepoint-site-external-sharing-settings.png)
+![Capture d’écran des paramètres de partage externe de site SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
 Pour définir les paramètres au niveau du site
 

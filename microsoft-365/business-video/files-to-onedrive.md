@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos fichiers vers OneDrive.
-ms.openlocfilehash: 2203aa29c9c83d6b26004220b14b15530f79a567d1ae62d3bf239567f926cb0a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 68d4b08fa0704279a36c32c8b6688009b08fa50f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208235"
 ---
 # <a name="move-files-to-onedrive"></a>Déplacer des fichiers vers OneDrive
 
-## <a name="watch-move-your-files-to-onedrive-for-business"></a>Regardez : déplacez vos fichiers vers OneDrive Entreprise
+## <a name="watch-move-your-files-to-onedrive-for-business"></a>Regardez : Déplacez vos fichiers vers OneDrive Entreprise
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
@@ -43,9 +43,9 @@ Une fois que vous êtes Microsoft 365 Business Premium, vous&#39;copier vos fich
 4. Sélectionnez **Se connectez,** puis sélectionnez **Suivant.**
 5. Go through the short tutorial, and then select **Open my OneDrive folder**. Si vous utilisez également la version personnelle de OneDrive, vous&#39;la voir ici.
 6. Dans l’Explorateur de fichiers, allez aux fichiers que vous souhaitez copier.
-7. Sélectionnez les fichiers, puis faites-les glisser et déposez-les dans OneDrive dossier. Les flèches circulaires bleues en dehors de vos fichiers signifient qu'&#39;synchronisées avec le cloud. Lorsqu'&#39;ont terminé la synchronisation, des coches vertes s’affichent.
+7. Sélectionnez les fichiers, puis faites-les glisser et déposez-les dans votre OneDrive dossier. Les flèches circulaires bleues en dehors de vos fichiers signifient qu'&#39;synchronisées avec le cloud. Lorsqu'&#39;ont terminé la synchronisation, des coches vertes s’affichent.
 
-En plus de travailler sur vos fichiers OneDrive localement, vous pouvez y accéder à partir de votre navigateur web :
+En plus d’utiliser vos fichiers OneDrive localement, vous pouvez y accéder à partir de votre navigateur web :
 
 1. Dans votre navigateur web, connectez-vous office.com votre courrier électronique de travail.
 2. Choisissez **OneDrive**. Tous vos fichiers sont répertoriés et vous pouvez les utiliser dans le navigateur à partir de n’importe quel ordinateur.

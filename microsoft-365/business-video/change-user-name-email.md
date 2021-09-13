@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment modifier le nom ou l’adresse e-mail d’un utilisateur en modifiant un nom d’affichage, un alias ou une adresse e-mail.
-ms.openlocfilehash: 238d4a81853a490fcc92858480e841aeb7aaa8b7c054ae4bd39e5caee11b91d7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: af91a9597cba44762b009f3946aca889a2ab5a11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53803629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208268"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Modifier le nom ou l’adresse e-mail d’un utilisateur
 
@@ -41,7 +42,7 @@ Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un uti
 
 ### <a name="change-a-users-display-name"></a>Modifier le nom d’affichage d’un utilisateur
 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 1. Sélectionnez l’utilisateur dans la liste des utilisateurs actifs.
 1. Sélectionnez **Gérer les informations de contact.**
 1. Modifiez le nom complet, puis sélectionnez **Enregistrer les modifications.**
@@ -50,21 +51,21 @@ Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un uti
 
 ### <a name="add-an-email-alias"></a>Ajouter un alias de messagerie
 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 1. Sélectionnez l’utilisateur dans la liste des utilisateurs actifs.
 1. Sélectionnez **Gérer les alias de messagerie.**
 1. Entrez le nouvel alias, vérifiez le domaine, puis sélectionnez **Enregistrer les modifications.**
 
 ### <a name="change-a-username"></a>Modifier un nom d’utilisateur
 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 1. Sélectionnez l’utilisateur dans la liste des utilisateurs actifs.
 1. Sélectionnez **Gérer le nom d’utilisateur.**
 1. Entrez le nouveau nom d’utilisateur, vérifiez le domaine, puis sélectionnez **Enregistrer les modifications.**
 
     Suite à cette modification, l’utilisateur doit se Microsoft 365 avec ce nouveau nom d’utilisateur et ajouter le nouveau compte de messagerie à Outlook.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Accorder des autorisations de boîte aux lettres à un autre utilisateur](../admin/add-users/give-mailbox-permissions-to-another-user.md) (article)\
 [Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (article)\

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f7a1e8a6b249e7efe7fcfacb1862c00907cb9b7a764e40b5a3df98325f850275
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e80a0d5370a58ee8988ceab0b52d401afc04a7aa
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208420"
 ---
 # <a name="contact-support-for-turkey"></a>Contacter le support pour la Turquie
 

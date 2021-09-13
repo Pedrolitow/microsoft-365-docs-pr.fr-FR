@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 0e1fa33358dbaa63e99e4e0645a04766ab72477b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58243925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208723"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Intégration de Microsoft 365 Defender dans vos opérations de sécurité
 
@@ -63,7 +63,7 @@ Ce contenu est conçu pour les raisons suivantes :
 - Équipes d’investigation & CSIRT
 - Microsoft 365 administrateurs
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Utilisez ces étapes pour intégrer Microsoft 365 Defender dans votre SOC.
 

@@ -9,24 +9,24 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: Découvrez comment définir des stratégies de planification pour votre entreprise. Les stratégies de planification incluent la longueur des rendez-vous, ainsi que les heures d’avance et d’annulation acceptables.
-ms.openlocfilehash: e4cfc3d22b662a1fb87e66f70a9b30a0c59d332060cea85ed9c0b409ec1e289d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 82cc9a66e82665040a1f0d08635cae10cd413d4b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208340"
 ---
 # <a name="set-your-scheduling-policies"></a>Définition de vos stratégies de planification
 
 Tous les rendez-vous ne sont pas identiques. Certaines ne prennent que quelques minutes, tandis que d’autres peuvent prendre des heures ou plus. Dans Microsoft Bookings, la page de réservation vous permet de définir les stratégies de planification de votre entreprise. Les stratégies de planification incluent la longueur des rendez-vous, les délais acceptables et les délais d’annulation, ainsi que les notifications automatiques de modifications de réservation. Une personnalisation supplémentaire peut être ajoutée pour chaque service dans la page Services, avec des paramètres de durée et des stratégies supplémentaires qui s’appliquent uniquement à ce service.
 
-Les stratégies que vous définissez ici sont les stratégies de niveau supérieur. Ils sont automatiquement appliqués à tous les services que vous proposez, sauf si vous choisissez de les modifier par service. Par exemple, supposons que pour la plupart des services, tels que les premières consultations, un préavis d’un jour pour les annulations est acceptable. Toutefois, pour les services qui nécessitent des réservations ou des frais d’installation, tels que des leçons, vous pouvez exiger trois jours de préavis. Vous pouvez définir cette stratégie de niveau de service dans la page Services. Pour [obtenir des instructions, voir](define-service-offerings.md) Définir vos offres de services.
+Les stratégies que vous définissez ici sont les stratégies de niveau supérieur. Ils sont automatiquement appliqués à tous les services que vous proposez, sauf si vous choisissez de les modifier par service. Par exemple, supposons que pour la plupart des services, tels que les premières consultations, un préavis d’un jour pour les annulations est acceptable. Toutefois, pour les services qui nécessitent des réservations ou des frais d’installation, tels que des leçons, vous pouvez exiger trois jours de préavis. Vous pouvez définir cette stratégie de niveau de service dans la page Services. Pour [obtenir des instructions,](define-service-offerings.md) voir Définir vos offres de services.
 
 ## <a name="types-of-scheduling-policies"></a>Types de stratégies de planification
 
 Ce tableau explique les différentes stratégies de planification disponibles sur la page de réservation.
 
-| Stratégie | Explication |
+| Politique | Explication |
 |---|---|
 | Incréments de temps | Détermine les intervalles entre les rendez-vous. Vous pouvez définir vos incréments de temps de 5 minutes à 4 heures. Vous pouvez également définir vos propres incréments de temps personnalisés. Un intervalle de 15 minutes, par exemple, signifie qu’un client peut planifier un rendez-vous de 60 minutes à 8:00, 8:15, 8:30, etc. À l’inverse, un intervalle de 60 minutes signifie que les rendez-vous sont disponibles uniquement à l’heure. (Pour définir des durées de service, voir [Définir vos offres de services.)](define-service-offerings.md) |
 | Temps d’avance en heures | Vous créez votre plan de personnel en fonction des rendez-vous qui sont programmés. Il est donc important de savoir à l’avance combien de clients entrent en service un jour particulier. La stratégie de temps d’avance vous permet de spécifier le nombre d’heures à l’avance pendant combien d’heures les clients doivent réserver ou annuler un rendez-vous. |

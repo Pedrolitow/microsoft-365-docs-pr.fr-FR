@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article décrit comment lancer votre portail à l’aide du programme de lancement du portail
-ms.openlocfilehash: 4bdc9a1d60423a7541c2f5c26cc544df59a271e5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 459d2a4ddaaa2f6a7d1c8095ee93baab4e8248ce
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565253"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59193510"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du SharePoint de lancement du portail
 
@@ -71,11 +71,11 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 1. Avant d’utiliser l’outil de planification de lancement du portail, ajoutez tous les utilisateurs qui auront besoin d’accéder à ce [site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) via les **autorisations** site en tant que propriétaire du site, membre du site ou visiteur.
 
-2. Commencez ensuite à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
+2. Ensuite, commencez à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
 
    **Option 1**: les premières fois que vous modifiez et repupuyez les modifications apportées à votre page d’accueil (ou jusqu’à la version 3.0 de la page d’accueil), vous êtes invité à utiliser l’outil de planification de lancement du portail. Sélectionnez **Planifier le lancement** pour aller de l’avant avec la planification. Vous pouvez également **sélectionner Republish** pour republier vos modifications de page sans planifier le lancement.
 
-   ![Image de l’invite d’utilisation du programme de lancement du portail lors de la republier de la page d’accueil.](../media/portal-launch-republish-2.png)
+   ![Image de l’invite d’utilisation du programme de lancement du portail lors de la republier la page d’accueil.](../media/portal-launch-republish-2.png)
 
    **Option 2**: à tout moment, vous pouvez accéder à la page d’accueil du site de communication SharePoint, sélectionner **Paramètres** puis planifier le lancement du **site** pour planifier le lancement de votre portail.
 
@@ -102,9 +102,9 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
    > [!NOTE]
    > Lorsque vous utilisez l’option bidirectionnelle, la personne qui planifiera le lancement doit également avoir des autorisations de propriétaire de site sur l’SharePoint portail.
 
-   **Option 2 :** envoyer les utilisateurs vers une page temporaire auto-genrée (redirection de page temporaire) : utilisez une redirection de page temporaire lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint moderne et si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire.
+   **Option 2 :** Envoyer les utilisateurs vers une page temporaire auto-genrée (redirection de page temporaire) : utilisez une redirection de page temporaire lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint moderne et si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire.
 
-   **Option 3 : Envoyer** des utilisateurs vers une page externe : fournir une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
+   **Option 3 : Envoyer** des utilisateurs vers une page externe : fournissez une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
 
 6. Décomposez votre audience en vagues. Ajoutez jusqu’à 20 groupes de sécurité par vague. Les détails des vagues peuvent être modifiés jusqu’au lancement de chaque vague. Chaque vague peut durer au moins un jour (24 heures) et au maximum sept jours. Cela permet à SharePoint et à votre environnement technique d’insérabler et de s’adapter au grand volume d’utilisateurs du site. Lors de la planification d’un lancement via l’interface utilisateur, le fuseau horaire est basé sur les paramètres régionaux du site.
 
@@ -117,7 +117,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 
     >[!NOTE]
-    > Vous pouvez ajouter jusqu’à 50 utilisateurs ou groupes de sécurité distincts maximum. Utilisez des groupes de sécurité lorsque vous avez besoin de plus de 50 personnes pour accéder au portail avant le lancement des vagues. 
+    > Jusqu’à 50 utilisateurs ou groupes de sécurité distincts peuvent être ajoutés. Utilisez des groupes de sécurité lorsque vous avez besoin de plus de 50 personnes pour accéder au portail avant le lancement des vagues. 
 
 8.  Confirmez les détails du lancement du portail et sélectionnez **Planifier.** Une fois le lancement programmé, les modifications apportées à la page d’accueil du portail SharePoint doivent recevoir un résultat de diagnostic sain avant que le lancement du portail reprenne.
 
@@ -135,17 +135,17 @@ Si vous envisagez de lancer un portail avec plus de 100 000 utilisateurs, envoye
 
 **Procédez comme suit :**
 
-1. Accédez à <https://admin.microsoft.com>.
-2. Vérifier que vous utilisez la nouvelle prévisualisation du Centre d’administration
-3. Dans le volet de navigation de gauche, sélectionnez **Support,** puis **sélectionnez Nouvelle demande de service**
+1. En tant qu’administrateur, cliquez sur le lien suivant qui remplit une requête d’aide dans le Centre d’administration. 
 
-   Cette opération active le volet **Besoin d'aide ?** sur le côté droit de l’écran.
+[Lancer SharePoint portail avec 100 000 utilisateurs](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-4. Pour **décrire brièvement votre problème,** entrez « Lancer SharePoint portail avec 100 000 utilisateurs »</br>
-5. Ensuite, sélectionnez **Contacter le support technique**
-6. Sous **Description,** entrez « Lancer SharePoint portail avec 100 000 utilisateurs »
-7. Remplissez les informations restantes, puis sélectionnez **Me contacter**
-8. Une fois le ticket créé, veillez à fournir à l’agent de support les informations suivantes :
+2. En bas du volet, sélectionnez **Contacter le support** technique, puis sélectionnez **Nouvelle demande de service.** 
+
+3. Sous **Description,** entrez « Lancer SharePoint portail avec 100 000 utilisateurs ». 
+
+4. Renseignez les informations restantes, puis sélectionnez **Me contacter**.
+
+5. Une fois le ticket créé, veillez à fournir à l’agent de support les informations suivantes :
    - URL du portail
    - Nombre d’utilisateurs attendus
    - Planification de lancement estimée
@@ -156,7 +156,7 @@ Les détails du lancement peuvent être modifiés pour chaque vague jusqu’à l
 
 1. Pour modifier les détails du lancement du portail, **accédez à Paramètres** puis sélectionnez **Planifier le lancement du site.**
 2. Ensuite, sélectionnez **Modifier**.
-3. Lorsque vous avez terminé d’effectuer vos modifications, sélectionnez **Mettre à jour.**
+3. Lorsque vous avez terminé vos modifications, sélectionnez **Mettre à jour.**
 
 ## <a name="delete-a-scheduled-portal-launch"></a>Supprimer un lancement de portail programmé
 

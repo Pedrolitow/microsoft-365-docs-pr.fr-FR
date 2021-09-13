@@ -1,5 +1,5 @@
 ---
-title: Examen et réponse automatisés dans Microsoft 365 Defender
+title: Enquête et réponse automatisées dans Microsoft 365 Defender
 description: Obtenez une vue d’ensemble des fonctionnalités automatisées d’examen et de réponse, également appelées auto-ressource, dans Microsoft 365 Defender
 keywords: automatisé, examen, alerte, déclencheur, action, correction, réparation automatique
 search.appverid: met150
@@ -22,13 +22,13 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ms.openlocfilehash: 09274557ea35c87cb4346e797d1b5e5e26e96aa3
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255178"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208716"
 ---
-# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Examen et réponse automatisés dans Microsoft 365 Defender
+# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Enquête et réponse automatisées dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -62,9 +62,9 @@ Imagine un analyste virtuel dans votre équipe des opérations de sécurité de 
 Les fonctionnalités d’examen et de réponse automatisées permettent à votre équipe en charge des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et les incidents de sécurité. Grâce à l’examen et à la réponse automatisés, vous pouvez réduire le coût de traitement des activités d’enquête et de réponse, et vous pouvez ainsi utiliser au mieux votre suite de protection contre les menaces. Les fonctionnalités d’examen et de réponse automatisées aident votre équipe en matière d’opérations de sécurité en :
 
 1. Déterminer si une menace nécessite une action.
-2. Prendre (ou recommander) toutes les actions de correction nécessaires.
+2. Suivre (ou recommander) les actions de correction nécessaires.
 3. Déterminer si et quelles autres enquêtes doivent se produire.
-4. répéter le processus autant de fois que nécessaire pour d’autres alertes.
+4. Répéter le processus autant de fois que nécessaire pour d’autres alertes.
 
 ## <a name="the-automated-investigation-process"></a>Processus d’examen automatisé
 
@@ -100,10 +100,10 @@ Dans Microsoft 365 Defender, chaque enquête automatisée met en corrélation le
 
 ## <a name="viewing-a-list-of-investigations"></a>Affichage d’une liste d’enquêtes
 
-Pour afficher les enquêtes, consultez la page **Incidents.** Sélectionnez un incident, puis l’onglet **Investigations.** Pour en savoir plus, consultez [les détails et les résultats d’une enquête automatisée.](m365d-autoir-results.md)
+Pour afficher les enquêtes, consultez la page **Incidents.** Sélectionnez un incident, puis l’onglet **Enquêtes.** Pour en savoir plus, consultez [les détails et les résultats d’une enquête automatisée.](m365d-autoir-results.md)
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Voir les conditions préalables à l’examen et à la réponse automatisés](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configurer l’examen et la réponse automatisés pour votre organisation](m365d-configure-auto-investigation-response.md)

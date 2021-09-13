@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 1ef2caf21d09a2c5387e60e81e3af93b08b78f07
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254333"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208692"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qu’arrive-t-il à Microsoft Secure Score ?
 

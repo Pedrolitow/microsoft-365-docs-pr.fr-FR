@@ -21,11 +21,11 @@ description: Découvrez Microsoft 365 Business Premium, un service d’abonnemen
 feedback_system: None
 ms.date: 7/28/2020
 ms.openlocfilehash: 0a31ce38a0ef6b04be5ad9af90e9e4c54e7b256b
-ms.sourcegitcommit: a0452cef05f2322b74967add41fd84ac4d07fe5c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58377714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208204"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
