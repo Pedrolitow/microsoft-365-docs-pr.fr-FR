@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: Feuille de route de l’identité pour Microsoft 365.
 ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165324"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
 
@@ -41,7 +41,7 @@ Examinez cette affiche de deux pages pour accélérer rapidement les concepts et
 
 Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="plan"></a>Plan
+## <a name="plan"></a>Planification
 
 Pour planifier l’implémentation de votre identité :
 
@@ -60,7 +60,7 @@ Pour déployer votre implémentation d’identité :
 
 ### <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 
-Pour garantir un personnel sécurisé et productif, Microsoft fournit un ensemble de recommandations pour l’accès aux identités [et appareils.](../security/office-365-security/microsoft-365-policies-configurations.md) Pour l’identité, utilisez les recommandations et les paramètres des articles suivants :
+Pour garantir un personnel sécurisé et productif, Microsoft fournit un ensemble de recommandations pour l’accès aux identités [et aux appareils.](../security/office-365-security/microsoft-365-policies-configurations.md) Pour l’identité, utilisez les recommandations et les paramètres des articles suivants :
 
 - [Conditions préalables](../security/office-365-security/identity-access-prerequisites.md)
 - [Stratégies communes pour les identités et l’accès aux appareils](../security/office-365-security/identity-access-policies.md)

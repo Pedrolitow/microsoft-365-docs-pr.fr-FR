@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55ea055c1e69b3f7cecd334758d5343fadc408ee
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: 70ff6fd0fbfade147f23d69a0ea9684ef9b63ba7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862796"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163980"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -174,7 +174,7 @@ L’indicateur `ignoredDelimiters` ne prend pas en charge :
 
 Dans cet exemple, où `caseInsensitive` et `ignoredDelimiters` sont utilisés ensemble, EDM considère **FOO-1234** et **fOo#1234** comme étant identiques et classifie l’élément comme un type d’informations sensibles de dossier de patient.
 
-1. Connecter au Centre de sécurité & conformité PowerShell à l’aide des procédures Connecter dans le Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Connecter au Centre de sécurité & conformité PowerShell à l’aide des procédures de Connecter au Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Pour charger le schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
@@ -402,7 +402,7 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 >
 > Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité **EDM\_DataUploaders**.
 >
-> Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier .csv .tsv ou .tsv avant de télécharger en exécutant :
+> Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier .csv .tsv ou .tsv avant le téléchargement en exécutant :
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -443,12 +443,13 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 5. Pour hacher et charger les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
 
    ```dos
-   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
-   Exemple : **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   Exemple : **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
    Le format par défaut du fichier de données sensibles est les valeurs séparées par des virgules. Vous pouvez spécifier un fichier séparé par des tabulations en indiquant l’option « {Tab} » avec le paramètre /ColumnSeparator, ou vous pouvez spécifier un fichier séparé par un canal en indiquant l’option « | ».
+   Si votre table d’informations sensibles a des valeurs mal formatées, mais que vous souhaitez importer les données restantes tout en ignorant les lignes non valides, vous pouvez utiliser le paramètre /AllowedBadLinesPercentage dans la commande. L’exemple ci-dessus spécifie un seuil de cinq pour cent. Cela signifie que l’outil va hachage et télécharger la table des informations sensibles même si jusqu’à cinq pour cent des lignes ne sont pas valides. La valeur par défaut de ce paramètre est 1 pour cent. 
    Cette commande ajoute automatiquement une valeur salt générée de manière aléatoire au hachage pour une sécurité accrue. Si vous voulez utiliser votre propre valeur salt, vous pouvez également ajouter **/Salt <saltvalue>** à la commande. Cette valeur doit comporter 64 caractères et ne peut contenir que les caractères allant de a à z et de 0 à 9.
 
 6. Vérifiez l’état du chargement en exécutant la commande suivante :
@@ -474,13 +475,13 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 1. À l’invite de commandes, exécutez la commande suivante :
 
    ```dos
-   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]
+   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    Par exemple :
 
    ```dos
-   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml
+   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
    Cela génère un fichier haché et un fichier salt avec les extensions suivantes si vous n’avez pas spécifié l’option **/Salt <saltvalue>**  :

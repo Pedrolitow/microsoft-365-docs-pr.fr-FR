@@ -18,15 +18,15 @@ ms.custom:
 f1.keywords: NOCSH
 description: Découvrez comment choisir et déployer la solution vocale Teams appropriée pour votre organisation.
 ms.openlocfilehash: 359242ea66fc1be9af18ff10cb7e33fe26ddd83e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162408"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Planifier et déployer une solution vocale Teams
 
-Une solution Teams vocale permet aux membres de votre organisation d’effectuer des appels à l’intérieur et à l’extérieur de votre organisation. Une solution vocale complète se compose de Teams, Téléphone Microsoft System et d’un choix d’options pour la connexion au réseau téléphonique commuté (PSTN).
+Une solution Teams vocale permet aux membres de votre organisation d’effectuer des appels à l’intérieur et à l’extérieur de votre organisation. Une solution vocale complète se compose de Teams, Téléphone Microsoft Système et d’un choix d’options pour la connexion au réseau téléphonique commuté (PSTN).
 
 ![Teams vue d’ensemble des solutions vocales.](..\media\solutions-architecture-center\voice-concepts.png)
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: be9129913d936233308d2518d24a29dc64a9ccff01512414d2881b3bcccd05f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6c8ef3f67bd7cb2fe996262f5e4395e036650fc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164284"
 ---
 # <a name="payment-information-for-portugal"></a>Informations de paiement pour le Portugal
 

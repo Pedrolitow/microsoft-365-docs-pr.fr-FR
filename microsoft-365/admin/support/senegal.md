@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eed853a45c16d817835542dae9a7b539c6859e59dacecd3eca05405976d23419
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 87827742885c15d52417671a224930988be7a7e8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164329"
 ---
 # <a name="contact-support-for-senegal"></a>Contacter le support pour le Sénégal
 
@@ -39,6 +39,6 @@ Anglais : Mon-Fri 8 h à 16 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 7h00 à 20h00
+Français : Mon-Fri 7 H 00 à 20 h 00
 
 Anglais : 24h/24, 7j/7

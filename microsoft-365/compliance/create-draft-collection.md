@@ -15,13 +15,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Un brouillon de collection est une recherche eDiscovery de sources de données privatives et non privatives dans un cas Advanced eDiscovery qui renvoie une estimation de recherche qui correspond à la requête de recherche de la collection. Vous pouvez passer en revue les statistiques de recherche, prévisualiser un échantillonnage d’éléments et réviser et réexécuter la collection avant de valider les résultats dans un jeu à réviser.
+description: Un brouillon de collection est une recherche eDiscovery de sources de données privées et non privées dans un cas Advanced eDiscovery qui renvoie une estimation de recherche qui correspond à la requête de recherche de la collection. Vous pouvez passer en revue les statistiques de recherche, prévisualiser un échantillonnage d’éléments et réviser et réexécuter la collection avant de valider les résultats dans un jeu à réviser.
 ms.openlocfilehash: 0354f2a04dfff82f995fe74663633f42ed01e677
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572718"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163972"
 ---
 # <a name="create-a-draft-collection-in-advanced-ediscovery"></a>Créer un brouillon de collection dans Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Une fois que vous avez identifié des dépositaires et des sources de données n
 
 ## <a name="before-you-create-a-draft-collection"></a>Avant de créer un brouillon de collection
 
-- Ajoutez des dépositaires et des sources de données non privatives au cas avant de créer un brouillon de collection. Ceci est obligatoire pour que vous pouvez sélectionner les sources de données lorsque vous créez un brouillon de collection. Pour plus d’informations, voir :
+- Ajoutez des dépositaires et des sources de données non privatives au cas avant de créer un brouillon de collection. Ceci est obligatoire pour que vous pouvez sélectionner les sources de données lorsque vous créez un brouillon de collection. Pour plus d’informations, consultez :
 
   - [Ajouter des consignataires à un cas](add-custodians-to-case.md)
 
@@ -45,7 +45,7 @@ Une fois que vous avez identifié des dépositaires et des sources de données n
 
 3. Tapez un nom (obligatoire) et une description (facultatif) pour la collection. Une fois la collection créée, vous ne pouvez pas modifier le nom, mais vous pouvez modifier la description.
 
-4. Dans la page **Des sources de** données de garde, faites l’une des choses suivantes pour identifier les sources de données privatives à partir des sources de données à partir des éléments suivants :
+4. Dans la page **Des sources de** données de garde, faites l’une des choses suivantes pour identifier les sources de données de garde à partir des éléments suivants :
 
    - Cliquez **sur Sélectionner des dépositaires** pour rechercher des dépositaires spécifiques qui ont été ajoutés au cas. Si vous utilisez cette option, une liste des dépositaires de cas s’affiche. Sélectionnez un ou plusieurs dépositaires. Après avoir sélectionné et ajouté les dépositaires, vous pouvez également sélectionner les sources de données spécifiques pour rechercher chaque dépositaire. Ces sources de données affichées ont été spécifiées lorsque le dépositaire a été ajouté au cas.
 
@@ -96,7 +96,7 @@ Pendant le processus de collecte provisoire, Advanced eDiscovery une estimation 
 
 Une fois l’ébauche de collection terminée, vous pouvez effectuer diverses tâches. Pour effectuer la plupart de ces tâches, il vous suffit d’aller dans l’onglet **Collections** et de cliquer sur le nom de la collection provisoire pour afficher la page volante.
 
-![Page volante pour un brouillon de collection.](../media/DraftCollectionFlyoutPage.png)
+![Page volante d’une collection de brouillons.](../media/DraftCollectionFlyoutPage.png)
 
 Voici la liste des choses que vous pouvez faire à partir de la page volante de collection :
 
@@ -110,7 +110,7 @@ Voici la liste des choses que vous pouvez faire à partir de la page volante de 
 
 - Valider l’ébauche de collection dans un jeu à réviser (en cliquant sur **Actions**  >  **Modifier la collection**). Cela signifie que vous réexécutez la collection (à l’aide des paramètres actuels) et ajoutez les éléments renvoyés par la collection à un jeu à réviser. Comme indiqué précédemment, vous pouvez également configurer des paramètres supplémentaires (tels que les threads de conversation et les pièces jointes basées sur le cloud) lorsque vous ajoutez la collection à un jeu à réviser. Pour plus d’informations et des instructions pas à pas, voir Valider un brouillon [de collection dans un jeu à réviser.](commit-draft-collection.md)
 
-## <a name="manage-a-draft-collection"></a>Gérer un brouillon d’une collection
+## <a name="manage-a-draft-collection"></a>Gérer un brouillon de collection
 
 Vous pouvez utiliser les options du menu **Actions** de la page volante d’un brouillon de collection pour effectuer différentes tâches de gestion.
 
@@ -124,7 +124,7 @@ Voici des descriptions des options de gestion.
 
 - **Actualiser les estimations**: réexécutez la requête (par rapport aux sources de données) spécifiées dans le brouillon de la collection pour mettre à jour les estimations de recherche et les statistiques.
 
-- **Exporter en tant que rapport**: exporte des informations sur le brouillon de collection dans un fichier CSV que vous pouvez télécharger sur votre ordinateur local. Le rapport d’exportation contient les informations suivantes :
+- **Exporter en tant que** rapport : exporte des informations sur le brouillon de collection dans un fichier CSV que vous pouvez télécharger sur votre ordinateur local. Le rapport d’exportation contient les informations suivantes :
 
   - Identité de chaque emplacement de contenu qui contient les éléments qui correspondent à la requête de recherche dans la collection provisoire. Ces emplacements sont généralement des boîtes aux lettres ou des sites.
   

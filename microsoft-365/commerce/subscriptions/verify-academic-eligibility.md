@@ -17,15 +17,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment vérifier l’éligibilité de votre établissement Microsoft 365 Éducation tarifs scolaires.
 ms.date: 07/21/2020
-ms.openlocfilehash: b861092b0168fa83a8bac423caa3e29621837bc1f08d5af95502cde94c97ff4a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 86bdb4338c316edf5b8bdb83a61a5a0fd2f411ee
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167538"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Vérifier l’éligibilité scolaire pour Microsoft 365 Éducation abonnements
 
@@ -41,7 +42,7 @@ Vous devez déjà avoir un abonnement Microsoft 365 Éducation d’essai. Si vou
 
 Si vous ne savez pas si vous avez un abonnement Microsoft 365 Éducation d’essai, utilisez ces étapes pour vérifier que vous le faites.
 
-1. Dans la Centre d’administration Microsoft 365, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
+1. Dans la Centre d'administration Microsoft 365, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
 2. Recherchez les **Office 365 A1'essai pour** les enseignants **et les Office 365 A1'essai pour les étudiants.** Si vous ne trouvez pas ces abonnements, visitez cette [page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et sélectionnez **Commencer gratuitement.**
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Vérifier l’éligibilité scolaire de votre établissement scolaire
@@ -59,7 +60,7 @@ Si votre éligibilité scolaire est refusée, consultez Mon établissement scola
 
 Une fois que vous avez Microsoft 365 Éducation d’essai, vous pouvez vérifier l’état d’éligibilité scolaire de votre établissement scolaire à tout moment.
 
-1. Go to the [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.
 2. Dans la page d’accueil, recherchez la **carte de** facturation.\
     La **carte** de facturation indique l’état du processus de vérification. La carte affiche l’un des états suivants : approuvé, en attente, refusé ou ajouter votre domaine.
 
@@ -70,7 +71,7 @@ Une fois que vous avez Microsoft 365 Éducation d’essai, vous pouvez vérifier
 
 Une fois l’éligibilité de votre établissement scolaire vérifiée, vous pouvez acheter des abonnements au prix scolaire. Vous pouvez également [convertir votre version d’essai gratuite en abonnement payant.](../try-or-buy-microsoft-365.md) Si vous souhaitez convertir votre abonnement d’essai, vous devez le faire avant la fin de la période d’essai.
 
-1. Dans la Centre d’administration Microsoft 365, allez à la page **Des** services \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
+1. Dans la Centre d'administration Microsoft 365, allez à la page **Des** services \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
 2. Pour afficher les offres éducation, sélectionnez **l’onglet** Éducation.
 
     > [!NOTE]
@@ -81,9 +82,9 @@ Une fois l’éligibilité de votre établissement scolaire vérifiée, vous pou
 
 ## <a name="when-does-my-free-trial-end"></a>Quand mon essai gratuit se termine-t-il ?
 
-Vous trouverez la date d’expiration de votre abonnement d’essai gratuit sur la page **Vos produits.** Vous pouvez également prolonger la version d’essai.
+Vous trouverez la date d’expiration de votre abonnement d’essai gratuit sur la page **De vos produits.** Vous pouvez également prolonger la version d’essai.
 
-1. Dans la Centre d’administration Microsoft 365, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
+1. Dans la Centre d'administration Microsoft 365, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
 2. Recherchez l’abonnement d’essai.
 3. Dans la section **Facturation,** sous **Abonnement d’essai gratuit,** la date d’expiration s’affiche.
 4. Si vous souhaitez prolonger la version d’essai, sélectionnez **Étendre la version d’essai.** Vous ne pouvez le faire qu’une seule fois par abonnement d’essai gratuit.
@@ -94,14 +95,14 @@ Si votre établissement scolaire n’est pas éligible en tant qu’établisseme
 
 Si vous avez des questions sur la décision d’éligibilité scolaire de votre établissement scolaire, [contactez le support technique.](../../business-video/get-help-support.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour découvrir comment déployer des Microsoft 365 pour votre établissement scolaire, consultez [Microsoft 365 Éducation documentation et ressources.](/microsoft-365/education/deploy/) Ensuite, vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps.](../../admin/add-users/add-users.md) Si nécessaire, vous pouvez également acheter [d’autres licences pour votre abonnement.](../licenses/buy-licenses.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 Éducation documentation pour les administrateurs informatiques](/education/itadmins) (liens d’article)\
-[Microsoft Teams pour l’éducation](https://microsoft.com/education/products/teams/default.aspx) (page produit)\
+[Microsoft Teams pour l'éducation](https://microsoft.com/education/products/teams/default.aspx) (page produit)\
 [Comprendre les abonnements et les licences dans Microsoft 365 entreprise](../licenses/subscriptions-and-licenses.md) (article)\
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Acheter ou supprimer des licences d’abonnement](../licenses/buy-licenses.md) (article)\

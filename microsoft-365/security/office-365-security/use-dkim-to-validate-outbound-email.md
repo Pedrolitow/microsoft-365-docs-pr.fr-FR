@@ -21,11 +21,11 @@ description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 25c83dedaa9f1606744e54459a0ebfb5627be752
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164609"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -38,7 +38,7 @@ ms.locfileid: "58575479"
 
  Cet article répertorie les étapes de l’utilisation de DomainKeys Identified Mail (DKIM) avec Microsoft 365 pour vous assurer que les systèmes d’e-mail de destination approuvent les messages sortants envoyés à partir de votre domaine personnalisé.
 
-Contenu de cet article :
+Contenu de cet article :
 
 - [Pourquoi DKIM est plus efficace que SPF seul pour empêcher l’usurpation d’identité malveillante](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
 - [Étapes pour Créer, activer et désactiver DKIM à partir du portail Microsoft 365 Defender](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)

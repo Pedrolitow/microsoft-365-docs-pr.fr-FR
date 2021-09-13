@@ -16,20 +16,21 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
+- admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Utilisez PowerShell pour configurer Microsoft 365 propriétés de comptes d’utilisateurs individuels ou multiples dans votre Microsoft 365 client.
-ms.openlocfilehash: 23d89448eb9f34d67ada8711b8ca6463a0f6acd7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: b638a3afafd3c1701cf11f5868d0413d3995eadd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163865"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Configurer les Microsoft 365 de compte d’utilisateur avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser le Centre d’administration Microsoft 365 pour configurer les propriétés des comptes d’utilisateurs de votre Microsoft 365 client. Dans PowerShell, vous pouvez également le faire, ainsi que d’autres choses que vous ne pouvez pas faire dans le Centre d’administration.
+Vous pouvez utiliser la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> pour configurer les propriétés des comptes d’utilisateurs de Microsoft 365 client. Dans PowerShell, vous pouvez également le faire, ainsi que d’autres choses que vous ne pouvez pas faire dans le Centre d’administration.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
@@ -157,7 +158,7 @@ Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-3
 
 ### <a name="change-properties-for-a-specific-user-account"></a>Modification des propriétés d’un compte d’utilisateur spécifique
 
-Pour configurer les propriétés d’un compte d’utilisateur spécifique, utilisez l’cmdlet [**Set-MsolUser**](/previous-versions/azure/dn194136(v=azure.100)) et spécifiez les propriétés à définir ou à modifier. 
+Pour configurer les propriétés d’un compte d’utilisateur spécifique, utilisez l’cmdlet [**Set-MsolUser**](/previous-versions/azure/dn194136(v=azure.100)) et spécifiez les propriétés à définir ou modifier. 
 
 Vous identifiez le compte avec le paramètre *-UserPrincipalName* et définissez ou modifiez des propriétés spécifiques à l’aide de paramètres supplémentaires. Voici la liste des paramètres les plus courants.
   
@@ -245,7 +246,7 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 
 Cette commande indique à PowerShell de :
   
-1. Obtenez toutes les informations pour les comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
+1. Obtenez toutes les informations des comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
 
 1. Définissez l’emplacement utilisateur sur France (**Set-MsolUser -UsageLocation « FR »**).
 
@@ -259,7 +260,7 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 
 Cette commande indique à PowerShell de :
   
-1. Obtenez toutes les informations pour les comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
+1. Obtenez toutes les informations des comptes d’utilisateur (**Get-MsolUser**) et envoyez-les à la commande suivante ( **|** ).
 
 1. Recherchez tous les comptes d’utilisateur dont la propriété *Department* est définie sur « Accounting » (**Where {$_. Department -eq « Accounting"}**) et envoyer les informations résultantes à la commande suivante ( **|** ).
 

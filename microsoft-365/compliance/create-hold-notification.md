@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Utilisez l’outil Communications dans Advanced eDiscovery cas pour envoyer, collecter et suivre des notifications de mise en attente légale.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: cc9e8c424550c2be12711d7ef098c95230b0b1a4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163961"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notification de non-droit
 
@@ -114,7 +114,7 @@ Pour créer une notification de nouvelle émission :
 
 ### <a name="release-notification"></a>Notification de publication
 
-Une fois qu’un problème est résolu ou si un dépositaire n’est plus soumis à la conservation du contenu, vous pouvez libérer le dépositaire d’un cas. Si le dépositaire a déjà émis un avis de conservation, la notification de publication peut être utilisée pour avertir les dépositaires qu’ils ont été libérés de leur obligation.
+Une fois qu’un problème est résolu ou si un dépositaire n’est plus soumis à la conservation du contenu, vous pouvez libérer le dépositaire d’un cas. Si le dépositaire a déjà émis un avis de mise en attente, la notification de publication peut être utilisée pour avertir les dépositaires qu’ils ont été libérés de leur obligation.
 
 Pour créer une notification de publication :
 
@@ -144,7 +144,7 @@ Pour planifier des rappels :
 
 2. Activez le **flux de** travail Rappel en **activé** le basculement d’état (obligatoire).
 
-3. Spécifiez **l’intervalle de rappel (en jours)** (obligatoire). Il s’agit du nombre de jours d’attente avant l’envoi de la première notification de rappel et du suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel sera envoyé sept jours après l’émission initiale de la notification de mise en attente. Tous les rappels suivants sont également envoyés tous les sept jours.
+3. Spécifiez **l’intervalle de rappel (en jours)** (obligatoire). Il s’agit du nombre de jours à attendre avant d’envoyer la première notification de rappel et de suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel sera envoyé sept jours après l’émission initiale de la notification de mise en attente. Tous les rappels suivants sont également envoyés tous les sept jours.
 
 4. Spécifiez **le nombre de rappels** (obligatoire). Ce champ spécifie le nombre de rappels à envoyer aux dépositaires qui ne répond pas. Par exemple, si vous définissez le nombre de rappels sur 3, un dépositaire reçoit un maximum de trois rappels. Une fois qu’un dépositaire a reconnu la notification de conservation, les rappels ne sont plus envoyés à cet utilisateur.
 
@@ -172,7 +172,7 @@ Pour planifier des escalades :
 
 6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’escalade.
 
-7. Cliquez **sur Enregistrer** et passer à l’étape suivante.
+7. Cliquez **sur Enregistrer** et allez à l’étape suivante.
 
 ## <a name="step-5-assign-custodians-to-receive-notifications"></a>Étape 5 : Affecter des dépositaires pour recevoir des notifications
 

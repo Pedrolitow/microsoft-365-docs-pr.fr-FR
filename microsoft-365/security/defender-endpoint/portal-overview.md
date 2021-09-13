@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 63a3592e2bb8a89c373910e73b0bc91d544415d6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164969"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Vue d’ensemble du portail Microsoft 365 Defender
 
@@ -69,7 +69,7 @@ Zone|Description
 **Rapports**|Affichez des graphiques détaillant la protection contre les menaces, l’état et la conformité des appareils, la protection web et la vulnérabilité.
 **Partenaires et API**|Afficher les connexions partenaires prise en charge, ce qui améliore les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme. Vous pouvez également afficher les applications connectées, l’explorateur d’API, la vue d’ensemble de l’utilisation de l’API et les paramètres d’exportation des données.
 **Gestion des & menaces**|Affichez votre score de sécurité Microsoft pour les appareils, le score d’exposition, les appareils exposés, les logiciels vulnérables et prenez des mesures sur les recommandations de sécurité les plus importantes.
-**Évaluation et didacticiels**|Gérer les périphériques de test, les simulations d’attaques et les rapports. Découvrez et découvrez les fonctionnalités de Defender for Endpoint par le biais d’une procédure pas à pas guidée dans un environnement d’évaluation.
+**Évaluation et didacticiels**|Gérer les périphériques de test, les simulations d’attaques et les rapports. Découvrez et découvrez les fonctionnalités de Defender for Endpoint par le biais d’une procédure pas à pas dans un environnement d’évaluation.
 **Intégrité des services**|Fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels.
 **Gestion de la configuration**|Affiche les appareils sur site, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
 **Settings**|Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
@@ -93,7 +93,7 @@ Icône|Description
 ![Icône Thunderbolt.](images/atp-thunderbolt-icon.png)|Indique les événements qui ont déclenché une alerte dans l’arborescence **du processus d’alerte.**
 ![Icône De l’appareil.](images/atp-machine-icon.png)|Icône d’appareil
 ![Icône événements de l’Antivirus Microsoft Defender.](images/atp-windows-defender-av-events-icon.png)|Antivirus Microsoft Defender événements
-![Icône d’événements Application Guard.](images/atp-Application-Guard-events-icon.png)|Protection d’application Windows Defender événements
+![Icône d’événements Application Guard.](images/atp-Application-Guard-events-icon.png)|Protection d'application Windows Defender événements
 ![Icône d’événements Device Guard.](images/atp-Device-Guard-events-icon.png)|Windows Defender Device Guard événements
 ![Icône Événements Exploit Guard.](images/atp-Exploit-Guard-events-icon.png)|Windows Defender Événements Exploit Guard
 ![Icône Événements SmartScreen.](images/atp-Smart-Screen-events-icon.png)|Windows Defender Événements SmartScreen
@@ -129,7 +129,7 @@ Icône|Description
 ![Icône d’alerte active possible.](images/tvm_alert_icon.png)|Gestion des & des menaces : alerte active possible
 ![Icône Informations sur les recommandations.](images/tvm_insight_icon.png)|Gestion des & des menaces : recommandations
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble Microsoft 365 Defender](use.md)
 - [Afficher le tableau de bord Opérations de sécurité](security-operations-dashboard.md)

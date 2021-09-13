@@ -17,18 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 6ecd6371a75ec4a9156f7d6bccf59045f0700490
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165001"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions du dossier d’automatisation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -76,7 +76,7 @@ Vous pouvez contrôler les attributs suivants concernant le dossier que vous sou
 1. Dans le volet de navigation, **sélectionnez** Paramètres exclusions de \> **dossiers Endpoints** \> **Rules** \> **Automation.**
 2. Cliquez sur **Supprimer l’exclusion.**
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Gérer les listes d’automatisation autorisées/bloquées](manage-indicators.md)
 - [Gérer les chargements du fichier d’automatisation](manage-automation-file-uploads.md)

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70c80c2a3eaa5f6abd55b4ffd45fa98534308768dbd88cf6e2de71517dc3bd40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8da92008caaa9539fd1ad17adab519e32e18ac40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164257"
 ---
 # <a name="payment-information-for-russia"></a>Informations de paiement pour la Russie
 

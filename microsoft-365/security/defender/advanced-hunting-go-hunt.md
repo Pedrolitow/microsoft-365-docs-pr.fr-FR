@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: dba2bacc170163f37e8bf7e8dbb2c4b9b6474d93
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163684"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide des informations sur l’entité ou les événements avec la recherche de go
 
@@ -34,13 +34,13 @@ ms.locfileid: "58572526"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Avec *l’action de recherche* go, vous pouvez rapidement examiner les événements et différents types d’entités à l’aide de puissantes fonctionnalités de recherche avancée [basées](advanced-hunting-overview.md) sur des requêtes. Cette action exécute automatiquement une requête de recherche avancée pour rechercher des informations pertinentes sur l’événement ou l’entité sélectionné.
 
 *L’action de recherche* est disponible dans différentes sections du centre de sécurité chaque fois que les détails de l’événement ou de l’entité sont affichés. Par exemple, vous pouvez utiliser *la recherche dans* les sections suivantes :
 
-- Dans la [page Incident,](investigate-incidents.md#summary)vous pouvez consulter les détails sur les utilisateurs, les appareils et de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires ainsi que diverses actions que vous pouvez prendre sur cette entité. Dans l’exemple ci-dessous, une boîte aux lettres est sélectionnée, affichant des détails sur la boîte aux lettres, ainsi que l’option de recherche pour plus d’informations sur la boîte aux lettres.
+- Dans la [page Incident,](investigate-incidents.md#summary)vous pouvez consulter les détails sur les utilisateurs, les appareils et de nombreuses autres entités associées à un incident. Lorsque vous sélectionnez une entité, vous obtenez des informations supplémentaires ainsi que différentes actions que vous pouvez prendre sur cette entité. Dans l’exemple ci-dessous, une boîte aux lettres est sélectionnée, affichant des détails sur la boîte aux lettres, ainsi que l’option de recherche pour plus d’informations sur la boîte aux lettres.
 
     ![Image montrant les détails de la boîte aux lettres avec l’option aller à la recherche.](../../media/mtp-ah/go-hunt-email.png)
 
@@ -111,7 +111,7 @@ En plus de modifier la requête pour obtenir des résultats plus pertinents, vou
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

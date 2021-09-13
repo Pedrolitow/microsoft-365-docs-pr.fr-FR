@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Un Microsoft 365 classifieur est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Cet article vous montre comment créer et former un classifieur personnalisé et comment les former à nouveau pour améliorer la précision.
 ms.openlocfilehash: f8401193274f90ae90d773c6bb9a2a5a6a995169
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571108"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164100"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs avec capacité d’apprentissage
 
@@ -88,7 +88,7 @@ Lorsque vous souhaitez qu’un classifieur entraisable identifie de manière ind
 
 ### <a name="testing-content"></a>Test du contenu
 
-Une fois que le classifieur entraisable a traitée suffisamment d’échantillons positifs pour créer un modèle de prédiction, vous devez tester les prédictions qu’il effectue pour voir si le classifieur peut correctement faire la distinction entre les éléments qui correspondent à la catégorie et les éléments qui ne le sont pas. Pour ce faire, vous sélectionnez un autre ensemble de contenu sélectionné par l’être humain, avec un plus grand nombre d’échantillons qui doivent être placés dans la catégorie et des exemples qui ne le seront pas. Vous devez tester avec des données différentes des données initiales initiales que vous avez fournies. Une fois qu’il les traite, vous allez manuellement à travers les résultats et vérifiez si chaque prédiction est correcte, incorrecte ou vous n’êtes pas sûr. Le classifieur entraisable utilise ce retour d’expérience pour améliorer son modèle de prédiction.
+Une fois que le classifieur entraisable a traitée suffisamment d’échantillons positifs pour créer un modèle de prédiction, vous devez tester les prédictions qu’il effectue pour voir si le classifieur peut correctement faire la distinction entre les éléments qui correspondent à la catégorie et les éléments qui ne le sont pas. Pour ce faire, vous sélectionnez un autre ensemble de contenu sélectionné par l’être humain, avec un plus grand nombre d’échantillons qui doivent être placés dans la catégorie, et des exemples qui ne le seront pas. Vous devez tester avec des données différentes des données initiales initiales que vous avez fournies. Une fois qu’il les traite, vous allez manuellement à travers les résultats et vérifiez si chaque prédiction est correcte, incorrecte ou vous n’êtes pas sûr. Le classifieur entraisable utilise ce retour d’expérience pour améliorer son modèle de prédiction.
 
 > [!TIP]
 > Pour obtenir de meilleurs résultats, vous devez avoir au moins 200 éléments dans votre exemple de test avec une distribution équitable de correspondances positives et négatives.
@@ -120,7 +120,7 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 
 8. Examinez les paramètres et choisissez `Create trainable classifier` .
 
-9. Dans un délai de 24 heures, le classifieur entraçable traitera les données d’amorçage et créera un modèle de prédiction. L’état du classifieur `In progress` est pendant qu’il traite les données d’amorçage. Lorsque le classificateur a terminé le traitement des données de amorçage, l’état change en `Need test items` .
+9. Dans un délai de 24 heures, le classifieur entraçable traitera les données d’amorçage et créera un modèle de prédiction. L’état du classificateur est `In progress` pendant qu’il traite les données d’amorçage. Lorsque le classificateur a terminé le traitement des données de amorçage, l’état change en `Need test items` .
 
 10. Vous pouvez désormais afficher la page de détails en choisissant le classificateur.
 
@@ -150,12 +150,12 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 
 17. Choisissez `Tested items to review` l’onglet pour passer en revue les éléments.
 
-18. Microsoft 365 présente 30 éléments à la fois. Examinez-les et dans la `We predict this item is "Relevant". Do you agree?` zone choisissez `Yes` l’une ou `No` l’autre ou `Not sure, skip to next item` . La précision du modèle est automatiquement mise à jour après 30 éléments.
+18. Microsoft 365 présente 30 éléments à la fois. Examinez-les et dans la `We predict this item is "Relevant". Do you agree?` zone choisissez soit ou `Yes` `No` `Not sure, skip to next item` . La précision du modèle est automatiquement mise à jour après 30 éléments.
 
     > [!div class="mx-imgBorder"]
     > ![zone d’avis sur les éléments.](../media/classifier-trainable-review-detail.png)
 
-19. Passer *en revue au moins* 200 éléments. Une fois que le score  de précision s’est stabilisé, l’option de publication devient disponible et l’état du classificateur le dit `Ready to use` .
+19. Passer *en revue au moins* 200 éléments. Une fois que le score de précision s’est stabilisé, l’option **de** publication devient disponible et l’état du classificateur le dit `Ready to use` .
 
     > [!div class="mx-imgBorder"]
     > ![score de précision et prêt à être publié.](../media/classifier-trainable-review-ready-to-publish.png)

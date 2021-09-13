@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: dfc770e22f0fb4fc6dbb7e7d24bc1a8690d44032
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164852"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Informations sur le tableau de bord : Gestion des menaces et des vulnérabilités
 
@@ -32,7 +32,7 @@ ms.locfileid: "58569956"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -47,7 +47,7 @@ Vous pouvez utiliser la fonctionnalité Gestion des menaces et des vulnérabilit
 
 - Afficher le score d’exposition et le degré de sécurisation Microsoft pour les appareils, ainsi que les principales recommandations en matière de sécurité, la vulnérabilité logicielle, les activités de correction et les appareils exposés
 - Corréler PEPT informations sur les vulnérabilités des points de terminaison et les traiter
-- Sélectionner les options de correction à trier et suivre les tâches de correction
+- Sélectionner des options de correction pour trier et suivre les tâches de correction
 - Sélectionner des options d’exception et suivre les exceptions actives
 
 > [!NOTE]
@@ -67,14 +67,14 @@ Zone|Description
 [**Score d'exposition**](tvm-exposure-score.md)|Consultez l’état actuel de l’exposition des appareils de votre organisation aux menaces et vulnérabilités. Plusieurs facteurs affectent le score d’exposition de votre organisation : faiblesses découvertes sur vos appareils, probabilité de violation de vos appareils, valeur des appareils pour votre organisation et alertes pertinentes découvertes avec vos appareils. L’objectif est de réduire le score d’exposition de votre organisation pour être plus sécurisé. Pour réduire le score, vous devez corriger les problèmes de configuration de sécurité associés répertoriés dans les recommandations de sécurité.
 [**Niveau de sécurité Microsoft pour les appareils**](tvm-microsoft-secure-score-devices.md)|Découvrez la posture de sécurité du système d’exploitation, des applications, du réseau, des comptes et des contrôles de sécurité de votre organisation. L’objectif est de résoudre les problèmes de configuration de sécurité associés afin d’augmenter votre score pour les appareils. La sélection des barres vous permettra d’être sur la page **recommandations en matière de** sécurité.
 **Distribution de l’exposition des appareils**|Voir le nombre d’appareils exposés en fonction de leur niveau d’exposition. Sélectionnez une section dans le graphique en doughnut pour aller à la **page** de liste Périphériques et afficher les noms des appareils concernés, le niveau d’exposition, le niveau de risque et d’autres détails tels que le domaine, la plateforme du système d’exploitation, son état d’état d’état, la dernière fois qu’il a été vu et ses balises.
-**Principales recommandations en matière de sécurité**|Consultez les recommandations de sécurité triées qui sont triées et hiérarchisées en fonction de l’exposition aux risques de votre organisation et de l’urgence dont elle a besoin. Sélectionnez **Afficher plus** pour afficher le reste des recommandations de sécurité dans la liste. Sélectionnez **Afficher les exceptions** pour la liste des recommandations qui ont une exception.
+**Recommandations de sécurité principales**|Consultez les recommandations de sécurité triées qui sont triées et hiérarchisées en fonction de l’exposition aux risques de votre organisation et de l’urgence dont elle a besoin. Sélectionnez **Afficher plus** pour afficher le reste des recommandations de sécurité dans la liste. Sélectionnez **Afficher les exceptions** pour la liste des recommandations qui ont une exception.
 **Logiciels les plus vulnérables**|Obtenez une visibilité en temps réel de l’inventaire logiciel de votre organisation avec une liste de logiciels vulnérables installés sur les appareils de votre réseau et leur impact sur le score d’exposition de votre organisation. Sélectionnez un élément pour plus d’informations **ou** affichez plus pour afficher le reste de la liste des logiciels vulnérables dans la page **Inventaire logiciel.**
 **Principales activités de correction**|Suivre les activités de correction générées à partir des recommandations de sécurité. Vous pouvez sélectionner chaque élément de la liste pour afficher  les détails dans la **page** Correction ou sélectionner Afficher plus pour afficher le reste des activités de correction et les exceptions actives.
 **Appareils les plus exposés**|Afficher les noms des appareils exposés et leur niveau d’exposition. Sélectionnez un nom d’appareil dans la liste pour aller à la page de l’appareil où vous pouvez afficher les alertes, les risques, les incidents, les recommandations de sécurité, les logiciels installés et les vulnérabilités découvertes associées aux appareils exposés. Sélectionnez **Afficher plus** pour afficher le reste de la liste des appareils exposés. Dans la liste des appareils, vous pouvez gérer les balises, lancer des enquêtes automatisées, lancer une session de réponse en direct, collecter un package d’enquête, exécuter une analyse antivirus, restreindre l’exécution de l’application et isoler l’appareil.
 
 Pour plus d’informations sur les icônes utilisées dans l’ensemble du portail, voir [Microsoft Defender pour les icônes de point de terminaison.](portal-overview.md#microsoft-defender-for-endpoint-icons)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Score d'exposition](tvm-exposure-score.md)

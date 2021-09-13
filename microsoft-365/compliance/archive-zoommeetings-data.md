@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Veritas Zoom Meetings Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 ms.openlocfilehash: 1ee2ede9005f502523a3b298248b0bf1fb1716d6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164233"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurer un connecteur pour archiver les données de Zoom Meetings
 
@@ -27,13 +27,13 @@ Une fois que les données Zoom Meetings sont stockées dans les boîtes aux lett
 
 ## <a name="overview-of-archiving-zoom-meetings-data"></a>Vue d’ensemble de l’archivage des données de zoom des réunions
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Zoom Meetings dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Zoom Meetings Microsoft 365.
 
 ![Zoomer le flux de travail d’archivage des réunions.](../media/ZoomMeetingsConnectorWorkflow.png)
 
 1. Votre organisation travaille avec Zoom Meetings pour configurer un site Zoom Meetings.
 
-2. Une fois toutes les 24 heures, les éléments de réunion de Zoom Meetings sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
+2. Toutes les 24 heures, les éléments de réunion de Zoom Meetings sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
 
 3. Le connecteur Zoom Meetings que vous créez dans le Centre de conformité Microsoft 365, se connecte à Veritas Merge1 tous les jours et transfère les messages de réunion vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -63,7 +63,7 @@ La première étape consiste à accéder aux **connecteurs** de données dans le
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors**  >  **Zoom Meetings**.
 
-2. Dans la page de description du produit Zoom **Meetings,** cliquez **sur Ajouter un connecteur.**
+2. Dans la page de description **du produit Zoom Meetings,** cliquez **sur Ajouter un connecteur.**
 
 3. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
@@ -95,7 +95,7 @@ Après avoir créé le connecteur Zoom Meetings, vous pouvez afficher l’état 
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
 

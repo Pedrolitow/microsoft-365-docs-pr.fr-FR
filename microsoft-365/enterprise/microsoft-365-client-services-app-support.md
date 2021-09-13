@@ -15,16 +15,16 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Dans cet article, recherchez des détails sur Microsoft 365 prise en charge des applications clientes et de services.
-ms.openlocfilehash: c3ca331329719511c834cc0b5c10af511c5450c9fcb684e22cadbc356f26d6d4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855034"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163849"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 prise en charge des applications client et de services
 
-Microsoft prend en charge un large éventail de fonctionnalités de sécurité, d’authentification et de conformité pour assurer la sécurité des données client et permet aux administrateurs informatiques de personnaliser les stratégies au sein du Centre d’administration Microsoft 365 pour leurs utilisateurs. Les fonctionnalités suivantes ne sont qu’un sous-ensemble des nombreuses fonctionnalités d’entreprise que vous pouvez configurer en fonction de Microsoft 365 abonnement.
+Microsoft prend en charge un large éventail de fonctionnalités de sécurité, d’authentification et de conformité pour assurer la sécurité des données client et permet aux administrateurs informatiques de personnaliser les stratégies au sein du Centre d'administration Microsoft 365 pour leurs utilisateurs. Les fonctionnalités suivantes ne sont qu’un sous-ensemble des nombreuses fonctionnalités d’entreprise que vous pouvez configurer en fonction de Microsoft 365 abonnement.
 
 ## <a name="client-and-service-support"></a>Prise en charge du client et du service
 
@@ -120,12 +120,12 @@ Pour plus d’informations sur l' sign-on unique pour la prise en charge des app
 
 ### <a name="modern-authentication"></a>Authentification moderne
 
-L’authentification moderne permet aux clients de s’authentifier par rapport à Office 365 et aux administrateurs clients d’appliquer des exigences d’authentification spécifiques au sein de la location Office 365, telles que :
+L’authentification moderne permet aux clients de s’authentifier par rapport à Office 365 et aux administrateurs clients d’appliquer des exigences d’authentification spécifiques au sein du client Office 365, tels que :
 
 - Prise en charge de l’authentification multifacteur pour l’interaction administrative avec le client et les services, et l’interaction de l’utilisateur final avec les applications et leurs données
 - Accès conditionnel
 - Se connecte au fournisseur d’identité tiers SAML
-- Connexion par carte à puce sur des ordinateurs personnels
+- Journal des cartes à puce sur des ordinateurs personnels
 - Authentification basée sur les certificats sur les appareils mobiles
 - Ne nécessite plus la transmission des informations d’identification sur l’authentification de base.
 

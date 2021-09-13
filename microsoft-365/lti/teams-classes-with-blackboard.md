@@ -14,11 +14,11 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
 ms.openlocfilehash: 30ab28c4a9c2431a63db976df13748de6b843fdc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165233"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
 
@@ -37,7 +37,7 @@ Vos classes peuvent inclure des conversations en temps réel, des réunions vid�
 
 Dans le cadre de l’évolution avec les intégrations  de fournisseurs cloud, Blackboard Learn Ultra a créé un nouveau champ Courrier électronique de l’établissement, à la fois dans l’intégration de Student Information System Framework et dans les API REST publiques, ce qui permet aux établissements de gérer efficacement le processus de synchronisation des données entre Blackboard Learn Ultra et AAD.
 
-### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Qu’est-ce que la messagerie électronique de l’établissement signifie et qu’est-ce qu’elle prend en charge ?
+### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Que signifie le courrier électronique de l’établissement et qu’est-ce qu’il prend en charge ?
 
 Le **champ Courrier électronique** de l’établissement permet de personnaliser les mappages de champs entre les sources de données d’un client pris en charge en externe et blackboard Learn Ultra. Si les sources de données sont des fournisseurs cloud, tels que Microsoft, le nom d’utilisateur principal (UPN) est un identificateur unique principal pour chaque utilisateur constitué d’un préfixe UPN (nom de compte de l’utilisateur) et d’un suffixe UPN (un nom de domaine DNS) associé à un symbole @. Cela crée une adresse e-mail unique pour chaque utilisateur spécifique au sein du Microsoft Azure Active Directory.
 
@@ -49,12 +49,12 @@ Pour garantir que les données sont exactes et que les inscriptions ou appartena
   Ou
 - Un établissement peut définir un mappage de champ personnalisé dans son courrier électronique d’établissement, ce qui peut résoudre un conflit potentiel.
 
-Le **mappage de champ Courrier** électronique de l’établissement est désormais disponible pour tous les types d’intégration SIS existants dans advanced Configuration **Paramètres** Users Learn  >  **Object Type** Field  >  **Mapping**.
+Le **mappage de** champ Courrier électronique de l’établissement est désormais disponible pour tous les types d’intégration SIS existants dans advanced **Configuration Paramètres** Users Learn  >  **Object Type** Field  >  **Mapping**.
 
 > [!NOTE]
 > Il est important de noter que, par défaut,  la messagerie de **l’établissement** est définie sur Courrier de la personne pour tous les formats SIS et doit être unique pour chaque personne. Toutes les intégrations existantes qui sont définies et en cours d’exécution auront ce mappage de données en place, car SIS ne pourra pas importer les utilisateurs si leur courrier électronique est dupliqué. Si un établissement a besoin de la possibilité de modifier le courrier  électronique de l’établissement en courrier **personnalisé,** il devra le gérer via la configuration avancée Paramètres dans le SIS.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 L Microsoft Teams des classes est disponible uniquement pour les cours **Ultra Course View.** Votre établissement doit remplir les conditions requises pour l’utiliser :
 
@@ -152,7 +152,7 @@ Ce processus peut être effectué avant ou après avoir configuré les applicati
 
 ### <a name="before-configuring-the-lti-applications"></a>Avant de configurer les applications LTI
 
-Si vous choisissez d’approuver l’application Azure Classes Blackboard Learn Ultra Teams Classes avant de configurer les intégrations LTI, vous devez rediriger vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités **Microsoft.** L’URL s’affiche :
+Si vous choisissez d’approuver l’application Azure Blackboard Learn Ultra Teams Classes avant de configurer les intégrations LTI, vous devez rediriger vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités **Microsoft.** L’URL s’affiche :
 
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 

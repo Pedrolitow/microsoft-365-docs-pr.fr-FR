@@ -16,18 +16,18 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: a2479b79ce1a0b845c70148a9510681de37dbae5
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163708"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -83,7 +83,7 @@ Microsoft Defender hors ligne analyses sont indiquées sous  l’état de correc
 
 Microsoft Defender hors ligne notifications sont configurées dans le même paramètre de stratégie que les autres notifications de Microsoft Defender AV.
 
-Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les [notifications](configure-notifications-microsoft-defender-antivirus.md) qui apparaissent sur les points de terminaison.
+Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les notifications qui apparaissent [sur les points de terminaison.](configure-notifications-microsoft-defender-antivirus.md)
 
 ## <a name="run-a-scan"></a>Effectuer une analyse
 

@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: Découvrez comment créer et configurer les serveurs AD FS pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.
 ms.openlocfilehash: 7f6e7801c8185cebc66e653a39930ee9af120946
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165372"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Authentification fédérée haute disponibilité, phase 3 : Configurer les serveurs AD FS
 

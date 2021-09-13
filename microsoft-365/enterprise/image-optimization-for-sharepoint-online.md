@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Découvrez comment utiliser les rendus et les sprites pour améliorer les performances des images sur vos sites de publication classiques SharePoint Online.
 ms.openlocfilehash: 1400b3f3bd78f6c3fda4b587b6974e3aaef18199
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165316"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimisation des images pour SharePoint sites de publication classiques en ligne
 
 La vitesse de chargement d’une page web dépend de la taille combinée de tous les composants requis pour restituer la page, y compris les images, HTML, JavaScript et CSS. Les images sont un excellent moyen de rendre votre site plus attrayant, mais leur taille peut affecter les performances. En optimisant vos images avec compression et re re resserr, et en utilisant des sprites, vous pouvez décaner les effets des images très grandes. À l SharePoint rendus d’image, vous pouvez charger une seule grande image et afficher des sections de l’image, ce qui permet de la réutiliser plutôt que de la recharger.
 
 >[!NOTE]
->Cette rubrique s’applique SharePoint sites de publication classiques en ligne, et non aux sites portail modernes. Pour plus d’informations sur l’optimisation des images dans SharePoint sites portail modernes en ligne, voir Optimiser les images dans les pages SharePoint [portail moderne en ligne.](modern-image-optimization.md)
+>Cette rubrique s’applique SharePoint sites de publication classiques en ligne, et non aux sites portail modernes. Pour plus d’informations sur l’optimisation des images SharePoint sites portail modernes en ligne, voir Optimiser les images dans les pages SharePoint [portail moderne en ligne.](modern-image-optimization.md)
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Utilisation de sprites pour accélérer le chargement de l’image
 
@@ -50,14 +50,14 @@ Cela peut améliorer les performances, car vous ne téléchargez qu’une seule 
 
 La compression et l’optimisation des images consiste à réduire la taille de fichier des images que vous utilisez sur votre site. Souvent, la meilleure technique pour réduire la taille d’une image consiste à resizer l’image aux dimensions maximales qu’elle sera vue sur le site. Il n’est pas logique d’avoir une image plus grande qu’elle ne le sera jamais. Vous assurer que les images sont des dimensions correctes à l’aide d’un éditeur d’images est un moyen rapide et facile de réduire la taille de votre page.
   
-Une fois que les images sont de la bonne taille, l’étape suivante consiste à optimiser la compression de ces images. Différents outils sont disponibles pour la compression et l’optimisation, notamment la galerie de photos et des outils tiers. La clé de la compression consiste à réduire autant que possible la taille de fichier sans perte de qualité visible pour les utilisateurs finaux. Veillez à tester vos fichiers compressés sur un affichage haute définition pour vous assurer qu’ils s’afficheront toujours comme il se doit.
+Une fois que les images sont de la bonne taille, l’étape suivante consiste à optimiser la compression de ces images. Différents outils sont disponibles pour la compression et l’optimisation, notamment la galerie de photos et les outils tiers. La clé de la compression consiste à réduire autant que possible la taille de fichier sans perte de qualité visible pour les utilisateurs finaux. Veillez à tester vos fichiers compressés sur un affichage haute définition pour vous assurer qu’ils s’afficheront toujours comme il se doit.
   
 ## <a name="speed-up-page-downloads-by-using-sharepoint-image-renditions"></a>Accélérer les téléchargements de pages à l’aide SharePoint rendus d’image
 
-Les rendus d’image sont une fonctionnalité de SharePoint Online qui vous permet de servir différentes versions d’images en fonction de dimensions d’image prédéfinées. Ceci est particulièrement important lorsqu’il existe du contenu d’image généré par l’utilisateur ou que les dimensions d’image telles que la largeur et la hauteur sont corrigées par le CSS sur le site. Même si une image est corrigée par CSS, l’image de résolution complète est toujours chargée. Dans ce cas, la taille du fichier peut être réduite à l’aide des rendus d’image.
+Les rendus d’image sont une fonctionnalité de SharePoint Online qui vous permet de servir différentes versions d’images en fonction de dimensions d’image prédéfinées. Ceci est particulièrement important lorsque le contenu d’image généré par l’utilisateur ou les dimensions d’image telles que la largeur et la hauteur sont fixes par le CSS sur le site. Même si une image est corrigée par CSS, l’image de résolution complète est toujours chargée. Dans ce cas, la taille du fichier peut être réduite à l’aide des rendus d’image.
   
 > [!NOTE]
-> Les rendus ne sont disponibles que pour SharePoint lorsque la publication est activée. Vous pouvez activer la publication sous Paramètres Site Paramètres Gérer les fonctionnalités de \> \> site SharePoint Server \> Publishing. L’option n’apparaîtra pas dans le cas contraire.
+> Les rendus ne sont disponibles que pour SharePoint lorsque la publication est activée. Vous pouvez activer la publication sous Paramètres Site Paramètres Gérer les fonctionnalités de \> \> site SharePoint Server \> Publishing. L’option n’apparaîtra pas autrement.
   
 Le re dimensionnement du rendu d’image fonctionne en prenant la plus petite dimension que vous définissez, largeur ou hauteur, puis en re dimensionnant l’image de sorte que l’autre dimension soit automatiquement re dimensionné en fonction des proportions verrouillées. Par défaut, elle rognait l’image du centre par les dimensions restantes. Par exemple, si vous définissez un rendu de 100 px de large et de 50 px de hauteur et que votre image d’origine a une largeur de 1 000 px et une hauteur de 800 px, il sera re dimensionné de sorte que la dimension de 800 px soit maintenant de 50 px et que la dimension 1 000 px (désormais 62,5 px) soit rogné du centre de l’image.
   

@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Découvrez comment mettre à niveau Microsoft Teams gratuit vers un nouvel abonnement Microsoft 365 entreprise.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 326c76c2939e6312eb6ef9865e1197b16e6d0c702af1594517913bc3ba7d52f2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ea80492344f76ead19aa5db1e504c2c52a9746c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59167550"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Mise à niveau Microsoft Teams gratuite vers Microsoft 365 entreprise
 
@@ -49,7 +49,7 @@ Pour commencer le processus, obtenez votre ID de compte scolaire ou scolaire ou 
 
 Une fois que vous avez le compte scolaire ou scolaire sous-jacent pour votre organisation Microsoft Teams gratuite, vous devez réinitialiser le mot de passe du compte.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>. When prompted to sign in, choose **Forgot my password**.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. When prompted to sign in, choose **Forgot my password**.
 2. Terminez la procédure de réinitialisation du mot de passe à l’aide du compte scolaire ou scolaire sous-jacent (celui se terminant par *.onmicrosoft.com*).
 3. Effectuer les étapes de vérification. Vous recevrez un courrier électronique avec un code à utiliser pour définir un nouveau mot de passe.
 4. Entrez le code pour terminer le processus de vérification.
@@ -62,19 +62,19 @@ Utilisez le compte scolaire ou scolaire sous-jacent que vous avez récupéré et
 2. Recherchez le Microsoft 365 produit pour les entreprises que vous souhaitez acheter.
     > [!IMPORTANT]
     > N’oubliez pas d’en choisir une qui inclut Microsoft Teams.
-3. Terminez l’achat. N’oubliez pas d’acheter suffisamment de licences pour tous les utilisateurs de votre organisation Microsoft Teams gratuite qui vous souhaitez passer à Microsoft 365 entreprise.
+3. Terminez l’achat. N’oubliez pas d’acheter suffisamment de licences pour tous les utilisateurs de votre organisation Microsoft Teams gratuite que vous souhaitez déplacer vers Microsoft 365 entreprise.
 
 ## <a name="step-4-assign-new-licenses-to-users"></a>Étape 4 : Attribuer de nouvelles licences aux utilisateurs
 
 Maintenant que vous avez un nouvel abonnement Microsoft 365 entreprise, vous pouvez attribuer des licences aux utilisateurs existants dans votre Microsoft Teams gratuite.
 
-1. Dans le Centre d’administration, allez à **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs.</a>
+1. Dans le Centre d’administration, allez à **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 2. Sélectionnez les utilisateurs auxquels vous souhaitez attribuer des licences Microsoft 365 pour les entreprises, puis sélectionnez Gérer **les licences de produits.**
 3. Dans le **volet Gérer les licences de** produits, **sélectionnez Remplacer les attributions de licence existantes.**
 4. Dans le volet Remplacer **les** produits existants, recherchez le produit Microsoft 365 entreprise que vous avez acheté, puis basculez le bouton bascule sur **Sur**.
 5. Sélectionnez **Remplacer,** puis **Fermez.**
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Bienvenue dans Microsoft Teams gratuitement](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (article)\
 [Mise à niveau Microsoft Teams gratuite vers la version d’abonnement](/microsoftteams/upgrade-freemium) (article)\

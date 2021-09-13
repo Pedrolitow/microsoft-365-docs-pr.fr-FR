@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9b9ca71bb655e581aafad2968f6ff7c4ff5b0fab4039932d3603a12d62a283c8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd3663a020830f1abe6ce7607147c7416974f184
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164364"
 ---
 # <a name="contact-support-for-malawi"></a>Contacter le support technique pour le Malawi
 

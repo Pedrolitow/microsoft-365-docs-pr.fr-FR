@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le script PowerShell de cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365.
 ms.openlocfilehash: 80dd6911f387a7912d92bfbcfac3c94e6ee804eb
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164076"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
@@ -141,7 +141,7 @@ Pour cloner une recherche :
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Étape 2 : Modifier et exécuter la recherche clonée dans le centre de conformité
 
-Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, voir :
+Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, consultez :
   
 - [Recherche de contenu dans Office 365](content-search.md)
     

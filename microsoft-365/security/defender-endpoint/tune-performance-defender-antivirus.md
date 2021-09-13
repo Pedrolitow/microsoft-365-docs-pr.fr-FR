@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d38fe9f7c3bb19c946f97d00720cd8bf60c18f4c
-ms.sourcegitcommit: a4e6a5a92ea527461a7835ddc83e2b01986e566b
+ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58918367"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164884"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -42,8 +42,8 @@ Le processus de haut niveau pour l’exécution de l’analyseur de performances
 
 1. Exécutez l’analyseur de performances pour collecter un enregistrement des performances Antivirus Microsoft Defender événements sur le point de terminaison.
 
-> [!NOTE]
-> Les performances de Antivirus Microsoft Defender événements de type **Microsoft-Antimalware-Engine** sont enregistrées via l’analyseur de performances.
+   > [!NOTE]
+   > Les performances de Antivirus Microsoft Defender événements de type **Microsoft-Antimalware-Engine** sont enregistrées via l’analyseur de performances.
 
 2. Analysez les résultats de l’analyse à l’aide de différents rapports d’enregistrement.
 
@@ -53,15 +53,20 @@ Pour commencer à enregistrer les événements système, ouvrez PowerShell en mo
 
 1. Exécutez la commande suivante pour démarrer l’enregistrement :
 
-`New-MpPerformanceRecording -RecordTo <recording.etl>`
+   `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
- où `-RecordTo` le paramètre spécifie l’emplacement du chemin d’accès complet dans lequel le fichier de suivi est enregistré. Pour plus d’informations sur les cmdlet, voir [Defender.](/powershell/module/defender)
+    où `-RecordTo` le paramètre spécifie l’emplacement du chemin d’accès complet dans lequel le fichier de suivi est enregistré. Pour plus d’informations sur les cmdlet, voir [Defender.](/powershell/module/defender)
 
 2. S’il existe des processus ou des services qui semblent affecter les performances, reproduisez la situation en réalisation des tâches pertinentes.
+
 3. Appuyez **sur Entrée** pour arrêter et enregistrer l’enregistrement, ou **sur Ctrl+C** pour annuler l’enregistrement.
-4. Analysez les résultats à l’aide du paramètre de l’analyseur de `Get-MpPerformanceReport` performances. Par exemple, lors de l’exécution de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` les performances. 
+
+4. Analysez les résultats à l’aide du paramètre de l’analyseur `Get-MpPerformanceReport` de performances. Par exemple, lors de l’exécution de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` les performances. 
 
 Pour plus d’informations sur les paramètres de ligne de commande et les options, voir [New-MpPerformanceRecording](#new-mpperformancerecording) et [Get-MpPerformanceReport](#get-mpperformancereport).
+
+> [!NOTE]
+> Lors de l’exécution d’un enregistrement, si vous obtenez l’erreur « Impossible de démarrer l’enregistrement des performances car l’enregistreur de performances Windows est déjà en cours d’enregistrement », exécutez la commande suivante pour arrêter le suivi existant avec la nouvelle commande : **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
 ### <a name="performance-tuning-data-and-information"></a>Informations et données d’optimisation des performances
 
@@ -71,7 +76,7 @@ En fonction de la requête, l’utilisateur peut afficher les données pour le n
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Fonctionnalités supplémentaires : exportation et conversion en CSV et JSON
 
-Les résultats de l’analyseur de perfomance peuvent également être exportés et convertis en fichier CSV ou JSON.
+Les résultats de l’analyseur de performances peuvent également être exportés et convertis en fichier CSV ou JSON.
 Pour obtenir des exemples qui décrivent le processus d’exportation et de conversion par le biais d’exemples de codes, voir ci-dessous.
 
 #### <a name="for-csv"></a>Pour CSV
@@ -84,7 +89,7 @@ Pour obtenir des exemples qui décrivent le processus d’exportation et de conv
 
 - **Pour convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 Antivirus Microsoft Defender’analyseur de performances présente les conditions préalables suivantes :
 
 - Versions Windows prise en charge : Windows 10, Windows 11 et versions Windows Server 2016 versions ultérieures
@@ -284,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-Spécifie le nombre de fichiers principaux à sortier pour chaque extension supérieure, triés par « Durée ».
+Spécifie le nombre de fichiers principaux à obtenir pour chaque extension supérieure, triés par « Durée ».
 
 
 ```yaml
@@ -343,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
-Demande un rapport d’analyse supérieure et spécifie le nombre d’analyses principales à sortie, triées par « Durée ».
+Demande un rapport d’analyse supérieure et spécifie le nombre d’analyses les plus en sortie, triées par « Durée ».
 
 
 ```yaml

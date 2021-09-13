@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: how-to
 ms.technology: m365d
 ms.openlocfilehash: f00daf82a2b6090f6934aba12eb9227efdfa1422
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163615"
 ---
 # <a name="enable-the-evaluation-environment"></a>Activer l’environnement d’évaluation
 
@@ -128,7 +128,7 @@ Utilisez les instructions ci-après pour activer votre Microsoft Defender pour O
    |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="Ce volet dispose d’une zone de drop-down pour passer en revue vos paramètres. Il dispose également d’un lien cliquable pour modifier votre type de routage si nécessaire. Lorsque vous êtes prêt, cliquez sur le grand bouton Bleu Créer l’évaluation.":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="La mise en place est maintenant terminée. Le bouton bleu de cette page indique « Passer à l’évaluation ».":::|
    |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Étape 3 sur 3 : Configurer le pilote pour Microsoft Defender pour Office 365
 

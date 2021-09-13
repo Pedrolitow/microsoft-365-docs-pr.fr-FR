@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: c8a501c178ae0cffb98870d4fccd44028cbf6ec0
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163812"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 
@@ -27,7 +27,7 @@ ms.locfileid: "58365104"
 
 Microsoft inclut certaines applications clés, ainsi que la licence Microsoft 365 E3 ou E5 nécessaire pour participer à Microsoft Manged Desktop. Toutefois, même si nous fournissons ces applications, vous avez encore certaines responsabilités et actions à effectuer.
 
-Vous pouvez également déployer d’autres applications non Microsoft pour vos utilisateurs en libre-service via le Portail d’entreprise ou une installation en arrière-plan requise, le tout à l’aide du pipeline de déploiement de Microsoft Intune. 
+Vous pouvez également déployer d’autres applications non Microsoft pour vos utilisateurs en libre-service via le Portail d'entreprise ou une installation en arrière-plan requise, le tout à l’aide du pipeline de déploiement de Microsoft Intune. 
 
 ## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft
 
@@ -47,25 +47,25 @@ Il existe encore certaines choses que vous devez faire avec ces applications :
 
 ## <a name="apps-you-provide"></a>Applications que vous fournissez
 
-Vous avez probablement d’autres applications dont vous avez besoin pour vos opérations professionnelles. Ces applications ne peuvent être déployées que sur Microsoft Manged Desktop à l’aide Microsoft Intune pipeline de déploiement de l’application. Pour plus d’informations sur le déploiement d’applications, suivez les étapes de [Déploiement d’applications Microsoft Manged Desktop appareils.](../get-started/deploy-apps.md)
+Vous avez probablement d’autres applications dont vous avez besoin pour vos opérations professionnelles. Ces applications ne peuvent être déployées que sur Microsoft Manged Desktop à l’aide Microsoft Intune pipeline de déploiement de l’application. Pour plus d’informations sur le déploiement d’applications, suivez les étapes de [déploiement d’applications Microsoft Manged Desktop appareils.](../get-started/deploy-apps.md)
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Préparation de vos propres applications pour l’inclusion dans Microsoft Manged Desktop
 Examinez vos applications, en vérifiant :
 
 - Aucune des applications n’est interdite ou n’a de comportement restreint, comme décrit [dans Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
-- Les applications doivent être prêtes à être Microsoft Intune. Pour plus d’informations sur cette rubrique, [voir Windows 10 déploiement](/intune/apps-windows-10-app-deploy) d’applications à l’aide Microsoft Intune et Ajouter des applications à [Microsoft Intune](/intune/apps-add).
+- Les applications doivent être prêtes à être Microsoft Intune. Pour plus d’informations sur cette rubrique, [voir Windows 10 déploiement d’applications](/intune/apps-windows-10-app-deploy) à l’aide Microsoft Intune et Ajouter des applications à [Microsoft Intune](/intune/apps-add).
 - Autres conditions préalables à l’empaquetage, telles que la fourniture de clés de licence, l’accord avec les termes du contrat de licence et la configuration préalable des connexions au serveur.
 
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
-2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
-1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
-1. Vérifiez [la configuration du réseau.](network.md)
-1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
-1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
+2. Exécutez les [outils d’évaluation de la préparation](readiness-assessment-tool.md).
+1. Achetez [Portail d’entreprise](../get-started/company-portal.md).
+1. Passez en revue les [prérequis pour les comptes invités](guest-accounts.md).
+1. Vérifiez la[configuration réseau](network.md).
+1. [Préparer les certificats et les profils réseau](certs-wifi-lan.md).
+1. [Préparer l’accès utilisateur aux données](authentication.md).
 1. Préparer les applications (cet article).
-1. [Préparez les lecteurs mappés.](mapped-drives.md)
-1. [Préparer les ressources d’impression.](printing.md)
-1. Noms des [périphériques d’adresse.](address-device-names.md)
+1. [Préparer les lecteurs mappés](mapped-drives.md).
+1. [Préparer les ressources d’impression](printing.md).
+1. [noms d’appareil](address-device-names.md) d’une adresse.

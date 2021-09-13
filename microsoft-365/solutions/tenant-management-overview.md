@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: Vue d’ensemble de la planification, du déploiement et du fonctionnement continu de vos Microsoft 365 client.
 ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162401"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Gestion des locataires pour Microsoft 365 entreprise
 
@@ -100,7 +100,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 |Déplacer les données principales vers une nouvelle géo de centres de données|Lorsque Microsoft ajoute de nouvelles géos de centres de données pour des ressources de calcul et de capacité supplémentaires, vous pouvez demander un déplacement géographique de centre de données pour la résidence des données dans la zone géographique pour vos données client principales.|Microsoft 365 E3 ou E5|
 ||||
 
-### <a name="networking"></a>Réseau
+### <a name="networking"></a>Mise en réseau
 
 |Fonctionnalité|Description|Licence|
 |---|---|---|
@@ -136,7 +136,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 |Mobility + Security de Base|Sécurisation et gestion des appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et Windows avec ce service intégré.|Microsoft 365 E3 ou E5|
 ||||
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Utilisez ces étapes pour configurer et gérer vos Microsoft 365 client.
 

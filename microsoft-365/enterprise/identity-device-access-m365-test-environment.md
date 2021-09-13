@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès aux identités et appareils.
 ms.openlocfilehash: 53c9db06b27f0e697eb57525b563f11b819a6812
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165329"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 

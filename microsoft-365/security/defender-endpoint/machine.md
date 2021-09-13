@@ -17,17 +17,17 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 8a7e1b9641a1c4688da86bb072ab8c33f23be11d
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165028"
 ---
 # <a name="machine-resource-type"></a>Type de ressource Machine
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,7 +48,7 @@ ms.locfileid: "58745624"
 |Méthode|Type renvoyé|Description|
 |---|---|---|
 |[Répertorier les ordinateurs](get-machines.md)|[collection d’ordinateurs](machine.md)|Liste des [ensembles d’entités](machine.md) d’ordinateurs dans l’organisation.|
-|[Obtenir un ordinateur](get-machine-by-id.md)|[ordinateur](machine.md)|Obtenez un [ordinateur par](machine.md) son identité.|
+|[Obtenir un ordinateur](get-machine-by-id.md)|[ordinateur](machine.md)|Obtenir un [ordinateur par](machine.md) son identité.|
 |[Obtenir des utilisateurs connectés](get-machine-log-on-users.md)|Collection d’[utilisateurs](user.md)|Obtenez l’ensemble [de l’utilisateur](user.md) qui s’est connecté à l’ordinateur. [](machine.md)|
 |[Obtenir les alertes associées](get-machine-related-alerts.md)|collection[alert](alerts.md)|Obtenir [l’ensemble](alerts.md) des entités d’alerte qui ont été élevés sur l’ordinateur . [](machine.md)|
 |[Obtenir les logiciels installés](get-installed-software.md)|[collection de](software.md) logiciels|Extrait une collection de logiciels installés liés à un ID d’ordinateur donné.|

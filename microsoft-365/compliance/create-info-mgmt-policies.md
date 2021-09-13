@@ -23,11 +23,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une stratégie de gestion des informations pour contrôler la durée de la gestion des informations et suivre les personnes qui utilisent ces informations.
 ms.openlocfilehash: eb5d493cfc8f442c5210b99ec394ebf72f30086e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574351"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163953"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -100,7 +100,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
         > [!NOTE]
         > Cette option est disponible uniquement si une formule personnalisée a été définie par votre administrateur.
 
-   3. **L’option** Démarrer un flux de travail n’est disponible que si vous définissez une stratégie pour une liste, une bibliothèque ou un type de contenu qui possède déjà un flux de travail qui lui est associé. Vous aurez alors le choix entre les flux de travail.
+   3. **L’option** Démarrer un flux de travail est disponible uniquement si vous définissez une stratégie pour une liste, une bibliothèque ou un type de contenu qui a déjà un flux de travail associé à celui-ci. Vous aurez alors le choix entre les flux de travail.
 
    4. Dans  la section Récurrence, **sélectionnez Répéter l’action de cette étape...** et entrez la fréquence de récurrisation de l’action.
 
@@ -115,7 +115,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
    1. Dans la page Modifier la stratégie sous **Audit,** sélectionnez Activer **l’audit,** puis activez les cases à cocher en regard des événements dont vous souhaitez conserver une piste d’audit.
 
-   2. Pour inciter les utilisateurs à insérer ces codes-barres dans des documents, choisissez Invitez les utilisateurs à insérer un **code-barres avant l’enregistrement ou l’impression.**
+   2. Pour inciter les utilisateurs à insérer ces codes-barres dans des documents, sélectionnez Invitez les utilisateurs à insérer un **code-barres avant l’enregistrement ou l’impression.**
 
    3. Choisissez **OK** pour appliquer la fonctionnalité d’audit à la stratégie.
 
@@ -131,7 +131,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
    1. Dans la page **Modifier la stratégie** sous **Codes-barres,** sélectionnez **Activer les codes-barres.**
 
-   2. Pour inciter les utilisateurs à insérer ces codes-barres dans des documents, choisissez Invitez les utilisateurs à insérer un **code-barres avant l’enregistrement ou l’impression.**
+   2. Pour inciter les utilisateurs à insérer ces codes-barres dans des documents, sélectionnez Invitez les utilisateurs à insérer un **code-barres avant l’enregistrement ou l’impression.**
 
    3. Choisissez **OK** pour appliquer la fonctionnalité de code-barres à la stratégie.
 
@@ -154,7 +154,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
        - Tapez les noms des colonnes que vous souhaitez inclure dans l’étiquette dans l’ordre dans lequel vous souhaitez qu’elles apparaissent. Inséez les noms de colonne entre crochets ( ), comme illustré dans l’exemple de la {} page Modifier la stratégie.
        - Tapez des mots pour identifier les colonnes en dehors des crochets, comme illustré dans l’exemple de la page Modifier la stratégie.
 
-    4. Pour ajouter un coupure de lignes, **entrez\n** l’endroit où vous souhaitez qu’il apparaisse.
+    4. Pour ajouter un coupure de lignes, **entrez\n** où vous souhaitez que le coupure de ligne apparaisse.
 
     5. Sélectionnez la taille de police et le style de votre choix, puis indiquez si vous souhaitez positionner l’étiquette à gauche, au centre ou à droite dans le document.
 
@@ -191,7 +191,7 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
 3. Sous **les paramètres de stratégie de** gestion des autorisations et des informations de \> **gestion.**
 
-   ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Lien des stratégies de gestion des informations sur la page des paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. Dans la page Stratégie de gestion des Paramètres, assurez-vous que la source de rétention de la liste ou de la bibliothèque est définie sur Bibliothèque et Dossiers.
 
@@ -238,7 +238,7 @@ Si des stratégies de gestion des informations ont déjà été créées pour vo
 
 3. Sous **les paramètres de stratégie de** gestion des autorisations et des informations de \> **gestion.**
 
-   ![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Lien des stratégies de gestion des informations sur la page des paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. Vérifiez que la source de stratégie est définie sur **Types** de contenu et, sous Stratégies de **type** de contenu, sélectionnez le type de contenu à appliquer à la stratégie.
 

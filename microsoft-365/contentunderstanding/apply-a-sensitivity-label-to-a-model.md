@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment appliquer une étiquette de confidentialité à un modèle dans SharePoint Syntex.
-ms.openlocfilehash: 82aba67c76e971bc8c87943ab798e6f8173e4ef207af2c913c58fcf10a29b272
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2e6fc51db228ac4beb7171047478b0132c1194f5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165452"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Appliquer une étiquette de confidentialité à un modèle dans Microsoft SharePoint Syntex
 

@@ -24,11 +24,11 @@ ms.topic: article
 ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.openlocfilehash: 6dd5befd3dc0ef39d4a8659e6d4dcad9b372002f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164945"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 3 : Intégration
 
@@ -58,7 +58,7 @@ ms.locfileid: "58572538"
 
 3. Dans la **liste Sélectionner le système d’exploitation pour démarrer le** processus d’intégration, sélectionnez un système d’exploitation. 
 
-4. Sous **Méthode de déploiement,** sélectionnez une option. Suivez les liens et invites pour intégrer les appareils de votre organisation. Vous avez besoin d’aide ? Voir [méthodes d’intégration](#onboarding-methods) (dans cet article).
+4. Sous **Méthode de déploiement,** sélectionnez une option. Suivez les liens et invites pour intégrer les appareils de votre organisation. Besoin d’aide ? Voir [méthodes d’intégration](#onboarding-methods) (dans cet article).
 
 > [!NOTE]
 > Si un problème se produit lors de l’intégration, voir Résoudre les problèmes d’intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md) Cet article explique comment résoudre les problèmes d’intégration et les erreurs courantes sur les points de terminaison.
@@ -73,7 +73,7 @@ Les méthodes de déploiement varient en fonction du système d’exploitation e
 | Windows 8.1 Entreprise <br/>Windows 8.1 Professionnel <br/>Windows 7 SP1 Enterprise <br/>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<br/><br/>**REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)        |
 | Windows Server 2019 et ultérieur <br/>Windows Server 2019 Core Edition <br/>Windows Server version 1803 et ultérieure | [Script local](configure-endpoints-script.md) <br/>[Stratégie de groupe](configure-endpoints-gp.md) <br/>[Gestionnaire de configuration](configure-endpoints-sccm.md) <br/>[System Center Configuration Manager](configure-endpoints-sccm.md) <br/>[Scripts d’intégration VDI pour les appareils non persistants](configure-endpoints-vdi.md) <br/><br/>**REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.    |
 | Windows Server 2016 <br/>Windows Server 2012 R2 <br/>Windows Server 2008 R2 SP1  | [Portail Microsoft 365 Defender](configure-server-endpoints.md)<br/>[Azure Defender](/azure/security-center/security-center-wdatp) |
-| macOS : 11.3.1 (Big Sur) ; 10.15 (Caserline) ; 10.14 (Mojave) | [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
+| macOS : 11.3.1 (Big Sur) ; 10.15 (Île); 10.14 (Mojave) | [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
 | iOS | [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
 | Linux : RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS ou un LTS supérieur ; SLES 12+; Debian 9+; Oracle Linux 7.2 | [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
 
@@ -84,7 +84,7 @@ Pour vérifier que vos appareils intégrés sont correctement connectés à Defe
 |Système d’exploitation  |Aide  |
 |---------|---------|
 | Windows 10 <br/> Windows Server 2019<br/> Windows Serveur, version 1803 ou ultérieure<br/> Windows Server 2016<br/> Windows Server 2012 R2  | Voir [Exécuter un test de détection.](run-detection-test.md) <br/><br/>Visitez le site de démonstration Defender for Endpoint () et essayez un ou [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) plusieurs des scénarios. Par exemple, essayez le scénario de démonstration **de la protection** livrée par le cloud.    |
-| macOS : 11.3.1 (Big Sur) ; 10.15 (Caserline) ; 10.14 (Mojave)    | Téléchargez et utilisez l’application CASER sur [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <br/><br/>Pour plus d’informations, [voir Defender pour point de terminaison sur macOS.](microsoft-defender-endpoint-mac.md)        |
+| macOS : 11.3.1 (Big Sur) ; 10.15 (Île); 10.14 (Mojave)    | Téléchargez et utilisez l’application CASER sur [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <br/><br/>Pour plus d’informations, [voir Defender pour point de terminaison sur macOS.](microsoft-defender-endpoint-mac.md)        |
 | Linux : RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS ou un LTS supérieur ; SLES 12+; Debian 9+; Oracle Linux 7.2 | 1. Exécutez la commande suivante et recherchez le résultat **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/> 2. Ouvrez une fenêtre Terminal et exécutez la commande suivante : <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/> 3. Exécutez la commande suivante pour lister les menaces détectées : <br/>`mdatp threat list`. <br/><br/>Pour plus d’informations, [voir Defender for Endpoint sur Linux.](microsoft-defender-endpoint-linux.md) |
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Vérifier que Antivirus Microsoft Defender est en mode passif sur vos points de terminaison
@@ -125,9 +125,9 @@ Si vous utilisez Windows Server 2016, vous de devez démarrer Antivirus Microsof
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtenir les mises à jour de Antivirus Microsoft Defender
 
-Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque, même si Antivirus Microsoft Defender s’exécute en mode passif. (Voir [Antivirus Microsoft Defender compatibilité.)](microsoft-defender-antivirus-compatibility.md)
+Maintenir Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque, même si Antivirus Microsoft Defender s’exécute en mode passif. (Voir [Antivirus Microsoft Defender compatibilité.)](microsoft-defender-antivirus-compatibility.md)
 
-Il existe deux types de mises à jour liées au Antivirus Microsoft Defender à jour :
+Il existe deux types de mises à jour liées à la mise Antivirus Microsoft Defender jour :
 
 - Mises à jour de l’intelligence de la sécurité
 - Mises à jour de produit
@@ -153,7 +153,7 @@ Maintenant que vous avez intégré Defender pour le point de terminaison et que 
 - Applications potentiellement indésirables (PUA)
 - Protection du réseau (NP)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 **Félicitations**! Vous avez terminé votre [migration vers Defender pour endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 

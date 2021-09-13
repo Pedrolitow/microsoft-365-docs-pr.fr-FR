@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les différences entre le courrier indésirable (courrier indésirable) et le courrier en masse (courrier gris) dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ddcf3af9071d6f0f0d62ce778830dd1e2902b0ab1485ca07dda5b2500525b3c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fc9c94946c3da2f9a14f45070a86c557a5c7dc85
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56853748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162412"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier en masse dans EOP ?
 

@@ -1,7 +1,7 @@
 ---
 title: Niveau de sécurité Microsoft pour les appareils
-description: Votre score pour les appareils indique l’état de configuration de sécurité collective de vos appareils dans les contrôles d’application, de système d’exploitation, de réseau, de comptes et de sécurité.
-keywords: Score de sécurité Microsoft pour les appareils, Microsoft Defender pour le point de terminaison Microsoft Secure Score for Devices, score sécurisé, score de configuration, Gestion des menaces et des vulnérabilités, contrôles de sécurité, opportunités d’amélioration, score de configuration de la sécurité au fil du temps, posture de sécurité, base de référence
+description: Votre score pour les appareils indique l’état de configuration de sécurité collective de vos appareils sur les contrôles d’application, de système d’exploitation, de réseau, de comptes et de sécurité.
+keywords: Score de sécurité Microsoft pour les appareils, Microsoft Defender pour le point de terminaison Microsoft Secure Score pour les appareils, score de sécurité, score de configuration, Gestion des menaces et des vulnérabilités, contrôles de sécurité, opportunités d’amélioration, score de configuration de la sécurité au fil du temps, posture de sécurité, base de référence
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d086c2aa86b144a08337182b4631e0bab46c66f5a892e76588d9950ba918d33
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc25da8c4cffa5c67747ea02a0f431c0c2c7a436
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164809"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Niveau de sécurité Microsoft pour les appareils
 
@@ -41,19 +41,19 @@ ms.locfileid: "53799637"
 >[!NOTE]
 > Le score de configuration fait désormais partie Gestion des menaces et des vulnérabilités comme score de sécurité Microsoft pour les appareils.
 
-Votre score pour les appareils est visible dans le tableau [Gestion des menaces et des vulnérabilités de bord](tvm-dashboard-insights.md) du Microsoft 365 Defender web. Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. Il reflète l’état de configuration de sécurité collective de vos appareils dans les catégories suivantes :
+Votre score pour les appareils est visible dans le tableau [Gestion des menaces et des vulnérabilités de](tvm-dashboard-insights.md) bord du Microsoft 365 Defender web. Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. Elle reflète l’état de configuration de sécurité collective de vos appareils dans les catégories suivantes :
 
 - Application
 - Système d’exploitation
 - Réseau
-- Comptes
+- Accounts
 - Contrôles de sécurité
 
 Sélectionnez une catégorie pour aller à la page [**Recommandations de sécurité**](tvm-security-recommendation.md) et afficher les recommandations pertinentes.
 
 ## <a name="turn-on-the-microsoft-secure-score-connector"></a>Activer le connecteur Score de sécurité Microsoft
 
-Avancer les signaux de Microsoft Defender pour les points de terminaison, ce qui permet à Microsoft Secure Score de voir la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
+Avancez les signaux de Microsoft Defender pour les points de terminaison, ce qui permet à Microsoft Secure Score de se rendre compte de la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
 
 La réflexion des modifications dans le tableau de bord peut prendre jusqu’à quelques heures.
 
@@ -64,12 +64,12 @@ La réflexion des modifications dans le tableau de bord peut prendre jusqu’à 
 
 3. Sélectionnez **Enregistrer les préférences.**
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 >[!NOTE]
 > Le score de sécurité Microsoft pour les appareils prend actuellement en charge les configurations définies via la stratégie de groupe. En raison de la prise en charge partielle actuelle d’Intune, les configurations qui ont peut-être été définies via Intune peuvent s’afficher comme mal configurées. Contactez votre administrateur informatique pour vérifier l’état réel de la configuration au cas où votre organisation utiliserait Intune pour la gestion de la configuration sécurisée.
 
-Les données de la carte Degré de sécurisation Microsoft pour les appareils sont le produit d’un processus de découverte de vulnérabilité en cours et d’une situation de vulnérabilité. Elle est agrégée aux évaluations de découverte de configuration qui :
+Les données de la carte Degré de sécurisation Microsoft pour les appareils sont le produit d’un processus de découverte de vulnérabilité en cours et d’activités. Elle est agrégée aux évaluations de découverte de configuration qui :
 
 - Comparer les configurations collectées aux critères collectés pour découvrir les ressources mal configurées
 - Masqué les configurations sur des vulnérabilités qui peuvent être corrigés ou partiellement corrigés (réduction des risques)
@@ -98,7 +98,7 @@ Améliorez votre configuration de la sécurité en remédiant aux problèmes de 
 
 6. Envoyez un courrier électronique de suivi à votre administrateur informatique et laissez le temps que vous avez alloué à la correction de se propager dans le système.
 
-7. Re review the **Microsoft Secure Score for Devices** card again on the dashboard. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous sélectionnez **les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
+7. Examinez **à nouveau la carte Score de sécurité Microsoft** pour les appareils dans le tableau de bord. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous sélectionnez **les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
 
 >[!IMPORTANT]
 >Pour augmenter les taux de détection de l’évaluation des vulnérabilités, téléchargez les mises à jour de sécurité obligatoires suivantes et déployez-les sur votre réseau :
@@ -111,7 +111,7 @@ Améliorez votre configuration de la sécurité en remédiant aux problèmes de 
 >1. Go to [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx).
 >2. Key-in the security update KB number that you need to download, then click **Search**.  
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)

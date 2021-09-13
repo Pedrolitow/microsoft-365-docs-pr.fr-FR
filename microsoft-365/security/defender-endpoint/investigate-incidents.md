@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 6453ce0607ed7dee66622b64705d88e91cd67bf4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165097"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Examiner les incidents dans Microsoft Defender pour point de terminaison
 
@@ -61,7 +61,7 @@ Vous pouvez examiner les alertes et voir comment elles ont été liées dans un 
 - Même fichier : les fichiers associés à l’alerte sont exactement les mêmes
 - MÊME URL : l’URL qui a déclenché l’alerte est exactement la même
 
-![Image de l’onglet Alertes avec page détails de l’incident montrant les raisons pour lesquelles les alertes ont été liées dans cet incident.](images/atp-incidents-alerts-reason.png)
+![Image de l’onglet Alertes avec page détails de l’incident indiquant les raisons pour lesquelles les alertes ont été liées dans cet incident.](images/atp-incidents-alerts-reason.png)
 
 Vous pouvez également gérer une alerte et voir les métadonnées d’alerte ainsi que d’autres informations. Pour plus d’informations, voir [Examiner les alertes.](investigate-alerts.md)
 
@@ -87,7 +87,7 @@ Chacune des entités analysées sera marquée comme infectée, corrigé ou suspe
 
 ## <a name="visualizing-associated-cybersecurity-threats"></a>Visualisation des menaces de cybersécurité associées
 
-Microsoft Defender pour point de terminaison regroupe les informations sur les menaces dans un incident afin que vous pouvez voir les modèles et corrélations provenant de différents points de données. Vous pouvez afficher cette corrélation via le graphique d’incident.
+Microsoft Defender pour le point de terminaison regroupe les informations sur les menaces dans un incident afin que vous pouvez voir les modèles et corrélations provenant de différents points de données. Vous pouvez afficher cette corrélation via le graphique d’incident.
 
 ### <a name="incident-graph"></a>Graphique de l’incident
 
@@ -99,7 +99,7 @@ Vous pouvez cliquer sur les cercles sur le graphique d’incident pour afficher 
 
 ![Image des détails de l’incident.](images/atp-incident-graph-details.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [File d’attente des incidents](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Examiner les incidents dans Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/investigate-incidents)

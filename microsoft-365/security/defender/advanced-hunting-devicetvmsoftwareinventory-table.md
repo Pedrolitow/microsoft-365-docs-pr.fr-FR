@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 06ef042be99145c5126d8800d04a7a1b92c8adf3107874dfb96951bf695baa61
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5f82684ebb10b72ff83a6789c010f5ec9fa099e7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163697"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,7 +34,7 @@ ms.locfileid: "53839170"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 >[!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
@@ -58,7 +58,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SoftwareName` | string | Nom du produit logiciel |
 | `SoftwareVersion` | string | Numéro de version du produit logiciel |
 | `EndOfSupportStatus` | string | Indique l’étape de cycle de vie du produit logiciel par rapport à sa date de fin de support (EOS) ou de fin de vie (EOL) spécifiée |
-| `EndOfSupportDate` | string | Date de fin de support (EOS) ou de fin de vie (EOL) du produit logiciel |
+| `EndOfSupportDate` | chaîne | Date de fin de support (EOS) ou de fin de vie (EOL) du produit logiciel |
 
 
 

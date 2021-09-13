@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: be60d8f4c8adae02a1a5e388a5b75e717dd5eb51
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164825"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Score d’exposition : Gestion des menaces et des vulnérabilités
 
@@ -32,7 +32,7 @@ ms.locfileid: "58565821"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -47,7 +47,7 @@ La carte vous donne une vue générale de la tendance de votre score d’exposit
 
 ![Carte de score d’exposition.](images/tvm_exp_score.png)
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Le score d’exposition est décomposé selon les niveaux suivants :
 
@@ -61,7 +61,7 @@ Vous pouvez résoudre les problèmes en vous basant sur des [recommandations](tv
 
 Réduire l’exposition aux menaces et vulnérabilités en remédiant aux [recommandations de sécurité.](tvm-security-recommendation.md) Faites le plus d’impact sur votre score d’exposition en remédiant aux recommandations de sécurité les plus importantes, qui peuvent être vues dans [le tableau de bord Gestion des menaces et des vulnérabilités.](tvm-dashboard-insights.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Niveau de sécurité Microsoft pour les appareils](tvm-microsoft-secure-score-devices.md)

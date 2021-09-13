@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Découvrez ce qui se produit lorsqu’un examen ou un dossier juridique pris en charge par un Advanced eDiscovery est fermé ou supprimé.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 1096223c3bc6d0648aa45207595c816e26e70da8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164073"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Fermer ou supprimer un cas Advanced eDiscovery dossier
 

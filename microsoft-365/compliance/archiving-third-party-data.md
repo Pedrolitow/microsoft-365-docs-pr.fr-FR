@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents vers Microsoft 365 boîtes aux lettres.
-ms.openlocfilehash: 70e01994c69d838693eaf453005a829d99f2cc4e
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: c2d8d3c048654c6c665cba34254a5362cd3b88c1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164220"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archiver des données tierces dans Microsoft 365
 
@@ -86,10 +86,10 @@ Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez ut
 |[Gestion de Reuters](archive-reutersdealing-data.md)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Reuters Eikon](archive-reuterseikon-data.md)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Reuters FX](archive-reutersfx-data.md)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[RingCentral](archive-ringcentral-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[RingCentral](archive-ringcentral-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[Skype Entreprise](archive-skypeforbusiness-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Skype Entreprise](archive-skypeforbusiness-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Découverte électronique de marge](archive-slack-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Délimité par le texte](archive-text-delimited-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
@@ -99,6 +99,7 @@ Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez ut
 |[XIP](archive-xip-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[YouTube](archive-youtube-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Réunions Zoom](archive-zoommeetings-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 ||||||||
 
@@ -165,7 +166,7 @@ Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez ut
 |[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 ||||||||
 
-Le connecteur de données CellTrust SL2 est également disponible dans les environnements Cloud de la communauté du secteur public dans le cloud Microsoft 365 gouvernement américain. Pour plus d’informations, voir les connecteurs de données dans la section cloud du gouvernement des [États-Unis](#data-connectors-in-the-us-government-cloud) dans cet article.
+Le connecteur de données CellTrust SL2 est également disponible dans Cloud de la communauté du secteur public environnements dans le cloud Microsoft 365 gouvernement américain. Pour plus d’informations, voir les connecteurs de données dans la section cloud du gouvernement des [États-Unis](#data-connectors-in-the-us-government-cloud) dans cet article.
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Vue d’ensemble des solutions de conformité qui permettent la prise en charge des données tierces
 
@@ -177,7 +178,7 @@ Vous placez une boîte [aux lettres d’utilisateur](create-a-litigation-hold.md
 
 ### <a name="ediscovery"></a>eDiscovery
 
-Les trois principaux outils eDiscovery dans Microsoft 365 sont la recherche de contenu, core eDiscovery et Advanced eDiscovery.
+Les trois principaux outils eDiscovery Microsoft 365 sont la recherche de contenu, core eDiscovery et Advanced eDiscovery.
 
 - **[Recherche de contenu](content-search.md).** Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des données tierces importées dans les boîtes aux lettres. Vous pouvez utiliser des requêtes et des conditions de recherche pour affiner vos résultats de recherche et exporter les résultats de la recherche.
 
@@ -193,7 +194,7 @@ Vous pouvez [](retention.md) appliquer une stratégie de rétention aux boîtes 
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
-La [fonctionnalité de gestion](records-management.md) des enregistrements Microsoft 365 vous permet de déclarer des données tierces en tant qu’enregistrement. Cela peut être effectué manuellement par les utilisateurs qui appliquent une étiquette de rétention qui marque des données tierces dans leur boîte aux lettres comme enregistrement. Vous pouvez également appliquer automatiquement des étiquettes de rétention en identifiant des informations sensibles, des mots clés ou des types de contenu dans des données tierces.
+La [fonctionnalité de gestion](records-management.md) des enregistrements Microsoft 365 vous permet de déclarer des données tierces en tant qu’enregistrement. Cette procédure peut être effectuée manuellement par les utilisateurs qui appliquent une étiquette de rétention qui marque des données tierces dans leur boîte aux lettres en tant qu’enregistrement. Vous pouvez également appliquer automatiquement des étiquettes de rétention en identifiant des informations sensibles, des mots clés ou des types de contenu dans des données tierces.
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
@@ -213,7 +214,7 @@ Pour rechercher (ou mettre en attente) tout type de données tierces que vous av
 kind:externaldata
 ```
 
-Vous pouvez utiliser cette  requête dans la zone Mots clés pour une recherche de contenu, une recherche associée à un cas core eDiscovery ou une collection dans Advanced eDiscovery.
+Vous pouvez utiliser cette  requête dans la zone Mots clés pour une recherche de contenu, une recherche associée à un cas eDiscovery principal ou une collection dans Advanced eDiscovery.
 
 ![Interroger pour rechercher des données tierces.](..\media\SearchThirdPartyData1.png)
 
@@ -233,7 +234,7 @@ Pour rechercher un type spécifique de données tierces archivées, utilisez la 
 itemclass:ipm.externaldata.<third-party data type>
 ```
 
-Chaque élément importé par un connecteur de données tiers inclut la propriété **itemclass** avec une valeur correspondant au type de données tiers. Par exemple, pour rechercher des données Facebook contenant le mot *contoso*, dans la propriété **Subject** de l’élément importé, utilisez la requête suivante :
+Chaque élément importé par un connecteur de données tiers inclut la propriété **itemclass** avec une valeur correspondant au type de données tiers. Par exemple, pour rechercher des données Facebook qui contiennent le mot *contoso*, dans la propriété **Subject** de l’élément importé, utilisez la requête suivante :
 
 ```powershell
 subject:contoso AND itemclass:ipm.externaldata.facebook*
@@ -266,9 +267,10 @@ Certains connecteurs de données sont disponibles dans le cloud du gouvernement 
 |Archiveur réseau SMS/MMS Bell | Oui | Non | Non |
 |Archiveur de numéros d’entreprise | Oui | Non | Non |
 |O2 SMS et Voice Network Archiver | Oui         | Non | Non |
+|Archiveur réseau de Lars | Oui         | Non | Non |
 |Archiveur de signal | Oui | Non | Non |
 |Archiveur de télégramme | Oui | Non | Non |
-|ARCHIVEur réseau SMS SMS | Oui | Non | Non |
+|ARCHIVEUR RÉSEAU SMS SMS | Oui | Non | Non |
 |Archiveur réseau SMS/MMS Verizon | Oui | Non | Non |
 |Archiveur WeChat | Oui | Non | Non |
 |Archiveur WhatsApp | Oui | Non | Non |
@@ -283,6 +285,6 @@ Certains connecteurs de données sont disponibles dans le cloud du gouvernement 
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire Microsoft pour archiver des données tierces
 
-Pour importer et archiver des données tierces, votre organisation peut également travailler avec un partenaire Microsoft. Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft, vous pouvez travailler avec un partenaire qui peut fournir un connecteur personnalisé qui sera configuré pour extraire régulièrement des éléments de la source de données tierces, puis vous connecter au cloud Microsoft par une API tierce et importer ces éléments dans Microsoft 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Microsoft 365.
+Pour importer et archiver des données tierces, votre organisation peut également travailler avec un partenaire Microsoft. Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft, vous pouvez travailler avec un partenaire qui peut fournir un connecteur personnalisé qui sera configuré pour extraire des éléments de la source de données tierces régulièrement, puis vous connecter au cloud Microsoft par une API tierce et importer ces éléments dans Microsoft 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Microsoft 365.
 
 Pour obtenir la liste des partenaires avec qui vous pouvez travailler et le processus pas à pas pour cette méthode, voir Travailler avec un partenaire pour archiver des données tierces [dans Microsoft 365](work-with-partner-to-archive-third-party-data.md).

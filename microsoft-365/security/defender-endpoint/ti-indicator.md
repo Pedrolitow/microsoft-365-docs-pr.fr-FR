@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 158888fec2be8f310085836e1d34fbcbd8aa93df
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 3dc075caccc5724ed3ea76e5d3c06f3a5b6f7f2e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164897"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
@@ -58,7 +58,7 @@ application|Chaîne|Application associée à l’indicateur.
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
 |externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
-createdBySource|string|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
+createdBySource|chaîne|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
 createdBy|String|Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
 lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
 creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.
@@ -77,15 +77,20 @@ rbacGroupIds|Liste des chaînes|ID de groupe d’appareils RBAC où l’indicate
 
 Les types d’action d’indicateur pris en charge par l’API sont :
 
-- AlertAndBlock
-- Autoriser
-- Audit
+- Autorisé
 - Alerte
+- AlertAndBlock
+- Audit
+- Bloquer
+- BlockAndRemediate
 - Avertir
-- BlockExecution
-- BlockRemdiation
 
-La liste API des types d’actions contient les nouvelles actions de réponse, ainsi que les actions de réponse précédentes (AlertAndBlock et Alert).
+La liste API des types d’actions contient les nouvelles actions de réponse, ainsi que les actions de réponse précédentes (AlertAndBlock et Alert). Pour plus d’informations sur la description des types d’action de réponse, voir [Créer des indicateurs.](manage-indicators.md)
+
+Les actions de réponse IoC Autorisées, Avertir, Bloquer et BlockAndRemediate sont en prévisualisation publique. Pour plus d’informations sur la prévisualisation publique, voir Prévisualisation publique : Améliorations apportées aux [fichiers personnalisés IoC](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997)et mise à jour du schéma d’API - Microsoft Tech Community .
+
+
+
 
 > [!Note]
 >

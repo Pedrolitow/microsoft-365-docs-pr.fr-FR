@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d73a6999d8512d0c0796d32cff0c469a0e8257101999aef6bc69ce693ee3c914
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: da5f609b6f5a4e8bab42a58ec45128ca8ae697c2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53862154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164372"
 ---
 # <a name="contact-support-for-madagascar"></a>Contacter le support technique de Îles
 

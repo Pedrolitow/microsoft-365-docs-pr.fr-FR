@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6328d9879bf816e69c44007e7e85a30cfee086bc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 52e7a3098f157e52ecf32802a9f69328b28e2e52
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165100"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison
 
@@ -72,9 +72,9 @@ Les détails du fichier, les incidents, la détection des programmes malveillant
 
 Vous verrez des détails tels que le MD5 du fichier, le taux de détection du nombre total de virus et la détection de l’antivirus Microsoft Defender, le cas besoin, ainsi que la prévalence du fichier.
 
-La carte de prévalence du fichier indique où le fichier a été vu sur les appareils de l’organisation et du monde entier. 
+La carte de prévalence du fichier indique où le fichier a été vu sur les appareils de l’organisation et du monde entier.
 
-> [!NOTE] 
+> [!NOTE]
 > Différents utilisateurs peuvent voir des valeurs différentes dans les appareils de la *section* Organisation de la carte de prévalence du fichier. En effet, la carte affiche des informations en fonction de l’étendue RBAC dont dispose un utilisateur. Cela signifie que si un utilisateur a obtenu une visibilité sur un ensemble spécifique d’appareils, il verra uniquement le fichier de prévalence organisationnelle sur ces appareils.
 
 ![Image des informations de fichier.](images/atp-file-information.png)
@@ -89,8 +89,8 @@ La carte de prévalence du fichier indique où le fichier a été vu sur les app
 
 L’onglet Observé **dans l’organisation** vous permet de spécifier une plage de dates pour voir quels appareils ont été observés avec le fichier.
 
->[!NOTE]
->Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
+> [!NOTE]
+> Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
 
 ![Image de l’appareil observé le plus récent avec le fichier.](images/atp-observed-machines.png)
 
@@ -98,7 +98,7 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 ## <a name="deep-analysis"></a>Analyse profonde
 
-**L’onglet** Analyse approfondie vous permet de soumettre le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois que vous avez soumis le fichier, le rapport d’analyse approfondie apparaît dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
+**L’onglet** Analyse approfondie vous permet d’envoyer le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois que vous avez soumis le fichier, le rapport d’analyse approfondie apparaît dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
 
 ![Image de l’onglet Analyse approfondie.](images/submit-file.png)
 
@@ -108,9 +108,9 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 ![Image de l’onglet Noms de fichiers.](images/atp-file-names.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Afficher et organiser la file d’attente Microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente de Microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison](investigate-machines.md)

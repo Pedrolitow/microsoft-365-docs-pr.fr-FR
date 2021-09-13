@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Cet article explique comment gérer les cas eDiscovery principaux. Cela inclut la fermeture d’un cas, la réouverture d’un cas fermé et la suppression d’un cas.
 ms.openlocfilehash: 67961d2404f54ca3fbb33dabc71508ba65bfa205
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573294"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164057"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Fermer, rouvrir et supprimer un cas core eDiscovery
 
@@ -36,7 +36,7 @@ Lorsque le dossier juridique ou l’examen pris en charge par un cas eDiscovery 
 
 - La fermeture d’un cas désactive uniquement les conservations associées à ce cas. Si d’autres conservations sont placées sur un emplacement de contenu (par exemple, une conservation pour litige, une stratégie de rétention ou une conservation à partir d’un autre cas core eDiscovery), ces conservations sont conservées.
 
-- Le cas est toujours répertorié dans la page Core eDiscovery de la Centre de conformité Microsoft 365. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
+- Le cas est toujours répertorié sur la page Core eDiscovery dans la Centre de conformité Microsoft 365. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
 
 - Vous pouvez modifier un cas après sa fermeture. Par exemple, vous pouvez ajouter ou supprimer des membres, créer des recherches et exporter des résultats de recherche. La principale différence entre les cas actifs et fermés est que les cas de découverte électronique sont désactivés lorsqu’un cas est fermé.
 
@@ -82,7 +82,7 @@ Lorsque vous rouvrez un cas, les cas de découverte électronique mis en place l
 
     Une fois le processus terminé, l’état du cas passe à **Actif** sur la page **Core eDiscovery.**
 
-6. (Facultatif) Pour activer les attentes associées au  cas rouvert, sélectionnez l’onglet Attentes, sélectionnez une attente, puis cochez la case sous État sur la page de la boîte aux lettres de la boîte aux lettres. 
+6. (Facultatif) Pour activer toutes les attentes associées  au cas rouvert, sélectionnez l’onglet  Attentes, sélectionnez une attente, puis cochez la case sous État sur la page volante de la boîte aux lettres d’attente.
   
 ## <a name="delete-a-case"></a>Supprimer un cas
 

@@ -1,6 +1,6 @@
 ---
 title: La gestion des menaces et des vulnérabilités
-description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiérquage et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
+description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiér doncisation et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
 keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestion des vulnérabilités, vulnerability assessment, threat and vulnerability scanning, secure configuration assessment, Microsoft Defender for Endpoint, endpoint vulnerabilities, next generation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: c71a3e5169334adc5d6d6f2b901d82678e5aa27bee47bd20faf06e569a14b63c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 06fdea1c4d84ca4cd23aeb7e715c0087f65275b1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164980"
 ---
 # <a name="threat-and-vulnerability-management"></a>La gestion des menaces et des vulnérabilités
 
@@ -44,7 +44,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide Gestion des menac
 
 ## <a name="bridging-the-workflow-gaps"></a>Pontage des lacunes de flux de travail
 
-Les menaces et gestion des vulnérabilités sont intégrés, en temps réel et optimisés pour le cloud. Il est entièrement intégré à la pile de sécurité des points de terminaison Microsoft, à l’Graph sécurité intelligente de Microsoft et à la base de connaissances d’analyse des applications.
+Les menaces et gestion des vulnérabilités sont intégrés, en temps réel et optimisés pour le cloud. Il est entièrement intégré à la pile de sécurité des points de terminaison Microsoft, à la sécurité intelligente de Microsoft Graph et à la base de connaissances d’analyse des applications.
 
 La gestion des vulnérabilités est la première solution dans le secteur pour combler l’écart entre l’administration de la sécurité et l’administration informatique pendant le processus de correction. Créez une tâche ou un ticket de sécurité en intégrant des Microsoft Intune et Microsoft Endpoint Configuration Manager.
 

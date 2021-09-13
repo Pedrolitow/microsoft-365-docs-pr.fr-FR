@@ -14,11 +14,11 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ms.openlocfilehash: 581fdb8433ff7b7e1eb53737c3c6a9bf8e58d14b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162405"
 ---
 # <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Entreprise de conception de l’architecture
 
@@ -28,5 +28,5 @@ Comprendre les principes clés dont vous avez besoin pour comprendre les archite
 |---------|---------|---------|
 |![Alex Shteynberg sur l’architecture d’identité d’entreprise.](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [Identité](identity-design-principles.md)     | Alex Shteynberg, architecte technique principal au Microsoft Technology Center de New York, revient en arrière pour décrire les principes directeurs et les rubriques de référence sur l’identité pour les entreprises qui adoptent Microsoft 365 et Azure dans l’identité [À](identity-design-principles.md)et au-delà. |
 | ![Kozetta Contrôle sur les principes de conception de la sécurité.](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [Sécurité](security-design-principles.md)    |  Kozeta Contrôle, architecte en cybersécurité chez Microsoft, décrit les principaux défis en matière de sécurité qu’elle rencontre au niveau des organisations d’entreprise et recommande les approches que vous pouvez prendre en compte dans les obstacles à la sécurité que vous pouvez [rencontrer.](security-design-principles.md)  |
-| ![Ed Fisher sur les principes de conception réseau.](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Réseau](networking-design-principles.md)  |   Ed Fisher, architecte de sécurité & conformité chez Microsoft, explique comment optimiser votre réseau pour la connectivité cloud en évitant les pièges les plus courants dans la mise en réseau [(vers le cloud).](networking-design-principles.md)       |
+| ![Ed Fisher sur les principes de conception réseau.](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Mise en réseau](networking-design-principles.md)  |   Ed Fisher, architecte de sécurité & conformité chez Microsoft, explique comment optimiser votre réseau pour la connectivité cloud en évitant les pièges les plus courants dans la mise en réseau [(vers le cloud).](networking-design-principles.md)       |
 |    |         |         |

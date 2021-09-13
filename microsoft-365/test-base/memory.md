@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 714cea98e5dd876a5a9e2568a6c8488f595f2f39
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164585"
 ---
 # <a name="memory-regression-analysis"></a>Analyse de la régression de la mémoire
 
@@ -58,9 +58,9 @@ Dans cet exemple, le processus favori « USLTestMemoryStress.exe » a consommé 
 
 Les autres processus, présentés ici sous les formes « USLTestMemoryStress_Aux1.exe » et « USLTestMemoryStress_Aux2.exe », appartiennent également à la même application, mais ont consommé à peu près la même quantité de mémoire pour les deux releases de sorte qu’elles ont été « transmises » et considérées comme saines.
 
-La régression sur le processus principal a été déterminée comme « significative du point de vue statistique », de sorte que le service a communiqué et mis en évidence cette différence à l’utilisateur. Si la comparaison n’était pas significative d’un point de vue statistique, elle ne serait pas mise en évidence. L’utilisation de la mémoire peut être bruyante. Nous utilisons donc des modèles statistiques pour distinguer, entre les builds et les releases, les différences significatives par rapport aux différences non significatives. 
+La régression sur le processus principal a été déterminée comme « significative du point de vue statistique », de sorte que le service a communiqué et mis en évidence cette différence pour l’utilisateur. Si la comparaison n’était pas significative d’un point de vue statistique, elle ne serait pas mise en évidence. L’utilisation de la mémoire peut être bruyante. Nous utilisons donc des modèles statistiques pour distinguer, entre les builds et les releases, les différences significatives par rapport aux différences non significatives. 
 
-Une comparaison peut rarement être signalée lorsqu’il n’existe aucune différence réelle (faux positif), mais il s’agit d’un compromis nécessaire pour améliorer la probabilité d’identifier correctement les régressions (ou les vrais positifs).)
+Une comparaison peut rarement être signalée lorsqu’il n’existe aucune différence réelle (faux positif), mais il s’agit d’un compromis nécessaire pour améliorer la probabilité d’identifier correctement les régressions (ou les vrais positifs).
 
 L’étape suivante consiste à comprendre ce qui a provoqué la régression de la mémoire. Vous pouvez télécharger les fichiers zip pour les deux exécutions à partir de l’option Télécharger les fichiers journaux, comme illustré ci-dessous. 
 
@@ -70,7 +70,7 @@ Ces fichiers zip contiennent les résultats de votre exécution de test, y compr
 
 Vous pouvez télécharger et déconnecter les journaux pour les deux séries de tests, puis localiser le fichier ETL dans chaque dossier et les renommer en tant que target.etl (pour l’essai exécuté sur la mise à jour pré-publication) et baseline.etl (pour le test exécuté lors de la dernière mise à jour publiée) pour simplifier l’exploration et la navigation.
  
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Passer à l’article suivant pour commencer à comprendre l’analyse intelligente de la régression du processeur.
 > [!div class="nextstepaction"]

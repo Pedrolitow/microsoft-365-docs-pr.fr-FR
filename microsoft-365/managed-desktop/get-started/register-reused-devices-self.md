@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: c817805994662b080f530b76b76cbb111ee36795
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165204"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
@@ -81,7 +81,7 @@ Dans un environnement Active Directory, vous pouvez utiliser l’applet de comma
 
 1. Ouvrez une invite PowerShell avec des droits d’administration.
 
-2. Exécutez *l’un* de ces scripts :
+2. Exécutez *l’un* des scripts suivants :
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -145,7 +145,7 @@ Procédez comme suit :
 
 1. Dans **le chargement de** fichier, fournissez un chemin d’accès au fichier CSV que vous avez créé précédemment.
 2. Sélectionnez [un profil d’appareil](../service-description/profiles.md) dans le menu déroulant.
-3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur le blade **Devices**, marqué comme **Étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et attend qu’un utilisateur commence à l’utiliser. 
+3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur le blade **Devices**, marqué comme **étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et en attente qu’un utilisateur commence à l’utiliser. 
 
 > [!NOTE]
 > Si vous modifiez manuellement l’appartenance au groupe Azure Active Directory (AAD) d’un appareil, il sera automatiquement réassigné au groupe pour son profil d’appareil et supprimé des groupes en conflit.
@@ -156,7 +156,7 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 |---------------|-------------|
 | Inscription en attente | L’inscription n’est pas encore terminée. Revenir plus tard. |
 | Échec de l’inscription | L’inscription n’a pas pu être terminée. Pour plus [d’informations, voir](#troubleshooting-device-registration) Résolution des problèmes d’inscription de l’appareil. |
-| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Manged Desktop les guide tout au long de la première mise en place, vous n’avez donc pas besoin d’autres préparations. |
+| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Manged Desktop les guidera tout au long de la première mise en place, il n’est donc pas nécessaire d’en faire d’autres. |
 | Actif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Cela indique également qu’ils utilisent régulièrement l’appareil. |
 | Inactif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Toutefois, ils n’ont pas utilisé l’appareil récemment (au cours des 7 derniers jours).  | 
 
@@ -181,4 +181,4 @@ Vous pouvez également appliquer l’image vous-même si vous préférez. To get
 > [!IMPORTANT]
 > Avant de remettre l’appareil à votre utilisateur, assurez-vous que vous avez obtenu et appliqué les [licences](../get-ready/prerequisites.md) appropriées pour cet utilisateur.
 
-Si toutes les licences sont appliquées, vous pouvez préparer vos utilisateurs à utiliser des [appareils,](get-started-devices.md)puis démarrer l’appareil et passer à l’expérience de Windows de configuration.
+Si toutes les licences sont appliquées, vous pouvez préparer vos utilisateurs à utiliser des [appareils,](get-started-devices.md)puis démarrer l’appareil et passer à l’expérience d’installation Windows’installation.

@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 3f9116f698558b0fb8391f985671872891cbf4cd
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365152"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165196"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurer les appareils Bureau géré Microsoft
 
@@ -46,14 +46,14 @@ Nous vous recommandons de collaborer avec l’un de nos partenaires d’appareil
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
-1. Portail [d’administration Access](access-admin-portal.md).
-1. [Ajoutez et vérifiez les contacts d’administrateur dans le portail d’administration.](add-admin-contacts.md)
-1. [Ajuster les paramètres après l’inscription.](conditional-access.md)
-1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. Accéder au[Portail d’administration](access-admin-portal.md).
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md).
+1. [Ajuster les paramètres après l’inscription](conditional-access.md).
+1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
-1. [Déployer des applications.](deploy-apps.md)
+1. [Déployer des applications](deploy-apps.md).
 1. Configurer des appareils (cet article).
-1. Configurer [l’expérience de première expérience avec Autopilot et la page État de l’inscription.](esp-first-run.md)
-1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
-1. [Préparez vos utilisateurs à utiliser des appareils.](get-started-devices.md)
-1. [Prendre en main le contrôle d’application.](get-started-app-control.md)
+1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
+1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
+1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).
+1. [Démarrage avec le contrôle d’application](get-started-app-control.md).

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8586ce73f73eb7566d45f88a3e5ac93d222e33e0ec1ff1ece98c557fe221216e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ce1a3d5153d324d008d2d46048838351eb7bc047
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163648"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -59,9 +59,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
 | `City` | string | Ville où se trouve l’utilisateur du compte |
 | `Country` | string | Pays/région où se trouve l’utilisateur du compte |
-| `IsAccountEnabled` | valeur booléenne | Indique si le compte est activé ou non |
+| `IsAccountEnabled` | booléen | Indique si le compte est activé ou non |
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation avec des serveurs Skype Entreprise et Exchange locaux.
-ms.openlocfilehash: 8804fdb10846a9bed665fe1c3db354cc13814efa35c4003faf8b6eb9003689e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165340"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Vue d’ensemble de l’authentification moderne hybride et configuration requise pour l’utiliser avec les serveurs Skype Entreprise et Exchange locaux
 
@@ -149,7 +149,7 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
 
     La disponibilité de l’authentification moderne est déterminée par la combinaison du client, du protocole et de la configuration. Si l’authentification moderne n’est pas prise en charge par le client, le protocole et/ou la configuration, le client continuera à tirer parti de l’authentification héritée.
   
-    Les protocoles et clients suivants permettent l’authentification moderne avec les Exchange lorsque l’authentification moderne est activée dans l’environnement :
+    Les protocoles et clients suivants permettent l’authentification moderne avec l’Exchange lorsque l’authentification moderne est activée dans l’environnement :
 
   |**Clients**|**Protocole principal**|**Notes**|
   |:-----|:-----|:-----|
@@ -161,7 +161,7 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
     Les clients et/ou protocoles qui ne sont pas répertoriés (par exemple, POP3) ne permettent pas l’authentification moderne avec les Exchange locaux et continuent à tirer parti des mécanismes d’authentification hérités même après l’authentification moderne dans l’environnement.
 
 - **Conditions préalables générales**
-  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour s’assurer que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
+  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour garantir que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
   - Si vous utilisez AD FS, vous devez disposer de Windows 2012 R2 AD FS 3.0 et versions ultérieures pour la fédération.
   - Vos configurations d’identité sont les types pris en charge par Azure AD Connect, tels que la synchronisation de hachage de mot de passe, l’authentification relais et le STS local pris en charge par Office 365.
   - Azure AD Connect est configuré et fonctionne pour la réplication et la synchronisation des utilisateurs.

@@ -19,11 +19,11 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.openlocfilehash: f5ef47fd03614c34e9cb459442e8c1f2a144f4b8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163555"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité gérés (MSSP) 
 
@@ -56,7 +56,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
 2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint dans Microsoft 365 Defender rôles et groupes portail.
 
-    Pour activer RBAC dans le portail d’Microsoft 365 Defender client, accédez aux **autorisations > Rôles** points de terminaison & groupes > Rôles avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
+    Pour activer RBAC dans le portail d’Microsoft 365 Defender du client, accédez aux **autorisations > Rôles** points de terminaison & groupes > Rôles avec un compte d’utilisateur avec des droits d’administrateur général ou d’administrateur de sécurité.
 
     ![Image de l’accès MSSP.](../../media/mssp-access.png)
 
@@ -98,7 +98,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     - Nécessite un membre du groupe AD **MSSP Analyst Approvers** pour autoriser les nouvelles demandes
     - Possède des révisions d’accès annuel, où les analystes SOC peuvent demander une extension d’accès
-    - Peut uniquement être demandé par les utilisateurs dans le client SOC MSSP
+    - Peut uniquement être demandé par les utilisateurs du client SOC MSSP
     - L’accès automatique expire après 365 jours
 
     ![Image du nouveau package d’accès.](../../media/new-access-package.png)

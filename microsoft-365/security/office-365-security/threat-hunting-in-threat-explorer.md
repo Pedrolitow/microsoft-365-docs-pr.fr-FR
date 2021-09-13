@@ -17,15 +17,15 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: de652c8a93e1b51e5184f6de2d1076885de5d4f7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164604"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Recherche de menaces dans l’Explorateur de menaces pour Microsoft Defender Office 365
 
-Contenu de cet article :
+Contenu de cet article :
 
 - [Exploration pas à pas de l’Explorateur de menaces](#threat-explorer-walk-through)
 - [Examen par courrier électronique](#email-investigation)
@@ -33,7 +33,7 @@ Contenu de cet article :
 - [Améliorations de l’expérience de recherche de menaces](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont la sécurité de la messagerie avec [l’Explorateur](email-security-in-microsoft-defender.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md)
+> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont la sécurité de la messagerie avec [l’Explorateur](email-security-in-microsoft-defender.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md)
 
 
 **S’applique à**
@@ -72,7 +72,7 @@ Une fois qu’une personne des opérations de sécurité (Sec Ops) sélectionne 
 L’affinage du focus dans l’Explorateur ou la détection en temps réel peut être pensé en couches. Le premier est **View**. Le second peut être pensé comme un focus *filtré.* Par exemple, vous pouvez revenir sur les étapes que vous avez prises pour rechercher une menace en enregistrant vos décisions comme celle-ci : Pour trouver le problème dans l’Explorateur, j’ai choisi l’affichage programmes malveillants avec le focus filtre **destinataire.** Cela facilite le retracage de vos étapes.
 
 > [!TIP]
-> Si Sec Ops utilise des balises pour marquer les comptes qu’ils considèrent comme cibles à valeur élevée, elles peuvent effectuer des sélections telles que l’affichage d’hameçonnage avec un focus de filtre *Tags (inclure* une plage de dates si elle est utilisée).  Cela leur montrera toutes les tentatives de hameçonnage dirigées vers leurs cibles utilisateur à valeur élevée pendant une période de temps (par exemple, les dates où certaines attaques par hameçonnage se produisent beaucoup pour leur secteur d’activité).
+> Si Sec Ops utilise des balises pour marquer les comptes qu’ils considèrent comme cibles à valeur élevée, ils peuvent effectuer des sélections telles que l’affichage d’hameçonnage avec un focus de filtre *Tags (inclure* une plage de dates si elle est utilisée).  Cela leur montrera toutes les tentatives de hameçonnage dirigées vers leurs cibles utilisateur à valeur élevée pendant une période de temps (par exemple, les dates où certaines attaques par hameçonnage se produisent beaucoup pour leur secteur d’activité).
 
 Les affinements peuvent être effectués sur des plages de dates à l’aide des contrôles de plage de dates. Ici, vous pouvez voir l’Explorateur en affichage **Programmes** malveillants, avec le focus du filtre **Technologie** de détection. Mais c’est le **bouton Filtre avancé** qui permet aux équipes Sec Ops d’être approfondies.
 
@@ -141,11 +141,11 @@ Enfin, l’ID d’alerte est inclus dans l’URL, par exemple : `https://https:/
 > ![Filtrage de l’ID d’alerte.](../../media/AlertID-Filter.png)
 
 > [!div class="mx-imgBorder"]
-> ![ID d’alerte dans le volant d’informations.](../../media/AlertID-DetailsFlyout.png)
+> ![ID d’alerte dans le volant de détails.](../../media/AlertID-DetailsFlyout.png)
 
 ### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>Extension de la rétention et de la limite de recherche des données de l’Explorateur (et détections en temps réel) pour les clients d’essai
 
-Dans le cadre de cette modification, les analystes pourront rechercher et filtrer les données de courrier électronique sur une période de 30 jours (plus de sept jours) dans l’Explorateur de menaces et les détections en temps réel pour Defender pour les clients d’essai Office P1 et P2. Cela n’a aucune incidence sur les clients de production pour les clients P1 et P2 E5, où la valeur par défaut de rétention est déjà de 30 jours.
+Dans le cadre de cette modification, les analystes pourront rechercher et filtrer les données de courrier électronique sur une période de 30 jours (plus de sept jours) dans l’Explorateur de menaces et les détections en temps réel pour Defender pour les clients d’essai Office P1 et P2. Cela n’a aucun impact sur les clients de production pour les clients P1 et P2 E5, où la valeur par défaut de rétention est déjà de 30 jours.
 
 ### <a name="updated-export-limit"></a>Limite d’exportation mise à jour
 
@@ -169,7 +169,7 @@ Lorsque les analystes voient la colonne **Balises** dans la grille de courrier, 
 
 #### <a name="filtering"></a>Filtrage
 
-Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes prioritaires uniquement, ou utilisez des scénarios de balises utilisateur spécifiques de cette façon. Vous pouvez également exclure les résultats qui ont certaines balises. Combinez les balises avec d’autres filtres et plages de dates pour affiner votre portée d’examen.
+Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes prioritaires uniquement ou utilisez des scénarios de balises utilisateur spécifiques de cette façon. Vous pouvez également exclure les résultats qui ont certaines balises. Combinez les balises avec d’autres filtres et plages de dates pour affiner votre portée d’enquête.
 
 [![Balises de filtre.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -178,7 +178,7 @@ Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes
 
 #### <a name="email-detail-flyout"></a>Flyout des détails des e-mails
 
-Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé,** les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles de l’expéditeur et du destinataire peuvent être exportées en tant que données CSV.
+Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé,** les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles pour l’expéditeur et le destinataire peuvent être exportées en tant que données CSV.
 
 > [!div class="mx-imgBorder"]
 > ![Balises de détails du courrier électronique.](../../media/tags-flyout.png)
@@ -235,7 +235,7 @@ La recherche de connecteurs est une requête CONTAINS, ce qui signifie que les r
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
-Vous devez avoir [Microsoft Defender pour que Office 365](defender-for-office-365.md) utiliser les détections d’explorateur ou en temps réel.
+Vous devez avoir [Microsoft Defender pour que Office 365](defender-for-office-365.md) utiliser les détections en temps réel ou l’Explorateur.
 
 - L’Explorateur est inclus dans Defender pour Office 365 Plan 2.
 - Le rapport détections en temps réel est inclus dans Defender pour Office 365 Plan 1.
@@ -243,7 +243,7 @@ Vous devez avoir [Microsoft Defender pour que Office 365](defender-for-office-36
 
 Pour afficher et utiliser les détections de l’Explorateur ou en temps réel, vous devez avoir les autorisations suivantes :
 
-- Pour le portail Microsoft 365 Defender:
+- Pour le portail Microsoft 365 Defender web :
   - Gestion de l’organisation
   - Administrateur de sécurité (peut être affecté dans le centre d’administration Azure Active Directory de sécurité ( <https://aad.portal.azure.com> )
   - Lecteur de sécurité

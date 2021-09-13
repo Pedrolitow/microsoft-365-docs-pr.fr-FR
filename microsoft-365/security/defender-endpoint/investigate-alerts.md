@@ -20,11 +20,11 @@ ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 45bf3204a092bac6597c4e43f4ca29dbc06cd631
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165108"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -73,7 +73,7 @@ Si vous rencontrez une fausse alerte avec une application métier, créez une r�
 > Si vous rencontrez des problèmes non décrits ci-dessus, utilisez le bouton pour fournir des commentaires ou 🙂 ouvrir un ticket de support.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)

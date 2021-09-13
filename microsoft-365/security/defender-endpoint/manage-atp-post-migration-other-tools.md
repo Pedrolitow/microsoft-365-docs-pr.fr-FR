@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 4907e2076f3ecac8fcb45c6202877ae609f5ddc7bf93109ccae5322bde40ae9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b20107b33a0bff72375885b11f205fa915a3b718
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53806831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165012"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>Gérer Microsoft Defender pour le point de terminaison avec PowerShell, WMI et MPCmdRun.exe
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser PowerShell pour gérer les Antivirus Microsoft Defender, ex
 |**Configurer des règles de réduction de la surface d’attaque** avec PowerShell <p> *Vous pouvez utiliser PowerShell pour exclure des fichiers et des dossiers des règles de réduction de la surface d’attaque.*|[Personnaliser les règles de réduction de la surface d’attaque : utiliser PowerShell pour exclure des fichiers & dossiers](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders) <p> Voir également [l’outil d’interface utilisateur graphique d’Antócée Vasconcelo](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)pour définir des règles de réduction de la surface d’attaque avec PowerShell.|
 |**Activer la protection du** réseau avec PowerShell <p> *Vous pouvez utiliser PowerShell pour activer la Protection du réseau.*|[Activer la protection du réseau avec PowerShell](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |**Configurer l’accès contrôlé aux dossiers pour** la protection contre les ransomware <p> *[L’accès contrôlé aux](/microsoft-365/security/defender-endpoint/controlled-folders) dossiers est également appelé protection anti-programme malveillant.*|[Activer l’accès contrôlé aux dossiers avec PowerShell](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
-|**Configurer le Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé qui circule vers ou hors des appareils de votre organisation|[Administration du Pare-feu Microsoft Defender avec fonctions avancées de sécurité à l’aide Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
+|**Configurer le Pare-feu Microsoft Defender** pour bloquer le trafic réseau non autorisé qui circule dans ou hors des appareils de votre organisation|[Administration du Pare-feu Microsoft Defender avec fonctions avancées de sécurité à l’aide Windows PowerShell](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
 |**Configurer le chiffrement et BitLocker pour** protéger les informations sur les appareils de votre organisation exécutant Windows|[Guide de référence sur BitLocker PowerShell](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Configurer Microsoft Defender pour endpoint avec Windows Management Instrumentation (WMI)
@@ -82,7 +82,7 @@ Sur un appareil individuel, vous pouvez exécuter une analyse, démarrer le suiv
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurer votre portail Microsoft 365 Defender client
 
-Si vous ne l’avez pas déjà fait, configurez votre portail [Microsoft 365 Defender](https://security.microsoft.com/) pour afficher les alertes, configurer les fonctionnalités de protection contre les menaces et afficher des informations détaillées sur la posture de sécurité globale de votre organisation.
+Si ce n’est pas déjà fait, configurez votre portail [Microsoft 365 Defender](https://security.microsoft.com/) pour afficher les alertes, configurer les fonctionnalités de protection contre les menaces et afficher des informations détaillées sur la posture de sécurité globale de votre organisation.
 
 Vous pouvez également configurer si les fonctionnalités que les utilisateurs finaux peuvent voir dans le Centre de sécurité Microsoft Defender.
 
@@ -90,7 +90,7 @@ Vous pouvez également configurer si les fonctionnalités que les utilisateurs f
 
 - [Protection des points de terminaison : Centre de sécurité Microsoft Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Obtenir une vue d’ensemble de la gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 

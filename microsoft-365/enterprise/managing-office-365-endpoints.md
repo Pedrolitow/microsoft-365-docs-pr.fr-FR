@@ -19,11 +19,11 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer les points Office 365 afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
 ms.openlocfilehash: 6a8460dbc9dbbc8b7b7a5a8e720b8c55c0ed918c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163857"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -37,7 +37,7 @@ La manière dont vous utilisez les points de terminaison réseau Office 365 dép
 
 ## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SD-WAN pour la sortie de branche locale du trafic Office 365 réseau
 
-À chaque emplacement de succursale, vous pouvez fournir un périphérique SD-WAN configuré pour router le trafic pour la catégorie Office 365 Optimiser les points de terminaison, ou optimiser et autoriser des catégories, directement vers le réseau de Microsoft. Les autres types de trafic réseau, notamment le trafic de centre de données local, le trafic de sites Web Internet généraux et le trafic vers les points de terminaison de catégorie par défaut d’Office 365 sont envoyés à un autre emplacement dans lequel vous avez un périmètre de réseau plus important.
+À chaque emplacement de succursale, vous pouvez fournir un périphérique SD-WAN configuré pour router le trafic pour la catégorie Office 365 Optimiser les points de terminaison, ou optimiser et autoriser des catégories, directement sur le réseau de Microsoft. Les autres types de trafic réseau, notamment le trafic de centre de données local, le trafic de sites Web Internet généraux et le trafic vers les points de terminaison de catégorie par défaut d’Office 365 sont envoyés à un autre emplacement dans lequel vous avez un périmètre de réseau plus important.
 
 Microsoft travaille avec des fournisseurs SD-WAN pour activer la configuration automatisée. Pour plus d’informations, voir [Programme de partenariat réseau Office 365](microsoft-365-networking-partner-program.md).
 
@@ -76,7 +76,7 @@ Il existe de nombreux paramètres que vous pouvez transmettre au script :
 | Paramètre | Description |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Ceci est requis et il s’agit d’un GUID transmis au service Web qui représente l’ordinateur client à l’origine de l’appel. <br/> |
-|**Instance** <br/> |L Office 365 de service, qui est par défaut dans le monde entier. Il est également transmis au service web. <br/> |
+|**Instance** <br/> |L Office 365 instance de service, qui est par défaut dans le monde entier. Il est également transmis au service web. <br/> |
 |**TenantName** <br/> |Votre nom de client Office 365. Transmises au service Web et utilisées comme paramètre remplaçable dans certaines URL d’Office 365. <br/> |
 |**Type** <br/> |Type du fichier PAC de proxy que vous voulez générer. <br/> |
 
@@ -161,14 +161,14 @@ Ces redirections CNAME constituent une partie normale du DNS et sont transparent
 
 Un serveur proxy valide l’URL initiale, qui dans l’exemple ci-dessus est serviceA.office.com, et cette URL serait incluse dans Office 365 publication. Le serveur proxy demande la résolution DNS de cette URL à une adresse IP et recevra IP_1. Il ne valide pas les enregistrements de redirection intermédiaires CNAME.
 
-Les configurations codées en dur ou l’utilisation d’une liste d’attente basée sur des FQDN indirects Office 365 ne sont pas recommandées, ne sont pas pris en charge par Microsoft et sont connues pour provoquer des problèmes de connectivité client. Les solutions DNS qui bloquent la redirection CNAME ou qui résolvent de manière incorrecte les entrées DNS Office 365 peuvent être résolues via des redirecteurs DNS avec la récursion DNS activée ou à l’aide d’indications racine DNS. De nombreux produits de périmètre de réseau tiers intègrent en natif le point de terminaison Office 365 recommandé pour inclure une liste d’adresses ip dans leur configuration à l’aide de l’adresse IP Office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
+Les configurations codées en dur ou l’utilisation d’une liste d’utilisateurs allowlist basée sur des FQDN indirects Office 365 ne sont pas recommandées, ne sont pas pris en charge par Microsoft et sont connues pour provoquer des problèmes de connectivité client. Les solutions DNS qui bloquent la redirection CNAME ou qui résolvent de manière incorrecte les entrées DNS Office 365 peuvent être résolues via des redirecteurs DNS avec la récursion DNS activée ou à l’aide d’indications racine DNS. De nombreux produits de périmètre de réseau tiers intègrent en natif le point de terminaison Office 365 recommandé pour inclure une liste d’adresses ip dans leur configuration à l’aide de l’adresse IP Office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Pourquoi des noms tels que nsatc.net ou akadns.net figurent-ils parmi les noms de domaine de Microsoft ?
 
 Office 365 et d’autres services Microsoft utilisent des services tiers tels que MarkMonitor et Akamai pour améliorer votre expérience d’Office 365. Pour continuer de vous offrir la meilleure expérience possible, il se peut que vous changions ces services à l’avenir. Les domaines tiers peuvent héberger du contenu, tel qu’un CDN, ou héberger un service, tel qu’un service de gestion du trafic géographique. Voici quelques-uns des services actuellement utilisés :
   
-[MarkMonitor](https://www.markmonitor.com/) est utilisé lorsque vous voyez des requêtes qui incluent *\* .nsatc.net*. Ce service fournit une protection de nom de domaine et une surveillance pour protéger contre des comportements malveillants.
+[MarkMonitor](https://www.markmonitor.com/) est utilisé lorsque vous voyez des demandes qui incluent *\* .nsatc.net*. Ce service fournit une protection de nom de domaine et une surveillance pour protéger contre des comportements malveillants.
   
 [ExactTarget est](https://www.marketingcloud.com/) utilisé lorsque vous voyez des demandes à *\* .exacttarget.com*. Ce service fournit une gestion des liens de messagerie électronique et une surveillance pour protéger contre des comportements malveillants.
   
@@ -214,9 +214,9 @@ N’oubliez pas que le blocage de l’accès aux services grand public de Micros
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Mon pare-feu nécessite des adresses IP et ne peut pas traiter les URL. Comment puis-je le configurer pour Office 365 ?
 
-Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web ; l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 url de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
+Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web . l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 url de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Service web d’URL et d’adresses IP Office 365](microsoft-365-ip-web-service.md)
 

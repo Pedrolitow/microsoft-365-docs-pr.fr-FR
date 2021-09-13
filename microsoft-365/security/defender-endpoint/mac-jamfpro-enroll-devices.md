@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 207c1334f91ecd22385ce281b3f10763afe57810
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165060"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscrire Microsoft Defender pour endpoint sur les appareils macOS dans Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,7 +43,7 @@ Il existe plusieurs méthodes pour être inscrit à JamF.
 Cet article vous guide sur deux méthodes :
 
 - [Méthode 1 : Invitations à l’inscription](#enrollment-method-1-enrollment-invitations)
-- [Méthode 2 : Pré-étape des inscriptions](#enrollment-method-2-prestage-enrollments)
+- [Méthode 2 : pré-étape des inscriptions](#enrollment-method-2-prestage-enrollments)
 
 Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordinateur.](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)
 
@@ -55,9 +55,9 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
 2. Sélectionnez **+ Nouveau**.
 
-    ![Close up of a logo Description automatically generated.](images/b6c7ad56d50f497c38fc14c1e315456c.png)
+    ![Fermeture d’une description de logo générée automatiquement.](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. Dans **Spécifier les destinataires de l'>** sous **Adresses** de messagerie, entrez l’adresse de messagerie des destinataires.
+3. Dans **Spécifier les destinataires de l'>** sous Adresses de messagerie, entrez les **adresses** de messagerie des destinataires.
 
     ![Image des paramètres de configuration2.](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 

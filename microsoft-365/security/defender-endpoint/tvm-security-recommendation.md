@@ -1,7 +1,7 @@
 ---
 title: Recommandations en matière de sécurité Gestion des menaces et des vulnérabilités
 description: Obtenez des recommandations de sécurité actionnables prioritaires par menace, probabilité de violation et valeur, Gestion des menaces et des vulnérabilités.
-keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
+keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation sur la cybersécurité, recommandation de sécurité actionnable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164796"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
@@ -32,19 +32,19 @@ ms.locfileid: "58569944"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Les faiblesses de cybersécurité identifiées dans votre organisation sont mappées aux recommandations de sécurité actionnables et hiérarchisées par leur impact. Les recommandations hiérarchisées permettent de raccourcir le temps d’atténuation ou de correction des vulnérabilités et de stimuler la conformité.
+Les faiblesses de cybersécurité identifiées dans votre organisation sont mappées à des recommandations de sécurité actionnables et hiérarchisées par leur impact. Les recommandations hiérarchisées permettent de raccourcir le temps d’atténuation ou de correction des vulnérabilités et de stimuler la conformité.
 
 Chaque recommandation de sécurité inclut des étapes de correction actionnables. Pour faciliter la gestion des tâches, la recommandation peut également être envoyée à l’aide Microsoft Intune et Microsoft Endpoint Configuration Manager. Lorsque le paysage des menaces change, la recommandation change également lorsqu’elle collecte en permanence des informations à partir de votre environnement.
 
 > [!TIP]
-> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Chaque appareil de l’organisation est marqué en fonction de trois facteurs importants pour aider les clients à se concentrer sur les bonnes choses au bon moment.
 
@@ -144,7 +144,7 @@ Sélectionnez une recommandation de sécurité pour la création d’une excepti
 
 Remplissez le formulaire et soumettez-le. Pour afficher toutes vos exceptions (actuelles et passées), accédez à la [page](tvm-remediation.md) Correction sous le menu Gestion des vulnérabilités des menaces **&** et sélectionnez l’onglet **Exceptions.** En savoir plus sur la création d’une [exception](tvm-exception.md#create-an-exception)
 
-## <a name="report-inaccuracy"></a>Inaccuracy de rapport
+## <a name="report-inaccuracy"></a>Report inaccuracy
 
 Vous pouvez signaler un faux positif lorsque vous voyez des informations de recommandation de sécurité vagues, inexactes, incomplètes ou déjà corrigés.
 

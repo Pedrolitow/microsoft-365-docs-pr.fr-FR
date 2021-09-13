@@ -21,11 +21,11 @@ ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Dans cet article, vous trouverez des points de terminaison accessibles aux clients qui utilisent Office 365 pour le gouvernement américain Cloud de la communauté du secteur public plans élevés.
 hideEdit: true
 ms.openlocfilehash: c29ea7c69528b734f3083138501224e071848c1d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165244"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Points de terminaison Office 365 U.S. Government GCC High
 
@@ -66,6 +66,6 @@ Les colonnes de données affichées sont :
 
 Remarques à propos de ce tableau :
 
-- Le Centre de sécurité et conformité (SCC) fournit la prise en charge d’Azure ExpressRoute pour Office 365. Il en va de même pour de nombreuses fonctionnalités exposées via le SCC, telles que la rapport, l’audit, Advanced eDiscovery, la protection contre la protection des données unifiée et la gouvernance des données. Deux fonctionnalités spécifiques, importation PST et exportation eDiscovery, ne permettent actuellement pas de prendre en charge Azure ExpressRoute avec uniquement des filtres d’itinéraire Office 365 en raison de leur dépendance à Azure Blob Stockage. Pour utiliser ces fonctionnalités, vous avez besoin d’une connectivité distincte à Azure Blob Stockage à l’aide de toutes les options de connectivité Azure supportables, qui incluent la connectivité Internet ou Azure ExpressRoute avec des filtres d’itinéraire public Azure. Vous devez évaluer l’établissement d’une telle connectivité pour ces deux fonctionnalités. L’équipe Office 365 Information Protection est au courant de cette limitation et travaille activement pour prendre en charge Azure ExpressRoute pour Office 365 comme limité aux filtres d’itinéraire Office 365 pour ces deux fonctionnalités.
+- Le Centre de sécurité et conformité (SCC) fournit la prise en charge d’Azure ExpressRoute pour Office 365. Il en va de même pour de nombreuses fonctionnalités exposées par le biais du SCC, telles que la gestion des rapports, l’audit, Advanced eDiscovery, la DLP unifiée et la gouvernance des données. Deux fonctionnalités spécifiques, importation PST et exportation eDiscovery, ne permettent actuellement pas de prendre en charge Azure ExpressRoute avec uniquement des filtres d’itinéraire Office 365 en raison de leur dépendance à Azure Blob Stockage. Pour utiliser ces fonctionnalités, vous avez besoin d’une connectivité distincte à Azure Blob Stockage à l’aide de toutes les options de connectivité Azure supportables, qui incluent la connectivité Internet ou Azure ExpressRoute avec des filtres d’itinéraire public Azure. Vous devez évaluer l’établissement d’une telle connectivité pour ces deux fonctionnalités. L’équipe Office 365 Information Protection est au courant de cette limitation et travaille activement pour prendre en charge Azure ExpressRoute pour Office 365 comme limité aux filtres d’itinéraire Office 365 pour ces deux fonctionnalités.
 
-- Il existe d’autres points de terminaison facultatifs pour Applications Microsoft 365 pour les grandes entreprises qui ne sont pas répertoriés et qui ne sont pas requis pour que les utilisateurs lancent des applications Applications Microsoft 365 pour les grandes entreprises et modifient des documents. Les points de terminaison facultatifs sont hébergés dans les centres de données Microsoft et ne traiter, ne transmettent pas ou ne stockent pas de données client. Nous recommandons que les connexions utilisateur à ces points de terminaison soient dirigées vers le périmètre de sortie Internet par défaut.
+- Il existe d’autres points de terminaison facultatifs pour Applications Microsoft 365 pour les grandes entreprises qui ne sont pas répertoriés et qui ne sont pas requis pour que les utilisateurs lancent des applications Applications Microsoft 365 pour les grandes entreprises et modifient des documents. Les points de terminaison facultatifs sont hébergés dans des centres de données Microsoft et ne traiter, ne transmettent pas ou ne stockent pas de données client. Nous recommandons que les connexions utilisateur à ces points de terminaison soient dirigées vers le périmètre de sortie Internet par défaut.

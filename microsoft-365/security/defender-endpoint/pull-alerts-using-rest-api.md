@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2bf5d76b0f5f9638105870a872fdc4efa38157b6df4a694b1610ff3e21964257
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a72c7d363ab57c8c108279c71a3e1424e88a577
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53845026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164953"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST SIEM
 
@@ -57,7 +57,7 @@ Microsoft Defender pour le  point de terminaison prend en charge le flux d’oct
 
 Le _flux d’octroi d’autorisation_ utilise les informations d’identification de l’utilisateur pour obtenir un code d’autorisation, qui est ensuite utilisé pour obtenir un jeton d’accès.
 
-Le _flux d’informations d’identification_ du client utilise les informations d’identification du client pour s’authentifier par rapport à l’URL du point de terminaison microsoft Defender pour le point de terminaison. Ce flux convient aux scénarios lorsqu’un client OAuth crée des demandes à une API qui ne nécessite pas d’informations d’identification utilisateur.
+Le _flux d’informations d’identification_ du client utilise les informations d’identification du client pour s’authentifier par rapport à l’URL du point de terminaison microsoft Defender pour le point de terminaison. Ce flux convient aux scénarios où un client OAuth crée des demandes à une API qui ne nécessite pas d’informations d’identification utilisateur.
 
 Utilisez la méthode suivante dans l’API Microsoft Defender for Endpoint pour tirer les détections au format JSON.
 
@@ -111,7 +111,7 @@ Méthode | URI de demande
 :---|:---|
 GET| Utilisez l’URI applicable pour votre région. <br><br> **Pour l’UE**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **Pour les États-Unis**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **Pour le Royaume-Uni**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
-### <a name="request-header"></a>En-tête de requête
+### <a name="request-header"></a>En-tête de demande
 En-tête | Type | Description|
 :--|:--|:--
 Autorisation | string | Obligatoire. Jeton d’accès Azure AD sous la forme **d’un jeton du** &lt; *porteur.* &gt; |
@@ -124,11 +124,11 @@ Nom | Valeur| Description
 :---|:---|:---
 sinceTimeUtc | Date/heure | Définit les alertes liées au temps inférieur à partir de, en fonction du champ : <br> `LastProcessedTimeUtc` <br> L’intervalle de temps sera : de l’heure sinceTimeUtc à l’heure actuelle. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes générées au cours des deux dernières heures sont récupérées.
 untilTimeUtc | Date/heure | Définit les alertes liées au temps supérieur qui sont récupérées. <br> La plage de temps sera : de `sinceTimeUtc` temps en `untilTimeUtc` temps. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, la valeur par défaut est l’heure actuelle.
-ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> La valeur doit être définie selon le format de durée **ISO 8601** <br> Exemple : `ago=PT10M` tirera les alertes reçues au cours des 10 dernières minutes.
+ago | chaîne | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> La valeur doit être définie selon le format de durée **ISO 8601** <br> Exemple : `ago=PT10M` tirera les alertes reçues au cours des 10 dernières minutes.
 limit | int | Définit le nombre d’alertes à récupérer. Les alertes les plus récentes sont récupérées en fonction du nombre défini.<br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes disponibles dans l’plage de temps sont récupérées.
-machinegroups | string | Spécifie les groupes d’appareils à partir des appareils à partir des alertes. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, les alertes de tous les groupes d’appareils sont récupérées. <br><br> Exemple : <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | Balise d’appareil unique à partir du Registre.
-CloudCreatedMachineTags | string | Balises de périphérique créées dans Centre de sécurité Microsoft Defender.
+machinegroups | chaîne | Spécifie les groupes d’appareils à partir des appareils à partir des alertes. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, les alertes de tous les groupes d’appareils sont récupérées. <br><br> Exemple : <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | chaîne | Balise d’appareil unique à partir du Registre.
+CloudCreatedMachineTags | chaîne | Balises de périphérique créées dans Centre de sécurité Microsoft Defender.
 
 ### <a name="request-example"></a>Exemple de requête
 L’exemple suivant montre comment récupérer toutes les détections dans votre organisation.
@@ -335,7 +335,7 @@ Code d’erreur HTTP | Description
 403 | Exception non autorisée : l’un des domaines n’est pas géré par l’administrateur client ou l’état du client est supprimé.
 500 | Erreur dans le service.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
 - [Tirer les détections vers vos outils SIEM](configure-siem.md)

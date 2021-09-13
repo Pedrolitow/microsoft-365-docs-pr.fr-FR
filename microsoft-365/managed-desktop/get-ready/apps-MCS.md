@@ -13,11 +13,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: db48122ea5551fe3e9f8cd676785bbd3eef81d0b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163817"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
@@ -33,7 +33,7 @@ Pour travailler avec l’empaquetage d’application MCS, **vous devez fournir l
 
 **MCS s’occupe des actions ci-après :**
 
-- Vérification de l’interdiction ou de la restriction de l’application dans l’environnement Microsoft Manged Desktop’application.
+- Vérification de l’interdiction ou de la restriction de l’application dans l Microsoft Manged Desktop de l’application.
 - Test de l’installation, du démarrage et de la désinstallation de l’application pour garantir la compatibilité avec Windows 10. Si MCS découvre un problème de compatibilité, il va remettre l’application au programme [App Assure](/fasttrack/products-and-capabilities#app-assure) pour correction.
 - Empaquetage de l’application selon vos spécifications, puis test du déploiement de l’application à l’aide Microsoft Intune.
 
@@ -50,11 +50,11 @@ Une fois l’application livrée, vous en serez informé. À ce stade, vous avez
 Pour que l’équipe de packaging termine la migration vers Microsoft Intune, nous vous recommandons de fournir certaines autorisations :
 
 - Accès aux fonctionnalités Microsoft Intune déploiement d’application du programme de package pour ajouter et affecter l’application
-- Tester les groupes, les comptes d’utilisateur et les licences pour que les packageurs puissent tester les applications
+- Tester les groupes, les comptes d’utilisateur et les licences des packageurs pour pouvoir tester les applications
 
 MCS utilisera ces autorisations pour effectuer les actions suivantes :
 
 - S’assurer que l’application fonctionne sur une machine virtuelle configurée pour Microsoft Manged Desktop
 - Téléchargement de l’application vers Microsoft Intune pour le déploiement vers vos utilisateurs
 
-Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications dans votre environnement.
+Sans ces autorisations, mcS peut avancer, mais il ne pourra pas télécharger les applications vers votre environnement.

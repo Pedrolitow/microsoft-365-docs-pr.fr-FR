@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Résumé : Configurez azure ad Connecter pour votre authentification fédérée haute disponibilité Microsoft 365 dans Microsoft Azure.'
 ms.openlocfilehash: c179f45e061c1ff004f1c70e83ba0888c066f733
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165348"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Authentification fédérée haute disponibilité, phase 5 : Configurer l’authentification fédérée pour Microsoft 365
 
@@ -45,7 +45,7 @@ Lorsque vous recevez le certificat, copiez-le dans un dossier sur le lecteur C: 
   
 ## <a name="verify-your-configuration"></a>Vérifier votre configuration
 
-Vous devez maintenant être prêt à configurer l’authentification fédérée et les Connecter Azure AD pour Microsoft 365. Pour vous en assurer, utilisez la liste de vérification suivante :
+Vous devez maintenant être prêt à configurer l’authentification Connecter Azure AD et l’authentification fédérée pour Microsoft 365. Pour vous en assurer, utilisez la liste de vérification suivante :
   
 - Le domaine public de votre organisation est ajouté à votre abonnement Microsoft 365 abonnement.
     
@@ -69,7 +69,7 @@ Voici un exemple pour l’organisation Contoso :
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Exécutez Azure AD Connect pour configurer l’authentification fédérée
 
-L’outil azure AD Connecter configure les serveurs AD FS, les serveurs proxy d’application web et les Microsoft 365 pour l’authentification fédérée en suivantes :
+L’outil Azure AD Connecter configure les serveurs AD FS, les serveurs proxy d’application web et les Microsoft 365 pour l’authentification fédérée en suivantes :
   
 1. Créez une connexion bureau à distance à votre serveur de synchronisation d’annuaires avec un compte de domaine ayant des privilèges d’administrateur local.
     

@@ -23,11 +23,11 @@ description: Office 365 nécessite une connexion à Internet. Les points de term
 hideEdit: true
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: fcd391e0f40978b0b0af991e2d6e5b1b669f381e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165249"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 Points de terminaison DoD pour le gouvernement américain
 

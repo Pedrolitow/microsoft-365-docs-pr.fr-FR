@@ -1,6 +1,6 @@
 ---
 title: Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
-description: Découvrez comment utiliser la surveillance avancée au niveau HTTP par le biais de la protection réseau dans Microsoft Defender pour Endpoint, qui utilise une cible réelle au lieu d’un proxy.
+description: Découvrez comment utiliser la surveillance avancée au niveau HTTP par le biais de la protection réseau dans Microsoft Defender pour point de terminaison, qui surfaces une cible réelle, au lieu d’un proxy.
 keywords: proxy, protection réseau, proxy avant, événements réseau, audit, bloc, noms de domaine, domaine
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78ec7662b050a9dafcae798fa8aeb2685deb8a68
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 86a447ba3a5dca129d1044e5df83dd2ab81cbe74
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569332"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165105"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
 
@@ -36,17 +36,18 @@ ms.locfileid: "58569332"
 
 Defender pour le point de terminaison prend en charge la surveillance des connexions réseau à partir de différents niveaux de la pile réseau. Un cas difficile est celui où le réseau utilise un proxy avant comme passerelle vers Internet.
 
-Le proxy agit comme s’il s’agissait du point de terminaison cible.  Dans ce cas, les moniteurs de connexion réseau simples auditent les connexions avec le proxy, ce qui est correct mais qui a une valeur d’investigation inférieure. 
+Le proxy agit comme s’il s’agissait du point de terminaison cible. Dans ce cas, les moniteurs de connexion réseau simples auditent les connexions avec le proxy, ce qui est correct mais qui a une valeur d’investigation inférieure.
 
 Defender pour le point de terminaison prend en charge la surveillance avancée au niveau HTTP via la protection réseau. Lorsqu’il est allumé, un nouveau type d’événement est exposé, qui expose les noms de domaine cibles réels.
 
 ## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Utiliser la protection réseau pour surveiller la connexion réseau derrière un pare-feu
-La surveillance de la connexion réseau derrière un proxy avant est possible en raison d’événements réseau supplémentaires qui proviennent de la protection du réseau. Pour les voir sur une chronologie d’appareil, activer la protection réseau (au minimum en mode audit). 
+
+La surveillance de la connexion réseau derrière un proxy avant est possible en raison d’événements réseau supplémentaires qui proviennent de la protection du réseau. Pour les voir sur une chronologie d’appareil, activer la protection réseau (au minimum en mode audit).
 
 La protection réseau peut être contrôlée à l’aide des modes suivants :
 
-- **Bloquer** <br> Les utilisateurs ou les applications ne pourront pas se connecter à des domaines dangereux. Vous pourrez voir cette activité dans Centre de sécurité Microsoft Defender.
-- **Audit** <br> La connexion à des domaines dangereux ne sera pas bloquée pour les utilisateurs ou les applications. Toutefois, vous verrez toujours cette activité dans Centre de sécurité Microsoft Defender.
+- **Bloquer**: les utilisateurs ou les applications ne pourront pas se connecter à des domaines dangereux. Vous pourrez voir cette activité dans Centre de sécurité Microsoft Defender.
+- **Audit**: la connexion aux domaines dangereux ne sera pas bloquée pour les utilisateurs ou les applications. Toutefois, vous verrez toujours cette activité dans Centre de sécurité Microsoft Defender.
 
 
 Si vous éte désactiver la protection réseau, les utilisateurs ou les applications ne seront pas bloqués pour se connecter à des domaines dangereux. Aucune activité réseau ne s’Centre de sécurité Microsoft Defender.
@@ -56,6 +57,7 @@ Si vous ne la configurez pas, le blocage du réseau est désactivé par défaut.
 Pour plus d’informations, voir [Activer la protection réseau.](enable-network-protection.md)
 
 ## <a name="investigation-impact"></a>Impact de l’examen
+
 Lorsque la protection réseau est allumée, vous verrez que, sur la chronologie d’un appareil, l’adresse IP continuera à représenter le proxy, tandis que l’adresse cible réelle s’affiche.
 
 ![Image des événements réseau sur la chronologie de l’appareil.](images/atp-proxy-investigation.png)
@@ -66,32 +68,30 @@ Informations sur l’événement :
 
 ![Image d’un événement réseau unique.](images/atp-proxy-investigation-event.png)
 
+## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Recherche des événements de connexion à l’aide de la recherche avancée
 
-
-## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Recherche des événements de connexion à l’aide de la recherche avancée 
 Tous les nouveaux événements de connexion sont également disponibles pour la recherche avancée. Étant donné que ces événements sont des événements de connexion, vous pouvez les trouver sous la table DeviceNetworkEvents sous le `ConnecionSuccess` type d’action.
 
 L’utilisation de cette requête simple vous montre tous les événements pertinents :
 
-```
+```console
 DeviceNetworkEvents
-| where ActionType == "ConnectionSuccess" 
+| where ActionType == "ConnectionSuccess"
 | take 10
 ```
 
 ![Image d’une requête de recherche avancée.](images/atp-proxy-investigation-ah.png)
 
-Vous pouvez également filtrer les événements liés à la connexion au proxy lui-même. 
+Vous pouvez également filtrer les événements liés à la connexion au proxy lui-même.
 
 Utilisez la requête suivante pour filtrer les connexions au proxy :
 
-```
+```console
 DeviceNetworkEvents
-| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
+| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"
 | take 10
 ```
 
+## <a name="related-topics"></a>Rubriques connexes
 
-
-## <a name="related-topics"></a>Voir aussi
 - [Application de la protection réseau avec la stratégie de groupe - CSP de stratégie](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

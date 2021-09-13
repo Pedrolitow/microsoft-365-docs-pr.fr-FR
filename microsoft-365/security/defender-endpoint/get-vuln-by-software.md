@@ -17,17 +17,17 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 98852db88f2b586d8e69a529a838e785dc22654c
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165140"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Répertorier les vulnérabilités par logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

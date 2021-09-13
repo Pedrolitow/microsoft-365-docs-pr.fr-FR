@@ -16,11 +16,11 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.openlocfilehash: 4fcab8abd4f1a5a45ff2700b01abc7fe67b8563f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164697"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Spécialistes des menaces Microsoft vue d’Microsoft 365'ensemble
 
@@ -80,7 +80,7 @@ L’option de **consulter un expert en menaces** est disponible à plusieurs end
 ![Capture d’écran de l’option de menu MTE-EOD sur la page d’alerte.](../../media/mte/alerts-actions-mte-highlighted.png)
 
 - <i>**Menu Actions de la page Incidents**</i><BR>
-![Capture d’écran de l’option de menu MTE-EOD sur la page incidents.](../../media/mte/incidents-action-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page Incidents.](../../media/mte/incidents-action-mte-highlighted.png)
 
 - <i>**Page d’inventaire des incidents**</i><BR>
 ![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des incidents.](../../media/mte/incidents-inventory-mte-highlighted.png)

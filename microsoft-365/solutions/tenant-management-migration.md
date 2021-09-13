@@ -17,11 +17,11 @@ ms.custom:
 - Ent_Solutions
 description: Migrez vos Windows, Office applications clientes et Office serveurs d’Microsoft 365 client.
 ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571578"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162413"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 4. Migration de vos Microsoft 365 pour les locataires d’entreprise
 
@@ -31,7 +31,7 @@ Pour optimiser la valeur commerciale de la Microsoft 365 pour la suite intégré
 
 | De | À |
 |:-------|:-----|
-| Windows 7 et Windows 8.1 | Windows 10 Entreprise |
+| Windows 7 et Windows 8.1 | Windows 10 Entreprise |
 | Office clients installés sur les appareils de vos travailleurs | Microsoft 365 Apps for enterprise |
 | Office serveurs installés sur des serveurs locaux | Leurs services cloud équivalents dans Microsoft 365 |
 |  |  |
@@ -56,7 +56,7 @@ Applications Microsoft 365 pour les grandes entreprises installe automatiquement
 
 ## <a name="migrating-on-premises-servers-and-data-to-microsoft-365"></a>Migration de serveurs et de données locaux vers des Microsoft 365
 
-Microsoft 365 entreprise inclut des versions cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site des logiciels serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour la maintenance et la mise à jour des serveurs locaux.
+Microsoft 365 entreprise inclut des versions cloud des services serveur Office qui utilisent certains des mêmes outils que les versions sur site des logiciels serveur Office, tels que les navigateurs web et le client Outlook. Ces services basés sur le cloud sont automatiquement mis à jour pour la sécurité et les nouvelles fonctionnalités. Après la migration, votre service informatique peut gagner du temps pour gérer et mettre à jour des serveurs locaux.
 
 Utilisez les ressources suivantes pour plus d’informations sur la migration des utilisateurs et des données pour Microsoft 365 charges de travail spécifiques :
 
@@ -87,7 +87,7 @@ Voici un exemple de client avec une migration terminée de serveurs locaux.
 Dans cette illustration, l’organisation a :
 
 - Migration de ses boîtes aux lettres Exchange Server en local vers Exchange Online.
-- Migration de ses données et sites SharePoint server locaux vers SharePoint dans Microsoft 365.
+- Migration de ses données et sites SharePoint Server locaux vers SharePoint dans Microsoft 365.
 
 ## <a name="ongoing-maintenance-for-migration"></a>Maintenance continue pour la migration
 

@@ -17,11 +17,11 @@ ms.collection:
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
 ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572778"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162400"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurer une équipe avec une isolation des problèmes de sécurité dans un environnement de test/développement
 
@@ -161,7 +161,7 @@ Procédez comme suit :
 
 Ensuite, publiez la nouvelle étiquette en procédant comme suit :
 
-1. Dans le Centre de conformité Microsoft 365, dans la page **protection des informations**, sélectionnez l’onglet **Stratégies d’étiquette**.
+1. Dans le Centre de conformité Microsoft 365, dans la page **protection des informations**, sélectionnez l’onglet **Stratégies d’étiquette**.
 2. Cliquez sur **Publier des étiquettes**.
 3. Dans la page **Choisir des étiquettes de confidentialité à publier**, cliquez sur **Choisir des étiquettes de confidentialité à publier**.
 4. Sélectionnez **Stratégie d’entreprise**, puis cliquez sur **Ajouter**.

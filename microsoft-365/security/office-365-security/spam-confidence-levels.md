@@ -20,11 +20,11 @@ description: Les administrateurs peuvent en savoir plus sur le niveau de confian
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3d45de527400088a180f5de8f8a836f5e4596395
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164644"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Niveau de confiance du courrier indésirable (SCL) dans EOP
 
@@ -53,7 +53,7 @@ Vous remarquerez que les SCL 2, 3, 4, 7 et 8 ne sont pas utilisés par le filtra
 
 Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour marquer le SCL sur les messages. Si vous utilisez une règle de flux de messagerie pour définir le SCL, les valeurs 5 ou 6 déclenchent l’action de filtrage du courrier indésirable **et** les valeurs 7, 8 ou 9 déclenchent l’action de filtrage du courrier indésirable pour le courrier indésirable à niveau de confiance **élevé.** Pour plus d’informations, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL) dans les messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
-Comme le SCL, le niveau de réclamation en bloc (BCL) identifie les messages électroniques en masse (également _appelés messages gris)._ Un niveau BCL supérieur indique qu’un courrier en nombre est susceptible de générer des plaintes (et par conséquent plus susceptible d’être du courrier indésirable). Vous configurez le seuil BCL dans les stratégies anti-courrier indésirable. Pour plus d’informations, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md), [Bulk complaint level (BCL) in EOP)](bulk-complaint-level-values.md)et [What’s the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+Comme pour le SCL, le niveau de réclamation en bloc (BCL) identifie les messages électroniques en masse (également appelés _messages gris)._ Un niveau BCL supérieur indique qu’un courrier en nombre est susceptible de générer des plaintes (et par conséquent plus susceptible d’être du courrier indésirable). Vous configurez le seuil BCL dans les stratégies anti-courrier indésirable. Pour plus d’informations, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md), [Bulk complaint level (BCL) in EOP)](bulk-complaint-level-values.md)et [What’s the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 ****
 

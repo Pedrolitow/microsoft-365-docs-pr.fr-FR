@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 687b125b0b48a6f2adbaaaff9019c7202e1b2228b043160e2d13a6d91a3eeb14
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15ab851cfe59d92663fc484b5bb0364c25af4f30
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164857"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Affecter une valeur d’appareil - Gestion des menaces et des vulnérabilités
 
@@ -32,7 +32,7 @@ ms.locfileid: "53894054"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -76,7 +76,7 @@ Le score d’exposition est une moyenne pondérée sur tous les appareils. Si vo
 - Les appareils à valeur élevée ont un poids de NumberOfAssets / 10.
     - Si vous avez 100 appareils, chaque appareil à valeur élevée aura un poids de 10 (100/10)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Score d’exposition](tvm-exposure-score.md)

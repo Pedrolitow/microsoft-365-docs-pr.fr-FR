@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569968"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164892"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de fuseau horaire
 
@@ -59,7 +59,7 @@ Vous pouvez choisir que Microsoft Defender pour le point de terminaison utilise 
 
 Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour Endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
 
-Choisir d’utiliser l’heure locale peut être utile si les analystes se trouvent dans un emplacement unique. Dans ce cas, il peut être plus facile de mettre en corrélation les événements avec l’heure locale, par exemple, lorsqu’un utilisateur local clique sur un lien de courrier suspect.
+Choisir d’utiliser l’heure locale peut être utile si les analystes se trouvent dans un emplacement unique. Dans ce cas, il peut être plus facile de corréler les événements à l’heure locale, par exemple, lorsqu’un utilisateur local clique sur un lien de courrier suspect.
 
 ### <a name="set-the-time-zone"></a>Définir le fuseau horaire
 
@@ -88,7 +88,7 @@ Il existe des problèmes connus avec les formats d’heure et de date. Si vous c
 Les formats de date et d’heure suivants sont pris en charge :
 
 - Format de date MM/j j/aaie
-- Date format jd/MM/aaa
+- Date format jd/MM/a
 - Format d’heure hh:mm:ss (format 12 heures)
 
 Les formats de date et d’heure suivants ne sont actuellement pas pris en charge :
@@ -96,7 +96,7 @@ Les formats de date et d’heure suivants ne sont actuellement pas pris en charg
 - Format de date aay-MM-j j j j
 - Date format dd-MMM-yy
 - Format de date j/MM/aa
-- Format de date MM/j j/j/aa
+- Format de date MM/j/j/aa
 - Format de date avec yy. Affiche uniquement yyyy.
 - Format d’heure HH:mm:ss (format 24 heures)
 

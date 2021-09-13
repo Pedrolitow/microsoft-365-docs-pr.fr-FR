@@ -18,17 +18,17 @@ f1.keywords:
 - NOCSH
 description: Explique pourquoi l’optimisation du réseau est importante pour les services SaaS, l’objectif de Microsoft 365 réseau et comment SaaS nécessite une mise en réseau différente des autres charges de travail.
 ms.openlocfilehash: c5794f9312ba098d27beb65bfbb272701ac3927f
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683955"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165289"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 vue d’ensemble de la connectivité réseau
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Microsoft 365 est un cloud SaaS (Software-as-a-Service) distribué qui fournit des scénarios de productivité et de collaboration par le biais d’un ensemble variés de micro-services et d’applications. Les composants clients de Microsoft 365 tels que Outlook, Word et PowerPoint s’exécutent sur les ordinateurs des utilisateurs et se connectent à d’autres composants de Microsoft 365 exécutés dans des centres de données Microsoft. Le facteur le plus significatif qui détermine la qualité de l’expérience de l’utilisateur final Microsoft 365 est la fiabilité du réseau et une faible latence entre les clients Microsoft 365 et les Microsoft 365 frontaux du service.
+Microsoft 365 est un cloud SaaS (Software-as-a-Service) distribué qui fournit des scénarios de productivité et de collaboration par le biais d’un ensemble variés de micro-services et d’applications. Les composants clients de Microsoft 365 tels que Outlook, Word et PowerPoint s’exécutent sur des ordinateurs utilisateur et se connectent à d’autres composants de Microsoft 365 qui s’exécutent dans les centres de données Microsoft. Le facteur le plus significatif qui détermine la qualité de l’expérience de l’utilisateur final Microsoft 365 est la fiabilité du réseau et une faible latence entre les clients Microsoft 365 et les Microsoft 365 frontaux du service.
 
 Dans cet article, vous allez découvrir les objectifs de la mise en réseau Microsoft 365 et pourquoi la mise en réseau Microsoft 365 nécessite une approche d’optimisation différente de celle du trafic Internet générique.
 
@@ -68,17 +68,17 @@ Microsoft 365 aide à répondre aux besoins de votre organisation en matière de
 
 ## <a name="why-is-microsoft-365-networking-different"></a>Pourquoi la mise Microsoft 365 réseau est-elle différente ?
 
-Microsoft 365 est conçu pour optimiser les performances à l’aide de la sécurité des points de terminaison et des connexions réseau chiffrées, ce qui réduit le besoin d’application de la sécurité de périmètre. Microsoft 365 centres de données sont situés dans le monde entier et le service est conçu pour utiliser différentes méthodes pour connecter les clients aux points de terminaison de service les plus disponibles. Étant donné que les données utilisateur et le traitement sont distribués entre de nombreux centres de données Microsoft, il n’existe pas de point de terminaison réseau unique auquel les ordinateurs clients peuvent se connecter. En fait, les données et les services de votre client Microsoft 365 sont optimisés dynamiquement par le réseau global De Microsoft pour s’adapter aux emplacements géographiques à partir des lesquels ils sont accessibles par les utilisateurs finaux.
+Microsoft 365 est conçu pour des performances optimales à l’aide de la sécurité des points de terminaison et des connexions réseau chiffrées, ce qui réduit le besoin d’application de la sécurité du périmètre. Microsoft 365 centres de données sont situés dans le monde entier et le service est conçu pour utiliser différentes méthodes pour connecter les clients aux points de terminaison de service les plus disponibles. Étant donné que les données utilisateur et le traitement sont distribués entre de nombreux centres de données Microsoft, il n’existe pas de point de terminaison réseau unique auquel les ordinateurs clients peuvent se connecter. En fait, les données et les services de votre client Microsoft 365 sont optimisés dynamiquement par le réseau global Microsoft pour s’adapter aux emplacements géographiques à partir des lesquels ils sont accessibles par les utilisateurs finaux.
 
 Certains problèmes de performances courants sont créés lorsque Microsoft 365 trafic est soumis à l’inspection des paquets et à la sortie centralisée :
 
-- Une latence élevée peut entraîner des performances médiocres des flux vidéo et audio, ainsi qu’une réponse lente à la récupération des données, aux recherches, à la collaboration en temps réel, aux informations de libre/occupé du calendrier, au contenu du produit et à d’autres services
+- Une latence élevée peut entraîner des performances médiocres des flux vidéo et audio, et une réponse lente à la récupération des données, aux recherches, à la collaboration en temps réel, aux informations de libre/occupé du calendrier, au contenu du produit et à d’autres services
 - La sortie de connexions à partir d’un emplacement central va à l’inverse des capacités de routage dynamique du réseau global Microsoft 365, ce qui ajoute une latence et une durée d’aller-retour
 - Le déchiffrement du protocole SSL Microsoft 365 le trafic réseau et le re-chiffrement peut entraîner des erreurs de protocole et présente un risque de sécurité
 
 Le raccourcissement du chemin d’accès réseau vers les points d’entrée Microsoft 365 en permettant au trafic client de s’egresser aussi près que possible de son emplacement géographique peut améliorer les performances de connectivité et l’expérience de l’utilisateur final dans Microsoft 365. Elle peut également aider à réduire l’impact des modifications futures apportées à l’architecture réseau sur Microsoft 365 performances et la fiabilité. Le modèle de connectivité optimal consiste à toujours fournir une sortie réseau à l’emplacement de l’utilisateur, que ce soit sur le réseau d’entreprise ou sur des emplacements distants tels que la maison, les restaurants, les café et les aéroports. Le trafic Internet générique et le trafic réseau d’entreprise wan sont acheminés séparément et n’utilisent pas le modèle de sortie directe locale. Ce modèle local de sortie directe est représenté dans le diagramme ci-dessous.
 
-![Architecture réseau de sortie locale.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Architecture du réseau de sortie local.](../media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 L’architecture de sortie locale présente les avantages suivants pour le trafic de réseau Microsoft 365 par rapport au modèle traditionnel :
   
@@ -95,7 +95,7 @@ Pour plus d’informations sur la compréhension et l’application Microsoft 36
 
 L’optimisation Microsoft 365 performances réseau revient vraiment à supprimer les obstacles inutiles. En traitant les connexions Microsoft 365 comme du trafic approuvé, vous pouvez empêcher l’introduction de la latence par l’inspection des paquets et la concurrence pour la bande passante proxy. Autoriser les connexions locales entre les ordinateurs clients et Office 365 points de terminaison permet d’router dynamiquement le trafic via le réseau global Microsoft.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Principes de connectivité réseau Microsoft 365](microsoft-365-network-connectivity-principles.md)
 

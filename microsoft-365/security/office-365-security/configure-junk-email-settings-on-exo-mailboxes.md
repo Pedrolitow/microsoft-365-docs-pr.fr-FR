@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans Exchange Online boîtes aux lettres. Bon nombre de ces paramètres sont disponibles pour les utilisateurs Outlook ou Outlook sur le web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ca7de6cda731fbcbdb43af705527d1f66fe1d601a6f8178b100a71213aca2ab
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7c9a787c02273eeaf9e3db5174607f1b65a3c65a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56853771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164705"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -56,7 +56,7 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver
 
 - Vous pouvez uniquement utiliser Exchange Online PowerShell pour suivre les procédures de cet article. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Destinataires de messagerie (attribué par défaut aux groupes de **rôles** Gestion de l’organisation, Gestion des destinataires et Destinataires de messagerie **personnalisés)** ou **Options** utilisateur (attribué aux groupes de rôles Gestion de l’organisation et Help **Desk** par défaut).  Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, voir Modifier les groupes de [rôles dans Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Notez que les utilisateurs ayant des autorisations par défaut peuvent suivre ces procédures sur leur propre boîte aux lettres, à condition qu’ils ont accès [à Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
+- Des autorisations doivent vous être attribuées Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Destinataires de messagerie (attribué par défaut aux groupes de  **rôles** Gestion de l’organisation, Gestion des destinataires et Destinataires de messagerie **personnalisés)** ou Options utilisateur (attribué aux groupes de rôles Gestion de l’organisation et Help **Desk** par défaut).   Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, voir Modifier les groupes de [rôles dans Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Notez que les utilisateurs ayant des autorisations par défaut peuvent suivre ces procédures sur leur propre boîte aux lettres, à condition qu’ils ont accès [à Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
 
 - Dans les environnements hybrides où Exchange Online Protection protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable Exchange Online Protection de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer Exchange Online Protection (EOP) pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
@@ -119,7 +119,7 @@ La collection de listes fiables d'une boîte aux lettres comprend la liste des e
 
 <sup>\*</sup>**Remarques**:
 
-- Dans **Exchange Online,** les entrées de domaine dans la liste des expéditeurs Coffre ou le paramètre _TrustedSendersAndDomains_ ne sont pas reconnues. Utilisez donc uniquement des adresses de messagerie. Dans EOP autonome avec synchronisation d’annuaires, les entrées de domaine ne sont pas synchronisées par défaut, mais vous pouvez activer la synchronisation pour les domaines. Pour plus d’informations, [voir KB3019657.](https://support.microsoft.com/help/3019657)
+- Dans **Exchange Online,** les entrées de domaine dans la liste des expéditeurs Coffre ou le paramètre _TrustedSendersAndDomains_ ne sont pas reconnues. Utilisez donc uniquement des adresses de messagerie. Dans EOP autonome avec synchronisation d’annuaires, les entrées de domaine ne sont pas synchronisées par défaut, mais vous pouvez activer la synchronisation pour les domaines. Pour plus d’informations, [voir KB 3019657.](https://support.microsoft.com/help/3019657)
 
 - Vous ne pouvez pas modifier directement la liste des destinataires Coffre à l’aide de la cmdlet **Set-MailboxJunkEmailConfiguration** (le paramètre _TrustedRecipientsAndDomains_ ne fonctionne pas). Vous devez modifier la liste des expéditeurs approuvés qui est ensuite synchronisée avec la liste des destinataires approuvés.
 

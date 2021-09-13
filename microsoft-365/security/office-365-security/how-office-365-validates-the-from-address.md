@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les types d’adress
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0451f89501a9247b80d5696a085728a5edc66af882a57788063e702733c9cd97
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5a02313bf8c36fe0be91340e421c69a8dc5c0842
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56800855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164673"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse De pour empêcher le hameçonnage
 
@@ -37,7 +37,7 @@ ms.locfileid: "56800855"
 
 Les attaques par hameçonnage sont une menace constante pour toute organisation de messagerie. En plus d’utiliser des [adresses](anti-spoofing-protection.md)e-mail d’expéditeur falsifiées (falsifiées), les attaquants utilisent souvent des valeurs dans l’adresse De qui ne respectent pas les normes Internet. Pour éviter ce type d’hameçonnage, Exchange Online Protection (EOP) et Outlook.com nécessitent désormais que les messages entrants incluent une adresse De conforme RFC, comme décrit dans cet article. Cette application a été activée en novembre 2017.
 
-**Remarques** :
+**Remarques** :
 
 - Si vous recevez régulièrement des messages électroniques provenant d’organisations dont les adresses ont été mal renseignées, comme décrit dans cet article, encouragez ces organisations à mettre à jour leurs serveurs de messagerie pour se conformer aux normes de sécurité modernes.
 
@@ -57,8 +57,8 @@ L’adresse De est définie en détail sur plusieurs RFC (par exemple, les secti
 
 - **Nom complet**: expression facultative qui décrit le propriétaire de l’adresse e-mail.
 
-  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme illustré. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
-  - Si l’adresse De comprend un nom d’affichage, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
+  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme indiqué. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
+  - Si l’adresse De comprend un nom complet, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
   - Microsoft recommande vivement d’insérer un espace entre le nom complet et l’adresse e-mail.
 
 - **EmailAddress**: une adresse de messagerie utilise le format `local-part@domain` :
@@ -118,7 +118,7 @@ Vous ne pouvez pas utiliser la valeur pour `From: <>` supprimer les réponses au
 
 - L’enregistrement MX null pour ce domaine se compose d’un point unique.
 
-Par exemple :
+Par exemple :
 
 ```text
 noreply.contoso.com IN MX .
@@ -136,4 +136,4 @@ Vous ne pouvez pas remplacer les exigences d’adresse de provenance pour les me
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres méthodes de prévention et de protection contre les cybercriminels dans Microsoft 365
 
-Pour plus d’informations sur la façon dont vous pouvez renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, voir les [10](../../admin/security-and-compliance/secure-your-business-data.md)principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise.
+Pour plus d’informations sur la façon de renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, voir les [10](../../admin/security-and-compliance/secure-your-business-data.md)principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise.

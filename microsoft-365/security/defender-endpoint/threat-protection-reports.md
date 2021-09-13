@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 327217a9682e8a50c41c2696292d1a453fbd8cf9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164900"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison
 
@@ -44,12 +44,12 @@ Le tableau de bord est structuré en deux sections :
 Section | Description 
 :---|:---
 1 | Tendances des alertes
-2  | Résumé des alertes
+2 | Résumé des alertes
 
 ## <a name="alert-trends"></a>Tendances des alertes
 Par défaut, les tendances des alertes affichent les informations d’alerte de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
 
-- 30 jours
+- 30 jours
 - 3 mois
 - 6 mois
 - Personnalisé

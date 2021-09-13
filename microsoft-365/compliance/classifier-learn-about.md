@@ -14,16 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu pour le labling ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 6b54ab2f905d77ae59ba94e15768c7664007baaa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ea4be5c5e429e3305373229020bfb5444912b365
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164092"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -33,7 +34,7 @@ La classification et l’étiquetage du contenu afin qu’il puisse être proté
 
 Cette méthode nécessite un juge humain et une action. Un administrateur peut utiliser les étiquettes et les types d’informations sensibles pré-existants ou créer les leurs, puis les publier. Les utilisateurs et les administrateurs les appliquent au contenu à mesure qu’ils le rencontrent. Vous pouvez ensuite protéger le contenu et gérer sa disposition.
 
-## <a name="automated-pattern-matching"></a>Correspondance de modèle automatisée
+## <a name="automated-pattern-matching"></a>Correspondance automatique des modèles
 
 Cette catégorie de mécanismes de classification inclut la recherche de contenu par :
 
@@ -46,7 +47,7 @@ Les étiquettes de sensibilité et de rétention peuvent ensuite être appliqué
 
 ## <a name="classifiers"></a>Classifieurs
 
-Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèle. Cette méthode de classification consiste davantage à former un classifieur à identifier un élément en fonction de ce qu’il est, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par lui donner des exemples qui sont certainement dans la catégorie. Une fois qu’il les traite, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à l’entrée d’un élément donné dans la catégorie que vous construisez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
+Cette méthode de classification est particulièrement bien adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèle. Cette méthode de classification consiste davantage à former un classifieur à identifier un élément en fonction de ce qu’il est, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples de contenu que vous souhaitez classer. Commencez par lui donner des exemples qui sont certainement dans la catégorie. Une fois qu’il les traite, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à l’entrée d’un élément donné dans la catégorie que vous construisez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
 
 Lorsque vous publiez le classifieur, il trie les éléments dans des emplacements tels que SharePoint Online, Exchange et OneDrive, et classifie le contenu. Après avoir publié le classificateur, vous pouvez continuer à l’entraîner à l’aide d’un processus de commentaires semblable au processus de formation initial.
 
@@ -70,11 +71,11 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 > [!CAUTION]
 > Nous déprécions  le classificateur de langage choquant pré-entraîné, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et si vous l’utilisez actuellement, vous devez en déplacer vos processus d’entreprise. Nous vous recommandons plutôt **d’utiliser** les classifieurs pré-formés contre les menaces, les blasphémités et le harcèlement.  
 
-- **Cv :** détecte les éléments qui sont des comptes textuels de qualifications personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
+- Cv : détecte les éléments qui sont des comptes textuels des **qualifications** personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub
     - ActionScript
     - C
-    - C#
+    - C #
     - C++
     - Îlesjure
     - CoffeeScript
@@ -105,7 +106,7 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 - **Discrimination**: détecte un langage explicite de discrimination et est particulièrement sensible au langage de discrimination à l’encontre des communautés américaine/noire d’Afrique par rapport aux autres communautés.
 
 > [!IMPORTANT]
-> Le classifieur ne peut être formé qu’en tant que prévisualisation publique pour les clients dont Microsoft 365 clients sont hébergements dans des centres de données en Amérique du Nord. Pour voir où votre client Microsoft 365 est Administration Microsoft 365, ouvrez le centre Administration Microsoft 365 et accédez à l’emplacement des données de profil d’organisation Paramètres  >  **l’organisation.**  >    >   
+> Le classifieur ne peut être formé qu’en tant que prévisualisation publique pour les clients dont Microsoft 365 clients sont hébergements dans des centres de données en Amérique du Nord. Pour voir où votre client Microsoft 365 est homed, ouvrez le Centre d'administration Microsoft 365 et accédez à Paramètres Emplacement des données de l’onglet Profil d’organisation des  >  **paramètres** de  >  [](https://go.microsoft.com/fwlink/p/?linkid=2067339)  >  **l’organisation.** 
 
 Ceux-ci apparaissent dans **la Centre de conformité Microsoft 365** classification des données  >    >  **avec** l’état de `Ready to use` .
 

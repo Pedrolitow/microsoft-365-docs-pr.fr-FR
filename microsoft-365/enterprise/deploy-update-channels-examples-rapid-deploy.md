@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Découvrir comment une organisation qui déploie la dernière version utilise des canaux pour les applications Windows 10 et Microsoft 365.
 ms.openlocfilehash: 025f6976fd578af4bf0c9a0c268f046f72ef6901
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561085"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165420"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Exemple de déploiement à grande échelle des dernières versions
 

@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 325401cfd25f4f4a63d23f9f42df07d01f813b8aa091bbfe0962ffdf1357a30e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3077ee6e346c3162a333572a2f40278ce964890c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53866786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164244"
 ---
 # <a name="payment-information-for-saint-kitts-and-nevis"></a>Informations de paiement pour Saint-Kitts-et-Nevis
 

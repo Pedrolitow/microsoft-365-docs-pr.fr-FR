@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Utilisez l’outil d’importation pour ajouter rapidement plusieurs dépositaires et leurs sources de données associées à un cas Advanced eDiscovery.
 ms.openlocfilehash: ccb180766df47de39e3deb61faab60396c74bb9e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164148"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importer des dépositaires dans un Advanced eDiscovery de données
 
@@ -59,7 +59,7 @@ Après avoir téléchargé le modèle de dépositaire CSV, vous pouvez ajouter d
 |||
 
 > [!NOTE]
-> <sup>1</sup> Vous pouvez placer un maximum de 1 000 boîtes aux lettres et 100 sites en conservation à l’aide du processus d’importation du dépositaire et du fichier CSV. Vous pouvez utiliser ce processus pour ajouter plus de 1 000 dépositaires à un cas, mais les limites de conservation s’appliquent toujours. Pour plus d’informations sur les limites de la [Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
+> <sup>1</sup> Vous pouvez placer un maximum de 1 000 boîtes aux lettres et 100 sites en conservation à l’aide du processus d’importation du dépositaire et du fichier CSV. Vous pouvez utiliser ce processus pour ajouter plus de 1 000 dépositaires à un cas, mais les limites de conservation s’appliquent toujours. Pour plus d’informations sur les limites de la Advanced eDiscovery [.](limits-ediscovery20.md#hold-limits)
 
 Voici un exemple de fichier CSV avec des informations de dépositaire :<br/><br/>
 
@@ -97,7 +97,7 @@ Pour ajouter des sources de données validées pour un dépositaire :
 
 3. Cliquez **sur Modifier** en haut de la page volante pour supprimer des sources de données non valides ou en ajouter de nouvelles.
 
-4. Après avoir supprimé des sources de données nonvalidées ou en  avoir ajouté une nouvelle, la valeur **Active** s’affiche dans la colonne État du dépositaire sous l’onglet **Sources** de données. Pour ajouter des sources qui apparaissaient précédemment comme non valides, suivez les étapes de correction ci-dessous pour les ajouter manuellement à un dépositaire.
+4. Une fois que vous avez supprimé des sources de données nonvalidées ou ajouté une nouvelle source de données, la valeur **Active** s’affiche dans la colonne État du dépositaire sous l’onglet **Sources de** données.  Pour ajouter des sources qui apparaissaient précédemment comme non valides, suivez les étapes de correction ci-dessous pour les ajouter manuellement à un dépositaire.
 
 ### <a name="remediating-invalid-data-sources"></a>Correction des sources de données non valides
 
@@ -107,6 +107,6 @@ Pour ajouter et associer manuellement une source de données qui n’était pas 
 
 2. Cliquez **sur Modifier** en haut de la page volante pour associer des boîtes aux lettres, des sites, des Teams ou des groupes Yammer au dépositaire. Pour ce faire, cliquez sur **Modifier** à côté du type d’emplacement de données approprié.
 
-3. Cliquez **sur Suivant** pour afficher la page **Paramètres de** la mise en attente et configurer le paramètre de mise en attente pour les sources de données que vous avez ajoutées.
+3. Cliquez **sur Suivant** pour afficher la page **Paramètres** de la mise en attente et configurer le paramètre de mise en attente pour les sources de données que vous avez ajoutées.
 
 4. Cliquez **sur Suivant** pour afficher la page Des dépositaires de **révision,** puis cliquez sur **Envoyer** pour enregistrer vos modifications.

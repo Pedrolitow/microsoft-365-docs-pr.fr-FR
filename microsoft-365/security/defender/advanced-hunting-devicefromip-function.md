@@ -1,5 +1,5 @@
 ---
-title: Fonction DeviceFromIP() dans le recherche avancée pour Microsoft 365 Defender
+title: Fonction DeviceFromIP() dans le recherche avancée d’Microsoft 365 Defender
 description: Découvrez comment utiliser la fonction DeviceFromIP() pour obtenir les appareils affectés à une adresse IP spécifique
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, device, devicefromIP, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -21,18 +21,18 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164772"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 
@@ -43,10 +43,10 @@ Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapi
 
 Cette fonction renvoie un tableau avec les colonnes suivantes :
 
-| Column | Type de données | Description |
+| Colonne | Type de données | Description |
 |------------|-------------|-------------|
 | `IP` | string | Adresse IP  |
-| `DeviceId` | string | Identificateur unique de l’appareil dans le service |
+| `DeviceId` | chaîne | Identificateur unique de l’appareil dans le service |
 
 
 ## <a name="syntax"></a>Syntaxe
@@ -74,7 +74,7 @@ DeviceNetworkEvents
 | invoke DeviceFromIP()
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

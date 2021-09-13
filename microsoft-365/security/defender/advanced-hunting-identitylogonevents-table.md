@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7f5c40030f019f309b143db9271e62b8ba8172c83d10d479b2df60277394eca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3cd0c0f371c73a515704791e829be7266d400580
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799477"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163645"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -48,33 +48,33 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
-| `Application` | string | Application qui a effectué l’action enregistrée |
-| `LogonType` | string | Type de session d’ouverture de session, en particulier :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Connexions RDP (Remote Interactive)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Services, de l’Assistance à distance ou d’autres clients RDP<br><br> - **Réseau** : session initiée lorsque l’ordinateur est accessible à l’aide de PsExec ou lorsque les ressources partagées sur l’ordinateur, telles que les imprimantes et les dossiers partagés, sont accessibles<br><br> - **Batch** : session initiée par des tâches programmées<br><br> - **Service** : session initiée par les services au démarrage |
-| `Protocol` | string | Protocole réseau utilisé |
-| `FailureReason` | string | Informations expliquant pourquoi l’action enregistrée a échoué |
-| `AccountName` | string | Nom d’utilisateur du compte |
-| `AccountDomain` | string | Domaine du compte |
-| `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
-| `AccountSid` | string | Identificateur de sécurité (SID) du compte |
-| `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
-| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de l’appareil |
-| `DeviceType` | string | Type d’appareil |
+| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `Application` | chaîne | Application qui a effectué l’action enregistrée |
+| `LogonType` | chaîne | Type de session d’ouverture de session, en particulier :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Connexions RDP (Remote Interactive)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Services, de l’Assistance à distance ou d’autres clients RDP<br><br> - **Réseau** : session initiée lorsque l’ordinateur est accessible à l’aide de PsExec ou lorsque les ressources partagées sur l’ordinateur, telles que les imprimantes et les dossiers partagés, sont accessibles<br><br> - **Batch** : session initiée par des tâches programmées<br><br> - **Service** : session initiée par les services au démarrage |
+| `Protocol` | chaîne | Protocole réseau utilisé |
+| `FailureReason` | chaîne | Informations expliquant pourquoi l’action enregistrée a échoué |
+| `AccountName` | chaîne | Nom d’utilisateur du compte |
+| `AccountDomain` | chaîne | Domaine du compte |
+| `AccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte |
+| `AccountSid` | chaîne | Identificateur de sécurité (SID) du compte |
+| `AccountObjectId` | chaîne | Identificateur unique du compte dans Azure AD |
+| `AccountDisplayName` | chaîne | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `DeviceName` | chaîne | Nom de domaine complet (FQDN) de l’appareil |
+| `DeviceType` | chaîne | Type d’appareil |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `Port` | string | Port TCP utilisé lors de la communication |
-| `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationPort` | string | Port de destination des communications réseau associées |
-| `TargetDeviceName` | string | Nom de domaine complet (FQDN) de l’appareil à qui l’action enregistrée a été appliquée |
-| `TargetAccountDisplayName` | string | Nom complet du compte à qui l’action enregistrée a été appliquée |
-| `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
-| `Isp` | string | Fournisseur de services Internet (ISP) associé à l’adresse IP du point de terminaison |
+| `Port` | chaîne | Port TCP utilisé pendant la communication |
+| `DestinationDeviceName` | chaîne | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | chaîne | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationPort` | chaîne | Port de destination des communications réseau associées |
+| `TargetDeviceName` | chaîne | Nom de domaine complet (FQDN) de l’appareil à qui l’action enregistrée a été appliquée |
+| `TargetAccountDisplayName` | chaîne | Nom complet du compte à qui l’action enregistrée a été appliquée |
+| `Location` | chaîne | Ville, pays ou autre emplacement géographique associé à l’événement |
+| `Isp` | chaîne | Fournisseur de services Internet (ISP) associé à l’adresse IP du point de terminaison |
 | `ReportId` | long | Identificateur unique de l’événement |
-| `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
+| `AdditionalFields` | chaîne | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

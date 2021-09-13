@@ -1,7 +1,7 @@
 ---
 title: Activer la reconnaissance de protocole pour Antivirus Microsoft Defender
 description: Activer la reconnaissance de protocole pour Antivirus Microsoft Defender.
-keywords: Antivirus Microsoft Defender, anti-programme malveillant, sécurité, defender, reconnaissance de protocole
+keywords: Antivirus Microsoft Defender logiciel anti-programme malveillant, sécurité, defender, reconnaissance de protocole
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 1b5e85e61ce9335e730c7b8b5bc3406c1b9d40e8be2b591434e7b06661444238
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 890303a15618a0318db0421c9c80f270583e19bf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53889065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164865"
 ---
 # <a name="turn-on-protocol-recognition"></a>Activer la reconnaissance de protocole 
 

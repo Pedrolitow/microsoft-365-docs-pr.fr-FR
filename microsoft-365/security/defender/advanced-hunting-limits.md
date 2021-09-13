@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5108e1b50b7544fcb11cef8bf573fd42cbfad2411f83e8628fecd59a895c1c55
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59163625"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Quotas de recherche avancés et paramètres d’utilisation
 
@@ -41,15 +41,15 @@ Reportez-vous au tableau suivant pour comprendre les quotas et paramètres d’u
 
 | Quota ou paramètre | Size | Cycle d’actualisation | Description |
 |--|--|--|--|
-| Plage de données | 30 jours | Chaque requête | Chaque requête peut rechercher des données depuis les 30 derniers jours. |
-| Jeu de résultats | 10 000 lignes | Chaque requête | Chaque requête peut renvoyer jusqu’à 10 000 enregistrements. |
-| Timeout | 10 minutes | Chaque requête | Chaque requête peut s’exécuter pendant 10 minutes. S’il ne se termine pas dans les 10 minutes, le service affiche une erreur.
+| Plage de données | 30 jours | Chaque requête | Chaque requête peut rechercher des données depuis les 30 derniers jours. |
+| Jeu de résultats | 10 000 lignes | Chaque requête | Chaque requête peut retourner jusqu’à 10 000 enregistrements. |
+| Délai d’expiration | 10 minutes | Chaque requête | Chaque requête peut s’exécuter pendant 10 minutes. S’il ne se termine pas dans les 10 minutes, le service affiche une erreur.
 | Ressources processeur | En fonction de la taille du client | Toutes les 15 minutes | Le [portail affiche une erreur](advanced-hunting-errors.md) chaque fois qu’une requête s’exécute et que le client a consommé plus de 10 % des ressources allouées. Les requêtes sont bloquées si le client a atteint 100 % jusqu’au terme du cycle de 15 minutes suivant. |
 
 >[!NOTE] 
 >Un ensemble distinct de quotas et de paramètres s’applique aux requêtes de recherche avancées effectuées via l’API. [En savoir plus sur les API de recherche avancée](./api-advanced-hunting.md)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Meilleures pratiques de recherche avancée](advanced-hunting-best-practices.md)
 - [Gérer les erreurs de recherche avancée](advanced-hunting-errors.md)

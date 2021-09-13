@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un téléphone iPhone ou Android, et vos fichiers de travail dans Office applications seront protégés par Microsoft 365 entreprise.
 ms.openlocfilehash: 86bc749c30d5e3dfd731193d5ef1b56f1e33e443
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164524"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les Microsoft 365 pour les utilisateurs professionnels
 
@@ -95,11 +95,11 @@ Dans l’Outlook, appuyez sur **Prise en main,** puis ajoutez votre compte de me
   
 Dans la boîte de dialogue indiquant que vous devez installer l'application Portail d'entreprise Intune, appuyez sur **Accéder au magasin**.
   
-![Appuyez sur Aller au Store pour obtenir Portail d’entreprise Intune application.](../../media/a702d712-5622-45dd-a511-b1adaee63071.png)
+![Appuyez sur Aller au Store pour obtenir Portail d'entreprise Intune application.](../../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-Dans play Store, installez Portail d’entreprise Intune.
+Dans play Store, installez Portail d'entreprise Intune.
   
-![Capture d’écran shows the install button for Portail d’entreprise Intune in Google Play Store.](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
+![Capture d’écran shows the install button for Portail d'entreprise Intune in Google Play Store.](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
 Ouvrez Outlook à nouveau, et entrez et confirmez un code confidentiel. Vous pouvez maintenant utiliser l'application Outlook.
   

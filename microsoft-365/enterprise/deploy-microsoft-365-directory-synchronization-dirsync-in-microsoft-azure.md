@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Découvrez comment déployer Azure AD Connecter sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre annuaire local et le client Azure AD.
-ms.openlocfilehash: df41c88330eb71c67505d8a75e8268ae2acb9b01
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: f3e296c7401cfc20a2f7165888825adf58528c68
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575287"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165433"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure
 
@@ -175,10 +175,9 @@ Cette illustration montre le serveur de synchronisation d’annuaires avec Azure
 
 Azure AD Connecter ajoute des comptes à votre abonnement Microsoft 365 à partir des services AD DS locaux, mais pour que les utilisateurs se connectent à Microsoft 365 et utilisent ses services, les comptes doivent être configurés avec un emplacement et des licences. Utilisez ces étapes pour ajouter l’emplacement et activer les licences pour les comptes d’utilisateur appropriés :
   
-1. Connectez-vous au [Centre d’administration Microsoft 365,](https://admin.microsoft.com)puis cliquez sur **Administrateur.**
+1. Connectez-vous au [Centre d'administration Microsoft 365,](https://admin.microsoft.com)puis cliquez sur **Administrateur.**
     
-2. Dans la navigation de gauche, cliquez sur **Utilisateurs > Utilisateurs actifs**.
-    
+2. Dans le navigation de gauche, cliquez sur **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 3. Dans la liste des comptes d’utilisateur, sélectionnez la case à cocher en regard de l’utilisateur que vous souhaitez activer.
     
 4. Sur la page de l'utilisateur, cliquez sur **Modifier** pour **Licences de produits**.

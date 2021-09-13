@@ -23,11 +23,11 @@ description: Les administrateurs peuvent en savoir plus sur la mise en quarantai
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c68351b690ecab2f60990695dc0e550b5ff0aff7
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164649"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>Messages électroniques mis en quarantaine dans EOP
 
@@ -38,11 +38,11 @@ ms.locfileid: "58349943"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, la mise en quarantaine est disponible pour contenir les messages potentiellement dangereux ou indésirables.
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, la mise en quarantaine est disponible pour contenir les messages potentiellement dangereux ou indésirables.
 
 Les stratégies anti-programme malveillant met automatiquement en quarantaine un message *si* des pièces jointes contiennent des programmes malveillants. Pour plus d’informations, voir [Configurer des stratégies anti-programme malveillant dans EOP.](configure-anti-malware-policies.md)
 
-Par défaut, la protection anti-courrier indésirable met en quarantaine les messages de hameçonnage et de hameçonnage à haut niveau de confiance, et envoie le courrier indésirable, le courrier indésirable à niveau de confiance élevé et les messages électroniques en nombre dans le dossier Courrier indésirable de l’utilisateur. Toutefois, vous pouvez également créer et personnaliser des stratégies anti-courrier indésirable pour mettre en quarantaine le courrier indésirable, le courrier indésirable à niveau de confiance élevé et les messages électroniques en nombre. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+Par défaut, la protection anti-courrier indésirable met en quarantaine les messages de hameçonnage et de hameçonnage à haut niveau de confiance, et envoie le courrier indésirable, le courrier indésirable à niveau de confiance élevé et les messages électroniques en masse dans le dossier Courrier indésirable de l’utilisateur. Toutefois, vous pouvez également créer et personnaliser des stratégies anti-courrier indésirable pour mettre en quarantaine le courrier indésirable, le courrier indésirable à niveau de confiance élevé et les messages électroniques en nombre. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 Les utilisateurs et les administrateurs peuvent travailler avec les messages mis en quarantaine :
 
@@ -54,4 +54,4 @@ Les utilisateurs et les administrateurs peuvent travailler avec les messages mis
 
 - Les administrateurs et les utilisateurs peuvent signaler les faux positifs à Microsoft en quarantaine.
 
-Pour plus d’informations sur la mise en quarantaine, consultez la [faq sur la mise en quarantaine.](quarantine-faq.yml)
+Pour plus d’informations sur la mise en quarantaine, consultez [le FAQ sur la mise en quarantaine.](quarantine-faq.yml)

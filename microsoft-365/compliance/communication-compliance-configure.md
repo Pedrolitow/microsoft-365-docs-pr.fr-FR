@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e46141ea879013ef7f21b1e29c1ac98b2bcef809e3cb9c87bf7ec5941aa7a5e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53814698"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164025"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -60,7 +60,7 @@ Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essa
 > [!IMPORTANT]
 > Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Les rôles attribués au cours de cette étape sont requis pour que les fonctionnalités de conformité des communications soient accessibles. Après avoir configuré vos groupes de rôles, l’application des autorisations de groupe de rôles aux utilisateurs affectés au sein de votre organisation peut prendre jusqu’à 30 minutes.
 
-Il existe cinq groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité** des communications disponible en tant qu’option de menu dans  Centre de conformité Microsoft 365 et  pour poursuivre ces étapes de configuration, vous devez être affecté aux groupes de rôles Conformité des communications ou Administrateur de la conformité des communications. Pour accéder aux fonctionnalités de conformité des communications et les gérer après la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de conformité des communications.
+Il existe cinq groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des** communications disponible en tant qu’option de menu dans  Centre de conformité Microsoft 365  et pour poursuivre ces étapes de configuration, vous devez être affecté aux groupes de rôles Conformité des communications ou Administrateur de la conformité des communications. Pour accéder aux fonctionnalités de conformité des communications et les gérer après la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de conformité des communications.
 
 Selon la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devez affecter des utilisateurs à des groupes de rôles spécifiques. Vous avez la possibilité d’affecter des utilisateurs ayant différentes responsabilités de conformité à des groupes de rôles spécifiques pour gérer différents domaines des fonctionnalités de conformité des communications. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et visionneuses désignés au groupe de rôles *Conformité* des communications. Utilisez un ou plusieurs groupes de rôles pour mieux vous adapter à vos exigences de gestion de la conformité.
 
@@ -185,7 +185,7 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 
 1. Connectez-vous <https://compliance.microsoft.com> à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
-2. Dans la Centre de conformité Microsoft 365, sélectionnez **Conformité des communications.**
+2. Dans la Centre de conformité Microsoft 365, sélectionnez **Conformité des communications.**
 
 3. Cliquez sur l'onglet **Stratégies**.
 
@@ -222,7 +222,7 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 
     - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter un langage inapproprié et des images envoyées ou reçues dans le corps des messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace,* blasphémité, harcèlement *ciblé,* *images* pour adultes, *images racy* et *images de requête.*
 
-    - Activez la reconnaissance optique de [caractères (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie. Pour les stratégies personnalisées, un ou plusieurs paramètres conditionnels associés à du texte, des mots clés, des classifieurs ou des types d’informations sensibles doivent être configurés dans la stratégie pour permettre la sélection de l’analyse optique de la reconnaissance de caractères.
+    - Activez [la reconnaissance optique de caractères (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie. Pour les stratégies personnalisées, un ou plusieurs paramètres conditionnels associés à du texte, des mots clés, des classifieurs ou des types d’informations sensibles doivent être configurés dans la stratégie pour permettre la sélection de l’analyse optique de la reconnaissance de caractères.
 
     - Définissez le Pourcentage de communications à réviser.
 
@@ -240,7 +240,7 @@ Vous pouvez également choisir d’activer l’anonymisation pour les noms d’u
 
 1. Connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans Microsoft 365 organisation.
 
-2. Dans la Centre de conformité Microsoft 365, allez à **Conformité des communications.**
+2. Dans la Centre de conformité Microsoft 365, allez à **Conformité des communications.**
 
 3. Pour configurer l’anonymisation des noms d’utilisateur, sélectionnez **l’onglet** Confidentialité.
 
@@ -277,7 +277,7 @@ Suivez ces étapes pour tester votre stratégie de conformité des communication
 
 4. Corriger l’alerte à l’aide des contrôles de correction et vérifier que l’alerte est correctement résolue.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir effectué ces étapes pour créer votre première stratégie de conformité des communications, vous commencerez à recevoir des alertes d’indicateurs d’activité après 24 à 48 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 5 de cet article.
 

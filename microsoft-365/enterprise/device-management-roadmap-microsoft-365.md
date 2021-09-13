@@ -16,11 +16,11 @@ audience: ITPro
 ms.custom: microsoft-intune
 description: Feuille de route de la mise en place de la gestion des Microsoft 365.
 ms.openlocfilehash: 2155d33aa57da5bb80dbc83623ac87a94a300f28
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165412"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Gestion des appareils mobiles pour Microsoft 365
 
@@ -33,7 +33,7 @@ Deux options s’offrent à vous pour la gestion des appareils :
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Vous pouvez utiliser Microsoft Intune pour gérer l’accès à votre organisation à l’aide de la gestion des appareils mobiles ou de la gestion des applications mobiles. La gestion des appareils mobiles est le cas lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré . par conséquent, il peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
+Vous pouvez utiliser Microsoft Intune pour gérer l’accès à votre organisation à l’aide de la gestion des appareils mobiles ou de la gestion des applications mobiles. La gestion des appareils mobiles se fait lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré . par conséquent, il peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
 
 Les utilisateurs ayant leurs propres appareils personnels peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune et les stratégies de votre organisation. Toutefois, vous devez toujours protéger les ressources et les données de votre organisation. Dans ce scénario, vous pouvez protéger vos applications à l’aide de la gestion des applications mobiles. Par exemple, vous pouvez utiliser une stratégie de gestion des applications mobiles qui oblige un utilisateur à entrer un code confidentiel lors de l’accès à SharePoint Online sur l’appareil.
 

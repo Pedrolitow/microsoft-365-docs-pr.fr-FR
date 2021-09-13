@@ -18,12 +18,12 @@ ms.custom:
 description: L’administrateur peut apprendre à configurer la prise en charge du courrier entrant anonyme à partir de sources IPv6 Exchange Online et Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2db948447677a4925ac4c788c888e78d9a9715c8e266c140e9e25a4a0a7d1d5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56799418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164625"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge du courrier entrant anonyme sur IPv6 dans Microsoft 365
 
@@ -54,7 +54,7 @@ Une fois que la prise en charge des messages IPv6 entrants anonymes est activée
 
   > Service 450 4.7.26 indisponible, le message envoyé sur IPv6 [2a01:111:f200:2004::240] doit réussir la validation SPF ou DKIM.
 
-- Si vous essayez de recevoir des messages IPv6 anonymes avant de vous y rendre, le message sera rejeté avec l’erreur suivante :
+- Si vous essayez de recevoir des messages IPv6 anonymes avant d’avoir choisi de le faire, le message sera rejeté avec l’erreur suivante :
 
   > Service 550 5.2.1 indisponible, [contoso.com] n’accepte pas le courrier électronique sur IPv6.
 

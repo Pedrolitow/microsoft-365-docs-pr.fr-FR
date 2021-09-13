@@ -19,11 +19,11 @@ description: Découvrez les suivis des menaces, y compris les nouveaux suivis à
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6ab8cf03b7ceb1ec01e6b30d3b0c11bbb7223b6f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162409"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivis des menaces : nouveautés et remarques
 
@@ -53,11 +53,11 @@ Les suivis ne sont que quelques-unes des nombreuses fonctionnalités intéressan
 Pour afficher et utiliser vos suivis des menaces pour votre organisation, go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and choose Email & **collaboration** \> **Threat Tracker**.
 
 > [!NOTE]
-> Pour utiliser les suivis des menaces, vous devez être administrateur général, administrateur de sécurité ou lecteur de sécurité. Voir [Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
+> Pour utiliser les suivis des menaces, vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité. Voir [Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
 ### <a name="noteworthy-trackers"></a>Suivis notables
 
-Les suivis sont là où vous trouverez des menaces et des risques de grande et de plus petite taille que nous pensons que vous devriez connaître. Les suivis notables vous aident à déterminer si ces problèmes existent dans votre environnement Microsoft 365, ainsi qu’un lien vers des articles (comme celui-ci) qui vous donnent plus de détails sur ce qui se passe et comment ils auront un impact sur l’utilisation de Office 365 par votre organisation. Qu’il s’agit d’une grande nouvelle menace (par exemple, Wannacry, Petya) ou d’une menace existante qui peut créer de nouveaux défis (comme notre autre élément important - Nemucod), c’est là que vous trouverez les nouveaux éléments importants que vous et votre équipe de sécurité devez examiner et examiner régulièrement.
+Les suivis sont là où vous trouverez des menaces et des risques de taille et de taille moindre que nous pensons que vous devriez connaître. Les suivis notables vous aident à déterminer si ces problèmes existent dans votre environnement Microsoft 365, ainsi qu’un lien vers des articles (comme celui-ci) qui vous donnent plus de détails sur ce qui se passe et comment ils auront un impact sur l’utilisation de Office 365 par votre organisation. Qu’il s’agit d’une grande nouvelle menace (par exemple, Wannacry, Petya) ou d’une menace existante qui peut créer de nouveaux défis (comme notre autre élément important - Nemucod), c’est là que vous trouverez les nouveaux éléments importants que vous et votre équipe de sécurité devez examiner et examiner régulièrement.
 
 En règle générale, des suivis notables sont publiés pendant quelques semaines seulement lorsque nous identifions les nouvelles menaces et pensons que vous aurez peut-être besoin de la visibilité supplémentaire que fournit cette fonctionnalité. Une fois que le risque le plus élevé pour une menace est passé, nous allons supprimer cet élément à noter. De cette façon, nous pouvons maintenir la liste à jour et à jour avec d’autres nouveaux éléments pertinents.
 
@@ -97,13 +97,13 @@ Avec notre menace importante, nous allons mettre en évidence les menaces de pro
 
 ![Microsoft Defender pour Office 365 dans le portail Microsoft 365 Defender web.](../../media/policies.png)
 
-Dans le monde actuel aux menaces, l’exécution des analyses anti-programme malveillant traditionnelles uniquement signifie que vous n’êtes pas suffisamment protégé contre les attaques. Aujourd’hui, les attaquants plus sophistiqués utilisent des outils couramment disponibles pour créer des attaques nouvelles, obscurcies ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur les signatures traditionnels. La fonctionnalité Coffre pièces jointes prend les pièces jointes des e-mails et les détone dans un environnement virtuel pour déterminer s’ils sont sûrs ou malveillants. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis surveille ce qui se produit après l’ouverture du fichier. Qu’il s’agit d’un fichier PDF et compressé, ou d’un document Office, du code malveillant peut être masqué dans un fichier, en l’activant uniquement une fois que la victime l’ouvre sur son ordinateur. En détonant et en analysant le fichier dans le flux de messagerie, les fonctionnalités de Defender for Office 365 trouvent ces menaces en fonction des comportements, de la réputation du fichier et d’un certain nombre de règles heuristiques.
+Dans le monde actuel aux menaces, l’exécution des analyses anti-programme malveillant traditionnelles uniquement signifie que vous n’êtes pas suffisamment protégé contre les attaques. Aujourd’hui, les attaquants plus sophistiqués utilisent des outils couramment disponibles pour créer des attaques nouvelles, obscurcies ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur les signatures traditionnels. La fonctionnalité Coffre pièces jointes prend les pièces jointes des e-mails et les détone dans un environnement virtuel pour déterminer s’ils sont sûrs ou malveillants. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis surveille ce qui se produit une fois le fichier ouvert. Qu’il s’agit d’un fichier PDF et compressé, ou d’un document Office, du code malveillant peut être masqué dans un fichier, en l’activant uniquement une fois que la victime l’ouvre sur son ordinateur. En détonant et en analysant le fichier dans le flux de messagerie, les fonctionnalités de Defender for Office 365 trouvent ces menaces en fonction des comportements, de la réputation du fichier et d’un certain nombre de règles heuristiques.
 
-Le nouveau filtre contre les menaces à noter met en évidence les éléments qui ont été récemment détectés Coffre pièces jointes. Ces détections représentent des éléments qui sont de nouveaux fichiers malveillants, non trouvés précédemment par les Microsoft 365 dans votre flux de messagerie ou dans les e-mails d’autres clients. Faites attention aux éléments du suivi des menaces à prendre en compte, consultez les personnes ciblées par ces derniers et examinez les détails de détonation affichés sous l’onglet Analyse avancée (en cliquant sur l’objet de l’e-mail dans l’Explorateur). Notez que vous ne trouverez cet onglet que sur les e-mails détectés par la fonctionnalité pièces jointes Coffre . Ce suivi important inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
+Le nouveau filtre contre les menaces à noter met en évidence les éléments qui ont été récemment détectés Coffre pièces jointes. Ces détections représentent des éléments qui sont de nouveaux fichiers malveillants, non trouvés précédemment par les Microsoft 365 dans votre flux de messagerie ou dans les e-mails d’autres clients. Faites attention aux éléments du suivi des menaces à prendre en compte, consultez les personnes ciblées par ces derniers et consultez les détails de détonation affichés sous l’onglet Analyse avancée (en cliquant sur l’objet de l’e-mail dans l’Explorateur). Notez que vous ne trouverez cet onglet que sur les e-mails détectés par la fonctionnalité pièces jointes Coffre . Ce suivi important inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-- Si votre organisation ne Office 365 pas ces fonctionnalités d’investigation et de réponse aux menaces, voir comment obtenir Office 365 fonctionnalités d’investigation et de réponse aux [menaces ?](office-365-ti.md)
+- Si votre organisation ne Office 365 pas ces fonctionnalités d’investigation et de réponse aux menaces, voir comment obtenir les fonctionnalités Office 365 d’investigation et de réponse aux [menaces ?](office-365-ti.md)
 
 - Assurez-vous que les rôles et autorisations corrects sont attribués à votre équipe de sécurité. Vous devez être un administrateur général ou avoir le rôle Administrateur de la sécurité ou Rechercher et vider dans le portail Microsoft 365 Defender web. Voir [Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 

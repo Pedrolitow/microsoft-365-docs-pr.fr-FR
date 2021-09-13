@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59165185"
 ---
 # <a name="validate-new-devices"></a>Valider les nouveaux appareils
 
@@ -29,14 +29,14 @@ Que vous débutiez avec Microsoft Manged Desktop ou un abonné de longue durée,
     - [Localiser l’expérience utilisateur](localization.md)
     - [Expérience de première exécution avec le pilote automatique et la page état d’inscription](esp-first-run.md)
     - [Service d’emplacement Windows 10](device-location.md)
-    - [Prise en main du contrôle d’application](get-started-app-control.md)
+    - [Prendre en main le contrôle d’application](get-started-app-control.md)
     - [Déployer les applications sur les appareils](deploy-apps.md)
-2. Vérifiez que les expériences suivantes fonctionnent sans erreurs, erreurs ou invites :
+2. Vérifiez que les expériences suivantes fonctionnent sans échec, erreurs ou invites :
     - Expérience Autopilot après avoir rejoint le réseau et l’utilisateur s’est
     - Si vous avez activé la [page](esp-first-run.md)État de l’inscription, cela fonctionne.
     - L’utilisateur peut se Office applications
     - OneDrive synchronisation des dossiers, notamment Windows Bureau, Documents et Images
-    - L’appareil reçoit les mises à jour, les stratégies et les applications métier
+    - L’appareil reçoit les mises à jour, les stratégies et les applications métiers
 3. Examinez les appareils signalés et la configuration matérielle requise dans le rapport [d’inventaire](../working-with-managed-desktop/device-inventory-report.md) des appareils pour vérifier qu’ils correspondent à ce que vous attendez.
 
 Si des problèmes se produisent, vous pouvez demander [de l’aide](../working-with-managed-desktop/admin-support.md) dans le portail d’administration.

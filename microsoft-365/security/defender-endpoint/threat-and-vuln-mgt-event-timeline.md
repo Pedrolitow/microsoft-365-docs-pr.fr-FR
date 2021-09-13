@@ -19,13 +19,13 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59164937"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements - Gestion des menaces et des vulnérabilités
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "58614883"
 
 La chronologie des événements est un flux d’actualités sur les risques qui vous permet d’interpréter la façon dont le risque est introduit dans l’organisation par le biais de nouvelles vulnérabilités ou de nouvelles exploitations. Vous pouvez afficher les événements qui peuvent avoir un impact sur les risques de votre organisation. Par exemple, vous pouvez trouver de nouvelles vulnérabilités qui ont été introduites, des vulnérabilités qui sont devenues exploitables, des exploits ajoutés à un kit d’exploitation, et bien plus encore.
 
-La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en résribuant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
+La chronologie des événements indique également l’histoire de votre [score](tvm-exposure-score.md) d’exposition et du score de sécurité [Microsoft](tvm-microsoft-secure-score-devices.md) pour les appareils afin que vous pouvez déterminer la cause des modifications importantes. Les événements peuvent avoir un impact sur vos appareils ou votre score pour les appareils. Réduisez votre exposition en adressant ce qui doit être corrigé en fonction des recommandations de sécurité [prioritaires.](tvm-security-recommendation.md)
 
 > [!TIP]
 > Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
@@ -62,11 +62,11 @@ Si aucun événement n’affecte vos appareils ou votre score pour les appareils
 
 ### <a name="drill-down-to-events-from-that-day"></a>Descendre dans les événements de ce jour
 
-Si vous **sélectionnez Afficher tous les** événements de ce jour, vous pouvez vous rendre sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
+La sélection **d’Afficher tous** les événements de ce jour vous place sur la page chronologie des événements avec une plage de dates personnalisée pour ce jour.
 
 ![Chronologie des événements : plage de dates personnalisée sélectionnée.](images/tvm-event-timeline-drilldown.png)
 
-Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre plage personnalisée ou une plage de temps pré-définie.
+Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre personnalisée ou une plage de temps pré-définie.
 
 ![Options de plage de dates de chronologie des événements.](images/tvm-event-timeline-dates.png)
 
@@ -116,7 +116,7 @@ La flèche sous « tendance de score » vous permet de déterminer si cet évén
 
 ![Volant de chronologie des événements.](images/tvm-event-timeline-flyout500.png)
 
-À partir de là, sélectionnez Go **to related security recommendation** view the recommendation that addresses the new software vulnerability in the security [recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)
+À partir de là, **sélectionnez** Go to related security recommendation view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)
 
 ## <a name="view-event-timelines-in-software-pages"></a>Afficher les chronologies des événements dans les pages logicielles
 
@@ -124,13 +124,13 @@ Pour ouvrir une page de logiciels, sélectionnez un > sélectionnez le nom du lo
 
 Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez avec la souris sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
 
-![Page de logiciels avec un graphique de chronologie des événements.](images/tvm-event-timeline-software2.png)
+![Page de logiciels avec un graphique de chronologie d’événement.](images/tvm-event-timeline-software2.png)
 
 Accédez à l’onglet Chronologie des événements pour afficher tous les événements liés à ce logiciel. Vous pouvez également voir les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions.
 
 ![Page de logiciels avec un onglet Chronologie des événements.](images/tvm-event-timeline-software-pages.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)
