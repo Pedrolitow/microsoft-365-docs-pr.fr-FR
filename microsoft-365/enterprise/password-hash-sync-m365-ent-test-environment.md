@@ -20,11 +20,11 @@ ms.custom:
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
 ms.openlocfilehash: dbf4b2ca694ee9dc81a5b02ebd0f7cf3820d0f1d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204071"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "58565889"
 
 De nombreuses organisations utilisent Azure AD Connect et la synchronisation de hachage de mot de passe pour synchroniser l’ensemble de comptes dans leur forêt Active Directory Domain Services (AD DS) en local avec l’ensemble des comptes dans le client Azure AD de leur abonnement Microsoft 365. 
 
-Cet article explique comment ajouter la synchronisation de hachage de mot de passe à votre environnement de test Microsoft 365, ce qui entraîne cette configuration :
+Cet article explique comment ajouter la synchronisation de hachage de mot de passe à votre environnement Microsoft 365 test, ce qui entraîne cette configuration :
   
 ![Environnement de test de l’entreprise simulée avec synchronisation de hachage de mot de passe.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -102,7 +102,7 @@ Tout d’abord, installez et configurez Azure AD Connecter sur APP1.
     
 6. Dans la page **Paramètres** Express, **sélectionnez Utiliser les paramètres express.**
     
-7. Dans la page Connecter Azure **AD,** entrez le nom de votre compte d’administrateur général dans Nom d’utilisateur, entrez son mot de passe dans  **Mot** de passe, puis sélectionnez **Suivant**.
+7. Dans la page Connecter azure **AD,** entrez le nom de votre compte d’administrateur général dans nom d’utilisateur, entrez son mot de passe dans  **Mot** de passe, puis sélectionnez **Suivant**.
     
 8. Dans la page **Connecter AD DS,** entrez **TESTLAB \\ User1** dans Nom d’utilisateur, entrez son mot de passe dans **Mot** de passe, puis sélectionnez **Suivant**. 
     
@@ -120,7 +120,7 @@ Tout d’abord, installez et configurez Azure AD Connecter sur APP1.
     
 14. Dans **les licences de produit,** sélectionnez votre emplacement (si nécessaire), désactivez la licence **Office 365 E5,** puis activez la **licence Microsoft 365 E5** licence. 
 
-15. Sélectionnez **Enregistrer** en bas de la page, puis **fermez.**
+15. Sélectionnez **Enregistrer** en bas de la page, puis **Fermez.**
     
 Ensuite, testez la possibilité de vous inscrire à votre abonnement à **l’user1@testlab.< >** nom d’utilisateur de votre nom de domaine du compte User1 :
 

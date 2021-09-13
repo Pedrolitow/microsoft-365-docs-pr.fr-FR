@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 564afed2c10d232076bf6875e035bcf03ea7712ada2b430729f4a936a675b8bb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b59ff2a32ef5a067576c43b9b0a394590e30b666
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204594"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherchez de manière proactive les menaces avec le recherche avancée dans Microsoft 365 Defender
 
@@ -68,7 +68,7 @@ Nous vous recommandons de suivre plusieurs étapes pour commencer rapidement le 
 | **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | - [Référence de schéma](advanced-hunting-schema-tables.md) <br />- [Transition de Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md) |
 | **Obtenir des conseils et des exemples d’experts** | Formez gratuitement avec des guides d’experts Microsoft. Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Obtenir une formation d’expert](advanced-hunting-expert-training.md) <br />- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md) <br />- [Aller à la recherche](advanced-hunting-go-hunt.md) <br />- [Recherchez les menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md) |
 | **Optimiser les requêtes et gérer les erreurs** | Comprendre comment créer des requêtes efficaces et sans erreur. | - [Meilleures pratiques en matière de requête](advanced-hunting-best-practices.md)<br />- [Gérer les erreurs](advanced-hunting-errors.md) |
-| **Créer des règles de détection personnalisées** | Comprendre comment utiliser des requêtes de recherche avancées pour déclencher des alertes et prendre des actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md) <br />- [Règles de détection personnalisées](custom-detection-rules.md) |
+| **Créer les règles de détection personnalisées** | Comprendre comment utiliser des requêtes de recherche avancées pour déclencher des alertes et prendre des actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md) <br />- [Règles de détection personnalisées](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Obtenir l’accès
 Pour utiliser la recherche avancée ou [d Microsoft 365 Defender](microsoft-365-defender.md) fonctionnalités de recherche, vous avez besoin d’un rôle approprié dans Azure Active Directory. [En savoir plus sur les rôles et autorisations requis pour le chasse avancée](custom-roles.md).

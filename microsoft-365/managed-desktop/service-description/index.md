@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 27dbf9a5325cb4d49fa23b38302cd0233c41d76332be2940627010607809475f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
-ms.translationtype: HT
+ms.openlocfilehash: 3346f6b4d05eb514bf680f87eb8452d9fd4bab38
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205004"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Description du service Bureau géré Microsoft
 

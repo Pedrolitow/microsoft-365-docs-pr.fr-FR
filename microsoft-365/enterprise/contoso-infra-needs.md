@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 entreprise.
 ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207708"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique de Contoso et besoins de l’entreprise
 
@@ -93,7 +93,7 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
   Réduisez les coûts de maintenance et de support et améliorez les performances pour la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
 
-- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la vente (B2B)
+- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la charge (B2B)
 
   Remplacez un extranet partenaire coûteux et coûteux par une solution basée sur le cloud qui utilise l’authentification fédérée.
 

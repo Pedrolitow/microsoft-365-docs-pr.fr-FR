@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
 ms.openlocfilehash: aa332b2778aefa84948a9bc57d20d28f117a4df3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565877"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204060"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -74,7 +74,7 @@ Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d�
 3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset** et le **Type d’appartenance** sur **Affecté**.
 4. Sélectionnez **Membres,** recherchez et **sélectionnez Utilisateur 3,** **sélectionnez Sélectionner,** puis **créez.**
 5. Fermez le volet **Groupes**.
-6. Dans le volet Azure Active Directory, sélectionnez Réinitialiser le mot de **passe** dans le volet de navigation gauche.
+6. Dans le volet Azure Active Directory, sélectionnez **Réinitialiser** le mot de passe dans le volet de navigation gauche.
 7. Sur la page **Propriétés–Réinitialiser le mot de passe**, sous l’option **Réinitialisation du mot de passe en libre-service activée**, choisissez **Sélectionné**.
 8. Sélectionnez **Sélectionner un** groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
 9. Fermez l’instance privée du navigateur.
@@ -88,7 +88,7 @@ Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 
 1. Une fois les deux vérifiés, **sélectionnez Apparences,** puis fermez l’instance privée du navigateur.
 1. Dans une nouvelle instance de navigateur privé, allez à [https://aka.ms/sspr](https://aka.ms/sspr) .
 1. Entrez le nom du compte Utilisateur 3, entrez les caractères de la CAPTCHA, puis sélectionnez **Suivant**.
-1. Pour **l’étape de vérification 1,** sélectionnez **Envoyer un e-mail à mon autre e-mail,** puis sélectionnez Courrier **électronique.** Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
+1. Pour **l’étape de vérification 1,** **sélectionnez Envoyer un e-mail** à mon courrier de remplacement, puis sélectionnez **Courrier électronique.** Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
 1. Dans **Revenir à votre compte,** entrez un nouveau mot de passe pour le compte Utilisateur 3, puis sélectionnez **Terminer.** Notez le mot de passe modifié du compte d’utilisateur 3 et stockez-le dans un endroit sûr.
 1. Dans un onglet distinct du même navigateur, accédez à [https://admin.microsoft.com](https://admin.microsoft.com), puis connectez-vous avec le nom de compte Utilisateur 3 et son nouveau mot de passe. Vous devez voir la **page d’accueil Microsoft Office**.
 

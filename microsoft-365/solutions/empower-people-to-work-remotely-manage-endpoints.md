@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
 ms.openlocfilehash: a5326743bc1673facff864a562ebb0accb8d483c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575359"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204312"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 4 : déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 

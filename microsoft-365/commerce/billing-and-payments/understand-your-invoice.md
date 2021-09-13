@@ -23,12 +23,12 @@ search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 keywords: comptes de facturation, informations sur l’organisation, factures
 ms.date: 05/04/2021
-ms.openlocfilehash: 6a1cfcb34226bef62b576433d1751ad5aa078bc71c0172e051600c0737ff1737
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b780b2f0379e9e1f1866c22139a7ac3504a23b53
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208067"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -151,7 +151,7 @@ Si vous avez des questions ou si vous avez besoin d’aide relativement à vos c
 
 Si vous avez des questions ou si vous avez besoin d’aide relativement à votre facture dans le centre d’administration Microsoft 365, [contacter le support technique pour les produits professionnels](../../business-video/get-help-support.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\
 [Suivre le solde de crédit Azure](/azure/billing/billing-mca-check-azure-credits-balance) du contrat client Microsoft (article)\

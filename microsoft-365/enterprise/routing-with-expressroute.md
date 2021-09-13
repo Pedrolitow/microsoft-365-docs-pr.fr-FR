@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Dans cet article, découvrez les exigences de routage, les circuits et les domaines de routage Azure ExpressRoute à utiliser avec Office 365.
 ms.openlocfilehash: d157515f60a68a46b033571a0fd39e6a5711b884
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575827"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205316"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routage avec ExpressRoute pour Office 365
 
@@ -251,6 +251,6 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/erorouting
   
 [Plan de résolution des problèmes de performances pour Office 365](performance-troubleshooting-plan.md)
   
-[URL et plages dʼadresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL et plages d’adresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)

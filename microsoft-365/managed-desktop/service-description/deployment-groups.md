@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c343692e904e292f333cd2e3d729f0c56a819e7774262fcd4baf0197071637e3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2d1f2325937488b95c40600f277835cca1329d1e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205060"
 ---
 # <a name="device-deployment-groups"></a>Groupes de déploiement d’appareils
 

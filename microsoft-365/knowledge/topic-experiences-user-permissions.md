@@ -11,24 +11,24 @@ search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment administrer les autorisations de rubrique dans Sujets Microsoft Viva.
 ms.openlocfilehash: 9a391d3a51d5ed7a8b4e17f4f310600284c87f54
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205236"
 ---
 # <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Gérer les autorisations de rubrique dans Sujets Microsoft Viva
 
-Vous pouvez gérer les paramètres d’autorisations de rubrique dans [le Centre d’administration Microsoft 365](https://admin.microsoft.com). Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez gérer les paramètres d’autorisations de rubrique dans [le Centre d'administration Microsoft 365](https://admin.microsoft.com). Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
 
 Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
-- Les utilisateurs qui peuvent créer et modifier des rubriques : créez des rubriques qui n’ont pas été trouvées lors de la découverte ou modifiez les détails d’une rubrique existante.
+- Les utilisateurs qui peuvent créer et modifier des rubriques : Créez des rubriques qui n’ont pas été trouvées lors de la découverte ou modifiez les détails d’une rubrique existante.
 - Les utilisateurs qui peuvent gérer les rubriques : accéder au centre de gestion des rubriques et consulter les commentaires sur les sujets, ainsi que déplacer des rubriques tout au long du cycle de vie.
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans la Centre d’administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
+1. Dans la Centre d'administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
     ![Connecter personnes à connaître.](../media/admin-org-knowledge-options-completed.png) 
@@ -49,7 +49,7 @@ Pour mettre à jour les personnes autorisées à créer et modifier des rubrique
 
     ![Créez et modifiez des rubriques.](../media/k-manage-who-can-create-and-edit.png)  
 
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 Pour mettre à jour les personnes autorisées à gérer les rubriques :
 
@@ -60,7 +60,7 @@ Pour mettre à jour les personnes autorisées à gérer les rubriques :
 
     ![Gérer les rubriques.](../media/k-manage-who-can-manage-topics.png)  
 
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 ## <a name="see-also"></a>Voir aussi
 

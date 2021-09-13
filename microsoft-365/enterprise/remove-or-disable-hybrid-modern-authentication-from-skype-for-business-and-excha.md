@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article explique comment supprimer ou désactiver l’authentification moderne hybride de Skype Entreprise et Exchange.
-ms.openlocfilehash: dd663c1178f2f7008917f944c6e641a696c81bdb0c9ce8d325267d861910f4c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205348"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Suppression ou désactivation de l’authentification moderne hybride à partir de Skype Entreprise et Exchange
 
@@ -61,7 +61,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype Entreprise Online :** [Connecter à Skype Entreprise Online avec](manage-skype-for-business-online-with-microsoft-365-powershell.md) Remote PowerShell. Exécutez la commande suivante pour désactiver l’authentification moderne :
+2. **Skype Entreprise Online :** [Connecter à Skype Entreprise Online](manage-skype-for-business-online-with-microsoft-365-powershell.md) avec Remote PowerShell. Exécutez la commande suivante pour désactiver l’authentification moderne :
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed

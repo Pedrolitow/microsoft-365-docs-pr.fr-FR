@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0de3e0d910e2e410df0f057a389451db98ff017569faf854152088729b5f165
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 776cd18146fa4f726ef5d25433c564510b8a0e67
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204780"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur macOS
 

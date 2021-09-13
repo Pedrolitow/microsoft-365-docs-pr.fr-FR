@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e5f75f0523af7f2a81ce9f1d74ae8f323c78816c828cd9fdfba4210afc912fe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56850706"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204438"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le forwarding automatique du courrier externe dans Microsoft 365
 
@@ -56,19 +56,19 @@ Pour obtenir des instructions sur la configuration de ces paramètres, voir Conf
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transmission automatique du courrier électronique
 
-En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le forwarding automatique du courrier électronique. Par exemple :
+En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le forwarding automatique du courrier électronique. Par exemple :
 
 - [Domaines distants permettant](/exchange/mail-flow-best-practices/remote-domains/remote-domains) d’autoriser ou de bloquer le forwarding automatique du courrier électronique vers tout ou partie des domaines externes.
 - Conditions et actions dans Exchange règles de flux de messagerie [(également](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) appelées règles de transport) pour détecter et bloquer les messages automatiquement transmis à des destinataires externes.
 
-Les paramètres de domaine distant et les règles de flux de messagerie sont indépendants des paramètres des stratégies de filtrage du courrier indésirable sortant. Par exemple :
+Les paramètres de domaine distant et les règles de flux de messagerie sont indépendants des paramètres des stratégies de filtrage du courrier indésirable sortant. Par exemple :
 
 - Vous autorisez le forwarding automatique pour un domaine distant, mais vous bloquez le forwarding automatique dans les stratégies de filtrage du courrier indésirable sortant. Dans cet exemple, les messages automatiquement transmis sont bloqués.
 - Vous autorisez le forwarding automatique dans les stratégies de filtrage du courrier indésirable sortant, mais vous utilisez des règles de flux de messagerie ou des paramètres de domaine distant pour bloquer le courrier électronique automatiquement transmis. Dans cet exemple, les règles de flux de messagerie ou les paramètres de domaine distant bloquent les messages automatiquement transmis.
 
 Cette indépendance de fonctionnalité vous permet (par exemple) d’autoriser le forwarding automatique dans les stratégies de filtrage du courrier indésirable sortant, mais d’utiliser des domaines distants pour contrôler les domaines externes vers qui les utilisateurs peuvent envoyer des messages.
 
-## <a name="blocked-email-forwarding-messages"></a>Messages de courrier bloqués
+## <a name="blocked-email-forwarding-messages"></a>Messages de courrier électronique bloqués
 
 Lorsqu’un message est détecté comme étant [](configure-the-outbound-spam-policy.md) automatiquement transmis et  que la stratégie de filtrage du courrier indésirable sortant bloque cette activité, le message est renvoyé à l’expéditeur dans une NDR contenant les informations suivantes :
 

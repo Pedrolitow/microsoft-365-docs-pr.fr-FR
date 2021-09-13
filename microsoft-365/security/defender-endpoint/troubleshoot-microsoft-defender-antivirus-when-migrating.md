@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 9a9d33d123c1b308d31c80663d1a8fc373e955d53e92d3680d39dc8b1d930d00
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203826"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -51,7 +51,7 @@ Ce problème peut se manifester sous la forme de plusieurs ID d’événement di
 
 ID d’événement|Nom du journal|Description|Source
 ---|---|---|---
-15|Application|Mise à jour Windows Defender statut de l’SECURITY_PRODUCT_STATE_OFF.|Centre de sécurité
+15 |Application|Mise à jour Windows Defender statut de l’SECURITY_PRODUCT_STATE_OFF.|Centre de sécurité
 5007|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender La configuration a changé.  S’il s’agit d’un événement inattendu, vous devez passer en revue les paramètres, car cela peut être le résultat d’un programme malveillant. <p> **Ancienne valeur :** Default\IsServiceRunning = 0x0 p> Nouvelle valeur **:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender recherche de logiciels espions et d’autres logiciels potentiellement indésirables est désactivée.|Windows Defender
 
@@ -88,7 +88,7 @@ Cela génère un rapport situé sur *./gpresult.html*. Ouvrez ce fichier et vous
 
 Dans le rapport GPResults, sous le titre *Windows Components/Antivirus Windows Defender*, vous pouvez voir quelque chose comme l’entrée suivante, indiquant que Antivirus Microsoft Defender est désactivé.
 
-Stratégie|Paramètre|GPO qui a été gagné
+Politique|Setting|GPO qui a été gagné
 ---|---|---
 Désactiver la Antivirus Windows Defender|Activé|Win10-Workstations
 

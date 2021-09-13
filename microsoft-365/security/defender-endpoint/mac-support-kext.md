@@ -19,18 +19,18 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 9ca412a54fb94fd9835b30d6b9b6092dc4e79015
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204774"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d’extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)

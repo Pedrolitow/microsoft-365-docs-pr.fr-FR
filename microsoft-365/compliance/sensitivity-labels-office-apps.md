@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29e247987a26f7be3af099f36920ec580963c6a6
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 099bf74f1a3b85dd315c3581695ba30133f710ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205956"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -46,7 +46,7 @@ Les nouvelles versions des applications Office sont disponibles à différents m
 > [!NOTE]
 > Les noms des canaux de mise à jour pour les applications Office ont changé en mai 2020. Par exemple, le Canal mensuel est désormais Canal actuel et Office Insider le Canal bêta. Si vous souhaitez en savoir plus, consultez [Modifications apportées aux canaux de mise à jour des applications Microsoft 365](/deployoffice/update-channels-changes).
 
-Office pour iOS et Office pour Android : les étiquettes de niveau de confidentialité sont intégrées dans l’[application Office](https://www.microsoft.com/fr-FR/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+Office pour iOS et Office pour Android : les étiquettes de niveau de confidentialité sont intégrées dans l’[application Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client de l’étiquetage unifié d’Azure Information Protection, qui s’exécute uniquement sur les ordinateurs Windows. Pour plus d’informations, consultez [Comparer les clients d’étiquetage pour les ordinateurs Windows](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -61,12 +61,13 @@ Les nombres répertoriés sont la version minimale de l’application Office req
 
 |Fonctionnalité                                                                                                        |Windows<sup>\*</sup> |Mac |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/fr-FR/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do) aux nouveaux documents                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do) à des documents existants | Préversion : déploiement sur le [Canal bêta](https://office.com/insider)           | Préversion : déploiement sur le [Canal bêta](https://office.com/insider) | En cours de révision | En cours de révision | Déploiement : [Oui, participer](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Demander une justification pour la modification d'étiquette.](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Fournir un lien d’aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Marquages dynamiques avec des variables](#dynamic-markings-with-variables).                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | En cours de déploiement |
+|[Marquages dynamiques avec des variables](#dynamic-markings-with-variables).                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Déploiement : [Oui, participer](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Oui : s’inclure](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Inviter les utilisateurs](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 16.0.13628+ | Oui <sup>\*\*</sup>                                                        |
@@ -88,7 +89,7 @@ Les nombres répertoriés sont la version minimale de l’application Office req
 
 |Fonctionnalité                                                                                                        |Outlook pour Windows<sup>\*</sup> |Outlook pour Mac |Outlook sur iOS |Outlook sur Android |Outlook sur le web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/fr-FR/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
+|[Appliquer, modifier ou supprimer manuellement une étiquette](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Appliquer une étiquette par défaut](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Demander une justification pour la modification d'étiquette.](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Fournir un lien d’aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
@@ -396,7 +397,9 @@ Pour obtenir des instructions sur l’utilisation de ce paramètre, consultez le
 > [!NOTE]
 > Si vous utilisez le paramètre de stratégie d’étiquette par défaut pour les documents et messages électroniques en plus de l’étiquette obligatoire : 
 >
-> L’étiquette par défaut a toujours la priorité sur l’étiquette obligatoire. Toutefois, pour les documents, le client d’étiquetage unifié Azure Information Protection applique l’étiquette par défaut à tous les documents sans étiquettes, tandis que l’étiquette intégrée applique l’étiquette par défaut aux nouveaux documents et non aux documents existants sans étiquettes. Cette différence de comportement signifie que lorsque vous utilisez une étiquette obligatoire avec le paramètre d’étiquette par défaut, les utilisateurs sont invités à appliquer une étiquette de confidentialité plus souvent lorsqu’ils utilisent un étiquetage intégré que lorsqu’ils utilisent le client d’étiquetage unifié Azure Information Protection.
+> L’étiquette par défaut a toujours la priorité sur l’étiquette obligatoire. Toutefois, pour les documents, le client d’étiquetage unifié Azure Information Protection applique l’étiquette par défaut à tous les documents sans étiquettes, tandis que l’étiquette intégrée applique l’étiquette par défaut aux nouveaux documents et non aux documents existants sans étiquettes. Cette différence de comportement signifie que lorsque vous utilisez l’étiquetage obligatoire avec le paramètre d’étiquette par défaut, les utilisateurs sont probablement invités à appliquer une étiquette de confidentialité plus souvent lorsqu’ils utilisent l’étiquetage intégré que lorsqu’ils utilisent le client d’étiquetage unifié Azure Information Protection.
+> 
+> Déploiement en cours : applications Office qui utilisent l’étiquetage intégré et prennent en charge une étiquette par défaut pour les documents existants. Pour plus d’informations, consultez le [tableau des fonctionnalités](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) pour Word, Excel et PowerPoint.
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Options spécifiques à Outlook pour l’étiquetage par défaut et l’étiquetage obligatoire
 
@@ -421,8 +424,8 @@ Lorsque l’application Outlook ne prend pas en charge la désactivation de l’
 
 ## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 
-- [Appliquer des étiquettes de confidentialité à vos fichiers et vos e-mails dans Office](https://support.microsoft.com/fr-FR/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Problèmes connus liés aux étiquettes de confidentialité dans Office](https://support.microsoft.com/fr-FR/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Appliquer des étiquettes de confidentialité à vos fichiers et vos e-mails dans Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Problèmes connus liés aux étiquettes de confidentialité dans Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Appliquer ou recommander automatiquement des étiquettes de confidentialité pour vos fichiers et e-mails dans Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Problèmes connus liés à l’application ou à la recommandation automatique des étiquettes de confidentialité](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

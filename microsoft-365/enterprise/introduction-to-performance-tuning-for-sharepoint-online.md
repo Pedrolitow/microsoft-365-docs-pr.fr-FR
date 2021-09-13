@@ -18,11 +18,11 @@ search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: Cet article explique les aspects spécifiques à prendre en compte lors de la conception de pages pour de meilleures performances dans SharePoint Online.
 ms.openlocfilehash: d2653e1ee07309d2f31a24df2715bf7810beb65b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205539"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduction à l’optimisation des performances pour SharePoint Online
 
@@ -44,7 +44,7 @@ Les mesures générales suivantes pour SharePoint Online fournissent des donnée
 
 Les données nous indiquent :
   
-- La plupart des pages s’exécutent SharePoint Online.
+- La plupart des pages s’exécutent bien sur SharePoint Online.
     
 - Les pages non personnalisées se chargent très rapidement.
     
@@ -102,7 +102,7 @@ Avec SharePoint Online, certaines demandes de page peuvent en réalité finir pa
   
 Voici quelques exemples de ces interactions serveur à serveur :
   
-- Serveurs web SQL serveurs
+- Serveurs web SQL serveur
     
 - Serveurs web et d’applications
     
@@ -138,7 +138,7 @@ Il existe quelques facteurs à prendre en compte pour les navigateurs web du poi
   
 La visite de pages complexes aura une incidence sur les performances. La plupart des navigateurs n’ont qu’un petit cache (environ 90 Mo), alors que la page web moyenne est généralement d’environ 1,6 Mo. L’utilisation n’est pas longue.
   
-La bande passante peut également être un problème. Par exemple, si un utilisateur regardera des vidéos dans une autre session, cela aura une incidence sur les performances de votre SharePoint page. Bien que vous ne pouvez pas empêcher les utilisateurs de diffuser des contenus multimédias en continu, vous pouvez contrôler le chargement d’une page pour les utilisateurs.
+La bande passante peut également être un problème. Par exemple, si un utilisateur regardera des vidéos dans une autre session, cela aura une incidence sur les performances de votre SharePoint page. Bien que vous ne pouvez pas empêcher les utilisateurs de diffuser des contenus multimédias en continu, vous pouvez contrôler la façon dont une page se charge pour les utilisateurs.
   
 Consultez les articles suivants pour découvrir différentes techniques de personnalisation de page SharePoint Online et d’autres meilleures pratiques pour obtenir des performances optimales.
   

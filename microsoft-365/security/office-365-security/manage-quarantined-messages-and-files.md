@@ -20,11 +20,11 @@ description: Les administrateurs peuvent découvrir comment afficher et gérer l
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 921d3e897dea70180a1338ea27e4ef1bc29db41e
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204389"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 

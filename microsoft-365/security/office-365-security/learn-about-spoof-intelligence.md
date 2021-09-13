@@ -21,11 +21,11 @@ description: Les administrateurs peuvent en savoir plus sur les informations sur
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: b84671da05fcd3c476f19aa61a7325ac9df4c263
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203747"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’usurpation d’intelligence dans EOP
 
@@ -138,7 +138,7 @@ Pour filtrer les résultats, vous avez les options suivantes :
 
 Lorsque vous sélectionnez une entrée dans la liste, un volant de détails s’affiche qui contient les informations et fonctionnalités suivantes :
 
--  Autoriser l’usurpation ou empêcher l’usurpation : sélectionnez l’une de ces valeurs pour remplacer le verdict d’intelligence contre l’usurpation d’usurpation d’origine et déplacez l’entrée de la veille contre l’usurpation d’informations vers la liste des locataires autoriser/bloquer en tant qu’entrée d’usurpation.
+-  Autoriser l’usurpation ou empêcher l’usurpation : sélectionnez l’une de ces valeurs pour remplacer le verdict d’intelligence contre l’usurpation d’usurpation d’origine et déplacez l’entrée de la veille contre l’usurpation d’informations vers la liste d’attente/d’usurpation d’usurpation d’informations en tant qu’entrée d’usurpation d’usurpation d’informations.
 - Pourquoi nous l’avons capturé.
 - Ce que vous devez faire.
 - Résumé de domaine qui inclut la plupart des informations de la page principale de veille contre l’usurpation d’informations.

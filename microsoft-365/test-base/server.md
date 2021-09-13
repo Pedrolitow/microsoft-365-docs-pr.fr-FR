@@ -15,15 +15,15 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 7db257ddd1645c5a2ba8ecd992a65d08962660c7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204257"
 ---
 # <a name="windows-server-application-testing"></a>Windows Test des applications serveur
 
-Avec Test Base for Microsoft 365, vous pouvez désormais valider vos applications par rapport à Windows Server 2016 2019, y compris Server Core !
+Avec Test Base for Microsoft 365, vous pouvez désormais valider vos applications par rapport à Windows Server 2016 et 2019, y compris Server Core !
 
 Pour commencer à valider vos applications téléchargées par rapport aux mises à jour de pré-publication pour les systèmes d’exploitation Windows Server 2016 et 2019 sur la base de test pour Microsoft 365, respectez les étapes suivantes :
 
@@ -33,7 +33,7 @@ Pour commencer à valider vos applications téléchargées par rapport aux mises
 
    ![Sélectionnez les mises à jour de sécurité.](Media/selecting-security-updates.png)
 
-3. Sous les versions de système d’exploitation à tester, sélectionnez les versions de système d’exploitation applicables. Vous pouvez sélectionner Windows versions du système d’exploitation du serveur ou une combinaison de versions de serveur et de système d’exploitation client.
+3. Sous les versions du système d’exploitation à tester, sélectionnez les versions de système d’exploitation applicables. Vous pouvez sélectionner Windows versions du système d’exploitation du serveur ou une combinaison de versions de serveur et de système d’exploitation client.
 
    ![Sélectionnez la version du système d’exploitation.](Media/selecting-OS-versions.png)
 

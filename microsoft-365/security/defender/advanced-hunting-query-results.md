@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204563"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Travailler avec des résultats de requête de recherche avancés
 
@@ -34,11 +34,11 @@ ms.locfileid: "58563521"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Bien que vous [](advanced-hunting-overview.md) pouvez construire vos requêtes de recherche avancées pour renvoyer des informations très précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations supplémentaires et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
+Bien que vous [](advanced-hunting-overview.md) pouvez construire vos requêtes de recherche avancées pour renvoyer des informations très précises, vous pouvez également travailler avec les résultats de la requête pour obtenir des informations plus précises et examiner des activités et des indicateurs spécifiques. Vous pouvez prendre les mesures suivantes sur les résultats de votre requête :
 
 - Afficher les résultats sous la mesure d’un tableau ou d’un graphique
 - Exporter des tableaux et des graphiques
@@ -72,12 +72,12 @@ AlertInfo
 Lors de l’affichage des résultats, un graphique en colonnes affiche chaque valeur de gravité en tant que colonne distincte :
 
 ![Image des résultats de requête de recherche avancée affichés sous la direction d’un graphique en colonnes. ](../../media/advanced-hunting-column-chart.jpg)
- *Résultats de la requête pour les alertes par gravité affichés sous la direction d’un graphique en colonnes*
+ *Résultats de la requête pour les alertes par gravité affichées sous la direction d’un graphique en colonnes*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravité des alertes par système d’exploitation
 Vous pouvez également utiliser `summarize` l’opérateur pour préparer les résultats pour la graphique des valeurs de plusieurs champs. Par exemple, vous souhaitez peut-être comprendre comment les gravités des alertes sont distribuées entre les systèmes d’exploitation. 
 
-La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation du tableau, puis pour compter les valeurs dans les colonnes `join` `DeviceInfo` et les `summarize` `OSPlatform` `Severity` colonnes :
+La requête ci-dessous utilise un opérateur pour tirer les informations du système d’exploitation à partir du tableau, puis pour compter les valeurs à la fois dans `join` `DeviceInfo` les `summarize` `OSPlatform` colonnes et dans les `Severity` colonnes :
 
 ```kusto
 AlertInfo
@@ -90,7 +90,7 @@ Ces résultats sont mieux visualisés à l’aide d’un graphique en colonnes e
 ![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique empilé. ](../../media/advanced-hunting-stacked-chart.jpg)
  *Résultats de la requête pour les alertes par système d’exploitation* et gravité affichées sous la mesure d’un graphique empilé
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage parmi les dix principaux domaines d’expéditeurs
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage sur les dix principaux domaines d’expéditeurs
 Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez utiliser l’opérateur pour graphiquer uniquement les valeurs avec le plus grand nombre `Top` d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeurs avec le plus de messages de hameçonnage, utilisez la requête ci-dessous :
 
 ```kusto
@@ -101,7 +101,7 @@ EmailEvents
 ```
 Utilisez l’affichage graphique en secteurs pour afficher efficacement la distribution dans les principaux domaines :
 
-![Image des résultats de requête de recherche avancée affichés sous la la mesure d’un graphique en secteurs. ](../../media/advanced-hunting-pie-chart.jpg)
+![Image des résultats de requête de recherche avancée affichés sous la mesure d’un graphique en secteurs. ](../../media/advanced-hunting-pie-chart.jpg)
  *Graphique en secteurs montrant la distribution des e-mails de hameçonnage sur les principaux domaines des expéditeurs*
 
 #### <a name="file-activities-over-time"></a>Activités de fichier au fil du temps
@@ -157,7 +157,7 @@ Une fois le filtre appliqué pour modifier la requête, puis exécuter la requê
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

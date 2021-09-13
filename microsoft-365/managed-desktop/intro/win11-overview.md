@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: af5380d81254ea4934fcdb0910c633adb704b3ffbdbd10dad9457ad29610d66a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7a99ca8d5f56fd5614dc27e3a28efe905ba30e46
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819030"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205083"
 ---
 # <a name="microsoft-managed-desktop-and-windows-11"></a>Microsoft Managed Desktop et Windows 11
 
@@ -57,5 +57,5 @@ La compatibilité des applications est l’une des préoccupations les plus cour
  Applications métier : la [base](https://www.microsoft.com/en-us/testbase) de test est une ressource que les éditeurs d’applications et les administrateurs informatiques peuvent utiliser pour soumettre des applications et des cas de test pour que Microsoft s’exécute sur une machine virtuelle exécutant des builds Windows 11 dans un environnement Azure sécurisé. Les résultats, les analyses de test et l’analyse de régression pour chaque exécution de test sont disponibles sur un portail Azure privé. Microsoft Manged Desktop vous aideront à hiérarchiser vos applications métiers pour la validation en fonction des données d’utilisation et de fiabilité des applications. Pour plus d’informations sur la base de test, voir [Base de test Microsoft 365](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/test-base-for-microsoft-365-microsoft-ignite-2021-updates/ba-p/2185566).
 
 ### <a name="reactive-measures"></a>Mesures réactives
-Si vous rencontrez des problèmes de compatibilité d’application dans des environnements de test ou de production, vous pouvez bénéficier d’une prise en charge gratuite en impliquant [Soutien](/fasttrack/products-and-capabilities#app-assure) aux applications ou FastTrack, le cas échéant. Pour Windows 11, cela inclut toutes les fonctionnalités avec les applications Office, Microsoft Edge, Teams et métiers en cours d’exécution sur les dernières builds de système d’exploitation. L’Application Assure engage directement les éditeurs d’applications à hiérarchiser et résoudre les problèmes de compatibilité des applications.
+Si vous rencontrez des problèmes de compatibilité d’application dans des environnements [](/fasttrack/products-and-capabilities#app-assure) de test ou de production, vous pouvez bénéficier d’une prise en charge gratuite en impliquant Soutien aux applications ou FastTrack, le cas échéant. Pour Windows 11, cela inclut toutes les fonctionnalités avec les applications Office, Microsoft Edge, Teams et métiers en cours d’exécution sur les dernières builds de système d’exploitation. L’Application Assure engage directement les éditeurs d’applications à hiérarchiser et résoudre les problèmes de compatibilité des applications.
 

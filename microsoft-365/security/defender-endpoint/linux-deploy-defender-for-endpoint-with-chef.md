@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: d0ef13f9718c82c920ab7bd4a151f77b1162208f
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204821"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 

@@ -17,16 +17,16 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
 ms.openlocfilehash: 347b999dd289f00e2493f2cf5d8c003e0dc24f1a
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203831"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Collecter les journaux de support dans Microsoft Defender pour point de terminaison à l’aide d’une réponse en direct
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

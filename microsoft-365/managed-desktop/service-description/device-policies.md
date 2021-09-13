@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e763e78513426e187ab4f3df87438ac750d6f4a77d8a0b5791276685c221a89
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e4f07adb051dde24d374055d206955ad61df432a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207491"
 ---
 # <a name="device-configuration"></a>Configuration des appareils
 
@@ -34,7 +34,7 @@ Les appareils arrivent avec une image de signature, puis rejoignent le Azure Act
 
 Ce tableau met en évidence les stratégies par défaut qui sont appliquées à tous les Microsoft Manged Desktop lors de la mise en service des appareils. Toutes les modifications détectées non approuvées par Microsoft Manged Desktop Operations Team sur les objets gérés par Microsoft Manged Desktop seront de retour.
 
-Stratégie | Description
+Politique | Description
 --- | ---
 Base de référence de sécurité | [La ligne de base](/windows/device-security/windows-security-baselines) de sécurité Microsoft pour la gestion des périphériques mobiles est configurée pour tous les Microsoft Manged Desktop mobiles. Cette ligne de base est la configuration standard du secteur. Il est publié publiquement, bien testé et a été examiné par des experts en sécurité Microsoft pour garantir la sécurité Microsoft Manged Desktop et des applications dans l’espace de travail moderne. <br><br>Pour atténuer les menaces dans le paysage des menaces de sécurité en constante évolution, la ligne de base de sécurité Microsoft sera mise à jour et déployée sur les appareils Microsoft Manged Desktop avec chaque mise à jour Windows 10 fonctionnalités.<br><br>Pour plus d’informations, [voir Windows de sécurité.](/windows/security/threat-protection/windows-security-baselines)
 Microsoft Manged Desktop de sécurité recommandé | Ensemble de modifications recommandées apportées à la ligne de base de sécurité qui optimisent l’expérience utilisateur.  Ces modifications sont documentées dans [le addendum de sécurité.](#security-addendum) Les mises à jour du addendum de stratégie se produisent selon les besoins.  

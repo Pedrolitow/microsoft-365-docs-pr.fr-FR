@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: cb3cfba661025787c9cbbbcc97dc524c7a62d355
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58576055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207452"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 

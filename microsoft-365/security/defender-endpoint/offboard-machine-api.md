@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 23e9ffea59eb874ef80345f9a75b7cb64137069b8bcbf2c54d5ddc0b76359233
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 83e43a36df3d4b4d0efdfd655e929c8aa39aeb74
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207459"
 ---
 # <a name="offboard-machine-api"></a>API d’ordinateur de tableau de bord
 
@@ -78,14 +78,14 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Parameter|Type|Description
+Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 

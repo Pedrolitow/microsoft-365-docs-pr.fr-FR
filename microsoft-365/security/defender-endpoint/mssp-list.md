@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: cdd1cbf3c8845e9d1e4a894c59b93f2a071cccf1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550145"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203873"
 ---
 # <a name="supported-managed-security-service-providers"></a>Fournisseurs de services de sécurité gérés pris en charge
 
@@ -48,7 +48,7 @@ Logo |Nom du partenaire   | Description
 ![Image du logo DXC-Managed de réponse et de détection des menaces de point de terminaison.](images/dxc-logo.png)| [Détection et réponse aux menaces de point de terminaison géré par DXC](https://go.microsoft.com/fwlink/?linkid=2090395) | Identifier les menaces de point de terminaison qui évitent les défenses de sécurité traditionnelles et les contenir en heures ou en minutes, et non en jours
 ![Image du journal eSentire.](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | Enquêtes sur les menaces et réponse 24 heures sur 24 et 7 jours sur 7 via Microsoft Defender for Endpoint.
 ![Image du logo Expel.](images/expel-logo.png)| [Expel Managed detection and response for Microsoft Defender Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel vous permet de maintenir votre sécurité en détectant les risques de sécurité dans Microsoft Defender Endpoint.
-![Image du logo Mandiant.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2164352) | Fortifiez votre Defender pour Point de terminaison avec une intelligence MDR de pointe 24 h/24 et 7 j/7 avec l’expertise de Mandiant.
+![Image du logo Mandiant.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2164352) | Fortifiez votre Defender pour Point de terminaison avec une intelligence MDR et une expertise de Mandiant 24 h/24 et 7 j/7.
 ![Image du logo de sécurité NTT.](images/ntt-logo.png)| [Sécurité NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | Le service PEPT NTT fournit une surveillance de la sécurité 24 h/24 & sur votre point de terminaison et votre réseau
 ![Image du logo OneVinn.](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| Détection et réponse gérées 24/7, conçues sur Microsoft Defender et Azure Sentinel, enrichies de l’intelligence contre les menaces de Onevinn.
 ![Image du logo Quorum Cyber.](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Un service d’ingénierie de sécurité et de & de recherche de menaces de pointe.
@@ -56,9 +56,9 @@ Logo |Nom du partenaire   | Description
 ![Image du logo SecureWorks Managed Detection and Response Powered by Red Caption.](images/secureworks-logo.png)| [Détection et réponse gérées SecureWorks optimisées par l’environnement rouge](https://go.microsoft.com/fwlink/?linkid=2133634) | Secureworks combine l’intelligence des menaces et plus de 20 ans d’expérience dans SaaS et les solutions de sécurité gérées
 ![Image du logo sepagoSOC.](images/sepago-logo.png)| [sepagoSOC](https://go.microsoft.com/fwlink/?linkid=2090491) | Garantir une sécurité globale par le biais de flux de travail automatisés sophistiqués dans votre environnement de confiance zéro
 ![Image du logo Response Services de détection des menaces & Trustwave.](images/trustwave-logo.png)| [Trustwave Threat Detection & Response Services](https://go.microsoft.com/fwlink/?linkid=2127542) | Services de détection et de réponse aux menaces pour Azure à l’aide des intégrations avec Sentinel et Defender pour point de terminaison
-![Image des services de sécurité gérés White Managed Security.](images/white-shark.png)| [White Shark Managed Security Services](https://go.microsoft.com/fwlink/?linkid=2154210) |Véritable approche experte de la cybersécurité avec une tarification transparente sur chaque plateforme, mobile inclus.
+![Image des services de sécurité gérés White Managed Security.](images/white-shark.png)| [Services de sécurité gérés whites](https://go.microsoft.com/fwlink/?linkid=2154210) |Véritable approche experte de la cybersécurité avec une tarification transparente sur chaque plateforme, mobile inclus.
 ![Image du logo SOC cloud de Captiontell.](images/wortell-logo.png)| [SOC cloud deTelltell](https://go.microsoft.com/fwlink/?linkid=2108415) | Service Defender pour point de terminaison géré 24 h/24 et 7 j/7 pour la surveillance & réponse
 ![Image du logo ZTAP (Zero Trust Analytics Platform).](images/ztap-logo.png)| [Plateforme d’analyse de confiance zéro (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | Réduisez vos alertes de 99 % et accédez à une gamme complète de fonctionnalités de sécurité à partir d’appareils mobiles
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Configurer l’intégration du fournisseur de sécurité de service géré](configure-mssp-support.md)

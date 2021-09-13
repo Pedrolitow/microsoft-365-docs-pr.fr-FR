@@ -20,17 +20,17 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: ad24bc74eeaee8dd67009db6cfeb25e602c0c269
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203921"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -99,7 +99,7 @@ Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licenc
 - Microsoft 365 E5 Sécurité
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Entreprise E5
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3977f1ee1864438a49abcc955656ee558a5e694d77de433c11905b3bc78c6d98
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 30e1229db1af93c74731678723b60d7d20640f9b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53839358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203807"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -31,7 +31,7 @@ ms.locfileid: "53839358"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef4e0f84800ca8e2d5637efc53ab6f67b7fdf682c970f9bd55bb90df09f9d744
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 02308bda163702560152f8641812bc15f1fde864
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804323"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204228"
 ---
 # <a name="contact-support-for-andorra"></a>Contacter le support technique de l’Andorre
 

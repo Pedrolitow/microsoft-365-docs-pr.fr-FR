@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4bf668379edccff3e85fdeece6cfdcf7482ac8a5a9910cc5a8cf8629463db26c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00c02bad3f95d2bd8def69d5dd6ad8e1c2e857df
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203796"
 ---
 # <a name="update-alert"></a>Mettre à jour une alerte
 
@@ -87,10 +87,10 @@ Pour de meilleures performances, n’incluez pas de valeurs existantes qui n’o
 
 Propriété|Type|Description
 :---|:---|:---
-status|Chaîne|Spécifie l’état actuel de l’alerte. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
-assignedTo|Chaîne|Propriétaire de l’alerte
+status|String|Spécifie l’état actuel de l’alerte. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
+assignedTo|String|Propriétaire de l’alerte
 classification|String|Spécifie la spécification de l’alerte. Les valeurs de propriété sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).
-détermination|Chaîne|Spécifie la détermination de l’alerte. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+détermination|String|Spécifie la détermination de l’alerte. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment|String|Commentaire à ajouter à l’alerte.
 
 ## <a name="response"></a>Réponse

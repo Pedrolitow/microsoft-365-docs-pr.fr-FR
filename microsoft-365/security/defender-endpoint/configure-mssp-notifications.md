@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: fea2a3dc971e7abbd2371bd5b62f39bb374aea24
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204042"
 ---
 # <a name="configure-alert-notifications-that-are-sent-to-mssps"></a>Configurer les notifications d’alerte envoyées aux MSSP
 
@@ -45,7 +45,7 @@ Ces cases à cocher doivent être cochées :
 - **Inclure le nom de l’organisation** : le nom du client sera ajouté aux notifications par courrier électronique
 - **Inclure un lien portail** propre au client : l’URL du lien d’alerte aura un paramètre spécifique au client (tid=target_tenant_id) qui permet un accès direct au portail client cible
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Accorder l’accès MSSP au portail](grant-mssp-access.md)
 - [Accéder au portail client MSSP](access-mssp-portal.md)

@@ -10,15 +10,15 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205044"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Microsoft Manged Desktop évalue régulièrement les besoins des appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtre des Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
+Microsoft Manged Desktop évalue régulièrement les besoins de l’appareil à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtrer les Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par **\*** . 

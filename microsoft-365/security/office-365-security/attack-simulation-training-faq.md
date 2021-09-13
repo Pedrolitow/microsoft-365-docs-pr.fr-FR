@@ -21,11 +21,11 @@ description: Les administrateurs peuvent en savoir plus sur les considérations 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204480"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
@@ -39,7 +39,7 @@ Bien que l’ensemble de l’expérience de création et de planification de sim
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>URL de simulation de hameçonnage bloquées par la navigation google Coffre
 
-Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par la formation à la simulation d’attaque comme non sûres. Google Coffre navigation dans Google Chrome bloque certaines URL de hameçonnage simulées avec un message d’avance **de site.** Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
+Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par la formation à la simulation d’attaque comme non sûres. Google Coffre navigation dans Google Chrome bloque certaines URL de hameçonnage simulée avec un message d’avance **de site.** Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
 
 ![Avertissement d’avance du site dans Google Chrome.](../../media/attack-sim-chrome-deceptive-site-message.png)
 
@@ -51,7 +51,7 @@ Dans le cadre de la phase de planification, veillez à vérifier la disponibilit
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Simulation de hameçonnage et URL d’administrateur bloquées par les solutions proxy réseau et les pilotes de filtre
 
-Les URL de simulation de hameçonnage et les URL d’administrateur peuvent être bloquées ou abandonnées par vos filtres ou périphériques de sécurité intermédiaires. Par exemple :
+Les URL de simulation d’hameçonnage et les URL d’administrateur peuvent être bloquées ou abandonnées par vos filtres ou périphériques de sécurité intermédiaires. Par exemple :
 
 - Pare-feu
 - Solutions de pare-feu d’application web (WAF)
@@ -78,7 +78,7 @@ Seuls les utilisateurs non invités valides avec une boîte aux lettres valide s
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>Les rapports de formation sur la simulation d’attaques ne contiennent pas de détails sur l’activité
 
-La formation à la simulation d’attaques int mente des informations riches et actionnables qui vous informent de la progression de la préparation aux menaces de vos employés. Si les rapports de formation sur la simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est allumée dans votre organisation (elle est allumée par défaut).
+La formation sur la simulation d’attaques int mente des informations riches et actionnables qui vous informent de la progression de la préparation aux menaces de vos employés. Si les rapports de formation sur la simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est allumée dans votre organisation (elle est allumée par défaut).
 
 La recherche dans le journal d’audit est requise par la formation à la simulation d’attaque afin que les événements soient capturés, enregistrés et lus. La fin de la recherche dans le journal d’audit a les conséquences suivantes pour la formation à la simulation d’attaque :
 
@@ -104,7 +104,7 @@ Une fois la simulation entrée dans **l’étape En cours,** vous remarquerez qu
 
 ![Rapports dans l’état En cours.](../../media/attack-sim-in-progress.png)
 
-La mise à jour des rapports de simulation individuels après la transition vers l’état En cours peut prendre jusqu’à 30 **minutes.** Les données du rapport continuent de s’établir jusqu’à ce que la simulation atteigne **l’état Terminé.** Les mises à jour de rapports se produisent aux intervalles suivants :
+La mise à jour des rapports de simulation individuels après la transition vers l’état **En** cours peut prendre jusqu’à 30 minutes. Les données du rapport continuent de s’établir jusqu’à ce que la simulation atteigne **l’état Terminé.** Les mises à jour de rapports se produisent aux intervalles suivants :
 
 - Toutes les 10 minutes pour les 60 premières minutes.
 - Toutes les 15 minutes après 60 minutes jusqu’à 2 jours.

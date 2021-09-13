@@ -15,18 +15,18 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 96a27d562bdde03d5d94d8a39ecf45d64ec9bf18
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567963"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204251"
 ---
 # <a name="step-4-the-tasks-tab"></a>Étape 4 : onglet Tâches
 
 Sous l’onglet Tâches, vous devez fournir les chemins d’accès à vos scripts de test qui se trouveraient dans le dossier zip que vous avez chargé sous l’onglet fichiers binaires.
 
   - **Scripts de test out-of-box :** Tapez les chemins d’accès relatifs à vos scripts d’installation, de lancement, de fermeture et de désinstallation. Vous avez également la possibilité de sélectionner des paramètres supplémentaires pour le script d’installation.
-  - **Scripts de test fonctionnels :** Tapez le chemin d’accès relatif à chaque script de test fonctionnel téléchargé. Des scripts de test fonctionnels supplémentaires peuvent être ajoutés à l’aide ```Add Script``` du bouton. Vous avez besoin d’au moins un (1) script et pouvez ajouter jusqu’à huit (8) scripts de test fonctionnels. 
+  - **Scripts de test fonctionnels :** Tapez le chemin d’accès relatif à chaque script de test fonctionnel téléchargé. Des scripts de test fonctionnels supplémentaires peuvent être ajoutés à l’aide ```Add Script``` du bouton. Vous avez besoin d’au moins un script (1) et pouvez ajouter jusqu’à huit (8) scripts de test fonctionnels. 
   
     Les scripts sont exécutés dans la séquence de chargement et un échec dans un script particulier arrête l’exécution des scripts suivants.
     Vous avez également la possibilité de sélectionner des paramètres supplémentaires pour chaque script fourni.
@@ -53,7 +53,7 @@ _**Zip_file_uploaded**_
   - **Script.ps1** _dossier1/script.ps1_ comme chemin d’accès relatif.
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Afficher les détails de l’onglet Options de test dans l’article suivant 
 > [!div class="nextstepaction"]

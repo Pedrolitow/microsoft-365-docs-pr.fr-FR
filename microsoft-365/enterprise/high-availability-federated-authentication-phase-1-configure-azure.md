@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée haute disponibilité pour Microsoft 365.'
 ms.openlocfilehash: 6f9e06f74b2ce635b05faa0da6cb2eae3d430c31
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205595"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -94,7 +94,7 @@ Pour deux serveurs DNS (Domain Name System) dans votre réseau local que vous so
    
  **Tableau D : serveurs DNS locaux**
   
-Pour router les paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient la liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
+Pour router les paquets du réseau entre différents locaux vers le réseau de votre organisation à travers la connexion VPN de site à site, vous devez configurer le réseau virtuel avec un réseau local qui contient une liste des espaces d’adressag (en notation CIDR) pour tous les emplacements accessibles sur le réseau local de votre organisation. La liste des espaces d'adressage qui définissent votre réseau local doit être unique et ne doit pas se chevaucher avec l'espace d'adressage utilisé pour d'autres réseaux virtuels ou d'autres réseaux locaux.
   
 Pour l'ensemble des espaces d'adressage du réseau local, remplissez le tableau L. Notez que le tableau comporte trois entrées vides, mais vous aurez généralement besoin d'en ajouter. Renseignez-vous auprès de votre service informatique pour déterminer cette liste d'espaces d'adressage.
   

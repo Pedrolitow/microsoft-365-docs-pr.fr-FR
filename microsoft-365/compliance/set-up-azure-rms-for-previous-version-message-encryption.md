@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La version précédente de chiffrement de messages Office 365 dépend de Microsoft Azure Rights Management (anciennement Windows Azure Active Directory Rights Management).
-ms.openlocfilehash: 611e8f645b9149898e5c3cb0f10305e49deb90cd92b14aad7c946ead147e8fd9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 978a8027c79de574b80aeedabcbbd51fa6f9e2a0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53871368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205900"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Configurer Azure Rights Management pour la version précédente du chiffrement de messages
 
-Cette rubrique décrit les étapes à suivre pour activer puis configurer Azure Rights Management (RMS), qui fait partie d’Azure Information Protection, pour une utilisation avec la version précédente de chiffrement de messages Office 365 (OME).
+Cette rubrique décrit les étapes à suivre pour activer puis configurer Azure Rights Management (RMS), qui fait partie d’Azure Information Protection, à utiliser avec la version précédente de chiffrement de messages Office 365 (OME).
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Cet article s’applique uniquement à la version précédente d’OME
 
@@ -50,7 +50,7 @@ Vous devez activer les Azure Rights Management afin que les utilisateurs de votr
 Un TPD est un fichier XML qui contient des informations sur les paramètres de gestion des droits de votre organisation. Par exemple, le TPD contient des informations sur le certificat de licence serveur (SLC) utilisé pour signer et chiffrer les certificats et les licences, les URL utilisées pour la gestion des licences et la publication, etc. Vous importez le TPD dans votre organisation à l’aide de Windows PowerShell.
   
 > [!IMPORTANT]
-> Auparavant, vous pouviez choisir d’importer des TPD à partir du service AD RMS (Active Directory Rights Management Service) dans votre organisation. Toutefois, cela vous empêche d’utiliser les nouvelles fonctionnalités OME et n’est pas recommandé. Si votre organisation est actuellement configurée de cette façon, Microsoft vous recommande de créer un plan pour migrer de votre service RMS Active Directory local vers Azure Information Protection en nuage. Pour plus d’informations, voir [Migration d’AD RMS vers Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Vous ne pourrez pas utiliser les nouvelles fonctionnalités OME tant que vous n’aurez pas effectué la migration vers Azure Information Protection.
+> Auparavant, vous pouviez choisir d’importer des TPD à partir du service AD RMS (Active Directory Rights Management Service) dans votre organisation. Toutefois, cela vous empêchera d’utiliser les nouvelles fonctionnalités OME et n’est pas recommandé. Si votre organisation est actuellement configurée de cette façon, Microsoft vous recommande de créer un plan pour migrer de votre service RMS Active Directory local vers Azure Information Protection en nuage. Pour plus d’informations, voir [Migration d’AD RMS vers Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Vous ne pourrez pas utiliser les nouvelles fonctionnalités OME tant que vous n’aurez pas effectué la migration vers Azure Information Protection.
   
  **Pour importer des TPD à partir d’Azure RMS**
   
@@ -58,7 +58,7 @@ Un TPD est un fichier XML qui contient des informations sur les paramètres de g
 
 2. Choisissez l’URL de partage de clé qui correspond à l’emplacement géographique de votre organisation :
 
-|**Emplacement**|**URL d’emplacement de partage de clé**|
+|**Location**|**URL d’emplacement de partage de clé**|
 |:-----|:-----|
 |Amérique du Nord  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Union européenne  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |

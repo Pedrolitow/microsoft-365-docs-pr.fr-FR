@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 9deece85ec5a310cea652af1dd1da39cea386848
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204750"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Gérer Microsoft Defender pour les incidents de point de terminaison
 
@@ -49,7 +49,7 @@ Vous pouvez affecter des incidents à vous-même, modifier l’état et la class
 > [!TIP]
 > Pour une visibilité supplémentaire en un coup d’œil, les noms des incidents sont générés automatiquement en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 >
-> Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+> Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 >
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leurs noms.
 >
@@ -80,7 +80,7 @@ Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [File d’attente des incidents](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Afficher et organiser la file d’attente des incidents](view-incidents-queue.md)
 - [Examiner des incidents](investigate-incidents.md)

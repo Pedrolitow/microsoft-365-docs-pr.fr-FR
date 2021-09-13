@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les attaques par consen
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f2e5139ed9c16026ec49eab9318588b7704a0fb7f690fef5ea6cc4ce3274fde
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56769968"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204449"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -50,13 +50,13 @@ Vous devez effectuer une recherche dans le journal **d’audit** pour trouver de
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Étapes de recherche des signes de cette attaque
 
-1. Ouvrez le **portail Microsoft 365 Defender,** <https://security.microsoft.com> puis sélectionnez **Audit.** Ou, pour aller directement à la page **Audit,** utilisez <https://security.microsoft.com/auditlogsearch> .
+1. Ouvrez le **portail Microsoft 365 Defender,** <https://security.microsoft.com> puis sélectionnez **Audit.** Ou, pour accéder directement à la page **Audit**, utilisez <https://security.microsoft.com/auditlogsearch>.
 
 2. Dans la page **Audit,** vérifiez que **l’onglet** Recherche est sélectionné, puis configurez les paramètres suivants :
    - **Plage de dates et d’heure**
    - **Activités :** vérifiez que les **résultats de toutes les activités** sont sélectionnés.
 
-   Lorsque vous avez terminé, cliquez sur **Rechercher.**
+   Lorsque vous avez terminé, cliquez sur **Rechercher**.
 
 3. Cliquez sur la **colonne** Activité pour trier les résultats et rechercher **consentement à l’application.**
 
@@ -96,7 +96,7 @@ Cela vous indique les applications qui sont affectées à l’utilisateur et les
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Étapes pour que vos utilisateurs émanent l’accès à leur application
 
-Demande à vos utilisateurs <https://myapps.microsoft.com> d’y accéder et de consulter leur propre accès à l’application. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
+Demande à vos utilisateurs d’y accéder et de consulter <https://myapps.microsoft.com> leur propre accès aux applications. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre pour ce faire avec PowerShell
 
@@ -105,7 +105,7 @@ Le moyen le plus simple de vérifier l’attaque par consentement illicite consi
 #### <a name="pre-requisites"></a>Conditions préalables
 
 - La bibliothèque Azure AD PowerShell est installée.
-- Droits d’administrateur général sur le client sur qui le script sera exécuté.
+- Droits d’administrateur général sur le client sur le client sur qui le script sera exécuté.
 - Administrateur local sur l’ordinateur à partir duquel exécuter les scripts.
 
 > [!IMPORTANT]

@@ -18,11 +18,11 @@ search.appverid:
 recommendations: false
 description: Découvrez les stratégies d Microsoft 365 d’expiration des groupes.
 ms.openlocfilehash: 4617124801ed0400481bd81a453c6520a0c8d73a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204245"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 d’expiration de groupe
 
@@ -47,11 +47,11 @@ Notez que la seule activité Yammer qui déclenchera le renouvellement automatiq
 Il est important de savoir que l’expiration est désactivée par défaut. Les administrateurs doivent l’activer pour leur organisation s’ils souhaitent l’utiliser.
 
 > [!NOTE]
-> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Microsoft 365 vous obligent à posséder, mais pas nécessairement attribuer des licences Azure AD Premium pour les membres de tous les groupes auquel la stratégie d’expiration est appliquée. Pour plus d’informations, [voir Mise en Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
+> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Microsoft 365 vous obligent à posséder, mais pas nécessairement attribuer des licences Azure AD Premium pour les membres de tous les groupes auquel la stratégie d’expiration est appliquée. Pour plus d’informations, [voir La mise en Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui pouvez configurer et utiliser la stratégie d’expiration Microsoft 365 groupes de sécurité ?
 
-|Rôle|Ce qu’ils peuvent faire|
+|Role|Ce qu’ils peuvent faire|
 |---------|---------|
 |Office 365 administrateur général (dans Azure, administrateur d’entreprise), administrateur utilisateur|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d Microsoft 365 d’expiration des groupes.|
 |Utilisateur|Renouveler [ou restaurer](/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Microsoft 365 dont il est propriétaire|
@@ -76,7 +76,7 @@ Si vous avez mis en place une stratégie de rétention pour les groupes dans le 
 
 Les propriétaires de groupe ne seront avertis que par courrier électronique. Si le groupe a été créé via le Planificateur, SharePoint ou toute autre application, les notifications d’expiration sont toujours envoyés par courrier électronique. Si le groupe a été créé via Teams, le propriétaire du groupe reçoit une notification de renouvellement via la section activité. Il n’est pas recommandé d’activer l’expiration sur un groupe si le propriétaire de votre groupe n’a pas d’adresse de messagerie valide.
 
-Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un e-mail leur permettant de renouveler facilement le groupe. S’il ne le renouvelle pas, il reçoit un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
+Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un e-mail leur permettant de renouveler facilement le groupe. S’ils ne le renouvellent pas, ils recevront un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
 
 Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelle le groupe avant son expiration, l’administrateur peut toujours restaurer le groupe jusqu’à 30 jours après l’expiration. Pour plus d’informations, [voir : Restaurer un groupe Microsoft 365 supprimé.](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)
 
@@ -84,7 +84,7 @@ Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne r
 
 Si vous avez un groupe que vous ne prévoyez plus d’utiliser, mais que vous souhaitez conserver son contenu, voir Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations sur l’exportation d’informations à partir des différents services de groupes.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

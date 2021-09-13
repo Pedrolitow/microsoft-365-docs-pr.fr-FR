@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: e5f62a59b66db83b5c9d191d2f7496b280abbc18
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58824057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203981"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurer Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -53,7 +53,7 @@ Le tableau suivant répertorie les conditions de base requises pour Defender pou
 
 | Conditions requises | Description |
 |:---|:---|
-| Conditions d'octroi de licence | Defender for Endpoint Plan 1 (prévisualisation) <br/><br/>*Si vous avez Microsoft 365 E3, vous pouvez rejoindre le programme d’aperçu.* |
+| Conditions d'octroi de licence | Defender for Endpoint Plan 1 (aperçu) <br/><br/>*Si vous avez Microsoft 365 E3, vous pouvez rejoindre le programme d’aperçu.* |
 | Configuration requise pour le navigateur | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Systèmes d’exploitation | Windows 10, version 1709 ou ultérieure <br/>macOS : 11.5 (Big Sur), 10.15.7 (Contrôle), ou 10.14.6 (Mojave) <br/>iOS <br/>Système d’exploitation Android  |
 | Datacenter | L’un des emplacements de centre de données suivants : <br/>- Union européenne <br/>- Royaume-Uni <br/>- États-Unis |
@@ -104,7 +104,7 @@ Le tableau suivant décrit les rôles clés à prendre en compte pour Defender f
 
 | Role | Description |
 |:---|:---|
-| Administrateurs globaux (également appelés administrateurs globaux) <br/><br/> *En tant que meilleure pratique, limitez le nombre d’administrateurs globaux.* | Les administrateurs globaux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise à Microsoft 365 ou Microsoft Defender pour Endpoint Plan 1 est un administrateur général par défaut. <br/><br/> Les administrateurs globaux peuvent accéder/modifier les paramètres sur tous les portails Microsoft 365, tels que : <br/>- Le Centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft Endpoint Manager centre d’administration ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
+| Administrateurs globaux (également appelés administrateurs globaux) <br/><br/> *En tant que meilleure pratique, limitez le nombre d’administrateurs globaux.* | Les administrateurs globaux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise à Microsoft 365 ou Microsoft Defender pour Endpoint Plan 1 est un administrateur général par défaut. <br/><br/> Les administrateurs globaux peuvent accéder/modifier les paramètres sur tous les portails Microsoft 365, tels que : <br/>- Le Centre d'administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft Endpoint Manager centre d’administration ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
 | Administrateurs de sécurité (également appelés administrateurs de sécurité) | Les administrateurs de sécurité peuvent effectuer des tâches d’opérateur de sécurité ainsi que les tâches suivantes : <br/>- Surveiller les stratégies liées à la sécurité <br/>- Gérer les menaces et alertes de sécurité <br/>- Afficher les rapports |
 | Opérateur de sécurité | Les opérateurs de sécurité peuvent effectuer des tâches de lecteur de sécurité ainsi que les tâches suivantes : <br/>- Afficher des informations sur les menaces détectées <br/>- Examiner les menaces détectées et y répondre  |
 | Lecteur Sécurité | Les lecteurs de sécurité peuvent effectuer les tâches suivantes : <br/>- Afficher les stratégies liées à la sécurité dans Microsoft 365 services <br/>- Afficher les menaces et alertes de sécurité <br/>- Afficher les rapports  |
@@ -138,7 +138,7 @@ Pour configurer votre protection nouvelle génération dans Microsoft Endpoint M
 
 2. Sélectionnez **l’Antivirus de sécurité des** points de  >  terminaison, puis sélectionnez une stratégie existante. (Si vous n’avez pas de stratégie existante, créez-en une.)
 
-3. Définissez ou modifiez vos paramètres de configuration antivirus. Vous avez besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
+3. Définissez ou modifiez vos paramètres de configuration antivirus. Besoin d’aide ? Reportez-vous aux ressources suivantes : <br/>
 
    - [Paramètres pour Windows 10 Antivirus Microsoft Defender stratégie dans Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configurer Defender pour endpoint sur les fonctionnalités iOS](ios-configure-features.md)
@@ -227,7 +227,7 @@ Nous vous recommandons d’Microsoft Endpoint Manager pour configurer l’accès
 
 9. Sous **l’onglet Révision + créer,** examinez les paramètres de votre stratégie, puis choisissez **Créer.** La stratégie sera appliquée à tous les points de terminaison qui ont été prochainement intégrés à Defender for Endpoint.
 
-### <a name="device-control"></a>Contrôle d’appareil
+### <a name="device-control"></a>Contrôle des appareils
 
 Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. Nous vous recommandons d’Microsoft Endpoint Manager pour configurer les paramètres de contrôle de votre appareil.
 

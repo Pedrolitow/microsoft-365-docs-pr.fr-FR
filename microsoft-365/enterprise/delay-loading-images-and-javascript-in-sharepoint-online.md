@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement des images et des éléments JavaScript non essentiels.
 ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573138"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207619"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
@@ -99,7 +99,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Enregistrez le fichier texte en tant que fichier JavaScript avec l’extension .js, par exemple delayLoadImages.js.
   
-Une fois que vous avez terminé delayLoadImages.js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, ajoutez un lien de script à l’en-tête dans la page maître. Une fois qu’il est dans une page maître, le JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page maître. Sinon, si vous avez l’intention de l’utiliser uniquement sur une page de votre site, utilisez le script éditeur de web part pour incorporer le JavaScript dans la page. Consultez ces rubriques pour plus d’informations :
+Une fois que vous avez terminé delayLoadImages.js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, ajoutez un lien de script à l’en-tête de la page maître. Une fois qu’il est dans une page maître, le JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page maître. Sinon, si vous avez l’intention de l’utiliser uniquement sur une page de votre site, utilisez le script éditeur de web part pour incorporer le JavaScript dans la page. Consultez ces rubriques pour plus d’informations :
   
 - [Comment appliquer une page maître à un site dans SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
@@ -119,7 +119,7 @@ Retarder le chargement de l’image à l’aide de JavaScript peut être une tec
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub code : injection de JavaScript pour améliorer les performances
 
-Ne manquez pas l’article et l’exemple de code sur [l’injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournis GitHub.
+Ne manquez pas l’article et l’exemple de code sur [l’injection JavaScript](https://go.microsoft.com/fwlink/p/?LinkId=524759) fournie sur GitHub.
   
 ## <a name="see-also"></a>Voir aussi
 

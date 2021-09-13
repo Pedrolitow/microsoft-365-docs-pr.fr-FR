@@ -22,11 +22,11 @@ ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: L’administrateur peut apprendre à utiliser le partage d’audit dans Microsoft 365 journal d’audit pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 2d6e25b4bc2be325061996cee61fd4d2c1ccb786
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205716"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Utiliser le partage d’audit dans le journal d’audit
 
@@ -36,7 +36,7 @@ Le partage est une activité clé dans SharePoint Online et OneDrive Entreprise,
 
 Les événements de partage (sans les événements liés à la stratégie de partage et aux liens de partage) sont différents des événements liés aux fichiers et aux dossiers d’une manière principale : un utilisateur effectue une action qui a un effet sur un autre utilisateur. Par exemple, lorsqu’un utilisateur de ressource A donne à l’utilisateur B un accès à un fichier. Dans cet exemple, l’utilisateur A est *l’utilisateur agissant* et l’utilisateur B *l’utilisateur cible.* Dans le schéma SharePoint fichier, l’action de l’utilisateur agissant affecte uniquement le fichier lui-même. Lorsque l’utilisateur A ouvre un fichier, les seules informations nécessaires dans **l’événement FileAccessed** sont l’utilisateur agissant. Pour résoudre cette différence, il existe un schéma distinct, appelé schéma de partage *SharePoint,* qui capture plus d’informations sur les événements de partage. Cela garantit que les administrateurs ont une visibilité sur les personnes qui ont partagé une ressource et sur l’utilisateur avec qui la ressource a été partagée. 
   
-Le schéma de partage fournit deux champs supplémentaires dans un enregistrement d’audit relatif au partage d’événements : 
+Le schéma de partage fournit deux champs supplémentaires dans un enregistrement d’audit lié au partage d’événements : 
   
 - **TargetUserOrGroupType :** Indique si l’utilisateur ou le groupe cible est membre, invité, sharepointgroup, groupe de sécurité ou partenaire.
 
@@ -52,7 +52,7 @@ Le partage est défini par lorsqu’un utilisateur (l’utilisateur *agissant)* 
 
 - **SharingInvitationCreated :** Un utilisateur de votre organisation a tenté de partager une ressource (probablement un site) avec un utilisateur externe. Cela entraîne l’envoi d’une invitation de partage externe à l’utilisateur cible. Aucun accès à la ressource n’est accordé à ce stade.
 
-- **SharingInvitationAccepted :** L’utilisateur externe a accepté l’invitation de partage envoyée par l’utilisateur en action et a désormais accès à la ressource.
+- **SharingInvitationAccepted :** L’utilisateur externe a accepté l’invitation de partage envoyée par l’utilisateur agissant et a désormais accès à la ressource.
 
 - **AnonymousLinkCreated :** Un lien anonyme (également appelé lien « Tout le monde » ) est créé pour une ressource. Étant donné qu’un lien anonyme peut être créé, puis copié, il est raisonnable de supposer que tout document ayant un lien anonyme a été partagé avec un utilisateur cible.
 
@@ -82,7 +82,7 @@ Si un compte d’utilisateur de l’utilisateur cible n’est pas dans l’annua
    
       - **AddedToSecureLink** 
 
-      - **SharingInvitationCreated** (cet événement est enregistré uniquement lorsque la ressource partagée est un site)
+      - **SharingInvitationCreated** (cet événement est consigné uniquement lorsque la ressource partagée est un site)
     
    - Lorsque l’utilisateur cible accepte l’invitation de partage qui lui est envoyée (en cliquant sur le lien dans l’invitation), SharePoint enregistre un événement **SharingInvitationAccepted** et attribue à l’utilisateur cible les autorisations d’accès à la ressource. Si un lien anonyme est envoyé à l’utilisateur cible, **l’événement AnonymousLinkUsed** est enregistré une fois que l’utilisateur cible a utilisé le lien pour accéder à la ressource. Pour les liens sécurisés, un **événement FileAccessed** est enregistré lorsqu’un utilisateur externe utilise le lien pour accéder à la ressource.
 
@@ -126,7 +126,7 @@ Pour obtenir des instructions détaillées, consultez « Étape 2 : mise en form
 
 ### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>Étape 3 : Filtrer le fichier CSV pour les ressources partagées avec des utilisateurs externes
 
-L’étape suivante consiste à filtrer le CSV pour les différents événements liés au partage qui ont été précédemment décrits dans la section SharePoint [événements de partage.](#sharepoint-sharing-events) Vous pouvez également filtrer la colonne **TargetUserOrGroupType** pour afficher tous les enregistrements dont la valeur de cette propriété est **Invité**. 
+L’étape suivante consiste à filtrer le CSV pour les différents événements liés au partage qui ont été précédemment décrits dans la section [SharePoint événements de partage.](#sharepoint-sharing-events) Vous pouvez également filtrer la colonne **TargetUserOrGroupType** pour afficher tous les enregistrements dont la valeur de cette propriété est **Invité**. 
 
 Après avoir suivi les instructions de l’étape précédente pour préparer le fichier CSV à l’aide de l’éditeur PowerQuery, faites ce qui suit :
     

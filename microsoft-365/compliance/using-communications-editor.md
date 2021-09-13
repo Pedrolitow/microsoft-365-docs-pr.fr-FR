@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’Éditeur de communications pour modifier le texte et fusionner des variables de champ lors de la mise en forme de votre contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49751b3b5dccace1a77e29145e389b45168f441554adbdfa89d0aeb02219a48f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801409"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205707"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
 

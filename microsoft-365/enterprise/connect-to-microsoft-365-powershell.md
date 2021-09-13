@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre client Microsoft 365 à l’aide de PowerShell pour Microsoft 365 afin d’effectuer des tâches de Centre d’administration à partir de la ligne de commande.
 ms.openlocfilehash: 743f4a7b412f14bc942548c688fc3060fdebf53e
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207739"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connexion à Microsoft 365 à l’aide de PowerShell
 

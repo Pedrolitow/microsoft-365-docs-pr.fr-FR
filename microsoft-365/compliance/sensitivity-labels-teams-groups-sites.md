@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: edd6aea4aade2378a195aa471ba0aa329afb7582
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205939"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -315,9 +315,11 @@ Vous pouvez également modifier et appliquer une étiquette à partir de cette p
 
 2. Sélectionnez l’onglet **Stratégies**, puis sélectionnez **Modifier** pour le paramètre **Sensibilité**.
 
-3. Dans le volet **Modifier le paramètre de confidentialité**, sélectionnez l’étiquette de confidentialité que vous voulez appliquer au site, puis sélectionnez **Enregistrer**.
+3. Dans le volet **Modifier le paramètre de sensibilité**, sélectionnez l’étiquette de sensibilité que vous souhaitez appliquer au site. Contrairement aux applications utilisateur, où les étiquettes de sensibilité peuvent être attribuées à des utilisateurs spécifiques, le centre d’administration affiche toutes les étiquettes de niveau de sensibilité pour votre client. Une fois que vous avez choisi une étiquette, sélectionnez **Enregistrer**.
 
 ## <a name="support-for-sensitivity-labels"></a>Prise en charge des étiquettes de confidentialité
+
+Lorsque vous utilisez des centres d’administration qui prennent en charge les étiquettes de confidentialité, vous voyez toutes les étiquettes de confidentialité pour votre client. En comparaison, les applications utilisateur et les services qui filtrent les étiquettes de confidentialité en fonction des stratégies de publication peuvent vous faire voir un sous-ensemble de ces étiquettes.
 
 Les applications et services suivants prennent en charge les étiquettes de confidentialité configurées pour les sites et les paramètres de groupe :
 
@@ -326,7 +328,7 @@ Les applications et services suivants prennent en charge les étiquettes de conf
   - Centre d’administration SharePoint
   - Portail Azure Active Directory
   - Centre d’administration Microsoft 365
-  - Centre de conformité Microsoft 365, Centre de sécurité Microsoft 365, Centre de sécurité et de conformité
+  - Centre de conformité Microsoft 365
 
 - Utiliser les applications et services :
 
@@ -346,7 +348,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
 
 - Utiliser les applications et services :
 
-  - Dynamics 365
+  - Dynamics 365
   - Yammer
   - Project
   - Power BI
@@ -450,6 +452,6 @@ Si ces conteneurs ont des valeurs de classification Azure AD qui leur sont appli
 
 Regardez l’enregistrement du webinaire et les questions traitées pour [Utilisation d’étiquettes de confidentialité avec Microsoft Teams, les groupes Office 365 et les sites SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 
-Pour plus d’informations sur la gestion des sites connectés et des sites de canaux Teams, consultez [Gérer les sites connectés Teams et les sites de canal](/SharePoint/teams-connected-sites).
-
 Ce webinaire a été enregistré lorsque la fonctionnalité était en version aperçu. vous remarquerez peut-être quelques différences dans l’interface utilisateur. Toutefois, les informations relatives à cette fonctionnalité sont encore précises, avec toutes les nouvelles fonctionnalités documentées sur cette page.
+
+Pour plus d’informations sur la gestion des sites connectés et des sites de canaux Teams, consultez [Gérer les sites connectés Teams et les sites de canal](/SharePoint/teams-connected-sites).

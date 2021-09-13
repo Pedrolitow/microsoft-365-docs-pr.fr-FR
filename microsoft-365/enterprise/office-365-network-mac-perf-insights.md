@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Microsoft 365 Réseau Informations
 ms.openlocfilehash: e5b46b4a19a52807a0690722e9a5f5f46727c7ae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570508"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205396"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 Réseau Informations
 
@@ -190,7 +190,7 @@ Cela indique que la majorité de vos utilisateurs rencontreront probablement des
 
 Activez la visibilité de la connectivité réseau de l’emplacement du bureau si vous ne l’avez pas déjà fait. Vous souhaitez identifier les bureaux qui sont touchés par une connectivité réseau médiocre qui a un impact sur SharePoint et trouver des moyens d’améliorer le périmètre réseau à chaque bureau qui connecte les utilisateurs au réseau de Microsoft.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Connectivité réseau dans le centre de Administration Microsoft 365 (aperçu)](office-365-network-mac-perf-overview.md)
 

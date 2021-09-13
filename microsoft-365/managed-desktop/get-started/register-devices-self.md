@@ -12,11 +12,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 9be51ab9204ac8a950bf316f716b70b824980ba8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204054"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -91,7 +91,7 @@ Procédez comme suit :
 
 1. Dans **le chargement de** fichier, fournissez un chemin d’accès au fichier CSV que vous avez créé précédemment.
 2. Sélectionnez [un profil d’appareil](../service-description/profiles.md) dans le menu déroulant.
-3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur les **appareils,** marqués comme **étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et attend qu’un utilisateur commence à l’utiliser. 
+3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur les **appareils,** marqués comme **étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et en attente qu’un utilisateur commence à l’utiliser. 
 
 > [!NOTE]
 > Si vous modifiez manuellement l’appartenance au groupe Azure Active Directory (AAD) d’un appareil, il sera automatiquement réassigné au groupe pour son profil d’appareil et supprimé des groupes en conflit.
@@ -102,7 +102,7 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 |---------------|-------------|
 | Inscription en attente | L’inscription n’est pas encore terminée. Revenir plus tard. |
 | Échec de l’inscription | L’inscription n’a pas pu être terminée. Pour plus [d’informations, voir](#troubleshooting-device-registration) Résolution des problèmes d’inscription de l’appareil. |
-| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Manged Desktop les guide tout au long de la première mise en place, vous n’avez donc pas besoin d’autres préparations. |
+| Prêt pour l’utilisateur | L’inscription a réussi et l’appareil est maintenant prêt à être remis à l’utilisateur. Microsoft Manged Desktop les guidera tout au long de la première mise en place, il n’est donc pas nécessaire d’en faire d’autres. |
 | Actif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Cet état indique également qu’ils utilisent régulièrement l’appareil. |
 | Inactif | L’appareil a été remis à l’utilisateur et il s’est inscrit auprès de votre client. Toutefois, ils n’ont pas utilisé l’appareil récemment (au cours des 7 derniers jours).  | 
 

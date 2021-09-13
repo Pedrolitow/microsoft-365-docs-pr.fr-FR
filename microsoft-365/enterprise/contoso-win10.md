@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
 ms.openlocfilehash: 9315e57fb08f0adda39f1a08107d8d96e1c2bc24
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207660"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 

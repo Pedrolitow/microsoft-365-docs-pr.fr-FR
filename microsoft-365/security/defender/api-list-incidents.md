@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fbc7e7147868649982defec9593b8852737a6ca7642faec4f125eca471c4e89d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0497ac31c11d04d812e9d8aca81304369ef459fb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853354"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204551"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API de liste des incidents dans Microsoft 365 Defender
 
@@ -177,9 +177,9 @@ userPrincipalName|Disponible si entityType est *User* / *MailBox* / *MailMessage
 mailboxDisplayName|Disponible si entityType est *MailBox*.|test User2
 mailboxAddress|Disponible si entityType est *User* / *MailBox* / *MailMessage*.|testUser2@contoso.com
 clusterBy|Disponible si entityType est  *MailCluster*.|Objet ; P2SenderDomain; ContentType
-expéditeur|Disponible si entityType est *User* / *MailBox* / *MailMessage*.|user.abc@mail.contoso.co.in
+sender|Disponible si entityType est *User* / *MailBox* / *MailMessage*.|user.abc@mail.contoso.co.in
 destinataire|Disponible si entityType est *MailMessage*.|testUser2@contoso.com
-subject|Disponible si entityType est *MailMessage*.|\[Attention \] externe
+sujet|Disponible si entityType est *MailMessage*.|\[Attention \] externe
 deliveryAction|Disponible si entityType est *MailMessage*.|Remis
 securityGroupId|Disponible si entityType est  *SecurityGroup*.|301c47c8-e15f-4059-ab09-e2ba9ffd372b
 securityGroupName|Disponible si entityType est  *SecurityGroup*.|Opérateurs de configuration réseau

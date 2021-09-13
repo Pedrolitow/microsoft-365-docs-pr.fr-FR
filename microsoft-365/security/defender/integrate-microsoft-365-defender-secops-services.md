@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a790d81d1e8c97ffad85be921abf5fc0efb87ad2aaaddb72629eac9b5d9d392b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0fc4d68cba89c3ee372baf17c303b21422eb441e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204497"
 ---
-# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3 : Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
+# <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Étape 3. Planifier l’intégration Microsoft 365 Defender avec votre catalogue de services SOC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

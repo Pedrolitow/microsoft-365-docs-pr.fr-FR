@@ -18,11 +18,11 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 07/27/2021
 ms.openlocfilehash: e8388721d11d25d17bc8b8bbbe505e968d243c9f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203867"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -37,7 +37,7 @@ La protection contre la falsification est disponible pour les appareils qui exé
 - Windows Serveur, version 1803 ou ultérieure
 - Windows Server 2016
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre la falsification permet d’éviter ce genre d’événements.
 
@@ -50,7 +50,7 @@ Avec la protection contre la falsification, les applications malveillantes ne pe
 - Désactivation de la protection cloud
 - Suppression des mises à jour d’informations de sécurité
 
-### <a name="how-it-works"></a>Mode de fonctionnement
+### <a name="how-it-works"></a>Fonctionnement
 
 La protection contre la falsification verrouille Antivirus Microsoft Defender à ses valeurs par défaut sécurisées et empêche vos paramètres de sécurité d’être modifiés par le biais d’applications et de méthodes telles que :
 

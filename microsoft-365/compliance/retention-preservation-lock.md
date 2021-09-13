@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Utilisez un verrou de conservation avec les stratégies de rétention et les stratégies d’étiquette de conservation pour vous aider à respecter les exigences réglementaires et à vous protéger des administrateurs malveillants.
 ms.openlocfilehash: eb842a3d5add719338773f088b07dcf4c32ede53
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574158"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206004"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Utiliser le verrouillage de conservation pour restreindre les modifications apportées aux stratégies de rétention et d’étiquettes de rétention
 

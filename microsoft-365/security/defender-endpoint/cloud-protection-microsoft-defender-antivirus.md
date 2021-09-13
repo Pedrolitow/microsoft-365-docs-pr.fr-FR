@@ -1,5 +1,5 @@
 ---
-title: Protection et protection cloud Antivirus Microsoft Defender
+title: Protection cloud et Antivirus Microsoft Defender
 description: En savoir plus sur la protection et les Antivirus Microsoft Defender
 keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, antivirus nouvelle génération, apprentissage automatique, logiciel anti-programme malveillant, sécurité, defender, cloud, protection cloud
 search.product: eADQiWindows 10XVcnh
@@ -16,13 +16,13 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/26/2021
 ms.openlocfilehash: 661e368d76fcdc7a3a62523aa0c92c57790bed60
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204053"
 ---
-# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Protection et protection cloud Antivirus Microsoft Defender
+# <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Protection cloud et Antivirus Microsoft Defender
 
 **S’applique à :**
 
@@ -62,7 +62,7 @@ La protection cloud est activée par défaut. Toutefois, vous devrez peut-être 
 
 Si votre abonnement inclut Windows 10 E5, vous pouvez tirer parti des mises à jour dynamiques d’urgence de l’intelligence, qui offrent une protection quasi en temps réel contre les menaces émergentes. Lorsque vous mettez en place la protection cloud, les correctifs aux problèmes de programmes malveillants peuvent être remis via le cloud en quelques minutes, au lieu d’attendre la prochaine mise à jour. Voir Configurer Antivirus Microsoft Defender pour recevoir automatiquement de nouvelles mises à jour de [protection basées sur les rapports de notre service cloud.](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez une vue d’ensemble de la protection cloud Antivirus Microsoft Defender, voici quelques étapes suivantes :
 

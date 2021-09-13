@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Vue d’ensemble de la façon dont les rubriques sont découvertes dans Les rubriques Topics.
-ms.openlocfilehash: c85ebbda9613fb3bab2542805d8bc2c7575d0d7203f6e2bf41650fb0d9771f60
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 378bdae4ad4b8104d28da7f884f42580d29eabcc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207540"
 ---
 # <a name="topic-discovery-and-curation-in-microsoft-viva-topics"></a>Découverte et curation de rubriques dans Sujets Microsoft Viva 
 

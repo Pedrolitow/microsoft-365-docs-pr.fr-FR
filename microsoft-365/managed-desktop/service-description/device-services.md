@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8c7c4a47f4332351e632821adaf05b64bc6cf21c840a71b5b08bf8aedf063c0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e843ae91536cfa24ad8c8a257764cc7fd88b8883
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877676"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205036"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft Manged Desktop services d’appareil
 
@@ -46,6 +46,6 @@ Microsoft ne fournira pas de service pour ces éléments.
 
 Service | Description
 --- | ---  
-Personnalisation | Les appareils et accessoires fournis avec le service ne peuvent pas être personnalisés. Tous les appareils et accessoires sont fournis avec des combinaisons de couleurs, de spécifications et de 3 couleurs standard. Le déploiement d’applications et les configurations de stratégie sont gérés par le biais d’IT-as-a-Service.
+Personnalisation | Les appareils et accessoires fournis avec le service ne peuvent pas être personnalisés. Tous les appareils et accessoires sont fournis avec des combinaisons de couleurs, de spécifications et de 3 couleurs standard. Le déploiement d’applications et les configurations de stratégie sont gérés par le biais de l’it-as-a-Service.
 Récupération des données | Les données utilisateur et d’équipe, y compris la personnalisation, sont stockées dans OneDrive Entreprise, avec uniquement des données de cache résidant localement. Si les données sont intentionnellement stockées sur le système de stockage interne de l’appareil, toute récupération de données doit être tentée et terminée avant de renvoyer l’appareil à Microsoft.
 Configuration des appareils | Les appareils sont remis à l’adresse du client, où ils doivent être alimentés et mis en service par le client.

@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 84a07211126e2007b0f5740c18ef871d24497d8746d369acabf0aa9adf0203b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53864150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207531"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Préparer votre environnement à la Sujets Microsoft Viva
 

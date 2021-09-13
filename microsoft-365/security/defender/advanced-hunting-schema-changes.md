@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204564"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
@@ -51,7 +51,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | Commentaires des clients. |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicyGuid` | `EmailActionPolicyGuid` | Commentaires des clients. |
 
-## <a name="january-2021"></a>Janvier 2021
+## <a name="january-2021"></a>Janvier 2021
 
 | Nom de colonne | Nom de la valeur d’origine | Nouveau nom de valeur | Raison du changement
 |--|--|--|--|
@@ -62,15 +62,15 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `DetectionSource` | CustomerTI | Ti personnalisée | Changement de nom |
 | `DetectionSource` | OfficeATP | Microsoft Defender pour Office 365 | Changement de nom |
 | `DetectionSource` | MTP | Microsoft 365 Defender | Changement de nom |
-| `DetectionSource` | AzureATP | Microsoft Defender pour l’identité | Changement de nom |
+| `DetectionSource` | AzureATP | Microsoft Defender pour Identity | Changement de nom |
 | `DetectionSource` | CustomDetection | Détection personnalisée | Changement de nom |
 | `DetectionSource` | AutomatedIgoigation |Examen automatisé | Changement de nom |
 | `DetectionSource` | ThreatExperts | Spécialistes des menaces Microsoft | Changement de nom |
 | `DetectionSource` | Ti tiers | Capteurs tiers | Changement de nom |
-| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
 |`ServiceSource` |Protection Microsoft contre les menaces | Microsoft 365 Defender | Changement de nom |
 | `ServiceSource` | Office 365 – Protection avancée contre les menaces |Microsoft Defender pour Office 365 | Changement de nom |
-| `ServiceSource` |Azure ATP |Microsoft Defender pour l’identité | Changement de nom |
+| `ServiceSource` |Azure ATP |Microsoft Defender pour Identity | Changement de nom |
 
 `DetectionSource`est disponible dans la table [AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`est disponible dans les tables [AlertEvidence](advanced-hunting-alertevidence-table.md) et [AlertInfo.](advanced-hunting-alertinfo-table.md) 
 
@@ -99,7 +99,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
     | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Commentaires des clients. |
     | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Commentaires des clients. |
 
-## <a name="march-2021"></a>9 mars 2021
+## <a name="march-2021"></a>Mars 2021
 
 La `DeviceTvmSoftwareInventoryVulnerabilities` table a été dépréciée. Les tables et les tables le `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` remplacent.
 
@@ -107,6 +107,6 @@ La `DeviceTvmSoftwareInventoryVulnerabilities` table a été dépréciée. Les t
 
 La `AppFileEvents` table a été dépréciée. Le tableau inclut des informations qui seraient dans le tableau, ainsi que d’autres `CloudAppEvents` activités dans les services `AppFileEvents` cloud.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

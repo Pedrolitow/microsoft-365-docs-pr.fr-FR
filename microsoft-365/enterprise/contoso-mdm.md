@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprendre comment Contoso utilise Microsoft Intune dans Microsoft 365 entreprise pour gérer ses appareils et les applications qui s’exécutent sur ces appareils.
 ms.openlocfilehash: c9acdbaa66af212a57bf66b2c64200b02ade6ad7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207700"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestion des appareils mobiles pour Contoso
 

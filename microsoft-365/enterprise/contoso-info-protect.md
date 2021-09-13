@@ -16,17 +16,17 @@ ms.collection:
 ms.custom: ''
 description: Comprendre comment Contoso utilise les fonctionnalités de protection des informations Microsoft 365 entreprise pour sécuriser ses biens numériques dans le cloud.
 ms.openlocfilehash: c61d6ee0a3f577d27c306631ea9f57d8cb3d7c2a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552863"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207716"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
 Contoso est sérieux quant à la sécurité de ses informations. La fuite ou la destruction de la propriété intellectuelle qui décrit leurs conceptions de produits et techniques de fabrication propriétaires les placent dans un inconvénient concurrentiel.
 
-Avant de déplacer leurs biens numériques sensibles vers le cloud, Contoso s’est assuré que les exigences de protection et de classification des informations sur site étaient prises en charge par les services informatiques de Microsoft 365 entreprise.
+Avant de déplacer leurs biens numériques sensibles vers le cloud, Contoso s’est assuré que les exigences de classification et de protection des informations sur site étaient prises en charge par les services informatiques de Microsoft 365 entreprise.
 
 ## <a name="contoso-data-security-classification"></a>Classification de la sécurité des données Contoso
 
@@ -64,13 +64,13 @@ Contoso a suivi les étapes suivantes pour préparer Microsoft 365 entreprise au
 
    Contoso a créé des étiquettes de confidentialité pour ses niveaux de données dont les étiquettes hautement réglementées incluent chiffrement, autorisations et filigranes.
 
-4. Déplacer des données de sites locaux SharePoint partages de fichiers vers leurs nouveaux sites SharePoint sites
+4. Déplacer des données à partir de sites SharePoint et de partages de fichiers locaux vers leurs nouveaux sites SharePoint sites
 
     Les fichiers ayant migré vers les nouveaux sites SharePoint ont hérité des étiquettes de rétention par défaut attribuées au site.
 
 5. Former les employés à l’utilisation des étiquettes de sensibilité pour les nouveaux documents, à interagir avec le service it de Contoso lors de la création de sites SharePoint et à toujours stocker des biens numériques sur des sites SharePoint sites
 
-    La modification des mauvaises habitudes de stockage des informations des travailleurs est souvent considérée comme la partie la plus difficile de la transition de la protection des informations pour le cloud. Contoso it and management needed to get employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and not use third-party cloud storage services or USB drives.
+    La modification des mauvaises habitudes de stockage des informations des travailleurs est souvent considérée comme la partie la plus difficile de la transition de protection des informations pour le cloud. Contoso it and management needed to get employees to always label and store their digital assets in the cloud, refrain from using on-premises file shares, and not use third-party cloud storage services or USB drives.
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Stratégies d’accès conditionnel régissant la protection des informations
 

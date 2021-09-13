@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 6c2f54900c3e08531a57501ff6eda8b2ccc14911
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent des informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
+ms.openlocfilehash: 5feb85bce941f295f58e88a0847d9c0ca04d8820
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574771"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205964"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -65,7 +65,7 @@ En savoir plus sur les niveaux de confiance dans cette vidéo
 ### <a name="example-sensitive-information-type"></a>Exemple de type d’informations sensibles
 
 
-## <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) argentine
+#### <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) argentine
 
 ### <a name="format"></a>Format
 
@@ -86,7 +86,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_argentina_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_argentina_national_id est trouvé.
 
@@ -156,8 +156,12 @@ Pour créer des types d’informations sensibles personnalisés dans le Centre d
 
 > [!TIP]
 > Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’octet unique ou pour détecter les modèles contenant du chinois/le japonais et l’anglais, définissez deux variantes du mot clé ou de regex.
+> - Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
 > 
-> Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
+> En plus des caractères chinois/japonais/sur deux caractères d’byte, si la liste des mots clés/expressions contient également des mots non chinois/japonais (comme l’anglais uniquement), il est recommandé de créer deux dictionnaires/listes de mots clés. Un pour les mots clés contenant des caractères chinois/japonais/sur deux caractères d’byte et un autre pour l’anglais uniquement. 
+> - Par exemple, si vous souhaitez créer un dictionnaire/liste de mots clés avec trois phrases « Hautement confidentiel », « 機密 ' « 机密secument » et « 机密sydocument », vous devez créer deux listes de mots clés. 
+>     1. Hautement confidentiel
+>     2. 機密 ' « 机密机密document et document 机密 « 机密
 > 
 > Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple regex pour référence :
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}

@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 7b51a4d9e88ffd7e3b3cfec488cd750baedb0a3ef454edce4ce3784db8c9c421
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fa1cb7307fddd815a2a9249c5a98739d21bd2418
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807167"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204892"
 ---
 # <a name="remove-devices"></a>Supprimer des appareils
 

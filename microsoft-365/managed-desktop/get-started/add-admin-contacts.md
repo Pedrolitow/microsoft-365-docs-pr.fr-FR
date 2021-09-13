@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: fe048005736e39623effc13751a66f195008ff96
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58550261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205164"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 

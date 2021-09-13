@@ -1,5 +1,5 @@
 ---
-title: Évaluer Microsoft Defender pour Office 365
+title: Evaluer Microsoft Defender pour Office 365
 description: Defender for Office 365 en mode d’évaluation crée Defender pour les stratégies de messagerie Office 365 qui enregistrent les verdicts, tels que les programmes malveillants, mais n’agissent pas sur les messages.
 keywords: évaluer Office 365, Microsoft Defender pour Office 365, évaluation d’Office 365, essayer Office 365, Microsoft Defender, Microsoft Defender pour le point de terminaison
 f1.keywords:
@@ -20,20 +20,20 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 908165ac4e86fe96d101644f70d0bf31047d5e5f
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258313"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204377"
 ---
-# <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluer Microsoft Defender pour Office 365
+# <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluer Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Microsoft Defender pour l Office 365 d’évaluation est en prévisualisation publique. Cette version d’aperçu est fournie sans contrat de niveau de service. Certaines fonctionnalités peuvent ne pas être prises en charge ou avoir des fonctionnalités limitées.
+> Microsoft Defender pour l Office 365 d’évaluation est en prévisualisation publique. Cette version préliminaire est fournie sans contrat de niveau de service. Certaines fonctionnalités peuvent ne pas être prises en charge ou avoir des fonctionnalités limitées.
 
-La conduite d’une évaluation approfondie du produit de sécurité peut vous aider à prendre des décisions éclairées sur les mises à niveau et les achats. Il permet d’essayer les fonctionnalités du produit de sécurité pour évaluer la façon dont il peut aider votre équipe en charge des opérations de sécurité dans ses tâches quotidiennes.
+La conduite d’une évaluation approfondie du produit de sécurité peut vous aider à prendre des décisions éclairées sur les mises à niveau et les achats. Il permet d’essayer les fonctionnalités du produit de sécurité pour évaluer comment il peut aider votre équipe en charge des opérations de sécurité dans ses tâches quotidiennes.
 
 L’expérience d’évaluation de [Microsoft Defender](defender-for-office-365.md) pour Office 365 est conçue pour éliminer la complexité de la configuration de l’appareil et de l’environnement afin que vous pouvez vous concentrer sur l’évaluation des fonctionnalités de Microsoft Defender pour Office 365. Avec le mode d’évaluation, tous les messages envoyés Exchange Online boîtes aux lettres peuvent être évalués sans pointer les enregistrements MX vers Microsoft. La fonctionnalité s’applique uniquement à la protection de la messagerie et non à Office clients tels que Word, SharePoint ou Teams.
 
@@ -46,7 +46,7 @@ Si vous n’avez pas encore de licence qui prend en charge Microsoft Defender po
 
 Defender for Office 365 en mode d’évaluation crée Defender pour les stratégies de messagerie Office 365 qui enregistrent les verdicts, tels que les programmes malveillants, mais n’agissent pas sur les messages. Vous n’êtes pas obligé de modifier la configuration de votre enregistrement MX.
 
-Avec le mode [d’évaluation, Coffre](safe-attachments.md)pièces jointes, [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) des liens [Coffre](safe-links.md)et des stratégies d’emprunt d’identité basées sur l’intelligence des boîtes aux lettres sont définies en votre nom. Toutes les stratégies defender Office 365 sont créées en mode non d’application en arrière-plan et ne sont pas visibles pour vous.
+Avec le mode d’évaluation, Coffre pièces [jointes,](safe-attachments.md)des liens [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)  [Coffre](safe-links.md)et des stratégies d’emprunt d’identité basées sur l’intelligence des boîtes aux lettres sont définies en votre nom. Toutes les stratégies defender Office 365 sont créées en mode non d’application en arrière-plan et ne sont pas visibles pour vous.
 
 Dans le cadre de l’installation, le mode d’évaluation configure également [le filtrage amélioré pour les connecteurs.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Il améliore la précision du filtrage en conservant l’adresse IP et les informations de l’expéditeur, qui sont sinon perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant Defender pour Office 365. Le filtrage amélioré pour les connecteurs améliore également la précision du filtrage pour vos stratégies anti-courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP) existantes.
 
@@ -63,14 +63,14 @@ Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concent
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="licensing"></a>Licence
+### <a name="licensing"></a>Licences
 
 Pour accéder à l’évaluation, vous devez respecter les exigences de licence. L’une des licences suivantes fonctionne :
 
 - Microsoft Defender pour Office 365 Plan 1
 - Microsoft Defender pour Office 365 Plan 2
-- Microsoft 365 E5, Microsoft 365 E5 Sécurité
-- Office 365 E5
+- Microsoft 365 E5, Microsoft 365 E5 Security
+- Office 365 E5
 
 Si vous n’avez pas l’une de ces licences, vous devez obtenir une licence d’essai.
 
@@ -78,7 +78,7 @@ Si vous n’avez pas l’une de ces licences, vous devez obtenir une licence d�
 
 Pour obtenir une licence d’essai pour Microsoft Defender pour  Office 365, vous devez avoir le rôle d’administrateur de facturation ou d’administrateur **global.** Demandez l’autorisation d’une personne qui a le rôle d’administrateur global. [En savoir plus sur les abonnements et les licences](../../commerce/licenses/subscriptions-and-licenses.md)
 
-Une fois que vous avez le rôle approprié, le chemin d’accès recommandé consiste à obtenir une licence d’essai pour Microsoft Defender pour Office 365 (Plan 2) dans le Centre d’administration Microsoft 365 en allant à Facturation > Acheter des services. La version d’essai inclut un essai gratuit de 30 jours pour 25 licences. [Obtenez une version d’essai de Microsoft Defender pour Office 365 (Plan 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
+Une fois que vous avez le rôle approprié, le chemin d’accès recommandé consiste à obtenir une licence d’essai pour Microsoft Defender pour Office 365 (Plan 2) dans le Centre d'administration Microsoft 365 en allant à Facturation > Acheter des services. La version d’essai inclut un essai gratuit de 30 jours pour 25 licences. [Obtenez une version d’essai de Microsoft Defender pour Office 365 (Plan 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
 Vous aurez une fenêtre de 30 jours avec l’évaluation pour surveiller et signaler les menaces avancées. Vous avez également la possibilité d’acheter un abonnement payant si vous souhaitez obtenir l’intégralité de Defender Office 365 fonctionnalités.
 
@@ -137,7 +137,7 @@ Les partenaires tiers pris en charge sont les suivants :
 
 ### <a name="scoping"></a>Étendue
 
-Vous serez en mesure d’élargir l’étendue de l’évaluation à un connecteur entrant. Si aucun connecteur n’est configuré, l’étendue d’évaluation permettra aux administrateurs de collecter des données auprès de n’importe quel utilisateur de votre client pour évaluer Defender pour Office 365.
+Vous serez en mesure d’élargir l’étendue de l’évaluation à un connecteur entrant. Si aucun connecteur n’est configuré, l’étendue d’évaluation permettra aux administrateurs de collecter des données auprès d’un utilisateur de votre client pour évaluer Defender pour Office 365.
 
 ## <a name="get-started-with-the-evaluation"></a>Mise en place de l’évaluation
 
@@ -147,7 +147,7 @@ Recherchez la carte de Office 365 d’évaluation Microsoft Defender dans le por
 - **Collaboration par & messagerie** \> **Stratégies & règles** \> **Stratégies de menace** ( <https://security.microsoft.com/threatpolicy> )
 - **Rapports** \> **Collaboration par & messagerie** \> **Email & collaboration reports** ( <https://security.microsoft.com/emailandcollabreport> )
 
-## <a name="setting-up-the-evaluation"></a>Configuration de l’évaluation
+## <a name="setting-up-the-evaluation"></a>Configurer l’évaluation
 
 Une fois que vous avez commencé le flux de mise en place pour votre évaluation, deux options de routage s’offrent à vous. En fonction des besoins de configuration et d’évaluation du routage du courrier de votre organisation, vous pouvez choisir si vous utilisez un fournisseur de services tiers et/ou local ou uniquement Microsoft Exchange Online.
 

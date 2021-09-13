@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 41d05f4e4e3d234d605c32dfbf6adc29594f345d4a4655331d0296a1b0c0fc42
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afcd6bcd81e1a8635be9ced766c533ea4195334f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53884198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203759"
 ---
 # <a name="devicetvmsoftwarevulnerabilitieskb"></a>DeviceTvmSoftwareVulnerabilitiesKB
 
@@ -34,7 +34,7 @@ ms.locfileid: "53884198"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 
 

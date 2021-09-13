@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3dd3f072ef041b20acd470727e90ab705e9ed72450bb46c8c56d89dc729e84e2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1245268b6128aa022a972fd0282009573558ec47
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204924"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables : Microsoft Manged Desktop
 
@@ -23,7 +23,7 @@ Cette rubrique répertorie les catégories de paramètres que les clients peuven
 ## <a name="desktop-background-picture"></a>Image d’arrière-plan du bureau
 Vous pouvez personnaliser l’image d’arrière-plan du bureau Microsoft Manged Desktop appareils de votre organisation. Vous pouvez l’utiliser pour appliquer une marque d’entreprise ou du matériel marketing. 
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 
 Ces conditions doivent être remplies pour une image d’arrière-plan de bureau :
 - Format de fichier image : .jpg, jpeg ou .png
@@ -42,7 +42,7 @@ Ces conditions doivent être remplies pour une image d’arrière-plan de bureau
 ## <a name="browser-start-pages"></a>Pages de démarrage du navigateur
 Les pages de démarrage du navigateur s’ouvrent dans des onglets individuels lorsque vos utilisateurs Microsoft Edge. Si vous souhaitez faciliter l’ouverture par vos utilisateurs d’un ensemble de sites qu’ils utilisent fréquemment, ajoutez une page de démarrage de navigateur pour chaque site. 
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 
 Vous devez fournir le nom de domaine complet (FQDN) pour les sites intranet ou Internet pour les pages de démarrage de votre navigateur. Si des sites internes sont configurés, faites savoir aux utilisateurs que l’accès à ces sites est autorisé uniquement lorsqu’ils sont connectés au réseau interne lorsqu’ils sont au bureau ou lorsqu’ils sont connectés avec une connexion VPN. 
 
@@ -63,7 +63,7 @@ Si vous avez des sites web et des applications spécifiques qui rencontrent des 
 
 Vous pouvez spécifier un https:// ou l’emplacement d’un partage interne dans lequel vous avez hébergé votre liste des sites en mode entreprise. 
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 
 Ces conditions doivent être remplies pour le fichier de liste des sites en mode Entreprise :
 - Format de fichier : fichier XML qui répond aux exigences [de fichier](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -94,7 +94,7 @@ Les sites de confiance vous permettent de personnaliser les zones de sécurité,
 - Zone 3 – Zone Internet
 - Zone 4 : zone Sites restreints
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 
 Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet pour chaque site approuvé. 
 
@@ -126,7 +126,7 @@ Les exceptions de site proxy que vous ajoutez au portail Microsoft Manged Deskto
 > [!NOTE]
 > La mise à jour de la liste des exceptions de proxy par défaut est toujours prioritaire sur les déploiements des clients. Cela signifie que votre déploiement intermédiaire sera suspendu s’il existe un déploiement pour la liste d’exceptions de proxy par défaut.  
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 
 Ces conditions doivent être remplies pour les exceptions de serveur proxy et de site proxy :
 - Doit être une adresse de serveur et un numéro de port valides

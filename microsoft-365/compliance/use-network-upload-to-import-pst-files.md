@@ -20,11 +20,11 @@ ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 625d9e37246fa6c4e24754be2e3bc830740124a2
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205740"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
 

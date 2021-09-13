@@ -11,19 +11,19 @@ search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment administrer la découverte de rubriques dans Sujets Microsoft Viva.
 ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207532"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Gérer la découverte de rubriques dans Sujets Microsoft Viva
 
-Vous pouvez gérer les paramètres de découverte de rubrique dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com). Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez gérer les paramètres de découverte de rubrique dans le [Centre d'administration Microsoft 365](https://admin.microsoft.com). Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans la Centre d’administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
+1. Dans la Centre d'administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
     ![Connecter personnes à connaître.](../media/admin-org-knowledge-options-completed.png) 

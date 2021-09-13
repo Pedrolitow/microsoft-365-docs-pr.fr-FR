@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Découvrez comment utiliser le Score de conformité et le Gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: ad9ac81d6427e4cb698ad80d5a5621daaf490f6203def774b5aea91fc2418ba5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204263"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Utiliser le Gestionnaire de conformité pour gérer les actions d’amélioration
 
@@ -37,7 +37,7 @@ Cet article fournit des conseils sur l’utilisation de cet outil à des fins de
 
 #### <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-[Le Gestionnaire de](../compliance/compliance-manager.md) conformité est un outil d’évaluation des risques basé sur le flux de travail Centre de conformité Microsoft 365 gestion des activités de conformité réglementaire liées aux services cloud de Microsoft. Dans le cadre de votre abonnement Microsoft 365 ou Azure Active Directory (Azure AD), le Gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le modèle de responsabilité partagée pour les services cloud de Microsoft.
+[Le Gestionnaire de](../compliance/compliance-manager.md) conformité est un outil d’évaluation des risques basé sur les flux de travail Centre de conformité Microsoft 365 gestion des activités de conformité réglementaire liées aux services cloud de Microsoft. Dans le cadre de votre abonnement Microsoft 365 ou Azure Active Directory (Azure AD), le Gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le modèle de responsabilité partagée pour les services cloud de Microsoft.
 
 **Prêt à utiliser les évaluations**
 
@@ -49,11 +49,11 @@ Affichez [la liste complète des modèles d’évaluation](../compliance/complia
 
 **Score de conformité en temps réel**
 
-Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur potentiel pour réduire les risques.
+Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur capacité à réduire les risques.
 
 #### <a name="use-the-compliance-manager-quickstart-guide"></a>Utiliser le guide de démarrage rapide du Gestionnaire de conformité
 
-Le guide de démarrage rapide [du Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md) fournit des étapes et des liens vers des ressources clés pour vous aider à travailler avec le Gestionnaire de conformité :
+Le guide [de démarrage rapide du Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md) fournit des étapes et des liens vers des ressources clés pour vous aider à travailler avec le Gestionnaire de conformité :
 
 - [Première visite : familiarisez-vous avec le Gestionnaire de conformité](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Travailler avec votre tableau de bord du Gestionnaire de conformité

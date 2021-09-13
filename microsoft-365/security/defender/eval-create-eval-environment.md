@@ -1,5 +1,5 @@
 ---
-title: Créer l’Microsoft 365 Defender d’évaluation de la sécurité
+title: Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement
 description: Configurer votre laboratoire d Microsoft 365 Defender d’essai ou votre environnement pilote en activant les licences d’essai. Ensuite, configurer Microsoft Defender pour l’identité (MDI) et toutes les autres évaluations M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,13 +22,13 @@ ms.collection:
 ms.topic: how-to
 ms.technology: m365d
 ms.openlocfilehash: e3b2af2f8d893245c596af07284ee095985af7e2
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252839"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204504"
 ---
-# <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Créer l’Microsoft 365 Defender d’évaluation de la sécurité
+# <a name="create-the-microsoft-365-defender-evaluation-environment"></a>Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement
 
 Il existe deux façons courantes de faire cette étape suivante dans l’évaluation. Ce document suppose que vous avez déjà un client M365 de production et activera les licences d’évaluation E5 pour évaluer M365 Defender dans *l’environnement actuel.* Une évaluation sur place vous permet de conserver toutes les méthodes de sécurité avec l’achat de licences après la période d’évaluation.
 
@@ -49,7 +49,7 @@ La seconde consiste à configurer votre environnement de laboratoire [d Microsof
 
 :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Il existe un bouton « Essayer maintenant » dans le panneau « Check out, confirm your order » (pour une version d’essai Office 365 E5 d’un mois pour 25 utilisateurs).":::
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 [Activer Microsoft 365 pour l’identité](eval-defender-identity-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation et de la Microsoft 365 Defender](eval-overview.md)

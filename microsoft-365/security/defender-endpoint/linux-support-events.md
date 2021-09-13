@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes d’événements ou d’alertes manquants pour Microsoft Defender pour Endpoint sur Linux
+title: Résoudre les problèmes d’événements ou d’alertes manquants pour Microsoft Defender pour endpoint sur Linux
 description: Résoudre les problèmes d’événements ou d’alertes manquants dans Microsoft Defender pour Endpoint sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, événements
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5476410a26ba28e6aeb8100bca79d8ce240b2bad6ab83a2820553035982b5f91
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 554767c1db2d4122c7bc77c47a55772e4ddaa0a6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793387"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204810"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’événements ou d’alertes manquants pour Microsoft Defender pour Endpoint sur Linux
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’événements ou d’alertes manquants pour Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

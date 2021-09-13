@@ -19,23 +19,23 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204786"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Le contrôle d’appareil pour macOS présente les conditions préalables suivantes :
 

@@ -20,11 +20,11 @@ ms.custom:
 recommendations: false
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
 ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575695"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204317"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 

@@ -22,11 +22,11 @@ search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 aux utilisateurs sans licence.
 ms.openlocfilehash: 2af81099b2771c69b642308fb50500b358d64780
-ms.sourcegitcommit: fac7b4b0095254c87b2a341fa2d53a42193f8957
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58417962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204108"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer Microsoft 365 licences d’utilisateur à des comptes d’utilisateur avec PowerShell
 
@@ -34,7 +34,7 @@ ms.locfileid: "58417962"
 
 Les utilisateurs ne peuvent utiliser aucun service Microsoft 365 tant que leur compte n’a pas reçu une licence d’un plan de gestion des licences. Vous pouvez utiliser PowerShell pour attribuer rapidement des licences à des comptes sans licence. 
 
-Un emplacement doit d’abord être affecté aux comptes d’utilisateurs. La spécification d’un emplacement est une partie obligatoire de la création d’un compte d’utilisateur dans [le Centre d’administration Microsoft 365](../admin/add-users/add-users.md). 
+Un emplacement doit d’abord être affecté aux comptes d’utilisateurs. La spécification d’un emplacement est une partie obligatoire de la création d’un compte d’utilisateur dans [le Centre d'administration Microsoft 365](../admin/add-users/add-users.md). 
 
 Les comptes synchronisés à partir de vos services de domaine Active Directory locaux n’ont pas d’emplacement spécifié par défaut. Vous pouvez configurer un emplacement pour ces comptes à partir de :
 
@@ -43,7 +43,7 @@ Les comptes synchronisés à partir de vos services de domaine Active Directory 
  - Le [portail Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Utilisateurs Active Directory**> compte d’utilisateur > informations de contact du profil Pays ou  >     >    >  **région**).
 
 >[!Note]
->[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) à l’Centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) à l’Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph

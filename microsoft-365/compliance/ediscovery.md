@@ -19,13 +19,13 @@ search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: Microsoft 365 propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les groupes Microsoft 365, les Microsoft Teams et les conversations Skype Entreprise. Core eDiscovery et Advanced eDiscovery de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos enquêtes.
+description: Microsoft 365 propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les groupes Microsoft 365, les Microsoft Teams et les conversations Skype Entreprise. Core eDiscovery et Advanced eDiscovery offrent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos enquêtes.
 ms.openlocfilehash: d44c0b30bc6256f98063f33d838d2cabb6ceebf1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570568"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207931"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Solutions eDiscovery dans Microsoft 365
 
@@ -102,7 +102,7 @@ Voici la description de chaque fonctionnalité eDiscovery.
 
 - **Prise en charge des pièces jointes et des versions SharePoint cloud.** Lorsque vous ajoutez du contenu à un jeu à réviser, vous avez la possibilité d’inclure des pièces jointes cloud ou des fichiers liés. Cela signifie que le fichier cible d’une pièce jointe cloud ou d’un fichier lié est ajouté au jeu à réviser. Vous avez également la possibilité d’ajouter toutes les versions d’un document SharePoint à un jeu à réviser.
 
-- **Reconnaissance optique de caractères (OCR).** Lorsque du contenu est ajouté à un jeu à réviser, la fonctionnalité OCR extrait le texte des images et inclut le texte de l’image avec le contenu ajouté à un jeu à réviser. Cela vous permet de rechercher du texte d’image lorsque vous interrogez le contenu du jeu à réviser.
+- **Reconnaissance optique de caractères (OCR)**. Lorsque du contenu est ajouté à un jeu à réviser, la fonctionnalité OCR extrait le texte des images et inclut le texte de l’image avec le contenu ajouté à un jeu à réviser. Cela vous permet de rechercher du texte d’image lorsque vous interrogez le contenu du jeu à réviser.
 
 - **Thread de conversation**. Lorsque des messages de conversation Teams et Yammer conversations sont ajoutés à un jeu à réviser, vous avez la possibilité de collecter l’intégralité du thread de conversation. Cela signifie que toute la conversation qui contient les éléments qui correspondent aux critères de collection est ajoutée au jeu à réviser. Cela vous permet de passer en revue les éléments de conversation dans le contexte de la conversation de va-et-vient.
 
@@ -114,7 +114,7 @@ Voici la description de chaque fonctionnalité eDiscovery.
 
 - **Analyse**. Advanced eDiscovery fournit des outils pour analyser les documents d’ensemble de révision afin de vous aider à organiser les documents de manière cohérente et à réduire le volume de documents à réviser. *La détection des quasi-doublons* rassemble des documents textuellement similaires pour vous aider à améliorer l’efficacité de votre processus de révision. *Le thread de messagerie* identifie des messages électroniques spécifiques qui donnent un contexte complet de la conversation dans un thread de messagerie. *La* fonctionnalité de thèmes tente d’analyser les thèmes abordés dans les documents de jeu à réviser et d’affecter un thème aux documents de sorte que vous pouvez passer en revue les documents qui ont un thème associé. Ces fonctionnalités d’analyse permettent d’améliorer l’efficacité de votre processus de révision afin que les réviseurs peuvent passer en revue une fraction des documents collectés.
 
-- **Modèles de codage prédictifs**. Utilisez des modèles de codage prédictif pour réduire et réduire les volumes importants de contenu de cas à un ensemble pertinent d’éléments que vous pouvez hiérarchiser pour révision. Pour ce faire, vous devez créer et former vos propres modèles de codage prédictifs qui vous aident à hiérarchiser l’examen des éléments les plus pertinents d’un jeu à réviser. Le système utilise la formation pour appliquer des scores de prédiction à chaque élément du jeu à réviser. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents).
+- **Modèles de codage prédictifs**. Utilisez des modèles de codage prédictif pour réduire et réduire les volumes importants de contenu de cas à un ensemble pertinent d’éléments que vous pouvez hiérarchiser pour révision. Pour ce faire, vous devez créer et former vos propres modèles de codage prédictifs qui vous permettent de hiérarchiser l’examen des éléments les plus pertinents d’un jeu à réviser. Le système utilise la formation pour appliquer des scores de prédiction à chaque élément du jeu à réviser. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents).
 
 - **Métadonnées de document calculées.** De Advanced eDiscovery fonctionnalités telles que l’indexation avancée, le thread de conversation, l’analyse et le codage prédictif ajoutent des propriétés de métadonnées pour réviser les documents. Ces métadonnées contiennent des informations relatives à la fonction qui a effectué une fonctionnalité spécifique. Lorsque vous examinez des documents, vous pouvez filtrer sur les propriétés de métadonnées pour afficher le document qui correspond à vos critères de filtre. Ces métadonnées peuvent être importées dans des applications de révision tierces après l’exportation des documents des ensembles de révision.
 

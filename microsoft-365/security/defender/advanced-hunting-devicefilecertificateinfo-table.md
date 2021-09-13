@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8327d0c8973de60aa6d860bcb6ad008203fc52d94520b66174147a53f543618a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1f894f3fc8cff2113004ff9c9e34ec2ca0144799
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204606"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -34,7 +34,7 @@ ms.locfileid: "53902210"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Le `DeviceFileCertificateInfo` tableau du schéma de [recherche](advanced-hunting-overview.md) avancée contient des informations sur les certificats de signature de fichiers. Ce tableau utilise les données obtenues à partir des activités de vérification de certificat effectuées régulièrement sur les fichiers sur les points de terminaison.
 
@@ -46,7 +46,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `IsSigned` | valeur booléenne | Indique si le fichier est signé |
+| `IsSigned` | booléen | Indique si le fichier est signé |
 | `SignatureType` | string | Indique si les informations de signature ont été lues en tant que contenu incorporé dans le fichier lui-même ou lues à partir d’un fichier catalogue externe |
 | `Signer` | string | Informations sur le signataire du fichier |
 | `SignerHash` | string | Valeur de hachage unique identifiant le signataire |
@@ -57,11 +57,11 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `CertificateCreationTime` | DateHeure | Date et heure de création du certificat |
 | `CertificateExpirationTime` | DateHeure | Date et heure d’expiration du certificat |
 | `CertificateCountersignatureTime` | DateHeure | Date et heure de contre-signature du certificat |
-| `IsTrusted` | valeur booléenne | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs discutables |
+| `IsTrusted` | booléen | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs discutables |
 | `IsRootSignerMicrosoft` | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. | 
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

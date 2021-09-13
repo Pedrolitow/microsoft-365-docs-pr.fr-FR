@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer de Microsoft 365 Apps for enterprise.
 ms.openlocfilehash: 8e0a88c85a3a2af35a83c71e7eb385b9edbdde77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207699"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Déploiement de Microsoft 365 Apps for enterprise pour Consoto.
 
@@ -34,8 +34,8 @@ Contoso a mis à niveau ses PC vers Windows 10 Entreprise et Applications Micros
 
 En fonction de ses besoins, Contoso a choisi de déployer Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises configuration manager (Current Branch). Configuration Manager assure la mise à l’échelle des environnements de grande taille et permet de contrôler de manière étendue l’installation, les mises à jour et les paramètres. Il inclut également des fonctionnalités intégrées qui simplifient et optimisent le déploiement et la gestion d’Office, notamment :
 
-- Cache homologue, qui peut aider avec une capacité réseau limitée lors du déploiement sur des appareils dans des emplacements distants.
-- Le tableau Office de gestion des clients, qui facilite le déploiement de Office et la surveillance des mises à jour, et donne aux administrateurs l’accès aux dernières fonctionnalités de déploiement et de gestion.
+- Cache d’homologue, qui peut aider avec une capacité réseau limitée lors du déploiement sur des appareils dans des emplacements distants.
+- Le tableau Office de gestion des clients, qui facilite le déploiement de Office et la surveillance des mises à jour, et permet aux administrateurs d’accéder aux dernières fonctionnalités de déploiement et de gestion.
 - Déploiement de packs linguistiques intelligent, y compris le déploiement automatique de la même langue que le système d’exploitation.
 - Une méthode entièrement prise en charge et facile à utiliser pour supprimer les versions existantes de Office d’un client pendant le déploiement.
 
@@ -43,7 +43,7 @@ Outre Configuration Manager, Contoso a utilisé le Shared Computer Toolkit de pr
 
 ## <a name="managing-deployment-and-updates"></a>Gestion du déploiement et des mises à jour
 
-Applications Microsoft 365 pour les grandes entreprises a un nouveau modèle de publication : Office en tant que service. Le modèle de service permet de rester à jour facilement avec les nouvelles fonctionnalités. Toutefois, les services informatiques doivent souvent modifier la façon dont ils déploient et testent les nouvelles publication. Pour minimiser les problèmes de compatibilité et s’assurer que leurs ordinateurs restent à jour, Contoso a déployé Windows et Office en deux étapes :
+Applications Microsoft 365 pour les grandes entreprises a un nouveau modèle de publication : Office en tant que service. Le modèle de service permet de rester à jour facilement avec les nouvelles fonctionnalités. Toutefois, il est souvent nécessaire que les services informatiques modifient la façon dont ils déploient et testent les nouvelles publication. Pour minimiser les problèmes de compatibilité et s’assurer que leurs ordinateurs restent à jour, Contoso a déployé Windows et Office en deux étapes :
 
 - Tout d’abord, ils Applications Microsoft 365 pour les grandes entreprises sur un petit ensemble d’appareils représentatifs au sein de l’organisation. Ce groupe pilote a été utilisé pour tester les applications, les modules et le matériel avec Applications Microsoft 365 pour les grandes entreprises.
 - Quatre mois plus tard, après avoir résolu tous les problèmes essentiels rencontrés avec les applications, les compléments et le matériel dans le groupe pilote, Contoso a déployé Microsoft 365 Apps for enterprise sur le reste des périphériques de l’organisation (groupe large).

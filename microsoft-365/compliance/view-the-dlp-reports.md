@@ -18,11 +18,11 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 description: Utilisez les rapports DLP dans Office 365 pour afficher le nombre de correspondances, remplacements ou faux positifs de stratégie DLP et voir s’ils sont à la hausse ou à la baisse au fil du temps.
 ms.openlocfilehash: 12ee109a348657aa8ca04c55e496047a82772e22
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574062"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205691"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 

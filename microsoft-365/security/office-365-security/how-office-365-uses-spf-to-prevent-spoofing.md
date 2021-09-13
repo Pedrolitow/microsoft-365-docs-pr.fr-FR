@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment Microsoft 365 utilise l’enregistrement TXT SPF (Sender Policy Framework) dans DNS pour s’assurer que les systèmes de messagerie de destination font confiance aux messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14bab350b17046303c35b15a32e6be090307d104dc15ff3764ff05aa71eea053
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 972f283f6138bafcebd877a19f0bfc429e0eed03
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56800864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204407"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Comment Microsoft 365 utilise SPF (Sender Policy Framework) pour éviter l’usurpation
 

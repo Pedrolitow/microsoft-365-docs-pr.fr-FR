@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: 2a28112c8afe9165453153d2d23752325ae2e6d8
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58347155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204883"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
@@ -25,7 +25,7 @@ Microsoft Manged Desktop fournit plusieurs rapports et tableaux de bord que les 
 
 Sous **l’onglet Résumé,** vous trouverez des mesures rapides sur les mises à jour des périphériques. Si vous **sélectionnez Afficher les détails** d’une mesure, vous pouvez télécharger des informations supplémentaires pour l’analyse hors connexion, y compris le jeu de données sous-jacent de la mesure.
 
-Lorsque vous sélectionnez **l’onglet Rapports,** vous voyez les descriptions des rapports détaillés disponibles. Ces rapports sont plus complets et permettent de visualiser et de filtrer les données dans le portail, ainsi que d’exporter les données sous-jacentes pour l’analyse ou la distribution hors connexion. Les rapports suivants sont disponibles aujourd’hui :
+Lorsque vous sélectionnez **l’onglet Rapports,** vous verrez des descriptions pour les rapports détaillés disponibles. Ces rapports sont plus complets et permettent de visualiser et de filtrer les données dans le portail, ainsi que d’exporter les données sous-jacentes pour l’analyse ou la distribution hors connexion. Les rapports suivants sont disponibles aujourd’hui :
 - Le [ **rapport d’état** de](device-status-report.md) l’appareil (en *prévisualisation)* indique votre utilisation du service Microsoft Manged Desktop en fonction de l’activité et de l’utilisation de l’appareil. 
 - Vous pouvez utiliser la **tendance de l’état** de l’appareil *(en* prévisualisation) pour surveiller les tendances de l’état de l’appareil au cours des 60 derniers jours pour Microsoft Manged Desktop appareils. Les tendances peuvent vous aider à associer l’état de l’appareil à d’autres modifications au fil du temps, par exemple de nouveaux déploiements. 
 - Le [ **Windows**](security-updates-report.md) des mises à jour de sécurité de l’entreprise *(en* prévisualisation) montre comment Windows mises à jour de sécurité sont publiées sur Microsoft Manged Desktop appareils.

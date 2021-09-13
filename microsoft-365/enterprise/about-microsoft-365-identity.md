@@ -24,11 +24,11 @@ search.appverid:
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Découvrez comment gérer le service d’identité d’utilisateur Azure AD dans Microsoft 365 à l’aide de modèles d’identité cloud uniquement ou hybrides.
 ms.openlocfilehash: 0e83d94c6c82df3f47989433cf20ebf402b265df
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572706"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207788"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 modèles d’identité et Azure Active Directory
 
@@ -69,7 +69,7 @@ Voici les composants de base de l’identité cloud uniquement.
 Les utilisateurs locaux et distants (en ligne) utilisent leurs comptes d’utilisateur et mots de passe Azure AD pour accéder Microsoft 365 services cloud. Azure AD authentifie les informations d'identification de l'utilisateur en fonction de son compte utilisateur et de son mot de passe stockés.
 
 ### <a name="administration"></a>Administration
-Étant donné que les comptes d’utilisateur sont stockés uniquement dans Azure AD, vous gérez les identités cloud à l’aide d’outils tels que Centre d’administration Microsoft 365 [et](../admin/add-users/index.yml) [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md).
+Étant donné que les comptes d’utilisateur sont stockés uniquement dans Azure AD, vous gérez les identités cloud à l’aide d’outils tels que Centre d'administration Microsoft 365 [et](../admin/add-users/index.yml) [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md).
 
 ## <a name="hybrid-identity"></a>Identité hybride
 
@@ -92,7 +92,7 @@ Le client Azure AD dispose d’une copie des comptes AD DS. Dans cette configura
 
 Étant donné que les comptes d’utilisateur d’origine et faisant autorité sont stockés dans les AD DS locales, vous gérez vos identités avec les mêmes outils que vous gérez vos AD DS.
 
-Vous n’utilisez pas l’Centre d’administration Microsoft 365 ou PowerShell pour Microsoft 365 gérer les comptes d’utilisateur synchronisés dans Azure AD.
+Vous n’utilisez pas l’Centre d'administration Microsoft 365 ou PowerShell pour Microsoft 365 gérer les comptes d’utilisateur synchronisés dans Azure AD.
 
 ## <a name="next-step"></a>Étape suivante
 

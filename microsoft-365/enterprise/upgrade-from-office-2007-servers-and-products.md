@@ -25,11 +25,11 @@ f1.keywords:
 description: Cet article fournit des ressources pour vous aider à mettre à niveau Office serveurs et clients 2007, à mesure que la prise en charge de Office 2007 a pris fin.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: c3f90bed99816378d4e44bb714b4c6104a9302b7
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354187"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205292"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007
 

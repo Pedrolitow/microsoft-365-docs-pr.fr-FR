@@ -18,11 +18,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207412"
 ---
 # <a name="advanced-hunting-api"></a>API de recherche avancée
 
@@ -51,7 +51,7 @@ ms.locfileid: "58256973"
 
 5. La réponse 429 représente l’atteinte de la limite de quota soit par nombre de demandes, soit par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
 
-6. La taille maximale des résultats d’une requête ne peut pas dépasser 124 Mo. S’il est dépassé, http 400 demande non autorisée avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimisez votre requête en limitant la quantité de résultats et essayez à nouveau ».
+6. La taille maximale des résultats d’une requête ne peut pas dépasser 124 Mo. Si elle est dépassée, http 400 demande non autorisée avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimisez votre requête en limitant la quantité de résultats et essayez à nouveau ».
 
 ## <a name="permissions"></a>Autorisations
 

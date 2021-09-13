@@ -24,11 +24,11 @@ f1.keywords:
 description: Commencez à planifier votre mise à niveau à partir Office 2010 et des applications clientes, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f4f90a34bd4f6c4585cc8900b11808a11f4a2947
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205276"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressources facilitant la mise à jour de vos clients et serveurs Office 2010
 

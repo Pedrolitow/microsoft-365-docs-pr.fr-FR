@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprendre l’infrastructure réseau contoso et la façon dont l’entreprise utilise sa technologie SD-WAN pour optimiser les performances réseau pour Microsoft 365 services cloud d’entreprise.
 ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207692"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Mise en réseau de Contoso Corporation
 
@@ -31,7 +31,7 @@ Voici les éléments réseau qui relient les bureaux Contoso dans le monde entie
 
 - Réseau étendu de commutation multiprotocole WAN (MPLS) 
 
-  Un réseau WAN MPLS connecte le siège social parisien aux bureaux régionaux et régionaux aux succursales dans une configuration de hub. Le réseau permet aux utilisateurs d’accéder aux serveurs locaux qui sont des applications métier au siège social parisien. Il a également pour effet d’router tout trafic Internet générique vers le bureau parisien, où les appareils de sécurité réseau excursent les demandes. Dans chaque bureau, les routeurs livrent le trafic aux hôtes câblés ou aux points d’accès sans fil sur les sous-réseaux, qui utilisent l’espace d’adressa visite IP privé.
+  Un réseau WAN MPLS connecte le siège social parisien aux bureaux régionaux et régionaux aux succursales dans une configuration de hub. Le réseau permet aux utilisateurs d’accéder aux serveurs locaux qui sont des applications métier au siège social parisien. Il a également route tout trafic Internet générique vers le bureau parisien, où les périphériques de sécurité réseau excursent les demandes. Dans chaque bureau, les routeurs livrent le trafic aux hôtes câblés ou aux points d’accès sans fil sur les sous-réseaux, qui utilisent l’espace d’adressa visite IP privé.
 
 - Accès Internet direct local pour le trafic Microsoft 365 réseau
 

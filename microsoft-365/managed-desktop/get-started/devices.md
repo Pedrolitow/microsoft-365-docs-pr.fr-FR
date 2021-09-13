@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5cfdeab09e4128ae65f7a84f63b17caebe0f9a231d77ddf334b3b57fc3952080
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 693ee9e6c9835c73c10ced059b627a902daa523e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205132"
 ---
 # <a name="order-microsoft-managed-desktop-devices"></a>Commande Microsoft Manged Desktop appareils
 

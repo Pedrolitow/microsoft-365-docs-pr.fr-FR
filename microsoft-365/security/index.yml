@@ -13,18 +13,18 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: dfe1d7b288f4a49b7aff586f887362bf65396c9830ad7f58450c5354b228340b
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
-  ms.translationtype: HT
+  ms.openlocfilehash: 2ab172acf119c41f4d478e3ecdae04cfd9d299d2
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53893710"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59204485"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft 365 Defender ?
+    - text: Qu’est-ce que Microsoft 365 Defender ?
       url: defender/microsoft-365-defender.md
     - text: Centre de sécurité Microsoft 365
       url: defender/overview-security-center.md
@@ -42,7 +42,7 @@ landingContent:
     links:
     - text: Sécuriser vos employés en télétravail
       url: /enterprise-mobility-security/remote-work/
-- title: Microsoft Defender pour Identity
+- title: Microsoft Defender pour Identity
   linkLists:
   - linkListType: overview
     links:
@@ -58,7 +58,7 @@ landingContent:
       url: office-365-security/defender-for-office-365.md
     - text: Description du service Defender pour Office 365
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-- title: Microsoft Defender pour point de terminaison
+- title: Microsoft Defender pour point de terminaison
   linkLists:
   - linkListType: overview
     links:

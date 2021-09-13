@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Vous pouvez corriger une erreur de traitement dans un document dans un groupe de révision dans Advanced eDiscovery sans avoir à suivre le processus de correction des erreurs en bloc.
 ms.openlocfilehash: b0f710b737b8cc87c154747dd952322f3cf2ea20
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207860"
 ---
 # <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Correction des erreurs d’élément unique Advanced eDiscovery
 

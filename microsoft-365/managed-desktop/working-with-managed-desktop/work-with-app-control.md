@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0a0072cbc5738ae78c151650d8186eb34f952602015b7068909a2d276664684a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 31cc897fe28f557a65cba9c99e5dcecbf7c2b0e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807149"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204844"
 ---
 # <a name="work-with-app-control"></a>Utiliser le contrôle d’application
 
@@ -52,7 +52,7 @@ Les opérations déploieront progressivement des stratégies dans des groupes de
 
 |Groupe de déploiement  |Type de stratégie  |Calendrier  |
 |---------|---------|---------|
-|Tester     |  Audit       |  Jour 0       |
+|Test     |  Audit       |  Jour 0       |
 |Premier     | Enforced        | Jour 1        |
 |Rapide     | Enforced        |  Jour 2       |
 |Larges     | Enforced        |  Jour 3       |

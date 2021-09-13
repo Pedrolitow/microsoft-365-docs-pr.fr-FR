@@ -17,11 +17,11 @@ ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
 ms.openlocfilehash: d50146c3689f7b19fc6b546478bc0b01ada1fc30
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58532486"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204047"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
@@ -47,7 +47,7 @@ Le présent article contient les sections suivantes :
 |---|---|
 |[Exclusions automatiques sur Windows Server 2016 ou ultérieure](#automatic-exclusions-on-windows-server-2016-or-later)|Décrit les deux principaux types d’exclusions automatiques et inclut une liste détaillée des exclusions automatiques|
 |[Refuser les exclusions automatiques](#opting-out-of-automatic-exclusions)|Comprend des considérations et des procédures importantes décrivant comment refuser les exclusions automatiques|
-|[Définition d’exclusions personnalisées](#defining-custom-exclusions)|Fournit des liens vers des procédures pour définir des exclusions personnalisées|
+|[Définition d’exclusions personnalisées](#defining-custom-exclusions)|Fournit des liens vers des informations de procédure pour définir des exclusions personnalisées|
 |
 
 > [!IMPORTANT]
@@ -193,7 +193,7 @@ Le tableau suivant répertorie les exclusions de types de fichiers, les exclusio
 
 #### <a name="active-directory-exclusions"></a>Exclusions Active Directory
 
-Cette section répertorie les exclusions qui sont livrées automatiquement lorsque vous installez les services de domaine Active Directory (AD DS).
+Cette section répertorie les exclusions qui sont automatiquement livrées lorsque vous installez les services de domaine Active Directory (AD DS).
 
 ##### <a name="ntds-database-files"></a>Fichiers de base de données NTDS
 
@@ -325,7 +325,7 @@ Cette section répertorie les exclusions de dossiers qui sont automatiquement li
 - `%systemroot%\SoftwareDistribution\Datastore`
 - `%systemroot%\SoftwareDistribution\Download`
 
-## <a name="opting-out-of-automatic-exclusions"></a>Dés exclusions automatiques
+## <a name="opting-out-of-automatic-exclusions"></a>Refuser les exclusions automatiques
 
 Dans Windows Server 2016 et ultérieures, les exclusions prédéfines livrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble des exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour de l’intelligence de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour Windows Server 2016 et ultérieures. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
 
@@ -338,7 +338,7 @@ Vous pouvez désactiver les listes d’exclusion automatique avec la stratégie 
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utiliser la stratégie de groupe pour désactiver la liste d’exclusions automatiques sur Windows Server 2016 et Windows Server 2019
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
 2. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
 

@@ -15,28 +15,29 @@ ms.collection:
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer l’audit avancé afin que vous pouvez effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
-ms.openlocfilehash: 0df68516795c094aa33d048e77b5ca2d1b396ed7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 45eef36cd0577708869846308c88f2dd0926d43e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205924"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Configurer l’audit avancé dans Microsoft 365
 
 Si votre organisation dispose d’un abonnement et d’une licence d’utilisateur final qui prend en charge l’audit avancé, effectuez les étapes suivantes pour configurer et utiliser les fonctionnalités supplémentaires de l’audit avancé.
 
-![Flux de travail pour configurer l’audit avancé.](../media/AdvancedAuditWorkflow.png)
+![Flux de travail pour configurer l’Audit avancé.](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step-1-set-up-advanced-audit-for-users"></a>Étape 1 : Configurer l’audit avancé pour les utilisateurs
 
 Les fonctionnalités d’audit avancées telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs. Pour vérifier que l’application d’audit avancée est attribuée aux utilisateurs, procédez comme suit pour chaque utilisateur :
 
-1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com/Adminportal), accédez à **Utilisateurs** > **Utilisateurs actifs**, puis sélectionnez un utilisateur.
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs** actifs  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>et sélectionnez un utilisateur.
 
 2. Dans la page déroulante des propriétés de l’utilisateur, cliquez sur **Licences et applications**.
 

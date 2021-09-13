@@ -12,14 +12,15 @@ ms.date: 09/21/2020
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
+- admindeeplinkMAC
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: cff003b3a6eb8a996b12c4be8b6a48b256ba80d8
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.openlocfilehash: 46e0090106ce87e130cd78c7a9f6e844bd2de187
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207635"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migration de boîtes aux lettres entre locataires (prévisualisation)
 
@@ -53,7 +54,7 @@ En outre, les groupes de sécurité à messagerie dans le client source sont req
 
 Vous devrez également communiquer avec votre société partenaire de confiance (avec laquelle vous déplacerez des boîtes aux lettres) pour obtenir leur ID Microsoft 365 client approuvé. Cet ID de client est utilisé dans le champ Relation `DomainName` d’organisation.
 
-Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au Centre d’administration Microsoft 365 puis allez à [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Cliquez sur l’icône de copie de la propriété ID de client pour la copier dans le Presse-papiers.
+Pour obtenir l’ID de locataire d’un abonnement, connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a> puis allez à [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Cliquez sur l’icône de copie de la propriété ID de client pour la copier dans le Presse-papiers.
 
 Voici comment fonctionne le processus.
 
@@ -99,18 +100,18 @@ Préparez le client source :
 
    |Paramètre|Valeur|Obligatoire ou facultatif
    |---|---|---|
-   |-TargetTenantDomain|Domaine client cible, tel que fabrikam \. onmicrosoft.com.|Requis|
-   |-ResourceTenantDomain|Domaine client source, tel que contoso \. onmicrosoft.com.|Requis|
-   |-ResourceTenantAdminEmail|Adresse de messagerie de l’administrateur client source. Il s’agit de l’administrateur client source qui consentira à l’utilisation de l’application de migration de boîte aux lettres envoyée par l’administrateur cible. Il s’agit de l’administrateur qui recevra l’invitation par courrier électronique pour l’application.|Requis|
-   |-ResourceTenantId|ID d’organisation client source (GUID).|Requis|
-   |-SubscriptionId|L’abonnement Azure à utiliser pour créer des ressources.|Requis|
-   |-ResourceGroup|Nom du groupe de ressources Azure qui contient ou contiendra le coffre de clés.|Requis|
-   |-KeyVaultName|Instance Azure Key Vault qui stockera votre certificat/clé secrète d’application de migration de boîte aux lettres.|Requis|
-   |-CertificateName|Nom du certificat lors de la génération ou de la recherche de certificat dans le coffre de clés.|Requis|
-   |-CertificateSubject|Nom d’objet du certificat Azure Key Vault, tel que CN=contoso_fabrikam.|Requis|
-   |-AzureResourceLocation|Emplacement du groupe de ressources Azure et du coffre de clés.|Requis|
+   |-TargetTenantDomain|Domaine client cible, tel que fabrikam \. onmicrosoft.com.|Obligatoire|
+   |-ResourceTenantDomain|Domaine client source, tel que contoso \. onmicrosoft.com.|Obligatoire|
+   |-ResourceTenantAdminEmail|Adresse de messagerie de l’administrateur client source. Il s’agit de l’administrateur client source qui consentira à l’utilisation de l’application de migration de boîte aux lettres envoyée par l’administrateur cible. Il s’agit de l’administrateur qui recevra l’invitation par courrier électronique pour l’application.|Obligatoire|
+   |-ResourceTenantId|ID d’organisation client source (GUID).|Obligatoire|
+   |-SubscriptionId|L’abonnement Azure à utiliser pour créer des ressources.|Obligatoire|
+   |-ResourceGroup|Nom du groupe de ressources Azure qui contient ou contiendra le coffre de clés.|Obligatoire|
+   |-KeyVaultName|Instance Azure Key Vault qui stockera votre certificat/clé secrète d’application de migration de boîte aux lettres.|Obligatoire|
+   |-CertificateName|Nom du certificat lors de la génération ou de la recherche de certificat dans le coffre de clés.|Obligatoire|
+   |-CertificateSubject|Nom d’objet du certificat Azure Key Vault, tel que CN=contoso_fabrikam.|Obligatoire|
+   |-AzureResourceLocation|Emplacement du groupe de ressources Azure et du coffre de clés.|Obligatoire|
    |-ExistingApplicationId|Application de migration de messagerie à utiliser si une application a déjà été créée.|Facultatif|
-   |-AzureAppPermissions|Autorisations requises pour l’application de migration de boîte aux lettres, telles que Exchange ou MSGraph (Exchange pour le déplacement de boîtes aux lettres, MSGraph pour l’utilisation de cette application pour envoyer une invitation de lien de consentement au client de ressource).|Requis|
+   |-AzureAppPermissions|Autorisations requises pour l’application de migration de boîte aux lettres, telles que Exchange ou MSGraph (Exchange pour le déplacement de boîtes aux lettres, MSGraph pour l’utilisation de cette application pour envoyer une invitation de lien de consentement au client de ressource).|Obligatoire|
    |-UseAppAndCertGeneratedForSendingInvitation|Paramètre d’utilisation de l’application créée pour la migration à utiliser pour envoyer une invitation de lien de consentement à l’administrateur client source. S’il n’est pas présent, les informations d’identification de l’administrateur cible sont invités à se connecter au gestionnaire d’invitation Azure et à envoyer l’invitation en tant qu’administrateur cible.|Facultatif|
    |-KeyVaultAuditStorageAccountName|Compte de stockage dans lequel les journaux d’audit du coffre de clés sont stockés.|Facultatif|
    |-KeyVaultAuditStorageResourceGroup|Groupe de ressources qui contient le compte de stockage pour le stockage des journaux d’audit du coffre de clés.|Facultatif|
@@ -176,7 +177,7 @@ La configuration de l’administrateur cible est maintenant terminée !
    > [!NOTE]
    > Si vous ne recevez pas cet e-mail ou si vous ne le trouvez pas, l’administrateur client cible a reçu une URL directe qui peut vous être fournie pour accepter l’invitation. L’URL doit être dans la transcription de la session PowerShell distante de l’administrateur client cible.
 
-3. Dans la session Centre d’administration Microsoft 365 ou une session PowerShell distante, créez un ou plusieurs groupes de sécurité à messagerie pour contrôler la liste des boîtes aux lettres autorisées par le client cible à tirer (déplacer) du client source vers le client cible. Vous n’avez pas besoin de remplir ce groupe à l’avance, mais au moins un groupe doit être fourni pour exécuter les étapes de configuration (script). Les groupes d’imbrouillement ne sont pas pris en charge.
+3. Dans la session Centre d'administration Microsoft 365 ou une session PowerShell distante, créez un ou plusieurs groupes de sécurité à messagerie pour contrôler la liste des boîtes aux lettres autorisées par le client cible à tirer (déplacer) du client source vers le client cible. Vous n’avez pas besoin de remplir ce groupe à l’avance, mais au moins un groupe doit être fourni pour exécuter les étapes de configuration (script). Les groupes d’imbrouillement ne sont pas pris en charge.
 
 4. Téléchargez le script SetupCrossTenantRelationshipForResourceTenant.ps1 pour la configuration du client source à partir du GitHub de données ici [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) :
 
@@ -609,7 +610,7 @@ Pour vous aider à planifier [](/exchange/mailbox-migration/office-365-migration
 
 N’oubliez pas que cette fonctionnalité est actuellement en prévisualisation et que le SLA et les niveaux de service applicables ne s’appliquent pas aux problèmes de performances ou de disponibilité pendant l’état d’aperçu de cette fonctionnalité.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - **Problème : les archives à extension automatique ne peuvent pas être migrées.** La fonctionnalité de migration entre locataires permet de migrer la boîte aux lettres principale et la boîte aux lettres d’archivage d’un utilisateur spécifique. Si l’utilisateur dans la source possède toutefois une archive à extension automatique , ce qui signifie que plusieurs boîtes aux lettres d’archivage, la fonctionnalité ne peut pas migrer les archives supplémentaires et doit échouer.
 

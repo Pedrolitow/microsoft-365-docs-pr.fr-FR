@@ -17,18 +17,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: 9ee1417d071700b1cece8da6d3d1815e1ff8ff9d
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823804"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204731"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Gérer les mises à jour de l'antivirus Microsoft Defender et les analyses des points de terminaison qui ne sont pas à jour
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 

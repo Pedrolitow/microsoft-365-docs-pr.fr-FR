@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 38c34198f20c55e1dc6dd2518f30764bf6d58493
-ms.sourcegitcommit: 99817013bcb26b7ed051e011c8addb716cc91d8f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58349775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203801"
 ---
 # <a name="remove-app-restriction-api"></a>SUPPRIMER l’API de restriction d’application
 
@@ -51,8 +51,8 @@ Activez l’exécution de n’importe quelle application sur l’appareil.
 > [!IMPORTANT]
 >
 > - L’isolation complète est disponible pour les appareils Windows 10, version 1703.
-> - L’isolation sélective est disponible pour les appareils Windows 10 version 1709 ou ultérieure.
-> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de fractionnement pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
+> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure.
+> - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -79,8 +79,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/unrestrictCodeEx
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String
-|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande

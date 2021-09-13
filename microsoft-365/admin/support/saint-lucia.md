@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e11d5afe18ce2a65111275043335db52b43d3b4e23fbc24c4a50201054737222
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 17abaa21428f92fc7add1c851cd57bea0f0885b3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804275"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204168"
 ---
 # <a name="contact-support-for-saint-lucia"></a>Contacter le support de Saint-Pierre
 

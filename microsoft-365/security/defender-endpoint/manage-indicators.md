@@ -18,11 +18,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 4ea6519f18f91a6905e8fa3372aec2b2014b18ac
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204744"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
@@ -112,7 +112,7 @@ Le schéma de l’API IoC et les ID de menace à l’avance de recherche ont ét
 >
 > Le format d’importation de nouveaux indicateurs (IOC) a changé en fonction des nouvelles actions mises à jour et des paramètres d’alerte. Nous vous recommandons de télécharger le nouveau format CSV disponible en bas du panneau d’importation.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Créer un IoC contextuel](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Utiliser l’API d’indicateurs microsoft Defender pour les points de terminaison](ti-indicator.md)

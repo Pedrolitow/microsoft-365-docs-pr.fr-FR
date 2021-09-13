@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 83c5ce953b298c61502f2bc10a5d01191bfb98d1d39690a9472509058d8f37db
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 59a2b8227eb7e410ecf8506ce288978213537edc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857890"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205067"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Exceptions au plan de service
 
@@ -30,7 +30,7 @@ Une exception est l’ajout ou la modification de la configuration Microsoft Man
 |Agents de sécurité & VPN     |  Logiciels utilisés pour sécuriser, surveiller ou modifier le comportement de l’appareil ou du réseau       |
 |Surveillance de l’expérience numérique     |  Logiciel utilisé pour suivre les données sur l’appareil d’un utilisateur afin de les signaler à l’informatique       |
 |Pilotes matériels ou logiciels     |   Pilotes de périphérique, restreints par les exigences de [l’application](mmd-app-requirements.md)      |
-|Politiques     | Windows 10 ou Applications Microsoft 365 pour les grandes entreprises sur un appareil géré        |
+|Stratégies     | Windows 10 ou Applications Microsoft 365 pour les grandes entreprises sur un appareil géré        |
 |Appareils     | Appareils qui ne sont pas dans la liste des [Microsoft Manged Desktop’appareils](device-list.md)        |
 |Autres     |  Tout ce qui n’est pas couvert par les autres domaines       |
  

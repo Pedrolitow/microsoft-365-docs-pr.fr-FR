@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d41cb16636a1a35673495b9b7f8538218f4919c290fbee9896781da46acf746f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 322a46ce48cce4d080e51f482178462934d5c8f2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205003"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Manged Desktop’application requise
 
@@ -28,14 +28,14 @@ Microsoft Manged Desktop exige que nous gérions les appareils à l’aide d’u
 |Domaine de gestion  |Microsoft Manged Desktop approche  |
 |---------|---------|
 |Configuration de l’appareil ou gestion des stratégies     |  Microsoft Intune       |
-|Gestion des applications     | Microsoft Intune et Portail d’entreprise        |
+|Gestion des applications     | Microsoft Intune et Portail d'entreprise        |
 |Déploiement de pilotes     |  Pilotes inclus avec l’appareil, Windows Update ou Intune       |
 |Sécurité de l’appareil     | Voir [Sécurité de l’appareil](security.md#device-security)      |
 |Gestion des identités et des accès     | Voir [Gestion des identités et des accès](security.md#identity-and-access-management)        |
 |Sécurité réseau     | Voir [Sécurité du réseau](security.md#network-security)        |
 |Sécurité des informations     |  Voir [Sécurité des informations](security.md#information-security)       |
 |Récupération des données     | OneDrive Entreprise        |
-|Productivité de base     | Applications Microsoft 365 for entreprise    |
+|Productivité de base     | Microsoft 365 Apps for enterprise    |
 |Navigateur     | Microsoft Edge        |
 
 

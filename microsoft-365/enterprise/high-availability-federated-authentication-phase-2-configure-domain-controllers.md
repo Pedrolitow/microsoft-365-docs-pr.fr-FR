@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Résumé : Configurez les contrôleurs de domaine et le serveur de synchronisation d’annuaires pour votre authentification fédérée haute disponibilité pour Microsoft 365 dans Microsoft Azure.'
 ms.openlocfilehash: f5d68f75a281ed8e04b8a41d7b748e056e081b52
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565231"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205564"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Authentification fédérée haute disponibilité, phase 2 : Configurer les contrôleurs de domaine
 
@@ -232,7 +232,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 Utilisez le client Bureau à distance de votre choix et créez une connexion bureau à distance à la machine virtuelle du serveur de synchronisation d’annuaires. Utilisez son nom d'ordinateur ou son nom DNS intranet et les informations d'identification du compte Administrateur local.
   
-Ensuite, associez-le au domaine AD DS approprié avec ces commandes à l’invite Windows PowerShell suivante.
+Ensuite, joignez-le au domaine AD DS approprié avec ces commandes à l’invite Windows PowerShell suivante.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"

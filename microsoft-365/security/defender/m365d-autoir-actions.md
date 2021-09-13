@@ -22,11 +22,11 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
 ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203754"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion des actions
 
@@ -36,7 +36,7 @@ ms.locfileid: "58565659"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Les fonctionnalités de protection contre les menaces Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
+Les fonctionnalités de protection contre les menaces Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
 
 - [Les enquêtes](m365d-autoir.md) automatisées peuvent entraîner des actions de correction qui sont prises automatiquement ou qui attendent votre approbation.
 - Un antivirus, un logiciel anti-programme malveillant et d’autres fonctionnalités de protection contre les menaces peuvent entraîner des actions de correction, telles que le blocage d’un fichier, d’une URL ou d’un processus, ou l’envoi d’un artefact en quarantaine.
@@ -95,7 +95,7 @@ Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, 
 
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
 - [Corriger les faux positifs ou les faux négatifs](m365d-autoir-report-false-positives-negatives.md)

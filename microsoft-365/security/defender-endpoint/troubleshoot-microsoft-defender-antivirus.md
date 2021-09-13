@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: 15180a2be197b39da78bf004b761db753cd02c94
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58862820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203820"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
@@ -359,7 +359,7 @@ Pour plus d'informations, consultez les articles suivants :
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -431,7 +431,7 @@ Antivirus Microsoft Defender a pris des mesures pour protéger cet ordinateur co
 <dt>d’utilisateur &lt; : &gt; </dt>ID du
 <dt>nom de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : Gravité , par exemple 
 <dt> &lt; &gt; :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -483,7 +483,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de l’action sur des 
 <dt>d’utilisateur &lt; : &gt; </dt>ID du
 <dt>nom de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : Gravité , par exemple 
 <dt> &lt; &gt; :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -666,7 +666,7 @@ Pour plus d'informations, consultez les articles suivants :
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -772,7 +772,7 @@ Antivirus Microsoft Defender a détecté un comportement suspect.<br/>Pour plus 
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -847,7 +847,7 @@ Antivirus Microsoft Defender a détecté des programmes malveillants ou d’autr
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -926,7 +926,7 @@ Antivirus Microsoft Defender a pris des mesures pour protéger cet ordinateur co
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -1048,7 +1048,7 @@ Antivirus Microsoft Defender a rencontré une erreur non critique lors de l’ac
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -1140,7 +1140,7 @@ Antivirus Microsoft Defender a rencontré une erreur critique lors de l’action
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Faible</li>
+<li>Petite</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>

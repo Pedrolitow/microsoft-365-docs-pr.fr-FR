@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment attribuer des licences Microsoft 365 aux comptes d’utilisateurs, individuellement ou en fonction de l’appartenance à un groupe.
 ms.openlocfilehash: 2d2afe7b9989ef7b82920a45e3dacd574cd51b5c
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204102"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Attribuer Microsoft 365 licences d’accès aux comptes d’utilisateurs
 
@@ -63,7 +63,7 @@ Vérifiez que vous disposez de suffisamment de licences pour tous les membres du
 
 Pour plus d’informations, voir la gestion des licences basée [sur les groupes dans Azure AD.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Avec l’ensemble approprié de comptes d’utilisateurs qui ont reçu des licences, vous êtes maintenant prêt à :
 

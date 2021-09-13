@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4ce4b910388b261080959f98bbb8de681f668d359867d51c056915b033aca3e1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 05bfd6652395b7a1687320ec78d49caba67dc160
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53817182"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204624"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Vue d’ensemble du Centre de sécurité Microsoft Defender
 

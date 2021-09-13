@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3b0909e0537c0090ef1bcb8c0803e6f0c7dd5e46435c0980268ee3f2cf810291
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53890842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204923"
 ---
 # <a name="device-inventory-report"></a>Rapport d’inventaire des appareils
 
@@ -26,7 +26,7 @@ Dans la vue **Appareils,**  vous pouvez sélectionner l’onglet Exporter tout p
 - Géré par
 - Fabricant
 - Modèle
-- SYSTÈME D’EXPLOITATION
+- Système d’exploitation
 - Licence du système d’exploitation
 - Version du système d’exploitation
 - Propriété
@@ -36,9 +36,9 @@ Dans la vue **Appareils,**  vous pouvez sélectionner l’onglet Exporter tout p
 - Stockage - Total en Go
 - Inscrit par l’UPN de l’utilisateur
 - Utilisateur affecté
-- État
+- Statut
 - Âge (mois)
-- Profil
+- Profils
 - Utilisateurs connectés
 - Version du TPM
 - Démarrage sécurisé activé

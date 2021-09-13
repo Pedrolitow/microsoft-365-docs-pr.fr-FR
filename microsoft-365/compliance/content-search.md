@@ -21,11 +21,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
 ms.openlocfilehash: beee298e18fd46adfc11925de51274a60328a3a5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208011"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 

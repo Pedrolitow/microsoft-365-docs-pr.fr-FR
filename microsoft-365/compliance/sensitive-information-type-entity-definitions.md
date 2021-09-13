@@ -20,11 +20,11 @@ feedback_system: None
 recommendations: false
 description: 200 types d’informations sensibles sont prêts à être utilisés dans vos stratégies DLP. Cet article répertorie tous ces types d’informations sensibles et indique ce qu’une stratégie DLP recherche lorsqu’elle détecte chaque type.
 ms.openlocfilehash: 98e80f011329b80105de86816761baba7f8188a9
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205980"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -695,7 +695,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_australian_tax_file_number trouve un contenu qui correspond au modèle.
 - Aucun mot clé figurant dans la liste Keyword_Australia_Tax_File_Number ou Keyword_number_exclusions n’est trouvé.
 - La somme de contrôle est correcte.
@@ -740,7 +740,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - L’expression  `Regex_austria_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_austria_eu_driver's_license_number` est trouvé.
@@ -916,7 +916,7 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - L’expression  `Regex_austria_eu_national_id_card` régulière trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_austria_eu_national_id_card` trouvé.
@@ -964,7 +964,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_austria_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date1` régulière trouve la date au format DD.MM.YYYY ou un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_austria_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_austria_eu_passport_number` est trouvé.
 
@@ -1046,7 +1046,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_austria_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
 - un mot clé  `Keywords_austria_eu_ssn_or_equivalent` est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_austria_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -1198,7 +1198,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction Func_Austria_Value_Added_Tax trouve un contenu qui correspond au modèle.
 - Un mot clé de Keyword_Austria_Value_Added_Tax est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_Austria_Value_Added_Tax trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -1717,7 +1717,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_belgium_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir `Keywords_eu_driver's_license_number` de ou `Keywords_belgium_eu_driver's_license_number` est trouvé.
 
@@ -1998,7 +1998,7 @@ non applicable
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_belgium_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date2` régulière trouve la date au format JA J.-C. J.-C. ou un mot clé de ou est `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_belgium_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_belgium_eu_passport_number` est trouvé.
 
@@ -2341,7 +2341,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_bulgaria_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_bulgaria_eu_driver's_license_number` est trouvé.
 
@@ -2517,11 +2517,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_bulgaria_eu_national_id_card` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_bulgaria_eu_national_id_card` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_bulgaria_eu_national_id_card` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -2605,12 +2605,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_bulgaria_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_bulgaria_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date1` régulière trouve la date au format DD.MM.YYYY ou un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_bulgaria_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_bulgaria_eu_passport_number` est trouvé.
 
@@ -2660,7 +2660,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date d’émission
+- date de problème
 - date d’expiration
 
 ## <a name="canada-bank-account-number"></a>Numéro de compte bancaire canada
@@ -3704,7 +3704,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - L’expression  `Regex_croatia_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir `Keywords_eu_driver's_license_number` de ou `Keywords_croatia_eu_driver's_license_number` est trouvé.
@@ -3869,7 +3869,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_croatia_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_croatia_id_card est trouvé.
 
@@ -3933,12 +3933,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_croatia_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_croatia_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date1` régulière trouve la date au format DD.MM.YYYY ou un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_croatia_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_croatia_eu_passport_number` est trouvé.
 
@@ -4009,7 +4009,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Un mot clé de Keywords_croatia_eu_tax_file_number est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_croatia_oib_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -4075,7 +4075,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_cyprus_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_cyprus_eu_driver's_license_number` est trouvé.
 
@@ -4244,7 +4244,7 @@ non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_cyprus_eu_national_id_card` régulière trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_cyprus_eu_national_id_card` trouvé.
 
@@ -4291,7 +4291,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_cyprus_eu_passport_number` est trouvé.
 - L’expression `Regex_cyprus_eu_passport_date` régulière trouve la date au format JD/MM/AAA OU un mot clé à partir de laquelle est `Keywords_cyprus_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_cyprus_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_cyprus_eu_passport_number` est trouvé.
 
@@ -4384,7 +4384,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_cyprus_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_cyprus_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_cyprus_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -4702,13 +4702,13 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction Func_czech_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_czech_id_card est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction Func_czech_id_card_new_format trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
@@ -4794,7 +4794,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_denmark_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_denmark_eu_driver's_license_number` est trouvé.
 
@@ -4956,12 +4956,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_denmark_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_denmark_eu_passport_number` est trouvé.
 - L’expression régulière trouve la date au format MM AA ou un mot clé à `Regex_eu_passport_date2` partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_denmark_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_denmark_eu_passport_number` est trouvé.
 
@@ -5013,7 +5013,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date d’émission
+- date de problème
 - date d’expiration
 
 
@@ -5036,7 +5036,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Func_denmark_eu_tax_file_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_denmark_id est trouvé.
 - La somme de contrôle est correcte.
@@ -5158,7 +5158,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Un mot clé est `Keyword_dea_number` trouvé
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_dea_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -5211,7 +5211,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_estonia_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_estonia_eu_driver's_license_number` est trouvé.
 
@@ -6058,7 +6058,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_finland_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_finland_eu_driver's_license_number` est trouvé.
 
@@ -6730,7 +6730,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir `Keywords_eu_passport_number` de ou `Keywords_france_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date3` régulière trouve la date au format MM AAA OU un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction `Func_fr_passport` trouve un contenu qui correspond au modèle.
 - Mot clé à partir `Keywords_eu_passport_number` de ou `Keywords_france_eu_passport_number` est trouvé.
 
@@ -6821,7 +6821,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Un mot clé figurant dans la liste Keyword_fr_insee est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_french_insee ou Func_fr_insee trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -6907,7 +6907,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_france_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_france_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_france_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -6983,11 +6983,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_france_value_added_tax_number trouve un contenu qui correspond au modèle.
 - Un mot clé de Keywords_france_value_added_tax_number est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_france_value_added_tax_number trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -7041,7 +7041,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_german_drivers_license trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_german_drivers_license_number est trouvé.
 - La somme de contrôle est correcte.
@@ -7286,12 +7286,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_german_passport trouve un contenu qui correspond au modèle.
 - Mot clé à partir `Keyword_german_passport` de ou `Keywords_eu_passport_number_common` est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_german_passport_data trouve un contenu qui correspond au modèle.
 - Mot clé à partir `Keyword_german_passport` de ou `Keywords_eu_passport_number_common` est trouvé.
 - La somme de contrôle est correcte.
@@ -7727,7 +7727,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_greece_eu_passport_number` est trouvé.
 - L’expression régulière trouve la date au `Regex_greece_eu_passport_date` format DD MMM AA (exemple - 28 août 19) ou un mot clé à partir `Keywords_greece_eu_passport_date` de laquelle est trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_greece_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_greece_eu_passport_number` est trouvé.
 
@@ -7805,7 +7805,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_greece_eu_ssn` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_greece_eu_ssn_or_equivalent` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_greece_eu_ssn` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -7857,7 +7857,7 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - L’expression  `Regex_greece_eu_tax_file_number` régulière trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_greece_eu_tax_file_number` trouvé.
@@ -7923,7 +7923,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_hong_kong_id_card trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_hong_kong_id_card est trouvé.
 - La somme de contrôle est correcte.
@@ -8007,7 +8007,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - L’expression  `Regex_hungary_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_hungary_eu_driver's_license_number` est trouvé.
@@ -8242,7 +8242,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_hungary_eu_passport_number` est trouvé.
 - L’expression régulière trouve la date au `Regex_hungary_eu_passport_date` format DD MMM/MMM AA (exemple - 01 MÁR/MAR 12) ou un mot clé trouvé `Keywords_eu_passport_date`
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_hungary_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_hungary_eu_passport_number` est trouvé.
 
@@ -8292,7 +8292,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date d’émission
+- date de problème
 - date d’expiration
 
 
@@ -8312,12 +8312,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction  `Func_hungary_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_hungary_eu_ssn_or_equivalent` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction  `Func_hungary_eu_ssn_or_equivalent` trouve un contenu qui correspond au modèle.
 
@@ -8383,12 +8383,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction  `Func_hungary_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_hungary_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 
 - La fonction  `Func_hungary_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
@@ -8696,11 +8696,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction `Func_india_gst_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est `Keyword_india_gst_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction `Func_india_gst_number` trouve un contenu qui correspond au modèle.
 
 
@@ -9461,12 +9461,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_ireland_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_ireland_eu_passport_number` est trouvé.
 - L’expression régulière trouve la date au `Regex_ireland_eu_passport_date` format DD MMM/MMM AAA (exemple - 01 BEA/MAI 1988) ou un mot clé est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_ireland_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_ireland_eu_passport_number` est trouvé.
 
@@ -9521,7 +9521,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date d’émission
+- date de problème
 - date d’expiration
 
 
@@ -9552,7 +9552,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_ireland_pps trouve un contenu qui correspond au modèle.
 - Un mot clé de Keywords_ireland_eu_national_id_card est trouvé.
 - La somme de contrôle est correcte.
@@ -9646,7 +9646,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_israel_bank_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_israel_bank_account_number est trouvé.
 
@@ -9687,7 +9687,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_israeli_national_id_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_Israel_National_ID est trouvé.
 - La somme de contrôle est correcte.
@@ -9748,7 +9748,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression `Regex_italy_drivers_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir `Keywords_eu_driver's_license_number` de ou `Keyword_italy_drivers_license_number` est trouvé.
 
@@ -9930,7 +9930,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_italy_eu_national_id_card` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_italy_eu_national_id_card` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_italy_eu_national_id_card` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -10008,7 +10008,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_italy_eu_passport_number` est trouvé.
 - L’expression régulière trouve la date au `Regex_italy_eu_passport_date` format DD MMM/MMM AAAY (exemple - 01 GEN/JAN 1988) ou un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_italy_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_italy_eu_passport_number` est trouvé.
 
@@ -10588,7 +10588,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction Func_jp_sin trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_sin est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_jp_sin_pre_1997 trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_jp_sin est trouvé.
 
@@ -10649,7 +10649,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_latvia_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_latvia_eu_driver's_license_number` est trouvé.
 
@@ -10826,11 +10826,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_latvia_eu_national_id_card` ou l’regex `Regex_latvia_eu_national_id_card_new_format` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_latvia_eu_national_id_card` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_latvia_eu_national_id_card` ou l’regex `Regex_latvia_eu_national_id_card_new_format` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -10946,12 +10946,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_latvia_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_latvia_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date1` régulière trouve la date au format DD.MM.YYYY ou un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_latvia_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_latvia_eu_passport_number` est trouvé.
 
@@ -11005,7 +11005,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date d’émission
+- date de problème
 - date d’expiration
 
 
@@ -11025,7 +11025,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_lithuania_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_lithuania_eu_driver's_license_number` est trouvé.
 
@@ -11203,7 +11203,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_lithuania_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_lithuania_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_lithuania_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -11281,7 +11281,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_lithuania_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date3` régulière trouve la date au format MM AAA OU un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_lithuania_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_lithuania_eu_passport_number` est trouvé.
 
@@ -11352,7 +11352,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_luxemburg_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_luxemburg_eu_driver's_license_number` est trouvé.
 
@@ -11523,11 +11523,11 @@ oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_luxemburg_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_luxemburg_eu_national_id_card` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_luxemburg_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 
@@ -11589,12 +11589,12 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_luxemburg_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_luxemburg_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date3` régulière trouve la date au format MM AAA OU un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_luxemburg_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_luxemburg_eu_passport_number` est trouvé.
 
@@ -11656,7 +11656,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- date d’émission
+- date de problème
 - date d’expiration
 
 
@@ -11685,11 +11685,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_luxemburg_eu_tax_file_number_non_natural` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_luxemburg_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_luxemburg_eu_tax_file_number_non_natural` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -11774,7 +11774,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_malaysia_id_card_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_malaysia_id_card_number est trouvé.
 
@@ -11840,7 +11840,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_malta_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_malta_eu_driver's_license_number` est trouvé.
 
@@ -12012,7 +12012,7 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_malta_eu_national_id_card` régulière trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_malta_eu_national_id_card` trouvé.
 
@@ -12073,7 +12073,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_malta_eu_passport_number` est trouvé.
 - Un mot clé est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_malta_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_malta_eu_passport_number` est trouvé.
 
@@ -12152,7 +12152,7 @@ Non applicable
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’regex  `Regex_malta_eu_tax_file_number`  ou trouve le contenu qui correspond au `Regex_malta_eu_tax_file_number_non_maltese_national` modèle.
 - Un mot clé est  `Keywords_malta_eu_tax_file_number` trouvé.
 
@@ -12245,7 +12245,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - L’expression  `Regex_mbi_card` régulière trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keyword_mbi_card` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_mbi_card` régulière trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -12300,7 +12300,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_mexico_population_registry_code` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keyword_mexico_population_registry_code` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_mexico_population_registry_code` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -12361,7 +12361,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_netherlands_bsn trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_netherlands_bsn est trouvé.
 - La somme de contrôle est correcte.
@@ -12418,7 +12418,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_netherlands_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_netherlands_eu_driver's_license_number` est trouvé.
 
@@ -12590,7 +12590,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_netherlands_eu_passport_number` est trouvé.
 - L’expression régulière trouve la date au `Regex_netherlands_eu_passport_date` format JMM/AAAMM JMM (exemple - 26 MAA/MAR 2012)
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_netherlands_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_netherlands_eu_passport_number` est trouvé.
 
@@ -12754,7 +12754,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction Func_netherlands_value_added_tax_number trouve un contenu qui correspond au modèle.
 - Un mot clé de Keywords_netherlands_value_added_tax_number est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_netherlands_value_added_tax_number trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -13985,7 +13985,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_portugal_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date1` régulière trouve la date au format DD.MM.YYYY ou un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_portugal_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_portugal_eu_passport_number` est trouvé.
 
@@ -14133,7 +14133,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_romania_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_romania_eu_driver's_license_number` est trouvé.
 
@@ -14692,7 +14692,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_slovakia_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_slovakia_eu_driver's_license_number` est trouvé.
 
@@ -14956,7 +14956,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_slovakia_eu_passport_number` est trouvé.
 - L’expression `Regex_eu_passport_date1` régulière trouve la date au format DD.MM.YYYY ou un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_slovakia_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_slovakia_eu_passport_number` est trouvé.
 
@@ -15029,7 +15029,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_slovenia_eu_driver's_license_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_slovenia_eu_driver's_license_number` est trouvé.
 
@@ -15430,7 +15430,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_south_africa_identification_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_south_africa_identification_number est trouvé.
 - La somme de contrôle est correcte.
@@ -15475,12 +15475,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_south_korea_resident_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_south_korea_resident_number est trouvé.
 - La somme de contrôle est correcte.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_south_korea_resident_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -15526,11 +15526,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_spain_eu_DL_and_NI_number_citizen` ou trouve un contenu qui correspond au `Func_spain_eu_DL_and_NI_number_foreigner` modèle.
 - Mot clé à partir  `Keywords_eu_driver's_license_number` de ou `Keywords_spain_eu_driver's_license_number` est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_spain_eu_DL_and_NI_number_citizen` ou trouve un contenu qui correspond au `Func_spain_eu_DL_and_NI_number_foreigner` modèle.
 
 ```xml
@@ -15728,7 +15728,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_spain_eu_DL_and_NI_number_citizen` ou trouve un contenu qui correspond au `Func_spain_eu_DL_and_NI_number_foreigner` modèle.
 - Un mot clé est  `Keywords_spain_eu_national_id_card"` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_spain_eu_DL_and_NI_number_citizen` ou trouve un contenu qui correspond au `Func_spain_eu_DL_and_NI_number_foreigner` modèle.
 
 
@@ -15803,7 +15803,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_spain_eu_passport_number` est trouvé.
 - L’expression `Regex_spain_eu_passport_date` régulière trouve la date au format JD-MM-AAA OU un mot clé à partir de laquelle est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression  `Regex_spain_eu_passport_number` régulière trouve un contenu qui correspond au modèle.
 - Mot clé à partir  `Keywords_eu_passport_number` de ou `Keywords_spain_eu_passport_number` est trouvé.
 
@@ -15894,7 +15894,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La somme de contrôle est correcte.
 - - Un mot clé est  `Keywords_spain_eu_ssn_or_equivalent` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_spanish_social_security_number trouve un contenu qui correspond au modèle.
 - La somme de contrôle est correcte.
 
@@ -15975,7 +15975,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_spain_eu_tax_file_number` ou trouve un contenu qui correspond au `Func_spain_eu_DL_and_NI_number_citizen` modèle.
 - Un mot clé est  `Keywords_spain_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_spain_eu_tax_file_number` ou trouve un contenu qui correspond au `Func_spain_eu_DL_and_NI_number_citizen` modèle.
 
 ```xml
@@ -16473,7 +16473,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction  `Func_sweden_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_sweden_eu_tax_file_number` trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_sweden_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -16543,7 +16543,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_swift trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_swift est trouvé.
 
@@ -16843,11 +16843,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_Thai_Citizen_Id trouve un contenu qui correspond au modèle.
 - Un mot clé de Keyword_Thai_Citizen_Id est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_Thai_Citizen_Id trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -16890,11 +16890,11 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance élevée dans la détection de ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_Turkish_National_Id trouve un contenu qui correspond au modèle.
 - Un mot clé de Keyword_Turkish_National_Id est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_Turkish_National_Id trouve un contenu qui correspond au modèle.
 
 ```xml
@@ -16940,7 +16940,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction `Func_uk_drivers_license` trouve un contenu qui correspond au modèle.
 - Un mot clé est `Keywords_eu_driver's_license_number` trouvé.
 - La somme de contrôle est correcte.
@@ -17296,7 +17296,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction  `Func_uk_eu_tax_file_number` trouve un contenu qui correspond au modèle.
 - Un mot clé est  `Keywords_uk_eu_tax_file_number` trouvé.
 
@@ -17348,7 +17348,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_usa_bank_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_usa_Bank_Account est trouvé.
 
@@ -17412,7 +17412,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_new_york_drivers_license_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_[state_name]_drivers_license_name est trouvé.
 - Un mot clé figurant dans la liste Keyword_us_drivers_license est trouvé.
@@ -17579,7 +17579,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction Func_formatted_itin trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_itin est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_unformatted_itin trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_itin est trouvé.
 
@@ -17652,7 +17652,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - La fonction Func_ssn trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_ssn est trouvé.
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_unformatted_ssn trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_ssn est trouvé.
 
@@ -17725,7 +17725,7 @@ Une stratégie DLP a une confiance élevée qu’elle a détecté ce type d’in
 - Mot clé à partir `Keywords_eu_passport_number` de ou `Keywords_uk_eu_passport_number` est trouvé.
 - Un mot clé est `Keywords_eu_passport_date` trouvé
 
-Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - La fonction Func_usa_uk_passport trouve un contenu qui correspond au modèle.
 - Mot clé à partir `Keywords_eu_passport_number` de ou `Keywords_uk_eu_passport_number` est trouvé.
 

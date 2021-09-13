@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui la prise en charge de l' sign-on unique pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0edf3e9954fb481e83d40e4af0befd9c7ca9967a7354be1969d226e08f52cb2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 560196694e1c2aaf924e02a882e0c8a3454bf667
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205484"
 ---
 # <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365 Prise en charge des applications clientes : Sign-On
 

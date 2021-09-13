@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Les Office 365 Cloud de la communauté du secteur public Élevé et DoD ont des exigences de sécurité réseau supplémentaires'
 hideEdit: true
-ms.openlocfilehash: 393a581043531165aa9339e1435660431c593408f16c49f5229cd6415a9a67ef
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f4c03d364e84d89a1b12e4d858ab46eb3be6ae5e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207764"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Autres exigences de sécurité réseau pour Office 365 GCC High et DoD
 

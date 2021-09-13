@@ -17,17 +17,17 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 3d6ce59ec83e8271ff0c665386bd33942084d9ad
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207467"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -151,7 +151,7 @@ Les champs suivants sont affichés :
 |---|---|
 |from_version|Version d’origine de l’intelligence de sécurité.|
 |to_version|Nouvelle version de l’intelligence de la sécurité.|
-|status|État de la mise à jour indiquant la réussite ou l’échec.|
+|statut|État de la mise à jour indiquant la réussite ou l’échec.|
 |using_proxy|Si la mise à jour a été effectuée sur un proxy.|
 |error|Code d’erreur en cas d’échec de la mise à jour.|
 |reason (Raison)|Message d’erreur en cas d’échec de la mise à jour.|
@@ -234,7 +234,7 @@ Les champs suivants sont affichés :
 |Champ|Description|
 |---|---|
 |sha256|Identificateur SHA256 du journal de support.|
-|size|Taille du journal de prise en charge.|
+|taille|Taille du journal de prise en charge.|
 |original_path|Chemin d’accès au journal de support (toujours sous */var/opt/microsoft/mdatp/wdavdiag/*).|
 |format|Format du journal de prise en charge.|
 

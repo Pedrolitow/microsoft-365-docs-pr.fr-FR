@@ -22,11 +22,11 @@ description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase Pow
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
 ms.openlocfilehash: 1de0b99954883b301110689c72e10e05c16e7576
-ms.sourcegitcommit: a839a63c2516678139796e31762916e0162b4181
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58408045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208019"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser le module **PowerShell MSCommerce** pour :
 - Afficher la liste des produits applicables et si l’achat en libre-service est activé ou désactivé
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour utiliser le module **PowerShell MSCommerce,** vous devez :
 
@@ -179,7 +179,7 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 Uninstall-Module -Name MSCommerce
 ```-->
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer les achats en libre-service (administrateur)](manage-self-service-purchases-admins.md) (article)
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents d’un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
 ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207972"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 

@@ -16,11 +16,11 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: afc383c158da353da35def39d5b21e2857b9e2ac
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203814"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour
 

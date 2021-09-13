@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les scénarios de collaboration de gouvernance des communications.
-ms.openlocfilehash: a85a88c79d9a08750c6ca2e9c16028c6a0407aeec68c8eb205f7f8132735d807
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204287"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gouvernance des communications pour les scénarios de collaboration
 
@@ -67,7 +67,7 @@ La conformité des communications Microsoft 365 vous permet d’examiner les com
 
 [Conformité des communications dans Microsoft 365](../compliance/communication-compliance.md)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

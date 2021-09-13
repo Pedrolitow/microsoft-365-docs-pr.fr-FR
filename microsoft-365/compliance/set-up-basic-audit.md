@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: Cet article explique comment configurer l’audit de base afin de pouvoir commencer à rechercher les activités d’audit effectuées par les utilisateurs et les administrateurs de votre organisation.
 ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568960"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205883"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>Configurer l’audit de base dans Microsoft 365
 
@@ -34,7 +34,7 @@ Cet article décrit les étapes suivantes nécessaires à la mise en place de l�
 
 ![Étapes de la mise en place de l’audit de base.](../media/BasicAuditingWorkflow.png)
 
-Ces étapes incluent la vérification des abonnements organisationnels et des licences utilisateur appropriés requis pour générer et conserver les enregistrements d’audit, ainsi que l’attribution d’autorisations aux membres de vos équipes de sécurité, informatiques, de conformité et juridiques afin de pouvoir effectuer des recherches dans le journal d’audit.
+Ces étapes incluent la garantie des abonnements organisationnels et des licences utilisateur appropriés nécessaires pour générer et conserver les enregistrements d’audit, ainsi que l’attribution d’autorisations aux membres de vos équipes de sécurité, informatiques, de conformité et juridiques afin de pouvoir effectuer des recherches dans le journal d’audit.
 
 Pour plus d’informations, [voir Audit de base dans Microsoft 365](auditing-solutions-overview.md#basic-audit).
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: Découvrez ce que les modèles de stratégie de protection contre la perte de données (DLP) du Centre de sécurité & conformité Office 365 incluent.
-ms.openlocfilehash: d12420af6ca2e5aea6d1290d0c136bdb27b892c709b6047fad9a4daffffc5f49
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: afcc641e6e868c1988f6b30a286c082e960d056c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53813545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205644"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 
@@ -288,7 +288,7 @@ La protection contre la perte de données (DLP) dans le Centre de conformité de
 
 |**Nom de la règle**|**Conditions  <br/> (y compris les types d’informations sensibles)**|**Actions**|
 |:-----|:-----|:-----|
-|Le contenu correspond à la loi AMÉRICAINE HIPAA  <br/> | Contient l’une des informations sensibles suivantes :  <br/>  Numéro de sécurité sociale (SSN) des États-Unis — Nombre minimum 1, nombre maximum « tout »  <br/>  Numéro de la Drug Enforcement Agency (DEA) — Nombre minimum 1, nombre max « tout »  <br/> **ET** <br/>  Le contenu contient l’un des termes ci-après :  <br/>  Classification internationale des maladie (ICD-9-CM) — Nombre minimum 1, nombre maximum « tout »  <br/>  Classification internationale des maladie (ICD-10-CM) — Nombre minimum 1, nombre maximum « tout »  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
+|Le contenu correspond à la loi AMÉRICAINE HIPAA  <br/> | Contient l’une des informations sensibles suivantes :  <br/>  Numéro de sécurité sociale (SSN) des États-Unis — Nombre minimum 1, nombre maximum « tout »  <br/>  Numéro de la Drug Enforcement Agency (DEA) — Nombre minimum 1, nombre max « tout »  <br/> **AND** <br/>  Le contenu contient l’un des termes ci-après :  <br/>  Classification internationale des maladie (ICD-9-CM) — Nombre minimum 1, nombre maximum « tout »  <br/>  Classification internationale des maladie (ICD-10-CM) — Nombre minimum 1, nombre maximum « tout »  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
    
 ## <a name="us-patriot-act"></a>U.S. Patriot Act
 

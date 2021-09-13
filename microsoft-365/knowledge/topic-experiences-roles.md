@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez les rôles d’utilisateur dans Rubriques.
-ms.openlocfilehash: d09a0e976bd403ffc13be5af5e011451763f44dcca9820f2c448c310cc8fc36d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e26f47e5826ac6db6c41e1b0648dd23398f51c43
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205251"
 ---
 # <a name="roles-in-microsoft-viva-topics"></a>Rôles dans Sujets Microsoft Viva
 
@@ -37,7 +37,7 @@ Les visiteurs des rubriques sont les utilisateurs de votre organisation qui peuv
 Pour que les points forts de la rubrique et leurs pages de rubriques soient visibles par un visionneur de rubriques, l'utilisateur doit :
 
 - [Se faire attribuer une licence Topics par](./set-up-topic-experiences.md#assign-licenses) son Microsoft 365 administrateur.
-- Être autorisé à avoir une visibilité sur des rubriques. Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans la Centre d’administration Microsoft 365.
+- Être autorisé à avoir une visibilité sur des rubriques. Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans la Centre d'administration Microsoft 365.
 
 ## <a name="topic-contributors"></a>Contributeurs de rubrique
 
@@ -50,7 +50,7 @@ Un contributeur peut également créer et publier une nouvelle rubrique via son 
 Pour créer et modifier une rubrique, l’utilisateur doit :
 
 - [Se faire attribuer une licence Topics par](./set-up-topic-experiences.md#assign-licenses) son Microsoft 365 administrateur.
-- [Des autorisations doivent être attribuées pour créer et modifier des rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans la Centre d’administration Microsoft 365.
+- [Des autorisations doivent être attribuées pour créer et modifier des rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans la Centre d'administration Microsoft 365.
 
 ## <a name="knowledge-managers"></a>Responsables d’informations
 
@@ -67,13 +67,13 @@ En outre, un responsable d’informations peut modifier des rubriques existantes
 Pour gérer les rubriques, l’utilisateur doit :
 
 - [Se faire attribuer une licence Topics par](./set-up-topic-experiences.md#assign-licenses) son Microsoft 365 administrateur.
-- [Des autorisations doivent être attribuées pour gérer les rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans la Centre d’administration Microsoft 365.
+- [Des autorisations doivent être attribuées pour gérer les rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans la Centre d'administration Microsoft 365.
 
 Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuvent être de bons candidats au rôle de gestionnaire de connaissances. Ces personnes peuvent non seulement avoir la connaissance de savoir si les rubriques sont valides ou non, mais peuvent également connaître les personnes au sein de l’entreprise qui sont liées à ces rubriques.
 
 ## <a name="knowledge-admins"></a>Administrateurs d’informations
 
-Les administrateurs du savoir sont des administrateurs qui configurent et configurent Topics dans votre environnement Microsoft 365 de gestion. Ils gèrent également les paramètres De La Rubriques Une fois la configuration terminée. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur Microsoft 365 ou un administrateur SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
+Les administrateurs du savoir sont des administrateurs qui configurent et configurent Topics dans votre environnement Microsoft 365 de gestion. Ils gèrent également les paramètres De La Rubriques Une fois la configuration terminée. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur Microsoft 365 ou un administrateur SharePoint, car la configuration et la gestion sont réalisées dans le Centre d'administration Microsoft 365.
 Lors de l’installation, les administrateurs du savoir peuvent configurer Topics pour :
 
 - Sélectionnez les sites SharePoint à analyser pour les rubriques.

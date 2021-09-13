@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77fcf53e5b65a296a02ba05e6bf97e6f627c3a665ee5283c4b78b7d8771d94e0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a5c1cdf9c8a6a1c3e65e62da942304a393f2d371
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203862"
 ---
 # <a name="advanced-hunting-using-python"></a>Repérage avancé à l’aide de Python
 

@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: 2e55070cfc8f5ee138f93ca7ae254655fabcdc9867ba3fd2056f9bbc35f3d099
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5d00c95323f0c2cebb030fd454df0073588ed39f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800071"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203946"
 ---
 # <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security vue d’ensemble de Defender for Endpoint
 

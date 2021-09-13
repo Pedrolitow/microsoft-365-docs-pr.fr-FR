@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1bbf977b9cf5da63bf014e3cce217f9621aa66024cfb3e9fd941dd621119406f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3b4c7e9b7519c2fc0cdc6420093076acbaf88912
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208027"
 ---
 # <a name="payment-information-for-netherlands"></a>Informations de paiement pour les Pays-Bas
 
@@ -26,7 +26,7 @@ ms.locfileid: "53896202"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en EUR et référencer les numéro(s) de facture sur votre paiement.**
+**Veuillez payer en EUR et référencer les numéro(s) de facture à votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: aaec101b6e7046aaf64fac3a5e0bf52e6ee8dd1159b653feac63135fdb3446d9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204972"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Opérations de sécurité dans Microsoft Manged Desktop
 

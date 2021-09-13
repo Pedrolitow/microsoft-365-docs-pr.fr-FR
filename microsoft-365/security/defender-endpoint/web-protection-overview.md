@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 345088af66e08cb693d2b0a8a1e9bfbc51400aab
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571264"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204611"
 ---
 # <a name="web-protection"></a>Protection Web
 
@@ -58,7 +58,7 @@ Pour plus d’informations, voir [Protection contre les menaces web.](web-threat
 
 ### <a name="custom-indicators"></a>Indicateurs personnalisés
 
-Les détections d’indicateurs personnalisés sont également résumées dans les rapports de menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
+Les détections d’indicateurs personnalisés sont également résumées dans les rapports sur les menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
 
 L’indicateur personnalisé inclut :
 
@@ -76,7 +76,7 @@ Le filtrage de contenu **Web inclut l’activité Web par catégorie,** le résu
 
 Le filtrage de contenu Web inclut :
 
-- Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent en local ou en de suite.
+- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite.
 
 - Vous pouvez déployer des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
 

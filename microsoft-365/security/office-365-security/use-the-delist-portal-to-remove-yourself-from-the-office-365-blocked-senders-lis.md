@@ -21,11 +21,11 @@ description: Dans cet article, vous allez apprendre à utiliser le portail Suppr
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0e825c859253b759e5436dbc5419f98f0c863fa3
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863421"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203706"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
 

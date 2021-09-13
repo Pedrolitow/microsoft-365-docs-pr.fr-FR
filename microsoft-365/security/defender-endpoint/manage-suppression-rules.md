@@ -17,18 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: ac8b6255b46c20582d43680b3287f324f4f63c42
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204719"
 ---
 # <a name="manage-suppression-rules"></a>Gérer des règles de suppression
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -53,6 +53,6 @@ Vous pouvez afficher la liste de toutes les règles de suppression et les gérer
 
 2. Cliquez sur un nom de règle. Les détails de la règle s’affichent. Vous verrez les détails de la règle tels que l’état, l’étendue, l’action, le nombre d’alertes correspondantes, créés par et la date de création de la règle. Vous pouvez également afficher les alertes associées et les conditions de règle.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Gérer des alertes](manage-alerts.md)

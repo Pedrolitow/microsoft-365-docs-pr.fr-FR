@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 1227d95469d57921af9f0b97e7adc2a6a49e5573
-ms.sourcegitcommit: 2048c9399a654175438d47e0c3aa2574b949bdc0
+ms.openlocfilehash: 972b5a628f434bdfb989191cf5fcd8ca9bfcc2d0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "58923941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208004"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -273,6 +273,10 @@ Les options de contexte disponibles changent en fonction de l’emplacement que 
 
 - Le contenu contient
 - Le contenu est partagé à partir Microsoft 365
+- Sender is (Preview)
+- Le domaine de l’expéditeur est (aperçu)
+- Le domaine du destinataire est (Aperçu)
+- Le destinataire est (aperçu)
 
 ##### <a name="conditions-devices-supports"></a>Conditions que les appareils prend en charge
 

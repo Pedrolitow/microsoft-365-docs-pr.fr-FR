@@ -15,12 +15,12 @@ ms.custom:
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie sur site dans des environnements autonomes et hybrides.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8214e4b64dbd1c89f9b393e9e88cd57e6b72dde73740874b46e4118b9916411a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56799436"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204443"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
@@ -80,7 +80,7 @@ Cette section fournit une vue d’ensemble des principales fonctionnalités disp
 
 Pour plus d’informations sur les exigences, les limites importantes et la disponibilité des fonctionnalités dans tous les plans d’abonnement EOP, voir la [description Exchange Online Protection service.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
-**Remarques** :
+**Remarques** :
 
 - EOP utilise plusieurs listes rouges d'URL qui permettent de détecter les liens malveillants connus au sein des messages.
 - EOP utilise une vaste liste de domaines connus pour envoyer du courrier indésirable.
@@ -95,7 +95,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Fonctionnalité|Commentaires|
 |---|---|
 |**Protection**||
-|Anti-programme malveillant|[Protection contre les programmes malveillants dans EOP](anti-malware-protection.md) <p> [Forum Aux Questions sur la protection contre les programmes malveillants](anti-malware-protection-faq-eop.yml) <p> [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md)|
+|Ant-programme malveillant|[Protection contre les programmes malveillants dans EOP](anti-malware-protection.md) <p> [Forum Aux Questions sur la protection contre les programmes malveillants](anti-malware-protection-faq-eop.yml) <p> [Configurer des stratégies anti-programme malveillant dans EOP](configure-anti-malware-policies.md)|
 |Courrier indésirable entrant|[Protection contre le courrier indésirable dans EOP](anti-spam-protection.md) <p> [Forum Aux Questions sur la protection anti-courrier indésirable](anti-spam-protection-faq.yml) <p> [Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
 |Courrier indésirable sortant|[Protection contre le courrier indésirable sortant dans EOP](outbound-spam-controls.md) <p> [Configurer le filtrage du courrier indésirable sortant dans EOP](configure-the-outbound-spam-policy.md) <p> [Contrôler le forwarding automatique du courrier externe dans Microsoft 365](external-email-forwarding.md)|
 |Filtrage des connexions|[Configuration du filtrage des connexions](configure-the-connection-filter-policy.md)|
@@ -110,7 +110,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |**Mise en quarantaine et soumissions**||
 |Envoi de l’administrateur|[Utiliser la soumission d’administrateur pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft](admin-submission.md)|
 |Envois d’utilisateurs (boîte aux lettres personnalisée)|[Stratégie de soumissions d’utilisateurs](user-submission.md)|
-|Quarantaine : administrateurs|[Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell](manage-quarantined-messages-and-files.md) <p> [FAQ sur les messages mis en quarantaine](quarantine-faq.yml) <p> [Signaler les messages et fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) <p> [En-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md) <p> Vous pouvez analyser les en-têtes de message des messages mis en quarantaine à l’aide de l’analyseur [d’en-tête de message sur](https://mha.azurewebsites.net/).|
+|Quarantaine : administrateurs|[Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell](manage-quarantined-messages-and-files.md) <p> [FAQ sur les messages mis en quarantaine](quarantine-faq.yml) <p> [Signaler les messages et fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) <p> [En-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md) <p> Vous pouvez analyser les en-têtes de messages mis en quarantaine à l’aide de l’analyseur [d’en-tête de message sur](https://mha.azurewebsites.net/).|
 |Quarantaine : utilisateurs finaux|[Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Exchange Online PowerShell](find-and-release-quarantined-messages-as-a-user.md) <p> [Utiliser les notifications de courrier indésirable de l’utilisateur pour libérer et signaler les messages mis en quarantaine](use-spam-notifications-to-release-and-report-quarantined-messages.md)|
 |**Flux de messagerie**||
 |Règles de flux de messagerie|[Règles de flux de messagerie (règles de transport) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Conditions de règle de flux de messagerie et exceptions (prédicats) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Actions de règle de flux de courrier dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Gérer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procédures de règle de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
@@ -121,7 +121,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Suivi des messages|[Suivi des messages](message-trace-scc.md) <p> [Suivi des messages dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |Envoyer des & rapports de collaboration|[Afficher les rapports sur la sécurité des e-mails](view-email-security-reports.md)|
 |Rapports de flux de messagerie|[Afficher les rapports sur les flux de courrier](view-mail-flow-reports.md) <p> [Rapports de flux de messagerie dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|Informations sur le flux de messagerie|[Informations sur le flux de messagerie](mail-flow-insights-v2.md) <p> [Informations sur le flux de messagerie dans le Centre d Exchange de messagerie](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
+|Informations sur le flux de messagerie|[Informations sur le flux de messagerie](mail-flow-insights-v2.md) <p> [Informations sur le flux de messagerie dans le centre d Exchange’administration de l’utilisateur](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Rapports d’audit|[Rapports d’audit dans le centre d Exchange’administration de l’utilisateur](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |Stratégies d’alerte|[Stratégies d’alerte](../../compliance/alert-policies.md)|
 |**Contrats de niveau de service (SLA) et prise en charge**||
@@ -132,6 +132,6 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Support technique par téléphone ou par Internet 24 heures sur 24, 7 jours sur 7|[Aide et support pour EOP](help-and-support-for-eop.md).|
 |**Autres fonctionnalités**||
 |Réseau de serveurs mondial géo-redondant|EOP s'exécute sur un réseau mondial de centres de données conçus pour contribuer à offrir une disponibilité optimale. Pour plus d’informations, consultez la section des centres de données [EOP](#eop-datacenters) plus tôt dans cet article.|
-|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages de report restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
+|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages en attente restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
 |chiffrement de messages Office 365 disponible en tant qu’modules|Pour plus d'informations, voir [Chiffrement dans Office 365](../../compliance/encryption.md).|
 |||

@@ -14,21 +14,23 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 'Résumé : Utilisez PowerShell pour Microsoft 365 pour ajouter un autre nom de domaine à un client existant.'
-ms.openlocfilehash: 90eec48de55a01dd2298bed1ff0dc068d57da3bb
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+description: 'Résumé : Utilisez PowerShell pour Microsoft 365 ajouter un autre nom de domaine à un client existant.'
+ms.openlocfilehash: 6cb57814f2f1ce8a1cbf6a47b654f6492279faeb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207780"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez créer et associer de nouveaux domaines à la location de votre client avec PowerShell pour Microsoft 365 plus rapidement que d’utiliser le Centre d’administration Microsoft 365.
+Vous pouvez créer et associer de nouveaux domaines à la location de votre client avec PowerShell pour Microsoft 365 plus rapidement que d’utiliser le Centre d'administration Microsoft 365.
 
 Les partenaires avec autorisation d'accès délégué sont les partenaires de syndication et fournisseurs de solutions cloud. Il s’agit souvent de fournisseurs de réseau ou de télécommunication pour d’autres sociétés. Ils regroupent Microsoft 365 abonnements dans leurs offres de services à leurs clients. Lorsqu’ils vendent un abonnement Microsoft 365, ils se voient automatiquement accorder des autorisations Administrer de la part de (AOBO) aux locations du client afin de pouvoir administrer les locations du client et en signaler les locations.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
@@ -52,7 +54,7 @@ Vous avez également besoin des informations suivantes :
  Vos clients vous demanderont probablement de créer des domaines supplémentaires à associer à leur location, car ils ne voudront probablement pas que le domaine\<domain>.onmicrosoft.comsoit le domaine principal qui représente leur identité d'entreprise aux yeux du monde entier. Cette procédure vous guide au fil du processus de création d'un domaine associé à la location de votre client.
 
 > [!NOTE]
-> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur **Administration** complète pour l’attribution d’un accès **administratif** aux sociétés que vous prendrez en charge et qui se trouvent dans les détails du compte d’administrateur dans le Centre d’administration Microsoft 365. Pour plus d’informations sur la gestion des rôles d’administrateur partenaire, voir [Partenaires : proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435)
+> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur Administration complète pour l’attribution d’un accès **administratif** aux sociétés que vous prendrez en charge et qui se trouvent dans les détails du compte d’administrateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.  Pour plus d’informations sur la gestion des rôles d’administrateur partenaire, voir [Partenaires : proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435)
 
 ### <a name="create-the-domain-in-azure-active-directory"></a>Création du domaine dans Azure Active Directory
 

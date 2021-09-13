@@ -21,11 +21,11 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2123cad54bcb1a608447d53a08e61211052e3cca
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204431"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -82,7 +82,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 Pour des problèmes de syntaxe et de paramètres détaillés, voir [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné?
+### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
 Pour vérifier que vous avez bien accordé l’accès au Centre de sécurité & conformité, faites l’une des étapes suivantes :
 

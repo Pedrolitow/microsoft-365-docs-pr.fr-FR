@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: En savoir plus sur la gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint.
-ms.openlocfilehash: 37ea23956e4d4953da631eeb47bc227ad1059a335e68752c5c5b9ab82cef6deb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53853006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204300"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint
 
@@ -36,7 +36,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles d’accès
 ||Appartenance à un groupe dynamique basée sur des règles|[Créer ou mettre à jour un groupe dynamique dans Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Contrôler qui peut partager des fichiers, des dossiers et des sites.|[Configurer et gérer les demandes d’accès](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Accès conditionnel|||
-||Authentification multifacteur|[Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Multi-Factor Authentication|[Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Contrôler l’accès aux appareils en fonction de la sensibilité au groupe, à l’équipe ou au site.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Limiter l’accès au site pour les appareils non utilisés.|[Contrôler SharePoint’accès à partir d’appareils non utilisés](/sharepoint/control-access-from-unmanaged-devices)|
 ||Contrôler l’accès au site en fonction de l’emplacement|[Contrôler l’accès aux données SharePoint et OneDrive en fonction de l’emplacement réseau](/sharepoint/control-access-based-on-network-location)|
@@ -162,13 +162,13 @@ Ressources supplémentaires :
 
 - [Azure Active Directory Gouvernance des identités](/azure/active-directory/governance)
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Sécurité et conformité dans Microsoft Teams](/microsoftteams/security-compliance-overview)
+[Sécurité et de la conformité dans Microsoft Teams](/microsoftteams/security-compliance-overview)
 
 [Gérer les paramètres de partage dans SharePoint](/sharepoint/turn-external-sharing-on-or-off)
 

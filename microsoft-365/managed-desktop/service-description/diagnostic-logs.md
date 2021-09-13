@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04de03e22e270099c647a0dd1ac6d3bb9826ccf87014031bb13ed77b0b580870
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53840118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205011"
 ---
 # <a name="diagnostic-logs"></a>Journaux de diagnostic
 
@@ -99,7 +99,7 @@ Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécu
 - Microsoft-Windows-Bitlocker/Bitlocker Management
 - Microsoft-Windows-SENSE/Opérationnel
 - Microsoft-Windows-SenseIR/Operational
-- Configuration
+- Installation
 - Système
 
 ### <a name="files"></a>Fichiers

@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Cet article explique comment utiliser Azure pour créer un environnement de récupération d’urgence pour votre batterie de serveurs SharePoint local.
 ms.openlocfilehash: 87bbbf143fe831537ddbc08e6d43b4013fe1e379
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205300"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure
 
@@ -186,7 +186,7 @@ Le schéma suivant illustre un environnement de basculement Azure dans lequel la
   
 **Schéma : Batterie de récupération à reprise progressive avec machines virtuelles exécutées**
 
-![Éléments d’une SharePoint solution de veille à froid dans Azure.](../media/AZarch-AZColdStndby.png)
+![Éléments d’SharePoint solution de veille à froid dans Azure.](../media/AZarch-AZColdStndby.png)
   
 Après le basculement vers un environnement à reprise progressive, toutes les machines virtuelles sont démarrées et la méthode pour obtenir une haute disponibilité des serveurs de base de données doit être configurée, par exemple les groupes de disponibilité AlwaysOn SQL Server.
   

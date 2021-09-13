@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 699d8c1d8ea7ac6928c96b6c98226ab82e0725fb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204545"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour Microsoft 365 Defender
 

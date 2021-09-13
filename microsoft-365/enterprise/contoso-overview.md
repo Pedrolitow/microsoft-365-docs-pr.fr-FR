@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
 ms.openlocfilehash: 87508d47e5124f55a0302ca305b0dbd9de07e841
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207691"
 ---
 # <a name="overview-of-contoso-corporation"></a>Vue d’ensemble de Contoso Corporation
 
@@ -45,7 +45,7 @@ Contoso possède trois niveaux de bureaux :
 
   Les bureaux hub servent une région spécifique du monde avec 60 % de chiffre d’affaires et de personnel de support technique. Chaque hub régional est connecté au siège social parisien via une liaison WAN à bande passante élevée.
 
-  Les centres régionaux ont en moyenne 2 000 employés.
+  Les centres régionaux ont en moyenne 2 000 travailleurs.
 
 - Succursales
 

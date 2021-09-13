@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9cf6adb054fed9a6d00a8419753c52e2b75d3487be0822a4de4682855f584cb8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
-ms.translationtype: HT
+ms.openlocfilehash: f950943d63c7c67a6b4a364e75b4c91b461b7f73
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53877108"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204900"
 ---
 # <a name="working-with-microsoft-managed-desktop"></a>Utilisation du Bureau géré Microsoft
 

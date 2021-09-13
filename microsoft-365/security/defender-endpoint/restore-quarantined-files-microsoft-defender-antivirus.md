@@ -17,11 +17,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: dfca90f3c6c3a0ca52a92ff42aab351d5dfc8e08
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207451"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Restaurer des fichiers mis en quarantaine dans l’antivirus Microsoft Defender
 

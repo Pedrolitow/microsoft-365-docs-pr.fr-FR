@@ -1,5 +1,5 @@
 ---
-title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer des locataires
+title: Gérer vos autoriser et bloquer dans la liste d’autoriser/bloquer le client
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,11 +17,11 @@ description: Les administrateurs peuvent apprendre à gérer les autoriser et le
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: aca302aedfaa97b9e2661716d7bc7a6e846fa6fb
-ms.sourcegitcommit: 99f7bd19e9c6997f0dbff7f59cb29a9768044b54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "58896488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204323"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -36,7 +36,7 @@ ms.locfileid: "58896488"
 >
 > Certaines des fonctionnalités décrites dans cet article sont en prévisualisation, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
 >
-> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresses chez [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+> Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresse chez [Manage spoofof senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous pouvez ne pas être d’accord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message erroné peut être autorisé (faux négatif).
 
@@ -45,7 +45,7 @@ La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender
 - URL à bloquer.
 - Fichiers à bloquer.
 - Messages électroniques ou domaines de l’expéditeur à bloquer.
-- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresse.
+- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
 - URL à autoriser.
 - Fichiers à autoriser.
 - Messages électroniques ou domaines de l’expéditeur à autoriser.
@@ -81,10 +81,10 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 - Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
   - **Expéditeurs, URL et fichiers**:
     - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires,  vous devez être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité, ou le rôle Gestionnaire **AllowBlockList** du client vous est attribué.
-    - Pour un accès en lecture seule à la liste des locataires  autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
+    - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
   - **Usurpation :** l’une des combinaisons suivantes :
     - **Gestion de l'organisation**
-    - **Administrateur de la** <u>sécurité et</u> **configuration en affichage seul** ou gestion **de l’organisation en affichage seul.**
+    - **Administrateur de sécurité** <u>et</u> **configuration en affichage seul** ou gestion de **l’organisation en affichage seul.**
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -121,19 +121,19 @@ Pour gérer tous les blocs et tous les autoriser, voir Ajouter des blocs dans la
      - **Action**: la valeur **Autoriser** ou **Bloquer**.
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
    - **URL**:
      - **Valeur**: URL.
      - **Action**: la valeur **Autoriser** ou **Bloquer**.
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
    - **Files**
      - **Valeur**: hachage du fichier.
      - **Action**: la valeur **Autoriser** ou **Bloquer**.
      - **Dernière mise à jour**
      - **Supprimer le**
-     - **Notes**
+     - **Remarques**
    - **Usurpation**
      - **Utilisateur usurpé**
      - **Infrastructure d’envoi**

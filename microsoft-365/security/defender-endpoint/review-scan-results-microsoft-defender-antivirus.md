@@ -17,11 +17,11 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: ec4505de586b042db48e579ee50d83315ee9b470
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207443"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en Antivirus Microsoft Defender résultats d’analyse
 

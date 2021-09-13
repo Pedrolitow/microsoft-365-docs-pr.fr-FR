@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les contrôles de courrier indésirable sortant dans Exchange Online Protection (EOP) et ce que vous devez faire si vous devez envoyer des messages électroniques de masse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2207283857cd15bf2e8fcadf223532ecd810da4a1f0908cc4d391b7aee89263b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0fb6bfe5d83c551c0a93cc7b453b27a2d7b476bc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56967382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204365"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Protection contre le courrier indésirable sortant dans EOP
 
@@ -58,7 +58,7 @@ Cet article décrit les contrôles et les notifications conçus pour empêcher l
 
 <sup>\*</sup> Nous n’publions pas les limites exactes afin que les expéditeurs de courrier indésirable ne peuvent pas jouer au système, et donc nous pouvons augmenter ou diminuer les limites si nécessaire. Les limites sont suffisamment élevées pour empêcher un utilisateur commercial moyen de les dépasser et suffisamment faibles pour vous aider à contenir les dommages causés par un expéditeur de courrier indésirable.
 
-## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Recommandations pour les clients qui souhaitent envoyer des publipostages de masse via EOP
+## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Recommandations clients qui souhaitent envoyer des publipostages de masse via EOP
 
 Il est difficile de trouver un équilibre entre les clients qui souhaitent envoyer un grand volume de courriers électroniques par rapport à la protection du service contre les comptes compromis et les expéditeurs de courrier en masse ayant des pratiques d’acquisition médiocres de destinataires. Le coût d’une source Microsoft 365 courrier électronique à l’arrivée sur une liste d’adresses IP tierces est supérieur au blocage d’un utilisateur qui envoie trop de messages électroniques.
 
@@ -66,6 +66,6 @@ Comme décrit dans la description du service [Exchange Online,](/office365/servi
 
 - **Envoyer des messages électroniques en** bloc via des serveurs de messagerie locaux : les clients conservent leur propre infrastructure de messagerie pour les publipostages de masse.
 
-- **Utilisez un fournisseur de messagerie** en bloc tiers : il existe plusieurs fournisseurs tiers de solutions de messagerie en bloc que vous pouvez utiliser pour envoyer des publipostages en masse. Ces sociétés ont tout intérêt à collaborer avec leurs clients pour garantir de bonnes pratiques d’envoi de courrier électronique.
+- **Utilisez un fournisseur de messagerie** en bloc tiers : il existe plusieurs fournisseurs tiers de solutions de messagerie en bloc que vous pouvez utiliser pour envoyer des messages de masse. Ces sociétés ont tout intérêt à collaborer avec leurs clients pour garantir de bonnes pratiques d’envoi de courrier électronique.
 
-Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d’appartenance à <https://www.maawg.org/about/roster> l':. Plusieurs fournisseurs de messagerie en masse sont répertoriés et sont connus comme citoyens Internet responsables.
+Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d’appartenance à <https://www.maawg.org/about/roster> l'. Plusieurs fournisseurs de messagerie en masse sont répertoriés et sont connus comme citoyens Internet responsables.

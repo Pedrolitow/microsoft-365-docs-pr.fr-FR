@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Pour les adresses IP de destination et les URL pour le trafic Microsoft 365, utilisez cette liste d’articles pour les points de terminaison Internet des différents Microsoft 365 nuages.
-ms.openlocfilehash: 3ffe00e1b578f135829f8c1d621e413dd6f00848041087222a0af4518e79a15f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 159c8e7dea6fe241ab44b283b1193397c3ad70e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53830196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205476"
 ---
 # <a name="microsoft-365-endpoints"></a>Points de terminaison Microsoft 365
 

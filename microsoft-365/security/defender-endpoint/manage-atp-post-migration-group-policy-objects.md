@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
 ms.openlocfilehash: b731dcbeaf49b2c1f6bfbfacde17f7643c8faf4d
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207460"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gérer Microsoft Defender pour le point de terminaison avec des objets de stratégie de groupe
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

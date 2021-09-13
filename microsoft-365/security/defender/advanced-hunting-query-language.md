@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565747"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204575"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -34,7 +34,7 @@ ms.locfileid: "58565747"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/query/). Vous pouvez utiliser des opérateurs et des instructions Kusto pour créer des requêtes qui recherchent des informations dans un [schéma spécialisé.](advanced-hunting-schema-tables.md) Pour mieux comprendre ces concepts, exécutez votre première requête.
 
@@ -65,7 +65,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[Exécuter cette requête dans un recherche avancée](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Décrire la requête et spécifier les tables à rechercher
-Un commentaire court a été ajouté au début de la requête pour décrire son objectif. Ce commentaire est utile si vous décidez ultérieurement d’enregistrer la requête et de la partager avec d’autres membres de votre organisation. 
+Un commentaire court a été ajouté au début de la requête pour décrire son objectif. Ce commentaire permet de choisir ultérieurement d’enregistrer la requête et de la partager avec d’autres dans votre organisation. 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -77,7 +77,7 @@ La requête elle-même commence généralement par un nom de table suivi de plus
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Définir la plage de temps
-Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation de la plage de temps permet de s’assurer que les requêtes s’exécutent bien, retournent des résultats gérables et n’arrivent pas à terme.
+Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation d’un intervalle de temps permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -107,7 +107,7 @@ Ensuite, la requête recherche des chaînes dans les lignes de commande qui sont
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personnaliser les colonnes de résultats et la longueur 
-Maintenant que votre requête identifie clairement les données que vous souhaitez localiser, vous pouvez définir à quoi ressemblent les résultats. `project` renvoie des `top` colonnes spécifiques et limite le nombre de résultats. Ces opérateurs permettent de s’assurer que les résultats sont bien formatés, raisonnablement grands et faciles à traiter.
+Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez définir l’apparence des résultats. `project` renvoie des `top` colonnes spécifiques et limite le nombre de résultats. Ces opérateurs permettent de s’assurer que les résultats sont bien formatés, raisonnablement grands et faciles à traiter.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -147,17 +147,17 @@ Le recherche avancée prend en charge les types de données Kusto, y compris les
 
 | Type de données | Description et implications dans les requêtes |
 |--|--|
-| `datetime` | Les données et les informations d’heure représentent généralement des timestamps d’événement. [Voir les formats de date/heure pris en charge](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | Chaîne de caractères en UTF-8 entre guillemets simples ( `'` ) ou guillemets doubles ( `"` ). [En savoir plus sur les chaînes](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `datetime` | Informations sur les données et les heures représentant généralement les timestamps d’événement. [Voir les formats de date/heure pris en charge](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | Chaîne de caractères en UTF-8 entre guillemets simples (`'`) ou guillemets doubles (`"`). [En savoir plus sur les chaînes](/azure/data-explorer/kusto/query/scalar-data-types/string) |
 | `bool` | Ce type de données prend en charge `true` ou `false` indique. [Voir les opérateurs et les littéraux pris en charge](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
-| `int` | Integer 32 bits  |
-| `long` | Integer 64 bits |
+| `int` | Valeur entière 32 bits.  |
+| `long` | Valeur entière 64 bits. |
 
 Pour en savoir plus sur ces types de données, consultez les types de données [scalar Kusto.](/azure/data-explorer/kusto/query/scalar-data-types/)
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion automatique : lorsque** vous écrivez des requêtes, la recherche avancée fournit des suggestions de IntelliSense. 
+- **Suggestion automatique : lorsque** vous écrivez des requêtes, le recherche avancée fournit des suggestions de IntelliSense. 
 - **Arborescence de schéma**: une représentation de schéma qui inclut la liste des tableaux et leurs colonnes est fournie en de côté de votre zone de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
 - **[Référence de schéma :](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** référence dans le portail avec des descriptions de tableau et de colonne, ainsi que des types d’événements pris en charge (valeurs) et `ActionType` des exemples de requêtes
 
@@ -185,7 +185,7 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

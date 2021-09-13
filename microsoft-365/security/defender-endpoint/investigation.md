@@ -19,11 +19,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207475"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource Investigation
 
@@ -55,20 +55,15 @@ Méthode|Type renvoyé|Description
 
 Propriété|Type|Description
 :---|:---|:---
-id|String|Identité de l’entité d’investigation. 
+id|Chaîne|Identité de l’entité d’investigation. 
 startTime|DateTime Nullable|Date et heure de création de l’enquête.
 endTime|DateTime Nullable|Date et heure de fin de l’enquête.
-cancelledBy|String
-|ID de l’utilisateur/de l’application qui a annulé cet examen.
+cancelledBy|String|ID de l’utilisateur/de l’application qui a annulé cet examen.
 état|Énum|État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-statusDetails|String
-|Informations supplémentaires sur l’état de l’enquête.
-machineId|String
-|ID de l’appareil sur lequel l’enquête est exécutée.
-computerDnsName|String
-|Nom de l’appareil sur lequel l’enquête est exécutée.
-triggeringAlertId|String
-|ID de l’alerte qui a déclenché l’enquête.
+statusDetails|Chaîne|Informations supplémentaires sur l’état de l’enquête.
+machineId|String|ID de l’appareil sur lequel l’enquête est exécutée.
+computerDnsName|Chaîne|Nom de l’appareil sur lequel l’enquête est exécutée.
+triggeringAlertId|Chaîne|ID de l’alerte qui a déclenché l’enquête.
 
 ## <a name="json-representation"></a>Représentation Json
 

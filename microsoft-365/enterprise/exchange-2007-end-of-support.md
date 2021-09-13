@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Découvrez vos options après Exchange Server 2007 et commencez à planifier la migration vers Microsoft 365, Office 365 ou Exchange 2016.
-ms.openlocfilehash: a6de134db567d3c932d4455409653f1bfd40b3e35960f84691cbcef247b1cfe5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207612"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Exchange 2007
 
@@ -53,7 +53,7 @@ Vous pouvez :
     
 Les sections suivantes explorent chaque option plus en détail.
   
-### <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
+### <a name="migrate-to-microsoft-365"></a>Migrer vers Microsoft 365
 
 La migration de votre courrier vers Microsoft 365 est la meilleure option et la plus simple pour vous aider à retirer votre déploiement Exchange 2007. Avec une migration vers Microsoft 365, vous pouvez effectuer un saut unique entre une technologie de 10 ans et des fonctionnalités de pointe, notamment :
   
@@ -245,7 +245,7 @@ Si vous avez décidé de conserver votre courrier électronique en local, utilis
     
 ## <a name="get-help"></a>Obtenir de l’aide
 
-Si vous migrez vers Microsoft 365, vous pouvez utiliser notre service Microsoft FastTrack. FastTrack fournit les meilleures pratiques, outils et ressources pour rendre votre migration vers Microsoft 365 aussi transparente que possible. Mieux encore, un ingénieur du support technique vous aidera tout au long de votre migration, de la planification et de la conception jusqu’à la migration de votre dernière boîte aux lettres. Pour plus d’informations sur FastTrack, voir [Microsoft FastTrack.](https://fasttrack.microsoft.com/)
+Si vous migrez vers Microsoft 365, vous pouvez utiliser notre service Microsoft FastTrack. FastTrack fournit les meilleures pratiques, outils et ressources pour rendre votre migration vers Microsoft 365 aussi transparente que possible. Mieux encore, un ingénieur du support technique vous aidera tout au long de votre migration, de la planification et de la conception jusqu’à la migration de votre dernière boîte aux lettres. Pour plus d’informations FastTrack, voir [Microsoft FastTrack](https://fasttrack.microsoft.com/).
   
 Si vous avez des problèmes lors de votre migration vers Microsoft 365 et que vous n’utilisez pas FastTrack ou votre migration vers une version plus récente de Exchange Server, nous sommes là pour vous aider. Voici quelques ressources que vous pouvez utiliser :
   
@@ -253,6 +253,6 @@ Si vous avez des problèmes lors de votre migration vers Microsoft 365 et que vo
     
 - [Support client](https://support.microsoft.com/gp/support-options-for-business)
     
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007](upgrade-from-office-2007-servers-and-products.md)

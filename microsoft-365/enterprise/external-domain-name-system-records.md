@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Liste de références des enregistrements système de nom de domaine externe à utiliser lorsque vous planifiez d’un déploiement Office 365.
 ms.openlocfilehash: e54a25aef956784fd74ad65dc54357ea3db0f57c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207596"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Enregistrements DNS externes pour Office 365
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7ce64c7e04030e64427ea44e038c402de34990ce309891f314e60b9808906e66
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0571197882c32f6cf591106de4e5221fdebaf786
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203982"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un domaine associé à une alerte Microsoft Defender pour le point de terminaison
 
@@ -63,7 +63,7 @@ Bien que la période par défaut soit les 30 derniers jours, vous pouvez personn
 
 ## <a name="alerts"></a>Alertes
 
-**L’onglet Alertes** fournit une liste des alertes associées à l’URL. Le tableau présenté ici est une version filtrée des alertes visibles sur l’écran de file d’attente des alertes, affichant uniquement les alertes associées au domaine, leur gravité, leur état, l’incident associé, la classification, l’état de l’enquête, etc.
+**L’onglet Alertes** fournit une liste des alertes associées à l’URL. Le tableau présenté ici est une version filtrée des alertes visible sur l’écran de file d’attente des alertes, affichant uniquement les alertes associées au domaine, leur gravité, leur état, l’incident associé, la classification, l’état de l’enquête, etc.
 
 L’onglet Alertes peut être ajusté pour afficher plus  ou moins d’informations, en sélectionnant Personnaliser les colonnes dans le menu Actions au-dessus des en-têtes de colonne. Le nombre d’éléments affichés peut également être ajusté en sélectionnant des **éléments par page** dans le même menu.
 
@@ -81,7 +81,7 @@ Vous pouvez afficher les événements de différentes périodes en entrant les d
 4. Utilisez les filtres de recherche pour définir les critères de recherche. Vous pouvez également utiliser la zone de recherche de chronologie pour filtrer les résultats affichés de tous les appareils de l’organisation observés en communication avec l’URL, le fichier associé à la communication et la dernière date observée.
 5. En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner les alertes, comportements et événements signalés.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)

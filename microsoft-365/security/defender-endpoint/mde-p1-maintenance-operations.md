@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: c74549579efc9ddf94aa89cfe2007620ddd2d826
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58824048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204702"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Gérer Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 

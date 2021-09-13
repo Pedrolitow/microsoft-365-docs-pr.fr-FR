@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Les administrateurs peuvent réactiver un abonnement lorsqu’il expire, est désactivé ou annulé, ou si vous avez annulé l’abonnement au milieu d’une période d’abonnement.
 ms.date: 04/07/2021
-ms.openlocfilehash: a33cf6b0500dedabfde1de8f78417148a9e870e9867d530d6fb8e6346f37f21d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204167"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
@@ -35,7 +35,7 @@ Vous pouvez réactiver votre abonnement dans le Centre d’administration si : l
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global ou un administrateur de facturation pour réactiver un abonnement. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global ou un administrateur de facturation pour réactiver un abonnement. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 **Vous n’êtes pas administrateur ?** Contactez votre administration pour réactiver votre abonnement.
 
@@ -43,7 +43,7 @@ Vous devez être un administrateur global ou un administrateur de facturation po
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 ::: moniker-end
 

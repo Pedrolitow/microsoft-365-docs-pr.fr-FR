@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: c809f341c8bcb1b1f028a8a06ed06a1beeb8c00a
-ms.sourcegitcommit: 38a07b23d41763275628ab89e2e4e58ae2926997
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58357409"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204876"
 ---
 # <a name="windows-security-updates-report"></a>Rapport des mises à jour de sécurité Windows
 

@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Découvrez comment créer, définir et choisir des dépositaires et des emplacements de conservation pour une recherche dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204132"
 ---
 # <a name="create-a-search"></a>Créer une recherche
 

@@ -21,18 +21,18 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 85b021d42741919a64555de3ecd748e096457939
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58824009"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204756"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour De Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 

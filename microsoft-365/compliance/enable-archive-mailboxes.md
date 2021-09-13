@@ -21,11 +21,11 @@ ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
 ms.openlocfilehash: 28af0de029deb2dc732f4e31f7f85f80db6bf081
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574807"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207915"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 

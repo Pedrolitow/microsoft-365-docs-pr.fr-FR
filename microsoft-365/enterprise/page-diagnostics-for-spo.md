@@ -20,11 +20,11 @@ f1.keywords:
 - NOCSH
 description: Utilisez l’outil Diagnostic de page pour SharePoint pour analyser le portail moderne et les pages de publication classiques SharePoint Online par rapport à un ensemble prédéfin défini de critères de performances.
 ms.openlocfilehash: e741e8e2da62d2361578e31edcb6dbbafafbb7dc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574711"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204065"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utiliser l’outil Diagnostic de page pour SharePoint de page
 

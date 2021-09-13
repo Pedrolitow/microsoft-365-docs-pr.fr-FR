@@ -16,11 +16,11 @@ ms.collection:
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 de connexion
 ms.openlocfilehash: 9dbb65bc9c6060b58c3629e7e1863d9cf7d8e9e3
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205395"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 
@@ -78,7 +78,7 @@ Les rapports de test sont liés à un emplacement s’il a été ajouté avec de
 Les échantillons de mesure et les emplacements de bureau doivent commencer à apparaître 2 à 3 minutes après la fin d’un rapport de test. Pour plus d’informations, [voir Microsoft 365 test de connectivité réseau.](office-365-network-mac-perf-onboarding-tool.md)
 
 > [!NOTE]
-> Actuellement, si vous ajoutez vos emplacements de bureau à Microsoft 365 connectivité réseau dans le Centre d’administration Microsoft 365, vous ne pouvez fournir que des adresses IPv4 pour vos sous-réseaux lan. Egress Les adresses IP doivent utiliser IPv4.
+> Actuellement, si vous ajoutez vos emplacements de bureau à Microsoft 365 connectivité réseau dans le Centre d'administration Microsoft 365, vous ne pouvez fournir que des adresses IPv4 pour vos sous-réseaux lan. Egress Les adresses IP doivent utiliser IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>Comment utiliser ces informations ?
 
@@ -144,7 +144,7 @@ Une carte du réseau de périmètre pour les utilisateurs de votre organisation 
 
 - **Office-** Emplacement du bureau de la page que vous regardez
 - **Périmètre réseau** : emplacement de l’adresse IP source pour les connexions à partir de l’emplacement du bureau. Cela dépend de la précision des bases de données d’emplacements ip géographiques
-- **Exchange service** frontal optimal : l’une des portes d’Exchange de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
+- **Exchange service** frontal optimal : l’une des Exchange de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
 - **Exchange frontale sous-optimale** : une porte d’Exchange service frontale à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
 - **SharePoint service** frontal optimal : l’une des SharePoint de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
 - SharePoint service frontal **sous-optimal** : une porte d’SharePoint service à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
@@ -155,7 +155,7 @@ La page récapitulatif de l’emplacement du bureau affiche également l’éval
 
 Les comparaisons entre les clients de la même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft à proximité.
 
-Les noms d’emplacement peuvent être personnalisés lors de l’ajout d’un nouvel emplacement ou de la modification d’un emplacement existant dans le flyout d’emplacement. Cela vous offre la possibilité de personnaliser vos noms d’emplacement à tout moment. En outre, lorsque vous ajoutez des sous-réseaux LAN directement dans le volant d’emplacements, nous montrons une liste de listes de sous-réseaux LAN de correspondances soft que vous pouvez sélectionner. Les noms de circuits pour des adresses IP de sortie d’office spécifiques peuvent également être ajoutés et modifiés.
+Les noms d’emplacement peuvent être personnalisés lors de l’ajout d’un nouvel emplacement ou de la modification d’un emplacement existant dans le flyout d’emplacement. Cela vous offre la possibilité de personnaliser vos noms d’emplacement à tout moment. En outre, lorsque vous ajoutez des sous-réseaux LAN directement dans le volant d’emplacements, nous vous montrons une liste de listes de sous-réseaux LAN de correspondances soft que vous pouvez sélectionner. Les noms de circuits pour des adresses IP de sortie d’office spécifiques peuvent également être ajoutés et modifiés.
 
 L’onglet Détails de la page d’emplacement du bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour obtenir des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et de prendre en compte les contraintes ou les spécificités de leur environnement. Vous trouverez également le nombre estimé d’utilisateurs pour les échantillons collectés dans ces bureaux, ainsi que les travailleurs à distance dans cette ville.
 
@@ -186,7 +186,7 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    1. **userEntered** (obligatoire) : doit être 1 pour un nouvel emplacement de bureau de sous-réseau local en cours d’ajout
    1. **Nom** (obligatoire) : nom de l’emplacement du bureau
    1. **Adresse** (obligatoire) : adresse physique du bureau
-   1. **Latitude** (facultative) : rempli à partir de Bing recherche de l’adresse si vide
+   1. **Latitude** (facultative) : rempli à partir Bing recherche de cartes de l’adresse si vide
    1. **Longitude** (facultative) : remplie à partir Bing recherche de cartes de l’adresse si vide
    1. **Egress plages d’adresses IP 1 à 5** (facultatives) : pour chaque plage, entrez le nom du circuit suivi d’une liste séparée par des espaces d’adresses CIDR IPv4 valides. Ces valeurs sont utilisées pour différencier plusieurs emplacements de bureau où vous utilisez les mêmes adresses IP de sous-réseau local. Egress Les plages d’adresses IP doivent toutes être de /24 taille réseau et /24 n’est pas inclus dans l’entrée.
    1. **LanIps** (obligatoire) : rép.des plages de sous-réseaux LAN en cours d’utilisation à cet emplacement de bureau. Les ID de sous-réseau local doivent avoir une taille de réseau CIDR incluse, où la taille du réseau peut être comprise entre /8 et /29. Plusieurs plages de sous-réseaux LAN peuvent être séparées par une virgule ou un point-virgule.
@@ -218,13 +218,13 @@ Une porte Microsoft 365 service frontal optimale est celle qui est la plus proch
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 
-L’emplacement de sortie Internet est l’emplacement où le trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut indiquer un retour de réseau wan important.
+L’emplacement de sortie Internet est l’emplacement où le trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut indiquer un retour arrière wan important.
 
 ### <a name="what-license-is-needed-for-this-capability"></a>Quelle licence est nécessaire pour cette fonctionnalité ?
 
-Vous avez besoin d’une licence qui donne accès au Centre d’administration Microsoft 365.
+Vous avez besoin d’une licence qui donne accès au Centre d'administration Microsoft 365.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Microsoft 365 informations sur le réseau (aperçu)](office-365-network-mac-perf-insights.md)
 

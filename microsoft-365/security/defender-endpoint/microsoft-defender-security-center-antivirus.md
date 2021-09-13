@@ -16,15 +16,15 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203891"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 

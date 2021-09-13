@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: cc06faa8a5a18f8f63a984e6ce3f7b6bfb6cbc4b
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205172"
 ---
 # <a name="readiness-assessment-tools"></a>Outils d’évaluation de la préparation
 
@@ -27,7 +27,7 @@ Pour plus d’informations sur l’utilisation de l’outil de vérification de 
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Outil d’évaluation de la préparation en ligne pour les paramètres de gestion
 
-L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Manged Desktop. [](https://aka.ms/mmdart) Microsoft Manged Desktop conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Au bout de 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
+L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Manged Desktop. [](https://aka.ms/mmdart) Microsoft Manged Desktop conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Après 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
 
 Toute personne ayant au moins le rôle Lecteur global ou Administrateur Intune pourra exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
  
@@ -37,7 +37,7 @@ L’outil d’évaluation vérifie les éléments ci-après :
 
 |Chèque  |Description  |
 |---------|---------|
-|Profil Autopilot Deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun Microsoft Manged Desktop appareils.)        |
+|Profil autopilot deployment     | Vérifie que l’affectation du profil Autopilot Deployment ne s’applique pas à tous les appareils (le profil ne doit être affecté à aucun Microsoft Manged Desktop appareils.)        |
 |Connecteurs de certificat     | Vérifie l’état des connecteurs de certificat pour s’assurer qu’ils sont actifs   |
 |Accès conditionnel     | Vérifie que les stratégies d’accès conditionnel ne  sont pas affectées à tous les utilisateurs (les stratégies d’accès conditionnel ne doivent pas être affectées Microsoft Manged Desktop comptes de service.)    |
 |Stratégies de conformité des appareils     | Vérifie que les stratégies de conformité Intune  ne sont pas affectées à tous les utilisateurs (les stratégies ne doivent pas être affectées à Microsoft Manged Desktop appareils.)    |
@@ -47,12 +47,12 @@ L’outil d’évaluation vérifie les éléments ci-après :
 |Inscription à Intune     | Vérifie que les Windows 10 de votre organisation Azure AD sont automatiquement inscrits dans Intune         |
 |Microsoft Store pour Entreprises     | Confirme que la Microsoft Store pour Entreprises est activée et synchronisée avec Intune        |
 |Authentification multifacteur | Vérifie que l’authentification multifacteur n’est pas appliquée Microsoft Manged Desktop comptes de service.
-|Scripts PowerShell     | Vérifie que les scripts Windows PowerShell *ne* sont pas affectés d’une manière qui ciblerait les Microsoft Manged Desktop périphériques    |
+|Scripts PowerShell     | Vérifie que Windows PowerShell scripts de contrôle ne *sont* pas affectés d’une manière qui ciblerait les Microsoft Manged Desktop périphériques    |
 |Région     | Vérifie que votre région est prise en charge par Microsoft Manged Desktop        |
 |Bases de référence de sécurité     | Vérifie que le profil de base de sécurité ne cible  pas tous les utilisateurs ou tous les appareils (les stratégies de base de sécurité ne doivent pas cibler Microsoft Manged Desktop appareils.)       |
 |Windows applications     | Passer en revue les applications que vous souhaitez affecter à Microsoft Manged Desktop appareils      |
 |Windows Hello Entreprise     | Vérifie que Windows Hello entreprise est activé        |
-|Windows 10 sonnerie de mise à jour     | Vérifie que la stratégie « anneau de mise à jour Windows 10 » d’Intune ne cible pas tous les utilisateurs ou tous les appareils (la stratégie ne doit pas cibler Microsoft Manged Desktop périphériques.)      |
+|Windows 10 de mise à jour     | Vérifie que la stratégie « anneau de mise à jour Windows 10 » d’Intune ne cible pas tous les utilisateurs ou tous les appareils (la stratégie ne doit pas cibler Microsoft Manged Desktop périphériques.)      |
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory paramètres
@@ -95,12 +95,12 @@ Une fois que vous avez terminé l’inscription dans Microsoft Manged Desktop, n
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
 2. Exécutez les outils d’évaluation de la préparation (cet article).
-1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
-1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
-1. Vérifiez [la configuration du réseau.](network.md)
-1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
-1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
-1. [Préparer les applications.](apps.md)
-1. [Préparez les lecteurs mappés.](mapped-drives.md)
-1. [Préparer les ressources d’impression.](printing.md)
-1. Noms des [périphériques d’adresse.](address-device-names.md)
+1. Achetez [Portail d’entreprise](../get-started/company-portal.md).
+1. Passez en revue les [prérequis pour les comptes invités](guest-accounts.md).
+1. Vérifiez la[configuration réseau](network.md).
+1. [Préparer les certificats et les profils réseau](certs-wifi-lan.md).
+1. [Préparer l’accès utilisateur aux données](authentication.md).
+1. [Préparer les applications](apps.md).
+1. [Préparer les lecteurs mappés](mapped-drives.md).
+1. [Préparer les ressources d’impression](printing.md).
+1. [noms d’appareil](address-device-names.md) d’une adresse.

@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 242d0983913a646e34caf4766bcaec90c652fbd3
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203928"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -43,20 +43,20 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Comment installer Microsoft Defender pour le point de terminaison sur Android
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - **Pour les utilisateurs finaux**:
   - Licence Microsoft Defender pour point de terminaison attribuée à l’utilisateur final de l’application. Voir [microsoft Defender pour les conditions requises pour les licences de point de terminaison](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
-  - Portail d’entreprise Intune’application peut être téléchargée à partir [de Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) et est disponible sur l’appareil Android.
-  - En outre, les appareils peuvent être inscrits [via](/mem/intune/user-help/enroll-device-android-company-portal) l’application Portail d’entreprise Intune pour appliquer des stratégies de conformité des appareils Intune. Pour ce faire, l’utilisateur final doit se voir attribuer Microsoft Intune licence.
+  - Portail d'entreprise Intune’application peut être téléchargée à partir [de Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) et est disponible sur l’appareil Android.
+  - En outre, les appareils peuvent être inscrits [via](/mem/intune/user-help/enroll-device-android-company-portal) l’application Portail d'entreprise Intune pour appliquer des stratégies de conformité des appareils Intune. Pour ce faire, l’utilisateur final doit se voir attribuer Microsoft Intune licence.
   - Pour plus d’informations sur l’attribution de licences, voir [Attribuer des licences aux utilisateurs.](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 - **Pour les administrateurs**
    - Accès au portail Microsoft 365 Defender web.
 
     > [!NOTE]
-    > - Microsoft Defender pour le point de terminaison étend désormais la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
-    > - En outre, Microsoft Defender pour point de terminaison prend déjà en charge les appareils inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune.
+    > - Microsoft Defender pour endpoint étend désormais la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
+    > - En outre, Microsoft Defender pour endpoint prend déjà en charge les appareils inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune.
 
     - Accédez [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431)pour déployer l’application pour les groupes d’utilisateurs inscrits dans votre organisation.
 
@@ -67,7 +67,7 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 ### <a name="system-requirements"></a>Configuration requise
 
 - Téléphones mobiles exécutant Android 6.0 et version supérieure. **Les tablettes et autres appareils mobiles exécutant Android ne sont actuellement pas pris en charge.**
-- Portail d’entreprise Intune’application est téléchargée à partir [de Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) et installée. L’inscription des appareils est requise pour que les stratégies de conformité des appareils Intune soient appliquées.
+- Portail d'entreprise Intune’application est téléchargée à partir [de Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) et installée. L’inscription des appareils est requise pour que les stratégies de conformité des appareils Intune soient appliquées.
 
 ### <a name="installation-instructions"></a>Instructions d’installation
 
@@ -84,7 +84,7 @@ Le déploiement de Microsoft Defender pour Endpoint sur Android s’effectue via
 
 Des instructions sur la configuration de Microsoft Defender pour le point de terminaison sur les fonctionnalités Android sont disponibles dans Configurer Microsoft Defender pour le point de terminaison [sur les fonctionnalités Android.](android-configure.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)
 - [Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)

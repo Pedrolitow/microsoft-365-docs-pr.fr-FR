@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: f3ccb47c2facffed0a259b4807f8155b4c87cb70
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58684039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205195"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -68,11 +68,11 @@ Vous avez au moins un connecteur de certificat et aucune erreur n’est signalé
 
 ### <a name="company-portal"></a>Portail d'entreprise
 
-Microsoft Manged Desktop nécessite que les administrateurs informatiques installent les Portail d’entreprise Intune pour leurs utilisateurs avec Microsoft Manged Desktop appareils. 
+Microsoft Manged Desktop nécessite que les administrateurs informatiques installent les Portail d'entreprise Intune pour leurs utilisateurs avec Microsoft Manged Desktop appareils. 
 
 **Non prêt**
 
-Vous n’avez pas Portail d’entreprise installé pour vos utilisateurs. Achetez Portail d’entreprise et forcez une synchronisation entre Intune et Microsoft Store pour Entreprises. Pour plus d’informations, [voir Installer Portail d’entreprise Intune sur les appareils.](../get-started/company-portal.md)
+Vous n’avez pas Portail d'entreprise installé pour vos utilisateurs. Achetez Portail d'entreprise et forcez une synchronisation entre Intune et Microsoft Store pour Entreprises. Pour plus d’informations, [voir Installer Portail d'entreprise Intune sur les appareils.](../get-started/company-portal.md)
 
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
@@ -145,11 +145,11 @@ Assurez-vous que les profils qui ont le paramètre Afficher l’application et l
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store pour Entreprises
 
-Nous utilisons Microsoft Store pour Entreprises et déployons l’application Portail d’entreprise sur Microsoft Manged Desktop pour permettre aux utilisateurs d’installer éventuellement certaines applications, telles que Microsoft Project et Microsoft Visio (lorsque cela est autorisé).
+Nous utilisons Microsoft Store pour Entreprises et déployons l’application Portail d'entreprise sur Microsoft Manged Desktop pour permettre aux utilisateurs d’installer éventuellement certaines applications, telles que Microsoft Project et Microsoft Visio (lorsque cela est autorisé).
 
 **Non prêt**
 
-Microsoft Store pour Entreprises n’est pas activé ou n’est pas synchronisé avec Intune. Pour plus d’informations, voir Comment gérer les applications [achetées](/mem/intune/apps/windows-store-for-business) en volume à partir du Microsoft Store pour Entreprises avec Microsoft Intune et installer Portail d’entreprise Intune [sur les appareils.](../get-started/company-portal.md)
+Microsoft Store pour Entreprises n’est pas activé ou n’est pas synchronisé avec Intune. Pour plus d’informations, voir Comment gérer les applications [achetées](/mem/intune/apps/windows-store-for-business) en volume à partir du Microsoft Store pour Entreprises avec Microsoft Intune et installer Portail d'entreprise Intune [sur les appareils.](../get-started/company-portal.md)
 
 ### <a name="multifactor-authentication"></a>Authentification multifacteur
 
@@ -222,7 +222,7 @@ Examinez les applications que vous souhaitez Microsoft Manged Desktop utilisateu
 
 **Avertissement**
 
-Vous devez préparer un inventaire des applications que vous souhaitez que vos Microsoft Manged Desktop utilisateurs. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’Portail d’entreprise (voir [Install Portail d’entreprise Intune on devices](../get-started/company-portal.md) and Enrollment Status Page (ESP) to distribute apps to your users. Pour plus d’informations, voir [Applications dans Microsoft Manged Desktop](apps.md) première expérience d’application avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
+Vous devez préparer un inventaire des applications que vous souhaitez que vos Microsoft Manged Desktop utilisateurs. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’Portail d'entreprise (voir [Install Portail d'entreprise Intune on devices](../get-started/company-portal.md) and Enrollment Status Page (ESP) to distribute apps to your users. Pour plus d’informations, voir [Applications dans Microsoft Manged Desktop](apps.md) première expérience d’application avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
 
 Vous pouvez demander à votre représentant de compte Microsoft une requête dans Microsoft Endpoint Configuration Manager pour identifier les applications qui sont prêtes à migrer vers Intune ou qui ont besoin d’ajustement.
 

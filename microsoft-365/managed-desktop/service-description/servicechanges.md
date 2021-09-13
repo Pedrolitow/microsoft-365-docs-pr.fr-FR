@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e0f1bc296796ed3d171bff7a26b40a669b75039fea0b341c4851536069e2ab53
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 20af244d14f8f29e0175fb5e8efdabff94ff9a2b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53863870"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204956"
 ---
 # <a name="service-changes-and-communication"></a>Modifications de service et communication
 

@@ -12,11 +12,11 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ms.openlocfilehash: a8e95586dc5e3d2da2cbd6ace9369e4b2d17afed
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205228"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Commencer à piloter l’adoption de Sujets Microsoft Viva
 
@@ -180,7 +180,7 @@ Maintenant que vous êtes prêt à déployer, vous souhaitez vous assurer que vo
 - Hébergez régulièrement des événements d’engagement pour partager des articles ou introduire de nouvelles fonctionnalités.
 - Définissez des défis pour les personnes et exécutez des concurrences.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Lorsque vous êtes prêt à déployer Rubriques Microsoft Viva, vous devez impliquer les contacts concernés.
 

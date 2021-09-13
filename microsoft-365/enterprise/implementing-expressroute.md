@@ -21,11 +21,11 @@ search.appverid:
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Découvrez comment implémenter ExpressRoute pour Office 365, qui fournit un autre chemin de routage vers de nombreux services Office 365 internet.
 ms.openlocfilehash: 66ff6157c8f2fb28b1a57af42295a6ba0ed93dad
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575335"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205556"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implémentation d’ExpressRoute pour Office 365
 
@@ -191,7 +191,7 @@ Souvent, il existe plusieurs emplacements de rendez-vous qui peuvent être séle
 
 **Emplacements de rendez-vous ExpressRoute planifiés en Californie et à New York**
 
-|Lieu  <br/> |Nombre de personnes  <br/> |Latence attendue pour le réseau Microsoft via la sortie Internet  <br/> |Latence attendue pour le réseau Microsoft sur ExpressRoute  <br/> |
+|Emplacement  <br/> |Nombre de personnes  <br/> |Latence attendue pour le réseau Microsoft via la sortie Internet  <br/> |Latence attendue pour le réseau Microsoft sur ExpressRoute  <br/> |
 |----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10 000  <br/> |~15 ms  <br/> |~10 ms (via la Californie du Nord)  <br/> |
 |Washington DC  <br/> |15 000  <br/> |~20 ms  <br/> |~10 ms (via New York)  <br/> |
@@ -599,6 +599,6 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/implemente
   
 [Plan de résolution des problèmes de performances pour Office 365](performance-troubleshooting-plan.md)
   
-[URL et plages dʼadresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL et plages d’adresses IP Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)

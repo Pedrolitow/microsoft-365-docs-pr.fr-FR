@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 37960ef9b7ff1431a2d1344e6a234b0106782100
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204552"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utiliser des requêtes partagées dans un repérage avancé
 
@@ -34,7 +34,7 @@ ms.locfileid: "58575959"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 
 
@@ -78,7 +78,7 @@ Les chercheurs en matière de sécurité Microsoft partagent régulièrement des
 >[!NOTE]
 >Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour la recherche de menaces à l’aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)

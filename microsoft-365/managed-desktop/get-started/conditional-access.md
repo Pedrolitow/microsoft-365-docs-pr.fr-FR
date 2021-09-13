@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: e60abb0e8d3cd4d5124c5e82bf4aa0ce8bb1b08f
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364528"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205140"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Ajuster les paramètres après l’inscription
 
@@ -25,14 +25,14 @@ Une fois que vous avez terminé l’inscription Microsoft Manged Desktop, certai
 3. Si vous souhaitez vérifier que tous les paramètres sont [](https://aka.ms/mmdart) corrects, vous pouvez réexécuter l’outil d’évaluation de la disponibilité pour vous assurer qu’aucun conflit n’entre en Microsoft Manged Desktop.
 
 > [!NOTE]
-> À mesure que vos opérations se poursuivent dans les mois suivants, si vous az apporté des modifications après l’inscription à des stratégies dans Microsoft Intune, Azure Active Directory ou Microsoft 365 qui affectent Microsoft Manged Desktop, il est possible que Microsoft Manged Desktop ne fonctionne plus correctement. Pour éviter les problèmes avec le service, vérifiez les paramètres spécifiques [décrits](../get-ready/readiness-assessment-fix.md) dans Résoudre les problèmes trouvés par l’outil d’évaluation de la disponibilité avant de modifier les stratégies répertoriées ici. Vous pouvez également réexécuter l’outil d’évaluation de la préparation à tout moment.
+> À mesure que vos opérations se poursuivent au cours des mois suivants, si vous a apporté des modifications après l’inscription à des stratégies en Microsoft Intune, Azure Active Directory ou Microsoft 365 qui affectent Microsoft Manged Desktop, il est possible que Microsoft Manged Desktop ne fonctionne plus correctement. Pour éviter les problèmes avec le service, vérifiez les paramètres spécifiques [décrits](../get-ready/readiness-assessment-fix.md) dans Résoudre les problèmes trouvés par l’outil d’évaluation de la disponibilité avant de modifier les stratégies répertoriées ici. Vous pouvez également réexécuter l’outil d’évaluation de la préparation à tout moment.
 
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune paramètres
 
 - Profil autopilot deployment : si vous utilisez des stratégies Autopilot, mettez à jour chacune d’elles pour exclure le groupe Modern **Workplace Devices -All** Azure AD. Pour les mettre à jour, dans la **section** Groupes exclus sous **Affectations,** sélectionnez le groupe Modern **Workplace Devices -All** Azure AD qui a été créé lors de l Microsoft Manged Desktop inscription. Microsoft Manged Desktop également créé un profil Autopilot, dont le nom doit être « Espace de travail moderne » (profil **Autopilot** De l’espace de travail moderne). Lorsque vous mettez à jour vos propres  profils Autopilot, veillez à ne pas exclure le groupe Modern **Workplace Devices -All** Azure AD du profil **Autopilot** Workplace moderne créé par Microsoft Manged Desktop.
 
-- Stratégies d’accès conditionnel : si vous créez des stratégies d’accès conditionnel **liées** à Azure AD, Microsoft Intune ou Microsoft Defender pour le point de terminaison après l’inscription à Microsoft Manged Desktop, excluez-y le groupe Azure AD Comptes de service Workplace modernes. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Manged Desktop des stratégies d’accès conditionnel distinctes pour restreindre l’accès à ces comptes. Pour passer en revue la Microsoft Manged Desktop d’accès conditionnel ( Espace de travail  moderne **–** Station de travail sécurisée), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel dans **Endpoint Security**. Ne modifiez pas les stratégies d’accès conditionnel Azure AD créées par Microsoft Manged Desktop dont le nom indique « Espace de travail moderne ».
+- Stratégies d’accès conditionnel : si vous créez des stratégies d’accès conditionnel **liées** à Azure AD, Microsoft Intune ou Microsoft Defender pour le point de terminaison après l’inscription à Microsoft Manged Desktop, excluez-y le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Manged Desktop des stratégies d’accès conditionnel distinctes pour restreindre l’accès à ces comptes. Pour passer en revue la Microsoft Manged Desktop d’accès conditionnel ( Espace de travail  moderne **–** Station de travail sécurisée), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel dans **Endpoint Security**. Ne modifiez pas les stratégies d’accès conditionnel Azure AD créées par Microsoft Manged Desktop dont le nom indique « Espace de travail moderne ».
 
 - Authentification multifacteur : si vous créez des exigences d’authentification multifacteur dans les stratégies d’accès conditionnel **liées** à Azure AD, Intune ou Microsoft Defender pour le point de terminaison après l’inscription à Microsoft Manged Desktop, excluez-y le groupe Azure AD Comptes de service Espace de travail moderne. Pour obtenir la procédure à suivre, [voir Accès conditionnel : utilisateurs et groupes.](/azure/active-directory/conditional-access/concept-conditional-access-users-groups) Microsoft Manged Desktop des stratégies d’accès conditionnel distinctes pour restreindre l’accès aux membres de ce groupe. Pour passer en revue la Microsoft Manged Desktop d’accès conditionnel **(** Espace de travail moderne ), accédez à Microsoft Endpoint Manager et accédez à Accès conditionnel **dans** **Endpoint Security**. 
 
@@ -49,20 +49,20 @@ Pour vous aider à rechercher et exclure les comptes de service, voici un exempl
 (user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
 ```
 
-Dans cette requête, remplacez @TENANT par le nom de domaine de votre client.
+Dans cette requête, remplacez @TENANT par votre nom de domaine client.
 
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
-1. Portail [d’administration Access](access-admin-portal.md).
-1. [Ajoutez et vérifiez les contacts d’administrateur dans le portail d’administration.](add-admin-contacts.md)
+1. Accéder au[Portail d’administration](access-admin-portal.md).
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md).
 1. Ajuster les paramètres après l’inscription (cet article).
-1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
-1. [Déployer des applications.](deploy-apps.md)
-1. [Configurer des appareils.](set-up-devices.md)
-1. Configurer [l’expérience de première expérience avec Autopilot et la page État de l’inscription.](esp-first-run.md)
-1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
-1. [Préparez vos utilisateurs à utiliser des appareils.](get-started-devices.md)
-1. [Prendre en main le contrôle d’application.](get-started-app-control.md)
+1. [Déployer des applications](deploy-apps.md).
+1. [Configurer les appareils](set-up-devices.md).
+1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
+1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
+1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).
+1. [Démarrage avec le contrôle d’application](get-started-app-control.md).

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4daba7a19af2b1653bd5158033b10b82935583da9e5977d3de1e31f3ef28cc71
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f7fb73cde3afa385b0d73b35610415cacd1cad81
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53902766"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203885"
 ---
 # <a name="microsoft-defender-security-center"></a>Centre de sécurité Microsoft Defender
 

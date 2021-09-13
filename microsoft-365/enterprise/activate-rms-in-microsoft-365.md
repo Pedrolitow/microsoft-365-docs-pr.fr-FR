@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Comment activer et utiliser le service Rights Management avec Microsoft 365.
-ms.openlocfilehash: 13b3af833ed536d570f1e455891b953e59e975709db875df0fe414d824710dae
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 887979e372bf4ba938b2d2570f981aee9373d485
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53835462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207787"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>Activer la gestion des droits dans le Centre d’administration
 

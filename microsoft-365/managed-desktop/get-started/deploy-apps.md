@@ -10,11 +10,11 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.openlocfilehash: bcb1c85e533ae691c34d41bd6694e58c49617738
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365176"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205147"
 ---
 # <a name="deploy-apps-to-devices"></a>Déployer les applications sur les appareils
 Une partie de l’intégration à Microsoft Manged Desktop inclut l’ajout et le déploiement d’applications sur les appareils de vos utilisateurs. Une fois que vous utilisez le portail Microsoft Manged Desktop, vous pouvez ajouter et déployer vos applications. 
@@ -33,7 +33,7 @@ Vous pouvez ajouter [Win32 ou Windows applications MSI,](#lob-apps)ou [Microsoft
 
 ###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 ou Windows applications basées sur MSI pour Microsoft Manged Desktop
 
-Vous pouvez ajouter vos applications métier à votre Microsoft Manged Desktop web. Pour plus d’informations sur les conditions requises pour les applications installées Microsoft Manged Desktop appareils mobiles, voir [Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
+Vous pouvez ajouter vos applications métier à Microsoft Manged Desktop portail. Pour plus d’informations sur les conditions requises pour les applications installées sur Microsoft Manged Desktop, voir [Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
 
 Dans cette procédure, vous allez sélectionner le type d’application que vous souhaitez ajouter, puis configurer et charger la source de l’application. 
 
@@ -79,7 +79,7 @@ Créez trois groupes Azure AD pour chaque application. Ce tableau présente les 
 
 Type d’affectation d’application |    Utilisation de groupe    | Exemple de nom Azure AD
 --- | --- | ---
-Available |  L’application sera disponible à partir Portail d’entreprise’application ou du site web. | MMD – *nom de l’application* – Disponible
+Available |  L’application sera disponible à partir Portail d'entreprise’application ou du site web. | MMD – *nom de l’application* – Disponible
 Obligatoire |  L’application est installée sur les appareils des groupes sélectionnés. | MMD – *nom de l’application* – Obligatoire
 Désinstaller |  L’application est désinstallée des appareils des groupes sélectionnés. | MMD – *nom de l’application* – Désinstaller
 
@@ -100,17 +100,17 @@ Ajoutez vos utilisateurs à ces groupes pour rendre l’application disponible, 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
-1. Portail [d’administration Access](access-admin-portal.md).
-1. [Ajoutez et vérifiez les contacts d’administrateur dans le portail d’administration.](add-admin-contacts.md)
-1. [Ajuster les paramètres après l’inscription.](conditional-access.md)
-1. Déployez et affectez [Portail d’entreprise Intune](company-portal.md).
+1. Accéder au[Portail d’administration](access-admin-portal.md).
+1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md).
+1. [Ajuster les paramètres après l’inscription](conditional-access.md).
+1. Déployez et affectez le[Portail d’entreprise Intune](company-portal.md).
 1. [Attribuer des licences](assign-licenses.md).
 1. Déployer des applications (cet article).
-1. [Configurer des appareils.](set-up-devices.md)
-1. Configurer [l’expérience de première expérience avec Autopilot et la page État de l’inscription.](esp-first-run.md)
-1. [Activer les fonctionnalités de support utilisateur.](enable-support.md)
-1. [Préparez vos utilisateurs à utiliser des appareils.](get-started-devices.md)
-1. [Prendre en main le contrôle d’application.](get-started-app-control.md)
+1. [Configurer les appareils](set-up-devices.md).
+1. Configurez l’[Expérience de première exécution avec Autopilot et la page d’état d’inscription](esp-first-run.md).
+1. [Activer les fonctionnalités de support utilisateur](enable-support.md).
+1. [Préparez vos utilisateurs à utiliser des appareils](get-started-devices.md).
+1. [Démarrage avec le contrôle d’application](get-started-app-control.md).
 
 
 <!--# Preparing apps for Microsoft Managed Desktop

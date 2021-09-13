@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: a1a000ec60d84e5abc4ec23591b917eb3072582e
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204701"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
@@ -39,7 +39,7 @@ ms.locfileid: "58257285"
 - Windows 8.1 Entreprise
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint étend la prise en charge pour inclure des systèmes d’exploitation de bas niveau, fournissant des fonctionnalités avancées de détection d’attaques et d’investigation sur les versions Windows pris en charge.
 
@@ -59,7 +59,7 @@ Defender pour le point de terminaison s’intègre à System Center Endpoint Pro
 
 Les étapes suivantes sont nécessaires pour activer cette intégration :
 
-- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 pour Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configurer l’appartenance au service protection cloud client SCEP sur le **paramètre** Avancé
 - Configurez votre réseau pour autoriser les connexions au Antivirus Microsoft Defender cloud. Pour plus d’informations, voir [Autoriser les connexions au Antivirus Microsoft Defender cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
@@ -86,7 +86,7 @@ Examinez les détails suivants pour vérifier la minimale requise :
 
 1. Téléchargez le fichier d’installation de l Windows [agent 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) [ou Windows agent 32 bits.](https://go.microsoft.com/fwlink/?LinkId=828604)
 
-2. Obtenez l’ID de l’espace de travail :
+2. Obtenez l’ID d’espace de travail :
    - Dans le volet de navigation Defender pour les points de terminaison, sélectionnez Paramètres > points de terminaison > gestion des > **l’intégration**
    - Sélectionnez **Windows 7 SP1 et 8.1 comme** système d’exploitation
    - Copier l’ID d’espace de travail et la clé d’espace de travail
@@ -100,7 +100,7 @@ Examinez les détails suivants pour vérifier la minimale requise :
     - [Configurez l’agent à l’aide d’un script.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)
 
    > [!NOTE]
-   > Si vous êtes un client du gouvernement [américain,](gov.md)sous « Azure Cloud », vous devez choisir « Azure US Government » si vous utilisez l’Assistant Installation, ou si vous utilisez une ligne de commande ou un script , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
+   > Si vous [](gov.md)êtes un client du gouvernement des États-Unis, sous « Azure Cloud », vous devez choisir « Azure US Government » si vous utilisez l’Assistant Installation, ou si vous utilisez une ligne de commande ou un script , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
 
 4. Si vous utilisez un proxy pour vous connecter à Internet, consultez la section Configurer les paramètres du proxy.
 
@@ -118,4 +118,4 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
 Pour désinstaller, vous pouvez désinstaller l’agent MMA du point de terminaison ou le détacher des rapports à votre espace de travail Defender for Endpoint. Après l’arrêt de l’agent, le point de terminaison n’envoie plus de données de capteur à Defender for Endpoint.
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevele-belowfoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevele-belowfoldlink)

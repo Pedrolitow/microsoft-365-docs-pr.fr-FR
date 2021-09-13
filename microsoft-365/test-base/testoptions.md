@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 4a0c6944387def430ef0091239b5111ec533dcd6
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204252"
 ---
 # <a name="step-5-choose-your-test-options"></a>Étape 5 : Choisissez vos options de test. 
 
@@ -29,7 +29,7 @@ L’onglet est pour les utilisateurs qui souhaitent effectuer des tests fonction
 
 Sélectionnez _**Révision**_ pour accéder à l’onglet suivant et passer en revue les options de test sélectionnées.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Vous trouverez plus d’informations sur l’étape d’imbrouillement dans l’article suivant via le lien ci-dessous :
 > [!div class="nextstepaction"]

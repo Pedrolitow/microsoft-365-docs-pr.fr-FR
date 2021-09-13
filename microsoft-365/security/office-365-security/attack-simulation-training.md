@@ -13,17 +13,17 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide d’une formation sur la simulation d’attaques dans Microsoft Defender Office 365.
 ms.technology: mdo
 ms.openlocfilehash: 40baa8aa3eda6f0f6045115d45e2dac1426c4455
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569872"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204450"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simuler une attaque par hameçonnage
 
 **S’applique** [à Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
-La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 vous permet d’exécuter des simulations de cyberattaque anodins sur votre organisation pour tester vos stratégies et pratiques de sécurité, ainsi que pour former vos employés afin qu’ils augmentent leur sensibilisation et diminuent leur tendance aux attaques. Cet article vous explique la création d’une attaque par hameçonnage simulée à l’aide d’une formation à la simulation d’attaque.
+La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 vous permet d’exécuter des simulations de cyberattaque anodins sur votre organisation pour tester vos stratégies et pratiques de sécurité, ainsi que pour former vos employés afin qu’ils augmentent leur sensibilisation et diminuent leur tendance aux attaques. Cet article vous explique la création d’une attaque par hameçonnage simulée à l’aide d’une formation à la simulation d’attaques.
 
 Pour plus d’informations sur la formation à la simulation d’attaque, voir [Commencer à utiliser la formation sur la simulation d’attaque.](attack-simulation-training-get-started.md)
 
@@ -40,9 +40,9 @@ Sous **Simulations,** **sélectionnez + Lancer une simulation.**
 
 Sélectionnez parmi 4 techniques différentes, organisées à partir de l’infrastructure&[CK ® MITRE ATT.](https://attack.mitre.org/techniques/enterprise/) Différentes charges utiles sont disponibles pour différentes techniques :
 
-- **La collecte des** informations d’identification tente de collecter des informations d’identification en prenant les utilisateurs vers un site web bien connu avec des zones de saisie pour envoyer un nom d’utilisateur et un mot de passe.
+- **La collecte des** informations d’identification tente de collecter des informations d’identification en prenant les utilisateurs vers un site web bien connu avec des zones d’entrée pour envoyer un nom d’utilisateur et un mot de passe.
 - **Une pièce jointe malveillante** ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, un code arbitraire est exécuté pour aider l’attaquant à compromettre l’appareil de la cible.
-- **Le lien dans la pièce jointe** est un type d’hybride de la saisie des informations d’identification. Un attaquant insère une URL dans une pièce jointe d’un e-mail. L’URL dans la pièce jointe suit la même technique que la saisie des informations d’identification.
+- **Le lien dans la pièce jointe** est un type d’hybridation de la saisie des informations d’identification. Un attaquant insère une URL dans une pièce jointe d’un e-mail. L’URL dans la pièce jointe suit la même technique que la saisie des informations d’identification.
 - **Un lien vers un programme** malveillant exécutera du code arbitraire à partir d’un fichier hébergé sur un service de partage de fichiers connu. Le message envoyé à l’utilisateur contient un lien vers ce fichier malveillant. Ouverture du fichier et aide l’attaquant à compromettre l’appareil de la cible.
 - **L’URL de** lecteur par est l’endroit où l’URL malveillante dans le message conduit l’utilisateur vers un site web familier qui s’exécute en mode silencieux et/ou installe le code de code sur l’appareil de l’utilisateur.
 
@@ -107,4 +107,4 @@ Maintenant que tout est configuré, vous pouvez lancer cette simulation immédia
 Une fois que vous avez terminé, cliquez sur **Suivant** et examinez les détails de votre simulation. Cliquez sur **Modifier** sur l’un des composants pour revenir en arrière et modifier les détails qui doivent être modifiés. Une fois terminé, cliquez sur **Envoyer.**
 
 > [!NOTE]
-> Certaines marques, logos, symboles, insignias et autres identificateurs source bénéficient d’une protection maximale en vertu de lois et lois locales, nationales et fédérales. L’utilisation non autorisée de ces indicateurs peut imposer des sanctions aux utilisateurs, y compris des amendes pénales. Bien qu’il ne s’agit pas d’une liste complète, il s’agit notamment des personnes qui ont l’avantage de ne pas avoir à se servir de cette liste. Au-delà de ces catégories de marques, l’utilisation et la modification d’une marque tierce impliquent un risque inhérent. L’utilisation de vos propres marques et logos dans une charge utile serait moins risquée, en particulier lorsque votre organisation autorise l’utilisation. Si vous avez d’autres questions sur ce qui est approprié ou non à utiliser lors de la création ou de la configuration d’une charge utile, vous devez consulter vos conseillers juridiques.
+> Certaines marques, logos, symboles, insignias et autres identificateurs source bénéficient d’une protection maximale en vertu de lois et lois locales, nationales et fédérales. L’utilisation non autorisée de ces indicateurs peut imposer des sanctions aux utilisateurs, y compris des amendes pénales. Bien qu’il ne s’agit pas d’une liste complète, il s’agit notamment des personnes à l’emploi de Lasc, du vice-président et de l’espion, du CENTRE d’enquêtes sur la sécurité sociale, de la sécurité sociale, du service de sécurité sociale des États-Unis et du service de revenu interne des États-Unis. Au-delà de ces catégories de marques, l’utilisation et la modification d’une marque tierce impliquent un risque inhérent. L’utilisation de vos propres marques et logos dans une charge utile serait moins risqué, en particulier lorsque votre organisation autorise l’utilisation. Si vous avez d’autres questions sur ce qui est approprié ou non à utiliser lors de la création ou de la configuration d’une charge utile, vous devez consulter vos conseillers juridiques.

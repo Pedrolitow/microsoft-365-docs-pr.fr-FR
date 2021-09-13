@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4587fcc82b4da5e54fb524b125942f32f820dfd480928735d91704687aff6029
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2ca601c3c68df9f9f1cc4fb90bcfbe907850ce91
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53799309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204546"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Vue d’ensemble Microsoft 365 Defender API
 

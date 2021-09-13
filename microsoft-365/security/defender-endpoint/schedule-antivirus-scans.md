@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: c0d6c979dfc69a81417126671810ee7f000e439e8405f425458a8b0adf40610a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5566050e4a64713f6f8b4ac2cb4a7188d3a241c8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204660"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurer des analyses antivirus Microsoft Defender rapides ou complètes
 

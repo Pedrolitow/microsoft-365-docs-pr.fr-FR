@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Microsoft 365 eDiscovery gèrent les documents chiffrés joints aux messages électroniques et stockés dans SharePoint Online et OneDrive Entreprise.
-ms.openlocfilehash: 7cdd06dd19299fb9e1127f55bc9bc845bb7c14e6
-ms.sourcegitcommit: fd348579346522ead16a6bd8ce200a0b8ae8f7d4
+ms.openlocfilehash: 0662b6a2bbedefc2dd996491171dc1abde49bb8e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58831908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207940"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans les outils Microsoft 365 eDiscovery
 
@@ -38,7 +38,7 @@ Avant cette nouvelle fonctionnalité, seul le contenu d’un message électroniq
 Les outils eDiscovery de Microsoft permettent la prise en charge des éléments chiffrés avec les technologies de chiffrement Microsoft. Ces technologies sont Azure Rights Management et Protection des données Microsoft (en particulier les étiquettes de sensibilité). Pour plus d’informations sur les technologies de chiffrement Microsoft, voir [Chiffrement.](encryption.md) Le contenu chiffré par des technologies de chiffrement tierces n’est pas pris en charge. Par exemple, l’aperçu ou l’exportation de contenu chiffré avec des technologies autres que Microsoft n’est pas prise en charge.
 
 > [!NOTE]
-> Le déchiffrement des messages électroniques chiffrés avec chiffrement de messages Office 365 (OME) n’est pas pris en charge par les outils eDiscovery de Microsoft.
+> Le déchiffrement des messages électroniques envoyés avec un modèle de personnalisation [chiffrement de messages Office 365 (OME)](add-your-organization-brand-to-encrypted-messages.md) n’est pas pris en charge par les outils eDiscovery de Microsoft. Lorsque vous utilisez un modèle de personnalisation OME, les messages électroniques sont remis au portail OME au lieu de la boîte aux lettres du destinataire. Par conséquent, vous ne pourrez pas utiliser les outils eDiscovery pour rechercher des messages chiffrés par OME, car ces messages ne sont jamais reçus par la boîte aux lettres du destinataire.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>Activités eDiscovery qui la prise en charge des éléments chiffrés
 
@@ -50,7 +50,7 @@ Le tableau suivant identifie les tâches prise en charge qui peuvent être effec
 |Afficher un aperçu des fichiers chiffrés joints à la messagerie     |Oui      |Oui     |Oui       |
 |Afficher un aperçu des documents chiffrés dans SharePoint et OneDrive|Non      |Non    |Oui       |
 |Passer en revue les fichiers chiffrés dans un jeu à réviser    |N/A      |N/A        | Oui        |
-|Exporter des fichiers chiffrés joints à un e-mail    |Oui       |Oui  |Oui    |
+|Exporter des fichiers chiffrés joints à la messagerie électronique    |Oui       |Oui  |Oui    |
 |Exporter des documents chiffrés dans SharePoint et OneDrive    |Non       |Non  |Oui    |
 |||||
 
@@ -75,7 +75,7 @@ Les scénarios suivants décrivent les limitations dans le déchiffrement des fi
 
 - Si un fichier situé sur un ordinateur local (et non stocké dans un site SharePoint ou un compte OneDrive) est joint à un message électronique et qu’une étiquette de niveau de sensibilité qui applique le chiffrement est appliquée au message électronique, le fichier joint ne peut pas être déchiffré par eDiscovery. Cela signifie que si vous exécutez une requête de recherche par mot clé de la boîte aux lettres du destinataire, la pièce jointe chiffrée ne sera pas renvoyée par une requête de recherche par mot clé.
 
-  La solution de contournement de cette limitation consiste à rechercher la même pièce jointe dans la boîte aux lettres de l’expéditeur. Cela est dû au fait que le chiffrement appliqué par l’étiquette de niveau de sensibilité est appliqué lors du transport du message électronique. Cela signifie que la pièce jointe est chiffrée lors de l’envoi du message électronique. Le résultat est que l’instance du fichier joint dans la boîte aux lettres de l’expéditeur n’est pas chiffrée, même si le même fichier dans la boîte aux lettres du destinataire est chiffré.
+  La solution de contournement de cette limitation consiste à rechercher la même pièce jointe dans la boîte aux lettres de l’expéditeur. Cela est dû au fait que le chiffrement appliqué par l’étiquette de sensibilité est appliqué lors du transport du message électronique. Cela signifie que la pièce jointe est chiffrée lors de l’envoi du message électronique. Le résultat est que l’instance du fichier joint dans la boîte aux lettres de l’expéditeur n’est pas chiffrée, même si le même fichier dans la boîte aux lettres du destinataire est chiffré.
 
 - De même, les pièces jointes cloud (fichiers stockés dans un site SharePoint ou un compte OneDrive)  qui sont copiées dans un message électronique (à l’aide de l’option Joindre en tant que copie dans Outlook) ne peuvent pas être déchiffrées par eDiscovery. Cela est également dû au fait que le chiffrement appliqué par une étiquette de niveau de sensibilité est appliqué lors de l’envoi du message électronique. La recherche de l’instance non chiffrée de la copie de la pièce jointe cloud dans la boîte aux lettres de l’expéditeur constitue également la solution de contournement de cette limitation.
 

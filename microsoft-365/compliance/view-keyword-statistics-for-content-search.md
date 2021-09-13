@@ -17,11 +17,11 @@ search.appverid:
 description: Découvrez comment utiliser la fonctionnalité statistiques de recherche pour afficher des statistiques pour les recherches de contenu et les recherches associées à un cas eDiscovery principal dans le Centre de conformité Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 7f9948a5ae194a475f5bdcf319aa48fa32cc282f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552911"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205700"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Afficher des statistiques pour les résultats de recherche eDiscovery
 
@@ -33,7 +33,7 @@ Vous pouvez également télécharger des statistiques de recherche dans un fichi
   
 ## <a name="get-statistics-for-searches"></a>Obtenir des statistiques pour les recherches
 
-Pour afficher des statistiques pour une recherche de contenu ou une recherche associée à un cas core eDiscovery.:
+Pour afficher des statistiques pour une recherche de contenu ou une recherche associée à un cas de découverte électronique principale :
   
 1. Dans la Centre de conformité Microsoft 365, cliquez sur **Afficher tout,** puis faites l’une des choses suivantes :
 
@@ -69,7 +69,7 @@ Cette section affiche des statistiques sur la requête de recherche et le nombre
 
 - **Type d’emplacement**: type d’emplacement de contenu applicable aux statistiques de requête. La valeur **de** Exchange indique un emplacement de boîte aux lettres ; une valeur de **SharePoint** indique un emplacement de site.
 
-- **Partie**: partie de la requête de recherche à qui les statistiques s’appliquent. **Le** principal indique l’intégralité de la requête de recherche. **Le** mot clé indique que les statistiques de la ligne sont pour un mot clé spécifique. Si vous utilisez une liste de mots clés pour la requête de recherche, les statistiques de chaque composant de la requête sont incluses dans ce tableau. Pour plus d’informations, voir [Obtenir des statistiques sur les mots clés pour les recherches.](#get-keyword-statistics-for-searches)
+- **Partie**: partie de la requête de recherche à qui les statistiques s’appliquent. **Primary** indique l’intégralité de la requête de recherche. **Le** mot clé indique que les statistiques de la ligne sont pour un mot clé spécifique. Si vous utilisez une liste de mots clés pour la requête de recherche, les statistiques de chaque composant de la requête sont incluses dans ce tableau. Pour plus d’informations, voir [Obtenir des statistiques sur les mots clés pour les recherches.](#get-keyword-statistics-for-searches)
 
 - **Condition**: composant réel (mot clé ou condition) de la requête de recherche qui a renvoyé les statistiques affichées dans la ligne correspondante.
 

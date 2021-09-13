@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203987"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 
@@ -44,10 +44,10 @@ ms.locfileid: "58503238"
 Récupère une liste de toutes les vulnérabilités.
 <br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 <br>Opérateurs pris en charge par OData :
-<br>```$filter``` on:  ```id``` , , , , , , , and ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
+<br>```$filter``` on:  ```id``` , , , , , and ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
 <br>```$top``` avec une valeur maximale de 10 000.
 <br>```$skip```.
-<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+<br>Consultez des exemples [dans les requêtes OData avec Microsoft Defender pour point de terminaison.](exposed-apis-odata-samples.md)
 
 ## <a name="permissions"></a>Autorisations
 
@@ -120,4 +120,4 @@ Voici un exemple de la réponse.
 ## <a name="see-also"></a>Voir aussi
 
 - [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités de votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Vulnérabilités dans votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

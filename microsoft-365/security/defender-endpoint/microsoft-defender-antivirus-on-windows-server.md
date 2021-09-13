@@ -16,17 +16,17 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
 ms.openlocfilehash: 937ca4baefe4456edb97bac7f5cfc56d346c08bb
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203939"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -141,7 +141,7 @@ Par défaut, Windows Update ne télécharge pas et n’installe pas automatiquem
 
 Pour vous assurer que la protection contre les programmes malveillants est maintenue, nous vous recommandons d’activer les services suivants :
 
-- Rapport d’erreurs Windows service
+- Rapport d'erreurs Windows service
 - Windows Mettre à jour le service
 
 Le tableau suivant répertorie les services pour Antivirus Microsoft Defender et les services dépendants.

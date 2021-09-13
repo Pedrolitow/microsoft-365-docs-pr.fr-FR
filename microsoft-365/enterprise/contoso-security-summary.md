@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 entreprise.
 ms.openlocfilehash: 581314b34ab8f60533f1e2de99d4d1097086d1a0
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58745672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207676"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé des Microsoft 365 pour la sécurité de l’entreprise pour Contoso Corporation
 

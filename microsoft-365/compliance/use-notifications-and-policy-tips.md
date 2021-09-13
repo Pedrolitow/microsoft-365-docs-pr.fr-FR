@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
-ms.openlocfilehash: 5dba275d274ebc97ec934f6b43d8a913b80c8d84
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 50f61fb86c2458e6471c0b2002c15f4a8b1cabe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205731"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -93,7 +93,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez :
 - Personnalisez le texte inclus dans la notification à l’aide de code HTML ou de jetons. Consultez la rubrique ci-dessous pour plus d’informations.
 
 > [!NOTE]
->  Les notifications par courrier électronique peuvent être envoyées uniquement à des destinataires individuels, et non à des groupes ou des listes de distribution. Seul le nouveau contenu déclenche une notification par courrier électronique. La modification du contenu existant déclenche des conseils de stratégie, mais pas une notification par courrier électronique.
+>  Les notifications par courrier électronique peuvent être envoyées uniquement à des destinataires individuels, et non à des groupes ou des listes de distribution. Seul le nouveau contenu déclenche une notification par courrier électronique. La modification de contenu existant déclenche des conseils de stratégie, mais pas une notification par courrier électronique.
 
 ![Options de notification par courrier électronique.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
@@ -113,7 +113,7 @@ Par défaut, les notifications affichent un texte semblable à ce qui suit pour 
 
 ### <a name="custom-email-notification"></a>Notification par courrier électronique personnalisé
 
-Vous pouvez créer une notification par courrier électronique personnalisée au lieu d’envoyer la notification par courrier électronique par défaut à vos utilisateurs finaux ou administrateurs. La notification par courrier électronique personnalisé prend en charge le code HTML et présente une limite de 5 000 caractères. Vous pouvez utiliser du code HTML pour inclure des images, la mise en forme et d’autres marques dans la notification.
+Vous pouvez créer une notification par courrier électronique personnalisée au lieu d’envoyer la notification par courrier électronique par défaut à vos utilisateurs finaux ou administrateurs. La notification par courrier électronique personnalisée prend en charge le code HTML et présente une limite de 5 000 caractères. Vous pouvez utiliser du code HTML pour inclure des images, la mise en forme et d’autres marques dans la notification.
 
 Vous pouvez également utiliser les jetons suivants pour vous aider à personnaliser la notification par courrier électronique. Ces jetons sont des variables qui sont remplacées par des informations spécifiques dans la notification envoyée.
 
@@ -145,11 +145,11 @@ Par exemple, il se peut qu’une stratégie DLP soit appliquée aux sites OneDri
 
 2. Deuxième règle : si plus de cinq instances de ces informations sensibles sont détectées dans  un document et que le document est partagé avec des personnes au sein de l’organisation, l’action Bloquer l’accès au contenu restreint les autorisations pour le fichier et l’action Envoyer une **notification** permet aux utilisateurs de remplacer les actions de cette règle en fournissant une justification professionnelle. L’entreprise de votre organisation nécessite parfois que des personnes internes partagent des données piI, et vous ne souhaitez pas que votre stratégie DLP bloque ce travail.
 
-3. Troisième règle : si plus de cinq instances de ces informations sensibles sont détectées dans  un document et que le document est partagé avec des personnes extérieures à l’organisation, l’action Bloquer l’accès au contenu limite les autorisations pour le fichier et l’action Envoyer une **notification** ne permet pas aux utilisateurs de remplacer les actions de cette règle, car les informations sont partagées en externe. En aucun cas les membres de votre organisation ne doivent être autorisés à partager des données d’informations personnelles à l’extérieur de l’organisation.
+3. Troisième règle : si plus de cinq instances de ces informations sensibles sont détectées dans  un document et que le document est partagé avec des personnes extérieures à l’organisation, l’action Bloquer l’accès au contenu limite les autorisations pour le fichier et l’action Envoyer une **notification** ne permet pas aux utilisateurs de remplacer les actions de cette règle, car les informations sont partagées en externe. En aucun cas, les personnes de votre organisation ne doivent être autorisées à partager des données d’informations personnelles à l’extérieur de l’organisation.
 
 Voici quelques points à comprendre sur l’utilisation d’un conseil de stratégie pour remplacer une règle :
 
-- L’option de remplacement est par règle et elle remplace toutes les actions de la règle (à l’exception de l’envoi d’une notification, qui ne peut pas être substituer).
+- L’option de remplacement est par règle et remplace toutes les actions de la règle (à l’exception de l’envoi d’une notification, qui ne peut pas être substituer).
 
 - Il est possible que le contenu corresponde à plusieurs règles dans une stratégie DLP, mais seul le conseil de stratégie de la règle la plus restrictive et la plus prioritaire s’affiche. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
 
@@ -192,7 +192,7 @@ Vous pouvez personnaliser le texte des conseils de stratégie séparément de la
 
 ## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Conseils de stratégie Outlook sur le web et Outlook 2013 et ultérieures
 
-Lorsque vous rédigez un nouveau courrier électronique dans Outlook sur le web et Outlook 2013 et les ultérieures, vous voyez un conseil de stratégie si vous ajoutez du contenu qui correspond à une règle dans une stratégie DLP et que cette règle utilise des conseils de stratégie. Le conseil de stratégie apparaît en haut du message, au-dessus des destinataires, pendant que le message est composé.
+Lorsque vous rédigez un nouveau courrier électronique dans Outlook sur le web et Outlook 2013 et les ultérieures, vous verrez un conseil de stratégie si vous ajoutez du contenu qui correspond à une règle dans une stratégie DLP et que cette règle utilise des conseils de stratégie. Le conseil de stratégie apparaît en haut du message, au-dessus des destinataires, pendant que le message est composé.
 
 ![Conseil de stratégie en haut d’un message en cours de composition.](../media/9b3b6b74-17c5-4562-82d5-d17ecaaa8d95.png)
 
@@ -215,13 +215,13 @@ Actuellement, Outlook 2013 et les ultérieures ne prend en charge l’affichage 
 - Le contenu contient
 - Le contenu est partagé
 
-Notez que les exceptions sont considérées comme des conditions et que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage des conseils de stratégie aux utilisateurs n’est pas encore pris en charge.
+Notez que les exceptions sont considérées comme des conditions et que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Toutefois, l’affichage des conseils de stratégie aux utilisateurs n’est pas encore pris en charge. En outre, Outlook ne prend pas en charge l’affichage des conseils de stratégie pour une stratégie DLP appliquée à un groupe de distribution dynamique.
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Conseils de stratégie dans le Exchange d’administration et le Centre de conformité &amp; de sécurité
 
 Les conseils de stratégie peuvent fonctionner avec les stratégies DLP et les règles de flux de messagerie créées dans le Centre d’administration Exchange, ou avec les stratégies DLP créées dans le Centre de conformité de sécurité, mais pas les &amp; deux. En effet, ces stratégies sont stockées à différents emplacements, mais les conseils de stratégie ne peuvent dessiner qu’à partir d’un seul emplacement.
 
-Si vous avez configuré des conseils de stratégie dans le Centre d’administration Exchange, les conseils de stratégie que vous configurez dans le Centre de conformité de sécurité n’apparaîtront pas pour les utilisateurs dans Outlook sur le web et Outlook 2013 et ultérieurs tant que vous n’avez pas éteint les conseils dans le Centre d’administration &amp; Exchange. Cela garantit que vos règles de flux Exchange de messagerie (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous choisissiez de basculer vers le Centre de conformité de &amp; sécurité.
+Si vous avez configuré des conseils de stratégie dans le Centre d’administration Exchange, les conseils de stratégie que vous configurez dans le Centre de conformité de sécurité n’apparaîtront pas pour les utilisateurs de Outlook sur le web et Outlook 2013 et ultérieurs tant que vous n’avez pas éteint les conseils du Centre d’administration &amp; Exchange. Cela garantit que vos règles de flux Exchange de messagerie (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous choisissiez de basculer vers le Centre de conformité de &amp; sécurité.
 
 Notez que bien que les conseils de stratégie ne peuvent dessiner qu’à partir d’un seul emplacement, les notifications par courrier électronique sont toujours envoyées, même si vous utilisez des stratégies DLP à la fois dans le Centre de conformité de sécurité et le Centre d’administration &amp; Exchange.
 
@@ -248,7 +248,7 @@ Office programmes de bureau synchronisent automatiquement les stratégies DLP di
 > [!NOTE]
 > Office applications de bureau analysent les documents eux-mêmes pour déterminer si des conseils de stratégie DLP doivent être affichés ; ils n’indiquent pas de conseils de stratégie SharePoint sites en ligne ou OneDrive Entreprise sites ont déjà déterminé qu’ils doivent être affichés sur un fichier. Par conséquent, un conseil de stratégie DLP n’est pas toujours visible dans les applications de bureau que vous voyez sur les sites SharePoint Online ou OneDrive Entreprise sites. En revanche, les applications Office sur le web n’indiquent que les conseils de stratégie DLP que les sites SharePoint Online ou les sites OneDrive Entreprise ont déjà déterminés doivent être affichés.
 
-Selon la façon dont vous configurez les conseils de stratégie dans la stratégie DLP, les personnes peuvent choisir d’ignorer le conseil de stratégie, de remplacer la stratégie avec ou sans justification professionnelle ou de signaler un faux positif.
+Selon la façon dont vous configurez les conseils de stratégie dans la stratégie DLP, les personnes peuvent choisir d’ignorer simplement le conseil de stratégie, de remplacer la stratégie avec ou sans justification professionnelle ou de signaler un faux positif.
 
 Les conseils de stratégie apparaissent dans la barre des messages.
 

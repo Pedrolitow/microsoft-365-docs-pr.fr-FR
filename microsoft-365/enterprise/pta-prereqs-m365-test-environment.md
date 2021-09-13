@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Créer un environnement Microsoft 365 pour tester l’accès identité et appareil avec les conditions préalables pour l’authentification directe.
 ms.openlocfilehash: da97f8b18105b148eb5c87fecef12335eacd8f07
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574687"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205380"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès identité et appareil pour l’authentification directe dans votre environnement de test Microsoft 365
 
@@ -48,7 +48,7 @@ Procédez comme suit pour déployer l’[authentification directe](pass-through-
 
 Voici la configuration obtenue.
 
-![L’entreprise simulée avec environnement de test d’authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![Environnement de test de l’entreprise simulée avec authentification directe.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 ## <a name="phase-2-configure-azure-ad-seamless-single-sign-on"></a>Étape 2 : Configurer l’authentification unique transparente Azure AD
 

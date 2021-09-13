@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. Au fil de l’évolution du service, la sécurité, les performances et la fiabilité des Microsoft 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
-ms.openlocfilehash: ae3b06a607d3e45f5f1067616ba46c4226dde55766e02bd9f75b70313095474e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204114"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Évaluation de la connectivité réseau Microsoft 365
 
@@ -37,15 +37,15 @@ Les clients qui prévoient d Microsoft 365 doivent évaluer leurs besoins de con
   
 Les évaluations réseau peuvent être effectuées par de nombreuses personnes et organisations en fonction de votre taille et de vos préférences. L’étendue réseau de l’évaluation peut également varier en fonction de l’endroit où vous vous trouvez dans votre processus de déploiement. Pour vous aider à mieux comprendre ce qu’il faut faire pour effectuer une évaluation du réseau, nous avons produit un guide d’évaluation du réseau pour vous aider à comprendre les options disponibles. Cette évaluation déterminera les étapes et les ressources qui doivent être ajoutées au projet de déploiement pour vous permettre d’adopter Microsoft 365.
   
-Une évaluation complète du réseau fournira des solutions possibles aux défis de conception réseau, ainsi que des détails d’implémentation. Certaines évaluations réseau montrent que la connectivité réseau optimale à Microsoft 365 peut être réalisée avec des modifications mineures de configuration ou de conception de l’infrastructure de sortie internet et réseau existante.
+Une évaluation complète du réseau fournira des solutions possibles aux défis de conception de réseau, ainsi que des détails sur l’implémentation. Certaines évaluations réseau montrent que la connectivité réseau optimale à Microsoft 365 peut être réalisée avec des modifications mineures de configuration ou de conception de l’infrastructure de sortie internet et réseau existante.
 
-Certaines évaluations indiquent que la connectivité réseau à Microsoft 365 nécessitera des investissements supplémentaires dans les composants réseau. Par exemple, les réseaux d’entreprise qui s’étendent sur plusieurs succursales et régions géographiques peuvent nécessiter des investissements dans des solutions SD-WAN ou une infrastructure de routage optimisée pour prendre en charge la connectivité Internet Microsoft 365. Parfois, une évaluation indique que la connectivité réseau à Microsoft 365 est influencée par la réglementation ou les exigences de performances pour des scénarios tels que Skype Entreprise qualité des médias [en ligne.](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917) Ces exigences supplémentaires peuvent entraîner des investissements dans l’infrastructure de connectivité Internet, l’optimisation du routage et la connectivité directe spécialisée.
+Certaines évaluations indiquent que la connectivité réseau à Microsoft 365 nécessitera des investissements supplémentaires dans les composants réseau. Par exemple, les réseaux d’entreprise qui s’étendent sur plusieurs succursales et régions géographiques peuvent nécessiter des investissements dans des solutions SD-WAN ou une infrastructure de routage optimisée pour prendre en charge la connectivité Internet Microsoft 365. Parfois, une évaluation indique que la connectivité réseau à Microsoft 365 est influencée par la réglementation ou les exigences de performances pour des scénarios tels que [Skype Entreprise qualité des](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)médias en ligne . Ces exigences supplémentaires peuvent entraîner des investissements dans l’infrastructure de connectivité Internet, l’optimisation du routage et la connectivité directe spécialisée.
 
 Quelques ressources pour vous aider à évaluer votre réseau :
 
-- Voir [Microsoft 365 vue d’ensemble de la](microsoft-365-networking-overview.md) connectivité réseau pour obtenir des informations conceptuelles sur Microsoft 365 réseau.
+- Voir [Microsoft 365 vue d’ensemble de la connectivité](microsoft-365-networking-overview.md) réseau pour obtenir des informations conceptuelles sur Microsoft 365 réseau.
 - Voir [Microsoft 365 principes](./microsoft-365-network-connectivity-principles.md) de connectivité réseau pour comprendre les principes de connectivité pour gérer en toute sécurité Microsoft 365 trafic et obtenir les meilleures performances possibles.
-- Inscrivez-vous [à Microsoft FastTrack pour obtenir](https://www.microsoft.com/fasttrack) une assistance Microsoft 365 planification, conception et déploiement. 
+- Inscrivez-vous [à Microsoft FastTrack](https://www.microsoft.com/fasttrack) pour obtenir une assistance guidée Microsoft 365 planification, conception et déploiement. 
 - Consultez la section de test de connectivité [Microsoft 365](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) ci-dessous pour exécuter des tests de connectivité de base qui fournissent des conseils spécifiques sur les améliorations de connectivité réseau qui peuvent être apportées entre un emplacement d’utilisateur donné et un Microsoft 365.
 
 > [!NOTE]
@@ -57,7 +57,7 @@ Points clés à prendre en compte lors de la planification de votre évaluation 
 
 - Nous optimisons continuellement les principaux aspects des Microsoft 365 tels que la disponibilité, la portée globale et les performances pour la connectivité internet. Par exemple, de nombreux services Microsoft 365 tirent parti d’un ensemble étendu de nodes Edge côté Internet. Ce réseau edge offre la meilleure proximité et les meilleures performances pour les connexions provenant d’Internet.
 
-- Lorsque vous envisagez d’utiliser Microsoft 365 pour l’un des services inclus, tels que les fonctionnalités vocales, vidéo ou de réunion Teams ou Skype Entreprise Online, les clients doivent effectuer une évaluation réseau de bout en bout et répondre aux exigences de connectivité à l’aide de [Microsoft FastTrack.](https://www.microsoft.com/fasttrack)
+- Lorsque vous envisagez d’utiliser Microsoft 365 pour l’un des services inclus, tels que les fonctionnalités vocales, vidéo ou de réunion Teams ou Skype Entreprise Online, les clients doivent effectuer une évaluation réseau de bout en bout et répondre aux exigences de connectivité à l’aide de [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
 Si vous évaluez Microsoft 365 et que vous ne savez pas par où commencer l’évaluation de votre réseau ou si vous avez trouvé des défis de conception réseau que vous devez surmonter, contactez votre équipe de compte Microsoft.
 
@@ -86,14 +86,14 @@ L’outil basé sur le navigateur affiche les informations suivantes :
   - Distance de sortie de l’utilisateur vers le réseau
   - Microsoft 365 Exchange Online l’emplacement de la porte d’entrée du service
   - Emplacement Microsoft 365 Exchange Online service frontal optimal pour l’emplacement de l’utilisateur
-  - Clients dans votre domaine d’affaires avec de meilleures performances
+  - Clients de votre domaine d’affaires avec de meilleures performances
 
 L’application téléchargeable Tests avancés fournit les informations supplémentaires suivantes :
 
 - Onglet Détails et solutions (appended)
   - Passerelle par défaut de l’utilisateur
   - Serveur DNS client
-  - Résolution récursive DNS client
+  - Résolution récursive DNS du client
   - Exchange Online Serveur DNS
   - SharePoint Serveur DNS en ligne
   - Identification du serveur proxy
@@ -111,15 +111,15 @@ Voici un lien que vous pouvez utiliser pour revenir [ https://aka.ms/o365network
   
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Vue d’ensemble de la connectivité réseau Microsoft 365](microsoft-365-networking-overview.md)
+[Vue d’ensemble de la connectivité réseau Microsoft 365](microsoft-365-networking-overview.md)
 
 [Principes de connectivité réseau Microsoft 365](./microsoft-365-network-connectivity-principles.md)
 
-[Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
+[Gestion des points de terminaison Office 365](managing-office-365-endpoints.md)
 
-[URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
+[URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
 
-[Service web URL et adresses IP Office 365](microsoft-365-ip-web-service.md)
+[Service web URL et adresses IP Office 365](microsoft-365-ip-web-service.md)
 
 [Microsoft 365 réseau et l’optimisation des performances](network-planning-and-performance.md)
 

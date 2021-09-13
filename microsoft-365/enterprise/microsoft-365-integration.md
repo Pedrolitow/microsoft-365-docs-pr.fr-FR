@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Dans cet article, découvrez comment intégrer des Microsoft 365 à vos services d’annuaire et environnements locaux existants.
 ms.openlocfilehash: 87b456a0b44e4b38df6cec8e72713c6573917805
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575587"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205467"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365'intégration aux environnements locaux
 
@@ -38,7 +38,7 @@ Vous pouvez intégrer Microsoft 365 à vos services de domaine Active Directory 
  - Lorsque vous intégrez AD DS, vous pouvez synchroniser et gérer les comptes d’utilisateur pour les deux environnements. Vous pouvez également ajouter une synchronisation de hachage de mot de passe (PHS) ou une personnalisation unique (SSO) pour que les utilisateurs se connectent aux deux environnements avec leurs informations d’identification sur site.
  - Lorsque vous intégrez des produits serveur locaux, vous créez un environnement hybride. Un environnement hybride peut vous aider lors de la migration d’utilisateurs ou d’informations vers Microsoft 365, ou vous pouvez continuer à avoir des utilisateurs ou des informations sur site et d’autres dans le cloud. Pour plus d’informations sur les environnements hybrides, voir [le cloud hybride.](../solutions/cloud-architecture-models.md#hybrid)
 
-Vous pouvez également utiliser les conseillers Azure Active Directory (Azure AD) pour obtenir des instructions de configuration personnalisées dans le Centre d’administration Microsoft 365 (vous devez être Microsoft 365) :
+Vous pouvez également utiliser les conseillers Azure Active Directory (Azure AD) pour obtenir des instructions de configuration personnalisées dans le Centre d'administration Microsoft 365 (vous devez être Microsoft 365) :
 
 - [Guide de configuration d’Azure AD](https://aka.ms/aadpguidance)
 - [Synchroniser les utilisateurs à partir de l’annuaire de votre organisation](https://aka.ms/aadconnectpwsync)

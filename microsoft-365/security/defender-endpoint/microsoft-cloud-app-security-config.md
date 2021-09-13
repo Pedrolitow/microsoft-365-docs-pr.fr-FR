@@ -18,17 +18,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: f49050ff6ac4f283e8552073922517e9d59d6849
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203951"
 ---
 # <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Configurer les Microsoft Cloud App Security dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

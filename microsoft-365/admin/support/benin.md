@@ -12,14 +12,14 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 711f4bf3289283147fd96d9cb360ff50edaa58764682ec10fde2f0ee3c15303d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44c816dd867d7be828db6f09ce0675a17c70b3b8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204216"
 ---
-# <a name="contact-support-for-benin"></a>Contacter le support technique pour l’Sénégal
+# <a name="contact-support-for-benin"></a>Contacter le support technique pour l’Cameroun
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 

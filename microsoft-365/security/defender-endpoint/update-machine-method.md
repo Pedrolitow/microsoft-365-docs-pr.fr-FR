@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
-ms.sourcegitcommit: be83f1222c30ffa8202c19a2797cc755fc3b72af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203771"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 

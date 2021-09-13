@@ -21,18 +21,18 @@ ms.custom:
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explique comment utiliser PowerShell pour supprimer des licences Microsoft 365 précédemment attribuées à des utilisateurs.
 ms.openlocfilehash: e798eaaf18c39a026c5a2d5f5861689e5ddd3953
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205355"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Supprimer Microsoft 365 licences d’utilisateur des comptes d’utilisateurs avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 >[!Note]
->[Découvrez comment supprimer des licences de comptes d’utilisateurs](../admin/manage/remove-licenses-from-users.md) avec le Centre d’administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>[Découvrez comment supprimer des licences de comptes d’utilisateurs](../admin/manage/remove-licenses-from-users.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -110,7 +110,7 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 ```
 
 >[!Note]
->Vous ne pouvez pas utiliser la `Set-MsolUserLicense` cmdlet pour désattribuer des licences *annulées* aux utilisateurs. Vous devez le faire individuellement pour chaque compte d’utilisateur dans le Centre d’administration Microsoft 365.
+>Vous ne pouvez pas utiliser la `Set-MsolUserLicense` cmdlet pour désattribuer des licences *annulées* aux utilisateurs. Vous devez le faire individuellement pour chaque compte d’utilisateur dans le Centre d'administration Microsoft 365.
 >
 
 Pour supprimer toutes les licences d’un groupe d’utilisateurs sous licence existants, utilisez l’une des méthodes suivantes :

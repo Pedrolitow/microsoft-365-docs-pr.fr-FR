@@ -22,11 +22,11 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
 ms.openlocfilehash: 3bf6d527092a4dc5ed340a2d9548fea41d875d31
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561253"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204600"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrer des requêtes de recherche avancée à partir de Microsoft Defender pour le point de terminaison
 
@@ -55,16 +55,16 @@ Le [Microsoft 365 Defender de recherche](advanced-hunting-schema-tables.md) avan
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Fichiers, adresses IP, URL, utilisateurs ou appareils associés à des alertes |
 | [AlertInfo](advanced-hunting-alertinfo-table.md) | Alertes de Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité, y compris les informations de gravité et les catégories de menaces  |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Informations sur les fichiers joints aux e-mails |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365 e-mail, y compris la remise et le blocage des événements |
-| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Événements de sécurité qui se produisent après la remise, Microsoft 365 les e-mails à la boîte aux lettres du destinataire |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | Événements d’e-mails Microsoft 365, y compris les événements de remise et de blocage d’e-mail |
+| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Événements de sécurité qui se produisent après la remise, une fois que Microsoft 365 a remis les e-mails à la boîte aux lettres du destinataire |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | Informations sur les URL des e-mails |
-| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce tableau couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine. |
+| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce tableau couvre un ensemble d’événements liés à l’identité, ainsi que des événements système sur le contrôleur de domaine. |
 | [IdentityInfo](advanced-hunting-identityinfo-table.md) | Informations de compte provenant de différentes sources, notamment Azure Active Directory |
 | [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Événements d’authentification sur Active Directory et les services en ligne Microsoft |
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Requêtes pour les objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines |
 
 >[!IMPORTANT]
-> Les requêtes et les détections personnalisées qui utilisent des tables de schéma qui sont uniquement disponibles dans Microsoft 365 Defender ne peuvent être vues qu’Microsoft 365 Defender.
+> Les requêtes et les détections personnalisées qui utilisent des tables de schéma qui sont uniquement disponibles dans Microsoft 365 Defender peuvent uniquement être vues dans Microsoft 365 Defender.
 
 ## <a name="map-devicealertevents-table"></a>Table Map DeviceAlertEvents
 Les `AlertInfo` `AlertEvidence` tableaux et les tables `DeviceAlertEvents` remplacent le tableau dans le schéma Microsoft Defender for Endpoint. En plus des données sur les alertes d’appareil, ces deux tableaux incluent des données sur les alertes pour les identités, les applications et les e-mails.
@@ -120,13 +120,13 @@ AlertInfo
 
 Lorsque les règles microsoft Defender pour les points de terminaison sont modifiées sur Microsoft 365 Defender, elles continuent de fonctionner comme avant si la requête résultante examine uniquement les tables des appareils. 
 
-Par exemple, les alertes générées par des règles de détection personnalisées qui interrogent uniquement les tables des appareils continueront d’être remis à votre SIEM et de générer des notifications par courrier électronique, selon la façon dont vous les avez configurées dans Microsoft Defender pour le point de terminaison. Toutes les règles de suppression existantes dans Defender pour le point de terminaison continueront également de s’appliquer.
+Par exemple, les alertes générées par des règles de détection personnalisées qui interrogent uniquement les tables des appareils continueront d’être remis à votre SIEM et de générer des notifications par courrier électronique, selon la façon dont vous les avez configurées dans Microsoft Defender pour endpoint. Toutes les règles de suppression existantes dans Defender pour le point de terminaison continueront également de s’appliquer.
 
 Une fois que vous avez modifié une règle Defender pour point de terminaison afin qu’elle interroge les tables d’identité et de messagerie, qui ne sont disponibles que dans Microsoft 365 Defender, la règle est automatiquement déplacée vers Microsoft 365 Defender. 
 
 Alertes générées par la règle migré :
 
-- Ne sont plus visibles dans le portail Defender for Endpoint (Centre de sécurité Microsoft Defender)
+- Ne sont plus visibles dans le portail Defender pour point de terminaison (Centre de sécurité Microsoft Defender)
 - Ne plus être remis à votre SIEM ou générer des notifications par courrier électronique. Pour contourner ce changement, configurez les notifications par Microsoft 365 Defender pour obtenir les alertes. Vous pouvez utiliser [l’API Microsoft 365 Defender pour](api-incident.md) recevoir des notifications pour les alertes de détection des clients ou les incidents connexes.
 - Ne sera pas supprimé par les règles de suppression des points de terminaison de Microsoft Defender. Pour empêcher la générer des alertes pour certains utilisateurs, périphériques ou boîtes aux lettres, modifiez les requêtes correspondantes pour exclure explicitement ces entités.
 

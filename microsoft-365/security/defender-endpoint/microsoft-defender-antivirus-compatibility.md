@@ -17,15 +17,15 @@ manager: dansimp
 ms.technology: mde
 ms.date: 08/11/2021
 ms.openlocfilehash: be816488ebe930da2f757ed192a12d81c0a222ef
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823755"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203940"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus Microsoft Defender compatibilité avec d’autres produits de sécurité
 
-**S’applique à :**
+**S’applique à :**
 
 - Antivirus Microsoft Defender
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)

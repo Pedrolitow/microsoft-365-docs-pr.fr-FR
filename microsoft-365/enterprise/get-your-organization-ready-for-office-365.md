@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Cet article fournit des listes de contrôle et d’autres ressources à planifier pour Microsoft 365 Entreprise déploiement.
 ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205612"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planifier les Microsoft 365 Entreprise
 
@@ -43,7 +43,7 @@ Lorsque vous déplacez une organisation vers Microsoft 365, il est important de 
 
 ## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planification du do-it-yourself pour Microsoft 365
 
-Pour planifier des Microsoft 365 vous-même, avancez pas à pas dans les décisions de planification et de conception pour ces domaines :
+Pour planifier les Microsoft 365 vous-même, avancez pas à pas dans les décisions de planification et de conception pour ces domaines :
 
 - Votre client Microsoft 365
 
@@ -59,6 +59,6 @@ Pour planifier des Microsoft 365 vous-même, avancez pas à pas dans les décisi
 
 - Clients et serveurs Office serveurs plus anciens
 
-  Inclut des informations de migration Office 2007 et Office produits client et serveur 2010. Pour plus [d’informations, voir Planifier](plan-upgrade-previous-versions-office.md) votre mise à niveau.
+  Inclut des informations de migration Office 2007 et Office 2010 clients et serveurs. Pour plus [d’informations, voir Planifier](plan-upgrade-previous-versions-office.md) votre mise à niveau.
 
 Vous pouvez également vous inscrire à votre abonnement Microsoft 365 et utiliser les guides d’installation pour Microsoft 365 [et Office 365 services.](setup-guides-for-microsoft-365.md)

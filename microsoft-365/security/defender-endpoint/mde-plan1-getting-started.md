@@ -14,11 +14,11 @@ localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.openlocfilehash: 3af483db6b2cc9801a56d96147a0a4aed90e33ce
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823421"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203976"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Mise en place de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -27,12 +27,12 @@ ms.locfileid: "58823421"
 
 Le portail Microsoft 365 Defender ( ) vous permet d’afficher des informations sur les menaces détectées, de gérer vos alertes et incidents, de prendre les mesures nécessaires sur les menaces détectées et de gérer les [https://security.microsoft.com](https://security.microsoft.com) appareils. Le portail Microsoft 365 Defender est l’endroit où vous pouvez commencer à interagir avec les fonctionnalités de protection contre les menaces que vous obtenez avec Defender for Endpoint Plan 1 (prévisualisation). Les sections suivantes décrivent comment commencer :
 
-- [Portail Microsoft 365 Defender](#the-microsoft-365-defender-portal)
+- [Portail Microsoft 365 Defender](#the-microsoft-365-defender-portal)
 - [Affichage et gestion des incidents & alertes](#view-and-manage-incidents--alerts)
 - [Gestion des appareils](#manage-devices)
 - [Affichage des rapports](#view-reports)
 
-## <a name="the-microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
+## <a name="the-microsoft-365-defender-portal"></a>Portail Microsoft 365 Defender
 
 Le Microsoft 365 Defender ( ) vous permet d’afficher les alertes, de gérer les appareils [https://security.microsoft.com](https://security.microsoft.com) et d’afficher les rapports. Lorsque vous vous connectez au portail Microsoft 365 Defender, vous commencez par la page d’accueil, comme illustré dans l’image suivante :
 
@@ -63,7 +63,7 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 | **Incidents et & alertes** | Se développe pour afficher **les incidents** et **les alertes.** |
 | **Incidents & alertes**  >  **Incidents** | Permet d’accéder à **la liste Incidents.** Les incidents sont créés lorsque des alertes sont déclenchées et/ou que des menaces sont détectées. Par défaut, la liste **Incidents** affiche les données des 30 derniers jours, avec le dernier incident répertorié en premier. <br/><br/> Pour en savoir plus, consultez [Incidents.](view-incidents-queue.md) |
 | **Incidents & alertes**  >  **Alertes** | Navigue vers la liste **Alertes** (également appelée file **d’attente des alertes).** Les alertes sont déclenchées lorsqu’un fichier, un processus ou un comportement suspect ou malveillant est détecté. Par défaut, la liste **Alertes** affiche les données des 30 derniers jours, la dernière alerte répertoriée en premier. <br/><br/> Pour plus d’informations, voir [Alertes.](alerts-queue.md) |
-| **Centre de actions** | Navigue vers le centre de mise en œuvre, qui suit les actions de correction et de réponse manuelle. Le centre de suivi des activités comme celles-ci : <br/>- Antivirus Microsoft Defender un fichier malveillant, puis bloque/supprime ce fichier. <br/>- Votre équipe de sécurité isole un appareil.<br/>- Defender pour le point de terminaison détecte et met en quarantaine un fichier. <br/><br/> Pour en savoir plus, consultez le [Centre de l’action.](auto-investigation-action-center.md) |
+| **Centre de notifications** | Navigue vers le centre de mise en œuvre, qui suit les actions de correction et de réponse manuelle. Le centre de suivi des activités comme celles-ci : <br/>- Antivirus Microsoft Defender un fichier malveillant, puis bloque/supprime ce fichier. <br/>- Votre équipe de sécurité isole un appareil.<br/>- Defender pour le point de terminaison détecte et met en quarantaine un fichier. <br/><br/> Pour en savoir plus, consultez le [Centre de l’action.](auto-investigation-action-center.md) |
 | **Degré de sécurisation** | Affiche une représentation de la posture de sécurité de votre organisation, ainsi qu’une liste d’actions et de mesures d’amélioration. <br/><br/> Pour plus d’informations, voir [Le Score de sécurisation Microsoft.](../defender/microsoft-secure-score.md) |
 | **Learning hub** | Accédez à la liste des parcours d’apprentissage accessibles pour en savoir plus sur Microsoft 365 fonctionnalités de sécurité.  |
 | **Points de terminaison**  >  **Recherche** | Navigue vers une page où vous pouvez rechercher des appareils spécifiques par nom d’appareil. Dans la liste des résultats, vous pouvez voir les détails, tels que le niveau de risque et l’état de santé, en un coup d’œil. |
@@ -73,8 +73,8 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 |  **Points de terminaison**  >  **Configuration et & base de référence**  >  **Gestion de la configuration** | Accédez à la page Gestion de **la configuration** des appareils, où vous pouvez afficher des informations sur les appareils intégrés et prendre des mesures pour intégrer d’autres appareils. |
 | **Rapports** | Accédez à vos rapports, tels que votre rapport sur la [protection](threat-protection-reports.md)contre les menaces, [](machine-reports.md)le rapport d’état et de conformité de l’appareil et votre rapport de protection [Web.](web-protection-overview.md) |
 | **État d'intégrité** | Inclut des liens vers **l’état du service et** le centre de **messages.**  |
-| **Santé**  >  **État du service** | Accédez à la page État du service dans la Centre d’administration Microsoft 365. Cette page vous permet d’afficher l’état d’état d’état de tous les services disponibles avec les abonnements de votre organisation.   |
-| **Santé**  >  **Centre de messages** | Navigue vers le centre de messages dans le Centre d’administration Microsoft 365. Le centre de messages fournit des informations sur les modifications planifiées. Chaque message décrit ce qui arrive, comment il peut affecter les utilisateurs et comment gérer les modifications. |  
+| **Santé**  >  **État du service** | Accédez à la page État du service dans la Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’état d’état de tous les services disponibles avec les abonnements de votre organisation.   |
+| **Santé**  >  **Centre de messages** | Navigue vers le centre de messages dans le Centre d'administration Microsoft 365. Le centre de messages fournit des informations sur les modifications planifiées. Chaque message décrit ce qui arrive, comment il peut affecter les utilisateurs et comment gérer les modifications. |  
 | **Autorisations & rôles** | Vous permet d’accorder des autorisations d’utilisation du Microsoft 365 Defender web. Les autorisations sont accordées par le biais de rôles Azure Active Directory (Azure AD). Sélectionnez un rôle et un volet volant s’affiche. Le volant contient un lien vers Azure AD dans lequel vous pouvez ajouter ou supprimer des membres dans un groupe de rôles. <br/><br/> Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)  |
 | **Settings** | Permet d’accéder aux paramètres généraux de votre portail Microsoft 365 Defender (répertorié en tant que centre de **sécurité)** et de Defender pour les points de terminaison (répertoriés en tant que points **de terminaison).** <br/><br/> Pour en savoir plus, [voir Paramètres](../defender/overview-security-center.md). |
 | **Autres ressources** | Affiche une liste d’autres portails et centres, tels que les Azure Active Directory et les Centre de conformité Microsoft 365. <br/><br/> Pour en savoir plus, consultez [les portails de sécurité Microsoft et les centres d’administration.](../defender/portals.md) |

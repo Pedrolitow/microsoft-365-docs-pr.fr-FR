@@ -20,11 +20,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571818"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204666"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -52,7 +52,7 @@ Dans ce scénario de déploiement, vous serez guidé dans les étapes suivantes 
 - Configuration réseau
 
 > [!NOTE]
-> Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation des Microsoft Endpoint Configuration Manager. Defender pour le point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, [voir Appareils intégrés à Microsoft Defender pour le point de terminaison.](onboard-configure.md)
+> Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation des Microsoft Endpoint Configuration Manager. Defender pour le point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, [voir Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Vérifier l’état de la licence
 
@@ -159,7 +159,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de niveau inférieur
 
-Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’Agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
+Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
 
 ### <a name="proxy-service-urls"></a>URL de service proxy
 

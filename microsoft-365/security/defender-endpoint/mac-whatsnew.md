@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: reference
 ms.technology: mde
 ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204762"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 

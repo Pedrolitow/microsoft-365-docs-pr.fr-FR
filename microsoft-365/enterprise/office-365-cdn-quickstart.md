@@ -20,11 +20,11 @@ search.appverid:
 - SPO160
 description: Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
 ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570532"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205411"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
 

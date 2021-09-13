@@ -20,17 +20,17 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: 719b754e8e3486c281b23f4c38c7e33f548b118c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204401"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Stratégies d’accès invité et d’accès des utilisateurs externes B2B
 
-Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités recommandées pour autoriser l’accès aux invités et aux utilisateurs externes qui ont un compte B2B (Business-to-Business) Azure Active Directory (Azure AD). Ces instructions s’appuient sur les stratégies [communes d’accès aux identités et aux appareils.](identity-access-policies.md)
+Cet article traite de l’ajustement des stratégies d’accès aux appareils et aux identités recommandées pour autoriser l’accès aux invités et aux utilisateurs externes qui ont un compte B2B (Business-to-Business) Azure Active Directory (Azure AD). Ces instructions s’appuient sur les stratégies [d’accès aux appareils et aux identités courantes.](identity-access-policies.md)
 
-Ces recommandations sont conçues pour s’appliquer au **niveau de** protection de référence. Toutefois, vous pouvez également ajuster les  recommandations en fonction de vos besoins spécifiques en matière de protection sensible et **hautement réglementée.**
+Ces recommandations sont conçues pour s’appliquer au **niveau de** protection de référence. Mais vous pouvez également ajuster les recommandations  en fonction de vos besoins spécifiques en matière de protection sensible et **hautement réglementée.**
 
 Le fait de fournir un chemin d’accès aux comptes B2B pour s’authentifier auprès de votre client Azure AD ne permet pas à ces comptes d’accéder à l’ensemble de votre environnement. Les utilisateurs B2B et leurs comptes ont accès à des services et des ressources, tels que des fichiers, partagés avec eux par la stratégie d’accès conditionnel.
 
@@ -42,13 +42,13 @@ Ce diagramme montre les stratégies à ajouter ou à mettre à jour parmi les st
 
 Le tableau suivant répertorie les stratégies que vous devez créer et mettre à jour. Les stratégies courantes sont liées aux instructions de configuration associées dans l’article [Stratégies](identity-access-policies.md) communes d’identité et d’accès aux appareils.
 
-|Niveau de protection|Politiques|Plus d’informations|
+|Niveau de protection|Stratégies|Plus d’informations|
 |---|---|---|
 |**Baseline**|[Exiger l’mf toujours pour les invités et les utilisateurs externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette stratégie et configurez : <ul><li>Pour **les affectations > utilisateurs** et groupes > inclure, sélectionnez Sélectionner des utilisateurs et des **groupes,** puis sélectionnez Tous les utilisateurs **invités et externes.**</li><li>Pour **les affectations > conditions >** se connectez, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur (MFA).</li></ul>|
-||[Exiger une mfmf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
+||[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
 ||[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifiez cette stratégie pour exclure les invités et les utilisateurs externes.|
 
-Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès conditionnel, pour affectations > Utilisateurs et groupes > Inclure ou exclure, vérifier tous les **utilisateurs invités** et  **externes.**
+Pour inclure ou exclure des invités et des utilisateurs externes dans les stratégies d’accès conditionnel, pour affectations > Utilisateurs et groupes > Inclure ou exclure, vérifier tous les **utilisateurs invités** et **externes.**
 
 ![capture d’écran des contrôles pour l’exclusion des invités et des utilisateurs externes.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 

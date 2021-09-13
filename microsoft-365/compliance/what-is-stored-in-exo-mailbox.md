@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Le contenu produit par les applications basées sur le cloud Microsoft 365 est stocké ou associé à la boîte aux lettres Exchange Online’un utilisateur. Ce contenu peut être recherché à l’aide des outils eDiscovery de Microsoft.
-ms.openlocfilehash: 9df7198f50809af4a97eabecfab02219f7d2d17cfe96037422e8516fd2567a1b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 975f4ac8be8c2cdeed8dea1d73699607662a1ce9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53859682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205675"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenu stocké dans Exchange Online boîtes aux lettres pour eDiscovery
 
@@ -42,10 +42,10 @@ Le tableau suivant répertorie les applications qui stockent ou associent des do
 |Planification de classe|Les plans créés dans le Planning de classe sont stockés dans la boîte aux lettres du groupe Microsoft 365 correspondant qui est mis en service lors de la création d’un plan. L’alias de la boîte aux lettres de groupe est le nom du plan.|
 |Skype Entreprise|Les conversations Skype Entreprise sont stockées dans le dossier Historique des conversations de la boîte aux lettres d’un utilisateur. Si la boîte aux lettres d’un participant à une réunion Skype est placée en conservation pour litige ou affectée à une stratégie de rétention, les fichiers joints à une réunion sont conservés dans la boîte aux lettres des participants.|
 |Sway<sup>*</sup>|Les Sways sont stockés en tant que fichier HTML joint à un message électronique et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le sway. Lorsque vous exportez du contenu à partir de Sway dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID suivant : **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
-|Tâches|Les tâches de l’application Tâches (qui sont les mêmes que les tâches accessibles dans Outlook) sont stockées dans la boîte aux lettres d’un utilisateur.|
+|Tasks|Les tâches de l’application Tâches (qui sont les mêmes que les tâches accessibles dans Outlook) sont stockées dans la boîte aux lettres d’un utilisateur.|
 |Teams|Les conversations qui font partie d’un canal Teams sont associées à la boîte aux lettres Teams’utilisateur. Les conversations qui font partie de la liste de conversation dans Teams (également appelées conversations *1 x N)* sont associées à la boîte aux lettres des utilisateurs qui participent à la conversation. En outre, les informations récapitulatifs pour les réunions et les appels dans un canal Teams sont associées aux boîtes aux lettres des utilisateurs qui ont appelé la réunion ou l’appel. Ainsi, lorsque vous recherchez Teams contenu, vous recherchez dans la boîte aux lettres Teams du contenu dans les conversations de canal et dans les boîtes aux lettres utilisateur de recherche de contenu dans les conversations 1 x N.|
 |À faire|Les tâches (appelées tâches, qui sont enregistrées dans les listes de tâches) dans l’application To-Do sont *stockées* dans la boîte aux lettres d’un utilisateur.|
-|Yammer|Les conversations et commentaires au sein d’une communauté Yammer sont associés à la boîte aux lettres de groupe Microsoft 365, ainsi qu’à la boîte aux lettres de l’utilisateur de l’auteur et aux destinataires nommés (utilisateurs @ mentionnés ou cc’ed). Les messages privés envoyés en dehors d Yammer communauté sont stockés dans la boîte aux lettres des utilisateurs qui participent au message privé.|
+|Protester|Les conversations et commentaires au sein d’une communauté Yammer sont associés à la boîte aux lettres de groupe Microsoft 365, ainsi qu’à la boîte aux lettres de l’utilisateur de l’auteur et aux destinataires nommés (utilisateurs @ mentionnés ou cc’ed). Les messages privés envoyés en dehors d Yammer communauté sont stockés dans la boîte aux lettres des utilisateurs qui participent au message privé.|
 |
 
 > [!NOTE]

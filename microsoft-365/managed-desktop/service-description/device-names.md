@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d358a001064d13f1220752423b10dd26afd2817a944215658e4f11b368f611a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: adf4809e0d8dc29f170475435b19092abf2062fd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207516"
 ---
 # <a name="device-names"></a>Noms de l’appareil
 

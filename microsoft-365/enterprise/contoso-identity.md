@@ -15,11 +15,11 @@ ms.collection:
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
 ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207715"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -27,7 +27,7 @@ Microsoft fournit l’identité en tant que service (IDaaS) dans ses offres clou
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Forêt des services de domaine Active Directory contoso
 
-Contoso utilise une forêt AD DS (Active Directory Domain Services) unique pour contoso com avec sept sous-domaines, un pour chaque région \. du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
+Contoso utilise une seule forêt AD DS (Active Directory Domain Services) pour contoso com avec sept sous-domaines, un pour chaque région \. du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
 
 Voici la forêt Contoso avec des domaines régionaux pour les différentes régions du monde qui contiennent des centres régionaux.
 

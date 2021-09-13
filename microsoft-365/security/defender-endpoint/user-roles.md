@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 60a0d59bd199e46e52623e36fa962465b313c9bd
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204623"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle
 
@@ -79,7 +79,7 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
 - **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-bord, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
 
 - **Fonctionnalités de réponse en direct**
-    - **Commandes de** base :
+    - **Commandes** de base :
         - Démarrer une session de réponse en direct
         - Exécuter des commandes de réponse en direct en lecture seule sur un appareil distant (à l’exception de la copie et de l’exécution des fichiers)
         - Télécharger un fichier à partir de l’appareil distant via une réponse en direct
@@ -113,7 +113,7 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
 
 3. Sélectionnez le rôle que vous souhaitez supprimer.
 
-4. Cliquez sur le bouton de la drop-down et **sélectionnez Supprimer le rôle**.
+4. Cliquez sur le bouton de la déposer et sélectionnez **Supprimer le rôle.**
 
 ## <a name="related-topic"></a>Rubrique connexe
 

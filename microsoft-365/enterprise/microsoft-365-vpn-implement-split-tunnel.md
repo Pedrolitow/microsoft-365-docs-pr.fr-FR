@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: 9d706de846b6206a6be8a1524da1222b1c49147b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 36c3cfbd74dabb0cfaf305cb52fb7f69e1e1e49f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571974"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205452"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -259,7 +259,7 @@ Une fois la stratégie en place, vous devez vérifier qu’elle fonctionne comme
 
 ### <a name="additional-support-logs"></a>Journaux de support supplémentaires
 
-Si vous avez besoin de données supplémentaires pour résoudre les problèmes, ou si vous demandez l’aide du support technique Microsoft, vous pouvez obtenir les informations suivantes afin de vous permettre d’accélérer la recherche d’une solution. Le jeu d’outils **TSS Windows script** de dépannage universel basé sur CMD du support Microsoft peut vous aider à collecter les journaux pertinents de manière simple. L’outil et les instructions d’utilisation sont disponibles sur <https://aka.ms/TssTools.>
+Si vous avez besoin de données supplémentaires pour résoudre les problèmes, ou si vous demandez l’aide du support technique Microsoft, vous pouvez obtenir les informations suivantes afin de vous permettre d’accélérer la recherche d’une solution. Le jeu d’outils **TSS Windows script** de dépannage universel basé sur CMD du support Microsoft peut vous aider à collecter les journaux pertinents de manière simple. L’outil et les instructions d’utilisation sont à l’aide de <https://aka.ms/TssTools> .
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>Guides d’utilisation pour les plateformes VPN courantes
 

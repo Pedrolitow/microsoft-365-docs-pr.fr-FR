@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6dabb757d5d51110f9b7a77b095b818bdfc61a1fb79506fe9a543a7d6bbc1240
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 229dbfd12ddca4e3a1444e2e9ca5771896ba07e0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204492"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>Étape 6. Identifier les tâches de maintenance SOC
 
@@ -44,9 +44,9 @@ Voici les tâches périodiques ou nécessaires à la maintenance de votre SOC po
 | Mettre à jour les campagnes anti-hameçonnage et de protection contre la perte de données | Incorporer le cas d’utilisation soc et les leçons apprises avec une organisation étendue (RH, juridique, formation, etc.).  | Tous les mois et selon les besoins | Supervision SOC |
 | Déployer des services et des scripts d’automatisation, le cas échéant | Téléchargez et testez des scripts d’automatisation et des fichiers de configuration à partir de sites Microsoft approuvés pour Microsoft 365 Defender opérations d’automatisation. | Toutes les semaines et selon les besoins | Ingénierie et SecOps | 
 | Gestion des portails ou des licences | Vérifiez les annonces et le Centre Messages Microsoft de gestion des Microsoft 365 Defender ou des licences en fonction des mises à jour microsoft et des nouvelles fonctionnalités. | Hebdomadaire | Supervision SOC| 
-| Mettre à jour les tickets d’escalade SOC | Toutes les équipes SOC met à jour les tickets d’escalade (tels que sentinel, tickets ServiceNow) qui leur sont attribués. | Journalier | Toutes les équipes SOC | 
-| Suivre l Microsoft 365 Defender de correction des menaces & vulnérabilité | Générez une activité de correction tvm Secure Score et signalez-les aux propriétaires de biens via un portail intranet. | Journalier | Surveillance | 
-| Générer un rapport de score de sécurisation | L’équipe de surveillance suit et signale les améliorations du score de sécurité. | SOC hebdomadaire | Surveillance | 
+| Mettre à jour les tickets d’escalade SOC | Toutes les équipes SOC met à jour les tickets d’escalade (tels que sentinel, tickets ServiceNow) qui leur sont attribués. | Journalière | Toutes les équipes SOC | 
+| Suivre l Microsoft 365 Defender de correction des menaces & vulnérabilité | Générez une activité de correction tvm Secure Score et signalez-les aux propriétaires de biens via un portail intranet. | Journalière | Analyse | 
+| Générer un rapport de score de sécurisation | L’équipe de surveillance suit et signale les améliorations du score de sécurité. | SOC hebdomadaire | Analyse | 
 | Exécuter l’exercice tabletop ir | Testez les manuels d’équipe SOC dans un exercice de tabletop. | Selon vos besoins | Toutes les équipes SOC | 
 |||||
 

@@ -18,11 +18,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 9a77662d1473a56031a30e44a1d39df8e3964541
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207468"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Résoudre les problèmes et trouver des réponses aux questions fréquentes sur Microsoft Defender pour point de terminaison sur iOS
 
@@ -95,7 +95,7 @@ En outre, une notification s’affiche sur l’appareil iOS. Appuyer sur la noti
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>Appareil non visible sur la console Defender for Endpoint après l’intégration.
 
-Après l’intégration, l’intégration de l’appareil dans l’inventaire de l’appareil dans la console de sécurité Defender for Endpoint prend quelques heures. Assurez-vous également que l’appareil est correctement inscrit auprès Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour que l’intégration réussisse, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d’entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès d’Azure AD.
+Après l’intégration, l’intégration de l’appareil dans l’inventaire de l’appareil dans la console de sécurité Defender for Endpoint prend quelques heures. Assurez-vous également que l’appareil est correctement inscrit auprès Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour que l’intégration réussisse, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d'entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès d’Azure AD.
 
 > [!NOTE]
 > Parfois, le nom de l’appareil n’est pas cohérent avec celui de Microsoft Endpoint Manager console (Intune). Le nom de l’appareil dans la console Defender pour point de terminaison est au format <username_iPhone/iPad modèle>. Vous pouvez également utiliser l’ID d’appareil Azure AD pour identifier l’appareil dans la console Defender for Endpoint.

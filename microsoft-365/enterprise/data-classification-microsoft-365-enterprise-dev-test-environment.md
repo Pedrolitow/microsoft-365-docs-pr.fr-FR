@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.custom:
+- Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur les documents de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: b5cc84a4d8b73b9f7dc3f64934a18b549846ba17
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a39661da9436473da9e89330ff15d0a43d19db51
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207628"
 ---
 # <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 entreprise
 
@@ -50,7 +52,7 @@ Si vous souhaitez configurer des étiquettes de rétention dans une entreprise s
 
 Dans cette phase, créez les étiquettes de rétention pour les différents niveaux de rétention pour SharePoint dossiers de documents en ligne :
 
-1. Connectez-vous au [centre Microsoft 365 sécurité](https://security.microsoft.com/homepage) avec votre compte d’administrateur global.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">centre Microsoft 365 sécurité avec</a> votre compte d’administrateur global.
 1. Dans **l’onglet Accueil - Microsoft 365 de** sécurité de votre navigateur, sélectionnez   >  **Étiquettes de rétention de classification.**
 1. Sélectionnez **Créer une étiquette**.
 1. Dans le **volet Nom de votre étiquette,** entrez Public **interne** dans Nom de votre **étiquette,** puis sélectionnez **Suivant**.
@@ -63,7 +65,7 @@ Dans cette phase, créez les étiquettes de rétention pour les différents nive
   - Hautement confidentiel
 1. Dans le volet **Étiquettes de** rétention, **sélectionnez Publier des étiquettes.**
 1. Dans le **volet Choisir les étiquettes à** publier, sélectionnez Choisir les **étiquettes à publier.**
-1. Dans le **volet Choisir des étiquettes,** **sélectionnez Ajouter** et sélectionnez les quatre étiquettes.
+1. Dans le volet Choisir **des étiquettes,** **sélectionnez Ajouter** et sélectionnez les quatre étiquettes.
 1. **Sélectionnez** Ajouter, puis **Terminé**.
 1. Dans le **volet Choisir les étiquettes à** publier, sélectionnez **Suivant.**
 1. Dans le **volet Choisir des** emplacements, sélectionnez **Suivant.**
@@ -78,7 +80,7 @@ Dans cette phase, vous découvrez le comportement des étiquettes de rétention 
 
 Tout d’abord, créez un site d’équipe SharePoint Online de niveau sensible :
   
-1. À l’aide d’une instance privée de votre navigateur, connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de votre compte d’administrateur global.
+1. À l’aide d’une instance privée de votre navigateur, connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l’aide de votre compte d’administrateur global.
 1. Dans la liste des vignettes, **sélectionnez SharePoint**.
 1. Sous le nouvel **onglet SharePoint** dans votre navigateur, sélectionnez Créer **un site.**
 1. Sur la page **Créer un site**, sélectionnez **Site d’équipe**.

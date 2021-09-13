@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Dans cet article, découvrez comment limiter SharePoint sites à un emplacement géographique spécifié dans un environnement multigéogé.
-ms.openlocfilehash: 1a10ebe8042f2385fa1fa6d3ff3329bb7c066c424b0cb4135f0a29a186f23dc2
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 74255db19b2ecf9b333d33208c63da260b2bd747
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904622"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205331"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Circonscrire le contenu des sites 
 

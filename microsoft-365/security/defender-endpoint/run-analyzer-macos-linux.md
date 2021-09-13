@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: cc642d06d6f2cb253140e902114f4c2840a58036
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207396"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
@@ -34,19 +34,19 @@ ms.locfileid: "58573006"
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>Exécution de l’analyseur via le scénario d’interface graphique graphique
 
-1. Téléchargez [l’outil Analyseur client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
+1. Téléchargez [l’outil Analyseur de client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
    > [!NOTE]
    > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
 
-2. Extrayez le contenu du XMDEClientAnalyzer.zip sur l’ordinateur.
+2. Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
 
 3. Ouvrez une session terminal, modifiez le répertoire vers l’emplacement extrait et exécutez :
 
    `./mde_support_tool.sh -d`
 
    > [!NOTE]
-   > Sur Linux, si le script n’est pas autorisé à s’exécuter, vous devez d’abord exécuter :
+   > Sur Linux, si le script ne peut pas s’exécuter, vous devez d’abord exécuter :
    >
    > `chmod a+x mde_support_tool.sh`
 
@@ -59,7 +59,7 @@ ms.locfileid: "58573006"
 3. Exécutez `./mde_support_tool.sh -d` cette ligne pour générer le fichier d’archivage des résultats.
 
 > [!NOTE]
-> Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaie de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaiera de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
 >
 > En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
 
@@ -89,11 +89,11 @@ Aide supplémentaire sur la syntaxe :
 
 - report.html
 
-  Description : fichier de sortie HTML principal qui contiendra les résultats et les instructions que le script de l’analyseur peut produire sur l’ordinateur.
+  Description : fichier de sortie HTML principal qui contiendra les résultats et les instructions que le script de l’analyseur peut exécuter sur l’ordinateur.
 
 - mde_diagnostic.zip
 
-  Description : même sortie de diagnostic qui est générée lors de l’exécution de *diagnostic mdatp créer* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  Description : même sortie de diagnostic qui est générée lors de l’exécution du *diagnostic mdatp créer* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
   ou
 

@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203753"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
@@ -40,7 +40,7 @@ Microsoft 365 Defender fournit non seulement des fonctionnalités de détection 
 
 Microsoft 365 Defender propose plusieurs actions de correction que les analystes peuvent lancer manuellement. Les actions sont séparées en deux catégories : Actions sur les appareils et Actions sur les fichiers. Certaines actions peuvent être utilisées pour arrêter immédiatement la menace, tandis que d’autres actions aident à une analyse plus approfondie de l’investigation.
 
-## <a name="actions-on-devices"></a>Actions sur les appareils
+## <a name="actions-on-devices"></a>Actions sur des appareils
 
 - **Isoler** l’appareil : cette activité bloque immédiatement tout le trafic réseau (internet et interne) pour réduire la propagation des programmes malveillants et permettre aux analystes de poursuivre l’analyse sans qu’un acteur malveillant puisse poursuivre une attaque. La seule connexion autorisée est le cloud du service Microsoft Defender pour l’identité afin que Microsoft Defender pour l’identité puisse continuer à surveiller l’appareil. 
 - **Restreindre l’exécution** d’une application : pour empêcher l’exécution d’une application, une stratégie d’intégrité du code est appliquée qui permet uniquement l’exécution des fichiers s’ils sont signés par un certificat émis par Microsoft. Cette méthode de restriction permet d’empêcher une personne malveillante de contrôler des appareils compromis et d’effectuer d’autres activités malveillantes.

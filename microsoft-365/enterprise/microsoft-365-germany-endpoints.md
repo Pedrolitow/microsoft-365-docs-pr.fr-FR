@@ -21,11 +21,11 @@ ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Dans cet article, vous trouverez des points de terminaison accessibles pour les clients qui utilisent Office 365 en Allemagne.
 hideEdit: true
 ms.openlocfilehash: f022c82c41aaeeed73af13572234e7826d878158
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205460"
 ---
 # <a name="office-365-germany-endpoints"></a>Points de terminaison Office 365 Germany
 

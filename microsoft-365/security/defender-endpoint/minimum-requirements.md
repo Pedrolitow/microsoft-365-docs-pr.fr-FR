@@ -17,17 +17,17 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 2a0dfd562416ba4501104f9c015bb60d75140d28
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203874"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -51,7 +51,7 @@ Microsoft Defender pour le point de terminaison nécessite l’une des offres de
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Sécurité
 - Sécurité Microsoft 365 A5
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
@@ -66,7 +66,7 @@ Microsoft Defender pour le point de terminaison pour les serveurs nécessite l�
 > [!NOTE]
 > Les clients peuvent acquérir des licences serveur (une par environnement de système d’exploitation de serveur couvert) pour Microsoft Defender pour Endpoint for Servers s’ils ont un minimum combiné de 50 licences pour une ou plusieurs des licences utilisateur suivantes :
 >
-> * Microsoft Defender pour point de terminaison
+> * Microsoft Defender pour point de terminaison
 > * Windows E5/A5
 > * Microsoft 365 E5/A5
 > * Microsoft 365 E5/A5
@@ -96,10 +96,10 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 7 SP1 Pro ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
 - Windows 8.1 Entreprise
 - Windows 8.1 Professionnel
-- Windows 10 Entreprise
+- Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
-- Windows 10 Éducation
-- Windows 10 Professionnel
+- Windows 10 Éducation
+- Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
 - Windows serveur
   - Windows Server 2008 R2 SP1
@@ -227,7 +227,7 @@ Si vous exécutez Antivirus Microsoft Defender en tant que produit anti-programm
 Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, [voir s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Configurer Microsoft Defender pour le déploiement de point de terminaison](production-deployment.md)
 - [Intégration des appareils](onboard-configure.md)

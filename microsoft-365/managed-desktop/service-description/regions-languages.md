@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c5fc256049d2b10a450b9e941bedee95c00c5883962cbc6a1e08db12e312399b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 99f44398bc95958ca890ddcd4203b50ff95034b4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53818982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204980"
 ---
 # <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft Manged Desktop régions pris en charge
 

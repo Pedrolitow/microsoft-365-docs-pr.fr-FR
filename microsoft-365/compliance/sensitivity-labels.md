@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff26c2f6f219db066b4be00e6d97e8d4e4e4babc
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3366f90273536a1fc1fede52159b8c1199ad9324
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205940"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -180,12 +180,15 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
 - **Sélectionnez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées vers un utilisateur ou un groupe de sécurité à extension de courrier, à un groupe de distribution ou à un groupe Microsoft 365 (pouvant avoir [l’appartenance dynamique](/azure/active-directory/users-groups-roles/groups-create-rule)) dans Azure AD.
 
-- **Spécifiez une étiquette par défaut** pour les nouveaux documents, les e-mails sans étiquette et les nouveaux conteneurs (lorsque vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)) et maintenant [une étiquette par défaut pour le contenu Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Vous pouvez spécifier la même étiquette pour les quatre types d’éléments ou des étiquettes différentes. Quand vous spécifiez une étiquette par défaut pour des documents, le client d'étiquetage unifié Azure Information Protection applique également cette étiquette aux documents existants non étiquetés. Les utilisateurs peuvent modifier l'étiquette de sensibilité appliquée par défaut s'ils estiment qu'elle n'est pas la bonne.
+- **Spécifiez une étiquette par défaut** pour les documents et e-mails sans étiquette, les nouveaux conteneurs (lorsque vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)), et maintenant une étiquette par défaut pour le[contenu Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Vous pouvez spécifier la même étiquette pour les quatre types d’éléments ou des étiquettes différentes. Les utilisateurs peuvent modifier l’étiquette de sensibilité par défaut appliquée pour mieux correspondre à la sensibilité de leur contenu ou conteneur.
+    
+    > [!NOTE]
+    > Déploiement pour les applications Office qui utilisent des étiquettes intégrées : ce paramètre prend désormais en charge les documents existants lorsqu’ils sont ouverts par les utilisateurs, ainsi que les nouveaux documents. Ce changement de comportement assure la parité avec le client d’étiquetage unifié Azure Information Protection. Pour plus d’informations sur le déploiement par application et les versions minimales, consultez le [tableau des fonctionnalités](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) pour Word, Excel et PowerPoint.
+    
+    Utilisez une étiquette par défaut pour définir des paramètres de protection de base à appliquer à votre contenu. Il faut noter que, sans formation des utilisateurs ou autres contrôles, ce paramètre peut également entraîner un étiquetage incorrect. Il est déconseillé de sélectionner une étiquette qui applique un chiffrement comme étiquette par défaut pour les documents. Par exemple, de nombreuses organisations doivent envoyer et partager des documents avec des utilisateurs externes qui ne possèdent peut-être pas des applications qui prennent en charge le chiffrement ou qui n’utilisent pas un compte pouvant être autorisé. Pour plus d’informations sur ce scénario, consultez [Partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
     
     > [!IMPORTANT]
     > Lorsque vous avez des [sous-étiquettes](#sublabels-grouping-labels), veillez à ne pas configurer l’étiquette parente comme étiquette par défaut.
-    
-    Utilisez une étiquette par défaut pour définir des paramètres de protection de base à appliquer à votre contenu. Il faut noter que, sans formation des utilisateurs ou autres contrôles, ce paramètre peut également entraîner un étiquetage incorrect. Il est déconseillé de sélectionner une étiquette qui applique un chiffrement comme étiquette par défaut pour les documents. Par exemple, de nombreuses organisations doivent envoyer et partager des documents avec des utilisateurs externes qui ne possèdent peut-être pas des applications qui prennent en charge le chiffrement ou qui n’utilisent pas un compte pouvant être autorisé. Pour plus d’informations sur ce scénario, consultez [Partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
 - **Demander une justification pour une modification d'étiquette.** Si un utilisateur tente de supprimer une étiquette ou de la remplacer par une étiquette ayant un rang inférieur, vous pouvez exiger que l'utilisateur justifie cette action. Par exemple, un utilisateur ouvre un document étiqueté Confidentiel (rang 3) et remplace cette étiquette par avec une autre nommée Public (rang 1). Pour les applications Office, cette invite de justification est déclenchée une fois par session d’application lorsque vous utilisez l’étiquetage intégré et par fichier lorsque vous utilisez le client d’étiquetage unifié Azure Information Protection. Les administrateurs peuvent lire le motif de justification ainsi que le changement d’étiquette dans [explorateur des activités](data-classification-activity-explorer.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Configurer des fonctionnalités d’examen et de réponse automatisées dans Microsoft 365 Defender
+title: Configurer des fonctionnalités d’enquête et de réponse automatisées dans Microsoft 365 Defender
 description: Configurer l’examen et la réponse automatisés avec auto-Microsoft 365 Defender
 search.appverid: MET150
 ms.author: josephd
@@ -17,17 +17,17 @@ ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
 ms.openlocfilehash: 84107a54c47c3bfe68cd7740e1e06ff40b11957a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204491"
 ---
-# <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’examen et de réponse automatisées dans Microsoft 365 Defender
+# <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’enquête et de réponse automatisées dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender inclut de puissantes fonctionnalités [d’investigation](m365d-autoir.md) et de réponse automatisées qui peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité. Grâce [à une auto-ressource,](m365d-autoir.md#how-automated-investigation-and-self-healing-works)ces fonctionnalités imitent les étapes qu’un analyste de sécurité prend pour examiner les menaces et y répondre, uniquement plus rapidement et avec plus de possibilité d’échelle.
+Microsoft 365 Defender inclut de puissantes fonctionnalités [d’investigation](m365d-autoir.md) et de réponse automatisées qui peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité. Grâce [à une auto-ressource,](m365d-autoir.md#how-automated-investigation-and-self-healing-works)ces fonctionnalités imitent les étapes qu’un analyste de sécurité prend pour examiner les menaces et y répondre, uniquement plus rapidement et avec une plus grande capacité d’échelle.
 
 Cet article explique comment configurer des enquêtes et des réponses automatisées Microsoft 365 Defender les étapes suivantes :
 
@@ -50,7 +50,7 @@ Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et
 |Configuration requise pour le réseau|<ul><li>[Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) activé</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configuré</li><li>[Intégration de Microsoft Defender pour l’identité](/cloud-app-security/mdi-integration)</li></ul>|
 |Configuration requise pour ordinateur Windows|<ul><li>Windows 10, version 1709 ou ultérieure installée (voir Windows 10 [de publication)](/windows/release-information/)</li><li>Les services de protection contre les menaces suivants sont configurés :<ul><li>[Microsoft Defender pour point de terminaison](../defender-endpoint/configure-endpoints.md)</li><li>[Antivirus Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection du contenu des e-mails et des Office de messagerie|[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configuré|
-|Autorisations|Pour configurer des fonctionnalités d’investigation et de réponse automatisées, vous devez avoir le rôle Administrateur général ou Administrateur de la sécurité affecté dans Azure Active Directory ( ) ou dans le <https://portal.azure.com> Centre d’administration Microsoft 365 ( <https://admin.microsoft.com> ). <p> Pour obtenir les autorisations nécessaires pour travailler avec des fonctionnalités d’examen et de réponse automatisées, telles que la révision, l’approbation ou le rejet des actions en attente, voir [Autorisations requises](m365d-action-center.md#required-permissions-for-action-center-tasks)pour les tâches du centre de gestion des actions.|
+|Autorisations|Pour configurer des fonctionnalités d’investigation et de réponse automatisées, vous devez avoir le rôle Administrateur général ou Administrateur de la sécurité affecté dans Azure Active Directory ( ) ou dans le <https://portal.azure.com> Centre d'administration Microsoft 365 ( <https://admin.microsoft.com> ). <p> Pour obtenir les autorisations nécessaires pour travailler avec des fonctionnalités d’examen et de réponse automatisées, telles que la révision, l’approbation ou le rejet des actions en attente, voir [Autorisations requises](m365d-action-center.md#required-permissions-for-action-center-tasks)pour les tâches du centre de gestion des actions.|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Examiner ou modifier le niveau d’automatisation pour les groupes d’appareils
@@ -101,9 +101,9 @@ Les paramètres de sécurité Office 365 protéger le courrier électronique et 
 3. Dans le volet de navigation, choisissez **Paramètres**  >  **Microsoft 365 Defender**. Confirmez que Microsoft 365 Defender est allumé.
 
 > [!TIP]
-> Vous avez besoin d’aide ? Voir [Activer Microsoft 365 Defender](m365d-enable.md).
+> Besoin d’aide ? Voir [Activer Microsoft 365 Defender](m365d-enable.md).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Actions de correction dans Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visiter le Centre de notifications](m365d-action-center.md)

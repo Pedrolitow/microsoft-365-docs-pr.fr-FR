@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
 ms.openlocfilehash: 2851fd356efe4405d4355547f364f4a147cb26d0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204131"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 

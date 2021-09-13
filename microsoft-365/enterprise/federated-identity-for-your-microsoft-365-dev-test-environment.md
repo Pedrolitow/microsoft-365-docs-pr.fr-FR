@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de test Microsoft 365.'
 ms.openlocfilehash: 1cca1b0b5f7b345d7d9ed5f5cd23f9b742542529
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207580"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
@@ -269,7 +269,7 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
 
 13. Dans la page **Résultats,** sélectionnez **Fermer.**
     
-14. Sélectionnez **Démarrer,** sélectionnez l’icône d’alimentation, **redémarrez,** puis **continuez.**
+14. Sélectionnez **Démarrer,** sélectionnez l’icône d’alimentation, **sélectionnez Redémarrer,** puis **continuez.**
     
 À partir du [portail Azure](https://portal.azure.com), connectez-vous à PROXY1 avec les informations d’identification du compte CORP\\User1.
   
@@ -277,7 +277,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
   
 1. Sélectionnez **Démarrer,** **entrezmmc.exe,** puis appuyez sur **Entrée.**
     
-2. Sélectionnez **fichier > ajouter/supprimer un logiciel en snap-in**.
+2. Select **File > Add/Remove Snap-in**.
     
 3. Dans **Ajouter ou supprimer des snap-ins,** double-cliquez sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
     
@@ -297,7 +297,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
     
 11. Dans la page **Fin de l’exécution,** sélectionnez **Terminer.**
     
-12. Dans la page **Magasin de certificats,** sélectionnez **Suivant**.
+12. Dans la page **Magasin de certificats,** sélectionnez **Suivant.**
     
 13. Lorsque vous y invitez, **sélectionnez OK**.
     
@@ -355,7 +355,7 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Microso
     
 3. Dans la page **Tâches supplémentaires,** sélectionnez Modifier la **connectez-vous** de l’utilisateur, puis sélectionnez **Suivant**.
     
-4. Dans la page **Connecter azure AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
+4. Dans la page Connecter azure **AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
     
 5. Dans la page De la page De la **connectez-vous** de l’utilisateur, sélectionnez Fédération avec **AD FS,** puis sélectionnez **Suivant**.
     

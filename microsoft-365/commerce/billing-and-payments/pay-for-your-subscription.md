@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 8298cbda4d0f9d038e6142ac7bbb858c603704501974fdae8254433d8d4745e9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53802921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208084"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -65,7 +65,7 @@ Si une vérification du crédit est nécessaire, vous en êtes informé lors de 
 >
 > Si vous le préférez, vous pouvez régler par virement électronique entre les deux comptes. L'Agence et le numéro de compte figure au bas de votre facture. Vous devez entrer votre numéro de facture dans le champ identification du Virement.
 
-Si vous payez votre abonnement par facture, vous recevrez un e-mail vous avertissant de la disponibilité de votre relevé de facturation. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez choisir l’option [Recevoir une copie de votre relevé de facturation par e-mail](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Votre relevé de facturation inclut des détails sur vos modes de paiement ainsi que la destination. Si vous entrez un numéro de bon de commande lors de l’achat d’un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
+Si vous payez votre abonnement par facture, vous recevrez un courrier vous avertissant de la disponibilité de votre relevé de facturation. Ce courrier ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez également choisir de [Envoyer une copie de votre relevé de facturation par courrier électronique](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Votre relevé de facturation inclut des détails sur vos options de paiement. Si vous entrez une référence de commande fournisseur lorsque vous achetez un abonnement, cette référence s'affichera sur votre relevé de facturation. Pour plus d'informations sur l'accès à vos relevés de facturation, voir [Consulter votre facture pour Office 365 pour les entreprises](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>Que se passe-t-il s'il me reste un solde impayé ?
 

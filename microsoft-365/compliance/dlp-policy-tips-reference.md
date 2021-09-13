@@ -20,11 +20,11 @@ recommendations: false
 description: Découvrez comment ajouter un conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu en conflit avec une stratégie DLP.
 ms.custom: seo-marvel-apr2021
 ms.openlocfilehash: 7c1e61378e4da34c964c4fcdaf87afc25e88b4d0
-ms.sourcegitcommit: 59bda7cfd92ef1b0e97858da51a776ec668bcfe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58884707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207996"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Référence des conseils de stratégie de prévention contre la perte de données
 
