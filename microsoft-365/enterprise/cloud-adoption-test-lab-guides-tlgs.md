@@ -21,11 +21,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Utilisez ces guides de laboratoire de test pour configurer des environnements de démonstration, de preuve de concept ou de développement/test pour Microsoft 365.'
 ms.openlocfilehash: a7dc8c4e731b03733b200b8750cc6157eb44a9c2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183447"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Test Microsoft 365 avec les guides de laboratoire de test (TLG)
 
@@ -51,7 +51,7 @@ Utilisez les articles suivants pour créer votre environnement Microsoft 365 dev
     
 Pour les guides de laboratoire de test supplémentaires qui s’appliquent Office 365 et Microsoft 365, voir les [guides de laboratoire de test.](m365-enterprise-test-lab-guides.md)  
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   

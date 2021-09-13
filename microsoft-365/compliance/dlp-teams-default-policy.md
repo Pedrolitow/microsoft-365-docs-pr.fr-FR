@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Découvrez la stratégie de protection contre la perte de données par défaut dans Microsoft Teams
 ms.openlocfilehash: 8f021031bd1dc3672a7aa7123ce01d4c6536fe77
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183527"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préviersion)
 

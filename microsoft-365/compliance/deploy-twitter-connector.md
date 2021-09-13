@@ -16,11 +16,11 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
 ms.openlocfilehash: 52f5e426aa2f5fe90d067879fcf39f97d435a2a1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564145"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183711"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Déployer un connecteur pour archiver des données Twitter
 
@@ -40,7 +40,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Créez une inscription d’application.](../media/TCimage03.png)
 
-4. Inscrivez l’application. Sous **URI de redirection (facultatif),** sélectionnez **Web** dans la liste de listes des types d’application, puis tapez dans la zone de `https://portal.azure.com` l’URI.
+4. Inscrivez l’application. Sous **URI de redirection (facultatif),** sélectionnez **Web** dans la liste rouge type d’application, puis tapez dans la zone de `https://portal.azure.com` l’URI.
 
    ![Tapez https://portal.azure.com l’URI de redirection.](../media/TCimage04.png)
 
@@ -61,7 +61,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
    ![Copiez et enregistrez la secret.](../media/TCimage09.png)
 
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur de GitHub votre compte Azure
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>Étape 2 : Déployer le service web connecteur à partir de GitHub votre compte Azure
 
 1. Go to [this GitHub site](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet) and click Deploy to **Azure**.
 
@@ -114,7 +114,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Configurez les autorisations.](../media/TCimage30.png)
 
-7. Après avoir enregistrez les paramètres d’autorisation, cliquez sur l’onglet **Détails** de l’application, puis cliquez sur **Modifier > modifier les détails.**
+7. Après avoir enregistrer les paramètres d’autorisation, cliquez sur l’onglet **Détails** de l’application, puis cliquez sur **Modifier > modifier les détails.**
 
    ![Modifiez les détails de l’application.](../media/TCimage31.png)
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Préparez, puis déployez l’extension de la conformité Microsoft.
-ms.openlocfilehash: ad3fa4ae5cef1e5d4a49cbe10c36fce89252127b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 830f068869353949927055b8859ba87c12647bcb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564033"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183647"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
@@ -130,7 +130,7 @@ Utilisez cette méthode de configuration pour les déploiements à l'échelle de
 4. Accédez à l’emplacement du script créé lorsque vous y avez été invité.
 
 5. Sélectionnez les paramètres suivants :
-    1. Exécuter ce script à l’aide des informations d’identification connectées : OUI
+    1. Exécuter ce script à l’aide des informations d’identification connectées : NON
     1. Appliquer la vérification de la signature de script : NON
     1. Exécuter un script dans l’hôte PowerShell 64 bits : OUI
 

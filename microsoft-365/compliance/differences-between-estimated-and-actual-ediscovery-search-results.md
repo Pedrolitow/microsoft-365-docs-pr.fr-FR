@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier dans les recherches qui s’exécutent avec les outils eDiscovery Office 365.
 ms.openlocfilehash: ae6e8d21ceb448f2402b14a02d5e08a3bf331548
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570580"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183703"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Différences entre les résultats de recherche eDiscovery estimés et réels
 
@@ -37,7 +37,7 @@ Lorsque vous exécutez une recherche de découverte électronique, l’outil que
   
 ![Estimation des résultats affichés sur la page volante de recherche.](../media/EstimatedSearchResults1.png)
   
-Il s’agit de la même estimation de la taille totale et du nombre d’éléments affichés dans l’outil d’exportation eDiscovery lorsque vous exportez les résultats vers un ordinateur local et dans le rapport de synthèse de l’exportation qui est téléchargé avec les résultats de la recherche.
+Il s’agit de la même estimation de la taille totale et du nombre d’éléments affichés dans l’outil d’exportation de découverte électronique lorsque vous exportez les résultats vers un ordinateur local et dans le rapport de synthèse d’exportation téléchargé avec les résultats de la recherche.
   
 **Résultats estimés dans l’outil d’exportation eDiscovery**
 

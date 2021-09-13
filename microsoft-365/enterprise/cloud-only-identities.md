@@ -27,11 +27,11 @@ search.appverid:
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment créer des utilisateurs et des groupes lorsque votre abonnement Microsoft 365 utilise l’identité cloud uniquement.
 ms.openlocfilehash: 9b58b831f2a338e5fb79726b8de66c11bba96d0e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570760"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183439"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identité cloud uniquement
 

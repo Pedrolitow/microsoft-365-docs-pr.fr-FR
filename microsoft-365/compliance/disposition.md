@@ -12,16 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: b949b712721acc7921d3c6ac25a07c14338d7609
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a905847da3a6c28d8d24d13adb193423b57d83d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183687"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -57,7 +58,7 @@ En outre :
 
 - Dans la préversion : par défaut, chaque personne accédant à la page **Destruction** voit uniquement les éléments à réviser qui lui sont affectés. Pour qu’un administrateur de gestion des enregistrements puissent afficher tous les éléments affectés à l’ensemble des utilisateurs et toutes les étiquettes de rétention qui sont configurées pour la révision avant destruction : naviguez vers **Paramètres de gestion des enregistrements** > **Général** > **Groupe de sécurité du gestionnaire des enregistrements** pour activer ensuite un groupe de sécurité à extension messagerie qui contient les comptes d’administrateur.
     
-    Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un groupe de sécurité à extension messagerie, utilisez le lien vers le Centre d’administration Microsoft 365 pour créer le groupe. 
+    Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un nouveau groupe de sécurité compatible avec la messagerie, utilisez le lien vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration de Microsoft 365</a> pour créer le nouveau groupe. 
     
     > [!IMPORTANT]
     > Après avoir activé le groupe, vous ne pouvez pas le modifier dans le Centre de conformité. Consultez la section suivante pour savoir comment activer un autre groupe à l’aide de PowerShell.

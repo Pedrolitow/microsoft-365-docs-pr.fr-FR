@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 173135d9cc1ecf45ad5c0485b2bab4bb39b88a5e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183311"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer au service Microsoft Defender pour point de terminaison
 
@@ -92,7 +92,7 @@ Les outils de l’exemple de déploiement sont les :
 - Configuration de la protection nouvelle génération
 - Configuration de la réduction de la surface d’attaque
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Intégration à l'aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)

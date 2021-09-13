@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment définir et gérer des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 75483989e18ab519aae7d8f5a0cd257b31c6aad33981b1d0ab6b7acda4293585
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53796121"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183576"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurer et afficher des alertes pour les stratégies de protection contre la perte de données
 
-Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le nouveau tableau de bord de gestion des alertes DLP dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
+Les stratégies de protection contre la perte de données (DLP) peuvent prendre des mesures de protection pour empêcher le partage involontaire d’éléments sensibles. Lorsqu’une action est prise sur un élément sensible, vous pouvez être averti en configurant des alertes pour DLP. Cet article vous montre comment définir des stratégies d’alerte enrichies liées à vos stratégies de protection contre la perte de données (DLP). Vous verrez comment utiliser le nouveau tableau de bord de gestion des alertes DLP dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) pour afficher les alertes, les événements et les métadonnées associées pour les violations de stratégie DLP.
 
 <!-- LEFT OFF HERE-->
 
@@ -37,7 +37,7 @@ Les stratégies de protection contre la perte de données (DLP) peuvent prendre 
 
 Les fonctionnalités suivantes en font partie :
 
--   **Tableau de bord de** gestion des alertes DLP : dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)ce tableau de bord affiche les alertes pour les stratégies DLP appliquées sur les charges de travail suivantes :
+-   **Tableau de bord de** gestion des alertes DLP : dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)ce tableau de bord affiche des alertes pour les stratégies DLP qui sont appliquées sur les charges de travail suivantes :
 
     -   Exchange
     -   SharePoint
@@ -101,7 +101,7 @@ Si vous êtes éligible pour les options de [configuration](#licensing-for-alert
 
 Pour travailler avec le tableau de bord de gestion des alertes DLP :
 
-1.  Dans la [Centre de conformité Microsoft 365](https://www.compliance.microsoft.com), allez à **Protection contre la perte de données.**
+1.  Dans la [Centre de conformité Microsoft 365,](https://www.compliance.microsoft.com)allez à **Protection contre la perte de données.**
 
 2.  Sélectionnez **l’onglet Alertes** pour afficher le tableau de bord des alertes DLP.
 
@@ -115,7 +115,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     
     | Catégorie          | Nom de la propriété                 | Description                                                                | Types d’événements applicables                   |
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
-    |*Détails de l'événement*||
+    |*Détails de l’événement*||
     |      | ID                            | ID unique associé à l’événement                                        | Tous les événements                               |
     |                   | Emplacement                      | Charge de travail où l’événement a été détecté                                      | Tous les événements                               |
     |                   | Heure de l’activité              | Heure de l’activité de l’utilisateur à l’origine de la violation DLP                    | Tous les événements                               |

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 0390163d1128bcb83fad0ad91c94c1a02d738a4e
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.openlocfilehash: f8d3e4bc1b410ddcf0472f408864de1f34dad722
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183479"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adoption SharePoint Syntex Microsoft : commencer
 
@@ -29,7 +29,7 @@ Pensez aux services de contenu intelligents disponibles dans SharePoint Syntex c
 - **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et simplifiez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement du contenu.](form-processing-overview.md)
 - **Conformité du contenu :** Contrôler et gérer le contenu pour améliorer la sécurité et la gouvernance avec l’intégration Protection des données Microsoft.
 
-Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification du contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
+Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification du contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et la cas d’utilisation.
 
 | Traitement des formulaires | Compréhension de document |
 |:-------|:-------|
@@ -68,7 +68,7 @@ Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’util
 
 ## <a name="identify-roles--responsibilities"></a>Identifier les rôles & responsabilités
 
-Déterminer qui dans votre organisation créera et gérera les modèles ? Les rôles suivants peuvent être impliqués :
+Déterminez qui dans votre organisation créera et gérera les modèles. Les rôles suivants peuvent être impliqués.
 
 | Administrateur/SharePoint d’informations | Administrateur Power Platform | Responsables d’informations | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
@@ -146,5 +146,6 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Scénarios et cas d’utilisation pour SharePoint Syntex](adoption-scenarios.md) 
- [Gérer les contrats à l’aide d’Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
+[Scénarios et cas d’usage pour SharePoint Syntex](adoption-scenarios.md)
+
+[Gérer des contrats en utilisant la solution Microsoft 365](solution-manage-contracts-in-microsoft-365.md)

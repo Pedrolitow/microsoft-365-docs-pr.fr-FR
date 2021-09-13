@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 604a7d98b25d7b5b858db87c8b8f467ffb8edb83
-ms.sourcegitcommit: 251551539b1532fdac7b7e3dd2733a75c62e8a54
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58360106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183296"
 ---
 #  <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’état du capteur à l’aide de Microsoft Defender pour Endpoint Client Analyzer
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur la Exchange fichiers sécurisés, voir Comment ut
 
 Pour plus d’informations sur notre déclaration de confidentialité, voir [déclaration de confidentialité Microsoft.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 -   Avant d’utiliser l’analyseur, nous vous recommandons de vous assurer que la configuration de votre proxy ou pare-feu autorise l’accès aux URL du service Microsoft Defender pour les points [de terminaison.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 

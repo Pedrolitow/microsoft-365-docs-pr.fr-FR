@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 76f0478167c020d470fec32f2f2020a9263b0b44
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247203"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183239"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -81,7 +81,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `UserLevelAction` | string | Action prise sur le courrier électronique en réponse à des correspondances à une stratégie de boîte aux lettres définie par le destinataire |
 | `UserLevelPolicy` | string | Stratégie de boîte aux lettres de l’utilisateur final qui a déclenché l’action sur le courrier électronique |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
-| `AuthenticationDetails` | string | Liste des verdicts d’échec ou de passage par protocoles d’authentification de messagerie tels que DMARC, DKIM, SPF ou une combinaison de plusieurs types d’authentification (CompAuth) |
+| `AuthenticationDetails` | string | Liste des verdicts de passe ou d’échec par protocoles d’authentification de messagerie tels que DMARC, DKIM, SPF ou une combinaison de plusieurs types d’authentification (CompAuth) |
 
 ## <a name="related-topics"></a>Rubriques connexes
 

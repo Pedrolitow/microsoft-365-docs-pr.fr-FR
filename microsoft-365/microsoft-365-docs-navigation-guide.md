@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 navigation dans la documentation
+title: Microsoft 365 conseils de navigation dans la documentation
 description: 'Astuces et astuces pour naviguer dans la documentation technique Microsoft 365 : explique des éléments tels que la page hub, la table des matières, l’en-tête, ainsi que l’utilisation des chemins de navigation et l’utilisation du filtre de version.'
 ms.date: 08/12/2020
 ms.prod: sql
@@ -11,11 +11,11 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 ms.openlocfilehash: 23d8750b05781df858328b581056a9502b4f685e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209180"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navigation de documents
 
@@ -63,16 +63,16 @@ Le volet de navigation de droite vous permet d’accéder rapidement aux section
 
 ## <a name="submit-docs-feedback"></a>Envoyer des commentaires sur les documents
 
-Si vous trouvez un problème au sein d’un article, vous pouvez envoyer des commentaires à l’équipe de contenu SQL pour cet article en faisant défiler vers le bas de la page et en sélectionnant commentaires sur le **contenu.**
+Si vous trouvez un problème dans un article, vous pouvez envoyer des commentaires à l’équipe de contenu SQL pour cet article en faisant défiler vers le bas de la page et en sélectionnant commentaires sur le **contenu.**
 
 ![Git Émettre des commentaires sur le contenu.](media/m365-article-feedback.png)
 
 ## <a name="contribute-to-microsoft-365-documentation"></a>Contribuer à la Microsoft 365 documentation
 
-Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même ? Si vous le faites, non seulement notre documentation sera améliorée, mais vous serez également crédité en tant que collaborateur de la page. Pour commencer, voir :
+Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même ? Si vous le faites, non seulement notre documentation s’améliorera, mais vous serez également crédité en tant que collaborateur de la page. Pour commencer, voir :
 
 - [Guide de collaborateur Microsoft Docs](/contribute/)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - Mise en place de la [Microsoft 365 documentation technique.](index.yml)

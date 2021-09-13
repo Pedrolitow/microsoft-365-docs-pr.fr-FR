@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 Skype Entreprise Server pour importer et archiver des Skype Entreprise Server dans Microsoft 365.
 ms.openlocfilehash: 602f0e0c2472bd3cb2d5b0040c26ea5b3b289da5
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183783"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>Configurer un connecteur pour archiver les Skype Entreprise Server données
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour Skype Entreprise Server données de 17 à 4.](../media/SkypeServerDataParserConnectorWorkflow.png)
 
-1. Votre organisation travaille avec 17a-4 pour configurer l’analyseur de Skype Entreprise Server données.
+1. Votre organisation fonctionne avec 17a-4 pour configurer l’analyseur de Skype Entreprise Server données.
 
 2. Régulièrement, les Skype Entreprise Server sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
@@ -77,6 +77,6 @@ Après avoir créé un Skype Entreprise Server DataParser, vous pouvez afficher 
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

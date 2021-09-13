@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Intégrez Microsoft 365 Azure AD si vous souhaitez synchroniser le mot de passe ou l' sign-on unique avec votre environnement local.
 ms.openlocfilehash: de971ee857e955fc4ddb8a059da23974965e81e3
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58747594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183463"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration d’Azure avec Microsoft 365
 
@@ -37,7 +37,7 @@ Microsoft 365 utilise Azure Active Directory (Azure AD) pour gérer les identit�
   
 Azure AD offre également d’autres fonctionnalités, telles que la gestion des applications intégrées, que vous pouvez utiliser pour étendre et personnaliser Microsoft 365 abonnements.
   
-Vous pouvez utiliser les conseillers de déploiement Azure AD pour une configuration guidée dans le Centre d’administration Microsoft 365 (vous devez être Microsoft 365) :
+Vous pouvez utiliser les conseillers de déploiement Azure AD pour une configuration guidée dans le Centre d'administration Microsoft 365 (vous devez être Microsoft 365) :
 
  - [Azure AD Connecter advisor](https://aka.ms/aadconnectpwsync)
  - [Conseiller de déploiement AD FS](https://aka.ms/adfsguidance)
@@ -45,7 +45,7 @@ Vous pouvez utiliser les conseillers de déploiement Azure AD pour une configura
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Éditions Azure AD et gestion Microsoft 365 identités
 
-Si vous avez un abonnement payant Microsoft 365, vous avez également un abonnement Azure AD gratuit. Vous pouvez utiliser Azure AD pour créer et gérer des comptes d’utilisateur et de groupe. Pour activer cet abonnement, vous devez effectuer une inscription à une seule fois. Ensuite, vous pouvez accéder à Azure AD à partir de votre Centre d’administration Microsoft 365. 
+Si vous avez un abonnement payant Microsoft 365, vous avez également un abonnement Azure AD gratuit. Vous pouvez utiliser Azure AD pour créer et gérer des comptes d’utilisateur et de groupe. Pour activer cet abonnement, vous devez effectuer une inscription à une seule fois. Ensuite, vous pouvez accéder à Azure AD à partir de votre Centre d'administration Microsoft 365. 
 
 Pour obtenir des instructions pour inscrire votre abonnement Azure AD gratuit, consultez votre abonnement [Azure AD gratuit.](../compliance/use-your-free-azure-ad-subscription-in-office-365.md) N’allez pas directement à azure.microsoft.com pour vous inscrire ou vous vous retrouverez avec un abonnement d’essai ou payant à Microsoft Azure distinct de votre abonnement Azure AD gratuit avec Microsoft 365. 
   

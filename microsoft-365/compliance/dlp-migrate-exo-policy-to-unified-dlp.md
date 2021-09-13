@@ -1,5 +1,5 @@
 ---
-title: Migrer Exchange Online stratégies de protection contre la perte de données vers le Centre de conformité (aperçu)
+title: Migrer les politiques de prévention des pertes de données d'Exchange Online vers le centre de conformité (aperçu)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 description: Découvrez comment planifier et migrer vos stratégies Exchange protection contre la perte de données en ligne vers Microsoft 365 DLP.
 ms.openlocfilehash: 1bc3281e66d4a1ae08fc20630e8b6d86fcbb77e1
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58865060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183552"
 ---
-# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center-preview"></a>Migrer Exchange Online stratégies de protection contre la perte de données vers le Centre de conformité (aperçu)
+# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center-preview"></a>Migrer les politiques de prévention des pertes de données d'Exchange Online vers le centre de conformité (aperçu)
 
 Exchange Online stratégies de protection contre la perte de données [(DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) sont en cours d’precaté. [Des fonctionnalités DLP](dlp-learn-about-dlp.md)beaucoup plus riches, notamment Exchange Online DLP, sont proposées dans le centre [Microsoft 365 conformité.](https://compliance.microsoft.com/datalossprevention?viewid=policies) Vous pouvez utiliser l’Assistant Migration des stratégies DLP pour vous aider à faire migrer vos stratégies DLP Exchange Online vers le centre de conformité où vous les gérerez.
 
@@ -105,7 +105,7 @@ Une fois que vous avez évalué toutes vos stratégies DLP Exchange et du centre
 > [!IMPORTANT]
 > Toutes les conditions et actions de stratégie DLP Exchange qui ne sont pas prises en charge par d’autres emplacements DLP, tels que périphériques, SharePoint, OneDrive, sur site, MCAS ou les messages de conversation et de canal Teams seront supprimés de la stratégie supplémentaire. En outre, un travail préalable doit être effectué pour les autres emplacements. Voir :
 >- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
->- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+>- [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 >- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 >- [En savoir plus sur le scanner local de prévention des pertes de données Microsoft 365](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner)
 >- [Prise en main du scanneur local de protection contre la perte de données(préversion)](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)

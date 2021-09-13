@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide chiffrement de messages Office 365.
-ms.openlocfilehash: e786a6ac688adbae22f7161ada18cffc27811f97
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: fe08753f3d0e12091a71cc3882dcca80380d82ca
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183735"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques
 
@@ -34,7 +35,7 @@ Si vous avez récemment migré d’Active Directory RMS vers Azure Information P
 Pour plus d’informations sur les composants qui font les règles de flux de messagerie et sur le fonctionnement des règles de flux de messagerie, voir Règles de flux de messagerie (règles de [transport) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules). Pour plus d’informations sur le fonctionnement des règles de flux de messagerie avec Azure Information Protection, voir [Configuring Exchange Online mail flow rules for Azure Information Protection labels](/azure/information-protection/deploy-use/configure-exo-rules).
 
 > [!IMPORTANT]
-> Pour les environnements Exchange hybrides, les utilisateurs locaux peuvent envoyer et recevoir des messages chiffrés à l’aide d’OME uniquement si le courrier électronique est acheminé via Exchange Online. Pour configurer OME dans un environnement Exchange hybride, vous devez d’abord configurer un environnement hybride à l’aide de l’Assistant [Configuration](/Exchange/exchange-hybrid) hybride, puis configurer le flux de messagerie de [Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) vers votre serveur de messagerie et configurer le flux de messagerie de votre serveur de messagerie vers [Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Une fois que vous avez configuré le flux de messagerie Office 365, vous pouvez configurer des règles de flux de messagerie pour OME à l’aide de ces instructions.
+> Pour les environnements Exchange hybrides, les utilisateurs locaux peuvent envoyer et recevoir des messages chiffrés à l’aide d’OME uniquement si le courrier électronique est acheminé via Exchange Online. Pour configurer OME dans un environnement Exchange hybride, vous devez d’abord configurer l’environnement hybride à l’aide de l’Assistant [Configuration](/Exchange/exchange-hybrid) hybride, puis configurer le flux de messagerie de [Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) vers votre serveur de messagerie et configurer le flux de messagerie de votre serveur de messagerie vers [Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Une fois que vous avez configuré le flux de messagerie Office 365, vous pouvez configurer des règles de flux de messagerie pour OME à l’aide de ces instructions.
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>Créer des règles de flux de messagerie pour chiffrer les messages électroniques avec les nouvelles fonctionnalités OME
 
@@ -46,7 +47,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 2. Sélectionnez la **vignette** Administrateur.
 
-3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
@@ -78,7 +79,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 2. Sélectionnez la **vignette** Administrateur.
 
-3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
 
 4. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
@@ -106,7 +107,7 @@ Vous pouvez supprimer le chiffrement appliqué par votre organisation.
 
 2. Sélectionnez la **vignette** Administrateur.
 
-3. In the Centre d’administration Microsoft 365, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>, choose **Admin centers** \> **Exchange**.
 
 4. Dans le EAC, sélectionnez Règles de **flux** \> **de** messagerie et **sélectionnez Nouvelle** ![ icône.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**Créez une règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
@@ -116,13 +117,13 @@ Vous pouvez supprimer le chiffrement appliqué par votre organisation.
 
 7. In **Do the following**, select Modify the message **security** Remove chiffrement de messages Office 365 and \> **rights protection**.
 
-8. Cliquez sur **Enregistrer**.
+8. Sélectionnez **Enregistrer**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Créer des règles de flux de messagerie chiffrement de messages Office 365 sans les nouvelles fonctionnalités
 
 Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonctionnalités OME, Microsoft vous recommande de prendre un plan pour passer aux nouvelles fonctionnalités OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, voir Configurer de [chiffrement de messages Office 365 nouvelles fonctionnalités intégrées à Azure Information Protection.](set-up-new-message-encryption-capabilities.md) Dans le cas contraire, voir Définir des règles de flux de chiffrement de messages Office 365 qui n’utilisent pas les nouvelles [fonctionnalités OME.](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-content"></a>Contenu associé
 
 [Chiffrement dans Office 365](encryption.md)
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Affichez vos applications.
 ms.openlocfilehash: 8e9ac5fda62e015bc1e2a5df11b618afa508a4a4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574411"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183784"
 ---
 # <a name="view-your-apps"></a>Afficher vos applications
 

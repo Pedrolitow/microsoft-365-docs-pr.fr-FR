@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Découvrez comment activer, renouveler ou ajouter des licences à un abonnement Microsoft 365 entreprise.
 ms.date: 10/21/2020
-ms.openlocfilehash: 9f928c772d2ae00b529951a2562d4fb3271b825637da561891586aba6f9e67a4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183791"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Entrer votre clé de produit achetée auprès de Microsoft Open
 
@@ -35,7 +35,7 @@ Si vous avez acheté Microsoft 365 entreprise dans le cadre d’un programme de 
   
  **Vous avez besoin d'autres informations ?**
  
- **Pour obtenir de l’aide Microsoft 365 famille, ou personnel,** voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **Pour obtenir de l’aide Microsoft 365 famille ou personnel,** voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
  **Pour obtenir de l’aide Microsoft 365 Business Standard acheté** dans un magasin de vente au détail, voir Entrer votre clé de produit achetée dans [un magasin de vente au détail.](enter-your-product-key.md) 
   

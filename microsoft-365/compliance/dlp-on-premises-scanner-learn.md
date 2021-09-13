@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le scanneur local de protection contre la perte de données Microsoft 365 en local étend la surveillance des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint. Le scanneur Azure Information Protection (AIP) analyse, puis protège les fichiers.
-ms.openlocfilehash: 6f86d77ea9b6249225f3b0ee2cdd1f91c230ce1de4b2e62cabda7719de27bfa9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53851082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183544"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>En savoir plus sur le scanner local de prévention des pertes de données Microsoft 365
 

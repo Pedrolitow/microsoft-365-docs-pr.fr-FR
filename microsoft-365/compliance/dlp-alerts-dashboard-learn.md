@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les alertes de protection contre la perte de données et le tableau de bord des alertes.
-ms.openlocfilehash: 0474c5609fcd979fa8db7e47857c099cbed7be365bb55ee80e507ad3375da660
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183656"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>En savoir plus sur le tableau de bord des alertes de protection contre la perte de données
 
@@ -35,13 +35,13 @@ Lorsque les critères d’une stratégie de protection contre la perte de donné
 
 ## <a name="workloads"></a>Charges de travail
 
-Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans le [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)affiche des alertes pour les stratégies DLP sur ces charges de travail :
+Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans le [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)affiche des alertes pour les stratégies DLP sur ces charges de travail :
 
 - Exchange
 - SharePoint
 - OneDrive
 - Teams
-- appareils Windows 10 
+- Appareils Windows 10 
 
 > [!TIP]
 > Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) et qui sont éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.

@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment utiliser les fonctionnalités Microsoft 365 gouvernance des identités.
 ms.openlocfilehash: 9b353a83b79c2b66ca224914a7d33a4854919d4e
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209347"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Gérer la Microsoft 365 d’identité
 

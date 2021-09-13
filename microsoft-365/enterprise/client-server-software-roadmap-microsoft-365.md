@@ -14,11 +14,11 @@ ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Utilisez cette feuille de route pour configurer les logiciels client et serveur pour Microsoft 365.
 ms.openlocfilehash: 66d6483df4d1bec1ea0c935f7a0b936f2e0fddcf
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183455"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Feuille de route logicielle client et serveur pour Microsoft 365
 
@@ -38,7 +38,7 @@ Lorsque vous réalisez ces migrations au fil du temps, votre organisation se rap
 
 ## <a name="migration-for-office-client-products"></a>Migration des produits Office client
 
-Les organisations grandes et petites utilisent souvent une combinaison d’anciennes versions des produits clients Office, telles que Word, Excel et PowerPoint. Ces versions antérieures :
+Les organisations grandes et petites utilisent souvent une combinaison d’anciennes versions de Office clients, tels que Word, Excel et PowerPoint. Ces versions antérieures :
 
 - Peut être [mis à jour avec](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) les dernières mises à jour de sécurité et correctifs de prise en charge. Toutefois, le processus est parfois manuel et peut ne pas s’écheller au sein de votre organisation.
 - Ne sont pas optimisés pour utiliser les technologies cloud de Microsoft qui vous aident à transformer numériquement votre entreprise.
@@ -60,7 +60,7 @@ Applications Microsoft 365 pour les grandes entreprises installe automatiquement
 
 ### <a name="office-2010"></a>Office 2010
 
-Pour les versions Office dans la version Office 2010, le support a pris fin le *13 octobre 2020.* Pour plus d’informations, [voir Office 2010 end-of-support roadmap](/deployoffice/office-2010-end-support-roadmap).
+Pour les versions Office la version Office 2010, le support a pris fin le *13 octobre 2020.* Pour plus d’informations, [voir Office 2010 end-of-support roadmap](/deployoffice/office-2010-end-support-roadmap).
 
 Vous pouvez envisager de mettre à niveau vos ordinateurs Office 2010 vers Office 2013 ou Office 2016. Toutefois, ces deux versions doivent être mises à jour manuellement. Pensez donc à suivre les étapes suivantes à la place :
 
@@ -72,7 +72,7 @@ Applications Microsoft 365 pour les grandes entreprises installe automatiquement
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 et Office 2016
 
-Consultez [la feuille de route de fin de support pour Office 2013.](/lifecycle/products/microsoft-office-2013) La fin de la prise en charge Office 2016 n’a pas encore été déterminée. Dans ces versions, comme Office 2010, vous devez toujours installer les mises à jour [de sécurité.](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) Cette tâche peut ne pas être très resserrisée, en fonction de la taille de votre organisation.
+Consultez [la feuille de route de fin de support pour Office 2013.](/lifecycle/products/microsoft-office-2013) La fin de la prise en charge Office 2016 n’a pas encore été déterminée. Dans ces versions, comme Office 2010, vous devez toujours installer les mises [à jour de sécurité.](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5) Cette tâche peut ne pas être très resserrisée, en fonction de la taille de votre organisation.
 
 Au lieu de maintenir vos ordinateurs à jour avec les dernières mises à jour de sécurité pour Office 2013 ou Office 2016 ou de mettre à jour vos ordinateurs de Office 2013 à Office 2016, envisagez d’utiliser les étapes suivantes :
 
@@ -125,7 +125,7 @@ Au lieu de mettre à niveau ces produits serveur dans la version Office 2010 ave
 
 1. Migrez les données sur vos serveurs Office 2010 vers Microsoft 365. Pour plus d’informations, [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365) ou faire appel à un partenaire Microsoft.
 2. Déployer les nouvelles fonctionnalités et processus de travail pour vos utilisateurs.
-3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant Office produits serveur 2010, désaffectez-les.
+3. Lorsque vous n’avez plus besoin des serveurs locaux exécutant Office 2010, désaffectez-les.
 
 ### <a name="office-2013-server-products"></a>Office produits serveur 2013
 
@@ -155,9 +155,9 @@ Voici un résumé visuel des options de mise à niveau, de migration et de migra
 
 [![Image montrant les options de fin de prise en charge Office 2010 clients et serveurs et Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Cette affiche d’une page vous permet de comprendre rapidement les chemins d’accès que vous pouvez prendre pour gérer la fin de la prise en charge des produits client et serveur Office 2010 et Windows 7. Les chemins d’accès préférés sont pris en Microsoft 365 pour Enterprise.
+Cette affiche d’une page vous permet de comprendre rapidement les chemins d’accès que vous pouvez prendre pour gérer la fin de la prise en charge des produits client et serveur Office 2010 et Windows 7. Les chemins d’accès préférés sont pris en charge Microsoft 365 pour Enterprise.
 
-Vous pouvez [télécharger cette affiche et](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) l’imprimer au format lettre, taille légale ou tabloïd (11 x 17).
+Vous pouvez [télécharger cette affiche et](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) l’imprimer en taille de lettre, taille légale ou tabloïd (11 x 17).
 
 ## <a name="transition-your-entire-organization"></a>Transition de l'ensemble de votre organisation
 

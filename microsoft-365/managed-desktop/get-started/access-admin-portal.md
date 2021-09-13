@@ -11,11 +11,11 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602912"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183399"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
@@ -32,7 +32,7 @@ Votre compte d’administration aura besoin d’autorisations spécifiques pour 
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory rôles avec accès Microsoft Manged Desktop’accès
 
-|Rôle Azure AD  |Microsoft Manged Desktop autorisations  |
+|Rôle Azure AD  |Microsoft Manged Desktop d’autorisations  |
 |---------|---------|
 |Administrateur général     | Les administrateurs dotés de ce rôle disposeront d’autorisations de lecture et d’écriture sur toutes les **fonctionnalités** du portail Microsoft Manged Desktop’administration.         |
 |Lecteur général     | Les administrateurs dotés de ce rôle disposeront **d’autorisations** en lecture seule sur toutes les fonctionnalités du portail Microsoft Manged Desktop’administration.         |
@@ -49,7 +49,7 @@ Si vous avez besoin d’aide pour Azure Active Directory rôles intégrés, cons
 ## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Rôles intégrés fournis par Microsoft Manged Desktop
 
 
-|Rôle intégré  |Microsoft Manged Desktop autorisations  |
+|Rôle intégré  |Microsoft Manged Desktop d’autorisations  |
 |---------|---------|
 |Microsoft Manged Desktop Administrateur de service  | Lorsqu’il est attribué à un utilisateur, ce rôle donne à l’administrateur des autorisations de lecture et d’écriture sur les fonctionnalités non **liées** à la sécurité dans le portail d Microsoft Manged Desktop’administration.  |
 |Microsoft Manged Desktop Lecteur de services | Lorsqu’il est attribué à un utilisateur, ce rôle donne à l’administrateur des autorisations en lecture seule sur les fonctionnalités non **liées** à la sécurité dans le portail d Microsoft Manged Desktop’administration. |
@@ -65,7 +65,7 @@ Pour faciliter la gestion des rôles intégrés, il existe un groupe de sécurit
 2. Sélectionnez **Groupes** sur le côté gauche.
 3. Recherchez **les rôles de l’espace** de travail moderne, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
 4. Sélectionnez **Membres** sur le côté gauche, puis **sélectionnez + Ajouter des membres** dans la barre de commandes.
-5. Entrez le courrier électronique de la personne ajoutée. S’ils sont invités, vous devez les inviter avant de pouvoir affecter le groupe.
+5. Entrez l’e-mail de la personne ajoutée. S’ils sont invités, vous devez les inviter avant de pouvoir affecter le groupe.
 6. Sélectionnez **Sélectionner** en bas.
 
 > [!NOTE]

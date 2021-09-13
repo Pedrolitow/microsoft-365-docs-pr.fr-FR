@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: a7ee836cc40c7960c7963867484056b5a506241b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566697"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183255"
 ---
 # <a name="respond-to-web-threats"></a>Répondre aux menaces web
 
@@ -35,7 +35,7 @@ ms.locfileid: "58566697"
 
 La protection web dans Microsoft Defender pour point de terminaison vous permet d’examiner et de répondre efficacement aux alertes liées aux sites web et sites web malveillants dans votre liste d’indicateurs personnalisés.
 
-## <a name="view-web-threat-alerts"></a>Afficher les alertes de menaces web
+## <a name="view-web-threat-alerts"></a>Afficher les alertes contre les menaces web
 
 Microsoft Defender pour le point de terminaison génère les [alertes suivantes](manage-alerts.md) pour les activités web malveillantes ou suspectes :
 
@@ -74,7 +74,7 @@ Vous pouvez également vérifier l’appareil qui a tenté d’accéder à une U
 
 ## <a name="web-browser-and-windows-notifications-for-end-users"></a>Navigateur web et notifications Windows pour les utilisateurs finaux
 
-Avec la protection web dans Microsoft Defender pour le point de terminaison, vos utilisateurs finaux ne pourront pas visiter des sites web malveillants ou indésirables à l’aide de Microsoft Edge ou d’autres navigateurs. Étant donné que le blocage est effectué par la [protection](network-protection.md)réseau, une erreur générique s’est produite à partir du navigateur web. Ils voient également une notification de Windows.
+Avec la protection web dans Microsoft Defender pour point de terminaison, vos utilisateurs finaux ne pourront pas visiter des sites web malveillants ou indésirables à l’aide de Microsoft Edge ou d’autres navigateurs. Étant donné que le blocage est effectué par la [protection](network-protection.md)réseau, une erreur générique s’est produite à partir du navigateur web. Ils voient également une notification de Windows.
 
 ![Image de Microsoft Edge montrant une erreur 403 et la notification Windows message. ](images/wtp-browser-blocking-page.png)
  *Menace web bloquée sur Microsoft Edge*
@@ -82,7 +82,7 @@ Avec la protection web dans Microsoft Defender pour le point de terminaison, vos
 ![Image du navigateur web Chrome affichant un avertissement de connexion sécurisée et la notification Windows de connexion sécurisée. ](images/wtp-chrome-browser-blocking-page.png)
  *Menace web bloquée sur Chrome*
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Filtrage du contenu web](web-content-filtering.md)

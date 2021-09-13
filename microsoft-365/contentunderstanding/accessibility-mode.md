@@ -10,11 +10,11 @@ search.appverid: ''
 localization_priority: Normal
 description: Découvrez comment utiliser le mode d’accessibilité lors de la formation d’un modèle SharePoint Syntex.
 ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573750"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183480"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>Mode d’accessibilité Syntex de SharePoint
 
@@ -25,7 +25,7 @@ Cela permet aux utilisateurs d’utiliser leur clavier pour naviguer dans le tex
 
 ![Mode d’accessibilité.](../media/content-understanding/accessibility-mode.png)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour écouter l’audio de la narration, veillez à activer l’application [Narrateur](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) dans les paramètres du Narrateur sur Windows 10 système.
 

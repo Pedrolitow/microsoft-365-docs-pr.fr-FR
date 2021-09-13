@@ -18,11 +18,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Modifiez Windows registre local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du Centre de conformité Microsoft 365.
 ms.openlocfilehash: efe9ea768b68524dbfda003796a10d60453862bc
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58503154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183695"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
@@ -62,7 +62,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exp
     
     L’Éditeur du Registre affiche un message vous disant que le paramètre a été correctement ajouté au Registre.
   
-## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres de Registre pour ré-activer les rapports d’exportation
+## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres du Registre pour ré-activer les rapports d’exportation
 
 Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les fichiers .reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin qu’il soit exporté avec les résultats de la recherche. Là encore, effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exporter les résultats d’une recherche de contenu.
   

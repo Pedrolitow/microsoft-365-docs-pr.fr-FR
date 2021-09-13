@@ -17,11 +17,11 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
 ms.openlocfilehash: 85313f279a46dbb278dbdb0014d44124a147394d
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533218"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183376"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurer le délai de blocage du cloud
 

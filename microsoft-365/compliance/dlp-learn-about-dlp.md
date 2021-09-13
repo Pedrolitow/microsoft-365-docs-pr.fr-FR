@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide Microsoft 365 stratégies et outils de protection contre la perte de données et faire une visite guidée du cycle de vie DLP.
 ms.openlocfilehash: b1a310a5ea9eea37930dbbc7ea84a8a48577af7e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183560"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
@@ -77,7 +77,7 @@ Les stratégies DLP peuvent bloquer les activités interdites, telles que le par
 
 **Planification de la culture organisationnelle pour la DLP**
 
-Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement les conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
+Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement des conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
 
 <!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
 
@@ -90,7 +90,7 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 - Comptes OneDrive
 - conversation et messages de canal Teams
 - Microsoft Cloud App Security
-- appareils Windows 10
+- Appareils Windows 10
 - Référentiels locaux
 
 Chacune d’elles a des conditions préalables différentes. Les éléments sensibles dans certains emplacements, tels que Exchange en ligne, peuvent être placés sous le cadre de la DLP en configurant simplement une stratégie qui s’applique à eux. D’autres, telles que les référentiels de fichiers locaux, nécessitent un déploiement du scanneur Azure Information Protection (AIP). Vous devez préparer votre environnement, les stratégies de brouillon de code et les tester minutieusement avant d’activer les actions de blocage.
@@ -184,12 +184,12 @@ DLP signale une grande quantité d’informations dans les Microsoft 365 de la s
 Lorsque DLP effectue une action sur un élément sensible, vous pouvez être averti de cette action via une alerte configurable. Au lieu d’empiler ces alertes dans une boîte aux lettres pour que vous les parliez, le centre de conformité les rend disponibles dans le tableau de bord de gestion des [alertes DLP.](dlp-configure-view-alerts-policies.md) Utilisez le tableau de bord alertes DLP pour configurer les alertes, les examiner, les trier et suivre la résolution des alertes DLP. Voici un exemple d’alertes générées par les correspondances de stratégie et les activités de Windows 10 appareils.
 
 > [!div class="mx-imgBorder"]
-> ![Informations sur l’alerte.](../media/Alert-info-1.png)
+> ![Information d’alerte.](../media/Alert-info-1.png)
 
 Vous pouvez également afficher les détails de l’événement associé avec des métadonnées complètes dans le même tableau de bord
 
 > [!div class="mx-imgBorder"]
-> ![informations d’événement.](../media/Event-info-1.png)
+> ![Informations sur un événement.](../media/Event-info-1.png)
 
 ### <a name="reports"></a>Rapports
 

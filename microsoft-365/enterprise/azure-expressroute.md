@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Découvrez comment utiliser Azure ExpressRoute avec Office 365 et planifier le projet d’implémentation réseau si vous déployez avec lui.
 ms.openlocfilehash: 599b1b6a40e8b74f7ca4e3ad90723f201b74592d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183464"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute pour Office 365
 
@@ -123,7 +123,7 @@ Vous êtes prêt à vous inscrire à [ExpressRoute pour Office 365](https://aka.
 
 [Plan de résolution des problèmes de performances pour Office 365](performance-troubleshooting-plan.md)
 
-[URL et plages dʼadresses IP Office 365](urls-and-ip-address-ranges.md)
+[URL et plages d’adresses IP Office 365](urls-and-ip-address-ranges.md)
 
 [Paramétrage des performances et du réseau Office 365](network-planning-and-performance.md)
 

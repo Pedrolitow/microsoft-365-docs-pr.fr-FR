@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 1e11cdd9300b58d7cc410c43d1bd09ed095c29e7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6dcfd27cb609231c7caa4a486044d91140b0c4b1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570688"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209876"
 ---
 # <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
 
@@ -113,6 +113,8 @@ Nom Intune : `Block abuse of exploited vulnerable signed drivers`
 
 GUID :  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
+Type d’action DEA :
+
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Empêcher Adobe Reader de créer des processus enfants
 
 Cette règle empêche les attaques en empêchant Adobe Reader de créer des processus.
@@ -124,6 +126,11 @@ Nom Intune : `Process creation from Adobe Reader (beta)`
 Nom du Gestionnaire de configuration : pas encore disponible
 
 GUID : `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
+
+Type d’action DEA :
+
+- AsrAdobeReaderChildProcessAudited
+- AsrAdobeReaderChildProcessBlocked
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Empêcher toutes les applications Office de créer des processus enfants
 
@@ -137,11 +144,16 @@ Nom du Gestionnaire de configuration : `Block Office application from creating c
 
 GUID : `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
+Type d’action DEA :
+
+- AsrOfficeChildProcessAudited
+- AsrOfficeChildProcessBlocked
+
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification Windows sous-système de l’autorité de sécurité locale
 
 Cette règle empêche le vol d’informations d’identification en verrouilleant le service LSASS (Local Security Authority Subsystem Service).
 
-LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Microsoft Defender Credential Guard dans Windows 10 normalement les tentatives d’extraction des informations d’identification de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
+LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Microsoft Defender Credential Guard dans Windows 10 normalement les tentatives d’extraction d’informations d’identification à partir de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
 
 > [!NOTE]
 > Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais qui n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
@@ -152,9 +164,14 @@ Nom du Gestionnaire de configuration : `Block credential stealing from the Windo
 
 GUID : `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
+Type d’action DEA :
+
+- AsrLsassCredentialTheftAudited
+- AsrLsassCredentialTheftBlocked
+
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Bloquer le contenu exécutable du client de messagerie et de la messagerie web
 
-Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook ou Outlook.com et d’autres fournisseurs de messagerie web populaires :
+Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook, ou de Outlook.com et d’autres fournisseurs de messagerie web populaires :
 
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
 - Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou javascript .js fichier)
@@ -165,12 +182,17 @@ Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executa
 
 GUID : `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
+Type d’action DEA :
+
+- AsrExecutableEmailContentAudited
+- AsrExecutableEmailContentBlocked
+
 > [!NOTE]
 > La règle Bloquer **le contenu exécutable** à partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
 >
 > - Intune (Profils de configuration) : exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie électronique (webmail/client de messagerie) (aucune exception).
 > - Endpoint Manager : bloquer le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
-> - Stratégie de groupe : bloquer le contenu exécutable du client de messagerie et de la messagerie web.
+> - Stratégie de groupe : bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance
 
@@ -195,6 +217,11 @@ Nom du Gestionnaire de configuration : `Block executable files from running unle
 
 GUID : `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
+Type d’action DEA :
+
+- AsrUntrustedExecutableAudited
+- AsrUntrustedExecutableBlocked
+
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>Bloquer l’exécution de scripts potentiellement obscurcis
 
 Cette règle détecte les propriétés suspectes dans un script obscurci.
@@ -206,6 +233,11 @@ Nom Intune : `Obfuscated js/vbs/ps/macro code`
 Nom du Gestionnaire de configuration : `Block execution of potentially obfuscated scripts`
 
 GUID : `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
+
+Type d’action DEA :
+
+- AsrObfuscatedScriptAudited
+- AsrObfuscatedScriptBlocked
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé
 
@@ -219,6 +251,11 @@ Nom du Gestionnaire de configuration : `Block JavaScript or VBScript from launch
 
 GUID : `d3e037e1-3eb8-44c8-a917-57927947596d`
 
+Type d’action DEA :
+
+- AsrScriptExecutableDownloadAudited
+- AsrScriptExecutableDownloadBlocked
+
 ### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
 
 Cette règle empêche Office applications, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
@@ -230,6 +267,11 @@ Nom Intune : `Office apps/macros creating executable content`
 Nom SCCM : `Block Office applications from creating executable content`
 
 GUID : `3b576869-a4ec-4529-8536-b80a7769e899`
+
+Type d’action DEA :
+
+- AsrExecutableOfficeContentAudited
+- AsrExecutableOfficeContentBlocked
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher Office applications d’injecter du code dans d’autres processus
 
@@ -247,6 +289,11 @@ Nom du Gestionnaire de configuration : `Block Office applications from injecting
 
 GUID : `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
+Type d’action DEA :
+
+- AsrOfficeProcessInjectionAudited
+- AsrOfficeProcessInjectionBlocked
+
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher Office application de communication de créer des processus enfants
 
 Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
@@ -261,6 +308,11 @@ Nom Intune : `Process creation from Office communication products (beta)`
 Nom du Gestionnaire de configuration : non disponible
 
 GUID : `26190899-1602-49e8-8b27-eb1d0a1ce869`
+
+Type d’action DEA :
+
+- AsrOfficeCommAppChildProcessAudited
+- AsrOfficeCommAppChildProcessBlocked
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>Bloquer la persistance via un abonnement à des événements WMI
 
@@ -277,6 +329,11 @@ Nom du Gestionnaire de configuration : non disponible
 
 GUID : `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
+Type d’action DEA :
+
+- AsrPersistenceThroughWmiAudited
+- AsrPersistenceThroughWmiBlocked
+
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>Bloquer les créations de processus provenant de commandes PSExec et WMI
 
 Cette règle empêche l’exécution des processus créés via [PsExec](/sysinternals/downloads/psexec) [et WMI.](/windows/win32/wmisdk/about-wmi) PsExec et WMI peuvent exécuter du code à distance. Il existe donc un risque que des programmes malveillants abusent de cette fonctionnalité à des fins de commande et de contrôle, ou qu’ils propagent une infection dans le réseau d’une organisation.
@@ -290,6 +347,11 @@ Nom du Gestionnaire de configuration : non applicable
 
 GUID : `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
+Type d’action DEA :
+
+- AsrPsexecWmiChildProcessAudited
+- AsrPsexecWmiChildProcessBlocked
+
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB
 
 Avec cette règle, les administrateurs peuvent empêcher l’exécution de fichiers exécutables non signés ou non signés à partir de lecteurs amovibles USB, y compris les cartes SD. Les types de fichiers bloqués incluent les fichiers exécutables (tels que .exe, .dll ou .scr)
@@ -299,6 +361,11 @@ Nom Intune : `Untrusted and unsigned processes that run from USB`
 Nom du Gestionnaire de configuration : `Block untrusted and unsigned processes that run from USB`
 
 GUID : `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
+
+Type d’action DEA :
+
+- AsrUntrustedUsbProcessAudited
+- AsrUntrustedUsbProcessBlocked
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir Office macros
 
@@ -319,6 +386,11 @@ Nom du Gestionnaire de configuration : `Block Win32 API calls from Office macros
 
 GUID : `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
+Type d’action DEA :
+
+- AsrOfficeMacroWin32ApiCallsAudited
+- AsrOfficeMacroWin32ApiCallsBlocked
+
 ### <a name="use-advanced-protection-against-ransomware"></a>Utiliser la protection avancée contre les ransomware
 
 Cette règle fournit une couche supplémentaire de protection contre les ransomware. Il utilise des heuristiques client et cloud pour déterminer si un fichier ressemble à un ransomware. Cette règle ne bloque pas les fichiers qui ont une ou plusieurs des caractéristiques suivantes :
@@ -337,3 +409,8 @@ Nom Intune : `Advanced ransomware protection`
 Nom du Gestionnaire de configuration : `Use advanced protection against ransomware`
 
 GUID : `c1db55ab-c21a-4637-bb3f-a12568109d35`
+
+Type d’action DEA :
+
+- AsrRansomwareAudited
+- AsrRansomwareBlocked

@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Vue d’ensemble du processus de planification de la protection contre la perte de données
 ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183535"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planifier la protection contre la perte de données (DLP)
 

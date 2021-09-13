@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 1e1a598f0a87a4bb0bd7882d2b402c43b276a24f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563961"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183319"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Intégration à l'aide de Microsoft Endpoint Manager
 
@@ -104,7 +104,7 @@ Dans cette section, nous allons créer un groupe de test pour affecter vos confi
 
 6. Sélectionnez **membres > ajouter des membres.**
 
-7. Recherchez l’utilisateur ou l’appareil de test et sélectionnez-le.
+7. Recherchez votre utilisateur ou appareil de test et sélectionnez-le.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal3.](images/149cbfdf221cdbde8159d0ab72644cd0.png)
@@ -313,7 +313,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
 
 ### <a name="confirm-policies-have-been-applied"></a>Confirmer que les stratégies ont été appliquées
 
-Une fois la stratégie de configuration affectée, l’application prend un certain temps.
+Une fois que la stratégie de configuration a été affectée, l’application prend un certain temps.
 
 Pour plus d’informations sur le minutage, consultez [les informations de configuration d’Intune.](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
 
@@ -399,7 +399,7 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 
     ![Image de la ligne de commande 2.](images/619fb877791b1fc8bc7dfae1a579043d.png)
 
-### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmer la réduction de la surface d’attaque - Protection Web
+### <a name="confirm-attack-surface-reduction---web-protection"></a>Confirmer la Réduction de la surface d’attaque - Protection Web
 
 1. Sur le périphérique de test, ouvrez une Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection` .
 
