@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58249055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183120"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés du score de sécurité Microsoft
 
@@ -73,7 +73,7 @@ Microsoft Secure Score se trouve sur https://security.microsoft.com/securescore 
 - Activer Antivirus Microsoft Defender protection cloud pour Linux
 - Mettre à jour Antivirus Microsoft Defender définitions d’utilisateurs pour Linux
 
-## <a name="june-2021"></a>Juin 2021
+## <a name="june-2021"></a>Juin 2021
 
 ### <a name="removed-improvement-action-related-to-microsoft-cloud-app-security"></a>Suppression de l’action d’amélioration liée à Microsoft Cloud App Security
 
@@ -91,7 +91,7 @@ Les recommandations du Score de sécurité Microsoft, Graph api, seront pondér�
 
 Microsoft Teams clients voient « Empêcher les utilisateurs anonymes de participer à des réunions » comme nouvelle action d’amélioration du score de sécurité.
 
-## <a name="december-2020"></a>Décembre 2020
+## <a name="december-2020"></a>Décembre 2020
 
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender pour Endpoint :
 
@@ -108,7 +108,7 @@ Microsoft Teams clients voient « Empêcher les utilisateurs anonymes de partici
 
 La possibilité de créer des tickets ServiceNow via Secure Score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender for Endpoint :
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender pour Endpoint :
 
 - Corriger le chemin d’accès au service sans Windows services
 - Modifier le chemin d’accès exécutable du service à un emplacement protégé commun

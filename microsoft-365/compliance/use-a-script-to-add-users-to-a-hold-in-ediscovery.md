@@ -21,15 +21,15 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle boîte aux lettres associée à un cas eDiscovery dans le Centre de conformité Microsoft 365.
 ms.openlocfilehash: a521e96cd81649acf032f7c6a79473a7507e3ba2
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205772"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery
 
-Le Centre de sécurité & conformité PowerShell fournit des cmdlets qui vous permettent d’automatiser des tâches chronophages liées à la création et à la gestion de cas eDiscovery. Actuellement, l’utilisation du cas eDiscovery principal dans le Centre de conformité Microsoft 365 pour placer un grand nombre d’emplacements de contenu de dépositaire en conservation prend du temps et de préparation. Par exemple, avant de créer une attente, vous devez collecter l’URL de chaque site OneDrive Entreprise que vous souhaitez placer en attente. Ensuite, pour chaque utilisateur que vous souhaitez placer en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive Entreprise en attente. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
+Le Centre de sécurité & conformité PowerShell fournit des cmdlets qui vous permettent d’automatiser des tâches chronophages liées à la création et à la gestion des cas eDiscovery. Actuellement, l’utilisation du cas eDiscovery principal dans le Centre de conformité Microsoft 365 pour placer un grand nombre d’emplacements de contenu de dépositaire en conservation prend du temps et de préparation. Par exemple, avant de créer une attente, vous devez collecter l’URL de chaque site OneDrive Entreprise que vous souhaitez placer en attente. Ensuite, pour chaque utilisateur que vous souhaitez placer en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive Entreprise la boîte aux lettres. Vous pouvez utiliser le script de cet article pour automatiser ce processus.
   
 Le script vous invite à donner le nom du domaine Mon site de votre organisation (par exemple, dans l’URL, le nom d’un cas `contoso` eDiscovery existant, le nom de la nouvelle mise en attente associée au cas, une liste des adresses e-mail des utilisateurs que vous souhaitez placer en attente et une requête de recherche à utiliser si vous souhaitez créer une mise en attente basée sur une https://contoso-my.sharepoint.com) requête. Le script obtient ensuite l’URL du site OneDrive Entreprise pour chaque utilisateur de la liste, crée la nouvelle attente, puis ajoute la boîte aux lettres et le site OneDrive Entreprise pour chaque utilisateur de la liste à la boîte aux lettres. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle archive.
   
@@ -105,7 +105,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 Une fois que vous avez collecté les informations que le script vous invitera, l’étape finale consiste à exécuter le script pour créer la nouvelle attente et y ajouter des utilisateurs.
   
-1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier de `.ps1` . Par exemple : `AddUsersToHold.ps1`.
+1. Enregistrez le texte suivant dans un fichier Windows PowerShell script à l’aide d’un suffixe de nom de fichier de `.ps1` . Par exemple, `AddUsersToHold.ps1`.
 
 ```powershell
 #script begin
@@ -281,7 +281,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. Entrez les informations que vous invite le script.
 
-   Le script se connecte au Centre de sécurité & conformité PowerShell, puis crée la nouvelle mise en attente dans le cas eDiscovery et ajoute les boîtes aux lettres et les OneDrive Entreprise pour les utilisateurs dans la liste. Vous pouvez consulter le cas sur la page **eDiscovery** de la Centre de conformité Microsoft 365 pour afficher la nouvelle attente.
+   Le script se connecte au Centre de sécurité & conformité PowerShell, puis crée la nouvelle mise en attente dans le cas eDiscovery et ajoute les boîtes aux lettres et les OneDrive Entreprise pour les utilisateurs de la liste. Vous pouvez consulter le cas sur la page **eDiscovery** de la Centre de conformité Microsoft 365 pour afficher la nouvelle attente.
 
 Une fois l’exécution du script terminée, il crée les fichiers journaux suivants et les enregistre dans le dossier où se trouve le script.
   

@@ -11,11 +11,11 @@ search.appverid:
 - MET150
 description: Découvrez la clé de disponibilité utilisée pour récupérer les clés client perdues.
 ms.openlocfilehash: 76137438231e69f5d93673322ab6825146ee6e2e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206275"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Découvrir la clé de disponibilité pour la clé client
 
@@ -135,7 +135,7 @@ Microsoft 365 la clé de disponibilité uniquement dans des circonstances spéci
   
 1. Microsoft 365 lit le dep auquel la boîte aux lettres est affectée afin de déterminer l’emplacement des deux clés client dans Azure Key Vault.
 
-2. Microsoft 365 choisit de manière aléatoire l’une des deux clés client du dep et envoie une demande à Azure Key Vault pour décocrire la clé DEP à l’aide de la clé client.
+2. Microsoft 365 choisit de manière aléatoire l’une des deux clés client du dep et envoie une demande à Azure Key Vault pour déballer la clé DEP à l’aide de la clé client.
 
 3. Si la demande de décodage de la clé DEP à l’aide de la clé client échoue, Microsoft 365 envoie une deuxième demande à Azure Key Vault, qui lui demande cette fois d’utiliser l’autre (deuxième) clé client.
 
@@ -200,7 +200,7 @@ Microsoft 365 utilise la clé de disponibilité pour encapsuler le niveau de cl�
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement de service avec clé client](customer-key-overview.md)
+- [Chiffrement du service avec la clé client](customer-key-overview.md)
 
 - [Configurer la clé client](customer-key-set-up.md)
 

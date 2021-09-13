@@ -15,12 +15,12 @@ ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous allez découvrir les technologies de chiffrement que vous pouvez gérer et configurer dans Microsoft 365.
-ms.openlocfilehash: 04774e6b3c4d514d13e1bf30a70f9eb53c7c97f8308e5cd18d72b3fcf0181c4e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6a693c512100c59eef47414fdd6eab4a2924e835
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206131"
 ---
 # <a name="customer-managed-encryption-features"></a>Fonctionnalités de chiffrement gérées par le client
 

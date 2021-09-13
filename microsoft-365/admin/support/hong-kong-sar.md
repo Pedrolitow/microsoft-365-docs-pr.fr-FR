@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a88991db9960499692a3700b219f9024019e21591219e91e3720d024fedfbc53
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dd0b48df0404b51059692966558ee33e8ec5dc1b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873270"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206804"
 ---
 # <a name="contact-support-for-hong-kong-sar"></a>Contacter le support pour la R.A.S. de Hong Kong
 

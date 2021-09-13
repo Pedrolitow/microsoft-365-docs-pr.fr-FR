@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 77cbd23197b60c3a74c97cf2030f41c943741a1c
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207388"
 ---
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
@@ -75,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json
 
 ## <a name="request-body"></a>Corps de la demande
@@ -85,7 +85,7 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 Paramètre|Type|Description
 :---|:---|:---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
-ScanType|Chaîne|Définit le type de l’analyse. **Obligatoire**.
+ScanType|String|Définit le type de l’analyse. **Obligatoire**.
 
 **ScanType** contrôle le type d’analyse à effectuer et peut être l’un des suivants :
 

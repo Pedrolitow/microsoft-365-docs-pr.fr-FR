@@ -1,5 +1,5 @@
 ---
-title: Exécutez l’analyseur client sur Windows
+title: Exécuter l’analyse du client sur Windows
 description: Découvrez comment exécuter Microsoft Defender for Endpoint Client Analyzer sur Windows.
 keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, windows
 search.product: eADQiWindows 10XVcnh
@@ -21,13 +21,13 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 754ec7b6cdd6e6c5e3c9f5765d839bd94a1d720b
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58254899"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207395"
 ---
-#  <a name="run-the-client-analyzer-on-windows"></a>Exécutez l’analyseur client sur Windows
+#  <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
@@ -35,7 +35,7 @@ ms.locfileid: "58254899"
 
 1.  Téléchargez [l’outil MDE Client Analyzer](https://aka.ms/mdatpanalyzer) sur l Windows que vous devez examiner.
 
-2.  Extrayez le contenu du MDEClientAnalyzer.zip sur l’ordinateur.
+2.  Extrayez le contenu des MDEClientAnalyzer.zip sur l’ordinateur.
 
 3.  Ouvrez une invite de commandes avec élévation de privilèges :
     1. Accéder à **Démarrer** et taper **cmd**.
@@ -54,7 +54,7 @@ HardDrivePath\MDEClientAnalyzer.cmd
 En plus des informations ci-dessus, il existe également une option pour collecter les journaux de prise en charge de l’analyseur [à l’aide de la réponse en direct.](troubleshoot-collect-support-log.md)
 
 > [!NOTE]  
-> Sur windows 10, Windows Server 2019 ou les éditions ultérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter les tests de connectivité vers les URL de `MDEClientAnalyzer.exe` service cloud. <br> <br> Sur Windows 8.1, Windows Server 2016 ou des éditions antérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant l’outil de connectivité Microsoft Monitoring Agent pour les URL de canal de `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cyber-données.
+> Sur windows 10, Windows Server 2019 ou les éditions ultérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter les tests de connectivité vers les URL de `MDEClientAnalyzer.exe` service cloud. <br> <br> Sur Windows 8.1, Windows Server 2016 ou des éditions antérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant l’outil de connectivité Microsoft Monitoring Agent pour les URL de canal de `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cyber-données.
 
 ## <a name="result-package-contents-on-windows"></a>Contenu du package de résultats sur Windows
 
@@ -111,4 +111,4 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 - [Vue d’ensemble de l’analyseur client](overview-client-analyzer.md)
 - [Télécharger et exécuter l’analyseur client](download-client-analyzer.md)
 - [Collecte de données pour la résolution avancée des problèmes sur Windows](data-collection-analyzer.md)
-- [Comprendre le rapport HTML de l’analyseur](analyzer-report.md)
+- [Comprendre le de rapport HTML de l’analyseur](analyzer-report.md)

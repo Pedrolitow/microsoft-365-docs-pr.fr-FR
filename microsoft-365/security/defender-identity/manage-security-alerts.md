@@ -8,11 +8,11 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.openlocfilehash: 98df694002d31e330fff1b5d53618044bc6c5dae
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207347"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Alertes de sécurité Defender for Identity dans Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ L’un des avantages de l’examen des alertes via [Microsoft 365 Defender](/mic
 Les alertes provenant de Defender for Identity peuvent désormais déclencher les fonctionnalités d’investigation et de réponse automatisée [(AIR)](/microsoft-365/security/defender/m365d-autoir) de Microsoft 365 Defender, notamment la correction automatique des alertes et l’atténuation des outils et processus qui peuvent contribuer à l’activité suspecte.
 
 > [!IMPORTANT]
-> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
 ## <a name="review-security-alerts"></a>Passer en revue les alertes de sécurité
 
@@ -52,7 +52,7 @@ Les alertes sont affichées avec des informations dans les **colonnes suivantes*
 
 ## <a name="manage-alerts"></a>Gérer des alertes
 
-Si vous cliquez sur le nom **de** l’alerte pour l’une des alertes, vous allez sur la page avec des détails sur l’alerte. Dans le volet gauche, vous verrez un résumé de ce **qui s’est passé**:
+Si vous cliquez sur le nom **de** l’alerte pour l’une des alertes, vous allez sur la page avec des détails sur l’alerte. Dans le volet gauche, vous verrez un résumé de ce qui **s’est passé**:
 
 ![Ce qui s’est passé dans l’alerte.](../../media/defender-identity/what-happened.png)
 
@@ -81,7 +81,7 @@ Dans le volet droit, vous verrez les détails de **l’alerte.** Vous pouvez y v
   - **Classification** : vous pouvez choisir une **alerte True ou** **False.**
   - **Commentaire** : vous pouvez ajouter un commentaire sur l’alerte.
 
-    Si vous sélectionnez les trois points à côté de Gérer l’alerte, vous pouvez consulter un **expert** en **menaces,** exporter l’alerte vers un fichier Excel ou établir un lien vers **un autre incident.**
+    Si vous sélectionnez les trois points à côté de Gérer l’alerte, vous pouvez consulter un **expert** en **menaces,** exporter l’alerte vers un fichier Excel ou un lien vers **un autre incident.**
 
     ![Gérer l’alerte.](../../media/defender-identity/manage-alert.png)
 

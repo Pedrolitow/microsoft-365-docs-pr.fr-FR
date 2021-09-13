@@ -17,17 +17,17 @@ description: Obtenez la dernière version de l’isolation matérielle. Empêche
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f734a4ee22984bdc716a9897624f21396c8b7c1d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58558865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207180"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard pour les Office administrateurs
 
 **S’applique à :** Word, Excel et PowerPoint pour Microsoft 365, Windows 10 Entreprise
 
-Protection d’application Microsoft Defender for Office (Application Guard pour Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, afin de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la demande système et les étapes d’installation pour activer Application Guard Office sur un appareil.
+Protection d'application Microsoft Defender for Office (Application Guard pour Office) permet d’empêcher les fichiers non fiables d’accéder aux ressources de confiance, afin de préserver la sécurité de votre entreprise contre les attaques nouvelles et émergentes. Cet article présente aux administrateurs la configuration des appareils pour un aperçu d’Application Guard pour Office. Il fournit des informations sur la demande système et les étapes d’installation pour activer Application Guard Office sur un appareil.
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -43,7 +43,7 @@ Protection d’application Microsoft Defender for Office (Application Guard pour
 * **Office**: Office Canal actuel et Canal Enterprise mensuel, build version 2011 16.0.13530.10000 ou ultérieure. Les versions 32 bits et 64 bits de Office sont toutes deux pris en charge.
 * **Package de mise à** jour : Windows 10 de sécurité mensuelle cumulative [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-Pour obtenir des informations détaillées sur la demande système requise, [reportez-vous à la](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)Protection d’application Microsoft Defender . Consultez également les guides du fabricant de votre ordinateur sur la façon d’activer la technologie de virtualisation.
+Pour obtenir des informations détaillées sur la demande système requise, [reportez-vous à la](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)Protection d'application Microsoft Defender . Consultez également les guides du fabricant de votre ordinateur sur la façon d’activer la technologie de virtualisation.
 Pour en savoir plus sur Office canaux de mise à jour, voir [Vue d’ensemble](/deployoffice/overview-update-channels)des canaux de mise à jour Microsoft 365 .
 
 ### <a name="licensing-requirements"></a>Conditions d'octroi de licence
@@ -56,7 +56,7 @@ Pour en savoir plus sur Office canaux de mise à jour, voir [Vue d’ensemble](/
 
 1. Téléchargez et installez Windows 10 mises à jour de sécurité **mensuelles cumulatives KB4571756**.
 
-2. Sélectionnez **Protection d’application Microsoft Defender** sous Windows fonctionnalités et sélectionnez **OK.** L’activation de la fonctionnalité Application Guard demande un redémarrage du système. Vous pouvez choisir de redémarrer maintenant ou après l’étape 3.
+2. Sélectionnez **Protection d'application Microsoft Defender** sous Windows fonctionnalités et sélectionnez **OK.** L’activation de la fonctionnalité Application Guard demande un redémarrage du système. Vous pouvez choisir de redémarrer maintenant ou après l’étape 3.
 
    ![Windows Boîte de dialogue Fonctionnalités affichant ag.](../../media/ag03-deploy.png)
 
@@ -66,7 +66,7 @@ Pour en savoir plus sur Office canaux de mise à jour, voir [Vue d’ensemble](/
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. Recherchez **Protection d’application Microsoft Defender en mode** géré , une stratégie de groupe dans les modèles d’administration de configuration ordinateur Windows **\\ \\ composants \\ Protection d’application Microsoft Defender**. Pour activer cette stratégie, vous pouvez définir la valeur sous Options **sur 2** ou **3,** puis sélectionner **OK** ou **Appliquer.**
+3. Recherchez **Protection d'application Microsoft Defender en mode** géré , une stratégie de groupe dans les modèles d’administration de configuration ordinateur Windows **\\ \\ composants \\ Protection d'application Microsoft Defender**. Pour activer cette stratégie, vous pouvez définir la valeur sous Options **sur 2** ou **3,** puis sélectionner **OK** ou **Appliquer.**
 
    ![Activer la gestion des états en mode géré.](../../media/ag04-deploy.png)
 
@@ -125,7 +125,7 @@ Office prend en charge les stratégies suivantes pour vous permettre de configur
 > [!NOTE]
 > La configuration de ces stratégies peut désactiver certaines fonctionnalités pour les fichiers ouverts dans Application Guard Office.
 
-|Stratégie|Description|
+|Politique|Description|
 |---|---|
 |N’utilisez pas Application Guard pour Office|L’activation de cette stratégie force Word, Excel et PowerPoint à utiliser le conteneur d’isolation en affichage protégé au lieu d’Application Guard pour Office. Cette stratégie peut être utilisée pour désactiver temporairement Application Guard pour Office en cas de problèmes lors de son abandon pour Microsoft Edge.|
 |Configurer Application Guard pour la pré Office pré-création d’un conteneur|Cette stratégie détermine si le conteneur Application Guard pour Office, pour isoler les fichiers nontrus, est pré-créé pour améliorer les performances d’exécution. Si vous activez ce paramètre, vous pouvez spécifier le nombre de jours pour continuer la pré-création d’un conteneur ou laisser le Office pré-créer le conteneur heuristique intégré.
@@ -152,13 +152,13 @@ Si vous rencontrez des problèmes lors du lancement d’Application Guard pour O
 
 1. Ouvrez **l’application Hub de commentaires** et connectez-vous.
 
-2. Si vous obtenez une boîte de dialogue d’erreur lors du lancement d’Application Guard, sélectionnez Signaler à **Microsoft** dans la boîte de dialogue d’erreur pour démarrer une nouvelle soumission de commentaires. Dans le cas contraire, accédez à la catégorie correcte pour Application Guard, puis sélectionnez Ajouter de nouveaux commentaires <https://aka.ms/mdagoffice-fb> dans le haut à droite. **+ &nbsp;**
+2. Si vous obtenez une boîte de dialogue d’erreur lors du lancement d’Application Guard, sélectionnez Signaler à **Microsoft** dans la boîte de dialogue d’erreur pour démarrer une nouvelle soumission de commentaires. Dans le cas contraire, accédez à la catégorie correcte pour Application Guard, puis sélectionnez Ajouter un nouveau <https://aka.ms/mdagoffice-fb> **+ &nbsp; commentaire** en haut à droite.
 
 3. Entrez un résumé dans la **zone Récapitulatif de vos** commentaires s’il n’est pas déjà rempli pour vous.
 
 4. Entrez une description détaillée du problème que vous avez connu  et les étapes que vous avez prises dans la zone Expliquer plus en détail, puis sélectionnez **Suivant**.
 
-5. Sélectionnez la bulle en de côté du **problème.** Assurez-vous que la catégorie sélectionnée est Sécurité et confidentialité **\> Protection d’application Microsoft Defender - Office**, puis sélectionnez **Suivant**.
+5. Sélectionnez la bulle en de côté du **problème.** Assurez-vous que la catégorie sélectionnée est Sécurité et confidentialité **\> Protection d'application Microsoft Defender - Office**, puis sélectionnez **Suivant**.
 
 6. Sélectionnez **Nouveau commentaire,** puis **Suivant**.
 
@@ -168,7 +168,7 @@ Si vous rencontrez des problèmes lors du lancement d’Application Guard pour O
 
    2. Si le problème que vous rencontrez se produit pendant l’exécution d’Application Guard, ouvrez une instance d’Application Guard. L’ouverture d’une instance permet de collecter des traces supplémentaires à partir du conteneur Application Guard.
 
-   3. Sélectionnez **Démarrer l’enregistrement,** puis attendez que la vignette cesse de tourner et dites *Arrêter l’enregistrement.*
+   3. Sélectionnez **Démarrer l’enregistrement** et attendez que la vignette cesse de tourner et dites *Arrêter l’enregistrement.*
 
    4. Reproduisez entièrement le problème avec Application Guard. La reproduction peut inclure la tentative de lancement d’une instance d’Application Guard et l’attente de son échec, ou la reproduction d’un problème dans une instance d’Application Guard en cours d’exécution.
 
@@ -188,11 +188,11 @@ Vous pouvez également envoyer des commentaires à partir de Office si le probl�
 
 Application Guard pour Office est intégré à Microsoft Defender for Endpoint pour fournir une surveillance et une alerte sur les activités malveillantes qui se produisent dans l’environnement isolé.
 
-[Coffre Documents dans Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) est une fonctionnalité qui utilise Microsoft Defender pour point de terminaison pour analyser les documents ouverts dans Application Guard pour les Office. Pour une couche de protection supplémentaire, les utilisateurs ne peuvent pas quitter Application Guard pour Office tant que les résultats de l’analyse n’ont pas été déterminés.
+[Coffre Documents dans Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) est une fonctionnalité qui utilise Microsoft Defender pour point de terminaison pour analyser les documents ouverts dans Application Guard pour les Office. Pour une couche de protection supplémentaire, les utilisateurs ne peuvent pas quitter Application Guard Office tant que les résultats de l’analyse n’ont pas été déterminés.
 
-Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés au [service Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
+Microsoft Defender pour point de terminaison est une plateforme de sécurité conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Pour plus d’informations sur cette plateforme, voir [Microsoft Defender pour Endpoint.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Pour en savoir plus sur l’intégration d’appareils à cette plateforme, voir Appareils intégrés au [service Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
 
-Vous pouvez également configurer Microsoft Defender pour que Office 365 fonctionne avec Defender for Endpoint. Pour plus d’informations, reportez-vous à [Intégrer Defender pour Office 365 avec Microsoft Defender pour endpoint.](integrate-office-365-ti-with-mde.md)
+Vous pouvez également configurer Microsoft Defender pour que Office 365 fonctionne avec Defender for Endpoint. Pour plus d’informations, reportez-vous à [Intégrer Defender pour Office 365 avec Microsoft Defender pour Endpoint.](integrate-office-365-ti-with-mde.md)
 
 ## <a name="limitations-and-considerations"></a>Limitations et considérations
 
@@ -230,12 +230,12 @@ Lorsque cette heuristique est remplie, Office pré-crée un conteneur Applicatio
 > [!NOTE]
 > Les conseils nécessaires à l’heuristique pour pré-créer le conteneur sont générés par les applications Office qu’un utilisateur les utilise. Si un utilisateur installe Office sur un nouveau système où Application Guard est activé, Office ne pré-crée pas le conteneur avant la première ouverture d’un document nontrus sur le système. L’utilisateur observe que l’ouverture de ce premier fichier dans Application Guard est plus longue.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 * La sélection de liens web `http` (ou `https` ) n’ouvre pas le navigateur.
 * Le paramètre par défaut de la stratégie de protection contre le copier-coller consiste à activer l’accès du Presse-papiers au texte uniquement.
 * Le paramètre par défaut de la stratégie de protection des types de fichiers non pris en charge consiste à bloquer l’ouverture de types de fichiers non pris en charge non pris en charge non chiffrés qui sont chiffrés ou dont la gestion des droits de l’information (IRM) est définie. Cela inclut les fichiers qui ont des étiquettes Protection des données Microsoft confidentialité à l’aide du chiffrement (confidentiel ou hautement confidentiel).
 * Les fichiers CSV et HTML ne sont pas pris en charge pour le moment.
 * Application Guard pour Office ne fonctionne actuellement pas avec les volumes compressés NTFS. Si vous voyez une erreur « ERROR_VIRTUAL_DISK_LIMITATION » veuillez essayer de décompresser le volume.
-* Les mises à jour de .NET peuvent entraîner l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative d’ouverture Protection d’application Windows Defender [ou Windows bac à sable](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
-* Consultez [les questions fréquemment posées : Protection d’application Microsoft Defender pour plus d’informations.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+* Les mises à jour de .NET peuvent entraîner l’échec de l’ouverture des fichiers dans Application Guard. Pour contourner ce cas de défaillance, les utilisateurs peuvent redémarrer leur appareil. En savoir plus sur le problème lors de la réception d’un message d’erreur lors de la tentative d’ouverture Protection d'application Windows Defender [ou Windows bac à sable](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Consultez [les questions fréquemment posées : Protection d'application Microsoft Defender pour plus d’informations.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

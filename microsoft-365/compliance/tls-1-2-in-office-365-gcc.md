@@ -14,12 +14,12 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 3c31f0945bfca39545d6bb841d02e4c559ad6be0d3e75a530c32ce2cac22b366
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53850566"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205804"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>Désactivation de TLS 1.0 et 1.1 dans Microsoft 365 Cloud de la communauté du secteur public High et DoD
 
@@ -33,7 +33,7 @@ Bien que [l’implémentation de Microsoft TLS 1.0](https://support.microsoft.co
 
 [Résolution du problème TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 À compter du 15 janvier 2020, Microsoft 365 dans les environnements Cloud de la communauté du secteur public High et DoD désactiveront TLS 1.1 et 1.0.
 
@@ -50,7 +50,7 @@ Nous savons que les applications clientes suivantes ne peuvent pas utiliser TLS 
 - Android 4.3 et versions antérieures
 - Firefox 5.0 et versions antérieures
 - Internet Explorer 8 à 10 sur Windows 7 et versions antérieures
-- Internet Explorer 10 sur Windows Phone 8.0
+- Internet Explorer 10 sur Windows Phone 8.0
 - Safari 6.0.4/OS X 10.8.4 et versions antérieures
 
 Bien que l’analyse actuelle des connexions aux services Microsoft Online indique que la plupart des services et points de terminaison voient très peu d’utilisation de TLS 1.1 et 1.0, nous fournissons une notification de cette modification afin que vous pouvez mettre à jour les clients ou serveurs concernés si nécessaire avant la fin de la prise en charge de TLS 1.1 et 1.0. Si vous utilisez une infrastructure locale pour des scénarios hybrides ou des services AD FS (Active Directory Federation Services), assurez-vous que l’infrastructure peut prendre en charge les connexions entrantes et sortantes qui utilisent TLS 1.2 (ou une version ultérieure).

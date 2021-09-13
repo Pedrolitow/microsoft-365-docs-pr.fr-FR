@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
 ms.openlocfilehash: d927927aea3f27ecfb99ca68b37d89820efda006
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206028"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 

@@ -16,11 +16,11 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.openlocfilehash: 33d32918316b997b2cc97d63dac8c8deff135528
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570808"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206235"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>En savoir plus sur la gestion des risques internes dans Microsoft 365
 
@@ -50,7 +50,7 @@ La gestion et la réduction des risques au sein de votre organisation commencent
 
 Les utilisateurs de l’espace de travail moderne ont accès à la création, à la gestion et au partage de données sur un large éventail de plateformes et de services. Dans la plupart des cas, les organisations disposent de ressources et d’outils limités pour identifier et atténuer les risques à l’échelle de l’organisation, tout en respectant les normes de confidentialité des utilisateurs.
 
-La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur les activités de risque. À l’aide des journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque. Ces stratégies vous permettent d’identifier les activités à risque et d’agir pour atténuer ces risques.
+La gestion des risques internes utilise l’ensemble des indicateurs de service et tiers pour vous aider à identifier, trier et agir rapidement sur l’activité de risque. À l’aide des journaux de Microsoft 365 et de Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risque. Ces stratégies vous permettent d’identifier les activités à risque et d’agir pour atténuer ces risques.
 
 La gestion des risques internes est centrée sur les principes suivants :
 
@@ -73,7 +73,7 @@ L'identification et la résolution des activités à risque internes et des prob
 
 ![Flux de travail de gestion des risques internes.](../media/insider-risk-workflow.png)
 
-### <a name="policies"></a>Politiques
+### <a name="policies"></a>Stratégies
 
 [Les stratégies de gestion](insider-risk-management-policies.md) des risques internes sont créées à l’aide de modèles prédéfin définis et de conditions de stratégie qui définissent les événements déclenchant des événements et des indicateurs de risque examinés dans votre organisation. Ces conditions incluent l’utilisation des indicateurs de risque pour les alertes, les utilisateurs inclus dans la stratégie, les services hiérarchisés et la période de surveillance.
 
@@ -95,7 +95,7 @@ Vous pouvez choisir parmi les modèles de stratégie suivants pour commencer rap
 Les alertes sont automatiquement générées par les indicateurs de risque qui correspondent aux conditions de stratégie et qui sont affichés dans le tableau de bord [Alertes.](insider-risk-management-activities.md#alert-dashboard) Ce tableau de bord autorise un affichage rapide de toutes les alertes nécessitant un examen, des alertes ouvertes au fil du temps et des statistiques des alertes pour votre organisation. Toutes les alertes de stratégie sont affichées avec les informations suivantes pour vous aider à identifier rapidement l’état des alertes existantes et des nouvelles alertes qui ont besoin d’une action :
 
 - Statut
-- Gravité
+- Severity
 - Heure détectée
 - Cas
 - État de la cas

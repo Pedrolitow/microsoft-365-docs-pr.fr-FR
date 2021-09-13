@@ -19,18 +19,18 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation.
-ms.openlocfilehash: 779d23222dd3308ed6464f195cc63ee11da0fc35cf32986c15cc4f7008ac0a97
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206076"
 ---
 # <a name="message-encryption"></a>Chiffrement des messages
 
 Les messageries électroniques sont souvent utilisées pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, données médicales relatives à des patients ou informations sur les clients et le personnel. Il s'en suit que les boîtes aux lettres deviennent vite des référentiels contenant de gros volumes d'informations potentiellement sensibles. C'est pourquoi, toute fuite d'informations peut constituer une véritable menace pour votre organisation.
 
-Avec chiffrement de messages Office 365, votre organisation peur envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo !, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
+Avec chiffrement de messages Office 365, votre organisation peur envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo !, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
 
 ## <a name="how-office-365-message-encryption-works"></a>Fonctionnement de chiffrement de messages Office 365
 
@@ -46,17 +46,17 @@ Contrairement à la version précédente d’OME, les nouvelles fonctionnalités
 
 Pour obtenir la liste détaillée des différences entre la version précédente d’OME et les nouvelles fonctionnalités OME, voir Comparer les [versions d’OME.](ome-version-comparison.md)
 
-Lorsqu’une personne envoie un message électronique qui correspond à une règle de flux de messagerie de chiffrement, le message est chiffré avant d’être envoyé. Tous les utilisateurs finaux Microsoft 365 qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits, même s’ils ne font pas partie de la même organisation que l’expéditeur. Les clients Outlook pris en charge incluent Outlook bureau, Outlook Mac, Outlook mobile sur iOS et Android et Outlook sur le web (anciennement Outlook Web App).
+Lorsqu’une personne envoie un message électronique qui correspond à une règle de flux de messagerie de chiffrement, le message est chiffré avant d’être envoyé. Tous les utilisateurs finaux Microsoft 365 qui utilisent des clients Outlook pour lire les messages reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits, même s’ils ne font pas partie de la même organisation que l’expéditeur. Les clients Outlook pris en charge incluent Outlook bureau, Outlook Mac, Outlook mobile sur iOS et Android et Outlook sur le web (anciennement Outlook Web App).
 
 Les destinataires de messages chiffrés qui reçoivent des messages chiffrés ou protégés par des droits envoyés à leurs comptes Outlook.com, Gmail et Yahoo reçoivent un courrier électronique de wrapper qui les dirige vers le portail OME où ils peuvent facilement s’authentifier à l’aide d’informations d’identification Microsoft, Gmail ou Yahoo.
 
 Les utilisateurs finaux qui lisent des messages chiffrés ou protégés par des droits sur des clients autres que Outlook utilisent également le portail OME pour afficher les messages chiffrés et protégés par des droits qu’ils reçoivent.
 
-Si l’expéditeur du courrier protégé est en Cloud de la communauté du secteur public Élevé et que le destinataire se trouve en dehors de Cloud de la communauté du secteur public High, y compris les utilisateurs commerciaux, les utilisateurs Outlook.com et les utilisateurs d’autres fournisseurs de messagerie tels que Gmail, le destinataire reçoit un wrapper. Le message de wrapper dirige le destinataire vers le portail OME où le destinataire peut lire le message et y répondre. Dans le cas contraire, si l’expéditeur et le destinataire sont tous les deux dans l’environnement Cloud de la communauté du secteur public High, même s’ils ne font pas partie de la même organisation, les destinataires qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits. Pour plus d’informations sur les différentes expériences Cloud de la communauté du secteur public high, voir [Comparer les versions d’OME.](ome-version-comparison.md)
+Si l’expéditeur du courrier protégé est en Cloud de la communauté du secteur public Élevé et que le destinataire se trouve en dehors de Cloud de la communauté du secteur public High, y compris les utilisateurs commerciaux, les utilisateurs Outlook.com et les utilisateurs d’autres fournisseurs de messagerie tels que Gmail, le destinataire reçoit un wrapper. Le message de wrapper dirige le destinataire vers le portail OME où le destinataire peut lire le message et y répondre. Sinon, si l’expéditeur et le destinataire sont tous les deux dans l’environnement Cloud de la communauté du secteur public High, même s’ils ne font pas partie de la même organisation, les destinataires qui utilisent des clients Outlook pour lire le courrier reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits. Pour plus d’informations sur les différentes expériences Cloud de la communauté du secteur public high, voir [Comparer les versions d’OME.](ome-version-comparison.md)
 
 Pour plus d’informations sur les limites de taille des messages et des pièces jointes que vous pouvez chiffrer à l’aide d’OME, voir [Exchange Online limites.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)
 
-## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Fonctionnement Chiffrement avancé de messages Office 365 OME
+## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Fonctionnement Chiffrement avancé de messages Office 365'OME
 
 Chiffrement avancé de messages Office 365 vous permet de créer plusieurs modèles de personnalisation afin d’affiner le contrôle sur le courrier des destinataires et de créer des expériences de personnalisation personnalisées pour prendre en charge une structure organisationnelle variée.
 

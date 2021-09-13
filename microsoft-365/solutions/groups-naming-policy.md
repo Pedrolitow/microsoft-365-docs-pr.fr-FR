@@ -19,11 +19,11 @@ ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 recommendations: false
 description: Découvrez comment créer une stratégie d’attribution de noms pour Microsoft 365 groupes.
 ms.openlocfilehash: 8c13e946644d25fc76745dc2c9f286bf204f6ba1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182967"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 de noms de groupes
 
@@ -52,7 +52,7 @@ Les préfixes et les suffixes peuvent être des chaînes fixes ou des attributs 
 
 ### <a name="fixed-strings"></a>Chaînes fixes
 
-Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixes courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
+Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixe courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
 
 ### <a name="attributes"></a>Attributs
 
@@ -130,7 +130,7 @@ Pour configurer une stratégie d’attribution de noms :
 
 ![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes Azure Active Directory.](../media/groups-naming-policy-azure.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

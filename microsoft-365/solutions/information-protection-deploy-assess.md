@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: ''
 description: Déterminez les réglementations en matière de confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se Microsoft 365 environnement.
 ms.openlocfilehash: eefa80d85a9b03317b2021c73152e2e63f772cea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571216"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182936"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles à l’Microsoft 365
 
@@ -60,7 +60,7 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 
 |Règlement|Article/section|Extrait|Catégories de contrôle technique applicables|
 |---|---|---|---|
-|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).|(Tous) <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
+|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).|(Tous) <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
 ||Article (32)(1)(a)|En tenant compte de l’état de l’art, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que du risque de probabilité et de gravité variables pour les droits et libertés des personnes physiques, le responsable du traitement et le sous-traitant doivent mettre en œuvre des mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié au risque,  y compris, le cas échéant : (a) la pseudonymisation et le chiffrement des données personnelles.|Protéger les informations|
 ||Article (13)(2)(a)|"... le responsable du traitement doit, au moment où les données à caractère personnel sont obtenues, fournir à la sujet des données les informations supplémentaires suivantes nécessaires pour garantir un traitement équitable et transparent : (a) la période pendant laquelle les données à caractère personnel seront stockées, ou si cela n’est pas possible, les critères utilisés pour déterminer cette période.|Gérer les informations|
 ||Article (15)(1)(e)|La objet de données a le droit d’obtenir auprès du responsable du traitement la confirmation que des données personnelles la concernant sont en cours de traitement, et dans ce cas, l’accès aux données à caractère personnel et les informations suivantes : (e) l’existence du droit de demander au responsable du traitement la rectification ou l’effacement de données à caractère personnel ou la restriction du traitement des données à caractère personnel concernant la sujet des données ou de s’y objecter traitement|Découvrir et répondre|
@@ -206,7 +206,7 @@ Si vous devez identifier et protéger un type régional ou spécifique à l’or
 
 Vous pouvez également personnaliser un type d’informations sensibles intégré existant.
 
-Pour plus d’informations, consultez les articles suivants :
+Pour plus d’informations, voir les articles suivants :
 
 - [Personnaliser un type d’informations sensibles intégré](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [En savoir plus sur les types d’informations confidentielles](../compliance/sensitive-information-type-learn-about.md).

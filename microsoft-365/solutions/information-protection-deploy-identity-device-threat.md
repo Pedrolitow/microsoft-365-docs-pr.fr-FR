@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Empêcher les violations de données personnelles avec des services de protection contre les identités, appareils et menaces Microsoft 365.
-ms.openlocfilehash: b2f5c131a079804ed1884a4a86d759b232f5305f1cc14272b290844fe5872067
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207051"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser la protection des identités, des appareils et des menaces pour la réglementation sur la confidentialité des données
 
@@ -60,9 +60,9 @@ Utilisez [Azure Active Directory (Azure AD)](https://azure.microsoft.com/service
 
 Utilisez [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) pour les appareils et la catégorie **Gérer** les appareils, avec laquelle vous pouvez :
 
-- Bloquez les appareils mobiles rompus et racines.
+- Bloquez les appareils mobiles rompus et racines de la cellule.
 - Configurez Intune pour la gestion des appareils mobiles.
-- Créez des stratégies de conformité pour les appareils Android, iOS, macOS et Windows mobiles.
+- Créez des stratégies de conformité pour les appareils Android, iOS, macOS Windows mobiles.
 - Créez un profil de configuration d’appareil pour les appareils Android, iOS, macOS Windows appareils mobiles.
 - Créez des stratégies de protection des applications pour iOS et Windows.
 - Masquer les informations à l’écran de verrouillage.
@@ -75,7 +75,7 @@ Utilisez [Exchange Online Protection et Microsoft Defender pour Office 365](../s
 - Activer l’authentification de l’expéditeur (SPF, DMARC et DKIM).
 - Configurer Microsoft Defender pour Office 365 stratégies anti-hameçonnage.
 - Implémentez Coffre pièces jointes.
-- Implémentez Coffre liens de mise en œuvre.
+- Implémentez Coffre liens.
 - Implémenter des stratégies de détection et de réponse aux programmes malveillants.
 - Implémenter des stratégies de courrier indésirable sortant et entrant.
 

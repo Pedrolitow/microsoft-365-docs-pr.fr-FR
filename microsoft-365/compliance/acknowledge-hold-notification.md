@@ -19,15 +19,15 @@ ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser les Advanced eDiscovery pour envoyer et suivre des notifications de mise en attente légale par courrier électronique, et surveiller l’état des obligations.
 ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206427"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 
-Lorsque vous répondez à une demande ou à un examen réglementaire, vous pouvez être tenu d’informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout document pertinent pour une affaire juridique active ou imminente. Une fois envoyées, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et accepté de suivre les instructions données.
+Lorsque vous répondez à une demande ou à un examen réglementaire, vous pouvez être tenu d’informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI) et tout document qui peut être pertinent pour une affaire juridique active ou imminence. Une fois envoyées, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu, compris et accepté de suivre les instructions données.
 
 Pour réduire le temps, les coûts et l’effort de suivi avec vos dépositaires, Advanced eDiscovery vous permet d’envoyer et de suivre des notifications de conservation légale par courrier électronique. En plus des notifications par courrier électronique, chaque dépositaire aura accès à un portail de conformité individualisé, ce qui permet aux dépositaires d’être tenus informés des modifications apportées à leur statut d’obligation.
 

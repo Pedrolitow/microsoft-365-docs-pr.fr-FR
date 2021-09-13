@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres et filtres anti-courrier indésirable qui contribuent à empêcher le courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2145637500376944f1adf038e33c41549479a5f4da89fb456b590da8a5c78bb8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9b960894b6923633489c005ee75307ec02b248f5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207235"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protection contre le courrier indésirable dans EOP
 
@@ -110,7 +110,7 @@ Voici quelques étapes que vous pouvez suivre pour éviter les faux positifs :
 
   - Vérifiez que le filtre **de** courrier indésirable Outlook est désactivé : lorsque le filtre de courrier indésirable Outlook est définie sur la valeur par défaut Aucun filtrage **automatique,** Outlook ne tente pas de classer les messages comme courrier indésirable.  Lorsque la valeur  est Faible ou **Élevée,** le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable, afin que vous receviez des faux positifs. Notez que Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen Exchange et Outlook en novembre 2016. Les définitions de courrier indésirable SmartScreen existantes ont été laissées en place, mais leur efficacité se dégradera probablement au fil du temps.
 
-  - Vérifiez que le paramètre **Outlook**« listes Coffre uniquement » est désactivé : lorsque ce paramètre est activé, seuls les messages provenant d’expéditeurs de la liste des expéditeurs Coffre ou de la liste des destinataires Coffre de l’utilisateur sont remis dans la boîte de réception . Le courrier électronique de tous les autres utilisateurs est automatiquement déplacé vers le dossier Courrier indésirable.
+  - Vérifiez que le paramètre **Outlook**« listes Coffre uniquement » est désactivé : lorsque ce paramètre est activé, seuls les messages provenant d’expéditeurs de la liste des expéditeurs Coffre ou de la liste des destinataires Coffre de l’utilisateur sont remis dans la boîte de réception . Les messages provenant de tous les autres utilisateurs sont automatiquement déplacés vers le dossier Courrier indésirable.
 
   Pour plus d’informations sur ces paramètres, voir [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 

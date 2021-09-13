@@ -16,12 +16,12 @@ description: Utilisez les détections de l’Explorateur ou en temps réel pour 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a89ed9eed07be2d66336dcab799e45d155151fce252f163c1d0eb27f43a4ac46
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4d0a9ba7ee40c8ad97df745a20d6b5b3314bb3d8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182999"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>Informations de base sur les détections en temps réel et de l’Explorateur
 
@@ -29,7 +29,7 @@ ms.locfileid: "53867474"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Contenu de cet article :
+Contenu de cet article :
 
 - [Différences entre les détections de l’Explorateur et en temps réel](#differences-between-explorer-and-real-time-detections)
 - [Licences et autorisations requises](#required-licenses-and-permissions)
@@ -85,7 +85,7 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les articles 
 - [Autorisations dans le Portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
 - [Autorisations dans Exchange Online](/e/exchange/permissions-exo/permissions-exo)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - [L’Explorateur de menaces collecte les détails des e-mails sur la page d’entité de messagerie](mdo-email-entity-page.md)
 - [Rechercher et d’examiner l’e-mail malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7d1fcb7ec2616f4f2fb888800fba9e37fe264e2d333a7190ac66aa3c5cc3761b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 44272c6d0442b02b2155f7581d389002dfc6f1a3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206748"
 ---
 # <a name="contact-support-for-isle-of-man"></a>Contacter le support pour l’île de Man
 

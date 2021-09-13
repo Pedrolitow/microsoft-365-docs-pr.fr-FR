@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir comment basculer vers Exchange Online Protection (EOP) à partir d’un équipement d’hygiène de messagerie local ou d’un service de protection en nuage.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 610ac3633516be12fe42cdfb77b0b240f7408746203284f6dba227021d314ed1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56854713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182983"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculer vers EOP depuis Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -33,7 +33,7 @@ ms.locfileid: "56854713"
 
  Le but de cette rubrique est de vous aider à comprendre le processus de passage d'un équipement de protection de messagerie électronique local ou d'un service de protection dans le nuage à Exchange Online Protection (EOP), puis de vous fournir les ressources d'aide nécessaires pour commencer à l'utiliser. Il existe de nombreuses solutions de filtrage du courrier indésirable, mais le processus de passage à EOP est généralement similaire.
 
-Si vous débutez avec EOP et que vous souhaitez lire une vue d’ensemble de ses fonctionnalités avant de décider de basculer, commencez par la rubrique Exchange Online Protection [vue d’ensemble.](exchange-online-protection-overview.md)
+Si vous débutez avec EOP et que vous souhaitez lire une vue d’ensemble de ses fonctionnalités avant de décider de basculer, commencez par la [rubrique Exchange Online Protection vue d’ensemble.](exchange-online-protection-overview.md)
 
 Avant de passer à EOP, il est important que vous déterminiez si vous voulez héberger vos boîtes aux lettres protégées par EOP dans le nuage avec Exchange Online, localement ou dans un scénario hybride (hybride signifie que certaines boîtes aux lettres sont hébergées localement, et d'autres avec Exchange Online). Chacun de ces scénarios d'hébergement (en nuage, local et hybride) est possible, mais les étapes de configuration peuvent varier. Voici quelques considérations pour vous aider à choisir le déploiement approprié :
 
@@ -49,7 +49,7 @@ Si vous hébergez actuellement vos boîtes aux lettres localement et utilisez un
 
 ## <a name="switch-to-exchange-online"></a>Passage à Exchange Online
 
-Vous disposez peut-être de boîtes aux lettres sur site protégées par une appliance sur site et vous souhaitez passer à Exchange Online boîtes aux lettres hébergées dans le cloud et à la protection EOP pour tirer parti des fonctionnalités de messagerie et de protection cloud Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario ne nécessite pas la mise en place de connecteurs, car il n’existe aucun routage vers les boîtes aux lettres sur site. Commencez par [obtenir les dernières fonctionnalités](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) avancées avec Microsoft 365 pour vous inscrire et vous familiariser avec ses fonctionnalités.
+Vous disposez peut-être de boîtes aux lettres sur site protégées par une appliance sur site et vous souhaitez passer à Exchange Online boîtes aux lettres hébergées dans le cloud et à la protection EOP pour tirer parti des fonctionnalités de messagerie et de protection cloud Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario ne vous oblige pas à configurer des connecteurs, car il n’existe aucun routage vers les boîtes aux lettres sur site. Commencez par [obtenir les dernières fonctionnalités](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) avancées avec Microsoft 365 pour vous inscrire et vous familiariser avec ses fonctionnalités.
 
 Pendant le Microsoft 365 de configuration, vous allez créer vos utilisateurs de boîte aux lettres en nuage.
 

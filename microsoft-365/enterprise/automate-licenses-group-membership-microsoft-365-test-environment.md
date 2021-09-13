@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 description: Configurez la gestion des licences basée sur les groupes et l’appartenance à un groupe dynamique dans Microsoft 365 pour l’environnement de test d’entreprise.
 ms.openlocfilehash: 7d754b937296fbd852904022c45492b6890f2f04
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572682"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205627"
 ---
 # <a name="automate-licensing-and-group-membership-for-your-microsoft-365-for-enterprise-test-environment"></a>Automatiser la gestion des licences et l’appartenance à un Microsoft 365 pour l’environnement de test d’entreprise
 
@@ -51,7 +51,7 @@ Si vous souhaitez tester la gestion automatisée des licences et l’appartenanc
 
 Tout d’abord, créez un groupe nommé Ventes, puis ajoutez  une  règle d’appartenance au groupe dynamique afin que les comptes d’utilisateurs dont le service est le service des ventes rejoignent automatiquement le groupe Ventes.
 
-1. Dans une instance privée de votre navigateur Internet, connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec le compte d’administrateur général de votre abonnement Microsoft 365 E5 de laboratoire de test.
+1. Dans une instance privée de votre navigateur Internet, connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) avec le compte d’administrateur général de votre abonnement Microsoft 365 E5 de laboratoire de test.
 2. Sous un onglet distinct de votre navigateur, allez sur le portail Azure à [https://portal.azure.com](https://portal.azure.com) l':.
 3. Dans le portail Azure, entrez **des groupes** dans la zone de recherche, puis sélectionnez **Groupes.**
 4. dans le **volet Tous les groupes,** sélectionnez **Nouveau groupe.**
@@ -63,7 +63,7 @@ Tout d’abord, créez un groupe nommé Ventes, puis ajoutez  une  règle d’ap
    - Sélectionnez la **propriété de** service.
    - Sélectionnez **l’opérateur Égal à.**
    - Dans la **zone Valeur,** entrez **Ventes**.
-10. Cliquez sur **Enregistrer**.
+10. Sélectionnez **Enregistrer**.
 11. Sélectionnez **Créer**.
 
 Ensuite, configurez le groupe Ventes afin que les membres se voit attribuer automatiquement la Microsoft 365 E5 licence.
@@ -75,7 +75,7 @@ Ensuite, configurez le groupe Ventes afin que les membres se voit attribuer auto
 Ensuite, testez l’appartenance au groupe dynamique et la gestion automatique des licences sur le compte Utilisateur 4 :
 
 1. Dans **l’Microsoft Office Accueil** de votre navigateur, sélectionnez **Administrateur.**
-2. Dans **l’Centre d’administration Microsoft 365,** sélectionnez **Utilisateurs actifs.**
+2. Dans **l’Centre d'administration Microsoft 365,** sélectionnez **Utilisateurs actifs.**
 3. Dans la page **Utilisateurs** actifs, sélectionnez **le compte Utilisateur 4.**
 4. Dans le **volet Utilisateur 4,** **sélectionnez Modifier pour** les **licences de produit.**
 5. Dans le **volet Licences de** produits, désactivez la **licence Microsoft 365 E5,** puis **sélectionnez Enregistrer**  >  **fermer.**

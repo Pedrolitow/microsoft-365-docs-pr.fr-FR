@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c6448a75deb018011f387d719bce4aeb145e1fef6c8279f8e013e3814ea1627a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 09820fbf6bc636f4312ba26daa85570f36ef1d2d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53907102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206916"
 ---
 # <a name="contact-support-for-djibouti"></a>Contacter le support technique de Djibouti
 

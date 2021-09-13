@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 99577a508f4040e891f34dbde0dba73088197436865358d0381537ff469351f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: debafb5031183f4650131807228d743a9a84debd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901310"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206644"
 ---
 # <a name="contact-support-for-san-marino"></a>Contacter le support pour Saint-Marin
 

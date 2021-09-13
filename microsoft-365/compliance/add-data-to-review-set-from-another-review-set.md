@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment sélectionner des documents à partir d’un jeu à réviser et les utiliser individuellement dans un autre ensemble dans Advanced eDiscovery cas.
+description: Découvrez comment sélectionner des documents à partir d’un ensemble de révision et les utiliser individuellement dans un autre ensemble dans Advanced eDiscovery cas.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 ms.openlocfilehash: 830f107a3935db23f771e2691fe6e83a5d8d2eff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206419"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Ajouter des données à partir d’un groupe de révision à un autre groupe de révision.
 
@@ -34,7 +34,7 @@ Suivez le flux de travail de cet article pour ajouter du contenu d’un jeu à r
 
 ## <a name="create-a-review-set"></a>Créer un jeu à réviser
 
-Avant de commencer, vous devez créer un jeu à réviser pour ajouter les données.  Un nouvel ensemble de révision peut être ajouté sous l’onglet **Ensembles de révision** du cas. Pour plus d’informations, [voir Créer un jeu à réviser.](managing-review-sets.md#create-a-review-set)
+Avant de commencer, vous devez créer un jeu à réviser pour ajouter les données.  Un nouvel ensemble de révision peut être ajouté sous l’onglet **Jeux de révision** du cas. Pour plus d’informations, [voir Créer un jeu à réviser.](managing-review-sets.md#create-a-review-set)
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>Étape 1 : Identifier le contenu à ajouter à un autre jeu à réviser
 
@@ -44,7 +44,7 @@ Vous pouvez ajouter du contenu d’un ensemble de révision à un autre en séle
 
 ## <a name="step-2-specify-options-for-adding-to-another-review-set"></a>Étape 2 : Spécifier les options d’ajout à un autre jeu à réviser
 
-Dans la page volante Ajouter à un autre jeu à **réviser,** choisissez le jeu à réviser à partir de qui vous souhaitez ajouter les éléments. Indiquez si vous souhaitez **ajouter tous les résultats de recherche** ou les éléments **sélectionnés.**   Des informations supplémentaires fournissent des options pour inclure toutes les métadonnées à partir des éléments et s’il faut inclure les balises (en sélectionnant la case à cocher Étiquettes) à partir du jeu de révision source lorsque les documents sont ajoutés au nouveau jeu à réviser.   
+Dans la page **volante** Ajouter à un autre jeu à réviser, choisissez le jeu à réviser à ajouter aux éléments. Indiquez si vous souhaitez **ajouter tous les résultats de recherche** ou les éléments **sélectionnés.**   Des informations supplémentaires fournissent des options pour inclure toutes les métadonnées à partir des éléments et s’il faut inclure les balises (en sélectionnant la case à cocher Étiquettes) à partir du jeu de révision source lorsque les documents sont ajoutés au nouveau jeu à réviser.   
 
 ![Options d’ajout de données à un autre jeu à réviser.](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 

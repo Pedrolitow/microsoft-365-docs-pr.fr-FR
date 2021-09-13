@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : Comprendre la résilience des données dans Microsoft Office 365.'
-ms.openlocfilehash: 290debbcbb58c7ded884a2443a7c4f31a4b2f92c396500ff1d63f3fcc7221942
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206115"
 ---
 # <a name="service-encryption"></a>Chiffrement de service
 
@@ -47,7 +47,7 @@ Un autre avantage de la clé client est le contrôle que vous avez sur la capaci
 
 Pour découvrir comment configurer la clé client pour Microsoft 365 pour Exchange Online, Microsoft Teams, SharePoint Online, y compris les Sites d’équipe et OneDrive Entreprise, consultez les articles suivants :
 
-- [Chiffrement de service avec clé client](customer-key-overview.md)
+- [Chiffrement du service avec la clé client](customer-key-overview.md)
 
 - [Configurer la clé client](customer-key-set-up.md)
 

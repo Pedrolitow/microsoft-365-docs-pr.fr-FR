@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques dans le Centre de conformité des & de sécurité pour exécuter des attaques par hameçonnage et par mot de passe simulés dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
+description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques dans le Centre de sécurité & complance pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 631c6d9ecfeb24ddfad16391990043d283b02a82
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207228"
 ---
 # <a name="attack-simulator-in-the-security--compliance-center"></a>Simulateur d’attaques dans le Centre de sécurité & conformité
 
@@ -37,7 +37,7 @@ Si votre organisation dispose de Microsoft Defender pour [](office-365-ti.md)Off
 
 > [!NOTE]
 >
-> Le Simulateur d’attaques, comme décrit dans cet article, est désormais en lecture seule et a été remplacé par une formation à la **simulation** d’attaque dans le nœud de collaboration e-mail **&** dans le portail Microsoft 365 Defender à <https://security.microsoft.com> l’adresse . Pour plus d’informations, voir [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+> Le Simulateur d’attaques, comme décrit dans cet article, est désormais en lecture seule et a été remplacé par une formation à la **simulation** d’attaque dans le nœud de collaboration e-mail **&** dans le portail Microsoft 365 Defender à l’adresse <https://security.microsoft.com> . Pour plus d’informations, voir [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 >
 > La possibilité de lancer de nouvelles simulations à partir de cette version du Simulateur d’attaques a été désactivée. Toutefois, vous pouvez toujours accéder aux rapports jusqu’au 24 avril 2021.
 

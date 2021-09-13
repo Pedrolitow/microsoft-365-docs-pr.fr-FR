@@ -13,11 +13,11 @@ description: Les administrateurs peuvent apprendre à utiliser les informations 
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 87af41d4c6fe1964510944f0ad06554056ce4f37
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570400"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207156"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Informations sur les nouveaux domaines transmis par courrier électronique dans le Centre de sécurité & conformité
 
@@ -36,7 +36,7 @@ Cette condition peut indiquer que les comptes d’utilisateur sont compromis. Si
 
 Cette information apparaît uniquement lorsque le problème est détecté et apparaît sur la page du rapport [de forwarding.](view-mail-flow-reports.md#forwarding-report)
 
-![Informations sur les nouveaux domaines qui sont transmis par courrier électronique.](../../media/mfi-new-domains-being-forwarded.png)
+![Informations sur les nouveaux domaines transmis par courrier électronique.](../../media/mfi-new-domains-being-forwarded.png)
 
 Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trouverez plus de détails sur les messages transmis, y compris un lien vers le rapport [de forwarding.](view-mail-flow-reports.md#forwarding-report)
 
@@ -46,6 +46,6 @@ Vous pouvez également vous rendre sur cette page de  détails lorsque vous sél
 
 Pour empêcher le transmission automatique de messages à des domaines externes, configurez un domaine distant pour certains domaines externes ou tous. Pour plus d’informations, voir [Gérer les domaines distants dans Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

@@ -18,11 +18,11 @@ search.appverid:
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
 ms.openlocfilehash: 99081712f3c762f6818df1f6e390b50ae450a7a8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206012"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 

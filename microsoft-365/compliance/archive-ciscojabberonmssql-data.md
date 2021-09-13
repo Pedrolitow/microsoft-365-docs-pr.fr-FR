@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver cisco Jabber sur MS SQL données de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
 ms.openlocfilehash: a34bf267373e09f94c28bba243fb39d2ba932baf
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565451"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206363"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>Configurer un connecteur pour archiver cisco Jabber sur MS SQL données
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour les données Cisco Jabber.](../media/CiscoJabberonMSSQLConnectorWorkflow.png)
 
-1. Votre organisation collabore avec Cisco pour configurer un Cisco Jabber sur MS SQL Database.
+1. Votre organisation collabore avec Cisco pour installer et configurer un Cisco Jabber sur MS SQL Database.
 
 2. Une fois toutes les 24 heures, les éléments Cisco Jabber sont copiés du SQL Database MS vers le site Veritas Merge1. Le connecteur convertit également le contenu des messages de conversation au format de message électronique.
 
@@ -71,7 +71,7 @@ Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’ut
 
 Pour ma cartographier les utilisateurs et terminer la mise en Centre de conformité Microsoft 365, suivez les étapes suivantes :
 
-1. Sur la carte **Cisco Jabber sur MS,** SQL aux utilisateurs Microsoft 365 la page Utilisateurs, activez le mappage automatique des utilisateurs. Les éléments de SQL Cisco Jabber sur MS incluent une propriété appelée *Email*, qui contient les adresses e-mail des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Sur la carte **Cisco Jabber sur MS,** SQL aux utilisateurs Microsoft 365 la page Utilisateurs, activez le mappage automatique des utilisateurs. Les éléments de SQL Cisco Jabber sur MS incluent une propriété appelée *Email*, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres et allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 
@@ -85,6 +85,6 @@ Après avoir créé cisco Jabber sur le connecteur SQL MS, vous pouvez afficher 
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

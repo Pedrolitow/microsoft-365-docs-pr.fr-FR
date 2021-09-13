@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8012eebf9a27d8f421e97dd37c2fb83a7ff06b4bfdea276d2046196d1622c86c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 77843171550bfe07b0bd8739adc8464e527c7331
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206956"
 ---
 # <a name="contact-support-for-czech-republic"></a>Contacter le support pour la République tchèque
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1f04e80a37ceb5a293888e7ddad6e7674ed8bc7fed0a6f701d8ef9fed47e6fc6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b5a5d47c0ddcca8300f7e7503c01aa6b309c4dd
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206980"
 ---
 # <a name="contact-support-for-bouvet-island"></a>Contacter le support technique pour l’île Bouvet
 

@@ -22,11 +22,11 @@ ms.custom:
 - seo-marvel-jun2020
 ms.technology: m365d
 ms.openlocfilehash: de8d0a0bc1609a3dfac9d177a51ef3903b477de4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183095"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 

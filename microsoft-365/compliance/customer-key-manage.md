@@ -12,18 +12,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir installé la clé client, découvrez comment la gérer en restaurant des clés AKV, en gérant les autorisations et en créant et en attribuant des stratégies de chiffrement de données.
-ms.openlocfilehash: cbfc93413aa7abfb37c201b8446050b1242461ac
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.openlocfilehash: 7fc985aaaf0cf0222a6cd02063207b2b1709ac25
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206268"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
 Une fois que vous avez installé la clé client pour Office 365, vous devez créer et affecter une ou plusieurs stratégies de chiffrement de données (DEP). Une fois que vous avez affecté vos dep, vous pouvez gérer vos clés comme décrit dans cet article. En savoir plus sur la clé client dans les rubriques connexes.
 
-## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Créer une PD DEP pour une utilisation avec plusieurs charges de travail pour tous les utilisateurs clients
+## <a name="create-a-dep-for-use-with-multiple-workloads-for-all-tenant-users"></a>Créer un PD DEP pour une utilisation avec plusieurs charges de travail pour tous les utilisateurs clients
 
 Avant de commencer, assurez-vous d’avoir effectué les tâches requises pour configurer le client. Pour plus d’informations, [voir Configurer la clé client.](customer-key-set-up.md) Pour créer le PED, vous avez besoin des URIs de coffre de clés que vous avez obtenus lors de l’installation. Pour plus d’informations, [voir Obtenir l’URI de chaque clé Azure Key Vault.](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)
 
@@ -31,7 +31,7 @@ Pour créer une PD DEP à charges multiples, suivez les étapes suivantes :
   
 1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
-2. Pour créer un dep, utilisez l'New-M365DataAtRestEncryptionPolicy cmdlet.
+2. Pour créer une dep, utilisez l'New-M365DataAtRestEncryptionPolicy cmdlet.
 
    ```powershell
    New-M365DataAtRestEncryptionPolicy -Name <PolicyName> -AzureKeyIDs <KeyVaultURI1, KeyVaultURI2> [-Description <String>]
@@ -41,9 +41,9 @@ Pour créer une PD DEP à charges multiples, suivez les étapes suivantes :
 
    - *PolicyName est* le nom que vous souhaitez utiliser pour la stratégie. Les noms ne peuvent pas contenir d’espaces. Par exemple, Contoso_Global.
 
-   - *KeyVaultURI1 est* l’URI de la première clé de la stratégie. Par exemple : <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
+   - *KeyVaultURI1 est* l’URI de la première clé de la stratégie. Par exemple, <https://contosoWestUSvault1.vault.azure.net/keys/Key_01>.
 
-   - *KeyVaultURI2 est* l’URI de la deuxième clé de la stratégie. Par exemple : <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. Séparez les deux URS par une virgule et un espace.
+   - *KeyVaultURI2 est* l’URI de la deuxième clé de la stratégie. Par exemple, <https://contosoCentralUSvault1.vault.azure.net/keys/Key_02>. Séparez les deux URS par une virgule et un espace.
 
    - *La description de* la stratégie est une description conviviale de la stratégie qui vous aidera à vous souvenir de l’objectif de la stratégie. Vous pouvez inclure des espaces dans la description. Par exemple, « Stratégie racine pour plusieurs charges de travail pour tous les utilisateurs du client ».
 
@@ -93,9 +93,9 @@ Pour créer un deP à utiliser avec une boîte aux lettres, suivez les étapes s
 
    - *La description de* la stratégie est une description conviviale de la stratégie qui vous aidera à vous souvenir de l’objectif de la stratégie. Vous pouvez inclure des espaces dans la description. Par exemple, « Clé racine pour les boîtes aux lettres aux États-Unis et ses territoires ».
 
-   - *KeyVaultURI1 est* l’URI de la première clé de la stratégie. Par exemple : <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+   - *KeyVaultURI1 est* l’URI de la première clé de la stratégie. Par exemple, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
 
-   - *KeyVaultURI2 est* l’URI de la deuxième clé de la stratégie. Par exemple : <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Séparez les deux URS par une virgule et un espace.
+   - *KeyVaultURI2 est* l’URI de la deuxième clé de la stratégie. Par exemple, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Séparez les deux URS par une virgule et un espace.
 
    Exemple :
   
@@ -107,7 +107,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Affecter un deP à une boîte aux lettres
 
-Affectez le deP à une boîte aux lettres à l’aide Set-Mailbox cmdlet. Une fois la stratégie assignée, Microsoft 365 pouvez chiffrer la boîte aux lettres avec la clé identifiée dans le PDV.
+Affectez le deP à une boîte aux lettres à l’aide de Set-Mailbox cmdlet. Une fois la stratégie assignée, Microsoft 365 pouvez chiffrer la boîte aux lettres avec la clé identifiée dans le PDV.
   
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -129,7 +129,7 @@ Avant de commencer, assurez-vous d’avoir effectué les tâches requises pour c
   
 Pour configurer la clé client pour les fichiers SharePoint Online, OneDrive Entreprise et Teams, vous devez effectuer ces étapes en vous connectant à distance à SharePoint Online avec Windows PowerShell.
   
-Vous associez un deP à un ensemble de clés stockées dans Azure Key Vault. Vous appliquez un deP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéogé Office 365, vous pouvez créer une dep par géo avec la possibilité d’utiliser différentes clés par géo. Si vous n’utilisez pas multigéogé, vous pouvez en créer un dans votre organisation pour une utilisation avec les fichiers SharePoint Online, OneDrive Entreprise et Teams. Microsoft 365 utilise les clés identifiées dans la PD DEP pour chiffrer vos données dans cette géo. Pour créer le PED, vous avez besoin des URIs de coffre de clés que vous avez obtenus lors de l’installation. Pour plus d’informations, [voir Obtenir l’URI de chaque clé Azure Key Vault.](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)
+Vous associez un deP à un ensemble de clés stockées dans Azure Key Vault. Vous appliquez un deP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéogé Office 365, vous pouvez créer une dep par géo avec la possibilité d’utiliser différentes clés par géo. Si vous n’utilisez pas multigéogé, vous pouvez en créer un dans votre organisation pour l’utiliser avec les fichiers SharePoint Online, OneDrive Entreprise et Teams. Microsoft 365 utilise les clés identifiées dans la PD DEP pour chiffrer vos données dans cette géo. Pour créer le PED, vous avez besoin des URIs de coffre de clés que vous avez obtenus lors de l’installation. Pour plus d’informations, [voir Obtenir l’URI de chaque clé Azure Key Vault.](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)
   
 N’oubliez pas ! Lorsque vous créez un deP, vous spécifiez deux clés dans deux coffres de clés Azure différents. Créez ces clés dans deux régions Azure distinctes pour assurer la redondance géographique.
   
@@ -183,7 +183,7 @@ Pour affecter un dep à une boîte aux lettres avant de la migrer vers Office 36
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Déterminer le deP affecté à une boîte aux lettres
 
-Pour déterminer le deP affecté à une boîte aux lettres, utilisez la cmdlet Get-MailboxStatistics de messagerie. La cmdlet renvoie un identificateur unique (GUID).
+Pour déterminer le dep affecté à une boîte aux lettres, utilisez la cmdlet Get-MailboxStatistics. La cmdlet renvoie un identificateur unique (GUID).
   
 1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
@@ -224,7 +224,7 @@ La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boî
 Vérifiez l’état du chiffrement en exécutant la cmdlet Get-SPODataEncryptionPolicy comme suit :
 
 ```PowerShell
-   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy <SPOAdminSiteUrl>
 ```
 
 Le résultat de cette cmdlet inclut :
@@ -243,11 +243,13 @@ Le résultat de cette cmdlet inclut :
 
   - **Déploiement :** Un roulis de touches est en cours. Si la clé de la géo est en cours de déploiement, vous verrez également des informations sur le pourcentage de sites qui ont terminé l’opération de déploiement de clé afin de pouvoir surveiller la progression.
 
+- Il produit également le pourcentage de sites intégrés.
+
 ## <a name="get-details-about-deps-you-use-with-multiple-workloads"></a>Obtenir des détails sur les PD DEP que vous utilisez avec plusieurs charges de travail
 
-Pour obtenir des détails sur tous les dep que vous avez créés pour une utilisation avec plusieurs charges de travail, complétez les étapes suivantes :
+Pour obtenir des détails sur tous les dep que vous avez créés pour utiliser plusieurs charges de travail, complétez les étapes suivantes :
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
    - Pour renvoyer la liste de tous les dep de charges de travail multiples dans l’organisation, exécutez cette commande.
 
@@ -265,7 +267,7 @@ Pour obtenir des détails sur tous les dep que vous avez créés pour une utilis
 
 Pour savoir quel deP est actuellement affecté à votre client, suivez ces étapes. 
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
 2. Tapez cette commande.
 
@@ -277,7 +279,7 @@ Pour savoir quel deP est actuellement affecté à votre client, suivez ces étap
 
 Avant de désactiver une PD DEP à charges multiples, désattribuez-la des charges de travail de votre client. Pour désactiver un deP utilisé avec plusieurs charges de travail, effectuer les étapes suivantes :
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
 2. Exécutez lSet-M365DataAtRestEncryptionPolicy cmdlet.
   
@@ -311,7 +313,7 @@ Si le coffre de clés contient déjà une clé du même nom, l’opération de r
   
 ## <a name="manage-key-vault-permissions"></a>Gérer les autorisations de coffre de clés
 
-Plusieurs cmdlets sont disponibles qui vous permettent d’afficher et, si nécessaire, de supprimer les autorisations de coffre de clés. Vous devrez peut-être supprimer des autorisations, par exemple, lorsqu’un employé quitte l’équipe. Pour chacune de ces tâches, vous utiliserez Azure PowerShell. Pour plus d’informations Azure PowerShell, voir [Vue d’ensemble Azure PowerShell](/powershell/azure/).
+Plusieurs cmdlets sont disponibles pour vous permettre d’afficher et, si nécessaire, de supprimer les autorisations de coffre de clés. Vous devrez peut-être supprimer des autorisations, par exemple, lorsqu’un employé quitte l’équipe. Pour chacune de ces tâches, vous utiliserez Azure PowerShell. Pour plus d’informations Azure PowerShell, voir [Vue d’ensemble Azure PowerShell](/powershell/azure/).
 
 Pour afficher les autorisations de coffre de clés, exécutez Get-AzKeyVault cmdlet.
 
@@ -370,7 +372,7 @@ Microsoft 365 audite et valide le chemin de purge des données. Pour plus d’in
 
 - [Considérations sur la planification de sortie d’O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-La purge de la PDV à charges multiples n’est pas prise en charge Microsoft 365 clé client. Le PD DEP à charges multiples est utilisé pour chiffrer des données sur plusieurs charges de travail pour tous les utilisateurs du client. La purge de ce type de PDN entraînerait l’in inaccessible des données provenant de plusieurs charges de travail. Si vous décidez de quitter Microsoft 365 services, vous pouvez suivre le chemin d’accès à la suppression du client selon le processus documenté. Découvrez [comment supprimer un client dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+La purge de la PDV à charges multiples n’est pas prise en charge Microsoft 365 clé client. Le PD DEP à charges multiples est utilisé pour chiffrer des données sur plusieurs charges de travail entre tous les utilisateurs du client. La purge de ce type de PDN entraînerait l’in inaccessible des données provenant de plusieurs charges de travail. Si vous décidez de quitter Microsoft 365 services, vous pouvez suivre le chemin d’accès à la suppression du client selon le processus documenté. Découvrez [comment supprimer un client dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Révoquer vos clés client et la clé de disponibilité Exchange Online et Skype Entreprise
 
@@ -385,7 +387,7 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
 1. Supprimez les autorisations wrap et unwrap pour « O365 Exchange Online » des coffres de clés Azure.
 
-2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre organisation, connectez-vous [Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre [organisation, connectez-vous Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 3. Pour chaque PDE qui contient des boîtes aux lettres à supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](/powershell/module/exchange/set-dataencryptionpolicy) comme suit.
 
@@ -397,7 +399,7 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
 4. Contactez le support Microsoft et demandez l’eDocument de purge des données.
 
-    À votre demande, Microsoft vous envoie un document juridique pour accusé de réception et autoriser la suppression des données. La personne de votre organisation qui s’est inscrite en tant qu’approuveur dans l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisé à signer les formalités au nom de votre organisation.
+    À votre demande, Microsoft vous envoie un document juridique pour accusé de réception et autoriser la suppression des données. La personne de votre organisation qui s’est inscrite en tant qu’approuveur à l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisé à signer les formalités au nom de votre organisation.
 
 5. Une fois que votre représentant a signé le document juridique, renvoyez-le à Microsoft (généralement via une signature eDoc).
 
@@ -413,7 +415,7 @@ Pour lancer le chemin d’accès de purge des données pour SharePoint Online, O
 
 2. Contactez Microsoft pour supprimer la clé de disponibilité.
 
-    Lorsque vous contactez Microsoft pour supprimer la clé de disponibilité, nous vous envoyons un document juridique. La personne de votre organisation qui s’est inscrite en tant qu’approuveur dans l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisée à signer les formalités au nom de votre organisation.
+    Lorsque vous contactez Microsoft pour supprimer la clé de disponibilité, nous vous envoyons un document juridique. La personne de votre organisation qui s’est inscrite en tant qu’approuveur à l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisée à signer les formalités au nom de votre organisation.
 
 3. Une fois que votre représentant signe le document juridique, renvoyez-le à Microsoft (généralement par le biais d’une signature eDoc).
 
@@ -421,7 +423,7 @@ Pour lancer le chemin d’accès de purge des données pour SharePoint Online, O
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement de service avec clé client](customer-key-overview.md)
+- [Chiffrement du service avec la clé client](customer-key-overview.md)
 
 - [En savoir plus sur la clé de disponibilité](customer-key-availability-key-understand.md)
 

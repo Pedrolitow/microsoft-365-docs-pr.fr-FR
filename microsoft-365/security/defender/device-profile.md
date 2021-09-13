@@ -14,11 +14,11 @@ ms.topic: article
 search.appverid: met150
 ms.technology: m365d
 ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183208"
 ---
 # <a name="device-profile-page"></a>Page de profil d’appareil
 
@@ -75,7 +75,7 @@ Les actions de réponse offrent un moyen rapide de se défendre contre les menac
 Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 
 * **Gérer les balises** : met à jour les balises personnalisées que vous avez appliquées à cet appareil.
-* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en conservant sa connexion à Microsoft Defender pour endpoint. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise à s’exécuter lorsque l’appareil est isolé, à des fins de communication.
+* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en conservant sa connexion à Microsoft Defender pour endpoint. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise’exécuter pendant que l’appareil est isolé, à des fins de communication.
 * **Centre de actions** : afficher l’état des actions envoyées. Disponible uniquement si une autre action a déjà été sélectionnée.
 * **Restreindre l’exécution de** l’application : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
 * **Exécuter une analyse antivirus** : met à jour Antivirus Windows Defender définitions et exécute immédiatement une analyse antivirus. Choisissez entre l’analyse rapide ou l’analyse complète.
@@ -96,7 +96,7 @@ L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide de
 
 ![Image de l’onglet Vue d’ensemble pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
-Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et des utilisateurs actuellement connectés.
+Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et de tous les utilisateurs actuellement connectés.
 
 Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
 
@@ -110,7 +110,7 @@ Vous pouvez personnaliser le nombre d’éléments affichés, ainsi que les colo
 
 Les colonnes de cet onglet incluent des informations sur la gravité de la menace ayant déclenché l’alerte, ainsi que sur l’état, l’état de l’enquête et la personne à qui l’alerte a été affectée.
 
-La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau affectés.
+La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau concernés.
 
 La sélection d’un élément dans cette liste ouvre un volant contenant encore plus d’informations sur l’alerte sélectionnée.
 
@@ -178,7 +178,7 @@ Le nombre d’éléments affichés par page et les colonnes affichées peuvent �
 
 La sélection d’un élément ouvre un volant qui relie la mise à jour.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 * [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 * [Activer Microsoft 365 Defender](m365d-enable.md)

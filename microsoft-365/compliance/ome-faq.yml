@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 0fb607492d8df6b1e10d73191b6d662ea6bb63eb39da74e0bfed6ba331c1516f
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: 2e59d4b4d2d077921e1c6c9496d14e59bae2317a
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "53813642"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59206092"
 title: FAQ sur le chiffrement des messages
 summary: >
   Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici. En outre, jetez un œil aux questions fréquemment posées sur la protection des données dans [Azure Information Protection](/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans Azure Information Protection.
@@ -35,7 +35,7 @@ sections:
     answer: "Vous pouvez utiliser les nouvelles fonctionnalités pour OME dans les conditions suivantes :\n  \n- Si vous n’avez jamais installé OME ou IRM pour Exchange Online dans Office 365.\n\n- Si vous avez installé OME et IRM, vous pouvez suivre ces étapes si vous utilisez le service Azure Rights Management à partir d’Azure Information Protection.\n\n- Si vous utilisez Exchange Online services AD RMS (Active Directory Rights Management Service), vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [d’abord migrer AD RMS vers Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Une fois la migration terminée, vous pouvez configurer OME.\n\n  Si vous choisissez de continuer à utiliser AD RMS local avec Exchange Online au lieu de migrer vers Azure Information Protection, vous ne pourrez pas utiliser ces nouvelles fonctionnalités.\n"
   - question: >
       De quels abonnements ai-je besoin pour utiliser les nouvelles fonctionnalités OME ?
-    answer: "Pour utiliser les nouvelles fonctionnalités OME, vous avez besoin de l’un des plans suivants :\n  \n- chiffrement de messages Office 365 est proposé dans le cadre de Office 365 Entreprise E3 et E5, Microsoft Enterprise E3 et E5, Microsoft 365 Business Premium, Office 365 A1, A3 et A5, ainsi que Office 365 Secteur public G3 et G5. Vous n’avez pas besoin de licences supplémentaires pour recevoir les nouvelles fonctionnalités de protection optimisées par Azure Information Protection.\n\n- Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir les nouvelles fonctionnalités de chiffrement de messages Office 365 : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.\n\n- Chaque utilisateur bénéficiant de chiffrement de messages Office 365 doit être titulaire d’une licence pour être couvert par la fonctionnalité.\n\n- Pour obtenir la liste complète, [consultez les descriptions Exchange Online service d’chiffrement de messages Office 365.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)\n"
+    answer: "Pour utiliser les nouvelles fonctionnalités OME, vous avez besoin de l’un des plans suivants :\n  \n- chiffrement de messages Office 365 est proposé dans le cadre de Office 365 Entreprise E3 et E5, Microsoft Enterprise E3 et E5, Microsoft 365 Business Premium, Office 365 A1, A3 et A5, ainsi que Office 365 Secteur public G3 et G5. Vous n’avez pas besoin de licences supplémentaires pour recevoir les nouvelles fonctionnalités de protection optimisées par Azure Information Protection.\n\n- Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir les nouvelles fonctionnalités de chiffrement de messages Office 365 : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.\n\n- Chaque utilisateur bénéficiant de chiffrement de messages Office 365 doit être titulaire d’une licence pour être couvert par la fonctionnalité.\n\n- Pour obtenir la liste complète, [consultez les descriptions Exchange Online service d’chiffrement de messages Office 365.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)\n"
   - question: >
       Puis-je utiliser Exchange Online avec votre propre clé (BYOK) dans Azure Information Protection ?
     answer: "Oui. Microsoft vous recommande d’effectuer les étapes de la mise en place de BYOK avant de configurer OME.\n  \nPour plus d’informations sur BYOK, voir Planification et mise en œuvre de votre clé de [client Azure Information Protection.](/information-protection/plan-design/plan-implement-tenant-key)\n  \n"
@@ -123,9 +123,9 @@ sections:
     answer: >
       Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous pouvez uniquement configurer une règle pour supprimer le chiffrement des messages entrants provenant de votre organisation.
   - question: >
-      Puis-je chiffrer automatiquement les messages en mettant en place des stratégies dans la protection contre la perte de données (DLP) via le Centre de conformité Microsoft 365 ?
+      Puis-je chiffrer automatiquement les messages en mettant en place des stratégies dans la protection contre la perte de données (DLP) via le Centre de conformité Microsoft 365 ?
     answer: >
-      Oui. Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de la DLP dans le Centre de conformité Microsoft 365.
+      Oui. Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de la DLP dans le Centre de conformité Microsoft 365.
   - question: >
       Puis-je personnaliser les messages chiffrés avec la marque de mon entreprise ?
     answer: "Oui. Pour plus d’informations sur la personnalisation des messages électroniques et du portail OME, voir Ajouter la marque de votre organisation à vos messages chiffrés. Voir [Ajouter la marque de votre organisation à vos messages chiffrés.](add-your-organization-brand-to-encrypted-messages.md)\n  \n"

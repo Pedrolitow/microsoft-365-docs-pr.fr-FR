@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Vous devez être administrateur d’un abonnement professionnel pour obtenir de l’aide sur l’administrateur ou un support en ligne ou par téléphone dans Microsoft 365 Business Premium.
-ms.openlocfilehash: f38e07cb7db25cbc6d6fa3e813d8f7c5863e4055
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: d636f153e41963ada30bd10066e4211325933cbe
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206596"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -159,7 +160,7 @@ Gravité B/C : 9h00 ~ 24h00 [heure de Pékin (Beijing)] par jour, 365 jours.
 
 ### <a name="open-an-online-request"></a>Ouvrir une demande en ligne
 
-Gagnez du temps en créant votre demande de service en ligne. Dans le Centre d’Administration Microsoft 365, choisissez **Support** \>**Nouvelle demande de service**.
+Gagnez du temps en créant votre demande de service en ligne. Dans le 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, choisissez **Support** \> **Nouvelle demande de service**.
 
 ### <a name="call-support"></a>Appeler le support technique
 

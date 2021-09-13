@@ -20,11 +20,11 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 ms.openlocfilehash: 87f4e62f05e29147213d70b28e1778ea9e3ea683
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573186"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205795"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Résoudre les problèmes d’AzCopy dans Advanced eDiscovery
 

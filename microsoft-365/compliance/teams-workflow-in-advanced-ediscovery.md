@@ -15,11 +15,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Découvrez comment conserver, collecter, réviser et exporter du contenu à partir de Microsoft Teams dans Advanced eDiscovery.
 ms.openlocfilehash: 462442d2319c2c199d39795b77b67c6dcefdb758
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573234"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205844"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams-using-large-cases-preview"></a>Advanced eDiscovery flux de travail pour le contenu Microsoft Teams à l’aide de grands cas (aperçu)
 
@@ -265,7 +265,7 @@ Le tableau suivant décrit les propriétés de métadonnées pour Teams contenu.
 |:---------|:---------|
 |ContainsEditedMessage      | Indique si un fichier de transcription contient un message modifié. Les messages modifiés sont identifiés lors de l’affichage du fichier de transcription.|
 |ConversationId|GUID qui identifie la conversation à qui l’élément est associé. Les fichiers et pièces jointes de transcription de la même conversation ont la même valeur pour cette propriété.|
-|Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation sont concatenés. Par exemple : `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams canal privé et les conversations de canal privé utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>` .Par exemple : `eDiscovery vNext, General`.          |
+|Nom de la conversation     | Nom de la conversation à qui le fichier de transcription ou la pièce jointe est associé. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est l’UPN de tous les participants de la conversation sont concatenés. Par exemple, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams canal privé et les conversations de canal privé utilisent le format suivant pour le nom de la conversation : `<Team name>,<Channel name>` .Par exemple, `eDiscovery vNext, General`.          |
 |ConversationType     | Indique le type de conversation d’équipe. Pour Teams 1:1 et les conversations de groupe, la valeur de cette propriété est `Group` . Pour Teams de canal privé et privé, la valeur est `Channel` .|
 |Date | Horodaté du premier message dans le fichier de transcription.|
 |FamilyId|GUID qui identifie le fichier de transcription d’une conversation. Les pièces jointes auront la même valeur pour cette propriété que le fichier de transcription qui contient le message à qui le fichier a été joint.|

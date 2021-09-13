@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 598578c376b36bafc33745024c432a0229765df7960dc62d2be65b37a8377733
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: dbc862fbab11e3fe16783bd3269cd18e9599a8bf
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206812"
 ---
 # <a name="contact-support-for-honduras"></a>Contacter le support technique pour le Honduras
 

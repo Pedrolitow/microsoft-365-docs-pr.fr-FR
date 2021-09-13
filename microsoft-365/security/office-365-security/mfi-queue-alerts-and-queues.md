@@ -13,11 +13,11 @@ description: Les administrateurs peuvent apprendre à utiliser le widget Files d
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: eb907d6eed5ce1c406288338c478936db00e4a67
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207140"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 

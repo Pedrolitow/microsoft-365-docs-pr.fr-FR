@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c1f28aa46b4f20c2ba12eaf7c688089d98ff8b37c08b27e0facb92a672ff2f7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56799364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207260"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -37,15 +37,15 @@ ms.locfileid: "56799364"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
+Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
 
 - **Le harponnage** utilise du contenu ciblé et personnalisé qui est spécifiquement adapté aux destinataires ciblés (généralement, après la reconnaissance des destinataires par l’attaquant).
 
-- **La whaling** est dirigée vers les cadres ou d’autres cibles à valeur élevée au sein d’une organisation pour un effet maximal.
+- **Le harponnage de cadre** est dirigé vers les cadres ou d’autres cibles à valeur élevée au sein d’une organisation pour un effet maximal.
 
 - La compromission de messagerie professionnelle **(BEC)** utilise des expéditeurs de confiance falsifiés (responsables financiers, clients, partenaires de confiance, etc.) pour duplicher les destinataires dans l’approbation des paiements, le transfert de fonds ou la découverte de données client. Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2).
 
-- **Les ransomware** qui chiffrent vos données et exigent un paiement pour les déchiffrer démarrent presque toujours dans les messages d’hameçonnage. La protection anti-hameçonnage ne peut pas vous aider à déchiffrer les fichiers chiffrés, mais elle peut vous aider à détecter les messages de hameçonnage initiaux associés à la campagne de ransomware. Pour plus d’informations sur la récupération suite à une attaque par ransomware, voir [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
+- **Les ransomware** qui chiffrent vos données et exigent un paiement pour les déchiffrer démarrent presque toujours dans les messages d’hameçonnage. La protection anti-hameçonnage ne peut pas vous aider à déchiffrer les fichiers chiffrés, mais elle peut vous aider à détecter les messages de hameçonnage initiaux associés à la campagne de rançongiciel. Pour plus d’informations sur la récupération suite à une attaque par ransomware, voir [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
 
 Avec la complexité croissante des attaques, il est même difficile pour les utilisateurs formés d’identifier les messages de hameçonnage sophistiqués. Heureusement, Exchange Online Protection (EOP) et les fonctionnalités supplémentaires de Microsoft Defender pour Office 365 peuvent vous aider.
 

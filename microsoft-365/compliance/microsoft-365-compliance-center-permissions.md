@@ -12,15 +12,15 @@ localization_priority: Normal
 description: En savoir plus sur la gestion des autorisations dans le Centre de conformité Microsoft 365.
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 717b8cd312aad805107536b174b3a9cd58e72a55
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206195"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Autorisations dans le Centre de conformité Microsoft 365
 
-Le Centre de conformité Microsoft 365 a été récemment mis à jour et prend désormais en charge la gestion directe des autorisations pour les utilisateurs qui effectuent des tâches de conformité dans Microsoft 365. Cette mise à jour signifie que vous n’aurez plus besoin d’utiliser le Centre Office 365 sécurité et conformité & pour gérer les autorisations pour les solutions de conformité. À l’aide de la nouvelle page Autorisations du Centre de conformité Microsoft 365, vous pouvez gérer les autorisations accordées aux utilisateurs pour les tâches de conformité dans des **fonctionnalités telles** que la gestion des appareils, la protection contre la perte de données, eDiscovery, la gestion des risques internes, la rétention et bien d’autres encore. Les utilisateurs peuvent effectuer uniquement les tâches de conformité à qui vous leur accordez explicitement l’accès.
+Le Centre de conformité Microsoft 365 a été récemment mis à jour et prend désormais en charge la gestion directe des autorisations pour les utilisateurs qui effectuent des tâches de conformité dans Microsoft 365. Cette mise à jour signifie que vous n’aurez plus besoin d’utiliser le Centre Office 365 sécurité et conformité & pour gérer les autorisations pour les solutions de conformité. À l’aide de la nouvelle page Autorisations dans le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations accordées aux utilisateurs pour les tâches de conformité dans des **fonctionnalités telles** que la gestion des appareils, la protection contre la perte de données, eDiscovery, la gestion des risques internes, la rétention, etc. Les utilisateurs peuvent effectuer uniquement les tâches de conformité à qui vous leur accordez explicitement l’accès.
 
 Pour afficher l’onglet Autorisations dans le Centre de conformité Microsoft 365, les utilisateurs doivent être  administrateur général ou avoir le  rôle Gestion des rôles (un rôle est attribué uniquement au groupe de **rôles** Gestion de l’organisation). Le *rôle Gestion des* rôles permet aux utilisateurs d’afficher, de créer et de modifier des groupes de rôles.
 
@@ -38,7 +38,7 @@ Un groupe de rôles est un ensemble de rôles qui permettent aux utilisateurs d�
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>Autorisations nécessaires pour utiliser les fonctionnalités du Centre de conformité Microsoft 365
 
-Pour afficher tous les groupes de rôles par défaut disponibles dans le Centre de conformité Microsoft 365 et les rôles qui sont attribués aux groupes de rôles par défaut, consultez les [autorisations](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)dans le Centre de sécurité & conformité.
+Pour afficher tous les groupes de rôles par défaut qui sont disponibles dans le Centre de conformité Microsoft 365 et les rôles qui sont attribués aux groupes de rôles par défaut, consultez les [autorisations](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)dans le Centre de sécurité & conformité.
 
 La gestion des autorisations dans le Centre de conformité Microsoft 365 permet uniquement aux utilisateurs d’accéder aux fonctionnalités de conformité disponibles dans le Centre de conformité Microsoft 365. Si vous souhaitez accorder des autorisations à d’autres fonctionnalités qui ne sont pas dans le Centre de conformité Microsoft 365, telles que les règles de flux de messagerie Exchange (également appelées règles de transport), vous devez utiliser le Centre d’administration Exchange.
 
@@ -46,7 +46,7 @@ La gestion des autorisations dans le Centre de conformité Microsoft 365 permet
 
 Les rôles qui apparaissent dans la section **Rôles Azure AD** de la page  >   **Autorisations** Centre de conformité Microsoft 365 sont Azure Active Directory rôles. Ces rôles sont conçus pour s’aligner sur les fonctions du groupe informatique de votre organisation, ce qui permet de donner à vos utilisateurs les autorisations nécessaires pour accomplir leur travail. Vous pouvez afficher les utilisateurs actuellement affectés à chaque rôle en sélectionnant un rôle d’administrateur et en visualnant les détails du panneau de rôles. Pour gérer les membres d’un rôle Azure AD, sélectionnez Gérer les membres dans Azure AD. Ce choix vous redirige vers le portail de gestion Azure.
 
-|Rôle|Description|
+|Role|Description|
 |:---|:----------|
 |**Administrateur général**|Accède à toutes les fonctionnalités d’administration de tous les services Microsoft 365. Seuls les administrateurs généraux peuvent affecter d’autres rôles d’administrateur. Pour plus d’informations, consultez la section [Administrateur Général / Administrateur d’entreprise](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
 |**Administrateur de conformité des données**|Effectue un suivi des données de votre organisation dans Microsoft 365, vérifie qu’elles sont protégées et obtient des informations sur les problèmes liés à l’atténuation des risques. Pour en savoir plus, consultez la section [Administrateur de conformité des données](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|

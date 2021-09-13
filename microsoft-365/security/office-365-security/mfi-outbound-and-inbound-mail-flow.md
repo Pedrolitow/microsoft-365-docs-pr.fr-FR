@@ -14,11 +14,11 @@ description: Les administrateurs peuvent en savoir plus sur les informations sur
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6fe4f7bded7a3d1fcca26d537de24513f27bc0ec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183015"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Informations sur le flux de messagerie sortant et entrant dans le Centre de sécurité & conformité
 
@@ -51,7 +51,7 @@ Actuellement, TLS 1.2 est la version de TLS la plus sécurisée proposée par Mi
 
 Toutefois, vous pouvez utiliser des [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) pour garantir la meilleure protection TLS disponible pour les messages envoyés entre vos serveurs de messagerie et Microsoft 365. Le flux de messagerie entre Microsoft 365 et vos propres serveurs de messagerie ou serveurs qui appartiennent à vos partenaires est souvent plus important et sensible que les messages ordinaires. Vous pouvez donc appliquer une sécurité et un niveau de sécurité supplémentaires à ces messages.
 
-Vous pouvez mettre à niveau ou corriger vos propres serveurs de messagerie pour améliorer le chiffrement TLS utilisé, ou contactez vos partenaires pour en faire de même. Le **rapport connecteur affiche** à la fois le volume de flux de messagerie et le chiffrement TLS pour les messages qui utilisent Microsoft 365 connecteurs.
+Vous pouvez mettre à niveau ou corriger vos propres serveurs de messagerie pour améliorer le chiffrement TLS utilisé, ou contactez vos partenaires pour en faire de même. Le **rapport connecteur affiche** le volume de flux de messagerie et le chiffrement TLS pour les messages qui utilisent Microsoft 365 connecteurs.
 
 Vous pouvez cliquer sur **le lien du rapport connecteur** pour aller au rapport [connecteur.](view-mail-flow-reports.md#connector-report) Les informations suivantes peuvent être disponibles sur la page de rapport **connecteur** si la condition associée a été détectée :
 

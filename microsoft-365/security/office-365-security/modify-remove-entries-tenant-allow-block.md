@@ -17,11 +17,11 @@ description: Les administrateurs peuvent découvrir comment modifier et supprime
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183007"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modifier et supprimer des entrées dans la liste verte/rouge du client
 
@@ -119,7 +119,7 @@ Pour modifier les entrées d’expéditeurs usurpées dans la liste d’adresses
 Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
 ```
 
-Cet exemple modifie l’entrée de l’expéditeur usurpé de l’adresse « allow » à « block ».
+Cet exemple modifie l’entrée de l’expéditeur usurpé de l’autoriser à la bloquer.
 
 ```powershell
 Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block

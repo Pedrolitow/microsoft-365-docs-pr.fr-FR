@@ -19,17 +19,17 @@ ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un groupe Advanced eDiscovery révision de cas.
 ms.openlocfilehash: aeb7942fc12089bd458236221dd7394a8018e780
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206404"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
 Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à passer en revue et à analyser ces résultats de recherche, vous pouvez les ajouter à un groupe de révision dans le cas. La copie des données d’origine dans l’ensemble de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés tels que la détection de thèmes, la détection de quasi-doublons et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données non Microsoft 365 à un groupe de révision afin de pouvoir passer en revue ces données en plus des données que vous collectez à partir de Microsoft 365.
 
-Lorsque vous ajoutez les résultats d’une recherche à un jeu à  réviser (les ensembles de révision dans un cas sont répertoriés sous l’onglet Jeux de révision), les éléments suivants se produisent :
+Lorsque vous ajoutez les résultats d’une recherche à un jeu à  réviser (les ensembles de révision dans un cas sont répertoriés sous l’onglet Ensembles de révision), les éléments suivants se produisent :
 
 - La recherche est de nouveau exécuté. Cela signifie que les résultats de recherche réels copiés dans le jeu à réviser peuvent être différents des résultats estimés qui ont été renvoyés lors de la dernière utilisation de la recherche.
 
@@ -45,7 +45,7 @@ Vous pouvez ajouter un jeu à réviser existant ou en créer un nouveau.  Si vou
 
 ![Sélectionnez un jeu à réviser et configurez les options de collection.](../media/AeD_AddToReviewSet.png)
 
-L’ajout de données à un groupe de révision est un processus à long terme. Ce processus comprend la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie à l’emplacement stockage Azure (ce processus de copie est également appelé *ingestion),* puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **Travaux** ou dans  l’onglet **Recherches** en surveillant l’état dans la colonne Données ajoutées à réviser. Une fois le traitement de  l’ensemble de révision terminé, cliquez sur l’onglet Ensembles de révision dans le cas, puis cliquez sur le jeu à réviser pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans le jeu à réviser.
+L’ajout de données à un groupe de révision est un processus à long terme. Ce processus comprend la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie à l’emplacement stockage Azure (ce processus de copie est également appelé *ingestion),* puis la réindexation des éléments. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou dans  l’onglet **Recherches** en surveillant l’état dans la colonne Ajout de données à réviser. Une fois le traitement de  l’ensemble de révision terminé, cliquez sur l’onglet Ensembles de révision dans le cas, puis cliquez sur le jeu à réviser pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans le jeu à réviser.
 
 ## <a name="define-options-to-scope-your-collection-for-review"></a>Définir des options pour définir l’étendue de votre collection pour révision
 
@@ -67,7 +67,7 @@ Pour ajouter un exemple à un jeu à réviser, cliquez sur une recherche sous l�
 
 - **Exemple aléatoire %** : les éléments ajoutés au jeu à réviser sont basés sur une sélection aléatoire du pourcentage spécifié du nombre total d’éléments renvoyés par la recherche.
 
-Après avoir sélectionné et configuré l’une des options précédentes, choisissez un jeu à réviser pour ajouter l’exemple, puis cliquez sur **Envoyer.** Là encore, vous pouvez suivre l’avancement sous l’onglet **Travaux**  ou dans l’onglet **Recherches** en surveillant l’état dans la colonne Données ajoutées à réviser.
+Après avoir sélectionné et configuré l’une des options précédentes, choisissez un jeu à réviser pour ajouter l’exemple, puis cliquez sur **Envoyer**. Là encore, vous pouvez suivre l’avancement sous l’onglet **Travaux**  ou dans l’onglet **Recherches** en surveillant l’état dans la colonne Données ajoutées à réviser.
 
 ## <a name="optical-character-recognition"></a>Reconnaissance optique des caractères
 

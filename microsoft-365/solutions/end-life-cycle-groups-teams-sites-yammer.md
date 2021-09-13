@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Options de fin de cycle de vie pour les groupes, les équipes et les Yammer.
-ms.openlocfilehash: 9532fb7f7c57cf883a0c4d989c5372239eab1c9666890dabfa598cacdbb652cf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59182968"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Options de fin de cycle de vie pour les groupes, les équipes et les Yammer
 
@@ -44,7 +44,7 @@ Le tableau suivant décrit les services associés aux groupes et aux équipes, a
 |Feuille de route|Feuilles de route|
 |SharePoint|Fichiers, listes, données wiki Teams canal|
 |Stream|Vidéos|
-|Yammer|Conversations|
+|Protester|Conversations|
 
 Lors de la suppression d’un groupe ou d’une équipe, la plupart des ressources associées sont également supprimées. Les exceptions sont les suivantes :
 
@@ -255,7 +255,7 @@ Comme Power Automate, les vidéos dans Stream associées à un groupe ou à une 
 
 Dans les scénarios où la vidéo n’a pas besoin d’être conservée dans Stream ou doit être stockée dans un autre emplacement tel qu’un système de gestion des enregistrements, un propriétaire peut la télécharger [localement.](/stream/portal-download-video)
 
-## <a name="yammer"></a>Yammer
+## <a name="yammer"></a>Protester
 
 Contrairement aux conversations Microsoft Teams, Yammer offre aux utilisateurs et aux administrateurs des options pour déplacer ou exporter des conversations.
 
@@ -267,6 +267,6 @@ Les conversations peuvent être déplacées vers un autre groupe de Yammer par n
 
 Yammer réseau [exportent les données réseau.](/yammer/manage-security-and-compliance/export-yammer-enterprise-data) Toutefois, cela exportera toutes les conversations pour l’ensemble du réseau. L’exportation qui en résulte répertorie l’ID de groupe. Il est possible de filtrer les conversations en fonction de cet ID.
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Supprimer un ancien employé et sécuriser les données](/microsoft-365/admin/add-users/remove-former-employee)

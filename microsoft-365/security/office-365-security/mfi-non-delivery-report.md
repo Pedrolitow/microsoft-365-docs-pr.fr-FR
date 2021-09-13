@@ -15,11 +15,11 @@ description: Les administrateurs peuvent apprendre à utiliser le rapport de non
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 6e49fa403789f7c923bfbdd86b4b1555400a8a99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568743"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207148"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport de non-remise dans le Centre de conformité & sécurité
 
@@ -40,7 +40,7 @@ Cliquez sur le widget de rapport de **non-remise** pour vous rendre dans la rapp
 
 Par défaut, l’activité de tous les codes d’erreur s’affiche. Si vous cliquez **sur Afficher les données pour**, vous pouvez sélectionner un code d’erreur spécifique dans ladown.
 
-Si vous pointez sur une couleur spécifique (code d’erreur) un jour spécifique dans le graphique, vous verrez le nombre total de messages pour l’erreur.
+Si vous pointez sur une couleur spécifique (code d’erreur) un jour spécifique du graphique, vous verrez le nombre total de messages pour l’erreur.
 
 ![Affichage du rapport dans le rapport de domaine non accepté.](../../media/mfi-non-delivery-report-overview-view.png)
 
@@ -66,6 +66,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec
 
 ![Volant de détails après la sélection d’une ligne dans l’affichage De la table Détails dans le rapport de non-remise.](../../media/mfi-non-delivery-report-details-flyout.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

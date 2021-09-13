@@ -19,12 +19,12 @@ metadata:
   description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre l’usurpation d’Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 8765b287e1f6ca25b21b518bda4b642929251fbb63ac8b6a967eabfaa850d3df
-  ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+  ms.openlocfilehash: cab4af2dd359b878cdf417a2378c05d2aa706107
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "56852530"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59207219"
 title: FAQ sur la protection contre l’usurpation d’identité
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]

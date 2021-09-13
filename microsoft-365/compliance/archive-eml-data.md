@@ -13,17 +13,17 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données EML de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
 ms.openlocfilehash: 81d6ccc2ca364fed536b802a3b922ebc25c02557
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569824"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206331"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>Configurer un connecteur pour archiver les données EML
 
 Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données EML dans les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. EML est l’extension de fichier pour un message électronique enregistré dans un fichier. Le connecteur convertit le contenu d’un élément du format source au format de message électronique, puis importe l’élément dans une boîte aux lettres utilisateur.
 
-Une fois les messages EML stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery et les stratégies et étiquettes de rétention. L’utilisation d’un connecteur EML pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois les messages EML stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery et les stratégies et étiquettes de rétention. L’utilisation d’un connecteur EML pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-eml-data"></a>Vue d’ensemble de l’archivage des données EML
 
@@ -37,7 +37,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 3. Le connecteur EML que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du processus de mappage utilisateur automatique décrit à l’étape [3](#step-3-map-users-and-complete-the-connector-setup). Au cours de ce processus, un sous-dossier du dossier Boîte de réception nommé **EML** est créé dans les boîtes aux lettres utilisateur et les éléments EML sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque message contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément de contenu.
+4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du processus de mappage automatique des utilisateurs décrit à l’étape [3](#step-3-map-users-and-complete-the-connector-setup). Au cours de ce processus, un sous-dossier du dossier Boîte de réception nommé **EML** est créé dans les boîtes aux lettres utilisateur et les éléments EML sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque message contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément de contenu.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -83,6 +83,6 @@ Après avoir créé le connecteur EML, vous pouvez afficher l’état du connect
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des informations sur les données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

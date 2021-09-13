@@ -18,15 +18,15 @@ ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment afficher et interpréter l’état et les résultats de l’entraînement Pertinence pour les problèmes de Advanced eDiscovery.
 ms.openlocfilehash: ac575ebf073afa8eb4ba13e63202f8b634c52f60
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205835"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Suivre l’analyse de pertinence dans Advanced eDiscovery
   
-Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité calculée de l’entraînement Pertinence effectué dans l’onglet Balise et indique l’étape suivante à effectuer dans le processus de formation itérative en Pertinence. 
+Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité calculée de la formation Pertinence effectuée dans l’onglet Balise et indique l’étape suivante à effectuer dans le processus de formation itérative en Pertinence. 
   
 ## <a name="tracking-relevance-training-status"></a>Suivi de l’état de l’entraînement Pertinence
 
@@ -66,7 +66,7 @@ Une fois que les fichiers d’évaluation ont atteint un niveau stable de format
   
 ### <a name="performing-batch-calculation"></a>Effectuer le calcul par lots
 
-Le calcul par lot est exécuté comme l’étape suivante une fois la formation terminée (lorsqu’un état de formation stable est affiché par la barre de progression, une coche et un état stable dans l’info-conseil).) Le calcul par lots applique les connaissances acquises lors de l’entraînement Pertinence à l’ensemble de la population de fichiers, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
+Le calcul par lot est exécuté en tant qu’étape suivante une fois la formation terminée (lorsqu’un état stable de formation est affiché par la barre de progression, une coche et un état stable dans l’info-conseil).) Le calcul par lots applique les connaissances acquises lors de l’entraînement Pertinence à l’ensemble de la population de fichiers, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
   
 Lorsqu’il y a plusieurs problèmes, le calcul par lot est effectué par problème. Pendant le calcul par lots, la progression est surveillée lors du traitement de tous les fichiers. 
   
@@ -88,7 +88,7 @@ S’il existe des incohérences dans le marquage de fichiers, cela peut affecter
   
 2. À droite de **l’étape suivante,** cliquez sur **Modifier.**
   
-3. Sélectionnez **incohérences de balise comme** option de **l’étape** suivante, après sept exemples de formation et cliquez sur **OK**.
+3. Sélectionnez **incohérences de balise comme** **option** de l’étape suivante, après sept exemples de formation et cliquez sur **OK**.
   
 4. Sélectionner **les incohérences de balise**. **L’onglet** Balise s’ouvre et affiche une liste des incohérences à retager si nécessaire.
   
@@ -135,7 +135,7 @@ Le **volet Progression de** l’entraînement inclut un graphique de progression
   
 ### <a name="batch-calculation-results"></a>Résultats de calcul par lot
 
-Le **volet Résultats du calcul par** lot inclut le nombre de fichiers qui ont été marqués pour Pertinence, comme suit : 
+Le **volet Résultats du calcul batch** inclut le nombre de fichiers qui ont été marqués pour Pertinence, comme suit : 
   
 - **Success**
   

@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à utiliser les informations d’authentification SMTP et le rapport dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (SMTP AUTH) pour envoyer des messages électroniques.
+description: Les administrateurs peuvent apprendre à utiliser l’aperçu d’authentification SMTP et le rapport dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (SMTP AUTH) pour envoyer des messages électroniques.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3d4c39e722ed7d9853a4fb328a8e87aac535bea9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207132"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Informations et rapports sur les clients d’th SMTP dans le Centre de sécurité & conformité
 
@@ -50,11 +50,11 @@ Par défaut, le rapport affiche les données des 7 derniers jours, mais les donn
 
 La section vue d’ensemble contient les graphiques suivants :
 
-- Afficher les données par : volume d’envoi : par défaut, le graphique affiche le nombre de messages clients SMTP Auth qui ont été envoyés à partir de tous les domaines ( Afficher les données pour : Tous les domaines des **expéditeurs** est sélectionné par défaut). Vous pouvez filtrer les résultats sur un  domaine d’expéditeur spécifique en cliquant sur Afficher les données pour et en sélectionnant le domaine de l’expéditeur dans la liste liste. Si vous pointez sur un point de données spécifique (jour), le nombre de messages s’affiche.
+- Afficher les données par : Volume d’envoi : par défaut, le graphique affiche le nombre de messages clients SMTP Auth qui ont été envoyés à partir de tous les domaines ( Afficher les données pour : Tous les domaines des **expéditeurs** est sélectionné par défaut). Vous pouvez filtrer les résultats sur un  domaine d’expéditeur spécifique en cliquant sur Afficher les données pour et en sélectionnant le domaine de l’expéditeur dans la liste liste. Si vous pointez sur un point de données spécifique (jour), le nombre de messages s’affiche.
 
   ![Affichage en volume de l’envoi dans le rapport des clients d’th SMTP dans le Centre de sécurité & conformité.](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- **Afficher les données par : Utilisation TLS**: le graphique affiche le pourcentage d’utilisation de TLS pour tous les messages clients d’th SMTP pendant la période sélectionnée. Ce graphique vous permet d’identifier les utilisateurs et les comptes système qui utilisent encore des versions antérieures de TLS et d’agir sur ces derniers.
+- Afficher les données par : Utilisation du chiffrement **TLS**: le graphique affiche le pourcentage d’utilisation de TLS pour tous les messages clients SMTP Auth pendant la période sélectionnée. Ce graphique vous permet d’identifier les utilisateurs et les comptes système qui utilisent encore des versions antérieures de TLS et d’agir sur ces derniers.
 
   ![Affichage de l’utilisation TLS dans le rapport clients d’th SMTP dans le Centre de sécurité & conformité.](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
@@ -93,6 +93,6 @@ Cliquez **sur Demander un** rapport pour recevoir une version plus détaillée d
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

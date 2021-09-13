@@ -15,11 +15,11 @@ description: Les administrateurs peuvent apprendre à utiliser le plan de flux d
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: bdde117d8984db3a71624ab48a6ed88ba8367054
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183040"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Carte de flux de messagerie dans le Centre de sécurité & conformité
 
@@ -54,7 +54,7 @@ Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spéci
 
 Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Télécharger la demande.**
 
-Les informations associées sont affichées sous le plan de flux de messagerie s’ils sont disponibles (par exemple, l’aperçu de la boucle de courrier [de correction possible).](mfi-mail-loop-insight.md)
+Les informations associées sont affichées sous le plan de flux de messagerie si elles sont disponibles (par exemple, l’aperçu de la boucle de courrier de [correction possible).](mfi-mail-loop-insight.md)
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>Vue de table Détails pour le plan de flux de messagerie
 

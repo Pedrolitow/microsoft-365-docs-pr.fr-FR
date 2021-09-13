@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8509b2487af980e871189ac98d7b37eb9fa3c10f9ec4f4bdc6a7c2f1af5fc488
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 379580c2c404a1a0669cad4fb657c28857072c1c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53901838"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206924"
 ---
 # <a name="contact-support-for-denmark"></a>Contacter le support technique pour le Danemark
 

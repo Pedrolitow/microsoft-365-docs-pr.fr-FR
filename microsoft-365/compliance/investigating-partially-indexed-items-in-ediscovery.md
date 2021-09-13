@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment gérer des éléments partiellement indexés (également appelés éléments non indexés) à partir de Exchange, SharePoint et OneDrive Entreprise au sein de votre organisation.
-ms.openlocfilehash: f578b5ba4b89338c5d6ef861b20d42c4aebbb3b2
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 3030867b3b27b91b32ae8d3c8529ad1d95e9c5ad
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574170"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206204"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Recherche d’éléments partiellement indexés dans eDiscovery
 
@@ -73,7 +73,7 @@ Ainsi, dans l’exemple précédent, 7 % de la taille totale des éléments de b
 
 ## <a name="working-with-partially-indexed-items"></a>Travailler avec des éléments partiellement indexés
 
-Dans les cas où vous devez examiner partiellement les éléments pour vérifier [](export-a-content-search-report.md) qu’ils ne contiennent pas d’informations pertinentes, vous pouvez exporter un rapport de recherche de contenu qui contient des informations sur les éléments partiellement indexés. Lorsque vous exportez un rapport de recherche de contenu, n’oubliez pas de choisir l’une des options d’exportation qui inclut les éléments partiellement indexés.
+Dans les cas où vous devez examiner des éléments partiellement indexés pour [](export-a-content-search-report.md) vérifier qu’ils ne contiennent pas d’informations pertinentes, vous pouvez exporter un rapport de recherche de contenu qui contient des informations sur les éléments partiellement indexés. Lorsque vous exportez un rapport de recherche de contenu, n’oubliez pas de choisir l’une des options d’exportation qui inclut les éléments partiellement indexés.
   
 ![Choisissez la deuxième ou la troisième option pour exporter des éléments partiellement indexés.](../media/PartiallyIndexedItemsExportOptions.png)
   
@@ -177,7 +177,7 @@ Voici un exemple de sortie renvoyée par le script.
 ![Exemple de sortie à partir d’un script qui génère un rapport sur l’exposition de votre organisation aux éléments de courrier partiellement indexés.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
-> Veuillez prendre en compte les éléments suivants:
+> Remarques :
 >  
 > - Le nombre total et la taille des éléments de courrier, ainsi que le rapport de votre organisation des éléments de courrier partiellement indexés (par nombre et par taille).
 > 

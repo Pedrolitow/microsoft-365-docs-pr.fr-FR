@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Découvrez comment Office 365 chiffrement BitLocker, réduisant ainsi le risque de vol de données en raison de la perte ou du vol d’ordinateurs et de disques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71aeef37b2b9683acdb6fad0b26a0d567aea4f269e5f820f73cf772b9c88efd9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53855898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206140"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker et Distributed Key Manager (DKM) pour le chiffrement
 
@@ -42,7 +42,7 @@ Le tableau suivant décrit la chaîne de protection de clé BitLocker pour un se
 
 La gestion des clés BitLocker implique la gestion des clés de récupération utilisées pour déverrouiller/récupérer des disques chiffrés dans un centre de données Microsoft. Microsoft 365 stocke les clés principales dans un partage sécurisé, uniquement accessible aux personnes qui ont été filtrées et approuvées. Les informations d’identification des clés sont stockées dans un référentiel sécurisé pour les données de contrôle d’accès (ce que nous appelons un « magasin secret »), ce qui nécessite un niveau élevé d’approbations d’élévation et de gestion pour accéder à l’aide d’un outil d’élévation d’accès juste-à-temps.
 
-BitLocker prend en charge les clés qui se trouvent dans deux catégories de gestion :
+BitLocker prend en charge les clés qui se trouvent dans deux catégories de gestion :
 
 - Les clés gérées par BitLocker, qui sont généralement éphémères et liées à la durée de vie d’une instance de système d’exploitation installée sur un serveur ou sur un disque donné. Ces clés sont supprimées et réinitialisées pendant la réinstallation du serveur ou la mise en forme du disque.
 

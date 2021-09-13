@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d4aa3cd7fe0f712aef454f56a47caffae9871e8a0c05a92dfcfcf94f58d822a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: df900f13e2db19878e92cb66e77cf665ace19e30
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867426"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206764"
 ---
 # <a name="contact-support-for-indonesia"></a>Contacter le support pour l’Indonésie
 

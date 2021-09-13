@@ -17,19 +17,19 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 38edd6e5483504b863db5651c4b645815839a2a19f56e44dfdffed06a7073f5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801421"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205796"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Désactivation de TLS 1.0 et 1.1 pour les Microsoft 365
 
 > [!IMPORTANT]
 > Nous avons temporairement interrompu la désactivation de TLS 1.0 et 1.1 pour les clients commerciaux en raison du COVID-19. À mesure que les chaînes d’approvisionnement ont été ajustées et que certains pays s’ouvrent, nous avons redémarré le déploiement de l’application de TLS 1.2 le 15 octobre 2020. Le déploiement se poursuit au cours des semaines et des mois suivants.
 
-Depuis le 31 octobre 2018, les protocoles TLS 1.0 et 1.1 sont supprimés pour le service Microsoft 365 transport. L’effet est minime pour les utilisateurs finaux. Cette modification a été rendue publique pendant plus de deux ans, avec la première annonce publique en décembre 2017. Cet article est destiné uniquement à couvrir le client local Office 365 par rapport au service Office 365, mais peut également s’appliquer aux problèmes TLS locaux avec Office et Office Online Server/Office Web Apps.
+Depuis le 31 octobre 2018, les protocoles TLS 1.0 et 1.1 sont supprimés pour le service Microsoft 365 transport. L’effet est minime pour les utilisateurs finaux. Cette modification a été annoncée pendant plus de deux ans, avec la première annonce publique en décembre 2017. Cet article est destiné uniquement à couvrir le client local Office 365 par rapport au service Office 365, mais peut également s’appliquer aux problèmes TLS locaux avec Office et Office Online Server/Office Web Apps.
 
 Pour SharePoint et OneDrive, vous devez mettre à jour et configurer .NET pour prendre en charge TLS 1.2. Pour plus d’informations, [voir Comment activer TLS 1.2 sur les clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
@@ -97,7 +97,7 @@ Pour plus d’informations, voir Préparation de l’utilisation obligatoire de 
 Les ressources suivantes fournissent des conseils pour vous assurer que vos clients utilisent TLS 1.2 ou une version ultérieure et pour désactiver TLS 1.0 et 1.1 :
 
 - Pour les clients Windows 7 qui se connectent à Office 365, assurez-vous que TLS 1.2 est le protocole sécurisé défini par défaut dans WinHTTP sous Windows. Pour plus d’informations, voir la 3140245 de la KB - Mise à jour pour activer [TLS 1.1 et TLS 1.2](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)en tant que protocoles sécurisés par défaut dans WinHTTP dans Windows .
-- Pour résoudre les problèmes d’utilisation de TLS faibles en supprimant les dépendances TLS 1.0 et 1.1, consultez la prise en charge de [TLS 1.2](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)chez Microsoft.
+- Pour résoudre les problèmes d’utilisation faible de TLS en supprimant les dépendances TLS 1.0 et 1.1, consultez la prise en charge de [TLS 1.2](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)chez Microsoft.
 - [La nouvelle fonctionnalité IIS](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) facilite la recherche de clients sur [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) et [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) qui se connectent au service en utilisant des protocoles de sécurité faibles.
 - Obtenez plus d’informations sur la résolution du problème [TLS 1.0.](https://www.microsoft.com/download/details.aspx?id=55266)
 - Pour plus d’informations sur notre approche de la sécurité, accédez au [Centre de gestion de la confidentialité d'Office 365](https://www.microsoft.com/trustcenter/cloudservices/office365).

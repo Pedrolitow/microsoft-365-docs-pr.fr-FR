@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 9bb56263f9f6b1889d46daae759a33382071c626
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207060"
 ---
 # <a name="intelligent-cpu-regression-analysis"></a>Analyse intelligente de la régression du processeur
 

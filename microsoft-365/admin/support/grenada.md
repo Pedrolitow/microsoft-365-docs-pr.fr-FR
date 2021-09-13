@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4702eb2ef338e7bcc44f4c354922fc6db469dae68b213f5bff56116110e6a93d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4b9239145237a2a0f2af1838b04c59c03be383f9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206859"
 ---
 # <a name="contact-support-for-grenada"></a>Contacter le support pour laAda
 

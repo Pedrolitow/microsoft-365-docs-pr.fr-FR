@@ -1,6 +1,6 @@
 ---
 title: Détails et résultats d’une enquête automatisée
-description: Afficher les résultats et les principales conclusions d’une enquête automatisée dans Microsoft 365 Defender
+description: Afficher les résultats et les principales conclusions d’un examen automatisé dans Microsoft 365 Defender
 keywords: automatisé, examen, résultats, analyse, détails, correction, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -22,11 +22,11 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.openlocfilehash: 028c099dc046d6402d187e5bde0a1536e44657a4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207291"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -45,7 +45,7 @@ La page d’examen a récemment été mise à jour pour inclure des informations
 
 - Toute page d’enquête dans le Centre Office 365 de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) )
 - N’importe quelle page d’enquête dans le Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Toute expérience d’incident ou de centre de Microsoft 365 Defender dans le portail d’action ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Toute expérience d’incident ou de centre de Microsoft 365 Defender dans le portail d’entreprise ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Ouvrir la vue Détails de l’examen
 
@@ -114,7 +114,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 |**Log** | Fournit une vue chronologique et détaillée de toutes les actions d’investigation entreprises après le déclenchement d’une alerte.|
 | **Historique des actions en attente** | Répertorie les éléments qui nécessitent une approbation pour continuer. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) to approve pending actions. |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher et gérer les actions de correction](m365d-autoir-actions.md)
 - [En savoir plus sur les actions de correction](m365d-remediation-actions.md)

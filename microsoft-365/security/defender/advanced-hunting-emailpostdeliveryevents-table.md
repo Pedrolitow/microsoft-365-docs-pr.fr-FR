@@ -21,11 +21,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 8fd30ed5f25330a9c835df85a75058a97da2b712
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59183232"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 

@@ -19,11 +19,11 @@ ms.custom:
 - seo-marvel-apr2020
 description: Utilisez un fichier CSV d’une recherche de contenu existante pour créer une recherche de liste d’ID qui renvoie des éléments de courrier spécifiques.
 ms.openlocfilehash: 3fc43f410d6361ac655f7f839b6b4f8752483ef9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571072"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206291"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Préparer un fichier CSV pour une recherche de contenu de liste d’ID
 
@@ -35,7 +35,7 @@ Voici une vue d’ensemble rapide du processus de création d’une recherche de
 
 1. Créez et exécutez une nouvelle recherche dans le Centre de conformité Microsoft 365.
 
-2. Exporter les résultats de recherche de contenu ou le rapport de recherche de contenu. Pour plus d’informations, voir :
+2. Exporter les résultats de recherche de contenu ou le rapport de recherche de contenu. Pour plus d’informations, consultez :
 
     - [Exporter les résultats de la recherche de contenu](export-search-results.md)
 

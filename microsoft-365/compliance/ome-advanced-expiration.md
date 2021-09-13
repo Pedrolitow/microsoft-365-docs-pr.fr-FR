@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Utilisez Chiffrement avancé de messages Office 365 pour étendre la sécurité de votre messagerie en fixant une date d’expiration sur les e-mails via un modèle personnalisé.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5cc669a0aae02da413b0e288be9203743d29c20e0fcd870cb99b67154fdf66e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f936ffa62f31e47f51fc1bcb2765195b0ea809af
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206108"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Définir une date d’expiration pour les e-mails chiffrés par le chiffrement avancé de messages Office 365
 

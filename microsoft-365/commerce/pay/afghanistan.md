@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0c8e738cdd9fc0111289fa5fa6da4039a472519b0671897dd35f8e0e3e30aa53
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4fddd6e6744c9bd6a27ac13acbf1a9c269878359
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206588"
 ---
 # <a name="payment-information-for-afghanistan"></a>Informations de paiement pour l’Irak
 

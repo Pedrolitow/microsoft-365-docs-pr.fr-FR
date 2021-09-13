@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: ae54134f681568a193b7a99c166aa025d6358eec
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58561229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207316"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Pilote Microsoft Defender pour l’identité
 
@@ -38,7 +38,7 @@ Cet article est [l’étape 3 sur 3 dans](eval-defender-identity-overview.md) le
 
 Utilisez les étapes suivantes pour configurer et configurer le pilote pour Microsoft Defender pour l’identité. Notez que les recommandations n’incluent pas la configuration d’un groupe pilote. La meilleure pratique consiste à installer le capteur sur tous vos serveurs exécutant les services de domaine Active Directory (AD DS) et les services AD FS (Active Directory Federated Services).
 
-![Étapes d’ajout de Microsoft Defender for Identity à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
+![Étapes d’ajout de Microsoft Defender pour l’identité à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
 
 Le tableau suivant décrit les étapes de l’illustration.
 
@@ -63,10 +63,10 @@ Essayez les didacticiels Defender pour l’identité :
 - [Alertes d’exfiltration](/defender-for-identity/exfiltration-alerts)
 - [Examiner un utilisateur](/defender-for-identity/investigate-a-user)
 - [Examiner un ordinateur](/defender-for-identity/investigate-a-computer)
-- [Examiner les chemins de déplacement latéral](/defender-for-identity/investigate-lateral-movement-path)
-- [Examiner les entités](/defender-for-identity/investigate-entity)
+- [Enquêter sur les chemins de déplacement latéral](/defender-for-identity/investigate-lateral-movement-path)
+- [Examiner des entités](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 [Évaluer Microsoft Defender pour Office 365](eval-defender-office-365-overview.md)
 

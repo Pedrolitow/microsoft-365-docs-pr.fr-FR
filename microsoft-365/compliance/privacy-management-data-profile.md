@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Découvrez la vue d’ensemble et le profil de données dans la gestion de la confidentialité et découvrez comment obtenir des informations sur les données personnelles dans l’environnement Microsoft 365 de votre organisation.
 ms.openlocfilehash: 4007fa1c55857211c3cf188a089f8e6d246153ae
-ms.sourcegitcommit: 6a73f0f0c0360fc015d9c0d0af26fb6926d9477d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58744952"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206043"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Rechercher et visualiser des données personnelles dans la gestion de la confidentialité (aperçu)
 

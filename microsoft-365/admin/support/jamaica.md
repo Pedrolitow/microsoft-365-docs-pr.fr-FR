@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a486c9cf63c679201b701a94ddc5ff53865b5bd84076674974dcb0176a481c90
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9ca8e6dbcde637cc26fa1fb92a71263c9c8eb2d5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206732"
 ---
 # <a name="contact-support-for-jamaica"></a>Contacter le support pour la Jamaïque
 

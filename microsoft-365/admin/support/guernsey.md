@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7e6de89ab2d94d983fd62c18aab71a98805e76634294326332bf0df7c8cf789d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 625553a91aa8cb6d962da7826c230e48c85591a9
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53821258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59206835"
 ---
 # <a name="contact-support-for-guernsey"></a>Contacter le support pour Guernesey
 
