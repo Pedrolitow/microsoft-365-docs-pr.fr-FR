@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
 ms.date: 04/08/2021
-ms.openlocfilehash: 716dc1df065daf324f8f449c5d74c09d2d4a81ce91a0fca50d1ff84f20133a39
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 55a34352da6deef2fd48542dd06859e0024e6966
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852066"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59180123"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
@@ -82,7 +82,7 @@ Avant que l’abonnement n’atteigne sa date d’expiration, plusieurs options 
 - **Activer la facturation périodique pour cet abonnement.**
   - Si la **facturation périodique** est déjà activée, aucune action n’est requise. Votre abonnement est facturé automatiquement et vous devrez payer une année ou un mois supplémentaire, selon la fréquence de paiement actuelle. Si pour quelque raison vous avez désactivé la **facturation périodique**, vous pouvez toujours [la réactiver](renew-your-subscription.md).
   - Si vous avez acheté Microsoft 365 Apps for business à l’aide d’une carte prépayée, vous pouvez activer la [facturation périodique](renew-your-subscription.md) pour votre abonnement.
-  - Si vous êtes un client du programme de licences en volume Open avec un abonnement prépayé d'un an, contactez votre partenaire pour effectuer l’achat d’une nouvelle clé de produit. Vous recevrez des instructions par courrier électronique pour activer votre clé dans le [centre de services de licences en volume](https://go.microsoft.com/fwlink/p/?LinkID=282016). Pour découvrir comment rechercher un nouveau partenaire ou trouver le partenaire avec lequel vous avez traité précédemment, consultez la rubrique [Rechercher un partenaire ou un revendeur](../../admin/manage/find-your-partner-or-reseller.md).
+  - Si vous êtes client du programme de licence en volume Open avec un abonnement prépayé d'un an, contactez votre partenaire pour acheter une nouvelle clé de produit dans le cadre du renouvellement. Vous recevrez des instructions par courrier électronique pour activer votre clé dans le [Centre VLSC (Volume Licensing Service Center)](https://go.microsoft.com/fwlink/p/?LinkID=282016). Pour découvrir comment rechercher un nouveau partenaire ou trouver le partenaire avec lequel vous avez traité précédemment, voir [Trouver votre partenaire ou revendeur](../../admin/manage/find-your-partner-or-reseller.md).
   - Si vous avez Microsoft 365 Apps for business, consultez la rubrique [Gérer la facturation périodique pour votre abonnement](renew-your-subscription.md).
 - **Laisser l’abonnement expirer.**
   - Si vous payez par carte bancaire ou par facture et ne souhaitez pas renouveler votre abonnement, [désactivez la facturation périodique](renew-your-subscription.md). Votre abonnement prend fin à sa date d’expiration. Vous pouvez ignorer toutes les notifications par courrier électronique qui y sont relatives.

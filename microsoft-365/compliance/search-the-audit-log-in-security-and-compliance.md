@@ -18,35 +18,64 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9aff58f4175cd7615ad2de2a9659bec71f3f1cb8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59175771"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser le Centre de conformité Microsoft 365  pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’[activité des utilisateurs et administrateurs](#audited-activities) dans Microsoft 365 :
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser l’outil de recherche de journal d’audit dans le Centre de conformité Microsoft 365 afin de rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Des milliers d’opérations utilisateur et administrateur effectuées dans des dizaines de services et solutions Microsoft 365 sont capturées, enregistrées et conservées dans le journal d’audit unifié de votre organisation. Les utilisateurs de votre organisation peuvent utiliser l’outil de recherche du journal d’audit pour rechercher, afficher et exporter (vers un fichier CSV) les enregistrements d’audit pour ces opérations.
 
-- Activité utilisateur dans SharePoint Online et OneDrive Entreprise
-- Activité utilisateur dans Exchange Online (enregistrement d’audit de boîte aux lettres Exchange) 
-- Activité des administrateurs dans SharePoint Online
-- Activité des administrateurs dans Azure Active Directory (service d’annuaire pour Microsoft 365)
-- Activité des administrateurs dans Exchange Online (journalisation d’audit de l’administrateur Exchange)
-- Activités eDiscovery dans le Centre de conformité et sécurité
-- Activités utilisateur et administrateur dans Power BI
-- Activités utilisateur et administrateur dans Microsoft Teams
-- Activités utilisateur et administrateur dans Dynamics 365
-- Activités utilisateur et administrateur dans Yammer
-- Activités utilisateur et administrateur dans Microsoft Power Automate
-- Activités utilisateur et administrateur dans Microsoft Stream
-- Activité d’analystes et d’administrateurs dans Microsoft Workplace Analytics
-- Activités utilisateur et administrateur dans Microsoft Power Apps
-- Activités utilisateur et administrateur dans Microsoft Forms
-- Activité des utilisateurs et des administrateurs relative aux étiquettes de confidentialité pour les sites qui utilisent SharePoint Online ou Microsoft Teams
-- Activité des administrateurs dans les messages de réunion et MyAnalytics
+## <a name="microsoft-365-services-that-support-auditing"></a>Services Microsoft 365 qui prennent en charge l’audit
+
+Pourquoi un journal d’audit unifié ? Vous pouvez rechercher dans le journal d’audit les activités effectuées dans différents services Microsoft 365. Le tableau suivant répertorie les services et fonctionnalités Microsoft 365 (par ordre alphabétique) pris en charge par le journal d’audit unifié.
+
+| Service ou fonctionnalité Microsoft 365 | Types d’enregistrement|
+|:---------|:---------|
+| Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
+| Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
+| Explorateur de contenu|LabelContentExplorer|
+| Protection contre la perte de données (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
+| Defender pour point de terminaison|DLPEndpoint|
+| Dynamics 365|CRM|
+| eDiscovery|Découverte, AeD|
+| Correspondances exactes de données|MipExactDataMatch|
+| Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
+| Formulaires|MicrosoftForms|
+| Cloisonnement de l’information|InformationBarrierPolicyApplication|
+| Microsoft 365 Defender|MDATPAudit, AirUeligation, AirManual Quigation, AirAdminActionMuigation|
+| Microsoft Teams|MicrosoftTeams|
+| MyAnalytics|MyAnalyticsSettings|
+| OneDrive Entreprise|OneDrive|
+| Power Apps|PowerAppsApp, PowerAppsPlan|
+| Power Automate|MicrosoftFlow|
+| Power BI|PowerBIAudit|
+| Quarantaine|Quarantaine|
+| Stratégies de rétention et étiquettes de rétention|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
+| Types d’informations sensibles|DlpSensitiveInformationType|
+| Étiquettes de confidentialité|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
+| SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
+| Flux|MicrosoftStream|
+| Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
+| Workplace Analytics|WorkplaceAnalytics|
+|Yammer|Yammer|
+|||
+
+Pour plus d’informations sur les opérations auditées dans chacun des services répertoriés dans le tableau précédent, voir la section [Activités auditées](#audited-activities) dans cet article.
+
+Le tableau précédent identifie également la valeur de type d’enregistrement à utiliser pour rechercher dans le journal d’audit les activités dans le service correspondant à l’aide de la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell ou à l’aide d’un script PowerShell. Certains services ont plusieurs types d’enregistrement pour différents types d’activités au sein du même service. Pour obtenir une liste plus complète des types d’enregistrement d’audit, voir [Schéma de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
+
+ Pour plus d’informations sur l’utilisation de PowerShell pour effectuer des recherches dans le journal d’audit, voir :
+
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+
+- [Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit](audit-log-search-script.md)
 
 ## <a name="before-you-search-the-audit-log"></a>Avant de rechercher dans le journal d’audit
 
@@ -91,7 +120,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   Pour plus d’informations, consultez l’article [Désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser la page **Recherche dans le journal d’audit** du Centre de conformité Microsoft 365. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser l’outil de recherche sur la page **Audit** de la Centre de conformité Microsoft 365. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -99,9 +128,6 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 - Après la survenue d’un événement, le renvoi de l'enregistrement de journal d’audit correspondant dans les résultats de la recherche d'un journal peut prendre jusqu’à 30 minutes, voir 24 heures. Le tableau suivant répertorie les délais en fonction des services dans Office 365.
 
-  <br>
-
-  ****
 
   |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
   |---|:---:|:---:|
@@ -113,7 +139,6 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   |eDiscovery|![Coche.](../media/checkmark.png)||
   |Exchange Online|![Coche.](../media/checkmark.png)||
   |Microsoft Power Automate||![Coche.](../media/checkmark.png)|
-  |Microsoft Project|![Coche.](../media/checkmark.png)||
   |Microsoft Stream|![Coche.](../media/checkmark.png)||
   |Microsoft Teams|![Coche.](../media/checkmark.png)||
   |Power Apps||![Coche.](../media/checkmark.png)|
@@ -124,9 +149,9 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   |Workplace Analytics|![Coche.](../media/checkmark.png)||
   |Yammer||![Coche.](../media/checkmark.png)|
   |Microsoft Forms|![Coche.](../media/checkmark.png)||
-  |
+  ||||
 
-- Azure Active Directory (Azure AD) est le service d’annuaire pour Office 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le centre d’administration Microsoft 365 ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
+- Azure Active Directory (Azure AD) est le service d’annuaire pour Office 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 - L’enregistrement d’audit pour Power BI n’est pas activé par défaut. Pour rechercher des activités Power BI dans le journal d’audit, vous devez activer l’audit dans le portail d’administration Power BI. Pour consulter des instructions, voir la section «journaux d’audit» du [portail d’administration Power BI](/power-bi/service-admin-portal#audit-logs).
 
@@ -655,7 +680,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 
 ### <a name="user-administration-activities"></a>Activités d’administration des utilisateurs
 
-Le tableau suivant répertorie les activités d’administration des utilisateurs enregistrées quand un administrateur ajoute ou modifie un compte d’utilisateur via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
+Le tableau suivant répertorie les activités d’administration des utilisateurs enregistrées quand un administrateur ajoute ou modifie un compte d’utilisateur via le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) ou le portail de gestion Azure.
 
 > [!NOTE]
 > Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
@@ -674,7 +699,7 @@ Le tableau suivant répertorie les activités d’administration des utilisateur
 
 ### <a name="azure-ad-group-administration-activities"></a>Activités d’administration des groupes Azure AD
 
-Le tableau suivant répertorie les activités d’administration des groupes enregistrées lorsqu’un administrateur ou un utilisateur crée ou modifie un groupe Microsoft 365 ou lorsqu’un administrateur crée ou modifie un groupe à l’aide du Centre d’administration Microsoft 365 ou du portail de gestion Azure. Pour plus d’informations sur les groupes dans Office 365, voir [afficher, créer et supprimer des groupes dans le centre d’administration Microsoft 365](../admin/create-groups/create-groups.md).
+Le tableau suivant répertorie les activités d’administration des groupes enregistrées lorsqu’un administrateur ou un utilisateur crée ou modifie un groupe Microsoft 365 ou lorsqu’un administrateur crée ou un groupe de sécurité à l’aide du [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) ou du portail de gestion Azure. Pour plus d’informations sur les groupes dans Office 365, voir [afficher, créer et supprimer des groupes dans le centre d’administration Microsoft 365](../admin/create-groups/create-groups.md).
 
 > [!NOTE]
 > Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
@@ -708,7 +733,7 @@ Le tableau suivant répertorie les activités d’administration des application
 
 ### <a name="role-administration-activities"></a>Activités d’administration des rôles
 
-Le tableau suivant répertorie les activités d’administration des rôles Azure AD journalisées quand un administrateur gère les rôles d’administrateur via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
+Le tableau suivant répertorie les activités d’administration des rôles Azure AD journalisées quand un administrateur gère les rôles d’administrateur via le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) ou le portail de gestion Azure.
 
 > [!NOTE]
 > Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
@@ -722,7 +747,7 @@ Le tableau suivant répertorie les activités d’administration des rôles Azur
 
 ### <a name="directory-administration-activities"></a>Activités d’administration de l’annuaire
 
-Le tableau suivant répertorie les activités liées à l’annuaire et au domaine Azure AD journalisées quand un administrateur gère son organisation via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
+Le tableau suivant répertorie les activités liées à l’annuaire et au domaine Azure AD journalisées quand un administrateur gère son organisation via le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) ou le portail de gestion Azure.
 
 > [!NOTE]
 > Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.

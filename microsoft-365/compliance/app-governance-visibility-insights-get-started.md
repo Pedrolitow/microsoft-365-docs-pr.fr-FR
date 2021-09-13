@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec visibilité et insights.
-ms.openlocfilehash: 0a986bec512c665372ef2e98155533a49500c5d8
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: ac99e9112dc7e0278243121a8530326c88f333dc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181421"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Démarrage avec visibilité et insights
 
@@ -49,6 +49,27 @@ Le tableau de bord contient un résumé des composants de l’écosystème d’a
   - **Non vérifié** : les applications qui n’ont pas reçu de [certification de l’éditeur](/azure/active-directory/develop/publisher-verification-overview) sont considérées comme non vérifiées.
   - **Application uniquement**: [les autorisations d’application](/azure/active-directory/develop/v2-permissions-and-consent#permission-types) sont utilisées par les applications qui peuvent s’exécuter sans utilisateur connecté. Les applications disposant d’autorisations d’accès aux données sur le client sont potentiellement plus risquées.
   - **Nouvelles applications**: nouvelles applications Microsoft 365 qui ont été inscrites au cours des sept derniers jours.  
+
+## <a name="view-app-insights"></a>Afficher les informations sur l’application
+
+L’un des principaux avantages de la gouvernance des applications est la possibilité d’afficher rapidement les alertes et les informations de l’application. Pour afficher des informations pour vos applications :
+
+1. Sur la page du portail de gouvernance de votre application, sélectionnez **Applications**.
+1. Utilisez la liste déroulante **Catégories** pour sélectionner l’une des options suivantes :
+    - Toutes les applications
+    - Privilège élevé
+    - Avec trop de privilèges
+    - Éditeur non vérifié
+    - Application uniquement
+    - Nouvelles applications
+1. Sélectionnez le nom d’une application pour afficher les détails. Vous pouvez sélectionner plusieurs applications pour les enregistrer en tant que requête enregistrée en plaçant une coche à gauche du nom de l’application. La sélection d’un nom d’application ouvre un volet d’informations à droite, comme le montre le graphique suivant.
+
+:::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="Image illustrant le volet d’informations d’une application sélectionnée.":::
+
+> [!NOTE]
+> Les applications répertoriées dépendent des applications présentes dans votre client.
+
+Le volet d’informations vous permet également d’afficher l’utilisation de l’application au cours des 30 derniers jours, les utilisateurs qui ont donné leur consentement à l’application et les autorisations attribuées à l’application. Un administrateur peut examiner l’activité et les autorisations d’une application qui génère des alertes et prendre la décision de désactiver l’application à l’aide du bouton **Désactiver l’application** dans le volet Détails.
 
 ## <a name="next-step"></a>Étape suivante
 

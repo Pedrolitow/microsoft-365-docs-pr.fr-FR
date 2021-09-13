@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les PME peut vous accompagner dans le processus du Règlement général sur la protection des données (RGPD).
-ms.openlocfilehash: f5070c446a98815061d9e898167a8214d5fc8bb946ba586c47a3a9b230ae4a78
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 147843fab8fcb8d2d1793a21f9bb897cb4a59672
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822834"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178660"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Un guide pour votre petite entreprise
 
@@ -94,7 +94,7 @@ Un bon moyen pour une petite entreprise de prendre en main le RGPD est de veille
 
 ### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Étape 1 : être au fait des données personnelles que vous collectez et utilisez dans votre entreprise, et des raisons dont vous en avez besoin
 
-En tant que petite entreprise, l’une des premières étapes à suivre est d’établir un inventaire des données personnelles que vous collectez et utilisez dans votre entreprise, et la raison justifiant leur collecte. Ceci inclut les données sur vos employés et vos clients.
+En tant que petite entreprise, l’une des premières étapes à suivre est d’établir un inventaire des données personnelles que vous collectez et utilisez dans votre entreprise, et la raison justifiant leur collecte. Cela inclut les données de vos employés et de vos clients.
 
 Par exemple, vous pouvez avoir besoin des données personnelles de votre employé pour le contrat de travail et pour ces raisons juridiques (à titre d’exemple, pour la déclaration d’impôts à l’administration fiscale).
 
@@ -216,7 +216,7 @@ En vertu du RGPD, vous êtes dans une certaine mesure affecté si vous collectez
 
 Vous devez vous assurer que vos clients, y compris ceux que vous avez depuis des années, ont consenti à l’utilisation de leurs données à des fins commerciales. Vous pouvez avoir un consentement préalablement capturé, ainsi qu’un enregistrement qui le prouve. Si tel est le cas, vous êtes fin prêt pour continuer à proposer des services. Dans le cas contraire, vous devez obtenir l’autorisation du client pour poursuivre la commercialisation. Ceci implique généralement l’envoi d’un e-mail demandant aux clients d’accéder à votre site et de sélectionner une option pour consentir à la réception de futurs courriers. 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Dois-je me soucier du RGPD lorsque j’embauche de nouveaux employés ? Qu’en est-il des employés actuels ?
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Dois-je me soucier du RGPD lorsque j’embauche de nouveaux employés ? Qu’en est-il des employés actuels ?
 
 Le RGPD n’affecte pas seulement les données client, il s’étend également aux données des employés. Les nouveaux employés sont souvent localisés à l’aide des plateformes de réseaux sociaux telles que LinkedIn. Vérifiez que vous ne stockez pas de données relatives à des candidats potentiels sans leur autorisation expresse.
   
