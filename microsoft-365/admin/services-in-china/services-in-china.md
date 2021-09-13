@@ -25,11 +25,11 @@ ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 21Vianet conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
 ms.openlocfilehash: 6313212d39b81e9954681848e5ac6747ff6ee3ea
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178564"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
@@ -48,7 +48,7 @@ Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les derniè
   
  **À propos des services Office 365 gérés par 21Vianet**
   
-Les sections ci-dessous mettent en évidence les différences pour chaque service. En fin de compte, notre objectif est d’atteindre la parité avec les services globaux. Toutefois, en raison de la nature unique des services en Chine (gérés par un partenaire de centres de données en Chine), certaines fonctionnalités n’ont pas encore été activées. Au fil du temps, les clients bénéficieront des fonctionnalités complètes. Pour une analyse plus détaillée des services disponibles pour chaque plan Office 365 géré par 21Vianet, consultez la description Office 365 [service.](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+Les sections ci-dessous mettent en évidence les différences pour chaque service. En fin de compte, notre objectif est d’atteindre la parité avec les services globaux. Toutefois, en raison de la nature unique des services en Chine , gérés par un partenaire de centres de données en Chine, certaines fonctionnalités n’ont pas encore été activées. Au fil du temps, les clients bénéficieront des fonctionnalités complètes. Pour une analyse plus détaillée des services disponibles pour chaque plan Office 365 géré par 21Vianet, consultez la description Office 365 [service.](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
   
     
 Si vous souhaitez découvrir comment commencer avec les services d’Office 365 général, consultez [La mise en place.](../admin-overview/get-started-with-office-365.md)
@@ -65,7 +65,7 @@ Si vous souhaitez découvrir comment commencer avec les services d’Office 365 
 |Prise en charge des appareils et des appareils mobiles\*  <br/> | Les fonctionnalités mobiles suivantes seront bientôt disponible :  <br/>  Gestion des périphériques mobiles (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) n’est pas disponible, mais vous pouvez utiliser des appareils Exchange ActiveSync ou une offre de Research in Motion (RIM, la solution de messagerie sans fil BlackBerry) pour exécuter Blackberry Enterprise Server (BES).  <br/>  Pour plus d’informations sur la prise en charge mobile, voir [Configurer et gérer l’accès mobile pour vos utilisateurs.](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)  <br/> |
 |Office Lens  <br/> |Non disponible.  <br/> |
 |Microsoft Planner  <br/> |À venir.  <br/> |
-|Microsoft Teams  <br/> |Non disponible.  <br/> |
+|Microsoft Teams  <br/> |Non disponible.  <br/> |
 |Sway  <br/> |À venir.  <br/> |
 |Aide dans plusieurs langues  <br/> |L’aide est disponible en chinois simplifié et en anglais uniquement.  <br/> |
 |Community’aide fournie  <br/> |Community’aide fournie n’est pas encore disponible, mais vous pouvez sélectionner le bouton Aide ( **?** ) dans le coin supérieur droit de votre portail pour consulter les articles d’aide.  <br/> |
@@ -77,7 +77,7 @@ Si vous souhaitez découvrir comment commencer avec les services d’Office 365 
 |Fonction|Disponibilité|
 |:-----|:-----|
 |Partage d’un document, d’une bibliothèque ou d’un site par courrier électronique avec une personne extérieure à votre organisation  <br/> |Cette fonctionnalité est disponible, mais par défaut, son utilisation pourrait rendre les fichiers partagés accessibles à l’extérieur de votre pays. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Les utilisateurs qui tentent de partager avec une personne extérieure à l’organisation recevront également un avertissement. Pour plus d’informations, [voir Partager SharePoint fichiers ou dossiers dans Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
-|Services d'accès  <br/> |Access 2013 est pris en charge, mais l’ajout de nouvelles applications Access risque de ne pas être disponible, car cette fonctionnalité sera retirée de Office 365 et SharePoint Online. La création d’applications web Access et de bases de données web Access dans Office 365 et SharePoint Online ne démarre plus en juin 2017 et les autres applications web et bases de données web restantes d’avril 2018. En outre, la fonctionnalité Access 2010 n’est pas prise en charge et toute tentative d’utilisation d’une base de données Access 2010 entraîne des erreurs et peut entraîner une perte de données.  <br/> |
+|Services d'accès  <br/> |Access 2013 est pris en charge, mais l’ajout de nouvelles applications Access risque de ne pas être disponible, car cette fonctionnalité sera retirée de Office 365 et SharePoint Online. La création d’applications web Access et de bases de données web Access dans Office 365 et SharePoint Online ne commence plus en juin 2017 et les autres applications web et bases de données web restantes d’avril 2018. En outre, la fonctionnalité Access 2010 n’est pas prise en charge et toute tentative d’utilisation d’une base de données Access 2010 entraîne des erreurs et peut entraîner une perte de données.  <br/> |
 |Microsoft Power Apps  <br/> |À venir.  <br/> |
 |Gestion des droits relatifs à l'information (IRM)  <br/> |La possibilité de définir des fonctionnalités IRM SharePoint pour votre organisation sera bientôt disponible.  <br/> |
 |Possibilité de traduire du texte ou des pages  <br/> |Disponible, mais éteint par défaut. Les administrateurs clients peuvent activer cette possibilité, mais le service cloud de traduction peut se trouver à l’extérieur de votre pays. Si vous ne souhaitez pas que les utilisateurs envoient du contenu à un service cloud de traduction, vous pouvez désactiver ces fonctionnalités.  <br/> |
@@ -131,17 +131,17 @@ Pour les organisations exécutant des versions plus anciennes ou mixtes de Excha
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | Tous  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | CU5 2013  <br/> | Oui  <br/> | Tous, à l’exception de la découverte électronique/archivage sur place, OWA’accès (voir le tableau ci-dessous)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Oui  <br/> | Uniquement configuré manuellement la libre/occupé(s)  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 | 2007  <br/> | CU5 2013  <br/> | Oui  <br/> | Libre/occupé uniquement  <br/> |
 | 2007  <br/> | 2013 SP1 ou 2010 SP3No  <br/> | N/A  <br/> | Non prise en charge  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/A  <br/> | Non prise en charge  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
 
    
 > [!IMPORTANT]
 >  L’accès délégué au calendrier, lorsqu’un utilisateur ou un ensemble d’utilisateurs reçoit l’accès au calendrier d’un autre utilisateur, n’est pas pris en charge dans les déploiements hybrides avec des clients Office 365 hébergés par 21Vianet. 
   
- En outre, certaines fonctionnalités de Exchange de messagerie et de conformité ne sont pas entièrement pris en charge dans les déploiements hybrides avec des Office 365 hébergés par 21Vianet. Ces fonctionnalités incluent notamment :
+ En outre, certaines fonctionnalités Exchange de conformité et de stratégie de messagerie ne sont pas entièrement pris en charge dans les déploiements hybrides avec des Office 365 hébergés par 21Vianet. Ces fonctionnalités incluent notamment :
 
 - [Gestion des enregistrements de messagerie (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 
 - [Découverte électronique locale](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 
@@ -189,7 +189,7 @@ Partage Exchange données de contact sur les appareils mobiles Apple sur Apple i
 
 |Fonction|Disponibilité|
 |:-----|:-----|
-|Gérer le compte (à partir du client Office client)  <br/> |Cette fonctionnalité, ainsi que d’autres fonctionnalités telles que celle qui sont destinées à être dirigés vers votre portail Office 365, pointe actuellement vers le portail Office 365 mondial et vous ne pouvez pas vous connectez avec votre compte Office 365 géré par 21Vianet. Il s’agit d’un problème connu en cours de correction. En attendant, vous pouvez utiliser l’URL pour vous inscrire à votre compte et gérer https://portal.partner.microsoftonline.cn/ les paramètres à partir de là. Pour plus d’informations, [voir Gérer Applications Microsoft 365 pour les grandes entreprises compte Office 365 géré par 21Vianet.](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)  <br/> |
+|Gérer le compte (à partir du client Office client)  <br/> |Cette fonctionnalité, ainsi que d’autres fonctionnalités telles que celle qui sont destinées à être disponibles sur votre portail Office 365, pointent actuellement vers le portail Office 365 mondial et vous ne pouvez pas vous y inscrire avec votre compte Office 365 géré par 21Vianet. Il s’agit d’un problème connu en cours de correction. En attendant, vous pouvez utiliser l’URL pour vous inscrire à votre compte et gérer https://portal.partner.microsoftonline.cn/ les paramètres à partir de là. Pour plus d’informations, [voir Gérer Applications Microsoft 365 pour les grandes entreprises compte Office 365 géré par 21Vianet.](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
