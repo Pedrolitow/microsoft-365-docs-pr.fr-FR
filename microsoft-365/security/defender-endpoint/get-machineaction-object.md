@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a1dedd7170e5ee6fbc2be3e01a0a4598f4caeddad6abf28321517629f51a7b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c5acecaecd4121eeb6f7ad13731f2cfd036fe39
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53793783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201936"
 ---
 # <a name="get-machineaction-api"></a>API Obtenir machineAction
 
@@ -69,7 +69,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

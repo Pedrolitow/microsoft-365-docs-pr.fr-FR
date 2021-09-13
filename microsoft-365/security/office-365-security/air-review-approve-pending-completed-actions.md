@@ -19,12 +19,12 @@ description: Découvrez les actions de correction dans les fonctionnalités d’
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 91b1af53f69cc464726bb6040f6d9af2bb11566804898db85dedc658704e8a4f
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202847"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
@@ -42,7 +42,7 @@ Ces mesures correctives ne sont prises que si votre équipe en charge des opéra
 Il existe quatre façons de rechercher et d’agir sur des enquêtes automatiques :
 
 - [File d’attente des incidents](https://security.microsoft.com/incidents)
-- [Centre de actions](https://security.microsoft.com/action-center/pending)
+- [Centre de notifications](https://security.microsoft.com/action-center/pending)
 - Examen proprement dit (accessible via incident ou à partir d’une alerte)
 - [File d’attente des examens d’investigation et de correction](https://security.microsoft.com/airinvestigation)
 
@@ -101,7 +101,7 @@ Il existe deux façons de reconsidérer les actions envoyées :
 4. Attendez que le bouton Action en haut s’active et sélectionnez le bouton Action pour modifier le type d’action.
 5. Cela crée les actions appropriées.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Utiliser l’Explorateur de menaces](threat-explorer.md)
 - [Actions d’administration /manuelles](remediate-malicious-email-delivered-office-365.md)

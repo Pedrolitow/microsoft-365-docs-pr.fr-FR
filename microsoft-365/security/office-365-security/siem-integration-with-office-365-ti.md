@@ -19,12 +19,12 @@ description: Intégrez le serveur SIEM de votre organisation à Microsoft Defend
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0f80ac15ef26cac6eddcc2c8c6219f64e62c8400bbb9e305f5961c08d1b6ab0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "56799877"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202721"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Intégration DE SIEM à Microsoft Defender pour Office 365
 

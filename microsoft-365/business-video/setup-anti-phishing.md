@@ -22,11 +22,11 @@ search.appverid:
 - MOE150
 description: Découvrez comment configurer la protection anti-hameçonnage.
 ms.openlocfilehash: 91d8db572bff73fca5515e224c96201260f8855c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531490"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203442"
 ---
 # <a name="set-up-anti-phishing"></a>Configurer les stratégies d’anti-hameçonnage et d’anti-hameçonnage
 

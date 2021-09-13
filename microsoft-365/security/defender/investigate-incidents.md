@@ -26,11 +26,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
-ms.sourcegitcommit: 8db88004f4c015138b20c55095ada2c0c79e5910
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58928777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202908"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 

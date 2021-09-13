@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centre d'administration Microsoft 365 - learn about the features that were added this month.
-ms.openlocfilehash: aa94686b728eabd6da3577f0f44856039ab8288c
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.openlocfilehash: dbc907ac66bcc1741ceb92602b7b3062de043f6b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203525"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -55,7 +55,7 @@ Et si vous souhaitez savoir quelles sont les nouveautés des autres services clo
 
 ### <a name="microsoft-365-admin-center-search"></a>Centre d'administration Microsoft 365 recherche
 
-Vous pouvez désormais rechercher des ID d’incident dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d'administration Microsoft 365</a>. Vous pouvez découvrir les incidents actuels via les réseaux sociaux, les publications du secteur ou d’autres administrateurs. Vous pouvez désormais vous rendre dans le Centre d’administration pour rechercher plus de détails sur l’incident et comprendre l’impact sur votre organisation. Recherchez simplement l’ID d’incident dans le centre d’administration.
+Vous pouvez désormais rechercher des ID d’incident dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">Centre d'administration Microsoft 365</a>. Vous pouvez découvrir les incidents actuels via les réseaux sociaux, les publications du secteur ou d’autres administrateurs. Vous pouvez désormais vous rendre dans le Centre d’administration pour rechercher plus de détails sur l’incident et comprendre l’impact sur votre organisation. Recherchez simplement l’ID d’incident dans le centre d’administration.
 
 :::image type="content" source="../media/incident-id.png" alt-text="Capture d’écran : recherche de l’ID d’incident dans le Centre d’administration":::
 

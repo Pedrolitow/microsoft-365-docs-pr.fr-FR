@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: e630b2cdb7164157e2dd42e8f1ee8d09676dfbfb
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58252082"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202907"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Questions fréquemment posées lors de l’Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Pour obtenir des instructions sur la façon d’activer le service, [lisez](m365
 
 Les clients titulaires des licences non E5 suivantes peuvent utiliser les Microsoft 365 Defender :
 
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 - Microsoft Defender pour l’identité
 - Microsoft Cloud App Security
 - Defender pour Office 365 (Plan 2)
@@ -80,7 +80,7 @@ Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent accé
 - Lecteur de sécurité
 
 > [!NOTE]
-> Les paramètres de contrôle d’accès en fonction du rôle dans Microsoft Defender pour point de terminaison influencent l’accès aux données. Pour plus d’informations, voir la [gestion de l’accès Microsoft 365 Defender](m365d-permissions.md).
+> Les paramètres de contrôle d’accès en fonction du rôle dans Microsoft Defender pour point de terminaison influencent l’accès aux données. Pour plus d’informations, voir la [gestion de l’accès Microsoft 365 Defender](m365d-permissions.md).
 
 ## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>Quel fuseau horaire est Microsoft 365 Defender par défaut ?
 
@@ -90,7 +90,7 @@ Par défaut, Microsoft 365 Defender affiche les informations d’heure dans le f
 
 Microsoft fournit régulièrement des informations via les différents canaux, notamment :
 
-- Centre [de messages dans](../../admin/manage/message-center.md) Centre d’administration Microsoft 365
+- Centre [de messages dans](../../admin/manage/message-center.md) Centre d'administration Microsoft 365
 - Billets de blog de la [communauté Microsoft 365 sécurité et conformité & conformité](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 Obtenez les dernières expériences disponibles publiquement en allumer les [fonctionnalités de prévisualisation.](preview.md)

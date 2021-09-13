@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: Le 10 octobre 2017, le support a pris fin pour Project Server 2007, Project Portfolio Server et Project 2007. Utilisez cet article pour planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 3ac7a40ec9fbaa8e495f9dd9321712b77aaf5b4b4b171c391593420eda45ddd7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 12447eb2a021b3f92e3557b2c3ea87e859841346
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53904707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209192"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Project Server 2007
 
@@ -198,12 +198,12 @@ Ressources clés :
   
 |**Ressource**|**Description**|
 |:-----|:-----|
-|[Vue d'ensemble du processus de mise à niveau vers Project Server 2016](/previous-versions/office/project-server-2010/ee662104(v=office.14)) <br/> |Vue d’ensemble de ce que vous devez faire pour mettre à niveau Project Server 2013 vers Project Server 2016 <br/> |
+|[Vue d'ensemble du processus de mise à niveau vers Project Server 2016](/previous-versions/office/project-server-2010/ee662104(v=office.14)) <br/> |Vue d’ensemble de la mise à niveau de Project Server 2013 vers Project Server 2016 <br/> |
 |[Planifier la mise à niveau vers Project Server 2016](/project/plan-for-upgrade-to-project-server-2016) <br/> |Considérations de planification lors de la mise à niveau Project Server 2013 vers Project Server 2016 <br/> |
    
 #### <a name="things-to-know-about-upgrading-to-this-version"></a>Éléments à savoir sur la mise à niveau vers cette version
 
-[Ce que vous devez savoir sur Project Server 2016 mise à niveau vous](/project/plan-for-upgrade-to-project-server-2016) indique certaines modifications importantes pour la mise à niveau pour cette version, notamment :
+[Ce que vous devez savoir sur Project Server 2016 mise à niveau vous](/project/plan-for-upgrade-to-project-server-2016) indique quelques modifications importantes pour la mise à niveau pour cette version, notamment :
   
 - Lorsque vous créez votre environnement Project Server 2016 vers lequel vous allez migrer vos données Project Server 2013, les fichiers d’installation Project Server 2016 sont inclus dans SharePoint Server 2016. Pour plus d’informations, voir [Déployer Project Server 2016](/project/deploy-project-server-2016).
     
@@ -219,7 +219,7 @@ Autres ressources :
     
 - [Microsoft Office Project de migration Portfolio Server 2007.](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [SharePoint Feuille de route pour la fin de la prise en charge de Server 2007](sharepoint-2007-end-of-support.md)
   

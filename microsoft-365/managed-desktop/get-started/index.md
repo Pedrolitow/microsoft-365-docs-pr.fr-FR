@@ -9,11 +9,11 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.openlocfilehash: c8d0c712a0d2e9c575f55041b3182e3c77b2c687
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
-ms.translationtype: HT
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203225"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Prise en main du Bureau géré Microsoft
 

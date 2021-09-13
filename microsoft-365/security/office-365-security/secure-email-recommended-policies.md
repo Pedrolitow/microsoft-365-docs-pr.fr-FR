@@ -21,11 +21,11 @@ ms.collection:
 - m365solution-scenario
 ms.technology: mdo
 ms.openlocfilehash: de1a66fcf2b057e2f1254d64286b521928d2c560
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202728"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recommandations de stratégies pour sécuriser les e-mails
 
@@ -49,7 +49,7 @@ Notez l’ajout d’une nouvelle stratégie Exchange Online pour bloquer les cli
 
 Si vous avez inclus Exchange Online et Outlook dans l’étendue des stratégies lorsque vous les avez définies, vous devez uniquement créer la nouvelle stratégie pour bloquer les clients ActiveSync. Examinez les stratégies répertoriées dans le tableau suivant et ajoutez les ajouts recommandés ou confirmez qu’elles sont déjà incluses. Chaque stratégie est liée aux instructions de configuration associées dans les [stratégies communes d’accès aux appareils et aux identités.](identity-access-policies.md)
 
-|Niveau de protection|Politiques|Plus d’informations|
+|Niveau de protection|Stratégies|Plus d’informations|
 |---|---|---|
 |**Baseline**|[Exiger l’mf lorsque le risque de se connecte *est moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure Exchange Online dans l’affectation des applications cloud|
 ||[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Inclure Exchange Online dans l’affectation des applications cloud|
@@ -110,7 +110,7 @@ Grâce aux nouvelles fonctionnalités chiffrement de messages Office 365 (OME), 
 
 Pour plus d’informations, voir [Configurer de chiffrement de messages Office 365 nouvelles fonctionnalités.](../../compliance/set-up-new-message-encryption-capabilities.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 ![Étape 4 : Stratégies pour Microsoft 365 applications cloud.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

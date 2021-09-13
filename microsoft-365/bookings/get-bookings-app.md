@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: Les applications mobiles Bookings ne sont pas encore disponibles dans le monde entier. Cet article répertorie les paramètres régionaux où les applications sont désormais disponibles.
 ms.openlocfilehash: 4c00d7559c4f2e7f0a20878fa40d03ebc5f79be4
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822951"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203513"
 ---
 # <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Obtenir l’application Microsoft Bookings pour iOS et Android
 

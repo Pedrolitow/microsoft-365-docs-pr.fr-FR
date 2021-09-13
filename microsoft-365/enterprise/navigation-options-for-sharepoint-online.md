@@ -22,11 +22,11 @@ search.appverid:
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les sites d’options de navigation avec SharePoint publication activée dans SharePoint Online.
 ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202157"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -75,7 +75,7 @@ Il s’agit de la navigation pré-adaptée utilisée par défaut et de la soluti
 
 Sous **Site Paramètres** Look and Feel Navigation , vous pouvez vérifier si la navigation structurelle est sélectionnée pour la navigation globale ou la navigation  >    >  actuelle. La sélection de **pages Afficher** aura un impact négatif sur les performances.
 
-![Navigation structurelle avec afficher les sous-sites sélectionnés.](../media/SPONavOptionsStructuredShowSubsites.png)
+![Navigation structurelle avec Afficher les sous-sites sélectionnés.](../media/SPONavOptionsStructuredShowSubsites.png)
 
 La mise en cache peut être activée ou désactivée au niveau de la collection de sites et au niveau du site, et est activée pour les deux par défaut. Pour activer au niveau de la collection de sites, sous **Site Paramètres** Site Collection Administration Site  >    >  **Collection Navigation,** activez la case à cocher Activer la mise **en cache.**
 
@@ -543,7 +543,7 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 ```
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Vue d’ensemble de la navigation gérée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
 

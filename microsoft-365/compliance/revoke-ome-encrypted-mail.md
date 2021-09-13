@@ -16,16 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: En tant qu’administrateur et expéditeur de message, vous pouvez révoquer certains messages électroniques chiffrés avec Chiffrement avancé de messages Office 365.
-ms.openlocfilehash: 58a029dbbc2fef644e533ccb072bb8e0e8bb0e67e70584d1e93d956db4c9c2c4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53795567"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202301"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer le courrier électronique chiffré par le chiffrement de messages avancé
 
-La révocation des messages électroniques est proposée dans le cadre Chiffrement avancé de messages Office 365. Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs du personnel pour les associations), Office 365 Entreprise E5 (tarifs pour le personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas de Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module Microsoft 365 E5 Conformité SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarifs pour le personnel à but non lucratif) ou le module Conformité avancée Office 365 SKU pour les SKU Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 SKU.
+La révocation des messages électroniques est proposée dans le cadre Chiffrement avancé de messages Office 365. Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs pour le personnel à but non lucratif), Office 365 Entreprise E5 (tarifs pour le personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas de Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module Microsoft 365 E5 Conformité SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarifs pour le personnel à but non lucratif) ou le module Conformité avancée Office 365 SKU pour les SKU Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 SKU.
 
 Cet article fait partie d’une série plus importante d’articles [sur chiffrement de messages Office 365](ome.md).
 
@@ -59,7 +59,7 @@ Pour révoquer un message chiffré que vous avez envoyé, complétez ces étapes
 
    Si le message est révocable, vous verrez le lien « Supprimer l’accès externe » en haut du message.
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran montrant le courrier chiffré que vous souhaitez révoquer dans Outlook sur le web.":::
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran montrant les messages chiffrés que vous souhaitez révoquer dans Outlook sur le web.":::
 
 2. Cliquez **sur Supprimer l’accès** externe pour révoquer le message.
 
@@ -119,7 +119,7 @@ Pour vérifier si vous pouvez révoquer un message électronique particulier à 
      "Test message" True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Étape 3 : Révoquer le courrier
+### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier
 
 Une fois que vous connaissez l’ID du message que vous souhaitez révoquer et que vous avez vérifié que le message est révocable, vous pouvez révoquer le message à l’aide du Centre de conformité de sécurité ou &amp; Windows PowerShell.
 

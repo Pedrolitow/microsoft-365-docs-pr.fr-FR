@@ -6,6 +6,7 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.custom: admindeeplinkMAC
 search.appverid: ''
 ms.collection:
 - enabler-strategic
@@ -13,12 +14,12 @@ ms.collection:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Présentation du balisage d’image dans SharePoint Syntex
-ms.openlocfilehash: 62055f8cb6b01fcd285aa01bb5934963b13fae6b
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2e0f3e9dea8ca7d640db906715a39448eb024b2b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58552899"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202284"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Balisage d’image dans SharePoint Syntex
 
@@ -42,7 +43,7 @@ Après avoir [configuré SharePoint Syntex](set-up-content-understanding.md), vo
 
 Pour activer ou désactiver le balisage d’images
 
-1. Dans le Centre d’administration Microsoft 365, cliquez sur **Configuration**.
+1. Dans la Centre d'administration Microsoft 365, sélectionnez <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Installation.**</a>
 
 2. Sous **Connaissances organisationnelles**, cliquez sur **Automatiser la compréhension de contenu**.
 

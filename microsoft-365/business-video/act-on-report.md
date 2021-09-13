@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser les informations des rapports d’utilisation.
-ms.openlocfilehash: 2703245899e62f89730885bfc9e78f13e24da7d1252dbcd4209f1ddd6ce15292
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1c499b62f14aeec392d15939c8e6d70c9bad7ced
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900782"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208315"
 ---
 # <a name="review-usage-reports-in-microsoft-365"></a>Passer en revue les rapports d’utilisation Microsoft 365
 

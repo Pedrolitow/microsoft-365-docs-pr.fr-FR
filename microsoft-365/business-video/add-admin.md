@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment ajouter un autre administrateur.
-ms.openlocfilehash: 43c291260f02a8133503406f590ab1bd7f51d30427d1a158f55a3ef3fa46d83e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 1e727f60d209f8d80edee38a21ce3992dd52d62c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53900674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208308"
 ---
 # <a name="add-an-admin"></a>Ajouter un administrateur
 
@@ -39,7 +40,7 @@ Lorsque vous vous inscrivez à Microsoft 365 Business, vous devenez automatiquem
 ### <a name="add-an-existing-employee-as-an-admin"></a>Ajouter un employé existant en tant qu’administrateur
 
 1. Lorsque vous vous inscrivez à Microsoft 365 Business, vous devenez automatiquement un administrateur global. Pour vous aider à gérer l’entreprise, vous pouvez également faire d’autres administrateurs de personnes. 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 1. Choisissez l’utilisateur que vous souhaitez rendre administrateur, puis sélectionnez **Gérer les rôles.**
 1. Dans le volet Gérer **les** rôles, clear the user’s current role check box, and select the new role that you want to assign to the user.
 1. Sélectionnez **Enregistrer les modifications,** puis fermez le volet de confirmation mis à jour des **rôles** d’administrateur.
@@ -48,7 +49,7 @@ Lorsque vous vous inscrivez à Microsoft 365 Business, vous devenez automatiquem
 
 S’il existe un responsable informatique externe qui vous aidera à gérer votre entreprise, vous pouvez l’ajouter en tant qu’administrateur global.
 
-1. Dans la Centre d’administration Microsoft 365, sélectionnez **Utilisateurs,** **Utilisateurs actifs,** puis **Ajoutez un utilisateur.**
+1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs,**</a>puis **Ajoutez un utilisateur.**
 1. Dans la page Configurer les informations **de base,** entrez le nom, le nom d’affichage et le nom d’utilisateur de l’utilisateur.
 1. Cochez la **case Envoyer le** mot de passe par courrier électronique à la fin de l’envoi du mot de passe de l’utilisateur. Tapez leur adresse de messagerie. Séparez les adresses par des points-virgules. Sélectionnez **Suivant**.
 1. Dans la **liste de listes** de listes listes de sélection de l’emplacement, choisissez l’emplacement de l’utilisateur.

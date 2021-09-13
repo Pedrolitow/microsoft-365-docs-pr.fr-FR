@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8c2029be06be016d34fc7f00f5b1ec4ffb474f472bb96179f46ed55280706a40
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ad044d7cb0ad2ed15d738e99deb14a9a04218479
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202619"
 ---
 # <a name="contact-support-for-canada"></a>Contacter le support pour le Canada
 

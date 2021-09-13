@@ -19,11 +19,11 @@ search.appverid:
 - PJW120
 description: Le support prend fin Project Server 2010 se termine le 13 avril 2021. Utilisez cet article comme guide pour mettre à niveau vers Project Online ou une version plus récente de Project Server local.
 ms.openlocfilehash: 1c5b942e50a137c1ecc32f08c481811ef4edf779
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209191"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
@@ -33,10 +33,10 @@ Project Server 2010 prendra fin le **13 avril 2021.** Cette date a été prolong
 
 |Produit |Date de fin du support|
 |---|---|
-|Project 2010 Standard|13 octobre 2020|
-|Project 2010 Professional|13 octobre 2020|
+|Project 2010 Standard|13 octobre 2020|
+|Project 2010 Professional|13 octobre 2020|
 
-Pour plus d’informations sur l’arrivée à la fin de la prise en charge, voir [Upgrade from Office 2010 servers and client products](plan-upgrade-previous-versions-office.md).
+Pour plus d’informations sur la fin de la prise en charge, voir [Upgrade from Office 2010 servers and client products](plan-upgrade-previous-versions-office.md).
 
 ## <a name="what-does-end-of-support-mean"></a>*Qu’est-ce que la fin du support* signifie ?
 
@@ -84,7 +84,7 @@ Si vous migrez depuis Project Standard 2010, vous pouvez passer à une version p
 
 De même, si vous migrez à partir de Project Professionnel 2010, vous pouvez passer à une version plus récente (Project Professionnel 2019 ou Project Professionnel 2016). Là encore, déplacez-vous vers la version la plus récente si possible. Si vous utilisez Project Professionnel pour vous connecter à Project Server, veillez à migrer vers une version de Project Professionnel qui se connecte à la version de Project Server que vous utilisez.
 
-Project Professionnel 2010 peuvent également migrer vers le client de bureau Project Online, qui est une version basée sur un abonnement de Project Professionnel 2019. Il est inclus dans les abonnements Project (plan 3) et Project (plan 5)'abonnement.
+Project Professionnel 2010 peuvent également migrer vers le client de bureau Project Online, qui est une version basée sur un abonnement de Project Professionnel 2019. Il est inclus dans les abonnements Project (plan 3) et Project (plan 5)'abonnements.
 
 #### <a name="move-to-an-online-solution"></a>Passer à une solution en ligne
 
@@ -96,7 +96,7 @@ Pour plus d’informations sur les fonctionnalités et les licences, [voir Micro
 
 Prenons les considérations suivantes lorsque vous prévoyez de migrer Project Server 2010 :
 
-- **Obtenir de l’aide d’un** fournisseur de solutions Microsoft : une mise à niveau à partir de Project Server 2010 peut être un défi. Cela nécessite beaucoup de préparation et de planification. Cela peut être particulièrement difficile si vous n’étiez pas la personne qui a initialement Project Server 2010. Les fournisseurs de solutions Microsoft sont disponibles pour vous aider, que vous prévoyiez de migrer vers Project Server 2019 ou vers Project Online. Recherchez un fournisseur de solutions dans le [Centre de fournisseurs de solutions Microsoft.](https://go.microsoft.com/fwlink/p/?linkid=841249)
+- **Obtenir de l’aide d’un** fournisseur de solutions Microsoft : une mise à niveau à partir Project Server 2010 peut être un défi. Cela nécessite beaucoup de préparation et de planification. Cela peut être particulièrement difficile si vous n’étiez pas la personne qui a initialement Project Server 2010. Les fournisseurs de solutions Microsoft sont disponibles pour vous aider, que vous prévoyiez de migrer vers Project Server 2019 ou vers Project Online. Recherchez un fournisseur de solutions dans le [Centre de fournisseurs de solutions Microsoft.](https://go.microsoft.com/fwlink/p/?linkid=841249)
 
 - **Planifiez** vos personnalisations : les personnalisations dans votre environnement Project Server 2010 peuvent ne pas fonctionner lorsque vous migrez vers Project Server 2019 ou Project Online. Il existe des différences significatives entre Project’architecture de serveur entre les versions. En outre, les systèmes d’exploitation, les serveurs de base de données et les navigateurs web requis qui fonctionnent avec les versions diffèrent. Planifiez la façon de tester ou de reconstruire vos personnalisations dans le nouvel environnement. Profitez de cette opportunité pour déterminer si des personnalisations spécifiques sont toujours nécessaires. Pour plus d'informations, voir [Create a plan for current customizations during upgrade to SharePoint 2013](/SharePoint/upgrade-and-update/create-a-plan-for-current-customizations-during-upgrade-to-sharepoint-2013).
 
@@ -106,7 +106,7 @@ Prenons les considérations suivantes lorsque vous prévoyez de migrer Project S
 
 Si vous choisissez de migrer de Project Server 2010 vers Project Online, vous pouvez suivre les étapes suivantes pour migrer manuellement les données de votre plan de projet :
 
-1. Enregistrez vos plans de Project Server 2010 au format .mpp.
+1. Enregistrez vos plans de projet Project Server 2010 au format .mpp.
 
 2. En utilisant Project Professionnel 2016, Project Professionnel 2019 ou le client de bureau Project Online, ouvrez chaque fichier .mpp, puis enregistrez-le et publiez-le sur Project Online.
 
@@ -114,7 +114,7 @@ Vous pouvez créer manuellement votre configuration de PWA dans Project Online (
 
 Ressources clés :
 
-|Ressource|Description|
+|Resource|Description|
 |---|---|
 |[Prenez en main Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)|Comment configurer et utiliser les Project Online|
 |[Description du service Project Online](/office365/servicedescriptions/project-online-service-description/project-online-service-description)|Informations sur les différents plans Project Online disponibles|
@@ -223,7 +223,7 @@ Ressources clés :
 
 - [Microsoft Office Project de migration Portfolio Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841279)
 
-## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour Office client et serveurs 2010 et Windows 7
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client Office 2010 et les serveurs et Windows 7
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](../downloads/Office2010Windows7EndOfSupport.pdf).
 
@@ -233,7 +233,7 @@ Cette affiche illustre les différents chemins que vous pouvez prendre pour évi
 
 Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Mise à jour à jour de SharePoint 2010](upgrade-from-sharepoint-2010.md)
 

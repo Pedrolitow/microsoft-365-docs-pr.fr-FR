@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4bee92d5b361122ddcf5659fc0b6f28ce544cae36302032d89c7c5c3400ae02e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db18cd0303bbdd6c9904f2e94f3781862fb4166f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856762"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201918"
 ---
 # <a name="contact-support-for-ghana"></a>Contacter le support pour le Ghana
 

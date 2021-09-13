@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 924acc1fe1ba12449701e97b3c3b8c87f42e251c7e8c9e71eec5550572778dd4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c8ec5612d2f5e7f1dfcad4c2bb7a6017692996c0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202506"
 ---
 # <a name="payment-information-for-moldova"></a>Informations de paiement pour la Moldavie
 

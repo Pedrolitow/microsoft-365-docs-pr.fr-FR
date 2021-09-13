@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos données et utilisateurs de Google Workspace vers Microsoft 365 entreprise.
-ms.openlocfilehash: 8a27b83831a10abf7c80bf35f694e50533203d0407fa589c6f08e3f2c9280b30
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9d5ec1ce6b9b13026f615c4135546505130fe7b3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873134"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202524"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Basculer à partir de Google Workspace - Vue d’ensemble
 
@@ -35,11 +35,11 @@ Pour déplacer vos données, vos e-mails et vos utilisateurs de Google Workspace
 
 | Étape  |Description  |
 |---------|---------|
-|Étape 1 |  [S’inscrire](../sign-up.md) à Microsoft 365 Business Premium       |
-|Étape 2 |   [Configurer la Microsoft 365 pour la migration de Google Workspace.](set-up-microsoft-365-forgoogle.md) </br> Dans cette étape, vous allez vérifier que vous êtes propriétaire du domaine que vous utilisez dans Google Workspace, ajouter des utilisateurs et configurer la sécurité de base pour les appareils. |
-|Étape 3 | [Configurer des stratégies de sécurité pour Windows appareils mobiles.](../secure-win10-pcs.md)</br> Windows sécurité est configurée séparément dans la page d’installation de Centre d’administration Microsoft 365. |
-|Étape 4|[Ajoutez votre domaine Google Workspace à Microsoft 365](add-google-domain.md) </br> Après avoir vérifié que vous êtes propriétaire du domaine que vous utilisez pour le courrier électronique, vous et tous les autres utilisateurs pouvez commencer à utiliser votre ancien courrier électronique pour vous Microsoft 365 Business Premium. |
-|Étape 5 | [Installez Office applications et Microsoft Teams](../install-office.md).</br> Toutes les personnes qui ont Microsoft 365 licences doivent installer les applications Office sur leurs appareils de travail.|
+|Étape 1 |  [S’inscrire](../sign-up.md) à Microsoft 365 Business Premium       |
+|Étape 2 |   [Configurer la Microsoft 365 pour la migration de Google Workspace.](set-up-microsoft-365-forgoogle.md) </br> Dans cette étape, vous allez vérifier que vous êtes propriétaire du domaine que vous utilisez dans Google Workspace, ajouter des utilisateurs et configurer la sécurité de base pour les appareils. |
+|Étape 3 | [Configurer des stratégies de sécurité pour Windows appareils mobiles.](../secure-win10-pcs.md)</br> Windows sécurité est configurée séparément dans la page d’installation de Centre d'administration Microsoft 365. |
+|Étape 4|[Ajoutez votre domaine Google Workspace à Microsoft 365](add-google-domain.md) </br> Après avoir vérifié que vous êtes propriétaire du domaine que vous utilisez pour le courrier électronique, vous et tous les autres utilisateurs pouvez commencer à utiliser votre ancien courrier électronique pour vous Microsoft 365 Business Premium. |
+|Étape 5 | [Installez Office applications et Microsoft Teams](../install-office.md).</br> Toutes les personnes qui ont Microsoft 365 licences doivent installer les applications Office sur leurs appareils de travail.|
 |Étape 6 | [Migrez les éléments de courrier et de calendrier](migrate-email.md)de tout le monde.</br> Au cours de cette étape, vous allez exécuter une migration Exchange Online pour déplacer le courrier électronique, le calendrier et les contacts de tout le monde à partir de Google Workspace.  |
 |Étape 7 | [Connecter domaine à Microsoft 365](connect-domain-tom365.md). </br> Une fois que vous avez connecté le courrier électronique de domaine, il commence à Microsoft 365, et tous vos services Microsoft 365 fonctionnent.|
 |Étape 8|Utilisez [le Gestionnaire de migration pour déplacer les](/sharepointmigration/mm-google-overview) données de tous les utilisateurs de Drive vers OneDrive et des lecteurs partagés vers des sites d’équipe.</br> Dans cette étape, toutes les données des lecteurs personnels et partagés sont copiées et déplacées vers Microsoft 365.|

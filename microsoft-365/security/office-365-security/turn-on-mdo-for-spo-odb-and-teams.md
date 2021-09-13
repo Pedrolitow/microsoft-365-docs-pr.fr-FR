@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à activer Coffre pièces joi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f149aef4da4d85d8495f536ff95499cc143d2c71
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 8a1020193a49dd7b4871b9b9fec53d21073b03e6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573402"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202710"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -45,7 +45,7 @@ Cet article contient les étapes permettant d’activer et de configurer Coffre 
 
 - Pour activer les pièces jointes Coffre pour SharePoint, OneDrive et Microsoft Teams, vous devez être membre des  groupes  de rôles Gestion de l’organisation ou Administrateur de la sécurité dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-- Pour utiliser SharePoint Online PowerShell afin d’empêcher les personnes de télécharger [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) des fichiers malveillants, vous devez être membre des rôles Administrateur général ou Administrateur [SharePoint](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) dans Azure AD.
+- Pour utiliser SharePoint Online PowerShell afin d’empêcher les personnes de télécharger [](/azure/active-directory/roles/permissions-reference#global-administrator) des fichiers malveillants, vous devez être membre des rôles Administrateur général ou Administrateur [SharePoint](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) dans Azure AD.
 
 - Vérifiez que la journalisation d’audit est activée pour votre organisation. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 

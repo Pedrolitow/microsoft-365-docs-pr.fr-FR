@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Découvrez comment accéder au portail d’confiance des services Microsoft et l’utiliser pour vous aider avec les pratiques de sécurité, de confidentialité et de conformité.
 ms.openlocfilehash: 63901d6b71be98c0474b5ede840b6914b38609b4
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574218"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202379"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Mise en place du portail d’confiance des services Microsoft
 
@@ -33,10 +33,10 @@ Le Portail d’approbation de services contient des informations sur l’implém
 
 ### <a name="existing-customers"></a>Clients existants
 
-Les clients existants peuvent accéder au portail d’confiance des services avec l’un des abonnements en ligne <https://aka.ms/STP> suivants (d’essai ou payants) :
+Les clients existants peuvent accéder au portail d’confiance des services avec l’un des <https://aka.ms/STP> abonnements en ligne suivants (d’essai ou payants) :
 
 - Microsoft 365
-- Dynamics 365
+- Dynamics 365
 - Azure
 
  > [!NOTE]
@@ -69,7 +69,7 @@ Le **lien Portail d’confiance des** services affiche la page d’accueil. Il o
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
 > [!IMPORTANT]
-> Le Gestionnaire de conformité a été déplacé du portail d’confiance des services vers son nouvel emplacement dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Toutes les données client ont été déplacées vers le nouvel emplacement, de sorte que vous pouvez continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous à [la documentation du Gestionnaire de](compliance-manager.md) conformité pour obtenir des informations sur l’installation et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du Gestionnaire de conformité reste dans le portail d’confiance des services, tous les utilisateurs sont encouragés à utiliser le Gestionnaire de conformité dans le Centre de conformité Microsoft 365.
+> Le Gestionnaire de conformité a été déplacé du portail d’confiance des services vers son nouvel emplacement dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Toutes les données client ont été déplacées vers le nouvel emplacement, vous pouvez donc continuer à utiliser le Gestionnaire de conformité sans interruption. Reportez-vous [à la documentation du Gestionnaire de conformité](compliance-manager.md) pour obtenir des informations sur l’installation et pour en savoir plus sur les nouvelles fonctionnalités. Bien que la version classique du Gestionnaire de conformité reste dans le portail d’confiance des services, tous les utilisateurs sont encouragés à utiliser le Gestionnaire de conformité dans le Centre de conformité Microsoft 365.
 
 ### <a name="trust-documents"></a>Documents approuvés
 
@@ -85,13 +85,13 @@ Fournit une multitude d’informations de conception et d’implémentation de s
 
 - **Protection des données :** Contient une multitude de ressources telles que des contrôles audités, des livres blancs, des FAQ, des tests de pénétration, des outils d’évaluation des risques et des guides de conformité.
 
-- **Plans de sécurité et conformité Azure :** Ressources qui vous aident à créer des applications cloud sécurisées et conformes. Ce domaine contient des conseils pour le secteur public, les finances, la santé et les secteurs verticaux de vente au détail.
+- **Plans de sécurité et conformité Azure :** Ressources qui vous aident à créer des applications cloud sécurisées et conformes. Ce domaine contient des conseils pour le secteur public, la finance, la santé et les secteurs verticaux de vente au détail.
 
 ### <a name="industries--regions"></a>Secteurs et régions
 
 Fournit des informations de conformité propres au secteur et à la région sur les services Microsoft Cloud.
 
-- **Secteurs d’activité :** Pour l’instant, cette page fournit une page d’accueil propre au secteur pour le secteur des services financiers. Il contient des informations telles que des offres de conformité, des FAQ et des témoignages de réussite. Les ressources pour d’autres secteurs seront publiées à l’avenir, mais vous pourrez trouver des ressources pour d’autres secteurs en allant sur la page Documents de confiance **> protection** des données dans le STP.
+- **Secteurs d’activité :** Pour l’instant, cette page fournit une page d’accueil propre au secteur pour le secteur des services financiers. Il contient des informations telles que des offres de conformité, des FAQ et des témoignages de réussite. Les ressources pour **d’autres** secteurs seront publiées à l’avenir, mais vous pourrez trouver des ressources pour d’autres secteurs en allant sur la page Documents d'> protection des données dans le STP.
 
 - **Régions :** Fournit des avis juridiques sur la conformité des services Microsoft Cloud avec les différentes lois de différents pays. L’Australie, le Canada, le Danemark, l’Allemagne, la Pologne, la Roumanie, l’Espagne et le Royaume-Uni sont des pays spécifiques.
 
@@ -101,7 +101,7 @@ Liens vers le [Centre de confidentialité Microsoft,](https://www.microsoft.com/
 
 ### <a name="my-library"></a>Ma bibliothèque
 
-Cette nouvelle fonctionnalité vous permet d’enregistrer *(ou* d’épingler) des documents afin d’y accéder rapidement sur votre page Ma bibliothèque. Vous pouvez également configurer des notifications de telle sorte que Microsoft vous envoie un courrier électronique lorsque les documents de votre bibliothèque sont mis à jour. Pour plus d’informations, voir la section [Ma bibliothèque](#my-library-1) dans cet article.
+Cette nouvelle fonctionnalité vous permet d’enregistrer *(ou* d’épingler) des documents afin de pouvoir y accéder rapidement sur votre page Ma bibliothèque. Vous pouvez également configurer des notifications de telle sorte que Microsoft vous envoie un courrier électronique lorsque les documents de votre bibliothèque sont mis à jour. Pour plus d’informations, voir la section [Ma bibliothèque](#my-library-1) dans cet article.
 
 ### <a name="more"></a>Plus
 
@@ -109,19 +109,19 @@ Accédez **à Plus > administrateur pour** accéder aux fonctions d’administra
 
 - **Paramètres :** Cette page vous permet d’attribuer des rôles d’utilisateur pour le Gestionnaire de conformité (classique).
 
-- **Paramètres de confidentialité Paramètres :** Cette page vous permet d’exporter un rapport qui contient les affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
+- **Confidentialité de l’Paramètres :** Cette page vous permet d’exporter un rapport qui contient les affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
 
 ### <a name="search"></a>Rechercher
 
 Cliquez sur la loupe dans le coin supérieur droit de la page Portail d’confiance des services pour développer la zone, entrez vos termes de recherche, puis appuyez sur **Entrée**. La page **De** recherche s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de recherche répertoriés ci-dessous.
 
-![Portail d’confiance des services : recherche sur les documents avec filtre appliqué.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portail d’approbation de services. Recherche de documents ayant un filtre appliqué.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 Par défaut, la recherche renvoie les résultats du document. Vous pouvez filtrer les résultats à l’aide des listes de listes listes pour affiner la liste des documents affichés. Vous pouvez utiliser plusieurs filtres pour affiner la liste des documents. Les filtres incluent les services cloud spécifiques, les catégories de pratiques de conformité ou de sécurité, les régions et les secteurs. Cliquez sur le lien du nom du document pour télécharger le document.
 
 Pour lister les contrôles des évaluations dans le Gestionnaire de conformité (classique) associés à vos termes de recherche, cliquez **sur Gestionnaire de conformité.** Les résultats de la recherche indiquent la date de création de l’évaluation, le nom du regroupement d’évaluations, le service Microsoft Cloud applicable et indiquent si le contrôle est Géré par Microsoft ou par le client. Cliquez sur le nom du contrôle pour afficher le contrôle dans l’évaluation dans le Gestionnaire de conformité (classique).
 
-![Portail d’confiance des services : recherche sur les contrôles du Gestionnaire de conformité.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portail d’approbation de services. Recherche sur les contrôles du Gestionnaire de conformité.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Les rapports et les documents du portail d’confiance des services peuvent être téléchargés pendant au moins 12 mois après la publication ou jusqu’à ce qu’une nouvelle version du document soit disponible.
@@ -150,7 +150,7 @@ Pour accéder à ces starter packs, accédez à **Service Trust Portal > Industr
 
 Le Portail d’approbation des services permet d’afficher le contenu d’une page dans différentes langues. Pour modifier la langue de la page, cliquez sur l’icône de globe terrestre dans l’angle inférieur gauche de la page, puis sélectionnez la langue de votre choix.
 
-![Portail d’confiance des services : options de contenu localisées.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portail d’approbation de services. Options de localisation du contenu.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>Faire part de vos commentaires
 

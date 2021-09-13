@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e2663c30281a2d3c4bdc1eaeea60a06abfd6352314c501ca804d2565cd969149
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a28fa85eedc04bfebcfbeb863759e49a98137ae4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804227"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201738"
 ---
 # <a name="contact-support-for-saudi-arabia"></a>Contacter le support pour l’Arabie Saoudite
 

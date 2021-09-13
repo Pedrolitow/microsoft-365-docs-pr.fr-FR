@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment vous connecter à des données dans votre client Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) à l’aide de l’application de modèle Analyse de l’utilisation Microsoft 365 dans Power BI.
 ms.openlocfilehash: 2a0ea6985b9f9d09498e4ad086bf89f529b24c17
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208331"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connecter données Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) avec l’analyse de l’utilisation
 
@@ -46,7 +46,7 @@ Pour configurer initialement Microsoft 365 l’analyse de l’utilisation :
 
 ## <a name="step-1-make-you-organizations-data-available-for-the-microsoft-365-usage-analytics-report"></a>Étape 1 : rendre les données de votre organisation disponibles pour le rapport d’analyse Microsoft 365'utilisation
 
-1. Dans la Centre d’administration Microsoft 365, développez le menu de navigation, sélectionnez **Rapports,** puis **Sélectionnez Utilisation.** 
+1. Dans la Centre d'administration Microsoft 365, développez le menu de navigation, sélectionnez **Rapports,** puis **Sélectionnez Utilisation.** 
 2. Dans la page **Rapports d’utilisation,** dans la section Analyse Microsoft 365'utilisation, sélectionnez **Prise en main**. 
 3. Sous **Activer Power BI’analyse** de l’utilisation, sélectionnez Rendre les données d’utilisation organisationnelles disponibles pour l’analyse de l’utilisation **de Microsoft Power BI,** puis sélectionnez **Enregistrer.**
 

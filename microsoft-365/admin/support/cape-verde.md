@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e3fb91a47b23b49f71c9b835f262f1c68aa6847b3cd8accee9e94f4e405755c5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 9c25ba7fc49d5b26dd2e95262e9ef87a02a93308
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202613"
 ---
 # <a name="contact-support-for-cape-verde-cabo-verde"></a>Contacter le support technique pour le Cap Vert (Cabo Verde)
 

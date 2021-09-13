@@ -16,18 +16,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Votre organisation peut avoir besoin de plusieurs domaines pour que les clients vous trouvent. Découvrez comment ajouter un autre domaine à votre abonnement.
-ms.openlocfilehash: c127abf899985bb23cc3a9906425d4d5408a4376fde3bc88a4c3bdda1277bace
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fb8af781f68cddd5780d27724134910a28db8bf2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53882608"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59208300"
 ---
 # <a name="add-another-domain"></a>Ajouter un autre domaine
 
@@ -37,7 +38,7 @@ Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins diff
 
 ## <a name="try-it"></a>Essayez !
 
-1. In the Centre d’administration Microsoft 365, choose **Setup**.
+1. In the Centre d'administration Microsoft 365, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 1. Sous **Obtenir votre domaine personnalisé, sélectionnez** **Afficher.**
 1. Sélectionnez **Gérer,** puis **Ajouter un domaine.**
 1. Entrez le nouveau nom de domaine à ajouter, puis sélectionnez **Suivant.**
@@ -49,13 +50,13 @@ Votre entreprise peut avoir besoin de plusieurs noms de domaine à des fins diff
 
 Pour recevoir des messages électroniques sur votre nouveau domaine, vous devez ajouter un nouvel alias de messagerie pour chaque utilisateur :
 
-1. Sélectionnez **Utilisateurs,** **Utilisateurs** actifs, puis sélectionnez l’utilisateur qui se voit attribuer le nouvel alias.
+1. Sélectionnez **Utilisateurs,** <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Utilisateurs**</a>actifs, puis sélectionnez l’utilisateur qui se voit attribuer le nouvel alias.
 1. Choisissez **Gérer les alias de messagerie,** puis **ajoutez un alias.**
 1. Entrez le nom d’utilisateur, puis choisissez le nouveau domaine dans la liste liste.
 1. Sélectionnez **Enregistrer les modifications,** puis fermez la fenêtre.
 1. Répétez ces étapes pour chaque utilisateur qui doit recevoir des messages électroniques sur le nouveau domaine.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Ajouter un domaine à Microsoft 365](../admin/setup/add-domain.md) (article)\
 [Ajouter des enregistrements DNS pour connecter votre domaine](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)\

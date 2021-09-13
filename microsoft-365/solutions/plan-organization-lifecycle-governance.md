@@ -15,17 +15,17 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Informations sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
+description: En savoir plus sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
 ms.openlocfilehash: 5421f12109fb40e4e5cc6f68568a3b5f1873c7ce
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203676"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier la gouvernance de l’organisation et du cycle de vie Microsoft 365 groupes et Microsoft Teams
 
-Microsoft 365 groupes disposent d’un ensemble riche d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
+Microsoft 365 groupes disposent d’un riche ensemble d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
 
 La section suivante décrit les fonctionnalités, recommande les meilleures pratiques et fournit des conseils pour poser les bonnes questions afin de déterminer les conditions requises pour la gouvernance et comment y répondre.
 
@@ -74,9 +74,9 @@ Une fois que vous avez fixé l’expiration des groupes :
 - Tout groupe qui n’est pas renouvelé est supprimé.
 - Tout groupe supprimé peut être restauré dans les 30 jours par les propriétaires du groupe ou l’administrateur.
 
-Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, [voir Microsoft 365 stratégie d’expiration de groupe.](microsoft-365-groups-expiration-policy.md)
+Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, voir [Microsoft 365 stratégie d’expiration de groupe.](microsoft-365-groups-expiration-policy.md)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

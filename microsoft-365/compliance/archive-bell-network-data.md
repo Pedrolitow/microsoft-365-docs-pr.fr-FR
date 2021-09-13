@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS et MMS à partir du réseau Bell. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
 ms.openlocfilehash: 24c5848d1e942338d9b3a55031572443b9553657
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58564217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202380"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>Configurer un connecteur pour archiver les données du réseau Bell
 
@@ -27,11 +27,11 @@ Une fois que les messages SMS et MMS sont stockés dans les boîtes aux lettres 
 
 ## <a name="overview-of-archiving-bell-network-data"></a>Vue d’ensemble de l’archivage des données du réseau Bell
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données du réseau Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données du réseau Bell dans Microsoft 365.
 
 ![Flux de travail d’archivage du réseau Bell.](../media/BellNetworkConnectorWorkflow.png)
 
-1. Votre organisation travaille avec TeleMessage et Bell pour configurer un connecteur réseau Dent. Pour plus d’informations, voir [l’Archiveur du réseau Bell.](https://www.telemessage.com/office365-activation-for-bell-network-archiver)
+1. Votre organisation travaille avec TeleMessage et Bell pour configurer un connecteur de réseau Dent. Pour plus d’informations, voir [l’Archiveur du réseau Bell.](https://www.telemessage.com/office365-activation-for-bell-network-archiver)
 
 2. En temps réel, les messages SMS et MMS du réseau Bell de votre organisation sont copiés sur le site TeleMessage.
 
@@ -45,7 +45,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 Certaines des étapes d’implémentation requises pour archiver les données du réseau Bell sont externes à Microsoft 365 et doivent être effectuées avant de pouvoir créer un connecteur dans le centre de conformité.
 
-- Commandez le service d’archivage du réseau [Bell à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous inscrire à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
+- Commandez le service d’archivage du réseau [Bell à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous connectez à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
 
 - Obtenez les détails de votre compte réseau Et de votre contact de facturation pour remplir les formulaires d’intégration TeleMessage et commander le service d’archivage des messages auprès de Bell.
 
@@ -81,6 +81,6 @@ La dernière étape consiste à créer un connecteur de réseau Bell dans le Cen
 
 8. Go to the **Connectors** tab on the **Data connectors** page in the compliance center to see the progress of the import process for the new connector.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 - Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

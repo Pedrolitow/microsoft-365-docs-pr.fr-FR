@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 113e3aa630f47d5b2c928fa1a51f3397cb5697774d391312413fa8309ead8b4c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5df7e5262e20b5a7df2d4edfe3eea9bb927f317d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804251"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201743"
 ---
 # <a name="contact-support-for-samoa"></a>Contacter le support technique pour les Samoa
 

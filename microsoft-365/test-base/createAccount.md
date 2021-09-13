@@ -15,11 +15,11 @@ ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ms.openlocfilehash: 114c0809aab3dcd219b49fd015752a8dec166cee
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202806"
 ---
 # <a name="step-1-create-a-test-base-account"></a>Étape 1 : Créer un compte de base de test
 
@@ -49,7 +49,7 @@ Si vous n’avez pas d’abonnement Azure, créez [un compte gratuit](https://az
 
 5.  Enfin, cliquez sur ```Review + Create``` pour valider et activer votre compte nouvellement créé.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Passer à l’article suivant pour commencer à l’étape 2 : **Découvrez comment charger votre package.**
 > [!div class="nextstepaction"]

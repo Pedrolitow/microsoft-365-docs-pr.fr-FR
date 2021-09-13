@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Découvrez comment sélectionner et télécharger du contenu à partir d’un ensemble de révisions dans Advanced eDiscovery présentations ou des avis externes.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 1ec4c82acdc7958cb17def5660f51109f1ff32e0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572178"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203339"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>Télécharger les documents sélectionnés à partir d’un jeu à réviser
 

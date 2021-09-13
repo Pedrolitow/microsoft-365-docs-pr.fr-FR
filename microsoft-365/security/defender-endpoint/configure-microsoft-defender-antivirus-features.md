@@ -17,11 +17,11 @@ ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: 361d807cb60d5e820a0b732bbe20fa49f954d47c
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203159"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurer les fonctionnalités antivirus Microsoft Defender
 

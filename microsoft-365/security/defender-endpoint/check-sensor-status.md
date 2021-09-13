@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
 ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203190"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison
 
@@ -41,7 +41,7 @@ Il existe deux indicateurs d’état sur la vignette qui fournissent des informa
 - **Mal configuré :** ces appareils peuvent signaler partiellement des données de capteur au service Defender for Endpoint et peuvent avoir des erreurs de configuration qui doivent être corrigées.
 - **Inactif** : appareils qui ont cessé de signaler au service Defender for Endpoint pendant plus de sept jours au cours du mois précédent.
 
-Le fait de cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée en fonction de votre choix.
+Cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée en fonction de votre choix.
 
 ![Capture d’écran de la vignette Appareils avec problèmes de capteur.](images/atp-devices-with-sensor-issues-tile.png)
 

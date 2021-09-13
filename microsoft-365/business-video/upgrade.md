@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment mettre à niveau Windows 10 Famille vers Windows 10 Professionnel.
-ms.openlocfilehash: 934928ce44ffe1b3139dc346011ff32b0cfbcbd5186419b5eb531cbb348d9285
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 319152f8a587c123b25907db060b0572ec3a7cf3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809491"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203405"
 ---
 # <a name="upgrade-from-windows-10-home-to-windows-10-pro"></a>Mettre à niveau de Windows 10 Famille à Windows 10 Professionnel
 
@@ -41,4 +41,4 @@ Microsoft 365 entreprise nécessite Windows 10 Professionnel pour sécuriser vos
 4. Dans la **Sécurité Windows,** entrez votre code confidentiel pour vérifier votre identité.
 5. Consultez la page de paiement, lisez les conditions d’utilisation, modifiez votre mode de paiement si vous le souhaitez, puis choisissez  **Acheter**.
 6. Under **Upgrade to Windows 10 Professionnel** , choose **Install**.
-7. Enregistrez les fichiers si nécessaire, puis sélectionnez **Oui,** laissez les&#39;commencer l’installation Windows.
+7. Enregistrez les fichiers si nécessaire, puis sélectionnez **Oui, laissez les**&#39;commencer l’installation Windows.

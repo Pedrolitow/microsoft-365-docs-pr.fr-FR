@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e593a18814482be670208fb456b35d86ad469eadae749c7c14bd45b45056d9fb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ecefa45d73c527e9464fb5d6332dfccd5fd018be
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201858"
 ---
 # <a name="contact-support-for-micronesia"></a>Contacter le support technique pour micronésie
 

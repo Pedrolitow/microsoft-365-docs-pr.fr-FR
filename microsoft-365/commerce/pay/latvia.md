@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 19297ead6978e77f563aad34c4fa608bbaf136b3480498797785a1a27b5eb638
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 25451d9ec1f274b77862415e296bc264270729f2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203388"
 ---
 # <a name="payment-information-for-latvia"></a>Informations de paiement pour la Lettonie
 

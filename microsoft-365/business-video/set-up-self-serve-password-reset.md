@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment laisser les utilisateurs réinitialiser leur mot de passe dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 5492bc357fb58e9d3ca5ed4e557449726657257109d9450e09c131115510982b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 815c35098253f7286a1ab99ad99cb0d23009473c
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203448"
 ---
 # <a name="set-up-self-service-password-reset"></a>Utiliser la réinitialisation de mot de passe en libre-service
 
@@ -36,14 +37,14 @@ Pour laisser vos utilisateurs réinitialiser leurs propres mots de passe sans av
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans la Centre d’administration Microsoft 365, dans le volet de  navigation de gauche, sélectionnez Paramètres puis sécurité **& confidentialité**.
+1. Dans la Centre d'administration Microsoft 365, dans le volet de navigation de gauche, sélectionnez Paramètres  >  **paramètres** org, puis sécurité <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**& confidentialité**</a>.
 1. Sous **Laisser vos utilisateurs réinitialiser leur mot de passe,** sélectionnez **Centre d’administration Azure AD.**
 1. Dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis sur la page Utilisateurs **-** Tous les utilisateurs, sélectionnez Réinitialiser le mot **de passe.**
 1. Sélectionnez **Tout** pour activer la réinitialisation du mot de passe libre-service, puis sélectionnez **Enregistrer.**
 
 La prochaine fois qu’un utilisateur se signe à son compte, son ID d’utilisateur et son mot de passe lui sont demandés. Ils **sélectionnent Suivant,** puis choisissent s’il faut s’authentifier avec leur téléphone, leur courrier électronique ou les deux. Ils entrent le code qu’ils reçoivent, **sélectionnent Vérifier,** puis **terminer.** Lorsqu’ils ont terminé, ils peuvent réinitialiser leur mot de passe.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Définir la stratégie d’expiration des mots de passe pour votre organisation](/microsoft-365/admin/manage/set-password-expiration-policy) (article)
 

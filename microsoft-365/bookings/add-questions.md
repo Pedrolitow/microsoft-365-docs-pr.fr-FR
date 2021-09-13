@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: Si vous devez poser des questions aux clients lorsqu’ils réservent un rendez-vous en ligne, vous pouvez ajouter des questions personnalisées et des questions requises à la page de réservation.
 ms.openlocfilehash: 496d395677d272c436504bfe43b3c42833e3a73e
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571602"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203507"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>Ajouter des questions personnalisées et requises à la page réservation
 

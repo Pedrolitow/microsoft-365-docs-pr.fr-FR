@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment connecter votre domaine à Microsoft 365.
-ms.openlocfilehash: b91b6fcc297449906e54a8f61f52b9d3c8b01ca6d009d43fa69a5873b81eb873
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 377bb0444582f8efe15583fa522eceb9d675e474
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53887862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202541"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>Connecter votre domaine pour Microsoft 365 entreprise
 
@@ -41,9 +42,9 @@ Tout d’abord, vous devez supprimer des enregistrements DNS existants de Google
 1. Connectez-vous à votre console d’administration Google Workspace [admin.google.com](https://admin.google.com).
 1. Select **Domains**, **Manage domains**, **View details**, **Manage domain**, then **DNS** in the left nav.
 1. Faites défiler vers le bas **jusqu’aux enregistrements** synthétiques, **ouvrez Google Workspace,** **sélectionnez Supprimer,** puis **Supprimez à** nouveau.
-1. Faites défiler vers le bas **jusqu’aux** enregistrements de ressource personnalisés et supprimez tous les enregistrements DNS existants qui apparaissent, y compris ceux que vous avez peut-être créés précédemment pour Microsoft 365.
-1. Go to the [Centre d’administration Microsoft 365](https://admin.microsoft.com).
-1. In the left nav, choose, **Show all**, **Paramètres**, **Domains**.
+1. Faites défiler vers le bas **jusqu’aux** enregistrements de ressources personnalisés et supprimez tous les enregistrements DNS existants qui apparaissent, y compris ceux que vous avez peut-être créés précédemment pour Microsoft 365.
+1. Go to the [Centre d'administration Microsoft 365](https://admin.microsoft.com).
+1. In the left nav, choose, **Show all**  >  **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 1. Choisissez ensuite votre domaine par défaut.
 1. Sélectionnez **Continuer le programme** d’installation, puis, pour connecter votre domaine, choisissez **Continuer.**
 1. Faites défiler vers le bas pour afficher les enregistrements DNS qui doivent être copiés dans Google.
@@ -52,6 +53,6 @@ Tout d’abord, vous devez supprimer des enregistrements DNS existants de Google
 1. Dans le **champ** Données, collez l’enregistrement que vous avez copié.
 1. Puis sélectionnez **Ajouter**.
 1. Répétez le processus pour les enregistrements CNAME et TXT et ajoutez les valeurs dans la page de gestion DNS Google.
-1. Revenir au centre Administration Microsoft 365 puis sélectionnez **Continuer.**
+1. Revenir à la Centre d'administration Microsoft 365 puis sélectionnez **Continuer.**
 
     La configuration de votre domaine est terminée.

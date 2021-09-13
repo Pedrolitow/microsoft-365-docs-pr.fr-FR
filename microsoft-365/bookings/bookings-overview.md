@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Vue d’ensemble de l’application Microsoft Bookings, qui inclut un calendrier de réservation basé sur le web et s’intègre à Outlook pour optimiser le calendrier de votre personnel et donner à vos clients la flexibilité nécessaire pour prendre des rendez-vous.
 ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203514"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 

@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: Normal
 description: En savoir plus SharePoint quotas de stockage dans les environnements multigé géographiques et comment les quotas peuvent être gérés par l’administrateur SharePoint Online.
 ms.openlocfilehash: aaa782ea5c95af17e48b92bdd3f1ca97fbebc4d7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573582"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202091"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Quotas de stockage SharePoint dans des environnements multigéographiques
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 89e407a50c93f73be571ce9d1429874c138f09b226c173438c4e633791434cf7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 27c6b5ce80c580dd51fbc3a86f76f8f4f19ff819
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201929"
 ---
 # <a name="contact-support-for-argentina"></a>Contacter le support pour l’Argentine
 

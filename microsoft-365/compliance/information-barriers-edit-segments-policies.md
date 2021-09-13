@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 5d0a24afb895afbce800b29b0f235c4a67e598f130de930c0e31b2909c077dcb
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885974"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202374"
 ---
 # <a name="manage-information-barrier-policies"></a>Gérer les stratégies de obstacle à l’information
 
@@ -32,7 +32,7 @@ Une fois que vous avez défini des stratégies d’obstacle aux [informations,](
 | [Modifier une stratégie](#edit-a-policy) | Modifiez une stratégie d’obstacles aux informations lorsque vous voulez modifier le fonctionnement d’une stratégie.<br/>Par exemple, au lieu de bloquer les communications entre deux segments, vous pouvez décider de n’autoriser les communications qu’entre certains segments. |
 | [Définir une stratégie sur l’état inactif](#set-a-policy-to-inactive-status) |Définissez une stratégie sur l’état inactif lorsque vous souhaitez apporter des modifications à une stratégie ou lorsque vous ne souhaitez pas qu’une stratégie soit en vigueur. |
 | [Supprimer une stratégie](#remove-a-policy) | Supprimez une stratégie d’obstacle aux informations lorsque vous n’avez plus besoin d’une stratégie particulière. |
-| [Arrêter une application de stratégie](#stop-a-policy-application) | Faites cette action lorsque vous souhaitez arrêter le processus d’application des stratégies d’obstacle à l’information.<br/> L’arrêt d’une application de stratégie n’est pas instantané et n’annulera pas les stratégies déjà appliquées aux utilisateurs. |
+| [Arrêter une application de stratégie](#stop-a-policy-application) | Faites cette action lorsque vous souhaitez arrêter le processus d’application des stratégies de obstacle à l’information.<br/> L’arrêt d’une application de stratégie n’est pas instantané et n’annulera pas les stratégies déjà appliquées aux utilisateurs. |
 | [Définir des stratégies pour les obstacles à l’information](information-barriers-policies.md) | Définissez une stratégie d’obstacle à l’information lorsque vous n’avez pas déjà mis en place de telles stratégies et que vous devez restreindre ou limiter les communications entre des groupes d’utilisateurs spécifiques. |
 | [Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md) | Reportez-vous à cet article lorsque vous êtes face à des problèmes inattendus avec les obstacles à l’information. |
 
@@ -76,7 +76,7 @@ Utilisez cette procédure pour modifier la définition d’un segment d’utilis
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> Dans cet exemple, pour le segment dont le GUID *est c96e0837-c232-4a8a-841e-ef45787d8fcd,* nous avons mis à jour le nom du service en « HRDept ». |
 
-Une fois que vous avez terminé la modification [](information-barriers-policies.md#part-2-define-information-barrier-policies) des segments pour votre organisation, vous pouvez définir ou modifier des stratégies [d’obstacle](#edit-a-policy) aux informations.
+Lorsque vous avez terminé de modifier des segments pour votre organisation, vous pouvez définir ou modifier des stratégies [d’obstacle](#edit-a-policy) aux informations. [](information-barriers-policies.md#part-2-define-information-barrier-policies)
 
 ## <a name="edit-a-policy"></a>Modifier une stratégie
 
@@ -148,9 +148,9 @@ Une fois que vous avez terminé la modification [](information-barriers-policies
 
 ## <a name="stop-a-policy-application"></a>Arrêter une application de stratégie
 
-Une fois que vous avez commencé à appliquer des stratégies d’obstacle à l’information, si vous souhaitez empêcher l’application de ces stratégies, appliquez la procédure suivante. Le processus prendra environ 30 à 35 minutes.
+Une fois que vous avez commencé à appliquer des stratégies d’obstacle à l’information, si vous souhaitez empêcher ces stratégies d’être appliquées, appliquez la procédure suivante. Le processus prendra environ 30 à 35 minutes.
 
-1. Pour afficher l’état de l’application de stratégie d’obstacles à l’information la plus récente, utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus.**
+1. Pour afficher l’état de l’application de stratégie d’obstacle à l’information la plus récente, utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus.**
 
     Syntaxe : `Get-InformationBarrierPoliciesApplicationStatus`
 

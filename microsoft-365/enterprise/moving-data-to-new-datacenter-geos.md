@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez les nouvelles Office 365 de centres de données et comment utiliser l’option de résidence des données pour demander un déplacement de vos données principales vers une nouvelle géo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ddf0caa30f80033a9cfdbbc4cd19f0811f92fcd5e4f28bb98d0e949f9f67412c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203279"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données
 
@@ -45,9 +45,9 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |**France**| Union européenne | France | Mars 2018 |
 |**Émirats arabes unis**| Union européenne | Émirats arabes unis | Juin 2019 |
 |**Afrique du Sud**| Union européenne | Afrique du Sud | Juillet 2019 |
-|**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
-|**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
-|**Norvège**| Union européenne | Norvège | Avril 2020 |
+|**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
+|**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
+|**Norvège**| Union européenne | Norvège | Avril 2020 |
 |**Brésil**| Amériques | Brésil | Novembre 2020 |
 
 Depuis le 1er octobre 2020, 2020 clients avec un abonnement Office 365 Éducation inclus dans le client ne sont pas éligibles pour la migration.
@@ -66,7 +66,7 @@ Les déplacements de données sont des opérations de service principales qui on
 
 Les déplacements de données vers la nouvelle géo de centres de données sont effectués sans frais supplémentaires pour le client.
     
-## <a name="related-topics"></a>Sujets connexes 
+## <a name="related-topics"></a>Rubriques connexes 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

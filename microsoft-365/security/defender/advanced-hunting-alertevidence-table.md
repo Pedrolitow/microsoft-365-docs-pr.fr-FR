@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb5358e3751ab10fcad0f4a162fc3e43c0dba61427f710632732893413b6ea7e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 5ecab217a6181096e4689d78fa2bdddc0a767d0d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202968"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -73,7 +73,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `RegistryValueName` |string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` |string | Données de la valeur de Registre à l’application de l’action enregistrée |
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

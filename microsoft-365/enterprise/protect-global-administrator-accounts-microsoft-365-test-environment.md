@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 description: Utilisez ces étapes pour protéger les comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise.
 ms.openlocfilehash: d9de3cb42a7473167c5e8c6dda5489aca2241909
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203273"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 entreprise
 
@@ -52,7 +52,7 @@ Si vous souhaitez tester la protection des comptes d’administrateur général 
 
 Tout d’abord, créez un compte d’utilisateur en tant qu’administrateur général dédié.
 
-1. Sous un onglet distinct, ouvrez [le Centre d’administration Microsoft 365](https://admin.microsoft.com/).
+1. Sous un onglet distinct, ouvrez [le Centre d'administration Microsoft 365](https://admin.microsoft.com/).
 2. Sélectionnez   >  **Utilisateurs actifs,** puis **ajoutez un utilisateur.**
 3. Dans le **volet Ajouter un utilisateur,** entrez **DedicatedAdmin** dans les zones **Prénom,** Nom **d’affichage** et **Nom d’utilisateur.**
 4. Sélectionnez **Mot** de passe, **Sélectionnez Me laisser créer le** mot de passe, puis entrez un mot de passe fort. Enregistrez le mot de passe de ce nouveau compte dans un emplacement sécurisé.
@@ -63,7 +63,7 @@ Tout d’abord, créez un compte d’utilisateur en tant qu’administrateur gé
 
 Ensuite, créez un groupe nommé GlobalAdmins et ajoutez-y le compte DedicatedAdmin.
 
-1. Sous **l’onglet Centre d’administration Microsoft 365,** sélectionnez **Groupes** dans le navigation de gauche, puis sélectionnez **Groupes.**
+1. Sous **l’onglet Centre d'administration Microsoft 365,** sélectionnez **Groupes** dans le navigation de gauche, puis sélectionnez **Groupes.**
 2. Sélectionnez **Ajouter un groupe.**
 3. Dans le **volet Choisir un type de groupe,** sélectionnez **Sécurité,** puis Sélectionnez **Suivant**.
 4. Dans le **volet Configurer les informations** de base, sélectionnez Créer un groupe, puis **fermez.** 
@@ -93,7 +93,7 @@ Cette deuxième stratégie bloque l’accès à l’authentification de compte d
 8. Dans la section **Contrôles d’accès** du **nouveau** volet, sélectionnez **Accorder**.
 9. Dans le **volet Accorder,** sélectionnez Bloquer **l’accès,** puis sélectionnez **Sélectionner.**
 10. Dans le **volet** Nouveau, sélectionnez **Activer** pour **activer** la stratégie, puis sélectionnez **Créer.**
-11. Fermez **le portail Azure et** **Centre d’administration Microsoft 365** onglets.
+11. Fermez **le portail Azure et** **Centre d'administration Microsoft 365** onglets.
 
 Pour tester la première stratégie, dé connectez-vous avec le compte DedicatedAdmin. Vous devez être invité à configurer l’mf. Cela montre que la première stratégie est appliquée.
 

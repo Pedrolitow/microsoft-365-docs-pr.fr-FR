@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b939463f072e976ee75eac98f4630b5e29c56c1d599ad03aeee8789a7368859c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 97b9d95638c205dd47453bf6ad09c0d0487f0f8e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202991"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>Mieux ensemble : Antivirus Microsoft Defender et Microsoft Defender pour point de terminaison
 
@@ -31,7 +31,7 @@ ms.locfileid: "53894002"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint)
 
-Antivirus Microsoft Defender est le composant de protection nouvelle génération de [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (Microsoft Defender for Endpoint). 
+Antivirus Microsoft Defender est le composant de protection nouvelle génération de [Microsoft Defender pour point](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) de terminaison (Microsoft Defender pour point de terminaison). 
 
 Bien que vous pouvez utiliser une solution antivirus non Microsoft avec Microsoft Defender pour Endpoint, l’utilisation de Antivirus Microsoft Defender avec Defender for Endpoint offre des avantages. Non seulement Antivirus Microsoft Defender est une excellente solution antivirus nouvelle génération, mais elle est combinée avec d’autres fonctionnalités de Defender for Endpoint, telles que [les protection évolutive des points de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) et les examens et corrections automatisés, vous obtenez une meilleure protection coordonnée entre les produits et services. [](/microsoft-365/security/defender-endpoint/automated-investigations) 
 
@@ -41,7 +41,7 @@ Bien que vous pouvez utiliser une solution antivirus non Microsoft avec Microsof
 |--|--|--|
 |1|Partage de signal antivirus |Les applications et services Microsoft partagent des signaux au sein de votre organisation d’entreprise, fournissant ainsi une plateforme unique plus forte. Consultez [Informations de l’évaluation MITRE ATT&CK de Microsoft Defender for Endpoint.](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) |
 |2|Analyse des menaces et score pour les appareils |Antivirus Microsoft Defender collecte les données système sous-jacentes utilisées par l’analyse des [menaces](/microsoft-365/security/defender-endpoint/threat-analytics) et [le Score de sécurité Microsoft pour les appareils.](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices) Cela fournit à l’équipe de sécurité de votre organisation des informations plus significatives, telles que des recommandations et des opportunités pour améliorer la posture de sécurité de votre organisation. |
-|3|Performances |Microsoft Defender pour le point de terminaison est conçu pour fonctionner avec Antivirus Microsoft Defender, de sorte que vous obtenez de meilleures performances lorsque vous utilisez ces offres ensemble. [Évaluez Antivirus Microsoft Defender](evaluate-microsoft-defender-antivirus.md) et [Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/evaluate-mde)|
+|3|Performances |Microsoft Defender pour point de terminaison est conçu pour fonctionner avec Antivirus Microsoft Defender, afin que vous obtenez de meilleures performances lorsque vous utilisez ces offres ensemble. [Évaluez Antivirus Microsoft Defender](evaluate-microsoft-defender-antivirus.md) et [Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/evaluate-mde)|
 |4 |Détails sur les programmes malveillants bloqués |Des détails et des actions plus détaillés sur les programmes malveillants bloqués sont disponibles avec Antivirus Microsoft Defender et Microsoft Defender for Endpoint. [Comprendre les programmes malveillants & autres menaces.](/windows/security/threat-protection/intelligence/understanding-malware)|
 |5 |Protection réseau |L’équipe de sécurité de votre organisation peut protéger votre réseau en bloquant des URL et des adresses IP spécifiques. [Protégez votre réseau.](/microsoft-365/security/defender-endpoint/network-protection)|
 |6 |Blocage de fichiers |L’équipe de sécurité de votre organisation peut bloquer des fichiers spécifiques. [Arrêter et mettre en quarantaine les fichiers dans votre réseau.](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network)|

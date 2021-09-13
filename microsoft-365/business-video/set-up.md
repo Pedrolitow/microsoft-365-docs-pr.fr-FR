@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment configurer les Microsoft 365 Business Premium.
-ms.openlocfilehash: 8824755d8215af6a1459ae73d1cd9ba08f5897c574b07e8e99f6b78cfee439c1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4609789f426446b554e97576643bfba7f6d50803
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203447"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configurer Microsoft 365 Business Premium
 
@@ -33,7 +34,7 @@ ms.locfileid: "53838018"
 
 ## <a name="try-it"></a>Essayez !
 
-1. Connectez-vous au Centre d’administration Microsoft 365, puis **sélectionnez Aller à l’installation.** L’Assistant Installation démarre.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>puis **sélectionnez Aller à l’installation.** L’Assistant Installation démarre.
 2.  Dans la page **Installer vos applications Office,** vous pouvez choisir d’installer Office applications sur votre ordinateur, ou sélectionner **Continuer**.
 3.  Dans la page **Votre domaine est votre** identité professionnelle, entrez le nom de domaine de votre entreprise, puis **sélectionnez Utiliser ce domaine.** Si vous utilisez un bureau d’enregistrement commun comme WordPress ou GoDaddy, vos enregistrements seront ajoutés automatiquement sur cette page.
 4. Dans la page  **Vérifier votre domaine,**  sélectionnez  **Vérifier** la propriété de votre domaine, puis connectez-vous à votre compte de bureau d’enregistrement de domaines. Pour laisser Microsoft ajouter un enregistrement TXT pour la vérification de compte, sélectionnez  **Confirmer**.

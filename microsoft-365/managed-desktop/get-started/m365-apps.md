@@ -11,14 +11,14 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 45064584b622c313fee66c0699ab6495353342edad39948e8f8dabcd68911547
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203213"
 ---
-# <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
+# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
@@ -29,7 +29,7 @@ Microsoft Manged Desktop garantit que Applications Microsoft 365 pour les grande
 - PowerPoint
 - Outlook
 - Éditeur
-- Access
+- Accès
 - Skype Entreprise
 - OneNote
 
@@ -40,7 +40,7 @@ Cette approche réduit l’impact sur le réseau et garantit que les utilisateur
 
 ### <a name="available-deployment-to-users"></a>Déploiement disponible pour les utilisateurs
 
-Si un utilisateur n’a Microsoft 365 Apps sur son appareil pour une raison quelconque, vous pouvez utiliser un package pour revenir à l’état attendu de l’appareil. Ajoutez l’utilisateur au groupe **Office-Office365_Install** moderne et les applications seront disponibles dans le Portail d’entreprise.
+Si un utilisateur n’a Microsoft 365 Apps sur son appareil pour une raison quelconque, vous pouvez utiliser un package pour revenir à l’état attendu de l’appareil. Ajoutez l’utilisateur au groupe **Office-Office365_Install** moderne et les applications seront disponibles dans le Portail d'entreprise.
 
 ### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Applications Microsoft 365 pour les grandes entreprises (32 bits)
 
@@ -63,7 +63,7 @@ Microsoft Manged Desktop définit une échéance de mise à jour de sept [jours]
 
 Si vous devez suspendre ou Microsoft 365 mise à jour de [](../working-with-managed-desktop/admin-support.md) l’application pour une raison quelconque, déposez une demande de support administrateur via Microsoft Manged Desktop portail.
 
-Lors d’une publication, Microsoft Manged Desktop les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Microsoft Manged Desktop portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
+Au cours d’une publication, Microsoft Manged Desktop les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Microsoft Manged Desktop portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
 
 ### <a name="delivery-optimization"></a>Optimisation de la distribution
 
@@ -83,7 +83,7 @@ Microsoft Manged Desktop tous les paramètres de mise à jour des appareils [gé
 
 **Valeur par défaut**: Activé
 
-Cette stratégie est configurée pour garantir que tous les appareils Office peuvent être tenus à jour à partir du cloud. 
+Cette stratégie est configurée afin de garantir que tous les appareils Office peuvent être tenus à jour à partir du cloud. 
 
 ### <a name="set-a-deadline-when-updates-have-to-be-applied"></a>Définir une échéance lorsque des mises à jour doivent être appliquées
 
@@ -114,7 +114,7 @@ Une combinaison des **stratégies UpdatePath** et **UpdateChannel** est utilisé
 
 ### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Spécifier la version cible de Microsoft 365 Apps
 
-La stratégie de version cible est parfois utilisée par les Microsoft Manged Desktop pour revenir en arrière ou épingler une version spécifique d Office. 
+La stratégie de version cible est parfois utilisée par les Microsoft Manged Desktop afin de revenir en arrière ou épingler une version spécifique de Office. 
 
 
 ### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Masquer l’option permettant d’activer ou de désactiver Office mises à jour automatiques
@@ -147,7 +147,7 @@ Il existe d’Microsoft 365 de l’application que vous Microsoft Manged Desktop
 
 **Valeur par défaut**: Disabled
 
-Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l Microsoft Manged Desktop des opérations de l’utilisateur afin que ce paramètre soit activé. 
+Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l’Microsoft Manged Desktop operations qui demande l’activer. 
 
 ## <a name="settings-you-manage"></a>Paramètres vous gérez
 

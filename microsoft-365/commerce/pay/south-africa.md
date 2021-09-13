@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 16512ba6fbc6c4a07db54e5740ce68d0785b5bf441d60a964dfbba336f97b5c3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 2e86a0638f4bef5354052340de51d7aaf3e8973f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53856114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202476"
 ---
 # <a name="payment-information-for-south-africa"></a>Informations de paiement pour l’Afrique du Sud
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 025a46bd08122362e27338d7fe6287aa15bb997155fb4bd94a9a20588fd6f87c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7fc5e0a37f57928b2ee1318d01e2a10b95a36108
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53833434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202974"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -61,7 +61,7 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`AlternateSignInName`|string|Nom d’utilisateur principal (UPN) local de l’utilisateur se signant à Azure AD|
 |`LastPasswordChangeTimestamp`|DateHeure|Date et heure de la dernière fois où l’utilisateur qui s’est inscrit a modifié son mot de passe|
 |`ResourceDisplayName`|string|Nom d’affichage de la ressource accessible|
-|`ResourceId`|string|Identificateur unique de la ressource accessible|
+|`ResourceId`|string|Identificateur unique de la ressource à accès|
 |`ResourceTenantId`|string|Identificateur unique du client de la ressource à accès|
 |`DeviceName`|string|Nom de domaine complet (FQDN) de la machine|
 |`AadDeviceId`|string|Identificateur unique de l’appareil dans Azure AD|
@@ -82,7 +82,7 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`ConditionalAccessStatus`|int|État des stratégies d’accès conditionnel appliquées à la signature. Les valeurs possibles sont 0 (stratégies appliquées), 1 (échec de tentative d’application des stratégies) ou 2 (stratégies non appliquées).|
 |`IPAddress`|string|Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées|
 |`Country`|string|Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé|
-|`State`|string|État où la se connecte s’est produite, si disponible|
+|`State`|string|État où la connectez-vous s’est produite, si disponible|
 |`City`|string|Ville où se trouve l’utilisateur du compte|
 |`Latitude`|string|Coordonnées nord à sud de l’emplacement de la signature|
 |`Longitude`|string|Coordonnées est à ouest de l’emplacement de la signature|

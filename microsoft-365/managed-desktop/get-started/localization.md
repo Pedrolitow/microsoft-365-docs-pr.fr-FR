@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a1a042047e3203d8c401f5435e87bafa20aa952ca9e32a051b47ea3a038b7aad
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53800689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203219"
 ---
 # <a name="localize-the-user-experience"></a>Localiser l’expérience utilisateur
 
@@ -41,7 +41,7 @@ Pendant le processus de configuration, les utilisateurs peuvent sélectionner la
 
 ## <a name="after-completing-setup"></a>Après avoir terminé l’installation
 
-Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 et Microsoft 365 Apps pour Enterprise à tout moment une fois le processus d’installation terminé. Notamment :
+Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 et Microsoft 365 Apps pour Enterprise à tout moment une fois le processus d’installation terminé. Notamment :
 
 - Windows 10 fonctionnalités linguistiques :
     - Langue d’affichage
@@ -51,7 +51,7 @@ Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 e
     - Langue d’affichage
     - Outils de preuve et de authoring
 
-Pour rendre les langues Microsoft 365 Apps pour Enterprise prise en charge disponibles pour vos [utilisateurs,](#supported-languages) ajoutez-les au groupe Espace de travail **Office-Language_Packs** moderne. Les langues seront disponibles dans le Portail d’entreprise Intune.
+Pour rendre les langues Microsoft 365 Apps pour Enterprise prise en charge disponibles pour vos [utilisateurs,](#supported-languages) ajoutez-les au groupe Espace de travail **Office-Language_Packs** moderne. Les langues seront disponibles dans le Portail d'entreprise Intune.
 
 
 ## <a name="supported-languages"></a>Langues prises en charge

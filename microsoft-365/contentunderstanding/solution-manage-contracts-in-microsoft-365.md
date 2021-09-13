@@ -14,11 +14,11 @@ localization_priority: None
 ROBOTS: ''
 description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint Syntex, SharePoint listes, Microsoft Teams et Power Automate.
 ms.openlocfilehash: d890305912c8b86065a89dac1b7da8f797604405
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202278"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer des contrats en utilisant la solution Microsoft 365
 
@@ -83,7 +83,7 @@ Cette solution de gestion des contrats comprend quatre composants de Microsoft 3
 Cette solution s’appuie sur les fonctionnalités suivantes, disponibles dans le cadre d’une licence Microsoft 365 Entreprise (E1, E3, E5, F3) ou Business (De base, Standard ou Premium) :
 
 - Microsoft SharePoint Syntex
-- Microsoft Teams
+- Microsoft Teams
 - Power Automate
 
 ### <a name="learn-how-to-use-sharepoint-syntex"></a>Découvrez comment utiliser les SharePoint Syntex

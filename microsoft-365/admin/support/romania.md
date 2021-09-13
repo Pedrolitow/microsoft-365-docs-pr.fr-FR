@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e29dd65ecc791bfaba3f8f281ce534a8b94680f8db47217411b85dfd6a2cae24
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c1177fe198422433afb83b62e12a75f64581b3f8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53838186"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202584"
 ---
 # <a name="contact-support-for-romania"></a>Contacter le support technique pour la Roumanie
 

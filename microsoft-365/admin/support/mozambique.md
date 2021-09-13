@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7e0fc609fdfe95da0e6099e18816b478c01d7d520c6cac0be2dce7d278b43073
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 37fa76440ebd844f2400030db79f7b2f4a4c72d8
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201828"
 ---
 # <a name="contact-support-for-mozambique"></a>Contacter le support technique pour LeQueque
 

@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 entreprise.
-ms.openlocfilehash: 26ed00be3241f07d564fd7823c44610cf34d6ffd96cc4becb36d907439f23629
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cde27ce3ab94b003d9950f1b4bc2af270dea906e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202536"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer le courrier électronique et le calendrier d’entreprise à partir de Google Workspace
 
@@ -86,8 +87,8 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
 
     La vérification de domaine ne prend généralement que quelques minutes, mais elle peut prendre jusqu’à 48 heures.
 
-1. Go to the [Centre d’administration Microsoft 365](https://admin.microsoft.com).
-1. Dans la **Centre d’administration Microsoft 365**, dans le navigation gauche, sélectionnez Afficher **tout,** **Paramètres** **,** Domaines, puis Ajouter un **domaine**. 
+1. Go to the [Centre d'administration Microsoft 365](https://admin.microsoft.com).
+1. Dans la Centre d'administration Microsoft 365, dans le navigation gauche, sélectionnez Afficher tous les domaines  >  **Paramètres,** puis  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>Ajouter **un domaine.** 
 1. Entrez le sous-domaine que vous avez créé précédemment, puis **sélectionnez Utiliser ce domaine.** 
 1. Pour connecter le domaine, sélectionnez **Continuer.** 
 1. Faites défiler vers le bas et prenez note des enregistrements MX, CNAME et TXT. 
@@ -99,7 +100,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
 
     L’application de ces modifications peut prendre un certain temps.  
 
-1. Revenir à l’endroit où vous vous êtes **Centre d’administration Microsoft 365,** puis sélectionnez **Continuer**. 
+1. Revenir à l’endroit où vous vous êtes Centre d'administration Microsoft 365, puis sélectionnez **Continuer**. 
 
 Votre domaine est maintenant installé.  
 
@@ -107,7 +108,7 @@ Votre domaine est maintenant installé.
 
 Avant de commencer la migration, vous devez créer des alias de messagerie pour vos utilisateurs avec le nouveau sous-domaine. 
 
-1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans le Centre d’administration Microsoft 365, **sélectionnez Go to Active users**. 
+1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans le Centre d'administration Microsoft 365, **sélectionnez Go to Active users**. 
 1. Sélectionnez un utilisateur, puis **gérez le nom d’utilisateur et le courrier électronique.** 
 1. Dans ladown **Domains (Domaines),** sélectionnez le sous-domaine que vous avez précédemment créé. 
 1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermer la fenêtre. 
@@ -118,7 +119,7 @@ Avant de commencer la migration, vous devez créer des alias de messagerie pour 
 
 Une fois que vous avez terminé, vous êtes prêt à migrer. 
 
-1. Dans le navigation gauche du **Centre d’administration Microsoft 365,** faites défiler vers le bas jusqu’aux centres d’administration, puis sélectionnez **Exchange**. 
+1. Dans le navigation gauche du <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>faites défiler vers le bas jusqu’aux centres d’administration, puis sélectionnez **Exchange**. 
 1. Sous **les destinataires**, choisissez **la migration,** sélectionnez **Nouveau,** **Migrer vers Exchange Online,** choisissez **Migration G Suite,** puis **Suivant**. 
 1. Créez un fichier CSV avec une liste des boîtes aux lettres que vous souhaitez migrer. Assurez-vous que le fichier suit ce format : 
 

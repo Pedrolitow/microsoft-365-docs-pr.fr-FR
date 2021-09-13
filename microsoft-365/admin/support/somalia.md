@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 56debae9d0bcd3c3262d2b7b38681ef8ed171919f17547946783613a0c3dcd06
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 00eadf91a1957cba95a0212423cf0759d40e9fe0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203579"
 ---
 # <a name="contact-support-for-somalia"></a>Contacter le support pour l’Éthiopie
 

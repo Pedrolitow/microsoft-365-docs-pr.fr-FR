@@ -6,15 +6,16 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.custom: admindeeplinkMAC
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Découvrez comment accéder à Microsoft Bookings dans Microsoft 365.
-ms.openlocfilehash: cc0352166bf7cd20cfa10542d57da9fbd5b160f7
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: a5c5e0bbac10352d3e526bbde88db66e6a253e28
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203502"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activer ou désactiver Microsoft bookings
 
@@ -23,11 +24,11 @@ Les réservations peuvent être désactivées pour l’ensemble de votre organis
 > [!NOTE]
 > Les contrôles d’administration décrits dans ces sections ne sont pas disponibles Office 365 clients gérés par 21Vianet (Chine).
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Activer ou désactiver bookings pour votre organisation à l’aide du Centre d’administration Microsoft 365
+## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Activer ou désactiver bookings pour votre organisation à l’aide du Centre d'administration Microsoft 365
 
-1. Connectez-vous au Centre d’administration Microsoft 365 en tant qu’administrateur global.
+1. Connectez-vous au Centre d'administration Microsoft 365 en tant qu’administrateur global.
 
-2. Dans le centre d’administration, Paramètres  ****   \> **org Paramètres** et **sélectionnez Bookings.**
+2. Dans le Centre d’administration, Paramètres  ****   \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**paramètres de l’organisation.**</a>
 
 3. Activez la case à **cocher autoriser votre organisation** à utiliser Bookings pour activer ou désactiver Bookings pour votre organisation.
 
@@ -48,7 +49,7 @@ Pour activer ou désactiver Bookings pour votre organisation à l’aide de l’
 
 Vous pouvez désactiver les réservations pour des utilisateurs individuels.
 
-1. Go to the Centre d’administration Microsoft 365, then select **Users** \> **Active users**.
+1. Go to the Centre d'administration Microsoft 365, then select **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 1. Sélectionnez l’utilisateur souhaité, puis **sélectionnez Licences et Applications.**
 
@@ -56,13 +57,13 @@ Vous pouvez désactiver les réservations pour des utilisateurs individuels.
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Exiger l’approbation du personnel avant de partager des informations de libre/occupé
 
-Les administrateurs peuvent demander aux employés de leur organisation de s’y rendre avant que leurs informations de disponibilité soient partagées par le biais de Bookings et avant qu’ils ne soient bookables via une page de réservation. Ce paramètre est disponible dans la Centre d’administration Microsoft 365 sous **Paramètres** \> **Paramètres** \> **Bookings**.
+Les administrateurs peuvent demander aux employés de leur organisation de s’y rendre avant que leurs informations de disponibilité soient partagées par le biais de Bookings et avant qu’ils ne soient bookables via une page de réservation. Ce paramètre est disponible dans la Centre d'administration Microsoft 365 sous **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**paramètres Org**</a> \> **Bookings**.
 
 Lorsque ce paramètre est activé, les employés ajoutés en tant que membres du personnel dans les calendriers de réservation trouveront un lien Approuver/Rejeter dans la notification par courrier électronique qu’ils reçoivent.
 
 ## <a name="block-social-sharing-options"></a>Bloquer les options de partage social
 
-Les administrateurs peuvent contrôler la façon dont les pages de réservation sont partagées sur les réseaux sociaux. Ce paramètre est disponible dans la Centre d’administration Microsoft 365 sous **Paramètres** \> **Paramètres** \> **Bookings**.
+Les administrateurs peuvent contrôler la façon dont les pages de réservation sont partagées sur les réseaux sociaux. Ce paramètre est disponible dans la Centre d'administration Microsoft 365 sous **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**paramètres Org**</a> \> **Bookings**.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Autoriser uniquement les utilisateurs sélectionnés à créer des calendriers Bookings
 

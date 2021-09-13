@@ -15,11 +15,11 @@ ms.custom:
 - AdminSurgePortfolio
 description: Inviter des utilisateurs à rejoindre Microsoft 365 Business Standard organisation
 ms.openlocfilehash: 8b344ee324063dd2694c04e25a4e8549b987ba2a
-ms.sourcegitcommit: 8ef23d275d7209a705295e2b117d4382b20ad4f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203640"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Inviter des utilisateurs à Microsoft 365 Business Standard (administrateur)
 
@@ -32,7 +32,7 @@ En tant qu’administrateur d’un abonnement Microsoft 365 Business Standard, v
 - Obtenez de l’aide à tout moment avec le support web et téléphonique 24 heures sur 24 de Microsoft.
 
 > [!IMPORTANT]
-> La personne qui s’Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
+> La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -44,7 +44,7 @@ Assurez-vous que vous êtes déjà inscrit à [Microsoft 365 Business Standard](
 
 2. Ajoutez les noms d’utilisateur et les adresses e-mail pour les personnes que vous souhaitez inviter et choisissez **Envoyer.** Un e-mail d’invitation est envoyé à tous les utilisateurs que vous avez sélectionnés pour ajouter leurs informations de compte d’utilisateur Microsoft 365.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Suivez vos utilisateurs et assurez-vous qu’ils ont reçu l’invitation par courrier électronique que vous avez envoyée concernant le partage de Microsoft 365 Business Standard abonnement.
 
@@ -84,7 +84,7 @@ En fonction de la façon dont vous et d’autres utilisateurs enregistrez des do
 > [!NOTE]
 > Une fois que vous avez attaché un domaine et que vous et vos utilisateurs avez utilisé des comptes d’entreprise pour enregistrer des données dans le cloud Microsoft, vous pouvez effectuer des demandes de la part de tous les utilisateurs en suivant les instructions de la rubrique [Office 365 Data Subject Requests for the GDPR and CCPA.](/compliance/regulatory/gdpr-dsr-office365)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configurer Microsoft 365 Business Standard](../setup/setup-business-standard.md)
 

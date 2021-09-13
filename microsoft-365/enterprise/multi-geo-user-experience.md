@@ -16,11 +16,11 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Découvrez l’expérience utilisateur de SharePoint, de OneDrive et d’Exchange dans un environnement multigéographique pour Microsoft 365.
 ms.openlocfilehash: 5ecdfd41c496149e04bfb9586f76807db7957d0d
-ms.sourcegitcommit: 4582873483bd52bc790bf75b838cc505dc4bbeb4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58502902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202169"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Expérience utilisateur dans un environnement multigéographique
 
@@ -40,7 +40,7 @@ Le lanceur d’applications prend en compte la configuration multigéographique 
 
 ## <a name="office-applications"></a>Applications Office
 
-Office applications telles que Word, Excel et PowerPoint détectent automatiquement l’emplacement géographique OneDrive pour chaque utilisateur lorsqu’il se connecte. Les utilisateurs ne doivent pas entrer l’URL géographique spécifique de leurs sites OneDrive ou SharePoint.
+Office applications telles que Word, Excel et PowerPoint détecteront automatiquement l’emplacement géographique OneDrive pour chaque utilisateur lorsqu’il se connecte. Les utilisateurs ne doivent pas entrer l’URL géographique spécifique de leurs sites OneDrive ou SharePoint.
 
 ## <a name="onedrive-sync-app"></a>Synchronisation OneDrive application
 
@@ -48,7 +48,7 @@ L’application Synchronisation OneDrive (version 17.3.6943.0625 et versions ult
 
 ## <a name="onedrive-location"></a>OneDrive’emplacement
 
-Les utilisateurs auront leurs OneDrive à leur emplacement de données préféré. Si un utilisateur navigue vers une URL OneDrive qui contient un emplacement géographique incorrect (tel qu’un signet d’un emplacement géographique précédent), il est automatiquement redirigé vers le OneDrive dans l’emplacement géographique approprié.
+Les utilisateurs auront leurs OneDrive dans leur emplacement de données préféré. Si un utilisateur navigue vers une URL OneDrive qui contient un emplacement géographique incorrect (tel qu’un signet d’un emplacement géographique précédent), il est automatiquement redirigé vers le OneDrive dans l’emplacement géographique approprié.
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS et Android 
 

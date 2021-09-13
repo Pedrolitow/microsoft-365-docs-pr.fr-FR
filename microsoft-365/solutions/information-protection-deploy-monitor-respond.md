@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Utiliser des stratégies d’audit et d’alerte, ainsi que des demandes des personnes qui répondent aux incidents de données personnelles.
-ms.openlocfilehash: 225c0969f932490012a6cd54cb920cc59322ea9a8cea11c214a866ad58cecfca
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+description: Utilisez des stratégies d’audit et d’alerte, ainsi que des demandes des personnes qui répondent aux incidents de données personnelles.
+ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53804731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203688"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveiller et répondre aux incidents de confidentialité des données dans votre organisation
 
@@ -80,4 +80,4 @@ Pour Microsoft Stream, lorsqu’un utilisateur est supprimé de Azure Active Dir
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Gestion des risques internes en tant qu’outil d’investigation
 
-La gestion des risques internes dans [Microsoft 365](../compliance/insider-risk-management.md) est une fonctionnalité du Centre d’administration de conformité Microsoft pour vous aider à minimiser les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités à risque dans votre organisation.
+La gestion des risques internes dans [Microsoft 365](../compliance/insider-risk-management.md) est une fonctionnalité du Centre d’administration de la conformité Microsoft qui vous permet de minimiser les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités à risque dans votre organisation.

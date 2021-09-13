@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: db0d4a2e0977caa9fbb34cb9cc67feeb78e2a8fd1309cefca3380b95e079a7b9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c5af218ecda44a2157b32571d8b37803c0a7e3ae
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201798"
 ---
 # <a name="contact-support-for-new-caledonia"></a>Contacter le support pour la Nouvelle-Calédienne
 

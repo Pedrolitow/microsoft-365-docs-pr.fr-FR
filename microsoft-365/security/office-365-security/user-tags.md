@@ -17,11 +17,11 @@ description: Les administrateurs peuvent apprendre à identifier des groupes sp�
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: d224718502725e760c6a844f3bfd289bf3dd179c
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202698"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Balises utilisateur dans Microsoft Defender pour Office 365
 
@@ -66,11 +66,11 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365.  Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365.  Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   >
   > - La gestion des balises utilisateur est contrôlée par les **rôles Lecteur de balises** et **Gestionnaire de balises.**
 
-- Vous pouvez également gérer et surveiller les comptes prioritaires dans le Centre d’administration Microsoft 365. Pour obtenir des instructions, voir [Gérer et surveiller les comptes prioritaires.](../../admin/setup/priority-accounts.md)
+- Vous pouvez également gérer et surveiller les comptes prioritaires dans le Centre d'administration Microsoft 365. Pour obtenir des instructions, voir [Gérer et surveiller les comptes prioritaires.](../../admin/setup/priority-accounts.md)
 
 - Pour plus d’informations _sur la sécurisation des_ comptes privilégiés (comptes d’administrateur), consultez cette [rubrique.](/azure/architecture/framework/security/critical-impact-accounts)
 
@@ -112,7 +112,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 2. Dans la page **Balises utilisateur,** les propriétés suivantes sont affichées dans la liste des balises utilisateur :
 
-   - **Balise**: nom de la balise utilisateur. Notez que cela inclut la balise système **de** compte Priorité intégrée.
+   - **Balise**: nom de la balise utilisateur. Notez que cela inclut la balise système de compte **Priorité** intégrée.
    - **Appliqué à**: nombre de membres
    - **Dernière modification**
    - **Créé le**

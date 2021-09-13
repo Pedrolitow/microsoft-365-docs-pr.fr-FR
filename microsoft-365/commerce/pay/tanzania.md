@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1dd5d4f2f72a644fd65a7efff95c577dd77a365495ccaed35a8262727636733d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 393edf6470f651a17843a76cb139e47a1d3dfd83
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53896154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202434"
 ---
 # <a name="payment-information-for-tanzania"></a>Informations de paiement pour la Tanzanie
 

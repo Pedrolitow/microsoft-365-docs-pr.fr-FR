@@ -16,14 +16,15 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger pour les tests Microsoft 365 entreprise.
-ms.openlocfilehash: 818b013d8d18a7686e88e99eff2f0be2fb12b8d9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0b8e0a71c8708d2faec0e263c220e3f3d91931f3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202218"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
@@ -155,9 +156,9 @@ Dans cette phase, vous vous inscrivez pour l’abonnement d’évaluation Micros
   
 Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attribuez une licence Microsoft 365 à votre compte d’administrateur général.
   
-1. Dans une fenêtre privée de navigateur Internet, utilisez vos informations d’identification de compte d’administrateur général pour vous Centre d’administration Microsoft 365 à [https://admin.microsoft.com](https://admin.microsoft.com) l’Centre d’administration Microsoft 365.
+1. Dans une fenêtre privée de navigateur Internet, utilisez vos informations d’identification de compte d’administrateur général pour vous Centre d'administration Microsoft 365 à [https://admin.microsoft.com](https://admin.microsoft.com) l’Centre d'administration Microsoft 365.
     
-2. Dans la page **Centre d’administration Microsoft 365,** dans le navigation de gauche, sélectionnez **Facturation > Acheter des services.**
+2. Dans la page **Centre d'administration Microsoft 365,** dans le navigation de gauche, sélectionnez **Services**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**d’achat de facturation.**</a>
     
 3. Dans la page **Acheter des services,** **sélectionnez Microsoft 365 E5,** puis **sélectionnez Obtenir une version d’essai gratuite.**
 
@@ -167,7 +168,7 @@ Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attr
 
 6. Dans la page **Reçu de** commande, sélectionnez **Continuer.**
 
-7. Dans la Centre d’administration Microsoft 365, **sélectionnez Utilisateurs > utilisateurs actifs.**
+7. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 
 8. Dans **les utilisateurs** actifs, sélectionnez votre compte d’administrateur.
 
@@ -276,11 +277,11 @@ Lorsque l’ordinateur physique ou la machine virtuelle avec Windows 10 Entrep
   
 Ensuite, associez l’ordinateur WIN10 au client Azure AD de votre abonnement Microsoft 365 E5.
   
-1. Sur le bureau de l’ordinateur WIN10, sélectionnez Démarrer > Paramètres > Comptes > accès au travail ou à **l'> Connecter .**
+1. Sur le bureau de l’ordinateur WIN10, sélectionnez Démarrer > Paramètres > Comptes > Accès au travail **ou à l'> Connecter .**
     
 2. Dans la **boîte de dialogue Configurer un compte** scolaire ou scolaire, sélectionnez Joindre cet appareil à **Azure Active Directory**.
     
-3. Dans **le compte scolaire ou scolaire,** entrez le nom du compte d’administrateur général de votre abonnement Microsoft 365 E5, puis sélectionnez **Suivant.**
+3. Dans **le compte scolaire ou de travail,** entrez le nom du compte d’administrateur général de votre abonnement Microsoft 365 E5, puis sélectionnez **Suivant.**
     
 4. Dans **Entrer le mot de** passe, entrez le mot de passe de votre compte d’administrateur général, puis sélectionnez Se **connectez.**
     
@@ -290,11 +291,11 @@ Ensuite, associez l’ordinateur WIN10 au client Azure AD de votre abonnement
     
 Ensuite, installez Applications Microsoft 365 pour les grandes entreprises sur l’ordinateur WIN10 :
   
-1. Ouvrez le Microsoft Edge navigateur et connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification de compte d’administrateur général.
+1. Ouvrez le Microsoft Edge navigateur et connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification de compte d’administrateur général.
     
 2. Sous **l’Microsoft Office Accueil,** **sélectionnez Installer Office**.
     
-3. Lorsque vous y avez été invité, sélectionnez **Exécuter,** puis Oui **pour** **le contrôle de compte d’utilisateur.**
+3. Lorsque vous y avez été invité, sélectionnez **Exécuter,** puis Oui **pour** le contrôle de **compte d’utilisateur.**
     
 4. Attendez qu’Office termine l’installation. Lorsque vous voyez **que tout est prêt !**, sélectionnez Fermer **deux** fois.
     

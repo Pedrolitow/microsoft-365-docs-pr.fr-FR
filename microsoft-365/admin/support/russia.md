@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 81ec02ae5211ad1e65f0483e092f175614525ef17f78b3524d49f028db959b97
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f90daea81f1d0918be852d7ac9269393a1eb37f0
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53797445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202572"
 ---
 # <a name="contact-support-for-russia"></a>Contacter le support pour la Russie
 

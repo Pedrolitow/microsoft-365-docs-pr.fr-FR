@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c1921fabd44b21d00e19df91910d60662de87ee35c82b293a9e6bd344c118c5c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac274b0b6e9758db8515a9774ab991f56c574174
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201869"
 ---
 # <a name="contact-support-for-mayotte"></a>Contacter le support pour Mayotte
 

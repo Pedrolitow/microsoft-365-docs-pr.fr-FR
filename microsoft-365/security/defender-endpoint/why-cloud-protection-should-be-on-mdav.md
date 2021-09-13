@@ -16,11 +16,11 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
 ms.openlocfilehash: 94e97c9d289ccf39d66618025822e0259b836219
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58865049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202992"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>Pourquoi la protection cloud doit-elle être activée pour Antivirus Microsoft Defender
 
@@ -36,7 +36,7 @@ Le tableau suivant récapitule les fonctionnalités et fonctionnalités qui dép
 | Fonctionnalité/fonctionnalité  | Abonnement |  Description  |
 |---------|---------|--------|
 | Vérification des métadonnées dans le cloud  | Microsoft 365 E5 ou E3 | Le service Antivirus Microsoft Defender cloud utilise des modèles d’apprentissage automatique comme couche de défense supplémentaire. Ces modèles d’apprentissage automatique incluent des métadonnées. Ainsi, lorsqu’un fichier suspect ou malveillant est détecté, ses métadonnées sont vérifiées. <br/><br/>Pour en savoir plus, consultez le blog : Découvrir les technologies avancées au cœur de la protection nouvelle génération de [Microsoft Defender pour Endpoint](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)  |
-| Protection cloud et soumission d’exemples | Microsoft 365 E5 ou E3 | Les fichiers et les fichiers exécutables peuvent être envoyés au service cloud Antivirus Microsoft Defender pour détonation et analyse. <br/><br/>Pour plus d’informations, voir [Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender](cloud-protection-microsoft-antivirus-sample-submission.md).<br/><br/>**REMARQUE**: la soumission automatique d’échantillons repose sur la protection cloud, bien qu’elle puisse également être configurée en tant que paramètre autonome.         |
+| Protection cloud et soumission d’échantillons | Microsoft 365 E5 ou E3 | Les fichiers et les fichiers exécutables peuvent être envoyés au service cloud Antivirus Microsoft Defender pour détonation et analyse. <br/><br/>Pour plus d’informations, voir [Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender](cloud-protection-microsoft-antivirus-sample-submission.md).<br/><br/>**REMARQUE**: la soumission automatique d’échantillons repose sur la protection cloud, bien qu’elle puisse également être configurée en tant que paramètre autonome.         |
 | Protection contre la falsification | Microsoft 365 E5 | La protection contre la falsification permet de se protéger contre les modifications indésirables apportées aux paramètres de sécurité de votre organisation. Pour appliquer la protection contre la falsification dans le portail Microsoft 365 Defender, la protection cloud doit être activée. <br/><br/>Pour plus d’informations, voir [Protéger les paramètres de sécurité avec la protection contre la falsification.](prevent-changes-to-security-settings-with-tamper-protection.md)        |
 | Bloquer à la première consultation | Microsoft 365 E5 ou E3 | Bloquer à la première vue détecte de nouveaux programmes malveillants et les bloque en quelques secondes. Lorsqu’un fichier suspect ou malveillant est détecté, les fonctionnalités bloquer à la première vue interrogent le système de protection cloud et appliquent des heuristiques, l’apprentissage automatique et une analyse automatisée du fichier pour déterminer s’il s’agit d’une menace.<br/><br/>Pour en savoir plus, [voir qu’est-ce que « bloquer à la première vue](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)» ?   |
 | Mises à jour des signatures d’urgence | Microsoft 365 E5 | Lorsque du contenu malveillant est détecté, des correctifs et des mises à jour de signature d’urgence sont déployés. Au lieu d’attendre la prochaine mise à jour régulière, vous pouvez recevoir ces correctifs et mises à jour en quelques minutes.   |
@@ -45,7 +45,7 @@ Le tableau suivant récapitule les fonctionnalités et fonctionnalités qui dép
 | Indicateurs de compromis (IOC) | Microsoft 365 E5  | Les IoCs dans Defender pour point de terminaison peuvent être configurés pour définir la détection, la prévention et l’exclusion des entités. Par exemple, les indicateurs « autoriser » peuvent être utilisés pour définir des exceptions pour Antivirus Microsoft Defender analyses et des actions de correction dans Defender for Endpoint. Autre exemple , les indicateurs « alerte et blocage » peuvent être utilisés pour empêcher l’exécution de fichiers ou de processus, et pour suivre ces activités avec des alertes qui sont consultables dans le portail Microsoft 365 Defender. <br/><br/>Pour plus d’informations, voir [Créer des indicateurs.](manage-indicators.md)    |
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez une vue d’ensemble de la protection cloud et de son rôle dans Antivirus Microsoft Defender, voici quelques étapes suivantes :
 

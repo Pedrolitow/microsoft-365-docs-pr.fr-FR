@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations pour les utilisateurs qui utilisent SharePoint Server 2007 pour les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 5f3df4a66eb789cd6aa88f1f3a0f170c1c49b834a7b87bad242abb1fab15b4df
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53894826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202103"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint options de migration 2007 à prendre en compte
 
@@ -56,7 +56,7 @@ Il existe plusieurs méthodes pour mettre à niveau un environnement SharePoint 
     
 - Déplacer manuellement des données entre des collections de sites ou des bibliothèques
     
-- Mise à niveau de l’Assistant FastTrack vers Microsoft 365 ([SharePoint De déploiement En ligne](https://aka.ms/spoguidance))
+- FastTrack Mise à niveau de l’Assistant Microsoft 365 ([SharePoint De déploiement Online](https://aka.ms/spoguidance))
     
 - API de migration vers SharePoint Online (SPO) dans Microsoft 365
     
@@ -67,9 +67,9 @@ Votre connaissance des opérations de votre batterie de serveurs et de son utili
 > [!TIP]
 > Microsoft Office SharePoint Server 2007 présente également une mise à niveau progressive qui n’est pas couverte ici. Pour consulter la liste des articles de mise à niveau spécifiques aux étapes, consultez la feuille [de route SharePoint server 2007 de](sharepoint-2007-end-of-support.md)fin de la prise en charge. 
   
-N’oubliez pas de vérifier le cycle [de vie du](https://support.microsoft.com/lifecycle/search) produit et la system requirements pour n’importe quelle version SharePoint que vous êtes en train de mettre à niveau. C’est pour cette raison que vous savez quand la prochaine mise à niveau sera nécessaire (par exemple, si vous mettez en pause un produit hérité tel que SharePoint Server 2010 pour planifier d’autres mises à niveau, assurez-vous de connaître sa date de fin de prise en charge) et assurez-vous que vous avez du matériel qui prend en charge votre plan. 
+N’oubliez pas de vérifier le cycle [de vie du](https://support.microsoft.com/lifecycle/search) produit et la system requirements pour n’importe quelle version SharePoint que vous êtes en train de mettre à niveau. C’est pour cette raison que vous savez quand la prochaine mise à niveau sera nécessaire (par exemple, si vous mettez en pause un produit hérité comme SharePoint Server 2010 pour planifier d’autres mises à niveau, assurez-vous de connaître sa date de fin de prise en charge) et assurez-vous que vous avez du matériel qui prend en charge votre plan. 
   
-Si vous envisagez de passer d’une partie ou de l’ensemble de vos sites SharePoint à Microsoft 365 dans le cloud, il s’agit d’un moment pour mettre en signet un lien vers les descriptions du service Microsoft 365 et [Office 365.](/office365/servicedescriptions/office-365-service-descriptions-technet-library) Vous aurez besoin des descriptions de service pour en savoir plus sur les fonctionnalités SharePoint Online et sur les différences qu’elles peuvent avoir avec SharePoint Server local. Mettre à niveau Microsoft Office SharePoint batteries de serveurs Server 2007. Si votre installation a des sites qui sont rompus, corrigez-les avant la mise à niveau.
+Si vous envisagez de passer d’une partie ou de l’ensemble de vos sites SharePoint à Microsoft 365 dans le Cloud, il s’agit d’un moment pour mettre en signet un lien vers les descriptions du service Microsoft 365 et [Office 365.](/office365/servicedescriptions/office-365-service-descriptions-technet-library) Vous aurez besoin des descriptions de service pour en savoir plus sur les fonctionnalités SharePoint Online et sur les différences qu’elles peuvent avoir avec SharePoint Server local. Mettre à niveau Microsoft Office SharePoint batteries de serveurs Server 2007. Si votre installation a des sites qui sont rompus, corrigez-les avant la mise à niveau.
   
 ## <a name="a-note-about-managing-risk"></a>Remarque sur la gestion des risques
 
@@ -79,9 +79,9 @@ Les méthodes telles que « côte à côte » sont importantes dans le schéma d
     
 2. Si vous vous rendez compte qu’un petit nombre de bibliothèques de documents critiques et d’autres informations sont en cours d’utilisation sur votre batterie de serveurs Microsoft Office SharePoint Server 2007, vous pouvez choisir de déplacer manuellement les données de Microsoft Office SharePoint Server 2007 vers SharePoint Server 2010, ou d’effectuer uniquement des sites et des sites web spécifiques vers la version suivante (ce qui peut faciliter votre travail).
     
-3. Moins vous faites sur la batterie de serveurs Microsoft Office SharePoint Server 2007, plus les données que contient la batterie de serveurs sont sûres au cours de la mise à niveau.
+3. Moins vous faites pour la batterie de serveurs Microsoft Office SharePoint Server 2007, plus les données que contient la batterie de serveurs sont sûres au cours de la mise à niveau.
     
-Les méthodes telles que la mise à niveau In-Place agissent directement sur votre batterie de serveurs Microsoft Office SharePoint Server 2007, ce qui vous offre moins d’options faciles pour abandonner un chemin d’accès et recommencer avec votre environnement d’environnement. Dans la mesure du possible, créez certaines mesures de sécurité (par exemple, prendre et tester des sauvegardes de l’environnement d’origine). Par exemple, si votre batterie de serveurs Microsoft Office SharePoint Server 2007 est virtuelle et est dupliquée à des fins de sauvegarde et de restauration, sauvegardez et restituer les bases de données les plus actuelles avant votre fenêtre de service pour la mise à niveau. Le fait de savoir que vous avez la possibilité de restaurer des sauvegardes de base de données ne vous donnera pas seulement une sécurité d’échec, mais peut vous donner l’esprit.
+Les méthodes telles que la mise à niveau In-Place agissent directement sur votre batterie de serveurs Microsoft Office SharePoint Server 2007, ce qui vous offre moins d’options faciles pour abandonner un chemin d’accès et recommencer avec votre environnement d’environnement. Dans la mesure du possible, créez certaines mesures de sécurité (par exemple, prendre et tester des sauvegardes de l’environnement d’origine). Par exemple, si votre batterie de serveurs Microsoft Office SharePoint Server 2007 est virtuelle et est dupliquée à des fins de sauvegarde et de restauration, sauvegardez et restituer les bases de données les plus à jour avant votre fenêtre de service pour la mise à niveau. Le fait de savoir que vous avez la possibilité de restaurer des sauvegardes de base de données ne vous donnera pas seulement une sécurité d’échec, mais peut vous donner l’esprit.
   
 > [!TIP]
 > Les documents de meilleures pratiques pour la mise à niveau existent pour [Microsoft Office SharePoint Server 2007,](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)) [SharePoint Server 2010,](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14)) [SharePoint Server 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)et [SharePoint Server 2016.](/SharePoint/upgrade-and-update/best-practices-for-upgrade) Vous pouvez également rechercher des [partenaires Microsoft qui](https://partnercenter.microsoft.com/pcv/search) ont de l’expérience avec les mises à niveau ou Microsoft 365 migrations. 
@@ -148,7 +148,7 @@ Ma liste à puces « la plus importante » :
 |Mettre à niveau les bases de données avec attachement de base de données  <br/> |Mise à niveau sur place  <br/> |
 |Mise à niveau avec des batteries de serveurs côte à côte  <br/> |Mise à niveau hybride  <br/> |
 |API de migration vers SPO dans Microsoft 365 (pour les données de site personnel)  <br/> |SharePoint Hybride (pas encore nécessaire)  <br/> |
-|Certaines migrations de données manuelles vers SharePoint Online pour les données critiques  <br/> |Mise à niveau de l’Assistant FastTrack vers Microsoft 365  <br/> |
+|Certaines migrations de données manuelles vers SharePoint Online pour les données critiques  <br/> |FastTrack mise à niveau de l’Assistant Microsoft 365  <br/> |
    
  **Mon plan proposé :**
   
@@ -156,14 +156,14 @@ Mettre à niveau sur site, avec des versions de SharePoint côte à côte, certa
   
 - Envisagez si une recherche hybride fédérée avec SPO répond à vos besoins.
     
-- Envisagez [une assistance FastTrack](https://fasttrack.microsoft.com) si vous souhaitez mettre à niveau vers SharePoint Online à partir d’ici. 
+- Envisagez [FastTrack’aide](https://fasttrack.microsoft.com) si vous souhaitez mettre à niveau vers SharePoint Online à partir d’ici. 
     
 - Déterminez si des collections de sites peuvent être déchargées vers un abonnement Microsoft 365 abonnement. (Microsoft 365 répond à de nombreuses normes [de conformité.](/compliance/regulatory/offering-home) Microsoft 365 [a eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) et peut faire des [holds](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) via le Centre de conformité.) 
     
 Sinon, continuez avec une mise à niveau côte à côte vers SharePoint Server 2016.
   
 > [!NOTE]
-> Entre les recommandations faites par les administrateurs qui planifient la mise à niveau et le processus réel se trouve les conversations qui se produisent avec d’autres parties prenantes sur lesquelles repose la mise à niveau. Par exemple, l’économie oblige parfois les administrateurs à modifier leurs plans. Quelle que soit la décision finale, vous devez documenter le plan convenu à l’avenir. Il peut ressembler à ceci : 
+> Entre les recommandations faites par les administrateurs qui planifient la mise à niveau et le processus réel se trouve les conversations qui se produisent avec d’autres parties prenantes sur lesquelles repose la mise à niveau. Par exemple, l’économie oblige parfois les administrateurs à modifier leurs plans. Quelle que soit la décision finale, vous devez documenter ce qu’est le plan convenu à l’avenir. Il peut ressembler à ceci : 
   
  **Mon plan d’action :**
   
@@ -179,10 +179,10 @@ Des étapes plus détaillées ou un certain nombre de liens vers des itinéraire
   
 Souvent, les principaux facteurs dans le choix d’une méthode sont le coût total de la mise à niveau et le coût dans le temps (vous trouverez plus d’informations à ce sujet dans l’article de la feuille de route de migration SharePoint). Toutefois, la planification à l’avance vous permettra de définir les attentes, de choisir judicieusement et de définir à quoi ressemblera la réussite.
   
-## <a name="related-links"></a>Liens associés
+## <a name="related-links"></a>Liens connexes
 
 [Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007](upgrade-from-office-2007-servers-and-products.md)
   
-[Recherche de politique de cycle de vie et de cycle de vie Microsoft](https://support.microsoft.com/lifecycle)
+[Recherche de politique de cycle de vie microsoft et de cycle de vie](https://support.microsoft.com/lifecycle)
   
 [Rechercher des partenaires Microsoft qui peuvent vous aider avec la mise à niveau ou la migration](https://partnercenter.microsoft.com/pcv/search)

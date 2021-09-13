@@ -11,11 +11,11 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ms.openlocfilehash: 999667771bc33ff6e09b5afdff80c61c91daa601
-ms.sourcegitcommit: 00a8a3376ea02770143af9a80cbe17a2b62636e3
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58364924"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203232"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Configuration requise pour le Bureau géré Microsoft
 
@@ -46,9 +46,9 @@ Microsoft Manged Desktop nécessite certaines options de licence pour fonctionne
 
 - Azure Active Directory Premium P1
 - Microsoft Intune
-- Windows 10 Entreprise  
-- Microsoft Defender pour point de terminaison
-- Applications Microsoft 365 pour les grandes entreprises
+- Windows 10 Entreprise  
+- Microsoft Defender pour point de terminaison
+- Microsoft 365 Apps for enterprise
 - Microsoft Teams
 - [SharePoint Online Plan 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online Plan 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans)
@@ -59,13 +59,13 @@ Microsoft Manged Desktop nécessite certaines options de licence pour fonctionne
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Étapes pour vous préparer à la Microsoft Manged Desktop
 
 1. Examiner les conditions préalables (cet article).
-2. Exécutez [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
-1. Acheter [Portail d’entreprise](../get-started/company-portal.md).
-1. Examinez [les conditions préalables pour les comptes invités.](guest-accounts.md)
-1. Vérifiez [la configuration du réseau.](network.md)
-1. [Préparer les certificats et les profils réseau.](certs-wifi-lan.md)
-1. [Préparer l’accès des utilisateurs aux données.](authentication.md)
-1. [Préparer les applications.](apps.md)
-1. [Préparez les lecteurs mappés.](mapped-drives.md)
-1. [Préparer les ressources d’impression.](printing.md)
-1. Noms des [périphériques d’adresse.](address-device-names.md)
+2. Exécutez les [outils d’évaluation de la préparation](readiness-assessment-tool.md).
+1. Achetez [Portail d’entreprise](../get-started/company-portal.md).
+1. Passez en revue les [prérequis pour les comptes invités](guest-accounts.md).
+1. Vérifiez la[configuration réseau](network.md).
+1. [Préparer les certificats et les profils réseau](certs-wifi-lan.md).
+1. [Préparer l’accès utilisateur aux données](authentication.md).
+1. [Préparer les applications](apps.md).
+1. [Préparer les lecteurs mappés](mapped-drives.md).
+1. [Préparer les ressources d’impression](printing.md).
+1. [noms d’appareil](address-device-names.md) d’une adresse.

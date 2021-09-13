@@ -1,5 +1,5 @@
 ---
-title: Envoyer manuellement des messages à Microsoft pour analyse
+title: Soumettre manuellement des messages à Microsoft pour analyse
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,13 +19,13 @@ ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 91ec2807db4a4c384dabcf20634162b3a838274e
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400354"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202715"
 ---
-# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoyer manuellement des messages à Microsoft pour analyse
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Soumettre manuellement des messages à Microsoft pour analyse
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

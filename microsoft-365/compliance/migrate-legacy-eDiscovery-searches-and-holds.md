@@ -15,15 +15,15 @@ ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
 ms.openlocfilehash: 66fff530d67e6211183ea5f9489dcc8497d4fb07
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202349"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrer les recherches et les Centre de conformité Microsoft 365
 
-Le Centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une plus grande fiabilité, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, y compris les cas pour organiser votre contenu en fonction de la matière, les ensembles de révision pour examiner le contenu et l’analyse afin d’aider à annuler les données pour révision telles que le regroupement quasi-dupliqué, le thread de messagerie électronique, l’analyse des thèmes et le codage prédictif.
+Le Centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une plus grande fiabilité, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment les cas d’organisation de votre contenu, les ensembles de révision pour examiner le contenu et l’analyse afin de faciliter la révision des données telles que le regroupement quasi-dupliqué, le thread de messagerie électronique, l’analyse des thèmes et le codage prédictif.
 
 Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des instructions de base sur la migration des recherches et des Centre de conformité Microsoft 365 eDiscovery In-Place à partir du Centre d’administration Exchange.
 
@@ -38,7 +38,7 @@ Pour aider les clients à tirer parti des fonctionnalités nouvelles et amélior
 
 ## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Étape 1 : Connecter pour Exchange Online PowerShell et le Centre de sécurité & conformité PowerShell
 
-La première étape consiste à se connecter à Exchange Online PowerShell et au Centre de sécurité & conformité PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à entrer les informations d’identification de l’organisation à qui vous voulez vous connecter. 
+La première étape consiste à vous connecter à Exchange Online PowerShell et au Centre de sécurité & conformité PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à entrer les informations d’identification de l’organisation à qui vous voulez vous connecter. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -110,7 +110,7 @@ New-CaseHoldRule -Name $search.Name -Policy $policy.Identity
 
 Pour vous assurer qu’il n’y a aucun problème lors de la création de la mise en attente, il est bon de vérifier que l’état de la distribution de la mise en attente a réussi. La distribution signifie que la attente a été appliquée à tous les emplacements de contenu spécifiés dans le *paramètre ExchangeLocation* à l’étape précédente. Pour ce faire, vous pouvez exécuter la cmdlet **Get-CaseHoldPolicy.** Étant donné que les propriétés enregistrées dans la variable $policy que vous *avez* créée à l’étape précédente ne sont pas automatiquement mises à jour dans la variable, vous devez réexécuter la cmdlet pour vérifier que la distribution a réussi. La distribution des stratégies de cas peut prendre entre 5 et 24 heures.
 
-Exécutez la commande suivante pour vérifier que le hold eDiscovery a été distribué correctement.
+Exécutez la commande suivante pour vérifier que la découverte électronique a bien été distribuée.
 
 ```powershell
 Get-CaseHoldPolicy -Identity $policy.Identity | Select name, DistributionStatus
@@ -140,7 +140,7 @@ Le cas que vous avez créé à l’étape 3 est répertorié dans la page **Core
 
 ![eDiscovery est en Centre de conformité Microsoft 365.](../media/MigrateLegacyeDiscovery8.png)
 
-La recherche que vous avez créée à l’étape 7 est répertoriée sous **l’onglet Recherches** du cas.
+La recherche que vous avez créée à l’étape 7 est répertoriée sous l’onglet **Recherches** du cas.
 
 ![Recherche de cas eDiscovery dans le Centre de conformité Microsoft 365.](../media/MigrateLegacyeDiscovery9.png)
 
@@ -148,7 +148,7 @@ Si vous migrez une recherche eDiscovery In-Place mais que vous ne l’associez p
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Pour plus d’informations In-Place'& eDiscovery dans le centre d Exchange’administration, voir :
+- Pour plus d’informations In-Place'& eDiscovery dans le Centre d’administration Exchange, voir :
   
   - [Découverte électronique locale](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 

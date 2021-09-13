@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37e742379b8269948819448274d1e3a90bc08bfa7098e4e8f9752f6a8dde60e5
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 40488377474ee038eabc72c84066373ee5c1c3e5
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53832189"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201846"
 ---
 # <a name="contact-support-for-montserrat"></a>Contacter le support technique pour Montserrat
 

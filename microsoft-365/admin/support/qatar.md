@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 519960d3b2a9c5c2e6f9e10755e3a94cd07fe97c8f0765414ba0d3d33856c4b4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 15acaf68cb72ec1b30ce4f56be72613eb03d03ac
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53873212"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202595"
 ---
 # <a name="contact-support-for-qatar"></a>Contacter le support pour le Qatar
 

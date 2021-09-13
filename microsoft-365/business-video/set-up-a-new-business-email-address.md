@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer une nouvelle adresse de messagerie professionnelle.
-ms.openlocfilehash: a263a04f88880d4043b8a32dd2c7afdb557f11a6025d2f6ab5523f430124e2ac
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906850"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203459"
 ---
 # <a name="set-up-a-new-business-email-address"></a>Configurer une nouvelle adresse professionnelle
 

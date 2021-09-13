@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ae795bd52a3e7e17e6a2dde46fcfa61210fc5c6c5e3f0873c572c35370c10843
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: e2d3160a3131f4142f4062f57ab7ff1786d4bf0f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59201774"
 ---
 # <a name="contact-support-for-niger"></a>Contacter le support technique pour Le Monde
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer l’authentification multifacteur, parfois appelée authentification à deux facteurs, sur votre téléphone.
-ms.openlocfilehash: e2cafa926f730d092debd1fde767bc74854658513dcb79cbefa64f13a5a39446
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203453"
 ---
 # <a name="set-up-multifactor-authentication-on-your-phone"></a>Configurer l’authentification multifacteur sur votre téléphone
 

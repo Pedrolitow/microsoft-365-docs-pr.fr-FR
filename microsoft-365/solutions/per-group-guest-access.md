@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment empêcher l’ajout d’invités à un groupe spécifique
-ms.openlocfilehash: ad83ab0b0ec739691721627b09924e1e0ab8ee1d07513634606525f2371d0f6d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53827733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203681"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Empêcher l’ajout d’invités à un groupe Microsoft 365 ou une équipe Microsoft Teams spécifique
 
@@ -105,13 +105,13 @@ Exécutez ensuite ce qui suit en utilisant les valeurs appropriées pour ObjectI
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Gérer l’appartenance à un groupe dans le Centre d’administration Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
+[Gérer l’appartenance à un groupe dans le Centre d'administration Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
   
 [Azure Active Directory’accès aux données](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

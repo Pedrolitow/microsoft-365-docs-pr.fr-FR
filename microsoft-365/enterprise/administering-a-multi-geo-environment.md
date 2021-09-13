@@ -16,11 +16,11 @@ ms.collection:
 localization_priority: Normal
 description: Les administrateurs peuvent découvrir comment administrer SharePoint et OneDrive services dans un environnement multigéogé.
 ms.openlocfilehash: 5089a63f4c4f3406c146188151a145cf4b6aa7f2
-ms.sourcegitcommit: 9469d16c6bbd29442a6787beaf7d84fb7699c5e2
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58400126"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202247"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -74,7 +74,7 @@ Par défaut, tous les emplacements géographiques d’un environnement multigéo
 
 Les administrateurs peuvent définir et gérer des stratégies de partage pour chacun de leurs emplacements. Les OneDrive et SharePoint sites dans chaque emplacement géographique respectent uniquement les paramètres de partage spécifiques à la région correspondants. (par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre emplacement central, mais pas pour votre emplacement satellite, et inversement). Notez que les paramètres de partage ne vous permettent pas de configurer des limites de partage entre emplacements géographiques.
 
-## <a name="stream"></a>Flux
+## <a name="stream"></a>Stream
 
 Les vidéos téléchargées sur Stream dans une conversation 1:1 sont stockées dans la OneDrive de la personne qui a téléchargé. Les enregistrements de réunion sont stockés dans le OneDrive de chaque participant qui enregistre la réunion.
 
@@ -92,6 +92,6 @@ Si vous avez des propriétés de profil personnalisées, nous vous recommandons 
 
 Pour plus de détails et pour obtenir des instructions de développement, voir [Utiliser les profils utilisateur dans un client multigéographique](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience).
 
-## <a name="yammer"></a>Yammer
+## <a name="yammer"></a>Protester
 
 Yammer n’est pas une charge de travail Multi-Géo. Yammer threads stockés dans Yammer seront placés dans l’emplacement central du client. Yammer est en cours de déploiement d’une modification de stockage de fichiers qui stockera Yammer fichiers dans SharePoint. Yammer fichiers stockés dans SharePoint seront placés sur le site SharePoint associé au groupe Yammer web. SharePoint sites de groupe sont basés sur la logique PDL décrite dans SharePoint [Sites et groupes.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)

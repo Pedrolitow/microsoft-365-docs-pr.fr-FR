@@ -18,11 +18,11 @@ ms.assetid: ''
 description: Le marquage de documents dans un jeu à réviser permet de supprimer du contenu inutile et d’identifier le contenu pertinent dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 83d8814a1cbc35e461c5bd459390a507bd675f5d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59209755"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Baliser des documents dans un jeu à réviser dans Advanced eDiscovery
 
@@ -103,12 +103,12 @@ Une fois la structure de balises en place, les réviseurs peuvent appliquer des 
 
       - **Inclure les éléments de famille associés**: cette option applique la même balise aux éléments de la famille d’éléments associés qui sont marqués.  *Les éléments de famille* sont des éléments qui partagent la même valeur de propriété de métadonnées **FamilyId.** Par exemple, un document joint à un message électronique partage le **même FamilyId** que le message électronique. Ainsi, si cette option est sélectionnée pour cet exemple, le message électronique et le document sont marqués, même si le document n’est peut-être pas inclus dans la liste des éléments de jeu à réviser.
 
-      - **Inclure les éléments** de conversation associés : cette option applique la même balise à tous les éléments qui se trouve dans la même conversation Teams ou Yammer que les éléments marqués. *Les éléments de conversation* sont des éléments qui partagent la même valeur de propriété de métadonnées **ConversationId.** Tous les messages, billets et fichier de transcription correspondant d’une conversation partagent le même **ConversationId**. Si cette option est sélectionnée, tous les éléments de la même conversation (et fichier de transcription) sont balisé, même si certains de ces éléments de conversation peuvent ne pas être inclus dans la liste des éléments de jeu à réviser. Pour plus d’informations sur les éléments de conversation, voir la section « Regroupement » dans Advanced eDiscovery flux de travail [pour le contenu Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
+      - **Inclure les éléments** de conversation associés : cette option applique la même balise à tous les éléments qui se trouve dans la même conversation Teams ou Yammer que les éléments marqués. *Les éléments de conversation* sont des éléments qui partagent la même valeur de propriété de métadonnées **ConversationId.** Tous les messages, billets et fichier de transcription correspondant d’une conversation partagent le même **ConversationId**. Si cette option est sélectionnée, tous les éléments de la même conversation (et fichier de transcription) sont balisé, même si certains de ces éléments de conversation peuvent ne pas être inclus dans la liste des éléments de jeu à réviser. Pour plus d’informations sur les éléments de conversation, voir la section « Regroupement » dans Advanced eDiscovery flux de travail [pour le contenu dans Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#grouping).
 
       - **Aucun**: cette option n’applique pas de balises aux éléments de famille ou aux éléments de conversation. Elle applique uniquement les balises aux éléments sélectionnés ou à tous les éléments de la liste de révision.
 
    > [!NOTE]
-   > Le fait d’inclure des éléments de conversation  ou de famille associés ne modifie pas le nombre d’éléments affichés dans les éléments sélectionnés baliser ou baliser tous les éléments dans les options **de liste.** En d’autres termes, le nombre d’éléments associés qui seront marqués n’est pas affiché.
+   > Le fait d’inclure des éléments de conversation  ou de famille associés ne modifie pas le nombre d’éléments affichés dans la balise éléments sélectionnés ou marque tous les éléments dans les options **de liste.** En d’autres termes, le nombre d’éléments associés qui seront marqués n’est pas affiché.
 
    - **Attribuer des balises**: cette section affiche les balises (organisées par groupes de balises) que vous pouvez appliquer aux documents. Vous ne pouvez appliquer qu’une seule balise de choix unique (identifiée par une option) par groupe de balises. Toutefois, vous pouvez appliquer plusieurs balises à choix multiples (identifiées par une case à cocher).
 

@@ -17,11 +17,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.openlocfilehash: 2a336a571c33820d289eed9d4d6cd20e56cdfa20
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58563801"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202854"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft 365 Defender pour diffuser en continu des événements de recherche avancée sur votre compte Stockage client
 
@@ -50,7 +50,7 @@ ms.locfileid: "58563801"
 4. Dans le **programme volant Ajouter de nouveaux paramètres d’API** de diffusion en continu qui s’affiche, configurez les paramètres suivants :
    1. **Nom**: choisissez un nom pour vos nouveaux paramètres.
    2. Sélectionnez **Les événements Forward à stockage Azure**.
-   3. Dans la **Stockage’ID** de ressource de compte qui s’affiche, tapez **votre ID Stockage ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** ouvrez le portail Azure à l’Stockage cliquez sur les comptes Stockage pour copier le texte sous l’ID de ressource de compte <https://portal.azure.com>  \> \> **Stockage.**
+   3. Dans la **Stockage’ID** de ressource de compte qui s’affiche, tapez **votre ID Stockage ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** ouvrez le portail Azure à l’Stockage cliquez sur les comptes Stockage pour copier le texte sous l’ID de ressource de compte <https://portal.azure.com>  \> \> Stockage.
 
       ![Image de l’ID1 de ressource du hub d’événements.](../defender-endpoint/images/storage-account-resource-id.png)
 
@@ -99,7 +99,7 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
   ![Image de l’ID3 de ressource du hub d’événements.](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble du chasse avancée](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender API de diffusion en continu](streaming-api.md)

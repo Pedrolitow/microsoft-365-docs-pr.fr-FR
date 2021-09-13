@@ -23,11 +23,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 4176b718105643b59f23024c1a70cd8fe220eea9
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58568815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202914"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Présentation de la réponse à votre premier incident
 
@@ -69,6 +69,6 @@ Exemples supplémentaires de réponses aux premiers incidents :
 - [Courriers hameçons](first-incident-path-phishing.md)
 - [Attaque de base d’identité](first-incident-path-identity.md)
 
-[Manuels détaillés de réponse aux incidents](/security/compass/incident-response-playbooks)
+[Manuels de réponse aux incidents détaillés](/security/compass/incident-response-playbooks)
 
 

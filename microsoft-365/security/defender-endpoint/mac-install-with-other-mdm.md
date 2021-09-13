@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4e12af874a3615f7325b41252fc0cecaf7993868fe3a0d41545f3c45cadb0267
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 26c7e53a6dd28264374d19acb68fd27e27507b0f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53857326"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203046"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
@@ -104,7 +104,7 @@ Configurer une stratégie d’extension système. Utilisez **l’identificateur 
 
 Accordez un accès disque total aux composants suivants :
 
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
     - Identificateur : `com.microsoft.wdav`
     - Type d’identificateur : ID d’offre groupée
     - Conditions requises pour le code : `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`

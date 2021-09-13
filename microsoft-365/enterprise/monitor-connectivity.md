@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Dans cet article, vous allez découvrir les outils et techniques que vous pouvez utiliser pour surveiller et maintenir Microsoft 365 connectivité.
-ms.openlocfilehash: 5013ef1129e230ea9a3cd31e5a75dbf367c4e5c01c63b37768e7f73098bcfacc
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: d6e93f4669bb14736d78a30ece095623edb67136
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53899198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203316"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Surveiller la connectivité Microsoft 365
 
@@ -36,20 +36,20 @@ Une fois que vous avez déployé Microsoft 365, vous pouvez maintenir Microsoft 
 |Type de surveillance |Description |
 |:-----|:-----|
 |**Recevoir des notifications de nouveaux points Microsoft 365 de terminaison** <br/> |Si vous gérez des points de terminaison [Microsoft 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), vous souhaiterez recevoir des notifications lorsque nous publions de nouveaux points de terminaison, vous pouvez vous abonner à notre flux RSS à l’aide de votre lecteur RSS favori. Voici comment vous abonner [via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) ou vous pouvez recevoir les mises à jour de flux RSS par [courrier électronique.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
-|**Utiliser System Center pour surveiller les Microsoft 365** <br/> |Si vous utilisez Microsoft System Center, vous pouvez télécharger le pack d’administration System Center pour [Office 365](https://www.microsoft.com/download/details.aspx?id=43708) commencer la surveillance Microsoft 365 aujourd’hui. Pour obtenir des instructions plus détaillées, consultez le guide des opérations du pack d’administration. <br/> |
+|**Utiliser System Center pour surveiller les Microsoft 365** <br/> |Si vous utilisez Microsoft System Center, vous pouvez télécharger le pack d’administration [Microsoft System Center Operations Manager](https://www.microsoft.com/download/details.aspx?id=103379) pour Microsoft 365 commencer la surveillance Microsoft 365 aujourd’hui. Pour obtenir des instructions plus détaillées, consultez le guide des opérations du pack d’administration. <br/> |
 |**Surveiller l’état d’Azure ExpressRoute** <br/> |Si vous vous connectez à Microsoft 365 à l’aide d’Azure ExpressRoute pour Microsoft 365, vous devez vous assurer que vous utilisez à la fois le tableau de bord d’état du service Microsoft 365 et Azure Réduisant le temps de dépannage avec l’état des ressources [Azure](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**Utiliser Azure AD Connect Health avec AD FS** <br/> |Si vous utilisez AD FS pour Sign-On unique avec Microsoft 365, vous pouvez commencer à utiliser Azure AD Connecter Health pour surveiller votre [infrastructure AD FS.](/azure/active-directory/hybrid/how-to-connect-health-adfs)  <br/> |
 |**Surveiller les Microsoft 365** <br/> |Reportez-vous à nos conseils sur [l Microsoft 365 API de gestion des données.](/office/office-365-management-api/office-365-management-apis-overview)  <br/> |
 
 Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/monitorconnectivity365]()
   
-## <a name="related-topics"></a>Sujets connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 [Configurer Microsoft 365 Entreprise services et applications](configure-services-and-applications.md)
   
 [Préparer votre organisation à la Microsoft 365 Entreprise](get-your-organization-ready-for-office-365.md)
   
-[Planification réseau et optimisation des performances pour Microsoft 365](network-planning-and-performance.md)
+[Planification réseau et optimisation des performances pour Microsoft 365](network-planning-and-performance.md)
   
 [Microsoft 365'intégration aux environnements locaux](microsoft-365-integration.md)
   

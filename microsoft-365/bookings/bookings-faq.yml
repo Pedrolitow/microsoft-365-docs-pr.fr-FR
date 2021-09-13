@@ -10,11 +10,11 @@ metadata:
   localization_priority: Normal
   description: Questions fréquemment posées sur Microsoft Bookings.
   ms.openlocfilehash: ae2f6afcd350edba17d73801aec838f3980c46b4
-  ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/31/2021
-  ms.locfileid: "58823575"
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "59203501"
 title: Questions fréquemment posées sur Microsoft Bookings
 summary: ''
 sections:
@@ -55,7 +55,7 @@ sections:
   - question: >
       Notre service informatique peut-il contrôler si les utilisateurs finaux peuvent accéder à Bookings ?
     answer: >
-      Bookings est disponible par défaut dans les locataires Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 et E3/E5, mais les administrateurs peuvent le désactiver dans le Centre d’administration Microsoft 365 s’ils le souhaitent. Pour ce faire, [suivez ces instructions.](turn-bookings-on-or-off.md)
+      Bookings est disponible par défaut dans les locataires Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 et E3/E5, mais les administrateurs peuvent le désactiver dans le Centre d'administration Microsoft 365 s’ils le souhaitent. Pour ce faire, [suivez ces instructions.](turn-bookings-on-or-off.md)
 
 
       Si un client souhaite désactiver l’accès à Bookings pour certaines licences éligibles dans son client, il peut utiliser une stratégie de groupe pour restreindre les licences ou implémenter une stratégie de boîte aux lettres OWA qui limite les utilisateurs autorisés à créer de nouveaux calendriers Bookings.

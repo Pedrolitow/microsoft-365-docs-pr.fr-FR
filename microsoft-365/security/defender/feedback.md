@@ -21,11 +21,11 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.openlocfilehash: 9e007a84286df348158ddc830a5bec079183f768
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570424"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202919"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>Fournir des commentaires sur Microsoft 365 Defender
 

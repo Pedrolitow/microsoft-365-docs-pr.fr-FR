@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: Découvrez comment Teams fonctionne avec Microsoft 365 multigéogé.
-ms.openlocfilehash: 3f5e3b58b5cf0ddabbbb05640e5c6ccf5832ef1caf0e6074a04e0112bba2fd68
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202187"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Fonctionnalités multigé géographiques dans Microsoft Teams
 
@@ -64,7 +64,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 ## <a name="user-experience"></a>Expérience de l’utilisateur
 
-Teams Multi-Géo est transparent pour l’utilisateur final. Une fois que vous modifiez le PDL d’un utilisateur ou d’un groupe, les données respectives sont en file d’attente pour la migration et la migration se produit automatiquement sans impact sur l’utilisateur ou son client Teams, même s’ils sont actifs pendant la migration.
+Teams Multi-Géo est transparent pour l’utilisateur final. Une fois que vous modifiez la PDL d’un utilisateur ou d’un groupe, les données respectives sont en file d’attente pour la migration et la migration se produit automatiquement sans impact sur l’utilisateur ou son client Teams même s’ils sont actifs pendant la migration.
 
 ## <a name="see-also"></a>Voir aussi
 

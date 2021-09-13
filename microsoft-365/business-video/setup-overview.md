@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez ce dont vous avez besoin pour configurer Microsoft 365 Business Premium.
-ms.openlocfilehash: 9a88b5269b4c3c4b566f50baf535a5896e9ad2bdde148eb82323b31dcdb64420
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53831577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203436"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Vue d’ensemble de Microsoft 365 Business Premium configuration
 

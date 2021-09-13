@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la protection des informations dans Windows
 ms.reviewer: ''
-description: En savoir plus sur le fonctionnement de la protection des informations Windows pour identifier et protéger les informations sensibles
+description: Découvrez comment fonctionne la protection des informations dans Windows pour identifier et protéger les informations sensibles
 keywords: information, protection, dlp, données, perte, prévention, protéger
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,17 +17,17 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: b3fa8c7c919edc438bb63fe4baaeca6711a3a045
-ms.sourcegitcommit: d016e3bd30c0dd73c4cd3d804c0b6941b5eb3e87
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203136"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -100,5 +100,5 @@ InformationProtectionLogs_CL
 ### <a name="prerequisites"></a>Configuration requise
 
 - Les clients doivent avoir un abonnement à Azure Information Protection.
-- Activez l’intégration d’Azure Information Protection dans Centre de sécurité Microsoft Defender :
+- Activez l’intégration Azure Information Protection dans Centre de sécurité Microsoft Defender :
   - Go to **Paramètres** in Centre de sécurité Microsoft Defender, click on **Advanced Paramètres** under **General**.

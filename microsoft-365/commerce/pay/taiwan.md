@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 983893d8e2c013b969b109250db4cf1c1cef6eb7d241aac4caa8a1c25b132c15
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0bf7e66fbd6bb56fa4185bc53e1c5dab0eb46bfb
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202446"
 ---
 # <a name="payment-information-for-taiwan"></a>Informations de paiement pour Taïwan
 

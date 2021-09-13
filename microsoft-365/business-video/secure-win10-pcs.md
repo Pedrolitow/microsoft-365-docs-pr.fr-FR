@@ -15,19 +15,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment configurer des stratégies Windows 10 protection à l’Microsoft 365 Business Premium.
-ms.openlocfilehash: fe75bda2559c6c41b69f85864f7d945e3b9deaf672a91d82eab01ce55b0e9f92
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 23cef2de8a3c5b270ec40fcf67915545b5bdf52d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906874"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203465"
 ---
-# <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
+# <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
  
@@ -35,7 +36,7 @@ ms.locfileid: "53906874"
 
 Après avoir installé la protection des appareils dans Microsoft 365 Entreprise, suivez ces étapes pour protéger Windows 10 ordinateurs.
 
-1. In the Centre d’administration Microsoft 365, choose **Setup**.
+1. In the Centre d'administration Microsoft 365, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 2. Sous **Sécuriser vos ordinateurs Windows,** sélectionnez **Afficher.**
 3. Examinez les informations sur la page Sécuriser **vos ordinateurs Windows 10** afin de comprendre les stratégies et leur impact sur vos utilisateurs.
 4. Sélectionnez **Commencer.**

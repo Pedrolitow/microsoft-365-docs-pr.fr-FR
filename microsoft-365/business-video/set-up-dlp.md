@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment gérer les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 1da9629aa5a04aab2875484b41f1867e2b36e20d66119a122827cc3eb6f7d873
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 04dbbcfd39186b8161fb497b72ddb070fbfb7471
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53906802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203454"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Empêcher la perte de données avec DLP
 
@@ -38,7 +38,7 @@ Les stratégies de protection contre la perte de données permettent d’identif
 
 1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 1. Faites défiler vers le bas **pour configurer la** protection contre la perte de données, puis **sélectionnez Afficher,** puis **Gérer**.
-1. Pour modifier une stratégie, sélectionnez-la, sélectionnez **Modifier la stratégie,** puis ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
+1. Pour modifier une stratégie, sélectionnez-la, choisissez **Modifier la stratégie,** puis sélectionnez ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
 1. Pour activer l’analyse du contenu Microsoft Teams, activez le bouton bascule à la **position** Sur, puis sélectionnez **Enregistrer.**
 1. Pour modifier les paramètres de stratégie, sélectionnez **Modifier.**
 1. Vous devez définir des règles distinctes qui s’appliquent aux petites et grandes quantités de contenu sensible détecté. Développez votre règle de faible volume. Choose **Edit rule**.

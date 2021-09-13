@@ -16,11 +16,11 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533290"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203153"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -83,7 +83,7 @@ Découvrez comment créer et déployer des stratégies de logiciel [anti-program
     2. Sous la section **Options,** cliquez sur **Afficher...**.
     3. Entrez chaque processus sur sa propre ligne sous la **colonne Nom de** la valeur. Consultez l’exemple de tableau pour les différents types d’exclusions de processus. Entrez **0 dans** la colonne **Valeur** pour tous les processus.
 
-5. Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser les cmdlets PowerShell pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 

@@ -20,11 +20,11 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.technology: mde
 ms.openlocfilehash: 7d9dad6b2f2f1b37525faf0a4a90d143650c49d1
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58570364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203201"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
@@ -34,7 +34,7 @@ ms.locfileid: "58570364"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Aujourd’hui, le paysage [](/windows/security/threat-protection/intelligence/fileless-threats) des menaces est dépassé par les programmes malveillants sans fichier et qui se trouvent en dehors de la région, les menaces hautement polymorphes qui mutent plus rapidement que les solutions traditionnelles peuvent suivre et les attaques gérées par l’homme qui s’adaptent à ce que les adversaires trouvent sur des appareils compromis. Les solutions de sécurité traditionnelles ne sont pas suffisantes pour arrêter ces attaques ; vous avez besoin de fonctionnalités d’intelligence artificielle (IA) et d’apprentissage des appareils (ML), telles que le blocage du comportement et le contenu, inclus dans Defender pour point de [terminaison.](/windows/security)
 
@@ -72,7 +72,7 @@ Attendez-vous à en savoir plus sur le blocage et le blocage du comportement, ca
 
 Les fonctionnalités de blocage du comportement et de blocage du contenu ont bloqué les techniques de l’attaquant, telles que les suivantes :
 
-- Informations d’identification de LSASS
+- Informations d’identification auprès de LSASS
 - Injection entre processus
 - Processus d’vidage
 - Contournement du contrôle de compte d’utilisateur
@@ -90,7 +90,7 @@ Vous trouverez ci-dessous deux exemples réels de blocage et de blocage du compo
 
 Comme décrit dans l’une des principales attaques contre les menaces: le blocage basé sur le comportement de [l’IA](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)arrête les attaques sur leur piste , une attaque par vol d’informations d’identification contre 100 organisations dans le monde a été arrêtée par des fonctionnalités de blocage comportemental et de blocage. Les messages électroniques de harponnage contenant un document leurre ont été envoyés aux organisations ciblées. Si un destinataire a ouvert la pièce jointe, un document distant associé a pu exécuter du code sur l’appareil de l’utilisateur et charger des programmes malveillants Lokibot, qui ouvrent des informations d’identification, des données volées exfiltrées et attendent des instructions supplémentaires d’un serveur de commande et de contrôle.
 
-Les modèles d’apprentissage des appareils basés sur le comportement dans Defender pour le point de terminaison ont intercepté et arrêté les techniques de l’attaquant à deux points de la chaîne d’attaque :
+Les modèles d’apprentissage des appareils basés sur le comportement dans Defender pour point de terminaison ont intercepté et arrêté les techniques de l’attaquant à deux points de la chaîne d’attaque :
 
 - La première couche de protection a détecté le comportement d’exploitation. Les classifieurs d’apprentissage des appareils dans le cloud ont correctement identifié la menace et ont immédiatement demandé à l’appareil client de bloquer l’attaque.
 - La deuxième couche de protection, qui a permis d’arrêter les cas où l’attaque est passée au-delà de la première couche, a détecté un processus en train de s’arrêter et a supprimé les fichiers correspondants (par exemple, Lokibot).
@@ -117,7 +117,7 @@ Quelques minutes après le blocage de l’artefact, plusieurs instances du même
 
 Cet exemple montre qu’avec les fonctionnalités de blocage du comportement et de blocage, les menaces sont détectées, contenues et bloquées automatiquement.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur Defender pour point de terminaison](overview-endpoint-detection-response.md)
 
