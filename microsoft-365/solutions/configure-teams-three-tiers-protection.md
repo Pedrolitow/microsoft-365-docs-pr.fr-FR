@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: f0c7bbe1043116eb678df77ffe95bdc8654839f7
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 5cd06f540ba96f55aa52a1cc9b5e6e7c54c7bbab
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59207067"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -52,7 +52,7 @@ Le tableau suivant récapitule les configurations pour chaque niveau. Utilisez c
 
 |-|Base de référence (public)|Base de référence (privé)|Sensible|Hautement sensible|
 |:-----|:-----|:-----|:-----|:-----|
-|Équipe privé ou publique|Public|Private|Private|Private|
+|Équipe privé ou publique|Public|Private|Privé|Private|
 |Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Uniquement les membres de l’équipe. D’autres personnes peuvent demander l’accès au site associé.|Uniquement les membres de l’équipe.|Uniquement les membres de l’équipe.|
 |Canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Seuls les propriétaires peuvent créer des canaux privés.|Seuls les propriétaires peuvent créer des canaux privés.|
 |Accès invité au niveau du site|**Nouveaux invités et invités existants** (par défaut).|**Nouveaux invités et invités existants** (par défaut).|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|
@@ -98,9 +98,7 @@ Par défaut, les propriétaires et les membres de l’équipe peuvent partager d
 
 Si vous avez besoin de collaborer avec des personnes extérieures à votre organisation, nous vous recommandons de configurer [Intégration de SharePoint et OneDrive avec Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) pour optimiser le partage et l’administration.
 
-Le partage des invités est désactivé par défaut, même si le partage pour les groupes Office 365 (où les membres de l’équipe sont stockés) et SharePoint est activé. Le partage des équipes est activé dans le niveau de référence, vous pouvez le désactiver si vous le souhaitez dans les niveaux sensibles et hautement sensibles à l’aide d’une étiquette de confidentialité.
-
-L’étiquette de confidentialité affecte uniquement le partage invité pour l’équipe. Les paramètres de partage d’invités pour le site SharePoint associé sont contrôlés séparément. Nous vous recommandons d’aligner les deux paramètres pour les niveaux sensibles et hautement sensibles.
+Le partage d’invités Teams est activé par défaut, mais vous pouvez le désactiver si nécessaire dans les niveaux sensibles et hautement sensibles à l’aide d’une étiquette de confidentialité.
 
 Dans le niveau hautement sensible, nous configurons l’étiquette de confidentialité pour chiffrer les fichiers auxquels elle est appliquée. Si vous voulez que les invités aient accès à ces fichiers, vous devez leur attribuer des autorisations lors de la création de l’étiquette.
 
