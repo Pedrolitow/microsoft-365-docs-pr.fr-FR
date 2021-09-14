@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ff8534d0b668b6a18b219297131dbd90c366cc35
-ms.sourcegitcommit: c41e3f48451e2d7b45901faee21b1e1d19a16688
+ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58823779"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59203916"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -152,3 +152,16 @@ Defender pour point de terminaison s’intègre directement aux différentes sol
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
 
 Avec Microsoft 365 Defender, Defender pour point de terminaison et diverses solutions de sécurité Microsoft forment une suite de défense d’entreprise unifiée pré et post-violation qui s’intègre en mode natif entre les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées.
+
+
+## <a name="training-for-security-analysts"></a>Formation pour les analystes de sécurité
+
+Avec ce parcours d'apprentissage de Microsoft Learn, vous pouvez comprendre Defender for Endpoint et comment il peut aider à prévenir, détecter, enquêter et répondre aux menaces sur les points d'extrémité de votre organisation - vos appareils et systèmes.
+
+|Formation :|Détecter les cyberattaques et y répondre avec Microsoft 365 Defender|
+|---|---|
+|![Microsoft 365 Defender de formation.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender pour point de terminaison est une solution de sécurité de point de terminaison qui offre la gestion des vulnérabilités, la protection des points de terminaison, la détection et la réponse des points de terminaison, la défense contre les menaces mobiles et les services managés dans une plateforme unifiée unique.<p> 2 h 25 min - Learning chemin d’accès - 9 modules|
+
+> [!div class="nextstepaction"]
+> [Démarrer >](/learn/paths/defender-endpoint-fundamentals/)
+

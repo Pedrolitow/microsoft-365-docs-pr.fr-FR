@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: 4ca2d190643b7d2bf557fcf87b4319ba4e3adc99
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2bc5a4f1f6c6784413b716ce752855393bfed90f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59179044"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
@@ -86,7 +86,7 @@ Pour activer les fonctionnalités de Microsoft 365 pour vos travailleurs hybride
 |---|---|---|
 |Authentification multifacteur appliquée avec paramètres de sécurité par défaut|Protégez-vous contre les identités compromises et les appareils en imposant une deuxième forme d’authentification pour les connexions. La sécurité par défaut nécessite l’authentification multifacteur pour tous les comptes d’utilisateurs.|Microsoft 365 E3 ou E5|
 |Authentification multifacteur appliquée avec accès conditionnel|Requiert une authentification multifacteur sur la base des propriétés de la connexion avec les stratégies d’accès conditionnel.|Microsoft 365 E3 ou E5|
-|Authentification multifacteur appliquée avec accès conditionnel basé sur les risques|Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Microsoft Defender pour identité.|Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2|
+|Authentification multifacteur appliquée avec accès conditionnel basé sur les risques|Exigez l'AMF en fonction du risque lié à la connexion de l'utilisateur avec Azure AD Identity Protection.|Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2|
 |Réinitialisation du mot de passe libre-service (SSPR)|Autoriser vos utilisateurs à réinitialiser ou déverrouiller leur mot de passe ou leur compte.|Microsoft 365 E3 ou E5|
 |Proxy d’application Azure AD|Fournir un accès à distance sécurisé pour les applications web hébergées sur les serveurs intranet.|Nécessite un abonnement Azure payé séparément|
 |VPN point à site Azure|Créer une connexion sécurisée à partir de l’appareil d’un employé distant sur votre intranet via un réseau virtuel Azure.|Nécessite un abonnement Azure payé séparément|

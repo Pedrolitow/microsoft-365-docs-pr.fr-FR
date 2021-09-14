@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+ms.custom: admindeeplinkMAC
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 34f4bb10ba79e6521d785df157368cdaae89118a
-ms.sourcegitcommit: bdf506c47bfed0f7e639301a7edd94c4eb150150
+ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "58869190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59204149"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -67,7 +68,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 ### <a name="retention-policy-for-teams-locations"></a>Stratégie de rétention pour les emplacements Teams
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Stratégies** > **Retention**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, sélectionnez **Stratégies** > **Retention**.
 
 2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration Créer une stratégie de rétention et nommez votre nouvelle stratégie de rétention.
 
@@ -122,7 +123,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 >
 > Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Stratégies** > **Retention**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, sélectionnez **Stratégies** > **Retention**.
 
 2. Sélectionnez **Nouvelle stratégie de rétention** pour créer une stratégie de rétention.
 
@@ -169,7 +170,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 - Groupes Microsoft 365
 - Skype Entreprise
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), sélectionnez **Stratégies** > **Retention**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, sélectionnez **Stratégies** > **Retention**.
 
 2. Sélectionnez **nouvelle stratégie de rétention** pour démarrer la configuration Créer une stratégie de rétention et nommez votre nouvelle stratégie de rétention.
 
@@ -211,9 +212,16 @@ Lorsque vous spécifiez vos emplacements pour les sites SharePoint ou comptes On
 
 Pour spécifier des comptes OneDrive individuels à inclure ou exclure, l’URL de OneDrive d’un utilisateur est généralement au format suivant. Pour le nom d’utilisateur principal (UPN), tous les caractères spéciaux tels qu’un point, une virgule, un espace et le signe at (« @ ») sont convertis en traits de soulignement (« _ ») : `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-Par exemple, pour un utilisateur du client Contoso dont l’UPN est « rsimone@contoso.onmicrosoft.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. Toutefois, des nombres ou des GUID peuvent être ajoutes lorsque des conflits sont détectés.
+Par exemple, pour un utilisateur du client Contoso dont l’UPN est « rsimone@contoso.onmicrosoft.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-Il est toujours préférable de confirmer l’URL d’un utilisateur pour son compte OneDrive, ce que vous pouvez faire avec le Centre d'administration Microsoft 365 ou PowerShell. Pour plus d’informations, voir [Obtenir la liste de toutes les URL OneDrive d’utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
+Ou, si vous utilisez un nom de domaine personnalisé afin que l’UPN soit « rsimone@contoso.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+
+Toutefois, des nombres ou des GUID peuvent être ajoutes à l’URL lorsque des conflits sont détectés, il est donc toujours préférable de confirmer l’URL d’un utilisateur pour son compte OneDrive. Pour confirmer l’URL, vous pouvez utiliser le Centre d'administration Microsoft 365 ou PowerShell. Pour plus d’informations, voir [Obtenir la liste de toutes les URL OneDrive d’utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
+
+> [!NOTE]
+> Lorsque vous spécifiez des comptes OneDrive individuels à inclure ou à exclure, sachez que, sauf si les comptes OneDrive sont pré-mis en [service,](/onedrive/pre-provision-accounts)l’URL n’est pas créée tant qu’un utilisateur n’a pas accédé à son OneDrive pour la première fois.
+> 
+> En outre, l OneDrive URL [de](/onedrive/upn-changes) l’utilisateur change automatiquement en cas de modification de l’UPN de l’utilisateur. Par exemple, un événement de changement de nom tel qu’un mariage. Ou un changement de nom de domaine pour prendre en charge le changement de nom ou la réorganisation de l’entreprise d’une organisation. Si l’UPN change, vous devez mettre à jour les URL OneDrive que vous spécifiez ici.
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Informations de configuration pour les Groupes Microsoft 365
 

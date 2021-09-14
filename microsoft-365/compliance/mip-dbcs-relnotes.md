@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication pour la prise en charge des jeux de caractères à double octets.
-ms.openlocfilehash: 9f56441e6ba82b1936033c6f4a810ea2afeab72cc72b6337f992eb0bb52fd231
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: cbcaec29de206344712749fee6bf9f358a04caa6
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53885554"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59202350"
 ---
-# <a name="support-for-double-byte-character-set-release-notes-preview"></a>Prise en charge des notes de publication des jeux de caractères à double octets (préversion)
+# <a name="support-for-double-byte-character-set-release-notes"></a>Prise en charge des notes de publication des jeux de caractères à double octets
 
  Microsoft 365 Information Protection prend désormais en charge les langues de jeu de caractères à double octets pour:
 

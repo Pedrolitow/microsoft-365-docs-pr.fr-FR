@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des stratégies d’application.
-ms.openlocfilehash: 3b5f4bda7855f79e8a0e731cd6c26793ac9c6927
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 4029a7eeac53a23ad4d0b12556d6c9d0a71ba920
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58572262"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59181492"
 ---
 # <a name="create-app-policies"></a>Créer des stratégies d’application
 
@@ -155,15 +155,25 @@ Dans la page **Définir l’état de la stratégie** , sélectionnez l’une des
 - **Actif**: les stratégies sont évaluées et des actions configurées se produisent.
 - **Inactif**: les stratégies ne sont pas évaluées et les actions configurées ne se produisent pas.
 
-<!--
-## Configure a user-based policy
+## <a name="create-a-custom-policy"></a>Créer une stratégie personnalisée
 
-## Create an app metadata-based policy
+La gouvernance des applications fournit quelques modèles de base qui facilitent la création de politiques utiles pour le contrôle des applications dans votre locataire.
 
-Publish metadata-based policies
-
-## Configure access permissions
--->
+1. Dans la page Gouvernance des applications, sélectionnez **l’onglet Stratégie.**
+1. Sélectionnez **Créer**.
+1. Sous **Catégories**, sélectionnez **Personnalisé**. Sous **Modèles,** sélectionnez **Stratégie personnalisée.** Sélectionnez **Suivant**.
+1. Entrez un nom pour votre stratégie, tapez **une description**, puis, dans la liste de listes de gravité de la stratégie, sélectionnez une gravité. Sélectionnez **Suivant**.
+1. Sélectionnez **Non, je souhaite personnaliser la stratégie,** puis sélectionnez **Suivant.**
+1. Choisissez si vous souhaitez que cette stratégie s’applique à toutes les applications de votre client ou choisissez des applications spécifiques. Si vous choisissez des applications **spécifiques pour cette stratégie, sélectionnez** Ajouter des applications et sélectionnez les applications souhaitées dans la liste. Dans le volet Choisir **des** applications, vous pouvez sélectionner plusieurs applications à laquelle cette stratégie sera appliquée, puis sélectionner **Ajouter.** Sélectionnez **Suivant** lorsque vous êtes satisfait de la liste.
+1. Sélectionnez **Définir de nouvelles conditions pour la stratégie,** puis **sélectionnez Modifier les conditions.** Sélectionnez **Ajouter une condition** et choisissez une condition dans la liste, puis sélectionnez la condition à appliquer. Répétez l’ajout de conditions. Sélectionnez **Enregistrer** pour enregistrer la règle, puis lorsque vous avez terminé d’ajouter des règles, sélectionnez **Suivant**.
+1. Par défaut, cette stratégie déclenche des alertes lorsque les conditions sont remplies. Vous pouvez choisir d’agir lorsque la stratégie se déclenche, telle que Désactiver **l’application.** Faites preuve de prudence lors de l’application d’actions, car une stratégie peut affecter les utilisateurs et l’utilisation légitime de l’application. Sélectionnez **Suivant**.
+1. Choisissez l’état de la stratégie :
+    - **Vérification :** l’évaluation de la stratégie est active, mais l’action de stratégie est désactivée.
+    - **Actif** : l’évaluation et l’action de la stratégie sont actives.
+    - **Inactif :** l’évaluation et l’action de la stratégie sont désactivées.
+  
+    Vous devez utiliser le mode Audit pour tester une nouvelle stratégie. Sélectionnez **Suivant**.
+1. Examinez attentivement tous les paramètres de votre stratégie personnalisée. Sélectionnez **Envoyer** lorsque vous êtes satisfait. Vous pouvez également revenir en arrière et modifier les paramètres en sélectionnant **Modifier** sous l’un des paramètres.
 
 ## <a name="test-and-monitor-your-new-app-policy"></a>Tester et surveiller votre nouvelle stratégie d’application
 

@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Priority
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- admindeeplinkMAC
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -19,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Décrit les causes fréquentes des problèmes de synchronisation d’annuaires dans Office 365 et fournit plusieurs méthodes de résolution.
-ms.openlocfilehash: d122fae0da8cf48336cfebf178781d84e349bd16
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 27bbe07be43c7b04b7e74f1cc600df6c1409e372
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58354487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205619"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Résoudre les problèmes de synchronisation d’annuaires pour Microsoft 365
 
@@ -38,7 +40,7 @@ Vous allez également recevoir un message (adressé à votre adresse de messager
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Comment obtenir l’outil Azure Active Directory Connect ?
 
-Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à **Utilisateurs** \> **Utilisateurs actifs**. Cliquez sur le menu **Plus** (points de suspension), puis sélectionnez **Synchronisation d’annuaires**. 
+Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com), accédez à **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Utilisateurs actifs**</a>. Cliquez sur le menu **Plus** (points de suspension), puis sélectionnez **Synchronisation d’annuaires**. 
   
 Suivez les [instructions de l’Assistant](set-up-directory-synchronization.md) pour télécharger Azure AD Connect. 
   
