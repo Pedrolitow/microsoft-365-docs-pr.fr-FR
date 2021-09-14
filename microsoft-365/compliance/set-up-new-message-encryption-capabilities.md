@@ -17,13 +17,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Découvrez les nouvelles fonctionnalités de chiffrement de messages Office 365 qui permettent une communication de messagerie protégée avec des personnes internes ou externes à votre organisation.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d33caff1499bf0792148039cb90d1aa6187247a90f53b7ea22828385d3d4fa3
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: 93fbd85ed75684d55ed45aec6821d86ed5e9c3f7
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53819774"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205859"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages
 
@@ -123,7 +125,7 @@ Pour plus d’informations sur la création de règles de flux de messagerie pou
 
 Pour mettre à jour les règles existantes afin d’utiliser les nouvelles fonctionnalités OME :
 
-1. Dans le Centre d’administration Microsoft 365, accédez à **Centres d’administration > Exchange**.
+1. Dans le [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339), accédez à **Centres d’administration > Exchange**.
 2. Dans le Centre d’administration Exchange, accédez à **Flux de messagerie > Règles**.
 3. Pour chaque règle, dans **Procédez comme suit** :
     - Sélectionnez **Modifier la sécurité des messages**.

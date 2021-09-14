@@ -12,16 +12,17 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: ceea450ca55e46a5a106a5d9fd3ce9420b674d36
-ms.sourcegitcommit: ef9cd046c47b340686a4f7bb123ea3b0a269769a
+ms.openlocfilehash: f3556096b77e775e783cd8d949e1ed5dc2c25024
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58863904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59178147"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -123,7 +124,7 @@ Les paramètres d’étiquetage automatique des applications Office sont disponi
 
 ![Options d’étendue d’étiquette de confidentialité pour les fichiers et les e-mails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-Lorsque vous parcourez l’Assistant, la page **Étiquetage automatique des fichiers et e-mails** s’affiche. Sur cette page, vous pouvez choisir des options parmi une liste de types d’informations sensibles ou de classifieurs entraînables :
+À mesure que vous avancez dans la configuration, vous voyez la page **Étiquetage automatique pour les fichiers et e-mails** dans laquelle vous pouvez choisir parmi une liste de types d’informations sensibles ou de classifieurs pouvant être formés :
 
 ![Conditions de l’étiquetage automatique dans les applications Office.](../media/sensitivity-labels-conditions.png)
 
@@ -247,7 +248,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 ### <a name="creating-an-auto-labeling-policy"></a>Création d’une stratégie d’étiquetage automatique
 
-1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez aux étiquettes de confidentialité :
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a>, accédez aux étiquettes de confidentialité :
 
     - **Solutions** > **Information protection**
 
@@ -260,9 +261,9 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     > [!NOTE]
     > Si vous ne voyez pas l’onglet **Étiquetage automatique**, cette fonctionnalité n’est pas disponible dans votre pays ou région.
 
-3. Sélectionnez **+ créer une stratégie d’étiquetage automatique**. Cette opération démarre l’Assistant Nouvelle stratégie :
+3. Sélectionnez **+ créer une stratégie d’étiquetage automatique**. Cette opération démarre la Nouvelle configuration de stratégie :
 
-    ![Assistant nouvelle stratégie pour l’étiquetage automatique.](../media/auto-labeling-wizard.png)
+    ![Nouvelle configuration de stratégies pour l’étiquetage automatique.](../media/auto-labeling-wizard.png)
 
 4. Pour la page **Choisir les informations auxquelles vous souhaitez appliquer cette étiquette** : sélectionnez un modèle, par exemple, **Financier** or **Confidentialité**. Vous pouvez affiner votre recherche à l’aide du menu déroulant **Afficher les options pour**. Vous pouvez également sélectionner **Stratégie personnalisée** si les modèles ne répondent pas à vos besoins. Sélectionnez **Suivant**.
 
@@ -270,13 +271,20 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, SharePoint et OneDrive. Si vous ne souhaitez pas conserver la valeur par défaut **Tous** pour les emplacements de votre choix, sélectionnez le lien pour choisir des instances spécifiques. Ensuite, sélectionnez **Suivant**.
 
-    ![Choisir les emplacements de page assistant d’attribution automatique d’étiquettes.](../media/locations-auto-labeling-wizard.png)
+    ![Page Choisir des emplacements pour la configuration de l’étiquetage automatique.](../media/locations-auto-labeling-wizard.png)
     
     Pour spécifier des comptes OneDrive individuels, l’URL pour un utilisateur OneDrive est au format suivant. Pour le nom d’utilisateur principal (UPN), tous les caractères spéciaux tels qu’un point, une virgule, un espace et le signe at («@») sont convertis en traits de soulignement (« _ »):`https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
     
-    Par exemple, pour un utilisateur du client Contoso dont l’UPN est «rsimone@contoso.onmicrosoft.com»: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. Toutefois, des nombres ou des GUID peuvent être ajoutés lorsque des conflits sont détectés.
+    Par exemple, pour un utilisateur du client Contoso dont l’UPN est « rsimone@contoso.onmicrosoft.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`.
     
-    Il est toujours préférable de confirmer l’URL d’un utilisateur pour son compte OneDrive, ce que vous pouvez faire avec le Centre d'administration Microsoft 365 ou PowerShell. Pour plus d’informations, voir [Obtenir la liste de toutes les URL OneDrive utilisateur de votre organisation](/onedrive/list-onedrive-urls).
+    Ou, si vous utilisez un nom de domaine personnalisé afin que l’UPN soit « rsimone@contoso.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+    
+    Toutefois, des nombres ou des GUID peuvent être ajoutes à l’URL lorsque des conflits sont détectés, il est donc toujours préférable de confirmer l’URL d’un utilisateur pour son compte OneDrive. Pour confirmer l’URL, vous pouvez utiliser le Centre d'administration Microsoft 365 ou PowerShell. Pour plus d’informations, voir [Obtenir la liste de toutes les URL OneDrive d’utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
+    
+    > [!NOTE]
+    > Lorsque vous spécifiez des comptes OneDrive individuels, sachez qu'à moins que les comptes OneDrive ne soient [pré-approvisionnés](/onedrive/pre-provision-accounts), l'URL n'est pas créée tant qu'un utilisateur n'accède pas à son OneDrive pour la première fois.
+    > 
+    > De plus, l'URL OneDrive [change automatiquement](/onedrive/upn-changes) en cas de modification de l'UPN de l'utilisateur. Par exemple, un événement de changement de nom tel qu’un mariage. Ou un changement de nom de domaine pour prendre en charge le changement de nom ou la réorganisation de l’entreprise d’une organisation. Si l’UPN change, vous devez mettre à jour les URL OneDrive que vous spécifiez ici.
 
 7. Pour la **configurer les règles courantes ou avancées** page : conservez la valeur par défaut de **règles courantes** pour définir des règles qui identifient le contenu à étiqueter dans tous les emplacements sélectionnés. Si vous avez besoin de règles différentes pour chaque emplacement, sélectionnez **Paramètres avancés**. Ensuite, sélectionnez **Suivant**.
 
@@ -315,7 +323,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
     ![Tester l’assistant d’attribution automatique d’étiquette de stratégie.](../media/simulation-mode-auto-labeling-wizard.png)
 
-11. Pour la page **Résumé** : consultez la configuration de votre stratégie d’étiquetage automatique et apportez les modifications nécessaires, puis terminez l’Assistant.
+11. Pour la page **Résumé** : consultez la configuration de votre stratégie d’étiquetage automatique et apportez les modifications nécessaires, puis terminez la configuration.
 
 Désormais, sur la page **Protection des informations**  >  onglet **Etiquetage automatique**, vous pouvez voir votre stratégie d’attribution automatique dans les sections **Simulation** ou **Désactivée**, selon que vous avez choisi de l’exécuter en mode de simulation ou non. Sélectionnez votre stratégie pour afficher les détails de la configuration et de son état (par exemple, **La simulation de stratégie est en cours d’exécution**). Pour les stratégies en mode simulation, sélectionnez l’onglet **éléments correspondants** pour afficher les messages électroniques ou les documents correspondants aux règles que vous avez spécifiées.
 
