@@ -455,6 +455,8 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
+            - name: YouTube (aperçu)
+              href: archive-youtube-data.md
             - name: Réunions Zoom
               href: archive-zoommeetings-data.md
         - name: Connecteurs de données de TeleMessage
@@ -618,6 +620,8 @@
               href: content-search-reference.md
             - name: Requêtes par mots clés et conditions de recherche
               href: keyword-queries-and-search-conditions.md
+            - name: Configurer le filtrage des autorisations de recherche
+              href: permissions-filtering-for-content-search.md
             - name: Afficher un aperçu des résultats de la recherche de découverte électronique
               href: preview-ediscovery-search-results.md
             - name: Afficher les statistiques de mot clé pour les résultats de recherche
@@ -632,8 +636,6 @@
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: Préparer un fichier CSV pour une recherche de liste d’ID
               href: csv-file-for-an-id-list-content-search.md
-            - name: Configurer le filtrage des autorisations pour la recherche de contenu
-              href: permissions-filtering-for-content-search.md
             - name: Résoudre les problèmes eDiscovery courants
               href: ediscovery-troubleshooting-common-issues.md
             - name: Relancer une recherche ayant échoué
@@ -698,16 +700,16 @@
               href: assign-ediscovery-permissions.md
             - name: Requêtes par mots clés et conditions de recherche
               href: keyword-queries-and-search-conditions.md
-            - name: Contenu stocké dans les boîtes aux lettres pour eDiscovery
-              href: what-is-stored-in-exo-mailbox.md
-            - name: Afficher un aperçu des résultats de la recherche de découverte électronique
-              href: preview-ediscovery-search-results.md
             - name: Configurer les limites de conformité
               href: set-up-compliance-boundaries.md
             - name: Configurer le filtrage des autorisations de recherche
               href: permissions-filtering-for-content-search.md
+            - name: Contenu stocké dans les boîtes aux lettres pour eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Différences entre les résultats de recherche estimés et réels
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Afficher un aperçu des résultats de la recherche de découverte électronique
+              href: preview-ediscovery-search-results.md
             - name: Exporter un rapport de recherche
               href: export-a-content-search-report.md
             - name: Utiliser un script pour ajouter des utilisateurs à une conversation eDiscovery
@@ -866,24 +868,24 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Configurer la détection du privilège client-avocat
               href: attorney-privilege-detection.md
-            - name: Jeux de conversation à réviser
-              href: conversation-review-sets.md
-            - name: Prise en charge linguistique CJC
-              href: ediscovery-cjk-support.md
             - name: Attribution d’autorisations de eDiscovery
               href: assign-ediscovery-permissions.md
             - name: Requêtes par mots clés et conditions de recherche
               href: keyword-queries-and-search-conditions.md
-            - name: Configurer le filtrage des autorisations de recherche
-              href: permissions-filtering-for-content-search.md
             - name: Configurer les limites de conformité
               href: set-up-compliance-boundaries.md
+            - name: Configurer le filtrage des autorisations de recherche
+              href: permissions-filtering-for-content-search.md
             - name: Contenu stocké dans les boîtes aux lettres pour eDiscovery
               href: what-is-stored-in-exo-mailbox.md
             - name: Déchiffrement dans les outils eDiscovery
               href: ediscovery-decryption.md
             - name: Résoudre les erreurs de mise en suspens de la découverte électronique
               href: hold-distribution-errors.md
+            - name: Jeux de conversation à réviser
+              href: conversation-review-sets.md
+            - name: Prise en charge linguistique CJC
+              href: ediscovery-cjk-support.md
             - name: Collecter des informations de diagnostic eDiscovery
               href: ediscovery-diagnostic-info.md
             - name: Rechercher des activités eDiscovery dans le journal d’audit

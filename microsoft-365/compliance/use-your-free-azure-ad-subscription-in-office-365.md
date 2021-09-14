@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Découvrir comment accéder à Azure Active Directory, qui est inclus dans l’abonnement payant de votre organisation.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6921e0debd1d60fa3b8dafe71a6be161507edbaa9a235d6ae41fcf1eefd1178c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkMAC
+ms.openlocfilehash: b36630397e931de826a7ca95ac9d3162929be1dc
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53801469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59205715"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Utiliser votre abonnement Azure Active Directory gratuit
 
@@ -50,6 +52,6 @@ Pour accéder au Portail Microsoft Azure (dans l'étape 1 ci-dessous), utilisez 
 
 - Un abonnement Azure Active Directory gratuit n’inclut pas le rapport d’activité des connexions. Pour enregistrer l’activité de connexion (pouvant être utile lors d’une violation de données), vous avez besoin d’un abonnement Azure Active Directory Premium. Pour plus d’informations, consultez [Pendant combien de temps les données sont-elles conservées par Azure AD ?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
-- Vous pouvez également accéder au centre d’administration **Azure Active Directory** à partir du Centre d’administration Microsoft 365. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, cliquez sur **Centres d’administration** \> **Azure Active Directory**.
+- Vous pouvez également accéder au centre d’administration **Azure Active Directory** à partir du Centre d’administration Microsoft 365. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, cliquez sur **Centres d’administration**\>[**Azure Active Directory**](https://go.microsoft.com/fwlink/p/?linkid=2067268).
 
 - Pour savoir comment gérer les utilisateurs et les groupes et exécuter d’autres tâches de gestion des répertoires, consultez l’article [Gérer votre répertoire Azure AD](/azure/active-directory/active-directory-administer).

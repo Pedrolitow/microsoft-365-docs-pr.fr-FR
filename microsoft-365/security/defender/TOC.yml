@@ -130,19 +130,19 @@
               href: ../defender-identity/notifications.md
     - name: Examiner les menaces et y répondre
       items:
-        - name: Incidents
+        - name: Répondre aux incidents
           items:
             - name: Vue d’ensemble
               href: incidents-overview.md
-            - name: Hiérarchisation
+            - name: Hiérarchiser les incidents
               href: incident-queue.md
-            - name: Gestion
+            - name: Gérer les incidents
               href: manage-incidents.md
-            - name: Examiner
+            - name: Examiner des incidents
               href: investigate-incidents.md
-            - name: Alertes d’incident
+            - name: Examiner des alertes
               href: investigate-alerts.md
-            - name: Utilisateurs de l’incident
+            - name: Examiner des utilisateurs
               href: investigate-users.md
             - name: Répondre à votre premier incident
               items:
@@ -164,15 +164,9 @@
                       href: first-incident-path-identity.md
             - name: Playbooks de réponse aux incidents
               href: /security/compass/incident-response-playbooks
-            - name: Notifications par e-mail
+            - name: Recevoir des notifications d’incident par e-mail
               href: get-incident-notifications.md
-        - name: Analyses de menaces
-          items:
-            - name: Suivre et répondre aux menaces émergentes
-              href: threat-analytics.md
-            - name: Comprendre le rapport d’analyste
-              href: threat-analytics-analyst-reports.md
-        - name: Examen et réponse automatisés
+        - name: Gérer des enquêtes et réponses automatisées
           items:
             - name: Vue d’ensemble
               href: m365d-autoir.md
@@ -188,9 +182,9 @@
               href: m365d-autoir-results.md
             - name: Résoudre les faux positifs et les négatifs
               href: m365d-autoir-report-false-positives-negatives.md
-        - name: Repérage avancé
+        - name: Rechercher des menaces avec le repérage avancé
           items:
-            - name: Vue d’ensemble du repérage avancé
+            - name: Vue d’ensemble
               href: advanced-hunting-overview.md
             - name: 'Apprenez, former et obtenir des exemples'
               items:
@@ -212,7 +206,7 @@
               href: advanced-hunting-query-results.md
             - name: Prendre des mesures sur les résultats d’une requête
               href: advanced-hunting-take-action.md
-            - name: Accédez à la recherche
+            - name: Examiner rapidement avec l’option Go hunt
               href: advanced-hunting-go-hunt.md
             - name: Optimiser et gérer les erreurs
               items:
@@ -300,15 +294,21 @@
                   href: custom-detections-overview.md
                 - name: Créer et gérer les règles de détection
                   href: custom-detection-rules.md
-        - name: Spécialistes des menaces Microsoft
+        - name: Suivre et répondre aux menaces émergentes
           items:
-            - name: Vue d’ensemble de Spécialistes des menaces Microsoft
+            - name: Vue d’ensemble des analyses de menaces
+              href: threat-analytics.md
+            - name: Comprendre le rapport d’analyse
+              href: threat-analytics-analyst-reports.md
+        - name: Collaborer avec Spécialistes des menaces Microsoft
+          items:
+            - name: Vue d’ensemble
               href: ../mtp/microsoft-threat-experts.md
             - name: Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
               href: ../mtp/configure-microsoft-threat-experts.md
-        - name: Intégrer Microsoft 365 Defender à vos opérations de sécurité
+        - name: "Intégration de SecOps pour Microsoft\_365\_Defender"
           items:
-            - name: Introduction
+            - name: Vue d’ensemble
               href: integrate-microsoft-365-defender-secops.md
             - name: Étape 1. La préparation des opérations.
               href: integrate-microsoft-365-defender-secops-plan.md
@@ -322,7 +322,7 @@
               href: integrate-microsoft-365-defender-secops-use-cases.md
             - name: Étape 6. Tâches de maintenance SOC
               href: integrate-microsoft-365-defender-secops-tasks.md
-        - name: Utiliser Microsoft Power Automate
+        - name: "Utiliser Power\_Automate pour le tri de menaces"
           href: use-power-automate.md
     - name: Guides pratiques
       items:
@@ -402,7 +402,7 @@
                       href: api-get-incident.md
     - name: Microsoft Defender pour Office 365
       href: ../office-365-security/index.yml
-    - name: Microsoft Defender pour point de terminaison
+    - name: "Microsoft\_Defender pour point de terminaison"
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender pour l’identité
       href: /defender-for-identity

@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: 056152e44dbe2fc11265e64c548b1056fd72e517
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58573822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59162404"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -61,7 +61,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau or
 
 ### <a name="sharing"></a>Partage
 
-**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres de l’organisation > Paramètres > Onglet Sécurité et confidentialité > Partage
+**Navigation :** [Centre d'administration Microsoft 365](https://admin.microsoft.com)  >  **Paramètres**  >  **d’organisation** onglet de sécurité et  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**de** confidentialité</a>  >  **partage**.
 
 ![Capture d’écran des paramètres de sécurité et de confidentialité pour le partage d’invités dans le Centre d’administration Microsoft 365.](../media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -71,7 +71,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau or
 
 ### <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 
-**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Paramètres > Groupes Microsoft 365
+**Navigation : paramètres** [Centre d'administration Microsoft 365](https://admin.microsoft.com)  >  **Paramètres d’organisation**  >  **> Microsoft 365** groupes
 
 ![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365.](../media/office-365-groups-guest-settings.png)
 

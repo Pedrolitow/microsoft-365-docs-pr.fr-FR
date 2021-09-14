@@ -19,13 +19,14 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: f6c720973f91ae9a202b232d821c33c7f487b76a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: ba990ab0478e1dc525101de2d583b800e14f4342
+ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58574447"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59176035"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -96,7 +97,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
 - Lorsque vous effectuez une recherche dans la boîte aux lettres d’un utilisateur, aucun des Groupes Microsoft 365 ou équipe dont l’utilisateur est membre n’est inclus dans la recherche. De même, lorsque vous effectuez une recherche sur une équipe ou un groupe Microsoft 365, seules la boîte aux lettres et le site du groupe que vous spécifiez sont recherchés. Les boîtes aux lettres et les comptes OneDrive entreprises des membres du groupe ne sont pas recherchés, sauf si vous les ajoutez explicitement à la recherche.
 
-- Pour obtenir la liste des membres d'une équipe ou d'un groupe Microsoft 365, vous pouvez consulter les propriétés sur la **page\> Groupes** d'accueil dans le centre d'administration de Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+- Pour obtenir la liste des membres d'une équipe ou d'un groupe Microsoft 365, vous pouvez afficher les propriétés sur la **page d’accueil** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes d'appartenances**</a> dans le centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
