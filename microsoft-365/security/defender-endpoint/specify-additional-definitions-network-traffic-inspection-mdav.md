@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 82568df0a6ad2225fd31b4c0fa4a654710f1e98b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bc73d785e5e0f655bda297775769ff977ed10be1
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208964"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356548"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 
@@ -37,27 +37,25 @@ Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’i
 
 1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
-2. Go to **Windows Components**  >  **Antivirus Microsoft Defender**  >  **Network Inspection System**. 
+2. Go to **Windows Components** \> **Antivirus Microsoft Defender** \> **Network Inspection System**.
 
-3. Sélectionnez **Spécifier des jeux de définitions supplémentaires pour l’inspection du trafic réseau.** Par défaut, cette stratégie est définie sur **Non configuré.** 
+3. Sélectionnez **Spécifier des jeux de définitions supplémentaires pour l’inspection du trafic réseau.** Par défaut, cette stratégie est définie sur **Non configuré.**
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
 5. Sélectionnez **Activé,** puis dans la section **Options,** **sélectionnez Afficher...**.
 
-6. Ajoutez des entrées à la liste, puis sélectionnez **OK**. 
+6. Ajoutez des entrées à la liste, puis sélectionnez **OK**.
 
-   Chaque entrée doit être répertoriée en tant que paire nom-valeur, où le nom est une représentation sous la chaîne d’un GUID de jeu de définitions. Par exemple, le GUID de définition défini pour activer l’intelligence de sécurité de test est défini comme : `{b54b6ac9-a737-498e-9120-6616ad3bf590}` . La valeur n’est pas utilisée, donc nous vous recommandons de la définir sur `0` . 
+   Chaque entrée doit être répertoriée en tant que paire nom-valeur, où le nom est une représentation sous la chaîne d’un GUID de jeu de définitions. Par exemple, le GUID de définition défini pour activer l’intelligence de sécurité de test est défini comme : `{b54b6ac9-a737-498e-9120-6616ad3bf590}` . La valeur n’est pas utilisée, donc nous vous recommandons de la définir sur `0` .
 
 7. Sélectionnez **OK,** puis déployez votre objet de stratégie de groupe mis à jour. Voir [La Console de gestion des stratégies de groupe.](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Utilisez-vous des objets de stratégie de groupe en local ? Découvrez comment ils traduisent dans le cloud. [Analysez vos objets de stratégie](/mem/intune/configuration/group-policy-analytics)de groupe en local à l’aide de l’analyse de stratégie de groupe dans Microsoft Endpoint Manager - Aperçu . 
-  
+> Utilisez-vous des objets de stratégie de groupe en local ? Découvrez comment ils traduisent dans le cloud. [Analysez vos objets de stratégie](/mem/intune/configuration/group-policy-analytics)de groupe en local à l’aide de l’analyse de stratégie de groupe dans Microsoft Endpoint Manager - Aperçu .
+
 ## <a name="related-articles"></a>Articles connexes
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
- 
 - [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
-
 - [Comment créer et déployer des stratégies de logiciel anti-programme malveillant : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

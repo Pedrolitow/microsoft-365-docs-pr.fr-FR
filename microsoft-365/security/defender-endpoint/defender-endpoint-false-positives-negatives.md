@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 708ae221a020b8d6410b35a1db538d5ad50aba48
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68a14ab44011506d89e219f1350dbc86939a6432
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204005"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356376"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -74,16 +74,13 @@ Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exact
 
 4. En fonction de l’état de l’alerte, prenez les étapes décrites dans le tableau suivant :
 
-<br>
-
-****
+<br/>
 
 |État de l’alerte|Procédure|
 |---|---|
 |L’alerte est exacte|Affectez l’alerte, puis [examinez-la plus en](investigate-alerts.md) détail.|
 |L’alerte est un faux positif|<ol><li>[Classifiez l’alerte](#classify-an-alert) comme faux positif.</li><li>[Supprimer l’alerte](#suppress-an-alert).</li><li>[Créez un indicateur](#indicators-for-microsoft-defender-for-endpoint) pour Microsoft Defender pour le point de terminaison.</li><li>[Envoyez un fichier à Microsoft pour analyse.](#part-4-submit-a-file-for-analysis)</li></ol>|
 |L’alerte est précise, mais sans importance (sans importance)|[Classifiez l’alerte](#classify-an-alert) comme un vrai positif, puis [supprimez l’alerte.](#suppress-an-alert)|
-|||
 
 ### <a name="classify-an-alert"></a>Classifier une alerte
 
@@ -176,7 +173,7 @@ Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont
 
 ### <a name="restore-file-from-quarantine"></a>Restaurer un fichier à partir de la mise en quarantaine
 
-Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
+Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
    1. Accéder à **Démarrer** et taper _cmd_.
@@ -189,9 +186,9 @@ Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez d
     ```
 
     > [!IMPORTANT]
-    > Dans certains scénarios, **threatName peut** apparaître comme `EUS:Win32/CustomEnterpriseBlock!cl` . Defender for Endpoint restaure tous les fichiers bloqués personnalisés qui ont été mis en quarantaine sur cet appareil au cours des 30 derniers jours.
+    > Dans certains scénarios, **threatName peut** apparaître comme `EUS:Win32/CustomEnterpriseBlock!cl` . Defender for Endpoint restaure tous les fichiers bloqués personnalisés mis en quarantaine sur cet appareil au cours des 30 derniers jours.
     >
-    > Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
+    > Il est possible qu’un fichier mis en quarantaine comme menace réseau ne soit pas récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 

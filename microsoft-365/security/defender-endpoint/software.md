@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f14da0e999a0ec38c9be7ef36e47b2c786e12e97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85b162cce8655c7942a341326ff08ec112ace100
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208969"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356560"
 ---
 # <a name="software-resource-type"></a>Type de ressource logicielle
 
@@ -39,29 +39,38 @@ ms.locfileid: "59208969"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="methods"></a>Méthodes
 
-Méthode |Type renvoyé |Description
-:---|:---|:---
-[Répertorier les logiciels](get-software.md) | Collection de logiciels | Liste de l’inventaire logiciel de l’organisation.
-[Obtenir un logiciel par ID](get-software-by-id.md) | Logiciels | Obtenez un logiciel spécifique par son ID logiciel.
-[Répertorier la distribution de versions du logiciel](get-software-ver-distribution.md)| Collection de distribution | Liste de la distribution des versions des logiciels par ID logiciel.
-[Répertorier les ordinateurs par logiciel](get-machines-by-software.md)| Collection MachineRef | Récupérez la liste des appareils associés à l’ID logiciel.
-[Répertorier les vulnérabilités par logiciel](get-vuln-by-software.md) | [Collection de vulnérabilités](vulnerability.md) | Récupérez la liste des vulnérabilités associées à l’ID logiciel.
-[Obtenir des Ko manquants](get-missing-kbs-software.md) | Collection KB | Obtenir la liste des ko manquants associés à l’ID logiciel
+<br>
+
+****
+
+|Méthode|Type renvoyé|Description|
+|---|---|---|
+|[Répertorier les logiciels](get-software.md)|Collection de logiciels|Liste de l’inventaire logiciel de l’organisation.|
+|[Obtenir un logiciel par ID](get-software-by-id.md)|Logiciels|Obtenez un logiciel spécifique par son ID logiciel.|
+|[Répertorier la distribution de versions du logiciel](get-software-ver-distribution.md)|Collection de distribution|Liste de la distribution des versions des logiciels par ID logiciel.|
+|[Répertorier les ordinateurs par logiciel](get-machines-by-software.md)|Collection MachineRef|Récupérez la liste des appareils associés à l’ID logiciel.|
+|[Répertorier les vulnérabilités par logiciel](get-vuln-by-software.md)|[Collection de vulnérabilités](vulnerability.md)|Récupérez la liste des vulnérabilités associées à l’ID logiciel.|
+|[Obtenir des Ko manquants](get-missing-kbs-software.md)|Collection KB|Obtenir la liste des ko manquants associés à l’ID logiciel|
+|
 
 ## <a name="properties"></a>Propriétés
 
-Propriété |   Type   |   Description
-:---|:---|:---
-id | Chaîne | ID logiciel
-Nom | String | Nom du logiciel
-Fournisseur | Chaîne | Nom du fournisseur de logiciels
-Faiblesses | Entier long | Nombre de vulnérabilités découvertes
-publicExploit | Boolean | Une exploitation publique existe pour certaines vulnérabilités
-activeAlert | Boolean | L’alerte active est associée à ce logiciel
-exposedMachines | Entier long | Nombre d’appareils exposés
-impactScore | Double | Impact du score d’exposition de ce logiciel
+<br>
+
+****
+
+|Propriété|Type|Description|
+|---|---|---|
+|id|Chaîne|ID logiciel|
+|Nom|String|Nom du logiciel|
+|Fournisseur|Chaîne|Nom du fournisseur de logiciels|
+|Faiblesses|Entier long|Nombre de vulnérabilités découvertes|
+|publicExploit|Boolean|Une exploitation publique existe pour certaines vulnérabilités|
+|activeAlert|Boolean|L’alerte active est associée à ce logiciel|
+|exposedMachines|Entier long|Nombre d’appareils exposés|
+|impactScore|Double|Impact du score d’exposition de ce logiciel|
+|

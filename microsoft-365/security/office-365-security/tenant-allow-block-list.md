@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à gérer les autoriser et les blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aca302aedfaa97b9e2661716d7bc7a6e846fa6fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 511dde8921f9406f753c857e2d813ccd80976c40
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204323"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353633"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -241,7 +241,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
   Par exemple, `t.co` est autorisé ou `.com` `contoso.` non.
 
-- Les sous-chemins ne sont pas implicites.
+- Les sous-chemins ne sont pas implicites pour les allows.
 
   Par exemple, `contoso.com` n’inclut pas `contoso.com/a` .
 

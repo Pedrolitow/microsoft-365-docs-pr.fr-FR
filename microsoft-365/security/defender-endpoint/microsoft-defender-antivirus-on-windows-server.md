@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
-ms.openlocfilehash: 937ca4baefe4456edb97bac7f5cfc56d346c08bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2406dc875fce48e3af21258b5152fef6603cd923
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203939"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355419"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
@@ -128,16 +128,13 @@ Pour obtenir des informations de sécurité contre les programmes malveillants m
 
 Par défaut, Windows Update ne télécharge pas et n’installe pas automatiquement les mises à jour sur Windows Server 2019 ou Windows Server 2016. Vous pouvez modifier cette configuration à l’aide de l’une des méthodes suivantes :
 
-<br>
-
-****
+<br/><br/>
 
 |Méthode|Description|
 |---|---|
 |**Windows jour dans** le Panneau de contrôle|**L’installation des mises à** jour entraîne automatiquement l’installation automatique de toutes les mises à jour, Windows Defender mises à jour d’informations de sécurité. <p> **Téléchargez les** mises à jour, mais laissez-moi choisir de les installer, ce qui permet à Windows Defender de télécharger et d’installer automatiquement les mises à jour security intelligence, mais les autres mises à jour ne sont pas installées automatiquement.|
 |**Stratégie de groupe**|Vous pouvez configurer et gérer Windows Update en utilisant les paramètres disponibles dans la stratégie de groupe, dans le chemin d’accès suivant : **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**|
 |Clé de Registre **AUOptions**|Les deux valeurs suivantes permettent à Windows Update de télécharger et d’installer automatiquement les mises à jour security intelligence : <p> **4**  -  **Installez automatiquement les mises à jour.** Cette valeur entraîne l’installation automatique de toutes les mises à jour, y Windows Defender mises à jour de l’intelligence de sécurité. <p> **3**  -  **Téléchargez les mises à jour, mais laissez-moi choisir s’il faut les installer.** Cette valeur permet Windows Defender télécharger et installer automatiquement les mises à jour security intelligence, mais les autres mises à jour ne sont pas installées automatiquement.|
-|
 
 Pour vous assurer que la protection contre les programmes malveillants est maintenue, nous vous recommandons d’activer les services suivants :
 
@@ -175,7 +172,7 @@ Pour activer la soumission automatique d’échantillons, démarrez une console 
 
 ****
 
-|Setting|Description|
+|Paramètre|Description|
 |---|---|
 |**0**  -  **Toujours invite**|Le service Antivirus Microsoft Defender vous invite à confirmer l’envoi de tous les fichiers requis. Il s’agit du paramètre par défaut pour Antivirus Microsoft Defender, mais il n’est pas recommandé pour les installations sur Windows Server 2016 ou 2019 sans interface graphique graphique.|
 |**1**   -  **Envoyer automatiquement des échantillons sécurisés**|Le service Antivirus Microsoft Defender envoie tous les fichiers marqués comme « sûrs » et demande le reste des fichiers.|

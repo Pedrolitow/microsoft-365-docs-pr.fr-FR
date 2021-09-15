@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a975daa6b73f39722b077cda307aa5ea806b1e1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fd4e983f344d4f6193d43ca3103bd2af3548fb75
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181078"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356788"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 
@@ -32,7 +32,6 @@ ms.locfileid: "59181078"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft est en train d’étendre ses principales fonctionnalités de sécurité de point de terminaison au-delà de Windows et Windows Server vers macOS, Linux, Android et iOS.
@@ -41,17 +40,17 @@ Les organisations sont confrontées à des menaces sur divers appareils et plate
 
 Avec Microsoft Defender pour point de terminaison, les clients bénéficient d’une vue unifiée de toutes les menaces et alertes dans le Centre de sécurité Microsoft Defender, sur les plateformes Windows et non-Windows, ce qui leur permet d’obtenir une vue complète de ce qui se passe dans leur environnement, ce qui leur permet d’évaluer et de répondre plus rapidement aux menaces.
 
-## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender pour point de terminaison macOS 
+## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender pour point de terminaison macOS
 
 Microsoft Defender pour le point de terminaison sur macOS offre des fonctionnalités antivirus, protection évolutive des points de terminaison (PEPT) et gestion des vulnérabilités pour les trois dernières versions publiées de macOS. Les clients peuvent déployer et gérer la solution via Microsoft Endpoint Manager et Jamf. Comme avec les applications Microsoft Office sur macOS, Microsoft Auto Update est utilisé pour gérer les mises à jour de Microsoft Defender pour Endpoint sur Mac. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-mac.md)de Defender for Endpoint sur macOS.
 
->[!NOTE]
->Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison macOS :
->- Protection contre la perte de données
->- Réponse en direct
-
+> [!NOTE]
+> Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison macOS :
+>
+> - Protection contre la perte de données
+> - Réponse en direct
 
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -59,13 +58,18 @@ Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalité
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-linux.md)de Microsoft Defender pour Endpoint sur Linux.
 
->[!NOTE]
->Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison Linux :
->- Protection contre la perte de données
->- Réponse en direct
->- SIEM
+> [!NOTE]
+> Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison Linux :
+>
+> - Protection contre la perte de données
+> - Réponse en direct
 
-
+> [!NOTE]
+> Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison Linux :
+>
+> - Protection contre la perte de données
+> - Réponse en direct
+> - SIEM
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -75,11 +79,11 @@ Pour plus d’informations sur la mise en place, consultez la [documentation](mi
 
 ## <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender pour point de terminaison iOS
 
-Microsoft Defender pour point de terminaison sur iOS est notre solution de défense contre les menaces mobiles pour les appareils exécutant iOS 11.0 et des appareils plus élevés. Les appareils inscrits au sein du client d’un client (inscrits ou non inscrits) sont pris en charge. Les appareils inscrits supervisés et non pris en charge sont pris en charge. Sur iOS, nous proposons une protection web, qui inclut l’anti-hameçonnage, le blocage des connexions non sécurisées et la définition d’indicateurs personnalisés, ainsi que la détection d’attaques par jailbreak. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS) 
+Microsoft Defender pour point de terminaison sur iOS est notre solution de défense contre les menaces mobiles pour les appareils exécutant iOS 11.0 et des appareils plus élevés. Les appareils inscrits au sein du client d’un client (inscrits ou non inscrits) sont pris en charge. Les appareils inscrits supervisés et non pris en charge sont pris en charge. Sur iOS, nous proposons une protection web, qui inclut l’anti-hameçonnage, le blocage des connexions non sécurisées et la définition d’indicateurs personnalisés, ainsi que la détection d’attaques par jailbreak. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-ios.md)de Microsoft Defender for Endpoint sur iOS.
 
-## <a name="licensing-requirements"></a>Conditions d'octroi de licence 
+## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
 Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus. Microsoft Defender for Endpoint est également disponible à l’achat auprès d’un fournisseur de solutions Cloud (CSP).
 

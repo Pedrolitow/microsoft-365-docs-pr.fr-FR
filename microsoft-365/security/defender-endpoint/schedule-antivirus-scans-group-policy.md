@@ -16,12 +16,12 @@ ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 6f6018ec8b514234ab4f98e3d5416b472ff88739
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ca4616cd1c2818e0a1eb0b5c286142e9f65f32b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207372"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353585"
 ---
 # <a name="schedule-antivirus-scans-using-group-policy"></a>Planifier des analyses antivirus à l’aide de stratégie de groupe
 
@@ -33,7 +33,7 @@ Cet article explique comment configurer des analyses programmées à l’aide de
 
 ## <a name="configure-antivirus-scans-using-group-policy"></a>Configurer les analyses antivirus à l’aide de la stratégie de groupe
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, dans l’Éditeur de stratégie de groupe, allez à Modèles d’administration de **configuration** ordinateur  >    >  **Windows composants**  >    >  **Antivirus Microsoft Defender’analyse.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, dans l’Éditeur de stratégie de groupe, allez à Modèles d’administration de **configuration** ordinateur \>  \> **Windows composants** \>  \> **Antivirus Microsoft Defender’analyse.**
 
 2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
@@ -48,7 +48,7 @@ Cet article explique comment configurer des analyses programmées à l’aide de
 
 ## <a name="group-policy-settings-for-scheduling-scans"></a>Paramètres de stratégie de groupe pour la planification des analyses
 
-| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 | Analyser | Spécifier le type d’analyse à utiliser pour une analyse programmée | Analyse rapide |
 | Analyser | Spécifier le jour de la semaine pour exécuter une analyse programmée | Spécifiez le jour (ou jamais) d’exécuter une analyse. | Jamais |
@@ -57,7 +57,7 @@ Cet article explique comment configurer des analyses programmées à l’aide de
 
 ## <a name="group-policy-settings-for-scheduling-scans-for-when-an-endpoint-is-not-in-use"></a>Paramètres de stratégie de groupe pour la planification des analyses lorsqu’un point de terminaison n’est pas utilisé
 
-| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 | Analyser | Démarrer l’analyse programmée uniquement lorsque l’ordinateur est en cours d’utilisation | Les analyses programmées ne s’exécuteront pas, sauf si l’ordinateur est en cours d’utilisation | Activé |
 
@@ -66,21 +66,21 @@ Cet article explique comment configurer des analyses programmées à l’aide de
 
 ## <a name="group-policy-settings-for-scheduling-remediation-required-scans"></a>Paramètres de stratégie de groupe pour la planification des analyses requises pour la correction
 
-| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |---|---|---|---|
 | Correction | Spécifier le jour de la semaine pour exécuter une analyse complète programmée afin de terminer la correction | Spécifiez le jour (ou jamais) d’exécuter une analyse. | Jamais |
 | Correction | Spécifier l’heure de la journée pour exécuter une analyse complète programmée afin de terminer la correction | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 h 00) | 2 h 00 |
 
 ## <a name="group-policy-settings-for-scheduling-daily-scans"></a>Paramètres de stratégie de groupe pour la planification des analyses quotidiennes
 
-| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 | Analyser | Spécifier l’intervalle pour exécuter des analyses rapides par jour | Spécifiez le nombre d’heures devant s’écoulée avant la prochaine analyse rapide. Par exemple, pour exécuter toutes les deux heures, entrez **2**, pour une fois par jour, **entrez 24**. Entrez **0 pour** ne jamais exécuter une analyse rapide quotidienne. | Jamais |
 | Analyser | Spécifier l’heure d’une analyse rapide quotidienne | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 h 00) | 2 h 00 |
 
 ## <a name="group-policy-settings-for-scheduling-scans-after-protection-updates"></a>Paramètres de stratégie de groupe pour la planification des analyses après les mises à jour de la protection
 
-| Emplacement | Setting | Description | Paramètre par défaut (s’il n’est pas configuré)|
+| Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré)|
 |:---|:---|:---|:---|
 | Mises à jour des signatures | Activer l’analyse après la mise à jour des informations de sécurité | Une analyse se produit immédiatement après le téléchargement d’une nouvelle mise à jour de la protection | Activé |
 

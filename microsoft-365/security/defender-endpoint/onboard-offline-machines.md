@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8e509aee364c54d1231c1a58115f65777022afb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c271aeac44e6590a4273fa9650c101a039225003
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183328"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353662"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
@@ -59,20 +59,19 @@ Pour plus d’informations sur les méthodes d’intégration, consultez les art
   - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d’espace de travail Defender for Endpoint & ID
 
 - Appareils hors connexion dans le même réseau d’Azure Log Analytics
-  -  Configurez MMA pour qu’il pointe vers :
-     - Adresse IP Azure Log Analytics en tant que proxy
-     - Clé d’espace de travail Defender for Endpoint & ID
+  - Configurez MMA pour qu’il pointe vers :
+    - Adresse IP Azure Log Analytics en tant que proxy
+    - Clé d’espace de travail Defender for Endpoint & ID
 
 ## <a name="azure-virtual-machines"></a>Machines virtuelles Azure
-- Configurer et activer [l’espace de travail Azure Log Analytics](/azure/azure-monitor/platform/gateway)
 
-    - Configurer Azure Log Analytics Gateway (anciennement appelé passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
-      - [Passerelle Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d’espace de travail Defender for Endpoint & ID
+- Configurer et activer [l’espace de travail Azure Log Analytics](/azure/azure-monitor/platform/gateway)
+  - Configurer Azure Log Analytics Gateway (anciennement appelé passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
+    - [Passerelle Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d’espace de travail Defender for Endpoint & ID
     - Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS
       - Configurer l’adresse IP Azure Log Analytics en tant que proxy
       - ID de clé d’espace de travail Azure Log Analytics & ID
-
     - Azure Defender
       - [Espace de travail \> Analyse des journaux de stratégie de sécurité](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [Détection des \> menaces : autoriser Defender pour le point de terminaison à accéder à mes données](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)

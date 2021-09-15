@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3049d77ef7f934a254da54a63560e33fe2603e3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18f2aa79632378e477ae79f6f621fbea72350bca
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179236"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356673"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -53,7 +53,7 @@ Lorsque vous travaillez avec des fonctionnalités en prévisualisation publique,
 - Sont entièrement pris en charge par Microsoft.
 - Peut être disponible uniquement dans les régions géographiques ou les environnements cloud sélectionnés. Par exemple, la fonctionnalité n’existe peut-être pas dans le cloud du gouvernement.
 - Les fonctionnalités individuelles en prévisualisation peuvent avoir davantage de restrictions d’utilisation et de prise en charge. Si tel est le cas, ces informations sont généralement notées dans la documentation des fonctionnalités.
-- Les versions d’aperçu sont fournies avec un niveau de prise en charge standard et peuvent être utilisées pour les environnements de production. 
+- Les versions d’aperçu sont fournies avec un niveau de prise en charge standard et peuvent être utilisées pour les environnements de production.
 
 ## <a name="turn-on-preview-features"></a>Activer les fonctionnalités d’aperçu
 
@@ -61,9 +61,9 @@ Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire 
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de terminaison  >    >    >  **prévisualisation.**
+1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de terminaison \>  \>  \> **prévisualisation.**
 
 2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
 
 > [!TIP]
-> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)  
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

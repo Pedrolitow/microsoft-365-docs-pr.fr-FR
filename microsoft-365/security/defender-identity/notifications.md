@@ -7,12 +7,12 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: b4c499392bf9c48d704b1a0a960d9d92d097bd05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dfb3c5e1edbbf77a95a1e1d5888b070a12bfd7a7
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207323"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353621"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notifications Defender pour l’identité dans Microsoft 365 Defender
 
@@ -24,7 +24,7 @@ ms.locfileid: "59207323"
 Cet article explique comment travailler avec les notifications [d’identité Microsoft Defender](/defender-for-identity) dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
-> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender pour l’identité. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
+> Dans le cadre de la convergence avec Microsoft 365 Defender, certaines options et détails ont changé par rapport à leur emplacement dans le portail Defender for Identity. Veuillez lire les détails ci-dessous pour découvrir où trouver les fonctionnalités connues et nouvelles.
 
 ## <a name="health-issues-notifications"></a>Notifications de problèmes d’état
 
@@ -36,7 +36,7 @@ Dans Microsoft 365 Defender, vous pouvez ajouter des destinataires pour les noti
 
 1. Sélectionnez **les notifications de problèmes d’état d’santé.**
 
-1. Entrez l’adresse e-mail du destinataire. Sélectionnez **Ajouter**.
+1. Entrez l’adresse e-mail du destinataire. Cliquez sur **Ajouter**.
 
     ![Entrez l’adresse e-mail pour les problèmes d’état.](../../media/defender-identity/health-email-recipient.png)
 
@@ -57,7 +57,7 @@ Dans Microsoft 365 Defender, vous pouvez ajouter des destinataires pour les noti
 
 1. Sélectionnez **les notifications d’alerte.**
 
-1. Entrez l’adresse e-mail du destinataire. Sélectionnez **Ajouter**.
+1. Entrez l’adresse e-mail du destinataire. Cliquez sur **Ajouter**.
 
     ![Entrez l’adresse e-mail des alertes détectées.](../../media/defender-identity/alert-email-recipient.png)
 
@@ -82,13 +82,13 @@ Defender for Identity peut vous avertir lorsqu’il détecte des activités susp
 1. Entrez les détails suivants :
 
     - **Capteur** : dans la liste de listes, choisissez le capteur qui enverra les alertes.
-    - **Point de terminaison** et **port** du service : entrez l’adresse IP ou le nom de domaine complet (FQDN) du serveur syslog et spécifiez le numéro de port.
+    - **Point de terminaison** et **port** du service : entrez l’adresse IP ou le nom de domaine complet (FQDN) du serveur syslog et spécifiez le numéro de port. Vous ne pouvez configurer qu’un seul point de terminaison Syslog.
     - **Transport** : sélectionnez **le** protocole de transport (TCP ou UDP).
     - **Format** : sélectionnez le format (RFC 3164 ou RFC 5424).
 
 1. Sélectionnez **Envoyer une notification SIEM de test,** puis vérifiez que le message est reçu dans votre solution d’infrastructure Syslog.
 
-1. Sélectionnez **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 1. Une fois que vous avez configuré le **service Syslog,** vous pouvez choisir les types de notifications (alertes ou problèmes d’état) à envoyer à votre serveur Syslog.
 

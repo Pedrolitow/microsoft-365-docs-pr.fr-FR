@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 0833a616f1b6052519e92a5e46c8f36f01c80818
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e4e32864c2541cfc0cf14602ec954d5e643f309
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203861"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357592"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Résoudre les problèmes de règles de réduction de la surface d’attaque
 
@@ -35,21 +35,16 @@ ms.locfileid: "59203861"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
 Lorsque vous utilisez des [règles de réduction de la surface](attack-surface-reduction.md) d’attaque, vous pouvez être face à des problèmes, tels que :
 
 - Une règle bloque un fichier, un processus ou effectue une autre action qu’elle ne devrait pas (faux positif)
-
 - Une règle ne fonctionne pas comme décrit, ou ne bloque pas un fichier ou un processus qu’elle doit (faux négatifs)
 
 La résolution de ces problèmes se fait en quatre étapes :
 
 1. [Confirmer les conditions préalables](#confirm-prerequisites)
-
 2. [Utiliser le mode audit pour tester la règle](#use-audit-mode-to-test-the-rule)
-
 3. [Ajouter des exclusions pour la règle spécifiée](#add-exclusions-for-a-false-positive) (pour les faux positifs)
-
 4. [Envoyer les journaux de support](#collect-diagnostic-data-for-file-submissions)
 
 ## <a name="confirm-prerequisites"></a>Confirmer les conditions préalables
@@ -94,9 +89,9 @@ Si la règle de réduction de la surface d’attaque bloque quelque chose qu’e
 
 Pour ajouter une exclusion, voir [Personnaliser la réduction de la surface d’attaque.](customize-attack-surface-reduction.md)
 
->[!IMPORTANT]
->Vous pouvez spécifier des fichiers et dossiers individuels à exclure, mais vous ne pouvez pas spécifier des règles individuelles.
->Cela signifie que tous les fichiers ou dossiers exclus seront exclus de toutes les règles de la asr.
+> [!IMPORTANT]
+> Vous pouvez spécifier des fichiers et dossiers individuels à exclure, mais vous ne pouvez pas spécifier des règles individuelles.
+> Cela signifie que tous les fichiers ou dossiers exclus seront exclus de toutes les règles de la asr.
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Signaler un faux positif ou un faux négatif
 
@@ -123,7 +118,5 @@ Lorsque vous signalez un problème avec les règles de réduction de la surface 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Règles de réduction de la surface d’attaque](attack-surface-reduction.md)
-
 - [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
-
 - [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)

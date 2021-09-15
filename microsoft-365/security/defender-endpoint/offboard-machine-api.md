@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83e43a36df3d4b4d0efdfd655e929c8aa39aeb74
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b62dbc0881ffe1b7129c053d13ee509796aef5b9
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207459"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357385"
 ---
 # <a name="offboard-machine-api"></a>API d’ordinateur de tableau de bord
 
@@ -32,8 +32,6 @@ ms.locfileid: "59207459"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -47,10 +45,11 @@ Appareil de tableau de bord à partir de Defender pour point de terminaison.
 
 - Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+  [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
->[!Note]
+> [!NOTE]
 > Cette API est prise en charge Windows 10, les versions 1703 et ultérieures, ou Windows Server 2019 et versions ultérieures.
+>
 > Cette API n’est pas prise en charge sur les appareils MacOS ou Linux.
 
 ## <a name="permissions"></a>Autorisations
@@ -58,7 +57,7 @@ Appareil de tableau de bord à partir de Defender pour point de terminaison.
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Defender pour les API de point de terminaison](apis-intro.md)
 
 Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
-:---|:---|:---
+---|---|---
 Application|Machine.Offboard|« Offboard machine »
 Déléguée (compte professionnel ou scolaire)|Machine.Offboard|« Offboard machine »
 
@@ -77,7 +76,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ## <a name="request-headers"></a>En-têtes de demande
 
 Nom|Type|Description
-:---|:---|:---
+---|---|---
 Autorisation|String|Porteur {token}. **Obligatoire**.
 Content-Type|string|application/json. **Obligatoire**.
 
@@ -86,7 +85,7 @@ Content-Type|string|application/json. **Obligatoire**.
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
 Paramètre|Type|Description
-:---|:---|:---
+---|---|---
 Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse

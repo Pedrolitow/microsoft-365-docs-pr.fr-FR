@@ -19,12 +19,12 @@ description: Intégrez le serveur SIEM de votre organisation à Microsoft Defend
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf5206b1b821f876aa810ba2bf280ba2f426544
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3eb38325c9695ae0ed5cfb9389e8972ee599739f
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202721"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356002"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Intégration DE SIEM à Microsoft Defender pour Office 365
 
@@ -55,7 +55,7 @@ Le serveur SIEM ou un autre système similaire sonde la charge de travail **audi
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
-Le tableau suivant récapitule les valeurs **d’AuditLogRecordType** qui sont pertinentes pour Microsoft Defender pour Office 365 événements :
+Le tableau suivant récapitule les valeurs **d’AuditLogRecordType** qui sont pertinentes pour Microsoft Defender pour Office 365 événements :<br/><br/>
 
 | Valeur | Nom du membre | Description |
 |---|---|---|
@@ -63,7 +63,6 @@ Le tableau suivant récapitule les valeurs **d’AuditLogRecordType** qui sont p
 | 41| ThreatIntelligenceUrl | Coffre Lie les événements de remplacement d’heure de bloc et de bloc à partir de Microsoft Defender Office 365. |
 | 47| ThreatIntelligenceAtpContent | Événements de hameçonnage et de programmes malveillants pour les fichiers dans SharePoint Online, OneDrive Entreprise et Microsoft Teams, à partir de Microsoft Defender pour Office 365. |
 | 64| AirInvestigation | Événements d’investigation et de réponse automatisés, tels que les détails de l’enquête et les artefacts pertinents, de Microsoft Defender pour Office 365 Plan 2. |
-|
 
 > [!IMPORTANT]
 > Vous devez avoir le rôle Administrateur général ou Administrateur de la sécurité affecté dans le portail Microsoft 365 Defender pour configurer l’intégration SIEM avec Microsoft Defender pour Office 365. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).

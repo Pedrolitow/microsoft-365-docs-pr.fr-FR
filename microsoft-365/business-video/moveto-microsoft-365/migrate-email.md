@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 entreprise.
-ms.openlocfilehash: cde27ce3ab94b003d9950f1b4bc2af270dea906e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202536"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357193"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer le courrier électronique et le calendrier d’entreprise à partir de Google Workspace
 
@@ -43,14 +43,14 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
 
 1. À l’aide d’un navigateur Chrome, connectez-vous à votre console d’administration Google Workspace [admin.google.com](https://admin.google.com). 
 1. Dans un nouvel onglet ou une nouvelle fenêtre, accédez à la page [Comptes de](https://console.developers.google.com/iam-admin/serviceaccounts) service. 
-1. Sélectionnez **Créer un** projet, nommez le projet et choisissez **Créer.** 
+1. Sélectionnez **Créer un** projet, nommez le projet, puis choisissez **Créer.** 
 1. Sélectionnez **Créer un compte de service,** entrez un nom, choisissez **Créer,** puis **Terminé**. 
 1. Ouvrez le menu **Actions,** **sélectionnez Modifier** et prenez note de l’ID unique. Vous aurez besoin de cet ID plus tard dans le processus. 
 1. Ouvrez la section **Afficher la délégation à l’échelle du** domaine. 
 1. Sélectionnez Activer la délégation à l’échelle du domaine **G Suite,** entrez un nom de produit pour l’écran de consentement, puis sélectionnez **Enregistrer.** 
 
     > [!NOTE]
-> Le nom du produit n’est pas utilisé par le processus de migration, mais est nécessaire pour l’enregistrer dans la boîte de dialogue.     
+    > Le nom du produit n’est pas utilisé par le processus de migration, mais est nécessaire pour l’enregistrer dans la boîte de dialogue.     
 
 1. Ouvrez **de nouveau le** menu Actions et **sélectionnez Créer une clé.** 
 1. Choose **JSON,** then **Create**. 
@@ -64,7 +64,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
 1. Accédez à [la page API.](https://console.developers.google.com/apis/library) 
 1. Dans la barre de recherche, entrez **l’API Gmail.**
 1. Sélectionnez-le, puis choisissez **Activer.**
-1. Répétez ce processus pour l’API Calendrier Google et l’API Contacts. 
+1. Répétez ce processus pour l’API Calendrier Google, l’API Contacts et l’API Contacts. 
 
 ### <a name="grant-access-to-the-service-account"></a>Accorder l’accès au compte de service
 

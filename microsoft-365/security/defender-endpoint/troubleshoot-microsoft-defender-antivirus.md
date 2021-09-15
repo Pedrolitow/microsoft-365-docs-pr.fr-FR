@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 15180a2be197b39da78bf004b761db753cd02c94
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2dda17d55dbe5e86b6d76e3a766a020c6e0bc3aa
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203820"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356524"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.
 
@@ -41,7 +41,7 @@ La liste des tableaux :
 
 > [!TIP]
 > Vous pouvez également consulter le site web de démonstration microsoft Defender pour point de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités suivantes fonctionnent :
-> 
+>
 > - Protection fournie par le cloud
 > - Apprentissage rapide (y compris Bloquer à la première vue)
 > - Blocage d’applications potentiellement indésirables
@@ -53,17 +53,17 @@ Antivirus Microsoft Defender des ID d’événement dans le journal Windows év�
 
 Vous pouvez afficher directement le journal des événements, ou si vous avez un outil tiers de gestion des événements et des informations de sécurité (SIEM), vous pouvez également utiliser des ID d’événement client Antivirus Microsoft Defender pour passer en revue des événements et des [erreurs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) spécifiques à partir de vos points de terminaison.
 
-Le tableau de cette section répertorie les principaux ID d’Antivirus Microsoft Defender et, dans la mesure du possible, fournit des solutions suggérées pour corriger ou résoudre l’erreur. 
+Le tableau de cette section répertorie les principaux ID d’Antivirus Microsoft Defender et, dans la mesure du possible, fournit des solutions suggérées pour corriger ou résoudre l’erreur.
 
 ## <a name="to-view-a-microsoft-defender-antivirus-event"></a>Pour afficher un événement Antivirus Microsoft Defender
 
-1.  Ouvrez **l’Observateur d’événements.**
-2.  Dans l’arborescence de la console, développez **Journaux des applications** et des services, puis **Microsoft,** **puis Windows**, **puis Windows Defender**.
-3.  Double-cliquez sur **Opérationnel**.
-4.  Dans le volet d’informations, affichez la liste des événements individuels pour trouver votre événement.
-5.  Cliquez sur l’événement pour voir des détails spécifiques  sur un événement dans le volet inférieur, sous les **onglets** Général et Détails.
+1. Ouvrez **l’Observateur d’événements.**
+2. Dans l’arborescence de la console, développez **Journaux des applications** et des services, puis **Microsoft,** **puis Windows**, **puis Windows Defender**.
+3. Double-cliquez sur **Opérationnel**.
+4. Dans le volet d’informations, affichez la liste des événements individuels pour trouver votre événement.
+5. Cliquez sur l’événement pour voir des détails spécifiques  sur un événement dans le volet inférieur, sous les **onglets** Général et Détails.
 
-<table> 
+<table>
 <tr>
 <th colspan="2" >ID d’événement : 1000</th>
 </tr>
@@ -359,7 +359,7 @@ Pour plus d'informations, consultez les articles suivants :
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -431,7 +431,7 @@ Antivirus Microsoft Defender a pris des mesures pour protéger cet ordinateur co
 <dt>d’utilisateur &lt; : &gt; </dt>ID du
 <dt>nom de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : Gravité , par exemple 
 <dt> &lt; &gt; :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -483,7 +483,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de l’action sur des 
 <dt>d’utilisateur &lt; : &gt; </dt>ID du
 <dt>nom de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : Gravité , par exemple 
 <dt> &lt; &gt; :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -666,7 +666,7 @@ Pour plus d'informations, consultez les articles suivants :
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -772,7 +772,7 @@ Antivirus Microsoft Defender a détecté un comportement suspect.<br/>Pour plus 
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -847,7 +847,7 @@ Antivirus Microsoft Defender a détecté des programmes malveillants ou d’autr
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -926,7 +926,7 @@ Antivirus Microsoft Defender a pris des mesures pour protéger cet ordinateur co
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -1017,7 +1017,7 @@ Windows Server 2008, Windows Server 2008 R2, Windows Server 2012 et Windows Serv
 Action de l’utilisateur :
 </td>
 <td >
-Aucune action n’est nécessaire. Antivirus Microsoft Defender une menace est supprimée ou mise en quarantaine. 
+Aucune action n’est nécessaire. Antivirus Microsoft Defender une menace est supprimée ou mise en quarantaine.
 </td>
 </tr>
 <tr>
@@ -1048,7 +1048,7 @@ Antivirus Microsoft Defender a rencontré une erreur non critique lors de l’ac
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -1140,7 +1140,7 @@ Antivirus Microsoft Defender a rencontré une erreur critique lors de l’action
 <dt>Nom : &lt; ID &gt; du nom</dt>
 <dt>de la menace : Gravité de &lt; l’ID &gt; </dt>de menace : 
 <dt> &lt; &gt; Gravité, par exemple :<ul>
-<li>Petite</li>
+<li>Faible</li>
 <li>Modéré</li>
 <li>Élevé</li>
 <li>Grave</li>
@@ -1369,11 +1369,11 @@ Rapport d’état du client antivirus.
 <dt>? &lt; Heure de &gt; création de signature</dt>antivirus Heure de création de
 <dt>signature Antispyware : ? &lt; Heure de création de &gt; signature antispyware Heure de</dt>la dernière analyse
 <dt>rapide : ? &lt; Heure de début &gt; de la dernière analyse rapide</dt>Heure de fin de
-<dt>l’analyse rapide : ? &lt; &gt;</dt>Heure de fin de la dernière analyse rapide Dernière source d’analyse rapide : Dernière source d’analyse rapide (0 = l’analyse&#39;pas été exécuté, 1 = initié par l’utilisateur, 2 = initié par le
-<dt> &lt; &gt; système)</dt>Heure de début de la dernière analyse complète :
+<dt>l’analyse rapide : ? &lt; &gt;</dt>Heure de fin de la dernière analyse rapide Dernière source d’analyse rapide : Dernière source d’analyse rapide (0 = analyse non exécuté, 1 = initié par
+<dt> &lt; &gt; l’utilisateur, 2 =</dt>initié par le système) Heure de début de la dernière analyse complète :
 <dt>? &lt; Heure de début &gt; de la dernière analyse complète</dt>Heure de fin de
-<dt>l’analyse complète : ? &lt; &gt;</dt>Dernière heure de fin de l’analyse complète Dernière source d’analyse complète : Dernière source d’analyse complète (0 = l’analyse&#39;pas été exécuté, 1 = initié par l’utilisateur, 2 = initié par le
-<dt> &lt; &gt; système)</dt>État du produit : pour le dépannage interne 
+<dt>l’analyse complète : ? &lt; &gt;</dt>Dernière heure de fin de l’analyse complète Dernière source d’analyse complète : Dernière
+<dt> &lt; source d’analyse complète &gt; (0 = l’analyse n’a</dt>pas été exécuté, 1 = initié par l’utilisateur, 2 = initié par le système) Statut du produit : pour la résolution des problèmes internes 
 <dt>
 </dl>
 </td>
@@ -1466,7 +1466,7 @@ Antivirus Microsoft Defender a rencontré une erreur lors de la tentative de mis
 </dt>
 <dt>Étape de mise à jour &lt; : étape de mise à &gt; jour, par exemple :
 <ul>
-<li>Rechercher</li>
+<li>Recherche</li>
 <li>Télécharger</li>
 <li>Installer</li>
 </ul>
@@ -2016,7 +2016,7 @@ Action de l’utilisateur :
 </td>
 <td >
 Vérifiez vos paramètres de connectivité Internet.
-Le client Antivirus Microsoft Defender rencontré une erreur lors de l’utilisation du service signature dynamique pour télécharger les dernières définitions d’une menace spécifique. Cette erreur est probablement due à un problème de connectivité réseau. 
+Le client Antivirus Microsoft Defender rencontré une erreur lors de l’utilisation du service signature dynamique pour télécharger les dernières définitions d’une menace spécifique. Cette erreur est probablement due à un problème de connectivité réseau.
 </td>
 </tr>
 <tr>
@@ -2197,8 +2197,9 @@ Antivirus Microsoft Defender Real-Time protection des données a rencontré une 
 Action de l’utilisateur :
 </td>
 <td >
-Vous devez redémarrer le système, puis exécuter une analyse complète, car il est possible&#39;le système n’a pas été protégé pendant un certain temps.
-La Antivirus Microsoft Defender client&#39;fonctionnalité de protection en temps réel a rencontré une erreur, car l’un des services n’a pas réussi à démarrer. S’il est suivi d’un ID d’événement 3007, l’échec était temporaire et le client anti-programme malveillant a récupéré après l’échec. 
+Vous devez redémarrer le système, puis exécuter une analyse complète, car il est possible que le système n’a pas été protégé pendant un certain temps.
+La Antivirus Microsoft Defender de protection en temps réel du client a rencontré une erreur, car l’un des services n’a pas réussi à démarrer.
+S’il est suivi d’un ID d’événement 3007, l’échec était temporaire et le client anti-programme malveillant a récupéré après l’échec.
 </td>
 </tr>
 <tr>
@@ -2243,7 +2244,7 @@ Antivirus Microsoft Defender La protection en temps réel a redémarré une fonc
 Action de l’utilisateur :
 </td>
 <td >
-La fonctionnalité de protection en temps réel a redémarré. Si cet événement se produit à nouveau, contactez <a href="https://go.microsoft.com/fwlink/?LinkId=215491">le support technique Microsoft.</a> 
+La fonctionnalité de protection en temps réel a redémarré. Si cet événement se produit à nouveau, contactez <a href="https://go.microsoft.com/fwlink/?LinkId=215491">le support technique Microsoft.</a>
 </td>
 </tr>
 <tr>
@@ -2295,7 +2296,7 @@ Message :
 Description :
 </td>
 <td >
-Antivirus Microsoft Defender’analyse de la protection en temps réel pour les programmes malveillants et d’autres logiciels potentiellement indésirables a été désactivé. 
+Antivirus Microsoft Defender’analyse de la protection en temps réel pour les programmes malveillants et d’autres logiciels potentiellement indésirables a été désactivé.
 </td>
 </tr>
 <tr>
@@ -2502,7 +2503,7 @@ Message :
 Description :
 </td>
 <td >
-Antivirus Microsoft Defender recherche de virus a été activée. 
+Antivirus Microsoft Defender recherche de virus a été activée.
 </td>
 </tr>
 <tr>
@@ -2528,7 +2529,7 @@ Message :
 Description :
 </td>
 <td >
-Antivirus Microsoft Defender recherche de virus est désactivée. 
+Antivirus Microsoft Defender recherche de virus est désactivée.
 </td>
 </tr>
 <tr>
@@ -2598,12 +2599,12 @@ Antivirus Microsoft Defender période de grâce a expiré. La protection contre 
 <a id="error-codes"></a>
 ##Antivirus Microsoft Defender codes d’erreur du client si Antivirus Microsoft Defender des problèmes, il vous donne généralement un code d’erreur pour vous aider à résoudre le problème. Le plus souvent, une erreur signifie qu’il y a eu un problème d’installation d’une mise à jour.
 Cette section fournit les informations suivantes sur les erreurs Antivirus Microsoft Defender client.
--   Le code -   d’erreur La raison possible de l’erreur -   Conseils sur ce qu’il faut faire maintenant
+- Le code - d’erreur La raison possible de l’erreur - Conseils sur ce qu’il faut faire maintenant
 
 Utilisez les informations de ces tableaux pour résoudre les problèmes Antivirus Microsoft Defender codes d’erreur.
 
 
-<table> 
+<table>
 <tr>
 <th colspan="2">Code d’erreur : 0x80508007</th>
 </tr>
@@ -2618,7 +2619,7 @@ Utilisez les informations de ces tableaux pour résoudre les problèmes Antiviru
 Raison possible
 </td>
 <td>
-Cette erreur indique que vous n’avez peut-être plus de mémoire. 
+Cette erreur indique que vous n’avez peut-être plus de mémoire.
 </td>
 </tr>
 <tr>
@@ -2627,7 +2628,7 @@ Cette erreur indique que vous n’avez peut-être plus de mémoire.
 <ol>
 <li>Vérifiez la mémoire disponible sur votre appareil.</li>
 <li>Fermez les applications inutilisées en cours d’exécution pour libérer de la mémoire sur votre appareil.</li>
-<li>Redémarrez l’appareil et ré-exécutez l’analyse. 
+<li>Redémarrez l’appareil et ré-exécutez l’analyse.
 </li>
 </ol>
 </td>
@@ -2662,7 +2663,7 @@ Remarque : la taille du fichier de définitions téléchargé à partir du site 
 <td><b>ERR_MP_BAD_CONFIGURATION </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’il peut y avoir une erreur de configuration du moteur ; Généralement, cela est lié aux données d’entrée qui ne permettent pas au moteur de fonctionner correctement. 
+Cette erreur indique qu’il peut y avoir une erreur de configuration du moteur ; Généralement, cela est lié aux données d’entrée qui ne permettent pas au moteur de fonctionner correctement.
 </td>
 </tr>
 <tr>
@@ -2672,7 +2673,7 @@ Cette erreur indique qu’il peut y avoir une erreur de configuration du moteur 
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’une Antivirus Microsoft Defender mise en quarantaine d’une menace a échoué. 
+Cette erreur indique qu’une Antivirus Microsoft Defender mise en quarantaine d’une menace a échoué.
 </td>
 </tr>
 <tr>
@@ -2682,7 +2683,7 @@ Cette erreur indique qu’une Antivirus Microsoft Defender mise en quarantaine d
 <td><b>ERR_MP_REBOOT_REQUIRED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’un redémarrage est nécessaire pour terminer la suppression des menaces. 
+Cette erreur indique qu’un redémarrage est nécessaire pour terminer la suppression des menaces.
 </td>
 </tr>
 <tr>
@@ -2693,11 +2694,11 @@ Cette erreur indique qu’un redémarrage est nécessaire pour terminer la suppr
 <td><b>ERR_MP_THREAT_NOT_FOUND </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique que la menace n’est peut-être plus présente sur le média ou que des programmes malveillants peuvent vous empêcher d’analyser votre appareil. 
+Cette erreur indique que la menace n’est peut-être plus présente sur le média ou que des programmes malveillants peuvent vous empêcher d’analyser votre appareil.
 </tr><tr><td>Résolution
 </td>
 <td>
-Exécutez le <a href="https://www.microsoft.com/security/scanner/default.aspx">Scanner de sécurité Microsoft</a> puis mettez à jour votre logiciel de sécurité et essayez à nouveau. 
+Exécutez le <a href="https://www.microsoft.com/security/scanner/default.aspx">Scanner de sécurité Microsoft</a> puis mettez à jour votre logiciel de sécurité et essayez à nouveau.
 </td>
 </tr>
 <tr>
@@ -2707,11 +2708,11 @@ Exécutez le <a href="https://www.microsoft.com/security/scanner/default.aspx">S
 <td><b>ERR_MP_FULL_SCAN_REQUIRED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’une analyse complète du système peut être nécessaire. 
+Cette erreur indique qu’une analyse complète du système peut être nécessaire.
 </td></tr>
 <tr>
 <td>Résolution</td><td>
-Exécutez une analyse système complète. 
+Exécutez une analyse système complète.
 </td>
 </tr>
 <tr>
@@ -2721,7 +2722,7 @@ Exécutez une analyse système complète.
 <td><b>ERR_MP_MANUAL_STEPS_REQUIRED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique que des étapes manuelles sont nécessaires pour terminer la suppression des menaces. 
+Cette erreur indique que des étapes manuelles sont nécessaires pour terminer la suppression des menaces.
 </td></tr><tr><td>Résolution</td><td>
 Suivez les étapes de correction manuelle décrites dans le Programme d’aide à la protection microsoft contre les programmes <a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">malveillants.</a> Vous pouvez trouver un lien spécifique aux menaces dans l’historique des événements.<br/></td>
 </tr>
@@ -2732,9 +2733,9 @@ Suivez les étapes de correction manuelle décrites dans le Programme d’aide �
 <td><b>ERR_MP_REMOVE_NOT_SUPPORTED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique que la suppression à l’intérieur du type de conteneur peut ne pas être prise en charge. 
+Cette erreur indique que la suppression à l’intérieur du type de conteneur peut ne pas être prise en charge.
 </td></tr><tr><td>Résolution</td><td>
-Antivirus Microsoft Defender’est pas en mesure de corriger les menaces détectées à l’intérieur de l’archive. Envisagez de supprimer manuellement les ressources détectées. 
+Antivirus Microsoft Defender’est pas en mesure de corriger les menaces détectées à l’intérieur de l’archive. Envisagez de supprimer manuellement les ressources détectées.
 </td>
 </tr>
 <tr>
@@ -2744,9 +2745,9 @@ Antivirus Microsoft Defender’est pas en mesure de corriger les menaces détect
 <td><b>ERR_MP_REMOVE_LOW_MEDIUM_DISABLED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique que la suppression des menaces faibles et moyennes peut être désactivée. 
+Cette erreur indique que la suppression des menaces faibles et moyennes peut être désactivée.
 </td></tr><tr><td>Résolution</td><td>
-Vérifiez les menaces détectées et résolvez-les selon les besoins. 
+Vérifiez les menaces détectées et résolvez-les selon les besoins.
 </td>
 </tr>
 <tr>
@@ -2756,9 +2757,9 @@ Vérifiez les menaces détectées et résolvez-les selon les besoins.
 <td><b>ERROR_MP_RESCAN_REQUIRED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’une nouvelle recherche de la menace est requise. 
+Cette erreur indique qu’une nouvelle recherche de la menace est requise.
 </td></tr><tr><td>Résolution</td><td>
-Exécutez une analyse système complète. 
+Exécutez une analyse système complète.
 </td>
 </tr>
 <tr>
@@ -2768,7 +2769,7 @@ Exécutez une analyse système complète.
 <td><b>ERROR_MP_CALLISTO_REQUIRED </b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique qu’une analyse hors connexion est requise. 
+Cette erreur indique qu’une analyse hors connexion est requise.
 </td></tr><tr><td>Résolution</td><td>
 Exécutez le Antivirus Microsoft Defender. Vous pouvez en savoir plus sur la façon de le faire dans <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">l’article Antivirus Microsoft Defender hors connexion.</a>
 </td>
@@ -2780,7 +2781,7 @@ Exécutez le Antivirus Microsoft Defender. Vous pouvez en savoir plus sur la fa�
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Raison possible</td>
 <td>
-Cette erreur indique que Antivirus Microsoft Defender ne prend pas en charge la version actuelle de la plateforme et nécessite une nouvelle version de la plateforme. 
+Cette erreur indique que Antivirus Microsoft Defender ne prend pas en charge la version actuelle de la plateforme et nécessite une nouvelle version de la plateforme.
 </td></tr><tr><td>Résolution</td><td>
 Vous ne pouvez utiliser les Antivirus Microsoft Defender que dans Windows 10. Pour Windows 8, Windows 7 et Windows Vista, vous pouvez utiliser <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
@@ -2791,7 +2792,7 @@ Vous ne pouvez utiliser les Antivirus Microsoft Defender que dans Windows 10. Po
 Si vous voyez ces erreurs, vous pouvez essayer de mettre à jour les [définitions](manage-updates-baselines-microsoft-defender-antivirus.md) et forcer une nouvellecane directement sur le point de terminaison.
 
 
-<table> 
+<table>
 <tr>
 <th colspan="3">Codes d’erreur internes</th>
 </tr>
@@ -3097,7 +3098,7 @@ Il s’agit d’une erreur interne. La cause n’est pas clairement définie.
 <b>ERR_MP_REMOVE_FAILED</b>
 </td>
 <td>
-Il s’agit d’une erreur interne. Elle peut être déclenchée lorsque la suppression des programmes malveillants ne réussit pas. 
+Il s’agit d’une erreur interne. Elle peut être déclenchée lorsque la suppression des programmes malveillants ne réussit pas.
 </td>
 </tr>
 <tr>
@@ -3108,12 +3109,12 @@ Il s’agit d’une erreur interne. Elle peut être déclenchée lorsque la supp
 <b>ERR_MP_SCAN_ABORTED </b>
 </td>
 <td>
-Il s’agit d’une erreur interne. Il se peut qu’il se soit déclenché lorsqu’une analyse échoue. 
+Il s’agit d’une erreur interne. Il se peut qu’il se soit déclenché lorsqu’une analyse échoue.
 </td>
 </tr>
 </table>
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Rapport sur la protection Antivirus Microsoft Defender données](report-monitor-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

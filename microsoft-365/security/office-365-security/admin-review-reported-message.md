@@ -10,15 +10,15 @@ ms.topic: how-to
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment passer en revue les messages signalés et comment envoyer des commentaires à vos utilisateurs.
+description: Découvrez comment passer en revue les messages signalés et envoyer des commentaires à vos utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb023d68e81c5592078bdd89e4826537790e7d53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef08b07226d8ce038547b972163d87a557099478
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177403"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357561"
 ---
 # <a name="admin-review-for-reported-messages"></a>Révision par l’administrateur des messages signalés
 

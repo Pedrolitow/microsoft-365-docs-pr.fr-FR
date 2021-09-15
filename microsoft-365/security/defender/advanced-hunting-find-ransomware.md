@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e3c944ea79adc22f587e2a0e20e3d783f845d15f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf5f0a63645fccb9f3895796c8ec514efe091a94
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177507"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357027"
 ---
 # <a name="hunt-for-ransomware"></a>Repérer des menaces de ransomware
 
@@ -245,10 +245,54 @@ Par défaut, le résultat de la requête répertorie uniquement les appareils qu
 | where UniqueEvidenceCount > 2
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser les résultats d’une requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
+
+## <a name="additional-ransomware-resources"></a>Ressources supplémentaires sur les ransomware
+
+Informations clés de Microsoft :
+
+- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [Ransomware géré par l’humain](/security/compass/human-operated-ransomware)
+- [Se protéger rapidement contre les ransomware et les attaques](/security/compass/protect-against-ransomware)
+- [Le dernier rapport Renseignement de sécurité Microsoft de données](https://www.microsoft.com/securityinsights/) (voir les pages 22 à 24)
+- **Ransomware : rapport sur les menaces** courantes et les menaces dans le nœud **d’analyse** des menaces du portail Microsoft 365 Defender (voir ces exigences en matière de [licences)](/microsoft-365/security/defender/prerequisites#licensing-requirements)
+
+Microsoft 365 :
+
+- [Récupérer après une attaque par rançongiciel](/microsoft-365/security/office-365-security/recover-from-ransomware)
+- [Protection contre les ransomware et programmes malveillants](/compliance/assurance/assurance-malware-and-ransomware-protection)
+- [Protéger votre PC Windows 10 contre les ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Gérer les rançongiciels dans SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+
+Microsoft Azure :
+
+- [Défenses Azure pour les attaques par ransomware](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Plan de sauvegarde et de restauration pour se protéger contre les ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Protéger contre les ransomware avec Microsoft Azure sauvegarde](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
+- [Récupération d’une compromission d’identité secrète](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
+- [Détection de fusion pour ransomware dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+
+Microsoft Cloud App Security :
+
+-  [Créer des stratégies de détection des anomalies dans Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+
+Billets de blog de l’équipe de sécurité Microsoft :
+
+- [3 étapes pour empêcher et récupérer à partir d’un ransomware (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+
+  Consultez la section **Ransomware.**
+
+- [Attaques par ransomware gérées par l’homme : un sinistre qui peut être évité (mars 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+
+  Inclut des analyses de chaîne d’attaques des attaques réelles.
+
+- [Réponse ransomware : payer ou ne pas payer ? (Décembre 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [NorskQue répond aux attaques par ransomware avec transparence (décembre 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)

@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 3af483db6b2cc9801a56d96147a0a4aed90e33ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f02873148fbd6415c987aad8e5161cff34c2004b
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203976"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355824"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Mise en place de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -55,7 +55,7 @@ La carte fournit des informations en un coup d’œil, ainsi qu’un lien ou un 
 
 ### <a name="navigation-bar-makes-it-easy-to-find-alerts-the-action-center-and-more"></a>La barre de navigation facilite la recherche d’alertes, du centre de l’action, et bien plus encore
 
-La barre de navigation sur le côté gauche de l’écran vous permet de vous déplacer facilement entre les incidents, les alertes, le centre de mise en œuvre, les rapports et les paramètres. Le tableau suivant décrit la barre de navigation.
+La barre de navigation sur le côté gauche de l’écran vous permet de vous déplacer facilement entre les incidents, les alertes, le centre de mise en œuvre, les rapports et les paramètres. Le tableau suivant décrit la barre de navigation.<br/><br/>
 
 | Élément de barre de navigation | Description |
 |:---|:---|
@@ -167,7 +167,7 @@ Faites défiler vers le bas pour voir tous les affichages dans le rapport de pro
 > [!TIP]
 > Pour en savoir plus, consultez [La protection Web.](web-protection-overview.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Gérer Microsoft Defender pour Endpoint Plan 1 (prévisualisation)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md)

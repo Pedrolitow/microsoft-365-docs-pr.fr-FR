@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment acheter Windows 365 Business pour votre organisation et aider les utilisateurs à commencer à utiliser leurs PC Cloud.
-ms.openlocfilehash: 4c53aba7ae2d4bd47b5df2f32c50dcf6bb448201
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 39d43d81d292c343591e5f5e1192d8de198a7b7c
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176244"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355659"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Démarrage avec les PC Windows 365 Business et Cloud
 
@@ -39,7 +39,7 @@ Cet article est réservé aux personnes qui prévoient d’acheter et de configu
 > Avant de commencer, assurez-vous que les paramètres de votre appareil Azure AD pour les [utilisateurs](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) peuvent joindre des appareils à Azure **AD.**
 
    ![Les utilisateurs peuvent joindre des appareils aux paramètres Azure AD.](../../media/deschutes/azure-device-settings.png)
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 Il n’existe aucune condition préalable de licence pour configurer Windows 365 Business.
 
 Pour une expérience d’intégration optimisée, consultez le [guide](troubleshoot-windows-365-business.md) de dépannage de l’installation pour vous assurer que vos préférences d’environnement sont optimisées pour Windows 365 Entreprise. 
@@ -76,7 +76,7 @@ Si vous avez déjà un client Microsoft 365 et que vous êtes administrateur glo
 
 1. Dans le Centre d’administration Microsoft, go to the **Billing > Purchase services** page.
 2. Dans la page **Acheter des services,** recherchez **Windows 365 Business**. Lorsque vous le trouvez, sélectionnez **Détails.**
-3. Dans la page **Windows 365** Entreprise, dans la section **Options processeur/Ram/Stockage,** utilisez le **menu** Sélectionner un abonnement pour sélectionner un abonnement pour vos utilisateurs en fonction de leurs besoins en processeur, en RAM et en stockage. Consultez Windows options de resserrement [365 Business](windows-365-business-sizing.md) pour obtenir des instructions sur la sélection de l’abonnement qui répond le mieux aux besoins de vos utilisateurs.
+3. Dans la page **Windows 365** Entreprise, dans la section **Processor/Ram/Stockage Options,** utilisez le **menu** Sélectionner un abonnement pour sélectionner un abonnement pour vos utilisateurs en fonction de leurs besoins en processeur, en RAM et en stockage. Consultez Windows options de resserrement [365 Business](windows-365-business-sizing.md) pour obtenir des instructions sur la sélection de l’abonnement qui répond le mieux aux besoins de vos utilisateurs.
 4. Dans la page **d’achat,** entrez le nombre d’abonnements que vous souhaitez acheter, ainsi que vos informations de paiement. Ensuite, **sélectionnez Placer une commande.**
 5. Vous **êtes prêt !** s’affiche pour confirmer votre achat.
 
@@ -104,10 +104,10 @@ Sur leur page d Windows 365, les utilisateurs voient les PC cloud accessibles da
 
 ![Windows famille 365.](../../media/deschutes/cloudpc-home.png)
 
-Les utilisateurs peuvent **sélectionner Ouvrir dans le navigateur** pour ouvrir leur PC cloud.
+Les utilisateurs **peuvent sélectionner Ouvrir dans le navigateur** pour ouvrir leur PC cloud.
 
 > [!NOTE]  
-> Les appareils mobiles ne sont actuellement pas pris en charge.
+> Les appareils mobiles ne sont actuellement pas pris en charge pour l’utilisation d’un navigateur pour ouvrir le Cloud PC. L’application Bureau à distance est prise en charge.
 
 #### <a name="user-actions"></a>Actions de l’utilisateur
 
@@ -136,7 +136,7 @@ Sur la page d Windows 365, les utilisateurs peuvent effectuer des actions sur le
     |Aucun problème détecté |Aucune des vérifications n’a détecté un problème avec le PC cloud. |
     |Problèmes résolus |Un problème a été détecté et résolu. |
     |Ne peut pas se connecter à Cloud PC. We’re working to fix it, try again later. |Un service Microsoft requis pour la connectivité n’est pas disponible. Essayez de vous connecter à nouveau ultérieurement. |
-    |Nous n’avons pas pu résoudre les problèmes avec votre PC Cloud. Contactez votre administrateur. |Un problème a été détecté, mais il n’a pas pu être résolu. Cela peut être dû à une mise à jour Windows jour ou à un autre problème. Si cette erreur persiste pendant une période prolongée, il se peut que le PC Cloud devra être réinitialisé. |
+    |Nous n’avons pas pu résoudre les problèmes avec votre PC Cloud. Contactez votre administrateur. |Un problème a été détecté, mais il n’a pas pu être résolu. Cela peut être dû à une mise à jour Windows jour ou à un autre problème. Si cette erreur persiste pendant une période prolongée, il se peut que le PC cloud devra être réinitialisé. |
 
 ### <a name="remote-desktop"></a>Bureau à distance
 
@@ -172,7 +172,7 @@ L’envoi de messages électroniques sortants directement sur le port 25 à part
 
 ## <a name="how-to-get-help"></a>Comment obtenir de l’aide
 
-Si vous avez besoin d’aide lors de la configuration Windows 365 Entreprise dans le Centre d'administration Microsoft 365, consultez Obtenir de l’aide [ou du support.](/microsoft-365/business-video/get-help-support)
+Si vous avez besoin d’aide lors de la configuration de Windows 365 Business dans le Centre d'administration Microsoft 365, consultez Obtenir de l’aide [ou du support.](/microsoft-365/business-video/get-help-support)
 
 ## <a name="related-content"></a>Contenu associé
 

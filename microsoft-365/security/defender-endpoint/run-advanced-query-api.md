@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54883ab437dcf01b042b5458bdc6312eaf24d179
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f85c4cd8cf5d657e4043aae80da8b3dae989a29d
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207412"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356621"
 ---
 # <a name="advanced-hunting-api"></a>API de recherche avancée
 
@@ -49,7 +49,7 @@ ms.locfileid: "59207412"
 
 4. La durée d’exécution maximale d’une seule demande est de 10 minutes.
 
-5. La réponse 429 représente l’atteinte de la limite de quota soit par nombre de demandes, soit par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
+5. La réponse 429 représente l’atteinte de la limite de quota soit par nombre de demandes, soit par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte.
 
 6. La taille maximale des résultats d’une requête ne peut pas dépasser 124 Mo. Si elle est dépassée, http 400 demande non autorisée avec le message « L’exécution de la requête a dépassé la taille de résultat autorisée. Optimisez votre requête en limitant la quantité de résultats et essayez à nouveau ».
 
@@ -105,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ```json
 {
-    "Query":"DeviceProcessEvents  
+    "Query":"DeviceProcessEvents
 |where InitiatingProcessFileName =~ 'powershell.exe'
 |where ProcessCommandLine contains 'appdata'
 |project Timestamp, FileName, InitiatingProcessFileName, DeviceId
@@ -157,7 +157,7 @@ Voici un exemple de réponse.
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Présentation des API Microsoft Defender pour les points de terminaison](apis-intro.md)
 - [Recherche avancée à partir du portail](advanced-hunting-query-language.md)

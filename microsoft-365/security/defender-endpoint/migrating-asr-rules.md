@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: b1aae75f411af4f9d745c67831222c5ceee6bb0d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c2ffdde4ff259f2a2ef098a6d715cbcd785dfe4
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181097"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357630"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles asr
 
@@ -28,7 +28,7 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 
 ## <a name="scenarios-when-migrating-from-a-third-party-hips-product-to-asr-rules"></a>Scénarios lors de la migration d’un produit HIPS tiers vers des règles asr
 
-### <a name="block-creation-of-specific-files-and-registry-keys"></a>Bloquer la création de fichiers et de clés de Registre spécifiques
+### <a name="block-creation-of-specific-files"></a>Bloquer la création de fichiers spécifiques
 
 - **S’applique** à - Tous les processus
 - **Opération**: création de fichier
@@ -36,7 +36,7 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Règles de réduction de la surface d’attaque**: les règles de réduction de la surface d’attaque bloquent les techniques d’attaque et non les indicateurs de compromis (IOC). Le blocage d’une extension de fichier spécifique n’est pas toujours utile, car cela n’empêche pas un appareil d’être compromis. Elle ne déjoue que partiellement une attaque jusqu’à ce que les attaquants créent un nouveau type d’extension pour la charge utile.
 - **Autres fonctionnalités recommandées**: l’antivirus Microsoft Defender activé, ainsi que l’analyse du comportement et de la protection cloud sont vivement recommandés. Nous vous recommandons d’utiliser d’autres préventions, telles que la règle asr « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, la plupart de ces clés de Registre sont surveillées par Microsoft Defender pour le point de terminaison, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. Les clés de Registre utilisées nécessitent un minimum de privilèges d’administrateur local ou de programme d’installation approuvé qui peuvent être modifiés. L’utilisation d’un environnement verrouillé, avec des comptes ou des droits d’administration minimaux, est recommandée. D’autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
 
-### <a name="block-creation-of-specific-files-and-registry-keys"></a>Bloquer la création de fichiers et de clés de Registre spécifiques
+### <a name="block-creation-of-specific-registry-keys"></a>Bloquer la création de clés de Registre spécifiques
 
 - **S’applique** à - Tous les processus
 - **Processus**- N/A
@@ -72,17 +72,16 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - Règles de réduction de la surface d’attaque : les règles de réduction de la surface d’attaque ont une règle intégrée pour empêcher les applications de communication Office (Outlook, Skype et Teams) de lancer des processus enfants : « Empêcher l’application de communication Office de créer des processus enfants », GUID « 26190899-1602-49e8-8b27-eb1d0a1ce869 ».
 - **Autres fonctionnalités recommandées**: nous vous recommandons d’activer le mode de langue contrainte PowerShell pour réduire la surface d’attaque à partir de PowerShell.
 
+### <a name="block-office-apps-from-launching-child-processes"></a>Empêcher Office applications de lancer des processus enfants
 
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Empêcher Office applications de lancer des processus enfants et de créer du contenu exécutable
-
-- **S’applique** à - Office  
+- **S’applique** à - Office
 - **Processus**: winword.exe, powerpnt.exe, excel.exe
 - **Operation**- Process Execution
 - Exemples de **fichiers/dossiers, clés/valeurs de Registre, processus, services**- powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
 - Règles de réduction de la **surface** d’attaque : les règles de réduction de la surface d’attaque ont une règle intégrée pour empêcher les applications Office de lancer des processus enfants : « Empêcher toutes les applications Office de créer des processus enfants », GUID « d4f940ab-401b-4efc-aadc-ad5f3c50688a ».
 - **Autres fonctionnalités recommandées**: N/A
-    
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Empêcher Office applications de lancer des processus enfants et de créer du contenu exécutable
+
+### <a name="block-office-apps-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
 
 - **S’applique** à - Office
 - **Processus**: winword.exe, powerpnt.exe, excel.exe
@@ -108,16 +107,14 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Règles de réduction de la surface d’attaque**: les règles de réduction de la surface d’attaque empêchent Adobe Reader de lancer des processus enfants. Le nom de la règle est « Empêcher Adobe Reader de créer des processus enfants », GUID « 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c ».
 - **Autres fonctionnalités recommandées**: N/A
 
-
 ### <a name="block-download-or-creation-of-executable-content"></a>Bloquer le téléchargement ou la création de contenu exécutable
 
-- **S’applique** à - CertUtil : bloquer le téléchargement ou la création d’exécutables 
+- **S’applique** à - CertUtil : bloquer le téléchargement ou la création d’exécutables
 - **Processus**- certutil.exe
 - **Opération**: création de fichier
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services**- *.exe
 - **Règles de réduction de la surface** d’attaque : les règles de réduction de la surface d’attaque ne sont pas pris en charge dans ces scénarios, car elles font partie de Antivirus Microsoft Defender protection.
 - **Autres fonctionnalités recommandées**: Microsoft Defender AV empêche CertUtil de créer ou de télécharger du contenu exécutable.
-
 
 ### <a name="block-processes-from-stopping-critical-system-components"></a>Empêcher les processus d’arrêter les composants système critiques
 
@@ -136,7 +133,7 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services**- tor.exe, bittorrent.exe, cmd.exe, powershell.exe, et bien plus encore
 - **Règles de réduction de la surface d’attaque**: globalement, les règles de réduction de la surface d’attaque ne sont pas conçues pour fonctionner en tant que gestionnaire d’applications.
 - **Autres fonctionnalités recommandées**: pour empêcher les utilisateurs de lancer des processus ou des programmes spécifiques, il est recommandé d’utiliser Windows Defender Contrôle d’application. Les indicateurs Microsoft Defender for Endpoint File et Cert peuvent être utilisés dans un scénario de réponse aux incidents (ne doivent pas être considérés comme un mécanisme de contrôle d’application).
-    
+
 ### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquer les modifications non autorisées apportées Antivirus Microsoft Defender configurations
 
 - **S’applique** à - Tous les processus

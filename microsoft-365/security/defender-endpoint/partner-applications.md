@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb3cfba661025787c9cbbbcc97dc524c7a62d355
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4d8643a1c7e39df1d2f2250e7a61caa0535cbae
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207452"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353741"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
@@ -31,7 +31,6 @@ ms.locfileid: "59207452"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -117,7 +116,7 @@ Logo|Nom du partenaire|Description
 
 ## <a name="siem-integration"></a>Intégration SIEM
 
-Defender pour le point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes.  Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
+Defender pour le point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes. Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
 
 ## <a name="ticketing-and-it-service-management"></a>Gestion des tickets et du service it
 
@@ -139,7 +138,7 @@ Les alertes externes peuvent être poussées vers Defender pour le point de term
 
 Vous pouvez utiliser l’intelligence contre les menaces des fournisseurs et des agrégateurs pour maintenir et utiliser des indicateurs de compromission (IOCs).
 
-Defender pour le point de terminaison vous permet d’intégrer ces solutions et d’agir sur les IoCs en corrélant la télémétrie enrichie pour créer des alertes.  Vous pouvez également utiliser des fonctionnalités de prévention et de réponse automatisée pour bloquer l’exécution et prendre des mesures correctives en cas de correspondance.
+Defender pour le point de terminaison vous permet d’intégrer ces solutions et d’agir sur les IoCs en corrélant la télémétrie enrichie pour créer des alertes. Vous pouvez également utiliser des fonctionnalités de prévention et de réponse automatisée pour bloquer l’exécution et prendre des mesures correctives en cas de correspondance.
 
 Defender pour le point de terminaison prend actuellement en charge la mise en correspondance et la correction ioc pour les indicateurs de fichier et réseau. Le blocage est pris en charge pour les indicateurs de fichier.
 

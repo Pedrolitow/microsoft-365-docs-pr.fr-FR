@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d3430dc7765dfb7d84110a3a0cbae9f53e89b379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c1772cc67c145b59870735910e09ae05e52b899
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207387"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357300"
 ---
-# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré 
+# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,11 +41,12 @@ ms.locfileid: "59207387"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-L’intégration d’appareils est la méthode d’ajout d’appareils au service Microsoft Defender for Endpoint. Il permet aux appareils de signaler des signaux au service.  
+L’intégration d’appareils est la méthode d’ajout d’appareils au service Microsoft Defender for Endpoint. Il permet aux appareils de signaler des signaux au service.
 
-Vérifier qu’un appareil a été correctement ajouté au service est une étape importante dans l’ensemble du processus de déploiement. 
+Vérifier qu’un appareil a été correctement ajouté au service est une étape importante dans l’ensemble du processus de déploiement.
 
 ## <a name="verify-onboarding-using-a-detection-test"></a>Vérifier l’intégration à l’aide d’un test de détection
+
 Exécutez le script PowerShell suivant sur un appareil nouvellement intégré pour vérifier qu’il est correctement signalé au service Defender for Endpoint.
 
 1. Créez un dossier : « C:\test-MDATP-test ».
@@ -65,7 +66,8 @@ Exécutez le script PowerShell suivant sur un appareil nouvellement intégré po
 
 La fenêtre d’invite de commandes se ferme automatiquement. Si elle réussit, le test de détection est marqué comme terminé et une nouvelle alerte s’affiche dans le portail pour l’appareil intégré dans environ 10 minutes.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
+
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

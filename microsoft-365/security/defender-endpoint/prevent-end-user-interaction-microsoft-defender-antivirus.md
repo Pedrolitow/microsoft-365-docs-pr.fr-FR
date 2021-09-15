@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 73a802f158b8804d7cf94708ecf3a6ac9355baae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af938fda518e5a7eea3cb9341f04c8573a647044
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179235"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357070"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur
 
@@ -46,8 +46,8 @@ Avec le paramètre désactivé **ou** non configuré :
 
 :::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Capture d’écran Sécurité Windows avec l’icône de bouclier et les sections de protection contre les menaces.":::
 
->[!NOTE]
->Le masquage de l’interface empêchera Antivirus Microsoft Defender notifications d’apparaître sur le point de terminaison. Les notifications de Microsoft Defender pour point de terminaison s’affichent toujours. Vous pouvez également configurer individuellement [les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
+> [!NOTE]
+> Le masquage de l’interface empêchera Antivirus Microsoft Defender notifications d’apparaître sur le point de terminaison. Les notifications de Microsoft Defender pour point de terminaison s’affichent toujours. Vous pouvez également configurer individuellement [les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 
 Dans les versions antérieures de Windows 10, le paramètre masque l’interface Windows Defender client. Si l’utilisateur tente de l’ouvrir, il reçoit un avertissement signalant que l’administrateur système a un accès restreint à cette application.
 
@@ -63,7 +63,7 @@ Dans les versions antérieures de Windows 10, le paramètre masque l’interface
 
 4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender >'interface client.**
 
-5. Double-cliquez sur le **paramètre Activer le mode d’interface** utilisateur sans en-tête et définissez l’option sur **Activé.** Cliquez sur **OK**. 
+5. Double-cliquez sur le **paramètre Activer le mode d’interface** utilisateur sans en-tête et définissez l’option sur **Activé.** Cliquez sur **OK**.
 
 Voir [Empêcher les utilisateurs de modifier localement](configure-local-policy-overrides-microsoft-defender-antivirus.md) les paramètres de stratégie pour plus d’options pour empêcher les utilisateurs de modifier la protection sur leur PC.
 
@@ -82,14 +82,12 @@ Vous pouvez empêcher les utilisateurs de mettre en pause les analyses, ce qui p
 
 3. Cliquez **sur Modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **Scan**.
+4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Scan**.
 
-5. Double-cliquez sur le **paramètre Autoriser les utilisateurs à suspendre** l’analyse et définissez l’option **sur Désactivé.** Cliquez sur **OK**. 
+5. Double-cliquez sur le **paramètre Autoriser les utilisateurs à suspendre** l’analyse et définissez l’option **sur Désactivé.** Cliquez sur **OK**.
 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
-
 - [Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
-
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

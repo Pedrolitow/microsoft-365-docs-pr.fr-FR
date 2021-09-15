@@ -16,12 +16,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: a7b8214165e80347d6200c755db477b81e430630
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8adb0be672c20b8e51c4178df63d7b25332455ce
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179211"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356467"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Spécifier le niveau de protection cloud
 
@@ -39,7 +39,7 @@ La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir un
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and sign in.
 
-2. Choisissez **l’Antivirus de sécurité des points de**  >  **terminaison.**
+2. Choisissez **l’Antivirus de sécurité des points de** \> **terminaison.**
 
 3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
@@ -51,26 +51,25 @@ La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir un
     - **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut affecter les performances du client).
     - **Tolérance zéro :** bloque tous les exécutables inconnus.
 
-6. Choose **Review + save,** and then choose **Save**. 
+6. Choose **Review + save,** and then choose **Save**.
 
 > [!TIP]
 > Vous avez besoin d’aide ? Consultez les ressources suivantes :
+>
 > - [Configurer Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Ajouter des paramètres de protection des points de terminaison dans Intune](/mem/intune/protect/endpoint-protection-configure)
-  
 
 ## <a name="use-group-policy-to-specify-the-level-of-cloud-protection"></a>Utiliser une stratégie de groupe pour spécifier le niveau de protection cloud
 
-1.  Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
 2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
-3.  Dans **l’Éditeur de gestion des stratégies de** groupe, allez **aux**  >  **modèles d’administration de configuration ordinateur.**
+3. Dans **l’Éditeur de gestion des stratégies de** groupe, allez **aux** \> **modèles d’administration de configuration ordinateur.**
 
-4.  Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **MpEngine**.
+4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
 
-5.  Double-cliquez sur le paramètre Sélectionner le **niveau de protection cloud** et définissez-le sur **Activé.** Sélectionnez le niveau de protection :
-
+5. Double-cliquez sur le paramètre Sélectionner le **niveau de protection cloud** et définissez-le sur **Activé.** Sélectionnez le niveau de protection :
     - **Le niveau de blocage par défaut** offre une détection forte sans augmenter le risque de détection de fichiers légitimes.
     - **Un niveau de blocage modéré** fournit un niveau modéré uniquement pour les détections à niveau de confiance élevé
     - **Un niveau de blocage élevé** applique un niveau élevé de détection tout en optimisant les performances du client (mais peut également vous donner plus de chances de faux positifs).

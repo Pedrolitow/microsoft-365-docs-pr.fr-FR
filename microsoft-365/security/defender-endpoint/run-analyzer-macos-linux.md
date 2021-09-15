@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc642d06d6f2cb253140e902114f4c2840a58036
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 813dff46f3ba26c32f3b704645a9ca35ca740001
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207396"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353597"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
@@ -37,7 +37,7 @@ ms.locfileid: "59207396"
 1. Téléchargez [l’outil Analyseur de client XMDE](https://aka.ms/XMDEClientAnalyzer) sur l’ordinateur macOS ou Linux que vous devez examiner.
 
    > [!NOTE]
-   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
+   > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : '973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2'.
 
 2. Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
 
@@ -72,9 +72,8 @@ Aide supplémentaire sur la syntaxe :
 **-h** \# Aide<br>
 \# Afficher le message d’aide
 
-**-p** \# Performances<br>
-\# Paramètre planifié qui n’est pas encore implémenté.<br>
-\# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande.
+**performance** \# Performances<br>
+\# Collecte un suivi complet pour l’analyse d’un problème de performances qui peut être reproduit à la demande. Utilisation `--length=<seconds>` pour spécifier la durée du critère.
 
 **-o** \# Sortie<br>
 \# Spécifier le chemin d’accès de destination pour le fichier de résultats
@@ -122,3 +121,7 @@ Aide supplémentaire sur la syntaxe :
 - Auditd_info.txt
 
   Description : détails sur le service audité et les composants associés pour le système [d’exploitation Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+
+- perf_benchmark.tar.gz
+
+  Description : rapports de test de performances. Vous ne le verrez que si vous utilisez le paramètre performance.

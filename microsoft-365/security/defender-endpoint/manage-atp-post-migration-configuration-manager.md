@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 2d474f4cc2c990ac8ebf3a964bbb532752741160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 11855b9ebd6a2dd4641087e2e0a711860acb76d5
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181103"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355843"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Gérer Microsoft Defender for Endpoint avec Configuration Manager
 
@@ -53,7 +53,6 @@ Nous vous recommandons d’utiliser [Microsoft Endpoint Manager,](/mem)qui inclu
 |Choisir les méthodes de mise à jour des mises à jour **du logiciel anti-programme** malveillant sur les appareils de votre organisation <p> *Avec Endpoint Protection configuration Manager, vous pouvez choisir parmi plusieurs méthodes pour maintenir les définitions de logiciels anti-programme malveillant à jour sur les appareils de votre organisation.*|[Configurer les mises à jour des définitions pour Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-definition-updates) <p> [Utiliser Configuration Manager pour fournir des mises à jour de définition](/mem/configmgr/protect/deploy-use/endpoint-definitions-configmgr)|
 |**Activer la Protection du réseau** pour empêcher les employés d’utiliser des applications malveillantes sur Internet <p> *Nous vous recommandons d’utiliser d’abord le [mode audit](/microsoft-365/security/defender-endpoint/evaluate-network-protection) pour la protection du réseau dans un environnement de test pour voir quelles applications seront bloquées avant le déploiement.*|[Activer la protection réseau avec Configuration Manager](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
 |**Configurer l’accès contrôlé aux dossiers pour** la protection contre les ransomware <p> *L’accès contrôlé aux dossiers est également appelé protection anti-programme malveillant.*|[Protection des points de terminaison : accès contrôlé aux dossiers](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <p> [Activer l’accès contrôlé aux dossiers dans Microsoft Endpoint Configuration Manage](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager)|
-|||
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurer votre portail Microsoft 365 Defender client
 
@@ -62,7 +61,7 @@ Si ce n’est pas déjà fait, configurez votre portail Microsoft 365 Defender p
 - [Vue d’ensemble Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Protection des points de terminaison : Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Obtenir une vue d’ensemble de la gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visiter le tableau de bord Microsoft 365 Defender de sécurité du portail d’entreprise](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

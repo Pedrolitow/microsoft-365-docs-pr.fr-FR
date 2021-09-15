@@ -5,26 +5,26 @@ metadata:
   title: Documentation de sécurité Office 365
   description: 'En savoir plus sur Microsoft Defender pour point de terminaison : comment il protège les points de terminaison contre les menaces informatiques et offre aux équipes des opérations de sécurité des fonctionnalités de correction des menaces.'
   services: office-365-security-compliance
-  ms.service: O365-seccomp
-  ms.subservice: subservice
+  ms.prod: m365-security
+  ms.technology: m365d
   ms.topic: landing-page
   ms.collection: m365-security-compliance
   author: mjcaparas
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: 2ab172acf119c41f4d478e3ecdae04cfd9d299d2
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 7e068e1431ad1d0e03c50050cb45eb91fc947e62
+  ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59204485"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "59357506"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft 365 Defender ?
+    - text: Qu’est-ce que Microsoft 365 Defender ?
       url: defender/microsoft-365-defender.md
     - text: Centre de sécurité Microsoft 365
       url: defender/overview-security-center.md
@@ -58,7 +58,7 @@ landingContent:
       url: office-365-security/defender-for-office-365.md
     - text: Description du service Defender pour Office 365
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-- title: Microsoft Defender pour point de terminaison
+- title: Microsoft Defender pour point de terminaison
   linkLists:
   - linkListType: overview
     links:

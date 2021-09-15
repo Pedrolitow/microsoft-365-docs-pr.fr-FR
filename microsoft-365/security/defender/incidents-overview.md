@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f55e1a30f61b8ed41ec2575b26a9346ba45cafd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 824d32b07acbba0d19a5f2afdafffcbba53baeeb
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183151"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59357580"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Réponse aux incidents avec Microsoft 365 Defender
 
@@ -84,7 +84,7 @@ Les onglets supplémentaires pour un incident sont les suivants :
 
   Tous les appareils identifiés comme faisant partie ou liés à l’incident.
 
-- Utilisateurs
+- Users
 
   Tous les utilisateurs identifiés comme faisant partie ou associés à l’incident.
 
@@ -183,21 +183,26 @@ Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-**Si vous êtes nouveau dans l’analyse** de la sécurité et la réponse aux incidents :
+Utilisez les étapes répertoriées en fonction de votre niveau d’expérience ou de votre rôle au sein de votre équipe de sécurité.
 
-- Consultez la procédure pas à pas Répondre à votre premier [incident](first-incident-overview.md) pour obtenir une visite guidée d’un processus classique d’analyse, de correction et de révision post-incident dans le portail Microsoft 365 Defender avec un exemple d’attaque.
+### <a name="experience-level"></a>Niveau d’expérience
 
-**Si vous avez de l’expérience en** matière d’analyse de sécurité et de réponse aux incidents :
+Suivez ce tableau pour connaître votre niveau d’expérience en matière d’analyse de sécurité et de réponse aux incidents.
 
-- Commencer avec la file d’attente des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. Ici, vous pouvez :
+| Niveau | Étapes |
+|:-------|:-----|
+| **New** | <ol><li> Consultez la procédure pas à pas Répondre à votre premier [incident](first-incident-overview.md) pour obtenir une visite guidée d’un processus classique d’analyse, de correction et de révision post-incident dans le portail Microsoft 365 Defender avec un exemple d’attaque. </li><li> Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents,](manage-incidents.md)ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents.</li></ol> |
+| **Expérimenté** | <ol><li> Commencer avec la file d’attente des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. Vous pouvez alors effectuer les opérations suivantes : </li> <ul><li> Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents,](manage-incidents.md)ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents. </li><li> Effectuer [des examens](investigate-incidents.md) des incidents. </li></ul> </li><li> Suivre et répondre aux menaces émergentes avec [l’analyse des menaces.](threat-analytics.md) </li><li>  Recherchez de manière proactive les menaces avec [le recherche avancée de menaces.](advanced-hunting-overview.md) </li><li> Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. </li></ol> |
 
-  - Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. 
 
-  - [Gérer les incidents,](manage-incidents.md)ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents.
+### <a name="security-team-role"></a>Rôle d’équipe de sécurité
 
-  - Effectuer [des examens](investigate-incidents.md) des incidents.
+Suivez ce tableau en fonction de votre rôle d’équipe de sécurité.
 
-- Découvrez comment intégrer [des Microsoft 365 Defender dans votre Centre d’opérations de sécurité (SOC).](integrate-microsoft-365-defender-secops.md)
-
-- Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application.
+| Rôle | Étapes |
+|:-------|:-----|
+| Répondeur d’incident (niveau 1) | Commencer avec la file d’attente des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. Vous pouvez alors effectuer les opérations suivantes : <ul><li> Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. </li><li> [Gérer les incidents,](manage-incidents.md)ce qui inclut le changement de nom, l’affectation, la classification et l’ajout de balises et de commentaires en fonction de votre flux de travail de gestion des incidents. </li></ul> |
+| Enquêteur ou analyste de sécurité (niveau 2) | <ol><li> Effectuer [des examens](investigate-incidents.md) des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. </li><li> Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. </li></ol> |
+| Analyste de sécurité avancée ou menace (niveau 3) | <ol><li>Effectuer [des examens](investigate-incidents.md) des incidents à partir de la page **Incidents** du portail Microsoft 365 Defender web. </li><li> Suivre et répondre aux menaces émergentes avec [l’analyse des menaces.](threat-analytics.md) </li><li> Recherchez de manière proactive les menaces avec [le recherche avancée de menaces.](advanced-hunting-overview.md) </li><li> Consultez ces manuels de réponse aux incidents pour obtenir des [instructions détaillées](/security/compass/incident-response-playbooks) sur le hameçonnage, la pulvérisation de mots de passe et les attaques d’octroi de consentement d’application. |
+| Gestionnaire SOC | Découvrez comment intégrer [des Microsoft 365 Defender dans votre Centre d’opérations de sécurité (SOC).](integrate-microsoft-365-defender-secops.md) |
 

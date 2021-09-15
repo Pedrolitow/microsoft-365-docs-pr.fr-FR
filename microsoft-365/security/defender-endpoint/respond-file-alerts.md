@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1ea6f3b2dd9447ff9901518a80aafa4dec56a5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f7cda368f9770a645fa588597196eccf038b4f
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164948"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356647"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -37,7 +37,7 @@ ms.locfileid: "59164948"
 
 Répondez rapidement aux attaques détectées en arrêtant et en bloquant des fichiers ou en bloquant un fichier. Après avoir pris des mesures sur les fichiers, vous pouvez vérifier les détails de l’activité dans le centre de l’action.
 
-Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer **la nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
+Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer la **nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
 
 Les actions de réponse s’exécutent le long de la partie supérieure de la page de fichiers et incluent :
 
@@ -56,7 +56,7 @@ Certaines actions nécessitent certaines autorisations. Le tableau suivant décr
 ****
 
 |Autorisation|Fichiers PE|Fichiers non PE|
-|:---------------------|:------:|:----------:|
+|---|:---:|:---:|
 |Afficher les données|X|X|
 |Examen des alertes|&#x2611;|X|
 |Base de la réponse en direct|X|X|
@@ -76,7 +76,7 @@ Vous pouvez contenir une attaque dans votre organisation en arrêtant le process
 > - Le fichier n’appartient pas aux éditeurs tiers de confiance ou n’est pas signé par Microsoft
 > - Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
-**L’action** Arrêter et mettre en quarantaine le fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
+L’action Arrêter **et mettre en** quarantaine le fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
 
 Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours.
 
@@ -124,7 +124,7 @@ Un avertissement s’affiche avant l’implémentation de l’action pour les fi
 
 ## <a name="restore-file-from-quarantine"></a>Restaurer un fichier à partir de la mise en quarantaine
 
-Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
+Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
 
@@ -141,10 +141,10 @@ Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez d
    > [!NOTE]
    > Dans certains scénarios, **threatName** peut apparaître comme : EUS:Win32/CustomEnterpriseBlock!cl.
    >
-   > Defender for Endpoint restaure tous les fichiers bloqués personnalisés qui ont été mis en quarantaine sur cet appareil au cours des 30 derniers jours.
+   > Defender for Endpoint restaure tous les fichiers bloqués personnalisés mis en quarantaine sur cet appareil au cours des 30 derniers jours.
 
 > [!IMPORTANT]
-> Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
+> Il est possible qu’un fichier mis en quarantaine comme menace réseau ne soit pas récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
 ## <a name="download-or-collect-file"></a>Télécharger ou collecter un dossier
 
@@ -158,9 +158,9 @@ Par défaut, vous devez être en mesure de télécharger les fichiers en quarant
 
 Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés conformément à vos [exemples de configurations d’envoi.](enable-cloud-protection-microsoft-defender-antivirus.md) Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité d’aperçu est « allumée » par défaut.**
 
-L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services à https://aka.ms/STP l’aide de .
+L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services sur https://aka.ms/STP .
 
-Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fichiers potentiellement dangereux et examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce paramètre, Paramètres les fonctionnalités avancées des points de terminaison téléchargent les fichiers mis en quarantaine pour  >    >    >   ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
+Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fichiers potentiellement dangereux et examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce  paramètre, Paramètres les fonctionnalités avancées des points de terminaison téléchargent les fichiers mis en quarantaine pour \>  \>  \>  ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Backing up quarantined files
 
@@ -168,19 +168,20 @@ Les utilisateurs peuvent être invités à fournir un consentement explicite ava
 
 Cette fonctionnalité ne fonctionne pas si l’envoi d’exemples est désactivé. Si la soumission automatique d’échantillons est définie pour demander l’autorisation à l’utilisateur, seuls les exemples que l’utilisateur accepte d’envoyer seront collectés.
 
->[!IMPORTANT]
->Télécharger les conditions requises pour les fichiers mis en quarantaine :
->- Votre organisation utilise Antivirus Microsoft Defender en mode actif 
->- La version du moteur antivirus est la version 1.1.17300.4 ou ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
->- La protection basée sur le cloud est activée. Voir [Activer la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
->- L’envoi d’exemples est allumé
->- Les appareils Windows 10 version 1703 ou ultérieure, ou Windows server 2016 ou 2019
+> [!IMPORTANT]
+> Télécharger les conditions requises pour les fichiers mis en quarantaine :
+>
+> - Votre organisation utilise Antivirus Microsoft Defender en mode actif
+> - La version du moteur antivirus est la version 1.1.17300.4 ou ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+> - La protection basée sur le cloud est activée. Voir [Activer la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+> - L’envoi d’exemples est allumé
+> - Les appareils Windows 10 version 1703 ou ultérieure, ou Windows server 2016 ou 2019
 
 ### <a name="collect-files"></a>Collecter des fichiers
 
-Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez un **bouton** Collecter le fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours,** le fichier de collecte est désactivé.
+Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez un bouton Collecter **le** fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours,** le fichier de collecte est désactivé.
 > [!Important]
-> Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
+> Il est possible qu’un fichier mis en quarantaine comme menace réseau ne soit pas récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
 ## <a name="add-indicator-to-block-or-allow-a-file"></a>Ajouter un indicateur pour bloquer ou autoriser un fichier
 
@@ -191,7 +192,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 > - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, voir Gérer la [protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 >
 > - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
-> - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers _.exe_ et _.dll_ portables. La couverture sera étendue au fil du temps.
+> - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables( PE), notamment les fichiers _.exe_ et _.dll_ portables. La couverture sera étendue au fil du temps.
 > - Cette action de réponse est disponible pour les appareils Windows 10 version 1703 ou ultérieure.
 > - La fonction autoriser ou bloquer ne peut pas être effectuée sur les fichiers si la classification du fichier existe sur le cache de l’appareil avant l’action autoriser ou bloquer.
 
@@ -200,7 +201,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 >
 > Il peut y avoir quelques minutes de latence entre le moment où l’action est prise et le fichier réel bloqué.
 
-### <a name="enable-the-block-file-feature"></a>Activer la fonctionnalité bloquer les fichiers
+### <a name="enable-the-block-file-feature"></a>Activer la fonctionnalité bloquer le fichier
 
 Pour commencer à bloquer les fichiers, vous devez d’abord [activer  ](advanced-features.md) la fonctionnalité Bloquer ou autoriser dans Paramètres.
 
@@ -214,7 +215,7 @@ Pour plus [d’informations sur](manage-indicators.md) le blocage et l’augment
 
 Pour arrêter le blocage d’un fichier, supprimez l’indicateur. Vous pouvez le faire via l’action **Modifier l’indicateur** sur la page de profil du fichier. Cette action sera visible à la  même position que l’action Ajouter un indicateur, avant que vous n’ajoutiez l’indicateur.
 
-Vous pouvez également modifier les indicateurs à partir de la page **Paramètres,** sous **Indicateurs**  >  **de règles.** Les indicateurs sont répertoriés dans cette zone par le hachage de leur fichier.
+Vous pouvez également modifier les indicateurs à partir de la page **Paramètres,** sous **Indicateurs** \> **de règles.** Les indicateurs sont répertoriés dans cette zone par le hachage de leur fichier.
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
@@ -224,16 +225,16 @@ Pour [plus d’informations, consultez un expert](/microsoft-365/security/defend
 
 ## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le Centre de notifications
 
-Le **centre de données fournit** des informations sur les actions qui ont été entreprises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
+Le **centre de sécurité fournit** des informations sur les actions qui ont été prises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
 
 - Collection de packages d’examen
 - Analyse antivirus
 - Restriction d’application
 - Isolation de l’appareil
 
-Tous les autres détails connexes sont également affichés, tels que la date/l’heure de soumission, l’utilisateur qui envoie l’envoi, et si l’action a réussi ou échoué.
+Tous les autres détails connexes sont également affichés, tels que la date/l’heure de soumission, l’utilisateur à l’envoi et si l’action a réussi ou échoué.
 
-![Image du centre de actions avec des informations.](images/action-center-details.png)
+![Image du centre de l’action avec des informations.](images/action-center-details.png)
 
 ## <a name="deep-analysis"></a>Analyse profonde
 
@@ -244,13 +245,11 @@ L’analyse approfondie prend actuellement en charge l’analyse complète des f
 
 L’analyse approfondie d’un fichier prend plusieurs minutes. Une fois l’analyse de fichier terminée, l’onglet Analyse approfondie se met à jour pour afficher un résumé et la date et l’heure des derniers résultats disponibles.
 
-Le résumé de l’analyse approfondie inclut une liste des comportements *observés,* dont certains peuvent indiquer une activité malveillante et des éléments *observables,* y compris les IP contactés et les fichiers créés sur le disque. Si rien n’est trouvé, ces sections afficheront un bref message.
+Le résumé de l’analyse approfondie inclut une liste des comportements *observés,* dont certains peuvent indiquer une activité malveillante et des éléments *observables,* y compris les IP contactés et les fichiers créés sur le disque. Si rien n’est trouvé, ces sections affichent un message court.
 
 Les résultats d’une analyse approfondie sont en correspondance avec les informations sur les menaces et les correspondances génèrent des alertes appropriées.
 
 Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d’un fichier, généralement lors d’un examen d’une alerte ou pour toute autre raison pour laquelle vous suspectez un comportement malveillant. Cette fonctionnalité est disponible dans **l’onglet Analyse** approfondie, sur la page de profil du fichier.
-
-<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
@@ -262,14 +261,14 @@ Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d
 Vous pouvez également soumettre un exemple via le portail du Centre de sécurité [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si le  fichier n’a pas été observé sur un appareil Windows 10 et attendre que le bouton Envoyer pour analyse approfondie devienne disponible.
 
 > [!NOTE]
-> En raison des flux de traitement principal dans le portail centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichier et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender pour le point de terminaison.
+> En raison des flux de traitement principal dans le portail du Centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichiers et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender for Endpoint.
 
 ### <a name="submit-files-for-deep-analysis"></a>Soumettre des fichiers pour analyse approfondie
 
 1. Sélectionnez le fichier que vous souhaitez soumettre pour une analyse approfondie. Vous pouvez sélectionner ou rechercher un fichier dans l’un des affichages suivants :
 
     - **Alertes :** sélectionnez les liens de fichier dans la **description** ou les **détails** de la chronologie de l’alerte
-    - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de **l’appareil dans l’organisation**
+    - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de l’appareil **dans l’organisation**
     - **Zone de recherche** : **sélectionnez Fichier** dans le menu déroulant et entrez le nom du fichier
 
 2. Dans **l’onglet Analyse approfondie** de l’affichage de fichier, sélectionnez **Envoyer.**
@@ -282,7 +281,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
    Une barre de progression s’affiche et fournit des informations sur les différentes étapes de l’analyse. Vous pouvez ensuite afficher le rapport une fois l’analyse effectuée.
 
 > [!NOTE]
-> En fonction de la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a pas de Windows 10'appareil en ligne à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
+> En fonction de la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a Windows 10 de rapports sur l’appareil à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
 
 ### <a name="view-deep-analysis-reports"></a>Afficher des rapports d’analyse approfondie
 
@@ -325,8 +324,8 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
 
 6. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Prendre des mesures de réponse sur un appareil](respond-machine-alerts.md)
 - [Examiner des fichiers](investigate-files.md)
-- [Actions de réponse manuelles dans Microsoft Defender pour endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Actions de réponse manuelles dans Microsoft Defender pour Endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)

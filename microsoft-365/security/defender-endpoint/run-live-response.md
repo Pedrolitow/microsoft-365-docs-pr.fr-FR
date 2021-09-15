@@ -21,14 +21,14 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f94e4d5e51b6a846a0439e3833a01d252c51bd0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae3b0e3ad09487d9b48ddab10a43eb36e5abed35
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207380"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59353655"
 ---
-#  <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
+# <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,19 +50,19 @@ Exécute une séquence de commandes de réponse en direct sur un appareil
 
 ## <a name="limitations"></a>Limites
 
-1.  Les limites de taux pour cette API sont de 10 appels par minute (les demandes supplémentaires sont répondues par HTTP 429).
+1. Les limites de taux pour cette API sont de 10 appels par minute (les demandes supplémentaires sont répondues par HTTP 429).
 
-2.  25 sessions en cours d’exécution simultanée (les demandes dépassant la limite de limitation recevront une réponse « 429 - Trop de demandes »).
+2. 25 sessions en cours d’exécution simultanée (les demandes dépassant la limite de limitation recevront une réponse « 429 - Trop de demandes »).
 
-3.  Si l’ordinateur n’est pas disponible, la session est en file d’attente pendant 3 jours.
+3. Si l’ordinateur n’est pas disponible, la session est en file d’attente pendant 3 jours.
 
-4.  Le délai d’un délai de commande RunScript est passé au bout de 10 minutes.
+4. Le délai d’un délai de commande RunScript est passé au bout de 10 minutes.
 
-5.  Les commandes de réponse en direct ne peuvent pas être mis en file d’attente et ne peuvent être exécutées qu’une par une. 
+5. Les commandes de réponse en direct ne peuvent pas être mis en file d’attente et ne peuvent être exécutées qu’une par une.
 
-6.  Si l’ordinateur que vous essayez d’exécuter cet appel d’API se trouve dans un groupe d’appareils RBAC qui ne lui a pas de niveau de correction automatisé, vous devez au moins activer le niveau de correction minimal pour un groupe d’appareils donné.
+6. Si l’ordinateur que vous essayez d’exécuter cet appel d’API se trouve dans un groupe d’appareils RBAC qui ne lui a pas de niveau de correction automatisé, vous devez au moins activer le niveau de correction minimal pour un groupe d’appareils donné.
 
-7.  Plusieurs commandes de réponse en direct peuvent être exécutés sur un seul appel d’API. Toutefois, lorsqu’une commande de réponse en direct échoue, toutes les actions suivantes ne sont pas exécutées.
+7. Plusieurs commandes de réponse en direct peuvent être exécutés sur un seul appel d’API. Toutefois, lorsqu’une commande de réponse en direct échoue, toutes les actions suivantes ne sont pas exécutées.
 
 ## <a name="minimum-requirements"></a>Conditions minimales requises
 
@@ -82,7 +82,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   - **Windows Server 2019 - Applicable uniquement pour la prévisualisation publique**
     - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
     - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    
+
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La mise en place.](apis-intro.md)
@@ -112,7 +112,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 |Commentaire|Chaîne|Commentaire à associer à l’action.|
 |Commandes|Tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
 
-**Commandes**:
+## <a name="commands"></a>Commandes
 
 |Type de commande|Paramètres|Description|
 |---|---|---|
@@ -226,7 +226,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Obtenir le résultat de la réponse en direct](get-live-response-result.md)
