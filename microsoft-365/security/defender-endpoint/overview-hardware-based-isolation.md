@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.author: macapara
 ms.date: 09/07/2018
 ms.technology: mde
-ms.openlocfilehash: 06d07b6457e57f6693e029c9ecccf1ca7f90b0cc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 921cdbc0287cce8affa249ba4d371fc66750d77b
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401625"
+ms.locfileid: "59407670"
 ---
 # <a name="hardware-based-isolation-in-windows-10"></a>Isolation basée sur le matériel dans Windows 10
 
@@ -41,6 +41,6 @@ L’isolation matérielle permet de protéger l’intégrité du système Window
 
 |Fonctionnalité|Description|
 |---|---|
-|[Windows Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)|Application Guard protège votre appareil contre les attaques avancées tout en vous conservant productif. À l’aide d’une approche d’isolation matérielle unique, l’objectif est d’isoler les sites web non confiance et les documents PDF à l’intérieur d’un conteneur léger séparé du système d’exploitation via l’hyperviseur Windows natif. Si un site non sécurisé ou un document PDF s’avère malveillant, il reste contenu dans le conteneur sécurisé d’Application Guard, en maintenant le PC de bureau protégé et l’attaquant à l’écart de vos données d’entreprise.|
-|[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows)|System Guard protège et maintient l’intégrité du système au démarrage et après son exécution, et valide l’intégrité du système à l’aide de l’attestation.|
+|[Windows Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md)|Application Guard protège votre appareil contre les attaques avancées tout en vous conservant productif. À l’aide d’une approche d’isolation matérielle unique, l’objectif est d’isoler les sites web non confiance et les documents PDF à l’intérieur d’un conteneur léger séparé du système d’exploitation via l’hyperviseur Windows natif. Si un site non sécurisé ou un document PDF s’avère malveillant, il reste contenu dans le conteneur sécurisé d’Application Guard, en maintenant le PC de bureau protégé et l’attaquant à l’écart de vos données d’entreprise.|
+|[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)|System Guard protège et maintient l’intégrité du système au démarrage et après son exécution, et valide l’intégrité du système à l’aide de l’attestation.|
 |

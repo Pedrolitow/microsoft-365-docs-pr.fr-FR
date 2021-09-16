@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 9f60b310d435693972a6573d7c9dccd920866bbe
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 5b1562a92302e404d10e5f309a702c09491aab80
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400323"
+ms.locfileid: "59407656"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -82,7 +82,7 @@ Utilisez l’argument suivant avec l Antivirus Microsoft Defender de ligne de co
 > [!NOTE]
 > Vous devez ouvrir une version de niveau administrateur de l’invite de commandes. Cliquez avec le bouton droit sur l’élément menu Démarrer, cliquez sur Exécuter **en** tant qu’administrateur et cliquez sur **Oui** à l’invite d’autorisations. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure.
 
-Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender avec l’outil mpcmdrun.exe ligne de commande.](command-line-arguments-microsoft-defender-antivirus.md)
+Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande.](command-line-arguments-microsoft-defender-antivirus.md)
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Tentative de téléchargement d’un fichier de programmes malveillants factices à partir de Microsoft
 
@@ -115,8 +115,3 @@ Vous verrez également une  détection des menaces mises en quarantaine dans la 
    > Les versions Windows 10 antérieures à la version 1703 ont une interface utilisateur différente. Voir [Antivirus Microsoft Defender dans l’application Sécurité Windows.](microsoft-defender-security-center-antivirus.md)
 
    Le Windows journal des événements affiche également [Windows Defender’ID d’événement client 1116](troubleshoot-microsoft-defender-antivirus.md).
-
-## <a name="see-also"></a>Voir aussi
-
-- [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md)
-- [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)

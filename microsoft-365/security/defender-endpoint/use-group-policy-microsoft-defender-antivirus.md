@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 881db58dc6658c7ed73201e48e7e2079dbf6aa97
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 3e3014feb80383c370aa49f387966c574df587f9
+ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401013"
+ms.locfileid: "59407674"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -96,9 +96,9 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Correction | Spécifier l’heure de la journée pour exécuter une analyse complète programmée afin de terminer la correction | [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Rapports | Désactiver les notifications améliorées | [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 | Root | Désactiver la Antivirus Microsoft Defender | Non utilisé (ce paramètre  doit être configuré sur Non configuré pour s’assurer que les applications antivirus tierces installées fonctionnent correctement)
-| Root | Définir des adresses pour contourner le serveur proxy | [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
-| Root | Définir la connexion automatique du proxy (.pac) pour la connexion au réseau | [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
-| Root | Définir un serveur proxy pour la connexion au réseau | [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Root | Définir des adresses pour contourner le serveur proxy | Inutilisé |
+| Root | Définir la connexion automatique du proxy (.pac) pour la connexion au réseau | Inutilisé |
+| Root | Définir un serveur proxy pour la connexion au réseau | Inutilisé |
 | Root | Configurer le comportement de fusion de l’administrateur local pour les listes | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Root | Autoriser le démarrage du service anti-programme malveillant avec une priorité normale | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
 | Root | Autoriser le service anti-programme malveillant à rester en cours d’exécution | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
