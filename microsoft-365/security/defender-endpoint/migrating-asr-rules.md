@@ -16,11 +16,11 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.openlocfilehash: 0c2ffdde4ff259f2a2ef098a6d715cbcd785dfe4
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357630"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401685"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles asr
 

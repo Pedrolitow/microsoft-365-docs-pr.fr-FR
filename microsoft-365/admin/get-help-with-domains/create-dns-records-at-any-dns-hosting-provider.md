@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: 1947e8e91beb23f328e59ffe30fac0f596165121
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bced40831a9d73e0c72c6ebb232839409c8a64ea
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176467"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356295"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -74,7 +74,7 @@ La **Priorité** de cet enregistrement MX doit être la plus élevée de tous le
 Vérifiez que les champs sont définis par les valeurs suivantes :
 
 - Type d’enregistrement : `MX`
-- Priorité : sélectionnez la valeur la plus élevée disponible, généralement `0`.
+- Priorité : définissez sur n’importe quelle valeur importante qui n’est pas déjà utilisée.
 - Nom de l’hôte : `@`
 - Adresse de pointage : copiez la valeur à partir du centre d’administration et collez-la ici.
 - TTL : `3600` (ou votre fournisseur par défaut)

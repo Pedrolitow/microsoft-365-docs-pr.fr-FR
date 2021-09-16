@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 881db58dc6658c7ed73201e48e7e2079dbf6aa97
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208907"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401013"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -55,9 +55,9 @@ En règle générale, vous pouvez utiliser la procédure suivante pour configure
 Le tableau suivant de cette rubrique répertorie les paramètres de stratégie de groupe disponibles dans Windows 10, version 1703 et fournit des liens vers la rubrique appropriée dans cette bibliothèque de documentation (le cas échéant). 
 
 > [!TIP]
-> Téléchargez la feuille de calcul Paramètres de référence de la stratégie de groupe pour Windows 10 mise à jour de mai [2020 (2004)](https://www.microsoft.com/download/101451). Cette feuille de calcul répertorie les paramètres de stratégie pour les configurations des ordinateurs et des utilisateurs qui sont inclus dans les fichiers de modèles d’administration remis pour la mise à jour Windows 10 mai 2020 (2004). Vous pouvez configurer la référence à la feuille de calcul lorsque vous modifiez des objets de stratégie de groupe.
+> Téléchargez la feuille de calcul Paramètres de référence de la stratégie de groupe pour Windows 10 mise à jour de mai [2020 (2004)](https://www.microsoft.com/download/101451). Cette feuille de calcul répertorie les paramètres de stratégie pour les configurations des ordinateurs et des utilisateurs qui sont inclus dans les fichiers de modèles d’administration remis pour la mise à jour Windows 10 mai 2020 (2004). Vous pouvez configurer la référence à la feuille de calcul lorsque vous modifiez des objets de stratégie de groupe.<br/><br/>
 
-| Emplacement | Setting | Article |
+| Emplacement | Paramètre | Article |
 |:---|:---|:---|
 | Interface client | Activer le mode d’interface utilisateur sans en-tête | [Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | Interface client | Afficher du texte supplémentaire pour les clients lorsqu’ils doivent effectuer une action | [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md) |
@@ -96,9 +96,9 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Correction | Spécifier l’heure de la journée pour exécuter une analyse complète programmée afin de terminer la correction | [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Rapports | Désactiver les notifications améliorées | [Configurer les notifications qui s’affichent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 | Root | Désactiver la Antivirus Microsoft Defender | Non utilisé (ce paramètre  doit être configuré sur Non configuré pour s’assurer que les applications antivirus tierces installées fonctionnent correctement)
-| Root | Définir des adresses pour contourner le serveur proxy | Inutilisé |
-| Root | Définir la connexion automatique du proxy (.pac) pour la connexion au réseau | Inutilisé |
-| Root | Définir un serveur proxy pour la connexion au réseau | Inutilisé |
+| Root | Définir des adresses pour contourner le serveur proxy | [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Root | Définir la connexion automatique du proxy (.pac) pour la connexion au réseau | [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Root | Définir un serveur proxy pour la connexion au réseau | [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
 | Root | Configurer le comportement de fusion de l’administrateur local pour les listes | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Root | Autoriser le démarrage du service anti-programme malveillant avec une priorité normale | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
 | Root | Autoriser le service anti-programme malveillant à rester en cours d’exécution | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |

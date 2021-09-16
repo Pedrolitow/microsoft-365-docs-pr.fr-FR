@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 964447ee755d5587d03c6c3ee6cb56131013d34d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ceb715549c208ccc7f961c115083c50e56dd526
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164884"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400545"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -61,7 +61,7 @@ Pour commencer à enregistrer les événements système, ouvrez PowerShell en mo
 
 3. Appuyez **sur Entrée** pour arrêter et enregistrer l’enregistrement, ou **sur Ctrl+C** pour annuler l’enregistrement.
 
-4. Analysez les résultats à l’aide du paramètre de l’analyseur `Get-MpPerformanceReport` de performances. Par exemple, lors de l’exécution de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` les performances. 
+4. Analysez les résultats à l’aide du paramètre de l’analyseur de `Get-MpPerformanceReport` performances. Par exemple, lors de l’exécution de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` les performances. 
 
 Pour plus d’informations sur les paramètres de ligne de commande et les options, voir [New-MpPerformanceRecording](#new-mpperformancerecording) et [Get-MpPerformanceReport](#get-mpperformancereport).
 
@@ -89,11 +89,11 @@ Pour obtenir des exemples qui décrivent le processus d’exportation et de conv
 
 - **Pour convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Conditions requises
+### <a name="requirements"></a>Configuration requise
 Antivirus Microsoft Defender’analyseur de performances présente les conditions préalables suivantes :
 
 - Versions Windows prise en charge : Windows 10, Windows 11 et versions Windows Server 2016 versions ultérieures
-- Version de la plateforme : 4.18.2108.X+
+- Version de la plateforme : 4.18.2108.7+
 - Version PowerShell : PowerShell Version 5.1
 
 ## <a name="powershell-reference"></a>Référence PowerShell
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-Spécifie le nombre de fichiers principaux à obtenir pour chaque extension supérieure, triés par « Durée ».
+Spécifie le nombre de fichiers principaux à sortier pour chaque extension supérieure, triés par « Durée ».
 
 
 ```yaml
@@ -348,7 +348,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
-Demande un rapport d’analyse supérieure et spécifie le nombre d’analyses les plus en sortie, triées par « Durée ».
+Demande un rapport d’analyse supérieure et spécifie le nombre d’analyses principales à sortie, triées par « Durée ».
 
 
 ```yaml

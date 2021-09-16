@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: 5061385007071442acb9c2e1be27501d64174ea3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30b345a887f0b2288394fc07b3b5b290b58c9fed
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205748"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401805"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation
 
@@ -34,7 +34,7 @@ Utilisez le service d Office 365 d’importation et d’expédition de disque po
   
 Voici les étapes nécessaires à l’utilisation de l’expédition de disque pour importer des fichiers PST dans Microsoft 365 boîtes aux lettres :
   
-[Étape 1 : Télécharger la clé de stockage sécurisé et l’outil d’importation PST](#step-1-download-the-secure-storage-key-and-pst-import-tool)
+[Étape 1 : Télécharger l’outil d’importation PST](#step-1-download-the-pst-import-tool)
 
 [Étape 2 : Copier les fichiers PST sur le disque dur](#step-2-copy-the-pst-files-to-the-hard-drive)
 
@@ -47,7 +47,7 @@ Voici les étapes nécessaires à l’utilisation de l’expédition de disque p
 [Étape 6 : Filtrer les données et démarrer la tâche d’importation PST](#step-6-filter-data-and-start-the-pst-import-job)
   
 > [!IMPORTANT]
-> Vous devez effectuer l’étape 1 une seule fois pour charger la clé de stockage sécurisé et l’outil d’importation. Après avoir effectué ces étapes, suivez les étapes 2 à 6 chaque fois que vous souhaitez expédier un disque dur à Microsoft. 
+> Vous devez effectuer l’étape 1 une fois pour télécharger l’outil d’importation. Après avoir effectué ces étapes, suivez les étapes 2 à 6 chaque fois que vous souhaitez expédier un disque dur à Microsoft. 
   
 Pour les questions fréquemment posées sur l’utilisation de l’expédition de disque pour importer des fichiers PST dans Office 365, voir FAQ pour l’utilisation de l’expédition de disque pour importer des [fichiers PST.](./faqimporting-pst-files-to-office-365.yml#using-drive-shipping-to-import-pst-files) 
   
@@ -91,7 +91,7 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
     
 - Le disque dur que vous expédiez à Microsoft peut traverser des frontières internationales. Dans ce cas, vous devez vous assurer que le disque dur et les données qu’il contient sont importés et/ou exportés conformément aux lois applicables. Avant d’envoyer un disque dur, vérifiez auprès de vos conseillers juridiques que votre disque et vos données peuvent être légalement expédiés au centre de données Microsoft concerné. Cela permet de s’assurer qu’elle atteint Microsoft en temps voulu.
     
-- Cette procédure nécessite la copie et l’enregistrement d’une clé de stockage sécurisé et d’une clé de chiffrement BitLocker. Veillez à prendre toutes les précautions nécessaires pour protéger ces clés, comme vous le feriez avec vos mots de passe ou d’autres informations de sécurité. Par exemple, vous pouvez les enregistrer dans un document Microsoft Word protégé par mot de passe ou dans un lecteur USB chiffré. Consultez la section [Plus](#more-information) d’informations pour obtenir un exemple de ces clés. 
+- Cette procédure implique la copie et l’enregistrement d’une clé de chiffrement BitLocker. Veillez à prendre toutes les précautions nécessaires pour protéger ces clés, comme vous le feriez avec vos mots de passe ou d’autres informations de sécurité. Par exemple, vous pouvez les enregistrer dans un document Microsoft Word protégé par mot de passe ou dans un lecteur USB chiffré. Consultez la section [Plus](#more-information) d’informations pour obtenir un exemple de ces clés. 
     
 - Une fois les fichiers PST importés dans une boîte aux lettres Microsoft 365, le paramètre de conservation de rétention de la boîte aux lettres est allumé pour une durée indéfinie. Cela signifie que la stratégie de rétention attribuée à la boîte aux lettres ne sera pas traitée tant que vous n’aurez pas désactivé la conservation de rétention ou défini une date pour désactiver la conservation. Quel est le but de cette action ? Si les messages importés dans une boîte aux lettres sont anciens, ils peuvent être supprimés définitivement (purgés) parce que leur période de conservation a expiré selon les paramètres de conservation configurés pour cette boîte aux lettres. La mise de la boîte aux lettres en attente de conservation donne au propriétaire de la boîte aux lettres le temps de gérer ces nouveaux messages importés ou de modifier les paramètres de conservation de la boîte aux lettres. Consultez la section [Plus d’informations](#more-information) pour obtenir des suggestions sur la gestion du conservation de rétention. 
     
@@ -110,9 +110,9 @@ Pour les questions fréquemment posées sur l’utilisation de l’expédition d
     
     Pour [plus d’informations,](#step-3-create-the-pst-import-mapping-file) voir Étape 3 : Créer le fichier de mappage d’importation PST. 
 
-## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>Étape 1 : Télécharger la clé de stockage sécurisé et l’outil d’importation PST
+## <a name="step-1-download-the-pst-import-tool"></a>Étape 1 : Télécharger l’outil d’importation PST
 
-La première étape consiste à télécharger la clé de stockage sécurisé et l’outil et que vous utilisez à l’étape 2 pour copier des fichiers PST sur le disque dur.
+La première étape consiste à télécharger l’outil et à l’utiliser à l’étape 2 pour copier des fichiers PST sur le disque dur.
   
 > [!IMPORTANT]
 > Vous devez utiliser l’outil Azure Import/Export version 1 (WAimportExportV1) pour importer correctement des fichiers PST à l’aide de la méthode d’expédition de disque. La version 2 de l’outil Azure Import/Export n’est pas prise en charge et son utilisation entraîne une préparation incorrecte du disque dur pour le travail d’importation. N’oubliez pas de télécharger l’outil azure Import/Export à partir du Centre de conformité Microsoft 365 en suivant les procédures de cette étape. 
@@ -132,13 +132,9 @@ La première étape consiste à télécharger la clé de stockage sécurisé et 
     
     ![Cliquez sur Expédier des disques durs vers l’un de nos emplacements physiques pour créer une tâche d’importation d’expédition de disque.](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
-6. Dans la page **Importer des données**, effectuez les deux opérations suivantes : 
+6. Dans la page **Importer des données,** faites les choses suivantes :     
     
-    ![Copiez la clé de stockage sécurisé et téléchargez l’outil d’importation et d’exportation Azure sur la page Importer des données.](../media/e22e0b48-e5ce-48e0-95bc-0490a2b3b983.png)
-  
-    a. À l’étape 2, cliquez **sur Afficher la clé de stockage sécurisé.** Une fois la clé de  stockage affichée, cliquez sur Copier dans le Presse-papiers, collez-la et enregistrez-la dans un fichier pour y accéder ultérieurement.
-    
-    b. À l’étape 3, **téléchargez l’outil Azure Import/Export** pour télécharger et installer l’outil Azure Import/Export (version 1).
+    **Téléchargez l’outil Azure Import/Export pour** télécharger et installer l’outil Azure Import/Export (version 1).
     
     - Dans la fenêtre pop-up, cliquez sur Enregistrer sous pour enregistrer le fichier WaImportExportV1.zip dans un dossier  \>  de votre ordinateur local. 
     

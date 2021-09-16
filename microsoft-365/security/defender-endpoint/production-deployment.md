@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fff8c3f461a84d7bb6616c2264120a4c8fcd0ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7bb79ca6e04d283ee9ec9d7e01113364ebd6588
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204666"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400605"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -62,7 +62,7 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
    ![Image de la page De gestion des licences Azure.](images/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
+1. Vous pouvez également accéder au Centre d’administration pour accéder **aux** \> **abonnements de facturation.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -111,7 +111,7 @@ Configurez un proxy statique basé sur le Registre pour autoriser uniquement le 
 
 1. Ouvrez la console de gestion des stratégies de groupe.
 2. Créez une stratégie ou modifiez une stratégie existante basée sur les pratiques organisationnelles.
-3. Modifiez la stratégie de groupe et accédez à Modèles d’administration Windows Collection de données des composants et Builds d’aperçu Configurer l’utilisation du proxy authentifié pour le service Expériences des **\> utilisateurs connectés \> \>** et télémétrie. 
+3. Modifiez la stratégie de groupe et accédez à Modèles d’administration Windows Collection de données des composants et Builds d’aperçu Configurer l’utilisation du proxy authentifié pour le service Expériences des **\> utilisateurs connectés \> \>** et télémétrie.
 
    ![Image de la configuration de la stratégie de groupe.](images/atp-gpo-proxy1.png)
 
@@ -196,8 +196,7 @@ Vous pouvez trouver les plages IP Azure dans [les plages IP azure](https://www.m
 
 > [!NOTE]
 > En tant que solution informatique, les plages d’adresses IP peuvent changer. Il est recommandé de passer aux règles DNS.
-
-> [!NOTE]
+>
 > Si vous êtes un client du gouvernement américain, consultez la section correspondante dans la page [Defender for Endpoint for US Government.](gov.md#service-backend-ip-ranges)
 
 ## <a name="next-step"></a>Étape suivante

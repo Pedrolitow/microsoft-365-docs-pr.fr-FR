@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: 1fe14035f23443a8f8f35b5c9ac9edf69bf60ffd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29f8821316fcd4caf87ca0b7f77fb6a9c4f8c85e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181336"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400893"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
@@ -85,12 +85,8 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
 
 10. Cliquez sur **Suivant**.
 
-11. Dans la page **Actions de protection,** si vous le souhaitez, vous pouvez personnaliser les notifications de conseil de stratégie et les e-mails de notification. Enable **When content matches the policy conditions, show policy tips to users and sen them an email notification,** then choose **Customize the tip and email**.
-1. c
-1. 
-1. 
-1. 
-1. hoose **Next**.
+11. Dans la page **Actions de protection,** si vous le souhaitez, vous pouvez personnaliser les notifications de conseil de stratégie et les e-mails de notification. Enable **When content matches the policy conditions, show policy tips to users and send them an email notification,** then choose **Customize the tip and email**.
+12. Sélectionnez **Suivant**.
 
 
 <!--    In this example, the U.S. PII Data template includes two predefined rules:

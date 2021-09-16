@@ -23,11 +23,11 @@ search.appverid:
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 entreprise.
 ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357193"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59402009"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer le courrier électronique et le calendrier d’entreprise à partir de Google Workspace
 

@@ -17,14 +17,17 @@ ms.custom:
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: 47c6f16efedbc3c5629bfe81e85cc6df66f51de2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3c2e0526074571ffbe976c98fe57069adcdb9ab
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178987"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400581"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
+
+> [!NOTE] 
+> Bing actualités & les mises à jour du secteur sont actuellement disponibles dans les marchés en anglais uniquement.
 
 Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et Microsoft Edge page nouvel onglet.
 
@@ -56,7 +59,7 @@ En tant qu’administrateur, vous contrôlez les paramètres de flux d’actuali
 
 1. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu. Par exemple, pour éviter que des articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le **champ Exclure du** contenu. Évitez d’inclure des termes généraux (le, il et, etc.) ; ils peuvent bloquer l’apparition de contenu pertinent dans vos flux d’actualités d’entreprise.
 
-1. Sélectionnez **Enregistrer**. L’apparition des modifications peut prendre jusqu’à 24 heures.
+1. Cliquez sur **Enregistrer**. L’apparition des modifications peut prendre jusqu’à 24 heures.
 
 ## <a name="industry-updates-in-email"></a>Mises à jour du secteur dans le courrier électronique
 

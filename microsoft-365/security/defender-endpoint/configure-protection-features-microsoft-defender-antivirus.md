@@ -16,11 +16,11 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.openlocfilehash: 776a3ba076abdb5727a878fd37dabf96407ce1ae
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357437"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401241"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurer la protection comportementale, heuristique et en temps réel.
 

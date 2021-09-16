@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les options de paramètres globaux pour la gestion de la confidentialité.
-ms.openlocfilehash: 071006c354d975cbed06834d60c2d647bbc5df60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd67dc80ab7dec2132bfffe190f64692f69076ed
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177836"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401049"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>Gérer les paramètres de gestion de la confidentialité (aperçu)
 
@@ -39,17 +39,9 @@ Les stratégies de gestion de la confidentialité vous permettent de définir de
 
 Intégrez Microsoft Teams fonctionnalités de gestion de la confidentialité pour améliorer la collaboration avec les parties prenantes. Chaque fois qu’une demande de droits d’objet est créée, une équipe associée est créée. Les utilisateurs peuvent être ajoutés à une équipe à partir de l’onglet Collaborateurs de la demande. Pour en savoir plus sur les demandes de droits d’objet, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
 
-## <a name="power-automate-flows"></a>Power Automate flux  
-
-Utilisez Power Automate flux de travail pour gérer automatiquement les processus et les tâches liés à la confidentialité. Vous pouvez créer des flux dans la section Paramètres à l’aide de modèles de gestion de la confidentialité intégrés ou utiliser la console Power Automate pour créer des flux personnalisés. Pour en savoir plus sur les Power Automate, consultez la documentation [Power Automate](/power-automate/) documentation.
-
 ## <a name="data-matching"></a>Correspondance de données  
 
 Utilisez cette section pour télécharger des schémas de données qui décrivent les attributs de vos sujets de données, ce qui permet d’identifier la sujet de données correcte lors de la recherche de données personnelles dans votre environnement Microsoft 365 données. Les schémas et les packages de règles sont créés et chargés au format XML. Sous téléchargement de données personnelles, vous pouvez également envoyer des données personnelles qui correspond à un schéma fourni. Vous pouvez créer et télécharger votre propre fichier ou choisir de télécharger des données personnelles à partir d’Azure. Pour en savoir plus sur les demandes de droits d’objet, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
-
-## <a name="data-retention-periods"></a>Périodes de rétention des données  
-
-Pour les demandes de droits d’objet, choisissez la durée de rétention des données collectées et des rapports que vous avez générés. Vous pouvez choisir entre 30 et 90 jours après la fermeture de la demande. Pour en savoir plus sur les demandes de droits d’objet, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
 
 ## <a name="data-review-tags"></a>Balises de révision des données  
 

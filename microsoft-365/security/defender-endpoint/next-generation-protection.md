@@ -16,11 +16,11 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.openlocfilehash: 4e443c2f964361be2e61e3bc2d3685f4172315df
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357089"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400569"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
 

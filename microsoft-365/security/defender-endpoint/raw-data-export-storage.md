@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5a38f1347c959cd52e0ae393fa60b4e9c371eb2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2631d68077a51df1ae3e2e7c6f4abd3a246c5d8c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209012"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401601"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers Stockage compte
 
@@ -52,7 +52,7 @@ ms.locfileid: "59209012"
 
 5. Choose **Forward events to stockage Azure**.
 
-6. Tapez votre **ID Stockage de compte de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under Stockage account resource **ID:**
+6. Tapez votre **ID Stockage de compte de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) properties tab copy the text under Stockage account resource \> \> **ID:**
 
    ![Image de l’ID1 de ressource du hub d’événements.](images/storage-account-resource-id.png)
 
@@ -60,19 +60,19 @@ ms.locfileid: "59209012"
 
 ## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schéma des événements dans le compte Stockage client
 
-- Un conteneur d’objets blob est créé pour chaque type d’événement : 
+- Un conteneur d’objets blob est créé pour chaque type d’événement :
 
   ![Image de l’ID2 de ressource du hub d’événements.](images/storage-account-event-schema.png)
 
-- Le schéma de chaque ligne d’un objet blob est le JSON suivant : 
+- Le schéma de chaque ligne d’un objet blob est le JSON suivant :
 
-  ```
+  ```json
   {
           "time": "<The time WDATP received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
           "properties": { <WDATP Advanced Hunting event as Json> }
-  }               
+  }
   ```
 
 - Chaque objet blob contient plusieurs lignes.
@@ -89,19 +89,20 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
 1. Connectez-vous [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com) et allez à la [page Recherche avancée.](https://securitycenter.windows.com/hunting-package)
 
-2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement : 
+2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
 
    ```
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- Voici un exemple d’événement Device Info : 
+- Voici un exemple d’événement Device Info :
 
   ![Image de l’ID3 de ressource du hub d’événements.](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
+
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API de diffusion en continu microsoft Defender pour point de terminaison](raw-data-export.md)
 - [Diffuser des événements Microsoft Defender for Endpoint vers votre compte de stockage Azure](raw-data-export-storage.md)

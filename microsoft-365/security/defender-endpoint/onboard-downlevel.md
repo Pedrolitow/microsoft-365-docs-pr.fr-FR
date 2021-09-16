@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1a000ec60d84e5abc4ec23591b917eb3072582e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 44a613f1f6a35f22f207b85180296c34ebf1cf11
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204701"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401265"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Intégrer des versions antérieures de Windows
 
@@ -38,7 +38,6 @@ ms.locfileid: "59204701"
 - Windows 8.1 Professionnel
 - Windows 8.1 Entreprise
 
-
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint étend la prise en charge pour inclure des systèmes d’exploitation de bas niveau, fournissant des fonctionnalités avancées de détection d’attaques et d’investigation sur les versions Windows pris en charge.
@@ -52,6 +51,7 @@ Pour intégrer des points de terminaison Windows client de niveau inférieur à 
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’il est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un point de terminaison [Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurer et mettre à jour System Center Endpoint Protection clients
+
 > [!IMPORTANT]
 > Cette étape est requise uniquement si votre organisation utilise System Center Endpoint Protection (SCEP).
 
@@ -59,7 +59,7 @@ Defender pour le point de terminaison s’intègre à System Center Endpoint Pro
 
 Les étapes suivantes sont nécessaires pour activer cette intégration :
 
-- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - Configurer l’appartenance au service protection cloud client SCEP sur le **paramètre** Avancé
 - Configurez votre réseau pour autoriser les connexions au Antivirus Microsoft Defender cloud. Pour plus d’informations, voir [Autoriser les connexions au Antivirus Microsoft Defender cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
@@ -70,7 +70,7 @@ Les étapes suivantes sont nécessaires pour activer cette intégration :
 Examinez les détails suivants pour vérifier la minimale requise :
 
 - Installer le rapport de mise à jour mensuelle de [février 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
   > [!NOTE]
   > Applicable uniquement pour Windows 7 SP1 Enterprise et Windows 7 SP1 Pro.
 
@@ -112,6 +112,7 @@ Une fois terminé, vous devriez voir les points de terminaison intégrés dans l
 - Si un proxy ou un pare-feu bloque tout le trafic par défaut et n’autorise que des domaines spécifiques ou que l’analyse HTTPS (inspection SSL) est activée, assurez-vous d’activer l’accès aux URL du [service Defender for Endpoint.](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
+
 Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
 
 ## <a name="offboard-client-endpoints"></a>Points de terminaison du client de hors-carte

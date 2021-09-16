@@ -15,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 80d8ec3a48ea8388d6c1807f2eccb9df334394de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 337f034dced0cad5d483b55fa279a7b220fb8e72
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203826"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401577"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -37,7 +37,7 @@ Vous trouverez de l’aide ici si vous rencontrez des problèmes lors de la migr
 
 Ouvrez l’application Observateur  d’événements en sélectionnant l’icône Rechercher dans la barre des tâches et en recherchant l’Observateur *d’événements.*
 
-Des informations sur Antivirus Microsoft Defender sont disponibles sous **Journaux** des applications et des services  >  **Microsoft**  >  **Windows**  >  **Windows Defender**.
+Des informations sur Antivirus Microsoft Defender sont disponibles sous **Journaux** des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender**.
 
 À partir de là, **sélectionnez Ouvrir** sous **Opérationnel.**
 
@@ -52,7 +52,7 @@ Ce problème peut se manifester sous la forme de plusieurs ID d’événement di
 ID d’événement|Nom du journal|Description|Source
 ---|---|---|---
 15 |Application|Mise à jour Windows Defender statut de l’SECURITY_PRODUCT_STATE_OFF.|Centre de sécurité
-5007|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender La configuration a changé.  S’il s’agit d’un événement inattendu, vous devez passer en revue les paramètres, car cela peut être le résultat d’un programme malveillant. <p> **Ancienne valeur :** Default\IsServiceRunning = 0x0 p> Nouvelle valeur **:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5007|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender La configuration a changé. S’il s’agit d’un événement inattendu, vous devez passer en revue les paramètres, car cela peut être le résultat d’un programme malveillant. <p> **Ancienne valeur :** Default\IsServiceRunning = 0x0 <p> **Nouvelle valeur :** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Opérationnel|Antivirus Windows Defender recherche de logiciels espions et d’autres logiciels potentiellement indésirables est désactivée.|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Comment savoir si Antivirus Microsoft Defender ne démarre pas car un antivirus tiers est installé
@@ -66,7 +66,7 @@ Sur un Windows 10, si vous n’utilisez pas Microsoft Defender pour Endpoint et 
 
 Pour ouvrir l’application Services, sélectionnez l’icône **Rechercher** dans la barre des tâches et recherchez des *services.* Vous pouvez également ouvrir l’application à partir de la ligne de commande en tapant *services.msc*.
 
-Les informations sur Antivirus Microsoft Defender seront répertoriées dans l’application Services sous **Windows Defender**  >  **Opérationnel**. Le nom du service antivirus *est Antivirus Windows Defender Service.*
+Les informations sur Antivirus Microsoft Defender seront répertoriées dans l’application Services sous **Windows Defender** \> **Opérationnel**. Le nom du service antivirus *est Antivirus Windows Defender Service.*
 
 Lors de la vérification de l’application, vous pouvez voir que le service *Antivirus Windows Defender* est prêt à être démarré manuellement, mais lorsque vous essayez de démarrer ce service manuellement, vous recevez un avertissement indiquant que le service Antivirus Windows Defender sur l’ordinateur local a démarré, puis s’est *arrêté. Certains services s’arrêtent automatiquement s’ils ne sont pas utilisés par d’autres services ou programmes.*
 
@@ -80,7 +80,7 @@ Vous pouvez générer un rapport détaillé sur les stratégies de groupe active
 GPresult.exe /h gpresult.html
 ```
 
-Cela génère un rapport situé sur *./gpresult.html*. Ouvrez ce fichier et vous pouvez voir les résultats suivants, selon la façon dont Antivirus Microsoft Defender été désactivé.
+Cela génère un rapport situé à *l’emplacement ./gpresult.html*. Ouvrez ce fichier et vous pouvez voir les résultats suivants, selon la façon dont Antivirus Microsoft Defender été désactivé.
 
 ##### <a name="group-policy-results"></a>Résultats de la stratégie de groupe
 
@@ -88,7 +88,7 @@ Cela génère un rapport situé sur *./gpresult.html*. Ouvrez ce fichier et vous
 
 Dans le rapport GPResults, sous le titre *Windows Components/Antivirus Windows Defender*, vous pouvez voir quelque chose comme l’entrée suivante, indiquant que Antivirus Microsoft Defender est désactivé.
 
-Politique|Setting|GPO qui a été gagné
+Stratégie|Paramètre|GPO qui a été gagné
 ---|---|---
 Désactiver la Antivirus Windows Defender|Activé|Win10-Workstations
 

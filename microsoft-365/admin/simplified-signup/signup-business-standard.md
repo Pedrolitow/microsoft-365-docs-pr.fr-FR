@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
-ms.openlocfilehash: 7c5489a674145052eb40c533595a245a1d785247
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 498906bf227aa4cfd6a964212bb9553932d32602
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178436"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401841"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -124,7 +124,7 @@ Pour offrir aux clients la plus grande souplesse possible, différentes options 
 
 Lorsque Facturation périodique est activée, votre abonnement sera toujours facturé chaque année le jour de votre abonnement. Vous pouvez le désactiver ou le réactiver dans le Centre d'administration si votre abonnement a l'état Actif. Pour plus d’informations, [vous pouvez désactiver ou activer la facturation périodique.](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
-### <a name="what-if-i-want-to-change-my-business-name-in-future-how-do-i-do-that"></a>Que se passe-t-il si je souhaite modifier le nom de mon entreprise à l’avenir ? Comment faire ?
+### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>Que faire si je souhaite modifier mon nom d’entreprise ?
 
 Contactez nos experts du support technique pour les petites entreprises qui peuvent vous aider à modifier votre nom d’entreprise. Pour plus d’informations, [vous pouvez obtenir de l’aide.](../../business-video/get-help-support.md)
 

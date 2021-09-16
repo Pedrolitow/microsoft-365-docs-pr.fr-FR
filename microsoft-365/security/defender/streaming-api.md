@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b8912ee40c090522a0b6228643f37b161dbde14
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180928"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401229"
 ---
 # <a name="streaming-api"></a>API de diffusion en continu
 
@@ -44,9 +44,10 @@ Rubrique | Description
 :---|:---
 [Flux d’événements dans les Hubs d’événements Azure](streaming-api-event-hub.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser [en](../defender/advanced-hunting-overview.md) continu le chasse avancée aux hubs d’événements.
 [Flux d’événements sur votre compte de stockage Azure](streaming-api-storage.md)| Découvrez comment activer l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser en continu la recherche avancée [sur](advanced-hunting-overview.md) votre compte de stockage Azure.
+[Types d’événements pris en charge](supported-event-types.md) | Découvrez les types d’événements de recherche avancée que l’API de diffusion en continu prend en charge.
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du chasse avancée](../defender/advanced-hunting-overview.md)
 - [Documentation Azure Event Hubs](/azure/event-hubs/)
 - [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)
