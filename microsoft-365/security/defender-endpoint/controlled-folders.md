@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 19737781f2c22a356da2c237e2f059a362140956
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2d9c6895abe4654270a9ae3818e2853fc00dd85
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222569"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400353"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -115,16 +115,13 @@ Vous pouvez consulter le journal Windows événements pour voir les événements
 
 Le tableau suivant indique les événements liés à l’accès contrôlé aux dossiers :
 
-<br>
-
-****
+<br/><br/>
 
 |ID d’événement|Description|
 |---|---|
 |5007|Événement lorsque les paramètres sont modifiés|
 |1124|Événement d’accès contrôlé aux dossiers audité|
 |1123|Événement d’accès contrôlé aux dossiers bloqué|
-|
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Afficher ou modifier la liste des dossiers protégés
 

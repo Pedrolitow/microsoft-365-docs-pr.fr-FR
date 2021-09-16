@@ -2,6 +2,8 @@
   href: index.yml
 - name: Nouveautés dans la conformité Microsoft 365
   href: whats-new.md
+- name: Essais de conformité
+  href: compliance-easy-trials.md
 - name: Prise en main
   items:
     - name: Tâches rapides pour la prise en main de la conformité
@@ -101,37 +103,45 @@
     - name: Types d’informations sensibles
       items:
         - name: En savoir plus sur les types d’informations sensibles
-          href: sensitive-information-type-learn-about.md
-        - name: Définitions d’entités des types d’informations sensibles
-          href: sensitive-information-type-entity-definitions.md
-        - name: Éléments recherchés par les fonctions DLP
-          href: what-the-dlp-functions-look-for.md
-        - name: Personnaliser un type d’informations sensibles intégré
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: Créer des types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
-          href: sit-edm-wizard.md
-        - name: Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
-          href: sit-modify-edm-schema-configurable-match.md
-        - name: Créer des notifications pour les activités de correspondance de données exactes (aperçu)
-          href: sit-edm-notifications-activities.md
-        - name: Démarrage avec des types d’informations sensibles personnalisés - Centre de conformité
-          href: create-a-custom-sensitive-information-type.md
-        - name: Créer un type d’informations sensibles personnalisé – PowerShell
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: Supprimer un type d’informations sensibles personnalisé – PowerShell
-          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
-        - name: Modifier un type d’informations sensibles personnalisé – PowerShell
-          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
-        - name: Référence de filtres de type d’informations sensibles personnalisé
-          href: sit-custom-sit-filters.md
-        - name: Créer un dictionnaire de mots clés
-          href: create-a-keyword-dictionary.md
-        - name: Modifier un dictionnaire de mots clés
-          href: sit-modify-keyword-dictionary.md
-        - name: Création d’une empreinte numérique de document
-          href: document-fingerprinting.md
+          items:
+            - name: En savoir plus sur les types d’informations sensibles
+              href: sensitive-information-type-learn-about.md
+            - name: Création d’une empreinte numérique de document
+              href: document-fingerprinting.md
+        - name: Démarrage avec le type d’informations sensibles
+          items:
+            - name: 'Démarrage avec des types d’informations sensibles personnalisés : centre de conformité'
+              href: create-a-custom-sensitive-information-type.md
+        - name: Utiliser des types d’informations sensibles
+          items:
+            - name: Personnaliser un type d’informations sensibles intégré
+              href: customize-a-built-in-sensitive-information-type.md
+            - name: Créer des types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte
+              href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+            - name: Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
+              href: sit-edm-wizard.md
+            - name: Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
+              href: sit-modify-edm-schema-configurable-match.md
+            - name: Créer des notifications pour les activités de correspondance de données exactes (aperçu)
+              href: sit-edm-notifications-activities.md
+            - name: Créer un type d’informations sensibles personnalisé – PowerShell
+              href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+            - name: Supprimer un type d’informations sensibles personnalisé – PowerShell
+              href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+            - name: Modifier un type d’informations sensibles personnalisé – PowerShell
+              href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+            - name: Créer un dictionnaire de mots clés
+              href: create-a-keyword-dictionary.md
+            - name: Modifier un dictionnaire de mots clés
+              href: sit-modify-keyword-dictionary.md
+        - name: Référence de type d’informations sensibles
+          items:
+            - name: Définitions d’entités des types d’informations sensibles
+              href: sensitive-information-type-entity-definitions.md
+            - name: Éléments recherchés par les fonctions DLP
+              href: what-the-dlp-functions-look-for.md
+            - name: Référence de filtres de type d’informations sensibles personnalisé
+              href: sit-custom-sit-filters.md
     - name: Classifieurs avec capacité d’apprentissage
       items:
         - name: En savoir plus sur les classifieurs avec capacité d’apprentissage
@@ -166,7 +176,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Activer la co-édition pour des documents chiffrés par des étiquettes de confidentialité (aperçu)
+        - name: Activer la co-édition pour les documents chiffrés par des étiquettes de confidentialité
           href: sensitivity-labels-coauthoring.md
         - name: Gérer les étiquettes de confidentialité dans les applications Office
           href: sensitivity-labels-office-apps.md
@@ -321,7 +331,7 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: Conditions et exceptions de la stratégie DLP
               href: dlp-conditions-and-exceptions.md
-            - name: Migrer les politiques de prévention des pertes de données d'Exchange Online vers le centre de conformité (aperçu)
+            - name: Migrer des stratégies de protection contre la perte de données Exchange Online vers le Centre de conformité
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Référence des conseils de stratégie de prévention contre la perte de données
               href: dlp-policy-tips-reference.md

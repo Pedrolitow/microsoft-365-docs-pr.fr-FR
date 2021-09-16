@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La zone de demande de droits de l’objet dans la gestion de la confidentialité Microsoft vous permet de rechercher des données personnelles et de collaborer sur l’examen du contenu et la création de rapports.
-ms.openlocfilehash: 28059996d4969b23f856df3bb05584b4055ba3d2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c994d87593ff6fb04e9fd58025e8079d30511e0
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202332"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399585"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Gérer les demandes de droits de l’objet dans la gestion de la confidentialité (aperçu)
 
@@ -102,7 +102,7 @@ Cette étape indique que la gestion de la confidentialité est en cours de récu
 
 - Choisissez d’inclure les éléments identifiés dans vos résumés et/ou d’exporter. Si une correspondance signalée n’est pas requise dans l’exportation ou le rapport, sélectionnez l’option « Exclure ». Si le contenu semble être un faux positif, vous pouvez choisir « Ne correspond pas » pour exclure le fichier de vos rapports finals et pointer l’élément comme un élément qui n’aurait pas dû être choisi par la demande. Pour définir l’état d’un élément, utilisez le menu d’action (ellipses verticales) en dehors de son nom et sélectionnez le choix souhaité. Si vous y êtes invité, ajoutez une note de référence interne pour expliquer votre décision. Les remarques sont requises lors de l’exclusion de fichiers.
 - Utilisez l’option **Appliquer des balises** pour vous aider à identifier les éléments qui ont besoin d’attention. Les balises disponibles incluent les options fournies par le système, par exemple le marquage d’un élément pour le suivi, et peuvent inclure des balises personnalisées telles que définies sous Paramètres.
-- Utilisez **Annotate pour** créer des marques ou des actions en ligne sur un fichier sélectionné. Par exemple, si vous avez besoin d’inclure un fichier pour un individu qui contient également les informations personnelles d’autres personnes, vous pouvez utiliser l’action de zone **(sous** le bouton Dessin dans la barre de commandes) pour noircir toutes les informations qui ne concernent pas la personne qui a effectué la demande. Lorsque vos modifications sont terminées, sélectionnez Inclure pour ajouter le fichier rédigé à la demande. Notez que l’annotation crée une copie du fichier, de sorte que rien dans le fichier d’origine ne soit modifié et reste à son emplacement d’origine. La copie est stockée dans votre objet blob Azure et restera pendant toute la période de rétention des données. Pour plus d’informations, voir [Rétention des données ci-dessous.](#data-retention)
+- Utilisez **Annotate pour** créer des marques ou des actions en ligne sur un fichier sélectionné. Par exemple, si vous avez besoin d’inclure un fichier pour un individu qui contient également les informations personnelles d’autres personnes, vous pouvez utiliser l’action de zone **(sous** le bouton Dessin dans la barre de commandes) pour noircir toutes les informations qui ne concernent pas la personne qui a effectué la demande. Lorsque vos modifications sont terminées, sélectionnez Inclure pour ajouter le fichier rédigé à la demande. Notez que l’annotation crée une copie du fichier, de sorte que rien dans le fichier d’origine ne soit modifié et reste à son emplacement d’origine. La copie est stockée dans votre objet blob Azure.
 - Pour passer en revue les notes d’un élément, sélectionnez-le et sélectionnez l’onglet Notes de fichier. Vous pouvez également utiliser l’option Ajouter une note de fichier pour créer un commentaire. Pour passer en revue ou ajouter des notes à un niveau de cas global, allez dans l’onglet Notes principal ci-dessus et utilisez **ajouter une note de cas.** Ces notes sont visibles pour les utilisateurs qui travaillent sur la demande, mais ne sont pas incluses dans le rapport final ou partagées avec la sujet des données.
 
 Une fois que tous les éléments ont  été révisés et que leur statut a été définie, sélectionnez Révision complète pour ouvrir un volet de passage en revue dans lequel vous pouvez passer en revue un résumé des données et ajouter des notes pertinentes. Ces notes sont pour la conservation d’enregistrement interne et ne sont pas partagées avec la sujet de données. Sélectionnez à nouveau Révision complète pour passer à l’étape suivante. Les résumés de vos décisions seront fournis ultérieurement sous l’onglet Rapports.
@@ -122,10 +122,6 @@ Pour afficher des informations détaillées sur la recherche de données derriè
 Vous aurez la possibilité  ici d’afficher un aperçu des résultats de recherche pour voir le type de contenu qui sera renvoyé pour cette requête. Si vous déterminez que vous souhaitez modifier les propriétés de cette recherche et que vous n’avez pas commencé la phase Récupérer les données, vous pouvez utiliser l’option Modifier la requête **de** recherche. Cet Assistant offre la possibilité de modifier ou d’ajouter des propriétés pour l’identification des sujets de données, vos filtres et conditions de recherche, ainsi que les emplacements dans lesquels rechercher des données (notamment Exchange, SharePoint, OneDrive et/ou Teams). Utilisez ces options pour atteindre le niveau de spécificité souhaité. Vous pouvez passer en revue la version finale de votre nouvelle requête avant d’atteindre **Enregistrer.**
 
 Lorsque vous avez terminé de modifier votre requête de recherche, une nouvelle recherche s’exécute pour remplacer vos résultats de recherche précédents. Cela réinitialise votre état dans la section Progression à la première étape, **l’estimation des données.** La nouvelle recherche peut prendre jusqu’à 60 minutes. Une fois l’analyse effectuée, vous verrez les résultats mis à jour sur la page de détails de la demande.
-
-### <a name="data-retention"></a>Rétention des données
-
-Les rapports générés par le biais de cet outil et les données associées, telles que les fichiers annotés enregistrés dans Azure, sont stockés pendant une durée spécifiée. Cette durée est définie au niveau global **jusqu’Paramètres** dans la section **Périodes** de rétention des données, qui vous permet de choisir entre 30 et 90 jours. Pour en savoir plus, [consultez La prise en charge de la gestion de la confidentialité.](privacy-management-setup.md)
 
 ## <a name="collaborate-on-requests-with-teams"></a>Collaborer sur des demandes avec Teams
 

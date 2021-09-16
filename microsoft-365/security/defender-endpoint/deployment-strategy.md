@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 528e7ed0f7655cd873a42a5b953049d078d19803
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 99f4bf80dcfc7a621d3249eae20b41100b1e5ab8
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209822"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399264"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Planifier le déploiement de Microsoft Defender pour point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "59209822"
 
 Planifiez votre déploiement de Microsoft Defender pour endpoint afin d’optimiser les fonctionnalités de sécurité de la suite et de mieux protéger votre entreprise contre les cybermenaces.
 
-Cette solution fournit des instructions sur l’identification de l’architecture de votre environnement, la sélection du type d’outil de déploiement qui répond le mieux à vos besoins et des instructions sur la configuration des fonctionnalités.
+Cette solution fournit des conseils sur l’identification de l’architecture de votre environnement, la sélection du type d’outil de déploiement qui répond le mieux à vos besoins et des instructions sur la configuration des fonctionnalités.
 
 ![Image du flux de déploiement.](images/deployment-guide-plan.png)
 
@@ -48,7 +48,7 @@ Utilisez les documents suivants pour sélectionner l’architecture defender pou
 
 | Item | Description |
 |:-----|:-----|
-|[![Image miniature de la stratégie de déploiement de Defender for Endpoint.](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
+|[![Image miniature de la stratégie de déploiement de Defender for Endpoint.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
 
 ## <a name="step-2-select-deployment-method"></a>Étape 2 : Sélectionner la méthode de déploiement
 
@@ -66,12 +66,12 @@ Le tableau suivant répertorie les points de terminaison pris en charge et l’o
 
 ## <a name="step-3-configure-capabilities"></a>Étape 3 : Configurer les fonctionnalités
 
-Après l’intégration des points de terminaison, configurez les fonctionnalités de sécurité dans Defender pour endpoint afin que vous pouvez optimiser la protection de sécurité robuste disponible dans la suite. Les fonctionnalités sont les suivantes :
+Après l’intégration des points de terminaison, configurez les fonctionnalités de sécurité dans Defender pour le point de terminaison afin que vous pouvez optimiser la protection de sécurité robuste disponible dans la suite. Les fonctionnalités sont les suivantes :
 
 - Détection et réponse du point de terminaison
 - Protection de nouvelle génération
 - Réduction de la surface d'attaque
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Phases de déploiement](deployment-phases.md)

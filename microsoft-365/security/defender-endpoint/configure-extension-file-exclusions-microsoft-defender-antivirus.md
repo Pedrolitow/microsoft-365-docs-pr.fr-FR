@@ -14,13 +14,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 08/27/2021
-ms.openlocfilehash: 76508ef21b60d4376512f08a07925eca109f68e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/14/2021
+ms.openlocfilehash: 5dfa84335e9f31e531759b209ac3c2491c657fe0
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209684"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399801"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -51,13 +51,10 @@ Pour exclure certains fichiers de Antivirus Microsoft Defender analyses, vous mo
 >
 > Les exclusions automatiques s’appliquent uniquement Windows Server 2016 et ultérieures. Ces exclusions ne sont pas visibles dans l’application Sécurité Windows et dans PowerShell.
 
-Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’extension de fichier et l’emplacement du dossier.
+Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’extension de fichier et l’emplacement du dossier. 
+<br/><br/>
 
-<br>
-
-****
-
-|Exclusion|範例|Liste d’exclusions|
+|Exclusion|Exemples|Liste d’exclusions|
 |---|---|---|
 |Tout fichier avec une extension spécifique|Tous les fichiers avec l’extension spécifiée, n’importe où sur l’ordinateur. <p> Syntaxe valide : `.test` et `test`|Exclusions d’extensions|
 |N’importe quel fichier sous un dossier spécifique|Tous les fichiers sous le `c:\test\sample` dossier|Exclusions de fichiers et de dossiers|
@@ -191,7 +188,7 @@ Pour [plus d’instructions, voir Ajouter des exclusions Sécurité Windows’ap
 
 ## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Utiliser des caractères génériques dans les listes d’exclusion de nom de fichier et de dossier ou d’extension
 
-Vous pouvez utiliser l’astérisque, le point d’interrogation ou les variables d’environnement (par exemple) comme caractères génériques lors de la définition d’éléments dans la liste d’exclusion du nom de fichier ou du chemin `*` `?` `%ALLUSERSPROFILE%` d’accès du dossier. La façon dont ces caractères génériques sont interprétés diffère de leur utilisation habituelle dans d’autres applications et langues. Veillez à lire cette section pour comprendre leurs limitations spécifiques.
+Vous pouvez utiliser l’astérisque, le point d’interrogation ou les variables d’environnement `*` `?` (par exemple) comme caractères génériques lors de la définition d’éléments dans la liste d’exclusion du nom de fichier ou du chemin d’accès du `%ALLUSERSPROFILE%` dossier. La façon dont ces caractères génériques sont interprétés diffère de leur utilisation habituelle dans d’autres applications et langues. Veillez à lire cette section pour comprendre leurs limitations spécifiques.
 
 > [!IMPORTANT]
 > Il existe des limitations clés et des scénarios d’utilisation pour ces caractères génériques :
@@ -203,11 +200,11 @@ Vous pouvez utiliser l’astérisque, le point d’interrogation ou les variable
     
 Le tableau suivant décrit comment les caractères génériques peuvent être utilisés et fournit quelques exemples.
 
-<br>
+<br/><br/>
 
-|Caractère générique|範例|
+|Caractère générique|Exemples|
 |---|---|
-|`*` (astérisque) <p> Dans **les inclusions** de nom de fichier et d’extension de fichier, l’astérisque remplace un nombre quelconque de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de** dossiers, l’astérisque remplace un dossier unique. Utilisez plusieurs `*` dossiers avec barres obliques `\` pour indiquer plusieurs dossiers imbrmbrés. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier et ses `C:\somepath\Archives\Data` sous-dossiers, `C:\somepath\Authorized\Data` ainsi que ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier et ses `C:\Serv\Primary\Denied\Backup` sous-dossiers `C:\Serv\Secondary\Allowed\Backup` et ses sous-dossiers|
+|`*` (astérisque) <p> Dans **les inclusions** de nom de fichier et d’extension de fichier, l’astérisque remplace un nombre quelconque de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** l’astérisque remplace un dossier unique. Utilisez plusieurs `*` dossiers avec barres obliques `\` pour indiquer plusieurs dossiers imbrmbrés. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier et ses `C:\somepath\Archives\Data` sous-dossiers, `C:\somepath\Authorized\Data` ainsi que ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier et ses `C:\Serv\Primary\Denied\Backup` sous-dossiers `C:\Serv\Secondary\Allowed\Backup` et ses sous-dossiers|
 |`?` (point d’interrogation)  <p> Dans **les inclusions de** nom de fichier et d’extension de fichier, le point d’interrogation remplace un seul caractère et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** le point d’interrogation remplace un seul caractère dans un nom de dossier. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut `C:\somepath\P\Data` n’importe quel fichier dans et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclut n’importe `C:\somepath\test01\Data` quel fichier et ses sous-dossiers|
 |Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée.|`%ALLUSERSPROFILE%\CustomLogFiles` inclut `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
@@ -222,8 +219,7 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 
 ### <a name="system-environment-variables"></a>Variables d’environnement système
 
-Le tableau suivant répertorie et décrit les variables d’environnement de compte système.
-
+Le tableau suivant répertorie et décrit les variables d’environnement de compte système.<br/><br/>
     
 |Cette variable d’environnement système...|Redirige vers cette|
 |---|---|
@@ -358,7 +354,7 @@ Pour plus d’informations, voir [Utiliser les cmdlets PowerShell pour configure
 
 Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide de PowerShell avec la cmdlet ou la classe WebClient .NET pour télécharger `Invoke-WebRequest` un fichier de test.
 
-Dans l’extrait de code PowerShell suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter l’cmdlet dans ce chemin d’accès.
+Dans l’extrait de code PowerShell suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la cmdlet dans ce chemin d’accès.
 
 ```PowerShell
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"

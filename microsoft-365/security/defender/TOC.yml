@@ -386,6 +386,8 @@
                       href: streaming-api-event-hub.md
                     - name: Événements de repérage avancé Stream vers votre compte de stockage
                       href: streaming-api-storage.md
+                    - name: Types d’événements pris en charge
+                      href: supported-event-types.md
                     - name: Configurer votre hub d’événements
                       href: configure-event-hub.md
                 - name: API de recherche avancée de menaces
@@ -402,7 +404,7 @@
                       href: api-get-incident.md
     - name: Microsoft Defender pour Office 365
       href: ../office-365-security/index.yml
-    - name: "Microsoft\_Defender pour point de terminaison"
+    - name: Microsoft Defender pour point de terminaison
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender pour l’identité
       href: /defender-for-identity

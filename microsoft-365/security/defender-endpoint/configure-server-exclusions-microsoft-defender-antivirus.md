@@ -16,12 +16,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
-ms.openlocfilehash: d50146c3689f7b19fc6b546478bc0b01ada1fc30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31a5eb4e322a4ed897f0bcc59b6dffe1f53da43d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204047"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401961"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
@@ -39,16 +39,13 @@ Comme Antivirus Microsoft Defender est intégré à Windows Server 2016 et ulté
 
 Le présent article contient les sections suivantes :
 
-<br>
-
-****
+<br/><br/>
 
 |Section|Description|
 |---|---|
 |[Exclusions automatiques sur Windows Server 2016 ou ultérieure](#automatic-exclusions-on-windows-server-2016-or-later)|Décrit les deux principaux types d’exclusions automatiques et inclut une liste détaillée des exclusions automatiques|
 |[Refuser les exclusions automatiques](#opting-out-of-automatic-exclusions)|Comprend des considérations et des procédures importantes décrivant comment refuser les exclusions automatiques|
-|[Définition d’exclusions personnalisées](#defining-custom-exclusions)|Fournit des liens vers des informations de procédure pour définir des exclusions personnalisées|
-|
+|[Définition d’exclusions personnalisées](#defining-custom-exclusions)|Fournit des liens vers des procédures pour définir des exclusions personnalisées|
 
 > [!IMPORTANT]
 > Gardez les points suivants à l’esprit :
@@ -167,16 +164,13 @@ Cette section répertorie les exclusions par défaut pour tous les rôles dans W
 
 Le tableau suivant répertorie les exclusions de types de fichiers, les exclusions de dossiers et les exclusions de processus qui sont automatiquement livrées lorsque vous installez le rôle Hyper-V.
 
-<br>
-
-****
+<br><br/>
 
 |Type d’exclusion|Spécificités|
 |---|---|
 |Types de fichiers|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
 |Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
 |Processus|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
-|
 
 ##### <a name="sysvol-files"></a>Fichiers SYSVOL
 
@@ -193,7 +187,7 @@ Le tableau suivant répertorie les exclusions de types de fichiers, les exclusio
 
 #### <a name="active-directory-exclusions"></a>Exclusions Active Directory
 
-Cette section répertorie les exclusions qui sont automatiquement livrées lorsque vous installez les services de domaine Active Directory (AD DS).
+Cette section répertorie les exclusions qui sont livrées automatiquement lorsque vous installez les services de domaine Active Directory (AD DS).
 
 ##### <a name="ntds-database-files"></a>Fichiers de base de données NTDS
 
@@ -338,7 +332,7 @@ Vous pouvez désactiver les listes d’exclusion automatique avec la stratégie 
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utiliser la stratégie de groupe pour désactiver la liste d’exclusions automatiques sur Windows Server 2016 et Windows Server 2019
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
 2. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
 

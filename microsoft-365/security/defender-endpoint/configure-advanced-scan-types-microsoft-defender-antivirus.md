@@ -14,14 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 05/26/2021
+ms.date: 09/14/2021
 ms.topic: how-to
-ms.openlocfilehash: 9c25e0fd4dbdd9e8e2c05c0a3a49d767d5dbd3c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 87200c519aa27a2f8472a025f90a283978fd21a0
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179372"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399813"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
@@ -53,10 +53,6 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 
 ### <a name="settings-and-locations"></a>Paramètres et emplacements
 
-<br>
-
-****
-
 |Élément de stratégie et emplacement|Paramètre par défaut (s’il n’est pas configuré)|Paramètre PowerShell `Set-MpPreference` ou propriété WMI pour la `MSFT_MpPreference` classe|
 |---|---|---|
 |Analyse du courrier électronique <p> **Analyse** \> **Activer l’analyse du courrier électronique**<p>Voir [limitations de l’analyse du](#email-scanning-limitations) courrier électronique (dans cet article)|Désactivé|`-DisableEmailScanning`|
@@ -70,7 +66,6 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 |Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
 |Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Sans limite|Non disponible <p>La valeur par défaut de 0 ne s’applique pas à la limite|
 |Configurer une faible priorité du processeur pour les analyses programmées <p> **Analyse** \> **Configurer une faible priorité du processeur pour les analyses programmées**|Désactivé|Non disponible|
-|
 
 > [!NOTE]
 > Si la protection en temps réel est désactivée, les fichiers sont analysés avant d’être accessibles et exécutés. L’étendue d’analyse inclut tous les fichiers, y compris les fichiers sur les supports amovibles montés, tels que les lecteurs USB. Si l’appareil qui effectue l’analyse dispose d’une protection en temps réel ou d’une protection à l’accès, l’analyse inclut également les partages réseau.
@@ -96,7 +91,7 @@ L’analyse du courrier électronique permet d’analyser les fichiers de messag
 
 Les fichiers PST utilisés par Outlook 2003 ou une ancienne génération (où le type d’archive est non unicode) sont également analysés, mais Antivirus Microsoft Defender ne peut pas corriger les menaces détectées dans les fichiers PST.
 
-Si Antivirus Microsoft Defender une menace à l’intérieur d’un message électronique, elle affiche les informations suivantes pour vous aider à identifier le courrier électronique compromis, afin que vous pouvez corriger la menace manuellement :
+Si Antivirus Microsoft Defender une menace à l’intérieur d’un message électronique, elle vous indique les informations suivantes pour vous aider à identifier le courrier électronique compromis, afin que vous pouvez corriger la menace manuellement :
 
 - Sujet de l’e-mail
 - Nom de la pièce jointe

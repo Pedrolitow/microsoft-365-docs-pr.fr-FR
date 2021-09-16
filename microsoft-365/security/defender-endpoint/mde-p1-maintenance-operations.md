@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: c74549579efc9ddf94aa89cfe2007620ddd2d826
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b462fd6c02e455b7bd5ed41c71462628a0d0071b
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204702"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399405"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Gérer Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -47,7 +47,7 @@ Pour gérer votre veille sur la sécurité et les mises à jour de produit, voir
 
 Defender pour le point de terminaison vous offre beaucoup de flexibilité et d’options de configuration. Vous pouvez ajuster et ajuster vos paramètres en fonction des besoins de votre organisation. Par exemple, vous pouvez utiliser Microsoft Endpoint Manager, une stratégie de groupe et d’autres méthodes pour gérer vos paramètres de sécurité de point de terminaison. 
 
-Pour plus d’informations, [voir Gérer Defender pour Endpoint.](manage-atp-post-migration.md)
+Pour plus d’informations, [voir Gérer Defender pour endpoint.](manage-atp-post-migration.md)
 
 ## <a name="address-false-positivesnegatives"></a>Corriger les faux positifs/négatifs
 

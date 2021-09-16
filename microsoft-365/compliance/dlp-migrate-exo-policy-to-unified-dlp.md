@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 description: Découvrez comment planifier et migrer vos stratégies Exchange protection contre la perte de données en ligne vers Microsoft 365 DLP.
 ms.openlocfilehash: 2cf06b7aee9adb63ff85259427bcac818807cc7c
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357468"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400521"
 ---
 # <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Migrer Exchange Online stratégies de protection contre la perte de données vers le Centre de conformité
 

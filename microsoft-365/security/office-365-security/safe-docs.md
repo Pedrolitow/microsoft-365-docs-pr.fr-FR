@@ -16,12 +16,12 @@ ms.collection:
 description: Découvrez comment Coffre documents dans Microsoft 365 E5 ou Microsoft 365 E5 Sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ccedf53b9978329935ceb28bb0ba0695f3da67c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 74b01872a1b5aee75730f203fec9b2b0ebf77fdc
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179131"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400905"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documents sécurisés dans Microsoft 365 E5
 
@@ -30,11 +30,12 @@ ms.locfileid: "59179131"
 **S’applique à**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Coffre Les documents sont une fonctionnalité premium qui utilise [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) point de terminaison pour analyser les documents et les fichiers ouverts en affichage protégé ou Application Guard [pour Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
+Coffre Les documents sont une fonctionnalité premium qui utilise le système principal cloud de [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour analyser les documents Office ouverts en affichage protégé ou Application Guard [pour Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+Les utilisateurs n’ont pas besoin que Defender for Endpoint soit installé sur leurs appareils locaux pour obtenir la protection Coffre Documents. Les utilisateurs Coffre protection des documents si toutes les conditions suivantes sont remplies :
 
-- Disponibilité des documents Coffre contrôlés par le service **Office 365 SafeDocs** (ou **SAFEDOCS** ou **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7**) (également appelé plan de service). Ce plan de service est disponible dans les plans de gestion des licences suivants (également appelés plans de licence, plans Microsoft 365 ou produits) :
+- Coffre Les documents sont activés dans l’organisation comme décrit dans cet article.
+- Les licences d’un plan de gestion des licences requis sont attribuées aux utilisateurs. Coffre Les documents sont contrôlés par le plan de service **Office 365 SafeDocs** (ou **SAFEDOCS** ou **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7**) (également appelé service). Ce plan de service est disponible dans les plans de gestion des licences suivants (également appelés plans de licence, plans Microsoft 365 ou produits) :
   - Microsoft 365 A5 pour les enseignants
   - Microsoft 365 A5 pour les étudiants
   - Microsoft 365 E5
@@ -42,13 +43,11 @@ Coffre Les documents sont une fonctionnalité premium qui utilise [Microsoft Def
 
   Coffre Les documents ne sont pas inclus dans les plans de gestion des Office 365 Microsoft Defender.
 
-  Pour plus d’informations, voir les rubriques suivantes :
+  Pour plus d’informations, voir Noms de produits [et identificateurs de plan de service pour la gestion des licences.](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
-  - [Afficher Microsoft 365 licences et services avec PowerShell](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
-  - [Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
-  - [Noms de produits et identificateurs de plan de service pour la gestion des licences](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+- Ils utilisent Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) version 2004 ou ultérieure.
 
-- Coffre Les documents sont pris en charge Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) version 2004 ou ultérieure.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **Coffre pièces jointes,** utilisez <https://security.microsoft.com/safeattachmentv2> .
 
@@ -88,7 +87,7 @@ Les fichiers envoyés par Coffre Documents ne sont pas conservés dans Defender 
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utiliser Exchange Online PowerShell pour configurer Coffre Documents
 
-Utilisez la syntaxe suivante :
+Si vous préférez utiliser PowerShell pour configurer Coffre Documents, utilisez la syntaxe suivante dans Exchange Online PowerShell :
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
@@ -118,11 +117,11 @@ Pour plus d’informations, voir les rubriques suivantes :
 
 - [Afficher Microsoft 365 licences et services avec PowerShell](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
 - [Afficher Microsoft 365 licence de compte et les détails du service avec PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
-- [Noms de produits et identificateurs de plan de service pour la gestion des licences](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+- [Noms de produits et identificateurs de plans de service pour la gestion des licences](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Intégration au service Microsoft Defender for Endpoint pour activer les fonctionnalités d’audit
 
-Pour déployer Microsoft Defender pour endpoint, vous devez passer par les différentes phases de déploiement. Après l’intégration, vous pouvez configurer les fonctionnalités d’audit dans Microsoft 365 Defender portail.
+Pour activer les fonctionnalités d’audit, Microsoft Defender pour point de terminaison doit être installé sur l’appareil local. Pour déployer Microsoft Defender pour endpoint, vous devez passer par les différentes phases de déploiement. Après l’intégration, vous pouvez configurer les fonctionnalités d’audit dans Microsoft 365 Defender portail.
 
 Pour plus d’informations, [voir Intégrer au service Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/onboarding) Si vous avez besoin d’aide supplémentaire, reportez-vous à Résoudre les problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
 
@@ -138,7 +137,7 @@ Pour vérifier que vous avez activé et configuré Coffre Documents, faites l’
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
 
-- Les fichiers suivants sont disponibles pour tester la protection Coffre documents. Ces documents sont similaires au fichier EICAR.TXT pour tester les solutions antivirus et anti-programme malveillant. Les fichiers ne sont pas dangereux, mais ils déclenchent la protection Coffre documents.
+- Les fichiers suivants sont disponibles pour tester la protection Coffre documents. Ces fichiers sont similaires au fichier EICAR.TXT pour tester les solutions antivirus et anti-programme malveillant. Les fichiers ne sont pas dangereux, mais ils déclenchent la protection Coffre documents.
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)

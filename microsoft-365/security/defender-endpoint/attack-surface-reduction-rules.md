@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6dcfd27cb609231c7caa4a486044d91140b0c4b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ef91e980f5cb49432a223b50a94fb0bf2354746
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209876"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399825"
 ---
 # <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
 
@@ -42,51 +42,52 @@ Le tableau suivant répertorie les règles de réduction de la surface d’attaq
 >
 > - Sauf indication contraire, la version Windows 10 minimale est la &nbsp; version 1709 (RS3, build 16299) ou ultérieure ; la version minimale de Windows Server est &nbsp; la version 1809 ou ultérieure.
 >
-> - \* Toutes les règles prisent en charge les exclusions de fichiers et de dossiers, sauf indication contraire.
+> - \* Toutes les règles assurent la prise en charge des exclusions de fichiers et de dossiers, sauf indication contraire.
 
 |Nom de la règle|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Serveur|&nbsp;Windows Server 2016|&nbsp;Windows Server 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![pris en charge.](images/checkmark.png) <br><br> | ![pris en charge.](images/checkmark.png) <br><br> | ![pris en charge.](images/checkmark.png) <br><br> version 1803 (canal semi-annuel) ou version ultérieure |  |  |
-|[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) <br><br> version 1809 ou ultérieure | ![Pris en charge](images/checkmark.png) | ![Pris en charge](images/checkmark.png)  <br><br> |  |  |
-|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![pris en charge.](images/checkmark.png) <br><br> version 1803 ou ultérieure | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![pris en charge.](images/checkmark.png) <br><br> version 1803 ou ultérieure | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Les exclusions de fichiers et de dossiers ne sont pas pris en charge._ | ![pris en charge.](images/checkmark.png) <br><br> version 1903 (build 18362) ou version ultérieure| ![Pris en charge](images/checkmark.png) | ![Pris en charge](images/checkmark.png) <br><br> version 1903 (build 18362) ou version ultérieure |  |  |
-|[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![pris en charge.](images/checkmark.png) <br><br> version 1803 ou ultérieure | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br>  |  |  |
-|[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | ![pris en charge.](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
-|[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | ![pris en charge.](images/checkmark.png) <br><br> version 1803 ou ultérieure | ![Pris en charge](images/checkmark.png) <br><br> | ![Pris en charge](images/checkmark.png) <br><br> |  |  |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Y version 1803 (canal semi-annuel) ou version ultérieure |  |  |
+|[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | Y version 1809 ou ultérieure | v | v  <br><br> |  |  |
+|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |  |  |
+|[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 ou ultérieure | v <br><br> | v <br><br> |  |  |
+|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | v | v <br><br> | v <br><br> |  |  |
+|[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y version 1803 ou ultérieure | v <br><br> | v <br><br> |  |  |
+|[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts) | v | v <br><br> | v <br><br> |  |  |
+|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v <br><br> | v <br><br> |  |  |
+|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | v | v <br><br> | v <br><br> |  |  |
+|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)  | v | v <br><br> | v <br><br> |  |  |
+|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | v | v <br><br> | v <br><br> |  |  |
+|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_Les exclusions de fichiers et de dossiers ne sont pas pris en charge._ | Y version 1903 (build 18362) ou version ultérieure| v | v <br><br> version 1903 (build 18362) ou version ultérieure |  |  |
+|[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y version 1803 ou ultérieure | v <br><br> | v <br><br>  |  |  |
+|[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v <br><br> | v <br><br> |  |  |
+|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |  |  |
+|[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 ou ultérieure | v <br><br> | v <br><br> |  |  |
 | **Nom de la règle** |  **&nbsp;Windows 10** | **&nbsp;Windows Server 2019** | **&nbsp;Windows Serveur** | **&nbsp;Windows Server 2016** | **&nbsp;Windows Server 2012 R2** |
 
 ## <a name="supported-configuration-management-systems"></a>Systèmes de gestion de la configuration pris en charge
 
 Les liens vers des informations sur les versions du système de gestion de la configuration référencés dans ce tableau sont répertoriés sous ce tableau.
 
-|Nom de la règle|Intune|Gestionnaire de point de terminaison Microsoft|Microsoft Endpoint Configuration Manager|Stratégie de groupe|PowerShell|
+|Nom de la règle | Intune | Gestionnaire de point de terminaison Microsoft |Microsoft Endpoint Configuration Manager |Stratégie de <sup> groupe [[1](#fn1)]<sup></sup> | PowerShell <sup> [[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![pris en charge.](images/checkmark.png) <br><br>  |  ![Pris en charge](images/checkmark.png) <br><br> MEM OMA-URI |   |   |  ![Pris en charge](images/checkmark.png) <br><br> |
-|[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) |   |   |
-|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![pris en charge.](images/checkmark.png)  |   |  ![Pris en charge](images/checkmark.png) <br><br> CB 1802 |   |   |
-|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | ![pris en charge.](images/checkmark.png) |  | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 | ![Pris en charge](images/checkmark.png) |   |
-|[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1802 |   |   |
-|[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts) | ![pris en charge.](images/checkmark.png) |   |  ![Pris en charge](images/checkmark.png)  <br><br> CB 1710 |   |   |
-|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![pris en charge.](images/checkmark.png) |   |  ![Pris en charge](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | ![pris en charge.](images/checkmark.png) <br><br> |  | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
-|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes) | ![pris en charge.](images/checkmark.png) |  |  ![Pris en charge](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) |  | ![Pris en charge](images/checkmark.png) <br><br>  CB 1710 |   |   |
-|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |   |   |
-|[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![Pris en charge](images/checkmark.png) |   |   |   |   |
-|[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1802 <br><br> |   |   |
-|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
-|[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | ![pris en charge.](images/checkmark.png) |   |  ![Pris en charge](images/checkmark.png) <br><br>  CB 1802 |   |   |
-| **Nom de la règle** | **Intune** | **Microsoft Endpoint Manager** | **Microsoft Endpoint Configuration Manager** | **Stratégie de groupe** | **PowerShell** |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![pris en charge.](images/checkmark.png) <br><br>  |  ![Pris en charge](images/checkmark.png) <br><br> MEM OMA-URI |   | ![pris en charge.](images/checkmark.png) <br><br>  |  ![Pris en charge](images/checkmark.png) <br><br> |
+|[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![pris en charge.](images/checkmark.png)  |   |  ![Pris en charge](images/checkmark.png) <br><br> CB 1802 | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail) | ![pris en charge.](images/checkmark.png) |  | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 | ![Pris en charge](images/checkmark.png) | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1802 |  ![pris en charge.](images/checkmark.png) <br><br> |  ![pris en charge.](images/checkmark.png) <br><br> |
+|[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts) | ![pris en charge.](images/checkmark.png) |   |  ![Pris en charge](images/checkmark.png)  <br><br> CB 1710 | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![pris en charge.](images/checkmark.png) |   |  ![Pris en charge](images/checkmark.png) <br><br> CB 1710 | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content) | ![pris en charge.](images/checkmark.png) <br><br> |  | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 <br><br> | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes) | ![pris en charge.](images/checkmark.png) |  |  ![Pris en charge](images/checkmark.png) <br><br> CB 1710 | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes) | ![pris en charge.](images/checkmark.png) |  | ![Pris en charge](images/checkmark.png) <br><br>  CB 1710 | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |![pris en charge.](images/checkmark.png) <br><br>   | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![Pris en charge](images/checkmark.png) |   |   |  ![pris en charge.](images/checkmark.png) <br><br> | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1802 <br><br> | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros) | ![pris en charge.](images/checkmark.png) |   | ![Pris en charge](images/checkmark.png) <br><br> CB 1710 <br><br> | ![pris en charge.](images/checkmark.png) <br><br>  |  ![pris en charge.](images/checkmark.png) <br><br> |
+|[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware) | ![pris en charge.](images/checkmark.png) |   |  ![Pris en charge](images/checkmark.png) <br><br>  CB 1802 | ![pris en charge.](images/checkmark.png) <br><br>  | ![pris en charge.](images/checkmark.png) <br><br>  |
+
+  (<a id="fn1">1</a>) Vous pouvez configurer des règles de réduction de la surface d’attaque pour chaque règle à l’aide du GUID de n’importe quelle règle.
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
@@ -113,13 +114,15 @@ Nom Intune : `Block abuse of exploited vulnerable signed drivers`
 
 GUID :  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
-Type d’action DEA :
+<!-- Hide this intro with no subsequent list items
+Advanced hunting action type:
+-->
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Empêcher Adobe Reader de créer des processus enfants
 
 Cette règle empêche les attaques en empêchant Adobe Reader de créer des processus.
 
-Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants peuvent télécharger et lancer des charges utiles, et sortir d’Adobe Reader. En empêchant les processus enfants d’être générés par Adobe Reader, les programmes malveillants qui tentent de l’utiliser comme vecteur sont empêchés de se propager.
+Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants peuvent télécharger et lancer des charges utiles, et sortir d’Adobe Reader. En bloquant la production de processus enfants par Adobe Reader, les programmes malveillants qui tentent de l’utiliser comme vecteur sont empêchés de se propager.
 
 Nom Intune : `Process creation from Adobe Reader (beta)`
 
@@ -127,7 +130,7 @@ Nom du Gestionnaire de configuration : pas encore disponible
 
 GUID : `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
@@ -144,7 +147,7 @@ Nom du Gestionnaire de configuration : `Block Office application from creating c
 
 GUID : `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
@@ -156,7 +159,7 @@ Cette règle empêche le vol d’informations d’identification en verrouillean
 LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Microsoft Defender Credential Guard dans Windows 10 normalement les tentatives d’extraction d’informations d’identification à partir de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
 
 > [!NOTE]
-> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais qui n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
+> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
 
 Nom Intune : `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -164,7 +167,7 @@ Nom du Gestionnaire de configuration : `Block credential stealing from the Windo
 
 GUID : `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
@@ -182,7 +185,7 @@ Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executa
 
 GUID : `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
@@ -217,7 +220,7 @@ Nom du Gestionnaire de configuration : `Block executable files from running unle
 
 GUID : `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
@@ -234,7 +237,7 @@ Nom du Gestionnaire de configuration : `Block execution of potentially obfuscate
 
 GUID : `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
@@ -251,14 +254,14 @@ Nom du Gestionnaire de configuration : `Block JavaScript or VBScript from launch
 
 GUID : `d3e037e1-3eb8-44c8-a917-57927947596d`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
 
-Cette règle empêche Office applications, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
+Cette règle empêche les applications Office, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
 
 Les programmes malveillants qui utilisent Office comme vecteur peuvent tenter de sortir de Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et persisteraient sur le système. Par conséquent, cette règle se défendre contre une technique de persistance courante.
 
@@ -268,7 +271,7 @@ Nom SCCM : `Block Office applications from creating executable content`
 
 GUID : `3b576869-a4ec-4529-8536-b80a7769e899`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
@@ -289,7 +292,7 @@ Nom du Gestionnaire de configuration : `Block Office applications from injecting
 
 GUID : `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
@@ -309,7 +312,7 @@ Nom du Gestionnaire de configuration : non disponible
 
 GUID : `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
@@ -329,7 +332,7 @@ Nom du Gestionnaire de configuration : non disponible
 
 GUID : `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
@@ -347,7 +350,7 @@ Nom du Gestionnaire de configuration : non applicable
 
 GUID : `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
@@ -362,7 +365,7 @@ Nom du Gestionnaire de configuration : `Block untrusted and unsigned processes t
 
 GUID : `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
@@ -386,7 +389,7 @@ Nom du Gestionnaire de configuration : `Block Win32 API calls from Office macros
 
 GUID : `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
@@ -410,7 +413,7 @@ Nom du Gestionnaire de configuration : `Use advanced protection against ransomwa
 
 GUID : `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-Type d’action DEA :
+Type d’action de recherche avancée :
 
 - AsrRansomwareAudited
 - AsrRansomwareBlocked

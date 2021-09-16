@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2a0dfd562416ba4501104f9c015bb60d75140d28
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5fb39cd97aee44edfd774c2c79080f3adaf9da2
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203874"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400365"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -37,6 +37,7 @@ ms.locfileid: "59203874"
 Certaines conditions minimales sont requises pour l’intégration d’appareils au service. Découvrez les licences, la configuration matérielle et logicielle requise et d’autres paramètres de configuration pour intégrer des appareils au service.
 
 > [!TIP]
+>
 > - Cet article décrit les conditions minimales requises pour Microsoft Defender pour Endpoint Plan 2. Si vous recherchez des informations sur Defender pour Endpoint Plan 1 (prévisualisation), voir [Requirements for Defender for Endpoint Plan 1 (preview).](mde-p1-setup-configuration.md#review-the-requirements)
 > - Découvrez les dernières améliorations apportées à Defender for Endpoint : [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender pour le point de terminaison a démontré les fonctionnalités d’optique et de détection de pointe du secteur dans l’évaluation MITRE récente. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
@@ -51,7 +52,7 @@ Microsoft Defender pour le point de terminaison nécessite l’une des offres de
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Sécurité
 - Sécurité Microsoft 365 A5
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
@@ -66,27 +67,24 @@ Microsoft Defender pour le point de terminaison pour les serveurs nécessite l�
 > [!NOTE]
 > Les clients peuvent acquérir des licences serveur (une par environnement de système d’exploitation de serveur couvert) pour Microsoft Defender pour Endpoint for Servers s’ils ont un minimum combiné de 50 licences pour une ou plusieurs des licences utilisateur suivantes :
 >
-> * Microsoft Defender pour point de terminaison
-> * Windows E5/A5
-> * Microsoft 365 E5/A5
-> * Microsoft 365 E5/A5
+> - Microsoft Defender pour point de terminaison
+> - Windows E5/A5
+> - Microsoft 365 E5/A5
+> - Microsoft 365 E5/A5
 
 Pour obtenir des informations détaillées sur les licences, consultez le [site](https://www.microsoft.com/licensing/terms/) Termes du produit et travaillez avec votre équipe de compte pour en savoir plus sur les conditions générales.
 
 Pour plus d’informations sur le tableau des fonctionnalités Windows 10 éditions, voir [Comparer Windows 10 éditions.](https://www.microsoft.com/windowsforbusiness/compare)
 
-
-
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 
 L’accès à Defender pour le point de terminaison s’fait par le biais d’un navigateur, qui permet de prendre en charge les navigateurs suivants :
 
-- Microsoft Edge
+- Microsoft Edge
 - Google Chrome
 
 > [!NOTE]
 > Bien que d’autres navigateurs fonctionnent, les navigateurs mentionnés sont pris en charge.
-
 
 ## <a name="hardware-and-software-requirements"></a>Configuration matérielle et logicielle requise
 
@@ -120,7 +118,6 @@ La configuration matérielle requise pour Defender pour Endpoint sur les apparei
 >
 > Pour les environnements virtuels, nous vous recommandons Windows 10 Entreprise LTSC 2019 ou une ultérieure.
 
-
 ### <a name="other-supported-operating-systems"></a>Autres systèmes d’exploitation pris en charge
 
 - [Android](microsoft-defender-endpoint-android.md)
@@ -131,16 +128,14 @@ La configuration matérielle requise pour Defender pour Endpoint sur les apparei
 > [!NOTE]
 > Vous devez vérifier que les distributions linux et les versions d’Android, iOS et macOS sont compatibles avec Defender for Endpoint pour que l’intégration fonctionne.
 
-
-
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Configuration requise pour le stockage réseau et les données
 
-Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives aux points de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
+Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives au point de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
 
 > [!NOTE]
+>
 > - Vous ne pouvez pas modifier votre emplacement de stockage de données après la première installation.
 > - Pour plus d’informations sur l’endroit et la façon dont Microsoft stocke vos données, voir Microsoft Defender for [Endpoint data storage and privacy.](data-storage-privacy.md)
-
 
 ### <a name="diagnostic-data-settings"></a>Paramètres de données de diagnostic
 
@@ -150,13 +145,11 @@ Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vo
 Assurez-vous que le service de données de diagnostic est activé sur tous les appareils de votre organisation.
 Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez des données de capteur à partir de ces données.
 
-**Utilisez la ligne de commande pour vérifier le type** Windows 10 de démarrage du service de données de diagnostic :
+#### <a name="use-the-command-line-to-check-the-windows-10-diagnostic-data-service-startup-type"></a>Utiliser la ligne de commande pour vérifier le type Windows 10 de démarrage du service de données de diagnostic
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
-
-   1.  Accéder à **Démarrer** et taper **cmd**.
-
-   1.  Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
+   1. Accéder à **Démarrer** et taper **cmd**.
+   2. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
 2. Entrez la commande suivante, puis appuyez sur **Entrée**:
 
@@ -168,30 +161,25 @@ Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez de
 
    ![Résultat de la commande de requête sc pour diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
-
 Vous devez configurer le service pour qu’il démarre automatiquement si la START_TYPE n’est pas définie sur **AUTO_START**. 
 
+#### <a name="use-the-command-line-to-set-the-windows-10-diagnostic-data-service-to-automatically-start"></a>Utiliser la ligne de commande pour définir le Windows 10 de données de diagnostic pour démarrer automatiquement
 
-**Utilisez la ligne de commande pour configurer Windows 10 service de données de diagnostic pour démarrer automatiquement :**
-
-1.  Ouvrez une invite de ligne de commande avec élévation de niveaux sur le point de terminaison :
-
+1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur le point de terminaison :
     1. Accéder à **Démarrer** et taper **cmd**.
+    2. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
-    1. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
-
-2.  Entrez la commande suivante, puis appuyez sur **Entrée**:
+2. Entrez la commande suivante, puis appuyez sur **Entrée**:
 
     ```console
     sc config diagtrack start=auto
     ```
 
-3.  Un message de réussite s’affiche. Vérifiez la modification en entrant la commande suivante, puis appuyez sur **Entrée**:
+3. Un message de réussite s’affiche. Vérifiez la modification en entrant la commande suivante, puis appuyez sur **Entrée**:
 
     ```console
     sc qc diagtrack
     ```
-
 
 #### <a name="internet-connectivity"></a>Connexion à Internet
 
@@ -202,7 +190,6 @@ Le capteur Defender pour point de terminaison peut utiliser une bande passante m
 Pour plus d’informations sur les paramètres de configuration proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
 
 Avant d’intégrer des appareils, le service de données de diagnostic doit être activé. Le service est activé par défaut dans Windows 10.
-
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus Microsoft Defender configuration requise
 
@@ -219,15 +206,13 @@ Si vous intégrer des serveurs et que Antivirus Microsoft Defender n’est pas l
 > [!NOTE]
 > Votre stratégie de groupe normale ne s’applique pas à la protection contre les falsifications et les modifications apportées aux paramètres Antivirus Microsoft Defender sont ignorées lorsque la protection contre la falsification est en cours d’utilisation.
 
-
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Antivirus Microsoft Defender Le pilote ELAM (Anti-programme malveillant à lancement précoce) est activé
 
 Si vous exécutez Antivirus Microsoft Defender en tant que produit anti-programme malveillant principal sur vos appareils, l’agent Defender pour Endpoint est correctement intégré.
 
 Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, [voir s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
-
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Configurer Microsoft Defender pour le déploiement de point de terminaison](production-deployment.md)
 - [Intégration des appareils](onboard-configure.md)

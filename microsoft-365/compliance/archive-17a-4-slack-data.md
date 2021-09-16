@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Slack DataParser 17a-4 pour importer et archiver des données Slack dans Microsoft 365.
 ms.openlocfilehash: ecb9a3dcbc0c28aa9dffc5108bd4361b96752456
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357264"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399633"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>Configurer un connecteur pour archiver les données Slack
 
@@ -79,6 +79,6 @@ Après avoir créé un connecteur Slack DataParser, vous pouvez afficher l’ét
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
 
 Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

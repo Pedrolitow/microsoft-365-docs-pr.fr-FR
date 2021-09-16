@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 80a3d5bee2f26e708969832c67982f679b95c0b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b092db48a27407bd5e3ef3fdfd6c6eda02ef0c34
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222529"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401937"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control Removable Stockage Protection
 
@@ -98,9 +98,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 
 Microsoft Defender pour endpoint Device Control Removable Stockage Protection vous permet de restreindre l’accès au stockage amovible en fonction des propriétés décrites dans le tableau ci-dessous :
 
-<br>
-
-****
+<br/><br/>
 
 |Nom de la propriété|Stratégies applicables|S’applique aux systèmes d’exploitation|Description|
 |---|---|---|---|
@@ -108,8 +106,7 @@ Microsoft Defender pour endpoint Device Control Removable Stockage Protection vo
 |ID principal|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)|Windows|L’ID principal inclut le stockage amovible, le CD/DVD et Windows appareil portable/WPD.|
 |ID d’appareil|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md); <p> [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison](control-usb-devices-using-intune.md)|Windows|Pour plus d’informations sur les formats d’ID d’appareil, voir Identificateurs [USB](/windows-hardware/drivers/install/standard-usb-identifiers)standard, par exemple, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07|
 |ID matériel|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md) <p> [Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de Microsoft Defender pour le point de terminaison](control-usb-devices-using-intune.md)|Windows|Une chaîne a identifié l’appareil dans le système, par exemple USBSTOR\DiskGeneric_Flash_Disk___8.07 ; **Remarque**: l’ID matériel n’est pas unique ; différents appareils peuvent partager la même valeur.|
-|ID d’instance|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md) <p> Installation de l’appareil|Windows|Une chaîne identifie de manière unique l’appareil dans le système, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
+|ID d’instance|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md) <p> Installation d’appareil|Windows|Une chaîne identifie de manière unique l’appareil dans le système, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0|
 |Nom convivial|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)|Windows|Chaîne attachée à l’appareil, par exemple, périphérique USB de disque mémoire générique|
 |ID fournisseur/ID de produit|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)|Windows <p> macOS|L’ID de fournisseur est le code fournisseur à quatre chiffres que le comité USB affecte au fournisseur. L’ID de produit est le code de produit à quatre chiffres que le fournisseur affecte à l’appareil . Prise en charge des caractères génériques.|
 |Serial NumberId|[Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)|Windows <p> macOS |Par exemple, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
-|

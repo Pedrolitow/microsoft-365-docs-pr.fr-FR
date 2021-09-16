@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: siosulli
 author: siosulli
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -19,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour la réessuration.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7bd845f67c25dae154832dbe280b6d158b22db8c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b36497ad6abe0325ea5d8830c4e1995370161c87
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208699"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400917"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utiliser le portail soumissions pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft
 
@@ -125,6 +124,9 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 > [!div class="mx-imgBorder"]
 > ![Exemple d’envoi de nouvelles pièces jointes.](../../media/submission-file-flyout.png)
 
+> [!NOTE]
+> Si le filtrage des programmes malveillants a remplacé les pièces jointes du message par le fichier Text.txt d’alerte anti-programme malveillant, vous devez envoyer le message d’origine à partir de la quarantaine qui contient les pièces jointes d’origine. Pour plus d’informations sur la mise en quarantaine et sur la façon de libérer des messages avec des faux positifs de programmes malveillants, voir Gérer les messages et fichiers mis en quarantaine [en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
+
 ## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur à Microsoft
 
 1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** \> **Submissions**.
@@ -170,7 +172,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
      - **Aucune**
      - **Type**
      - **Raison**
-     - **État**
+     - **Status**
      - **Résultat rescan**
 
    - Pour exporter les entrées, cliquez sur **Exporter.** Dans la boîte de dialogue qui s’affiche, enregistrez .csv fichier.

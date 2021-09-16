@@ -17,11 +17,11 @@ search.appverid:
 description: Lorsque vous effectuez une analyse Advanced eDiscovery, le thread de messagerie analyse une conversation par courrier électronique et sépare chaque message en différentes catégories.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: feb0294b47e01eae6849835e92e390a912558c71
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357449"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399873"
 ---
 # <a name="email-threading-in-advanced-ediscovery"></a>Threads de messagerie dans Advanced eDiscovery
 

@@ -8,18 +8,18 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: ab2e2e2d1ab0b2ac35a6fd99efe9ef68ea477b44
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 55fb264981dcad52856fe9115345891c2b3387b4
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203142"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400293"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-preview-and-plan-2"></a>Microsoft Defender pour endpoint Plan 1 (prévisualisation) et Plan 2
 
@@ -30,7 +30,7 @@ Microsoft Defender pour point de terminaison est une plate-forme de sécurité d
 
 ## <a name="compare-defender-for-endpoint-plans"></a>Comparer les plans De Defender pour les points de terminaison
 
-Le tableau suivant décrit ce qui est inclus dans chaque plan à un niveau élevé.
+Le tableau suivant décrit ce qui est inclus dans chaque plan à un niveau élevé. <br/><br/>
 
 | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/>(aperçu) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/>(disponible maintenant) |
 |:---|:---|

@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43190dabe55ab3600a05aa8e6094c6ad7393a04d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae7d6d448c753737a96db4f74ffd6532ed7e6e66
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182287"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399597"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
@@ -53,7 +53,7 @@ Lorsque vous définissez des stratégies pour les obstacles à l’information, 
 | (Selon les besoins) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md) | - Modifier un segment<br/>- Modifier ou supprimer une stratégie<br/>- Réexécuter l’application de stratégie<br/>- Afficher l’état de la stratégie |
 | (Selon les besoins) [Résolution des problèmes](information-barriers-troubleshooting.md)| - Prendre des mesures lorsque les choses ne fonctionnent pas comme prévu|
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 En plus des [licences et autorisations requises,](information-barriers.md#required-licenses-and-permissions)assurez-vous que les conditions suivantes sont remplies :
 
@@ -70,21 +70,21 @@ En plus des [licences et autorisations requises,](information-barriers.md#requir
 
 - Aucune stratégie de carnet d’adresses - Avant de définir et d’appliquer des stratégies de barrières aux informations, assurez-vous qu’Exchange stratégies de carnet d’adresses ne sont pas en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous avez de telles stratégies, veillez d’abord à supprimer [vos stratégies de carnet d’adresses.](/exchange/address-books/address-book-policies/remove-an-address-book-policy) Une fois que les stratégies d’obstacle aux informations  sont activées et que le carnet [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) d’adresses hiérarchique est activé, tous les utilisateurs qui ne sont pas inclus dans un segment de barrières de l’information voient le carnet d’adresses hiérarchique dans Exchange en ligne.
 
-- PowerShell : actuellement, les stratégies d’obstacle aux informations sont définies et gérées dans le Centre de sécurité Office 365 conformité & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et paramètres PowerShell. Vous aurez également besoin du module Azure PowerShell’équipe.
+- PowerShell : actuellement, les stratégies d’obstacle aux informations sont définies et gérées dans le Centre de sécurité & conformité PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et paramètres PowerShell. Vous aurez également besoin du Azure Active Directory module PowerShell.
   - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell)
-  - [Installer le module Azure PowerShell’installation](/powershell/azure/install-az-ps)
+  - [Installer Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2)
 
 - Consentement de l’administrateur pour les obstacles à l’information dans Microsoft Teams : lorsque vos stratégies DE DISTRIBUTION sont en place, ils peuvent supprimer les utilisateurs de conformité non-TOA des groupes (c’est-à-dire les canaux Teams, qui sont basés sur des groupes). Cette configuration permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies d’obstacle aux informations de fonctionner comme prévu dans Microsoft Teams.
 
-   1. Conditions préalables : installer les Azure PowerShell à partir [d’Install Azure PowerShell](/powershell/azure/install-az-ps).
+   1. Conditions préalables : [installer Azure Active Directory PowerShell pour Graph](/powershell/azure/active-directory/install-adv2).
 
    1. Exécutez les cmdlets PowerShell suivantes :
 
       ```powershell
-      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
+      Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
-      if ($sp -eq $null) { New-AzureADServicePrincipal -ApplicationId $appId }
+      if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 

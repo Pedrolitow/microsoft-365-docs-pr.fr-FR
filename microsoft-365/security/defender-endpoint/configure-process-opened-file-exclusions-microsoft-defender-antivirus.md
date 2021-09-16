@@ -15,12 +15,12 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: ea06094121f9c6a654234da1cb6d7757db5c78dd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e78706f1c95dd507ae41a6bf89403c45dc689b73
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203153"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400281"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -35,16 +35,13 @@ Cet article explique comment configurer des listes d’exclusions.
 
 ## <a name="examples-of-exclusions"></a>Exemples d’exclusions
 
-<br>
-
-****
+<br/><br/>
 
 |Exclusion|Exemple|
 |---|---|
 |Tout fichier sur l’ordinateur ouvert par n’importe quel processus avec un nom de fichier spécifique|La spécification `test.exe` exclurait les fichiers ouverts par : <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
 |Tout fichier sur l’ordinateur ouvert par un processus sous un dossier spécifique|La spécification `c:\test\sample\*` exclurait les fichiers ouverts par : <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Tout fichier sur l’ordinateur ouvert par un processus spécifique dans un dossier spécifique|La spécification `c:\test\process.exe` exclurait les fichiers ouverts uniquement par `c:\test\process.exe`|
-|
 
 Lorsque vous ajoutez un processus à la liste d’exclusions de processus, Antivirus Microsoft Defender n’analyse pas les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus proprement dit sera analysé, sauf s’il a également été ajouté à la liste [d’exclusions de fichiers.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
@@ -97,16 +94,13 @@ Le format des cmdlets est :
 
 Les listes suivantes sont autorisées en tant que \<cmdlet\> :
 
-<br>
-
-****
+<br/><br/>
 
 |Action de configuration|Cmdlet PowerShell|
 |---|---|
 |Créer ou overwrite la liste|`Set-MpPreference`|
 |Ajouter à la liste|`Add-MpPreference`|
 |Supprimer des éléments de la liste|`Remove-MpPreference`|
-|
 
 > [!IMPORTANT]
 > Si vous avez créé une liste, avec ou , en utilisant à nouveau la `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` cmdlet, la liste existante est réécrite.
@@ -143,15 +137,12 @@ En particulier, vous ne pouvez pas utiliser le caractère générique de point d
 
 Le tableau suivant décrit comment les caractères génériques peuvent être utilisés dans la liste d’exclusions de processus :
 
-<br>
-
-****
+<br/><br/>
 
 |Caractère générique|Exemple d’utilisation|Exemples de correspondances|
 |---|---|---|
 |`*` (astérisque) <p> Remplace un nombre quelconque de caractères|`C:\MyData\*`|Tout fichier ouvert par `C:\MyData\file.exe`|
 |Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|Tout fichier ouvert par `C:\ProgramData\CustomLogFiles\file.exe`|
-|
 
 ## <a name="review-the-list-of-exclusions"></a>Passer en revue la liste des exclusions
 
@@ -181,7 +172,7 @@ Utilisez la cmdlet suivante :
 Get-MpPreference
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Récupérer une liste d’exclusions spécifique à l’aide de PowerShell
 
@@ -192,7 +183,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
 
 ## <a name="related-articles"></a>Articles connexes
 

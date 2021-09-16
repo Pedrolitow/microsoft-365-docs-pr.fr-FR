@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a372ae3b15b35c03449973fba2b1181a8ed68ac2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 32ee06e77b9c3f32e4bb9b07458925a254756d2d
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177315"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401889"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurer les fonctionnalités de protection contre les menaces dans Microsoft 365
 
@@ -90,21 +90,18 @@ Microsoft 365 Defender unifie les alertes, les incidents, l’examen et la répo
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Plus d’informations sur Microsoft 365 Defender
 
-- [Qu’est-ce que Microsoft 365 Defender ?](../security/defender/microsoft-365-defender.md)
+- [Qu’est-ce que Microsoft 365 Defender ?](../security/defender/microsoft-365-defender.md)
 - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Étape 4 : Configurer Microsoft Defender pour Office 365
 
 [Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques (pièces jointes et URL), les Office documents et les outils de collaboration. Le tableau suivant répertorie les fonctionnalités et fonctionnalités de Microsoft Defender Office 365 incluses dans Microsoft 365 E5 :
 
-<br>
-
-****
+<br/><br/>
 
 |Fonctionnalités de configuration, de protection et de détection|Fonctionnalités d’automatisation, d’examen, de correction et d’éducation|
 |---|---|
 |[Pièces jointes fiables](../security/office-365-security/safe-attachments.md) <p> [Liens fiables](../security/office-365-security/safe-links.md) <p> [Documents sécurisés](../security/office-365-security/safe-docs.md) <p> [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Protection anti-hameçonnage dans Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Suivi des menaces](../security/office-365-security/threat-trackers.md) <p> [Threat Explorer](../security/office-365-security/threat-explorer.md) <p> [Examen et réponse automatisés](../security/office-365-security/office-365-air.md) <p> [Formation à la simulation d'attaque](../security/office-365-security/attack-simulation-training.md)|
-|
 
 Avec Microsoft Defender pour Office 365, les membres de votre organisation peuvent communiquer et collaborer plus en toute sécurité, avec une protection contre les menaces pour leur contenu de messagerie et leurs documents Office documents.
 
@@ -187,16 +184,13 @@ Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/?lin
 
 Microsoft 365 fournit les ressources suivantes pour aider à informer les utilisateurs de votre organisation :
 
-<br>
-
-****
+<br/><br/>
 
 |Concept|Ressources|
 |---|---|
 |Microsoft 365|[Parcours d’apprentissage personnalisables](/office365/customlearning/) <p> Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs finaux de votre organisation.|
 |Sécurité Microsoft 365|[Learning module : sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365) <p> Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
 |Authentification multifacteur|[Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p> Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée au niveau de votre organisation.|
-|
 
 En plus de ces conseils, Microsoft recommande à vos utilisateurs d’prendre les mesures décrites dans cet article : Protéger votre compte et vos appareils contre les pirates [informatiques et les programmes malveillants.](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx) Ces actions incluent :
 

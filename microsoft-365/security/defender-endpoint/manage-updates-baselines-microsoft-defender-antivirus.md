@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 09/08/2021
-ms.openlocfilehash: e136556bc2749261230e0267355ed68ef811e0a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c29579ff183b74ce74d6f3f1a725a028da5874d5
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203027"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401901"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -518,7 +518,7 @@ Pendant la phase de support technique (uniquement), les incidents de support com
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Version de plateforme incluse dans Windows 10 versions
 
-Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plateforme et de moteur qui sont livrées avec les versions les Windows 10 les plus récentes :
+Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plateforme et de moteur qui sont livrées avec les versions les Windows 10 les plus récentes :<br/><br/>
 
 |Windows 10 version  |Version de la plateforme  |Version du moteur |Phase de prise en charge |
 |:---|:---|:---|:---|

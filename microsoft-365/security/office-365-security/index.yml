@@ -5,20 +5,20 @@ metadata:
   title: Documentation sur la sécurité Office 365 Microsoft Defender for
   description: Découvrez les solutions de sécurité robustes de Defender pour Office 365 mieux protéger vos outils de messagerie et de collaboration.
   services: office-365-security-compliance
-  ms.service: O365-seccomp
-  ms.subservice: subservice
+  ms.prod: m365-security
+  ms.technology: mdo
   ms.topic: landing-page
   ms.collection: m365-security-compliance
   author: mjcaparas
   ms.author: macapara
   ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: b379b42ae3c01c8359003407f3fb58834a8c074e
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 5e105fda4e1a37bdc2ba9eab22ba13d8f9b42e30
+  ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59162455"
+  ms.lasthandoff: 09/16/2021
+  ms.locfileid: "59402081"
 landingContent:
 - title: Defender for Office 365 & Exchange Online Protection
   linkLists:
@@ -50,7 +50,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Configurer SPF pour empêcher l’usurpation d’identité
+    - text: Configurer SPF pour empêcher l’usurpation
       url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
     - text: Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
       url: use-dkim-to-validate-outbound-email.md

@@ -19,11 +19,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 577c87aff1a5e5c95760ea169859da592d05727c
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357101"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400341"
 ---
 # <a name="microsoft-defender-security-center"></a>Centre de sécurité Microsoft Defender
 

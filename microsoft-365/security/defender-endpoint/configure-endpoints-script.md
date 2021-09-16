@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e1a681fb7d521c26327bec3d22bff233926a279f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1e6bcd4991ea94f1b46b43f446f5f40f6f2e1d4
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209833"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399249"
 ---
 # <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Intégrer les appareils Windows 10 à l’aide d’un script local
 
@@ -40,9 +40,8 @@ Vous pouvez également intégrer manuellement des appareils individuels à Defen
 
 ## <a name="onboard-devices"></a>Intégration des appareils
 
-[![Image du PDF montrant les différents chemins de déploiement.](images/onboard-script.png)](images/onboard-script.png#lightbox)
 
-Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
+Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [ou Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
 1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [du portail Microsoft 365 Defender](https://security.microsoft.com/):
     1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.
@@ -105,7 +104,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
     3. Dans le **champ Méthode de** déploiement, sélectionnez Script **local.**
     4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
-2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
    1. Accéder à **Démarrer** et taper **cmd**.
@@ -132,7 +131,7 @@ La surveillance peut également être effectuée directement sur le portail ou �
 2. Cliquez sur **Inventaire des appareils.**
 3. Vérifiez que les appareils apparaissent.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)

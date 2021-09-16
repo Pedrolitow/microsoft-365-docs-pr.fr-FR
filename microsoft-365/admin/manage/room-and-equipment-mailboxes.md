@@ -23,40 +23,55 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: 7c4406a16e3318adabcb50ff14ef75b0abce1b6d
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 7cee521b4046a3d5ca3acc6dabb657a56ccbc7d3
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566173"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400557"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
 
 Si vous avez une salle de conférence, un véhicule de société ou un équipement que plusieurs personnes peuvent utiliser, vous devez mettre au point une méthode de réservation de ces ressources pour tout le monde. Il est recommandé de créer une boîte aux lettres de salle ou de ressource dans Microsoft 365 pour chaque ressource. Vous pouvez en créer une pour une salle de conférence, des équipements multimédia ou un véhicule utilitaire.
   
-Une fois que vous avez créé une boîte aux lettres de salle ou de ressource, tous les membres de l’entreprise peuvent réserver la salle ou l’équipement pour des réunions ou des événements à l’aide d’Outlook. Vous allez découvrir **comment utiliser** et **configurer ce type de boîte aux lettres** dans les deux onglets suivants. Voici quelques questions fréquentes sur les boîtes aux lettres de salle et de ressource. 
+Une fois que vous avez créé une boîte aux lettres de salle ou de ressource, tous les membres de l’entreprise peuvent réserver la salle ou l’équipement pour des réunions ou des événements à l’aide d’Outlook. Vous allez découvrir **comment utiliser** et **configurer ce type de boîte aux lettres** dans les deux onglets suivants. Voici quelques questions fréquentes sur les boîtes aux lettres de salle et de ressource.
   
 ## <a name="use-room-and-equipment-mailboxes"></a>Utiliser les boîtes aux lettres de salle et de ressource
 
 Pour utiliser les boîtes aux lettres de salle ou de ressource, ouvrez Outlook à partir de votre ordinateur ou connectez-vous à Outlook sur le web. Planifiez une réunion et ajoutez la salle ou la ressource à la réunion comme vous le feriez lorsque vous invitez d’autres employés ou des clients. Celle-ci est à présent réservée.
   
-1. Ouvrez **Outlook** sur votre ordinateur. 
+1. Ouvrez **Outlook** sur votre ordinateur.
+
+2. Dans l'onglet **Accueil**, sélectionnez **Nouveaux éléments** \> **Réunion**.
+
+   ![To schedule a meeting, on the Home tab, in the New group, choose New Items, and then Meeting.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)
+
+   Vous pouvez également sélectionner **Nouvelle réunion** à partir de votre Calendrier.
     
-2. Dans l'onglet **Accueil**, sélectionnez **Nouveaux éléments** \> **Réunion**.<br/>![Pour planifier une réunion, dans l’onglet Accueil, dans le groupe Nouveau, sélectionnez Nouveaux éléments, puis Réunion.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Vous pouvez également sélectionner **Nouvelle réunion** à partir de votre Calendrier.
-    
-3. Dans le champ À, tapez le nom de la salle de conférence ou de l’équipement que vous voulez réserver, ainsi que les participants que vous voulez inviter.<br/>Vous pouvez également sélectionner **Pour** puis double-cliquez sur la salle de conférence ou l’équipement dans la liste. Sélectionnez ensuite **OK**.<br/>![Réserver une boîte aux lettres de salle dans Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. Dans le champ À, tapez le nom de la salle de conférence ou de l’équipement que vous voulez réserver, ainsi que les participants que vous voulez inviter.
+
+   Vous pouvez également sélectionner **Pour** puis double-cliquez sur la salle de conférence ou l’équipement dans la liste. Sélectionnez ensuite **OK**.
+
+   ![Réserver une boîte aux lettres de salle dans Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. Dans la ligne **Objet**, tapez l’objet de la réservation ou de la réunion. 
     
 5. Modifiez l’**emplacement** (facultatif). 
     
-6. Modifiez l'**heure de début** et l'**heure de fin**, ou sélectionnez **Journée entière**. Pour répéter la réunion ou la réservation, sélectionnez **Périodicité** dans la partie supérieure.<br/>![Réserver une heure de réunion.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Modifiez l'**heure de début** et l'**heure de fin**, ou sélectionnez **Journée entière**. Pour répéter la réunion ou la réservation, sélectionnez **Périodicité** dans la partie supérieure.
+ 
+   ![Réservez l’heure de la réunion.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Tapez un message décrivant le but et joignez des fichiers si nécessaire.
     
 8. Pour autoriser d'autres personnes à participer en ligne ou par téléphone à la réunion, sélectionnez **Réunion Skype**.
     
-9. Pour vous assurer que la salle, l’équipement et les personnes que vous avez invités sont disponibles, sélectionnez **Assistant Planification** en haut. Sélectionnez ensuite une heure disponible dans le calendrier.<br/> ![Vérifier la disponibilité du matériel de la salle.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>ASTUCE : Dans le calendrier de programmation, le bleu signifie que la salle ou l'équipement est réservé ou occupé. Sélectionnez la zone blanche, ou libre, sur le calendrier. 
+9. Pour vous assurer que la salle, l’équipement et les personnes que vous avez invités sont disponibles, sélectionnez **Assistant Planification** en haut. Sélectionnez ensuite une heure disponible dans le calendrier.
+
+   ![Vérifiez si l’équipement de salle est disponible.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)
+
+   > [!TIP]
+   > Dans le calendrier de planification, le bleu indique que la salle ou l'équipement est réservé ou occupé. Sélectionnez la zone blanche, ou libre sur le calendrier. 
   
 10. Lorsque vous avez terminé, cliquez sur **Envoyer**.
     
@@ -68,19 +83,21 @@ Pour configurer une boîte aux lettres de salle ou d'équipement, rendez-vous da
   
 2. Sélectionnez **Ajouter**.
     
-3. Remplissez les champs de la salle ou de la ressource :<br/>![Ajouter une boîte aux lettres de salle dans Microsoft 365.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Remplissez les champs de la salle ou de la ressource :
+
+   ![Ajouter une boîte aux lettres de salle dans Microsoft 365.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)
   
-  - **Salle** ou **Ressource** : type de boîte aux lettres que vous voulez créer.
+   - **Salle** ou **Ressource** : type de boîte aux lettres que vous voulez créer.
     
-  - **Nom** : nom convivial ou brève description.
+   - **Nom** : nom convivial ou brève description.
     
-  - **Adresse de courrier** : alias de courrier de la salle ou de la ressource. Celle-ci est nécessaire pour envoyer une demande de réunion à la salle ou la ressource.
+   - **Adresse de courrier** : alias de courrier de la salle ou de la ressource. Celle-ci est nécessaire pour envoyer une demande de réunion à la salle ou la ressource.
     
-  - **Capacité** : nombre de personnes que la salle peut accueillir ou qui peuvent utiliser l’équipement en même temps.
+   - **Capacité** : nombre de personnes que la salle peut accueillir ou qui peuvent utiliser l’équipement en même temps.
     
-  - **Emplacement** : numéro ou emplacement de la salle dans un bâtiment ou une région.
+   - **Emplacement** : numéro ou emplacement de la salle dans un bâtiment ou une région.
     
-  - **Numéro de téléphone** : numéro de téléphone de la salle. Celui-ci est différent du numéro de téléphone de la réunion généré lorsque Skype Entreprise est utilisé.
+   - **Numéro de téléphone** : numéro de téléphone de la salle. Celui-ci est différent du numéro de téléphone de la réunion généré lorsque Skype Entreprise est utilisé.
     
 4. Sélectionnez **Ajouter**.
     
@@ -103,11 +120,11 @@ Ouvrez la réunion que vous avez programmée dans Outlook, puis supprimez la sal
   
 ### <a name="does-someone-have-to-accept-or-decline-every-room-or-equipment-request"></a>Une personne doit-elle accepter ou refuser les demandes de réservation de salle ou de ressource ?
 
- Non, il n’est pas nécessaire de désigner une personne pour accepter ou refuser les demandes. Vous pouvez décider si vous souhaitez que la salle ou l’équipement soit réservé automatiquement ou géré par un membre de votre entreprise. 
+Non, il n’est pas nécessaire de désigner une personne pour accepter ou refuser les demandes. Vous pouvez décider si vous souhaitez que la salle ou l’équipement soit réservé automatiquement ou géré par un membre de votre entreprise. 
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Une boîte aux lettres de salle ou de ressource a-t-elle besoin d’une licence de produit ?
 
-Non. Même si la plupart des membres de votre organisation ont besoin d’une licence pour utiliser Microsoft 365, vous n’avez pas besoin d’attribuer de licence à une boîte aux lettres de salle ou de ressource.
+Non. Bien que la plupart des membres de votre organisation ont besoin d’une licence pour utiliser Microsoft 365, vous n’avez pas besoin d’attribuer une licence à une boîte aux lettres de salle ou de ressource, au cas où la boîte aux lettres de ressources n’aurait pas besoin d’une taille plus grande que 50 Go ou, au cas où certaines fonctionnalités ne seraient pas nécessaires (stratégies de rétention de sécurité et conformité, ou conservation à partir de Exchange Online), ou, au cas où la boîte aux lettres de ressources n’aurait pas besoin d’archive en ligne.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Faut-il désigner un propriétaire chargé de la réservation des salles ou équipements ?
 

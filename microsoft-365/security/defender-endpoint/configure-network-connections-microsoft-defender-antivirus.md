@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: e7631647d97abc7f67129c9d40887996cfc7eb0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f60b310d435693972a6573d7c9dccd920866bbe
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209665"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400323"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -47,7 +47,7 @@ Le service Antivirus Microsoft Defender cloud fournit une protection rapide et f
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions entre celui-ci et vos points de terminaison. Étant donné que votre protection est un service cloud, les ordinateurs doivent avoir accès à Internet et accéder à Microsoft Defender pour Office 365 services d’apprentissage automatique. N’excluez pas l’URL `*.blob.core.windows.net` d’un type d’inspection réseau.
 
 > [!NOTE]
-> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l’utilisation de ressources distribuées et d’apprentissage automatique pour fournir une protection à vos points de terminaison à un taux beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles.
+> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l’utilisation de ressources distribuées et d’apprentissage automatique pour fournir une protection à vos points de terminaison à une vitesse beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles.
 
 ## <a name="services-and-urls"></a>Services et URL
 
@@ -55,9 +55,7 @@ Le tableau de cette section répertorie les services et leurs adresses web assoc
 
 Assurez-vous qu’il n’existe aucune règle de pare-feu ou de filtrage réseau qui refuse l’accès à ces URL. Dans le cas contraire, vous devrez peut-être créer une règle d’autoriser spécifiquement pour eux (à l’exclusion de `*.blob.core.windows.net` l’URL). Les URL du tableau suivant utilisent le port 443 pour la communication.
 
-<br>
-
-****
+<br/><br/>
 
 |Service et description|URL|
 |---|---|
@@ -84,7 +82,7 @@ Utilisez l’argument suivant avec l Antivirus Microsoft Defender de ligne de co
 > [!NOTE]
 > Vous devez ouvrir une version de niveau administrateur de l’invite de commandes. Cliquez avec le bouton droit sur l’élément menu Démarrer, cliquez sur Exécuter **en** tant qu’administrateur et cliquez sur **Oui** à l’invite d’autorisations. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure.
 
-Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande.](command-line-arguments-microsoft-defender-antivirus.md)
+Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender avec l’outil mpcmdrun.exe ligne de commande.](command-line-arguments-microsoft-defender-antivirus.md)
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Tentative de téléchargement d’un fichier de programmes malveillants factices à partir de Microsoft
 
@@ -109,7 +107,7 @@ Vous verrez également une  détection des menaces mises en quarantaine dans la 
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant sécurité dans le menu **Démarrer.**
 
-2. Sélectionnez **Virus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
+2. Sélectionnez **Antivirus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
 
 3. Sous la section **Menaces en quarantaine,** **sélectionnez Consulter l’historique complet** pour voir les programmes malveillants factices détectés.
 
@@ -117,3 +115,8 @@ Vous verrez également une  détection des menaces mises en quarantaine dans la 
    > Les versions Windows 10 antérieures à la version 1703 ont une interface utilisateur différente. Voir [Antivirus Microsoft Defender dans l’application Sécurité Windows.](microsoft-defender-security-center-antivirus.md)
 
    Le Windows journal des événements affiche également [Windows Defender’ID d’événement client 1116](troubleshoot-microsoft-defender-antivirus.md).
+
+## <a name="see-also"></a>Voir aussi
+
+- [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md)
+- [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)

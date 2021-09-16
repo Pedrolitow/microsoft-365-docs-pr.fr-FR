@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 4bd6726550e444ffc31e241b8fb5c52c9967a267
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4e6becbdb0e26317bcc29e5bb70e24486d43414
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203166"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400449"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Intégrer les appareils Windows 10 à l’aide de la stratégie de groupe
 
@@ -43,9 +43,7 @@ ms.locfileid: "59203166"
 
 ## <a name="onboard-devices-using-group-policy"></a>Intégrer des appareils à l’aide d’une stratégie de groupe
 
-[![Image du PDF montrant les différents chemins de déploiement.](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
-
-Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
+Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [ou Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
 1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.  
@@ -65,7 +63,7 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 7. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
+8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
 
 9. Dans le champ Nom, tapez un nom approprié pour la tâche programmée (par exemple, Defender pour le déploiement de point de terminaison).
 
@@ -121,7 +119,7 @@ Toutes les stratégies se trouvent sous `Computer Configuration\Policies\Adminis
 
 **Emplacement de la stratégie** : \Windows\Windows Defender ATP
 
-Politique|Setting
+Stratégie|Paramètre
 ---|---
 Enable\Disable Sample collection|Activé : vérification « Activer la collecte d’exemples sur les ordinateurs »
 
@@ -129,7 +127,7 @@ Enable\Disable Sample collection|Activé : vérification « Activer la collecte 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender
 
-Politique|Setting
+Stratégie|Paramètre
 ---|---
 Configurer la détection pour les applications potentiellement indésirables|Activé, Bloquer
 
@@ -137,7 +135,7 @@ Configurer la détection pour les applications potentiellement indésirables|Act
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\MAPS
 
-Politique|Setting
+Stratégie|Paramètre
 ---|---
 Rejoindre Microsoft MAPS|Enabled, Advanced MAPS
 Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | Activé, Envoyer des exemples sûrs
@@ -146,7 +144,7 @@ Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont req
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection en temps réel
 
-Politique|Setting
+Stratégie|Paramètre
 ---|---
 Désactiver la protection en temps réel|Désactivé
 Activer l’analyse du comportement|Activé
@@ -159,7 +157,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, autorisant les performances.
 
-Politique|Setting
+Stratégie|Paramètre
 ---|---
 Recherchez les dernières informations sur la sécurité des virus et logiciels espions avant d’exécution d’une analyse programmée |Activé
 
@@ -181,9 +179,9 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
    ![Image de la configuration de réduction de la surface d’attaque.](images/asr-guid.png)
 
-Politique|Setting
+Stratégie|Paramètre
 ---|---
-Configurer l’accès contrôlé aux dossiers| Activé, mode audit
+Configurer l’accès contrôlé aux dossiers| Activé, mode Audit
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
 
@@ -225,7 +223,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 
@@ -240,7 +238,7 @@ Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiem
 
 Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation (unités d’organisation).
 
-1. Après avoir choisi la gp ou en créer une nouvelle, modifiez-la.
+1. Après avoir choisi la gp ou en avoir créé une nouvelle, modifiez-la.
 2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **protection en temps réel.**
 :::image type="content" source="images/realtime-protect.png" alt-text="protection en temps réel.":::
 1. Dans le dossier Quarantaine, configurez la suppression des éléments du dossier Quarantaine.
@@ -261,7 +259,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 ### <a name="configure-windows-defender-smart-screen-settings"></a>Configurer les Windows Defender de l’écran intelligent
 
-1. Accédez à **Modèles d’administration** des stratégies de \>  \>  \> **configuration ordinateur Windows composants** \> **Windows Defender’explorateur SmartScreen.** \> 
+1. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Windows Defender’explorateur SmartScreen.** \> 
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer.":::
  
@@ -306,7 +304,7 @@ Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Mi
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)

@@ -17,11 +17,11 @@ ms.topic: article
 MS.technology: mde
 ms.custom: api
 ms.openlocfilehash: 91ee0c6ec2e4c11b714dee586613b16fd22df278
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357668"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401925"
 ---
 # <a name="machine-resource-type"></a>Type de ressource Machine
 
@@ -74,7 +74,7 @@ ms.locfileid: "59357668"
 |computerDnsName|String|[nom complet](machine.md) de l’ordinateur.|
 |firstSeen|DateTimeOffset|Date et heure de la première observation [de l’ordinateur](machine.md) par Microsoft Defender pour le point de terminaison.|
 |lastSeen|DateTimeOffset|Heure et date du dernier rapport d’appareil complet reçu. Un appareil envoie généralement un rapport complet toutes les 24 heures.|
-|osPlatform|Chaîne|Plateforme du système d’exploitation.|
+|osPlatform|String|Plateforme du système d’exploitation.|
 |onboardingstatus|Chaîne|État de l’intégration de l’ordinateur. Les valeurs possibles sont : « onboarded » et « offboarded ».|
 |osProcessor|String|Processeur du système d’exploitation. Utilisez la propriété osArchitecture à la place.|
 |version|String|Version du système d’exploitation.|
@@ -86,7 +86,7 @@ ms.locfileid: "59357668"
 |rbacGroupId|String|ID de groupe d’ordinateurs.|
 |riskScore|Nullable, enum|Score de risque tel qu’évalué par Microsoft Defender pour le point de terminaison. Les valeurs possibles sont : « None » (aucun), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
 |aadDeviceId|Guid de représentation nullable|ID d’appareil AAD [(lorsque l’ordinateur](machine.md) est joint à AAD).|
-|machineTags|String collection|Ensemble de [balises d’ordinateur.](machine.md)|
+|machineTags|Collection de chaînes|Ensemble de [balises d’ordinateur.](machine.md)|
 |exposureLevel|Nullable, enum|Niveau d’exposition tel qu’évalué par Microsoft Defender pour le point de terminaison. Les valeurs possibles sont : « None » (aucun), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
 |deviceValue|Nullable, enum|Valeur [de l’appareil.](tvm-assign-device-value.md) Les valeurs possibles sont : « Normal » (normal), « Low » (faible) et « High » (élevé).|
 |ipAddresses|Collection IpAddress|Ensemble ***d’objets IpAddress.*** Voir [API Obtenir des ordinateurs.](get-machines.md)|

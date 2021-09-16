@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -19,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtrage avancé du courrier indésirable (ASF) disponibles dans les stratégies anti-courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 012eec6aea888cc68a11f585e88b0d610382cc53
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208691"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399285"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres de filtrage avancé du courrier indésirable (ASF) dans EOP
 

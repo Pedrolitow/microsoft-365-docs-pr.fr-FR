@@ -18,11 +18,11 @@ ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
 ms.openlocfilehash: d5fa34de0394c1455fccb70a875fe12cddee3ed8
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357425"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400317"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements
 
