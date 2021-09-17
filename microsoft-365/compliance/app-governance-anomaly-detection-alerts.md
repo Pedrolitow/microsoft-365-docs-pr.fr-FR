@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Examinez les alertes de détection d’anomalies.
-ms.openlocfilehash: 57e32f0fc2d50e5e1f1d4d9fb9e6b1520f0f99e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 69f0f3cee8c818ac071204baa10cb2be8aae6336
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181493"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401781"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Examiner les alertes de détection d’anomalie
 
@@ -295,3 +295,28 @@ Cette détection identifie qu’une application a accepté des étendues de priv
 1. Passez en revue les étendues accordées par l’application.  
 1. Examinez toute action de règle de boîte de réception créée par l'application.  
 1. Passez en revue toutes les activités de recherche SharePoint ou OneDrive effectuées par l’application.
+
+### <a name="app-made-high-volume-of-importance-mail-read-and-created-inbox-rule"></a>Règle de boîte de réception créée et l’application a créé un volume élevé de messages d’importance
+
+**Sévérité** : moyenne  
+
+**ID MITRE**: T1137, T1114
+
+Cette détection identifie qu’une application a accepté l’étendue des privilèges élevés, crée une règle de boîte de réception suspecte et a effectué un volume élevé d’activités importantes de lecture de courrier via Graph API. Cela peut indiquer une tentative de violation de votre organisation, par exemple des adversaires qui tentent de rechercher et de collecter des e-mails spécifiques de votre organisation via API Graph.  
+
+**TP ou FP ?**
+
+- **TP**: si vous êtes en mesure de confirmer que le volume élevé de messages électroniques importants lus via l’API Graph par une application OAuth avec une étendue de privilège élevé et que l’application est livrée à partir d’une source inconnue.  
+
+  **Action recommandée**: désactivez et supprimez l’application, réinitialisez le mot de passe et supprimez la règle de boîte de réception.  
+
+- **FP**: Si vous êtes en mesure de confirmer que l'application a effectué la lecture d'un volume élevé d'e-mails importants via l'API graphique et a créé une règle de boîte de réception vers un compte e-mail externe nouveau ou personnel pour des raisons légitimes.  
+
+  **Action recommandée**: ignorer l’alerte.  
+
+**Comprendre l’étendue de la violation**
+
+1. Passez en revue toutes les activités effectuées par l’application.  
+1. Passez en revue les étendues accordées par l’application.  
+1. Examinez toute action de règle de boîte de réception créée par l'application.  
+1. Consultez toute activité de lecture de courrier électronique d’importance élevée effectuée par l’application.  

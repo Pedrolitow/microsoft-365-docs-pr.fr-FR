@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkMAC
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 6a58092bb81f45f40f2b0bcdd76312fc1d420e4d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a6d78ea9b96bb4967ef41471cd039a4c245b4aa1
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204149"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400149"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -210,13 +210,7 @@ Bien que la stratégie de rétention s’applique au niveau du site, seuls les d
 
 Lorsque vous spécifiez vos emplacements pour les sites SharePoint ou comptes OneDrive, aucune autorisation n’est nécessaire pour accéder au site, et aucune validation n’intervient au moment où vous spécifiez l’URL sur la page **Modifier les emplacements**. Toutefois, nous vérifions à la fin de la configuration que les sites SharePoint que vous spécifiez existent. Si cette vérification échoue, un message apparaît pour vous informer que la validation de l’URL entrée a échoué, et que le processus de configuration ne créera pas la stratégie de rétention tant que la vérification de validation n’aura pas abouti. Si ce message apparaît, revenez à la configuration pour modifier l’URL ou supprimer le site de la stratégie de rétention.
 
-Pour spécifier des comptes OneDrive individuels à inclure ou exclure, l’URL de OneDrive d’un utilisateur est généralement au format suivant. Pour le nom d’utilisateur principal (UPN), tous les caractères spéciaux tels qu’un point, une virgule, un espace et le signe at (« @ ») sont convertis en traits de soulignement (« _ ») : `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-
-Par exemple, pour un utilisateur du client Contoso dont l’UPN est « rsimone@contoso.onmicrosoft.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-Ou, si vous utilisez un nom de domaine personnalisé afin que l’UPN soit « rsimone@contoso.com » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-
-Toutefois, des nombres ou des GUID peuvent être ajoutes à l’URL lorsque des conflits sont détectés, il est donc toujours préférable de confirmer l’URL d’un utilisateur pour son compte OneDrive. Pour confirmer l’URL, vous pouvez utiliser le Centre d'administration Microsoft 365 ou PowerShell. Pour plus d’informations, voir [Obtenir la liste de toutes les URL OneDrive d’utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
+Pour spécifier des comptes OneDrive individuels à inclure ou à exclure, consultez obtenir la liste de toutes les URL OneDrive [utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
 
 > [!NOTE]
 > Lorsque vous spécifiez des comptes OneDrive individuels à inclure ou à exclure, sachez que, sauf si les comptes OneDrive sont pré-mis en [service,](/onedrive/pre-provision-accounts)l’URL n’est pas créée tant qu’un utilisateur n’a pas accédé à son OneDrive pour la première fois.
