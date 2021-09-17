@@ -13,19 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: f4399635be64343b4858dbf0b507284afc1f6573
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a538f866be9d43088ab22923b41c6b070855ea3
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205963"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59356124"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-> [!NOTE]
-> Cette fonctionnalité est en phase aperçu et est sujette à modifications.
 
 Activez le paramètre pour prendre en charge la [co-édition](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) pour les applications de bureau Office de telle sorte que lorsque les documents sont étiquetés et chiffrés par les [Étiquettes de confidentialité](sensitivity-labels.md), plusieurs utilisateurs peuvent modifier ces documents en même temps.
 
@@ -33,7 +30,7 @@ Si ce paramètre n’est pas activé pour votre client, les utilisateurs doivent
 
 En outre, l'activation de cette fonctionnalité entraîne la prise en charge de la fonctionnalité [Enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) pour ces fichiers étiquetés et chiffrés.
 
-Pour lire l’annonce initiale de la publication, consultez le billet de blog [Annonce de la co-édition sur des documents chiffrés par Microsoft Information Protection et des mises à jour d'étiquetage](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+Pour lire l’annonce de la publication, consultez le billet de blog [la co-édition sur des documents chiffrés par Microsoft Information Protection et des mises à jour d'étiquetage est généralement disponible](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718).
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Modifications des métadonnées pour les étiquettes de niveau de confidentialité
 
@@ -77,15 +74,15 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
 - Les étiquettes de confidentialité [doivent être activées pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) pour le client. Si cette fonctionnalité n’est pas déjà activée, elle sera automatiquement activée lorsque vous sélectionnerez le paramètre pour activer la co-édition pour les fichiers avec des étiquettes de niveau de confidentialité.
 
 - Microsoft 365 Apps for enterprise :
-    - **Windows** : version minimale 2106
-    - **macOS** : version minimale 16.50
+    - **Windows** : version minimale 2107
+    - **macOS** : version minimale 16.51
     - **iOS** : pas encore pris en charge
     - **Android** : pas encore pris en charge
 
 - Tous les outils opérationnels, applications et services de votre client doivent prendre en charge la nouvelle [métadonnée d’étiquetage](#metadata-changes-for-sensitivity-labels). Si vous utilisez l’une des versions suivantes, vérifiez les versions minimales requises :
     
     - **Client et scanneur d’étiquetage unifié Azure Information Protection :**
-        - Version Public Preview (nom d’installation de AzInfoProtection_2.10.46_Co-création_PublicPreview.exe) que vous pouvez installer à partir du [ Centre de téléchargement Microsoft ](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+        - Version minimale[ 2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620)que vous pouvez installer à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
     - **Application de synchronisation OneDrive pour Windows ou macOS :**
         - Version minimale 19.002.0121.0008
@@ -112,6 +109,8 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
     
     Spécifique à Excel : les métadonnées pour une étiquette de confidentialité qui n’applique pas le chiffrement peuvent être supprimées d’un fichier si quelqu’un modifie et enregistre ce fichier à l’aide d’une version d’Excel qui ne prend pas en charge les modifications des métadonnées pour les étiquettes de niveau de sécurité.
 
+- Les applications Office pour iOS et Android ne sont pas pris en charge actuellement.
+
 - La co-création et l'enregistrement automatique ne sont pas pris en charge et ne fonctionnent pas pour les documents Office étiquetés et chiffrés qui utilisent l'une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings) :
     - **Permettre aux utilisateurs d'attribuer des autorisations lorsqu’ils appliquent l’étiquette** et la case à cocher **Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations** est sélectionnée. Cette configuration est parfois appelée « Autorisations définies par l’utilisateur ».
     - **L’expiration de l'accès des utilisateurs au contenu** est définie sur une valeur autre que **Jamais**.
@@ -119,30 +118,20 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
     
     Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes s’affichent dans les applications Office. Toutefois, lorsque les utilisateurs sélectionnent ces étiquettes et que personne d'autre ne modifie le document, ils sont avertis que la co-édition et l'enregistrement automatique ne seront pas disponibles. Si quelqu’un d’autre modifie le document, un message indique à l’utilisateur que les étiquettes ne peuvent pas être appliquées.
 
-- Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
+- Si vous utilisez le client d’étiquette unifiée Azure Information Protection : consultez la documentation de ce client d' [pour plus d’informations requises ou de limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring).
 
-## <a name="known-issues-for-this-preview"></a>Problèmes connus dans cette préversion
-
-Cette version préliminaire de la co-édition pour les fichiers chiffrés avec des étiquettes de niveau de confidentialité présente les problèmes connus suivants :
-
-- Les utilisateurs ne peuvent pas appliquer d’étiquettes dans Office sur le web pour les fichiers Word, Excel et PowerPoint dont la taille est supérieur à 300 Mo. Pour ces fichiers, vous pouvez utiliser les applications de bureau Office pour appliquer une étiquette, mais vous devez être la seule personne à ouvrir le fichier.
-
-- Déploiement en cours : prise en charge des [stratégies DLP qui utilisent des étiquettes de confidentialité comme conditions](dlp-sensitivity-label-as-condition.md) et des pièces jointes non chiffrées pour les e-mails.
-
-- Certains documents ne sont pas compatibles avec les étiquettes de niveau de confidentialité en raison de fonctionnalités telles que [protection par mot de passe](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [classeurs partagés](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534) ou du contenu incluant des contrôles ActiveX. D’autres raisons sont consignées dans [Résoudre les problèmes de co-édition dans Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). Pour ces documents, un message **ÉCHEC DE CHARGEMENT** s’affiche et vous devez sélectionner l’option **Ignorer les modifications**. Tant que ce problème n’a pas été résolu, n’étiquetez pas les documents identifiés avec ce message d’échec.
-
-- Les applications Office pour iOS et Android ne sont pas pris en charge.
-
-## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers avec les étiquettes de confidentialité
+## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Comment activer la co-édition pour les fichiers avec les étiquettes de confidentialité
 
 > [!CAUTION]
 > L'activation de ce paramètre est une action à sens unique. Lorsque la fonctionnalité est en préversion, activez-la uniquement après avoir lu et compris les modifications apportées aux métadonnées, conditions préalables, limitations et problèmes connus consignés sur cette page.
+
+Si vous avez déjà activé ce paramètre pendant la période d’aperçu, aucune autre action n’est nécessaire et vous pouvez ignorer cette procédure.
 
 1. Connectez-vous au [Centre de conformité Microsoft 365](https://compliance.microsoft.com) en tant qu’administrateur général pour votre client.
 
 2. Dans le volet de navigation, sélectionnez **Paramètres** > **Co-édition pour les fichiers avec fichiers de confidentialité**.
 
-2. Sur la page **Co-édition pour les fichiers avec étiquettes de confidentialité (aperçu)**, lisez la description de synthèse, les conditions préalables, ce à quoi vous devez vous attendre et l’avertissement selon lequel vous ne pouvez pas désactiver ce paramètre après l'avoir activé.
+2. Sur la page **Co-édition pour les fichiers avec étiquettes de confidentialité**, lisez la description de synthèse, les conditions préalables, ce à quoi vous devez vous attendre et l’avertissement selon lequel vous ne pouvez pas désactiver ce paramètre après l'avoir activé.
     
     Sélectionnez ensuite **Activer la co-édition de fichiers avec des étiquettes de niveau de confidentialité**, puis **Appliquer** :
     

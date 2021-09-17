@@ -8,6 +8,8 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: Essayer ou acheter Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Planifier votre installation de Microsoft 365 pour les entreprises
+          href: setup/plan-your-setup.md
         - name: S’inscrire à Microsoft 365 Business Premium
           items:
             - name: S’inscrire
@@ -19,7 +21,7 @@
             - name: "S’inscrire à Microsoft\_365 Business Standard"
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: Configurer Microsoft 365 Business Standard
-              href: ../admin/simplified-signup/signup-business-standard.md
+              href: ../admin/setup/setup-business-standard.md
             - name: Inviter des utilisateurs à Microsoft 365 Business Standard
               href: ../admin/simplified-signup/admin-invite-business-standard.md
             - name: Accepter l’invitation par e-mail à Microsoft 365 Business Standard
@@ -28,8 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrer des données vers mon abonnement Microsoft 365 Business Standard
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Planifier votre installation
-          href: setup/plan-your-setup.md
         - name: Planifier Windows 365 Business
           items:
             - name: Démarrage avec les PC Windows 365 Business et Cloud
@@ -38,7 +38,7 @@
               href: setup/windows-365-business-sizing.md
             - name: Résoudre des problèmes de configuration de Windows 365 PC Cloud
               href: setup/troubleshoot-windows-365-business.md
-        - name: Configurer votre organisation avec l’Assistant Installation
+        - name: Configurer votre Microsoft 365 pour l’organisation des entreprises
           items:
             - name: Microsoft 365 Business Basic
               href: setup/setup-business-basic.md
@@ -323,6 +323,8 @@
               href: usage-analytics/usage-analytics-data-model.md
             - name: Résoudre les erreurs liés à l’Analyse de l’utilisation
               href: usage-analytics/usage-analytics-errors.md
+        - name: Guide de configuration Microsoft 365 prise en charge de l’intégration avec ServiceNow
+          href: manage/microsoft-365-servicenow-support-integration.md
     - name: Gérer les abonnements et la facturation
       href: ../commerce/index.yml
     - name: Sécuriser votre organisation
