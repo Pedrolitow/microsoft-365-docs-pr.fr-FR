@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7853a7b0439ee42cbe4b653f0572b055b19c3a2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ff68caef8989ec6159b60bba8be03fe7246fdbc
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175972"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59400677"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -63,7 +63,7 @@ Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super 
     
     ![Options de protection d’étiquette de confidentialité pour les fichiers et les e-mails.](../media/protection-options-sensitivity-label.png)
 
-4.  Sur la page **Chiffrement** de l’Assistant, sélectionnez l’une des options suivantes :
+4.  Sur la page **Chiffrement**, sélectionnez l’une des options suivantes :
     
     - **Supprimer le chiffrement si le fichier est chiffré** l’option est uniquement prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Lorsque vous sélectionnez cette option et que vous utilisez l'étiquetage intégré, il se peut que l'étiquette ne s'affiche pas dans les applications, ou qu'elle s'affiche et n'effectue aucune modification de chiffrement.
         
@@ -114,7 +114,7 @@ Les documents déjà chiffrés, puis ajoutés sous forme de pièces jointes, con
 
 ## <a name="configure-encryption-settings"></a>Configurer les paramètres du chiffrement
 
-Lorsque vous sélectionnez **Configurer les paramètres de confidentialité** sur la page **Chiffrement** de l’Assistant pour créer ou modifier une étiquette de confidentialité, choisissez l’une des options suivantes :
+Lorsque vous sélectionnez **Configurer les paramètres de confidentialité** sur la page **Chiffrement** pour créer ou modifier une étiquette de confidentialité, choisissez l’une des options suivantes :
 
 - **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu auquel l'étiquette est appliquée. Pour plus d’informations, voir la section suivante [Attribuer des autorisations maintenant](#assign-permissions-now).
 - **Permettre aux utilisateurs d'attribuer des autorisations** lorsque vos utilisateurs appliquent l’étiquette au contenu. Grâce à cette option, vous permettez aux membres de votre organisation de bénéficier d'une certaine souplesse pour mieux collaborer et accomplir leur travail. Pour plus d’informations, voir la section ci-dessous [Permettre aux utilisateurs d’attribuer des autorisations](#let-users-assign-permissions).
@@ -303,7 +303,7 @@ Pour l’étiquetage intégré, les utilisateurs consultent la même boîte de d
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>Exemples de configurations pour les paramètres de chiffrement
 
-Pour chaque exemple décrit ci-dessous, effectuez la configuration à partir de la page **Chiffrement** de l’Assistant lorsque **Configurer les paramètres de chiffrement** est sélectionné :
+Pour chaque exemple décrit ci-dessous, effectuez la configuration à partir de la page **Chiffrement** lorsque **Configurer les paramètres de chiffrement** est sélectionné :
 
 ![Appliquez l'option de chiffrement dans l’Assistant d'étiquette de confidentialité.](../media/apply-encryption-option.png)
 
@@ -319,7 +319,7 @@ Vos utilisateurs tapent l’adresse de courrier Gmail dans la zone **À**.  Ils 
 
 3. Si elle est sélectionnée, désactivez la case à cocher : **Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations**.
 
-4. Sélectionnez **Suivant** et terminez l’Assistant.
+4. Sélectionnez **Suivant** et terminez la configuration.
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>Exemple 2 : étiquette restreignant l’accès en lecture seule à l'ensemble des utilisateurs d’une autre organisation
 
@@ -343,7 +343,7 @@ Cette étiquette ne peut pas être utilisée pour des courriers électroniques.
 
 8. De nouveau dans le volet **Attribuer des autorisations**, sélectionnez **Enregistrer**.
 
-9. Sur la page **Chiffrement**, sélectionnez **Suivant** et terminez l’Assistant.
+9. Dans la page **Chiffrement**, sélectionnez **Suivant** et terminez la configuration.
 
 ### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>Exemple 3 : ajouter des utilisateurs externes à une étiquette existante qui chiffre du contenu
 
@@ -363,7 +363,7 @@ Les nouveaux utilisateurs que vous ajoutez pourront ouvrir des documents et des 
 
 7. De nouveau dans le volet **Attribuer des autorisations**, répétez les étapes 3 à 6 pour chaque utilisateur (ou groupe) que vous souhaitez ajouter à cette étiquette. Puis cliquez sur **Enregistrer**.
 
-8. Sur la page **Chiffrement**, sélectionnez **Suivant** et terminez l’Assistant.
+8. Dans la page **Chiffrement**, sélectionnez **Suivant** et terminez la configuration.
 
 ### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>Exemple 4 : étiquette qui chiffre du contenu, mais qui ne limite pas les personnes pouvant y accéder
 
@@ -387,7 +387,7 @@ Utilisez seulement cette configuration lorsque vous n’avez pas besoin de restr
 
 7. De nouveau dans le volet **Attribuer des autorisations**, sélectionnez **Enregistrer**.
 
-8. Sur la page **Chiffrement**, sélectionnez **Suivant** et terminez l’Assistant.
+8. Dans la page **Chiffrement**, sélectionnez **Suivant** et terminez la configuration.
 
 ## <a name="considerations-for-encrypted-content"></a>Considérations relatives au contenu chiffré
 
@@ -401,7 +401,9 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Si vous partagez des documents chiffrés avec des personnes extérieures à votre organisation, vous devrez peut-être créer des comptes invités et modifier les stratégies d’accès conditionnel. Pour plus d’informations sur ce scénario, consultez [Partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
-- Pour permettre à plusieurs utilisateurs de modifier un fichier chiffré au même moment, ils doivent tous utiliser Office pour le web. Si ce n’est pas le cas et que le fichier est déjà ouvert :
+- Lorsque les utilisateurs autorisés ouvrent des documents chiffrés dans leurs applications Office, ils voient le nom et la description de l’étiquette dans une barre de messages jaune en haut de leur application. Cette barre de messages informe les utilisateurs que le document est restreint et, à l’aide du bouton **Afficher les autorisations**, ils peuvent voir les autorisations qui leur ont été accordées pour ce document. Lorsque les autorisations de chiffrement s’étendent à des personnes extérieures à votre organisation, examinez attentivement les noms d’étiquettes et les descriptions qui seront visibles dans cette barre de messages lors de l’ouverture du document.
+
+- Pour permettre à plusieurs utilisateurs de modifier un fichier chiffré au même moment, ils doivent tous utiliser Office pour le web.  Ou, pour Windows et Mac, vous avez [activé la co-création pour les fichiers chiffrés avec des étiquettes de sensibilité](sensitivity-labels-coauthoring.md) et les utilisateurs ont les [versions minimales requises](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel et PowerPoint. Si ce n’est pas le cas et que le fichier est déjà ouvert :
 
   - Dans les applications Office (Windows, Mac, Android et iOS), les utilisateurs remarquent le message **Fichier en cours d'utilisation** incluant le nom de la personne ayant extrait le fichier. Ils peuvent ensuite afficher une copie en lecture seule, enregistrer et modifier une copie du fichier, et recevoir une notification lorsque le fichier est disponible.
   - Dans Office pour le web, les utilisateurs remarquent un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Ils peuvent ensuite sélectionner **Ouvrir en mode Lecture**.
