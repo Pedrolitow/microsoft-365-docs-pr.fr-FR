@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 1001081d14440f1e02800f64b891c6a988f1f10a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c340e8b1bb8e126445b802e6b03c91d595e32a43
+ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164545"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "59355959"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -153,12 +153,25 @@ Dans certains cas, les nouveaux utilisateurs s’affichent en tant que **Inconnu
   
 ## <a name="show-user-details-in-the-reports"></a>Afficher les détails de l’utilisateur dans les rapports
 
-Les rapports fournissent des informations sur les données d’utilisation de votre organisation. Par défaut, les rapports affichent des informations avec des noms identifiables pour les utilisateurs, les groupes et les sites. À compter du 1er septembre 2021, nous masquons les informations utilisateur par défaut pour tous les rapports dans le cadre de notre engagement continu à aider les entreprises à prendre en charge leurs lois locales sur la confidentialité.
+Par défaut, les détails utilisateur sont masqués pour tous les rapports.
   
 Votre liste d’utilisateurs se présente comme suit :
-  
+ 
 ![Rapports : liste d’utilisateurs rendus anonymes.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+
+
+Si vous souhaitez afficher des informations au niveau de l’utilisateur lorsque vous générez vos rapports, un administrateur général peut rapidement apporter cette modification dans le Centre d’administration.
+
+Les rapports fournissent des informations sur les données d’utilisation de votre organisation. Par défaut, les rapports affichent des informations avec des noms identifiables pour les utilisateurs, les groupes et les sites. À compter du 1er septembre 2021, nous masquons les informations utilisateur par défaut pour tous les rapports dans le cadre de notre engagement continu à aider les entreprises à prendre en charge leurs lois locales sur la confidentialité.
+
   
+1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; Compléments</a>.
+
+2. Sélectionnez **Paramètres de l’organisation**, puis choisissez **services**. 
+  
+3. Dans le volet **Rapports**, sélectionnez **Choisir comment afficher les informations utilisateur** et choisissez **Afficher les informations identifiables de l’utilisateur dans les rapports**.
+  
+
 Les administrateurs globaux peuvent inverser cette modification pour leur client et afficher des informations d’utilisateur identifiables si les pratiques de confidentialité de leur organisation le permettent. Vous pouvez le faire dans le Centre d'administration Microsoft 365 en suivant les étapes suivantes :
   
 1. Dans le Centre d’administration, allez à la page **Paramètres** \> **Paramètres de l’organisation** \> **Services**.
@@ -168,6 +181,7 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
 3. Décochez l’instruction **Dans tous les rapports, affichez les noms anonymisés des utilisateurs, des groupes et des sites**, puis enregistrez vos modifications.  
   
 Il faudra quelques minutes pour que ces modifications prennent effet sur les rapports dans le tableau de bord des rapports. Ce paramètre s'applique également aux rapports d'utilisation de Microsoft 365 dans [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) et [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) et [aux rapports d'utilisation dans le centre d'administration Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft 365.   
+
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: 35a04beb04f22558ca150294ebb566a8284d5270
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d733d62927e78b99ad5289206caf51df3459522c
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181433"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59401097"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
@@ -34,19 +34,18 @@ Pour commencer à utiliser le module complémentaire de gouvernance des applicat
 
 ## <a name="step-2-sign-up-for-free-trial-of-app-governance"></a>Étape 2 : S’inscrire à un essai gratuit de la gouvernance des applications
 
-Pour les nouveaux clients Microsoft 365 :
-
-1. En haut de cette page, sélectionnez le bouton  **Compte gratuit** .
-1. Sous  **Essayez Microsoft 365 pour les entreprises** sélectionnez **Essai gratuit d’un mois**.
-1. Effectuez les étapes de l’inscription.
-1. Poursuivez les étapes pour les clients Microsoft 365 existants.
-
 Pour les clients Microsoft 365 existants :
 
 1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
 1. Effectuez les étapes pour ajouter la gouvernance des applications. L’inscription est simple, comme illustré dans le graphique suivant.
 
-:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="Étapes simples pour ajouter la gouvernance des applications à votre compte.":::
+:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Étapes simples pour ajouter la gouvernance des applications à votre compte.":::
+
+Si vous n’êtes pas déjà client Microsoft 365, vous pouvez vous inscrire à un essai gratuit :
+
+1. En haut de cette page, sélectionnez le bouton  **Compte gratuit** .
+1. Sous  **Essayez Microsoft 365 pour les entreprises** sélectionnez **Essai gratuit d’un mois**.
+1. Effectuez les étapes de l’inscription.
 
 ## <a name="step-3-add-integration-with-mcas"></a>Étape 3 : Ajouter une intégration à MCAS
 
@@ -116,9 +115,6 @@ L'un des rôles d'administrateur suivants est requis pour voir les pages de gouv
 - Administrateur de sécurité
 - Opérateur de sécurité
 - Lecteur sécurité (en lecture seule)
-
-> [!NOTE]
-> Seul un administrateur global peut activer l'essai gratuit de la gouvernance de l'application.
 
 Voici les fonctionnalités de chaque rôle.
 

@@ -18,18 +18,22 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 322a0c711ed1838dfd5349d43b1c3bcbf656618e
+ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179820"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "59399861"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous utilisez les [stratégies de rétention et stratégies d’étiquette de rétention](retention.md#retention-policies-and-retention-labels) pour conserver ou supprimer automatiquement des données pour votre organisation, vous devez prendre connaissance de certains nombres maximum.
+
+## <a name="maximum-number-of-retention-labels-per-tenant"></a>Nombre maximal d’étiquettes de rétention par client
+
+Un maximum de 1 000 étiquettes de rétention sont supportés par client.
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Nombre maximal de stratégies par client
 
