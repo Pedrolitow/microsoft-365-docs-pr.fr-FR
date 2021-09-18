@@ -1,5 +1,5 @@
 ---
-title: Résoudre les Windows d’installation de PC cloud 365 Business
+title: Résoudre les Windows d’installation de PC Cloud 365 Business
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 description: Découvrez comment résoudre les problèmes d’installation pour Windows 365 Business Cloud.
 ms.date: 08/13/2021
-ms.openlocfilehash: 701d1ce3ae97836d6687050e16a176aad85e2995
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cae971187e188e6213242481b9cfaeb7dc21c7f2
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182848"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444126"
 ---
-# <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>Résoudre les Windows d’installation de PC cloud 365 Business
+# <a name="troubleshoot-windows-365-business-cloud-pc-setup-issues"></a>Résoudre les Windows d’installation de PC Cloud 365 Business
 
 Si vos utilisateurs obtiennent l’erreur « Le programme d’installation a échoué » ou si le programme d’installation prend plus de 90 minutes après leur avoir attribué une licence, utilisez les étapes de cet article pour résoudre le problème.
 
@@ -47,6 +47,14 @@ Si vos utilisateurs obtiennent l’erreur « Le programme d’installation a éc
 4. Si **les utilisateurs peuvent joindre des appareils à Azure AD** n’est pas définie sur **Tout,** sélectionnez **Tout,** puis **sélectionnez Enregistrer**.
 5. Allez à [l’étape 2. Vérifiez que le compte Windows système d’utilisateur permanent BPRT 365 est actif.](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active)
 
+Assurez-vous que le nombre **maximal** d’appareils par utilisateur est suffisamment élevé pour que les PC Cloud que vous essayez d’installer soient affectés aux utilisateurs désignés.
+
+1. Connectez-vous au portail Microsoft Azure sur https://portal.azure.com/ .
+2. Sous **Gérer Azure Active Directory,** sélectionnez **Afficher.**
+3. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Appareils,** puis sélectionnez **Paramètres de l’appareil.**
+4. Pour **le nombre maximal d’appareils par utilisateur,** entrez la valeur.
+5. Si vous avez apporté des modifications, sélectionnez **Enregistrer.**
+
 ## <a name="step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active"></a>Étape 2. Vérifier que le compte Windows système d’utilisateur permanent BPRT 365 est actif
 
 La première fois qu’une licence Windows 365 est attribuée dans votre organisation, un compte système appelé utilisateur permanent **WINDOWS 365 BPRT** est automatiquement créé dans Azure AD. Ne supprimez pas ce compte et n’a modifiez pas ce compte (par exemple, en modifiant le nom ou l’UPN). Si le compte système est modifié ou supprimé, l’installation échoue. Ce compte système garantit un processus de configuration fluide et n’a pas de fonctionnalités d’écriture ni d’accès à votre organisation au-delà des fonctionnalités de service étendues de Windows 365 Business. Si vous supprimez ou modifiez ce compte système, vous devez vous connecter à windows365.microsoft.com avec n’importe quel compte 365 Business avec une licence Windows 365 Business et attendre 12 heures pour que le jeton s’actualise.
@@ -56,8 +64,8 @@ Pour vous assurer que le compte Windows utilisateur permanent BPRT 365 est actif
 1. Dans le portail Azure, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Utilisateurs.**
 3. Dans la zone de recherche, tapez Windows utilisateur permanent **BPRT 365,** puis appuyez sur **Entrée**.
-4. Si le compte Windows système d’utilisateur permanent BPRT 365 est présent, allez à [l’étape 3. Vérifiez que l' mba basée sur l’appareil est désactivée.](#step-3-verify-that-device-based-mfa-is-turned-off)
-5. Si le compte système d’utilisateur permanent Windows 365 BPRT est manquant ou si des modifications lui ont été apportées, connectez-vous à windows365.microsoft.com avec un compte 365 Business avec une licence Windows 365 Business. Un nouvel Windows utilisateur permanent BPRT 365 sera généré dans 12 heures. Une fois le jeton régénéré, allez directement à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs)
+4. Si le Windows système d’utilisateur permanent BPRT 365 est présent, allez à [l’étape 3. Vérifiez que l' mba basée sur l’appareil est désactivée.](#step-3-verify-that-device-based-mfa-is-turned-off)
+5. Si le compte système d’utilisateur permanent Windows 365 BPRT est manquant ou si des modifications lui ont été apportées (par exemple, réinitialisation du mot de passe, modification de propriété, attribution ou désins attribution d’une licence, etc.), connectez-vous à windows365.microsoft.com avec tout compte titulaire d’une licence Windows 365 Business attribuée après 12 heures. Un nouvel Windows utilisateur permanent BPRT 365 sera généré. Une fois le jeton régénéré, allez directement à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs)
 
 ## <a name="step-3-verify-that-device-based-mfa-is-turned-off"></a>Étape 3. Vérifier que l’mfmf basée sur l’appareil est désactivée
 
@@ -65,14 +73,14 @@ Il est possible que votre organisation soit configurée de sorte que l’authent
 
 1. Dans le portail Azure, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Appareils,** puis sélectionnez **Paramètres de l’appareil.**
-3. Si **exiger l’authentification multifacteur** pour inscrire ou joindre des appareils avec Azure AD est définie sur **Oui,** sélectionnez **Non,** puis sélectionnez **Enregistrer**.
+3. Si **vous avez besoin de l’authentification multifacteur** pour inscrire ou joindre des appareils avec Azure AD est définie sur **Oui,** sélectionnez **Non,** puis sélectionnez **Enregistrer**.
 4. Allez à [l’étape 4. Assurez-vous que l' mappe MFA ne bloque pas l’installation.](#step-4-make-sure-that-mfa-doesnt-block-setup)
 
 ## <a name="step-4-make-sure-that-mfa-doesnt-block-setup"></a>Étape 4. Assurez-vous que l' mappe MFA ne bloque pas l’installation
 
 Si vous n’avez pas de licence Azure AD Premium P1 qui inclut l’accès conditionnel, accédez à [l’étape 5. Assurez-vous que la configuration de l’autorité mdm est correctement définie.](#step-5-make-sure-mdm-authority-configuration-is-set-up-correctly) Si vous ne savez pas si votre abonnement inclut Azure AD Premium P1, voir [de quel abonnement ai-je besoin ?](../admin-overview/what-subscription-do-i-have.md)
 
-Si vous avez une licence Azure AD Premium P1 qui inclut l’accès conditionnel, sélectionnez un utilisateur pour être le premier utilisateur à se connecter à la page d’accueil Windows 365 une fois que vous avez terminé les étapes restantes de cet [https://windows365.microsoft.com](https://windows365.microsoft.com) article. Assurez-vous qu’il n’existe aucune stratégie d’accès conditionnel mfa pour ce premier utilisateur. L’mf doit rester désactivée pendant toutes les tentatives d’installation. Une fois que tous les PC Cloud ont été correctement configurer au sein de votre organisation, vous pouvez activer l’mfmf pour cet utilisateur. Pour en savoir plus sur les stratégies d’accès conditionnel, consultez [la Azure Active Directory .](/azure/active-directory/conditional-access/overview)
+Si vous avez une licence Azure AD Premium P1 qui inclut l’accès conditionnel, sélectionnez un utilisateur pour être le premier utilisateur à se connecter à la page d’accueil Windows 365 une fois que vous avez terminé les étapes restantes de cet [https://windows365.microsoft.com](https://windows365.microsoft.com) article. Assurez-vous qu’il n’existe aucune stratégie d’accès conditionnel MFA pour ce premier utilisateur. L’mf doit rester désactivée pendant toutes les tentatives d’installation. Une fois que tous les PC Cloud ont été correctement configurer au sein de votre organisation, vous pouvez activer l’mfmf pour cet utilisateur. Pour en savoir plus sur les stratégies d’accès conditionnel, consultez [la Azure Active Directory .](/azure/active-directory/conditional-access/overview)
 
 Pour vérifier les stratégies d’accès conditionnel, utilisez les étapes suivantes.
 
@@ -124,11 +132,11 @@ Si vous ne prévoyez pas d’utiliser Microsoft Intune pour la gestion de votre 
 > [!IMPORTANT]
 > Si vous n’êtes pas l’administrateur DE LAM, n’utilisez aucune des procédures suivantes sans avoir consulté au départ votre administrateur informatique. Suivez uniquement ces procédures si les PC cloud ne sont pas en cours de mise en place. Toute modification de configuration peut avoir un impact sur votre environnement de gestion. Si vous avez besoin d’aide, [contactez le support Intune.](/mem/get-support)
 
-#### <a name="use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>Utiliser le portail Azure AD pour désactiver l’inscription automatique à Intune
+#### <a name="use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment"></a>Utiliser le portail Azure AD pour désactiver l’inscription Automatique à Intune
 
 1. Dans le portail Azure, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Mobilité (MDM et MAM),** puis sélectionnez **Microsoft Intune**.
-3. Dans la page **Configurer,** vous verrez l’un des deux éléments. Si vous avez un abonnement Azure AD Premium, sélectionnez **Aucun** en de côté de l’étendue utilisateur MDM, puis **sélectionnez Enregistrer**. Si vous n’avez pas d’abonnement Azure AD Premium, sélectionnez **Désactiver.**
+3. Dans la page **Configurer,** vous verrez l’un des deux éléments. Si vous avez un abonnement Azure AD Premium, sélectionnez **Aucun** en de côté de l’étendue utilisateur MDM, puis **sélectionnez Enregistrer**. Si vous n’avez pas d’abonnement Azure AD Premium, **sélectionnez Désactiver.**
 4. Dans le navigation de gauche, sous **Gérer,** sélectionnez **Mobilité (MDM** et MAM), sélectionnez Microsoft Intune **inscription,** puis répétez l’étape 3.
 5. Allez à [l’étape 6. Réinitialisez vos PC cloud.](#step-6-reset-your-cloud-pcs)
 
