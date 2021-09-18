@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 70ff6fd0fbfade147f23d69a0ea9684ef9b63ba7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 663180b87a9886681a1643279e49641c3fbfed3c
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163980"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447383"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -402,7 +402,7 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 >
 > Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité **EDM\_DataUploaders**.
 >
-> Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier .csv .tsv ou .tsv avant le téléchargement en exécutant :
+> Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier .csv .tsv ou .tsv avant de télécharger en exécutant :
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -629,7 +629,7 @@ Ces emplacements prennent en charge les types d’informations sensibles EDM :
 - DLP pour SharePoint (fichiers)
 - Stratégies DLP de la sécurité de l’application Microsoft Cloud
 - Stratégies d’étiquetage automatique côté serveur : disponibles pour les clients du cloud commercial et les clients cloud du secteur public
-<!-- - Client side auto-labeling policies - available for government cloud customers -->  
+- Stratégies d’étiquetage automatique côté client : disponibles pour les clients cloud du secteur public  
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Pour créer une stratégie DLP avec EDM
 
