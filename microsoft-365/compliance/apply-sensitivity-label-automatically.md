@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: f8691f8e8357f7f810468007f9802c19e70dac49
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0f4d702581192ab35d3d515fa668043e9a1c1399
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401469"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444018"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -52,34 +52,34 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     Pour des instructions de configuration, consultez l’article [Comment configurer l’étiquetage automatique pour les applications Office](#how-to-configure-auto-labeling-for-office-apps) sur cette page.
 
 - **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint ou dans OneDrive) ou est envoyé par e-mail (traité par Exchange Online)** : utilisez une stratégie d’étiquetage automatique.
+    
+    Cette méthode est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et des données en transit (e-mails envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres).
+    
+    Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. En effet, l’administrateur exécute les stratégies en mode simulation pour s’assurer que le contenu est correctement étiqueté avant d’appliquer réellement l’étiquette.
 
-  Cette méthode est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et des données en transit (e-mails envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres).
+    Pour des instructions de configuration, consultez l’article [Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) sur cette page.
+    
+    Spécifique à l’étiquetage automatique pour SharePoint et OneDrive :
+    
+    - Les fichiers Office de Word (.docx), PowerPoint (.pptx) et Excel (.xlsx) sont pris en charge.
+        - Ces fichiers peuvent être étiquetés automatiquement au repos avant ou après la création des stratégies d’étiquette automatique. Les fichiers ne peuvent pas être étiquetés automatiquement s’ils font partie d’une session ouverte (le fichier est ouvert).
+        - Les pièces jointes aux éléments de liste ne sont actuellement pas prises en charge et ne seront pas étiquetées automatiquement.
+    - Jusqu’à 25 000 fichiers automatiquement étiquetés dans votre client par jour.
+    - Jusqu’à 100 stratégies d’attribution automatique de nom par client, chacune ciblant 100 sites (SharePoint ou OneDrive) lorsqu’ils sont spécifiés de manière individuelle. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
+    - Les valeurs existantes pour modifié, modifié par et la date ne sont pas changées du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes.
+    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier.
 
-  Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. En effet, l’administrateur exécute les stratégies en mode simulation pour s’assurer que le contenu est correctement étiqueté avant d’appliquer réellement l’étiquette.
-
-  Pour des instructions de configuration, consultez l’article [Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) sur cette page.
-
-  Spécifique à l’étiquetage automatique pour SharePoint et OneDrive :
-
-  - Les fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Le format Open XML est pris en charge (par exemple, .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (par exemple, .doc et .xls).
-    - Ces fichiers peuvent être étiquetés automatiquement au repos avant ou après la création des stratégies d’étiquette automatique. Les fichiers ne peuvent pas être étiquetés automatiquement s’ils font partie d’une session ouverte (le fichier est ouvert).
-    - Les pièces jointes aux éléments de liste ne sont actuellement pas prises en charge et ne seront pas étiquetées automatiquement.
-  - Jusqu’à 25 000 fichiers automatiquement étiquetés dans votre client par jour.
-  - Jusqu’à 100 stratégies d’attribution automatique de nom par client, chacune ciblant 100 sites (SharePoint ou OneDrive) lorsqu’ils sont spécifiés de manière individuelle. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
-  - Les valeurs existantes pour modifié, modifié par et la date ne sont pas changées du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes.
-  - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier.
-
-  Spécifique à l’étiquetage automatique pour Exchange :
-
-  - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office (fichiers Word, Excel et PowerPoint) sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
-    - Pour les fichiers PDF, si l’étiquette applique un chiffrement, ces fichiers sont chiffrés lorsque votre client est [activé pour les pièces jointes au format PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-    - Pour ces fichiers Office, le format Open XML est pris en charge (par exemple, .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (par exemple, .doc et .xls). Si l’étiquette applique un chiffrement, ces fichiers sont chiffrés.
-  - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
-  - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
-  - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique :
+    Spécifique à l’étiquetage automatique pour Exchange :
+    
+    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
+        - Pour les fichiers PDF, si l’étiquette applique le chiffrement, ces fichiers sont chiffrés à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement, elles sont chiffrées à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md).
+    - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
+    - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
+    - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique :
     - Si l’étiquette est configurée pour le [chiffrement](encryption-sensitivity-labels.md), celui-ci n’est pas appliqué.
     - Si l’étiquette est configurée pour appliquer des [marquages dynamiques](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), sachez que cela peut donner lieu à des noms de personnes hors de votre organisation.
-  - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique. Il n’existe actuellement aucun moyen de définir le propriétaire du gestionnaire des droits pour tous les e-mails entrants qui sont automatiquement chiffrés.
+    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique. Il n’existe actuellement aucun moyen de définir le propriétaire du gestionnaire des droits pour tous les e-mails entrants qui sont automatiquement chiffrés.
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparer l’étiquetage automatique pour les applications Office et les stratégies d’étiquetage automatique
 
