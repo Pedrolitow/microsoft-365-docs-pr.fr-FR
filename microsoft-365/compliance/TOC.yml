@@ -76,14 +76,12 @@
           href: information-barriers-solution-overview.md
         - name: En savoir plus sur les obstacles aux informations
           href: information-barriers.md
-        - name: Définir des stratégies d’obstacle aux informations
+        - name: Démarrer avec le cloisonnement de l’information
           href: information-barriers-policies.md
-        - name: Attributs pour les stratégies d’obstacle aux informations
-          href: information-barriers-attributes.md
-        - name: Résolution des problèmes d’obstacles aux informations
-          href: information-barriers-troubleshooting.md
-        - name: Modifier les stratégies d’obstacle aux informations
+        - name: Gérer le cloisonnement de l’information
           href: information-barriers-edit-segments-policies.md
+        - name: Attributs du cloisonnement de l’information
+          href: information-barriers-attributes.md
     - name: Gestion des accès privilégiés
       items:
         - name: Vue d’ensemble
