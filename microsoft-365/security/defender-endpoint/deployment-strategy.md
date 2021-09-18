@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 99f4bf80dcfc7a621d3249eae20b41100b1e5ab8
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c1aa44e26a127bff90a8d0cf591d0418c50687d2
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399264"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444174"
 ---
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Planifier le déploiement de Microsoft Defender pour point de terminaison
 
@@ -30,7 +30,7 @@ ms.locfileid: "59399264"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
 Planifiez votre déploiement de Microsoft Defender pour endpoint afin d’optimiser les fonctionnalités de sécurité de la suite et de mieux protéger votre entreprise contre les cybermenaces.
 
@@ -48,9 +48,9 @@ Utilisez les documents suivants pour sélectionner l’architecture defender pou
 
 | Item | Description |
 |:-----|:-----|
-|[![Image miniature de la stratégie de déploiement de Defender for Endpoint.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
+|[![Image miniature de la stratégie de déploiement de Defender for Endpoint.](images/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li>
 
-## <a name="step-2-select-deployment-method"></a>Étape 2 : Sélectionner la méthode de déploiement
+## <a name="step-2-select-deployment-method"></a>Étape 2 : sélectionner la méthode de déploiement
 
 Defender pour le point de terminaison prend en charge divers points de terminaison que vous pouvez intégrer au service.
 
@@ -66,7 +66,7 @@ Le tableau suivant répertorie les points de terminaison pris en charge et l’o
 
 ## <a name="step-3-configure-capabilities"></a>Étape 3 : Configurer les fonctionnalités
 
-Après l’intégration des points de terminaison, configurez les fonctionnalités de sécurité dans Defender pour le point de terminaison afin que vous pouvez optimiser la protection de sécurité robuste disponible dans la suite. Les fonctionnalités sont les suivantes :
+Après l’intégration des points de terminaison, configurez les fonctionnalités de sécurité dans Defender pour endpoint afin que vous pouvez optimiser la protection de sécurité robuste disponible dans la suite. Les fonctionnalités sont les suivantes :
 
 - Détection et réponse du point de terminaison
 - Protection de nouvelle génération

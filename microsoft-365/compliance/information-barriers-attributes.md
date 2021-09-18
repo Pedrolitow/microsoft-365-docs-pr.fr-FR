@@ -1,5 +1,5 @@
 ---
-title: Attributs pour les stratégies d’obstacle aux informations
+title: Attributs des obstacles à l’information
 description: Cet article est une référence pour les Azure Active Directory de compte d’utilisateur que vous pouvez utiliser pour définir des segments d’obstacles à l’information.
 ms.author: robmazz
 author: robmazz
@@ -13,16 +13,16 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee410bf455e770087da7999ad2019c17419a8e00
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e4309b7973b3f74ba43d178b6761449c91856d06
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175843"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443946"
 ---
-# <a name="attributes-for-information-barrier-policies"></a>Attributs pour les stratégies d’obstacle aux informations
+# <a name="information-barriers-attributes"></a>Attributs des obstacles à l’information
 
-Certains attributs dans Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs. Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies d’obstacle à l’information. Par exemple, vous pouvez utiliser **Service** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille pour deux services en même temps).
+Certains attributs de Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs. Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies d’obstacle à l’information. Par exemple, vous pouvez utiliser **Service** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille pour deux services en même temps).
 
 Cet article explique comment utiliser des attributs avec des obstacles à l’information et fournit une liste d’attributs qui peuvent être utilisés. Pour en savoir plus sur les obstacles aux informations, consultez les ressources suivantes :
 
@@ -47,11 +47,11 @@ Les attributs répertoriés dans cet article peuvent être utilisés pour défin
     |**Exemple**|**Cmdlet**|
     |:----------|:---------|
     | Définir un segment appelé Segment1 à l’aide de l’attribut Department | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
-    | Définissez un segment appelé SegmentA à l’aide de l’attribut MemberOf (supposons que cet attribut contient des noms de groupe, tels que « BlueGroup »). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
+    | Définissez un segment appelé SegmentA à l’aide de l’attribut MemberOf (supposons que cet attribut contient des noms de groupe, tels que « BlueGroup ») | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
     | Définissez un segment appelé DayTraders à l’aide d’ExtensionAttribute1 (supposons que cet attribut contient des titres de poste, tels que « DayTrader ») | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > Lorsque vous définissez des segments, utilisez le même attribut pour tous vos segments. Par exemple, si vous définissez certains segments à l’aide de *Department*, définissez tous les segments à l’aide de *Department*. Ne définissez pas certains segments à l’aide de *Department* et d’autres à l’aide *de MemberOf*. Assurez-vous que vos segments ne se chevauchent pas ; chaque utilisateur doit être affecté à exactement un segment.
+    > Lorsque vous définissez des segments, utilisez le même attribut pour tous vos segments. Par exemple, si vous définissez certains segments à l’aide de *Department*, définissez tous les segments à l’aide de *Department*. Ne définissez pas certains segments à l’aide de *Department* et d’autres à *l’aide de MemberOf*. Assurez-vous que vos segments ne se chevauchent pas ; chaque utilisateur doit être affecté à exactement un segment.
 
 ## <a name="reference"></a>Référence
 
@@ -97,5 +97,5 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les o
 ## <a name="resources"></a>Ressources
 
 - [Définir des stratégies pour les obstacles à l’information Microsoft Teams](information-barriers-policies.md)
-- [Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md)
+- [Résolution des problèmes de cloisonnement de l’information](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [Obstacles aux informations](information-barriers.md)

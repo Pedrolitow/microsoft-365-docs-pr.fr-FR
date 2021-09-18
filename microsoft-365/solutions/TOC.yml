@@ -71,12 +71,20 @@
                   href: create-secure-guest-sharing-environment.md
             - name: Référence de partage externe
               href: microsoft-365-guest-settings.md
-    - name: Déployer la protection contre les menaces sur Microsoft 365
+    - name: "Déployer la protection contre les rançongiciels pour votre client Microsoft\_365"
       items:
         - name: Vue d’ensemble
-          href: deploy-threat-protection.md
-        - name: Étapes de déploiement de la protection contre les menaces
-          href: deploy-threat-protection-configure.md
+          href: ransomware-protection-microsoft-365.md
+        - name: Étape 1. Configurer la base de référence de sécurité
+          href: ransomware-protection-microsoft-365-security-baselines.md
+        - name: Étape 2. Déployer la détection et réponse contre l’attaque
+          href: ransomware-protection-microsoft-365-attack-detection-response.md
+        - name: Étape 3. Protéger vos identités
+          href: ransomware-protection-microsoft-365-identities.md
+        - name: Étape 4. Protéger les appareils
+          href: ransomware-protection-microsoft-365-devices.md
+        - name: "Étape\_5\_: Vérifier les informations"
+          href: ransomware-protection-microsoft-365-information.md
     - name: Déployer la protection des informations pour la confidentialité des données
       items:
         - name: Vue d’ensemble

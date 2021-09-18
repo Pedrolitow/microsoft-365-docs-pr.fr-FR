@@ -1,6 +1,6 @@
 ---
 title: Définir des préférences pour Microsoft Defender pour le point de terminaison sur Mac
-description: Configurez MMicrosoft Defender pour endpoint sur Mac dans les organisations d’entreprise.
+description: Configurez Microsoft Defender pour endpoint sur Mac dans les organisations d’entreprise.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, gestion, préférences, entreprise, intune, jamf, macos,pératin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5db9e2b75e7dcb7cb08ea29f696531935b2f486
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a396f704405b062954b5d51fff4e69e85807e621
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163729"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444186"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -38,7 +38,7 @@ ms.locfileid: "59163729"
 
 ## <a name="summary"></a>Résumé
 
-Dans les organisations d’entreprise, Microsoft Defender pour endpoint sur macOS peut être géré via un profil de configuration déployé à l’aide de l’un des outils de gestion. Les préférences gérées par votre équipe des opérations de sécurité prévalent sur les préférences définies localement sur l’appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n’est pas disponible pour les utilisateurs sans autorisations administratives.
+Dans les organisations d’entreprise, Microsoft Defender pour endpoint sur macOS peut être géré via un profil de configuration déployé à l’aide de l’un des outils de gestion. Les préférences gérées par votre équipe en charge des opérations de sécurité prévalent sur les préférences définies localement sur l’appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n’est pas disponible pour les utilisateurs sans autorisations administratives.
 
 Cet article décrit la structure du profil de configuration, inclut un profil recommandé que vous pouvez utiliser pour commencer et fournit des instructions sur la façon de déployer le profil.
 
@@ -83,6 +83,22 @@ Spécifiez s’il faut activer la protection en temps réel, qui analyse les fic
 |**Valeurs possibles**|true (par défaut) <p> false|
 |||
 
+#### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
+Spécifie s’il faut démarrer une analyse de processus après le téléchargement des nouvelles mises à jour de l’intelligence de sécurité sur l’appareil. L’activation de ce paramètre déclenche une analyse antivirus sur les processus en cours d’exécution de l’appareil.
+
+<br>
+
+****
+
+|Section|Valeur|
+|---|---|
+|**Domaine**|`com.microsoft.wdav`|
+|**Clé**|scanAfterDefinitionUpdate|
+|**Type de données**|Valeur booléenne|
+|**Valeurs possibles**|false (par défaut) <p> true|
+|**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.41.10 ou supérieure.|
+|||
+
 #### <a name="enable--disable-passive-mode"></a>Activer/désactiver le mode passif
 
 Spécifiez si le moteur antivirus s’exécute en mode passif. Le mode passif a les implications suivantes :
@@ -105,7 +121,7 @@ Spécifiez si le moteur antivirus s’exécute en mode passif. Le mode passif a 
 |**Valeurs possibles**|false (par défaut) <p> true|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 100.67.60 ou supérieure.|
 |||
-
+  
 #### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
 
 Spécifiez la stratégie de fusion pour les exclusions. Il peut s’agit d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur ( ) ou uniquement `merge` d’exclusions définies par l’administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
@@ -119,7 +135,7 @@ Spécifiez la stratégie de fusion pour les exclusions. Il peut s’agit d’une
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|exclusionsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure.|
 |||
 
@@ -386,7 +402,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments.|
+|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments.|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure.|
 |||
 
@@ -406,7 +422,7 @@ Configurez les fonctionnalités de protection informatique de Microsoft Defender
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |||
 
-#### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection livrée par le cloud
+#### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection cloud
 
 Spécifiez s’il faut activer ou non la protection de l’appareil livrée par le cloud. Pour améliorer la sécurité de vos services, nous vous recommandons de maintenir cette fonctionnalité allumée.
 
@@ -485,7 +501,7 @@ Gérez les préférences pour l’interface utilisateur de Microsoft Defender po
 |**Comments**|Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire.|
 |||
 
-#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l’icône du menu d’état
+#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l’icône du menu État
 
 Spécifiez s’il faut afficher ou masquer l’icône du menu d’état dans le coin supérieur droit de l’écran.
 
@@ -591,7 +607,7 @@ Spécifie la valeur de la balise
 
 ## <a name="recommended-configuration-profile"></a>Profil de configuration recommandé
 
-Pour commencer, nous vous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
+Pour commencer, nous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
 
 Le profil de configuration suivant (ou, dans le cas de JAMF, une liste de propriétés qui peut être téléchargée dans le profil de configuration des paramètres personnalisés) sera :
 
@@ -693,6 +709,10 @@ Le profil de configuration suivant (ou, dans le cas de JAMF, une liste de propri
                 <dict>
                     <key>enableRealTimeProtection</key>
                     <true/>
+                    <key>passiveMode</key>
+                    <false/>
+                    <key>ScanAfterDefinitionUpdate</key>
+                    <false/>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -740,6 +760,8 @@ Les modèles suivants contiennent des entrées pour tous les paramètres décrit
         <key>enableRealTimeProtection</key>
         <true/>
         <key>passiveMode</key>
+        <false/>
+        <key>ScanAfterDefinitionUpdate</key>
         <false/>
         <key>maximumOnDemandScanThreads</key>
         <integer>1</integer>

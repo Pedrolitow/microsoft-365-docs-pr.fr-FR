@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2a28112c8afe9165453153d2d23752325ae2e6d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bb575efa9c7e18f20025d7840d3ddc86aefb330
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204883"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444282"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
@@ -29,10 +29,10 @@ Lorsque vous sélectionnez **l’onglet Rapports,** vous verrez des descriptions
 - Le [ **rapport d’état** de](device-status-report.md) l’appareil (en *prévisualisation)* indique votre utilisation du service Microsoft Manged Desktop en fonction de l’activité et de l’utilisation de l’appareil. 
 - Vous pouvez utiliser la **tendance de l’état** de l’appareil *(en* prévisualisation) pour surveiller les tendances de l’état de l’appareil au cours des 60 derniers jours pour Microsoft Manged Desktop appareils. Les tendances peuvent vous aider à associer l’état de l’appareil à d’autres modifications au fil du temps, par exemple de nouveaux déploiements. 
 - Le [ **Windows**](security-updates-report.md) des mises à jour de sécurité de l’entreprise *(en* prévisualisation) montre comment Windows mises à jour de sécurité sont publiées sur Microsoft Manged Desktop appareils.
-
+- Le rapport **d’utilisation des** applications fournit des informations sur l’utilisation classique des applications sur Microsoft Manged Desktop appareils. Pour que les appareils fournissent des données à ce rapport, ils doivent être définies sur le niveau de données de diagnostic facultatif.
 
 ## <a name="endpoint-analytics"></a>Analyse des points de terminaison
-Microsoft Manged Desktop est désormais intégré à [l’analyse des points de terminaison.](/mem/analytics/overview) Ces rapports vous donnent des informations sur la mesure du fonctionnement de votre organisation et de la qualité de l’expérience qu’elle offre à vos utilisateurs. L’analyse des points de terminaison se trouve **dans le** menu Rapports [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Pour faire pivoter un score afin d’inclure uniquement les  appareils gérés par Microsoft Manged Desktop allez à n’importe quel rapport, sélectionnez le filtre de la baisse, puis sélectionnez Microsoft Manged Desktop **appareils.**
+Microsoft Manged Desktop est désormais intégré à [l’analyse des points de terminaison.](/mem/analytics/overview) Ces rapports vous donnent des informations sur la mesure du fonctionnement de votre organisation et de la qualité de l’expérience qu’ils offrent à vos utilisateurs. L’analyse des points de terminaison se trouve **dans le** menu Rapports [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Pour faire pivoter un score afin d’inclure uniquement les  appareils gérés par Microsoft Manged Desktop allez à n’importe quel rapport, sélectionnez le filtre de la baisse, puis sélectionnez **Microsoft Manged Desktop appareils.**
 
 Si l’analyse des points de terminaison n’a pas été configurée automatiquement pour votre organisation Azure AD (« client ») lors de l’inscription, vous pouvez le faire vous-même. Pour plus d’informations, [voir Intégrer dans le portail d’analyse des points de terminaison.](/mem/analytics/enroll-intune#bkmk_onboard) Vous pouvez inscrire tous vos appareils ou, si vous souhaitez inclure  uniquement des appareils Microsoft Manged Desktop, sélectionnez les groupes d’appareils d’espace de travail modernes pour Test, Premier, Rapide et Large. Ces rapports peuvent nécessiter des autorisations différentes. Pour plus d’informations, [voir Autorisations](/mem/analytics/overview#permissions) pour vous assurer que des rôles sont correctement attribués.
 

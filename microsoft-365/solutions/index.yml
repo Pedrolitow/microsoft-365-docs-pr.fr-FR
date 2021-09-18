@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 686216d3fc0fab740231b7c383e01f8197e12e6e
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 4f5608ed017abecf5e55e19b3892c2929a687bac
+  ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59204270"
+  ms.lasthandoff: 09/18/2021
+  ms.locfileid: "59443934"
 landingContent:
 - title: Guides des solutions de base
   linkLists:
@@ -29,8 +29,8 @@ landingContent:
       url: empower-people-to-work-remotely.md
     - text: Configurer la collaboration sécurisée avec Microsoft 365
       url: setup-secure-collaboration-with-teams.md
-    - text: Déployer la protection contre les menaces sur Microsoft 365
-      url: deploy-threat-protection.md
+    - text: Déployer la protection contre les ransomware
+      url: ransomware-protection-microsoft-365.md
     - text: Déployer la protection des informations pour la confidentialité des données
       url: information-protection-deploy.md
     - text: Microsoft 365 pour les petites entreprises et les campagnes

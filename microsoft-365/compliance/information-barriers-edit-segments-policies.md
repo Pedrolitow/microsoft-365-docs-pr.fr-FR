@@ -12,16 +12,16 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 668ca8e26371d80f068c2723357ce3ee407db03a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dff13dd6c4011ec73a1976bce0af69b607e391b0
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202374"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444054"
 ---
 # <a name="manage-information-barrier-policies"></a>Gérer les stratégies de obstacle à l’information
 
-Une fois que vous avez défini des stratégies d’obstacle aux [informations,](information-barriers-policies.md)vous [](information-barriers-troubleshooting.md) devrez peut-être apporter des modifications à ces stratégies ou à vos segments d’utilisateurs, dans le cadre de la résolution des problèmes ou d’une maintenance régulière. Utilisez cet article comme guide.
+Une fois que vous avez défini des stratégies d’obstacle aux [informations,](information-barriers-policies.md)vous [](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) devrez peut-être apporter des modifications à ces stratégies ou à vos segments d’utilisateurs, dans le cadre de la résolution des problèmes ou d’une maintenance régulière.
 
 ## <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
 
@@ -32,12 +32,12 @@ Une fois que vous avez défini des stratégies d’obstacle aux [informations,](
 | [Modifier une stratégie](#edit-a-policy) | Modifiez une stratégie d’obstacles aux informations lorsque vous voulez modifier le fonctionnement d’une stratégie.<br/>Par exemple, au lieu de bloquer les communications entre deux segments, vous pouvez décider de n’autoriser les communications qu’entre certains segments. |
 | [Définir une stratégie sur l’état inactif](#set-a-policy-to-inactive-status) |Définissez une stratégie sur l’état inactif lorsque vous souhaitez apporter des modifications à une stratégie ou lorsque vous ne souhaitez pas qu’une stratégie soit en vigueur. |
 | [Supprimer une stratégie](#remove-a-policy) | Supprimez une stratégie d’obstacle aux informations lorsque vous n’avez plus besoin d’une stratégie particulière. |
-| [Arrêter une application de stratégie](#stop-a-policy-application) | Faites cette action lorsque vous souhaitez arrêter le processus d’application des stratégies de obstacle à l’information.<br/> L’arrêt d’une application de stratégie n’est pas instantané et n’annulera pas les stratégies déjà appliquées aux utilisateurs. |
+| [Arrêter une application de stratégie](#stop-a-policy-application) | Faites cette action lorsque vous souhaitez arrêter le processus d’application des stratégies d’obstacle à l’information.<br/> L’arrêt d’une application de stratégie n’est pas instantané et n’annulera pas les stratégies déjà appliquées aux utilisateurs. |
 | [Définir des stratégies pour les obstacles à l’information](information-barriers-policies.md) | Définissez une stratégie d’obstacle à l’information lorsque vous n’avez pas déjà mis en place de telles stratégies et que vous devez restreindre ou limiter les communications entre des groupes d’utilisateurs spécifiques. |
-| [Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md) | Reportez-vous à cet article lorsque vous êtes face à des problèmes inattendus avec les obstacles à l’information. |
+| [Résolution des problèmes de cloisonnement de l’information](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Reportez-vous à cet article lorsque vous êtes face à des problèmes inattendus avec les obstacles à l’information. |
 
 > [!IMPORTANT]
-> Pour effectuer les tâches décrites dans cet article, vous devez avoir un rôle approprié, tel que l’un des suivants :<br/>- administrateur Microsoft 365 Entreprise général<br/>- Administrateur général<br/>- Administrateur de conformité<br/>- Gestion de la conformité DUES (il s’agit d’un nouveau rôle !)<br><br>Pour en savoir plus sur les conditions préalables pour les obstacles à l’information, voir [Conditions préalables (pour les stratégies de obstacle à l’information).](information-barriers-policies.md#prerequisites)<br><br> Veillez à [vous connecter au Centre de sécurité & conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+> Pour effectuer les tâches décrites dans cet article, vous devez avoir un rôle approprié, tel que l’un des suivants :<br/>- administrateur Microsoft 365 Entreprise général<br/>- Administrateur général<br/>- Administrateur de conformité<br/>- Gestion de la conformité DE LAS (il s’agit d’un nouveau rôle !)<br><br>Pour en savoir plus sur les conditions préalables pour les obstacles à l’information, voir [Conditions préalables (pour les stratégies de obstacle à l’information).](information-barriers-policies.md#prerequisites)<br><br> Veillez à vous connecter au Centre de [sécurité & conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Modifier les attributs d’un compte d’utilisateur
 
@@ -65,7 +65,7 @@ Utilisez cette procédure pour modifier la définition d’un segment d’utilis
 
     Syntaxe : `Get-OrganizationSegment`
 
-    Vous verrez une liste de segments et de détails pour chacun d’eux, comme le type de segment, sa valeur UserGroupFilter, qui l’a créé ou modifié pour la dernière fois, le GUID, etc.
+    Vous verrez une liste de segments et de détails pour chacun d’eux, tels que le type de segment, sa valeur UserGroupFilter, qui l’a créé ou modifié pour la dernière fois, le GUID, etc.
 
     > [!TIP]
     > Imprimez ou enregistrez votre liste de segments pour référence ultérieurement. Par exemple, si vous souhaitez modifier un segment, vous devez connaître son nom ou sa valeur d’identification (utilisé avec le paramètre Identity).
@@ -110,13 +110,13 @@ Lorsque vous avez terminé de modifier des segments pour votre organisation, vou
     |:---------|:----------|
     | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> Dans cet exemple, nous avons mis en place une stratégie d’obstacle à l’information dont le GUID *43c37853-ea10-4b90-a23d-ab8c9377247* est inactif. |
 
-3. Pour appliquer vos modifications, utilisez la cmdlet **Start-InformationBarrierPoliciesApplication.**
+3. Pour appliquer vos modifications, utilisez l’cmdlet **Start-InformationBarrierPoliciesApplication.**
 
     Syntaxe : `Start-InformationBarrierPoliciesApplication`
 
     Les modifications sont appliquées, utilisateur par utilisateur, pour votre organisation. Si votre organisation est de grande taille, le processus peut prendre 24 heures (ou plus). (En règle générale, le traitement de 5 000 comptes d’utilisateur prend environ une heure.)
 
-À ce stade, une ou plusieurs stratégies d’obstacle à l’information sont définies sur l’état inactif. À partir de là, vous pouvez faire l’une des actions suivantes :
+À ce stade, une ou plusieurs stratégies de obstacle à l’information sont définies sur l’état inactif. À partir de là, vous pouvez faire l’une des actions suivantes :
 
 - Conservez-la telle qu’elle est (une stratégie définie sur l’état inactif n’a aucun effet sur les utilisateurs)
 - [Modifier une stratégie](#edit-a-policy) 
@@ -140,7 +140,7 @@ Lorsque vous avez terminé de modifier des segments pour votre organisation, vou
 
 3. Répétez les étapes 1 à 2 pour chaque stratégie à supprimer.
 
-4. Lorsque vous avez terminé de supprimer des stratégies, appliquez vos modifications. Pour ce faire, utilisez la cmdlet **Start-InformationBarrierPoliciesApplication.**
+4. Lorsque vous avez terminé de supprimer des stratégies, appliquez vos modifications. Pour ce faire, utilisez l’cmdlet **Start-InformationBarrierPoliciesApplication.**
 
     Syntaxe : `Start-InformationBarrierPoliciesApplication`
 
@@ -170,4 +170,4 @@ Une fois que vous avez commencé à appliquer des stratégies d’obstacle à l�
 - [En savoir plus sur les obstacles aux informations dans SharePoint Online](/sharepoint/information-barriers)
 - [En savoir plus sur les obstacles aux informations dans OneDrive](/onedrive/information-barriers)
 - [Attributs pour les stratégies d’obstacle aux informations](information-barriers-attributes.md)
-- [Résolution des problèmes d’obstacles aux informations](information-barriers-troubleshooting.md)
+- [Résolution des problèmes d’obstacles aux informations](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

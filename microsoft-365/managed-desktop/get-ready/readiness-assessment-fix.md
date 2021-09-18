@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f3ccb47c2facffed0a259b4807f8155b4c87cb70
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9332483dffa9fc67bf319cc57aef89d25c866843
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205195"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59443994"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -27,7 +27,7 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 |Prêt     | Aucune action n’est requise avant de terminer l’inscription.        |
 |Avertissement    | Suivez les étapes de l’outil ou de cet article pour une expérience de l’inscription et pour les utilisateurs. Vous *pouvez terminer* l’inscription, mais vous devez résoudre ces problèmes avant de déployer votre premier appareil.        |
 |Non prêt | *L’inscription échoue si vous ne corrigez pas ces problèmes.* Suivez les étapes de l’outil ou de cet article pour les résoudre.        |
-|Erreur | Le Azure Active Directory (AD) que vous utilisez ne donne pas l’autorisation suffisante pour exécuter cette vérification. |
+|Error | Le Azure Active Directory (AD) que vous utilisez ne donne pas l’autorisation suffisante pour exécuter cette vérification. |
 
 > [!NOTE]
 > Les résultats signalés par cet outil reflètent l’état de vos paramètres uniquement au moment où vous l’avez utilisé. Si vous a apporté ultérieurement des modifications aux stratégies dans Microsoft Intune, Azure Active Directory ou Microsoft 365, les éléments qui étaient « prêts » peuvent devenir « Non prêts ». Pour éviter les problèmes liés aux Microsoft Manged Desktop d’entreprise, vérifiez les paramètres spécifiques décrits dans cet article avant de modifier les stratégies.
@@ -38,7 +38,7 @@ Vous pouvez accéder aux paramètres Intune à l’Microsoft Endpoint Manager [d
 
 ### <a name="autopilot-deployment-profile"></a>Profil autopilot deployment
 
-Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques Microsoft Manged Desktop appareils mobiles. Microsoft Manged Desktop utilise Autopilot pour mettre en service de nouveaux appareils.
+Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques Microsoft Manged Desktop appareils. Microsoft Manged Desktop utilise Autopilot pour mettre en service de nouveaux appareils. Si vous avez un profil de déploiement Autopilot existant, le paramètre « Convertir tous les appareils ciblés en Autopilot » doit être définie sur « Non » pour que le test de préparation du bureau géré soit réussi pour Autopilot.
 
 **Non prêt**
 
@@ -55,16 +55,16 @@ Si vous avez des connecteurs de certificat qui seront utilisés par les appareil
 
 **Avertissement**
 
-Aucun connecteur de certificat n’est présent. Il est possible que vous n’avez pas besoin de connecteurs, mais vous devez évaluer si vous en avez besoin pour la connectivité réseau sur Microsoft Manged Desktop périphériques. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Aucun connecteur de certificat n’est présent. Il est possible que vous n’avez pas besoin de connecteurs, mais vous devez évaluer si vous en avez besoin pour la connectivité réseau sur Microsoft Manged Desktop appareils. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 **Avertissement**
 
-Au moins un connecteur de certificat présente une erreur. Si vous avez besoin de ce connecteur pour fournir des certificats aux Microsoft Manged Desktop, vous devez résoudre l’erreur. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Au moins un connecteur de certificat présente une erreur. Si vous avez besoin de ce connecteur pour fournir des certificats aux Microsoft Manged Desktop, vous devez résoudre l’erreur. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 
 **Avertissement**
 
-Vous avez au moins un connecteur de certificat et aucune erreur n’est signalée. Toutefois, en vue du déploiement, vous devrez peut-être créer un profil pour réutiliser le connecteur pour Microsoft Manged Desktop périphériques. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Vous avez au moins un connecteur de certificat et aucune erreur n’est signalée. Toutefois, en vue du déploiement, vous devrez peut-être créer un profil pour réutiliser le connecteur pour Microsoft Manged Desktop périphériques. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 ### <a name="company-portal"></a>Portail d'entreprise
 
@@ -85,9 +85,9 @@ Vous avez au moins une stratégie d’accès conditionnel qui cible tous les uti
 
 **Avertissement**
 
-Vous avez des stratégies d’accès conditionnel qui pourraient empêcher Microsoft Manged Desktop gestion du service Microsoft Manged Desktop service. Lors de l’inscription, nous allons exclure Microsoft Manged Desktop comptes de service des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Vous avez des stratégies d’accès conditionnel qui pourraient empêcher Microsoft Manged Desktop gestion du service Microsoft Manged Desktop de gestion. Lors de l’inscription, nous allons exclure Microsoft Manged Desktop comptes de service des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
-**Erreur**
+**Error**
 
 Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
 
@@ -104,7 +104,7 @@ Les stratégies de conformité des appareils Intune dans votre organisation Azur
 
 **Avertissement**
 
-Vous avez au moins une stratégie de conformité qui s’applique à tous les utilisateurs. Microsoft Manged Desktop également des stratégies de conformité qui s’appliqueront à Microsoft Manged Desktop appareils. Examinez toutes les stratégies de conformité créées par votre organisation qui s’appliquent Microsoft Manged Desktop appareils mobiles pour vous assurer qu’il n’y a aucun conflit. Pour obtenir la procédure à suivre, voir [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+Vous avez au moins une stratégie de conformité qui s’applique à tous les utilisateurs. Microsoft Manged Desktop également des stratégies de conformité qui s’appliqueront à Microsoft Manged Desktop appareils. Examinez toutes les stratégies de conformité créées par votre organisation qui s’appliquent Microsoft Manged Desktop appareils mobiles pour vous assurer qu’il n’y a aucun conflit. Pour obtenir la procédure à [suivre,](/mem/intune/protect/create-compliance-policy)voir Créer une stratégie de conformité dans Microsoft Intune .
 
 
 
@@ -158,15 +158,15 @@ L’authentification multifacteur ne doit pas empêcher Microsoft Manged Desktop
 
 **Non prêt**
 
-Certaines stratégies d’authentification  multifacteur sont définies comme requises pour les stratégies d’accès conditionnel qui sont affectées à tous les utilisateurs. Lors de l’inscription, nous allons exclure Microsoft Manged Desktop comptes de service des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Certaines stratégies d’authentification multifacteur sont définies comme **requises** pour les stratégies d’accès conditionnel qui sont attribuées à tous les utilisateurs. Lors de l’inscription, nous allons exclure Microsoft Manged Desktop comptes de service des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Avertissement**
 
 L’authentification multifacteur est requise sur les stratégies d’accès conditionnel, ce qui peut empêcher Microsoft Manged Desktop gestion du service Microsoft Manged Desktop de gestion. Lors de l’inscription, nous allons exclure Microsoft Manged Desktop comptes de service des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
-**Erreur**
+**Error**
 
-Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
+Le rôle Administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
 
 - Lecteur de sécurité
 - Administrateur de sécurité
@@ -206,7 +206,7 @@ Vous avez un profil de base de sécurité qui cible tous les utilisateurs, tous 
 
 **Avertissement**
 
-Assurez-vous que les stratégies de base de sécurité que vous avez exclues Microsoft Manged Desktop appareils. Pour obtenir la procédure à suivre, voir Utiliser les lignes de base de sécurité [pour configurer Windows 10 appareils mobiles dans Intune.](/mem/intune/protect/security-baselines) Lors de l’inscription, nous appliquons une nouvelle ligne de base de sécurité à tous Microsoft Manged Desktop appareils. Le groupe Modern **Workplace Devices -All** Azure AD est un groupe dynamique que nous créons lorsque vous vous inscrivez à Microsoft Manged Desktop. Vous devez donc revenir pour exclure ce groupe après l’inscription. 
+Assurez-vous que toutes les stratégies de base de sécurité que vous avez excluent Microsoft Manged Desktop appareils. Pour obtenir la procédure à suivre, voir Utiliser les lignes de base de sécurité [pour configurer Windows 10 appareils mobiles dans Intune.](/mem/intune/protect/security-baselines) Lors de l’inscription, nous appliquons une nouvelle ligne de base de sécurité à tous Microsoft Manged Desktop appareils. Le groupe Modern **Workplace Devices -All** Azure AD est un groupe dynamique que nous créons lorsque vous vous inscrivez à Microsoft Manged Desktop. Vous devez donc revenir pour exclure ce groupe après l’inscription. 
 
 ### <a name="unlicensed-admins"></a>Administrateurs sans permis
 
@@ -307,12 +307,12 @@ Si vous avez des utilisateurs affectés à l’un de ces rôles dans votre organ
 - Opérateur de sécurité
 - Lecteur général
 
-Pour plus d’informations, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 
 
 ### <a name="security-default"></a>Sécurité par défaut
 
-Les paramètres de sécurité par Azure Active Directory empêcheront Microsoft Manged Desktop gestion de vos appareils.
+Les paramètres de sécurité par Azure Active Directory empêcheront les Microsoft Manged Desktop gérer vos appareils.
 
 **Non prêt**
 
@@ -320,7 +320,7 @@ Les paramètres de sécurité par défaut sont désactivés. Désactiver les par
 
 ### <a name="self-service-password-reset"></a>Réinitialisation du mot de passe en libre-service
 
-La réinitialisation du mot de passe en libre-service (SSPR) peut être activée pour tous les utilisateurs Microsoft Manged Desktop à l’exception Microsoft Manged Desktop comptes de service. Pour plus d’informations, voir Didacticiel : Permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser leurs mots de passe à l’aide Azure Active Directory réinitialisation du mot de [passe en libre-service.](/azure/active-directory/authentication/tutorial-enable-sspr)
+La réinitialisation du mot de passe en libre-service (SSPR) peut être activée pour tous les utilisateurs Microsoft Manged Desktop à l’exception Microsoft Manged Desktop comptes de service. Pour plus d’informations, voir didacticiel : permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser leurs mots de passe à l’aide Azure Active Directory réinitialisation du mot de passe [en libre-service.](/azure/active-directory/authentication/tutorial-enable-sspr)
 
 **Avertissement**
 
@@ -339,8 +339,8 @@ Microsoft Manged Desktop utilisateurs n’auront pas de privilèges d’administ
 
 ### <a name="onedrive"></a>OneDrive
 
-La **synchronisation autoriser uniquement sur les PC joints à** un paramètre de domaine spécifique entre en conflit avec Microsoft Manged Desktop. Vous pouvez accéder aux paramètres OneDrive dans le centre [d OneDrive’administration.](https://admin.onedrive.com)
+La **synchronisation autoriser uniquement sur les PC joints à** un paramètre de domaine spécifique entre en conflit avec Microsoft Manged Desktop. Vous pouvez accéder OneDrive paramètres d’accès au [OneDrive’administration.](https://admin.onedrive.com)
 
 **Avertissement**
 
-Vous utilisez le paramètre Autoriser la synchronisation uniquement sur les **PC joints à des domaines spécifiques.** Ce paramètre ne fonctionne pas avec Microsoft Manged Desktop. Désactivez ce paramètre et OneDrive à utiliser une stratégie d’accès conditionnel. Pour obtenir [de l’aide, voir](/azure/active-directory/conditional-access/plan-conditional-access) Planifier un déploiement d’accès conditionnel.
+Vous utilisez le paramètre Autoriser la synchronisation uniquement sur les **PC joints à des domaines spécifiques.** Ce paramètre ne fonctionne pas avec Microsoft Manged Desktop. Désactivez ce paramètre et OneDrive à utiliser une stratégie d’accès conditionnel. Voir [Planifier un déploiement d’accès conditionnel pour](/azure/active-directory/conditional-access/plan-conditional-access) obtenir de l’aide.
