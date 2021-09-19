@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ff68caef8989ec6159b60bba8be03fe7246fdbc
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 64957adeb242d14b2f4c986d3cffc282379c93f3
+ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400677"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59444138"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -401,14 +401,14 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Si vous partagez des documents chiffrés avec des personnes extérieures à votre organisation, vous devrez peut-être créer des comptes invités et modifier les stratégies d’accès conditionnel. Pour plus d’informations sur ce scénario, consultez [Partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
-- Lorsque les utilisateurs autorisés ouvrent des documents chiffrés dans leurs applications Office, ils voient le nom et la description de l’étiquette dans une barre de messages jaune en haut de leur application. Cette barre de messages informe les utilisateurs que le document est restreint et, à l’aide du bouton **Afficher les autorisations**, ils peuvent voir les autorisations qui leur ont été accordées pour ce document. Lorsque les autorisations de chiffrement s’étendent à des personnes extérieures à votre organisation, examinez attentivement les noms d’étiquettes et les descriptions qui seront visibles dans cette barre de messages lors de l’ouverture du document.
+- Lorsque les utilisateurs autorisés ouvrent des documents chiffrés dans leurs applications Office, ils voient le nom et la description de l’étiquette dans une barre de messages jaune en haut de leur application. Lorsque les autorisations de chiffrement s’étendent à des personnes extérieures à votre organisation, examinez attentivement les noms d’étiquettes et les descriptions qui seront visibles dans cette barre de messages lors de l’ouverture du document.
 
 - Pour permettre à plusieurs utilisateurs de modifier un fichier chiffré au même moment, ils doivent tous utiliser Office pour le web.  Ou, pour Windows et Mac, vous avez [activé la co-création pour les fichiers chiffrés avec des étiquettes de sensibilité](sensitivity-labels-coauthoring.md) et les utilisateurs ont les [versions minimales requises](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel et PowerPoint. Si ce n’est pas le cas et que le fichier est déjà ouvert :
 
   - Dans les applications Office (Windows, Mac, Android et iOS), les utilisateurs remarquent le message **Fichier en cours d'utilisation** incluant le nom de la personne ayant extrait le fichier. Ils peuvent ensuite afficher une copie en lecture seule, enregistrer et modifier une copie du fichier, et recevoir une notification lorsque le fichier est disponible.
   - Dans Office pour le web, les utilisateurs remarquent un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Ils peuvent ensuite sélectionner **Ouvrir en mode Lecture**.
 
-- La fonctionnalité [Enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) dans les applications Office (Windows, Mac, Android et iOS) est désactivée pour les fichiers chiffrés. Un message s'affiche indiquant aux utilisateurs que le fichier dispose d'autorisations restreintes qui doivent être supprimées avant que l’Enregistrement automatique puisse être activé.
+- La fonctionnalité [d'enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) dans les applications Office pour iOS et Android est désactivée pour les fichiers cryptés. Cette fonctionnalité est également désactivée pour les fichiers chiffrés sur Windows et Mac si vous n’avez pas activé la [co-auteur pour les fichiers chiffrés avec des étiquettes de sensibilité](sensitivity-labels-coauthoring.md). Un message s'affiche indiquant aux utilisateurs que le fichier dispose d'autorisations restreintes qui doivent être supprimées avant que l’Enregistrement automatique puisse être activé.
 
 - L’ouverture des fichiers chiffrés peut être plus longue dans les applications Office (Windows, Mac, Android et iOS).
 
