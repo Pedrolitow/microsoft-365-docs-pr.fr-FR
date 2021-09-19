@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 5480a5b8336c03323c26785e884da811a5d00d97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb1f0dad7aba15b33fce51b855a9b037478db627
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205939"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447335"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -281,7 +281,7 @@ Vérifiez que vous disposez de la version 16.0.19418.12000 ou ultérieure de Sha
    Get-Label |ft Name, Guid
    ```
 
-3. À présent, [connectez-vous à Exchange Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable. Par exemple :
+3. À présent, [connectez-vous à Exchange Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable. Par exemple :
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -355,7 +355,7 @@ Les applications et services suivants ne prennent actuellement pas en charge les
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 
-Microsoft 365 ne prend plus en charge les anciennes classifications pour les nouveaux groupes Microsoft 365 et les sites SharePoint une fois que vous avez activé les étiquettes de confidentialité pour les conteneurs. Toutefois, les groupes et sites existants qui prennent en charge les étiquettes de confidentialité affichent les anciennes valeurs de classification jusqu’à ce que vous les convertissiez pour utiliser des étiquettes de confidentialité.
+Une fois que vous avez activé les étiquettes de niveau de sensibilité pour les conteneurs, les classifications de groupe d’Azure AD ne sont plus pris en charge par Microsoft 365 et ne s’affichent pas sur les sites qui la prise en charge des étiquettes de sensibilité. Toutefois, vous pouvez convertir vos anciennes classifications en étiquettes de sensibilité.
 
 Pour consulter un exemple de la manière dont vous avez peut-être utilisé l’ancienne classification de groupe pour SharePoint, consultez la page [Classification des sites SharePoint « modernes »](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
