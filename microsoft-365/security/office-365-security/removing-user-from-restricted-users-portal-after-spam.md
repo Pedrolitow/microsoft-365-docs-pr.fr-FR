@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à supprimer des utilisateurs
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 774f47c65f98a2e93ee6e50406afe897a315de12
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9c54f5ac443192f094f1c1edb14273c9f226f9f
+ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179187"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "59447352"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans Microsoft 365
 
@@ -66,7 +66,7 @@ Les administrateurs peuvent supprimer des utilisateurs de la page Utilisateurs r
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-a-user-from-the-restricted-users-list"></a>Utiliser le portail Microsoft 365 Defender pour supprimer un utilisateur de la liste des Utilisateurs restreints
 
-1. Dans le portail Microsoft 365 Defender, accédez à **Courrier électronique et collaboration** > **Examiner** > **Utilisateurs restreints**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Utilisateurs restreints**.
 
 2. Dans la page **Utilisateurs restreints** , recherchez et sélectionnez l’utilisateur que vous souhaitez débloquer en cliquant sur l’utilisateur.
 
