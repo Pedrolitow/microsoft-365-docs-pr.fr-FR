@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5ac9de03cec817f469fe096689e4badf615bb4c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165025"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453615"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
@@ -68,14 +68,14 @@ ms.locfileid: "59165025"
 |étendue|string|Étendue de l’action. « Complète » ou « Sélective » pour l’isolation, « Rapide » ou « Complète » pour l’analyse antivirus.|
 |demandeur|Chaîne|Identité de la personne qui a exécuté l’action.|
 |externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
-|requestSource|chaîne|Nom de l’utilisateur/de l’application qui a soumis l’action.|
+|requestSource|string|Nom de l’utilisateur/de l’application qui a soumis l’action.|
 |Commandes |tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
 |cancellationRequestor|Chaîne|Identité de la personne qui a annulé l’action.|
 |requestorComment|Chaîne|Commentaire écrit lors de l’émission de l’action.|
 |cancellationComment|Chaîne|Commentaire écrit lors de l’annulation de l’action.|
-|statut|Énum|État actuel de la commande. Les valeurs possibles sont : « Pending », « InProgress », « Succeeded », « Failed », « TimeOut » et « Cancelled ».|
+|statut|Énum|État actuel de la commande. Les valeurs possibles sont : « En attente », « InProgress », « Succeeded », « Failed », « TimeOut » et « Cancelled ».|
 |machineId|Chaîne|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
-|machineId|Chaîne|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|computerDnsName|Chaîne|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
 |creationDateTimeUtc|DateTimeOffset|Date et heure de création de l’action.|
 |cancellationDateTimeUtc|DateTimeOffset|Date et heure d’annulation de l’action.|
 |lastUpdateDateTimeUtc|DateTimeOffset|Date et heure de la dernière mise à jour de l’état de l’action.|

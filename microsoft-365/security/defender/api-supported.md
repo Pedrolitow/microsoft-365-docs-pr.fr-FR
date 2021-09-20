@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77c20811e6aeba266908b4d83c4f81da8b5716d4
+ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181012"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59453579"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>API Microsoft 365 Defender prises en charge 
 
@@ -43,7 +43,7 @@ Article | Description
 -|-
 [API de recherche avancée de menaces](api-advanced-hunting.md) | Exécutez des requêtes de recherche avancée.
 [API d’incident](api-incident.md) | Liste et mise à jour des incidents, ainsi que d’autres tâches pratiques.
-[API de diffusion en](streaming-api.md) continu (prévisualisation) | Expédiez des alertes et des événements en temps réel à mesure qu’ils se produisent dans un flux de données unique.
+[API de diffusion en continu](streaming-api.md) | Expédiez des alertes et des événements en temps réel à mesure qu’ils se produisent dans un flux de données unique.
 
 ### <a name="endpoint-uris"></a>URL de point de terminaison
 
@@ -53,7 +53,7 @@ L’URI de base pour les deux API principales est : https://api.security.microso
 - Europe : api-eu.security.microsoft.com
 - Royaume-Uni : api-uk.security.microsoft.com
 
-Les jetons peuvent être acquis en accédant https://api.security.microsoft.com à .
+Les jetons peuvent être acquis en accédant à https://api.security.microsoft.com .
 
 Toutes les API le long du `/api` chemin d’accès utilisent le [protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
 
