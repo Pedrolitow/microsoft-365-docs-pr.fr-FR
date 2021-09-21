@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e0605e6be5bc3bc5e12c2a50e00f07ab68c19d8d
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: e018bcdfe164d51bd3e57648a9b9bb201f661372
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444030"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460445"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
@@ -47,7 +47,7 @@ Microsoft Defender pour endpoint pour les clients du gouvernement des États-Uni
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 pour Cloud de la communauté du secteur public Élevé|Microsoft 365 G5 pour DOD|
+|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 for Cloud de la communauté du secteur public High|Microsoft 365 G5 pour DOD|
 |Microsoft 365 Sécurité G5 Cloud de la communauté du secteur public|Microsoft 365 Sécurité G5 pour Cloud de la communauté du secteur public élevé|Microsoft 365 Sécurité G5 pour DOD|
 |Microsoft Defender pour le point de terminaison - Cloud de la communauté du secteur public|Microsoft Defender for Endpoint for Cloud de la communauté du secteur public High|Microsoft Defender pour point de terminaison pour DOD|
 |Windows 10 Entreprise E5 Cloud de la communauté du secteur public|Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public élevé|Windows 10 Entreprise E5 pour DOD|
@@ -93,14 +93,14 @@ Windows 10, version 20H2 (avec [KB4586853)](https://support.microsoft.com/help/4
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1909 (avec [KB4586819](https://support.microsoft.com/help/4586819))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1903 (avec [KB4586819](https://support.microsoft.com/help/4586819))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows 10, version 1809 [(avec KB4586839](https://support.microsoft.com/help/4586839))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows 10, version 1809 (avec [KB4586839](https://support.microsoft.com/help/4586839))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1803 (avec [KB4598245](https://support.microsoft.com/help/4598245))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1709|![Non.](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Oui ](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147) <p> Remarque : [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge
 Windows 10, version 1703 et antérieures|![Non.](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge
 Windows Server 2019 (avec [KB4586839)](https://support.microsoft.com/help/4586839)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 8.1 Entreprise|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 8 Pro|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -121,10 +121,10 @@ Les versions de système d’exploitation suivantes sont pris en charge lors de 
 
 Version du système d’exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 
 ## <a name="required-connectivity-settings"></a>Paramètres de connectivité requis
 
@@ -134,28 +134,14 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 Liste de feuilles de calcul de domaines|Description
 :-----|:-----
-![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
-Pour plus d’informations, voir [Configurer les paramètres de proxy d’appareil et de connectivité Internet.](configure-proxy-internet.md)
+Pour plus d’informations, voir [Configurer les paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
 
 > [!NOTE]
 > La feuille de calcul contient également des URL commerciales, veillez à vérifier les onglets « US Gov ».
 >
 > Lors du filtrage, recherchez les enregistrements étiquetés « US Gov » et votre nuage spécifique sous la colonne de géographie.
-
-### <a name="service-backend-ip-ranges"></a>Plages d’adresses IP du système de service
-
-Si vos périphériques réseau ne supportent pas les règles DNS, utilisez plutôt des plages IP.
-
-Defender pour le point de terminaison pour les clients du gouvernement des États-Unis est créé dans l’environnement Azure US Government, déployé dans les régions suivantes :
-
-- AzureCloud.usgovtexas
-- AzureCloud.usgovvirginia
-
-Vous pouvez trouver les plages d’adresses IP Azure dans les plages IP azure et les balises de [service - Cloud pour le gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063).
-
-> [!NOTE]
-> En tant que solution informatique, les plages d’adresses IP peuvent changer. Il est recommandé de passer aux règles DNS.
 
 ## <a name="api"></a>API
 
@@ -174,7 +160,7 @@ Au lieu des URIs publics répertoriés dans la documentation de notre [API,](api
 
 ## <a name="feature-parity-with-commercial"></a>Parité des fonctionnalités avec commercial
 
-Defender for Endpoint for US Government customers doesn’t have complete parity with the commercial offering. Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales à nos clients du gouvernement des États-Unis, certaines fonctionnalités ne sont pas encore disponibles que nous voulons mettre en évidence.
+Defender for Endpoint for US Government customers doesn’t have complete parity with the commercial offering. Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales à nos clients du gouvernement des États-Unis, certaines fonctionnalités qui ne sont pas encore disponibles sont à mettre en évidence.
 
 Voici les lacunes connues :
 

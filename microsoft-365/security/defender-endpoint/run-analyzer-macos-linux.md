@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 813dff46f3ba26c32f3b704645a9ca35ca740001
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 258adabaa29420ca0b713e290926048a2ed1752d
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353597"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460015"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Exécuter l’analyse du client sur macOS ou Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "59353597"
    > [!NOTE]
    > Le hachage SHA256 actuel de « XMDEClientAnalyzer.zip » téléchargé à partir du lien ci-dessus est : '973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2'.
 
-2. Extrayez le contenu des XMDEClientAnalyzer.zip sur l’ordinateur.
+2. Extrayez le contenu du XMDEClientAnalyzer.zip sur l’ordinateur.
 
 3. Ouvrez une session terminal, modifiez le répertoire vers l’emplacement extrait et exécutez :
 
@@ -52,16 +52,26 @@ ms.locfileid: "59353597"
 
 ## <a name="running-the-analyzer-using-a-terminal-or-ssh-scenario"></a>Exécution de l’analyseur à l’aide d’un scénario terminal ou SSH
 
-1. Ouvrez un terminal ou un SSH sur l’ordinateur approprié.
+Ouvrez un terminal ou un SSH sur l’ordinateur approprié et exécutez les commandes suivantes :
 
-2. Exécuter `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
 
-3. Exécutez `./mde_support_tool.sh -d` cette ligne pour générer le fichier d’archivage des résultats.
+2. `unzip -q XMDEClientAnalyzer.zip`
+
+3. `cd XMDEClientAnalyzer`
+
+4. `chmod +x mde_support_tool.sh"`
+
+3. Exécutez en tant qu’utilisation non racine pour installer les composants pip et lxml requis : `./mde_support_tool.sh`
+
+4. Pour collecter le package de diagnostic réel et générer le fichier d’archivage des résultats, exécutez à nouveau en tant que racine : `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaiera de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
->
-> En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
+> - Pour Linux, l’analyseur requiert « lxml » pour produire la sortie des résultats. S’il n’est pas installé, l’analyseur essaie de l’extraire du référentiel officiel pour les packages Python ci-dessous : <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> 
+> - En outre, l’outil nécessite actuellement l’installation de Python version 3 ou ultérieure.
+> 
+> - Si votre appareil se trouve derrière un proxy, vous pouvez simplement transmettre le serveur proxy en tant que variable d’environnement au script mde_support_tool.sh. Par exemple : `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Exemple :
 
@@ -92,7 +102,7 @@ Aide supplémentaire sur la syntaxe :
 
 - mde_diagnostic.zip
 
-  Description : même sortie de diagnostic qui est générée lors de l’exécution du *diagnostic mdatp créer* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  Description : même sortie de diagnostic qui est générée lors de l’exécution de *diagnostic mdatp créer* sur [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
   ou
 

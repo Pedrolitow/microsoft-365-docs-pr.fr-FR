@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes à Canvas
-ms.openlocfilehash: 44ba24e5c8bd7107f9cba199ce290c10b31e0806
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c19807034d5d063f71378dd450cfda419cd1491
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203262"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460303"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Utiliser Microsoft Teams classes avec Canvas
 
@@ -32,9 +32,19 @@ Microsoft Teams classes est une application Learning Tools Interoperability (LTI
 > - Un seul client Microsoft peut être utilisé pour le mappage d’utilisateurs entre Canvas et Microsoft.
 > - Vous devez désactiver le Synchronisation des données scolaires (SDS) avant d’utiliser l’Teams LTI de classe afin d’éviter la duplication des groupes.
 
-## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrateur
+## <a name="grant-admin-consent"></a>Accorder le consentement de l’administrateur
 
-Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est important que l’application **Microsoft Teams-Sync-for-Canvas** Azure de Canvas soit approuvée par l’administrateur Microsoft Office 365 de votre établissement dans votre client Microsoft Azure avant de terminer la configuration de l’administrateur canvas.
+Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est important que l’application **Microsoft-Teams-Sync-for-Canvas** Azure de Canvas soit approuvée par l’administrateur Microsoft Office 365 de votre établissement dans votre client Microsoft Azure avant de terminer la configuration de l’administrateur canvas. Vous devez être administrateur général pour effectuer ces étapes.
+
+1. Accédez à Azure Active Directory.
+
+2. Ouvrez Enterprise applications, puis sélectionnez l’application **Microsoft-Teams-Sync-for-Canvas.**
+
+3. Sélectionnez **Autorisations,** puis **Accordez le consentement de l’administrateur.**
+
+4. Acceptez les autorisations dont l’application a besoin, puis accordez le consentement.
+
+## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 administrateur
 
 1. Connectez-vous à Canvas.
 

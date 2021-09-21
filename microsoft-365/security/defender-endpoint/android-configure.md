@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 441e7a598e0487759dc5e48dab3e74a7b3b1ead6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afff05ac0e18ac41b1e2ba70b59ed4dfd0c6a22a
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179379"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460315"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour le point de terminaison sur les fonctionnalités Android
 
@@ -52,7 +52,33 @@ Defender pour le point de terminaison sur Android permet aux administrateurs inf
 > Defender pour le point de terminaison sur Android utiliserait un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 > Pour plus d’informations, voir [Configurer la protection web sur les appareils qui exécutent Android.](/mem/intune/protect/advanced-threat-protection-manage-android)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="configure-privacy-for-malware-threat-report"></a>Configurer la confidentialité du rapport sur les menaces de programmes malveillants
+
+> [!NOTE]
+> Les contrôles de confidentialité de Defender pour Endpoint sur Android sont actuellement en prévisualisation et peuvent être considérablement modifiés avant sa publication commerciale.
+
+Le contrôle de confidentialité du rapport sur les menaces de programmes malveillants peut être utilisé pour désactiver la collecte des détails de l’application (informations sur le nom et le package) du rapport sur les menaces de programmes malveillants. Cela donne aux organisations la possibilité de choisir s’ils souhaitent collecter le nom de l’application lorsqu’une application malveillante est détectée. *Cette fonctionnalité est actuellement disponible uniquement pour les appareils inscrits en mode **Administrateur d’appareil Android.***
+
+Pour l’activer pour des utilisateurs ciblés, utilisez les étapes suivantes :
+
+1. Dans [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431) allez **sur** Profils de configuration des appareils Créer un profil  >    >   et entrez les paramètres suivants :
+
+   - **Plateforme :** sélectionner un administrateur d’appareil Android
+   - **Profil**: sélectionnez « Personnalisé », puis cliquez sur Créer
+
+2. Dans la section Informations de base, spécifiez un nom et une description du profil.
+3. Dans les paramètres de configuration, sélectionnez Ajouter un **paramètre OMA-URI** :
+
+   - **Nom**: entrez un nom et une description uniques pour ce paramètre OMA-URI afin de le trouver facilement plus tard.
+   - OMA-URI : **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
+   - Type de données : sélectionnez Integer dans la liste liste.
+   - Valeur : Entrez 1 pour activer le paramètre de confidentialité (par défaut, la valeur est 0)
+
+4. Cliquez **sur Suivant** et affectez ce profil à des appareils/utilisateurs ciblés.
+
+L’activation du contrôle de confidentialité ci-dessus n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel, par exemple, les appareils avec une application malveillante auront toujours un niveau de risque « Moyen ».
+
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)

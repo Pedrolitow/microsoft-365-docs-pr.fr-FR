@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 663180b87a9886681a1643279e49641c3fbfed3c
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 4a8ebc2aedc624028cf0b5144d434185c20243b9
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447383"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460463"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -108,9 +108,6 @@ Le fichier de données peut inclure au maximum :
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Définir le schéma de votre base de données d’informations sensibles
 
 Si, pour des raisons commerciales ou techniques, vous préférez ne pas utiliser PowerShell ou la ligne de commande pour créer votre schéma et votre modèle de type d’informations sensibles EDM (package de règles), vous pouvez utiliser l’[Assistant de correspondance exacte de données et de type d’informations sensibles](sit-edm-wizard.md) pour les créer. Lorsque vous avez terminé de créer le schéma et le modèle de type d’informations sensibles EDM, revenez à la procédure afin d’effectuer toutes les étapes nécessaires pour que votre type d’informations sensibles EDM soit disponible.
-
-> [!NOTE]
-> L’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles est disponible uniquement pour les nuages mondiaux et GCC.
 
 1. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma **edm.xml** et configurez-le de telle sorte que pour chaque colonne de la base de données, une ligne utilise la syntaxe :
 

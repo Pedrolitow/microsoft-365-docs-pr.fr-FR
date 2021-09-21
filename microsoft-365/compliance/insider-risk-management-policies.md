@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f10099fcfe2c8b4701ed5aa0981a3bb84bf5c7c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88582efe5e285df2b5439c6d01b63ed4c5ef7855
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179948"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460123"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -183,7 +183,7 @@ La détection d’exfiltration cumulée est activée par défaut lors de l’uti
 - Fuites de données provoquées par un utilisateur mécontent
 
 > [!NOTE]
-> La détection d’exfiltration cumulée utilise des indicateurs d’exfiltration activés dans les paramètres généraux pour la gestion des risques internes et les indicateurs d’exfiltration sélectionnés dans une stratégie. À ce titre, la détection d’exfiltration cumulée est uniquement évaluée pour les indicateurs d’exfiltration nécessaires sélectionnés.
+> La détection d’exfiltration cumulée utilise des indicateurs d’exfiltration activés dans les paramètres généraux pour la gestion des risques internes et les indicateurs d’exfiltration sélectionnés dans une stratégie. À ce titre, la détection d’exfiltration cumulée est uniquement évaluée pour les indicateurs d’exfiltration nécessaires sélectionnés. Les activités d’exfiltration cumulatives pour les étiquettes [de sensibilité](sensitivity-labels.md) configurées dans le contenu prioritaire génèrent des scores de risque plus élevés.
 
 Quand une détection d’exfiltration cumulée est activée pour des stratégies de vol de données ou de fuite de données, les informations des activités d’exfiltration cumulée s’affichent dans l’onglet **Activité utilisateur** dans le cas de gestion des risques internes.
 

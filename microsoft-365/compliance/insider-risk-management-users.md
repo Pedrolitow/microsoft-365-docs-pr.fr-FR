@@ -12,30 +12,30 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e50e9b0dfa9119cd3c3f6fe8b45158ca9f8c5cc3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f2933f6e259a8e39069a0bb90eafc6c1c9a30e
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202367"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460051"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Tableau de bord Utilisateurs de la gestion des risques internes
 
 Le tableau **de bord Utilisateurs** est un outil important dans le flux de travail de gestion des risques internes et permet aux enquêteurs et aux analystes de mieux comprendre les activités de risque. Ce tableau de bord offre des vues et des fonctionnalités de gestion pour répondre aux besoins administratifs entre la création de stratégies de gestion des risques internes et la gestion des cas de gestion des risques internes.
 
-Une fois que les utilisateurs sont ajoutés aux stratégies de gestion des risques internes, les processus en arrière-plan évaluent automatiquement les activités des utilisateurs pour déclencher [des indicateurs.](insider-risk-management-settings.md#indicators) Une fois les indicateurs déclenchés présents, les activités des utilisateurs se voit attribuer des scores de risque. Certaines de ces activités peuvent entraîner une alerte de risque interne, mais certaines activités peuvent ne pas atteindre un niveau de score de risque minimal et une alerte de risque interne ne sera pas créée. Le **tableau de bord Utilisateurs** vous permet d’afficher les utilisateurs avec ces types d’indicateurs et de scores de risque, ainsi que les utilisateurs qui ont des alertes de risque internes actives.
+Une fois que les utilisateurs sont ajoutés aux stratégies de gestion des risques internes, les processus en arrière-plan évaluent automatiquement les activités des utilisateurs pour déclencher [des indicateurs.](insider-risk-management-settings.md#indicators) Une fois les indicateurs déclenchés présents, les activités des utilisateurs se voit attribuer des scores de risque. Certaines de ces activités peuvent entraîner une alerte de risque interne, mais certaines activités peuvent ne pas répondre à un niveau de score de risque minimal et une alerte de risque interne ne sera pas créée. Le **tableau de bord Utilisateurs** vous permet d’afficher les utilisateurs avec ces types d’indicateurs et de scores de risque, ainsi que les utilisateurs qui ont des alertes de risque internes actives.
 
 En savoir plus sur la façon dont le tableau de bord Utilisateurs affiche les utilisateurs dans les scénarios suivants :
 
 - Utilisateurs avec des alertes de stratégie de risque internes actives
-- Utilisateurs avec déclenchement d’événements
+- Utilisateurs avec événements déclencheurs
 - Utilisateurs ajoutés temporairement aux stratégies
 
 ## <a name="users-with-active-insider-risk-policy-alerts"></a>Utilisateurs avec des alertes de stratégie de risque internes actives
 
 Le tableau **de bord Utilisateurs** affiche automatiquement tous les utilisateurs avec des alertes de stratégie de risque internes actives. Ces utilisateurs avec des alertes ont à la fois un indicateur de déclenchement et un score de risque d’activité qui répond aux exigences de création d’une alerte de risque interne. Pour afficher les activités de ces utilisateurs,  sélectionnez l’utilisateur dans le tableau de bord Utilisateurs et naviguez jusqu’à l’onglet **Activité de l’utilisateur.**
 
-## <a name="users-with-triggering-events"></a>Utilisateurs avec déclenchement d’événements
+## <a name="users-with-triggering-events"></a>Utilisateurs avec événements déclencheurs
 
 Le **tableau de bord** Utilisateurs affiche automatiquement tous les utilisateurs avec des événements déclencheurs, mais qui n’ont pas de score de risque d’activité qui créerait une alerte de risque interne. Par exemple, un utilisateur avec une date de clôture signalée s’affiche, car cette activité est un événement déclencheur, mais n’est pas une activité qui présente un score de risque. Pour afficher les activités de ces utilisateurs,  sélectionnez l’utilisateur dans le tableau de bord Utilisateurs et naviguez jusqu’à l’onglet **Activité de l’utilisateur.**
 
@@ -53,7 +53,7 @@ L’utilisateur est automatiquement supprimé  du tableau de bord Utilisateurs e
 - l’utilisateur n’a pas d’autres événements déclencheurs ou alertes de stratégie de risque interne, et
 - si la durée de la fenêtre **Activation** définie manuellement est plus longue que la durée de la fenêtre Activation de **stratégie** globale.
 
-Le **paramètre de la fenêtre Activation** dont la durée est la plus longue remplace toujours le paramètre de la fenêtre **Activation** avec une durée plus courte. Par exemple, vous avez configuré la fenêtre **Activation** sous l’onglet Délais de stratégie globale dans les paramètres globaux de gestion des risques internes pendant 15 jours, qui est automatiquement appliquée à toutes vos **stratégies** de risques internes.
+Le **paramètre de la fenêtre Activation** dont la durée est la plus longue remplace toujours le paramètre de la fenêtre **Activation** avec une durée plus courte. Par exemple, vous avez configuré la fenêtre **Activation** sous l’onglet Délais de stratégie globale dans les paramètres globaux de gestion des risques internes pendant 15 jours, qui est automatiquement appliquée à toutes vos **stratégies** de risque internes.
 
 Vous ajoutez temporairement un utilisateur à votre stratégie de risques internes de *fuites* de données et définissez 30 jours comme fenêtre **d’activation** pour cet utilisateur. Le paramètre global de la fenêtre **Activation** de 15 jours est remplacé par la définition du paramètre de fenêtre **Activation** de 30 jours pour l’utilisateur ajouté temporairement. L’utilisateur ajouté temporairement reste  dans le tableau de bord Utilisateurs et reste dans l’étendue de la stratégie pendant 30 jours.
 
@@ -68,6 +68,8 @@ Chaque utilisateur affiché dans le tableau de bord **Utilisateurs** dispose des
 - **Alertes actives**: nombre d’alertes actives pour toutes les stratégies.
 - **Violations confirmées**: nombre de cas résolus comme *violation* de stratégie confirmée pour l’utilisateur.
 - **Cas**: cas actif actuel pour l’utilisateur.
+
+Pour localiser rapidement un utilisateur spécifique, utilisez **la** recherche en haut à droite du tableau de bord de l’utilisateur. Lorsque vous recherchez des utilisateurs, vous devez utiliser le nom d’utilisateur principal (UPN). Par exemple, lorsque vous recherchez un utilisateur nommé « Tiara Hidayah » dont l’UPN est « thidayah » dans votre organisation, vous entrez « thidayah » ou une partie de l’UPN dans la **recherche.**
 
 ![Tableau de bord utilisateurs de gestion des risques internes.](../media/insider-risk-users-dashboard.png)
 

@@ -17,12 +17,12 @@ ms.collection:
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 14ab9ee240c1219982663c1f3557c1cf5f244144
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208596"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460027"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécurisé par défaut dans Office 365
 
@@ -54,6 +54,7 @@ Pour plus d’informations sur EOP, voir [Exchange Online Protection vue d’ens
 - Listes d’expéditeurs autorisés ou listes de domaines autorisés (stratégies anti-courrier indésirable)
 - Outlook Coffre expéditeurs
 - Liste d’adresses IP permises (filtrage des connexions)
+- Exchange règles de flux de messagerie (également appelées règles de transport)
 
 Pour plus d’informations sur ces remplacements, voir [Créer des listes d’expéditeurs sûrs.](create-safe-sender-lists-in-office-365.md)
 
@@ -68,20 +69,15 @@ L’objectif de la sécurité par défaut est le suivant : nous prenons la même
 
 Nos données indiquent qu’un utilisateur a 30 fois plus de chances de cliquer sur un lien malveillant dans les messages du dossier Courrier indésirable que de mettre en quarantaine. Nos données indiquent également que le taux de faux positifs (messages positifs marqués comme faux) pour les messages de hameçonnage à niveau de confiance élevé est très faible, et que les administrateurs peuvent résoudre les faux positifs avec des envois d’administrateur.
 
-Nous avons également déterminé que les listes d’expéditeurs et de domaines autorisés dans les stratégies anti-courrier indésirable et les expéditeurs Coffre dans Outlook étaient trop larges et causaient plus de dommages que de bon.
+Nous avons également déterminé que les listes d’expéditeurs et de domaines autorisés dans les stratégies anti-courrier indésirable et les expéditeurs Coffre dans Outlook étaient trop larges et causaient plus de dommages que de bien.
 
 Autrement dit : en tant que service de sécurité, nous agissant en votre nom pour empêcher la compromissions vos utilisateurs.
 
 ## <a name="exceptions"></a>Exceptions
 
-> [!NOTE]
-> En août 2021, la sécurité par défaut sera étendue Exchange règles de flux de messagerie (également appelées règles de transport). Si vous utilisez des règles de flux de messagerie pour autoriser des simulations de hameçonnage tierces ou une remise [](configure-advanced-delivery.md) non filtrée aux boîtes aux lettres d’opération de sécurité, vous devrez finir par éliminer ces règles et passer à l’utilisation de la stratégie de remise avancée lorsque la fonctionnalité est disponible pour _vous._
-
-La seule substitution qui permet aux messages de hameçonnage à haut niveau de confiance de contourner le filtrage est les règles de flux de messagerie. Pour utiliser des règles de flux de messagerie pour contourner le filtrage, voir Utiliser des règles de flux de messagerie pour définir le [SCL dans les messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
-
 Vous ne devez envisager d’utiliser des substitutions que dans les scénarios suivants :
 
 - Simulations de hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
-- Boîtes aux lettres De sécurité/SecOps : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (bonnes et mauvaises). Teams peuvent ensuite passer en revue pour voir s’ils contiennent du contenu malveillant.
+- Boîtes aux lettres De sécurité/SecOps : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (bonnes et mauvaises). Teams peuvent ensuite examiner pour voir s’ils contiennent du contenu malveillant.
 - Filtres tiers : la sécurité par défaut ne s’applique pas lorsque l’enregistrement MX du domaine ne pointe pas vers Office 365.
 - Faux positifs : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft [via des envois d’administrateur.](admin-submission.md) Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.

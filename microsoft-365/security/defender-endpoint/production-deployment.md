@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d7bb79ca6e04d283ee9ec9d7e01113364ebd6588
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
+ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400605"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460185"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -62,7 +62,7 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
    ![Image de la page De gestion des licences Azure.](images/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder au Centre d’administration pour accéder **aux** \> **abonnements de facturation.**
+1. Vous pouvez également accéder aux  abonnements de facturation dans le Centre \> **d’administration.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -70,7 +70,7 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
 ## <a name="cloud-service-provider-validation"></a>Validation du fournisseur de services Cloud
 
-Pour accéder aux licences qui sont provisionn es pour votre entreprise et vérifier l’état des licences, accédez au Centre d’administration.
+Pour accéder aux licences qui sont provisionn es pour votre entreprise et pour vérifier l’état des licences, accédez au Centre d’administration.
 
 1. À partir du **portail partenaire,** **sélectionnez Administrer les services > Office 365**.
 
@@ -110,7 +110,7 @@ Configurez un proxy statique basé sur le Registre pour autoriser uniquement le 
 - Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié**
 
 1. Ouvrez la console de gestion des stratégies de groupe.
-2. Créez une stratégie ou modifiez une stratégie existante basée sur les pratiques organisationnelles.
+2. Créez une stratégie ou modifiez une stratégie existante en fonction des pratiques organisationnelles.
 3. Modifiez la stratégie de groupe et accédez à Modèles d’administration Windows Collection de données des composants et Builds d’aperçu Configurer l’utilisation du proxy authentifié pour le service Expériences des **\> utilisateurs connectés \> \>** et télémétrie.
 
    ![Image de la configuration de la stratégie de groupe.](images/atp-gpo-proxy1.png)
@@ -143,7 +143,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 > [!NOTE]
 >
 > - Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut.
-> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
+> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionnent pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
 1. Ouvrez une invite de commandes avec élévation de privilèges :
     1. Accéder à **Démarrer** et taper **cmd**.
@@ -175,29 +175,8 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 |Liste de feuilles de calcul de domaines|Description|
 |---|---|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
-
-### <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Plages d’adresses IP back-end du service Microsoft Defender for Endpoint
-
-Si vos périphériques réseau ne prisent pas en charge les règles DNS, utilisez plutôt des plages IP.
-
-Defender pour le point de terminaison est intégré au cloud Azure, déployé dans les régions suivantes :
-
-- AzureCloud.eastus
-- AzureCloud.eastus2
-- AzureCloud.westcentralus
-- AzureCloud.northpé
-- AzureCloud.westpét
-- AzureCloud.uksouth
-- AzureCloud.ukwest
-
-Vous pouvez trouver les plages IP Azure dans [les plages IP azure](https://www.microsoft.com/download/details.aspx?id=56519)et les balises de service - Cloud public .
-
-> [!NOTE]
-> En tant que solution informatique, les plages d’adresses IP peuvent changer. Il est recommandé de passer aux règles DNS.
->
-> Si vous êtes un client du gouvernement américain, consultez la section correspondante dans la page [Defender for Endpoint for US Government.](gov.md#service-backend-ip-ranges)
 
 ## <a name="next-step"></a>Étape suivante
 
