@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Questions fréquemment posées sur Microsoft Bookings.
-  ms.openlocfilehash: ae2f6afcd350edba17d73801aec838f3980c46b4
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 31ec8f86a73eb61eb6fc1adcd3ad765a8d79d38c
+  ms.sourcegitcommit: 5eecb0ccc70bf75779411d80147ed5588132b103
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59203501"
+  ms.lasthandoff: 09/21/2021
+  ms.locfileid: "59461595"
 title: Questions fréquemment posées sur Microsoft Bookings
 summary: ''
 sections:
@@ -31,7 +31,7 @@ sections:
   - question: >
       Qui avez accès à Microsoft Bookings ?
     answer: >
-      Bookings est disponible et actif par défaut pour Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 et E5 dans le monde entier. Bookings est également disponible dans Office 365 géré par 21Vianet.
+      Bookings est disponible et actif par défaut pour Microsoft 365 Business Premium, Microsoft 365 Business Standard, F1, F3, A3, A5, E3 et E5 dans le monde entier. Bookings est également disponible dans Office 365 géré par 21Vianet.
   - question: >
       Mes clients voient-ils mon calendrier personnel ou d’entreprise ?
     answer: >
@@ -43,11 +43,11 @@ sections:
   - question: >
       Comment les utilisateurs finaux accèdent-ils à l’application Bookings ?
     answer: >
-      Toute personne titulaire d’une licence pour Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5 ou ajoutée en tant que membre du personnel dans les rôles d’administrateur ou de visionneuse peut accéder aux réservations dans le s chooser d’application dans l’expérience Web Microsoft 365. Il existe également une application complémentaire disponible pour iOS et Android.
+      Toute personne titulaire d’une licence pour Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, F1, F3 ou ajoutée en tant que membre du personnel dans les rôles Administrateur ou Visionneuse peut accéder aux réservations dans le s’il s’agit de l’expérience web Microsoft 365. Il existe également une application complémentaire disponible pour iOS et Android.
   - question: >
       Puis-je utiliser Bookings dans mon propre site Web ?
     answer: >
-      Oui. Nous vous fournissons un moyen d’incorporer votre calendrier Bookings dans votre site via un iFrame. Le code d’incorporation de lien se trouve dans l’onglet **de la page Réservations** de l’application Bookings.
+      Oui. Nous vous fournissons un moyen d’incorporer votre calendrier Bookings dans votre site via un iFrame. Le code d’incorporation de lien se trouve dans **l’onglet de la page Réservations** dans l’application Bookings.
   - question: >
       Puis-je utiliser Bookings même si je n’ai pas de page Web pour mon entreprise ?
     answer: >
@@ -69,7 +69,7 @@ sections:
   - question: >
       Toutes les fonctionnalités de l’application Web Bookings d’origine sont-Microsoft Teams ?
     answer: >
-      Une version légère de Bookings est désormais disponible en tant qu’application dans Teams. Pour plus d’informations, voir vue d’ensemble [de l’application Bookings dans Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b). Il existe des fonctionnalités de lien approfondies à faire apparaître dans l’application Web, et après l’installation, l’utilisation quotidienne de Bookings peut être effectuée sans quitter Teams. Les informations circulent sur les plateformes.
+      Une version légère de Bookings est désormais disponible en tant qu’application dans Teams. Pour plus d’informations, voir vue d’ensemble de [l’application Bookings dans Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b). Il existe des fonctionnalités de lien approfondies à faire apparaître dans l’application Web, et après l’installation, l’utilisation quotidienne de Bookings peut être effectuée sans quitter Teams. Flux d’informations sur les plateformes.
   - question: >
       Bookings est-il une offre de petite entreprise ou une offre Enterprise ou les deux ?
     answer: >
@@ -130,11 +130,11 @@ sections:
   - question: >
       Mes employés peuvent-ils utiliser Bookings sans compte Microsoft 365 client ?
     answer: >
-      Oui. Vous pouvez ajouter votre personnel avec n’importe quel e-mail, et il reçoit toujours la confirmation par courrier électronique et l’invitation du calendrier lorsqu’une personne se livre à un rendez-vous avec lui.
+      Oui. Vous pouvez ajouter votre personnel avec n’importe quel e-mail, et il reçoit toujours la confirmation par courrier électronique et l’invitation du calendrier lorsqu’une personne écrit un rendez-vous avec lui.
   - question: >
       Puis-je créer plusieurs calendriers Bookings sous le même compte Microsoft 365 et basculer entre eux ?
     answer: >
-      Oui. Vous pouvez créer et gérer plusieurs calendriers Bookings avec un compte. Vous pouvez basculer entre eux à l’aide de l’attention en face du nom de l’entreprise dans l’application Web Bookings.
+      Oui. Vous pouvez créer et gérer plusieurs calendriers Bookings avec un seul compte. Vous pouvez basculer entre eux à l’aide de l’attention en face du nom de l’entreprise dans l’application Web Bookings.
 - name: Fonctionnalités du produit
   questions:
   - question: >
@@ -173,7 +173,7 @@ sections:
   - question: >
       Des notifications par courrier électronique peuvent-ils être envoyées en tant que nom de domaine client ?
     answer: >
-      Les adresses de messagerie sont contrôlées et gérées au niveau des Microsoft 365 et dépendent des paramètres de configuration de domaine. Vous pouvez trouver plus d’informations [ici.](/powershell/module/exchange/get-accepteddomain)
+      Les adresses e-mail sont contrôlées et gérées au niveau des Microsoft 365 et dépendent des paramètres de configuration de domaine qui y sont. Vous pouvez trouver plus d’informations [ici.](/powershell/module/exchange/get-accepteddomain)
   - question: >
       La possibilité d’envoyer des messages SMS dépend-elle d’un service différent ou d’une configuration spécifique ?
     answer: >
@@ -220,7 +220,7 @@ sections:
   - question: >
       Quelles options sont disponibles pour incorporer un formulaire de consentement ou une divulgation pour les personnes qui ont rendez-vous ?
     answer: >
-      Nous vous  recommandons d’activer la case à cocher de consentement d’utilisation des données client dans la page De réservation et de personnaliser la formulation pour transmettre correctement les exigences de divulgation ou de consentement de votre organisation. Une autre option consiste à ajouter au service un champ personnalisé qui inclut un lien vers le formulaire de consentement et à demander aux clients de confirmer qu’ils ont rempli le formulaire avant de pouvoir passer à un rendez-vous. Vous pouvez également ajouter l’URL du formulaire de consentement en tant que notes supplémentaires dans les e-mails de confirmation et de rappel, mais cela n’empêche pas les utilisateurs de prendre un rendez-vous.
+      Nous vous  recommandons d’activer la case à cocher de consentement d’utilisation des données client dans la page Réservation et de personnaliser la formulation pour transmettre correctement les exigences de divulgation ou de consentement de votre organisation. Une autre option consiste à ajouter au service un champ personnalisé qui inclut un lien vers le formulaire de consentement et à demander aux clients de confirmer qu’ils ont rempli le formulaire avant de pouvoir passer à un rendez-vous. Vous pouvez également ajouter l’URL du formulaire de consentement sous forme de notes supplémentaires dans les e-mails de confirmation et de rappel, mais cela n’empêche pas les utilisateurs de prendre un rendez-vous.
   - question: >
       Quelles modifications peuvent être apportées à la fonctionnalité de sélection du personnel sur la page de réservation en libre-service ?
     answer: >
@@ -260,11 +260,11 @@ sections:
       Cette fonctionnalité existe déjà pour la conformité au R GDPR. La page Booking contient un champ pour le consentement personnalisé, juste en dessous de la section détails de publication. Il vous suffit de cocher cette case et d’écrire votre propre message de consentement personnalisé qui s’affichera en tant que champ obligatoire sur la page libre-service. La date et l’heure à laquelle le client accorde son consentement seront enregistrées.
 
 
-      Cette section ne prend pas en charge le texte enrichi, mais pensez que des liens peuvent être ajoutés sous la section Informations professionnelles et qu’ils s’afficheraient juste en dessous de la case à cocher de consentement.
+      Cette section ne prend pas en charge le texte enrichi, mais pensez que des liens peuvent être ajoutés sous la section Informations professionnelles et s’afficheraient juste en dessous de la case à cocher de consentement.
   - question: >
       Comment les boîtes aux lettres associées à Bookings dans Exchange être identifiées ?
     answer: >
-      La commande suivante permet de récupérer les informations de toutes les boîtes aux lettres Bookings et des utilisateurs qui y ont accès.
+      La commande suivante peut être utilisée pour récupérer les informations de toutes les boîtes aux lettres Bookings et des utilisateurs qui y ont accès.
 
 
       `Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
@@ -273,7 +273,7 @@ sections:
   - question: >
       Si un utilisateur planifiera un rendez-vous pour un service constitué d’une réunion en ligne, comment recevoir le lien Microsoft Teams vers la réunion s’il laisse le champ d’adresse de messagerie facultatif vide ?
     answer: >
-      Si le système ne comprend pas les informations de courrier du client, il n’y a aucun moyen de remettre le message de confirmation au client et, par conséquent, il ne recevra pas de lien Teams de confirmation. La solution consiste à définir l’adresse de messagerie comme champ obligatoire, ce que vous pouvez faire sous l’onglet Services de Bookings. Notez que chaque fois que vous créez un service dans Bookings, le champ courrier du client est définie comme champ obligatoire par défaut.
+      Si le système ne comprend pas les informations de courrier du client, il n’y a aucun moyen de remettre le message de confirmation au client et, par conséquent, il ne reçoit pas de lien Teams de confirmation. La solution consiste à définir l’adresse de messagerie comme champ obligatoire, ce que vous pouvez faire sous l’onglet Services de Bookings. Notez que chaque fois que vous créez un service dans Bookings, le champ courrier du client est définie comme champ obligatoire par défaut.
   - question: >
       Comment le personnel est-il affecté aux rendez-vous lorsque « Tout le monde » est sélectionné ou lorsque les clients n’ont pas la possibilité de choisir un membre du personnel pour le rendez-vous ?
     answer: >
@@ -281,7 +281,7 @@ sections:
   - question: >
       Comment les utilisateurs peuvent-ils refuser de recevoir des messages SMS s’ils l’ont déjà fait ?
     answer: >
-      Lorsque vous rendez-vous avec des SMS activés, les clients sont invités à cocher la case à cocher chaque fois qu’ils signent. Les clients peuvent également répondre directement au message SMS (le fournisseur de SMS) indiquant qu’ils souhaitent que les messages cessent, puis aucun texte supplémentaire n’est envoyé à ce numéro de téléphone. Si le client ne reçoit plus de messages texte du fournisseur, et non de Bookings lui-même, il ne recevra plus de SMS à l’avenir, même si vous avez choisi de le faire à partir de la page Bookings.
+      Lorsque vous rendez-vous avec des SMS activés, les clients sont invités à cocher la case à cocher chaque fois qu’ils signent. Les clients peuvent également répondre directement au message SMS (le fournisseur de SMS) indiquant qu’ils souhaitent que les messages cessent, puis aucun texte supplémentaire n’est envoyé à ce numéro de téléphone. Si le client ne reçoit plus de sms du fournisseur, et non de Bookings lui-même, il ne recevra plus de MESSAGES SMS à l’avenir, même si vous avez choisi de le faire à partir de la page Bookings.
 - name: Résolution des problèmes
   questions:
   - question: >
@@ -292,10 +292,10 @@ sections:
 
       > [!NOTE]
 
-      > Les réservations sont désactivées par défaut pour les clients qui ont Microsoft 365 Business Standard, Microsoft 365 A3 ou Microsoft 365 A5 abonnements. Bookings est également disponible pour les clients qui ont Office 365 Entreprise E3 et Office 365 Entreprise E5, mais il est désactivé par défaut. To get started, see [Get access to Microsoft Bookings](get-access.md). Pour activer ou désactiver bookings, voir Activer ou [désactiver bookings pour votre organisation.](turn-bookings-on-or-off.md)
+      > Les réservations sont désactivées par défaut pour les clients qui ont Microsoft 365 Business Standard, Microsoft 365 A3 ou Microsoft 365 A5 abonnements. Bookings est également disponible pour les clients qui ont Office 365 Entreprise E3 et Office 365 Entreprise E5, mais il est désactivé par défaut. To get started, see [Get access to Microsoft Bookings](get-access.md). Pour activer ou désactiver bookings, voir [Activer ou désactiver bookings pour votre organisation.](turn-bookings-on-or-off.md)
 
 
-      Si vous recherchez des informations sur la synchronisation du calendrier de votre personnel, voir [Ajouter du personnel à Bookings.](add-staff.md) Dans la page **Détails** du personnel, les événements du calendrier affectent **la disponibilité.**
+      Si vous recherchez des informations sur la synchronisation du calendrier de votre personnel, voir Ajouter du [personnel à Bookings.](add-staff.md) Dans la page **Détails** du personnel, les événements **du calendrier affectent la disponibilité** sont vérifiés.
   - question: >
       Le membre du personnel doit modifier ses autorisations de calendrier
     answer: >
@@ -329,7 +329,7 @@ sections:
       1. Connectez-vous Microsoft 365, puis **rendez-vous** dans le personnel \> **Bookings.**
 
 
-      1. Placez le curseur de la souris sur le nom du membre du personnel. **Les** **icônes** modifier et supprimer apparaissent à droite de la **colonne Téléphone** de données.
+      1. Placez le curseur de la souris sur le nom du membre du personnel. **Les** **icônes** de modification et de suppression apparaissent à droite de la **Téléphone** colonne.
 
 
       1. Sélectionnez **l’icône** Supprimer.
@@ -343,7 +343,7 @@ sections:
       > Si vous avez plusieurs calendriers de réservation, vous devez supprimer l’utilisateur de tous ces calendriers.
 
 
-      Pour vérifier si vous avez plusieurs calendriers, dans le menu de gauche, sélectionnez la flèche déroulante en regard du nom de votre société, puis sélectionnez **Ouvrir**. Si vous n’avez qu’un seul calendrier, vous ne verrez que l’option d’ajout d’un calendrier de réservation. Cet exemple montre qu’il existe un deuxième calendrier nommé « Contoso CO ».
+      Pour vérifier si vous avez plusieurs calendriers, dans le menu gauche, sélectionnez la flèche déroulante en regard du nom de votre société, puis sélectionnez **Ouvrir**. Si vous n’avez qu’un seul calendrier, vous ne verrez que l’option d’ajout d’un calendrier de réservation. Cet exemple montre qu’il existe un deuxième calendrier nommé « Contoso CO ».
 
 
       ![Image de l’écran Choisir un calendrier avec un deuxième calendrier affiché](../media/bookings-choose-calendar.png)
