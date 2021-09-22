@@ -14,13 +14,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/26/2021
-ms.openlocfilehash: 661e368d76fcdc7a3a62523aa0c92c57790bed60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/21/2021
+ms.openlocfilehash: 4be3905615327ff2d6025cceb971947161cbe80e
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204053"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479503"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Protection cloud et Antivirus Microsoft Defender
 
@@ -30,6 +30,8 @@ ms.locfileid: "59204053"
 - Antivirus Microsoft Defender
 
 Les technologies de nouvelle génération Antivirus Microsoft Defender fournissent une protection automatisée et quasi instantanée contre les menaces nouvelles et émergentes. Pour identifier les nouvelles menaces de manière dynamique, les technologies de nouvelle génération fonctionnent avec de grands ensembles de données interconnectées dans le Graph Microsoft Intelligent Security et des systèmes d’intelligence artificielle (IA) puissants pilotés par des modèles d’apprentissage automatique avancés. La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir une protection précise, en temps réel et intelligente. 
+
+[:::image type="content" source="mde-cloud-protection.png" alt-text="Diagramme montrant comment la protection cloud fonctionne avec Antivirus Microsoft Defender":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > Nous vous recommandons de maintenir la protection cloud allumée. Pour en savoir plus, voir pourquoi la protection cloud doit [être activée pour Antivirus Microsoft Defender](why-cloud-protection-should-be-on-mdav.md). 
@@ -68,4 +70,4 @@ Maintenant que vous avez une vue d’ensemble de la protection cloud Antivirus M
 
 1. Découvrez [pourquoi la protection cloud doit être activée pour Antivirus Microsoft Defender](why-cloud-protection-should-be-on-mdav.md).
 
-2. Activer [la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+2. Activer la [protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)

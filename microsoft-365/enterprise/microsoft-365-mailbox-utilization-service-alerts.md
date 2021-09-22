@@ -1,8 +1,8 @@
 ---
 title: Alertes du service d’utilisation de la boîte aux lettres
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: ''
 audience: Admin
 ms.topic: article
@@ -17,18 +17,18 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Utilisez les alertes du service d’utilisation des boîtes aux lettres pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîte aux lettres.
-ms.openlocfilehash: 417e0106505dcc31af6e9a279fd79655df712dd2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209269"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479884"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertes de service pour l’utilisation des boîtes aux lettres Exchange Online surveillance
 
 Nous avons publié une nouvelle alerte de service Exchange Online qui vous informe des boîtes aux lettres en attente qui risquent d’atteindre ou de dépasser leur quota. Ces alertes de service fournissent une visibilité sur le nombre de boîtes aux lettres dans votre organisation qui peuvent nécessiter une intervention de l’administrateur.
 
-Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, Exchange Online l’onglet Problèmes  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >   actifs.  Voici un exemple d’alerte de service d’utilisation de boîte aux lettres.
+Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, consultez la Exchange Online d’état du service d’état, puis cliquez sur  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >   **l’onglet Problèmes** actifs. Voici un exemple d’alerte de service d’utilisation de boîte aux lettres.
 
 ![Alerte du service d’utilisation des boîtes aux lettres](../media/MailboxUtilizationServiceAlert.png)
 
@@ -56,7 +56,7 @@ Le tableau suivant répertorie le nombre de boîtes aux lettres en attente qui a
 | 2             | 2             | 1                 | 0               |
 ||||
 
-L’action que les administrateurs peuvent prendre pour ces boîtes aux lettres consiste à activer la boîte aux lettres d’archivage et à s’assurer qu’une stratégie d’archivage MRM (qui est une stratégie de rétention MRM dans Exchange Online qui déplace des éléments vers la boîte aux lettres d’archivage) est appliquée à la boîte aux lettres afin que les éléments soient déplacés vers la boîte aux lettres d’archivage. Pour plus d’informations, voir [Configurer une stratégie d’archivage et de](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres.
+L’action que les administrateurs peuvent prendre pour ces boîtes aux lettres consiste à activer la boîte aux lettres d’archivage et à s’assurer qu’une stratégie d’archivage MRM (qui est une stratégie de rétention MRM dans Exchange Online qui déplace des éléments vers la boîte aux lettres d’archivage) est appliquée à la boîte aux lettres afin que les éléments soient déplacés vers la boîte aux lettres d’archivage. Pour plus d’informations, voir [Configurer une stratégie d’archivage](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)et de suppression pour les boîtes aux lettres.
 
 Après avoir activé une boîte aux lettres d’archivage, nous vous recommandons d’augmenter le quota pour le dossier Éléments récupérables. Cela permet d’éviter le dépassement du quota du dossier Éléments récupérables pour les boîtes aux lettres placées en attente. Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 
@@ -83,8 +83,8 @@ Les alertes de service pour l’utilisation des boîtes aux lettres peuvent éga
 | RetentionPolicyGuid | MailboxType | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  Boîtes aux lettres |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
 | 6c041498-1611-5011-a058-1156ce60890c | PrimaryWithArchive | Vrai | False | True | 398 |
-| 6c041498-1611-5011-a058-1156ce60890c | Primaire | Vrai | False | True | 10  |
-| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | Faux | 7  |
+| 6c041498-1611-5011-a058-1156ce60890c | Primaire | Vrai | False | True | 10 |
+| 749ceecc-d49d-4000-a9d5-594dbaea1e56 | PrimaryWithArchive | False | True | False | 7  |
 | 269f6a85-1234-4648-8cde-59bbc7bc67d0 | PrimaryWithArchive | True | True | True | 1 |
 | 13fb778d-e1cb-4c44-5768-ad4282906c1f | PrimaryWithArchive | True | True  | Faux | 1 |
 |||||||
@@ -103,7 +103,7 @@ La liste suivante décrit chaque colonne du tableau précédent.
 
 - **MailboxType**: spécifie le type de boîtes aux lettres à qui la stratégie est affectée. Les valeurs *sont Primary* (boîtes aux lettres sans archive) ou *PrimaryWithArchive* (boîtes aux lettres avec archive). Si la valeur de cette colonne est *Primary,* vous devez activer l’archive pour les boîtes aux lettres (la colonne **Mailbox** indique le nombre de ces boîtes aux lettres) qui sont affectées à la stratégie. Dans le cas contraire, une stratégie d’archivage ou une balise d’archive personnelle ne fonctionne pas, car il n’existe pas d’archive vers qui déplacer des éléments.
 
-- **HasMoveDumpsterToArchiveTag**: indique que la stratégie de rétention inclut une balise de rétention qui déplace les éléments du dossier Éléments récupérables (également appelé benne) de la boîte aux lettres principale vers le dossier Éléments récupérables de l’archive. Ce type de balise de rétention est définie par un administrateur. Si la période de rétention de la balise éléments récupérables est trop longue, la réduction de la période de rétention devrait aider à empêcher les boîtes aux lettres d’approcher le quota du dossier Éléments récupérables. Par exemple, si la période de rétention est définie sur 30 jours, le fait de la réduire à trois ou cinq jours peut vous aider.  Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+- **HasMoveDumpsterToArchiveTag**: indique que la stratégie de rétention inclut une balise de rétention qui déplace les éléments du dossier Éléments récupérables (également appelé benne) de la boîte aux lettres principale vers le dossier Éléments récupérables de l’archive. Ce type de balise de rétention est définie par un administrateur. Si la période de rétention de la balise éléments récupérables est trop longue, la réduction de la période de rétention devrait aider à empêcher les boîtes aux lettres d’approcher le quota du dossier Éléments récupérables. Par exemple, si la période de rétention est définie sur 30 jours, le fait de la réduire à trois ou cinq jours peut être utile.  Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 
 - **HasMovePrimaryToArchiveTag**: indique si une balise de rétention « déplacer vers l’archive » par défaut (également appelée stratégie *d’archivage)* est incluse dans la stratégie de rétention. Dans ce cas, les messages sont déplacés des dossiers ordinaires de la boîte aux lettres principale vers la boîte aux lettres d’archivage. Ce type de balise de rétention est définie par un administrateur. Là encore, si la période de rétention de cette balise est trop courte, les utilisateurs peuvent avoir des difficultés à atteindre continuellement le quota de leur boîte aux lettres principale. La réduction de la période de rétention d’une stratégie d’archivage peut aider à résoudre ce problème.
 
@@ -115,7 +115,7 @@ La liste suivante décrit chaque colonne du tableau précédent.
 
 Si vous ne prenez aucune mesure pour résoudre les problèmes de quota, vous pouvez vous attendre à voir ce type d’alerte de service tous les quatre jours. Les alertes de service suivantes peuvent contenir des nombres de boîtes aux lettres plus élevés pour les autres boîtes aux lettres qui approchent de leur quota. Si vous prenez des mesures pour résoudre les problèmes de quota, cette alerte de service se produit uniquement lorsqu’une autre boîte aux lettres avec des problèmes de quota est identifiée.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Pour plus d’informations sur le dépannage et la résolution des problèmes de boîte aux lettres d’archivage, voir [Microsoft 365 de conformité.](/office365/troubleshoot/microsoft-365-compliance-welcome)
 

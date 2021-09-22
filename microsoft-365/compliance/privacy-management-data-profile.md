@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la vue d’ensemble et le profil de données dans la gestion de la confidentialité et découvrez comment obtenir des informations sur les données personnelles dans l’environnement Microsoft 365 de votre organisation.
-ms.openlocfilehash: 4007fa1c55857211c3cf188a089f8e6d246153ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d0b72aff73649ff4a34952de5a915dcd28dc670
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206043"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480591"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Rechercher et visualiser des données personnelles dans la gestion de la confidentialité (aperçu)
 
@@ -43,7 +43,7 @@ La page de présentation se compose de trois sections principales. Les vignettes
 
 #### <a name="policy-matches-over-past-7-days"></a>Correspondances de stratégie au cours des 7 derniers jours
 
-Lorsque des stratégies sont définies dans le cadre de la gestion de la confidentialité, vos données sont évaluées pour certaines conditions qui peuvent présenter des risques de confidentialité. Les correspondances de stratégie indiquent des découvertes de données qui peuvent avoir besoin d’un examen ou d’une correction supplémentaires. Cette carte indique le nombre de correspondances de stratégie qui se sont produites au cours des sept derniers jours. Les correspondances seront surfacen es ici, que les stratégies soient actives ou en cours d’exécution en mode test, afin que vous pouvez voir les résultats de toutes vos stratégies actives. Cliquer sur cette vignette vous permet d’afficher une vue filtrée de la page Stratégies de gestion de la confidentialité, montrant les stratégies qui ont été mise en correspondance au cours des sept derniers jours.
+Lorsque des stratégies sont définies dans le cadre de la gestion de la confidentialité, vos données sont évaluées pour certaines conditions qui peuvent présenter des risques de confidentialité. Les correspondances de stratégie indiquent des découvertes de données qui peuvent avoir besoin d’un examen ou d’une correction supplémentaires. Cette vignette indique le nombre de correspondances de stratégie qui se sont produites au cours des sept derniers jours. Les correspondances seront surfacen es ici, que les stratégies soient actives ou en cours d’exécution en mode test, afin que vous pouvez voir les résultats de toutes vos stratégies actives. Cliquer sur cette vignette vous permet d’afficher une vue filtrée de la page Stratégies de gestion de la confidentialité, montrant les stratégies qui ont été mise en correspondance au cours des sept derniers jours.
 
 #### <a name="items-with-personal-data"></a>Éléments avec des données personnelles
 
@@ -101,7 +101,7 @@ Ce graphique est lié aux stratégies de réduction des données. Il fournit des
 
 #### <a name="overexposed-personal-data"></a>Données personnelles surexposées
 
-Ce graphique est lié aux stratégies de surexpossure des données. Il peut vous aider à identifier les comportements de partage au sein de votre organisation et les emplacements où le contenu avec des données personnelles peut être surexposé, par exemple en étant partagé publiquement, partagé avec un utilisateur externe ou partagé largement au sein de votre organisation.
+Ce graphique est lié aux stratégies de surexpossure des données. Il peut vous aider à identifier les comportements de partage au fil du temps au sein de votre organisation et les emplacements où le contenu avec des données personnelles peut être surexposé, par exemple en étant partagé publiquement, partagé avec un utilisateur externe ou partagé largement au sein de votre organisation.
 
 #### <a name="subject-rights-requests-by-regulation"></a>Demandes de droits d’objet par réglementation
 
@@ -109,7 +109,7 @@ Cet affichage fournit des informations sur les réglementations les plus répand
 
 #### <a name="subject-rights-requests-by-status"></a>Demandes de droits de l’objet par état
 
-Ce graphique montre comment votre organisation se porte sur l’exécution des demandes de droits de l’objet, décomposées en demandes actives, fermées ou en retard. Les résultats de cette recherche peuvent vous aider à indiquer où vous pouvez tirer parti de l’allocation de ressources supplémentaires pour fermer vos demandes et vos objectifs de réunion.
+Ce graphique indique comment votre organisation se porte sur l’exécution des demandes de droits d’objet, décomposées en demandes actives, fermées ou en retard. Les résultats de cette recherche peuvent vous aider à indiquer où vous pouvez tirer parti de l’allocation de ressources supplémentaires pour fermer vos demandes et vos objectifs de réunion.
 
 ### <a name="additional-data-views"></a>Affichages de données supplémentaires
 
@@ -119,24 +119,24 @@ Cette vue fournit une vue d’ensemble des demandes de droits de l’objet activ
 
 #### <a name="subject-rights-requests-by-residency"></a>Demandes de droits d’objet par résidence
 
-Cet affichage de carte vous permet de visualiser votre volume de demandes de droits d’objet par résidence des personnes qui en sont à l’objet. Le survol d’une bulle identifiera la région et le total des demandes de droits d’objet ouvertes pour le compte des résidents.
+Cet affichage de carte vous permet de visualiser votre volume de demandes de droits d’objet par résidence des personnes qui en sont à l’objet. Le survol d’une bulle identifie la région et le nombre total de demandes de droits d’objet ouvertes pour le compte des résidents de cette zone.
 
 ## <a name="explore-the-data-profile-page"></a>Explorer la page de profil de données
 
 ### <a name="personal-data-type-instances-detected-in-microsoft-365"></a>Instances de type de données personnelles détectées dans Microsoft 365
 
-Cette carte vous permet de visualiser la quantité de données personnelles présentes dans votre environnement Microsoft 365 et la façon dont ces données sont distribuées entre Exchange, OneDrive, SharePoint et Teams.
+Cette vignette vous permet de visualiser la quantité de données personnelles présentes dans votre environnement Microsoft 365 et la façon dont ces données sont distribuées entre Exchange, OneDrive, SharePoint et Teams.
 
-Le graphique à barres indique le nombre approximatif d’instances de type de données personnelles uniques trouvées dans votre contenu. Des exemples de types de données peuvent inclure des éléments tels que des numéros de carte de crédit et des numéros de sécurité sociale. Par conséquent, un fichier découvert qui contient trois numéros de carte de crédit et un numéro de sécurité sociale contiendrait deux types de données personnelles uniques et quatre instances. La personne la plus faible de cette carte affiche les types de données personnelles uniques dans chaque Microsoft 365'emplacement. Il offre une vue d’ensemble de la diversité des types de données personnelles détectés dans le contenu de votre organisation.
+Le graphique à barres indique le nombre approximatif d’instances de type de données personnelles uniques trouvées dans votre contenu. Des exemples de types de données peuvent inclure des éléments tels que des numéros de carte de crédit et des numéros de sécurité sociale. Par conséquent, un fichier découvert qui contient trois numéros de carte de crédit et un numéro de sécurité sociale contiendrait deux types de données personnelles uniques et quatre instances. La partie inférieure de cette vignette affiche les types de données personnelles uniques dans chaque Microsoft 365 emplacement. Il offre une vue d’ensemble de la diversité des types de données personnelles détectés dans le contenu de votre organisation.
 
 ### <a name="top-personal-data-types-across-your-organization"></a>Principaux types de données personnelles au sein de votre organisation
 
-Cette carte fournit un instantané des principaux types de données personnelles détectés dans votre environnement, ainsi que des informations sur le nombre d’éléments contenant ce type de données personnelles et les emplacements.
+Cette vignette fournit un instantané des principaux types de données personnelles détectés dans votre environnement, ainsi que des informations sur le nombre d’éléments contenant ce type de données personnelles et sur les emplacements.
 
 ### <a name="personal-data-by-region"></a>Données personnelles par région
 
-Pour les environnements multigé géographiques, cette carte regroupe au niveau régional les instances de type de données personnelles trouvées dans votre contenu, en fonction des régions dans lesquelles ce contenu est hébergé. Pour les organisations à une seule région, cette carte affiche un point représentant votre emplacement Microsoft 365 service. Le fait de pointer sur des points sur la carte indique le nombre approximatif d’instances de type de données personnelles découvertes dans cette région.
+Pour les environnements multigé géographiques, cette vignette regroupe au niveau régional les instances de type de données personnelles trouvées dans votre contenu, en fonction des régions dans lesquelles ce contenu est hébergé. Pour les organisations à une seule région, cette vignette affiche un point représentant votre emplacement Microsoft 365 service. Le fait de pointer sur des points sur la carte indique le nombre approximatif d’instances de type de données personnelles découvertes dans cette région.
 
 ### <a name="exploring-content"></a>Exploration de contenu
 
-Si vous **sélectionnez Explorer** sur n’importe quelle carte de profil de données, l’explorateur de contenu s’ouvre. Pour l’instant, vous ne pouvez pas rechercher un élément de contenu spécifique et vous ne verrez pas Teams données dans cet affichage. Cela signifie que les nombres dans l’explorateur de contenu peuvent ne pas correspondre aux nombres affichés sur la page de profil de données, étant donné que la page de profil de données Teams contenu. Les administrateurs de confidentialité qui souhaitent obtenir des informations supplémentaires sur leurs données de confidentialité peuvent le faire ici en fonction du type de données personnelles (type d’informations sensibles) ou de l’emplacement (Exchange, OneDrive ou SharePoint).
+La sélection **d’Explorer** sur n’importe quelle vignette de profil de données ouvre l’explorateur de contenu. Pour l’instant, vous ne pouvez pas rechercher un élément de contenu spécifique et vous ne verrez pas Teams données dans cet affichage. Cela signifie que les nombres dans l’explorateur de contenu peuvent ne pas correspondre aux nombres affichés sur la page de profil de données, étant donné que la page de profil de données Teams contenu. Les administrateurs de confidentialité qui souhaitent obtenir des informations supplémentaires sur leurs données de confidentialité peuvent le faire ici en fonction du type de données personnelles (type d’informations sensibles) ou de l’emplacement (Exchange, OneDrive ou SharePoint).

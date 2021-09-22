@@ -12,23 +12,23 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 86344a570c04ed67c8811d91ca92a59dcec6102d
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 55373830a351bc3bad40a4a492101c5ac011d8b0
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460351"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479524"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
 
-Les cas sont au cœur de la gestion des risques internes et vous permettent d’examiner et d’agir en profondeur sur les problèmes générés par les indicateurs de risque définis dans vos stratégies. Les cas sont créés manuellement à partir d’alertes dans les situations où des mesures supplémentaires sont nécessaires pour résoudre un problème de conformité pour un utilisateur. Chaque cas est étendue à un seul utilisateur et plusieurs alertes de l’utilisateur peuvent être ajoutées à un cas existant ou à un nouveau cas. 
+Les cas sont au cœur de la gestion des risques internes et vous permettent d’examiner et d’agir en profondeur sur les problèmes générés par les indicateurs de risque définis dans vos stratégies. Les cas sont créés manuellement à partir d’alertes dans les situations où des mesures supplémentaires sont nécessaires pour résoudre un problème de conformité pour un utilisateur. Chaque cas est étendue à un seul utilisateur et plusieurs alertes de l’utilisateur peuvent être ajoutées à un cas existant ou à un nouveau cas.
 
 Après avoir ouvert une enquête sur les détails d’un cas, vous pouvez prendre des mesures en :
 
-- envoi d’une notification à l’utilisateur
+- envoi d’un avis à l’utilisateur
 - résolution du cas comme étant anodin
 - partage du cas avec votre instance ServiceNow ou avec un destinataire de courrier électronique
-- faire escalader le cas d’une enquête Advanced eDiscovery recherche
+- escalade du cas pour une enquête Advanced eDiscovery de recherche
 
 Consultez la vidéo [Examen](https://www.youtube.com/watch?v=UONUSmkRC8s) et escalade de gestion des risques internes pour obtenir une vue d’ensemble de la façon dont les cas sont examinés et gérés dans la gestion des risques internes.
 
@@ -128,10 +128,10 @@ L’onglet **Activité des utilisateurs** est l’un des outils les plus perform
     - Catégorie **d’activité de risque.** Par exemple, *e-mail(s) avec* des pièces jointes envoyées à l’extérieur de l’organisation ou fichiers *téléchargés* à partir de SharePoint Online .
     - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
     - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou e-mail associé à l’activité de risque sont également disponibles.
-3. **Séquence de risques (aperçu)**: l’ordre chronologique des activités risquées est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus importante. Cette vue des activités peut aider les enquêteurs à « connecter les points » aux activités à risque qui auraient pu être vues comme des événements isolés ou isolés. Sélectionnez n’importe quelle bulle dans l’ordre pour afficher les détails de toutes les activités de risque associées. Les détails sont les suivants :
+3. **Séquence de risques (aperçu)**: l’ordre chronologique des activités risquées est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus importante. Cette vue des activités peut aider les enquêteurs à « connecter les points » pour les activités à risque qui auraient pu être vues comme des événements isolés ou isolés. Sélectionnez n’importe quelle bulle dans l’ordre pour afficher les détails de toutes les activités de risque associées. Les détails sont les suivants :
 
     - **Nom** de la séquence.
-    - **Plage de** **dates ou de dates** de la séquence.
+    - **Plage de** **dates ou de** dates de la séquence.
     - **Score de risque** pour la séquence. Ce score est le score numérique pour la séquence des niveaux de gravité de risque d’alerte combinés pour chaque activité associée dans la séquence.
     - **Nombre d’événements associés à chaque alerte dans la séquence.** Des liens vers chaque fichier ou e-mail associé à chaque activité de risque sont également disponibles.
     - **Afficher les activités dans l’ordre.** Affiche la séquence sous la forme d’une ligne de surbrillon sur le graphique en bulles et développe les détails de l’alerte pour afficher toutes les alertes associées dans la séquence.
@@ -168,7 +168,7 @@ Pour ajouter une note à un cas :
 1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Notes** de cas.
 3. Sélectionnez **Ajouter une note de cas.**
-4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou sélectionnez **Annuler** fermer sans enregistrer la note dans le cas.
+4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou **sélectionnez Annuler** fermer sans enregistrer la note dans le cas.
 
 ### <a name="contributors"></a>Contributeurs
 
@@ -190,7 +190,7 @@ Pour ajouter un collaborateur à un cas :
 
 ## <a name="case-actions"></a>Actions de cas
 
-Les analystes et enquêteurs de risque peuvent agir sur un cas dans l’une des méthodes suivantes, selon la gravité du cas, l’historique des risques de l’utilisateur et les directives de risque de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
+Les enquêteurs des risques peuvent agir sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
 
 ### <a name="send-email-notice"></a>Envoyer une notification par courrier électronique
 
@@ -204,7 +204,7 @@ Pour envoyer une notification à l’utilisateur affecté à un cas :
 2. Sélectionnez un cas, puis sélectionnez le bouton Envoyer une notification par **courrier** électronique dans la barre d’outils de l’action de cas.
 3. Dans la boîte de dialogue Envoyer  un **avis** par courrier électronique, sélectionnez le contrôle de liste de listes des modèles d’avis pour sélectionner le modèle d’avis pour l’avis. Cette sélection pré-remplit les autres champs de l’avis.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
-5. Sélectionnez **Envoyer** pour envoyer l’avis à l’utilisateur ou **sélectionnez Annuler** fermer la boîte de dialogue sans l’envoyer à l’utilisateur. Toutes les notifications envoyées sont ajoutées à la file d’attente des notes de cas dans le tableau **de bord des notes de** cas.
+5. Sélectionnez **Envoyer** pour envoyer l’avis à l’utilisateur ou **sélectionnez Annuler** fermer la boîte de dialogue sans envoyer l’avis à l’utilisateur. Toutes les notifications envoyées sont ajoutées à la file d’attente des notes de cas dans le tableau **de bord des notes de** cas.
 
 ### <a name="escalate-for-investigation"></a>Faire remonter le dossier pour enquête
 
@@ -213,8 +213,8 @@ Faire passer le cas pour l’examen de l’utilisateur dans les situations où u
 Pour faire recaler un cas à un examen par un utilisateur :
 
 1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
-2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils de l’action de cas.
-3. Dans la boîte **de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
+2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils d’action de cas.
+3. Dans la **boîte de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
 5. Sélectionnez **Confirmer** pour créer le cas d’enquête de l’utilisateur ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de nouveau cas d’enquête utilisateur.
 
@@ -232,7 +232,7 @@ Une fois que le cas de gestion des risques internes a été réamorcer vers un n
 Pour exécuter, gérer ou créer des flux Power Automate pour un cas de gestion des risques internes :
 
 1. Sélectionnez **Automatiser dans la** barre d’outils de l’action de cas. 
-2. Choisissez le flux Power Automate’exécuter, puis sélectionnez **Exécuter le flux.** 
+2. Choisissez le flux Power Automate à exécuter, puis sélectionnez **Exécuter le flux.** 
 3. Une fois le flux terminé, sélectionnez **Terminé.**
 
 Pour en savoir plus sur les Power Automate pour la gestion des risques internes, voir Prise en charge des paramètres de [gestion des risques internes.](insider-risk-management-settings.md#power-automate-flows-preview)

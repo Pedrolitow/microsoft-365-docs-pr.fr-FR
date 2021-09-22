@@ -15,12 +15,12 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 82b773488fffb5b37390cc72043c1b011c5c6685
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4018adc6fcf19e072f8c82292d488a6bbfa344d4
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222476"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59480795"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Antivirus Microsoft Defender
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur les exigences de connectivité réseau spécifiqu
 
 2. Dans le **volet Accueil,** sélectionnez Configuration de l'> **profils.**
 
-3. Sélectionnez le type **de profil restrictions d’appareil** que vous souhaitez configurer. Si vous devez créer un type de profil **de restrictions** d’appareil, voir Configurer les paramètres de [restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure).
+3. Sélectionnez le type **de profil restrictions d’appareil** que vous souhaitez configurer. Si vous devez créer un type de profil de restrictions [d’appareil,](/intune/device-restrictions-configure)voir Configurer les **paramètres** de restriction d’appareil dans Microsoft Intune .
 
 4. Sélectionnez **les** \> **paramètres de configuration des propriétés :** \> **Antivirus Microsoft Defender**.
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur les profils d’appareil Intune, notamment sur la
 
 3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
-4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
+4. Sélectionnez **les propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
 5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
    - **Élevé**: applique un niveau de détection élevé.
@@ -115,11 +115,9 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 
 Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/)Antivirus Microsoft Defender et Defender. [Stratégie CSP - Defender](/windows/client-management/mdm/policy-csp-defender) a également plus d’informations spécifiques sur [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
-> [!NOTE]
-> Vous pouvez également définir **-SubmitSamplesConsent** sur (paramètre par `SendSafeSamples` défaut), `NeverSend` ou `AlwaysPrompt` . Le `SendSafeSamples` paramètre signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles seront toujours invités et nécessitent une confirmation supplémentaire.
-
-> [!WARNING]
-> Paramètre **-SubmitSamplesConsent** pour `NeverSend` ou réduit le niveau de protection de `AlwaysPrompt` l’appareil. En outre, sa définition signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de `NeverSend` terminaison ne fonctionne pas. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+> [!IMPORTANT]
+> Vous pouvez définir **-SubmitSamplesConsent** sur (paramètre par `SendSafeSamples` défaut, recommandé) `NeverSend` ou `AlwaysPrompt` . Le `SendSafeSamples` paramètre signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles entraînent une invite de continuer et nécessitent une confirmation.
+> Les `NeverSend` `AlwaysPrompt` paramètres et les paramètres diminuent le niveau de protection de l’appareil. En outre, le paramètre signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de terminaison `NeverSend` ne fonctionne pas. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>Utiliser Windows Management Instruction (WMI) pour activer la protection cloud
 
@@ -135,7 +133,7 @@ Pour plus d’informations sur les paramètres autorisés, [voir Windows Defende
 ## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’application Sécurité Windows cloud
 
 > [!NOTE]
-> Si le paramètre Configurer le paramètre local de remplacement pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé,** le paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
+> Si le paramètre Configurer le remplacement de paramètre local pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé,** le paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
 
 1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
@@ -145,8 +143,8 @@ Pour plus d’informations sur les paramètres autorisés, [voir Windows Defende
 
 3. Confirmez que **la protection basée sur le cloud** et **l’envoi automatique** d’échantillons sont **activés.**
 
-> [!NOTE]
-> Si l’envoi automatique d’échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.
+   > [!NOTE]
+   > Si l’envoi automatique d’échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.
 
 ## <a name="see-also"></a>Voir aussi
 

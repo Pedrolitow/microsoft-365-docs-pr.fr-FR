@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations d’hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d10c4df273cfcff39bf93fa6532b57c4f8ef640
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: baea981e712a02bfffb6b664d4bb6a3d8c9b5ae5
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208643"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481047"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -31,12 +31,12 @@ ms.locfileid: "59208643"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Pour sécuriser votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour sécuriser votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations de hameçonnage tierces**: les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
 - Boîtes aux lettres d’opérations de sécurité **(SecOps)**: boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bonnes et mauvaises).
 
-Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêcher le filtrage de ces messages dans ces _scénarios spécifiques._ <sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios atteignent les résultats suivants :
+Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêcher le filtrage des messages entrants dans ces _scénarios_ spécifiques. <sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios atteignent les résultats suivants :
 
 - Les filtres dans EOP et Microsoft Defender Office 365 aucune action sur ces messages.<sup>\*</sup>
 - [La purge zéro heure (ZAP) pour](zero-hour-auto-purge.md) le courrier indésirable et le hameçonnage n’a aucune action sur ces messages.<sup>\*</sup>
@@ -45,7 +45,7 @@ Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêch
 - Plus spécifiquement pour les simulations de hameçonnage tierces :
   - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique qui dit que le message fait partie d’une campagne de simulation de hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et air ne sont pas déclenchés. L’expérience de soumissions d’administrateurs présente ces messages comme une menace simulée.
   - Lorsqu’un utilisateur signale un message de simulation de hameçonnage à l’aide du module de signalement du hameçonnage pour [Outlook,](enable-the-report-message-add-in.md)le système ne génère pas d’alerte, d’enquête ou d’incident. Le message s’affiche également sous l’onglet Messages signalés par l’utilisateur de la page soumissions.
-  - [Coffre dans Defender pour Office 365](safe-links.md) ne bloque pas ou ne désaxique pas les URL spécifiquement identifiées dans ces messages.
+  - [Coffre dans Defender pour Office 365](safe-links.md) ne bloque pas ou ne désaxique pas les URL spécifiquement identifiées dans ces messages au moment du clic. Les URL sont toujours wrapped, mais elles ne sont pas bloquées.
   - [Coffre pièces jointes dans Defender pour Office 365](safe-attachments.md) les pièces jointes de ces messages ne sont pas détonation.
 
 <sup>\*</sup> Vous ne pouvez pas contourner le filtrage des programmes malveillants ou zap pour les programmes malveillants.
@@ -56,7 +56,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 - La page Entité de messagerie dans l’Explorateur de [menaces/Détections](mdo-email-entity-page.md)en temps réel : l’administrateur peut  afficher un message autorisé par la stratégie de l’organisation par la boîte aux lettres **SecOps** ou la **simulation** de hameçonnage sous remplacement de client dans la **section** Remplacements.
 - Le rapport d’état de  la [protection](view-email-security-reports.md#threat-protection-status-report)contre les menaces : l’administrateur peut filtrer en afficher les données par remplacement du système dans le menu déroulant et choisir d’afficher les messages autorisés en raison d’un remplacement du système de simulation de hameçonnage. Pour voir les messages autorisés par le remplacement  de boîte aux lettres  SecOps, vous pouvez sélectionner la répartition du graphique par emplacement de remise dans le menu déroulant de répartition du graphique pour raison.
 - [Recherche avancée](../defender-endpoint/advanced-hunting-overview.md)dans Microsoft Defender pour point de terminaison : les remplacements de système de boîte aux lettres SecOps et simulation de hameçonnage s’afficheront comme options dans OrgLevelPolicy dans EmailEvents.
-- [Affichages de campagne](campaigns.md): l’administrateur peut filtrer sur la **source** de remplacement du système et sélectionner la **simulation** de hameçonnage ou la boîte aux lettres **SecOps.**
+- [Affichages campagne](campaigns.md): l’administrateur peut filtrer sur la **source** de remplacement du système et sélectionner la **simulation** d’hameçonnage ou la boîte aux **lettres SecOps.**
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -78,7 +78,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise** avancée, vérifiez que l’onglet Boîte aux lettres **SecOps** est sélectionné, puis faites l’une des étapes suivantes :
-   - Cliquez sur ![ Icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
+   - Cliquez sur ![ Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
    - S’il n’existe aucune simulation de hameçonnage configurée, cliquez sur **Ajouter.**
 
 3. Dans le volant modifier les boîtes aux lettres **SecOps** qui s’ouvre, entrez une boîte aux lettres Exchange Online existante que vous souhaitez désigner comme boîte aux lettres SecOps en suivant l’une des étapes suivantes :
@@ -93,31 +93,40 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 Les entrées de boîte aux lettres SecOps que vous avez configurées sont affichées sous l’onglet Boîte aux lettres **SecOps.** Pour apporter des modifications, cliquez sur ![ Icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Modifier** sous l’onglet.
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations de hameçonnage tiers dans la stratégie de remise avancée
+## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le portail Microsoft 365 Defender pour configurer des simulations d’hameçonnage tiers dans la stratégie de remise avancée
 
 1. Dans le portail Microsoft 365 Defender, dans  la section Règles, & stratégies de collaboration & règles de menaces - Remise \>  \>  \>  avancée. 
 
 2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis faites l’une des étapes suivantes :
-   - Cliquez sur ![ Icône Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
+   - Cliquez sur ![ Modifier.](../../media/m365-cc-sc-edit-icon.png) **Édition**.
    - S’il n’existe aucune simulation de hameçonnage configurée, cliquez sur **Ajouter.**
 
 3. Dans le **flyout de simulation** de hameçonnage tiers qui s’ouvre, configurez les paramètres suivants :
 
-   - **Domaine** d’envoi : développez ce paramètre et entrez au moins un domaine d’adresse de messagerie (par exemple, contoso.com) en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées.
+   - **Domaine**: développez ce paramètre et entrez au moins un domaine d’adresse de messagerie (par exemple, contoso.com) en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées.
 
      > [!NOTE]
-     > Utilisez le domaine de l’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) utilisée dans la `5321.MailFrom` transmission SMTP du message. 
+     > Utilisez le domaine de l’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) utilisée dans la transmission SMTP du message ou un domaine DKIM (DomainKeys Identified Mail) tel que spécifié par votre fournisseur de `5321.MailFrom` simulation d’hameçonnage.   
 
-   - **Adresse IP** d’envoi : développez ce paramètre et entrez au moins une adresse IPv4 valide en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
+   - **Adresse IP** d’envoi : développez ce paramètre et entrez au moins une adresse IPv4 valide en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
      - Adresse IP unique : par exemple, 192.168.1.1.
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
      - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
-   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
+   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées. Pour le format de syntaxe d’URL, voir [la syntaxe d’URL pour la liste d’adresses client autoriser/bloquer](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Ces URL sont wrapped au moment du clic, mais elles ne sont pas bloquées.
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
    > [!NOTE]
-   > Vous devez spécifier au moins un domaine **d’envoi** et au moins une **adresse IP** d’envoi pour configurer une simulation de hameçonnage tierce dans la remise avancée. Vous pouvez éventuellement inclure des **URL de simulation pour** vous assurer que les URL présentes dans les messages de simulation ne sont pas bloquées. Vous pouvez spécifier jusqu’à 10 entrées pour chaque champ. Il doit y avoir une correspondance sur au moins un domaine **d’envoi** et une **adresse IP** d’envoi, mais aucune association entre les valeurs n’est conservée.
+   > Pour configurer une simulation de hameçonnage tierce dans la remise avancée, vous devez fournir les informations suivantes :
+   > 
+   > - Au moins un **domaine provenant** de l’une des sources suivantes :
+   >   - Adresse `5321.MailFrom` (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe).
+   >   - Domaine DKIM.
+   > - Au moins une **adresse IP d’envoi**.
+   > 
+   > Vous pouvez éventuellement inclure des **URL de simulation pour** vous assurer que les URL des messages de simulation ne sont pas bloquées.
+   > Vous pouvez spécifier jusqu’à 10 entrées pour chaque champ.
+   > Il doit y avoir une correspondance sur au moins **un** domaine et une **adresse IP** d’envoi, mais aucune association entre les valeurs n’est conservée.
 
 4. Lorsque vous avez terminé, faites l’une des étapes suivantes :
    - **Première fois**: cliquez **sur Ajouter,** puis sur **Fermer.**
@@ -268,7 +277,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Procédures powerShell & sécurité et conformité pour les simulations d’hameçonnage tierces dans la stratégie de remise avancée
 
-Dans le Centre de sécurité & conformité PowerShell, les éléments de base des simulations d’hameçonnage tiers dans la stratégie de remise avancée sont :
+Dans le Centre de sécurité & conformité PowerShell, les éléments de base des simulations de hameçonnage tierces dans la stratégie de remise avancée sont :
 
 - **Stratégie de remplacement de simulation de** hameçonnage : contrôlée par les cmdlets **\* -PhishSimOverridePolicy.**
 - **Règle de remplacement de simulation d’hameçonnage**: contrôlée par les cmdlets **\* -PhishSimOverrideRule.**
@@ -401,7 +410,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy).
 
-### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Utiliser PowerShell pour modifier les règles de remplacement de simulation de hameçonnage
+### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>Utiliser PowerShell pour modifier des règles de remplacement de simulation de hameçonnage
 
 Pour modifier la règle de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
 

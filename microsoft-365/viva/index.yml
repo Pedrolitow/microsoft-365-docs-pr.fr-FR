@@ -29,7 +29,7 @@ additionalContent:
           links:
             - text: Prise en main
               url: /microsoft-365/knowledge/
-            - text: Installation
+            - text: Configuration
               url: /microsoft-365/knowledge/set-up-topic-experiences
             - text: 'Learning chemin d’accès : prendre en Sujets Microsoft Viva'
               url: /learn/paths/m365-viva-topics/
@@ -47,6 +47,8 @@ additionalContent:
           links:
             - text: Prise en main
               url: /sharepoint/viva-connections-overview
+            - text: Configuration
+              url: /sharepoint/guide-to-setting-up-viva-connections
             - text: Extensibilité
               url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: Aide de l’utilisateur final & formation
@@ -55,7 +57,7 @@ additionalContent:
           links:
             - text: Prise en main
               url: /microsoft-365/learning/
-            - text: Installation
+            - text: Configuration
               url: /microsoft-365/learning/set-up-teams-admin-center
             - text: Aide de l’utilisateur final & formation
               url: 'https://support.microsoft.com/en-us/office/viva-learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a'

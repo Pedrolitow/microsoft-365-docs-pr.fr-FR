@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ff6348a0496878ee6a7b422d441b8c96d553395
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f473963bca6a3ad3e3ece57ecc30118e4ec6f62
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204318"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479560"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -43,8 +43,6 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 > [!TIP]
 > Vous n’avez pas encore Microsoft Defender Office 365 ? [Contactez les ventes pour démarrer une version d’essai.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-
-
 Pour plus d’informations sur les nouveautés des autres produits de sécurité Microsoft Defender, voir :
 
 - [Nouveautés de Microsoft 365 Defender](../defender/whats-new.md)
@@ -52,9 +50,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de Microsoft Defender pour l’identité](/defender-for-identity/whats-new)
 - [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## <a name="september-2021"></a>Septembre 2021
 
-## <a name="september-2021"></a>Septembre 2021
-
+- [Amélioration de l’expérience de rapport dans Defender pour Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
 - [Stratégies de mise](quarantine-policies.md)en quarantaine : les administrateurs peuvent configurer un contrôle granulaire pour l’accès des destinataires aux messages mis en quarantaine et personnaliser les notifications de courrier indésirable à l’utilisateur final.
   - [Vidéo de l’expérience de l’administrateur](https://youtu.be/vnar4HowfpY)
   - [Vidéo de l’expérience de l’utilisateur final](https://youtu.be/s-vozLO43rI)
@@ -96,9 +94,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 ## <a name="februarymarch-2021"></a>Février/mars 2021
 
 - Intégration de l’ID d’alerte (recherche à l’aide de l’ID d’alerte et Alert-Explorer navigation) dans les expériences [de recherche](threat-explorer.md)
-- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de recherche](threat-explorer.md)
+- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de chasse](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
-- Nouveaux tableaux  croisés dynamiques  de repérage appelés domaine dont l’identité a été usurpée et utilisateur usurpé d’identité dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés. Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
+- Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 Plan 1 et Plan 2

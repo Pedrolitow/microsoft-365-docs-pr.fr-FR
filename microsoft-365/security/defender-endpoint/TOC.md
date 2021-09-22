@@ -353,8 +353,6 @@
 ##### [Personnaliser l’accès contrôlé aux dossiers](customize-controlled-folders.md)
 
 #### [Contrôle des appareils]()
-
-##### [Contrôler les périphériques USB et d’autres média amovibles](control-usb-devices-using-intune.md)
 ##### [Protection de stockage amovible](device-control-removable-storage-protection.md)
 ##### [Contrôle d’accès au stockage amovible](device-control-removable-storage-access-control.md)
 ##### [Installation d’appareil](mde-device-control-device-installation.md)

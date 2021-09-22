@@ -23,18 +23,18 @@ search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 09/16/2021
 ms.openlocfilehash: 77c1547b279cc5367ef23106e15dc2eee0c5a471
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477707"
+ms.locfileid: "59480747"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
 
 Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour vos abonnements en suivant les étapes ci-après.
 
 > [!NOTE]
-> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
+> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après avoir acheté ou renouvelé votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -91,8 +91,8 @@ Ce tableau décrit les raisons pour lesquelles les boutons Acheter des **licence
 |---------|---------|---------|
 |Une vérification de solvabilité est en attente. |Si une vérification de solvabilité est en attente, vous ne pouvez pas acheter ou supprimer de licences tant que la vérification de solvabilité n’est pas terminée.  | Vérifiez ultérieurement si la vérification de solvabilité est terminée. Les vérifications de la solvabilité nécessitent en général deux jours ouvrés.<br/>Une fois la vérification de solvabilité terminée, vous devez voir les boutons Acheter **des licences** et **Supprimer des licences.** |
 |Vous avez activé l’abonnement à l’aide d’une clé de produit.| Si l’abonnement a été acheté et activé à l’aide d’une clé  de produit de 25 caractères, vous voyez le mot « Prépayé » dans la colonne Canal d’achat de la page Vos **produits.**  |Voir [Ajouter des licences à un abonnement payé pour l’utilisation d’une clé de produit.](add-licenses-using-product-key.md) |
-|Vous avez acheté votre abonnement par le biais d’un revendeur.| Vous voyez le mot « Revendeur  » dans la colonne Canal d’achat de la page **Vos produits.** | Si l’abonnement a été acheté via un partenaire fournisseur de solutions Cloud (CSP), contactez votre partenaire CSP pour acheter d’autres licences.        |
-|Vous avez un abonnement d’essai. | Pour afficher vos abonnements d’essai, sélectionnez le bouton filtre, puis choisissez **Version d’essai.** | Tout d’abord, achetez votre abonnement d’essai, puis vous pouvez acheter d’autres licences.|
+|Vous avez acheté votre abonnement via un revendeur.| Vous voyez le mot « Revendeur  » dans la colonne Canal d’achat de la page **Vos produits.** | Si l’abonnement a été acheté via un partenaire fournisseur de solutions Cloud (CSP), contactez votre partenaire CSP pour acheter d’autres licences.        |
+|Vous avez un abonnement d’essai. | Pour afficher vos abonnements à la version d’essai, sélectionnez le bouton filtre, puis choisissez **Version d’essai.** | Tout d’abord, achetez votre abonnement d’essai, puis vous pouvez acheter d’autres licences.|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>Quand les nouvelles licences pourront-elles être assignées ?
 
