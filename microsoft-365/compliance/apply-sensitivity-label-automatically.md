@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 65926c72dfd61cc7a610f547d6c9a9d5fa04451e
-ms.sourcegitcommit: 3ec80aba8d5d9acf42ed9b9bf8817c2ec4ab6764
+ms.openlocfilehash: 43a2b3b3e211215e8180308360a546a8454d5bc2
+ms.sourcegitcommit: 5eecb0ccc70bf75779411d80147ed5588132b103
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59456292"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59461607"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -72,8 +72,8 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     Spécifique à l’étiquetage automatique pour Exchange :
     
     - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes au format PDF ainsi que les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
-        - Pour les fichiers PDF, si l’étiquette applique un chiffrement, ces fichiers sont chiffrés lorsque votre client est [activé pour les pièces jointes au format PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Pour ces fichiers Office, Word (.docx), PowerPoint (.pptx) et Excel (.xlsx) sont pris en charge. Si l’étiquette applique le chiffrement, ces fichiers sont chiffrés.
+        - Pour les fichiers PDF, si l’étiquette applique le chiffrement, ces fichiers sont chiffrés à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md) lorsque votre client est [activé pour les pièces jointes PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Ces fichiers Office sont pris en charge dans Word, PowerPoint et Excel. Si l’étiquette applique le chiffrement, elles sont chiffrées à l’aide du [Chiffrement de messages Office 365 (OME)](ome.md).
     - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
     - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique :
@@ -100,7 +100,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |Remplacer le chiffrement IRM appliqué sans étiquette|Oui, si l’utilisateur dispose du droit d’utilisation minimal d’exportation |Oui (e-mail uniquement) |
 |Étiquette du courrier électronique entrant|Non |Oui|
 
-\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet **Étiquetage automatique** n’apparaît pas dans le Centre de conformité.
+\* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions en raison d’une dépendance Azure back-end. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet **Étiquetage automatique** ne s’affiche pas dans le Centre de conformité. Pour plus d’informations, voir [Disponibilité des dépendances Azure par pays](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plusieurs étiquettes
 
@@ -259,7 +259,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     ![Onglet étiquetage automatique.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > Si vous ne voyez pas l’onglet **Étiquetage automatique**, cette fonctionnalité n’est pas disponible dans votre pays ou région.
+    > Si vous ne voyez pas l’onglet **Étiquetage automatique**, cette fonctionnalité n’est actuellement pas disponible dans votre région en raison d’une dépendance Azure back-end. Pour plus d’informations, voir [Disponibilité des dépendances Azure par pays](/troubleshoot/azure/general/dependency-availability-by-country).
 
 3. Sélectionnez **+ créer une stratégie d’étiquetage automatique**. Cette opération démarre la Nouvelle configuration de stratégie :
 
