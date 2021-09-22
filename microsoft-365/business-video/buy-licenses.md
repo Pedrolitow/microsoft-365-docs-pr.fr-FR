@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,19 +24,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment acheter de nouvelles licences Microsoft 365 pour les entreprises.
-ms.date: 05/11/2021
-ms.openlocfilehash: f209b5142a2cda863645c4d78c4b515e552befb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 51f90e3d2f5a49ce8d20c0ab905bd72c0494f653
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209461"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477574"
 ---
 # <a name="buy-microsoft-365-licenses"></a>Acheter Microsoft 365 licences
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
 Au cours de l’ajout de nouveaux utilisateurs, vous devrez acheter Microsoft 365 licences pour ces utilisateurs.
+
+> [!NOTE]
+> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="try-it"></a>Essayez !
 

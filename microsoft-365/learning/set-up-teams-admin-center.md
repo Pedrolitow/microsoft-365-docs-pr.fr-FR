@@ -13,21 +13,22 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
+ms.custom: admindeeplinkTEAMS
 localization_priority: None
 description: Découvrez comment configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration.
-ms.openlocfilehash: f8e5ac5695fd5d68da22883974ccafc8c6bf0f85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 55376371361ffb54b567ce9c3e7e12cd462b162b
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182105"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477646"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration
 
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
 
-L’administrateur Teams doit effectuer certaines étapes pour activer Learning (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
+L Teams administrateur doit effectuer certaines étapes pour activer Learning (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
 
 ## <a name="public-preview-tenants"></a>Locataires de la prévisualisation publique
 
@@ -47,10 +48,10 @@ L’administrateur Teams doit effectuer certaines étapes pour activer Learning 
 
     b. Activez la stratégie d’autorisation d’application pour les utilisateurs ou les groupes qui effectueront le test Learning (Prévisualisation). Voir [Attribuer des stratégies à des utilisateurs et des groupes.](/microsoftteams/assign-policies-users-and-groups)
 
-3. Informez les utilisateurs qui testent Le Learning (prévisualisation) pour basculer leur client de build vers la [prévisualisation](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)publique pour Teams .
+3. Avertissez les utilisateurs qui testent Le Learning (prévisualisation) de basculer leur client de build vers la [prévisualisation](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)publique pour Teams .
 
 > [!IMPORTANT]
-> Pour les locataires de la prévisualisation publique, Learning  (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver Domaine Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
+> Pour les locataires de la prévisualisation publique, Learning  (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver La Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
 
 ### <a name="user-steps-for-public-preview-tenants"></a>Étapes utilisateur pour les locataires de la prévisualisation publique
 
@@ -72,26 +73,24 @@ Les utilisateurs qui ont été activés pour le test [](/microsoftteams/public-p
 
 Pour les locataires de la prévisualisation privée, aucune stratégie supplémentaire ne doit être activée. Toutefois, Le Learning (prévisualisation) doit être mis à la disposition des utilisateurs de votre organisation.
 
-1. Dans le navigation gauche du centre d’administration Teams, Teams **applications Gérer**  >  **les applications.**
+1. Dans le navigation gauche du centre d Teams d’administration, Teams **applications Gérer**  >  <a href="https://go.microsoft.com/fwlink/?linkid=2172960" target="_blank">**les applications.**</a>
 
    ![Navigation gauche dans le centre d Teams d’administration affichant Teams applications et la section Gérer les applications.](../media/learning/learning-app-teams-manage-apps-nav.png)
 
 2. Dans **la** page Gérer les applications, dans la zone de recherche, tapez *Contrôle Learning,* puis sélectionnez **Learning (Prévisualisation).**
 
-   ![Page Gérer les applications dans le centre Teams’administration affichant la zone de recherche.](../media/learning/learning-app-teams-manage-apps-page.png)
+   ![Page Gérer les applications dans Teams centre d’administration affichant la zone de recherche.](../media/learning/learning-app-teams-manage-apps-page.png)
 
 3. Dans la page **Contrôle Learning (Prévisualisation),** sous **État,** sélectionnez Autorisé à activer Learning (Aperçu). 
 
    ![Learning page dans le centre d Teams’administration affichant la section Paramètres d’état et d’application.](../media/learning/learning-app-teams-learning-page.png)
 
 <!---
-The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
+The Teams admin installs Viva Learning (Preview) and applies permission policies through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2066851" target="_blank">Teams admin center</a>.
 
 1. For Viva Learning (Preview), you must first set the Update policy in Teams. For more information, see [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates).
 
-    1. Sign in to the Teams admin center.
-
-    2. Select **Teams** > **Update policies**.
+    1. Sign in to the Teams admin center > **Teams** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173206" target="_blank">**Update policies**</a>.
 
     3. Select **Add**. 
 
@@ -115,7 +114,7 @@ You must be an administrator in the Teams admin center to perform these tasks.
 
 To make Viva Learning (Preview) available for users in your organization, follow these steps:
 
-1. In the left navigation of the Teams admin center, go to **Teams apps** > **Manage apps**.
+1. In the left navigation of the Teams admin center, go to **Teams apps** > <a href="https://go.microsoft.com/fwlink/?linkid=2172960" target="_blank">**Manage apps**</a>.
 
    ![Left navigation in the Teams admin center showing Teams apps and Manage apps section.](../media/learning/learning-app-teams-manage-apps-nav.png)
 

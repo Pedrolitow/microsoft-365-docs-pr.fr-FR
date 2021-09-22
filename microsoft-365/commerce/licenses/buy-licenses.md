@@ -21,17 +21,20 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
-ms.date: 04/07/2021
-ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 77c1547b279cc5367ef23106e15dc2eee0c5a471
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181612"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477707"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
 
 Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour vos abonnements en suivant les étapes ci-après.
+
+> [!NOTE]
+> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après l’achat ou le renouvellement de votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -66,12 +69,15 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, recherchez l’abonnement pour lequel vous souhaitez acheter ou supprimer des licences. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Acheter des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+
 3. Si vous souhaitez réduire le nombre de licences, en haut du volet Acheter des **licences,** sélectionnez **Supprimer des licences.**
+
 4. Pour acheter ou supprimer  des licences, sous Nouvelle quantité dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 100 licences et que vous souhaitez en ajouter cinq, entrez 105. Si vous souhaitez en supprimer cinq, entrez 95.
+
 5. Sélectionnez **Enregistrer**.
 
 > [!NOTE]
@@ -81,7 +87,7 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 Ce tableau décrit les raisons pour lesquelles les boutons Acheter des **licences** ou Supprimer des **licences** ne sont pas disponibles et les solutions possibles.
 
-|Reason  |Description  |Solution  |
+|Raison  |Description  |Solution  |
 |---------|---------|---------|
 |Une vérification de solvabilité est en attente. |Si une vérification de solvabilité est en attente, vous ne pouvez pas acheter ou supprimer de licences tant que la vérification de solvabilité n’est pas terminée.  | Vérifiez ultérieurement si la vérification de solvabilité est terminée. Les vérifications de la solvabilité nécessitent en général deux jours ouvrés.<br/>Une fois la vérification de solvabilité terminée, vous devez voir les boutons Acheter **des licences** et **Supprimer des licences.** |
 |Vous avez activé l’abonnement à l’aide d’une clé de produit.| Si l’abonnement a été acheté et activé à l’aide d’une clé  de produit de 25 caractères, vous voyez le mot « Prépayé » dans la colonne Canal d’achat de la page Vos **produits.**  |Voir [Ajouter des licences à un abonnement payé pour l’utilisation d’une clé de produit.](add-licenses-using-product-key.md) |
