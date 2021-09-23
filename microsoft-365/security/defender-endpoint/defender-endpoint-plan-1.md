@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 74621e47b70e304afa70eb2e3513d5e6701afd0d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 2ae91e32be7d010e5b8014ba2dde47f302d0c474
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400305"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491384"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -58,7 +59,7 @@ Defender pour endpoint Plan 1 (prévisualisation) inclut les fonctionnalités su
 Les sections suivantes fournissent plus de détails sur ces fonctionnalités. 
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, express ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender pour Endpoint Plan 1 (prévisualisation).
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, express ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender for Endpoint Plan 1 (prévisualisation).
 
 ## <a name="next-generation-protection"></a>Protection de nouvelle génération
 
@@ -66,7 +67,7 @@ La protection nouvelle génération inclut une protection antivirus et anti-prog
 
 - Protection antivirus en temps réel, heuristique et basée sur le comportement 
 - Protection cloud, qui inclut la détection et le blocage quasi instantanés des menaces nouvelles et émergentes 
-- Mises à jour de produits et de protection dédiées, y compris les mises à jour liées Antivirus Microsoft Defender 
+- Mises à jour de produits et de protection dédiées, y compris les mises à jour relatives Antivirus Microsoft Defender 
 
 Pour plus d’informations, voir [vue d’ensemble de la protection nouvelle génération.](next-generation-protection.md)
 
@@ -106,7 +107,7 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 - Lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter d’autres fichiers
 - Exécution de scripts obscurcis ou suspects
-- Comportements de l’initiateur que les applications n’initient généralement pas au cours d’un travail normal
+- Comportements de l’initiateur que les applications ne déclenchent généralement pas au cours d’un travail normal
 
 Les applications d’entreprise légitimes peuvent présenter de tels comportements logiciels ; Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque et contribuer à la sécurité de votre organisation.
 
@@ -122,7 +123,7 @@ Pour plus d’informations, voir [Protéger les dossiers importants avec un acc�
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
-Pour plus d’informations, [voir Contrôler les périphériques USB et les supports amovibles.](control-usb-devices-using-intune.md)
+Pour en savoir plus, [consultez Les périphériques USB de contrôle et les supports amovibles.](control-usb-devices-using-intune.md)
 
 ### <a name="web-protection"></a>Protection Web
 
@@ -198,4 +199,4 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - [Comparer Microsoft Defender pour Endpoint Plan 1 (prévisualisation) à Plan 2](defender-endpoint-plan-1-2.md)
 - [Configurer Defender pour Endpoint Plan 1 (prévisualisation)](mde-p1-setup-configuration.md)
 - [Mise en place de Defender pour Endpoint Plan 1 (prévisualisation)](mde-plan1-getting-started.md)
-- [Gérer Defender pour endpoint Plan 1 (prévisualisation)](mde-p1-maintenance-operations.md)
+- [Gérer Defender pour Endpoint Plan 1 (prévisualisation)](mde-p1-maintenance-operations.md)

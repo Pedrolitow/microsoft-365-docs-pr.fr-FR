@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78ad8b65a7ad727417dd6152fcb34c6df34080c9
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 2e7ec8ca3b9f428708c21c5a75bbfd4174373d62
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480855"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491324"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -38,30 +38,31 @@ ms.locfileid: "59480855"
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
-Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section conditions préalables.
+Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge du navigateur, consultez la section des conditions préalables.
 
-Récapitulatif des avantages :
+## <a name="benefits-of-web-content-filtering"></a>Avantages du filtrage de contenu web
 
-- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite
-- Votre équipe de sécurité peut déployer facilement des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les [rôles Microsoft Defender](/microsoft-365/security/defender-endpoint/rbac) for Endpoint
-- Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web
+- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite.
+
+- Votre équipe de sécurité peut déployer facilement des stratégies sur des groupes d’utilisateurs à l’aide de groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
+
+- Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 
-- Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité ou la licence autonome Microsoft Defender pour endpoint. 
-- Accès à Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ).
-- Appareils exécutant Windows 10 mise à jour anniversaire (version 1607) ou version ultérieure avec les dernières mises à jour [antivirus/anti-programme malveillant.](manage-updates-baselines-microsoft-defender-antivirus.md)
-- Windows Defender SmartScreen et protection du réseau activés.
+- Votre abonnement inclut l’un des Windows 10 Entreprise suivants : Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité ou le module Licence autonome Microsoft Defender pour point de terminaison. 
 
-## <a name="user-experience"></a>Expérience utilisateur
+- Vous avez accès à Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
-L’expérience de blocage pour les navigateurs tiers pris en charge est fournie par la Protection du réseau, qui fournit un message au niveau du système pour avertir l’utilisateur d’une connexion bloquée. Pour une expérience plus conviviale dans le navigateur, envisagez d’utiliser Microsoft Edge.
+- Les appareils de votre organisation exécutent Windows 10 mise à jour anniversaire (version 1607) ou ultérieure avec les dernières mises à jour [antivirus/anti-programme malveillant.](manage-updates-baselines-microsoft-defender-antivirus.md)
+
+- Windows Defender SmartScreen et la Protection du réseau sont activés sur les appareils de votre organisation.
 
 ## <a name="data-handling"></a>Traitement des données
 
@@ -69,7 +70,7 @@ Les données sont stockées dans la région sélectionnée dans le cadre de vos 
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison  >  **fonctionnalités**  >    >  **générales avancées**. Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
+Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison  >  **fonctionnalités**  >    >  **générales avancées.** Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
@@ -84,7 +85,7 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Jeux :** jeux en ligne et sites qui favorisent les compétences et la pratique en matière de jeux.
 
-**Nudity**: sites qui fournissent des images ou des vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
+**Nudity**: sites qui fournissent des images ou vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
 
 **Politique / explicitement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu sexuelle est également répertoriée ici.
 
@@ -124,16 +125,16 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Logiciels non** fiables : sites qui contiennent ou promeuvent l’utilisation de programmes malveillants, de logiciels espions, de botnets, d’tentatives de hameçonnage ou de piratage & de droits d’auteur.
 
-**Enseignement scolaire :** sites liés au plagiarisme ou à la politique de enseignement. 
+**Enseignement scolaire :** sites liés au plagiarisme ou à la enseignement. 
 
 **Auto-nuire :** sites qui promeuvent les auto-dommages, y compris les sites de cyberintimidation qui contiennent des messages abusifs et/ou offensants à l’égard des utilisateurs.
 
-**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’histoire, à la chasse et à la défense.
+**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’errs, à la chasse et à la chasse.
 
 </details>
 
 <details>
-<summary>Sons</summary>
+<summary>Resoe</summary>
 
 **Conversation**: sites qui sont principalement des salles de conversation web.
 
@@ -178,6 +179,10 @@ Pour ajouter une nouvelle stratégie, suivez les étapes suivantes :
 > - Vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement pour vous aider à comprendre le comportement des utilisateurs avant de créer une stratégie de blocage.
 > - Si vous supprimez une stratégie ou modifiez des groupes d’appareils en même temps, cela peut entraîner un retard dans le déploiement de la stratégie.
 > - Le blocage de la catégorie « Non catégorisé » peut entraîner des résultats inattendus et inattendus.  
+
+## <a name="end-user-experience"></a>Expérience de l’utilisateur final
+
+L’expérience de blocage pour les navigateurs tiers pris en charge est fournie par la Protection du réseau, qui fournit un message au niveau du système pour avertir l’utilisateur d’une connexion bloquée. Pour une expérience plus conviviale dans le navigateur, envisagez d’utiliser Microsoft Edge.
 
 ### <a name="allow-specific-websites"></a>Autoriser des sites web spécifiques
 
@@ -243,15 +248,13 @@ Vous pouvez accéder aux **détails du rapport** pour chaque carte en sélection
 
 Utilisez le filtre de plage de temps en haut à gauche de la page pour sélectionner une période. Vous pouvez également filtrer les informations ou personnaliser les colonnes. Sélectionnez une ligne pour ouvrir un volet volant avec encore plus d’informations sur l’élément sélectionné.
 
-## <a name="errors-and-issues"></a>Erreurs et problèmes
-
-### <a name="limitations-and-known-issues-in-this-preview"></a>Limitations et problèmes connus dans cette prévisualisation
+### <a name="known-issues-and-limitations"></a>Problèmes connus et conseils
 
 - Seul Microsoft Edge est pris en charge si la configuration du système d’exploitation de votre appareil est Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). La protection du réseau est uniquement prise en charge en mode Inspect sur les appareils serveur, qui est responsable de la sécurisation du trafic sur les navigateurs tiers pris en charge.
 
-- Les appareils non signés auront des données incorrectes affichées dans le rapport. Dans le tableau croisé dynamique Des groupes d’appareils **détails** du rapport, vous pouvez voir  >   une ligne avec un champ Groupe de périphériques vide. Ce groupe contient vos appareils non signés avant qu’ils ne sont placés dans votre groupe spécifié. Le rapport de cette ligne peut ne pas contenir un nombre précis d’appareils ou de nombres d’accès.
+- Les appareils non signés auront des données incorrectes affichées dans le rapport. Dans le tableau croisé dynamique Groupes d’appareils **détails** du rapport, vous pouvez voir  >   une ligne avec un champ Groupe de périphériques vide. Ce groupe contient vos appareils non signés avant qu’ils ne sont placés dans votre groupe spécifié. Le rapport de cette ligne peut ne pas contenir un nombre précis d’appareils ou de nombres d’accès.
 
-- Les rapports de filtrage de contenu Web sont actuellement limités à l’affichage des 5 000 premiers enregistrements. Par exemple, le rapport Domaines affiche uniquement un maximum des 5 000 principaux domaines pour une requête de filtre donnée, le cas échéant. 
+- Les rapports de filtrage de contenu web sont actuellement limités à l’affichage des 5 000 premiers enregistrements. Par exemple, le rapport Domaines affiche uniquement un maximum des 5 000 principaux domaines pour une requête de filtre donnée, le cas échéant. 
 
 ## <a name="see-also"></a>Voir aussi
 

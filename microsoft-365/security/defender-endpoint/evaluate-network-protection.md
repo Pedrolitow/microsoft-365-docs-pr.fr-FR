@@ -1,6 +1,6 @@
 ---
 title: Évaluer la protection du réseau
-description: Découvrez comment fonctionne la protection du réseau en testant les scénarios courants contre qui elle est protégée.
+description: Découvrez le fonctionnement de la protection réseau en testant les scénarios courants contre qui elle est protégée.
 keywords: Protection du réseau, attaques, site web malveillant, ip, domaine, domaines, évaluer, tester, démonstration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,12 +14,13 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: be5cbc03fa75d65d2c3fabbbf42594098d0d9d69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: e671a870805e324cfbf149876c4fca74231a9840
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209629"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491600"
 ---
 # <a name="evaluate-network-protection"></a>Évaluer la protection du réseau
 
@@ -34,13 +35,13 @@ ms.locfileid: "59209629"
 Cet article vous aide à évaluer la protection du réseau en activant la fonctionnalité et en vous guidant vers un site de test. Les sites de cet article d’évaluation ne sont pas malveillants. Ce sont des sites web spécialement créés qui prétendent être malveillants. Le site réplique le comportement qui se produit si un utilisateur a visité un site ou un domaine malveillant.
 
 > [!TIP]
-> Vous pouvez également visiter le site Web Microsoft Defender Testground [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent les autres fonctionnalités de protection.
+> Vous pouvez également consulter le site Web Microsoft Defender Testground [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionnent les autres fonctionnalités de protection.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Activer la protection réseau en mode audit
 
-Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métier ou qu’elle vous donne une idée de la fréquence des blocages.
+Activez la protection réseau en mode audit pour voir les adresses IP et les domaines qui auraient été bloqués. Vous pouvez vous assurer qu’elle n’affecte pas les applications métiers ou qu’elle vous donne une idée de la fréquence des blocages.
 
-1. Tapez **powershell** dans la menu Démarrer, cliquez avec le bouton **droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur**
+1. Tapez **powershell** dans le menu Démarrer, cliquez avec le bouton droit sur **Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell
@@ -55,10 +56,10 @@ Activez la protection réseau en mode audit pour voir les adresses IP et les dom
 
 La connexion réseau est autorisée et un message de test s’affiche.
 
-![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide aux informations.](images/np-notif.png)
+![Exemple de notification qui indique connexion bloquée : votre administrateur informatique a Sécurité Windows bloquer cette connexion réseau. Contactez votre service d’aide.](images/np-notif.png)
 
 > [!NOTE]
-> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, voir Protection du réseau et protocole d’accès [triple TCP.](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+> Les connexions réseau peuvent être réussies même si un site est bloqué par la protection réseau. Pour plus d’informations, voir Protection du réseau et protocole d’accès [TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
 
@@ -74,8 +75,8 @@ Pour passer en revue les applications qui auraient été bloquées, ouvrez l’O
 
 - [Protection du réseau](network-protection.md)
 
-- [Protection du réseau et protocole d’auto-transport TCP triple](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+- [Protection du réseau et protocole d’handshake triple TCP](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
-- [Activer la protection réseau](enable-network-protection.md)
+- [Activer la protection du réseau](enable-network-protection.md)
 
 - [Résoudre les problèmes de protection du réseau](troubleshoot-np.md)

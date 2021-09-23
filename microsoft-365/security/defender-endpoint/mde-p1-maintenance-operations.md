@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: b462fd6c02e455b7bd5ed41c71462628a0d0071b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: d589a196f261d817cff3717cab613658c1533417
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399405"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489540"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1-preview"></a>Gérer Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -32,11 +33,11 @@ Lorsque vous utilisez Defender pour Endpoint Plan 1 (prévisualisation) dans vot
 - [Corriger les faux positifs/négatifs](#address-false-positivesnegatives)
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, express ou implicite, pour les informations fournies ici. Cet article contient des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Defender for Endpoint Plan 1 (prévisualisation).
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Cet article contient des liens vers du contenu en ligne qui peut décrire certaines fonctionnalités qui ne sont pas incluses dans Defender for Endpoint Plan 1 (prévisualisation).
 
 ## <a name="manage-security-intelligence-and-product-updates"></a>Gérer les informations de sécurité et les mises à jour des produits
 
-Le Antivirus Microsoft Defender à jour est essentiel pour la protection contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Microsoft publie des mises à jour régulières pour la sécurité, les antivirus et la protection contre les programmes malveillants. Les mises à jour sont organisées en deux catégories : 
+Le Antivirus Microsoft Defender à jour est essentiel pour la protection contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque. Microsoft publie des mises à jour régulières pour l’intelligence de la sécurité, les antivirus et la protection contre les programmes malveillants. Les mises à jour sont organisées en deux catégories : 
 
 - Mises à jour de l’intelligence de la sécurité
 - Mises à jour de produit 
@@ -55,7 +56,7 @@ Un faux positif est un artefact, tel qu’un fichier ou un processus, qui a ét�
 
 :::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="Vue d’ensemble du processus faux positifs et négatifs":::
 
-Si vous voyez des faux positifs/négatifs dans Defender pour le point de terminaison, consultez Adresse [des faux positifs/négatifs dans Microsoft Defender pour point de terminaison.](defender-endpoint-false-positives-negatives.md)
+Si vous voyez des faux positifs/négatifs dans Defender pour le point de terminaison, consultez Adresse [faux positifs/négatifs dans Microsoft Defender pour point de terminaison.](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

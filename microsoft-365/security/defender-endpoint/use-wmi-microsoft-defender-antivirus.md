@@ -17,12 +17,13 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 25518383131e4f7ecb7451965ef7a42b1c6eee4b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: d16030609cbb3949c93127d5ba5805747667850c
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208884"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491312"
 ---
 # <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser Windows Management Instrumentation (WMI) pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -35,7 +36,7 @@ ms.locfileid: "59208884"
 
 Windows Management Instrumentation (WMI) est une interface de script qui vous permet de récupérer, modifier et mettre à jour les paramètres.
 
-Pour en savoir plus sur WMI, consultez la bibliothèque [d’administration du](/windows/win32/wmisdk/wmi-start-page)système réseau de développement Microsoft.
+Pour en savoir plus sur WMI, consultez la bibliothèque [Microsoft Developer Network System Administration.](/windows/win32/wmisdk/wmi-start-page)
 
 Antivirus Microsoft Defender possède un certain nombre de classes WMI spécifiques qui peuvent être utilisées pour effectuer la plupart des mêmes fonctions que la stratégie de groupe et d’autres outils de gestion. De nombreuses classes sont analogues aux [cmdlets Defender PowerShell.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 
@@ -45,7 +46,7 @@ Les modifications apportées avec WMI affecteront les paramètres locaux sur le 
 
 Vous pouvez configurer les paramètres qui peuvent être remplacer localement avec les [remplacements de stratégie locale.](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

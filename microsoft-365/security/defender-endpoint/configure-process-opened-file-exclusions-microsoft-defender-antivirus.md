@@ -15,12 +15,13 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: e78706f1c95dd507ae41a6bf89403c45dc689b73
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: cd0fac1d4dec536d33f811f5c494127a52f746c3
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400281"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491038"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -43,17 +44,17 @@ Cet article explique comment configurer des listes d’exclusions.
 |Tout fichier sur l’ordinateur ouvert par un processus sous un dossier spécifique|La spécification `c:\test\sample\*` exclurait les fichiers ouverts par : <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Tout fichier sur l’ordinateur ouvert par un processus spécifique dans un dossier spécifique|La spécification `c:\test\process.exe` exclurait les fichiers ouverts uniquement par `c:\test\process.exe`|
 
-Lorsque vous ajoutez un processus à la liste d’exclusions de processus, Antivirus Microsoft Defender n’analyse pas les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus proprement dit sera analysé, sauf s’il a également été ajouté à la liste [d’exclusions de fichiers.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+Lorsque vous ajoutez un processus à la liste d’exclusions de processus, Antivirus Microsoft Defender pas analyser les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus proprement dit sera analysé, sauf s’il a également été ajouté à la liste [d’exclusions de fichiers.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
 Les exclusions s’appliquent uniquement à la protection et à la surveillance en temps [réel toujours en temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Elles ne s’appliquent pas aux analyses programmées ou à la demande.
 
-Les modifications apportées avec la stratégie de groupe aux **listes** d’exclusions s’afficheront dans les listes de [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées à l Sécurité Windows’application **ne s’afficheront pas** dans les listes de stratégie de groupe.
+Les modifications apportées avec  la stratégie de groupe aux listes d’exclusions s’afficheront dans les listes de [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées à l Sécurité Windows’application **ne s’afficheront pas** dans les listes de stratégie de groupe.
 
 Vous pouvez ajouter, supprimer et examiner les listes pour les exclusions dans la stratégie de groupe, Microsoft Endpoint Configuration Manager, Microsoft Intune et avec l’application Sécurité Windows, et vous pouvez utiliser des caractères génériques pour personnaliser davantage les listes.
 
 Vous pouvez également utiliser les cmdlets PowerShell et WMI pour configurer les listes d’exclusions, y compris la révision de vos listes.
 
-Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur , les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégies de groupe sont prioritaire en cas de conflit.
+Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur, les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégies de groupe sont prioritaire en cas de conflit.
 
 Vous pouvez [configurer la façon dont les listes d’exclusions définies](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) localement et globalement sont fusionnées pour permettre aux modifications locales de remplacer les paramètres de déploiement géré.
 
@@ -155,7 +156,7 @@ Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières 
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Valider la liste d’exclusions à l’aide de MpCmdRun
 
-Pour vérifier les exclusions avec l’outil de ligne de commande [dédié mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
+Pour vérifier les exclusions avec l’outil en ligne de commande [mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
 
 ```DOS
 MpCmdRun.exe -CheckExclusion -path <path>

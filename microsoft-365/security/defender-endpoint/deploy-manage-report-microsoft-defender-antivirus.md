@@ -16,12 +16,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 553bdc2763f694e1720f55bd1eec94c37a3f6ba2
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: b7b8f6ad115ae5fadfd993f51d1427f02d181028
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401457"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490188"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et signaler les Antivirus Microsoft Defender
 
@@ -57,7 +58,7 @@ Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, en 
 
 1. <span id="fn1" />La disponibilité de certaines fonctions et fonctionnalités, en particulier liées à la protection cloud, diffère entre Microsoft Endpoint Manager (Current Branch) et System Center 2012 Configuration Manager. Dans cette bibliothèque, nous nous sommes concentrés sur Windows 10, Windows Server 2016 et Microsoft Endpoint Manager (Current Branch). Voir [Utiliser la protection microsoft fournie](cloud-protection-microsoft-defender-antivirus.md) par le cloud Antivirus Microsoft Defender pour un tableau qui décrit les principales différences. [(Revenir au tableau)](#ref2)
 
-2. <span id="fn2" />Dans Windows 10, Antivirus Microsoft Defender est un composant disponible sans installation ou déploiement d’un client ou d’un service supplémentaire. Il est automatiquement activé lorsque des produits antivirus tiers sont désinstallés ou désinstallés (sauf[sur Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). Le déploiement classique n’est donc pas requis. Le déploiement ici fait référence à la garantie que le Antivirus Microsoft Defender est disponible et activé sur les points de terminaison ou les serveurs. [(Revenir au tableau)](#ref2)
+2. <span id="fn2" />Dans Windows 10, Antivirus Microsoft Defender est un composant disponible sans installation ou déploiement d’un client ou d’un service supplémentaire. Il est automatiquement activé lorsque des produits antivirus tiers sont désinstallés ou désinstallés (sauf[sur Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)). Le déploiement traditionnel n’est donc pas requis. Le déploiement ici fait référence à la garantie que le Antivirus Microsoft Defender est disponible et activé sur les points de terminaison ou les serveurs. [(Revenir au tableau)](#ref2)
 
 3. <span id="fn3" />La configuration des fonctionnalités et de la protection, y compris la configuration des mises à jour du produit et de la protection, est décrite plus en détail dans la section Configurer [Antivirus Microsoft Defender fonctionnalités](configure-notifications-microsoft-defender-antivirus.md) de cette bibliothèque. [(Revenir au tableau)](#ref2)
 
@@ -65,6 +66,6 @@ Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, en 
 
 Rubrique | Description
 ---|---
-[Déployer et activer la protection Antivirus Microsoft Defender de sécurité](deploy-microsoft-defender-antivirus.md) | Bien que le client soit installé en tant que partie intégrante de Windows 10 et que le déploiement classique ne s’applique pas, vous devrez quand même activer le client sur vos points de terminaison avec des objets de stratégie de groupe, Microsoft Endpoint Configuration Manager Microsoft Intune ou Microsoft Endpoint Configuration Manager.
-[Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md) | La mise à jour des Antivirus Microsoft Defender se fait en deux parties : la mise à jour du client sur les points de terminaison (mises à jour des produits) et la mise à jour de l’intelligence de sécurité (mises à jour de la protection). Vous pouvez mettre à jour les informations de sécurité de plusieurs façons, à l’aide de Microsoft Endpoint Configuration Manager, d’une stratégie de groupe, de PowerShell et de WMI.
+[Déployer et activer la protection Antivirus Microsoft Defender de sécurité](deploy-microsoft-defender-antivirus.md) | Bien que le client soit installé en tant que partie intégrante de Windows 10 et que le déploiement classique ne s’applique pas, vous devrez quand même activer le client sur vos points de terminaison avec les objets de stratégie de groupe, Microsoft Endpoint Configuration Manager, Microsoft Intune ou.
+[Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md) | La mise à jour des Antivirus Microsoft Defender se fait en deux parties : la mise à jour du client sur les points de terminaison (mises à jour des produits) et la mise à jour de l’intelligence de sécurité (mises à jour de la protection). Vous pouvez mettre à jour les informations de sécurité de différentes manières, à l’aide de Microsoft Endpoint Configuration Manager, de la stratégie de groupe, de PowerShell et de WMI.
 [Surveiller et signaler la protection Antivirus Microsoft Defender données](report-monitor-microsoft-defender-antivirus.md) | Vous pouvez utiliser Microsoft Intune, Microsoft Endpoint Configuration Manager, le module de conformité des mises à jour pour Microsoft Operations Management Suite ou un produit SIEM tiers (en consommant des journaux d’événements Windows) pour surveiller l’état de la protection et créer des rapports sur la protection des points de terminaison.

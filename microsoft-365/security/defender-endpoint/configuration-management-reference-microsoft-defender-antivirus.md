@@ -1,5 +1,5 @@
 ---
-title: Gérer Windows Defender dans votre entreprise
+title: Gérer Antivirus Microsoft Defender dans votre entreprise
 description: Découvrez comment utiliser la stratégie de groupe, Configuration Manager, PowerShell, WMI, Intune et la ligne de commande pour gérer Microsoft Defender AV
 keywords: stratégie de groupe, gpo, gestionnaire de config, sccm, scep, powershell, wmi, intune, defender, antivirus, anti-programme malveillant, sécurité, protection
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: f28c209ce179cc019a8b0edbdc698f9f9eb7daf6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: dc5cd2b57ce3c282c69b5a1cfac77baf27717416
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163737"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490894"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Gérer Antivirus Microsoft Defender dans votre entreprise
 
@@ -42,7 +43,7 @@ Vous pouvez gérer et configurer les Antivirus Microsoft Defender à l’aide de
 - [Windows Management Instrumentation (WMI)](./use-wmi-microsoft-defender-antivirus.md)
 - Utilitaire de ligne de commande microsoft de protection contre les programmes [malveillants](./command-line-arguments-microsoft-defender-antivirus.md) (appelé *utilitairempcmdrun.exe* logiciel
 
-Les articles suivants fournissent des informations supplémentaires, des liens et des ressources pour l’utilisation de ces outils pour gérer et configurer Antivirus Microsoft Defender.
+Les articles suivants fournissent des informations supplémentaires, des liens et des ressources sur l’utilisation de ces outils pour gérer et configurer Antivirus Microsoft Defender.
 
 |Article|Description|
 |:---|:---|

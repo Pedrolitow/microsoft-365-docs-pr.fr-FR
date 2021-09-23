@@ -15,13 +15,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 87200c519aa27a2f8472a025f90a283978fd21a0
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7434a37985a9e47cc16795c6aa24d6a7d48f66a7
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399813"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490870"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
@@ -64,7 +65,7 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Manager (bran
 |Analyser les lecteurs amovibles uniquement pendant les analyses complètes <p> **Analyse** \> **Analyser les lecteurs amovibles**|Désactivé|`-DisableRemovableDriveScanning`|
 |Spécifier le niveau de sous-dossiers dans un dossier d’archivage à analyser <p>**Analyse** \> **Spécifier la profondeur maximale pour analyser les fichiers d’archivage**|0|Non disponible|
 |Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. <p> **Analyse** \> **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse**|50|`-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur.|
-|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Sans limite|Non disponible <p>La valeur par défaut de 0 ne s’applique pas à la limite|
+|Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse** \> **Spécifier la taille maximale des fichiers d’archivage à scanner**|Sans limite|Non disponible <p>La valeur par défaut 0 ne s’applique pas à la limite|
 |Configurer une faible priorité du processeur pour les analyses programmées <p> **Analyse** \> **Configurer une faible priorité du processeur pour les analyses programmées**|Désactivé|Non disponible|
 
 > [!NOTE]
@@ -79,7 +80,7 @@ Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Micr
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Utiliser WMI pour configurer les options d’analyse
 
-Voir [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Voir [Windows Defender API WMIv2.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="email-scanning-limitations"></a>Limitations de l’analyse du courrier électronique
 

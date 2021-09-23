@@ -1,6 +1,6 @@
 ---
 title: Configurer et valider des exclusions en fonction de l’extension, du nom ou de l’emplacement
-description: Exclure des fichiers Antivirus Microsoft Defender analyses en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
+description: Exclure des fichiers Antivirus Microsoft Defender les analyses en fonction de leur extension de fichier, de leur nom de fichier ou de leur emplacement.
 keywords: exclusions, fichiers, extension, type de fichier, nom de dossier, nom de fichier, analyses
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.date: 09/14/2021
-ms.openlocfilehash: 5dfa84335e9f31e531759b209ac3c2491c657fe0
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: e629cfa55467bc7f5f0a021e52cc8ade5118c8c4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399801"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491588"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -68,7 +69,7 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 ## <a name="important-notes-about-exclusions-based-on-file-extensions-and-folder-locations"></a>Remarques importantes sur les exclusions basées sur les extensions de fichiers et les emplacements de dossiers
 
-- L’utilisation de caractères génériques tels que l’astérisque ( ) modifie l’interprétation des règles \* d’exclusion. Pour plus d’informations sur le fonctionnement des [caractères génériques,](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) voir la section Utiliser des caractères génériques dans la section des listes d’exclusions de nom de fichier et de dossier ou d’extension.
+- L’utilisation de caractères génériques tels que l’astérisque ( ) modifie l’interprétation \* des règles d’exclusion. Pour plus d’informations sur le fonctionnement des [caractères génériques,](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) voir la section Utiliser des caractères génériques dans la section des listes d’exclusions de nom de fichier et de dossier ou d’extension.
 
 - N’excluez pas les lecteurs réseau mappés. Spécifiez le chemin d’accès réseau réel.
 
@@ -306,7 +307,7 @@ Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières 
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Valider la liste d’exclusions à l’aide de MpCmdRun
 
-Pour vérifier les exclusions avec l’outil de ligne de commande [dédié mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
+Pour vérifier les exclusions avec l’outil en ligne de commande [mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
 
 ```DOS
 Start, CMD (Run as admin)
@@ -316,7 +317,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou version ultérieure.
+> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou ultérieure.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences Antivirus Microsoft Defender à l’aide de PowerShell
 
@@ -342,7 +343,7 @@ $WDAVprefs.ExclusionExtension
 $WDAVprefs.ExclusionPath
 ```
 
-Dans l’exemple suivant, la liste est divisée en nouvelles lignes pour chaque utilisation de la `Add-MpPreference` cmdlet :
+Dans l’exemple suivant, la liste est divisée en nouvelles lignes pour chaque utilisation de `Add-MpPreference` l’cmdlet :
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Sortie PowerShell affichant uniquement les entrées de la liste d’exclusions.":::
 
@@ -354,13 +355,13 @@ Pour plus d’informations, voir [Utiliser les cmdlets PowerShell pour configure
 
 Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide de PowerShell avec la cmdlet ou la classe WebClient .NET pour télécharger `Invoke-WebRequest` un fichier de test.
 
-Dans l’extrait de code PowerShell suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la cmdlet dans ce chemin d’accès.
+Dans l’extrait de code PowerShell suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter l’cmdlet dans ce chemin d’accès.
 
 ```PowerShell
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-Si Antivirus Microsoft Defender signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://www.eicar.org/86-0-Intended-use.html)
+Si Antivirus Microsoft Defender un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://www.eicar.org/86-0-Intended-use.html)
 
 Vous pouvez également utiliser le code PowerShell suivant, qui appelle la classe WebClient .NET pour télécharger le fichier de test , comme avec l’cmdlet ; remplacer par un fichier conforme à la règle que vous validez `Invoke-WebRequest` `c:\test.txt` :
 

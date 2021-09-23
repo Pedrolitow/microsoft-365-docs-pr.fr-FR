@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5b1562a92302e404d10e5f309a702c09491aab80
-ms.sourcegitcommit: bf801ff8b45a68edb587f1661d06acd4121ecb49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: a725d1e239fb6b8d853c3f7f33814c62a77f6e8d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59407656"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490810"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurer et valider les connexions réseau à un antivirus Microsoft Defender
 
@@ -47,7 +48,7 @@ Le service Antivirus Microsoft Defender cloud fournit une protection rapide et f
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions entre celui-ci et vos points de terminaison. Étant donné que votre protection est un service cloud, les ordinateurs doivent avoir accès à Internet et accéder à Microsoft Defender pour Office 365 services d’apprentissage automatique. N’excluez pas l’URL `*.blob.core.windows.net` d’un type d’inspection réseau.
 
 > [!NOTE]
-> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l’utilisation de ressources distribuées et d’apprentissage automatique pour fournir une protection à vos points de terminaison à une vitesse beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles.
+> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l’utilisation de ressources distribuées et d’apprentissage automatique pour fournir une protection à vos points de terminaison à un taux beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles.
 
 ## <a name="services-and-urls"></a>Services et URL
 
@@ -65,7 +66,7 @@ Assurez-vous qu’il n’existe aucune règle de pare-feu ou de filtrage réseau
 |Stockage de soumission de programmes malveillants <p>Il s’agit de l’emplacement de téléchargement des fichiers envoyés à Microsoft via le formulaire de soumission ou l’envoi automatique d’exemples|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
 |Liste de révocation de certificats (CRL) <p>Cette liste est utilisée par les Windows lors de la création de la connexion SSL à MAPS pour la mise à jour de la liste de niveau de liste de remise|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
 |Magasin de symboles <p>Le magasin de symboles est utilisé par les Antivirus Microsoft Defender pour restaurer certains fichiers critiques pendant les flux de correction|`https://msdl.microsoft.com/download/symbols`|
-|Client de télémétrie universel <p> Ce client est utilisé par les Windows pour envoyer des données de diagnostic client <p> Antivirus Microsoft Defender télémétrie à des fins de surveillance de la qualité des produits|La mise à jour utilise SSL (port TCP 443) pour télécharger des manifestes et télécharger des données de diagnostic vers Microsoft qui utilise les points de terminaison DNS suivants : <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+|Client de télémétrie universel <p> Ce client est utilisé par les Windows pour envoyer des données de diagnostic client <p> Antivirus Microsoft Defender télémétrie à des fins de surveillance de la qualité des produits|La mise à jour utilise SSL (port TCP 443) pour télécharger des manifestes et charger des données de diagnostic vers Microsoft qui utilise les points de terminaison DNS suivants : <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Valider les connexions entre votre réseau et le cloud
 
@@ -103,11 +104,11 @@ Un message similaire se produit si vous utilisez Internet Explorer :
 
 :::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notification De Microsoft Defender AV que des programmes malveillants ont été détectés.":::
 
-Vous verrez également une  détection des menaces mises en quarantaine dans la **section** Historique des analyses de l’Sécurité Windows suivante :
+Vous verrez également une  détection des menaces mises en quarantaine dans la **section** Historique des analyses de l’application Sécurité Windows :
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant sécurité dans le menu **Démarrer.**
 
-2. Sélectionnez **Antivirus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
+2. Sélectionnez **Virus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
 
 3. Sous la section **Menaces en quarantaine,** **sélectionnez Consulter l’historique complet** pour voir les programmes malveillants factices détectés.
 
@@ -115,3 +116,8 @@ Vous verrez également une  détection des menaces mises en quarantaine dans la 
    > Les versions Windows 10 antérieures à la version 1703 ont une interface utilisateur différente. Voir [Antivirus Microsoft Defender dans l’application Sécurité Windows.](microsoft-defender-security-center-antivirus.md)
 
    Le Windows journal des événements affiche également [Windows Defender’ID d’événement client 1116](troubleshoot-microsoft-defender-antivirus.md).
+
+## <a name="see-also"></a>Voir aussi
+
+- [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md)
+- [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)

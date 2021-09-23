@@ -15,12 +15,13 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 37a95fedede173578f23b48286e846f95a495479
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 6cc38a571fb987273c382596b60cc613bafc9a1b
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222471"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491432"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -54,7 +55,7 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 
 ## <a name="windows-security-app"></a>Sécurité Windows application
 
-1. Ouvrez l Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher Defender dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows’application en sélectionnant l’icône de bouclier dans la barre des tâches. Vous pouvez également rechercher Defender dans le menu **Démarrer.**
 
 2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis sélectionnez Protection contre les **ransomware.**
 
@@ -62,7 +63,7 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 
 > [!NOTE]
 > Si l’accès contrôlé aux dossiers est configuré avec la stratégie de groupe, PowerShell ou les CSP MDM, l’état change dans l’application Sécurité Windows après un redémarrage de l’appareil.
-> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affiche l’état comme Étant **éteint.**
+> Si la fonctionnalité est définie sur **le mode Audit** avec l’un de ces outils, l’application Sécurité Windows affichera l’état comme Étant **éteint.**
 > Si vous protégez les données de profil utilisateur, nous vous recommandons de le faire sur le lecteur d’installation Windows par défaut.
 
 ## <a name="endpoint-manager"></a>Gestionnaire de points de terminaison
@@ -81,7 +82,7 @@ Pour plus d’informations sur la désactivation de la fusion de listes locales,
 
 7. Sélectionnez **la liste des applications qui ont accès aux dossiers** protégés et ajoutez les applications qui ont accès aux dossiers protégés.
 
-8. Sélectionnez **Exclure des fichiers et des** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
+8. Sélectionnez **Exclure les fichiers et les** chemins d’accès des règles de réduction de la surface d’attaque et ajoutez les fichiers et les chemins d’accès qui doivent être exclus des règles de réduction de la surface d’attaque.
 
 9. Sélectionnez les **affectations de profil,** affectez à tous les utilisateurs **& tous** les appareils, puis sélectionnez **Enregistrer**.
 
@@ -121,8 +122,8 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 4. Double-cliquez sur **le paramètre Configurer l’accès contrôlé aux** dossiers et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
    - **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers des dossiers protégés. Une notification sera fournie dans le journal Windows événements.
-   - **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers des dossiers protégés.
-   - **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pourrez évaluer l’impact sur votre organisation.
+   - **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers dans les dossiers protégés.
+   - **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pouvez évaluer l’impact sur votre organisation.
    - **Bloquer la modification du disque** uniquement : les tentatives d’écriture dans les secteurs de disque par des applications nontrues sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services de Microsoft Windows Windows Defender \> \> \> \> \> ID opérationnel 1123.
    - **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
 

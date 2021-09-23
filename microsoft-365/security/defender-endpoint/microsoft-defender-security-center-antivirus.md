@@ -15,12 +15,13 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d8bc077e12d52a5194b6e698a989704bdc273c52
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 23e89bd4aee02299e0710ff65fbe496fd8535b8f
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203891"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490116"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
@@ -45,7 +46,7 @@ L Sécurité Windows’application est une interface client Windows 10 version 1
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et les menaces dans l Sécurité Windows appl
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les virus et menaces dans Sécurité Windows application.":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les virus et menaces dans Sécurité Windows’application.":::
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
@@ -72,7 +73,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sélectionnez **les mises à jour & protection contre les virus contre les menaces.** La version actuellement installée s’affiche avec des informations sur le moment où elle a été téléchargée. Vous pouvez vérifier votre version actuelle par rapport à la dernière version disponible pour le téléchargement manuel ou consulter le journal des changements pour cette version. Consultez les mises à jour de l’intelligence [de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft.](https://www.microsoft.com/wdsi/defenderupdates)
+3. Sélectionnez **les mises à jour & protection contre les virus et menaces.** La version actuellement installée s’affiche avec des informations sur le moment où elle a été téléchargée. Vous pouvez vérifier votre version actuelle par rapport à la dernière version disponible pour le téléchargement manuel ou consulter le journal des changements pour cette version. Consultez les mises à jour de l’intelligence [de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft.](https://www.microsoft.com/wdsi/defenderupdates)
 
 4. Sélectionnez **Vérifier les mises à jour pour** télécharger les nouvelles mises à jour de la protection (le cas caser).
 

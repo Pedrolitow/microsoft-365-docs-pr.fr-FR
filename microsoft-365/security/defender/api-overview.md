@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2ca601c3c68df9f9f1cc4fb90bcfbe907850ce91
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef8a5e1b833bc1184132469f8c3b358e907974e4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204546"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491264"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Vue d’ensemble Microsoft 365 Defender API
 
@@ -42,18 +42,18 @@ Microsoft 365 Defender repose sur une plateforme prête à l’intégration.
 
 Utilisez les API Microsoft 365 Defender pour automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées.
 
-- **[File d’attente d’incidents combinés](api-incident.md)** : concentrez-vous sur ce qui est critique en groupant l’étendue d’attaque complète et toutes les ressources impactées sous l’API d’incident.
+- **[File d’attente d’incidents combinés](api-incident.md)** : concentrez-vous sur les éléments critiques en groupant l’étendue d’attaque complète et tous les biens touchés ensemble sous l’API d’incident.
 
-- Recherche de menaces entre produits : tirez parti des connaissances organisationnelles de votre équipe de sécurité pour chercher des signes de compromission, en créant vos propres requêtes personnalisées pour passer en **[arrière-plan](api-advanced-hunting.md)** les données brutes collectées sur plusieurs produits de protection.
+- Recherche de menaces entre produits : tirez parti des connaissances organisationnelles de votre équipe de sécurité pour chercher des signes de compromission, en créant vos propres requêtes personnalisées pour passer en **[arrière-plan](api-advanced-hunting.md)** les données brutes collectées dans plusieurs produits de protection.
 
-Utilisez [l’API de diffusion en](../defender-endpoint/raw-data-export.md) continu pour expédier des événements et des alertes en temps réel à partir d’instances telles qu’elles se produisent dans un flux de données unique.
+- **[API de diffusion en](streaming-api.md)** continu d’événements : expédiez des événements et des alertes en temps réel dans un flux de données unique au moment où ils se produisent.
 
 Parallèlement à ces MICROSOFT 365 DEFENDER spécifiques, chacun de nos [](api-articles.md) autres produits de sécurité expose des API supplémentaires pour vous aider à tirer parti de leurs fonctionnalités uniques.
 
 > [!NOTE]
 > La transition vers le portail unifié ne doit pas affecter les tableaux de bord PowerBi basés sur les API Microsoft Defender for Endpoint. Vous pouvez continuer à travailler avec les API existantes, quelle que soit la transition du portail interactif.
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 | **Comprendre comment accéder aux API** |
 |-|

@@ -1,6 +1,6 @@
 ---
-title: Configurer des substitutions locales pour les paramètres de l’Antivirus Microsoft Defender
-description: Activez ou désactivez les utilisateurs pour qu’ils ne modifient pas localement les paramètres dans l’Antivirus Microsoft Defender.
+title: Configurer des substitutions locales pour Antivirus Microsoft Defender paramètres
+description: Activez ou désactivez les utilisateurs pour qu’ils ne changent pas localement les paramètres dans Microsoft Defender AV.
 keywords: remplacement local, stratégie locale, stratégie de groupe, gpo, verrouillage, fusion, listes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 09/14/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 18260bd67d99aa372de7a14dab7decd3983d1beb
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 847b2085d6285299cea7f32f98c8c682dcb3fb4d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355883"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490152"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie
 
@@ -58,7 +59,7 @@ Pour configurer ces paramètres :
 
 <br/><br/>
 
-| Lieu | Paramètre | Article |
+| Emplacement | Paramètre | Article |
 |---|---|---|---|
 | MAPS |Configurer le remplacement de paramètre local pour la création de rapports à Microsoft MAPS|[Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | Quarantaine|Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine|[Configurer la correction pour les analyses](configure-remediation-microsoft-defender-antivirus.md) |
@@ -97,7 +98,7 @@ Vous pouvez désactiver ce paramètre pour vous assurer que seules les listes d�
 > [!NOTE]
 > Si vous désactivez la fusion de listes locales, elle remplacera les paramètres d’accès contrôlé aux dossiers. Elle remplace également les dossiers protégés ou les applications autorisées définies par l’administrateur local. Pour plus d’informations sur les paramètres d’accès contrôlé aux dossiers, voir Autoriser une application [bloquée dans Sécurité Windows](https://support.microsoft.com/help/4046851/windows-10-allow-blocked-app-windows-security).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)

@@ -16,12 +16,13 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: d0cda809878f06063663b18f03f052286070b08d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 3bb844437bde35e202b177aeba3439f50bf14766
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401709"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490128"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Configurer la correction pour la détection d’antivirus Microsoft Defender
 
@@ -34,7 +35,7 @@ Lorsque Antivirus Microsoft Defender exécute une analyse, il tente de corriger 
 
 Cet article explique comment configurer ces paramètres à l’aide de la stratégie de groupe, mais vous pouvez également utiliser Microsoft Endpoint Configuration Manager [et](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) [Microsoft Intune](/intune/device-restrictions-configure).
 
-Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/powershell/module/defender/set-mppreference) ou la [ `MSFT_MpPreference` classe WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) pour configurer ces paramètres.
+Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/powershell/module/defender/set-mppreference) ou [ `MSFT_MpPreference` la classe WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) pour configurer ces paramètres.
 
 ## <a name="configure-remediation-options"></a>Configurer les options de correction
 
@@ -66,7 +67,7 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 >
 > Pour éviter ce problème à l’avenir, vous pouvez exclure des fichiers des analyses. Voir [Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses.](configure-exclusions-microsoft-defender-antivirus.md)
 
-Voir également Configurer des analyses complètes Antivirus Microsoft Defender des [corrections requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour la correction.
+Consultez également Configurer des analyses complètes Antivirus Microsoft Defender de correction [requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour plus de paramètres liés à la correction.
 
 ## <a name="see-also"></a>Voir aussi
 

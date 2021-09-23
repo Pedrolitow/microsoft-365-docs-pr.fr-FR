@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 505270d319a78de20bf6fed01b7ca79c9fc2b400
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 48636954f3f9127d5c79047ad160cf5a0133efd5
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164868"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490942"
 ---
 # <a name="turn-on-definition-retirement"></a>Activer le retrait des définitions
 
@@ -35,15 +36,15 @@ Vous pouvez configurer le retrait des définitions à l’aide de la stratégie 
 
 ## <a name="use-group-policy-to-configure-definition-retirement"></a>Utiliser la stratégie de groupe pour configurer le retrait des définitions
 
-1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
 2. Go to **Computer Configuration**  >  **Administrative Templates** Windows  >  **Components**  >  **Antivirus Microsoft Defender** Network  >  **Inspection System**. 
 
-3. Sélectionnez **Activer le retrait de définition.** Par défaut, cette stratégie est activée. Si la définition **n’est pas configurée,** le retrait de définition est activé. 
+3. Sélectionnez **Activer le retrait de définition.** Par défaut, cette stratégie est activée. Si la configuration **n’est pas configurée,** le retrait de définition est activé. 
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
-5. Sélectionnez **Activé,** puis **OK**.
+5. Sélectionnez **Activé,** puis **OK.**
 
 6. Déployez votre objet de stratégie de groupe mis à jour. Voir [La Console de gestion des stratégies de groupe.](/windows/win32/srvnodes/group-policy)
 

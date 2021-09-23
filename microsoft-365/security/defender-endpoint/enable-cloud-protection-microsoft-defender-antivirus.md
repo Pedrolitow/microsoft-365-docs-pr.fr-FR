@@ -15,12 +15,13 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 4018adc6fcf19e072f8c82292d488a6bbfa344d4
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 36e773a2d0ff865703bd796492df81d2f1647372
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480795"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491528"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Antivirus Microsoft Defender
 
@@ -44,7 +45,7 @@ Vous pouvez également activer ou désactiver la protection cloud sur des points
 Pour plus d’informations sur les exigences de connectivité réseau spécifiques pour vous assurer que vos points de terminaison peuvent se connecter au service de protection cloud, voir Configurer et valider les [connexions réseau.](configure-network-connections-microsoft-defender-antivirus.md)
 
 > [!NOTE]
-> Dans Windows 10, il n’existe aucune  différence  entre les options de rapports de base et avancées décrites dans cette rubrique. Il s’agit d’une distinction héritée et le choix de l’un ou l’autre des paramètres entraîne le même niveau de protection cloud. Il n’existe aucune différence dans le type ou la quantité d’informations partagées. Pour plus d’informations sur ce que nous collectons, consultez la déclaration [de confidentialité de Microsoft.](https://go.microsoft.com/fwlink/?linkid=521839)
+> Dans Windows 10, il n’existe aucune  différence  entre les options de rapports de base et avancées décrites dans cette rubrique. Il s’agit d’une distinction héritée et le choix de l’un ou l’autre des paramètres entraîne le même niveau de protection cloud. Il n’existe aucune différence dans le type ou la quantité d’informations partagées. Pour plus d’informations sur ce que nous collectons, voir la déclaration [de confidentialité de Microsoft.](https://go.microsoft.com/fwlink/?linkid=521839)
 
 ## <a name="use-intune-to-turn-on-cloud-protection"></a>Utiliser Intune pour activer la protection cloud
 
@@ -73,7 +74,7 @@ Pour plus d’informations sur les profils d’appareil Intune, notamment sur la
 4. Sélectionnez **les propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
 5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
-   - **Élevé**: applique un niveau de détection élevé.
+   - **Élevé**: applique un niveau élevé de détection.
    - **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut avoir un impact sur les performances du client).
    - **Tolérance zéro :** bloque tous les exécutables inconnus.
 
@@ -130,14 +131,14 @@ SubmitSamplesConsent
 
 Pour plus d’informations sur les paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’application Sécurité Windows cloud
+## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’Sécurité Windows client
 
 > [!NOTE]
-> Si le paramètre Configurer le remplacement de paramètre local pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé,** le paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
+> Si le paramètre Configurer le paramètre local de remplacement pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé,** le paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
 
 1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
-2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis l’étiquette des **paramètres** de protection contre & virus :
+2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis l’étiquette **paramètres** de protection contre & virus :
 
     :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Capture d’écran des paramètres de protection contre & virus":::
 

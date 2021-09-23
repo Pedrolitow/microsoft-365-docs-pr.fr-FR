@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04a3831ec923ec24846eb6d0e76273d1010862c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3fcd6cb3eb6aee387fd1e4943c837f855abc5f34
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204437"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483662"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -38,7 +38,7 @@ ms.locfileid: "59204437"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans EOP](quarantine-email-messages.md).
 
-En tant que destinataire d'un message en quarantaine, ce que vous pouvez faire au message en tant qu'utilisateur ordinaire (pas en tant qu'administrateur) est décrit dans le tableau suivant :
+En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités **par défaut** à votre disposition en tant que destinataire d’un message mis en quarantaine sont décrites dans le tableau suivant :
 
 <br>
 
@@ -46,12 +46,29 @@ En tant que destinataire d'un message en quarantaine, ce que vous pouvez faire a
 
 |Raison de la mise en quarantaine :|Afficher|Débloquer|Supprimer|
 |---|:---:|:---:|:---:|
-|En nombre|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Hameçonnage (à confiance peu élevée)|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|**Stratégies anti-courrier indésirable**||||
+|En nombre|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Courrier indésirable|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Courrier fortement suspecté d’être indésirable|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Hameçonnage|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Hameçonnage à haute fiabilité||||
+|**Stratégies anti-hameçonnage**||||
+|Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|**Stratégies anti-programme malveillant**||||
+|Messages électroniques avec pièces jointes mis en quarantaine en tant que programmes malveillants.||||
+|**Pièces jointes sécurisées dans Defender pour Office 365**||||
+|Stratégies de pièces jointes fiables qui met en quarantaine les messages électroniques avec des pièces jointes malveillantes en tant que programmes malveillants.||||
+|Pièces jointes fiables pour SharePoint, OneDrive et Microsoft Teams qui mettent en quarantaine les fichiers malveillants en tant que programmes malveillants.||||
+|**Règles de flux de messagerie (règles de transport)**||||
+|Règles de flux de messagerie qui met en quarantaine les messages électroniques.||||
 |
 
-Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail Microsoft 365 Defender ou (si un administrateur a utilisé cette configuration) dans les [notifications de courrier indésirable de l’utilisateur final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+_Les stratégies de mise en quarantaine_ définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine dans les [fonctionnalités prises en charge](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Les stratégies de mise en quarantaine par défaut appliquent les fonctionnalités historiques comme décrit dans le tableau précédent. Les administrateurs peuvent créer et appliquer des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs dans les fonctionnalités prises en charge. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+
+Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail Microsoft 365 Defender ou (si un administrateur a utilisé cette configuration) dans les notifications de mise en quarantaine dans les stratégies de mise en quarantaine.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -59,13 +76,12 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail M
 
 - Les administrateurs peuvent configurer la durée pendant laquelle les messages sont conservés dans la quarantaine avant d’être définitivement supprimés dans les stratégies anti-courrier indésirable. Les messages dont la mise en quarantaine est arrivée à expiration ne peuvent pas être récupérés. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-- Les administrateurs peuvent également [activer les notifications de courrier indésirable pour l’utilisateur final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) dans les stratégies anti-courrier indésirable. Les destinataires du message original peuvent *libérer* les messages de spam mis en quarantaine directement à partir de ces notifications. Les destinataires du message original peuvent *réviser* les messages de phishing mis en quarantaine (pas les messages de phishing à haut niveau de confiance) directement à partir de ces notifications. Si vous souhaitez en savoir plus, veuillez consulter l’article [Notifications de courrier indésirable pour l’utilisateur final dans EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Par défaut, les messages mis en quarantaine car considérés comme de l’hameçonnage à haute fiabilité, des programmes malveillants ou par règles de flux de messagerie ne sont disponibles que pour les administrateurs. Ils sont en revanche invisibles pour les utilisateurs. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 
-- Les messages mis en quarantaine car considérés comme de l’hameçonnage, des programmes malveillants ou par règles de flux de messagerie (également appelés règles de transport) ne sont disponibles que pour les administrateurs. Ils sont en revanche invisibles pour les utilisateurs. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
+## <a name="view-your-quarantined-messages"></a>Afficher les messages mis en quarantaine
 
-- Vous ne pouvez déplacer un message et le signaler comme faux positif (légitime) qu'une seule fois.
-
-## <a name="view-your-quarantined-messages"></a>Afficher les messages en quarantaine
+> [!NOTE]
+> Votre capacité à afficher les messages mis en quarantaine est contrôlée par la [stratégie de mise en quarantaine](quarantine-policies.md) qui s’applique au type de message mis en quarantaine (qui peut être la [stratégie de mise en quarantaine par défaut pour la raison de mise en quarantaine](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
 
 1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Évaluation** \> **Quarantaine**.
 2. Sur la page Web **Quarantaine**, vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Personnaliser les colonnes** pour modifier les colonnes qui s'affichent. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
@@ -138,7 +154,7 @@ Lorsque vous sélectionnez un message électronique dans la liste, les détails 
 - **Adresse de l’expéditeur**
 - **Reçu** : Date et heure de réception du message.
 - **Subject**
-- **Raison de mise en quarantaine** : indique si un message a été identifié comme **courrier indésirable**, **courrier en nombre** ou **hameçonnage**.
+- **Raison de la mise en quarantaine**
 - **Type de politique** : Le type de politique. Par exemple, **la politique anti-spam**.
 - **Nombre de destinataires**
 - **Destinataires** : si le message contient plusieurs destinataires, vous devez cliquer sur **Prévisualiser le message** ou **Afficher l’en-tête du message** pour afficher la liste complète des destinataires.
@@ -152,6 +168,9 @@ Pour donner suite au message, consultez la section suivante.
 > ![Les flèches vers le haut et les flèches vers le bas des détails du menu flottant d'un message en quarantaine.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
+
+> [!NOTE]
+> Votre capacité à prendre des mesures sur les messages mis en quarantaine est contrôlée par la [stratégie de mise en quarantaine](quarantine-policies.md) qui s’applique au type de message mis en quarantaine (qui peut être la [stratégie de mise en quarantaine par défaut pour la raison de mise en quarantaine](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). Cette section décrit toutes les actions disponibles.
 
 Après avoir sélectionné un message en quarantaine dans la liste, les actions suivantes sont disponibles dans le flyout des détails :
 

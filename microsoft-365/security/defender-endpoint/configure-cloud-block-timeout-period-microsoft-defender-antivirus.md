@@ -16,12 +16,13 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
-ms.openlocfilehash: 85313f279a46dbb278dbdb0014d44124a147394d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 87b8325473762e0578f35fef355eb8344bb5635f
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183376"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490858"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurer le délai de blocage du cloud
 
@@ -59,7 +60,7 @@ Vous pouvez utiliser la stratégie de groupe pour spécifier un délai d’accè
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
 3. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
 

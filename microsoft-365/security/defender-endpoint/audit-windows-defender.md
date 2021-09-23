@@ -15,13 +15,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.topic: article
 ms.technology: mde
-ms.date: 06/02/2021
-ms.openlocfilehash: f6a86aff84eda3f9f0145e47387b4353555a3a40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/22/2021
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 746d3ecca3d61634cd11cc7df87d677c4667ad8d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209852"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491026"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Tester la réduction de la surface d’attaque dans Microsoft Defender pour le point de terminaison
 
@@ -41,9 +42,9 @@ Dans le cadre de l’équipe de sécurité de votre organisation, vous pouvez co
 
 Le mode audit vous permet  d’enregistrer ce qui se serait passé si vous aviez activé la fonctionnalité.
 
-Vous pouvez activer le mode audit lors du test du fonctionnement des fonctionnalités. Cela vous permettra de vous assurer que vos applications métier ne sont pas affectées. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent sur une période donnée.
+Vous pouvez activer le mode audit lors du test du fonctionnement des fonctionnalités. Cela vous permettra de vous assurer que vos applications métier ne sont pas affectées. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent sur une certaine période de temps.
 
-Les fonctionnalités ne bloquent pas ou empêchent la modification des applications, des scripts ou des fichiers. Toutefois, le Windows journal des événements enregistre les événements comme si les fonctionnalités étaient entièrement activées. Avec le mode audit, vous pouvez consulter le journal des événements pour voir l’impact que la fonctionnalité aurait eu si elle avait été activée.
+Les fonctionnalités ne bloquent pas ou n’empêchent pas les applications, les scripts ou les fichiers d’être modifiés. Toutefois, le Windows journal des événements enregistre les événements comme si les fonctionnalités étaient entièrement activées. Avec le mode audit, vous pouvez consulter le journal des événements pour voir l’impact que la fonctionnalité aurait eu si elle avait été activée.
 
 Pour rechercher les entrées auditées, allez à **Applications et services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Opérationnel**.
 
@@ -52,7 +53,7 @@ Utilisez Defender pour point de terminaison pour obtenir plus de détails pour c
 Vous pouvez activer le mode audit à l’aide de la stratégie de groupe, de PowerShell et des fournisseurs de services de configuration (CSP).
 
 > [!TIP]
-> Vous pouvez également consulter le site web Windows Defender Testground sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités fonctionnent et voir comment elles fonctionnent.
+> Vous pouvez également visiter le site Windows Defender Testground sur [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les fonctionnalités fonctionnent et voir comment elles fonctionnent.
 
 |Options d’audit|Comment activer le mode audit|Comment afficher les événements|
 |---|---|---|

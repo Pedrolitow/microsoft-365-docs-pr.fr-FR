@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel contrôlé par l’homme, rançongiciel contrôlé par l’homme, HumOR, attaque par attaque par attaque de rançongiciel, chiffrement, cryptovirologie
 description: Protection pas à pas de vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: e7adafd8c60e55c7bb1acc60afcd4ca5cadedb85
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 0e5238c4e675dbbec796a19ecbb2c8354f259c42
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444569"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483614"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Déployer la protection contre les rançongiciels pour votre client Microsoft 365
 
@@ -82,7 +82,7 @@ Les fichiers SharePoint et OneDrive Entreprise sont protégés par :
 
    Solution de récupération en libre-service complète pour SharePoint et OneDrive qui permet aux administrateurs et aux utilisateurs finaux de restaurer des fichiers à partir de n’importe quel moment au cours des 30 derniers jours.
 
-   Pour réduire la charge sur votre sécurité et le personnel du service technique, formez vos utilisateurs sur la [rétention pour SharePoint et OneDrive](/microsoft-365/compliance/retention-policies-sharepoint).
+   Pour réduire la charge sur votre sécurité et le personnel du service informatique, formez vos utilisateurs sur la [Restauration de fichiers](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436).
 
 
 Pour OneDrive fichiers SharePoint, Microsoft peut revenir à un point précédent dans le temps jusqu’à 14 jours si vous êtes atteint par une attaque de masse.

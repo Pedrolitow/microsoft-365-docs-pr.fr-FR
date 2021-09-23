@@ -12,16 +12,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/06/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a847e65adb0402d4c5f98e19424677ccdc1011da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 84b739256ffe1bae3e663cb6be9fe1ec5471be7d
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209144"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491192"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Déployer et activer l’antivirus Microsoft Defender
 
@@ -34,9 +34,9 @@ ms.locfileid: "59209144"
 
 En fonction de l’outil de gestion que vous utilisez, vous devrez peut-être activer ou configurer spécifiquement Antivirus Microsoft Defender protection. 
 
-Consultez le tableau dans [Déployer,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) gérer et signaler Antivirus Microsoft Defender pour obtenir des instructions sur la façon d’activer la protection avec Microsoft Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe, Active Directory, Microsoft Azure, cmdlets PowerShell et Windows Management Instruction (WMI).
+Consultez le tableau dans [Déployer,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) gérer et signaler Antivirus Microsoft Defender pour obtenir des instructions sur la façon d’activer la protection avec Microsoft Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe, Active Directory, Microsoft Azure, cmdlets PowerShell et WMI (Windows Management Instruction).
 
-Certains scénarios nécessitent davantage d’instructions sur la façon de déployer ou de configurer Antivirus Microsoft Defender protection, telles que les environnements VDI (Virtual Desktop Infrastructure).
+Certains scénarios nécessitent plus d’instructions sur la façon de déployer ou de configurer Antivirus Microsoft Defender protection, telles que les environnements VDI (Virtual Desktop Infrastructure).
 
 L’article restant de cette section fournit des conseils de bout en bout et des meilleures pratiques pour la configuration de Antivirus Microsoft Defender sur des [machines virtuelles (VM)](deployment-vdi-microsoft-defender-antivirus.md)dans un environnement VDI ou RDS (Remote Desktop Services).
 

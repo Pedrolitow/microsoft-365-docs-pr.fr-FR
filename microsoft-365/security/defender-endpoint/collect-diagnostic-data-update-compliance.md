@@ -16,14 +16,15 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 273dc08dd3778451f14f9c78c984be8affc2d8fd
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 7d7c795bdcb8c6d4378cc2a4b13c2671c2d767c6
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58510012"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490774"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter des données de diagnostic de conformité de mise à jour pour Antivirus Microsoft Defender évaluation
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter des données de diagnostic de conformité des mises à jour pour l Antivirus Microsoft Defender évaluation
 
 
 **S’applique à :**
@@ -34,13 +35,13 @@ Cet article explique comment collecter des données de diagnostic qui peuvent ê
 
 Avant d’essayer ce processus, assurez-vous que vous avez lu résolution des problèmes Antivirus Microsoft Defender [rapports,](troubleshoot-reporting.md)satisfait à toutes les conditions préalables requises et pris les autres suggestions de procédures de dépannage.
 
-Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans Update Compliance, obtenez le fichier de diagnostic .cab en suivant les étapes suivantes :
+Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans Update Compliance, obtenez le fichier de diagnostic .cab en suivant les étapes ci-après :
 
 1. Ouvrez une version de niveau administrateur de l’invite de commandes comme suit :
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit **sur l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
 
     c. Spécifiez les informations d’identification de l’administrateur ou approuvez l’invite.
 

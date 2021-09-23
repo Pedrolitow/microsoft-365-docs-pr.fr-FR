@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf043741e2d066c8eaa7c4919b194a6ffd6d857d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5dde826fcf5ecfd5e1c18c9efefd6c456ba6ecab
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209119"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491492"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Déployer Microsoft Defender pour le point de terminaison sur iOS
 
@@ -35,7 +35,7 @@ ms.locfileid: "59209119"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cette rubrique décrit le déploiement de Defender pour Endpoint sur iOS sur Portail d'entreprise Intune des appareils inscrits. Pour plus d’informations sur l’inscription d’appareils Intune, voir Inscrire des appareils [iOS/iPadOS dans Intune.](/mem/intune/enrollment/ios-enroll)
+Cette rubrique décrit le déploiement de Defender pour Endpoint sur iOS Portail d'entreprise Intune appareils inscrits. Pour plus d’informations sur l’inscription d’appareils Intune, voir Inscrire des appareils [iOS/iPadOS dans Intune.](/mem/intune/enrollment/ios-enroll)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -48,11 +48,11 @@ Cette rubrique décrit le déploiement de Defender pour Endpoint sur iOS sur Por
 
 ## <a name="deployment-steps"></a>Étapes de déploiement
 
-Déployez Defender pour le point de terminaison sur iOS via Portail d'entreprise Intune.
+Déployez Defender pour endpoint sur iOS via Portail d'entreprise Intune.
 
 ### <a name="add-ios-store-app"></a>Ajouter une application du Store iOS
 
-1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez sur **Applications**  ->  **iOS/iPadOS** Ajouter une application de la Boutique  ->    ->  **d’applications iOS,** puis cliquez sur **Sélectionner.**
+1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à **Apps**  ->  **iOS/iPadOS** Ajouter une application de magasin  ->    ->  **iOS,** puis cliquez sur **Sélectionner.**
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager Centre d’administration 1.](images/ios-deploy-1.png)
@@ -78,7 +78,7 @@ Déployez Defender pour le point de terminaison sur iOS via Portail d'entreprise
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Intégration automatique du profil VPN (intégration simplifiée)
 
-Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
+Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection Web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 
 1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   ->  **Profils de configuration des**  ->  **appareils.**
 1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Cliquez sur **Créer**.
@@ -152,17 +152,6 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
    Cliquez sur **Suivant**.
 
 1. On the **Review + create** page, when you’re done, choose **Create**. Le nouveau profil s’affiche dans la liste des profils de configuration.
-
-1. Ensuite, pour les fonctionnalités anti-hameçonnage améliorées, vous pouvez déployer un profil personnalisé sur les appareils iOS supervisés. Suivez les étapes ci-dessous :
-    - Télécharger le profil de config à partir de [https://aka.ms/mdatpiossupervisedprofile](https://aka.ms/mdatpiossupervisedprofile)
-    - Accéder aux **profils**  ->  **de configuration iOS/iPadOS** Des appareils  ->    ->  **créent un profil**
-
-    > [!div class="mx-imgBorder"]
-    > ![Image de Microsoft Endpoint Manager Centre d’administration 7.](images/ios-deploy-7.png)
-
-    - Fournissez le nom du profil. Lorsque vous y invitez l’importation d’un fichier de profil de configuration, sélectionnez celui téléchargé ci-dessus.
-    - Dans la section **Affectation,** sélectionnez le groupe d’appareils auquel vous souhaitez appliquer ce profil. Il est préférable de l’appliquer à tous les appareils iOS gérés. Cliquez sur **Suivant**.
-    - On the **Review + create** page, when you’re done, choose **Create**. Le nouveau profil s’affiche dans la liste des profils de configuration.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

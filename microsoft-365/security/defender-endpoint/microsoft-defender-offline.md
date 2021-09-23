@@ -15,12 +15,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a2479b79ce1a0b845c70148a9510681de37dbae5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 1465d733f60844b49add49a878775e00695c3bdb
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163708"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491134"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
@@ -59,7 +60,7 @@ Microsoft Defender hors ligne utilise les mises à jour de protection les plus r
 > [!NOTE]
 > Avant d’exécution d’une analyse hors connexion, vous devez essayer de mettre à jour la protection de l’Antivirus Microsoft Defender. Vous pouvez forcer une mise à jour à l’aide de la stratégie de groupe ou toutefois déployer normalement des mises à jour sur les points de terminaison, ou vous pouvez télécharger et installer manuellement les dernières mises à jour de la protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-Consultez la [rubrique Gérer Antivirus Microsoft Defender mises à](manage-protection-updates-microsoft-defender-antivirus.md) jour de l’intelligence de la sécurité pour plus d’informations.
+Pour plus [d’informations, consultez](manage-protection-updates-microsoft-defender-antivirus.md) la rubrique Gérer Antivirus Microsoft Defender d’informations sur la sécurité.
 
 ## <a name="usage-scenarios"></a>Scénarios d'utilisation
 
@@ -83,7 +84,7 @@ Microsoft Defender hors ligne analyses sont indiquées sous  l’état de correc
 
 Microsoft Defender hors ligne notifications sont configurées dans le même paramètre de stratégie que les autres notifications de Microsoft Defender AV.
 
-Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les notifications qui apparaissent [sur les points de terminaison.](configure-notifications-microsoft-defender-antivirus.md)
+Pour plus d’informations sur les notifications Windows Defender, consultez la rubrique Configurer les [notifications](configure-notifications-microsoft-defender-antivirus.md) qui apparaissent sur les points de terminaison.
 
 ## <a name="run-a-scan"></a>Effectuer une analyse
 
@@ -106,7 +107,7 @@ Utilisez les cmdlets suivantes :
 Start-MpWDOScan
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Utiliser Windows Management Instruction (WMI) pour exécuter une analyse hors connexion
 
@@ -126,7 +127,7 @@ Pour plus d’informations, voir les informations suivantes :
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
-2. Cliquez sur la **vignette & protection** antivirus contre les menaces (ou sur l’icône de bouclier dans la barre de menus de gauche), puis sur l’étiquette **d’analyse** avancée :
+2. Cliquez sur la **vignette & protection** contre les virus contre les menaces (ou sur l’icône de bouclier dans la barre de menus de gauche), puis sur l’étiquette **d’analyse** avancée :
 
 3. Sélectionnez **Microsoft Defender hors ligne scan,** puis cliquez **sur Analyser maintenant.**
 
@@ -135,7 +136,7 @@ Pour plus d’informations, voir les informations suivantes :
 
 ## <a name="review-scan-results"></a>Passer en revue les résultats de l’analyse
 
-Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la section Historique d’analyse [de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
+Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la section Historique [d’analyse de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

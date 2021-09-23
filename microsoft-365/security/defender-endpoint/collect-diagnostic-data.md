@@ -1,6 +1,6 @@
 ---
 title: Collecter des données de diagnostic de Antivirus Microsoft Defender
-description: Utilisez un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
+description: Utiliser un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
 keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, rapport, Microsoft Defender av, objet de stratégie de groupe, paramètre, données de diagnostic
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,13 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a7f85d20dfa59fbe21f811d8bef30a6c21a69125
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 3edaf6f63e2d5f2ab312bc61591e95c91a58e4c0
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209714"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491074"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Collecter les données de diagnostic de l’Antivirus Microsoft Defender
 
@@ -43,7 +44,7 @@ Sur au moins deux appareils qui rencontrent le même problème, obtenez le fichi
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit **sur l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
 
     c. Spécifiez les informations d’identification de l’administrateur ou approuvez l’invite.
 

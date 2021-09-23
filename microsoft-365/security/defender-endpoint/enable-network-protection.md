@@ -14,12 +14,13 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e0056f4f1517962bab3dbee4f993ce28c58dfcf9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: dc10c8ee9147cbee0a2946eaf28d91f80743f4f5
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222470"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489610"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
@@ -127,7 +128,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
+1. Sélectionnez **Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre.**
 
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 

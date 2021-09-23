@@ -13,24 +13,24 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4ce4681ff5008cc3209789139bacd8441a7f724f
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: bf167feb138be131ac565817767da2d1b1dd5be7
+  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59183143"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "59491420"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: Qu’est-ce que Microsoft 365 Defender ?
+    - text: Qu’est-ce que Microsoft 365 Defender ?
       url: microsoft-365-defender.md
     - text: Vue d’ensemble Microsoft 365 Defender
       url: overview-security-center.md
   - linkListType: whats-new
     links:
-    - text: Nouveautés de la Microsoft 365 Defender
+    - text: Nouveautés de Microsoft 365 Defender
       url: ../defender/whats-new.md
   - linkListType: video
     links:
@@ -76,7 +76,7 @@ landingContent:
       url: microsoft-365-security-center-mdo.md
     - text: Redirection de Defender pour Office 365 dans Microsoft 365 Defender
       url: microsoft-365-security-mdo-redirection.md
-- title: Microsoft Defender pour point de terminaison
+- title: Microsoft Defender pour point de terminaison
   linkLists:
   - linkListType: overview
     links:
@@ -98,7 +98,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Enquêter sur des incidents
+    - text: Examiner des incidents
       url: investigate-incidents.md
     - text: Suivre et répondre aux menaces émergentes
       url: threat-analytics.md
@@ -110,5 +110,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Microsoft 365 Defender API (aperçu)
+    - text: Microsoft 365 Defender API
       url: api-overview.md

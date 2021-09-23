@@ -16,12 +16,13 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 44c3b0a208c8c870343fc551728f105d4f380de4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 3edca602d9e49d8ddc67da0e740c862364b0d6b4
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183359"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491348"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
@@ -32,7 +33,7 @@ ms.locfileid: "59183359"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Antivirus Microsoft Defender vous permet de déterminer si des mises à jour doivent (ou ne doivent pas) se produire après certains événements, par exemple au démarrage ou après la réception de rapports spécifiques du service de protection cloud.
+Antivirus Microsoft Defender vous permet de déterminer si des mises à jour doivent (ou ne doivent pas) se produire après certains événements, par exemple au démarrage ou après la réception de rapports spécifiques du service de protection livré par le cloud.
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>Vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
@@ -154,7 +155,7 @@ Si vous avez activé la protection cloud, l’Antivirus Microsoft Defender envoi
 
 5. Double-cliquez sur Autoriser les mises à jour d’informations de sécurité en temps réel **basées** sur les rapports de Microsoft MAPS et définissez l’option **sur Activé.** Cliquez ensuite sur **OK**.
 
-6. **Autoriser les notifications pour désactiver les rapports** basés sur des définitions pour Microsoft MAPS et définir l’option sur **Activé**. Cliquez ensuite sur **OK**.
+6. **Autoriser les notifications à désactiver les rapports** basés sur des définitions pour Microsoft MAPS et définir l’option sur **Activé**. Cliquez ensuite sur **OK**.
 
 > [!NOTE]
 > **Autoriser les notifications à désactiver les** rapports basés sur des définitions permet à Microsoft MAPS de désactiver ces définitions connues pour provoquer des rapports faux positifs. Vous devez configurer votre ordinateur pour qu’il rejoigne Microsoft MAPS pour que cette fonction fonctionne.
@@ -164,6 +165,6 @@ Si vous avez activé la protection cloud, l’Antivirus Microsoft Defender envoi
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -16,12 +16,13 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
-ms.openlocfilehash: 8d88a3f84819e22d4e8c5e5d0b01e1169a5fb3df
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: m365-security-compliance
+ms.openlocfilehash: e8443439b85c6038d2d4a50c369cc02faaf8a3c7
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356350"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491300"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -33,7 +34,7 @@ ms.locfileid: "59356350"
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Les règles de réduction de la surface d’attaque](attack-surface-reduction.md) (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
+[Les règles de réduction de la surface](attack-surface-reduction.md) d’attaque (règles de réduction de la surface d’attaque) permettent d’éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -44,7 +45,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Pour utiliser l’ensemble des fonctionnalités des règles de réduction de la surface d’attaque, vous devez :
 
@@ -52,7 +53,7 @@ Pour utiliser l’ensemble des fonctionnalités des règles de réduction de la 
 - [Protection de la distribution cloud](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) sur (certaines règles l’exigent)
 - Windows 10 Entreprise Licence E5 ou E3 ou licence Microsoft 365 entreprise
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender pour Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender for Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
 
 Chaque règle asr contient l’un des quatre paramètres ci-après :
 
@@ -64,7 +65,7 @@ Chaque règle asr contient l’un des quatre paramètres ci-après :
 > [!IMPORTANT]
 > Actuellement, le mode avertissement n’est pas pris en charge pour trois règles de récupération automatique lorsque vous configurez des règles asr dans Microsoft Endpoint Manager (MEM). Pour en savoir plus, consultez [les cas où le mode d’avertissement n’est pas pris en charge.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Il est vivement recommandé d’utiliser des règles asr avec une licence Windows E5 (ou une référence de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender pour endpoint](microsoft-defender-endpoint.md) (Defender pour endpoint). Toutefois, si vous avez une autre licence, telle que Windows Professional ou Windows E3, qui n’inclut pas de fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la asr sont déclenchées (par exemple, le forwarding d’événement).
+Il est vivement recommandé d’utiliser des règles asr avec une licence Windows E5 (ou une référence SKU de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). Toutefois, si vous avez une autre licence, telle que Windows Professional ou Windows E3, qui n’inclut pas de fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la asr sont déclenchées (par exemple, le forwarding d’événement).
 
 > [!TIP]
 > Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [Licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -101,7 +102,7 @@ Les procédures suivantes pour l’activation des règles de la asr. contiennent
 
 2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez Réduction **de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
 
-3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
+3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles de la asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
@@ -126,12 +127,12 @@ Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer de
    > [!div class="mx-imgBorder"]
    > ![Attributs de profil de règle MEM.](images/mem02-profile-attributes.png)
 
-3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Éléments de base.** Dans **1 Informations de** base, dans **Nom,** tapez un nom pour votre modèle, et dans **Description,** vous pouvez taper une description (facultative).
+3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Éléments de base.** In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
 
    > [!div class="mx-imgBorder"]
    > ![Attributs de base MEM.](images/mem03-1-basics.png)
 
-4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour les Paramètres OMA-URI, cliquez sur **Ajouter.** Deux options s’affichent maintenant : **Ajouter** et **exporter.**
+4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour l’OMA-URI Paramètres, cliquez sur **Ajouter.** Deux options s’affichent maintenant : **Ajouter** et **exporter.**
 
    > [!div class="mx-imgBorder"]
    > ![Paramètres de configuration MEM.](images/mem04-2-configuration-settings.png)
@@ -269,7 +270,7 @@ Exemple :
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
     ```
 
-    Pour activer les règles asr en mode audit, utilisez la cmdlet suivante :
+    Pour activer les règles asr en mode audit, utilisez l’cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
@@ -287,7 +288,7 @@ Exemple :
    Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled
    ```
 
-    Pour désactiver les règles de la asr, utilisez la cmdlet suivante :
+    Pour désactiver les règles de asr, utilisez l’cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled

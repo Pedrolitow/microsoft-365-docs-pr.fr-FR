@@ -16,12 +16,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 9ee1417d071700b1cece8da6d3d1815e1ff8ff9d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 2e4d09e0e98eac9d6af5e72c2576b675c53c430e
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204731"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489600"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Gérer les mises à jour de l'antivirus Microsoft Defender et les analyses des points de terminaison qui ne sont pas à jour
 
@@ -65,11 +66,11 @@ Si Antivirus Microsoft Defender n’a pas téléchargé les mises à jour de pro
 
 4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > mises à jour des signatures.**
 
-5. Double-cliquez sur **définir** le nombre de jours après lequel une mise à jour de l’intelligence de sécurité de rattrapage est requise et définissez l’option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que Microsoft Defender AV vérifie et télécharge la dernière mise à jour de la protection.
+5. Double-cliquez sur **le** paramètre Définir le nombre de jours après lequel une mise à jour de l’intelligence de sécurité de rattrapage est requise et définissez l’option **sur Activé.** Entrez le nombre de jours après lesquels vous souhaitez que Microsoft Defender AV vérifie et télécharge la dernière mise à jour de la protection.
 
 6. Cliquez sur **OK**.
 
-### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>Utiliser les cmdlets PowerShell pour configurer des mises à jour de protection de rattrapage
+### <a name="use-powershell-cmdlets-to-configure-catch-up-protection-updates"></a>Utiliser les cmdlets PowerShell pour configurer les mises à jour de la protection de rattrapage
 
 Utilisez les cmdlets suivantes :
 
@@ -77,7 +78,7 @@ Utilisez les cmdlets suivantes :
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Utiliser Windows Management Instruction (WMI) pour configurer des mises à jour de protection de rattrapage
 
@@ -95,7 +96,7 @@ Pour plus d’informations et les paramètres autorisés, voir les informations 
 
 Vous pouvez également spécifier le nombre de jours après lesquels la protection Antivirus Microsoft Defender est considérée comme ancienne ou non à jour. Après le nombre de jours spécifié, le client se signale comme étant hors date et affiche une erreur à l’utilisateur du PC. Cela peut également entraîner une tentative de Antivirus Microsoft Defender de télécharger une mise à jour à partir d’autres sources (en fonction de l’ordre de [source](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)de base défini), par exemple lors de l’utilisation de MMPC comme source secondaire après avoir défini WSUS ou Microsoft Update comme première source.
 
-### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Utiliser la stratégie de groupe pour spécifier le nombre de jours avant que la protection ne soit considérée comme non à jour
+### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Utiliser une stratégie de groupe pour spécifier le nombre de jours avant que la protection ne soit considérée comme non à jour
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
@@ -119,7 +120,7 @@ Vous pouvez définir le nombre d’analyses programmées consécutives qui peuve
 
 Le processus d’activation de cette fonctionnalité est :
 
-1. Configurer au moins une analyse programmée (voir la rubrique Planification [des analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+1. Configurer au moins une analyse programmée (voir la rubrique Planifier [les analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 2. Activez la fonctionnalité d’analyse de rattrapage.
 3. Définissez le nombre d’analyses qui peuvent être ignorées avant qu’une analyse de rattrapage ne se produise.
 
@@ -138,7 +139,7 @@ Cette fonctionnalité peut être activée pour les analyses complètes et rapide
 5. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > scan et** configurez les paramètres suivants :
 
     1. Si vous avez installé des analyses rapides programmées, **double-cliquez** sur le paramètre Activer l’analyse rapide de rattrapage et définissez l’option **sur Activé.**
-    2. Si vous avez installé des analyses complètes programmées, **double-cliquez** sur le paramètre Activer l’analyse complète de rattrapage et définissez l’option **sur Activé.** Cliquez sur **OK**.
+    2. Si vous avez installé des analyses complètes  programmées, double-cliquez sur le paramètre Activer l’analyse complète de rattrapage et définissez l’option **sur Activé.** Cliquez sur **OK**.
     3. Double-cliquez sur **Définir le nombre** de jours après lequel une analyse de rattrapage est forcée et définissez l’option sur **Activé.**
     4. Entrez le nombre d’analyses qui peuvent être manquées avant qu’une analyse soit automatiquement exécuté lorsque l’utilisateur se connecte ensuite au PC. Le type d’analyse qui est exécuté est déterminé par la spécification du **type** d’analyse à utiliser pour une analyse programmée (voir la rubrique Planification [des analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md) Cliquez sur **OK**.
 

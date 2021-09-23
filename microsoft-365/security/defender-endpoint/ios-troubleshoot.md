@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d2e0fc1ffeccfd189b95fbd5908a959e4a823a8
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: c7ee6f1debaf697c49e292068ba88c436714addf
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460164"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491122"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Résoudre les problèmes et trouver des réponses aux questions fréquentes sur Microsoft Defender pour point de terminaison sur iOS
 
@@ -44,7 +44,7 @@ Cette rubrique fournit des informations de dépannage pour vous aider à résoud
 ## <a name="apps-dont-work-when-vpn-is-turned-on"></a>Les applications ne fonctionnent pas lorsque le VPN est allumé
 Certaines applications cessent de fonctionner lorsqu’un VPN actif est détecté. Vous pouvez désactiver le VPN pendant la durée d’utilisation de ces applications. 
 
-Par défaut, Defender pour le point de terminaison sur iOS inclut et active la fonctionnalité de protection web. [La protection web permet](web-protection-overview.md) de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison sur iOS utilise un VPN pour fournir cette protection. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé en dehors de l’appareil.
+Par défaut, Defender pour le point de terminaison sur iOS inclut et active la fonctionnalité de protection web. [La protection web permet](web-protection-overview.md) de sécuriser les appareils contre les menaces web et de protéger les utilisateurs contre les attaques par hameçonnage. Defender pour le point de terminaison sur iOS utilise un VPN pour fournir cette protection. Notez qu’il s’agit d’un VPN local et, contrairement au VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
 
 Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certains cas dans l’obligation de désactiver le VPN. Par exemple, vous souhaitez exécuter certaines applications qui ne fonctionnent pas lorsqu’un VPN est configuré. Dans ce cas, vous pouvez choisir de désactiver le VPN directement à partir de l’application Defender for Endpoint ou en suivant les étapes suivantes :
 
@@ -66,15 +66,15 @@ Le VPN Microsoft Defender pour point de terminaison peut co-exister avec d’aut
 
 ## <a name="battery-consumption"></a>Consommation de batterie
 
-Dans l’Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran ne dure que pendant cette durée et est calculée par iOS en fonction d’une multitude de facteurs, notamment l’utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/de bouc-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n’importe quelle application sont vérifiés et l’utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est beaucoup moins élevée que celle affichée sur la page Paramètres batterie sur l’appareil.
+Dans l’Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran ne dure que pendant cette durée et est calculée par iOS en fonction d’une multitude de facteurs, notamment l’utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/loop-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n’importe quelle application sont vérifiés et l’utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est beaucoup moins élevée que celle affichée sur la page Paramètres batterie sur l’appareil.
 
-En moyenne, l’utilisation quotidienne de la batterie par Microsoft Defender pour le point de terminaison s’exécutant en arrière-plan représente environ **8,81 %** de la batterie globale consommée au cours de ce jour. Cette mesure est signalée par Apple en fonction de l’utilisation réelle de Microsoft Defender pour Endpoint sur les appareils des utilisateurs finaux et, pour des raisons mentionnées ci-dessus, peut également être liée à d’autres applications qui ont une activité réseau.
+En moyenne, l’utilisation quotidienne de la batterie par Microsoft Defender pour le point de terminaison en cours d’exécution en arrière-plan représente environ **8,81 %** de la batterie globale consommée au cours de cette journée. Cette mesure est signalée par Apple en fonction de l’utilisation réelle de Microsoft Defender pour Endpoint sur les appareils des utilisateurs finaux et, pour des raisons mentionnées ci-dessus, peut également être liée à d’autres applications qui ont une activité réseau.
 
-En outre, le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé en dehors de l’appareil.
+En outre, le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
 
 ## <a name="data-usage"></a>Utilisation des données
 
-Microsoft Defender pour le point de terminaison utilise un VPN local/loopback pour vérifier le trafic web des sites web ou connexions malveillants. Pour cette raison, l’utilisation des données de Microsoft Defender pour les points de terminaison peut être incorrectement expliquée. Nous avons également observé que si l’appareil est uniquement sur le réseau cellulaire, l’utilisation des données signalée par le fournisseur de services est très proche de la consommation réelle alors que dans l’application Paramètres, Apple affiche environ 1,5x à 2x de données réelles consommées.
+Microsoft Defender pour le point de terminaison utilise un VPN local/loopback pour vérifier le trafic web des sites web ou des connexions malveillants. Pour cette raison, l’utilisation des données de Microsoft Defender pour les points de terminaison peut être incorrectement expliquée. Nous avons également observé que si l’appareil est uniquement sur le réseau cellulaire, l’utilisation des données signalée par le fournisseur de services est très proche de la consommation réelle alors que dans l’application Paramètres, Apple affiche environ 1,5x à 2x de données réelles consommées.
 
 Nous avons également des observations similaires avec d’autres services VPN et l’avons signalé à Apple.
 
@@ -95,7 +95,7 @@ En outre, une notification s’affiche sur l’appareil iOS. Appuyer sur la noti
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>Appareil non visible sur la console Defender for Endpoint après l’intégration.
 
-Après l’intégration, l’intégration de l’appareil dans l’inventaire de l’appareil dans la console de sécurité Defender for Endpoint prend quelques heures. Assurez-vous également que l’appareil est correctement inscrit auprès Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour que l’intégration réussisse, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d'entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès d’Azure AD.
+Après l’intégration, l’appareil peut s’afficher dans l’inventaire des appareils dans la console de sécurité Defender for Endpoint. Assurez-vous également que l’appareil est correctement inscrit auprès Azure Active Directory et que l’appareil dispose d’une connectivité Internet. Pour que l’intégration réussisse, l’appareil doit être inscrit via Microsoft Authenticator ou Portail d'entreprise Intune et l’utilisateur doit se connecter à l’aide du même compte avec lequel l’appareil est inscrit auprès d’Azure AD.
 
 > [!NOTE]
 > Parfois, le nom de l’appareil n’est pas cohérent avec celui de Microsoft Endpoint Manager console (Intune). Le nom de l’appareil dans la console Defender pour point de terminaison est au format <username_iPhone/iPad modèle>. Vous pouvez également utiliser l’ID d’appareil Azure AD pour identifier l’appareil dans la console Defender for Endpoint.
@@ -103,6 +103,10 @@ Après l’intégration, l’intégration de l’appareil dans l’inventaire de
 ## <a name="data-and-privacy"></a>Données et confidentialité
 
 Pour plus d’informations sur les données collectées et la confidentialité, voir Informations sur la confidentialité - Microsoft Defender pour point de [terminaison sur iOS](ios-privacy.md).
+
+## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problèmes sur les appareils supervisés avec le profil de filtre de contenu installé
+
+Un problème se produit sur les appareils supervisés avec le filtre de contenu Defender for Endpoint installé. Si vous observez une lenteur ou une latence dans la connectivité interet sur ces appareils, désinstallez ou supprimez le profil de filtre de contenu de l’appareil. Nous travaillons pour résoudre ce problème et nous allons mettre à jour cet endroit une fois que nous avons une résolution. 
 
 ## <a name="issues-during-app-updates-from-the-app-store"></a>Problèmes pendant les mises à jour de l’application à partir de l’App Store
 

@@ -16,12 +16,13 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6fa4ff040bb6c863fab88e25728c69bcf920a07b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 4418b91bb72549db5bb11b9a36a1d3d5c55cb741
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177524"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490798"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -71,13 +72,13 @@ Si l’impact sur les performances est élevé, essayez d’ajouter le processus
 
 Si l’étape précédente ne résout pas le problème, [](#capture-process-logs-using-process-monitor) vous pouvez collecter plus d’informations via le Moniteur de processus ou l’enregistreur de performances [Windows](#capture-performance-logs-using-windows-performance-recorder) dans les sections suivantes.
 
-## <a name="capture-process-logs-using-process-monitor"></a>Capturer les journaux de processus à l’aide du Moniteur de processus
+## <a name="capture-process-logs-using-process-monitor"></a>Capturer les journaux de processus à l’aide du moniteur de processus
 
-Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les processus en temps réel. Vous pouvez l’utiliser pour capturer le problème de performances tel qu’il se produit.
+Process Monitor (ProcMon) est un outil de surveillance avancé qui peut afficher les processus en temps réel. Vous pouvez l’utiliser pour capturer le problème de performances tel qu’il se produit.
 
 1. Téléchargez [process monitor v3.60 dans](/sysinternals/downloads/procmon) un dossier tel que `C:\temp` .
 
-2. Pour supprimer la marque du fichier du site web :
+2. Pour supprimer la marque du fichier du web :
     1. Cliquez avec le **bouton droitProcessMonitor.zip** puis sélectionnez **Propriétés.**
     1. Sous *l’onglet Général,* recherchez *Sécurité.*
     1. Cochez la case en **regard de Débloquer.**
@@ -87,7 +88,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 3. Dézipez le fichier de `C:\temp` sorte que le chemin d’accès du dossier soit `C:\temp\ProcessMonitor` .
 
-4. Copiez **ProcMon.exe** sur Windows client ou Windows serveur que vous dépannagez.
+4. Copiez **ProcMon.exe** vers Windows client ou Windows serveur que vous dépannagez.
 
 5. Avant d’utiliser ProcMon, assurez-vous que toutes les autres applications non liées au problème d’utilisation élevée du processeur sont fermées. Cela permet de réduire le nombre de processus à vérifier.
 
@@ -125,7 +126,7 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
     ![Le nom du processus de filtrage est Exclusion du système.](images/procmon-filter-options.png)
 
-8. Pour démarrer la capture, sélectionnez de nouveau l’icône de loupe.
+8. Pour démarrer la capture, sélectionnez de nouveau l’icône en forme de loupe.
 
 9. Reproduisez le problème.
 
@@ -134,11 +135,11 @@ Process Monitor (ProcMon) est un outil d’analyse avancé qui peut afficher les
 
 10. Une fois que vous avez deux à quatre minutes d’activité de processus pendant la condition d’utilisation élevée du processeur, arrêtez la capture en sélectionnant l’icône de loupe.
 
-11. Pour enregistrer la capture avec un nom unique et au format .pml, sélectionnez **Fichier,** puis **Sélectionnez Enregistrer...**. Veillez à sélectionner les boutons d’radio **Tous les événements** et **le format PML (Native Process Monitor Format).**
+11. Pour enregistrer la capture avec un nom unique et au format .pml, sélectionnez **Fichier,** puis **Enregistrer...**. Veillez à sélectionner les boutons d’radio **Tous les événements** et **le format PML (Native Process Monitor Format).**
 
     ![paramètres d’enregistrer.](images/procmon-savesettings1.png)
 
-12. Pour un meilleur suivi, modifiez le chemin d’accès par `C:\temp\ProcessMonitor\LogFile.PML` défaut de l’endroit `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` suivant :
+12. Pour un meilleur suivi, modifiez le chemin d’accès par `C:\temp\ProcessMonitor\LogFile.PML` défaut de l’endroit `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` où :
     - `%ComputerName%` est le nom de l’appareil
     - `MMDDYEAR` est le mois, le jour et l’année
     - `Repro_of_issue` est le nom du problème que vous essayez de reproduire
@@ -183,24 +184,24 @@ Vous pouvez également utiliser l’outil en ligne de commande *wpr.exe*, qui es
 
 6. Sélectionnez **Ajouter des profils...** et accédez au chemin d’accès du `MDAV.wprp` fichier.
 
-7. Après cela, vous devriez voir un nouveau profil sous mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
+7. Après cela, vous devriez voir un nouveau profil sous Mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
 
     ![dans le fichier.](images/wpr-infile.png)
 
     >[!WARNING]
-    >Si votre serveur Windows 64 Go de RAM ou plus, utilisez la mesure personnalisée `Microsoft Defender for Endpoint analysis for large servers` au lieu de `Microsoft Defender for Endpoint analysis` . Dans le cas contraire, votre système pourrait consommer une quantité élevée de mémoires ou de mémoires tampons de pool non pagyés, ce qui peut entraîner une instabilité du système. Vous pouvez choisir les profils à ajouter en **développez l’analyse des ressources.**
+    >Si votre serveur Windows a 64 Go de RAM ou plus, utilisez la mesure personnalisée `Microsoft Defender for Endpoint analysis for large servers` au lieu de `Microsoft Defender for Endpoint analysis` . Dans le cas contraire, votre système pourrait consommer une quantité élevée de mémoires ou de mémoires tampons de pool non pagyés, ce qui peut entraîner une instabilité du système. Vous pouvez choisir les profils à ajouter en **développez l’analyse des ressources.**
     Ce profil personnalisé fournit le contexte nécessaire pour une analyse approfondie des performances.
 
 8. Pour utiliser le profil d’analyse détaillée de la mesure personnalisée Microsoft Defender pour point de terminaison dans l’interface utilisateur WPR :
 
     1. Assurez-vous qu’aucun profil n’est sélectionné dans les groupes *de tri* de premier niveau, Analyse *des* ressources et *Analyse de* scénario.
-    2. Sélectionnez **mesures personnalisées**.
+    2. Sélectionnez **mesures personnalisées.**
     3. Sélectionnez **Microsoft Defender pour l’analyse des points de terminaison.**
-    4. Sélectionnez **Détaillé sous** *Niveau* détail.
+    4. Sélectionnez **Détaillé sous** *niveau* Détails.
     5. Sélectionnez **Fichier ou** **Mémoire en** mode Journalisation.
 
     > [!IMPORTANT]
-    > Vous devez sélectionner *Fichier* pour utiliser le mode de journalisation des fichiers si le problème de performances peut être reproduit directement par l’utilisateur. La plupart des problèmes relèvent de cette catégorie. Toutefois, si l’utilisateur ne peut pas reproduire directement le problème mais  peut facilement le remarquer une fois le problème se produit, il doit sélectionner Mémoire pour utiliser le mode de journalisation de la mémoire. Cela permet de s’assurer que le journal de suivi n’est pas excessivement insérable en raison du temps de longue durée.
+    > Vous devez sélectionner *Fichier* pour utiliser le mode de journalisation des fichiers si le problème de performances peut être reproduit directement par l’utilisateur. La plupart des problèmes relèvent de cette catégorie. Toutefois, si l’utilisateur ne peut pas reproduire directement le problème mais  qu’il peut facilement le remarquer une fois le problème se produit, l’utilisateur doit sélectionner Mémoire pour utiliser le mode de journalisation de la mémoire. Cela permet de s’assurer que le journal de suivi n’est pas excessivement insérable en raison du temps de longue durée.
 
 9. Vous êtes maintenant prêt à collecter des données. Quittez toutes les applications qui ne sont pas pertinentes pour reproduire le problème de performances. Vous pouvez sélectionner **les options Masquer pour** que l’espace occupé par la fenêtre WPR reste petit.
 

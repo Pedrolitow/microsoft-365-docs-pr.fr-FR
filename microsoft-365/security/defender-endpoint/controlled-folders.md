@@ -1,5 +1,5 @@
 ---
-title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec accès contrôlé aux dossiers
+title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec un accès contrôlé aux dossiers
 description: Les fichiers des dossiers par défaut peuvent être protégés contre les changements par des applications malveillantes. Empêcher les ransomware de chiffrer vos fichiers.
 keywords: accès contrôlé aux dossiers, windows 10, windows defender, ransomware, protéger, fichiers, dossiers
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,13 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f2d9c6895abe4654270a9ae3818e2853fc00dd85
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 34c293884a30912485e380da8b7408593435f28c
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400353"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490212"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -32,7 +33,7 @@ ms.locfileid: "59400353"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>Qu’est-ce que l’accès contrôlé aux dossiers ?
 
@@ -64,10 +65,10 @@ Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access
 
 Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également visiter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
-L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes Windows :
+L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes de Windows :
 
 - [Windows 10, version 1709 et](/windows/whats-new/whats-new-windows-10-version-1709) ultérieures
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windows dossiers système sont protégés par défaut
 
@@ -88,7 +89,7 @@ Windows système sont protégés par défaut, ainsi que plusieurs autres dossier
 
 ## <a name="requirements-for-controlled-folder-access"></a>Conditions requises pour l’accès contrôlé aux dossiers
 
-L’accès contrôlé aux dossiers [nécessite l’activation Antivirus Microsoft Defender protection en temps réel.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+L’accès contrôlé aux dossiers [nécessite l Antivirus Microsoft Defender protection en temps réel.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Microsoft 365 Defender portail
 

@@ -14,12 +14,13 @@ ms.author: v-jweston
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a2f8d935caf3578ced6261d461eb5b18fa9bb070
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 9c041e91f2581390a75cbe5151960e5be2e1be29
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222453"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489608"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Évaluer les règles de réduction de la surface d’attaque
 
@@ -39,7 +40,7 @@ Définissez des règles de réduction de la surface d’attaque pour les apparei
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 > [!WARNING]
 > L’activation des règles de réduction du service d’Windows Server 2016 risque d’entraîner des résultats inattendus et d’avoir un impact sur les performances du serveur. Nous vous déconseillons d’activer ou de déployer des règles de réduction de la surface d’attaque sur des plateformes non pris en charge.
@@ -68,7 +69,7 @@ Pour activer toutes les règles de réduction de la surface d’attaque ajoutée
 ```
 
 > [!TIP]
-> Si vous souhaitez auditer complètement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
+> Si vous souhaitez auditer entièrement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
 
 Vous pouvez également utiliser une stratégie de groupe, Intune ou des fournisseurs de services de configuration (CSP) de gestion des périphériques mobiles (CSP) pour configurer et déployer le paramètre. En savoir plus dans l’article principal des règles de [réduction de la surface d’attaque.](attack-surface-reduction.md)
 
@@ -86,7 +87,7 @@ ID d’événement | Description
 
 Au cours de votre évaluation, vous pouvez configurer chaque règle individuellement ou exclure certains fichiers et processus de l’évaluation par la fonctionnalité.
 
-Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité avec les outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
+Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité à l’aide des outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
 
 ## <a name="see-also"></a>Voir aussi
 

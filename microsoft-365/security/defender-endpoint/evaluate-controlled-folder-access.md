@@ -14,12 +14,13 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5991ac4a845680ad5a2b0fc7b5cdd4b35e66cf2f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 9533cff93c3e7f5a1859834d93541a1f818eca21
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209809"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59489595"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -72,7 +73,7 @@ ID d’événement | Description
 
 Au cours de votre évaluation, vous pouvez ajouter des fichiers à la liste des dossiers protégés ou autoriser certaines applications à modifier des fichiers.
 
-Voir [Protéger les dossiers](controlled-folders.md) importants avec accès contrôlé aux dossiers pour configurer la fonctionnalité à l’aide d’outils de gestion, y compris la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) DE GESTION.
+Voir [Protéger les dossiers](controlled-folders.md) importants avec un accès contrôlé aux dossiers pour configurer la fonctionnalité à l’aide des outils de gestion, notamment la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) DE GESTION.
 
 ## <a name="see-also"></a>Voir aussi
 

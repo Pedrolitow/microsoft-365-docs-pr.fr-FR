@@ -17,12 +17,13 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 41d36f93ad371842d4ffe81e02cb46adb9e12288
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: m365-security-compliance
+ms.openlocfilehash: e297eb169f3b71185cc6f8fd1a867734a2ed9ca2
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208891"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490822"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les cmdlets PowerShell pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -33,7 +34,7 @@ ms.locfileid: "59208891"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez utiliser PowerShell pour effectuer différentes fonctions dans Windows Defender. À l’exemple de l’invite de commandes ou de la ligne de commande, PowerShell est un shell de ligne de commande basé sur des tâches et un langage de script spécialement conçu pour l’administration du système. Pour en savoir plus, consultez le hub [PowerShell sur MSDN.](/previous-versions/msdn10/mt173057(v=msdn.10))
+Vous pouvez utiliser PowerShell pour effectuer diverses fonctions dans Windows Defender. À l’exemple de l’invite de commandes ou de la ligne de commande, PowerShell est un shell de ligne de commande basé sur des tâches et un langage de script spécialement conçu pour l’administration du système. Pour en savoir plus, consultez le hub [PowerShell sur MSDN.](/previous-versions/msdn10/mt173057(v=msdn.10))
 
 Pour obtenir la liste des cmdlets, leurs fonctions et les paramètres disponibles, consultez la rubrique sur les [cmdlets](/powershell/module/defender) Defender.
 
@@ -65,7 +66,7 @@ Get-Help <cmdlet> -Online
 
 Omettez le `-online` paramètre pour obtenir de l’aide mise en cache localement.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

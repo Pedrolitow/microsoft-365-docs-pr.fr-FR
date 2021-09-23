@@ -13,12 +13,13 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.openlocfilehash: 7927ba193d6b488911d3d658ac48f4980d90969c
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 53d8742b411c500705434fcef181793df591eb19
+ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444102"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59490966"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1-preview"></a>Configurer Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -29,18 +30,18 @@ Cet article explique comment configurer Defender pour Endpoint Plan 1 (prévisua
 
 ## <a name="the-setup-and-configuration-process"></a>Processus d’installation et de configuration
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Flux de configuration et de déploiement pour Microsoft Defender pour Endpoint Plan 1":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="Flux de configuration et de déploiement de Microsoft Defender pour Endpoint Plan 1":::
 
 Le processus d’installation et de configuration général de Defender pour Endpoint Plan 1 (prévisualisation) est le suivant : <br/><br/>
 
 
 | Nombre  | Étape  | Description  |
 |:---------:|:---------|:---------|
-| 1 | [Consultez la configuration requise](#review-the-requirements)  | Répertorie les conditions requises pour les licences, le navigateur, le système d’exploitation et les centres de données   |
+| 1 | [Consultez la configuration requise](#review-the-requirements)  | Répertorie les exigences en matière de licence, de navigateur, de système d’exploitation et de centre de données   |
 | 2 | [Planifier votre déploiement](#plan-your-deployment) | Répertorie plusieurs méthodes de déploiement à prendre en compte et inclut des liens vers d’autres ressources pour vous aider à choisir la méthode à utiliser  |
 | 3 | [Configurer votre environnement client](#set-up-your-tenant-environment) | Répertorie les tâches de configuration de votre environnement client |
 | 4  | [Attribuer des rôles et des autorisations](#assign-roles-and-permissions) | Répertorie les rôles et autorisations à prendre en compte pour votre équipe de sécurité <br/><br/>**CONSEIL**: dès que des rôles et des autorisations sont attribués, votre équipe de sécurité peut commencer à utiliser Microsoft 365 Defender portail. Pour en savoir plus, [consultez La mise en place.](mde-plan1-getting-started.md) |
-| 5  | [Intégration à Defender pour le point de terminaison](#onboard-to-defender-for-endpoint) | Répertorie plusieurs méthodes par système d’exploitation à intégrer à Defender for Endpoint Plan 1 et inclut des liens vers des informations plus détaillées pour chaque méthode  |
+| 5 | [Intégration à Defender pour le point de terminaison](#onboard-to-defender-for-endpoint) | Répertorie plusieurs méthodes par système d’exploitation à intégrer à Defender for Endpoint Plan 1 et inclut des liens vers des informations plus détaillées pour chaque méthode  |
 | 6  | [Configurer la protection de nouvelle génération](#configure-next-generation-protection) | Décrit comment configurer vos paramètres de protection nouvelle génération dans Microsoft Endpoint Manager  |
 | 7  | [Configurer vos fonctionnalités de réduction de la surface d’attaque](#configure-your-attack-surface-reduction-capabilities)        | Répertorie les types de fonctionnalités de réduction de la surface d’attaque que vous pouvez configurer et inclut des procédures avec des liens vers d’autres ressources  |
 
@@ -61,7 +62,7 @@ Le tableau suivant répertorie les conditions de base requises pour Defender pou
 
 ## <a name="plan-your-deployment"></a>Planifier votre déploiement
 
-Lorsque vous planifiez votre déploiement, vous pouvez choisir parmi différentes architectures et méthodes de déploiement. Chaque organisation étant unique, vous avez plusieurs options à prendre en compte, comme répertorié dans le tableau suivant : <br/><br/>
+Lorsque vous planifiez votre déploiement, vous pouvez choisir parmi différentes architectures et méthodes de déploiement. Chaque organisation étant unique, vous avez plusieurs options à envisager, comme répertorié dans le tableau suivant : <br/><br/>
 
 | Méthode | Description |
 |:---|:---|
@@ -88,7 +89,7 @@ La configuration de votre environnement client inclut des tâches, telles que :
 - Configuration de vos paramètres proxy (uniquement si nécessaire)
 - S’assurer que les capteurs fonctionnent correctement et signaler les données à Defender for Endpoint 
 
-Ces tâches sont incluses dans la phase d’installation de Defender pour Endpoint. Voir [Set up Defender for Endpoint](production-deployment.md).
+Ces tâches sont incluses dans la phase d’installation de Defender pour Endpoint. Voir [Configurer Defender pour le point de terminaison.](production-deployment.md)
 
 ## <a name="assign-roles-and-permissions"></a>Attribuer des rôles et des autorisations
 
@@ -102,7 +103,7 @@ Microsoft recommande d’attribuer uniquement aux utilisateurs le niveau d’aut
 
 Le tableau suivant décrit les rôles clés à prendre en compte pour Defender for Endpoint dans votre organisation : <br/><br/>
 
-| Rôle | Description |
+| Role | Description |
 |:---|:---|
 | Administrateurs globaux (également appelés administrateurs globaux) <br/><br/> *En tant que meilleure pratique, limitez le nombre d’administrateurs globaux.* | Les administrateurs globaux peuvent effectuer toutes sortes de tâches. La personne qui a inscrit votre entreprise à Microsoft 365 ou Microsoft Defender pour Endpoint Plan 1 est un administrateur général par défaut. <br/><br/> Les administrateurs globaux peuvent accéder/modifier les paramètres sur tous les portails Microsoft 365, tels que : <br/>- Le Centre d'administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ) <br/>- Microsoft 365 Defender portail ( [https://security.microsoft.com](https://security.microsoft.com) ) <br/>- Microsoft Endpoint Manager centre d’administration ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) )  |
 | Administrateurs de sécurité (également appelés administrateurs de sécurité) | Les administrateurs de sécurité peuvent effectuer des tâches d’opérateur de sécurité ainsi que les tâches suivantes : <br/>- Surveiller les stratégies liées à la sécurité <br/>- Gérer les menaces et alertes de sécurité <br/>- Afficher les rapports |
@@ -147,17 +148,17 @@ Pour configurer votre protection nouvelle génération dans Microsoft Endpoint M
 
 ## <a name="configure-your-attack-surface-reduction-capabilities"></a>Configurer vos fonctionnalités de réduction de la surface d’attaque
 
-La réduction de la surface d’attaque consiste à réduire les lieux et les façons dont votre organisation est ouverte aux attaques. Defender pour le point de terminaison Plan 1 (prévisualisation) inclut plusieurs fonctionnalités et fonctionnalités pour vous aider à réduire vos surfaces d’attaque sur vos points de terminaison. Ces fonctionnalités sont répertoriées dans le tableau suivant : <br/><br/>
+La réduction de la surface d’attaque consiste à réduire les lieux et les moyens d’attaque de votre organisation. Defender pour le point de terminaison Plan 1 (prévisualisation) inclut plusieurs fonctionnalités et fonctionnalités pour vous aider à réduire vos surfaces d’attaque sur vos points de terminaison. Ces fonctionnalités sont répertoriées dans le tableau suivant : <br/><br/>
 
 | Fonctionnalité/fonctionnalité | Description |
 |:---|:---|
-| [Règles de réduction de la surface d’attaque](#attack-surface-reduction-rules) | Configurez les règles de réduction de la surface d’attaque pour limiter les comportements à risque logiciels et contribuer à la sécurité de votre organisation. Les règles de réduction de la surface d’attaque ciblent certains comportements logiciels, tels que<br/>- Lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter des fichiers <br/>- Exécution de scripts obscurcis ou suspects <br/>- Effectuer des comportements que les applications n’initient généralement pas pendant le travail quotidien normal <br/><br/>De tels comportements logiciels sont parfois observés dans les applications légitimes. Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants.  |
+| [Règles de réduction de la surface d’attaque](#attack-surface-reduction-rules) | Configurez les règles de réduction de la surface d’attaque pour limiter les comportements à risque logiciels et contribuer à la sécurité de votre organisation. Les règles de réduction de la surface d’attaque ciblent certains comportements logiciels, tels que<br/>- Lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter des fichiers <br/>- Exécution de scripts obscurcis ou suspects <br/>- Effectuer des comportements que les applications ne déclenchent généralement pas pendant le travail quotidien normal <br/><br/>De tels comportements logiciels sont parfois observés dans les applications légitimes. Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants.  |
 | [Atténuation des ransomware](#ransomware-mitigation) | Configurez l’atténuation des ransomware en configurant l’accès contrôlé aux dossiers, ce qui permet de protéger les données précieuses de votre organisation contre les applications malveillantes et les menaces, telles que les ransomware. | 
 | [Contrôle des appareils](#device-control) | Configurez les paramètres de contrôle d’appareil pour que votre organisation autorise ou bloque les appareils amovibles (tels que les lecteurs USB). | 
 | [Protection du réseau](#network-protection) | Configurer la protection réseau pour empêcher les membres de votre organisation d’utiliser des applications qui accèdent à des domaines dangereux ou à du contenu malveillant sur Internet. |
-| [Protection web](#web-protection) | Configurer la protection contre les menaces web pour protéger les appareils de votre organisation contre les sites d’hameçonnage, les sites d’attaque et d’autres sites de faible réputation ou non confiance. Configurer le filtrage de contenu web pour suivre et contrôler l’accès aux sites web en fonction de leurs catégories de contenu (par exemple, Catégorie, Bande passante élevée, Contenu pour adultes ou Responsabilité légale). |
+| [Protection web](#web-protection) | Configurer la protection contre les menaces web pour protéger les appareils de votre organisation contre les sites d’hameçonnage, les sites d’exploitation et d’autres sites de faible réputation ou non confiance. Configurer le filtrage de contenu web pour suivre et contrôler l’accès aux sites web en fonction de leurs catégories de contenu (par exemple, Catégorie, Bande passante élevée, Contenu pour adultes ou Responsabilité légale). |
 | [Pare-feu réseau](#network-firewall) | Configurez votre pare-feu réseau avec des règles qui déterminent le trafic réseau autorisé à entrer ou à sortir des appareils de votre organisation. |
-| [Contrôle d’application](#application-control)  | Configurez des règles de contrôle d’application si vous souhaitez autoriser uniquement les applications et processus de confiance à s’exécuter sur Windows appareils.    |
+| [Contrôle d’application](#application-control)  | Configurez les règles de contrôle des applications si vous souhaitez autoriser uniquement les applications et processus de confiance à s’exécuter sur Windows appareils.    |
 
 ### <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
 
@@ -167,23 +168,23 @@ Les règles de réduction de la surface d’attaque sont disponibles sur les app
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and sign in.
 
-2. Choisissez **Réduction de la surface**  >  **d’attaque** du point de terminaison + Créer une  >  **stratégie.**
+2. Choisissez **Réduction de la**  >  **surface d’attaque du point de terminaison**+ Créer une  >  **stratégie.**
 
 3. Pour **la plateforme,** **sélectionnez Windows 10 et ultérieures.**
 
-4. For **Profile**, select **Attack surface reduction rules,** and then choose **Create**.
+4. Pour **profil,** sélectionnez **règles de réduction de la surface d’attaque,** puis **sélectionnez Créer.**
 
 5. Sous **l’onglet Éléments de** base, spécifiez un nom et une description pour la stratégie, puis choisissez **Suivant**.
 
 6. Sous **l’onglet Paramètres de configuration,** développez Règles de réduction **de la surface d’attaque.**
 
-7. Spécifiez les paramètres de chaque règle, puis choisissez **Suivant**. (Pour plus d’informations sur le travail de chaque règle, voir Règles de réduction de [la surface d’attaque.)](attack-surface-reduction.md) 
+7. Spécifiez les paramètres de chaque règle, puis choisissez **Suivant**. (Pour plus d’informations sur le travail de chaque règle, voir Règles de réduction [de la surface d’attaque.)](attack-surface-reduction.md) 
 
 8. Sous **l’onglet Balises** d’étendue, si votre organisation utilise des balises d’étendue, choisissez **+** Sélectionner des balises d’étendue, puis sélectionnez les balises que vous souhaitez utiliser. Ensuite, choisissez **Suivant**. 
    
-   Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un [rôle (RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
+   Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un rôle [(RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
 
-9. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Pour en savoir plus sur les affectations, voir Affecter des profils utilisateur et [d’appareil dans Microsoft Intune.)](/mem/intune/configuration/device-profile-assign)
+9. Sous **l’onglet Affectations,** spécifiez les utilisateurs et les groupes auxquels votre stratégie doit être appliquée, puis choisissez **Suivant**. (Pour en savoir plus sur les affectations, voir Affecter des profils d’utilisateur et [d’appareil Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
 10. Sous **l’onglet Révision + créer,** examinez les paramètres, puis choisissez **Créer.**
 
@@ -221,7 +222,7 @@ Nous vous recommandons d’Microsoft Endpoint Manager pour configurer l’accès
 
 7. Sous **l’onglet Balises** d’étendue, si votre organisation utilise des balises d’étendue, choisissez **+** Sélectionner des balises d’étendue, puis sélectionnez les balises que vous souhaitez utiliser. Ensuite, choisissez **Suivant**. 
    
-   Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un rôle [(RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
+   Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un [rôle (RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
 
 8. Sous **l’onglet Affectations,** **sélectionnez Ajouter** tous les utilisateurs et + Ajouter tous les **appareils,** puis choisissez **Suivant**. (Vous pouvez également spécifier des groupes spécifiques d’utilisateurs ou d’appareils.)
 
@@ -251,7 +252,7 @@ Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou aut
 
 8. Sous **l’onglet Balises** d’étendue, si votre organisation utilise des balises d’étendue, choisissez **+** Sélectionner des balises d’étendue, puis sélectionnez les balises que vous souhaitez utiliser. Ensuite, choisissez **Suivant**. 
    
-   Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un rôle [(RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
+   Pour en savoir plus sur les balises d’étendue, voir Utiliser un contrôle d’accès basé sur un [rôle (RBAC)](/mem/intune/fundamentals/scope-tags)et des balises d’étendue pour le service it distribué.
 
 9. Sous **l’onglet Affectations,** **sélectionnez Ajouter** tous les utilisateurs et + Ajouter tous les **appareils,** puis choisissez **Suivant**. (Vous pouvez également spécifier des groupes spécifiques d’utilisateurs ou d’appareils.)
 
@@ -311,7 +312,7 @@ Grâce à la protection web, vous pouvez protéger les appareils de votre organi
 
 5. Sous **l’onglet Paramètres de configuration,** développez **Protection Web,** spécifiez les paramètres dans le tableau suivant, puis choisissez **Suivant**. <br/><br/>
 
-   | Paramètres | Recommandation |
+   | Paramètre | Recommandation |
    |:---|:---|
    | **Activer la protection du réseau** | Définir sur **Activé**. Empêche les utilisateurs de visiter des sites ou domaines malveillants. <br/><br/>Vous pouvez également définir la protection réseau en **mode Audit** pour voir comment elle fonctionne dans votre environnement. En mode audit, la protection réseau n’empêche pas les utilisateurs de visiter des sites ou des domaines, mais elle fait le suivi des détections en tant qu’événements. |
    | **Exiger SmartScreen pour les Version antérieure de Microsoft Edge** | Définir sur **Oui**. Permet de protéger les utilisateurs contre les tentatives de hameçonnage et les logiciels malveillants. |
@@ -402,7 +403,7 @@ Pour vous aider à planifier votre déploiement WDAC, consultez les ressources s
 
 - [Windows Defender Déploiement du contrôle d’application dans différents scénarios : types d’appareils](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez passé par le processus d’installation et de configuration, l’étape suivante consiste à commencer à utiliser Defender pour Endpoint. 
 
