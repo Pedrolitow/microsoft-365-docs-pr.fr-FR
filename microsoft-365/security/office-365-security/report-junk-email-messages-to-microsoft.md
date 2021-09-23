@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages et fichiers bon et mauvais à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898fd42e687ec9d5776c1791ed353937921af4ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c78b606ed63e18d23bb1d1a6ebf72ae2617e9386
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179163"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483386"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft
 
@@ -48,8 +48,6 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online
 |[Utiliser des règles de flux de courriers pour afficher les comptes-rendus envoyés par les utilisateurs à Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Découvrez comment créer une règle de flux de messagerie (également appelée règle de transport) qui vous avertit lorsque les utilisateurs signalent des messages à Microsoft pour analyse.|
 |[Soumettre des programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilisez le site Veille de sécurité Microsoft pour envoyer des pièces jointes et d’autres fichiers.|
 |
-
-Si le courrier indésirable ou le hameçonnage a été mis en quarantaine au lieu d’être remis, les utilisateurs peuvent signaler les messages à Microsoft à partir de la quarantaine dans le portail Microsoft 365 Defender. Pour plus d’informations, voir Rechercher et libérer les messages mis en quarantaine en tant [qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).
 
 > [!NOTE]
 > Les données des soumissions à Microsoft résident dans la limite de conformité Office 365 des centres de données d’Amérique du Nord. Les données sont examinées par les analystes de l’équipe d’ingénierie afin d’améliorer l’efficacité des filtres.

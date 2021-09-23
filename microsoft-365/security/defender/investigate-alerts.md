@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 92c74ae2f7e7236138f28cf30b3e835eb10b636d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9999fdea57465120040cb04a497f1510bcb988b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180958"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483506"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -42,31 +42,31 @@ Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former
 
 La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des alertes à partir **d’incidents & alertes** > alertes sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente des alertes.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente d’alertes dans Microsoft 365 Defender portail.":::
 
 Les alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
-Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste, ce qui vous permet de la voir en premier. 
+Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste pour que vous la voyez en premier. 
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple du volet filtres de la file d’attente d’alertes.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple du volet Filtres pour la file d’attente d’alertes dans Microsoft 365 Defender portail.":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
 - Severity
-- État
+- Statut
 - Catégorie
 - Source de détection
 - Balises
-- Politique
+- Stratégie
 - Ressources impactées
 
 ## <a name="analyze-an-alert"></a>Analyser une alerte
 
 Pour voir la page principale de l’alerte, sélectionnez le nom de l’alerte. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exemple de page de détails d’une alerte dans le portail Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exemple de page de détails d’une alerte dans le portail Microsoft 365 Defender web.":::
 
 Vous pouvez également sélectionner l’action Ouvrir la **page d’alerte** principale dans le volet Gérer **les** alertes.
 
@@ -88,8 +88,8 @@ Microsoft 365 Defender alertes peuvent être issues de solutions telles que Micr
 Source de l’alerte | Caractère prédépendé 
 :---|:---
 Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> 
-Microsoft Defender pour Identity | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> 
+Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 ### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
@@ -115,7 +115,7 @@ Une fois que vous avez sélectionné une entité d’intérêt, la page de déta
 
 Pour gérer une alerte, sélectionnez l’alerte dans la file d’attente des alertes sur sa ligne pour voir un volet Gérer **les** alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exemple du volet récapitulatif d’une alerte.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exemple du volet récapitulatif d’une alerte dans le portail Microsoft 365 Defender web.":::
 
 Le **volet Gérer les** alertes vous permet de spécifier :
 

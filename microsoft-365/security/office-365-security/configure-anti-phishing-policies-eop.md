@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîtes aux lettres Exchange Online utilisateur.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8e6ccbc75e7c9081a3d6f4753bd7c9415cdb296
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 93bd272009845d7b9afdd873bbdd2cd4219c82e1
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207220"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484070"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -29,7 +29,7 @@ ms.locfileid: "59207220"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, il existe une stratégie anti-hameçonnage par défaut qui contient un nombre limité de fonctionnalités de protection contre l’usurpation d’adresses qui sont activées par défaut. Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
+Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, il existe une stratégie anti-hameçonnage par défaut qui contient un nombre limité de fonctionnalités anti-usurpation activées par par défaut. Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
 
 Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie anti-hameçonnage par défaut. Pour plus de granularité, vous pouvez également créer des stratégies anti-hameçonnage personnalisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
@@ -66,7 +66,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
 
   Vous ne pouvez pas gérer les stratégies anti-hameçonnage dans EOP PowerShell autonome.
 
-- Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
+- Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cette rubrique.
   - Pour ajouter, modifier et supprimer des stratégies anti-hameçonnage,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
   - Pour accéder en lecture seule aux stratégies anti-hameçonnage,  vous  devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
@@ -122,9 +122,11 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 6. Dans la page **Action** qui s’affiche, configurez les paramètres suivants :
-   - **Si le message est détecté comme** usurpant l’usurpation : ce paramètre est disponible uniquement si vous avez sélectionné Activer la veille contre l’usurpation d’informations sur la page précédente.  Sélectionnez l’une des actions suivantes dans la liste bas pour les messages provenant d’expéditeurs usurpés bloqués :
+   - **Si le message est détecté comme** usurpant l’usurpation : ce paramètre n’est disponible que si vous avez sélectionné Activer la veille contre l’usurpation d’informations sur la page précédente.  Sélectionnez l’une des actions suivantes dans la liste bas pour les messages provenant d’expéditeurs usurpés bloqués :
      - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
-     - **Mettre le message en quarantaine**
+     - **Mettre le message** en quarantaine :  si vous sélectionnez cette action, une zone de stratégie Appliquer la mise en quarantaine s’affiche lorsque vous sélectionnez la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’intelligence. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
+
+       Une valeur vide de stratégie **Appliquer** la mise en quarantaine signifie que la stratégie de mise en quarantaine par défaut est utilisée (DefaultFullAccessPolicy pour les détections d’usurpation d’informations). Lorsque vous modifiez ultérieurement la stratégie anti-hameçonnage ou que vous affichez les paramètres, le nom de la stratégie de mise en quarantaine par défaut s’affiche. Pour plus d’informations sur les stratégies de mise en quarantaine par défaut utilisées pour les verdicts de filtrage de protection pris en charge, consultez [ce tableau.](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)
 
    - **Conseils de sécurité & indicateurs :**
      - **Afficher le premier contact conseil de sécurité**: pour plus d’informations, voir First contact [conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
@@ -258,19 +260,22 @@ La création d’une stratégie anti-hameçonnage dans PowerShell est un process
 Pour créer une stratégie anti-hameçonnage, utilisez la syntaxe suivante :
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>] [-SpoofQuarantineTag <QuarantineTagName>]
 ```
 
 Cet exemple crée une stratégie anti-hameçonnage nommée Research Quarantine avec les paramètres suivants :
 
 - La description est la suivante : stratégie du service de recherche.
-- Modifie l’action par défaut pour l’usurpation en quarantaine.
+- Modifie l’action par défaut pour les détections [](quarantine-policies.md) d’usurpation d’informations en quarantaine et utilise la stratégie de mise en quarantaine par défaut pour les messages mis en quarantaine (nous n’utilisons pas le paramètre _SpoofQuarantineTag)._
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
+
+> [!NOTE]
+> Pour obtenir des instructions [](quarantine-policies.md) détaillées sur la spécification des stratégies de mise en quarantaine à utiliser dans une stratégie anti-hameçonnage, voir Utiliser PowerShell pour spécifier la stratégie de mise en quarantaine dans les stratégies [anti-hameçonnage.](quarantine-policies.md#anti-phishing-policies)
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>Étape 2 : Utiliser PowerShell pour créer une règle anti-hameçonnage
 
@@ -360,6 +365,9 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
+
+> [!NOTE]
+> Pour obtenir des instructions [](quarantine-policies.md) détaillées sur la spécification de la stratégie de mise en quarantaine à utiliser dans une stratégie anti-hameçonnage, voir Utiliser PowerShell pour spécifier la stratégie de mise en quarantaine dans les stratégies [anti-hameçonnage.](quarantine-policies.md#anti-phishing-policies)
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>Utiliser PowerShell pour modifier des règles anti-hameçonnage
 

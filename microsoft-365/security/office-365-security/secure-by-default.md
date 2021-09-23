@@ -17,12 +17,12 @@ ms.collection:
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14ab9ee240c1219982663c1f3557c1cf5f244144
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 9a688953d320eb16f140d631f6231f642819fa89
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460027"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482838"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécurisé par défaut dans Office 365
 
@@ -61,7 +61,7 @@ Pour plus d’informations sur ces remplacements, voir [Créer des listes d’ex
 > [!NOTE]
 > Nous avons supprimé l’action Déplacer le **message** vers le dossier Courrier indésirable pour un **verdict** de courrier de hameçonnage à haut niveau de confiance dans les stratégies EOP anti-courrier indésirable. Les stratégies anti-courrier indésirable qui utilisent cette action pour les messages de hameçonnage à haut niveau de confiance seront converties en message de mise **en quarantaine.** **L’action de redirection vers l’adresse de** messagerie pour les messages de hameçonnage à haut niveau de confiance n’est pas affectée.
 
-La sécurité par défaut n’est pas un paramètre qui peut être allumé ou désactivé, mais la façon dont notre filtrage est prêt à l’emploi pour empêcher les messages potentiellement dangereux ou indésirables de sortir de vos boîtes aux lettres. Les programmes malveillants et les messages de hameçonnage à haut niveau de confiance doivent être mis en quarantaine. Seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants ou hameçonnage à haut niveau de confiance, et ils peuvent également signaler des faux positifs à Microsoft à partir de là. Pour plus d’informations, voir Gérer les messages et fichiers mis en quarantaine en tant [qu’administrateur dans EOP](manage-quarantined-messages-and-files.md)
+La sécurité par défaut n’est pas un paramètre qui peut être allumé ou désactivé, mais la façon dont notre filtrage est prêt à l’emploi pour empêcher les messages potentiellement dangereux ou indésirables de sortir de vos boîtes aux lettres. Les programmes malveillants et les messages de hameçonnage à haut niveau de confiance doivent être mis en quarantaine. Par défaut, seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants ou hameçonnage à haut niveau de confiance, et ils peuvent également signaler des faux positifs à Microsoft à partir de là. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 
 ## <a name="more-on-why-were-doing-this"></a>En savoir plus sur la raison de cette situation
 
@@ -78,6 +78,6 @@ Autrement dit : en tant que service de sécurité, nous agissant en votre nom po
 Vous ne devez envisager d’utiliser des substitutions que dans les scénarios suivants :
 
 - Simulations de hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
-- Boîtes aux lettres De sécurité/SecOps : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (bonnes et mauvaises). Teams peuvent ensuite examiner pour voir s’ils contiennent du contenu malveillant.
+- Boîtes aux lettres De sécurité/SecOps : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (bonnes et mauvaises). Teams peuvent ensuite passer en revue pour voir s’ils contiennent du contenu malveillant.
 - Filtres tiers : la sécurité par défaut ne s’applique pas lorsque l’enregistrement MX du domaine ne pointe pas vers Office 365.
 - Faux positifs : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft [via des envois d’administrateur.](admin-submission.md) Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.

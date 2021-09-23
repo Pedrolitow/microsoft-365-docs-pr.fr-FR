@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de9f68c193a8c7ab4d4c78fc4f2cef3cf02142ec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01369b574dcb3b5a23b22cb662b59479c308de33
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179203"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483542"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les messages malveillants remis dans Office 365
 
@@ -93,11 +93,11 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
     - Local/externe
     - Échec/abandon
 
-  Les messages suspects sont classés comme étant soit remédiables, soit non immédiates. Dans la plupart des cas, les messages remédiables et les messages non immédiatement remédiables sont égaux au nombre total de messages envoyés. Mais dans de rares cas, cela peut ne pas être vrai. Cela peut se produire en raison de retards du système, de délais d’expiration ou de messages expirés. Les messages expirent en fonction de la période de rétention de l’Explorateur pour votre organisation.
+  Les messages suspects sont classés comme étant soit remédiables, soit non immédiates. Dans la plupart des cas, les messages remédiables et les messages non immédiatement remédiables sont égaux au nombre total de messages envoyés. Mais dans de rares cas, cela peut ne pas être vrai. Cela peut se produire en raison de retards système, de délais d’expiration ou de messages expirés. Les messages expirent en fonction de la période de rétention de l’Explorateur pour votre organisation.
 
   Sauf si vous remédiez aux anciens messages après la période de rétention de l’Explorateur de votre organisation, il est conseillé de réessayer de corriger les éléments en cas d’incohérence de nombre. Pour les retards du système, les mises à jour de correction sont généralement actualisées en quelques heures.
 
-  Si la période de rétention du courrier électronique de votre organisation dans l’Explorateur est de 30 jours et que vous remédiez aux messages électroniques de 29 à 30 jours, il se peut que le nombre de dépôts de messages ne s’ajoute pas toujours. Les e-mails ont peut-être déjà commencé à sortir de la période de rétention.
+  Si la période de rétention du courrier électronique de votre organisation dans l’Explorateur est de 30 jours et que vous remédiez aux messages électroniques de 29 à 30 jours, il se peut que le nombre d’envois de courriers ne s’ajoute pas toujours. Les e-mails ont peut-être déjà commencé à sortir de la période de rétention.
 
   Si les corrections sont bloquées à l’état « En cours » pendant un certain temps, cela est probablement dû à des retards du système. La correction peut prendre jusqu’à quelques heures. Vous pouvez voir des variations dans le nombre d’envois de courrier, car certains messages électroniques n’ont peut-être pas été inclus dans la requête au début de la correction en raison de retards du système. Il est bon de réessayer d’y remédier.
 
@@ -106,7 +106,7 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
 
   Seuls les e-mails remédiables sont actionn s pendant la correction. Les messages électroniques non instantanés ne peuvent pas être corrigés par le système de messagerie Office 365, car ils ne sont pas stockés dans des boîtes aux lettres cloud.
 
-  Les administrateurs peuvent prendre des mesures sur les e-mails mis en quarantaine si nécessaire, mais ils expireront hors de la quarantaine s’ils ne sont pas purgés manuellement. Les e-mails mis en quarantaine en raison de contenus malveillants ne sont pas accessibles par les utilisateurs, de sorte que le personnel de sécurité n’a aucune action à prendre pour se débarrasser des menaces en quarantaine. Si les e-mails sont locaux ou externes, l’utilisateur peut être contacté pour traiter le message suspect. Les administrateurs peuvent également utiliser des outils de sécurité/serveur de messagerie distincts pour la suppression. Ces *e-mails* peuvent être identifiés en appliquant l’emplacement de remise = filtre externe sur site dans l’Explorateur. En cas d’échec ou de abandon du courrier électronique ou de courrier non accessible par les utilisateurs, il n’y aura aucun message électronique à atténuer, car ces messages n’atteignent pas la boîte aux lettres.
+  Les administrateurs peuvent prendre des mesures sur les e-mails mis en quarantaine si nécessaire, mais ils expireront hors de la quarantaine s’ils ne sont pas purgés manuellement. Par défaut, les e-mails mis en quarantaine en raison de contenus malveillants ne sont pas accessibles par les utilisateurs, de sorte que le personnel de sécurité n’a aucune action à prendre pour se débarrasser des menaces en quarantaine. Si les e-mails sont locaux ou externes, l’utilisateur peut être contacté pour traiter le message suspect. Les administrateurs peuvent également utiliser des outils de sécurité/serveur de messagerie distincts pour la suppression. Ces *e-mails* peuvent être identifiés en appliquant l’emplacement de remise = filtre externe sur site dans l’Explorateur. En cas d’échec ou de abandon du courrier électronique ou de courrier non accessible par les utilisateurs, il n’y aura aucun message électronique à atténuer, car ces messages n’atteignent pas la boîte aux lettres.
 
   L’image suivante montre l’apparence d’une soumission dans le centre de données. Une correction peut contenir plusieurs soumissions. Si plusieurs actions sont approuvées par le biais d’un examen automatisé, chaque action de cluster de courrier ou de courrier électronique apparaît dans la même correction qu’une soumission différente.
 

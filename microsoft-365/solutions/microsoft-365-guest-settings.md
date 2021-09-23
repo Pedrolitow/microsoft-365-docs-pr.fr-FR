@@ -15,15 +15,16 @@ ms.collection:
 f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkTEAMS
 localization_priority: Priority
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: db7622da1094dd1abf69752c6a0c41c374e80e9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d3db87c0c01a9bddead9b7367b6ac64a7633e107
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162404"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477622"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -90,7 +91,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-access"></a>Accès invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > **Paramètres à l’échelle de l’organisation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Accès invité**</a>
 
 ![Capture d’écran du commutateur d’accès invité dans Teams.](../media/teams-guest-access-toggle.png)
 
@@ -100,7 +101,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-calling"></a>Appel d’invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > **Paramètres à l’échelle de l’organisation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Accès invité**</a>
 
 ![Capture d’écran des options d’appel d’invité dans Teams.](../media/teams-guest-calling-setting.png)
 
@@ -110,7 +111,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-meeting"></a>Réunion d’invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > **Paramètres à l’échelle de l’organisation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Accès invité**</a>
 
 ![Capture d’écran des paramètres de réunion d’invité dans Teams](../media/teams-guest-meeting-settings.png)
 
@@ -122,7 +123,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-messaging"></a>Messagerie d’invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > **Paramètres à l’échelle de l’organisation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Accès invité**</a>
 
 ![Capture d’écran des paramètres de messagerie d’invité dans Teams.](../media/teams-guest-messaging-settings.png)
 

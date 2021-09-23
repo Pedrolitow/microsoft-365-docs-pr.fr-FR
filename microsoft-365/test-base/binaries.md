@@ -14,27 +14,30 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 38c21f69680d6e9d6a3231c8bf2dc44f15e057f6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1b0ca307cbbfb5b2c99085d4b3bec89758d51bd
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208531"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483002"
 ---
 # <a name="step-3-upload-your-binaries-dependencies-and-scripts"></a>Étape 3 : Télécharger vos binaires, dépendances et scripts
 
 Sous cet onglet, vous allez télécharger un package zip unique contenant vos fichiers binaires, dépendances et scripts utilisés pour exécuter votre suite de test.
 
+> [!NOTE]
+> La taille du package zip doit être entre 10 Mo et 2 Go au maximum.
+
 ## <a name="upload-package-zip-file"></a>Télécharger fichier zip de package
 
-![Télécharger vos binaires.](Media/AddBinaries.png)
+:::image type="content" alt-text="Télécharger vos binaires." source="Media/AddBinaries.png":::
 
-  - Les dépendances téléchargées peuvent inclure des frameworks de test, des moteurs de script ou des données accessibles pour exécuter votre application ou des cas de test. Par exemple, vous pouvez charger Selenium et un programme d’installation webdriver pour vous aider à exécuter des tests basés sur le navigateur.
+  - Les dépendances téléchargées peuvent inclure des frameworks de test, des moteurs de script ou des données accessibles pour exécuter votre application ou des cas de test. Par exemple, vous pouvez télécharger Selenium et un programme d’installation de pilotes web pour vous aider à exécuter des tests basés sur le navigateur.
   - Il est préférable de s’assurer que vos activités de script restent modulaires, c’est-à-dire. 
-    - Le ```Install``` script effectue uniquement des opérations d’installation.
-    - Le ```Launch``` script lance uniquement l’application.
-    - Le ```Close``` script ferme uniquement l’application.
-    - Le ```Uninstall``` script facultatif désinstalle uniquement l’application.
+    - Le `Install` script effectue uniquement des opérations d’installation.
+    - Le `Launch` script lance uniquement l’application.
+    - Le `Close` script ferme uniquement l’application.
+    - Le `Uninstall` script facultatif désinstalle uniquement l’application.
 
 **Actuellement, le portail prend uniquement en charge les scripts PowerShell.**
 

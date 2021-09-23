@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b8fff1c53575b7de7d3c627c5bc79d00f97d6e39
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 36d4c90eb02bc9fb147ed0a28481444508be068e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179299"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483518"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -102,6 +102,23 @@ Détermine si le moteur antivirus s’exécute en mode passif ou non. En mode pa
 |**Valeurs possibles**|false (par défaut) <p> true|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure.|
 |
+  
+#### <a name="run-a-scan-after-definitions-are-updated"></a>Exécuter une analyse après la mise à jour des définitions
+
+Spécifie s’il faut démarrer une analyse de processus après le téléchargement des nouvelles mises à jour de l’intelligence de sécurité sur l’appareil. L’activation de ce paramètre déclenche une analyse antivirus sur les processus en cours d’exécution de l’appareil.
+
+<br>
+
+****
+
+|Description|Valeur|
+|---|---|
+|**Clé**|scanAfterDefinitionUpdate|
+|**Type de données**|Valeur booléenne|
+|**Valeurs possibles**|false (par défaut) <p> true|
+|**Comments**|Disponible dans Defender pour Endpoint version 101.41.51 ou supérieure.|
+|
+  
 
 #### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
 
@@ -279,7 +296,7 @@ Type de menace pour lequel le comportement est configuré.
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
 - **Audit**: l’appareil n’est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloquer**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Bloc**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Off**: l’appareil n’est pas protégé contre ce type de menace et rien n’est enregistré.
 
 <br>
@@ -305,7 +322,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |---|---|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -337,7 +354,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |---|---|
 |**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments.|
+|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments.|
 |**Comments**|Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure.|
 |
 
@@ -428,7 +445,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA)** sont bloquées
+  - **Les applications potentiellement indésirables (PUA) sont** bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud
@@ -472,6 +489,7 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
       "enableRealTimeProtection":true,
       "maximumOnDemandScanThreads":1,
       "passiveMode":false,
+      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
@@ -537,9 +555,9 @@ python -m json.tool mdatp_managed.json
 
 Si le JSON est bien formé, la commande ci-dessus le renvoie au Terminal et renvoie un code de sortie de `0` . Sinon, une erreur qui décrit le problème s’affiche et la commande renvoie un code de sortie de `1` .
 
-## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Vérification du fonctionnement du mdatp_managed.jssur le fichier comme prévu
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Vérifier que le fichier mdatp_managed.json fonctionne comme prévu
 
-Pour vérifier que votre /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfonctionne correctement, vous devez voir « [géré] » en regard de ces paramètres :
+Pour vérifier que votre /etc/opt/microsoft/mdatp/managed/mdatp_managed.json fonctionne correctement, vous devez voir « [géré] » en regard de ces paramètres :
 
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
@@ -548,7 +566,7 @@ Pour vérifier que votre /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfoncti
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> Pour que mdatp_managed.jsprenne effet, aucun redémarrage du wdavdaemon n’est requis.
+> Pour que mdatp_managed.json prenne effet, aucun redémarrage du wdavdaemon n’est requis.
 
 ## <a name="configuration-profile-deployment"></a>Déploiement de profil de configuration
 

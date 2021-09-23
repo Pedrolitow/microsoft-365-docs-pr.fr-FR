@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Microsoft 365 eDiscovery gèrent les documents chiffrés joints aux messages électroniques et stockés dans SharePoint Online et OneDrive Entreprise.
-ms.openlocfilehash: 0662b6a2bbedefc2dd996491171dc1abde49bb8e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b816990e0524222938233089e6f920b753406544
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207940"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483062"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Déchiffrement dans les outils Microsoft 365 eDiscovery
 
@@ -31,7 +31,7 @@ Pour exécuter des tâches eDiscovery courantes sur du contenu chiffré, les ges
 
 Pour faciliter la gestion du contenu chiffré dans le flux de travail eDiscovery, les outils eDiscovery Microsoft 365 intègrent désormais le déchiffrement des fichiers chiffrés joints aux messages électroniques et envoyés dans Exchange Online. <sup>1</sup> En outre, les documents chiffrés stockés dans SharePoint Online et OneDrive Entreprise sont déchiffrés dans Advanced eDiscovery.
 
-Avant cette nouvelle fonctionnalité, seul le contenu d’un message électronique protégé par la gestion des droits (et les fichiers non joints) était déchiffré. Les documents chiffrés SharePoint et OneDrive n’ont pas pu être déchiffrés pendant le flux de travail eDiscovery. À présent, les fichiers chiffrés à l’aide d’une technologie de chiffrement Microsoft se trouvent sur un compte SharePoint ou OneDrive et peuvent être recherchés et déchiffrés lorsque les résultats de la recherche sont préparés pour la prévisualisation, ajoutés à un jeu à réviser dans Advanced eDiscovery et exportés. En outre, les documents chiffrés dans SharePoint et OneDrive joints à un message électronique peuvent faire l’être. Cette fonctionnalité de déchiffrement permet aux gestionnaires eDiscovery d’afficher le contenu des pièces jointes et des documents de site chiffrés lors de l’aperçu des résultats de la recherche, et de les examiner après leur ajout à un groupe de révision dans Advanced eDiscovery.
+Avant cette nouvelle fonctionnalité, seul le contenu d’un message électronique protégé par la gestion des droits (et les fichiers non joints) était déchiffré. Les documents chiffrés SharePoint et OneDrive n’ont pas pu être déchiffrés pendant le flux de travail eDiscovery. À présent, les fichiers chiffrés à l’aide d’une technologie de chiffrement Microsoft se trouvent sur un compte SharePoint ou OneDrive et peuvent être recherchés et déchiffrés lorsque les résultats de la recherche sont préparés pour la prévisualisation, ajoutés à un jeu à réviser dans Advanced eDiscovery et exportés. En outre, les documents chiffrés dans SharePoint et OneDrive joints à un message électronique peuvent faire l’être. Cette fonctionnalité de déchiffrement permet aux gestionnaires eDiscovery d’afficher le contenu des pièces jointes et des documents de site chiffrés lors de l’aperçu des résultats de la recherche, et de les examiner une fois qu’ils ont été ajoutés à un groupe de révision dans Advanced eDiscovery.
 
 ## <a name="supported-encryption-technologies"></a>Technologies de chiffrement prise en charge
 
@@ -42,7 +42,7 @@ Les outils eDiscovery de Microsoft permettent la prise en charge des éléments 
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>Activités eDiscovery qui la prise en charge des éléments chiffrés
 
-Le tableau suivant identifie les tâches prise en charge qui peuvent être effectuées dans les outils eDiscovery Microsoft 365 sur les fichiers chiffrés joints aux messages électroniques et aux documents chiffrés dans SharePoint et OneDrive. Ces tâches prise en charge peuvent être effectuées sur des fichiers chiffrés qui correspondent aux critères d’une recherche. La valeur `N/A` indique que la fonctionnalité n’est pas disponible dans l’outil eDiscovery correspondant.
+Le tableau suivant identifie les tâches prise en charge qui peuvent être effectuées dans les outils eDiscovery Microsoft 365 sur les fichiers chiffrés joints aux messages électroniques et aux documents chiffrés dans SharePoint et OneDrive. Ces tâches peuvent être effectuées sur des fichiers chiffrés qui correspondent aux critères d’une recherche. La valeur `N/A` indique que la fonctionnalité n’est pas disponible dans l’outil eDiscovery correspondant.
 
 |Tâche eDiscovery  |Recherche de contenu  |Core eDiscovery  |Advanced eDiscovery  |
 |:---------|:---------|:---------|:---------|
@@ -50,7 +50,7 @@ Le tableau suivant identifie les tâches prise en charge qui peuvent être effec
 |Afficher un aperçu des fichiers chiffrés joints à la messagerie     |Oui      |Oui     |Oui       |
 |Afficher un aperçu des documents chiffrés dans SharePoint et OneDrive|Non      |Non    |Oui       |
 |Passer en revue les fichiers chiffrés dans un jeu à réviser    |N/A      |N/A        | Oui        |
-|Exporter des fichiers chiffrés joints à la messagerie électronique    |Oui       |Oui  |Oui    |
+|Exporter des fichiers chiffrés joints à un e-mail    |Oui       |Oui  |Oui    |
 |Exporter des documents chiffrés dans SharePoint et OneDrive    |Non       |Non  |Oui    |
 |||||
 
@@ -75,7 +75,7 @@ Les scénarios suivants décrivent les limitations dans le déchiffrement des fi
 
 - Si un fichier situé sur un ordinateur local (et non stocké dans un site SharePoint ou un compte OneDrive) est joint à un message électronique et qu’une étiquette de niveau de sensibilité qui applique le chiffrement est appliquée au message électronique, le fichier joint ne peut pas être déchiffré par eDiscovery. Cela signifie que si vous exécutez une requête de recherche par mot clé de la boîte aux lettres du destinataire, la pièce jointe chiffrée ne sera pas renvoyée par une requête de recherche par mot clé.
 
-  La solution de contournement de cette limitation consiste à rechercher la même pièce jointe dans la boîte aux lettres de l’expéditeur. Cela est dû au fait que le chiffrement appliqué par l’étiquette de sensibilité est appliqué lors du transport du message électronique. Cela signifie que la pièce jointe est chiffrée lors de l’envoi du message électronique. Le résultat est que l’instance du fichier joint dans la boîte aux lettres de l’expéditeur n’est pas chiffrée, même si le même fichier dans la boîte aux lettres du destinataire est chiffré.
+  La solution de contournement de cette limitation consiste à rechercher la même pièce jointe dans la boîte aux lettres de l’expéditeur. Cela est dû au fait que le chiffrement appliqué par l’étiquette de niveau de sensibilité est appliqué lors du transport du message électronique. Cela signifie que la pièce jointe est chiffrée lors de l’envoi du message électronique. Le résultat est que l’instance du fichier joint dans la boîte aux lettres de l’expéditeur n’est pas chiffrée, même si le même fichier dans la boîte aux lettres du destinataire est chiffré.
 
 - De même, les pièces jointes cloud (fichiers stockés dans un site SharePoint ou un compte OneDrive)  qui sont copiées dans un message électronique (à l’aide de l’option Joindre en tant que copie dans Outlook) ne peuvent pas être déchiffrées par eDiscovery. Cela est également dû au fait que le chiffrement appliqué par une étiquette de niveau de sensibilité est appliqué lors de l’envoi du message électronique. La recherche de l’instance non chiffrée de la copie de la pièce jointe cloud dans la boîte aux lettres de l’expéditeur constitue également la solution de contournement de cette limitation.
 
@@ -86,3 +86,15 @@ Dans ces deux scénarios, les messages électroniques avec des pièces jointes c
 Le rôle de déchiffrement RMS doit vous être attribué pour prévisualiser, examiner et exporter des fichiers chiffrés avec les technologies de chiffrement Microsoft. Ce rôle doit également vous être attribué pour examiner et interroger les fichiers chiffrés qui sont ajoutés à un jeu à réviser dans Advanced eDiscovery.
 
 Ce rôle est attribué par défaut au groupe de rôles Gestionnaire eDiscovery dans la page **Autorisations** du Centre de conformité Microsoft 365. Pour plus d’informations sur le rôle de déchiffrement RMS, voir [Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md#rms-decrypt).
+
+### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments-using-content-search-or-core-ediscovery"></a>Déchiffrement des messages électroniques protégés par RMS et des pièces jointes chiffrées à l’aide de la recherche de contenu ou de la découverte électronique principale
+
+Tous les messages électroniques protégés par des droits (protégés par RMS) inclus dans les résultats d’une recherche de contenu sont déchiffrés lorsque vous les exportez. En outre, tout fichier chiffré avec une technologie de chiffrement [Microsoft](encryption.md) et joint à un message électronique inclus dans les résultats de la recherche est déchiffré lorsqu’il est exporté. Cette fonctionnalité de déchiffrement est activée par défaut pour les membres du groupe de rôles Gestionnaire eDiscovery. Cela est dû au fait que le rôle de gestion déchiffrement RMS est attribué par défaut à ce groupe de rôles. Gardez les points suivants à l’esprit lors de l’exportation de pièces jointes et de messages électroniques chiffrés :
+  
+- Comme indiqué précédemment, pour déchiffrer les messages protégés par RMS lorsque vous les exportez, vous devez exporter les résultats de la recherche en tant que messages individuels. Si vous exportez des résultats de recherche dans un fichier PST, les messages protégés par RMS restent chiffrés.
+
+- Les messages déchiffrés sont identifiés dans le **rapport ResultsLog.** Ce rapport contient une colonne nommée **État** de décodage et une valeur décodée **identifie** les messages qui ont été déchiffrés.
+
+- Outre le déchiffrement des pièces jointes lors de l’exportation des résultats de recherche, vous pouvez afficher un aperçu du fichier déchiffré lors de l’aperçu des résultats de recherche. Vous pouvez uniquement afficher le message électronique protégé par des droits après l’avoir exporté.
+
+- Si vous devez empêcher quelqu’un de déchiffrer les messages protégés par RMS et les pièces jointes chiffrées, vous devez créer un groupe de rôles personnalisé (en copiant le groupe de rôles gestionnaire eDiscovery intégré), puis supprimer le rôle de gestion déchiffrement RMS du groupe de rôles personnalisé. Ajoutez ensuite la personne qui ne doit pas déchiffrer les messages en tant que membre du groupe de rôles personnalisé.

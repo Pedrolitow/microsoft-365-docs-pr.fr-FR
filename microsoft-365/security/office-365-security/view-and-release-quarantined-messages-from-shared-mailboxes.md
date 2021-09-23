@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Les utilisateurs peuvent apprendre à afficher et à agir sur les messages mis en quarantaine qui ont été envoyés à des boîtes aux lettres partagées pour qui ils ont des autorisations.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 90c4476d2c882c98b6b24a738adc2d9e2a9d6244994bd8f82c36b0d1f544c488
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: fae8ad995f5edb4735ecd62ba04a358da2769157
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53883869"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484082"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Afficher et libérer les messages mis en quarantaine à partir de boîtes aux lettres partagées
 
@@ -35,7 +35,7 @@ Auparavant, la possibilité pour les utilisateurs de gérer les messages mis en 
 
 À présent, le mappage automatique n’est plus nécessaire pour que les utilisateurs gèrent les messages mis en quarantaine qui ont été envoyés à des boîtes aux lettres partagées. Cela fonctionne simplement. Il existe deux méthodes différentes pour accéder aux messages mis en quarantaine qui ont été envoyés à une boîte aux lettres partagée :
 
-- Si l’administrateur a activé les notifications de courrier indésirable pour l’utilisateur final dans les [stratégies anti-courrier](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)indésirable, tout utilisateur qui a accès aux notifications de courrier indésirable de l’utilisateur final dans la boîte aux lettres partagée peut cliquer sur le bouton Réviser dans la notification pour passer en quarantaine dans le portail Microsoft 365 Defender.  Notez que cette méthode permet uniquement aux utilisateurs de gérer les messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée. Les utilisateurs ne peuvent pas gérer leurs propres messages de mise en quarantaine dans ce contexte.
+- Si l’administrateur [](quarantine-policies.md) a configuré des stratégies de mise en quarantaine pour autoriser les notifications de mise en quarantaine (auparavant appelées notifications de courrier indésirable pour l’utilisateur final), tout utilisateur qui a accès aux notifications de mise en quarantaine dans la boîte aux lettres partagée peut cliquer sur le bouton Réviser dans la notification pour passer en quarantaine dans le portail Microsoft 365 Defender.  Notez que cette méthode permet uniquement aux utilisateurs de gérer les messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée. Les utilisateurs ne peuvent pas gérer leurs propres messages de mise en quarantaine dans ce contexte.
 - L’utilisateur [peut être mis en quarantaine dans le portail Microsoft 365 Defender.](find-and-release-quarantined-messages-as-a-user.md) Par défaut, seuls les messages envoyés à l’utilisateur sont affichés. Toutefois, l’utilisateur peut modifier les résultats du tri **(le** bouton **ID** de message par  défaut) en adresse de messagerie du **destinataire,** entrer l’adresse e-mail de la boîte aux lettres partagée, puis cliquer sur Actualiser pour voir les messages mis en quarantaine qui ont été envoyés à la boîte aux lettres partagée.
 
   ![Tri des messages mis en quarantaine par adresse de messagerie du destinataire.](../../media/quarantine-sort-results-by-recipient-email-address.png)
@@ -45,6 +45,8 @@ Quelle que soit la méthode utilisée, les utilisateurs peuvent éviter toute co
   ![Supprimez la colonne Type de stratégie et ajoutez la colonne Destinataire en quarantaine.](../../media/quarantine-add-recipient-column.png)
 
 ## <a name="things-to-keep-in-mind"></a>Éléments à garder à l’esprit
+
+- _Les stratégies de_ mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire ou non pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les fonctionnalités prise en charge). Les stratégies de mise en quarantaine par défaut appliquent les fonctionnalités historiques qui permettent aux destinataires d’afficher et d’agir sur les messages. Les administrateurs peuvent créer et appliquer des stratégies de mise en quarantaine personnalisées qui définissent des fonctionnalités moins restrictives ou plus restrictives pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
 
 - Le premier utilisateur à agir sur le message mis en quarantaine décide de la fin du message pour toutes les personnes qui utilisent la boîte aux lettres partagée. Par exemple, si une boîte aux lettres partagée est accessible par 10 utilisateurs et qu’un utilisateur décide de supprimer le message de mise en quarantaine, le message est supprimé pour les 10 utilisateurs. De même, si un utilisateur décide de libérer le message, il est publié dans la boîte aux lettres partagée et est accessible par tous les autres utilisateurs de la boîte aux lettres partagée.
 

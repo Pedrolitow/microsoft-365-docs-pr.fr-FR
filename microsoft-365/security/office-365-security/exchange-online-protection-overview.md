@@ -15,12 +15,12 @@ ms.custom:
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie sur site dans des environnements autonomes et hybrides.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 006be2cf23735f6ec44c749de869e87d55be2123
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204443"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483098"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
@@ -48,13 +48,13 @@ Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier
 
 1. Lorsqu’un message entrant entre dans EOP, il passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur. La majorité du courrier indésirable est arrêté à ce stade et rejeté par EOP. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).
 
-2. Le message est ensuite inspecté à la recherche de programmes malveillants. Si un programme malveillant est détecté dans le message ou les pièces jointes, le message est acheminé vers une mise en quarantaine de l’administrateur uniquement. Pour en savoir plus sur la protection contre les programmes malveillants, consultez la [protection anti-programme malveillant dans EOP.](anti-malware-protection.md)
+2. Le message est ensuite inspecté à la recherche de programmes malveillants. Si un programme malveillant est détecté dans le message ou la ou les pièces jointes, le message est mis en quarantaine. Par défaut, seuls les administrateurs peuvent afficher et interagir avec les messages mis en quarantaine contre les programmes malveillants. Toutefois, les administrateurs [](quarantine-policies.md) peuvent créer et utiliser des stratégies de mise en quarantaine pour spécifier ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine. Pour en savoir plus sur la protection contre les programmes malveillants, consultez la [protection anti-programme malveillant dans EOP.](anti-malware-protection.md)
 
 3. Le message continue par le filtrage des stratégies, où il est évalué par rapport aux règles de flux de messagerie (également appelées règles de transport) que vous avez créées. Par exemple, une règle peut envoyer une notification à un responsable lorsqu’un message arrive d’un expéditeur spécifique.
 
    Dans une organisation sur site avec Exchange Enterprise licences d’accès aux données avec licences Services, les vérifications de protection contre la perte de données [(DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) dans EOP se produisent également à ce stade.
 
-4. Le message passe par le filtrage de contenu (anti-courrier indésirable et anti-usurpation) dans lequel les messages dangereux sont identifiés comme courrier indésirable, courrier indésirable à niveau de confiance élevé, hameçonnage, hameçonnage à haut niveau de confiance, ou en bloc (stratégies anti-courrier indésirable) ou usurpation d’adresse (paramètres d’usurpation dans les stratégies anti-hameçonnage). Vous pouvez configurer l’action à prendre sur le message en fonction du verdict de filtrage (mise en quarantaine, déplacement vers le dossier Courrier indésirable, etc.). Pour plus d’informations, voir [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+4. Le message passe par le filtrage de contenu (anti-courrier indésirable et anti-usurpation) dans lequel les messages dangereux sont identifiés comme courrier indésirable, courrier indésirable à niveau de confiance élevé, hameçonnage, hameçonnage à haut niveau de confiance, ou en bloc (stratégies anti-courrier indésirable) ou usurpation d’adresse (paramètres d’usurpation dans les stratégies anti-hameçonnage). Vous pouvez configurer l’action à prendre sur le message en fonction du verdict de filtrage (mise en quarantaine, déplacement vers le dossier Courrier indésirable, etc.) et de ce que les utilisateurs peuvent faire pour les messages mis en quarantaine à l’aide de stratégies de mise en [quarantaine.](quarantine-policies.md) Pour plus d’informations, voir [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
 Un message qui transmet correctement toutes ces couches de protection est remis aux destinataires.
 
@@ -111,7 +111,7 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Envoi de l’administrateur|[Utiliser la soumission d’administrateur pour soumettre des courriers indésirables, du hameçonnage, des URL et des fichiers suspectés à Microsoft](admin-submission.md)|
 |Envois d’utilisateurs (boîte aux lettres personnalisée)|[Stratégie de soumissions d’utilisateurs](user-submission.md)|
 |Quarantaine : administrateurs|[Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell](manage-quarantined-messages-and-files.md) <p> [FAQ sur les messages mis en quarantaine](quarantine-faq.yml) <p> [Signaler les messages et fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) <p> [En-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md) <p> Vous pouvez analyser les en-têtes de messages mis en quarantaine à l’aide de l’analyseur [d’en-tête de message sur](https://mha.azurewebsites.net/).|
-|Quarantaine : utilisateurs finaux|[Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Exchange Online PowerShell](find-and-release-quarantined-messages-as-a-user.md) <p> [Utiliser les notifications de courrier indésirable de l’utilisateur pour libérer et signaler les messages mis en quarantaine](use-spam-notifications-to-release-and-report-quarantined-messages.md)|
+|Quarantaine : utilisateurs finaux|[Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Exchange Online PowerShell](find-and-release-quarantined-messages-as-a-user.md) <p> [Utiliser les notifications de mise en quarantaine pour libérer et signaler les messages mis en quarantaine](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Stratégies de mise en quarantaine](quarantine-policies.md)|
 |**Flux de messagerie**||
 |Règles de flux de messagerie|[Règles de flux de messagerie (règles de transport) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Conditions de règle de flux de messagerie et exceptions (prédicats) dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Actions de règle de flux de courrier dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Gérer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procédures de règle de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
 |Domaines acceptés|[Gestion des domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)|
@@ -132,6 +132,6 @@ Pour plus d’informations sur les exigences, les limites importantes et la disp
 |Support technique par téléphone ou par Internet 24 heures sur 24, 7 jours sur 7|[Aide et support pour EOP](help-and-support-for-eop.md).|
 |**Autres fonctionnalités**||
 |Réseau de serveurs mondial géo-redondant|EOP s'exécute sur un réseau mondial de centres de données conçus pour contribuer à offrir une disponibilité optimale. Pour plus d’informations, consultez la section des centres de données [EOP](#eop-datacenters) plus tôt dans cet article.|
-|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages en attente restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
+|Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages de report restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
 |chiffrement de messages Office 365 disponible en tant qu’modules|Pour plus d'informations, voir [Chiffrement dans Office 365](../../compliance/encryption.md).|
 |||

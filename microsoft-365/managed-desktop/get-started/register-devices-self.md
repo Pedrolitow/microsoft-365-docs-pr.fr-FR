@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9be51ab9204ac8a950bf316f716b70b824980ba8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad85439d817013fa394fcb80bd5d47dbf391601f
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204054"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484118"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
@@ -27,7 +27,7 @@ Microsoft Manged Desktop peuvent fonctionner avec de nouveaux appareils ou vous 
 
 
 
-## <a name="prepare-to-register-brand-new-devices"></a>Préparer l’inscription des nouveaux appareils
+## <a name="prepare-to-register-brand-new-devices"></a>Préparer l’inscription de nouveaux appareils
 
 
 Une fois que vous avez les nouveaux appareils en main, vous devez suivre les étapes suivantes :
@@ -42,7 +42,7 @@ Une fois que vous avez les nouveaux appareils en main, vous devez suivre les ét
 
 Microsoft Manged Desktop identifie chaque appareil de manière unique en référentant son hachage matériel. Vous avez trois options pour obtenir ces informations :
 
-- Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les h biens matériels.
+- Demandez à votre fournisseur OEM le fichier d’inscription AutoPilot, qui inclut les hages matériels.
 - Exécutez [un script Windows PowerShell sur](#powershell-script-method) chaque appareil et collectez les résultats dans un fichier.
 - Démarrez chaque appareil(mais ne terminez pas l’Windows de configuration) et collectez les hages sur un [lecteur flash amovible.](#flash-drive-method)
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser le script [ PowerShellGet-WindowsAutoPilotInfo.ps1](https:/
 1. Sur un appareil autre que celui que vous inscrivez, insérez un lecteur USB.
 2. Ouvrez une invite PowerShell avec des droits d’administration.
 3. Exécuter `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience de configuration.* Si vous démarrez accidentellement l’installation, vous devez réinitialiser ou réinitialiser l’appareil.
+4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience d’installation.* Si vous démarrez accidentellement l’installation, vous devez réinitialiser ou réinitialiser l’appareil.
 5. Insérez le lecteur USB, puis appuyez sur Shift + F10.
 6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
 7. Exécuter `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -91,7 +91,7 @@ Procédez comme suit :
 
 1. Dans **le chargement de** fichier, fournissez un chemin d’accès au fichier CSV que vous avez créé précédemment.
 2. Sélectionnez [un profil d’appareil](../service-description/profiles.md) dans le menu déroulant.
-3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur les **appareils,** marqués comme **étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et en attente qu’un utilisateur commence à l’utiliser. 
+3. Sélectionnez **Enregistrer les appareils.** Le système ajoute les appareils à votre liste d’appareils sur les **appareils,** marqués comme **étant en attente d’inscription.** L’inscription prend généralement moins de 10 minutes et, en cas de réussite, l’appareil s’affiche comme prêt pour l’utilisateur, ce qui signifie qu’il est prêt et attend qu’un utilisateur commence à l’utiliser. 
 
 > [!NOTE]
 > Si vous modifiez manuellement l’appartenance au groupe Azure Active Directory (AAD) d’un appareil, il sera automatiquement réassigné au groupe pour son profil d’appareil et supprimé des groupes en conflit.
@@ -114,17 +114,17 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 | Hachage matériel non valide | Le hachage matériel que vous avez fourni pour cet appareil n’a pas été mis en forme correctement. Vérifiez à nouveau le hachage matériel, puis resoumettre. |
 | Appareil déjà inscrit | Cet appareil est déjà inscrit dans votre organisation. Aucune action supplémentaire n’est requise. |
 | Appareil revendiqué par une autre organisation | Cet appareil a déjà été revendiqué par une autre organisation. Vérifiez auprès de votre fournisseur d’appareils. |
-| Erreur inattendue | Votre demande n’a pas pu être traitée automatiquement. Contactez le support technique et fournissez l’ID de demande : <requestId> |
+| Erreur inattendue | Votre demande n’a pas pu être traitée automatiquement. Contactez le support technique et fournissez l’ID de demande : \<requestId\> |
 
 ### <a name="check-the-image"></a>Vérifier l’image
 
 Si votre appareil est issu d’un fournisseur Microsoft Manged Desktop partenaire, l’image doit être correcte.
 
-Vous pouvez également appliquer l’image vous-même si vous préférez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
+Vous pouvez également appliquer l’image vous-même si vous le souhaitez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
 ### <a name="autopilot-group-tag"></a>Balise de groupe Autopilot
 
-Lorsque vous utilisez le portail d’administration pour inscrire des appareils, nous attribuons automatiquement Microsoft365Managed_Autopilot **balise** de groupe Autopilot.
+Lorsque vous utilisez le portail d’administration pour inscrire des appareils, nous attribuons automatiquement la balise de groupe Autopilot associée au profil d’appareil répertorié dans Inscrire les appareils à l’aide de [l’Partner Center](register-devices-partner.md#register-devices-by-using-partner-center).
 Le service surveille tous les Microsoft Manged Desktop jour et affecte la balise de groupe à tous les appareils qui ne l’ont pas déjà.
 
 ### <a name="deliver-the-device"></a>Remettre l’appareil

@@ -16,16 +16,16 @@ metadata:
   ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-  description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les messages mis en quarantaine Exchange Online Protection (EOP).
+  description: Les administrateurs peuvent afficher les questions fréquemment posées et les réponses sur les messages mis en quarantaine dans Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 640a019c86e5313b81003136b2d9842d8784e29a
+  ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59202746"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "59483561"
 title: FAQ sur les messages mis en quarantaine
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -56,11 +56,14 @@ sections:
   - question: >
       Comment gérer les messages mis en quarantaine pour les programmes malveillants ?
     answer: >
-      Seuls les administrateurs peuvent gérer les messages mis en quarantaine pour les programmes malveillants. Pour plus d’informations, voir Gérer les messages et fichiers mis en [quarantaine en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
+      Par défaut, seuls les administrateurs peuvent gérer les messages mis en quarantaine pour les programmes malveillants. Pour plus d’informations, voir Gérer les messages et fichiers mis en [quarantaine en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
+
+
+      Toutefois, les administrateurs  peuvent créer et appliquer des stratégies de mise en quarantaine aux stratégies anti-programme malveillant qui définissent davantage de fonctionnalités pour les utilisateurs. Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
   - question: >
       Comment mettre en quarantaine le courrier indésirable ?
     answer: >
-      Par défaut, les messages classés comme courrier indésirable ou courrier en masse par filtrage du courrier indésirable sont remis à la boîte aux lettres de l’utilisateur et déplacés vers le dossier Courrier indésirable. Toutefois, vous pouvez créer et configurer des stratégies anti-courrier indésirable pour mettre en quarantaine le courrier indésirable ou les messages électroniques en masse à la place. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+      Par défaut, les messages classés comme courrier indésirable ou courrier en masse par filtrage du courrier indésirable sont remis à la boîte aux lettres de l’utilisateur et déplacés vers le dossier Courrier indésirable. Toutefois, vous pouvez configurer des stratégies anti-courrier indésirable pour mettre en quarantaine le courrier indésirable ou les messages électroniques en masse à la place. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
   - question: >
       Comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
     answer: >
@@ -68,7 +71,33 @@ sections:
   - question: >
       Quels messages les utilisateurs finaux peuvent-ils accéder en quarantaine ?
     answer: >
-      Les utilisateurs peuvent accéder aux courriers indésirables, aux courriers électroniques en masse et (depuis avril 2020) aux messages de hameçonnage dont ils sont destinataires. Les utilisateurs finaux ne peuvent pas accéder aux programmes malveillants mis en quarantaine, au hameçonnage à haut niveau de confiance ou aux messages mis en quarantaine en raison de l’action Remettre le **message** à l’action de mise en quarantaine hébergée dans les règles de flux de messagerie (également appelées règles de transport). Pour plus d’informations sur l’accès des utilisateurs aux messages mis en quarantaine, voir Rechercher et libérer les messages mis en quarantaine [en tant qu’utilisateur.](find-and-release-quarantined-messages-as-a-user.md)
+      Les stratégies de mise en quarantaine définissent si les utilisateurs peuvent accéder aux messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les [fonctionnalités pris en charge).](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
+
+
+      Par défaut, les utilisateurs peuvent accéder aux types suivants de messages mis en quarantaine dont ils sont destinataires :
+
+
+      - **Stratégies anti-courrier** indésirable : courrier indésirable, courrier électronique en masse et messages d’hameçonnage (pas les messages de hameçonnage à haut niveau de confiance).
+
+      - Stratégies **anti-hameçonnage**: expéditeurs usurpés, protection contre l’usurpation d’identité d’utilisateur (Defender pour Office 365), protection contre l’usurpation d’identité de domaine (Defender pour Office 365) et protection contre l’usurpation d’identité de boîte aux lettres (Defender pour Office 365).
+
+
+      Pour plus d’informations, voir [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur.](find-and-release-quarantined-messages-as-a-user.md)
+
+
+      Par défaut, les utilisateurs finaux ne peuvent pas accéder aux types de messages mis en quarantaine suivants lorsqu’ils sont destinataires :
+
+
+      - **Stratégies anti-courrier indésirable**: hameçonnage à haut niveau de confiance.
+
+      - **Stratégies anti-programme malveillant**
+
+      - **Coffre Attachments (Defender for Office 365)**: messages électroniques provenant de stratégies et de fichiers Coffre Attachments de Coffre Attachments for SharePoint, OneDrive et Microsoft Teams.
+
+      - **Règles de flux de messagerie (règles** de transport) : messages mis en quarantaine en raison de l’action remettre le **message** à l’action de mise en quarantaine hébergée dans les règles de flux de messagerie.
+
+
+      Pour plus d’informations, voir Gérer les messages et fichiers mis en [quarantaine en tant qu’administrateur.](manage-quarantined-messages-and-files.md)
   - question: >
       Pendant combien de temps les messages sont-ils mis en quarantaine ?
     answer: >

@@ -20,12 +20,12 @@ description: Découvrez comment utiliser les fonctionnalités d’examen et de r
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a67d9291e7cb33e6385c916f90da5dfae54e352
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1fef669f8e961ab60c222fad59811f78d55baabb
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180886"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59484034"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Examiner les e-mails malveillants qui ont été remis dans Microsoft 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "59180886"
 [Microsoft Defender pour Office 365](defender-for-office-365.md) vous permet d’examiner les activités qui mettent les personnes de votre organisation en danger et de prendre des mesures pour protéger votre organisation. Par exemple, si vous faites partie de l’équipe de sécurité de votre organisation, vous pouvez rechercher et examiner les messages électroniques suspects qui ont été remis. Vous pouvez le faire à l’aide de [l’Explorateur de menaces (ou des détections en temps réel).](threat-explorer.md)
 
 > [!NOTE]
-> Retentez l’article de [correction ici.](remediate-malicious-email-delivered-office-365.md)
+> Cliquez ici pour passer à l’article [de correction.](remediate-malicious-email-delivered-office-365.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -90,13 +90,13 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
 
 3. Dans le menu **Affichage,** sélectionnez **Courrier** \> **électronique dans** la liste déroulante.
 
-    ![Menu Affichage de l’Explorateur de menaces et Courrier électronique - Programmes malveillants, Hameçonnage, Soumissions et Toutes les options e-mail, également Contenu - Programmes malveillants.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    ![Menu Affichage de l’Explorateur de menaces et Courrier électronique - Programmes malveillants, hameçonnage, soumissions et toutes les options de messagerie, également Contenu - Programmes malveillants.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
     La *vue Programmes* malveillants est actuellement la valeur par défaut et capture les e-mails dans lequel une menace de programme malveillant est détectée. *L’affichage* Hameçonnage fonctionne de la même manière, pour le hameçonnage.
 
     Toutefois, *l’affichage Tous* les messages électroniques répertorie tous les messages reçus par l’organisation, que des menaces soient détectées ou non. Comme vous pouvez l’imaginer, il s’agit d’un grand nombre de données, c’est pourquoi cet affichage affiche un espace réservé qui demande l’application d’un filtre. (Cette vue est uniquement disponible pour Defender pour les Office 365 P2.)
 
-    *L’affichage* Soumissions affiche tous les messages envoyés par l’administrateur ou l’utilisateur qui ont été signalés à Microsoft.
+    *L’affichage* Soumissions affiche tous les messages envoyés par un administrateur ou un utilisateur qui ont été signalés à Microsoft.
 
 4. **Recherche et filtrage dans l’Explorateur** de menaces : les filtres apparaissent en haut de la page dans la barre de recherche pour aider les administrateurs dans leurs enquêtes. Notez que plusieurs filtres peuvent être appliqués en même temps et que plusieurs valeurs séparées par des virgules sont ajoutées à un filtre pour affiner la recherche. N’oubliez pas :
 
@@ -108,9 +108,9 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
 
 5. **Filtres avancés**: avec ces filtres, vous pouvez créer des requêtes complexes et filtrer votre jeu de données. Le fait de cliquer *sur Filtres* avancés ouvre un volant avec des options.
 
-   Le filtrage avancé est un excellent ajout aux fonctionnalités de recherche. Une valeur BOOlean NOT sur  **les** filtres de domaine **destinataire,** expéditeur et expéditeur permet aux administrateurs d’examiner en excluant les valeurs. Cette option est **l’option Égal à aucune sélection.** Cette option permet aux administrateurs d’exclure les boîtes aux lettres indésirables des enquêtes (par exemple, les boîtes aux lettres d’alerte et les boîtes aux lettres de réponse par défaut) et est utile dans les cas où les administrateurs recherchent un sujet spécifique (par exemple, Attention) où le destinataire peut être égal à aucun des éléments defaultMail@contoso.com *.* Il s’agit d’une recherche de valeur exacte.
+   Le filtrage avancé est un excellent ajout aux fonctionnalités de recherche. Une valeur BOOlean NOT sur  **les** filtres de domaine **destinataire,** expéditeur et expéditeur permet aux administrateurs d’examiner en excluant les valeurs. Cette option est **l’option Égal à aucune sélection.** Cette option permet aux administrateurs d’exclure les boîtes aux lettres indésirables des enquêtes (par exemple, les boîtes aux lettres d’alerte et les boîtes aux lettres de réponse par défaut) et est utile dans les cas où les administrateurs recherchent un sujet spécifique (par exemple, Attention) où le destinataire peut être égal à : *defaultMail@contoso.com*. Il s’agit d’une recherche de valeur exacte.
 
-   ![Destinataires - « Contient aucun des » filtres avancés.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   ![Destinataires - « Ne contient aucun des » filtres avancés.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
    L’ajout d’un filtre d’heure à la date de début et à la date de fin permet à votre équipe de sécurité d’descendre rapidement dans le temps. La durée autorisée la plus courte est de 30 minutes. Si vous pouvez limiter l’action suspecte par période (par exemple, cela s’est produit il y a 3 heures), cela limite le contexte et aide à identifier le problème.
 
@@ -121,8 +121,8 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
     *L’action de* remise est l’action entreprise sur un e-mail en raison de stratégies ou de détections existantes. Voici les actions possibles qu’un e-mail peut prendre :
 
     - **Remis :** le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur et l’utilisateur peut y accéder directement.
-    - **Courrier** indésirable (remis au courrier indésirable) : le courrier électronique a été envoyé au dossier courrier indésirable ou au dossier supprimé de l’utilisateur, et l’utilisateur a accès aux messages électroniques dans son dossier Courrier indésirable ou Supprimé.
-    - **Bloqué** : tous les messages électroniques mis en quarantaine, qui ont échoué ou ont été supprimés. (Ceci est complètement inaccessible par l’utilisateur.)
+    - **Courrier indésirable** (remis au courrier indésirable) : le courrier électronique a été envoyé au dossier courrier indésirable ou au dossier supprimé de l’utilisateur, et l’utilisateur a accès aux messages électroniques dans son dossier Courrier indésirable ou Supprimé.
+    - **Bloqué** : tous les messages électroniques mis en quarantaine, qui ont échoué ou ont été supprimés.
     - **Remplacé :** tout e-mail où des pièces jointes malveillantes sont remplacées par des .txt qui font état d’une pièce jointe malveillante
 
     **Emplacement de remise**: le filtre d’emplacement de remise est disponible pour aider les administrateurs à comprendre où les messages malveillants suspectés ont été envoyés et quelles actions ont été prises sur celui-ci. Les données résultantes peuvent être exportées vers une feuille de calcul. Les emplacements de remise possibles sont les :
@@ -146,9 +146,9 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
     |Remplacements de l’Explorateur de menaces|Ce qu’elles signifient|
     |---|---|
     |Autorisé par la stratégie d’organisation|Le courrier a été autorisé dans la boîte aux lettres comme indiqué par la stratégie de l’organisation.|
-    |Bloqué par la stratégie d’organisation|La remise du courrier à la boîte aux lettres a été bloquée, comme indiqué par la stratégie de l’organisation.|
+    |Blocage par la stratégie d’organisation|La remise du courrier à la boîte aux lettres a été bloquée, comme indiqué par la stratégie de l’organisation.|
     |Extension de fichier bloquée par la stratégie d’organisation|La remise du fichier à la boîte aux lettres a été bloquée, comme indiqué par la stratégie de l’organisation.|
-    |Autorisé par la stratégie utilisateur|Le courrier a été autorisé dans la boîte aux lettres comme indiqué par la stratégie de l’utilisateur.|
+    |Autorisé par la stratégie utilisateur|Le courrier a été autorisé dans la boîte aux lettres comme indiqué par la stratégie utilisateur.|
     |Bloqué par la stratégie de l’utilisateur|La remise du courrier à la boîte aux lettres a été bloquée, comme indiqué par la stratégie de l’utilisateur.|
     |
 
@@ -156,7 +156,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs 
 
 7. **Affichage de la chronologie des e-mails**: votre équipe en matière d’opérations de sécurité peut avoir besoin de détails détaillés sur le courrier électronique pour examiner plus en détail. La chronologie du courrier électronique permet aux administrateurs d’afficher les actions entreprises sur un e-mail de la remise à la remise post-remise. Pour afficher une chronologie de courrier électronique, cliquez sur l’objet d’un message électronique, puis cliquez sur Chronologie de l’e-mail. (Elle apparaît parmi d’autres titres du panneau, tels que Résumé ou Détails.) Ces résultats peuvent être exportés vers une feuille de calcul.
 
-    La chronologie du courrier électronique s’ouvre dans une table qui affiche tous les événements de remise et de post-remise pour le courrier électronique. S’il n’y a aucune autre action sur le courrier électronique, vous devez voir un événement unique pour la remise d’origine qui indique un résultat, tel que Bloqué *,* avec un verdict comme *hameçonnage*. Les administrateurs peuvent exporter l’intégralité de la chronologie du courrier électronique, y compris tous les détails sous l’onglet et le courrier électronique (par exemple, objet, expéditeur, destinataire, réseau et ID de message). La chronologie du courrier électronique réduit la randomisation, car il y a moins de temps passé à vérifier les différents emplacements pour essayer de comprendre les événements qui se sont produit depuis l’arrivée de l’e-mail. Lorsque plusieurs événements se produisent en même temps sur un e-mail ou à proximité de celui-ci, ces événements s’affiche dans un affichage chronologique.
+    La chronologie du courrier électronique s’ouvre dans une table qui affiche tous les événements de remise et de post-remise pour le courrier électronique. S’il n’y a aucune autre action sur le courrier électronique, vous devez voir un événement unique pour la remise d’origine qui indique un résultat, tel que Bloqué *,* avec un verdict comme *Hameçonnage*. Les administrateurs peuvent exporter l’intégralité de la chronologie du courrier électronique, y compris tous les détails sous l’onglet et le courrier électronique (par exemple, objet, expéditeur, destinataire, réseau et ID de message). La chronologie du courrier électronique réduit la randomisation, car il y a moins de temps passé à vérifier les différents emplacements pour essayer de comprendre les événements qui se sont produit depuis l’arrivée de l’e-mail. Lorsque plusieurs événements se produisent en même temps sur un e-mail ou à proximité de celui-ci, ces événements s’affiche dans un affichage chronologique.
 
 8. **Aperçu /téléchargement :** l’Explorateur de menaces fournit à votre équipe des opérations de sécurité les détails dont elle a besoin pour examiner les e-mails suspects. Votre équipe des opérations de sécurité peut :
 
@@ -177,7 +177,7 @@ L’action de remise est l’action entreprise sur un e-mail en raison de strat�
 
 - **Remis :** le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur et l’utilisateur peut y accéder directement.
 - **Courrier indésirable** : le courrier électronique a été envoyé au dossier courrier indésirable ou au dossier supprimé de l’utilisateur, et l’utilisateur a accès aux messages électroniques dans son dossier Courrier indésirable ou Supprimé.
-- **Bloqué** : tous les messages électroniques mis en quarantaine, qui ont échoué ou ont été supprimés. (Ceci est complètement inaccessible par l’utilisateur.)
+- **Bloqué** : tous les messages électroniques mis en quarantaine, qui ont échoué ou ont été supprimés.
 - **Remplacé :** tout e-mail où des pièces jointes malveillantes sont remplacées par .txt qui font état d’une pièce jointe malveillante.
 
 L’emplacement de remise affiche les résultats des stratégies et des détections qui s’exécutent après la remise. Il est lié à une action de remise. Ce champ a été ajouté pour donner un aperçu de l’action prise lorsqu’un message est trouvé. Voici les valeurs possibles d’emplacement de remise :
@@ -197,7 +197,7 @@ L’emplacement de remise affiche les résultats des stratégies et des détecti
 > [!IMPORTANT]
 > Aller à une rubrique de [correction ici.](remediate-malicious-email-delivered-office-365.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 [Corriger les messages malveillants remis dans Office 365](remediate-malicious-email-delivered-office-365.md)
 

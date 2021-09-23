@@ -20,12 +20,12 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc614d873a07a40c1ef65fde3681ce89edaae6d8
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 80ba6c1f7c04a48b5472a12db75d602bd503465e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479572"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483305"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports defender pour Office 365 dans le portail Microsoft 365 Defender web
 
@@ -51,7 +51,7 @@ Les organisations Microsoft Defender pour Office 365 (par exemple, les abonnemen
 
 2. Sélectionnez **rapports pour le téléchargement.**
 
-![Envoyez un & page de rapports de collaboration dans le portail Microsoft 365 Defender web.](/microsoft-365/media/email-collaboration-reports.png)
+![Envoyez un & page de rapports de collaboration dans le portail Microsoft 365 Defender web.](../../media/email-collaboration-download-reports.png)
 
 > [!NOTE]
 >

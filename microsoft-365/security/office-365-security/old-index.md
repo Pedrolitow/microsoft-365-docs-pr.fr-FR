@@ -16,12 +16,12 @@ ms.collection:
 description: La sécurité dans Office 365, de EOP à Defender pour Office 365 Plans 1 et 2, les configurations de sécurité Standard vs Strict, et plus encore. Comprenez ce que vous avez et découvrez comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ef88d80a4d02a51055c9bfe338617b04162888a
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: fac32e667b0393cacf56c9e478d50980c7ad36ec
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571962"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482786"
 ---
 # <a name="office-365-security"></a>Sécurité Office 365
 
@@ -91,7 +91,7 @@ Ce qui fait de l'ajout des plans Microsoft Defender pour Office 365 un avantage
 
 |Prévention/détection|Examiner|Répondre|
 |---|---|---|
-|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></u1>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Vidage automatique de zéro heure (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
+|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique en heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
 |
 
 Si vous souhaitez approfondir EOP, **[passez à cet article](exchange-online-protection-overview.md)**.
@@ -103,7 +103,7 @@ Gains avec **Defender pour Office 365, Plan 1** (à ce jour) :
 
 |Prévention/détection|Examiner|Répondre|
 |---|---|---|
-|Les technologies incluent tous les avantages EOP ainsi que les avantages suivants :<u1><li>Pièces jointes fiables</li><li>Liens fiables<li>Protection Microsoft Defender pour Office 365 pour les charges de travail (par exemple, SharePoint Online, Teams, OneDrive Entreprise</li><li>Protection par clic dans le courrier électronique, les clients Office et Teams</li><li>Anti-hameçonnage dans Defender pour Office 365</li><li>Protection de l’emprunt d’identité d’utilisateur et de domaine</li><li>Alertes et API d’intégration SIEM pour les alertes</li>|<li>API d’intégration SIEM pour les détections</li><li>**Outil de détection en temps réel**</li><li>traçage d’URL</li>|<li>Identique</li></u1>
+|Les technologies incluent tous les avantages EOP ainsi que les avantages suivants :<ul><li>Pièces jointes fiables</li><li>Liens fiables<li>Protection Microsoft Defender pour Office 365 pour les charges de travail (par exemple, SharePoint Online, Teams, OneDrive Entreprise</li><li>Protection par clic dans le courrier électronique, les clients Office et Teams</li><li>Anti-hameçonnage dans Defender pour Office 365</li><li>Protection de l’emprunt d’identité d’utilisateur et de domaine</li><li>Alertes et API d’intégration SIEM pour les alertes</li>|<li>API d’intégration SIEM pour les détections</li><li>**Outil de détection en temps réel**</li><li>traçage d’URL</li>|<li>Identique</li></ul>
 
 Ainsi, Microsoft Defender pour Office 365 P1 s'étend sur le côté ***prévention** _ de la maison, et ajoute des formes supplémentaires de _*_détection_**.
 
@@ -114,7 +114,7 @@ Gains avec **Defender pour Office 365, Plan 2** (à ce jour) :
 
 |Prévention/détection|Examiner|Répondre|
 |---|---|---|
-|Les technologies incluent tous les logiciels EOP, Microsoft Defender pour Office 365 P1 ainsi que :<u1><li>Identique</li>|<li>**Explorateur de menaces**</li><li>Suivi des menaces</li><li>Affichages de campagne</li>|<li>Enquêtes et réponses automatisées (AIR)</li><li>AIR à partir de l’Explorateur de menaces</li><li>Enquêtes et réponses automatisées pour les utilisateurs compromis</li><li>API d’intégration SIEM pour les enquêtes automatisées</li>
+|Les technologies incluent tous les logiciels EOP, Microsoft Defender pour Office 365 P1 ainsi que :<ul><li>Identique</li>|<li>**Explorateur de menaces**</li><li>Suivi des menaces</li><li>Affichages de campagne</li>|<li>Enquêtes et réponses automatisées (AIR)</li><li>AIR à partir de l’Explorateur de menaces</li><li>Enquêtes et réponses automatisées pour les utilisateurs compromis</li><li>API d’intégration SIEM pour les enquêtes automatisées</li>
 
 Ainsi, Microsoft Defender pour Office 365 P2 développe le côté ***enquête et réponse de la maison***, et ajoute une nouvelle force de repérage. Automatisation.
 

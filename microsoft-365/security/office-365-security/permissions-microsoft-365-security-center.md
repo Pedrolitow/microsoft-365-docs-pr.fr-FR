@@ -19,12 +19,12 @@ description: Les administrateurs peuvent apprendre comment gérer les autorisati
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3eb4f424ba8b9fd73f5cad62c2a136da8fd8249
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202751"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482858"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorisations dans le Portail Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Les autorisations dans le Portail Microsoft 365 Defender sont basées sur le mod
 
 Un **rôle** accorde les autorisations nécessaires pour effectuer un ensemble de tâches.
 
-Un **groupe de rôles** est un ensemble de rôles qui permet aux utilisateurs d’effectuer leurs tâches dans le Portail Microsoft 365 Defender. Par exemple, le groupe de rôles Administrateurs du simulateur d’attaques inclut le rôle Administrateur du simulateur d’attaques pour créer et gérer tous les aspects de l’entraînement de simulation d’attaque.
+Un **groupe de rôles** est un ensemble de rôles qui permet aux utilisateurs d’effectuer leurs tâches dans le Portail Microsoft 365 Defender.
 
 Le Portail Microsoft 365 Defender inclut des groupes de rôles par défaut pour les tâches et fonctions les plus courantes que vous devez assigner. En règle générale, nous vous recommandons d’ajouter simplement des personnes comme **membres** aux groupes de rôles par défaut.
 

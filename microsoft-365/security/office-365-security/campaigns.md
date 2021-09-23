@@ -19,12 +19,12 @@ ms.collection:
 description: Découvrez les affichages campagne dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca5049b234972ef55b951c0886a9d4074613c860
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bc2bb1adc39aae70f8ace89bf0efaaf5a7a5c5a
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208668"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482839"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -45,14 +45,14 @@ Campaign Views vous permet de voir la présentation d’une attaque plus rapidem
 
 Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent pour arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
 
-Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source de l’attaque**: adresses IP sources et domaines de messagerie de l’expéditeur.
 - **Propriétés du** message : le contenu, le style et le ton des messages.
 - **Destinataires du message**: lien entre les destinataires. Par exemple, les domaines des destinataires, les fonctions de travail des destinataires (administrateurs, cadres, etc.), les types d’entreprise (grandes, petites, publiques, privées, etc.) et les secteurs d’activité.
 - **Charge utile d’attaque**: liens malveillants, pièces jointes ou autres charges utiles dans les messages.
 
-Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée sur votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
+Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée contre votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
 
 ## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Affichages des campagnes dans le portail Microsoft 365 Defender web
 
@@ -60,7 +60,7 @@ Les affichages de campagne sont disponibles dans le portail Microsoft 365 Defend
 
 ![Vue d’ensemble des campagnes dans Microsoft 365 Defender portail.](../../media/campaigns-overview.png)
 
-Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
+Vous pouvez également obtenir les affichages de campagne à partir des pages :
 
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Campagnes**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Tous les e-mails** \> **Onglet Campagne**
@@ -88,11 +88,11 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Type**: cette valeur est **hameçonnage** ou **programme malveillant.**
 
-- **Sous-type**: cette valeur contient plus de détails sur la campagne. Par exemple :
+- **Sous-type**: cette valeur contient plus de détails sur la campagne. Par exemple :
   - **Hameçonnage**: si disponible, marque faisant l’objet d’un hameçonnage par cette campagne. Par exemple, `Microsoft` , `365` , ou `Unknown` `Outlook` `DocuSign` .
   - **Programme** malveillant : par exemple, `HTML/PHISH` ou `HTML/<MalwareFamilyName>` .
 
-  Si disponible, la marque faisant l’objet d’un hameçonnage par cette campagne. Lorsque la détection est pilotée par Defender pour Office 365 technologie, le préfixe **ATP-** est ajouté à la valeur de sous-type.
+  Si disponible, la marque faisant l’objet d’un hameçonnage par cette campagne. Lorsque la détection est pilotée par Defender pour la Office 365, le préfixe **ATP est** ajouté à la valeur de sous-type.
 
 - **Destinataires** : nombre d’utilisateurs qui ont été ciblés par cette campagne.
 
@@ -106,7 +106,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Visité :** nombre d’utilisateurs qui ont réellement effectué l’accès au site web de charge utile. S’il existe **des valeurs Clicked,** mais Coffre liens ont bloqué l’accès au site web, cette valeur est zéro.
 
-**L’onglet Origine** de la campagne affiche les sources des messages sur une carte du monde.
+**L’onglet Origine de** la campagne affiche les sources des messages sur une carte du monde.
 
 ### <a name="filters-and-settings"></a>Filtres et paramètres
 
@@ -116,7 +116,7 @@ En haut de la page **Campagne,** plusieurs paramètres de filtre et de requête 
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
-Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser.**
+Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser**.
 
 Les propriétés filtrables de campagne disponibles dans le bouton **Type** de campagne sont décrites dans la liste suivante :
 
@@ -161,7 +161,7 @@ Pour un filtrage plus avancé, y compris le  filtrage par plusieurs propriétés
 
 - Vous pouvez cliquer **sur Ajouter une condition pour** sélectionner plusieurs conditions.
 - Vous pouvez choisir l’opérateur **And** ou **Or** entre les conditions.
-- Vous pouvez sélectionner l’élément **de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
+- Vous pouvez sélectionner **l’élément de groupe Condition** en bas de la liste des conditions pour former des conditions composées complexes.
 
 Lorsque vous avez terminé, cliquez sur **le bouton Requête.**
 
@@ -214,7 +214,7 @@ Le diagramme contient les informations suivantes :
 
   ****
 
-  |Valeur|Verdict du filtre anti-courrier indésirable|Description|
+  |Valeur|Verdict de filtrage du courrier indésirable|Description|
   |---|---|---|
   |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|
@@ -225,7 +225,7 @@ Le diagramme contient les informations suivantes :
   |**Bloc de client**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des Coffre d’un utilisateur.|
   |**Blocage de l’utilisateur**<sup>\*\*</sup>|`SFV:BLK`|Le message a été bloqué par le filtrage du courrier indésirable car l’expéditeur se trouvait dans la liste des expéditeurs bloqués d’un utilisateur.|
-  |**ZAP**|s/o|[La purge automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) a déplacé le message remis dans le dossier Courrier indésirable ou mis en quarantaine. Vous configurez l’action dans votre stratégie anti-courrier indésirable.|
+  |**ZAP**|s/o|[La purge automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) a déplacé le message remis dans le dossier Courrier indésirable ou mis en quarantaine. Vous configurez l’action dans les [stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> Examinez vos stratégies anti-courrier indésirable, car le message autorisé aurait probablement été bloqué par le service.

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 577fc2cd228da6e09de01cf98e3e5deb9af7b730
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2b5ef1857c246629c5d5fb9da067ccaa6a5339e
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177476"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482822"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -75,7 +75,7 @@ Microsoft 365 Defender’une couche unique entre produits complète les composan
 - Automatisez la réponse à la compromission en déclenchant la réparation automatique des biens touchés par le biais de corrections automatisées.
 - Permettre aux équipes de sécurité d’effectuer une recherche détaillée et efficace des menaces sur les points de terminaison et Office données.
 
-Voici un exemple de la façon dont le portail Microsoft 365 Defender met en corrélation toutes les alertes associées dans la suite de produits en un seul incident.
+Voici un exemple de la façon dont le portail Microsoft 365 Defender met en corrélation toutes les alertes associées dans la suite de produits en un incident unique.
 
 ![Exemple de page de présentation d’incident.](../../media/overview-incident.png) <br>
 
@@ -93,13 +93,13 @@ Microsoft 365 Defender fonctionnalités entre produits sont les suivantes :
 - File d’attente **d’incidents combinés** : pour aider les professionnels de la sécurité à se concentrer sur ce qui est critique en garantissant l’étendue d’attaque complète, les ressources impactées et les actions de correction automatisées sont regroupées et mises en avant en temps voulu. 
 - **Réponse automatique aux menaces** : les informations sur les menaces critiques sont partagées en temps réel entre les produits Microsoft 365 Defender pour aider à arrêter la progression d’une attaque. 
 
-   Par exemple, si un fichier malveillant est détecté sur un point de terminaison protégé par Defender pour endpoint, il demande à Defender pour Office 365 d’analyser et de supprimer le fichier de tous les messages électroniques. Le fichier sera bloqué à la vue par l’ensemble Microsoft 365 suite de sécurité.
+   Par exemple, si un fichier malveillant est détecté sur un point de terminaison protégé par Defender for Endpoint, il demande à Defender pour Office 365 d’analyser et de supprimer le fichier de tous les messages électroniques. Le fichier sera bloqué à la vue par l’ensemble Microsoft 365 suite de sécurité.
 - **Auto-réparation** pour les appareils compromis, les identités des utilisateurs et les boîtes aux lettres : Microsoft 365 Defender utilise des actions automatiques et des playbooks optimisés par l’IA pour corriger les biens touchés à un état sécurisé. Microsoft 365 Defender utilise les fonctionnalités de correction automatique des produits de la suite pour s’assurer que tous les biens touchés liés à un incident sont automatiquement corrigés lorsque cela est possible.
 - **Recherche de** menaces entre produits : les équipes de sécurité peuvent tirer parti de leurs connaissances organisationnelles uniques pour chercher des signes de compromission en créant leurs propres requêtes personnalisées sur les données brutes collectées par les différents produits de protection. Microsoft 365 Defender fournit un accès basé sur une requête à 30 jours de signaux bruts historiques et de données d’alerte sur les points de terminaison et Defender pour Office 365 données. 
 
 ## <a name="get-started"></a>Prise en main
 
-Microsoft 365 Defender licences doivent être remplies avant de pouvoir activer le service dans le portail Microsoft 365 Defender à [l’security.microsoft.com](https://security.microsoft.com). Pour plus d’informations, consultez :
+Microsoft 365 Defender licences doivent être remplies avant de pouvoir activer le service dans le portail Microsoft 365 Defender à [l’security.microsoft.com](https://security.microsoft.com). Pour plus d’informations, voir :
 
 - [Conditions de licence](prerequisites.md#licensing-requirements)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
@@ -108,7 +108,7 @@ Microsoft 365 Defender licences doivent être remplies avant de pouvoir activer 
 
 Grâce à ce parcours d’apprentissage de Microsoft Learn, vous pouvez comprendre Microsoft 365 Defender et comment il peut vous aider à identifier, contrôler et corriger les menaces de sécurité.
 
-|Formation :|Détecter les cyberattaques et y répondre avec Microsoft 365 Defender|
+|Formation :|Détecter les cyberattaques et y répondre avec Microsoft 365 Defender|
 |---|---|
 |![Microsoft 365 Defender de formation.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Microsoft 365 Defender unifie les signaux de menace sur les points de terminaison, les identités, le courrier électronique et les applications afin de fournir une protection intégrée contre les cyberattaques sophistiquées. Microsoft 365 Defender est l’expérience centrale pour examiner et répondre aux incidents et rechercher de manière proactive les activités de cybersécurité malveillantes en cours.<p> 1 h 38 min - Learning chemin d’accès - 5 modules|
 
@@ -117,4 +117,4 @@ Grâce à ce parcours d’apprentissage de Microsoft Learn, vous pouvez comprend
 
 
 ## <a name="see-also"></a>Voir aussi
-- [Déployer des fonctionnalités de protection contre les menaces dans Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)
+- [Déployer la protection contre les rançongiciels pour votre client Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)

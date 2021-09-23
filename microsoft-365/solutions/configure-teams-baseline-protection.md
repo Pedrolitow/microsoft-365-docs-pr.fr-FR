@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkTEAMS
 recommendations: false
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: 24bdb7a5d5f4c124365a6b5b7cdc67d53adf8278
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a21aa9bf3aeb5d5f5cb2efbc90589cafe2a11be1
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204317"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479740"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -53,7 +54,7 @@ Pour déterminer les paramètres d’accès invité Teams, procédez comme suit 
 1. Connectez-vous au Centre d’administration Microsoft 365 sur[https://admin.microsoft.com](https://admin.microsoft.com).
 2. Dans la barre de navigation de gauche, cliquez sur **Afficher tout**.
 3. Sous **Centres d’administration**, cliquez sur **Teams**.
-4. Dans le Centre d’administration Teams, dans le volet de navigation gauche, développez **Paramètres à l’échelle de l’organisation**, puis cliquez sur **Accès invité**.
+4. Dans le Centre d’administration Teams, dans le volet de navigation gauche, développez **Paramètres à l’échelle de l’organisation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Accès invité**</a>.
 5. Assurez-vous que **Autoriser l’accès invité dans Teams** est défini sur **Activé**.
 6. Apportez les modifications souhaitées aux autres paramètres invités, puis cliquez sur **Enregistrer**.
 
