@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: a77af4e72c5eaa5d66f120f05e91913c292051ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: abfd937b98ff863876060fcf6bbbe38c6b64f23f
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175771"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479872"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -409,9 +409,22 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
         [Activités des obstacles aux informations](#information-barriers-activities)
     :::column-end:::
     :::column:::
-        [Activités administrateur Exchange](#exchange-admin-audit-log)
+        [Activités de révision de la disposition](#disposition-review-activities)
     :::column-end:::
 :::row-end:::
+
+:::row:::
+    :::column:::
+        [Activités administrateur Exchange](#exchange-admin-audit-log)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
 
@@ -984,6 +997,8 @@ Le tableau suivant répertorie les événements provoquant des activités d’é
 
 ### <a name="retention-policy-and-retention-label-activities"></a>Stratégie de rétention et activités d’étiquette de rétention
 
+Le tableau suivant décrit les [ activités de configuration des stratégies de rétention](retention.md) et des étiquettes de rétention lorsqu’elles ont été créées, reconfigurées ou supprimées.
+
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 | Paramètres configurés pour une stratégie de rétention |NewRetentionComplianceRule |L’administrateur a configuré les paramètres de rétention pour une nouvelle stratégie de rétention. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule).|
@@ -1031,6 +1046,18 @@ Le tableau suivant répertorie les activités de les obstacles aux information q
 | Ajout de segments à un site | SegmentsAdded | Un administrateur général ou un propriétaire de site SharePoint a ajouté un ou plusieurs segments d’information qui empêchent l’accès à un site. |
 | Modification de segments d'un site | SegmentsChanged | Un administrateur SharePoint ou un administrateur général a modifié un ou plusieurs segments de obstacles aux informations pour un site. |
 | Suppression de segments d'un site | Segmentsremoved | Un administrateur SharePoint ou un administrateur général a supprimé un ou plusieurs segments de obstacles aux informations d’un site. |
+||||
+
+### <a name="disposition-review-activities"></a>Activités d'examen de la disposition
+
+Le tableau suivant répertorie les activités qu’un réviseur de disposition a eues lorsqu’un élément a atteint la fin de sa période de rétention configurée. Pour plus d’informations, voir [Affichage et élimination du contenu.](disposition.md#viewing-and-disposing-of-content)
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Ramassage approuvé|ApproveDisposal|Un réviseur de disposition a approuvé la disposition de l’élément pour le déplacer à l’étape de disposition suivante. Si l’élément était à la seule ou dernière étape de la révision de la suppression, l’approbation de la suppression a marqué l’élément comme éligible pour la suppression définitive.|
+|Étendue de la période de rétention|ExtendRetentiond|Un réviseur de disposition a étendu la période de rétention de l’élément.|
+|Élément réétiqueté|RelabelItem|Un réviseur de disposition a de nouveau étiqueté l’étiquette de rétention.|
+|Réviseurs ajoutés|AddReviewer|Un réviseur de disposition a ajouté un ou plusieurs autres utilisateurs à la phase de révision de la disposition actuelle.|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange

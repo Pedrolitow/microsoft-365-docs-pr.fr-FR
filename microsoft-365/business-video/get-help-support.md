@@ -20,23 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Vous devez être administrateur d’un abonnement professionnel pour obtenir de l’aide sur l’administrateur ou un support en ligne ou par téléphone dans Microsoft 365 Business Premium.
-ms.openlocfilehash: d636f153e41963ada30bd10066e4211325933cbe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
+ms.openlocfilehash: 7d925e6cea30a5076dce225284fe57ffde6948d0
+ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206596"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59479536"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
-## <a name="watch-get-help-or-support"></a>Regarder : obtenir de l’aide ou une assistance technique 
+::: moniker range="o365-worldwide"
+## <a name="watch-get-help-or-support"></a>Regarder : obtenir de l’aide ou une assistance technique
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
 Vous devez parler à quelqu’un immédiatement ? Si vous êtes administrateur, vous devez avoir vos informations de compte sous la main lorsque vous appelez le support.
-
-::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
 > Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support. Si vous n’êtes pas un administrateur professionnel, veuillez utiliser [cette page de support](https://support.microsoft.com/contactus).
@@ -47,11 +46,14 @@ Commencez par [vérifier l’état d’intégrité actuel de vos services](../en
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecterons avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. (Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration ?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration?](admin-center-overview.md#who-has-admin-permissions-in-my-business).
+2. Dans le coin inférieur droit de la page, sélectionnez **Aide & support technique.**
+3. Tapez une question ou un mot clé dans la zone de texte. Si vous obtenez une liste de listes, sélectionnez celle qui est la plus proche de votre question, ou continuez à taper votre question, puis appuyez sur **Entrée**.
+4. Si les résultats ne vous aident pas, en bas, sélectionnez **Contacter le support technique.**
+5. Entrez une description de votre problème, confirmez le numéro auquel vous contacter et votre adresse de courrier, sélectionnez votre méthode de contact préférée, puis sélectionnez **Me contacter**. Le délai d’attente attendu est indiqué dans le **volet de support technique** des contacts.
 
-1. Si les résultats ne vous satisfont pas, sélectionnez **Contacter le support**.
-
-1. Entrez une description de votre problème, confirmez le numéro auquel vous contacter et votre adresse de courrier, sélectionnez votre méthode de contact préférée, puis sélectionnez **Me contacter**. Le temps d’attente prévu est indiqué dans le volet **Vous avez besoin d’aide ?**.
+    > [!NOTE]
+    > Si vous avez acheté votre abonnement par l’intermédiaire d’un partenaire, vous voyez d’abord les informations de contact de ce partenaire. Vous pouvez également sélectionner **Nouvelle demande de service Microsoft** en bas du volet.
 
 ## <a name="phone-support"></a>Support téléphonique
 
@@ -99,15 +101,10 @@ L'assistance fournie pour des problèmes de gestion de facturation et d'abonneme
 Voici quelques exemples de problèmes de gestion de facturation et d’abonnement :
 
 - S’inscrire pour un essai ou acheter un abonnement
-
 - Convertir une inscription d’essai en abonnement payant
-
 - Comprendre la facture
-
 - Renouveler un abonnement
-
 - Ajouter ou supprimer des licences
-
 - Annuler un abonnement payant
 
 ## <a name="technical-support"></a>Assistance technique
@@ -116,8 +113,8 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 
 | Catégorie d’assistance | Exemples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation et configuration | Exchange Online  <ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul> SharePoint Online <ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul> Skype Entreprise Online  <ul><li>Installation et création de contacts</li></ul> Microsoft 365 Apps for enterprise  <ul><li>Installation et configuration</li></ul> |
-| Configuration | Problèmes de configuration de service  <ul><li>Authentification unique (SSO)</li><li>Synchronisation Active Directory</li></ul> |
+| Installation et configuration | Exchange Online<ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul><br /> SharePoint Online<ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul><br />Skype Entreprise Online<ul><li>Installation et création de contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation et configuration</li></ul> |
+| Configuration | Problèmes de configuration de service<ul><li>Authentification unique (SSO)</li><li>Synchronisation Active Directory</li></ul> |
 
 > [!NOTE]
 > Voici comment contacter l'assistance technique : [Contacter l’assistance technique](#contact-support). L’assistance technique ne comprend pas les compléments ou services de dépannage tiers. Découvrez comment rechercher des réponses données par d'autres clients dans la [Communauté ](https://go.microsoft.com/fwlink/p/?linkid=842838).
@@ -128,8 +125,8 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 
 | Niveau de gravité | Description d’opérations et d’assistance | Exemples |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Niveau de gravité A (Critique) | Un ou plusieurs services ne sont pas accessibles ou sont inutilisables. Les délais de production, d'opérations ou de déploiement sont gravement affectés, ou bien la production ou la rentabilité risque d'être gravement affectée. Plusieurs utilisateurs ou services sont affectés. | <ul><li>Problèmes les plus répandus d’envoi ou de réception de messages.</li><li>Site SharePoint en panne.</li> <li>Tous les utilisateurs ne peuvent pas envoyer de messages instantanés, rejoindre ou planifier des réunions Skype Entreprise, ou passer des appels Skype Entreprise.</li></ul> |
-| Niveau de gravité B (Haute) | Le service est utilisable mais pas de manière optimale. La situation a un impact modéré sur l’activité et peut être traitée aux heures ouvrables. Un seul utilisateur, client ou service est partiellement affecté. | <ul><li>Le bouton Envoyer dans Outlook est tronqué.</li> <li>Le paramétrage est impossible dans le CAE (centre d’administration Exchange), mais il est possible dans PowerShell.
+| Niveau de gravité A (Critique) | Un ou plusieurs services ne sont pas accessibles ou sont inutilisables. Les délais de production, d'opérations ou de déploiement sont gravement affectés, ou bien la production ou la rentabilité risque d'être gravement affectée. Plusieurs utilisateurs ou services sont affectés. | <ul><li>Problèmes les plus répandus d’envoi ou de réception de messages.</li><li>Site SharePoint en panne.</li><li>Tous les utilisateurs ne peuvent pas envoyer de messages instantanés, rejoindre ou planifier des réunions Skype Entreprise, ou passer des appels Skype Entreprise.</li></ul> |
+| Niveau de gravité B (Haute) | Le service est utilisable mais pas de manière optimale. La situation a un impact modéré sur l’activité et peut être traitée aux heures ouvrables. Un seul utilisateur, client ou service est partiellement affecté. | <ul><li>Le bouton Envoyer dans Outlook est tronqué.</li><li>Le paramétrage est impossible dans le CAE (centre d’administration Exchange), mais il est possible dans PowerShell.
 </li></ul> |
 | Niveau de gravité C (Non critique) | La situation a un impact minime sur l’activité. Le problème est important mais n’a pas d’impact considérable sur la productivité ou le service actuel pour le client. Un seul utilisateur connaît une interruption partielle mais il existe une solution acceptable. | <ul><li>Comment définir un mot de passe d’utilisateur qui n’expire jamais.</li> <li>L'utilisateur ne peut pas supprimer les informations de contact dans Exchange Online.</li></ul> |
 
@@ -139,7 +136,7 @@ Le temps de réponse initial est basé sur les niveaux de gravité décrits ci-d
 
 | Niveau de sécurité<sup>1</sup> | Réponse initiale de l’équipe assistance client de 21Vianet  | Responsabilités du client |
 |--------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Gravité A <sup>2</sup> (critique) | Réponse initiale : 1 heure ou moins ; Assurer un suivi : jusqu'à la résolution du problème. | Fournir une déclaration d’impact entreprise solide(voir le niveau de gravité A description et exemples ci-dessus) ; Allouer les ressources pour vous assurer que la collaboration avec un agent du support client 21Vianet continue concernant la poursuite et la communication nécessaire ; Fournir des informations de contact précises et assurer des communications fiables tout au long du cycle de vie de demande de service. |
+| Gravité A <sup>2</sup> (critique) | Réponse initiale : 1 jours ouvré ou moins.<br />Assurer un suivi : jusqu'à la résolution du problème. | Fournir une déclaration d’impact entreprise solide(voir le niveau de gravité A description et exemples ci-dessus) ; Allouer les ressources pour vous assurer que la collaboration avec un agent du support client 21Vianet continue concernant la poursuite et la communication nécessaire ; Fournir des informations de contact précises et assurer des communications fiables tout au long du cycle de vie de demande de service. |
 | Niveau de gravité B (Haute) | Réponse initiale : 1 jours ouvré ou moins. | Fournir des informations de contact précises et assurer des communications fiables tout au long du cycle de vie de demande de service. |
 | Niveau de gravité C (Moyenne) | Réponse initiale : 3 jours ouvrés ou moins. | Fournir des informations de contact précises et assurer des communications fiables tout au long du cycle de vie de demande de service. |
 
@@ -160,7 +157,7 @@ Gravité B/C : 9h00 ~ 24h00 [heure de Pékin (Beijing)] par jour, 365 jours.
 
 ### <a name="open-an-online-request"></a>Ouvrir une demande en ligne
 
-Gagnez du temps en créant votre demande de service en ligne. Dans le 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, choisissez **Support** \> **Nouvelle demande de service**.
+Gagnez du temps en créant votre demande de service en ligne. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, choisissez **Support** \> **Nouvelle demande de service**.
 
 ### <a name="call-support"></a>Appeler le support technique
 
@@ -179,19 +176,14 @@ Avec Office 365, vous pouvez désigner plusieurs types d’administrateurs qui a
 L’administrateur est :
 
 - Responsable de la maintenance des comptes et de l’administration des services.
-
 - Le principal contact qui définit et assiste chaque utilisateur de service.
-
 - Autorisé à soumettre des demandes de services à 21Vianet.
 
 Le rôle de l’administrateur consiste à :
 
 - Assurer la définition et la configuration des comptes d’utilisateurs pour permettre à ces derniers d’accéder aux services.
-
 - Résoudre les problèmes d’installation de mobilité, de logiciels et de connectivité de clients.
-
 - Adresser les problèmes de disponibilité de service au sein du cadre organisationnel du client.
-
 - Utiliser les ressources d’assistance en libre service pour résoudre les problèmes d’assistance.
 
 L’administrateur est supposé fournir une assistance initiale aux utilisateurs du client. Toutefois, si l’administrateur est incapable de résoudre des problèmes à l’aide des ressources d’assistance en libre service, il ou elle doit contacter [L’Assistance Technique](#contact-support).
@@ -201,17 +193,11 @@ L’administrateur est supposé fournir une assistance initiale aux utilisateurs
 Le rôle d’assistance de 21Vianet consiste à :
 
 - Résoudre les problèmes et fournir des conseils techniques pour les remontées et les problèmes des clients.
-
 - Recueillir et valider des informations relatives à des demandes de service spécifiques.
-
 - Assurer la gestion de la résolution et de la coordination de problèmes.
-
 - Maintenir la communication avec les administrateurs pour s’assurer régulièrement que les problèmes sont résolus.
-
 - Assurer une assistance pour les demandes de licences, de facturation et d’abonnement.
-
 - Assurer une assistance pour les demandes d’achat et d’évaluation.
-
 - Recueillir en permanence des commentaires de clients sur la façon d’améliorer le service par le biais d’enquêtes.
 
 ## <a name="feature-availability"></a>Disponibilité des fonctionnalités
@@ -245,8 +231,8 @@ Les options d’assistance ne concernent que les administrateurs des organisatio
 
 | Région | Numéro de téléphone | Heures |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Allemagne | 0800&nbsp;589&nbsp;2330 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin</li><li>Anglais : Lun-Ven 9h-17h Berlin</li></ul>Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul>Autre numéro de téléphone : 069 380 789 305 (frais d’appel local applicables) |
-| Tous les autres marchés au sein de l’espace économique européen | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin (UTC+1)</li><li>Anglais : Lun-Ven 9h-17h Berlin (UTC+1)</li></ul>Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul>L’assistance téléphonique est disponible via un appel téléphonique international vers l’Allemagne. Frais d’appel international applicables. Les frais d’appel peuvent être évités, envoyez un ticket d’assistance via le Centre d’administration. |
+| Allemagne | 0800&nbsp;589&nbsp;2330 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin</li><li>Anglais : Lun-Ven 9h-17h Berlin</li></ul><br />Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul><br />Autre numéro de téléphone : 069 380 789 305 (frais d’appel local applicables) |
+| Tous les autres marchés au sein de l’espace économique européen | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin (UTC+1)</li><li>Anglais : Lun-Ven 9h-17h Berlin (UTC+1)</li></ul><br />Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul><br />L’assistance téléphonique est disponible via un appel téléphonique international vers l’Allemagne. Frais d’appel international applicables. Les frais d’appel peuvent être évités, envoyez un ticket d’assistance via le Centre d’administration. |
 
 ## <a name="let-our-community-help"></a>Laissez la Communauté vous aider
 
