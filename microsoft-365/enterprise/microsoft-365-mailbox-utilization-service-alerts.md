@@ -18,11 +18,11 @@ f1.keywords:
 - NOCSH
 description: Utilisez les alertes du service d’utilisation des boîtes aux lettres pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîte aux lettres.
 ms.openlocfilehash: afae43f0c589d6c025fb0e1d20a7c5cf81eacbe2
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479884"
+ms.locfileid: "59480771"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertes de service pour l’utilisation des boîtes aux lettres Exchange Online surveillance
 
@@ -56,7 +56,7 @@ Le tableau suivant répertorie le nombre de boîtes aux lettres en attente qui a
 | 2             | 2             | 1                 | 0               |
 ||||
 
-L’action que les administrateurs peuvent prendre pour ces boîtes aux lettres consiste à activer la boîte aux lettres d’archivage et à s’assurer qu’une stratégie d’archivage MRM (qui est une stratégie de rétention MRM dans Exchange Online qui déplace des éléments vers la boîte aux lettres d’archivage) est appliquée à la boîte aux lettres afin que les éléments soient déplacés vers la boîte aux lettres d’archivage. Pour plus d’informations, voir [Configurer une stratégie d’archivage](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)et de suppression pour les boîtes aux lettres.
+L’action que les administrateurs peuvent prendre pour ces boîtes aux lettres consiste à activer la boîte aux lettres d’archivage et à s’assurer qu’une stratégie d’archivage MRM (qui est une stratégie de rétention MRM dans Exchange Online qui déplace des éléments vers la boîte aux lettres d’archivage) est appliquée à la boîte aux lettres afin que les éléments soient déplacés vers la boîte aux lettres d’archivage. Pour plus d’informations, voir [Configurer une stratégie d’archivage et de](../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres.
 
 Après avoir activé une boîte aux lettres d’archivage, nous vous recommandons d’augmenter le quota pour le dossier Éléments récupérables. Cela permet d’éviter le dépassement du quota du dossier Éléments récupérables pour les boîtes aux lettres placées en attente. Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 
@@ -101,13 +101,13 @@ La liste suivante décrit chaque colonne du tableau précédent.
 
    La valeur de la **propriété Name** est le nom de la stratégie de rétention qui s’affiche sur la **page** Stratégies de rétention dans le Centre d’administration Exchange rétention.
 
-- **MailboxType**: spécifie le type de boîtes aux lettres à qui la stratégie est affectée. Les valeurs *sont Primary* (boîtes aux lettres sans archive) ou *PrimaryWithArchive* (boîtes aux lettres avec archive). Si la valeur de cette colonne est *Primary,* vous devez activer l’archive pour les boîtes aux lettres (la colonne **Mailbox** indique le nombre de ces boîtes aux lettres) qui sont affectées à la stratégie. Dans le cas contraire, une stratégie d’archivage ou une balise d’archive personnelle ne fonctionne pas, car il n’existe pas d’archive vers qui déplacer des éléments.
+- **MailboxType**: spécifie le type de boîtes aux lettres à qui la stratégie est affectée. Les valeurs *sont Primary* (boîtes aux lettres sans archive) ou *PrimaryWithArchive* (boîtes aux lettres avec archive). Si la valeur de cette colonne est *Primary,* vous devez activer l’archive pour les boîtes aux lettres (la colonne **Mailbox** indique le nombre de ces boîtes aux lettres) affectées à la stratégie. Dans le cas contraire, une stratégie d’archivage ou une balise d’archive personnelle ne fonctionne pas, car il n’existe pas d’archive vers qui déplacer des éléments.
 
-- **HasMoveDumpsterToArchiveTag**: indique que la stratégie de rétention inclut une balise de rétention qui déplace les éléments du dossier Éléments récupérables (également appelé benne) de la boîte aux lettres principale vers le dossier Éléments récupérables de l’archive. Ce type de balise de rétention est définie par un administrateur. Si la période de rétention de la balise éléments récupérables est trop longue, la réduction de la période de rétention devrait aider à empêcher les boîtes aux lettres d’approcher le quota du dossier Éléments récupérables. Par exemple, si la période de rétention est définie sur 30 jours, le fait de la réduire à trois ou cinq jours peut être utile.  Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+- **HasMoveDumpsterToArchiveTag**: indique que la stratégie de rétention inclut une balise de rétention qui déplace les éléments du dossier Éléments récupérables (également appelé benne) de la boîte aux lettres principale vers le dossier Éléments récupérables de l’archive. Ce type de balise de rétention est définie par un administrateur. Si la période de rétention de la balise éléments récupérables est trop longue, la réduction de la période de rétention devrait aider à empêcher les boîtes aux lettres d’approcher le quota du dossier Éléments récupérables. Par exemple, si la période de rétention est définie sur 30 jours, le fait de la réduire à trois ou cinq jours peut vous aider.  Pour plus d’informations, voir [Augmenter le quota d’éléments récupérables pour les boîtes aux lettres en attente.](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 
 - **HasMovePrimaryToArchiveTag**: indique si une balise de rétention « déplacer vers l’archive » par défaut (également appelée stratégie *d’archivage)* est incluse dans la stratégie de rétention. Dans ce cas, les messages sont déplacés des dossiers ordinaires de la boîte aux lettres principale vers la boîte aux lettres d’archivage. Ce type de balise de rétention est définie par un administrateur. Là encore, si la période de rétention de cette balise est trop courte, les utilisateurs peuvent avoir des difficultés à atteindre continuellement le quota de leur boîte aux lettres principale. La réduction de la période de rétention d’une stratégie d’archivage peut aider à résoudre ce problème.
 
-- **HasPersonalArchiveTag**: indique si la stratégie de rétention inclut une balise personnelle « déplacer vers l’archive ». Si la stratégie de rétention inclut une balise personnelle « déplacer vers l’archive », les utilisateurs peuvent appliquer cette balise aux dossiers et aux messages de leur boîte aux lettres pour déplacer des éléments vers l’archive. Les utilisateurs peuvent également configurer une règle de boîte de réception pour déplacer des messages vers un dossier avec cette balise appliquée. Dans les deux cas, cela peut aider à déplacer des éléments vers l’archive pour éviter d’atteindre le quota pour leur boîte aux lettres principale.
+- **HasPersonalArchiveTag**: indique si la stratégie de rétention inclut une balise personnelle « déplacer vers l’archive ». Si la stratégie de rétention inclut une balise personnelle « déplacer vers l’archive », les utilisateurs peuvent appliquer cette balise aux dossiers et aux messages de leur boîte aux lettres pour déplacer des éléments vers l’archive. Les utilisateurs peuvent également configurer une règle de boîte de réception pour déplacer les messages vers un dossier avec cette balise appliquée. Dans les deux cas, cela peut aider à déplacer des éléments vers l’archive pour éviter d’atteindre le quota pour leur boîte aux lettres principale.
 
 - **Boîtes aux** lettres : indique le nombre de boîtes aux lettres (celles avec ou sans archive, indiquées dans la colonne **MailboxType)** à laquelle la stratégie de rétention est affectée.
 
