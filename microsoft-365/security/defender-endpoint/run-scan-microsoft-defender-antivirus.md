@@ -1,6 +1,6 @@
 ---
 title: Exécuter et personnaliser des analyses à la demande dans Antivirus Microsoft Defender
-description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows app.
+description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows appl.
 keywords: analyse, à la demande, dos, intune, analyse instantanée
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,13 @@ ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: cb7478b62797764f25de79cca1d8c261bca351b8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 77a9a6f8e38dc59d9668756be057ab8688a6346c
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207379"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497595"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender
 

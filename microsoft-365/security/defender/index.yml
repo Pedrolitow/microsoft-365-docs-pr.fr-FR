@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: bf167feb138be131ac565817767da2d1b1dd5be7
-  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+  ms.openlocfilehash: e2aa6e0546af05d9265d2aece406f18bd498c997
+  ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "59491420"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59497768"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -70,11 +70,11 @@ landingContent:
     links:
     - text: Qu’est-ce que Defender pour Office 365 ?
       url: ../office-365-security/defender-for-office-365.md
-    - text: Description du service Defender pour Office 365
+    - text: Description du service Microsoft Defender pour Office 365
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Defender pour Office 365 dans Microsoft 365 Defender
+    - text: Microsoft Defender pour Office 365 dans Microsoft 365 Defender
       url: microsoft-365-security-center-mdo.md
-    - text: Redirection de Defender pour Office 365 dans Microsoft 365 Defender
+    - text: Redirection de Microsoft Defender pour Office 365 dans Microsoft 365 Defender
       url: microsoft-365-security-mdo-redirection.md
 - title: Microsoft Defender pour point de terminaison
   linkLists:

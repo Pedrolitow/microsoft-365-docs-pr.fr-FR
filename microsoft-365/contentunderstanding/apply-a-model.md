@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Normal
 description: Découvrez comment appliquer un modèle publié à une bibliothèque SharePoint documents dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 048197b8f477b62527b2f379a5361d1765c70a3b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2cc4719720693f6aa386abfc191e2b26b75f813f
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498103"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 
@@ -61,15 +61,13 @@ Pour appliquer votre modèle à une bibliothèque de documents SharePoint :
 
 6. Dans la page d’accueil du modèle, dans la **section** Où le modèle est appliqué, vous devez voir le nom du site SharePoint répertorié.
 
-7. Accédez à votre bibliothèque de documents et vérifiez que vous êtes dans la vue bibliothèque de documents du modèle. Notez que si vous sélectionnez le bouton informations en regard du nom de la bibliothèque de documents, un message indique qu’un modèle est appliqué à la bibliothèque de documents.
+7. Accédez à votre bibliothèque de documents et vérifiez que vous êtes dans la vue bibliothèque de documents du modèle. Sélectionnez   >  **Automatiser l’affichage des modèles de compréhension du document.**
 
-    ![Affichage d’informations.](../media/content-understanding/info-du.png) 
+8. Dans la page **Examiner les modèles**  et en appliquer de nouvelles, sélectionnez l’onglet Appliqué pour voir les modèles qui sont appliqués à la bibliothèque de documents.
 
-    Vous pouvez sélectionner **Afficher les modèles actifs** pour afficher des détails sur les modèles appliqués à la bibliothèque de documents.
+    ![Capture d’écran montrant l’onglet Appliqué sélectionné et les modèles appliqués.](../media/content-understanding/applied-models.png) 
 
-8. Dans le volet **Modèles actifs**, vous pouvez afficher les modèles appliqués à la bibliothèque de documents. Sélectionnez un modèle pour afficher plus d’informations le concernant, par exemple une description du modèle, qui a publié le modèle et si le modèle applique une étiquette de rétention aux fichiers qu’il classifie.
-
-    ![Volet Modèles actifs.](../media/content-understanding/active-models.png) 
+9. Sélectionnez les détails du modèle d’affichage pour afficher des informations sur un modèle, telles qu’une description du modèle, qui a publié le modèle, et si le modèle applique des **étiquettes** de rétention ou de sensibilité aux fichiers qu’il classifie.
 
 Une fois le modèle appliqué à la bibliothèque de documents, vous pouvez commencer à télécharger des documents sur le site et afficher les résultats.
 
@@ -77,11 +75,11 @@ Le modèle identifie les fichiers et dossiers associés au type de contenu assoc
 
 ## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>Appliquer le modèle aux fichiers et au contenu de dossiers déjà présents dans la bibliothèque de documents
 
-Bien qu’un modèle appliqué traite tous les fichiers et le contenu des dossiers chargés dans la bibliothèque de documents après son application, vous pouvez également exécuter le modèle sur les fichiers et le contenu de dossier qui existent déjà dans la bibliothèque de documents avant que le modèle soit appliqué :
+Bien qu’un modèle appliqué traite tous les fichiers et le contenu des dossiers chargés dans la bibliothèque de documents après son application, vous pouvez également exécuter le modèle sur les fichiers et le contenu des dossiers qui existent déjà dans la bibliothèque de documents avant que le modèle ne soit appliqué :
 
 1. Dans votre bibliothèque de documents, sélectionnez les fichiers et dossiers que vous souhaitez traiter par votre modèle.
 
-2. Après avoir sélectionné vos fichiers et dossiers, classifier et **extraire** s’affiche dans le ruban de la bibliothèque de documents. Sélectionnez **Classer et extraire**.
+2. Une fois que vous avez sélectionné vos fichiers et dossiers, classifier et **extraire** apparaît dans le ruban de la bibliothèque de documents. Sélectionnez **Classer et extraire**.
 
       ![Capture d’écran montrant l’option Classifier et extraire.](../media/content-understanding/extract-classify.png) 
 
@@ -96,11 +94,11 @@ Lorsqu’un SharePoint Syntex de document ou un modèle de traitement de formula
 
    ![Capture d’écran d’une bibliothèque de documents affichant la colonne Date de classification.](../media/content-understanding/class-date-column.png) 
 
-Le champ **Date** de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) classification est utilisé par le déclencheur lorsqu’un fichier est classé par un déclencheur de modèle de compréhension du contenu pour exécuter un flux Power Automate une fois qu’un modèle de compréhension du contenu Syntex a terminé le traitement d’un fichier ou d’un dossier et mis à jour le champ **Date** de classification.
+Le champ **Date** de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) classification est utilisé par le déclencheur lorsqu’un fichier est classé par un déclencheur de modèle de compréhension du contenu pour exécuter un flux Power Automate après qu’un modèle de compréhension du contenu Syntex a terminé le traitement d’un fichier ou d’un dossier et mis à jour le champ **Date** de classification.
 
    ![Flow déclencheur.](../media/content-understanding/trigger.png)
 
-**Lorsqu’un fichier est** classé par un déclencheur de modèle de compréhension de contenu, il peut être utilisé pour démarrer un autre flux de travail à l’aide des informations extraites du fichier ou du dossier.
+**Lorsqu’un fichier est** classé par un déclencheur de modèle de compréhension du contenu, il peut être utilisé pour démarrer un autre flux de travail à l’aide des informations extraites du fichier ou du dossier.
 
 
 

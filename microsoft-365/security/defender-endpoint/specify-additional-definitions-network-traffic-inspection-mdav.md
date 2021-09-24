@@ -16,12 +16,13 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: bc73d785e5e0f655bda297775769ff977ed10be1
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 60f2b4b83e46e33769c5e2e3382058354fcd6972
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498363"
 ---
 # <a name="specify-additional-definition-sets-for-network-traffic-inspection"></a>Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 
@@ -35,7 +36,7 @@ Vous pouvez spécifier des ensembles de définitions supplémentaires pour l’i
 
 ## <a name="use-group-policy-to-specify-additional-definition-sets-for-network-traffic-inspection"></a>Utiliser une stratégie de groupe pour spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau
 
-1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
 2. Go to **Windows Components** \> **Antivirus Microsoft Defender** \> **Network Inspection System**.
 

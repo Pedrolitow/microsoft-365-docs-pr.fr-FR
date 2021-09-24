@@ -16,12 +16,13 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 8adb0be672c20b8e51c4178df63d7b25332455ce
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 16d61be33af8a4d30090470e066111ba2bcde0e9
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356467"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497991"
 ---
 # <a name="specify-the-cloud-protection-level"></a>Spécifier le niveau de protection cloud
 
@@ -33,7 +34,7 @@ ms.locfileid: "59356467"
 La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir une protection à vos points de terminaison beaucoup plus rapidement que par le biais de mises à jour d’informations de sécurité traditionnelles. Vous pouvez configurer votre niveau de protection cloud à l’aide de Microsoft Endpoint Manager (recommandé) ou d’une stratégie de groupe.
 
 > [!NOTE]
-> La sélection **d’une** tolérance **élevée, élevée +** **ou** zéro peut entraîner la détection de certains fichiers légitimes. Si cela se produit, vous pouvez débloquer le fichier détecté ou en faire la demande dans le portail Microsoft 365 Defender.
+> La sélection **d’une** tolérance **élevée, élevée +** **ou** zéro peut entraîner la détection de certains fichiers légitimes. Si cela se produit, vous pouvez débloquer le fichier détecté ou le litige que la détection dans le portail Microsoft 365 Defender.
 
 ## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-protection"></a>Utiliser Microsoft Endpoint Manager pour spécifier le niveau de protection cloud
 
@@ -43,9 +44,9 @@ La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir un
 
 3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
-4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
+4. Sélectionnez **les propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
-5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
+5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
 
     - **Élevé**: applique un niveau de détection élevé.
     - **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut affecter les performances du client).
@@ -63,7 +64,7 @@ La protection cloud fonctionne avec Antivirus Microsoft Defender pour fournir un
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
 3. Dans **l’Éditeur de gestion des stratégies de** groupe, allez **aux** \> **modèles d’administration de configuration ordinateur.**
 

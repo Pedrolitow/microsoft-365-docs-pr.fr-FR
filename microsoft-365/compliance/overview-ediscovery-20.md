@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez la solution Advanced eDiscovery dans Microsoft 365. Cet article fournit une vue d’Advanced eDiscovery dans Microsoft 365, un outil qui vous aide à gérer les enquêtes internes et externes. Il encadre également les raisons professionnelles de l’utilisation Advanced eDiscovery pour gérer vos enquêtes juridiques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59052e862e84b5cf9eabdf2cdce58e8e743887ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2806bb7c0043a9e47b07e96ab53a62725673247
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206067"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498327"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Vue d’ensemble Microsoft 365 Advanced eDiscovery
 
@@ -41,9 +41,9 @@ Les sections suivantes décrivent comment ces fonctionnalités Advanced eDiscove
 
 ### <a name="discover-and-collect-data-in-place"></a>Découvrir et collecter des données sur place
 
-En général, les organisations qui s’appuient sur plusieurs solutions eDiscovery tierces nécessitent la copie de grands volumes de données hors de Microsoft 365 pour traiter et avoir à héberger des données en double. Cette nécessité augmente le temps nécessaire pour trouver des données pertinentes, ainsi que les risques, les coûts et la complexité de la gestion de plusieurs solutions.
+En général, les organisations qui s’appuient sur plusieurs solutions eDiscovery tierces nécessitent la copie de grands volumes de données hors de Microsoft 365 pour traiter et héberger des données en double. Cette nécessité augmente le temps nécessaire pour trouver des données pertinentes, ainsi que les risques, les coûts et la complexité de la gestion de plusieurs solutions.
 
-Advanced eDiscovery dans Microsoft 365 vous permet de découvrir les données au niveau de la source et de rester à l’intérieur Microsoft 365 limites de sécurité et de conformité.  En collectant des données sur place à partir du système en direct, Advanced eDiscovery réduit la friction de revenir à la source et réduit le travail inutile d’avoir à trouver le contenu manquant, ce qui se produit souvent lorsque la journaling est en retard dans les solutions eDiscovery traditionnelles.
+Advanced eDiscovery dans Microsoft 365 vous permet de découvrir les données au niveau de la source et de rester à l’intérieur Microsoft 365 limites de sécurité et de conformité.  En collectant des données sur place à partir du système en direct, Advanced eDiscovery réduit la friction de revenir à la source et réduit le travail inutile de recherche de contenu manquant, ce qui se produit souvent lorsque la journalité est en retard dans les solutions eDiscovery traditionnelles.
 
 Les fonctionnalités natives de recherche et de collecte de données dans Teams, Yammer, SharePoint Online, OneDrive Entreprise et Exchange Online améliorent davantage la découverte des données. Par exemple, Advanced eDiscovery :
 
@@ -53,7 +53,7 @@ Les fonctionnalités natives de recherche et de collecte de données dans Teams,
 
 - Dispose d’une prise en charge intégrée pour des centaines de types de Microsoft 365 non complets.
 
-- Collecte des données à partir de sources tierces (par exemple, Bloomberg, Facebook, Slack et Zoom Meetings) qui sont importées et archivées dans Microsoft 365 par des connecteurs de [données.](archiving-third-party-data.md)
+- Collecte des données à partir de sources tierces (comme Bloomberg, Facebook, Slack et Zoom Meetings) importées et archivées dans Microsoft 365 par des connecteurs de [données.](archiving-third-party-data.md)
 
 ### <a name="manage-ediscovery-workflow-in-one-platform"></a>Gérer le flux de travail eDiscovery dans une plateforme
 
@@ -63,9 +63,9 @@ En outre, les API Microsoft Graph peuvent vous aider à automatiser le flux de t
 
 ### <a name="cull-data-intelligently"></a>Annuler les données de manière intelligente
 
-Les fonctionnalités intelligentes d’apprentissage automatique Advanced eDiscovery vous aident à réduire la quantité de données à réviser. Ces fonctionnalités intelligentes vous aident à réduire et à réduire les volumes de données importants dans un ensemble pertinent. Par exemple, une requête d’ensemble de révision intégrée permet de filtrer uniquement le contenu unique en identifiant les quasi-doublons. Cette fonctionnalité peut considérablement réduire la quantité de données à réviser.
+Les fonctionnalités intelligentes d’apprentissage automatique Advanced eDiscovery vous aident à réduire la quantité de données à réviser. Ces fonctionnalités intelligentes vous aident à réduire et à réduire les volumes de données importants vers un ensemble pertinent. Par exemple, une requête d’ensemble de révision intégrée permet de filtrer uniquement le contenu unique en identifiant les quasi-doublons. Cette fonctionnalité peut considérablement réduire la quantité de données à réviser.
 
-D’autres fonctionnalités d’apprentissage automatique peuvent affiner et identifier les données pertinentes à l’aide de balises intelligentes et d’outils d’examen assisté par la technologie tels que les modules de pertinence.
+D’autres fonctionnalités d’apprentissage automatique peuvent affiner et identifier les données pertinentes à l’aide de balises intelligentes et d’outils d’examen avec assistance technologique tels que les modules de pertinence.
 
 ## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery avec le modèle de référence de découverte électronique
 
@@ -107,13 +107,21 @@ La gestion des Advanced eDiscovery nécessite l’abonnement d’organisation ap
 
    Si vous n’avez pas de plan Microsoft 365 E5 existant et que vous souhaitez essayer Advanced eDiscovery, vous [](https://www.microsoft.com/microsoft-365/enterprise) pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’essai de Microsoft 365 E5.
 
-- **Licences par utilisateur :** Pour ajouter un utilisateur en tant que dépositaire dans un cas advance eDiscovery, cet utilisateur doit se voir attribuer l’une des licences suivantes, en fonction de l’abonnement de votre organisation :
+- **Licences par utilisateur :** Pour ajouter un utilisateur en tant que dépositaire dans un cas de découverte électronique anticipée, l’une des licences suivantes doit lui être attribuée, en fonction de l’abonnement de votre organisation :
 
-  - Microsoft 365 : une licence Microsoft 365 E5, une licence de module de conformité E5 ou une licence de modules de découverte électronique et d’audit E5 doivent être attribuées aux utilisateurs. Microsoft 365 Éducation utilisateurs doivent se faire attribuer une licence A5.
+  - Microsoft 365 : l’une des tâches suivantes doit être attribuée aux utilisateurs :
+  
+    - Microsoft 365 E5 licence, une licence de module de conformité E5 ou un module de découverte électronique E5 et un module d’audit
+
+    - Microsoft 365 Un module de conformité F5 ou F5 security & compliance doit être affecté aux utilisateurs en situation de situation de groupe
+
+    - Microsoft 365 Éducation utilisateurs doivent se faire attribuer une licence A5
 
   - Office 365 : les utilisateurs doivent se faire attribuer une licence Office 365 E5 ou Office 365 Éducation A5.
 
-   Pour plus d’informations sur l’attribution de licences, voir [Attribuer des licences aux utilisateurs.](/microsoft-365/admin/manage/assign-licenses-to-users)
+Pour plus d’informations sur la gestion des licences, téléchargez et consultez la section « eDiscovery et audit » dans le Microsoft 365 [comparaison.](https://go.microsoft.com/fwlink/?linkid=2139145)
+
+Pour plus d’informations sur l’attribution de licences, voir [Attribuer des licences aux utilisateurs.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
 > [!NOTE]
 > Les utilisateurs n’ont besoin que d’une licence E5 ou A5 (ou de la licence de module supplémentaire appropriée) pour être ajoutés en tant que dépositaires à Advanced eDiscovery cas. Les administrateurs informatiques, les gestionnaires eDiscovery, les avocats, les techniciens juridiques ou les enquêteurs qui utilisent Advanced eDiscovery pour gérer les cas et examiner les données de cas n’ont pas besoin d’une licence E5, A5 ou de modules.
