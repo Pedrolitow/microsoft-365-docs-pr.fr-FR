@@ -26,10 +26,12 @@
       href: rename-an-extractor.md
     - name: Types d’explications
       href: explanation-types-overview.md
-    - name: Appliquer un modèle
+    - name: Appliquer un modèle de compréhension de document
       href: apply-a-model.md
     - name: Créer un modèle de traitement de formulaire
       href: create-a-form-processing-model.md
+    - name: Publier et découvrir un modèle
+      href: model-discovery.md
     - name: Appliquer une autre étiquette de rétention
       href: apply-a-retention-label-to-a-model.md
     - name: Appliquer une étiquette de confidentialité
@@ -60,6 +62,8 @@
           href: solution-manage-contracts-step3.md
 - name: Configuration et administration
   items:
+    - name: Gestion des licences pour Microsoft Office SharePoint Online Syntex
+      href: syntex-licensing.md
     - name: Configurer SharePoint Syntex
       href: set-up-content-understanding.md
 - name: Services de contenu

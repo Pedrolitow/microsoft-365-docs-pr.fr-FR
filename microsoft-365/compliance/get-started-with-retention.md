@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de fidélisation pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ?
-ms.openlocfilehash: a58b50aeea2cfd223e54d1dd4d2c4aa91026afe8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdcae8f3879beea5ba7b80f34378b2a3b1452fcb
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182328"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59497619"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -48,7 +48,7 @@ Vous êtes prêt à commencer à gouverner les données de votre organisation en
 
 Différents abonnements prennent en charge les stratégies et les étiquettes de rétention et les conditions requises pour les licences des utilisateurs dépendent des fonctionnalités utilisées.
 
-Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft 365, voir les [Conseils de licence Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Pour la rétention, voir la section [Gouvernance des informations](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) ainsi que le fichier PDF ou Excel téléchargeable associé aux exigences de licences au niveau des fonctionnalités.
+Pour afficher les options de licence permettant à vos utilisateurs de bénéficier des fonctionnalités de conformité de Microsoft 365, voir les [Conseils de licence Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Pour la rétention, voir la section [Gouvernance des informations](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) ainsi que le fichier PDF téléchargeable associé aux exigences de licences au niveau des fonctionnalités.
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Autorisations requises pour créer et gérer les stratégies et les étiquettes de rétention
 
