@@ -1,5 +1,5 @@
 ---
-title: Étape 2. Déployer la détection et la réponse aux attaques
+title: Étape 2. Déployer la détection et la réponse des attaques
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,20 +17,22 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par l’homme, rançongiciel géré par l’homme, HumOR, attaque par attaque par attaque de rançongiciel, chiffrement, cryptovirologie
 description: Utilisez Microsoft 365 Defender et ses sources de signal de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 7380e546733a299e7cf888946d502c43074822f5
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 09b2e7930d6fbe0295dcf8343a559a19b680f547
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444570"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481095"
 ---
-# <a name="step-2-deploy-attack-detection-and-response"></a>Étape 2. Déployer la détection et la réponse aux attaques
+# <a name="step-2-deploy-attack-detection-and-response"></a>Étape 2. Déployer la détection et la réponse des attaques
 
-Activez, configurez et utilisez ces outils pour la détection et la réponse aux attaques par rançongiciel.
+Tel qu’il est fortement recommandé dans la première étape pour la détection et la réponse aux attaques de ransomware dans votre client Microsoft 365, [configurez un environnement d’évaluation](/microsoft-365/security/defender/eval-overview) pour évaluer les fonctionnalités et les capacités de Microsoft 365 Defender.
+
+Pour plus d’informations, consultez ces ressources.
 
 | Fonctionnalité | Description | Par où commencer | Comment l’utiliser pour la détection et la réponse |
 |:-------|:-----|:-------|:-------|
-| [Microsoft 365 Defender](/microsoft-365/security/defender) | Combine les signaux et orchestre les fonctionnalités en une seule solution <br><br> Permet aux professionnels de la sécurité de rassembler les signaux des menaces et de déterminer l’étendue et l’impact d’une menace <br><br> Automatise les actions pour empêcher ou arrêter l’attaque et auto-panser les boîtes aux lettres, les points de terminaison et les identités des utilisateurs affectés | [Prise en main](/microsoft-365/security/defender/get-started) | [Réponse aux incidents](/microsoft-365/security/defender/incidents-overview) |
+| [Microsoft 365 Defender](/microsoft-365/security/defender) | Combine les signaux et orchestre les fonctionnalités en une seule solution <br><br> Permet aux professionnels de la sécurité d’assembler les signaux des menaces et de déterminer l’étendue et l’impact complets d’une menace <br><br> Automatise les actions pour empêcher ou arrêter l’attaque et auto-panser les boîtes aux lettres, les points de terminaison et les identités des utilisateurs affectés | [Prise en main](/microsoft-365/security/defender/get-started) | [Réponse aux incidents](/microsoft-365/security/defender/incidents-overview) |
 | [Microsoft Defender pour l’identité](/defender-for-identity/what-is) |  Identifie, détecte et examine les menaces avancées, les identités compromises et les actions malveillantes internes dirigées vers votre organisation via une interface de sécurité basée sur le cloud qui utilise vos signaux AD DS (Active Directory Domain Services) locaux. | [Vue d’ensemble](/defender-for-identity/what-is) | [Travailler avec le portail Microsoft Defender pour l’identité](/defender-for-identity/workspace-portal) |
 | [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security) | Protège votre organisation contre les menaces malveillantes posées par les courriers électroniques, les liens (URL) et les outils de collaboration <br><br> Protège contre les programmes malveillants, le hameçonnage, l’usurpation et d’autres types d’attaques  | [Vue d’ensemble](/microsoft-365/security/office-365-security/overview) | [Recherche de menaces](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
 | [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint) | Permet la détection et la réponse aux menaces avancées sur les points de terminaison (appareils) | [Vue d’ensemble](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [Détection et réponse du point de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
@@ -76,8 +78,6 @@ Les outils suivants utilisent Microsoft 365 Defender et son portail (https://sec
 - Microsoft Cloud App Security
 
 Microsoft 365 Defender combine les signaux de menace en alertes et les alertes connectées dans un incident afin que vos analystes de sécurité puissent détecter, examiner et corriger plus rapidement les phases d’une attaque par rançongiciel.
-
-Vous pouvez [configurer un environnement d’évaluation](/microsoft-365/security/defender/eval-overview) pour évaluer les fonctionnalités de Microsoft 365 Defender.
 
 ## <a name="resulting-configuration"></a>Configuration résultante
 

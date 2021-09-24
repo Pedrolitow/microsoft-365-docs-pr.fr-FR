@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: Définir vos offres de service
           href: define-service-offerings.md
+        - name: Configurer les notifications par SMS
+          href: bookings-sms.md
         - name: Ajouter du personnel aux réservations
           href: add-staff.md
         - name: Planifier des fermetures d’entreprise et des congés
@@ -31,8 +33,10 @@
           href: set-language-time-zones.md
     - name: Obtenir l’application bookings
       href: get-bookings-app.md
-    - name: App Books et visites virtuelles dans Microsoft teams
+    - name: Gérer l’application Bookings dans Microsoft Teams
       href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+    - name: Visites virtuelles dans Microsoft Teams et l’application Bookings
+      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
     - name: Graphique de comparaison-application Web et application teams
       href: comparison-chart.md
     - name: Supprimer un calendrier

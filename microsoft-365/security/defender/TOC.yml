@@ -352,13 +352,13 @@
               items:
                 - name: Présentation de l’intégration de ServiceNow
                   href: ./tickets.md
-        - name: API Microsoft 365 Defender (préversion)
+        - name: API Microsoft 365 Defender
           items:
-            - name: Vue d’ensemble des API Microsoft 365 Defender (préversion)
+            - name: Vue d’ensemble des API Microsoft 365 Defender
               href: api-overview.md
             - name: API Microsoft 365 Defender prises en charge
               href: api-supported.md
-            - name: Prise en main des API Microsoft 365 Defender (préversion)
+            - name: Prise en main des API Microsoft 365 Defender
               items:
                 - name: Licence et conditions d’utilisation de l’API Microsoft 365 Defender
                   href: api-terms.md
@@ -374,7 +374,7 @@
                   href: api-partner-access.md
                 - name: Autres ressources API
                   href: api-articles.md
-            - name: API et schéma de Microsoft 365 Defender (préversion)
+            - name: API et schéma de Microsoft 365 Defender
               items:
                 - name: Codes d’erreur courants de l’API REST
                   href: api-error-codes.md
@@ -406,5 +406,5 @@
       href: ../office-365-security/index.yml
     - name: Microsoft Defender pour point de terminaison
       href: ../defender-endpoint/index.yml
-    - name: Microsoft Defender pour l’identité
+    - name: "Microsoft\_Defender pour l’identité"
       href: /defender-for-identity

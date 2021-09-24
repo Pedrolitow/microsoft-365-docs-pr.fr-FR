@@ -19,13 +19,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Si vous avez moins de 25 licences d'utilisateur, vous pouvez annuler votre version d'essai ou votre abonnement payant de Microsoft 365 pour entreprise dans le centre d'administration.
-ms.date: 04/08/2021
-ms.openlocfilehash: 900fd5f544a405b5f337623ba35a353cefaf9bab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.date: 09/16/2021
+ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209449"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59481035"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
@@ -37,7 +37,9 @@ ms.locfileid: "59209449"
 *Remboursement :* Tout crédit calculé au prorata vous sera remboursé au cours du cycle de facturation suivant.
 
 > [!NOTE]
-> Si vous disposez de plusieurs abonnements pour un même produit tel que Microsoft 365 Business Premium, l’annulation d’un de ces abonnements n’impacte pas les licences ou les services relatifs aux autres abonnements.
+> 
+> - Si vous disposez de plusieurs abonnements pour un même produit tel que Microsoft 365 Business Premium, l’annulation d’un de ces abonnements n’impacte pas les licences ou les services relatifs aux autres abonnements.
+> - Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -66,7 +68,9 @@ Si vous avez ajouté votre propre nom de domaine pour l’utiliser avec votre ab
 ::: moniker-end
 
 2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
+
 3. Dans le volet **Annuler l'abonnement**, choisissez la raison pour laquelle vous annulez. Si vous le souhaitez, vous pouvez fournir des commentaires.
+
 4. Sélectionnez **Enregistrer**.
 
 Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)

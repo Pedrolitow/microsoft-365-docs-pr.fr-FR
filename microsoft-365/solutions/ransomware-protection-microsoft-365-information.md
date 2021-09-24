@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie
 description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Cloud App Security pour protéger vos données sensibles Microsoft 365.
-ms.openlocfilehash: 2221b269d5b3b775f870d7c7f8b47ea89912f388
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 9548b394f5fa2cad6ec1e55e9386905b85f0335b
+ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444592"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59483050"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 
-Étant donné que les attaquants par rançongiciel vont également examiner vos données sur site situées sur des fichiers, des bases de données et d’autres types de serveurs, l’une des meilleures façons de protéger ces données consiste à les migrer vers votre client Microsoft 365. Une fois à cet emplacement, elles peuvent être protégées par des fonctionnalités intégrées d’atténuation et de récupération telles que la [le contrôle de version, la corbeille et la bibliothèque de conservation et de préservation des documents](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
+Étant donné que les attaquants par rançongiciel vont également examiner vos données sur site situées sur des fichiers, des bases de données et d’autres types de serveurs, l’une des meilleures façons de protéger ces données consiste à les migrer vers votre client Microsoft 365. Une fois à cet emplacement, ils peuvent être protégés par des fonctionnalités intégrées d’atténuation et de récupération telles que le [contrôle de version, la corbeille et restauration de fichiers](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
 Pour fournir une protection supplémentaire de vos informations sensibles dans votre client Microsoft 365 :
 
@@ -69,7 +69,7 @@ Une fois qu’un attaquant par rançongiciel a infiltré votre client, il tente 
 En fonction de ce comportement d’attaquant classique, il existe deux niveaux de difficulté pour la personne malveillante :
 
 - **Faible :** Une personne malveillante peut utiliser un compte à faible autorisation et découvrir vos informations sensibles en raison d’un large accès dans votre client.
-- **Supérieur :** Une personne malveillante ne peut pas utiliser un compte à faible autorisation et découvrir vos informations sensibles en raison d’autorisations strictes. Ils doivent escalader leurs autorisations en déterminant, puis en compromettant les informations d’identification d’un compte ayant accès à un emplacement avec des informations sensibles, mais ils peuvent ensuite uniquement être en mesure d’agir sur un ensemble limité d’actions.
+- **Supérieur :** Une personne malveillante ne peut pas utiliser un compte à autorisation faible et découvrir vos informations sensibles en raison d’autorisations strictes. Elle devrait escalader ses autorisations en déterminant puis en compromettant les informations d'identification d'un compte qui a accès à un emplacement contenant des informations sensibles, mais ne pourrait alors ne pouvoir effectuer qu'un ensemble limité d'actions.
 
 Pour les informations sensibles, vous devez rendre le niveau de difficulté aussi élevé que possible.
 
@@ -112,12 +112,12 @@ Voici la protection contre les rançongiciels de votre client pour les étapes 1
 
 ## <a name="additional-ransomware-resources"></a>Ressources supplémentaires sur les rançongiciels
 
-Informations clés de Microsoft :
+Informations clés de Microsoft :
 
-- [La menace croissante des rançongiciels](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), publication de blog Microsoft On the Issues du 20 juillet 2021
-- [Rançongiciels contrôlés par l’homme](/security/compass/human-operated-ransomware)
-- [Se protéger rapidement contre les rançongiciels et les extorsions](/security/compass/protect-against-ransomware)
-- [Le dernier Rapport de Veille de sécurité Microsoft](https://www.microsoft.com/securityinsights/) (voir les pages 22 à 24)
+- [Menace croissante des rançongiciels](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), billet de blog Microsoft On the Issues du 20 juillet 2021
+- [Rançongiciel géré par l’humain](/security/compass/human-operated-ransomware)
+- [Se protéger rapidement contre les rançongiciels et les attaques](/security/compass/protect-against-ransomware)
+- [Dernier rapport de la Veille de sécurité Microsoft](https://www.microsoft.com/securityinsights/) (voir les pages 22 à 24)
 - **Rançongiciel : rapport sur les menaces constantes et omniprésentes** dans le nœud **d’analyse des menaces** du portail Microsoft 365 Defender (consultez ces [exigences en matière de licences](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365 :
@@ -127,34 +127,34 @@ Microsoft 365 :
 - [Protéger votre PC Windows 10 contre les rançongiciels](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Gérer les rançongiciels dans SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
-Microsoft 365 Defender :
+Microsoft 365 Defender :
 
 - [Rechercher un rançongiciel avec la recherche avancée](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
-Microsoft Azure :
+Microsoft Azure :
 
 - [Défenses Azure pour les attaques par rançongiciel](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Plan de sauvegarde et de restauration pour se protéger contre les rançongiciels](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Se protéger contre les rançongiciels avec la Sauvegarde Microsoft Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
+- [Détection avancée d’attaques à plusieurs niveaux dans Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Détection de fusion pour rançongiciel dans Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Defender for Cloud Apps :
+Microsoft Cloud App Security :
 
--  [Créer des stratégies de détection des anomalies dans Sécurité des applications cloud](/cloud-app-security/anomaly-detection-policy)
+-  [Créer des stratégies de détection des anomalies dans Cloud App Security](/cloud-app-security/anomaly-detection-policy)
 
-Billets de blog de l’équipe Sécurité Microsoft :
+Billets de blog de l’équipe de sécurité Microsoft :
 
 - [3 étapes pour empêcher et récupérer à partir d’un rançongiciel (septembre 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   Consultez la section **Rançongiciel**.
 
 - [Attaques par rançongiciels contrôlés par l’homme : un sinistre pouvant être évité (mars 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-  Inclut les analyses de chaîne d’attaque des attaques réelles.
+  Inclut des analyses de chaîne d’attaques des attaques réelles.
 
 - [Réponse au rançongiciel : payer ou ne pas payer ? (Décembre 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [NorskQue répond aux attaques par rançongiciel avec transparence (décembre 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Norsk Hydro répond aux attaques par rançongiciel avec transparence (décembre 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 

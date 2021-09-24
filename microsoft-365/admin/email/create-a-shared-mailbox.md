@@ -24,17 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: b6aaf63f61919c520c77a09bf3607174757d4c2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a9b96497ab88fb6872a54468278fffb74c8fdd7b
+ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176532"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "59477586"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
 > [!NOTE]
-> Si votre organisation utilise un environnement hybride Exchange, vous devez utiliser le Centre d’administration Exchange (CAE) local pour créer et gérer des boîtes aux lettres partagées. Consultez la rubrique [Créer des boîtes aux lettres partagées dans le Centre d’administration Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
+> Si votre organisation utilise un environnement hybride Exchange, vous devez utiliser le Centre d’administration Exchange (CAE) local pour créer et gérer des boîtes aux lettres partagées. Consultez la rubrique [Créer des boîtes aux lettres partagées dans le Centre d’administration Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+>
 > Si vous n'êtes pas sûr de devoir créer une boîte aux lettres partagée ou un groupe Microsoft 365 pour Outlook, voir [Comparer les groupes](../create-groups/compare-groups.md) pour plus de conseils. Sachez qu’il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Si vous le souhaitez, dites-le nous en [votant ici](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Vous pouvez facilement créer des boîtes aux lettres partagées de sorte qu’un groupe de personnes puisse surveiller et envoyer facilement du courrier électronique à partir d’une adresse de courrier commune, comme info@contoso.com. Quand une personne du groupe répond à un courrier envoyé à la boîte aux lettres partagée, la réponse semble provenir de la boîte aux lettres partagée et non de la personne.
@@ -49,39 +50,39 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 
 ::: moniker range="o365-worldwide"
 
-2. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
+2. Dans le Centre d’administration, allez à la page **Teams et groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-2. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=848041), accédez à la page **Groupes** \> **Boîtes aux lettres partagées**.
+2. Dans le [centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=848041), allez à la page **Teams et groupes** \> **Boîtes aux lettres partagées**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=850627), accédez à la page **Groupes** \> **Boîtes aux lettres partagées**.
+2. Dans le [centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=850627), allez à la page **Teams et groupes** \> **Boîtes aux lettres partagées**.
 
 ::: moniker-end
     
-3. Dans la page **Boîtes aux lettres partagées**, sélectionnez **+ Ajouter une boîte aux lettres**. Entrez le nom de la boîte aux lettres partagée. L’Assistant choisit ensuite l’adresse de courrier, que vous pouvez modifier si vous le souhaitez.
+3. Dans la page **Boîtes aux lettres partagées,** sélectionnez **+ Ajouter une boîte aux lettres partagée**. Entrez le nom de la boîte aux lettres partagée. Le choisit l’adresse e-mail, mais vous pouvez la modifier si nécessaire.
     
     ![Donnez un nom à votre boîte aux lettres partagée.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Sélectionnez **Ajouter**. Quelques minutes peuvent être nécessaires avant que vous ne puissiez ajouter des membres.
+4. Sélectionnez **Enregistrer les modifications**. Quelques minutes peuvent être nécessaires avant que vous ne puissiez ajouter des membres.
 
 5. Sous **Étapes suivantes**, sélectionnez **Ajouter des membres à cette boîte aux lettres**. Les membres représentent les personnes qui sont en mesure de consulter les courriers entrants dans cette boîte aux lettres partagée, ainsi que les réponses sortantes.
 
    ![Sélectionnez Ajouter des membres.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Sélectionnez le bouton **+Ajouter des membres**. Cochez la case en regard des personnes qui seront en mesure d'utiliser cette boîte aux lettres partagée, puis sélectionnez **Enregistrer**.
+6. Sélectionnez le bouton **+Ajouter des membres**. Cochez la case à côté des personnes que vous souhaitez autoriser à utiliser cette boîte aux lettres partagée, puis sélectionnez **Enregistrer**.
 
    ![Associer des membres à la boîte aux lettres partagée](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Sélectionnez **Fermer**.
 
-Vous bénéficiez à présent d’une boîte aux lettres partagée dotée d’un calendrier partagé. Passez maintenant à l'étape suivante : bloquer la connexion pour le compte de boîte aux lettres partagée.
+Vous bénéficiez à présent d’une boîte aux lettres partagée dotée d’un calendrier partagé. Passez à l’étape suivante : [Bloquer la connexion pour le compte de boîte aux lettres partagée](#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="which-permissions-should-you-use"></a>Quelles autorisations devez-vous utiliser ?
 
@@ -130,13 +131,14 @@ Mais que se passe-t-il si un administrateur se contente de réinitialiser le mot
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 ::: moniker-end
 
-1. Dans la liste des comptes d’utilisateurs, recherchez le compte de la boîte aux lettres partagée (par exemple, remplacez le filtre par **Utilisateurs sans licence**).
+2. Dans la liste des comptes d’utilisateurs, recherchez le compte de la boîte aux lettres partagée (par exemple, remplacez le filtre par **Utilisateurs sans licence**).
 
-1. Sélectionnez l’utilisateur pour ouvrir son volet de propriétés, puis sélectionnez l’icône **Bloquer cet utilisateur** ![Capture d’écran de l’icône Bloquer cet utilisateur](../../media/block-user-icon.png).
+3. Sélectionnez l’utilisateur pour ouvrir son volet de propriétés, puis sélectionnez l’icône **Bloquer cet utilisateur** ![Capture d’écran de l’icône Bloquer cet utilisateur](../../media/block-user-icon.png).
 
-   **Remarque** : si le compte est déjà bloqué, **Connexion bloquée** s’affiche dans la partie supérieure et l’icône indique **Débloquer cet utilisateur**.
+   > [!NOTE]
+   > Si le compte est déjà bloqué, **La connexion est bloquée** est inscrit en haut et l’icône affiche **Débloquer cet utilisateur**.
 
-1. Dans le volet **Bloquer cet utilisateur ?**, sélectionnez **Empêcher l'utilisateur de se connecter**, puis sélectionnez **Enregistrer les modifications**.
+4. Dans le volet **Bloquer cet utilisateur ?**, sélectionnez **Empêcher l'utilisateur de se connecter**, puis sélectionnez **Enregistrer les modifications**.
 
 Pour obtenir des instructions sur la manière de bloquer des comptes d’utilisateurs avec Azure AD PowerShell (y compris de nombreux comptes en même temps), voir [Bloquer des comptes d’utilisateurs avec Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 

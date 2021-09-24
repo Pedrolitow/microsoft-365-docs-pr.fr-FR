@@ -20,11 +20,11 @@ search.appverid:
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
 ms.openlocfilehash: 3cb6548cee9b14de661faed2d4a2aa2f45de3b83
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479860"
+ms.locfileid: "59480603"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -422,8 +422,8 @@ Les actions de rétention qui sont journalisées comme événements d’audit so
 - Lorsqu’un élément étiqueté dans SharePoint, OneDrive ou Exchange est marqué comme enregistrement ou enregistrement réglementaire et qu’il définitivement supprimé :
     - Dans **Activités sur les fichiers et les pages**, sélectionnez **Fichier supprimé marqué comme enregistrement**
 
-- Lorsqu’un réviseur de disposition prend des mesures pour un élément qui a atteint la fin de sa période de rétention :
-    -  Dans **Activités de révision avant destruction**, sélectionnez **Destruction approuvée**, **Période de rétention étendue**, **Élément réétiqueté** ou **Réviseurs ajoutés**
+- Lorsqu’un relecteur de disposition prend des mesures pour un élément qui a atteint la fin de sa période de rétention :
+    -  Dans **Activités de révision de disposition**, sélectionnez **Élimination approuvée**, **Période de rétention étendue**, **Éléments réétiquetés** ou **Relecteurs ajoutés**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 

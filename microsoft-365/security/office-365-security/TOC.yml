@@ -288,6 +288,8 @@
           href: mfi-slow-mail-flow-rules-insight.md
         - name: Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur
           href: manage-quarantined-messages-and-files.md
+        - name: Stratégies de mise en quarantaine
+          href: quarantine-policies.md
         - name: Supprimer les utilisateurs bloqués du portail des utilisateurs restreints
           href: removing-user-from-restricted-users-portal-after-spam.md
         - name: Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
@@ -330,7 +332,7 @@
           href: backscatter-messages-and-eop.md
         - name: Niveau de réclamation en bloc (BCL)
           href: bulk-complaint-level-values.md
-        - name: Notifications de courrier indésirable pour l’utilisateur final
+        - name: Notifications de mise en quarantaine
           href: use-spam-notifications-to-release-and-report-quarantined-messages.md
         - name: Pools de livraison sortante
           href: high-risk-delivery-pool-for-outbound-messages.md
@@ -358,5 +360,5 @@
       href: ../defender/index.yml
     - name: Microsoft Defender pour point de terminaison
       href: ../defender-endpoint/index.yml
-    - name: Microsoft Defender pour l’identité
+    - name: "Microsoft\_Defender pour l’identité"
       href: /defender-for-identity/
