@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Certains bureaux d’enregistrement de domaine offrent des services limités, ce qui signifie que des fonctionnalités Microsoft peuvent ne pas fonctionner dans tous les domaines.
-ms.openlocfilehash: 3af1503b99290611d04b1012ce5087f719f01315
-ms.sourcegitcommit: a0185d6b0dd091db6e1e1bfae2f68ab0e3cf05e5
+ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58247289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774591"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>Bureaux d’enregistrement de domaine avec limitations de configuration
 
@@ -62,7 +61,7 @@ Accédez à la page contenant les enregistrements DNS pour votre domaine. Si vou
 
 ## <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Créer des enregistrements DNS lorsque votre domaine est géré par Google (eNom)
 
-Si vous avez acheté votre domaine via Google lors de la création de votre compte Google Apps for Work, vos enregistrements DNS sont gérés par Google, mais inscrits auprès d’eNom. Vous pouvez accéder à eNom et créer un DNS via la page Google Domains.
+Si vous avez acheté votre domaine via Google lors de la création de votre compte Google Apps for Work, vos enregistrements DNS sont gérés par Google, mais inscrits auprès d’eNom. Vous pouvez accéder à eNom, et créer des DNS, via la page Google Domains.
 
 ## <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Créer des enregistrements DNS auprès de 1&1 IONOS pour Microsoft
 

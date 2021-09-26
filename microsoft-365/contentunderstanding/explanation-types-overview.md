@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 405080575f48f439e7d978a8fc7ca00ecf956be0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 178f56ea0513d0cc8ba0c47a3c9cde3a24796899
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202302"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786394"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Types d’explications dans Microsoft SharePoint Syntex
 
@@ -138,6 +138,9 @@ Redmond, WA 98034<br>
 Utilisez l’explication de proximité pour définir la distance de l’explication du numéro de téléphone afin de mieux identifier le numéro de l’adresse postale dans vos documents.
 
 ![Explication de proximité.](../media/content-understanding/proximity.png)
+
+> [!NOTE]
+> Actuellement, les expressions régulières ne peuvent pas être utilisées avec le type d’explication de proximité.
 
 #### <a name="what-are-tokens"></a>Que sont les jetons ?
 

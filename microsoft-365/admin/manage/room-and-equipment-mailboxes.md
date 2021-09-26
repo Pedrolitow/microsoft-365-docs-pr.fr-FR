@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - Lean
 - MSStore_Link
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: 7cee521b4046a3d5ca3acc6dabb657a56ccbc7d3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2255d6b509e56f5a8e573ee8e88766c4ad59ada0
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400557"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776031"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
 

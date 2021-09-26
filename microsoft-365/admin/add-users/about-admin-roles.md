@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 42c28d230cef36f7f6e0421cc46f64a53222eca8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f6881e4a4b15f79cb79a67cdab9abc6347eafa8c
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177171"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786178"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -83,7 +83,7 @@ Vous devrez probablement attribuer les rôles suivants au sein de votre organisa
 |Lecteur de rapports |   Attribuez le rôle de Lecteur de rapports aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Afficher les données d’utilisation et les rapports d’activité dans le Centre d’administration Microsoft 365 <br> – Avoir accès au pack de contenu d’adoption de Power BI <br> – Avoir accès au rapports de connexion et d’activité dans Azure AD <br> – Afficher les données renvoyées par l’API de compte-rendu Microsoft Graph|
 |Administrateur de support de service   |   Affectez le rôle d’administrateur de support de service en tant que rôle supplémentaire aux administrateurs ou aux utilisateurs qui doivent effectuer ce qui suit en complément de leur rôle d’administrateur habituel : <br> – Ouvrir et gérer des demandes de service <br> – Afficher et partager des billets du centre de messages <br> – Surveiller l’état d’intégrité des services   |
 |Administrateur SharePoint    |   Attribuez le rôle d’administrateur SharePoint aux utilisateurs qui doivent accéder et gérer le centre d’administration SharePoint Online. <br><br>Les administrateurs SharePoint peuvent également : <br> – Créer et supprimer des sites <br> – Gérer les collections de sites et les paramètres globaux de SharePoint   |
-|Administrateur du service Teams    |   Attribuez le rôle d’administrateur du service Teams aux utilisateurs qui doivent accéder et gérer le centre d’administration Teams. <br><br>Les administrateurs du service Teams peuvent également : <br> – Gérer des réunions <br> – Gérer les ponts de conférence <br> – Gérer tous les paramètres à l’échelle de l’organisation, notamment la fédération, la mise à jour de Teams et les paramètres du client Teams   |
+|Administrateur de Teams    |   Attribuez le rôle d’administrateur Teams aux utilisateurs qui doivent accéder et gérer le centre d’administration Teams. <br><br>Les administrateurs Teams peuvent également : <br> – Gérer des réunions <br> – Gérer les ponts de conférence <br> – Gérer tous les paramètres à l’échelle de l’organisation, notamment la fédération, la mise à jour de Teams et les paramètres du client Teams   |
 |Administrateur d’utilisateurs     |    Attribuez le rôle d’administrateur d'utilisateurs aux ceux qui doivent effectuer les opérations suivantes pour l'ensemble des utilisateurs : <br> – Ajouter des utilisateurs et des groupes <br> – Attribuer des licences <br> – Gérer la plupart des propriétés des utilisateurs <br> – Créer et gérer les affichages utilisateur <br> – Mettre à jour les stratégies d’expiration des mots de passe <br> – Gérer des demandes de service <br> – Surveiller l’état d’intégrité des services <br><br>  L’administrateur d’utilisateurs peut également effectuer les actions suivantes pour les utilisateurs qui ne sont pas administrateurs et pour ceux auxquels les rôles suivants sont attribués : lecteur de répertoire, inviteur d'invités, administrateur du support technique, lecteur du centre de messages, lecteur de rapports : <br> – Gérer les noms d’utilisateur<br> – Supprimer et restaurer des d’utilisateurs<br> – Réinitialiser des mots de passe <br> – Forcer les utilisateurs à se déconnecter <br> – Mettre à jour les clés d'appareils (FIDO)   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administration déléguée pour les partenaires Microsoft

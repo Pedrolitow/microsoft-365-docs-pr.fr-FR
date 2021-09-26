@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Vue d’ensemble de l’API REST du modèle de compréhension de document SharePoint Syntex.
-ms.openlocfilehash: e661df76828db0d05f7c3492880259117b9f8bf1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b77e882163810a389e734f63b45418a4e682dd88
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775683"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>API REST du modèle de compréhension de document SharePoint Syntex
 
@@ -44,7 +44,8 @@ Les commandes REST suivantes peuvent être utilisées avec les modèles de compr
 - [Obtenir des informations sur des bibliothèques et des modèles](rest-getmodelandlibraryinfo.md) : reçoit des informations sur un modèle et la bibliothèque dans laquelle il est appliqué.
 - [UpdateModelSettings](rest-updatemodelsettings-method.md) : met à jour les paramètres des modèles disponibles (description du modèle et étiquette de rétention associés) pour un modèle de compréhension de document SharePoint Syntex.
 - [BatchDelete](rest-batchdelete-method.md) : Supprime un modèle appliqué de compréhension de document à partir d’une ou plusieurs bibliothèques.
-- [Créer une demande de classification](rest-createclassificationrequest.md) : crée une demande pour classifier un ou plusieurs fichiers spécifiés en utilisant le modèle appliqué.
+- [Créer une demande de classification de fichiers](rest-createclassificationrequest.md) : Crée une demande pour classifier un ou plusieurs fichiers spécifiés à l’aide du modèle appliqué.
+- [Créer une demande de classification de dossier](rest-createclassificationrequest.md) : Crée une demande pour classifier un dossier entier à l’aide du modèle appliqué.
 
 ## <a name="scenarios"></a>Scénarios
 
