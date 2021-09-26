@@ -11,7 +11,6 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envoyez un courrier électronique en tant que liste de distribution Microsoft 365 de sorte que lorsqu’un membre répond à un message, il semble qu’il soit issu de la liste de distribution.
-ms.openlocfilehash: 021f44591805385f0575d6fa2ca550289a72c82d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f41368d5b769c783c7c05aa662199bbcafd7b1e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178923"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776043"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
@@ -63,7 +62,7 @@ Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une
 
 4. Envoyez le message électronique.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d'administration Microsoft 365 (article)\
 [Collaboration par courrier](../email/email-collaboration.md) électronique (article)\

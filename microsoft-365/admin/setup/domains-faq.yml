@@ -13,7 +13,6 @@ metadata:
   ms.collection:
   - M365-subscription-management
   - Adm_O365
-  - Adm_TOC
   ms.custom:
   - AdminSurgePortfolio
   - okr_smb
@@ -26,12 +25,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: En savoir plus sur les domaines (domaine onmicrosoft et domaine de transfert) en trouvant des réponses à vos questions dans le FAQ.
-  ms.openlocfilehash: 3daa6948e6a54e205f1f75ab3ceac001c0e84d31
-  ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+  ms.openlocfilehash: 7ec7b28a6c1672e637c339e23bca7391993f7666
+  ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/16/2021
-  ms.locfileid: "59401157"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59773206"
 title: Forum aux questions sur les domaines
 summary: "\n\nCet article contient des réponses aux questions fréquemment posées sur les domaines Microsoft 365.\n\nSi vous ne trouvez pas la réponse à votre question, laissez-nous un commentaire et nous l'ajouterons à la liste.\n"
 sections:

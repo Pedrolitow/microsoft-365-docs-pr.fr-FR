@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou renvoyez la licence afin que vous ne payiez pas pour elle. '
 ms.date: 05/11/2021
-ms.openlocfilehash: c100d23bad3e8992667e43d8f17d92e296ae49d5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 574650c2b483be299d316ee73687a48115485e7f
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786166"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
@@ -71,7 +72,7 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
 
 4. Sélectionnez **Enregistrer les modifications**.
 
-5. Lorsque vous revenirz à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée est **sans permis.**
+5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
 
 6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/buy-licenses.md)
 

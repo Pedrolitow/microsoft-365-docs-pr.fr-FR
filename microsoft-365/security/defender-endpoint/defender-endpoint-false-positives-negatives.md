@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 68a14ab44011506d89e219f1350dbc86939a6432
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: c897a65296f0f5b016b2bdb22e28773a01be494a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356376"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776991"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -74,13 +74,13 @@ Avant de classer ou de supprimer une alerte, déterminez si l’alerte est exact
 
 4. En fonction de l’état de l’alerte, prenez les étapes décrites dans le tableau suivant :
 
-<br/>
+<br/><br/>
 
-|État de l’alerte|Procédure|
-|---|---|
-|L’alerte est exacte|Affectez l’alerte, puis [examinez-la plus en](investigate-alerts.md) détail.|
-|L’alerte est un faux positif|<ol><li>[Classifiez l’alerte](#classify-an-alert) comme faux positif.</li><li>[Supprimer l’alerte](#suppress-an-alert).</li><li>[Créez un indicateur](#indicators-for-microsoft-defender-for-endpoint) pour Microsoft Defender pour le point de terminaison.</li><li>[Envoyez un fichier à Microsoft pour analyse.](#part-4-submit-a-file-for-analysis)</li></ol>|
-|L’alerte est précise, mais sans importance (sans importance)|[Classifiez l’alerte](#classify-an-alert) comme un vrai positif, puis [supprimez l’alerte.](#suppress-an-alert)|
+   |État de l’alerte|Procédure|
+   |---|---|
+   |L’alerte est exacte|Affectez l’alerte, puis [examinez-la plus en](investigate-alerts.md) détail.|
+   |L’alerte est un faux positif|<ol><li>[Classifiez l’alerte](#classify-an-alert) comme faux positif.</li><li>[Supprimer l’alerte](#suppress-an-alert).</li><li>[Créez un indicateur](#indicators-for-microsoft-defender-for-endpoint) pour Microsoft Defender pour le point de terminaison.</li><li>[Envoyez un fichier à Microsoft pour analyse.](#part-4-submit-a-file-for-analysis)</li></ol>|
+   |L’alerte est précise, mais sans importance (sans importance)|[Classifiez l’alerte](#classify-an-alert) comme un vrai positif, puis [supprimez l’alerte.](#suppress-an-alert)|
 
 ### <a name="classify-an-alert"></a>Classifier une alerte
 
@@ -176,6 +176,7 @@ Lorsque vous avez terminé de passer en revue et d’annuler les actions qui ont
 Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
+
    1. Accéder à **Démarrer** et taper _cmd_.
    2. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
@@ -377,6 +378,7 @@ Nous vous recommandons [d’Microsoft Endpoint Manager](/mem/endpoint-manager-ov
 4. Sous **l’onglet Basics,** spécifiez un nom et une description pour la stratégie. Sélectionnez **Suivant**.
 
 5. Sous **l’onglet Paramètres de configuration,** développez **Protection cloud** et spécifiez les paramètres suivants :
+
    - Définissez **Activer la protection cloud sur** **Oui.**
    - Définissez **Niveau de protection assuré par le cloud** sur **Non configuré**. (Ce niveau fournit un niveau de protection élevé par défaut tout en réduisant les risques d’obtention de faux positifs.)
 
@@ -443,7 +445,7 @@ Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/a
 > [!IMPORTANT]
 > Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions](#indicators-for-microsoft-defender-for-endpoint)et conservez l’investigation et la correction automatisées pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer.
 
-## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
+## <a name="still-need-help"></a>Encore besoin d’aide ?
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d’aide, contactez le support technique.
 

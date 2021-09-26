@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: Découvrez comment réinitialiser le mot de passe et envoyer un message électronique à un nouvel Microsoft 365 utilisateur.
-ms.openlocfilehash: 916ac2f92f8cd6a7236525c733d4b5061368b0ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f16ea3550afd109e16f2a5ebae937bbc21621c24
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774098"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur
 

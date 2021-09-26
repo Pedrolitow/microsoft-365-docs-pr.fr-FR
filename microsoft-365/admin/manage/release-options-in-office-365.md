@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les nouvelles mises à jour de produits et de fonctionnalités dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: df64bbac95f9d902ed83080e639544feb384fd72
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7d770dd569c5bd8408a842c64764f949de93aa8
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776067"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
@@ -111,6 +110,6 @@ Vous pouvez modifier la façon dont votre organisation reçoit Microsoft 365 mis
 
 Découvrez comment gérer [les messages](/office365/admin/manage/message-center) dans votre centre Microsoft 365 [messages pour](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) recevoir des notifications sur les mises à jour et les Microsoft 365 à venir.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Rejoindre le programme Office Insider](https://insider.office.com/join/windows) (article)

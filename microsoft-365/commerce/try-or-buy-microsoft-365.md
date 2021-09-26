@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: GEA150
 description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: 3fc29097268ad4213f7a46d0a58d9eb24073924d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b38d5a0fb49b67315d43011107c8643432fa021b
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180115"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786022"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 entreprise
 
@@ -47,7 +48,7 @@ Microsoft 365 entreprise est un service d’abonnement qui vous permet d’exéc
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures de cet article, vous devez être un administrateur global ou un administrateur de facturation pour votre organisation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures de cet article, vous devez être un administrateur global ou un administrateur de facturation pour votre organisation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Essayer un abonnement d’essai gratuit
 
@@ -76,7 +77,7 @@ Si vous souhaitez acheter votre abonnement avant la fin de votre version d’ess
 
 Avez-vous besoin de plus de temps pour tester les fonctionnalités de Microsoft 365 entreprise avant d’acheter ? Si votre abonnement d'évaluation expire dans les 15 jours et n'a jamais été prolongé, vous pouvez le prolonger de 30 jours. Cette possibilité n'est offerte qu'une fois.
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement d’essai que vous souhaitez étendre.
 3. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres de** paiement, sélectionnez **Étendre la date de fin.**
 4. Dans le volet Date **de** fin de l’extension, examinez les informations de poste et, si nécessaire, sélectionnez un mode de paiement. Lorsque vous avez terminé, sélectionnez **Étendre la version d’essai.**
@@ -143,7 +144,7 @@ Si vous avez un nouveau compte et que vous avez configuré votre premier abonnem
 
 Si vous avez déjà un abonnement et que vous ajoutez un nouvel abonnement, vous pouvez y déplacer des utilisateurs. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](subscriptions/move-users-different-subscription.md)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 vidéos de formation pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéo)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../admin/add-users/add-users.md) (article)\

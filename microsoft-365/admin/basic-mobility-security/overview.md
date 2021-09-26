@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour définir des stratégies de sécurité des appareils et des règles d’accès.
-ms.openlocfilehash: a5fe6c4d6350871a2c7013d1de3df8b2911ceca1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a7706c4c5b571c9ff41e383efe2f4de2f512257
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775143"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -60,7 +59,7 @@ Une fois que vous avez installé basic Mobility and Security et que vos utilisat
 
 Si vous avez simplement besoin de la gestion des applications mobiles (MAM), par exemple pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune propose une autre option en plus de l’inscription et de la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies MAM à l’aide du portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, voir [vue d’ensemble des stratégies de protection des applications.](/mem/intune/apps/app-protection-policy)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Configurer la mobilité et la sécurité de](set-up.md) base (article)\
 [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md) (article)\

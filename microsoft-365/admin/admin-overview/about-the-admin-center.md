@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -26,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Connectez-vous avec des autorisations d’administrateur au Centre d’administration Microsoft 365 pour configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements.
-ms.openlocfilehash: 2e7495b4c5fc039720d3e58cacebf1e86dcaaff2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 84e8a3f692fe4747fb213564c77713cd63181905
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773966"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 

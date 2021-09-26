@@ -13,7 +13,6 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150
@@ -22,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer et archiver des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents Microsoft 365 boîtes aux lettres.
-ms.openlocfilehash: 0dd06e4b51e81020d03f113abfca9ba69f30ec16
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 5732eb622b88e7c9c0f0141ffe60949f944c3a0f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355928"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772850"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archiver des données tierces dans Microsoft 365
 
@@ -55,11 +54,11 @@ Cliquez sur le lien dans la colonne **de** données tierces pour suivre les inst
 
 |Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Message Bloomberg](archive-bloomberg-message-data.md)     |![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
-|[Facebook](archive-facebook-data-with-sample-connector.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Message Bloomberg](archive-bloomberg-message-data.md)     |![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)||
+|[Facebook](archive-facebook-data-with-sample-connector.md)     |![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[Ressources humaines (RH)](import-hr-data.md) ||||||![Coche](../media/checkmark.png)
-|[Conversation ICE](archive-icechat-data.md)     |![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Conversation ICE](archive-icechat-data.md)     |![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[Badging physique](import-physical-badging-data.md) ||||||![Coche](../media/checkmark.png)|
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
@@ -73,19 +72,19 @@ Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez ut
 
 |Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[CellTrust](archive-celltrust-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Cisco Jabber sur MS SQL](archive-ciscojabberonmssql-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Cisco Jabber sur Oracle](archive-ciscojabberonoracle-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Cisco Jabber sur PostgreSQL](archive-ciscojabberonpostgresql-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[CellTrust](archive-celltrust-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Jabber sur MS SQL](archive-ciscojabberonmssql-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Jabber sur Oracle](archive-ciscojabberonoracle-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Jabber sur PostgreSQL](archive-ciscojabberonpostgresql-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[EML](archive-eml-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[FX Connect](archive-fxconnect-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Jive](archive-jive-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[FX Connect](archive-fxconnect-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Jive](archive-jive-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Base de données MS SQL](archive-mssqldatabaseimporter-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[Tableau croisé dynamique](archive-pivot-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Redtail Speak](archive-redtailspeak-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Gestion de Reuters](archive-reutersdealing-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Reuters Eikon](archive-reuterseikon-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Reuters FX](archive-reutersfx-data.md)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Tableau croisé dynamique](archive-pivot-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Redtail Speak](archive-redtailspeak-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Gestion de Reuters](archive-reutersdealing-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Reuters Eikon](archive-reuterseikon-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Reuters FX](archive-reutersfx-data.md)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[RingCentral](archive-ringcentral-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
@@ -98,7 +97,7 @@ Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez ut
 |[Espace de travail sur Facebook](archive-workplacefromfacebook-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[XIP](archive-xip-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[Yieldbroker](archive-yieldbroker-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Yieldbroker](archive-yieldbroker-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[YouTube](archive-youtube-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Réunions Zoom](archive-zoommeetings-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 ||||||||
@@ -113,18 +112,18 @@ Les connecteurs de données TeleMessage sont également disponibles dans Cloud d
 
 |Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Android](archive-android-archiver-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[AT&T Network](archive-att-network-archiver-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Réseau Bell](archive-bell-network-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Android](archive-android-archiver-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[AT&T Network](archive-att-network-archiver-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réseau Bell](archive-bell-network-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Numéro d'entreprise](archive-enterprise-number-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Réseau O2](archive-o2-network-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réseau O2](archive-o2-network-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Réseau DeNte](archive-rogers-network-archiver-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Signal](archive-signal-archiver-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Pays-De-La](archive-telegram-archiver-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Réseau TELUS](archive-telus-network-data.md)    |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Réseau Verizon](archive-verizon-network-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[WeChat](archive-wechat-data.md)|![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[WhatsApp](archive-whatsapp-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réseau TELUS](archive-telus-network-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réseau Verizon](archive-verizon-network-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[WeChat](archive-wechat-data.md)|![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[WhatsApp](archive-whatsapp-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 ||||||||
 
 ### <a name="17a-4-data-connectors"></a>Connecteurs de données 17a-4
@@ -137,14 +136,14 @@ Les connecteurs de données 17a-4 sont également disponibles dans les environne
 
 |Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[BlackBerry](archive-17a-4-blackberry-data.md)     |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[BlackBerry](archive-17a-4-blackberry-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Bloomberg](archive-17a-4-bloomberg-data.md)     |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Cisco Jabber](archive-17a-4-cisco-jabber-data.md)   |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Cisco Webex](archive-17a-4-webex-teams-data.md)   |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[FactSet](archive-17a-4-factset-data.md)    |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Fuze](archive-17a-4-fuze-data.md)    |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[FX Connect](archive-17a-4-fxconnect-data.md)    |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Conversation ICE](archive-17a-4-ice-im-data.md)    |![Marque de vérification.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[FactSet](archive-17a-4-factset-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Fuze](archive-17a-4-fuze-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[FX Connect](archive-17a-4-fxconnect-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Conversation ICE](archive-17a-4-ice-im-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[InvestEdge](archive-17a-4-investedge-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[LivePerson Conversational Cloud](archive-17a-4-liveperson-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Quip](archive-17a-4-quip-data.md)    |![Coche.](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||

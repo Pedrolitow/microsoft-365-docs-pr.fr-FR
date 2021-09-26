@@ -11,12 +11,13 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: f274480d80f97319df8110571c11552bcb7d3639
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: ca285930059e432a8fd2aca0ff4d3245afe5972d
+  ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59176507"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59785974"
 landingContent:
 - title: Gérer la messagerie
   linkLists:

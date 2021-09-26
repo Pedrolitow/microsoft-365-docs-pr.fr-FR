@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble Microsoft 365 centre de messages et son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
-ms.openlocfilehash: fec3b0e88f7f399fcde821d1cdc55baa99c477e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9eff7bb1e22107e80c1eefa9547ecb9ee6f0cb95
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178971"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773175"
 ---
 # <a name="message-center"></a>Centre de messages
 
@@ -58,7 +57,7 @@ Vous pouvez également utiliser [l’application Administration Microsoft 365 su
 
 Pour vous désabonner des e-mails du centre de messages, consultez [l’article Unsubscribe from Message center emails](#unsubscribe-from-message-center-emails) in this article.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 <br>
 
@@ -212,7 +211,7 @@ Voici une vue d’ensemble rapide des informations que vous verrez dans chaque c
 |Titre du message|Les titres des messages sont de brèves descriptions des modifications à venir. Si le titre complet ne s’affiche pas, placez votre curseur sur celui-ci et l’intégralité du titre s’affiche dans une zone de fenêtre pop-up.|
 |Service|Les icônes indiquent l’application à laquelle s’applique le message.|
 |Plus d'options|D’autres options vous permet de faire disparaître un message, de le marquer comme lu ou non lu, ou de le partager avec un autre administrateur. Pour restaurer un message archivé, sélectionnez **l’onglet Archive,** cochez la coche en regard du message, puis sélectionnez **Restaurer**.|
-|Balises|Vous pouvez choisir des balises dans la drop-down **Balise** pour filtrer les messages. Les balises disponibles sont : **Impact sur l’administrateur, Mise** à jour **majeure,** Confidentialité des **données,** Mise à jour des fonctionnalités,  **Nouvelle** **fonctionnalité,** Retrait et Impact sur **l’utilisateur.**|
+|Balises| Vous pouvez choisir des balises dans la drop-down Balise pour filtrer les messages. <br> <p> **Confidentialité des données**: notification de confidentialité des données (limitée aux rôles d’administrateur général et de lecteur de confidentialité du centre de messages). <p> **Mise à jour** majeure : modifications communiquées au moins 30 jours à l’avance [(mises à jour majeures).](#major-updates) <p> **Retrait :** retrait d’un service ou d’une fonctionnalité. <p> **Nouvelle fonctionnalité**: nouvelle fonctionnalité ou nouveau service. <p> **Mise à jour de** fonctionnalité : mise à jour vers une fonctionnalité existante. <p> **Impact sur l’administrateur**: lorsque la modification a un impact clair sur l’administrateur des manières suivantes : modification de l’interface utilisateur, modification du flux de travail, contrôle disponible et Action spécifique/potentielle. <p> **Impact sur l’utilisateur**: lorsque la modification du service a un impact clairement sur l’utilisateur : modification de l’interface utilisateur et modification du flux de travail. <p> **Message mis à jour**: lorsqu’un message est mis à jour.|
 |Catégorie| Cela n’est pas affiché par défaut, mais peut être spécifié dans le panneau Choisir **des colonnes.** Les messages sont identifiés par l’une des trois catégories suivantes : <p> **Éviter ou résoudre les problèmes**: vous informe des problèmes connus qui affectent votre organisation et peut vous obliger à prendre des mesures pour éviter les interruptions de service. La prévention ou la correction des problèmes sont différentes des messages d’état du service, car ils vous invitent à être proactif pour éviter les problèmes. <p> **Planifier le changement**: vous informe des modifications apportées aux Microsoft 365 qui peuvent vous obliger à agir pour éviter les interruptions de service. Par exemple, nous allons vous faire savoir sur les modifications apportées à la requise du système ou sur les fonctionnalités en cours de suppression. Nous essayons de fournir au moins 30 jours d’avis sur toute modification qui nécessite qu’un administrateur agisse pour que le service fonctionne normalement. <p> **Restez informé**: vous indique les fonctionnalités nouvelles ou mises à jour que nous sommes en train d’allumer dans votre organisation. Les fonctionnalités sont généralement annoncées en premier dans la [feuille Microsoft 365 feuille de route.](https://go.microsoft.com/fwlink/?linkid=2070821) <p> Peut également vous faire savoir sur la maintenance planifiée conformément à notre contrat de niveau de service. La maintenance planifiée peut entraîner un temps d’in Microsoft 365, une fonctionnalité spécifique ou un service tel que le courrier électronique ou les OneDrive Entreprise.|
 |Agir par|Nous n’avons de dates ici que si nous a faisons une modification qui nécessite que vous prenons une action avant un certain délai. Étant donné que nous utilisons rarement la loi **par** colonne, si vous voyez quelque chose ici, vous devez y prêter une attention particulière.|
 |Dernière mise à jour|Date à laquelle le message a été publié ou mis à jour pour la dernière fois.|

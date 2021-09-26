@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,25 +21,25 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Découvrez comment activer ou désactiver la fonctionnalité De la fonction De la fonction De pylène pour tous les utilisateurs ou des utilisateurs spécifiques de votre organisation, à l’aide Exchange PowerShell. '
-ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 055e02cd9a53dfcb8dd5bc3d3b7b601e3efe53ad
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176564"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774675"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurer l’encombrement pour votre organisation
 
 > [!TIP]
 > [La boîte de réception Focused](../setup/configure-focused-inbox.md) va remplacer l’encombrement. En savoir plus : Mise à jour sur la boîte de réception [Focused et nos plans pour le clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-En tant qu’administrateur, vous pouvez être dans l’devoir de gérer la fonctionnalité De p Microsoft 365. Pour activer/désactiver la fonctionnalité De l’encombrement pour les utilisateurs de votre organisation, vous devez utiliser Exchange PowerShell. (Les individus peuvent l’activer/le désactiver à l’aide des instructions suivantes : [Désactiver/activer le](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)clutter dans Outlook .
+En tant qu’administrateur, vous pouvez être dans l’devoir de gérer la fonctionnalité De p Microsoft 365. Pour activer/désactiver la fonctionnalité De l’encombrement pour les utilisateurs de votre organisation, vous devez utiliser Exchange PowerShell. (Les individus peuvent l’activer/le désactiver à l’aide des instructions suivantes : Désactiver/activer la fonction De la [pylasse dans Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
   
-Découvrez comment [utiliser PowerShell avec Exchange Online](/powershell/exchange/exchange-online-powershell) et Connecter pour Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) pour plus d’informations sur Exchange PowerShell. Vous devez avoir un compte qui dispose au moins du rôle d’administrateur Exchange service et de la possibilité de se connecter à Exchange Online avec PowerShell. 
+Découvrez comment [utiliser PowerShell avec Exchange Online](/powershell/exchange/exchange-online-powershell) et Connecter pour Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) pour plus d’informations sur Exchange PowerShell. Vous devez avoir un compte ayant au moins le rôle d’administrateur Exchange service et la possibilité de se connecter à Exchange Online avec PowerShell. 
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Activer le encombrement à l’Exchange PowerShell
 
-Vous pouvez activer l’encombrement manuellement pour une boîte aux lettres en exécutant la cmdlet [Set-Clutter.](/powershell/module/exchange/set-clutter) Vous pouvez également afficher les paramètres de courrier non pylasse pour les boîtes aux lettres de votre organisation en exécutant la cmdlet [Get-Clutter.](/powershell/module/exchange/get-clutter) 
+Vous pouvez activer l’encombrement manuellement pour une boîte aux lettres en exécutant la cmdlet [Set-Clutter.](/powershell/module/exchange/set-clutter) Vous pouvez également afficher les paramètres de courrier non plédet pour les boîtes aux lettres de votre organisation en exécutant la cmdlet [Get-Clutter.](/powershell/module/exchange/get-clutter) 
   
 Activer le clutter pour un seul utilisateur nommé Allie Bellew
     
@@ -72,7 +71,7 @@ En tant qu’administrateur, vous pouvez ré-activer le clutter à l’aide Exch
     
   - Les paramètres de l’encombrement n’apparaissent pas
     
-- Si ni la boîte de réception De l’encombrement ni la boîte de réception Focused n’est activée : 
+- Si ni la boîte de réception De l’encombrement, ni la boîte de réception Focused n’est activée : 
     
   - La boîte de réception Courrier non paginé et la boîte de réception Focus apparaissent en tant qu’options dans le courrier électronique de l’Paramètres
     
@@ -86,7 +85,7 @@ En tant qu’administrateur, vous pouvez ré-activer le clutter à l’aide Exch
     
   - Les paramètres de l’encombrement n’apparaissent pas
     
-- Si ni la boîte de réception De l’encombrement ni la boîte de réception Focused n’est activée : 
+- Si ni la boîte de réception De l’encombrement, ni la boîte de réception Focused n’est activée : 
     
   - La boîte de réception Courrier non paginé et la boîte de réception Focus apparaissent en tant qu’options dans le courrier électronique de l’Paramètres
     
@@ -98,7 +97,7 @@ En tant qu’administrateur, vous pouvez ré-activer le clutter à l’aide Exch
     
   - Les paramètres de l’encombrement s’affichent
     
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Utiliser le clutter pour trier les messages de](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) faible priorité dans Outlook (article)\
 [Utiliser le clutter pour trier les messages de](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) faible priorité dans OWA (article)\

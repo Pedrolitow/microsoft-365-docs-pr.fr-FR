@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: admindeeplinkMAC
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Apprenez à gérer les groupes Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: c7f38a6a0b2eb3f6c0466858b60ac0beb2143bc0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8b9e3492409322b77d7a64c73bd90f09a0f4daad
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176764"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774951"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d'administration Microsoft 365
 
@@ -49,7 +48,7 @@ Go to the Centre d'administration Microsoft 365 at [https://admin.microsoft.com]
 
 3. Sous **l’onglet** Membres, choisissez si vous souhaitez gérer les propriétaires ou les membres.
 
-4. Choisissez **Ajouter pour** ajouter une personne ou cliquez sur **X** pour supprimer une personne.
+4. Choisissez **Ajouter** pour ajouter une personne ou cliquez **sur X** pour supprimer une personne.
 
 5. Cliquez sur **Fermer**.
 

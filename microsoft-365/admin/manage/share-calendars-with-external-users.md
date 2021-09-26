@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Activez le partage de calendrier dans le Centre d'administration Microsoft 365 afin que les utilisateurs peuvent partager leurs calendriers avec toute personne à l’intérieur ou à l’extérieur de l’organisation.
-ms.openlocfilehash: 3183eb9f45333e26685c09d586b5f3c5137a4a56
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5b9808f2b44e87d39a1f16389fa09aa511fbc2ee
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178907"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776007"
 ---
 # <a name="share-calendars-with-external-users"></a>Partager des calendriers avec des utilisateurs externes
 
@@ -51,7 +50,7 @@ Vous pouvez activer le partage de calendrier pour tous les utilisateurs de votre
 
 Une fois le partage activé, les propriétaires de calendrier peuvent étendre les invitations à des utilisateurs spécifiques. Pour obtenir des instructions, [voir Partager votre calendrier dans Outlook Web App.](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Activer ou désactiver le partage externe pour un site](/sharepoint/change-external-sharing-site) (article)\
 [Vue d’ensemble Centre d'administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\

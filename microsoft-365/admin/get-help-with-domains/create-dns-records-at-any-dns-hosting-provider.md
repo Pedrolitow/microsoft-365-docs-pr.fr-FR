@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 search.appverid:
 - MET150
@@ -22,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: bced40831a9d73e0c72c6ebb232839409c8a64ea
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: f9af8ccf5a6a8cadfa192fdac5706de6c9d0890b
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775551"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 

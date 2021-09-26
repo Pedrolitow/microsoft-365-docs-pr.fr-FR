@@ -94,5 +94,7 @@
       href: rest-api/rest-updatemodelsettings-method.md
     - name: BatchDelete
       href: rest-api/rest-batchdelete-method.md
-    - name: Créer une demande de classification
+    - name: Créer une demande de classification de fichiers
       href: rest-api/rest-createclassificationrequest.md
+    - name: Créer une demande de classification de dossiers
+      href: rest-api/rest-createfolderclassificationrequest.md

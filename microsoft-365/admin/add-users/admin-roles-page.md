@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -20,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Les rôles d’administrateur sont map faits avec les fonctions professionnelles et fournissent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: f0dc528814c47bca618c7df3462bb0d7bcdb55fe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Les rôles d’administrateur sont map faits avec les fonctions métiers et fournissent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
+ms.openlocfilehash: b6e787fe4eb72ef5a6d8da78391839509a38b446
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177123"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773642"
 ---
 # <a name="get-started-with-the-roles-page"></a>Mise en place de la page rôles
 
@@ -65,7 +64,7 @@ Attribuez le Exchange administrateur principal aux utilisateurs qui ont besoin d
 
 Attribuez le rôle d’administrateur global aux utilisateurs qui ont besoin d’un accès global à la plupart des fonctionnalités et données de gestion dans les services en ligne Microsoft. Le fait de donner un accès global à un grand nombre d’utilisateurs représente un risque pour la sécurité et nous vous recommandons de n’avoir que 2 à 4 administrateurs généraux. Seuls les administrateurs globaux peuvent réinitialiser les mots de passe de tous les utilisateurs et ajouter et gérer des domaines. Ils peuvent également ouvrir et gérer les demandes de support au support Microsoft. La personne qui s’est inscrite aux services en ligne Microsoft devient automatiquement un administrateur global. En [savoir plus](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>Lecteur général
+### <a name="global-reader"></a>Lecteur global
 
 Attribuez le rôle d’administrateur de lecteur global aux utilisateurs qui doivent afficher les fonctionnalités et paramètres d’administration dans tous les centres d’administration que l’administrateur global peut afficher. Le rôle d’administrateur de lecteur global ne peut modifier aucun paramètre. [En savoir plus](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
@@ -79,7 +78,7 @@ Attribuez le rôle d’administrateur de service aux utilisateurs qui doivent cr
 
 ### <a name="sharepoint-admin"></a>Administrateur SharePoint
 
-Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automatiquement créé et l’administrateur général est définie comme administrateur principal de la collection de sites. Attribuez le SharePoint administrateur principal aux utilisateurs qui souhaitent accéder au centre d SharePoint’administration. Les utilisateurs qui SharePoint rôle d’administrateur principal peuvent créer et gérer des collections de sites, désigner des administrateurs de collections de sites et gérer des profils utilisateur. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de support via le support Microsoft. [En savoir plus](/sharepoint/sharepoint-admin-role)
+Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automatiquement créé et l’administrateur général est définie comme administrateur principal de la collection de sites. Attribuez le SharePoint administrateur principal aux utilisateurs qui souhaitent accéder au centre d SharePoint’administration. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent créer et gérer des collections de sites, désigner des administrateurs de collections de sites et gérer des profils utilisateur. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de support via le support Microsoft. [En savoir plus](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Administrateur du service Teams
 

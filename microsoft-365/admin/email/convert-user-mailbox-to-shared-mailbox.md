@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Apprenez à convertir une boîte aux lettres privée en boîte aux lettres partagée accessible par plusieurs personnes et non par une seule personne. '
-ms.openlocfilehash: f6f4d84b96b0c5a04cb9e8d01ece48cadd45f0d7
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 67a4ce19e355b8a227e9471f164344ad22deffbc
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774663"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
 
@@ -118,7 +117,7 @@ Pour plus d’informations sur la conversion d’une boîte aux lettres utilisat
  
 
 > [!NOTE]
-> Si vous êtes membre du groupe de rôles Gestion de l’organisation ou Gestion des destinataires, vous pouvez utiliser l’Exchange Management Shell pour modifier une boîte aux lettres utilisateur en boîte aux lettres partagée en local. Par exemple : `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
+> Si vous êtes membre du groupe de rôles Gestion de l’organisation ou Gestion des destinataires, vous pouvez utiliser l’Exchange Management Shell pour modifier une boîte aux lettres utilisateur en boîte aux lettres partagée en local. Par exemple, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
 ## <a name="related-content"></a>Contenu associé
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application Microsoft 365 d’analyse de l’utilisation dans Power BI.
-ms.openlocfilehash: a05ea19915af96720c3aeaf4a4d01fbe879fbc27
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77e4a9bb7953435cd209a2e71ba2a76bc2b916d0
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180739"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776331"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -104,7 +103,7 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
   
 L’application de ces modifications peut prendre quelques minutes. L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft 365.   
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [À propos de l’analyse de l’utilisation](usage-analytics.md) (article)\
 [Obtenir la dernière version de l’analyse de l’utilisation](get-the-latest-version-of-usage-analytics.md) (article)\

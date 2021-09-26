@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -25,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Collectez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS afin de connecter votre domaine à Microsoft 365 abonnement.
-ms.openlocfilehash: aea4cbcff76ec499b9e9e5618646774f56785cb9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c56120e446ccde93d353bd4e36fd03493cda4688
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176419"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774447"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : rechercher la valeur de l’enregistrement TXT et vérifier
 
 ::: moniker range="o365-worldwide"
 
@@ -90,7 +89,7 @@ ms.locfileid: "59176419"
     
 2. Dans la page **Domaines**, sélectionnez votre domaine.
     
-3. Choose **Manage DNS,** select **More Options** Add your own  >  **DNS** and select **Continue** to see the DNS records to add.
+3. Choisissez **Gérer DNS,** sélectionnez **Autres options** Ajouter votre propre DNS et sélectionnez Continuer à voir les enregistrements  >   DNS à ajouter. 
     
     Il est recommandé de conserver ces informations disponibles tandis que vous apportez des modifications à votre hôte DNS, pour que vous puissiez copier et coller les valeurs.
     

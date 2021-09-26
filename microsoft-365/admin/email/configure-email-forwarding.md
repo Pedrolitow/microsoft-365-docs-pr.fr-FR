@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -24,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Le forwarding de courrier vous permet de forwarder les messages électroniques envoyés à une boîte aux lettres Microsoft 365 utilisateur vers une autre boîte aux lettres à l’intérieur ou à l’extérieur de votre organisation.
-ms.openlocfilehash: c2715f42a32eb4a4a3743016d54b7ad42c424835
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 6703e37c1f576a5f3b0671def764deafa7e2daa2
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774687"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurer le forwarding du courrier électronique dans Microsoft 365
 
@@ -85,7 +84,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 3. Développez **les paramètres de messagerie,** puis dans la section **De forwarding de** courrier, sélectionnez **Modifier**.
 
-4. Dans la page de forwarding de courrier électronique, définissez le basculement sur **Sur,** entrez l’adresse de forwarding et choisissez si vous souhaitez conserver une copie des e-mails transmis. Si cette option n’est pas disponible, assurez-vous qu’une licence est attribuée au compte d’utilisateur. Cliquez sur **Enregistrer**.
+4. Dans la page de forwarding de courrier électronique, définissez le basculement sur **Sur,** entrez l’adresse de forwarding et choisissez si vous souhaitez conserver une copie des e-mails transmis. Si cette option n’est pas disponible, assurez-vous qu’une licence est attribuée au compte d’utilisateur. Sélectionnez **Enregistrer**.
 
    **Pour le forward vers plusieurs adresses** e-mail, vous pouvez demander à l’utilisateur de configurer une règle dans Outlook pour le forward aux adresses. Pour plus d’informations, voir [Utiliser des règles pour envoyer automatiquement des messages.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 
@@ -103,7 +102,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 3. Développez **les paramètres de messagerie,** puis dans la section **De forwarding de** courrier, sélectionnez **Modifier**.
 
-4. Dans la page de forwarding de courrier électronique, définissez le basculement sur **Sur,** entrez l’adresse de forwarding et choisissez si vous souhaitez conserver une copie des e-mails transmis. Si cette option n’est pas disponible, assurez-vous qu’une licence est attribuée au compte d’utilisateur. Cliquez sur **Enregistrer**.
+4. Dans la page de forwarding de courrier électronique, définissez le basculement sur **Sur,** entrez l’adresse de forwarding et choisissez si vous souhaitez conserver une copie des e-mails transmis. Si cette option n’est pas disponible, assurez-vous qu’une licence est attribuée au compte d’utilisateur. Sélectionnez **Enregistrer**.
 
    **Pour le forward vers plusieurs adresses** e-mail, vous pouvez demander à l’utilisateur de configurer une règle dans Outlook pour le forward aux adresses. Pour plus d’informations, voir [Utiliser des règles pour envoyer automatiquement des messages.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 
@@ -113,7 +112,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 ::: moniker-end
 
-## <a name="related-content"></a>Contenu associé 
+## <a name="related-content"></a>Contenu connexe 
 
 [Créer une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) (article)\
 [Envoyer des courriers électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\

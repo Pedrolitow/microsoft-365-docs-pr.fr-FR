@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 entreprise. '
-ms.openlocfilehash: ab1a7b846bb35cce4656a3a5edf941961f5398c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 83413bcf0adffd0af09405db7e936cec523530d9
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176587"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774855"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
   
@@ -86,7 +85,7 @@ Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vo
 
 Une nouvelle fonctionnalité est en cours de déploiement en juillet 2021 qui permet aux utilisateurs d’envoyer facilement des messages à partir de leurs alias lors de l’utilisation Outlook sur le web. Lorsque la fonctionnalité est mise en place dans une location où l’administrateur client utilise la cmdlet, les utilisateurs au sein de la location ont accès à une liste de case à cocher où chaque entrée correspond à un alias dans leurs `Set-OrganizationConfig -SendFromAliasEnabled $true` paramètres Outlook. La sélection d’un alias l’affiche dans ladown From du formulaire de composition.
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Envoyer des messages électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
 

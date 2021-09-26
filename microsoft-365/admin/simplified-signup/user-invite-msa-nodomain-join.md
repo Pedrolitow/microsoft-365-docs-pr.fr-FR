@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: Acceptez une invitation par courrier électronique pour rejoindre une organisation Microsoft 365 Business Standard à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte.
-ms.openlocfilehash: 5fc7fd3fe42ef3e8aa200f4d0fa967b3be6bcdef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7bbf6565b71be3c6741f9b6637599560550497e9
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774375"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Accepter une invitation par courrier électronique à une organisation Microsoft 365 Business Standard abonnement à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte (utilisateur)
 
@@ -50,7 +49,7 @@ Votre courrier électronique ressemble à ceci pour configurer votre compte d’
 
 Téléchargez et commencez à [utiliser Office applications pour les entreprises.](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="the-webpage-is-asking-me-to-agree-that-my-business-has-access-to-my-name-sign-in-and-other-information--what-does-that-mean"></a>La page web me demande d’accepter que mon entreprise a accès à mon nom, ma signature et d’autres informations : qu’est-ce que cela signifie ?
 

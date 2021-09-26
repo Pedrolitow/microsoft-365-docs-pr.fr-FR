@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 search.appverid:
 - MET150
@@ -20,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Apprenez à vérifier votre domaine et à créer des enregistrements DNS avec Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 52fa6a1bfbf3bdbea51431022ab8ec7f8fe287d9a14afe0d8631df017999fdfe
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 3359a676924760c7780da1d65c8a56f9f7498b6f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53823782"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774363"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Connecter votre domaine à Microsoft 365
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -22,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez une boîte aux lettres partagée et configurez certains paramètres pour ses utilisateurs, tels que le forwarding de courrier électronique et les réponses automatiques.
-ms.openlocfilehash: e69d1bbde5784339f3973bf456eca1ded72840af
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8cc5b59222e5a14c55ba20e087090f876cfef650
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176571"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774823"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 

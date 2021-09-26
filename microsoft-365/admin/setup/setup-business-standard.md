@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -26,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
-ms.openlocfilehash: abb818b17ea5259b6e7015f73afb386e4515ac2f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5161a3db8c61df247e1200914bdc08e3b732b084
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776223"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurer Microsoft 365 Business Standard avec un domaine nouveau ou existant
 

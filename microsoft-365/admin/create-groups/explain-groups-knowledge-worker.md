@@ -12,16 +12,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - MET150
 description: Découvrez comment expliquer Microsoft 365 groupes à vos utilisateurs.
-ms.openlocfilehash: 828dffbed42b0b2bb2023a17f499802f7b2c2db1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96085502c0600b5d36472fa40728cd4558cee3ed
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774963"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>Expliquer Microsoft 365 groupes à vos utilisateurs
 
@@ -35,12 +34,12 @@ Les groupes peuvent être créés en créant n’importe quelle ressource partag
 - Si votre organisation utilise beaucoup SharePoint ou migre à partir de SharePoint localement, demandez à vos utilisateurs de créer des sites d’équipe SharePoint pour la collaboration.
 - Si votre organisation a déployé des Teams, demandez à vos utilisateurs de créer une équipe lorsqu’ils ont besoin d’un espace de collaboration.
 
-[![image desc. ](../../media/03.png)](../../media/03.png#lightbox)
+[![image desc. ](../../media/03.png) ](../../media/03.png#lightbox)
 
 Si vous formez vos utilisateurs pour qu’ils utilisent toujours la méthode de création de groupe qui s’aligne le plus sur leur façon de travailler lorsqu’ils ont besoin d’un espace pour collaborer avec d’autres personnes, vous pouvez éviter toute confusion et duplication des ressources. À mesure que les utilisateurs seront plus expérimentés, ils comprendront mieux la collection de services fourni avec un groupe et les différentes méthodes de création entraînent le même résultat.
 
-Vous pouvez utiliser le modèle Microsoft 365 Groupes d’utilisateurs professionnels [- PowerPoint comme](https://www.microsoft.com/download/details.aspx?id=102396) point de départ pour les présentations de formation pour vos utilisateurs.
+Vous pouvez utiliser le modèle [Microsoft 365 Groupes](https://www.microsoft.com/download/details.aspx?id=102396) d’utilisateurs PowerPoint Entreprise comme point de départ pour les présentations de formation pour vos utilisateurs.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 [En savoir plus sur Microsoft 365 groupes](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

@@ -13,7 +13,6 @@ monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Découvrez les options recommandées de resserrement de PC cloud pour Windows 365 Entreprise.
-ms.openlocfilehash: 82fe7093d27fe3d1302e43da415df9ddce2a6064
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2b724df7c46dc7987ac2c899f4c2fdf2044a6b7e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202662"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772769"
 ---
 # <a name="windows-365-business-sizing-options"></a>Options de dimensionnement de Windows 365 Business
 
@@ -45,11 +44,11 @@ Ce tableau présente des exemples des différentes tailles disponibles pour un P
 |1vCPU/2Gb/64 Go |Employés de première ligne, centres d’appels, éducation/formation/accès CRM.|Office légère (basée sur le web), Microsoft Edge, OneDrive, application métier légère (application de centre d’appels – applications web), prise en charge de Defender. |
 |2vCPU/4Gb/256 Go<br/> 2vCPU/4Gb/128 Go<br/> 2vCPU/4GB/64 Go |Fusions et acquisitions, services client à court terme et en période de activité |Microsoft 365 Apps, Microsoft Teams clair (conversation et audio uniquement), OneDrive, Adobe Reader, Microsoft Edge, applications métier, prise en charge de Defender.  |
 |2vCPU/8 Go/256 Go<br/>2vCPU/8 Go/128 Go |Apportez votre propre PC, travaillez à partir de chez vous, de chercheurs en marché, de gouvernement, de consultants. |Microsoft 365 Apps, Microsoft Teams, Outlook, Excel, Access, PowerPoint, OneDrive, Adobe Reader, Microsoft Edge, applications métier, prise en charge de Defender.  |
-|4vCPU/16 Go/512 Go<br/>4vCPU/16 Go/256 Go<br/> 4vCPU/16 Go/128 Go|Finance, gouvernement, consultants, services de santé, bring-your-own-PC, work-from-home. |Microsoft 365 Apps, Microsoft Teams, Outlook, Excel, Access, PowerPoint, Power BI, Dynamics 365, OneDrive, Adobe Reader, Microsoft Edge, applications métier, prise en charge de Defender. |
+|4vCPU/16 Go/512 Go<br/>4vCPU/16 Go/256 Go<br/> 4vCPU/16 Go/128 Go|Finance, gouvernement, consultants, services de santé, bring-your-own-PC, work-from-home. |Microsoft 365 Apps, Microsoft Teams, Outlook, Excel, Access, PowerPoint, Power BI, Dynamics 365, OneDrive, Adobe Reader, Microsoft Edge, applications métier, Prise en charge de Defender. |
 |8vCPU/32 Go/512 Go<br/>8vCPU/32 Go/256 Go<br/>8vCPU/32 Go/128 Go |Développeurs de logiciels, ingénieurs, créateurs de contenu, conception et stations de travail d’ingénierie. |Microsoft 365 Apps, Microsoft Teams, Outlook, Access, OneDrive, Adobe Reader, Microsoft Edge, Power BI, Visual Studio Code, applications métier, prise en charge de Defender.  |
 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Prendre en Windows 365 Business](get-started-windows-365-business.md) <br/>
 [Windows 365 Business plan comparison](https://www.microsoft.com/windows-365/business/compare-plans-pricing) <br/>

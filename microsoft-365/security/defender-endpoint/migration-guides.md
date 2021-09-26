@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 0aace52d05103afa490ec98b50ee9b6539e6b794
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1fd410be19a8b5181cb2ef2b88d53e198753c7a3
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776739"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Passer à Microsoft Defender pour le point de terminaison
 
@@ -36,9 +36,7 @@ ms.locfileid: "59401661"
 
 Si vous envisagez de passer à Defender pour Endpoint, nous vous aiderons. Dans le tableau suivant, examinez les scénarios. Sélectionnez le scénario qui représente le mieux votre situation et consultez les instructions recommandées.
 
-<br>
-
-****
+<br/><br/>
 
 |Scénario|Aide|
 |---|---|

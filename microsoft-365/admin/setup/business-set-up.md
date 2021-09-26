@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -30,12 +31,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 7e01a27361ba681a6475c5e0165d8efbb16371a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3336b75e1810f5f1323e69d2a1ba7feee36ec7c8
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786358"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer des Microsoft 365 Business Premium dans l’Assistant Installation
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez la différence entre l’Assistant Installation et la page Installation.
-ms.openlocfilehash: a4936dded4e13b6cf748a1b4d33513480bf382a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 85cf10d767655b1ff5b211b130cc0749558c350c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772812"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Différence entre l’Assistant Installation et la page Installation
 
@@ -66,6 +65,6 @@ Vous verrez également l’état de la tâche (**démarrée,** pas **encore** d�
 
 Pour accéder à des articles complets sur les fonctionnalités que vous êtes en train de définir, sélectionnez l’un des liens En **savoir plus.** La collection de tâches est toujours là, afin que vous pouvez revenir à la page **d’installation** à tout moment pour explorer davantage les ressources.
 
-Lorsque vous êtes prêt à effectuer une tâche, sélectionnez **Commencer** à parcourir le processus de configuration. Une fois que vous  avez terminé une  tâche, le bouton Démarrer se transforme en bouton Gérer, ce qui vous permet de gérer la tâche, selon vos besoins.
+Lorsque vous êtes prêt à effectuer une tâche, sélectionnez **Commencer** à parcourir le processus de configuration. Une fois que vous  avez terminé une  tâche, le bouton Démarrer se transforme en bouton Gérer, ce qui vous permet de gérer la tâche, si nécessaire.
 
 ![Affichage des tâches affichant des informations d’un coup d’œil.](../../media/o365b-at-a-glance.png)

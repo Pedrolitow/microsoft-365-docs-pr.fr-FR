@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un téléphone iPhone ou Android, et vos fichiers de travail dans Office applications seront protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: 86bc749c30d5e3dfd731193d5ef1b56f1e33e443
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b60fc1e0d228e66e4403a932426000b44e4b9354
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164524"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59785950"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les Microsoft 365 pour les utilisateurs professionnels
 
@@ -81,7 +82,7 @@ Regardez une vidéo sur l’installation Outlook et Office sur les appareils And
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
-Pour commencer l’installation sur votre téléphone Android, allez dans le Play Store.
+Pour commencer l’installation sur votre téléphone Android, go to the Play Store.
   
 ![Sur l’écran d’accueil Android, appuyez sur Play Store.](../../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
@@ -105,7 +106,7 @@ Ouvrez Outlook à nouveau, et entrez et confirmez un code confidentiel. Vous pou
   
 ![Définissez le code confidentiel Outlook’application dans Android.](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vidéos de formation Microsoft 365 Entreprise](../../business-video/index.yml)
 

@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: Découvrez comment gérer les paramètres Office scripts pour les utilisateurs de votre organisation.
-ms.openlocfilehash: 4af5d318552b371e9b7eef5be6750fde2c0b2ace
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f76f37a8ce88b429de51271256f4c50d963f7b5c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773137"
 ---
 # <a name="manage-office-scripts-settings"></a>Gérer les paramètres de Office Scripts
 
@@ -103,7 +102,7 @@ ms.locfileid: "59178980"
 
 Étant donné que Office Scripts fonctionne avec Power Automate, nous vous recommandons de passer en revue vos stratégies de protection contre la perte de données (DLP) existantes pour vous assurer que les données de votre organisation restent protégées pendant que les utilisateurs utilisent Office Scripts. Pour plus d’informations, consultez [stratégies de protection contre la perte de données (DLP)](/power-automate/prevent-data-loss).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Office documentation technique sur les scripts](/office/dev/scripts/) (page de liens)\
 [Introduction à Office scripts dans Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (article)\

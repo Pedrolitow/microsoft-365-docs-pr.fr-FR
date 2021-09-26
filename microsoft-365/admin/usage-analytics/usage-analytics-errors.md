@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Découvrez comment résoudre les problèmes avec l’application Microsoft 365 d’analyse de l’utilisation.
-ms.openlocfilehash: 74ee32ae015421a2352474daefa0eaa0a53fbbc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b13ec0338c6ad48a5f5006528d77fbbdc290e7f5
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178332"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774351"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Résolution des problèmes Microsoft 365'utilisation
 

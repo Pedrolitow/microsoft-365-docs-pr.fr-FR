@@ -12,31 +12,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la communication : score de productivité de l’expérience utilisateur.'
-ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4cbc2fec73b22f55a75b05292d9c3a9b857554e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178724"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776499"
 ---
 # <a name="communication--people-experiences"></a>Communication : expériences de personnes
 
 Le Score de productivité prend en charge la transition vers la transformation numérique avec des informations sur la façon dont votre organisation utilise Microsoft 365 et les expériences technologiques qui la supportent. Le score de votre organisation reflète les évaluations de l’expérience des personnes et technologies et peut être comparé aux benchmarks d’organisations d’une taille semblable à la vôtre. La catégorie de communication fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour commencer à comprendre les informations sur les communications, les membres de votre organisation doivent être titulaires d’une licence pour :
 
 - Microsoft Teams
 - Yammer
-- Exchange Online
+- Exchange Online
 
 Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
 
@@ -180,7 +179,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\

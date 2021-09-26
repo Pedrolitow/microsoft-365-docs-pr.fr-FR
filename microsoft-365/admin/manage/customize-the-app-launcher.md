@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: Créez des liens rapides vers vos e-mails, documents, applications, sites SharePoint, sites externes et autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications.
-ms.openlocfilehash: d13be7d4bb89a8d1cebd2d59026f58bdc62c4a15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59f88b8597c3142326af019d904fd09d597afb27
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775371"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
@@ -84,7 +83,7 @@ Pour supprimer une vignette  personnalisée, dans la fenêtre Vignettes personna
 
 En plus d’ajouter des vignettes au lanceur d’applications, vous pouvez ajouter des vignettes de lanceur d’applications à la barre de navigation[(en savoir plus).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Pour personnaliser l’apparence de votre Microsoft 365 pour qu’elle corresponde à la marque de votre organisation, voir Personnaliser [Microsoft 365 thème .](../setup/customize-your-organization-theme.md)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Épingler des applications au lanceur d’applications](pin-apps-to-app-launcher.md) de vos utilisateurs (article)\
 [Mettre à niveau Microsoft 365 pour les utilisateurs professionnels](../setup/upgrade-users-to-latest-office-client.md) vers la dernière Office client (article)\

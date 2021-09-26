@@ -12,12 +12,13 @@ metadata:
   ms.date: 01/27/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: f9f6726bd432678326d5427affe176ea0364a849
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: 6d787cb1b52019b6a4bcfac7c564ccf58f4047f8
+  ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59177067"
+  ms.lasthandoff: 09/24/2021
+  ms.locfileid: "59785986"
 landingContent:
 - title: Gestion des utilisateurs
   linkLists:

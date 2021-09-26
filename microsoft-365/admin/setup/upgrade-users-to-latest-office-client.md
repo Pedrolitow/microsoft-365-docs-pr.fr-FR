@@ -10,7 +10,6 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +23,12 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau Microsoft Office vers la dernière Office client pour les utilisateurs de votre organisation.
 ms.topic: article
-ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e4b8ce182ff2eefea514fc8621e23e308658e47
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201930"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776247"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels vers le dernier client Office client
 
@@ -94,7 +93,7 @@ Passez à un abonnement qui inclut Office. Voir [Basculer vers une autre Microso
 
  - Achetez un achat individuel, à achat Office. Voir [Office Famille &amp; ou](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) [Office Professionnel](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
-     OU
+     OR
 
  - Achetez plusieurs copies de Office via une licence en volume. Voir comparer [les suites disponibles via la gestion des licences en volume.](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)
 

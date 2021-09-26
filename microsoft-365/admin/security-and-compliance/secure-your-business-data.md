@@ -11,7 +11,6 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -24,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Comment protéger votre messagerie et vos données professionnelles contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 301aa152d462dc7fc712d4b6aa56f4a521463690
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f983aa809cfa05439d49fef984ab0036709319c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776259"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales méthodes de sécurisation des Microsoft 365 pour les plans d’entreprise
 
@@ -43,12 +42,12 @@ Microsoft recommande d’effectuer les tâches répertoriées dans le tableau su
 |2|[Former vos utilisateurs](secure-your-business-data.md#train)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Utiliser des comptes d’administrateur dédiés](secure-your-business-data.md#admin)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Augmenter le niveau de protection contre les programmes malveillants dans le courrier électronique](secure-your-business-data.md#malware)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Se protéger contre les rançongiciels](secure-your-business-data.md#ransomware)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[Se protéger contre les rançongiciels](secure-your-business-data.md#ransomware)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Arrêter le forwarding automatique pour le courrier électronique](secure-your-business-data.md#forwarding)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Utiliser Office chiffrement de messages](secure-your-business-data.md#encryption)||![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing)||![Inclus.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Se protéger contre les pièces jointes et les fichiers malveillants Coffre pièces jointes](secure-your-business-data.md#atp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Se protéger contre les attaques par hameçonnage à l’Coffre liens](secure-your-business-data.md#phishingatp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Se protéger contre les attaques par hameçonnage à l’Coffre liens](secure-your-business-data.md#phishingatp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués.
 
@@ -156,7 +155,7 @@ Pour créer une règle de transport de courrier, regardez une courte vidéo de [
 
 6. Sélectionnez **Enregistrer**.
     
-| Setting | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Paramètre | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : bloquer les types de fichiers  <br/> |
 |Appliquez cette règle si . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |
@@ -167,7 +166,7 @@ Pour créer une règle de transport de courrier, regardez une courte vidéo de [
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programme malveillant à [l’étape 4.](#4-raise-the-level-of-protection-against-malware-in-mail)
 
-Pour plus d’informations, consultez :
+Pour plus d'informations, voir :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -192,7 +191,7 @@ Pour créer une règle de transport de messagerie :
 
 6. Sélectionnez **Enregistrer**.
 
-|Setting|Rejeter les e-mails de forward automatique vers des domaines externes|
+|Paramètre|Rejeter les e-mails de forward automatique vers des domaines externes|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -348,7 +347,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 Pour plus d’informations, [Coffre liens vers Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Authentification multifacteur pour Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Gérer et surveiller les comptes de priorité](../setup/priority-accounts.md) (article)\

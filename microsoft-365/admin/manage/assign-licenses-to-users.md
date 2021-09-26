@@ -13,6 +13,7 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - TopSMBIssues
@@ -24,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 09/16/2021
-ms.openlocfilehash: 48763019211f1358e09f9c712f27870bd13a4435
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: b9fb8a670b649437a894619369731a5085c36804
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477538"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59785938"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 

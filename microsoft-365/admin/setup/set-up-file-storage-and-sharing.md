@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 - SPO_Content
 ms.custom:
@@ -31,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers dans Microsoft 365.
-ms.openlocfilehash: 69ecb461396ef220258ce174d462ea7afda5aa8a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 334a199580b8f74c841f0f9d1d6db85db19bbb2e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178459"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776715"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le partage et le stockage de fichiers dans Microsoft 365
 
@@ -207,7 +206,7 @@ Vous pouvez activer le stockage tiers pour permettre à vos utilisateurs dans Mi
 
   - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter de l’espace de stockage pour votre abonnement](../../commerce/add-storage-space.md) (article)\
 [Partager des fichiers et des dossiers avec Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vidéo)\

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -21,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation de Microsoft 365 services.  '
-ms.openlocfilehash: 2f271414f515d2c3a86c6e59d64dc62f44f8ef01
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a99ee64715d9fdfa27b0f0feb8900dd301ebdaac
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178340"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775611"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
@@ -206,7 +205,7 @@ Ce tableau fournit des données récapitulatifs mensuelles sur les clients que l
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>Table de données - Utilisation de SharePoint Online par les locataires
 
-Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisation ou l’activité des sites SharePoint Online. Cela concerne uniquement les sites d’équipe et les sites de groupe. L’état de fin de mois des sites SharePoint Online est représenté dans cette colonne, par exemple, si un utilisateur a créé cinq documents et utilisé 10 Mo pour le stockage total, puis supprimé certains fichiers, puis ajouté d’autres fichiers afin qu’à l’état de fin de mois pour les fichiers soit sept au total qui utilisent cinq Mo de stockage, la valeur représentée dans cette table est l’état de fin de mois. Cette table est masquée pour éviter le nombre d’agrégations en double et est utilisée comme source pour créer deux tables de référence.
+Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisation ou l’activité des sites SharePoint Online. Cela concerne uniquement les sites d’équipe et les sites de groupe. L’état de fin de mois des sites SharePoint Online est représenté dans cette colonne, par exemple, si un utilisateur a créé cinq documents et utilisé 10 Mo pour le stockage total, puis supprimé certains fichiers, puis ajouté d’autres fichiers afin qu’à l’état de fin de mois pour les fichiers soit sept au total qui utilisent cinq Mo de stockage,  la valeur représentée dans ce tableau est l’état de fin du mois. Cette table est masquée pour éviter le nombre d’agrégations en double et est utilisée comme source pour créer deux tables de référence.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - TRN_M365B
@@ -26,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment définir une stratégie pour permettre aux utilisateurs de réinitialiser leur mot de passe à l’aide de l’outil de réinitialisation de mot de passe en libre-service.
-ms.openlocfilehash: 284a81e46ff22bf0a2ae514db81432b64e342a7f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16259d7cca85a8a12baea3aac5c2d748c4e64c36
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177060"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773462"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leurs mots de passe
 
@@ -71,7 +70,7 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
   
 6. Lorsque vos utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Définir la stratégie d’expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
 [Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](set-password-to-never-expire.md) (article)\

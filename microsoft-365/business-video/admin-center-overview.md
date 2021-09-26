@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -22,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez l’affichage simplifié dans Microsoft 365 gérer les tâches courantes ou l’affichage tableau de bord pour des paramètres et des tâches plus complexes.
-ms.openlocfilehash: e3bee5487a0004f6741e51494c01f7e2c2355227
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d1f187f7ab3f7fdad53727a3cd74e2543c3cbcef
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180691"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786370"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -117,7 +118,7 @@ Si vous ne savez pas à qui contacter votre entreprise ou votre établissement s
 
 Dans le Centre d’administration, vous pouvez faire  part à Microsoft de vos commentaires sur votre expérience en sélectionnant Donner des commentaires juste en dessous du bouton Besoin d’aide **?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pourrions faire de mieux. En outre, il se peut que vous receviez des enquêtes dans des fenêtres de temps à autre vous demandant des informations sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **Ces informations vous ont-ils été utiles ?**
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 Vos questions ne sont-elles pas posées ici ? Go to the **Feedback** section at the bottom of this page and ask your question.
 
@@ -171,7 +172,7 @@ Le Centre d'administration Microsoft 365 est entièrement localisée dans 40 lan
 |Lituanien | lt |
 |Letton | lv |
 |Néerlandais | nl |
-|Norvégien | non |
+|Norvégien | Non |
 |Polonais | pl |
 |Portugais (Brésil) | pt |
 |Portugais (Portugal) | pt-pt |
@@ -189,7 +190,7 @@ Le Centre d'administration Microsoft 365 est entièrement localisée dans 40 lan
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Qu’est-ce qu Microsoft 365 administrateur de serveur ?](what-is-admin.md) (vidéo)\
 [Ajouter un administrateur](add-admin.md) (vidéo)\

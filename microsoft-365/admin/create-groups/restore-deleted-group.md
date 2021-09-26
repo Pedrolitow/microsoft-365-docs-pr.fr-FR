@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un groupe supprimé est conservé pendant 30 jours et vous pouvez toujours le restaurer. Après 30 jours, le groupe et son contenu sont supprimés définitivement.
-ms.openlocfilehash: ddc3da57c05b7c5f54c10a0cc429c9a3f24b859c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30fa44a50ea6a65ae3cf71cb91e7d8ab0fd2e200
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176731"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773194"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurer un groupe de Microsoft 365 supprimé
 
@@ -83,7 +82,7 @@ Si vous êtes administrateur général ou administrateur de groupes, vous pouvez
 
 Visitez le site [Tech Community Microsoft](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) pour publier des questions et participer à des conversations sur Microsoft 365 groupes. 
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
 [Supprimer des groupes à l’aide Remove-UnifiedGroup cmdlet](/powershell/module/exchange/remove-unifiedgroup) (article)\

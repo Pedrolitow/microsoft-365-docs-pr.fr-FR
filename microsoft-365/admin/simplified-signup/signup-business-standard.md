@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
-ms.openlocfilehash: 498906bf227aa4cfd6a964212bb9553932d32602
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a809dcabe26a24231e12e4d3d14d544f83bb2c91
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401841"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775935"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -94,7 +93,7 @@ Cette option fournit un accès immédiat à la suite complète de fonctionnalit�
 > [!IMPORTANT]
 > Vous pouvez également suivre ces étapes pour acheter Microsoft 365 Apps’achat. Pour plus d’informations, voir [Configurer Applications Microsoft 365 pour les PME](../setup/setup-apps-for-business.md) une fois que vous avez acheté Applications Microsoft 365 pour les PME.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Qu’est-ce qu’un courrier électronique d’entreprise et quels sont les avantages de sa configuration ?
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lorsque vous ajoutez plusieurs utilisateurs.
-ms.openlocfilehash: 3ce70f6d37036a2f71bdc2d41bfb5677a54b8db9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ef35bb395417597d10b8b33c042e1baceeb40db
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177099"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773486"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -33,7 +32,7 @@ Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les
 
 ## <a name="create-a-template"></a>Créer un modèle
 
-Les modèles sont faciles à créer. Vous pouvez sélectionner des &mdash;   >    >  **modèles Utilisateurs actifs utilisateurs,**  puis ajouter un modèle dans la liste de listes. Vous pouvez également ajouter un nouvel utilisateur et, lorsque vous avez terminé, vous avez la possibilité d’enregistrer l’entrée en tant que modèle.
+Les modèles sont faciles à créer. Vous pouvez sélectionner les modèles Utilisateurs actifs utilisateur, puis ajouter un modèle dans la liste de listes. Vous pouvez également ajouter un nouvel utilisateur et, lorsque vous avez terminé, vous avez la possibilité d’enregistrer l’entrée en tant que &mdash;   >    >  modèle. 
 
 Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs que vous choisissez pour les paramètres suivants sont enregistrées dans le modèle :
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'Pour transférer un domaine de Microsoft vers un autre bureau d’enregistrement, recherchez les étapes ci-après. '
-ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f36203326f3b6cdd6a1b1bcfc52bfcee01ad1a80
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176396"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774435"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Transférer un domaine de Microsoft vers un autre hôte
 
@@ -40,7 +39,7 @@ Suivez ces étapes pour obtenir un code sur Microsoft 365, puis allez sur l’au
 
 ## <a name="transfer-a-domain"></a>Transférer un domaine
 
-1. Dans le Centre d’administration, Paramètres   ****   >  **Domaines.**
+1. Dans le Centre d’administration, Paramètres   ****   >  **Domaines**.
 
 2. Dans la page **Domaines,** sélectionnez le domaine Microsoft 365 que vous souhaitez transférer vers un autre bureau d’enregistrement de domaines, puis sélectionnez Vérifier l’état **d’état.**
 
@@ -54,12 +53,12 @@ Suivez ces étapes pour obtenir un code sur Microsoft 365, puis allez sur l’au
 
 7. Copiez le code d’autorisation et attendez environ 30 minutes que  l’état de transfert de votre domaine passe à Déverrouillé pour transfert sous l’onglet Inscription avant de passer aux étapes suivantes. 
 
-8. Go to the website of the domain registrar you want to manage your domain name going forward. Suivez les instructions pour transférer un domaine (recherchez de l’aide sur son site web). Cela implique généralement de payer des frais de transfert et de donner l’authcode au nouveau bureau d’enregistrement afin qu’il puisse lancer le transfert. Microsoft vous envoie un e-mail pour confirmer que nous avons reçu la demande de transfert, et le domaine transférera dans les 5 jours.
+8. Go to the website of the domain registrar you want to manage your domain name going forward. Suivez les instructions pour transférer un domaine (recherchez de l’aide sur son site web). Cela implique généralement de payer des frais de transfert et de donner l’authcode au nouveau bureau d’enregistrement afin qu’il puisse lancer le transfert. Microsoft vous adresse un e-mail pour confirmer que nous avons reçu la demande de transfert, et le domaine transférera dans un délai de 5 jours.
 
     L’onglet Inscription du **code** d’autorisation se trouve  **dans** la page Domaines Microsoft 365.
     
     > [!TIP]
-    > Les domaines .uk nécessitent une procédure différente. Contactez le Support Microsoft et demandez une modification de balise **IPS** pour correspondre au bureau d’enregistrement que vous souhaitez gérer votre domaine à l’avenir. Une fois la balise changée, le domaine transfère immédiatement vers le nouveau bureau d’enregistrement. Vous devrez ensuite travailler avec le nouveau bureau d’enregistrement pour effectuer le transfert, en payant probablement des frais de transfert et en ajoutant le domaine transféré à votre compte avec votre nouveau bureau d’enregistrement.
+    > Les domaines .uk nécessitent une procédure différente. Contactez le Support Microsoft et demandez une modification de balise **IPS** pour correspondre au bureau d’enregistrement que vous souhaitez gérer à l’avenir. Une fois la balise changée, le domaine transfère immédiatement vers le nouveau bureau d’enregistrement. Vous devrez ensuite travailler avec le nouveau bureau d’enregistrement pour effectuer le transfert, en payant probablement des frais de transfert et en ajoutant le domaine transféré à votre compte avec votre nouveau bureau d’enregistrement.
 
 9. Une fois le transfert terminé, vous renouvelez votre domaine auprès du nouveau bureau d’enregistrement de domaines.
 

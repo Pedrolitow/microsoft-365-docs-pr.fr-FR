@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centre d'administration Microsoft 365 - learn about the features that were added this month.
-ms.openlocfilehash: dbc907ac66bcc1741ceb92602b7b3062de043f6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fa3589c27547dcf965f965031d30b09a3afc2646
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203525"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772919"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -439,7 +438,7 @@ Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s’agit d
 |Nom actuel |Nouveau nom  |
 |---------|---------|
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
 |Applications Microsoft 365 pour les PME     |    Applications Microsoft 365 pour les entreprises       |
 |Office 365 ProPlus    |   Microsoft 365 applications pour entreprise      |

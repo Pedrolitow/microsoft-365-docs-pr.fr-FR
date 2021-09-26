@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Apprenez à définir des clés de Registre pour activer l’authentification moderne pour les appareils sur Microsoft Office 2013.
-ms.openlocfilehash: 8bfe515fefed9d58f140a67e53ce0d078457aa72
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 502f6854a6c557f0905e1672e9369ab6e790e373
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178668"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773111"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l'authentification moderne pour Office 2013 sur les appareils Windows
 
@@ -58,7 +57,7 @@ Pour désactiver l'authentification moderne sur un appareil, définissez les cl�
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Connectez-vous Office 2013 avec une deuxième méthode de vérification](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (article)\
 Outlook demande de mot de passe et [n’utilise](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) pas l’authentification moderne pour se connecter à Office 365 (article)

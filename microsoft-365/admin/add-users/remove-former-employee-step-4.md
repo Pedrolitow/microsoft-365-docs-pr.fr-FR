@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -26,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez les étapes de cet article pour accorder à un autre employé l’accès aux données de OneDrive et Outlook de l’ancien employé.
-ms.openlocfilehash: e0904c6aeca919dd3f93044ce177a34761cb141b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a502646e41bd3f06f5f8412aac3929b8fbad210
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774206"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Étape 4 : donner à un autre employé l’accès OneDrive données Outlook données
 
@@ -187,7 +186,7 @@ Pour accorder à un autre employé l’accès aux messages électroniques, au ca
 > [!TIP]
 > Si vous souhaitez importer ou restaurer uniquement quelques éléments à partir d’un fichier de données Outlook (.pst), vous pouvez ouvrir le Outlook de données. Ensuite, dans le volet de navigation, faites glisser les éléments de Outlook fichiers de données vers vos dossiers Outlook existants.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter et supprimer des administrateurs sur un compte OneDrive (article)](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
 

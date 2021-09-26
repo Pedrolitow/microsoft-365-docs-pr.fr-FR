@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -26,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Découvrez comment configurer Microsoft Business Premium, Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business ou un abonnement Office 365 pour l’éducation.
-ms.openlocfilehash: 139235926d6e7ad740b16169fa6ec08fd55b74be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 639d752acaa5592bd27bcd940b165009277c985f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176187"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776655"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 

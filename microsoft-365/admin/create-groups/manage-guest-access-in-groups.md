@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher les utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: daf9eec40e674e2b179119f30f58ff8899855911
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5d4e28234f539a8b4674b2fb3e2d01919fd0afdf
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176747"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774903"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans Microsoft 365 groupes
 
@@ -39,7 +38,7 @@ Une fois approuvé, l’utilisateur invité est ajouté à l’annuaire et au gr
 
 > [!Note]
 > Yammer Entreprise réseaux qui sont en mode natif ou la région ue ne [sont](/yammer/manage-security-and-compliance/manage-data-compliance) pas en charge les invités réseau.
-> Microsoft 365 Les Yammer connectés ne peuvent pas prendre en charge l’accès invité actuellement, mais vous pouvez créer des groupes externes non connectés dans Yammer réseau. Voir [Créer et gérer des groupes externes dans Yammer](/yammer/work-with-external-users/create-and-manage-external-groups) pour obtenir des instructions.
+> Microsoft 365 Les groupes Yammer connectés ne peuvent pas prendre en charge l’accès invité pour le moment, mais vous pouvez créer des groupes externes non connectés dans Yammer réseau. Voir [Créer et gérer des groupes externes dans Yammer](/yammer/work-with-external-users/create-and-manage-external-groups) pour obtenir des instructions.
 
 L’accès invité dans les groupes est souvent utilisé dans le cadre d’un scénario plus large qui inclut SharePoint ou Teams. Ces services ont leurs propres paramètres de partage d’invités. Pour obtenir des instructions complètes sur la configuration du partage d’invités entre groupes, SharePoint et Teams, voir :
 
@@ -52,7 +51,7 @@ Si vous souhaitez activer ou désactiver l’accès invité dans les groupes, vo
 
 1. Dans le Centre d’administration, sélectionnez Afficher  tous Paramètres l’organisation et sous l’onglet \>  \>  **Services,** <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**sélectionnez Microsoft 365 groupes.**</a>
   
-2. Dans la page **Microsoft 365 groupes,** choisissez si vous souhaitez laisser des personnes extérieures à votre organisation accéder aux ressources de groupe ou laisser les propriétaires de groupes ajouter des personnes extérieures à votre organisation à des groupes.
+2. Dans la page **Microsoft 365** groupes, choisissez si vous souhaitez laisser des personnes extérieures à votre organisation accéder aux ressources de groupe ou laisser les propriétaires de groupes ajouter des personnes extérieures à votre organisation à des groupes.
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Ajouter des invités à un groupe Microsoft 365 à partir du Centre d’administration
 
@@ -70,7 +69,7 @@ Si vous souhaitez ajouter un invité directement à l’annuaire, vous pouvez aj
 
 Si vous souhaitez modifier les informations d’un invité, vous pouvez ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Bloquer les utilisateurs invités d’un groupe spécifique](../../solutions/per-group-guest-access.md) (article)\
 [Gérer l’appartenance à un groupe dans le Centre d'administration Microsoft 365](add-or-remove-members-from-groups.md) (article)\

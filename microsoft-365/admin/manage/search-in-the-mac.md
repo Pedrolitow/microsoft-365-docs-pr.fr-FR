@@ -11,18 +11,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment utiliser la fonctionnalité de recherche dans le Centre d’administration pour obtenir des résultats meilleurs et plus rapides.
-ms.openlocfilehash: eca365ed7c25ac908fe5ea1679ceedb9765fb3c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c530d3e041800ef2e9b0c36169ec15366b9b3b1d
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786034"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Effectuer une recherche dans le Centre d’administration Microsoft 365
 

@@ -12,7 +12,6 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: 1af3ff5fac9a95afb15f680f8f46e8d0de0b4567
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 466b346501f9ee4e02a4a254ebeb2dfdf6e23eca
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177820"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775599"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 

@@ -9,7 +9,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Synchronisez les utilisateurs contrôlés par domaine avec Microsoft 365 entreprise.
-ms.openlocfilehash: 01be69cf0b66c55b914c80e45b0bd2d47a148e31
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 09a625bb882cfe654a92294cc35d62c3ad9e38b6
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178500"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786233"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Synchroniser les utilisateurs de domaine avec Microsoft 365
 

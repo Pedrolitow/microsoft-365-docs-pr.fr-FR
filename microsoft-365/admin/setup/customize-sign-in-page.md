@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personnalisez la Microsoft 365 page de Azure Active Directory. Vous pouvez ajouter une illustration, un logo et du texte à la page de signature.
-ms.openlocfilehash: 1c805e8f37081b2d09e821b24ce2f83816b23e3d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3d4e84ad15d65743b2f3c0593092f14233ddf380
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178524"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776427"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Ajouter la marque de votre entreprise à la page de signature
 
@@ -54,7 +53,7 @@ En plus de la page de connexion, vous pouvez personnaliser la page du Panneau d'
 
 Si vous êtes prêt à ajouter une personnalisation, explorez les options disponibles dans le contenu Azure : [Ajout d'une marque de société aux pages de connexion et du volet d'accès](/azure/active-directory/fundamentals/customize-branding).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Personnaliser le thème Microsoft 365 pour votre organisation](customize-your-organization-theme.md) (article)\
 [Différence entre l’Assistant Installation et la page d’installation](o365-setup-wizard-and-setup-page.md) (article)\

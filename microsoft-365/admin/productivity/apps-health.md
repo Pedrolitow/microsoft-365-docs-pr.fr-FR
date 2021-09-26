@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Microsoft 365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: Détails de la Microsoft 365 Apps - la technologie permet d’obtenir un score de productivité.
-ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f8fdb156b19bc2f94d64a0efd1ff407cf007510
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178731"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773894"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Intégrité de Microsoft 365 Apps – expériences technologiques
 
@@ -112,7 +111,7 @@ Les colonnes suivantes sont présentées dans le tableau au niveau canal/version
 - **Versions :**   Versions Microsoft 365 applications actuelles sur les appareils.
 - **# des appareils :**  Nombre d’appareils.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Communication – Expériences des personnes](communication.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\

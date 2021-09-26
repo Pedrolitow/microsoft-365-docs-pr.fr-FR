@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez obtenir des erreurs lorsque vous définissez des boîtes aux lettres partagées. Essayez ces solutions si vous avez des problèmes avec les boîtes aux lettres partagées.
-ms.openlocfilehash: ae76bc1cb97c44087be57adc7791ea8814b94b40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 27c3d23b3d5a496a6de85811c7aa23c8f199d654
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176491"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774627"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Résoudre les problèmes liés aux boîtes aux lettres partagées
 
@@ -37,7 +36,7 @@ Si vous voyez des messages d’erreur lors de la création ou de l’utilisation
 ## <a name="error-when-creating-shared-mailboxes"></a>Erreur lors de la création de boîtes aux lettres partagées
 <a name="bkmk_Fix"> </a>
 
-Si vous voyez le message d’erreur, l’adresse proxy « smtp:<shared mailbox name » est déjà utilisée par les adresses proxy ou **\> LegacyExchangeDN de « \<name> ». Veuillez choisir une autre adresse proxy,** ce qui signifie que vous essayez de donner à la boîte aux lettres partagée un nom déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Il existe deux méthodes pour y parvenir :
+Si vous voyez le message d’erreur, l’adresse proxy « smtp:<shared mailbox name » est déjà utilisée par les adresses proxy ou **\> LegacyExchangeDN de « \<name> ». Choisissez une autre adresse proxy,** cela signifie que vous essayez de donner à la boîte aux lettres partagée un nom déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Il existe deux méthodes pour y parvenir :
 
   - Utiliser Windows PowerShell. Consultez ce billet de blog pour obtenir des instructions : Créer des boîtes aux lettres partagées [avec le même alias sur différents domaines](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     

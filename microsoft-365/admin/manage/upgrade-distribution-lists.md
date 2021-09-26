@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers Microsoft 365 Groupes dans Outlook et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 298d349fcf0874dd4c2dbd85ff19101e40988aba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b8937e918f840fc9c4aa499d61b9dbfa50f51a4
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773087"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Améliorer les listes de distribution vers les groupes Microsoft 365 dans Outlook
 
@@ -142,7 +141,7 @@ Get-DistributionGroup| Foreach-Object{
 
 Vous pouvez uniquement mettre à niveau des listes de distribution gérées dans le cloud, simples et non imbrmbrées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
 
-|**Property**|**Éligible ?**|
+|**Propriété**|**Éligible ?**|
 |:-----|:-----|
 |Liste de distribution gérée sur site.  <br/> |Non  <br/> |
 |Listes de distribution imbrmbrées. La liste de distribution possède des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |
@@ -192,7 +191,7 @@ Dans certains cas, la DL est éligible mais n’a pas pu être mise à niveau. L
 
 La mise à niveau se produit uniquement lorsque l’appel est soumis au serveur. Si la mise à niveau échoue, vos DL sont intactes. Ils fonctionneront comme avant.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Comparer les groupes](../create-groups/compare-groups.md) (article)\
 [Expliquer Microsoft 365 groupes à vos utilisateurs](../create-groups/explain-groups-knowledge-worker.md) (article)\

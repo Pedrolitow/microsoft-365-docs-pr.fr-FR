@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 79acef4454428daba68d42b0161d060b7e28ee56
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9bddbf7f11d01bdf18f4b09f1d92e8f99e82ae5a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176348"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774423"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -37,7 +36,7 @@ Une déploiement centralisé offre les avantages suivants :
 
 - Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
 
-- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
+- Lorsque l’application Office pertinente démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
 
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -62,7 +61,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
 ### <a name="office-requirements"></a>Office Conditions requises
 
-- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
+- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des valeurs suivantes :
   - Sur un appareil Windows, version 1704 ou ultérieure des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium.
   - Sur un Mac, version 15.34 ou ultérieure.
 
@@ -92,7 +91,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
 
 1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
 
    ```powershell
    Import-Module O365CompatibilityChecker
@@ -116,7 +115,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 
 - Déploiement centralisé prêt - Si les autres éléments sont vérifiés
 
-- Office plan : le plan de Office dont ils sont titulaires d’une licence
+- Office plan : le plan de Office leur licence
 
 - Activation d'Office - Si l'utilisateur a activé Office
 
@@ -157,10 +156,10 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
 
 | Plateforme | Informations de débogage |
 |:-----|:-----|
-|Bureau | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|Office | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |Clients riches (Windows, Mac) | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)** |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)\
 [Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)\

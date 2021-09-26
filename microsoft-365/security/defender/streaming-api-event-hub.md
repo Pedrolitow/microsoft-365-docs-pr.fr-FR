@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ecfc8281c642e7240832a7c057f37f9df4caad68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9e6c1fec6eea7bf1335eec061d6812d02df16556
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776835"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements Azure
 
@@ -71,7 +71,9 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
    ![Image de l’ID1 de la ressource Hub d’événements.](../defender-endpoint/images/event-hub-resource-id.png)
 
-8. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
+8. Go to the [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
+
+9. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
 
 ## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Schéma des événements dans Le Hub d’événements Azure
 
@@ -115,10 +117,11 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 
   ![Image de l’ID2 de la ressource Hub d’événements.](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API Microsoft 365 Defender diffusion en continu](streaming-api.md)
+- [Types d’Microsoft 365 Defender pris en charge dans l’API de diffusion en continu d’événements](supported-event-types.md)
 - [Diffuser Microsoft 365 Defender événements sur votre compte de stockage Azure](streaming-api-storage.md)
 - [Documentation Du Hub d’événements Azure](/azure/event-hubs/)
 - [Résoudre les problèmes de connectivité - Hub d’événements Azure](/azure/event-hubs/troubleshooting-guide)

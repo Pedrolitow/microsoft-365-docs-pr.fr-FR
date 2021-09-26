@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -20,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange administrateurs en ligne gèrent le courrier électronique et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
-ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Exchange administrateurs en ligne gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
+ms.openlocfilehash: 310074403c57e4c2d8eddc4942d76ebca4181630
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177163"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773678"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos Exchange Online rôle d’administrateur principal
 
@@ -38,7 +37,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Configurer une stratégie d’archivage et de](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres de votre organisation.
+- [Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation.](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 
 - Configurer des fonctionnalités de boîte aux lettres telles que la stratégie de partage de boîte aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes extérieures à votre organisation.
 

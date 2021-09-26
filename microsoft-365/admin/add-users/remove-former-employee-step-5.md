@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour bloquer l’accès à l’appareil mobile d’un ancien employé.
-ms.openlocfilehash: 8c5b279bc85d6c99fd8722d1f9fd4d4b3757e793
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ccfb4d013cb35263748ef3fcf4187c68faffb97
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177020"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774146"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>Étape 5 : effacer et bloquer l’appareil mobile d’un ancien employé
 
-Si votre ancien employé avait un téléphone d’organisation, vous pouvez utiliser le Centre d’administration Exchange pour effacer et bloquer cet appareil afin que toutes les données de l’organisation sont supprimées de l’appareil et qu’elle ne puisse plus se connecter à Office 365. Si votre organisation utilise Basic Mobility and Security pour gérer les appareils mobiles, vous pouvez effacer et bloquer ces appareils à l’aide de Basic Mobility and Security.
+Si votre ancien employé avait un téléphone d’organisation, vous pouvez utiliser le Centre d’administration Exchange pour effacer et bloquer cet appareil afin que toutes les données de l’organisation sont supprimées de l’appareil et qu’il ne puisse plus se connecter à Office 365. Si votre organisation utilise Basic Mobility and Security pour gérer les appareils mobiles, vous pouvez effacer et bloquer ces appareils à l’aide de Basic Mobility and Security.
 
 ## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>Effacer l’appareil mobile à l’aide Exchange d’administration
 
@@ -46,6 +45,6 @@ Si votre ancien employé avait un téléphone d’organisation, vous pouvez util
    > [!TIP]
    > Assurez-vous de supprimer ou de désactiver l’utilisateur de votre service Blackberry Enterprise local. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center)

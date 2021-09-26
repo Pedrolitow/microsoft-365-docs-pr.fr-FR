@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine d’Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: 227ca3e58a4c6278278048deeffcf68c1d659546
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b572adb5d1ed45be473552e74adb25c54b3cae7
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176411"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775419"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
@@ -156,7 +155,7 @@ La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minute
 
 Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain).
 
-## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
+## <a name="still-need-help"></a>Encore besoin d’aide ?
 
 ::: moniker range="o365-worldwide"
 
@@ -170,7 +169,7 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 ::: moniker range="o365-germany"
 
 > [!NOTE]
-> Vous ne pouvez pas supprimer le domaine [« .onmicrosoft.de »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateurs reviennent à l’adresse « .onmicrosoft.de » en tant que SMTP/UserprincipalName principal.
+> Vous ne pouvez pas supprimer le domaine [« .onmicrosoft.de »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateur reviennent à l’adresse « .onmicrosoft.de » en tant que SMTP/UserprincipalName principal.
 
 Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) et nous vous aiderons à effectuer cette tâche.
 

@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -25,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Business Basic.
-ms.openlocfilehash: f7569645753f292760f32ba932aac7b83c602b72
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ba751d41ddc519e1c75d4783df145e6b9854c985
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176188"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773714"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurer Microsoft 365 Business Basic
 

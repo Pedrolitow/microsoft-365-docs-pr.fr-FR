@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Gérer les appareils iOS dans Basic Mobility and Security.
-ms.openlocfilehash: 84f3589593ef26325397f5b6e90d5b21662d2352
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c7fa6a83690483d5e3b286688f4d6ed46495b096
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773906"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>Configurer un certificat APNs pour les appareils iOS
 

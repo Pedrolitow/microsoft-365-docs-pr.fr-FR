@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte Microsoft 365 services pour communiquer et collaborer.
-ms.openlocfilehash: c2c81f1be38e0fe203b270eb132bff52be4482a7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 10d5d50b8f4d3f734c4812da082ebd29652a1b9c
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178323"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775923"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -50,7 +49,7 @@ Ce résumé vous permet de comprendre rapidement les modèles d’utilisation Of
 
 ![Image du résumé de Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
 Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous pouvez les afficher en choisissant l’onglet en haut de la page du rapport. Toutes les valeurs du mois affichées dans la section supérieure du rapport font référence au dernier mois complet.
 
@@ -213,7 +212,7 @@ Si un partenaire dispose de droits d’administrateur délégués, il peut se co
 
 Oui, voir [Rendre anonymes les données collectées.](enable-usage-analytics.md#make-the-collected-data-anonymous)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Activer l'analyse de l'utilisation de Microsoft 365](enable-usage-analytics.md) (article)\
 [Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation](navigate-and-utilize-reports.md) (article)\

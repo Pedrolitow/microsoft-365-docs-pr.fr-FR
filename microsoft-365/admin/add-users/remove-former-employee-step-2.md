@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment enregistrer le contenu de la boîte aux lettres d’un ancien employé.
-ms.openlocfilehash: 24a1fbff978bdc266e778b7fca84c882f9677cfe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 287e7cd54449a86775f556d0165a19ce7ffadac8
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177044"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775311"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Étape 2 : enregistrer le contenu de la boîte aux lettres d’un ancien employé
 
@@ -48,11 +47,11 @@ Une fois que vous avez empêché un utilisateur de se connecter à votre organis
 
     Pour savoir comment placer une boîte aux lettres en attente, voir Gérer les boîtes aux lettres [inactives dans Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
 
-    **OU**
+    **OR**
 
 2. Ajoutez l’adresse e-mail de l’ancien employé à votre version de Outlook sur bureau, puis exportez les données dans un fichier .pst. Si nécessaire, vous pouvez importer les données dans un autre compte de courrier. Check out [Step 4 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-4.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center)
 

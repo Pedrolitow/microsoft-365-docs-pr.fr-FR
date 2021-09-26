@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser le s switcher de client et les affichages multi-locataires qui vous donnent la possibilité de gérer les locataires à partir d’un emplacement unique.
-ms.openlocfilehash: 6dbad8dbfaa84d490983cd5eccaf5ecf5d6979e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 78ab8be76d02b813ee81fe444c97d1451375e4ee
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178747"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786250"
 ---
 # <a name="multi-tenant-management"></a>Gestion multi-locataires
 

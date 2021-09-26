@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Ajoutez de nouveaux employés à Microsoft 365 entreprise pour la messagerie, Skype et Office applications.
-ms.openlocfilehash: 24b31e22423fe7f0d51da5a71c4c14b54f1525f0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5fee97b37ba56ad8d8c96420cec3610a3483cec
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177140"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773630"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Ajouter un nouvel employé à Microsoft 365
 
@@ -36,7 +35,7 @@ Cet article vous aide à intégrer un nouvel employé pour Microsoft 365 entrepr
   
 Vous êtes au bon endroit si votre nouvel employé a besoin de Microsoft 365 et que vous utilisez un [plan Microsoft 365](https://products.office.com/business/compare-office-365-for-business-plans) qui vous permet d’installer des applications Office telles que Word et Excel sur un ordinateur. 
   
- **Vous n’êtes pas administrateur ?** [Apprenez à contourner les Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) aide les utilisateurs professionnels et professionnels à se configurer. 
+ **Vous n’êtes pas administrateur ?** [Apprenez à contourner les Microsoft 365](https://support.microsoft.com/office/396b8d9e-e118-42d0-8a0d-87d1f2f055fb) aide les utilisateurs professionnels et les utilisateurs à domicile avec la mise en place. 
   
  **Aucune Office applications dans votre plan ?** Suivez les étapes ci-dessous, mais ignorez les sections d’installation des applications. Utilisez les [versions en ligne de Office](https://support.microsoft.com/office/91a4ec74-67fe-4a84-a268-f6bdf3da1804) à la place. 
   
@@ -87,7 +86,7 @@ Et voici une référence rapide pour les aider à démarrer :
 |Complétez OneDrive Entreprise formation pour apprendre à stocker et organiser vos documents, présentations et feuilles de calcul dans le cloud.  <br/> |Conservez vos documents liés à l’entreprise dans le cloud à l’aide OneDrive Entreprise. Vous pouvez toujours obtenir votre contenu, même si vous êtes Microsoft 365 sur un autre ordinateur. [Regardez une vidéo pour découvrir comment utiliser votre OneDrive Entreprise](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Formation : OneDrive Entreprise** [formation](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (sélectionnez OneDrive Entreprise).  <br/> |
 |Complétez la formation SharePoint Online pour collaborer avec vos collègues et partager du contenu.  <br/> |Le meilleur endroit pour conserver les documents accessibles par vos collègues est SharePoint Online.  <br/> <br/>**Formation : Vidéo** [: Collaborer avec du contenu d’équipe à l’aide SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Découvrez :** Comment votre organisation utilise-t-SharePoint Online et quel type de documents y sont stockés . En outre, quels documents sont stockés dans OneDrive Entreprise.  <br/> |
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Supprimer un ancien employé de Microsoft 365](remove-former-employee.md) (article)\
 [Ajouter des utilisateurs et attribuer des licences en même temps65](add-users.md) (article)

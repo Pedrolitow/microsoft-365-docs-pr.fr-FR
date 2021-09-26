@@ -12,7 +12,6 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -22,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: Découvrez comment rechercher votre bureau d’enregistrement de domaines et votre fournisseur d’hébergement DNS à l’aide de la recherche InterNIC.
-ms.openlocfilehash: 77e4776946d51cb4f8dfe1a746e85d74a9e0a700
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0574e911e9175fc99b419ac96a0ed73d1e2ef8a3
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774579"
 ---
 # <a name="find-your-domain-registrar"></a>Rechercher votre bureau d’enregistrement de domaine
 

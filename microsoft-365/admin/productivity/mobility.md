@@ -12,25 +12,24 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la mobilité : le score de productivité des utilisateurs.'
-ms.openlocfilehash: 7789980a721e5ebaad3d3673fd0e7c640b6f737d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bf45022193e8e1f5e4788312fb19705a6be7446
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178700"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776271"
 ---
 # <a name="mobility--people-experiences"></a>Mobilité : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie de mobilité fait partie des mesures d’expérience des personnes. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour prendre en main les informations sur la mobilité, les membres de votre organisation doivent être titulaires d’une licence pour :
 
@@ -77,7 +76,7 @@ Ce graphique montre la courbe de tendance, où le numérateur est le nombre de p
 
 ### <a name="scoring-framework"></a>Infrastructure de notation
 
-Le score de mobilité de votre organisation mesure au niveau de l’organisation (agrégé) si les utilisateurs utilisent Microsoft 365 Apps - Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer et Skype - sur les différentes plateformes ( bureau, web et mobile).
+Le score de mobilité de votre organisation mesure au niveau d’une organisation (agrégée) si les personnes utilisent Microsoft 365 Apps (Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer et Skype) dans l’ensemble différentes plateformes : bureau, web et mobile.
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
@@ -145,7 +144,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 2. **Corps :** Met en évidence l’importance de faciliter le travail à distance pour les personnes qui n’ont pas accès aux bureaux physiques de votre organisation.
 3. **Visualisation :** Affiche une courbe de tendance pour le pourcentage quotidien de personnes qui travaillent uniquement à distance, ainsi que pour le pourcentage quotidien de personnes qui travaillent également sur site. Les utilisateurs sont considérés sur site s’ils effectuent au moins trois heures d’activité Microsoft 365 Apps dans une journée.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

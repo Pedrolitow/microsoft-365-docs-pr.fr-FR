@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9966dc6120d37bd506605734845d4b3706212ada
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: cd1588221d8058963e49013df06c238b2f4a72b0
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483746"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776931"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -70,7 +70,7 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 |Nom de la propriété|Description|Options|
 |---|---|---|
 |**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente le groupe et sera utilisé dans la stratégie.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` . Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour obtenir de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0 : correspondre à cette paire VID/PID exacte</li><li>55E0 : faire correspondre n’importe quel média avec PID=55E0 </li><li>0751 : faire correspondre n’importe quel média avec VID=0751</li></ul></li></ul>|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. Pour chaque propriété d’appareil, voir [Propriétés de l’appareil](device-control-removable-storage-protection.md) pour plus d’informations. Toutes les propriétés sont sensibles à la cas. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` . Le numéro à la fin (par exemple, &0) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour obtenir de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId**</li><li>**SerialNumberId**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0 : correspondre à cette paire VID/PID exacte</li><li>55E0 : faire correspondre n’importe quel média avec PID=55E0 </li><li>0751 : faire correspondre n’importe quel média avec VID=0751</li></ul></li></ul>|
 |**MatchType**|Lorsque plusieurs propriétés d’appareil sont utilisées dans DescriptorIDList, MatchType définit la relation.|**MatchAll**: tous les attributs sous la relation DescriptorIdList seront **And** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système vérifie si la clé USB répond aux deux valeurs. <p> **MatchAny**: les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système appliquera l’application tant que la clé USB aura une valeur **DeviceID** ou **InstanceID** identique. |
 
 ### <a name="access-control-policy"></a>Politique de contrôle d’accès
@@ -84,7 +84,7 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 | **ExcludedIDList** | Groupes à qui la stratégie ne sera pas appliquée. | L’ID de groupe/GUID doit être utilisé à cette instance. |
 | **ID d’entrée** | Un policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.| |
 | **Type** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <ul><li>Application : autoriser ou refuser </li><li>Audit : AuditAllowed ou AuditDenied</ul></li> | <ul><li>Autoriser</li><li>Refuser </li><li>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé</li><li>AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.</li></ul> <p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**. |
-| **Sid** | Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
+| **Sid** | Le sid de l’ordinateur local ou le sid de l’objet AD définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
 | **ComputerSid** | Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée. |  |
 | **Options** | Définit si les notifications sont affichées ou non |**0-4 : lorsque** le type Autoriser ou Refuser est sélectionné. <ul><li>0 : rien</li><li>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </li></ul> <p> Lorsque type **AuditAllowed ou** **AuditDenied** est sélectionné : <ul><li>0 : rien</li><li>1 : afficher la notification</li><li>2 : événement d’envoi</li><li>3 : afficher la notification et envoyer un événement </li></ul>|
 |AccessMask|Définit l’accès. | **1-7**: <ol><li>Lecture</li><li>Écriture</li><li>Lecture et écriture</li><li>Exécuter</li><li>Lecture et exécution</li><li>Écriture et exécution </li><li>Lecture et écriture et exécution</li></ol> |
@@ -97,7 +97,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 
 1. Créer des groupes
 
-    1. Groupe 1 : Tout stockage amovible et CD/DVD. Un exemple de stockage amovible et de CD/DVD est le groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Group.xmlany [Removable Stockage et CD-DVD.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. Groupe 1 : Tout stockage amovible et CD/DVD. Un exemple de stockage amovible et cd/DVD est le groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Stockage amovible et [cd-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
     2. Groupe 2 : approbations de base de données basées sur les propriétés de l’appareil. Voici un exemple de ce cas d’utilisation : ID d’instance - Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier Group.xmlde base de données approuvé. [](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
 
     > [!TIP]
@@ -120,14 +120,14 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 
 2. Création d’une stratégie
 
-    1. Stratégie 1 : bloquer l’accès en écriture et en cours d’exécution à tous les usbs non désapprouvés spécifiques, sauf à les bloquer. Voici un exemple de ce cas d’utilisation : PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** dans l’exemple Scénario [2 Auditer](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) l’écriture et l’exécution de l’accès à tous les fichiers USBs.xmlnon acceptés, sauf bloquer.
+    1. Stratégie 1 : bloquer l’accès en écriture et en cours d’exécution à tous les usbs non désapprouvés spécifiques, sauf à les bloquer. Voici un exemple de ce cas d’utilisation : PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** dans l’exemple Scénario [2 Auditer](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) l’accès à l’écriture et à l’exécution de tous les fichiers USBs.xmlnon désapprouvés, sauf bloquer.
     2. Stratégie 2 : auditer l’écriture et exécuter l’accès à d’autres personnes. Voici un exemple de ce cas d’utilisation : PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** dans l’exemple Scénario [2 Auditer](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) l’accès en écriture et exécution au fichier others.xml.
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>Déploiement et gestion d’une stratégie via une stratégie de groupe
 
 La fonctionnalité De Stockage contrôle d’accès amovible vous permet d’appliquer une stratégie via la stratégie de groupe à l’utilisateur ou à l’appareil, ou aux deux.
 
-### <a name="licensing"></a>Gestion des licences
+### <a name="licensing"></a>Licences
 
 Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
 
@@ -207,7 +207,7 @@ Cette fonctionnalité (dans Microsoft Endpoint Manager admin center ( <https://e
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Afficher les données de contrôle d’Stockage d’accès amovible dans Microsoft Defender pour le point de terminaison
 
-Le [portail Microsoft 365 Defender affiche](https://security.microsoft.com/advanced-hunting) les événements déclenchés par le contrôle d’Stockage d’accès. Pour accéder à la sécurité Microsoft 365, vous devez avoir l’abonnement suivant :
+Le [portail Microsoft 365 Defender affiche](https://security.microsoft.com/advanced-hunting) les événements déclenchés par le contrôle d’accès Stockage appareil. Pour accéder à la sécurité Microsoft 365, vous devez avoir l’abonnement suivant :
 
 - Microsoft 365 de rapports E5
 

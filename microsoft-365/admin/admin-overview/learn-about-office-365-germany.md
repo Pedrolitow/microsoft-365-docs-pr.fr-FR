@@ -13,7 +13,6 @@ monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -21,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: En savoir plus sur Office 365 Allemagne.
-ms.openlocfilehash: e08d3b72e8a87fa9cd5e5a1cc25d8178e4bd2183
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9aa7fc76be39f9ea0aee373ebbecb72387f47610
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773954"
 ---
 # <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
 
@@ -47,7 +46,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
   
 - Applications Microsoft 365 pour les grandes entreprises, Office 2016 et Office 2013<sup>1</sup>. Notez que Office 2013 nécessite l’utilisation [Office 365'authentification](../../enterprise/modern-auth-for-office-2013-and-2016.md)moderne avec Office clients.
     
-- Exchange Online
+- Exchange Online
     
 - SharePoint Online
     
@@ -92,7 +91,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
 |Item|Informations|
 |-----|-----|
 |Portail de connexion  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
-|Support technique, sur les abonnements et la facturation  <br/> |Support basé sur l’Allemagne disponible en allemand et en anglais Pour plus d’informations, voir contacter le support pour les [produits d’entreprise - Aide de l’administrateur](../../business-video/get-help-support.md).  <br/> |
+|Support technique, sur les abonnements et la facturation  <br/> |Support basé sur l’Allemagne disponible en allemand et en anglais Pour plus d’informations, voir contacter le support pour les produits [d’entreprise - Aide de l’administrateur](../../business-video/get-help-support.md).  <br/> |
 |Adresses IP et URL  <br/> |Voir [Points de terminaison Office 365 Germany](../../enterprise/microsoft-365-germany-endpoints.md).  <br/> |
 |Yammer  <br/> |Non disponible.  <br/> |
 |Versions de Office antérieures à Office 2013 ou Applications Microsoft 365 pour les grandes entreprises<sup>1</sup> <br/> |Non pris en charge.  <br/> |

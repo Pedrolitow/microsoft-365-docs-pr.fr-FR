@@ -11,16 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment Antivirus Microsoft Defender protéger vos appareils Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions.
-ms.openlocfilehash: 4343726b1a0856616eaa8291adc24633aaad5eb0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7894a1f2a3947a3d71f46bf0ca3797370db078f4
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178595"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772733"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Menaces détectées par l’antivirus Microsoft Defender
 
@@ -81,7 +80,7 @@ Pour en savoir plus sur les différentes menaces, visitez <a href="https://www.m
 - Afficher les dernières menaces pour une région spécifique.
 - Recherchez des détails sur une menace spécifique dans la menace.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Secure Windows 10 devices](/misc/secure-windows-10-devices.md) (article)\
 [Évaluer Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (article)\

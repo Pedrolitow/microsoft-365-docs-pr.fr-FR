@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour envoyer le courrier électronique d’un ancien employé à un autre employé ou convertir en boîte aux lettres partagée.
-ms.openlocfilehash: f9d5cefd761d95a3df03864aa14de1bcfb608d04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f0a779a4fcc27d99e99f28836418ad62d338b227
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177035"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773426"
 ---
 # <a name="step-3---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Étape 3 : Forward a former employee’s email to another employee or convert to a shared mailbox
 
@@ -58,7 +57,7 @@ Suivez ces étapes pour convertir la boîte aux lettres de [l’utilisateur en b
 5. Sélectionnez **Enregistrer**.
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ouvrir et utiliser une boîte aux lettres partagée dans Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
 

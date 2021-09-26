@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: Basic Mobility and Security peut vous aider à sécuriser et gérer les appareils mobiles de votre organisation.
-ms.openlocfilehash: 3cb5b34d869ae16faa89ced45d54537fbb07a5e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88d3dd58d61a0b3e26aaf46951f1dbcde76b7b34
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176844"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774182"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Gérer les appareils inscrits à la gestion des appareils mobiles dans Microsoft 365
 
@@ -54,7 +53,7 @@ Une fois la mobilité et la sécurité de base définies, voici quelques méthod
 |Bloquer l'accès des appareils non pris en charge à la messagerie Exchange à l'aide d'Exchange ActiveSync |Dans le panneau Gestion des périphériques, sélectionnez  **Bloquer.** |
 |Configurer des stratégies d’appareil telles que les exigences de mot de passe et les paramètres de sécurité |Dans le panneau Gestion des appareils, sélectionnez **Stratégies de sécurité des**   >  **appareils Ajouter +**. Pour plus d’informations, voir [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security.](create-device-security-policies.md)|
 |Afficher la liste des appareils bloqués  |Dans le panneau Gestion des périphériques, sous  **Sélectionner un affichage,**   sélectionnez  **Bloqué.** |
-|Débloquer un appareil non pris en charge ou non conforme pour un utilisateur ou un groupe d'utilisateurs  |Sélectionnez l’une des sélections suivantes pour débloquer les appareils :<br/>- Supprimez l’utilisateur ou les utilisateurs du groupe de sécurité à qui la stratégie a été appliquée. Go to Centre d'administration Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups,**</a>and then select group name. Sélectionnez **Modifier les membres et les administrateurs.**<br/>- Supprimez le groupe de sécurité dont les utilisateurs sont membres de la stratégie d’appareil. Go to Security & Compliance Center > **Security policies** Device   >  **security policies**. Sélectionnez le nom de la stratégie d’appareil, puis **sélectionnez Modifier**  >  **le déploiement.**<br/>- Débloquer tous les appareils non conformes pour une stratégie d’appareil. Go to Security & Compliance Center > **Security policies** Device   >  **security policies**. Sélectionnez le nom de la stratégie d’appareil, puis **sélectionnez Modifier**  >  **les exigences d’accès.** Sélectionnez  **Autoriser l’accès et signaler une violation.**<br/>- Pour débloquer un appareil non conforme ou non pris en charge pour un utilisateur ou un groupe d’utilisateurs, accédez au Centre de sécurité & conformité > **Stratégies** de sécurité Gestion des périphériques Gérer les paramètres d’accès des   >  ****   >  **** appareils. Ajoutez un groupe de sécurité avec les membres que vous souhaitez exclure de l’accès bloqué aux Microsoft 365. Pour plus d’informations, [voir Créer, modifier ou supprimer](../../admin/email/create-edit-or-delete-a-security-group.md)un groupe de sécurité dans le Centre d'administration Microsoft 365 .|
-|Supprimer des utilisateurs afin que leurs appareils ne soient plus gérés par Basic Mobility and Security |Pour supprimer l’utilisateur, modifiez le groupe de sécurité qui dispose de stratégies de gestion des appareils pour basic Mobility and Security. Pour plus d’informations,  [voir Créer, modifier ou supprimer un](../../admin/email/create-edit-or-delete-a-security-group.md)groupe de sécurité dans le Centre d'administration Microsoft 365 .<br/>Pour supprimer Basic Mobility and Security de tous vos utilisateurs Microsoft 365, voir Désactiver la mobilité [et la sécurité de base.](turn-off.md)|
+|Débloquer un appareil non pris en charge ou non conforme pour un utilisateur ou un groupe d'utilisateurs  |Sélectionnez l’une des sélections suivantes pour débloquer les appareils :<br/>- Supprimez l’utilisateur ou les utilisateurs du groupe de sécurité à qui la stratégie a été appliquée. Go to Centre d'administration Microsoft 365 > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups,**</a>and then select group name. Sélectionnez **Modifier les membres et les administrateurs.**<br/>- Supprimez le groupe de sécurité dont les utilisateurs sont membres de la stratégie d’appareil. Go to Security & Compliance Center > **Security policies** Device   >  **security policies**. Sélectionnez le nom de la stratégie d’appareil, puis **sélectionnez Modifier**  >  **le déploiement.**<br/>- Débloquer tous les appareils non conformes pour une stratégie d’appareil. Go to Security & Compliance Center > **Security policies** Device   >  **security policies**. Sélectionnez le nom de la stratégie d’appareil, puis **sélectionnez Modifier les conditions**  >  **d’accès.** Sélectionnez  **Autoriser l’accès et signaler une violation.**<br/>- Pour débloquer un appareil non conforme ou non pris en charge pour un utilisateur ou un groupe d’utilisateurs, accédez au Centre de sécurité & conformité > **Stratégies** de sécurité Gestion des périphériques Gérer les paramètres d’accès des   >  ****   >  **** appareils. Ajoutez un groupe de sécurité avec les membres que vous souhaitez exclure de l’accès bloqué aux Microsoft 365. Pour plus d’informations, [voir Créer, modifier ou supprimer](../../admin/email/create-edit-or-delete-a-security-group.md)un groupe de sécurité dans le Centre d'administration Microsoft 365 .|
+|Supprimer des utilisateurs afin que leurs appareils ne soient plus gérés par Basic Mobility and Security |Pour supprimer l’utilisateur, modifiez le groupe de sécurité qui dispose de stratégies de gestion des appareils pour basic Mobility and Security. Pour plus d’informations,  [voir Créer, modifier ou supprimer](../../admin/email/create-edit-or-delete-a-security-group.md)un groupe de sécurité dans le Centre d'administration Microsoft 365 .<br/>Pour supprimer Basic Mobility and Security de tous vos utilisateurs Microsoft 365, voir Désactiver la mobilité [et la sécurité de base.](turn-off.md)|
 
 Live (v14)

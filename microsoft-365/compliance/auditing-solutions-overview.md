@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f89303e22432f2e3297bec01912710daf21d7379
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
+ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59498111"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Audit de solutions dans Microsoft 365
 
@@ -103,6 +103,7 @@ Les sections suivantes identifient les licences requises pour l’Audit de base 
 - Abonnement Microsoft 365 Éducation A3
 - Abonnement Microsoft 365 pour le gouvernement américain G3
 - Abonnement Microsoft 365 pour le gouvernement américain G1
+- Abonnement Microsoft 365 Première ligne F1 ou F3 ou module complémentaire Sécurité F5
 - Abonnement Office 365 Entreprise E3
 - Abonnement Office 365 Entreprise E1
 - Abonnement Office 365 Éducation A1
@@ -119,6 +120,7 @@ Les sections suivantes identifient les licences requises pour l’Audit de base 
 - Microsoft 365 pour le gouvernement américain G5
 - Abonnement Microsoft 365 pour le gouvernement américain G5 + module complémentaire Microsoft 365 G5 Conformité
 - Abonnement Microsoft 365 pour le gouvernement américain G5 + module complémentaire Microsoft 365 G5 eDiscovery et Audit
+- Microsoft 365 Première ligne F5 Conformité ou F5 Sécurité et module complémentaire Conformité
 - Abonnement Office 365 Entreprise E5
 - Abonnement Office 365 Éducation A5
 - Abonnement Office 365 Entreprise E3 + module complémentaire de Conformité avancée Office 365 (désormais indisponible pour les nouveaux abonnements)

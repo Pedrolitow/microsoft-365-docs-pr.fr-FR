@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer la licence Microsoft 365 d’un ancien employé.
-ms.openlocfilehash: 7303c881e93d3ecb0c6637936ad12d8da227392c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf75d12ba425701528ec4f07d6d7e6b91e4dc585
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177011"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775335"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>Étape 6 : Supprimer la licence Microsoft 365 d’un ancien employé
 

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - AdminSurgePortfolio
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Découvrez comment supprimer un compte d’utilisateur et que faire avec le courrier électronique et le contenu OneDrive utilisateur et s’il faut conserver la licence de produit.
-ms.openlocfilehash: 0fc74780bfdf7d5d6f0f6e21598dd07e4662d8b3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: c15bcc88290fbd54b76a11ae96e89fbacd2c3b58
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356388"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774339"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
@@ -132,7 +131,7 @@ La réduction du nombre de licences est une étape distincte qui ne peut être e
 
 4. Dans le **volet Supprimer des licences,** sous Nouvelle **quantité,** dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 100 licences et que vous souhaitez en supprimer cinq, entrez 95.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 Plus tard, lorsque vous suivrez les étapes pour ajouter une autre personne à votre entreprise, vous serez invité à acheter une licence en même temps, en une seule étape !
 
@@ -152,7 +151,7 @@ Voici les problèmes les plus courants rencontrés par les utilisateurs lors de 
 
 **Voulez-vous supprimer des Microsoft 365 de votre ordinateur ? Go to [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).**
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Restaurer un utilisateur](restore-user.md) (article)\
 [Supprimer définitivement une boîte aux lettres](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)\

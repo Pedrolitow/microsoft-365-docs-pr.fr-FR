@@ -1,5 +1,5 @@
 ---
-title: Planifier votre configuration de Microsoft 365 entreprise
+title: Planifier votre installation de Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -12,8 +12,8 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations à prendre en compte pour effectuer le déplacement vers Microsoft 365 entreprise.
-ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bda849f6337ed2cc9b9c5b2bc5a192e7ac016e03
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178484"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786346"
 ---
-# <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre configuration de Microsoft 365 entreprise
+# <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre installation de Microsoft 365 pour les entreprises
 
 Cet article est réservé aux personnes qui se sont abonnées à une Microsoft 365 pour les entreprises.
   

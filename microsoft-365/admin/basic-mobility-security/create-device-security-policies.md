@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour créer des stratégies d’appareil qui protègent les informations de votre organisation.
-ms.openlocfilehash: 9792a936f2f209eabb4da9ce725e611ef3766526
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06d377e86913cbacd781241d75765e6b6cc63b8b
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775179"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Créer des stratégies de sécurité des appareils dans Basic Mobility and Security
 
@@ -61,7 +60,7 @@ Avant de commencer, assurez-vous que vous avez activé et installé Basic Mobili
 
 6. Sélectionnez **Créer cette stratégie.**
 
-La stratégie est poussée vers l’appareil de chaque utilisateur que la stratégie applique à la prochaine fois qu’il se connecte Microsoft 365 à l’aide de son appareil mobile. Si aucune stratégie n’a été appliquée à l’appareil mobile des utilisateurs auparavant, après avoir déployé la stratégie, ils obtiennent une notification sur leur appareil qui inclut les étapes d’inscription et d’activation de Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). Jusqu’à ce qu’ils terminent l’inscription dans Basic Mobility and Security hébergé par le service Intune, l’accès à la messagerie, OneDrive et à d’autres services est restreint. Une fois l’inscription terminée à l’aide Portail d'entreprise Intune’application, ils peuvent utiliser les services et la stratégie est appliquée à leur appareil.
+La stratégie est poussée vers l’appareil de chaque utilisateur que la stratégie applique à la prochaine fois qu’il se connecte Microsoft 365 à l’aide de son appareil mobile. Si aucune stratégie n’a été appliquée à leur appareil mobile auparavant, après avoir déployé la stratégie, les utilisateurs obtiennent une notification sur leur appareil qui inclut les étapes d’inscription et d’activation de Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). Jusqu’à ce qu’ils terminent l’inscription dans Basic Mobility and Security hébergé par le service Intune, l’accès à la messagerie, aux OneDrive et à d’autres services est restreint. Une fois l’inscription terminée à l’aide Portail d'entreprise Intune’application, ils peuvent utiliser les services et la stratégie est appliquée à leur appareil.
 
 ## <a name="step-2-verify-that-your-policy-works"></a>Étape 2 : Vérifier que votre stratégie fonctionne
 
@@ -86,7 +85,7 @@ La stratégie est poussée vers l’appareil mobile de chaque utilisateur à la 
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Étape 4 : Bloquer l’accès à la messagerie pour les appareils non pris en compte
 
-Pour sécuriser les informations de votre organisation, vous devez bloquer l’accès de l’application à Microsoft 365 messagerie électronique pour les appareils mobiles qui ne sont pas pris en charge par Basic Mobility and Security. Pour obtenir la liste des appareils pris en charge, voir [Appareils pris en charge.](../../admin/basic-mobility-security/capabilities.md)
+Pour sécuriser les informations de votre organisation, vous devez bloquer l’accès de l’application à Microsoft 365 courrier électronique pour les appareils mobiles qui ne sont pas pris en charge par Basic Mobility and Security. Pour obtenir la liste des appareils pris en charge, voir [Appareils pris en charge.](../../admin/basic-mobility-security/capabilities.md)
 
 **Pour bloquer l’accès à l’application :**
 
@@ -149,7 +148,7 @@ La stratégie est supprimée de l’appareil mobile pour chaque utilisateur que 
 
 Vous pouvez également effacer complètement un appareil ou effacer de manière sélective les informations organisationnelles de l’appareil. Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de Basic Mobility and Security](overview.md) (article)\
 [Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)

@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Suivez ces étapes pour suivre les problèmes de mobilité et de sécurité de base
-ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 533e2d60d3c23809bdfbf6dda5a64e43082c739e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775107"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Résoudre les problèmes de mobilité et de sécurité de base
 
@@ -35,7 +34,7 @@ Pour commencer, vérifiez ce qui suit :
 
 - Basculez vers un autre réseau WIFI ou cellulaire sur l’appareil.
 
-- Pour les appareils Android ou iOS, désinstallez et réinstallez l’Portail d'entreprise Intune sur l’appareil. 
+- Pour les appareils Android ou iOS, désinstallez et réinstallez l’application Portail d'entreprise Intune sur l’appareil. 
 
 ## <a name="ios-phone-or-tablet"></a>Téléphone ou tablette iOS
 

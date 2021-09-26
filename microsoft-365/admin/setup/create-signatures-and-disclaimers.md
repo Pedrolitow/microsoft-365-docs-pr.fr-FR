@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -26,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Gérer les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: 47087f2d09428214237dba226e680aa3c332625d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5dd51435a67cb26353c6794bc9fe01509ef283a1
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176260"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776463"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
@@ -104,7 +103,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures électroniques dans Microsoft 365 :
   
-- Insérer la signature directement sous la dernière réponse ou envoi d’e-mail
+- Insérez la signature directement sous la dernière réponse ou envoi d’e-mail
     
 - Afficher les signatures de courrier côté serveur dans les dossiers Éléments envoyés des utilisateurs
     
@@ -116,9 +115,9 @@ Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des 
   
 ## <a name="more-resources"></a>Plus de ressources
 
-Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes de message à l’échelle de l’Exchange Online .
+Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes des messages à l’échelle de l’Exchange Online .
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)\
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\

@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Apprenez à créer, modifier ou supprimer un groupe de sécurité.
-ms.openlocfilehash: c2056996eb3954777654c5ea829379ecf005276a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5456dbcee245647cbb12bfbcfc0c82ebcf19f037
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176516"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774651"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Créer, modifier ou supprimer un groupe de sécurité dans le Centre d'administration Microsoft 365
 
@@ -103,7 +102,7 @@ Non. Il s’agit simplement d’un moyen de plus pour gérer la sécurité de vo
 
 Oui. Toutefois, si vous souhaitez utiliser des groupes pour la messagerie et la collaboration, nous vous recommandons de créer [un groupe Microsoft 365 à](../create-groups/create-groups.md) la place. 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Créer un groupe dans le Centre d'administration Microsoft 365](../create-groups/create-groups.md) (article)\
 [Expliquer Microsoft 365 groupes à vos utilisateurs](../create-groups/explain-groups-knowledge-worker.md) (article)\

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: da9286d548cbe1f2566bfdac1397178d40ae9dc8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a57a9be69401368a6b6b893e0850a3ba8c6aaf9a
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209611"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776979"
 ---
 # <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 
@@ -42,6 +42,19 @@ ms.locfileid: "59209611"
 
 Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
 
+
+## <a name="api-description"></a>Description de l’API
+
+Retourne des informations sur toutes les recommandations de sécurité affectant l’organisation.
+
+*URL :* GET:/api/recommendations
+<br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
+<br>Opérateurs pris en charge par OData :
+<br>```$filter``` on:  ```id``` , , , , , , , , ```productName``` , , ```vendor``` et ```recommendedVersion``` ```recommendationCategory``` ```subCategory``` ```severityScore``` ```remediationType``` ```recommendedProgram``` ```recommendedVendor``` ```status``` properties.
+<br>```$top``` avec une valeur maximale de 10 000.
+<br>```$skip```.
+<br>Consultez des exemples [dans les requêtes OData avec Microsoft Defender pour point de terminaison.](exposed-apis-odata-samples.md)
+
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
@@ -61,7 +74,7 @@ GET /api/recommendations
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

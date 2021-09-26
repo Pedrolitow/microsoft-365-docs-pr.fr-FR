@@ -13,18 +13,17 @@ monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: Protection de la confidentialité par le score de productivité.
-ms.openlocfilehash: 5b5997532ddcd1fdf43b4124f8e2d8183bb3d89e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d849f4cc8924aac09ca41f30682e32babfcc7f13
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776115"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Contrôles de confidentialité pour le score de productivité
 

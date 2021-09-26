@@ -13,7 +13,6 @@ monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -22,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment acheter Windows 365 Business pour votre organisation et aider les utilisateurs à commencer à utiliser leurs PC Cloud.
-ms.openlocfilehash: 39d43d81d292c343591e5f5e1192d8de198a7b7c
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 255478b0ba7ca71f273e74d6e20787de8a2f2ae5
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355659"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774158"
 ---
 # <a name="get-started-with-windows-365-business-and-cloud-pcs"></a>Démarrage avec les PC Windows 365 Business et Cloud
 
@@ -39,7 +38,7 @@ Cet article est réservé aux personnes qui prévoient d’acheter et de configu
 > Avant de commencer, assurez-vous que les paramètres de votre appareil Azure AD pour les [utilisateurs](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) peuvent joindre des appareils à Azure **AD.**
 
    ![Les utilisateurs peuvent joindre des appareils aux paramètres Azure AD.](../../media/deschutes/azure-device-settings.png)
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables
 Il n’existe aucune condition préalable de licence pour configurer Windows 365 Business.
 
 Pour une expérience d’intégration optimisée, consultez le [guide](troubleshoot-windows-365-business.md) de dépannage de l’installation pour vous assurer que vos préférences d’environnement sont optimisées pour Windows 365 Entreprise. 
@@ -174,7 +173,7 @@ L’envoi de messages électroniques sortants directement sur le port 25 à part
 
 Si vous avez besoin d’aide lors de la configuration de Windows 365 Business dans le Centre d'administration Microsoft 365, consultez Obtenir de l’aide [ou du support.](/microsoft-365/business-video/get-help-support)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Windows 365 Business](https://www.microsoft.com/windows-365/business) <br/>
 [Options de dimensionnement de Windows 365 Business](windows-365-business-sizing.md) <br/>

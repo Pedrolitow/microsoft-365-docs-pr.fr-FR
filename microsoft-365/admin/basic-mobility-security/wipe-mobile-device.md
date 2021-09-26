@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer des informations des appareils inscrits.
-ms.openlocfilehash: b687b3d13f95cb05d9261064d385d35ef6d7f7bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c42edc8eb9da01424c293e5d33f38ffef4b34ce
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176796"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773378"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Effacement d’un appareil mobile dans Basic Mobility and Security
 
@@ -60,7 +59,7 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 6. Sélectionnez le type de réinitialisation à distance que vous voulez effectuer.
 
-    - Pour réinitialiser entièrement l’appareil et restaurer ses paramètres d’usine, sélectionnez **Réinitialiser aux paramètres d’usine.**
+    - Pour réinitialiser entièrement l’appareil et restaurer ses paramètres d’usine, sélectionnez **Réinitialisation aux paramètres d’usine.**
     - Pour faire une effacement sélective et supprimer uniquement Microsoft 365'organisation, **sélectionnez Supprimer les données de l’entreprise.**
     - Pour supprimer l’appareil de votre organisation, **sélectionnez Supprimer l’appareil.**
 

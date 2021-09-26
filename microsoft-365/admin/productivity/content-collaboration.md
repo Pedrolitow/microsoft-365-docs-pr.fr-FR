@@ -12,31 +12,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la collaboration de contenu : les utilisateurs peuvent obtenir un score de productivité.'
-ms.openlocfilehash: fa4e84f0cf454e28cd773292f2a4065cb1252acf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82c4cf84301e820816067d5b6e286851eb8e9fbd
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776511"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
 Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie de collaboration de contenu fait partie des mesures de l’expérience utilisateur. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour commencer à obtenir des informations sur la collaboration de contenu, les membres de votre organisation doivent être titulaires d’une licence pour :
 
 - OneDrive Entreprise
 - SharePoint
-- Exchange Online
+- Exchange Online
 
 Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
 
@@ -191,7 +190,7 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
       - **21-40**: la partie rouge (colorée) de la barre représente le pourcentage d’appareils avec un score de performances réseau entre 20 et 40. 
       - **0-20**: la partie rouge foncé (couleur) de la barre représente le pourcentage d’appareils avec le pire score de performances réseau entre 0 et 20. 
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

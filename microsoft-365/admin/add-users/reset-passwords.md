@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - MSStore_Link
@@ -28,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte Microsoft 365 pour réinitialiser les mots de passe des utilisateurs Microsoft 365 abonnement pour les entreprises.
-ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 50b964826b59287405c86a7918609535edb87b4f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775323"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -87,7 +86,7 @@ Si vous avez oublié votre mot de passe et que vous ne pouvez pas vous y inscrir
 
 - Assurez-vous que vous avez fourni d’autres informations de contact, notamment un numéro de téléphone mobile.
 
-- Sinon, [appelez le Support Microsoft.](../../business-video/get-help-support.md)
+- Sinon, [appelez le Support Microsoft](../../business-video/get-help-support.md).
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Réinitialiser tous les mots de passe d’entreprise pour tous les membres de votre organisation en même temps
 <a name="bkmk_forgot"> </a>

@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: Avant de pouvoir utiliser les services Microsoft 365 avec votre appareil, vous devrez peut-être l’inscrire dans Basic Mobility and Security pour Microsoft 365.
-ms.openlocfilehash: abe1a7f82ac1435894073b99a23dd07c9e420499
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 45daf8a56c60cbbef137ce1b085172691ad36ff5
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176876"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773918"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Inscrire votre appareil mobile à l’aide de Basic Mobility and Security
 
@@ -80,4 +79,4 @@ Pour connecter et configurer votre téléphone Windows ou PC avec le portail d�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que votre appareil est inscrit à Basic Mobility and Security, vous pouvez commencer à utiliser des applications Office sur votre appareil pour utiliser la messagerie, le calendrier, les contacts et les documents.
+Une fois que votre appareil est inscrit à Basic Mobility and Security, vous pouvez commencer à utiliser des applications Office sur votre appareil pour travailler avec le courrier électronique, le calendrier, les contacts et les documents.

@@ -21,15 +21,15 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 08/16/2021
+ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 267787b2cacc00a1d402c2f4dd2e57f42bd3dda3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e9562ae976e4eeac1197c5280caebef449ae0180
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776763"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passer de la protection de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
 
@@ -45,11 +45,13 @@ Le processus de migration vers Defender pour Endpoint peut être divisé en troi
 
 ![Processus de migration MDE.](images/phase-diagrams/migration-phases.png)
 
+<br/><br/>
+
 |Phase|Description|
 |--|--|
-|[Préparer votre migration](switch-to-microsoft-defender-prepare.md)|Pendant [la phase **de** préparation](switch-to-microsoft-defender-prepare.md): <ol><li>Mettez à jour les appareils de votre organisation.</li><li>Obtenir Defender pour le point de terminaison.</li><li>Planifiez les rôles et les autorisations, et accordez l’accès Microsoft 365 Defender portail.</li><li>Configurez les paramètres proxy et Internet de votre appareil pour activer la communication entre les appareils de votre organisation et Defender pour le point de terminaison.</li></ol>|
-|[Configurer Defender pour le point de terminaison](switch-to-microsoft-defender-setup.md)|Pendant [la phase **d’installation**](switch-to-microsoft-defender-setup.md): <ol><li>Activez/réinstallez Antivirus Microsoft Defender et définissez-le en mode passif.</li><li> Configurez Defender pour endpoint.</li><li>Ajoutez Defender pour le point de terminaison à la liste d’exclusions de votre solution existante.</li><li>Ajoutez votre solution existante à la liste d’exclusions Antivirus Microsoft Defender.</li><li>Configurer vos groupes d’appareils, collections et unités d’organisation.</li><li>Configurez vos stratégies de logiciel anti-programme malveillant et vos paramètres de protection en temps réel.</li></ol>|
-|[Intégration à Defender pour le point de terminaison](switch-to-microsoft-defender-onboard.md)|Pendant [la phase **d’intégration**](switch-to-microsoft-defender-onboard.md): <ol><li>Intégrer vos appareils à Defender for Endpoint.</li><li>Exécutez un test de détection.</li><li>Confirmez que Antivirus Microsoft Defender est en cours d’exécution en mode passif.</li><li>Obtenir les mises à jour de Antivirus Microsoft Defender.</li><li>Désinstallez votre solution de protection de point de terminaison existante.</li><li>Assurez-vous que Defender pour le point de terminaison fonctionne correctement.</li></ol>|
+|[Préparer votre migration](switch-to-microsoft-defender-prepare.md)|Pendant [la phase **de** préparation](switch-to-microsoft-defender-prepare.md): <br/>1. Mettez à jour les appareils de votre organisation.<br/>2. Obtenir Defender pour le point de terminaison.<br/>3. Planifiez les rôles et les autorisations et accordez l’accès Microsoft 365 Defender portail.<br/>4. Configurez les paramètres proxy et Internet de votre appareil pour permettre la communication entre les appareils de votre organisation et Defender pour le point de terminaison. |
+|[Configurer Defender pour le point de terminaison](switch-to-microsoft-defender-setup.md)|Pendant [la phase **d’installation**](switch-to-microsoft-defender-setup.md): <br/>1. Activez/réinstallez Antivirus Microsoft Defender et définissez-le en mode passif.<br/>2. Configurez Defender pour endpoint.<br/>3. Ajoutez Defender pour le point de terminaison à la liste d’exclusions de votre solution existante.<br/>4. Ajoutez votre solution existante à la liste d’exclusions Antivirus Microsoft Defender.<br/>5. Configurer vos groupes d’appareils, collections et unités d’organisation.<br/>6. Configurez vos stratégies de logiciel anti-programme malveillant et les paramètres de protection en temps réel.|
+|[Intégration à Defender pour le point de terminaison](switch-to-microsoft-defender-onboard.md)|Pendant [la phase **d’intégration**](switch-to-microsoft-defender-onboard.md): <br/>1. Intégrer vos appareils à Defender pour le point de terminaison.<br/>2. Exécutez un test de détection.<br/>3. Confirmez que la Antivirus Microsoft Defender est en cours d’exécution en mode passif.<br/>4. Obtenir les mises à jour de Antivirus Microsoft Defender.<br/>5. Désinstallez votre solution de protection de point de terminaison existante.<br/>6. Assurez-vous que Defender pour le point de terminaison fonctionne correctement.|
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Qu’est-ce qui est inclus dans Microsoft Defender pour le point de terminaison ?
 

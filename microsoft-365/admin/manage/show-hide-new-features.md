@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -21,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés de Office » dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 31506f05054d6ee98eae0e1f075618d866d3934c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 357993a3a907edcccdc74d29d13a6eab464690aa
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773099"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office’affiche dans Nouveautés
 

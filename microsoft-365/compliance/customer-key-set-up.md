@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour Microsoft 365.
-ms.openlocfilehash: e187c01a355cc9b926e892cb3326b5a527c714a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 739653151031026e788c4b39fa3b182184115175
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203382"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776631"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -52,7 +52,7 @@ Vous effectuerez la plupart de ces tâches en vous connectant à distance à Azu
  
 - [Inscrire des abonnements Azure pour utiliser une période de rétention obligatoire](#register-azure-subscriptions-to-use-a-mandatory-retention-period)
 
-  L’inscription peut prendre entre 1 et 5 jours ou moins.
+  Ce processus d’inscription prendra cinq jours ou jours ou jours.
 
 - [Créer un coffre de clés Azure premium dans chaque abonnement](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -111,7 +111,7 @@ Pour soumettre une offre d’activation de la clé client, effectuer les étapes
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Inscrire des abonnements Azure pour utiliser une période de rétention obligatoire
 
-La perte temporaire ou permanente des clés de chiffrement racine peut perturber ou même catastrophique le fonctionnement du service et entraîner la perte de données. Pour cette raison, les ressources utilisées avec la clé client nécessitent une protection forte. Toutes les ressources Azure utilisées avec la clé client offrent des mécanismes de protection au-delà de la configuration par défaut. Vous pouvez baliser ou inscrire des abonnements Azure pour une *période de rétention obligatoire.* Une période de rétention obligatoire empêche l’annulation immédiate et irrévocable de votre abonnement Azure. Les étapes requises pour inscrire des abonnements Azure pour une période de rétention obligatoire nécessitent une collaboration avec l Microsoft 365 de rétention. Ce processus peut prendre entre un et cinq jours ou moins. Auparavant, la période de rétention obligatoire était parfois appelée « Ne pas annuler ».
+La perte temporaire ou permanente des clés de chiffrement racine peut perturber ou même catastrophique le fonctionnement du service et entraîner la perte de données. Pour cette raison, les ressources utilisées avec la clé client nécessitent une protection forte. Toutes les ressources Azure utilisées avec la clé client offrent des mécanismes de protection au-delà de la configuration par défaut. Vous pouvez baliser ou inscrire des abonnements Azure pour une *période de rétention obligatoire.* Une période de rétention obligatoire empêche l’annulation immédiate et irrévocable de votre abonnement Azure. Les étapes requises pour inscrire des abonnements Azure pour une période de rétention obligatoire nécessitent une collaboration avec l Microsoft 365 de rétention. Ce processus prendra cinq jours ou jours ou jours. Auparavant, la période de rétention obligatoire était parfois appelée « Ne pas annuler ».
   
 Avant de contacter l’équipe Microsoft 365, vous devez suivre les étapes suivantes pour chaque abonnement Azure que vous utilisez avec la clé client. Assurez-vous que le module [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) est installé avant de commencer.
   
@@ -132,13 +132,13 @@ Avant de contacter l’équipe Microsoft 365, vous devez suivre les étapes suiv
 
    - Pour permettre à la clé client d’affecter des PED pour chiffrer le contenu sur plusieurs charges de travail Microsoft 365 (Exchange Online, Teams, MIP EDM) pour tous les utilisateurs du client, contactez [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
-- Incluez les informations suivantes dans votre courrier électronique :
+   - Incluez les informations suivantes dans votre courrier électronique :
 
-   **Objet**: Clé client pour \<*Your tenant's fully qualified domain name*\>
+     **Objet**: Clé client pour \<*Your tenant's fully qualified domain name*\>
 
-   **Corps**: incluez les ID d’abonnement pour lesquels vous souhaitez terminer la période de rétention obligatoire et la sortie de Get-AzProviderFeature pour chaque abonnement.
+     **Corps**: incluez les ID d’abonnement pour lesquels vous souhaitez terminer la période de rétention obligatoire et la sortie de Get-AzProviderFeature pour chaque abonnement.
 
-   Le contrat de niveau de service (SLA) pour la réalisation de ce processus est de cinq jours ou jours, une fois que Microsoft a été averti (et vérifié) que vous avez inscrit vos abonnements pour utiliser une période de rétention obligatoire.
+     Le contrat de niveau de service (SLA) pour la réalisation de ce processus est de cinq jours ou jours, une fois que Microsoft a été averti (et vérifié) que vous avez inscrit vos abonnements pour utiliser une période de rétention obligatoire.
 
 4. Une fois que vous recevez une notification de Microsoft vous avertissant que l’inscription est terminée, vérifiez l’état de votre inscription en exécutant la Get-AzProviderFeature suivante. Si elle est vérifiée, la commande Get-AzProviderFeature renvoie la valeur **Registered** pour la **propriété Registration State.** Terminez cette étape pour chaque abonnement.
 
@@ -195,7 +195,7 @@ Vous devez définir trois ensembles distincts d’autorisations pour chaque coff
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
@@ -205,7 +205,7 @@ Vous devez définir trois ensembles distincts d’autorisations pour chaque coff
 
 - **Les autorisations** pour Microsoft 365 applications pour chaque coffre de clés que vous utilisez pour la clé client, vous devez donner wrapKey, unwrapKey et obtenir des autorisations pour le principal de service Microsoft 365 correspondant. 
 
-Pour accorder l’autorisation Microsoft 365 principal de service, exécutez la cmdlet **Set-AzKeyVaultAccessPolicy** à l’aide de la syntaxe suivante :
+  Pour accorder l’autorisation Microsoft 365 principal de service, exécutez la cmdlet **Set-AzKeyVaultAccessPolicy** à l’aide de la syntaxe suivante :
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -320,7 +320,7 @@ Le fichier de sortie résultant de cette cmdlet est chiffré et ne peut pas êtr
 > [!TIP]
 > Pour le fichier de sortie, choisissez une combinaison de votre nom de coffre-fort et de votre nom de clé. Cela rend le nom de fichier auto-décrivant. Cela permet également de s’assurer que les noms de fichiers de sauvegarde ne sont pas en conflit.
   
-Par exemple :
+Par exemple :
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -OutputFile Contoso-CK-EX-NA-VaultA1-Key001-Backup-20170802.backup

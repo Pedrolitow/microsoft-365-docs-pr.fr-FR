@@ -9,17 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- Adm_TOC
+ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 description: Inviter des utilisateurs à rejoindre Microsoft 365 Business Standard organisation
-ms.openlocfilehash: 8b344ee324063dd2694c04e25a4e8549b987ba2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e3fa00edd87f98dd67159e4fa6f7c9c3ba916876
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203640"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776619"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Inviter des utilisateurs à Microsoft 365 Business Standard (administrateur)
 
@@ -48,7 +47,7 @@ Assurez-vous que vous êtes déjà inscrit à [Microsoft 365 Business Standard](
 
 Suivez vos utilisateurs et assurez-vous qu’ils ont reçu l’invitation par courrier électronique que vous avez envoyée concernant le partage de Microsoft 365 Business Standard abonnement.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>J’ai partagé une invitation par courrier électronique, mais l’utilisateur n’a pas reçu l’e-mail ?
 
@@ -84,7 +83,7 @@ En fonction de la façon dont vous et d’autres utilisateurs enregistrez des do
 > [!NOTE]
 > Une fois que vous avez attaché un domaine et que vous et vos utilisateurs avez utilisé des comptes d’entreprise pour enregistrer des données dans le cloud Microsoft, vous pouvez effectuer des demandes de la part de tous les utilisateurs en suivant les instructions de la rubrique [Office 365 Data Subject Requests for the GDPR and CCPA.](/compliance/regulatory/gdpr-dsr-office365)
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Configurer Microsoft 365 Business Standard](../setup/setup-business-standard.md)
 

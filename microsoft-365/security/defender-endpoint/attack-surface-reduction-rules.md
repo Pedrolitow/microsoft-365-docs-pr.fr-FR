@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5fdabb81541de9cec5b35641d25c6c10098015ca
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 3a336e1b8c8fe9c8a15925a3c28d7861c6e4bb10
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490140"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59776547"
 ---
 # <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
 
@@ -99,7 +99,7 @@ Les liens vers des informations sur les versions du système de gestion de la co
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquer l’utilisation abusive des pilotes signés vulnérables exploités
 
-Cette règle empêche une application d’écrire un pilote signé vulnérable sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à une compromission du système.
+Cette règle empêche une application d’écrire un pilote signé vulnérable sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à la compromission du système.
 
 La règle bloquer l’utilisation abusive des pilotes **signés vulnérables exploités** ne bloque pas le chargement d’un pilote déjà existant sur le système.
 
@@ -109,7 +109,7 @@ La règle bloquer l’utilisation abusive des pilotes **signés vulnérables exp
 >
 > Vous pouvez également configurer cette règle à [l’aide de PowerShell.](enable-attack-surface-reduction.md#powershell)
 >
-> Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse.](https://www.microsoft.com/wdsi/driversubmission)
+> Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
 Nom Intune : `Block abuse of exploited vulnerable signed drivers`
 
@@ -140,7 +140,7 @@ Type d’action de recherche avancée :
 
 Cette règle empêche Office applications de créer des processus enfants. Office applications incluent Word, Excel, PowerPoint, OneNote et Access.
 
-La création de processus enfants malveillants est une stratégie anti-programme malveillant courante. Les programmes malveillants qui utilisent Office comme vecteur exécutent souvent des macros VBA et exploitent du code pour télécharger et essayer d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins médicales ; par exemple, la création d’une invite de commandes ou l’utilisation de PowerShell pour configurer les paramètres de Registre.
+La création de processus enfants malveillants est une stratégie anti-programme malveillant courante. Les programmes malveillants qui utilisent Office comme vecteur exécutent souvent des macros VBA et exploitent du code pour télécharger et essayer d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins non médicales ; par exemple, la création d’une invite de commandes ou l’utilisation de PowerShell pour configurer les paramètres de Registre.
 
 Nom Intune : `Office apps launching child processes`
 

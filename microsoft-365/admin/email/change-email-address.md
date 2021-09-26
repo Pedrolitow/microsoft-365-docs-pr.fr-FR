@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
@@ -26,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Modifiez votre adresse e-mail en une adresse de messagerie conviviale comme tom@fourthcoffee.com en achetant un nom de domaine et en l’ajoutant à Microsoft 365.
-ms.openlocfilehash: 599ca47a9df2dc7b022ff614e3f78b23defdd96e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f14bc47950c18aeccdc0c73fbee498be6bf32f3f
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59774824"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
@@ -92,7 +91,7 @@ Vous devez être un Administrateur général pour procéder à ces étapes.
 > [!NOTE]
 > Si vous n’utilisez pas de licence Exchange, vous ne pouvez pas utiliser le domaine pour envoyer ou recevoir des courriers électroniques du client Microsoft 365 client.
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Acheter un domaine personnalisé à l’Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
 [Gérer les domaines](../get-help-with-domains/index.yml) (page de liens)\

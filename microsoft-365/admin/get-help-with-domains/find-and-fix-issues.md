@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -25,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Apprenez à suivre les problèmes que vous avez à résoudre lors de la configuration d’un domaine personnalisé en vous assurez que les enregistrements DNS sont correctement configurer.
-ms.openlocfilehash: 5dd84e829ed1cd8ea1cc9738ac88eaabcba52648
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 290ff62ada6543c00f69d112a81b57e6b276524e
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176428"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775443"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
@@ -72,14 +71,14 @@ Si vous avez défini votre enregistrement MX et les autres enregistrements DNS c
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Tout le monde a basculé vers Microsoft 365 et vous vouliez uniquement que votre courrier électronique bascule ?
 <a name="BKMK_EmailSwitched"> </a>
 
-Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou par Microsoft 365) pour pointer vers Microsoft 365, et tous les messages électroniques envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX.
+Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou par Microsoft 365) pour pointer vers Microsoft 365, et tous les messages électroniques envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX.
   
 Que se passe-t-il si vous ne souhaitez pas déplacer le courrier électronique de tous les Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de](../setup/domains-faq.yml)messagerie à la place.
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Vous ne pouvez pas confirmer l’état d’un compte à but non lucratif ou scolaire ?
 <a name="BKMK_validateAcct"> </a>
 
-Il existe quelques scénarios où vous devez simplement vérifier le domaine de votre organisation et ne pas configurer de services. Par exemple, pour prouver à Microsoft 365 que votre organisation est éligible pour un abonnement scolaire.
+Il existe quelques scénarios où vous devez simplement vérifier le domaine de votre organisation et ne pas configurer de services. Par exemple, pour prouver aux Microsoft 365 que votre organisation est éligible pour un abonnement scolaire.
   
 Consultez les instructions dans Vérifier votre domaine Microsoft 365 pour prouver la [propriété,](../setup/domains-faq.yml) l’état des organisations à but non lucratif ou de l’éducation, ou pour activer Yammer pour vous assurer que vous avez effectué toutes les étapes requises. Il est légèrement différent pour chaque situation. 
   
@@ -98,7 +97,7 @@ Si vous avez corrigé tous les problèmes DNS et que vous rencontrez toujours de
     
 - Vous ne pouvez pas mettre à jour votre enregistrement A ou CNAME pour qu’il pointe vers votre site web : mettez à jour les enregistrements [DNS](../setup/add-domain.md) personnalisés dans Microsoft 365
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Résolution des problèmes : données d’audit sur la modification de domaine vérifiée](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (article)\
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)

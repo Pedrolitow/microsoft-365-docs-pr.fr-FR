@@ -13,18 +13,17 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de fidélisation pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ?
-ms.openlocfilehash: fdcae8f3879beea5ba7b80f34378b2a3b1452fcb
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f3faab08138197535f9305fddef2a9db3d0b6bb9
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497619"
+ms.locfileid: "59772757"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 

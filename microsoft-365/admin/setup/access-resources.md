@@ -8,7 +8,9 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- Adm_TOC
 localization_priority: Normal
 ms.custom:
 - Core_O365Admin_Migration
@@ -22,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un Azure Active Directory joint Windows 10 appareil.
-ms.openlocfilehash: 2c0bb33fbfc99cf3683a53d8aa4c98fc70fb9253
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5895223fedfbd1791be35455a1909ddc5f697c80
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178555"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786195"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources sur site à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 

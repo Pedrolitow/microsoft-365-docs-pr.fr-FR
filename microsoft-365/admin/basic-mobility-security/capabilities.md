@@ -12,23 +12,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer vos appareils mobiles.
-ms.openlocfilehash: bd400f81b3d125b6d6100ecf2ed06f536106d1f0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2a8661766aa5d5ae7f257cc7c76d67949d9cffe
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176907"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773942"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
-La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles tels que les iPhone, les iPad, les Android et les téléphones Windows utilisés par les utilisateurs sous licence Microsoft 365 au sein de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui peuvent vous aider à contrôler l’accès au courrier électronique et aux documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications mobiles pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
+La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles tels que les iPhone, iPad, Android et Windows Phone utilisés par les utilisateurs sous licence Microsoft 365 au sein de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui peuvent vous aider à contrôler l’accès au courrier électronique et aux documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications mobiles pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
 
 ## <a name="supported-devices"></a>Appareils pris en charge
 
@@ -50,7 +49,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base pour sécuriser et g�
 
 <sup>2</sup> Le contrôle d’Windows 10 nécessite un abonnement qui inclut Azure AD Premium et l’appareil doit être joint à Azure Active Directory.
 
-<sup>3</sup> Après juin 2020, les versions d’Android ultérieures à 9 ne peuvent plus gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
+<sup>3</sup> Après juin 2020, les versions d’Android ultérieures à 9 ne peuvent pas gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
 
 > [!NOTE]
 > Les appareils déjà inscrits avec des versions antérieures du système d’exploitation continuent de fonctionner même si les fonctionnalités peuvent changer sans préavis.
@@ -93,7 +92,7 @@ Les paramètres qui peuvent empêcher les utilisateurs d’accéder Microsoft 36
 
 - Profil de messagerie géré
 
-Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L’utilisateur se signe à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. Ils ne peuvent pas accéder aux Microsoft 365 de l’application tant que leur appareil n’est pas conforme au paramètre de sécurité.
+Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L’utilisateur se signe à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. Ils ne peuvent pas accéder Microsoft 365 ressources de l’application tant que leur appareil n’est pas conforme au paramètre de sécurité.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Message de conformité de sécurité et de mobilité de base.":::
 
@@ -128,7 +127,7 @@ Les sections suivantes listent les paramètres de stratégie que vous pouvez uti
 
 ## <a name="managed-email-profile-option"></a>Option de profil de messagerie géré
 
-L’option suivante peut empêcher les utilisateurs d’accéder Microsoft 365 courrier électronique s’ils utilisent un profil de messagerie créé manuellement. Les utilisateurs d’appareils iOS doivent supprimer leur profil de messagerie créé manuellement pour pouvoir accéder à leur messagerie. Une fois le profil supprimé, un nouveau profil est créé automatiquement sur l’appareil. Pour obtenir des instructions sur la façon dont les utilisateurs finaux peuvent obtenir la conformité, voir Un compte de [messagerie existant a été trouvé.](/intune-user-help/existing-company-email-account-found)
+L’option suivante peut empêcher les utilisateurs d’accéder à Microsoft 365 courrier électronique s’ils utilisent un profil de messagerie créé manuellement. Les utilisateurs d’appareils iOS doivent supprimer leur profil de messagerie créé manuellement pour pouvoir accéder à leur messagerie. Une fois le profil supprimé, un nouveau profil est créé automatiquement sur l’appareil. Pour obtenir des instructions sur la façon dont les utilisateurs finaux peuvent obtenir la conformité, voir Un compte de [messagerie existant a été trouvé.](/intune-user-help/existing-company-email-account-found)
 
 |**Nom du paramètre**|**iOS 7.1 et les ultérieures**|**Android 5 et version ultérieure**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -208,7 +207,7 @@ Les paramètres suivants sont pris en charge pour Windows 10 qui sont inscrits e
 - Conserver l’historique des mots de passe et empêcher leur réutilisation
 
 > [!NOTE]
-> Les paramètres suivants régulant les mots de passe contrôlent uniquement les comptes Windows locaux. Windows comptes fournis par le biais de l’adhésion à un domaine ou Azure Active Directory ne sont pas affectés par ces paramètres.
+> Les paramètres suivants régulant les mots de passe contrôlent uniquement les comptes Windows locaux. Windows comptes fournis par le biais d’un domaine ou d’un Azure Active Directory ne sont pas affectés par ces paramètres.
 
 ### <a name="system-settings"></a>Paramètres système
 
@@ -240,7 +239,7 @@ Si un appareil est perdu ou volé, vous pouvez supprimer des données organisati
 
 Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Vue d’ensemble de basic Mobility and Security for Microsoft 365](overview.md) (article)\
 [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)

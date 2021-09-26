@@ -11,16 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et gérer les menaces détectées par les Antivirus Microsoft Defender sur vos Windows 10 mobiles.
-ms.openlocfilehash: d1a611143af1f438989a549133c6f7c1e7502357
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe03b7a7a72b3908b19da71544853a671fc90f52
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178627"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59772781"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Examiner les menaces détectées et prendre des mesures
 
@@ -77,8 +76,8 @@ Lorsque vous affichez des détails sur des menaces ou des appareils spécifiques
 
 | Opération | Description |
 |--|--|
-| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
-| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
+| Configurer la protection | Vos stratégies de protection contre les menaces doivent être configurées. Sélectionnez le lien vers la page de configuration de votre stratégie.<br><br>Vous avez besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
+| Mettre à jour une stratégie | Vos stratégies de protection antivirus et en temps réel doivent être mises à jour ou configurées. Sélectionnez le lien pour aller à la page de configuration de stratégie.<br><br>Vous avez besoin d’aide ? Voir [Gérer la sécurité des appareils avec les stratégies de sécurité des](/mem/intune/protect/endpoint-security-policy)points de terminaison dans Microsoft Intune . |
 | Exécuter une analyse rapide | Démarre une analyse antivirus rapide sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, tels que les clés de Registre et les dossiers Windows de démarrage. |
 | Exécuter une analyse complète | Démarre une analyse antivirus complète sur l’appareil, en se concentrant sur les emplacements courants où les programmes malveillants peuvent être enregistrés, y compris tous les fichiers et dossiers de l’appareil. Les résultats sont envoyés [à Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Mettre à jour un antivirus | Nécessite que l’appareil obtienne des mises à jour de [l’intelligence de sécurité](https://go.microsoft.com/fwlink/?linkid=2149926) pour la protection antivirus et anti-programme malveillant. |

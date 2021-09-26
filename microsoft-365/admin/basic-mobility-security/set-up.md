@@ -12,19 +12,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Configurer la mobilité et la sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en faisant des actions telles que la wiping à distance d’un appareil.
-ms.openlocfilehash: 47f2f393c3d7147bb1444e8cad32d2d6a0d31133
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07f8283353432b06aea67ba9cf8bbc505d6c3012
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176820"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59775131"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
@@ -95,7 +94,7 @@ L’authentification multifacteur permet de sécuriser la Microsoft 365 pour l�
 
 Pour savoir comment activer l’authentification multifacteur dans le portail Azure AD, voir [Configurer l’authentification multifacteur.](../security-and-compliance/set-up-multi-factor-authentication.md)
 
-Après avoir installé l’ation MFA, revenir au **** Centre de sécurité & conformité et accédez aux stratégies de périphériques de gestion des appareils de protection contre la perte de données pour passer à   >     >  ****   l’étape suivante.
+Après avoir installé l’ation MFA, revenir au **** Centre de sécurité & conformité et accédez aux stratégies de périphérique de gestion des appareils de protection contre la perte de données pour passer à   >     >  ****   l’étape suivante.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Étape 4 : (Recommandé) Gérer les stratégies de sécurité des appareils
 
@@ -128,7 +127,7 @@ Une fois que vous avez créé et déployé une stratégie de gestion des apparei
 
 Les utilisateurs avec des appareils Android ou iOS doivent installer l’application Portail d'entreprise dans le cadre du processus d’inscription.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)\
 [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)

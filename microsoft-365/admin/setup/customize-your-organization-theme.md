@@ -12,7 +12,6 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f90f38546cce24d5bef11d7fb0ab7bc88a824bca
+ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178523"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59773218"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -104,7 +103,7 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Capture d’écran : onglet Couleurs affichant les couleurs de thème par défaut pour votre organisation":::
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 
@@ -149,7 +148,7 @@ Le coefficient de contraste recommandé entre le texte, la couleur de l’icône
 
 Tout thème apparaît dans la barre de navigation supérieure pour tous les membres de l’organisation dans le cadre de l’en-tête Microsoft 365 suite.  
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter des vignettes personnalisées à la page Mes applications et](../manage/customize-the-app-launcher.md) au lanceur d’applications (article)\
 [Vue d’ensemble Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)

@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
@@ -20,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme fournisseur de solutions Cloud (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: 5dd2e17685746859768a14d61537871a75fe6698
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae433609e13aa96344aacd2ba1944efa54b42cf6
+ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178515"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59786196"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel perpétuelle
 
@@ -33,7 +34,7 @@ Cet article explique comment télécharger des clés de licence logicielle et de
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global pour suivre les étapes de cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
+Vous devez être un administrateur global pour suivre les étapes de cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../add-users/about-admin-roles.md).
 
 ## <a name="download-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel
 
