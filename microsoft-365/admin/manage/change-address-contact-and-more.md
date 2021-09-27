@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
 ms.date: 03/30/2021
-ms.openlocfilehash: a7a2b8ee10c37b315e14504eae67672c34f79f08
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b96c1e98b8ce2e15f8674f93e7dd96a0b2256b07
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176347"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933482"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
@@ -37,7 +38,7 @@ Pour modifier l’adresse associée à votre facture ou abonnement, consultez Mo
 ## <a name="edit-organization-information"></a>Modifier les informations de l'organisation
 
 > [!IMPORTANT]
-> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine quels services sont disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
+> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine les services disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
 
 Pour modifier d’autres informations sur la page de profil de votre entreprise :
   

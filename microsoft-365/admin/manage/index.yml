@@ -11,12 +11,13 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 674e1a02a6f9e7db0fa08444e7b8b0b72badcb9f
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: 4ee039b2374d913b6c0f790051ed08ca2b1e8f38
+  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59176324"
+  ms.lasthandoff: 09/27/2021
+  ms.locfileid: "59933878"
 landingContent:
 - title: Surveiller l’état de notre service
   linkLists:

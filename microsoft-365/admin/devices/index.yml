@@ -11,12 +11,13 @@ metadata:
   ms.date: 09/09/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 3e3186631a460a588cc2ebe2f15abf579a191ac8
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: 20905c24e4f06984ba36f28157418f0eff8e2a80
+  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59176683"
+  ms.lasthandoff: 09/27/2021
+  ms.locfileid: "59933758"
 landingContent:
 - title: Différentes méthodes MDM et MAM
   linkLists:

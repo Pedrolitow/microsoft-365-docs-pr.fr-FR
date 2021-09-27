@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 prise en charge de l’intégration avec le guide de configuration ServiceNow
+title: Guide de configuration Microsoft 365 prise en charge de l’intégration avec ServiceNow
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -11,19 +11,20 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guide de configuration et d’installation d’applications certifiées étendues pour ServiceNow.
-ms.openlocfilehash: 01e8e929145d8941e27aab9d02c23a422b807eb9
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: d812866ce2310b25b857b701be7d29d6d7ea5f22
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356212"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933638"
 ---
-# <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Microsoft 365 prise en charge de l’intégration avec le guide de configuration ServiceNow
+# <a name="microsoft-365-support-integration-with-servicenow-configuration-guide"></a>Guide de configuration Microsoft 365 prise en charge de l’intégration avec ServiceNow
 
 [Vue d’ensemble](#overview) 
 
@@ -719,7 +720,7 @@ Voici les étapes à suivre pour tester la configuration de la prise en charge M
 |2|Sélectionnez **les solutions recommandées par Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
 |3|Sélectionnez **les solutions recommandées par Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
 |4 |Tapez le problème dans la zone de recherche et sélectionnez les **solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
-|5 |Tapez le problème dans la zone de recherche et sélectionnez les **solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
+|5|Tapez le problème dans la zone de recherche et sélectionnez les **solutions recommandées** par Microsoft, mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape finale de mise en place de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
 |6 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui d’effectuer les étapes de configuration de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
 |7 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « Veuillez contacter votre administrateur ServiceNow et demandez-lui de terminer l’étape de mise en place finale de l’application ».|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|
 |8 |Sélectionnez **Contacter le support Microsoft,** mais obtenez l’erreur « {EmailAddress} n’est pas un compte d’administrateur Microsoft 365 valide. Vous devez Microsoft 365'administrateur pour ouvrir une demande de service. Dans l’application, lier le compte d’administrateur. »|Vérifiez le message d’erreur en haut du formulaire et **journaux système** à  >   l’x_mioms_m365_assit|

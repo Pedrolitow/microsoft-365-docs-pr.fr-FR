@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9999fdea57465120040cb04a497f1510bcb988b
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 18f7436c974ab9b976980861ae93bd4b3ea1fc2e
+ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483506"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934688"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous ar
 
 Les alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
-Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste pour que vous la voyez en premier. 
+Par défaut, la file d’attente des alertes du portail Microsoft 365 Defender affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste, ce qui vous permet de la voir en premier. 
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
@@ -61,6 +61,30 @@ Vous pouvez filtrer les alertes en fonction de ces critères :
 - Balises
 - Stratégie
 - Ressources impactées
+
+## <a name="required-roles-for-defender-for-office-365-alerts"></a>Rôles requis pour Defender pour les alertes Office 365 de sécurité
+
+Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender pour Office 365 alertes :
+
+- Pour Azure Active Directory rôles globaux (Azure AD) :
+
+   - Administrateur général
+
+   - Administrateur de sécurité
+
+   - Opérateur de sécurité
+
+   - Lecteur général
+
+   - Lecteur de sécurité
+
+- Office 365 Groupes de rôles de sécurité & conformité
+
+   - Administrateur de conformité
+
+   - Gestion de l’organisation 
+
+- Un [rôle personnalisé](custom-roles.md)
 
 ## <a name="analyze-an-alert"></a>Analyser une alerte
 

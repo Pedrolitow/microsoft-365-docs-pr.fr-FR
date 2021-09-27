@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Découvrez les différents états d’appareil dans la liste Actions de l’appareil dans la page d’accueil Administrateur Microsoft 365 entreprise.
-ms.openlocfilehash: c33c6fc06cb0707af28c43be4ea5ab427b77900b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 60e21081b9da3825756f14d4ae8b095419f7f4cc
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178996"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933542"
 ---
 # <a name="device-states"></a>États des appareils
 

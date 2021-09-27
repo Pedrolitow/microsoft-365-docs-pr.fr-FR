@@ -11,12 +11,13 @@ metadata:
   ms.date: 03/25/2021
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 38cf5ad6b551763b5ffc6520617b393b07f2646e
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: 00be0892847d2bfafb135f5fb07c0814f62b6993
+  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59176420"
+  ms.lasthandoff: 09/27/2021
+  ms.locfileid: "59933530"
 landingContent:
 - title: Gérer les domaines
   linkLists:

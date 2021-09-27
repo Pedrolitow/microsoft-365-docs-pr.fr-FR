@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - MiniMaven
 - MSB365
@@ -22,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer Microsoft Defender pour Office 365 et protéger les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: f7e82497baff1f14d1a1ff2cfc1d0e05c38700be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 92b4ca45e03995fb3586f1abce9301de7ec33570
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178659"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934046"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -81,7 +82,7 @@ Pour créer une règle de transport de messagerie :
 
 6. Sélectionnez **Enregistrer**.
 
-|Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
+|Paramètre|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
 |Nom|Règle anti-ransomware : avertir les utilisateurs|
 |Appliquez cette règle si . . .|N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .|
@@ -89,7 +90,7 @@ Pour créer une règle de transport de messagerie :
 |Faites les choses suivantes . . .|Avertir le destinataire avec un message|
 |Fournir le texte du message|N’ouvrez pas ces types de fichiers à partir de personnes que vous ne connaissez pas, car elles peuvent contenir des macros contenant du code malveillant.|
 
-Pour plus d’informations, consultez :
+Pour plus d'informations, voir :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -113,7 +114,7 @@ Pour créer une règle de transport de messagerie, regardez [cette courte vidéo
 
 6. Sélectionnez **Enregistrer**.
 
-|Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
+|Paramètre|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|

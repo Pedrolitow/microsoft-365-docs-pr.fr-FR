@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment planifier une réunion Teams avec des utilisateurs externes.
-ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3e1c856d69ecc7f8935925f46c46c69235ee7c99
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181690"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934214"
 ---
 # <a name="schedule-a-teams-meeting-with-external-users"></a>Planifier une réunion Teams avec des utilisateurs externes
 

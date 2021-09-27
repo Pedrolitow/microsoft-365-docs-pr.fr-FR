@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une équipe avec des invités dans Microsoft Teams.
-ms.openlocfilehash: a6d30684bed3a750a11e311f4e47d88940adbd0f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 47af1a44f00490e66beecb99f5a9b62367810cbf
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180587"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934238"
 ---
 # <a name="create-a-team-with-guests"></a>Créer une équipe avec des invités
 

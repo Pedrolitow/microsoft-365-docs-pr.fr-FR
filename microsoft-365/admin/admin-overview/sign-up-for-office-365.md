@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -26,12 +27,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 8c9598215b5f5da7b4a62ca89bbc0fa5a94fe12d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6347b4775bd018a72ac06d0eb9c9c9f7ee5d2306
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176924"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933710"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
@@ -109,7 +110,7 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
     > [!NOTE]
-    > L’adresse e-mail que vous entrez ici est différente de votre adresse Microsoft 365 de messagerie électronique (votre nom de logo, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
+    > L’adresse de messagerie que vous entrez ici est différente de votre adresse Microsoft 365 de messagerie électronique (votre nom de logo, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
   
 - **Nom de la signature (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse Microsoft 365 initiale, juste pour vous aider à démarrer rapidement.
 

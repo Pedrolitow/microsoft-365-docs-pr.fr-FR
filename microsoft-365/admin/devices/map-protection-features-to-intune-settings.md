@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Découvrez comment les fonctionnalités de protection Microsoft 365 Business Premium aux paramètres Intune. L’abonnement vous fournit une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: 9a6dcf014e009389e49860fa96486c264c22f501
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c12907d5c50499a987e78403e25ace7bc89f4c79
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176667"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933734"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection dans Microsoft 365 Business Premium aux paramètres Intune
 
@@ -105,6 +106,6 @@ Pour rechercher le paramètre Intune, connectez-vous avec vos informations d’i
 |Désactiver l'écran d'un appareil resté inactif pendant (minutes)  <br/> |Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil (minutes)  <br/> |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  <br/> |Stratégie URI personnalisée  <br/> |
 |Autoriser les utilisateurs à accéder à Cortana  <br/> |**Général** \> **Cortana** est définie pour **bloquer** Intune lorsqu’elle est **Microsoft 365 Business Premium.**  <br/> |
-|Autoriser les utilisateurs à recevoir des conseils de Windows et des annonces de Microsoft  <br/> |**Windows à la** une , tous bloqués s’ils sont Microsoft 365 Business Premium.   <br/> |
-|Maintenir les appareils Windows 10 à jour automatiquement  <br/> | Ce paramètre se trouve dans les mises à **jour Microsoft Intune** service - Windows 10 mettre à jour les anneaux, choisir la stratégie de mise à jour pour \> Windows 10 **appareils,** puis **Propriétés**  \> **Paramètres**.  <br/>  Lorsque la Microsoft 365 Business Premium est définie sur **On,** tous les paramètres suivants sont définies :  <br/> **La branche** Service est définie sur **CB** (CBB) lorsqu’elle est désactivée dans Microsoft 365 Business Premium).  <br/> **Mises à jour de produits Microsoft** est défini sur **Autoriser**.  <br/> **Pilotes Windows** est défini sur **Autoriser**.  <br/> **Comportement des mises à jour automatiques** est défini sur **Installation automatique à l'heure de la maintenance** avec ce qui suit :  <br/> **Démarrage après ces heures** est défini sur **06:00**.  <br/> **Fin des heures actives** est défini sur **22:00**.  <br/> **Période de report des mises à jour qualité (jours)** est défini sur **0**.  <br/> **Période de report des mises à jour des fonctionnalités (jours)** est défini sur **0**.  <br/> **Mode de téléchargement de l'optimisation de la distribution** est défini sur **HTTP fusionné avec un appairage derrière le même NAT**.  <br/> |
+|Autoriser les utilisateurs à recevoir des conseils de Windows et des annonces de Microsoft  <br/> |**Windows à la** une , tous bloqués si cette valeur est **définie sur Microsoft 365 Business Premium.**  <br/> |
+|Maintenir les appareils Windows 10 à jour automatiquement  <br/> | Ce paramètre se trouve dans les mises à **jour Microsoft Intune** service - Windows 10 mettre à jour les anneaux, choisir la stratégie de mise à jour pour \> Windows 10 **appareils,** puis **Propriétés**  \> **Paramètres**.  <br/>  Lorsque la Microsoft 365 Business Premium est définie sur **On,** tous les paramètres suivants sont définies :  <br/> **La branche** service est définie sur **CB** (CBB) lorsqu’elle est désactivée dans Microsoft 365 Business Premium).  <br/> **Mises à jour de produits Microsoft** est défini sur **Autoriser**.  <br/> **Pilotes Windows** est défini sur **Autoriser**.  <br/> **Comportement des mises à jour automatiques** est défini sur **Installation automatique à l'heure de la maintenance** avec ce qui suit :  <br/> **Démarrage après ces heures** est défini sur **06:00**.  <br/> **Fin des heures actives** est défini sur **22:00**.  <br/> **Période de report des mises à jour qualité (jours)** est défini sur **0**.  <br/> **Période de report des mises à jour des fonctionnalités (jours)** est défini sur **0**.  <br/> **Mode de téléchargement de l'optimisation de la distribution** est défini sur **HTTP fusionné avec un appairage derrière le même NAT**.  <br/> |
 |||

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: daedf3ebbf88c70cf5b3889a9d7560800ad16f5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81be4d293398b264dfa72bbca0eb74b0429add71
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222660"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59934118"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
@@ -44,7 +44,7 @@ Cet article fournit des solutions pour vous aider à résoudre les problèmes d'
 
 **Échec de la signature : erreur** *inattendue, essayez ultérieurement*
 
-![Image de l’erreur d’échec de la signature. Erreur inattendue.](images/f9c3bad127d636c1f150d79814f35d4c.png)
+:::image type="content" alt-text="Image de l’erreur d’échec de la signature. Erreur inattendue." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 
@@ -62,7 +62,7 @@ Installer la dernière version et [les](https://play.google.com/store/apps/detai
 
 **Échec de la signature : licence** non *valide, contactez l’administrateur*
 
-![Image de l’échec de la signature. Contactez l’administrateur.](images/920e433f440fa1d3d298e6a2a43d4811.png)
+:::image type="content" alt-text="Image de l’échec de la connectez-vous. Contactez l’administrateur." source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Message : licence** *non valide, contactez l’administrateur*
 
@@ -140,3 +140,29 @@ Les utilisateurs peuvent suivre ces étapes pour activer les mêmes autorisation
    ![Recherchez « Microsoft Defender Endpoint » et sélectionnez « Ne pas optimiser ».](images/select-dont-optimise.png)
 
 Revenir à l’écran d’intégration du point de terminaison Microsoft Defender, sélectionnez Autoriser **et** vous serez redirigé vers l’écran du tableau de bord.
+
+## <a name="send-in-app-feedback"></a>Envoyer des commentaires dans l’application
+
+Si un utilisateur est confronté à un problème qui n’est pas déjà résolu dans les sections **ci-dessus** ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données **de diagnostic**. Notre équipe peut ensuite examiner les journaux pour fournir la solution appropriée. Les utilisateurs peuvent suivre les étapes suivantes pour faire de même :
+
+1.  Ouvrez **l’application MDE** sur votre appareil et cliquez sur l’icône **de profil** dans le coin supérieur gauche.
+
+    :::image type="content" alt-text="Cliquez sur l’icône de profil." source="images/select-profile-icon-1.jpg":::
+
+2.  Sélectionnez « Aide & commentaires ».
+
+    :::image type="content" alt-text="Sélectionnez l’aide et les commentaires." source="images/selecthelpandfeedback2.png":::
+
+3.  Sélectionnez « Envoyer des commentaires à Microsoft ».
+
+    :::image type="content" alt-text="Sélectionnez envoyer des commentaires à Microsoft." source="images/send-feedback-to-microsoft-3.jpg":::
+
+4.  Choisissez parmi les options données. Pour signaler un problème, sélectionnez « Je souhaite signaler un problème ».
+
+    :::image type="content" alt-text="Signalez un problème." source="images/report-issue-4.jpg":::
+
+5.  Fournissez des détails sur le problème auquel vous êtes confronté et vérifiez « Envoyer des données de diagnostic ». Nous vous recommandons de vérifier « Inclure votre adresse e-mail » afin que l’équipe puisse vous joindre avec une solution ou un suivi.
+
+    :::image type="content" alt-text="Ajoutez des détails et joignez des données de diagnostic." source="images/finalsubmit5.png":::
+
+6.  Cliquez sur « Envoyer » pour envoyer correctement les commentaires.

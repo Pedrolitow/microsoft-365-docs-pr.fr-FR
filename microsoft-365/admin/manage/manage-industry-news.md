@@ -11,25 +11,26 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: 0292668ad37020f9ca2049d7c011465bd7e28479
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: bde55ffbd9bef2f8eac7db1a4d200aeb58f32f89
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479548"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933506"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
 > [!NOTE] 
 > Bing actualités & les mises à jour du secteur sont disponibles uniquement pour en-US pour le moment.
 
-Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’Bing et de Microsoft Edge page nouvel onglet.
+Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et Microsoft Edge page nouvel onglet.
 
 ## <a name="what-your-users-will-see"></a>Ce que vos utilisateurs voient
 
@@ -47,23 +48,23 @@ Ils peuvent également consulter les actualités de l’entreprise, du secteur e
 
 ## <a name="news-settings"></a>Paramètres des actualités
 
-En tant qu’administrateur, vous contrôlez les paramètres des flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
+En tant qu’administrateur, vous contrôlez les paramètres de flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
 
 1. In the Centre d'administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 
 1. Dans le **panneau Actualités,** cliquez sur **l’onglet** Général.
 
-1. Dans la **liste Secteur,** sélectionnez les secteurs d’activité de votre organisation. Cela détermine les actualités générales qui apparaissent dans le flux d’actualités de votre organisation. Microsoft peut pré-sélectionner un secteur d’activité à l’aide des informations de votre compte. Vous pouvez supprimer ou ajouter des secteurs d’activité en mettant à jour la liste **Secteur.**
+1. Dans la **liste Secteur,** sélectionnez les secteurs d’activité de votre organisation. Cette information détermine les actualités générales qui apparaissent dans le flux d’actualités de votre organisation. Microsoft peut pré-sélectionner un secteur d’activité à l’aide des informations de votre compte. Vous pouvez supprimer ou ajouter des secteurs d’activité en mettant à jour la liste **Secteur.**
 
 1. Dans le **champ Rubriques,** entrez les rubriques dont vous souhaitez consulter les articles d’actualités. Vos utilisateurs ne peuvent pas modifier ces rubriques.
 
-1. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu. Par exemple, pour éviter que les articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le **champ Exclure du contenu.** Évitez d’inclure des termes généraux (le, il et, etc.) ; ils peuvent bloquer l’apparition de contenu pertinent dans vos flux d’actualités d’entreprise.
+1. Vous pouvez bloquer les articles contenant des mots clés dans le **champ Exclure du** contenu. Par exemple, pour éviter que des articles contenant le mot clé « # A0 » ne s’affichent dans le flux d’actualités, ajoutez le mot clé « # » dans le **champ Exclure du** contenu. Évitez d’inclure des termes généraux (le, il et, etc.) ; ils peuvent bloquer l’apparition de contenu pertinent dans vos flux d’actualités d’entreprise.
 
 1. Sélectionnez **Enregistrer**. L’apparition des modifications peut prendre jusqu’à 24 heures.
 
 ## <a name="industry-updates-in-email"></a>Mises à jour du secteur dans le courrier électronique
 
-Vous pouvez envoyer une mise à jour quotidienne du courrier électronique avec les actualités du secteur pertinentes dans les boîtes de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes du courrier électronique pour les utilisateurs :
+Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec les actualités du secteur pertinentes dans la boîte de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes du courrier électronique pour les utilisateurs :
 
 1. In the Centre d'administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
@@ -97,7 +98,7 @@ Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérie
 
 1. In the Centre d'administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. Dans le **panneau Actualités,** cliquez **sur Microsoft Edge page nouvel onglet.**
-3. Sélectionnez **Autoriser Office 365 contenu sur la page nouvel onglet.** Lorsque ce paramètre est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher des informations provenant de Office 365, notamment des fichiers recommandés et récents, ainsi que des sites SharePoint fréquemment utilisés et d’autres informations.
+3. Sélectionnez **Autoriser Office 365 contenu sur la page nouvel onglet.** Lorsqu’il est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher des informations provenant de Office 365, notamment des fichiers recommandés et récents, ainsi que des sites SharePoint fréquemment utilisés et d’autres informations.
 4. Sélectionnez **Afficher les informations de l’entreprise et les actualités du secteur sur la page nouvel onglet.** Des articles d’actualités sur votre organisation et votre secteur d’activité s’affichent pour les utilisateurs qui choisissent de consulter les articles sous leur nouvel onglet.
 
 ## <a name="related-articles"></a>Articles connexes

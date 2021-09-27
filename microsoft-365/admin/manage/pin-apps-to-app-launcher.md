@@ -10,16 +10,17 @@ ms.topic: article
 ms.collection:
 - Adm_O365
 - M365-subscription-management
+- Adm_TOC
 ms.service: o365-administration
 ms.custom: admindeeplinkMAC
 localization_priority: Normal
 description: En tant qu’administrateur général, vous pouvez épingler jusqu’à trois applications au lanceur d’applications de vos utilisateurs.
-ms.openlocfilehash: bbb41dfcb72849287bb9ce87ab2c9d250b1b4d99
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e9975b13f66f39abd61a238cb30463baa9ed34e
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178956"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933362"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Épingler des applications au lanceur d’applications de vos utilisateurs
 

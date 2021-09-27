@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -26,18 +27,18 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Découvrez comment vérifier que les paramètres Microsoft 365 protection des applications pour les entreprises ont pris effet sur les appareils Windows 10 utilisateurs.
-ms.openlocfilehash: 67608c2c4b8396bced350685f439cb15f6378e6a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c0d5ded2eeda022984f86c33429572fa4a8671bb
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176636"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933374"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Valider les paramètres de protection des appareils Windows 10 PC
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Vérifier que les Windows 10 d’appareil sont définies
 
-Une fois [les stratégies d’appareils](protection-settings-for-windows-10-pcs.md)définies, l’application de la stratégie sur les appareils des utilisateurs peut prendre jusqu’à quelques heures. Vous pouvez confirmer que les stratégies ont pris effet en regardant différents écrans Windows Paramètres sur les appareils des utilisateurs. Étant donné que les utilisateurs ne pourront pas modifier les paramètres Windows Update et Antivirus Windows Defender sur leurs appareils Windows 10, de nombreuses options seront grisées.
+Une fois [les stratégies d’appareils](protection-settings-for-windows-10-pcs.md)définies, l’application de la stratégie sur les appareils des utilisateurs peut prendre jusqu’à quelques heures. Vous pouvez vérifier que les stratégies ont pris effet en regardant différents écrans Windows Paramètres sur les appareils des utilisateurs. Étant donné que les utilisateurs ne pourront pas modifier les paramètres Windows Update et Antivirus Windows Defender sur leurs appareils Windows 10, de nombreuses options seront grisées.
   
 1. Go to **Paramètres** \> **Update &amp; security** \> **Windows Update** Restart \> **options** and confirm that all settings are grayed out. 
     
@@ -53,7 +54,7 @@ Une fois [les stratégies d’appareils](protection-settings-for-windows-10-pcs.
     
     ![Choisissez la manière dont les mises à jour sont remis page indique que les paramètres sont masqués ou gérés par votre organisation.](../../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Pour ouvrir le Centre de sécurité  Windows Defender, Paramètres mettre à jour la sécurité Windows Defender cliquez sur Ouvrir Windows Defender Paramètres de protection antivirus contre les menaces du Centre de \> **&amp;** \>  \>  \> **&amp;** \> **&amp; sécurité.** 
+4. Pour ouvrir le Centre de sécurité  Windows Defender, consultez la Paramètres De sécurité mise à jour Windows Defender cliquez sur Ouvrir le centre de sécurité Protection contre les virus et les paramètres de protection contre les \> **&amp;** \>  \>  \> **&amp;** \> **&amp; menaces du Centre de sécurité Windows Defender**. 
     
 5. Vérifiez que toutes les options sont grisées. 
     
