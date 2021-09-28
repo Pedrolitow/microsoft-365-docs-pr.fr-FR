@@ -19,12 +19,12 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b635c865901c01b32549fe51a71c795c47d6993c
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 6486059702875e4bf318d04da9be0249dc6cb7df
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483206"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942172"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie
 
@@ -35,7 +35,7 @@ ms.locfileid: "59483206"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités <https://security.microsoft.com> anti-courrier indésirable, anti-programme malveillant et chiffrement dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations nécessaires,](#what-permissions-are-needed-to-view-these-reports)vous pouvez afficher et télécharger ces rapports dans le portail Microsoft 365 Defender web. Pour plus d’informations, [voir View Defender pour Office 365 rapports.](view-reports-for-mdo.md#view-and-download-reports)
+De nombreux rapports sont disponibles sur le portail Microsoft 365 Defender pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités <https://security.microsoft.com> anti-courrier indésirable, anti-programme malveillant et chiffrement dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations nécessaires,](#what-permissions-are-needed-to-view-these-reports)vous pouvez afficher et télécharger ces rapports comme décrit dans cet article.
 
 > [!NOTE]
 >
@@ -54,7 +54,7 @@ Le **rapport Utilisateurs** compromis indique le nombre de  comptes  d’utilisa
 
 L’affichage agrégé affiche les données des 90 derniers jours et l’affichage détail affiche les données des 30 derniers jours.
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez les **utilisateurs** compromis, puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/CompromisedUsers> .
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez les utilisateurs **compromis,** puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/CompromisedUsers> .
 
 Dans la page **Utilisateurs** compromis, le graphique affiche les informations suivantes pour la plage de dates spécifiée :
 
@@ -74,17 +74,19 @@ Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Fil
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
+
 ![Affichage du rapport dans le rapport Utilisateurs compromis.](../../media/compromised-users-report-activity-view.png)
 
 ## <a name="exchange-transport-rule-report"></a>Exchange de règles de transport
 
-Le **rapport Exchange** règles de transport de messagerie affiche l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
+Le **rapport Exchange** règles de transport de messagerie indique l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
 
 Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **Rapports de collaboration &** courrier électronique, recherchez Exchange de **transport,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/ETRRuleReport> .
 
 ![Exchange widget de règle de transport dans la page rapports de collaboration & courrier électronique.](../../media/transport-rule-report-widget.png)
 
-Dans la page Exchange rapport de règles de **transport,** les graphiques et données disponibles sont décrits dans les sections suivantes.
+Dans la page Exchange de règles de **transport,** les graphiques et données disponibles sont décrits dans les sections suivantes.
 
 ### <a name="chart-breakdown-by-direction"></a>Répartition du graphique par direction
 
@@ -108,11 +110,13 @@ Les informations suivantes sont affichées dans le tableau de détails sous le g
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
-- **Date (UTC)** **Date de début et** date de **fin**
-- **Direction**: **sortant et** **entrant**
+- **Date (UTC)** **Date de début** et date de **fin**.
+- **Direction**: **sortant et** **entrant**.
 - **Gravité :** **gravité élevée,** **gravité moyenne** et gravité **faible**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
 
 ### <a name="chart-breakdown-by-severity"></a>Répartition du graphique par gravité
 
@@ -129,7 +133,7 @@ Les informations suivantes sont affichées dans le tableau de détails sous le g
 - **Date**
 - **Stratégie DLP** ( Afficher **les données par DLP Exchange de transport uniquement)**
 - **Règle de transport**
-- **Sujet**
+- **Subject**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
 - **Gravité**
@@ -143,10 +147,12 @@ Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Fil
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
+
 ## <a name="forwarding-report"></a>Rapport de forwarding
 
 > [!NOTE]
-> Le **rapport de forwarding** est désormais disponible dans le EAC. Pour plus d’informations, [reportez-vous au](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)rapport des messages transmis automatiquement dans le nouveau EAC.
+> Ce rapport est désormais disponible dans le EAC. Pour plus d’informations, [reportez-vous au](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)rapport des messages transmis automatiquement dans le nouveau EAC.
 
 ## <a name="mailflow-status-report"></a>Rapport d’état du flux de messagerie
 
@@ -182,11 +188,8 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
-- **Date (UTC)**: **date de début et date** de **fin**
-- **Direction du courrier**:
-  - **Entrant**
-  - **Sortant**
-  - **Intra-organisation**: messages envoyés au sein du même client. Par exemple, chris@contoso.com envoie un message à michelle@contso.com.
+- **Date (UTC)**: **date de début** et date de **fin.**
+- **Sens du courrier**: **entrant** **et sortant.**
 - **Tapez**:
   - **Bon courrier**
   - **Programme malveillant**
@@ -194,22 +197,17 @@ Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Fil
   - **Protection Edge**
   - **Messages de règle**
   - **Courriers hameçons**
-- **Domaine**: **Tous**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
-Si vous cliquez **sur Choisir une catégorie pour plus d’informations,** vous pouvez sélectionner l’une des valeurs suivantes :
+De retour sur la page principale du rapport, si vous cliquez sur Choisir une catégorie pour plus de **détails,** vous pouvez sélectionner parmi les valeurs suivantes :
 
 - **E-mail de hameçonnage**: cette sélection vous place dans le rapport d’état [de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
-- **Programme malveillant dans le courrier** électronique : cette sélection vous montre le rapport d’état de la protection contre les [menaces.](view-email-security-reports.md#threat-protection-status-report)
+- **Programmes malveillants dans les e-mails**: cette sélection vous place dans le rapport d’état [de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
 - **Détections de courrier indésirable**: cette sélection vous permet d’envoyer le rapport [détections de courrier indésirable.](view-email-security-reports.md#spam-detections-report)
 - **Courrier indésirable bloqué edge**: cette sélection vous permet d’envoyer le rapport [détections de courrier indésirable.](view-email-security-reports.md#spam-detections-report)
 
-#### <a name="export-from-type-view"></a>Exporter à partir de l’affichage Type
-
-Pour l’affichage détaillé, vous ne pouvez exporter les données que pour une journée. Par exemple, si vous souhaitez exporter des données pendant 7 jours, vous devez faire 7 actions d’exportation différentes.
-
-Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de ce jour contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification et](#schedule-report)** une ![ icône Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Affichage direction pour le rapport d’état du flux de messagerie
 
@@ -219,182 +217,94 @@ Si vous cliquez sur **l’onglet Direction,** le graphique affiche les informati
 
 - **Entrant**
 - **Sortant**
-- **Intra-organisation**
-
-Le tableau de détails sous le graphique contient les mêmes informations que **l’affichage Type.**
-
-Vous pouvez filtrer à la fois le graphique et le tableau de détails en cliquant sur **Filtre.** Les mêmes filtres de **l’affichage Type** sont disponibles.
-
-La **sélection d’une catégorie pour obtenir plus d’informations** sur les sélections disponibles et le comportement sont identiques à l’affichage **Type.**
-
-#### <a name="export-from-direction-view"></a>Exporter à partir du mode Direction
-
-Pour l’affichage détaillé, vous ne pouvez exporter les données que pour une journée. Par exemple, si vous souhaitez exporter des données pendant 7 jours, vous devez faire 7 actions d’exportation différentes.
-
-Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de ce jour contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
-
-### <a name="funnel-view-for-the-mailflow-status-report"></a>Affichage en entonnoir pour le rapport d’état du flux de messagerie
-
-La **vue Entonnoir** vous montre comment les fonctionnalités de protection contre les menaces de courrier électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Il fournit des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, y compris la protection edge, les logiciels anti-programme malveillant, l’anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’accès affectent ce nombre.
-
-![Affichage en entonnoir dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-funnel-view.png)
-
-L’affichage agrégé et l’affichage Tableau détails autorisent 90 jours de filtrage.
-
-Si vous  cliquez sur l’onglet Entonnoir, le graphique affiche les messages organisés dans les catégories suivantes pour la plage de dates spécifiée :
-
-- **Nombre total de** messages électroniques : cette valeur est toujours affichée en premier. Les valeurs restantes sont affichées par ordre décroit par nombre de messages.
-- **Courrier électronique après la protection Edge**
-- **Règle de messagerie après transport** (règle de flux de messagerie)
-- **Courrier électronique après anti-programme malveillant, réputation de fichier, bloc de type de fichier**
-  - **Réputation du** fichier : messages filtrés en raison de l’identification d’un fichier joint par d’autres clients Microsoft.
-  - **Bloc de type de** fichier : messages filtrés en raison du type de fichier malveillant identifié dans le message.
-- **Courrier électronique après anti-hameçonnage, réputation d’URL, emprunt d’identité de marque, anti-usurpation d’identité**
-  - **Réputation de l’URL**: messages filtrés en raison de l’identification de l’URL par d’autres clients Microsoft.
-  - **Emprunt d’identité de marque**: messages filtrés en raison du message provenant de la marque connue usurpant l’identité des expéditeurs.
-  - **Anti-usurpation**: messages filtrés en raison de la tentative d’usurpation d’un domaine appartenant au destinataire ou d’un domaine que l’expéditeur du message ne possède pas.
-- **Courrier électronique après filtrage du courrier indésirable en bloc**
-  - **Filtrage du courrier en bloc**: messages filtrés en fonction du seuil bcl (seuil de plainte en bloc) dans une stratégie anti-courrier indésirable.
-- **Courrier électronique après l’emprunt d’identité de l’utilisateur et du domaine**
-  - Emprunt d’identité d’utilisateur : messages filtrés en raison d’une tentative d’emprunt d’identité d’un utilisateur (expéditeur de message) défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage dans Defender pour Office 365.
-  - **Emprunt d’identité** de domaine : messages filtrés en raison d’une tentative d’emprunt d’identité d’un domaine défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage dans Defender for Office 365.
-- **E-mail après détonation du fichier et de l’URL**
-  - **Détonation de fichier**: messages filtrés par une stratégie Coffre pièces jointes.
-  - **Détonation d’URL**: message filtré par une stratégie Coffre liens.
-- **Courrier électronique détecté comme étant anodin après la remise (protection de temps de clic d’URL)**
-
-Les catégories sont codées en couleur par **EOP** ou **Defender pour Office 365**. Pour filtrer les catégories dans le graphique, cliquez sur **EOP** ou Defender pour **Office 365** dans la légende du graphique (un clic pour éliminer , un deuxième clic pour revenir).
-
-Le tableau de détails sous le graphique contient les mêmes informations que le graphique, mais avec différentes descriptions (plus courtes) :
-
-- **Nombre total de messages électroniques**
-- **Protection Edge**
-- **Messages de règle**
-- **Anti-programme malveillant, réputation de fichier, type de fichier, bloc de fichiers**
-- **Anti-hameçonnage, réputation d’URL, emprunt d’identité de marque, anti-usurpation d’identité**
-- **Anti-courrier indésirable, filtrage du courrier en bloc**
-- **Emprunt d’identité d’utilisateur et de domaine**
-- **Détonation de fichiers et d’URL :** Defender pour Office 365
-- **Protection post-remise et ZAP (ATP)**: Defender for Office 365
-
-Si vous sélectionnez une ligne dans le tableau de détails, une répartition supplémentaire du nombre de messages est affichée dans le volant.
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
-- **Date (UTC)**: **date de début et date** de **fin**
-- **Direction du courrier**:
-  - **Entrant**
-  - **Sortant**
-  - **Intra-organisation**: messages envoyés au sein du même client. Par exemple, chris@contoso.com envoie un message à michelle@contso.com.
+- **Date (UTC)**: **date de début** et date de **fin.**
+- **Sens du courrier**: **entrant** **et sortant.**
+- **Tapez**:
+  - **Bon courrier**
+  - **Programme malveillant**
+  - **Courrier indésirable**
+  - **Protection Edge**
+  - **Messages de règle**
+  - **Courriers hameçons**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
-#### <a name="export-from-funnel-view"></a>Exporter à partir du affichage Entonnoir
+De retour sur la page principale du rapport, si vous cliquez sur Choisir une catégorie pour plus de **détails,** vous pouvez sélectionner parmi les valeurs suivantes :
 
-Après avoir cliqué **sur Exporter** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
+- **E-mail de hameçonnage**: cette sélection vous place dans le rapport d’état [de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
+- **Programmes malveillants dans les e-mails**: cette sélection vous place dans le rapport d’état [de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
+- **Détections de courrier indésirable**: cette sélection vous permet d’envoyer le rapport [détections de courrier indésirable.](view-email-security-reports.md#spam-detections-report)
+- **Courrier indésirable bloqué edge**: cette sélection vous permet d’envoyer le rapport [détections de courrier indésirable.](view-email-security-reports.md#spam-detections-report)
 
-- **Résumé (avec des données pour les 90 derniers jours au maximum)**
-- **Détails (avec des données pour les 30 derniers jours au maximum)**
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **Créer une planification et** une ![ icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Les boutons d’exportation** sont disponibles.
 
-Sous **Date**, choisissez une plage, puis cliquez sur **Appliquer**. Les données des filtres actuels sont exportées vers un .csv de données.
+### <a name="mailflow-view-for-the-mailflow-status-report"></a>Affichage de flux de messagerie pour le rapport d’état du flux de messagerie
 
-Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs .csv fichiers seront créés.
+**L’affichage Flux de** messagerie vous montre comment les fonctionnalités de protection contre les menaces de messagerie électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Cette vue utilise un diagramme de flux horizontal (appelé diagramme _Sankey)_ pour fournir des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, notamment la protection edge, les logiciels anti-programme malveillant, le anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’adresse affectent ce nombre.
 
-### <a name="tech-view-for-the-mailflow-status-report"></a>Affichage technique pour le rapport d’état du flux de messagerie
+![Affichage de flux de messagerie dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-mailflow-view.png)
 
-La **vue Tech est** similaire à la vue Entonnoir, fournissant des détails plus détaillés pour les fonctionnalités de protection contre les menaces configurées.  À partir du graphique, vous pouvez voir comment les messages sont classés aux différentes étapes de la protection contre les menaces.
+L’affichage agrégé et le tableau détails autorisent 90 jours de filtrage.
 
-![Affichage technique dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-tech-view.png)
+Les informations du diagramme sont codées en couleur par **EOP** ou **Defender pour Office 365** technologies.
 
-Le tableau d’affichage agrégé et de détails autorise 90 jours de filtrage.
+Le diagramme est organisé en bandes horizontales suivantes :
 
-Si vous cliquez sur **l’onglet Affichage** Technique, le graphique affiche les messages organisés dans les catégories suivantes pour la plage de dates spécifiée :
+- **Bande de courrier** totale : cette valeur est toujours affichée en premier.
+- **Bloc Edge** et **bande traitée** :
+  - **Bloc Edge**: messages filtrés sur le bord et identifiés comme étant de la protection Edge.
+  - **Traité :** messages gérés par la pile de filtrage.
+- Bande de résultats :
+  - **Bloc de règles**: messages qui sont Exchange règles de flux de messagerie (règles de transport).
+  - **Blocage des programmes** malveillants : messages identifiés comme programmes malveillants par différents filtres.<sup>\*</sup>
+  - **Bloc de hameçonnage**: messages identifiés comme hameçonnages lors du traitement par différents filtres.<sup>\*</sup>
+  - **Blocage de courrier indésirable**: messages identifiés comme courrier indésirable lors du traitement par différents filtres.<sup>\*</sup>
+  - **Bloc d’emprunt** d’identité : messages détectés comme emprunt d’identité d’utilisateur ou emprunt d’identité de domaine dans Defender Office 365.<sup>\*</sup>
+  - **Bloc de détonation**: messages détectés lors de la désaération d’un fichier ou d’une URL par des stratégies de pièces jointes Coffre ou des stratégies de liens Coffre dans Defender pour Office 365.<sup>\*</sup>
+  - **ZaP supprimé :** messages supprimés par purge automatique d’heure zéro (ZAP).<sup>\*</sup>
+  - **Remis :** messages remis aux utilisateurs en raison d’une autoriser.<sup>\*</sup>
 
-- **Nombre total de messages électroniques**
-- **Edge autoriser** et **edge filtré**
-- **Règles de transport d’autoriser** et **de transport filtrées** (règles de flux de messagerie)
-- **Pas de programmes** **malveillants, Coffre détection des pièces jointes** <sup>\*</sup> et détection du moteur **anti-programme malveillant**
-- **Pas de hameçonnage,**  **d’échec DMARC,** de détection d’emprunt d’identité, de détection d’usurpation <sup>\*</sup> d’identité et de détection **d’hameçonnage** 
-- **Aucune détection avec détection de détonation d’URL** et **de détonation d’URL**<sup>\*</sup>
-- **Pas de courrier indésirable** et  **de courrier indésirable**
-- **E-mail** non malveillant, **détection Coffre liens et** <sup>\*</sup> **ZAP**
+Si vous pointez sur une bande horizontale dans le diagramme, vous verrez le nombre de messages associés.
 
-<sup>\*</sup>Defender for Office 365
+<sup>\*</sup> Si vous cliquez sur cet élément, le diagramme est développé pour afficher d’autres détails. Pour obtenir une description de chaque élément dans les nodes développés, voir [Technologies de détection.](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies)
 
-Lorsque vous pointez sur une catégorie dans le graphique, vous pouvez voir le nombre de messages dans cette catégorie.
+![Le hameçonnage bloque les détails en affichage Flux de messagerie dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-mailflow-view-details.png)
 
-Le tableau de détails sous le graphique contient les informations suivantes :
+Le tableau de détails sous le diagramme présente les informations suivantes :
 
-- **Date (UTC)**
+- **Date**
 - **Nombre total de messages électroniques**
 - **Edge filtré**
-- **Messages de règle**: messages filtrés en raison de règles de flux de messagerie (également appelées règles de transport).
-- **Moteur anti-programme malveillant, Coffre pièces jointes** <sup>\*</sup> :
-- **DMARC, emprunt d’identité,** <sup>\*</sup> **usurpation** d’identité, **hameçonnage filtré**:
-  - **DMARC**: messages filtrés en raison de l’échec de la vérification de l’authentification DMARC.
-- **Détection de détonation d’URL**<sup>\*</sup>
+- **Messages de règle**
+- **Moteur anti-programme malveillant, Coffre pièces jointes, règle filtrée**
+- **Emprunt d’identité DMARC, usurpation d’identité, hameçonnage filtré**
+- **Détection de détonation**
 - **Filtrage anti-courrier indésirable**
 - **ZAP supprimé**
-- **Détection par liens Coffre de détection**<sup>\*</sup>
+- **Messages dans lequel des menaces non détectées n’ont pas été détectées**
 
-<sup>\*</sup>Defender for Office 365
-
-Si vous sélectionnez une ligne dans le tableau de détails, une répartition supplémentaire du nombre de messages est affichée dans le volant.
+Si vous sélectionnez une ligne dans le tableau de détails, une répartition supplémentaire du nombre de messages est affichée dans le volant d’informations qui s’affiche.
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
-- **Date (UTC)**: **date de début et date** de **fin**
-- **Direction du courrier**:
-  - **Entrant**
-  - **Sortant**
-  - **Intra-organisation**: messages envoyés au sein du même client. Par exemple, chris@contoso.com envoie un message à michelle@contso.com.
+- **Date (UTC)** **Date de début** et date de **fin**.
+- **Direction**: **sortant et** **entrant**.
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
-#### <a name="export-from-tech-view"></a>Exporter à partir d’un affichage tech
+De retour sur la page  principale du rapport, vous  pouvez cliquer sur Afficher les tendances pour afficher les graphiques de tendance dans le volant de tendances de flux de messagerie qui s’affiche.
 
-En cliquant **sur Exporter,** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
+![Volant de tendances de flux de messagerie en mode Flux de messagerie dans le rapport d’état du flux de messagerie.](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
 
-- **Résumé (avec des données pour les 90 derniers jours au maximum)**
-- **Détails (avec des données pour les 30 derniers jours au maximum)**
-
-Sous **Date**, choisissez une plage, puis cliquez sur **Appliquer**. Les données des filtres actuels sont exportées vers un .csv de données.
-
-Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs .csv fichiers seront créés.
+Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Le bouton** Exporter est disponible.
 
 ## <a name="malware-detections-report"></a>Rapport sur les détections de programmes malveillants
 
-Le rapport détections de programmes malveillants affiche des informations sur les détections de programmes malveillants dans les messages électroniques entrants et sortants (programmes **malveillants détectés** par Exchange Online Protection ou EOP). Pour plus d’informations sur la protection contre les programmes malveillants dans EOP, voir Protection contre les programmes [malveillants dans EOP.](anti-malware-protection.md)
-
-Le filtre d’affichage agrégé autorise 90 jours, tandis que le filtre de tableau détails ne le permet que sur 10 jours.
-
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **& de collaboration,** recherchez les programmes malveillants détectés dans le courrier **électronique,** puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/MalwareDetections> .
-
-![Détections de programmes malveillants dans le widget de messagerie sur la page de rapports de collaboration & courrier électronique.](../../media/malware-detections-widget.png)
-
-Dans la page Du rapport détections de programmes **malveillants,** le graphique affiche les informations suivantes pour la plage de dates spécifiée :
-
-- **Sortant**
-- **Entrant**
-
-![Affichage du rapport dans le rapport sur la détection des programmes malveillants dans le rapport de courrier électronique.](../../media/malware-detections-report-view.png)
-
-Le tableau de détails sous le graphique présente les informations suivantes :
-
-- **Date**
-- **Adresse de l’expéditeur**
-- **Adresse du destinataire**
-- **ID de message**: disponible dans le champ d’en-tête **Message-ID** dans l’en-tête du message et doit être unique. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (notez les crochets).
-- **Subject**
-- **Filename**
-- **Nom du programme malveillant**
-
-Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant l’une des valeurs suivantes :
-
-- **Date (UTC)** **Date de début et** date de **fin**
-- **Direction**: **trafic entrant** et **sortant**
-
-Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+> [!NOTE]
+> Ce rapport a été supprimé. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
 
 ## <a name="mail-latency-report"></a>Rapport de latence du courrier
 
@@ -403,20 +313,17 @@ Le **rapport de latence de messagerie** dans Defender pour Office 365 contient d
 ## <a name="spam-detections-report"></a>Rapport sur la détection des courriers indésirables
 
 > [!NOTE]
-> Le **rapport de détection du courrier** indésirable va finir par disparaître. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
+> Ce rapport a été supprimé. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
 
 ## <a name="spoof-detections-report"></a>Rapport sur les détections d’usurpation d’usurpation
 
-> [!NOTE]
-> Le rapport sur les détections d’usurpation d’usurpation d’informations amélioré, tel que décrit dans cet article, est disponible en prévisualisation, peut faire l’objet de changements et n’est pas disponible dans toutes les organisations. L’ancienne version du rapport affiche uniquement les messages **de bonne qualité** et les courriers **indésirables**.
-
-Le **rapport sur les détections d’usurpation d’informations** affiche des informations sur les messages qui ont été bloqués ou autorisés en raison de l’usurpation d’informations. Pour plus d’informations sur l’usurpation d’adresse, voir Protection contre l’usurpation [d’adresses dans EOP.](anti-spoofing-protection.md)
+Le **rapport sur les détections d’usurpation d’informations** affiche des informations sur les messages qui ont été bloqués ou autorisés en raison de l’usurpation d’informations. Pour plus d’informations sur l’usurpation d’adresse, consultez la protection contre l’usurpation [d’adresse dans EOP.](anti-spoofing-protection.md)
 
 L’affichage agrégé du rapport autorise 45 jours de filtrage, tandis que l’affichage détaillé ne permet que dix jours <sup>\*</sup> de filtrage.
 
 <sup>\*</sup> Au final, vous pourrez utiliser jusqu’à 90 jours de filtrage.
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez l’adresse e-mail rapports & \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **& de collaboration,** recherchez les détections d’usurpation **d’adresse,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/SpoofMailReportV2> .
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez les détections d’usurpation **d’adresse,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/SpoofMailReportV2> .
 
 ![Widget de détections d’usurpation d'& la page rapports de collaboration.](../../media/spoof-detections-widget.png)
 
@@ -430,7 +337,7 @@ Le graphique présente les informations suivantes :
 
 Lorsque vous pointez sur un jour (point de données) dans le graphique, vous pouvez voir combien de messages usurpés ont été détectés et pourquoi.
 
-Dans la page **Rapport** de courrier usurpation d’adresse, vous pouvez  filtrer à la fois le graphique et le tableau de détails en cliquant sur Filtrer et en sélectionnant une ou plusieurs des valeurs suivantes :
+Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
 - **Date (UTC)** **Date de début et** date de **fin**
 - **Résultat**:
@@ -458,11 +365,13 @@ Le tableau de détails sous le graphique présente les informations suivantes :
 
 Pour plus d’informations sur les codes de résultats d’authentification composite, consultez les [en-têtes de message anti-courrier](anti-spam-message-headers.md)indésirable Microsoft 365 .
 
-## <a name="submissions-report"></a>Rapport des soumissions
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
+
+## <a name="submissions-report"></a>Rapport soumissions
 
 Le **rapport Soumissions** affiche des informations sur les éléments que les administrateurs ont signalés à Microsoft pour analyse. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez **Soumissions,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/adminSubmissionReport> . Pour aller aux [soumissions d’administrateur dans le portail Microsoft 365 Defender,](admin-submission.md)cliquez **sur Go to Submissions**. Les administrateurs pourront afficher le rapport pour les 30 derniers jours. 
+Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez **Soumissions,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/adminSubmissionReport> . Pour aller aux [soumissions d’administrateur dans le portail Microsoft 365 Defender,](admin-submission.md)cliquez **sur Go to Submissions**. Les administrateurs pourront afficher le rapport pour les 30 derniers jours.
 
 ![Widget de soumissions dans la page Rapports de collaboration & courrier électronique.](../../media/submissions-report-widget.png)
 
@@ -471,7 +380,7 @@ Le graphique présente les informations suivantes :
 - **En attente**
 - **Terminée**
 
-Dans la page **Soumissions,** vous pouvez filtrer le graphique  et le tableau de détails en cliquant sur Filtrer et en sélectionnant une ou plusieurs des valeurs suivantes :
+Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
 - **Date signalée :** **heure de début** et heure de **fin**
 - **Type de soumission**:
@@ -481,7 +390,7 @@ Dans la page **Soumissions,** vous pouvez filtrer le graphique  et le tableau de
 - **ID de soumission**
 - **ID de message réseau**
 - **Sender**
-- **Nom**
+- **Name**
 - **Soumis par**
 - **Raison de l’envoi**:
   - **Non indésirable**
@@ -494,6 +403,8 @@ Dans la page **Soumissions,** vous pouvez filtrer le graphique  et le tableau de
 
 Le tableau de détails sous le graphique  présente les mêmes informations  et possède les  mêmes **options** de colonnes De groupe ou de personnalisation que sous l’onglet Soumis pour analyse dans envois de collaboration & courrier \> **électronique.** Pour plus d’informations, voir [Afficher les soumissions d’administrateur à Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
 
+Sur la page principale du rapport, le **[bouton Exporter](#export-report)** est disponible.
+
 ![Page de rapport soumissions dans le portail Microsoft 365 Defender web.](../../media/submissions-report-page.png)
 
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
@@ -502,7 +413,7 @@ Le **rapport d’état de la protection** contre les menaces est disponible dans
 
 Le rapport fournit le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses web (URL) bloqués par le moteur anti-programme malveillant, la purge automatique d’heure zéro [(ZAP)](zero-hour-auto-purge.md)et Defender pour des fonctionnalités de Office 365 telles que les liens [Coffre,](safe-links.md)les pièces [jointes Coffre](safe-attachments.md)et les fonctionnalités de protection contre l’emprunt d’identité dans les stratégies [anti-hameçonnage.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si des stratégies d’organisation doivent être ajuster.
 
-**Remarque**: il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et non comme un seul message.
+**Remarque**: il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
 
 Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **Rapports de collaboration & courrier** électronique, recherchez l’état de la **protection** contre les menaces, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez l’une des URL suivantes :
 
@@ -523,19 +434,34 @@ Dans **l’affichage Des données par vue d’ensemble,** les informations de d�
 
 - **Programme malveillant de messagerie**
 - **Hameçonnage par e-mail**
+- **Courrier indésirable**
 - **Programme malveillant de contenu**
 
 Aucun tableau de détails n’est disponible sous le graphique.
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
-- **Date (UTC)** **Date de début et** date de **fin**
-- **Détection :** programme **malveillant de messagerie,** **hameçonnage de messagerie** ou programme malveillant de **contenu**
-- **Protégé par**: **MDO** (Defender for Office 365) ou **EOP**
-- **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
-- **Direction**
-- **Domaine**
-- **Type de stratégie**
+- **Date (UTC)** **Date de début** et date de **fin**.
+- **Détection**:
+  - **Programme malveillant de messagerie**
+  - **Hameçonnage par e-mail**
+  - **Courrier indésirable**
+  - **Programme malveillant de contenu**
+- **Protégé par**: **MDO** (Defender for Office 365) et **EOP**.
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Direction**:
+  - **All**
+  - **Entrant**
+  - **Sortant**
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- **Type de stratégie**:
+  - **All**
+  - **Anti-programme malveillant**
+  - **Pièces jointes fiables**
+  - **Anti-hameçonnage**
+  - **Anti-courrier indésirable**
+  - **Règle de flux de messagerie** (règle de transport)
+  - **Autres**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
@@ -561,7 +487,62 @@ Dans **l’affichage \> des données par hameçonnage par courrier électronique
 - **Domaine d’emprunt d’identité**: emprunt d’identité des domaines que le client <sup>\*</sup> possède ou définit.
 - **Emprunt d’identité d’intelligence de** boîte aux lettres : emprunt d’identité des utilisateurs définis par l’administrateur ou appris par le biais de l’intelligence <sup>\*</sup> des boîtes aux lettres.
 - **Détonation de fichier**<sup>\*</sup>
+- **Réputation de détonation de fichier**<sup>\*</sup>
 - **Campagne**<sup>\*</sup>
+
+<sup>\*</sup>Defender pour Office 365 uniquement
+
+Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
+
+- **Date**
+- **Sujet**
+- **Expéditeur**
+- **Destinataires**
+- **Technologie de détection**
+- **État de remise**
+- **IP de l’expéditeur**
+- **Tags**
+
+Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
+
+- **Date (UTC)** **Date de début et** date de **fin**
+- **Détection**: valeurs identiques à dans le graphique.
+- **Protégé par**: **MDO** (Defender for Office 365) ou **EOP**
+- **Direction**:
+  - **All**
+  - **Entrant**
+  - **Sortant**
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- **Type de stratégie**:
+  - **All**
+  - **Anti-programme malveillant**
+  - **Pièces jointes fiables**
+  - **Anti-hameçonnage**
+  - **Anti-courrier indésirable**
+  - **Règle de flux de messagerie** (règle de transport)
+  - **Autres**
+- **Nom de la stratégie (affichage tableau de détails uniquement)**: **tout** ou la stratégie spécifiée.
+- **Destinataires**
+
+Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
+
+### <a name="view-data-by-email--spam-and-chart-breakdown-by-detection-technology"></a>Afficher les données par courrier \> indésirable et répartition des graphiques par technologie de détection
+
+![Affichage de la technologie de détection du courrier indésirable dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-spam-detection-tech-view.png)
+
+Dans **l’affichage \> des données par courrier indésirable et** répartition du graphique par technologie de détection, les informations suivantes sont affichées dans le graphique : 
+
+- **Réputation d’URL malveillante**
+- **Filtre avancé**
+- **Filtre général**
+- **Détection d’analyse mixte**
+- **Correspondance de l’empreinte**
+- **Réputation du domaine**
+- **E-mail de masse**
+- **Réputation d’IP**
 
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
@@ -569,24 +550,35 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Subject**
 - **Expéditeur**
 - **Destinataires**
-- **Détecté par**
+- **Technologie de détection**
 - **État de remise**
-- **Source de compromission**
+- **IP de l’expéditeur**
 - **Tags**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
-- **Détection**
-- **Protégé par**: **MDO** (Defender for Office 365) ou **EOP**
-- **Direction**
-- **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
-- **Domaine**
-- **Type de stratégie**
-- **Nom de la stratégie** (tableau de détails uniquement)
-- **Recipients**
+- **Détection**: valeurs identiques à dans le graphique.
+- **Direction**:
+  - **All**
+  - **Entrant**
+  - **Sortant**
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- **Type de stratégie**:
+  - **All**
+  - **Anti-programme malveillant**
+  - **Pièces jointes fiables**
+  - **Anti-hameçonnage**
+  - **Anti-courrier indésirable**
+  - **Règle de flux de messagerie** (règle de transport)
+  - **Autres**
+- **Nom de la stratégie (affichage tableau de détails uniquement)**: **tout** ou la stratégie spécifiée.
+- **Destinataires**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Afficher les données par programme malveillant et \> répartition des graphiques par technologie de détection
 
@@ -607,33 +599,45 @@ Dans **l’affichage \> des données par programme** malveillant par courrier é
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Subject**
+- **Sujet**
 - **Expéditeur**
 - **Destinataires**
-- **Détecté par**
+- **Tecchnology de détection**
 - **État de remise**
-- **Source de compromission**
+- **IP de l’expéditeur**
 - **Tags**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
-- **Détection**
+- **Détection**: valeurs identiques à dans le graphique.
 - **Protégé par**: **MDO** (Defender for Office 365) ou **EOP**
-- **Direction**
-- **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
-- **Domaine**
-- **Type de stratégie**
-- **Nom de la stratégie** (tableau de détails uniquement)
-- **Recipients**
+- **Direction**:
+  - **All**
+  - **Entrant**
+  - **Sortant**
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- **Type de stratégie**:
+  - **All**
+  - **Anti-programme malveillant**
+  - **Pièces jointes fiables**
+  - **Anti-hameçonnage**
+  - **Anti-courrier indésirable**
+  - **Règle de flux de messagerie** (règle de transport)
+  - **Autres**
+- **Nom de la stratégie (affichage tableau de détails uniquement)**: **tout** ou la stratégie spécifiée.
+- **Destinataires**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
-### <a name="chart-breakdown-by-policy-type-and-view-data-by-email--phish-or-view-data-by-email--malware"></a>Répartition des graphiques par type de stratégie et affichage des données par hameçonnage de messagerie ou affichage des données par programme malveillant \> de \> messagerie
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
 
-![Affichage du type de stratégie pour les courriers électroniques de hameçonnage ou de programmes malveillants dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+### <a name="chart-breakdown-by-policy-type"></a>Répartition du graphique par type de stratégie
 
-Dans la répartition **du graphique** par type de stratégie et l’affichage des données par hameçonnage de messagerie ou affichage des données par affichage des programmes malveillants de messagerie, les informations suivantes sont affichées dans les graphiques : **\>** **\>**
+![Affichage du type de stratégie pour le courrier électronique de hameçonnage, le courrier indésirable ou le courrier malveillant dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+
+Dans l’affichage des données par hameçonnage de **messagerie, \>** affichage des données par courrier indésirable ou affichage des données par affichage des programmes malveillants de messagerie, la sélection de la répartition du graphique par **type** de stratégie affiche les informations suivantes dans le graphique : **\>** **\>**
 
 - **Anti-programme malveillant**
 - **Coffre Pièces jointes**<sup>\*</sup>
@@ -645,33 +649,65 @@ Dans la répartition **du graphique** par type de stratégie et l’affichage de
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
-- **Détecté par**
+- **Technologie de détection**
 - **État de remise**
-- **Source de compromission**
+- **IP de l’expéditeur**
 - **Tags**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
-- **Détection**
+- **Détection**:
+  - **Réputation malveillante d’URL**: réputation d’URL malveillante générée à partir de <sup>\*</sup> Defender pour Office 365 détonations dans d’autres Microsoft 365 clients.
+  - **Filtre avancé :** signaux de hameçonnage basés sur l’apprentissage automatique.
+  - **Filtre général :** signaux de hameçonnage basés sur des règles d’analyste.
+  - **Usurpation d’adresse intra-organisation**: l’expéditeur tente d’usurper le domaine du destinataire.
+  - **Usurpation d’un domaine externe**: l’expéditeur tente d’usurper un autre domaine.
+  - **Usurpation d’identité DMARC**: échec de l’authentification DMARC sur les messages.
+  - **Marque d’emprunt d’identité**: emprunt d’identité de marques connues basées sur des expéditeurs.
+  - **Détection d’analyse mixte**
+  - **Réputation des fichiers**
+  - **Correspondance de l’empreinte**
+  - **Réputation de détonation d’URL**<sup>\*</sup>
+  - **Détonation d’URL**<sup>\*</sup>
+  - **Utilisateur de l’emprunt d’identité**<sup>\*</sup>
+  - **Domaine d’emprunt d’identité**: emprunt d’identité des domaines que le client <sup>\*</sup> possède ou définit.
+  - **Emprunt d’identité d’intelligence de** boîte aux lettres : emprunt d’identité des utilisateurs définis par l’administrateur ou appris par le biais de l’intelligence <sup>\*</sup> des boîtes aux lettres.
+  - **Détonation de fichier**<sup>\*</sup>
+  - **Réputation de détonation de fichier**<sup>\*</sup>
+  - **Campagne**<sup>\*</sup>
 - **Protégé par**: **MDO** (Defender for Office 365) ou **EOP**
-- **Direction**
-- **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
-- **Domaine**
-- **Type de stratégie**
-- **Nom de la stratégie** (tableau de détails uniquement)
-- **Recipients**
+- **Direction**:
+  - **All**
+  - **Entrant**
+  - **Sortant**
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- **Type de stratégie**:
+  - **All**
+  - **Anti-programme malveillant**
+  - **Pièces jointes fiables**
+  - **Anti-hameçonnage**
+  - **Anti-courrier indésirable**
+  - **Règle de flux de messagerie** (règle de transport)
+  - **Autres**
+- **Nom de la stratégie (affichage tableau de détails uniquement)**: **tout** ou la stratégie spécifiée.
+- **Destinataires**
+
+<sup>\*</sup>Defender pour Office 365 uniquement
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
-### <a name="chart-breakdown-by-delivery-status-and-view-data-by-email--phish-or-view-data-by-email--malware"></a>Répartition des graphiques par état de remise et affichage des données par hameçonnage de messagerie ou affichage des données par programme malveillant \> de \> messagerie
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
+
+### <a name="chart-breakdown-by-delivery-status"></a>Répartition du graphique par état de remise
 
 ![Affichage de l’état de remise des messages électroniques de hameçonnage et de programmes malveillants dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-Dans la répartition **du graphique** par état de remise et affichage des données par hameçonnage de messagerie ou affichage des données par affichage des programmes malveillants de messagerie, les informations suivantes sont affichées dans les graphiques : **\>** **\>**
+Dans l’affichage des données par hameçonnage de **messagerie, \>** affichage des  données par courrier indésirable ou affichage des données par affichage des programmes malveillants de messagerie, la sélection de la répartition du graphique par état de remise affiche les informations suivantes dans le graphique : **\>** **\>**
 
 - **Boîte aux lettres hébergée : Boîte de réception**
 - **Boîte aux lettres hébergée : courrier indésirable**
@@ -686,27 +722,59 @@ Dans la répartition **du graphique** par état de remise et affichage des donn�
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
-- **Détecté par**
+- **Technologie de détection**
 - **État de remise**
-- **Source de compromission**
+- **IP de l’expéditeur**
 - **Tags**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
-- **Détection**
+- **Détection**:
+  - **Réputation malveillante d’URL**: réputation d’URL malveillante générée à partir de <sup>\*</sup> Defender pour Office 365 détonations dans d’autres Microsoft 365 clients.
+  - **Filtre avancé :** signaux de hameçonnage basés sur l’apprentissage automatique.
+  - **Filtre général :** signaux de hameçonnage basés sur des règles d’analyste.
+  - **Usurpation d’adresse intra-organisation**: l’expéditeur tente d’usurper le domaine du destinataire.
+  - **Usurpation d’un domaine externe**: l’expéditeur tente d’usurper un autre domaine.
+  - **Usurpation d’identité DMARC**: échec de l’authentification DMARC sur les messages.
+  - **Marque d’emprunt d’identité**: emprunt d’identité de marques connues basées sur des expéditeurs.
+  - **Détection d’analyse mixte**
+  - **Réputation des fichiers**
+  - **Correspondance de l’empreinte**
+  - **Réputation de détonation d’URL**<sup>\*</sup>
+  - **Détonation d’URL**<sup>\*</sup>
+  - **Utilisateur de l’emprunt d’identité**<sup>\*</sup>
+  - **Domaine d’emprunt d’identité**: emprunt d’identité des domaines que le client <sup>\*</sup> possède ou définit.
+  - **Emprunt d’identité d’intelligence de** boîte aux lettres : emprunt d’identité des utilisateurs définis par l’administrateur ou appris par le biais de l’intelligence <sup>\*</sup> des boîtes aux lettres.
+  - **Détonation de fichier**<sup>\*</sup>
+  - **Réputation de détonation de fichier**<sup>\*</sup>
+  - **Campagne**<sup>\*</sup>
 - **Protégé par**: **MDO** (Defender for Office 365) ou **EOP**
-- **Direction**
-- **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
-- **Domaine**
-- **Type de stratégie**
-- **Nom de la stratégie** (tableau de détails uniquement)
-- **Recipients**
+- **Direction**:
+  - **All**
+  - **Entrant**
+  - **Sortant**
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- **Type de stratégie**:
+  - **All**
+  - **Anti-programme malveillant**
+  - **Pièces jointes fiables**
+  - **Anti-hameçonnage**
+  - **Anti-courrier indésirable**
+  - **Règle de flux de messagerie** (règle de transport)
+  - **Autres**
+- **Nom de la stratégie (affichage tableau de détails uniquement)**: **tout** ou la stratégie spécifiée.
+- **Destinataires**
+
+<sup>\*</sup>Defender pour Office 365 uniquement
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
 
 ### <a name="view-data-by-content--malware"></a>Afficher les données par programme malveillant de \> contenu
 
@@ -715,13 +783,13 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 Dans la **vue \> Afficher les données par programme** malveillant de contenu, les informations suivantes sont affichées dans le graphique de Microsoft Defender pour Office 365 organisations :
 
 - **Moteur anti-programme** malveillant : fichiers malveillants détectés dans SharePoint, OneDrive et Microsoft Teams par la détection de virus intégrée dans [Microsoft 365](virus-detection-in-spo.md).
-- **Détonation de fichiers**: fichiers malveillants détectés Coffre pièces jointes pour [SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **Détonation de fichiers**: fichiers malveillants détectés par les Coffre pièces jointes pour [SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
 - **Location**
-- **Détecté par**
+- **Technologie de détection**
 - **Nom du programme malveillant**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
@@ -731,6 +799,8 @@ Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
+
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>Afficher les données par substitution du système et répartition du graphique par raison
 
 ![Remplacement des messages et répartition des graphiques par affichage Raison dans le rapport d’état de la protection contre les menaces.](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
@@ -739,7 +809,7 @@ Dans **l’affichage des données par remplacement** du système et la **répart
 
 - **Ignorer l’local**
 - **Ip allow**
-- **Exchange de transport de messagerie** (règle de flux de messagerie)
+- **Exchange de transport (règle** de flux de messagerie)
 - **Expéditeurs autorisés par l’organisation**
 - **Domaines autorisés par l’organisation**
 - **ZAP non activé**
@@ -751,37 +821,31 @@ Dans **l’affichage des données par remplacement** du système et la **répart
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
 - **Date**
-- **Sujet**
+- **Subject**
 - **Expéditeur**
 - **Destinataires**
 - **Remplacement du système**
-- **Source de compromission**
+- **IP de l’expéditeur**
 - **Tags**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
-- **Raison**
+- **Raison**: mêmes valeurs que le graphique.
+- **Emplacement de remise**: **dossier courrier indésirable non activé** ou boîte aux lettres **SecOps**.
 - **Direction**:
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
-- **Domaine**
-- **Type de stratégie**:
-  - **All**
-  - **Anti-programme malveillant**
-  - **Coffre Pièces jointes**<sup>\*</sup>
-  - **Anti-hameçonnage**
-  - **Anti-courrier indésirable**
-  - **Règle de flux de messagerie** (règle de transport)
-  - **Autres**
-- **Nom de la stratégie** (tableau de détails uniquement)
-- **Recipients**
-
-<sup>\*</sup>Defender pour Office 365 uniquement
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- **Type de stratégie**: **All**
+- **Nom de la stratégie (affichage tableau détails uniquement)**: **Tous**
+- **Destinataires**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+
+Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **[Le bouton](#export-report)** Exporter est disponible.
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>Afficher les données par substitution du système et répartition du graphique par emplacement de remise
 
@@ -790,7 +854,7 @@ Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer
 Dans **l’affichage Afficher les données par substitution** système et répartition du graphique par emplacement de remise, les informations de motif de remplacement suivantes sont affichées dans le graphique : 
 
 - **Dossier Courrier indésirable non activé**
-- Boîte aux lettres **SecOps**: pour plus d’informations, voir Configurer la remise de simulations de hameçonnage tierces aux utilisateurs et des messages non filtrés aux boîtes aux lettres [SecOps.](configure-advanced-delivery.md)
+- Boîte aux lettres **SecOps**: pour plus d’informations, voir Configurer la remise de simulations de hameçonnage tierces aux utilisateurs et de messages non filtrés aux boîtes aux lettres [SecOps.](configure-advanced-delivery.md)
 
 Dans le tableau de détails sous le graphique, les informations suivantes sont disponibles :
 
@@ -799,19 +863,30 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Expéditeur**
 - **Destinataires**
 - **Remplacement du système**
-- **Source de compromission**
+- **IP de l’expéditeur**
 - **Tags**
 
 Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
 
 - **Date (UTC)** **Date de début et** date de **fin**
 - **Raison**
+  - **Ignorer l’local**
+  - **Ip allow**
+  - **Exchange de transport (règle** de flux de messagerie)
+  - **Expéditeurs autorisés par l’organisation**
+  - **Domaines autorisés par l’organisation**
+  - **ZAP non activé**
+  - **Expéditeur Coffre utilisateur**
+  - **Domaine Coffre utilisateur**
+  - **Simulation de hameçonnage**: pour plus d’informations, voir Configurer la remise de simulations de hameçonnage tierces aux utilisateurs et de messages non filtrés à des boîtes aux lettres [SecOps.](configure-advanced-delivery.md)
+  - **Filtre tiers**
+- **Emplacement de remise**: **dossier courrier indésirable non activé** ou boîte aux lettres **SecOps**.
 - **Direction**:
   - **All**
   - **Entrant**
   - **Sortant**
-- **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
-- **Domaine**
+- **Balise**: **tout ou** la balise utilisateur spécifiée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
+- **Domaine**: **tout** ou [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
 - **Type de stratégie**:
   - **All**
   - **Anti-programme malveillant**
@@ -820,12 +895,14 @@ Si vous cliquez **sur Filtre,** les filtres suivants sont disponibles :
   - **Anti-courrier indésirable**
   - **Règle de flux de messagerie** (règle de transport)
   - **Autres**
-- **Nom de la stratégie** (tableau de détails uniquement)
-- **Recipients**
+- **Nom de la stratégie (affichage tableau détails uniquement)**: **Tous**
+- **Destinataires**
 
 <sup>\*</sup>Defender pour Office 365 uniquement
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
+
+Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **[Le bouton](#export-report)** Exporter est disponible.
 
 ## <a name="top-malware-report"></a>Principaux rapports sur les programmes malveillants
 
@@ -837,18 +914,20 @@ Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la &
 
 Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nom d’un type de programme malveillant et le nombre de messages détectés comme ayant ce programme malveillant.
 
-Dans la page **Rapport de programmes malveillants en haut,** une version plus grande du graphique en secteurs s’affiche sur la page du rapport. Le tableau de détails sous le graphique présente les informations suivantes :
+Dans la page **Rapport de programmes malveillants supérieure,** une version plus grande du graphique en secteurs s’affiche sur la page de rapport. Le tableau de détails sous le graphique présente les informations suivantes :
 
 - **Principaux programmes malveillants**
 - **Count**
 
 Si vous cliquez **sur Filtre,** vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
 
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification et](#schedule-report)** une ![ icône Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](#export-report)** sont disponibles.
+
 ![Affichage des principaux rapports sur les programmes malveillants.](../../media/top-malware-report-view.png)
 
-## <a name="url-threat-protection-report"></a>Rapport sur la protection contre les menaces d’URL
+## <a name="url-protection-report"></a>Rapport sur la protection des URL
 
-Le **rapport sur la protection contre les menaces d’URL** est disponible uniquement dans Microsoft Defender Office 365. Pour plus d’informations, voir le rapport sur la [protection contre les menaces d’URL.](view-reports-for-mdo.md#url-threat-protection-report)
+Le **rapport sur la protection des URL** est disponible uniquement dans Microsoft Defender pour Office 365. Pour plus d’informations, voir le [rapport de protection des URL.](view-reports-for-mdo.md#url-protection-report)
 
 ## <a name="user-reported-messages-report"></a>Rapport des messages signalés par l’utilisateur
 
@@ -859,9 +938,9 @@ Le rapport des **messages** signalés par l’utilisateur affiche des informatio
 
 Pour afficher le rapport dans le portail  Microsoft 365 Defender, consultez la & collaboration de rapports e-mail \>  \> **& rapports de collaboration.** Dans la page **& de collaboration,** recherchez les **messages** signalés par l’utilisateur, puis cliquez sur Afficher **les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/userSubmissionReport> . Pour aller aux [soumissions d’administrateur dans le portail Microsoft 365 Defender,](admin-submission.md)cliquez **sur Go to Submissions**.
 
-![Widget de messages signalés par l’utilisateur sur la page rapports de collaboration & courrier électronique.](../../media/user-reported-messages-widget.png)
+![Widget de messages signalés par l’utilisateur sur la page Rapports de collaboration & courrier électronique.](../../media/user-reported-messages-widget.png)
 
-Dans **la** page Messages signalés par l’utilisateur, vous pouvez  filtrer à la fois le graphique et le tableau de détails en cliquant sur Filtrer et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
+Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtrer** et en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
 - **Date signalée :** **heure de début** et heure de **fin**
 - **Auteur du rapport**
@@ -873,7 +952,7 @@ Dans **la** page Messages signalés par l’utilisateur, vous pouvez  filtrer à
   - **Non indésirable**
   - **Hameçonnage**
   - **Courrier indésirable**
-- **Simulation de hameçonnage** **: Oui** ou **Non**
+- **Simulation de hameçonnage**: **Oui** ou **Non**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
@@ -906,6 +985,8 @@ Pour envoyer un message à Microsoft pour analyse, sélectionnez l’entrée du 
 - **Signaler le courrier indésirable**'
 - **Examen du déclencheur** (Defender for Office 365)
 
+Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **[Le bouton](#export-report)** Exporter est disponible.
+
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles autorisations sont nécessaires pour afficher ces rapports ?
 
 Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le portail Microsoft 365 Defender:
@@ -913,15 +994,119 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
 - **Lecteur de sécurité**
-- **Lecteur général**
+- **Lecteur global**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 
-Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement définies. Pour en savoir plus, [consultez La protection contre les menaces.](protect-against-threats.md)
+Si vous ne voyez pas de données dans vos rapports, vérifiez les filtres que vous utilisez et vérifiez que vos stratégies sont correctement définies. Pour en savoir plus, [consultez La protection contre les menaces.](protect-against-threats.md)
+
+## <a name="schedule-report"></a>Rapport de planification
+
+1. Dans la page principale du rapport, cliquez sur ![ Créer une icône De planification.](../../media/m365-cc-sc-create-icon.png) **Créer une planification.**
+2. **L’Assistant Créer un rapport programmé** s’ouvre. Dans la page **Nom du rapport programmé,** examinez ou personnalisez la valeur **nom,** puis cliquez sur **Suivant**.
+3. Dans la page **Définir les préférences,** configurez les paramètres suivants :
+   - **Fréquence**: sélectionnez l’une des valeurs suivantes :
+     - **Hebdomadaire** (par défaut)
+     - **Mensuelle**
+   - **Date de début**: date de début de la génération du rapport. La valeur par défaut est aujourd’hui.
+   - **Date d’expiration**: date de fin de la génération du rapport. La valeur par défaut est un an à partir d’aujourd’hui.
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+4. Dans la page **Destinataires,** choisissez les destinataires du rapport. La valeur par défaut est votre adresse de messagerie, mais vous pouvez en ajouter d’autres.
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+5. Dans la page **Révision,** examinez vos sélections. Vous pouvez cliquer sur le **bouton Retour** ou **le** lien Modifier dans les sections respectives pour apporter des modifications.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**.
+
+### <a name="managed-existing-scheduled-reports"></a>Rapports existants gérés
+
+Pour gérer les rapports programmés que vous avez déjà créés, vous devez suivre les étapes suivantes :
+
+1. In the Microsoft 365 Defender portal, go to **Reports** \> expand Email & **collaboration** select \> Manage **schedules**.
+
+   Pour aller directement à la page **Gérer les planifications,** utilisez <https://security.microsoft.com/ManageSubscription> .
+
+2. Dans la page **Gérer les planifications,** les informations suivantes sont affichées pour chaque rapport programmé :
+   - **Planifier la date de début**
+   - **Nom de la planification**
+   - **Type de rapport**
+   - **Frequency**
+   - **Dernière envoi**
+
+   Recherchez le rapport programmé existant que vous souhaitez modifier.
+
+3. Une fois que vous avez sélectionné le rapport programmé, faites l’une des actions suivantes dans le volant de détails qui s’ouvre :
+   - **Modifier le** nom : cliquez sur ce bouton, modifiez le nom du rapport dans le volant qui s’affiche, puis cliquez sur **Enregistrer**.
+   - **Supprimer la planification**: cliquez sur ce bouton, lisez l’avertissement qui s’affiche (les rapports précédents ne seront plus disponibles pour le téléchargement), puis cliquez sur **Enregistrer**.
+   - **Section Détails de la** planification : cliquez **sur Modifier les préférences** pour modifier les paramètres suivants :
+     - **Fréquence**: **hebdomadaire ou** **mensuel**
+     - **Date de début**
+     - **Date d’expiration**
+
+     Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+   - **Section Destinataires** : cliquez **sur Modifier les destinataires** pour ajouter ou supprimer des destinataires pour le rapport programmé. Lorsque vous avez terminé, cliquez sur **Enregistrer**
+
+   Lorsque vous avez terminé, cliquez sur **Fermer**.
+
+## <a name="request-report"></a>Rapport de demande
+
+1. Dans la page principale du rapport, cliquez sur ![ L’icône Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **Rapport de demande**.
+2. **L’Assistant Créer un rapport à la** demande s’ouvre. Dans la page Du rapport Nom à  **la** demande, examinez ou personnalisez la valeur nom, puis cliquez sur **Suivant**.
+3. Dans la page **Définir les préférences,** examinez ou configurez les paramètres suivants :
+   - **Date de début**: date de début de la génération du rapport. La valeur par défaut est il y a un mois.
+   - **Date d’expiration**: date de fin de la génération du rapport. La valeur par défaut est aujourd’hui.
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+4. Dans la page **Destinataires,** choisissez les destinataires du rapport. La valeur par défaut est votre adresse de messagerie, mais vous pouvez en ajouter d’autres.
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+5. Dans la page **Révision,** examinez vos sélections. Vous pouvez cliquer sur le **bouton Retour** ou **le** lien Modifier dans les sections respectives pour apporter des modifications.
+
+   Lorsque vous avez terminé, cliquez sur **Envoyer**.
+
+6. Une fois que le rapport a été créé, vous êtes conduit à la **page** Nouveau rapport à la demande créée, où vous pouvez cliquer sur Créer un autre rapport **ou** **Terminé**.
+
+   Le rapport est également disponible sur la page **Rapports pour téléchargement,** comme décrit dans la section suivante.
+
+### <a name="download-reports"></a>Télécharger des rapports existants
+
+1. Dans le portail Microsoft 365 Defender, allez sur **Rapports** développez \> **e-mail & collaboration** \> sélectionnez Rapports pour **téléchargement.**
+
+   Pour aller directement à la page **Rapports de téléchargement,** utilisez <https://security.microsoft.com/ReportsForDownload> .
+
+2. Dans la page **Rapports de téléchargement,** les informations suivantes sont affichées pour chaque rapport disponible :
+   - **Date de début**
+   - **Name**
+   - **Type de rapport**
+   - **Dernière envoi**
+   - **Direction**
+
+   Recherchez et sélectionnez le rapport à télécharger.
+
+## <a name="export-report"></a>Rapport d’exportation
+
+1. Dans la page principale du rapport, cliquez sur ![ Icône Exporter.](../../media/m365-cc-sc-download-icon.png) **Exporter** (si ce lien est disponible).
+
+Si vous cliquez sur la page principale du rapport, un volant **de conditions** d’exportation s’affiche et vous pouvez configurer les paramètres suivants :
+
+- **Sélectionnez un affichage à exporter**: sélectionnez l’une des valeurs suivantes :
+  - **Résumé :** Les données sont disponibles pour les 90 derniers jours.
+  - **Détails**: les données sont disponibles pour les 30 derniers jours.
+- **Date (UTC)**: **date de début** et date de **fin.**
+
+Lorsque vous avez terminé la configuration des filtres, cliquez sur **Exporter.** Dans la boîte de dialogue qui s’ouvre, vous pouvez choisir d’ouvrir le fichier, d’enregistrer le fichier ou de mémoriser la sélection.
+
+Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs .csv fichiers sont créés.
 
 ## <a name="related-topics"></a>Sujets associés
 

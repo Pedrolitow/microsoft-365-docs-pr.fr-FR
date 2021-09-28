@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8ea5e2c5efef1becf69f0d5f7e46b57aa89ef94a
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 7057de56de516843fa91e87a50d56e03a2d88e50
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460279"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941927"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Déployer Microsoft Defender pour endpoint sur des appareils iOS non inscrits
 
@@ -32,7 +32,7 @@ ms.locfileid: "59460279"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
 > Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
@@ -44,7 +44,7 @@ Microsoft Defender pour le point de terminaison peut être configuré pour envoy
 ### <a name="pre-requisites"></a>Conditions préalables
 
 1. **Vérifiez que le connecteur est activé.** <br> Sur la console de  [sécurité unifiée,](https://security.microsoft.com)Paramètres points de terminaison fonctionnalités avancées et assurez-vous que Microsoft Intune  >    >   **connexion** est activée.
-2. **Veerify that the connector is enabled on the Intune portal**. <br> Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à **Endpoint Security** Microsoft Defender for Endpoint et assurez-vous que l’état de  >   connexion est activé.
+2. **Vérifiez que le connecteur est activé sur le portail Intune.** <br> Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à **Endpoint Security** Microsoft Defender for Endpoint et assurez-vous que l’état de  >   connexion est activé.
 
 Pour configurer des stratégies de protection des applications avec Microsoft Defender pour Endpoint, utilisez les étapes suivantes :
 
@@ -52,7 +52,7 @@ Pour configurer des stratégies de protection des applications avec Microsoft De
 1. Sélectionnez **Enregistrer**. Vous devriez voir que **l’état de** la connexion est désormais **activé.**
 1. Créez la stratégie de protection des applications : une fois  la configuration de votre connecteur Microsoft Defender pour point de terminaison terminée, accédez aux stratégies de protection des applications (sous Stratégie) pour créer une stratégie ou mettre à jour une stratégie \>  existante.
 1. Sélectionnez les paramètres de plateforme, **d’applications, de protection** des données et d’accès requis par votre organisation pour votre stratégie.
-1. Dans **les conditions de lancement** \> **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il doit être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront Bloquer **l’accès** ou **Effacer les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
+1. Dans **les conditions de lancement** \> **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il doit être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront **Bloquer** l’accès ou Effacer **les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
 1. Terminez avec Affectations et enregistrez votre stratégie.
 
 Pour plus d’informations sur la stratégie de protection des applications ou de gestion des applications, voir les paramètres de stratégie de protection des [applications iOS.](/mem/intune/apps/app-protection-policy-settings-ios)

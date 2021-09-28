@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: 8831e63e8c522513828a9dc3af83c5baf586f5f0
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 0f3b93d13d503ef09edc98f3f9c90f9a1f2a0a32
+ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480987"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59933848"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 
@@ -31,21 +31,21 @@ La surveillance d’Exchange Online dans le <a href="https://go.microsoft.com/fw
 - **Infrastructure tierce** : le programme détecte un problème dans une infrastructure tierce sur laquelle votre organisation a pris une dépendance. Votre organisation doit alors effectuer l’action nécessaire pour résoudre le problème. Par exemple, un fournisseur de services d’émission de jeton de sécurité (STS) tiers limite les transactions d’authentification utilisateur et empêche les utilisateurs de se connecter à Exchange Online.
 - **Infrastructure cliente** : le programme détecte un problème dans l’infrastructure de votre organisation. Celle-ci doit alors effectuer l’action nécessaire pour résoudre le problème. Par exemple, les utilisateurs ne peuvent pas accéder à Exchange Online, car ils ne peuvent pas obtenir de jeton d’authentification via un fournisseur STS hébergé par votre organisation en raison d’un certificat arrivé à expiration.
 
-Voici un exemple de page d’état du **service** dans le Centre d'administration Microsoft 365, disponible à partir de **l’état** du service de santé pour les  >  [ ****](https://go.microsoft.com/fwlink/p/?linkid=842900) scénarios d’organisation.
+Voici un exemple de page **Intégrité des services** dans le Centre d'administration Microsoft 365, disponible **Intégrité > Intégrité des services** pour l’organisation et les scénarios des [comptes prioritaires](../admin/setup/priority-accounts.md).
 
 ![Page Intégrité des services dans le Centre d’administration Microsoft 365.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
 
-**Les problèmes au niveau de votre organisation** seront identifiés et utilisés par la surveillance au niveau de l’organisation.
+**Les problèmes au sein de votre organisation** seront identifiés et utilisés par la surveillance au niveau de l’organisation et la surveillance des comptes prioritaires.
 
-La valeur de la colonne Santé **sous Problèmes au niveau de votre organisation indique si l’infrastructure** de l’organisation ou les logiciels tiers affectent **l’expérience d’état du** service des utilisateurs de votre organisation avec Exchange Online. Les conseils ou incidents nécessitent *vos* actions pour résoudre le problème.
+La valeur de la colonne **Intégrité** sous **Les problèmes au sein de votre organisation** indique si l’infrastructure de votre organisation ou les logiciels tiers affectent l’expérience d’intégrité des services des utilisateurs et/ou des comptes prioritaires de votre organisation dans Exchange Online. Les conseils ou incidents nécessitent *vos* actions pour résoudre le problème.
 
 La valeur **de la colonne** d’état sous État du **service Microsoft Corporation** indique que le service est sain ou qu’il a des conseils ou des incidents basés sur les services cloud que Microsoft maintient.
 
-Voici un exemple de page **de surveillance Exchange Online dans le Centre d'administration Microsoft 365 qui indique l**  > ’état d’état des scénarios [ **au niveau de l’organisation, disponible à partir du**](https://go.microsoft.com/fwlink/p/?linkid=842900)  >  **service d’Exchange Online**.
+Voici un exemple de page de surveillance Exchange Online dans le Centre d'administration Microsoft 365 qui indique l’intégrité d’état des scénarios de comptes prioritaires et au niveau de l’organisation disponibles à partir de **Intégrité > Intégrité des services > Exchange Online**.
 
 ![Page de surveillance Exchange Online dans le Centre d’administration Microsoft 365.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example.png)
 
-La page de surveillance **Exchange Online** indique si le service Exchange Online est intègre ou non, et si des incidents ou conseils associés sont présents. Avec la surveillance Exchange Online, vous pouvez consulter l’état d’intégrité des services pour des scénarios d’e-mails spécifiques. Vous pouvez également consulter des signaux en temps réel pour déterminer l’impact par scénario.
+La page de surveillance **Exchange Online** indique si le service Exchange Online est intègre ou non, et si des incidents ou conseils associés sont présents. Avec la surveillance Exchange Online, vous pouvez consulter l’état d’intégrité des services pour des scénarios d’e-mails spécifiques. Vous pouvez également consulter des signaux en temps réel pour déterminer l’impact par scénario. Vous pouvez également voir l’intégrité des scénarios de compte prioritaires.
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -77,7 +77,7 @@ Avec Exchange Online surveillance des données prend en charge les scénarios su
    >[!Note]
    > Le programme détermine le nombre d’utilisateurs actifs selon une activité unique. Par exemple, lorsqu’un utilisateur lit un e-mail. Il rend compte seulement des 30 dernières minutes d’activité.
 
-- **Connectivité des** applications : la connectivité estimée est basée sur le pourcentage de connexions synthétiques réussies entre les appareils et les Exchange Online de votre organisation, et peut inclure des problèmes en dehors du contrôle de Microsoft Corporation. 
+- **Connectivité des** applications : la connectivité estimée est basée sur le pourcentage de connexions synthétiques réussies entre les appareils et les Exchange Online de votre organisation, et peut inclure des problèmes en dehors du contrôle de Microsoft Corporation. Pour plus d’informations, voir [Optiques de connectivité Microsoft 365](microsoft-365-connectivity-optics.md).
 
 - **Authentification de base et authentification moderne** : nombre d’utilisateurs correctement validés dans le service Exchange Online.
 
@@ -86,6 +86,44 @@ Avec Exchange Online surveillance des données prend en charge les scénarios su
   ![Exemple de surveillance de l’intégrité d’Exchange pour la remise du courrier.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-scenario-example.png)
 
 Dans tous ces scénarios, les chiffres clés s’appliquent aux 30 dernières minutes dans le tableau de bord principal. Les affichages détaillés pour chacun de ces scénarios illustrent la tendance quasiment en temps réel pendant sept jours avec un agrégat de 30 minutes comparé à la semaine précédente.
+
+## <a name="priority-accounts-monitoring-scenarios"></a>Scénarios de surveillance des comptes prioritaires
+
+Avec la surveillance des comptes prioritaires Exchange Online, vous pouvez afficher l’intégrité des scénarios suivants après avoir configuré les [comptes prioritaires](/microsoft-365/admin/setup/priority-accounts) :
+
+- Gestion des licences Exchange
+
+- Stockage de boîtes aux lettres
+
+- Limite de message
+
+- Sous-dossiers par dossier
+
+- Hiérarchie de dossiers
+
+- Éléments récupérables
+
+Le scénario de gestion des licences Exchange vérifie si le compte prioritaire n’est pas en mesure de se connecter en raison de problèmes de licence non valides, qui peuvent être résolus par l’administrateur client.
+
+Les cinq autres scénarios ci-dessus vérifient si la boîte aux lettres de votre compte prioritaire est proche ou a atteint les limites décrites dans [Limites Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
+
+Pour ces scénarios, vous pouvez voir des avertissements et des incidents actifs et résolus affectant vos comptes prioritaires. Les informations d’identification des comptes prioritaires seront affichées dans les informations d’avertissement ou d’incident, ainsi que dans les recommandations. Voici un exemple de la page sur **Intégrité > Intégrité des services > Exchange Online**.
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-example.png" alt-text="Exemple d’incidents et d’avertissements actifs et résolus affectant vos comptes prioritaires":::
+
+Dans le volet de compte affecté, la colonne **État** a les valeurs suivantes :
+
+- Résolu : le problème à l’origine de l’avertissement ou de l’incident a été résolu pour le compte prioritaire. Il n’y a plus de problème. 
+
+- Actif : le problème à l’origine de l’avertissement ou de l’incident est en cours pour le compte prioritaire. Le problème reste. 
+
+- Différé : le problème à l’origine de l’avertissement ou de l’incident n’a pas été résolu pour le compte prioritaire depuis 96 heures, il est donc suspendu. Le problème reste. 
+
+Voici un exemple.
+
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-status-column-example.png" alt-text="Exemple de colonne d’état dans le volet de compte affecté":::
+
+Un avertissement ou un incident est résolu si aucun compte n’est encore dans l’état **Actif**. 
 
 ## <a name="send-us-feedback"></a>Nous envoyer des commentaires
 
@@ -103,13 +141,13 @@ Vous pouvez envoyer vos commentaires de deux manières :
 
 Tout d’abord, vérifiez que vous avez activé le nouveau Centre d’administration sur la page **Accueil** du Centre d’<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administration Microsoft 365</a>.
 
-Vérifiez que vous remplissez les deux conditions suivantes : 
+Vérifiez que vous remplissez les deux conditions suivantes :
 
-- Votre organisation doit avoir un nombre de licences d’au moins 5 000, soit une combinaison de ces produits : Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Votre organisation doit avoir un nombre de licences d’au moins 5 000, soit une combinaison de ces produits : Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5.
 
-- Votre organisation doit avoir au moins 50 utilisateurs Exchange Online actifs par mois.
+- Votre organisation doit avoir au moins 50 utilisateurs actifs mensuels pour un ou plusieurs services Microsoft 365 principaux, notamment les applications Microsoft Teams, OneDrive Entreprise, SharePoint Online, Exchange Online et Office.
 
-Si le nombre de licences de votre organisation est inférieur à 5 000 utilisateurs et que le nombre d’utilisateurs actifs par mois passe au-dessous des 50, la surveillance Exchange Online ne sera pas activée tant que ces conditions ne seront pas remplies.
+Si le nombre de licences de votre organisation est inférieur à 5 000 utilisateurs et que le nombre d’utilisateurs actifs par mois passe au-dessous de 50 dans les principaux services, la surveillance Exchange Online ne sera pas activée tant que ces conditions ne seront pas remplies.
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. Le nombre d’utilisateurs actifs dans le tableau de bord pour chaque client semble faible. Nous avons attribué un grand nombre de licences actives à des utilisateurs. Qu’est-ce que cela signifie ?
 
@@ -146,4 +184,11 @@ La surveillance se concentre sur les métadonnées de service et le contenu util
 ## <a name="see-also"></a>Voir aussi
 
 - [Comment vérifier l’intégrité du service Microsoft 365](view-service-health.md) 
+
 - [Limites d’Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits)
+
+- [Gérer et surveiller les comptes prioritaires](/microsoft-365/admin/setup/priority-accounts)
+
+- [Utilisation de comptes prioritaires dans Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
+
+- [Alertes de service pour l’utilisation des boîtes aux lettres dans la surveillance Exchange Online](microsoft-365-mailbox-utilization-service-alerts.md)

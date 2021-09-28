@@ -20,12 +20,12 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80ba6c1f7c04a48b5472a12db75d602bd503465e
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 2613b8547d27ce39a14bccfb5e3bfe63f66de36f
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483305"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942088"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports defender pour Office 365 dans le portail Microsoft 365 Defender web
 
@@ -35,7 +35,7 @@ ms.locfileid: "59483305"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les organisations Microsoft Defender pour Office 365 (par exemple, les abonnements Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 1 ou Microsoft Defender pour les modules de développement Office 365 Plan 2) contiennent de nombreux rapports de sécurité. Si vous avez les [autorisations nécessaires,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)vous pouvez afficher et télécharger ces rapports dans le portail Microsoft 365 Defender web.
+Microsoft Defender pour les organisations Office 365 (par exemple, les abonnements Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 1 ou Microsoft Defender pour les modules add-ons plan 2 de Office 365) contiennent de nombreux rapports de sécurité. Si vous avez les [autorisations nécessaires,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)vous pouvez afficher et télécharger ces rapports dans le portail Microsoft 365 Defender web.
 
 ## <a name="view-and-download-reports"></a>Consulter et télécharger les rapports
 
@@ -55,9 +55,9 @@ Les organisations Microsoft Defender pour Office 365 (par exemple, les abonnemen
 
 > [!NOTE]
 >
-> Les rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365 sont décrits dans l’affichage des rapports de sécurité de messagerie dans [le portail Microsoft 365 Defender messagerie.](view-email-security-reports.md)
+> Les rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365 sont décrits dans l’affichage des rapports de sécurité de messagerie dans [le portail Microsoft 365 Defender.](view-email-security-reports.md)
 >
-> Les rapports liés au flux de messagerie sont désormais dans le Centre d’administration Exchange(EAC). Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans le nouveau [centre d Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Les rapports liés au flux de messagerie sont désormais dans le Centre d’administration Exchange(EAC). Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans [le nouveau centre Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="safe-attachments-file-types-report"></a>Coffre Rapport sur les types de fichiers de pièces jointes
 
@@ -71,7 +71,7 @@ Les organisations Microsoft Defender pour Office 365 (par exemple, les abonnemen
 
 ## <a name="mail-latency-report"></a>Rapport de latence du courrier
 
-Le **rapport de latence de messagerie** vous présente une vue agrégée de la latence de remise et de détonation du courrier au sein de votre organisation. Les délais de remise du courrier dans le service sont affectés par un certain nombre de facteurs, et le temps de remise absolu en secondes n’est souvent pas un bon indicateur de réussite ou un problème. Un délai de remise lent d’un jour peut être considéré comme un délai de livraison moyen sur un autre jour, ou inversement. Cela tente de qualifier la remise des messages en fonction de données statistiques sur les délais de remise observés d’autres messages.
+Le **rapport de latence de messagerie** vous présente une vue agrégée de la latence de remise et de détonation du courrier au sein de votre organisation. Les délais de remise du courrier dans le service sont affectés par un certain nombre de facteurs, et le temps de remise absolu en secondes n’est souvent pas un bon indicateur de réussite ou un problème. Un délai de remise lent d’un jour peut être considéré comme un délai de livraison moyen sur un autre jour, ou inversement. Cela tente de qualifier la remise des messages en fonction de données statistiques sur les temps de remise observés d’autres messages.
 
 La latence côté client et réseau n’est pas incluse.
 
@@ -115,22 +115,22 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 
 Le rapport d’état de la **protection** contre les menaces est un affichage unique qui regroupe des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) et Microsoft Defender pour Office 365. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
 
-## <a name="url-threat-protection-report"></a>Rapport sur la protection contre les menaces d’URL
+## <a name="url-protection-report"></a>Rapport sur la protection des URL
 
-Le **rapport sur la protection contre** les menaces d’URL fournit des affichages récapitulatifs et des tendances pour les menaces détectées et les actions entreprises sur les clics d’URL dans le cadre [Coffre liens.](safe-links.md) Ce rapport ne dispose pas des données de clic des utilisateurs pour lequel l’option Ne pas suivre les **clics** utilisateur est sélectionnée pour la stratégie de liens Coffre appliquée.
+Le **rapport de protection des URL** fournit des vues récapitulatifs et de tendance pour les menaces détectées et les actions entreprises sur les clics d’URL dans le cadre Coffre [liens.](safe-links.md) Ce rapport ne dispose pas des données de clic des utilisateurs pour lequel l’option Ne pas suivre les **clics** utilisateur est sélectionnée pour la stratégie de liens Coffre appliquée.
 
 Pour afficher le rapport, ouvrez [le portail Microsoft 365 Defender,](https://security.microsoft.com)allez à Rapports e-mail &  \> **collaboration** \> **e-mail & rapports de collaboration.** Dans la page **Rapports de collaboration & courrier** électronique, recherchez la page protection des **URL,** puis cliquez sur **Afficher les détails.** Pour aller directement dans le rapport, ouvrez <https://security.microsoft.com/reports/URLProtectionActionReport> .
 
 ![Widget de rapport sur la protection des URL dans la page Rapports de collaboration & courrier électronique.](../../media/url-protection-report-widget.png)
 
-Les vues disponibles sur la page du rapport sur la protection contre les menaces **d’URL** sont décrites dans les sections suivantes.
+Les vues disponibles sur la page du rapport **de protection des URL** sont décrites dans les sections suivantes.
 
 > [!NOTE]
-> Il s’agit *d’un rapport de tendance de protection,* ce qui signifie que les données représentent des tendances dans un jeu de données plus important. Par conséquent, les données des graphiques ne sont pas disponibles en temps réel ici, mais les données du tableau de détails le sont, vous pouvez donc voir une légère différence entre les deux. Les graphiques sont actualisé toutes les quatre heures et contiennent des données pour les 90 derniers jours.
+> Il s’agit *d’un rapport de tendance de protection,* ce qui signifie que les données représentent des tendances dans un jeu de données plus important. Par conséquent, les données des graphiques ne sont pas disponibles en temps réel ici, mais les données du tableau de détails le sont, de sorte que vous pouvez voir une légère différence entre les deux. Les graphiques sont actualisé toutes les quatre heures et contiennent des données pour les 90 derniers jours.
 
 ### <a name="view-data-by-url-click-protection-action"></a>Afficher les données par action de protection par clic d’URL
 
-![Url click protection action view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![Url click protection action view in the URL protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 **L’affichage des données par url de l’action de protection** par clic affiche le nombre de clics d’URL par les utilisateurs de l’organisation et les résultats du clic :
 
@@ -150,7 +150,7 @@ Si vous cliquez sur **Filtres,** vous pouvez modifier le rapport et le tableau d
   - **Bloqué et cliqué**
   - **Clics au cours de l’analyse**
 - **Domaines :** les domaines d’URL répertoriés dans les résultats du rapport.
-- **Recipients**
+- **Destinataires**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
@@ -164,7 +164,7 @@ Le tableau de détails sous le graphique fournit l’affichage en temps quasi r�
 
 ### <a name="view-data-by-url-click-by-application"></a>Afficher les données par URL en cliquant par application
 
-![Url click by application view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![Cliquez sur l’URL en affichage application dans le rapport de protection des URL.](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 L’affichage des données par clic URL par **vue d’application** indique le nombre de clics d’URL par les applications qui Coffre liens :
 
@@ -182,7 +182,7 @@ Si vous cliquez sur **Filtres,** vous pouvez modifier le rapport et le tableau d
 - **Date (UTC)**: **date de début et date** de **fin**
 - **Détection**: applications disponibles dans le graphique.
 - **Domaines :** les domaines d’URL répertoriés dans les résultats du rapport.
-- **Recipients**
+- **Destinataires**
 
 Lorsque vous avez terminé la configuration des filtres, cliquez sur **Appliquer,** **Annuler** ou **Effacer les filtres.**
 
@@ -204,9 +204,9 @@ Outre les rapports décrits dans cet article, plusieurs autres rapports sont dis
 
 |Rapport|Rubrique|
 |---|---|
-|**Détections** de l’Explorateur (Microsoft Defender  Office 365 Plan 2) ou en temps réel (Microsoft Defender Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
+|**Explorateur** (Microsoft Defender pour Office 365 Plan 2) ou **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
 |Rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365|[Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)|
-|Rapports de flux de messagerie dans le Centre Exchange’administration Centrale (EAC)|[Rapports de flux de messagerie dans le nouveau centre Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|Rapports de flux de messagerie dans le Centre Exchange’administration Centrale (EAC)|[Rapports de flux de messagerie dans le nouveau centre d Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |
 
 Cmdlets de rapports PowerShell :
@@ -232,11 +232,11 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
 - **Lecteur de sécurité**
-- **Lecteur général**
+- **Lecteur global**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 

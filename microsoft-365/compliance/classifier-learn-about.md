@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu pour le labling ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: ea4be5c5e429e3305373229020bfb5444912b365
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 086ca0575bc701deccbb7c49dbc7c71bdd838d5a
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164092"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942012"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -34,7 +34,7 @@ La classification et l’étiquetage du contenu afin qu’il puisse être proté
 
 Cette méthode nécessite un juge humain et une action. Un administrateur peut utiliser les étiquettes et les types d’informations sensibles pré-existants ou créer les leurs, puis les publier. Les utilisateurs et les administrateurs les appliquent au contenu à mesure qu’ils le rencontrent. Vous pouvez ensuite protéger le contenu et gérer sa disposition.
 
-## <a name="automated-pattern-matching"></a>Correspondance automatique des modèles
+## <a name="automated-pattern-matching"></a>Correspondance de modèle automatisée
 
 Cette catégorie de mécanismes de classification inclut la recherche de contenu par :
 
@@ -47,7 +47,7 @@ Les étiquettes de sensibilité et de rétention peuvent ensuite être appliqué
 
 ## <a name="classifiers"></a>Classifieurs
 
-Cette méthode de classification est particulièrement bien adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèle. Cette méthode de classification consiste davantage à former un classifieur à identifier un élément en fonction de ce qu’il est, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples de contenu que vous souhaitez classer. Commencez par lui donner des exemples qui sont certainement dans la catégorie. Une fois qu’il les traite, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à l’entrée d’un élément donné dans la catégorie que vous construisez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
+Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifié par les méthodes manuelles ou automatisées de correspondance de modèle. Cette méthode de classification consiste davantage à former un classifieur à identifier un élément en fonction de ce qu’il est, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en regardant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par lui donner des exemples qui sont certainement dans la catégorie. Une fois qu’il les traite, vous le testez en lui donnant un mélange d’exemples correspondants et non correspondants. Le classifieur effectue ensuite des prédictions quant à l’entrée d’un élément donné dans la catégorie que vous construisez. Vous confirmez ensuite ses résultats, en triant les vrais positifs, les vrais négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prédictions. 
 
 Lorsque vous publiez le classifieur, il trie les éléments dans des emplacements tels que SharePoint Online, Exchange et OneDrive, et classifie le contenu. Après avoir publié le classificateur, vous pouvez continuer à l’entraîner à l’aide d’un processus de commentaires semblable au processus de formation initial.
 
@@ -57,7 +57,7 @@ Les [classifieurs](apply-sensitivity-label-automatically.md)intégrés et les cl
 Les étiquettes de sensibilité peuvent utiliser des classifieurs comme conditions. Voir Appliquer automatiquement une étiquette de sensibilité [au contenu.](apply-sensitivity-label-automatically.md)
 
 > [!IMPORTANT]
-> Les classifieurs fonctionnent uniquement avec les éléments qui ne sont pas chiffrés et qui sont en anglais.
+> Les classifieurs fonctionnent uniquement avec les éléments qui ne sont pas chiffrés.
 
 ## <a name="types-of-classifiers"></a>Types de classifieurs
 
@@ -71,11 +71,11 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 > [!CAUTION]
 > Nous déprécions  le classificateur de langage choquant pré-entraîné, car il a produit un grand nombre de faux positifs. Ne l’utilisez pas et si vous l’utilisez actuellement, vous devez en déplacer vos processus d’entreprise. Nous vous recommandons plutôt **d’utiliser** les classifieurs pré-formés contre les menaces, les blasphémités et le harcèlement.  
 
-- Cv : détecte les éléments qui sont des comptes textuels des **qualifications** personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
+- **Cv :** détecte les éléments qui sont des comptes textuels de qualifications personnelles, pédagogiques, professionnelles, professionnelles et autres informations d’identification personnelle d’un candidat
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub
     - ActionScript
     - C
-    - C #
+    - C#
     - C++
     - Îlesjure
     - CoffeeScript
@@ -115,6 +115,9 @@ Ceux-ci apparaissent dans **la Centre de conformité Microsoft 365** classifica
 > [!IMPORTANT]
 > Veuillez noter que le langage choquant, le harcèlement, la blasphémité, la discrimination et les classifieurs de menaces fonctionnent uniquement avec du texte utilisable dans une recherche et ne sont pas une liste exhaustive ou complète de termes ou de langues dans ces domaines. En outre, les normes linguistiques et culturelles changent continuellement et, à la lumière de ces exigences, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Bien que les classifieurs aident votre organisation à détecter ces domaines, ils ne sont pas destinés à fournir l’unique moyen de détecter ou d’adresser l’utilisation de ce langage dans votre organisation. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’analyse, au blocage, à la suppression et à la rétention de tout contenu identifié par un classifieur pré-formé, y compris la conformité avec la confidentialité locale et d’autres lois applicables. Microsoft encourage les conseils juridiques avant le déploiement et l’utilisation.
 
+Les classifieurs pré-formés peuvent analyser le contenu dans ces langues :
+
+• Chinois (simplifié) • Anglais • Français • Allemand • Italien • Japonais • Portugais • Espagnol
 
 ### <a name="custom-classifiers"></a>Classifieurs personnalisés
 

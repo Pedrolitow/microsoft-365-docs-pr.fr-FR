@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1dc5a22fe23a64669c7ab89ecd2141aff1659166
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9fc149a8c76180ca2baf0bd38bef149f00611899
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182976"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942348"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -114,6 +114,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
      - **Section Expérience de rapport utilisateur**
        - **Avant** de signaler  l’onglet : dans les zones Titre et corps du **message,** entrez le texte descriptif que les utilisateurs voient avant de signaler un message à l’aide du add-in Signaler un message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi (courrier indésirable, non indésirable, hameçonnage, etc.).
        - **Onglet** Après rapport  :  dans les zones Titre et Confirmation, entrez le texte descriptif que les utilisateurs voient après qu’ils ont signalé un message à l’aide du add-in Report Message ou du add-in Report Phishing. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
+       -  **Affichage uniquement lorsque l’utilisateur signale** un hameçonnage : cochez cette option si vous souhaitez afficher le message uniquement lorsqu’un e-mail est signalé comme hameçonnage. Si ce n’est pas le cas, les messages vérifiés s’afficheront pour n’importe quel type de rapport.
 
        Comme indiqué sur la page, si vous sélectionnez une option qui envoie les messages signalés à Microsoft, le texte suivant est également ajouté à la notification :
 
@@ -121,6 +122,8 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
    - **Bouton Signaler Outlook** \> Microsoft **Off** ![ Basculez. : sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du module de rapport de message, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les ](../../media/scc-toggle-off.png) paramètres suivants :
      - Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur.** Dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante qui peut recevoir du courrier électronique.
+
+   - **Microsoft Outlook bouton Signaler un message**: activez cette fonctionnalité si vous souhaitez permettre aux utilisateurs finaux de signaler des messages en quarantaine.
 
    Lorsque vous avez terminé, cliquez sur **Confirmer.** Pour effacer ces valeurs, cliquez sur **Restaurer**
 

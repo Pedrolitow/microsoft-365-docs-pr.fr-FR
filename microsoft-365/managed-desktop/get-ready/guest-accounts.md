@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: bb181ab213cc02e5289681b8c3965a96bd8b8dcb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 646007176a35506f0c30d6b7092d70f52f762e57
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182075"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941978"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
@@ -30,6 +30,8 @@ Microsoft Manged Desktop nécessite les paramètres suivants dans votre organisa
     -   Si vous sélectionnez Autoriser les invitations uniquement aux domaines **spécifiés (les plus restrictifs),** assurez-vous que Microsoft.com est répertorié dans les domaines cibles. 
 
 Si vous définissez des restrictions qui interagissent avec ces paramètres, veillez à exclure les Azure Active Directory des comptes de **service Workplace modernes.** Par exemple, si vous avez une stratégie d’accès conditionnel qui empêche les comptes invités d’accéder au portail Intune, excluez le groupe Comptes de **service** Workplace modernes de cette stratégie.
+
+Pour plus d’informations, voir [Activer la collaboration externe B2B et gérer les personnes qui peuvent inviter des invités.](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings)
 
 ## <a name="unlicensed-intune-admin"></a>Administrateur Intune sans permis
 
