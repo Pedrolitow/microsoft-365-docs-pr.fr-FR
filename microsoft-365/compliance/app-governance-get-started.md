@@ -15,31 +15,34 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: d733d62927e78b99ad5289206caf51df3459522c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c0e5b92f534533fb03505421b5e6a49208891443
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401097"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942027"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
+[![S’inscrire à l’essai gratuit de gouvernance d’application](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+
 Pour commencer à utiliser le module complémentaire de gouvernance des applications pour Microsoft Cloud App Security, vous devez effectuer trois étapes:
 
-## <a name="step-1-meet-the-licensing-and-administrator-role-prerequisites"></a>Étape 1 :Respecter les conditions préalables relatives aux licences et aux rôles d’administrateur.
+1. [Vérifiez les conditions préalables pour les licences et les administrateurs.](#licensing-and-administrator-role-prerequisites)
+1. [Inscrivez-vous à la version d’essai de gouvernance des applications.](#sign-up-for-free-trial-of-app-governance)
+1. [Ajoutez l’intégration MCAS](#add-integration-with-mcas).
 
-1. Vérifiez que votre compte dispose du [niveau de licence approprié](#licensing-for-app-governance). La gouvernance des applications est une fonctionnalité complémentaire pour Microsoft Cloud App Security (MCAS). Par conséquent, MCAS doit être présent dans votre compte en tant que produit autonome ou dans le cadre des différents packages de licences.
-1. Vous devez avoir l’un des [rôles d’administrateur](#administrator-roles) répertoriés ci-dessous pour accéder aux pages de gouvernance des applications dans le portail.
-1. L'adresse de facturation de votre organisation doit se trouver dans l'une[ des zones prises en charge en Amérique du Nord, en Europe ou en Afrique](app-governance-countries.md) afin d'activer l'essai gratuit.
 
-## <a name="step-2-sign-up-for-free-trial-of-app-governance"></a>Étape 2 : S’inscrire à un essai gratuit de la gouvernance des applications
+## <a name="sign-up-for-free-trial-of-app-governance"></a>Inscrivez-vous à un essai gratuit de la gouvernance des applications
 
 Pour les clients Microsoft 365 existants :
 
-1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
+1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
 1. Effectuez les étapes pour ajouter la gouvernance des applications. L’inscription est simple, comme illustré dans le graphique suivant.
 
-:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Étapes simples pour ajouter la gouvernance des applications à votre compte.":::
+<!--
+:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
+-->
 
 Si vous n’êtes pas déjà client Microsoft 365, vous pouvez vous inscrire à un essai gratuit :
 
@@ -47,7 +50,7 @@ Si vous n’êtes pas déjà client Microsoft 365, vous pouvez vous inscrire à 
 1. Sous  **Essayez Microsoft 365 pour les entreprises** sélectionnez **Essai gratuit d’un mois**.
 1. Effectuez les étapes de l’inscription.
 
-## <a name="step-3-add-integration-with-mcas"></a>Étape 3 : Ajouter une intégration à MCAS
+## <a name="add-integration-with-mcas"></a>Ajouter une intégration à MCAS
 
 Conditions préalables :
 
@@ -61,17 +64,19 @@ Pour activer la synchronisation de la gouvernance des applications avec Sécurit
 1. Sous **Protection contre les menaces**, sélectionnez **Gouvernance des applications**.
 1. Sélectionnez **Activer l’intégration de la gouvernance des applications**, puis sélectionnez **Enregistrer**.
 
-Ensuite, passez en revue les stratégies nouvellement activées dans MCAS. L’affichage des nouvelles stratégies peut prendre quelques minutes une fois l’intégration activée.
+Pour vérifier que l’intégration avec MCAS est active, recherchez les stratégies de gouvernance d’application répertoriées ci-dessous pour apparaître dans MCAS. L’affichage des nouvelles stratégies peut prendre quelques minutes une fois l’intégration activée.
 
 - Réputation de l’application OAuth Microsoft 365
 - Détection de l'hameçonnage de OAuth Microsoft 365
 - Gouvernance des applications OAuth Microsoft 365
-- Examiner le widget Gouvernance des applications dans le tableau de bord MCAS
-- Examinez les alertes de gouvernance d'applications nouvellement générées dans les alertes MCAS.
-- Examinez les stratégies OAuth MCAS Microsoft 365 dans la liste des stratégies de gouvernance des applications.
-- Examinez les alertes OAuth MCAS Microsoft 365 nouvellement générées dans les alertes de gouvernance des applications
 
-## <a name="licensing-for-app-governance"></a>Licences pour la gouvernance des applications
+## <a name="licensing-and-administrator-role-prerequisites"></a>Conditions préalables aux licences et au rôle d’administrateur
+
+1. Vérifiez que votre compte dispose du [niveau de licence approprié](#licensing-for-app-governance). La gouvernance des applications est une fonctionnalité complémentaire pour Microsoft Cloud App Security (MCAS). Par conséquent, MCAS doit être présent dans votre compte en tant que produit autonome ou dans le cadre des différents packages de licences.
+1. Vous devez avoir l’un des [rôles d’administrateur](#administrator-roles) répertoriés ci-dessous pour accéder aux pages de gouvernance des applications dans le portail.
+1. L'adresse de facturation de votre organisation doit se trouver dans l'une[ des zones prises en charge en Amérique du Nord, en Europe ou en Afrique](app-governance-countries.md) afin d'activer l'essai gratuit.
+
+### <a name="licensing-for-app-governance"></a>Licences pour la gouvernance des applications
 
 Avant de vous lancer dans la gouvernance des applications, vous devez confirmer votre centre d'administration [Microsoft 365 – les abonnements](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) et les éventuels modules complémentaires. Pour accéder à la gouvernance des applications et l’utiliser, votre organisation doit disposer de l’un des abonnements ou modules complémentaires suivants :
 
@@ -98,7 +103,7 @@ Avant de vous lancer dans la gouvernance des applications, vous devez confirmer 
 - Microsoft 365 A5 sans Audioconférence pour les étudiants
 - Avantages de l’utilisation de Microsoft 365 A5 pour les étudiants sans Audioconférence
 
-## <a name="administrator-roles"></a>Rôles d'administrateur
+### <a name="administrator-roles"></a>Rôles d'administrateur
 
 > [!NOTE]
 > Seul un rôle d’administrateur global peut activer l'essai gratuit de la gouvernance de l'application.
@@ -120,9 +125,9 @@ Voici les fonctionnalités de chaque rôle.
 
 | Rôle | Lire le tableau de bord | Lire toutes les applications |Lire les stratégies | Créer, mettre à jour ou supprimer des stratégies | Lire les alertes | Mettre à jour des alertes | Lire les paramètres | Définir les paramètres de mise à jour | Lire la correction | Mettre à jour la correction |
 |:-------|:-----|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-| Administrateur de l'application | ![Coche.](..\media\checkmark.png) | ![Marque de vérification.](..\media\checkmark.png) | ![Marque de vérification.](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
+| Administrateur de l'application | ![Coche.](..\media\checkmark.png) | ![Coche.](..\media\checkmark.png) | ![Coche.](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
 | Administrateur de l'application cloud | ![Coche](..\media\checkmark.png) | | | | | | | | | |
-| Administrateur de la société | ![Coche.](..\media\checkmark.png) | ![Marque de vérification.](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
+| Administrateur de la société | ![Coche.](..\media\checkmark.png) | ![Coche.](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
 | Administrateur de conformité | ![Coche.](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |  | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | |
 | Administrateur de conformité des données | ![Coche.](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |  | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | |
 | Lecteur de conformité | ![Coche.](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |  | ![Coche](..\media\checkmark.png) |  | ![Coche](..\media\checkmark.png) |  | | |
