@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 43a2b3b3e211215e8180308360a546a8454d5bc2
-ms.sourcegitcommit: 5eecb0ccc70bf75779411d80147ed5588132b103
+ms.openlocfilehash: 72238bd3f9ccabc64e0846f0384397d14f752bd9
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59461607"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988294"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -228,13 +228,15 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 
 Le mode simulation est propre aux stratégies d’étiquetage automatique et est intégré au flux de travail. Vous ne pourrez étiqueter automatiquement les documents et les courriers que lorsque votre stratégie aura exécuté au moins une simulation.
 
+Le mode simulation prend en charge jusqu’à 1 000 000 fichiers mis en correspondance. Si le nombre de fichiers correspond à un nombre supérieur à celui d’une stratégie d’étiquetage automatique, vous ne pouvez pas activer la stratégie pour appliquer les étiquettes. Dans ce cas, vous devez reconfigurer la stratégie d’étiquetage automatique pour que moins de fichiers correspondent et afin de ré-exécuter la simulation. Ce maximum de 1 000 000 fichiers mis en correspondance s’applique uniquement au mode simulation et non à une stratégie d’étiquetage automatique déjà activée pour appliquer des étiquettes de confidentialité.
+
 Flux de travail pour une stratégie d’étiquetage automatique :
 
 1. Créer et configurer une stratégie d’étiquetage automatique.
 
 2. Exécutez la stratégie en mode de simulation, ce qui peut prendre 12 heures. La simulation effectuée déclenche une notification par courrier qui est envoyée à l’utilisateur configuré pour recevoir les [alertes d’activité](alert-policies.md).
 
-3. Examinez les résultats et, si nécessaire, affinez votre stratégie. Réexécutez le mode de simulation et attendez sa fin.
+3. Examinez les résultats et, si nécessaire, affinez votre stratégie. Par exemple, vous devrez peut-être modifier les règles de stratégie pour réduire les faux positifs ou supprimer certains sites afin que le nombre de fichiers correspondants ne dépasse pas 1 000 000. Réexécutez le mode de simulation et attendez sa fin.
 
 4. Répétez l’étape 3 si besoin.
 
@@ -245,6 +247,7 @@ Le déploiement simulé s’exécute comme le paramètre WhatIf pour PowerShell.
 Le mode simulation vous permet également d’augmenter progressivement l’étendue de votre stratégie d’étiquetage automatique avant de procéder au déploiement. Par exemple, vous pouvez commencer avec un seul emplacement, comme un site SharePoint, avec une seule bibliothèque de documents. Ensuite, avec des modifications itératives, augmentez l’étendue sur plusieurs sites, puis sur un autre emplacement, comme OneDrive.
 
 Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du temps nécessaire à l’exécution de votre stratégie d’étiquetage automatique et pour vous aider à planifier et à programmer l’exécution sans le mode simulation.
+
 
 ### <a name="creating-an-auto-labeling-policy"></a>Création d’une stratégie d’étiquetage automatique
 
@@ -387,7 +390,7 @@ Les améliorations récentes par rapport à la version précédente pour les str
 
 - Lorsque vous spécifiez des sites individuels dans une stratégie d’étiquetage automatique, jusqu’à 100 sites sont désormais pris en charge au lieu de 10.
 
-- Un maximum de 1 000 000 fichiers correspondants par stratégie d’étiquetage automatique, bien que le total de 25 000 fichiers étiquetés automatiquement dans votre client par jour reste le même.
+- Maximum de 1 000 000 fichiers correspondants par stratégie d’étiquetage automatique en mode simulation. Si un nombre de fichiers supérieur à ce nombre est mis en correspondance au cours de la simulation, vous ne pourrez pas activer la stratégie. Reconfigurez la stratégie d’étiquetage automatique pour qu’elle corresponde à un nombre réduit de fichiers et réexécutez la simulation.
 
 - Améliorations des simulations :
   - L’exécution de la stratégie d’étiquetage automatique en mode simulation se termine dans un délai de 12 heures au lieu de 48 heures.

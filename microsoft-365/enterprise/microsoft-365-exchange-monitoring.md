@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: 0f3b93d13d503ef09edc98f3f9c90f9a1f2a0a32
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933848"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988246"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 
@@ -70,7 +70,6 @@ Avec Exchange Online surveillance des données prend en charge les scénarios su
   - Clients de messagerie natifs d’iOS et Android
   - Application Outlook Mobile pour iOS et Android
   - Client Outlook Mac
-  - Ouvrez la boîte aux lettres d’archivage à l’aide d’Outlook sur le web.
 
    Pour ces clients, vous pouvez connaître le nombre d’utilisateurs actifs au cours des 30 dernières minutes en fonction des utilisateurs qui lisent un e-mail, ainsi que le nombre d’incidents et de conseils dans le tableau de bord. Le programme compare ces données au même intervalle pour la semaine précédente afin de déterminer si un problème s’est produit.
 
@@ -113,11 +112,11 @@ Pour ces scénarios, vous pouvez voir des avertissements et des incidents actifs
 
 Dans le volet de compte affecté, la colonne **État** a les valeurs suivantes :
 
-- Résolu : le problème à l’origine de l’avertissement ou de l’incident a été résolu pour le compte prioritaire. Il n’y a plus de problème. 
+- Résolu : le problème à l’origine de l’avertissement ou de l’incident a été résolu pour le compte prioritaire. Ce n’est plus un problème. 
 
-- Actif : le problème à l’origine de l’avertissement ou de l’incident est en cours pour le compte prioritaire. Le problème reste. 
+- Actif : le problème à l’origine de l’avertissement ou de l’incident est en cours pour le compte prioritaire. Le problème demeure. 
 
-- Différé : le problème à l’origine de l’avertissement ou de l’incident n’a pas été résolu pour le compte prioritaire depuis 96 heures, il est donc suspendu. Le problème reste. 
+- Différé : le problème à l’origine de l’avertissement ou de l’incident n’a pas été résolu pour le compte prioritaire depuis 96 heures, il est donc suspendu. Le problème demeure. 
 
 Voici un exemple.
 
