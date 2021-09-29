@@ -2,8 +2,8 @@
 title: Informations sur le flux de messagerie dans le tableau de bord flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
@@ -13,12 +13,12 @@ description: Les administrateurs peuvent en savoir plus sur les informations et 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c960b34933c6a90dcf4a1675ced63dd43f00c07
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 060cbc7a55257a0fbb1510fd8b2f5d325a396a86
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202782"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988942"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
 

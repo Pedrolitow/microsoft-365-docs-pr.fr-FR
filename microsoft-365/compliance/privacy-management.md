@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La gestion de la confidentialité Microsoft offre des solutions pour l’évaluation des données personnelles que votre organisation stocke dans Microsoft 365 et vous aide à identifier et à résoudre les risques de confidentialité.
-ms.openlocfilehash: 1243e786dcfa936802b0e82eb217ec6fc4f45bbf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9eddf65236befb35df7927e1ff3f7e4ddf6f03e7
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163937"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988666"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Gestion de la confidentialité Microsoft (prévisualisation)
 
@@ -55,7 +55,7 @@ Pour en savoir plus, voir [Rechercher et visualiser vos données personnelles.](
 Les environnements de données complexes peuvent présenter des scénarios potentiellement risqués pour les données personnelles. La gestion de la confidentialité permet de détecter facilement les risques dans les domaines suivants et d’établir des processus continus pour la gestion des scénarios essentiels, tels que :
 
 - **Données personnelles surexposées**: les sociétés peuvent collecter différents types d’informations qui peuvent être utilisés pour identifier des clients ou des employés individuels. Les droits d’accès à ces données doivent être gérés correctement pour protéger la confidentialité et empêcher toute utilisation inappropriée.
-- **Transferts de** données : le transfert de données personnelles entre les services de votre organisation ou au-delà des frontières nationales ou régionales peut augmenter le risque d’exposition des données ou de ne pas respecter les réglementations et lois en matière de confidentialité.
+- Transferts **de** données : le transfert de données personnelles entre les services de votre organisation ou au-delà des frontières nationales ou régionales peut augmenter le risque d’exposition des données ou de ne pas respecter les réglementations et lois en matière de confidentialité.
 - **Réduction des données**: les sociétés peuvent collecter des informations superflues ou les conserver plus longtemps que nécessaire, ce qui entraîne le stockage des données personnelles inutilisées. Ces données doivent être réduites pour éviter les risques de confidentialité.
 
 Microsoft 365 gestion de la confidentialité fournit des modèles intégrés pour la configuration de stratégies de gestion des données adaptées à ces situations. En fonction des stratégies que vous avez définies, la gestion de la confidentialité peut évaluer vos données régulièrement, vous alerter sur les problèmes potentiels et vous aider à résoudre ces problèmes. Par conséquent, vos employés peuvent mieux suivre les meilleures pratiques en matière de confidentialité et rester informés des actions recommandées à prendre. Les modèles peuvent être utilisés en tant que fournis ou personnalisés pour répondre aux besoins spécifiques de votre entreprise.
@@ -64,7 +64,7 @@ Pour plus d’informations, voir [Créer et gérer des stratégies.](privacy-man
 
 ### <a name="manage-subject-rights-requests"></a>Gérer les demandes de droits d’objet
 
-Conformément à certaines réglementations en matière de confidentialité dans le monde entier, les individus peuvent faire des demandes de révision ou de gestion des données personnelles collectées par les entreprises. Pour les entreprises qui stockent de grandes quantités d’informations, la recherche des données pertinentes peut être une tâche formidable.
+Conformément à certaines réglementations en matière de confidentialité dans le monde entier, les individus peuvent effectuer des demandes de révision ou de gestion des données personnelles collectées par les entreprises. Pour les entreprises qui stockent de grandes quantités d’informations, la recherche des données pertinentes peut être une tâche formidable.
 
 Microsoft 365 gestion de la confidentialité peut vous aider à gérer ces demandes par le biais de la solution de demande de droits d’objet. Il fournit des fonctionnalités d’automatisation et de flux de travail pour vous aider à rechercher les données du sujet que vous avez stockées dans Microsoft 365, examiner les résultats, sélectionner les fichiers appropriés et produire des rapports. En cours de route, vous pouvez collaborer en toute sécurité avec d’autres experts de votre organisation pour finalisation de la demande.
 
@@ -72,18 +72,18 @@ Pour plus d’informations, voir [Gérer les demandes de droits d’objet.](priv
 
 ## <a name="where-privacy-management-identifies-personal-data"></a>Où la gestion de la confidentialité identifie les données personnelles
 
-Microsoft 365 gestion de la confidentialité évalue les données et les fichiers stockés par votre organisation dans Microsoft 365 services cloud de l’entreprise :
+Microsoft 365 gestion de la confidentialité évalue les données et les fichiers stockés par votre organisation dans Microsoft 365 services cloud :
 
 - Microsoft Exchange
 - Microsoft SharePoint
-- Microsoft OneDrive
+- Microsoft OneDrive
 - Microsoft Teams
 
 La gestion de la confidentialité ne collecte pas de données au-delà de ce qui est déjà collecté dans Microsoft 365 et n’apportera pas de modifications aux données par elle-même. En outre, étant donné que la gestion de la confidentialité évalue spécifiquement les données que votre organisation gère, tous les comptes de consommateur que vos employés ou clients peuvent avoir sur ces services ne seront pas dans l’étendue.
 
 ## <a name="how-privacy-management-identifies-items-with-personal-data"></a>Comment la gestion de la confidentialité identifie les éléments avec des données personnelles
 
-La gestion de la confidentialité utilise les fonctionnalités de Microsoft 365 pour vous aider à identifier et baliser les éléments sensibles. Pour ce faire, vous pouvez utiliser des types d’informations [sensibles](classifier-learn-about.md) [(SIT),](sensitive-information-type-learn-about.md)des classifieurs entraisables et l’application automatique et manuelle des étiquettes [de sensibilité.](sensitivity-labels.md)
+La gestion de la confidentialité utilise les fonctionnalités de Microsoft 365 pour vous aider à identifier et baliser les éléments sensibles. Pour ce faire, vous utilisez des types d’informations sensibles [(SIT)](sensitive-information-type-learn-about.md) et l’application d’étiquettes [de sensibilité.](sensitivity-labels.md)
 
 Les types d’informations sensibles (SIT) sont les types de données pris en charge par la classification des données Microsoft. Par exemple, ces types de données incluent des informations personnelles sur des personnes telles que leur nom, leur adresse ou leur numéro de sécurité sociale.
 

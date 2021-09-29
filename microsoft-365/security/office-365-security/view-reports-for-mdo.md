@@ -20,12 +20,12 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2613b8547d27ce39a14bccfb5e3bfe63f66de36f
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: da89b5421171eefe56363f38e1959cede2ef5afb
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942088"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988495"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports defender pour Office 365 dans le portail Microsoft 365 Defender web
 
@@ -62,12 +62,12 @@ Microsoft Defender pour les organisations Office 365 (par exemple, les abonnemen
 ## <a name="safe-attachments-file-types-report"></a>Coffre Rapport sur les types de fichiers de pièces jointes
 
 > [!NOTE]
-> Le **rapport Coffre types de fichiers pièces jointes** sera finalement absent. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
+> Ce rapport a été supprimé. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
 
 ## <a name="safe-attachments-message-disposition-report"></a>Coffre Rapport de disposition des messages de pièces jointes
 
 > [!NOTE]
-> Le Coffre de disposition des messages de pièces **jointes** sera finalement absent. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
+> Ce rapport a été supprimé. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
 
 ## <a name="mail-latency-report"></a>Rapport de latence du courrier
 
@@ -110,6 +110,8 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Percentiles**: **50,** **90** ou **99**
 - **Nombre de messages**
 - **Latence globale**
+
+Dans la page principale du rapport, ![ l’icône Exporter.](../../media/m365-cc-sc-download-icon.png) **[Le bouton](view-email-security-reports.md#export-report)** Exporter est disponible.
 
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
@@ -162,6 +164,8 @@ Le tableau de détails sous le graphique fournit l’affichage en temps quasi r�
 - **Action**
 - **Application**
 
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](view-email-security-reports.md#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](view-email-security-reports.md#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](view-email-security-reports.md#export-report)** sont disponibles.
+
 ### <a name="view-data-by-url-click-by-application"></a>Afficher les données par URL en cliquant par application
 
 ![Cliquez sur l’URL en affichage application dans le rapport de protection des URL.](../../media/url-threat-protection-report-url-click-by-application-view.png)
@@ -193,6 +197,8 @@ Le tableau de détails sous le graphique fournit l’affichage en temps quasi r�
 - **URL**
 - **Action**
 - **Application**
+
+Dans la page principale du rapport, ![ l’icône Créer une planification.](../../media/m365-cc-sc-create-icon.png) **[Créer une planification,](view-email-security-reports.md#schedule-report)** icône ![ Demander un rapport.](../../media/m365-cc-sc-download-icon.png) **[Demander un rapport](view-email-security-reports.md#request-report)** et icône ![ Exporter.](../../media/m365-cc-sc-download-icon.png) **[Les boutons d’exportation](view-email-security-reports.md#export-report)** sont disponibles.
 
 ## <a name="additional-reports-to-view"></a>Rapports supplémentaires à afficher
 
@@ -232,7 +238,7 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
 - **Lecteur de sécurité**
-- **Lecteur global**
+- **Lecteur général**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 

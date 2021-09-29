@@ -2,8 +2,8 @@
 title: Veille sur le flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8df87c5d8a93bec8051f29c1ba8eae0fbe8bab9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd0d44ae991ec37cf76b664fd56ae9123c98eac8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202787"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988966"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 

@@ -2,8 +2,8 @@
 title: Informations et rapport sur les clients SMTP Auth dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser l’aperçu d’authentification SMTP et le rapport dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (SMTP AUTH) pour envoyer des messages électroniques.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d4c39e722ed7d9853a4fb328a8e87aac535bea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 950661664479e38b8c9094c52908ee23ba34e66c
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207132"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988762"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Informations et rapports sur les clients d’th SMTP dans le Centre de sécurité & conformité
 
@@ -93,6 +93,6 @@ Cliquez **sur Demander un** rapport pour recevoir une version plus détaillée d
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

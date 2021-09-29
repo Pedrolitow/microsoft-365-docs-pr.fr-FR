@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec visibilité et insights.
-ms.openlocfilehash: ac99e9112dc7e0278243121a8530326c88f333dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82c099c2955545f6546f978ded9e2d07a74b48cf
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181421"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941956"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Démarrage avec visibilité et insights
 
@@ -52,7 +52,7 @@ Le tableau de bord contient un résumé des composants de l’écosystème d’a
 
 ## <a name="view-app-insights"></a>Afficher les informations sur l’application
 
-L’un des principaux avantages de la gouvernance des applications est la possibilité d’afficher rapidement les alertes et les informations de l’application. Pour afficher des informations pour vos applications :
+L’un des principaux points de valeur de la gouvernance des applications est la possibilité d’afficher rapidement les alertes et les insights de l’application. Pour afficher des informations pour vos applications : 
 
 1. Sur la page du portail de gouvernance de votre application, sélectionnez **Applications**.
 1. Utilisez la liste déroulante **Catégories** pour sélectionner l’une des options suivantes :
@@ -62,12 +62,14 @@ L’un des principaux avantages de la gouvernance des applications est la possib
     - Éditeur non vérifié
     - Application uniquement
     - Nouvelles applications
-1. Sélectionnez le nom d’une application pour afficher les détails. Vous pouvez sélectionner plusieurs applications pour les enregistrer en tant que requête enregistrée en plaçant une coche à gauche du nom de l’application. La sélection d’un nom d’application ouvre un volet d’informations à droite, comme le montre le graphique suivant.
+1. Sélectionnez le nom d’une application pour afficher les détails. La sélection d’un nom d’application ouvre un volet d’informations à droite, comme le montre le graphique suivant.
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="Image illustrant le volet d’informations d’une application sélectionnée.":::
 
 > [!NOTE]
 > Les applications répertoriées dépendent des applications présentes dans votre client.
+
+L’enregistrement de la requête vous permet d’enregistrer la liste définie de filtres dans l’affichage actuel. Cela peut faire gagner du temps lors de la sélection d’un sous-ensemble de données à l’avenir.
 
 Le volet d’informations vous permet également d’afficher l’utilisation de l’application au cours des 30 derniers jours, les utilisateurs qui ont donné leur consentement à l’application et les autorisations attribuées à l’application. Un administrateur peut examiner l’activité et les autorisations d’une application qui génère des alertes et prendre la décision de désactiver l’application à l’aide du bouton **Désactiver l’application** dans le volet Détails.
 

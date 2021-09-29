@@ -2,8 +2,8 @@
 title: Rapport de non-remise dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le rapport de non-remise dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les codes d’erreur les plus fréquemment rencontrés dans les rapports de non-remise (également appelés rapports de non-remise ou de non-remise) des expéditeurs de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e49fa403789f7c923bfbdd86b4b1555400a8a99
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 02b745943b57965941e38c4e5c5ec6ae503972ec
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207148"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988522"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport de non-remise dans le Centre de conformité & sécurité
 
@@ -66,6 +66,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec
 
 ![Volant de détails après la sélection d’une ligne dans l’affichage De la table Détails dans le rapport de non-remise.](../../media/mfi-non-delivery-report-details-flyout.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

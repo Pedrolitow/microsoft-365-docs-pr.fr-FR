@@ -2,8 +2,8 @@
 title: Aperçu des messages transférés automatiquement
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Les administrateurs peuvent en savoir plus sur le rapport des messages transmis automatiquement dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94700aa4fc08d0c462aa186a0f0847d73151a82a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7c0b2ddd462cccdea744d9a37ec357ee152b6369
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204383"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988690"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informations sur les messages transmis automatiquement dans le Centre de sécurité & conformité
 

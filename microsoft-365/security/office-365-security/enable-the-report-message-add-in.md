@@ -2,7 +2,7 @@
 title: Activer les compléments Signaler le message ou Signaler l’hameçonnage
 f1.keywords:
 - NOCSH
-ms.author: siosulli
+ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les modules de signalement du hameçonnage pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7c077521700a8bd4c7d1997bb87bab0f214337d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1481676468ac3ee505da41de91d0eba3b7e55e2
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207211"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988978"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer les compléments Signaler le message ou Signaler l’hameçonnage
 

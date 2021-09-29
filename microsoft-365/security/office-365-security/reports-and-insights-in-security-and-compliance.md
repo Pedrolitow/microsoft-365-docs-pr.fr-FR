@@ -2,8 +2,8 @@
 title: Rapports intelligents, informations - Centre Microsoft 365 conformité et sécurité & de sécurité
 f1.keywords:
 - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ description: Découvrez les rapports intelligents et les informations disponible
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef92717dc43e5af7a6c98d497405160fec45b7cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 627ca557e7df0d12565f833287c7a6aad18854f1
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179140"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988750"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
@@ -66,7 +66,7 @@ De nombreux rapports sont disponibles dans le Centre de sécurité & conformité
 |**Journal d’audit** <p> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.|Dans le Centre de sécurité & conformité, recherche dans le journal d’audit & **recherche** \> |[Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Rapports de conformité** <p> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.|Dans le Centre de sécurité & conformité, allez aux rapports de **conformité de** \> **l’assurance service**|[Planifier la conformité des & sécurité dans Office 365](../../compliance/plan-for-security-and-compliance.md)|
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 [Portail Microsoft 365 Defender](../defender/overview-security-center.md)
 

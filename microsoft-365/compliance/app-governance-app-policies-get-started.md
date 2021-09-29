@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec En savoir plus sur les stratégies d’application.
-ms.openlocfilehash: 2f22e56195b94f07a6b8499bd69c60d65f37cce8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 72702dfb8962750a3e6161eaefa360f6189870e6
+ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181486"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941990"
 ---
 # <a name="get-started-with-app-policies"></a>Démarrage avec des stratégies d’application
 
@@ -63,6 +63,19 @@ Vous pouvez également :
 - Créez une stratégie. Vous pouvez commencer par une stratégie d’utilisation d’application ou une stratégie d’autorisations.
 - Exportez la liste de stratégies dans un fichier de valeurs séparées par des virgules (CSV). Par exemple, vous pouvez ouvrir le fichier CVS dans Microsoft Excel et trier les stratégies par **Gravité**, puis **Nombre total d’alertes**.
 - Recherchez dans la liste des stratégies.
+
+## <a name="edit-an-existing-policy"></a>Modifier une stratégie existante
+
+1. Dans le portail de gouvernance des applications, sélectionnez l’onglet **Stratégies**.
+1. Sélectionnez la stratégie que vous souhaitez modifier. Un panneau s’ouvrira sur le côté droit avec les détails de la stratégie existante.
+1. Sélectionnez **Modifier**.
+1. Vous ne pouvez pas modifier le nom de la stratégie une fois créée, mais vous pouvez modifier la description et la gravité de la stratégie. Sélectionnez **Suivant**.
+1. Choisissez si vous souhaitez continuer à utiliser les paramètres de stratégie existants ou les personnaliser. Sélectionnez **Non. Je souhaite personnaliser la stratégie** pour apporter des modifications. Sélectionnez **Suivant**.
+1. Choisissez si cette stratégie s’appliquera à toutes les applications ou aux applications que vous spécifiez dans la liste. Sélectionnez **Ajouter des applications** pour ajouter d’autres applications à la liste si vous appliquez la stratégie à des applications spécifiques. Sélectionnez **Suivant**.
+1. Choisissez s’il faut modifier ou non les conditions existantes de la stratégie. Si vous choisissez de modifier les conditions, sélectionnez **Modifier les conditions**. Sélectionnez **Suivant**.
+1. Choisissez s’il faut désactiver ou non l’application si elle déclenche les conditions de stratégie. Sélectionnez **Suivant**.
+1. Définissez l’état de la stratégie sur Audit, Actif ou Inactif. Sélectionnez **Suivant**.
+1. Passez en revue vos choix de paramètres pour la stratégie et si tout est comme vous le souhaitez, sélectionnez **Envoyer**.
 
 ## <a name="next-step"></a>Étape suivante
 

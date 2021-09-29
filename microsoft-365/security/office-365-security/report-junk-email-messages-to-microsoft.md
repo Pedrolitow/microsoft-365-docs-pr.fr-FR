@@ -2,7 +2,7 @@
 title: Signaler le courrier indésirable, le courrier non indésirable et le hameçonnage à Microsoft
 f1.keywords:
 - NOCSH
-ms.author: siosulli
+ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages et fichiers bon et mauvais à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c78b606ed63e18d23bb1d1a6ebf72ae2617e9386
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 77b370bcd0a1ee59e80a638669598cf27ef32942
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483386"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988906"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft
 

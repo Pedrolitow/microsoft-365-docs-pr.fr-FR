@@ -16,12 +16,12 @@ ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8ffeca3d13b42e39f539e96d563aceabd464aeaf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e5b4b67980c3d1450832e84ab0d2a1396c2a69d
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181127"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988378"
 ---
 # <a name="list-machines-api"></a>API De liste des ordinateurs
 
@@ -41,7 +41,7 @@ Récupère une collection [d’ordinateurs](machine.md) qui ont communiqué avec
 
 Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 
-La requête OData est prise en charge sur `$filter` : , , , , , , , `computerDnsName` , , `id` et `version` `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
+La requête OData est prise en charge sur `$filter` : , , , , , , , `computerDnsName` , , , `id` , et `version` `deviceValue` `aadDeviceId` `machineTags` `lastSeen` `exposureLevel` `onboardingStatus` `lastIpAddress` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
 <br>```$stop``` avec une valeur maximale de 10 000
 <br>```$skip``` Voir des exemples [dans les requêtes OData avec Defender for Endpoint](exposed-apis-odata-samples.md)
 
@@ -76,7 +76,7 @@ GET https://api.securitycenter.microsoft.com/api/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -131,6 +131,6 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Requêtes OData avec Microsoft Defender pour le point de terminaison](exposed-apis-odata-samples.md)

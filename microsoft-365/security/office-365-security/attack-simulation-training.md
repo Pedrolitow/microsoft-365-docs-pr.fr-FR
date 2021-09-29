@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide d’une formation sur la simulation d’attaques dans Microsoft Defender Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 40baa8aa3eda6f0f6045115d45e2dac1426c4455
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 304baf82d2b951ada35dc6cb97add1ac85b27236
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204450"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988714"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simuler une attaque par hameçonnage
 
@@ -81,7 +81,7 @@ Lorsque vous choisissez **d’inclure uniquement des utilisateurs et des groupes
 
   ![Filtrage des utilisateurs lors d’une formation sur la simulation d’attaques Microsoft 365 Defender portail.](../../media/attack-sim-preview-user-targeting.png)
 
-- **L’importation à partir de CSV** vous permet d’importer un ensemble prédéféré d’utilisateurs pour cette simulation.
+- **L’importation à partir de CSV** vous permet d’importer un ensemble prédéféré d’utilisateurs pour cette simulation. Le fichier CSV doit contenir une adresse de messagerie par ligne.
 
 ## <a name="assigning-training"></a>Affectation d’une formation
 

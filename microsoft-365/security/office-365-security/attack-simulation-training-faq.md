@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les considérations de déploiement et les questions fréquemment posées concernant la simulation d’attaque et la formation dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a47f953b0c87e3ab88df45f150bd2e6d71611664
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 239d1e4bf28a93627a80ea40375e6791e1a3a5a8
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204480"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988438"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
@@ -139,7 +139,7 @@ R : Plusieurs options sont disponibles pour les utilisateurs cibles :
 
 - Inclure tous les utilisateurs (actuellement disponibles pour les organisations de moins de 40 000 utilisateurs).
 - Choisissez des utilisateurs spécifiques.
-- Sélectionnez des utilisateurs dans un fichier CSV.
+- Sélectionnez des utilisateurs dans un fichier CSV (une adresse de messagerie par ligne).
 - Ciblage basé sur les groupes Azure AD.
 
 Nous avons découvert que les campagnes où les utilisateurs ciblés sont identifiés par des groupes Azure AD sont généralement plus faciles à gérer.
