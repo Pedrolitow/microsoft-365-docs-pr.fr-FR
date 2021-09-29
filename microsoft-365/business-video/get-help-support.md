@@ -22,16 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: a83085a9cc7abc66aa3505208b8480c94f7b692a
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
+ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934058"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59988606"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="watch-get-help-or-support"></a>Regarder : obtenir de l’aide ou une assistance technique
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
@@ -76,6 +77,12 @@ Vous, en tant qu'administrateur, devez avoir vos informations de compte à dispo
 Si le numéro de téléphone du support que vous recherchez ne figure pas dans la liste ci-dessus, utilisez le menu déroulant ci-dessous pour rechercher le numéro de votre pays ou région.
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+## <a name="small-business-support-with-business-assist"></a>Prise en charge des petites entreprises avec Business Assist
+
+Obtenez le meilleur de votre abonnement avec les conseils d’experts des spécialistes des petites entreprises.
+
+Aide aux PME avec Microsoft 365 est conçu pour les petites entreprises afin de vous permettre, ainsi qu’à vos employés, d’accéder à toute heure aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne. Pour en savoir plus, consultez [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -240,7 +247,6 @@ Les options d’assistance ne concernent que les administrateurs des organisatio
 Vous pouvez également [rechercher dans les forums de la Communauté Microsoft 365 pour entreprises](https://go.microsoft.com/fwlink/p/?LinkId=518605) pour rechercher des problèmes connus et des sujets populaires, ou pour poser une nouvelle question. Les forums de la communauté sont modérés par des agents d’assistance Microsoft qui peuvent vous aider à résoudre votre problème.
 
 ::: moniker-end
-
 
 ## <a name="related-content"></a>Contenu associé
 
