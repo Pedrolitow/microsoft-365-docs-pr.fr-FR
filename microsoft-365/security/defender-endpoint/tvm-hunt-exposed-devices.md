@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bec319f840728599f01680c32561bf3998d59381
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2bf488957b35a9d0a914ff4c211a02058cde761c
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164817"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010116"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Recherche des appareils exposés - Gestion des menaces et des vulnérabilités
 
@@ -55,7 +55,7 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Vérifier les appareils impliqués dans les alertes de gravité élevée
 
-1. Go to **Hunting**  >  **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
+1. Go to **Hunting** \> **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
 
 2. Faites défiler vers le bas jusqu’aux schémas de recherche avancée TVM pour vous familiariser avec les noms des colonnes.
 
@@ -78,7 +78,7 @@ DeviceWithCriticalCve
 | project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
 ```
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)

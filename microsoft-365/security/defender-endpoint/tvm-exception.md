@@ -1,7 +1,7 @@
 ---
 title: Créer et afficher des exceptions pour les recommandations de sécurité - Gestion des menaces et des vulnérabilités
 description: Créez et surveillez les exceptions pour les recommandations de sécurité Gestion des menaces et des vulnérabilités.
-keywords: Correction tvm De Microsoft Defender pour point de terminaison, Microsoft Defender pour tvm de point de terminaison, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, sccm de correction tvm
+keywords: Correction tvm de Microsoft Defender pour les points de terminaison, Microsoft Defender pour endpoint tvm, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, tvm correction sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de458eed2b52b6043a4f5aaa5f8593b6136f9d37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aaa1c8cf1d54fe589adfd06939fc3f4c4398b18e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164836"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009492"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Créer et afficher des exceptions pour les recommandations de sécurité - Gestion des menaces et des vulnérabilités
 
@@ -35,10 +35,9 @@ ms.locfileid: "59164836"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-En remplacement d’une demande de correction lorsqu’une recommandation n’est pas pertinente pour le moment, vous pouvez créer des exceptions pour les recommandations. Si votre organisation dispose de groupes d’appareils, vous serez en mesure d’étenduer l’exception à des groupes d’appareils spécifiques. Des exceptions peuvent être créées pour les groupes d’appareils sélectionnés ou pour tous les groupes d’appareils passés et présents.  
+En remplacement d’une demande de correction lorsqu’une recommandation n’est pas pertinente pour le moment, vous pouvez créer des exceptions pour les recommandations. Si votre organisation dispose de groupes d’appareils, vous serez en mesure d’étenduer l’exception à des groupes d’appareils spécifiques. Des exceptions peuvent être créées pour les groupes d’appareils sélectionnés ou pour tous les groupes d’appareils passés et présents.
 
 Lorsqu’une exception est créée pour une recommandation, la recommandation n’est pas active avant la fin de la durée de l’exception. L’état de recommandation change en **Exception complète ou** Exception **partielle** (par groupe d’appareils).
 
@@ -50,7 +49,7 @@ Seuls les utilisateurs ayant des autorisations de « gestion des exceptions » p
 
 ## <a name="create-an-exception"></a>Créer une exception
 
-Sélectionnez une recommandation de sécurité pour la création d’une exception, puis sélectionnez **Options d’exception** et remplissez le formulaire.  
+Sélectionnez une recommandation de sécurité pour la création d’une exception, puis sélectionnez **Options d’exception** et remplissez le formulaire.
 
 ![Affichage de l’emplacement du bouton « options d’exception » dans un volant de recommandations de sécurité.](images/tvm-exception-options.png)
 
@@ -64,7 +63,7 @@ Appliquez l’exception à tous les groupes d’appareils actuels ou choisissez 
 
 Si vous avez filtré par groupe d’appareils sur l’une des pages Gestion des menaces et des vulnérabilités, seuls vos groupes d’appareils filtrés apparaîtront en tant qu’options.
 
-Il s’agit du bouton à filtrer par groupe d’appareils sur l’une Gestion des menaces et des vulnérabilités pages suivantes : 
+Il s’agit du bouton à filtrer par groupe d’appareils sur l’une Gestion des menaces et des vulnérabilités pages suivantes :
 
 ![Affichage du filtre des groupes d’appareils sélectionnés.](images/tvm-selected-device-groups.png)
 
@@ -99,7 +98,7 @@ Sélectionnez votre justification pour l’exception que vous devez déposer au 
 
 La liste suivante détaille les justifications des options d’exception :
 
-- **Contrôle tiers** - Un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
+- **Contrôle tiers** : un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre niveau de sécurité, car votre risque est réduit
 - **Atténuation de** remplacement : un outil interne répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
 - **Risque accepté :** pose un risque faible et/ou l’implémentation de la recommandation est trop coûteuse
 - **Correction planifiée (grâce)** : déjà planifiée mais en attente d’exécution ou d’autorisation
@@ -138,7 +137,7 @@ L’impact (après les exceptions) indique l’impact restant sur le score d’e
 
 ![Affichage des colonnes dans le tableau.](images/tvm-after-exceptions-table.png)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Corriger des vulnérabilités](tvm-remediation.md)

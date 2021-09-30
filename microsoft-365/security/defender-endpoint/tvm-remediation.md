@@ -1,7 +1,7 @@
 ---
 title: Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 description: Corriger les faiblesses de sécurité découvertes par le biais de recommandations de sécurité et créer des exceptions si nécessaire, Gestion des menaces et des vulnérabilités.
-keywords: Correction tvm De Microsoft Defender pour point de terminaison, Microsoft Defender pour tvm de point de terminaison, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, sccm de correction tvm
+keywords: Correction tvm de Microsoft Defender pour les points de terminaison, Microsoft Defender pour endpoint tvm, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, tvm correction sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3bedc28f6af13d91c73dca7f8512379989f2d0e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e8deced4010852401fa281315237c472ace61fb
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203808"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010316"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 
@@ -42,7 +42,7 @@ La Gestion des menaces et des vulnérabilités microsoft Defender pour point de 
 
 ### <a name="enable-microsoft-intune-connection"></a>Activer Microsoft Intune connexion
 
-Pour utiliser cette fonctionnalité, activez vos Microsoft Intune connexions. Dans le portail Microsoft 365 Defender, accédez **à Paramètres**  >  **fonctionnalités**  >  **générales avancées.** Faites défiler vers le bas et **recherchez Microsoft Intune connexion.** Par défaut, le basculement est désactivé. Activer votre **Microsoft Intune de** **connexion.**
+Pour utiliser cette fonctionnalité, activez vos Microsoft Intune connexions. Dans le portail Microsoft 365 Defender, accédez **à Paramètres** \> **fonctionnalités** \> **générales avancées.** Faites défiler vers le bas et **recherchez Microsoft Intune connexion.** Par défaut, le basculement est désactivé. Activer votre **Microsoft Intune de** **connexion.**
 
 **Remarque**: si la connexion Intune est activée, vous pouvez créer une tâche de sécurité Intune lors de la création d’une demande de correction. Cette option n’apparaît pas si la connexion n’est pas définie.
 
@@ -65,8 +65,8 @@ Pour [plus d’informations, voir Utiliser Intune](/intune/atp-manage-vulnerabil
 
 Si vous souhaitez vérifier la façon dont le ticket s’affiche dans Intune, voir Utiliser [Intune](/intune/atp-manage-vulnerabilities) pour corriger les vulnérabilités identifiées par Microsoft Defender pour endpoint pour plus d’informations.
 
->[!NOTE]
->Si votre demande implique la correction de plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
+> [!NOTE]
+> Si votre demande implique la correction de plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
 
 Une fois les faiblesses de cybersécurité de votre organisation identifiées et mappées aux [recommandations](tvm-security-recommendation.md)de sécurité actionnables, commencez à créer des tâches de sécurité. Vous pouvez créer des tâches par le biais de l’intégration Microsoft Intune où les tickets de correction sont créés.
 
@@ -82,7 +82,7 @@ Une fois que vous êtes dans la page Correction, sélectionnez l’activité de 
 
 :::image type="content" source="../../media/remediation-flyouteolswnew.png" lightbox="../../media/remediation-flyouteolswnew.png" alt-text="Exemple de page de correction, avec une activité de correction sélectionnée, et le volant de cette activité répertoriant la description, les outils de gestion des services informatiques et des appareils, et la correction des périphériques":::
 
->[!NOTE]
+> [!NOTE]
 > Il existe une période de rétention de 180 jours pour les activités de correction terminées. Pour que la page de correction continue de s’exécuter de façon optimale, l’activité de correction sera supprimée 6 mois après sa fin.
 
 ### <a name="completed-by-column"></a>Terminé par colonne

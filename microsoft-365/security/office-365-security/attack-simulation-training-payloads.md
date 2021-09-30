@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à créer des charges utiles personnalisées pour la formation à la simulation d’attaques dans Microsoft Defender Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 72600b787f1570839b0d6ee3fefc7467af5ac08b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d67da825862cc026b8dd3bc5b7a2f603606f1a4a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204462"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010305"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Créer une charge personnalisée pour une formation à la simulation d’attaque
 
@@ -38,7 +38,7 @@ Ensuite, sélectionnez une technique associée. Pour plus d’informations sur l
 
 ## <a name="configure-payload"></a>Configurer la charge utile
 
-Il est maintenant temps de créer votre charge utile. Dans la section Détails de l’expéditeur, entrer le nom de l’expéditeur, l’adresse e-mail et l’objet **de l’e-mail.** Sélectionnez une URL de hameçonnage dans la liste fournie. Cette URL sera incorporée ultérieurement dans le corps du message.
+Il est maintenant temps de créer votre charge utile. Dans la section Détails de l’expéditeur, entrer le nom de l’expéditeur, l’adresse e-mail et l’objet **de l’e-mail.** Vous pouvez sélectionner une langue dans laquelle la charge utile sera configurée. Sélectionnez une URL de hameçonnage dans la liste fournie. Cette URL sera incorporée ultérieurement dans le corps du message.
 
 > [!TIP]
 > Vous pouvez choisir un e-mail interne pour l’expéditeur de votre charge utile, ce qui fait apparaître la charge utile comme provenant d’un autre employé de l’entreprise. Cela augmente la sensibilité à la charge utile et aide à informer les employés sur les risques de menaces internes.

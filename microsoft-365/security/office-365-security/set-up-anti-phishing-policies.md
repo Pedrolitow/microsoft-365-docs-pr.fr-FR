@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 291856addf7ce2702a1cd5f26c9cf3d2e833bbc2
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b08439f07bcf80a76e45cad02001194543491c14
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483410"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009528"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -51,9 +51,9 @@ Les différences de haut niveau entre les stratégies anti-hameçonnage dans EOP
 |Fonctionnalité|Stratégies anti-hameçonnage dans EOP|Stratégies anti-hameçonnage dans Defender pour Office 365|
 |---|:---:|:---:|
 |Stratégie par défaut créée automatiquement|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Créer des stratégies d'accès externe personnalisées|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Paramètres de stratégie communs<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
-|Paramètres d’usurpation d’une usurpation|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Créer des stratégies d'accès externe personnalisées|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Paramètres de stratégie communs<sup>\*</sup>|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
+|Paramètres d’usurpation d’une usurpation|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Premier contact conseil de sécurité|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
 |Paramètres d’emprunt d’identité||![Coche](../../media/checkmark.png)|
 |Seuils d’hameçonnage avancés||![Coche](../../media/checkmark.png)|
@@ -100,18 +100,18 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
 
 - **Activer la veille contre l’usurpation** d’informations : active ou non la veille contre l’usurpation d’informations. Nous vous recommandons de laisser ce dernier allumé.
 
-  Lorsque la veille contre l’usurpation d’adresse est activée, la veille contre l’usurpation d’informations affiche les expéditeurs usurpés qui ont été automatiquement détectés et autorisés ou bloqués par la veille contre l’usurpation d’adresses.  Vous pouvez remplacer manuellement le verdict de veille contre l’usurpation d’adresse pour autoriser ou bloquer les expéditeurs usurpés détectés dans l’insight. Mais lorsque vous le faites, l’expéditeur usurpé disparaît de l’aperçu de l’usurpation d’intelligence et n’est désormais visible que sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés dans la liste d’adresses client autoriser/bloquer. Si vous souhaitez en savoir plus, consultez les articles suivants :
+  Lorsque la veille contre l’usurpation d’adresse est activée, la veille contre l’usurpation d’informations affiche les expéditeurs usurpés qui ont été automatiquement détectés et autorisés ou bloqués par la veille contre l’usurpation d’adresses.  Vous pouvez remplacer manuellement le verdict de veille contre l’usurpation d’adresse pour autoriser ou bloquer les expéditeurs usurpés détectés dans l’insight. Mais lorsque vous le faites, l’expéditeur usurpé disparaît de l’aperçu de l’usurpation d’intelligence et n’est désormais visible que sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés dans la liste d’adresses client autoriser/bloquer. Pour plus d’informations, consultez les articles suivants :
 
   - [Informations sur l’usurpation d’intelligence dans EOP](learn-about-spoof-intelligence.md)
   - [Gérer la liste d’adresses client autoriser/bloquer dans EOP](tenant-allow-block-list.md)
 
   > [!NOTE]
   >
-  > - La protection contre l’usurpation d’emploi est activée par défaut dans la stratégie anti-hameçonnage par défaut et dans toutes les nouvelles stratégies anti-hameçonnage personnalisées que vous créez.
+  > - La protection contre l’usurpation d’emploi est activée par défaut dans la stratégie anti-hameçonnage par défaut et dans les nouvelles stratégies anti-hameçonnage personnalisées que vous créez.
   > - Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’Microsoft 365 ; vous activez plutôt le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   > - La désactivation de la protection contre  l’usurpation d’identité désactive uniquement la protection implicite contre l’usurpation d’identité contre les vérifications [d’authentification composite.](email-validation-and-authentication.md#composite-authentication) Si l’expéditeur  échoue aux vérifications [DMARC](use-dmarc-to-validate-email.md) explicites où la stratégie est définie sur mise en quarantaine ou rejet, le message est toujours mis en quarantaine ou rejeté.
 
-- **Notifications d’expéditeur** non authentifié : ces notifications sont disponibles uniquement lorsque la veille contre l’usurpation d’adresse est allumée. Consultez les informations de la section suivante.
+- **Notifications** d’expéditeur non authentifié : ces notifications sont disponibles uniquement lorsque la veille contre l’usurpation d’adresse est désactivée. Consultez les informations de la section suivante.
 - **Actions**: pour les messages provenant d’expéditeurs usurpés bloqués (automatiquement bloqués par la veille contre l’usurpation d’adresse ou bloqués manuellement dans la liste d’adresses client bloquées), vous pouvez également spécifier l’action à prendre sur les messages :
   - **Déplacez les messages vers les dossiers Courrier** indésirable des destinataires : il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier Courrier indésirable si la règle de courrier indésirable est activée sur la boîte aux lettres (activée par défaut). Pour plus d’informations, voir [Configurer les paramètres](configure-junk-email-settings-on-exo-mailboxes.md)de courrier indésirable Exchange Online boîtes aux lettres dans Microsoft 365 .
   - **Mettre le message en** quarantaine : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes:
@@ -119,7 +119,7 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
     - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Si vous sélectionnez **mettre le message** en quarantaine, vous pouvez également sélectionner la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’intelligence. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
+    Si vous sélectionnez **mettre le message** en quarantaine, vous pouvez également sélectionner la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par la protection contre l’usurpation d’intelligence. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
 ### <a name="unauthenticated-sender"></a>Expéditeur non authentifié
 
@@ -131,7 +131,7 @@ Les notifications des expéditeurs non authentifiés font partie des paramètres
 
 Pour empêcher l’ajout du point d’interrogation ou d’une balise à des messages provenant d’expéditeurs spécifiques, vous avez les options suivantes :
 
-- Autorisez l’expéditeur usurpé dans les informations sur [l’usurpation d’intelligence](learn-about-spoof-intelligence.md) ou manuellement dans la liste d’adresses client [autoriser/bloquer](tenant-allow-block-list.md). Autoriser l’expéditeur usurpé empêche l’apparition de la balise via dans les messages de l’expéditeur lorsque l’identification de l’expéditeur non authentifié est désactivée.
+- Autoriser l’expéditeur usurpé dans l’aperçu de [l’usurpation d’intelligence](learn-about-spoof-intelligence.md) ou manuellement dans la liste d’adresses client [autoriser/bloquer](tenant-allow-block-list.md). Autoriser l’expéditeur usurpé empêche l’apparition de la balise via dans les messages de l’expéditeur lorsque l’identification de l’expéditeur non authentifié est désactivée.
 - [Configurez l’authentification de messagerie](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
   - Pour le point d’interrogation dans la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
   - Pour la balise via, confirmez que le domaine dans la signature DKIM ou l’adresse **MAIL FROM** correspond (ou est un sous-domaine) du domaine dans l’adresse De.
@@ -147,15 +147,18 @@ Les paramètres Afficher le premier **contact conseil de sécurité** sont dispo
 
 ![Premier contact conseil de sécurité messages avec un destinataire.](../../media/safety-tip-first-contact-one-recipient.png)
 
-![Premier contact conseil de sécurité messages avec plusieurs destinataires.](../../media/safety-tip-first-contact-multiple-recipients.png)
+![Le premier contact conseil de sécurité messages avec plusieurs destinataires.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 Cette fonctionnalité ajoute une couche supplémentaire de protection de sécurité contre les attaques d’emprunt d’identité potentielles. Nous vous recommandons donc de l’activer.
 
 Le premier conseil de sécurité de contact remplace également la nécessité de créer des règles de flux de messagerie (également appelées règles de transport) qui ajoutent l’en-tête **nommé X-MS-Exchange-EnableFirstContactSafetyTip** par la valeur **Activer** pour les messages (bien que cette fonctionnalité soit toujours disponible).
 
+> [!NOTE]
+> Si le message a plusieurs destinataires, si le conseil est affiché et à qui est basé sur un modèle majoritaire. Si la plupart des destinataires n’ont jamais ou n’ont pas souvent reçu de messages de l’expéditeur, les destinataires concernés recevront le conseil « Certaines personnes qui ont reçu ce **message...** ». Si vous êtes préoccupé par le fait que ce comportement expose les habitudes de communication d’un destinataire à un autre, vous ne devez pas activer le premier conseil de sécurité de contact et continuer à utiliser les règles de flux de messagerie à la place.
+
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres exclusifs dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
-Cette section décrit les paramètres de stratégie disponibles uniquement dans les stratégies anti-hameçonnage dans Defender pour Office 365.
+Cette section décrit les paramètres de stratégie disponibles uniquement dans les stratégies anti-hameçonnage dans Defender for Office 365.
 
 > [!NOTE]
 > La stratégie anti-hameçonnage par défaut dans [](set-up-anti-phishing-policies.md#spoof-settings) Defender pour Office 365 protection contre l’usurpation d’adresses et l’intelligence des boîtes aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités disponibles de [protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) contre l’emprunt d’identité et les paramètres avancés ne sont pas [configurés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
@@ -191,18 +194,18 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
   Par défaut, aucun domaine d’expéditeur n’est configuré pour la protection contre l’emprunt d’identité dans **Activer les domaines à protéger.** Par conséquent, par défaut, aucun domaine d’expéditeur n’est couvert par la protection contre l’emprunt d’identité, que ce soit dans la stratégie par défaut ou dans les stratégies personnalisées.
 
-  Lorsque vous ajoutez  des domaines à la liste Activer les domaines à protéger, les messages des expéditeurs de ces domaines sont soumis à des **vérifications** de protection contre l’emprunt d’identité. L’emprunt d’identité  du message est vérifié  si le message est envoyé à un destinataire à qui la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **Utilisateurs, groupes et destinataires de domaines** dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans le domaine de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les domaines sont appliquées au message (que faire avec le message, afficher ou non les conseils de sécurité des utilisateurs usurpés, etc.).
+  Lorsque vous ajoutez  des domaines à la liste Activer les domaines pour protéger, les messages des expéditeurs de ces domaines sont soumis à des **vérifications** de protection contre l’emprunt d’identité. L’emprunt d’identité  du message est vérifié  si le message est envoyé à un destinataire à qui la stratégie s’applique (tous les destinataires de la stratégie par défaut ; **Utilisateurs, groupes et destinataires de domaines** dans les stratégies personnalisées). Si l’emprunt d’identité est détecté dans le domaine de l’expéditeur, les actions de protection contre l’emprunt d’identité pour les domaines sont appliquées au message (que faire avec le message, afficher ou non les conseils de sécurité des utilisateurs usurpés, etc.).
 
 - **Actions**: choisissez l’action à prendre sur les messages entrants qui contiennent des tentatives d’emprunt d’identité contre les utilisateurs protégés et les domaines protégés dans la stratégie. Vous pouvez spécifier différentes actions pour l’emprunt d’identité des utilisateurs protégés par rapport à l’emprunt d’identité de domaines protégés :
   - **Ne pas appliquer d’action**
-  - **Rediriger le message vers** d’autres adresses e-mail : envoie le message aux destinataires spécifiés au lieu des destinataires prévus.
+  - **Rediriger le message vers** d’autres adresses de messagerie : envoie le message aux destinataires spécifiés au lieu des destinataires prévus.
   - **Déplacer les messages vers les dossiers** Courrier indésirable des destinataires : le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier Courrier indésirable si la règle de courrier indésirable est activée sur la boîte aux lettres (activée par défaut). Pour plus d’informations, voir [Configurer les paramètres](configure-junk-email-settings-on-exo-mailboxes.md)de courrier indésirable Exchange Online boîtes aux lettres dans Microsoft 365 .
   - **Mettre le message en** quarantaine : envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes:
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
     - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Rechercher et libérer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    Si vous sélectionnez Mettre le **message** en quarantaine, vous pouvez également sélectionner la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par l’emprunt d’identité d’utilisateur ou la protection contre l’usurpation d’identité de domaine. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
+    Si vous sélectionnez Mettre le **message** en quarantaine, vous pouvez également sélectionner la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par l’emprunt d’identité d’utilisateur ou la protection contre l’usurpation d’identité de domaine. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
   - **Remettre le message et** ajouter d’autres adresses à la ligne Bcc : remettre le message aux destinataires prévus et remettre silencieusement le message aux destinataires spécifiés.
   - **Supprimez le message avant qu’il ne soit** remis : supprime silencieusement l’intégralité du message, y compris toutes les pièces jointes.
@@ -216,13 +219,13 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
   Par exemple, Comme Laureano (glaureano@contoso.com) est le PDG de votre entreprise, vous l’ajoutez en tant qu’expéditeur protégé dans la stratégie Activer les utilisateurs pour protéger les paramètres de la stratégie.  Toutefois, certains des destinataires que la stratégie s’applique pour communiquer régulièrement avec un fournisseur également nommé Glaureano@fabrikam.com). Étant donné que ces destinataires ont un historique des communications avec glaureano@fabrikam.com, l’intelligence des boîtes aux lettres n’identifie pas les messages provenant de glaureano@fabrikam.com comme une tentative d’emprunt d’glaureano@contoso.com pour ces destinataires.
 
-  Pour utiliser des contacts fréquents appris par l’intelligence des boîtes aux lettres (et leur absence) pour protéger les utilisateurs contre les attaques d’emprunt d’identité, vous pouvez activer la **protection** contre l’emprunt d’identité d’intelligence après avoir activé l’intelligence des boîtes aux **lettres.**
+  Pour utiliser des contacts fréquents découverts par l’intelligence des boîtes aux lettres (et leur absence) pour protéger les utilisateurs contre les attaques d’emprunt d’identité, vous pouvez activer la **protection** contre l’emprunt d’identité d’intelligence après avoir activé l’intelligence de boîte aux **lettres.**
 
 - **Activer la protection contre** l’emprunt d’identité d’intelligence : activez ce paramètre pour spécifier l’action à prendre sur les messages pour les détections d’emprunt d’identité à partir des résultats de l’intelligence de boîte aux lettres :
   - **N’appliquez aucune action**: notez que cette  valeur a le même résultat que l’activement de l’intelligence de boîte aux lettres, mais la dés enable intelligence de protection contre **l’usurpation d’identité**.
   - **Rediriger le message vers d’autres adresses de messagerie**
   - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
-  - **Mettre le message en** quarantaine : si vous sélectionnez cette action, vous pouvez également sélectionner la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par la protection d’intelligence des boîtes aux lettres. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
+  - **Mettre le message en** quarantaine : si vous sélectionnez cette action, vous pouvez également sélectionner la stratégie de mise en quarantaine qui s’applique aux messages mis en quarantaine par la protection d’intelligence des boîtes aux lettres. Les stratégies de mise en quarantaine définissent ce que les utilisateurs peuvent faire pour mettre les messages en quarantaine. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
   - **Remettre le message et ajouter d’autres adresses à la ligne Bcc**
   - **Supprimer le message avant sa livraison**
 

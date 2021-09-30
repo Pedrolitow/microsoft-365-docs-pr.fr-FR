@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bbf230d7ae21bd694fb3568b51903d6fa6581ab9
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: a394fadc5728258208abe2e9de5e94f849dd921e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988786"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009576"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -66,11 +66,11 @@ Les données sont stockées dans la région sélectionnée dans le cadre de vos 
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison  >  **fonctionnalités**  >    >  **générales avancées**. Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
+Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison \> **fonctionnalités** \>  \> **générales avancées**. Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
-Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées pour les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres**  >  **Endpoints**  >  **Web content filtering** (under **Rules**).
+Les stratégies de filtrage de contenu Web spécifient les catégories de site bloquées pour les groupes d’appareils. Pour gérer les stratégies, go to **Paramètres** \> **Endpoints** \> **Web content filtering** (under **Rules**).
 
 Les stratégies peuvent être déployées pour bloquer l’une des catégories parent ou enfant suivantes :
 
@@ -172,9 +172,10 @@ Pour ajouter une nouvelle stratégie, suivez les étapes suivantes :
 5. Examinez le résumé et enregistrez la stratégie. L’actualisation de la stratégie peut prendre jusqu’à 2 heures pour s’appliquer à vos appareils sélectionnés.
 
 > [!NOTE]
+>
 > - Vous pouvez déployer une stratégie sans sélectionner de catégorie sur un groupe d’appareils. Cette action crée une stratégie d’audit uniquement pour vous aider à comprendre le comportement des utilisateurs avant de créer une stratégie de blocage.
 > - Si vous supprimez une stratégie ou modifiez des groupes d’appareils en même temps, cela peut entraîner un retard dans le déploiement de la stratégie.
-> - Le blocage de la catégorie « Non catégorisé » peut entraîner des résultats inattendus et inattendus.  
+> - Le blocage de la catégorie « Non catégorisé » peut entraîner des résultats inattendus et inattendus.
 
 ## <a name="end-user-experience"></a>Expérience de l’utilisateur final
 
@@ -186,29 +187,29 @@ Il est possible de remplacer la catégorie bloquée dans le filtrage de contenu 
 
 Pour définir un indicateur personnalisé, suivez les étapes suivantes :
 
-1. In the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ), go to **Paramètres**  >  **Endpoints**  >  **Indicators**  >  **URL/Domain**  >  **Add Item**.
+1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), go to **Paramètres** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
 
 2. Entrez le domaine du site.
 
-3. Définissez l’action de stratégie sur **Autoriser**.  
+3. Définissez l’action de stratégie sur **Autoriser**.
 
 ### <a name="dispute-categories"></a>Catégories de litige
 
-Si vous rencontrez un domaine qui a été classé de manière incorrecte, vous pouvez la disputer directement à partir du portail. 
+Si vous rencontrez un domaine qui a été classé de manière incorrecte, vous pouvez la disputer directement à partir du portail.
 
-Pour disputer la catégorie d’un domaine, accédez à **Reports**  >  **Web Protection** Web Content  >  **Filtering Details**  >  **Domains**. Sous l’onglet Domaines des rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et sélectionnez **Catégorie litige.**
+Pour disputer la catégorie d’un domaine, accédez à **Reports** \> **Web Protection** Web Content \> **Filtering Details** \> **Domains**. Sous l’onglet Domaines des rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et sélectionnez **Catégorie litige.**
 
 Un panneau s’ouvre où vous pouvez sélectionner la priorité et ajouter des détails, tels que la catégorie suggérée pour la catégorisation. Une fois que vous avez terminé le formulaire, sélectionnez **Envoyer.** Notre équipe examine la demande dans un jour ou deux. Pour un déblocage immédiat, créez un [indicateur d’autoriser personnalisé.](indicator-ip-domain.md)
 
 ### <a name="url-category-lookup"></a>Recherche de catégorie d’URL
 
-Pour déterminer la catégorie d’un site web, vous pouvez utiliser la fonction de recherche d’URL disponible sur le portail Microsoft 365 Defender ( ) sous [https://security.microsoft.com](https://security.microsoft.com) **Endpoints**  >  **Search**. Dans les résultats de recherche d’URL, la catégorie de filtrage de contenu web apparaît sous **URL/Détails du domaine.** Les administrateurs peuvent également s’en prendre à la catégorie du domaine directement à partir de cette page, comme illustré dans l’image suivante. Si le résultat de catégorie n’est pas affiché, l’URL n’est pas actuellement affectée à une catégorie de filtrage de contenu web existante.
+Pour déterminer la catégorie d’un site web, vous pouvez utiliser la fonction de recherche d’URL disponible sur le portail Microsoft 365 Defender ( ) sous <https://security.microsoft.com> **Endpoints** \> **Search**. Dans les résultats de recherche d’URL, la catégorie de filtrage de contenu web apparaît sous **URL/Détails du domaine.** Les administrateurs peuvent également s’en prendre à la catégorie du domaine directement à partir de cette page, comme illustré dans l’image suivante. Si le résultat de catégorie n’est pas affiché, l’URL n’est pas actuellement affectée à une catégorie de filtrage de contenu web existante.
 
 ![Image des résultats de recherche de catégorie de filtrage de contenu web.](../../media/web-content-filtering-category-lookup.png)
 
 ## <a name="web-content-filtering-cards-and-details"></a>Cartes et détails de filtrage de contenu Web
 
-Sélectionnez **Reports** Web Protection pour afficher les cartes avec des informations sur le filtrage de contenu  >   web et la protection contre les menaces web. Les cartes suivantes fournissent des informations récapitulatifs sur le filtrage de contenu web.
+Sélectionnez **Reports** Web Protection pour afficher les cartes avec des informations sur le filtrage de contenu \>  web et la protection contre les menaces web. Les cartes suivantes fournissent des informations récapitulatifs sur le filtrage de contenu web.
 
 ### <a name="web-activity-by-category"></a>Activité web par catégorie
 
@@ -246,11 +247,7 @@ Utilisez le filtre de plage de temps en haut à gauche de la page pour sélectio
 
 ### <a name="known-issues-and-limitations"></a>Problèmes connus et conseils
 
-- Seul Microsoft Edge est pris en charge si la configuration du système d’exploitation de votre appareil est Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). La protection du réseau est uniquement prise en charge en mode Inspect sur les appareils serveur, qui est responsable de la sécurisation du trafic sur les navigateurs tiers pris en charge.
-
-- Les appareils non signés auront des données incorrectes affichées dans le rapport. Dans le tableau croisé dynamique Groupes d’appareils **détails** du rapport, vous pouvez voir  >   une ligne avec un champ Groupe de périphériques vide. Ce groupe contient vos appareils non signés avant qu’ils ne sont placés dans votre groupe spécifié. Le rapport de cette ligne peut ne pas contenir un nombre précis d’appareils ou de nombres d’accès.
-
-- Les rapports de filtrage de contenu Web sont actuellement limités à l’affichage des 5 000 premiers enregistrements. Par exemple, le rapport Domaines affiche uniquement un maximum des 5 000 principaux domaines pour une requête de filtre donnée, le cas échéant. 
+Seul Microsoft Edge est pris en charge si la configuration du système d’exploitation de votre appareil est Server (**cmd** \> **Systeminfo** \> **OS Configuration**). La protection du réseau est uniquement prise en charge en mode Inspect sur les appareils serveur, qui est responsable de la sécurisation du trafic sur les navigateurs tiers pris en charge.
 
 ## <a name="see-also"></a>Voir aussi
 

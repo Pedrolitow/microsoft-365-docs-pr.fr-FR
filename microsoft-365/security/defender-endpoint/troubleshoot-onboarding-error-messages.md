@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 24d6873df2432adf5e56b62f01e784f65df4e980
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a80f30d132706633232713f1ba4b30fa1e64b800
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177547"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010140"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Résoudre des problèmes d’abonnement et de portail d’accès
 
@@ -42,10 +42,11 @@ Si vous recevez un message d’erreur, Microsoft 365 Defender fournit une explic
 Si, lors de l’accès à Microsoft 365 Defender vous obtenez un **message** aucun abonnement trouvé, cela signifie que le Azure Active Directory (Azure AD) utilisé pour se connecter à l’utilisateur sur le portail, n’a pas de licence Microsoft Defender pour endpoint.
 
 Raisons potentielles :
+
 - Les licences Windows E5 et Office E5 sont des licences distinctes.
 - La licence a été achetée, mais elle n’a pas été mise en service pour cette instance Azure AD.
-    - Il peut s’agit d’un problème de mise en service de licence.
-    - Il se peut que vous avez mis en service par inadvertance la licence sur une autre Microsoft Azure AD que celle utilisée pour l’authentification dans le service.
+  - Il peut s’agit d’un problème de mise en service de licence.
+  - Il se peut que vous avez mis en service par inadvertance la licence sur une autre Microsoft Azure AD que celle utilisée pour l’authentification dans le service.
 
 Dans les deux cas, vous devez contacter le support Microsoft à l’aide du support [général de Microsoft Defender pour](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) les points de terminaison ou de la prise en charge des [licences en volume.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
 
@@ -53,7 +54,7 @@ Dans les deux cas, vous devez contacter le support Microsoft à l’aide du supp
 
 ## <a name="your-subscription-has-expired"></a>Votre abonnement a expiré
 
-Si, lors de l’Microsoft 365 Defender vous obtenez un **message** votre abonnement a expiré, votre abonnement de service en ligne a expiré. L’abonnement Microsoft Defender pour les points de terminaison, comme tout autre abonnement de service en ligne, a une date d’expiration. 
+Si, lors de l’Microsoft 365 Defender vous obtenez un **message** votre abonnement a expiré, votre abonnement de service en ligne a expiré. L’abonnement Microsoft Defender pour les points de terminaison, comme tout autre abonnement de service en ligne, a une date d’expiration.
 
 Vous pouvez choisir de renouveler ou de prolonger la licence à tout moment. Lorsque vous accédez au portail après la date d’expiration d’un **message** de votre abonnement, une option vous permet de télécharger le package de sortie de l’appareil, si vous choisissez de ne pas renouveler la licence.
 
@@ -70,27 +71,25 @@ Pour plus d’informations, voir [**Attribuer un accès utilisateur au portail.*
 ![Image d’un utilisateur non autorisé à accéder au portail.](images/atp-not-authorized-to-access-portal.png)
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Les données ne sont actuellement pas disponibles sur certaines sections du portail
+
 Si le tableau de bord du portail et d’autres sections indiquent un message d’erreur tel que « Les données ne sont actuellement pas disponibles » :
 
 ![L’image des données n’est actuellement pas disponible.](images/atp-data-not-available.png)
 
 Vous devez autoriser le sous-domaine et tous ses `security.windows.com` sous-domaine. Par exemple, `*.security.windows.com`.
 
-
 ## <a name="portal-communication-issues"></a>Problèmes de communication du portail
+
 Si vous rencontrez des problèmes d’accès au portail, de données manquantes ou d’accès restreint à certaines parties du portail, vous devez vérifier que les URL suivantes sont autorisées et ouvertes pour la communication.
 
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com` 
+- `https://*.securitycenter.windows.com`
 - `https://automatediracs-eus-prd.securitycenter.windows.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
-- `https://secure.aadcdn.microsoftonline-p.com` 
-- `https://securitycenter.windows.com` 
-- `https://static2.sharepointonline.com` 
-
-
-
+- `https://secure.aadcdn.microsoftonline-p.com`
+- `https://securitycenter.windows.com`
+- `https://static2.sharepointonline.com`

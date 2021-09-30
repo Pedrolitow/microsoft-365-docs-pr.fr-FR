@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 30e1229db1af93c74731678723b60d7d20640f9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d6831cfaec813f5ab2598087c2777d867a5f8a7
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203807"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009420"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -40,11 +40,11 @@ Les menaces et gestion des vulnérabilités utilisent les mêmes signaux dans De
 
 La page **Faiblesses** répertorie les vulnérabilités logicielles que vos appareils sont exposés en répertoriant l’ID CVE (Common Vulnerabilities and Exposures). Vous pouvez également afficher la gravité, la notation des vulnérabilités courantes (CVSS), la prévalence dans votre organisation, la violation correspondante, les informations sur les menaces, etc.
 
->[!NOTE]
->Si aucun ID CVE officiel n’est affecté à une vulnérabilité, le nom de la vulnérabilité est attribué par Gestion des menaces et des vulnérabilités.
+> [!NOTE]
+> Si aucun ID CVE officiel n’est affecté à une vulnérabilité, le nom de la vulnérabilité est attribué par Gestion des menaces et des vulnérabilités.
 
->[!TIP]
->Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>Accéder à la page Faiblesses
 
@@ -76,13 +76,13 @@ Corriger les vulnérabilités des appareils exposés afin de réduire les risque
 
 Affichez les informations sur les violations et menaces associées dans la colonne **Menace** lorsque les icônes sont colorées en rouge.
 
- >[!NOTE]
- > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les menaces ![ Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la violation, dessin ![ simple d’une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .  
+ > [!NOTE]
+ > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les menaces ![ Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la violation, dessin ![ simple d’une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .
 
 L’icône Informations sur les violations est mise en surbrill valeur si une vulnérabilité est trouvée dans votre organisation.
 ![Exemple de texte d’informations sur la violation qui pourrait s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
 
-L’icône Informations sur les menaces est mise en évidence si la vulnérabilité trouvée dans votre organisation est associée à des exploits. Le pointage sur l’icône indique si la menace fait partie d’un kit d’exploitation ou est connectée à des campagnes avancées persistantes ou à des groupes d’activités spécifiques. Lorsqu’il est disponible, il existe un lien vers un rapport d’analyse des menaces avec les actualités sur l’exploitation zéro jour, les divulgations ou les conseils de sécurité associés.  
+L’icône Informations sur les menaces est mise en évidence si la vulnérabilité trouvée dans votre organisation est associée à des exploits. Le pointage sur l’icône indique si la menace fait partie d’un kit d’exploitation ou est connectée à des campagnes avancées persistantes ou à des groupes d’activités spécifiques. Lorsqu’il est disponible, il existe un lien vers un rapport d’analyse des menaces avec les actualités sur l’exploitation zéro jour, les divulgations ou les conseils de sécurité associés.
 
 ![Texte d’informations sur les menaces qui peut s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci possède plusieurs points de puce et du texte lié.](images/tvm-threat-insights.png)
 

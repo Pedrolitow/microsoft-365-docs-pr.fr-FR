@@ -13,16 +13,16 @@ metadata:
   - commerce_landingpage
   author: cmcatee-MSFT
   ms.author: cmcatee
-  manager: sctov
+  manager: scotv
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: d371f6ac55e114263edd966e6d11778ae0d7e1ad
-  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+  ms.openlocfilehash: dfbdf841827b3e5b4ff1391d15915f2a6563e33d
+  ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/27/2021
-  ms.locfileid: "59933230"
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60010196"
 landingContent:
 - title: Gestion des factures et des paiements
   linkLists:

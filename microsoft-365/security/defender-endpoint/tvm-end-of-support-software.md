@@ -1,7 +1,7 @@
 ---
 title: Planifier les versions logicielles et logicielles de fin de prise en charge
 description: Découvrez et planifiez les versions logicielles et logicielles qui ne sont plus pris en charge et qui ne reçoivent pas de mises à jour de sécurité.
-keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
+keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation sur la cybersécurité, recommandation de sécurité actionnable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 988b1177932a67f10f79651cc0190fd665de4c17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2b6d88f7cd443c7fb093d791a7904baafeb9c1d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164849"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010128"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planifier les versions logicielles et logicielles de fin de prise en charge avec Gestion des menaces et des vulnérabilités
 
@@ -41,7 +41,7 @@ EOS (End-of-support), également appelé end-of-life (EOL), pour les versions lo
 
 Il est essentiel que les administrateurs informatiques et de sécurité travaillent ensemble et s’assurent que l’inventaire logiciel de l’organisation est configuré pour obtenir des résultats optimaux, une conformité et un écosystème réseau sain. Ils doivent examiner les options de suppression ou de remplacement des applications qui ont atteint les versions de fin de prise en charge et de mise à jour qui ne sont plus pris en charge. Il est préférable de créer et d’implémenter un **plan** avant la fin des dates de support.
 
->[!NOTE]
+> [!NOTE]
 > La fonctionnalité de fin de prise en charge est actuellement disponible uniquement pour Windows produits.
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>Rechercher des versions logicielles ou logicielles qui ne sont plus pris en charge
@@ -73,7 +73,7 @@ Pour afficher la liste des versions qui ont atteint la fin de la prise en charge
 
 Une fois que vous avez identifié les logiciels et les versions logicielles vulnérables en raison de leur statut de fin de support, vous devez décider s’il faut les mettre à jour ou les supprimer de votre organisation. Cela réduit l’exposition de votre organisation aux vulnérabilités et aux menaces persistantes avancées.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)

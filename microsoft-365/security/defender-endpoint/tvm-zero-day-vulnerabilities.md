@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4180b57ac053fffe3ea1b7ac584799c65c94ea95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad582fe34f4fa3b7943dc90ffd6fd12e7615c618
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203802"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010208"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
@@ -45,7 +45,7 @@ Les menaces et gestion des vulnérabilités afficheront uniquement les vulnérab
 
 Une fois qu’une vulnérabilité zéro jour a été trouvée, les informations à ce sujet sont transmises via les expériences suivantes dans le portail Microsoft 365 Defender web.
 
->[!NOTE]
+> [!NOTE]
 > La fonctionnalité de vulnérabilité de 0 jour est actuellement disponible uniquement pour Windows produits.
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord des menaces gestion des vulnérabilités de sécurité

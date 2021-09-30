@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d309f8851720578dfdd321efff862f15afd9bca8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18243e1d8ad908572c0dccc4cd2a3bdfefa47d46
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183248"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009408"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
@@ -56,7 +56,7 @@ La procédure suivante décrit comment configurer la protection contre les menac
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), and sign in.
  
-2. Choisissez **Réduction de la**  >  **surface d’attaque** du point de terminaison de sécurité, puis choisissez + Créer une **stratégie.**
+2. Choisissez **Réduction de la** \> **surface d’attaque** du point de terminaison de sécurité, puis choisissez + Créer une **stratégie.**
 
 3. Sélectionnez une plateforme, telle que **Windows 10 et ultérieures,** sélectionnez le profil **de protection Web,** puis choisissez **Créer.** 
 
@@ -75,7 +75,7 @@ La procédure suivante décrit comment configurer la protection contre les menac
 
 8. Sous **l’onglet Révision + créer,** examinez vos paramètres de stratégie, puis choisissez **Créer.**
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Protection contre les menaces web](web-threat-protection.md)

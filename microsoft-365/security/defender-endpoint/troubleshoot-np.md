@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 98477c3f9137c175a46f6e050041974ef6a2b8f1
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: f520d3ed090b878c2d3cd9294bc04ee8c375972e
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497787"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010152"
 ---
 # <a name="troubleshoot-network-protection"></a>Résoudre les problèmes de protection du réseau
 
@@ -115,13 +115,13 @@ Lorsque vous signalez un problème avec la protection du réseau, vous êtes inv
 En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft ne peut pas voir les paramètres de proxy de votre système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service cloud. Pour résoudre les problèmes de connectivité avec la protection réseau, configurez l’une des clés de Registre suivantes afin que la protection réseau soit informé de la configuration du proxy :
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+Set-MpPreference -ProxyServer <proxy IP address: Port>
 ```
 
 ---OR---
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
 Vous pouvez configurer la clé de Registre à l’aide de PowerShell, Microsoft Endpoint Manager ou d’une stratégie de groupe. Voici quelques ressources pour vous aider :

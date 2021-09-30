@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de94125566985447b10997cd354c7c9aed01630d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da78b5fe13c9b2b1af086a10b61b085e3d20af64
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164796"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010220"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
@@ -42,7 +42,7 @@ Les faiblesses de cybersécurité identifiées dans votre organisation sont mapp
 Chaque recommandation de sécurité inclut des étapes de correction actionnables. Pour faciliter la gestion des tâches, la recommandation peut également être envoyée à l’aide Microsoft Intune et Microsoft Endpoint Configuration Manager. Lorsque le paysage des menaces change, la recommandation change également lorsqu’elle collecte en permanence des informations à partir de votre environnement.
 
 > [!TIP]
-> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour endpoint](configure-vulnerability-email-notifications.md)
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
 
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -78,7 +78,7 @@ Les principales recommandations en matière de sécurité présentent les opport
 
 ## <a name="security-recommendations-overview"></a>Vue d’ensemble des recommandations de sécurité
 
-Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils et les balises associées.
+Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils, ainsi que les balises associées.
 
 La couleur du graphique **des appareils exposés** change à mesure que la tendance change. Si le nombre d’appareils exposés augmente, la couleur passe en rouge. En cas de diminution du nombre d’appareils exposés, la couleur du graphique change en vert.
 
@@ -109,8 +109,8 @@ Dans le volant, vous pouvez choisir l’une des options suivantes :
 
 - [**Options d’exception**](tvm-exception.md) : soumettre une exception, fournir une justification et définir la durée de l’exception si vous ne pouvez pas encore résoudre le problème.
 
->[!NOTE]
->Lorsqu’une modification logicielle est réalisée sur un appareil, il faut généralement 2 heures pour que les données soient reflétées dans le portail de sécurité. Toutefois, cela peut parfois prendre plus de temps. Les modifications de configuration peuvent prendre entre 4 et 24 heures.
+> [!NOTE]
+> Lorsqu’une modification logicielle est réalisée sur un appareil, il faut généralement 2 heures pour que les données soient reflétées dans le portail de sécurité. Toutefois, cela peut parfois prendre plus de temps. Les modifications de configuration peuvent prendre entre 4 et 24 heures.
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>Examiner les modifications apportées à l’exposition ou à l’impact de l’appareil
 
@@ -122,11 +122,11 @@ S’il y a une augmentation importante du nombre d’appareils exposés ou une f
 
 ## <a name="request-remediation"></a>Demander la correction
 
-La Gestion des menaces et des vulnérabilités de correction permet de combler le vide entre les administrateurs de sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir de la **page** recommandations en matière de sécurité vers Intune. [En savoir plus sur les options de correction](tvm-remediation.md)
+La Gestion des menaces et des vulnérabilités de correction permet de combler le vide entre les administrateurs de sécurité et les administrateurs informatiques via le flux de travail de demande de correction. Les administrateurs de sécurité comme vous pouvez demander à l’administrateur informatique de corriger une vulnérabilité à partir de la **page** recommandations de sécurité vers Intune. [En savoir plus sur les options de correction](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>Comment demander des corrections
 
-Sélectionnez une recommandation de sécurité pour la demande de correction, puis sélectionnez **Options de correction.** Remplissez le formulaire et sélectionnez **Envoyer la demande.** Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [En savoir plus sur la demande de correction](tvm-remediation.md#request-remediation)
+Sélectionnez une recommandation de sécurité pour qui vous souhaitez demander des corrections, puis sélectionnez **Options de correction.** Remplissez le formulaire et sélectionnez **Envoyer la demande.** Go to the [**Remediation**](tvm-remediation.md) page to view the status of your remediation request. [En savoir plus sur la demande de correction](tvm-remediation.md#request-remediation)
 
 ## <a name="file-for-exception"></a>Fichier d’exception
 
@@ -138,7 +138,7 @@ Lorsqu’une exception est créée pour une recommandation, elle n’est plus ac
 
 ### <a name="how-to-create-an-exception"></a>Comment créer une exception
 
-Sélectionnez une recommandation de sécurité pour la création d’une exception, puis sélectionnez **Options d’exception.**  
+Sélectionnez une recommandation de sécurité pour la création d’une exception, puis sélectionnez **Options d’exception.**
 
 ![Affichage de l’emplacement du bouton « options d’exception » dans un volant de recommandations de sécurité.](images/tvm-exception-options.png)
 

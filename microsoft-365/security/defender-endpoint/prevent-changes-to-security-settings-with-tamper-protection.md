@@ -18,12 +18,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 09/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91c66ffa315e7cb6434bb845bd575f7040026c2f
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 2e279a5a256f1b729d5fe39d51eb82801bc34bcb
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498255"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60008820"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -33,12 +33,12 @@ ms.locfileid: "59498255"
 
 La protection contre la falsification est disponible pour les appareils qui exécutent l’une des versions suivantes de Windows :
 
-- Windows 10
+- Windows 10
 - Windows Server 2019
 - Windows Serveur, version 1803 ou ultérieure
 - Windows Server 2016
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre la falsification permet d’éviter ce genre d’événements.
 
@@ -49,7 +49,7 @@ Avec la protection contre la falsification, les applications malveillantes ne pe
 - La non-surveillance du comportement
 - Désactivation de l’antivirus (par exemple, IOfficeAntivirus (IOAV))
 - Désactivation de la protection cloud
-- Suppression des mises à jour de l’intelligence de la sécurité
+- Suppression des mises à jour d’informations de sécurité
 
 ### <a name="how-it-works"></a>Fonctionnement
 
@@ -59,7 +59,7 @@ La protection contre la falsification verrouille Antivirus Microsoft Defender à
 - Modification des paramètres via les cmdlets PowerShell
 - Modification ou suppression des paramètres de sécurité par le biais de la stratégie de groupe
 
-La protection contre la falsification ne vous empêche pas d’afficher vos paramètres de sécurité. De plus, la protection contre la falsification n’affecte pas la façon dont les applications antivirus non Microsoft s’inscrivent auprès Sécurité Windows’application. Si votre organisation utilise Windows 10 Entreprise E5, les utilisateurs individuels ne peuvent pas modifier le paramètre de protection contre la falsification. dans ce cas, la protection contre la falsification est gérée par votre équipe de sécurité.
+La protection contre la falsification ne vous empêche pas d’afficher vos paramètres de sécurité. De plus, la protection contre la falsification n’affecte pas la façon dont les applications antivirus non-Microsoft s’inscrivent auprès Sécurité Windows’application. Si votre organisation utilise Windows 10 Entreprise E5, les utilisateurs individuels ne peuvent pas modifier le paramètre de protection contre la falsification. dans ce cas, la protection contre la falsification est gérée par votre équipe de sécurité.
 
 ### <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?
 
@@ -110,12 +110,12 @@ La protection contre la falsification peut être allumée ou désactivée pour v
 - Des autorisations appropriées doivent vous être [attribuées, telles](/microsoft-365/security/defender-endpoint/assign-portal-access) que l’administrateur global, l’administrateur de sécurité ou les opérations de sécurité.
 
 - Vos Windows doivent être en cours d’exécution dans l’une des versions suivantes Windows :
-  - Windows 10
+  - Windows 10
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
   - Windows Serveur, version [1803 ou](/windows/release-health/status-windows-10-1803) ultérieure
   - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 
-  Pour plus d’informations sur les publication, [voir Windows 10 de publication.](/windows/release-health/release-information)
+  Pour plus d’informations sur les releases, [voir Windows 10 release information](/windows/release-health/release-information).
 
 - Vos appareils doivent être [intégrés à Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/onboarding)
 
@@ -123,7 +123,7 @@ La protection contre la falsification peut être allumée ou désactivée pour v
 
 - [La protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md) doit être allumée.
 
-### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>Activer (ou désactiver) la protection contre la falsification dans le Microsoft 365 Defender web
+### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>Activer (ou désactiver) la protection contre la falsification dans le portail Microsoft 365 Defender client
 
 :::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Activer la protection contre la falsification dans Microsoft 365 Defender portail.":::
 
@@ -162,7 +162,7 @@ Si vous faites partie de l’équipe de sécurité de votre organisation et que 
     - **Plateforme : Windows 10 et ultérieures**
     - **Type de profil : Protection des points de terminaison**
     - **Catégorie : Microsoft 365 Defender**
-    - **Protection contre la falsification : activée**
+    - **Protection contre les falsifications : activée**
 
 4. Affectez le profil à un ou plusieurs groupes.
 
@@ -178,14 +178,14 @@ Sur Windows Server 2016, l’application Paramètres ne reflète pas préciséme
 
 2. Utilisez [l’cmdlet Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell.
 
-3. Dans la liste des résultats, recherchez `IsTamperProtected` ou `RealTimeProtectionEnabled` . (La valeur true *signifie que* la protection contre la falsification est activée.)
+3. Dans la liste des résultats, recherchez `IsTamperProtected` ou `RealTimeProtectionEnabled` . (La valeur true signifie *que* la protection contre la falsification est activée.)
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Gérer la protection contre la falsification pour votre organisation avec Configuration Manager, version 2006
 
 Si vous utilisez la [version 2006](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)de Configuration Manager, vous pouvez gérer les paramètres de protection contre la falsification sur Windows 10, Windows Server 2016 et Windows Server 2019 à l’aide d’une méthode appelée attachement de *client.* L’attachement de client vous permet de synchroniser vos appareils Configuration Manager locaux uniquement dans le Centre d’administration Microsoft Endpoint Manager, puis de fournir des stratégies de configuration de sécurité de point de terminaison aux collections & périphériques.
 
 > [!NOTE]
-> La procédure peut être utilisée pour étendre la protection contre la falsification aux appareils exécutant Windows 10 et Windows Server 2019. Veillez à examiner les conditions préalables et d’autres informations dans les ressources mentionnées dans cette procédure.
+> La procédure peut être utilisée pour étendre la protection contre la falsification aux appareils exécutant Windows 10 et Windows Server 2019. Veillez à passer en revue les conditions préalables et d’autres informations dans les ressources mentionnées dans cette procédure.
 
 1. Configurer l’attachement de client. Pour plus d’informations, [voir Microsoft Endpoint Manager de l’attachement du client : synchronisation de l’appareil et actions de l’appareil.](/mem/configmgr/tenant-attach/device-sync-actions)
 
@@ -201,18 +201,18 @@ Si vous utilisez la [version 2006](/mem/configmgr/core/plan-design/changes/whats
 Consultez les ressources suivantes :
 
 - [Paramètres profil d’expérience Sécurité Windows client dans Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
-- [Blog tech Community : Annonce de la protection contre la falsification pour les clients d’attachement de client Configuration Manager](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
+- [Blog tech Community : Annonce de la protection contre la falsification pour les clients avec attachement de client Configuration Manager](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
 ## <a name="manage-tamper-protection-on-an-individual-device"></a>Gérer la protection contre la falsification sur un appareil individuel
 
 > [!NOTE]
-> La protection contre la falsification bloque les tentatives de modification Antivirus Microsoft Defender paramètres par le biais du Registre.
+> La protection contre la falsification bloque les tentatives de modification Antivirus Microsoft Defender paramètres de protection par le biais du Registre.
 >
 > Pour vous assurer que la protection contre la falsification n’interfère pas avec les produits de  sécurité non Microsoft ou les scripts d’installation d’entreprise qui modifient ces paramètres, allez à **Sécurité Windows** et mettez à jour l’intelligence de sécurité vers la version 1.287.60.0 ou ultérieure. (Voir mises [à jour de l’intelligence de la sécurité.)](https://www.microsoft.com/wdsi/definitions)
 >
 > Une fois cette mise à jour réalisée, la protection contre la falsification continue de protéger vos paramètres de Registre et les journaux tentent de les modifier sans renvoyer d’erreurs.
 
-Si vous êtes un utilisateur de base ou si vous n’êtes pas soumis aux paramètres gérés par une équipe de sécurité, vous pouvez utiliser l’application Sécurité Windows pour gérer la protection contre la falsification. Vous devez avoir les autorisations d’administrateur appropriées sur votre appareil pour modifier les paramètres de sécurité, tels que la protection contre la falsification.
+Si vous êtes un utilisateur de base ou si vous n’êtes pas soumis aux paramètres gérés par une équipe de sécurité, vous pouvez utiliser l’application Sécurité Windows pour gérer la protection contre la falsification. Vous devez avoir les autorisations d’administration appropriées sur votre appareil pour modifier les paramètres de sécurité, tels que la protection contre la falsification.
 
 Voici ce que vous voyez dans l’application Sécurité Windows:
 
@@ -240,9 +240,9 @@ La protection contre la falsification s’intègre aux fonctionnalités [& gesti
 
 ![Activer la protection contre la falsification.](images/tamperprotectsecurityrecos.png)
 
-Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, consultez [threat & Vulnerability Management dans Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
+Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, voir [Threat & Vulnerability Management dans Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions posées fréquemment
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>Sur quelles versions de Windows puis-je configurer la protection contre la falsification ?
 
@@ -250,17 +250,17 @@ Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/wi
 
 Si vous utilisez Configuration Manager, version 2006, avec attachement client, la protection contre la falsification peut être étendue à Windows Server 2019. Voir l’attachement client : créer et déployer une stratégie antivirus de sécurité de point de terminaison [à partir du centre d’administration (prévisualisation).](/mem/configmgr/tenant-attach/deploy-antivirus-policy)
 
-### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>La protection contre la falsification affectera-t-elle l’inscription d’antivirus non Microsoft dans l Sécurité Windows app; ?
+### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>La protection contre la falsification affectera-t-elle l’inscription antivirus non-Microsoft dans l’Sécurité Windows’application ?
 
 Non. Les offres antivirus autres que Microsoft continueront à s’inscrire auprès de l’application Sécurité Windows microsoft.
 
-### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>Que se passe-t-il si Antivirus Microsoft Defender n’est pas actif sur un appareil ?
+### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>Que se passe-t-il Antivirus Microsoft Defender n’est pas actif sur un appareil ?
 
 Les appareils intégrés à Microsoft Defender pour le point de terminaison Antivirus Microsoft Defender en mode passif. Dans ce cas, la protection contre la falsification continuera à protéger le service et ses fonctionnalités.
 
 ### <a name="how-do-i-turn-tamper-protection-on-or-off"></a>Comment activer ou désactiver la protection contre la falsification ?
 
-Si vous êtes un utilisateur d’accueil, voir Gérer la protection contre [les falsifications sur un appareil individuel.](#manage-tamper-protection-on-an-individual-device)
+Si vous êtes un particulier, consultez Gérer [la protection contre les falsifications sur un appareil individuel.](#manage-tamper-protection-on-an-individual-device)
 
 Si vous êtes une organisation qui utilise [Microsoft Defender pour le](/microsoft-365/security/defender-endpoint)point de terminaison, vous devez être en mesure de gérer la protection contre les falsifications dans Intune de la même façon que vous gérez d’autres fonctionnalités de protection des points de terminaison. Consultez les sections suivantes de cet article :
 
@@ -305,7 +305,7 @@ Oui. L’alerte s’affiche [https://security.microsoft.com](https://security.mi
 
 Votre équipe des opérations de sécurité peut également utiliser des requêtes de recherche, telles que l’exemple suivant :
 
-`DeviceAlertEvents|where Title == "Tamper Protection bypass"`
+`AlertInfo|where Title == "Tamper Protection bypass"`
 
 [Afficher des informations sur les tentatives de falsification.](#view-information-about-tampering-attempts)
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a0f806da62378ca21c1693fd96105bb89eaf5708
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 930b508b8e923baadff68701e88fc09af6a5051a
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182272"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010080"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>Obstacles à l’information Microsoft 365
 
@@ -41,10 +41,10 @@ Pour configurer les obstacles à l’information pour votre organisation, utilis
 ![Étapes d’obstacles aux informations sur les solutions à risque internes.](../media/ir-solution-ib-steps.png)
 
 1. En savoir plus [sur les obstacles aux informations](information-barriers.md) Microsoft 365
-2. Configurer les [conditions préalables et les autorisations](information-barriers-policies.md#prerequisites)
-3. Segmenter [les utilisateurs de votre organisation](information-barriers-policies.md#part-1-segment-users)
-4. Créer et configurer des stratégies [d’obstacle aux informations](information-barriers-policies.md#part-2-define-information-barrier-policies)
-5. Appliquer des [stratégies de obstacle à l’information](information-barriers-policies.md#part-3-apply-information-barrier-policies)
+2. Configurer les [conditions préalables et les autorisations](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)
+3. Segmenter [les utilisateurs de votre organisation](information-barriers-policies.md#step-2-segment-users-in-your-organization)
+4. Créer et configurer des stratégies [d’obstacle aux informations](information-barriers-policies.md#step-3-define-information-barrier-policies)
+5. Appliquer des [stratégies de obstacle à l’information](information-barriers-policies.md#step-4-apply-information-barrier-policies)
 
 ## <a name="more-information-about-information-barriers"></a>Plus d’informations sur les obstacles aux informations
 

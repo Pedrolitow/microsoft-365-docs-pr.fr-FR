@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc25da8c4cffa5c67747ea02a0f431c0c2c7a436
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ffed82085b07949e13aa059667f278b8640a1955
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164809"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009432"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Niveau de sécurité Microsoft pour les appareils
 
@@ -37,28 +37,26 @@ ms.locfileid: "59164809"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
->[!NOTE]
+> [!NOTE]
 > Le score de configuration fait désormais partie Gestion des menaces et des vulnérabilités comme score de sécurité Microsoft pour les appareils.
 
-Votre score pour les appareils est visible dans le tableau [Gestion des menaces et des vulnérabilités de](tvm-dashboard-insights.md) bord du Microsoft 365 Defender web. Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. Elle reflète l’état de configuration de sécurité collective de vos appareils dans les catégories suivantes :
+Votre score pour les appareils est visible dans le tableau [Gestion des menaces et des vulnérabilités de](tvm-dashboard-insights.md) bord du Microsoft 365 Defender web. Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. Il reflète l’état de configuration de sécurité collective de vos appareils dans les catégories suivantes :
 
 - Application
 - Système d’exploitation
 - Réseau
-- Accounts
+- Comptes
 - Contrôles de sécurité
 
 Sélectionnez une catégorie pour aller à la page [**Recommandations de sécurité**](tvm-security-recommendation.md) et afficher les recommandations pertinentes.
 
 ## <a name="turn-on-the-microsoft-secure-score-connector"></a>Activer le connecteur Score de sécurité Microsoft
 
-Avancez les signaux de Microsoft Defender pour les points de terminaison, ce qui permet à Microsoft Secure Score de se rendre compte de la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
+Avancer les signaux de Microsoft Defender pour les points de terminaison, ce qui permet à Microsoft Secure Score de voir la posture de sécurité de l’appareil. Les données forwardées sont stockées et traitées au même emplacement que vos données du Score de sécurisation Microsoft.
 
 La réflexion des modifications dans le tableau de bord peut prendre jusqu’à quelques heures.
 
-
-1. Dans le volet de navigation, go to **Paramètres**  >  **Endpoints**  >  **General**  >  **Advanced features** 
+1. Dans le volet de navigation, go to **Paramètres** \> **Endpoints** \> **General** \> **Advanced features**
 
 2. Faites défiler vers **le bas jusqu’au score de sécurité Microsoft** et basculez le paramètre sur **Sur**.
 
@@ -66,10 +64,10 @@ La réflexion des modifications dans le tableau de bord peut prendre jusqu’à 
 
 ## <a name="how-it-works"></a>Fonctionnement
 
->[!NOTE]
+> [!NOTE]
 > Le score de sécurité Microsoft pour les appareils prend actuellement en charge les configurations définies via la stratégie de groupe. En raison de la prise en charge partielle actuelle d’Intune, les configurations qui ont peut-être été définies via Intune peuvent s’afficher comme mal configurées. Contactez votre administrateur informatique pour vérifier l’état réel de la configuration au cas où votre organisation utiliserait Intune pour la gestion de la configuration sécurisée.
 
-Les données de la carte Degré de sécurisation Microsoft pour les appareils sont le produit d’un processus de découverte de vulnérabilité en cours et d’activités. Elle est agrégée aux évaluations de découverte de configuration qui :
+Les données de la carte Degré de sécurisation Microsoft pour les appareils sont le produit d’un processus de découverte de vulnérabilité en cours et d’une situation de vulnérabilité. Elle est agrégée aux évaluations de découverte de configuration qui :
 
 - Comparer les configurations collectées aux critères collectés pour découvrir les ressources mal configurées
 - Masqué les configurations sur des vulnérabilités qui peuvent être corrigés ou partiellement corrigés (réduction des risques)
@@ -98,20 +96,22 @@ Améliorez votre configuration de la sécurité en remédiant aux problèmes de 
 
 6. Envoyez un courrier électronique de suivi à votre administrateur informatique et laissez le temps que vous avez alloué à la correction de se propager dans le système.
 
-7. Examinez **à nouveau la carte Score de sécurité Microsoft** pour les appareils dans le tableau de bord. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous sélectionnez **les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
+7. Re review the **Microsoft Secure Score for Devices** card again on the dashboard. Le nombre de recommandations en matière de contrôles de sécurité va diminuer. Lorsque vous sélectionnez **les contrôles** de sécurité pour revenir à la page **Recommandations** de sécurité, l’élément que vous avez traité n’y figure plus. Votre score de sécurité Microsoft pour les appareils doit augmenter.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Pour augmenter les taux de détection de l’évaluation des vulnérabilités, téléchargez les mises à jour de sécurité obligatoires suivantes et déployez-les sur votre réseau :
->- Clients 19H1 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
->- Clients RS5 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
->- Clients RS4 | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
->- Clients RS3 | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 >
->Pour télécharger les mises à jour de sécurité :
->1. Go to [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx).
->2. Key-in the security update KB number that you need to download, then click **Search**.  
+> - Clients 19H1 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+> - Clients RS5 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> - Clients RS4 | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> - Clients RS3 | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+>
+> Pour télécharger les mises à jour de sécurité :
+>
+> 1. Go to [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx).
+> 2. Key-in the security update KB number that you need to download, then click **Search**.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Sujets associés
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)

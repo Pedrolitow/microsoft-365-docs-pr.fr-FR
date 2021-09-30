@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3fe1379db88d23a1a9b7555add1d54f6587fa573
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177380"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009384"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs sûrs dans EOP
 
@@ -46,6 +46,8 @@ Les règles de flux de messagerie permettent de faire en sorte que seuls les mes
 
 > [!IMPORTANT]
 >
+> - Les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance sont toujours mis en quarantaine, quelle que soit l’option de liste des expéditeurs sûrs que vous utilisez.
+>
 > - Veillez à surveiller attentivement les *exceptions* que vous faites au filtrage du courrier indésirable à l’aide de listes d’expéditeurs sûrs.
 >
 > - Bien que vous pouvez utiliser des listes d’expéditeurs sûrs pour vous aider avec les faux positifs (message électronique de qualité marqué comme faux), vous devez envisager l’utilisation de listes d’expéditeurs sûrs comme une solution temporaire à éviter si possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs sûrs, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous persistez à utiliser des listes d’expéditeurs sûrs pour gérer les faux positifs, vous devez être vigilant et maintenir la rubrique Signaler les messages et les fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
@@ -53,6 +55,8 @@ Les règles de flux de messagerie permettent de faire en sorte que seuls les mes
 > - Pour autoriser un domaine à envoyer des messages électroniques non authentifiés (contourner la protection contre l’usurpation d’identité), mais pas les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez utiliser la veille contre l’usurpation d’identité et la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md) [](learn-about-spoof-intelligence.md)
 >
 > - EOP et Outlook différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, voir la section Considérations pour [les courriers](#considerations-for-bulk-email) électroniques en masse plus loin dans cet article.
+>
+
 
 En revanche, vous avez également plusieurs options pour bloquer le courrier provenant de sources spécifiques à l’aide de _listes d’expéditeurs bloqués._ Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 60a0d59bd199e46e52623e36fa962465b313c9bd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1f8ab38d3e224155fc6af311e7dde42410a07823
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204623"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009588"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle
 
@@ -41,7 +41,7 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
 
 1. Connectez-vous [à Microsoft 365 Defender](https://security.microsoft.com/) à l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **rôles endpoints**  >   (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \>  (sous **Autorisations).**
 
 3. Sélectionnez **Ajouter un élément.**
 
@@ -61,15 +61,15 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
 ### <a name="permission-options"></a>Options d’autorisation
 
 - **Afficher les données**
-    - **Opérations de sécurité** : afficher toutes les données des opérations de sécurité dans le portail
-    - **Menaces et gestion des vulnérabilités** : afficher Gestion des menaces et des vulnérabilités données de sécurité dans le portail
+  - **Opérations de sécurité** : afficher toutes les données des opérations de sécurité dans le portail
+  - **Menaces et gestion des vulnérabilités** : afficher Gestion des menaces et des vulnérabilités données de sécurité dans le portail
 
 - **Actions de correction actives**
-    - **Opérations de sécurité** : prendre des mesures de réponse, approuver ou ignorer les actions de correction en attente, gérer les listes autorisées/bloquées pour l’automatisation et les indicateurs
-    - **Menaces et gestion des vulnérabilités - Gestion des exceptions** : créer des exceptions et gérer les exceptions actives
-    - **Threat and gestion des vulnérabilités - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
+  - **Opérations de sécurité** : prendre des mesures de réponse, approuver ou ignorer les actions de correction en attente, gérer les listes autorisées/bloquées pour l’automatisation et les indicateurs
+  - **Menaces et gestion des vulnérabilités - Gestion des exceptions** : créer des exceptions et gérer les exceptions actives
+  - **Threat and gestion des vulnérabilités - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
 
-- **Examen des alertes** : gérer les alertes, lancer des enquêtes automatisées, exécuter des analyses, collecter des packages d’enquête, gérer les balises d’appareil et télécharger uniquement les fichiers exécutables portables (PE) 
+- **Examen des alertes** : gérer les alertes, lancer des enquêtes automatisées, exécuter des analyses, collecter des packages d’enquête, gérer les balises d’appareil et télécharger uniquement les fichiers exécutables portables (PE)
 
 - **Gérer les paramètres** système du portail : configurer les paramètres de stockage, les paramètres SIEM et les paramètres de l’API Intel contre les menaces (s’applique globalement), les paramètres avancés, les téléchargements de fichiers automatisés, les rôles et les groupes d’appareils
 
@@ -79,29 +79,29 @@ Les étapes suivantes vous guident sur la création de rôles dans Microsoft 365
 - **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-bord, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
 
 - **Fonctionnalités de réponse en direct**
-    - **Commandes** de base :
-        - Démarrer une session de réponse en direct
-        - Exécuter des commandes de réponse en direct en lecture seule sur un appareil distant (à l’exception de la copie et de l’exécution des fichiers)
-        - Télécharger un fichier à partir de l’appareil distant via une réponse en direct
-    - **Commandes** avancées :
-        - Télécharger des fichiers PE et non PE à partir de la page de fichiers
-        - Télécharger fichier sur l’appareil distant
-        - Afficher un script à partir de la bibliothèque de fichiers
-        - Exécuter un script sur l’appareil distant à partir de la bibliothèque de fichiers
+  - **Commandes** de base :
+    - Démarrer une session de réponse en direct
+    - Exécuter des commandes de réponse en direct en lecture seule sur un appareil distant (à l’exception de la copie et de l’exécution des fichiers)
+    - Télécharger un fichier à partir de l’appareil distant via une réponse en direct
+  - **Commandes** avancées :
+    - Télécharger des fichiers PE et non PE à partir de la page de fichiers
+    - Télécharger fichier sur l’appareil distant
+    - Afficher un script à partir de la bibliothèque de fichiers
+    - Exécuter un script sur l’appareil distant à partir de la bibliothèque de fichiers
 
 Pour plus d’informations sur les commandes disponibles, voir Examiner les appareils à [l’aide de la réponse Live.](live-response.md)
-  
+
 ## <a name="edit-roles"></a>Modifier des rôles
 
 1. Connectez-vous [](https://security.microsoft.com/) Microsoft 365 Defender compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **rôles endpoints**  >   (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \>  (sous **Autorisations).**
 
 3. Sélectionnez le rôle que vous souhaitez modifier.
 
 4. Cliquez sur **Modifier**.
 
-5. Modifiez les détails ou les groupes affectés au rôle. 
+5. Modifiez les détails ou les groupes affectés au rôle.
 
 6. Cliquez **sur Enregistrer et fermer.**
 
@@ -109,7 +109,7 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
 
 1. Connectez-vous [](https://security.microsoft.com/) Microsoft 365 Defender compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **rôles endpoints**  >   (sous **Autorisations).**
+2. Dans le volet de navigation, sélectionnez **Paramètres** \> **rôles endpoints** \>  (sous **Autorisations).**
 
 3. Sélectionnez le rôle que vous souhaitez supprimer.
 

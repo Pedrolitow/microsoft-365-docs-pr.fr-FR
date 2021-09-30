@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 56cbe59339c7e1fd93a3251c0b941c05602e152c
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204438"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60008893"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le forwarding automatique du courrier externe dans Microsoft 365
 
@@ -38,6 +38,9 @@ Les types de transmission automatique suivants sont disponibles dans Microsoft 3
 - Les utilisateurs peuvent configurer [des règles](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) de boîte de réception pour transmettre automatiquement des messages à des expéditeurs externes (délibérément ou à la suite d’un compte compromis).
 - Les administrateurs peuvent configurer le [forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) de boîte aux lettres (également appelé « _smTP forwarding_) pour qu’il puisse automatiquement envoyer des messages à des destinataires externes. L’administrateur peut choisir de simplement envoyer des messages ou de conserver des copies de messages transmis dans la boîte aux lettres.
 
+> [!NOTE]
+> Les utilisateurs nationaux dont le transport est automatique à partir de systèmes de messagerie locaux via Microsoft 365 seront soumis aux mêmes contrôles de stratégie que les boîtes aux lettres cloud dans une prochaine mise à jour. Cette mise à jour sera communiquée via le billet du Centre de messages.
+
 Vous pouvez utiliser des stratégies de filtrage du courrier indésirable sortant pour contrôler le forwarding automatique vers des destinataires externes. Trois paramètres sont disponibles :
 
 - **Automatique - Contrôlé par le système**: le transport externe automatique est bloqué. Le forwarding automatique interne des messages continuera de fonctionner. Il s’agit du paramètre par défaut.
@@ -51,8 +54,7 @@ Pour obtenir des instructions sur la configuration de ces paramètres, voir Conf
 > - La désactivation du redirection automatique désactive les règles de boîte de réception (utilisateurs) ou de boîtes aux lettres (administrateurs) qui redirigent les messages vers des adresses externes.
 >
 > - Le filtrage automatique des messages entre utilisateurs internes n’est pas affecté par les paramètres des stratégies de filtrage du courrier indésirable sortant.
->
-> - Vous pouvez voir les informations sur les utilisateurs qui sont automatiquement en cours de forwardage des messages à des destinataires externes dans le rapport de [messages transmis automatiquement.](mfi-auto-forwarded-messages-report.md)
+
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Fonctionnement des paramètres de stratégie de filtrage du courrier indésirable sortant avec d’autres contrôles de transmission automatique du courrier électronique
 
@@ -67,6 +69,25 @@ Les paramètres de domaine distant et les règles de flux de messagerie sont ind
 - Vous autorisez le forwarding automatique dans les stratégies de filtrage du courrier indésirable sortant, mais vous utilisez des règles de flux de messagerie ou des paramètres de domaine distant pour bloquer le courrier électronique automatiquement transmis. Dans cet exemple, les règles de flux de messagerie ou les paramètres de domaine distant bloquent les messages automatiquement transmis.
 
 Cette indépendance de fonctionnalité vous permet (par exemple) d’autoriser le forwarding automatique dans les stratégies de filtrage du courrier indésirable sortant, mais d’utiliser des domaines distants pour contrôler les domaines externes vers qui les utilisateurs peuvent envoyer des messages.
+
+## <a name="how-to-find-users-that-are-automatically-forwarding"></a>Comment trouver des utilisateurs qui sont automatiquement transmis
+
+Vous pouvez voir les informations sur les utilisateurs qui sont automatiquement en cours de forwardage de messages à des destinataires externes dans le rapport des [messages](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) transmis automatiquement pour les comptes basés sur le cloud. Pour les utilisateurs locaux qui sont automatiquement transmis à partir de leur système de messagerie local via Microsoft 365, vous devez créer une règle de flux de messagerie pour suivre ces utilisateurs. Pour obtenir des instructions sur la création d’une règle de flux de messagerie, voir Utiliser le [EAC pour créer une règle de flux de messagerie.](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule)
+
+Les informations suivantes sont requises pour créer la règle de flux de messagerie dans le Centre d’administration Exchange (EAC) :
+
+- **Appliquez cette règle si** (condition) : **un en-tête de message** correspond à ces \> **modèles de texte.** Notez que vous devrez peut-être cliquer **sur Plus d’options** pour voir cette option.
+  - **Nom de l’en-tête**: `X-MS-Exchange-Inbox-Rules-Loop`
+  - **Valeur d’en-tête**: `.`
+
+  La condition ressemble à ceci : **l’en-tête « X-MS-Exchange-Inbox-Rules-Loop »** correspond à **« . »**
+
+  Cette condition correspond à n’importe quelle valeur pour l’en-tête.
+
+- (Facultatif) **Pour ce faire** (action), vous pouvez configurer une action facultative. Par exemple, vous pouvez utiliser l’action Modifier les propriétés du message définir un en-tête de **message,** avec le nom d’en-tête \>  **X-Forwarded** et la valeur **True**. Toutefois, la configuration d’une action n’est pas obligatoire.
+- Définissez **cet rue avec le niveau de gravité** sur la valeur **Low,** **Medium** ou **High**. Ce paramètre vous permet d’utiliser le rapport [Exchange de transport pour](view-email-security-reports.md#exchange-transport-rule-report) obtenir les détails des utilisateurs qui sont en cours de transport.
+
+![Propriétés de règle de flux de messagerie dans le EAC pour une règle permettant d’identifier les messages transmis.](../../media/mail-flow-rule-for-forwarded-messages.png)
 
 ## <a name="blocked-email-forwarding-messages"></a>Messages de courrier électronique bloqués
 

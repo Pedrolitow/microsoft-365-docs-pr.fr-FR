@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir les rapports et les outils de dépannage disponibles pour les administrateurs Microsoft Exchange Online Protection des données (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 619b8376c6c9d5d733799b4350c308fc4c57f62b
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179156"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010280"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapports et suivi des messages dans EOP
 
@@ -46,6 +46,10 @@ Ces rapports améliorés offrent une expérience de rapport interactive pour les
 
 - **Defender pour Office 365**: afficher des informations sur les liens Coffre et les pièces jointes Coffre qui font partie de Microsoft Defender pour Office 365. Pour plus d’informations, [voir View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender.](view-reports-for-mdo.md)
 - **EOP**: afficher des informations sur les détections de programmes malveillants, la messagerie usurpée, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation. Pour plus d’informations, voir Afficher les rapports de sécurité de messagerie [dans le portail Microsoft 365 Defender.](view-email-security-reports.md)
+
+## <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
+
+Pour plus d’informations, voir Informations sur le flux de messagerie dans le [Centre de sécurité & conformité.](mail-flow-insights-v2.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Rapports personnalisés à l’aide de Microsoft Graph
 
