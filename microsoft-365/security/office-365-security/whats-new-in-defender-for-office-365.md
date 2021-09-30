@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f473963bca6a3ad3e3ece57ecc30118e4ec6f62
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 363abb059acc656de7ebdf074729374e75f84cff
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479560"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011451"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -57,6 +57,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - [Vidéo de l’expérience de l’administrateur](https://youtu.be/vnar4HowfpY)
   - [Vidéo de l’expérience de l’utilisateur final](https://youtu.be/s-vozLO43rI)
   - D’autres nouvelles fonctionnalités mises en quarantaine sont décrites dans ce billet de blog : Simplification de l’expérience de mise [en quarantaine.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)
+  - La redirection du portail commence par défaut, redirigeant les utilisateurs de la sécurité & conformité vers Microsoft 365 Defender <https://security.microsoft.com> . Pour plus d’informations à ce sujet, voir : [Redirection](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 
 ## <a name="august-2021"></a>Août 2021
 
@@ -94,9 +95,9 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 ## <a name="februarymarch-2021"></a>Février/mars 2021
 
 - Intégration de l’ID d’alerte (recherche à l’aide de l’ID d’alerte et Alert-Explorer navigation) dans les expériences [de recherche](threat-explorer.md)
-- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de chasse](threat-explorer.md)
+- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de recherche](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
-- Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
+- Nouveaux tableaux  croisés dynamiques  de repérage appelés domaine dont l’identité a été usurpée et utilisateur usurpé d’identité dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés. Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender pour Office 365 Plan 1 et Plan 2

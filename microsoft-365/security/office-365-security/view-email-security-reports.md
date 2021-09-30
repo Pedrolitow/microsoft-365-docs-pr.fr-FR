@@ -19,12 +19,12 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6486059702875e4bf318d04da9be0249dc6cb7df
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 9f3861cc57276cec6dcd09ba843ede35ab9dd583
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942172"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011487"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie
 
@@ -602,7 +602,7 @@ Dans le tableau de détails sous le graphique, les informations suivantes sont d
 - **Sujet**
 - **Expéditeur**
 - **Destinataires**
-- **Tecchnology de détection**
+- **Technologie de détection**
 - **État de remise**
 - **IP de l’expéditeur**
 - **Tags**
@@ -994,7 +994,7 @@ Pour afficher et utiliser les rapports décrits dans cet article, vous devez êt
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
 - **Lecteur de sécurité**
-- **Lecteur global**
+- **Lecteur général**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 

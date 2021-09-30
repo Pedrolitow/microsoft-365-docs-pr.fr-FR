@@ -20,19 +20,19 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment utiliser le Centre de conformité pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: 28af0de029deb2dc732f4e31f7f85f80db6bf081
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d9e1dac62d13759b4d735a3243d4d9dd3edab57
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207915"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011439"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre conformité
 
 L’archivage dans Microsoft 365 (également appelé *Archivage inaltérable*) fournit aux utilisateurs de l’espace de stockage de boîtes aux lettres supplémentaire. Une fois que vous avez activé les boîtes aux lettres d’archivage, les utilisateurs peuvent consulter et stocker des messages dans leurs boîtes aux lettres d’archivage à l’aide de Microsoft Outlook et d’Outlook sur le web (autrefois appelé Outlook Web App). Les utilisateurs peuvent également déplacer ou copier des messages entre leurs boîtes aux lettres principale et d’archivage. Ils peuvent également récupérer les éléments supprimés du dossier Éléments récupérables dans leur boîte aux lettres d’archivage à l’aide de l’outil Récupérer les éléments supprimés.
 
 > [!NOTE]
-> La fonctionnalité d’archivage à extension automatique fournit, dans Microsoft 365, un espace de stockage complémentaire dans les boîtes aux lettres d’archivage. Lorsque l’archivage à développement automatique est activé et que le quota de stockage initial de la boîte aux lettres d’archivage d’un utilisateur est atteint, Microsoft 365 ajoute automatiquement un espace de stockage supplémentaire. Cela signifie que les utilisateurs ne tombent pas à cours d’espace de stockage de boîte aux lettres et que vous n’avez plus besoin de gérer quoi que ce soit après l’activation initiale de la boîte aux lettres d’archivage et de l’archivage à développement automatique pour votre organisation. Pour plus d’informations, voir [Vue d’ensemble d’un archivage illimité](unlimited-archiving.md).
+> La fonctionnalité d’archivage à extension automatique fournit, dans Microsoft 365, un espace de stockage complémentaire dans les boîtes aux lettres d’archivage. Lorsque l’archivage à développement automatique est activé et que le quota de stockage initial de la boîte aux lettres d’archivage d’un utilisateur est atteint, Microsoft 365 ajoute automatiquement un espace de stockage supplémentaire. Cela signifie que les utilisateurs ne tombent pas à cours d’espace de stockage de boîte aux lettres et que vous n’avez plus besoin de gérer quoi que ce soit après l’activation initiale de la boîte aux lettres d’archivage et de l’archivage à développement automatique pour votre organisation. Pour plus d’informations, voir [Vue d’ensemble d’un archivage à développement automatique](autoexpanding-archiving.md).
 
 ## <a name="get-the-necessary-permissions"></a>Obtenir les autorisations nécessaires
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez quel abonnement Microsoft 365 est le bon pour votre organisation.
-ms.openlocfilehash: 2c269ff7dc620da0c638f2c82a836ae9b0406780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c1bd7ac67cd44baa8317295ade0e5525764b523
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208267"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011403"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Choisir un abonnement Microsoft 365 abonnement
 
@@ -44,13 +44,13 @@ Le choix de l’abonnement Microsoft 365 est essentiel pour vous servir au mieux
 
 ## <a name="compare-plans"></a>Comparer les offres
 
-| Zone de service | Fonctionnalité | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Entreprise E3 |
+| Zone de service | Fonctionnalité | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Entreprise E3 |
 | --- | --- | --- | --- | --- |
 | **Licences disponibles** | Nombre maximal d’utilisateurs | 300 | 300 | Illimité |
 | **Applications Office** | Installer Office sur jusqu’à 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |
 | **Calendrier de &amp; messagerie** | Outlook, Exchange Online | 50 Go | 50 Go | 100 Go |
 | **Hub pour le travail d’équipe** | Espace de travail basé sur la conversation, réunions en ligne et autres Microsoft Teams | Oui | Oui | Oui |
-| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
+| **Stockage de fichiers** | OneDrive Entreprise | 1 To par utilisateur | 1 To par utilisateur | Illimité |
 | **Réseaux sociaux, vidéo, sites** | Stream, Yammer, Planner, SharePoint \* Online, Power Apps , \* Power Automate\* | Oui | Oui | Oui |
 | **Applications professionnelles** | Planification d’applications - Réservations\*\* | Oui | Oui | Oui |
 | **Protection contre les menaces** | Office 365 – Protection avancée contre les menaces | Non | Oui | Non |
@@ -64,12 +64,12 @@ Le choix de l’abonnement Microsoft 365 est essentiel pour vous servir au mieux
 | **Protection des informations** | Office 365 protection contre la perte de données | Non | Oui | Oui |
  | Azure Information Protection Plan 1, application de BitLocker | | Non | Oui | Non |
 | **Droits de cal local** | ECAL Suite (Exchange, SharePoint, Skype) | Non | Non | Oui |
-| **Conformité** | Archivage illimité du courrier électronique\*\*\* | Non | Oui | Oui |
+| **Conformité** | Archivage supplémentaire du courrier électronique\*\*\* | Non | Oui | Oui |
 
 \*Indique que Microsoft 365 Business Standard dispose du plan 1 des fonctionnalités et Office 365 Entreprise E3 a le plan 2.
 
 \*\* Disponible aux États-Unis, au Royaume-Uni, au Canada.
 
-\*\*\* Archivage illimité lorsque l’extension automatique est allumée.
+\*\*\* Espace de stockage d’archivage supplémentaire lorsque l’archivage à extension automatique est allumé.
 
 Pour comparer Microsoft 365 Business Premium à d’autres produits, y compris d’autres plans Microsoft 365, voir [Licensing Microsoft 365 for small and medium-sized businesses](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb).

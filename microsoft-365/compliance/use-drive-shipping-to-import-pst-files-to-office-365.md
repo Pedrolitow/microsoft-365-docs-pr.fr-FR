@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer en bloc des fichiers PST dans Microsoft 365 boîtes aux lettres en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: 30b345a887f0b2288394fc07b3b5b290b58c9fed
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c80428d1c1fc5fdbb8a8863dc4c6fbc4438d6c26
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401805"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011415"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation
 
@@ -372,13 +372,13 @@ Une fois les fichiers PST téléchargés vers Azure, l’état est modifié **en
   
 6. Effectuez l'une des opérations suivantes :
 
-    a. Pour découper les données que vous importez, cliquez sur **Oui, je souhaite les filtrer avant l’importation**.
+   1. Pour découper les données que vous importez, cliquez sur **Oui, je souhaite les filtrer avant l’importation**.
 
-    Pour obtenir des instructions détaillées sur le filtrage des données dans les fichiers PST et le démarrage de la tâche d’importation, consultez la rubrique [Filtrer les données lors de l’importation de fichiers PST dans Office 365](filter-data-when-importing-pst-files.md).
+      Pour obtenir des instructions détaillées sur le filtrage des données dans les fichiers PST et le démarrage de la tâche d’importation, consultez la rubrique [Filtrer les données lors de l’importation de fichiers PST dans Office 365](filter-data-when-importing-pst-files.md).
 
-    Ou
+      Ou
 
-    b. Pour importer toutes les données des fichiers PST, cliquez sur **Non, je souhaite tout importer,** puis cliquez sur **Suivant**.
+   1. Pour importer toutes les données des fichiers PST, cliquez sur **Non, je souhaite tout importer,** puis cliquez sur **Suivant**.
 
 7. Si vous avez choisi d’importer toutes les données, cliquez sur **Importer les données** pour démarrer la tâche d’importation. 
 
@@ -441,11 +441,11 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vot
     > [!NOTE]
     > Pour vous aider à résoudre les problèmes du fichier de mappage [CSV](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365) d’importation PST, utilisez l’outil Explorateur Stockage Azure pour afficher la structure de dossiers dans le conteneur **ingestiondata** pour les fichiers PST à partir de votre disque dur qui ont été téléchargés vers la zone de stockage Azure. Les erreurs de fichier de mappage sont généralement causées par une valeur incorrecte dans le paramètre FilePath. Ce paramètre spécifie l’emplacement d’un fichier PST dans la zone de stockage Azure. Consultez la description du paramètre FilePath dans le tableau de [l’étape 3.](#step-3-create-the-pst-import-mapping-file) Comme indiqué précédemment, l’emplacement des fichiers PST dans la zone de stockage Azure a été spécifié par le paramètre lorsque vous avez lancé l’outil WAImportExport.exe à `/dstdir:` [l’étape 2.](#step-2-copy-the-pst-files-to-the-hard-drive) 
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - L’expédition de disques est un moyen efficace d’importer de grandes quantités de données de messagerie d’archivage vers Microsoft 365 afin de tirer parti des fonctionnalités de conformité disponibles pour votre organisation. Une fois les données d’archivage importées dans les boîtes aux lettres des utilisateurs, vous pouvez :
 
-  - Activez [les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et l’archivage à extension [automatique](enable-unlimited-archiving.md) pour offrir aux utilisateurs davantage d’espace de stockage pour les données. 
+  - Activez [les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et l’archivage à extension [automatique](enable-autoexpanding-archiving.md) pour offrir aux utilisateurs davantage d’espace de stockage pour les données. 
 
   - Placez les boîtes aux lettres [en attente pour litige](./create-a-litigation-hold.md) pour conserver les données. 
 

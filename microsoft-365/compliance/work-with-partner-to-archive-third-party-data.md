@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce Messenger, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: 8a18f84cce226ce4255c47772e2f858eaa6f1bb4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e82f114138a8f1f8ac9eb4563ce1434e6c26167
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209749"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011235"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
 
@@ -396,7 +396,7 @@ Les sections suivantes indiquent les partenaires Microsoft (et les sources de do
 
 - Yahoo
 
-- Protester
+- Yammer
 
 - YouTube
 
@@ -475,7 +475,7 @@ Voici les étapes de création et de configuration d’une boîte aux lettres de
 
  **Effectuer ces tâches dans le Centre d'administration Microsoft 365**
 
-1. Créez un compte d’utilisateur et attribuez-lui une licence Exchange Online Plan 2 ; voir [Ajouter des utilisateurs à Microsoft 365](../admin/add-users/add-users.md). Une licence Plan 2 est nécessaire pour placer la boîte aux lettres en conservation pour litige ou activer une boîte aux lettres d’archivage avec un quota de stockage illimité.
+1. Créez un compte d’utilisateur et attribuez-lui une licence Exchange Online Plan 2 ; voir [Ajouter des utilisateurs à Microsoft 365](../admin/add-users/add-users.md). Une licence Plan 2 est nécessaire pour placer la boîte aux lettres en conservation pour litige ou activer une boîte aux lettres d’archivage dont le quota de stockage peut aller jusqu’à 1,5 To.
 
 2. Ajoutez le compte d’utilisateur pour la boîte aux lettres de données tierces au **rôle d’administrateur administrateur Exchange** dans Microsoft 365 ; voir [Attribuer des rôles d’administrateur dans Microsoft 365](../admin/add-users/assign-admin-roles.md).
 
@@ -494,7 +494,7 @@ Voici les étapes de création et de configuration d’une boîte aux lettres de
 
 3. Activez les fonctionnalités de conformité suivantes pour la boîte aux lettres de données tierces :
 
-    - Activer la boîte aux lettres d’archivage ; voir [Activer les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et Activer [l’archivage illimité.](enable-unlimited-archiving.md) Cela vous permet de libérer de l’espace de stockage dans la boîte aux lettres principale en mettant en place une stratégie d’archivage qui déplace des éléments de données tiers vers la boîte aux lettres d’archivage. Vous disposez ainsi d’un espace de stockage illimité pour les données tierces.
+    - Activer la boîte aux lettres d’archivage ; voir [Activer les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et Activer [l’archivage à extension automatique.](enable-autoexpanding-archiving.md) Cela vous permet de libérer de l’espace de stockage dans la boîte aux lettres principale en mettant en place une stratégie d’archivage qui déplace des éléments de données tiers vers la boîte aux lettres d’archivage. Vous disposez ainsi d’un espace de stockage de 1,5 To pour les données tierces.
 
     - Placez la boîte aux lettres de données tierces en conservation pour litige. Vous pouvez également appliquer une stratégie Microsoft 365 rétention dans le centre de sécurité et conformité. Le placement de cette boîte aux lettres en attente conserve les éléments de données tiers (indéfiniment ou pour une durée spécifiée) et les empêche d’être purgés de la boîte aux lettres. Consultez l’une des rubriques suivantes :
 
@@ -508,7 +508,7 @@ Voici les étapes de création et de configuration d’une boîte aux lettres de
 
 L’étape suivante consiste à configurer les boîtes aux lettres des utilisateurs pour prendre en charge les données tierces. Effectuer ces tâches à l’aide Exchange centre d’administration ou à l’aide des cmdlets Windows PowerShell correspondantes.
 
-1. Activer la boîte aux lettres d’archivage pour chaque utilisateur ; voir [Activer les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et Activer [l’archivage illimité.](enable-unlimited-archiving.md)
+1. Activer la boîte aux lettres d’archivage pour chaque utilisateur ; voir [Activer les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et Activer [l’archivage à extension automatique.](enable-autoexpanding-archiving.md)
 
 2. Placer les boîtes aux lettres des utilisateurs en conservation pour litige ou appliquer une stratégie Microsoft 365 rétention ; consultez l’une des rubriques suivantes :
 
@@ -557,7 +557,7 @@ Une fois que votre organisation a accepté la demande d’autorisations pour ins
 
 Pour révoquer le consentement d’un connecteur de données tiers, vous pouvez supprimer l’application (en supprimant le principal de service correspondant) de Azure Active Directory à l’aide du portail **d’applications Enterprise** dans le portail Azure ou à l’aide de [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) dans Microsoft 365 PowerShell. Vous pouvez également utiliser [l’cmdlet Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) dans Azure Active Directory PowerShell.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Comme indiqué précédemment, les éléments des sources de données tierces sont importés vers les boîtes aux lettres Exchange en tant que messages électroniques. Le connecteur partenaire importe l’élément à l’aide d’un schéma requis par Microsoft 365 API. Le tableau suivant décrit les propriétés de message d’un élément d’une source de données tierces après son importation vers une boîte aux lettres Exchange en tant que message électronique. Le tableau indique également si la propriété de message est obligatoire. Les propriétés obligatoires doivent être renseignées. Si une propriété obligatoire est manquante, un élément n’est pas importé dans Microsoft 365. Le processus d’importation renvoie un message d’erreur expliquant pourquoi un élément n’a pas été importé et quelle propriété est manquante.<br/><br/>
 

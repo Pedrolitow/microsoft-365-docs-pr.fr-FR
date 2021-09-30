@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: fb1f0dad7aba15b33fce51b855a9b037478db627
-ms.sourcegitcommit: db571169242063f104450fec4c4b19aeec688b15
+ms.openlocfilehash: 5e8e18d85a0161542d988107c450a6abb9f7c7d4
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59447335"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60010328"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -35,6 +35,7 @@ Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md
 - Partage externe à partir des sites SharePoint
 - Accès à partir d’appareils enregistrés
 - Contextes d’authentification (en préversion)
+- Lien de partage par défaut pour un site SharePoint (configuration PowerShell uniquement)
 
 > [!IMPORTANT]
 > Les paramètres pour les appareils non gérés et les contextes d’authentification fonctionnent conjointement avec l’accès conditionnel Azure Active Directory. Vous devez configurer cette fonctionnalité dépendante si vous souhaitez utiliser une étiquette de confidentialité pour ces paramètres. Des informations supplémentaires sont incluses dans les instructions qui suivent.
@@ -74,7 +75,7 @@ Si vous n’avez pas encore activé les étiquettes de confidentialité pour les
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>Comment configurer les paramètres de groupes et de sites
 
-Une fois les étiquettes de confidentialité activées pour les conteneurs, comme décrit dans la section précédente, vous pouvez ensuite configurer les paramètres de protection pour les groupes et sites dans l’Assistant d’étiquetage de niveau de confidentialité. Tant que les étiquettes de confidentialité ne sont pas activées pour les conteneurs, les paramètres sont visibles dans l’Assistant, mais vous ne pouvez pas les configurer.
+Une fois les étiquettes de confidentialité activées pour les conteneurs, comme décrit dans la section précédente, vous pouvez ensuite configurer les paramètres de protection pour les groupes et sites dans la configuration de l’étiquetage de niveau de confidentialité. Tant que les étiquettes de confidentialité ne sont pas activées pour les conteneurs, les paramètres sont visibles, mais vous ne pouvez pas les configurer.
 
 1. Suivez les instructions générales pour [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) et assurez-vous de sélectionner **Groupes et sites** pour l’étendue de l’étiquette : 
     
@@ -132,7 +133,7 @@ Si vous ne configurez pas la stratégie d’accès conditionnel dépendante pour
 
 Par exemple, si votre client est configuré pour **Autoriser un accès limité au web uniquement**, le paramètre d’étiquette qui autorise l’accès complet n’aura aucun effet, car il est moins restrictif. Pour ce paramètre de niveau client, sélectionnez le paramètre d’étiquette pour bloquer l’accès (plus restrictif) ou le paramètre d’étiquette pour un accès limité (identique au paramètre client).
 
-Étant donné que vous pouvez configurer les paramètres de SharePoint séparément de la configuration d’étiquette, l’Assistant d’étiquettes de confidentialité ne vérifie pas si les dépendances sont en place. Ces dépendances peuvent être configurées une fois l’étiquette créée et publiée, et même une fois l’étiquette appliquée. Toutefois, si l’étiquette est déjà appliquée, le paramètre d’étiquette n’est appliqué qu’à la prochaine authentification de l’utilisateur.
+Étant donné que vous pouvez configurer les paramètres de SharePoint séparément de la configuration d’étiquette, la procédure pour vérifier que les dépendances sont en place n’est pas effectuée dans la configuration des étiquettes de confidentialité. Ces dépendances peuvent être configurées une fois l’étiquette créée et publiée, et même une fois l’étiquette appliquée. Toutefois, si l’étiquette est déjà appliquée, le paramètre d’étiquette n’est appliqué qu’à la prochaine authentification de l’utilisateur.
 
 ##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>Informations supplémentaires sur les dépendances pour l’option de contexte d’authentification
 
@@ -172,6 +173,53 @@ Restrictions connues pour cette version préliminaire :
     
     - Flux de travail qui utilisent Power Apps ou Power Automate
     - Applications tierces
+
+### <a name="configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings"></a>Configurer les paramètres du lien de partage par défaut d’un site à l’aide des paramètres avancés de PowerShell
+
+Outre les paramètres d’étiquette pour les sites et les groupes que vous pouvez configurer à partir du Centre de conformité, vous pouvez également configurer le type de lien de partage par défaut pour un site et les autorisations de lien de partage.
+
+Pour en savoir plus sur le fonctionnement de ces paramètres, voir [Modifier le type de lien par défaut pour un site](/sharepoint/change-default-sharing-link).
+
+Ces paramètres d’étiquette supplémentaires pour le lien de partage sont actuellement disponibles uniquement en tant que paramètre *AdvancedSettings* PowerShell et les cmdlets [Set-Label](/powershell/module/exchange/set-label) et [New-Label](/powershell/module/exchange/new-labelpolicy) du [Centre de conformité et sécurité PowerShell](/powershell/exchange/scc-powershell) :
+
+- **DefaultSharingScope** : les valeurs disponibles sont :
+    - **SpecificPeople** : définit le lien de partage par défaut pour le site sur le lien « Personnes spécifiques »
+    - **Organisation** : définit le lien de partage par défaut pour le site sur le lien « organisation » ou le lien partageable par l’entreprise
+    - **Tout le monde** : définit le lien de partage par défaut pour le site sur un lien Accès anonyme ou Tout le monde
+
+- **DefaultShareLinkPermission** : les valeurs disponibles sont :
+    - **Affichage** : définit l’autorisation de lien par défaut pour le site sur les autorisations « afficher »
+    - **Modifier** : définit l’autorisation de lien par défaut pour le site sur les autorisations « modifier »
+
+Ces deux paramètres et valeurs sont équivalents aux paramètres *DefaultSharingScope* et *DefaultShareLinkPermission* de la cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
+
+Exemples PowerShell, où le GUID de l’étiquette de sensibilité est **8faca7b8-8d20-48a3-8ea2-0f96310a848e** :
+
+- Pour définir le type de lien de partage sur SpecificPeople :
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
+    ````
+
+- Pour définir les autorisations de lien de partage sur Modifier :
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
+    ````
+
+#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Conseils PowerShell pour la spécification des paramètres avancés
+
+Bien que vous puissiez spécifier l’étiquette de niveau de sensibilité par son nom, nous vous recommandons d’utiliser le GUID de l’étiquette pour éviter toute confusion par rapport à la spécification du nom d’étiquette ou du nom complet. Pour trouver le GUID :
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+Pour supprimer l’un de ces paramètres avancés d’une étiquette de confidentialité, utilisez la même syntaxe de paramètre AdvancedSettings, mais spécifiez une valeur de chaîne null. Par exemple :
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
+````
 
 ## <a name="sensitivity-label-management"></a>Gestion des étiquettes de confidentialité
 
@@ -281,7 +329,7 @@ Vérifiez que vous disposez de la version 16.0.19418.12000 ou ultérieure de Sha
    Get-Label |ft Name, Guid
    ```
 
-3. À présent, [connectez-vous à Exchange Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable. Par exemple :
+3. À présent, [connectez-vous à Exchange Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable. Par exemple :
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -351,11 +399,11 @@ Les applications et services suivants ne prennent actuellement pas en charge les
   - Dynamics 365
   - Yammer
   - Project
-  - Power BI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 
-Une fois que vous avez activé les étiquettes de niveau de sensibilité pour les conteneurs, les classifications de groupe d’Azure AD ne sont plus pris en charge par Microsoft 365 et ne s’affichent pas sur les sites qui la prise en charge des étiquettes de sensibilité. Toutefois, vous pouvez convertir vos anciennes classifications en étiquettes de sensibilité.
+Une fois que vous avez activé les étiquettes de niveau de sensibilité pour les conteneurs, les classifications de groupe d’Azure AD ne sont plus pris en charge par Microsoft 365 et ne s’affichent pas sur les sites qui prennent en charge des étiquettes de sensibilité. Toutefois, vous pouvez convertir vos anciennes classifications en étiquettes de confidentialité.
 
 Pour consulter un exemple de la manière dont vous avez peut-être utilisé l’ancienne classification de groupe pour SharePoint, consultez la page [Classification des sites SharePoint « modernes »](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 

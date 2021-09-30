@@ -13,7 +13,7 @@
 |Corée                        |KOR     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Amérique du Nord                |NAM     |Centres de données situés aux États-Unis                    |
 |Norvège                       |NOR     |(emplacement des données eDiscovery bientôt disponible)|
-|Afrique du Sud                 |ZAF     |Centres de données situés en Asie de l’Est ou du Sud-Est|
+|Afrique du Sud                 |ZAF     |Centres de données situés en Europe                |
 |Suisse                  |CHE     |Centres de données situés en Europe                |
 |Émirats arabes unis         |ARE     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Royaume-Uni               |GBR     |Centres de données situés en Europe                |

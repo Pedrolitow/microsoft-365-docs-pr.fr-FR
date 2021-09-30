@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a8b2cc5498d15fe174d58fc9b4caf2b33982f38d
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 2d2ea7c85badc5fbd8b9ed2939cefbb42fd276e6
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988912"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011307"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence des fonctionnalités de conformité des communications
 
@@ -334,7 +334,7 @@ Les modèles d’avis sont des modèles de courrier personnalisés dans lequel v
 |**Nom du modèle** | Oui | Le nom convivial du modèle d’avis que vous sélectionnerez dans le flux de travail d’notification lors de la correction prend en charge les caractères de texte. |
 | **Adresse de l’expéditeur** | Oui | Adresse d’un ou de plusieurs utilisateurs ou groupes qui envoient le message à l’utilisateur avec une correspondance de stratégie, sélectionnée dans Active Directory pour votre abonnement. |
 | **Adresses CC et Cci** | Non | Utilisateurs ou groupes facultatifs à notifiés de la correspondance de stratégie, sélectionnés dans Active Directory pour votre abonnement. |
-| **Subject** | Oui | Les informations qui apparaissent dans la ligne d’objet du message, prend en charge les caractères de texte. |
+| **Sujet** | Oui | Les informations qui apparaissent dans la ligne d’objet du message, prend en charge les caractères de texte. |
 | **Corps du message** | Oui | Les informations qui apparaissent dans le corps du message, prend en charge le texte ou les valeurs HTML. |
 
 ### <a name="html-for-notices"></a>HTML pour les notifications
@@ -387,7 +387,7 @@ Pour les stratégies de conformité des communications, les valeurs de stratégi
 |**Déclencheur de stratégie d’alerte**|**Valeur par défaut**|
 |:-----|:-----|
 | Agrégation | Agrégation simple |
-| Seuil | Minimum : 3 activités <br> Maximum : 2 147 483 647 activités |
+| Seuil | Minimum : 4 activités <br> Maximum : 2 147 483 647 activités |
 | Fenêtre | Minimum : 60 minutes <br> Maximum : 10 000 minutes |
 
 > [!NOTE]

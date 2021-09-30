@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 625d9e37246fa6c4e24754be2e3bc830740124a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fbe16615c4497babee9c7d1ce905b8cd4d2c23cd
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205740"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011475"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
 
@@ -316,7 +316,7 @@ Une fois la tâche d'importation créée à l'étape 5, Microsoft 365 analyse le
 
   - Elle aide à répondre aux besoins de conformité de votre organisation en vous permettant d'appliquer les fonctions de conformité de Microsoft 365 aux données des fichiers PST que vous avez importés. Cela inclut :
 
-  - Activation des [boîtes aux lettres d'archivage](enable-archive-mailboxes.md) et de l'[archivage auto-expansif](enable-unlimited-archiving.md) pour donner aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire pour stocker les données que vous avez importées.
+  - Activation des [boîtes aux lettres d'archivage](enable-archive-mailboxes.md) et de l'[archivage auto-expansif](enable-autoexpanding-archiving.md) pour donner aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire pour stocker les données que vous avez importées.
 
   - Placement des boîtes aux lettres [en attente de litige](./create-a-litigation-hold.md) pour conserver les données que vous avez importées.
 
