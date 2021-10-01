@@ -58,8 +58,6 @@
           href: office-365-ti.md
         - name: Réponse aux incidents de sécurité Office 365
           href: office365-security-incident-response-overview.md
-        - name: Informations sur le flux de courriers dans le Centre de sécurité et de conformité
-          href: mail-flow-insights-v2.md
         - name: 'Conseils de Sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations Agile'
           href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
     - name: Déployer
@@ -170,10 +168,6 @@
               href: modify-remove-entries-tenant-allow-block.md
         - name: Suivi des messages
           href: message-trace-scc.md
-        - name: Signaler les messages et fichiers à Microsoft
-          href: report-junk-email-messages-to-microsoft.md
-        - name: Activer les compléments « Signaler le message » et « Report Phishing ».
-          href: enable-the-report-message-add-in.md
         - name: Utiliser des règles de flux de courriers pour bloquer les messages avec des pièces jointes exécutables
           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
         - name: Utiliser des règles de flux de courriers pour filtrer les e-mails en bloc
@@ -200,8 +194,6 @@
           href: ../../compliance/alert-policies.md
         - name: Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
           href: reports-and-insights-in-security-and-compliance.md
-        - name: Signaler les faux positifs et les faux négatifs dans Outlook
-          href: report-false-positives-and-false-negatives.md
         - name: Règles de flux de messagerie (règles de transport)
           href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
         - name: Exécuter un rapport de groupe de rôles d'administrateur
@@ -216,48 +208,66 @@
           href: investigate-malicious-email-that-was-delivered.md
         - name: Afficher les détails et les résultats d'une enquête automatisée
           href: air-view-investigation-results.md
-        - name: Afficher les rapports de Defender pour Office 365
-          href: view-reports-for-mdo.md
-        - name: Afficher les rapports sur la sécurité des e-mails
-          href: view-email-security-reports.md
-        - name: Afficher les rapports sur les flux de courrier
-          href: view-mail-flow-reports.md
         - name: Afficher le journal d’audit de l’administrateur
           href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
-        - name: Création de rapports et trace des messages dans EOP autonome
-          href: reporting-and-message-trace-in-exchange-online-protection.md
-        - name: Aperçu des messages transférés automatiquement
-          href: mfi-auto-forwarded-messages-report.md
         - name: Perspicacité de l'usurpation d'identité
           href: impersonation-insight.md
-        - name: Carte du flux de courriers
-          href: mfi-mail-flow-map-report.md
-        - name: Soumettre manuellement des messages à Microsoft
-          href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-        - name: Informations sur les nouveaux domaines transmis par courrier électronique
-          href: mfi-new-domains-being-forwarded-email.md
-        - name: Informations sur les courriers électroniques de nouveaux utilisateurs
-          href: mfi-new-users-forwarding-email.md
-        - name: Rapport de domaine non accepté
-          href: mfi-non-accepted-domain-report.md
-        - name: Rapport de non-remise
-          href: mfi-non-delivery-report.md
-        - name: Informations sur le flux de courrier entrant et sortant
-          href: mfi-outbound-and-inbound-mail-flow.md
-        - name: Aperçu et rapport sur les clients utilisant l’authentification SMTP
-          href: mfi-smtp-auth-clients-report.md
         - name: Aperçu de l'intelligence artificielle
           href: learn-about-spoof-intelligence.md
-        - name: Soumettre des programmes malveillants et non malveillants à Microsoft
-          href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-        - name: Aperçu de l’état du flux de courriers des domaines principaux
-          href: mfi-domain-mail-flow-status-insight.md
-        - name: Gérer les envois
-          href: admin-submission.md
-        - name: Utiliser des règles de flux de courriers pour afficher les comptes-rendus envoyés par les utilisateurs à Microsoft
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-        - name: Aperçu des files d’attente
-          href: mfi-queue-alerts-and-queues.md
+        - name: "Les technologies incluent tous les logiciels EOP, Microsoft Defender pour Office 365 P1 ainsi que\_:"
+          items:
+            - name: "Les technologies incluent tous les logiciels EOP, Microsoft Defender pour Office 365 P1 ainsi que\_:"
+              href: reporting-and-message-trace-in-exchange-online-protection.md
+            - name: Afficher les rapports sur la sécurité des e-mails
+              href: view-email-security-reports.md
+            - name: Afficher les rapports de Defender pour Office 365
+              href: view-reports-for-mdo.md
+            - name: Afficher les rapports de flux de messagerie dans le Centre de sécurité et conformité
+              href: view-mail-flow-reports.md
+        - name: Informations sur le flux de messagerie dans le centre de sécurité et conformité
+          items:
+            - name: Informations sur le flux de messagerie dans le centre de sécurité et conformité
+              href: mail-flow-insights-v2.md
+            - name: Aperçu des messages transférés automatiquement
+              href: mfi-auto-forwarded-messages-report.md
+            - name: Résoudre les problèmes de boucles de courrier possibles
+              href: mfi-mail-loop-insight.md
+            - name: Résoudre les règles de flux de messagerie lent
+              href: mfi-slow-mail-flow-rules-insight.md
+            - name: Carte du flux de messagerie
+              href: mfi-mail-flow-map-report.md
+            - name: Informations sur les nouveaux domaines transmis par courrier électronique
+              href: mfi-new-domains-being-forwarded-email.md
+            - name: Informations sur les courriers électroniques de nouveaux utilisateurs
+              href: mfi-new-users-forwarding-email.md
+            - name: Rapport de domaine non accepté
+              href: mfi-non-accepted-domain-report.md
+            - name: Rapport de non-remise
+              href: mfi-non-delivery-report.md
+            - name: Informations sur le flux de courrier entrant et sortant
+              href: mfi-outbound-and-inbound-mail-flow.md
+            - name: Informations sur les files d’attente
+              href: mfi-queue-alerts-and-queues.md
+            - name: Informations et rapports sur les clients SMTP AUTH
+              href: mfi-smtp-auth-clients-report.md
+            - name: Informations sur l’état du flux de courrier des principaux domaines
+              href: mfi-domain-mail-flow-status-insight.md
+        - name: Signaler les messages et fichiers à Microsoft Corporation
+          items:
+            - name: Signaler les messages et fichiers à Microsoft Corporation
+              href: report-junk-email-messages-to-microsoft.md
+            - name: Envois par l’administrateur
+              href: admin-submission.md
+            - name: Activer les compléments « Signaler le message » et « Report Phishing ».
+              href: enable-the-report-message-add-in.md
+            - name: Signaler les faux positifs et les faux négatifs dans Outlook
+              href: report-false-positives-and-false-negatives.md
+            - name: Soumettre manuellement des messages à Microsoft
+              href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+            - name: Utiliser des règles de flux de courriers pour afficher les comptes-rendus envoyés par les utilisateurs à Microsoft
+              href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+            - name: Soumettre des programmes malveillants et non malveillants à Microsoft Corporation
+              href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
     - name: Répondre
       items:
         - name: Détecter et résoudre rapidement les comptes d’utilisateurs compromis
@@ -282,10 +292,6 @@
           href: tuning-anti-phishing.md
         - name: Rechercher et libérer les messages mis en quarantaine en tant qu'utilisateur
           href: find-and-release-quarantined-messages-as-a-user.md
-        - name: Résoudre les problèmes de boucles de courrier possibles
-          href: mfi-mail-loop-insight.md
-        - name: Résoudre les règles de flux de messagerie lent
-          href: mfi-slow-mail-flow-rules-insight.md
         - name: Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur
           href: manage-quarantined-messages-and-files.md
         - name: Stratégies de mise en quarantaine

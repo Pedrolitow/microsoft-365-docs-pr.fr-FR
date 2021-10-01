@@ -84,6 +84,14 @@
           href: information-barriers-edit-segments-policies.md
         - name: Attributs du cloisonnement de l’information
           href: information-barriers-attributes.md
+        - name: Barrières informatiques et services Microsoft 365
+          items:
+            - name: Microsoft Teams et les obstacles à l'information
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: OneDrive et les obstacles à l'information
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: SharePoint et les obstacles à l'information
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Gestion des accès privilégiés
       items:
         - name: Vue d’ensemble
@@ -545,10 +553,10 @@
       items:
         - name: Activation des boîtes aux lettres d’archivage
           href: enable-archive-mailboxes.md
-        - name: Vue d’ensemble de l’archivage illimité
-          href: unlimited-archiving.md
-        - name: Activer l’archivage illimité
-          href: enable-unlimited-archiving.md
+        - name: Aperçu de l'archivage en auto-expansion
+          href: autoexpanding-archiving.md
+        - name: Activer l'archivage à expansion automatique
+          href: enable-autoexpanding-archiving.md
         - name: Configurer une stratégie d’archivage et de suppression de boîtes aux lettres
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Gestion des boîtes aux lettres inactives

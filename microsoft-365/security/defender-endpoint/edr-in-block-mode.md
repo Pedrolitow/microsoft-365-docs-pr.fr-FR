@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c590812ccc975206c6c278794f943f7e16c8bdd1
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e58d98f059dc723b06a65bfad36d6e72807e2f63
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400821"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042914"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
@@ -80,7 +80,7 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 |Conditions requises|Détails|
 |---|---|
 |Autorisations|Le rôle Administrateur général ou Administrateur de la sécurité doit être attribué [dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Pour plus d’informations, voir [Autorisations de base.](basic-permissions.md)|
-|Système d’exploitation|Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <ul><li>Windows 10 (toutes les publications)</li><li>Windows Serveur, version 1803 ou plus récente</li><li>Windows Server 2019</li><li>Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)</li></ul>|
+|Système d’exploitation|Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <ul><li>Windows 10 (toutes les publications)</li><li>Windows Serveur, version 1803 ou plus récente</li><li>Windows Server 2019</li><li>Windows Server 2022</li><li>Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)</li></ul>|
 |Microsoft Defender pour point de terminaison|Les appareils doivent être intégrés à Defender for Endpoint. Voir [conditions minimales requises pour Microsoft Defender pour le point de terminaison.](minimum-requirements.md)|
 |Antivirus Microsoft Defender|Les appareils doivent être Antivirus Microsoft Defender et s’exécutent en mode actif ou passif. [Confirmez Antivirus Microsoft Defender est en mode actif ou passif.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)|
 |Protection fournie par le cloud|Antivirus Microsoft Defender doivent être configurées de telle manière que la protection cloud [soit activée.](enable-cloud-protection-microsoft-defender-antivirus.md)|
@@ -113,7 +113,7 @@ La protection cloud est nécessaire pour activer la fonctionnalité sur l’appa
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>Quelle est la différence entre le mode actif et le mode passif ?
 
-Pour les points de terminaison exécutant Windows 10, Windows Server, version 1803 ou ultérieure ou Windows Server 2019, lorsque Antivirus Microsoft Defender est en mode actif, il est utilisé comme antivirus principal sur l’appareil. Lors de l’exécution en mode passif, Antivirus Microsoft Defender n’est pas le produit antivirus principal. Dans ce cas, les menaces ne sont pas Antivirus Microsoft Defender en temps réel.
+Pour les points de terminaison exécutant Windows 10, Windows Server, version 1803 ou ultérieure, Windows Server 2019 ou Windows Server 2022 lorsque Antivirus Microsoft Defender est en mode actif, il est utilisé comme antivirus principal sur l’appareil. Lors de l’exécution en mode passif, Antivirus Microsoft Defender n’est pas le produit antivirus principal. Dans ce cas, les menaces ne sont pas Antivirus Microsoft Defender en temps réel.
 
 > [!NOTE]
 > Antivirus Microsoft Defender peut s’exécuter en mode passif uniquement lorsque l’appareil est intégré à Microsoft Defender pour Endpoint.
@@ -151,6 +151,7 @@ Si Antivirus Microsoft Defender est en cours d’exécution en mode actif ou pas
 - Windows 10 (toutes les publications)
 - Windows Serveur, version 1803 ou plus récente
 - Windows Server 2019
+- Windows Server 2022
 
 #### <a name="what-about-windows-server-2016"></a>Qu’en est-il Windows Server 2016 ?
 

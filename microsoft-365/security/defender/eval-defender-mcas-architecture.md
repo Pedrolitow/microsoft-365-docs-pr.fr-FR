@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 591a98e07f47717f0475c88584a161c93198c084
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b4efbcb1a137faf6311ba1247405a389fdcbe4a
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207300"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042938"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>Passer en revue les exigences en matière d’architecture et les concepts clés pour Microsoft Cloud App Security
 
@@ -58,7 +58,7 @@ La première étape de gestion de l’utilisation des applications cloud consist
 ![Architecture pour Microsoft Cloud App Security : découverte cloud.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 Dans cette illustration, deux méthodes permettent de surveiller le trafic réseau et de découvrir les applications cloud utilisées par votre organisation.
-- R. Cloud App Discovery s’intègre à Microsoft Defender pour Endpoint en natif. Defender for Endpoint signale que les applications et services cloud sont accessibles à partir d’appareils gérés par Windows 10 informatique. 
+- R. Cloud App Discovery s’intègre à Microsoft Defender pour Endpoint en natif. Defender for Endpoint signale que les applications et services cloud sont accessibles à partir d’appareils gérés Windows 10 et Windows 11. 
 - B. Pour une couverture sur tous les appareils connectés à un réseau, le collecteur de journaux Sécurité des applications cloud est installé sur les pare-feux et autres proxies pour collecter des données à partir des points de terminaison. Ces données sont envoyées à Sécurité des applications cloud pour analyse.
 
 #### <a name="managing-cloud-apps"></a>Gestion des applications cloud
@@ -128,7 +128,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 
 Pour découvrir les applications cloud utilisées dans votre environnement, vous pouvez :
 
-- Préparez-vous rapidement avec la découverte cloud en intégrant Microsoft Defender pour Endpoint. Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud sur vos appareils Windows 10, sur et hors de votre réseau.
+- Préparez-vous rapidement avec la découverte cloud en intégrant Microsoft Defender pour Endpoint. Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud sur vos appareils Windows 11 et Windows 10, sur et hors de votre réseau.
 - Pour découvrir toutes les applications cloud accessibles par tous les appareils connectés à votre réseau, déployez le collecteur de journaux Sécurité des applications cloud sur vos pare-feu et autres proxies. Cela permet de collecter des données à partir de vos points de terminaison et de les envoyer Sécurité des applications cloud pour analyse. Sécurité des applications cloud s’intègre en natif à certains proxies tiers pour encore plus de fonctionnalités.
 
 Ces options sont incluses à [l’étape 2. Activez l’environnement d’évaluation.](eval-defender-mcas-enable-eval.md) 
@@ -146,7 +146,7 @@ En outre, Azure Sentinel inclut un connecteur Microsoft Cloud App Security pour 
 - [Intégration d’une solution SIEM générique](/cloud-app-security/siem)
 - [Diffuser des alertes et des journaux de découverte cloud à partir de MCAS dans Azure Sentinel](/azure/sentinel/connect-cloud-app-security)
 
-### <a name="next-steps"></a>Étapes suivantes
+### <a name="next-steps"></a>Prochaines étapes
 
 Étape 2 sur 3 : activer [l’environnement d’évaluation pour Microsoft Cloud App Security](eval-defender-mcas-enable-eval.md)
 

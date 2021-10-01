@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1fae1d1a800c6005f690ac3b4ac5a32cff38d549
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2bdb81ff6e6f95c30cb7661fde98b272310539d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181000"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043274"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Exécuter une simulation d’attaque dans Microsoft 365 Defender environnement pilote
 
@@ -94,13 +94,13 @@ Pour chaque simulation ou didacticiel :
 
 ## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>Simuler une attaque avec un contrôleur de domaine isolé et un périphérique client (facultatif)
 
-Dans cet exercice facultatif de réponse aux incidents, vous allez simuler une attaque sur un contrôleur de domaine des services de domaine Active Directory (AD DS) isolé et un périphérique Windows 10 à l’aide d’un script PowerShell, puis examiner, corriger et résoudre l’incident.
+Dans cet exercice facultatif de réponse aux incidents, vous allez simuler une attaque sur un contrôleur de domaine des services de domaine Active Directory (AD DS) isolé et un périphérique Windows à l’aide d’un script PowerShell, puis examiner, corriger et résoudre l’incident.
 
 Tout d’abord, vous devez ajouter des points de terminaison à votre environnement pilote.
 
 ### <a name="add-pilot-environment-endpoints"></a>Ajouter des points de terminaison d’environnement pilote
 
-Tout d’abord, vous devez ajouter un contrôleur de domaine AD DS isolé et un Windows 10 à votre environnement pilote.
+Tout d’abord, vous devez ajouter un contrôleur de domaine AD DS isolé et un Windows à votre environnement pilote.
 
 1. Vérifiez que votre client d’environnement pilote [a activé Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
@@ -141,7 +141,7 @@ Au cours de la simulation, l’attaque injecte du shellcode dans un processus en
 
 Pour exécuter la simulation de scénario d’attaque :
 
-1. Assurez-vous que votre environnement pilote inclut le contrôleur de domaine AD DS isolé et Windows 10 appareil.
+1. Assurez-vous que votre environnement pilote inclut le contrôleur de domaine AD DS isolé et Windows appareil.
 
 2. Connectez-vous au périphérique de test avec le compte d’utilisateur test.
 

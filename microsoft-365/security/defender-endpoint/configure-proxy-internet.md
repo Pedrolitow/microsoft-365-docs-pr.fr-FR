@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf8b1e049a96e7a03fb4df0199294afe193a660
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 81640ff0716d6dd0803dcad5b0db1849dfbee0d5
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399840"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042661"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -63,9 +63,9 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 Configurez un proxy statique basé sur le Registre pour le capteur defender de détection et de réponse de point de terminaison (PEPT) pour signaler les données de diagnostic et communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
 
 > [!NOTE]
-> Lorsque vous utilisez cette option sur Windows 10 ou Windows Server 2019, il est recommandé d’avoir la version suivante (ou ultérieure) et le cumul des mises à jour cumulatives :
+> Lorsque vous utilisez cette option sur Windows 10 ou Windows Server 2019 ou Windows Server 2022, il est recommandé d’avoir les mises à jour cumulatives et de build suivantes (ou ultérieures) :
 >
-> - Windows 10, version 1809 ou Windows Server 2019 -<https://support.microsoft.com/kb/5001384>
+> - Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
 > - Windows 10, version 1909 -<https://support.microsoft.com/kb/4601380>
 > - Windows 10, version 2004 -<https://support.microsoft.com/kb/4601382>
 > - Windows 10, version 20H2 -<https://support.microsoft.com/kb/4601382>

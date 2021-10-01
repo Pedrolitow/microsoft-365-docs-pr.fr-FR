@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: cb693fb60277e5262578cc442df7e1c5ba3f3c16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
+ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178139"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60009456"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -149,8 +149,10 @@ En outre, les éléments SharePoint qui sont dans les brouillons ou qui n’ont 
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
 
-> [!WARNING]
-> Cette configuration présente actuellement une limite connue dans laquelle l’étiquette de rétention sélectionnée est appliquée à tous les messages électroniques sans étiquette en cas de correspondance avec les types d’informations sensibles sélectionnés. Par exemple, même si vous appliquez automatiquement votre stratégie à des utilisateurs spécifiques, ou si vous sélectionnez des sites autres qu'Exchange pour cette stratégie, le label est toujours appliqué aux courriels non étiquetés lorsqu'il y a une correspondance.
+> [!IMPORTANT]
+> Pour les e-mails que vous appliquez automatiquement en identifiant des informations sensibles, il n’est pas pris en charge de définir l’étendue de la stratégie pour inclure ou exclure des destinataires spécifiques ; Cette configuration de stratégie prend uniquement en charge le paramètre Tous les **destinataires.** Spécifique à cette configuration de stratégie, tous les **destinataires** incluent des boîtes aux lettres de Microsoft 365 groupes.
+> 
+> Également spécifique à cette configuration de stratégie, si vous sélectionnez l’emplacement des groupes **Microsoft 365,** seuls les sites SharePoint connectés à un groupe Microsoft 365 sont inclus et non les boîtes aux lettres des groupes Microsoft 365.
 
 Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Dans l’exemple suivant, les types d’informations sensibles proviennent de la catégorie **Confidentialité** et du modèle **Informations d’identification personnelle (PII) des États-Unis** :
 
@@ -169,6 +171,8 @@ Pour plus d’informations sur ces options, reportez-vous aux instructions suiva
 Lorsque vous utilisez des types d’informations sensibles pour appliquer automatiquement des étiquettes de rétention :
 
 - Si vous utilisez des types d’informations sensibles personnalisés, ceux-ci ne peuvent pas étiqueter automatiquement des éléments existants dans SharePoint et OneDrive.
+
+- Pour les e-mails, vous ne pouvez pas sélectionner des destinataires spécifiques à inclure ou exclure ; seul le **paramètre Tous les destinataires** est pris en charge et pour cette configuration uniquement, il inclut les boîtes aux lettres de Microsoft 365 groupes. 
 
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
@@ -285,7 +289,7 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
     ``` PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

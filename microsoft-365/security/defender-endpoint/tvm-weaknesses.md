@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d6831cfaec813f5ab2598087c2777d867a5f8a7
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 13391bb906f2d056d4c554d52ffcf1ed8b6a6e2b
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009420"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042745"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -141,7 +141,7 @@ Afficher les informations sur les faiblesses associées dans la page de l’appa
 
 Comme pour la preuve logicielle, nous montrons maintenant la logique de détection que nous avons appliquée sur un appareil afin de l’afficher comme vulnérable. La nouvelle section est appelée « Logique de détection » (dans toute vulnérabilité détectée dans la page de l’appareil) et affiche la logique et la source de détection.
 
-La catégorie « Fonctionnalité du système d’exploitation » est également affichée dans les scénarios pertinents. Une CVE affecterait les appareils qui exécutent un système d’exploitation vulnérable uniquement si un composant de système d’exploitation spécifique est activé. Supposons que Windows Server 2019 présente une vulnérabilité dans son composant DNS. Avec cette nouvelle fonctionnalité, nous attacherons uniquement cette CVE aux appareils Windows Server 2019 avec la fonctionnalité DNS activée dans leur système d’exploitation.
+La catégorie « Fonctionnalité du système d’exploitation » est également affichée dans les scénarios pertinents. Une CVE affecterait les appareils qui exécutent un système d’exploitation vulnérable uniquement si un composant de système d’exploitation spécifique est activé. Supposons que Windows Server 2019 ou Windows Server 2022 présente une vulnérabilité dans son composant DNS. Avec cette nouvelle fonctionnalité, nous n’attacherons cette CVE qu’aux appareils Windows Server 2019 et Windows Server 2022 avec la fonctionnalité DNS activée dans leur système d’exploitation.
 
 :::image type="content" alt-text="Exemple de logique de détection qui répertorie les logiciels détectés sur l’appareil et les ko." source="images/tvm-cve-detection-logic.png":::
 

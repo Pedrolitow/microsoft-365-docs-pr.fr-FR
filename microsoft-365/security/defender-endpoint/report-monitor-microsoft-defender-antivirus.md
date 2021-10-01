@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1e754f43cc1963ae7991a72a65fef2aefa833305
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 3f4a0c8fbcfe58a252bb393fdba837e6ecad85ab
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498063"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041647"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Signaler sur l’antivirus Microsoft Defender
 
@@ -33,17 +33,17 @@ ms.locfileid: "59498063"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Antivirus Microsoft Defender est intégré à Windows 10, Windows Server 2019 et Windows Server 2016. Antivirus Microsoft Defender est de votre nouvelle génération de protection dans Microsoft Defender for Endpoint. La protection nouvelle génération permet de protéger vos appareils contre les menaces logicielles telles que les virus, les programmes malveillants et les logiciels espions dans le courrier électronique, les applications, le cloud et le web.
+Antivirus Microsoft Defender est intégré à Windows 10, Windows Server 2019, Windows Server 2022 et Windows Server 2016. Antivirus Microsoft Defender est de votre nouvelle génération de protection dans Microsoft Defender for Endpoint. La protection nouvelle génération permet de protéger vos appareils contre les menaces logicielles telles que les virus, les programmes malveillants et les logiciels espions dans le courrier électronique, les applications, le cloud et le web.
 
-Avec Antivirus Microsoft Defender, vous avez plusieurs options pour passer en revue l’état et les alertes de la protection. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller Antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou créer [des alertes par courrier électronique.](/configmgr/protect/deploy-use/endpoint-configure-alerts) Vous pouvez également surveiller la protection à [l’aide Microsoft Intune](/intune/introduction-intune).
+Avec Antivirus Microsoft Defender, vous avez plusieurs options pour passer en revue l’état et les alertes de protection. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller Antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou créer [des alertes par courrier électronique.](/configmgr/protect/deploy-use/endpoint-configure-alerts) Vous pouvez également surveiller la protection à [l’aide Microsoft Intune](/intune/introduction-intune).
 
 Microsoft Operations Management [](/windows/deployment/update/update-compliance-get-started) Suite dispose d’un module de conformité des mises à jour qui signale les Antivirus Microsoft Defender problèmes clés, notamment les mises à jour de la protection et les paramètres de protection en temps réel.
 
-Si vous avez un serveur tiers d’informations sur la sécurité et de gestion des événements (SIEM), vous pouvez également utiliser Windows Defender [événements clients.](/windows/win32/events/windows-events)
+Si vous avez un serveur tiers de gestion des événements et des informations de sécurité (SIEM), vous pouvez également utiliser Windows Defender [événements clients.](/windows/win32/events/windows-events)
 
 Windows événements comprennent plusieurs sources d’événements de sécurité, notamment les événements [](/windows/device-security/auditing/security-auditing-overview) sam (Security Account Manager) (améliorés pour[Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), voir également la rubrique Audit de sécurité) et les [événements Windows Defender.](troubleshoot-microsoft-defender-antivirus.md)
 
-Ces événements peuvent être regroupés de manière centralisée à [l’aide du Windows d’événements.](/windows/win32/wec/windows-event-collector) Souvent, les serveurs SIEM ont des connecteurs pour Windows événements, ce qui vous permet de corréler tous les événements de sécurité dans votre serveur SIEM.
+Ces événements peuvent être regroupés de manière centralisée à [l’aide du Windows’événements.](/windows/win32/wec/windows-event-collector) Souvent, les serveurs SIEM ont des connecteurs pour Windows événements, ce qui vous permet de corréler tous les événements de sécurité dans votre serveur SIEM.
 
 Vous pouvez également surveiller les événements de programmes malveillants à [l’aide de la solution d’évaluation des programmes malveillants dans Log Analytics.](/azure/log-analytics/log-analytics-malware)
 

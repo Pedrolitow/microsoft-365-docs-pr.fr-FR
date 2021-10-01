@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 184fa373afbc793faf19baaef72cf15a7462c8ca
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 7cdf2aad5c57e2f25ff26d3e7eac3e2194f00c52
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009480"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043070"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -46,27 +46,23 @@ Avant de commencer, assurez-vous que vous respectez les conditions suivantes en 
 
 Dans le tableau suivant, « Oui » indique qu’une fonctionnalité Gestion des menaces et des vulnérabilités est prise en charge pour le système d’exploitation ou la plateforme sur cette ligne.
 
-<br>
-
-****
-
-|Système d’exploitation ou plateforme pris en charge|Vulnérabilités du système d’exploitation|Vulnérabilités des produits logiciels|Évaluation de la configuration du système d’exploitation|Évaluation de la configuration des contrôles de sécurité|Produit logiciel |évaluation de la configuration|
-|---|---|---|---|---|---|
-|Windows 7|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
-|Windows 8.1|Oui|Oui|Oui|Oui|Oui|
-|Windows 10, versions 1607-1703|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
-|Windows 10, version 1709 ou ultérieure|Oui|Oui|Oui|Oui|Oui|
-|Windows Server 2008 R2|Oui|Oui|Oui|Oui|Oui|
-|Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui|
-|Windows Server 2016|Oui|Oui|Oui|Oui|Oui|
-|Windows Server 2019|Oui|Oui|Oui|Oui|Oui|
-|macOS 10.14 « Mojave » et supérieur|Oui|Oui|Oui|Oui|Oui|
-|Red Hat Enterprise Linux 7.2 ou supérieur \* (voir l’avis « Important » ci-dessous)|Oui|Oui|Oui|Oui|Oui|
-|CentOS 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui|
-|Ubuntu 16.04 LTS ou une LTS supérieure|Oui|Oui|Oui|Oui|Oui|
-|Oracle Linux 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui|
-|SUSE Linux Enterprise Server 12 ou supérieur|Oui|Oui|Oui|Oui|Oui|
-|
+Système d’exploitation ou plateforme pris en charge|Vulnérabilités du système d’exploitation|Vulnérabilités des produits logiciels|Évaluation de la configuration du système d’exploitation|Évaluation de la configuration des contrôles de sécurité|Évaluation de la configuration du produit logiciel
+:---|:---|:---|:---|:---|:---
+Windows 7|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
+Windows 8.1|Oui|Oui|Oui|Oui|Oui
+Windows 10, versions 1607-1703|Oui|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge
+Windows 10, version 1709 ou ultérieure|Oui|Oui|Oui|Oui|Oui
+Windows Server 2008 R2|Oui|Oui|Oui|Oui|Oui
+Windows Server 2012 R2|Oui|Oui|Oui|Oui|Oui
+Windows Server 2016|Oui|Oui|Oui|Oui|Oui
+Windows Server 2019|Oui|Oui|Oui|Oui|Oui
+Windows Server 2022|Oui|Oui|Oui|Oui|Oui
+macOS 10.14 « Mojave » et supérieur|Oui|Oui|Oui|Oui|Oui 
+Red Hat Enterprise Linux 7.2 ou supérieur \* (voir l’avis « Important » ci-dessous)|Oui|Oui|Oui|Oui|Oui
+CentOS 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui
+Ubuntu 16.04 LTS ou une LTS supérieure|Oui|Oui|Oui|Oui|Oui
+Oracle Linux 7.2 ou supérieur|Oui|Oui|Oui|Oui|Oui
+SUSE Linux Enterprise Server 12 ou supérieur|Oui|Oui|Oui|Oui|Oui
 
 > [!NOTE]
 > Certaines fonctionnalités ne sont pas disponibles pour le système d’exploitation de bas niveau, consultez le portail Microsoft 365 Defender pour plus d’informations sur le système d’exploitation pris en charge.

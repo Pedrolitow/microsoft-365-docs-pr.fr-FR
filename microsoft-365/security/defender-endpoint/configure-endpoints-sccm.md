@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: e61e525f23cf1e763c64fae1828e7d505d51a5cb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 9a5ef03cf94501d83340f159ecd1b54f26f68b0a
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401997"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042926"
 ---
 # <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Intégrer les appareils Windows 10 à l’aide de Configuration Manager
 
@@ -33,7 +33,7 @@ ms.locfileid: "59401997"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager branche actuelle
-- Gestionnaire de configuration de System Center 2012 R2
+- System Center 2012 Configuration Manager R2
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
@@ -53,9 +53,10 @@ En fonction de la version de Configuration Manager que vous exécutez, les syst�
   - Windows Server 2016
   - Windows Server 2016, version 1803 ou ultérieure
   - Windows Server 2019
+  - Windows Server 2022
 
 > [!NOTE]
-> Pour plus d’informations sur la façon d’intégrer Windows Server 2012 R2, Windows Server 2016 et Windows Server 2019, consultez la Windows [serveurs intégrés.](configure-server-endpoints.md)
+> Pour plus d’informations sur la façon d’intégrer Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 et Windows Server 2022, voir serveurs Windows [intégrés.](configure-server-endpoints.md)
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Intégrer des appareils à l’aide System Center Configuration Manager
 
@@ -166,7 +167,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Appareils de tableau de bord à l’Microsoft Endpoint Manager branche actuelle
 
-Si vous utilisez Microsoft Endpoint Manager branche actuelle, consultez Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
 
@@ -191,7 +192,7 @@ Si vous utilisez la Microsoft Endpoint Manager actuelle, utilisez le tableau de 
 
 Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
 
-1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou qu’il s’est correctement exécuté) sur les appareils de votre réseau.
+1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
 
 2. Vérification de la conformité des appareils avec le service Defender for Endpoint (cela garantit que l’appareil peut terminer le processus d’intégration et continuer à signaler des données au service).
 
@@ -205,7 +206,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
 4. Examinez les indicateurs d’état sous **Statistiques d’achèvement** et **État du contenu.**
 
-    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](troubleshoot-onboarding.md)
+    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md)
 
     ![Configuration Manager affichant un déploiement réussi sans erreur.](images/sccm-deployment.png)
 

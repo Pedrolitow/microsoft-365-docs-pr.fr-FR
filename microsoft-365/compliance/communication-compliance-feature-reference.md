@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2d2ea7c85badc5fbd8b9ed2939cefbb42fd276e6
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: ce17ef1f76b7311dc9e0c10bcde1554954b6639d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011307"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043022"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence des fonctionnalités de conformité des communications
 
-## <a name="policies"></a>Stratégies
+## <a name="policies"></a>Politiques
 
 > [!IMPORTANT]
 > L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution Microsoft 365 conformité des communications.](https://compliance.microsoft.com/supervisoryreview)
@@ -334,7 +334,7 @@ Les modèles d’avis sont des modèles de courrier personnalisés dans lequel v
 |**Nom du modèle** | Oui | Le nom convivial du modèle d’avis que vous sélectionnerez dans le flux de travail d’notification lors de la correction prend en charge les caractères de texte. |
 | **Adresse de l’expéditeur** | Oui | Adresse d’un ou de plusieurs utilisateurs ou groupes qui envoient le message à l’utilisateur avec une correspondance de stratégie, sélectionnée dans Active Directory pour votre abonnement. |
 | **Adresses CC et Cci** | Non | Utilisateurs ou groupes facultatifs à notifiés de la correspondance de stratégie, sélectionnés dans Active Directory pour votre abonnement. |
-| **Sujet** | Oui | Les informations qui apparaissent dans la ligne d’objet du message, prend en charge les caractères de texte. |
+| **Subject** | Oui | Les informations qui apparaissent dans la ligne d’objet du message, prend en charge les caractères de texte. |
 | **Corps du message** | Oui | Les informations qui apparaissent dans le corps du message, prend en charge le texte ou les valeurs HTML. |
 
 ### <a name="html-for-notices"></a>HTML pour les notifications
@@ -387,8 +387,8 @@ Pour les stratégies de conformité des communications, les valeurs de stratégi
 |**Déclencheur de stratégie d’alerte**|**Valeur par défaut**|
 |:-----|:-----|
 | Agrégation | Agrégation simple |
-| Seuil | Minimum : 4 activités <br> Maximum : 2 147 483 647 activités |
-| Fenêtre | Minimum : 60 minutes <br> Maximum : 10 000 minutes |
+| Seuil | Par défaut : 4 activités <br> Minimum : 3 activités <br> Maximum : 2 147 483 647 activités |
+| Fenêtre | Par défaut : 60 minutes <br> Minimum : 60 minutes <br> Maximum : 10 000 minutes |
 
 > [!NOTE]
 > Les paramètres de déclencheur de seuil de stratégie d’alerte pour les activités prend en charge une valeur minimale de 3 ou supérieure pour les stratégies de conformité des communications.

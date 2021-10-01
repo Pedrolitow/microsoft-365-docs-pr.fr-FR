@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé et itérer sur un brouillon de collection, vous pouvez la valider dans un jeu à réviser. Lorsque vous valider un brouillon de collection, les éléments collectés sont ajoutés au jeu à réviser dans le cas. Une fois que les éléments collectés sont dans l’ensemble de révision, vous pouvez les analyser, les examiner et les exporter.
-ms.openlocfilehash: 9b63117a90f6373e485f74e2edccfa0992ca2ded
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8aaa6a2eca4adb312fdf739e7c457cce82436087
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164033"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043250"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Valider un brouillon de collection dans un jeu à réviser dans Advanced eDiscovery
 
@@ -62,7 +62,7 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
       - **Ajoutez un exemple des résultats** de la collection : sélectionnez cette option pour ajouter un échantillon des résultats de la collection au jeu à réviser au lieu d’ajouter tous les résultats. Si vous sélectionnez cette option, cliquez sur **Modifier les exemples de paramètres** et choisissez l’une des options suivantes :
 
-         - **Exemple basé sur la confiance**: les éléments de la collection sont ajoutés au jeu à réviser sont déterminés par les paramètres statistiques que vous définissez. Si vous utilisez généralement un niveau de confiance et un intervalle lors de l’échantillonnage des résultats, spécifiez-les dans les zones de la baisse. Dans le cas contraire, utilisez les paramètres par défaut.
+         - **Exemple basé sur la confiance**: les éléments de la collection sont ajoutés au jeu à réviser seront déterminés par les paramètres statistiques que vous définissez. Si vous utilisez généralement un niveau de confiance et un intervalle lors de l’échantillonnage des résultats, spécifiez-les dans les zones de la baisse. Dans le cas contraire, utilisez les paramètres par défaut.
 
          - **Exemple aléatoire :** les éléments de la collection sont ajoutés au jeu à réviser en fonction d’une sélection aléatoire du pourcentage spécifié du nombre total d’éléments renvoyés par la recherche.
 
@@ -80,7 +80,7 @@ Lorsque vous valider un brouillon de collection dans un groupe de révision, les
 
 - Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans le service en direct et copiés dans un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
-- Tous les éléments (y compris le contenu et les métadonnées) qui ne se trouvent pas dans des sources de données de dépositaire ou non dépositaire sont réindexés (dans un processus appelé *indexation* approfondie) afin que toutes les données du jeu à réviser soient entièrement utilisables dans une recherche pendant l’examen des données de cas. La réindexation du contenu d’une collection entraîne des recherches approfondies et rapides lorsque vous recherchez ou filtrez le contenu du jeu à réviser au cours de l’examen du cas.
+- Tous les éléments (y compris le contenu et les métadonnées) qui ne se trouvent pas dans des sources de données de dépositaire ou non dépositaire sont réindexés (dans un processus appelé *indexation* approfondie) afin que toutes les données du jeu à réviser soient entièrement utilisables dans une recherche pendant l’examen des données de cas. La réindexation du contenu d’une collection entraîne des recherches approfondies et rapides lorsque vous recherchez ou filtrez le contenu du jeu à réviser au cours de l’examen de cas.
 
 - Les documents SharePoint et OneDrive chiffrés et les messages électroniques joints qui sont renvoyés dans les résultats de la recherche sont déchiffrés lorsque vous validerez la collection dans un groupe de révision. Vous pouvez examiner et interroger les fichiers déchiffrés dans le jeu à réviser. Pour plus d’informations, voir Déchiffrement dans [Microsoft 365 outils eDiscovery](ediscovery-decryption.md).
 

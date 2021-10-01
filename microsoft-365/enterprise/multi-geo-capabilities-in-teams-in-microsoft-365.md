@@ -17,18 +17,21 @@ ms.collection:
 - m365solution-spintranet
 localization_priority: Normal
 description: Découvrez comment Teams fonctionne avec Microsoft 365 multigéogé.
-ms.openlocfilehash: 7da2032e1106d03178eccf3bcfb4f37fc63780d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6df7d20b8541ec6aefca1f30d7fbfe6bf7c3f6c9
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202187"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043010"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Fonctionnalités multigé géographiques dans Microsoft Teams
 
 Les fonctionnalités multigéogé Teams permettent Teams données de conversation d’être stockées au repos dans un emplacement géographique spécifié. Les données de conversation se composent de messages de conversation, y compris les messages privés, les messages de canal et les images utilisées dans les conversations.
 
 Teams utilise la PDL (Preferred Data Location) pour les utilisateurs et les groupes pour déterminer où stocker les données. Si la PDL n’est pas définie ou n’est pas valide, les données sont stockées dans l’emplacement central du client.
+
+> [!NOTE]
+> Fonctionnalités multigé géographiques Teams déployés en juillet 2021. Vos messages de conversation et de canal seront automatiquement migrés vers l’emplacement géographique correct au cours des prochains trimestres. Toutes les nouvelles modifications PDL seront traitées une fois que le client aura terminé la synchronisation initiale, et les nouvelles modifications PDL au-delà seront mise en file d’attente et traitées dans l’ordre de réception.
 
 ## <a name="user-chat"></a>Conversation utilisateur
 

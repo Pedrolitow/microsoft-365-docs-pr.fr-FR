@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: b4e6becbdb0e26317bcc29e5bb70e24486d43414
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 0d33484a7d7369cd9b3727fbd125e208649c533d
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400449"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041779"
 ---
 # <a name="onboard-the-windows-10-devices-using-group-policy"></a>Intégrer les appareils Windows 10 à l’aide de la stratégie de groupe
 
@@ -39,7 +39,7 @@ ms.locfileid: "59400449"
 > [!NOTE]
 > Pour utiliser les mises à jour de stratégie de groupe (GP) pour déployer le package, vous devez être sur Windows Server 2008 R2 ou version ultérieure.
 >
-> Pour Windows Server 2019, vous devrez peut-être remplacer NT AUTHORITY\Well-Known-System-Account par NT AUTHORITY\SYSTEM du fichier XML créé par la préférence de stratégie de groupe.
+> Pour Windows Server 2019 et Windows Server 2022, vous devrez peut-être remplacer NT AUTHORITY\Known-System-Account par NT AUTHORITY\SYSTEM du fichier XML créé par la préférence de stratégie de groupe.
 
 ## <a name="onboard-devices-using-group-policy"></a>Intégrer des appareils à l’aide d’une stratégie de groupe
 
@@ -63,7 +63,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 7. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
+8. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
 
 9. Dans le champ Nom, tapez un nom approprié pour la tâche programmée (par exemple, Defender pour le déploiement de point de terminaison).
 
@@ -71,7 +71,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 11. Sélectionnez **OK** et fermez toutes les fenêtres GPMC ouvertes.
 
-12. Pour lier l’GPO à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un GPO existant.** Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe à lier. Cliquez sur **OK**.
+12. Pour lier l’GPO à une unité d’organisation, cliquez avec le bouton droit et sélectionnez **Lier un GPO existant.** Dans la boîte de dialogue qui s’affiche, sélectionnez l’objet de stratégie de groupe à lier. Cliquez sur **OK**.
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Defender for Endpoint nouvellement intégré.](run-detection-test.md)
@@ -113,13 +113,13 @@ Vous pouvez utiliser la stratégie de groupe (GP) pour configurer des paramètre
 
 ### <a name="update-endpoint-protection-configuration"></a>Mettre à jour la configuration de la protection des points de terminaison
 
-Après avoir configuré le script d’intégration, continuez à modifier la même stratégie de groupe pour ajouter des configurations de protection des points de terminaison. Effectuez des modifications de stratégie de groupe à partir d’un système exécutant Windows 10 ou Server 2019 pour vous assurer que vous avez toutes les fonctionnalités Antivirus Microsoft Defender requises. Vous devrez peut-être fermer et rouvrir l’objet de stratégie de groupe pour inscrire les paramètres de configuration de Defender ATP.
+Après avoir configuré le script d’intégration, continuez à modifier la même stratégie de groupe pour ajouter des configurations de protection des points de terminaison. Effectuez des modifications de stratégie de groupe à partir d’un système exécutant Windows 10 ou Server 2019 ou Windows Server 2022 pour vous assurer que vous avez toutes les fonctionnalités Antivirus Microsoft Defender requises. Vous devrez peut-être fermer et rouvrir l’objet de stratégie de groupe pour inscrire les paramètres de configuration de Defender ATP.
 
 Toutes les stratégies se trouvent sous `Computer Configuration\Policies\Administrative Templates` .
 
 **Emplacement de la stratégie** : \Windows\Windows Defender ATP
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Enable\Disable Sample collection|Activé : vérification « Activer la collecte d’exemples sur les ordinateurs »
 
@@ -127,7 +127,7 @@ Enable\Disable Sample collection|Activé : vérification « Activer la collecte 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Configurer la détection pour les applications potentiellement indésirables|Activé, Bloquer
 
@@ -135,7 +135,7 @@ Configurer la détection pour les applications potentiellement indésirables|Act
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\MAPS
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Rejoindre Microsoft MAPS|Enabled, Advanced MAPS
 Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | Activé, Envoyer des exemples sûrs
@@ -144,7 +144,7 @@ Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont req
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection en temps réel
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Désactiver la protection en temps réel|Désactivé
 Activer l’analyse du comportement|Activé
@@ -157,7 +157,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, autorisant les performances.
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
 Recherchez les dernières informations sur la sécurité des virus et logiciels espions avant d’exécution d’une analyse programmée |Activé
 
@@ -179,9 +179,9 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
    ![Image de la configuration de réduction de la surface d’attaque.](images/asr-guid.png)
 
-Stratégie|Paramètre
+Stratégie|Setting
 ---|---
-Configurer l’accès contrôlé aux dossiers| Activé, mode Audit
+Configurer l’accès contrôlé aux dossiers| Activé, mode audit
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
 
@@ -223,7 +223,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 
@@ -238,7 +238,7 @@ Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le d�
 
 Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation (unités d’organisation).
 
-1. Après avoir choisi la gp ou en avoir créé une nouvelle, modifiez-la.
+1. Après avoir choisi la gp ou en créer une nouvelle, modifiez-la.
 2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **protection en temps réel.**
 :::image type="content" source="images/realtime-protect.png" alt-text="protection en temps réel.":::
 1. Dans le dossier Quarantaine, configurez la suppression des éléments du dossier Quarantaine.
@@ -259,7 +259,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 ### <a name="configure-windows-defender-smart-screen-settings"></a>Configurer les Windows Defender de l’écran intelligent
 
-1. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Windows Defender’explorateur SmartScreen.** \> 
+1. Accédez à **Modèles d’administration** des stratégies de \>  \>  \> **configuration ordinateur Windows composants** \> **Windows Defender’explorateur SmartScreen.** \> 
 
     :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config windows defender smart screen explorer.":::
  

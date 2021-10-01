@@ -23,12 +23,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c65860eca559b1871f4f22a14a0bf179f06f3f9b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 18722989f99c8bb5ccb9b6dfc9762ea570033511
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776859"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042986"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 2 : Installation
 
@@ -88,7 +88,8 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
 > [!IMPORTANT]
 > La procédure suivante s’applique uniquement aux points de terminaison ou appareils qui exécutent les versions de Windows :
 >
-> - Windows Server 2019
+> - Windows Server 2019
+> - Windows Server 2022
 > - Windows Serveur, version 1803 (mode principal uniquement)
 > - Windows Server 2016 (voir la section suivante, [Utilisez-vous Windows Server 2016 ?](#are-you-using-windows-server-2016))
 
@@ -101,7 +102,7 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   # For Windows Server 2019
+   # For Windows Server 2019 and Windows Server 2022
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
    Redémarrez ensuite l’appareil. 
@@ -160,7 +161,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour confirmer l’état An
 > [!TIP]
 > [En savoir plus sur Antivirus Microsoft Defender états.](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states)
 
-## <a name="configure-defender-for-endpoint"></a>Configurer Defender pour endpoint
+## <a name="configure-defender-for-endpoint"></a>Configurer Microsoft Defender pour point de terminaison
 
 Cette étape du processus de migration implique la configuration de Antivirus Microsoft Defender pour vos points de terminaison. Nous vous recommandons d’utiliser Intune ; Toutefois, vous pouvez utiliser n’importe quelle méthode répertoriée dans le tableau suivant :
 
@@ -189,8 +190,9 @@ Les exclusions spécifiques à configurer dépendent de la version de Windows vo
 
 |Système d’exploitation|Exclusions|
 |---|---|
-|Windows 10, [version 1803 ou](/windows/release-health/status-windows-10-1803) ultérieure (voir Windows 10 de [publication)](/windows/release-health/release-information) <br/><br/> Windows 10, version 1703 ou 1709 avec [KB4493441](https://support.microsoft.com/help/4493441) installé <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/> [Windows Serveur, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
-|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/><br/> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <br/><br/> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/><br/> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/><br/> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <br/><br/> **REMARQUE**: la surveillance des fichiers temporaires de l’hôte 6\45 peut être un sous-dossier numéroté différent. <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
+|Windows 10, [version 1803 ou](/windows/release-health/status-windows-10-1803) ultérieure (voir Windows 10 de [publication)](/windows/release-health/release-information) <p> Windows 10, version 1703 ou 1709 avec [KB4493441](https://support.microsoft.com/help/4493441) installé <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019), Windows Server 2022 <p> [Windows Serveur, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
+|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <p> **REMARQUE**: la surveillance des fichiers temporaires de l’hôte 6\45 peut être un sous-dossier numéroté différent. <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
+
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Ajoutez votre solution existante à la liste d’exclusions Antivirus Microsoft Defender
 

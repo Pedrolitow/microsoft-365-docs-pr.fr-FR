@@ -15,14 +15,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 08/17/2021
+ms.date: 09/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3766c78e1c2af55f9e785d73cf639d9a6b1bf2a7
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 0809de7a30a624394103b8e6c3fb594e72c7cd77
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491228"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043154"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
@@ -51,7 +51,7 @@ Le présent article contient les sections suivantes :
 > [!IMPORTANT]
 > Gardez les points suivants à l’esprit :
 >
-> - Les exclusions personnalisées prévalent sur les exclusions automatiques.
+> - Les exclusions personnalisées sont prioritaires sur les exclusions automatiques.
 > - Les exclusions automatiques s’appliquent uniquement à l’analyse de la protection en temps réel (RTP). Les exclusions automatiques ne sont pas honorées lors d’une analyse complète, d’une analyse rapide ou d’une analyse à la demande.
 > - Les exclusions personnalisées et dupliquées ne sont pas en conflit avec les exclusions automatiques.
 > - Antivirus Microsoft Defender utilise les outils gestion et maintenance des images de déploiement (DISM) pour déterminer les rôles installés sur votre ordinateur.
@@ -66,7 +66,7 @@ Sur Windows Server 2016 ou ultérieure, vous ne devez pas définir les exclusion
 - Fichiers du système d’exploitation
 - Rôles serveur et fichiers ajoutés par le biais des rôles serveur
 
-Comme Antivirus Microsoft Defender est intégré, il ne nécessite pas d’exclusions pour les fichiers du système d’exploitation Windows Server 2016 ou ultérieure. En outre, lorsque vous exécutez Windows Server 2016 ou une ultérieure et installez un rôle, Antivirus Microsoft Defender inclut des exclusions automatiques pour le rôle serveur et tous les fichiers ajoutés lors de l’installation du rôle.
+Comme Antivirus Microsoft Defender est intégré, il ne nécessite pas d’exclusions pour les fichiers du système d’exploitation Windows Server 2016 ou ultérieures. En outre, lorsque vous exécutez Windows Server 2016 ou une ultérieure et installez un rôle, Antivirus Microsoft Defender inclut des exclusions automatiques pour le rôle serveur et tous les fichiers ajoutés lors de l’installation du rôle.
 
 Les exclusions de système d’exploitation et les exclusions de rôles de serveur n’apparaissent pas dans les listes d’exclusions standard affichées dans [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
 
@@ -78,7 +78,7 @@ Les sections suivantes contiennent les exclusions qui sont livrées avec des che
 
 #### <a name="default-exclusions-for-all-roles"></a>Exclusions par défaut pour tous les rôles
 
-Cette section répertorie les exclusions par défaut pour tous les rôles dans Windows Server 2016 et Windows Server 2019.
+Cette section répertorie les exclusions par défaut pour tous les rôles dans Windows Server 2016, Windows Server 2019 et Windows Server 2022.
 
 > [!NOTE]
 > Les emplacements par défaut peuvent être différents de ceux répertoriés dans cet article.
@@ -188,7 +188,7 @@ Le tableau suivant répertorie les exclusions de types de fichiers, les exclusio
 
 #### <a name="active-directory-exclusions"></a>Exclusions Active Directory
 
-Cette section répertorie les exclusions qui sont automatiquement livrées lorsque vous installez les services de domaine Active Directory (AD DS).
+Cette section répertorie les exclusions qui sont livrées automatiquement lorsque vous installez les services de domaine Active Directory (AD DS).
 
 ##### <a name="ntds-database-files"></a>Fichiers de base de données NTDS
 
@@ -322,18 +322,18 @@ Cette section répertorie les exclusions de dossiers qui sont automatiquement li
 
 ## <a name="opting-out-of-automatic-exclusions"></a>Refuser les exclusions automatiques
 
-Dans Windows Server 2016 et ultérieures, les exclusions prédéfines livrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble d’exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour d’informations de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour Windows Server 2016 et ultérieures. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
+Dans Windows Server 2016 et ultérieures, les exclusions prédéfines livrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble des exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour de l’intelligence de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour Windows Server 2016 et ultérieures. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
 
 > [!WARNING]
-> Le fait de refuser les exclusions automatiques peut avoir un impact négatif sur les performances ou entraîner une altération des données. Les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 et Windows Server 2019.
+> Le fait de refuser les exclusions automatiques peut avoir un impact négatif sur les performances ou entraîner une altération des données. Les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016, Windows Server 2019 et Windows Server 2022.
 
-Étant donné que les exclusions prédéfinie excluent uniquement les chemins d’accès par **défaut,** si vous déplacez les dossiers NTDS et SYSVOL vers un autre lecteur ou chemin différent du chemin d’accès d’origine, vous devez ajouter des exclusions manuellement. Voir [Configurer la liste des exclusions en fonction du nom du dossier ou de l’extension de fichier.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)
+Étant donné que les exclusions prédéfinie excluent uniquement les chemins d’accès par **défaut,** si vous déplacez des dossiers NTDS et SYSVOL vers un autre lecteur ou chemin différent du chemin d’accès d’origine, vous devez ajouter des exclusions manuellement. Voir [Configurer la liste des exclusions en fonction du nom du dossier ou de l’extension de fichier.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)
 
 Vous pouvez désactiver les listes d’exclusion automatique avec la stratégie de groupe, les cmdlets PowerShell et WMI.
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utiliser la stratégie de groupe pour désactiver la liste d’exclusions automatiques sur Windows Server 2016 et Windows Server 2019
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>Utiliser la stratégie de groupe pour désactiver la liste d’exclusions automatiques sur Windows Server 2016, Windows Server 2019 et Windows Server 2022
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
 2. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
 

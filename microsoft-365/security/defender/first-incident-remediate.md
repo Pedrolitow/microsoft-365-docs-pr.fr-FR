@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 954fa4d9879e9654847f50ad15f8ff3c3a88caf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dfcb6b08286e4751d764e5eb10542a6d8baeecf4
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203753"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042817"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Étape 2. Corriger votre premier incident
 
@@ -52,7 +52,7 @@ Microsoft 365 Defender propose plusieurs actions de correction que les analystes
 
 ## <a name="actions-on-files"></a>Actions sur les fichiers
 
-- **Arrêter et mettre en quarantaine le** fichier : cette action inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes, telles que les clés de Registre. Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours. 
+- **Arrêter et mettre en quarantaine le** fichier : cette action inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes, telles que les clés de Registre. Cette action prend effet sur les appareils Windows 11 ou Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours. 
 - **Ajoutez des indicateurs pour bloquer** ou autoriser les fichiers : empêchez toute propagation supplémentaire d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. Cette opération empêche la lecture, l’écriture ou l’exécution du fichier sur les appareils de votre organisation.
 - **Télécharger ou collecter un fichier** : cette action permet aux analystes de télécharger un fichier dans un fichier d’archivage protégé par .zip mot de passe pour une analyse plus approfondie par l’organisation.
 - **Analyse approfondie** : cette action exécute un fichier dans un environnement cloud sécurisé et entièrement instrumenté. Les résultats de l’analyse approfondie montrent les activités du fichier, les comportements observés et les artefacts associés, tels que les fichiers supprimés, les modifications du Registre et la communication avec les adresses IP. 

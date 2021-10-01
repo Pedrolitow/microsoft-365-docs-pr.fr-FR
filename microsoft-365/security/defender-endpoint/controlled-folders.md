@@ -1,5 +1,5 @@
 ---
-title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec un accès contrôlé aux dossiers
+title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec accès contrôlé aux dossiers
 description: Les fichiers des dossiers par défaut peuvent être protégés contre les changements par des applications malveillantes. Empêcher les ransomware de chiffrer vos fichiers.
 keywords: accès contrôlé aux dossiers, windows 10, windows defender, ransomware, protéger, fichiers, dossiers
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 34c293884a30912485e380da8b7408593435f28c
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 325859d8bbaed92baafebf81c1f38c8100dd4bbe
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490212"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043142"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -33,11 +33,11 @@ ms.locfileid: "59490212"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-controlled-folder-access"></a>Qu’est-ce que l’accès contrôlé aux dossiers ?
 
-L’accès contrôlé aux dossiers permet de protéger vos données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers protège vos données en vérifiant les applications par rapport à une liste d’applications connues et fiables. Pris en charge sur les clients Windows Server 2019 et Windows 10, l’accès contrôlé aux dossiers peut être désactivé à l’aide de Sécurité Windows App, Microsoft Endpoint Configuration Manager ou Intune (pour les appareils gérés).
+L’accès contrôlé aux dossiers permet de protéger vos données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers protège vos données en vérifiant les applications par rapport à une liste d’applications connues et fiables. Pris en charge sur les clients Windows Server 2019, Windows Server 2022 et Windows 10, l’accès contrôlé aux dossiers peut être désactivé à l’aide de Sécurité Windows App, Microsoft Endpoint Configuration Manager ou Intune (pour les appareils gérés).
 
 > [!NOTE]
 > Les moteurs de script ne sont pas fiables et vous ne pouvez pas leur autoriser l’accès aux dossiers protégés contrôlés. Par exemple, PowerShell n’est pas approuvé par l’accès contrôlé aux [dossiers,](/microsoft-365/security/defender-endpoint/indicator-certificates)même si vous l’autorisez avec des indicateurs de certificat et de fichier.
@@ -65,10 +65,11 @@ Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access
 
 Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également visiter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
-L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes de Windows :
+L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes Windows :
 
 - [Windows 10, version 1709 et](/windows/whats-new/whats-new-windows-10-version-1709) ultérieures
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- Windows Server 2022
 
 ## <a name="windows-system-folders-are-protected-by-default"></a>Windows dossiers système sont protégés par défaut
 
@@ -89,7 +90,7 @@ Windows système sont protégés par défaut, ainsi que plusieurs autres dossier
 
 ## <a name="requirements-for-controlled-folder-access"></a>Conditions requises pour l’accès contrôlé aux dossiers
 
-L’accès contrôlé aux dossiers [nécessite l Antivirus Microsoft Defender protection en temps réel.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+L’accès contrôlé aux dossiers [nécessite l’activation Antivirus Microsoft Defender protection en temps réel.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Microsoft 365 Defender portail
 

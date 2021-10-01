@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Découvrez comment utiliser le service d’importation dans le Centre de conformité Microsoft 365 pour importer en bloc des données de messagerie (fichiers PST) dans des boîtes aux lettres utilisateur.
-ms.openlocfilehash: efb51aebcca5d724b8a1f8ecaabb6eeb5f31e8dd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da5d795c2b2babb2f2ff89bb1cdd5531d4818b1b
+ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175875"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011271"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -92,7 +92,7 @@ Voici une illustration et une description du processus d’importation de fichie
 
 - L’importation de données de courrier dans Microsoft 365 aide votre organisation à respecter les règles de conformité en vous permettant de réaliser les opérations suivantes :
 
-  - Activer [les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et l’[archivage illimité](unlimited-archiving.md) pour donner aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire.
+  - Activer [les boîtes aux lettres d’archivage](enable-archive-mailboxes.md) et l’[archivage automatique étendu](autoexpanding-archiving.md) pour donner aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire.
 
   - Placez les boîtes aux lettres en [Conservation pour litige](./create-a-litigation-hold.md) pour conserver leur contenu.
 

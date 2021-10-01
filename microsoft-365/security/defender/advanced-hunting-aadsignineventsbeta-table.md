@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7fc5e0a37f57928b2ee1318d01e2a10b95a36108
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9913f431c0a20d239019d645f04328e75b548b12
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202974"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042733"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -65,7 +65,7 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`ResourceTenantId`|string|Identificateur unique du client de la ressource à accès|
 |`DeviceName`|string|Nom de domaine complet (FQDN) de la machine|
 |`AadDeviceId`|string|Identificateur unique de l’appareil dans Azure AD|
-|`OSPlatform`|string|Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.|
+|`OSPlatform`|string|Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
 |`DeviceTrustType`|string|Indique le type d’confiance de l’appareil qui s’est connecté. Pour les scénarios d’appareil géré uniquement. Les valeurs possibles sont Workplace, AzureAd et ServerAd.|
 |`IsManaged`|int|Indique si l’appareil à l’origine de la connectez-vous est un appareil géré (1) ou non un appareil géré (0)|
 |`IsCompliant`|int|Indique si l’appareil à l’origine de la signature est conforme (1) ou non (0)|

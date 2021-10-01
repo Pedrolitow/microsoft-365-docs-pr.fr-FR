@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuration du Scheduler pour Microsoft 365.
-ms.openlocfilehash: 01e574fd2f4cd766b3347c6fa56149f6bcd600d5
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: bebb2befa6a24f8913b70aa77ca66ef7e664e9d2
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988822"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042565"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuration du Planificateur pour Microsoft 365
 
-Les administrateurs clients doivent configurer une boîte aux lettres de l’Assistant Scheduler et obtenir des licences scheduler pour les organisateurs de réunions afin d’activer le scheduler pour Microsoft 365 service. 
+Les administrateurs clients doivent configurer une boîte aux lettres d’assistant de planification et obtenir des licences de scheduler pour les organisateurs de réunions afin d’activer le Scheduler pour Microsoft 365 service. 
 
 ## <a name="licensing"></a>Licences
 
@@ -26,7 +26,7 @@ En savoir plus : [Scheduler for Microsoft 365 licensing](https://www.microsoft.c
 > [!Note]
 > Les participants à la réunion n’ont pas besoin d’une licence scheduler Microsoft 365 licence. <br>La boîte aux lettres de l’Assistant Scheduler ne nécessite pas de licence Microsoft 365 ou scheduler.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 | Conditions préalables | Description |
 |-------------------|-------------|
@@ -51,7 +51,7 @@ Utilisez le Centre d'administration Microsoft 365 pour créer une boîte aux let
 Utilisez le nom Cortana dans l’adresse SMTP principale de votre boîte aux lettres. Les noms tels `Cortana@yourdomain.com` que , ou sont `CortanaScheduler@contoso.com` `Cortana.Scheduler@yourdomain.com` recommandés.
 
 ```PowerShell
-$domain="yourdomain.com  "
+$domain="yourdomain.com"
 $tenantAdmin="<tenantadmin>@$domain"
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
@@ -80,7 +80,7 @@ Après l’exécution de cette commande « set » sur la boîte aux lettres de l
 Pour vérifier que la boîte aux lettres de l’Assistant Planification a été créée
 
 ```PowerShell
-Get-CalendarProcessing cortana$domain | fl DeleteNonCalendarItems
+Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
 ```
 
 Le résultat doit être « false ».
@@ -88,7 +88,7 @@ Le résultat doit être « false ».
 <br>
 
 ```PowerShell
-Get-Mailbox -Identity cortana$domain | fl *type*
+Get-Mailbox -Identity cortana@$domain | fl *type*
 ```
 
 Le résultat doit être

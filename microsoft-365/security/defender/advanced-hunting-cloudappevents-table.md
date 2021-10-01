@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59499379a91fd267a12b64edb57dfa44036cd618
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163705"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042962"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -48,44 +48,44 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement |
-| `Application` | chaîne | Application qui a effectué l’action enregistrée |
-| `ApplicationId` | chaîne | Identificateur unique de l’application |
-| `AccountObjectId` | chaîne | Identificateur unique du compte dans Azure Active Directory |
-| `AccountDisplayName` | chaîne | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
-| `IsAdminOperation` | chaîne | Indique si l’activité a été effectuée par un administrateur |
-| `DeviceType` | chaîne | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » | 
-| `OSPlatform` | chaîne | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette colonne indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 7. |
-| `IPAddress` | chaîne | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `IsAnonymousProxy` | chaîne | Indique si l’adresse IP appartient à un proxy anonyme connu |
-| `CountryCode` | chaîne | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé |
-| `City` | chaîne | Ville où l’adresse IP du client est géolocalisé |
-| `Isp` | chaîne | Fournisseur de services Internet (ISP) associé à l’adresse IP |
-| `UserAgent` | chaîne | Informations sur l’agent utilisateur à partir du navigateur web ou d’une autre application cliente |
-| `ActivityType` | chaîne | Type d’activité qui a déclenché l’événement |
-| `ActivityObjects` | chaîne | Liste des objets, tels que des fichiers ou des dossiers, qui ont été impliqués dans l’activité enregistrée |
-| `ObjectName` | chaîne | Nom de l’objet à qui l’action enregistrée a été appliquée |
-| `ObjectType` | chaîne | Type d’objet, tel qu’un fichier ou un dossier, à qui l’action enregistrée a été appliquée |
-| `ObjectId` | chaîne | Identificateur unique de l’objet à qui l’action enregistrée a été appliquée |
-| `ReportId` | chaîne | Identificateur unique de l’événement |
-| `RawEventData` | chaîne | Informations d’événement brutes de l’application ou du service source au format JSON |
-| `AdditionalFields` | chaîne | Informations supplémentaires sur l’entité ou l’événement |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement |
+| `Application` | string | Application qui a effectué l’action enregistrée |
+| `ApplicationId` | string | Identificateur unique de l’application |
+| `AccountObjectId` | string | Identificateur unique du compte dans Azure Active Directory |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `IsAdminOperation` | string | Indique si l’activité a été effectuée par un administrateur |
+| `DeviceType` | string | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que « Périphérique réseau », « Station de travail », « Serveur », « Mobile », « Console de jeu » ou « Imprimante » | 
+| `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette colonne indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
+| `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
+| `IsAnonymousProxy` | string | Indique si l’adresse IP appartient à un proxy anonyme connu |
+| `CountryCode` | string | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé |
+| `City` | string | Ville où l’adresse IP du client est géolocalisé |
+| `Isp` | string | Fournisseur de services Internet (ISP) associé à l’adresse IP |
+| `UserAgent` | string | Informations sur l’agent utilisateur à partir du navigateur web ou d’une autre application cliente |
+| `ActivityType` | string | Type d’activité qui a déclenché l’événement |
+| `ActivityObjects` | string | Liste des objets, tels que des fichiers ou des dossiers, qui ont été impliqués dans l’activité enregistrée |
+| `ObjectName` | string | Nom de l’objet à qui l’action enregistrée a été appliquée |
+| `ObjectType` | string | Type d’objet, tel qu’un fichier ou un dossier, à qui l’action enregistrée a été appliquée |
+| `ObjectId` | string | Identificateur unique de l’objet à qui l’action enregistrée a été appliquée |
+| `ReportId` | string | Identificateur unique de l’événement |
+| `RawEventData` | string | Informations d’événement brutes de l’application ou du service source au format JSON |
+| `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
 ## <a name="apps-and-services-covered"></a>Applications et services couverts
 
 - Dropbox
 - Dynamics 365
-- Exchange Online
+- Exchange Online
 - Microsoft Teams
-- OneDrive Entreprise
+- OneDrive Entreprise
 - Power Automate
-- Power BI
+- Power BI
 - SharePoint Online
 - Skype Entreprise
 - Office 365
-- Protester 
+- Yammer 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab1cb1563f3ccc0f7bfda9b1f8875c76446153e3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7626c01aeee81c50ee1bed418735c87dc61c8853
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399237"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042613"
 ---
 # <a name="take-response-actions-on-a-device"></a>Prendre des mesures de réponse sur un appareil
 
@@ -57,7 +57,7 @@ Les actions de réponse s’exécutent le long de la partie supérieure d’une 
 
 > [!IMPORTANT]
 >
-> - Ces actions de réponse sont disponibles uniquement pour les appareils Windows 10, version 1703 ou ultérieure et Windows Server 2019.
+> - Ces actions de réponse sont disponibles uniquement pour les appareils sur Windows 10, version 1703 ou ultérieure, Windows Server 2019 et Windows Server 2022.
 > - Pour les plateformes Windows, les fonctionnalités de réponse (telles que l’isolation de l’appareil) dépendent des fonctionnalités tierces.
 > - Pour les agents de première partie De Microsoft, reportez-vous au lien « Plus d’informations » sous chaque fonctionnalité pour obtenir les conditions minimales requises du système d’exploitation.
 
@@ -182,8 +182,8 @@ En fonction de la gravité de l’attaque et de la sensibilité de l’appareil,
 
 > [!IMPORTANT]
 >
-> - L’isolation complète est disponible pour les appareils Windows 10, version 1703 et Windows Server 2019.
-> - L’isolation sélective est disponible pour les appareils Windows 10, version 1709 ou ultérieure et Windows Server 2019.
+> - L’isolation complète est disponible pour les appareils sur Windows 10, version 1703, Windows Server 2019 et Windows Server 2022.
+> - L’isolation sélective est disponible pour les appareils sur Windows 10, version 1709 ou ultérieure, Windows Server 2019 et Windows Server 2022.
 > - Lors de l’isolation d’un appareil, seuls certains processus et destinations sont autorisés. Par conséquent, les appareils qui se trouve derrière un tunnel VPN complet ne pourront pas accéder au service cloud de Microsoft Defender for Endpoint une fois l’appareil isolé. Nous vous recommandons d’utiliser un VPN de tunneling fractionnée pour Microsoft Defender pour le point de terminaison et Antivirus Microsoft Defender trafic lié à la protection basée sur le cloud.
 
 Cette fonctionnalité d’isolation de périphérique déconnecte l’appareil compromis du réseau tout en conservant la connectivité au service Defender for Endpoint, qui continue de surveiller l’appareil.

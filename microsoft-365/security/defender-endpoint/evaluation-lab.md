@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1a51ec4d2e17275379eb40521f506e4a83d19ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3765bdc36dc53f10c1842754266f72434f5b2f1c
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177667"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043130"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
@@ -42,17 +42,17 @@ Le laboratoire d’évaluation de Microsoft Defender pour points de terminaison 
 
 Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concentrer sur l’exécution de vos propres scénarios de test et des simulations pré-réalisées pour voir les résultats de Defender for Endpoint.
 
-Vous aurez un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permettra de tester la pile de protection complète que Defender pour Endpoint offre.
+Vous disposez d’un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permet de tester la pile de protection complète de Defender for Endpoint.
 
-Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 pré-configurés pour que les versions de système d’exploitation les plus récentes et les composants de sécurité en place, ainsi que Office 2019 Standard soit installé.
+Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 ou Windows Server 2022 qui sont pré-configurés pour mettre en place les dernières versions du système d’exploitation et les composants de sécurité qui s’y rapportent, ainsi que Office 2019 Standard installé.
 
-Vous pouvez également installer des simulateurs de menaces. Defender pour le point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
+Vous pouvez également installer des simulateurs de menaces. Defender for Endpoint s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 
 Installez votre simulateur préféré, exécutez des scénarios dans le laboratoire d’évaluation et voyez instantanément les résultats de la plateforme, le tout disponible sans frais supplémentaires. Vous aurez également un accès pratique à un large éventail de simulations que vous pouvez accéder et exécuter à partir du catalogue de simulations.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devrez satisfaire [](minimum-requirements.md#licensing-requirements) aux exigences de licence ou avoir accès en version d’évaluation à Microsoft Defender for Endpoint pour accéder au laboratoire d’évaluation.
+Vous devez satisfaire [](minimum-requirements.md#licensing-requirements) aux exigences de licence ou avoir accès en version d’évaluation à Microsoft Defender for Endpoint pour accéder au laboratoire d’évaluation.
 
 Vous devez avoir **les autorisations Gérer les paramètres** de sécurité pour :
 
@@ -106,7 +106,7 @@ Une fois le processus de configuration de l’atelier terminé, vous pouvez ajou
 
 ## <a name="add-devices"></a>Ajouter des appareils
 
-Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter Windows 10 ou Windows des appareils Server 2019.
+Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter Windows 10 ou Windows Server 2019 ou Windows server 2022.
 
 L’appareil sera configuré avec la version la plus récente du système d’exploitation et de Office 2019 Standard, ainsi que d’autres applications telles que Java, Python et SysIntenals.
 
@@ -135,7 +135,7 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
 1. Dans le tableau de bord, **sélectionnez Ajouter un appareil.**
 
-2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10 ou Windows Server 2019.
+2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10 ou Windows Server 2019, ou Windows Server 2022.
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuration de l’atelier avec options d’appareil.":::
 
@@ -184,16 +184,16 @@ Utilisez les périphériques de test pour exécuter vos propres simulations d’
 
 Vous pouvez simuler des scénarios d’attaque à l’aide des outils suivants :
 
-- Scénarios d’attaque « Faire [vous-même »](https://security.microsoft.com/tutorials/all)
+- Scénarios [d’attaque « Faites-le vous-même »](https://security.microsoft.com/tutorials/all)
 - Simulateurs de menaces
 
 Vous pouvez également utiliser le service [de recherche avancée](advanced-hunting-overview.md) pour interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Scénarios d’attaques do-it-yourself
 
-Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://security.microsoft.com/tutorials/all)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
+Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://security.microsoft.com/tutorials/all)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’investigation.
 
-Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://security.microsoft.com/tutorials/all)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
+Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://security.microsoft.com/tutorials/all)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’investigation.
 
 > [!NOTE]
 > La connexion aux périphériques de test est effectuée à l’aide de RDP. Assurez-vous que vos paramètres de pare-feu autorisent les connexions RDP.
@@ -241,7 +241,7 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 3. Choisissez une simulation ou parcourez la galerie de simulations pour parcourir les simulations disponibles.
 
     Vous pouvez obtenir la galerie de simulations à partir de :
-    - Tableau de bord d’évaluation principal dans la **vignette Vue d’ensemble simulations** ou
+    - Tableau de bord d’évaluation principal dans la **vignette de vue d’ensemble simulations** ou
     - En naviguant à partir  du volet de navigation Évaluation et didacticiels \> **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
 
 4. Sélectionnez les appareils sur lequel vous souhaitez exécuter la simulation.
@@ -252,7 +252,7 @@ L’exécution de simulations de menaces à l’aide de plateformes tierces est 
 
     ![Image de l’onglet Simulations.](images/simulations-tab.png)
 
-Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer Microsoft Defender pour le point de terminaison qui a déclenché une investigation et une correction **automatisées.** Consultez les preuves collectées et analysées par la fonctionnalité.
+Après avoir lancé vos simulations, nous vous encourageons à parcourir la barre de progression de l’atelier et à explorer Microsoft Defender for Endpoint qui a déclenché une investigation et une correction **automatisées.** Consultez les preuves collectées et analysées par la fonctionnalité.
 
 Recherchez des preuves d’attaque par le biais d’une recherche avancée à l’aide du langage de requête enrichi et de la télémétrie brute, puis consultez certaines menaces mondiales documentées dans l’analyse des menaces.
 
@@ -260,7 +260,7 @@ Recherchez des preuves d’attaque par le biais d’une recherche avancée à l�
 
 Microsoft Defender pour le point de terminaison s’est associé à différentes plateformes de simulation de menaces pour vous donner un accès pratique pour tester les fonctionnalités de la plateforme directement à partir du portail.
 
-Affichez toutes les simulations disponibles en allant au catalogue  **Simulations et** didacticiels \> **Simulations**  à partir du menu.
+Affichez toutes les simulations disponibles en allant dans le catalogue  **Simulations et** didacticiels \> **Simulations**  à partir du menu.
 
 Une liste d’agents de simulation de menace tiers pris en charge est répertoriée, et des types spécifiques de simulations ainsi que des descriptions détaillées sont fournis dans le catalogue.
 
@@ -286,7 +286,7 @@ En un coup d’œil, vous pourrez rapidement voir :
 
 - Incidents déclenchés
 - Alertes générées
-- Évaluations du niveau d’exposition
+- Évaluations sur le niveau d’exposition
 - Catégories de menaces observées
 - Sources de détection
 - Enquêtes automatisées

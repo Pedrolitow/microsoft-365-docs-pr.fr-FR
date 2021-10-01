@@ -16,12 +16,12 @@ ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d0cefdd90eed741a5f7c251e8cc524c3f9f5166d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 77df84645785da8944a47d0fb9501c95a5842969
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491396"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60041659"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
@@ -32,7 +32,7 @@ ms.locfileid: "59491396"
 > [!TIP]
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est pris en charge Windows Server 2019 et Windows 10 clients. Cet article explique comment personnaliser les fonctionnalités d’accès contrôlé aux dossiers et comprend les sections suivantes :
+L’accès contrôlé aux dossiers vous permet de protéger les données précieuses contre les applications malveillantes et les menaces, telles que les ransomware. L’accès contrôlé aux dossiers est pris en charge sur Windows Server 2019, Windows Server 2022 et Windows 10 clients. Cet article explique comment personnaliser les fonctionnalités d’accès contrôlé aux dossiers et comprend les sections suivantes :
 
 - [Protéger des dossiers supplémentaires](#protect-additional-folders)
 - [Ajouter des applications qui doivent être autorisées à accéder aux dossiers protégés](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -62,7 +62,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 4. Sous la section **Accès contrôlé aux dossiers,** sélectionnez **Dossiers protégés.**
 
-5. Sélectionnez **Oui** dans **l’invite Contrôle d’accès** utilisateur. Le **volet Dossiers protégés** s’affiche.
+5. Sélectionnez **Oui** dans **l’invite contrôle d’accès** utilisateur. Le **volet Dossiers protégés** s’affiche.
 
 6. Sélectionnez **Ajouter un dossier protégé et** suivez les invites pour ajouter des dossiers.
 
@@ -70,11 +70,11 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
 3. Dans votre Éditeur **de gestion des stratégies de** groupe, allez aux modèles d’administration des stratégies de **configuration** \>  \> **ordinateur.**
 
-4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
+4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
 
 5. Double-cliquez **sur Dossiers protégés configurés,** puis définissez l’option **sur Activé.** Sélectionnez **Afficher** et spécifiez chaque dossier à protéger.
 
@@ -91,7 +91,7 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
     ```
 3. Répétez l’étape 2 pour chaque dossier que vous souhaitez protéger. Les dossiers protégés sont visibles dans l’Sécurité Windows app.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Fenêtre PowerShell avec cmdlet affichée.":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Fenêtre PowerShell avec l’cmdlet affichée.":::
 
 > [!IMPORTANT]
 > Permet `Add-MpPreference` d’ajouter ou d’ajouter des applications à la liste et non `Set-MpPreference` . `Set-MpPreference`L’utilisation de la cmdlet va supprimer la liste existante.
@@ -129,7 +129,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard.
+3. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard.
 
 4. Double-cliquez sur le **paramètre Configurer les applications autorisées** et définissez l’option sur **Activé.** Sélectionnez **Afficher** et entrez chaque application.
 

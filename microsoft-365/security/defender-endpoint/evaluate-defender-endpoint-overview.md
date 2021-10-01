@@ -1,7 +1,7 @@
 ---
 title: Évaluation de Microsoft 365 Defender vue d’ensemble du point de terminaison
 description: Configurer un laboratoire d Microsoft 365 Defender d’essai ou un environnement pilote. Testez et découvrez comment la solution de sécurité est conçue pour protéger les appareils, l’identité, les données et les applications de votre organisation.
-keywords: Microsoft 365 Defender essai, essayez Microsoft 365 Defender, évaluez Microsoft 365 Defender, laboratoire d’évaluation Microsoft 365 Defender, pilote Microsoft 365 Defender, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
+keywords: Microsoft 365 Defender d’évaluation, essayer Microsoft 365 Defender, évaluer Microsoft 365 Defender, Microsoft 365 Defender laboratoire d’évaluation, Microsoft 365 Defender pilote, cyber sécurité, menace persistante avancée, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2c9e5d06b13cb2fa64ed9d51977ee13af19c92f8
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: b100ddc7abb64e5f73acce29edd1eecc2bd31af1
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58567603"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043226"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>Évaluation de Microsoft 365 Defender vue d’ensemble du point de terminaison
 
@@ -51,8 +51,8 @@ Le laboratoire d’évaluation de Microsoft Defender for Endpoint est conçu pou
 
 Vous disposez d’un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permet de tester la pile de protection complète de Defender for Endpoint.
 
-Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 pré-configurés pour que les versions de système d’exploitation les plus récentes et les composants de sécurité en place, ainsi que Office 2019 Standard soit installé.
+Vous pouvez ajouter des appareils Windows 10, Windows Server 2019 ou Windows Server 2022 qui sont pré-configurés pour avoir les dernières versions du système d’exploitation et les composants de sécurité en place, ainsi que Office 2019 Standard installé.
 
-Vous pouvez également installer des simulateurs de menaces. Defender pour le point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
+Vous pouvez également installer des simulateurs de menaces. Defender for Endpoint s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 
  Installez votre simulateur préféré, exécutez des scénarios dans le laboratoire d’évaluation, puis voyez instantanément les résultats de la plateforme. Cette fonctionnalité est disponible sans frais supplémentaires. Vous aurez également un accès pratique à un large éventail de simulations, que vous pouvez accéder et exécuter à partir du catalogue de simulations.

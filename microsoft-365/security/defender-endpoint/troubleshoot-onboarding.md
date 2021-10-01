@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 47e532f8746c0fa4bb0b256754bfb5602b5e367b
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 3fe7610d35114200a5bed515f82bb7a4453cf4fa
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60008916"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042974"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 
@@ -35,7 +35,7 @@ ms.locfileid: "60008916"
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Vous devrez peut-être résoudre les problèmes du processus d’intégration de Microsoft Defender for Endpoint si vous rencontrez des problèmes.
 Cette page fournit des étapes détaillées pour résoudre les problèmes d’intégration qui peuvent se produire lors du déploiement avec l’un des outils de déploiement et les erreurs courantes qui peuvent se produire sur les appareils.
@@ -58,7 +58,7 @@ Lors de l’intégration d’appareils à l’aide des versions suivantes de Con
 
 - Microsoft Endpoint Configuration Manager
 - Gestionnaire de configuration System Center 2012
-- Gestionnaire de configuration de System Center 2012 R2
+- System Center 2012 Configuration Manager R2
 
 Le déploiement avec les versions mentionnées ci-dessus de Configuration Manager s’exécute en exécutant le script d’intégration sur les appareils. Vous pouvez suivre le déploiement dans la console Configuration Manager.
 
@@ -362,12 +362,10 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 - Dans ce scénario, le service SENSE ne démarre pas automatiquement même si le package d’intégration a été déployé
 
 > [!NOTE]
-> Il n’est plus nécessaire que le service SENSE démarre sur les versions suivantes ou plus récentes de la Windows utilisateur après la OOBE :
->
-> - Windows 10, version 1809 ou Windows Server 2019 avec le rollup de mise à jour du [22 avril 2021](https://support.microsoft.com/kb/5001384).
-> - Windows 10, version 1909 avec le rollup de mise à jour [d’avril 2021](https://support.microsoft.com/kb/5001396).
-> - Windows 10, version 2004/20H2 avec le rollup de mise à jour [du 28 avril 2021](https://support.microsoft.com/kb/5001391).
->
+> Il n’est plus nécessaire que le service SENSE démarre sur les versions Windows suivantes ou plus récentes : Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 avec le déploiement de mise à jour du [22 avril 2021.](https://support.microsoft.com/kb/5001384) Windows 10, version 1909 avec le rollup de mise à jour [d’avril 2021](https://support.microsoft.com/kb/5001396). Windows 10, version 2004/20H2 avec le rollup de mise à jour [du 28 avril 2021](https://support.microsoft.com/kb/5001391). 
+
+
+> [!NOTE]
 > Les étapes suivantes sont pertinentes uniquement lorsque vous utilisez Microsoft Endpoint Configuration Manager. Pour plus d’informations sur l’intégration à l’Microsoft Endpoint Configuration Manager, voir [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Créez une application dans Microsoft Endpoint Configuration Manager.
@@ -486,7 +484,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration30.](images/mecm-30.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-mdatp.md)
 - [Intégration des appareils](onboard-configure.md)

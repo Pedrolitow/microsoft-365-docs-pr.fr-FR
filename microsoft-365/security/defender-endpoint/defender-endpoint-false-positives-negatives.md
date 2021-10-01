@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: c897a65296f0f5b016b2bdb22e28773a01be494a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: dcc6a0fd065ecffd302fd0b1ea9296ddaa1a5c80
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776991"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042577"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre les faux positifs/négatifs dans Microsoft Defender pour point de terminaison
 
@@ -268,7 +268,7 @@ Avant de créer des indicateurs pour les fichiers, assurez-vous que les conditio
 
 - Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir Gérer la [protection basée sur le cloud)](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 - La version du client anti-programme malveillant est 4.18.1901.x ou version ultérieure
-- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure ; Windows Server 2016; ou Windows Server 2019
+- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
 - La [fonctionnalité Bloquer ou autoriser est désactivée](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>Indicateurs pour les adresses IP, les URL ou les domaines
@@ -291,7 +291,7 @@ Avant de créer des indicateurs pour les certificats d’application, assurez-vo
 
 - Antivirus Microsoft Defender est configuré avec la protection basée sur le cloud activée (voir Gérer la [protection basée sur le cloud)](deploy-manage-report-microsoft-defender-antivirus.md)
 - La version du client anti-programme malveillant est 4.18.1901.x ou version ultérieure
-- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure ; Windows Server 2016; ou Windows Server 2019
+- Les appareils s’exécutent Windows 10 version 1703 ou ultérieure ; Windows Server 2016, Windows Server 2019 ou Windows Server 2022
 - Les définitions de protection contre les virus et menaces sont à jour
 
 > [!TIP]

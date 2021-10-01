@@ -17,14 +17,14 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages et fichiers bon et mauvais à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77b370bcd0a1ee59e80a638669598cf27ef32942
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 6dbf5a840da4474306b6140e16bdc01d24761eed
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988906"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042805"
 ---
-# <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft
+# <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft Corporation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -50,4 +50,4 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online
 |
 
 > [!NOTE]
-> Les données des soumissions à Microsoft résident dans la limite de conformité Office 365 des centres de données d’Amérique du Nord. Les données sont examinées par les analystes de l’équipe d’ingénierie afin d’améliorer l’efficacité des filtres.
+> Les données des soumissions à Microsoft résident dans la limite de conformité Office 365 des centres de données d’Amérique du Nord. Les données sont examinées par les analystes de l’équipe d’ingénierie afin d’améliorer l’efficacité des filtres. La soumission est considérée comme un commentaire pour aider à améliorer les filtres et est conservée pendant une période de 30 jours. Après quoi, il est supprimé.

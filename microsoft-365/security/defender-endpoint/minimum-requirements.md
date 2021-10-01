@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a5fb39cd97aee44edfd774c2c79080f3adaf9da2
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7cb01f6067e14d615e018b5c8648b0b6c423ddca
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400365"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042769"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -94,17 +94,18 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 7 SP1 Pro ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
 - Windows 8.1 Entreprise
 - Windows 8.1 Professionnel
-- Windows 10 Entreprise
+- Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
 - Windows 10 Éducation
 - Windows 10 Professionnel
 - Windows 10 Professionnel Éducation
 - Windows serveur
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Serveur, version 1803 ou ultérieure
   - Windows Server 2019
+  - Windows Server 2022
 - Windows Virtual Desktop
 
 Les appareils de votre réseau doivent être en cours d’exécution dans l’une de ces éditions.
@@ -130,7 +131,7 @@ La configuration matérielle requise pour Defender pour Endpoint sur les apparei
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Configuration requise pour le stockage réseau et les données
 
-Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives au point de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
+Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives aux points de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
 
 > [!NOTE]
 >

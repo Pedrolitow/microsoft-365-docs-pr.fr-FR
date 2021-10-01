@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71fd1428df73686f59199c70d988599f511faaf3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e77cecfe06606f974c4e488bcec14e12c9ce0de
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163732"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043334"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -66,6 +66,9 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   - **Windows Server 2019 - Applicable uniquement pour la prévisualisation publique**
     - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
     - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    
+  - **Windows Server 2022**
+       
 
 - **Activez la réponse en direct à partir de la page paramètres avancés.**
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2e3e649911cb2ce63c2a49be0ebc93e35e8055d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ae7dac229aba0d5c4cbfc32782fe1a4ad5613c8f
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163700"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043286"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -34,7 +34,7 @@ ms.locfileid: "59163700"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 
 
@@ -45,8 +45,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `DeviceId` | string | Identificateur unique de l’appareil dans le service |
-| `DeviceName` | chaîne | Nom de domaine complet (FQDN) de l’appareil |
-| `OSPlatform` | chaîne | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.|
+| `DeviceName` | string | Nom de domaine complet (FQDN) de l’appareil |
+| `OSPlatform` | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7.|
 | `Timestamp` | DateHeure | Date et heure de génération de l’enregistrement |
 | `ConfigurationId` | string | Identificateur unique pour une configuration spécifique |
 | `ConfigurationCategory` | string | Catégorie ou regroupement auquel appartient la configuration : application, système d’exploitation, réseau, comptes, contrôles de sécurité |
@@ -54,7 +54,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConfigurationImpact` | string | Impact nominal de la configuration sur la note de configuration globale (1-10) |
 | `IsCompliant` | booléen | Indique si la configuration ou la stratégie est correctement configurée. |
 | `IsApplicable` | booléen | Indique si la configuration ou la stratégie s’applique à l’appareil |
-| `Context` | chaîne | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
+| `Context` | string | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
 | `IsExpectedUserImpact` | valeur booléenne | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
 
 ## <a name="related-topics"></a>Sujets associés

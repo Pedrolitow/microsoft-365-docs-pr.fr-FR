@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee6241e6db062730446505e2bcbc377b15ffee9c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49c307bc2a68ae750e7ac9c54fd52b3b2b5f45ad
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179363"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043202"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs d’accès au service Microsoft Defender for Endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "59179363"
 
 **S’applique à :**
 
-- Windows Server 2008 R2 SP1
+- Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server (SAC) version 1803 et ultérieure
@@ -140,9 +140,9 @@ Vous pouvez intégrer Windows Server 2012 R2 et Windows Server 2016 en utilisant
 
 Après avoir effectué les étapes d’intégration, vous devez configurer et mettre à jour [System Center Endpoint Protection clients.](#configure-and-update-system-center-endpoint-protection-clients)
 
-## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windows Server (SAC) version 1803, Windows Server 2019 et Windows Server 2019 Core Edition
+## <a name="windows-server-sac-version-1803-windows-server-2019-windows-server-2022-and-windows-server-2019-core-edition"></a>Windows Server (SAC) version 1803, Windows Server 2019, Windows Server 2022 et Windows Server 2019 Core Edition
 
-Vous pouvez intégrer Windows Server (SAC) version 1803, Windows Server 2019 ou Windows Server 2019 Core edition en utilisant les méthodes de déploiement suivantes :
+Vous pouvez intégrer Windows Server (SAC) version 1803 ou Windows Server 2019, Windows Server 2022 ou Windows Server 2019 Core edition en utilisant les méthodes de déploiement suivantes :
 
 - [Script local](configure-endpoints-script.md)
 - [Stratégie de groupe](configure-endpoints-gp.md)
@@ -152,7 +152,7 @@ Vous pouvez intégrer Windows Server (SAC) version 1803, Windows Server 2019 ou 
 
 > [!NOTE]
 >
-> - Le package d’intégration pour Windows Server 2019 à 2019 Microsoft Endpoint Manager actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, voir [Packages et programmes dans Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
+> - Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à Microsoft Endpoint Manager est actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, voir [Packages et programmes dans Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
 > - Un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser une stratégie de groupe ou Microsoft Endpoint Configuration Manager.
 
 La prise en charge de Windows Server fournit des informations plus approfondies sur les activités du serveur, la couverture de la détection des attaques du noyau et de la mémoire, et permet des actions de réponse.
@@ -196,7 +196,7 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
 - Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés à Azure Defender. Pour plus d’informations sur l’intégration d’Azure Defender, voir Utiliser la [licence Microsoft Defender for Endpoint intégrée.](/azure/security-center/security-center-wdatp)
 
     > [!NOTE]
-    > L’intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+    > L’intégration entre Azure Defender for Servers et Microsoft Defender for Endpoint a été étendue pour prendre en charge Windows Server 2022, [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs. En outre, les alertes defender pour point de terminaison seront disponibles dans la console Azure Defender.
 
@@ -227,7 +227,7 @@ Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test d
 
 ## <a name="offboard-windows-servers"></a>Serveurs de Windows de tableau de bord
 
-Vous pouvez désinserrez Windows Server (SAC), Windows Server 2019 et Windows Server 2019 Core edition dans la même méthode disponible pour Windows 10 clients.
+Vous pouvez désinserrez Windows Server (SAC), Windows Server 2019, Windows Server 2022 et Windows Server 2019 Core edition dans la même méthode que pour les appareils clients Windows 10.
 
 - [Boarding à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Hors-carte des appareils à l’aide de Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
@@ -374,7 +374,7 @@ Pour Windows Server 2008 R2 PS1, veillez à respecter les conditions suivantes :
 
 Vérifiez que les ko sont présents avant l’intégration de Windows Server 2008 R2. Ce processus vous permet d’intégrer tous les serveurs si configuration Manager ne gère pas les serveurs.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)

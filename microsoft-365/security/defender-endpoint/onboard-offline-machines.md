@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c271aeac44e6590a4273fa9650c101a039225003
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: eb74f3fab320364c1311efa1a629e43eb90a1aae
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353662"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042757"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
@@ -42,9 +42,9 @@ Pour intégrer des appareils sans accès à Internet, vous devez suivre les éta
 > Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures Windows 8.1 et versions antérieures.
 
 > [!NOTE]
-> - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les appareils Windows 10 ou Windows Server 2019 déconnectés lorsqu’ils sont configurés via le Registre ou l’GPO « TelemetryProxyServer ».
-> - Pour Windows 10 ou Windows Server 2019 , alors que vous pouvez utiliser TelemetryProxyServer, il doit pointer vers un périphérique proxy ou une appliance standard.
-> - En outre, Windows 10 ou Windows Server 2019 dans les environnements déconnectés doivent être en mesure de mettre à jour les listes d’autorisation de certificat hors connexion via un fichier interne ou un serveur web.
+> - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les périphériques Windows 10 ou Windows Server 2019 ou Windows Server 2022 lorsqu’ils sont configurés via le Registre ou LPO « TelemetryProxyServer ».
+> - Pour Windows 10 ou Windows Server 2019 ou Windows Server 2022 , alors que vous pouvez utiliser TelemetryProxyServer, il doit pointer vers un périphérique proxy ou une appliance standard.
+> - En outre, Windows 10 ou Windows Server 2019 ou Windows Server 2022 dans les environnements déconnectés doivent être en mesure de mettre à jour les listes d’autorisation de certificat hors connexion via un fichier interne ou un serveur web.
 > - Pour plus d’informations sur la mise à jour des fichiers CTL hors connexion, voir Configurer un fichier ou un serveur web pour [télécharger les fichiers CTL.](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)
 
 Pour plus d’informations sur les méthodes d’intégration, consultez les articles suivants :

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4bc846927524bd80adf512107e1d072c7969d58f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 09817ff370af6a813b6473edf874a10a510f7185
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202877"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043034"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender conditions préalables
 
@@ -44,10 +44,11 @@ L’une de ces licences vous permet d’accéder Microsoft 365 Defender fonction
 - Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module
 - Microsoft 365 A3 avec le module Microsoft 365 A5 sécurité de l’Microsoft 365 A5
 - Windows 10 Entreprise E5 ou A5
+- Windows 11 Enterprise E5 ou A5
 - Enterprise Mobility + Security (EMS) E5 ou A5 
 - Office 365 E5 ou A5
-- Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité 
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour l’identité 
 - Microsoft Cloud App Security
 - Defender pour Office 365 (Plan 2)
 
@@ -86,7 +87,7 @@ Actuellement, l’intégration de Microsoft Defender for Office 365 dans les fon
 - Émirats arabes unis 
 
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
 - [Gérer l’accès et les autorisations](m365d-permissions.md)

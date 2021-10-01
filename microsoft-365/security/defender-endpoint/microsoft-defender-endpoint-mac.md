@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad24bc74eeaee8dd67009db6cfeb25e602c0c269
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ab3405022dac71843ecd4e8b630d3738fe69fcaa
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203921"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60043082"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender pour point de terminaison sur Mac
 
@@ -54,7 +54,7 @@ Pour obtenir les dernières fonctionnalités, y compris les fonctionnalités de 
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Abonnement Defender for Endpoint et accès au portail Microsoft 365 Defender
 - Expérience de niveau débutant dans les scripts macOS et BASH
@@ -87,7 +87,7 @@ Les trois plus récentes publication majeures de macOS sont pris en charge.
 
 Les versions bêta de macOS ne sont pas pris en charge.
 
-La prise en charge des appareils macOS avec des processeurs basés sur les puces M1 est actuellement en prévisualisation.
+La prise en charge des appareils macOS avec processeurs À puceS M1 est officiellement prise en charge depuis la version 101.40.84 de l’agent.
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
@@ -99,7 +99,7 @@ Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licenc
 - Microsoft 365 E5 Sécurité
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Entreprise E5
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.
