@@ -2,7 +2,7 @@
 title: Test le plus élevé parmi les tests du secteur d’activité – Microsoft 365 Defender
 ms.reviewer: ''
 description: Consultez les analyses et les scores les plus récents de Microsoft 365 Defender. La solution réalise constamment les meilleurs scores en tests indépendants (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Affichez les analyses et les scores les plus récents.
-keywords: Antivirus Microsoft Defender, Antivirus Microsoft Defender, évaluations de l’antivirus, test de l’antivirus, test antivirus, scores antivirus les plus récents, test de sécurité du produit, tests de sécurité du secteur d’activité, tests antivirus du secteur d’activité, meilleur antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, plateforme de protection de point de terminaison, EPP, détection et réponse du point de terminaison, EDR, Windows 10, Antivirus Microsoft Defender, WDAV, Microsoft Defender pour point de terminaison, Microsoft 365 Defender, sécurité, logiciel malveillant, av, antivirus, scores, score, protection de nouvelle génération, classement, succès
+keywords: Antivirus Microsoft Defender, Antivirus Microsoft Defender, évaluations de l’antivirus, test de l’antivirus, test antivirus, scores antivirus les plus récents, test de sécurité du produit, tests de sécurité du secteur d’activité, tests antivirus du secteur d’activité, meilleur antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, plateforme de protection de point de terminaison, EPP, détection et réponse du point de terminaison, EDR, Windows 10, Windows 11, Antivirus Microsoft Defender, WDAV, Microsoft Defender pour point de terminaison, Microsoft 365 Defender, sécurité, logiciel malveillant, av, antivirus, scores, score, protection de nouvelle génération, classement, succès
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,25 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f51fe73d25ac0ab3568b1896a0c35efdd14a40f
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180923"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042697"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Test le plus élevé parmi les tests du secteur d’activité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
+> Voulez-vous faire l'expérience de Microsoft 365 Defender? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Les technologies [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)réalisent constamment les meilleurs scores en tests indépendants, démontrant la puissance de ses fonctionnalités de protection contre les menaces en entreprise. Microsoft a pour ambition d’être transparente sur les scores de ces tests. Cette page fait la synthèse des résultats et fournit des analyses.
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) est une suite de défense unifiée en entreprise avant et après la violation. Elle coordonne en natif la détection, la prévention, l’examen et la réponse sur les points de terminaison, les identités, les messages électroniques et les applications pour fournir une protection intégrée contre les attaques sophistiquées.
+[Microsoft 365 Defender](microsoft-365-defender.md) est une suite de défense d’entreprise pré-et post-violation unifiée qui coordonne en natif la détection, la prévention, les examens et la réponse sur les points de terminaison, les identités, les messages électroniques et les applications pour fournir une protection intégrée contre les attaques sophistiquées.
 
 Microsoft 365 Defender réunit les fonctionnalités de [Microsoft Defender pour point de terminaison](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender pour Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender pour Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) et [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) en une seule solution.
 
@@ -49,7 +49,7 @@ Au centre de l’approche de test de MITRE se trouve l’émulation d’attaques
 
 [Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) a généralement un rendement élevé dans des tests indépendants, démontrant qu’il est le choix par excellence sur le marché des antivirus. Gardez à l’esprit que ces tests fournissent uniquement des résultats pour l’antivirus et ne testent pas les protections de sécurité supplémentaires.
 
-Antivirus Microsoft Defender est la fonctionnalité de [protection de nouvelle génération](https://www.youtube.com/watch?v=Xy3MOxkX_o4) dans la [pile de sécurité Windows 10 de Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) qui traite des menaces les plus récentes et les plus sophistiquées d’aujourd’hui. Dans certains cas, les clients ne savent peut-être même pas qu’ils sont protégés car la cyberattaque est arrêtée [quelques millisecondes après le démarrage de la campagne](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). C'est dû au fait qu’Antivirus Microsoft Defender et d’autres fonctionnalités d’une [plateforme de protection du point de terminaison (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) dans Microsoft Defender pour point de terminaison détecte et arrête le programme malveillant à la première consultation. Ils utilisent [l’apprentissage automatique](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [l’intelligence artificielle](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), l’analyse du comportement et d’autres technologies avancées.
+Antivirus Microsoft Defender est la fonctionnalité de [protection de nouvelle génération](https://www.youtube.com/watch?v=Xy3MOxkX_o4) dans la [pile de sécurité Windows de Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) qui traite des menaces les plus récentes et les plus sophistiquées d’aujourd’hui. Dans certains cas, les clients ne savent peut-être même pas qu’ils sont protégés car la cyberattaque est arrêtée [quelques millisecondes après le démarrage de la campagne](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). C'est dû au fait qu’Antivirus Microsoft Defender et d’autres fonctionnalités d’une [plateforme de protection du point de terminaison (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) dans Microsoft Defender pour point de terminaison détecte et arrête le programme malveillant à la première consultation. Ils utilisent [l’apprentissage automatique](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [l’intelligence artificielle](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), l’analyse du comportement et d’autres technologies avancées.
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-TEST : score de la protection de 6.0/6.0 lors du tout dernier test
 
@@ -57,7 +57,7 @@ L’évaluation produit AV-TEST et les tests du Rapport de certification sur tro
 
 - Test utilisateur d’entreprise AV-TEST de novembre – Décembre 2020 : [Score de protection 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Le plus récent**</sup>
 
-    Antivirus Microsoft Defender a réalisé un score de Protection parfait de 6.0/6.0 avec 100 % en novembre et décembre. 11 382 exemples de programme malveillant ont été utilisés.
+    Antivirus Microsoft Defender a réalisé un score de Protection parfait de 6.0/6.0 avec 100 % en novembre et décembre. 11 382 échantillons de logiciels malveillants ont été utilisés.
 
 - Test utilisateur d’entreprise AV-TEST de septembre – octobre 2020 : [Score de protection 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 

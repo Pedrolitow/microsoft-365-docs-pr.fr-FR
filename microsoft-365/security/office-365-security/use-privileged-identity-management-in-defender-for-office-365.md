@@ -1,5 +1,5 @@
 ---
-title: Utilisez Privileged Identity Management (PIM) dans Defender pour Office 365.
+title: Utilisez Azure Privileged Identity Management (PIM) dans Microsoft Defender pour Office 365 l’accès administrateur aux outils de cybersécurité.
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,12 +20,12 @@ ms.custom:
 description: Apprenez à intégrer PIM afin d’accorder un accès limité dans le temps et juste-à-temps aux utilisateurs pour effectuer des tâches de privilège élevé dans Microsoft Defender pour Office 365, réduisant ainsi les risques pour vos données.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22fbb2dd57c8bd3d6ac9b25b219895bc480c266c
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 45fec4fef733fe302f34c470ce2a264c257b67f7
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444261"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042685"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) et pourquoi l’utiliser avec Microsoft Defender pour Office 365
@@ -37,7 +37,7 @@ La gestion des identités privilégiées (PIM) est une fonctionnalité d'Azure q
 
 ## <a name="steps-to-use-pim-to-grant-just-in-time-access-to-defender-for-office-365-related-tasks"></a>Étapes d’utilisation de PIM pour accorder un accès juste-à-temps à Defender pour Office 365 tâches associées
 
-En configurant le PIM pour qu'il fonctionne avec Defender for Office 365, les administrateurs créent un processus permettant à un utilisateur de demander un accès pour prendre les mesures dont il a besoin. L’utilisateur *doit justifier* la nécessité d’élévation de ses privilèges.
+En configurant le PIM pour qu'il fonctionne avec Microsoft Defender pour Office 365, les administrateurs créent un processus permettant à un utilisateur de demander un accès pour prendre les mesures dont il a besoin. L'utilisateur doit *justifier* la nécessité de l'élévation de ses privilèges.
 
 Dans cet exemple, nous allons configurer « Alex », un membre de notre équipe de sécurité qui n’aura aucun accès permanent au à Office 365, mais qui peut accéder à la fois à un rôle requis pour les opérations quotidiennes normales, telles que la [recherche de menaces](threat-hunting-in-threat-explorer.md), puis à un niveau de privilège supérieur lorsque des opérations moins fréquentes mais sensibles, telles que la [correction des messages électroniques malveillants remis](remediate-malicious-email-delivered-office-365.md), sont requises.
 

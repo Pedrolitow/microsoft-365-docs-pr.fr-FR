@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: aec229a8286113b78b39f8aad330ca3545bc92a6
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 230e70000e4561c7b88bcedb7bab143b03b95b49
+ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490846"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60042889"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Détecter et bloquer des applications potentiellement indésirables
 
@@ -42,7 +42,7 @@ Voici quelques exemples :
 > [!TIP]
 > Pour d’autres exemples et une discussion sur les critères que nous utilisons pour étiqueter des applications auxquelles il convient que les fonctionnalités de sécurité accordent une attention particulière, voir [Comment Microsoft identifie les programmes malveillants et les applications potentiellement indésirables](/windows/security/threat-protection/intelligence/criteria).
 
-Les applications potentiellement indésirables peuvent augmenter le risque que votre réseau soit infecté par un vrai programme malveillant, rendre les infections de programme malveillant plus difficiles à détecter ou gaspiller des ressources informatiques pour les nettoyer. La protection contre les applications potentiellement indésirables est prise en charge sur Windows 10, Windows Server 2019 et Windows Server 2016. Dans Windows 10 (version 2004 et ultérieure), l’Antivirus Microsoft Defender bloque les applications considérées par défaut comme applications potentiellement indésirables pour les appareils Entreprise (E5).
+Les applications potentiellement indésirables peuvent augmenter le risque que votre réseau soit infecté par un vrai programme malveillant, rendre les infections de programme malveillant plus difficiles à détecter ou gaspiller des ressources informatiques pour les nettoyer. La protection contre les applications potentiellement indésirables est prise en charge sur Windows 10, Windows Server 2019, Windows Server 2022 et Windows Server 2016. Dans Windows 10 (version 2004 et ultérieure), l’Antivirus Microsoft Defender bloque les applications considérées par défaut comme applications potentiellement indésirables pour les appareils Entreprise (E5).
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -74,7 +74,7 @@ Bien que Microsoft Defender pour point de terminaison ait sa propre liste de blo
 La fonctionnalité de protection contre les applications potentiellement indésirables (PUA) dans l’Antivirus Microsoft Defender peut détecter et bloquer les applications potentiellement indésirables (PUA) sur les points de terminaison dans votre réseau.
 
 > [!NOTE]
-> Cette fonctionnalité est disponible dans Windows 10, Windows Server 2019 et Windows Server 2016.
+> Cette fonctionnalité est disponible dans Windows 10, Windows Server 2019, Windows Server 2022 et Windows Server 2016.
 
 L’Antivirus Microsoft Defender bloque les fichiers détectés d’applications potentiellement indésirables (PUA) et toutes les tentatives pour les télécharger, déplacer, exécuter ou installer. Les fichiers d’applications potentiellement indésirables (PUA) sont ensuite déplacés vers la mise en quarantaine. Lorsqu’un fichier d’applications potentiellement indésirables (PUA) est détecté sur un point de terminaison, l’Antivirus Microsoft Defender envoie une notification à l’utilisateur ([sauf si les notifications sont désactivées](configure-notifications-microsoft-defender-antivirus.md)) dans le même format que les autres détections de menaces. La notification est précédée par `PUA:` pour indiquer son contenu.
 
@@ -183,7 +183,7 @@ Consultez [Résoudre des problèmes relatifs aux ID d’événement](troubleshoo
 
 ## <a name="view-pua-events-using-advanced-hunting"></a>Afficher les événements des applications potentiellement indésirables (PUA) à l’aide du repérage avancé
 
-Si vous utilisez [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md), vous pouvez utiliser une requête de repérage avancé pour afficher les événements des applications potentiellement indésirables (PUA). Voici une requête d’exemple :
+Si vous utilisez [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md), vous pouvez utiliser une requête de repérage avancé pour afficher les événements des applications potentiellement indésirables (PUA). Voici un exemple de requête :
 
 ```console
 DeviceEvents
