@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 72238bd3f9ccabc64e0846f0384397d14f752bd9
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: b30d29e9ac5d318e2bcee7226db10f7ca24882a2
+ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988294"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60069158"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -67,7 +67,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     - Jusqu’à 25 000 fichiers automatiquement étiquetés dans votre client par jour.
     - Jusqu’à 100 stratégies d’attribution automatique de nom par client, chacune ciblant 100 sites (SharePoint ou OneDrive) lorsqu’ils sont spécifiés de manière individuelle. Vous pouvez également spécifier tous les sites, et cette configuration est exemptée du maximum de 100 sites.
     - Les valeurs existantes pour modifié, modifié par et la date ne sont pas changées du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes.
-    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier.
+    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond au dernier compte qui a modifié le fichier. Si ce compte n’est plus dans Azure Active Directory Domain Services, l’étiquette ne sera pas appliquée, car ces valeurs ne peuvent pas être définies.
 
     Spécifique à l’étiquetage automatique pour Exchange :
     
@@ -134,7 +134,7 @@ Lorsqu’une étiquette de confidentialité est appliquée automatiquement, l’
 
 ### <a name="configuring-sensitive-info-types-for-a-label"></a>Configuration des types d’informations sensibles pour une étiquette
 
-Lorsque vous sélectionnez l’option **types d’informations sensibles**, vous voyez la même liste de types d'informations sensibles que lorsque vous créez une stratégie de protection contre la perte des données (DLP, data loss prevention). Par exemple, vous pouvez appliquer automatiquement une étiquette hautement confidentiel à tout contenu ayant des informations d’identification personnelle (PII) de clients, comme les numéros de carte de crédit ou les numéros de sécurité sociale :
+Lorsque vous sélectionnez l’option **Types d’informations sensibles**, vous voyez la même liste de types d’informations sensibles que lorsque vous créez une stratégie de protection contre la perte de données (DLP). Par exemple, vous pouvez appliquer automatiquement une étiquette Hautement confidentiel à tout contenu contenant les informations personnelles des clients, tels que les numéros de carte de crédit, les numéros de sécurité sociale ou les numéros de passeport :
 
 ![Types d’informations sensibles pour l’étiquetage automatique dans les applications Office.](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -144,7 +144,7 @@ De même, lorsque vous configurez les stratégies DLP, vous pouvez affiner votre
 
 Vous pouvez en savoir plus sur ces options de configuration dans la documentation de DLP : [Optimisation des règles pour une correspondance plus facile ou plus difficile](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
-De même, de même que la configuration de stratégie DLP, vous pouvez choisir si une condition doit détecter tous les types d’informations sensibles ou seulement l’un d’eux. Pour améliorer la flexibilité ou la complexité de vos conditions, vous pouvez ajouter [des groupes et utiliser des opérateurs logiques entre les groupes](data-loss-prevention-policies.md).
+De même, comme pour la configuration de la stratégie DLP, vous pouvez choisir si une condition doit détecter tous les types d’informations sensibles, ou un seul d’entre eux. Pour rendre vos conditions plus flexibles ou complexes, vous pouvez ajouter[ groups et utiliser des opérateurs](data-loss-prevention-policies.md).
 
 > [!NOTE]
 > L’étiquetage automatique basé sur des types d’informations sensibles personnalisés s’applique uniquement au contenu nouvellement créé ou modifié dans OneDrive et SharePoint ; pas au contenu existant. Cette limitation s’applique également aux stratégies d’étiquetage automatique.
@@ -206,8 +206,8 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Conditions préalables pour les stratégies d’étiquetage automatique
 
 - Mode de simulation :
-  - L’audit pour Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit](turn-audit-log-search-on-or-off.md).
-  - Pour afficher le contenu d’un fichier ou d’un e-mail en mode Source, vous devez disposer du rôle de **Visionneuse de contenu de l’Explorateur de contenu**. Par défaut, les administrateurs généraux n’ont pas ce rôle. Si vous n’avez pas cette autorisation, le volet Aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Éléments correspondants**.
+  - L’audit de Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas si l’audit est déjà activé, consultez [Activez ou désactivez la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
+  - Pour afficher le contenu d’un fichier ou d’un e-mail dans la vue source, vous devez avoir le rôle de **Visionneuse de contenu de l’Explorateur de contenu**.Les administrateurs généraux n’ont pas ce genre de ce rôle par défaut.Si vous ne disposez pas de cette autorisation, le volet générateur d’aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Élément correspondant**.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
   - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -217,7 +217,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
   - Les types d’informations de confidentialité personnalisées s’appliquent uniquement au contenu ajouté ou modifié dans SharePoint ou OneDrive une fois les types d’informations de confidentialité personnalisés créés.
   - Pour tester de nouveaux types d’informations sensibles personnalisés, créez-les avant de créer votre stratégie d’étiquetage automatique, puis créez de nouveaux documents avec des exemples de données pour pouvoir les tester.
 
-- Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes :
+- Une ou plusieurs étiquettes de confidentialité [créées et publiées ](create-sensitivity-labels.md)(à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes : 
   - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction.
   - Si les étiquettes que vous souhaitez utiliser pour l’étiquetage automatique sont configurées pour utiliser les marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
   - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md) :
@@ -262,7 +262,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     ![Onglet étiquetage automatique.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > Si vous ne voyez pas l’onglet **Étiquetage automatique**, cette fonctionnalité n’est actuellement pas disponible dans votre région en raison d’une dépendance Azure back-end. Pour plus d’informations, voir [Disponibilité des dépendances Azure par pays](/troubleshoot/azure/general/dependency-availability-by-country).
+    > Si vous ne voyez pas l’onglet **Étiquetage azure**, cette fonctionnalité n’est pas disponible dans votre région en raison d’une dépendance Azure principale. Pour plus d’informations, consultez [ Disponibilité des dépendances Azure par country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 3. Sélectionnez **+ créer une stratégie d’étiquetage automatique**. Cette opération démarre la Nouvelle configuration de stratégie :
 
@@ -278,7 +278,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     Pour spécifier des comptes OneDrive individuels, consultez [Obtenir la liste de toutes les URL OneDrive des utilisateurs de votre organisation.](/onedrive/list-onedrive-urls)
 
-7. Pour la **configurer les règles courantes ou avancées** page : conservez la valeur par défaut de **règles courantes** pour définir des règles qui identifient le contenu à étiqueter dans tous les emplacements sélectionnés. Si vous avez besoin de règles différentes pour chaque emplacement, sélectionnez **Paramètres avancés**. Ensuite, sélectionnez **Suivant**.
+7. Pour la page **Configurer des règles communes ou avancées** : conservez la valeur par défaut de **Règles communes** pour définir des règles qui identifient le contenu à étiqueter dans tous vos emplacements sélectionnés. Si vous avez besoin de règles différentes par emplacement, sélectionnez **Règles avancées**. Sélectionnez ensuite **Suivant**.
 
     Les règles utilisent des conditions qui incluent des types d’informations sensibles et des options de partage :
     - Vous pouvez sélectionner des types d’informations sensibles intégrés et personnalisés.
@@ -311,7 +311,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 9. Pour la page **Choisir une étiquette à appliquer automatiquement** : sélectionnez **+ Choisir une étiquette**, puis, sélectionnez une étiquette dans le volet **Choisir une étiquette de confidentialité**, et enfin, sélectionnez **Suivant**.
 
-10. Pour les **décidez si vous voulez tester la stratégie maintenant ou plus tard** page : sélectionnez **exécuter la stratégie en mode de simulation** si vous êtes prêt à exécuter la stratégie d’attribution automatique d’étiquette maintenant, en mode de simulation. Dans le cas contraire, sélectionnez **Stratégie désactivée**. Sélectionnez **suivant** :
+10. Pour la page **Décider si vous voulez tester la stratégie maintenant ou plus tard** : sélectionnez **Exécuter la stratégie en mode de simulation** si vous êtes prêt à exécuter la stratégie d’étiquetage automatique maintenant, en mode simulation. Sinon, sélectionnez **Quitter la stratégie désactivée**. Sélectionnez **Suivant** :
 
     ![Tester l’assistant d’attribution automatique d’étiquette de stratégie.](../media/simulation-mode-auto-labeling-wizard.png)
 
