@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données YouTube à partir de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, eDiscovery et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: fb131d27857a1e1e0fdaf01160f7a84e249227de
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48354460a79cbb8c23086962d17482a3d3419044
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164209"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088240"
 ---
-# <a name="set-up-a-connector-to-archive-youtube-data-preview"></a>Configurer un connecteur pour archiver les données YouTube (aperçu)
+# <a name="set-up-a-connector-to-archive-youtube-data"></a>Configurer un connecteur pour archiver les données YouTube
 
 Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de YouTube vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas fournit un connecteur qui est configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur convertit du contenu tel que des conversations, des pièces jointes, des tâches, des notes et des publications à partir de YouTube au format de message électronique, puis importe ces éléments dans les boîtes aux lettres de l’utilisateur dans Microsoft 365.
 
-Une fois les données YouTube stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur YouTube pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données YouTube sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur YouTube pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-youtube-data"></a>Vue d’ensemble de l’archivage des données YouTube
 

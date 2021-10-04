@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 88582efe5e285df2b5439c6d01b63ed4c5ef7855
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 2f9a299faad33dbba09d9e32f3c860f9f7bd6311
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460123"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087808"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -144,7 +144,7 @@ Par exemple, votre organisation dispose d’un site SharePoint dédié pour un p
 
 Lorsque vous créez une stratégie de gestion des risques internes dans l’Assistant stratégie, vous pouvez choisir parmi les priorités suivantes :
 
-- **Sites SharePoint** : toute activité associée avec tous les types de fichiers dans les sites SharePoint définis se voit attribuer un score de risque plus élevé. 
+- **Sites SharePoint** : toute activité associée avec tous les types de fichiers dans les sites SharePoint définis se voit attribuer un score de risque plus élevé. Les utilisateurs qui configurent la stratégie et sélectionnent des sites Share Point prioritaires peuvent sélectionner SharePoint sites à qui ils ont l’autorisation d’accéder. Si SharePoint sites ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur avec les autorisations requises peut sélectionner les sites pour la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 - **Types d’information sensible** : toute activité associée au contenu qui contient des [types d’information sensible](sensitive-information-type-entity-definitions.md) se voit attribuer un score de risque plus élevé.
 - **Étiquettes de confidentialité** : toute activité associée au contenu sur lequel des [étiquettes de confidentialité](sensitivity-labels.md) sont appliquées se voit attribuer un score de risque plus élevé.
 
@@ -285,6 +285,9 @@ Achevez les étapes suivantes pour créer une stratégie :
     - **Sites SharePoint** : sélectionnez **Ajouter un site SharePoint**, puis sélectionnez les sites SharePoint auxquels vous avez accès et que vous souhaitez classer. Par exemple, *« groupe1@contoso.sharepoint.com/sites/group1 »*.
     - **Type d’information sensible** : sélectionnez **Ajouter un type d’information confidentielle**, puis les types de confidentialité que vous souhaitez classer. Par exemple, *« Numéro de compte bancaire américain »* et *« Numéro de carte de crédit »*.
     - **Étiquette de confidentialité** : sélectionnez **Ajouter une étiquette de confidentialité**, puis les étiquettes que vous souhaitez classer. Par exemple, *« Confidentiel »* et *« Secret »*.
+
+    >[!NOTE]
+    >Les utilisateurs qui configurent la stratégie et sélectionnent des sites Share Point prioritaires peuvent sélectionner SharePoint sites à qui ils ont l’autorisation d’accéder. Si SharePoint sites ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur avec les autorisations requises peut sélectionner les sites pour la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
 13. Sur la page **Indicateurs et événements déclencheurs**, les [indicateurs](insider-risk-management-settings.md#indicators) définis s’affichent comme disponibles sur la page **Paramètres de risque interne** > **Indicateurs**. Si vous avez sélectionné le modèle *Fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP à partir de la liste déroulante **Stratégie DLP** pour activer les indicateurs déclencheurs pour la stratégie ou sélectionner l’événement déclencheur intégré.

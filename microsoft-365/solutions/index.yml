@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4f5608ed017abecf5e55e19b3892c2929a687bac
-  ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+  ms.openlocfilehash: 70bc99dd449dd4c03e8d42d466cc283fdbfd5bb6
+  ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/18/2021
-  ms.locfileid: "59443934"
+  ms.lasthandoff: 10/04/2021
+  ms.locfileid: "60087916"
 landingContent:
 - title: Guides des solutions de base
   linkLists:
@@ -59,12 +59,20 @@ landingContent:
       url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Migrer vos partages de fichiers vers Microsoft 365
       url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-- title: Guides de solutions pour le travail en équipe et la collaboration
+- title: Guides de solutions de réunion et de communication
   linkLists:
   - linkListType: deploy
     links:
     - text: Planifier et déployer une solution vocale Teams
       url: deploy-voice.md
+  - linkListType: overview
+    links:
+    - text: Communication organisationnelle
+      url: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: Guides de solutions pour le travail en équipe et la collaboration
+  linkLists:
+  - linkListType: deploy
+    links:
     - text: Gérer les contrats pour votre entreprise
       url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
   - linkListType: overview

@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Affichez les stratégies et actions de l’appareil en vous Microsoft 365 aux entreprises à l’Microsoft 365 d’informations d’identification d’administrateur global.
-ms.openlocfilehash: 2245f979f67d2a2e48a60516faa9888ccb416e23
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+description: Affichez les stratégies et actions de l’appareil en vous Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 62644c574ea642b63b394e1fdb3c56aae559836e
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933242"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087784"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 

@@ -10,21 +10,25 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 646007176a35506f0c30d6b7092d70f52f762e57
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 2c14a493cb496b369a313a3e44600af9940922da
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941978"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088096"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
 ## <a name="external-collaboration-settings"></a>Paramètres de collaboration externe
 
-Microsoft Manged Desktop nécessite les paramètres suivants dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Paramètres de collaboration externe**:
+Microsoft Manged Desktop la configuration suivante dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Paramètres de collaboration externe**:
 
--   Pour **les restrictions d’invitation d’invité définies** sur les utilisateurs membres et les utilisateurs affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris des invités avec des **autorisations de membre**
--   Pour **les restrictions de collaboration,** choisissez l’une des options ci-après :
+-   Pour **l’accès des utilisateurs invités**, les utilisateurs invités ont un accès limité aux propriétés et aux appartenances aux **objets d’annuaire**
+-   Pour **les paramètres d’invitation d’invité,** les utilisateurs membres et les utilisateurs affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris des invités ayant des **autorisations de membre.**
+
+Microsoft Manged Desktop nécessite la configuration suivante dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ce paramètre sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Paramètres de collaboration externe**:
+
+-   **Restrictions de collaboration**, choisissez l’une des options ci-après :
     -   Si vous **sélectionnez Autoriser l’envoi d’invitations** à un domaine (le plus inclus), aucune autre configuration n’est requise.
     -   Si vous sélectionnez Refuser les invitations aux domaines **spécifiés,** assurez-vous Microsoft.com n’est pas répertorié dans les domaines cibles.
     -   Si vous sélectionnez Autoriser les invitations uniquement aux domaines **spécifiés (les plus restrictifs),** assurez-vous que Microsoft.com est répertorié dans les domaines cibles. 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, d’indexation et de recherche en vigueur pour la solution Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 7771f653550c050250126b7ff93b83ee2e175937
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e82b7d44a5733c245b00a1890b9d07dd95c679e2
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179891"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088228"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -50,7 +50,8 @@ Le tableau suivant répertorie les limites pour les Advanced eDiscovery cas.
 
 | Description de la limite | Limite |
 |:-----|:-----|
-|Nombre maximal de boîtes aux lettres dans une seule et même boîte aux lettres. Cette limite inclut le total combiné de boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Microsoft 365, Microsoft Teams et Yammer groupes. <br/> |1,000  <br/> |
+|Nombre maximal de cas d’une organisation. Cette limite inclut le total combiné de la durée de vie dans core eDiscovery et Advanced eDiscovery cas. <br/> |10 000  <br/> |
+|Nombre maximal de boîtes aux lettres dans une seule et même boîte aux lettres. Cette limite inclut le total combiné de boîtes aux lettres utilisateur et les boîtes aux lettres associées aux groupes Microsoft 365, Microsoft Teams et Yammer groupes. <br/> |1 000  <br/> |
 |Nombre maximal de sites dans une seule et même période d’attente. Cette limite inclut le total combiné des sites OneDrive Entreprise, des sites SharePoint et des sites associés aux groupes Microsoft 365, Microsoft Teams et Yammer groupes.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Limites d’indexation
@@ -71,16 +72,16 @@ Les limites décrites dans cette section sont liées à l’utilisation de l’o
 
 | Description de la limite | Limite |
 |:-----|:-----|
-|Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchés en une seule recherche. |Sans limite|
-|Nombre maximal de recherches qui peuvent s’exécuter en même temps. |Sans limite |
-|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10  | 
+|Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchés en une seule recherche. |Aucune limite|
+|Nombre maximal de recherches qui peuvent s’exécuter en même temps. |Aucune limite |
+|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. |10 | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions). |10 000 &nbsp; <sup>2</sup>|
 |Nombre maximal de caractères pour une requête de recherche pour SharePoint et OneDrive Entreprise sites (y compris les opérateurs et les conditions). |10 000<br>4 000 avec caractères génériques &nbsp; <sup>2</sup>|
 |Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, **un \* *_ ou _* set \***.|3 |  
 |Variantes maximales renvoyées lorsque vous utilisez un caractère générique de préfixe pour rechercher une expression exacte ou lorsque vous utilisez un caractère générique de préfixe et **l’opérateur booléen NEAR.** |10 000 &nbsp; <sup>3</sup>|
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |100|
-|Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1,000|
-|Nombre maximal de boîtes aux lettres qui peuvent être prévisualiser pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|1,000|
+|Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.|1 000|
+|Nombre maximal de boîtes aux lettres qui peuvent être prévisualiser pour les résultats de la recherche.  Si plus de 1 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats sont disponibles en prévisualisation.|1 000|
 |Nombre maximal d’éléments provenant SharePoint sites OneDrive Entreprise affichés sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés. |200|
 |Nombre maximal de sites SharePoint et OneDrive Entreprise qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites contiennent des éléments qui correspondent à la requête de recherche, seuls les 200 premiers sites ayant le plus de résultats sont disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics affichés sur la page d’aperçu pour les recherches. |100|

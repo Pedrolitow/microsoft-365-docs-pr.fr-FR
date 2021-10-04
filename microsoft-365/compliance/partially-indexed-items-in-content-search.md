@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Découvrez les éléments nonndex dans Exchange et SharePoint que vous pouvez inclure dans une recherche de découverte électronique que vous exécutez dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: 33391d2af3e53ed305b1f7ec6c339d3b621ddb8b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 731877ff632a1ff0934feac8ae3f3bad094b0c9c
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209420"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60088120"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Éléments partiellement indexés dans eDiscovery
 
@@ -109,7 +109,7 @@ Pour contourner cette limitation, nous vous recommandons la procédure suivante.
 
 1. Créez et exécutez une recherche à l’aide d’une requête de recherche qui répond à vos besoins et renvoie les résultats souhaités.
 
-2. Exportez les résultats de la recherche de l’étape 1, mais n’incluez pas d’éléments partiellement indexés dans l’exportation. Pour ce faire, sélectionnez tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, qui sont chiffrés ou qui n’ont pas été indexés pour **d’autres raisons d’exportation.**
+2. Exportez les résultats de la recherche de l’étape 1, mais n’incluez pas d’éléments partiellement indexés dans l’exportation. Pour ce faire, sélectionnez tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, qui sont chiffrés ou qui n’ont pas été indexés pour **d’autres raisons d’exportation.** <sup>1</sup>
 
    ![Exporter les options de sortie.](../media/ExportOutputOptions.png)
 
@@ -119,14 +119,18 @@ Pour contourner cette limitation, nous vous recommandons la procédure suivante.
    ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND Date:date1…date2))
    ```
   
-   L’ajout de cette clause ren retournera des éléments partiellement indexés qui correspondent à votre requête de recherche d’origine et qui se trouveront dans une plage de dates spécifique.
+   L’ajout de cette clause ren retournera des éléments partiellement indexés qui correspondent à votre requête de recherche d’origine et qui se trouveront dans une plage de dates spécifique. <sup>2</sup>
 
 4. Exportez les résultats de la recherche de l’étape 3 et incluez cette fois des éléments partiellement indexés dans l’exportation. Pour ce faire, vous devez sélectionner tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons d’exportation.**
 
-> [!NOTE]
-> Dans la procédure précédente, vous pouvez exporter les résultats de recherche réels ou uniquement exporter un rapport.
+   > [!NOTE]
+   > <sup>1 La</sup> sortie de l’étape 2 entraîne l’exportation des éléments indexés uniquement.<br/>
+   > <sup>2 La</sup> condition utilisée à l’étape 3 identifie uniquement les éléments avec des erreurs d’indexation qui se limitent à la plage de dates spécifiée. Elle ne retourne aucun des éléments qui sont entièrement indexés. Cela signifie que les éléments exportés à l’étape 4 incluent uniquement les éléments nonndex inclus dans la plage de dates. L’exportation n’inclut pas les éléments indexés. Par conséquent, la sortie combinée des étapes 2 et 4 contient tous les éléments indexés et non indexés qui se trouve dans la plage de dates spécifiée.
 
 Utilisez la deuxième recherche que vous avez créée à l’étape 3 et l’exportation correspondante pour afficher et comprendre les éléments partiellement indexés qui correspondent à votre requête de recherche d’origine. L’exportation de la deuxième recherche inclut également tous les éléments partiellement indexés qui ont été exportés afin que vous pouvez les examiner si nécessaire.
+
+> [!TIP]
+> Dans la procédure précédente, vous pouvez exporter les résultats de recherche réels ou uniquement exporter un rapport.
 
 ## <a name="indexing-limits-for-messages"></a>Limites d’indexation pour les messages
 

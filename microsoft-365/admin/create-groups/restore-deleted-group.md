@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un groupe supprimé est conservé pendant 30 jours et vous pouvez toujours le restaurer. Après 30 jours, le groupe et son contenu sont supprimés définitivement.
-ms.openlocfilehash: 30fa44a50ea6a65ae3cf71cb91e7d8ab0fd2e200
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: fb703240ebec219c0a1d15791782ea72be88a3a4
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773194"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087772"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurer un groupe de Microsoft 365 supprimé
 
@@ -46,9 +47,11 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Planificateur.
     
-- Teams
+- Équipes
 
 - Yammer de groupe et de groupe (si le groupe Microsoft 365 a été créé à partir de Yammer)
+
+- Power BI espace [de travail classique](/power-bi/collaborate-share/service-create-workspaces)
 
 > [!NOTE]
 > Cet article décrit la restauration uniquement Microsoft 365 groupes. Tous les autres groupes ne peuvent pas être restaurés une fois supprimés.
@@ -82,7 +85,7 @@ Si vous êtes administrateur général ou administrateur de groupes, vous pouvez
 
 Visitez le site [Tech Community Microsoft](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) pour publier des questions et participer à des conversations sur Microsoft 365 groupes. 
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
 [Supprimer des groupes à l’aide Remove-UnifiedGroup cmdlet](/powershell/module/exchange/remove-unifiedgroup) (article)\

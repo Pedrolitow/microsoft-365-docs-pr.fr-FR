@@ -26,6 +26,8 @@
       href: rename-an-extractor.md
     - name: Types d’explications
       href: explanation-types-overview.md
+    - name: Utiliser des modèles d’explication
+      href: explanation-templates.md
     - name: Appliquer un modèle de compréhension de document
       href: apply-a-model.md
     - name: Créer un modèle de traitement de formulaire

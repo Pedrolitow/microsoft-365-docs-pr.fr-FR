@@ -13,19 +13,16 @@ ms.collection:
 description: Découvrez comment passer en revue les messages signalés et envoyer des commentaires à vos utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef08b07226d8ce038547b972163d87a557099478
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: de83846e596185687817af6e89957f455ce7b9a1
+ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401025"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "60087820"
 ---
 # <a name="admin-review-for-reported-messages"></a>Révision par l’administrateur des messages signalés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. Ce document est fourni uniquement à des fins d’évaluation et d’exploration.
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
