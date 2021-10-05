@@ -16,18 +16,18 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 09/08/2021
+ms.date: 10/04/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 173fd730edfb2fe0ca535a45da07abfea50d5f4d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 794c735ecf84efe57b9bb4c88f20f599f25a6a8a
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043322"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099632"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
@@ -313,7 +313,7 @@ Aucun problème connu
 - Amélioration de la surveillance du comportement pour les analyses de mémoire
 - Amélioration de l’analyse des flux de macros
 - Ajouté à `AMRunningMode` la Get-MpComputerStatus cmdlet PowerShell
-- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) est ignoré. L’Antivirus Microsoft Defender se met automatiquement hors de l’application lorsqu’il détecte un autre programme antivirus.
+- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) est ignoré. Antivirus Microsoft Defender s’arrête automatiquement lorsqu’il détecte un autre programme antivirus.
 
 
 ### <a name="known-issues"></a>Problèmes connus
@@ -427,7 +427,7 @@ Aucun problème connu
 - Améliorer la notification pour le blocage des processus
 
 ### <a name="known-issues"></a>Problèmes connus
-[**Fixe**] L’Antivirus Microsoft Defender ignorera les fichiers lors de l’exécution d’une analyse.
+[**Fixe**] Antivirus Microsoft Defender ignorer les fichiers lors de l’exécution d’une analyse.
 
 <br/>
 </details>
@@ -463,7 +463,7 @@ Moteur : **1.1.16700.2**<br/>
 
 ### <a name="whats-new"></a>Nouveautés
 
-- BSOD fixe sur WS2016 avec Exchange
+- Correction du BSOD sur WS2016 avec Exchange
 - Prise en charge des mises à jour de plateforme lorsque le TMP est redirigé vers le chemin d’accès réseau
 - Les versions de plateforme et de moteur sont ajoutées [à WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - étendre la mise à jour des signatures d’urgence [en mode passif](./microsoft-defender-antivirus-compatibility.md)
@@ -471,7 +471,7 @@ Moteur : **1.1.16700.2**<br/>
 
 ### <a name="known-issues"></a>Problèmes connus
 
-[**Fixed**] Devices using [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Les ordinateurs concernés semblent ne pas avoir été mis à jour vers la dernière plateforme anti-programme malveillant.
+[**Fixe**] Les appareils utilisant le [mode](/windows-hardware/design/device-experiences/modern-standby) de veille moderne peuvent se bloquer avec le pilote de filtre Windows Defender, ce qui se traduit par un manque de protection.  Les ordinateurs concernés semblent ne pas avoir été mis à jour vers la dernière plateforme anti-programme malveillant.
 <br/>
 > [!IMPORTANT]
 > Cette mise à jour est :
@@ -517,6 +517,9 @@ Les mises à jour de la plateforme et du moteur sont fournies à une cadence men
 
 Pendant la phase de support technique (uniquement), les incidents de support commercialement raisonnables sont fournis par le biais du support technique du service clientèle Microsoft & et des offres de support géré de Microsoft (telles que le support Premier). Si un incident de support nécessite une escalade vers le développement pour obtenir des conseils supplémentaires, nécessite une mise à jour non de sécurité ou nécessite une mise à jour de sécurité, les clients sont invités à mettre à niveau vers la dernière version de plateforme ou une mise à jour intermédiaire (*).
 
+> [!NOTE]
+> Si vous déployez manuellement Antivirus Microsoft Defender Platform Update, ou si vous utilisez un script ou un produit de gestion non Microsoft pour déployer Antivirus Microsoft Defender Platform Update, assurez-vous que la version est installée à partir du catalogue Microsoft Update avant l’installation de la dernière version de `4.18.2001.10` Platform Update [](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) (N-2).
+
 ### <a name="platform-version-included-with-windows-10-releases"></a>Version de plateforme incluse dans Windows 10 versions
 
 Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plateforme et de moteur qui sont livrées avec les versions les Windows 10 les plus récentes :<br/><br/>
@@ -549,7 +552,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.347.891.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -563,7 +566,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.2244.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -577,7 +580,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -591,7 +594,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -605,7 +608,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.42.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -619,10 +622,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -633,10 +636,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucun
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -647,10 +650,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.331.174.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -661,10 +664,10 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.329.1796.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Néant
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -675,7 +678,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.1991.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -717,7 +720,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Néant
+- Aucune
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.

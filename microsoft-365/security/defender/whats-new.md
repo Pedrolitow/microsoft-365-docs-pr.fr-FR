@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c35f8315423bd7245546835e5963c7968eb4c12
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 5ebd798baa9b9c4fb759defbf0a650d4835568b8
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483986"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099788"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
+> Voulez-vous faire l'expérience de Microsoft 365 Defender? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles dans la dernière version de Microsoft 365 Defender.
@@ -51,10 +51,12 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 ## <a name="september-2021"></a>Septembre 2021
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. Vous pouvez voir la disponibilité et l’état des types d’événements dans les types d’Microsoft 365 Defender pris en charge [dans l’API de diffusion en continu.](supported-event-types.md)
 - (GA) Microsoft Defender pour Office 365 données disponibles dans le recherche avancée est désormais généralement disponible.
+- (Aperçu) Affecter des incidents et des alertes aux comptes d’utilisateurs <br> Vous pouvez affecter un incident, ainsi que toutes les alertes qui lui sont associées, à un compte d’utilisateur de **Assign to:** on the **Manage incident** pane of an incident or the **Manage alert** pane of an alert.
+
 
 ## <a name="august-2021"></a>Août 2021
 - (Aperçu) Microsoft Defender pour les Office 365 disponibles dans le recherche avancée
-<br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide d’un recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
+<br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide de la recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
 
 - (Aperçu) Graphique de l’incident <br>  Un nouvel **onglet Graph** sous  l’onglet Résumé d’un incident affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée sur votre réseau au fil du temps, où elle a commencé et jusqu’à quel point l’attaquant est passé.
 
@@ -64,8 +66,8 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 ## <a name="june-2021"></a>Juin 2021
 - (Aperçu) [Afficher les rapports par balise de menace](threat-analytics.md#view-reports-per-threat-tags)<br> Les balises de menace vous aident à vous concentrer sur des catégories de menaces spécifiques et à examiner les rapports les plus pertinents.
 - (Aperçu) [API de diffusion en continu](../defender-endpoint/raw-data-export.md)<br> Microsoft 365 Defender prend en charge la diffusion en continu de tous les événements disponibles via la recherche avancée vers un hub d’événements et/ou un compte de stockage Azure.
-- (Aperçu) [Prendre des mesures dans le recherche avancée](advanced-hunting-take-action.md)<br> Contenir rapidement des menaces ou traiter les biens compromis que vous trouvez dans le [recherche avancée.](advanced-hunting-overview.md)
-- (Aperçu) [Référence du schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> Obtenez des informations sur les tableaux de schéma de recherche avancés directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
+- (Aperçu) [Prendre des mesures dans le recherche avancée](advanced-hunting-take-action.md)<br> Contiennez rapidement des menaces ou adressez les ressources compromises que vous trouvez dans le [recherche avancée.](advanced-hunting-overview.md)
+- (Aperçu) [Référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> Obtenez des informations sur les tableaux de schéma de recherche avancés directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
 - (Aperçu) [Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)<br> Obtenir des informations sur les appareils qui ont été affectés à une ou plusieurs adresses IP spécifiques à une plage de temps donnée.
     
 
@@ -85,4 +87,4 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans `AppFileEvents` .
 ## <a name="february-2021"></a>Février 2021
 - (Aperçu) Le portail [Microsoft 365 Defender amélioré https://security.microsoft.com) (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
-- **[(Aperçu) Microsoft 365 Defender API](api-overview.md)** : les API de Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées. 
+- **[(Aperçu) Microsoft 365 Defender API](api-overview.md)** : les API de Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction des tables de recherche avancées et d’incident partagées. 

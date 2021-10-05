@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 85b021d42741919a64555de3ecd748e096457939
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a264f16c35a9fe122c2cb62a56c16334fb162d2
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204756"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099704"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour De Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
@@ -88,6 +88,7 @@ Les canaux de mise à jour suivants sont disponibles :
 |Canal actuel (préversion)|Obtenir les mises à jour du canal actuel **plus tôt lors** de la publication progressive|Les appareils qui sont connectés à ce canal se voient proposer des mises à jour au plus tôt au cours du cycle de publication progressive. Suggéré pour les environnements de pré-production/validation.|
 |Canal actuel (étapes)|Obtenir les mises à jour du canal actuel ultérieurement lors de la publication progressive|Des mises à jour seront proposées aux appareils plus tard au cours du cycle de publication progressive. Il est suggéré de s’appliquer à une petite partie représentative de la population de votre appareil (environ 10 %).|
 |Canal actuel (large)|Obtenir des mises à jour à la fin de la publication progressive|Les mises à jour des appareils ne seront proposées qu’une fois le cycle de publication progressive terminé. Il est suggéré de s’appliquer à un large éventail d’appareils dans votre population de production (environ 10 à 100 %).|
+|Critique : délai d’attente|Mises à jour de Delay Defender|Des mises à jour seront proposées aux appareils avec un délai de 48 heures. Il est préférable pour les ordinateurs de centre de données qui ne reçoivent que des mises à jour limitées. Suggéré uniquement pour les environnements critiques.|
 |(valeur par défaut)||Si vous désactivez ou ne configurez pas cette stratégie, l’appareil restera dans le canal actuel (par défaut) : restez à jour automatiquement pendant le cycle de publication progressive. Convient à la plupart des appareils.|
 |
 
@@ -132,7 +133,7 @@ Adoption de ce modèle :
 Pour créer votre propre processus de déploiement progressif personnalisé pour les mises à jour mensuelles, vous pouvez utiliser les outils suivants :
 
 - Stratégie de groupe
-- Microsoft Endpoint Manager
+- Gestionnaire de point de terminaison Microsoft
 - PowerShell
 
 Pour plus d’informations sur l’utilisation de ces [outils,](configure-updates.md)voir Créer un processus de déploiement progressif personnalisé pour les mises à jour de Microsoft Defender.

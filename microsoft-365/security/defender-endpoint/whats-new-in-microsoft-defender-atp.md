@@ -17,18 +17,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 62f62e421c789f419eeabe174b0d05ae36e3dd4b
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: db1050486ba5b9a4238c8759e23ea449723c74f0
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042601"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099820"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -59,6 +59,9 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 - [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
 
+## <a name="september-2021"></a>Septembre 2021
+
+- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non catégorisation. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web.](web-content-filtering.md)
 
 ## <a name="august-2021"></a>Août 2021
 

@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 41a0c893e193c8690c0c50e5b12ecc8630b9a899
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3d2254915203ea112d304e9fc45a6f1c4482d9b
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177500"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099721"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées.
@@ -47,7 +47,7 @@ Voici comment gérer vos incidents :
 
 - [Modifier le nom de l’incident](#edit-the-incident-name)
 - [Ajouter des balises d’incident](#add-incident-tags)
-- [Affectez l’incident à vous-même](#assign-incidents)
+- [Affecter l’incident à un compte d’utilisateur](#assign-an-incident)
 - [Les résoudre](#resolve-an-incident)
 - [Définir sa classification et sa détermination](#set-the-classification-and-determination)
 - [Ajouter des commentaires](#add-comments)
@@ -78,9 +78,9 @@ Vous pouvez ajouter des balises personnalisées à un incident, par exemple pour
 
 Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des balises dans une liste de balises sélectionnées.
 
-## <a name="assign-incidents"></a>Attribuer des incidents
+## <a name="assign-an-incident"></a>Affecter un incident
 
-Pour affecter un incident, **sélectionnez Affecter à moi.** Cette action affecte la propriété de l’incident et toutes les alertes associées à votre compte d’utilisateur.
+Si aucun incident n’a encore été  affecté, vous pouvez sélectionner la case Affecter à et spécifier le compte d’utilisateur (aperçu). Vous ré assignez un incident, supprimez le compte d’affectation actuel en sélectionnant « x » en de côté du nom de compte, puis sélectionnez la case Affecter **à.** L’affectation de la propriété d’un incident affecte la même propriété à toutes les alertes qui lui sont associées.
 
 Vous pouvez obtenir la liste des incidents qui vous sont attribués en filtrant la file d’attente des incidents. 
 
@@ -106,7 +106,7 @@ S’il s’agissait d’une alerte réelle, vous devez également spécifier le 
 
 Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour les nouveaux incidents, commencez votre [enquête.](investigate-incidents.md)
 

@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administrateurs peuvent apprendre à récupérer d’une attaque par ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94f45fd03d33fb5c1111e8a9098acc21b4830b01
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9659a68e69f732203a20853320b2e35cd268a7c8
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041707"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099748"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer d’une attaque par ransomware dans Microsoft 365
 
@@ -33,7 +33,6 @@ ms.locfileid: "60041707"
 
 Même si vous prenez toutes les précautions nécessaires pour protéger votre organisation, vous pouvez toujours être la victime d’une attaque par [ransomware.](/windows/security/threat-protection/intelligence/ransomware-malware) Les ransomware sont une grande entreprise et, dans le paysage actuel des menaces, Microsoft 365 est une cible croissante [pour les attaques sophistiquées.](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)
 
-
 Les étapes de cet article vous offrent la meilleure opportunité de récupérer des données et d’arrêter la propagation interne de l’infection. Avant de commencer, prenez en compte les éléments suivants :
 
 - Il n’existe aucune garantie que le paiement de la rançon retourne l’accès à vos fichiers. En fait, le paiement de la rançon peut faire de vous une cible pour d’autres ransomware.
@@ -44,13 +43,9 @@ Les étapes de cet article vous offrent la meilleure opportunité de récupérer
 
 - Il est important que vous répondiez rapidement à l’attaque et à ses conséquences. Plus vous patientez longtemps, moins il est probable que vous récupériez les données affectées.
 
-## <a name="step-1-verify-your-third-party-backups"></a>Étape 1 : Vérifier vos sauvegardes tierces
+## <a name="step-1-verify-your-backups"></a>Étape 1 : Vérifier vos sauvegardes
 
-La suite d’outils de conformité Microsoft 365 est [](/microsoft-365/compliance/) conçue pour répondre aux normes légales et [](https://www.microsoft.com/servicesagreement) réglementaires de votre organisation. C’est pourquoi, en tant que meilleure pratique, nous vous recommandons de protéger régulièrement le contenu et les données de votre Microsoft 365 à l’aide d’applications et de services tiers.
-
-Pour vous assurer que vous avez la possibilité de restaurer vos données, il est important de tester régulièrement vos sauvegardes et de vérifier qu’elles peuvent être restaurées en cas d’attaque. Dans le cas d’une attaque réelle, ces  restaurations ne doivent pas être effectuées tant  que vous n’avez pas supprimé la charge utile de ransomware (programmes malveillants) de votre environnement et que vous avez vérifié qu’il n’existe aucun accès non autorisé dans vos environnements Microsoft 365.
-
-Pour vous assurer que vos sauvegardes n’ont pas été également affectées par un ransomware, le service tiers doit être à l’écoute de vos environnements.
+Si vous avez des sauvegardes hors connexion,  vous pouvez probablement restaurer les données chiffrées après  avoir supprimé la charge utile de ransomware (programmes malveillants) de votre environnement et après avoir vérifié qu’il n’existe aucun accès non autorisé dans vos environnements Microsoft 365.
 
 Si vous n’avez pas de sauvegardes ou si vos sauvegardes ont également été affectées par le ransomware, vous pouvez ignorer cette étape.
 

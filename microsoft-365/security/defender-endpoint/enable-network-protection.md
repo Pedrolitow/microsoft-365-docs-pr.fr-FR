@@ -15,18 +15,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dc10c8ee9147cbee0a2946eaf28d91f80743f4f5
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7c27e1264de8673e1cc366df29ecd57e0cf8431a
+ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489610"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60099692"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -35,7 +35,7 @@ ms.locfileid: "59489610"
 
 [La protection du](network-protection.md) réseau permet d’empêcher les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. Vous pouvez [auditer la protection réseau](evaluate-network-protection.md) dans un environnement de test pour afficher les applications qui seraient bloquées avant de l’activer.
 
-[En savoir plus sur les options de configuration du filtrage réseau](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[En savoir plus sur les options de configuration du filtrage réseau.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>Vérifier si la protection réseau est activée
 
@@ -53,7 +53,7 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
    - 1 ou **Sur**
    - 2 ou **mode Audit**
 
-    ![Clé de Registre protection du réseau.](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    :::image type="content" alt-text="Clé de Registre protection du réseau." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
 ## <a name="enable-network-protection"></a>Activer la protection réseau
 
@@ -63,10 +63,12 @@ Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 - [Gestion des périphériques mobiles (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
 - [Stratégie de groupe](#group-policy)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### <a name="powershell"></a>PowerShell
 
 1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur.**
+
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell
@@ -123,12 +125,12 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
     - **Désactiver (par défaut)** : la fonctionnalité de protection réseau ne fonctionne pas. Les utilisateurs ne seront pas bloqués pour accéder aux domaines malveillants.
     - **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
-> [!IMPORTANT]
-> Pour activer entièrement la protection réseau,  vous devez définir  l’option stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
+   > [!IMPORTANT]
+   > Pour activer entièrement la protection réseau,  vous devez définir  l’option stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
-1. Sélectionnez **Démarrer** et **tapez regedit** pour ouvrir **l’Éditeur du Registre.**
+1. Sélectionnez **Démarrer** et tapez **regedit** pour ouvrir **l’Éditeur du Registre.**
 
 2. Accédez à **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
@@ -136,6 +138,45 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
    - 0=Off
    - 1=Sur
    - 2=Audit
+
+### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
+
+1. Ouvrez la console Gestionnaire de configuration.
+
+2. Go to **Assets and Compliance**  >  **Endpoint Protection**  >  **Windows Defender Exploit Guard**. 
+
+3. Sélectionnez **Créer une stratégie Exploit Guard** dans le ruban pour créer une stratégie.
+   - Pour modifier une stratégie existante, sélectionnez-la, puis sélectionnez Propriétés dans le ruban ou le menu clic droit.  Modifiez **l’option Configurer la protection réseau** à partir de **l’onglet Protection** du réseau.  
+
+4. Dans la page **Général,** spécifiez un nom pour la nouvelle stratégie et vérifiez que l’option **de protection** du réseau est activée. 
+
+5. Dans la page **Protection du** réseau, sélectionnez l’un des paramètres suivants pour l’option Configurer la **protection réseau** :
+   - **Bloquer**
+   - **Audit**
+   - **Disabled**
+   
+6. Terminez le reste des étapes et enregistrez la stratégie. 
+
+7. Dans le ruban, **sélectionnez Déployer** pour déployer la stratégie dans une collection.
+
+> [!IMPORTANT]
+> Une fois que vous avez déployé une stratégie Exploit Guard à partir de Configuration Manager, les paramètres Exploit Guard ne seront pas supprimés des clients si vous supprimez le déploiement. `Delete not supported` est enregistré dans ExploitGuardHandler.log du client Configuration Manager si vous supprimez le déploiement Exploit Guard du client. <!--CMADO8538577-->
+> Le script PowerShell suivant peut être exécuté dans le contexte SYSTÈME pour supprimer ces paramètres :<!--CMADO9907132-->
+>
+> ```powershell
+> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $defenderObject.AttackSurfaceReductionRules = $null
+> $defenderObject.AttackSurfaceReductionOnlyExclusions = $null
+> $defenderObject.EnableControlledFolderAccess = $null
+> $defenderObject.ControlledFolderAccessAllowedApplications = $null
+> $defenderObject.ControlledFolderAccessProtectedFolders = $null
+> $defenderObject.EnableNetworkProtection = $null
+> $defenderObject.Put()
+>
+> $exploitGuardObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_ExploitGuard02" -Filter "InstanceID='ExploitGuard' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $exploitGuardObject.ExploitProtectionSettings = $null
+> $exploitGuardObject.Put()
+>```  
 
 ## <a name="see-also"></a>Voir aussi
 
