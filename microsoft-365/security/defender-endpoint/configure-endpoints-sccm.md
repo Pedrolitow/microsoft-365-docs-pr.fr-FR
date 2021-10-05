@@ -1,9 +1,7 @@
 ---
-title: Appareils Windows 10 intégrés utilisant Configuration Manager
+title: Intégrer des Windows à l’aide de Configuration Manager
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin que les appareils soient intégrés au service.
 keywords: intégrer des appareils à l’aide de sccm, gestion des appareils, configurer Microsoft Defender pour les appareils endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 9a5ef03cf94501d83340f159ecd1b54f26f68b0a
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: ae560e7072884d19f224df1af15e90d507826812
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042926"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124708"
 ---
-# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Intégrer les appareils Windows 10 à l’aide de Configuration Manager
+# <a name="onboard-the-windows-devices-using-configuration-manager"></a>Intégrer les appareils Windows à l’aide de Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -49,6 +47,7 @@ En fonction de la version de Configuration Manager que vous exécutez, les syst�
 
   - Windows 8.1
   - Windows 10
+  - Windows 11
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server 2016, version 1803 ou ultérieure
@@ -64,7 +63,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 1. Ouvrez le fichier de package de configuration Configuration Manager .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.
-    2. Sélectionnez Windows 10 comme système d’exploitation.
+    2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     3. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
     4. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
 
@@ -155,8 +154,8 @@ Activez la fonctionnalité en mode audit pendant au moins 30 jours. Après cette
 Pour plus d’informations, voir [Évaluer l’accès contrôlé aux dossiers.](evaluate-controlled-folder-access.md)
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Exécuter un test de détection pour vérifier l’intégration
-Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
 
+Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Hors-carte des appareils à l’aide de Configuration Manager
 
@@ -173,7 +172,7 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \>   
-    1. Sélectionnez Windows 10 comme système d’exploitation.
+    1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     1. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
     1. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
 
@@ -226,11 +225,11 @@ Value: "1"
 
 Pour plus d’informations, voir Introduction aux paramètres de conformité [dans System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
-- [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
-- [Intégrer les appareils Windows 10 utilisant un script local](configure-endpoints-script.md)
+- [Intégrer des Windows à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
+- [Intégrer des Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+- [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

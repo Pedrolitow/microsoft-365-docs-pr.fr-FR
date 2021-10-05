@@ -30,14 +30,6 @@
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: Migrer des données vers mon abonnement Microsoft 365 Business Standard
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Planifier Windows 365 Business
-          items:
-            - name: Démarrage avec les PC Windows 365 Business et Cloud
-              href: setup/get-started-windows-365-business.md
-            - name: Options de dimensionnement de Windows 365 Business
-              href: setup/windows-365-business-sizing.md
-            - name: Résoudre des problèmes de configuration de Windows 365 PC Cloud
-              href: setup/troubleshoot-windows-365-business.md
         - name: Configurer votre Microsoft 365 pour l’organisation des entreprises
           items:
             - name: Microsoft 365 Business Basic

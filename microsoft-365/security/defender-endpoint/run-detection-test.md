@@ -1,7 +1,6 @@
 ---
 title: Exécuter un test de détection sur un appareil pour vérifier qu’il a été correctement intégré à Microsoft Defender pour le point de terminaison
 description: Exécutez le script de test de détection sur un appareil récemment intégré au service Microsoft Defender for Endpoint pour vérifier qu’il est correctement ajouté.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,19 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11b7339dce44d3fb55593e7b54a5d38982f957cd
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 3eb8a028372fce56cb586c51829e506db040f0ca
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043298"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124312"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
+- Windows 11
 - Versions Windows 10 pris en charge
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -66,8 +66,8 @@ Exécutez le script PowerShell suivant sur un appareil nouvellement intégré po
 
 La fenêtre d’invite de commandes se ferme automatiquement. Si elle réussit, le test de détection est marqué comme terminé et une nouvelle alerte s’affiche dans le portail pour l’appareil intégré dans environ 10 minutes.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Intégrer des appareils Windows 10](configure-endpoints.md)
+- [Appareils Windows intégrés](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

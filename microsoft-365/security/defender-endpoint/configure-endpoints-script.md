@@ -1,8 +1,7 @@
 ---
-title: Intégrer les appareils Windows 10 utilisant un script local
+title: Intégrer Windows appareils à l’aide d’un script local
 description: Utilisez un script local pour déployer le package de configuration sur les appareils afin d’activer l’intégration des appareils au service.
 keywords: configurer des appareils à l’aide d’un script local, la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b1e6bcd4991ea94f1b46b43f446f5f40f6f2e1d4
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 1bcc9c51f37c9d76009b4c949a40b564617dd563
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399249"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124792"
 ---
-# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Intégrer les appareils Windows 10 à l’aide d’un script local
+# <a name="onboard-the-windows-devices-using-a-local-script"></a>Intégrer les appareils Windows à l’aide d’un script local
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +35,7 @@ Vous pouvez également intégrer manuellement des appareils individuels à Defen
 > [!IMPORTANT]
 > Ce script a été optimisé pour une utilisation sur jusqu’à 10 appareils.
 >
-> Pour déployer à grande échelle, utilisez [d’autres options de déploiement.](configure-endpoints.md) Par exemple, vous pouvez déployer un script d’intégration sur plus de 10 appareils en production avec le script disponible dans les appareils Windows 10 intégrés à l’aide de la stratégie [de groupe.](configure-endpoints-gp.md)
+> Pour déployer à grande échelle, utilisez [d’autres options de déploiement.](configure-endpoints.md) Par exemple, vous pouvez déployer un script d’intégration sur plus de 10 appareils en production avec le script disponible dans les appareils Windows à l’aide de la stratégie [de groupe.](configure-endpoints-gp.md)
 
 ## <a name="onboard-devices"></a>Intégration des appareils
 
@@ -45,7 +44,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [du portail Microsoft 365 Defender](https://security.microsoft.com/):
     1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.
-    2. Sélectionnez Windows 10 comme système d’exploitation.
+    2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     3. Dans le **champ Méthode de** déploiement, sélectionnez Script **local.**
     4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
@@ -100,11 +99,11 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \> 
-    2. Sélectionnez Windows 10 comme système d’exploitation.
+    2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     3. Dans le **champ Méthode de** déploiement, sélectionnez Script **local.**
     4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
-2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
    1. Accéder à **Démarrer** et taper **cmd**.
@@ -131,11 +130,11 @@ La surveillance peut également être effectuée directement sur le portail ou �
 2. Cliquez sur **Inventaire des appareils.**
 3. Vérifiez que les appareils apparaissent.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
-- [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+- [Intégrer des Windows à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
+- [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Intégrer des Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

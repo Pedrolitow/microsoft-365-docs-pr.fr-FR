@@ -2,11 +2,10 @@
 title: Laboratoire d’évaluation de Microsoft Defender for Endpoint
 description: Découvrez les fonctionnalités de Microsoft Defender pour les points de terminaison, exécutez des simulations d’attaques et découvrez comment il empêche, détecte et remédie aux menaces.
 keywords: évaluer Microsoft Defender pour le point de terminaison, évaluation, laboratoire, simulation, windows 10, windows server 2019, laboratoire d’évaluation
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal
@@ -17,18 +16,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3765bdc36dc53f10c1842754266f72434f5b2f1c
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 5ddd486bb062c86b21891c8a1678a5f2cc8226dd
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043130"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124504"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,7 +43,7 @@ Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concent
 
 Vous disposez d’un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permet de tester la pile de protection complète de Defender for Endpoint.
 
-Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 ou Windows Server 2022 qui sont pré-configurés pour mettre en place les dernières versions du système d’exploitation et les composants de sécurité qui s’y rapportent, ainsi que Office 2019 Standard installé.
+Vous pouvez ajouter des appareils Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022 qui sont pré-configurés pour que les dernières versions du système d’exploitation et les composants de sécurité qui s’y rapportent, ainsi que Office 2019 Standard soit installé.
 
 Vous pouvez également installer des simulateurs de menaces. Defender for Endpoint s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 
@@ -106,7 +105,7 @@ Une fois le processus de configuration de l’atelier terminé, vous pouvez ajou
 
 ## <a name="add-devices"></a>Ajouter des appareils
 
-Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter Windows 10 ou Windows Server 2019 ou Windows server 2022.
+Lorsque vous ajoutez un appareil à votre environnement, Defender pour le point de terminaison configure un appareil bien configuré avec des détails de connexion. Vous pouvez ajouter Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022.
 
 L’appareil sera configuré avec la version la plus récente du système d’exploitation et de Office 2019 Standard, ainsi que d’autres applications telles que Java, Python et SysIntenals.
 
@@ -135,7 +134,7 @@ Les paramètres d’examen automatisé dépendent des paramètres du client. Ell
 
 1. Dans le tableau de bord, **sélectionnez Ajouter un appareil.**
 
-2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10 ou Windows Server 2019, ou Windows Server 2022.
+2. Choisissez le type d’appareil à ajouter. Vous pouvez choisir d’ajouter Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022.
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="configuration de l’atelier avec options d’appareil.":::
 

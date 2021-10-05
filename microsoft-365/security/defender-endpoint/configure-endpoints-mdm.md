@@ -1,9 +1,7 @@
 ---
-title: Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
+title: Intégrer des Windows à l’aide des outils de gestion des appareils mobiles
 description: Utilisez les outils de gestion des appareils mobiles pour déployer un package de configuration sur les appareils afin qu’ils sont intégrés au service.
 keywords: intégrer des appareils à l’aide de mdm, gestion des appareils, intégration de Microsoft Defender pour les appareils Endpoint, mdm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 192c3231a44f2f1c4358a930fed8884bb00da093
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 6cb99f300c7d87497f31729507695a9a633b345a
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402033"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124696"
 ---
-# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows 10 à l’aide des outils de gestion des périphériques mobiles
+# <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows à l’aide des outils de gestion des périphériques mobiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -74,7 +72,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
    1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \> 
 
-   1. Sélectionnez Windows 10 comme système d’exploitation.
+   1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
 
    1. Dans le **champ Méthode de déploiement,** sélectionnez Gestion des périphériques **mobiles /Microsoft Intune**.
 
@@ -95,11 +93,11 @@ Pour plus d’informations Microsoft Intune paramètres de stratégie, voir [Win
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
-- [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Intégrer les appareils Windows 10 utilisant un script local](configure-endpoints-script.md)
+- [Intégrer des Windows à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
+- [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

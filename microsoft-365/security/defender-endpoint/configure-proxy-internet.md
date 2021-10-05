@@ -17,18 +17,18 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81640ff0716d6dd0803dcad5b0db1849dfbee0d5
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: d00bfa4b9a595725ed689c33dff096b3a96bd2d5
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042661"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124744"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -63,8 +63,9 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 Configurez un proxy statique basé sur le Registre pour le capteur defender de détection et de réponse de point de terminaison (PEPT) pour signaler les données de diagnostic et communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
 
 > [!NOTE]
-> Lorsque vous utilisez cette option sur Windows 10 ou Windows Server 2019 ou Windows Server 2022, il est recommandé d’avoir les mises à jour cumulatives et de build suivantes (ou ultérieures) :
+> Lorsque vous utilisez cette option sur Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022, il est recommandé d’avoir la version suivante (ou version ultérieure) et le cumul des mises à jour cumulatives :
 >
+> - Windows 11
 > - Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 -<https://support.microsoft.com/kb/5001384>
 > - Windows 10, version 1909 -<https://support.microsoft.com/kb/4601380>
 > - Windows 10, version 2004 -<https://support.microsoft.com/kb/4601382>
@@ -102,7 +103,7 @@ Configurez le proxy statique à l’aide de la stratégie de groupe trouvée ici
 
 2. Définissez-le **sur Activé et** définissez le serveur proxy. Notez que l’URL doit être http:// ou https://. Pour les versions de https://, voir [Gérer Antivirus Microsoft Defender mises à jour.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Serveur proxy de l’Antivirus Microsoft Defender.":::
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Serveur proxy pour Antivirus Microsoft Defender.":::
 
 3. Sous la clé de Registre, la stratégie définit la valeur de Registre comme  `HKLM\Software\Policies\Microsoft\Windows Defender`  `ProxyServer`   REG_SZ. 
 
@@ -175,9 +176,9 @@ Si l’analyse HTTPS (inspection SSL) est activée pour un proxy ou un pare-feu,
 Dans votre pare-feu, ouvrez toutes les URL où la colonne de géographie est WW. Pour les lignes où la colonne de géographie n’est pas WW, ouvrez les URL vers votre emplacement de données spécifique. Pour vérifier votre paramètre d’emplacement de données, voir Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données [pour Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/data-retention-settings)
 
 > [!NOTE]
-> settings-win.data.microsoft.com est nécessaire uniquement si vous avez des Windows 10 exécutant la version 1803 ou une version antérieure.<br>
+> settings-win.data.microsoft.com est nécessaire uniquement si vous avez des Windows exécutant la version 1803 ou une version antérieure.<br>
 >
-> Les URL qui incluent la version 20 sont nécessaires uniquement si vous avez des Windows 10 exécutant la version 1803 ou ultérieure. Par exemple, est nécessaire pour un appareil Windows 10 exécutant la version 1803 ou ultérieure et intégré à la région Stockage `us-v20.events.data.microsoft.com` données américaines.
+> Les URL qui incluent la version 20 sont nécessaires uniquement si vous avez des Windows exécutant la version 1803 ou ultérieure. Par exemple, est nécessaire pour un appareil Windows exécutant la version 1803 ou ultérieure et intégré à la région Stockage `us-v20.events.data.microsoft.com` données américaines.
 >
 > Si vous utilisez Antivirus Microsoft Defender dans votre environnement, voir Configurer les connexions réseau [au service cloud Antivirus Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 
@@ -270,9 +271,9 @@ Toutefois, si les résultats du contrôle de la connectivité indiquent un éche
 >
 > Lorsque telemetryProxyServer est défini, dans le Registre ou via la stratégie de groupe, Defender pour le point de terminaison revient à direct s’il ne peut pas accéder au proxy défini.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)
 - [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
-- [Intégrer des appareils Windows 10](configure-endpoints.md)
+- [Appareils Windows intégrés](configure-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

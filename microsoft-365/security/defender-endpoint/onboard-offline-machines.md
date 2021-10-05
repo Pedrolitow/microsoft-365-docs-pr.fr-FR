@@ -3,8 +3,6 @@ title: Appareils intégrés sans accès à Internet à Microsoft Defender pour l
 ms.reviewer: ''
 description: Intégrer des appareils sans accès à Internet afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint
 keywords: onboard, servers, vm, on-premises, oms gateway, log analytics, azure log analytics, mma
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eb74f3fab320364c1311efa1a629e43eb90a1aae
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9eb7930c3c31aa65bd2091d6f68767551cd22026
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042757"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124492"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -42,9 +40,9 @@ Pour intégrer des appareils sans accès à Internet, vous devez suivre les éta
 > Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures Windows 8.1 et versions antérieures.
 
 > [!NOTE]
-> - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les périphériques Windows 10 ou Windows Server 2019 ou Windows Server 2022 lorsqu’ils sont configurés via le Registre ou LPO « TelemetryProxyServer ».
-> - Pour Windows 10 ou Windows Server 2019 ou Windows Server 2022 , alors que vous pouvez utiliser TelemetryProxyServer, il doit pointer vers un périphérique proxy ou une appliance standard.
-> - En outre, Windows 10 ou Windows Server 2019 ou Windows Server 2022 dans les environnements déconnectés doivent être en mesure de mettre à jour les listes d’autorisation de certificat hors connexion via un fichier interne ou un serveur web.
+> - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les périphériques Windows ou Windows Server déconnectés lorsqu’il est configuré via le Registre ou l’GPO « TelemetryProxyServer ».
+> - Pour Windows ou Windows Server : alors que vous pouvez utiliser TelemetryProxyServer, il doit pointer vers un périphérique proxy ou une appliance standard.
+> - En outre, Windows ou Windows Server dans les environnements déconnectés doivent être en mesure de mettre à jour les listes d’autorisation de certificat hors connexion via un fichier interne ou un serveur web.
 > - Pour plus d’informations sur la mise à jour des fichiers CTL hors connexion, voir Configurer un fichier ou un serveur web pour [télécharger les fichiers CTL.](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files)
 
 Pour plus d’informations sur les méthodes d’intégration, consultez les articles suivants :

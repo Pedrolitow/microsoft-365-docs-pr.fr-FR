@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c3350cd45eedb590016e3456274b4e04dda1c51
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1c8e5fa990e37f4812b8e5429fdbf2fcbfa7b71
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222613"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124732"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ ms.locfileid: "59222613"
 
 Defender for Endpoint offre une expérience centralisée des opérations de sécurité pour les plateformes Windows et non Windows de sécurité. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Microsoft 365 Defender et mieux protéger le réseau de votre organisation.
 
-Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d’informations, consultez :
+Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d'informations, voir :
 
 - [Microsoft Defender pour point de terminaison sur la demande système Linux](microsoft-defender-endpoint-linux.md#system-requirements)
 - [Microsoft Defender pour point de terminaison sur macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
@@ -66,14 +66,14 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 1. Suivez la documentation du tiers pour déconnecter la solution tierce de Microsoft Defender for Endpoint.
 
 2. Supprimez les autorisations pour la solution tierce dans votre client Azure AD.
-   1. Connectez-vous au [Portail Azure](https://portal.azure.com).
+   1. Connectez-vous au [portail Azure](https://portal.azure.com).
    2. Sélectionnez **Azure Active Directory > Enterprise applications.**
    3. Sélectionnez l’application que vous souhaitez horsboard.
    4. Sélectionnez **le bouton** Supprimer.
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-- [Intégrer des appareils Windows 10](configure-endpoints.md)
+- [Appareils Windows intégrés](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)
 - [Résolution des problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

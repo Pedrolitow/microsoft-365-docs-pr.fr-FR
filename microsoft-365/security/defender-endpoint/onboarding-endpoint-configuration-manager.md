@@ -2,7 +2,6 @@
 title: Intégration à l'aide de Microsoft Endpoint Configuration Manager
 description: Découvrez comment intégrer Microsoft Defender pour point de terminaison à l’aide de Microsoft Endpoint Configuration Manager
 keywords: intégration, configuration, déploiement, déploiement, gestionnaire de configuration de point de terminaison, Microsoft Defender pour le point de terminaison, création de collection, réponse de détection de point de terminaison, protection nouvelle génération, réduction de la surface d’attaque, gestionnaire de configuration de point de terminaison Microsoft
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a73dc197a1643a2d1b4de079562579530c081e23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e26e9c367015b05e1875693a5312af786a907031
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204677"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124444"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Intégration à l'aide de Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -61,7 +60,7 @@ Ces instructions d’intégration vous guident tout au long des étapes de base 
 
 ### <a name="collection-creation"></a>Création de collection
 
-Pour intégrer Windows 10 appareils avec Microsoft Endpoint Configuration Manager, le déploiement peut cibler une collection existante ou une nouvelle collection peut être créée pour les tests.
+Pour intégrer Windows appareils avec Microsoft Endpoint Configuration Manager, le déploiement peut cibler une collection existante ou une nouvelle collection peut être créée pour les tests.
 
 L’intégration à l’aide d’outils tels que la stratégie de groupe ou la méthode manuelle n’installe aucun agent sur le système.
 
@@ -107,7 +106,7 @@ Suivez les étapes ci-dessous pour intégrer des points de terminaison à l’ai
 
     ![Image de l Microsoft Endpoint Configuration Manager Wizard9.](images/configmgr-confirm.png)
 
-Après avoir effectué cette tâche, vous avez maintenant une collection d’appareils avec tous les Windows 10 de terminaison dans l’environnement.
+Après avoir effectué cette tâche, vous avez maintenant une collection d’appareils avec tous les Windows de terminaison dans l’environnement.
 
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Étape 2 : Configurer Microsoft Defender pour les fonctionnalités de point de terminaison
@@ -120,9 +119,9 @@ Cette section vous guide dans la configuration des fonctionnalités suivantes à
 
 ### <a name="endpoint-detection-and-response"></a>Détection et réponse du point de terminaison
 
-#### <a name="windows-10"></a>Windows 10
+#### <a name="windows-10-and-windows-11"></a>Windows 10 et Windows 11
 
-À partir du portail Microsoft 365 Defender il est possible de télécharger la stratégie « .onboarding » qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et déployer cette stratégie sur Windows 10 appareils.
+À partir du portail Microsoft 365 Defender, il est possible de télécharger la stratégie « .onboarding » qui peut être utilisée pour créer la stratégie dans System Center Configuration Manager et la déployer sur les appareils Windows 10 et Windows 11.
 
 1. À partir d Microsoft 365 Defender portail, [sélectionnez Paramètres puis l’intégration.](https://security.microsoft.com/preferences2/onboarding)
 
@@ -196,7 +195,7 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
    - Windows 8.1
    - Windows 7
    - Windows Server 2016
-   - Windows Server 2012 R2
+   - Windows Server 2012 R2
    - Windows Server 2008 R2
 
    Plus précisément, pour Windows 7 SP1, les correctifs suivants doivent être installés :
@@ -246,7 +245,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     ![Image du volet de protection nouvelle génération 10.](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. Ciblez la nouvelle stratégie anti-programme malveillant sur Windows 10 collection de programmes malveillants, puis cliquez sur **OK.**
+4. Ciblez la nouvelle stratégie anti-programme malveillant sur votre collection Windows, puis cliquez sur **OK.**
 
      ![Image du volet de protection nouvelle génération11.](images/configmgr-select-collection.png)
 
@@ -282,7 +281,7 @@ Pour définir des règles de récupération de l’accès en mode Audit :
 
     ![Image de Microsoft Endpoint Configuration Manager console4.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Ciblez la stratégie sur la collection de Windows 10 nouvellement créée, puis cliquez sur **OK.**
+7. Ciblez la stratégie sur la collection de Windows nouvellement créée, puis cliquez sur **OK.**
 
     ![Image de Microsoft Endpoint Configuration Manager console5.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -332,7 +331,7 @@ Pour [plus d’informations, voir Optimiser](/microsoft-365/security/defender-en
 
     ![Capture d’écran de Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Sélectionnez la stratégie pour la collection de Windows 10 nouvellement créée et choisissez **OK.**
+7. Sélectionnez la stratégie pour la collection de Windows nouvellement créée et choisissez **OK.**
 
     ![Capture d’écran de Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -362,7 +361,7 @@ Après avoir effectué cette tâche, vous avez configuré correctement la Protec
 
     ![Capture d’écran de Microsoft Endpoint Configuration Manager7.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Ciblez la stratégie sur la collection de Windows 10 nouvellement créée, puis cliquez sur **OK.**
+7. Ciblez la stratégie sur la collection de Windows nouvellement créée, puis cliquez sur **OK.**
 
     ![Capture d’écran de Microsoft Endpoint Configuration Manager8.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

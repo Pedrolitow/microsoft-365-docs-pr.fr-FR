@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: Forum aux questions (FAQ) sur les Programme d'utilisation à domicile Microsoft.
   ms.date: 05/01/2021
-  ms.openlocfilehash: 9a149ee97c76189f52345587e1eaaac27bd562b2
-  ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+  ms.openlocfilehash: 77505b0855ff47afa497acb16b13eb6ad17112cf
+  ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/27/2021
-  ms.locfileid: "59934154"
+  ms.lasthandoff: 10/05/2021
+  ms.locfileid: "60124252"
 title: Programme d'utilisation à domicile Microsoft forum aux questions (FAQ)
 summary: "Les clients avec licence en volume utilisent le Programme d'utilisation à domicile Microsoft (HUP) sur [le Microsoft Store pour Entreprises web.](https://go.microsoft.com/fwlink/?linkid=2139192)\n\nTous les autres clients accèdent à HUP à l’aide de cette étape :\n\n- Dans le Centre d’administration Microsoft, allez à la page Facturation de vos produits, sélectionnez l’onglet Avantages, puis sélectionnez l’onglet  >  [](https://go.microsoft.com/fwlink/p/?linkid=842054) **HUP.** \n"
 sections:
@@ -77,9 +77,9 @@ sections:
 
       Pour les problèmes d’affichage de l’avantage une fois que vous avez déjà Microsoft Store pour Entreprises, consultez la prise en charge de l’administrateur [du Store pour Entreprises](/microsoft-store/)
   - question: >
-      Pourquoi ne vois-je pas d’option d’achat Visio Professionnel 2019 et/ou Project Professionnel 2019 ?
+      Pourquoi ne vois-je pas d’option d’achat Visio Professionnel 2021 et/ou Project Professionnel 2021 ?
     answer: >
-      Si l’un de vos employés a tirer parti du programme précédent et recherche des remises sur Visio Professionnel 2019 et/ou Project Professionnel 2019, consultez le processus de validation d’éligibilité et, une fois que vous êtes inscrit avec votre compte Microsoft personnel, consultez d’autres produits **Office** pour acheter ces produits. Si les remises prévues ne sont pas appliquées, contactez l’administrateur du programme d’utilisation à domicile de votre employeur pour obtenir des informations sur ces avantages supplémentaires.
+      Si l’un de vos employés a tirer parti du programme précédent et recherche des remises sur Visio Professionnel 2021 et/ou Project Professionnel 2021, consultez le processus de validation d’éligibilité et, une fois que vous êtes inscrit avec votre compte Microsoft personnel, consultez d’autres produits **Office** pour acheter ces produits. Si les remises prévues ne sont pas appliquées, contactez l’administrateur du programme d’utilisation à domicile de votre employeur pour obtenir des informations sur ces avantages supplémentaires.
   - question: >
       Que se passe-t-il si mes employés ont des questions sur ce programme ou ont besoin d’un support pour l’achat et l’installation ?
     answer: >

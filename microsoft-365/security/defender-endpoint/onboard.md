@@ -3,7 +3,6 @@ title: Configurer et gérer les fonctionnalités de Microsoft Defender pour les 
 ms.reviewer: ''
 description: Configurer et gérer les fonctionnalités de Microsoft Defender pour les points de terminaison telles que la réduction de la surface d’attaque et la protection nouvelle génération
 keywords: configurer, gérer, fonctionnalités, réduction de la surface d’attaque, protection nouvelle génération, contrôles de sécurité, protection évolutive des points de terminaison, examen et correction automatiques, contrôles de sécurité, contrôles
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18d3023900d624afe9b85c71d350c6e8e89f552386a23acc6f5b623d03e7b1f9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 946be62b418e3162de8ee6d51edb3114e6f81ca7
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53898058"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124475"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Configurer et gérer les fonctionnalités de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)

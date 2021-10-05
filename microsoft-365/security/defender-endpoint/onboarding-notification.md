@@ -2,7 +2,6 @@
 title: Créer une règle de notification d’intégration ou de retrait
 description: Recevoir une notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé.
 keywords: intégration, offboarding, local, script, notification, règle
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9b00d971afa714b89a473ff75cf6022f8bba9ef8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2fc605a57d1bce1b1653f5e15bf8600cd9e1d831
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183312"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124285"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -196,7 +195,7 @@ L’image suivante est un exemple de notification par courrier électronique.
 
 ![Image de la notification par courrier électronique.](images/alert-notification.png)
 
-## <a name="tips"></a>Conseils
+## <a name="tips"></a>Conseils 
 
 - Vous pouvez filtrer ici à l’aide de lastSeen uniquement :
   - Toutes les 60 min :

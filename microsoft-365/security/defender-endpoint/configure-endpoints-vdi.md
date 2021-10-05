@@ -17,23 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: 494cfb352d8ccbf6dd0640d559083c9e733fa9b7
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 57d029e55759a08d84efe1eb684b67caf3e8653a
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041628"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124684"
 ---
 # <a name="onboarding-non-persistent-virtual-desktop-infrastructure-devices"></a>Intégration d’appareils d’infrastructure de bureau virtuel non persistants
 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Périphériques VDI (Virtual Desktop Infrastructure)
-- Windows 10, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
+- Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -60,11 +60,11 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 > [!WARNING]
 > Pour les environnements dans lequel il existe des configurations de ressources faibles, la procédure de démarrage VDI peut ralentir l’intégration du capteur Defender for Endpoint.
 
-### <a name="for-windows-10-or-windows-server-2019-or-windows-server-2022"></a>Pour Windows 10 ou Windows Server 2019 ou Windows Server 2022
+### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>Pour Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022
 
 1. Ouvrez le fichier de package de configuration VDI .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir du [portail Microsoft 365 Defender :](https://security.microsoft.com/)
    1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.
-   2. Sélectionnez Windows 10 comme système d’exploitation.
+   2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
    3. Dans le **champ Méthode de** déploiement, sélectionnez les **scripts d’intégration VDI pour les** points de terminaison non persistants.
    4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
@@ -164,10 +164,10 @@ Si la maintenance hors connexion n’est pas une option viable pour votre enviro
 
 5. Resealez l’image de l’or/maître comme vous le feriez normalement.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Intégrer des Windows 10 à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
-- [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
-- [Intégrer les appareils Windows 10 utilisant un script local](configure-endpoints-script.md)
+- [Intégrer des Windows à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
+- [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Intégrer des Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+- [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

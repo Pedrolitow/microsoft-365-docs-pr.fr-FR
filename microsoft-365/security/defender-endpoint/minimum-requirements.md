@@ -2,8 +2,6 @@
 title: Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 description: Comprendre les conditions requises en matière de licences pour l’intégration d’appareils au service
 keywords: exigences minimales, licences, tableau de comparaison
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7cb01f6067e14d615e018b5c8648b0b6c423ddca
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 4779a0c40cd8282d8e05fde84ae72827531810d9
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042769"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124264"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -46,9 +44,11 @@ Certaines conditions minimales sont requises pour l’intégration d’appareils
 
 Microsoft Defender pour le point de terminaison nécessite l’une des offres de licence en volume Microsoft suivantes :
 
+- Windows 11 Enterprise E5
+- Windows 11 Éducation A5
 - Windows 10 Entreprise E5
 - Windows 10 Éducation A5
-- Microsoft 365 E5 (M365 E5) qui inclut Windows 10 Entreprise E5
+- Microsoft 365 E5 (M365 E5) qui inclut Windows 10 Entreprise E5 ou Windows 11 Enterprise E5
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Sécurité
 - Sécurité Microsoft 365 A5
@@ -70,11 +70,11 @@ Microsoft Defender pour le point de terminaison pour les serveurs nécessite l�
 > - Microsoft Defender pour point de terminaison
 > - Windows E5/A5
 > - Microsoft 365 E5/A5
-> - Microsoft 365 E5/A5
+> - Microsoft 365 sécurité E5/A5
 
 Pour obtenir des informations détaillées sur les licences, consultez le [site](https://www.microsoft.com/licensing/terms/) Termes du produit et travaillez avec votre équipe de compte pour en savoir plus sur les conditions générales.
 
-Pour plus d’informations sur le tableau des fonctionnalités Windows 10 éditions, voir [Comparer Windows 10 éditions.](https://www.microsoft.com/windowsforbusiness/compare)
+Pour plus d’informations sur le tableau des fonctionnalités Windows éditions, voir [Comparer Windows éditions.](https://www.microsoft.com/windowsforbusiness/compare)
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 
@@ -94,6 +94,10 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 7 SP1 Pro ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
 - Windows 8.1 Entreprise
 - Windows 8.1 Professionnel
+- Windows 11 Entreprise
+- Windows 11 Éducation
+- Windows 11 Professionnel
+- Windows 11 Professionnel Éducation
 - Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
 - Windows 10 Éducation
@@ -146,7 +150,7 @@ Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vo
 Assurez-vous que le service de données de diagnostic est activé sur tous les appareils de votre organisation.
 Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez des données de capteur à partir de ces données.
 
-#### <a name="use-the-command-line-to-check-the-windows-10-diagnostic-data-service-startup-type"></a>Utiliser la ligne de commande pour vérifier le type Windows 10 de démarrage du service de données de diagnostic
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>Utiliser la ligne de commande pour vérifier le type Windows de démarrage du service de données de diagnostic
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
    1. Accéder à **Démarrer** et taper **cmd**.
@@ -164,7 +168,7 @@ Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez de
 
 Vous devez configurer le service pour qu’il démarre automatiquement si la START_TYPE n’est pas définie sur **AUTO_START**. 
 
-#### <a name="use-the-command-line-to-set-the-windows-10-diagnostic-data-service-to-automatically-start"></a>Utiliser la ligne de commande pour définir le Windows 10 de données de diagnostic pour démarrer automatiquement
+#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Utiliser la ligne de commande pour définir le Windows de données de diagnostic pour démarrer automatiquement
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur le point de terminaison :
     1. Accéder à **Démarrer** et taper **cmd**.
@@ -190,7 +194,7 @@ Le capteur Defender pour point de terminaison peut utiliser une bande passante m
 
 Pour plus d’informations sur les paramètres de configuration proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
 
-Avant d’intégrer des appareils, le service de données de diagnostic doit être activé. Le service est activé par défaut dans Windows 10.
+Avant d’intégrer des appareils, le service de données de diagnostic doit être activé. Le service est activé par défaut dans Windows 10 et Windows 11.
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus Microsoft Defender configuration requise
 
@@ -213,7 +217,7 @@ Si vous exécutez Antivirus Microsoft Defender en tant que produit anti-programm
 
 Si vous exécutez un client anti-programme malveillant tiers et que vous utilisez des solutions de gestion des périphériques mobiles ou des Microsoft Endpoint Manager (branche actuelle), vous devez vous assurer que le pilote ELAM Antivirus Microsoft Defender est activé. Pour plus d’informations, [voir s’assurer Antivirus Microsoft Defender n’est pas désactivé par la stratégie.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Configurer Microsoft Defender pour le déploiement de point de terminaison](production-deployment.md)
 - [Intégration des appareils](onboard-configure.md)

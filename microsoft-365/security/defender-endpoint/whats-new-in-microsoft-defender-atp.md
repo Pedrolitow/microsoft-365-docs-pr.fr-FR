@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: db1050486ba5b9a4238c8759e23ea449723c74f0
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 06de4468d0737fbdc8e0b847c5671256d00b5acd
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099820"
+ms.locfileid: "60124756"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -58,6 +58,10 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 - [Nouveautés de Defender pour Endpoint sur macOS](mac-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
+
+## <a name="october-2021"></a>Octobre 2021
+
+- Windows 11 prise en charge ajoutée à Microsoft Defender pour les points de terminaison et les Microsoft 365 Defender.
 
 ## <a name="september-2021"></a>Septembre 2021
 

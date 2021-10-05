@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1894721cb929aaf92df371668348b36bb788727b
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 7e4375c52bdf8f4a3dd8ba958b40de72351feae4
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010232"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124240"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -40,6 +40,36 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 > - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
+
+## <a name="september-2021"></a>Septembre 2021
+
+### <a name="app-governance"></a>Gouvernance des applications
+
+- [Les informations de mise en place simplifiée de](https://docs.microsoft.com/microsoft-365/compliance/app-governance-get-started) la gouvernance des applications ont un flux de travail modifié et ajouté de nouveaux liens vers l’inscription à la prévisualisation publique
+- [Nouvelle définition des alertes de détection](https://docs.microsoft.com/microsoft-365/compliance/app-governance-anomaly-detection-alerts#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) ajoutée (mise à jour ; ajout d’une nouvelle définition pour les alertes de collecte)
+
+### <a name="auditing"></a>Audit
+
+- [Activer ou désactiver l’audit](turn-audit-log-search-on-or-off.md) ajout d’une nouvelle section sur la façon dont les modifications apportées à l’état d’audit dans une organisation sont elles-mêmes auditées ; Cela signifie que les enregistrements d’audit sont enregistrés lorsque l’audit est allumé ou désactivé ; vous pouvez rechercher ces enregistrements d’audit dans Exchange journal d’audit de l’administrateur
+
+### <a name="data-connectors"></a>Connecteurs de données
+
+- Archivage de données tierces dans [des connecteurs](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) de données Microsoft 365 à partir de CellTrust et 17a-4 LLC désormais disponibles dans Cloud de la communauté du secteur public organisations dans le cloud pour le gouvernement des États-Unis
+- [La mise en place d’un connecteur pour archiver les données YouTube](archive-youtube-data.md) fournit de nouvelles instructions pour cette fonctionnalité en prévisualisation publique.
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Utilisez l’éditeur KQL](ediscovery-kql-editor.md) pour générer la prévisualisation publique des requêtes de recherche d’une nouvelle façon de créer des requêtes de recherche dans la recherche de contenu, la découverte électronique principale et Advanced eDiscovery ; L’éditeur KQL fournit lacompletion automatique pour les propriétés et conditions utilisables dans une recherche prise en charge et affiche des listes de valeurs pris en charge pour les propriétés et conditions standard ; L’éditeur KQL fournit également la détection des erreurs et des suggestions pour corriger les erreurs potentielles dans les requêtes de recherche
+
+### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
+- [La révision de disposition à plusieurs étapes](disposition.md) est désormais généralement disponible (GA), avec de nouveaux [événements d’audit.](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) La révision de disposition à plusieurs étapes vous permet de spécifier jusqu’à cinq étapes consécutives de révision de la disposition d’une étiquette de rétention, et les réviseurs peuvent ajouter d’autres utilisateurs à la phase de révision de leur disposition. Vous pouvez également personnaliser les rappels et les notifications par e-mail.
+- Les canaux privés [pour Teams stratégies de](create-retention-policies.md#retention-policy-for-teams-locations) rétention sont désormais généralement disponibles.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+- La [co-édition](sensitivity-labels-coauthoring.md) et l’auto-ave sont désormais généralement disponibles pour Windows (version minimale de 2107 à partir du canal actuel ou du canal Enterprise mensuel) et macOS (version minimale de 16,51).
+- Déploiement pour les Office qui utilisent des étiquettes intégrées : le paramètre d’étiquette par défaut prend désormais en charge les documents existants ainsi que les nouveaux documents. Ce changement de comportement assure la parité avec le client d’étiquetage unifié Azure Information Protection. Pour plus d’informations sur le déploiement par application et les versions minimales, consultez le [tableau des fonctionnalités](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) pour Word, Excel et PowerPoint.
+- Les étiquettes de conteneur prisent désormais en charge les paramètres de lien de partage par défaut à [l’aide des paramètres avancés de PowerShell.](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings)
+- Les tableaux de [fonctionnalités](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) qui listent les versions minimales pris en charge pour l’étiquetage intégré ont désormais des versions pour le canal actuel, le canal Enterprise mensuel et le canal Semi-Annual Enterprise.
 
 ## <a name="august-2021"></a>Août 2021
 
@@ -234,82 +264,3 @@ Outlook et mises à jour :
 - [L’étiquetage obligatoire](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) est en cours de déploiement sur les plateformes restantes.
 - [Les marquages dynamiques avec toutes les variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) sont pris en charge dans tous Outlook clients.
 
-## <a name="march-2021"></a>mars 2021
-
-Voici quelques-unes des modifications apportées aux solutions Microsoft 365 conformité et au contenu pour le mois de mars.
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-- **Advanced eDiscovery collections de collections prend** désormais en charge les nouveaux [outils de collections et flux de travail.](/microsoft-365/compliance/collections-overview) D’autres nouvelles rubriques incluent [la création d’un brouillon de collection,](/microsoft-365/compliance/create-draft-collection)la validation d’une collection provisoire dans un jeu à [réviser](/microsoft-365/compliance/commit-draft-collection)et les statistiques et les rapports [de collection.](/microsoft-365/compliance/collection-statistics-reports)
-- **Exporter des documents** dans un jeu à réviser vers [un stockage Azure](/microsoft-365/compliance/download-export-jobs) client.
-- **Module de codage prédictif pour Advanced eDiscovery**. Tout d’abord, regardez la nouvelle fonctionnalité de [codage](/microsoft-365/compliance/predictive-coding-overview) prédictif qui remplace le module Pertinence retiré.
-
-### <a name="data-classification"></a>Classification des données
-
-- **Explorateur de classification des données**. [Commencer avec l’Explorateur](/microsoft-365/compliance/data-classification-activity-explorer) de classification des données.
-
-### <a name="data-connectors"></a>Connecteurs de données
-
-- **Clés privées**. La prise en charge des clés privées a été ajoutée aux données [de message Bloomberg,](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) aux données [ICE Chat](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) et aux connecteurs de données [Instant Bloomberg.](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)
-
-### <a name="data-loss-prevention"></a>Protection contre la perte de données
-
-- **Microsoft Teams prise en charge.** Prise en charge de la protection contre la perte de [données étendue Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy).
-- **Extension de conformité Microsoft**. Commencer avec [l’extension de conformité Microsoft](/microsoft-365/compliance/dlp-chrome-get-started).
-
-### <a name="encryption"></a>Chiffrement
-
-- **Clé client pour Microsoft 365**. [Vue d’ensemble de la](/microsoft-365/compliance/customer-key-tenant-level) clé client Microsoft 365 au niveau du client (prévisualisation publique).
-- **Chiffrement à double clé**. En savoir plus [sur l’activation de la prise](/microsoft-365/compliance/double-key-encryption) en charge des documents étiquetés et protégés dans SharePoint et OneDrive Entreprise.
-
-### <a name="insider-risk-management"></a>Gestion des risques internes
-
-Les mises à jour suivantes des fonctionnalités de gestion des risques internes ont été publiées pour la prévisualisation publique en mars :
-
-- Nouvelle fonctionnalité d’analyse permettant d’identifier les risques avant de créer des stratégies de risque internes
-- Nouvelle prise en charge et gestion de la détection des séquences d’activités de risque
-- Nouvelle prise en charge de la détection d’exfiltration cumulative
-- Nouvelle prise en charge des recommandations et des rapports d’état des stratégies dans l’application
-- Nouvelle fonctionnalité de journal d’audit et rapports
-- Améliorations apportées à l’Assistant Création de stratégie
-- Mises à jour de l’explorateur de contenu
-- Nouveau processus/prise en charge de la gestion des utilisateurs (ajouter/supprimer des utilisateurs de stratégies)
-- Nouvelle prise en charge de l’intégration AAD (prise en charge de la stratégie utilisateur de départ)
-- Prise en charge de domaine mise à jour dans les stratégies (REGEX)
-- Améliorations et améliorations apportées aux modèles de stratégie
-
-Les rubriques suivantes ont été mises à jour ou ajoutées pour prendre en charge ces nouvelles fonctionnalités :
-
-- [En savoir plus sur la gestion des risques internes Microsoft](/microsoft-365/compliance/insider-risk-management)
-- [Planifier la gestion des risques Insider](/microsoft-365/compliance/insider-risk-management-plan)
-- [Prise en charge des paramètres de gestion des risques internes](/microsoft-365/compliance/insider-risk-management-settings)
-- [Prise en main de la gestion des risques internes](/microsoft-365/compliance/insider-risk-management-configure)
-- [Créer et gérer les stratégies de risques internes](/microsoft-365/compliance/insider-risk-management-policies)
-- [Identifier les alertes de risques internes](/microsoft-365/compliance/insider-risk-management-alerts)
-- [Agir sur les cas de risques internes](/microsoft-365/compliance/insider-risk-management-cases)
-- [Passer en revue des activités avec le journal d’audit des risques Insider](/microsoft-365/compliance/insider-risk-management-audit-log)
-- [Examiner les données à l’aide de l’explorateur de contenu des risques internes](/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [Gérer le flux de travail avec le Tableau de bord des utilisateurs](/microsoft-365/compliance/insider-risk-management-users)
-
-### <a name="records-management"></a>Gestion des enregistrements
-
-- **Améliorations apportées au plan de fichiers.** Une mise à [jour du plan](file-plan-manager.md) de fichiers supprime ou améliore les restrictions de longueur précédentes pour l’importation.
-- **Supprimer des étiquettes de rétention pour les enregistrements.** Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme des enregistrements.
-
-### <a name="sensitive-information-types"></a>Types d’informations sensibles
-
-Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
-
-- [Mise en place d’un type d’informations sensibles personnalisé](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
-- [En savoir plus sur les types d’informations confidentielles](/microsoft-365/compliance/sensitive-information-type-learn-about).
-- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Créer des notifications pour les activités de correspondance de données exactes](/microsoft-365/compliance/sit-edm-notifications-activities)
-- [Définitions d’entités de types d’informations sensibles](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-- [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Créer un dictionnaire de mots clés](/microsoft-365/compliance/create-a-keyword-dictionary)
-
-### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-
-- **Prise en charge de DoD**. Prise en charge des locataires du gouvernement américain avec des environnements DoD.
-- **Chiffrer uniquement pour Outlook**. Les options de chiffrement Outlook désormais inclure Encrypt-Only lorsque vous sélectionnez [Autoriser les utilisateurs à attribuer des autorisations.](encryption-sensitivity-labels.md#let-users-assign-permissions)
-- **Application d’étiquettes intégrées dans Office applications.** Mise à [jour des instructions](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) sur l’application d’étiquettes intégrées dans Office applications lorsque le client d’étiquetage unifié Azure Information Protection est installé.

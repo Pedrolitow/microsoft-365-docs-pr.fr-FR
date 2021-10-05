@@ -1,9 +1,7 @@
 ---
 title: Intégrer des appareils au service Microsoft Defender for Endpoint
-description: Intégrer Windows 10 périphériques, serveurs, appareils non Windows et apprendre à exécuter un test de détection.
+description: Intégrer Windows périphériques, serveurs, appareils non Windows et apprendre à exécuter un test de détection.
 keywords: intégration, intégration de Microsoft Defender pour point de terminaison, sccm, stratégie de groupe, mdm, script local, test de détection
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4792489abf721993fe55dc642f132c51442c21a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49109b7671cc4ecd1891cb942dcd6b678d7b5c11
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209029"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124528"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des appareils au service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,7 +50,7 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 |Point de terminaison|Options de l’outil|
 |---|---|
-|**Windows**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <p> [Stratégie de groupe](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
+|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <p> [Stratégie de groupe](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
 |**MacOS**|[Scripts locaux](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JamF Pro](mac-install-with-jamf.md) <p> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)|
 |**Serveur Linux**|[Script local](linux-install-manually.md) <p> [Sondent](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[Basée sur l’application](ios-install.md)|
@@ -63,7 +61,7 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 Rubrique|Description
 :---|:---
 [Intégrer des versions antérieures de Windows](onboard-downlevel.md)|Intégrer Windows 7 et Windows 8.1 à Defender for Endpoint.
-[Intégrer des appareils Windows 10](configure-endpoints.md)|Vous devez intégrer des appareils pour qu’il signale au service Defender for Endpoint. Découvrez les outils et méthodes que vous pouvez utiliser pour configurer des appareils dans votre entreprise.
+[Appareils Windows intégrés](configure-endpoints.md)|Vous devez intégrer des appareils pour qu’il signale au service Defender for Endpoint. Découvrez les outils et méthodes que vous pouvez utiliser pour configurer des appareils dans votre entreprise.
 [Serveurs intégrés](configure-server-endpoints.md)|Intégrer Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) version 1803 et ultérieures, Windows Server 2019 et versions ultérieures, et Windows Server 2019 core edition à Defender pour endpoint.
 [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)|Defender pour le point de terminaison offre une expérience d’opérations de sécurité centralisée pour les Windows et les plateformes non Windows réseau. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Centre de sécurité Microsoft Defender et mieux protéger le réseau de votre organisation. Cette expérience tire parti des données de capteur d’un produit de sécurité tiers.
 [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md)|Exécutez un script sur un appareil nouvellement intégré pour vérifier qu’il est correctement signalé au service Defender for Endpoint.

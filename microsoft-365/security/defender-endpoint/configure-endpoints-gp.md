@@ -1,9 +1,7 @@
 ---
-title: Intégrer Windows 10 appareils à Microsoft Defender pour le point de terminaison via la stratégie de groupe
-description: Utilisez la stratégie de groupe pour déployer le package de configuration sur les Windows 10 afin qu’ils soient intégrés au service.
+title: Intégrer Windows appareils à Microsoft Defender pour le point de terminaison via la stratégie de groupe
+description: Utilisez la stratégie de groupe pour déployer le package de configuration sur les Windows afin qu’ils soient intégrés au service.
 keywords: configurer des appareils à l’aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: 0d33484a7d7369cd9b3727fbd125e208649c533d
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7d3d408e07790ef0dc095b57dcd84b644dfe655c
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041779"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124672"
 ---
-# <a name="onboard-the-windows-10-devices-using-group-policy"></a>Intégrer les appareils Windows 10 à l’aide de la stratégie de groupe
+# <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des Windows à l’aide de la stratégie de groupe
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Stratégie de groupe
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -47,7 +45,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
 
 1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.  
-    2. Sélectionnez Windows 10 comme système d’exploitation.
+    2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     3. Dans le **champ Méthode de déploiement,** sélectionnez **Stratégie de groupe.**
     4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
@@ -113,13 +111,13 @@ Vous pouvez utiliser la stratégie de groupe (GP) pour configurer des paramètre
 
 ### <a name="update-endpoint-protection-configuration"></a>Mettre à jour la configuration de la protection des points de terminaison
 
-Après avoir configuré le script d’intégration, continuez à modifier la même stratégie de groupe pour ajouter des configurations de protection des points de terminaison. Effectuez des modifications de stratégie de groupe à partir d’un système exécutant Windows 10 ou Server 2019 ou Windows Server 2022 pour vous assurer que vous avez toutes les fonctionnalités Antivirus Microsoft Defender requises. Vous devrez peut-être fermer et rouvrir l’objet de stratégie de groupe pour inscrire les paramètres de configuration de Defender ATP.
+Après avoir configuré le script d’intégration, continuez à modifier la même stratégie de groupe pour ajouter des configurations de protection des points de terminaison. Effectuez des modifications de stratégie de groupe à partir d’un système exécutant Windows 10 ou Server 2019, Windows 11 ou Windows Server 2022 pour vous assurer que vous avez toutes les fonctionnalités Antivirus Microsoft Defender requises. Vous devrez peut-être fermer et rouvrir l’objet de stratégie de groupe pour inscrire les paramètres de configuration de Defender ATP.
 
 Toutes les stratégies se trouvent sous `Computer Configuration\Policies\Administrative Templates` .
 
 **Emplacement de la stratégie** : \Windows\Windows Defender ATP
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Enable\Disable Sample collection|Activé : vérification « Activer la collecte d’exemples sur les ordinateurs »
 
@@ -127,7 +125,7 @@ Enable\Disable Sample collection|Activé : vérification « Activer la collecte 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Configurer la détection pour les applications potentiellement indésirables|Activé, Bloquer
 
@@ -135,7 +133,7 @@ Configurer la détection pour les applications potentiellement indésirables|Act
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\MAPS
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Rejoindre Microsoft MAPS|Enabled, Advanced MAPS
 Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | Activé, Envoyer des exemples sûrs
@@ -144,7 +142,7 @@ Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont req
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection en temps réel
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Désactiver la protection en temps réel|Désactivé
 Activer l’analyse du comportement|Activé
@@ -157,7 +155,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, autorisant les performances.
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Recherchez les dernières informations sur la sécurité des virus et logiciels espions avant d’exécution d’une analyse programmée |Activé
 
@@ -179,7 +177,7 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
    ![Image de la configuration de réduction de la surface d’attaque.](images/asr-guid.png)
 
-Stratégie|Setting
+Stratégie|Paramètre
 ---|---
 Configurer l’accès contrôlé aux dossiers| Activé, mode audit
 
@@ -196,7 +194,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \> 
-    2. Sélectionnez Windows 10 comme système d’exploitation.
+    2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     3. Dans le **champ Méthode de déploiement,** sélectionnez **Stratégie de groupe.**
     4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
@@ -239,8 +237,11 @@ Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiem
 Créez une stratégie de groupe ou groupez ces paramètres avec les autres stratégies. Cela dépend de l’environnement des clients et de la façon dont ils souhaitent déployer le service en ciblant différentes unités d’organisation (unités d’organisation).
 
 1. Après avoir choisi la gp ou en créer une nouvelle, modifiez-la.
+
 2. Accédez à **Modèles d’administration** des stratégies de configuration ordinateur  >    >    >  **Windows composants**  >  **Antivirus Microsoft Defender**  >  **protection en temps réel.**
-:::image type="content" source="images/realtime-protect.png" alt-text="protection en temps réel.":::
+
+    :::image type="content" source="images/realtime-protect.png" alt-text="protection en temps réel.":::
+
 1. Dans le dossier Quarantaine, configurez la suppression des éléments du dossier Quarantaine.
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="dossier de mise en quarantaine des éléments de suppression.":::
@@ -304,11 +305,11 @@ Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Mi
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-- [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
-- [Intégrer les appareils Windows 10 utilisant un script local](configure-endpoints-script.md)
+- [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Intégrer des Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+- [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)
 - [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
 - [Exécuter un test de détection sur un microsoft Defender pour les appareils de point de terminaison nouvellement intégré](run-detection-test.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)
