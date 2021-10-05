@@ -473,7 +473,7 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
-            - name: YouTube (aperçu)
+            - name: YouTube
               href: archive-youtube-data.md
             - name: Réunions Zoom
               href: archive-zoommeetings-data.md
@@ -638,7 +638,7 @@
               href: content-search-reference.md
             - name: Requêtes par mots clés et conditions de recherche
               href: keyword-queries-and-search-conditions.md
-            - name: Utiliser l’éditeur KQL pour générer des requêtes de recherche
+            - name: "Utiliser l’éditeur\_KQL pour générer des requêtes de recherche (préversion)"
               href: ediscovery-kql-editor.md
             - name: Configurer le filtrage des autorisations de recherche
               href: permissions-filtering-for-content-search.md
@@ -716,7 +716,7 @@
               href: assign-ediscovery-permissions.md
             - name: Requêtes par mots clés et conditions de recherche
               href: keyword-queries-and-search-conditions.md
-            - name: Utiliser l’éditeur KQL pour générer des requêtes de recherche
+            - name: "Utiliser l’éditeur\_KQL pour générer des requêtes de recherche (préversion)"
               href: ediscovery-kql-editor.md
             - name: Configurer les limites de conformité
               href: set-up-compliance-boundaries.md
@@ -811,7 +811,7 @@
               href: collection-statistics-reports.md
             - name: Créer des requêtes de recherche de collections
               href: building-search-queries.md
-            - name: Utiliser l’éditeur KQL pour générer des requêtes de recherche
+            - name: "Utiliser l’éditeur\_KQL pour générer des requêtes de recherche (préversion)"
               href: ediscovery-kql-editor.md
             - name: Requêtes par mots clés et conditions de recherche
               href: keyword-queries-and-search-conditions.md
