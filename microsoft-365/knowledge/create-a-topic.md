@@ -12,14 +12,14 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: medium
 description: Découvrez comment créer une rubrique dans Sujets Microsoft Viva.
-ms.openlocfilehash: af4a56b98cd3e372cee242bb98742ba488a1f2b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a66fa4e3b278187df266ddcdd69dd8a6f15a365a
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179628"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126853"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>Créer une rubrique dans Sujets Microsoft Viva
 

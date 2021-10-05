@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d09ce01bc8d9409d4537df8eaabb50915538aa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58991b732a76079b5c2de12d7cca332c5dc0d752
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203039"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126961"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -97,7 +97,7 @@ Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint su
 
 Les tâches importantes, telles que le contrôle des paramètres du produit et le déclenchement d’analyses à la demande, peuvent être réalisées à partir de la ligne de commande :
 
-|Groupe|Scénario|Commande|
+|Group|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuration|Activer/désactiver la protection cloud|`mdatp config cloud --value [enabled/disabled]`|
@@ -109,7 +109,10 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Configuration|Activer la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |Configuration|Désactiver la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |Configuration|Activer le mode audit pour la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|Configuration|Activer/désactiver passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|Configuration|Activer/désactiver le mode antivirus passif|`mdatp config passive-mode --value [enabled/disabled]`|
+|Configuration|Configurer le degré de parallélisme pour les analyses à la demande|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Configuration|Activer/désactiver les analyses après les mises à jour des informations de sécurité|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuration|Activer/désactiver l’analyse d’archivage (analyses à la demande uniquement)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Modifier le niveau de journal|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Générer des journaux de diagnostic|`mdatp diagnostic create --path [directory]`|
 |Intégrité|Vérifier l’état du produit|`mdatp health`|

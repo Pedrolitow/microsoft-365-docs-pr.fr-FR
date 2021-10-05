@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 0bfbd44e0e097148800501c5bed3b1b3db2dbbc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5d713b142ca65500366bca43564d35edf18a450
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204762"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126949"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,6 +37,15 @@ ms.locfileid: "59204762"
 
 > [!IMPORTANT]
 > Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur [cette page.](mac-sysext-policies.md)
+
+## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
+
+- Ajout de nouveaux commutateurs à l’outil en ligne de commande :
+  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré par le biais `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` de . Par défaut, un degré de parallélisme `2` est utilisé.
+  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré par le biais `mdatp config scan-after-definition-update --value [enabled/disabled]` de . Par défaut, cette valeur est définie sur `enabled` .
+  - Contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré par le biais `mdatp config scan-archives --value [enabled/disabled]` de . Par défaut, cette valeur est définie sur `enabled` .
+- La modification du niveau du journal des produits nécessite désormais une élévation
+- Améliorations des performances & résolutions de bogues
 
 ## <a name="1014084-20121071140840"></a>101.40.84 (20.121071.14084.0)
 
@@ -49,11 +58,11 @@ ms.locfileid: "59204762"
 
 ## <a name="1013428-20121061134280"></a>101.34.28 (20.121061.13428.0)
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1013427-20121052134270"></a>101.34.27 (20.121052.13427.0)
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 
@@ -105,7 +114,7 @@ ms.locfileid: "59204762"
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
@@ -117,11 +126,11 @@ ms.locfileid: "59204762"
 
 - Conditions supprimées lorsque Microsoft Defender pour le point de terminaison déclenchant un bogue macOS 11 (Big Sur) qui se manifeste en noyau
 - Correction d’une fuite de mémoire dans l’extension du système de sécurité des points de terminaison lors de l’exécution sur mac 11 (Big Sur)
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1011072"></a>101.10.72
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1010961"></a>101.09.61
 
@@ -156,7 +165,7 @@ ms.locfileid: "59204762"
 
 - Correction d’un bogue dans lequel l’envoi automatique d’échantillons n’a pas été marqué comme géré dans l’interface utilisateur
 - Ajout de nouveaux paramètres pour contrôler la rétention des éléments dans l’historique d’analyse antivirus. Vous pouvez désormais [spécifier le nombre](mac-preferences.md#antivirus-scan-history-retention-in-days) de jours de rétention des éléments dans l’historique d’analyse et spécifier le nombre maximal d’éléments [dans l’historique d’analyse.](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1010663"></a>101.06.63
 
@@ -176,7 +185,7 @@ ms.locfileid: "59204762"
 
 - Améliorations apportées à la logique d’analyse rapide pour réduire considérablement le nombre de fichiers analysés
 - Ajout de la prise en charge [de lacompletion](mac-resources.md#how-to-enable-autocompletion) automatique pour l’outil en ligne de commande
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1010312"></a>101.03.12
 
@@ -201,7 +210,7 @@ ms.locfileid: "59204762"
 - Vous pouvez désormais [définir un canal](mac-updates.md#set-the-channel-name) de mise à jour pour Microsoft Defender pour point de terminaison sur macOS qui est différent du canal de mise à jour à l’échelle du système
 - Icône Nouveau produit
 - Autres améliorations de l’expérience utilisateur
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1008692"></a>100.86.92
 
@@ -231,7 +240,7 @@ ms.locfileid: "59204762"
 
 ## <a name="1008042"></a>100.80.42
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1007942"></a>100.79.42
 
@@ -247,7 +256,7 @@ ms.locfileid: "59204762"
 
 ## <a name="1007215"></a>100.72.15
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1007099"></a>100.70.99
 

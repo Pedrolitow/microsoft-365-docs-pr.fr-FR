@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: Découvrez comment configurer Sujets Microsoft Viva
-ms.openlocfilehash: fc5647b65a62afdff55c22b8a8b5526a7ddfa14a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+localization_priority: medium
+description: Découvrez comment configurer Sujets Microsoft Viva.
+ms.openlocfilehash: ba0bf7c9bec785f359e3a5f9a43ee0f7063b25dd
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181157"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126841"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurer Sujets Microsoft Viva
 

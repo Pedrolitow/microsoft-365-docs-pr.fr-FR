@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5ebd798baa9b9c4fb759defbf0a650d4835568b8
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 24e8dba9bf933286b325983a091785d6502d46df
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099788"
+ms.locfileid: "60126805"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -84,7 +84,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
  L’analyse des menaces vous permet de répondre et de minimiser l’impact des attaques actives. Vous pouvez également en savoir plus sur les tentatives d’attaques bloquées par Microsoft 365 Defender solutions et prendre des mesures préventives qui atténuent les risques d’exposition supplémentaire et augmentent la résilience. Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible pour Microsoft Defender pour Endpoint et Microsoft Defender pour les titulaires Office licence E5.
 
 ## <a name="march-2021"></a>mars 2021
-- [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans `AppFileEvents` .
+- [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans le `AppFileEvents` tableau.
 ## <a name="february-2021"></a>Février 2021
 - (Aperçu) Le portail [Microsoft 365 Defender amélioré https://security.microsoft.com) (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
 - **[(Aperçu) Microsoft 365 Defender API](api-overview.md)** : les API de Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction des tables de recherche avancées et d’incident partagées. 

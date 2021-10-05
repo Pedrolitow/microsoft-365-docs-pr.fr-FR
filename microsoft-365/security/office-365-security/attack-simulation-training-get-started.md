@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser la formation sur la simulation d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ece26ef2d41637d35afa8d719b6b785b733ca9f1
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: c994d00066d5379d1f38a5dd774045ef679993df
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484154"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126997"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Commencer à utiliser la formation à la simulation d’attaque
 
@@ -36,7 +36,7 @@ ms.locfileid: "59484154"
 Si votre organisation Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux [menaces,](office-365-ti.md)vous pouvez utiliser la formation sur la simulation d’attaques dans le portail Microsoft 365 Defender pour exécuter des scénarios d’attaques réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
 
 > [!NOTE]
-> L’entraînement de simulation d’attaque remplace l’ancienne expérience du Simulateur d’attaques v1 décrite dans le Simulateur d’attaques [dans Microsoft Defender Office 365](attack-simulator.md).
+> L’entraînement de simulation d’attaque remplace l’ancienne expérience du Simulateur d’attaques v1 décrite dans le Simulateur d’attaques [dans Microsoft Defender pour Office 365](attack-simulator.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -56,7 +56,10 @@ Si votre organisation Microsoft 365 E5 ou Microsoft Defender pour Office 365 Pla
 
 - Il n’existe aucune cmdlet PowerShell correspondante pour la formation à la simulation d’attaques.
 
-- Les données liées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md) La simulation d’attaque est disponible dans les régions suivantes : NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, KOR, LAM et CHE.
+- Les données liées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md) La simulation d’attaque est disponible dans les régions suivantes : NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, LAM, CHE, NOR, ZAF, ARE et DEU.
+
+  > [!NOTE]
+  > NOR, ZAF, ARE et DEU sont les derniers ajouts. Toutes les fonctionnalités, à l’exception de la télémétrie de courrier signalé, seront disponibles dans ces régions. Nous travaillons à l’activer et en informerons nos clients dès que la télémétrie de courrier électronique signalée sera disponible. 
 
 - Depuis le 15 juin 2021, la formation sur la simulation d’attaques est disponible Cloud de la communauté du secteur public. Si votre organisation Office 365 Cloud de la communauté du secteur public G5 ou Microsoft Defender pour Office 365 (Plan 2) pour le gouvernement, vous pouvez utiliser une formation sur la simulation d’attaques dans le portail Microsoft 365 Defender pour exécuter des scénarios d’attaque réaliste dans votre organisation, comme décrit dans cet exemple article. La formation à la simulation d’attaque n’est pas encore disponible Cloud de la communauté du secteur public environnements Élevé ou DoD.
 
@@ -119,7 +122,7 @@ Pour obtenir des instructions détaillées sur la création d’une charge utile
 
 ### <a name="gaining-insights"></a>Obtenir des informations
 
-Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations via une formation à la [simulation d’attaques.](attack-simulation-training-insights.md)
+Pour obtenir des instructions détaillées sur la façon d’obtenir des informations sur les rapports, voir Obtenir des informations par le biais d’une [formation sur la simulation d’attaques.](attack-simulation-training-insights.md)
 
 > [!NOTE]
 > Le Simulateur d’attaques utilise des liens Coffre dans Defender pour Office 365 pour suivre en toute sécurité les données de clic de l’URL dans le message de charge utile envoyé aux destinataires ciblés d’une campagne de hameçonnage, même si le paramètre Ne pas suivre les clics de l’utilisateur dans les **stratégies** de liens Coffre est allumé.

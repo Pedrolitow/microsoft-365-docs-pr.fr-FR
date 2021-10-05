@@ -20,21 +20,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 713a2c8b824b5c8fbffb1dcb35465d8f19f727d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 98e7fd75dcbb080f12232fb01cf8d00c0e4355fa
+ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204563"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60126829"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Travailler avec des résultats de requête de recherche avancés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -108,7 +108,7 @@ Utilisez l’affichage graphique en secteurs pour afficher efficacement la distr
 À `summarize` l’aide de l’opérateur avec la fonction, vous pouvez vérifier les événements `bin()` impliquant un indicateur particulier au fil du temps. La requête ci-dessous compte les événements impliquant le fichier à intervalles de 30 minutes pour afficher les pics d’activité `invoice.doc` liés à ce fichier :
 
 ```kusto
-AppFileEvents
+CloudAppEvents
 | union DeviceFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
