@@ -64,6 +64,9 @@
 #### [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)
 #### [Créer une règle de notification d’intégration ou de retrait](onboarding-notification.md)
 
+#### [ Conditions de la licence d'application](mde-terms-windows.md)
+
+
 ### [Microsoft Defender pour point de terminaison sur d’autres systèmes d’exploitation]()
 #### [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)
 
@@ -103,7 +106,7 @@
 
 ##### [Confidentialité](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-
+##### [ Conditions de la licence d'application](mde-terms-mac.md)
 
 #### [Microsoft Defender pour point de terminaison iOS]()
 ##### [Vue d’ensemble de Microsoft Defender pour point de terminaison iOS](microsoft-defender-endpoint-ios.md)
@@ -165,6 +168,9 @@
 
 ##### [Résoudre des problèmes]()
 ###### [Difficultés avec la résolution de problèmes](android-support-signin.md)
+
+##### [ Conditions de licence de l'application Microsoft Defender pour point de terminaison](mde-terms-mobile.md) 
+
 
 ### [Résoudre des problèmes d’intégration]()
 #### [Résoudre des problèmes en cours d’intégration](troubleshoot-onboarding.md)
