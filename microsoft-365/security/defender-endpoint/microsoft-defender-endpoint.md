@@ -2,8 +2,6 @@
 title: Microsoft Defender pour point de terminaison
 description: Microsoft Defender pour point de terminaison est une plateforme de sécurité de point de terminaison d’entreprise qui permet de se défendre contre les menaces persistantes avancées.
 keywords: introduction à Microsoft Defender pour point de terminaison, présentation de Microsoft Defender pour point de terminaison, cybersécurité, menace persistante avancée, sécurité d’entreprise, capteur de comportement de l’ordinateur, sécurité cloud, analytique, renseignement sur les menaces, réduction de la surface d’attaque, protection nouvelle génération, investigation et correction automatisée, experts en menaces Microsoft, degré de sécurisation, repérage avancé, Microsoft 365 Defender, repérage de cybermenaces
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ae0d38eec976abb88638eea3c3d2166c7203647e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e87c13b8d5b4afe2dc14664b680900f7b30b3d02
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203916"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124552"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
 
@@ -32,8 +30,6 @@ ms.locfileid: "59203916"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-> Pour plus d’informations sur les fonctionnalités de Windows 10 Entreprise, voir [Édition Windows 10 Entreprise](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender pour point de terminaison est une plate-forme de sécurité de point de terminaison d’entreprise conçue pour aider les réseaux d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées.
 
@@ -80,7 +76,7 @@ Microsoft Defender pour point de terminaison utilise la combinaison de technolog
 > [!TIP]
 >
 > - Découvrez les dernières améliorations apportées à Defender pour point de terminaison : [Nouveautés de Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-atp.md).
-> - Microsoft Defender pour point de terminaison a démontré les fonctionnalités de détection optique et de détection dans la dernière version d’évaluation de MITRE. Lire : [Informations tirées de l’évaluation de MITRE basée sur ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - Microsoft Defender pour point de terminaison a démontré des fonctionnalités de détection et d’optique de pointe dans la dernière évaluation MITRE. Lire : [Aperçu de l'évaluation basée sur MITRE ATT&CK .](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>
 

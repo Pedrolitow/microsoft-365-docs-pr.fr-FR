@@ -55,7 +55,7 @@
 ##### [Intégrer des appareils à l’aide des outils de Gestion des appareils mobiles](configure-endpoints-mdm.md)
 ##### [Intégrer des appareils en utilisant un script local](configure-endpoints-script.md)
 ##### [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
-##### [Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+##### [Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Intégrer des serveurs Windows](configure-server-endpoints.md)
 
 #### [Intégrer des appareils sans accès à Internet](onboard-offline-machines.md)
@@ -327,9 +327,6 @@
 ##### [Résoudre des problèmes de performance](troubleshoot-performance-issues.md)
 ##### [Consulter les journaux d'événements et les codes d'erreur pour résoudre les problèmes liés à l'antivirus Microsoft Defender.](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [Isolation basée sur le matériel]()
-##### [Isolation basée sur le matériel dans Windows 10](overview-hardware-based-isolation.md)
 
 #### [Exploit Protection]()
 ##### [Protéger les appareils contre les codes malveillants exploitant une faille de sécurité](exploit-protection.md)

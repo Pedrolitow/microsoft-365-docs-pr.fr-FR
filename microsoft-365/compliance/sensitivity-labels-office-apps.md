@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f202eae985ea1dbf0057a0c1ee5663931ea134d9
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 22fa76c56e1cca84fc62784ac31a6acae8b65421
+ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011203"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60124300"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -59,7 +59,7 @@ Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le
 Les nombres répertoriés sont les versions minimales de l’application Office requise pour chaque fonctionnalité. 
 
 > [!NOTE]
-> Pour Windows et le canal Semi-Annual Enterprise, les numéros de version minimum pris en charge peuvent ne pas encore être publiés. [En savoir plus](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> Pour Windows et le canal d’entreprise semi-annuel, il se peut que les numéros de version minimum pris en charge ne soient pas encore publiés. [En savoir plus](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
 |Fonctionnalité |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
@@ -88,7 +88,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 Les nombres répertoriés sont les versions minimales de l’application Office requise pour chaque fonctionnalité. 
 
 > [!NOTE]
-> Pour Windows et le canal Semi-Annual Enterprise, les numéros de version minimum pris en charge peuvent ne pas encore être publiés. [En savoir plus](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> Pour Windows et le canal d’entreprise semi-annuel, il se peut que les numéros de version minimum pris en charge ne soient pas encore publiés. [En savoir plus](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
 |Fonctionnalité |Outlook pour Windows |Outlook pour Mac |Outlook sur iOS |Outlook sur Android |Outlook sur le web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
@@ -102,7 +102,7 @@ Les nombres répertoriés sont les versions minimales de l’application Office 
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Ne pas transférer](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Canal actuel : 1910+ <br /><br> Canal Entreprise mensuel : 1910+ <br /><br> Semi-Annual Enterprise canal : 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Oui               |
 |[Permettre aux utilisateurs d’attribuer des autorisations : <br /> – Chiffrer uniquement](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Canal d’entreprise semestriel | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Oui |
 |[Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actuel : 2101+ <br /><br> Canal Entreprise mensuel : 2101+ <br /><br> Canal d’entreprise semestriel | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Oui                |
-|[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md) | Canal actuel : 2111+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Semi-Annual Enterprise canal : en cours de révision | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
+|[Audit de l’activité des utilisateurs liée à une étiquette](data-classification-activity-explorer.md) | Canal actuel : 2011+ <br /><br> Canal Entreprise mensuel : 2011+ <br /><br> Semi-Annual Enterprise canal : en cours de révision | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de types d’informations sensibles                    | Canal actuel : 2009+ <br /><br> Canal Enterprise mensuel : 2009+ <br /><br> Semi-Annual Enterprise canal : 2102+ | 16.44+ <sup>\*</sup>                    | En cours de révision           | En cours de révision               | Oui |
 |[Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md) <br /> - Utilisation de classifieurs pouvant être formés                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |[Paramètres différents pour l’étiquette par défaut et l’étiquette obligatoire](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actuel : 2105+ <br /><br> Canal Entreprise mensuel : 2105+ <br /><br> Canal d’entreprise semestriel : 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Oui |
@@ -150,7 +150,7 @@ Pour Microsoft Word 2016, Excel 2016, PowerPoint 2016 et Outlook 2016, spécifie
 Déployez ce paramètre à l’aide d’une stratégie de groupe ou à l’aide du [service de stratégies cloud Office](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!NOTE]
-> Si vous utilisez le paramètre de stratégie de groupe **Utiliser la fonctionnalité de confidentialité d’Office pour appliquer et afficher les étiquettes de confidentialité** et définissez ce paramètre sur **1**, dans certains cas, le client Azure Information Protection risque de se charger encore dans les applications Office. Le blocage du chargement du complément dans chaque application empêche que cela ne se produise.
+> Si vous utilisez le paramètre stratégie de groupe **Utilisez la fonctionnalité De confidentialité dans Office pour appliquer et afficher les étiquettes de confidentialité** et définir cette valeur sur **1**, il existe certaines situations où le client Azure Information Protection peut toujours se charger dans les applications Office. Le fait de bloquer le chargement du complément dans chaque application empêche ce problème.
 
 Vous pouvez également désactiver ou supprimer de manière interactive le complément Office **Microsoft Azure Information Protection** de Word, Excel, PowerPoint et Outlook. Cette méthode est appropriée pour un ordinateur unique et des tests ad-hoc. Pour obtenir de instructions, consultez [Afficher, gérer et installer des compléments dans les programmes Office (pour les utilisateurs)](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
@@ -160,7 +160,7 @@ Pour plus d’informations sur les fonctionnalités pris en charge par les clien
 
 ## <a name="office-file-types-supported"></a>Types de fichiers Office pris en charge
 
-Les applications Office qui utilisent des étiquetages intégrés pour les fichiers Word, Excel et PowerPoint utilisent le format Open XML (par exemple, .docx et .xlsx) mais pas les formats Microsoft Office 97-2003 (tels que .doc et .xls), les formats Open Document (tels que .odt et .ods) ou d’autres formats. Lorsqu’un type de fichier n’est pas pris en charge pour l'étiquetage intégré, le bouton **Niveau de confidentialité** n’est pas disponible dans l’application Office.
+Les applications Office qui ont un étiquetage intégré pour les fichiers Word, Excel et PowerPoint prennent en charge le format Open XML (tel que .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (tel que .doc et .xls), le format Open Document (par exemple, .odt et .ods) ou d’autres formats. Lorsqu’un type de fichier n’est pas pris en charge pour l’étiquetage intégré, le bouton **Sensibilité** n’est pas disponible dans l’application Office.
 
 Le client d’étiquetage unifié Azure Information Protection prend en charge les formats Open XML et Microsoft Office 97-2003. Pour plus d’informations, consultez [Types de fichiers pris en charge par le client d’étiquetage unifié Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) à partir du guide d’administration de ce client.
 
@@ -279,9 +279,9 @@ Toutefois, le compte invité automatique n’est pas créé immédiatement dans 
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
-Si votre organisation a implémenté des [stratégies d’accès conditionnel Azure Active Directory](/azure/active-directory/conditional-access/overview), vérifiez leur configuration. Si les stratégies incluent **Microsoft Azure Information Protection** et que la stratégie s’étend aux utilisateurs externes, ces utilisateurs externes doivent avoir un compte invité dans votre client, même s’ils ont un compte Azure AD dans leur propre client.
+Si votre organisation a implémenté [Azure Active Directory stratégies d’accès conditionnel](/azure/active-directory/conditional-access/overview), vérifiez la configuration de ces stratégies. Si les stratégies incluent **Microsoft Azure Information Protection** et que la stratégie s’étend aux utilisateurs externes, ces utilisateurs externes doivent avoir un compte invité dans votre locataire, même s’ils ont un compte Azure AD dans leur propre locataire.
 
-Sans ce compte invité, ils ne peuvent pas ouvrir le document chiffré et voir un message d’erreur. Le texte du message peut l’informer que son compte doit être ajouté en tant qu’utilisateur externe dans le client, avec des instructions incorrectes pour ce scénario pour **SSe déconnecter et se reconnecter avec un compte utilisateur Azure Active Directory différent.**.
+Sans ce compte invité, ils ne peuvent pas ouvrir le document chiffré et voir un message d’erreur. Le texte du message peut les informer que leur compte doit être ajouté en tant qu’utilisateur externe dans le locataire, avec les instructions incorrectes pour ce scénario pour **Se déconnecter et se reconnecter avec un autre compte d’utilisateur Azure Active Directory**.
 
 Si vous ne pouvez pas créer et configurer des comptes invités dans votre client pour des utilisateurs externes qui doivent ouvrir des documents chiffrés par vos étiquettes, vous devez supprimer Azure Information Protection des stratégies d’accès conditionnel ou exclure des utilisateurs externes des stratégies.
 
@@ -319,7 +319,7 @@ Dans ces scénarios, à l’aide de leurs applications Office, un utilisateur av
 > [!IMPORTANT]
 > Actuellement, toutes les applications, sur toutes les plateformes, ne prennent pas en charge les marquages de contenu dynamiques que vous pouvez spécifier pour vos en-têtes, pieds de page et filigranes. Pour les applications qui ne prennent pas en charge cette fonctionnalité, elles appliquent les marquages comme le texte original spécifié dans la configuration de l'étiquette, plutôt que de résoudre les variables.
 > 
-> Le client de l’étiquetage unifié Azure Information Protection prend en charge les marquages dynamiques. Pour obtenir des étiquetages intégrés à Office, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) sur cette page pour connaître les versions minimales prises en charge.
+> Le client d’étiquetage unifié Azure Information Protection prend en charge les marquages dynamiques. Pour l’étiquetage intégré à Office, consultez les tableaux de la section [Fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour connaître les versions minimales prises en charge.
 
 Lorsque vous configurez une étiquette de confidentialité pour le marquage du contenu, vous pouvez utiliser les variables suivantes dans la chaîne de texte pour votre en-tête, pied de page ou filigrane :
 
@@ -371,7 +371,7 @@ Exemples :
 
 > [!IMPORTANT]
 > 
-> Le [client de l’étiquetage unifié d’Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) prend en charge cette configuration également appelée étiquetage obligatoire. Pour obtenir des étiquetages intégrés aux applications Office, consultez les tableaux de la section [fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) sur cette page pour connaître les versions minimales prises en charge.
+> Le [Client de l’étiquetage unifié d’Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) prend en charge cette configuration également appelée étiquetage obligatoire. Pour l’étiquetage intégré aux applications Office, consultez les tableaux de la section [Fonctionnalités](#support-for-sensitivity-label-capabilities-in-apps) de cette page pour connaître les versions minimales.
 >
 > Pour utiliser l’étiquetage obligatoire pour les documents et non pour les e-mails, consultez les instructions de la section suivante qui explique comment configurer les options spécifiques à Outlook.
 > 
