@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4dcbb7051325483a220c39fdebaae53aba9c37f4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6974af0dbf6f4c8bc4b22ccf9292a562902a524f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212268"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 

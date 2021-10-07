@@ -1,7 +1,7 @@
 ---
 title: La gestion des menaces et des vulnérabilités
 description: Cette nouvelle fonctionnalité utilise une approche basée sur les risques qui modifie le jeu pour la découverte, la hiérquage et la correction des vulnérabilités et des mauvaises configurations des points de terminaison.
-keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestion des vulnérabilités, vulnerability assessment, threat and vulnerability scanning, secure configuration assessment, Microsoft Defender for Endpoint, endpoint vulnerabilities, next generation
+keywords: threat & gestion des vulnérabilités, Gestion des menaces et des vulnérabilités, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, gestion des vulnérabilités, vulnerability assessment, threat and vulnerability scanning, évaluation de la configuration sécurisée, Microsoft Defender pour point de terminaison, vulnérabilités de point de terminaison, nouvelle génération
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: f909d39fee3eb55caaa47ef6a636d33ff4c7f025
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 44690f586d606ecceebecca65f13b5e337a021c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400173"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212492"
 ---
 # <a name="threat-and-vulnerability-management"></a>La gestion des menaces et des vulnérabilités
 
@@ -62,7 +62,7 @@ Il fournit également :
 
 Les menaces et gestion des vulnérabilités les clients hiérarchisent et se concentrent sur les faiblesses qui posent les risques les plus urgents et les plus élevés pour l’organisation. Il associe les recommandations de sécurité avec les menaces dynamiques et le contexte métier :
 
-- **Exposition des attaques émergentes dans l’environnement** : aligne dynamiquement la hiér donc sur les recommandations de sécurité. Les menaces et gestion des vulnérabilités se concentrent sur les vulnérabilités actuellement exploitées dans les menaces émergentes et les menaces émergentes qui présentent le risque le plus élevé.
+- **Exposition des attaques émergentes dans l’environnement** – Aligne dynamiquement la hiér donc sur les recommandations de sécurité. Les menaces et gestion des vulnérabilités se concentrent sur les vulnérabilités actuellement exploitées dans les menaces émergentes et les menaces émergentes qui présentent le risque le plus élevé.
 - **Mise en évidence des violations actives** : met en Gestion des menaces et des vulnérabilités et PEPT des informations pour hiérarchiser les vulnérabilités exploitées dans une violation active au sein de l’organisation.
 - **Protection des biens à** valeur élevée : identifiez les appareils exposés avec des applications critiques pour l’entreprise, des données confidentielles ou des utilisateurs à valeur élevée.
 
@@ -71,7 +71,7 @@ Les menaces et gestion des vulnérabilités les clients hiérarchisent et se con
 Les menaces et gestion des vulnérabilités aux administrateurs de sécurité et aux administrateurs informatiques de collaborer en toute transparence pour résoudre les problèmes.
 
 - **Demandes de correction envoyées aux services informatiques** : créez une tâche de correction Microsoft Intune à partir d’une recommandation de sécurité spécifique. Nous prévoyons d’étendre cette fonctionnalité à d’autres plateformes de gestion de la sécurité informatique.
-- **Autres atténuations** : obtenir des informations sur d’autres atténuations, telles que les modifications de configuration qui peuvent réduire les risques associés aux vulnérabilités logicielles.
+- **Autres atténuations** : obtenir des informations sur les autres atténuations, telles que les modifications de configuration qui peuvent réduire les risques associés aux vulnérabilités logicielles.
 - **État de correction en temps** réel : surveillance en temps réel de l’état et de la progression des activités de correction au sein de l’organisation.
 
 ## <a name="threat-and-vulnerability-management-walk-through"></a>Threat and gestion des vulnérabilités walk-through
@@ -98,7 +98,7 @@ Regardez cette vidéo pour une présentation complète des Gestion des menaces e
 
 ## <a name="apis"></a>API
 
-Exécutez Gestion des menaces et des vulnérabilités’API associées pour automatiser gestion des vulnérabilités flux de travail. En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
+Exécutez Gestion des menaces et des vulnérabilités d’API associées pour automatiser gestion des vulnérabilités flux de travail. En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
 
 Consultez les articles suivants pour les API associées :
 

@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble Microsoft 365 Defender API
+title: Vue d’ensemble des API Microsoft 365 Defender
 description: En savoir plus sur les API disponibles dans Microsoft 365 Defender
 keywords: api, api, vue d’ensemble, incident, incidents, recherche de menace, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ef8a5e1b833bc1184132469f8c3b358e907974e4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 2ce2e6e1efc87f0bcbfdbe6d650f35ea91da8422
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491264"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213564"
 ---
-# <a name="overview-of-microsoft-365-defender-apis"></a>Vue d’ensemble Microsoft 365 Defender API
+# <a name="overview-of-microsoft-365-defender-apis"></a>Vue d’ensemble des API Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,22 +38,22 @@ ms.locfileid: "59491264"
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Microsoft 365 Defender repose sur une plateforme prête à l’intégration.
+Microsoft 365 Defender est créé sur une plateforme prête à l’intégration.
 
 Utilisez les API Microsoft 365 Defender pour automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées.
 
 - **[File d’attente d’incidents combinés](api-incident.md)** : concentrez-vous sur les éléments critiques en groupant l’étendue d’attaque complète et tous les biens touchés ensemble sous l’API d’incident.
 
-- Recherche de menaces entre produits : tirez parti des connaissances organisationnelles de votre équipe de sécurité pour chercher des signes de compromission, en créant vos propres requêtes personnalisées pour passer en **[arrière-plan](api-advanced-hunting.md)** les données brutes collectées dans plusieurs produits de protection.
+- Recherche de menaces entre produits : tirez parti des connaissances organisationnelles de votre équipe de sécurité pour chercher des signes de compromission, en créant vos propres requêtes personnalisées pour passer en **[arrière-plan](api-advanced-hunting.md)** les données brutes collectées sur plusieurs produits de protection.
 
-- **[API de diffusion en](streaming-api.md)** continu d’événements : expédiez des événements et des alertes en temps réel dans un flux de données unique au moment où ils se produisent.
+- **[API de diffusion en](streaming-api.md)** continu d’événements : expédiez des événements et alertes en temps réel dans un flux de données unique au moment où ils se produisent.
 
 Parallèlement à ces MICROSOFT 365 DEFENDER spécifiques, chacun de nos [](api-articles.md) autres produits de sécurité expose des API supplémentaires pour vous aider à tirer parti de leurs fonctionnalités uniques.
 
 > [!NOTE]
 > La transition vers le portail unifié ne doit pas affecter les tableaux de bord PowerBi basés sur les API Microsoft Defender for Endpoint. Vous pouvez continuer à travailler avec les API existantes, quelle que soit la transition du portail interactif.
 
-## <a name="learn-more"></a>Si vous souhaitez en savoir plus
+## <a name="learn-more"></a>En savoir plus
 
 | **Comprendre comment accéder aux API** |
 |-|

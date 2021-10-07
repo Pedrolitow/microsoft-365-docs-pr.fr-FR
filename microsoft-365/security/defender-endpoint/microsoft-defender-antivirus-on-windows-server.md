@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ae209a9b3442d1bb5744c7f8255ae9ddf041a321
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: df73543f0aaf5ac03508e6239e850f7a8d3034c9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043190"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210948"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus Microsoft Defender sur Windows Server
 
@@ -128,7 +128,7 @@ La `sc query` commande renvoie des informations sur Antivirus Microsoft Defender
 
 Pour obtenir des informations de sécurité contre les programmes malveillants mises à jour, le service de mise à jour Windows logiciels malveillants doit être en cours d’exécution. Si vous utilisez un service de gestion des mises à jour, tel que Windows Server Update Services (WSUS), assurez-vous que les mises à jour pour Antivirus Microsoft Defender Security intelligence sont approuvées pour les ordinateurs que vous gérez.
 
-Par défaut, Windows Update ne télécharge et n’installe pas automatiquement les mises à jour sur Windows Server 2019 ou Windows Server 2022 ou Windows Server 2016. Vous pouvez modifier cette configuration à l’aide de l’une des méthodes suivantes :
+Par défaut, Windows Update ne télécharge pas et n’installe pas automatiquement les mises à jour sur Windows Server 2019 ou Windows Server 2022 ou Windows Server 2016. Vous pouvez modifier cette configuration à l’aide de l’une des méthodes suivantes :
 
 <br/><br/>
 
@@ -159,7 +159,7 @@ Le tableau suivant répertorie les services pour Antivirus Microsoft Defender et
 
 ## <a name="submit-samples"></a>Envoyer des exemples
 
-La soumission d’exemples permet à Microsoft de collecter des exemples de logiciels potentiellement malveillants. Pour assurer une protection continue et à jour, les chercheurs De Microsoft utilisent ces exemples pour analyser les activités suspectes et produire des informations de sécurité anti-programme malveillant mises à jour. Nous collectons des fichiers exécutables de programme, tels que .exe et .dll fichiers. Nous ne collectons pas les fichiers qui contiennent des données personnelles, comme Microsoft Word documents et fichiers PDF.
+La soumission d’exemples permet à Microsoft de collecter des exemples de logiciels potentiellement malveillants. Pour assurer une protection continue et à jour, les chercheurs De Microsoft utilisent ces exemples pour analyser les activités suspectes et produire des informations de sécurité contre les programmes malveillants mises à jour. Nous collectons des fichiers exécutables de programme, tels que .exe et .dll fichiers. Nous ne collectons pas les fichiers qui contiennent des données personnelles, comme Microsoft Word documents et fichiers PDF.
 
 ### <a name="submit-a-file"></a>Envoyer un fichier
 
@@ -174,7 +174,7 @@ Pour activer la soumission automatique d’échantillons, démarrez une console 
 
 ****
 
-|Setting|Description|
+|Paramètre|Description|
 |---|---|
 |**0**  -  **Toujours invite**|Le service Antivirus Microsoft Defender vous invite à confirmer l’envoi de tous les fichiers requis. Il s’agit du paramètre par défaut pour Antivirus Microsoft Defender, mais il n’est pas recommandé pour les installations sur Windows Server 2016 ou 2019, ou Windows Server 2022 sans interface graphique graphique.|
 |**1**   -  **Envoyer automatiquement des échantillons sécurisés**|Le service Antivirus Microsoft Defender envoie tous les fichiers marqués comme « sûrs » et demande le reste des fichiers.|

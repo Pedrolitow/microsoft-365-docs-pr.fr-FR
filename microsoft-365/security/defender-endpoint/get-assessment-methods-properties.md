@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d98b231d4d2c0b415a3c76aa18d23402f19e8b06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5870f91bd154ddf344c7914c44c96e438fc9f99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182015"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211188"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter les méthodes et propriétés d’évaluation par appareil
 
@@ -145,7 +145,7 @@ Méthode|Type de données|Description
 :---|:---|:---
 Exporter l’évaluation des vulnérabilités **logicielles (réponse JSON)**|Collection d’examens : [3.2 Propriétés (réponse JSON)](#32-properties-json-response)|Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L’API tire toutes les données de votre organisation en tant que réponses JSON. Cette méthode est la meilleure pour les petites organisations avec moins de 100 Ko d’appareils. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants.
 Exporter l’évaluation des vulnérabilités **logicielles (via des fichiers)**|Entité Investigation Voir : [Propriétés 3.3 (via des fichiers)](#33-properties-via-files)|Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : <ol><li>Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.</li><li>Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.</li></ol>
-**Évaluation des vulnérabilités** logicielles d’exportation delta **(réponse JSON)**|Collection d’examens Voir : [Exportation delta des propriétés 3.4 (réponse JSON)](#34-properties-delta-export-json-response)|Renvoie un tableau avec une entrée pour chaque combinaison unique de : DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId et EventTimestamp. <p> L’API tire les données de votre organisation en tant que réponses JSON. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? » <p> Étant donné que l’appel de l’API d’exportation Delta pour les vulnérabilités logicielles renvoie des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme _une exportation complète._
+**Évaluation des vulnérabilités** logicielles d’exportation delta **(réponse JSON)**|Collection d’examens Voir : [Exportation delta de propriétés 3.4 (réponse JSON)](#34-properties-delta-export-json-response)|Renvoie un tableau avec une entrée pour chaque combinaison unique de : DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId et EventTimestamp. <p> L’API tire les données de votre organisation en tant que réponses JSON. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? » <p> Étant donné que l’appel de l’API d’exportation Delta pour les vulnérabilités logicielles renvoie des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme _une exportation complète._
 
 ### <a name="32-properties-json-response"></a>3.2 Propriétés (réponse JSON)
 
@@ -165,7 +165,7 @@ RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). S
 rbacGroupId|string|ID de groupe de contrôle d’accès basé sur un rôle (RBAC).
 RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate|string|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId|string|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants.
+RecommendedSecurityUpdateId|string|Identificateur des mises à jour de sécurité applicables ou de l’identificateur pour les articles de base de connaissances ou d’aide correspondants.
 Chaîne de tableau des chemins \[ d’accès du Registre\]|Preuve dans le Registre que le produit est installé sur l’appareil.
 SoftwareName|string|Nom du produit logiciel.
 SoftwareVendor|string|Nom du fournisseur de logiciels.
@@ -188,7 +188,7 @@ CvssScore|string|Score CVSS de la CVE.
 DeviceId|string|Identificateur unique de l’appareil dans le service.
 DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.
 DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appareil.
-EventTimestamp|Chaîne|Heure de la découverte de cet événement delta.
+EventTimestamp|String|Heure de la découverte de cet événement delta.
 ExploitabilityLevel|string|Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp|string|Première fois que la CVE de ce produit a été vue sur l’appareil.
 ID|string|Identificateur unique de l’enregistrement.  
@@ -197,7 +197,7 @@ OSPlatform|string|Plateforme du système d’exploitation en cours d’exécutio
 RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».
 RecommendationReference|string|Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate |string|Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId |string|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants
+RecommendedSecurityUpdateId |string|Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants
 RegistryPaths |Array[string]|Preuve dans le Registre que le produit est installé sur l’appareil.
 SoftwareName|string|Nom du produit logiciel.
 SoftwareVendor|string|Nom du fournisseur de logiciels.

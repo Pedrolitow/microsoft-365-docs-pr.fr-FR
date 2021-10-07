@@ -8,24 +8,24 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à utiliser la stratégie de veille contre l’usurpation d’informations et l’information sur l’usurpation d’informations pour autoriser ou bloquer les expéditeurs usurpés détectés.
+description: Les administrateurs peuvent apprendre à utiliser la stratégie d’intelligence contre l’usurpation d’adresse et l’information sur l’usurpation d’informations pour autoriser ou bloquer les expéditeurs usurpés détectés.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d23e6ab170b200626b422163daaafdbdd11e5fca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51a52c931e70d0d3da5f87c0c5a702002bc9d377
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203699"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211872"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gérer les expéditeurs usurpés à l’aide de la stratégie de veille contre l’usurpation d’informations et des informations sur l’usurpation d’informations dans EOP
 
@@ -36,7 +36,7 @@ ms.locfileid: "59203699"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’adresses [dans EOP.](learn-about-spoof-intelligence.md)
+> Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’informations sur l’usurpation d’adresse [dans EOP.](learn-about-spoof-intelligence.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’adresse par EOP à partir d’octobre 2018. EOP utilise **la veille contre** l’usurpation d’adresse dans le cadre de la protection globale de votre organisation contre le hameçonnage. Pour plus d’informations, voir [Protection contre l’usurpation d’adresse dans EOP.](anti-spoofing-protection.md)
 
@@ -81,7 +81,7 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
 ### <a name="manage-spoofed-senders-in-the-spoof-intelligence-policy"></a>Gérer les expéditeurs usurpés dans la stratégie de veille contre l’usurpation d’adresse
 
 > [!IMPORTANT]
-> Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’adresses [dans EOP.](learn-about-spoof-intelligence.md)
+> Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’informations sur l’usurpation d’adresse [dans EOP.](learn-about-spoof-intelligence.md)
 
 1. Dans le Portail Microsoft 365 Defender, accédez à **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies Anti-courrier indésirable** dans la section **Stratégies**.
 
@@ -124,7 +124,7 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
 
    - **Dernière vue**: date de la dernière réception d’un message de l’infrastructure d’envoi contenant l’utilisateur usurpé.
 
-   - **Autorisé à usurper l’usurpation d’accès ?**: les valeurs que vous voyez ici sont les :
+   - **Autorisé à usurper ? :** les valeurs que vous voyez ici sont :
      - **Oui**: les messages provenant de la combinaison de l’utilisateur usurpé et de l’infrastructure d’envoi sont autorisés et ne sont pas traités comme des e-mails usurpés.
      - **Non**: les messages provenant de la combinaison de l’utilisateur usurpé et de l’infrastructure d’envoi sont marqués comme usurpés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message dans le dossier **Courrier indésirable).** Pour plus d’informations, voir la section suivante.
 
@@ -135,7 +135,7 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
 #### <a name="use-powershell-to-manage-spoofed-senders"></a>Utiliser PowerShell pour gérer les expéditeurs usurpés
 
 > [!IMPORTANT]
-> Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’adresses [dans EOP.](learn-about-spoof-intelligence.md)
+> Cet article décrit l’ancienne expérience de gestion des expéditeurs  usurpés qui est remplacée (stratégie de veille contre l’usurpation d’adresse dans la page Stratégies **anti-courrier** indésirable). Pour plus d’informations sur  la nouvelle expérience (l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer), voir Informations sur l’usurpation d’informations sur l’usurpation d’adresse [dans EOP.](learn-about-spoof-intelligence.md)
 
 Pour afficher les expéditeurs autorisés et bloqués dans la veille contre l’usurpation d’adresse, utilisez la syntaxe suivante :
 
@@ -161,7 +161,7 @@ Pour configurer les expéditeurs autorisés et bloqués dans la veille contre l�
 
 2. Modifiez le fichier CSV pour ajouter ou modifier les valeurs suivantes :
    - **Expéditeur** (domaine dans l’enregistrement PTR ou l’adresse IP/24 du serveur source)
-   - **SpoofedUser :** l’une des valeurs suivantes :
+   - **SpoofedUser**: l’une des valeurs suivantes :
      - Adresse de messagerie de l’utilisateur interne.
      - Domaine de messagerie de l’utilisateur externe.
      - Valeur vide qui indique que vous souhaitez bloquer ou autoriser tous les messages usurpés de l’expéditeur **spécifié,** quelle que soit l’adresse e-mail usurpée.

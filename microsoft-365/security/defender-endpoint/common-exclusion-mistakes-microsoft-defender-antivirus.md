@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 85c3aee098786d75a7a2f17d1c9c4d11c0c87aeb
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 55f2ca89c04fb35c853ef39255ef97a9e811138a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490906"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213108"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Erreurs courantes à éviter lors de la définition d’exclusions
 
@@ -278,13 +278,13 @@ En règle générale, ne définissez pas d’exclusions pour les processus suiva
 `zsh`
 
 > [!NOTE]
-> Vous pouvez choisir d’exclure des types de fichiers, tels que , ou si votre environnement dispose d’un logiciel moderne à jour avec une stratégie de mise à jour stricte pour gérer les `.gif` `.jpg` `.jpeg` `.png` vulnérabilités.
+> Vous pouvez choisir d’exclure les types de fichiers, tels que , ou si votre environnement dispose d’un logiciel moderne à jour avec une stratégie de mise à jour stricte pour gérer les `.gif` `.jpg` `.jpeg` `.png` vulnérabilités.
 
 ## <a name="using-just-the-file-name-in-the-exclusion-list"></a>Utilisation du nom de fichier dans la liste d’exclusions
 
 Les programmes malveillants peuvent porter le même nom que celui d’un fichier que vous faites confiance et que vous souhaitez exclure de l’analyse. Par conséquent, pour éviter d’exclure les programmes malveillants potentiels de l’analyse, utilisez un chemin d’accès complet au fichier que vous souhaitez exclure au lieu d’utiliser uniquement le nom du fichier. Par exemple, si vous souhaitez exclure de l’analyse, utilisez le chemin d’accès complet `Filename.exe` au fichier, tel que `C:\program files\contoso\Filename.exe` .
 
-## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Utilisation d’une seule liste d’exclusions pour plusieurs charges de travail de serveur
+## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Utilisation d’une seule liste d’exclusions pour plusieurs charges de travail serveur
 
 N’utilisez pas une seule liste d’exclusions pour définir des exclusions pour plusieurs charges de travail de serveur. Fractionner les exclusions pour différentes charges de travail d’application ou de service en plusieurs listes d’exclusions. Par exemple, la liste d’exclusions de votre charge de travail de serveur IIS doit être différente de la liste d’exclusions pour SQL Server charge de travail.
 
@@ -292,4 +292,4 @@ N’utilisez pas une seule liste d’exclusions pour définir des exclusions pou
 
 Antivirus Microsoft Defender Le service s’exécute dans le contexte système à l’aide du compte LocalSystem, ce qui signifie qu’il obtient des informations à partir de la variable d’environnement système, et non de la variable d’environnement utilisateur. L’utilisation de variables d’environnement comme caractère générique dans les listes d’exclusions est limitée aux variables système et à celles applicables aux processus en cours d’exécution en tant que compte NT AUTHORITY\SYSTEM. Par conséquent, n’utilisez pas de variables d’environnement utilisateur comme caractères génériques lors de l Antivirus Microsoft Defender exclusions de dossiers et de processus. Consultez le tableau sous [Variables d’environnement système](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) pour obtenir la liste complète des variables d’environnement système.
 
-Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusion, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.
+Pour plus d’informations sur l’utilisation des caractères génériques dans les listes d’exclusions, voir Utiliser des [caractères génériques](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) dans les listes d’exclusions et le chemin d’accès au dossier ou les listes d’exclusions.

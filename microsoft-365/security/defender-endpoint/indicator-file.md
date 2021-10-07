@@ -3,26 +3,24 @@ title: Créer des indicateurs pour les fichiers
 ms.reviewer: ''
 description: Créez des indicateurs pour un hachage de fichier qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: fichier, hachage, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34c2e3a797dd463ad44fbc5d8576bc2b77b75f5c
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 493a76d430f508976ba261d9e78bb4b8087be15e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042649"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211164"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -52,7 +50,7 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Pris en charge sur les appareils Windows 10, version 1703 ou ultérieure, Windows Server 2016, 2019 et Windows Server 2022.
+- Pris en charge sur les appareils Windows 11, Windows 10 version 1703 ou ultérieure, Windows Server 2016, 2019 et Windows Server 2022.
 
 - Pour commencer à bloquer les fichiers, vous devez d’abord [activer](advanced-features.md) la fonctionnalité « bloquer ou autoriser » dans Paramètres.
 
@@ -85,7 +83,7 @@ Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas d
 > Les informations de cette section **(prévisualisation** publique pour le moteur automatisé d’examen et de correction) concernent les versions préliminaires d’un produit qui peuvent être considérablement modifiés avant sa commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Les actions actuellement prises en charge pour l’IOC de fichier sont autoriser, auditer et bloquer et corriger.
-Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à l’attention de vos équipes d’opérations de sécurité et de vous assurer que seules les alertes requises sont élevées.
+Après avoir choisi de bloquer un fichier, vous pouvez choisir si le déclenchement d’une alerte est nécessaire. De cette façon, vous serez en mesure de contrôler le nombre d’alertes à l’attention de vos équipes en matière d’opérations de sécurité et de vous assurer que seules les alertes requises sont élevées.
 Dans Microsoft 365 Defender, go to Paramètres > Endpoints > Indicators > add new File hash Choose to Block and remediate the file Choose if to Generate an alert on the file block event and define the alerts settings:
 
 - Titre de l’alerte
@@ -137,11 +135,11 @@ L’activité d’action de réponse peut également être vue dans la chronolog
 
 Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-dessous :
 
-- Si le fichier n’est pas autorisé par Windows Defender application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
+- Si le fichier n’est pas autorisé par Windows Defender Application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
 - Sinon, si le fichier est autorisé par l’exclusion Antivirus Microsoft Defender, **autorisez**
 - Sinon, si le fichier est bloqué ou averti par un blocage ou un avertissement de fichier IoC, **puis Bloquer/Avertir**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier autorisé, **autorisez**
-- Sinon si le fichier est bloqué par les règles de la asr, cfa, av, SmartScreen, puis **bloquer**
+- Sinon, si le fichier est bloqué par les règles de la asr, LFA, AV, SmartScreen, puis **Bloquer**
 - Else **Allow** (passe Windows Defender Application Control & AppLocker, aucune règle IoC ne s’applique à elle)
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
@@ -151,7 +149,7 @@ S’il existe des stratégies IoC de fichier en conflit avec le même type d’a
 
 Les fonctionnalités gestion des vulnérabilités d’application vulnérables aux menaces et aux menaces utilisent les IOC de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
 
-### <a name="examples"></a>範例
+### <a name="examples"></a>Exemples
 
 <br>
 

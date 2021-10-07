@@ -4,17 +4,17 @@ description: Dans le cadre de l’inscription, vous devez attribuer des licences
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bb41361d58ccdac9c1fe0ecdca12927752214651
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28a29f0e1b8160995b8bbccdae868a86135a0577
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205156"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211536"
 ---
 # <a name="assign-licenses"></a>Attribuer des licences
 

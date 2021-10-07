@@ -6,20 +6,20 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Utilisation du Scheduler pour Microsoft 365.
-ms.openlocfilehash: 2987861856611ae4698f49dc8123a5cf733074ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 19c8171e58706fde441ec2ffdd3c1c0d85a18b83
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179484"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211356"
 ---
 # <a name="how-to-use-scheduler-for-microsoft-365"></a>Utilisation du Planificateur pour Microsoft 365
 
 Cortana comprendre le langage naturel. Incluez cortana@yourdomain.com dans un e-mail avec d’autres participants, et Cortana de prendre le relais à partir de là. Cortana envoyer des notifications par courrier électronique confirmant les heures de réunion et vous tenir informé de l’avancement.
 
-Pour utiliser le Scheduler, ajoutez Cortana’adresse e-mail à votre e-mail en plus des personnes avec qui vous souhaitez vous rencontrer. Dans votre courrier électronique à Cortana et aux autres participants, indiquez Cortana planifier une réunion en langage naturel.  
+Pour utiliser le Scheduler, ajoutez Cortana’adresse e-mail à votre courrier électronique en plus des personnes avec qui vous souhaitez vous rencontrer. Dans votre courrier électronique à Cortana et aux autres participants, indiquez Cortana planifier une réunion en langage naturel.  
 
 ## <a name="when-to-use-scheduler"></a>Quand utiliser le Scheduler ?
 
@@ -28,7 +28,7 @@ Pour utiliser le Scheduler, ajoutez Cortana’adresse e-mail à votre e-mail en 
 - **Planification de réunions avec des participants externes**  
 Cortana communique avec des invités externes pour négocier les heures que vous êtes disponible pour vous réunir. Après avoir confirmé l’heure de la réunion, Cortana envoie une invitation aux participants et vous informe que la réunion a été programmée.
 
-## <a name="what-to-say-to-cortana"></a>Que dire à Cortana ?
+## <a name="what-to-say-to-cortana"></a>Que dire aux Cortana ?
 
 Cortana comprendre le langage naturel, mais un langage concis est recommandé. 
 

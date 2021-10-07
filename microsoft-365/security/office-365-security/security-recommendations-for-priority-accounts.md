@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-protecthve
-description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans Microsoft 365 organisations.
+description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires au Microsoft 365 organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 541e6f4008b7ea33a7d3395c9fd62522b3110086
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 07cd37c97711b2f80ddc2f0914ef7429c5ea9310
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043262"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211860"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -87,7 +87,7 @@ Les balises utilisateur dans Microsoft Defender pour Office 365 Plan 2 (dans le 
 
 **Les comptes de priorité** sont un type de balise utilisateur intégrée (appelée balise _système)_ que vous pouvez utiliser pour identifier les incidents et les alertes impliquant des comptes prioritaires. Pour plus d’informations **sur les comptes prioritaires,** voir [Gérer et surveiller les comptes de priorité.](../../admin/setup/priority-accounts.md)
 
-Vous pouvez également créer des balises personnalisées pour identifier et classer vos comptes prioritaires. Pour plus d’informations, voir [Balises utilisateur.](user-tags.md) Vous pouvez gérer les **comptes prioritaires (balises** système) dans la même interface que les balises utilisateur personnalisées.
+Vous pouvez également créer des balises personnalisées pour identifier et classer vos comptes prioritaires. Pour plus d’informations, voir [Balises utilisateur.](user-tags.md) Vous pouvez gérer les **comptes de priorité (balises** système) dans la même interface que les balises utilisateur personnalisées.
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Surveiller les comptes prioritaires dans les alertes, les rapports et les détections
 
@@ -99,7 +99,7 @@ Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez
 
 |Fonctionnalité|Description|
 |---|---|
-|Alertes|Les balises utilisateur des utilisateurs concernés sont visibles et disponibles en tant que filtres dans la page **Alertes** du portail Microsoft 365 Defender web. Pour plus d’informations, voir [Affichage des alertes.](../../compliance/alert-policies.md#viewing-alerts)|
+|Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles en tant que filtres dans la page **Alertes** du portail Microsoft 365 Defender web. Pour plus d’informations, voir [Affichage des alertes.](../../compliance/alert-policies.md#viewing-alerts)|
 |Explorer <p> Détections en temps réel|Dans **l’Explorateur** (Defender pour Office 365 Plan 2) ou les détections en temps réel (Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans l’affichage Grille de messagerie et le volant Détails de l’e-mail.  Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur.](threat-explorer.md#tags-in-threat-explorer)|
 |Vues de campagne|Les balises utilisateur sont l’une des nombreuses propriétés filtrables des affichages campagne dans Microsoft Defender Office 365 Plan 2. Pour plus d’informations, voir [Affichages de campagne.](campaigns.md)|
 |Rapport sur l’état de la protection contre les menaces|Dans la quasi-ensemble des vues et des tableaux détaillés du rapport d’état de **la protection** contre les **menaces,** vous pouvez filtrer les résultats par compte de priorité. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)|
@@ -108,7 +108,7 @@ Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez
 
 ## <a name="train-users"></a>Former les utilisateurs
 
-La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et sont plus susceptibles d’éviter les sites web suspects.
+La formation des utilisateurs avec des comptes prioritaires peut aider à gagner beaucoup de temps et de frustration à ces utilisateurs et à votre équipe des opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et ils sont plus susceptibles d’éviter les sites web suspects.
 
 Le manuel de campagne de [cyber-sécurité](https://www.belfercenter.org/CyberPlaybook) de l’établissement d’un établissement scolaire de contrôle de la sécurité fournit d’excellents conseils pour établir une culture forte de sensibilisation à la sécurité au sein de votre organisation, notamment pour former les utilisateurs à l’identification des attaques par hameçonnage.
 

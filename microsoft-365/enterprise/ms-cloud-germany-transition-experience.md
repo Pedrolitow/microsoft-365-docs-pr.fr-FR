@@ -7,7 +7,7 @@ ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Comprendre ce qui a changé pour passer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centre de données allemande.'
-ms.openlocfilehash: 42ac9e61632305a9e75bf7ba9de2cec3e3d658fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6067f993703fce7655c3298b945765dd2f317d60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182128"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211632"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Ce qui va changer après la migration vers Office 365 services dans les nouvelles régions de centres de données allemandes
 
@@ -52,7 +52,7 @@ Ce qui ne change pas :
 
 Remarques à prendre en compte :
 
-- Pour les comptes de domaine géré, une fois la copie du client Azure Active Directory initial (Azure AD) terminée (qui est la première étape de la migration d’Azure AD vers le service Azure AD des services Office 365), les modifications de mot de passe, les modifications de réinitialisation de mot de passe en libre-service (SSPR) et les réinitialisations de mot de passe par les administrateurs doivent être réalisées à partir des portails de service Office 365. À ce stade, les demandes de mise à jour des mots de passe à partir du service Allemagne n’aboutront pas, car le client Azure AD a été migré vers Office 365 services. Les réinitialisations des mots de passe de domaine fédérés ne sont pas affectées, car elles sont effectuées dans l’annuaire local.
+- Pour les comptes de domaine géré, une fois la copie du client Azure Active Directory initial (Azure AD) terminée (qui est la première étape de la migration d’Azure AD vers le service Azure AD des services Office 365), les modifications de mot de passe, les modifications de réinitialisation de mot de passe en libre-service (SSPR) et les réinitialisations de mot de passe par les administrateurs doivent être réalisées à partir des portails de service Office 365. À ce stade, les demandes de mise à jour des mots de passe à partir du service Allemagne n’aboutront pas, car le client Azure AD a été migré vers Office 365 services. Les réinitialisations des mots de passe de domaine fédéré ne sont pas affectées, car elles sont effectuées dans l’annuaire local.
 
 - Les sign-ins Azure sont présentées dans le portail où l’utilisateur tente d’y accéder. Les journaux d’audit sont disponibles uniquement à partir du point Office 365 services après la transition. Avant la migration jusqu’à la fin de la migration, vous devez enregistrer les journaux de connexion et d’audit à partir du portail Microsoft Cloud Deutschland.
 
@@ -88,7 +88,7 @@ Office Les services en ligne sont accessibles via `office.de` avant et pendant l
 
 Le service (MRU) le plus récemment utilisé dans Office est un passage de Microsoft Cloud Deutschland à Office 365 services globaux, et non à une migration. Seuls les liens de la Office 365 services globaux sont visibles après la migration à partir du portail Office.com. Les liens de la base de données MRU provenant de Microsoft Cloud Deutschland ne sont pas visibles en tant que liaisons MRU dans Office 365 services globaux. Dans Office 365 services globaux, les liaisons de gestion des données sont accessibles uniquement une fois que la migration du client a atteint la phase 9.
 
-## <a name="exchange-online-protection"></a>Exchange Online Protection
+## <a name="exchange-online-protection"></a>Exchange Online Protection
 
 - Les fonctionnalités Exchange Online Protection (EOP) principales sont copiées dans une nouvelle région d’Allemagne.
 - Office 365 Les utilisateurs du Centre de sécurité et conformité doivent passer à l’utilisation d’URL globales, dans le cadre `https://protection.office.com` de la migration.

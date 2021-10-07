@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0eef71a7ab88d24c1f9d0b3ebdba16b13c855355
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1fdf430b0cb92115f6ed5b8fab81b69e57422cf4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164716"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213588"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -34,7 +34,7 @@ ms.locfileid: "59164716"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Le tableau du schéma de recherche avancée contient des informations sur la création et la modification des `DeviceRegistryEvents` entrées de [](advanced-hunting-overview.md) Registre. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
@@ -49,40 +49,40 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
-| `RegistryKey` | chaîne | Clé de Registre à l’application de l’action enregistrée |
-| `RegistryValueType` | chaîne | Type de données, tel que binaire ou chaîne, de la valeur de Registre à qui l’action enregistrée a été appliquée |
-| `RegistryValueName` | chaîne | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
-| `RegistryValueData` | chaîne | Données de la valeur de Registre à l’application de l’action enregistrée |
-| `PreviousRegistryKey` | chaîne | Clé de Registre d’origine de la valeur de Registre avant sa modification |
-| `PreviousRegistryValueName` | chaîne | Nom d’origine de la valeur de Registre avant sa modification |
-| `PreviousRegistryValueData` | chaîne | Données d’origine de la valeur de Registre avant sa modification |
-| `InitiatingProcessAccountDomain` | chaîne | Domaine du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountName` | chaîne | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | chaîne | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
-| `InitiatingProcessAccountObjectId` | chaîne | ID d’objet Azure AD du compte d’utilisateur qui a tenu le processus responsable de l’événement |
-| `InitiatingProcessSHA1` | chaîne | SHA-1 du processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessSHA256` | chaîne | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
+| `RegistryKey` | string | Clé de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryValueType` | string | Type de données, tel que binaire ou chaîne, de la valeur de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |
+| `PreviousRegistryKey` | string | Clé de Registre d’origine de la valeur de Registre avant sa modification |
+| `PreviousRegistryValueName` | string | Nom d’origine de la valeur de Registre avant sa modification |
+| `PreviousRegistryValueData` | string | Données d’origine de la valeur de Registre avant sa modification |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
+| `InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessFileName` | chaîne | Nom du processus à l’origine de l’événement |
+| `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |
 | `InitiatingProcessFileSize` | long | Taille du fichier qui a tenu le processus responsable de l’événement |
-| `InitiatingProcessVersionInfoCompanyName` | chaîne | Nom de la société à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoProductName` | chaîne | Nom du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
-|` InitiatingProcessVersionInfoProductVersion` | chaîne | Version du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
-|` InitiatingProcessVersionInfoInternalFileName` | chaîne | Nom de fichier interne à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoOriginalFileName` | chaîne | Nom de fichier d’origine à partir des informations de version du processus (fichier image) responsable de l’événement |
-| `InitiatingProcessVersionInfoFileDescription` | chaîne | Description à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoCompanyName` | string | Nom de la société à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoProductName` | string | Nom du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
+|` InitiatingProcessVersionInfoProductVersion` | string | Version du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
+|` InitiatingProcessVersionInfoInternalFileName` | string | Nom de fichier interne à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | Nom de fichier d’origine à partir des informations de version du processus (fichier image) responsable de l’événement |
+| `InitiatingProcessVersionInfoFileDescription` | string | Description à partir des informations de version du processus (fichier image) responsable de l’événement |
 | `InitiatingProcessId` | int | ID de processus (PID) du processus à l’origine de l’événement |
-| `InitiatingProcessCommandLine` | chaîne | Ligne de commande utilisée pour exécuter le processus à l’origine de l’événement |
+| `InitiatingProcessCommandLine` | string | Ligne de commande utilisée pour exécuter le processus à l’origine de l’événement |
 | `InitiatingProcessCreationTime` | DateHeure | Date et heure de début du processus à l’origine de l’événement |
-| `InitiatingProcessFolderPath` | chaîne | Dossier contenant le processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessFolderPath` | string | Dossier contenant le processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessParentId` | int | ID de processus (PID) du processus parent qui a généré le processus responsable de l’événement |
-| `InitiatingProcessParentFileName` | chaîne | Nom du processus parent qui a généré le processus responsable de l’événement |
+| `InitiatingProcessParentFileName` | string | Nom du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentCreationTime` | DateHeure | Date et heure de début du parent du processus responsable de l’événement |
-| `InitiatingProcessIntegrityLevel` | chaîne | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
-| `InitiatingProcessTokenElevation` | chaîne | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
+| `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
+| `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
-| `AppGuardContainerId` | chaîne | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
+| `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |
 
 ## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

@@ -1,22 +1,22 @@
 ---
 title: Valider les nouveaux appareils
-description: Avant de commander des appareils, obtenez l’un de chaque modèle et testez-le.
+description: Avant de commander des appareils, obtenez l’un de chaque modèle et testez-le
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1654998a69b364ebf399c2aabac185bc98fb9388
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e07b5fda65a457ab38cf5d2387bbec0aaa039248
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165185"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211380"
 ---
 # <a name="validate-new-devices"></a>Valider les nouveaux appareils
 
@@ -31,12 +31,12 @@ Que vous débutiez avec Microsoft Manged Desktop ou un abonné de longue durée,
     - [Service d’emplacement Windows 10](device-location.md)
     - [Prendre en main le contrôle d’application](get-started-app-control.md)
     - [Déployer les applications sur les appareils](deploy-apps.md)
-2. Vérifiez que les expériences suivantes fonctionnent sans échec, erreurs ou invites :
+2. Vérifiez que les expériences suivantes fonctionnent sans erreurs, erreurs ou invites :
     - Expérience Autopilot après avoir rejoint le réseau et l’utilisateur s’est
     - Si vous avez activé la [page](esp-first-run.md)État de l’inscription, cela fonctionne.
     - L’utilisateur peut se Office applications
     - OneDrive synchronisation des dossiers, notamment Windows Bureau, Documents et Images
-    - L’appareil reçoit les mises à jour, les stratégies et les applications métiers
+    - L’appareil reçoit les mises à jour, les stratégies et les applications métier
 3. Examinez les appareils signalés et la configuration matérielle requise dans le rapport [d’inventaire](../working-with-managed-desktop/device-inventory-report.md) des appareils pour vérifier qu’ils correspondent à ce que vous attendez.
 
 Si des problèmes se produisent, vous pouvez demander [de l’aide](../working-with-managed-desktop/admin-support.md) dans le portail d’administration.

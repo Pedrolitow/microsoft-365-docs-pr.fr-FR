@@ -7,7 +7,7 @@ ms.date: 10/2/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - SPO160
@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contient des liens vers d’autres articles qui vous expliquent comment améliorer les performances des temps de téléchargement de page pour SharePoint Online.
-ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4dc8ac31361261320fa806b18a0721951f0b2244
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179643"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211596"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimisation des performances SharePoint Online
 

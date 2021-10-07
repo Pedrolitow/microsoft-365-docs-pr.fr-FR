@@ -7,7 +7,7 @@ ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Le support prend fin Project Server 2010 se termine le 13 avril 2021. Utilisez cet article comme guide pour mettre à niveau vers Project Online ou une version plus récente de Project Server local.
-ms.openlocfilehash: 1c5b942e50a137c1ecc32f08c481811ef4edf779
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9d04df22af0a0614270907f4ad4026324b026211
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209191"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213324"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
@@ -114,7 +114,7 @@ Vous pouvez créer manuellement votre configuration de PWA dans Project Online (
 
 Ressources clés :
 
-|Resource|Description|
+|Ressource|Description|
 |---|---|
 |[Prenez en main Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11)|Comment configurer et utiliser les Project Online|
 |[Description du service Project Online](/office365/servicedescriptions/project-online-service-description/project-online-service-description)|Informations sur les différents plans Project Online disponibles|
@@ -223,7 +223,7 @@ Ressources clés :
 
 - [Microsoft Office Project de migration Portfolio Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841279)
 
-## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client Office 2010 et les serveurs et Windows 7
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour Office client et serveurs 2010 et Windows 7
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](../downloads/Office2010Windows7EndOfSupport.pdf).
 

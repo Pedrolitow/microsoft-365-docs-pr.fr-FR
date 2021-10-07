@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41d07ae2c6acc4bdbe828bc98d8bdfecdbf45f2e
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ce8c28a76ffc3348d5500f25820f4632ee862782
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401721"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211282"
 ---
 # <a name="configure-micro-focus-arcsight-to-pull-defender-for-endpoint-detections"></a>Configurer Micro Focus ArcSight pour tirer Defender pour les détections de points de terminaison
 
@@ -93,7 +93,7 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
 4. Une fois l’installation du connecteur principal terminée, la fenêtre d’installation du connecteur s’ouvre. Dans la fenêtre d’installation du connecteur, **sélectionnez Ajouter un connecteur.**
 
-5. Select Type: **ArcSight FlexConnector REST** and click **Next**.
+5. Sélectionnez Type : **ArcSight FlexConnector REST** et cliquez sur **Suivant**.
 
 6. Tapez les informations suivantes dans le formulaire de détails des paramètres. Toutes les autres valeurs du formulaire sont facultatives et peuvent être laissées vides.
 
@@ -103,7 +103,7 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
    |Champ|Valeur|
    |---|---|
-   |Fichier de configuration|Tapez le nom du fichier de propriétés client. Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée. <p> Par exemple, si le fichier de configuration dans le répertoire « flexagent » est nommé « WDATP-Connector.jsonparser.properties », vous devez taper « WDATP-Connector » comme nom du fichier de propriétés du client.|
+   |Fichier de configuration|Tapez le nom du fichier de propriétés du client. Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée. <p> Par exemple, si le fichier de configuration dans le répertoire « flexagent » est nommé « WDATP-Connector.jsonparser.properties », vous devez taper « WDATP-Connector » comme nom du fichier de propriétés du client.|
    |URL des événements|Selon l’emplacement de votre centre de données, sélectionnez l’UE, les États-Unis ou l’URL du Royaume-Uni : <ul><li>**Pour l’UE**:  `https://wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Pour les États-Unis**: `https://wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**Pour le Royaume-Uni**: `https://wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
    |Type d’authentification|OAuth 2|
    |Fichier de propriétés du client OAuth 2|Accédez à l’emplacement du *fichier wdatp-connector.properties.* Le nom doit correspondre au fichier fourni dans la .zip que vous avez téléchargée.|
@@ -124,7 +124,7 @@ Les étapes suivantes supposent que vous avez effectué toutes les étapes requi
 
 11. Tapez un nom pour le connecteur dans le formulaire de détails du connecteur. Toutes les autres valeurs du formulaire sont facultatives et peuvent être laissées vides. Cliquez sur **Suivant**.
 
-12. La fenêtre d’importation du certificat esM Manager s’affiche. Sélectionnez **Importer le certificat vers le connecteur à partir de la destination,** puis cliquez sur **Suivant.** La **fenêtre Résumé du connecteur d’ajout** s’affiche et le certificat est importé.
+12. La fenêtre d’importation du certificat esM Manager s’affiche. Sélectionnez **Importer le certificat vers le connecteur à partir de la destination,** puis cliquez sur **Suivant.** La **fenêtre Résumé du connecteur** d’ajout s’affiche et le certificat est importé.
 
 13. Vérifiez que les détails dans la fenêtre Résumé du **connecteur** d’ajout sont corrects, puis cliquez sur **Suivant**.
 
@@ -193,7 +193,7 @@ Les détections defender pour les points de terminaison apparaissent en tant qu�
 > [!NOTE]
 > Vérifiez que le connecteur est en cours d’exécution en arrêtant à nouveau le processus. Ensuite, démarrez à nouveau le connecteur et aucune fenêtre de navigateur ne doit s’apparaître.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Activer l’intégration SIEM dans Defender for Endpoint](enable-siem-integration.md)
 - [Tirer les détections vers vos outils SIEM](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)

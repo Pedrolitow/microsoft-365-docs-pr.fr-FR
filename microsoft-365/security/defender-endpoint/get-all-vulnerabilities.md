@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bce19d10c26bbd34874af32fe493dafdc63064d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c526f0980e6cba95475c0cdde2231fd8594dfe64
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203987"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212964"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 
@@ -44,10 +44,10 @@ ms.locfileid: "59203987"
 Récupère une liste de toutes les vulnérabilités.
 <br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 <br>Opérateurs pris en charge par OData :
-<br>```$filter``` on:  ```id``` , , , , , and ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
+<br>```$filter``` on:  ```id``` , , , , , , , and ```name``` ```description``` ```cvssV3``` ```publishedOn``` ```severity``` ```updatedOn``` properties.
 <br>```$top``` avec une valeur maximale de 10 000.
 <br>```$skip```.
-<br>Consultez des exemples [dans les requêtes OData avec Microsoft Defender pour point de terminaison.](exposed-apis-odata-samples.md)
+<br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## <a name="permissions"></a>Autorisations
 
@@ -68,7 +68,7 @@ GET /api/vulnerabilities
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03973595f68c56ac57f22d8d68c9f37f04fb6bb8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1bb51bf30aad8ab03d0ec2723df781034288b8c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202853"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212034"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprendre le rapport d’analyste dans l’analyse des menaces dans Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59202853"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
+> Voulez-vous faire l'expérience de Microsoft 365 Defender? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -51,13 +51,13 @@ Chaque section du rapport d’analyste est conçue pour fournir des informations
 
 | Section Rapport | Description |
 |--|--|
-| Résumé exécutif | Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur, de votre emplacement géographique et de votre réseau. |
+| Résumé exécutif | Vue d’ensemble de la menace, y compris la première fois qu’elle a été vue, ses motivations, les événements notables, les cibles principales et des outils et techniques distincts. Vous pouvez utiliser ces informations pour évaluer plus en détail comment hiérarchiser la menace dans le contexte de votre secteur d’activité, de votre emplacement géographique et de votre réseau. |
 | Analyse | Informations techniques sur les menaces, y compris les détails d’une attaque et la façon dont les attaquants peuvent utiliser une nouvelle technique ou une nouvelle surface d’attaque | 
 | Techniques MITRE ATT&CK observées | Comment les techniques observées sont m maprées à l’infrastructure d&[ATT MITRE](https://attack.mitre.org/) | 
 | [Atténuations](#apply-additional-mitigations) | Recommandations qui peuvent arrêter ou réduire l’impact de la menace. Cette section inclut également les atténuations qui ne sont pas suivis dynamiquement dans le cadre du rapport d’analyse des menaces. |
 | [Détails de la détection](#understand-how-each-threat-can-be-detected) | Détections spécifiques et génériques fournies par les solutions de sécurité Microsoft qui peuvent faire surface de l’activité ou des composants associés à la menace. | 
 | [Repérage avancé](#find-subtle-threat-artifacts-using-advanced-hunting) | [Requêtes de recherche avancées pour](advanced-hunting-overview.md) identifier de manière proactive l’activité potentielle de menace. La plupart des requêtes sont fournies pour compléter les détections, en particulier pour localiser des composants ou des comportements potentiellement malveillants qui n’ont pas pu être évalués dynamiquement comme malveillants. | 
-| Références | Publications Microsoft et tierces référencés par les analystes lors de la création du rapport. Le contenu de l’analyse des menaces est basé sur des données validées par des chercheurs Microsoft. Les informations provenant de sources tierces accessibles au public sont clairement identifiées en tant que telles. | 
+| References | Publications Microsoft et tierces référencés par les analystes lors de la création du rapport. Le contenu de l’analyse des menaces est basé sur des données validées par des chercheurs Microsoft. Les informations provenant de sources tierces accessibles au public sont clairement identifiées en tant que telles. | 
 | Journal des modifications | L’heure de publication du rapport et les modifications importantes apportées au rapport. |
 
 ## <a name="apply-additional-mitigations"></a>Appliquer des atténuations supplémentaires

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages et fichiers bon et mauvais à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dbf5a840da4474306b6140e16bdc01d24761eed
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 28c8aceff04adbb6b733b31262686a31825e1a8f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042805"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211848"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft Corporation
 

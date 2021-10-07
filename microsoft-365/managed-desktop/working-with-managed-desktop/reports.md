@@ -1,22 +1,22 @@
 ---
-title: Utiliser les rapports
+title: Travail sur des rapports
 description: Les différents rapports disponibles dans Microsoft Manged Desktop
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5bb575efa9c7e18f20025d7840d3ddc86aefb330
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 1fb29ef7555bb3e7ff2024090b3b7cf953a2de10
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444282"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213168"
 ---
-# <a name="work-with-reports"></a>Utiliser les rapports
+# <a name="work-with-reports"></a>Travail sur des rapports
 
 La console Microsoft Endpoint Manager regroupe les rapports de plusieurs produits dans un emplacement unique pour vous aider à surveiller et à examiner les problèmes de configuration et d’appareils de votre organisation Azure AD (« client »). Bureau géré Microsoft comprend une section dans le **menu** Rapports dans laquelle vous pouvez trouver des rapports spécifiques Microsoft Manged Desktop gestion des appareils que vous avez enregistrés. En outre, dans plusieurs emplacements dans Microsoft Endpoint Manager vous pouvez filtrer les rapports provenant d’autres groupes de produits afin d’inclure ou d’exclure spécifiquement vos appareils gérés par Microsoft Manged Desktop. 
 
@@ -32,7 +32,7 @@ Lorsque vous sélectionnez **l’onglet Rapports,** vous verrez des descriptions
 - Le rapport **d’utilisation des** applications fournit des informations sur l’utilisation classique des applications sur Microsoft Manged Desktop appareils. Pour que les appareils fournissent des données à ce rapport, ils doivent être définies sur le niveau de données de diagnostic facultatif.
 
 ## <a name="endpoint-analytics"></a>Analyse des points de terminaison
-Microsoft Manged Desktop est désormais intégré à [l’analyse des points de terminaison.](/mem/analytics/overview) Ces rapports vous donnent des informations sur la mesure du fonctionnement de votre organisation et de la qualité de l’expérience qu’ils offrent à vos utilisateurs. L’analyse des points de terminaison se trouve **dans le** menu Rapports [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Pour faire pivoter un score afin d’inclure uniquement les  appareils gérés par Microsoft Manged Desktop allez à n’importe quel rapport, sélectionnez le filtre de la baisse, puis sélectionnez **Microsoft Manged Desktop appareils.**
+Microsoft Manged Desktop est désormais intégré à [l’analyse des points de terminaison.](/mem/analytics/overview) Ces rapports vous donnent des informations sur la mesure du fonctionnement de votre organisation et de la qualité de l’expérience qu’elle offre à vos utilisateurs. L’analyse des points de terminaison se trouve **dans le** menu Rapports [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Pour faire pivoter un score afin d’inclure uniquement les  appareils gérés par Microsoft Manged Desktop allez à n’importe quel rapport, sélectionnez le filtre de la baisse, puis sélectionnez Microsoft Manged Desktop **appareils.**
 
 Si l’analyse des points de terminaison n’a pas été configurée automatiquement pour votre organisation Azure AD (« client ») lors de l’inscription, vous pouvez le faire vous-même. Pour plus d’informations, [voir Intégrer dans le portail d’analyse des points de terminaison.](/mem/analytics/enroll-intune#bkmk_onboard) Vous pouvez inscrire tous vos appareils ou, si vous souhaitez inclure  uniquement des appareils Microsoft Manged Desktop, sélectionnez les groupes d’appareils d’espace de travail modernes pour Test, Premier, Rapide et Large. Ces rapports peuvent nécessiter des autorisations différentes. Pour plus d’informations, [voir Autorisations](/mem/analytics/overview#permissions) pour vous assurer que des rôles sont correctement attribués.
 

@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: db48122ea5551fe3e9f8cd676785bbd3eef81d0b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2b68d9d36e52e84867bf6411f4e723e7551fa55b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211548"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
@@ -28,7 +28,7 @@ Vous pouvez interagir avec Microsoft Consulting Services (MCS) pour obtenir vos 
 Pour travailler avec l’empaquetage d’application MCS, **vous devez fournir les éléments ci-après**:
 
 - Fichiers du programme d’installation source (par exemple, setup.exe ou .msi).
-- Instructions d’installation spécifiant l’apparence de l’installation finale. Par exemple, doit-il y avoir un raccourci bureau vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, si c’est le cas, laquelle ? Pour plus d’informations, voir le modèle de demande [d’empaquetage d’application.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
+- Instructions d’installation, spécifiant des détails sur l’apparence de l’installation finale. Par exemple, doit-il y avoir un raccourci bureau vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, si c’est le cas, laquelle ? Pour plus d’informations, voir le modèle de demande [d’empaquetage d’application.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
 - Vous devez effectuer vos propres tests d’acceptation pour vérifier que l’application fonctionne comme vous le souhaitez dans votre environnement.
 
 **MCS s’occupe des actions ci-après :**

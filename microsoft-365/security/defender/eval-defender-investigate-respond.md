@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: fca3a6ff838006b070a902dd37ff1cf32110a7b0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a470516fc743333e90322ef0dbdee0623a1403d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180994"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212124"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote
 

@@ -15,16 +15,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 ms.custom: TopSMBIssues
-localization_priority: Priority
+ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4662b036ebc92f69e4cba1c1a7b6c8d8231a4b2c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f358f6c20e6c4643a7a6aeb0ae3aae2513aad34
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208611"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212031"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7cdf2aad5c57e2f25ff26d3e7eac3e2194f00c52
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: aae3ad6e57ff672e3c27041f4cd60298381dd17b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043070"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213648"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 

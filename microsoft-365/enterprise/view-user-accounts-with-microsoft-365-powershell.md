@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Découvrez comment afficher, lister ou afficher Microsoft 365 comptes d’utilisateur de différentes manières avec PowerShell.
-ms.openlocfilehash: b10b143b3608efa88eb27346b65fd4b80100020c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da1ae30f04ba2c5ee69047361113fe468938c4ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212760"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Afficher Microsoft 365 comptes d’utilisateurs avec PowerShell
 
@@ -94,7 +94,7 @@ Pour voir toutes les propriétés d’un compte d’utilisateur spécifique, uti
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Dans un autre exemple, exécutez la commande suivante pour vérifier l’état activé d’un compte d’utilisateur spécifique :
+Autre exemple : exécutez la commande suivante pour vérifier l’état activé d’un compte d’utilisateur spécifique :
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled

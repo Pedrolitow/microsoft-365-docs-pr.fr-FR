@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.author: deniseb
 author: denisebmsft
 ms.reviewer: dansimp
@@ -14,18 +14,18 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8d9a853309c03b635896dc124c86787ae07ddafe
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 952363dfa689ea20e1ca1fcd97da4a79cfa66062
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490176"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212993"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>Protéger les données de votre organisation avec le contrôle d’appareil
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Le contrôle d’appareil Microsoft Defender pour points de terminaison protège contre la perte de données en surveillant et en contrôlant l’utilisation des supports par les appareils de votre organisation, tels que l’utilisation de périphériques de stockage amovibles et de lecteurs USB.
+Le contrôle d’appareil Microsoft Defender for Endpoint protège contre la perte de données en surveillant et en contrôlant l’utilisation des supports par les appareils de votre organisation, tels que l’utilisation de périphériques de stockage amovibles et de lecteurs USB.
 
 Avec le rapport de contrôle d’appareil, vous pouvez afficher les événements liés à l’utilisation des médias, tels que :
 
@@ -44,7 +44,7 @@ Les événements d’audit sont les suivants :
 
 ## <a name="monitor-device-control-security"></a>Surveiller la sécurité des contrôles d’appareil
 
-Le contrôle d’appareil dans Microsoft Defender pour point de terminaison permet aux administrateurs de sécurité d’utiliser des outils qui leur permettent de suivre la sécurité des contrôles d’appareil de leur organisation via des rapports. Vous pouvez trouver le rapport de contrôle d’appareil dans le centre Microsoft 365 sécurité en allant dans **Rapports > Protection des appareils.**
+Le contrôle d’appareil dans Microsoft Defender pour point de terminaison permet aux administrateurs de sécurité d’utiliser des outils qui leur permettent de suivre la sécurité des contrôles d’appareil de leur organisation via des rapports. Vous pouvez trouver le rapport de contrôle d’appareil dans le centre Microsoft 365 sécurité en allant dans **Rapports > protection des appareils.**
 
 La carte de  protection des appareils du tableau de bord Rapports indique le nombre d’événements d’audit générés par type de média au cours des 180 derniers jours.
 
@@ -61,22 +61,22 @@ La page fournit un tableau de bord avec un nombre agrégé d’événements par 
 Lorsque vous sélectionnez un événement, un flyout s’affiche pour vous fournir plus d’informations :
 
 - **Détails généraux :** Date, mode Action et stratégie de cet événement.
-- **Informations multimédias :** Les informations multimédias incluent le nom du média, le nom de classe, le GUID de classe, l’ID de périphérique, l’ID du fournisseur, le volume, le numéro de série et le type de bus.
+- **Informations multimédias :** Les informations multimédias incluent le nom du média, le nom de la classe, le GUID de classe, l’ID de l’appareil, l’ID du fournisseur, le volume, le numéro de série et le type de bus.
 - **Détails de l’emplacement :** Nom de l’appareil et ID de l’appareil MDATP.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)
 
-Pour voir l’activité en temps réel de ce média au sein de l’organisation, sélectionnez le **bouton Ouvrir le chasse** avancé. Cela inclut une requête prédéfinie incorporée.
+Pour voir l’activité en temps réel de ce média au sein de l’organisation, sélectionnez le bouton de recherche **Open Advanced.** Cela inclut une requête prédéfinie incorporée.
 
 > [!div class="mx-imgBorder"]
 > ![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)
 
-Pour voir la sécurité de l’appareil, sélectionnez le bouton Ouvrir la **page** de l’appareil dans le volant. Ce bouton ouvre la page d’entité de l’appareil.
+Pour voir la sécurité de l’appareil, sélectionnez le bouton Ouvrir la page de **l’appareil** dans le volant. Ce bouton ouvre la page d’entité de l’appareil.
 
 > [!div class="mx-imgBorder"]
 > ![DeviceEntityPage](images/Devicesecuritypage.png)
 
-## <a name="reporting-delays"></a>Rapports de retards
+## <a name="reporting-delays"></a>Signalement des retards
 
 Le rapport de contrôle d’appareil peut avoir un délai de 12 heures entre le moment où une connexion multimédia se produit et le moment où l’événement est reflété dans la carte ou dans la liste des domaines.

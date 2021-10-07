@@ -2,26 +2,24 @@
 title: Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 description: Résoudre les problèmes qui peuvent survenir lors de l’intégration d’appareils ou au service Microsoft Defender for Endpoint.
 keywords: résoudre les problèmes d’intégration, les problèmes d’intégration, l’observateur d’événements, la collecte de données et les builds d’aperçu, les données de capteur et les diagnostics
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3fe7610d35114200a5bed515f82bb7a4453cf4fa
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 9c9d731fa8a1632ab6804ebed9fdb2594564eaf8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042974"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212424"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison
 
@@ -50,7 +48,7 @@ Le déploiement avec une stratégie de groupe s’exécute en exécutant le scri
 
 Si vous avez terminé le processus d’intégration [](investigate-machines.md) et que vous ne voyez pas les appareils dans la liste Appareils après une heure, vous pouvez vérifier la sortie du script sur les appareils. Pour plus d’informations, voir [Résoudre les problèmes d’intégration lors du déploiement avec un script.](#troubleshoot-onboarding-when-deploying-with-a-script)
 
-Si le script se termine correctement, consultez Résoudre les problèmes d’intégration sur les appareils pour les [erreurs](#troubleshoot-onboarding-issues-on-the-device) supplémentaires qui peuvent se produire.
+Si le script se termine correctement, consultez Résolution des problèmes d’intégration sur les appareils pour les [erreurs](#troubleshoot-onboarding-issues-on-the-device) supplémentaires qui peuvent se produire.
 
 ### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>Résoudre les problèmes d’intégration lors du déploiement avec Microsoft Endpoint Configuration Manager
 
@@ -89,7 +87,7 @@ Si le script échoue et que l’événement est une erreur, vous pouvez vérifie
 |:---:|---|---|
 |`5`|Des données de désintboarding ont été trouvées, mais n’ont pas pu être supprimées|Vérifier les autorisations sur le Registre, plus précisément <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.|
 |`10`|Les données d’intégration n’ont pas pu être écrites dans le Registre|Vérifier les autorisations sur le Registre, plus précisément <p> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`. <p> Vérifiez que le script a été exécuté en tant qu’administrateur.|
-|`15`|Échec du démarrage du service SENSE|Vérifiez l’état du service `sc query sense` (commande). Assurez-vous qu’il n’est pas dans un état intermédiaire ( '*Pending_Stopped '*, *' Pending_Running*' ) et essayez d’exécuter le script à nouveau (avec des droits d’administrateur). <p> Si l’appareil s’Windows 10, version 1607 et que la commande est en cours d’exécution, `sc query sense` `START_PENDING` redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, mettre à niveau vers KB4015217 et réessayer l’intégration.|
+|`15`|Échec du démarrage du service SENSE|Vérifiez l’état du service `sc query sense` (commande). Assurez-vous qu’il n’est pas dans un état intermédiaire ( «*Pending_Stopped*» , « *Pending_Running*» ) et essayez d’exécuter à nouveau le script (avec des droits d’administrateur). <p> Si l’appareil s’Windows 10, version 1607 et que la commande est en cours d’exécution, `sc query sense` `START_PENDING` redémarrez l’appareil. Si le redémarrage de l’appareil ne permet pas de résoudre le problème, mettre à niveau vers KB4015217 et réessayer l’intégration.|
 |`15`|Échec du démarrage du service SENSE|Si le message de l’erreur est le suivant : erreur système 577 ou erreur 1058 s’est produite, vous devez activer le pilote ELAM Antivirus Microsoft Defender, voir Vérifier que [Antivirus Microsoft Defender](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) n’est pas désactivé par une stratégie pour obtenir des instructions.|
 |`30`|Le script n’a pas réussi à attendre le démarrage de l’exécution du service|Le service a peut-être mis plus de temps à démarrer ou a rencontré des erreurs lors de la tentative de démarrage. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)|
 |`35`|Le script n’a pas trouvé la valeur de Registre d’état d’intégration nécessaire|Lorsque le service SENSE démarre pour la première fois, il écrit l’état d’intégration à l’emplacement du Registre <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> Le script n’a pas réussi à le trouver après plusieurs secondes. Vous pouvez le tester manuellement et vérifier s’il est là. Pour plus d’informations sur les événements et les erreurs liés à SENSE, voir Passer en revue les événements et les erreurs à l’aide de [l’Observateur d’événements.](event-error-codes.md)|
@@ -119,9 +117,9 @@ Si aucun des journaux des événements et des étapes de dépannage ne fonctionn
 
 |Code d’erreur hexadentographique|Code d’erreur déc|Description de l’erreur|OMA-URI|Cause possible et étapes de résolution des problèmes|
 |:---:|---|---|---|---|
-|0x87D1FDE8|-2016281112|Échec de la correction|Intégration <p> Offboarding|**Cause possible :** L’intégration ou la déboarding a échoué sur un blob erroné : signature erronée ou champs PreviousOrgIds manquants. <p> **Étapes de résolution des problèmes :** <p> Vérifiez les ID d’événement dans les erreurs d’intégration de l’agent d’affichage dans la section journal des [événements de l’appareil.](#view-agent-onboarding-errors-in-the-device-event-log) <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)la gestion des Windows 10 .|
+|0x87D1FDE8|-2016281112|Échec de la correction|Intégration <p> Offboarding|**Cause possible :** L’intégration ou la déboarding a échoué sur un blob erroné : signature erronée ou champs PreviousOrgIds manquants. <p> **Étapes de résolution des problèmes :** <p> Vérifiez les ID d’événement dans les erreurs d’intégration de l’agent d’affichage dans la section journal des [événements de l’appareil.](#view-agent-onboarding-errors-in-the-device-event-log) <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gestion des Windows .|
 ||||Intégration <p> Offboarding <p> SampleSharing|**Cause possible :** La clé de Registre microsoft Defender pour la stratégie de point de terminaison n’existe pas ou le client DM OMA n’est pas autorisé à y écrire. <p> **Étapes de résolution des problèmes :** Assurez-vous que la clé de Registre suivante existe : `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> S’il n’existe pas, ouvrez une commande avec élévation de élévation de niveaux et ajoutez la touche.|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**Cause possible :** Une tentative de correction par propriété en lecture seule. L’intégration a échoué. <p> **Étapes de résolution des problèmes :** Vérifiez les étapes de dépannage dans [Résoudre les problèmes d’intégration sur l’appareil.](#troubleshoot-onboarding-issues-on-the-device) <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)la gestion des Windows 10 .|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**Cause possible :** Une tentative de correction par propriété en lecture seule. L’intégration a échoué. <p> **Étapes de résolution des problèmes :** Vérifiez les étapes de dépannage dans [Résoudre les problèmes d’intégration sur l’appareil.](#troubleshoot-onboarding-issues-on-the-device) <p> Consultez les journaux des événements MDM dans le tableau suivant ou suivez les instructions dans Diagnostiquer les échecs [de](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)gestion des Windows .|
 ||||Tous|**Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique. <p> Plateformes actuellement prise en charge : <p> Enterprise, Éducation et Professional.<p> Le serveur n’est pas pris en charge.|
 |0x87D101A9|-2016345687|SyncML(425) : la commande demandée a échoué car l’expéditeur ne peut pas avoir les autorisations de contrôle d’accès (ACL) adéquates sur le destinataire.|Tous|**Cause possible :** Essayez de déployer Microsoft Defender pour le point de terminaison sur une plateforme/référence SKU non prise en charge, en particulier SKU holographique.<p> Plateformes actuellement prise en charge : <p> Enterprise, Éducation et Professional.|
 |
@@ -137,7 +135,7 @@ Le tableau suivant fournit des informations sur les problèmes de non-conformit�
 |Cas|Symptômes|Cause possible et étapes de résolution des problèmes|
 |:---:|---|---|
 |`1`|L’appareil est conforme à l’OMA-URI SenseIsRunning. Mais n’est pas conforme par les OMA-OMA-OMA OrgId, Onboarding et OnboardingState.|**Cause possible :** Vérifiez que l’utilisateur a réussi la OOBE après Windows’installation ou de mise à niveau. L’intégration OOBE n’a pas pu être effectuée, mais SENSE est déjà en cours d’exécution. <p> **Étapes de résolution des problèmes :** Attendez la fin de la OOBE.|
-|`2`|L’appareil est conforme aux OMA-URI OrgId, Onboarding et OnboardingState, mais n’est pas conforme par OMA-URI SenseIsRunning.|**Cause possible :** Le type de démarrage du service Sense est définie comme « Démarrage différé ». Parfois, le serveur Microsoft Intune signale l’appareil comme non conforme par SenseIsRunning lorsque la session DM se produit au démarrage du système. <p> **Étapes de résolution des problèmes :** Le problème doit être résolu automatiquement dans les 24 heures.|
+|`2`|L’appareil est conforme aux OMA-URI OrgId, Onboarding et OnboardingState, mais n’est pas conforme par OMA-URI SenseIsRunning.|**Cause possible :** Le type de démarrage du service Sense est « Démarrage différé ». Parfois, le serveur Microsoft Intune signale l’appareil comme non conforme par SenseIsRunning lorsque la session DM se produit au démarrage du système. <p> **Étapes de résolution des problèmes :** Le problème doit être résolu automatiquement dans les 24 heures.|
 |`3`|L’appareil n’est pas conforme|**Étapes de résolution des problèmes :** Assurez-vous que les stratégies d’intégration et de hors-intégration ne sont pas déployées sur le même appareil en même temps.|
 |
 
@@ -185,7 +183,7 @@ Si les outils de déploiement utilisés n’indiquent pas une erreur dans le pro
 
    ![Image du filtre du journal de l’Observateur d’événements.](images/filter-log.png)
 
-6. Les événements qui peuvent indiquer des problèmes s’affichent dans le **volet** opérationnel. Vous pouvez essayer de les résoudre en fonction des solutions du tableau suivant :
+6. Les événements qui peuvent indiquer des problèmes apparaissent dans le **volet** opérationnel. Vous pouvez essayer de les résoudre en fonction des solutions du tableau suivant :
 
    <br>
 
@@ -218,13 +216,13 @@ Il existe des composants supplémentaires sur l’appareil dont dépend l’agen
 
 ### <a name="ensure-the-diagnostic-data-service-is-enabled"></a>Vérifier que le service de données de diagnostic est activé
 
-Si les appareils ne sont pas correctement signalés, vous devrez peut-être vérifier que le service de données de diagnostic Windows 10 est automatiquement mis en service et qu’il est en cours d’exécution sur l’appareil. Le service a peut-être été désactivé par d’autres programmes ou modifications de configuration utilisateur.
+Si les appareils ne sont pas correctement signalés, vous devrez peut-être vérifier que le service de données de diagnostic Windows est automatiquement mis en service et qu’il est en cours d’exécution sur l’appareil. Le service a peut-être été désactivé par d’autres programmes ou modifications de configuration utilisateur.
 
 Tout d’abord, vous devez vérifier que le service est prêt à démarrer automatiquement au démarrage de Windows, puis vérifier que le service est en cours d’exécution (et le démarrer si ce n’est pas le cas).
 
 ### <a name="ensure-the-service-is-set-to-start"></a>S’assurer que le service est prêt à démarrer
 
-**Utilisez la ligne de commande pour vérifier le type** Windows 10 de démarrage du service de données de diagnostic :
+**Utilisez la ligne de commande pour vérifier le type** Windows de démarrage du service de données de diagnostic :
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
 
@@ -244,7 +242,7 @@ Tout d’abord, vous devez vérifier que le service est prêt à démarrer autom
 
    Si ce n’est pas le cas, vous devez définir le `START_TYPE` `AUTO_START` service pour démarrer automatiquement.
 
-**Utilisez la ligne de commande pour configurer Windows 10 service de données de diagnostic pour démarrer automatiquement :**
+**Utilisez la ligne de commande pour configurer Windows service de données de diagnostic pour démarrer automatiquement :**
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
 
@@ -285,7 +283,7 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
 ### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>S’assurer que Antivirus Microsoft Defender n’est pas désactivé par une stratégie
 
 > [!IMPORTANT]
-> L’exemple suivant s’applique uniquement aux appareils qui n’ont pas encore reçu la mise à jour d’août 2020 (version 4.18.2007.8) Antivirus Microsoft Defender. 
+> Les informations suivantes s’appliquent uniquement aux appareils qui n’ont pas encore reçu la mise à jour d’août 2020 (version 4.18.2007.8) Antivirus Microsoft Defender. 
 >
 > La mise à jour garantit que les Antivirus Microsoft Defender ne peuvent pas être désactivés sur les appareils clients via la stratégie système.
 
@@ -325,7 +323,7 @@ Si la vérification échoue et que votre environnement utilise un proxy pour se 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>Résoudre les problèmes d’intégration sur un serveur
 
 > [!NOTE]
-> Les conseils de dépannage suivants s’appliquent uniquement aux Windows Server 2016 et inférieures.
+> Les conseils de dépannage suivants s’appliquent uniquement aux Windows Server 2016 et les plus faibles.
 
 Si vous rencontrez des problèmes lors de l’intégration d’un serveur, vous devez suivre les étapes de vérification suivantes pour résoudre les problèmes possibles.
 
@@ -362,7 +360,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 - Dans ce scénario, le service SENSE ne démarre pas automatiquement même si le package d’intégration a été déployé
 
 > [!NOTE]
-> Il n’est plus nécessaire que le service SENSE démarre sur les versions Windows suivantes ou plus récentes : Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 avec le déploiement de mise à jour du [22 avril 2021.](https://support.microsoft.com/kb/5001384) Windows 10, version 1909 avec le rollup de mise à jour [d’avril 2021](https://support.microsoft.com/kb/5001396). Windows 10, version 2004/20H2 avec le rollup de mise à jour [du 28 avril 2021](https://support.microsoft.com/kb/5001391). 
+> Il n’est plus nécessaire que le service SENSE démarre sur les versions Windows suivantes ou plus récentes : Windows 10, version 1809 ou Windows Server 2019 ou Windows Server 2022 avec le rollup de mise à jour du [22 avril 2021.](https://support.microsoft.com/kb/5001384) Windows 10, version 1909 avec le rollup de mise à jour [d’avril 2021](https://support.microsoft.com/kb/5001396). Windows 10, version 2004/20H2 avec le rollup de mise à jour [du 28 avril 2021](https://support.microsoft.com/kb/5001391). 
 
 
 > [!NOTE]
@@ -376,7 +374,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration2.](images/mecm-2.png)
 
-3. Spécifiez des informations sur l’application, puis sélectionnez **Suivant.**
+3. Spécifiez des informations sur l’application, puis sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration3.](images/mecm-3.png)
 
@@ -400,7 +398,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration8.](images/mecm-8.png)
 
-9. Dans **la méthode Detection,** **sélectionnez Configurer des règles pour détecter** la présence de ce type de déploiement, puis **sélectionnez Ajouter une clause**.
+9. Dans **la méthode Détection,** **sélectionnez Configurer des règles pour détecter** la présence de ce type de déploiement, puis **sélectionnez Ajouter une clause**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration9.](images/mecm-9.png)
 
@@ -416,7 +414,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration12.](images/mecm-12.png)
 
-13. In **Requirements**, select **Next**.
+13. Dans **Les conditions requises,** **sélectionnez Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration13.](images/mecm-13.png)
 
@@ -424,7 +422,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration14.](images/mecm-14.png)
 
-15. En **résumé,** sélectionnez **Suivant.**
+15. En **résumé,** sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration15.](images/mecm-15.png)
 
@@ -436,7 +434,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration17.](images/mecm-17.png)
 
-18. En **résumé,** sélectionnez **Suivant.**
+18. En **résumé,** sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration18.](images/mecm-18.png)
 
@@ -474,7 +472,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration27.](images/mecm-27.png)
 
-27. En **résumé,** sélectionnez **Suivant.**
+27. En **résumé,** sélectionnez **Suivant**.
 
     ![Image de Microsoft Endpoint Configuration Manager configuration28.](images/mecm-28.png)
 
@@ -484,7 +482,7 @@ Les étapes ci-dessous fournissent des conseils pour le scénario suivant :
 
     ![Image de Microsoft Endpoint Configuration Manager configuration30.](images/mecm-30.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-mdatp.md)
 - [Intégration des appareils](onboard-configure.md)

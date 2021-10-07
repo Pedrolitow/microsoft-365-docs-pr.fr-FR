@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d87efcd940fd9e19c9f28250f85e0f7915febc05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8206592585544b2a4ef1d3a8acf2d9a27247b92f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177587"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212520"
 ---
 # <a name="get-user-related-machines-api"></a>API Obtenir les ordinateurs liés à l’utilisateur
 
@@ -82,7 +82,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si l’utilisateur existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si l’utilisateur n’existe pas - 200 OK avec un jeu vide.
+En cas de réussite et si l’utilisateur existe : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si l’utilisateur n’existe pas : 200 - OK avec un ensemble vide.
 
 ## <a name="example"></a>Exemple
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment modifier et supprimer des entrées dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2d5ce65836accd94dec497e5be0087a94742ca0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2662ac41e5df5cf2eb36413d8a58568ff336841
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183007"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212004"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modifier et supprimer des entrées dans la liste verte/rouge du client
 
@@ -79,7 +79,7 @@ Vous pouvez utiliser le portail Microsoft 365 Defender ou PowerShell pour modifi
 
 ## <a name="use-powershell"></a>Utiliser PowerShell
 
-### <a name="modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Modifier les entrées de fichier et d’URL bloqués dans la liste d’adresses client
+### <a name="modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Modifier les entrées de blocage de fichiers et d’URL dans la liste d’adresses client autoriser/bloquer
 
 Pour modifier les entrées d’expéditeur, de fichier et d’URL de blocage dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 
@@ -111,7 +111,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-### <a name="modify-allow-or-block-spoofed-sender-entries"></a>Modifier les entrées d’expéditeur usurpées ou d’autoriser ou bloquer
+### <a name="modify-allow-or-block-spoofed-sender-entries"></a>Modifier les entrées d’expéditeurs usurpées ou d’autoriser ou bloquer
 
 Pour modifier les entrées d’expéditeurs usurpées dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9b90cd953499733aa2afe30c7407a4527d5cd1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3eea8d2f0a33dfaa49b4020285d9a7362a2e253c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181949"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213660"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Ressources Utiles de Microsoft Defender pour les points de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "59181949"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Accédez à des ressources utiles telles que des liens vers des blogs et d’autres ressources liées à Microsoft Defender for Endpoint.
+Accédez à des ressources utiles, telles que des liens vers des blogs et d’autres ressources relatives à Microsoft Defender for Endpoint.
 
 ## <a name="endpoint-protection-platform"></a>Plateforme de protection des points de terminaison
 - [Meilleurs résultats dans les tests du secteur](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)

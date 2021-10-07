@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 97db42060d694168edbd6ed7e86c67706bf62ddb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208859"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212256"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,7 +37,7 @@ ms.locfileid: "59208859"
 
 La fonction est une fonction d’enrichissement dans le recherche avancée qui ajoute les données suivantes `FileProfile()` aux fichiers trouvés par la requête. [](advanced-hunting-overview.md)
 
-| Colonne | Type de données | Description |
+| Column | Type de données | Description |
 |------------|---------------|-------------|
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `SHA256` | string | SHA-256 du fichier à qui l’action enregistrée a été appliquée |
@@ -50,9 +50,9 @@ La fonction est une fonction d’enrichissement dans le recherche avancée qui a
 | `Issuer` | string | Informations sur l’autorité de certification émettrice |
 | `SignerHash` | string | Valeur de hachage unique identifiant le signataire |
 | `IsCertificateValid` | booléen | Si le certificat utilisé pour signer le fichier est valide |
-| `IsRootSignerMicrosoft` | booléen | Indique si le signataire du certificat racine est Microsoft |
+| `IsRootSignerMicrosoft` | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
 | `SignatureState` | string | État de la signature du fichier : SignedValid - le fichier est signé avec une signature valide, SignedInvalid - le fichier est signé mais le certificat n’est pas valide, Non signé - le fichier n’est pas signé, Inconnu - les informations sur le fichier ne peuvent pas être récupérées
-| `IsExecutable` | valeur booléenne | Si le fichier est un fichier PE (Portable Executable) |
+| `IsExecutable` | valeur booléenne | Si le fichier est un fichier Exécutable portable (PE) |
 | `ThreatName` | string | Nom de détection des programmes malveillants ou autres menaces détectés |
 | `Publisher` | string | Nom de l’organisation qui a publié le fichier |
 | `SoftwareName` | string | Nom du produit logiciel |
@@ -72,7 +72,7 @@ invoke FileProfile(x,y)
 >[!TIP]
 > Les fonctions d’enrichissement afficheront des informations supplémentaires uniquement lorsqu’elles sont disponibles. La disponibilité des informations varie et dépend d’un grand nombre de facteurs. Veillez à prendre cela en compte lors de l’utilisation de FileProfile() dans vos requêtes ou lors de la création de détections personnalisées. Pour obtenir de meilleurs résultats, nous vous recommandons d’utiliser la fonction FileProfile() avec SHA1.
 
-## <a name="examples"></a>範例
+## <a name="examples"></a>Exemples
 
 ### <a name="project-only-the-sha1-column-and-enrich-it"></a>Project uniquement la colonne SHA1 et l’enrichir
 

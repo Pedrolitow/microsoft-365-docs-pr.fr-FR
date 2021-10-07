@@ -3,26 +3,24 @@ title: Gérer des indicateurs
 ms.reviewer: ''
 description: Gérer les indicateurs pour un hachage de fichier, une adresse IP, des URL ou des domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7463ea7cd8a6d458e467ab213560be7d0f16a394
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 69f96b4393a25e57fcbfd2e9adfbd652a5aa191d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204843"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211117"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
@@ -50,7 +48,7 @@ Téléchargez l’exemple CSV pour connaître les attributs de colonne pris en c
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
-2. Sélectionnez l’onglet du type d’entité dont vous souhaitez importer des indicateurs.
+2. Sélectionnez l’onglet du type d’entité pour qui vous souhaitez importer des indicateurs.
 
 3. Sélectionnez **Importer** \> **un fichier .**
 
@@ -63,7 +61,7 @@ Le tableau suivant indique les paramètres pris en charge.
 Paramètre|Type|Description
 :---|:---|:---
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
-indicatorValue|String|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
+indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
 title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
 description|String| Description de l’indicateur. **Obligatoire**

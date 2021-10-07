@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-lsaldanha
 author: lovina-saldanha
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 23a1c49ac7b0e8a12fa8d473f880981a1daa7955
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec6333317297ee83ba4e5869fd92ceea62f2a971
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202866"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212148"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>Configurer votre version d Microsoft 365 Defender d’essai dans un environnement de laboratoire 
 
@@ -48,7 +48,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 
    ![Image of_Office page de configuration de l’inscription de la version d’essai 365 E5.](../../media/mtp-eval-10.png)
 
-3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de société, taille de la société et pays ou région.  
+3. Remplissez votre prénom, nom, numéro de téléphone d’entreprise, nom de la société, taille de la société et pays ou région.  
 
    ![Image of_Office page de configuration de l’enregistrement de la version d’essai 365 E5 demandant le nom, le téléphone et les détails de la société.](../../media/mtp-eval-11.png)
    
@@ -69,11 +69,11 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 
 7. Cliquez **sur Passer au programme d’installation** pour terminer Office 365 E5 mise en service du client d’essai.
 
-   ![Image de la page Office 365 E5 de configuration de l’enregistrement de la version d’essai, qui vous invite à cliquer sur le bouton Aller au programme d’installation.](../../media/mtp-eval-15.png)
+   ![Image de la page Office 365 E5 d’inscription de la version d’essai, qui vous invite à cliquer sur le bouton Aller au programme d’installation.](../../media/mtp-eval-15.png)
 
 8. Connecter votre domaine d’entreprise au Office 365 client. [Facultatif] Choisissez **Connecter domaine que vous possédez déjà** et tapez votre nom de domaine. Cliquez sur **Suivant**.
 
-   ![Image of_Office 365 E5 setup page where you should personalize your sign-in and email.](../../media/mtp-eval-16.png)
+   ![Image of_Office page d’installation 365 E5 dans laquelle vous devez personnaliser votre connectez-vous et votre courrier électronique.](../../media/mtp-eval-16.png)
  
 9. Ajoutez un enregistrement TXT ou MX pour valider la propriété du domaine. Une fois que vous avez ajouté l’enregistrement TXT ou MX à votre domaine, sélectionnez **Vérifier**.
 
@@ -95,7 +95,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 
     ![Image of_Office 365 E5 dans laquelle vous pouvez choisir vos services en ligne.](../../media/mtp-eval-21.png)
 
-14. Ajoutez des enregistrements MX, CNAME et TXT à votre domaine. Lorsque vous avez terminé, sélectionnez **Vérifier**.
+14. Ajoutez des enregistrements MX, CNAME et TXT à votre domaine. Lorsque vous avez terminé, **sélectionnez Vérifier**.
 
     ![Image of_Office 365 E5 ici, vous pouvez ajouter vos enregistrements DNS.](../../media/mtp-eval-22.png)
  
@@ -106,7 +106,7 @@ Cette rubrique vous guide pour configurer un environnement de laboratoire dédi�
 ## <a name="enable-microsoft-365-trial-subscription"></a>Activer l Microsoft 365 d’essai
 
 >[!NOTE]
->L’inscription à une version d’essai vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, voir Essayer ou acheter un abonnement [M365.](../../commerce/try-or-buy-microsoft-365.md)
+>L’inscription à une version d’essai vous donne 25 licences utilisateur à utiliser pendant un mois. Pour plus d’informations, voir Essayer ou acheter [un abonnement M365.](../../commerce/try-or-buy-microsoft-365.md)
 
 1. À [partir Administration Microsoft 365, cliquez](https://admin.microsoft.com/)sur **Facturation,** puis accédez à Acheter des **services.**
 

@@ -1,5 +1,5 @@
 ---
-title: Liste des appareils par recommandation
+title: Lister les appareils par recommandation
 description: Extrait la liste des appareils associés à la recommandation de sécurité.
 keywords: api, api de graphique, api pris en charge, obtenir, recommandation de sécurité pour les appareils vulnérables, Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
 search.product: eADQiWindows 10XVcnh
@@ -9,21 +9,21 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4cd11665983127a920c162cb6e945b0e45d2d077
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 656c1ec0c9f7f9b02f831d9d1b5d61b55d5dd355
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209480"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212908"
 ---
-# <a name="list-devices-by-recommendation"></a>Liste des appareils par recommandation
+# <a name="list-devices-by-recommendation"></a>Lister les appareils par recommandation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -58,7 +58,7 @@ GET /api/recommendations/{id}/machineReferences
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

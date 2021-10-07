@@ -11,22 +11,22 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: Découvrez le centre de rubriques dans Sujets Microsoft Viva.
-ms.openlocfilehash: 5456ef27b23ff36cd1919274424c179f8ec3d683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 928152a2b11b2bb25d0e70f12e39277400c9a4e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207555"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213252"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Vue d’ensemble du centre de rubriques dans Sujets Microsoft Viva
 
-Dans Sujets Microsoft Viva, le centre de rubriques est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la [configuration de Topics](set-up-topic-experiences.md) dans le Centre d'administration Microsoft 365.
+Dans Sujets Microsoft Viva, le centre de rubriques est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la configuration [de Topics](set-up-topic-experiences.md) dans le Centre d'administration Microsoft 365.
 
 Le centre de rubriques possède une page d’accueil par défaut avec le volet Web Rubriques dans laquelle tous les **utilisateurs** sous licence peuvent voir les rubriques à laquelle ils ont une connexion.
 
-Bien que tous les utilisateurs sous licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques.
+Bien que tous les utilisateurs titulaires d’une licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques.
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
@@ -52,7 +52,7 @@ Le centre de rubriques est créé lors de la configuration de Topics. Une fois l
 
 Dans la page d’accueil du centre de rubriques, vous pouvez voir les rubriques de votre organisation avec lesquelles vous êtes en relation.
 
-- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. L’avons-nous fait ?** Voici des rubriques dans lesquelles votre connexion à la rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être l’auteur d’un fichier ou d’un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
+- Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. L’avons-nous fait ?** Voici des rubriques dans lesquelles votre connexion à cette rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être l’auteur d’un fichier ou d’un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
 
    ![Connexions suggérées.](../media/knowledge-management/my-topics.png)
 
@@ -66,7 +66,7 @@ Une fois qu’un utilisateur a confirmé sa connexion à une rubrique, il peut a
 
 Pour travailler sur la page Gérer les rubriques du centre de **rubriques,** vous devez avoir les autorisations Gérer les rubriques requises pour le rôle de gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de l’installation de [Topics,](set-up-topic-experiences.md)ou les nouveaux utilisateurs peuvent être [ajoutés](topic-experiences-knowledge-rules.md) par la suite par un administrateur via le Centre d'administration Microsoft 365.
 
-Dans la page **Gérer les rubriques,** le tableau de bord de rubrique affiche toutes les rubriques, à qui vous avez accès, qui ont été identifiées à partir de vos emplacements source spécifiés. Chaque rubrique affiche la date à laquelle la rubrique a été découverte. Un utilisateur qui a reçu les autorisations Gérer les rubriques peut passer en revue les rubriques non confirmées et choisir d’utiliser :
+Dans la page **Gérer les rubriques,** le tableau de bord de rubrique affiche toutes les rubriques, à qui vous avez accès, qui ont été identifiées à partir de vos emplacements source spécifiés. Chaque rubrique affiche la date à laquelle la rubrique a été découverte. Un utilisateur qui s’est vu attribuer des autorisations Gérer les rubriques peut passer en revue les rubriques non confirmées et choisir :
 
 - Confirmez la rubrique : indique aux utilisateurs qu’une rubrique suggérée par l’IA a été validée par un organisateur humain.
 

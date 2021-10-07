@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fd4e983f344d4f6193d43ca3103bd2af3548fb75
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 9089a14e274df2d75c9c3960c0dd111b36f5cde4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356788"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212491"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 

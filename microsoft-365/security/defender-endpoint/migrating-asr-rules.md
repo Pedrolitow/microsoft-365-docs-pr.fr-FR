@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
 ms.author: v-lsaldanha
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a0885f40fdec9520683ff8083f2ca778213e3e3
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: ec28153c25b6c9108a62ea7d3c63336d4ff1ddb7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210912"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles asr
 
@@ -44,7 +44,7 @@ Cet article vous aide à ma map point de terminaison des règles communes à Mic
 - **Opération**: modifications du Registre
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Règles de réduction de la surface d’attaque**: les règles de réduction de la surface d’attaque bloquent les techniques d’attaque et non les indicateurs de compromis (IOC). Le blocage d’une extension de fichier spécifique n’est pas toujours utile, car cela n’empêche pas un appareil d’être compromis. Elle ne déjoue que partiellement une attaque jusqu’à ce que les attaquants créent un nouveau type d’extension pour la charge utile.
-- **Autres fonctionnalités recommandées**: l’antivirus Microsoft Defender activé, ainsi que l’analyse du comportement et de la protection cloud sont vivement recommandés. Nous vous recommandons d’utiliser une prévention supplémentaire, telle que la règle asr « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, plusieurs de ces clés de Registre sont surveillées par Microsoft Defender pour le point de terminaison, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. En outre, les clés de Registre utilisées nécessitent un minimum de privilèges d’administrateur local ou de programme d’installation approuvé qui peuvent être modifiés. L’utilisation d’un environnement verrouillé, avec des comptes ou des droits d’administration minimaux, est recommandée. D’autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
+- **Autres fonctionnalités recommandées**: l’antivirus Microsoft Defender activé, ainsi que l’analyse du comportement et de la protection cloud sont vivement recommandés. Nous vous recommandons d’utiliser une prévention supplémentaire, telle que la règle asr « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, plusieurs de ces clés de Registre sont surveillées par Microsoft Defender pour endpoint, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. En outre, les clés de Registre utilisées nécessitent un minimum de privilèges d’administrateur local ou de programme d’installation approuvé qui peuvent être modifiés. L’utilisation d’un environnement verrouillé, avec des comptes ou des droits d’administration minimaux, est recommandée. D’autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
 
 ### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Empêcher l’exécution de programmes nontrus à partir de lecteurs amovibles
 
@@ -62,7 +62,7 @@ Cet article vous aide à ma map point de terminaison des règles communes à Mic
 - **Operation**- Process Execution
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services**- powershell.exe, cmd.exe, regsvr32.exe
 - **Règles de réduction de** la surface d’attaque : les règles de réduction de la surface d’attaque ne contiennent aucune règle spécifique pour empêcher les processus enfants de « mshta.exe ». Ce contrôle est dans le cadre des missions d’Exploit Protection Windows Defender Application Control.
-- **Autres fonctionnalités recommandées**: activez Windows Defender contrôle d’application pour empêcher mshta.exe'exécution. Si votre organisation nécessite des mshta.exe pour les applications métier, configurez une règle Windows Defender Exploit Protection spécifique, afin d’empêcher mshta.exe de lancer des processus enfants.
+- **Autres fonctionnalités recommandées**: activez Windows Defender contrôle d’application pour empêcher mshta.exe'exécution. Si votre organisation a besoin de « mshta.exe » pour les applications métier, configurez une règle Windows Defender Exploit Protection spécifique, afin d’empêcher mshta.exe de lancer des processus enfants.
 
 ### <a name="block-outlook-from-launching-child-processes"></a>Empêcher les Outlook lancement de processus enfants
 
@@ -97,7 +97,7 @@ Cet article vous aide à ma map point de terminaison des règles communes à Mic
 - **Opération**- Lecture de fichier
 - Exemples de **fichiers/dossiers, clés/valeurs de Registre, processus, services**- C:\Users *\AppData**.js, C:\Users*\Downloads**.js
 - **Règles de** réduction de la surface d’attaque : en raison de problèmes de fiabilité et de performances, les règles de réduction de la surface d’attaque n’ont pas la possibilité d’empêcher un processus spécifique de lire un certain type de fichier de script. Nous avons une règle pour empêcher les vecteurs d’attaque qui peuvent provenir de ces scénarios. Le nom de la règle est « Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé » (GUID " d3e037e1-3eb8-44c8-a917-5792794759 « Bloquer l’exécution de scripts potentiellement obscurcis » (GUID « 5beb7efe-fd9a-4556-801d-275e5ffc04cc »).
-- Autres fonctionnalités recommandées : bien qu’il existe des règles asr spécifiques qui atténuent certains vecteurs d’attaque dans ces scénarios, il est important de mentionner que l’Antivirus est en mesure par défaut d’inspecter les scripts (PowerShell, hôte de script Windows, JavaScript, VBScript, et bien plus encore) en temps réel, via l’interface AMSI (Antimalware Scan Interface). Plus d’informations sont disponibles ici : Interface d’analyse [anti-programme malveillant (AMSI).](/windows/win32/amsi/antimalware-scan-interface-portal)
+- Autres fonctionnalités recommandées : bien qu’il existe des règles asr spécifiques qui atténuent certains vecteurs d’attaque dans ces scénarios, il est important de mentionner que l’Antivirus peut par défaut inspecter les scripts (PowerShell, Windows Script Host, JavaScript, VBScript, et bien plus encore) en temps réel, via l’interface AMSI (Antimalware Scan Interface). Plus d’informations sont disponibles ici : Interface d’analyse [anti-programme malveillant (AMSI).](/windows/win32/amsi/antimalware-scan-interface-portal)
 
 ### <a name="block-launch-of-child-processes"></a>Bloquer le lancement des processus enfants
 

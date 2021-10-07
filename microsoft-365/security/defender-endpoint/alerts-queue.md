@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: bf92c1764ed2b81b1f4409efc2e7bc7fae94185d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf035e6799a70bc0fa81328ce85e97bfed1a08b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179404"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211320"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison
 
@@ -59,7 +59,7 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des alertes et 
 Gravité de l’alerte|Description
 ---|---
 Élevé <br> (Rouge)|Alertes couramment associées à des menaces avancées persistantes (APT). Ces alertes indiquent un risque élevé en raison de la gravité des dommages qu’elles peuvent causer sur les appareils. Voici quelques exemples : activités des outils de vol d’informations d’identification, activités de ransomware non associées à un groupe, falsification des capteurs de sécurité ou toute activité malveillante indiquant un adversaire humain.
-Moyen <br> (Orange)|Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
+Moyenne <br> (Orange)|Alertes provenant protection évolutive des points de terminaison comportements post-violation susceptibles de faire partie d’une menace persistante avancée. Cela inclut les comportements observés typiques des phases d’attaque, la modification anormale du Registre, l’exécution de fichiers suspects, etc. Bien que certaines d’entre elles font partie de tests de sécurité internes, elles nécessitent une enquête, car elles peuvent également faire partie d’une attaque avancée.
 Faible <br> (Jaune)|Alertes sur les menaces associées à des programmes malveillants répandus. Par exemple, les outils de piratage, les outils de piratage non malveillants, tels que l’exécution de commandes d’exploration, l’effacement des journaux, etc., qui n’indiquent souvent pas de menace avancée ciblant l’organisation. Elle peut également être le fait d’un outil de sécurité isolé testé par un utilisateur de votre organisation.
 Informatif <br> (Gris)|Alertes qui peuvent ne pas être considérées comme dangereuses pour le réseau, mais qui peuvent sensibiliser l’organisation à des problèmes de sécurité potentiels.
 
@@ -76,7 +76,7 @@ Par exemple :
 - La gravité d’une alerte Defender pour point de terminaison concernant une menace détectée par Antivirus Microsoft Defender qui a été complètement évitée et qui n’a pas infecté l’appareil est classée comme « Informationnelle » car il n’y a eu aucun dommage réel.
 - Une alerte concernant un programme malveillant commercial a été détectée lors de l’exécution, mais bloquée et corrigé par Microsoft Defender AV, est classée comme « Faible », car elle a peut-être endommagé l’appareil, mais ne pose aucune menace pour l’organisation.
 - Une alerte concernant les programmes malveillants détectés lors de l’exécution, qui peuvent représenter une menace non seulement pour l’appareil individuel, mais aussi pour l’organisation, même si elle a été finalement bloquée, peut être classée comme « Moyenne » ou « Élevée ».
-- Les alertes comportementales suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
+- Les alertes de comportement suspectes, qui n’ont pas été bloquées ou corrigés, seront classées « Faible », « Moyenne » ou « Élevée » en fonction des mêmes considérations sur les menaces organisationnelles.
 
 #### <a name="understanding-alert-categories"></a>Comprendre les catégories d’alertes
 
@@ -90,7 +90,7 @@ Le tableau ci-dessous répertorie les catégories actuelles et la façon dont el
 |Commande et contrôle|CommandAndControl|Connexion à une infrastructure réseau contrôlée par des personnes malveillantes pour relayer des données ou recevoir des commandes.|
 |Accès aux informations d’identification|CredentialAccess|Obtention d’informations d’identification valides pour étendre le contrôle sur les appareils et les autres ressources du réseau.|
 |Défense|DefenseEvasion|Pour éviter les contrôles de sécurité, par exemple en désélant les applications de sécurité, en supprimant des contrôles de sécurité et en exécutant des rootkits.|
-|Discovery|Discovery|Collecte d’informations sur les appareils et les ressources importants, tels que les ordinateurs d’administrateur, les contrôleurs de domaine et les serveurs de fichiers.|
+|Découverte|Découverte|Collecte d’informations sur les appareils et les ressources importants, tels que les ordinateurs d’administrateur, les contrôleurs de domaine et les serveurs de fichiers.|
 |Exécution|Exécution|Lancement d’outils malveillants et de code malveillant, y compris les fichiers d’accès à la base de données et les backdoors.|
 |Exfiltration|Exfiltration|Extraction de données du réseau vers un emplacement externe contrôlé par l’attaquant.|
 |Exploit|Exploit|Exploitez le code et l’activité d’exploitation possible.|
@@ -101,7 +101,7 @@ Le tableau ci-dessous répertorie les catégories actuelles et la façon dont el
 |Escalade de privilèges|PrivilegeEscalation|Obtenir des niveaux d’autorisation supérieurs pour le code en l’exécutant dans le contexte d’un processus ou d’un compte privilégié.|
 |Ransomware|Ransomware|Programme malveillant qui chiffre les fichiers et le paiement par extorts pour restaurer l’accès.|
 |Activité suspecte|SuspiciousActivity|Activité non normale qui peut être une activité de programmes malveillants ou une partie d’une attaque.|
-|Logiciels indésirables|UnwantedSoftware|Applications de faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; détecté comme applications potentiellement indésirables (PUA).|
+|Logiciels indésirables|UnwantedSoftware|Applications de faible réputation et applications qui ont une incidence sur la productivité et l’expérience utilisateur ; comme applications potentiellement indésirables (PUA).|
 
 ### <a name="status"></a>Statut
 

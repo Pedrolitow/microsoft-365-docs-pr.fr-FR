@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à activer Coffre pièces joi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a1020193a49dd7b4871b9b9fec53d21073b03e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 546c714d76807f828845b3c0ef0c8fe3ef94169c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202710"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211884"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -57,7 +57,7 @@ Cet article contient les étapes permettant d’activer et de configurer Coffre 
 
 2. Dans la page **Coffre pièces jointes,** cliquez **sur Paramètres globaux.**
 
-3. Dans la **section Paramètres globaux** qui **s’affiche,** allez dans la section Protéger les fichiers SharePoint, OneDrive et Microsoft Teams.
+3. Dans la **section Paramètres globaux** qui **s’affiche,** rendez-vous dans la section Protéger SharePoint, OneDrive et Microsoft Teams protection.
 
    Déplacez **l’activer pour Office 365** pour SharePoint, OneDrive et Microsoft Teams bascule vers la ![ droite.](../../media/scc-toggle-on.png) pour activer Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams.
 
@@ -104,7 +104,7 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d�
    - **Nom**: tapez un nom unique et descriptif. Par exemple, fichiers malveillants dans les bibliothèques.
    - **Description**: tapez une description facultative. Par exemple, avertit les administrateurs lorsque des fichiers malveillants sont détectés dans SharePoint Online, OneDrive ou Microsoft Teams.
    - **Gravité :** sélectionnez **Faible,** **Moyen** ou **Élevé** dans la liste de listes.
-   - **Catégorie :** sélectionnez **La gestion des menaces** dans la liste liste.
+   - **Catégorie :** sélectionnez **Gestion des menaces** dans la liste de listes.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -115,7 +115,7 @@ Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d�
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Dans la page **Définir vos destinataires,** configurez les paramètres suivants :
-   - Vérifiez **que les notifications d’envoi** par courrier électronique sont sélectionnées. Dans la zone **Destinataires de** l’e-mail, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
+   - Vérifiez **que les notifications d’envoi** par courrier électronique sont sélectionnées. Dans la zone **Destinataires du courrier** électronique, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
    - **Limite de notification quotidienne**: laissez la valeur par défaut **Aucune** limite sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
@@ -136,13 +136,13 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 **Remarque**: la valeur _gravité par défaut_ est Faible. Pour spécifier Medium ou High, incluez le paramètre _Severity_ et la valeur dans la commande.
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir New-ActivityAlert.](/powershell/module/exchange/new-activityalert)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ActivityAlert](/powershell/module/exchange/new-activityalert).
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
 - Pour vérifier que vous avez réussi à Coffre pièces jointes pour SharePoint, OneDrive et Microsoft Teams, utilisez l’une des étapes suivantes :
 
-  - Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **Policies** section \>  Coffre \> **Attachments,** select Global **settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting.
+  - Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat \> **Policies** section \>  Coffre \> **Attachments,** select Global **settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, et Microsoft Teams** paramètre.
 
   - Dans Exchange Online PowerShell, exécutez la commande suivante pour vérifier le paramètre de propriété :
 
@@ -161,7 +161,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
   Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Pour vérifier que vous avez correctement configuré une stratégie d’alerte pour les fichiers détectés, utilisez l’une des étapes suivantes :
-  - Dans le portail Microsoft 365 Defender, sélectionnez **Stratégies &** Stratégie d’alerte Sélectionnez la stratégie d’alerte et vérifiez \>  \> les paramètres.
+  - Dans le portail Microsoft 365 Defender, sélectionnez Stratégies **&** Stratégie d’alerte Sélectionnez la stratégie d’alerte et vérifiez \>  \> les paramètres.
   - Dans Microsoft 365 Defender portail PowerShell, remplacez par le nom de la stratégie d’alerte, exécutez la commande suivante et vérifiez les valeurs \<AlertPolicyName\> des propriétés :
 
     ```powershell

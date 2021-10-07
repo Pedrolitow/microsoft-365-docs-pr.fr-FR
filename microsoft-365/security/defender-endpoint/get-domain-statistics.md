@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ba2c6e913b8768e0b905631a248435638db98939
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4bc2afa433cba0ce5ae8fd82dab1e278d29f57e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209557"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211141"
 ---
 # <a name="get-domain-statistics-api"></a>API Obtenir les statistiques de domaine
 
@@ -76,7 +76,7 @@ Autorisation|Porteur {token}. **Obligatoire**.
 
 Nom|Type|Description
 :---|:---|:---
-lookBackHours|Int32|Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours|Int32|Définit les heures pendant les recherches pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 

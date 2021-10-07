@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0ec8e42d0e5b9e8ddf402d09791f84c7c76d06ab
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: beb7b022bd8e0dbd9296e18cbc4befa19690e492
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489504"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212556"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurer la protection comportementale, heuristique et en temps réel.
 

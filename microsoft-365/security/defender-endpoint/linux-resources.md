@@ -3,27 +3,25 @@ title: Microsoft Defender pour point de terminaison sur les ressources Linux
 ms.reviewer: ''
 description: Décrit les ressources de Microsoft Defender pour Endpoint sur Linux, notamment comment le désinstaller, comment collecter les journaux de diagnostic, les commandes CLI et les problèmes connus avec le produit.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8596cf95c7aa4479d1900ba99c98bc10025ee738
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89178fc9c8ec44da0f9f51e2c4bfc6b1dfbab138
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179292"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211068"
 ---
 # <a name="resources"></a>Ressources
 
@@ -77,7 +75,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 ## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
-Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp/install.log` .
 Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
@@ -108,7 +106,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 
 ****
 
-|Groupe|Scénario|Commande|
+|Group|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |Configuration|Activer/désactiver la surveillance du comportement|`mdatp config behavior-monitoring --value [enabled\|disabled]`

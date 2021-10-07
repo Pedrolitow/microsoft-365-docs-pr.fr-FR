@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 6a56a1abab388e98af52fadc322d41484c1610a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3919aea64e73e23a4de6aac3fe2b01de238bdb91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179460"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211393"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 

@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide d’une formation sur la simulation d’attaques dans Microsoft Defender Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 304baf82d2b951ada35dc6cb97add1ac85b27236
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: fec06f65c67f0ec4c470660689a1f3fc1d9bfbcd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988714"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213504"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simuler une attaque par hameçonnage
 
@@ -41,7 +41,7 @@ Sous **Simulations,** **sélectionnez + Lancer une simulation.**
 Sélectionnez parmi 4 techniques différentes, organisées à partir de l’infrastructure&[CK ® MITRE ATT.](https://attack.mitre.org/techniques/enterprise/) Différentes charges utiles sont disponibles pour différentes techniques :
 
 - **La collecte des** informations d’identification tente de collecter des informations d’identification en prenant les utilisateurs vers un site web bien connu avec des zones d’entrée pour envoyer un nom d’utilisateur et un mot de passe.
-- **Une pièce jointe malveillante** ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, un code arbitraire est exécuté pour aider l’attaquant à compromettre l’appareil de la cible.
+- **Une pièce jointe malveillante** ajoute une pièce jointe malveillante à un message. Lorsque l’utilisateur ouvre la pièce jointe, du code arbitraire est exécuté pour aider l’attaquant à compromettre l’appareil de la cible.
 - **Le lien dans la pièce jointe** est un type d’hybridation de la saisie des informations d’identification. Un attaquant insère une URL dans une pièce jointe d’un e-mail. L’URL dans la pièce jointe suit la même technique que la saisie des informations d’identification.
 - **Un lien vers un programme** malveillant exécutera du code arbitraire à partir d’un fichier hébergé sur un service de partage de fichiers connu. Le message envoyé à l’utilisateur contient un lien vers ce fichier malveillant. Ouverture du fichier et aide l’attaquant à compromettre l’appareil de la cible.
 - **L’URL de** lecteur par est l’endroit où l’URL malveillante dans le message conduit l’utilisateur vers un site web familier qui s’exécute en mode silencieux et/ou installe le code de code sur l’appareil de l’utilisateur.
@@ -59,6 +59,7 @@ Ensuite, vous devez sélectionner une charge utile dans le catalogue de charge u
 
 Les charges utiles ont un certain nombre de points de données pour vous aider à choisir :
 
+- **La** langue affiche la langue du contenu de la charge utile. Le catalogue de charge utile de Microsoft (global) fournit des charges utiles dans plus de 10 langues qui peuvent également être filtrées.
 - **Le taux de** clics compte le nombre de personnes qui ont cliqué sur cette charge utile.
 - **Le taux de compromis** prévue prévoit le pourcentage de personnes qui seront compromises par cette charge utile en fonction des données historiques de la charge utile dans Microsoft Defender pour Office 365 clients.
 - **Les simulations lancées** comptent le nombre de fois que cette charge utile a été utilisée dans d’autres simulations.
@@ -69,7 +70,7 @@ Les charges utiles ont un certain nombre de points de données pour vous aider �
 
 Sélectionnez une charge utile dans la liste pour afficher un aperçu de la charge utile avec des informations supplémentaires à son sujet.
 
-Si vous souhaitez créer votre propre charge utile, lisez créer une charge utile pour [l’entraînement de simulation d’attaque.](attack-simulation-training-payloads.md)
+Si vous souhaitez créer votre propre charge utile, lisez créer une charge utile pour la formation à la [simulation d’attaques.](attack-simulation-training-payloads.md)
 
 ## <a name="audience-targeting"></a>Ciblage d’audience
 

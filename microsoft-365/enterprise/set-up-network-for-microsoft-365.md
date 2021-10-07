@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Trouvez des liens vers des articles avec des informations pour vous aider à configurer votre réseau pour Microsoft 365, notamment une vue d’ensemble de la connectivité réseau et la liste des points de terminaison.
-ms.openlocfilehash: 52de26081b4e61346ab584e1600893349b47fd17
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0608fed03721a12d89fdac7d9bdd1574e34471b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205299"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213228"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurer votre réseau pour Microsoft 365
 

@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a3d2254915203ea112d304e9fc45a6f1c4482d9b
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 89a294766f4472c4a23d7149ff2ca843d4e7cc38
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099721"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212088"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées.
@@ -106,7 +106,7 @@ S’il s’agissait d’une alerte réelle, vous devez également spécifier le 
 
 Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour les nouveaux incidents, commencez votre [enquête.](investigate-incidents.md)
 

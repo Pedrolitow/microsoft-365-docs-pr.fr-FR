@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4fcfee2aff1c5e339339b2cd022df53a1cbcfc3e
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f377126eb56291f6ea0c43502f42916f8d64adee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490918"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213120"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer les Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande
 
@@ -29,7 +29,7 @@ ms.locfileid: "59490918"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez effectuer différentes fonctions dans Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender tâches. Vous pouvez trouver l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Exécutez-le à partir d’une invite de commandes.
+Vous pouvez effectuer différentes fonctions dans Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender tâches. Vous trouverez l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Exécutez-le à partir d’une invite de commandes.
 
 > [!TIP]
 > Vous devrez peut-être ouvrir une version de niveau administrateur de l’invite de commandes. Lorsque vous recherchez **l’invite de** commandes sur le menu Démarrer, choisissez **Exécuter en tant qu’administrateur.** Si vous exécutez une version mise à jour de la plateforme Microsoft Defender, exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` Pour plus d’informations sur la plateforme anti-programme malveillant, voir Antivirus Microsoft Defender mises à jour [et les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)

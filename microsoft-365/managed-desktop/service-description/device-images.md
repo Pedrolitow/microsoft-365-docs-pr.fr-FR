@@ -1,5 +1,5 @@
 ---
-title: Images d’un appareil
+title: Images d’appareil
 description: Exigences relatives aux images lors de la commande de nouveaux appareils ou de la réutilisation d’appareils existants
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -7,19 +7,19 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 84caa800657ee33d4bb44f81eda0acf433a7e227
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205052"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212664"
 ---
-# <a name="device-images"></a>Images d’un appareil
+# <a name="device-images"></a>Images d’appareil
 
 
 Que vous order [new devices](#new-devices) or reuse [existing](#existing-devices) ones, you have several options to ensure the image on the device meets our [device requirements](device-requirements.md#check-hardware-requirements).
@@ -41,7 +41,7 @@ Si vous commandez un appareil à partir de HP qui a été approuvé comme [excep
 - Global : mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Microsoft Manged Desktop, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MmD Enablement*». Travaillez avec votre représentant commercial Lenovo ou votre partenaire de canal Lenovo pour les services recommandés, le support et les services d’imagerie.
+Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Microsoft Manged Desktop, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MmD Enablement*». Travaillez en partenariat avec votre représentant commercial Lenovo ou votre partenaire de canal Lenovo pour les services recommandés, le support et les services d’imagerie.
 
 ### <a name="microsoft"></a>Microsoft
 Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont avec une image qui fonctionne avec Microsoft Manged Desktop. Aucune autre étape n’est requise.
@@ -52,7 +52,7 @@ Pour obtenir la dernière image disponible dans l’usine sur un appareil Micros
 
 Vous pouvez réutiliser des appareils existants [](device-requirements.md#minimum-requirements) tant qu’ils répondent à la fois aux exigences de l’appareil et aux [logiciels.](device-requirements.md#installed-software) Suivez les étapes pertinentes pour votre fabricant.
 
-Vous pouvez réimager des appareils avec une image du fabricant ou à l’aide Microsoft Manged Desktop « image universelle ». Pour obtenir une image de fabricant appropriée, vous pouvez commander au moins un nouvel [appareil](#new-devices) du modèle que vous reutilisez. Vous pouvez ensuite obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
+Vous pouvez réimager des appareils avec une image du fabricant ou à l’aide Microsoft Manged Desktop « image universelle ». Pour obtenir une image de fabricant appropriée, vous pouvez commander au moins un [nouvel appareil](#new-devices) du modèle que vous reutilisez. Vous pouvez ensuite obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
 
 > [!NOTE]
 > Il vous incombe de créer, tester et déployer des images. Nous vous recommandons également d’utiliser les images appropriées fournies par le fabricant autant que possible au lieu d’images personnalisées, y compris l'« image universelle ».
@@ -92,7 +92,7 @@ Microsoft Manged Desktop a créé une image contenant des Windows 10 Professionn
 - Les pilotes et les mises à jour qualité sont ajoutés à Windows lors du déploiement à partir du lecteur USB.
 
 > [!NOTE]
-> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournirons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
+> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournissons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
 
 Envoyez des demandes pour le contenu et la documentation de l’image universelle en créant une demande de modification sur le [portail d’administration.](../get-started/access-admin-portal.md)
 

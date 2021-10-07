@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cc9c90effd91c2fddc390e7338beca8ae87ea312
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208852"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212232"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Accéder aux API Microsoft 365 Defender de données
 
@@ -91,4 +91,4 @@ Pour plus d’informations, voir Créer une application avec un accès partenair
 - [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
 - [Autorisation OAuth 2.0 pour la connexion de l’utilisateur et l’accès à l’API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [Gérer les secrets dans vos applications serveur avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
-- [Créer une application « Hello World » qui accède aux API Microsoft 365 de l’application](api-hello-world.md)
+- [Créer une application « Hello World » qui accède aux API Microsoft 365'application](api-hello-world.md)

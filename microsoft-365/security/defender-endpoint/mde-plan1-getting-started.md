@@ -10,23 +10,23 @@ ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e9caad6640b0c70382852c548d4b78b9fa95d450
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: f2fe77b6c1760ac4f25031dc78fbd5e0a259f0f8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069136"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212461"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1-preview"></a>Mise en place de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
 > [!TIP]
 > Si vous avez Microsoft 365 E3 ou A3, mais pas Microsoft 365 E5 ou A5, visitez le site pour vous inscrire [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) au programme d’aperçu !
 
-Le portail Microsoft 365 Defender ( ) vous permet d’afficher des informations sur les menaces détectées, de gérer vos alertes et incidents, de prendre les mesures nécessaires sur les menaces détectées et de gérer les [https://security.microsoft.com](https://security.microsoft.com) appareils. Le portail Microsoft 365 Defender est l’endroit où vous pouvez commencer à interagir avec les fonctionnalités de protection contre les menaces que vous obtenez avec Defender for Endpoint Plan 1 (prévisualisation). Les sections suivantes décrivent comment commencer :
+Le portail Microsoft 365 Defender ( ) vous permet d’afficher des informations sur les menaces détectées, de gérer vos alertes et incidents, d’agir sur les menaces détectées et de gérer les [https://security.microsoft.com](https://security.microsoft.com) appareils. Le portail Microsoft 365 Defender est l’endroit où vous pouvez commencer à interagir avec les fonctionnalités de protection contre les menaces que vous obtenez avec Defender for Endpoint Plan 1 (prévisualisation). Les sections suivantes décrivent comment commencer :
 
 - [Portail Microsoft 365 Defender](#the-microsoft-365-defender-portal)
 - [Affichage et gestion des incidents & alertes](#view-and-manage-incidents--alerts)
@@ -70,11 +70,11 @@ La barre de navigation sur le côté gauche de l’écran vous permet de vous d�
 | **Points de terminaison**  >  **Recherche** | Navigue vers une page où vous pouvez rechercher des appareils spécifiques par nom d’appareil. Dans la liste des résultats, vous pouvez voir les détails, tels que le niveau de risque et l’état de santé, en un coup d’œil. |
 |  **Points de terminaison**  >  **Inventaire des appareils** | Permet d’accéder à la liste des appareils intégrés à Defender for Endpoint. Fournit des informations sur les appareils, telles que leur exposition et leurs niveaux de risque. <br/><br/> Pour en savoir plus, consultez [l’inventaire des appareils.](machines-view-overview.md) |
 |  **Points de terminaison**  >  **Configuration & de référence** | Se développe pour afficher les **lignes de base de sécurité et** la gestion de la **configuration.** |
-|  **Points de terminaison**  >  **Configuration et & base de référence**  >  **Bases de référence de sécurité** | Les lignes de base de sécurité sont des stratégies pré-configurées et des groupes de paramètres qui peuvent vous aider à appliquer efficacement et efficacement les paramètres de sécurité recommandés. Les lignes de base incluent des paramètres basés sur les meilleures pratiques du secteur. Vous pouvez conserver les paramètres par défaut ou personnaliser vos lignes de base en fonction des besoins de votre organisation. <br/><br/> Pour plus d’informations, voir Utiliser les lignes de base de sécurité pour [configurer Windows 10 appareils mobiles dans Intune.](/mem/intune/protect/security-baselines) |
+|  **Points de terminaison**  >  **Configuration et & base de référence**  >  **Bases de référence de sécurité** | Les lignes de base de sécurité sont des stratégies pré-configurées et des groupes de paramètres qui peuvent vous aider à appliquer efficacement et efficacement les paramètres de sécurité recommandés. Les lignes de base incluent des paramètres basés sur les meilleures pratiques du secteur. Vous pouvez conserver les paramètres par défaut ou personnaliser vos lignes de base en fonction des besoins de votre organisation. <br/><br/> Pour plus d’informations, voir Utiliser les lignes de base de sécurité pour [configurer les Windows 10 dans Intune.](/mem/intune/protect/security-baselines) |
 |  **Points de terminaison**  >  **Configuration et & base de référence**  >  **Gestion de la configuration** | Accédez à la page Gestion de **la configuration** des appareils, où vous pouvez afficher des informations sur les appareils intégrés et prendre des mesures pour intégrer d’autres appareils. |
 | **Rapports** | Accédez à vos rapports, tels que votre rapport sur la [protection](threat-protection-reports.md)contre les menaces, [](machine-reports.md)le rapport d’état et de conformité de l’appareil et votre rapport de protection [Web.](web-protection-overview.md) |
 | **État d'intégrité** | Inclut des liens vers **l’état du service et** le centre de **messages.**  |
-| **Santé**  >  **État du service** | Accédez à la page État du service dans la Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’état d’état de tous les services disponibles avec les abonnements de votre organisation.   |
+| **Santé**  >  **État du service** | Accédez à la page État du service dans le Centre d'administration Microsoft 365. Cette page vous permet d’afficher l’état d’état d’état de tous les services disponibles avec les abonnements de votre organisation.   |
 | **Santé**  >  **Centre de messages** | Navigue vers le centre de messages dans le Centre d'administration Microsoft 365. Le centre de messages fournit des informations sur les modifications planifiées. Chaque message décrit ce qui arrive, comment il peut affecter les utilisateurs et comment gérer les modifications. |  
 | **Autorisations & rôles** | Vous permet d’accorder des autorisations d’utilisation du Microsoft 365 Defender web. Les autorisations sont accordées par le biais de rôles Azure Active Directory (Azure AD). Sélectionnez un rôle et un volet volant s’affiche. Le volant contient un lien vers Azure AD dans lequel vous pouvez ajouter ou supprimer des membres dans un groupe de rôles. <br/><br/> Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)  |
 | **Paramètres** | Permet d’accéder aux paramètres généraux de votre portail Microsoft 365 Defender (répertorié en tant que centre de **sécurité)** et de Defender pour les points de terminaison (répertoriés en tant que points **de terminaison).** <br/><br/> Pour en savoir plus, [voir Paramètres](../defender/overview-security-center.md). |
@@ -98,7 +98,7 @@ Utilisez les **onglets Alertes,** Périphériques et Utilisateurs pour afficher 
 > [!TIP]
 > Pour en savoir plus sur l’utilisation de **l’affichage Incident,** voir [Gérer les incidents.](manage-incidents.md)
 
-## <a name="manage-devices"></a>Gérer les appareils
+## <a name="manage-devices"></a>Gestion des appareils
 
 Pour afficher et gérer les appareils de votre organisation, dans la barre de navigation, sous Points de terminaison, sélectionnez **Inventaire des appareils.** Vous verrez une liste d’appareils, comme illustré dans l’image suivante :
 
@@ -168,7 +168,7 @@ Faites défiler vers le bas pour voir tous les affichages dans le rapport de pro
 > [!TIP]
 > Pour en savoir plus, consultez [La protection Web.](web-protection-overview.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Gérer Microsoft Defender pour Endpoint Plan 1 (prévisualisation)](mde-p1-maintenance-operations.md)
 - [Microsoft Defender pour point de terminaison](microsoft-defender-endpoint.md)

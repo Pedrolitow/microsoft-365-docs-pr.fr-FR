@@ -9,21 +9,21 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 7db257ddd1645c5a2ba8ecd992a65d08962660c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 99868e53e98bded9139ecedea9c9d62e9d48fd2f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204257"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211752"
 ---
 # <a name="windows-server-application-testing"></a>Windows Test des applications serveur
 
-Avec Test Base for Microsoft 365, vous pouvez désormais valider vos applications par rapport à Windows Server 2016 et 2019, y compris Server Core !
+Avec Test Base for Microsoft 365, vous pouvez désormais valider vos applications par rapport à Windows Server 2016 2019, y compris Server Core !
 
 Pour commencer à valider vos applications téléchargées par rapport aux mises à jour de pré-publication pour les systèmes d’exploitation Windows Server 2016 et 2019 sur la base de test pour Microsoft 365, respectez les étapes suivantes :
 
@@ -33,7 +33,7 @@ Pour commencer à valider vos applications téléchargées par rapport aux mises
 
    ![Sélectionnez les mises à jour de sécurité.](Media/selecting-security-updates.png)
 
-3. Sous les versions du système d’exploitation à tester, sélectionnez les versions de système d’exploitation applicables. Vous pouvez sélectionner Windows versions du système d’exploitation du serveur ou une combinaison de versions de serveur et de système d’exploitation client.
+3. Sous les versions de système d’exploitation à tester, sélectionnez les versions de système d’exploitation applicables. Vous pouvez sélectionner Windows versions du système d’exploitation du serveur ou une combinaison de versions de serveur et de système d’exploitation client.
 
    ![Sélectionnez la version du système d’exploitation.](Media/selecting-OS-versions.png)
 

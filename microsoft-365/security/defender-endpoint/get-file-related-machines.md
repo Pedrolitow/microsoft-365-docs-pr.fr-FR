@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 722c4a28ab477b34fc3e52cb3eb3efddf319d0d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f8a30dc09ab3bfd18b5d65335788a18984e1574
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209539"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213674"
 ---
 # <a name="get-file-related-machines-api"></a>API Obtenir les ordinateurs liés aux fichiers
 
@@ -39,7 +39,7 @@ ms.locfileid: "59209539"
 
 ## <a name="api-description"></a>Description de l’API
 
-Récupère une collection [d’ordinateurs liés](machine.md) à un hachage de fichier donné.
+Récupère une collection [d’ordinateurs](machine.md) associés à un hachage de fichier donné.
 
 ## <a name="limitations"></a>Limites
 
@@ -61,7 +61,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écr
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - La réponse inclut uniquement les appareils, accessibles par l’utilisateur, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
+> - La réponse inclut uniquement les appareils, accessibles par l’utilisateur, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,7 +73,7 @@ GET /api/files/{id}/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

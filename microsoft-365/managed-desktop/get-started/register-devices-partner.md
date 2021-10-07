@@ -6,17 +6,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 64686f84d8e4cc7dca40a875d8b54508ea9a1fc9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2849857b2196a863c236352ca4c7fd3c0dda1e6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203202"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60211488"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>Procédure permettant aux partenaires d’inscrire des appareils
 
@@ -26,7 +26,7 @@ Cet article décrit les étapes que les partenaires doivent suivre pour inscrire
 
 
 ## <a name="prepare-for-registration"></a>Préparer l’inscription 
-Avant d’achever l’inscription d’un client, vous devez d’abord établir une relation avec lui dans [l’Partner Center](https://partner.microsoft.com/dashboard). Pour plus [d’informations](/windows/deployment/windows-autopilot/registration-auth#csp-authorization) sur ce processus, voir la documentation relative au consentement. Tout partenaire CSP peut ajouter des appareils pour le compte de n’importe quel client, tant que le client y consent. Vous pouvez également en savoir plus sur les relations de partenariat et les autorisations Autopilot dans l’aide [de l’Centre partenaires.](/partner-center/customers_revoke_admin_privileges#windows-autopilot)
+Avant d’achever l’inscription d’un client, vous devez d’abord établir une relation avec lui dans [l’Partner Center](https://partner.microsoft.com/dashboard). Pour plus [d’informations](/windows/deployment/windows-autopilot/registration-auth#csp-authorization) sur ce processus, voir la documentation relative au consentement. N’importe quel partenaire CSP peut ajouter des appareils au nom de n’importe quel client, tant que le client y consent. Vous pouvez également en savoir plus sur les relations de partenariat et les autorisations Autopilot dans l’aide [de l’Centre partenaires.](/partner-center/customers_revoke_admin_privileges#windows-autopilot)
 
 
 > [!NOTE]
@@ -55,7 +55,7 @@ Une fois que vous avez établi la relation avec vos clients, vous pouvez utilise
 >[!NOTE]
 > Vous devriez avoir reçu ce fichier .csv l’achat de votre appareil. Si vous n’avez pas reçu de fichier .csv, vous pouvez en créer un vous-même en suivant les étapes de l’étape Ajout d’appareils [Windows Autopilot](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). Les colonnes supplémentaires ne sont pas pris en charge. Les guillemets ne sont pas pris en charge. Seuls les fichiers texte au format ANSI peuvent être utilisés (et non Unicode). Les en-têtes sont sensibles à la cas. La modification du fichier dans Excel et son enregistrement en tant que fichier CSV ne génèreront pas de fichier utilisable en raison de ces exigences. Veillez à conserver les zéros non élevés dans les numéros de série de l’appareil. Les partenaires doivent [utiliser Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) pour inscrire des appareils Microsoft Manged Desktop appareils dans l’Partner Center.
 
-Si vous obtenez un message d’erreur lors de la tentative de chargement .csv fichier, vérifiez le format du fichier. Assurez-vous que l’ordre des colonnes correspond à ce qui est décrit dans Utiliser les profils Autopilot Windows sur les nouveaux appareils pour personnaliser l’expérience pré-encadrée [d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account) Vous pouvez également utiliser l’exemple .csv fichier fourni à partir du lien en dessous d’Ajouter des appareils **pour** créer une liste d’appareils. 
+Si vous recevez un message d’erreur lors de la tentative de chargement .csv fichier, vérifiez le format du fichier. Assurez-vous que l’ordre des colonnes correspond à ce qui est décrit dans Utiliser les profils Autopilot Windows sur les nouveaux appareils pour personnaliser l’expérience pré-encadrée [d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account) Vous pouvez également utiliser l’exemple .csv fichier fourni à partir du lien en dessous d’Ajouter des appareils **pour** créer une liste d’appareils. 
 
 Pour plus d’informations sur Autopilot dans les scénarios partenaires, voir Ajouter des appareils au [compte d’un client.](/partner-center/autopilot#add-devices-to-a-customers-account)
 

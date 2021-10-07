@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3eb8a028372fce56cb586c51829e506db040f0ca
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 878ce26466504c4ec684e827e3f1957e9f0213b4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124312"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60212496"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Exécuter un test de détection sur un appareil Microsoft Defender pour point de terminaison nouvellement intégré
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Windows 11
 - Versions Windows 10 pris en charge
 - Windows Server 2012 R2
@@ -68,6 +68,6 @@ La fenêtre d’invite de commandes se ferme automatiquement. Si elle réussit, 
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-- [Appareils Windows intégrés](configure-endpoints.md)
+- [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

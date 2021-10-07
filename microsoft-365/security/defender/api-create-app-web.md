@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 715e3eff39fc4575efdfc236876fdd7c8bc20245
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 39d746b3df6b751845bdcdf0769f6874182b76aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208828"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213624"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Créer une application pour accéder à Microsoft 365 Defender sans utilisateur
 
@@ -60,7 +60,7 @@ Cet article explique comment :
 
 1. Connectez-vous [à Azure](https://portal.azure.com) en tant qu’utilisateur avec le **rôle Administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.**
+2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.**
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](../../media/atp-azure-new-app2.png)
 
@@ -71,7 +71,7 @@ Cet article explique comment :
    > [!TIP]
    > *La Protection Microsoft contre les* menaces est un ancien nom Microsoft 365 Defender et n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-   ![Image de la sélection d’autorisation d’API.](../../media/apis-in-my-org-tab.PNG)
+   ![Image de la sélection des autorisations d’API.](../../media/apis-in-my-org-tab.PNG)
 
 5. Sélectionnez **les autorisations d’application.** Choisissez les autorisations pertinentes pour votre scénario (par exemple, **Incident.Read.All),** puis **sélectionnez Ajouter des autorisations.**
 
@@ -122,7 +122,7 @@ Cet article explique comment :
 Pour plus d’informations Azure Active Directory jetons, voir le [didacticiel Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
-> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous ne devez jamais coder en dur des **secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault.](/azure/key-vault/general/about-keys-secrets-certificates) Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, voir Gérer les secrets dans vos applications serveur avec [Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Bien que les exemples de cette section vous encouragent à coller des valeurs secrètes à des fins de test, vous ne devez jamais coder en dur des **secrets** dans une application en cours d’exécution en production. Un tiers peut utiliser votre secret pour accéder aux ressources. Vous pouvez aider à sécuriser les secrets de votre application à l’aide [d’Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Pour obtenir un exemple pratique de la façon dont vous pouvez protéger votre application, voir Gérer les secrets dans vos applications serveur avec [Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 ### <a name="get-an-access-token-using-powershell"></a>Obtenir un jeton d’accès à l’aide de PowerShell
 
@@ -223,7 +223,7 @@ aadToken = jsonResponse["access_token"]
 
 1. Définissez TENANT_ID sur l’ID de locataire Azure du client qui souhaite utiliser votre application pour accéder à Microsoft 365 Defender.
 
-1. Exécutez la commande suivante :
+1. Exécutez la commande suivante :
 
    ```bash
    curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://api.security.microsoft.com/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -245,7 +245,7 @@ aadToken = jsonResponse["access_token"]
 
    ![Image de validation de jeton.](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender de connexion
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
 
 1. Choisissez l’API que vous souhaitez utiliser (incidents ou recherche avancée). Pour plus d’informations, [voir API Microsoft 365 Defender pris en charge.](api-supported.md)
 
