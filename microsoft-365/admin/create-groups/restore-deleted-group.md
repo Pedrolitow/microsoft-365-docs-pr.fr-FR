@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un groupe supprimé est conservé pendant 30 jours et vous pouvez toujours le restaurer. Après 30 jours, le groupe et son contenu sont supprimés définitivement.
-ms.openlocfilehash: fb703240ebec219c0a1d15791782ea72be88a3a4
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 926cfa18972a7ca72009258b02b565bd28a183be
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087772"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165699"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurer un groupe de Microsoft 365 supprimé
 
@@ -39,7 +39,7 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Adresses de messagerie du groupe.
     
-- Exchange Online boîte de réception et calendrier partagés.
+- Exchange Online boîte de réception et le calendrier partagés.
     
 - SharePoint Site d’équipe et fichiers en ligne.
     
@@ -47,9 +47,9 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Planificateur.
     
-- Équipes
+- Teams
 
-- Yammer de groupe et de groupe (si le groupe Microsoft 365 a été créé à partir de Yammer)
+- Yammer contenu de groupe et de groupe (si le groupe Microsoft 365 a été créé à partir de Yammer)
 
 - Power BI espace [de travail classique](/power-bi/collaborate-share/service-create-workspaces)
 
@@ -70,7 +70,7 @@ Si le groupe supprimé n’apparaît pas ici, contactez un administrateur.
 
 # <a name="admin-center"></a>[Centre d’administration](#tab/admin-center)
 
-Si vous êtes administrateur général ou administrateur de groupes, vous pouvez restaurer un groupe supprimé dans les Centre d'administration Microsoft 365 :
+Si vous êtes administrateur général ou administrateur de groupes, vous pouvez restaurer un groupe supprimé dans le Centre d'administration Microsoft 365 :
 
 1. Allez au [centre administratif](https://admin.microsoft.com).      
 2. Développez **Groupes,** puis cliquez **sur Groupes supprimés.**
@@ -89,5 +89,5 @@ Visitez le site [Tech Community Microsoft](https://techcommunity.microsoft.com/t
 
 [Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
 [Supprimer des groupes à l’aide Remove-UnifiedGroup cmdlet](/powershell/module/exchange/remove-unifiedgroup) (article)\
-[Gérer les paramètres de](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) votre site d’équipe connecté à un groupe (article)\
+[Gérer les paramètres de votre site](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) d’équipe connecté à un groupe (article)\
 [Supprimer un groupe dans Outlook](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (article)

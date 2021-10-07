@@ -9,7 +9,7 @@ ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_o365
@@ -22,23 +22,23 @@ ms.custom:
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 09/16/2021
-ms.openlocfilehash: 77c1547b279cc5367ef23106e15dc2eee0c5a471
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 6cdcad3c37db8475bcb64fa7a33e287f502dcd66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480747"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163647"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
 
 Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour vos abonnements en suivant les étapes ci-après.
 
 > [!NOTE]
-> Pour certains abonnements, vous ne pouvez annuler l’abonnement que pendant une période limitée après avoir acheté ou renouvelé votre abonnement. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
+> Certains abonnements ne peuvent être annulés que pendant une période limitée après les avoir achetés ou renouvelés. Si la fenêtre d’annulation est écoulée, désactiver la facturation périodique pour annuler l’abonnement à la fin de sa période.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 - Vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps.](../../admin/add-users/add-users.md)
 - Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
@@ -58,12 +58,12 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 

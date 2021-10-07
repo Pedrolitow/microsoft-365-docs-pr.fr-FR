@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour bloquer l’accès à l’appareil mobile d’un ancien employé.
-ms.openlocfilehash: 4ccfb4d013cb35263748ef3fcf4187c68faffb97
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: de4c291093af47144e3f0f8c5441052a0f68361c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774146"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161593"
 ---
 # <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>Étape 5 : effacer et bloquer l’appareil mobile d’un ancien employé
 
@@ -45,6 +46,6 @@ Si votre ancien employé avait un téléphone d’organisation, vous pouvez util
    > [!TIP]
    > Assurez-vous de supprimer ou de désactiver l’utilisateur de votre service Blackberry Enterprise local. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Centre d’administration Exchange dans Exchange Online](/exchange/exchange-admin-center)

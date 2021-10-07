@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 05e7b3042eeb3a40b2ed733f680591f0a4d14774
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 61f4eaa6a32b48f5517b8fb00716aa9cfc328742
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206756"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164139"
 ---
 # <a name="contact-support-for-iraq"></a>Contacter le support pour l’Irak
 

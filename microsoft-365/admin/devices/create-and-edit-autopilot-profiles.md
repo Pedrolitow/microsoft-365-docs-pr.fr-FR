@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
-ms.openlocfilehash: 685773fbdac454af039478c17232e6e88333dc74
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 481c59797a1959ed72dbe5c7b81f5d2480def490
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933566"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165531"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 

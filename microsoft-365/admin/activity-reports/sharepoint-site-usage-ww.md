@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,19 +22,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport SharePoint’utilisation du site pour connaître le nombre de fichiers stockés par les utilisateurs dans les sites SharePoint, le nombre d’utilisateurs activement utilisés et le stockage total utilisé.
-ms.openlocfilehash: 116b4521408fd8cd41e22a959a7b530dbce01174
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 3b84a31b787e3ccf855e26befcf570e364a9e148
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356100"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162037"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation SharePoint site
 
 En tant qu’administrateur Microsoft 365, le tableau de bord **Rapports** vous présente la vue d’ensemble de l’activité sur différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Par exemple, vous pouvez obtenir une vue d’ensemble de la valeur que vous obtenez de SharePoint en termes de nombre total de fichiers stockés par les utilisateurs sur des sites SharePoint, du nombre de fichiers activement utilisés et du stockage consommé sur tous ces sites. Ensuite, vous pouvez explorer le rapport de l'utilisation du site SharePoint pour comprendre les tendances et les détails par niveau de site. 
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.
 Microsoft 365 Les rapports dans le Centre d’administration ne sont pas pris en charge Cloud de la communauté du secteur public les locataires Élevé et DoD.
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Comment accéder au Rapport Utilisation du site SharePoint
@@ -62,13 +62,13 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
 
 Vous pouvez afficher l’utilisation du site dans le rapport SharePoint en choisissant l’onglet **Utilisation du** site.
 
-:::image type="content" alt-text="Microsoft 365- Rapport d’utilisation SharePoint site Microsoft." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
+:::image type="content" alt-text="Microsoft 365- Rapport d’utilisation SharePoint site microsoft." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.
 
 :::image type="content" alt-text="SharePoint d’utilisation du site : choisissez des colonnes." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
 |Métrique|Description|
 |:-----|:-----|
@@ -85,7 +85,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |Fichiers actifs  | Nombre de fichiers actifs sur le site.<br/> REMARQUE : si des fichiers ont été supprimés pendant la période spécifiée pour le rapport, le nombre de fichiers actifs affichés dans le rapport peut être supérieur au nombre actuel de fichiers sur le site.  |
 |Stockage utilisé (Mo)  |Quantité de stockage actuellement utilisée sur le site.  |
 |Stockage alloués (Mo)  |Quantité maximale de stockage allouée au site.  |
-|Vues de page  |Nombre de fois que des pages ont été vues sur le site.  |
+|Vues de page  |Nombre de fois où des pages ont été vues sur le site.  |
 |Pages visitées  |Nombre de pages uniques visitées sur le site.  |
 |Nombre de liens anonymes  |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Tout le monde avec le lien » sur le site.  |
 |Nombre de liens d’entreprise  |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Personnes de l’organisation avec le lien » sur le site.  |

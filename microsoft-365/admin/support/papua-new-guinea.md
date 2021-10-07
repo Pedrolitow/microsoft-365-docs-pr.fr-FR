@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aaf783902301243b6265139cddb6e5d55f25817c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7aa2749aad4f1f787922e24bea0137fbcfa8ba0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182735"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161066"
 ---
 # <a name="contact-support-for-papua-new-guinea"></a>Contacter le support technique pour la Nouvelle-Guinée
 

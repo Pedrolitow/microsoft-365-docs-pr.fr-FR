@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Donner à un utilisateur le droit d'accéder à la boîte aux lettres d'un autre utilisateur, ce qui permet à l'utilisateur de lire et d'envoyer des courriels à partir de la boîte aux lettres de l'autre utilisateur.
-ms.openlocfilehash: c888ee6ef2ae41848b889de2be3965d4613ac4a4
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 95075fca2fa39cfda497b71a1a320bc54fd2175d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773702"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161785"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 

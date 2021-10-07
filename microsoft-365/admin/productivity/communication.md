@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la communication : score de productivité de l’expérience utilisateur.'
-ms.openlocfilehash: b4cbc2fec73b22f55a75b05292d9c3a9b857554e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 96303783afd9a77d4f490e412f0c182dc040d079
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776499"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157157"
 ---
 # <a name="communication--people-experiences"></a>Communication : expériences de personnes
 
@@ -35,7 +36,7 @@ Pour commencer à comprendre les informations sur les communications, les membre
 
 - Microsoft Teams
 - Yammer
-- Exchange Online
+- Exchange Online
 
 Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
 
@@ -109,7 +110,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
    - **Les personnes qui envoient des messages Microsoft Teams :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Microsoft Teams qui envoient des messages. Cette fraction est construite à partir de :
 
      - **Numérateur**: personnes envoyant des messages Microsoft Teams au cours des 28 derniers jours.
-     - **Dénominateur :** les personnes activées pour Microsoft Teams au cours des 28 derniers jours.
+     - **Dénominateur : les** personnes activées pour Microsoft Teams au cours des 28 derniers jours.
 
    - **Personnes publiant dans des communautés :** La partie couleur et la fraction représentent le pourcentage d’utilisateurs activés pour les Yammer qui sont publiés dans des communautés. Cette fraction est construite à partir de :
 
@@ -156,7 +157,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
         - **Numérateur :** Les personnes qui ont envoyé des messages de Microsoft Teams au cours des 28 derniers jours.
         - **Dénominateur :** Les personnes qui ont envoyé des messages Microsoft Teams au cours des 28 derniers jours.
 
-      - **Personnes envoyant des messages de canal :** La partie colorée et la fraction représentent l’utilisation de messages de canal au sein de personnes envoyant des messages Microsoft Teams. La fraction est construite à partir de :
+      - **Personnes envoyant des messages de canal :** La partie colorée et la fraction représentent l’utilisation de messages de canal au sein des personnes envoyant des messages sur Microsoft Teams. La fraction est construite à partir de :
 
         - **Numérateur :** Les personnes qui ont envoyé des messages de canal Microsoft Teams au cours des 28 derniers jours.
         - **Dénominateur :** Les personnes qui ont envoyé des messages Microsoft Teams au cours des 28 derniers jours.
@@ -167,7 +168,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions et réponses dans Yammer]":::
 
-1. **En-tête :** Met en évidence les billets marqués comme des questions sur les Yammer qui ont reçu une réponse marquée comme meilleure réponse en tant que pourcentage de tous les billets marqués comme des questions sur Yammer au cours des 28 derniers &quot; &quot; jours.
+1. **En-tête :** Met en évidence les billets marqués comme des questions sur Yammer qui ont reçu une réponse marquée comme meilleure réponse en tant que pourcentage de tous les billets marqués comme des questions le Yammer au cours des 28 derniers &quot; &quot; jours.
 
 2. **Corps :** Fournit des informations sur la valeur de l’utilisation de questions et de réponses dans Yammer partager des connaissances.
 
@@ -175,11 +176,11 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
    - **Questions :** La partie colorée de la barre et le nombre associé représentent le nombre total de publications marquées comme des questions au cours des 28 derniers jours.
    - **Questions avec réponses :** La partie colorée de la barre et le numéro associé représentent le nombre de publications marquées comme des questions et qui ont reçu des réponses au cours des 28 derniers jours.
-   - **Questions avec les meilleures réponses :** La partie colorée de la barre et le numéro associé représentent le nombre de billets marqués comme des questions et qui ont également reçu une meilleure réponse au cours des &quot; &quot; 28 derniers jours.
+   - **Questions avec les meilleures réponses :** La partie colorée de la barre et le nombre associé représentent le nombre de billets marqués comme des questions et qui ont également reçu une meilleure réponse au cours des &quot; &quot; 28 derniers jours.
 
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\

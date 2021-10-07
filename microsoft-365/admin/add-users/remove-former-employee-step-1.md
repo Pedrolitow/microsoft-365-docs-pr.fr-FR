@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services.
-ms.openlocfilehash: b33f3aa74ebdcf785b75889f5f3263e91b127cdc
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 326188e0000d3c59eb411222d3e3c47177b383ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773450"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161689"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services
 
@@ -43,7 +44,7 @@ Si vous devez empêcher immédiatement l’accès à la signature d’un utilisa
 3. Entrez un nouveau mot de passe, puis sélectionnez **Réinitialiser.** (Ne leur envoyez pas de message.)
 4. Sélectionnez le nom de l’utilisateur pour aller  dans le volet de propriétés, puis sous l’onglet Compte, sélectionnez Se sortir **de toutes les sessions.**
 
-Dans l’heure qui s’affiche( ou après avoir quitté la page de Microsoft 365 en cours), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont il quitte la page web actuelle.
+Dans l’heure qui s’affiche( ou après avoir quitté la page Microsoft 365 leur page actuelle), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont il quitte la page web actuelle.
   
 > [!IMPORTANT]
 > Si l’utilisateur est Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de la boîte aux lettres en cliquant dessus. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la signature est lancée.
@@ -58,7 +59,7 @@ Pour plus d'informations sur le temps nécessaire pour supprimer l'accès d'un u
  > Le blocage d’un compte peut prendre jusqu’à 24 heures. Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole bloquer **cet utilisateur.**
+2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole Bloquer **cet utilisateur.**
 3. Sélectionnez **Bloquer la signature de l’utilisateur,** puis sélectionnez **Enregistrer.**
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>Bloquer l'accès d'un ancien employé aux courriers (Exchange Online)

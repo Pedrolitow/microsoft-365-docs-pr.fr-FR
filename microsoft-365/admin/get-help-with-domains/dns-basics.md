@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Le système de nom de domaine mappe les noms d’hôtes de l’ordinateur vers les adresses IP et comprendre les informations de base du bureau d'enregistrement de domaines et du DNS peut vous aider à gérer des domaines.
-ms.openlocfilehash: 42c93ba7c0edd76b1371015ea9c3b2dd1e4f8bbb
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3195e6ba1e8483a5444eb0f8046add1e3e7725f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774603"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164775"
 ---
 # <a name="dns-basics"></a>Principes de base
 
@@ -208,4 +208,4 @@ Consultez les rubriques suivantes :
 
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)\
 [Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)\
-[Gérer des domaines](index.yml) (page de lien)
+[Gérer des domaines](/admin) (page de lien)

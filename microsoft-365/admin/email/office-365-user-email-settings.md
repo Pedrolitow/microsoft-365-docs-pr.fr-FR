@@ -10,18 +10,19 @@ ms.topic: overview
 ms.service: o365-administration
 ms.collection:
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: dc358e74df4ca3070707e2e5909cfb2adf18f3b8
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 681396d0389b78222afbaeaa2941b11f5e292b81
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774615"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164919"
 ---
 # <a name="user-email-settings"></a>Paramètres de messagerie de l'utilisateur
 

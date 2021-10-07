@@ -9,14 +9,14 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Vue d’ensemble de l’API REST du modèle de compréhension de document SharePoint Syntex.
-ms.openlocfilehash: b77e882163810a389e734f63b45418a4e682dd88
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 882dcdbe3561803d20d698e5d1510dd5232fbbe5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775683"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163372"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>API REST du modèle de compréhension de document SharePoint Syntex
 

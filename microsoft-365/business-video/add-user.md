@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ajouter des utilisateurs dans Microsoft 365 entreprise.
-ms.openlocfilehash: 84edaeff1980955d1dfc00267ac1a0d63f48e9f1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5c8b8042683659ea78a10eb966f3d1482f5da218
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163743"
 ---
 # <a name="add-a-new-user"></a>Ajouter un nouvel utilisateur
 
@@ -41,7 +41,7 @@ Lorsqu’une nouvelle personne rejoint votre entreprise, vous devez l’ajouter 
 
 1. Dans la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365,</a>allez à Gestion des **utilisateurs,** puis sélectionnez Ajouter un utilisateur.
 1. Entrez le prénom  et le nom du nouvel **utilisateur.** Le **nom complet** est rempli automatiquement, mais vous pouvez le modifier.
-1. Entrez un nom **d’utilisateur**. Il s’agit de l’adresse e-mail du nouvel utilisateur. Si vous avez plusieurs domaines, sélectionnez le domaine correct dans la liste de listes.
+1. Entrez un nom **d’utilisateur**. Il s’agit de l’adresse e-mail du nouvel utilisateur. Si vous avez plusieurs domaines, sélectionnez le domaine correct dans la liste liste.
 1. Pour créer automatiquement un mot de passe, sélectionnez **Générer automatiquement le mot de passe.**
 1. Pour obliger l’utilisateur à modifier son mot de passe, cochez la case Exiger de cet utilisateur qu’il modifie son mot de passe lors de sa **première** signature.
 1. Si vous souhaitez que les détails du compte sont envoyés par courrier électronique, cochez la case Envoyer le mot de passe par courrier **électronique** à la fin de l’envoi. Votre nom de courrier sera ajouté automatiquement, mais vous pouvez ajouter l’adresse de messagerie de remplacement du nouvel utilisateur afin qu’il reçoie également les détails du compte. Sélectionnez **Suivant**.

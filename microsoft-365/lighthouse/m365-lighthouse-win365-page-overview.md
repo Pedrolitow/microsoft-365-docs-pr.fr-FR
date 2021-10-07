@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Windows 365 (PC cloud).
-ms.openlocfilehash: b71beb0315c15929b20e1afd32a96bfd811a9ea9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0d828a382000502f6700d585624b967a740ff36
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202811"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163179"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>vue d Windows la page 365 (Pc cloud)  
 
@@ -30,12 +30,12 @@ ms.locfileid: "59202811"
   
 Windows 365 est un service basé sur le cloud qui permet aux administrateurs de Microsoft Endpoint Manager (MEM) de provisioner et de gérer des PC Cloud pour leurs utilisateurs qui ont une licence Windows 365. Windows 365 est entièrement intégré à MEM pour la gestion des appareils et à Microsoft 365 Lighthouse pour la gestion par les partenaires des PC cloud sur tous les clients.
 
-Pour plus d’informations Windows 365, voir [Qu’est-ce Windows 365 ?](/windows-365/overview) Pour obtenir la liste des Windows 365 requises, voir [Requirements for Windows 365](/windows-365/requirements).
+Pour plus d’informations Windows 365, voir [Qu’est-ce Windows 365 ?](/windows-365/overview) Pour obtenir la liste des Windows 365 requises, voir [Requirements for Windows 365](/windows-365/enterprise/requirements).
 
 > [!IMPORTANT]
 > Vous devez vous rendre sur [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) pour mettre en service des PC Cloud pour chaque client avant de pouvoir les gérer dans Le Monde. Vous ne pouvez pas le faire à partir de l’intérieur de l’île.
 
-Une fois que vous avez mis en service les PC Cloud pour votre client, la carte Windows 365 sur la page d’accueil Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’action, telles que le nombre de PC Cloud qui n’ont pas pu être mis en service et les échecs de connexion réseau locaux. Pour obtenir un état détaillé, sélectionnez le bouton sur la carte Windows 365 (ou sélectionnez **Windows 365** dans le volet de navigation de gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC cloud affectés à vos clients, afficher la liste de tous les PC Cloud que vous gérez et les clients qui leur sont affectés, et afficher les connexions réseau sur site entre vos clients clients et Azure Active Directory (Azure AD) et leur état.
+Une fois que vous avez mis en service les PC Cloud pour votre client, la carte Windows 365 sur la page d’accueil Microsoft 365 fournit une brève alerte sur les PC cloud qui ont besoin d’action, telles que le nombre de PC Cloud qui n’ont pas pu être mis en service et les échecs de connexion réseau locaux. Pour obtenir un état détaillé, sélectionnez le bouton sur la carte Windows 365 (ou sélectionnez **Windows 365** dans le volet de navigation de gauche) pour ouvrir la page Windows 365. À partir de cette page, vous pouvez obtenir une vue d’ensemble de l’état des PC Cloud affectés à vos clients, afficher la liste de tous les PC Cloud que vous gérez et les clients qui leur sont affectés, et afficher les connexions réseau sur site entre vos clients clients et Azure Active Directory (Azure AD) et leur état.
 
 ## <a name="overview-tab"></a>Onglet Overview
 
@@ -43,7 +43,7 @@ Sous l’onglet Vue d’ensemble, la barre de nombre d’annotations colorée af
 
 Vous pouvez voir une répartition des statuts de l’ordinateur cloud pour chaque client dans la liste sous la barre d’annotations. Pour voir quels locataires ont des PC Cloud avec un état spécifique, sélectionnez cet état dans la barre d’annotations de nombre pour filtrer la liste. Pour voir les statuts du Cloud PC pour  un ou plusieurs clients spécifiques, utilisez le menu déroulant Clients pour filtrer la liste.
 
-Pour obtenir des informations détaillées sur l’état d’un client particulier, sélectionnez une valeur sous l’une des colonnes d’état de ce client. Selon la colonne dans laquelle se trouve la valeur, l’onglet **Connexions** réseau sur site ou Tous les PC **cloud** s’ouvre et affiche plus d’informations.
+Pour obtenir des informations détaillées sur l’état d’un client particulier, sélectionnez une valeur sous l’une des colonnes d’état de ce client. Selon la colonne dans laquelle se trouve la valeur, l’onglet **Connexions** réseau sur site ou Tous les **PC cloud** s’ouvre et affiche plus d’informations.
 
 L’onglet Vue d’ensemble inclut également les options suivantes :
 
@@ -77,7 +77,7 @@ L’onglet Tous les PC cloud inclut également les options suivantes :
 - **Recherche :** Entrez des mots clés pour localiser rapidement un PC Cloud spécifique dans la liste.
 - **Nouvelle tentative de mise en service :** Sélectionnez 1 à 20 PC cloud dans la liste dont l’état de mise en service a **échoué,** puis sélectionnez cette option pour réessayer d’approvisionnement pour ces PC Cloud.
 
-Pour consulter la liste complète des statuts des PC cloud et leur description, consultez la page de présentation de [Cloud PC](/windows-365/device-management-overview#cloud-pc-overview-page) dans la bibliothèque de documentation Windows 365.
+Pour obtenir la liste complète des statuts de mise en service des PC cloud et leur description, voir vue d’ensemble de la gestion des appareils pour les PC [cloud](/windows-365/enterprise/device-management-overview#column-details) dans la bibliothèque de documentation Windows 365.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Capture d’écran de Windows onglet 365 Tous les PC cloud.":::
 
@@ -101,6 +101,6 @@ L’onglet Connexions réseau local inclut également les options suivantes :
 
 ## <a name="related-content"></a>Contenu associé
 
-[Qu’est-Windows 365 ?](/windows-365/overview) (article)\
-[Windows vue d’ensemble de](/windows-365/device-management-overview) la gestion des appareils 365 pour les PC cloud (article)\
+[Qu’est-ce que Windows 365 ?](/windows-365/overview) (article)\
+[Windows vue d’ensemble de la gestion des appareils 365](/windows-365/enterprise/device-management-overview) pour les PC cloud (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

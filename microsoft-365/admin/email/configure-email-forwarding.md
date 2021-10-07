@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Le forwarding de courrier vous permet de forwarder les messages électroniques envoyés à une boîte aux lettres Microsoft 365 utilisateur vers une autre boîte aux lettres à l’intérieur ou à l’extérieur de votre organisation.
-ms.openlocfilehash: 6703e37c1f576a5f3b0671def764deafa7e2daa2
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 442213151f38ee834b663b4d77411680c1350b5c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774687"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165076"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurer le forwarding du courrier électronique dans Microsoft 365
 
@@ -51,7 +52,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=834822)**
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=834822)**
 
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez qu’il soit transmis, puis ouvrez la page des propriétés.
 
@@ -63,7 +64,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
     
     1.  Ouvrez **outlook** > **Home** > **Rules** > Select Manage Rules **& Alerts**  
     1. Select **New Rule** Select Apply rule on message I > **receive** located near bottom of list, then click **Next**.
-    1. Cliquez **sur Oui** lorsque vous y êtes invité. Cette règle sera appliquée à chaque message que vous recevez. 
+    1. Cliquez **sur Oui** lorsque vous y êtes invité. Cette règle s’applique à chaque message que vous recevez. 
     1. Dans la liste suivante, sélectionnez les actions pour la rediriger vers des personnes ou un **groupe public** et arrêter le traitement de **règles**
     1. Cliquez sur l’expression **soulignée personnes ou groupe public** dans la partie inférieure de la fenêtre.
     1. Tapez **l’adresse e-mail** à qui envoyer le courrier dans le champ À, puis cliquez sur **OK**.
@@ -78,9 +79,9 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=847686)**
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=847686)**
 
-2. Sélectionnez le nom de l’utilisateur dont vous souhaitez envoyer le courrier électronique pour ouvrir la page de propriétés.
+2. Sélectionnez le nom de l’utilisateur dont vous souhaitez qu’il soit transmis pour ouvrir la page de propriétés.
 
 3. Développez **les paramètres de messagerie,** puis dans la section **De forwarding de** courrier, sélectionnez **Modifier**.
 
@@ -96,9 +97,9 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=850628)**
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=850628)**
 
-2. Sélectionnez le nom de l’utilisateur dont vous souhaitez envoyer le courrier électronique pour ouvrir la page de propriétés.
+2. Sélectionnez le nom de l’utilisateur dont vous souhaitez qu’il soit transmis pour ouvrir la page de propriétés.
 
 3. Développez **les paramètres de messagerie,** puis dans la section **De forwarding de** courrier, sélectionnez **Modifier**.
 
@@ -112,7 +113,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 ::: moniker-end
 
-## <a name="related-content"></a>Contenu connexe 
+## <a name="related-content"></a>Contenu associé 
 
 [Créer une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) (article)\
 [Envoyer des courriers électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\

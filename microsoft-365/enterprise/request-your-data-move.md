@@ -7,7 +7,7 @@ ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 description: Les clients Office 365 existants doivent envoyer une demande avant la date d’échéance pour que leurs données de services Microsoft 365 sont déplacées vers leur nouvelle région.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa3464a33143f442a38adb8693bb77b9d174114d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18e21343eacaf9201ac65c4c1ff9c5b935d2c3fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205324"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163275"
 ---
 # <a name="how-to-request-your-data-move"></a>Procédure de demande d’un déplacement de données
 
 > [!NOTE]
 > Les informations de cette page s’appliquent uniquement aux clients qui avaient des clients Microsoft 365 existants avant l’ouverture des nouveaux centres de données dans leur centre de données géographique. L’éligibilité à la migration dépend également de la date de mise en service du service spécifique.  La date de création du client n’est peut-être pas toujours la date unique qui compte.
   
-Les clients Microsoft 365 éligibles peuvent demander la migration des données client essentielles de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et des clients avec un pays d’inscription éligible associé à Microsoft 365 client.
+Les clients Microsoft 365 éligibles peuvent demander la migration des données client essentielles de leur organisation au repos.  Le programme prend en charge les demandes pour chaque pays au cours de la période décrite dans le tableau et des clients ayant un pays d’inscription éligible associé à Microsoft 365 client.
   
 ## <a name="when-can-i-request-a-move"></a>Quand puis-je demander un déplacement ?
 

@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: en savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: aa9b936f7c40227245d0ffd9fbbc951e51c49321
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b74911765d9249834553c09bbd4efdd02e5f97ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207988"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163395"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser [ les étiquettes de confidentialité](sensitivity-labels.m
 - Messagerie Exchange Online
 - SharePoint Online
 - Sites OneDrive Entreprise
-- Appareils Windows 10
+- Appareils Windows 10
 
 Les étiquettes de confidentialité apparaissent comme une option dans la liste du **Contenu**.
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ce
 |OneDrive Entreprise     |éléments         |oui         |oui         |
 |Teams     |Teams et messages de canal         |non applicable         |non applicable         |
 |Teams     |pièces jointes         |Oui **         |Oui **         |
-|Appareils Windows 10     |éléments         |oui         |oui         |
+|Appareils Windows 10     |éléments         |oui         |oui         |
 |MCAS (préversion) |éléments         |oui         |oui         |
 
 \* La détection DLP des pièces jointes de courrier associées à une étiquette de confidentialité est uniquement prise en charge par les types de fichier Office.

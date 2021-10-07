@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -17,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: Mettez à jour les coordonnées de votre organisation et choisissez Microsoft 365 communications liées au produit que vous souhaitez recevoir.
-ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: eeda3d78dcc4b33995a78e1dc5763fee07109caa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176340"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164451"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Modifier vos préférences en matière de contact pour les communications Microsoft
 

@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: 15b29887fcfd301e303d0918e5f3efc2acd7e908
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b60bbf3cd626b81f03c4b0706247d8ada03a8246
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163658"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Informations de facturation pour Microsoft 365 entreprise au Mexique
 
@@ -40,7 +40,7 @@ Votre facture est envoyée à l’adresse e-mail de notification de facturation 
 
 ### <a name="during-the-purchase-process-checkout"></a>Pendant le processus d’achat (achat)
 
-Pendant le processus d’achat de l’achat, lorsque vous arrivez à **l’étape 4. Paiement et facturation**, sélectionnez la case à sélectionner pour entrer une RFC. Cette étape est nécessaire afin que vous pouvez la voir reflétée dans votre facture.
+Pendant le processus d’achat de l’achat, lorsque vous arrivez à **l’étape 4. Paiement et facturation**, sélectionnez la case à sélectionner pour entrer une RFC. Cette étape est nécessaire afin de pouvoir la voir reflétée dans votre facture d’achat.
 
 ### <a name="for-your-future-purchases"></a>Pour vos futurs achats
 
@@ -53,7 +53,7 @@ Vous pouvez ajouter ou modifier votre RFC afin que les informations sont reflét
 
 Il est important d’ajouter ou de modifier votre RFC avant d’effectuer votre achat. Une fois que nous avons généré votre facture Microsoft 365 entreprise, vous ne pouvez ni ajouter ni modifier les informations RFC.
 
-## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. Why don’t I get a CFDI (Comprobante Fiscal Digital por Internet)?
+## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. Pourquoi ne reçois-je pas un CFDI (Comprobante Fiscal Digital por Internet)?
 
 Microsoft Corporation, en tant que résident fiscal aux États-Unis d’Amérique, est uniquement en mesure d’émettre des factures conformément aux lois de la juridiction et n’est pas obligé de fournir une facture électronique CFDI.
 

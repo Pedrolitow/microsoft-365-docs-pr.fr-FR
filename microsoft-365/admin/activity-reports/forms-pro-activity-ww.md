@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Dynamics 365 Customer Voice à l’aide du tableau de bord Microsoft 365 rapports de microsoft Dynamics 365 dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 6c66b4fcee0d2f04e3178ede8360b87ad1abe597
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8bddb423c45e97c147dbc3aa262b7c798d143ae5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177275"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157481"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>Microsoft 365 Rapports dans le Centre d’administration - Activité voix client Dynamics 365
 
@@ -34,7 +34,7 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
 Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulaire d’une licence d’utilisation de Microsoft Dynamics 365 Customer Voice en regardant leurs interactions avec Dynamics 365 Customer Voice. Il vous permet également de comprendre le niveau de collaboration en cours en regardant le nombre d’enquêtes Pro créées et d’enquêtes Pro à laquelle les utilisateurs ont répondu. 
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
  
 ## <a name="how-to-get-to-the-dynamics-365-customer-voice-activity-report"></a>Comment obtenir le rapport d’activité De Dynamics 365 Customer Voice
 
@@ -43,13 +43,13 @@ Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulair
   
 ## <a name="interpret-the-dynamics-365-customer-voice-activity-report"></a>Interpréter le rapport d’activité de Dynamics 365 Customer Voice
 
-Vous pouvez afficher les activités dans le rapport Dynamics 365 Customer Voice en choisissant l’onglet **Activité.**<br/>![Microsoft 365 - Rapport d’activité de Microsoft Dynamics 365 Customer Voice.](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
+Vous pouvez afficher les activités dans le rapport Dynamics 365 Customer Voice en choisissant **l’onglet** Activité.<br/>![Microsoft 365 - Rapport d’activité de Microsoft Dynamics 365 Customer Voice.](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Rapport d’activité Dynamics 365 Customer Voice : choisissez des colonnes.](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse de messagerie de l’utilisateur qui a effectué l’activité sur Microsoft Forms.  <br/> |

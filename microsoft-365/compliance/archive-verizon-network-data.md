@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver des données SMS et MMS à partir du réseau Verizon dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: d95b78267dc74fb78eb9db6fcf3df25c4a4ac59a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 10e416825b9241c26f26ab37a254cddbd22fa836
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179987"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163491"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Configurer un connecteur pour archiver les données réseau Verizon
 
 Utilisez le connecteur TeleMessage dans le Centre de conformité Microsoft 365 pour importer et archiver des données SMS (Short Messaging Service) et MMS (Multimedia Messaging Service) à partir de Verizon Network. Après avoir configuré et configuré un connecteur, il se connecte au réseau Verizon de votre organisation une fois par jour et importe les données SMS et MMS dans les boîtes aux lettres dans Microsoft 365.
 
-Une fois que les données du connecteur réseau Verizon sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données Verizon. Par exemple, vous pouvez rechercher des messages SMS et MMS Verizon à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données réseau Verizon à un dépositaire dans un cas Advanced eDiscovery dossier. L’utilisation d’un connecteur réseau Verizon pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois que les données du connecteur réseau Verizon sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données Verizon. Par exemple, vous pouvez rechercher des messages SMS et MMS Verizon à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données réseau Verizon à un dépositaire dans un Advanced eDiscovery dossier. L’utilisation d’un connecteur réseau Verizon pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-verizon-network-data"></a>Vue d’ensemble de l’archivage des données réseau Verizon
 
@@ -51,7 +51,7 @@ Certaines des étapes d’implémentation requises pour archiver les données du
 
 - Enregistrez tous les utilisateurs qui nécessitent l’archivage SMS et MMS Verizon dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
 
-- Vos employés doivent avoir des téléphones mobiles d’entreprise et responsables sur le réseau mobile Verizon. L’archivage des messages Microsoft 365 n’est pas disponible pour les appareils BYOD (Bring Your Own Devices) ou d’employés.
+- Vos employés doivent avoir des téléphones mobiles d’entreprise et de responsabilité d’entreprise sur le réseau mobile Verizon. L’archivage des messages Microsoft 365 n’est pas disponible pour les appareils BYOD (Bring Your Own Devices) ou d’employés.
 
 - Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée un connecteur réseau Verizon dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 

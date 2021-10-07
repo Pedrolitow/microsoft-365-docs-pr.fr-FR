@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Apprenez à créer, modifier ou supprimer un groupe de sécurité.
-ms.openlocfilehash: 5456dbcee245647cbb12bfbcfc0c82ebcf19f037
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b97b16856e48c81773c8b8e039dfa6b9469a4efb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774651"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165015"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Créer, modifier ou supprimer un groupe de sécurité dans le Centre d'administration Microsoft 365
 
@@ -72,13 +73,13 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
     
 2. Dans la page **Groupes,** sélectionnez le nom du groupe. 
     
-3. Sélectionnez **Supprimer le** groupe (icône wasetbin), puis confirmez en sélectionnant **Supprimer.**
+3. Sélectionnez **Supprimer le** groupe (icône wasetbin), puis confirmez en sélectionnant **Supprimer**.
     
     Sélectionnez **Fermer** une fois le groupe supprimé. 
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Groupes dans Exchange Online et SharePoint Online
 
-Si vous souhaitez créer des groupes d’utilisateurs afin de pouvoir leur envoyer des courriers électroniques en  même temps, vous pouvez le faire dans le Centre d’administration Exchange en allant à Groupes de \>  \> **destinataires** \> Exchange Admin Exchange . Ensuite, **sélectionnez Nouvel** ajout, puis sélectionnez le type de groupe ![ que vous ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) souhaitez créer : 
+Si vous souhaitez créer des groupes d’utilisateurs afin de pouvoir leur envoyer des courriers électroniques en  même temps, vous pouvez le faire dans le Centre d’administration Exchange en allant à Groupes de \>  \> **destinataires** \> Exchange Administrateur. Ensuite, **sélectionnez Nouvel** ajout, puis sélectionnez le type de groupe ![ que vous ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) souhaitez créer : 
   
 - **Groupe de distribution**: un groupe de distribution permet de distribuer des messages à un groupe d'utilisateurs. Il s’agit également d’un groupe de distribution à *messagerie* ou d’une *liste de distribution.* Pour plus d'informations, voir [Gestion des groupes de distribution](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
     
@@ -102,7 +103,7 @@ Non. Il s’agit simplement d’un moyen de plus pour gérer la sécurité de vo
 
 Oui. Toutefois, si vous souhaitez utiliser des groupes pour la messagerie et la collaboration, nous vous recommandons de créer [un groupe Microsoft 365 à](../create-groups/create-groups.md) la place. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Créer un groupe dans le Centre d'administration Microsoft 365](../create-groups/create-groups.md) (article)\
 [Expliquer Microsoft 365 groupes à vos utilisateurs](../create-groups/explain-groups-knowledge-worker.md) (article)\

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.openlocfilehash: 54bf5cf45e1e6dbbcfe8af0e5b8839cf68104c43
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 6e3b027af45d4a511640406bd10eaf4992a1881f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775575"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164847"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
@@ -116,7 +117,7 @@ Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de 
     
 ::: moniker-end
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Ajouter un domaine à Microsoft 365](../setup/add-domain.md) (article)\
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)\

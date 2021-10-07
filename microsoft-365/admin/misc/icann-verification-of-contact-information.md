@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: Découvrez comment valider vos informations de contact pour se conformer aux réglementations ICANN.
-ms.openlocfilehash: c97cc8fd5bffc054dec86b8118d9bcd6616dd351
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6789dff94ae26479cef87cae28326ddfb60ef5b4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58566129"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164343"
 ---
 # <a name="icann-verification-of-contact-information"></a>Vérification des informations de contact par l’ICANN
 

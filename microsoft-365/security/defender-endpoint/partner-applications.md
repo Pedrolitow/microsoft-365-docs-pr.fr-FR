@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4d8643a1c7e39df1d2f2250e7a61caa0535cbae
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 09e4b386d61835f4e15e208aaa64c69ddf85e112
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353741"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162987"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applications partenaires dans Microsoft Defender pour point de terminaison
 
@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint s’intègre de façon transparente aux solution
 Logo|Nom du partenaire|Description
 :---|:---|:---
 ![Image du logo AttackIQ.](images/attackiq-logo.png)|[Plateforme AttackIQ](https://go.microsoft.com/fwlink/?linkid=2103502)|La plateforme AttackIQ valide que Defender pour endpoint est configuré correctement en lançant des attaques continues en toute sécurité sur les ressources de production
-![Image du logo Azure Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Diffuser des alertes à partir de Microsoft Defender pour point de terminaison dans Azure Sentinel
+![Image du logo Azure Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Diffuser des alertes de Microsoft Defender pour point de terminaison dans Azure Sentinel
 ![Image du logo Cymulate.](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Corréler les résultats de Defender pour les points de terminaison avec des attaques simulées pour valider la détection précise et les actions de réponse efficaces
 ![Image du logo de sécurité élastique.](images/elastic-security-logo.png)|[Sécurité élastique](https://go.microsoft.com/fwlink/?linkid=2139303)|La sécurité élastique est une solution gratuite et ouverte pour la prévention, la détection et la réponse aux menaces
 ![Image du logo IBM QRadar.](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configurer IBM QRadar pour collecter les détections à partir de Defender for Endpoint
@@ -90,7 +90,7 @@ Logo|Nom du partenaire|Description
 Logo|Nom du partenaire|Description
 :---|:---|:---
 ![Image du logo aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|S’assurer que Defender pour le point de terminaison est installé et mis à jour sur chaque point de terminaison avant d’autoriser l’accès au réseau
-![Image du logo Blue Hexagon pour le réseau.](images/bluehexagon-logo.png)|[Hexagone bleu pour le réseau](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon a créé la première plateforme d’apprentissage profond en temps réel du secteur pour la protection contre les menaces réseau
+![Image du logo Hexagone bleu pour le réseau.](images/bluehexagon-logo.png)|[Hexagone bleu pour le réseau](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon a créé la première plateforme d’apprentissage profond en temps réel du secteur pour la protection contre les menaces réseau
 ![Image du logo CyberMDX.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX intègre la visibilité complète des biens de santé, la prévention des menaces et le repose dans votre environnement Defender for Endpoint
 ![Image du logo GLOS Protect.](images/hyas-logo.png)|[Protection GLOS](https://go.microsoft.com/fwlink/?linkid=2156763)|La protection FENS utilise la connaissance faisant autorité de l’infrastructure des attaquants pour protéger de manière proactive Microsoft Defender pour les points de terminaison des points de terminaison contre les cyberattaques
 ![Image du logo de détection et de réponse réseau (NDR) Vectra.](images/vectra-logo.png)|[Détection et réponse du réseau Vectra (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applique une recherche de sécurité & ident de l’IA pour détecter les cyberattaques et y répondre en temps réel
@@ -102,7 +102,7 @@ Logo|Nom du partenaire|Description
 ![Image du logo Bitdefender.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone est une plateforme de protection de point de terminaison nouvelle génération en couches offrant une protection complète contre la gamme complète des cybermenaces sophistiquées
 ![Image du logo Better Mobile.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|Solution MTD basée sur l’IA pour arrêter les menaces mobiles & hameçonnage. Navigation internet privée pour protéger la confidentialité des utilisateurs
 ![Image du logo Corrata.](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Solution mobile : protéger vos appareils mobiles avec une visibilité et un contrôle granulaires de Corrata
-![Image du logo De Point de garde.](images/lookout-logo.png)|[Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)|Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
+![Image du logo Point d’observation.](images/lookout-logo.png)|[Point d’observation](https://go.microsoft.com/fwlink/?linkid=866935)|Obtenir la télémétrie Protection mobile contre les menaces de recherche pour les appareils mobiles Android et iOS
 ![Image du logo Symantec Endpoint Protection Mobile.](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile permet aux entreprises de prévoir, détecter et prévenir les menaces et vulnérabilités de sécurité sur les appareils mobiles
 ![Image du logo Zimperium.](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Étendre votre defender pour point de terminaison à iOS et Android avec Machine Learning protection contre les menaces mobiles basée sur Machine Learning mobile
 
@@ -116,7 +116,7 @@ Logo|Nom du partenaire|Description
 
 ## <a name="siem-integration"></a>Intégration SIEM
 
-Defender pour le point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes. Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
+Defender pour point de terminaison prend en charge l’intégration SIEM par le biais de différentes méthodes. Cela peut inclure une interface système SIEM spécialisée avec des connecteurs standard, une API d’alerte générique activant des implémentations personnalisées et une API d’action activant la gestion de l’état des alertes. Pour plus d’informations, voir [Activer l’intégration SIEM.](enable-siem-integration.md)
 
 ## <a name="ticketing-and-it-service-management"></a>Gestion des tickets et du service it
 
@@ -144,4 +144,4 @@ Defender pour le point de terminaison prend actuellement en charge la mise en co
 
 ## <a name="support-for-non-windows-platforms"></a>Prise en charge des plateformes non Windows web
 
-Defender for Endpoint offre une expérience centralisée des opérations de sécurité pour les plateformes Windows et non Windows, y compris les appareils mobiles. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans le portail et mieux protéger le réseau de votre organisation.
+Defender for Endpoint offre une expérience d’opérations de sécurité centralisée pour les plateformes Windows et non Windows, y compris les appareils mobiles. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans le portail et mieux protéger le réseau de votre organisation.

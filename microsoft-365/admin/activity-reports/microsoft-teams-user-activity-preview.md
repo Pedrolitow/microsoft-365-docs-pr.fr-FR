@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d Microsoft Teams’activité de l’utilisateur et obtenir des informations sur l Teams de votre organisation.
-ms.openlocfilehash: 6f75b3547af25f06858eb72ab1956e787f6e6bc5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0055fda46b3c958d57d66a21d33f2589b6985e30
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177244"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157433"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
 
@@ -40,7 +40,7 @@ Le tableau de bord Microsoft 365 **rapports de** gestion des données vous prés
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpréter le rapport Activité de l'utilisateur sur Microsoft Teams
 
-Vous pouvez afficher l’activité de l’utilisateur dans Teams rapport en choisissant **l’onglet Activité de l’utilisateur.** <br/>![Microsoft 365 rapports : Microsoft Teams l’activité de l’utilisateur.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+Vous pouvez afficher l’activité de l’utilisateur dans Teams rapport en choisissant l’onglet **Activité de l’utilisateur.** <br/>![Microsoft 365 rapports : Microsoft Teams l’activité de l’utilisateur.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Teams d’activité de l’utilisateur : choisissez des colonnes.](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
 
@@ -50,7 +50,7 @@ Le rapport **Activité de l'utilisateur sur Microsoft Teams** permet d'observer 
 
 Pour garantir la qualité des données, nous apportons quotidiennement des vérifications de validation des données au cours des trois derniers jours et nous remplissons les lacunes détectées. Vous remarquerez peut-être des différences dans les données historiques au cours du processus.
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme.   <br/> |
@@ -68,6 +68,6 @@ Pour garantir la qualité des données, nous apportons quotidiennement des véri
 |Participations prévues à une seule fois  <br/> |Nombre de réunions prévues à une seule heure pour un utilisateur au cours de la période spécifiée.  <br/> |
 |Réunions ayant participé à des réunions périodiques  <br/> |Nombre de réunions périodiques pendant la période spécifiée.  <br/> |
 |Est titulaire d’une licence  <br/> |Sélectionné si l’utilisateur est titulaire d’une licence d’utilisation Teams. <br/>|
-|Autre activité  <br/>|L’utilisateur est actif, mais a effectué d’autres activités que les types d’action exposés proposés dans le rapport (envoi ou réponse aux messages de canal et aux messages de conversation, planification ou participation à des appels et réunions en une fois). Exemples d’actions : lorsqu’un utilisateur modifie l’état Teams ou le message d’état Teams ou ouvre un billet de message de canal, mais ne répond pas.  <br/>|
+|Autre activité  <br/>|L’utilisateur est actif, mais a effectué d’autres activités que les types d’actions exposés proposés dans le rapport (envoi ou réponse aux messages de canal et aux messages de conversation, planification ou participation à des appels et réunions en une fois). Exemples d’actions : lorsqu’un utilisateur modifie l’état Teams ou le message d’état Teams ou ouvre un billet de message de canal, mais ne répond pas.  <br/>|
 |réunions non classifiées <br/>|Celui qui ne peut pas être classé comme planning, périodique ou ad hoc. Leur nombre est court et ne peuvent principalement pas être identifiés en raison d’informations de télémétrie falsifiées. |
 |||

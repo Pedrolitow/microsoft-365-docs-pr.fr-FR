@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: Découvrez comment personnaliser, organiser et gérer votre site d SharePoint d’équipe avec des bibliothèques de documents, des listes et des hubs.
-ms.openlocfilehash: fc6aad3408df0f9c14f9d87984a60ae4c5c715b5
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: Découvrez comment personnaliser, organiser et gérer SharePoint site d’équipe avec des bibliothèques de documents, des listes et des hubs.
+ms.openlocfilehash: ee556de76b7a4dee52feef388c84b0c4222d960d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775839"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161389"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
@@ -62,7 +62,7 @@ Pour en savoir plus sur les paramètres du site d’équipe, consultez La [Share
 
 Un site d’équipe inclut une bibliothèque de documents que vous pouvez commencer à utiliser immédiatement pour le stockage de fichiers et la gestion des documents.
 
-Pour commencer le chargement, voir [Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
+Pour commencer le chargement, [voir Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
 Découvrez comment modifier, supprimer, consulter des fichiers, etc. Pour plus d’informations, voir [Travailler avec des fichiers dans une bibliothèque de documents.](https://support.microsoft.com/office/a9d89171-1673-4892-9dd2-1ca52037dea2)
   

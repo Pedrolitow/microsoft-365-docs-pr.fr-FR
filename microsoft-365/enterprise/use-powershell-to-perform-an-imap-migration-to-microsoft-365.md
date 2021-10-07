@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: Découvrez comment utiliser PowerShell pour effectuer une migration IMAP (Internet Mail Access Protocol) vers Microsoft 365.
-ms.openlocfilehash: 3447aa5be5ba76c5f8c85849ce8c5ea0e05a5ad4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 08cffcbe3a08031df05da68358da062200eb99c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202061"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163239"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365
 
@@ -208,9 +208,9 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>Étape 5 : Router votre courrier vers Microsoft 365
 <a name="BK_Step5"> </a>
 
-Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration de messagerie vers Microsoft 365 est terminée, il est temps de faire pointer votre enregistrement MX vers Microsoft 365. Cela permet de s’assurer que le courrier électronique est remis à Microsoft 365 boîtes aux lettres. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt.
+Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration du courrier vers Microsoft 365 est terminée, il est temps de pointer votre enregistrement MX vers Microsoft 365. Cela permet de s’assurer que le courrier électronique est remis à Microsoft 365 boîtes aux lettres. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt.
 
-Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n’est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, des [instructions générales](https://go.microsoft.com/fwlink/?LinkId=397449) sur l’enregistrement MX sont également fournies.
+Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n’est pas inclus ou si vous souhaitez avoir une idée des instructions générales, des [instructions générales](https://go.microsoft.com/fwlink/?LinkId=397449) sur l’enregistrement MX sont également fournies.
 
 Il faut compter jusqu’à 72 heures pour que les systèmes de messagerie de vos clients et partenaires reconnaissent l’enregistrement MX modifié. Patientez au moins 72 heures avant de procéder à la tâche suivante : Étape 6 : Supprimez le lot de migration IMAP
 

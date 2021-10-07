@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3582c74eca0c87b40f28491d2e4991c5f28a47b6
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: eef9c82593d75ecebb4d07b5bcaaf39ff59cb350
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774411"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164559"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser un domaine par défaut comme  *yourcompany.onmicrosoft. <sp
 
 Appeler le support Microsoft - Obtenir [de l’aide pour la configuration d’un domaine](../../business-video/get-help-support.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Acheter un domaine](buy-a-domain-name.md) (article)
 

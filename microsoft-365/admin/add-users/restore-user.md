@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Dans les 30 jours suivant la suppression d’un compte d’utilisateur, vous pouvez restaurer le compte et toutes les données, et l’utilisateur peut se connecter avec le même compte.
-ms.openlocfilehash: 9426b1fde7be3ba5b8608af0db71741434898c5e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 093e3d34f4f92e633fb7ece232d4f5abcc912e8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774110"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161557"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
    
@@ -87,11 +88,11 @@ Pour ce [faire,](about-admin-roles.md) vous devez Microsoft 365 administrateur.
 
 2. Sur la page **Utilisateurs supprimés**, sélectionnez l'utilisateur à restaurer, puis **Restaurer**. 
     
-3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionnez **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
+3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionner **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
     
 4. Examinez les résultats, puis sélectionnez **Fermer**.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Supprimer un utilisateur](delete-a-user.md) (article)\
 [Attribuer des rôles d’administrateur](assign-admin-roles.md) (vidéo)\

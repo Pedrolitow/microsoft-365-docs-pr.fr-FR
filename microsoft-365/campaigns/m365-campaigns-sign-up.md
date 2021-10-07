@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Inscrivez-vous pas à pas pour Microsoft 365 campagnes. Protégez votre campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: deaf91850ae5dbd3ed2a4637e0eb157d29215992
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7ef49e686a152cd4bc56d39e7edff107dfbb2ea7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178276"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156881"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire aux Microsoft 365 campagnes 
 
@@ -84,7 +84,7 @@ Si vous avez déjà un abonnement à Microsoft 365 pour les entreprises, par exe
     ![Sélectionnez Se connectez dans le coin supérieur droit.](../media/addtoexisting.png)
 3. Sur la page de signature, entrez l’alias d’administrateur de votre abonnement existant, par exemple *Alice@VoteContoso <span></span> .org*, choisissez Suivant, entrez votre mot de passe, puis **connectez-vous.**
 4. Dans la **partie à quoi cela ressemble-t-il ?** Entrez le nombre d’utilisateurs dont vous avez et choisissez **Suivant**. Vous n’avez pas besoin d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL d’invitation.
-5. On the **How do you want to pay?** page, enter your payment method and choose Place **order**.
+5. Dans la page **Comment voulez-vous payer ?** entrez votre mode de paiement et choisissez **Commande.**
 
 Une fois ces étapes effectuées, vous êtes prêt à attribuer les nouvelles [licences](../admin/manage/assign-licenses-to-users.md) à votre équipe de campagne.
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Collectez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS afin de connecter votre domaine à Microsoft 365 abonnement.
-ms.openlocfilehash: c56120e446ccde93d353bd4e36fd03493cda4688
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 52d3dfdf0e964c750a0aecd67d2fb6064eb0625e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774447"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164679"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : rechercher la valeur de l’enregistrement TXT et vérifier
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
 
 ::: moniker range="o365-worldwide"
 
@@ -89,7 +89,7 @@ ms.locfileid: "59774447"
     
 2. Dans la page **Domaines**, sélectionnez votre domaine.
     
-3. Choisissez **Gérer DNS,** sélectionnez **Autres options** Ajouter votre propre DNS et sélectionnez Continuer à voir les enregistrements  >   DNS à ajouter. 
+3. Choose **Manage DNS,** select **More Options** Add your own  >  **DNS** and select **Continue** to see the DNS records to add.
     
     Il est recommandé de conserver ces informations disponibles tandis que vous apportez des modifications à votre hôte DNS, pour que vous puissiez copier et coller les valeurs.
     
@@ -103,4 +103,4 @@ ms.locfileid: "59774447"
 
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)\
 [Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)\
-[Gérer des domaines](index.yml) (page de lien)
+[Gérer des domaines](/admin) (page de lien)

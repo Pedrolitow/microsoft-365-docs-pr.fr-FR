@@ -2,15 +2,13 @@
 title: Configurer Microsoft Defender pour le déploiement de point de terminaison
 description: Découvrez comment configurer le déploiement de Microsoft Defender pour endpoint
 keywords: déployer, configuration, validation de licence, configuration du client, configuration réseau
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab7007143fd472757f8f6489cb14babc8cda1129
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 22b4e1c1609264a5eef17e2149b4b6e50d707999
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460185"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162565"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -49,7 +47,7 @@ Dans ce scénario de déploiement, vous serez guidé dans les étapes suivantes 
 
 - Validation des licences
 - Configuration du client
-- Configuration réseau
+- Configuration du réseau
 
 > [!NOTE]
 > Pour vous guider tout au long d’un déploiement classique, ce scénario couvre uniquement l’utilisation des Microsoft Endpoint Configuration Manager. Defender pour le point de terminaison prend en charge l’utilisation d’autres outils d’intégration, mais ne couvre pas ces scénarios dans le guide de déploiement. Pour plus d’informations, [voir Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
@@ -84,11 +82,11 @@ L’intégration à Microsoft Defender pour le point de terminaison est facile. 
 
 À partir d’un navigateur web, accédez au [centre Microsoft 365 sécurité.](https://security.microsoft.com)
 
-## <a name="network-configuration"></a>Configuration réseau
+## <a name="network-configuration"></a>Configuration du réseau
 
 Si l’organisation n’exige pas que les points de terminaison utilisent un proxy pour accéder à Internet, ignorez cette section.
 
-Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison. Le capteur Microsoft Defender for Endpoint incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise les services Microsoft Windows HTTP Services (WinHTTP) pour activer la communication avec le service Cloud Microsoft Defender pour point de terminaison. Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et peut uniquement découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
+Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison. Le capteur Microsoft Defender for Endpoint incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise les services Microsoft Windows HTTP Services (WinHTTP) pour activer la communication avec le service Cloud Microsoft Defender pour point de terminaison. Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et ne peut découvrir un serveur proxy qu’à l’aide des méthodes de découverte suivantes :
 
 - **Méthodes de découverte automatique**:
   - Proxy transparent
@@ -106,7 +104,7 @@ Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windo
 
 Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Microsoft Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Microsoft Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet. Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
-- Modèles d Windows de collecte de données et de builds d’aperçu des composants Configurez l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et \> \> \> télémétrie
+- Modèles d Windows de collecte de données et de builds d’aperçu des composants Configurez l’utilisation du proxy authentifié pour le service Expérience des utilisateurs connectés et \> \> \> télémétrie
 - Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié**
 
 1. Ouvrez la console de gestion des stratégies de groupe.
@@ -163,7 +161,7 @@ Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ai
 
 ### <a name="proxy-service-urls"></a>URL de service proxy
 
-Les URL qui incluent v20 sont nécessaires uniquement si vous avez des Windows 10, version 1803 ou ultérieure. Par exemple, n’est nécessaire que si l’appareil est `us-v20.events.data.microsoft.com` Windows 10 version 1803 ou ultérieure.
+Les URL qui incluent v20 sont nécessaires uniquement si vous avez Windows 10, version 1803 ou Windows 11. Par exemple, n’est nécessaire que si l’appareil est Windows 10 `us-v20.events.data.microsoft.com` version 1803 ou Windows 11.
 
 Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Microsoft Defender pour point de terminaison se connecte à partir du contexte système, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées.
 
@@ -175,7 +173,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 |Liste de feuilles de calcul de domaines|Description|
 |---|---|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 ## <a name="next-step"></a>Étape suivante

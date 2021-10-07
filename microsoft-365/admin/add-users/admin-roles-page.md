@@ -8,7 +8,7 @@ manager: svidican
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les rôles d’administrateur sont map faits avec les fonctions métiers et fournissent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: b6e787fe4eb72ef5a6d8da78391839509a38b446
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 8232e95649ac894e8a024a2d2ac4e7b4261cb1f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773642"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161917"
 ---
 # <a name="get-started-with-the-roles-page"></a>Mise en place de la page rôles
 
@@ -64,7 +64,7 @@ Attribuez le Exchange administrateur principal aux utilisateurs qui ont besoin d
 
 Attribuez le rôle d’administrateur global aux utilisateurs qui ont besoin d’un accès global à la plupart des fonctionnalités et données de gestion dans les services en ligne Microsoft. Le fait de donner un accès global à un grand nombre d’utilisateurs représente un risque pour la sécurité et nous vous recommandons de n’avoir que 2 à 4 administrateurs généraux. Seuls les administrateurs globaux peuvent réinitialiser les mots de passe de tous les utilisateurs et ajouter et gérer des domaines. Ils peuvent également ouvrir et gérer les demandes de support au support Microsoft. La personne qui s’est inscrite aux services en ligne Microsoft devient automatiquement un administrateur global. En [savoir plus](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>Lecteur global
+### <a name="global-reader"></a>Lecteur général
 
 Attribuez le rôle d’administrateur de lecteur global aux utilisateurs qui doivent afficher les fonctionnalités et paramètres d’administration dans tous les centres d’administration que l’administrateur global peut afficher. Le rôle d’administrateur de lecteur global ne peut modifier aucun paramètre. [En savoir plus](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
@@ -82,7 +82,7 @@ Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automa
 
 ### <a name="teams-service-admin"></a>Administrateur du service Teams
 
-Attribuez le Teams administrateur principal aux utilisateurs qui vous souhaitez accéder au centre d’administration Teams & Skype et les gérer. Les utilisateurs ayant Teams rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes de support et ouvrir des demandes de support via le support Microsoft. [En savoir plus](/MicrosoftTeams/using-admin-roles)
+Attribuez le Teams administrateur principal aux utilisateurs qui vous souhaitez accéder au centre d’administration Teams & Skype et les gérer. Les utilisateurs ayant Teams rôle d’administrateur principal peuvent également gérer les groupes Microsoft 365 et ouvrir des demandes de support via le support Microsoft. [En savoir plus](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Administrateur d’utilisateurs
 

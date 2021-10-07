@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Découvrez comment valider les paramètres Microsoft 365 Business Premium protection des applications sur vos appareils Android ou iOS.
-ms.openlocfilehash: aaad8d11cb983973b6aaa2efe838de21712ef50a
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 100c4f759578100ae94df24bb7009f4e76a6eb02
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933398"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165387"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Valider les paramètres de protection des applications sur les appareils Android ou iOS
 
@@ -67,7 +67,7 @@ In the **Edit policy** pane, choose **Edit** next to Office documents **access c
   
 1. Sur l’appareil Android de l’utilisateur, Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
     
-2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel **est atteinte** pour réinitialiser le code confidentiel. 
+2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel est **atteinte** pour réinitialiser le code confidentiel. 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
@@ -156,7 +156,7 @@ In the **Edit policy** pane, choose **Edit** next to Office documents **access c
   
 1. Sur l’appareil iOS de l’utilisateur, ouvrez Outlook et connectez-vous avec les informations d’identification Microsoft 365 Business Premium utilisateur.
     
-2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel **est atteinte** pour réinitialiser le code confidentiel. 
+2. Entrez un code confidentiel incorrect autant de fois que le spécifie la stratégie. Vous verrez une invite qui indique que la limite de tentative de code confidentiel est **atteinte** pour réinitialiser le code confidentiel. 
     
     ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
@@ -174,7 +174,7 @@ Dans le volet **Modifier une stratégie**, sélectionnez **Modifier** en regard 
     
     ![Tap the Save option after you open an attachment to try to save it.](../../media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. Seule une option pour OneDrive Entreprise devrait être affichée. Si ce n’est pas le cas, appuyez **sur** Ajouter un **OneDrive Entreprise** l’écran **Ajouter Stockage compte.** Fournissez la demande de l’utilisateur Microsoft 365 Business Premium se connecte lorsque vous y êtes invité. 
+3. Seule une option pour OneDrive Entreprise devrait être affichée. Si ce n’est pas le cas, appuyez **sur** Ajouter **un OneDrive Entreprise** l’écran Ajouter **Stockage compte.** Fournissez la demande de l’utilisateur Microsoft 365 Business Premium se connecte lorsque vous y êtes invité. 
     
     Appuyez sur **Enregistrer** et sélectionnez **OneDrive Entreprise**.
     

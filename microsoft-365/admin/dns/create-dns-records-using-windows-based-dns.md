@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS pour Microsoft à l’Windows DNS
+title: Créer des enregistrements pour Microsoft à l'aide de DNS Windows
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Windows DNS basé sur Windows microsoft.
-ms.openlocfilehash: 3a1b11eb9663a68f7787b026c7c7402db8ef4a854e4b9ecdb3356bb1074e2610
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 43cc3679f33a929545ed3d9deec388126aec853c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53826206"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165291"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’Windows DNS
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements pour Microsoft à l'aide de DNS Windows
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
    
@@ -41,21 +41,21 @@ Pour commencer, vous devez trouver vos enregistrements [DNS dans Windows DNS](#f
 Trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Rechercher vos enregistrements DNS dans un DNS Windows
-<a name="BKMK_find_your_dns_1"></a> Go to the page that has the DNS records for your domain. Si vous travaillez dans Windows Server 2008, allez à **Démarrer**  >  **l’exécuter.** Si vous travaillez dans Windows Server 2012, appuyez sur la touche Windows et **r**. Tapez **dnsmgmnt.msc,** puis sélectionnez **OK**. Dans le Gestionnaire DNS, développez **\<DNS server name\> \> zones de recherche avant.** Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
+<a name="BKMK_find_your_dns_1"></a> Go to the page that has the DNS records for your domain. Si vous travaillez dans Windows Server 2008, allez à **Démarrer**  >  **l’exécuter.** Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et **r**. Tapez **dnsmgmnt.msc**, puis sélectionnez **OK**. Dans le Gestionnaire DNS, développez **\<DNS server name\> \> zones de recherche avant.** Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
    
 ## <a name="add-mx-record"></a>Ajouter l'enregistrement MX
 <a name="BKMK_add_MX"> </a>
 
 Ajoutez un enregistrement MX afin que le courrier électronique de votre domaine soit envoyé à Microsoft.
 - L’enregistrement MX que vous allez  ajouter inclut une valeur (la valeur d’adresse Points vers) qui ressemble à ceci : .mail.protection.outlook.com, où est une valeur comme \<MX token\> \<MX token\> MSxxxxxxx. 
-- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Microsoft, copiez la valeur répertoriée sous Adresse points. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
+- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Microsoft, copiez la valeur répertoriée sous Adresse des points. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
 - On the DNS Manager page for the domain, go to **Action**  >  **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir Rechercher vos enregistrements [DNS dans Windows DNS basé sur le domaine.](#find-your-dns-records-in-windows-based-dns)  
 - Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes : 
-    - Nom d’hôte : 
+    - Nom de l’hôte :  
     - @Address : collez la valeur d’adresse points que vous avez copiée ici à partir de Microsoft.  
     - Préf : 
 - Sélectionnez **Enregistrer les modifications**.
-- Supprimez les enregistrements MX obsolètes. Si vous avez d’anciens enregistrements MX pour ce domaine qui routent le courrier électronique ailleurs, cochez la case en regard de chaque ancien enregistrement, puis sélectionnez **Supprimer**  >  **OK**. 
+- Supprimez les enregistrements MX obsolètes. Si vous avez d’anciens enregistrements MX pour ce domaine qui routent le courrier électronique ailleurs, cochez la case en regard de chaque ancien enregistrement, puis sélectionnez **Supprimer**  >  **OK.** 
    
 ## <a name="add-cname-records"></a>Ajouter les enregistrements CNAME
 <a name="BKMK_add_CNAME"> </a>
@@ -186,7 +186,7 @@ Ajoutez un enregistrement TXT.
 - Nom d’hôte : @
 - Type : TXT
 - Adresse : collez la valeur Destination ou Pointe vers l’adresse que vous avez copiée ici à partir de Microsoft.  
-- Sélectionnez **OK**  >  **Terminé**.
+- Sélectionnez **OK**  >  **Terminé.**
 
 Vérifiez votre domaine dans Microsoft.  
 > [!IMPORTANT]
@@ -195,7 +195,7 @@ Vérifiez votre domaine dans Microsoft.
 - Revenir à Microsoft et suivez les étapes ci-dessous pour demander une vérification. La vérification recherche l'enregistrement TXT que vous avez ajouté à l'étape précédente. Lorsqu'elle trouve l'enregistrement TXT correct, le domaine est vérifié.  
 1. Dans le centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines d’installation.</a>
 2. Dans la page **Domaines,** dans la colonne **Action** du domaine que vous vérifiez, sélectionnez **Démarrer la configuration.** 
-3. Dans la page **Confirmer que vous** êtes propriétaire de votre domaine, sélectionnez **Terminé, vérifiez** maintenant, puis dans la boîte de dialogue de confirmation, sélectionnez **Terminer.** 
+3. Dans la page **Confirmer que vous** êtes propriétaire de votre domaine, sélectionnez **Terminé, vérifiez** maintenant, puis, dans la boîte de dialogue de confirmation, sélectionnez **Terminer**. 
    
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -208,8 +208,8 @@ Si vous envisagez de synchroniser votre annuaire Active Directory local avec Mic
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Transférer un domaine de Microsoft 365 vers un autre hôte](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
-[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\
+[Pilote Microsoft 365 à partir de mon domaine personnalisé](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)

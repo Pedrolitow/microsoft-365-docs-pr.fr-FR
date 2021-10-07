@@ -10,18 +10,18 @@ metadata:
   ms.topic: article
   ms.service: o365-administration
   ms.custom: commerce_vl
-  localization_priority: Normal
+  ms.localizationpriority: medium
   description: Questions fréquemment posées sur Centre d'administration Microsoft 365 téléchargements.
-  ms.openlocfilehash: c9ac712e84fd60e96ba3fa8749cacda76aa0c354
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 5ac5fb32f968902e772c5f98beb425d74f154ac8
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59181625"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60163635"
 title: Télécharge les questions fréquemment posées
 summary: ''
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       Quelles sont les conditions requises pour télécharger des logiciels à partir du Centre d'administration Microsoft 365 ?
@@ -48,7 +48,7 @@ sections:
       Une licence d’accès client (CAL) est une licence qui donne à un utilisateur le droit d’accéder aux services du serveur.
 
 
-      Vous n’avez pas besoin d’un fichier de téléchargement de logiciel ou d’une clé de produit pour activer une licence d’accès basé sur un logiciel. Au lieu de cela, le produit est activé et installé via l’Assistant Activation directement à partir de votre ordinateur.
+      Vous n’avez pas besoin d’un fichier de téléchargement de logiciel ou d’une clé de produit pour activer une licence d’accès basé sur un cal. Au lieu de cela, le produit est activé et installé via l’Assistant Activation directement à partir de votre ordinateur.
 
 
       Voici quelques exemples de cas de contrôle d’utilisation :
@@ -79,7 +79,7 @@ sections:
 
       > [!NOTE]
 
-      > Les bloqueurs de fenêtres pop-up peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs de fenêtres pop-up sont désactivés lorsque vous téléchargez des logiciels à partir du Centre d’administration.
+      > Les bloqueurs de fenêtres pop-up peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs de fenêtres pop-up sont désactivés lorsque vous téléchargez le logiciel à partir du Centre d’administration.
   - question: >
       Que sont les fichiers EXE et ISO ?
     answer: "Vous pouvez sélectionner deux types de fichiers lorsque vous téléchargez des produits à partir du Centre d’administration :\n  \n  - **Les fichiers exécutables (EXE)** peuvent être téléchargés et installés sur le même système, mais vous ne pouvez pas créer de disques de démarrage distincts pour l’installation sur d’autres ordinateurs.\n  - **Les fichiers image ISO (International Standards Organization)** sont des représentations exactes du contenu et du format logique. Vous pouvez les installer sur l’ordinateur utilisé pour télécharger le package ou écrire les fichiers sur les disques pour la distribution et l’installation sur d’autres ordinateurs.\n\n> [!NOTE]\n> Tous les produits ne sont pas disponibles dans toutes les langues et dans tous les formats.\n"
@@ -102,11 +102,11 @@ sections:
   - question: >
       Comment obtenir une assistance pour les produits téléchargés ?
     answer: >
-      Pour obtenir la liste des options de support, consultez [le Support Microsoft.](https://support.microsoft.com/) Certains clients de licence en volume peuvent utiliser la prise en charge de la résolution des problèmes, un software assurance benefit. Vérifiez vos avantages software assurance pour vérifier votre éligibilité.
+      Pour obtenir la liste des options de support, consultez [le Support Microsoft.](https://support.microsoft.com/) Certains clients de licence en volume peuvent utiliser la prise en charge de la résolution des problèmes, un avantage Software Assurance. Vérifiez vos avantages software assurance pour vérifier votre éligibilité.
   - question: >
       Où puis-je trouver de l’aide pour les rubriques couvertes dans ce FAQ ?
     answer: >
-      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des licences [en volume Microsoft.](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)
+      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des [licences en volume Microsoft.](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)
   - question: >
       Comment puis-je contacter le Support Microsoft ?
     answer: >

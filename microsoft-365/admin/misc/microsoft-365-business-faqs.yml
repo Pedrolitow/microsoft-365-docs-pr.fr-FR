@@ -10,16 +10,16 @@ metadata:
   ms.prod: microsoft-365-business
   ms.collection: M365-subscription-management
   ms.custom: AdminSurgePortfolio
-  localization_priority: Normal
+  ms.localizationpriority: medium
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
   ms.date: 07/21/2020
-  ms.openlocfilehash: 3ae49578e98ed69a9fb240d2e323790247bd2f69
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 86b2628c56434071ea7176fbece168651c0c72b3
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59178812"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60161449"
 title: Forum Aux Questions Microsoft 365 Business Premium
 summary: ''
 sections:
@@ -55,7 +55,7 @@ sections:
 
       - Protection des identités avec l’authentification multifacteur, la réinitialisation du mot de passe en libre-service et l’accès conditionnel.
 
-      - Configuration de sécurité cohérente sur les appareils protection &mdash; des données d’entreprise sur les appareils ; Antivirus Microsoft Defender, qui est toujours à jour.
+      - Une configuration de sécurité cohérente sur tous les &mdash; appareils protège les données d’entreprise sur tous les appareils ; Antivirus Microsoft Defender, qui est toujours à jour.
 
 
       **Déploiement simplifié des appareils et configuration utilisateur**:
@@ -188,7 +188,7 @@ sections:
     answer: Toutes les extensions qui peuvent être ajoutées à Microsoft 365 Business Standard peuvent être ajoutées à Microsoft 365 Business Premium. Cela signifie que vous pouvez acheter Sécurité des applications cloud Office 365, conformité avancée, Threat Intelligence, MyAnalytics, Power BI Pro et Audioconférence.
   - question: Puis-je ajouter Système téléphonique et des forfaits d’appel à Microsoft 365 Business Premium ?
     answer: >
-      Oui, vous pouvez acheter un abonnement Business Voice. [Business Voice](/microsoftteams/business-voice/whats-business-voice) est une solution de téléphonie conçue pour les petites et moyennes entreprises de 300 utilisateurs qui regroupe des Système téléphonique, des audioconférences, un forfait d’appels nationaux, etc. Système téléphonique fonctionnalités que vous recevrez incluent la messagerie vocale, l’ID de l’appelant, le parcage d’appel, le forwarding d’appel, les attendants automatiques et les files d’attente d’appels. <br> Pour savoir si Business Voice est disponible dans votre pays ou région, consultez La disponibilité des pays et régions [pour Business Voice.](/microsoftteams/business-voice/country-region-availability) Pour plus d’informations sur les tarifs, [voir Tarification pour Business Voice.](https://go.microsoft.com/fwlink/?linkid=2127221)
+      Oui, vous pouvez acheter un abonnement Business Voice. [Business Voice](/microsoftteams/business-voice/whats-business-voice) est une solution de téléphonie conçue pour les petites et moyennes entreprises de 300 utilisateurs qui regroupe des Système téléphonique, des audioconférences, un forfait d’appels nationaux, etc. Système téléphonique fonctionnalités de messagerie vocale, d’ID d’appelant, de parcage d’appel, de forwarding d’appel, de attendants automatiques et de files d’attente d’appels. <br> Pour savoir si Business Voice est disponible dans votre pays ou région, consultez La disponibilité des pays et régions [pour Business Voice.](/microsoftteams/business-voice/country-region-availability) Pour plus d’informations sur les tarifs, [voir Tarification pour Business Voice.](https://go.microsoft.com/fwlink/?linkid=2127221)
   - question: Les clients Microsoft 365 Business Premium peuvent-ils utiliser Microsoft Defender pour Endpoint ?
     answer: >
       Oui, Microsoft Defender pour le point de terminaison est disponible en tant que module Microsoft 365 Business Premium lorsqu’il est acheté auprès [d’un Fournisseur de solutions Microsoft Cloud](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).

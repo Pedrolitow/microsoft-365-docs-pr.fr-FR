@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Résumé : Utilisez Remote Windows PowerShell pour Microsoft Exchange Online pour récupérer des rapports à partir de locataires de clients individuels.'
-ms.openlocfilehash: ee9639ae8d5b77443dcfc119f34bc378992920ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cc9046ab5c90dcb40cbf012772fd80b56f71ec79
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205323"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163251"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Récupération des données des rapports du locataire d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 

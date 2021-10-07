@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur ICE 17a-4 ICE Connecter Chat DataParser pour importer et archiver des données ICE Connecter Chat dans Microsoft 365.
-ms.openlocfilehash: 551e88be548d4b707dfdf36d1c9581570362f6e5
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 8b956aeb62c7ca9bdeb76f0c9af86f9f243bacff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401325"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163551"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Configurer un connecteur pour archiver les données ICE Connecter Chat
 
 Utilisez [ice DataParser](https://www.17a-4.com/ice-dataparser/) de 17a-4 LLC pour importer et archiver des données de ICE Connecter Chat vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur ICE Chat configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur ICE DataParser convertit les données ICE Connecter Chat au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
-Une fois les données ice Connecter chat stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur ICE DataParser pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données ICE Connecter Chat stockées dans les boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur ICE DataParser pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-ice-chat-data"></a>Vue d’ensemble de l’archivage des données ICE Chat
 
@@ -81,4 +81,4 @@ Après avoir créé un connecteur ICE DataParser, vous pouvez afficher l’état
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

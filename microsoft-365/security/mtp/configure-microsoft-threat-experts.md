@@ -10,16 +10,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 1137ef50c5e3fb72b6bc0532b021de05c7eff1ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b62f847a1a8b7bef15c33f97d5d64a9ec58dd7cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162255"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurer et gérer les fonctionnalités Spécialistes des menaces Microsoft d’Microsoft 365 Defender
 
@@ -41,7 +41,7 @@ Pour recevoir des notifications d’attaque ciblée, vous devez avoir déployé 
 
 Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à Spécialistes des menaces Microsoft - Experts à la demande. Les experts à la demande vous permet de consulter nos experts en matière de menaces sur la façon de protéger votre organisation contre les détections et les adversaires pertinents.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour les Spécialistes des menaces Microsoft - Service de notifications d’attaques ciblées
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft service de notifications d’attaques ciblées
 
 Si vous avez déjà Microsoft Defender pour les points de terminaison et les Microsoft 365 Defender, vous pouvez demander des notifications d’Spécialistes des menaces Microsoft – Des notifications d’attaques ciblées via Microsoft 365 Defender portail.  Les notifications d’attaques ciblées vous offrent un aperçu et une analyse spéciaux pour vous aider à identifier les menaces les plus critiques pour votre organisation, afin que vous y répondiez rapidement.
 
@@ -96,28 +96,28 @@ Vous pouvez contacter Spécialistes des menaces Microsoft à partir du portail M
 > [!NOTE]
 >
 > - Les demandes d’alerte liées aux données d’intelligence contre les menaces personnalisées de votre organisation ne sont actuellement pas pris en charge. Pour plus d’informations, consultez vos opérations de sécurité ou votre équipe de réponse aux incidents.
-> - Vous devez avoir l’autorisation Gérer les **paramètres** de sécurité dans le Centre de sécurité dans le portail Microsoft 365 Defender pour soumettre une demande par le biais du formulaire Consulter **un expert** en menaces.
+> - Vous devez avoir l’autorisation Gérer les **paramètres** de sécurité dans le Centre de sécurité dans le portail Microsoft 365 Defender pour soumettre une demande par le biais du formulaire **Consulter un expert** en menaces.
 
 1. Accédez à la page du portail liée aux informations que vous souhaitez examiner : par **exemple,** Périphérique, Alerte ou **Incident**. Assurez-vous que la page du portail liée à votre requête est en vue avant d’envoyer une demande d’enquête.
 
 2. Dans le menu supérieur, sélectionnez **? Consultez un expert en menaces.**
 
-    ![Image de Spécialistes des menaces Microsoft experts à la demande dans le menu.](../../media/mte/incidents-action-mte-highlighted.png)
+    ![Image de Spécialistes des menaces Microsoft experts à la demande à partir du menu.](../../media/mte/incidents-action-mte-highlighted.png)
 
     Un écran volant s’ouvre.
 
     L’en-tête indique si vous êtes sur un abonnement d’essai ou un abonnement complet Spécialistes des menaces Microsoft - Experts à la demande.
 
-    ![Image de l Spécialistes des menaces Microsoft d’abonnement d’essai d’Experts à la demande.](../../media/mte/mte-trial.png)
+    ![Image de l Spécialistes des menaces Microsoft d’abonnement à la version d’essai d’Experts à la demande.](../../media/mte/mte-trial.png)
 
     Le **champ Investigation est** déjà rempli avec le lien vers la page concernée pour votre demande.
 
-3. Dans le champ suivant, fournissez suffisamment d’informations pour donner au Spécialistes des menaces Microsoft suffisamment de contexte pour lancer l’enquête.
+3. Dans le champ suivant, fournissez suffisamment d’informations pour donner au Spécialistes des menaces Microsoft suffisamment de contexte pour démarrer l’examen.
 
 4. Entrez l’adresse de messagerie que vous souhaitez utiliser pour correspondre à Spécialistes des menaces Microsoft.
 
 > [!NOTE]
-> Si vous souhaitez suivre l’état de vos cas d’experts à la demande par le biais du Microsoft Services Hub, faites-en la communication avec votre responsable de compte technique.
+> Si vous souhaitez suivre l’état de vos cas d’experts à la demande via le Microsoft Services Hub, faites-en le suivi.
 
 Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Services Hub.
 
@@ -125,9 +125,9 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ## <a name="sample-investigation-topics"></a>Exemples de rubriques d’examen
 
-### <a name="alert-information"></a>Informations sur les alertes
+### <a name="alert-information"></a>Informations sur l’alerte
 
-- Nous avons vu un nouveau type d’alerte pour un fichier binaire « living-off-the-land ». Nous pouvons fournir l’ID d’alerte. Pouvez-vous nous en dire plus sur cette alerte et sur la façon dont nous pouvons l’examiner plus en détail ?
+- Nous avons vu un nouveau type d’alerte pour un binaire « living-off-the-land ». Nous pouvons fournir l’ID d’alerte. Pouvez-vous nous en dire plus sur cette alerte et sur la façon dont nous pouvons l’examiner plus en détail ?
 - Nous avons observé deux attaques similaires, qui tentent d’exécuter des scripts PowerShell malveillants mais génèrent des alertes différentes. L’une est « Ligne de commande PowerShell suspecte » et l’autre est « Un fichier malveillant a été détecté en fonction de l’indication fournie par O365 ». Quelle est la différence ?
 - Nous avons reçu une alerte impaire aujourd’hui concernant un nombre anormal d’échec de connexion à partir de l’appareil d’un utilisateur à profil élevé. We can’t find any further evidence for these attempts. Comment pouvez Microsoft 365 Defender voir ces tentatives ? Quel type de connexions sont surveillés ?
 - Pouvez-vous donner plus de contexte ou d’informations sur l’alerte « Un comportement suspect a été observé par un utilitaire système » ?
@@ -155,7 +155,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 
 ## <a name="scenario"></a>Scénario
 
-### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Recevoir un rapport d’avancement sur votre recherche gérée
+### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Recevoir un rapport d’avancement sur votre demande de recherche gérée
 
 La réponse de Spécialistes des menaces Microsoft varie en fonction de votre demande. Vous recevrez généralement l’une des réponses suivantes :
 

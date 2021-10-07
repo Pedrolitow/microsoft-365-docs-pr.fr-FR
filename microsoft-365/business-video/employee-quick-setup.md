@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Aidez vos employés à apprendre à configurer Office applications qu’ils obtiennent avec Microsoft 365 Business Premium.
-ms.openlocfilehash: 7c7f28a13438d2cd5974d212d56c6885d8d4850c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a1c3c082cfb676b33e7b033c6516f2f4c37980e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181745"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156953"
 ---
 # <a name="employee-quick-setup"></a>Configuration rapide pour les employés
 

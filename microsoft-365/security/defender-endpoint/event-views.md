@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8bfccfba0dbe3d00829c6e668830551c66d3f893
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7fe31fe2e8e982c1ba8b8bff1aa3e08ce4f94fca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491372"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163047"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -48,7 +48,7 @@ Créez des affichages personnalisés dans Windows’observateur d’événements
 
 Vous pouvez également accéder manuellement à la zone d’événement correspondant à la fonctionnalité.
 
-### <a name="import-an-existing-xml-custom-view"></a>Importer une vue personnalisée XML existante
+### <a name="import-an-existing-xml-custom-view"></a>Importer un affichage personnalisé XML existant
 
 1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
@@ -69,7 +69,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 6. Il crée un affichage personnalisé qui filtre pour afficher uniquement les événements liés à cette fonctionnalité.
 
-### <a name="copy-the-xml-directly"></a>Copier le XML directement
+### <a name="copy-the-xml-directly"></a>Copier directement le XML
 
 1. Tapez **l’Observateur** d’événements dans menu Démarrer et ouvrez l Windows’observateur **d’événements.**
 
@@ -170,7 +170,7 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|13|Audit EAF|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|14 |Forcer EAF|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|15 |Audit EAF+|
-|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|16 |Forcer EAF+|
+|Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|16|Forcer EAF+|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|17 |Audit IAF|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|18 |Forcer IAF|
 |Exploit Protection|Security-Mitigations (mode noyau/mode utilisateur)|19|Audit de StackPivot ROP|
@@ -188,7 +188,7 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1124|Événement d’accès contrôlé aux dossiers audité|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1123|Événement d’accès contrôlé aux dossiers bloqué|
 |Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1127|Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers|
-|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité|
+|Accès contrôlé aux dossiers|Windows Defender (opérationnel)|1128|Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|5007|Événement lorsque les paramètres sont modifiés|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1122|Événement lorsque la règle se déclenche en mode audit|
 |Réduction de la surface d'attaque|Windows Defender (opérationnel)|1121|Événement lorsque la règle se déclenche en mode blocage|

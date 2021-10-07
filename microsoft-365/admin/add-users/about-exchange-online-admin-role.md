@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: Exchange administrateurs en ligne gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
-ms.openlocfilehash: 310074403c57e4c2d8eddc4942d76ebca4181630
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2362731a3837950ecbf0f3fea5e6887311e94d97
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773678"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162013"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos Exchange Online rôle d’administrateur principal
 
@@ -45,7 +45,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
 
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour qu’un groupe de personnes puisse surveiller et envoyer des messages électroniques à partir d’une adresse de messagerie commune.
 
-- Protection contre le courrier indésirable et filtres [anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
+- [Protection contre le courrier indésirable et filtres anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
 
 - Gestion des groupes Microsoft 365
 

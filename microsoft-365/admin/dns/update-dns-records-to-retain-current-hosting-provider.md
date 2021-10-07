@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: Découvrez comment router le trafic vers un site web public existant hébergé en dehors de Microsoft, si vous avez demandé à Microsoft de gérer les enregistrements DNS pour votre domaine personnalisé.
-ms.openlocfilehash: d54aa4583862ce19907a3b8494a333bbb925e436
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bd318710b20373abafc0d27bbd9f91d5b42c7be6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176603"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165279"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Mettre à jour les enregistrements DNS pour conserver votre site web chez votre fournisseur d'hébergement actuel
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: Découvrez comment supprimer ou restaurer le compte Microsoft 365 utilisateur.
-ms.openlocfilehash: 78566f9e16d7bd10540fdbbf7fcee1691b30c4b6e5e1c6d0ebafafde9e9f957a
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 991e9dd21b35aad54bd35532dfad114d977107f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824166"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164319"
 ---
 # <a name="quick-help-deleted-user"></a>Aide rapide : Utilisateur supprimé
 

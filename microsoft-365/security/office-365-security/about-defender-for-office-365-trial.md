@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdo
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Les administrateurs peuvent en savoir plus sur le mode d’essai de Microsoft Defender Office 365
-ms.openlocfilehash: 21cff6ecd695ef95173149eed211b40989fa47ce
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a7e8efc38722b3dc6342255a0193634f307eec27
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402105"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162181"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>À propos de la version d’Office 365 Microsoft Defender
 
@@ -45,13 +45,13 @@ Une version d’essai de Microsoft Defender pour Office 365 est le moyen le plus
 |---|---|
 |[Paramètres exclusifs dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenir la protection contre l’emprunt d’identité d’utilisateur, la protection contre l’usurpation d’identité de domaine, l’intelligence des boîtes aux lettres et les seuils de hameçonnage avancés.|
 |[Pièces jointes fiables](safe-attachments.md)|Inspectez les pièces jointes des e-mails et d’autres fichiers dans un environnement de détonation contrôlé pour capturer les programmes malveillants nouveaux et anti-programme malveillant.|
-|[Liens fiables](safe-links.md)|Effectuez des vérifications au moment du clic pour vous assurer que les URL qui ont pu passer l’inspection initiale n’ont pas été localisées.|
+|[Liens fiables](safe-links.md)|Effectuez des vérifications au moment du clic pour vous assurer que les URL qui ont réussi l’inspection initiale n’ont pas été localisées.|
 |[Suivis des menaces](threat-trackers.md)<sup>\*</sup>|Utilisez des widgets et des affichages informatifs pour identifier les problèmes de cybersécurité qui peuvent avoir un impact sur votre organisation.|
 |[Explorateur de menaces](threat-explorer.md)<sup>\*</sup>|Recherchez des informations en temps quasi réel sur les menaces dans votre Office 365 courrier électronique.|
 |[Examen et réponse automatisés (AIR)](office-365-air.md)<sup>\*</sup>|Recherchez et remédiez automatiquement aux objets de menace lorsque des alertes sont déclenchées.|
 |[Formation à la simulation d’attaques](attack-simulation-training.md)<sup>\*</sup>|Formez vos utilisateurs à identifier les attaques par hameçonnage et à répondre de manière appropriée.|
 |[Affichages des campagnes](campaigns.md)<sup>\*</sup>|Examiner et répondre à une activité de courrier malveillant à grande échelle.|
-|[Rapports utilisant Defender pour Office 365 fonctionnalités](view-reports-for-mdo.md)|Afficher des rapports, notamment l’état de la protection contre les menaces, la protection contre les menaces URL, la latence du courrier, etc.|
+|[Rapports utilisant Defender pour Office 365 fonctionnalités](view-reports-for-mdo.md)|Afficher des rapports, notamment l’état de la protection contre les menaces, la protection contre les menaces d’URL, la latence du courrier, etc.|
 
 <sup>\*</sup>Defender for Office 365 Plan 2 features that are available as part of the trial.
 
@@ -70,13 +70,13 @@ Par défaut, ces stratégies sont limitées à tous les utilisateurs de l’orga
 
 Lors de l’installation, la fonctionnalité de réponse de Defender Office 365 (dans Defender pour Office 365 P2 ou équivalent) est également configurée pour l’ensemble de l’organisation. Aucune portée de stratégie n’est requise.
 
-## <a name="licensing"></a>Licence
+## <a name="licensing"></a>Licences
 
 Dans le cadre de la configuration de la version d’essai, les licences Defender pour Office 365 sont automatiquement appliquées à l’organisation. Les licences sont gratuites pour les 90 premiers jours.
 
 ## <a name="permissions"></a>Autorisations
 
-Pour démarrer ou mettre fin à la version  d’essai, vous devez être membre des rôles Administrateur général ou Administrateur de sécurité dans Azure Active Directory.  Pour plus d’informations, voir [à propos des rôles d’administrateur.](../../admin/add-users/about-admin-roles.md)
+Pour démarrer ou mettre fin à la version  d’essai, vous devez être membre des rôles Administrateur général ou Administrateur de sécurité dans Azure Active Directory.  Pour plus d’informations, voir [à propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>Informations supplémentaires
 
@@ -112,7 +112,7 @@ L’IA de pointe détecte les contenus malveillants et suspects et met en corré
 
 ### <a name="investigation-and-hunting"></a>Investigation et recherche
 
-Les expériences puissantes permettent d’identifier, de hiérarchiser et d’examiner les menaces, avec des fonctionnalités de recherche avancées pour suivre les attaques Office 365.
+Les expériences puissantes permettent d’identifier, de hiérarchiser et d’examiner les menaces, avec des fonctionnalités de recherche avancées pour suivre les attaques dans Office 365.
 
 - [Détections en temps réel et de l’Explorateur de menaces](threat-explorer.md)
 - [Rapports en temps réel dans Defender pour Office 365](view-reports-for-mdo.md)

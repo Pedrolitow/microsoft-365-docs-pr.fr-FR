@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom:
 - MSStore_Link
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer le compte d’utilisateur d’un ancien employé.
-ms.openlocfilehash: aaca61e7b3d781413355bbf8ed8a884c6d14835c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 631405b66c777060463a4e98620ff3c8b06c7e77
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774122"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157241"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : supprimer le compte d’utilisateur d’un ancien employé
 
@@ -92,7 +93,7 @@ Les opérations ci-dessus peuvent être réalisées à trois endroits :
   
 **Plus rapide pour un utilisateur ayant une présence locale et dans le centre de données Exchange**: clôturez la session via le centre d'administration Azure Active Directory/Exchange ET apportez la modification aussi dans l'environnement local. À défaut, la modification dans le centre d'administration Azure Active Directory/Exchange est remplacée par DirSync.
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Restaurer un utilisateur](restore-user.md) (article)
 

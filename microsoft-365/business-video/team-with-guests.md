@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une équipe avec des invités dans Microsoft Teams.
-ms.openlocfilehash: 47af1a44f00490e66beecb99f5a9b62367810cbf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 3438ed0526bebaa081aa0e7b4acbb0dadbfa1d5b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934238"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163707"
 ---
 # <a name="create-a-team-with-guests"></a>Créer une équipe avec des invités
 
@@ -43,6 +43,6 @@ Vous pouvez utiliser Microsoft Teams pour collaborer sur un projet avec vos empl
     Si vous recevez un message vous qui vous demande de ne pas ajouter d’invité, visitez le centre d’administration Teams et Skype pour activer l’accès invité.
 
 1. Choose  **Add** , and then choose  **Close**.
-2. Au bas de la page, entrez un court message de bienvenue à votre nouvelle équipe, puis choisissez **Envoyer** :::image type="icon" source="../media/teams-send-icon.png" border="false"::: .   
+2. En bas de la page, entrez un court message de bienvenue à votre nouvelle équipe, puis choisissez **Envoyer.** :::image type="icon" source="../media/teams-send-icon.png" border="false":::   
 
 Votre client reçoit une invitation par courrier Teams, qui l’informe qu’il a besoin d’un compte Microsoft gratuit pour rejoindre l’équipe. Ils peuvent créer un compte à l’aide de leur adresse de messagerie existante en suivant les instructions fournies. Ils peuvent ensuite utiliser Teams sur le web ou installer l’application Teams sur leur ordinateur.

@@ -4,7 +4,7 @@ description: Obtenir des informations sur l’activité qui a affecté votre sco
 keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0bb4b57e3f212820852f23af2665f11f99e5be95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d1f1c36eeaa010981ffd44ccad75e0d73a7159f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162361"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivez votre historique de score de sécurité Microsoft et répondez aux objectifs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Vous pouvez le trouver dans https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](overview-security-center.md)
+[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](overview-security-center.md)
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtenir des informations sur l’activité qui a affecté votre score
 
@@ -52,7 +52,7 @@ Pour afficher tout l’historique de cette action d’amélioration spécifique,
 
 Dans **l’onglet & des** tendances, il existe plusieurs graphiques et graphiques pour vous donner plus de visibilité sur les tendances et définir des objectifs. Vous pouvez définir la plage de dates pour la page entière des visualisations. Les visualisations sont les suivantes :
 
-* **Votre zone De score de** sécurité : personnalisée en fonction des objectifs et des définitions de plages de scores bonnes, acceptables et mauvaises de votre organisation.
+* **Votre zone Score de** sécurité : personnalisée en fonction des objectifs et des définitions de plages de scores bonnes, acceptables et mauvaises de votre organisation.
 * **Tendance de régression :** chronologie des points qui ont régressé en raison de modifications de configuration, d’utilisateur ou d’appareil.  
 * **Tendance de comparaison** : comparaison du score de sécurité de votre organisation avec les autres au fil du temps. Cet affichage peut inclure des lignes représentant la moyenne de score des organisations dont le nombre de sièges est similaire et un affichage de comparaison personnalisé que vous pouvez définir.
 * **Tendance d’acceptation des risques** : chronologie des actions d’amélioration marquées comme « risques acceptés ».

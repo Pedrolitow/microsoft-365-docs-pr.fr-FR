@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 entreprise. '
-ms.openlocfilehash: 06a125fac933ca8755c7306b77024365393d00c2
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 005b65bc8f5e34dcddec41e0d197b813a53a1c33
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988210"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165207"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
   
@@ -41,7 +41,7 @@ Par exemple, supposons que Son adresse de messagerie soit jenna@contosoco.com, m
 Vous pouvez créer jusqu'à 400 alias par utilisateur. Vous ne devez pas acquérir de licence supplémentaire et cela n'occasionne aucun frais.
   
 > [!Tip]
-> Si vous souhaitez que plusieurs personnes gèrent les messages électroniques envoyés à une seule adresse de messagerie, comme info@NodPublishers.com ou sales@NodPublishers.com, créez une boîte aux lettres partagée. Pour plus d’informations, voir [Créer une boîte aux lettres partagée.](create-a-shared-mailbox.md)
+> Si vous souhaitez que plusieurs personnes gèrent les messages électroniques envoyés à une seule adresse de messagerie telle que info@NodPublishers.com ou sales@NodPublishers.com, créez une boîte aux lettres partagée. Pour plus d’informations, voir [Créer une boîte aux lettres partagée.](create-a-shared-mailbox.md)
   
 ## <a name="add-email-aliases-to-a-user"></a>Ajouter des alias de courrier à un utilisateur
 
@@ -71,7 +71,7 @@ Vous devez avoir des droits d’administrateur global pour ajouter des alias de 
     L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *De* dépend de son client Outlook client. Outlook sur le web utilisera l’alias auquel l’e-mail a été reçu (nous appellerons cela le principe ping- domaine). Outlook bureau utilise son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Lorsque Eliza répond au message à l’aide Outlook bureau, son adresse de messagerie principale s’affiche sous la Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
+7. **Lorsque l’utilisateur répond, l’adresse *de* l’utilisateur dépend de Outlook client. Outlook sur le web utilisera l’alias auquel l’e-mail a été reçu (nous appellerons cela le principe ping- domaine). Outlook bureau utilise son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Lorsque Eliza répond au message à l’aide Outlook bureau, son adresse de messagerie principale s’affiche sous la Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Avez-vous reçu « Un paramètre indessable qui correspond au nom de paramètre EmailAddresses » ?
 

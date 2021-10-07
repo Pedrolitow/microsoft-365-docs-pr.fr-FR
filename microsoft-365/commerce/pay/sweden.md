@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f908a4a6f3f64564a0c40f7b0b28b0308d726725
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1b286c3b949908f0e744935be33b7caad9cb524c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202464"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163599"
 ---
 # <a name="payment-information-for-sweden"></a>Informations de paiement pour la Suède
 
@@ -26,7 +26,7 @@ ms.locfileid: "59202464"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en SEK et référencer les numéro(s) de facture sur votre paiement.**
+**Veuillez payer en SEK et référencer les numéro(s) de facture à votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 

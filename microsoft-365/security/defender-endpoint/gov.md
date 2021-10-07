@@ -10,25 +10,25 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eeafcca3ac91187efddc30f7e381d2ee3aa12bfe
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7fd686c21003a467c4d2d5c5d7326feda4c1045d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042865"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162625"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
+Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis, intégré à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour endpoint dans Azure Commercial.
 
 Cette offre est disponible pour les clients Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD et est basée sur les mêmes prévention, détection, examen et correction que la version commerciale. Toutefois, il existe certaines différences dans la disponibilité des fonctionnalités de cette offre.
 
@@ -47,7 +47,7 @@ Microsoft Defender pour endpoint pour les clients du gouvernement des États-Uni
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 for Cloud de la communauté du secteur public High|Microsoft 365 G5 pour DOD|
+|Microsoft 365 Cloud de la communauté du secteur public G5|Microsoft 365 E5 pour Cloud de la communauté du secteur public Élevé|Microsoft 365 G5 pour DOD|
 |Microsoft 365 Sécurité G5 Cloud de la communauté du secteur public|Microsoft 365 Sécurité G5 pour Cloud de la communauté du secteur public élevé|Microsoft 365 Sécurité G5 pour DOD|
 |Microsoft Defender pour le point de terminaison - Cloud de la communauté du secteur public|Microsoft Defender for Endpoint for Cloud de la communauté du secteur public High|Microsoft Defender pour point de terminaison pour DOD|
 |Windows 10 Entreprise E5 Cloud de la communauté du secteur public|Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public élevé|Windows 10 Entreprise E5 pour DOD|
@@ -88,17 +88,18 @@ Les versions de système d’exploitation suivantes sont pris en charge :
 
 Version du système d’exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
+Windows 11|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10 version 21H1 et versions supérieures|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 20H2 (avec [KB4586853)](https://support.microsoft.com/help/4586853)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1909 (avec [KB4586819](https://support.microsoft.com/help/4586819))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1903 (avec [KB4586819](https://support.microsoft.com/help/4586819))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows 10, version 1809 (avec [KB4586839](https://support.microsoft.com/help/4586839))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows 10, version 1809 [(avec KB4586839](https://support.microsoft.com/help/4586839))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1803 (avec [KB4598245](https://support.microsoft.com/help/4598245))|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1709|![Non.](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Oui ](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147) <p> Remarque : [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge
 Windows 10, version 1703 et antérieures|![Non.](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <p> Remarque : ne sera pas pris en charge
+Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2019 (avec [KB4586839)](https://support.microsoft.com/help/4586839)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2022 |![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -114,7 +115,7 @@ iOS|![Non.](images/svg/check-no.svg) En cours de développement|![Non](images/sv
 > [!NOTE]
 > Lorsqu’un correctif est spécifié, il doit être déployé avant l’intégration de l’appareil afin de configurer Defender pour Endpoint dans l’environnement correct.
 >
-> Essayer d’intégrer Windows appareils plus anciens que Windows 10 ou Windows Server 2019 (avec [KB4586839](https://support.microsoft.com/help/4586839))| ![ Oui. ](images/svg/check-yes.svg) | ![ Oui ](images/svg/check-yes.svg) | ![ Oui ou ](images/svg/check-yes.svg) Windows Server 2022 à l’aide [de Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? Vous devez choisir « Azure US Government » sous « Azure Cloud » [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) si vous utilisez l’Assistant Installation [ou](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si vous utilisez une ligne de commande ou un [script,](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
+> Vous essayez d’intégrer Windows appareils plus anciens que Windows 10 ou Windows Server 2019 ou Windows Server 2022 à l’aide de [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? Vous devez choisir « Azure US Government » sous « Azure Cloud » [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) si vous utilisez l’Assistant Installation [ou](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si vous utilisez une ligne de commande ou un [script,](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versions du système d’exploitation lors de l’utilisation d’Azure Defender pour les serveurs
 
@@ -122,8 +123,8 @@ Les versions de système d’exploitation suivantes sont pris en charge lors de 
 
 Version du système d’exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2019|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -158,7 +159,6 @@ Au lieu des URIs publics répertoriés dans la documentation de notre [API,](api
 |Connexion|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |Defender for Endpoint API|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
 |SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wdatp-alertexporter-us.securitycenter.windows.us`|
-|
 
 ## <a name="feature-parity-with-commercial"></a>Parité des fonctionnalités avec commercial
 
@@ -175,9 +175,5 @@ Voici les lacunes connues :
 |Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Intégrations : Azure Sentinel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Alertes <p> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|![Oui](images/svg/check-yes.svg) Alertes <p> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|
-|Intégrations : Microsoft Cloud App Security|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Intégrations : Microsoft Defender pour l’identité|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
-|Intégrations : point de terminaison Microsoft DLP|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Intégrations : Microsoft Power Automate & Azure Logic Apps|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Azure Logic Apps <p> ![Non](images/svg/check-no.svg) Power Automate : en développement|
 |Spécialistes des menaces Microsoft|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog|
-|

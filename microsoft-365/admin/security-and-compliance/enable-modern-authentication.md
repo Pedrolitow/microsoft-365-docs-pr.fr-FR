@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: Apprenez à définir des clés de Registre pour activer l’authentification moderne pour les appareils sur Microsoft Office 2013.
-ms.openlocfilehash: 502f6854a6c557f0905e1672e9369ab6e790e373
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: Découvrez comment définir des clés de Registre pour activer l’authentification moderne pour les appareils sur Microsoft Office 2013.
+ms.openlocfilehash: eac974571d75c2d0ea1eddf889d3c1b581e98a16
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161401"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l'authentification moderne pour Office 2013 sur les appareils Windows
 
@@ -45,7 +46,7 @@ Pour activer l'authentification moderne pour les appareils exécutant Windows (p
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-Une fois les clés de Registre définies, vous pouvez configurer Office 2013 pour les applications d’appareils afin qu’ils utilisent l’authentification [multifacteur (MFA)](set-up-multi-factor-authentication.md) avec Microsoft 365. 
+Une fois que vous avez définie les clés de Registre, vous pouvez définir Office applications d’appareils 2013 pour utiliser l’authentification [multifacteur (MFA)](set-up-multi-factor-authentication.md) avec Microsoft 365. 
   
 Si vous êtes actuellement connecté avec une application client, vous devez vous déconnecter et vous reconnecter pour que la modification prenne effet. Autrement, les paramètres MRU et d'itinérance ne seront pas disponibles tant que l'identité ADAL n'est pas établie.
   
@@ -57,7 +58,7 @@ Pour désactiver l'authentification moderne sur un appareil, définissez les cl�
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Connectez-vous Office 2013 avec une deuxième méthode de vérification](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (article)\
 Outlook demande de mot de passe et [n’utilise](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) pas l’authentification moderne pour se connecter à Office 365 (article)

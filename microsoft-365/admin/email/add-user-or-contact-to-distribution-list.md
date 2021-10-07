@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Découvrez comment ajouter un utilisateur ou Microsoft 365 contact tel qu’un employé, un partenaire ou un fournisseur à un groupe de distribution de courrier électronique.
-ms.openlocfilehash: 2ef6e1d389ad902a767786a480b05345f26e61f9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b66f599ec2fd59aeb5749e98473c8fba4a8ecb0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774843"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165171"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Ajouter un utilisateur ou un contact à un groupe de distribution
 
-En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter l’un de vos utilisateurs ou contacts à un groupe de distribution (voir Créer des groupes [de distribution dans Microsoft 365](../setup/create-distribution-lists.md)). Par exemple, vous pouvez ajouter des employés ou des partenaires externes ou des fournisseurs à un groupe de distribution de courrier électronique.
+En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter l’un de vos utilisateurs ou contacts à un groupe de distribution (voir Créer des groupes [de distribution dans Microsoft 365](../setup/create-distribution-lists.md)). Par exemple, vous pouvez ajouter des employés ou des partenaires ou fournisseurs externes à un groupe de distribution de courrier électronique.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Ajouter un utilisateur ou un contact à un groupe de distribution
 
@@ -54,7 +55,7 @@ En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter
 
 Apprenez à [envoyer des courriers électroniques en tant que groupe de distribution dans Microsoft 365](../manage/send-email-as-distribution-list.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer l’encombrement pour votre organisation](configure-clutter.md) (article)\
 [Créer une boîte aux lettres ](create-a-shared-mailbox.md)partagée (article)

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 232fda3b5d9c9f14db9225ae6f7d98127a394244
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 2cb0f62fa64570e0b18b5bb0ea3d2009b0421e91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043238"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163000"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Évaluer les règles de réduction de la surface d’attaque
 

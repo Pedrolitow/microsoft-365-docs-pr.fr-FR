@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e630b2cdb7164157e2dd42e8f1ee8d09676dfbfb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ac26e2528698cc671c5cb45eb507d01900a77ec4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202907"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162325"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Questions fréquemment posées lors de l’Microsoft 365 Defender
 
@@ -37,13 +37,13 @@ ms.locfileid: "59202907"
 
 Lisez les réponses aux questions les [](microsoft-365-defender.md)plus fréquemment posées sur l’Microsoft 365 Defender, y compris les licences et autorisations requises, le déploiement des services de support et les paramètres initiaux.
 
-Pour obtenir des instructions sur la façon d’activer le service, [lisez](m365d-enable.md)Activer Microsoft 365 Defender .
+Pour obtenir des instructions sur la façon d’activer le service, [lisez Activer Microsoft 365 Defender](m365d-enable.md).
 
 ## <a name="i-dont-have-a-microsoft-365-e5-license-can-i-still-use-microsoft-365-defender"></a>Je n’ai pas de licence Microsoft 365 E5 licence. Puis-je toujours utiliser Microsoft 365 Defender ?
 
 Les clients titulaires des licences non E5 suivantes peuvent utiliser les Microsoft 365 Defender :
 
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 - Microsoft Defender pour l’identité
 - Microsoft Cloud App Security
 - Defender pour Office 365 (Plan 2)
@@ -52,22 +52,22 @@ Pour obtenir la liste complète des licences pris en charge, [lisez les conditio
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>Dois-je installer ou déployer quoi que ce soit pour commencer à utiliser Microsoft 365 Defender ?
 
-Non, Microsoft 365 Defender consolide les données des services Microsoft 365 sécurité que vous avez déjà déployés. Une fois que vous l’avez mis en place, les expériences d’incident, d’automatisation et de recherche commenceront à fonctionner dans l’étendue des produits déployés. Si aucun de ces produits n’est correctement déployé, Microsoft 365 Defender affichera aucune donnée et ne sera pas en mesure d’agir.
+Non, Microsoft 365 Defender consolide les données de Microsoft 365 services de sécurité que vous avez déjà déployés. Une fois que vous l’avez mis en place, les expériences d’incident, d’automatisation et de recherche commenceront à fonctionner dans l’étendue des produits déployés. Si aucun de ces produits n’est correctement déployé, Microsoft 365 Defender affichera aucune donnée et ne sera pas en mesure d’agir.
 
 Pour optimiser vos expériences Microsoft 365 Defender, nous  vous recommandons de déployer tous les produits et services de sécurité Microsoft 365 [pris en charge.](deploy-supported-services.md)
 
-## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>Où est-Microsoft 365 Defender traiter et stocker mes données ?
+## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>Où puis Microsoft 365 Defender traiter et stocker mes données ?
 
 Microsoft 365 Defender sélectionne automatiquement un emplacement optimal pour le centre de données où les données consolidées sont traitées et stockées. Si vous avez Microsoft Defender pour point de terminaison, il sélectionne le même emplacement que celui utilisé par Defender pour le point de terminaison.
 
 >[!NOTE]
->Microsoft Defender pour le point de terminaison est automatiquement mis en place dans les centres de données de l’Union européenne (UE) lorsqu’il est allumé par le biais d’Azure Defender. Microsoft 365 Defender seront automatiquement mis en service dans le même centre de données de l’UE pour les clients qui ont mis en service Microsoft Defender pour endpoint de cette manière.
+>Microsoft Defender pour le point de terminaison est automatiquement mis en place dans les centres de données de l’Union européenne (UE) lorsqu’il est allumé par le biais d’Azure Defender. Microsoft 365 Defender sera automatiquement mis en service dans le même centre de données de l’UE pour les clients qui ont mis en service Microsoft Defender pour endpoint de cette manière.
 
 L’emplacement du centre de données s’affiche avant et après la mise en service du service dans la page des paramètres pour Microsoft 365 Defender (**Paramètres > Microsoft 365 Defender**). Si vous préférez utiliser un autre emplacement de centre de données, sélectionnez Besoin d’aide **?** dans le portail Microsoft 365 Defender pour contacter le support Microsoft.
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>Où puis-je accéder Microsoft 365 Defender ?
 
-Microsoft 365 Defender disponible sur : <https://security.microsoft.com> .
+Microsoft 365 Defender est disponible à <https://security.microsoft.com> l':.
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>De quelles autorisations ai-je besoin pour accéder Microsoft 365 Defender ?
 
@@ -91,9 +91,9 @@ Par défaut, Microsoft 365 Defender affiche les informations d’heure dans le f
 Microsoft fournit régulièrement des informations via les différents canaux, notamment :
 
 - Centre [de messages dans](../../admin/manage/message-center.md) Centre d'administration Microsoft 365
-- Billets de blog de la [communauté Microsoft 365 sécurité et conformité & conformité](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+- Billets de blog dans la [communauté technique Microsoft 365 sécurité et conformité & conformité](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
-Obtenez les dernières expériences disponibles publiquement en allumer les [fonctionnalités de prévisualisation.](preview.md)
+Obtenez les dernières expériences disponibles publiquement en allumer les [fonctionnalités d’aperçu.](preview.md)
 
 ## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Est Microsoft 365 Defender disponible pour les états-Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) ou Cloud de la communauté du secteur public élevé ?
 

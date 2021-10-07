@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -28,19 +28,19 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte Microsoft 365 pour réinitialiser les mots de passe des utilisateurs Microsoft 365 abonnement pour les entreprises.
-ms.openlocfilehash: 03081e4a0465206ae66cc8201411206932d15e8c
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 84bb282f7b86036e2743d4af7998a4ce887e5b11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011204"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157217"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
 Cet article explique comment réinitialiser les mots de passe pour vous-même et pour vos utilisateurs lorsque vous avez un abonnement Microsoft 365 entreprise.
 
 > [!NOTE]
-> Vous pouvez également configurer la réinitialisation du mot de passe en libre-service pour vos utilisateurs afin qu’ils réinitialiseront leurs propres mots de passe. Pour en savoir plus, voir [Laisser les utilisateurs réinitialiser leur mot de passe.](let-users-reset-passwords.md)
+> Vous pouvez également configurer la réinitialisation du mot de passe libre-service pour vos utilisateurs afin qu’ils réinitialiseront leurs propres mots de passe. Pour en savoir plus, voir [Laisser les utilisateurs réinitialiser leur mot de passe.](let-users-reset-passwords.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

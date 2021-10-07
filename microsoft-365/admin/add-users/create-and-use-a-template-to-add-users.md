@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -19,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lorsque vous ajoutez plusieurs utilisateurs.
-ms.openlocfilehash: 6ef35bb395417597d10b8b33c042e1baceeb40db
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: cacb3fc6ef2a145cbfe4c4131b2e5e38eca2c257
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773486"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161845"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
@@ -53,7 +54,7 @@ Les informations suivantes sont propres à l’utilisateur et ne sont pas enregi
 - Choix d’envoyer le mot de passe par courrier électronique et à qui le message électronique de mot de passe est envoyé
 - Numéro de téléphone mobile
 
-Si vous choisissez de ne pas entrer d’informations pour un paramètre dans une section, cette valeur sera vide et ce paramètre ne s’affichera pas dans le modèle. Par exemple, si vous laissez la **fonction** vide, lorsque vous examinez votre modèle et que vous l’utilisez,  la fonction n’apparaît pas du tout. Si vous laissez tous les paramètres **de** section Profil vides, la section **Profil** n’affichera aucun paramètre fourni **dans** votre modèle final.
+Si vous choisissez de ne pas entrer d’informations pour un paramètre dans une section, cette valeur sera vide et ce paramètre ne s’affichera pas dans le modèle. Par exemple, si vous laissez la **fonction** vide, lorsque vous examinez votre modèle et que vous l’utilisez,  la fonction n’apparaît pas du tout. Si vous laissez tous les paramètres **de** section Profil vides, la section **Profil** affiche **Aucun** fourni dans votre modèle final.
 
 Lorsque vous créez un modèle en sélectionnant **l’option** Ajouter un modèle, vous pouvez choisir les valeurs à compléter. Tout ce qui reste vide s’affiche comme **aucun fourni** dans le modèle.
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres disponibles dans Microsoft 365 entreprise pour sécuriser Windows 10 appareils.
-ms.openlocfilehash: 1c1e510af4280233079961651ef8fe002d9bc3d6
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 1217c6ad8be6b74c4b1fa05294f5bc51f275bea2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933290"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165471"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Modifier ou créer des paramètres de protection des appareils pour Windows 10 PC
 
@@ -39,7 +39,7 @@ Une fois que vous avez configuré les paramètres de protection Windows par déf
 
 ## <a name="create-protection-settings-for-windows-10-devices"></a>Créer des paramètres de protection pour Windows 10 appareils
 
-Regardez une vidéo sur la sécurisation des Windows 10 avec les Microsoft 365 Business Premium :
+Regardez une vidéo sur la façon de sécuriser Windows 10 appareils à l’Microsoft 365 Business Premium :
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   

@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Planifier les fermetures de bureau et les congés des employés du calendrier Bookings afin que les employés soient marqués comme indisponibles pour les réservations aux heures spécifiées.
-ms.openlocfilehash: bdd00d2bc97de1e981b2de7f5f21325de6967aa7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 30f43af083da6a41ab8458e377bdc9fc99690678
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181757"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164067"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>Planifier des fermetures d’entreprise, des congés et des congés
 
@@ -40,7 +40,7 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour planifier des fermet
 
 1. Sélectionnez **Enregistrer**.
 
-Lorsqu’un client tente de planifier le service un jour de fermeture, il voit un message sur la page de réservation.
+Lorsqu’un client tente de planifier le service un jour où le bureau est fermé, il voit un message sur la page de réservation.
 
    ![Image d’exemple de message que le client voit lors de la tentative de réservation pendant les congés.](../media/bookings-timeoff-message.png)
 

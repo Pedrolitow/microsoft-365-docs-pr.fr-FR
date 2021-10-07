@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: medium
+ms.localizationpriority: medium
 description: Découvrez comment planifier les Sujets Microsoft Viva.
-ms.openlocfilehash: c237717d50dfda5b89f7b12b1222e59ed5bc16d4
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: dd7b56342a3881c25be65a62028d024aa55c35ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126985"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163191"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
@@ -23,7 +23,7 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
-- Les SharePoint sites que vous souhaitez analyser pour les rubriques
+- Quels SharePoint sites que vous souhaitez analyser pour les rubriques
 - Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
@@ -71,7 +71,7 @@ Nous vous recommandons de créer un processus pour que les utilisateurs ou les g
 
 ### <a name="multi-geo"></a>Multi-Géo
 
-Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Rubriques Topics utilisera tous les sites dans l’emplacement central.)
+Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Topics utilise tout le site dans l’emplacement central.)
 
 Tout le traitement et le stockage du contenu sont effectués à l’emplacement central.
 

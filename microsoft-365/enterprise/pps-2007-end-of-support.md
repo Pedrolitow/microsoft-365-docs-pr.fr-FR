@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - PSV120
@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: PerformancePoint Server 2007, ProClarity et SharePoint Server 2007 ont atteint la fin de la prise en charge. Lisez cet article pour planifier la mise à niveau de votre solution d’aide à la fois.
-ms.openlocfilehash: 88818fe4ecc0a2be7a63abe615bd4206c50ead3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4e0662109cc5bdbdfbf922086715a0de4d91c37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209227"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163311"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007
 
@@ -32,7 +32,7 @@ Office serveurs et applications 2007 ont atteint leur fin de prise en charge, y 
 |**Applications d’aide à la vie microsoft**|**Date de fin de la prise en charge**|
 |:-----|:-----|
 |ProClarity Analytics Server 6.3 Service Pack 3  <br/> ProClarity Desktop Professional 6.3  <br/> ProClarity SharePoint Viewer 6.3  <br/> |11 juillet 2017  <br/> |
-|SharePoint Server 2007 Service Pack 3  <br/> |10 octobre 2017  <br/> |
+|SharePoint Server 2007 Service Pack 3  <br/> |10 octobre 2017  <br/> |
 |PerformancePoint Server 2007 Service Pack 3  <br/> |9 janvier 2018  <br/> |
    
 Pour plus d’informations, voir Ressources pour vous aider à mettre à niveau Office [serveurs et clients 2007.](upgrade-from-office-2007-servers-and-products.md)
@@ -60,7 +60,7 @@ De nombreuses modifications ont été apportées aux applications d’aide à la
 | PerformancePoint Server 2007 Monitoring &amp; Analytics, notamment :<br/>- PerformancePoint Monitoring Server <br/>- PerformancePoint Dashboard Designer<br/>- Visionneuse de tableau de bord pour SharePoint Services (utilisé pour le rendu des tableaux de bord, cartes de performance et rapports PerformancePoint)<br/> |**Excel avec Excel dans un navigateur** (dans le cloud ou en local). Pour une vue d’ensemble, [voir fonctionnalités d’Excel et Microsoft 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx).<br/><br/> **Power BI** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir Qu’est-ce Power BI ?](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **SQL Server Reporting Services** (local). Pour une vue d’ensemble, [voir SQL Server Reporting Services (SSRS) : créer,](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports)déployer et gérer des rapports mobiles et paginés. <br/><br/> **PerformancePoint Services** (local). Pour une vue d’ensemble, voir [What’s new for PerformancePoint Services (SharePoint Server 2010).](/previous-versions/office/sharepoint-server-2010/ee661741(v=office.14)) <br/> |Excel est disponible en ligne (en nuage) ou en local. De nombreux besoins en matière de rapports et de tableaux de bord peuvent être satisfaits Excel.  <br/><br/> Power BI est disponible en tant que solution en ligne ou sur site. Power BI n’est pas inclus dans Microsoft 365. Mais vous pouvez commencer à utiliser Power BI gratuitement. Par la suite, en fonction de l’utilisation des données et des besoins de votre entreprise, vous pouvez mettre à niveau Power BI Pro avec Microsoft 365 E5.<br/> <br/> Reporting Services et PerformancePoint Services sont tous deux des solutions sur site. <br/><br/> PerformancePoint Services est disponible dans SharePoint Server 2010, SharePoint Server 2013 et SharePoint Server 2016. <br/> <br/> Certaines fonctionnalités et types de rapports qui étaient disponibles dans PerformancePoint Server 2007 ne sont pas disponibles dans Excel, Power BI, Reporting Services ou PerformancePoint Services. Examinez les fonctionnalités disponibles pour déterminer la meilleure solution pour les besoins de votre entreprise. <br/> |
 | Logiciels ProClarity, notamment :<br/>- ProClarity Desktop Professional<br/> - ProClarity Analytics Server<br/>- ProClarity SharePoint Viewer<br/> |**Travaillez avec un partenaire Microsoft** pour identifier une solution qui répond le mieux à vos besoins. Visitez [l’Microsoft Partner Center](https://go.microsoft.com/fwlink/?linkid=841249). <br/><br/> Vous pouvez également envisager d’utiliser Excel avec Excel dans un navigateur, Power BI, SQL Server Reporting Services ou PerformancePoint Services.  <br/> |Plusieurs fonctionnalités du logiciel ProClarity, mais pas toutes, sont disponibles dans d’autres offres Microsoft, notamment Excel, Power BI, Reporting Services et PerformancePoint Services.  <br/> |
 |SharePoint KPIs Server 2007 (également appelés KPIs MOSS)  <br/> |**Excel avec Excel Services**. Pour une vue d’ensemble, voir [Business intelligence in Excel and Excel Services (SharePoint Server 2013).](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |Les KPIs MOSS créés à l’aide de SharePoint Server 2007 peuvent être utilisés dans SharePoint Server 2010, SharePoint Server 2013 et SharePoint Server 2016. Mais vous ne pouvez pas créer de nouveaux KPIs MOSS.  <br/> |
-|Excel 2007  <br/> |**Excel** (dans le cloud ou en local). Pour une vue d’ensemble, voir [fonctionnalités d’Excel et Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx). <br/><br/> **Power BI** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir Qu’est-ce Power BI ?](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Les Excel et Power BI offrent à votre organisation des solutions locales et basées sur le cloud, avec une prise en charge pour un large éventail de sources de données.  <br/> |
+|Excel 2007  <br/> |**Excel** (dans le cloud ou en local). Pour une vue d’ensemble, [voir fonctionnalités d’Excel et Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx). <br/><br/> **Power BI** (dans le cloud ou en local). Pour obtenir une vue d’ensemble, [voir Qu’est-ce Power BI ?](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Les Excel et Power BI offrent à votre organisation des solutions locales et basées sur le cloud, avec une prise en charge pour un large éventail de sources de données.  <br/> |
    
 ### <a name="help-selecting-a-solution"></a>Aide à la sélection d’une solution
 
@@ -68,7 +68,7 @@ Avec autant de choix d’bi, il peut sembler difficile de déterminer l’option
   
 ### <a name="what-if-i-dont-upgrade-now"></a>Que se passe-t-il si je ne suis pas mis à niveau maintenant ?
 
-Vous pouvez choisir de ne pas mettre à niveau immédiatement. Vos serveurs et applications existants continueront de s’exécuter. Toutefois, vous ne recevrez aucune mise à jour supplémentaire, y compris les mises à jour de sécurité, étant donné que la prise en charge a pris fin. En cas de problème avec vos applications serveur, vous ne pourrez pas obtenir d’aide du support technique Microsoft.
+Vous pouvez choisir de ne pas mettre à niveau immédiatement. Vos serveurs et applications existants continueront à s’exécuter. Toutefois, vous ne recevrez aucune mise à jour supplémentaire, y compris les mises à jour de sécurité, étant donné que la prise en charge a pris fin. En cas de problème avec vos applications serveur, vous ne pourrez pas obtenir d’aide du support technique Microsoft.
   
 ## <a name="how-do-i-plan-my-upgrade"></a>Comment planifier ma mise à niveau ?
 
@@ -89,11 +89,11 @@ Le tableau suivant compare les principaux avantages de l’utilisation de Excel 
   
 |**Excel avec Microsoft 365 (dans le cloud)**|**Excel avec SharePoint Server (local)**|
 |:-----|:-----|
-|**Vous obtenez la dernière version la plus récente de Excel**. Avec Microsoft 365, vous obtenez la dernière version de Excel, qui inclut de nouveaux types de graphiques puissants, la possibilité de créer rapidement et facilement des graphiques et des tableaux, ainsi que la prise en charge de sources de données plus nombreuses. <br/> <br/> **Le programme d’installation est beaucoup plus simple.** Excel est inclus dans Microsoft 365 entreprise, il n’y a donc aucune lourde charge de votre part. Inscrivez-vous et connectez-vous, et vous serez opérationnel plus rapidement et plus efficacement que si vous upgradez vos serveurs locaux. <br/> <br/> **Les personnes ont partout accès à leurs workbooks.** Les utilisateurs peuvent afficher en toute sécurité les workbooks où qu’ils soient, à l’aide de leur ordinateur, de leur smartphone et de leur tablette. <br/> <br/> **Il y en a d’autres !** Voir [les fonctionnalités d’Excel et Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx). <br/> |**Vous gérez vos paramètres globaux.** En tant qu’administrateur SharePoint, vous pouvez spécifier des paramètres globaux, tels que la sécurité, l’équilibrage de charge, la gestion des sessions, la mise en cache des livres de travail et les connexions de données externes. <br/> <br/> **Vous pouvez utiliser Excel Services avec PerformancePoint Services**. Vous pouvez configurer Excel Services et PerformancePoint Services dans le cadre de votre installation SharePoint Server et inclure des rapports Excel Services dans vos tableaux de bord PerformancePoint. <br/> <br/> **Il y en a d’autres !** Voir [Business intelligence in Excel and Excel Services (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx). <br/> |
+|**Vous obtenez la dernière version la plus récente de Excel**. Avec Microsoft 365, vous obtenez la dernière version de Excel, qui inclut de nouveaux types de graphiques puissants, la possibilité de créer rapidement et facilement des graphiques et des tableaux, ainsi que la prise en charge de sources de données plus nombreuses. <br/> <br/> **Le programme d’installation est beaucoup plus simple.** Excel est inclus dans Microsoft 365 entreprise, il n’y a donc aucune lourde charge de votre part. Inscrivez-vous et connectez-vous, et vous serez opérationnel plus rapidement et plus efficacement que si vous upgradez vos serveurs locaux. <br/> <br/> **Les personnes ont partout accès à leurs workbooks.** Les utilisateurs peuvent afficher en toute sécurité les workbooks où qu’ils soient, à l’aide de leur ordinateur, de leur smartphone et de leur tablette. <br/> <br/> **Il y en a d’autres !** Voir [les fonctionnalités d’Excel et Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx). <br/> |**Vous gérez vos paramètres globaux.** En tant qu’administrateur SharePoint, vous pouvez spécifier des paramètres globaux, tels que la sécurité, l’équilibrage de charge, la gestion des sessions, la mise en cache des livres de travail et les connexions de données externes. <br/> <br/> **Vous pouvez utiliser Excel Services avec PerformancePoint Services**. Vous pouvez configurer Excel Services et PerformancePoint Services dans le cadre de votre installation SharePoint Server et inclure des rapports Excel Services dans vos tableaux de bord PerformancePoint. <br/> <br/> **Il y en a d’autres !** Voir [Business intelligence in Excel and Excel Services (SharePoint Server 2013).](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
    
 #### <a name="excel-with-microsoft-365-in-the-cloud"></a>Excel avec Microsoft 365 (dans le cloud)
 
-Si vous vous déplacez vers Microsoft 365, vous aurez les services et applications les plus à jour, y compris les Excel 2016. PerformancePoint Services n’est pas disponible dans Microsoft 365, vous remplacerez donc le contenu de votre tableau de bord PerformancePoint par des Excel ou d’autres rapports. La bonne nouvelle est que Excel 2016 a de nombreux nouveaux types de graphiques et qu’il est plus facile que jamais de créer des tableaux de bord dans Excel. De nouvelles fonctionnalités sont ajoutées régulièrement. Pour plus [d’informations, voir Nouveautés](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)de Excel 2016 pour Windows .
+Si vous vous déplacez vers Microsoft 365, vous aurez les services et applications les plus à jour, y compris Excel 2016. PerformancePoint Services n’est pas disponible dans Microsoft 365, vous remplacerez donc le contenu de votre tableau de bord PerformancePoint par des Excel ou d’autres rapports. La bonne nouvelle est que Excel 2016 a beaucoup de nouveaux types de graphiques et qu’il est plus facile que jamais de créer des tableaux de bord dans Excel. De nouvelles fonctionnalités sont ajoutées régulièrement. Pour plus [d’informations, voir Nouveautés](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx)de Excel 2016 pour Windows .
   
 En outre, si vous achetez 50 sièges ou plus de Microsoft 365, l’équipe Microsoft FastTrack peut vous aider à vous installer. Pour en savoir plus, consultez [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
   

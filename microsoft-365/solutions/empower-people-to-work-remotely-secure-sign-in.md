@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Demandez à vos travailleurs hybrides de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: d59f990cd7acf576247d75e6544ad045179e3c81
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 586a4f1782cec2baf305b9e72cc3b4a4c732b7f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180844"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162073"
 ---
 # <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Étape 1 : renforcer la sécurité de connexion pour les travailleurs hybrides à l’aide d’une authentification multifacteur (MFA)
 

@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 77932e4efa59e84a29f14e8ff0a7c184ba812da5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c5b609ef0abbff7a21f039be531cd763051d55de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201870"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163993"
 ---
 # <a name="contact-support-for-mauritius"></a>Contacter le support technique pour l’Île Maurice
 

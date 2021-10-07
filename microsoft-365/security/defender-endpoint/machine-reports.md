@@ -1,7 +1,7 @@
 ---
 title: Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
-description: Suivre les détections d’état de l’appareil, l’état antivirus, la plateforme du système d’exploitation et les versions Windows 10 à l’aide du rapport d’état et de conformité de l’appareil
-keywords: état d’état d’état, antivirus, plateforme de système d’exploitation, version de Windows 10, version, santé, conformité, état
+description: Suivre les détections d’état de l’appareil, l’état antivirus, la plateforme de système d’exploitation et les versions Windows 10 à l’aide du rapport d’état et de conformité de l’appareil
+keywords: état d’état d’état d’état, antivirus, plateforme de système d’exploitation, version de Windows 10, version, santé, conformité, état
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f80aa4fb43c0e1becd24d58713e6f0ad9251bc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07aec0c4ff4c6ea42fcc6e4bb95357bd98bf5cba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165041"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162601"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Rapport d’intégrité et de conformité des appareils dans Microsoft Defender pour point de terminaison
 
@@ -54,7 +54,7 @@ Le tableau de bord est structuré en deux sections :
 
 Par défaut, les tendances des appareils affichent les informations de l’appareil de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
 
-- 30 jours
+- 30 jours
 - 3 mois
 - 6 mois
 - Personnalisé
@@ -94,7 +94,7 @@ Vous pouvez sélectionner plusieurs filtres à appliquer à partir des attributs
 Par exemple, pour afficher des données sur les Windows 10 avec l’état d’état d’état du capteur actif :
 
 1. Sous **Filtres > l’état d'> du capteur actif.**
-2. Sélectionnez ensuite **les plateformes de système d'> Windows 10**.
+2. Sélectionnez ensuite **les plateformes de système d> Windows 10**.
 3. Sélectionnez **Appliquer**.
 
 ## <a name="related-topic"></a>Rubrique connexe

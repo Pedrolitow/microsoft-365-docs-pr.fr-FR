@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs qui peuvent avoir besoin d’une aide supplémentaire.
-ms.openlocfilehash: de5ca46cd8ecabb88e250c5fb754b9943a01d4e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 769a596cc0cb8b0aaa9b61ed3823ddfb529e9ed0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177252"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157457"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Microsoft 365 Rapports dans le Centre d’administration : activations Microsoft Office utilisateurs
 
@@ -46,9 +46,9 @@ Vous pouvez afficher les activations dans le rapport Office 365 en choisissant *
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Office 365 des activations : choisissez des colonnes.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur.  <br/> |
@@ -56,10 +56,10 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |Licences de produit  <br/> |Produits affectés à cet utilisateur.  <br/> |
 |Date de la dernière activation (UTC)  <br/> |Date à laquelle l’utilisateur a Office sur un ordinateur de bureau ou un appareil.  <br/> |
 |Activation sur Windows ordinateurs  <br/> |Nombre de bureaux Windows qu’un utilisateur a Office activés.  <br/> |
-|Activation sur les ordinateurs Mac <br/> |Nombre de bureaux Mac activés par un utilisateur Office activés.|
+|Activation sur les ordinateurs Mac <br/> |Nombre de bureaux Mac sur Office utilisateur.|
 |Activation sur Windows 10 et tablettes  <br/> |Nombre d’Windows 10 mobiles activés par un utilisateur Office activés.  <br/> |
 |Activation sur les téléphones et tablettes iOS  <br/> |Nombre d’appareils iOS sur Office activés par un utilisateur.|
 |Activation sur les téléphones et tablettes Android  <br/> |Nombre d’appareils Android sur Office activés.  <br/> |
-|Activation d’ordinateurs partagés utilisée |Cela est vrai si l’utilisateur a utilisé Office via l’activation d’ordinateurs partagés.|
+|Activation d’ordinateurs partagés utilisée |Cela est vrai si l’utilisateur a utilisé Office l’activation d’ordinateurs partagés.|
 |||
    

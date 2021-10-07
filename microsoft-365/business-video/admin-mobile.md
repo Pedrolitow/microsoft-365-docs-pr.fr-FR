@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer l’application Administration Microsoft 365 mobile sur votre téléphone.
-ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 528c6714153ded0e06441b2027312c874361038a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180676"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156929"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installer l’Administration Microsoft 365'application mobile sur votre téléphone
 
@@ -44,7 +44,7 @@ Vous pouvez utiliser l’application mobile Administration Microsoft 365 pour g�
 1. Sous **Liens rapides,** sélectionnez **Utilisateurs.**
 2. Dans la page **Utilisateurs,** choisissez le nom de l’utilisateur, puis réinitialisez **le mot de passe.**
 3. Si vous souhaitez obliger l’utilisateur à modifier son nouveau  mot de passe lors de sa première signature, cochez la case Modifier lors de la première inscription, puis sélectionnez **Réinitialiser.**
-4. Lorsque vous avez été invité à confirmer, choisissez  **Oui,** puis  **OK**.
+4. Lorsque vous avez été invité à confirmer,  **sélectionnez Oui,** puis  **OK**.
 5. Dans la  **fenêtre Partager le mot**  de passe, vous pouvez éventuellement envoyer le nouveau mot de passe à l’utilisateur dans un message électronique ou un SMS.
 
 ### <a name="add-a-user-to-a-group"></a>Ajouter un utilisateur à un groupe
@@ -52,7 +52,7 @@ Vous pouvez utiliser l’application mobile Administration Microsoft 365 pour g�
 1. Sous **Liens rapides,** choisissez **Groupes.**
 2. Dans la page **Groupes,** choisissez le groupe à ajouter à un utilisateur, puis sélectionnez Modifier les **membres,** puis **Ajoutez un membre.**
 3. Choisissez l’utilisateur que vous souhaitez ajouter.
-4. Lorsque vous avez été invité à confirmer, choisissez  **Oui,** puis  **OK**.
+4. Lorsque vous avez été invité à confirmer,  **sélectionnez Oui,** puis  **OK**.
 
 ### <a name="turn-on-notifications"></a>Activer les notifications
 

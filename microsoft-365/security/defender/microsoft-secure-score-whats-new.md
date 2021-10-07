@@ -1,10 +1,10 @@
 ---
 title: Nouveautés du score de sécurité Microsoft
-description: Décrit les nouvelles modifications apportées au score de sécurité Microsoft dans le portail Microsoft 365 Defender microsoft.
+description: Décrit les nouvelles modifications apportées au score de sécurité Microsoft dans le portail Microsoft 365 Defender web.
 keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 4ff06a12d6d0639b00091a93b9ba7162d7cb6264
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 59ff0e516bb6b0a5f5c89e07fb972184a5a6c837
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183120"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162301"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés du score de sécurité Microsoft
 
@@ -48,7 +48,7 @@ Microsoft Secure Score se trouve sur https://security.microsoft.com/securescore 
 
 ### <a name="added-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ajout d’une action d’amélioration liée à Microsoft Defender pour le point de terminaison
 
-- Corriger microsoft Defender pour la collecte de données de capteur de point de terminaison pour macOS
+- Corriger la collecte de données du capteur Microsoft Defender pour les points de terminaison pour macOS
 - Résoudre les problèmes de communications de Microsoft Defender pour les points de terminaison pour macOS
 - Définir la longueur minimale du mot de passe sur 15 caractères ou plus dans macOS
 - Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus » dans macOS
@@ -93,12 +93,12 @@ Microsoft Teams clients voient « Empêcher les utilisateurs anonymes de partici
 
 ## <a name="december-2020"></a>Décembre 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender pour Endpoint :
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de six actions d’amélioration liées aux comptes pour Microsoft Defender for Endpoint :
 
 - Définir « Longueur minimale du mot de passe » sur « 14 caractères ou plus »
 - Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus »
 - Définir « Âge maximal du mot de passe » sur « 60 jours ou moins, mais pas 0 »
-- Définir « Âge minimum du mot de passe » sur « 1 jour ou plus »
+- Définir « Âge minimal du mot de passe » sur « 1 jour ou plus »
 - Désactiver le compte Administrateur intégré
 - Désactiver le compte invité intégré
 
@@ -108,7 +108,7 @@ Microsoft Teams clients voient « Empêcher les utilisateurs anonymes de partici
 
 La possibilité de créer des tickets ServiceNow via Secure Score en allant sur **Share > ServiceNow** n’est plus disponible. Merci de vos commentaires et de votre support continu pendant que nous déterminons les étapes suivantes.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender pour Endpoint :
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Ajout de trois actions d’amélioration liées aux services pour Microsoft Defender for Endpoint :
 
 - Corriger le chemin d’accès au service sans Windows services
 - Modifier le chemin d’accès exécutable du service à un emplacement protégé commun
@@ -120,7 +120,7 @@ La possibilité de créer des tickets ServiceNow via Secure Score en allant sur 
 
 - Configurer la vérification Microsoft Defender SmartScreen Windows contenu web d’application du Store pour avertir
 
-## <a name="august-2020"></a>Août 2020
+## <a name="august-2020"></a>Août 2020
 
 ### <a name="updated-improvement-action-for-azure-active-directory"></a>Action d’amélioration mise à jour pour Azure Active Directory
 
@@ -128,9 +128,9 @@ La possibilité de créer des tickets ServiceNow via Secure Score en allant sur 
 
 ## <a name="incompatibility-with-identity-secure-score"></a>Incompatibilité avec identity secure score
 
-Dans la version récente de Microsoft Secure Score, un modèle de notation amélioré a été publié. Ces modifications permettent une vue plus flexible et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
+Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié. Ces modifications permettent une vue plus flexible et plus précise de votre posture de sécurité. Toutefois, ces mises à jour ont rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score.
 
-Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients constateront des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurisation de l’identité. Nous vous excusons pour les désagréments que cela provoque et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
+Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En attendant, les clients voient des différences dans les scores signalés par le Score de sécurité Microsoft et le score de sécurité d’identité. Nous vous excusons pour les désagréments que cela provoque et nous nous assurons que ces expériences seront plus compatibles à l’avenir.
 
 ## <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
@@ -141,7 +141,7 @@ Dans le temps, identity Secure Score adoptera le nouveau modèle de score. En at
 
 ## <a name="updated-interface-and-functionality"></a>Interface et fonctionnalités mises à jour
 
-* Toutes les nouvelles vues de mesures et de tendances pour les discussions CISO et au niveau des responsables
+* Toutes les nouvelles vues de mesures et de tendances pour les discussions ciso et au niveau des responsables
 * Nouvelles méthodes de suivi et d’évaluation de votre score
 * Amélioration du suivi et de la compréhension des régressions de score
 * Filtrer, baliser, rechercher et grouper vos actions d’amélioration

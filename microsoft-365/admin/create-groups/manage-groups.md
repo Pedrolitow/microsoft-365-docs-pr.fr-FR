@@ -8,10 +8,11 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: admindeeplinkMAC
 search.appverid:
 - BCS160
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Apprenez à gérer les groupes Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 8b9e3492409322b77d7a64c73bd90f09a0f4daad
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 979291cfde3c82bb6e16520f13f51c51e9bd47c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774951"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165759"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d'administration Microsoft 365
 
@@ -46,7 +47,7 @@ Go to the Centre d'administration Microsoft 365 at [https://admin.microsoft.com]
 
 2. Cliquez sur le nom du groupe que vous souhaitez gérer pour ouvrir le volet des paramètres.
 
-3. Sous **l’onglet** Membres, choisissez si vous souhaitez gérer les propriétaires ou les membres.
+3. Sous **l’onglet Membres,** choisissez si vous souhaitez gérer les propriétaires ou les membres.
 
 4. Choisissez **Ajouter** pour ajouter une personne ou cliquez **sur X** pour supprimer une personne.
 
@@ -68,7 +69,7 @@ Les membres du groupe peuvent refuser de recevoir ces e-mails en choisissant d�
 
 4. Sélectionnez **Enregistrer**.
 
-## <a name="let-people-outside-the-organization-email-the-group"></a>Laisser des personnes extérieures à l’organisation envoyer un e-mail au groupe
+## <a name="let-people-outside-the-organization-email-the-group"></a>Laisser les personnes extérieures à l’organisation envoyer un e-mail au groupe
 
 Cette option est idéale si vous souhaitez avoir une adresse de messagerie d’entreprise telle que info@contoso.com.
  
@@ -105,7 +106,7 @@ Pour vérifier que le groupe a été supprimé définitivement, réexécutez l'a
 
 [Créer un groupe Microsoft 365 ](create-groups.md)
 
-[Gérer l’accès invité aux groupes Microsoft 365 client](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Gérer l’accès invité à Microsoft 365 groupes](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Choisir le domaine à utiliser lors de la création de Microsoft 365 groupes](../../solutions/choose-domain-to-create-groups.md)
 

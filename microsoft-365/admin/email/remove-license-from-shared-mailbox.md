@@ -9,7 +9,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou renvoyez la licence afin que vous ne payiez pas pour elle. '
 ms.date: 05/11/2021
-ms.openlocfilehash: 574650c2b483be299d316ee73687a48115485e7f
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 384e5d68d2b964278244fe5c2ec7f87097325540
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786166"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164907"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
@@ -68,7 +68,7 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
   
 2. Sélectionnez la boîte aux lettres partagée.
 
-3. Un des **onglets Licences et** applications, développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
+3. Un des **onglets Licences et applications,** développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer les modifications**.
 

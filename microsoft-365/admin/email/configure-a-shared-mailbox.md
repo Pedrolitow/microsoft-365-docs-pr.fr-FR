@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez une boîte aux lettres partagée et configurez certains paramètres pour ses utilisateurs, tels que le forwarding de courrier électronique et les réponses automatiques.
-ms.openlocfilehash: 8cc5b59222e5a14c55ba20e087090f876cfef650
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 201291adddf588bde955cbba7e2c0075e5ca7c88
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774823"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165111"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
@@ -64,7 +65,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 4. Entrez la réponse que vous voulez envoyer aux personnes internes à votre organisation. Vous ne pouvez pas ajouter d'images, seulement du texte.
 
-5. Si vous *souhaitez* également envoyer une réponse à des personnes extérieures à votre organisation, cochez la case, qui vous souhaitez obtenir la réponse, puis tapez le texte. Vous ne pouvez pas envoyer la réponse uniquement à des personnes externes à votre organisation sans l'envoyer à des personnes internes à votre organisation.
+5. Si vous souhaitez *également* envoyer une réponse à des personnes extérieures à votre organisation, cochez la case, qui vous souhaitez obtenir la réponse, puis tapez le texte. Vous ne pouvez pas envoyer la réponse uniquement à des personnes externes à votre organisation sans l'envoyer à des personnes internes à votre organisation.
 
 6. Sélectionnez **Enregistrer**.
 
@@ -105,7 +106,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
-2. Sélectionnez la boîte aux lettres  partagée à modifier, puis sélectionnez \> **Modifier les membres.**
+2. Sélectionnez la boîte aux lettres  partagée que vous souhaitez modifier, puis sélectionnez \> **Modifier les membres.**
 
 3. Effectuez l'une des opérations suivantes :
    - Pour ajouter des membres, **sélectionnez Ajouter des** membres, recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
@@ -135,7 +136,7 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 
 2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Afficher dans la liste d’adresses globale** \> **Modifier.**
 
-3. Définissez le toggle sur **On**  ou **Off**. 
+3. Définissez le basculement sur **On**  ou **Off**. 
 
 4. Sélectionnez **Enregistrer**.
 

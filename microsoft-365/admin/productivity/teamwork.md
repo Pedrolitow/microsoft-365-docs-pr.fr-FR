@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Détails du travail d’équipe : les utilisateurs ont un score de productivité.'
-ms.openlocfilehash: a10de3daf0d485ec75948f7f23202b06bfe29793
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 1c66dbac320787579d1d8cfe3c463bcb37ebf5ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772831"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161437"
 ---
 # <a name="teamwork--people-experiences"></a>Travail d’équipe : expériences de personnes
 
@@ -35,7 +36,7 @@ Pour commencer à comprendre les informations sur le travail d’équipe, les me
 
 - Microsoft Teams
 - SharePoint
-- Exchange Online
+- Exchange Online
 
 Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
 
@@ -43,7 +44,7 @@ Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au mo
 
 ## <a name="why-your-orgs-teamwork-score-matters"></a>Importance du score de travail d’équipe de votre organisation
 
-L’un des piliers fondamentaux de la productivité organisationnelle est lorsqu’un groupe de personnes ayant un objectif commun travaille ensemble et avec des ressources communes pour la réussite collective. La recherche indique que lorsque des personnes partagent des informations et collaborent dans des espaces de travail partagés, elles économisent jusqu’à 4 heures par semaine. Ils peuvent trouver des documents connexes, trouver du contexte pour les discussions précédentes et atteindre des objectifs partagés. Voir[les](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf) preuves
+L’un des piliers fondamentaux de la productivité organisationnelle est lorsqu’un groupe de personnes ayant un objectif commun travaille ensemble et avec des ressources communes pour la réussite collective. La recherche indique que lorsque des personnes partagent des informations et collaborent dans des espaces de travail partagés, elles économisent jusqu’à 4 heures par semaine. Ils peuvent rechercher des documents connexes, trouver du contexte pour les discussions précédentes et atteindre des objectifs partagés. Voir[les](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf) preuves
 
 ## <a name="how-we-calculate-the-teamwork-score"></a>Calcul du score de travail d’équipe
 
@@ -51,7 +52,7 @@ Nous fournissons un aperçu principal de l’expérience qui contient les mesure
 
 ### <a name="primary-insight"></a>Informations principales
 
-Le principal aperçu examine toutes les personnes qui communiquent à l’aide de messages électroniques et de messages sur Microsoft Teams, et qui interagissent avec le contenu sur le cloud dans des espaces de travail partagés. Au sein de Microsoft 365, les groupes Microsoft 365 sont la base pour que les utilisateurs se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des messages électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
+Le principal aperçu examine toutes les personnes qui communiquent à l’aide de messages électroniques et de messages sur Microsoft Teams, et qui interagissent avec le contenu sur le cloud dans des espaces de travail partagés. Dans Microsoft 365, les groupes Microsoft 365 sont la base pour que les personnes se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des messages électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="Graphique présentant des informations principales sur le score du travail d’équipe.":::
 
@@ -136,7 +137,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
 2. **Corps :** Fournit des informations sur la valeur d’un engagement cohérent dans les espaces de travail partagés pour les aider à améliorer leur efficacité lors du travail d’équipe.
 3. **Visualisation :** Fournit une vue des espaces de travail de votre organisation en fonction de l’intensité de l’engagement par semaine. L’affichage inclut des distributions pour différents types d’activités mesurés au sein du travail d’équipe, en plus de tout engagement, qui couvre les catégories suivantes :
       - **E-mail de groupe :** Pourcentage d’espaces de travail qui n’ont pas de jours/1 jour/2-3 jours/4+ jours d’activité de messagerie de groupe par semaine au cours des 28 derniers jours.
-      - **Messages de canal :** Pourcentage d’espaces de travail qui n’ont pas de jours/1 jour/2-3 jours/4 jours ou plus de messages de canal par semaine au cours des 28 derniers jours.
+      - **Messages de canal :** Pourcentage d’espaces de travail qui n’ont pas de jours/1 jour/2-3 jours/4+ jours de messages de canal par semaine au cours des 28 derniers jours.
       - **Lecture ou création de contenu :** Pourcentage d’espaces de travail qui n’ont pas de jours/1 jour/2-3 jours/4+ jours de lecture ou de création de contenu par semaine au cours des 28 derniers jours.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
@@ -154,7 +155,7 @@ Nous fournissons également des informations supplémentaires sur la façon dont
         Le nombre au centre du graphique de donut représente le nombre total d’espaces de travail partagés associés à Microsoft Teams’équipe.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

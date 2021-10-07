@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Ajoutez un partenaire de registre au moment de l Microsoft 365, modifiez-le ou supprimez un partenaire d’un abonnement.
-ms.openlocfilehash: 78419dd6d1370475c0565c0ad072a7b54639ce43
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2347fc6f90032e07c5c09021194f725e82d27249
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157181"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Ajouter, modifier ou supprimer un partenaire conseiller en abonnement
 
@@ -114,7 +114,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou obtenir une corres
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 2. Si vous avez plusieurs abonnements, sélectionnez l’abonnement à modifier.
-3. À droite, sous le coût de l’abonnement, sélectionnez les trois points (autres actions) > ajouter un **partenaire de l’enregistrement**.
+3. À droite, sous le coût d’abonnement, sélectionnez les trois points (plus d’actions) > **ajouter un partenaire de l’enregistrement.**
 4. Tapez l'ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.
 5. L'ID de partenaire apparaît sur la page **Abonnements**.
 

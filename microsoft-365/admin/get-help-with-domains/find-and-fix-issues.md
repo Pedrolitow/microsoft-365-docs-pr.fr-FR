@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Apprenez à suivre les problèmes que vous avez à résoudre lors de la configuration d’un domaine personnalisé en vous assurez que les enregistrements DNS sont correctement configurer.
-ms.openlocfilehash: 290ff62ada6543c00f69d112a81b57e6b276524e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 932eef134890784c76e6acfc85283159cdd9c7b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775443"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164732"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
@@ -48,7 +49,7 @@ La mise en place de votre domaine pour l’Microsoft 365 peut être difficile. L
     
 - [Tout le monde a basculé vers Microsoft 365 et vous vouliez uniquement que votre courrier électronique bascule ?](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 
-- [Vous ne pouvez pas confirmer l’état d’un compte à but non lucratif ou scolaire ?](#cant-confirm-non-profit-or-school-account-status)
+- [Vous ne pouvez pas confirmer l’état du compte scolaire ou à but non lucratif ?](#cant-confirm-non-profit-or-school-account-status)
 
 - [Les services ne fonctionnent pas avec votre domaine ?](#services-not-working-with-your-domain)
     
@@ -71,9 +72,9 @@ Si vous avez défini votre enregistrement MX et les autres enregistrements DNS c
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Tout le monde a basculé vers Microsoft 365 et vous vouliez uniquement que votre courrier électronique bascule ?
 <a name="BKMK_EmailSwitched"> </a>
 
-Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou par Microsoft 365) pour pointer vers Microsoft 365, et tous les messages électroniques envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX.
+Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou par Microsoft 365) pour pointer vers Microsoft 365, et tous les messages électroniques envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX.
   
-Que se passe-t-il si vous ne souhaitez pas déplacer le courrier électronique de tous les Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de](../setup/domains-faq.yml)messagerie à la place.
+Que se passe-t-il si vous ne souhaitez pas déplacer le courrier électronique de tous les Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses e-mail à la place.](../setup/domains-faq.yml)
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Vous ne pouvez pas confirmer l’état d’un compte à but non lucratif ou scolaire ?
 <a name="BKMK_validateAcct"> </a>
@@ -97,7 +98,7 @@ Si vous avez corrigé tous les problèmes DNS et que vous rencontrez toujours de
     
 - Vous ne pouvez pas mettre à jour votre enregistrement A ou CNAME pour qu’il pointe vers votre site web : mettez à jour les enregistrements [DNS](../setup/add-domain.md) personnalisés dans Microsoft 365
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Résolution des problèmes : données d’audit sur la modification de domaine vérifiée](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (article)\
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)

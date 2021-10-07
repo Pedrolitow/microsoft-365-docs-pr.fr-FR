@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -21,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Connectez-vous à votre compte d Microsoft 365 pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
-ms.openlocfilehash: 8574571564ddfd98e5a5cfe7c232353e0d82f85c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: Connectez-vous à votre compte Microsoft 365 administrateur pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
+ms.openlocfilehash: 480ab751b9ccc97f0a4fcd51d3f7a698790cf675
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775299"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157205"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 
@@ -50,7 +51,7 @@ Pour plus d’informations sur Get-AzureADUser commande dans le module AzureAD, 
 
 Exécutez une des commandes suivantes :
 
-- Pour voir si le mot de passe d’un seul utilisateur est définie pour ne jamais expirer, exécutez l’cmdlet suivante à l’aide de l’UPN (par exemple, *user@contoso.onmicrosoft.com*) ou de l’ID d’utilisateur de l’utilisateur que vous souhaitez vérifier :
+- Pour voir si le mot de passe d’un seul utilisateur est définie pour ne jamais expirer, exécutez l’cmdlet suivante à l’aide de l’UPN (par exemple, *user@contoso.onmicrosoft.com*) ou de l’ID utilisateur de l’utilisateur que vous souhaitez vérifier :
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{

@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 439884f33bee94ddddf8ddf183b4d02bfcedb09a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6693fc853370e1c5b2cd2f3ae09f54da2af14ca8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202871"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162241"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender fonctionnalités d’aperçu
 

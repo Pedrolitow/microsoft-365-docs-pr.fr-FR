@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Achetez Microsoft 365 Business Standard et configurer votre organisation.
-ms.openlocfilehash: a809dcabe26a24231e12e4d3d14d544f83bb2c91
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: cf19c2f07129eb064368c1efd6eea09af0870b93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775935"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164247"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>S’inscrire à un abonnement Microsoft 365 Business Standard abonnement
 
@@ -38,7 +39,7 @@ Pour vous inscrire et acheter des Microsoft 365 Business Standard (ou Microsoft 
 > La personne qui se connecte à Microsoft 365 entreprise (généralement le propriétaire de l’entreprise) devient automatiquement l’administrateur technique de l’organisation. Vous pouvez ajouter d’autres personnes en tant qu’administrateurs si vous souhaitez obtenir de l’aide pour gérer Microsoft 365 services. Pour plus [d’informations, voir](../../business-video/add-admin.md) Ajouter un administrateur.
 
 1. Dans la [page Microsoft 365 entreprise,](https://go.microsoft.com/fwlink/?linkid=2109654)sélectionnez Voir les plans & **tarifs.**
-2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur les informations incluses dans Microsoft 365. Sous Microsoft 365 Business Standard, sélectionnez **Acheter maintenant.**
+2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur ce qui est inclus dans Microsoft 365. Sous Microsoft 365 Business Standard, sélectionnez **Acheter maintenant.**
 3. Sur la page **Merci d’avoir choisi Microsoft 365 Business Standard,** entrez vos informations pour commencer. Sélectionnez **Suivant**.
 4. Entrez une adresse de messagerie que vous utilisez déjà. Il peut s’y trouver n’importe quelle adresse que Vous souhaitez que Microsoft utilise pour communiquer avec vous lors de l’installation. Il s’agit également de l’adresse à laquelle nous vous envoyons des informations sur votre facture et vos renouvellements. Sélectionnez ensuite, **Configurer le compte.**
 5. Entrez votre nom, votre numéro de téléphone d’entreprise, votre taille professionnelle, votre nom de société et votre emplacement. Votre pays ou région détermine les services exacts que vous recevez de Microsoft et ne peut pas être modifié une fois cette étape terminée. Sélectionnez **Suivant**.
@@ -93,7 +94,7 @@ Cette option fournit un accès immédiat à la suite complète de fonctionnalit�
 > [!IMPORTANT]
 > Vous pouvez également suivre ces étapes pour acheter Microsoft 365 Apps’achat. Pour plus d’informations, voir [Configurer Applications Microsoft 365 pour les PME](../setup/setup-apps-for-business.md) une fois que vous avez acheté Applications Microsoft 365 pour les PME.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="what-is-a-business-email-and-what-are-the-advantages-to-setting-one-up"></a>Qu’est-ce qu’un courrier électronique d’entreprise et quels sont les avantages de sa configuration ?
 
@@ -115,7 +116,7 @@ Si vous choisissez d’utiliser un domaine que vous possédez déjà, vous pouve
 
 Pour offrir aux clients la plus grande souplesse possible, différentes options de paiement sont disponibles.
 
-- Microsoft 365 Business Basic, applications pour les entreprises, Business Standard et Business Premium sont disponibles pour un paiement d’engagement mensuel ou annuel.
+- Microsoft 365 Business Basic, Applications pour les entreprises, Business Standard et Business Premium sont disponibles pour un paiement d’engagement mensuel ou annuel.
 - Paiement d’engagement mensuel : vous payez mois par mois et vous pouvez annuler à tout moment.
 - Paiement d’engagement annuel : vous vous inscrivez pour un abonnement d’un an, mais vous pouvez choisir de payer mois par mois ou pour l’année entière au moment de votre inscription. Il existe une remise pour l’utilisation de cette option de paiement.
 

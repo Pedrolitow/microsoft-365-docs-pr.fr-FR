@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Les publications du centre de messages sont en anglais uniquement, mais peuvent être affichées automatiquement dans la langue que vous spécifiez pour Microsoft 365.
-ms.openlocfilehash: 84d88c507b16e81fd63f28261cc27be4883584c3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0afdd98b56b6cb13a5f4bef014d8612c30dfbf11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176316"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164331"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduction pour les publications du Centre de messagerie
 

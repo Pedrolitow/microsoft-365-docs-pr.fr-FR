@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
 ms.date: 03/30/2021
-ms.openlocfilehash: b96c1e98b8ce2e15f8674f93e7dd96a0b2256b07
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 3488991d6db386f7dcbd6f57271347da41a6489a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933482"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164463"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
@@ -38,7 +38,7 @@ Pour modifier l’adresse associée à votre facture ou abonnement, consultez Mo
 ## <a name="edit-organization-information"></a>Modifier les informations de l'organisation
 
 > [!IMPORTANT]
-> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine les services disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
+> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine quels services sont disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
 
 Pour modifier d’autres informations sur la page de profil de votre entreprise :
   
@@ -75,7 +75,7 @@ En tant qu’administrateur, vous pouvez modifier votre adresse de messagerie de
 
 5. Modifiez l’adresse dans la **zone de courrier** de remplacement, puis sélectionnez **Suivant**.
 
-6. Entrez le code envoyé à l’adresse e-mail de remplacement et sélectionnez **OK** pour vérifier la modification.
+6. Entrez le code envoyé à l’autre adresse e-mail et sélectionnez **OK** pour vérifier la modification.
 Pour en savoir plus sur la modification d’autres informations de profil, voir Modifier vos [préférences de contact](change-contact-preferences.md) ou modifier votre langue [d’affichage.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)
   
 ### <a name="email-signatures"></a>Signatures électroniques

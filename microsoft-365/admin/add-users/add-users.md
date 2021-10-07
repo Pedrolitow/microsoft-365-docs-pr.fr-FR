@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Chaque membre de l’équipe a besoin d’un compte d’utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour les entreprises. Apprenez comment ajouter des utilisateurs et attribuer des licences.
 ms.date: 07/01/2020
-ms.openlocfilehash: a1211d73ae0af86eeb469f8777f94c466c5771d0
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: eee8b2bb9484dfba34a278f7ee2b9b0077dda7e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786010"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161929"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 

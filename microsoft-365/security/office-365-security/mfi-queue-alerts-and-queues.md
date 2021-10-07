@@ -7,17 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent apprendre à utiliser le widget Files d’attente dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller le flux de messagerie infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4acebd3ca65eedf82cead5f51c23a0f8bc3f01a2
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 4652cfda1010fc0b3a416c0be7f68095b11e4ad4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988426"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60162157"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informations sur les files d’attente dans le Centre de sécurité & conformité
 
@@ -78,7 +78,7 @@ Même si le volume de messages en file d’attente n’a pas  dépassé le [](ma
 
 ![Widget Files d’attente dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité.](../../media/mfi-queues-widget.png)
 
-Si vous cliquez sur le nombre  de messages sur le widget, un message volant messages mis en file d’attente apparaît avec les informations suivantes :
+Si vous cliquez sur le nombre  de messages sur le widget, un message volant Messages mis en file d’attente apparaît avec les informations suivantes :
 
 - **Nombre de messages mis en file d’attente**
 - **Nom du** connecteur : cliquez sur le nom du connecteur pour gérer le connecteur dans le Centre d’administration Exchange (EAC).

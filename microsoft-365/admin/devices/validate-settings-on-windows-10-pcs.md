@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Découvrez comment vérifier que les paramètres Microsoft 365 protection des applications pour les entreprises ont pris effet sur les appareils Windows 10 utilisateurs.
-ms.openlocfilehash: c0d5ded2eeda022984f86c33429572fa4a8671bb
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 311da3efec8cd3ad57e722aea5a8c3888d1af7b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933374"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165327"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Valider les paramètres de protection des appareils Windows 10 PC
 
@@ -54,7 +54,7 @@ Une fois [les stratégies d’appareils](protection-settings-for-windows-10-pcs.
     
     ![Choisissez la manière dont les mises à jour sont remis page indique que les paramètres sont masqués ou gérés par votre organisation.](../../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Pour ouvrir le Centre de sécurité  Windows Defender, consultez la Paramètres De sécurité mise à jour Windows Defender cliquez sur Ouvrir le centre de sécurité Protection contre les virus et les paramètres de protection contre les \> **&amp;** \>  \>  \> **&amp;** \> **&amp; menaces du Centre de sécurité Windows Defender**. 
+4. Pour ouvrir le Centre de sécurité  Windows Defender, consultez la Paramètres de sécurité mise à jour Windows Defender cliquez sur Ouvrir Windows Defender Paramètres de protection antivirus contre les \> **&amp;** \>  \>  \> **&amp;** \> **menaces du &amp; centre de sécurité**. 
     
 5. Vérifiez que toutes les options sont grisées. 
     
@@ -62,5 +62,5 @@ Une fois [les stratégies d’appareils](protection-settings-for-windows-10-pcs.
   
 ## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 documentation et ressources pour les entreprises](./index.yml)\
+[Microsoft 365 documentation et ressources pour les entreprises](/admin)\
 [Définir des configurations d'application pour les PC Windows 10](protection-settings-for-windows-10-pcs.md)

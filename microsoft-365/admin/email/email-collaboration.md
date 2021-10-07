@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Découvrez les différents types de groupes et comment les utiliser avec les différentes fonctionnalités de collaboration de Microsoft 365.
-ms.openlocfilehash: 3e3cdd22f78711f74375c7e20e2fd0702c075bcd
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: dd320b51d538a3dff7ed539d11139d398980ca2e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164979"
 ---
 # <a name="email-collaboration"></a>Collaborer par message électronique
 
@@ -58,7 +58,7 @@ Le tableau suivant vous donne un coup d’œil rapide sur les différents types 
 
 ||**Groupes dans Outlook**|**Listes de distribution**|**Boîtes aux lettres partagées**|**Dossiers publics**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Utilisateurs** <br/> |Utilisateurs qui souhaitent un espace de travail de collaboration pour leurs messages de groupe, fichiers et calendrier intégré aux services qu’ils utilisent déjà (Outlook Web App, OneDrive Entreprise)  <br/> |Utilisateurs devant envoyer un message électronique à un groupe de destinataires partageant des intérêts ou des caractéristiques communs.  <br/> |Les boîtes aux lettres partagées sont un excellent moyen de gérer les questions de courrier des clients, car plusieurs membres de votre organisation peuvent partager la responsabilité de la surveillance de la boîte aux lettres et de la réponse aux requêtes. Vos questions client obtiennent des réponses plus rapides et les e-mails associés sont tous stockés dans une seule boîte aux lettres.  <br/><br/> Délégués qui travaillent au nom d'une entité virtuelle, telle que support@contoso.com. Les délégués peuvent répondre aux messages électroniques en tant qu'identité de boîte aux lettres partagée.  <br/> |Dès lors qu'ils disposent des autorisations utiles, tous les membres de votre organisation peuvent accéder aux dossiers publics et y effectuer des recherches. Ils conviennent parfaitement à l'archivage des messages ou au partage des documents.  <br/> |
+|**Utilisateurs** <br/> |Utilisateurs qui souhaitent un espace de travail de collaboration pour leurs messages de groupe, fichiers et calendrier intégré aux services qu’ils utilisent déjà (Outlook Web App, OneDrive Entreprise)  <br/> |Utilisateurs devant envoyer un message électronique à un groupe de destinataires partageant des intérêts ou des caractéristiques communs.  <br/> |Les boîtes aux lettres partagées sont un excellent moyen de traiter les questions de courrier des clients, car plusieurs membres de votre organisation peuvent partager la responsabilité de la surveillance de la boîte aux lettres et de la réponse aux requêtes. Vos questions client obtiennent des réponses plus rapides et les e-mails associés sont tous stockés dans une seule boîte aux lettres.  <br/><br/> Délégués qui travaillent au nom d'une entité virtuelle, telle que support@contoso.com. Les délégués peuvent répondre aux messages électroniques en tant qu'identité de boîte aux lettres partagée.  <br/> |Dès lors qu'ils disposent des autorisations utiles, tous les membres de votre organisation peuvent accéder aux dossiers publics et y effectuer des recherches. Ils conviennent parfaitement à l'archivage des messages ou au partage des documents.  <br/> |
 |**Taille de groupe idéale** <br/> |Toute  <br/> |Grande  <br/> |Petit  <br/> |Grande  <br/> |
 |**Accès** <br/> |Exchange Online utilisateurs  <br/> |Pour les groupes de distribution, vous devez ajouter les membres manuellement. Pour les groupes de distribution dynamiques, les membres sont ajoutés d'après des critères de filtrage.  <br/> |Les autorisations Accès total et/ou Envoyer en tant que peuvent être octroyées aux utilisateurs. Si les autorisations Accès total, les utilisateurs doivent également ajouter la boîte aux lettres partagée à leur profil Outlook pour y accéder.  <br/> |Accessible par les membres de votre organisation  <br/> |
 |**Calendrier partagé ?** <br/> |Oui  <br/> |Non  <br/> |Oui  <br/> |Oui  <br/> |

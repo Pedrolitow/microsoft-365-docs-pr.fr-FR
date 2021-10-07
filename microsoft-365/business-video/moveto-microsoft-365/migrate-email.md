@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 entreprise.
-ms.openlocfilehash: 58037d033c35bad97d5b18dc408e5450340d0c25
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a5ceccfde47b5084326aae9346b1c645cef7114a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402009"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163754"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Migrer le courrier électronique et le calendrier d’entreprise à partir de Google Workspace
 
@@ -43,7 +43,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
 
 1. À l’aide d’un navigateur Chrome, connectez-vous à votre console d’administration Google Workspace [admin.google.com](https://admin.google.com). 
 1. Dans un nouvel onglet ou une nouvelle fenêtre, accédez à la page [Comptes de](https://console.developers.google.com/iam-admin/serviceaccounts) service. 
-1. Sélectionnez **Créer un** projet, nommez le projet, puis choisissez **Créer.** 
+1. Sélectionnez **Créer un** projet, nommez-le, puis choisissez **Créer.** 
 1. Sélectionnez **Créer un compte de service,** entrez un nom, choisissez **Créer,** puis **Terminé**. 
 1. Ouvrez le menu **Actions,** **sélectionnez Modifier** et prenez note de l’ID unique. Vous aurez besoin de cet ID plus tard dans le processus. 
 1. Ouvrez la section **Afficher la délégation à l’échelle du** domaine. 
@@ -108,10 +108,10 @@ Votre domaine est maintenant installé.
 
 Avant de commencer la migration, vous devez créer des alias de messagerie pour vos utilisateurs avec le nouveau sous-domaine. 
 
-1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans le Centre d'administration Microsoft 365, **sélectionnez Go to Active users**. 
+1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans la Centre d'administration Microsoft 365, **sélectionnez Go to Active users**. 
 1. Sélectionnez un utilisateur, puis **gérez le nom d’utilisateur et le courrier électronique.** 
 1. Dans ladown **Domains (Domaines),** sélectionnez le sous-domaine que vous avez précédemment créé. 
-1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermer la fenêtre. 
+1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermez la fenêtre. 
 
     Répétez ce processus pour chaque utilisateur. 
 
@@ -133,7 +133,7 @@ Une fois que vous avez terminé, vous êtes prêt à migrer.
 
 1. Sélectionnez **Choisir** un fichier, accédez au fichier CSV, choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Vérifiez l’adresse de messagerie de l’administrateur que vous souhaitez utiliser pour le test. 
-1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements de votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
+1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements sur votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Entrez un nom dans le **champ Nouveau nom de lot de migration.**
 1. Entrez le sous-domaine que vous avez créé dans le champ de domaine de **remise** cible, sélectionnez **Suivant,** puis **Nouveau**. 
 1. Une fois les informations enregistrées, sélectionnez **OK.** 

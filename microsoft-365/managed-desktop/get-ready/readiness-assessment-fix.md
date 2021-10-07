@@ -4,18 +4,18 @@ description: Actions détaillées à prendre pour chaque problème trouvé par l
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 32e750dc824484624a5f0d953b75f242639c3e23
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: d2e055b553e3358107283236d634d9d46d33de4d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009504"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163155"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -27,7 +27,7 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 |Prêt     | Aucune action n’est requise avant de terminer l’inscription.        |
 |Avertissement    | Suivez les étapes de l’outil ou de cet article pour une expérience de l’inscription et pour les utilisateurs. Vous *pouvez terminer* l’inscription, mais vous devez résoudre ces problèmes avant de déployer votre premier appareil.        |
 |Non prêt | *L’inscription échoue si vous ne corrigez pas ces problèmes.* Suivez les étapes de l’outil ou de cet article pour les résoudre.        |
-|Error | Le Azure Active Directory (AD) que vous utilisez ne donne pas l’autorisation suffisante pour exécuter cette vérification. |
+|Erreur | Le Azure Active Directory (AD) que vous utilisez ne donne pas l’autorisation suffisante pour exécuter cette vérification. |
 
 > [!NOTE]
 > Les résultats signalés par cet outil reflètent l’état de vos paramètres uniquement au moment où vous l’avez utilisé. Si vous a apporté ultérieurement des modifications aux stratégies dans Microsoft Intune, Azure Active Directory ou Microsoft 365, les éléments qui étaient « prêts » peuvent devenir « Non prêts ». Pour éviter les problèmes liés aux Microsoft Manged Desktop d’entreprise, vérifiez les paramètres spécifiques décrits dans cet article avant de modifier les stratégies.
@@ -38,11 +38,11 @@ Vous pouvez accéder aux paramètres Intune à l’Microsoft Endpoint Manager [d
 
 ### <a name="autopilot-deployment-profile"></a>Profil autopilot deployment
 
-Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques Microsoft Manged Desktop appareils mobiles. Microsoft Manged Desktop utilise Autopilot pour mettre en service de nouveaux appareils. Si vous avez un profil de déploiement Autopilot existant, le paramètre « Convertir tous les appareils ciblés en Autopilot » doit être définie sur « Non » pour que le test de préparation du bureau géré pour Autopilot réussisse.
+Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques Microsoft Manged Desktop appareils. Microsoft Manged Desktop utilise Autopilot pour mettre en service de nouveaux appareils. Si vous avez un profil de déploiement Autopilot existant, le paramètre « Convertir tous les appareils ciblés en Autopilot » doit être définie sur « Non » pour que le test de préparation du bureau géré soit réussi pour Autopilot.
 
 **Non prêt**
 
-Vous avez un profil Autopilot qui est affecté à tous les appareils. Pour obtenir la procédure à suivre, voir Inscrire Windows appareils dans Intune à l’aide [Windows Autopilot](/mem/autopilot/enrollment-autopilot). Après Microsoft Manged Desktop’inscription, définissez votre stratégie Autopilot pour exclure le groupe Modern **Workplace Devices -All** Azure AD.
+Vous avez un profil Autopilot qui est affecté à tous les appareils. Pour obtenir la procédure à suivre, voir Inscrire Windows appareils dans Intune à l’aide [Windows Autopilot](/mem/autopilot/enrollment-autopilot). Après Microsoft Manged Desktop inscription, définissez votre stratégie Autopilot pour exclure le groupe Modern **Workplace Devices -All** Azure AD.
 
 **Avertissement**
 
@@ -55,7 +55,7 @@ Si vous avez des connecteurs de certificat qui seront utilisés par les appareil
 
 **Avertissement**
 
-Aucun connecteur de certificat n’est présent. Il est possible que vous n’avez pas besoin de connecteurs, mais vous devez évaluer si vous en avez besoin pour la connectivité réseau sur Microsoft Manged Desktop périphériques. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Aucun connecteur de certificat n’est présent. Il est possible que vous n’avez pas besoin de connecteurs, mais vous devez évaluer si vous en avez besoin pour la connectivité réseau sur Microsoft Manged Desktop appareils. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 **Avertissement**
 
@@ -77,7 +77,7 @@ Vous n’avez pas Portail d'entreprise installé pour vos utilisateurs. Achetez 
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
-Les stratégies d’accès conditionnel Microsoft Manged Desktop gérer votre organisation Azure AD (client) dans Intune et Azure AD.
+Les stratégies d’accès conditionnel ne doivent pas empêcher Microsoft Manged Desktop gérer votre organisation Azure AD (client) dans Intune et Azure AD.
 
 **Non prêt**
 
@@ -104,7 +104,7 @@ Les stratégies de conformité des appareils Intune dans votre organisation Azur
 
 **Avertissement**
 
-Vous avez au moins une stratégie de conformité qui s’applique à tous les utilisateurs. Microsoft Manged Desktop également des stratégies de conformité qui s’appliqueront à Microsoft Manged Desktop appareils. Examinez toutes les stratégies de conformité créées par votre organisation qui s’appliquent Microsoft Manged Desktop appareils mobiles pour vous assurer qu’il n’y a aucun conflit. Pour obtenir la procédure à suivre, voir [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+Vous avez au moins une stratégie de conformité qui s’applique à tous les utilisateurs. Microsoft Manged Desktop également des stratégies de conformité qui s’appliqueront à Microsoft Manged Desktop appareils. Examinez toutes les stratégies de conformité créées par votre organisation qui s’appliquent Microsoft Manged Desktop appareils mobiles pour vous assurer qu’il n’y a aucun conflit. Pour obtenir la procédure à [suivre,](/mem/intune/protect/create-compliance-policy)voir Créer une stratégie de conformité dans Microsoft Intune .
 
 
 
@@ -158,7 +158,7 @@ L’authentification multifacteur ne doit pas empêcher Microsoft Manged Desktop
 
 **Non prêt**
 
-Certaines stratégies d’authentification  multifacteur sont définies comme requises pour les stratégies d’accès conditionnel qui sont affectées à tous les utilisateurs. Lors de l’inscription, nous allons exclure Microsoft Manged Desktop comptes de service des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Certaines stratégies d’authentification multifacteur sont définies comme **requises** pour les stratégies d’accès conditionnel qui sont attribuées à tous les utilisateurs. Lors de l’inscription, nous allons exclure Microsoft Manged Desktop comptes de service des stratégies d’accès conditionnel pertinentes et appliquer de nouvelles stratégies d’accès conditionnel pour restreindre l’accès à ces comptes. Pour plus d’informations sur ces comptes de service, voir [procédures d’exploitation standard.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Avertissement**
 
@@ -166,7 +166,7 @@ L’authentification multifacteur est requise sur les stratégies d’accès con
 
 **Erreur**
 
-Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
+Le rôle Administrateur Intune n’a pas les autorisations suffisantes pour cette vérification. Vous aurez également besoin de l’un de ces rôles Azure AD pour exécuter cette vérification :
 
 - Lecteur de sécurité
 - Administrateur de sécurité
@@ -177,7 +177,7 @@ Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour 
 
 ### <a name="powershell-scripts"></a>Scripts PowerShell
 
-Windows PowerShell scripts ne peuvent pas être affectés de manière à cibler Microsoft Manged Desktop périphériques.  
+Windows PowerShell scripts ne peuvent pas être affectés d’une manière qui ciblerait Microsoft Manged Desktop périphériques.  
 
 **Avertissement**
 
@@ -202,11 +202,11 @@ Les stratégies de base de sécurité ne doivent pas cibler Microsoft Manged Des
 
 **Non prêt**
 
-Vous avez un profil de base de sécurité qui cible tous les utilisateurs, tous les appareils ou les deux. Modifiez la stratégie pour utiliser une affectation qui cible un groupe Azure AD spécifique qui n’inclut aucun Microsoft Manged Desktop appareils. Pour obtenir la procédure à suivre, voir Utiliser les lignes de base de sécurité [pour configurer Windows 10 appareils mobiles dans Intune.](/mem/intune/protect/security-baselines) Lors de l’inscription, nous appliquons une nouvelle ligne de base de sécurité à tous Microsoft Manged Desktop appareils. Après l’inscription, vous pouvez consulter la stratégie de base Microsoft Manged Desktop sécurité dans la zone de stratégie de **configuration** de Microsoft Endpoint Manager.
+Vous avez un profil de base de sécurité qui cible tous les utilisateurs, tous les appareils ou les deux. Modifiez la stratégie pour utiliser une affectation qui cible un groupe Azure AD spécifique qui n’inclut aucun Microsoft Manged Desktop appareils. Pour obtenir la procédure à suivre, voir Utiliser les lignes de base de sécurité [pour configurer les Windows 10 dans Intune.](/mem/intune/protect/security-baselines) Lors de l’inscription, nous appliquons une nouvelle ligne de base de sécurité à tous Microsoft Manged Desktop appareils. Après l’inscription, vous pouvez consulter la stratégie de base Microsoft Manged Desktop sécurité dans la zone de stratégie de **configuration** de Microsoft Endpoint Manager.
 
 **Avertissement**
 
-Assurez-vous que les stratégies de base de sécurité que vous avez exclues Microsoft Manged Desktop appareils. Pour obtenir la procédure à suivre, voir Utiliser les lignes de base de sécurité [pour configurer Windows 10 appareils mobiles dans Intune.](/mem/intune/protect/security-baselines) Lors de l’inscription, nous appliquons une nouvelle ligne de base de sécurité à tous Microsoft Manged Desktop appareils. Le groupe Modern **Workplace Devices -All** Azure AD est un groupe dynamique que nous créons lorsque vous vous inscrivez à Microsoft Manged Desktop. Vous devez donc revenir pour exclure ce groupe après l’inscription. 
+Assurez-vous que les stratégies de base de sécurité que vous avez exclues Microsoft Manged Desktop appareils. Pour obtenir la procédure à suivre, voir Utiliser les lignes de base de sécurité [pour configurer les Windows 10 dans Intune.](/mem/intune/protect/security-baselines) Lors de l’inscription, nous appliquons une nouvelle ligne de base de sécurité à tous Microsoft Manged Desktop appareils. Le groupe Modern **Workplace Devices -All** Azure AD est un groupe dynamique que nous créons lorsque vous vous inscrivez à Microsoft Manged Desktop. Vous devez donc revenir pour exclure ce groupe après l’inscription. 
 
 ### <a name="unlicensed-admins"></a>Administrateurs sans licence
 
@@ -222,7 +222,7 @@ Examinez les applications que vous souhaitez Microsoft Manged Desktop utilisateu
 
 **Avertissement**
 
-Vous devez préparer un inventaire des applications que vous souhaitez que vos Microsoft Manged Desktop utilisateurs. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’Portail d'entreprise (voir [Install Portail d'entreprise Intune on devices](../get-started/company-portal.md) and Enrollment Status Page (ESP) to distribute apps to your users. Pour plus d’informations, voir [Applications dans Microsoft Manged Desktop](apps.md) première expérience d’application avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
+Vous devez préparer un inventaire des applications que vous souhaitez que vos Microsoft Manged Desktop utilisateurs. Étant donné que ces applications doivent être déployées par Intune, évaluez la réutilisation des applications Intune existantes. Envisagez d’Portail d'entreprise (voir [Install Portail d'entreprise Intune on devices](../get-started/company-portal.md) and Enrollment Status Page (ESP) to distribute apps to your users. Pour plus d’informations, voir [Applications Microsoft Manged Desktop](apps.md) expérience de première application avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
 
 Vous pouvez demander à votre représentant de compte Microsoft une requête dans Microsoft Endpoint Configuration Manager pour identifier les applications qui sont prêtes à migrer vers Intune ou qui ont besoin d’ajustement.
 
@@ -233,7 +233,7 @@ Microsoft Manged Desktop nécessite que Windows Hello entreprise soit activé.
 
 **Avertissement**
 
-Windows Hello entreprise est désactivé ou n’est pas installé. Activez-la en suivant les étapes de la [stratégie Créer un Windows Hello entreprise.](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+Windows Hello entreprise est désactivé ou n’est pas installé. Activez-la en suivant les étapes de [la stratégie Windows Hello entreprise.](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 sonneries de mise à jour
@@ -246,7 +246,7 @@ Vous avez une stratégie de « sonnerie de mise à jour » qui cible tous les ap
 
 **Avertissement**
 
-Assurez-vous que les stratégies de sonnerie de mise à jour que vous avez excluent le **groupe Modern Workplace Devices -All** Azure AD. Si vous avez affecté des groupes d’utilisateurs Azure AD à ces stratégies, assurez-vous que les stratégies de sonnerie de mise à jour que vous avez également exclues du groupe Espace de travail moderne **-Tous** les groupes Azure AD à qui vous ajoutez vos utilisateurs Microsoft Manged Desktop (ou un groupe équivalent). Pour obtenir la procédure à [suivre, voir Gérer Windows 10 mises à jour logicielles dans Intune.](/mem/intune/protect/windows-update-for-business-configure) Les appareils d’espace de travail modernes **-Tous** et l’espace de travail moderne - Tous les groupes **Azure** AD sont des groupes que nous créons lorsque vous vous inscrivez dans Microsoft Manged Desktop. Vous devez donc revenir pour exclure ce groupe après l’inscription.
+Assurez-vous que les stratégies de sonnerie de mise à jour que vous avez excluent le **groupe Modern Workplace Devices -All** Azure AD. Si vous avez affecté des groupes d’utilisateurs Azure AD à ces stratégies, assurez-vous que les stratégies de sonnerie de mise à jour que vous avez également exclues du groupe Espace de travail moderne **-Tous** les groupes Azure AD à qui vous ajoutez vos utilisateurs Microsoft Manged Desktop (ou un groupe équivalent). Pour obtenir la procédure à [suivre, voir Gérer Windows 10 mises à jour logicielles dans Intune.](/mem/intune/protect/windows-update-for-business-configure) Les appareils d’espace de travail modernes **-Tous** et l’espace de travail moderne - Tous les groupes **Azure** AD sont des groupes que nous créons lorsque vous vous inscrivez à Microsoft Manged Desktop. Vous devez donc revenir pour exclure ce groupe après l’inscription.
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory paramètres
@@ -284,7 +284,15 @@ Microsoft Manged Desktop recommande d’ajuster les paramètres d’invitation i
 
 **Avertissement**
 
-**Les utilisateurs membres et les utilisateurs** affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris des invités ayant des autorisations de membre, à activer. Pour obtenir la procédure à suivre, [voir Conditions préalables pour les comptes invités.](/microsoft-365/managed-desktop/get-ready/guest-accounts)
+**Les utilisateurs membres et les utilisateurs** affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris les invités ayant des autorisations de membre, à activer. Pour obtenir la procédure à suivre, [voir Conditions préalables pour les comptes invités.](/microsoft-365/managed-desktop/get-ready/guest-accounts)
+
+### <a name="guest-user-access"></a>Accès pour l’utilisateur invité
+
+Microsoft Manged Desktop recommande d’ajuster l’accès des utilisateurs invités, car le paramètre par défaut permet à tous les utilisateurs invités de votre annuaire d’avoir le même accès que les membres.
+
+**Avertissement**
+
+**Les utilisateurs invités ont un accès limité aux propriétés** et les appartenances aux objets d’annuaire doivent être activées. Pour obtenir la procédure à suivre, [voir Conditions préalables pour les comptes invités.](/microsoft-365/managed-desktop/get-ready/guest-accounts)
 
 ### <a name="licenses"></a>Licences
 
@@ -301,7 +309,7 @@ Certains noms de compte peuvent être en conflit avec les noms de compte créés
 
 **Non prêt**
 
-Vous avez au moins un nom de compte en conflit avec les noms de compte créés par Microsoft Manged Desktop. Travaillez avec votre représentant de compte Microsoft pour exclure ces noms de comptes. Nous ne listons pas les noms de comptes publiquement pour minimiser les risques de sécurité. 
+Vous avez au moins un nom de compte qui entrera en conflit avec les noms de compte créés par Microsoft Manged Desktop. Travaillez avec votre représentant de compte Microsoft pour exclure ces noms de comptes. Nous ne listons pas les noms de comptes publiquement pour minimiser les risques de sécurité. 
 
 
 ### <a name="security-administrator-roles"></a>Rôles d’administrateur de sécurité

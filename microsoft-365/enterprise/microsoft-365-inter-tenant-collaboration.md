@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - M365-subscription-management
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment Microsoft 365 collaboration fonctionne entre les locataires et les organisations, ce qui permet à différentes organisations de collaborer en toute sécurité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05a1756d4707ba51d1175f0f5f5701f89fd7f5a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cb91b6bcaac212eeaf0ef4051f466751d8dbbd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205459"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163335"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 collaboration entre les locataires
 
@@ -52,7 +52,7 @@ Microsoft 365 options de collaboration entre clients incluent l’utilisation d�
 | Objectif de partage | Action administrative | Informations sur les how-to |
 |:-----|:-----|:-----|
 |Skype Entreprise En ligne : messagerie instantanée, appels et présence avec d’autres Skype Entreprise utilisateurs | Les administrateurs peuvent activer leurs utilisateurs Skype Entreprise Online pour la messagerie instantanée, effectuer des appels audio/vidéo et voir la présence des utilisateurs dans un autre Microsoft 365 client. | [Autoriser les utilisateurs à contacter des utilisateurs Skype Entreprise externes](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)|
-|Skype Entreprise En ligne : messagerie instantanée, appels et présence avec Skype utilisateurs (consommateurs) | Les administrateurs peuvent activer leurs utilisateurs Skype Entreprise online pour la messagerie instantanée, effectuer des appels et voir la présence Skype utilisateurs (consommateurs). | [Autoriser les utilisateurs Skype Entreprise à ajouter des contacts Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)|
+|Skype Entreprise En ligne : messagerie instantanée, appels et présence avec Skype utilisateurs (consommateurs) | Les administrateurs peuvent activer Skype Entreprise utilisateurs en ligne pour la messagerie instantanée, effectuer des appels et voir la présence Skype utilisateurs (consommateurs). | [Autoriser les utilisateurs Skype Entreprise à ajouter des contacts Skype](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)|
 
 ## <a name="azure-ad-b2b-collaboration-options"></a>Options de collaboration Azure AD B2B
 
@@ -84,7 +84,7 @@ Microsoft 365 options de collaboration entre clients incluent l’utilisation d�
 
 | Objectif de partage | Action administrative | Informations sur les how-to |
 |:-----|:-----|:-----|
-|Power BI permet aux utilisateurs invités externes d’utiliser du contenu qui leur est partagé via des liens. Cela permet aux utilisateurs de l’organisation de distribuer du contenu de manière sécurisée entre les organisations.<br/> | L’administrateur Power BI peut contrôler si les utilisateurs peuvent inviter des utilisateurs externes à afficher le contenu au sein de l’organisation.| [Distribuer Power BI contenu aux utilisateurs invités externes avec Azure AD B2B](/power-bi/service-admin-azure-ad-b2b) |
+|Power BI permet aux utilisateurs invités externes d’utiliser du contenu qui leur est partagé via des liens. Cela permet aux utilisateurs de l’organisation de distribuer du contenu de manière sécurisée entre les organisations.<br/> | L’administrateur Power BI peut contrôler si les utilisateurs peuvent inviter des utilisateurs externes à afficher du contenu au sein de l’organisation.| [Distribuer Power BI contenu aux utilisateurs invités externes avec Azure AD B2B](/power-bi/service-admin-azure-ad-b2b) |
 
 ## <a name="points-to-be-aware-of-about-microsoft-365-inter-tenant-collaboration"></a>Points à connaître sur la collaboration entre Microsoft 365 client
 
@@ -94,7 +94,7 @@ Chaque organisation conserve ses propres comptes d’utilisateur, identités, gr
 
 - **Comptes d’utilisateur :** Les comptes ne peuvent pas être partagés ou dupliqués entre les locataires ou les partitions dans les services de domaine Active Directory locaux.
 
-- **Abonnements &amp; aux licences** : dans Microsoft 365, les licences des plans de gestion des licences (également appelées plans Microsoft 365 ou SSO) donnent aux utilisateurs l’accès aux services Microsoft 365 définis pour ces plans.
+- **Abonnements &amp; aux licences** : dans Microsoft 365, les licences des plans de gestion des licences (également appelées plans SSK ou plans Microsoft 365) donnent aux utilisateurs l’accès aux services Microsoft 365 définis pour ces plans.
 
 - **Stockage :** Dans Microsoft 365 plans de gestion des licences, les limites et frontières logicielles pour SharePoint Online sont gérées séparément des limites de stockage des boîtes aux lettres. Les limites de stockage de boîtes aux lettres sont définies et gérées à l’aide Exchange Online. Dans les deux scénarios, le stockage ne peut pas être partagé entre les locataires.
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer un affichage utilisateur personnalisé dans Microsoft 365.
-ms.openlocfilehash: 6b668bd34b35cbb8b3bfda0a152b981bdcf8df5f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e0d809e4f21f8fac798029a403242504b394fb68
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773858"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161833"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée
 
@@ -99,7 +99,7 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
     
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Filtres** et **Nouveau filtre.**
   
-3. Dans la page **Filtre personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste de listes de filtres.
+3. Dans la page **Filtre personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste liste de filtres.
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>Modifier ou supprimer un affichage utilisateur personnalisé
 
@@ -128,7 +128,7 @@ Vous pouvez également filtrer en fonction des détails de profil utilisateur su
   
 3. Dans la page **Filtre personnalisé,** modifiez les informations selon vos besoins, puis sélectionnez **Enregistrer.** Ou, pour supprimer le filtre, en bas de la page, sélectionnez **Supprimer**. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble Centre d'administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)\
 [À propos des rôles d’administrateur](../add-users/about-admin-roles.md) (vidéo)\

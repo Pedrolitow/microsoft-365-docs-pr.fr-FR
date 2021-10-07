@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation en obtenant le rapport Microsoft Teams’utilisation des applications à partir Microsoft 365 rapports.
-ms.openlocfilehash: a64664c6d9e78499501d16f56b41aa9be6058eaa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e268ff759cc77691b4118a725fc2116eb03a2fe5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157445"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation Microsoft Teams appareil
 
 Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Accéder au rapport Utilisation des applications Microsoft Teams
 
@@ -46,11 +46,11 @@ Vous pouvez afficher l’utilisation de l’appareil dans Teams rapport en chois
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Teams rapport d’appareil de l’utilisateur : choisissez des colonnes.](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
 Le rapport **Utilisation de Microsoft Teams sur des appareils** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau (7) affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d'utilisateur  <br/> |Nom d’affichage de l’utilisateur.  <br/> |
