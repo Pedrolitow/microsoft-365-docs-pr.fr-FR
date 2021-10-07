@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a69a90db168bd58266c65c8573a233e1932e025c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 805f61d5a7a00056f204b77c4550672ac17982b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208939"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199644"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Suivre les menaces émergentes et y répondre par le biais de l’analyse des menaces
 
@@ -61,7 +61,7 @@ Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse 
 Le tableau de bord d’analyse des menaces constitue un excellent point de départ pour obtenir les rapports les plus pertinents pour votre organisation. Il récapitule les menaces dans les sections suivantes :
 
 - **Menaces les** plus récentes : répertorie les derniers rapports sur les menaces publiés, ainsi que le nombre d’appareils avec des alertes actives et résolues.
-- **Menaces à fort impact**: répertorie les menaces qui ont eu l’impact le plus élevé sur l’organisation. Cette section classe les menaces par le nombre d’appareils qui ont des alertes actives.
+- **Menaces à fort impact**: répertorie les menaces qui ont eu l’impact le plus élevé sur l’organisation. Cette section classe les menaces selon le nombre d’appareils qui ont des alertes actives.
 - **Résumé des menaces**: affiche l’impact global des menaces de suivi en affichant le nombre de menaces avec des alertes actives et résolues.
 
 Sélectionnez une menace dans le tableau de bord pour afficher le rapport de cette menace.
@@ -90,7 +90,7 @@ Chaque rapport inclut des graphiques conçus pour fournir des informations sur l
 
 Chaque rapport inclut des graphiques qui fournissent une vue d’ensemble de la résilience de votre organisation face à une menace donnée :
 
-- **État de la configuration** de la sécurité : indique le nombre d’appareils qui ont appliqué les paramètres de sécurité recommandés qui peuvent aider à atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
+- **État de la configuration** de la sécurité : indique le nombre d’appareils qui ont appliqué les paramètres de sécurité recommandés pour atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
 - **État de correction des** vulnérabilités : indique le nombre d’appareils qui ont appliqué des mises à jour de sécurité ou des correctifs qui adressent les vulnérabilités exploitées par la menace.
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en sécurité Microsoft

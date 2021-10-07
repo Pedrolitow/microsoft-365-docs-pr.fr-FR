@@ -2,26 +2,24 @@
 title: Créer et gérer des balises d’appareils
 description: Utiliser des balises de périphérique pour grouper des appareils pour capturer le contexte et activer la création de listes dynamiques dans le cadre d’un incident
 keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e23980133d2fb0c69ca79f6dfdde7656e1961097
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38b5d3f2ddcab56fc712c771019982d05a18e20e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165033"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199752"
 ---
 # <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 
@@ -80,11 +78,12 @@ Vous pouvez également supprimer des balises de cet affichage.
 > [!NOTE]
 > Applicable uniquement sur les appareils suivants :
 >
+> - Windows 11
 > - Windows 10, version 1709 ou ultérieure
 > - Windows Serveur, version 1803 ou ultérieure
 > - Windows Server 2016
-> - Windows Server 2012 R2
-> - Windows Server 2008 R2 SP1
+> - Windows Server 2012 R2
+> - Windows Server 2008 R2 SP1
 > - Windows 8.1
 > - Windows 7 SP1
 

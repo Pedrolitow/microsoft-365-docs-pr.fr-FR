@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 33022fa1ad57b7adf13139272bcdca09a1d9487b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d539f34f72b5fe6c26325646452a15b5df76a5a7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208755"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199548"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Étape 1. Trier et analyser votre premier incident
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender reçoit des alertes et des événements de plusieurs plat
 - [Microsoft Defender pour](/defender-for-identity/what-is) l’identité est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Active Directory Domain Services) locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation.
 - [Microsoft Cloud App Security](/cloud-app-security/) agit comme un garde d’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent.
 - [Microsoft Defender pour Office 365](../office-365-security/overview.md) votre organisation contre les menaces malveillantes dans les messages électroniques, les liens (URL) et les outils de collaboration.
-- [Azure Security Center](/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud ainsi que sur site.
+- [Azure Security Center](/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud et localement.
 
 Dans Microsoft 365 Defender, [les incidents sont identifiés](incidents-overview.md) en corrélant les alertes à partir de ces différentes sources de détection. Au lieu de passer des ressources en chaîne ou de distinguer plusieurs alertes dans leurs incidents respectifs, vous pouvez commencer par la file d’attente des incidents Microsoft 365 Defender immédiatement. Cela vous permet de trier efficacement les incidents entre les points de terminaison, les identités, le courrier électronique et les applications, et de réduire les dommages d’une attaque.
 
@@ -75,7 +75,7 @@ Voici une approche de tri :
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Exemple d’incident à fort impact.":::
 
-2. Sélectionnez le cercle en de côté du nom de l’incident pour passer en revue les détails. Un volet latéral s’affiche sur le côté droit, qui contient des informations supplémentaires qui peuvent aider davantage votre tri.
+2. Sélectionnez le cercle en côté du nom de l’incident pour passer en revue les détails. Un volet latéral s’affiche sur le côté droit, qui contient des informations supplémentaires qui peuvent aider davantage votre tri.
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="Exemple de volet latéral d’incident.":::
 

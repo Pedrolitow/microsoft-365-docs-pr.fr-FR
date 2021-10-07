@@ -9,25 +9,25 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2fc605a57d1bce1b1653f5e15bf8600cd9e1d831
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 654de92a89c85bb696aea8cc5ea88797d79b0726
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124285"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199740"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Créer une règle de notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -89,7 +89,7 @@ Vous devez avoir accès à :
 
 8. Sélectionnez **l’exemple de charge utile Utiliser pour générer un lien de** schéma.
 
-    ![Image d’un json d’parse avec la charge utile.](images/parse-json-schema.png)
+    ![Image de l’image json d’une image avec la charge utile.](images/parse-json-schema.png)
 
 9. Copiez et collez l’extrait de code JSON suivant :
 
@@ -202,7 +202,7 @@ L’image suivante est un exemple de notification par courrier électronique.
     - Prenez tous les appareils vus pour la dernière fois au cours des 7 derniers jours.
 
 - Pour chaque appareil :
-  - Si la dernière propriété vue se trouve sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité d’interruption de l’utilisation.
+  - Si la propriété vue pour la dernière fois est sur l’intervalle d’une heure de [-7 jours, -7days + 60 minutes] -> alerte pour la possibilité de retentation.
   - Si le premier aperçu a lieu au cours de l’heure >'alerte d’intégration.
 
 Dans cette solution, vous n’aurez pas d’alertes en double : il existe des locataires qui ont de nombreux appareils. L’obtention de tous ces appareils peut être très coûteuse et nécessiter une pagination.

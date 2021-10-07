@@ -1,27 +1,25 @@
 ---
 title: Planification d’une mise à jour de Microsoft Defender pour Endpoint (Linux)
 description: Découvrez comment planifier une mise à jour de Microsoft Defender pour Endpoint (Linux) pour mieux protéger les ressources de votre organisation.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05747374e2a28331ec0742fe11ca2dbc660771c5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 25b4f91243e804c913536faa2f1ea28cdfb3c28e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209089"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199764"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planifier une mise à jour de Microsoft Defender pour point de terminaison (Linux)
 
