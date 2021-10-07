@@ -9,15 +9,15 @@ ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment utiliser les SharePoint Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: f6097a7573037f8efc2467bb3a9f1037a12bf7ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c654c72ef36bf86337b7564efc68e4523516f4f9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181252"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173510"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Étape 1. Utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données
 
@@ -25,7 +25,7 @@ Votre organisation a besoin d’un moyen d’identifier et de classer tous les d
 
 ## <a name="overview-of-the-process"></a>Vue d’ensemble du processus
 
-[La compréhension des documents](document-understanding-overview.md) utilise des modèles d’intelligence artificielle (IA) pour automatiser la classification des fichiers et l’extraction des informations. Les modèles de compréhension des documents sont également optimaux pour l’extraction d’informations à partir de documents non structurés et semi-structurés où les informations dont vous avez besoin ne sont pas contenues dans des tableaux ou des formulaires, tels que des contrats. 
+[La compréhension des documents](document-understanding-overview.md) utilise des modèles d’intelligence artificielle (IA) pour automatiser la classification des fichiers et l’extraction des informations. Les modèles de compréhension des documents sont également optimaux pour extraire des informations à partir de documents non structurés et semi-structurés où les informations dont vous avez besoin ne sont pas contenues dans des tableaux ou des formulaires, tels que des contrats. 
 
 Les modèles de compréhension des documents utilisent la technologie OCR (Optical Character Recognition) pour analyser les fichiers PDF, images et TIFF, à la fois lorsque vous entraînez un modèle avec des exemples de fichiers et lorsque vous l’exécutez sur des fichiers dans une bibliothèque de documents.
 
@@ -35,7 +35,7 @@ Les modèles de compréhension des documents utilisent la technologie OCR (Optic
 
 3. Dans votre modèle, vous pouvez créer [un extracteur](create-an-extractor.md) pour extraire des éléments de données spécifiques de chaque contrat. Par exemple, pour chaque contrat, les informations qui vous intéressent le plus sont qui est le client, le nom de l’prestataire et le coût total.
 
-4. Une fois que vous avez créé votre modèle, appliquez-le à [une SharePoint de documents.](apply-a-model.md) Lorsque vous téléchargez des documents dans la bibliothèque de documents, votre modèle de compréhension des documents s’exécute et identifie et classifie tous les fichiers qui correspondent au type de contenu de contrats que vous avez défini dans votre modèle. Tous les fichiers classés en tant que contrats s’affichent dans un affichage bibliothèque personnalisé. Les fichiers affichent également les valeurs de chaque contrat que vous avez défini dans votre extracteur.
+4. Une fois que vous avez créé votre modèle, appliquez-le à [une bibliothèque SharePoint documents.](apply-a-model.md) Lorsque vous téléchargez des documents dans la bibliothèque de documents, votre modèle de compréhension des documents s’exécute et identifie et classifie tous les fichiers qui correspondent au type de contenu de contrat que vous avez défini dans votre modèle. Tous les fichiers classés en tant que contrats s’affichent dans un affichage bibliothèque personnalisé. Les fichiers affichent également les valeurs de chaque contrat que vous avez défini dans votre extracteur.
 
    ![Contrats dans la bibliothèque de documents.](../media/content-understanding/doc-lib-solution.png)
 
@@ -79,7 +79,7 @@ Vous devez ajouter au moins cinq exemples de fichiers qui sont des documents de 
 
 2. Dans la page Model **> Contract > Contract classifier,** dans la visionneuse en haut du premier exemple de fichier, vous verrez un texte demandant si le fichier est un exemple du modèle de contrat que vous avez créé. Si cet exemple est positif, sélectionnez **Oui**. Si cet exemple est négatif, sélectionnez **Non**.
 
-3. Dans la **liste d’exemples** étiquetés à gauche, sélectionnez les autres fichiers que vous souhaitez utiliser comme exemples et étiquetez-les. 
+3. Dans la **liste d’exemples** Étiquetés à gauche, sélectionnez les autres fichiers que vous souhaitez utiliser comme exemples et étiquetez-les. 
 
     ![Page d’accueil du classifieur.](../media/content-understanding/models-contract-classifier.png) 
 
@@ -107,17 +107,17 @@ Vous devez ajouter au moins cinq exemples de fichiers qui sont des documents de 
 
 Vous pouvez tester votre modèle de contrat sur des exemples de fichiers qu’il n’a pas vus auparavant. Cela est facultatif, mais il peut s’avérer utile.
 
-1. Dans la page **Modèles > contrat > classifieur** de contrat, sélectionnez **l’onglet Test.** Cette fonction exécute le modèle sur vos exemples de fichiers non lamentés.
+1. Dans la page **> contrat > contrat,** sélectionnez **l’onglet Test.** Cette fonction exécute le modèle sur vos exemples de fichiers non lamentés.
 
 2. Dans la **liste Fichiers de test,** vos exemples de fichiers s’affichent et indiquent si le modèle les a prédits comme positifs ou négatifs. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
     ![Capture d’écran des fichiers non lamentés dans la liste Fichiers texte.](../media/content-understanding/test-on-files.png) 
 
-3. Lorsque vous avez terminé, **sélectionnez Quitter la formation.**
+3. Lorsque vous avez terminé, **sélectionnez Quitter l’entraînement.**
 
 ### <a name="create-and-train-an-extractor"></a>Créer et former un extracteur
 
-1. Dans la page **Modèles > contrat,** sous **Actions** clés Créer et former des  >  **extracteurs,** **sélectionnez Créer un extracteur**.
+1. Dans la page **Modèles > contrat,** sous **Actions** clés Créer et former des  >  **extracteurs,** **sélectionnez Créer un extracteur.**
 
    ![Screenshot showing the Contracts page with Create and train extractors option highlighted.](../media/content-understanding/key-actions-create-extractors.png)
 
@@ -172,11 +172,11 @@ Pour vous aider à identifier la *date de début du* contrat, vous pouvez créer
 
 Vous pouvez tester votre modèle de contrat sur des exemples de fichiers qu’il n’a pas vus auparavant. Cela est facultatif, mais il peut s’avérer utile.
 
-1. Dans la page **Modèles > contrat > classifieur** de contrat, sélectionnez **l’onglet Test.** Cette fonction exécute le modèle sur vos exemples de fichiers non lamentés.
+1. Dans la page **> contrat > contrat,** sélectionnez **l’onglet Test.** Cette fonction exécute le modèle sur vos exemples de fichiers non lamentés.
 
 2. Dans la liste **Des fichiers de** test, vos exemples de fichiers s’affichent et indiquent si le modèle est en mesure d’extraire les informations dont vous avez besoin. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
-3. Lorsque vous avez terminé, **sélectionnez Quitter la formation.**
+3. Lorsque vous avez terminé, **sélectionnez Quitter l’entraînement.**
 
 ### <a name="apply-your-model-to-a-document-library"></a>Appliquer votre modèle à une bibliothèque de documents
 

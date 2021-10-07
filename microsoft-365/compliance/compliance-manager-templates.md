@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser et gérer des modèles pour la création d’évaluations dans le Gestionnaire de conformité Microsoft. Créez et modifiez des modèles à l’aide d’un fichier Excel formaté.
-ms.openlocfilehash: 2118f527cafe97153b9a8185da6d12d8f6f3d9da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 56bbe69b6baaa996a1b63e20ca657641b9da9038
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181361"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173558"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Utiliser des modèles d’évaluation dans le Gestionnaire de conformité
 
@@ -44,7 +44,7 @@ Il existe deux catégories de modèles dans le Gestionnaire de conformité : inc
 1. **Les modèles inclus sont accordés** par votre licence du Gestionnaire de conformité et couvrent les principales réglementations et exigences. Pour en savoir plus sur les modèles disponibles dans le cadre de votre contrat de licence, consultez les [détails de la gestion des licences.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 2. **Premium modèles supplémentaires** pour répondre à des besoins et scénarios supplémentaires peuvent être obtenus par l’achat de licences de modèles.
 
-Lorsque vous commencez à créer des évaluations, le Gestionnaire de conformité suit le nombre de modèles actifs afin de surveiller votre utilisation. Pour en savoir plus, [consultez les modèles actifs et inactifs.](compliance-manager-templates.md#active-and-inactive-templates)
+Lorsque vous commencez à créer des évaluations, le Gestionnaire de conformité suit le nombre de modèles actifs afin de pouvoir surveiller votre utilisation. Pour en savoir plus, [consultez les modèles actifs et inactifs.](compliance-manager-templates.md#active-and-inactive-templates)
 
 Affichez [la liste complète des modèles disponibles](compliance-manager-templates-list.md) dans le Gestionnaire de conformité.
 
@@ -69,7 +69,7 @@ Cloud de la communauté du secteur public Les comptes DOD et élevés doivent ac
 
 ### <a name="try-out-premium-templates"></a>Essayer des modèles Premium
 
-Pour tester des modèles Premium avant d’effectuer un achat, vous pouvez également acquérir des versions d’essai des licences. Les licences d’essai sont valides pour 25 modèles au plus pendant 90 jours. Une fois que vous avez obtenu votre licence d’essai, les modèles doivent être disponibles dans votre client dans les 48 heures.
+Pour tester des modèles premium avant d’effectuer un achat, vous pouvez également acquérir des versions d’essai des licences. Les licences d’essai sont valides pour 25 modèles au plus pendant 90 jours. Une fois que vous avez obtenu votre licence d’essai, les modèles doivent être disponibles dans votre client dans les 48 heures.
 
 Pour démarrer une version d’essai, choisissez le lien approprié pour votre organisation :
 
@@ -141,7 +141,7 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 
 - **controlFamily**: fournissez un mot ou une expression pour le controlFamily, qui identifie un groupe étendu de contrôles. Un controlFamily n’a pas besoin d’être unique ; Il peut être répertorié plusieurs fois dans une feuille de calcul. Le même controlFamily peut également être répertorié dans plusieurs modèles, bien qu’ils n’ont aucune relation les uns avec les autres. Chaque controlFamily doit être mappé sur au moins un contrôle.
 
-- **controlTitle**: fournir un titre pour le contrôle. Alors que controlName est un code de référence, le titre est un format de texte enrichi généralement vu dans les réglementations.
+- **controlTitle :** fournir un titre pour le contrôle. Alors que controlName est un code de référence, le titre est un format de texte enrichi généralement vu dans les réglementations.
 
 - **controlDescription**: fournir une description du contrôle.
 
@@ -217,7 +217,7 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 2. Choisissez le type de modèle que vous souhaitez créer. Dans ce cas, **sélectionnez Étendre un modèle Microsoft,** puis **sélectionnez Modèle Microsoft.**
 
-3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran, affichant la liste de tous les modèles et leur état actif ou inactif. Votre **compteur de modèles activés** indique le nombre de modèles actuellement utilisés sur le nombre total disponible. Si vous avez terminé votre limite, une barre de messages vous fournira un avis.
+3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran, affichant la liste de tous les modèles et leur statut d’actif ou inactif. Votre **compteur de modèles activés** indique le nombre de modèles actuellement utilisés sur le nombre total disponible. Si vous avez terminé votre limite, une barre de messages vous fournira un avis.
 
 4. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran. Utiliser **la recherche** pour appliquer des filtres pour localiser le modèle de votre recherche
 
@@ -227,11 +227,11 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 7. Dans le **Télécharger** de fichiers,  sélectionnez Parcourir pour rechercher et télécharger votre fichier Excel formaté contenant toutes les données de modèle requises.
 
-8. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. **Sélectionnez** Suivant pour continuer (si vous devez modifier le fichier, **sélectionnez Télécharger un autre fichier).**
+8. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
 
     - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devrez corriger et charger à l’autre votre fichier. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
 
-9. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant.** (Si vous devez apporter des modifications, **sélectionnez Télécharger un fichier différent.)**
+9. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant.** (Si vous devez apporter des modifications, **sélectionnez Télécharger fichier différent.)**
 
 10. Le dernier écran confirme qu’un nouveau modèle a été créé. Sélectionnez **Terminé** pour quitter l’Assistant.
 
@@ -251,7 +251,7 @@ Toutefois, vous devez connaître certains détails lorsque vous formatez votre f
 
 ### <a name="format-your-excel-file-to-modify-an-existing-template"></a>Mettre en forme Excel fichier pour modifier un modèle existant
 
-Dans la page **de vos modèles d’évaluation,** sélectionnez le modèle que vous souhaitez modifier, ce qui   fera monter sa page de détails. Ensuite, **sélectionnez Exporter Excel**. Un Excel avec toutes vos données de modèle sera téléchargé. Enregistrez le fichier sur votre ordinateur local.
+Dans la page **de vos modèles d’évaluation,** sélectionnez le modèle que vous souhaitez modifier, qui   fera monter sa page de détails. Ensuite, **sélectionnez Exporter Excel**. Un Excel avec toutes vos données de modèle sera téléchargé. Enregistrez le fichier sur votre ordinateur local.
 
 Pour travailler avec ce fichier, allez dans la section ci-dessous pour trouver rapidement les instructions dont vous avez besoin :
 
@@ -276,7 +276,7 @@ Sous **l’onglet Modèles,** vous  pouvez modifier n’importe quoi dans la col
 
 Vous pouvez modifier les informations de n’importe quelle action d’amélioration *à l’exception de son titre.* Vous pouvez modifier n’importe quelle cellule à partir des colonnes B et, lorsque vous importez de nouveau le fichier dans le modèle, les actions d’amélioration de ce modèle contiennent désormais les données mises à jour.
 
-Vous ne pouvez pas modifier **l’actionTitle** (colonne A), car si vous le faites, le Gestionnaire de conformité considère qu’il s’agit d’une nouvelle action d’amélioration. Si vous souhaitez modifier le nom d’une action d’amélioration, consultez les instructions ci-dessous.
+Vous ne pouvez pas modifier **actionTitle** (colonne A), car si vous le faites, le Gestionnaire de conformité considère qu’il s’agit d’une nouvelle action d’amélioration. Si vous souhaitez modifier le nom d’une action d’amélioration, consultez les instructions ci-dessous.
 
 #### <a name="change-an-improvement-actions-name"></a>Modifier le nom d’une action d’amélioration
 
@@ -320,7 +320,7 @@ Une fois que Excel fichier est terminé et enregistré, suivez ces étapes.
 
 1. Ouvrez à nouveau la page du modèle d’évaluation et sélectionnez votre modèle. Sur la page de détails de votre modèle, **sélectionnez Modifier le modèle** pour lancer l’Assistant Modification.
 2. Dans le **Télécharger de fichier,** sélectionnez **Parcourir** pour rechercher et télécharger Excel fichier.
-3. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. **Sélectionnez** Suivant pour continuer (si vous devez modifier le fichier, **sélectionnez Télécharger un autre fichier).**
+3. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
     - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devez corriger votre fichier et le charger à nouveau. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
 
 4. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant.**

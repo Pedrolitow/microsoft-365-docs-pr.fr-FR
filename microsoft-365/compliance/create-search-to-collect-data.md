@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer, définir et choisir des dépositaires et des emplacements de conservation pour une recherche dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3050e176f495bd2fc23ac6237f1dac28b04088ec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4dab7936002a3551e21142a76d6ef301cd6bfdf8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204132"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172466"
 ---
 # <a name="create-a-search"></a>Créer une recherche
 
@@ -44,4 +44,4 @@ Dans certains cas, vous pouvez rechercher des sources de données qui ne sont pa
 
 ## <a name="define-the-search-query-and-conditions"></a>Définir la requête et les conditions de recherche
 
-Vous pouvez définir la requête de mots clés et toutes les conditions de la recherche à l’aide des cartes de condition pré-conçues ou à l’aide du langage KQL (Keyword Query Language). Pour plus d’informations, voir [Créer des requêtes de recherche.](building-search-queries.md)
+Vous pouvez définir la requête de mots clés et toutes les conditions pour la recherche à l’aide des cartes de condition pré-conçues ou à l’aide du langage KQL (Keyword Query Language). Pour plus d’informations, voir [Créer des requêtes de recherche.](building-search-queries.md)

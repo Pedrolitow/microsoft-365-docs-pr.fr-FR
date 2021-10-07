@@ -11,19 +11,19 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
-description: Découvrez comment DLP dans le Centre de sécurité & conformité fonctionne avec DLP et les règles de flux de messagerie (règles de transport) dans le Centre d Exchange’administration.
+description: Découvrez comment DLP dans le Centre de sécurité et conformité & fonctionne avec DLP et les règles de flux de messagerie (règles de transport) dans le Centre d’administration Exchange de sécurité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 37d1c4a5900fb9a6d42934246cbed6666e0609eb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05010248e5cd4dd9cad84e02092511f3737430ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182288"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172322"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>Fonctionnement de la DLP entre le Centre Microsoft 365 conformité et Exchange’administration centrale
 
@@ -35,7 +35,7 @@ Dans Microsoft 365, vous pouvez créer une stratégie de protection contre la pe
     
 Les polices DLP créées dans ces centres d’administration fonctionnent côte à côte : cette rubrique explique comment.
   
-![Pages DLP dans le Centre de sécurité et conformité Exchange centre d’administration.](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![Pages DLP dans le Centre de sécurité et conformité et Exchange’administration centrale.](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>Fonctionnement de la protection contre la protection contre la protection contre la & dans le Centre de sécurité et conformité avec les règles de flux de messagerie et DLP dans le Centre d’administration Exchange de sécurité
 
@@ -57,6 +57,6 @@ Notez également que Exchange règles de flux de messagerie qui utilisent l’ac
 
 Les conseils de stratégie peuvent fonctionner avec les stratégies DLP et les règles de flux de messagerie créées dans le Centre d’administration Exchange, ou avec les stratégies DLP créées dans le Centre de sécurité & conformité, mais pas les deux. En effet, ces stratégies sont stockées à différents emplacements, mais les conseils de stratégie ne peuvent dessiner qu’à partir d’un seul emplacement.
   
-Si vous avez configuré des conseils de stratégie dans le Centre d’administration Exchange, les conseils de stratégie que vous configurez dans le Centre de sécurité & conformité n’apparaissent pas pour les utilisateurs dans Outlook sur le web et Outlook 2013 et ultérieurs tant que vous n’avez pas éteint les conseils dans le Centre d’administration Exchange. Cela garantit que vos règles de flux Exchange de messagerie continueront de fonctionner jusqu’à ce que vous choisissiez de basculer vers le Centre de sécurité & conformité.
+Si vous avez configuré des conseils de stratégie dans le Centre d’administration Exchange, les conseils de stratégie que vous configurez dans le Centre de sécurité & conformité n’apparaîtront pas pour les utilisateurs dans Outlook sur le web et Outlook 2013 et les ultérieures tant que vous n’avez pas éteint les conseils du Centre d’administration Exchange. Cela garantit que vos règles de flux Exchange de messagerie continueront de fonctionner jusqu’à ce que vous choisissiez de basculer vers le Centre de sécurité & conformité.
   
 Notez que bien que les conseils de stratégie ne peuvent dessiner qu’à partir d’un seul emplacement, les notifications par courrier électronique sont toujours envoyées, même si vous utilisez des stratégies DLP dans le Centre de sécurité & conformité et le Centre d’administration Exchange.

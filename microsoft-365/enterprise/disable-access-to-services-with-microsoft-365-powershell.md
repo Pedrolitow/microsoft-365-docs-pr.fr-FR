@@ -7,7 +7,7 @@ ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Dans cet article, découvrez comment utiliser PowerShell pour désactiver l’accès aux services Microsoft 365 pour les utilisateurs.
-ms.openlocfilehash: 7caab5fc6bc4522f210d788d0293c4594997f13d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bce02c40bf6ca99d74b8747fb0c5eb5c0b485888
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165388"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173462"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Désactiver l’accès aux services Microsoft 365 avec PowerShell
 
@@ -66,10 +66,10 @@ Un script PowerShell est disponible pour automatiser les procédures décrites d
   
 Pour désactiver un ensemble spécifique de services Microsoft 365 pour les utilisateurs pour un plan de gestion des licences spécifique, effectuez les étapes suivantes :
   
-#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a>Étape 1 : identifiez les services indésirables dans le plan de gestion des licences à l’aide de la syntaxe suivante :
+#### <a name="step-1-identify-the-undesired-services-in-the-licensing-plan-by-using-the-following-syntax"></a>Étape 1 : identifiez les services non stratégiques dans le plan de gestion des licences à l’aide de la syntaxe suivante :
     
 ```powershell
-$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
+$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesiredService1>", "<UndesiredService2>"...
 ```
 
 L’exemple suivant crée un objet **LicenseOptions** qui désactive les services Office et SharePoint Online dans le plan de gestion des licences nommé `litwareinc:ENTERPRISEPACK` (Office 365 Entreprise E3).
@@ -92,7 +92,7 @@ L’exemple suivant crée un compte pour Allie Bellew qui attribue la licence et
 New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
 ```
 
-Pour plus d’informations sur la création de comptes d’utilisateurs dans PowerShell pour Microsoft 365, voir Créer des comptes d’utilisateurs [avec PowerShell.](create-user-accounts-with-microsoft-365-powershell.md)
+Pour plus d’informations sur la création de comptes d’utilisateurs dans PowerShell Microsoft 365, voir Créer des comptes d’utilisateurs [avec PowerShell.](create-user-accounts-with-microsoft-365-powershell.md)
     
 Pour désactiver les services d’un utilisateur sous licence existant, utilisez la syntaxe suivante :
     
@@ -148,7 +148,7 @@ Pour ce faire, procédez comme suit :
 
    Dans cet exemple, le fichier texte est C: \\ My Documents \\Accounts.txt.
     
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
    ```powershell
    Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}

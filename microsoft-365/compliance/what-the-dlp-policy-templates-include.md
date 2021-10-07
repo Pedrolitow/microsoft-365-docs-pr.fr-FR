@@ -13,20 +13,20 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 recommendations: false
-description: Découvrez ce que les modèles de stratégie de protection contre la perte de données (DLP) du Centre de sécurité & conformité Office 365 incluent.
-ms.openlocfilehash: afcc641e6e868c1988f6b30a286c082e960d056c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Découvrez ce que les modèles de stratégie de protection contre la perte de données (DLP) dans le Centre de sécurité & conformité Office 365 inclut.
+ms.openlocfilehash: ddeebc3cfeb2668cfb0d376a4ca8c9f92bfe36f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172226"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 

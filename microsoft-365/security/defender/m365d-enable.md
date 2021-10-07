@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9585547ea926dbee09aacada05f24e9217c07923
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b64990320684f6c022a2fc8a2092141af5728679
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180946"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174398"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activer Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender regroupe les données des différents services pris en 
 Pour obtenir la meilleure protection et optimiser les Microsoft 365 Defender, nous vous recommandons de déployer tous les services pris en charge applicables sur votre réseau. Pour plus d’informations, [voir sur le déploiement des services pris en charge.](deploy-supported-services.md)
 
 ## <a name="onboard-to-the-service"></a>Intégrer au service
-L’intégration à Microsoft 365 Defender est simple. Dans le menu de navigation, sélectionnez n’importe quel élément, tel que  **incidents & alertes,** de **recherche,** de centre de action ou d’analyse des menaces pour lancer le processus d’intégration. 
+L’intégration à Microsoft 365 Defender est simple. Dans le menu de navigation, sélectionnez n’importe quel élément, tel que  **incidents & alertes,** de **recherche,** de centre de traitement ou d’analyse des menaces pour lancer le processus d’intégration. 
 
 ### <a name="data-center-location"></a>Emplacement du centre de données
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender stockera et traitera les données au même emplacement qu
 Sélectionnez **Besoin d’aide ?** dans le portail Microsoft 365 Defender pour contacter le support Microsoft sur la mise en service Microsoft 365 Defender dans un autre emplacement de centre de données.
 
 > [!NOTE]
-> Dans le passé, Microsoft Defender pour point de terminaison était automatiquement mis en service dans les centres de données de l’Union européenne (UE) lorsqu’il était allumé via Azure Defender. Microsoft 365 Defender sera automatiquement mis en service dans le même centre de données de l’UE pour les clients qui ont mis en service Defender pour endpoint de cette manière dans le passé.
+> Dans le passé, Microsoft Defender pour le point de terminaison était automatiquement mis en service dans les centres de données de l’Union européenne (UE) lorsqu’il était allumé via Azure Defender. Microsoft 365 Defender sera automatiquement mis en service dans le même centre de données de l’UE pour les clients qui ont mis en service Defender pour endpoint de cette manière dans le passé.
 
 ### <a name="confirm-that-the-service-is-on"></a>Vérifiez que le service est activé
 

@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données Red tail Speak de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: f5dfac55951aa103829283ea2c5e9b364754c8a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e47166695e7dce5c4c286ef5d312d40b3ea58b76
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180043"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175418"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configurer un connecteur pour archiver les données Redtail Speak
 
@@ -27,7 +27,7 @@ Une fois que les données Redtail Speak sont stockées dans les boîtes aux lett
 
 ## <a name="overview-of-archiving-the-redtail-speak-data"></a>Vue d’ensemble de l’archivage des données Redtail Speak
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Redtail Speak Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Redtail Speak dans Microsoft 365.
 
 ![Flux de travail d’archivage pour les données Redtail Speak.](../media/RedtailSpeakConnectorWorkflow.png)
 
@@ -55,7 +55,7 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 2. Dans la page de description du produit **Redtail Speak,** **sélectionnez Ajouter un nouveau connecteur.**
 
-3. Dans la page **Conditions d’utilisation,** sélectionnez **Accepter.**
+3. Dans la page **Conditions d’utilisation,** sélectionnez **Accepter**.
 
 4. Entrez un nom unique qui identifie le connecteur, puis sélectionnez **Suivant**.
 
@@ -71,7 +71,7 @@ Une fois que vous avez **sélectionné Enregistrer & terminé,** la **page** Map
 
 Pour maîtr les utilisateurs et terminer la configuration du connecteur, suivez les étapes suivantes :
 
-1. Dans la page Map Redtail Speak des utilisateurs **Microsoft 365 utilisateurs,** activez le mappage utilisateur automatique. Les éléments Redtail Speak incluent une propriété appelée *Email*, qui contient les adresses e-mail des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Map Redtail Speak (Redtail Speak) des** utilisateurs Microsoft 365 utilisateurs, activez le mappage automatique des utilisateurs. Les éléments Redtail Speak incluent une propriété appelée *Email*, qui contient les adresses e-mail des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Sélectionnez **Suivant,** examinez vos paramètres et allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 

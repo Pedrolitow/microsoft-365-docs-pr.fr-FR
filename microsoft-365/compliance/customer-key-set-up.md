@@ -6,24 +6,24 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour Microsoft 365.
-ms.openlocfilehash: 739653151031026e788c4b39fa3b182184115175
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 5c505e5c9545dd679860d9976f587459e64363c3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776631"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172358"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
 Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis configurez les Microsoft 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d’autres termes, la clé client permet aux clients d’ajouter une couche de chiffrement qui leur appartient, avec leurs clés.
 
-Configurer Azure avant de pouvoir utiliser la clé client pour Office 365. Cet article décrit les étapes à suivre pour créer et configurer les ressources Azure requises, puis fournit les étapes de configuration de la clé client dans Office 365. Après avoir installé Azure, vous déterminez la stratégie et, par conséquent, les clés à affecter pour chiffrer les données entre différentes charges Microsoft 365 charges de travail au sein de votre organisation. Pour plus d’informations sur la clé client ou pour obtenir une vue d’ensemble générale, voir Chiffrement de service avec clé [client dans Office 365](customer-key-overview.md).
+Configurer Azure avant de pouvoir utiliser la clé client pour Office 365. Cet article décrit les étapes à suivre pour créer et configurer les ressources Azure requises, puis fournit les étapes de configuration de la clé client dans Office 365. Après avoir installé Azure, vous déterminez la stratégie et, par conséquent, les clés à affecter pour chiffrer les données entre différentes charges Microsoft 365 charges de travail au sein de votre organisation. Pour plus d’informations sur la clé client ou pour une vue d’ensemble, voir Chiffrement de service avec clé [client dans Office 365](customer-key-overview.md).
   
 > [!IMPORTANT]
 > Nous vous recommandons vivement de suivre les meilleures pratiques de cet article. Ces éléments sont appelés **CONSEIL et** **IMPORTANT**. La clé client vous permet de contrôler les clés de chiffrement racine dont l’étendue peut être aussi importante que l’ensemble de votre organisation. Cela signifie que les erreurs réalisées avec ces clés peuvent avoir un impact important et entraîner des interruptions de service ou une perte irrévocable de vos données.
@@ -40,9 +40,9 @@ Si vous avez besoin d’une assistance supplémentaire au-delà de la documentat
   
 ## <a name="overview-of-steps-to-set-up-customer-key"></a>Vue d’ensemble des étapes de la mise en place de la clé client
 
-Pour configurer la clé client, complétez ces tâches dans l’ordre répertorié. Le reste de cet article fournit des instructions détaillées pour chaque tâche ou fournit des liens vers des informations supplémentaires pour chaque étape du processus.
+Pour configurer la clé client, remplissez ces tâches dans la commande répertoriée. Le reste de cet article fournit des instructions détaillées pour chaque tâche ou fournit des liens vers des informations supplémentaires pour chaque étape du processus.
   
-**Dans Azure et Microsoft, FastTrack :**
+**Dans Azure et Microsoft FastTrack :**
   
 Vous effectuerez la plupart de ces tâches en vous connectant à distance à Azure PowerShell. Pour obtenir de meilleurs résultats, utilisez la version 4.4.0 ou Azure PowerShell.
   
@@ -79,13 +79,13 @@ Effectuer ces tâches dans Azure Key Vault. Vous devez effectuer ces étapes pou
 La clé client nécessite deux abonnements Azure. En tant que meilleure pratique, Microsoft vous recommande de créer de nouveaux abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault peuvent uniquement être autorisées pour les applications dans le même client Azure Active Directory (Microsoft Azure Active Directory), vous devez créer les nouveaux abonnements à l’aide du même client Azure AD que celui utilisé avec votre organisation où les dep seront affectés. Par exemple, à l’aide de votre compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre organisation. Pour obtenir la procédure détaillée, voir [S’inscrire à Azure en tant qu’organisation.](/azure/active-directory/fundamentals/sign-up-organization)
   
 > [!IMPORTANT]
-> La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En tant que meilleure pratique, Microsoft recommande que des membres distincts de votre organisation configurent une clé dans chaque abonnement. Vous devez uniquement utiliser ces abonnements Azure pour administrer les clés de chiffrement Office 365. Cela protège votre organisation au cas où l’un de vos opérateurs supprime accidentellement, intentionnellement ou malveillantment les clés dont ils sont responsables, ou en cas de mauvaise gestion.
+> La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (PDN). Pour ce faire, vous devez créer deux abonnements Azure. En tant que meilleure pratique, Microsoft recommande que des membres distincts de votre organisation configurent une clé dans chaque abonnement. Vous devez uniquement utiliser ces abonnements Azure pour administrer les clés de chiffrement Office 365. Cela protège votre organisation au cas où l’un de vos opérateurs supprimerait accidentellement, intentionnellement ou malveillantement les clés dont ils sont responsables, ou en cas de mauvaise gestion.
 
-Il n’existe aucune limite pratique au nombre d’abonnements Azure que vous pouvez créer pour votre organisation. Le fait de suivre ces meilleures pratiques permet de minimiser l’impact d’une erreur humaine tout en aidant à gérer les ressources utilisées par la clé client.
+Il n’existe aucune limite pratique au nombre d’abonnements Azure que vous pouvez créer pour votre organisation. Le fait de suivre ces meilleures pratiques permet de minimiser l’impact des erreurs humaines tout en aidant à gérer les ressources utilisées par la clé client.
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Envoyer une demande d’activation de la clé client pour Office 365
 
-Une fois que vous avez créé les deux nouveaux abonnements Azure, vous devez envoyer la demande d’offre de clé client appropriée dans le portail [Microsoft FastTrack](https://fasttrack.microsoft.com/). Les sélections que vous faites dans le formulaire d’offre concernant les désignations autorisées au sein de votre organisation sont essentielles et nécessaires pour l’inscription de la clé client. Les responsables de ces rôles sélectionnés au sein de votre organisation garantissent l’authenticité de toute demande de révocation et de destruction de toutes les clés utilisées avec une stratégie de chiffrement de données de clé client. Vous devez faire cette étape une fois pour chaque type de dep de clé client que vous avez l’intention d’utiliser pour votre organisation.
+Une fois que vous avez créé les deux nouveaux abonnements Azure, vous devez envoyer la demande d’offre de clé client appropriée dans le portail [Microsoft FastTrack](https://fasttrack.microsoft.com/). Les sélections que vous faites dans le formulaire d’offre concernant les désignations autorisées au sein de votre organisation sont essentielles et nécessaires pour l’inscription de la clé client. Les responsables de ces rôles sélectionnés au sein de votre organisation garantissent l’authenticité de toute demande de révocation et de destruction de toutes les clés utilisées avec une stratégie de chiffrement de données de clé client. Vous devez faire cette étape une fois pour chaque type de dep de clé client que vous envisagez d’utiliser pour votre organisation.
 
 **L FastTrack ne fournit pas d’assistance avec la clé client. Office 365 utilise simplement le portail FastTrack pour vous permettre de soumettre le formulaire et pour nous aider à suivre les offres pertinentes pour la clé client. Une fois que vous avez envoyé la demande FastTrack, demandez à l’équipe d’intégration de clé client correspondante de démarrer le processus d’intégration.**
   
@@ -130,7 +130,7 @@ Avant de contacter l’équipe Microsoft 365, vous devez suivre les étapes suiv
 
    - Pour permettre à la clé client d’affecter des dep pour chiffrer le contenu SharePoint Online et OneDrive Entreprise (y compris les fichiers Teams) pour tous les utilisateurs du client, contactez [spock@microsoft.com](mailto:spock@microsoft.com).
 
-   - Pour permettre à la clé client d’affecter des PED pour chiffrer le contenu sur plusieurs charges de travail Microsoft 365 (Exchange Online, Teams, MIP EDM) pour tous les utilisateurs du client, contactez [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+   - Pour permettre à la clé client d’affecter des dep pour chiffrer le contenu sur plusieurs charges de travail Microsoft 365 (Exchange Online, Teams, MIP EDM) pour tous les utilisateurs du client, contactez [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
    - Incluez les informations suivantes dans votre courrier électronique :
 
@@ -176,7 +176,7 @@ La création de coffres de clés nécessite également la création de groupes d
 >
 > Utilisez un préfixe commun pour les coffres de clés et incluez une abréviation de l’utilisation et de l’étendue du coffre de clés et des clés (par exemple, pour le service Contoso SharePoint où les coffres seront situés en Amérique du Nord, une paire de noms possible est Contoso-CK-SP-NA-VaultA1 et Contoso-CK-SP-NA-VaultA2. Les noms de coffre sont des chaînes globalement uniques dans Azure. Par conséquent, vous devrez peut-être essayer les variantes de vos noms souhaités si les noms souhaités sont déjà revendiqués par d’autres clients Azure. À compter de juillet 2017, les noms des coffres ne peuvent pas être modifiés. Il est donc préférable d’avoir un plan écrit pour l’installation et d’utiliser une deuxième personne pour vérifier que le plan est exécuté correctement.
 >
-> Si possible, créez vos coffres dans des régions non couplées. Les régions Azure couplées fournissent une haute disponibilité entre les domaines de défaillance de service. Par conséquent, les paires régionales peuvent être pensés comme la région de sauvegarde l’une de l’autre. Cela signifie qu’une ressource Azure placée dans une région gagne automatiquement en tolérance de pannes via la région couplée. Pour cette raison, le choix de régions pour deux coffres utilisés dans une stratégie de chiffrement de données dans laquelle les régions sont couplées signifie que seules deux régions de disponibilité sont en cours d’utilisation. La plupart des zones géographiques ne comptent que deux régions. Il n’est donc pas encore possible de sélectionner des régions non couplées. Si possible, choisissez deux régions non couplées pour les deux coffres utilisés avec une stratégie de chiffrement de données. Cela bénéficie d’un total de quatre régions de disponibilité. Pour plus d’informations, voir Continuité d’activité et récupération d’urgence [(BCDR)](/azure/best-practices-availability-paired-regions) : Azure Paired Regions pour obtenir la liste actuelle des paires régionales.
+> Si possible, créez vos coffres dans des régions non couplées. Les régions Azure couplées fournissent une haute disponibilité entre les domaines de défaillance de service. Par conséquent, les paires régionales peuvent être pensés comme la région de sauvegarde l’une de l’autre. Cela signifie qu’une ressource Azure placée dans une région gagne automatiquement en tolérance de pannes via la région couplée. Pour cette raison, le choix de régions pour deux coffres utilisés dans une stratégie de chiffrement de données dans laquelle les régions sont couplées signifie que seules deux régions de disponibilité sont en cours d’utilisation. La plupart des zones géographiques ne comptent que deux régions. Il n’est donc pas encore possible de sélectionner des régions non couplées. Si possible, choisissez deux régions non couplées pour les deux coffres utilisés avec une stratégie de chiffrement de données. Cela bénéficie d’un total de quatre régions de disponibilité. Pour plus d’informations, voir Continuité d’activité et récupération d’urgence [(BCDR)](/azure/best-practices-availability-paired-regions) : Régions couplées Azure pour obtenir la liste actuelle des paires régionales.
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Attribuer des autorisations à chaque coffre de clés
 
@@ -185,7 +185,7 @@ Vous devez définir trois ensembles distincts d’autorisations pour chaque coff
 - **Administrateurs de coffre de clés** qui font la gestion quotidienne de votre coffre de clés pour votre organisation. Ces tâches incluent la sauvegarde, la création, l’importation, la liste et la restauration.
 
   > [!IMPORTANT]
-  > L’ensemble des autorisations attribuées aux administrateurs de coffre de clés n’inclut pas l’autorisation de supprimer des clés. Cette pratique est intentionnelle et importante. La suppression des clés de chiffrement n’est généralement pas effectuée, car cela détruit définitivement les données. En tant que meilleure pratique, n’accordez pas cette autorisation aux administrateurs de coffre de clés par défaut. Au lieu de cela, réservez-le aux contributeurs de coffre de clés et affectez-le uniquement à un administrateur à court terme une fois que vous comprenez bien les conséquences.
+  > L’ensemble des autorisations attribuées aux administrateurs de coffre de clés n’inclut pas l’autorisation de supprimer des clés. Cette pratique est intentionnelle et importante. La suppression des clés de chiffrement n’est généralement pas effectuée, car cela détruit définitivement les données. En tant que meilleure pratique, n’accordez pas cette autorisation aux administrateurs de coffre de clés par défaut. Au lieu de cela, réservez-le aux contributeurs de coffre de clés et affectez-le uniquement à un administrateur à court terme une fois que vous comprenez clairement les conséquences.
   
   Pour attribuer ces autorisations à un utilisateur de votre organisation, connectez-vous à votre abonnement Azure à l’Azure PowerShell. Pour obtenir des instructions, [voir Se Azure PowerShell](/powershell/azure/authenticate-azureps).
 
@@ -195,13 +195,13 @@ Vous devez définir trois ensembles distincts d’autorisations pour chaque coff
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Contributeurs de coffre de clés** qui peuvent modifier les autorisations sur le coffre de clés Azure lui-même. Vous devez modifier ces autorisations lorsque les employés quittent ou rejoignent votre équipe. Dans les rares cas où les administrateurs de coffre de clés ont légitimement besoin d’autorisations pour supprimer ou restaurer une clé, vous devez également modifier les autorisations. Cet ensemble de contributeurs de coffre de clés doit avoir le rôle **Collaborateur** sur votre coffre de clés. Vous pouvez attribuer ce rôle à l’aide d’Azure Resource Manager. Pour obtenir la procédure détaillée, voir Utiliser Role-Based contrôle d’accès pour gérer [l’accès à vos ressources d’abonnement Azure.](/azure/active-directory/role-based-access-control-configure) L’administrateur qui crée un abonnement dispose de cet accès implicitement et de la possibilité d’affecter d’autres administrateurs au rôle collaborateur.
+- **Contributeurs de coffre de clés** qui peuvent modifier les autorisations sur le coffre de clés Azure lui-même. Vous devez modifier ces autorisations lorsque les employés quittent ou rejoignent votre équipe. Dans les rares cas où les administrateurs de coffre de clés ont légitimement besoin d’autorisations pour supprimer ou restaurer une clé, vous devez également modifier les autorisations. Ce jeu de contributeurs de coffre de clés doit avoir le rôle **Collaborateur** sur votre coffre de clés. Vous pouvez attribuer ce rôle à l’aide d’Azure Resource Manager. Pour obtenir la procédure détaillée, voir Utiliser Role-Based contrôle d’accès pour gérer [l’accès à vos ressources d’abonnement Azure.](/azure/active-directory/role-based-access-control-configure) L’administrateur qui crée un abonnement dispose de cet accès implicitement et de la possibilité d’affecter d’autres administrateurs au rôle collaborateur.
 
 - **Les autorisations** pour Microsoft 365 applications pour chaque coffre de clés que vous utilisez pour la clé client, vous devez donner wrapKey, unwrapKey et obtenir des autorisations pour le principal de service Microsoft 365 correspondant. 
 
@@ -270,11 +270,11 @@ Où :
 - *est* le nom que vous souhaitez donner à la nouvelle clé.
 
   > [!TIP]
-  > Nommez les clés à l’aide d’une convention d’attribution de noms similaire, comme décrit ci-dessus pour les coffres de clés. Ainsi, dans les outils qui n’indiquent que le nom de la clé, la chaîne est auto-description.
+  > Nommez les clés à l’aide d’une convention d’attribution de noms similaire à celle décrite ci-dessus pour les coffres de clés. Ainsi, dans les outils qui n’indiquent que le nom de la clé, la chaîne est auto-description.
   
 Si vous avez l’intention de protéger la clé avec un HSM, veillez à spécifier **HSM** comme valeur du paramètre _Destination,_ sinon, spécifiez **Software**.
 
-Par exemple :
+Par exemple :
   
 ```powershell
 Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
@@ -284,7 +284,7 @@ Pour importer une clé directement dans votre coffre de clés, vous devez avoir 
   
 Certaines organisations préfèrent cette approche pour établir la provenance de leurs clés, puis cette méthode fournit également les attestations suivantes :
   
-- L’ensemble d’outils utilisé pour l’importation inclut l’attestation à partir de nCipher que la clé Exchange ke key (KEK) utilisée pour chiffrer la clé que vous générez n’est pas exportable et qu’elle est générée à l’intérieur d’un HSM authentique qui a été fabriqué par nCipher.
+- L’ensemble d’outils utilisé pour l’importation inclut l’attestation à partir de nCipher que la clé KEK (Key Exchange Key) utilisée pour chiffrer la clé que vous générez n’est pas exportable et qu’elle est générée à l’intérieur d’un HSM authentique qui a été fabriqué par nCipher.
 
 - L’ensemble d’outils inclut l’attestation de nCipher que le monde de la sécurité Azure Key Vault a également été généré sur un HSM authentique fabriqué par nCipher. Cette attestation prouve que Microsoft utilise également du matériel nCipher authentique.
 
@@ -320,7 +320,7 @@ Le fichier de sortie résultant de cette cmdlet est chiffré et ne peut pas êtr
 > [!TIP]
 > Pour le fichier de sortie, choisissez une combinaison de votre nom de coffre-fort et de votre nom de clé. Cela rend le nom de fichier auto-décrivant. Cela permet également de s’assurer que les noms de fichiers de sauvegarde ne sont pas en conflit.
   
-Par exemple :
+Par exemple :
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -OutputFile Contoso-CK-EX-NA-VaultA1-Key001-Backup-20170802.backup

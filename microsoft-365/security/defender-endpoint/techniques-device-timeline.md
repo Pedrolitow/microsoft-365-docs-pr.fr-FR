@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11fbff0bb43cc07825e236884985e4d6f27f7ae6
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: cee924ea4529b45635f5df16bc3868d09ec3929e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400773"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174614"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Techniques dans la chronologie de l’appareil
 
@@ -33,7 +33,7 @@ Vous pouvez obtenir plus d’informations dans une enquête en analysant les év
 ## <a name="understand-techniques-in-the-timeline"></a>Comprendre les techniques dans la chronologie
 
 > [!IMPORTANT]
-> Certaines informations concernent une fonctionnalité de produit pré-publiée en prévisualisation publique, qui peut être considérablement modifiée avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+> Certaines informations concernent une fonctionnalité de produit pré-publiée en prévisualisation publique qui peut être considérablement modifiée avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Dans Microsoft Defender pour point de terminaison, **les techniques** sont un type de données supplémentaire dans la chronologie des événements. Les techniques fournissent plus d’informations sur les activités associées à [MITRE ATT&](https://attack.mitre.org/) techniques ou sous-techniques CK.
 
@@ -53,7 +53,7 @@ Sélectionnez une technique pour ouvrir son volet latéral correspondant. Vous p
 
 Sélectionnez la *technique d’attaque* spécifique pour ouvrir la page de technique att&CK associée dans laquelle vous trouverez plus d’informations à ce sujet.
 
-Vous pouvez copier les détails d’une entité lorsque vous voyez une icône bleue sur la droite. Par exemple, pour copier le sha1 d’un fichier associé, sélectionnez l’icône de page bleue.
+Vous pouvez copier les détails d’une entité lorsque vous voyez une icône bleue à droite. Par exemple, pour copier le sha1 d’un fichier associé, sélectionnez l’icône de page bleue.
 
 ![Copiez les détails de l’entité.](images/techniques-side-pane-clickable.png)
 
@@ -93,4 +93,4 @@ Pour afficher uniquement les événements ou les techniques, sélectionnez **Fil
 ## <a name="see-also"></a>Voir aussi
 
 - [Afficher et organiser la liste des appareils](machines-view-overview.md)
-- [Indicateurs d’événement de chronologie de l’appareil microsoft Defender pour point de terminaison](device-timeline-event-flag.md)
+- [Indicateurs d’événement de chronologie d’appareil Microsoft Defender pour point de terminaison](device-timeline-event-flag.md)

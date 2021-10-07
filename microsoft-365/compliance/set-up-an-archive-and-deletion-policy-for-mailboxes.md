@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment créer une stratégie d’archivage et de suppression dans Microsoft 365 qui déplace automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: d84e83174d7698c4532bc082502653f25fb2981e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b6d0a9fdfa18d34eac2624f7c83f0ee5993f666b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205923"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175118"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
@@ -98,7 +98,7 @@ Dans cette étape, vous allez créer les trois balises de rétention personnalis
 
 - Supprimer et autoriser la récupération des éléments supprimés de House House 5 ans (balise personnalisée pour le dossier Éléments supprimés)
 
-Pour créer de nouvelles balises de rétention, vous allez utiliser le Centre d’administration Exchange (EAC) dans votre Exchange Online organisation. N’oubliez pas d’utiliser la version classique du EAC.
+Pour créer de nouvelles balises de rétention, vous utiliserez le Centre d’administration Exchange dans votre organisation Exchange Online rétention. N’oubliez pas d’utiliser la version classique du EAC.
   
 1. Connectez-vous [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) à l’aide de vos informations d’identification.
   
@@ -178,7 +178,7 @@ La dernière balise de rétention que vous allez créer est une balise de strat�
 
 Après avoir créé les balises de rétention personnalisées, l’étape suivante consiste à créer une stratégie de rétention et à ajouter les balises de rétention. Vous allez ajouter les trois balises de rétention personnalisées que vous avez créées à l’étape 2 et les balises intégrées mentionnées dans la première section. À l’étape 4, vous allez affecter cette nouvelle stratégie de rétention aux boîtes aux lettres des utilisateurs.
   
-1. Dans le CCE, allez aux **stratégies de rétention de gestion** de la  >  **conformité.**
+1. Dans le EAC, allez aux **stratégies de rétention de gestion** de la  >  **conformité.**
 
 2. Dans la page **Stratégies de** rétention, cliquez **sur Nouvelle** ![ icône. ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)
 
@@ -199,13 +199,13 @@ Après avoir créé les balises de rétention personnalisées, l’étape suivan
 
 7. Dans la page **Nouvelle stratégie de rétention,** cliquez sur **Enregistrer** pour créer la nouvelle stratégie.
 
-    La nouvelle stratégie de rétention s’affiche dans la liste. Sélectionnez-la pour afficher les balises de rétention qui lui sont liées dans le volet d’informations.
+    La nouvelle stratégie de rétention s’affiche dans la liste. Sélectionnez-le pour afficher les balises de rétention qui lui sont liées dans le volet d’informations.
 
     ![La nouvelle stratégie de rétention et la liste des balises de rétention liées.](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
   
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Étape 4 : Attribuer la nouvelle stratégie de rétention aux boîtes aux lettres des utilisateurs
 
-Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétention nommée Stratégie MRM par défaut lui est affectée par défaut. Dans cette étape, vous allez remplacer cette stratégie de rétention (car une boîte aux lettres ne peut être affectée qu’à une seule stratégie de rétention) en attribuant la nouvelle stratégie de rétention que vous avez créée à l’étape 3 aux boîtes aux lettres des utilisateurs de votre organisation. Cette étape suppose que vous allez affecter la nouvelle stratégie à toutes les boîtes aux lettres de votre organisation.
+Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétention nommée Stratégie MRM par défaut lui est affectée par défaut. Dans cette étape, vous allez remplacer cette stratégie de rétention (car une boîte aux lettres ne peut être affectée qu’à une seule stratégie de rétention) en attribuant la nouvelle stratégie de rétention que vous avez créée à l’étape 3 aux boîtes aux lettres utilisateur de votre organisation. Cette étape suppose que vous allez affecter la nouvelle stratégie à toutes les boîtes aux lettres de votre organisation.
   
 1. Dans le EAC, allez à **Boîtes aux lettres** de  >  **destinataires.**
 
@@ -217,7 +217,7 @@ Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétenti
 
 4. Sous **Stratégie de rétention**, cliquez sur **Mettre à jour**.
 
-5. Dans la page **Affecter en**  bloc une stratégie de rétention, dans la liste de listes listes de sélection de la stratégie de rétention, sélectionnez la stratégie de rétention que vous avez créée à l’étape 3 . par exemple, **archive house de House et stratégie de rétention**.
+5. Dans la page **Affecter en**  bloc une stratégie de rétention, dans la liste liste de listes listes de sélection de la stratégie de rétention, sélectionnez la stratégie de rétention que vous avez créée à l’étape 3 . par exemple, **archive house de House et stratégie de rétention**.
 
 6. Cliquez **sur Enregistrer** pour enregistrer la nouvelle attribution de stratégie de rétention.
 
@@ -235,7 +235,7 @@ Après avoir appliqué la nouvelle stratégie de rétention aux boîtes aux lett
 
  **Que se passe-t-il lorsque vous exécutez l’Assistant Dossier géré ?** Il applique les paramètres de la stratégie de rétention en inspectant les éléments de la boîte aux lettres et en déterminant s’ils sont soumis à la rétention. Il marque ensuite les éléments soumis à la rétention avec la balise de rétention appropriée, puis prend l’action de rétention spécifiée sur les éléments qui ont passé leur âge de rétention.
   
-Voici les étapes à suivre pour vous connecter Exchange Online PowerShell, puis exécuter l’Assistant Dossier géré sur chaque boîte aux lettres de votre organisation.
+Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, puis exécuter l’Assistant Dossier géré sur chaque boîte aux lettres de votre organisation.
 
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
@@ -252,7 +252,7 @@ Voici les étapes à suivre pour vous connecter Exchange Online PowerShell, puis
 Voilà ! Vous avez mis en place une stratégie d’archivage et de suppression pour l’organisation House House.
 
 > [!NOTE]
-> Comme indiqué précédemment, l’Assistant Dossier géré traite les boîtes aux lettres au moins une fois tous les 7 jours. Il est donc possible qu’une boîte aux lettres puisse être traitée plus fréquemment par l’Assistant Dossier géré. En outre, les administrateurs ne peuvent pas prédire la prochaine fois qu’une boîte aux lettres est traitée par l’Assistant Dossier géré, ce qui est l’une des raisons pour lesquelles vous pouvez l’exécuter manuellement. Toutefois, si vous souhaitez empêcher temporairement l’Assistant Dossier géré d’appliquer les nouveaux paramètres de rétention à une boîte aux lettres, vous pouvez exécuter la commande pour désactiver temporairement l’Assistant Dossier géré du traitement d’une boîte aux `Set-Mailbox -ElcProcessingDisabled $true` lettres. Pour ré-activer l’Assistant Dossier géré pour une boîte aux lettres, exécutez la `Set-Mailbox -ElcProcessingDisabled $false` commande. Enfin, si un utilisateur de boîte aux lettres possède un compte désactivé, nous ne traiterons pas l’action de déplacement des éléments pour archiver cette boîte aux lettres.
+> Comme indiqué précédemment, l’Assistant Dossier géré traite les boîtes aux lettres au moins une fois tous les 7 jours. Il est donc possible qu’une boîte aux lettres puisse être traitée plus fréquemment par l’Assistant Dossier géré. En outre, les administrateurs ne peuvent pas prédire la prochaine fois qu’une boîte aux lettres est traitée par l’Assistant Dossier géré, ce qui est l’une des raisons pour lesquelles vous pouvez l’exécuter manuellement. Toutefois, si vous souhaitez empêcher temporairement l’Assistant Dossier géré d’appliquer les nouveaux paramètres de rétention à une boîte aux lettres, vous pouvez exécuter la commande pour désactiver temporairement l’Assistant Dossier géré du traitement d’une boîte aux `Set-Mailbox -ElcProcessingDisabled $true` lettres. Pour ré-activer l’Assistant Dossier géré pour une boîte aux lettres, exécutez la `Set-Mailbox -ElcProcessingDisabled $false` commande. Enfin, si un utilisateur de boîte aux lettres possède un compte désactivé, nous ne traiterons pas les éléments de déplacement pour archiver l’action pour cette boîte aux lettres.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Facultatif) Étape 6 : faire de la nouvelle stratégie de rétention la stratégie par défaut pour votre organisation
 

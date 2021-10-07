@@ -9,20 +9,20 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans Advanced eDiscovery qui pourraient empêcher un traitement correct du contenu.
+description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans Advanced eDiscovery qui peuvent empêcher un traitement correct du contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b249f7941d4f366a2651b570286d2974aca176a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0dabe5a16ff2b9b67b5f282401806daff8f82ea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175931"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172346"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -76,7 +76,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     `C:\Remediation\232f8b7e-089c-4781-88c6-210da0615d32\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938.docx`
 
-    Si plusieurs fichiers sont téléchargés, chacun d’eux est téléchargé vers un sous-dossier nommé avec l’ID de fichier.
+    Si plusieurs fichiers sont téléchargés, chacun d’eux est téléchargé dans un sous-dossier nommé avec l’ID de fichier.
 
     > [!IMPORTANT]
     > Lorsque vous chargez des fichiers aux étapes 9 et 10, les fichiers corrigés doivent avoir le même nom de fichier et se trouver dans la même structure de sous-dossiers. Les noms de sous-dossier et de fichier sont utilisés pour associer le fichier corrigé au fichier d’erreur d’origine. Si la structure de dossiers ou les noms de fichiers sont modifiés, vous recevrez l’erreur suivante `Cannot apply Error Remediation to the current Workingset` : Pour éviter tout problème, nous vous recommandons de conserver les fichiers corrigés dans la même structure de sous-dossiers et de dossiers parents.
@@ -87,7 +87,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Télécharger Fichiers.](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Spécifiez le dossier parent où se trouvent les fichiers corrigés dans la zone de texte **Chemin d’accès à l’emplacement des fichiers**. Là encore, le dossier parent doit avoir la même structure de sous-dossiers que celle créée lors du téléchargement des fichiers.
+9. Spécifiez le dossier parent où se trouvent les fichiers corrigés dans la zone de texte **Chemin d’accès à l’emplacement des fichiers**. Là encore, le dossier parent doit avoir la même structure de sous-dossiers que celle créée lorsque vous avez téléchargé les fichiers.
 
     Le chemin d’accès au dossier parent est automatiquement ajouté à la commande AzCopy (en tant que valeur du **paramètre /Source).**
 
@@ -117,7 +117,7 @@ Lorsque des fichiers corrigés sont chargés, les métadonnées d’origine sont
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
-- Texte
+- Text
 - WordCount
 - WorkingsetId
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365
-ms.openlocfilehash: 7890d25b337bd143d8a5c79f0a2994a81fca8caf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 42acbae868a3d451add0b93a0b7c21d46893010d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180516"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172778"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Renforcer la protection contre les menaces pour Microsoft 365 abonnement
 
@@ -41,7 +41,7 @@ Pour plus d’informations, voir [Le Score de sécurité Microsoft.](../security
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Augmenter le niveau de protection contre les programmes malveillants dans le courrier électronique
 
-Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les programmes malveillants, mais vous pouvez augmenter cette protection en bloquant les pièces jointes avec des types de fichiers couramment utilisés pour les programmes malveillants. Pour faire monter en haut la protection contre les programmes malveillants dans la messagerie électronique :
+Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les programmes malveillants, mais vous pouvez augmenter cette protection en bloquant les pièces jointes avec des types de fichiers couramment utilisés pour les programmes malveillants. Pour faire monter en haut la protection contre les programmes malveillants dans les e-mails :
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account credentials.
 
@@ -83,7 +83,7 @@ Pour créer une règle de transport de messagerie :
 
 6. Cliquez sur **Enregistrer**.
 
-|Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
+|Paramètre|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
 |Nom|Règle anti-ransomware : avertir les utilisateurs|
 |Appliquez cette règle si . . .|N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .|
@@ -91,7 +91,7 @@ Pour créer une règle de transport de messagerie :
 |Faites les choses suivantes . . .|Avertir le destinataire avec un message|
 |Fournir le texte du message|N’ouvrez pas ces types de fichiers à partir de personnes que vous ne connaissez pas, car elles peuvent contenir des macros contenant du code malveillant.|
 
-Pour plus d’informations, consultez :
+Pour plus d'informations, voir :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -115,7 +115,7 @@ Pour créer une règle de transport de messagerie, regardez [cette courte vidéo
 
 6. Cliquez sur **Enregistrer**.
 
-|Setting|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
+|Paramètre|Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -147,9 +147,9 @@ Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, rega
 |---|---|
 |Nom|Domaine et personnel le plus précieux|
 |Description|Assurez-vous que le personnel le plus important et notre domaine ne sont pas usurpés.|
-|Ajouter des utilisateurs à protéger|Select **+ Add a condition, The recipient is**. Tapez des noms d’utilisateurs ou entrez l’adresse e-mail des propriétaires d’entreprise, des partenaires ou du candidat, des responsables et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
+|Ajouter des utilisateurs à protéger|Sélectionnez **+ Ajoutez une condition, le destinataire est**. Tapez des noms d’utilisateurs ou entrez l’adresse e-mail des propriétaires d’entreprise, des partenaires ou du candidat, des responsables et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
 |Ajouter des domaines à protéger|Sélectionnez **+ Ajoutez une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.|
-|Choisir des actions|Si un message électronique est envoyé par un utilisateur dont l’identité est usurpée : sélectionnez **Rediriger le message** vers une autre adresse de messagerie, puis tapez l’adresse de messagerie de l’administrateur de la sécurité . par exemple, *Alice <span> <span> @contoso.com*. <br/> Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.|
+|Choisir des actions|Si un message électronique est envoyé par un utilisateur dont l’identité est emprunt d’identité : sélectionnez **Rediriger le message** vers une autre adresse de messagerie, puis tapez l’adresse e-mail de l’administrateur de sécurité . par exemple, *Alice <span> <span> @contoso.com*. <br/> Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.|
 |Veille des boîtes aux lettres|Par défaut, la veille des boîtes aux lettres est activée lorsque vous créez une stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.|
 |Ajouter des expéditeurs et domaines de confiance|Ici, vous pouvez ajouter votre propre domaine ou tout autre domaine approuvé.|
 |Appliqué à|Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Cochez la case en regard du nom du domaine, par *exemple, contoso. <span> <span> com*, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.|
@@ -202,10 +202,10 @@ Pour créer une stratégie Coffre pièces jointes, regardez cette [courte](https
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Bloquez les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
+|Nom|Bloquer les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
 |Description|Bloquer les messages électroniques et pièces jointes actuels et futurs avec les programmes malveillants détectés.|
 |Enregistrer les pièces jointes d’une réponse anti-programme malveillant inconnue|Select **Block - Block the current and future emails and attachments with detected malware**.|
-|Rediriger la pièce jointe lors de la détection|Activer la redirection (sélectionnez cette case) <br/> Entrez le compte d’administrateur ou une boîte aux lettres configurée pour la mise en quarantaine. <br/> Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces jointes arrive à son moment ou si une erreur se produit (sélectionnez cette zone).|
+|Rediriger la pièce jointe lors de la détection|Activer la redirection (sélectionnez cette case) <br/> Entrez le compte d’administrateur ou une boîte aux lettres configurée pour la mise en quarantaine. <br/> Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces jointes arrive à arriver à son moment ou si une erreur se produit (sélectionnez cette zone).|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 
 Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
@@ -230,7 +230,7 @@ Pour configurer des Coffre, regardez cette courte vidéo de [formation](https://
 
 Pour modifier la stratégie par défaut :
 
-1. Dans la page Coffre liens, sous Stratégies qui s’appliquent à l’ensemble de **l’organisation,** sélectionnez la **stratégie par** défaut.
+1. Dans la page Coffre liens, sous **Stratégies** qui s’appliquent à l’ensemble de l’organisation, sélectionnez la **stratégie par** défaut.
 
 2. Sous **Paramètres qui s’appliquent au** contenu à l’exception de la messagerie, sélectionnez **Applications Microsoft 365 pour les grandes entreprises, Office pour iOS et Android**.
 
@@ -259,8 +259,8 @@ Après avoir activer la recherche dans le journal d’audit dans le Centre de s�
 
 Le rôle Journaux d’audit doit vous être attribué dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit dans Microsoft 365 abonnement. Par défaut, ce rôle est affecté aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page Autorisations du Centre d Exchange de conformité. Les administrateurs globaux Microsoft 365 sont membres de ce groupe par défaut.
 
-1. Pour activer la recherche dans le journal d’audit, allez au Centre d’administration à l’adresse et sélectionnez Sécurité sous Centres d’administration <https://admin.microsoft.com> dans le navigation gauche.  
-2. Dans la page **Microsoft 365 sécurité,** sélectionnez  Plus de **ressources,** puis ouvrez sur la carte du Centre de sécurité **&** conformité Office 365.
+1. Pour activer la recherche dans le journal d’audit, allez dans le Centre d’administration, puis sélectionnez Sécurité sous Centres d’administration <https://admin.microsoft.com> dans le navigation gauche.  
+2. Dans la page **Microsoft 365 sécurité,** sélectionnez  Plus de **ressources,** puis ouvrez sur la carte du Centre Office 365 sécurité **& conformité.**
 
     ![Choisissez Ouvrir sur les voitures de conformité & sécurité.](../media/gotosecandcomp.png)
 3. Dans la page Sécurité et conformité, choisissez **Recherche,** puis **Recherche dans le journal d’audit.**
@@ -280,7 +280,7 @@ Une fois la fonctionnalité désactivée, vous pouvez rechercher des fichiers, d
 
 ## <a name="activity-alerts"></a>Alertes d’activité
 
-Vous pouvez utiliser les alertes d’activité pour suivre les activités des administrateurs et des utilisateurs et détecter les incidents de protection contre la perte de données et les programmes malveillants au sein de votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également en créer des personnalisées. Pour plus d’informations, voir [stratégies d’alerte.](../compliance/alert-policies.md) Par exemple, si vous stockez un fichier important dans SharePoint que personne ne doit partager en externe, vous pouvez créer une notification qui vous avertit si quelqu’un le partage.
+Vous pouvez utiliser les alertes d’activité pour suivre les activités des administrateurs et des utilisateurs et détecter les incidents de protection contre les programmes malveillants et la perte de données dans votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également créer des stratégies personnalisées. Pour plus d’informations, voir [stratégies d’alerte.](../compliance/alert-policies.md) Par exemple, si vous stockez un fichier important dans SharePoint que personne ne doit partager en externe, vous pouvez créer une notification qui vous avertit si quelqu’un le partage.
 
 La figure suivante illustre les stratégies par défaut incluses dans Microsoft 365.
 
@@ -294,7 +294,7 @@ Vous pouvez empêcher les membres de votre organisation de partager leurs calend
 
 1. Choisissez **Calendrier** et choisissez si les membres de votre organisation peuvent partager leurs calendriers avec des personnes extérieures Office 365 ou Exchange, ou avec n’importe qui.
 
-   Si vous choisissez l’option partager avec tout le monde, vous pouvez également décider de partager uniquement des informations de libre/occupé.
+   Si vous choisissez l’option partager avec tout le monde, vous pouvez également décider de partager uniquement les informations de libre/occupé.
 
 3. Sélectionnez **Enregistrer les** modifications en bas de la page.
 

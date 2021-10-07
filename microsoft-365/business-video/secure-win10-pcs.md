@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer des stratégies Windows 10 protection à l’Microsoft 365 Business Premium.
-ms.openlocfilehash: 23cef2de8a3c5b270ec40fcf67915545b5bdf52d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c73fdfb02352bb678281354e8510eba2ecbdb7d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203465"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171254"
 ---
 # <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
 

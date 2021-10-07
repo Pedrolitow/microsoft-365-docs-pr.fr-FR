@@ -10,15 +10,15 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Créez et classez des devoirs, créez et organisez du contenu de cours et collaborez sur des fichiers en temps réel avec la nouvelle application d’interopérabilité Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: e67e772ce8ef460075729b34bc7da86d486c51e9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d8243580b32b8ba3b42297d1d5ec4183f7eee7d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181150"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173174"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Intégrer Microsoft OneDrive LTI à Canvas
 
@@ -81,7 +81,7 @@ Un administrateur canvas peut activer Microsoft OneDrive LTI pour tous les cours
 1. Connectez-vous en tant qu’administrateur et Paramètres **section.**
 2. Go to the **Apps** section and select the **View App Configurations** button.
 3. Sélectionnez le **bouton Ajouter une** application.
-4. Dans la **liste finale Type de configuration,** choisissez l’option Par **ID** client.
+4. Dans la **liste finale Type de** configuration, choisissez l’option Par **ID** client.
 5. Collez la valeur de la clé de développeur générée précédemment dans le champ **ID client,** puis sélectionnez **le bouton** Envoyer.
 
 :::image type="content" source="media/OneDrive-LTI-31.png" alt-text="Page Ajouter une application, affichant l’option Par ID client sous le menu déroulant Type de configuration.":::

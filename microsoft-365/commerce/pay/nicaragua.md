@@ -10,21 +10,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f071c1aa1965649027b5237a12aef78e0774e60e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0568c96e816029a11f81c2db5b06148dd1e15302
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180172"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173666"
 ---
 # <a name="payment-information-for-nicaragua"></a>Informations de paiement pour le Nicaragua
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture à votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 

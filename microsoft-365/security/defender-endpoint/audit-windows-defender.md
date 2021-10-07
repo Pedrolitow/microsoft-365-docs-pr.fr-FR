@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.topic: article
 ms.technology: mde
 ms.date: 09/22/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 746d3ecca3d61634cd11cc7df87d677c4667ad8d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b261625215fa5f4f84daac7850f50569d8826cb6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491026"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174866"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Tester la réduction de la surface d’attaque dans Microsoft Defender pour le point de terminaison
 
@@ -42,7 +42,7 @@ Dans le cadre de l’équipe de sécurité de votre organisation, vous pouvez co
 
 Le mode audit vous permet  d’enregistrer ce qui se serait passé si vous aviez activé la fonctionnalité.
 
-Vous pouvez activer le mode audit lors du test du fonctionnement des fonctionnalités. Cela vous permettra de vous assurer que vos applications métier ne sont pas affectées. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent sur une certaine période de temps.
+Vous pouvez activer le mode audit lors du test du fonctionnement des fonctionnalités. Cela vous permettra de vous assurer que vos applications métier ne sont pas affectées. Vous pouvez également avoir une idée du nombre de tentatives de modification de fichier suspectes qui se produisent sur une période donnée.
 
 Les fonctionnalités ne bloquent pas ou n’empêchent pas les applications, les scripts ou les fichiers d’être modifiés. Toutefois, le Windows journal des événements enregistre les événements comme si les fonctionnalités étaient entièrement activées. Avec le mode audit, vous pouvez consulter le journal des événements pour voir l’impact que la fonctionnalité aurait eu si elle avait été activée.
 
@@ -59,5 +59,5 @@ Vous pouvez activer le mode audit à l’aide de la stratégie de groupe, de Pow
 |---|---|---|
 |L’audit s’applique à tous les événements|[Activer l’accès contrôlé aux dossiers](enable-controlled-folders.md)|[Événements d’accès contrôlé aux dossiers](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
 |L’audit s’applique à des règles individuelles|[Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)|[Événements de règle de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
-|L’audit s’applique à tous les événements|[Activer la protection réseau](enable-network-protection.md)|[Événements de protection du réseau](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
+|L’audit s’applique à tous les événements|[Activer la protection du réseau](enable-network-protection.md)|[Événements de protection du réseau](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
 |L’audit s’applique aux atténuations individuelles|[Activer la protection la protection contre les codes malveillants exploitant une faille de sécurité](enable-exploit-protection.md)|[Événements Exploit Protection](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)

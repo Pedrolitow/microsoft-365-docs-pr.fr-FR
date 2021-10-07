@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Dans cet article, découvrez comment utiliser PowerShell pour Microsoft 365 gérer les utilisateurs, les groupes et les sites SharePoint Online.
-ms.openlocfilehash: 04eb4a0e2c7d2c309ae4bbe063102293a017bbd6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 10991c2ac065331ab8eff3e782cecbdbcc5d034b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209293"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173378"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gestion des utilisateurs et des groupes SharePoint Online avec PowerShell
 
@@ -33,7 +33,7 @@ ms.locfileid: "59209293"
 
 Si vous êtes un administrateur SharePoint Online qui travaille avec de grandes listes de comptes ou de groupes d’utilisateurs et souhaitez un moyen plus facile de les gérer, vous pouvez utiliser PowerShell pour Microsoft 365.
 
-Avant de commencer, les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+Avant de commencer, les procédures de cette rubrique exigent que vous vous connectiez à SharePoint Online. Pour obtenir des instructions, [voir Connecter pour SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Obtenir une liste de sites, de groupes et d’utilisateurs
 
@@ -68,7 +68,7 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-Pour utiliser ces commandes, remplacez tout ce qui est entre guillemets, y compris les caractères < et >, par les noms corrects.
+Pour utiliser ces commandes, remplacez tout le reste entre guillemets, y compris les caractères < et >, par les noms corrects.
 
 Par exemple, cet ensemble de commandes ajoute Opal List (nom d’utilisateur opalc) à la liste des administrateurs de collection de sites sur la collection de sites ContosoTest dans la location Contoso :
 
@@ -276,7 +276,7 @@ Mais que faire si vous souhaitez effectuer cette action pour chaque site ? Vous
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Toutefois, cela devrait vous donner une idée de la façon d’utiliser SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
+Ce rapport est assez simple, et vous pouvez ajouter du code pour créer des rapports plus spécifiques ou des rapports qui contiennent des informations plus détaillées. Toutefois, cela devrait vous donner une idée de l’utilisation de SharePoint Online Management Shell pour gérer les utilisateurs dans l’environnement SharePoint Online.
 
 ## <a name="see-also"></a>Voir aussi
 

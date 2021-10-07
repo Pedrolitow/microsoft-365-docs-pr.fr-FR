@@ -9,7 +9,7 @@ ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/16/2021
-ms.openlocfilehash: 1de0b99954883b301110689c72e10e05c16e7576
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31ef425bf82f40d9720eec0a65b3278e63186ba9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208019"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172574"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -73,7 +73,7 @@ Pour vous connecter au module PowerShell avec vos informations d’identificatio
 Connect-MSCommerce
 ```
 
-Cette commande connecte la session PowerShell actuelle à un Azure Active Directory client. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous souhaitez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
+Cette commande connecte la session PowerShell actuelle à un Azure Active Directory client. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous voulez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Afficher les détails de AllowSelfServicePurchase
 
@@ -154,7 +154,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 Vous voyez le message d’erreur suivant :
 
-> HandleError : Échec de la récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage - La connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’une envoi.
+> HandleError : Échec de récupération de la stratégie avec PolicyId « AllowSelfServicePurchase » et ErrorMessage : la connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors d’un envoi.
 
 Cela peut être dû à une version antérieure de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1.2 ou supérieur
 

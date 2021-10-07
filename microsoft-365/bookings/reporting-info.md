@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Découvrez comment afficher une vue de 4 mois de votre activité Bookings
-ms.openlocfilehash: ceb318f0577d6bf1f4f46f809ecabe0d1bc5d804
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70d73da86e40555a5754a4284cbfbb0510e8c9e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180723"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175634"
 ---
 # <a name="reporting-info-for-bookings"></a>Informations de rapport pour Bookings
 
@@ -30,7 +30,7 @@ Ces informations de niveau de rendez-vous peuvent être utilisées pour visualis
 
 1. Dans la page **Exporter les données récentes,** sélectionnez votre plage de dates et sélectionnez **Exporter.**
 
-1. Enregistrez le fichier sous un nouveau nom et spécifiez le format .xls ou xlsx.
+1. Enregistrez le fichier sous un nouveau nom et spécifiez .xls format xlsx.
 
 1. Ouvrez le fichier pour afficher l’affichage de quatre mois de votre calendrier Bookings.
 
@@ -58,6 +58,6 @@ Le rapport amélioré contient désormais les champs suivants.
 - **Devise**   Type de devise pour une entreprise.
 - **Participants Cc**   Destinataires qui reçoivent les notifications par courrier électronique pour une réservation. Cela peut être spécifié à partir de l’application Teams lors de la création d’une réservation.
 - **Nombre de participants inscrits**   Nombre de clients qui ont réservé un service de réservation de groupe.
-- **Notifications texte activées**   Si les clients peuvent recevoir des notifications textuelles SMS.
+- **Notifications texte activées**   Si les clients peuvent recevoir des notifications texte SMS.
 - **Champs personnalisés**   Toutes les questions et réponses relatives à une seule réservation sont combinées dans ce champ.
-- **ID de réservation**   Cela est utile pour identifier les mêmes réservations d’un service de groupe.
+- **ID de réservation**   Cela permet d’identifier les mêmes réservations d’un service de groupe.

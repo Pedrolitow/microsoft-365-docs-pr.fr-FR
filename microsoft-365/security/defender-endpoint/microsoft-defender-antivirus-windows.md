@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Priority
+ms.localizationpriority: high
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f4ba3620fc68cfe7227468b09cdcdece023fe866
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 585fa260452a69572f6498429f3675af22ca8479
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491002"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174638"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Antivirus Microsoft Defender dans Windows
 

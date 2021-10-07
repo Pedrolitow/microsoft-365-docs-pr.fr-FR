@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3bf6d527092a4dc5ed340a2d9548fea41d875d31
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 93696fb5ca883a849a8f7bcb534cb57469f20815
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204600"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174446"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrer des requêtes de recherche avancée à partir de Microsoft Defender pour le point de terminaison
 
@@ -43,7 +43,7 @@ Déplacez vos flux de travail de recherche avancée de Microsoft Defender pour p
 - Microsoft Defender pour l’identité
 
 >[!NOTE]
->La plupart des clients Microsoft Defender pour Endpoint peuvent [utiliser Microsoft 365 Defender sans licences supplémentaires.](prerequisites.md#licensing-requirements) Pour commencer la transition de vos flux de [](m365d-enable.md)travail de recherche avancée à partir de Defender for Endpoint, Microsoft 365 Defender .
+>La plupart des clients Microsoft Defender pour Endpoint peuvent [utiliser Microsoft 365 Defender sans licences supplémentaires.](prerequisites.md#licensing-requirements) Pour commencer la transition de vos flux de travail de recherche avancée à partir de Defender for Endpoint, [Microsoft 365 Defender](m365d-enable.md).
 
 Vous pouvez faire la transition sans affecter vos flux de travail Defender for Endpoint existants. Les requêtes enregistrées restent intactes et les règles de détection personnalisées continuent à s’exécuter et à générer des alertes. Toutefois, elles seront visibles dans Microsoft 365 Defender. 
 
@@ -64,7 +64,7 @@ Le [Microsoft 365 Defender de recherche](advanced-hunting-schema-tables.md) avan
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Requêtes pour les objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines |
 
 >[!IMPORTANT]
-> Les requêtes et les détections personnalisées qui utilisent des tables de schéma qui sont uniquement disponibles dans Microsoft 365 Defender peuvent uniquement être vues dans Microsoft 365 Defender.
+> Les requêtes et les détections personnalisées qui utilisent des tables de schéma qui sont uniquement disponibles dans Microsoft 365 Defender ne peuvent être vues qu’Microsoft 365 Defender.
 
 ## <a name="map-devicealertevents-table"></a>Table Map DeviceAlertEvents
 Les `AlertInfo` `AlertEvidence` tableaux et les tables `DeviceAlertEvents` remplacent le tableau dans le schéma Microsoft Defender for Endpoint. En plus des données sur les alertes d’appareil, ces deux tableaux incluent des données sur les alertes pour les identités, les applications et les e-mails.
@@ -98,7 +98,7 @@ Les requêtes Microsoft Defender pour les points de terminaison fonctionneront t
 - Joignez les `AlertInfo` tables et les tables pour obtenir des données `AlertEvidence` `AlertId` équivalentes.
 
 ### <a name="original-query"></a>Requête d’origine
-La requête suivante utilise Microsoft Defender pour le point de terminaison pour obtenir les alertes qui `DeviceAlertEvents` impliquent _powershell.exe_:
+La requête suivante utilise Microsoft Defender for Endpoint pour obtenir les alertes qui `DeviceAlertEvents` impliquent _powershell.exe_:
 
 ```kusto
 DeviceAlertEvents
@@ -145,7 +145,7 @@ Les nouvelles alertes générées par des règles de détection personnalisées 
 
 ## <a name="write-queries-without-devicealertevents"></a>Écrire des requêtes sans DeviceAlertEvents
 
-Dans le Microsoft 365 Defender, les tableaux et les tableaux sont fournis pour prendre en charge les divers ensembles d’informations qui accompagnent les alertes provenant de `AlertInfo` `AlertEvidence` différentes sources. 
+Dans le Microsoft 365 Defender, les tableaux et les tableaux sont fournis pour prendre en charge les divers ensembles d’informations qui accompagnent les alertes provenant `AlertInfo` `AlertEvidence` de différentes sources. 
 
 Pour obtenir les mêmes informations d’alerte que vous avez utilisées pour obtenir à partir de la table dans le schéma Microsoft Defender for Endpoint, filtrez la table, puis joignez chaque ID unique à la table, qui fournit des informations détaillées sur l’événement et `DeviceAlertEvents` `AlertInfo` l’entité. `ServiceSource` `AlertEvidence` 
 

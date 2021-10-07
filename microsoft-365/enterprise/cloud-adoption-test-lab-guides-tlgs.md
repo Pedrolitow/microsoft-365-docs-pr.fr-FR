@@ -7,7 +7,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : Utilisez ces guides de laboratoire de test pour configurer des environnements de démonstration, de preuve de concept ou de développement/test pour Microsoft 365.'
-ms.openlocfilehash: a7dc8c4e731b03733b200b8750cc6157eb44a9c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 802c606375ff6bfd4f2a7d7e1a36301c94bf3b37
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183447"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174914"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Test Microsoft 365 avec les guides de laboratoire de test (TLG)
 

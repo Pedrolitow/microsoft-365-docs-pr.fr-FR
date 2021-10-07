@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment déployer les clés racine du client stockées dans Azure Key Vault qui sont utilisées avec la clé client. Les services incluent Exchange Online, Skype Entreprise, SharePoint Online, OneDrive Entreprise et Teams fichiers.
-ms.openlocfilehash: 892d77959bec1fb33b0ea6bcfaa8c530dd9b8911
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a3968485a807aae03abb0dfa14d26d94db0445f9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206283"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175322"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Echanger ou alterner entre une clé client ou de disponibilité
 
@@ -45,7 +45,7 @@ Par exemple :
    Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
    ```
 
-   Dans cet exemple, étant donné qu’une clé nommée **Contoso-CK-EX-NA-VaultA1-Key001** existe dans le coffre **Contoso-CK-EX-NA-VaultA1,** l’cmdlet crée une nouvelle version de la clé. Cette opération conserve les versions de clé précédentes dans l’historique des versions de la clé. Vous avez besoin de la version de clé précédente pour déchiffrer les données qu’elle chiffre toujours. Une fois que vous avez terminé le déploiement d’une clé associée à une dep, exécutez une cmdlet supplémentaire pour vous assurer que la clé client commence à utiliser la nouvelle clé. Les sections suivantes décrivent les cmdlets plus en détail.
+   Dans cet exemple, étant donné qu’une clé nommée **Contoso-CK-EX-NA-VaultA1-Key001** existe dans le coffre **Contoso-CK-EX-NA-VaultA1,** l’cmdlet crée une nouvelle version de la clé. Cette opération conserve les versions de clé précédentes dans l’historique des versions de la clé. Vous avez besoin de la version précédente de la clé pour déchiffrer les données qu’elle chiffre toujours. Une fois que vous avez terminé le déploiement d’une clé associée à une dep, exécutez une cmdlet supplémentaire pour vous assurer que la clé client commence à utiliser la nouvelle clé. Les sections suivantes décrivent les cmdlets plus en détail.
   
 ## <a name="update-the-keys-for-multi-workload-deps"></a>Mettre à jour les clés pour les ppp multi-charges de travail
 
@@ -53,7 +53,7 @@ Lorsque vous rollez l’une des clés Azure Key Vault associées à un dep utili
 
 Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer plusieurs charges de travail, complétez les étapes suivantes :
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
 
 2. Exécutez lSet-M365DataAtRestEncryptionPolicy cmdlet.
   
@@ -81,7 +81,7 @@ Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer les 
    Set-DataEncryptionPolicy -Identity <DataEncryptionPolicyID> -Refresh
    ```
 
-2. Pour vérifier la valeur de la propriété DataEncryptionPolicyID pour la boîte aux lettres, utilisez les étapes de déterminer le [dep](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)affecté à une boîte aux lettres . La valeur de cette propriété change une fois que le service applique la clé mise à jour.
+2. Pour vérifier la valeur de la propriété DataEncryptionPolicyID pour la boîte aux lettres, utilisez les étapes de la procédure de déterminer le [deP](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)affecté à une boîte aux lettres . La valeur de cette propriété change une fois que le service applique la clé mise à jour.
   
 ## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Mettre à jour les clés pour SharePoint en ligne, OneDrive Entreprise et Teams fichiers
 
@@ -93,7 +93,7 @@ SharePoint Online ne vous permet de déployer qu’une seule clé à la fois. Si
    Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
-   Bien que cette cmdlet démarre l’opération de SharePoint Online et OneDrive Entreprise, l’action ne se termine pas immédiatement.
+   Bien que cette cmdlet démarre l’opération de SharePoint En ligne et OneDrive Entreprise, l’action ne se termine pas immédiatement.
 
 2. Pour voir la progression de l’opération de roulis de touches, exécutez Get-SPODataEncryptionPolicy cmdlet comme suit :
 

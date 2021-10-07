@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envoyez un courrier électronique en tant que liste de distribution Microsoft 365 de sorte que lorsqu’un membre répond à un message, il semble qu’il soit issu de la liste de distribution.
-ms.openlocfilehash: 4f41368d5b769c783c7c05aa662199bbcafd7b1e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: d38a7cb2efe3ddd3a915030f6aff4acc1eba1aef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776043"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171830"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
@@ -48,7 +48,7 @@ Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une
     
 4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Sélectionnez Plus, puis choisissez Afficher à partir de.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Cliquez avec le bouton droit sur l’adresse de l’utilisateur de l’utilisateur , par `Ina@weewalter.me` exemple, et choisissez **Supprimer.**<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Cliquez avec le bouton droit sur l’adresse de l’utilisateur de provenance, par `Ina@weewalter.me` exemple, et choisissez **Supprimer.**<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. Tapez ensuite l’adresse de la liste de distribution telle que support@contoso.com et envoyez le message. La prochaine fois que vous répondrez à partir de la liste de distribution, son adresse apparaîtra en tant qu’option dans la **liste De.**<br/>![L’alias de la boîte aux lettres partagée s’affiche.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
@@ -62,7 +62,7 @@ Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une
 
 4. Envoyez le message électronique.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d'administration Microsoft 365 (article)\
 [Collaboration par courrier](../email/email-collaboration.md) électronique (article)\

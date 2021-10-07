@@ -9,24 +9,24 @@ ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 8831293d1b17649ae387aab9ab99063ba31bef15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2801840e0329233ad79abdae607b81094db5e282
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181181"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173306"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows 10 et Office 365
 
-Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
+Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
 
-Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester votre automatisation liée au déploiement.
+Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
 
 [Téléchargez le kit Windows 10 et Office 365 de déploiement.](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
@@ -64,7 +64,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ### <a name="prepare-configuration"></a>Préparer la configuration
 
-- Optimiser la Windows 10 des mises à jour
+- Optimiser la remise des mises à jour Windows 10
 - Maintenance Windows 10'aide de la stratégie de groupe
 - Maintenance Windows 10 l’Microsoft Intune
 - Maintenance Windows 10 avec Configuration Manager
@@ -104,7 +104,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 > [!NOTE]
-> Utilisez une connexion Internet haut débit pour télécharger ce contenu et autorisez 30 à 45 minutes pour l’approvisionnement automatique. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. L’atelier expire le 6 novembre 2021. Une nouvelle version sera publiée avant expiration.
+> Veuillez utiliser une connexion Internet haut débit pour télécharger ce contenu et autoriser l’approvisionnement automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. L’atelier expire le 6 novembre 2021. Une nouvelle version sera publiée avant expiration.
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

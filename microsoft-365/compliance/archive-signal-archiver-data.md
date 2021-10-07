@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver les données de communications de signal dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: be070c16c74375c2dad3fc09ebd549d2b9df359d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 250ec748839afd70c24128ed70a644d2e3d05533
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175394"
 ---
 # <a name="set-up-a-connector-to-archive-signal-communications-data"></a>Configurer un connecteur pour archiver les données de communications de signal
 
 Utilisez le connecteur TeleMessage dans le Centre de conformité Microsoft 365 pour importer et archiver des conversations de signal, des pièces jointes, des fichiers et des messages et appels supprimés. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation et importe la communication mobile des employés à l’aide de l’archiveur de signal de télémessage dans les boîtes aux lettres Microsoft 365.
 
-Une fois que les données du connecteur de l’archiveur de signal sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 pour signaler les données de communication. Par exemple, vous pouvez rechercher la communication signal à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur de l’archiveur de signal à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur d’archivage de signal pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations de gouvernance d’entreprise et aux stratégies réglementaires.
+Une fois que les données du connecteur de l’archiveur de signal sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 pour signaler les données de communication. Par exemple, vous pouvez rechercher la communication signal à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur de l’archiveur de signal à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur d’archivage du signal pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations de gouvernance d’entreprise et aux stratégies réglementaires.
 
 ## <a name="overview-of-archiving-signal-communications-data"></a>Vue d’ensemble des données de communications de signal d’archivage
 
@@ -79,4 +79,4 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

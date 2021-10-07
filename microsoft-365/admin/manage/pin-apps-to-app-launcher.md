@@ -13,18 +13,18 @@ ms.collection:
 - Adm_TOC
 ms.service: o365-administration
 ms.custom: admindeeplinkMAC
-localization_priority: Normal
+ms.localizationpriority: medium
 description: En tant qu’administrateur général, vous pouvez épingler jusqu’à trois applications au lanceur d’applications de vos utilisateurs.
-ms.openlocfilehash: 7e9975b13f66f39abd61a238cb30463baa9ed34e
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 7ff85e379198312666f03c2d7d6c8bb42b9e08d0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933362"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171842"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>Épingler des applications au lanceur d’applications de vos utilisateurs
 
-Vous pouvez utiliser les contrôles du portail Azure Active Directory pour épingler jusqu’à trois applications à Office.com et au lanceur d’applications pour tous les utilisateurs de votre organisation. Vous pouvez également organiser des groupes d’applications. Toute application que vous ajoutez peut être désépinée ultérieurement par l’utilisateur à tout moment. Pour épingler une application pour vos utilisateurs, vous devez être administrateur d’application cloud, administrateur d’application dans Azure Active Directory ou administrateur général dans Office 365. Pour plus d’informations sur les rôles d’administrateur, voir rôles intégrés et [rôles](../add-users/about-admin-roles.md)d’administrateur [Azure AD](/azure/active-directory/roles/permissions-reference) dans Microsoft 365 . 
+Vous pouvez utiliser des contrôles dans le portail Azure Active Directory pour épingler jusqu’à trois applications à Office.com et le lanceur d’applications pour tous les utilisateurs de votre organisation. Vous pouvez également organiser des groupes d’applications. Toute application que vous ajoutez peut être désépinée ultérieurement par l’utilisateur à tout moment. Pour épingler une application pour vos utilisateurs, vous devez être administrateur d’application cloud, administrateur d’application dans Azure Active Directory ou administrateur général dans Office 365. Pour plus d’informations sur les rôles d’administrateur, voir rôles intégrés et [rôles](../add-users/about-admin-roles.md)d’administrateur [Azure AD](/azure/active-directory/roles/permissions-reference) dans Microsoft 365 . 
 
 Pour plus d’informations sur le lanceur d’applications [](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) et Office.com, consultez l’article du lanceur d’applications et les mises à jour de office.com et du lanceur d’applications [Office 365.com.](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503)
 

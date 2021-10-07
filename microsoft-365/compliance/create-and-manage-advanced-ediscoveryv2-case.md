@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-aed
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment créer et gérer Advanced eDiscovery cas. La première étape consiste à créer un cas et à commencer à utiliser Advanced eDiscovery fonctionnalités et fonctionnalités.
-ms.openlocfilehash: 69d2f22a3792f2217ea8ef58ae9771dd4a10f32d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f76d4688ebb0324b1b009f4b98b5ab15b65ec960
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181301"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172490"
 ---
-# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery dossier
+# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Créer et gérer un cas Advanced eDiscovery de gestion
 
 Après avoir Advanced eDiscovery et attribué des autorisations aux [responsables eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) de votre organisation qui gèreront les cas, l’étape suivante consiste à créer et gérer un cas.
 
@@ -40,7 +40,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
 
-3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis cliquez **sur Créer un cas.**
+3. Dans la page **Advanced eDiscovery,** cliquez sur **l’onglet Cas,** puis cliquez **sur Créer un cas.**
 
 4. Dans **la** page de découverte électronique du nouveau cas de découverte électronique, nommez le cas (obligatoire), puis tapez un numéro de cas et une description facultatifs. Le nom de cas doit être unique dans votre organisation.
 
@@ -50,7 +50,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 6. Dans la **vignette Autorisations & accès** sous **l’onglet Paramètres,** cliquez sur **Sélectionner.**
 
-7. Dans la page De gestion de ce **cas** volant, sous **Gérer** les membres, cliquez sur **Ajouter** pour ajouter des membres au cas.
+7. Dans la page De gestion de ce  **cas** volant, sous **Gérer** les membres, cliquez sur Ajouter pour ajouter des membres au cas.
 
 8. Dans la liste des personnes, cochez la case en regard des noms des personnes que vous souhaitez ajouter au cas. Comme indiqué précédemment, assurez-vous que les personnes que vous ajoutez au cas se sont vu attribuer les autorisations eDiscovery appropriées.
 
@@ -66,11 +66,11 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 ![Advanced eDiscovery flux de travail.](../media/AeDWorkflow.png)
 
-1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et [des sources de données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
+1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et des sources de [données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
 
    Voici quelques choses qui se produisent (ou que vous pouvez faire) lorsque vous ajoutez des dépositaires à un cas :
 
-   - Les données de la boîte aux lettres de Exchange, du compte OneDrive du dépositaire et de tous les groupes Microsoft Teams ou Yammer dont le dépositaire est membre peuvent être « marquées » comme données de garde dans le cas.
+   - Les données de la boîte aux lettres Exchange, du compte OneDrive du dépositaire et de tous les groupes Microsoft Teams ou Yammer dont le dépositaire est membre peuvent être « marquées » comme données de garde dans le cas.
   
    - Les données du dépositaire sont réindexées (par un processus appelé *Indexation avancée).* Cela permet d’optimiser sa recherche à l’étape suivante.
   

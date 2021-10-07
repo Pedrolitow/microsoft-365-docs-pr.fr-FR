@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8894e30f013e89110478000372c2b24c44c1f183
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 1584fbaa23822af0821228a50f487517f74c02ca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042709"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174506"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -63,9 +63,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceType` | string | Type d’appareil |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `Port` | string | Port TCP utilisé pendant la communication |
+| `Port` | string | Port TCP utilisé lors de la communication |
 | `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | string | Adresse IP du périphérique exécutant l’application serveur qui a traitée l’action enregistrée |
 | `DestinationPort` | string | Port de destination des communications réseau associées |
 | `TargetDeviceName` | string | Nom de domaine complet (FQDN) de l’appareil à qui l’action enregistrée a été appliquée |
 | `TargetAccountDisplayName` | string | Nom complet du compte à qui l’action enregistrée a été appliquée |
@@ -74,7 +74,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ReportId` | long | Identificateur unique de l’événement |
 | `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)

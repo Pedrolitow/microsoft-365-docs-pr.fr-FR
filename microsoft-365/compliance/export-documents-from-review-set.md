@@ -9,39 +9,39 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment sélectionner et exporter du contenu à partir d’un Advanced eDiscovery de révision pour les présentations ou les avis externes.
+description: Découvrez comment sélectionner et exporter du contenu à partir d’un ensemble Advanced eDiscovery révision pour les présentations ou les avis externes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5021428dc1ee82b5fb0aeed58d4e055710dec2ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182416"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175166"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exporter des documents à partir d’un groupe de révision dans Advanced eDiscovery
 
 L’exportation permet aux utilisateurs de personnaliser le contenu inclus dans le package de téléchargement lorsque vous exportez le document à partir d’un ensemble de révisions dans Advanced eDiscovery.
 
-Pour exporter des documents à partir d’un jeu à réviser :
+Exporter les documents d’un jeu à réviser :
 
 1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery,  sélectionnez l’onglet Ensembles de révision, puis sélectionnez le jeu à réviser à exporter.
 
 2. Dans le jeu à réviser, cliquez sur **Exporter l’action.**  >  
 
-   L’outil Export affiche la page de présentation avec les paramètres permettant de configurer l’exportation. Certaines options sont sélectionnées par défaut, mais vous pouvez les modifier. Consultez la section suivante pour obtenir des descriptions des options d’exportation que vous pouvez configurer.
+   L’outil Exporter affiche la page de menu volant avec les paramètres pour configurer l’exportation. Certaines options sont sélectionnées par défaut, mais vous pouvez les modifier. Consultez la section suivante pour obtenir des descriptions des options d’exportation que vous pouvez configurer.
 
    ![Options de configuration pour l’exportation d’éléments à partir d’un jeu à réviser.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. Après avoir configuré l’exportation, cliquez sur **Exporter** pour démarrer le processus d’exportation. Selon l’option que vous avez sélectionnée dans la section **Options** de sortie, vous pouvez accéder aux fichiers d’exportation en téléchargement direct ou dans le compte stockage Azure de votre organisation.
 
 > [!NOTE]
-> Les travaux d’exportation sont conservés pendant toute la durée de vie du cas. Toutefois, vous devez télécharger le contenu à partir d’une tâche d’exportation dans les 30 jours suivant la fin de la tâche d’exportation.
+> Les travaux d’exportation sont conservés pendant toute la durée de vie du cas. Toutefois, vous devez télécharger le contenu à partir d’une tâche d’exportation dans les 30 jours suivant la fin de la tâche d’exportation.
 
 ## <a name="export-options"></a>Options d’exportation
 

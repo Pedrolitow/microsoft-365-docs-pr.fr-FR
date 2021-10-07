@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: medium
+ms.localizationpriority: medium
 description: Découvrez les meilleures pratiques pour gérer les nombreuses rubriques de votre organisation à l’aide de Topics.
-ms.openlocfilehash: e076c8a29070fbfe0db5e21bbca842716afe69fd
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: f1e5a284d94f1afc2c67882a7fd24def7718e5ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173246"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Gérer les rubriques à grande échelle dans Sujets Microsoft Viva
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c5adf4b51cbb9898b0b4f7bc806c1392453c526
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 12a1a6d40706e71043dffdc899847b7d8062430b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206420"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171038"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un Advanced eDiscovery de données
 
@@ -38,7 +38,7 @@ Vous pouvez ajouter et gérer des dépositaires dans Advanced eDiscovery cas en 
 
 4. Examinez les dépositaires et terminez le processus.
 
-   [![Onglet Sources dans Advanced eDiscovery cas. ](../media/AeD-Sources-Tab.png)](../media/AeD-Sources-Tab.png#lightbox)
+   [![Onglet Sources dans Advanced eDiscovery cas. ](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Assurez-vous que vous avez les autorisations nécessaires
 
@@ -74,7 +74,7 @@ Pour associer d’autres boîtes aux lettres, sites, Teams ou groupes Yammer à 
 
 1. Développez un dépositaire pour afficher les services suivants afin d’associer des emplacements de données au dépositaire. Cliquez **sur Modifier** en côté d’un service pour ajouter un emplacement de données.
 
-   - **Exchange**: utilisez cette approche pour associer d’autres boîtes aux lettres au dépositaire. Tapez dans la zone de recherche le nom ou l’alias (au minimum trois caractères) des boîtes aux lettres utilisateur ou des groupes de distribution. Sélectionnez les boîtes aux lettres à affecter au dépositaire, puis cliquez sur **Ajouter.**
+   - **Exchange**: utiliser pour associer d’autres boîtes aux lettres au dépositaire. Tapez dans la zone de recherche le nom ou l’alias (au minimum trois caractères) des boîtes aux lettres utilisateur ou des groupes de distribution. Sélectionnez les boîtes aux lettres à affecter au dépositaire, puis cliquez sur **Ajouter.**
 
    - **SharePoint**: utilisez cette valeur pour associer SharePoint sites au dépositaire. Sélectionnez un site dans la liste ou recherchez un site en tapant une URL dans la zone de recherche. Sélectionnez les sites à affecter au dépositaire, puis cliquez sur **Ajouter.**
 
@@ -95,7 +95,7 @@ Pour associer d’autres boîtes aux lettres, sites, Teams ou groupes Yammer à 
 
 Pour placer les dépositaires et les sources de données en conservation :
 
-1. Dans la page **Paramètres de** la conservation, vous pouvez appliquer une conservation à des dépositaires individuels en selectant la case à cocher sous la colonne **Conservation.**
+1. Dans la page **Paramètres de** conservation, vous pouvez appliquer une conservation à des dépositaires individuels en cocher la case sous la colonne **Conservation.**
 
    Vous pouvez également placer tous les dépositaires  en conservation en cocher la case De conservation en haut de la colonne.
 
@@ -114,4 +114,4 @@ Avant d’ajouter réellement les dépositaires au cas, vous pouvez passer en re
 
    Les nouveaux dépositaires sont ajoutés au cas et affichés sous l’onglet **Sources de** données.
 
-   [![Dépositaires répertoriés sous l’onglet Sources de données. ](../media/DataSourcesTab.png)](../media/DataSourcesTab.png#lightbox)
+   [![Dépositaires répertoriés sous l’onglet Sources de données. ](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)

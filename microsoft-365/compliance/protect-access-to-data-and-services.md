@@ -9,19 +9,19 @@ ms.date: 4/17/2018
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Découvrez comment protéger l’accès des utilisateurs et des appareils aux Microsoft 365 et aux services et se défendre contre la perte de données.
+description: Découvrez comment protéger l’accès des utilisateurs et des appareils aux données Microsoft 365 services et se défendre contre la perte de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6f7d3c8af6526e5766086c7db5f6a7285f215162
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172250"
 ---
 # <a name="protect-user-and-device-access"></a>Protéger l’accès aux appareils et l’accès des utilisateurs
 
@@ -38,7 +38,7 @@ Les comptes d’administration que vous utilisez pour administrer Microsoft 365 
 
 Commencez par utiliser des comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent avoir un compte d’utilisateur distinct pour une utilisation normale et non administrative et utiliser leur compte administratif uniquement si nécessaire pour effectuer une tâche associée à leur fonction.
 
-Protégez vos comptes d’administrateur avec l’authentification multifacteur et l’accès conditionnel. Pour plus d’informations, [voir Protection des comptes d’administrateur.](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts) 
+Protégez vos comptes d’administrateur avec l’authentification multifacteur et l’accès conditionnel. Pour plus d’informations, voir [Protection des comptes d’administrateur.](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts) 
 
 Ensuite, configurez la gestion des accès privilégiés dans Office 365. La gestion des accès privilégiés permet de contrôler l’accès de manière granulaire sur les tâches d’administration privilégiée dans Office 365. Il peut aider à protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administrateur privilégiés existants avec un accès permanent aux données sensibles ou à des paramètres de configuration critiques.
 
@@ -50,7 +50,7 @@ Une autre recommandation consiste à utiliser des stations de travail spécialem
 Enfin, vous pouvez atténuer l’impact d’un manque accidentel d’accès administratif en créant au moins deux comptes d’accès d’urgence dans votre client. Voir [Gérer les comptes d’accès d’urgence dans Azure AD.](/azure/active-directory/users-groups-roles/directory-emergency-access) 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Étape 3 : Configurer les stratégies recommandées d’accès aux identités et aux appareils
-L’authentification multifacteur (MFA) et les stratégies d’accès conditionnel sont des outils puissants pour atténuer les comptes compromis et l’accès non autorisé. Nous vous recommandons d’implémenter un ensemble de stratégies qui ont été testées ensemble. Pour plus d’informations, y compris sur les étapes de déploiement, voir [Configurations d’identité et d’accès aux appareils.](../security/office-365-security/microsoft-365-policies-configurations.md)
+L’authentification multifacteur (MFA) et les stratégies d’accès conditionnel sont des outils puissants pour atténuer les comptes compromis et l’accès non autorisé. Nous vous recommandons d’implémenter un ensemble de stratégies qui ont été testées ensemble. Pour plus d’informations, y compris sur les étapes de déploiement, voir [Configurations d’accès aux identités et aux appareils.](../security/office-365-security/microsoft-365-policies-configurations.md)
 
  Ces stratégies implémentent les fonctionnalités suivantes :
 - Authentification multifacteur

@@ -10,23 +10,23 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment afficher et interpréter l’état et les résultats de l’entraînement Pertinence pour les problèmes de Advanced eDiscovery.
-ms.openlocfilehash: ac575ebf073afa8eb4ba13e63202f8b634c52f60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7a2786a727fd233b6617779bae95a26c1b62644e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205835"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175010"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery"></a>Suivre l’analyse de pertinence dans Advanced eDiscovery
   
-Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité calculée de la formation Pertinence effectuée dans l’onglet Balise et indique l’étape suivante à effectuer dans le processus de formation itérative en Pertinence. 
+Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité calculée de l’entraînement Pertinence effectué dans l’onglet Balise et indique l’étape suivante à effectuer dans le processus de formation itérative en Pertinence. 
   
 ## <a name="tracking-relevance-training-status"></a>Suivi de l’état de l’entraînement Pertinence
 
@@ -44,7 +44,7 @@ Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité ca
   
     ![Formation Pertinence - Étape 1.](../media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
-    La vue étendue affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, étant donné les fichiers d’évaluation existants (déjà marqués).
+    La vue étendue affiche des informations et des options supplémentaires. La marge d’erreur actuelle affichée est la marge d’erreur du rappel dans l’état actuel de l’évaluation, compte tenu des fichiers d’évaluation existants (déjà balisé).
   
     > [!NOTE]
     >  L’étape d’évaluation peut  être contourné en effanant la case à cocher Évaluation par problème, puis pour « tous les problèmes ». Toutefois, il n’y aura donc pas de statistiques pour ce problème. > la case à cocher **d’évaluation** ne peut être effectuée qu’avant l’évaluation. Lorsque plusieurs problèmes existent dans un cas, l’évaluation est contourné uniquement si la case à cocher est effacée pour chaque problème 
@@ -53,7 +53,7 @@ Dans Advanced eDiscovery, l’onglet Suivi de pertinence affiche la validité ca
   
     Dans **la piste de pertinence,** l’indicateur de progression de la formation et l’info-conseil indiquent le nombre estimé d’échantillons supplémentaires nécessaires pour atteindre la \> stabilité. Cette estimation fournit des instructions pour la formation supplémentaire nécessaire.
   
-    ![Formation de suivi de pertinence.](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Formation au suivi de pertinence.](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Lorsque vous avez terminé le marquage et si vous avez besoin de continuer la formation, cliquez sur **Formation.** Un autre exemple de jeu de fichiers est généré à partir du jeu de fichiers chargé pour une formation supplémentaire. Vous êtes ensuite renvoyé à l’onglet Balise pour baliser et former d’autres fichiers.
 
@@ -66,9 +66,9 @@ Une fois que les fichiers d’évaluation ont atteint un niveau stable de format
   
 ### <a name="performing-batch-calculation"></a>Effectuer le calcul par lots
 
-Le calcul par lot est exécuté en tant qu’étape suivante une fois la formation terminée (lorsqu’un état stable de formation est affiché par la barre de progression, une coche et un état stable dans l’info-conseil).) Le calcul par lots applique les connaissances acquises lors de l’entraînement Pertinence à l’ensemble de la population de fichiers, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
+Le calcul par lot est exécuté comme l’étape suivante une fois la formation terminée (lorsqu’un état de formation stable est affiché par la barre de progression, une coche et un état stable dans l’info-conseil).) Le calcul par lots applique les connaissances acquises lors de l’entraînement Pertinence à l’ensemble de la population de fichiers, afin d’évaluer la pertinence des fichiers et d’affecter des scores de pertinence.
   
-Lorsqu’il y a plusieurs problèmes, le calcul par lot est effectué par problème. Pendant le calcul par lots, la progression est surveillée lors du traitement de tous les fichiers. 
+Lorsqu’il y a plusieurs problèmes, le calcul par lot est effectué par problème. Pendant le calcul par lots, l’avancement est surveillé lors du traitement de tous les fichiers. 
   
 Ici, l’étape suivante recommandée est « Aucun », ce qui indique qu’aucune formation itérative supplémentaire sur la pertinence n’est requise à ce stade. La phase suivante est **l’onglet Déterminer \> la** pertinence. 
   
@@ -79,7 +79,7 @@ Si vous souhaitez importer de nouveaux fichiers après le calcul par lots, l’a
   
 ### <a name="assessing-tagging-consistency"></a>Évaluation de la cohérence du marquage
 
-S’il existe des incohérences dans le marquage de fichiers, cela peut affecter l’analyse. Le Advanced eDiscovery de cohérence de marquage peut être utilisé lorsque les résultats ne sont pas optimaux ou lorsque la cohérence est en doute. Une liste des fichiers marqués incohérents possibles est renvoyée, et ils peuvent être révisés et retardés, si nécessaire.
+S’il existe des incohérences dans le marquage de fichiers, cela peut affecter l’analyse. Le Advanced eDiscovery de cohérence de marquage peut être utilisé lorsque les résultats ne sont pas optimaux ou que la cohérence est en doute. Une liste des fichiers marqués incohérents possibles est renvoyée, et ils peuvent être révisés et retardés, si nécessaire.
   
 > [!NOTE]
 > Après sept séries d’entraînements ou plus après  l’évaluation, la cohérence du marquage peut être vue dans la progression de formation détaillée des résultats du suivi de \>  \>  \>  \> **pertinence.** Cette révision est effectuée pour un problème à la fois.
@@ -88,7 +88,7 @@ S’il existe des incohérences dans le marquage de fichiers, cela peut affecter
   
 2. À droite de **l’étape suivante,** cliquez sur **Modifier.**
   
-3. Sélectionnez **incohérences de balise comme** **option** de l’étape suivante, après sept exemples de formation et cliquez sur **OK**.
+3. Sélectionnez **incohérences de balise comme** option de **l’étape** suivante, après sept exemples de formation et cliquez sur **OK**.
   
 4. Sélectionner **les incohérences de balise**. **L’onglet** Balise s’ouvre et affiche une liste des incohérences à retager si nécessaire.
   
@@ -128,14 +128,14 @@ Le **volet Progression de** l’entraînement inclut un graphique de progression
 
 - **Avertissement**: de nombreux fichiers peuvent être marqués de manière incohérente. (Lumière rouge affichée)
 
-**Graphique de progression de l’entraînement**: indique le degré de stabilité de l’entraînement Pertinence après de nombreux cycles d’entraînement Pertinence par rapport à la valeur de mesure F. Lorsque nous allons de gauche à droite sur le graphique, l’intervalle de confiance est réduit et utilisé, avec la mesure F, par Advanced eDiscovery Pertinence pour déterminer la stabilité lorsque les résultats de l’entraînement Pertinence sont optimisés.
+**Graphique de progression de l’entraînement**: indique le degré de stabilité de l’entraînement Pertinence après de nombreux cycles d’entraînement Pertinence par rapport à la valeur de mesure F. À mesure que nous allons de gauche à droite sur le graphique, l’intervalle de confiance est réduit et utilisé, avec la mesure F, par Advanced eDiscovery Pertinence pour déterminer la stabilité lorsque les résultats de l’entraînement Pertinence sont optimisés.
   
 > [!NOTE]
 > La pertinence utilise F2, une mesure F dans laquelle le rappel reçoit deux fois plus de poids que la précision. Pour les cas avec une richesse élevée (plus de 25 %) la pertinence utilise F1 (rapport 1:1). Le rapport de mesure F peut être configuré dans les **paramètres** avancés d’installation \> **de pertinence.**
   
 ### <a name="batch-calculation-results"></a>Résultats de calcul par lot
 
-Le **volet Résultats du calcul batch** inclut le nombre de fichiers qui ont été marqués pour Pertinence, comme suit : 
+Le **volet Résultats du calcul par** lot inclut le nombre de fichiers qui ont été marqués pour Pertinence, comme suit : 
   
 - **Success**
   
@@ -152,7 +152,7 @@ Le **volet Résultats du calcul batch** inclut le nombre de fichiers qui ont ét
   
 ### <a name="training-statistics"></a>Statistiques de formation
 
-Le **volet Statistiques** de formation affiche des statistiques et des graphiques basés sur les résultats de Advanced eDiscovery formation Pertinence. 
+Le **volet Statistiques** de formation affiche des statistiques et des graphiques basés sur les résultats de la formation Advanced eDiscovery Pertinence. 
   
 ![Statistiques de formation de suivi de pertinence.](../media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
@@ -160,7 +160,7 @@ Cet affichage présente les exemples suivants :
   
 - **Taux de révision/rappel :** comparaison des résultats en fonction des scores de pertinence dans une révision hypothétiquement linéaire. Le rappel est estimé en raison de la taille du jeu à réviser.
   
-- **Paramètres**: statistiques calculées cumulées relatives au jeu à réviser par rapport à la population de fichiers pour l’ensemble du cas.
+- **Paramètres :** statistiques calculées cumulatives relatives au jeu à réviser par rapport à la population de fichiers pour l’ensemble du cas.
   
 - **Révision**: Pourcentage de fichiers à réviser en fonction de ce cutoff.
   

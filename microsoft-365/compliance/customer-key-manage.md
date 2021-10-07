@@ -6,18 +6,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: Après avoir installé la clé client, découvrez comment la gérer en restaurant des clés AKV, en gérant les autorisations et en créant et en attribuant des stratégies de chiffrement de données.
-ms.openlocfilehash: 7fc985aaaf0cf0222a6cd02063207b2b1709ac25
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2329df5a7bb7fac7a6013e1236024ba0a4a31567
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206268"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172454"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
@@ -31,7 +31,7 @@ Pour créer une PD DEP à charges multiples, suivez les étapes suivantes :
   
 1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
-2. Pour créer une dep, utilisez l'New-M365DataAtRestEncryptionPolicy cmdlet.
+2. Pour créer un dep, utilisez l'New-M365DataAtRestEncryptionPolicy cmdlet.
 
    ```powershell
    New-M365DataAtRestEncryptionPolicy -Name <PolicyName> -AzureKeyIDs <KeyVaultURI1, KeyVaultURI2> [-Description <String>]
@@ -53,7 +53,7 @@ Exemple :
 New-M365DataAtRestEncryptionPolicy -Name "Contoso_Global" -AzureKeyIDs "https://contosoWestUSvault1.vault.azure.net/keys/Key_01","https://contosoCentralUSvault1.vault.azure.net/keys/Key_02" -Description "Policy for multiple workloads for all users in the tenant."
 ```
 
-### <a name="assign-multi-workload-policy"></a>Attribuer une stratégie multi-charges de travail
+### <a name="assign-multi-workload-policy"></a>Attribuer une stratégie à charges de travail multiples
 
 Attribuez le PDV à l’aide Set-M365DataAtRestEncryptionPolicyAssignment cmdlet. Une fois la stratégie assignée, Microsoft 365 chiffre les données avec la clé identifiée dans le PDV.
 
@@ -107,7 +107,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Affecter un deP à une boîte aux lettres
 
-Affectez le deP à une boîte aux lettres à l’aide de Set-Mailbox cmdlet. Une fois la stratégie assignée, Microsoft 365 pouvez chiffrer la boîte aux lettres avec la clé identifiée dans le PDV.
+Affectez le deP à une boîte aux lettres à l’aide Set-Mailbox cmdlet. Une fois la stratégie assignée, Microsoft 365 pouvez chiffrer la boîte aux lettres avec la clé identifiée dans le PDV.
   
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -157,7 +157,7 @@ Pour afficher la liste de tous les dep que vous avez créés pour les boîtes au
 
 1. À l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général dans votre organisation, connectez-vous [Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Pour retourner tous les DDP de votre organisation, exécutez la cmdlet Get-DataEncryptionPolicy sans aucun paramètre.
+2. Pour retourner tous les DDP de votre organisation, exécutez l'Get-DataEncryptionPolicy cmdlet sans aucun paramètre.
 
    ```powershell
    Get-DataEncryptionPolicy
@@ -217,9 +217,9 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 La propriété IsEncrypted renvoie la valeur **true** si la boîte aux lettres est chiffrée et la valeur **false** si la boîte aux lettres n’est pas chiffrée. Le temps de déplacement des boîtes aux lettres dépend du nombre de boîtes aux lettres à laquelle vous attribuez une dep pour la première fois et de la taille des boîtes aux lettres. Si les boîtes aux lettres n’ont pas été chiffrées après une semaine à partir de l’heure à partir de la PED, contactez Microsoft.
 
-La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boîtes aux lettres locaux. Pour plus [d’informations,](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) reportez-vous à cette annonce.
+La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boîtes aux lettres locales. Pour plus [d’informations,](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) reportez-vous à cette annonce.
 
-### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Vérifier que le chiffrement est terminé pour SharePoint online, OneDrive Entreprise et Teams fichiers
+### <a name="verify-encryption-completes-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Vérifier que le chiffrement est terminé pour SharePoint en ligne, OneDrive Entreprise et Teams fichiers
 
 Vérifiez l’état du chiffrement en exécutant la cmdlet Get-SPODataEncryptionPolicy comme suit :
 
@@ -249,7 +249,7 @@ Le résultat de cette cmdlet inclut :
 
 Pour obtenir des détails sur tous les dep que vous avez créés pour utiliser plusieurs charges de travail, complétez les étapes suivantes :
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
 
    - Pour renvoyer la liste de tous les dep de charges de travail multiples dans l’organisation, exécutez cette commande.
 
@@ -267,7 +267,7 @@ Pour obtenir des détails sur tous les dep que vous avez créés pour utiliser p
 
 Pour savoir quel deP est actuellement affecté à votre client, suivez ces étapes. 
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
 
 2. Tapez cette commande.
 
@@ -279,7 +279,7 @@ Pour savoir quel deP est actuellement affecté à votre client, suivez ces étap
 
 Avant de désactiver une PD DEP à charges multiples, désattribuez-la des charges de travail de votre client. Pour désactiver un deP utilisé avec plusieurs charges de travail, effectuer les étapes suivantes :
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
 
 2. Exécutez lSet-M365DataAtRestEncryptionPolicy cmdlet.
   
@@ -297,7 +297,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 
 ## <a name="restore-azure-key-vault-keys"></a>Restaurer les clés Azure Key Vault
 
-Avant d’effectuer une restauration, utilisez les fonctionnalités de récupération fournies par la suppression soft. Toutes les clés utilisées avec la clé client doivent être activées pour la suppression possible. La suppression souple agit comme une corbeille et permet une récupération pendant 90 jours sans avoir à le restaurer. La restauration ne doit être requise que dans des circonstances extrêmes ou inhabituelles, par exemple si la clé ou le coffre de clés est perdu. Si vous devez restaurer une clé à utiliser avec la clé client, dans Azure PowerShell, exécutez la cmdlet Restore-AzureKeyVaultKey comme suit :
+Avant d’effectuer une restauration, utilisez les fonctionnalités de récupération fournies par la suppression soft. Toutes les clés utilisées avec la clé client doivent être activées pour la suppression possible. La suppression souple agit comme une corbeille et permet une récupération pendant 90 jours sans avoir à le restaurer. La restauration ne doit être nécessaire que dans des circonstances extrêmes ou inhabituelles, par exemple si la clé ou le coffre de clés est perdu. Si vous devez restaurer une clé à utiliser avec la clé client, dans Azure PowerShell, exécutez la cmdlet Restore-AzureKeyVaultKey comme suit :
   
 ```powershell
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
@@ -327,7 +327,7 @@ Par exemple :
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
-Pour supprimer les autorisations d’un administrateur, exécutez l'Remove-AzKeyVaultAccessPolicy cmdlet :
+Pour supprimer les autorisations d’un administrateur, exécutez Remove-AzKeyVaultAccessPolicy cmdlet :
   
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
@@ -341,12 +341,12 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ## <a name="roll-back-from-customer-key-to-microsoft-managed-keys"></a>Revenir de la clé client aux clés gérées Microsoft
 
-Si vous devez revenir aux clés gérées par Microsoft, vous pouvez le faire. Lorsque vous déboardez, vos données sont re-chiffrées à l’aide du chiffrement par défaut pris en charge par chaque charge de travail individuelle. Par exemple, Exchange Online prend en charge le chiffrement par défaut à l’aide de clés gérées par Microsoft.
+Si vous devez revenir aux clés gérées par Microsoft, vous pouvez. Lorsque vous déboardez, vos données sont re-chiffrées à l’aide du chiffrement par défaut pris en charge par chaque charge de travail individuelle. Par exemple, Exchange Online prend en charge le chiffrement par défaut à l’aide de clés gérées par Microsoft.
 
 > [!IMPORTANT]
 > Laboarding n’est pas la même chose qu’une purge de données. Une purge des données supprime définitivement les données de votre organisation de l’Microsoft 365, ce qui n’est pas le cas de la suppression de l’board. Vous ne pouvez pas effectuer de purge de données pour une stratégie de charges de travail multiples.
 
-Si vous décidez de ne plus utiliser la clé client pour affecter des depx de travail multiples, vous devrez joindre le support Microsoft avec une demande de « désintégration » à partir de la clé client. Demandez à l’équipe de support de déposer une demande de service auprès Microsoft 365'équipe de clé client. Si vous avez des questions, m365-ck@service.microsoft.com posent des questions.
+Si vous décidez de ne plus utiliser la clé client pour affecter des deP multi-charges de travail, vous devrez joindre le support Microsoft avec une demande de « désintégration » à partir de la clé client. Demandez à l’équipe de support de déposer une demande de service auprès Microsoft 365'équipe de clé client. Si vous avez des questions, m365-ck@service.microsoft.com posent des questions.
 
 Si vous ne souhaitez plus chiffrer des boîtes aux lettres individuelles à l’aide de DEP au niveau de la boîte aux lettres, vous pouvez désattribuer les DPS de niveau boîte aux lettres de toutes vos boîtes aux lettres.
 
@@ -372,7 +372,7 @@ Microsoft 365 audite et valide le chemin de purge des données. Pour plus d’in
 
 - [Considérations sur la planification de sortie d’O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-La purge de la PDV à charges multiples n’est pas prise en charge Microsoft 365 clé client. Le PD DEP à charges multiples est utilisé pour chiffrer des données sur plusieurs charges de travail entre tous les utilisateurs du client. La purge de ce type de PDN entraînerait l’in inaccessible des données provenant de plusieurs charges de travail. Si vous décidez de quitter Microsoft 365 services, vous pouvez suivre le chemin d’accès à la suppression du client selon le processus documenté. Découvrez [comment supprimer un client dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
+La purge de la PDV à charges multiples n’est pas prise en charge Microsoft 365 clé client. Le PD DEP à charges multiples est utilisé pour chiffrer des données sur plusieurs charges de travail pour tous les utilisateurs du client. La purge de ce type de PDN entraînerait l’in inaccessible des données provenant de plusieurs charges de travail. Si vous décidez de quitter Microsoft 365 services, vous pouvez suivre le chemin d’accès à la suppression du client selon le processus documenté. Découvrez [comment supprimer un client dans Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Révoquer vos clés client et la clé de disponibilité Exchange Online et Skype Entreprise
 
@@ -387,7 +387,7 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
 1. Supprimez les autorisations wrap et unwrap pour « O365 Exchange Online » des coffres de clés Azure.
 
-2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre [organisation, connectez-vous Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+2. À l’aide d’un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général dans votre organisation, connectez-vous [Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 3. Pour chaque PDE qui contient des boîtes aux lettres à supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](/powershell/module/exchange/set-dataencryptionpolicy) comme suit.
 
@@ -399,7 +399,7 @@ Pour lancer le chemin d’accès de la purge des données, effectuer les étapes
 
 4. Contactez le support Microsoft et demandez l’eDocument de purge des données.
 
-    À votre demande, Microsoft vous envoie un document juridique pour accusé de réception et autoriser la suppression des données. La personne de votre organisation qui s’est inscrite en tant qu’approuveur à l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisé à signer les formalités au nom de votre organisation.
+    À votre demande, Microsoft vous envoie un document juridique pour accusé de réception et autoriser la suppression des données. La personne de votre organisation qui s’est inscrite en tant qu’approuveur dans l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisé à signer les formalités au nom de votre organisation.
 
 5. Une fois que votre représentant a signé le document juridique, renvoyez-le à Microsoft (généralement via une signature eDoc).
 
@@ -415,7 +415,7 @@ Pour lancer le chemin d’accès de purge des données pour SharePoint Online, O
 
 2. Contactez Microsoft pour supprimer la clé de disponibilité.
 
-    Lorsque vous contactez Microsoft pour supprimer la clé de disponibilité, nous vous envoyons un document juridique. La personne de votre organisation qui s’est inscrite en tant qu’approuveur à l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisée à signer les formalités au nom de votre organisation.
+    Lorsque vous contactez Microsoft pour supprimer la clé de disponibilité, nous vous envoyons un document juridique. La personne de votre organisation qui s’est inscrite en tant qu’approuveur dans l’offre FastTrack lors de l’intégration doit signer ce document. Normalement, il s’agit d’un cadre supérieur ou d’une autre personne désignée de votre entreprise qui est légalement autorisée à signer les formalités au nom de votre organisation.
 
 3. Une fois que votre représentant signe le document juridique, renvoyez-le à Microsoft (généralement par le biais d’une signature eDoc).
 

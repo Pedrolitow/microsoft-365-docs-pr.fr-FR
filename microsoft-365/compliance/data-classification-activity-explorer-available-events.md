@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: liste des activités d’étiquetage disponibles dans l’Explorateur d’activités.
-ms.openlocfilehash: 163231d4d1e7c6a2d1b75c0f81a17443cfafe246
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ed1b207f4d0879185d757e2481cc3e8879293710
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176011"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173474"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Activités d’étiquetage disponibles dans l’Explorateur d’activités
 
@@ -79,7 +79,7 @@ Cet événement est généré chaque fois qu’une étiquette de niveau de sensi
 
 - Cet événement est capturé au moment de l’Office applications natives et web.
 - Elle est capturée au moment de l’occurrence dans les add-ins Azure Information Protection. 
-- L’étiquetage de la sensibilité, avec Office d’étiquette MIP native, sur Outlook collecte le dernier événement d’étiquetage qui a été généré avant les actions d’envoi d’e-mail/d’enregistrer un fichier.
+- L’étiquetage de la sensibilité, avec Office d’étiquette MIP native, sur Outlook collecte le dernier événement d’étiquetage généré avant les actions d’envoi d’e-mail/d’enregistrer un fichier.
 
 |Source  |Signalé dans l’Explorateur d’activités | Remarque  |
 |---------|---------|---------| 
@@ -109,7 +109,7 @@ Cet événement est généré chaque fois qu’un document protégé ou étiquet
 |Scanneur unifié AIP         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
 |MIP SDK         |oui         |l’action *d’accès* AIP est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités|
 |Service RMS         |oui         |*l’action d’accès* est mappée à l’action *de lecture de* fichier dans l’Explorateur d’activités |
-|Power BI bureau et Web         |Non         |accessibles dans les journaux Microsoft 365 audit |
+|Power BI bureau et Web         |Non         |accessible dans les journaux Microsoft 365 audit |
 |MCAS     |Non         |         |
 
 
@@ -124,8 +124,8 @@ Cet événement est généré chaque fois que des fichiers sont découverts lors
 |SharePoint En ligne, OneDrive         |non applicable         |
 |Exchange         |non applicable         |
 |Client unifié AIP         |non applicable       |
-|Scanneur unifié AIP         |oui         |l’action de *découverte* AIP est mappée sur les *fichiers détectés* dans l’Explorateur d’activités|
-|MIP SDK         |oui         |L’action de *découverte* AIP est mappée sur l’action *de fichier découverte* dans l’Explorateur d’activités|
+|Scanneur unifié AIP         |oui         |l’action de *découverte* AIP est mappée sur les *fichiers détectés* dans l’explorateur d’activités|
+|MIP SDK         |oui         |l’action de *découverte* AIP est mappée sur l’action *de fichier découverte* dans l’Explorateur d’activités|
 |Service RMS         |non applicable         |
 |Power BI bureau et Web         |non applicable         |
 |MCAS     |non applicable         |         |
@@ -227,7 +227,7 @@ Cet événement est généré chaque fois qu’une stratégie DLP est en corresp
 |SharePoint Online|oui          |
 |OneDrive |oui|
 |Teams |oui   |
-|Appareils Windows 10         |oui |
+|Appareils Windows 10         |oui |
 |MAC         |Non     |
 |local         |Non|
 |MCAS     |Non        | 
@@ -282,7 +282,7 @@ Cet événement est généré chaque fois qu’une étiquette est supprimée d�
 |OneDrive |oui|
 
 
-## <a name="known-issues"></a>Problèmes connus
+## <a name="known-issues"></a>Problèmes détectés
   
 - Lorsque l’info-conseil d’outil d’étiquette recommandée est affichée à un utilisateur final, elle n’est pas capturée. Toutefois, si l’utilisateur choisit d’appliquer l’étiquette recommandée, l’étiquette s’affiche sous le champ Comment *appliquer* comme *recommandé*  
 

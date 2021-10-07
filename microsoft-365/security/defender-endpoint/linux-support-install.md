@@ -3,15 +3,13 @@ title: Résoudre les problèmes d’installation de Microsoft Defender pour endp
 ms.reviewer: ''
 description: Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Linux
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8787a6bd5818eda5f5302fe149fd7b56db296abd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c90841ac9312fcc5f36ae9807ce757d9268b4cea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173090"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Linux
 
@@ -183,4 +181,4 @@ Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. 
     Diagnostic file created: <path to file>
     ```
 
-    Le chemin d’accès à un fichier zip qui contient les journaux s’affiche en tant que sortie. À l’aide de ces journaux, connectez-vous au support technique.
+    Le chemin d’accès à un fichier zip qui contient les journaux s’affiche en tant que sortie. Connectez-vous à notre support client à l’aide de ces journaux.

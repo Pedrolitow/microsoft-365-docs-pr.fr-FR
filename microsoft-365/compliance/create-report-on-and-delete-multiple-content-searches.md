@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu telles que la création de recherches et l’exécution de rapports à l’aide du Centre de sécurité & conformité PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fff69aac3ab30e0fe1ea60f9d097602a5390ba87
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 602997114c46a68be13182a504d0b123e98d2be2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182424"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172478"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -174,7 +174,7 @@ Pour exécuter le script :
 
 3. À **l’invite d’ID de** groupe de recherche, tapez un nom de groupe de recherche, puis appuyez sur **Entrée**; par exemple,  `ContosoCase` . N’oubliez pas que ce nom est sensible à la cas, vous devez donc le taper de la même manière dans les étapes suivantes.
 
-4. À **l’invite** de fichiers CSV source, tapez le nom du fichier CSV, y compris l’extension .csv fichier . par exemple,  `ContosoCase.csv` .
+4. À l’invite de fichiers **CSV source,** tapez le nom du fichier CSV, y compris l’extension .csv fichier . par exemple,  `ContosoCase.csv` .
 
 5. Appuyez **sur Entrée** pour poursuivre l’exécution du script.
 
@@ -258,7 +258,7 @@ Après avoir créé les recherches, l’étape suivante consiste à exécuter un
    ![Exécutez le rapport de recherche pour afficher les estimations du groupe de recherche.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
-> Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document est compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
+> Si le même site ou boîte aux lettres est spécifié en tant qu’emplacement de contenu dans plusieurs recherches dans un groupe de recherche, l’estimation des résultats totaux dans le rapport (pour le nombre d’éléments et la taille totale) peut inclure des résultats pour les mêmes éléments. Cela est dû au fait que le même message électronique ou document sera compté plusieurs fois s’il correspond à la requête pour différentes recherches dans le groupe de recherche.
 
 ## <a name="step-5-run-the-script-to-delete-the-searches"></a>Étape 5 : Exécuter le script pour supprimer les recherches
 

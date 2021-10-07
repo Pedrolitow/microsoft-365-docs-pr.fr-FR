@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les options de paramètres globaux pour la gestion de la confidentialité.
-ms.openlocfilehash: bd67dc80ab7dec2132bfffe190f64692f69076ed
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: e7bcbdc3054b69e320ce35d1df5e1e52501f5736
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401049"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175094"
 ---
 # <a name="manage-privacy-management-settings-preview"></a>Gérer les paramètres de gestion de la confidentialité (aperçu)
 
@@ -31,7 +31,7 @@ Les options de paramètres globaux pour la gestion de la confidentialité se tro
 
 Cette fonctionnalité vous permet d’afficher des versions rendues anonymes des noms d’utilisateur dans les fonctionnalités de gestion de la confidentialité aux utilisateurs de certains rôles. Il remplacera les noms complets identifiables par une étiquette générique afin de masquer les identités de vos utilisateurs lors de l’examen des données sensibles. Cette option ne s’applique pas au module de demande de droits de l’objet.
 
-## <a name="user-notification-emails"></a>E-mails de notification de l’utilisateur  
+## <a name="user-notification-emails"></a>Messages électroniques de notification de l’utilisateur  
 
 Les stratégies de gestion de la confidentialité vous permettent de définir des paramètres pour évaluer les risques potentiels en matière de confidentialité dans votre environnement. Lorsque nous détectons une correspondance de stratégie, la gestion de la confidentialité peut envoyer un courrier électronique à vos utilisateurs avec des mesures correctives à prendre et un lien vers une formation sur la confidentialité. Dans Paramètres, vous pouvez activer ou désactiver la fonctionnalité de notification par courrier électronique de la gestion de la confidentialité dans son ensemble. Vous pouvez activer des notifications individuelles, définir la fréquence des e-mails et spécifier une URL de formation lorsque vous créez ou modifiez une stratégie. Si la fonctionnalité de notification est désactivée Paramètres, toute configuration au niveau de la stratégie pour des messages de notification spécifiques est désactivée. Pour en savoir plus sur les stratégies, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
 

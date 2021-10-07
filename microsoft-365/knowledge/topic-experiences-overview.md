@@ -12,18 +12,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: medium
 description: Découvrez comment utiliser Rubriques Dans votre organisation.
-ms.openlocfilehash: 902628d53f651073b1d08ce3f1915808da22b03f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9b719c77a54271078bf2ee80f657352a84d9713b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181139"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173210"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Rubriques utilise la technologie Microsoft AI, Microsoft 365, Microsoft Graph, recherche et autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par SharePoint pages modernes, Recherche Microsoft et recherche dans Word, PowerPoint, Outlook et Excel.
+Rubriques utilise la technologie Microsoft AI, Microsoft 365, Microsoft Graph, recherche et autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par SharePoint pages modernes, Recherche Microsoft et Recherche dans Word, PowerPoint, Outlook et Excel.
 
 <br/>
 
@@ -42,7 +42,7 @@ Les rubriques sont affichées pour les utilisateurs via :
 - [Rubriques mises en surbrill SharePoint](topic-experiences-overview.md#sharepoint-highlights) pages
 - Réponses de rubrique dans les [résultats de recherche](topic-experiences-overview.md#search-results)
 - Recherche dans les [applications Office](topic-experiences-overview.md#office-application-search)
-- [Page d’accueil du centre](topic-experiences-overview.md#topic-center) des rubriques
+- [Page d’accueil du centre](topic-experiences-overview.md#topic-center) de rubriques
 
 ### <a name="sharepoint-highlights"></a>SharePoint points forts
 
@@ -52,7 +52,7 @@ Lorsqu’une rubrique est mentionnée dans du contenu sur des actualités et pag
 
 ### <a name="search-results"></a>Résultats de la recherche
 
-Vous pouvez [](search.md#topic-answer) voir une réponse à une rubrique dans les résultats de la recherche lorsque vous recherchez à partir de la page d’accueil de SharePoint, sur Office.com ou à partir d’un site SharePoint après avoir changé l’étendue de recherche pour inclure l’ensemble de l’organisation. La réponse à la rubrique apparaîtra dans la rubrique de la liste des résultats et vous donnera un court ensemble d’informations sur cette rubrique. 
+Vous pouvez [](search.md#topic-answer) voir une réponse à une rubrique dans les résultats de la recherche lorsque vous recherchez à partir de la page d’accueil de SharePoint, sur Office.com ou à partir d’un site SharePoint après avoir changé l’étendue de recherche pour inclure l’ensemble de l’organisation. La réponse à la rubrique apparaît dans la rubrique de la liste des résultats et vous donne un court ensemble d’informations relatives à cette rubrique. 
 
    ![Capture d’écran montrant les résultats de recherche d’SharePoint de site.](../media/knowledge-management/site-search-results.png) 
 

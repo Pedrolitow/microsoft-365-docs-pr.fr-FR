@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez l’option correcte pour la gestion des appareils et des applications pour vos Microsoft 365 client.
-ms.openlocfilehash: 1d96042f2733a69919fd0dbaa9f30be6835d6469
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 03126b373efcd3badb37590548c77889cb98391f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182880"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174158"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 5. Gestion des appareils et des applications pour vos Microsoft 365 d’entreprise
 
@@ -40,7 +40,7 @@ Si vous avez Microsoft 365 E3 ou E5, vous devez utiliser Intune.
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Vous [utilisez](/mem/intune/fundamentals/planning-guide) Microsoft Intune pour gérer l’accès à votre organisation à l’aide de la gestion des données de gestion des données (MDM) ou de MAM. La gestion des périphériques mobiles est le moment où les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré et peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
+Vous [utilisez](/mem/intune/fundamentals/planning-guide) Microsoft Intune pour gérer l’accès à votre organisation à l’aide de la gestion des données de gestion des données (MDM) ou de MAM. La gestion des périphériques mobiles est le cas lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois qu’un appareil est inscrit, il s’agit d’un appareil géré et peut recevoir les stratégies, règles et paramètres de votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, etc.
 
 Les utilisateurs ayant leurs propres appareils personnels peuvent ne pas vouloir inscrire leurs appareils ou être gérés par Intune et les stratégies de votre organisation. Toutefois, vous devez toujours protéger les ressources et les données de votre organisation. Dans ce scénario, vous pouvez protéger vos applications à l’aide de MAM. Par exemple, vous pouvez utiliser une stratégie MAM qui nécessite qu’un utilisateur entre un code confidentiel lors de l’accès SharePoint sur l’appareil.
 

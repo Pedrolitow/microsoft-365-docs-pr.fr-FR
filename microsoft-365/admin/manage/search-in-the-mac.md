@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser la fonctionnalité de recherche dans le Centre d’administration pour obtenir des résultats meilleurs et plus rapides.
-ms.openlocfilehash: c530d3e041800ef2e9b0c36169ec15366b9b3b1d
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 026fe9ed40f44f01a056cc7c6af281c5ce46c6c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786034"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171866"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Effectuer une recherche dans le Centre d’administration Microsoft 365
 
@@ -31,7 +31,7 @@ En tant qu’administrateur d’Microsoft 365 organisation, vous pouvez utiliser
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Capture d’écran : barre de recherche dans la Centre d'administration Microsoft 365":::
 
-Les résultats de la recherche sont organisés en différentes catégories. La plupart des catégories sont des éléments du Centre d’administration. Par exemple, les utilisateurs, les groupes, les boîtes aux lettres partagées ou les domaines. D’autres catégories indiquent les endroits où vous pouvez naviguer, les actions que vous pouvez prendre ou les paramètres de niveau application que vous pouvez modifier. Il existe également une catégorie liée à la documentation.
+Les résultats de la recherche sont organisés en différentes catégories. La plupart des catégories sont des éléments du Centre d’administration. Par exemple, les utilisateurs, les groupes, les boîtes aux lettres partagées ou les domaines. D’autres catégories indiquent les endroits où vous pouvez accéder, les actions que vous pouvez prendre ou les paramètres de niveau application que vous pouvez modifier. Il existe également une catégorie liée à la documentation.
 
 Les sections suivantes décrivent les différentes zones et catégories du Centre d’administration qui sont utilisables dans une recherche.
 
@@ -51,7 +51,7 @@ Si vous sélectionnez le menu à trois points (plus d’actions) à côté de le
 
 **Astuces pour améliorer les résultats de recherche des utilisateurs**
 
-- Assurez-vous d’épeler correctement les noms des utilisateurs car les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionneront, mais une faute d’orthographe, comme Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
+- Assurez-vous d’épeler correctement les noms des utilisateurs lorsque les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionneront, mais une faute d’orthographe, comme Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
 - Pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
 
 ## <a name="groups"></a>Groupes
@@ -78,7 +78,7 @@ Les résultats vous offrent la possibilité d’accéder rapidement à une page 
 
 ## <a name="settings"></a>Paramètres
 
-Recherchez les paramètres de niveau application pris en charge liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité.
+Recherchez les paramètres pris en charge au niveau de l’application liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité.
 
 :::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Capture d’écran : résultats de recherche affichant les paramètres dans le Centre d’administration":::
 

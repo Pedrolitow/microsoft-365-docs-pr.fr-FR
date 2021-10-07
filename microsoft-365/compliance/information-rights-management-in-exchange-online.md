@@ -9,23 +9,23 @@ ms.date: 12/13/2017
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer Exchange Online IRM pour utiliser le service AD RMS (Active Directory Rights Management Service) local afin de répondre aux exigences de votre organisation.
-ms.openlocfilehash: d98cf5c762cd4dac0cbad6d25a3cc766d5c5310a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 867293d5afa29242409cc92702ff8b505ed21196
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182248"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175154"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Chiffrement du courrier Exchange Online avec AD RMS
 
-Pour contribuer à la prévention des fuites d'informations, Exchange Online inclut des fonctionnalités de gestion des droits relatifs à l'information (IRM) qui offrent une protection en ligne et hors connexion des messages électroniques et des pièces jointes. Vous pouvez configurer Exchange Online IRM pour utiliser le service AD RMS (Active Directory Rights Management Service) local, si nécessaire, afin de répondre aux exigences de votre organisation. Cela n’est pas courant. Si vous n’avez pas besoin d’utiliser AD RMS, [chiffrement de messages Office 365](ome.md) à la place. 
+Pour contribuer à la prévention des fuites d'informations, Exchange Online inclut des fonctionnalités de gestion des droits relatifs à l'information (IRM) qui offrent une protection en ligne et hors connexion des messages électroniques et des pièces jointes. Vous pouvez configurer Exchange Online IRM pour utiliser le service AD RMS (Active Directory Rights Management Service) local, si nécessaire, afin de répondre aux exigences de votre organisation. Cela n’est pas courant. Si vous n’avez pas besoin d’utiliser AD RMS, chiffrement de messages Office 365 [à](ome.md) la place. 
 
 La protection IRM peut être appliquée par les utilisateurs dans Microsoft Outlook ou Outlook sur le web et par les administrateurs à l'aide de règles de protection du transport ou de règles de protection Outlook. L’IRM vous aide, ainsi que vos utilisateurs, à contrôler l’accès, le transfert, l’impression ou la copie de données sensibles dans un courrier électronique.
   

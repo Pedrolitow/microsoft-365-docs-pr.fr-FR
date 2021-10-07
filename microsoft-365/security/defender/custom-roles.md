@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 699d8c1d8ea7ac6928c96b6c98226ab82e0725fb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 95fa7c4821f28775c78175aa18a413b8cd1928e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174410"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Rôles personnalisés dans le contrôle d’accès basé sur les rôles pour Microsoft 365 Defender
 
@@ -37,11 +37,11 @@ ms.locfileid: "59204545"
 
 - Microsoft 365 Defender
  
-Deux types de rôles peuvent être utilisés pour accéder aux Microsoft 365 Defender :
+Il existe deux types de rôles qui peuvent être utilisés pour accéder aux Microsoft 365 Defender :
 - **Rôles Azure Active Directory (AD) globaux**
 - **Rôles personnalisés**
 
-L’accès aux Microsoft 365 Defender peut être géré collectivement à l’aide de [rôles globaux dans Azure Active Directory (AAD)](m365d-permissions.md)
+L’accès aux Microsoft 365 Defender peut être géré collectivement à l’aide de rôles globaux [dans Azure Active Directory (AAD)](m365d-permissions.md)
 
 Si vous avez besoin d’une plus grande flexibilité et d’un contrôle accru sur l’accès à des données de produit spécifiques, l’accès Microsoft 365 Defender peut également être géré avec la création de rôles personnalisés via chaque portail de sécurité respectif.  
 
@@ -62,7 +62,7 @@ Chaque rôle personnalisé créé via un portail individuel permet d’accéder 
 > Les autorisations et les rôles sont également accessibles via le portail Microsoft 365 Defender en sélectionnant Autorisations & rôles dans le volet de navigation. L’accès Microsoft Cloud App Security (MCAS) est géré via le portail MCAS et contrôle également l’accès à Microsoft Defender pour l’identité.  Voir [Microsoft Cloud App Security](/cloud-app-security/manage-admins)
 
 > [!NOTE]
-> Les rôles personnalisés créés Microsoft Cloud App Security ont également accès aux données Microsoft Defender for Identity. Les utilisateurs ayant des rôles d’administrateur de groupe d’utilisateurs ou d’administrateur d’Microsoft Cloud App Security d’application/d’instance ne peuvent pas accéder Microsoft Cloud App Security données par le biais Microsoft 365 Defender portail.
+> Les rôles personnalisés créés Microsoft Cloud App Security ont également accès aux données Microsoft Defender for Identity. Les utilisateurs ayant des rôles d’administrateur de groupe d’utilisateurs ou d’administrateur d’Microsoft Cloud App Security d’application/d’instance ne peuvent pas accéder aux Microsoft Cloud App Security via le portail Microsoft 365 Defender utilisateur.
 
 ## <a name="manage-permissions-and-roles-in-the-microsoft-365-defender-portal"></a>Gérer les autorisations et les rôles dans le portail Microsoft 365 Defender web
 Les autorisations et les rôles peuvent également être gérés dans Microsoft 365 Defender portail :
@@ -72,7 +72,7 @@ Les autorisations et les rôles peuvent également être gérés dans Microsoft 
 3. Sous **l’en-tête Autorisations,** sélectionnez **Rôles.**
 
 > [!NOTE]
-> Cela s’applique uniquement à Defender pour Office 365 et Defender pour point de terminaison. L’accès aux autres charges de travail doit être effectué dans leurs portails appropriés.
+> Cela s’applique uniquement à Defender pour Office 365 et Defender pour le point de terminaison. L’accès aux autres charges de travail doit être effectué dans leurs portails appropriés.
 
 
 ## <a name="required-roles-and-permissions"></a>Rôles et des autorisations requis
@@ -88,7 +88,7 @@ Le tableau suivant décrit les rôles et autorisations requis pour accéder à c
 | Gestion des alertes et des incidents | Examen des alertes | <ul><li>Gérer des alertes</li> <li>Administrateur de la sécurité</li> | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li></ul> |
 | Correction du centre de mise à jour | Actions de correction actives : opérations de sécurité | Rechercher et purger | |
 | Définition de détections personnalisées | Gérer les paramètres de sécurité |<ul><li>Gérer des alertes</li> <li>Administrateur de la sécurité</li></ul> | <ul><li>Administrateur global</li> <li>Administrateur de la sécurité</li> <li>Administrateur de mise en conformité</li> <li>Opérateur de sécurité</li> <li>Lecteur Sécurité</li> <li>Lecteur général</li></ul> |
-| Analyses de menaces | Données d’alertes et d’incidents : <ul><li>Afficher les opérations de sécurité des données</li></ul>Atténuations TVM :<ul><li>Afficher les données : menaces et gestion des vulnérabilités</li></ul> | Données d’alertes et d’incidents :<ul> <li>Gérer les alertes en affichage seul</li> <li>Gérer des alertes</li> <li>Configuration de l'organisation</li><li>Journaux d'audit</li> <li>Afficher uniquement les journaux d’audit</li><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> </ul> Tentatives de courrier électronique empêchées : <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> | Non disponible pour les utilisateurs MCAS ou MDI |
+| Analyses de menaces | Données sur les alertes et les incidents : <ul><li>Afficher les opérations de sécurité des données</li></ul>Atténuations TVM :<ul><li>Afficher les données : menaces et gestion des vulnérabilités</li></ul> | Données sur les alertes et les incidents :<ul> <li>Gérer les alertes en affichage seul</li> <li>Gérer des alertes</li> <li>Configuration de l'organisation</li><li>Journaux d'audit</li> <li>Afficher uniquement les journaux d’audit</li><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> </ul> Tentatives de courrier électronique empêchées : <ul><li>Lecteur Sécurité</li> <li>Administrateur de la sécurité</li><li>Destinataires en affichage seul</li> | Non disponible pour les utilisateurs MCAS ou MDI |
 
 Par exemple, pour afficher les données de recherche à partir de Microsoft Defender pour le point de terminaison, les autorisations d’opérations de sécurité des données sont requises.  
 

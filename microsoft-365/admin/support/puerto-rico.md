@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 396611563f40fb52ddd58f0c6f99af9e25c97c1c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81816d39b6c4ef9274c4482c0544c9a9cf94bdd7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182687"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175790"
 ---
 # <a name="contact-support-for-puerto-rico"></a>Contacter le support de Porto Rico
 

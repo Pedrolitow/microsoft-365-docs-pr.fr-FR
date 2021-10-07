@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ebd301d6c79bf5286d9293e04e4073b99d1e35
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48dda6faf9d0cfc5b301a766dd07f8cb4e15d394
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202961"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174554"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,7 +39,7 @@ Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapi
 
 Cette fonction renvoie un tableau avec les colonnes suivantes :
 
-| Colonne | Type de données | Description |
+| Column | Type de données | Description |
 |------------|-------------|-------------|
 | `Timestamp` | DateHeure | Heure de la dernière observation de l’appareil à l’aide de l’adresse IP |
 | `IPAddress` | string | Adresse IP utilisée par l’appareil |
@@ -58,7 +58,7 @@ AssignedIPAddresses(x, y)
 - **x** ou `DeviceId` valeur identifiant `DeviceName` l’appareil
 - **y**— valeur (date/heure) qui indique à la fonction d’obtenir les adresses IP attribuées les plus `Timestamp` récentes à partir d’une heure spécifique. Si elle n’est pas spécifiée, la fonction renvoie les dernières adresses IP.
 
-## <a name="examples"></a>範例
+## <a name="examples"></a>Exemples
 
 ### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>Obtenir la liste des adresses IP utilisées par un appareil il y a 24 heures
 

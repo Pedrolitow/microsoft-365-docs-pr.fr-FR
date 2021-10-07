@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de Veritas Contrôle dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 4a02843315e6bd40bf650f5e5162c330519d4fbb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données de Veritas Contrôley dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
+ms.openlocfilehash: 78a14a91c6c77be6cc738674107c0a2a4c7ee768
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180035"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172502"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>Configurer un connecteur pour archiver les données de la bibliothèque
 
-Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à des boîtes aux lettres utilisateur dans Microsoft 365 organisation. Il s’agit d’une plateforme de messagerie et de collaboration utilisée dans le secteur des services financiers. Veritas fournit un connecteur de données [à la](https://globanet.com/symphony) Centre de conformité Microsoft 365 que vous pouvez configurer pour capturer des éléments à partir de la source de données tierces (régulièrement), puis importer ces éléments dans les boîtes aux lettres des utilisateurs. Le connecteur convertit le contenu d’un élément du compte DeLyy au format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à des boîtes aux lettres utilisateur dans Microsoft 365 organisation. Il s’agit d’une plateforme de messagerie et de collaboration utilisée dans le secteur des services financiers. Veritas fournit un connecteur de données [de Typey](https://globanet.com/symphony) dans le Centre de conformité Microsoft 365 que vous pouvez configurer pour capturer des éléments à partir de la source de données tierces (régulièrement), puis importer ces éléments dans les boîtes aux lettres des utilisateurs. Le connecteur convertit le contenu d’un élément du compte DeLyy au format de message électronique, puis importe l’élément dans une boîte aux lettres dans Microsoft 365.
 
 Une fois les communications stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -33,9 +33,9 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation collabore avec Elle pour configurer et configurer un site à Lasy.
 
-2. Une fois toutes les 24 heures, les messages de conversation de Lassy sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu d’un message de conversation au format de message électronique.
+2. Une fois toutes les 24 heures, les messages de conversation de Cette ville sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu d’un message de conversation au format de message électronique.
 
-3. Le connecteur Derme que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier Boîte de réception nommé **Dossier** de réception est créé dans les boîtes aux lettres de l’utilisateur et les éléments de message sont importés dans ce dossier. Le connecteur détermine la boîte aux lettres dans laquelle importer des éléments à l’aide de la valeur de la *propriété Email.* Chaque message de conversation contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant.
 
@@ -47,7 +47,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ## <a name="step-1-set-up-the-symphony-connector"></a>Étape 1 : Configurer le connecteur De marche à pas
 
-La première étape consiste à accéder à la page **Connecteurs** de données dans la Centre de conformité Microsoft 365 et à créer un connecteur pour les données de Typey.
+La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données de Typey.
 
 1. Allez sur Connecteurs de données, [https://compliance.microsoft.com](https://compliance.microsoft.com/) puis cliquez **sur**  >  **Connecteurs de données.**
 
@@ -69,7 +69,7 @@ Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’ut
 
 Pour maîtr les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, suivez les étapes suivantes :
 
-1. Dans la page **Ma mappage des utilisateurs externes Microsoft 365 utilisateurs,** activez le mappage automatique des utilisateurs. Les éléments de Lassy incluent une propriété appelée *Email*, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Ma mappage des utilisateurs externes Microsoft 365 utilisateurs,** activez le mappage automatique des utilisateurs. Les éléments de Propriété incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres, puis allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 

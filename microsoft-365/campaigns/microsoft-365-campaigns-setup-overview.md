@@ -9,7 +9,7 @@ ms.date: 9/20/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Vue d’ensemble du programme d Microsoft 365 Business Premium pour les campagnes ou d’autres entreprises
-ms.openlocfilehash: 41d3f0829829233c70e091f27225f7756a0e4f46
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 272f4728214feaf3868b6861cdf990ea87442fad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173822"
 ---
 # <a name="set-up-microsoft-365"></a>Configurer Microsoft 365
 
@@ -50,7 +50,7 @@ Pour toutes les organisations, augmentez la protection de la sécurité en [prot
 
 ## <a name="everyone-set-up-your-devices"></a>Tout le monde : configurer vos appareils
 
-Les utilisateurs devront prendre quelques minutes pour configurer les appareils afin qu’ils fonctionnent avec cet environnement. Pour vos utilisateurs clés (ceux qui sont les cibles les plus importantes pour les pirates informatiques), vous pouvez configurer et pré-configurer de nouveaux appareils. Cela leur permet de commencer lorsqu’ils se connectent avec leurs informations d Microsoft 365 de connexion.
+Les utilisateurs devront prendre quelques minutes pour configurer les appareils afin qu’ils fonctionnent avec cet environnement. Pour vos utilisateurs clés (ceux qui sont les cibles les plus importantes pour les pirates informatiques), vous pouvez configurer et pré-configurer de nouveaux appareils. Cela leur permet de commencer lorsqu’ils se connectent avec leurs informations d’Microsoft 365 de connexion.
 
 ![Processus de configuration de l’appareil utilisateur.](../media/m365-democracy-user-device-setup.png)
   
@@ -59,7 +59,7 @@ Pour configurer des appareils utilisateur :
 1. Chaque utilisateur [définit ses appareils mobiles.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
 2. Pour les appareils non utilisés, les utilisateurs peuvent configurer leurs [PC et Mac.](m365-campaigns-protect-pcs-macs.md)
 Pour le personnel clé, nous vous recommandons d’utiliser des [appareils gérés](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) pour une meilleure protection. Pour tous les appareils, vous devez configurer l’authentification [multifacteur.](m365-campaigns-multifactor-authenication.md)
-3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en découvrir le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut](m365-campaigns-protect-campaign-infographic.md) également aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
+3. Tous les utilisateurs doivent apprendre à se protéger eux-mêmes et à votre campagne en en savoir plus sur le [hameçonnage et d’autres attaques.](m365-campaigns-phishing-and-attacks.md) Cette [infographie peut](m365-campaigns-protect-campaign-infographic.md) également aider vos utilisateurs à comprendre comment protéger votre campagne contre les menaces en ligne.
 
 ## <a name="contact-support"></a>Contacter l’assistance
 

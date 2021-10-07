@@ -9,35 +9,35 @@ ms.date: 10/12/2018
 audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Last Updated: May 2017'
-ms.openlocfilehash: ac7bc50b621930244e7e549c27489436c4bbf6a19302c3cd16310d9f69108b1b
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: b881c1e73955ee83f49f8f326f1a184cced46a1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53895294"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172262"
 ---
 # <a name="privacy-statement-for-secure-email-portal"></a>Déclaration de confidentialité pour le portail de messagerie sécurisé
 
 Last Updated: May 2017
   
-Cette déclaration de confidentialité régit le Office 365 portail des nouvelles fonctionnalités OME (le « nouveau portail des fonctionnalités OME »). Les versions précédentes étaient appelées chiffrement de messages Office 365 (OME) et « portail OME ». Cette déclaration de confidentialité ne s’applique pas à d’autres sites, produits ou services Microsoft en ligne ou hors connexion. D’autres déclarations de confidentialité peuvent également s’appliquer aux données que vous traiterez via le nouveau portail de fonctionnalités OME, telles que la déclaration de confidentialité du compte Microsoft (si elle est utilisée pour l’authentification) ou la déclaration de confidentialité associée à votre appareil.
+Cette déclaration de confidentialité régit le Office 365 portail des nouvelles fonctionnalités OME (le « nouveau portail de fonctionnalités OME »). Les versions précédentes étaient appelées chiffrement de messages Office 365 (OME) et « portail OME ». Cette déclaration de confidentialité ne s’applique pas à d’autres sites, produits ou services Microsoft en ligne ou hors connexion. D’autres déclarations de confidentialité peuvent également s’appliquer aux données que vous traiterez via le nouveau portail de fonctionnalités OME, telles que la déclaration de confidentialité du compte Microsoft (si elle est utilisée pour l’authentification) ou la déclaration de confidentialité associée à votre appareil.
   
 ## <a name="collection-processing-and-use-of-your-information"></a>Collecte, traitement et utilisation de vos informations
 
 Le nouveau portail de fonctionnalités OME vous permet d’afficher les messages électroniques chiffrés avec Office 365 à partir de divers points de terminaux, tels que des ordinateurs de bureau ou des appareils mobiles. Le courrier électronique chiffré arrive dans votre boîte aux lettres sous forme de pièce jointe HTML à un courrier électronique normal. Si le courrier est envoyé à votre compte Microsoft, à votre compte scolaire ou scolaire ou à votre compte Gmail, vous serez invité à vous connectez au nouveau portail de fonctionnalités OME basé sur le web avec ce compte. Si le courrier chiffré est envoyé à un compte autre que le compte Microsoft, le compte scolaire ou scolaire ou un compte Gmail, vous serez invité à créer un compte Microsoft et à l’associer au compte auquel le message chiffré a été envoyé . vous pouvez également choisir de demander un code secret unique pour l’authentification qui sera envoyé à la même adresse de messagerie à laquelle le message chiffré a été envoyé. Une fois l’authentification réussie, le message est déchiffré et affiché via le nouveau portail de fonctionnalités OME.
   
-Vos informations d’identification sur le compte Microsoft, le compte scolaire ou scolaire ou le compte Gmail, ainsi que le code secret à usage unique, seront utilisées uniquement à des fins d’authentification . il ne sera pas stocké dans le nouveau portail des fonctionnalités OME, ni utilisé par les nouvelles fonctionnalités OME à d’autres fins.
+Vos informations d’identification sur le compte Microsoft, le compte scolaire ou scolaire ou le compte Gmail, ainsi que le code secret à usage unique, seront utilisées uniquement à des fins d’authentification . Il ne sera pas stocké dans le nouveau portail de fonctionnalités OME, ni utilisé par les nouvelles fonctionnalités OME à d’autres fins.
   
 Pendant le processus de déchiffrement, le courrier chiffré que vous recevez ne sera pas stocké par le nouveau portail de fonctionnalités OME . Il ne sera pas transmis en dehors du portail des nouvelles fonctionnalités OME à tout moment.
   
-Le nouveau portail des fonctionnalités OME peut, dans certains cas, collecter des points de données sur l’utilisation et les performances des nouvelles fonctionnalités OME (par exemple, la fréquence d’affichage des messages chiffrés, l’utilisation du navigateur ou de l’application et les éventuelles erreurs rencontrées), qui peuvent être analysées de manière agrégée pour améliorer la qualité, la sécurité et l’intégrité de cette fonctionnalité et d’autres applications Microsoft. , produits ou services. Ces informations ne sont pas utilisées pour vous identifier, contacter ou cibler des publicités.
+Le nouveau portail des fonctionnalités OME peut, dans certains cas, collecter des points de données sur l’utilisation et les performances des nouvelles fonctionnalités OME (par exemple, la fréquence d’affichage des messages chiffrés, l’utilisation du navigateur ou de l’application et les erreurs rencontrées), qui peuvent être analysées de manière agrégée pour améliorer la qualité, la sécurité et l’intégrité de cette application et d’autres applications Microsoft,  produits ou services. Ces informations ne sont pas utilisées pour vous identifier, contacter ou cibler des publicités.
   
 ## <a name="for-more-information"></a>Informations supplémentaires
 

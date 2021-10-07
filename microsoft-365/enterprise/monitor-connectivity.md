@@ -7,7 +7,7 @@ ms.date: 8/4/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Dans cet article, vous allez découvrir les outils et techniques que vous pouvez utiliser pour surveiller et maintenir Microsoft 365 connectivité.
-ms.openlocfilehash: d6e93f4669bb14736d78a30ece095623edb67136
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 783278ad69fbe47afd6ea85fdb70c8bb0057005c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203316"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173258"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Surveiller la connectivité Microsoft 365
 
@@ -35,7 +35,7 @@ Une fois que vous avez déployé Microsoft 365, vous pouvez maintenir Microsoft 
 
 |Type de surveillance |Description |
 |:-----|:-----|
-|**Recevoir des notifications de nouveaux points Microsoft 365 de terminaison** <br/> |Si vous gérez des points de terminaison [Microsoft 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), vous souhaiterez recevoir des notifications lorsque nous publions de nouveaux points de terminaison, vous pouvez vous abonner à notre flux RSS à l’aide de votre lecteur RSS favori. Voici comment vous abonner [via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) ou vous pouvez recevoir les mises à jour de flux RSS par [courrier électronique.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
+|**Recevoir des notifications de nouveaux points Microsoft 365 de terminaison** <br/> |Si vous gérez des points de terminaison [Microsoft 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), vous souhaiterez recevoir des notifications lorsque nous publions de nouveaux points de terminaison, vous pouvez vous abonner à notre flux RSS à l’aide de votre lecteur RSS favori. Voici comment vous abonner [via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) ou les mises à jour de flux RSS peuvent vous [être envoyés par courrier électronique.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
 |**Utiliser System Center pour surveiller les Microsoft 365** <br/> |Si vous utilisez Microsoft System Center, vous pouvez télécharger le pack d’administration [Microsoft System Center Operations Manager](https://www.microsoft.com/download/details.aspx?id=103379) pour Microsoft 365 commencer la surveillance Microsoft 365 aujourd’hui. Pour obtenir des instructions plus détaillées, consultez le guide des opérations du pack d’administration. <br/> |
 |**Surveiller l’état d’Azure ExpressRoute** <br/> |Si vous vous connectez à Microsoft 365 à l’aide d’Azure ExpressRoute pour Microsoft 365, vous devez vous assurer que vous utilisez à la fois le tableau de bord d’état du service Microsoft 365 et Azure Réduisant le temps de dépannage avec l’état des ressources [Azure](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**Utiliser Azure AD Connect Health avec AD FS** <br/> |Si vous utilisez AD FS pour Sign-On unique avec Microsoft 365, vous pouvez commencer à utiliser Azure AD Connecter Health pour surveiller votre [infrastructure AD FS.](/azure/active-directory/hybrid/how-to-connect-health-adfs)  <br/> |

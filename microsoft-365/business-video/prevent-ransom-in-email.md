@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer des règles de messagerie pour empêcher les ransomware.
-ms.openlocfilehash: 96822916753f2f70d481c213e7e31046f7081446
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f76d9883ef2d22803867da267f48760ec8894f99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181720"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172742"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>Créer des règles de messagerie pour empêcher les ransomware
 
@@ -36,7 +36,7 @@ Microsoft 365 protéger votre entreprise contre les ransomware en empêchant l�
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le Centre d’administration, choisissez [https://admin.microsoft.com](https://admin.microsoft.com) **Exchange** sous **Centres d’administration.**
+1. Dans le Centre d’administration, [https://admin.microsoft.com](https://admin.microsoft.com) **sélectionnez Exchange** sous **Centres d’administration.**
 1. Dans le menu de gauche, choisissez **flux de messagerie.**
 1. Sous l’onglet Règles, sélectionnez la flèche en haut du symbole plus (+), puis choisissez Créer **une règle.**
 1. Dans la **page nouvelle règle,** entrez un nom pour votre règle, faites défiler vers le bas, puis choisissez **Plus d’options.**

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
@@ -17,12 +17,12 @@ ms.collection:
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9bed3c24fee91d746957a6418e5f5ea61babef6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2894d565a08cf500199b123a0acd738de129faf0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177355"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174182"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients qui envoient des messages Microsoft 365
 
@@ -67,4 +67,4 @@ Il s’agit d’un portail en libre-service que vous pouvez utiliser pour vous s
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online
 
-Parfois, Microsoft 365 est utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d’utilisation et de notre stratégie. Si vous recevez un courrier indésirable de Office 365, vous pouvez signaler ces messages à Microsoft. Pour obtenir des instructions, [reportez-vous aux messages et fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md)
+Parfois, Microsoft 365 est utilisé par des tiers pour envoyer du courrier indésirable, en violation de nos conditions d’utilisation et de notre stratégie. Si vous recevez un courrier indésirable de Office 365, vous pouvez signaler ces messages à Microsoft. Pour obtenir des instructions, [reportez-vous aux messages et fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)

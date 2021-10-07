@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la collaboration de contenu : les utilisateurs peuvent obtenir un score de productivité.'
-ms.openlocfilehash: 82c4cf84301e820816067d5b6e286851eb8e9fbd
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3295c614383c48302d4737223b880a754ddf3b1c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776511"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171734"
 ---
 # <a name="content-collaboration--people-experiences"></a>Collaboration de contenu : expériences de personnes
 
@@ -35,7 +36,7 @@ Pour commencer à obtenir des informations sur la collaboration de contenu, les 
 
 - OneDrive Entreprise
 - SharePoint
-- Exchange Online
+- Exchange Online
 
 Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
 
@@ -47,14 +48,14 @@ Un aspect clé de la transformation numérique est la façon dont les personnes 
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Calcul du score de collaboration de contenu
 
-Nous fournissons un aperçu principal qui contient les mesures clés pour la collaboration de contenu dans votre organisation. Ensuite, une infrastructure de notation détaillée ci-dessous est utilisée pour calculer le score de votre organisation.
+Nous fournissons un aperçu principal qui contient les mesures clés pour la collaboration de contenu dans votre organisation. Ensuite, une infrastructure de notation détaillée ci-dessous est utilisée pour ces mesures afin de calculer le score de votre organisation.
 
 > [!NOTE]
-> Le 22 avril 2021, nous avons modifié le calcul de la mesure collaborateurs. Cela affecte l’aperçu [principal,](#primary-insight)l’aperçu [de la collaboration](#number-of-files-collaborated-on)sur les fichiers et la façon dont le score de collaboration de contenu est mesuré. Cette modification permet de réduire le bruit dans les données provenant d’agents non humains (ou bots) de Microsoft et d’autres applications tierces, ce qui permet d’obtenir un score plus précis et plus actionnable.
+> Le 22 avril 2021, nous avons modifié le calcul de la mesure collaborateurs. Cela affecte les informations [principales,](#primary-insight)l’aperçu [de la collaboration](#number-of-files-collaborated-on)sur les fichiers et la façon dont le score de collaboration de contenu est mesuré. Cette modification permet de réduire le bruit dans les données provenant d’agents non humains (ou bots) de Microsoft et d’autres applications tierces, ce qui permet d’obtenir un score plus précis et plus actionnable.
 
 ### <a name="primary-insight"></a>Informations principales
 
-Microsoft OneDrive entreprise et SharePoint aider les utilisateurs à créer, lire et découvrir facilement leur contenu individuel et partagé dans Microsoft 365 sur différents appareils et applications. Ils permettent également aux utilisateurs de partager et de collaborer en toute sécurité sur du contenu. Les informations principales contiennent des informations de toutes les personnes qui peuvent OneDrive Entreprise et SharePoint. En outre, il décompose les détails sur le nombre de personnes qui lisent, créent et collaborent sur le contenu stocké dans OneDrive Entreprise et SharePoint.
+Microsoft OneDrive entreprise et SharePoint aider les utilisateurs à créer, lire et découvrir facilement leur contenu individuel et partagé dans Microsoft 365 sur différents appareils et applications. Ils permettent également aux utilisateurs de partager et de collaborer en toute sécurité sur du contenu. Le principal aperçu contient des informations de toutes les personnes qui peuvent utiliser OneDrive Entreprise et SharePoint. En outre, il décompose les détails sur le nombre de personnes qui lisent, créent et collaborent sur le contenu stocké dans OneDrive Entreprise et SharePoint.
 
 :::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Informations principales du score de collaboration sur les communications.":::
 
@@ -93,7 +94,7 @@ Les types pris en compte pour ces informations incluent les fichiers Word, Excel
 
 #### <a name="trend-visualization-of-primary-insight"></a>Visualisation de la tendance de l’aperçu principal
 
-Le graphique des visualisations de tendance présente la courbe de tendance des principales mesures clés d’informations pour les lecteurs, les créateurs et les collaborateurs au cours des 180 derniers jours. Chaque point de données du graphique est un agrégat de l’activité des 28 derniers jours. Chaque point de données créateur fournit un décompte de toutes les personnes qui ont été marquées comme créateurs au cours des 28 derniers jours pour chaque date sur l’axe x.
+Le graphique des visualisations de tendance affiche la courbe de tendance des principales mesures clés d’informations pour les lecteurs, les créateurs et les collaborateurs au cours des 180 derniers jours. Chaque point de données du graphique est un agrégat de l’activité des 28 derniers jours. Chaque point de données créateur fournit un décompte de toutes les personnes qui ont été marquées comme créateurs au cours des 28 derniers jours pour chaque date sur l’axe x.
 
 :::image type="content" source="../../media/trendvisualization.jpg" alt-text="Graphique avec tendances pour l’aperçu principal de la collaboration.":::
 
@@ -146,11 +147,11 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
 
 1. **En-tête :** Met en évidence le pourcentage de personnes qui ont accès OneDrive ou SharePoint partagent des fichiers en externe.
 2. **Corps :** Fournit des informations sur les administrateurs&#39; la possibilité de modifier les paramètres de partage de fichiers dans l’organisation afin d’activer le niveau de collaboration le mieux adapté à votre organisation.
-3. **Visualisation :** Représente la mesure dans laquelle les personnes qui ont accès à OneDrive ou SharePoint partagent des fichiers en interne ou en externe :
-      - **En externe :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en externe.
+3. **Visualisation :** Représente la mesure dans laquelle les personnes qui ont accès OneDrive ou SharePoint partagent des fichiers en interne ou en externe :
+      - **En externe :** La partie bleue (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en externe.
         -  Numérateur : nombre de personnes avec qui des fichiers ont été partagés en externe au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
-      - **En interne uniquement :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes ayant accès à OneDrive ou SharePoint et qui partagent des fichiers en interne uniquement.
+      - **En interne uniquement :** La partie bleue (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en interne uniquement.
         - Numérateur : nombre de personnes qui ont partagé des fichiers en interne uniquement au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
 4. **Lien vers des ressources :** Sélectionnez ce lien pour afficher le contenu de l’aide.
@@ -161,7 +162,7 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
 
 1. **En-tête :** Met en évidence le pourcentage de personnes qui ont accès OneDrive ou SharePoint qui collaborent sur 4 fichiers ou plus.
 2. **Corps :** Fournit des informations sur la façon dont les personnes peuvent tirer parti des fichiers en ligne pour une meilleure collaboration.
-3. **Visualisation :** Indique une distribution des personnes qui ont accès à OneDrive ou SharePoint, en fonction du nombre de fichiers sur qui elles collaborent. Cela s’affiche dans les 4 catégories suivantes (pour chacune, la partie bleue de la barre et la fraction représentent le pourcentage de personnes ayant accès à des OneDrive ou des SharePoint qui font partie de cette catégorie) :
+3. **Visualisation :** Affiche une distribution des personnes qui ont accès à OneDrive ou SharePoint, en fonction du nombre de fichiers sur qui elles collaborent. Cela s’affiche dans les 4 catégories suivantes (pour chacune, la partie bleue de la barre et la fraction représentent le pourcentage de personnes ayant accès à des OneDrive ou des SharePoint qui font partie de cette catégorie) :
       - **Aucune collaboration :**
         - Numérateur : nombre de personnes qui ne collaborent sur aucun fichier au cours des 28 derniers jours.
         - Dénominateur : nombre total de personnes ayant accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
@@ -190,7 +191,7 @@ Nous vous fournissons également des informations qui vous aident à gagner en v
       - **21-40**: la partie rouge (colorée) de la barre représente le pourcentage d’appareils avec un score de performances réseau entre 20 et 40. 
       - **0-20**: la partie rouge foncé (couleur) de la barre représente le pourcentage d’appareils avec le pire score de performances réseau entre 0 et 20. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\

@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: bcarter
 author: brendacarter
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6b4efbcb1a137faf6311ba1247405a389fdcbe4a
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: cf89504e175c0711d7b5bf164c7fbb8e8b439494
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042938"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174422"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-cloud-app-security"></a>Passer en revue les exigences en matière d’architecture et les concepts clés pour Microsoft Cloud App Security
 
@@ -41,7 +41,7 @@ Avant d’Microsoft Cloud App Security, veillez à bien comprendre l’architect
 
 ## <a name="understand-the-architecture"></a>Comprendre l’architecture
 
-Microsoft Cloud App Security est un courtier de sécurité d’accès cloud (CASB). Les CSB agissent comme un garde d’accès pour négocier l’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent. Microsoft Cloud App Security s’intègre en natif aux fonctionnalités de sécurité Microsoft, notamment Microsoft 365 Defender. 
+Microsoft Cloud App Security est un courtier de sécurité d’accès au cloud (CASB). Les CSB agissent comme un garde d’accès pour négocier l’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent. Microsoft Cloud App Security s’intègre en natif aux fonctionnalités de sécurité Microsoft, notamment Microsoft 365 Defender. 
 
 Sans Sécurité des applications cloud, les applications cloud utilisées par votre organisation ne sont pas gestion et ne sont pas protégées, comme illustré.
 
@@ -65,7 +65,7 @@ Dans cette illustration, deux méthodes permettent de surveiller le trafic rése
 
 Après avoir découvert les applications cloud et analysé le comportement de leur utilisation par votre organisation, vous pouvez commencer à gérer les applications cloud de votre choix. 
 
-![Architecture pour Microsoft Cloud App Security - Gestion des applications cloud.](../../media/defender/m365-defender-mcas-architecture-c.png)
+![Architecture pour Microsoft Cloud App Security : gestion des applications cloud.](../../media/defender/m365-defender-mcas-architecture-c.png)
 
 Dans cette illustration :
 - Certaines applications sont sanctionn es pour une utilisation. Il s’agit d’un moyen simple de commencer à gérer les applications.
@@ -74,7 +74,7 @@ Dans cette illustration :
 
 #### <a name="applying-session-controls-to-cloud-apps"></a>Application de contrôles de session aux applications cloud
 
-Microsoft Cloud App Security sert de proxy inverse, fournissant un accès proxy aux applications cloud sanctionnées. Cela permet aux Sécurité des applications cloud d’appliquer les contrôles de session que vous configurez. 
+Microsoft Cloud App Security sert de proxy inverse, fournissant un accès proxy aux applications cloud sanctionnées. Cela permet Sécurité des applications cloud appliquer les contrôles de session que vous configurez. 
 
 ![Architecture pour Microsoft Cloud App Security : contrôle de session d’accès proxy.](../../media/defender/m365-defender-mcas-architecture-d.png)
 
@@ -118,7 +118,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 | Sécurité des applications cloud Tableau de bord | Présente une vue d’ensemble des informations les plus importantes concernant votre organisation et fournit des liens vers des recherches plus approfondies.        | [Travailler avec le tableau de bord ](/cloud-app-security/daily-activities-to-protect-your-cloud-environment)       |
 | Contrôle d’application d’accès conditionnel    | Architecture de proxy inverse qui s’intègre à votre fournisseur d’identité (IdP) pour fournir des stratégies d’accès conditionnel Azure AD et appliquer de manière sélective les contrôles de session.        |  [Protéger les applications avec Microsoft Cloud App Security contrôle d’application d’accès conditionnel](/cloud-app-security/proxy-intro-aad)       |
 |  Catalogue d’applications cloud   | Le catalogue d’applications cloud vous donne une vue d’ensemble du catalogue Microsoft de plus de 16 000 applications cloud classées et classées en fonction de plus de 80 facteurs de risque.    |  [Travailler avec les scores de risque de l’application](/cloud-app-security/risk-score)       |
-| Tableau de bord de découverte cloud    | La découverte dans le cloud analyse vos journaux de trafic et est conçue pour fournir plus d’informations sur la façon dont les applications cloud sont utilisées dans votre organisation, ainsi que pour fournir des alertes et des niveaux de risque.     |  [Travailler avec des applications découvertes   ](/cloud-app-security/discovered-apps)    |
+| Tableau de bord de découverte cloud    | La découverte cloud analyse vos journaux de trafic et est conçue pour fournir plus d’informations sur la façon dont les applications cloud sont utilisées dans votre organisation, ainsi que pour fournir des alertes et des niveaux de risque.     |  [Travailler avec des applications découvertes   ](/cloud-app-security/discovered-apps)    |
 |Applications connectées |Sécurité des applications cloud offre une protection de bout en bout pour les applications connectées à l’aide de l’intégration cloud à cloud, des connecteurs d’API, ainsi que des contrôles d’accès et de session en temps réel tirant parti de nos contrôles d’accès aux applications conditionnelles. |[Protection des applications connectées](/cloud-app-security/protect-connected-apps) |
 | | | |
 
@@ -128,7 +128,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 
 Pour découvrir les applications cloud utilisées dans votre environnement, vous pouvez :
 
-- Préparez-vous rapidement avec la découverte cloud en intégrant Microsoft Defender pour Endpoint. Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud sur vos appareils Windows 11 et Windows 10, sur et hors de votre réseau.
+- Préparez-vous rapidement à la découverte cloud en intégrant Microsoft Defender pour Endpoint. Cette intégration native vous permet de commencer immédiatement à collecter des données sur le trafic cloud sur vos appareils Windows 11 et Windows 10, sur et hors de votre réseau.
 - Pour découvrir toutes les applications cloud accessibles par tous les appareils connectés à votre réseau, déployez le collecteur de journaux Sécurité des applications cloud sur vos pare-feu et autres proxies. Cela permet de collecter des données à partir de vos points de terminaison et de les envoyer Sécurité des applications cloud pour analyse. Sécurité des applications cloud s’intègre en natif à certains proxies tiers pour encore plus de fonctionnalités.
 
 Ces options sont incluses à [l’étape 2. Activez l’environnement d’évaluation.](eval-defender-mcas-enable-eval.md) 
@@ -146,10 +146,10 @@ En outre, Azure Sentinel inclut un connecteur Microsoft Cloud App Security pour 
 - [Intégration d’une solution SIEM générique](/cloud-app-security/siem)
 - [Diffuser des alertes et des journaux de découverte cloud à partir de MCAS dans Azure Sentinel](/azure/sentinel/connect-cloud-app-security)
 
-### <a name="next-steps"></a>Prochaines étapes
+### <a name="next-steps"></a>Étapes suivantes
 
 Étape 2 sur 3 : activer [l’environnement d’évaluation pour Microsoft Cloud App Security](eval-defender-mcas-enable-eval.md)
 
-Revenir à la vue d’ensemble [de l’Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+Revenir à la vue d’ensemble de [l’Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 
 Revenir à la vue d’ensemble [de l’évaluation et de la Microsoft 365 Defender](eval-overview.md)

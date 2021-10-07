@@ -8,7 +8,7 @@ ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6cc38a571fb987273c382596b60cc613bafc9a1b
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 9162c0c6fa3afd74a00b9e0ee75b3d0a3fbd2a6d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491432"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174794"
 ---
 # <a name="enable-controlled-folder-access"></a>Activer l’accès contrôlé aux dossiers
 
@@ -108,7 +108,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
    > [!NOTE]
    > Wilcard est pris en charge pour les applications, mais pas pour les dossiers. Les sous-foldeurs ne sont pas protégés. Les applications autorisées continueront à déclencher des événements jusqu’à leur redémarrage.
 
-5. Examinez les paramètres et sélectionnez **Suivant** pour créer la stratégie.
+5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, **fermez**.
 
@@ -122,10 +122,10 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 4. Double-cliquez sur **le paramètre Configurer l’accès contrôlé aux** dossiers et définissez l’option sur **Activé.** Dans la section Options, vous devez spécifier l’une des options suivantes :
    - **Activer** : les applications malveillantes et suspectes ne seront pas autorisées à apporter des modifications aux fichiers des dossiers protégés. Une notification sera fournie dans le journal Windows événements.
-   - **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers dans les dossiers protégés.
-   - **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pouvez évaluer l’impact sur votre organisation.
-   - **Bloquer la modification du disque** uniquement : les tentatives d’écriture dans les secteurs de disque par des applications nontrues sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services de Microsoft Windows Windows Defender \> \> \> \> \> ID opérationnel 1123.
-   - **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés sont **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
+   - **Désactiver (par défaut)** : la fonctionnalité Accès contrôlé aux dossiers ne fonctionne pas. Toutes les applications peuvent apporter des modifications aux fichiers des dossiers protégés.
+   - **Mode audit** : les modifications sont autorisées si une application malveillante ou suspecte tente d’apporter une modification à un fichier dans un dossier protégé. Toutefois, il sera enregistré dans le journal Windows événements dans lequel vous pourrez évaluer l’impact sur votre organisation.
+   - **Bloquer la modification du disque** uniquement : les tentatives d’écriture d’applications nontrues dans les secteurs de disque sont enregistrées dans Windows journal des événements. Ces journaux se trouvent dans **les journaux des applications** et des services de Microsoft Windows Windows Defender \> \> \> \> \> ID opérationnel 1123.
+   - **Auditer** la modification du disque uniquement : seules les tentatives d’écriture dans les secteurs de disque protégés seront **enregistrées** dans le journal des événements Windows (sous Journaux des applications et des services \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Les tentatives de modification ou de suppression de fichiers dans des dossiers protégés ne sont pas enregistrées.
 
       ![Capture d’écran de l’option de stratégie de groupe Activée et mode Audit sélectionnée dans la baisse.](../../media/cfa-gp-enable.png)
 

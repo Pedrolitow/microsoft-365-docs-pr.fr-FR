@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Si nécessaire, vous pouvez réduire le nombre de licences pour votre abonnement mensuel. '
-ms.openlocfilehash: c9f72b9448fe1f844cc216baec9ba8249d387c71
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8506dd07022239ed67b437a2c0940e63f98bc490
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181714"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171290"
 ---
 # <a name="remove-existing-licenses"></a>Supprimer les licences existantes
 
@@ -39,4 +39,4 @@ Si vous avez plus de licences que nécessaire pour votre abonnement, vous pouvez
 1. Dans le Centre [d’administration,](https://admin.microsoft.com) **sélectionnez**  >  **Facturation de vos produits,** puis sélectionnez votre abonnement.
 1. Choisissez **Supprimer des licences.**
 1. Utilisez la flèche vers le bas pour réduire le nombre de licences.
-1. Sélectionnez **Enregistrer,** puis fermez la fenêtre.
+1. **Sélectionnez** Enregistrer, puis fermez la fenêtre.

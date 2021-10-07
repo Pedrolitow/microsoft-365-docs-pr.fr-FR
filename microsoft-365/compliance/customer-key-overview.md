@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -14,13 +14,13 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: Dans cet article, vous allez découvrir comment fonctionne le chiffrement de service avec la clé client dans Microsoft 365.
-ms.openlocfilehash: 7f765d8a9c59ad8bdc5e7d2edba7f18af426cc76
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
+ms.openlocfilehash: 0fd94e5d293f05f0ad80c0d6aadaa60284e394c0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206267"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172370"
 ---
 # <a name="service-encryption-with-customer-key"></a>Chiffrement du service avec la clé client
 
@@ -30,7 +30,7 @@ Microsoft 365 fournit un chiffrement de base au niveau du volume activé via Bit
 
 Vos données sont toujours chiffrées au repos dans le service Microsoft 365 avec BitLocker et DKM. Pour plus d’informations, [voir How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). La clé client offre une protection supplémentaire contre l’affichage des données par des systèmes ou du personnel non autorisés, et complète le chiffrement de disque BitLocker dans les centres de données Microsoft. Le chiffrement de service n’est pas destiné à empêcher le personnel Microsoft d’accéder à vos données. Au lieu de cela, la clé client vous aide à respecter les obligations réglementaires ou de conformité en matière de contrôle des clés racine. Vous autorisez explicitement les services Microsoft 365 à utiliser vos clés de chiffrement pour fournir des services cloud à valeur ajoutée, tels que eDiscovery, anti-programme malveillant, anti-courrier indésirable, indexation de recherche, etc.
 
-La clé client repose sur le chiffrement de service et vous permet de fournir et de contrôler les clés de chiffrement. Microsoft 365 ces clés pour chiffrer vos données au repos, comme décrit dans les conditions d’utilisation des services en ligne [(OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) La clé client vous aide à respecter les obligations de conformité, car vous contrôlez les clés de chiffrement Microsoft 365 que vous pouvez utiliser pour chiffrer et déchiffrer des données.
+La clé client repose sur le chiffrement de service et vous permet de fournir et de contrôler les clés de chiffrement. Microsoft 365 ensuite utilise ces clés pour chiffrer vos données au repos, comme décrit dans les conditions d’utilisation des services en ligne [(OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) La clé client vous aide à respecter les obligations de conformité, car vous contrôlez les clés de chiffrement Microsoft 365 que vous pouvez utiliser pour chiffrer et déchiffrer des données.
   
 La clé client améliore la capacité de votre organisation à répondre aux exigences de conformité qui spécifient des accords clés avec le fournisseur de services cloud. Avec la clé client, vous fournissez et contrôlez les clés de chiffrement racine pour Microsoft 365 données au repos au niveau de l’application. Par conséquent, vous exercez le contrôle sur les clés de votre organisation.
 
@@ -63,11 +63,11 @@ Les dep multi-charges de travail ne chiffrent pas les types de données suivants
 - SharePoint et OneDrive Entreprise données.
 - Microsoft Teams fichiers et certains enregistrements Teams appels et de réunions enregistrés dans OneDrive Entreprise et SharePoint Online sont chiffrés à l’aide de SharePoint DeP online.
 - D Microsoft 365 charges de travail telles que Yammer et planner qui ne sont actuellement pas pris en charge par la clé client.
-- Teams Données d’événement en direct.
+- Teams Données d’événements en direct.
 
 Vous pouvez créer plusieurs dep par client, mais n’attribuer qu’une seule PD DEP à la fois. Lorsque vous affectez le dep, le chiffrement commence automatiquement, mais prend un certain temps en fonction de la taille de votre client.
 
-**DePs pour les boîtes Exchange Online aux lettres** Les DEP de boîtes aux lettres permettent de contrôler plus précisément les boîtes aux lettres individuelles au sein Exchange Online. Utilisez des deP de boîte aux lettres pour chiffrer les données stockées dans des boîtes aux lettres EXO de différents types tels que UserMailbox, MailUser, Group, PublicFolder et Les boîtes aux lettres partagées. Vous pouvez avoir jusqu’à 50 dep actifs par client et les affecter à des boîtes aux lettres individuelles. Vous pouvez affecter un deP à plusieurs boîtes aux lettres.
+**DePs pour les boîtes Exchange Online aux lettres** Les DEP de boîtes aux lettres permettent de contrôler plus précisément les boîtes aux lettres individuelles au sein Exchange Online. Utilisez des deP de boîte aux lettres pour chiffrer les données stockées dans des boîtes aux lettres EXO de différents types tels que UserMailbox, MailUser, Group, PublicFolder et Les boîtes aux lettres partagées. Vous pouvez avoir jusqu’à 50 DEP actifs par client et les affecter à des boîtes aux lettres individuelles. Vous pouvez affecter un deP à plusieurs boîtes aux lettres.
 
 Par défaut, vos boîtes aux lettres sont chiffrées à l’aide de clés gérées par Microsoft. Lorsque vous affectez un deP de clé client à une boîte aux lettres :
 
@@ -79,9 +79,9 @@ Par défaut, vos boîtes aux lettres sont chiffrées à l’aide de clés géré
 
 Plus tard, vous pouvez actualiser le deP ou affecter un autre deP à la boîte aux lettres comme décrit dans Gérer la clé client [pour Office 365](customer-key-manage.md). Chaque boîte aux lettres doit avoir les licences appropriées pour se voir attribuer un dep. Pour plus d’informations sur la gestion des licences, [voir Avant de configurer la clé client.](customer-key-set-up.md#before-you-set-up-customer-key)
 
-Les dep peuvent être affectés à une boîte aux lettres partagée, une boîte aux lettres de dossiers publics et une boîte aux lettres de groupe Microsoft 365 pour les locataires qui répondent aux conditions de licence requises pour les boîtes aux lettres utilisateur. Vous n’avez pas besoin de licences distinctes pour les boîtes aux lettres non spécifiques à l’utilisateur pour attribuer la clé client DEP.
+Les dep peuvent être affectés à une boîte aux lettres partagée, une boîte aux lettres de dossiers publics et une boîte aux lettres de groupe Microsoft 365 pour les locataires qui répondent aux exigences de licence pour les boîtes aux lettres utilisateur. Vous n’avez pas besoin de licences distinctes pour les boîtes aux lettres non spécifiques à l’utilisateur pour attribuer la clé client DEP.
 
-Pour les DPS de clé client que vous affectez à des boîtes aux lettres individuelles, vous pouvez demander à Microsoft de purger des DPS spécifiques lorsque vous quittez le service. Pour plus d’informations sur le processus de purge des données et la révocation de clés, voir Révoquer vos clés et démarrer le processus de chemin d’accès [de la purge des données.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
+Pour les DPS de clé client que vous affectez à des boîtes aux lettres individuelles, vous pouvez demander à Microsoft de purger des DPS spécifiques lorsque vous quittez le service. Pour plus d’informations sur le processus de purge des données et la révocation de clés, voir Révoquer vos clés et démarrer le processus de purge [des données.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
 
 Lorsque vous révoquez l’accès à vos clés dans le cadre de la sortie du service, la clé de disponibilité est supprimée, ce qui entraîne la suppression par chiffrement de vos données. La suppression cryptographique atténue le risque de rémanence des données, ce qui est important pour respecter les obligations de sécurité et de conformité.
 

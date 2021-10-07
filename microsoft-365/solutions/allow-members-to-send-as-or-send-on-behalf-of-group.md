@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 recommendations: false
 description: Découvrez comment autoriser les membres d’un groupe à envoyer des messages électroniques en tant que Microsoft 365 groupe ou à envoyer du courrier électronique au nom d’Microsoft 365 groupe.
-ms.openlocfilehash: f2147e49c66e4ad8b4504c00cbd7902dd482cdfc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c06f8aa82f0c112e448e607d7fbc75f13e7d3b6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174194"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou de la part d’un groupe
 
@@ -33,7 +33,7 @@ Cet article explique comment un administrateur général ou Exchange peut défin
   
 Par exemple, si Megan Bowen fait partie du groupe  **Microsoft 365** de formation et dispose d’autorisations Envoyer en tant que  sur le groupe, si elle envoie un courrier électronique en tant que groupe, il semblera que le groupe de formation a envoyé le message électronique. 
   
-L’autorisation Envoyer de **la part de** permet à un utilisateur d’envoyer des courriers électroniques au nom d’Microsoft 365 groupe. Par exemple, si Alex Wilber fait partie du groupe **Marketing** Microsoft 365, dispose des autorisations Envoyer de la part de et envoie un e-mail en tant que groupe, le message semble avoir été envoyé par **Alex Wilber** pour le compte du marketing. 
+L’autorisation Envoyer de **la part de** permet à un utilisateur d’envoyer des courriers électroniques au nom d’Microsoft 365 groupe. Par exemple, si Alex Wilber fait partie du groupe **Marketing** Microsoft 365, dispose des autorisations Envoyer de la part de et envoie un e-mail en tant que groupe, le message électronique semble avoir été envoyé par **Alex Wilber** pour le compte de Marketing. 
 
 > [!IMPORTANT]
 > Vous pouvez configurer **Envoyer en tant** que ou Envoyer de la part **d’un** utilisateur donné, mais pas les deux. Si vous configurez les deux, la valeur par défaut est **Envoyer en tant que**.

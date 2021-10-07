@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur la détection et la correction des menaces d’application.
-ms.openlocfilehash: 0812615a8a0ed78f0649a59a0f884f1c37a9e368
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 90cddc1ffc386a2f691b27e77765a42f46778c82
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181451"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171014"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>En savoir plus sur la détection et la correction des menaces d’application
 

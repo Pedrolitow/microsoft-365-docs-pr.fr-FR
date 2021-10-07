@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -15,12 +15,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Dans cet article, recherchez des détails sur Microsoft 365 prise en charge des applications clientes et de services.
-ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ae294865bb506ae9e8a25e8f5ab28fff967171e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163849"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173327"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 prise en charge des applications client et de services
 
@@ -89,7 +89,7 @@ Lorsqu’un utilisateur accède aux données de l’organisation, l’organisati
 Pour le contenu géré par l’organisation, vous pouvez appliquer des stratégies de gestion des applications pour contrôler la façon dont les données sont accessibles, partagées et utilisées à l’aide de Microsoft Intune. Par exemple, les actions suivantes sont prises en charge :
 
 - Effacer à distance le contenu de l’organisation gérée (également appelé données d’organisation)
-- Empêcher le pasting de contenu d’organisation dans des emplacements autres que l’organisation
+- Empêcher le pasting de contenu d’organisation dans des emplacements non-organisation
 - Exiger un code confidentiel pour accéder au contenu de l’organisation
 - Empêcher l’exécution d’applications gérées sur des appareils jailbreakés ou racines
 - Empêcher l’enregistrée du contenu de l’organisation dans les fournisseurs de stockage cloud non désapprouvés
@@ -125,7 +125,7 @@ L’authentification moderne permet aux clients de s’authentifier par rapport 
 - Prise en charge de l’authentification multifacteur pour l’interaction administrative avec le client et les services, et l’interaction de l’utilisateur final avec les applications et leurs données
 - Accès conditionnel
 - Se connecte au fournisseur d’identité tiers SAML
-- Journal des cartes à puce sur des ordinateurs personnels
+- Connexion par carte à puce sur des ordinateurs personnels
 - Authentification basée sur les certificats sur les appareils mobiles
 - Ne nécessite plus la transmission des informations d’identification sur l’authentification de base.
 

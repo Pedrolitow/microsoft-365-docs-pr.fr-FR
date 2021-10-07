@@ -10,22 +10,22 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé et itérer sur un brouillon de collection, vous pouvez la valider dans un jeu à réviser. Lorsque vous valider un brouillon de collection, les éléments collectés sont ajoutés au jeu à réviser dans le cas. Une fois que les éléments collectés sont dans l’ensemble de révision, vous pouvez les analyser, les examiner et les exporter.
-ms.openlocfilehash: 8aaa6a2eca4adb312fdf739e7c457cce82436087
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0d230f02f08b5a29b2c53ab20ff175f8c7db9ac6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043250"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173570"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Valider un brouillon de collection dans un jeu à réviser dans Advanced eDiscovery
 
-Lorsque vous êtes satisfait des éléments que vous avez collectés dans un brouillon de collection et que vous êtes prêt à les analyser, les baliser et les passer en revue, vous pouvez ajouter une collection à un jeu à réviser dans le cas. Lorsque vous valider un brouillon de collection dans un jeu à réviser, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 dans un ensemble de révision. Un groupe de révision est un emplacement sécurisé fourni par Microsoft stockage Azure dans le cloud Microsoft.
+Lorsque vous êtes satisfait des éléments que vous avez collectés dans un brouillon de collection et que vous êtes prêt à les analyser, les baliser et les passer en revue, vous pouvez ajouter une collection à un jeu à réviser dans le cas. Lorsque vous valider un brouillon de collection dans un jeu à réviser, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 dans un jeu à réviser. Un groupe de révision est un emplacement sécurisé fourni par Microsoft stockage Azure dans le cloud Microsoft.
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Valider une collection au brouillon vers un ensemble de révisions
 
@@ -72,7 +72,7 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>Que se passe-t-il après la validation d’un brouillon de collection ?
 
-Lorsque vous valider un brouillon de collection dans un groupe de révision, les choses suivantes se produisent :
+Lorsque vous valider un brouillon de collection dans un jeu à réviser, les choses suivantes se produisent :
 
 - Si vous avez créé un nouveau jeu à réviser pour valider la  collection, le jeu à réviser est créé et affiché sous l’onglet Ensembles de révision dans le cas. L’état du nouvel ensemble de révision est **prêt.** Cette valeur d’état signifie que le jeu à réviser a été créé ; Cela ne signifie pas que la collection a été ajoutée au jeu à réviser. L’état de l’ajout d’éléments dans la collection au jeu à réviser s’affiche sous **l’onglet Collections.**
 
@@ -80,7 +80,7 @@ Lorsque vous valider un brouillon de collection dans un groupe de révision, les
 
 - Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans le service en direct et copiés dans un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
-- Tous les éléments (y compris le contenu et les métadonnées) qui ne se trouvent pas dans des sources de données de dépositaire ou non dépositaire sont réindexés (dans un processus appelé *indexation* approfondie) afin que toutes les données du jeu à réviser soient entièrement utilisables dans une recherche pendant l’examen des données de cas. La réindexation du contenu d’une collection entraîne des recherches approfondies et rapides lorsque vous recherchez ou filtrez le contenu du jeu à réviser au cours de l’examen de cas.
+- Tous les éléments (y compris le contenu et les métadonnées) qui ne se trouvent pas dans des sources de données de dépositaire ou non dépositaire sont réindexés (dans un processus appelé *indexation* approfondie) afin que toutes les données du jeu à réviser soient entièrement utilisables dans une recherche pendant l’examen des données de cas. La réindexation du contenu d’une collection entraîne des recherches approfondies et rapides lorsque vous recherchez ou filtrez le contenu du jeu à réviser au cours de l’examen du cas.
 
 - Les documents SharePoint et OneDrive chiffrés et les messages électroniques joints qui sont renvoyés dans les résultats de la recherche sont déchiffrés lorsque vous validerez la collection dans un groupe de révision. Vous pouvez examiner et interroger les fichiers déchiffrés dans le jeu à réviser. Pour plus d’informations, voir Déchiffrement dans [Microsoft 365 outils eDiscovery](ediscovery-decryption.md).
 

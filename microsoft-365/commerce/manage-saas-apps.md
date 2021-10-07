@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment activer et gérer des applications tierces dans Centre d'administration Microsoft 365.
 ms.date: 04/15/2021
-ms.openlocfilehash: df3c5372396394f1b2c80bb07aca0a79d8883bf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4df8dd65656bf70329c0ea09911bc7ca4cd40f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181571"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171266"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements d’applications tierces pour votre organisation
 
@@ -48,7 +48,7 @@ Les fournisseurs d’applications vendent leurs applications à un taux fixe ou 
 
 ## <a name="supported-regions"></a>Régions pris en charge
 
-La prise en charge des applications tierces est disponible dans ces régions :
+La prise en charge des applications tierces est disponible dans les régions ci-après :
 
 - Argentine
 - Australie
@@ -115,7 +115,7 @@ Pour plus d’informations sur les profils de facturation, voir [Comprendre les 
 
 1. Dans le Centre d’administration, allez à la page **Facturation**  >  **de vos applications de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produits.</a>
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
-3. En plus **du profil de facturation,** sélectionnez **Modifier.**
+3. En de côté **du profil de facturation,** **sélectionnez Modifier.**
 
 Pour plus d’informations sur les factures, voir [Comprendre votre facture.](billing-and-payments/understand-your-invoice.md)
 
@@ -125,4 +125,4 @@ Vous pouvez annuler une application de service logiciel à partir de la page de 
 
 1. Dans le Centre d’administration, allez à la page **Facturation**  >  **de vos applications de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produits.</a>
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
-3. Sous **Paramètres & actions,** sélectionnez **Annuler l’abonnement.**
+3. Sous **Paramètres & actions,** **sélectionnez Annuler l’abonnement.**

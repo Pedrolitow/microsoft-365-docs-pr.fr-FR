@@ -9,16 +9,16 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Comment obtenir les ressources équivalentes au Centre de déploiement de bureau déprécié.
-ms.openlocfilehash: b74072593b3345c2c0ffef495b117af47f1f88a3
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 6a8f08b855393741e6b2d48c40b4f712154ee1a6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58356779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174902"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centre de déploiement de bureau (supprimé)
 
@@ -31,7 +31,7 @@ Utilisez ces ressources pour déployer des bureaux modernes :
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Stratégies pour les accès aux identités et appareils](../security/office-365-security/microsoft-365-policies-configurations.md)
 
-Vous pouvez également afficher les vidéos [de la série De déploiement de](https://www.aka.ms/watchhowtoshift)bureau à partir de Microsoft Mechanics .
+Vous pouvez également afficher les vidéos [de la série De déploiement de bureau à partir de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift).
 
 Vous pouvez également trouver de l’aide pour votre déploiement de bureau auprès de partenaires et de [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)Microsoft.
 

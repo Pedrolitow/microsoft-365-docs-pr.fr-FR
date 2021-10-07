@@ -7,7 +7,7 @@ ms.date: 7/13/2017
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Découvrez comment gérer ExpressRoute pour Office 365, y compris les zones communes à configurer, telles que le filtrage des préfixes, la sécurité et la conformité.
-ms.openlocfilehash: e8de0763df7d592bc41802b1ead48df06891e6dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bffe82249a9d8a531ee85525f9db0eb38a344d50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204089"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173319"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gestion d’ExpressRoute pour la connectivité d’Office 365
 
-ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de nombreux services Office 365 sans avoir besoin de tout le trafic pour la sortie vers Internet. Bien que la connexion Internet à Office 365 soit toujours nécessaire, les itinéraires spécifiques publiés par Microsoft via BGP vers votre réseau rendent le circuit ExpressRoute direct préféré, sauf s’il existe d’autres configurations dans votre réseau. Les trois domaines courants que vous souhaitez peut-être configurer pour gérer ce routage incluent le filtrage des préfixes, la sécurité et la conformité.
+ExpressRoute pour Office 365 offre un autre chemin de routage pour atteindre de nombreux services Office 365 sans avoir besoin de tout le trafic pour la sortie vers Internet. Bien que la connexion Internet à Office 365 soit toujours nécessaire, les itinéraires spécifiques publiés par Microsoft via BGP vers votre réseau préfèrent le circuit ExpressRoute direct, sauf s’il existe d’autres configurations dans votre réseau. Les trois domaines courants que vous souhaitez peut-être configurer pour gérer ce routage incluent le filtrage des préfixes, la sécurité et la conformité.
   
 > [!NOTE]
 > Microsoft a modifié la révision du domaine de routage de l’homologue Microsoft pour Azure ExpressRoute. À compter du 31 juillet 2017, tous les clients Azure ExpressRoute peuvent activer l’peering Microsoft directement à partir de la console d’administration Azure ou via PowerShell. Après l’activation de l’homologue Microsoft, tout client peut créer des filtres d’itinéraire pour recevoir des annonces d’itinéraire BGP pour les applications Dynamics 365 Customer Engagement (anciennement CRM Online). Les clients qui ont besoin d’Azure ExpressRoute pour Office 365 doivent obtenir l’avis de Microsoft avant de pouvoir créer des filtres d’itinéraire pour Office 365. Veuillez contacter votre équipe de compte Microsoft pour savoir comment demander une révision pour l’activation Office 365 ExpressRoute. Les abonnements non autorisés qui tentent de créer des filtres d’itinéraire pour Office 365 recevront un [message d’erreur](https://support.microsoft.com/kb/3181709)
@@ -41,7 +41,7 @@ Si vous avez besoin d’une validation supplémentaire de la propriété de l’
   
 Il existe plusieurs raisons d’éviter l’utilisation des URL Office 365 et des plages d’adresses IP pour générer des [listes](./urls-and-ip-address-ranges.md) de filtres de préfixes. Y compris les suivants :
   
-- Les Office 365 IP de l’objet font l’objet de nombreuses modifications fréquentes.
+- Les Office 365 IP de l’adresse IP font l’objet de nombreuses modifications fréquentes.
 
 - Les URL Office 365 et les plages d’adresses IP sont conçues pour gérer les listes d’adresses pare-feu et l’infrastructure proxy, et non pour le routage.
 
@@ -53,9 +53,9 @@ Il existe plusieurs raisons d’éviter l’utilisation des URL Office 365 et de
 |Filtrer les supernets de Microsoft  <br/> |**Moyen :** Le client implémente des listes récapitulées de filtres de préfixes pour autoriser uniquement les itinéraires dont Microsoft est propriétaire.  <br/> |Les clients doivent s’assurer que les mises à jour peu fréquentes sont reflétées dans les filtres d’itinéraire.  <br/> |
 |Filtrer Office 365 plages d’adresses IP  <br/> [!CAUTION] Not-Recommended |**Élevé :** Le client filtre les itinéraires en fonction Office 365 préfixes IP définis.  <br/> |Les clients doivent implémenter un processus de gestion des changements robuste pour les mises à jour mensuelles.  <br/> [!CAUTION] Cette solution nécessite des modifications importantes en cours. Les modifications non implémentées dans le temps entraîneront probablement une panne du service.   |
 
-La connexion Office 365 à l’aide d’Azure ExpressRoute est basée sur les annonces BGP de sous-réseaux IP spécifiques qui représentent les réseaux Office 365 de terminaison sont déployés. En raison de la nature globale des Office 365 et du nombre de services qui la Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Si vous êtes préoccupé par le nombre de préfixes publiés dans votre environnement, la fonctionnalité de communauté [BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) vous permet de filtrer les publicités sur un ensemble spécifique de services Office 365. Cette fonctionnalité est désormais en prévisualisation.
+La connexion Office 365 à l’aide d’Azure ExpressRoute est basée sur les annonces BGP de sous-réseaux IP spécifiques qui représentent les réseaux Office 365 de terminaison sont déployés. En raison de la nature globale de l’Office 365 et du nombre de services qui la Office 365, les clients ont souvent besoin de gérer les publicités qu’ils acceptent sur leur réseau. Si vous êtes préoccupé par le nombre de préfixes publiés dans votre environnement, la fonctionnalité de communauté [BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) vous permet de filtrer les publicités sur un ensemble spécifique de services Office 365. Cette fonctionnalité est désormais en prévisualisation.
   
-Quelle que soit la façon dont vous gérez les annonces de l’itinéraire BGP provenant de Microsoft, vous n’êtes pas exposé aux services Office 365 par rapport à la connexion à Office 365 sur un circuit Internet uniquement. Microsoft conserve les mêmes niveaux de sécurité, de conformité et de performances, quel que soit le type de circuit utilisé par un client pour se connecter Office 365.
+Quelle que soit la façon dont vous gérez les annonces de l’itinéraire BGP provenant de Microsoft, vous n’êtes pas exposé aux services Office 365 par rapport à la connexion à Office 365 sur un circuit Internet uniquement. Microsoft conserve les mêmes niveaux de sécurité, de conformité et de performances, quel que soit le type de circuit utilisé par un client pour se connecter à Office 365.
   
 ### <a name="security"></a>Sécurité
 
@@ -92,7 +92,7 @@ Il existe plusieurs scénarios facultatifs qui obligent Microsoft à établir de
 
 - [SharePoint hybride BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Skype Entreprise hybride](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) et/ou [la fédération Skype Entreprise hybride.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)
+- [Skype Entreprise hybride](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) et/ou [Skype Entreprise fédération.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)
 
 - [Skype Entreprise Cloud Connector](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 

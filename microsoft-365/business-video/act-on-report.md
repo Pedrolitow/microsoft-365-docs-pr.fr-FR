@@ -1,5 +1,5 @@
 ---
-title: Passer en revue les rapports d’utilisation
+title: Examiner les rapports d’utilisation
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser les informations des rapports d’utilisation.
-ms.openlocfilehash: 1c499b62f14aeec392d15939c8e6d70c9bad7ced
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 454918be10676b063750f91a128c2688ba700ea0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208315"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173882"
 ---
 # <a name="review-usage-reports-in-microsoft-365"></a>Passer en revue les rapports d’utilisation Microsoft 365
 

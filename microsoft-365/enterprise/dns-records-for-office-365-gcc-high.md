@@ -7,7 +7,7 @@ ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Enregistrements DNS pour Office 365 Cloud de la communauté du secteur public élevé'
 hideEdit: true
-ms.openlocfilehash: 9edcda4616d50d05331db0e2d6c4d89967b02fdc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 103d6157bdb11f787b46b649a048b9fdd3fde5cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181205"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174878"
 ---
 # <a name="dns-records-for-office-365-gcc-high"></a>Enregistrements DNS pour Office 365 GCC High
 
 *Cet article s’applique aux Office 365 Cloud de la communauté du secteur public High et Microsoft 365 Cloud de la communauté du secteur public High*
 
-Dans le cadre de l’intégration à Office 365 Cloud de la communauté du secteur public High, vous devez ajouter vos domaines SMTP et SIP à votre client de services en ligne.  Pour ce faire, utilisez l'New-MsolDomain dans Azure AD PowerShell ou utilisez le portail [Azure Government pour](https://portal.azure.us) démarrer le processus d’ajout du domaine et prouver la propriété.
+Dans le cadre de l’intégration à Office 365 Cloud de la communauté du secteur public High, vous devez ajouter vos domaines SMTP et SIP à votre client de services en ligne.  Pour ce faire, utilisez l'New-MsolDomain dans Azure AD PowerShell ou utilisez le portail [Azure Government pour](https://portal.azure.us) démarrer le processus d’ajout du domaine et de preuve de propriété.
 
 Une fois vos domaines ajoutés à votre client et validés, utilisez les instructions suivantes pour ajouter les enregistrements DNS appropriés pour les services ci-dessous.  Vous devrez peut-être modifier le tableau ci-dessous pour répondre aux besoins de votre organisation en ce qui concerne le ou les enregistrement(s) MX entrant(s) et tous les enregistrement(s) de découverte automatique Exchange existant(s) que vous avez en place.  Nous vous recommandons vivement de coordonner ces enregistrements DNS avec votre équipe de messagerie afin d’éviter toute panne ou mauvaise remise des messages électroniques.
 

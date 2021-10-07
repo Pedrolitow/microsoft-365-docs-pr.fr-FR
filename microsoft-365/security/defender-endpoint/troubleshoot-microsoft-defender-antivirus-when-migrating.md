@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: martyav
 ms.author: v-maave
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cbfb672795dc64a4bb6e4d4541b8eb72511e128b
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 0f2923d03a101d6ec55bfa4090ce22e9d1353e6e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59497636"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174602"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -69,7 +69,7 @@ Pour ouvrir l’application Services, sélectionnez l’icône **Rechercher** da
 
 Les informations sur Antivirus Microsoft Defender seront répertoriées dans l’application Services sous **Windows Defender** \> **Opérationnel**. Le nom du service antivirus *est Antivirus Windows Defender Service.*
 
-Lors de la vérification de l’application, vous verrez peut-être que le service *Antivirus Windows Defender* est manuel, mais lorsque vous essayez de démarrer ce service manuellement, vous recevez un avertissement indiquant que le service Antivirus Windows Defender sur l’ordinateur local a démarré, puis s’est *arrêté. Certains services s’arrêtent automatiquement s’ils ne sont pas utilisés par d’autres services ou programmes.*
+Lors de la vérification de l’application, vous pouvez voir que le service *Antivirus Windows Defender* est prêt à être démarré manuellement, mais lorsque vous essayez de démarrer ce service manuellement, vous recevez un avertissement indiquant que le service Antivirus Windows Defender sur l’ordinateur local a démarré, puis s’est *arrêté. Certains services s’arrêtent automatiquement s’ils ne sont pas utilisés par d’autres services ou programmes.*
 
 Cela indique que la Antivirus Microsoft Defender a été automatiquement désactivée pour préserver la compatibilité avec un antivirus tiers.
 
@@ -127,7 +127,7 @@ Votre administrateur imaginant peut avoir définie la stratégie de **[sécurit�
 Antivirus Microsoft Defender s’active automatiquement si aucun autre antivirus n’est actif. Vous devez désactiver complètement l’antivirus tiers pour vous assurer Antivirus Microsoft Defender’exécuter avec toutes les fonctionnalités.
 
 > [!WARNING]
-> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv*, *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
+> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv,* *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
 
 Le mode passif est disponible si vous commencez à utiliser Microsoft Defender pour endpoint et un antivirus tiers avec Antivirus Microsoft Defender. Le mode passif permet à Microsoft Defender d’analyser les fichiers et de se mettre à jour lui-même, mais il ne remédie pas aux menaces. En outre, la surveillance du comportement via [la Protection](configure-real-time-protection-microsoft-defender-antivirus.md) en temps réel n’est pas disponible en mode passif, sauf si la protection contre la perte de données de point de terminaison [(DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) est déployée.
 

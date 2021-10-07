@@ -1,5 +1,5 @@
 ---
-title: Présentation
+title: Vue d’ensemble
 description: Comprendre la base de test
 search.appverid: MET150
 author: mansipatel-usl
@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: edec6726ef2db0f0efffe131886a653cd164cf6f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b235fcb0de470f23afd75d8abd91d07451d040bd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164577"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174122"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>Qu’est-ce que la Base de Microsoft 365 ?
 
@@ -36,14 +36,14 @@ Ce nouveau service permettra aux SV de simplifier et d’améliorer l’efficaci
 
 - Un déploiement plus rapide des mises à jour de sécurité pour sécuriser vos appareils ;
 - réduction des coûts de validation des mises à jour en hébergeant les modifications du système d’exploitation et l’application dans le même environnement ;
-- Rapport d’intelligence de niveau mondial de Microsoft sur vos applications (couverture de code, analyse d’impact sur les API, et ainsi de suite) ;
+- Rapport d’aide à la world intelligence de Microsoft sur vos applications (couverture de code, analyse d’impact sur les API, et ainsi de suite) ;
 - L’expertise de Microsoft en matière de transfert de contenu de test et d’exploitation vers Azure.
 
 ## <a name="guide-to-navigating-the-test-base-portal"></a>Guide de navigation dans le portail de base de test
 
 Ce guide est divisé en quatre (4) parties pour garantir une expérience sans accès lors de l’utilisation de notre service :
 
-1. Vue **d’ensemble** qui fournit des instructions détaillées et détaillées sur la façon de télécharger votre application via notre portail d’intégration libre-service.
+1. Vue **d’ensemble** qui fournit des instructions détaillées et détaillées sur la façon de télécharger votre application via notre portail d’intégration en libre-service.
 
 2. La section **Démarrage rapide,** qui fournit des informations sur le format de la structure de dossiers compressés et ce que vous devez savoir lors de la préparation de vos scripts de test.
 

@@ -9,7 +9,7 @@ ms.date: 11/7/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le Centre de conformité Microsoft 365 afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: 85362983749659bd6193e59b85e1d8f9eddaf83e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 84f2835d9b409b29042981ff0e1254c686aaf798
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181307"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172526"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dc45779f7e5656e2edfcb1ea89ef19f95cc3d2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4e3af53e4cf6776627e7d8c25f41e241f37add8e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202758"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174314"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Ajouter des blocs dans la liste verte/rouge du locataire
 
@@ -34,7 +34,7 @@ ms.locfileid: "59202758"
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Utiliser le portail Microsoft 365 Defender 
 
-### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Créer des entrées d’expéditeur bloqués dans la liste d’adresses client
+### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Créer des entrées d’expéditeurs bloqués dans la liste d’adresses client
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "59202758"
 
        ou
 
-     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Toggle on.](../../media/scc-toggle-on.png).
+     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Basculez.](../../media/scc-toggle-on.png).
    - **Remarque facultative**: entrez un texte descriptif pour les entrées.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
@@ -65,7 +65,7 @@ ms.locfileid: "59202758"
 
        ou
 
-     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Toggle on.](../../media/scc-toggle-on.png).
+     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Basculez.](../../media/scc-toggle-on.png).
    - **Remarque facultative**: entrez un texte descriptif pour les entrées.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
@@ -74,7 +74,7 @@ ms.locfileid: "59202758"
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. Dans la page **Client autoriser/Bloquer la liste,** sélectionnez l’onglet **Fichiers,** puis cliquez sur Icône ![ Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
+2. Dans la page **Liste d’attente du** client, sélectionnez l’onglet **Fichiers,** puis cliquez sur Icône ![ Bloquer.](../../media/m365-cc-sc-create-icon.png) **Bloquer**.
 
 3. Dans le **volant Bloquer les fichiers** qui s’affiche, configurez les paramètres suivants :
    - **Ajouter des hachages de fichier**: entrez une valeur de hachage SHA256 par ligne, jusqu’à un maximum de 20.
@@ -83,7 +83,7 @@ ms.locfileid: "59202758"
 
      ou
 
-     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Toggle on.](../../media/scc-toggle-on.png).
+     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Basculez.](../../media/scc-toggle-on.png).
    - **Remarque facultative**: entrez un texte descriptif pour les entrées.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
@@ -106,7 +106,7 @@ ms.locfileid: "59202758"
    - **Type d’usurpation**: sélectionnez l’une des valeurs suivantes :
      - **Interne**: l’expéditeur usurpé se trouve dans un domaine appartenant à votre organisation [(un domaine accepté).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Externe**: l’expéditeur usurpé se trouve dans un domaine externe.
-   - **Action**: **sélectionnez Autoriser** ou **Bloquer**.
+   - **Action**: **sélectionnez Autoriser** ou **Bloquer.**
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
@@ -126,7 +126,7 @@ Cet exemple ajoute une entrée d’expéditeur bloqué pour l’expéditeur spé
 New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattackerdomain.com", "test2@anotherattackerdomain.com" -ExpirationDate 8/20/2021
 ```
 
-Cet exemple ajoute une entrée de fichier de blocage pour les fichiers spécifiés qui n’expire jamais.
+Cet exemple ajoute une entrée de bloc de fichiers pour les fichiers spécifiés qui n’expire jamais.
 
 ```powershell
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration

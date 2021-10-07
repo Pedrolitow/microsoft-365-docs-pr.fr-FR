@@ -7,7 +7,7 @@ ms.date: 04/10/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Cet article explique comment effectuer un déploiement sur SharePoint Online sans effectuer de test de charge traditionnel, car il n’est pas autorisé.
-ms.openlocfilehash: fb54864168b35fed290ccb1139cb6c607969820d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f9bf4c508e862d9d99bac2935cfea32878a93762
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205620"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172022"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planification de la capacité et test de charge SharePoint Online
-Cet article explique comment déployer sur SharePoint Online sans test de charge classique, car le test de charge n’est pas autorisé sur SharePoint Online. SharePoint Online est un service cloud et les fonctionnalités de charge, l’état d’état et l’équilibre global de la charge dans le service sont gérés par Microsoft.
+Cet article explique comment déployer sur SharePoint Online sans les tests de charge classiques, car le test de charge n’est pas autorisé sur SharePoint Online. SharePoint Online est un service cloud et les fonctionnalités de charge, l’état d’état et l’équilibre global de la charge dans le service sont gérés par Microsoft.
   
 La meilleure approche pour garantir la réussite du lancement de votre site consiste à suivre les principes, pratiques et recommandations de base qui sont mis en évidence dans le plan de lancement de votre [portail.](planportallaunchroll-out.md)
 
@@ -43,6 +43,6 @@ La capacité n’est pas seulement l’ajout continu de matériel, mais elle se 
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>Pourquoi vous ne pouvez pas charger le test SharePoint Online
 Avec les environnements locaux, le test de charge est utilisé pour valider l’hypothèse d’échelle et, en fin de compte, trouver le point de rupture d’une batterie de serveurs . en le saturent avec charge. 
 
-Avec SharePoint Online, nous devons faire les choses différemment, car l’échelle est relativement fluide et ajuste, les limitations et les contrôles se chargent, en fonction de certaines heuristiques. Étant un environnement multi-locataire à grande échelle, nous devons protéger tous les locataires dans la même batterie de serveurs, afin de limiter automatiquement les tests de charge. Toutefois, si vous tentez de charger le test, en plus d’être limitée, vous recevrez des résultats erronés et potentiellement erronés, car la batterie de serveurs que vous avez testée aujourd’hui aura probablement connu des modifications d’échelle au cours de la fenêtre de test ou dans les heures qui s’après le test, car les actions d’équilibrage d’échelle et de batterie de serveurs sont effectuées de manière continue.
+Avec SharePoint Online, nous devons faire les choses différemment, car l’échelle est relativement fluide et ajuste, les limitations et les contrôles se chargent, en fonction de certaines heuristiques. Étant un environnement à grande échelle à plusieurs locataires, nous devons protéger tous les locataires dans la même batterie de serveurs, afin de limiter automatiquement les tests de charge. Toutefois, si vous tentez de charger le test, en plus d’être limitée, vous recevrez des résultats erronés et potentiellement erronés, car la batterie de serveurs que vous avez testée aujourd’hui aura probablement connu des modifications d’échelle au cours de la fenêtre de test ou dans les heures qui s’après le test, car les actions d’équilibrage d’échelle et de batterie de serveurs sont effectuées de manière continue.
 
 Au lieu d’essayer de charger des SharePoint de test en tant que service, concentrez-vous plutôt sur le suivi des pratiques recommandées et suivez les instructions de [création,](/sharepoint/portal-health) de lancement et de maintenance d’un portail sain.

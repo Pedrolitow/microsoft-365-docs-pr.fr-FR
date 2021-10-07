@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Utilisez le tableau Advanced eDiscovery tableau de bord pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
-ms.openlocfilehash: 6466e33964969d6cd75addba7092ee95e0c321ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b7bc487e95c2dbae1a65aaad94face6bee19d39b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182440"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175478"
 ---
 # <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery tableau de bord pour les ensembles de révision
 
@@ -47,17 +47,17 @@ Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un g
 
    ![Liste de listes des nouveaux widgets.](../media/NewWidgetDropdownBox.png)
 
-   - **Choisissez dans la bibliothèque :** Affiche une bibliothèque par défaut de widgets. Vous cliquez sur un widget, puis sur **Ajouter** pour l’ajouter aux widgets dans la page d’affichage **de profil de** recherche.
+   - **Choisissez dans la bibliothèque :** Affiche une bibliothèque de widgets par défaut. Vous cliquez sur un widget, puis sur **Ajouter** pour l’ajouter aux widgets dans la page d’affichage **de profil de** recherche.
   
    - **Créez un widget personnalisé :** Affiche une page de présentation que vous pouvez utiliser pour configurer un widget personnalisé. 
 
-6. Pour créer un widget personnalisé, dans la page volant Ajouter un **widget,** vous pouvez :
+6. Pour créer un widget personnalisé, faites les choses suivantes dans la page volant Ajouter un **widget** :
 
    ![Créez un widget.](../media/addwidget.png)
 
     a. Tapez un nom pour le widget, qui s’affiche dans la barre de titre du widget. L’attribution d’un nom à un widget est requise, mais il est utile d’identifier les données du widget.
 
-    b. Sélectionnez une propriété dans la **liste de** listes de listes listes de sélection du tableau croisé dynamique qui sera utilisée pour les données du widget. Les éléments de cette liste sont les propriétés utilisables dans une recherche pour les éléments du jeu à réviser. Pour obtenir une description de ces propriétés, voir champs de [métadonnées](document-metadata-fields-in-Advanced-eDiscovery.md)de document Advanced eDiscovery . Les options de tableau croisé dynamique pour le widget sont répertoriées dans la colonne **Nom** de champ utilisable dans une recherche dans cette rubrique.
+    b. Sélectionnez une propriété dans la **liste liste de** listes listes de sélection du tableau croisé dynamique qui sera utilisée pour les données du widget. Les éléments de cette liste sont les propriétés utilisables dans une recherche pour les éléments du jeu à réviser. Pour obtenir une description de ces propriétés, voir champs de [métadonnées](document-metadata-fields-in-Advanced-eDiscovery.md)de document Advanced eDiscovery . Les options de tableau croisé dynamique pour le widget sont répertoriées dans la colonne **Nom** de champ utilisable dans une recherche dans cette rubrique.
 
     c. Sélectionnez un type de graphique pour afficher les données de la propriété de tableau croisé dynamique sélectionnée.
 
@@ -73,7 +73,7 @@ Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un g
 
    ![CreateFilter.](../media/applyconditionfilter.png)
 
-3. Répétez les étapes 1 à 2 pour d’autres widgets multi widgets. 
+3. Répétez les étapes 1 à 2 pour d’autres widgets avec plusieurs widgets. 
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer** sous la requête pour enregistrer vos conditions en tant que nouvelle requête de recherche pour le jeu à réviser.
 

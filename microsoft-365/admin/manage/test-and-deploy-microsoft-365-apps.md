@@ -8,22 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications partenaires Microsoft et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail Des applications intégrées dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 6ab2b2a81fe54b38f6c2d6352a976b83cd2e84a9
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 08660c4f90a27f4294268aa0fb2204347ad06498
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933998"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174146"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Tester et déployer des Microsoft 365 Apps par des partenaires dans le portail applications intégrées
 
-Le Centre d'administration Microsoft 365 vous offre la flexibilité nécessaire pour déployer des applications de magasin unique, des applications métier personnalisées et Microsoft 365 applications partenaires à partir d’un seul emplacement. L’emplacement est accessible dans les paramètres du Centre d’administration Microsoft, dans les applications intégrées. La possibilité de rechercher, tester et déployer entièrement des applications achetées et sous licence par des partenaires Microsoft à partir du portail d’applications intégrées offre la commodité et les avantages dont votre organisation a besoin pour maintenir les services professionnels mis à jour régulièrement et efficacement.
+Le Centre d'administration Microsoft 365 vous offre la flexibilité nécessaire pour déployer des applications de magasin unique, des applications métier personnalisées et Microsoft 365 applications partenaires à partir d’un seul emplacement. L’emplacement est accessible dans les paramètres du Centre d’administration Microsoft, dans les applications intégrées. La possibilité de rechercher, de tester et de déployer entièrement des applications achetées et sous licence par des partenaires Microsoft à partir du portail d’applications intégrées offre la commodité et les avantages dont votre organisation a besoin pour maintenir les services professionnels à jour régulièrement et efficacement.
 
 Pour plus d’informations sur l’achat et les licences Microsoft 365 applications des partenaires de votre organisation, voir Gérer et déployer des Microsoft 365 Apps à partir du [Centre d'administration Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
 
@@ -33,7 +33,7 @@ Le portail des applications intégrées est accessible uniquement aux administra
 
 Le portail Applications intégrées affiche une liste d’applications, qui inclut des applications individuelles et Microsoft 365 applications provenant de partenaires déployés dans votre organisation. Seules les applications web, SPFx applications, Office et Teams applications sont répertoriées. Pour les applications web, vous pouvez voir deux types d’applications.
 
-- Applications SaaS disponibles dans appsource.microsoft.com, et qui peuvent être déployées par les administrateurs accordant leur consentement au nom de l’organisation.
+- Applications SaaS disponibles dans appsource.microsoft.com, et qui peuvent être déployées par des administrateurs accordant leur consentement au nom de l’organisation.
 - Applications de galerie SAML liées aux applications Office.
 
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Gérer les applications dans le portail Applications intégrées
@@ -46,7 +46,7 @@ Vous pouvez gérer les tests et le déploiement d’Microsoft 365 Apps achetés 
 
 3. Sous **l’onglet** Vue d’ensemble, **sélectionnez Déployer.** Certaines applications nécessitent que vous ajoutiez des utilisateurs avant de pouvoir sélectionner Déployer.
 
-4. Sélectionnez **Utilisateurs,** **sélectionnez Est-ce un déploiement de test,** puis choisissez Toute l’organisation , **Utilisateurs/groupes spécifiques** ou **Simplement moi**.  Vous pouvez également choisir **de tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation. Des utilisateurs ou des groupes spécifiques peuvent être Microsoft 365 groupe de sécurité, un groupe de sécurité ou un groupe de distribution.
+4. Sélectionnez  **Utilisateurs,** **sélectionnez Est-ce un déploiement de test,** puis choisissez Toute **l’organisation**, **Utilisateurs/groupes spécifiques** ou **Simplement moi**. Vous pouvez également choisir **de tester le déploiement** si vous préférez attendre le déploiement de l’application dans toute l’organisation. Des utilisateurs ou des groupes spécifiques peuvent être Microsoft 365 groupe de sécurité, un groupe de sécurité ou un groupe de distribution.
 
 5. Sélectionnez **Mettre à** jour, puis **Terminé.** Vous pouvez maintenant sélectionner Déployer sous l’onglet Vue d’ensemble.
 
@@ -62,7 +62,7 @@ Vous pouvez rechercher, tester et déployer entièrement des applications publi�
 
 1. Dans le centre d’administration, dans le navigation de gauche, **choisissez Paramètres,** puis choisissez <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Applications intégrées.**</a>
 
-2. Sélectionnez **Obtenir des** applications pour obtenir une vue des applications.
+2. Sélectionnez **Obtenir des applications** pour obtenir une vue des applications.
 
 3. Dans la page **Microsoft 365 Apps** applications publiées, sélectionnez l’application que vous souhaitez déployer en choisissant **Obtenir maintenant.** Les applications affichées sont principalement les applications Word, PowerPoint, Excel, Outlook, les applications Teams et les applications SharePoint (intégrées à la technologie SharePoint Framework). Acceptez les autorisations et sélectionnez **Continuer**.
 
@@ -97,7 +97,7 @@ Vous ne pourrez pas déployer une seule application ou une seule Microsoft 365 A
 
 3. Télécharger fichier manifeste à partir de votre appareil ou ajoutez un lien URL. Certaines applications nécessitent que vous ajoutiez des utilisateurs avant de pouvoir sélectionner Déployer.
 
-4. Sélectionnez **Ajouter des** utilisateurs, choisissez **Est-ce un déploiement de test** et choisissez Toute l’organisation ou des **utilisateurs/groupes** spécifiques ou **Moi uniquement**. 
+4. Sélectionnez **Ajouter des** utilisateurs, choisissez **Est-ce qu’il s’agit** d’un déploiement de test et choisissez Toute l’organisation ou des **utilisateurs/groupes spécifiques** ou **Moi uniquement**. 
 
     Des utilisateurs/groupes spécifiques peuvent être un Microsoft 365, un groupe de sécurité ou un groupe distribué. Vous pouvez également choisir **De tester le déploiement** si vous souhaitez attendre le déploiement de l’application dans l’ensemble de l’organisation.
 
@@ -111,7 +111,7 @@ Office vous aident à personnaliser vos documents et à simplifier la façon don
 
 Les add-ins offrent les avantages suivants : 
 
-- Lorsque l’application Office pertinente démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban. 
+- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban. 
 
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté. 
 
@@ -131,18 +131,18 @@ Le déploiement ne prend pas en charge les suivantes :
 - un service d'annuaire local ; 
 - Déploiement de la mise en Exchange d’une boîte aux lettres sur place 
 - Déploiement de composants COM (Component Object Model) ou de Visual Studio Tools pour Office (VSTO) de composants. 
-- Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online tels que Microsoft 365 Apps entreprise et Microsoft 365 Apps pour Enterprise.  
+- Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online comme Microsoft 365 Apps entreprise et Microsoft 365 Apps pour Enterprise.  
 
 ### <a name="office-requirements"></a>Office Conditions requises 
 
-Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des valeurs suivantes : 
+Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes : 
 - Sur un appareil Windows, version 1704 ou ultérieure des licences Microsoft 365 Entreprise (E3/E5/F3) ou Microsoft 365 Business (Business Basic, Business Standard, Business Premium). 
 - Sur un Mac, version 15.34 ou ultérieure. 
 
 Pour Outlook, vos utilisateurs doivent utiliser l’une des utilisations suivantes : 
 - Version 1701 ou ultérieure des licences Microsoft 365 Entreprise (E3/E5/F3) ou Microsoft 365 Business (Business Basic, Business Standard, Business Premium). 
 - Version 1808 ou ultérieure de Office Professionnel Plus 2019 ou Office Standard 2019. 
-- Version 16.0.4494.1000 ou ultérieure de Office Professionnel Plus 2016 (MSI) ou de Office Standard 2016 (MSI).
+- Version 16.0.4494.1000 ou ultérieure de Office Professionnel Plus 2016 (MSI) ou Office Standard 2016 (MSI).
     > [!NOTE]
     > Les versions MSI de Outlook les add-ins installés par l’administrateur dans le ruban Outlook approprié, et non dans la section « Mes modules ».  
 - Version 15.0.4937.1000 ou ultérieure de Office Professionnel Plus 2013 (MSI) ou Office Standard 2013 (MSI).
@@ -230,7 +230,7 @@ Les compléments Office combinent un fichier manifeste XML qui inclut certaines 
 - lire le document d'un utilisateur pour fournir des services contextuels. 
 - lire et écrire des données vers le document d'un utilisateur et à partir de celui-ci pour fournir une valeur à cet utilisateur.  
 
-Pour plus d’informations sur les types et fonctionnalités des Office, voir vue d’ensemble de la plateforme des Office [Add-ins,](/office/dev/add-ins/overview/office-add-ins)en particulier la section « Anatomie d’un Office ». 
+Pour plus d’informations sur les types et les fonctionnalités des Office, voir vue d’ensemble de la plateforme des Office [Add-ins,](/office/dev/add-ins/overview/office-add-ins)en particulier la section « Anatomie d’un Office ». 
 
 Pour interagir avec le document de l’utilisateur, le add-in doit déclarer l’autorisation dont il a besoin dans le manifeste. Un modèle d’autorisations d’accès de l’API JavaScript à cinq niveaux constitue la base de la confidentialité et de la sécurité pour les utilisateurs de modules de développement de volet de tâches. La plupart des add-ins dans le Office Store sont de niveau ReadWriteDocument avec presque tous les modules qui la prise en charge au moins au niveau ReadDocument. Pour plus d’informations sur les niveaux d’autorisation, voir Demande [d’autorisations](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)pour l’utilisation des API dans les modules complémentaires de contenu et du volet Des tâches. 
 
@@ -289,13 +289,13 @@ Il existe deux cas dans lesquels un administrateur Exchange ne peut pas déploye
 - Si un add-in est lié à au moins deux applications et applications web, et qu’au moins l’un de ces modules est déployé par un autre administrateur (exchange/global) et que l’affectation de l’utilisateur n’est pas uniforme. Nous permettons uniquement le déploiement des applications lorsque l’affectation de l’utilisateur est la même pour toutes les applications déjà déployées.  
 
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>Quel rôle d’administrateur ai-je besoin pour accéder aux applications intégrées ?
 
 Seuls les administrateurs globaux peuvent accéder aux applications intégrées. Les applications intégrées ne s’affichent pas dans le navigation gauche pour les autres administrateurs.
 
-### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Pourquoi le module de navigation de gauche s’insérait-il dans la partie paramètre, mais pas dans les applications intégrées ?
+### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>Pourquoi le module de navigation gauche s’insérait-il dans la partie paramètre, mais pas dans les applications intégrées ?
 
 Il peut y avoir plusieurs raisons :
 

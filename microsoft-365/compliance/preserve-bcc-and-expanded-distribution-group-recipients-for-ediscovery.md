@@ -9,15 +9,15 @@ ms.date: 6/19/2017
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place conservation, conservation pour litige et stratégies de rétention Microsoft 365 vous permettent de conserver le contenu des boîtes aux lettres afin de répondre aux exigences de conformité réglementaire et eDiscovery.
-ms.openlocfilehash: 4d72233a6026ac493de1cd551c0b4908d200815f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f034129400a47e9b72f0883ce368ecea657851a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177860"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175130"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
   
@@ -72,7 +72,7 @@ Scénario 2 : Bob envoie un courrier électronique à John (À/Cc) et Jack (Cc
 
  **Q. Quand les informations sur le destinataire en Cci sont-elles stockées et à quel emplacement ?**
   
-R. Les informations relatives au destinataire en Cci sont conservées par défaut dans le message d'origine, dans la boîte aux lettres de l'expéditeur. Si le destinataire Bcc est un groupe de distribution, l’appartenance au groupe de distribution est étendue uniquement si la boîte aux lettres de l’expéditeur est en attente ou affectée à une stratégie de rétention Microsoft 365 de distribution.
+R. Les informations relatives au destinataire en Cci sont conservées par défaut dans le message d'origine, dans la boîte aux lettres de l'expéditeur. Si le destinataire Bcc est un groupe de distribution, l’appartenance au groupe de distribution n’est étendue que si la boîte aux lettres de l’expéditeur est en conservation ou affectée à une stratégie Microsoft 365 rétention.
   
  **Q. Quand la liste des destinataires de groupe de distribution étendu est-elle stockée et à quel emplacement ?**
   

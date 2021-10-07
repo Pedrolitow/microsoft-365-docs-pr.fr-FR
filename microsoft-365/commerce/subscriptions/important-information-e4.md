@@ -1,5 +1,5 @@
 ---
-title: Informations importantes pour Office 365 clients E4
+title: Informations importantes pour les Office 365 E4
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,14 +21,14 @@ search.appverid: MET150
 description: Informations importantes sur la mise à niveau ou la modification des plans pour les clients ayant Office 365 abonnement E4.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: b740c186c2f4b53043ecc8aa1fd5024d646069d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 74ae379a1a159c85c4a2b58bd018acb2690e3332
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59193534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173630"
 ---
-# <a name="important-information-for-office-365-e4-customers"></a>Informations importantes pour Office 365 clients E4
+# <a name="important-information-for-office-365-e4-customers"></a>Informations importantes pour les Office 365 E4
 
 Le Office 365 plan E4 a été retiré en 2015. En tant qu’administrateur Microsoft 365, vous recevrez des mises à jour de courrier électronique et verrez des publications dans le centre de <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">messages</a> (partie du Centre d'administration Microsoft 365) avec des informations sur la nécessité d’agir.
 
@@ -40,8 +40,8 @@ Vous pouvez choisir de conserver les mêmes fonctionnalités que vous aviez avec
 |-|-|-|-|-|-|
 | **Obtenir tous les services et fonctionnalités inclus dans votre abonnement Office 365 E4 actuel** | Oui | Oui | Oui | Non | Non |
 | **Téléphone numéros gérés dans Microsoft 365** | Oui | Oui | Non | Non | Non |
-| **Téléphone gérés à la fois en local et en Microsoft 365 (déploiement hybride)**<br/><br/>Réduisez la dépendance vis-à-vis des systèmes téléphoniques PBX (Private Branch Exchange) coûteux et simplifiez votre infrastructure de communication avec une seule plateforme pour les appels, les conférences, la vidéo et le partage. | Oui | Oui | Non | Non | Non |
-| **Option pour ajouter des forfaits d’appels**<br/><br/>Vous pouvez ajouter des licences pour Microsoft 365 forfait d’appels nationaux ou Microsoft 365 forfait d’appels nationaux et internationaux. Pour en savoir plus, voir [quel forfait d’appels est le mieux pour vous](/MicrosoftTeams/calling-plan-landing-page)? . | Oui<sup>1</sup> | Oui | Oui | Oui | Oui |
+| **Téléphone gérés à la fois en local et en Microsoft 365 (déploiement hybride)**<br/><br/>Réduisez la dépendance vis-à-vis des systèmes téléphoniques PBX (Private Branch Exchange) coûteux et simplifiez votre infrastructure de communication avec une plateforme d’appel, de conférence, de vidéo et de partage. | Oui | Oui | Non | Non | Non |
+| **Option pour ajouter des forfaits d’appels**<br/><br/>Vous pouvez ajouter des licences pour Microsoft 365 forfait d’appels nationaux ou Microsoft 365 forfait d’appels nationaux et internationaux. Pour en savoir plus, voir [quel forfait d’appels est le mieux pour vous ?](/MicrosoftTeams/calling-plan-landing-page). | Oui<sup>1</sup> | Oui | Oui | Oui | Oui |
 | **Audioconférence**<br/><br/>Les participants à la réunion peuvent se Skype Entreprise à partir de pratiquement n’importe quel appareil, et les organisateurs peuvent composer un appel sortant pour y appeler les participants. | Oui<sup>2</sup> | Oui | Oui | Non | Non |
 | **Outils avancés pour la collaboration, l'analyse et la sécurité** | Oui | Oui | Oui | Non | Non |
 | **Nouveaux rapports interactifs, tableaux de bord et visualisations de données** | Oui | Oui | Oui | Non | Non |
@@ -55,4 +55,4 @@ Vous pouvez choisir de conserver les mêmes fonctionnalités que vous aviez avec
 
 Au moment de renouveler votre abonnement, envisagez la mise à niveau vers l’un de ces plans.
 
-Si vous avez acheté votre abonnement directement auprès de Microsoft et que vous souhaitez la mettre à niveau maintenant, consultez Mettre à niveau à partir [d’Office 365 abonnement E4.](upgrade-Office-365-E4.md) Vous ne perdrez aucune donnée lors de la mise à niveau d’E4 vers un nouveau plan.
+Si vous avez acheté votre abonnement directement auprès de Microsoft et que vous souhaitez mettre à niveau maintenant, consultez Mettre à niveau à partir [d’un abonnement Office 365 E4.](upgrade-Office-365-E4.md) Vous ne perdrez aucune donnée lors de la mise à niveau d’E4 vers un nouveau plan.

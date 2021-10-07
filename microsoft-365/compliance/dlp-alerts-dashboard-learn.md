@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les alertes de protection contre la perte de données et le tableau de bord des alertes.
-ms.openlocfilehash: b6fd698e535e006149f6ce3a2a5bc57d0c92c7e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea5d01e580b88445ba64e4ed26fc01fb51c97d5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183656"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175214"
 ---
 # <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>En savoir plus sur le tableau de bord des alertes de protection contre la perte de données
 
@@ -35,13 +35,13 @@ Lorsque les critères d’une stratégie de protection contre la perte de donné
 
 ## <a name="workloads"></a>Charges de travail
 
-Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans le [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)affiche des alertes pour les stratégies DLP sur ces charges de travail :
+Le tableau de bord de gestion des alertes [DLP,](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)dans le [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)affiche les alertes pour les stratégies DLP sur ces charges de travail :
 
 - Exchange
 - SharePoint
 - OneDrive
 - Teams
-- Appareils Windows 10 
+- Appareils Windows 10 
 
 > [!TIP]
 > Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) et qui sont éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
@@ -63,7 +63,7 @@ Voici quelques événements associés à une alerte. Dans l’interface utilisat
 |Nom de la propriété  |Description  |Types d’événements  |
 |---------|---------|---------|
 |ID |ID unique associé à l’événement |tous les événements |
-|Emplacement |charge de travail où l’événement a été détecté|tous les événements |
+|Lieu |charge de travail où l’événement a été détecté|tous les événements |
 |heure de l’activité     |heure de l’activité de l’utilisateur qui correspond aux critères de la stratégie DLP |
 
 ### <a name="impacted-entities"></a>Entités impactées
@@ -92,7 +92,7 @@ Voici quelques événements associés à une alerte. Dans l’interface utilisat
 
 |Nom de la propriété |Description |Types d’événements |
 |---------|---------|---------|
-|Stratégie DLP en correspondance |nom de la stratégie DLP en correspondance |tous les événements|
+|Stratégie DLP en correspondance |nom de la stratégie DLP qui correspond |tous les événements|
 |règle en correspondance |nom de la règle de stratégie DLP qui correspond |tous les événements|
 |types d’informations sensibles détectés|Sits détectés dans le cadre de la correspondance de stratégie DLP |tous les événements|
 |actions prises |actions qui ont été prises à l’origine de la correspondance de stratégie DLP| tous les événements|

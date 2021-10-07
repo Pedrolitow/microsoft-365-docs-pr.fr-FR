@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un groupe Advanced eDiscovery révision de cas.
-ms.openlocfilehash: aeb7942fc12089bd458236221dd7394a8018e780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bce0301e7045eeb0dd5c42f8a119d56649120a11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206404"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175586"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
@@ -59,15 +59,15 @@ Lorsque vous ajoutez le contenu d’une recherche à un groupe de révision exis
 
 ## <a name="add-a-sample-to-a-review-set"></a>Ajouter un exemple à un jeu à réviser
 
-Si vous souhaitez valider plus minutieusement les résultats d’une recherche avant de les ajouter tous à un jeu à réviser, vous pouvez ajouter un échantillon des résultats de la recherche à un jeu à réviser au lieu de tout ajouter.
+Si vous souhaitez valider les résultats d’une recherche de manière plus approfondie avant de les ajouter tous à un jeu à réviser, vous pouvez ajouter un échantillon des résultats de la recherche à un jeu à réviser au lieu de tout ajouter.
 
-Pour ajouter un exemple à un jeu à réviser, cliquez sur une recherche sous l’onglet **Recherches** et cliquez sur **Exemple** dans la page volante. Dans la page **Paramètres d’échantillonnage,** choisissez l’une des options suivantes :
+Pour ajouter un exemple à un jeu à réviser, cliquez sur une recherche sous l’onglet **Recherches,** puis cliquez sur **Exemple** sur la page volante. Dans la page **Paramètres d’échantillonnage,** choisissez l’une des options suivantes :
 
 - **Niveau de confiance %** et **intervalle de confiance %** : les éléments ajoutés au jeu à réviser sont déterminés par les paramètres statistiques que vous définissez. Si vous utilisez généralement un niveau de confiance et un intervalle lors de l’échantillonnage des résultats, spécifiez-les dans les zones de la baisse. Dans le cas contraire, utilisez les paramètres par défaut.
 
 - **Exemple aléatoire %** : les éléments ajoutés au jeu à réviser sont basés sur une sélection aléatoire du pourcentage spécifié du nombre total d’éléments renvoyés par la recherche.
 
-Après avoir sélectionné et configuré l’une des options précédentes, choisissez un jeu à réviser pour ajouter l’exemple, puis cliquez sur **Envoyer**. Là encore, vous pouvez suivre l’avancement sous l’onglet **Travaux**  ou dans l’onglet **Recherches** en surveillant l’état dans la colonne Données ajoutées à réviser.
+Après avoir sélectionné et configuré l’une des options précédentes, choisissez un jeu à réviser pour ajouter l’exemple, puis cliquez sur **Envoyer**. Là encore, vous pouvez suivre la progression sous l’onglet **Travaux**  ou dans l’onglet **Recherches** en surveillant l’état dans la colonne Données ajoutées à réviser.
 
 ## <a name="optical-character-recognition"></a>Reconnaissance optique des caractères
 

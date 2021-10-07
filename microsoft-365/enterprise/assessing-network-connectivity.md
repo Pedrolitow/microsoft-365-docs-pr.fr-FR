@@ -7,7 +7,7 @@ ms.date: 6/23/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Microsoft 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. Au fil de l’évolution du service, la sécurité, les performances et la fiabilité des Microsoft 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
-ms.openlocfilehash: 4d80bdf5642b2456ac8293291c720429f7f18fb1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2f982bbce4786c69034560276e5aceebaa575a00
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204114"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60172034"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Évaluation de la connectivité réseau Microsoft 365
 
@@ -33,13 +33,13 @@ ms.locfileid: "59204114"
 
 Microsoft 365 est conçu pour permettre aux clients du monde entier de se connecter au service à l’aide d’une connexion Internet. Au fil de l’évolution du service, la sécurité, les performances et la fiabilité des Microsoft 365 sont améliorées en fonction des clients qui utilisent Internet pour établir une connexion au service.
   
-Les clients qui prévoient d Microsoft 365 doivent évaluer leurs besoins de connectivité Internet existants et prévus dans le cadre du projet de déploiement. Pour les déploiements de classes d’entreprise, une connectivité Internet fiable et de taille appropriée est un élément essentiel de l’utilisation de Microsoft 365 et de scénarios.
+Les clients qui prévoient d Microsoft 365 doivent évaluer leurs besoins de connectivité Internet existants et prévus dans le cadre du projet de déploiement. Pour les déploiements de classe entreprise, une connectivité Internet fiable et de taille appropriée est un élément essentiel de l’utilisation de Microsoft 365 et de scénarios.
   
 Les évaluations réseau peuvent être effectuées par de nombreuses personnes et organisations en fonction de votre taille et de vos préférences. L’étendue réseau de l’évaluation peut également varier en fonction de l’endroit où vous vous trouvez dans votre processus de déploiement. Pour vous aider à mieux comprendre ce qu’il faut faire pour effectuer une évaluation du réseau, nous avons produit un guide d’évaluation du réseau pour vous aider à comprendre les options disponibles. Cette évaluation déterminera les étapes et les ressources qui doivent être ajoutées au projet de déploiement pour vous permettre d’adopter Microsoft 365.
   
-Une évaluation complète du réseau fournira des solutions possibles aux défis de conception de réseau, ainsi que des détails sur l’implémentation. Certaines évaluations réseau montrent que la connectivité réseau optimale à Microsoft 365 peut être réalisée avec des modifications mineures de configuration ou de conception de l’infrastructure de sortie internet et réseau existante.
+Une évaluation complète du réseau fournira des solutions possibles aux défis de conception réseau, ainsi que des détails d’implémentation. Certaines évaluations réseau montrent que la connectivité réseau optimale à Microsoft 365 peut être réalisée avec des modifications mineures de configuration ou de conception de l’infrastructure de sortie internet et réseau existante.
 
-Certaines évaluations indiquent que la connectivité réseau à Microsoft 365 nécessitera des investissements supplémentaires dans les composants réseau. Par exemple, les réseaux d’entreprise qui s’étendent sur plusieurs succursales et régions géographiques peuvent nécessiter des investissements dans des solutions SD-WAN ou une infrastructure de routage optimisée pour prendre en charge la connectivité Internet Microsoft 365. Parfois, une évaluation indique que la connectivité réseau à Microsoft 365 est influencée par la réglementation ou les exigences de performances pour des scénarios tels que [Skype Entreprise qualité des](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)médias en ligne . Ces exigences supplémentaires peuvent entraîner des investissements dans l’infrastructure de connectivité Internet, l’optimisation du routage et la connectivité directe spécialisée.
+Certaines évaluations indiquent que la connectivité réseau à Microsoft 365 nécessitera des investissements supplémentaires dans les composants réseau. Par exemple, les réseaux d’entreprise qui s’étendent sur plusieurs succursales et régions géographiques peuvent nécessiter des investissements dans des solutions SD-WAN ou une infrastructure de routage optimisée pour prendre en charge la connectivité Internet Microsoft 365. Parfois, une évaluation indique que la connectivité réseau à Microsoft 365 est influencée par la réglementation ou les exigences de performances pour des scénarios tels que Skype Entreprise qualité des médias [en ligne.](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917) Ces exigences supplémentaires peuvent entraîner des investissements dans l’infrastructure de connectivité Internet, l’optimisation du routage et la connectivité directe spécialisée.
 
 Quelques ressources pour vous aider à évaluer votre réseau :
 
@@ -49,7 +49,7 @@ Quelques ressources pour vous aider à évaluer votre réseau :
 - Consultez la section de test de connectivité [Microsoft 365](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) ci-dessous pour exécuter des tests de connectivité de base qui fournissent des conseils spécifiques sur les améliorations de connectivité réseau qui peuvent être apportées entre un emplacement d’utilisateur donné et un Microsoft 365.
 
 > [!NOTE]
-> L’autorisation Microsoft est requise pour utiliser ExpressRoute pour Office 365. Microsoft examine chaque demande du client et autorise expressRoute uniquement pour une utilisation Office 365 lorsque la réglementation requise d’un client exige une connectivité directe. Si vous avez de telles exigences, veuillez fournir l’extrait de texte et le lien web au règlement que vous interprétez pour signifier que la connectivité directe est requise dans [ExpressRoute](https://aka.ms/O365ERReview) pour le formulaire de demande Office 365 pour commencer une révision Microsoft. Les abonnements non autorisés qui tentent de créer des filtres d’itinéraire pour Office 365 recevront un [message d’erreur.](https://support.microsoft.com/kb/3181709)
+> L’autorisation Microsoft est requise pour utiliser ExpressRoute pour Office 365. Microsoft examine chaque demande du client et autorise expressRoute uniquement pour une utilisation Office 365 lorsque la réglementation requise d’un client exige une connectivité directe. Si vous avez de telles exigences, fournissez l’extrait de texte et le lien web au règlement que vous interprétez pour signifier que la connectivité directe est requise dans [ExpressRoute](https://aka.ms/O365ERReview) pour le formulaire de demande Office 365 pour commencer une révision Microsoft. Les abonnements non autorisés qui tentent de créer des filtres d’itinéraire pour Office 365 recevront un [message d’erreur.](https://support.microsoft.com/kb/3181709)
   
 Points clés à prendre en compte lors de la planification de votre évaluation du réseau pour Microsoft 365 :
   
@@ -59,11 +59,11 @@ Points clés à prendre en compte lors de la planification de votre évaluation 
 
 - Lorsque vous envisagez d’utiliser Microsoft 365 pour l’un des services inclus, tels que les fonctionnalités vocales, vidéo ou de réunion Teams ou Skype Entreprise Online, les clients doivent effectuer une évaluation réseau de bout en bout et répondre aux exigences de connectivité à l’aide de [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
-Si vous évaluez Microsoft 365 et que vous ne savez pas par où commencer l’évaluation de votre réseau ou si vous avez trouvé des défis de conception réseau que vous devez surmonter, contactez votre équipe de compte Microsoft.
+Si vous évaluez Microsoft 365 et que vous ne savez pas par où commencer votre évaluation du réseau ou si vous avez trouvé des défis de conception réseau que vous devez surmonter, contactez votre équipe de compte Microsoft.
 
 ## <a name="the-microsoft-365-connectivity-test"></a>Test Microsoft 365 de connectivité
 
-Le [test](https://aka.ms/netonboard) de connectivité Microsoft 365 est un outil d’évaluation réseau de preuve de concept qui exécute des tests de connectivité de base par rapport à votre client Microsoft 365 et recommande des conceptions réseau spécifiques pour optimiser les performances Microsoft 365 réseau. L’outil met en évidence les choix courants de conception de périmètre de réseau d’entreprise de grande taille qui sont utiles pour la navigation web Sur Internet, mais ont un impact sur les performances des applications SaaS de grande taille telles que Microsoft 365.
+Le [test](https://aka.ms/netonboard) de connectivité Microsoft 365 est un outil d’évaluation réseau de preuve de concept qui exécute des tests de connectivité de base par rapport à votre client Microsoft 365 et recommande des conceptions réseau spécifiques pour optimiser les performances Microsoft 365 réseau. L’outil met en évidence les choix courants de conception de périmètre de réseau d’entreprise de grande taille qui sont utiles pour la navigation web Sur Internet, mais ont un impact sur les performances des applications SaaS de grande taille, telles que Microsoft 365.
 
 L’outil d’intégration réseau permet d’utiliser les outils suivants :
 
@@ -86,7 +86,7 @@ L’outil basé sur le navigateur affiche les informations suivantes :
   - Distance de sortie de l’utilisateur vers le réseau
   - Microsoft 365 Exchange Online l’emplacement de la porte d’entrée du service
   - Emplacement Microsoft 365 Exchange Online service frontal optimal pour l’emplacement de l’utilisateur
-  - Clients de votre domaine d’affaires avec de meilleures performances
+  - Clients dans votre domaine d’affaires avec de meilleures performances
 
 L’application téléchargeable Tests avancés fournit les informations supplémentaires suivantes :
 
@@ -105,7 +105,7 @@ L’application téléchargeable Tests avancés fournit les informations supplé
 - Tests de connectivité à plusieurs points de terminaison spécifiques aux fonctionnalités
 - Diagnostics de chemin d’accès réseau qui incluent des données d’tracert et de latence pour les services Exchange Online, SharePoint Online et Teams services
 
-Vous pouvez en savoir plus sur le test de connectivité Microsoft 365 et fournir des commentaires sur le point de vue du test de connectivité Microsoft 365 mis à jour avec un nouveau billet de blog sur les [recommandations](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) de conception réseau. Des informations sur les futures mises à jour de cet outil et d’Microsoft 365 mises à jour réseau seront publiées sur le blog [Office 365 Networking.](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+Vous pouvez en savoir plus sur le test de connectivité Microsoft 365 et fournir des commentaires sur le point de vue du test de connectivité Microsoft 365 mis à jour avec un nouveau billet de blog sur les [recommandations](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) de conception réseau. Des informations sur les futures mises à jour de cet outil et d’autres mises à Microsoft 365 réseau seront publiées sur le blog [Office 365 réseau.](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
   
 Voici un lien que vous pouvez utiliser pour revenir [ https://aka.ms/o365networkconnectivity :](./microsoft-365-network-connectivity-principles.md)
   

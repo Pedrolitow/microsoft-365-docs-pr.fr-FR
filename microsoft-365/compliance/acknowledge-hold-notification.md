@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment utiliser les Advanced eDiscovery pour envoyer et suivre des notifications de mise en attente légale par courrier électronique, et surveiller l’état des obligations.
-ms.openlocfilehash: 43c2474bdc485a87c30d1fa2a31c3d008d2a383e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Découvrez comment utiliser les Advanced eDiscovery pour envoyer et suivre des notifications de mise en attente légale par courrier électronique, ainsi que surveiller l’état des obligations.
+ms.openlocfilehash: 57cda6e88968fc90845965a8554f55d80bd3ded0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175574"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 
@@ -42,7 +42,7 @@ En fonction de la configuration de votre notification de conservation légale, v
 
 - **Avis d’émission :** Première notification envoyée à votre dépositaire. Cet avis contient vos instructions d’émission et l’avis de attente qui est envoyé à la fin de votre message.
 
-- **Avis de rappel :** Si ce dernier est activé, un avis de rappel est envoyé à vos dépositaires en fonction de la fréquence et de l’intervalle spécifiés. Les rappels continueront d’être envoyés jusqu’à ce que le dépositaire ait reconnu sa notification ou jusqu’à ce que le nombre de rappels soit épuisé.
+- **Avis de rappel :** S’il est activé, un avis de rappel est envoyé à vos dépositaires en fonction de la fréquence et de l’intervalle spécifiés. Les rappels continueront d’être envoyés jusqu’à ce que le dépositaire ait reconnu sa notification ou jusqu’à ce que le nombre de rappels soit épuisé.
 
 - **Notification d’escalade :** Si ce dernier est activé, une notification d’escalade est envoyée à votre dépositaire et à son responsable une fois les notifications de rappel épuisées. Le système envoie automatiquement des notifications d’escalade jusqu’à ce que le nombre spécifié d’escalades soit terminé ou jusqu’à ce que le dépositaire reconnaisse sa notification de conservation.
 

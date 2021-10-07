@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: dansimp
@@ -15,12 +15,12 @@ ms.author: dansimp
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8400ef9e910afa6683c30221342d1c9d0ed11012
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 6dc04eb51346b078218117d35f1b7a5b2d1c9268
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041627"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174734"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 
@@ -70,7 +70,7 @@ Ces rapports sont également accessibles  en accédant à la section Périphéri
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>De « Ordinateurs avec une connexion bloquée » à l’appareil
 
-Les cartes prisent en charge les objets interactifs. Vous pouvez consulter l’activité d’un appareil en cliquant sur le nom de l’appareil, qui sera lancé dans un nouvel onglet, et vous diriger directement vers l’onglet Chronologie de https://securitycenter.microsoft.com l’appareil. 
+Les cartes supportent les objets interactifs. Vous pouvez consulter l’activité d’un appareil en cliquant sur le nom de l’appareil, qui sera lancé dans un nouvel onglet, et vous diriger directement vers l’onglet Chronologie de https://securitycenter.microsoft.com l’appareil. 
 
 > [!div class="mx-imgBorder"]
 > ![Ordinateurs avec une connexion bloquée.](\images\firewall-reporting-blocked-connection.png)
@@ -91,4 +91,4 @@ Les rapports de pare-feu  prendre en charge l’exploration à partir de la cart
 
 La requête peut maintenant être exécutée et tous les événements de pare-feu associés des 30 derniers jours peuvent être explorer.
 
-Pour des rapports supplémentaires ou des modifications personnalisées, la requête peut être exportée dans Power BI pour une analyse plus approfondie. La création de rapports personnalisés peut être facilitée en téléchargeant le [script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) de création de rapports personnalisé pour surveiller les activités du pare-feu Windows Defender à l’aide Power BI.
+Pour des rapports supplémentaires ou des modifications personnalisées, la requête peut être exportée dans Power BI pour une analyse plus approfondie. La création de rapports personnalisés peut être facilitée en téléchargeant le [script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) de création de rapports personnalisé pour surveiller les activités du pare-feu Windows Defender à l’aide de Power BI.

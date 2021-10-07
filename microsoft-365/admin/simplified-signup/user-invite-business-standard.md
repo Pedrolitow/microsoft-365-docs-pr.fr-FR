@@ -1,5 +1,5 @@
 ---
-title: Accepter une invitation par e-mail Microsoft 365 Business Standard (utilisateur)
+title: Accepter une invitation par courrier électronique à Microsoft 365 Business Standard (utilisateur)
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Accepter l’invitation à rejoindre une Microsoft 365 Business Standard organisation
-ms.openlocfilehash: c6d5142f966501451517e31b611fdbbe12c94bdd
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: c9855a02cbc494ad5e0b3b9defbfc9d91c1ca4e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776355"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176042"
 ---
 # <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-user"></a>Accepter une invitation par courrier électronique à un abonnement Microsoft 365 Business Standard client (utilisateur)
 
@@ -47,7 +48,7 @@ Veillez à ce que votre compte actuel se connecte aux détails avant de commence
 
 6. Suivez les étapes de la page Ajouter un nouveau **compte Outlook** pour configurer Outlook. Sélectionnez **Suivant**.
 
-7. Suivez les étapes de la page Déplacer **des OneDrive Entreprise** pour configurer OneDrive. Sélectionnez **Suivant**.
+7. Suivez les étapes de la page Déplacer **des fichiers OneDrive Entreprise** pour configurer OneDrive. Sélectionnez **Suivant**.
 
 8. Dans la page **Ajouter un nouveau compte à Microsoft Teams,** suivez les étapes de mise en Teams. Sélectionnez **J’ai terminé** lorsque vous avez terminé.
 
@@ -59,7 +60,7 @@ Suivez les étapes de l’abonnement Migrer des données vers mon [Microsoft 365
 
 Téléchargez et commencez à [utiliser Office applications pour les entreprises.](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="i-didnt-receive-an-upgrade-email"></a>Je n’ai pas reçu d’e-mail de mise à niveau ?
 
@@ -94,7 +95,7 @@ Non, vous pouvez toujours vous connecter de la même manière qu’auparavant.
 
 Lorsque vous lancez Microsoft Outlook à l’aide de votre nouveau compte d’entreprise, votre nouvelle boîte aux lettres est automatiquement définie pour vous.
 
-1. First follow: [Set up Outlook for business email](../../business-video/setup-outlook.md).
+1. Première étape : [configurer Outlook courrier électronique pour les entreprises.](../../business-video/setup-outlook.md)
 2. Ensuite, suivez : [Créez et envoyez des e-mails dans Outlook](https://support.microsoft.com/office/create-and-send-email-in-outlook-19c32deb-08b6-4f90-a211-02bc5f77f360).
 
 ### <a name="how-can-i-leave-this-business-and-stop-using-this-license"></a>Comment quitter cette entreprise (et arrêter d’utiliser cette licence) ?
