@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - m365-security-compliance
 - m365solution-audit
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afed2a8a12f158ff7e283e7d82d1abe7c35a0732
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: fbd00bdff46bebb73535f2b24c1b0bfa997dd55a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498111"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60163431"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Audit de solutions dans Microsoft 365
 
@@ -46,7 +46,7 @@ L’audit de base vous offre la possibilité de journaliser et de rechercher des
 
    ![Outil de recherche dans le journal d’audit dans le Centre de conformité Microsoft 365.](../media/AuditLogSearchToolMCC.png)
 
-- **Cmdlet Search-UnifiedAuditLog**. Vous pouvez également utiliser la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell (cmdlet sous-jacente pour l’outil de recherche) pour rechercher des événements d’audit ou les utiliser dans un script. Pour plus d'informations, voir :
+- **Applet de commande Search-UnifiedAuditLog**. Vous pouvez également utiliser **l'applet de commande Search-UnifiedAuditLog** dans Exchange Online PowerShell (l'applet de commande sous-jacente de l'outil de recherche) pour rechercher des événements d'audit ou à utiliser dans un script. Pour plus d'informations, consultez :
 
   - [Référence de la cmdlet Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
   - [Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit](audit-log-search-script.md)

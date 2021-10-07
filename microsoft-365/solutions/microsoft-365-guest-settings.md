@@ -16,15 +16,15 @@ f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: d3db87c0c01a9bddead9b7367b6ac64a7633e107
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 8028258b1b5a7ec13c2a9c9e2e89e52756c97d38
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477622"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202344"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -81,7 +81,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau or
 |Permettre aux membres du groupe extérieurs à votre organisation d’accéder au contenu du groupe|Activé|Lorsque ce paramètre est défini sur **Activé**, les invités peuvent accéder au contenu des groupes. Quand il est défini sur **Désactivé**, ils ne le peuvent pas. Ce paramètre doit être **activé** pour tout scénario dans lequel des invités interagissent avec Groupes Microsoft 365 ou Teams.|
 |Permettre aux propriétaires de groupe d’ajouter des personnes en dehors de votre organisation aux groupes|Activé|Lorsque ce paramètre est **Activé**, les propriétaires de Groupes Microsoft 365 ou d’équipes Teams peuvent inviter de nouveaux invités à rejoindre le groupe. Quand il est **Désactivé**, les propriétaires peuvent inviter que des invités figurant déjà dans l’annuaire.|
 
-Ces paramètres s’appliquent au niveau de l’organisation. Pour en savoir plus sur la modification de ces paramètres au niveau du groupe à l’aide de PowerShell, consultez [Créer des paramètres pour un groupe spécifique](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group).
+Ces paramètres se situent au niveau de l'organisation. Consultez la section [Créer des paramètres pour un groupe](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) spécifique pour savoir comment modifier ces paramètres au niveau du groupe à l'aide de PowerShell.
 
 ## <a name="teams"></a>Teams
 
@@ -167,10 +167,10 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 |:-----|:-----|:-----|
 |Limiter le partage externe par domaine|Désactivé|Ce paramètre vous permet de spécifier une liste de domaines dont le partage est autorisé ou bloqué. Lorsque des domaines autorisés sont spécifiés, des invitations de partage ne peuvent être envoyées qu’à ces domaines. Lorsque des domaines refusés sont spécifiés, des invitations de partage ne peuvent pas être envoyées à ces domaines. <p> Ce paramètre affecte tous les sites SharePoint et OneDrive au sein de l’organisation.|
 |Autoriser les utilisateurs de groupes de sécurité spécifiques à partager en externe|Désactivé|Si vous souhaitez limiter le nombre de personnes pouvant partager avec des invités dans SharePoint et OneDrive, vous le pouvez en limitant le partage aux personnes appartenant à des groupes de sécurité spécifiés. Ces paramètres n’affectent pas le partage via Groupes Microsoft 365 et Teams. Des invités invités via un groupe ou une équipe auraient également accès au site associé, même si le partage de documents et de dossiers ne pourrait être effectué que par des personnes appartenant aux groupes de sécurité spécifiés. <p> Pour chaque groupe spécifié, vous pouvez spécifier les utilisateurs qui peuvent partager avec des liens Tout le monde.|
-|Les invités doivent se connecter à l’aide du compte auquel les invitations de partage ont été envoyées|Désactivé|Empêche les invités d’utiliser des invitations de partage de sites à l’aide d’une envoyer un e-mail différente de celle à laquelle l’invitation a été envoyée. <p> L’[intégration de SharePoint et de OneDrive avec Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview) n’utilise pas ce paramètre parce que tous les invités sont ajoutés à l’annuaire en fonction de l’adresse e-mail à laquelle l’invitation a été envoyée. D’autres adresses e-mail ne peuvent pas être utilisées pour accéder au site.|
+|Les invités doivent se connecter à l’aide du compte auquel les invitations de partage ont été envoyées|Désactivé|Empêche les invités d’utiliser des invitations de partage de sites à l’aide d’une envoyer un e-mail différente de celle à laquelle l’invitation a été envoyée. <p> [L'intégration de SharePoint et OneDrive avec Azure AD B2B (aperçu)](/sharepoint/sharepoint-azureb2b-integration-preview) n'utilise pas ce paramètre car tous les invités sont ajoutés au répertoire en fonction de l'adresse e-mail à laquelle l'invitation a été envoyée. Les autres adresses e-mail ne peuvent pas être utilisées pour accéder au site.|
 |Autoriser les invités à partager des éléments qui ne leur appartiennent pas|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent partager des éléments dont ils ne sont pas propriétaires avec d’autres utilisateurs ou invités. Quand il est **Désactivé**, ils ne le peuvent pas. Les invités peuvent toujours partager des éléments sur lesquels ils disposent d’un contrôle total.|
 |Les personnes qui utilisent un code de vérification doivent se s’authentifier à nouveau après ce nombre de jours|Désactivé|Ce paramètre vous permet d’exiger que les utilisateurs s’authentifiant avec un code secret à usage unique doivent s’authentifier à nouveau après un certain nombre de jours.|
-|L’accès invité à un site ou à OneDrive expirera automatiquement après ce nombre de jours|Activé|Si votre administrateur a fixé un délai d’expiration pour l’accès invité, chaque personne que vous invitez sur le site ou avec laquelle vous partagez des fichiers et dossiers individuels aura accès pendant un certain nombre de jours. Pour plus d’informations, visitez [Gérer l’expiration des invités pour un site](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)
+|L’accès invité à un site ou à OneDrive expirera automatiquement après ce nombre de jours|Activé|Si votre administrateur a défini un délai d'expiration pour l'accès des invités, chaque invité que vous invitez sur le site ou avec qui vous partagez des fichiers et des dossiers individuels aura un accès pendant un certain nombre de jours. Pour plus d'informations, consultez la page [Gérer l'expiration de l'accès des invités pour un site](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea).
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Paramètres de lien de fichier et de dossier SharePoint et OneDrive
 

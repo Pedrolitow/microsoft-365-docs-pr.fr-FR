@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connectez-vous à votre client Microsoft 365 à l’aide de PowerShell pour Microsoft 365 afin d’effectuer des tâches de Centre d’administration à partir de la ligne de commande.
-ms.openlocfilehash: 743f4a7b412f14bc942548c688fc3060fdebf53e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ffbf31415dbdcd3ff9b8261b7f1679989823ecd0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207739"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168637"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Connexion à Microsoft 365 à l’aide de PowerShell
 
@@ -64,7 +64,7 @@ Vous pouvez utiliser les versions de Windows suivantes :
 - Vous devez utiliser PowerShell version 5.1 ou ultérieure jusqu’à PowerShell version 6 pour le Module Microsoft Azure Active Directory pour Windows PowerShell. Vous ne pouvez pas utiliser PowerShell version 7.
        
 >[!Note]
->Ces procédures sont destinées aux utilisateurs qui sont membres d’un groupe de rôles d'administrateur Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+>Ces procédures sont destinées aux utilisateurs membres d'un rôle d'administrateur Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../admin/add-users/about-admin-roles.md).
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Se connecter avec le module PowerShell Azure Active Directory pour Graph
@@ -128,7 +128,7 @@ Une fois connecté, vous pouvez utiliser les cmdlets du [module Azure Active Dir
 
 PowerShell version 7 et ultérieures ne prennent pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les cmdlets incluant *Msol* dans leur nom. Pour PowerShell version 7 ou ultérieure, vous devez utiliser le module Azure Active Directory PowerShell pour Graph ou Azure PowerShell.
 
-PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour le module Windows PowerShell et les cmdlets incluant *Msol* dans leur nom. Exécutez ces cmdlets à partir de Windows PowerShell.
+PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les applets de commande avec *Msol* dans leur nom. Exécutez ces applets de commande à partir de Windows PowerShell.
     
 ### <a name="step-1-install-the-required-software"></a>Étape 1 : installez le logiciel requis
 
@@ -165,9 +165,9 @@ Si vous ne recevez pas de message d’erreur, alors vous vous êtes connecté. P
   
 Si vous recevez un message d’erreur, vérifiez les problèmes suivants:
   
-- **L’inexactitude du mot de passe est un problème courant**. Exécutez [L’étape 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)à nouveau et entrez attentivement le nom et le mot de passe.
+- **Un problème courant est un mot de passe incorrect**. Exécutez à nouveau [l'étape 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) et portez une attention particulière au nom d'utilisateur et au mot de passe que vous saisissez.
     
-- **Le Module Microsoft Azure Active Directory pour Windows PowerShell requiert que la fonctionnalité Microsoft .NET Framework 3.5.* x* soit activée sur votre ordinateur**. Il est probable qu’une version plus récente soit installée sur votre ordinateur (par exemple, 4 ou 4.5.* x*), Mais la rétrocompatibilité avec les versions antérieures du .NET Framework peut être activée ou désactivée. Pour plus d’informations, voir les articles suivants :
+- **Le Module Microsoft Azure Active Directory pour Windows PowerShell nécessite que Microsoft .NET Framework 3.5.* x* est activé sur votre ordinateur**. Il est probable qu'une version plus récente est installée sur votre ordinateur (par exemple, 4 ou 4.5.* x*). Mais la compatibilité descendante avec les anciennes versions du .NET Framework peut être activée ou désactivée. Pour plus d'informations, consultez les articles suivants :
     
   - Pour Windows Server 2012 ou Windows Server 2012 R2, consultez [Activer .NET Framework 3.5 en utilisant l’Assistant Ajout de Roles et de Fonctionnalités](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).
     
@@ -195,7 +195,7 @@ Si vous recevez un message d’erreur, vérifiez les problèmes suivants:
 
 ## <a name="connect-with-the-azure-cloud-shell"></a>Se connecter à Azure Cloud Shell
 
-Pour vous connecter à Azure Cloud Shell et l’utiliser à partir du Centre d’administration Microsoft 365, sélectionnez l’icône de fenêtre PowerShell dans le coin supérieur droit de la barre des tâches. Dans le volet **Bienvenue dans Azure Cloud Shell** , sélectionnez **PowerShell**.
+Pour vous connecter et utiliser Azure Cloud Shell à partir du centre d'administration Microsoft 365, sélectionnez l'icône de la fenêtre PowerShell dans le coin supérieur droit de la barre des tâches. Dans le **volet Bienvenue dans Azure Cloud Shell** , sélectionnez **PowerShell**.
 
 Vous aurez besoin d’un abonnement Azure actif pour votre organisation lié à votre abonnement Microsoft 365. Si vous n’en avez pas encore, vous pouvez en créer un. Une fois que vous disposez d’un abonnement Azure, une fenêtre PowerShell s’ouvre à partir de laquelle vous pouvez exécuter des commandes et des scripts PowerShell.
 

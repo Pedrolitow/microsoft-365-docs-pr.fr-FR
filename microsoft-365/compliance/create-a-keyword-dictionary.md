@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: ef54a45157ab73662ddb15ad46f12ef510ad28cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f585009ee54c03b0417f5aa74fd0b7d2fa0d5e7e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181330"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167329"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
@@ -75,9 +75,9 @@ Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le pl
   
 1. Utilisez le **Centre de conformité** ([https://compliance.microsoft.com](https://compliance.microsoft.com)) ou connectez-vous à **Sécurité &amp; PowerShell du centre de conformité**.
     
-2. **Définissez ou chargez vos mots clés à partir de la source souhaitée**. L’Assistant et le cmdlet acceptent une liste de mots clés séparés par des virgules pour la création d’un dictionnaire de mots clés personnalisé. Cette étape varie légèrement en fonction de l’origine de vos mots clés. Une fois chargés, les mots clés sont encodés et convertis en un tableau d’octets avant d’être importés.
+2. **Définissez ou chargez vos mots clés à partir de la source prévue**. L’Assistant et la cmdlet acceptent tous deux une liste de mots clés séparés par des virgules pour la création d’un dictionnaire de mots clés personnalisé. Cette étape varie donc légèrement en fonction de l’origine de vos mots clés. Une fois chargés, ils sont codés et convertis en tableau d’octets avant leur importation.
     
-3. **Créez le dictionnaire**. Choisissez un nom et une description, puis créez votre dictionnaire.
+3. **Créez votre dictionnaire** : Choisissez un nom et une description, puis créez votre dictionnaire.
 
 ## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Créer un dictionnaire de mots clés avec le Centre de sécurité et de conformité
 
@@ -109,7 +109,7 @@ Procédez comme suit pour créer et importer des mots clés pour un dictionnaire
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Création d’un dictionnaire de mots clés à partir d’un fichier avec PowerShell
 
-Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utiliser les mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans cet exemple, vous allez créer un dictionnaire de mots clés, contenant une liste de langages inappropriés à filtrer dans un courrier électronique externe. Vous devez d’abord [vous connecter à l’interface PowerShell du Centre de sécurité&amp; et de conformité](/powershell/exchange/connect-to-scc-powershell).
+Lorsque vous avez besoin de créer un dictionnaire volumineux, c’est souvent pour utiliser des mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans ce cas, créez un dictionnaire de mots clés contenant une liste de termes inappropriés à rechercher dans les e-mails externes. Vous devez d’abord vous [connecter au Centre de sécurité &amp; et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
   
 1. Copiez les mots clés dans un fichier texte et assurez-vous que chaque mot clé est sur une ligne distincte.
     
@@ -129,7 +129,7 @@ Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utili
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Utilisation des dictionnaires de mots clés dans les types d’informations sensibles personnalisés et les stratégies DLP
 
-Les dictionnaires de mots clés peuvent être utilisés dans le cadre des exigences de correspondance pour un type d’information sensible personnalisé ou comme type d’information sensible eux-mêmes. Dans les deux cas, la création d’un [type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type-in-scc-powershell.md) est requise. Suivez les instructions de l’article lié pour créer un type d’informations sensibles. Une fois que vous avez le XML, vous aurez besoin de l’identificateur GUID que le dictionnaire utilise.
+Les dictionnaires de mots clés peuvent être utilisés dans le cadre de la configuration requise de recherche pour un type personnalisé d’informations sensibles ou en tant que type d’informations sensibles eux-mêmes. Les deux cas nécessitent que vous créez un [type personnalisé d’informations sensibles](create-a-custom-sensitive-information-type-in-scc-powershell.md). Suivez les instructions dans l’article lié pour créer un type d’informations sensibles. Une fois que vous avez le fichier XML, vous aurez besoin de l’identificateur GUID du dictionnaire pour utiliser ce dernier.
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

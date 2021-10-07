@@ -8,17 +8,17 @@ manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 3a538f866be9d43088ab22923b41c6b070855ea3
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: fc519ea7a8d76135b4d536a64e6a411844bd3e47
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356124"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151049"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -112,7 +112,7 @@ Avant d’activer le paramètre de client pour la co-édition de fichiers chiffr
 - Les applications Office pour iOS et Android ne sont pas pris en charge actuellement.
 
 - La co-création et l'enregistrement automatique ne sont pas pris en charge et ne fonctionnent pas pour les documents Office étiquetés et chiffrés qui utilisent l'une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings) :
-    - **Permettre aux utilisateurs d'attribuer des autorisations lorsqu’ils appliquent l’étiquette** et la case à cocher **Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations** est sélectionnée. Cette configuration est parfois appelée « Autorisations définies par l’utilisateur ».
+    - **Autoriser les utilisateurs à attribuer des autorisations lorsqu'ils appliquent l'étiquette** et la case à cocher **Dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier les autorisations** est sélectionnée. Cette configuration est parfois appelée « autorisations définies par l'utilisateur ».
     - **L’expiration de l'accès des utilisateurs au contenu** est définie sur une valeur autre que **Jamais**.
     - **Chiffrement à double clé** est sélectionnée.
     

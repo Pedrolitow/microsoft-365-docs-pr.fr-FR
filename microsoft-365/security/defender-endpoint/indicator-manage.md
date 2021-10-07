@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 69f96b4393a25e57fcbfd2e9adfbd652a5aa191d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c35f6c399e7668883b5b276fffd56f162984669
+ms.sourcegitcommit: f6cb10b1dc4b679b7890d059f7242870fc40b9f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211117"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60225019"
 ---
 # <a name="manage-indicators"></a>Gérer des indicateurs
 
@@ -48,7 +48,7 @@ Téléchargez l’exemple CSV pour connaître les attributs de colonne pris en c
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
-2. Sélectionnez l’onglet du type d’entité pour qui vous souhaitez importer des indicateurs.
+2. Sélectionnez l’onglet du type d’entité dont vous souhaitez importer des indicateurs.
 
 3. Sélectionnez **Importer** \> **un fichier .**
 
@@ -64,14 +64,19 @@ indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suiva
 indicatorValue|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
 title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
-description|String| Description de l’indicateur. **Obligatoire**
+description|Chaîne| Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur au format suivant AAA-MM-JDTHH:MM:SS.0Z. **Optional**
 Sévérité |Énum|Gravité de l’indicateur. Les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+recommendedActions|String|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
 rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 category|String|Catégorie de l’alerte. Exemples : exécution et accès aux informations d’identification. **Optional**
 mitretechniques|Chaîne|MITRE techniques code/id (séparés par des virgules). Pour plus d’informations, [voir Enterprise tactiques.](https://attack.mitre.org/tactics/enterprise/) **Facultatif** Il est recommandé d’ajouter une valeur dans la catégorie lorsqu’une technique MITRE.
+GenerateAlert|String|Si l’alerte doit être générée ou non. Les valeurs possibles sont : True ou False. **Optional**
 
+
+
+> [!NOTE]
+> La notation CIDR (Classless Inter-Domain Routing) pour les adresses IP n’est pas prise en charge.
 Pour plus d’informations, consultez Microsoft Defender pour les catégories d’alerte de point de terminaison sont désormais alignées avec [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
 ## <a name="see-also"></a>Voir aussi

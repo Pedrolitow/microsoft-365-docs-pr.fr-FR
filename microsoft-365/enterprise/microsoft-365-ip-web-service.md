@@ -7,7 +7,7 @@ ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Découvrez comment utiliser l’adresse IP et le service web d’URL Office 365 pour mieux identifier et différencier le trafic réseau d’Office 365.
-ms.openlocfilehash: 62e9b638b0f767aef3b7f52bb3d129310d2bcbd5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c9d888a175b5e070acfd3a9be7b428ee2404ec0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209287"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197292"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Service web d’URL et d’adresses IP Office 365
 
@@ -195,7 +195,7 @@ Le résultat de la méthode web des points de terminaison est un tableau d’enr
 - tcpPorts : ports TCP pour l’ensemble de points de terminaison. Tous les éléments de ports sont au format de liste de ports séparés par des virgules ou de plages de port séparées par un tiret (-). Les ports s’appliquent à toutes les adresses IP et toutes les URL dans cet ensemble de points de terminaison pour cette catégorie. Omis si vide.
 - udpPorts : ports UDP pour les plages d’adresses IP dans cet ensemble de points de terminaison. Omis si vide.
 - ips : plages d’adresses IP associées à cet ensemble de points de terminaison tel qu’associées aux ports TCP ou UDP répertoriés. Un tableau JSON des plages d’adresses IP. Omis si vide.
-- Catégorie : catégorie de connectivité pour l’entité de point de terminaison. Les valeurs valides sont : _Optimiser_, _Autoriser_, and _Défaut_. Si vous recherchez la sortie de la méthode Web de points de terminaison pour la catégorie d’une adresse IP ou d’une URL spécifique, il est possible que votre requête renvoie plusieurs catégories. Dans ce cas, suivez la recommandation pour la catégorie de priorité la plus élevée. Par exemple, si le point de terminaison apparaît dans les deux options _optimiser_ et _autoriser_, vous devez respecter les conditions requises pour _optimiser_. Obligatoire.
+- category : catégorie de connectivité pour le jeu de points de terminaison. Les valeurs valides sont _Optimize_, _Allow_ et _Default_. Si vous recherchez la sortie de la méthode werb des points de terminaison pour la catégorie d’une adresse IP ou d’une URL spécifique, il est possible que votre requête puisse renvoyer plusieurs catégories. Dans ce cas, vous devez suivre les recommandations pour la catégorie ayant la priorité la plus élevée. Par exemple, si le point de terminaison s’affiche dans _Optimize_ et _Allow_, vous devez suivre la configuration requise pour _Optimize_. Obligatoire.
 - expressRoute : _True_ si cet ensemble de points de terminaison est routé sur ExpressRoute, _False_ si ce n’est pas le cas.
 - required : _True_ si cet ensemble de points de terminaison est obligatoire pour disposer d’une connectivité et prendre en charge Office 365._False_ si cet ensemble de points de terminaison est facultatif.
 - notes : pour les points de terminaison facultatifs, ce texte décrit les fonctionnalités Office 365 qui seront indisponibles si les adresses IP ou les URL dans cet ensemble de points de terminaison ne sont pas accessibles sur la couche réseau.
@@ -268,7 +268,7 @@ Le résultat de la méthode web de modifications est un tableau d’enregistreme
   — RemovedDuplicateIpOrUrl – nous avons supprimé une adresse IP ou une URL en double, mais celle-ci est toujours publiée pour Office 365.  En général, aucune action n’est requise.
   — OtherNonPriorityChanges – nous avons modifié un élément moins critique que toutes les autres options, comme un champ de note.
 - version : version de l’ensemble de points de terminaison publié dans laquelle la modification a été introduite. Les numéros de version sont au format _YYYYMMDDNN_, où _NN_ est un nombre naturel incrémenté si plusieurs versions doivent être publiées sur un seul jour.
-- previous : sous-structure détaillant les valeurs précédentes des éléments modifiés sur le point de terminaison défini. Elle ne sera pas incluse pour les nouveaux ensembles de points de terminaison ajoutés. Inclut _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ et _notes_.
+- previous : sous-structure détaillant les valeurs précédentes des éléments modifiés sur l’ensemble de points de terminaison. Cela ne sera pas inclus pour les ensembles de points de terminaison nouvellement ajoutés. Inclut _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ et _notes_.
 - current : une sous-structure détaillant les valeurs mises à jour des éléments de modifications dans l’ensemble des points de terminaison. Inclut _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ et _notes_.
 - add : sous-structure détaillant les éléments à ajouter aux collections d’ensembles de points de terminaison.  Omis s’il n’y a aucun ajout.
   — effectiveDate — définit les données lorsque les ajouts seront disponibles dans le service.
@@ -357,7 +357,7 @@ Ce script effectue les opérations suivantes :
 
 - Vérifie le numéro de version des points de terminaison d’instance dans le monde Office 365 en appelant l’API REST du service Web.
 - Recherche un fichier de version actuelle sur _$Env:TEMP\O365_endpoints_latestversion.txt_. Le chemin d’accès de la variable globale **$Env:TEMP** est généralement _C:\Users\\<username\>\AppData\Local\Temp_.
-- S’il s’agit de la première fois que le script est exécuté, le script renvoie la version actuelle et toutes les adresses IP et URL actuelles, écrit la version des points de terminaison dans le fichier _$Env:TEMP\O365_endpoints_latestversion.txt_ et les points de terminaison la sortie des données vers le fichier _$Env:TEMP\O365_endpoints_data.txt_. Vous pouvez modifier le chemin d’accès et/ou le nom du fichier de sortie en modifiant les lignes suivantes :
+- S’il s’agit de la première fois que le script est exécuté, le script renvoie la version actuelle et toutes les adresses IP et URL actuelles, écrit la version des points de terminaison dans le fichier _$Env:TEMP\O365_endpoints_latestversion.txt_ et la sortie des données des points de terminaison vers le fichier _$Env:TEMP\O365_endpoints_data.txt_. Vous pouvez modifier le chemin d'accès et/ou le nom du fichier de sortie en modifiant ces lignes :
 
     ``` powershell
     $versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: 322a0c711ed1838dfd5349d43b1c3bcbf656618e
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399861"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195568"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -81,7 +81,7 @@ Exemple d'échange :
 
 - **Solution** : Créer une politique de conservation pour le courrier électronique d'échange avec une période de conservation de 7 ans et exclure le sous-ensemble des utilisateurs. Ensuite, créez une deuxième politique de conservation pour le courrier électronique d 'echange avec une période de conservation de 5 ans et incluez le sous-ensemble des utilisateurs. 
     
-    Dans les deux cas, le nombre de boîtes aux lettres incluses et exclues est inférieur au nombre maximum de boîtes aux lettres spécifiées pour une seule politique, et le sous-ensemble d'utilisateurs doit être explicitement exclu de la première politique parce qu'il a une[ période de conservation plus longue](retention.md#the-principles-of-retention-or-what-takes-precedence)que la deuxième stratégie. Si le sous-ensemble d'utilisateurs nécessitait une politique de conservation plus longue, vous n'auriez pas besoin de les exclure de la première stratégie.
+    Dans les deux cas, le nombre de boîtes aux lettres incluses et exclues est inférieur au nombre maximal de boîtes aux lettres spécifiées pour une seule politique, et le sous-ensemble d'utilisateurs doit être explicitement exclu de la première politique parce qu'elle a une [période de rétention plus longue](retention.md#the-principles-of-retention-or-what-takes-precedence) que la deuxième politique. Si le sous-ensemble d'utilisateurs avait besoin d'une politique de rétention plus longue, vous n'auriez pas besoin de les exclure de la première stratégie.
      
     Avec cette solution, si une nouvelle personne rejoint l'organisation, sa boîte aux lettres est automatiquement incluse dans la première politique pendant 7 ans et il n'y a aucun impact sur le nombre maximum de personnes prises en charge. Cependant, les nouveaux utilisateurs qui ont besoin de la période de conservation de 5 ans s'ajoutent aux numéros d'inclusion et d'exclusion, et cette limite serait atteinte à 1 000.
 

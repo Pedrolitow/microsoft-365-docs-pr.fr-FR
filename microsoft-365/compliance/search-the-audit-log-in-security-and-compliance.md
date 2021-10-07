@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 08f3089433769960d7765ce5dfd096a971de0640
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483758"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195616"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -43,14 +43,14 @@ Pourquoi un journal d’audit unifié ? Vous pouvez rechercher dans le journal 
 | Conformité des communications|ComplianceSuperVisionExchange|
 | Explorateur de contenu|LabelContentExplorer|
 | Protection contre la perte de données (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
-| Defender pour point de terminaison|DLPEndpoint|
+| Defender pour point de terminaison|DLPEndpoint, MSDEResponseActions, MSDEGeneralSettings, MSDEIndicatorsSettings, MSDERolesSettings|
 | Dynamics 365|CRM|
 | eDiscovery|Découverte, AeD|
 | Correspondances exactes de données|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
 | Formulaires|MicrosoftForms|
 | Cloisonnement de l’information|InformationBarrierPolicyApplication|
-| Microsoft 365 Defender|MDATPAudit, AirUeligation, AirManual Quigation, AirAdminActionMuigation|
+| Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
 | Microsoft Teams|MicrosoftTeams|
 | MyAnalytics|MyAnalyticsSettings|
 | OneDrive Entreprise|OneDrive|
@@ -589,12 +589,12 @@ Le tableau suivant décrit les activités de synchronisation dans SharePoint Onl
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Ordinateur autorisé à synchroniser des fichiers|ManagedSyncClientAllowed|L’utilisateur a réussi à établir une relation de synchronisation avec un site. La relation de synchronisation est établie, car l’ordinateur de l’utilisateur est membre d’un domaine qui a été ajouté à la liste de domaines (*liste des destinataires approuvés*) qui peuvent accéder aux bibliothèques de documents dans votre organisation. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
-|Ordinateur non autorisé à synchroniser des fichiers|UnmanagedSyncClientBlocked|L’utilisateur tente d’établir une relation de synchronisation avec un site à partir d’un ordinateur qui n’est pas membre du domaine de votre organisation ou qui est membre d’un domaine qui n’a pas été ajouté à la liste de domaines (*liste des destinataires approuvés)* qui peut accéder aux bibliothèques de documents dans votre organisation. La relation de synchronisation n’est pas autorisée et l’ordinateur de l’utilisateur est bloqué en matière de synchronisation, de téléchargement ou de chargement de fichiers dans une bibliothèque de documents. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
+|Ordinateur autorisé à synchroniser des fichiers|ManagedSyncClientAllowed|Un utilisateur a réussi à établir une relation de synchronisation avec un site. La relation de synchronisation est établie, car l'ordinateur de l'utilisateur est membre d'un domaine qui a été ajouté à la liste des domaines (*liste des destinataires approuvés*) pouvant accéder aux bibliothèques de documents dans votre organisation. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
+|Ordinateur non autorisé à synchroniser des fichiers|UnmanagedSyncClientBlocked|L'utilisateur essaie d'établir une relation de synchronisation avec un site à partir d'un ordinateur qui n'est pas membre du domaine de votre organisation ou qui est membre d'un domaine qui n'a pas été ajouté à la liste des domaines (appelée *liste des destinataires approuvés*) qui peuvent accéder aux bibliothèques de documents de votre organisation. La relation de synchronisation n'est pas autorisée et l'ordinateur de l'utilisateur ne peut pas synchroniser, télécharger ou charger des fichiers sur une bibliothèque de documents.<br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
 |Fichiers téléchargés sur l’ordinateur|FileSyncDownloadedFull|Un utilisateur établit une relation de synchronisation et télécharge des fichiers pour la première fois sur son ordinateur à partir d’une bibliothèque de documents.|
-|Modifications du fichier téléchargées sur l’ordinateur|FileSyncDownloadedPartial|L’utilisateur télécharge les modifications apportées aux fichiers à partir d’une bibliothèque de documents. Cette activité indique que les modifications apportées à des fichiers dans la bibliothèque de documents ont été téléchargées sur l’ordinateur de l’utilisateur. Seules les modifications ont été téléchargées, car la bibliothèque de documents a été téléchargée précédemment par l’utilisateur (comme indiqué par l’activité **Fichiers téléchargés sur l’ordinateur**).|
+|Modifications du fichier téléchargées sur l’ordinateur|FileSyncDownloadedPartial|Un utilisateur télécharge des modifications apportées à des fichiers à partir d’une bibliothèque de documents. Cette activité indique que les modifications apportées à des fichiers dans la bibliothèque de documents ont été téléchargées sur l’ordinateur de l’utilisateur. Seules les modifications ont été téléchargées, car la bibliothèque de documents a été téléchargée précédemment par l’utilisateur (comme indiqué par l’activité **Fichiers téléchargés sur l’ordinateur**).|
 |Fichiers téléchargés dans la bibliothèque de documents|FileSyncUploadedFull|Un utilisateur établit une relation de synchronisation et charge des fichiers pour la première fois à partir de son ordinateur dans une bibliothèque de documents.|
-|Modifications du fichier téléchargées dans la bibliothèque de documents|FileSyncUploadedPartial|L’utilisateur charge les modifications apportées aux fichiers dans une bibliothèque de documents. Cet événement indique que les modifications apportées à la version locale d’un fichier dans une bibliothèque de documents sont correctement chargées dans la bibliothèque de documents. Seules les modifications sont chargées, car ces fichiers ont été précédemment chargés par l’utilisateur (comme indiqué par l’activité **Fichiers téléchargés dans la bibliothèque de documents**).|
+|Modifications du fichier téléchargées dans la bibliothèque de documents|FileSyncUploadedPartial|L'utilisateur réussit à télécharger les modifications apportées aux fichiers dans une bibliothèque de documents. Cet événement indique que toutes les modifications apportées à la version locale d'un fichier à partir d'une bibliothèque de documents sont téléchargées avec succès dans la bibliothèque de documents. Seules les modifications sont téléchargées car ces fichiers ont été précédemment téléchargés par l'utilisateur (comme indiqué par l'activité **Fichiers téléchargés vers la bibliothèque de documents**).|
 ||||
 
 ### <a name="site-permissions-activities"></a>Activités d’autorisations de site
@@ -1051,7 +1051,7 @@ Le tableau suivant répertorie les activités du cloisonnement de l’informatio
 
 ### <a name="disposition-review-activities"></a>Activités de la révision avant destruction
 
-Le tableau suivant répertorie les activités qu’un réviseur de disposition a eues lorsqu’un élément a atteint la fin de sa période de rétention configurée. Pour plus d’informations, voir [Affichage et élimination du contenu](disposition.md#viewing-and-disposing-of-content).
+Le tableau suivant répertorie les activités d'un réviseur de disposition lorsqu'un élément atteint la fin de sa période de conservation configurée. Pour plus d'informations, consultez la section [Visualisation et élimination du contenu](disposition.md#viewing-and-disposing-of-content).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|

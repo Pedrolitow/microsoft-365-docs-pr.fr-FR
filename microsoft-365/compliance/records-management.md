@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365initiative-compliance
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: 466b346501f9ee4e02a4a254ebeb2dfdf6e23eca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 410fa890e159d18e3aacedbf08be44ee047ee189
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775599"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158165"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
@@ -35,11 +35,11 @@ Tous les types d’organisation nécessitent une solution de gestion des enregis
 
 Les fonctionnalités suivantes permettent la prise en charge votre solution de gestion des enregistrements dans Microsoft 365 :
 
-- **Étiqueter du contenu comme enregistrement** Créez et configurez des étiquettes de rétention pour indiquer que le contenu est un [enregistrement](#records) qui peut ensuite être appliqué par les utilisateurs ou appliqué automatiquement en identifiant les informations sensibles, les mots clés ou les types de contenu.
+- **Étiquetez le contenu en tant qu’enregistrement**. Créez et configurez des étiquettes de rétention pour indiquer que le contenu est un [enregistrement](#records) qui peut ensuite être appliqué par les utilisateurs ou appliqué automatiquement en identifiant les informations sensibles, les mots clés ou les types de contenu.
 
-- **Migrer et gérer vos exigences de conservation avec le plan de classement**. L’utilisation d’un [plan de gestion des fichiers ](file-plan-manager.md)vous permet de mettre en place un plan de rétention existante à Microsoft 365 ou d’en créer une nouvelle pour les fonctionnalités de gestion améliorées.
+- **Migrez et gérez vos exigences de rétention à l’aide d’un plan de gestion des fichiers**. L’utilisation d’un [plan de gestion des fichiers](file-plan-manager.md) vous permet de mettre en place un plan de rétention existant dans Microsoft 365 ou d’en créer un nouveau pour les fonctionnalités de gestion améliorées.
 
-- **Configurer les paramètres de rétention et de suppression avec les étiquettes de rétention**. Configurez les [étiquettes de rétention](retention.md#retention-labels) avec les périodes de rétention et les actions basées sur divers facteurs tels que la date de la dernière modification ou création.
+- **Configurez les paramètres de rétention et de suppression à l’aide des étiquettes de rétention**. Configurez les [étiquettes de rétention](retention.md#retention-labels) avec des périodes de rétention et des actions basées sur divers facteurs tels que la date de la dernière modification ou création.
 
 - **Démarrer différentes périodes de rétention lorsqu’un événement se produit** avec [rétention basée sur des événements](event-driven-retention.md).
 
@@ -111,4 +111,4 @@ Lorsque vous appliquez une étiquette de rétention à un élément de liste qui
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Veuillez consulter la page [Prise en main de la gestion des enregistrements](get-started-with-records-management.md). Cet article présente des informations sur les abonnements, les autorisations, et des liens vers des instructions de configuration de bout en bout pour des scénarios de gestion des enregistrements.
+Voir [Prise en main de la gestion des enregistrements](get-started-with-records-management.md). Cet article présente des informations sur les abonnements, les autorisations, et des liens vers des instructions de configuration de bout en bout pour des scénarios de gestion des enregistrements.

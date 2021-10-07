@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les PME peut vous accompagner dans le processus du Règlement général sur la protection des données (RGPD).
-ms.openlocfilehash: a32c31f0acd072d7c30eb7639b7f700a7f06048a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 50ee497d57438994a4a5f839ff5a2afb103cd59b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776283"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60174026"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Un guide pour votre petite entreprise
 
@@ -125,7 +126,7 @@ Les [Étiquettes et stratégies de rétention](/microsoft-365/compliance/retenti
 Si vous stockez des données personnelles dans un système informatique, limitez l’accès aux fichiers contenant les données par un mot de passe fort, par exemple. Mettez régulièrement à jour les paramètres de sécurité de votre système.
 
 > [!NOTE]
-> Le RGPD ne prescrit pas l’utilisation d’un système informatique spécifique, mais observe que le système doit avoir un niveau de sécurité approprié. Voir [Article 32 du RGPD : sécurité du traitement](https://gdpr.eu/article-32-security-of-processing/) pour obtenir plus d’informations.
+> Le RGPD ne prescrit pas l’utilisation d’un système informatique spécifique, mais observe que le système doit avoir un niveau de sécurité approprié. Voir [Article 32 du RGPD : Sécurité du traitement](https://gdpr.eu/article-32-security-of-processing/) pour plus d’informations.
 
 Si vous stockez des documents physiques avec des données personnelles, vérifiez qu’elles ne sont pas accessibles aux personnes non autorisées.
 
@@ -165,7 +166,7 @@ Si vous sous-traitez le traitement des données personnelles à une autre entrep
  
 Pour mieux protéger les données personnelles, les organisations devront peut-être nommer un <b>Délégué à la protection des données (DPO)</b>. Toutefois, vous n’aurez peut-être pas besoin de nommer un Délégué à la protection des données si le traitement des données personnelles ne fait pas partie intégrante de votre entreprise ou si vous êtes une petite entreprise. Par exemple, si votre entreprise collecte uniquement des données sur vos clients pour la livraison à domicile, vous n’aurez pas besoin de nommer un DPO. Même si vous devez utiliser les services d’un DPO, ces fonctions peuvent être assignées à un employé existant, en supplément de ses fonctions courantes. Vous pouvez également décider d’embaucher un consultant extérieur pour cette fonction, le cas échéant.
 
-Vous n’avez généralement pas besoin d’effectuer une [Analyse d'impact relative à la protection des données](https://gdpr.eu/article-35-impact-assessment/). Celle-ci est destinée aux entreprises présentant plus de risques en matière de données personnelles (par exemple, si elles effectuent une surveillance à grande échelle d’une zone accessible au public telle que la surveillance vidéo).
+Vous n’avez généralement pas besoin d’effectuer une [analyse d'impact relative à la protection des données](https://gdpr.eu/article-35-impact-assessment/). Celle-ci est destinée aux entreprises présentant plus de risques en matière de données personnelles (par exemple, si elles effectuent une surveillance à grande échelle d’une zone accessible au public telle que la surveillance vidéo).
 
 Si vous êtes une petite entreprise gérant les salaires des employés et une liste de clients, vous n’avez typiquement pas besoin d’effectuer une Analyse d'impact relative à la protection des données.  
  

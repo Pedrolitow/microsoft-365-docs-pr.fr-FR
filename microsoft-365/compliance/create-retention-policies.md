@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkMAC
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: a6d78ea9b96bb4967ef41471cd039a4c245b4aa1
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: ec138414078d18915c26755867d2f1a792573cfe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400149"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189452"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -96,7 +96,7 @@ Pour obtenir des détails techniques sur le fonctionnement de la rétention pour
 
 - Bien que vous puissiez sélectionner l’option pour démarrer la période de rétention lorsque les éléments ont été modifiés pour la dernière fois, la valeur **Lorsque les éléments ont été créés** est toujours utilisée. Pour les messages qui sont modifiés, une copie du message d’origine est enregistrée avec son timestamp d’origine pour identifier les cas où ce message avant modification a été créé, et le message après modification dispose d’un timestamp plus nouveau.
 
-- Lorsque vous sélectionnez **Modifier** pour **l’emplacement du canal de messages Teams,** vous devriez voir les groupes Microsoft 365 qui ne sont également pas des équipes. Ne sélectionnez pas ces groupes.
+- Lorsque vous sélectionnez **Modifier** pour l’emplacement **Messages du canal Teams**, vous devriez voir les groupes Microsoft 365 qui ne sont pas également des équipes. Ne pas sélectionner ces groupes.
 
 - Lorsque vous sélectionnez **Modifier** pour l’emplacement des conversations Teams, vous devriez voir les invités et utilisateurs qui n’utilisent pas de boîte aux lettres. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
 
@@ -132,7 +132,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
     > [!IMPORTANT]
     > Bien que vous puissiez créer une stratégie de rétention uniquement pour l’utilisateur de messages Yammer, une stratégie de rétention pour cet emplacement peut supprimer des messages de la communauté de l’application Yammer pour tous les membres de la communauté.
     > 
-    > Si vous choisissez cette option et que la stratégie de rétention sera configurée pour supprimer les messages utilisateur, assurez-vous de bien comprendre cette implication. Pour plus d’informations, consultez [Fonctionnement de la rétention avec Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
+    > Si vous choisissez cette option et que la stratégie de rétention est configurée pour supprimer les messages utilisateur, assurez-vous de bien comprendre cette implication. Pour plus d’informations, voir [Fonctionnement de la rétention avec Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
     
     Par défaut, tous les utilisateurs et communautés sont sélectionnés, mais vous pouvez les affiner en spécifiant les groupes et les utilisateurs à inclure ou à exclure.
     
@@ -232,7 +232,7 @@ Pour revenir à la valeur par défaut de la boîte aux lettres et du site ShareP
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informations de configuration de Skype Entreprise
 
-Contrairement à d’autres emplacements, vous ne pouvez pas activer ou désactiver l’état de l’emplacement Skype pour inclure automatiquement tous les utilisateurs. Au lieu de cela, lorsque vous activez cet emplacement, vous devez sélectionner l’option **Modifier** pour choisir manuellement les utilisateurs dont vous souhaitez conserver les conversations :
+Contrairement aux autres emplacements, il est impossible de basculer l’état de l’emplacement Skype pour inclure automatiquement tous les utilisateurs. Au lieu de cela, quand vous activez cet emplacement, vous devez sélectionner l’option **Modifier** pour manuellement choisir les utilisateurs dont vous voulez conserver les conversations :
 
 ![Choisir l’emplacement Skype pour les stratégies de rétention](../media/skype-location-retention-policies.png)
 
@@ -264,7 +264,7 @@ Lors de la configuration d’une stratégie de rétention, vous pouvez choisir d
 
 Pour le début de la période de rétention, vous pouvez choisir la date de création ou de la prise en charge du contenu uniquement pour les fichiers et les emplacements SharePoint, OneDrive et Office 365, pour la date de la dernière modification du contenu.
 
-Exemples :
+Exemples :
 
 - SharePoint : si vous souhaitez conserver des éléments dans une collection de site pendant sept ans après la date de dernière modification du contenu et qu’un document de cette collection de site n’a pas été modifié depuis six ans, celui-ci ne sera conservé que pendant une autre année sauf s’il est modifié entre-temps. Si le document est de nouveau modifié, l’âge du document est calculé à partir de la date de dernière modification, et il sera conservé pendant sept années supplémentaires.
 
@@ -292,7 +292,7 @@ Par exemple, si la stratégie inclut tous les courriers électroniques sur Excha
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou des exclusions spécifiques
 
-Sachez que si vous utilisez la configuration optionnelle pour étendre vos paramètres de rétention à des utilisateurs spécifiques, des groupes Microsoft 365 spécifiques ou des sites spécifiques, il faut tenir compte de certaines limites par politique. Pour plus d’informations, voir [En savoir plus sur les stratégies et les étiquettes de rétention](retention-limits.md). 
+Sachez que si vous utilisez la configuration optionnelle pour étendre vos paramètres de rétention à des utilisateurs spécifiques, des groupes Microsoft 365 spécifiques ou des sites spécifiques, il faut tenir compte de certaines limites par politique. Pour plus d’informations, voir [Limites des stratégies de rétention et stratégies d’étiquettes de rétention](retention-limits.md). 
 
 Pour utiliser la configuration optionnelle afin de définir vos paramètres de conservation, assurez-vous que **le statut** de ce lieu est **activé**, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Microsoft 365 ou des sites spécifiques.
 
@@ -310,7 +310,7 @@ Certains paramètres ne peuvent pas être modifiés une fois la stratégie de r�
 
 Si vous modifiez une stratégie de rétention et que des éléments y sont déjà sujets aux paramètres originaux, vos paramètres mis à jour seront automatiquement appliqués à ces éléments en plus des éléments qui seront nouvellement identifiés.
 
-En règle générale, cette mise à jour est assez rapide, mais peut prendre plusieurs jours. Lorsque la réplication de la stratégie au sein de vos emplacements Microsoft 365 est terminée, l’état de la stratégie de rétention dans le Centre de conformité Microsoft 365 passe de **Activé (en attente)** à **Activé (opération réussie)**.
+En règle générale, cette mise à jour est assez rapide, mais peut prendre plusieurs jours. Lorsque la réplication de la stratégie au sein de vos emplacements Microsoft 365 est terminée, l’état de la stratégie de rétention dans le Centre de conformité Microsoft 365 passe de **Activé (en attente)** à **Activé (opération réussie)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Verrouillage de la stratégie pour empêcher toute modification
 

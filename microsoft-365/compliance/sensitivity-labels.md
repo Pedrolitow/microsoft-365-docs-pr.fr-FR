@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: fa496e976f0d023960b6d2e633347931b7456ac3
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: cc83349a1c4fda3b95665ce13cb3e82bbf8610b3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401121"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192126"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -59,7 +59,7 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 
 - **Protéger le contenu dans les applications Office sur différents appareils et plateformes.** Pris en charge par Word, Excel, PowerPoint et Outlook sur les applications Office pour ordinateur de bureau et Office sur le web. Pris en charge sur Windows, macOS, iOS et Android.
 
-- **Protéger le contenu dans les services et les applications tiers** à l’aide de Microsoft Cloud App Security. Avec Cloud App Security (CAS), vous pouvez détecter, classer, étiqueter et protéger le contenu dans les services tiers et applications tierces, comme SalesForce, Box ou Dropbox, même si l’application tierce ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de confidentialité.
+- **Protéger le contenu des applications et services tiers** à l’aide de Microsoft Cloud App Security. Avec la Sécurité des applications cloud, vous pouvez détecter, classifier, étiqueter et protéger le contenu des applications et services tiers, tels que SalesForce, Box ou DropBox, même si l’application ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de confidentialité.
 
 - **Protégez les conteneurs** qui incluent Teams, les groupes Microsoft 365 et les sites SharePoint. Par exemple, définissez les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
@@ -81,7 +81,7 @@ Lorsque vous attribuez une étiquette de confidentialité à du contenu, elle re
 
 - **Personnalisables.** Propres aux besoins de votre organisation et de votre activité, vous pouvez créer des catégories pour différents niveaux de contenu sensible dans votre organisation. Par exemple, vous pouvez commencer par utiliser des étiquettes telles que Personnel, Public, Général, Confidentiel et Hautement confidentiel.
 
-- **Texte en clair.** Une étiquette étant stockée sous forme de texte clair dans les métadonnées pour les fichiers et les courriers, les applications et services tiers peuvent la lire, puis appliquer leurs propres actions de protection, le cas échéant.
+- **Texte clair.** Une étiquette étant stockée sous forme de texte clair dans les métadonnées pour les fichiers et les courriers, les applications et services tiers peuvent la lire, puis appliquer leurs propres actions de protection, le cas échéant.
 
 - **Permanentes.** Une étiquette étant stockée dans des métadonnées pour des fichiers et des courriers, l’étiquette circule avec le contenu, peu importe l’emplacement d’enregistrement ou de stockage. L’identification d’étiquette unique devient la base pour l’application et le respect des stratégies que vous configurez.
 
@@ -114,7 +114,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     Vous ne pouvez pas configurer les paramètres de protection pour les groupes et les sites tant que vous n’activez pas cette fonctionnalité. Cette configuration d’étiquettes ne permet pas aux documents ni aux e-mails d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel le contenu est stocké. Ces paramètres incluent les paramètres de confidentialité, l’accès des utilisateurs externes et le partage externe, ainsi que l’accès à partir d’appareils non gérés.
 
-- **Appliquer automatiquement l’étiquette aux fichiers et e-mails ou recommandez une étiquette.** Choisissez comment identifier les informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
+- **Appliquer automatiquement l’étiquette aux fichiers et e-mails, ou recommandez une étiquette.** Choisissez comment identifier les informations sensibles vous souhaitez étiqueter et vous pouvez appliquer l’étiquette automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte souhaité. Par exemple :
     
     ![Invitation de mise à attribuer une étiquette requise.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
@@ -144,7 +144,7 @@ Pour ces pages dont les options ne sont pas disponibles, sélectionnez **Suivant
 
 ### <a name="label-priority-order-matters"></a>Priorité des étiquettes (l’ordre est important)
 
-Lorsque vous créez vos étiquettes de confidentialité dans votre centre d’administration, elles apparaissent dans une liste située sous l’onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
+Lorsque vous créez des étiquettes de niveau de confidentialité dans votre centre d'administration, elles apparaissent sous forme de liste sur l’onglet **Niveau de confidentialité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important, car il reflète leur priorité. Il est préférable que l’étiquette de niveau de confidentialité la plus restrictive, telle que Hautement confidentiel, s’affiche en **bas** de la liste, et la moins restrictive, par exemple Public, s’affiche en **haut**.
 
 Vous pouvez appliquer une seule étiquette de confidentialité à un élément tel qu’un document, un e-mail ou un conteneur. Si vous définissez une option obligeant vos utilisateurs à fournir une justification pour la modification d'une étiquette vers une classification plus faible, l’ordre de cette liste identifie les classifications les moins élevées. Toutefois, cette option ne s’applique pas aux sous-étiquettes qui partagent la priorité de leur étiquette parente.
 
@@ -178,7 +178,7 @@ Contrairement aux étiquettes de rétention qui sont publiées dans des emplacem
 
 Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
-- **Sélectionnez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées vers un utilisateur ou un groupe de sécurité à extension de courrier, à un groupe de distribution ou à un groupe Microsoft 365 (pouvant avoir [l’appartenance dynamique](/azure/active-directory/users-groups-roles/groups-create-rule)) dans Azure AD.
+- **Choisissez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées vers un utilisateur ou un groupe de sécurité à extension de courrier, à un groupe de distribution ou à un groupe Microsoft 365 (pouvant avoir [l’appartenance dynamique](/azure/active-directory/users-groups-roles/groups-create-rule)) dans Azure AD.
 
 - **Spécifiez une étiquette par défaut** pour les documents et e-mails sans étiquette, les nouveaux conteneurs (lorsque vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md)), et maintenant une étiquette par défaut pour le [contenu Power BI](/power-bi/admin/service-security-sensitivity-label-default-label-policy). Vous pouvez spécifier la même étiquette pour les quatre types d’éléments ou des étiquettes différentes. Les utilisateurs peuvent modifier l’étiquette de sensibilité par défaut appliquée pour mieux correspondre à la sensibilité de leur contenu ou conteneur.
     
@@ -256,7 +256,7 @@ Si vous débutez sur Azure Information Protection, ou si vous êtes un client Az
 ### <a name="azure-information-protection-labels"></a>Étiquettes Azure Information Protection
 
 > [!NOTE]
-> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le portail Azure a été retiré le **31 mars 2021**. Pour plus d’informations, consultez l’[avis de retrait](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
+> La gestion d’étiquetage pour les étiquettes Azure Information Protection dans le Portail Azure a été retirée le **31 mars 2021**. En savoir plus dans l’[Avis de désapprobation](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179) officiel.
 
 Si votre client n’est pas encore sur la [plateforme d’étiquetage unifié](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), vous devez d’abord activer l’étiquette unifiée avant d’utiliser des étiquettes de confidentialité. Pour voir les instructions, consultez [Migration des étiquettes Azure Information Protection vers des étiquettes de confidentialité unifiées](/azure/information-protection/configure-policy-migrate-labels). 
 

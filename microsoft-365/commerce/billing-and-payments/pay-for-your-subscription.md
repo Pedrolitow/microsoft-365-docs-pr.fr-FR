@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9add2523eeedb9accdbc864979721fa7a3b99ac5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208084"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158633"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -40,7 +40,7 @@ Les cartes de débit, de crédit et les informations bancaires sont acceptées p
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être un administrateur global ou de facturation pour effectuer les étapes décrites dans cet article. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
 - Le mode de paiement choisi à la validation de l’achat est le mode qui sera utilisé pour toutes les périodes de facturation futures. Vous pouvez le modifier à tout moment.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Payer par carte de crédit, carte de débit, ou compte bancaire
@@ -74,7 +74,7 @@ Si nous ne parvenons pas à vous facturer par le mode de paiement enregistré, n
 Si vous avez ajouté personnellement un mode de paiement ayant un montant impayé, vous pouvez utiliser **Régler le solde** pour effectuer un paiement. Le mode de paiement que vous utilisez pour payer le montant en souffrance devient le nouveau mode de paiement pour tous les abonnements qui ont utilisé le mode de paiement refusé.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > **Factures et paiements** puis sélectionnez l’onglet <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modes de paiement</a>.
-1. Un message d’avertissement vous indique le mode de paiement qui a été refusé. Sélectionnez **Régler le solde**.
+1. Un message d'avertissement indique quel mode de paiement a été refusé. Sélectionnez **Régler le solde**.
 1. Dans le volet droit, choisissez un mode de paiement différent ou sélectionnez **Ajouter un nouveau mode de paiement**.
 1. Une fois les informations du mode de paiement mises à jour, sélectionnez **Enregistrer**.
 

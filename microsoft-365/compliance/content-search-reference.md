@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: ba990ab0478e1dc525101de2d583b800e14f4342
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176035"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175406"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -68,7 +68,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
 
 ## <a name="searching-onedrive-accounts"></a>Recherche de comptes OneDrive
 
-- Pour recueillir la liste des URL des sites OneDrive au sein de votre organisation, voir [créer une liste de tous les emplacements OneDrive au sein de votre organisation](/onedrive/list-onedrive-urls). Ce script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- Pour obtenir une liste des URL de sites OneDrive de votre organisation, voir [Créer une liste de tous les emplacements OneDrive dans votre organisation](/onedrive/list-onedrive-urls). Le script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell (voir l’étape 1 de la rubrique précédente). N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu OneDrive, par exemple, `https://contoso-my.sharepoint.com`. Voici un exemple d’URL pour le site OneDrive d’un utilisateur : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
     Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son emplacement OneDrive est modifiée pour incorporer le nouveau nom d’utilisateur principal (UPN). Dans ce cas, vous devez modifier une recherche de contenu en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
 
@@ -97,7 +97,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
 
 - Lorsque vous effectuez une recherche dans la boîte aux lettres d’un utilisateur, aucun des Groupes Microsoft 365 ou équipe dont l’utilisateur est membre n’est inclus dans la recherche. De même, lorsque vous effectuez une recherche sur une équipe ou un groupe Microsoft 365, seules la boîte aux lettres et le site du groupe que vous spécifiez sont recherchés. Les boîtes aux lettres et les comptes OneDrive entreprises des membres du groupe ne sont pas recherchés, sauf si vous les ajoutez explicitement à la recherche.
 
-- Pour obtenir la liste des membres d'une équipe ou d'un groupe Microsoft 365, vous pouvez afficher les propriétés sur la **page d’accueil** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes d'appartenances**</a> dans le centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+- Pour obtenir la liste des membres d'une équipe ou d'un groupe Microsoft 365, vous pouvez afficher les propriétés sur la page **Accueil** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groupes**</a> dans le centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -155,7 +155,7 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
   ![Même contenu de carte dans les résultats d'une recherche de contenu](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
-  > Pour afficher les images du contenu de la carte dans les résultats de recherche à ce moment (comme les cases cochées dans la capture d'écran précédente), vous devez être connecté à Teams (danshttps://teams.microsoft.com) un onglet différent dans la même session de navigateur que celle que vous utilisez pour voir les résultats de recherche. Dans le cas contraire, des emplacements pour les images sont affichés.
+  > Pour afficher les images du contenu de la carte dans les résultats de recherche à ce moment (comme les cases cochées dans la capture d'écran précédente), vous devez être connecté à Teams (sur https://teams.microsoft.com) dans un onglet différent dans la même session de navigateur que celle que vous utilisez pour voir les résultats de recherche. Sinon, des espaces réservés aux images sont affichés.
 
 - Vous pouvez utiliser la propriété **type de courrier** ou la condition de recherche **type de message** pour rechercher spécifiquement du contenu dans Teams.
 
@@ -257,7 +257,7 @@ New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@
 
 Lorsque vous utilisez des filtres d’autorisation de recherche pour rechercher du contenu dans des environnements multigéographiques, n’oubliez pas les points suivants :
 
-- Le paramètre **Région** dirige les recherches vers la position de satellite spécifiée. La recherche ne retourne aucun résultat lorsqu’un Gestionnaire eDiscovery recherche uniquement des sites SharePoint et OneDrive en dehors de la position spécifiée dans le filtre des autorisations de recherche.
+- Le paramètre **Région** dirige les recherches vers l’emplacement satellite spécifié. La recherche ne retourne aucun résultat lorsqu’un Gestionnaire eDiscovery recherche uniquement des sites SharePoint et OneDrive en dehors de la position spécifiée dans le filtre des autorisations de recherche.
 
 - Le paramètre **Région** ne contrôle pas les recherches dans les boîtes aux lettres Exchange. Lorsque vous effectuez des recherches dans des boîtes aux lettres, elles s’appliquent à tous les centres de données.
 

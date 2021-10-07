@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie
 description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Cloud App Security pour protéger vos données sensibles Microsoft 365.
-ms.openlocfilehash: 9548b394f5fa2cad6ec1e55e9386905b85f0335b
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 392a86ef736adb258f131515a855d21ca29fe438
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483050"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149537"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 
@@ -122,6 +122,7 @@ Informations clés de Microsoft :
 
 Microsoft 365 :
 
+- [Optimiser la résilience des rançongiciels avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Récupérer après une attaque par rançongiciel](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Protection contre les rançongiciels et programmes malveillants](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protéger votre PC Windows 10 contre les rançongiciels](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
@@ -134,6 +135,7 @@ Microsoft 365 Defender :
 Microsoft Azure :
 
 - [Défenses Azure pour les attaques par rançongiciel](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Optimiser la résilience des rançongiciels avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de sauvegarde et de restauration pour se protéger contre les rançongiciels](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Se protéger contre les rançongiciels avec la Sauvegarde Microsoft Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: d927927aea3f27ecfb99ca68b37d89820efda006
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e757bc41b7291f7a71ba44aec6bb6dc0ac917924
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206028"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192174"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
-Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Exchange.  Pour les autres charges de travail, consultez:
+Les informations contenues dans cet article complètent [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Exchange. Pour d’autres charges de travail, voir :
 
 - [En savoir plus sur la rétention dans SharePoint et OneDrive](retention-policies-sharepoint.md)
 - [En savoir plus sur la rétention dans Microsoft Teams](retention-policies-teams.md)
@@ -44,7 +44,7 @@ Les autres éléments stockés dans une boîte aux lettres, tels que les message
 
 ## <a name="how-retention-works-for-exchange"></a>Fonctionnement de la rétention pour Exchange
 
-Les boîtes aux lettres et les dossiers publics utilisent le même dossier [Éléments récupérables ](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
+Les boîtes aux lettres et les dossiers publics utilisent le [dossier Éléments récupérables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) pour conserver des éléments. Seules les personnes disposant d’autorisations eDiscovery peuvent afficher les éléments dans le dossier Éléments récupérables d’un autre utilisateur.
   
 Lorsqu’un utilisateur supprime un message d’un dossier autre que le dossier Éléments supprimés, le message est par défaut déplacé vers le dossier Éléments supprimés. Toutefois, un utilisateur peut supprimer de façon réversible un élément (Maj + Suppr) dans n’importe quel dossier, ce qui permet d’ignorer le dossier Éléments supprimés et place directement l’élément dans le dossier Éléments récupérables.
   
@@ -63,7 +63,7 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 ![Diagramme du flux de rétention dans la messagerie et les dossiers publics.](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
-1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (avec MAJ + SUPPR ou supprimé dans le dossier Éléments supprimés) pendant la période de rétention : l’élément est déplacé (ou copié, dans le cas d’une modification) dans le dossier Éléments récupérables. Ici, un travail de minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré. Ces éléments sont ensuite supprimés définitivement dans un délai de 14 jours après la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré jusqu’à 30 jours.
+1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (par MAJ + SUPPR ou supprimé du dossier Éléments supprimés) pendant la période de rétention : l’élément est déplacé (ou copié, dans le cas d’une modification) vers le dossier Éléments récupérables. Ici, un travail du minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours.
 
 2. **Si l’élément n’est pas modifié ou supprimé** pendant la période de rétention. Le même processus s’exécute régulièrement sur tous les dossiers dans la boîte aux lettres et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours. 
 
@@ -91,9 +91,9 @@ N’oubliez pas que, dans ce contexte, la date d’expiration pour la suppressio
 
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
-Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Microsoft 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
+Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie pour la rétention, la boîte aux lettres devient inactive lorsque le compte d’utilisateur Microsoft 365 est supprimé. Le contenu d’une boîte aux lettres inactive est toujours soumis à une stratégie de rétention placée sur la boîte aux lettres avant que celle-ci ne devienne inactive et ce contenu est disponible pour une recherche eDiscovery. Pour obtenir plus d’informations, consultez l’article [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
 
-Lorsque les paramètres de rétention ne s’appliquent plus, car les données sont définitivement supprimées ou la période de rétention a expiré, l’administrateur Exchange peut désormais [supprimer la boîte aux lettres inactive](delete-an-inactive-mailbox.md). Dans ce scénario, la boîte aux lettres inactive n’est pas automatiquement supprimée.
+Lorsque les paramètres de rétention ne s’appliquent plus, car les données sont définitivement supprimées ou la période de rétention a expiré, l’administrateur Exchange peut désormais [supprimer la boîte aux lettres inactive](delete-an-inactive-mailbox.md). Dans ce cas, la boîte aux lettres inactive n’est pas automatiquement supprimée.
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -25,12 +26,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
-ms.openlocfilehash: 5161a3db8c61df247e1200914bdc08e3b732b084
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3144c61b0aa6f329fa4f0159cedbad21c2038169
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776223"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169346"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurer Microsoft 365 Business Standard avec un domaine nouveau ou existant
 
@@ -149,7 +150,7 @@ Vous pouvez également utiliser le Centre d’administration Exchange pour impor
 
 ## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>Configurer Microsoft Teams et OneDrive pour les entreprises
 
-Sélectionnez OneDrive cloud dans votre barre des tâches et suivez les étapes pour déplacer vos fichiers vers votre nouveau dossier OneDrive Entreprise dossier. Sélectionnez **Suivant** pour configurer Microsoft Teams.
+Sélectionnez l'icône du cloud OneDrive dans votre barre des tâches et suivez les étapes pour déplacer vos fichiers vers votre nouveau dossier OneDrive Entreprise. Sélectionnez **Suivant** pour configurer Microsoft Teams.
 
 1. Ouvrez Microsoft Teams, sélectionnez votre icône de profil, puis **ajoutez un compte scolaire ou scolaire.** Suivez les étapes pour ajouter votre nouveau compte à Teams.
 

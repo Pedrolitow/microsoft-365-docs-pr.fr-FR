@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX
 description: Certains bureaux d’enregistrement de domaine offrent des services limités, ce qui signifie que des fonctionnalités Microsoft peuvent ne pas fonctionner dans tous les domaines.
-ms.openlocfilehash: 7fe6b047773e47964b5a00728b8c1443bdeef36e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2d192f03c5a586e4355c1f9a08d312a07af3d501
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774591"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164731"
 ---
 # <a name="domain-registrars-with-setup-limitations"></a>Bureaux d’enregistrement de domaine avec limitations de configuration
 
@@ -84,7 +84,7 @@ Si malgré cette limitation de service, vous décidez de gérer vos propres enre
 
 1.  Tout d'abord, vous devez créer le sous-domaine de découverte automatique. Dans la section **Vue d'ensemble des sous-domaines**, sélectionnez **Créer un sous-domaine**.
 
-1.  Dans la zone **Créer un sous-domaine** correspondant au nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur **Créer un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias** au cours d’une étape ultérieure.)
+1.  Dans la **zone Créer** un sous-domaine pour le nouveau sous-domaine, saisissez ou copiez et collez uniquement la **valeur Créer** un sous-domaine du tableau suivant. (Vous ajouterez la valeur **Alias** à une étape ultérieure.)
 
     |Créer un sous-domaine|Alias|
     |:----|:----|
@@ -116,9 +116,9 @@ Les enregistrements CNAME supplémentaires de la procédure suivante activent le
 
 1.  Dans la section **Vue d'ensemble des sous-domaines**, sélectionnez **Créer un sous-domaine**.
 
-1.  Dans la zone **Créer un sous-domaine** correspondant au nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur **Créer un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias** au cours d’une étape ultérieure.)
+1.  Dans la **zone Créer** un sous-domaine pour le nouveau sous-domaine, saisissez ou copiez et collez uniquement la **valeur Créer** un sous-domaine du tableau suivant. (Vous ajouterez la valeur **Alias** à une étape ultérieure.)
 
-    |Créer un sous-domaine|Alias|
+    |Create Subdomain (Créer un sous-domaine)|Alias|
     |:----|:----|
     |lyncdiscover|webdir.online.lync.com|
 
@@ -126,7 +126,7 @@ Les enregistrements CNAME supplémentaires de la procédure suivante activent le
 
 1.  Sur la page Centre des domaines, sélectionnez **Gérer les sous-domaines**.
 
-1.  Dans la section **Vue d'ensemble des sous-domaines**, recherchez le sous-domaine lyncdiscover que vous venez de créer, puis sélectionnez le contrôle de volet (v) correspondant à ce sous-domaine. Dans la zone **Paramètres des sous-domaines**, sélectionnez **Modifier les paramètres DNS**.
+1.  Dans la section **Présentation du sous-domaine**, recherchez le sous-domaine lyncdiscover que vous venez de créer, puis sélectionnez le contrôle Panel (v) pour ce sous-domaine. Dans la zone **Paramètres du sous-domaine** , sélectionnez **Modifier les paramètres DNS**.
 
 1.  Dans la section **A/AAAA Records (IP Addresses)**, dans la zone **IP address (A Record)**, sélectionnez **CNAME**.
 
@@ -144,7 +144,7 @@ Les enregistrements CNAME supplémentaires de la procédure suivante activent le
 
 1.  Dans la section **Vue d'ensemble des sous-domaines**, sélectionnez **Créer un sous-domaine**.
 
-1.  Dans la zone **Créer un sous-domaine** correspondant au nouveau sous-domaine, tapez ou copiez-collez uniquement la valeur **Créer un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias** au cours d’une étape ultérieure.)
+1.  Dans la **zone Créer** un sous-domaine pour le nouveau sous-domaine, saisissez ou copiez et collez uniquement la valeur **Créer un sous-domaine** du tableau suivant. (Vous ajouterez la valeur **Alias** à une étape ultérieure.)
 
     |Créer un sous-domaine|Alias|
     |:----|:----|

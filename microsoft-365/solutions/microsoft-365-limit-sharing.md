@@ -19,15 +19,15 @@ f1.keywords: NOCSH
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 recommendations: false
 description: Découvrez les options pour limiter ou désactiver le partage dans Microsoft 365.
-ms.openlocfilehash: 500d2dd8aa1a657cd3a71cb87b30a2faf63bb4c4
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: 9d1784e4520b59aedc53a71110f1c7ab0e9d8914
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479764"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154157"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limiter le partage dans Microsoft 365
 
@@ -48,7 +48,7 @@ Les méthodes de partage de fichiers sont répertoriées dans le tableau ci-dess
 
 Vous pouvez également restreindre les conditions d’accès des utilisateurs au contenu partagé. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Accès conditionnel](#conditional-access) plus bas dans cet article.
 
-Bien que vous puissiez utiliser les contrôles d’administration décrits dans cet article pour limiter le partage au sein de votre organisation, nous vous recommandons vivement d’utiliser les fonctionnalités de sécurité et de conformité disponibles dans Microsoft 365 pour créer un environnement de partage sécurisé. Si vous souhaitez en savoir plus, veuillez consulter les rubriques [Collaboration sur des fichiers dans SharePoint avec Microsoft 365](/sharepoint/deploy-file-collaboration) et [Configurer une équipe avec l’isolation de sécurité pour plus d’informations](secure-teams-security-isolation.md).
+Bien que vous puissiez utiliser les contrôles d'administration décrits dans cet article pour limiter le partage dans votre organisation, nous vous recommandons vivement d'envisager d'utiliser les fonctionnalités de sécurité et de conformité disponibles dans Microsoft 365 pour créer un environnement de partage sécurisé. Voir [Collaboration de fichiers dans SharePoint avec Microsoft 365](/sharepoint/deploy-file-collaboration) et [Configurer une équipe avec isolation de sécurité](secure-teams-security-isolation.md) pour plus d'informations.
 
 Pour comprendre comment le partage est utilisé au sein de votre organisation, [exécuter un rapport sur le partage de fichiers et de dossiers](/sharepoint/sharing-reports).
 
@@ -121,7 +121,7 @@ Pour limiter le partage de sites par domaine
 
 ### <a name="block-access-to-a-site"></a>Bloquer l’accès à la site
 
-Vous pouvez bloquer l’accès à un site ou rendre un site accessible en lecture seule en modifiant son état de verrouillage. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Verrouiller et déverrouiller des sites](/sharepoint/manage-lock-status).
+Vous pouvez bloquer l'accès à un site ou rendre un site en lecture seule en modifiant l'état de verrouillage du site. Pour plus de détails, voir [Verrouiller et déverrouiller des sites](/sharepoint/manage-lock-status).
 
 ### <a name="permissions-inheritance"></a>Héritage des autorisations
 
@@ -180,7 +180,7 @@ Pour désactiver les liens *Tout le monde* d’un site
 
 ## <a name="people-in-your-organization-sharing-links"></a>*Membres de votre organisation* partage de liens
 
-Par défaut, les membres d’un site peuvent partager des fichiers et des dossiers avec d’autres membres de votre organisation à l’aide d’un lien *Membres de votre organisation*. Vous pouvez désactiver les liens *Membres de votre organisation* à l’aide de PowerShell :
+Par défaut, les membres d'un site peuvent partager des fichiers et des dossiers avec d'autres personnes de votre organisation en utilisant un lien *Personnes dans votre organisation*. Vous pouvez désactiver les liens des *personnes de votre organisation* à l'aide de PowerShell :
 
 ```powershell
 Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
@@ -212,7 +212,7 @@ Les utilisateurs qui ont accès à des fichiers et des dossiers dans Microsoft 3
 
 ## <a name="conditional-access"></a>Accès conditionnel
 
-L’accès conditionnel Azure Active Directory permet de limiter ou d’empêcher le partage avec des personnes en fonction de l’emplacement réseau, de l’état de l’appareil, du risque de connexion et d’autres facteurs. Si vous souhaitez en savoir plus, veuillez consulter [Qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview)
+L'accès conditionnel Azure Active Directory Domain Services fournit des options pour limiter ou empêcher le partage avec des personnes en fonction de l'emplacement du réseau, de l'état de l'appareil, du risque de connexion et d'autres facteurs. Voir [Qu'est-ce que l'accès conditionnel ?](/azure/active-directory/conditional-access/overview).
 
 SharePoint offre une intégration directe avec l'accès conditionnel Azure AD pour les appareils non gérés et l'emplacement du réseau. Voir les références suivantes pour plus de détails :
 

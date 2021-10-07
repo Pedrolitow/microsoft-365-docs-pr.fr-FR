@@ -9,7 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 09/16/2021
-ms.openlocfilehash: b9fb8a670b649437a894619369731a5085c36804
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: eb122a7bce8aba070bf50e4654a54db6c40a1157
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59785938"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164547"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
@@ -45,7 +45,7 @@ Vous pouvez attribuer des licences à des utilisateurs à partir de la page des 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../add-users/about-admin-roles.md).
+- Vous devez être un administrateur global, de licence ou d'utilisateur pour attribuer des licences. Pour plus d'informations, consultez [À propos des rôles d'administrateur Microsoft 365](../add-users/about-admin-roles.md).
 - Vous pouvez [attribuer des licences Microsoft 365 à des comptes utilisateurs avec PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - Pour utiliser la gestion des licences basée sur les groupes, voir [Attribuer des licences aux utilisateurs par appartenance aux groupes dans Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Certains services, tels que Sway, sont automatiquement attribués aux utilisateurs et n’ont donc pas besoin d’être attribués individuellement.
@@ -77,7 +77,7 @@ Lorsque vous utilisez la page **Licences** pour l'attribution de licences, vous 
 
 3. Dans la page Détails du produit, sélectionnez **attribuer des licences**.
 
-4. Dans le volet **Attribuer des licences aux utilisateurs**, commencez à saisir un nom, puis sélectionnez-le dans les résultats pour l’ajouter à la liste. Vous pouvez ajouter jusqu'à 20 utilisateurs à la fois.
+4. Dans le volet **Attribuer des licences aux utilisateurs** , commencez à saisir un nom, puis choisissez-le dans les résultats pour l'ajouter à la liste. Vous pouvez ajouter jusqu'à 20 utilisateurs à la fois.
 
 4. Sélectionnez **Activer ou désactiver les applications et les services** pour attribuer ou supprimer l’accès à des éléments particuliers.
 

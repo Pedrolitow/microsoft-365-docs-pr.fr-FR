@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Apprenez comment un administrateur global Microsoft 365 peut modifier l'adresse électronique et le nom d'affichage d'un utilisateur lorsque son nom change. "
-ms.openlocfilehash: b0327dafd875fdcec787e21f5299a32e11aa2a3d
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f3400947130d84ebe7831676ec3c1d31e9ab1bd3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773618"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161869"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -64,7 +65,7 @@ Vous devez être un[administrateur général](about-admin-roles.md) pour effectu
 
 1. Sélectionnez le nom de l’utilisateur, puis sous l’onglet **Compte**, sélectionnez **Gérer le nom d’utilisateur**.
 
-1. Dans la première zone, tapez la première partie de la nouvelle adresse de courrier. Si vous avez ajouté votre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias de messagerie dans la liste déroulante. [Découvrez comment ajouter un domaine](../setup/add-domain.md).
+1. Dans la première case, saisissez la première partie de la nouvelle adresse e-mail. Si vous avez ajouté votre propre domaine à Microsoft 365, choisissez le domaine du nouvel alias de messagerie à l'aide de la liste déroulante. [Découvrez comment ajouter un domaine](../setup/add-domain.md).
 
 1. Sélectionnez **Enregistrer les modifications**.
 
@@ -100,7 +101,7 @@ Vous devez être un[administrateur général](about-admin-roles.md) pour effectu
    >
    > De même, cette option n’apparaît que si vous êtes un administrateur général. Si elle n’apparait pas, vous n’êtes pas autorisé à modifier le nom et l’adresse de messagerie principale d’un utilisateur.
 
-4. Un avertissement jaune de grande taille s’affiche, indiquant que vous êtes sur le point de modifier les informations de connexion de la personne. Sélectionnez **Enregistrer**, puis **Fermer**.
+4. Vous verrez un gros avertissement jaune indiquant que vous êtes sur le point de modifier les informations de connexion de la personne. Sélectionnez **Enregistrer**, puis **Fermer**.
 
 5. Communiquez les informations suivantes à la personne :
 
@@ -164,7 +165,7 @@ Si une personne utilise Exchange Online ou si son compte est lié à l’environ
 
 Cela est dû à l'adresse MOERA (Microsoft Online Email Routing Address). L'adresse MOERA est construite à partir de l'attribut _userPrincipalName_ de la personne dans Active Directory et est automatiquement attribuée au compte cloud lors de la synchronisation initiale. Une fois attribuée, elle ne peut plus être modifiée ou supprimée dans Microsoft 365. Vous pouvez ensuite modifier le nom d'utilisateur dans l'annuaire Active Directory, mais cela ne modifie pas l'adresse MOERA et vous risquez de rencontrer des problèmes lors de l'affichage du nom nouvellement modifié dans la liste d'adresses globale.
 
-Pour résoudre ce problème, connectez-vous au [module Azure Active Directory pour PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) avec vos informations d’identification d’administrateur Microsoft 365. et utilisez la syntaxe suivante :
+Pour résoudre ce problème, connectez-vous au module [Azure Active Directory Domain Services pour PowerShell](https://go.microsoft.com/fwlink/?LinkId=823193) avec vos informations d'identification d'administrateur Microsoft 365. et utilisez la syntaxe suivante :
 
 ```powershell
 Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.com -NewUserPrincipalName anne.jones@contoso.com

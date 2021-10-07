@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: 5cd06f540ba96f55aa52a1cc9b5e6e7c54c7bbab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 279e338af6db4d82291209deb66e1ea1eef74630
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207067"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202332"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -52,7 +52,7 @@ Le tableau suivant récapitule les configurations pour chaque niveau. Utilisez c
 
 |-|Base de référence (public)|Base de référence (privé)|Sensible|Hautement sensible|
 |:-----|:-----|:-----|:-----|:-----|
-|Équipe privé ou publique|Public|Private|Privé|Private|
+|Équipe privé ou publique|Public|Private|Private|Private|
 |Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Uniquement les membres de l’équipe. D’autres personnes peuvent demander l’accès au site associé.|Uniquement les membres de l’équipe.|Uniquement les membres de l’équipe.|
 |Canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Seuls les propriétaires peuvent créer des canaux privés.|Seuls les propriétaires peuvent créer des canaux privés.|
 |Accès invité au niveau du site|**Nouveaux invités et invités existants** (par défaut).|**Nouveaux invités et invités existants** (par défaut).|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|
@@ -122,7 +122,7 @@ Le paramètre des appareils non gérés dans les étiquettes de confidentialité
 
 ![Capture d’écran de l’application cloud Office 365 dans une stratégie d’accès conditionnel Azure Active Directory](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
-L’utilisation d’une stratégie qui affecte tous les services Microsoft 365 peut mener à une meilleure expérience et à une sécurité optimisée pour vos utilisateurs. Par exemple, lorsque vous bloquez l’accès à des appareils non gérés dans SharePoint uniquement, les utilisateurs peuvent accéder à la conversation d’une équipe avec un appareil non géré, mais ils perdront l’accès quand ils tenteront d’accéder à l’onglet **Fichiers**. L’utilisation de l’application cloud Office 365 permet d’éviter les problèmes avec les [dépendances de service](/azure/active-directory/conditional-access/service-dependencies).
+L'utilisation d'une stratégie qui affecte tous les services Microsoft 365 peut conduire à une meilleure sécurité et à une meilleure expérience pour vos utilisateurs. Par exemple, lorsque vous bloquez l'accès aux appareils non gérés dans SharePoint uniquement, les utilisateurs peuvent accéder à la conversation dans une équipe avec un appareil non géré, mais perdront l'accès lorsqu'ils essaieront d'accéder à l'onglet **Fichiers**. L'utilisation de l'application en nuage Office 365 permet d'éviter les problèmes liés aux [dépendances de services](/azure/active-directory/conditional-access/service-dependencies).
 
 ## <a name="next-step"></a>Étape suivante
 

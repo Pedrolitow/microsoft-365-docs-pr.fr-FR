@@ -9,7 +9,7 @@ ms.date: ''
 ms.audience: Admin
 ms.topic: article
 audience: Admin
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -19,12 +19,12 @@ description: Les administrateurs peuvent apprendre comment gérer les autorisati
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5980249d3df0dc94a83b8250f3be55298de5bd
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 629cb9e4ab275d1af6f218df4f6e1b0e60dee201
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482858"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180852"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorisations dans le Portail Microsoft 365 Defender
 
@@ -83,13 +83,13 @@ Pour plus d’informations, consultez [Affichage et attribution des rôles d’a
 |Rôle|Description|
 |---|---|
 |**Administrateur général**|Accède à toutes les fonctionnalités d’administration de tous les services Microsoft 365. Seuls les administrateurs généraux peuvent affecter d’autres rôles d’administrateur. Pour plus d’informations, consultez la section [Administrateur Général / Administrateur d’entreprise](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
-|**Administrateur de conformité des données**|Effectue un suivi des données de votre organisation dans Microsoft 365, vérifie qu’elles sont protégées et obtient des informations sur les problèmes liés à l’atténuation des risques. Pour en savoir plus, consultez la section [Administrateur de conformité des données](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
-|**Administrateur de conformité**|Aide votre organisation à respecter les exigences réglementaires, gère les cas de découverte électronique et gère les stratégies de gouvernance des données sur les emplacements, les identités et les applications Microsoft 365. Pour en savoir plus, consultez la section [Administrateur de conformité](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
+|**Administrateur de conformité des données**|Effectuez un suivi des données de votre organisation dans Microsoft 365, vérifiez qu’elles sont protégées et obtenez des informations sur des problèmes pour permettre d’atténuer les risques. Pour plus d’informations, voir [Administrateur de conformité des données](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
+|**Administrateur de conformité**|Aide votre organisation à respecter les exigences réglementaires, gérez les cas de découverte électronique et maintenez les stratégies de gouvernance des données sur les emplacements, les identités et les applications Microsoft 365. Pour plus d’informations, voir [Administrateur de conformité](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
 |**Opérateur de sécurité**|Consulter, examiner et répondre aux menaces actives envers vos utilisateurs, appareils et contenus Microsoft 365. Pour plus d’informations, voir la section [Opérateur de sécurité](/azure/active-directory/roles/permissions-reference#security-operator).|
-|**Lecteur de sécurité**|Consulte et examine les menaces actives envers vos utilisateurs, appareils et contenus Microsoft 365, mais, contrairement à l’opérateur de sécurité, il n’est pas autorisé à répondre par une action. Pour plus d’informations, voir la section [Lecteur de sécurité](/azure/active-directory/roles/permissions-reference#security-reader).|
-|**Administrateur de sécurité**|Contrôle la sécurité globale de votre organisation en gérant les stratégies de sécurité, en examinant les analyses de la sécurité et les rapports sur les produits Microsoft 365 et en se tenant à jour sur les menaces. Pour plus d’informations, voir la section [Administrateur de sécurité](/azure/active-directory/roles/permissions-reference#security-administrator).|
+|**Lecteur de sécurité**|Consultez et examinez les menaces actives envers vos utilisateurs, appareils et contenus Microsoft 365, mais, contrairement à l’opérateur de sécurité, il n’est pas autorisé à répondre par une action. Pour plus d’informations, voir [Lecteur de sécurité](/azure/active-directory/roles/permissions-reference#security-reader).|
+|**Administrateur de sécurité**|Contrôlez la sécurité globale de votre organisation en gérant les stratégies de sécurité, en examinant les analyses de la sécurité et les rapports sur les produits Microsoft 365 et en se tenant à jour sur les menaces. Pour plus d’informations, voir [Administrateur de sécurité](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Lecteur général**|Version en lecture seule du rôle **Administrateur général**. Affiche tous les paramètres et informations administratives dans Microsoft 365. Pour plus d’informations, consultez [Lecteur général](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Administrateur de simulation d’attaque**|Créez et gérez tous les aspects de la création[simulation d’attaque](attack-simulation-training.md), le lancement/la planification d’une simulation et l’examen des résultats de la simulation. Pour plus d’informations, consultez [Administrateur de simulation d’attaques](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
+|**Administrateur de simulation d’attaque**|Créez et gérez tous les aspects de la création d’une [simulation d’attaque](attack-simulation-training.md), le lancement/la planification d’une simulation et l’examen des résultats de la simulation. Pour plus d’informations, voir [Administrateur de simulation d’attaque](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**Auteur de la charge utile d’attaque**|Créez des charges utiles d’attaque, mais ne les lancez pas ou ne planifiez pas réellement. Pour plus d’informations, consultez [Auteur de charge utile d’attaque](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 

@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Achetez des produits ou services professionnels auprès de Microsoft en utilisant une méthode de paiement existante ou en ajoutant une nouvelle dans le centre d'administration de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1008beb9caf42b68e741406bef3be9efbe2fa2de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208100"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190963"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
@@ -47,7 +47,7 @@ Si votre compte d’entreprise n’a pas de profil de facturation, un administra
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Pour effectuer les étapes de cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, voir [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="add-a-payment-method"></a>Ajouter un mode de paiement
 
@@ -126,7 +126,7 @@ Si un mode de paiement est associé à un abonnement ou à un profil de facturat
 |:----------|:-----|
 |**Un message d'erreur indiquant que le navigateur est actuellement configuré pour bloquer les cookies apparaît.** |Configurez votre navigateur pour autoriser les cookies tiers, puis réessayez. |
 |**Ma carte bancaire a été refusée.** |Si vous payez par carte bancaire et que cette dernière est refusée, vous recevez un courrier électronique vous informant que Microsoft n’a pas pu procéder au paiement. Vérifiez que les détails de la carte (numéro, date d’expiration, nom du détenteur et adresse, dont la ville et le code postal) correspondent exactement à ceux inscrits sur la carte et sur votre relevé. Vous pouvez mettre à jour les informations de la carte et autoriser immédiatement le paiement en suivant le lien **Régler le montant** dans la section **Facturation** de la page de détails de l’abonnement. Pour plus d’informations, consultez [Que se passe-t-il si j’ai un montant impayé ?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Si vous continuez à recevoir le message « Refusé », contactez votre banque. Il est possible que votre carte ne soit pas active. Si vous avez reçu cette carte récemment par courrier avec une date d’expiration mise à jour, assurez-vous de l’activer. Votre établissement bancaire peut également vous indiquer si votre carte n’est pas approuvée pour des transactions en ligne, internationales ou récurrentes. |
-|**Je souhaite mettre à jour un numéro de carte ou de compte bancaire.** |Vous ne pouvez pas modifier le numéro de carte ou de compte bancaire d’un mode de paiement existant. Si le numéro de carte ou de compte bancaire a changé, [procédez au remplacement du mode de paiement](#replace-a-payment-method) : tous les abonnements associés à ce mode de paiement seront reportés sur le nouveau mode ; puis [supprimez le mode obsolète](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
+|**Je souhaite mettre à jour un numéro de carte ou de compte bancaire.** |Vous ne pouvez pas modifier le numéro de compte ou de carte sur un mode de paiement existant. Si le numéro de carte ou de compte bancaire a changé, [procédez au remplacement du mode de paiement](#replace-a-payment-method) : tous les abonnements associés à ce mode de paiement seront reportés sur le nouveau mode ; puis [supprimez le mode obsolète](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Je n'ai qu'une carte ou qu’un compte bancaire sur mon compte et je souhaite le ou la supprimer.** |Si vous n’avez qu’un seul mode de paiement, vous devez en [effectuez le remplacement par un nouveau mode de paiement](#replace-a-payment-method) avant de pouvoir le supprimer. |
 |**Je ne parviens pas à ajouter ma carte ou mon compte bancaire.**  |Vous devez utiliser un mode de paiement provenant du même pays que celui de votre client. Si vous ne parvenez pas à entrer les informations de votre carte ou votre compte bancaire, vous pouvez [contacter le support technique](../../business-video/get-help-support.md). |
 

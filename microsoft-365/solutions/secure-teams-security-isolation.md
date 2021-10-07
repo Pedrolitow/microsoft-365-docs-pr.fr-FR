@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 2a6285b63c67572ec363303e1d850c08d9c8e0c5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 83672c1d723103c3b6b72db7b9c67374a2223593
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182911"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206396"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -86,7 +86,7 @@ Pour créer une équipe pour les informations sensibles
 3. Sélectionnez **Créer une équipe à partir de zéro**.
 4. Dans la liste **Sensibilité**, conservez la valeur par défaut.
 5. Sous **Confidentialité**, cliquez sur **Privée**.
-6. Tapez le nom de l’équipe liée à votre projet sensible. Par exemple, **Projet Saturn**.
+6. Tapez un nom pour l'équipe qui est lié à votre projet sensible. Par exemple, **Projet Saturne**.
 7. Cliquez sur **Créer**.
 8. Ajoutez des utilisateurs à l’équipe, puis cliquez sur **Fermer**.
 

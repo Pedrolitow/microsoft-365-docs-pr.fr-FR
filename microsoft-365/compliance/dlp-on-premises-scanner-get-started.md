@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurer un scanneur local de protection contre la perte de données Microsoft 365
-ms.openlocfilehash: fbaf28c1a88f1654154cc53ce731d2f56bfae382
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28453a3791677b1923a6d72dbf8d59d2620ea139
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158176"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>Prise en main du scanneur local de protection contre la perte de données(préversion)
 
@@ -56,7 +56,7 @@ Les données du scanneur local de protection contre la perte de données peuvent
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Conditions préalables pour un scanneur local de protection contre la perte de données
 
 - Le scanneur Azure Information Protection (AIP) implémente la correspondance des stratégies DLP et l’application de stratégies. Le scanneur est installé dans le cadre du client AIP. Votre installation doit donc satisfaire toutes les conditions préalables requises pour AIP, le client AIP et le scanneur d’étiquetage unifié AIP.
-- Déployer le client et le scanneur AIP. Pour plus d’informations [Installez le client d'étiquetage unifié AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) et consultez [Configuration et installation du scanneur d’étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
+- Déployez le client et le scanner AIP. Pour plus d'informations [Installez le client d'étiquetage unifié AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) et [], consultez [Configuration et installation du scanner d'étiquetage unifié Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Au moins une étiquette et une stratégie doivent être publiées dans le client, même si toutes vos règles de détection ne sont basées que sur des types d’informations sensibles.
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>Déployer un scanneur local de protection contre la perte de données
@@ -76,7 +76,7 @@ Les données du scanneur local de protection contre la perte de données peuvent
     1. ou exécuter l’applet de commande PowerShell **Start-AIPScan**
 
    > [!IMPORTANT]
-   > N'oubliez pas que le scanneur effectue par défaut une analyse delta du référentiel et que les fichiers qui ont déjà été analysés lors du cycle d'analyse précédent seront ignorés, sauf si le fichier a été modifié ou si vous avez lancé une nouvelle analyse complète. La nouvelle analyse complète peut être lancée en utilisant l'option **Relancer l’analyse de tous les fichiers** dans l'interface utilisateur ou en exécutant **Start-AIPScan-Reset**.
+   > N'oubliez pas que l'analyseur exécute une analyse delta du référentiel par défaut et que les fichiers qui ont déjà été analysés lors du cycle d'analyse précédent seront ignorés, sauf si le fichier a été modifié ou si vous avez lancé une nouvelle analyse complète. Une nouvelle analyse complète peut être lancée à l'aide de l'option **Analyser tous les fichiers** dans l'interface utilisateur ou en exécutant **Start-AIPScan-Reset**.
 
 6.  Ouvrez la page de [Protection contre la perte de données](https://compliance.microsoft.com/datalossprevention?viewid=policies) dans le Centre de conformité Microsoft 365.
 

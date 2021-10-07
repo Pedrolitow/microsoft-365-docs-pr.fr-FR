@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8651adb37640d68d0eace7aa23a134ba3b892bbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b865725c39b6b21fe8963fe227e59658feefb813
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202818"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180888"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "59202818"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux clients professionnels dotés de [Microsoft Defender pour Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Microsoft Defender pour Office 365 protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Microsoft Defender pour Office 365 inclut :
 
@@ -130,7 +130,7 @@ Microsoft Defender pour Office 365 Plan 2 inclut les meilleurs [outils d’exame
 
 - **[Les suivis de menace](threat-trackers.md)** fournissent la dernière intelligence sur les problèmes de sécurité sur Internet. Par exemple, vous pouvez afficher des informations sur les derniers programmes malveillants et prendre des contre-mesures avant qu’ils ne deviennent réellement une menace pour votre organisation. Les suivis disponibles incluent des [suivis important](threat-trackers.md#noteworthy-trackers), des [suivis de tendances](threat-trackers.md#trending-trackers),des [requêtes suivies](threat-trackers.md#tracked-queries) et des [requêtes enregistrées](threat-trackers.md#saved-queries).
 
-- **[Threat Explorer (ou détections en temps réel)](threat-explorer.md)** (également appelé Explorer) est un rapport en temps réel qui vous permet d’identifier et d’analyser les menaces récentes. Vous pouvez configurer Explorer pour afficher des données pour les périodes personnalisées.
+- **[Explorateur de menaces (ou détections en temps réel)](threat-explorer.md)** (également appelé Explorateur) est un rapport en temps réel qui vous permet d’identifier et d’analyser les menaces récentes. Vous pouvez configurer Explorateur pour afficher des données pour des périodes personnalisées.
 
 - **[La formation à la simulation d'attaque](attack-simulation-training.md)** vous permet d'exécuter des scénarios d'attaque réalistes dans votre organisation afin d'identifier les vulnérabilités. Des simulations des types d'attaques actuels sont disponibles, notamment des attaques de récupération des informations d'identification et de connexion par hameçonnage et des attaques par pulvérisation de mots de passe et par mot de passe par force brute.
 
