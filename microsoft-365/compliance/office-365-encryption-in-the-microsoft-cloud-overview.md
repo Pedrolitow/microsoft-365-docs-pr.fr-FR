@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
@@ -17,20 +17,20 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Dans cet article, lisez une vue d’ensemble des différentes formes de chiffrement utilisées pour assurer la sécurité des données client dans le cloud Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a253f5fb0df4f71c47aa0c64bd5bfb48ef874c2b1de4d92de245bb2962c3dc7e
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c888c1958eb5265c31ae981e42a96eeeeb57f3ef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53807731"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194380"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Chiffrement dans Microsoft Cloud
 
-Les données client dans les services cloud d’entreprise de Microsoft sont protégées par plusieurs technologies et processus, y compris diverses formes de chiffrement. (Les données client de ce document incluent le contenu d’une boîte aux lettres Exchange Online, le corps du courrier électronique, les entrées de calendrier et le contenu des pièces jointes de courrier électronique et, le cas échéant, le contenu Skype Entreprise), le contenu du site SharePoint Online et les fichiers stockés dans les sites, ainsi que les fichiers téléchargés sur OneDrive Entreprise ou Skype Entreprise.) Microsoft utilise plusieurs méthodes de chiffrement, protocoles et chiffrements dans ses produits et services pour fournir un chemin d’accès sécurisé aux données client pour parcourir nos services cloud et protéger la confidentialité des données client stockées dans nos services cloud. Microsoft utilise certains des protocoles de chiffrement les plus forts et les plus sécurisés disponibles pour empêcher tout accès non autorisé aux données client. Une gestion appropriée des clés est également un élément essentiel des meilleures pratiques de chiffrement, et Microsoft s’assure que toutes les clés de chiffrement gérées par Microsoft sont correctement sécurisées.
+Les données client dans les services cloud d’entreprise de Microsoft sont protégées par plusieurs technologies et processus, y compris diverses formes de chiffrement. (Les données client de ce document incluent le contenu d’une boîte aux lettres Exchange Online, le corps du courrier électronique, les entrées de calendrier et le contenu des pièces jointes, et le cas échéant, le contenu Skype Entreprise), le contenu du site SharePoint Online et les fichiers stockés dans les sites, ainsi que les fichiers téléchargés sur OneDrive Entreprise ou Skype Entreprise.) Microsoft utilise plusieurs méthodes, protocoles et chiffrements de chiffrement dans ses produits et services pour fournir un chemin d’accès sécurisé aux données client pour les déplacer dans nos services cloud et protéger la confidentialité des données client stockées dans nos services cloud. Microsoft utilise certains des protocoles de chiffrement les plus forts et les plus sécurisés disponibles pour empêcher tout accès non autorisé aux données client. Une gestion appropriée des clés est également un élément essentiel des meilleures pratiques de chiffrement, et Microsoft s’assure que toutes les clés de chiffrement gérées par Microsoft sont correctement sécurisées.
 
 Les données client stockées dans les services cloud d’entreprise de Microsoft sont protégées à l’aide d’une ou plusieurs formes de chiffrement. (La validation de notre stratégie de chiffrement et de son application est vérifiée indépendamment par plusieurs auditeurs tiers, et des rapports de ces audits sont disponibles sur le portail d’approbation de [services.)](https://aka.ms/stp)
 
-Microsoft fournit des technologies côté service qui chiffrent les données client au repos et en transit. Par exemple, pour les données client au repos, Microsoft Azure utilise [BitLocker](/windows/device-security/bitlocker/bitlocker-overview) et [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)et Microsoft 365 utilise bitLocker, le chiffrement de [service stockage Azure,](/azure/)le gestionnaire de clés distribuées (DKM) et le chiffrement Microsoft 365 service. [](./exchange-online-secures-email-secrets.md) Pour les données client en transit, Azure, Office 365, le Support commercial Microsoft, Microsoft Dynamics 365, Microsoft Power BI et Visual Studio Team Services utilisent des protocoles de transport sécurisé standard, tels que IPsec (Internet Protocol Security) et TLS (Transport Layer Security), entre les centres de données Microsoft et entre les appareils utilisateur et les centres de données Microsoft.
+Microsoft fournit des technologies côté service qui chiffrent les données client au repos et en transit. Par exemple, pour les données client au repos, Microsoft Azure utilise [BitLocker](/windows/device-security/bitlocker/bitlocker-overview) et [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)et Microsoft 365 utilise bitLocker, le chiffrement de [service stockage Azure,](/azure/)le gestionnaire de clés distribuées (DKM) et le chiffrement Microsoft 365 service. [](./exchange-online-secures-email-secrets.md) Pour les données client en transit, Azure, Office 365, support commercial Microsoft, Microsoft Dynamics 365, Microsoft Power BI et Visual Studio Team Services utilisent des protocoles de transport sécurisé standard, tels que IPsec (Internet Protocol Security) et TLS (Transport Layer Security), entre les centres de données Microsoft et entre les appareils utilisateur et Microsoft centres de données.
 
 En plus du niveau de base de sécurité de chiffrement fourni par Microsoft, nos services cloud incluent également des options de chiffrement que vous pouvez gérer. Par exemple, vous pouvez activer le chiffrement pour le trafic entre leurs machines virtuelles Azure et leurs utilisateurs. Avec [Azure Virtual Networks,](https://azure.microsoft.com/services/virtual-network/)vous pouvez utiliser le protocole IPsec standard pour chiffrer le trafic entre votre passerelle VPN d’entreprise et Azure. Vous pouvez également chiffrer le trafic entre les VM de votre réseau virtuel. En outre, les [nouvelles fonctionnalités chiffrement de messages Office 365 vous](set-up-new-message-encryption-capabilities.md) permettent d’envoyer des messages chiffrés à tout le monde.
 
@@ -46,7 +46,7 @@ Microsoft certifie les modules de chiffrement sous-jacents utilisés dans nos se
 - Dynamics 365 et Dynamics 365 U.S. Governement
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense
 
-Le chiffrement des données client au repos est fourni par plusieurs technologies côté service, notamment BitLocker, DKM, stockage Azure Service Encryption et le chiffrement de service dans Exchange Online, Skype Entreprise, OneDrive Entreprise et SharePoint Online. Office 365 service de chiffrement inclut une option d’utilisation des clés de chiffrement gérées par le client qui sont stockées dans Azure Key Vault. Cette option de clé gérée par le client, appelée Clé [client,](./customer-key-overview.md)est disponible pour Exchange Online, SharePoint Online, Skype Entreprise et OneDrive Entreprise.
+Le chiffrement des données client au repos est fourni par plusieurs technologies côté service, notamment BitLocker, DKM, stockage Azure Service Encryption et le chiffrement de service dans Exchange Online, Skype Entreprise, OneDrive Entreprise et SharePoint En ligne. Office 365 service de chiffrement inclut une option d’utilisation des clés de chiffrement gérées par le client qui sont stockées dans Azure Key Vault. Cette option de clé gérée par le client, appelée Clé [client,](./customer-key-overview.md)est disponible pour Exchange Online, SharePoint Online, Skype Entreprise et OneDrive Entreprise.
 
 Pour les données client en transit, tous les serveurs Office 365 négocier des sessions sécurisées à l’aide de TLS par défaut avec les ordinateurs clients pour sécuriser les données client. Par exemple, Office 365 négociera des sessions sécurisées pour Skype Entreprise, Outlook et Outlook sur le web, les clients mobiles et les navigateurs web.
 

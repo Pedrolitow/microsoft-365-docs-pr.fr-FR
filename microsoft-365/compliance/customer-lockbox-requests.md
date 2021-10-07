@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Découvrez les demandes Customer Lockbox qui vous permettent de contrôler comment un ingénieur du support technique Microsoft peut accéder à vos données lorsque vous êtes face à un problème.
-ms.openlocfilehash: 8fae8b83230fb50e956900b8fed737fbb0a6b230
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 127d9acf602bd6449abd6b324d7b844814d53419
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179270"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Customer Lockbox dans Office 365
 
 
 
-Cet article fournit des instructions de déploiement et de configuration pour Customer Lockbox. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive Entreprise. Pour recommander la prise en charge d’autres services, envoyez une [demande à Office 365 UserVoice](https://office365.uservoice.com/).
+Cet article fournit des instructions de déploiement et de configuration pour Customer Lockbox. Customer Lockbox prend en charge les demandes d’accès aux données dans Exchange Online, SharePoint Online et OneDrive Entreprise. Pour recommander la prise en charge d’autres services, envoyez une [demande Office 365 UserVoice](https://office365.uservoice.com/).
 
 Pour voir les options de gestion des licences pour vos utilisateurs afin de bénéficier des offres de conformité Microsoft 365, consultez les conseils de gestion des licences Microsoft 365 pour la conformité & [sécurité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
@@ -158,7 +158,7 @@ Lorsqu’une personne de votre organisation approuve ou refuse une demande Custo
 | Adresse IP | L’adresse IP de l’ordinateur utilisé par l’approbateur pour approuver ou refuser une demande. |
 | Utilisateur       | Le compte de service \[ \] BOXServiceAccount@.prod.outlook.com.            |
 | Activité   | Set-AccessToCustomerDataRequest :il s’agit de l’activité d’audit enregistrée lorsque vous approuvez ou refusez une demande d’accès au Customer Lockbox.                                |
-| Item       | Guid de la demande Customer Lockbox                             |
+| Élément       | Guid de la demande Customer Lockbox                             |
 
 La capture d’écran suivante montre un exemple d’enregistrement du journal d’audit qui correspond à une demande Customer Lockbox approuvée. Si une demande Customer Lockbox a été refusée, la valeur du paramètre **ApprovalDecision** est **Deny**.
 
@@ -273,7 +273,7 @@ Microsoft implémente des mesures préventives étendues par le biais de systèm
 
 Microsoft 365 utilise un système de contrôle d’accès appelé *Lockbox* pour traiter les demandes d’autorisations qui accordent la possibilité d’effectuer des fonctions opérationnelles et administratives au sein du service. Un opérateur doit demander l’accès au contenu client à l’aide de Lockbox, ce qui nécessite ensuite qu’une deuxième personne prenne des mesures sur la demande (par exemple, l’approuver) avant d’accorder l’accès. Cette deuxième personne ne peut pas être le demandeur et doit être désignée pour approuver l’accès au contenu client. Ce n’est que si la demande est approuvée que l’opérateur acquiert un accès temporaire au contenu du client. Une fois la période d’élévation expirée, Lockbox révoque l’accès.
 
-Pour plus [d’informations](https://www.microsoft.com/licensing/product-licensing/products) sur les pratiques générales de sécurité de Microsoft, reportez-vous aux Conditions d’accès aux services en ligne.
+Pour plus [d’informations](https://www.microsoft.com/licensing/product-licensing/products) sur les pratiques générales de sécurité de Microsoft, reportez-vous aux Conditions d’usage des services en ligne.
 
 #### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>Dans quelles circonstances les ingénieurs Microsoft ont-ils besoin d’accéder à mon contenu ?
 

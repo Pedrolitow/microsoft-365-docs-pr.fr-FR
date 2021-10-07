@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Apprenez comment configurer les paramètres de proxy et de connexion Internet du dispositif pour le DLP Endpoint.
-ms.openlocfilehash: e0de08bd27f2222589343fe66715198645fbeb29
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91fb8b1acbdda1f78ca21dea1f4c3c8e201c0bce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175955"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179198"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison
 

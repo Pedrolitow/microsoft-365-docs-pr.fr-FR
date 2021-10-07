@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ab53061a7880d5ba35c16203cffc7d6eb8e7b718
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb30a5dbc2d5a6859343a1b382cdbd0106819cd2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222568"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191946"
 ---
 # <a name="create-alert-api"></a>CRÉER une API d’alerte
 
@@ -65,7 +65,7 @@ Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et é
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -77,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
+Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -89,7 +89,7 @@ Propriété | Type | Description
 eventTime | DateTime(UTC) | Heure précise de l’événement en tant que chaîne, tel qu’obtenu à partir d’un chasse avancée. Par exemple, ```2018-08-03T16:45:21.7115183Z``` **obligatoire**.
 reportId | String | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
 machineId | String | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
-Sévérité  | String | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
+Sévérité  | Chaîne | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
 title | Chaîne | Titre de l’alerte. **Obligatoire**.
 description | String | Description de l’alerte. **Obligatoire**.
 recommendedAction| Chaîne | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.

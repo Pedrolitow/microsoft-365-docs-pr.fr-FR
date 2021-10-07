@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment définir et gérer des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1692467ac882b563cedd51ad3770312ba883ccd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183576"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194500"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Configurer et afficher des alertes pour les stratégies de protection contre la perte de données
 
@@ -117,7 +117,7 @@ Pour travailler avec le tableau de bord de gestion des alertes DLP :
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*Détails de l’événement*||
     |      | ID                            | ID unique associé à l’événement                                        | Tous les événements                               |
-    |                   | Emplacement                      | Charge de travail où l’événement a été détecté                                      | Tous les événements                               |
+    |                   | Lieu                      | Charge de travail où l’événement a été détecté                                      | Tous les événements                               |
     |                   | Heure de l’activité              | Heure de l’activité de l’utilisateur à l’origine de la violation DLP                    | Tous les événements                               |
     |*Entités impactées*||
     |  | Utilisateur                          | Utilisateur à l’origine de la violation DLP                                          | Tous les événements                               |

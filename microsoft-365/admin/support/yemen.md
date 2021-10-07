@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c04f92c4297804cf16c06c5bfffc24f7bae77031
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 307dd5e86af827530644d18b84d5fe85b0f25791
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208387"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194836"
 ---
 # <a name="contact-support-for-yemen"></a>Contacter le support technique pour le Yémen
 

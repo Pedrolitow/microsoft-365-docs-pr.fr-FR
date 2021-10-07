@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données EML de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 81d6ccc2ca364fed536b802a3b922ebc25c02557
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c590afc3e9501e9c7304852f46173bbd16034d17
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206331"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179450"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>Configurer un connecteur pour archiver les données EML
 
 Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données EML dans les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. EML est l’extension de fichier pour un message électronique enregistré dans un fichier. Le connecteur convertit le contenu d’un élément du format source au format de message électronique, puis importe l’élément dans une boîte aux lettres utilisateur.
 
-Une fois les messages EML stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery et les stratégies et étiquettes de rétention. L’utilisation d’un connecteur EML pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les messages EML stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery et les stratégies et étiquettes de rétention. L’utilisation d’un connecteur EML pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-eml-data"></a>Vue d’ensemble de l’archivage des données EML
 

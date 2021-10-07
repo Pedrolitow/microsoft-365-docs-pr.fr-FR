@@ -8,25 +8,25 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 309f6b7ee396baba0fcec0061d48f062510d7350
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 15561e21dd93f8742dea48cf8c2eac2eef7e13fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183616"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194512"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Appareils Windows 10 intégrés utilisant Configuration Manager
 
 **S’applique à :**
 
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
-- Gestionnaire de configuration de System Center 2012 R2
+- System Center 2012 Configuration Manager R2
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>Intégrer des appareils à l’aide System Center Configuration Manager
 
@@ -36,7 +36,7 @@ ms.locfileid: "59183616"
 
 3. Dans le champ Méthode **de** déploiement, **sélectionnez Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
 
-4. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
+4. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
 
 5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *DeviceComplianceOnboardingScript.cmd*.
 
@@ -66,7 +66,7 @@ Pour chaque appareil, vous pouvez définir une valeur de configuration pour dét
 
 Vous pouvez définir une règle de conformité pour l’élément de configuration dans Configuration Manager afin de modifier le paramètre de partage d’exemples sur un appareil.
 
-Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés pour s’assurer qu’ils sont conformes.
+Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés afin de s’assurer qu’ils sont conformes.
 
 La configuration est définie par le biais de l’entrée de clé de Registre suivante :
 
@@ -138,7 +138,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
 
 1. Obtenez le package de mise hors programme à partir du [Centre de conformité Microsoft](https://compliance.microsoft.com/):
 
@@ -148,7 +148,7 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir
 
 4. Dans le champ Méthode **de** déploiement, **sélectionnez Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
 
-5. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
+5. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
 
 6. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -162,7 +162,7 @@ Si vous utilisez Microsoft Endpoint Configuration Manager branche actuelle, voir
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Si vous utilisez la Microsoft Endpoint Configuration Manager actuelle, utilisez le tableau de bord Microsoft Defender pour point de terminaison intégré dans la console Configuration Manager. Pour plus d’informations, voir Microsoft Defender - Protection avancée [contre les menaces - Surveiller.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
+Si vous utilisez la Microsoft Endpoint Configuration Manager actuelle, utilisez le tableau de bord Microsoft Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, voir Microsoft Defender - Protection avancée [contre les menaces - Surveiller.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
 
 Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
 

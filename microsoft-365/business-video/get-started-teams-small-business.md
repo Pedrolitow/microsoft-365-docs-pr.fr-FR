@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser les Microsoft Teams votre petite entreprise.
-ms.openlocfilehash: 75e5c4aad1ef65e63ed7809cc667fce4b48934e2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 011162269f42c722cf6f1e8ae63b4a6f2901ef3f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182680"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179702"
 ---
 # <a name="get-started-with-teams"></a>Commencez avec Teams
 
@@ -57,7 +57,7 @@ Les canaux sont des sections dédiées au sein d’une équipe pour conserver le
 
 Comme votre équipe travaille ensemble à distance, vous aurez des fichiers que vous souhaiterez partager et sur qui collaborer, à l’intérieur et à l’extérieur de l’entreprise. Microsoft Teams permet de partager facilement des fichiers et de travailler dessus ensemble. Si vos documents sont Word, Excel ou PowerPoint fichiers que vos collègues et clients peuvent même afficher, modifier et collaborer dessus, directement Microsoft Teams.
 
-Assurez-vous que les documents clés de votre entreprise sont enregistrés dans le cloud et prêts à être partagés en toute sécurité avec des clients, des clients, des partenaires, des fournisseurs et d’autres personnes de votre entreprise. Le fait de conserver des fichiers dans le cloud signifie également que vous bénéficiez des avantages de la sauvegarde et de la possibilité de récupérer après des défaillances de disque dur, des attaques par ransomware et d’autres attaques.
+Assurez-vous que les documents clés de votre entreprise sont enregistrés dans le cloud et prêts à être partagés en toute sécurité avec les clients, clients, partenaires, fournisseurs et autres personnes de votre entreprise. Le fait de conserver des fichiers dans le cloud signifie également que vous bénéficiez des avantages de la sauvegarde et de la possibilité de récupérer après des défaillances de disque dur, des attaques par ransomware et d’autres attaques.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -65,7 +65,7 @@ Pour approfondir les fonctionnalités de Microsoft Teams...
 
 ### <a name="secure-your-business-as-it-runs-remotely"></a>Sécuriser votre entreprise pendant qu’elle s’exécute à distance
 
-Une fonctionnalité de sécurité hautement recommandée est l’authentification multifacteur (MFA). L’ajout de l’authentification multifacteur pour les employés distants nécessite qu’ils entrent un code de sécurité reçu par un texte, un appel téléphonique ou une application d’authentification lorsqu’ils se connectent Microsoft 365. Si un pirate informatique met en attente le mot de passe d’une personne par le biais d’une attaque par hameçonnage, il ne peut pas l’utiliser pour accéder aux comptes et données de votre entreprise. Vous pouvez ajouter la protection MFA à partir du centre Administration Microsoft 365 : configurer l’mfmf [pour les appareils mobiles.](set-up-mfa.md)
+Une fonctionnalité de sécurité fortement recommandée est l’authentification multifacteur (MFA). L’ajout de l’authentification multifacteur pour les employés distants nécessite qu’ils entrent un code de sécurité reçu par un texte, un appel téléphonique ou une application d’authentification lorsqu’ils se connectent Microsoft 365. Si un pirate informatique met en attente le mot de passe d’une personne par le biais d’une attaque par hameçonnage, il ne peut pas l’utiliser pour accéder aux comptes et données de votre entreprise. Vous pouvez ajouter la protection MFA à partir du centre Administration Microsoft 365 : configurer l’mfmf [pour les appareils mobiles.](set-up-mfa.md)
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams modèles
 

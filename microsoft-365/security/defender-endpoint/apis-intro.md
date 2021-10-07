@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a49c4993e6d81c90139e043683193f2ee6e532bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ccd9982f387fb5af984bf2b381053d786cc5615
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177731"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191994"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>Accéder aux API Microsoft Defender pour point de terminaison
 
@@ -52,7 +52,7 @@ Vous pouvez accéder à l’API Defender for Endpoint avec le contexte **de l’
 
   Utilisé par les applications qui s’exécutent sans utilisateur inscrit. par exemple, les applications qui s’exécutent en tant que daemons ou services d’arrière-plan.
 
-  Étapes à suivre pour accéder à l’API Defender pour Endpoint avec le contexte de l’application :
+  Étapes à suivre pour accéder à l’API Defender for Endpoint avec le contexte de l’application :
 
   1. Créez une application web AAD.
   2. Attribuez l’autorisation souhaitée à l’application, par exemple, « Lire les alertes » et « Isoler les ordinateurs ».
@@ -64,7 +64,7 @@ Vous pouvez accéder à l’API Defender for Endpoint avec le contexte **de l’
 
 - **Contexte utilisateur :**
 
-  Permet d’effectuer des actions dans l’API au nom d’un utilisateur.
+  Permet d’effectuer des actions dans l’API pour le compte d’un utilisateur.
 
   Étapes à suivre pour accéder à l’API Defender pour Endpoint avec le contexte de l’application :
 

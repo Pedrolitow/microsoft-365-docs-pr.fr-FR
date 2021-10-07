@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3dc075caccc5724ed3ea76e5d3c06f3a5b6f7f2e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7805ad7a2c1aae750b6588a6dd2c4141c9b93c3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164897"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191634"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
@@ -51,29 +51,29 @@ Méthode|Type renvoyé|Description
 
 Propriété|Type|Description
 :---|:---|:---
-id|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md)
+id|String|Identité de [l’entité Indicateur.](ti-indicator.md)
 indicatorValue|Chaîne|Valeur de [l’indicateur](ti-indicator.md).
 indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « FileMd5 », « CertificateThumbprint », « IpAddress », « DomainName » et « Url ».
-application|Chaîne|Application associée à l’indicateur.
+application|String|Application associée à l’indicateur.
 action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Warn », « Block », « Audit », « Alert », « AlertAndBlock », « BlockAndRemediate » et « Allowed ».
 |externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
-createdBySource|chaîne|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
+createdBySource|string|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
 createdBy|String|Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
 lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
 creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
 lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
-title|Chaîne|Titre de l’indicateur.
+title|String|Titre de l’indicateur.
 description|Chaîne|Description de l’indicateur.
-recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
+recommendedActions|String|Actions recommandées pour l’indicateur.
 rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 rbacGroupIds|Liste des chaînes|ID de groupe d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 ## <a name="public-preview-indicator-types"></a>Prévisualisation publique : types d’indicateurs
 
 > [!IMPORTANT]
-> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’investigation et de correction) concernent les produits pré-publiés qui peuvent être considérablement modifiés avant leur commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Les types d’action d’indicateur pris en charge par l’API sont :
 
@@ -87,7 +87,7 @@ Les types d’action d’indicateur pris en charge par l’API sont :
 
 La liste API des types d’actions contient les nouvelles actions de réponse, ainsi que les actions de réponse précédentes (AlertAndBlock et Alert). Pour plus d’informations sur la description des types d’action de réponse, voir [Créer des indicateurs.](manage-indicators.md)
 
-Les actions de réponse IoC Autorisées, Avertir, Bloquer et BlockAndRemediate sont en prévisualisation publique. Pour plus d’informations sur la prévisualisation publique, voir Prévisualisation publique : Améliorations apportées aux [fichiers personnalisés IoC](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997)et mise à jour du schéma d’API - Microsoft Tech Community .
+Les actions de réponse IoC Autorisées, Avertir, Bloquer et BloquerRémediate sont en prévisualisation publique. Pour plus d’informations sur la prévisualisation publique, voir Prévisualisation publique : Améliorations apportées au fichier personnalisé IoC et mise à jour du schéma [d’API - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997).
 
 
 

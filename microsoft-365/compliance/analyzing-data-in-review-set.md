@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 865f5c014e25b0a2abee0ed3ce9d6eb1748c6a6b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181511"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194560"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser les données d’un jeu à réviser dans Advanced eDiscovery
 

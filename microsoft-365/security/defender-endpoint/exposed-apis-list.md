@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8154c144e82a38665f18ec35fdc8d49247ad75ca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8623a4932c23748e35af480613c1e5baac3bbcf6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191898"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 
@@ -36,7 +36,7 @@ ms.locfileid: "59209131"
 
 ### <a name="endpoint-uri"></a>URI de point de terminaison
 
-> L’URI de base du service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
+> L’URI de base de service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
 >
 > Les requêtes basées sur OData ont le préfixe « /api ». Par exemple, pour obtenir des alertes, vous pouvez envoyer une requête GET à [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 
@@ -71,7 +71,7 @@ Rubrique | Description
 [Méthodes et propriétés de l’ordinateur](machine.md) | Exécutez des appels d’API tels que obtenir des appareils, obtenir des appareils par ID, des informations sur les utilisateurs connectés, modifier des \- balises, etc.
 [Méthodes et propriétés de l’action de l’ordinateur](machineaction.md) | Exécutez un appel d’API tel \- que Isolation, Exécuter une analyse antivirus et bien plus encore.
 [Méthodes et propriétés de l’action d'amélioration](recommendation.md) | Exécutez des appels d’API tels \- que obtenir une recommandation par ID.
-[Méthodes et propriétés des activités de correction](get-remediation-methods-properties.md) | Exécutez un appel d’API comme obtenir toutes les tâches de correction, obtenir une tâche de correction des appareils exposés et obtenir une tâche de correction \- par ID.
+[Méthodes et propriétés des activités de correction](get-remediation-methods-properties.md) | Exécutez un appel d’API comme obtenir toutes les tâches de correction, obtenir la tâche de correction des appareils exposés et obtenir une tâche de correction \- par ID.
 [Méthodes et propriétés du score](score.md) | Exécutez des appels d’API tels \- que obtenir le score d’exposition ou obtenir le score de sécurité de l’appareil.
 [Méthodes et propriétés du logiciel](software.md) | Exécutez des appels d’API tels que \- des vulnérabilités de liste par logiciel.
 [Méthodes de l’utilisateur](user.md) | Exécutez des appels d’API tels que l’accès à des \- alertes liées à l’utilisateur et à des appareils liés à l’utilisateur.

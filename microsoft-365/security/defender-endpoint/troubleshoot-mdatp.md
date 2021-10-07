@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a487148601f9565a82f8046019fcf6cb4c2825c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2d001d8c554738415e1108bd273aef642851e619
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191574"
 ---
 # <a name="troubleshoot-service-issues"></a>Résoudre des problèmes de service
 
@@ -61,7 +61,7 @@ Pour plus d’informations, [voir s’assurer Antivirus Microsoft Defender n’e
 
 ## <a name="known-issues-with-regional-formats"></a>Problèmes connus avec les formats régionaux
 
-### <a name="date-and-time-formats"></a>Formats de date et d’heure
+### <a name="date-and-time-formats"></a>Formats de date et d'heure
 
 Il existe des problèmes connus avec les formats d’heure et de date.
 
@@ -74,10 +74,10 @@ Les formats de date et d’heure suivants ne sont actuellement pas pris en charg
 
 - Date au format aaa/MM/j/s
 - Format de date j/MM/aa
-- Format de date avec yy. Affiche uniquement yyyy.
+- Format de date avec aa. Affiche uniquement yyyy.
 - Le format d’heure HH:mm:ss n’est pas pris en charge (le format 12 heures AM/PM n’est pas pris en charge). Seul le format 24 heures est pris en charge.
 
-### <a name="use-of-comma-to-indicate-thousand"></a>Utilisation de la virgule pour indiquer un millier
+### <a name="use-of-comma-to-indicate-thousand"></a>Utilisation de virgule pour indiquer un millier
 
 La prise en charge de l’utilisation de la virgule comme séparateur dans les nombres n’est pas prise en charge. Les régions où un nombre est séparé par une virgule pour indiquer un millier ne voient que l’utilisation d’un point comme séparateur. Par exemple, 15 500 000 sont affichés en tant que 15,5 000.
 

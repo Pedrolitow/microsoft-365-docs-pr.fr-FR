@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f0e7d008d7a51666a4d9a27c187b74b609f38577
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 13d3714f1d5843597e19f04a4f94e63f4adf09cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491468"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192870"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Évaluer l’antivirus Microsoft Defender
 
@@ -54,11 +54,11 @@ Vous pouvez également télécharger un PowerShell qui active automatiquement to
 - [Télécharger le script PowerShell pour configurer automatiquement les paramètres](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
-> Le guide est actuellement destiné à l’évaluation de la Antivirus Microsoft Defender. L’activation de tous les paramètres de ce guide peut ne pas convenir pour un déploiement réel.
+> Le guide est actuellement destiné à l’évaluation d’une Antivirus Microsoft Defender. L’activation de tous les paramètres de ce guide peut ne pas convenir pour un déploiement réel.
 >
-> Pour obtenir les dernières recommandations pour le déploiement et la surveillance réels des Antivirus Microsoft Defender sur un réseau, voir [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
+> Pour obtenir les dernières recommandations pour le déploiement et la surveillance réels de Antivirus Microsoft Defender sur un réseau, voir [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da12be831aa93032b5d087d36e551df0f6370560
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180940"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191514"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Actions de correction dans Microsoft 365 Defender
 
@@ -73,9 +73,9 @@ En plus des actions de correction qui suivent des enquêtes automatisées, votre
 - Action manuelle de l’appareil, telle que l’isolation de l’appareil ou la mise en quarantaine des fichiers
 - Action de messagerie manuelle, telle que la suppression possible des messages électroniques 
 - [Action de recherche](../defender-endpoint/advanced-hunting-overview.md) avancée sur les appareils ou les e-mails
-- [Action de](../office-365-security/threat-explorer.md) l’Explorateur sur le contenu du courrier électronique, telle que le déplacement du courrier électronique vers le courrier indésirable, la suppression possible ou la suppression de courriers électroniques durs
+- [Action de](../office-365-security/threat-explorer.md) l’Explorateur sur le contenu du courrier électronique, telle que le déplacement du courrier électronique vers le courrier indésirable, la suppression possible ou la suppression de courrier électronique
 - Action [de réponse en direct](/windows/security/threat-protection/microsoft-defender-atp/live-response) manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée
-- Action de réponse en direct [avec les API Microsoft Defender pour point](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)de terminaison, telle que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
+- Action de réponse en direct [avec les API microsoft Defender pour](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)les points de terminaison, telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
 
 ## <a name="next-steps"></a>Étapes suivantes
 

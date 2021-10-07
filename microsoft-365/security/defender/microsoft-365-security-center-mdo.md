@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender pour Office 365 dans Microsoft 365 Defender
-description: Découvrez les modifications apportées au Centre de sécurité & conformité Microsoft 365 Defender.
+description: Découvrez les modifications apportées au Centre de sécurité & conformité à Microsoft 365 Defender.
 keywords: Microsoft 365 sécurité, mise en Microsoft 365 Defender, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, nouveau portail de sécurité, nouveau portail de sécurité Defender
 ms.date: 02/21/2021
 ms.author: tracyp
@@ -8,7 +8,7 @@ author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: e65d7e869011cbbc6a55828f693782a6b7e0dfd6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77aa51e80cd339878c5d07d38e71cab810ee130f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177452"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191526"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -30,7 +30,7 @@ ms.locfileid: "59177452"
 
 **S’applique à :**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
-- [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+- [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 ## <a name="quick-reference"></a>Référence rapide
 
@@ -58,7 +58,7 @@ Le tableau ci-dessous répertorie les modifications apportées à la navigation 
 |eDiscovery||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./overview-security-center.md) combine les fonctionnalités de sécurité des portails de sécurité Microsoft existants, notamment le Centre de sécurité <https://security.microsoft.com> & conformité. Ce centre amélioré aide les équipes de sécurité à protéger leur organisation contre les menaces de façon plus pratique et efficace.
+[Microsoft 365 Defender](./overview-security-center.md) à combine les fonctionnalités de sécurité des portails de sécurité Microsoft existants, notamment le Centre de sécurité <https://security.microsoft.com> & conformité. Ce centre amélioré aide les équipes de sécurité à protéger leur organisation contre les menaces de façon plus pratique et efficace.
 
 Si vous êtes familiarisé avec le Centre de sécurité & conformité (protection.office.com), cet article décrit certaines des modifications et améliorations apportées à Microsoft 365 Defender.
 
@@ -131,7 +131,7 @@ Afficher des rapports, modifier vos paramètres, et modifier les rôles d’un u
 
 > [!NOTE]
 > DKIM (DomainKeys Identified Mail) garantit que les systèmes de messagerie de destination font confiance aux messages sortants envoyés à partir de votre domaine personnalisé.
-> Pour les utilisateurs de Defender pour  Office 365, vous pouvez désormais gérer et faire pivoter les clés DKIM via Microsoft 365 Defender : ou accédez à la section Règles de stratégie & stratégies contre les menaces <https://security.microsoft.com/threatpolicy> section  \>  \> \>  \> **DKIM**.
+> Pour les utilisateurs de Defender pour  Office 365, vous pouvez désormais gérer et faire pivoter les clés DKIM via Microsoft 365 Defender : ou accédez à la section Règles des stratégies de & de stratégie contre les menaces <https://security.microsoft.com/threatpolicy> section  \>  \> \>  \> **DKIM**.
 >
 > Pour plus d’informations, voir Utiliser DKIM pour valider les messages [sortants envoyés à partir de votre domaine personnalisé.](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)
 

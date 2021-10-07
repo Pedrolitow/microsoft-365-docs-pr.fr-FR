@@ -3,7 +3,7 @@ title: Scénarios et cas d’usage pour Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: laurieellis
+ms.reviewer: lauris
 ms.date: ''
 audience: admin
 ms.topic: article
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Trouvez des scénarios sur l’utilisation des SharePoint Syntex dans votre organisation.
-ms.openlocfilehash: 619acd5d71bc6f3ab1aa99d3b7fd068faa51d696
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16688f08183e55c8e2f52cdbcd50919dff680c1b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175756"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192054"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Scénarios et cas d’usage pour Microsoft SharePoint Syntex
 

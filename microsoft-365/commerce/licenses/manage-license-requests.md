@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,24 +20,24 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser les demandes de licence des utilisateurs pour votre abonnement Microsoft 365 entreprise.
 ms.date: 06/07/2021
-ms.openlocfilehash: 3a1290c071fa96be654e645d6f7ca82197ecc4b929f6c6c97d1b2c61625b5ef7
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 279894f8e6ffb3209a1b4f2a5201e62428f33b83
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53815050"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179666"
 ---
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
 > [!NOTE]
-> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [la faq sur l’achat en libre-service.](../subscriptions/self-service-purchase-faq.yml)
+> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [le FAQ sur l’achat en libre-service.](../subscriptions/self-service-purchase-faq.yml)
 
 Si vous désactivez les achats en libre-service dans votre organisation, vous pouvez utiliser les demandes de licences pour gérer le processus de demande de licence pour vos utilisateurs. Lorsqu’un utilisateur tente d’effectuer un achat en libre-service pour un produit que vous avez bloqué, il peut soumettre une demande de licence à vous, l’administrateur. Lorsqu’ils font une demande, ils peuvent ajouter les noms d’autres utilisateurs qui ont également besoin de licences pour le produit.
 
 > [!NOTE]
 > Si vous bloquez les utilisateurs d’effectuer des achats en libre-service, Microsoft ne leur envoie pas de courriers électroniques marketing. En outre, s’ils utilisent une version d’essai d’un produit, ils ne voient pas d’invite pour l’acheter. Pour plus d’informations, voir [Gérer les achats en libre-service (administrateur).](../subscriptions/manage-self-service-purchases-admins.md)
 
-Pour voir et gérer les demandes de licence, l’administrateur utilise **l’onglet Demandes** dans la page **Licences.** La liste affiche le nom du produit demandé, le nom de la personne qui demande une licence, la date demandée et l’état de la demande. Les administrateurs peuvent filtrer la liste pour afficher les demandes en attente ou terminées. Les demandes sont maintenues pendant 30 jours.
+Pour voir et gérer les demandes de licence, l’administrateur utilise **l’onglet Demandes** dans la page **Licences.** La liste affiche le nom du produit qui est demandé, le nom de la personne qui demande une licence, la date demandée et l’état de la demande. Les administrateurs peuvent filtrer la liste pour afficher les demandes en attente ou terminées. Les demandes sont maintenues pendant 30 jours.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -77,7 +77,7 @@ Lorsque vous revenir à la liste **demandes,** vous voyez le message Que vous ut
 9. Fermez le volet droit.
     Les utilisateurs reçoivent un courrier électronique qui indique que leur demande a été approuvée ou refusée.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Déplacer les utilisateurs vers un autre abonnement](../subscriptions/move-users-different-subscription.md) (article)\

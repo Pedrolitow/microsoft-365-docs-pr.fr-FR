@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Vue d’ensemble du traitement de différentes formes de données Advanced eDiscovery.
-ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f44593983256079150ad48954c5f1883f836083
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209407"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179030"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Travailler avec les erreurs de traitement dans Advanced eDiscovery
 
@@ -33,7 +33,7 @@ Lorsque vous ajoutez des dépositaires et des sources de données non dépositai
 
 L’onglet **Traitement** dans Advanced eDiscovery fournit un aperçu de l’état de l’indexation avancée pour différents scénarios de traitement.
 
-Pour plus d’informations, voir les articles suivants :
+Si vous souhaitez en savoir plus, consultez les articles suivants :
 
 - [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 

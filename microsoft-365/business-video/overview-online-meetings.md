@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment héberger des réunions en ligne pour votre entreprise.
-ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9988caf32fe36d74b90da217ffb6114f2986f7f8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181738"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194752"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Héberger des réunions en ligne pour votre entreprise
 
 Vous avez besoin de rencontrer un client, un client ou un partenaire, mais vous ne pouvez pas mettre tout le monde au même endroit ? Ne vous inquiétez pas, vous devez avoir une réunion en ligne. S’ils ont un smartphone, une tablette ou un ordinateur portable, ils peuvent se joindre à Microsoft Teams.
 
-Ils devront télécharger la [version](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) gratuite ou participer en [ligne dans](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) un navigateur pour obtenir la vidéo et le partage d’écran.
+Ils doivent télécharger la [version](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) gratuite ou se joindre en ligne dans un [navigateur](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) pour obtenir la vidéo et le partage d’écran.
 
 Si vous collaborez fréquemment étroitement sur des projets avec un client, un client ou un partenaire, envisagez de créer une équipe pour vos [clients,](team-with-guests.md) vous pouvez facilement les inviter à des réunions et avoir des conversations, partager des fichiers et suivre les projets dans Microsoft Teams.
 
@@ -47,7 +47,7 @@ Pour planifier des réunions avec vos employés, clients et autres invités, uti
 
 1. In Microsoft Teams, in the left navigation, choose **Meetings**.
 1. Choisissez **Planifier une réunion.**
-1. Dans la **zone Nouvelle réunion,** entrez un titre **et** un **emplacement** pour la réunion.
+1. Dans la **zone Nouvelle réunion,** entrez un **titre et** un **emplacement** pour la réunion.
 1. Entrez une heure et **une** date **de** début et de fin.
 1. Dans la **zone Détails,** entrez une description de la réunion et tous les autres détails que vous souhaitez ajouter, tels qu’un ordre du jour de la réunion.
 1. Sous **Inviter des personnes,** entrez les noms des employés ou des clients que vous voulez inviter.

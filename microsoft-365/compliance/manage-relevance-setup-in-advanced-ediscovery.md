@@ -9,19 +9,19 @@ titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lisez les recommandations pour configurer l’entraînement Pertinence dans Advanced eDiscovery pour qu’il note les fichiers selon leur pertinence et génère des résultats.
-ms.openlocfilehash: 9a6dd5cee08ea795d8f7b2381145d2b7303ae2fb61dde395974dfc7aa6f00cdf
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: bed912c0631511e9d3d4839e5d6925de79554163
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53842170"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194416"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestion de la configuration de Pertinence dans Advanced eDiscovery (classique)
 

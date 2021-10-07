@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6a134dced8eb749bebdf7e486c6d06c9cc19048b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5bf6cc1f64cfbc7c4238e01ad7d623e3164639c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183279"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191550"
 ---
 # <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de navigation web
 
@@ -51,7 +51,7 @@ La protection Web vous permet de surveiller la sécurité de navigation web de v
 La protection web classe les sites web malveillants et indésirables comme :
 
 - **Hameçonnage :** sites web qui contiennent des formulaires web usurpés et d’autres mécanismes de hameçonnage conçus pour leurre les utilisateurs à divulguer des informations d’identification et d’autres informations sensibles
-- **Malveillant :** sites web hébergeant des programmes malveillants et du code d’exploitation
+- **Malveillant :** sites web qui hébergent des programmes malveillants et du code d’exploitation
 - **Indicateur personnalisé** : sites web dont vous avez ajouté les URL ou les domaines à votre liste d’indicateurs personnalisés [pour](manage-indicators.md) le blocage
 
 ## <a name="view-the-domain-list"></a>Afficher la liste des domaines

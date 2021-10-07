@@ -9,7 +9,7 @@ ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: En savoir plus sur Microsoft 365 l’inscription en libre-service et les programmes libre-service disponibles tels que Microsoft Power Apps, Microsoft Power Automate et Dynamics 365 for Finance.
 ms.date: 03/17/2021
-ms.openlocfilehash: 7c4986beb1c920865cee28f2729859e426944f3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 87f432be0659d03a1e8f77b682997dc32d1dc111
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178763"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192690"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service dans votre organisation
 
@@ -57,7 +57,7 @@ Voici les programmes en libre-service actuellement disponibles. Cette liste sera
 |**Primes incitatives des partenaires Microsoft** <br/> |Microsoft Partner Network fournit trois types d’appartenances. Chaque type offre un ensemble d’avantages pour aider votre entreprise à croître. À mesure que vous atteignez vos objectifs, participez au programme au niveau qui répond à vos besoins uniques pour accéder à d’autres avantages et développer votre relation avec nous et d’autres partenaires dans le réseau.  <br/> |[Primes incitatives des partenaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |[Primes incitatives des partenaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |
 |**Microsoft Business Center** <br/> |Le Microsoft Business Center est le portail pour les clients qui ont effectué des achats via le Contrat de produits et services Microsoft (MPSA). <br/> |[Démarrage rapide : s’inscrire au Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Centre de service de licence en volume Microsoft** <br/> |Le Centre de service de licence en volume Microsoft affiche les licences achetées dans le cadre des contrats Enterprise, Sélection, Éducation (Campus ou École), Open Value, Open License et ISV.  <br/> |[Formation et ressources vlsc](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Centre de service de licence en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
-|**Minecraft Education Edition** <br/> |En utilisant Minecraft en tant que plateforme pour l’apprentissage, les enseignants peuvent encourager et encourager chaque étudiant à atteindre d’autres objectifs et à susciter une envie d’apprentissage. Rejoignez une communauté d’enseignants qui apprennent à utiliser Minecraft pour déverrouiller le potentiel des étudiants.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
+|**Minecraft Education Edition** <br/> |En utilisant Minecraft en tant que plateforme pour l’apprentissage, les enseignants peuvent encourager et inciter chaque étudiant à atteindre d’autres objectifs et à susciter une envie d’apprentissage. Rejoignez une communauté d’enseignants qui apprennent à utiliser Minecraft pour déverrouiller le potentiel des étudiants.  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream (basé sur SharePoint)** <br/> |Télécharger et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience &amp; d’inscription au jour 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream (basé sur SharePoint)](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power Automate est un produit qui vous aide à configurer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, recevoir des notifications, collecter des données, etc.  <br/> |[Inscrivez-vous et connectez-vous Power Automate](/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |Power Virtual Agents permet aux équipes de créer facilement des bots puissants à l’aide d’une interface graphique sans code guidée sans avoir besoin de données ou de développeurs. Power Virtual Agents de nombreux problèmes majeurs avec la création de bots dans le secteur aujourd’hui. Cela élimine l’écart entre les experts techniques et les équipes de développement qui construisent les bots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour le résoudre.  <br/> |[Détails des licences et de l’accès](/power-virtual-agents/requirements-licensing) <br/> |[S’inscrire à Power Virtual Agents](https://aka.ms/TryPVA) <br/> |

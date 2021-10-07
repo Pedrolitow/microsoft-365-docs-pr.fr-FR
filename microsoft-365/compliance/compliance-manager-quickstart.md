@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9697e638d29f61e70f01534d1fa0a5bfb2b80e48
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181385"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192282"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 

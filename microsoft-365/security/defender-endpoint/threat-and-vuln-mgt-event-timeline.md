@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9397eeaf9edd58903a50cf3f9194b995c56d216
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e74989d85919e0f8c89f28e67c5bbbf7cec7ff04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164937"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191670"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements : Gestion des menaces et des vulnérabilités
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Chronologie des événements - Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -66,7 +66,7 @@ La sélection **d’Afficher tous** les événements de ce jour vous place sur l
 
 ![Chronologie des événements : plage de dates personnalisée sélectionnée.](images/tvm-event-timeline-drilldown.png)
 
-Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre personnalisée ou une plage de temps pré-définie.
+Sélectionnez **Plage personnalisée** pour modifier la plage de dates en une autre plage personnalisée ou une plage de temps pré-définie.
 
 ![Options de plage de dates de chronologie des événements.](images/tvm-event-timeline-dates.png)
 
@@ -110,21 +110,21 @@ Les icônes suivantes s’affiche en plus des événements :
 
 ### <a name="drill-down-to-a-specific-event"></a>Accès à un événement spécifique
 
-Une fois que vous avez sélectionné un événement, un flyout s’affiche avec une liste des détails et des CV actuels qui affectent vos appareils. Vous pouvez afficher d’autres CV ou consulter la recommandation associée.
+Une fois que vous avez sélectionné un événement, un volant s’affiche avec une liste des détails et des CV actuels qui affectent vos appareils. Vous pouvez afficher d’autres CV ou consulter la recommandation associée.
 
 La flèche sous « tendance de score » vous permet de déterminer si cet événement a potentiellement augmenté ou réduit le score d’exposition de votre organisation. Un score d’exposition plus élevé signifie que les appareils sont plus vulnérables à l’exploitation.
 
 ![Volant de chronologie des événements.](images/tvm-event-timeline-flyout500.png)
 
-À partir de là, **sélectionnez** Go to related security recommendation view the recommendation that addresses the new software vulnerability in the [security recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)
+À partir de là, sélectionnez Go **to related security recommendation** view the recommendation that addresses the new software vulnerability in the security [recommendations page](tvm-security-recommendation.md). Après avoir lu la description et les détails de la vulnérabilité dans la recommandation de sécurité, vous pouvez envoyer une demande de correction et suivre la demande dans la [page de correction.](tvm-remediation.md)
 
 ## <a name="view-event-timelines-in-software-pages"></a>Afficher les chronologies des événements dans les pages logicielles
 
 Pour ouvrir une page de logiciels, sélectionnez un > sélectionnez le nom du logiciel avec lien hypertexte (comme Visual Studio 2017) dans la section intitulée « Composant associé » dans le volant. [En savoir plus sur les pages logicielles](tvm-software-inventory.md#software-pages)
 
-Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez avec la souris sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
+Une page complète s’affiche avec tous les détails d’un logiciel spécifique. Pointez sur le graphique pour voir la chronologie des événements pour ce logiciel spécifique.
 
-![Page de logiciels avec un graphique de chronologie d’événement.](images/tvm-event-timeline-software2.png)
+![Page de logiciels avec un graphique de chronologie des événements.](images/tvm-event-timeline-software2.png)
 
 Accédez à l’onglet Chronologie des événements pour afficher tous les événements liés à ce logiciel. Vous pouvez également voir les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions.
 

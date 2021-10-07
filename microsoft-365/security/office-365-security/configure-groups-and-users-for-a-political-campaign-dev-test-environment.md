@@ -11,7 +11,7 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
@@ -19,12 +19,12 @@ description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterpri
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f39a898a6926938790b7adb3d18ec66641224bd9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c31a829ac74f642b0107fa3048f8f29a6a73aa5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207212"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191434"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 

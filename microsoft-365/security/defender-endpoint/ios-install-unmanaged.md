@@ -2,27 +2,25 @@
 title: Déployer Microsoft Defender pour le point de terminaison sur les fonctionnalités iOS
 description: Décrit comment déployer Microsoft Defender pour Endpoint sur des appareils iOS non inscrits.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: sunasing
 author: sunasing
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7057de56de516843fa91e87a50d56e03a2d88e50
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: 32063caceaf74a3924585aac0142958736dcc5c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941927"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192702"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-unenrolled-ios-devices"></a>Déployer Microsoft Defender pour endpoint sur des appareils iOS non inscrits
 
@@ -52,7 +50,7 @@ Pour configurer des stratégies de protection des applications avec Microsoft De
 1. Sélectionnez **Enregistrer**. Vous devriez voir que **l’état de** la connexion est désormais **activé.**
 1. Créez la stratégie de protection des applications : une fois  la configuration de votre connecteur Microsoft Defender pour point de terminaison terminée, accédez aux stratégies de protection des applications (sous Stratégie) pour créer une stratégie ou mettre à jour une stratégie \>  existante.
 1. Sélectionnez les paramètres de plateforme, **d’applications, de protection** des données et d’accès requis par votre organisation pour votre stratégie.
-1. Dans **les conditions de lancement** \> **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il doit être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront **Bloquer** l’accès ou Effacer **les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
+1. Dans **les conditions de lancement** \> **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il doit être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront Bloquer **l’accès** ou **Effacer les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
 1. Terminez avec Affectations et enregistrez votre stratégie.
 
 Pour plus d’informations sur la stratégie de protection des applications ou de gestion des applications, voir les paramètres de stratégie de protection des [applications iOS.](/mem/intune/apps/app-protection-policy-settings-ios)

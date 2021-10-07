@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium vos utilisateurs et protège vos données.
-ms.openlocfilehash: 8f8ccbbb1f9edb6eb9b1f29078317727b5e9b6e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e6fc47e0476c063cb7d24bd84a255e279bf84ed3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178275"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194740"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
@@ -63,7 +63,7 @@ Une fois ces paramètres mis en place, vos utilisateurs sont invités à utilise
 
 Il est également important que les utilisateurs conservent leur périphérique de travail principal à jour :
 
-- Installez les dernières versions de Office applications de bureau et conservez-les à jour avec les mises à jour, lorsque vous y être invité.
+- Installez les dernières versions de Office applications de bureau et gardez-les à jour avec les mises à jour, lorsque vous y être invité.
 - Restez informé des mises à jour du système d’exploitation, telles que Windows mises à jour.
 
 Pour [les appareils Windows 10 mac](m365-campaigns-protect-pcs-macs.md)non Windows 10, les utilisateurs ont la responsabilité de s’assurer que les fonctionnalités de sécurité de base sont activées.
@@ -72,7 +72,7 @@ Pour [les appareils Windows 10 mac](m365-campaigns-protect-pcs-macs.md)non Windo
 
 |**Windows 10**|**Mac**|
 |:-----|:------|
-|Activer la protection des appareils BitLocker<p><p> S’assurer Windows Defender reste sur <p>Activer le pare-feu Windows de sécurité| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection contre le pare-feu|
+|Activer la protection des appareils BitLocker<p><p> S’assurer Windows Defender reste sur <p>Activer le Pare-feu Windows| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection contre le pare-feu|
 
 Pour en savoir plus sur ces recommandations, voir Protéger votre compte et vos appareils contre les [pirates informatiques et les programmes malveillants.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 

@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Modifiez le thème de couleur de votre page de réservation dans l’application Microsoft Bookings.
-ms.openlocfilehash: 5faf769eeee8a34989e1fc3f1d5859c9770f85a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 91ce865df7cff3029dc9f48080cbcc08e453bd7d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181775"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192486"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personnaliser et publier votre page de réservation
 
@@ -32,7 +32,7 @@ La section ci-dessous vous donne des informations sur la configuration de votre 
 
     La page de réservation interne ressemble à ceci :
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Page Bookings.":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Page Réservations.":::
 
 - **Contrôle d’accès à la page de réservation :** exiger un compte Microsoft 365 de mon organisation à réserver  La sélection de cette option permet uniquement aux membres de votre organisation d’afficher votre page ou de réserver des services. L’accès à la page est autorisé via des vérifications d’informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du client.
 
@@ -44,7 +44,7 @@ La section ci-dessous vous donne des informations sur la configuration de votre 
 
 - **Disponibilité** Il s’agit d’une option qui permet de définir des plages de dates et d’heures spécifiques de disponibilité pour un service. Dans le cas contraire, Bookings sera par défaut vos heures d’ouverture. Vous pouvez utiliser **l’option Disponibilité** ici pour des scénarios tels que des congés ou des heures prolongées.
 
-- **Personnaliser votre page** Choisissez les couleurs et les logos qui apparaissent sur Self-Service page, par exemple pour assurer la cohérence de la marque.
+- **Personnaliser votre page** Choisissez les couleurs et les logos qui apparaissent sur Self-Service page, par exemple pour la cohérence de la marque.
 
 - **Paramètres de région et de fuseau horaire** Ici, vous pouvez définir vos préférences de fuseau horaire et de langue pour la page Self-Service page. Nous vous recommandons de définir votre fuseau horaire local. Pour les visiteurs de votre page Self-Service, Bookings détecte automatiquement leurs fuseaux horaires locaux et affiche leur disponibilité dans leurs propres fuseaux horaires. Par exemple, si un rendez-vous est disponible à 13h00 PST, l’heure disponible s’affiche à 15h00 CST.
 

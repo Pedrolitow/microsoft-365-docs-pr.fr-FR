@@ -1,7 +1,7 @@
 ---
 title: Questions fréquemment posées sur la découverte d’appareils
 description: Trouvez des réponses aux questions fréquemment posées sur la découverte d’appareils
-keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils nonmanagés
+keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils non utilisés
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 145f757b0172179689509f173476b44e3db69d6e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7af22cf31c8ad8cad4640d99737bc359e0ab6d2c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222504"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192906"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d’appareils
 
@@ -49,7 +49,7 @@ Vous avez la possibilité de désactiver la découverte d’appareils via la pag
  Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour le point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n’aurez probablement qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Puis-je contrôler quels appareils effectuent la découverte standard ?
- Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (appareils actuellement Windows 10 uniquement) ou sélectionner un sous-ensemble ou sous-ensemble de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
+ Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (appareils actuellement Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Puis-je exclure des appareils non utilisés de la liste d’inventaire des appareils ?
 Oui, vous pouvez appliquer des filtres pour exclure les appareils nonmanagés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés. 
@@ -104,7 +104,7 @@ Par opposition aux activités malveillantes, qui analysent généralement l’en
 ### <a name="active-probing-generates-negligible-amount-of-extra-traffic"></a>L’analyse active génère une quantité négligeable de trafic supplémentaire
 En règle générale, les appareils non utilisés ne sont sondés qu’une seule fois par période de trois semaines et génèrent moins de 50 000 To de trafic. Les activités malveillantes incluent généralement des tentatives d’analyse répétitives élevées et, dans certains cas, une exfiltration de données qui génère une quantité importante de trafic réseau qui peut être identifiée comme une anomalie par les outils de surveillance du réseau. 
 
-### <a name="your-windows-device-already-runs-active-discovery"></a>Votre Windows’appareil exécute déjà la découverte active
+### <a name="your-windows-device-already-runs-active-discovery"></a>Votre appareil Windows exécute déjà la découverte active
 Les fonctionnalités de découverte actives ont toujours été incorporées dans le système d’exploitation Windows pour rechercher des appareils, des points de terminaison et des imprimantes à proximité, pour faciliter les expériences « plug-and-play » et le partage de fichiers entre les points de terminaison du réseau. Des fonctionnalités similaires sont implémentées dans les appareils mobiles, les équipements réseau et les applications d’inventaire pour n’en citer que quelques-uns.  
 
 La découverte standard utilise les mêmes méthodes de découverte pour identifier les appareils et avoir une visibilité unifiée pour tous les appareils de votre réseau dans l’inventaire Microsoft 365 Defender périphériques. Par exemple, la découverte standard identifie les points de terminaison à proximité dans le réseau de la même manière que Windows les imprimantes disponibles dans le réseau. 

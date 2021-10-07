@@ -2,7 +2,7 @@
 title: Journal d’audit de la gestion des risques internes
 description: En savoir plus sur le journal d’audit de la gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6fa7ab5b30a4cfad8ec4305c0ddf8fcda1c6f284
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9355c3e41025ae8002bc9d40fc4ff06333c72e94
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182232"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179078"
 ---
 # <a name="insider-risk-management-audit-log"></a>Journal d’audit de la gestion des risques internes
 
@@ -29,7 +29,7 @@ Le journal d’audit est automatiquement et immédiatement mis à jour chaque fo
 
 Les domaines inclus dans l’analyse des activités sont les suivants :
 
-- Stratégies
+- Politiques
 - Cas
 - Alertes
 - Paramètres
@@ -60,7 +60,7 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente d’
 
 ## <a name="audit-log-export"></a>Exportation du journal d’audit
 
-Les *utilisateurs affectés* aux groupes de rôles Insider *Risk Management* ou Insider Risk Management Auditors peuvent exporter toute l’activité du journal d’audit vers un fichier .csv (valeurs séparées par des virgules) en sélectionnant **Exporter** dans la page du journal **d’audit** des risques internes. Selon l’activité, certains champs d’une activité peuvent ne pas être applicables à l’activité et ces champs apparaîtront comme vides dans le fichier exporté.
+Les *utilisateurs affectés* aux groupes de rôles Insider *Risk Management* ou Insider Risk Management Auditors peuvent exporter toute l’activité du journal d’audit vers un fichier .csv (valeurs séparées par des virgules) en sélectionnant **Exporter** dans la page journal **d’audit** des risques internes. Selon l’activité, certains champs d’une activité peuvent ne pas être applicables à l’activité et ces champs apparaîtront comme vides dans le fichier exporté.
 
 Le fichier contient des informations d’activité pour les champs suivants :
 
@@ -70,13 +70,13 @@ Le fichier contient des informations d’activité pour les champs suivants :
 - **Volume d’alerte**: niveau du volume d’alerte défini dans les paramètres de gestion des risques internes.
 - **Montant**: montants des indicateurs personnalisés actuellement sélectionnés pour une stratégie.
 - **ID d’actif**: ID de l’actif physique de priorité sur qui l’activité a été effectuée.
-- **Catégorie :** Catégorie de l’élément modifié. Les valeurs *sont les modèles Stratégies, Cas, Utilisateurs, Alertes, Paramètres* et *Notification.*
+- **Catégorie :** Catégorie de l’élément modifié. Les valeurs *sont les modèles Stratégies, Cas, Utilisateurs, Alertes, Paramètres et* *Notification.*
 - **Date :** Date et heure, répertoriées dans la date et l’heure locales de votre organisation.
 - **Description**: entrée de description par l’utilisateur pour l’objet en cours d’action (par exemple, une stratégie ou un groupe d’utilisateurs prioritaire).
 - **Stratégie DLP :** stratégie de protection contre la perte de données (DLP) sélectionnée pour déclencher l’inclusion dans une stratégie de gestion des risques internes.
 - **Indicateur**: indicateur dans les paramètres de risque internes sur qui l’activité a été effectuée (par exemple, ajout ou suppression d’un indicateur).
 - **Modèle de notification**: modèle d’avis sur qui l’activité a été effectuée.
-- **Nombre de jours :** fenêtre d’activation de stratégie définie dans les paramètres de risque interne.
+- **Nombre de jours :** fenêtre d’activation de stratégie définie dans les paramètres de risque internes.
 - **Nombre de fichiers**: limite de volume de fichiers définie dans les paramètres de gestion des risques internes.
 - **Modèle de stratégie**: le modèle de stratégie sur qui les indicateurs ont agit appartient.
 - **Montant précédent :** montants des indicateurs personnalisés précédemment sélectionnés pour une stratégie.

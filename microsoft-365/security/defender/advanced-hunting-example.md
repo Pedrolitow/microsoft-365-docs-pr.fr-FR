@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d3ac49b4afde0951e7a034c5c11114afbc52c293
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0226be17f475250d5d50d363596bd115f27ce6cd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177515"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191538"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exemple de recherche avancée pour Microsoft Defender pour Office 365
 

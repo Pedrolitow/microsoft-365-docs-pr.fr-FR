@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment importer du courrier vers Microsoft 365 entreprise.
-ms.openlocfilehash: 7049642d071ff6b16a489a89c9355b35667a1e58
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b07bab2ec273731423bc7bab8e034a3986e1bc09
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182672"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179714"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>Importer du courrier électronique Microsoft 365 entreprise 
 

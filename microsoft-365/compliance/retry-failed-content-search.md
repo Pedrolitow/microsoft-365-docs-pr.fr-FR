@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Au cours d’un examen, vous pouvez utiliser le bouton Nouvelle tentative pour résoudre les recherches de contenu qui ont des erreurs d’emplacement de contenu.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee60ab8aa5dad32360303f31924995f110ed99cc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3c433dfa6bf842f1d62350e3b518177d1bdca6d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202326"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192162"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Réessayer une recherche de contenu pour résoudre une erreur d’emplacement de contenu
 
@@ -38,11 +38,11 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Ces erreurs (avec des codes d’erreur de CS001-002, CS003-002, CS008-009, CS012-002 et d’autres erreurs de la forme CS0XX-0XX) indiquent que la recherche de contenu n’a pas réussi à rechercher des emplacements de contenu spécifiques ; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchés. Ces erreurs s’affichent dans la page de présentation des détails de l’état de la recherche de contenu.
+Ces erreurs (avec des codes d’erreur de CS001-002, CS003-002, CS008-009, CS012-002 et d’autres erreurs de la forme CS0XX-0XX) indiquent que la recherche de contenu n’a pas réussi à rechercher des emplacements de contenu spécifiques ; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchés. Ces erreurs sont affichées dans la page de présentation des détails de l’état de la recherche de contenu.
 
 ## <a name="cause-of-content-location-errors"></a>Cause des erreurs d’emplacement de contenu
 
-Lorsque vous recherchez un grand nombre de boîtes aux lettres, la recherche est distribuée sur des milliers de serveurs dans un centre de données Microsoft. À tout moment, des serveurs spécifiques peuvent être en état de redémarrage ou en cours de rerouillage vers des copies redondantes. Dans l’un ou l’autre de ces cas, la demande de la recherche de contenu pour récupérer des données va prendre du temps. Dans l’exemple précédent, les erreurs des boîtes aux lettres qui ont échoué étaient le résultat du délai d’insétion de la recherche.
+Lorsque vous recherchez un grand nombre de boîtes aux lettres, la recherche est distribuée sur des milliers de serveurs dans un centre de données Microsoft. À tout moment, des serveurs spécifiques peuvent être en état de redémarrage ou en cours de rerouillage vers des copies redondantes. Dans l’un ou l’autre de ces cas, la demande de récupération des données par la recherche de contenu prendra du temps. Dans l’exemple précédent, les erreurs des boîtes aux lettres qui ont échoué étaient le résultat du délai d’insétion de la recherche.
 
 ## <a name="resolving-content-location-errors"></a>Résolution des erreurs d’emplacement de contenu
 

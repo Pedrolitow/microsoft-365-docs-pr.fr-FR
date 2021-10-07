@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +19,18 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment gérer les abonnements gratuits à l’inscription en libre-service pour votre organisation.
 ms.date: 03/17/2021
-ms.openlocfilehash: b942d21fb3c4a6d6b8ab27fafb2af00a095c2a608909142788e46dbe60cdfa9d
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 24f852a1eb9983e211000b59bda32eaa2c6bf0fa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53852150"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192378"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gérer les abonnements d’inscription en libre-service
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>Qu’est-ce que les abonnements en libre-service ?
 
-Un nombre limité d’abonnements d’inscription libre-service est disponible pour les utilisateurs de votre organisation. Un utilisateur peut uniquement s’inscrire et utiliser un abonnement d’inscription en libre-service pour lui-même. Vous gérez les abonnements d’inscription en libre-service en bloquant l’inscription des utilisateurs et en supprimant les abonnements gratuits pour les utilisateurs inscrits. Pour plus d’informations sur l’inscription en libre-service et les abonnements disponibles, voir l’utilisation de l’inscription en [libre-service dans votre organisation.](../../admin/misc/self-service-sign-up.md)
+Un nombre limité d’abonnements gratuits en libre-service sont disponibles pour les utilisateurs de votre organisation. Un utilisateur peut uniquement s’inscrire et utiliser un abonnement d’inscription en libre-service pour lui-même. Vous gérez les abonnements d’inscription en libre-service en bloquant l’inscription des utilisateurs et en supprimant les abonnements gratuits pour les utilisateurs inscrits. Pour plus d’informations sur l’inscription en libre-service et les abonnements disponibles, voir l’utilisation de l’inscription en [libre-service dans votre organisation.](../../admin/misc/self-service-sign-up.md)
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Afficher la liste des abonnements d’inscription en libre-service
 

@@ -9,7 +9,7 @@ ms.date: 8/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Découvrez comment créer une stratégie de type d’informations sensibles pour votre organisation à l’aide de chiffrement de messages Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ad570f64122aecd245b912b1b6545a5950e838cc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b04747a6aa51b963bd031fde616d4463dbb7aaa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206091"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179066"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages
 
@@ -58,7 +58,7 @@ Pour plus d’informations, [voir Set-IRMConfiguration](/powershell/module/excha
 
 ## <a name="how-recipients-access-attachments"></a>Accès des destinataires aux pièces jointes
 
-Une fois que Microsoft a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leurs messages chiffrés et les ouvrent.
+Une fois que Microsoft a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leurs messages électroniques chiffrés et les ouvrent.
 
 ## <a name="to-prepare-for-this-change"></a>Pour préparer cette modification
 

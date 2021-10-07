@@ -10,7 +10,7 @@ ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4WindowsConfig
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -28,12 +28,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Découvrez comment configurer les paramètres de la stratégie d’appareil par défaut que tout appareil Windows 10 recevra lors de la signature de son compte scolaire ou scolaire.
-ms.openlocfilehash: b4460f8f5e40ee6f0e121b128f17e27db7aa4979
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a39fdad31de5e4aef2fa5bbc4995d9c4c8bbb90
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178764"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191240"
 ---
 # <a name="secure-windows-10-devices"></a>Sécuriser les appareils Windows 10
 
@@ -47,7 +47,7 @@ Par défaut, tous les paramètres sont **activés**. Les paramètres suivants so
   
 
 
-|Setting  <br/> |Description  <br/> |
+|Paramètre  <br/> |Description  <br/> |
 |:-----|:-----|
 |Protéger les ordinateurs des virus et d'autres menaces à l'aide de l'antivirus Windows Defender  <br/> |L'antivirus Windows Defender doit être activé pour protéger les ordinateurs contre les risques liés à la connexion à internet.  <br/> |
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |Active les paramètres Microsoft Edge qui protègent les utilisateurs contre les sites et téléchargements malveillants.  <br/> |

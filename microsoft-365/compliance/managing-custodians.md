@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil de gestion des dépositaires dans Advanced eDiscovery gérer les données d’un dossier juridique.
-ms.openlocfilehash: 22297edbf73f561ad46e5fae521abeb371fdc88d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d621e511f0607c77d05b27f5deae2b5f85d09eaa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192210"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Travailler avec des sources de données de consignataires et de non consignataires dans Advanced eDiscovery
 
@@ -31,7 +31,7 @@ Lorsqu’une organisation répond à une enquête juridique, le flux de travail 
 
 En outre, il peut y avoir du contenu situé dans des boîtes aux lettres et des sites qui ne sont pas associés à un dépositaire, mais qui est pertinent pour le cas. Les emplacements de contenu où les dépositaires de cas n’ont pas de contrôle administratif, mais peuvent être propriétaires de données pertinentes, sont appelés sources de données *non privatives.*
 
-Dans un cas Advanced eDiscovery, les équipes juridiques peuvent ajouter des personnes dans leur organisation en tant que dépositaires, et identifier et conserver les sources de données de conservation telles que les boîtes aux lettres Exchange, les comptes OneDrive et les sites SharePoint et Teams. Ils peuvent également identifier et conserver les sources de données qui ne sont pas en conservation. À l’aide de l’outil de gestion des sources de données et du dépositaire intégré dans Advanced eDiscovery, les organisations peuvent sécuriser les informations stockées électroniquement contre toute suppression accidentelle (ou intentionnelle). Cela vous permet d’éliminer le processus fastidieux et susceptible d’erreurs d’avoir à effectuer manuellement les processus de mise en attente légale.
+Dans un cas Advanced eDiscovery, les équipes juridiques peuvent ajouter des personnes dans leur organisation en tant que dépositaires, et identifier et conserver les sources de données de conservation telles que les boîtes aux lettres Exchange, les comptes OneDrive et les sites SharePoint et Teams. Ils peuvent également identifier et conserver les sources de données qui ne sont pas en conservation. À l’aide du dépositaire intégré et de l’outil de gestion des sources de données dans Advanced eDiscovery, les organisations peuvent sécuriser les informations stockées électroniquement contre toute suppression accidentelle (ou intentionnelle). Cela vous permet d’éliminer le processus fastidieux et susceptible d’erreurs d’avoir à effectuer manuellement les processus de mise en attente légale.
 
 Pour plus d’informations sur l’travail avec les dépositaires, consultez les articles suivants :
 

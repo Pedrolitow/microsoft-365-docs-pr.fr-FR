@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c678cb8d9eece9ff3a900a7d2b0c6bf95ad8eda9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 444336af04ddf971c4a58e1f12fc296ecf4bc629
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177443"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191466"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Redirection des comptes de Microsoft Defender pour le point de terminaison vers Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59177443"
 - Microsoft 365 Defender
 - Defender pour point de terminaison
 
-Dans l’alignement de l’approche multi-domaines de Microsoft en matière de protection contre les menaces avec LA DÉTECTION SIEM et la détection et réponse étendues (XDR), nous avons renommé Microsoft Defender – Protection avancée contre les menaces microsoft defender en Microsoft Defender pour point de terminaison et l’avons unifié en un portail intégré unique , Microsoft 365 Defender.
+Dans l’alignement de l’approche multi-domaines de Microsoft en matière de protection contre les menaces avec LA DÉTECTION SIEM et la détection et réponse étendue (XDR), nous avons renommé Microsoft Defender – Protection avancée contre les menaces en Microsoft Defender pour point de terminaison et l’avons unifié en un portail intégré unique , Microsoft 365 Defender.
 
 Ce guide explique comment router les comptes vers Microsoft 365 Defender en activant la redirection automatique à partir de l’ancien portail Microsoft Defender pour points de terminaison (securitycenter.windows.com ou securitycenter.microsoft.com), vers le portail Microsoft 365 Defender (security.microsoft.com).
 
@@ -54,7 +54,7 @@ Cela inclut la redirection pour l’accès direct à l’ancien portail via le n
 Pour plus d’informations sur les liens et le routage, voir le tableau ci-dessous.
 ## <a name="siem-api-routing"></a>Routage de l’API SIEM
 
-|**Property**  |**Destination lorsque la redirection est off**  |**Destination lorsque la redirection est SUR** | 
+|**Propriété**  |**Destination lorsque la redirection est off**  |**Destination lorsque la redirection est SUR** | 
 |---------|---------|---------|
 | LinkToWDATP | Page d’alerte dans securitycenter.windows.com | Page d’alerte dans security.microsoft.com  |
 | IncidentLinkToWDATP | Page Incident dans securitycenter.windows.com  | Page Incident dans security.microsoft.com  |
@@ -63,15 +63,15 @@ Pour plus d’informations sur les liens et le routage, voir le tableau ci-desso
 
 ## <a name="email-alert-notifications"></a>Notifications d’alerte par courrier électronique
 
-|**Property**  |**Destination lorsque la redirection est off**  |**Destination lorsque la redirection est SUR** |
+|**Propriété**  |**Destination lorsque la redirection est off**  |**Destination lorsque la redirection est SUR** |
 |---------|---------|---------|
 | Page d’alerte  | Page d’alerte dans securitycenter.windows.com  | Page d’alerte dans security.microsoft.com  |
 | Page Incident  |Page Incident dans securitycenter.windows.com  | Page Incident dans security.microsoft.com  
 | Page Alerte dans le portail du centre de sécurité | Page d’alerte dans security.microsoft.com | Page d’alerte dans security.microsoft.com | 
-| Page Incident dans le portail centre de sécurité | Page Incident dans security.microsoft.com  | Page Incident dans security.microsoft.com  |
+| Page Incident dans le portail du centre de sécurité | Page Incident dans security.microsoft.com  | Page Incident dans security.microsoft.com  |
 
 ## <a name="when-does-this-take-effect"></a>Quand cela prend-il effet ? 
-Une fois activée, cette mise à jour peut prendre effet presque immédiatement pour certains comptes. Toutefois, la propagation de la redirection vers chaque compte de votre organisation peut prendre plus de temps. Les comptes dans les sessions actives pendant que ce paramètre est appliqué ne seront pas éjectés de leur session et seront acheminés uniquement vers Microsoft 365 Defender après la fin de leur session actuelle et la nouvelle session.  
+Une fois activée, cette mise à jour peut prendre effet presque immédiatement pour certains comptes. Toutefois, la propagation de la redirection vers chaque compte de votre organisation peut prendre plus de temps. Les comptes dans les sessions actives pendant que ce paramètre est appliqué ne sont pas éjectés de leur session et sont acheminés uniquement vers Microsoft 365 Defender après la fin de leur session active et la nouvelle ouverture de session.  
 
 ### <a name="set-up-portal-redirection"></a>Configurer la redirection du portail
 Pour démarrer le routage des comptes vers Microsoft 365 Defender :
@@ -100,7 +100,7 @@ Pour revenir à l’ancien portail Microsoft Defender pour points de terminaison
 
 2. Accédez à **Paramètres** redirection du portail général des points de terminaison  >    >    >   [ou ouvrez la page ici.](https://security.microsoft.com/preferences2/portal_redirection)  
 
-3. Désaffectez le paramètre de redirection **automatique.**
+3. Basculez le paramètre de redirection automatique sur **Désintégation.**
 
 4. Cliquez **sur Désactiver le** partage & commentaires lorsque vous y avez été invité.
 

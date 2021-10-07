@@ -8,24 +8,24 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre comment Contoso utilise Microsoft Intune dans Microsoft 365 entreprise pour gérer ses appareils et les applications qui s’exécutent sur ces appareils.
-ms.openlocfilehash: c9acdbaa66af212a57bf66b2c64200b02ade6ad7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0dca8da328a3048413727410ebab7798d1068ac8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178850"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestion des appareils mobiles pour Contoso
 
 Microsoft 365 entreprise inclut Intune et un ensemble de services Azure qui prise en charge la gestion et la sécurité des appareils mobiles et des applications.
 
-Contoso compte de nombreux employés à mobilité fixe. Certains ont des bureaux à Contoso et d’autres n’ont pas de bureau. Contoso avait besoin d’un moyen pour activer la productivité des employés, tout en maintenant les appareils, les données Contoso stockées sur ces appareils et le comportement des applications sécurisés.
+Contoso compte de nombreux employés à mobilité fixe. Certains ont des bureaux à Contoso et d’autres n’ont pas de bureau. Contoso avait besoin d’un moyen de favoriser la productivité des employés tout en maintenant les appareils, les données Contoso stockées sur ces appareils et le comportement des applications sécurisés.
 
 ## <a name="plan"></a>Prévision
 
@@ -54,7 +54,7 @@ Voici la configuration de l’infrastructure de gestion des appareils mobiles de
 - Pour les appareils qui ne sont pas inscrits, implémenté un ensemble de stratégies de gestion des applications mobiles (MAM) pour exiger l’authentification pour l’accès Microsoft 365 services
 - Des stratégies Intune ont été créées pour appliquer :
   - Applications autorisées.
-  - Chiffrement de l’appareil pour empêcher l’accès non autorisé.
+  - Chiffrement de l’appareil pour empêcher tout accès non autorisé.
   - Code confidentiel ou mot de passe à six chiffres.
   - Période d’inactivité.
   - Protection antivirus et programmes malveillants, et mises à jour de signatures Windows Defender sur Windows 10 appareils.

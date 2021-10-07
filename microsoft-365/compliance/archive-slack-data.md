@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Veritas Slack eDiscovery dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 3cbc19ab41b7916de76924cd69598335e8834322
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 793cff875db8e328ce44278fbf8caa909c309612
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176099"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192330"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Configurer un connecteur pour archiver des données de découverte électronique Slack
 
-Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données tierces à partir de réseaux sociaux, de messagerie instantanée et de plateformes de collaboration sur des documents vers des boîtes aux lettres de votre organisation Microsoft 365. Veritas fournit un connecteur [Slack](https://globanet.com/slack/) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement), puis importer ces éléments dans Microsoft 365. Slack pulls messages and files from the Slack API and converts them to an email message format and then imports the item to user mailboxes.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données tierces à partir de réseaux sociaux, de messagerie instantanée et de plateformes de collaboration sur des documents vers des boîtes aux lettres de Microsoft 365 organisation. Veritas fournit un connecteur [Slack](https://globanet.com/slack/) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement), puis importer ces éléments dans Microsoft 365. Slack pulls messages and files from the Slack API and converts them to an email message format and then imports the item to user mailboxes.
 
 Une fois que les données eDiscovery de Slack sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Slack pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage Slack.](../media/SlackConnectorWorkflow.png)
 
-1. Votre organisation collabore avec Slack pour configurer un site Slack.
+1. Votre organisation collabore avec Slack pour configurer et configurer un site Slack.
 
 2. Une fois toutes les 24 heures, les messages de conversation de Slack eDiscovery sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu d’un message de conversation au format de message électronique.
 
@@ -49,11 +49,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ## <a name="step-1-set-up-the-slack-ediscovery-connector"></a>Étape 1 : Configurer le connecteur de découverte électronique Slack
 
-La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données Slack.
+La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 créer un connecteur pour les données Slack.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors**  >  **Slack eDiscovery**.
 
-2. Dans la page de description du produit **Slack eDiscovery,** cliquez **sur Ajouter un connecteur.**
+2. Dans la page de description du produit **slack eDiscovery,** cliquez **sur Ajouter un connecteur.**
 
 3. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
@@ -63,7 +63,7 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 ## <a name="step-2-configure-slack-ediscovery"></a>Étape 2 : Configurer slack eDiscovery
 
-La deuxième étape consiste à configurer le connecteur de découverte électronique Slack sur le site Merge1. Pour plus d’informations sur la configuration du connecteur slack eDiscovery sur le site Veritas Merge1, voir [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf).
+La deuxième étape consiste à configurer le connecteur de découverte électronique Slack sur le site Merge1. Pour plus d’informations sur la configuration du connecteur eDiscovery Slack sur le site Veritas Merge1, consultez le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf).
 
 Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’utilisateur dans l’Assistant connecteur du Centre de conformité Microsoft 365 s’affiche.
 
@@ -71,7 +71,7 @@ Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’ut
 
 1. Dans la page **Ma mappage des utilisateurs externes Microsoft 365 utilisateurs,** activez le mappage automatique des utilisateurs.
 
-   Les éléments eDiscovery slack incluent une propriété appelée *Courrier* électronique, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+   Les éléments eDiscovery slack incluent une propriété appelée *Email*, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres et allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 

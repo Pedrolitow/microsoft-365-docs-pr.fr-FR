@@ -2,8 +2,6 @@
 title: Gérer Microsoft Defender pour le point de terminaison à l’aide d’objets de stratégie de groupe
 description: Découvrez comment gérer Microsoft Defender pour le point de terminaison à l’aide d’objets de stratégie de groupe
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/23/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 37dbc72c7a88a2108eb40c29280e346859927baf
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 94eb6e7bf031a9c59fa66eb24b64298ea9a0465c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773762"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191730"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Gérer Microsoft Defender pour le point de terminaison avec des objets de stratégie de groupe
 
@@ -57,7 +55,7 @@ Le tableau suivant répertorie les différentes tâches que vous pouvez effectue
 |**Activer la Protection du réseau** pour empêcher les employés d’utiliser des applications malveillantes sur Internet <br/><br/> *Nous vous recommandons d’utiliser d’abord le [mode audit](/microsoft-365/security/defender-endpoint/evaluate-network-protection) pour la protection du réseau dans un environnement de test pour voir quelles applications seront bloquées avant le déploiement.*|[Activer la protection du réseau à l’aide de la stratégie de groupe](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |**Configurer l’accès contrôlé aux dossiers pour** la protection contre les ransomware <br/><br/> *[L’accès contrôlé aux](/microsoft-365/security/defender-endpoint/controlled-folders) dossiers est également appelé protection anti-programme malveillant.*|[Activer l’accès contrôlé aux dossiers à l’aide de la stratégie de groupe](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
 |**Configurez Microsoft Defender SmartScreen** pour vous protéger contre les sites et fichiers malveillants sur Internet.|[Configurer Microsoft Defender SmartScreen stratégie de groupe et les paramètres de gestion des périphériques mobiles (MDM) à l’aide de la stratégie de groupe](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
-|**Configurer le chiffrement et BitLocker pour** protéger les informations sur les appareils de votre organisation exécutant Windows|[Paramètres de stratégie de groupe BitLocker](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
+|**Configurer le chiffrement et BitLocker pour** protéger les informations sur les appareils de votre organisation en cours d’exécution Windows|[Paramètres de stratégie de groupe BitLocker](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
 |**Configurer Microsoft Defender Credential Guard pour vous** protéger contre les attaques par vol d’informations d’identification|[Activer Windows Defender Credential Guard à l’aide de la stratégie de groupe](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurer votre portail Microsoft 365 Defender client

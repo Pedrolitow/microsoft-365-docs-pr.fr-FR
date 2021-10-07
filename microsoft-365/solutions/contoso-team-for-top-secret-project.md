@@ -9,19 +9,19 @@ ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe avec isolation de sécurité pour un projet top secret afin de développer une nouvelle suite de produits et services.'
-ms.openlocfilehash: 3a14a5c7ba844e31b8e96d209eb21a9daac45e00
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c789e74bc54183f16f7de7801ecc77b76f4913f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208532"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191276"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Équipe isolée pour un projet top secret de Contoso Corporation
 
@@ -42,13 +42,13 @@ Le personnel informatique de Contoso [a](secure-teams-security-isolation.md) uti
 
 Tout d’abord, pour protéger l’accès au site SharePoint sous-jacent pour l’équipe, les administrateurs informatiques de Contoso ont configuré les stratégies [SharePoint’accès.](../security/office-365-security/sharepoint-file-access-policies.md)
 
-Ensuite, un administrateur informatique De Contoso a créé une équipe privée nommée Project 2X et ajouté les comptes d’utilisateur de Project 2X en tant que membres. Ils ont également configuré l’équipe de sorte que Project propriétaires d’équipe 2X peuvent créer des canaux privés.
+Ensuite, un administrateur informatique de Contoso a créé une équipe privée nommée Project 2X et ajouté les comptes d’utilisateur de Project 2X en tant que membres. Ils ont également configuré l’équipe de sorte que Project propriétaires d’équipe 2X peuvent créer des canaux privés.
 
 Pour plus d’informations sur la configuration, voir [Créer une équipe privée.](secure-teams-security-isolation.md#create-a-private-team)
 
 ## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>Étape 2 : Création d’une étiquette de niveau de Project l’équipe 2X
 
-Les administrateurs Contoso ont créé une étiquette de niveau de Project **2X** qui :
+Les administrateurs Contoso ont créé une étiquette de sensibilité **nommée Project 2X** qui :
 
 - Chiffrement activé.
 - Autorisations Co-Author autorisations pour Project groupe Microsoft 365 2X.
@@ -73,7 +73,7 @@ Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires po
 
 Ensuite, ils ont configuré des paramètres d’autorisation supplémentaires pour le site pour empêcher Project membres du groupe 2X de partager l’accès au site. 
 
-Comme des canaux privés pour Project 2X ont été créés, le propriétaire du  groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur Personnes spécifiques.
+À mesure que des canaux privés Project 2X ont été créés, le propriétaire  du groupe a désactivé le partage d’invités et définir le lien de partage par défaut sur la valeur Personnes spécifiques.
 
 Voici la configuration de l’équipe Project 2X avec isolation de sécurité.
 
@@ -98,7 +98,7 @@ Dans deux cas, Project les membres de l’équipe 2X ont téléchargé des fichi
 
 Toutefois, après avoir été invité à obtenir des informations d’identification lors de leur ouverture, ils ont réalisé leur erreur et les ont supprimés.
 
-En raison de l’environnement de collaboration de Teams et des fonctionnalités de sécurité de Microsoft 365, les détails de Project 2X ont été conservés secrètes pendant toute la durée du projet. Contoso a annoncé ses plans et est en train de déployer les nouveaux produits et services pour le plus grand plaisir de ses clients et de ses investisseurs, ainsi que de ses concurrents.
+En raison de l’environnement de collaboration de Teams et des fonctionnalités de sécurité de Microsoft 365, les détails de Project 2X ont été conservés secrètes pendant toute la durée du projet. Contoso a annoncé ses plans et est en train de déployer les nouveaux produits et services pour le plus grand plaisir de ses clients, de ses investisseurs et de ses concurrents.
 
 ## <a name="next-step"></a>Étape suivante
 

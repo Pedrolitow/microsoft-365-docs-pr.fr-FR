@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: 7014e294454095456acdac8e2c60895c400ced3f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 149d44ef8db0d21bf0cb64d1c0d09aaf5bf773d6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179258"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -74,7 +74,7 @@ Vous pouvez créer un groupe lors de la création d’une évaluation. Les group
 
 ## <a name="create-assessments"></a>Créer des évaluations
 
-Pour créer une évaluation, vous allez utiliser un Assistant pour sélectionner le modèle qu’il doit utiliser et définir les propriétés de l’évaluation. Les modèles contiennent les contrôles et les recommandations d’action pour l’évaluation, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que les modèles premium supplémentaires que vous avez achetés. Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 et une version universelle qui peut être adaptée à d’autres produits que vous utilisez. Pour en savoir plus sur les modèles, voir [Utiliser des modèles d’évaluation.](compliance-manager-templates.md)
+Pour créer une évaluation, vous allez utiliser un Assistant pour sélectionner le modèle qu’il doit utiliser et définir les propriétés de l’évaluation. Les modèles contiennent les contrôles et les recommandations d’action pour l’évaluation, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que tous les modèles premium supplémentaires que vous avez achetés. Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 et une version universelle qui peut être adaptée à d’autres produits que vous utilisez. Pour en savoir plus sur les modèles, voir [Utiliser des modèles d’évaluation.](compliance-manager-templates.md)
 
 > [!NOTE]
 > Seuls les utilisateurs qui détiennent un rôle d’administrateur général, d’administration du Gestionnaire de conformité ou d’évaluateur du Gestionnaire de conformité peuvent créer et modifier des évaluations. En savoir plus sur [les rôles et les autorisations.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
@@ -87,9 +87,9 @@ Pour commencer à créer des évaluations, suivez ces étapes.
     - Go to your **assessments** page in Compliance Manager and select **Add assessment**; ou
     - Recherchez le modèle que vous souhaitez utiliser sous l’onglet **Modèles** d’évaluation, affichez ses détails et sélectionnez **Créer une évaluation.** Cela remplit le champ de sélection de modèle de l’Assistant pour vous.
 
-3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (voir [types](compliance-manager-templates.md#template-availability-and-licensing) de modèles pour plus d’informations). Sélectionnez la bouton d’radio en haut de votre modèle, puis sélectionnez **Suivant.**
+3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (voir [types](compliance-manager-templates.md#template-availability-and-licensing) de modèles pour plus d’informations). Sélectionnez la bouton d’radio en de côté du modèle choisi, puis sélectionnez **Suivant**.
 
-4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisir le produit qu’elle va évaluer et l’affecter à un groupe.
+4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisissez le produit qu’elle va évaluer et affectez-la à un groupe.
 
     - **Produit**: si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé existant que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner Microsoft 365 comme produit lors de l’utilisation d’un modèle universel. Si vous utilisez un modèle Microsoft 365, ce champ est rempli pour vous indiquer Microsoft 365 ne peut pas être modifié.
     - **Nom**: entrez un nom pour votre évaluation dans le champ Nom **de l’évaluation.** Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
@@ -97,11 +97,11 @@ Pour commencer à créer des évaluations, suivez ces étapes.
         - Sélectionnez **Utiliser un groupe existant** pour l’affecter à un groupe que vous avez déjà créé ; ou
         - Sélectionnez **Créer un groupe** pour créer un groupe et lui affecter cette évaluation :
             - Déterminez un nom pour votre groupe et entrez-le dans le champ sous la bouton d’radio.
-            - Vous pouvez copier des données à partir d’un groupe **existant,** par exemple des détails et des documents d’implémentation et de test, en sélectionnant les zones appropriées.
+            - Vous pouvez copier des données à partir d’un groupe **existant,** comme les détails et les documents d’implémentation et de test, en sélectionnant les zones appropriées.
 
     Lorsque vous avez terminé, sélectionnez **Suivant**.
 
-5. **Examinez et terminez :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
+5. **Révision et fin :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
 
 6. L’écran suivant confirme que vous avez bien créé votre nouvelle évaluation. Sélectionnez **Terminé** pour fermer l’Assistant et la page de détails de votre nouvelle évaluation s’affiche à l’écran.
 
@@ -174,7 +174,7 @@ Les évaluations personnalisées que vous créez ne reçoivent aucune mise à jo
 
 La page détails de l’évaluation affiche également une **étiquette de** mise à jour en attente en plus de l’évaluation avec une mise à jour. Sélectionnez cette évaluation pour obtenir sa page de détails.
 
-Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la** mise à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
+Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la mise** à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
 
 La page de détails de l’évaluation peut également lister les actions d’amélioration qui ont une **étiquette** de mise à jour en attente à côté d’elles. Ces mises à jour sont pour des modifications spécifiques apportées aux actions d’amélioration elles-mêmes et doivent être acceptées séparément. Pour en [savoir plus, consultez](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) Accepter les mises à jour pour les actions d’amélioration.
 
@@ -212,7 +212,7 @@ Le rapport est un instantané de l’évaluation à la date et à l’heure de l
 
 La suppression d’une évaluation la supprime de la liste de votre page d’évaluations. Notez ces points importants sur la suppression des évaluations :
 
-- **La suppression d’une évaluation est permanente . vous ne pouvez pas l’obtenir.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
+- **La suppression d’une évaluation est permanente . vous ne pouvez pas la récupérer.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
 - Si les actions d’amélioration de l’évaluation n’apparaissent dans aucune autre évaluation, elles seront supprimées lors de la suppression de l’évaluation.
 - Nous vous [recommandons d’exporter un rapport de](#export-an-assessment-report) l’évaluation avant de le supprimer définitivement.
 
@@ -222,7 +222,7 @@ Pour supprimer une évaluation, suivez les étapes ci-dessous :
 
 2. Sélectionnez **Supprimer l’évaluation** dans le coin supérieur droit de votre écran.
 
-3. Une fenêtre s’affiche et vous demande de confirmer la suppression définitive de l’évaluation. Sélectionnez **Supprimer l’évaluation** pour fermer la fenêtre. Vous recevrez une fenêtre de confirmation vous confirmant que votre évaluation a été supprimée du Gestionnaire de conformité.
+3. Une fenêtre s’affiche vous demandant de confirmer la suppression définitive de l’évaluation. Sélectionnez **Supprimer l’évaluation** pour fermer la fenêtre. Vous recevrez une fenêtre de confirmation vous confirmant que votre évaluation a été supprimée du Gestionnaire de conformité.
 
 Si vous supprimez la seule évaluation d’un groupe, ce groupe est également supprimé du Gestionnaire de conformité.
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment trouver de l’aide pour les administrateurs Microsoft 365 Business Premium.
-ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1c42b59b66d95fbcc978664bbabc3d16d69f3544
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208227"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192438"
 ---
 # <a name="find-docs-and-training"></a>Rechercher des documents et une formation
 
@@ -34,7 +34,7 @@ Si vous avez une question ou si vous avez besoin d’Microsoft 365 Business Prem
 
 ## <a name="browse-all-small-business-training"></a>Parcourir toutes les formations pour les petites entreprises
 
-Pour obtenir des liens vers l’ensemble du support de formation dont vous aurez besoin pour utiliser Microsoft 365 votre petite entreprise, voir Microsoft 365 formation pour les petites [entreprises.](index.yml) 
+Pour obtenir des liens vers l’ensemble du support de formation dont vous aurez besoin pour utiliser Microsoft 365 votre petite entreprise, voir Microsoft 365 [formation pour les petites entreprises.](index.yml) 
 
 ## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>Rechercher des Centre d'administration Microsoft 365 et des ressources
 

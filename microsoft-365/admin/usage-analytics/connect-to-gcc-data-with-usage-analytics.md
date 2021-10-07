@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment vous connecter à des données dans votre client Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) à l’aide de l’application de modèle Analyse de l’utilisation Microsoft 365 dans Power BI.
-ms.openlocfilehash: a57d536d7210e0ba927824d5403792a3e5090f98
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 3930ffe82c998797aade84e92145adac5fa2ea98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776703"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179804"
 ---
 # <a name="connect-to-microsoft-365-government-community-cloud-gcc-data-with-usage-analytics"></a>Connecter données Microsoft 365 Cloud de la communauté du secteur public (Cloud de la communauté du secteur public) avec l’analyse de l’utilisation
 
@@ -47,7 +48,7 @@ Pour configurer initialement Microsoft 365 l’analyse de l’utilisation :
 
 1. Dans la Centre d'administration Microsoft 365, développez le menu de navigation, sélectionnez **Rapports,** puis **Sélectionnez Utilisation.** 
 2. Dans la page **Rapports d’utilisation,** dans la section Analyse Microsoft 365'utilisation, sélectionnez **Prise en main**. 
-3. Sous **Activer Power BI’analyse** de l’utilisation, sélectionnez Rendre les données d’utilisation organisationnelles disponibles pour l’analyse de l’utilisation **de Microsoft Power BI,** puis sélectionnez **Enregistrer.**
+3. Sous **Activer Power BI’analyse** de l’utilisation, sélectionnez Rendre les données d’utilisation de l’organisation disponibles pour l’analyse de l’utilisation **de Microsoft Power BI,** puis sélectionnez **Enregistrer.**
 
     ![Rendez vos données client disponibles.](../../media/usage-analytics/make-data-available.png) 
 
@@ -85,7 +86,7 @@ Microsoft 365 Cloud de la communauté du secteur public utilisateurs peuvent té
 4. Enregistrez vos modifications dans le rapport. 
 5. **Sélectionnez** Publier dans le menu Power BI Desktop pour publier le rapport dans le service Power BI Online où il peut être vu. Cela nécessite une licence Power BI Pro ou une Power BI Premium capacité maximale. Dans le cadre [du](/power-bi/create-reports/desktop-upload-desktop-files#to-publish-a-power-bi-desktop-dataset-and-reports)processus de publication, vous devez sélectionner une destination à publier dans un espace de travail disponible dans le service Power BI Online.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [À propos de l’Analyse de l’utilisation](usage-analytics.md) </br>
 [Obtenir la dernière version d’analyse d’utilisation](get-the-latest-version-of-usage-analytics.md) </br>

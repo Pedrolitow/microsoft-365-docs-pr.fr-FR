@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Workplace à partir de Facebook, qui est archivé sur le site Merge1 de Veritas, dans Microsoft 365. La configuration d’un connecteur nécessite que vous travailliez avec Veritas Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 97a2664a92b4383d08becb610640e7e8553e90da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0d2db469186469759226f59775a30bac78fe8daa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179438"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Configurer un connecteur pour archiver l’espace de travail à partir de données Facebook
 
 Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de l’espace de travail à partir de Facebook vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas fournit un espace de travail à partir d’un connecteur [Facebook](https://globanet.com/workplace/) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les conversations, les pièces jointes, les publications et les vidéos à partir de Workplace au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs dans Microsoft 365.
 
-Une fois les données de l’espace de travail stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation de Workplace à partir d’un connecteur Facebook pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données de l’espace de travail stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation de Workplace à partir d’un connecteur Facebook pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-workplace-from-facebook-data"></a>Vue d’ensemble de l’archivage de l’espace de travail à partir des données Facebook
 
@@ -65,7 +65,7 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 ## <a name="step-2-configure-the-workplace-from-facebook-connector-on-the-veritas-merge1-site"></a>Étape 2 : Configurer l’espace de travail à partir du connecteur Facebook sur le site Veritas Merge1
 
-La deuxième étape consiste à configurer l’espace de travail à partir du connecteur Facebook sur le site Merge1. Pour plus d’informations sur la configuration de l’espace de travail à partir du connecteur Facebook, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer l’espace de travail à partir du connecteur Facebook sur le site Merge1. Pour plus d’informations sur la configuration de l’espace de travail à partir du connecteur Facebook, voir [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf).
 
 Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’utilisateur dans l’Assistant connecteur du Centre de conformité Microsoft 365 s’affiche.
 
@@ -89,4 +89,4 @@ Après avoir créé l’espace de travail à partir du connecteur Facebook, vous
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

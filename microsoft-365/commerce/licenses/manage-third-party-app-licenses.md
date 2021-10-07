@@ -9,7 +9,7 @@ ms.reviewer: argani
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les licences pour les applications de fournisseur de logiciels indépendants dans le Centre d'administration Microsoft 365.
 ms.date: 06/15/2021
-ms.openlocfilehash: e19277a34c896d918d545cca27b1c435ca221e6f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4738c0fa2c21c189922087e54d8b00260cd68c93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181595"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179570"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Gérer les licences d’application ISV dans le Centre d'administration Microsoft 365
 
@@ -33,7 +33,7 @@ Une application de fournisseur de logiciels indépendant (ISV) est une applicati
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>Attribuer des licences d’application ISV à des utilisateurs ou des groupes
 

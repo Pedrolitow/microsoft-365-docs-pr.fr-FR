@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Découvrez comment utiliser PowerShell pour déplacer le contenu d’un système de courrier source en une seule fois en effectuez une migration à Microsoft 365.
-ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 00cad52ee04c3799dc3c1ea1b4725203e977a7f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194320"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration à basculement vers Microsoft 365
 
@@ -48,7 +48,7 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>Étape 1 : Préparez une migration à basculement
 <a name="BK_Step1"> </a>
 
-- **Ajoutez votre organisation Exchange en tant que domaine accepté de votre Microsoft 365 organisation.** Le service de migration utilise l’adresse SMTP de vos boîtes aux lettres locales pour créer l’ID d’utilisateur Microsoft Online Services et l’adresse e-mail pour les nouvelles boîtes aux lettres Microsoft 365 locales. La migration échoue si votre domaine Exchange n’est pas un domaine accepté ou le domaine principal de votre Microsoft 365 organisation. Pour plus d’informations, [voir Vérifier votre domaine.](../admin/setup/add-domain.md)
+- **Ajoutez votre organisation Exchange en tant que domaine accepté de votre Microsoft 365 organisation.** Le service de migration utilise l’adresse SMTP de vos boîtes aux lettres locales pour créer l’ID d’utilisateur Microsoft Online Services et l’adresse e-mail pour les nouvelles boîtes aux lettres Microsoft 365 locales. La migration échoue si votre Exchange n’est pas un domaine accepté ou le domaine principal de votre Microsoft 365 organisation. Pour plus d’informations, [voir Vérifier votre domaine.](../admin/setup/add-domain.md)
 
 - **Configurez Outlook Anywhere sur votre serveur Exchange local** Le service de migration de messagerie utilise RPC sur HTTP ou Outlook Anywhere pour se connecter à votre serveur Exchange local. Pour plus d'informations sur la configuration d'Outlook Anywhere pour Exchange 2010, 2007 et 2003, consultez les rubriques suivantes :
 
@@ -100,7 +100,7 @@ Pour la liste complète des commandes de migration, voir [Cmdlets de déplacemen
 ### <a name="step-2-create-a-migration-endpoint"></a>Étape 2 : Créez un point de terminaison de migration
 <a name="BK_Step2"> </a>
 
-Pour migrer correctement le courrier électronique, Microsoft 365 doit se connecter au système de courrier source et communiquer avec celui-là. Pour ce faire, Microsoft 365 un point de terminaison de migration. Pour créer un point de terminaison de migration Outlook Anywhere, afin d'effectuer une migration à basculement, commencez par vous [connecter à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+Pour migrer correctement le courrier électronique, Microsoft 365 doit se connecter au système de courrier source et communiquer avec lui. Pour ce faire, Microsoft 365 un point de terminaison de migration. Pour créer un point de terminaison de migration Outlook Anywhere, afin d'effectuer une migration à basculement, commencez par vous [connecter à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Pour la liste complète des commandes de migration, voir [Cmdlets de déplacement et de migration](/powershell/exchange/).
 
@@ -175,9 +175,9 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>Étape 5 : Router votre courrier vers Microsoft 365
 <a name="BK_Step5"> </a>
 
-Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration de messagerie vers Microsoft 365 est terminée, il est temps de faire pointer votre enregistrement MX vers Microsoft 365. Cela permet de s’assurer que le courrier électronique est remis à Microsoft 365 boîtes aux lettres. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt.
+Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration du courrier vers Microsoft 365 est terminée, il est temps de pointer votre enregistrement MX vers Microsoft 365. Cela permet de s’assurer que le courrier électronique est remis à Microsoft 365 boîtes aux lettres. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt.
 
-Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n’est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, des [instructions générales](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx) sur l’enregistrement MX sont également fournies.
+Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n’est pas inclus ou si vous souhaitez avoir une idée des instructions générales, des [instructions générales](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx) sur l’enregistrement MX sont également fournies.
 
 Il faut compter jusqu'à 72 heures pour que les systèmes de messagerie de vos clients et partenaires reconnaissent l'enregistrement MX modifié. Patientez au moins 72 heures avant de procéder à la tâche suivante : [Étape 6 : Supprimez le lot de migration à basculement](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md#Bk_step6).
 

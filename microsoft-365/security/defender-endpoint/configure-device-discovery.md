@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c70a21ad3e47b2e2347c3f88ba276b3e9fd9801
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 261f5128c0ef26843f20e1d94b26ba86f0850349
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209845"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192978"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
@@ -37,7 +37,7 @@ ms.locfileid: "59209845"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification plus riche des appareils.
+La découverte peut être configurée pour être en mode standard ou de base. Utilisez l’option standard pour rechercher activement des appareils dans votre réseau, ce qui garantit mieux la découverte des points de terminaison et fournit une classification d’appareil plus riche.
 
 Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - appareils Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
 
@@ -62,7 +62,7 @@ S’il existe des appareils sur votre réseau qui ne doivent pas être analysés
 
 Vous pouvez configurer l’endroit où la découverte d’appareils peut être effectuée en spécifiant les réseaux à surveiller. Lorsqu’un réseau est surveillé, la découverte d’appareils peut être effectuée sur ce réseau.
 
-La liste des réseaux sur lequel la découverte d’appareils peut être effectuée s’affiche dans la page **Réseaux surveillés.**
+La liste des réseaux sur lequel la découverte d’appareils peut être effectuée est affichée dans la page **Réseaux surveillés.**
 
 > [!NOTE]
 > Seuls les 50 premiers réseaux (en fonction du nombre d’appareils associés) seront disponibles dans la liste réseau.
@@ -84,12 +84,12 @@ Le choix de la classification de découverte initiale implique l’application d
 1. Sélectionnez **Paramètres > détection d’appareil.**
 2. Sélectionnez **Réseaux surveillés.**
 3. Afficher la liste des réseaux.
-4. Sélectionnez les trois points à côté du nom du réseau.
+4. Sélectionnez les trois points en côté du nom du réseau.
 5. Choisissez si vous souhaitez surveiller, ignorer ou utiliser la classification de découverte initiale.
 
     > [!WARNING]
     >
-    > - Le choix de surveiller un réseau qui n’a pas été identifié par Microsoft Defender pour Endpoint comme réseau d’entreprise peut entraîner la découverte d’appareils en dehors de votre réseau d’entreprise et peut donc détecter des appareils d’entreprise ou d’autres appareils.
+    > - Choisir de surveiller un réseau qui n’a pas été identifié par Microsoft Defender pour Endpoint comme réseau d’entreprise peut entraîner la découverte d’appareils en dehors de votre réseau d’entreprise, et par conséquent détecter des appareils d’entreprise ou d’autres appareils.
     > - Choisir d’ignorer un réseau arrête la surveillance et la découverte d’appareils dans ce réseau. Les appareils qui ont déjà été découverts ne seront pas supprimés de l’inventaire, mais ne seront plus mis à jour et les détails seront conservés jusqu’à l’expiration de la période de rétention des données de Defender for Endpoint.
     > - Avant de choisir de surveiller les réseaux non professionnels, vous devez vous assurer que vous êtes autorisé à le faire. <br>
 

@@ -12,16 +12,16 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent des informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
-ms.openlocfilehash: 5feb85bce941f295f58e88a0847d9c0ca04d8820
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 915a92ca7023aa9fbf13d36c3fa00707c664a688
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205964"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192138"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -86,7 +86,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
+Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type d’informations sensibles si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_argentina_national_id trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_argentina_national_id est trouvé.
 
@@ -116,7 +116,7 @@ Une stratégie DLP a une confiance moyenne qu’elle a détecté ce type d’inf
 
 ### <a name="more-on-confidence-levels"></a>Plus d’informations sur les niveaux de confiance
 
-Dans une définition d’entité  de type d’informations sensibles, le niveau de confiance reflète la quantité de preuves justificatives détectées en plus de l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez. Par exemple, les correspondances avec un niveau de confiance élevé contiennent davantage de preuves justificatives à proximité immédiate de l’élément principal, tandis que les correspondances avec un niveau de confiance faible contiennent peu ou pas de preuves justificatives à proximité immédiate. 
+Dans une définition d’entité  de type d’informations sensibles, le niveau de confiance reflète la quantité de preuves justificatives détectées en plus de l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez. Par exemple, les correspondances avec un niveau de confiance élevé contiennent davantage de preuves justificatives à proximité immédiate de l’élément principal, tandis que les correspondances avec un niveau de confiance faible contiennent peu ou pas de preuves à proximité. 
 
 Un niveau de confiance élevé renvoie le moins de faux positifs, mais peut entraîner davantage de faux négatifs. Les niveaux de confiance faibles ou moyens renvoient plus de faux positifs, mais peu à zéro faux négatifs.
 
@@ -124,7 +124,7 @@ Un niveau de confiance élevé renvoie le moins de faux positifs, mais peut entr
 - **confiance moyenne**: valeur de 75, les éléments qui correspondent contiennent une quantité moyenne de faux positifs et de faux négatifs. Une confiance moyenne renvoie toutes les correspondances de confiance moyenne et élevée.  
 - **niveau de confiance** élevé : valeur 85, les éléments qui correspondent contiennent le moins de faux positifs, mais le plus de faux négatifs. Un niveau de confiance élevé renvoie uniquement des correspondances à haut niveau de confiance.  
 
-Vous devez utiliser des modèles de niveau de confiance élevé avec un nombre faible, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
+Vous devez utiliser des modèles de niveau de confiance élevé avec de faibles nombres, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
 
 > [!NOTE]
 > Si vous avez des stratégies existantes ou des types d’informations sensibles personnalisés (SIT) définis à l’aide de niveaux de confiance basés sur le nombre (également défini comme précision), ils seront automatiquement mappés aux trois niveaux de confiance discrets ; confiance faible, confiance moyenne et confiance élevée, dans l’interface utilisateur du Centre de sécurité @ conformité.
@@ -158,10 +158,10 @@ Pour créer des types d’informations sensibles personnalisés dans le Centre d
 > Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’octet unique ou pour détecter les modèles contenant du chinois/le japonais et l’anglais, définissez deux variantes du mot clé ou de regex.
 > - Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
 > 
-> En plus des caractères chinois/japonais/sur deux caractères d’byte, si la liste des mots clés/expressions contient également des mots non chinois/japonais (comme l’anglais uniquement), il est recommandé de créer deux dictionnaires/listes de mots clés. Un pour les mots clés contenant des caractères chinois/japonais/sur deux caractères d’byte et un autre pour l’anglais uniquement. 
-> - Par exemple, si vous souhaitez créer un dictionnaire/liste de mots clés avec trois phrases « Hautement confidentiel », « 機密 ' « 机密secument » et « 机密sydocument », vous devez créer deux listes de mots clés. 
->     1. Hautement confidentiel
->     2. 機密 ' « 机密机密document et document 机密 « 机密
+> En plus des caractères chinois/japonais/caractères sur deux octets, si la liste des mots clés/expressions contient également des mots non chinois/japonais (comme l’anglais uniquement), il est recommandé de créer deux dictionnaires/listes de mots clés. Un pour les mots clés contenant des caractères chinois/japonais/sur deux octets et un autre pour l’anglais uniquement. 
+> - Par exemple, si vous souhaitez créer un dictionnaire/liste de mots clés avec trois phrases « Hautement confidentiel », « 機密性が高い » et « document 机密的 », vous devez créer deux listes de mots clés. 
+>     1. Extrêmement confidentiel
+>     2. Document 機密性が高い, 机密的 et document 机密的
 > 
 > Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple regex pour référence :
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}

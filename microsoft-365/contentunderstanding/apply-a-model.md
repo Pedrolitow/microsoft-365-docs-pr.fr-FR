@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment appliquer un modèle publié à une bibliothèque SharePoint documents dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 2cc4719720693f6aa386abfc191e2b26b75f813f
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 23a885194a1bfa6c0f468188944dd00d309f3a09
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498103"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194404"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Appliquer un modèle de présentation de document dans Microsoft SharePoint Syntex
 
@@ -75,11 +75,11 @@ Le modèle identifie les fichiers et dossiers associés au type de contenu assoc
 
 ## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>Appliquer le modèle aux fichiers et au contenu de dossiers déjà présents dans la bibliothèque de documents
 
-Bien qu’un modèle appliqué traite tous les fichiers et le contenu des dossiers chargés dans la bibliothèque de documents après son application, vous pouvez également exécuter le modèle sur les fichiers et le contenu des dossiers qui existent déjà dans la bibliothèque de documents avant que le modèle ne soit appliqué :
+Bien qu’un modèle appliqué traite tous les fichiers et le contenu des dossiers chargés dans la bibliothèque de documents après son application, vous pouvez également exécuter le modèle sur les fichiers et le contenu de dossier qui existent déjà dans la bibliothèque de documents avant que le modèle soit appliqué :
 
 1. Dans votre bibliothèque de documents, sélectionnez les fichiers et dossiers que vous souhaitez traiter par votre modèle.
 
-2. Une fois que vous avez sélectionné vos fichiers et dossiers, classifier et **extraire** apparaît dans le ruban de la bibliothèque de documents. Sélectionnez **Classer et extraire**.
+2. Après avoir sélectionné vos fichiers et dossiers, classifier et **extraire** s’affiche dans le ruban de la bibliothèque de documents. Sélectionnez **Classer et extraire**.
 
       ![Capture d’écran montrant l’option Classifier et extraire.](../media/content-understanding/extract-classify.png) 
 
@@ -94,7 +94,7 @@ Lorsqu’un SharePoint Syntex de document ou un modèle de traitement de formula
 
    ![Capture d’écran d’une bibliothèque de documents affichant la colonne Date de classification.](../media/content-understanding/class-date-column.png) 
 
-Le champ **Date** de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) classification est utilisé par le déclencheur lorsqu’un fichier est classé par un déclencheur de modèle de compréhension du contenu pour exécuter un flux Power Automate après qu’un modèle de compréhension du contenu Syntex a terminé le traitement d’un fichier ou d’un dossier et mis à jour le champ **Date** de classification.
+Le champ **Date** de [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) classification est utilisé par le déclencheur lorsqu’un fichier est classé par un déclencheur de modèle de compréhension du contenu pour exécuter un flux Power Automate une fois qu’un modèle de compréhension du contenu Syntex a terminé le traitement d’un fichier ou d’un dossier et mis à jour le champ **Date** de classification.
 
    ![Flow déclencheur.](../media/content-understanding/trigger.png)
 

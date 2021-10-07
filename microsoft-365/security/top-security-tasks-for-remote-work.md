@@ -9,19 +9,19 @@ audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez vos données et courriers électroniques d’entreprise contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 8eccf38756a8f9d3686c8d1f3c05ac6065a54aca
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 1c3dc7f06a8fbb214ffc12bcf506da7df4c0422a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59355990"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191382"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 tâches principales pour les équipes de sécurité pour prendre en charge le travail à domicile
 
@@ -47,7 +47,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 |2|[Se protéger contre les menaces](#2-protect-against-threats)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Configurer Microsoft Defender pour Office 365](#3-configure-microsoft-defender-for-office-365)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurer Microsoft Defender pour l’identité](#4-configure-microsoft-defender-for-identity)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[Activer Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurer la protection des applications mobiles Intune pour les téléphones et les tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurer l' approbation de la MFA et l’accès conditionnel pour les invités, y compris la protection des applications Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Inclus.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -65,7 +65,7 @@ Avant de commencer, vérifiez votre score [de Microsoft 365 dans](./defender/mic
 
 La meilleure chose que vous pouvez faire pour améliorer la sécurité pour les employés qui travaillent à domicile consiste à activer l’mfmf. Si vous n’avez pas encore de processus en place, traitez-le comme un pilote d’urgence et assurez-vous que les personnes du support sont prêtes à aider les employés bloqués. Comme vous ne pouvez probablement pas distribuer de périphériques de sécurité matériels, utilisez Windows Hello biométrie et les applications d’authentification de smartphone comme Microsoft Authenticator.
 
-Normalement, Microsoft vous recommande de donner aux utilisateurs 14 jours pour inscrire leur appareil pour l’authentification multifacteur avant de demander l’authentification multifacteur. Toutefois, si votre personnel travaille soudainement à partir de chez vous, allez de l’avant et exigez l' mba comme priorité de sécurité et soyez prêt à aider les utilisateurs qui en ont besoin.
+Normalement, Microsoft vous recommande de donner aux utilisateurs 14 jours pour inscrire leur appareil pour l’authentification multifacteur avant de demander l’authentification multifacteur. Toutefois, si votre personnel travaille soudainement à domicile, allez de l’avant et exigez l’mfmf comme priorité de sécurité et soyez prêt à aider les utilisateurs qui en ont besoin.
 
 L’application de ces stratégies ne prendra que quelques minutes, mais soyez prêt à prendre en charge vos utilisateurs au cours des prochains jours.
 
@@ -117,11 +117,11 @@ Vous devez travailler avec votre administrateur Exchange Online et votre adminis
 
 - Voir [Microsoft Defender for Identity Quickstarts](/azure-advanced-threat-protection/install-atp-step1) pour obtenir rapidement une installation
 - Regarder [la vidéo : Présentation de Microsoft Defender pour l’identité](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- Passer en [revue les trois phases du déploiement de Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp#whats-next)
+- Passer en [revue les trois phases du déploiement de Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp#whats-next)
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5 : activer Microsoft 365 Defender
 
-Maintenant que Microsoft Defender pour Office 365 et Microsoft Defender pour l’identité sont configurés, vous pouvez afficher les signaux combinés de ces fonctionnalités dans un tableau de bord. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) regroupe les alertes, les incidents, les enquêtes et réponses automatisées, ainsi que le recherche avancée sur les charges de travail (Microsoft Defender pour l’identité, Defender pour Office 365, Microsoft Defender pour le point de terminaison et Microsoft Cloud App Security) dans un seul volet [sur security.microsoft.com](https://security.microsoft.com).
+Maintenant que Microsoft Defender pour Office 365 et Microsoft Defender pour l’identité sont configurés, vous pouvez afficher les signaux combinés de ces fonctionnalités dans un tableau de bord. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) regroupe les alertes, les incidents, les enquêtes et réponses automatisées et le recherche avancée sur les charges de travail (Microsoft Defender pour l’identité, Defender pour Office 365, Microsoft Defender pour le point de terminaison et Microsoft Cloud App Security) dans un seul volet [security.microsoft.com ](https://security.microsoft.com).
 
 ![Illustration du tableau de bord MTP.](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
@@ -147,13 +147,13 @@ Pour configurer la protection des applications mobiles, utilisez les instruction
  1. Utilisez les [instructions d’application des stratégies de protection des](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) données APP pour créer des stratégies pour iOS et Android. Le niveau 2 (protection améliorée des données) est recommandé pour la protection de référence.
  2. Créez une règle d’accès conditionnel pour [exiger les applications approuvées et la protection des applications.](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
 
-## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7 : Configurer l' approbation de l’ment MFA et l’accès conditionnel pour les invités, y compris la protection des applications mobiles Intune
+## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7 : Configurer l’achème de pertinence et l’accès conditionnel pour les invités, y compris la protection des applications mobiles Intune
 
-Ensuite, nous allons nous assurer que vous pouvez continuer à collaborer et à travailler avec des invités. Si vous utilisez le plan de Microsoft 365 E3 et implémentez l’mfmf pour tous les utilisateurs, vous êtes prêt.
+Ensuite, nous allons nous assurer que vous pouvez continuer à collaborer et à travailler avec des invités. Si vous utilisez le plan de Microsoft 365 E3 et implémenté l’mfmf pour tous les utilisateurs, vous êtes prêt.
 
 Si vous utilisez le plan Microsoft 365 E5 et que vous tirez parti d’Azure Identity Protection pour l’ation MFA basée sur les risques, vous devez effectuer quelques ajustements (car Azure AD Identity Protection ne s’étend pas aux invités) :
 
-- Créez une règle d’accès conditionnel pour exiger l' approbation de mfa toujours pour les invités et les utilisateurs externes.
+- Créez une règle d’accès conditionnel pour exiger l' approbation de la MFA toujours pour les invités et les utilisateurs externes.
 - Mettez à jour la règle d’accès conditionnel MFA basée sur les risques pour exclure les invités et les utilisateurs externes.
 
 Utilisez les instructions de [mise](./office-365-security/identity-access-policies-guest-access.md) à jour des stratégies courantes pour autoriser et protéger l’accès invité et externe afin de comprendre le fonctionnement de l’accès invité avec Azure AD et de mettre à jour les stratégies affectées.
@@ -165,9 +165,9 @@ Les stratégies de protection des applications mobiles Intune que vous avez cré
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8 : inscrire des PC dans la gestion des appareils et exiger des PC conformes
 
-Il existe plusieurs méthodes pour inscrire les appareils de votre personnel. Chaque méthode dépend de la propriété de l’appareil (personnel ou entreprise), du type d’appareil (iOS, Windows, Android) et de la configuration requise (réinitialisations, affinité, verrouillage). Le tri peut prendre un peu de temps. Voir : [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
+Il existe plusieurs méthodes pour inscrire les appareils de vos employés. Chaque méthode dépend de la propriété de l’appareil (personnel ou entreprise), du type d’appareil (iOS, Windows, Android) et de la configuration requise (réinitialisations, affinité, verrouillage). Le tri peut prendre un peu de temps. Voir : [Inscrire des appareils dans Microsoft Intune](/mem/intune/enrollment/).
 
-Le moyen le plus rapide d’y aller consiste à configurer l’inscription automatique [pour Windows 10 appareils mobiles.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
+Le moyen le plus rapide d’y aller consiste à configurer l’inscription automatique [Windows 10 appareils mobiles.](/mem/intune/enrollment/quickstart-setup-auto-enrollment)
 
 Vous pouvez également tirer parti des didacticiels suivants :
 
@@ -176,7 +176,7 @@ Vous pouvez également tirer parti des didacticiels suivants :
 
 Après avoir inscrit des appareils, utilisez les instructions des stratégies communes d’accès aux identités et aux appareils [pour](./office-365-security/identity-access-policies.md) créer ces stratégies :
 
-- [Définir des stratégies de conformité des](./office-365-security/identity-access-policies.md#define-device-compliance-policies) appareils : les paramètres recommandés pour Windows 10 l’obligation d’une protection antivirus. Si vous avez Microsoft 365 E5, utilisez Microsoft Defender for Endpoint pour surveiller l’état d’état des appareils des employés. Assurez-vous que les stratégies de conformité pour les autres systèmes d’exploitation incluent la protection antivirus et les logiciels de protection de point de fin.
+- [Définir des stratégies de conformité des](./office-365-security/identity-access-policies.md#define-device-compliance-policies) appareils : les paramètres recommandés pour Windows 10 l’obligation d’une protection antivirus. Si vous avez Microsoft 365 E5, utilisez Microsoft Defender pour le point de terminaison pour surveiller l’état d’état des appareils des employés. Assurez-vous que les stratégies de conformité pour les autres systèmes d’exploitation incluent la protection antivirus et les logiciels de protection de point de fin.
 - [Exiger des PC conformes](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) : il s’agit de la règle d’accès conditionnel dans Azure AD qui applique les stratégies de conformité des appareils.
 
 Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure les comptes invités de la règle d’accès conditionnel dans Azure AD. Si vous n’excluez pas les utilisateurs invités et externes des stratégies qui nécessitent la conformité des appareils, ces stratégies bloqueront ces utilisateurs. Pour plus d’informations, voir Mise à jour des stratégies courantes [pour autoriser et protéger l’accès invité et externe.](./office-365-security/identity-access-policies-guest-access.md)
@@ -185,7 +185,7 @@ Une seule organisation peut gérer un appareil, donc n’oubliez pas d’exclure
 
 Si vous activez rapidement la plupart de vos employés à travailler à partir de leur domicile, ce changement soudain de modèles de connectivité peut avoir un impact significatif sur l’infrastructure réseau de l’entreprise. De nombreux réseaux ont été mis à l’échelle et conçus avant l’adoption des services cloud. Dans de nombreux cas, les réseaux sont à tolérance de travailleurs à distance, mais n’ont pas été conçus pour être utilisés à distance par tous les utilisateurs simultanément.
 
-Les éléments réseau tels que les constructeurs VPN, les équipements de sortie du réseau central (tels que les proxies et les périphériques de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS de backhaul, la fonctionnalité NAT, etc., sont soudainement mis sous une pression considérable en raison de la charge de toute l’entreprise qui les utilise. Le résultat final est une baisse des performances et de la productivité associée à une expérience utilisateur médiocre pour les utilisateurs qui s’adaptent à travailler à partir de leur domicile.
+Les éléments réseau tels que les constructeurs VPN, les équipements de sortie du réseau central (tels que les proxies et les périphériques de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS de backhaul, la fonctionnalité NAT, etc., sont soudainement mis sous une pression considérable en raison de la charge de toute l’entreprise qui les utilise. Le résultat final est une baisse des performances et de la productivité associée à une expérience utilisateur médiocre pour les utilisateurs qui s’adaptent au travail à domicile.
 
 Certaines des protections habituellement fournies par le routage du trafic via un réseau d’entreprise sont fournies par les applications cloud accessibles par vos utilisateurs. Si vous avez atteint cette étape de cet article, vous avez implémenté un ensemble de contrôles de sécurité cloud sophistiqués pour Microsoft 365 services et données. Une fois ces contrôles en place, vous pouvez être prêt à router le trafic des utilisateurs distants directement vers Office 365. Si vous avez toujours besoin d’un lien VPN pour accéder à d’autres applications, vous pouvez considérablement améliorer vos performances et votre expérience utilisateur en implémentant la tunnellation fractionner. Une fois que vous avez conclu un accord au sein de votre organisation, cette opération peut être réalisée en un jour par une équipe réseau bien coordonnée.
 
@@ -203,7 +203,7 @@ Articles de blog récents sur cette rubrique :
 
 La formation des utilisateurs peut faire gagner beaucoup de temps et de frustration à vos utilisateurs et à votre équipe en matière d’opérations de sécurité. Les utilisateurs expérimentés sont moins susceptibles d’ouvrir des pièces jointes ou de cliquer sur des liens dans des messages électroniques douteux, et sont plus susceptibles d’éviter les sites web suspects.
 
-Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) de l’établissement de Contrôles School fournit d’excellents conseils sur l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
+Le manuel de campagne de [cyber-sécurité](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) de l’établissement d’un établissement scolaire de contrôle de la sécurité fournit d’excellents conseils sur l’établissement d’une culture forte de sensibilisation à la sécurité au sein de votre organisation, y compris la formation des utilisateurs pour identifier les attaques par hameçonnage.
 
 Microsoft 365 fournit les ressources suivantes pour aider à informer les utilisateurs de votre organisation :
 

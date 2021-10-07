@@ -1,27 +1,25 @@
 ---
 title: Configurer les notifications d’alerte dans Microsoft Defender pour le point de terminaison
 description: Vous pouvez utiliser Microsoft Defender pour le point de terminaison pour configurer les paramètres de notification par courrier électronique pour les alertes de sécurité, en fonction de la gravité et d’autres critères.
-keywords: notifications par courrier électronique, configurer les notifications d’alerte, Microsoft Defender pour le point de terminaison, Microsoft Defender pour les notifications de point de terminaison, Microsoft Defender pour les alertes de point de terminaison, Windows 10 Entreprise, Windows 10 Éducation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: notifications par courrier électronique, configurer les notifications d’alerte, Microsoft Defender pour le point de terminaison, Microsoft Defender pour les notifications de point de terminaison, Microsoft Defender pour les alertes de point de terminaison, Windows Entreprise, Windows Éducation
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 857df1a9f088c316349fbbe02618a7345df5a075
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d598687edbb4268bc02a4f0bd8c752405cf22dee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209839"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192966"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer les notifications d’alerte dans Microsoft Defender pour le point de terminaison
 
@@ -63,7 +61,7 @@ Vous pouvez créer des règles qui déterminent les appareils et les gravités d
         > [!NOTE]
         > Ces informations peuvent être traitées par des serveurs de messagerie destinataire qui ne se trouve pas dans l’emplacement géographique que vous avez sélectionné pour vos données Defender pour le point de terminaison.
 
-    - **Appareils** : choisissez d’avertir les destinataires pour les alertes sur tous les appareils (rôle d’administrateur général uniquement) ou sur les groupes d’appareils sélectionnés. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+    - **Appareils** : choisissez d’avertir les destinataires pour les alertes sur tous les appareils (rôle d’administrateur général uniquement) ou sur des groupes d’appareils sélectionnés. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
     - **Gravité de l’alerte** : choisissez le niveau de gravité de l’alerte.
 
 4. Cliquez sur **Suivant**.
@@ -92,7 +90,7 @@ Vous pouvez créer des règles qui déterminent les appareils et les gravités d
 
 Cette section répertorie les différents problèmes que vous pouvez rencontrer lors de l’utilisation de notifications par courrier électronique pour les alertes.
 
-**Problème :** Les destinataires prévus signalent qu’ils n’ont pas reçu les notifications.
+**Problème :** Les destinataires visés signalent qu’ils n’ont pas reçu les notifications.
 
 **Solution :** Assurez-vous que les notifications ne sont pas bloquées par des filtres de courrier électronique :
 

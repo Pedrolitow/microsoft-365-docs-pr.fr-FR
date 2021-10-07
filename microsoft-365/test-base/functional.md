@@ -9,23 +9,23 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: cfa07a795e99144e168b06b99e9f1feacd7fa9be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f64480d66cd91dc4b08f9694331cfe0d9c130ee4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164593"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191264"
 ---
 # <a name="functional-testing"></a>Test fonctionnel
 
 En tant que fournisseur de logiciels, vous pouvez désormais effectuer des tests fonctionnels personnalisés, à l’aide de l’infrastructure de test de votre choix, via la base de test libre-service pour le portail M365. 
 
-Lors du lancement initial du service, nous avons proposé les tests prédéfinis, qui sont un ensemble prédéfinis de tests pilotés par des scripts standardisés. Toutefois, cela n’a pas pu aboutir à une couverture de test complète pour de nombreux éditeurs de logiciels indépendants. 
+Lors du lancement initial du service, nous avons proposé les tests prédéfinis, qui sont un ensemble prédéfinis de tests pilotés par des scripts standardisés. Toutefois, cela n’a pas pu aboutir à une couverture de test complète pour de nombreux éditeurs de logiciels indépendants ( ISV). 
 
 Par conséquent, en réponse à vos commentaires, nous fournissons à nos isv la possibilité de télécharger des tests fonctionnels automatisés.
 
@@ -53,7 +53,7 @@ Onglet 2 : Télécharger composants de votre package en chargeant un fichier zip
 
 Voir aka.ms/usl-package-outline pour plus d’informations. (Remarque : les scripts de test Out-of-Box et le contenu du test fonctionnel doivent être placés dans le même fichier zip). Actuellement, la taille du fichier est limitée à 2 Go.
 
-Onglet 3 : configurer les tâches de test out-of-Box et Fonctionnelles. Ici, choisissez le ou les chemins d’accès aux scripts PowerShell qui installeront, lanceront, fermeront et désinstalleront votre application (pour Out-of-Box), ainsi que les chemins d’accès à tous vos scripts personnalisés pour effectuer votre test fonctionnel. **(Remarque : un script pour désinstaller votre application est facultatif).**
+Onglet 3 : configurer les tâches de test out-of-box et Fonctionnelles. Ici, choisissez le ou les chemins d’accès aux scripts PowerShell qui installeront, lanceront, fermeront et désinstalleront votre application (pour Out-of-Box), ainsi que les chemins d’accès à tous vos scripts personnalisés pour effectuer votre test fonctionnel. **(Remarque : un script pour désinstaller votre application est facultatif).**
 
 Actuellement, vous pouvez charger entre 1 et 8 scripts pour vos tests fonctionnels. (Faites un commentaire sur ce billet si vous avez besoin de davantage de scripts !)
 
@@ -67,7 +67,7 @@ Onglet 4 : choisissez quand la mise à jour Windows est installée : l’applica
 
 ![La Windows mise à jour peut être installée après un script spécifique.](Media/functional_testing_tab4.png)
 
-Onglet 5 : examinez et créez le package. Une fois que vous avez terminé les étapes répertoriées ci-dessus, ```Create``` sélectionnez pour terminer le processus de téléchargement.
+Onglet 5 - Examinez et créez le package. Une fois que vous avez terminé les étapes répertoriées ci-dessus, ```Create``` sélectionnez pour terminer le processus de téléchargement.
 
 Une fois votre package créé, vous pouvez vérifier l’état de vérification de votre package.
 

@@ -7,7 +7,7 @@ ms.date: 11/05/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Découvrez comment déployer Azure AD Connecter sur une machine virtuelle dans Azure pour synchroniser les comptes entre votre annuaire local et le client Azure AD.
-ms.openlocfilehash: f3e296c7401cfc20a2f7165888825adf58528c68
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6535b46fb360cf326d8daf07662cb7fa366ae6c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165433"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178814"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure
 
@@ -89,7 +89,7 @@ Avant de commencer, passez en revue les conditions préalables suivantes pour ce
     
 - Disposez d Microsoft 365 abonnement incluant la fonctionnalité d’intégration Active Directory. Pour plus d’informations Microsoft 365 abonnements, voir la [page Microsoft 365 abonnement.](https://products.office.com/compare-all-microsoft-office-products?tab=2)
     
-- Provision a Azure Virtual Machine that runs Azure AD Connecter to synchronize your on-premises AD DS forest with Microsoft 365.
+- Approvisionnement d’une machine virtuelle Azure qui exécute Azure AD Connecter synchroniser votre forêt AD DS sur site avec Microsoft 365.
     
     Vous devez disposer des informations d’identification (noms et mots de passe) d’un compte d’administrateur d’entreprise AD DS et d’un compte d’administrateur Active Directory Azure.
     

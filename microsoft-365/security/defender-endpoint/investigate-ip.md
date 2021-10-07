@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e2c1cbc82d0fe1604622b1eb2f9f3583f0125c69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6ee90a1d39d873eb01eaf4c586b612bfe5a6fac8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165089"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192750"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour le point de terminaison
 
@@ -42,7 +42,7 @@ Examinez les communications possibles entre vos appareils et les adresses IP ext
 
 L’identification de tous les appareils de l’organisation ayant communiqué avec une adresse IP malveillante suspectée ou connue, telle que les serveurs de commande et de contrôle (C2), permet de déterminer l’étendue potentielle de la violation, des fichiers associés et des appareils infectés.
 
-Vous trouverez des informations dans les sections suivantes dans l’affichage d’adresse IP :
+Vous trouverez des informations dans les sections suivantes dans l’affichage des adresses IP :
 
 - IP dans le monde entier
 - Noms DNS inversés

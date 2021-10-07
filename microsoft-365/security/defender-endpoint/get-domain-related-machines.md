@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs associés au domaine
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés au domaine pour obtenir des ordinateurs qui ont communiqué avec ou à partir d’un domaine dans Microsoft Defender pour point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés au domaine pour obtenir des ordinateurs qui ont communiqué avec ou depuis un domaine dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, domaine, associé, appareils
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f743e4960267f98496585163d963c720ab9d0c5c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: df82c3c36ba4abf128eb11166e946f98d90e670d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191862"
 ---
 # <a name="get-domain-related-machines-api"></a>API Obtenir les ordinateurs associés au domaine
 
@@ -39,7 +39,7 @@ ms.locfileid: "59209563"
 
 ## <a name="api-description"></a>Description de l’API
 
-Extrait une collection [d’ordinateurs](machine.md) qui ont communiqué avec ou à partir d’une adresse de domaine donnée.
+Récupère une collection [d’ordinateurs](machine.md) qui ont communiqué avec ou à partir d’une adresse de domaine donnée.
 
 ## <a name="limitations"></a>Limites
 
@@ -73,7 +73,7 @@ GET /api/domains/{domain}/machines
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

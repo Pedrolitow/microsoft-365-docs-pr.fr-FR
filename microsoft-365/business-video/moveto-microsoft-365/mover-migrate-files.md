@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment migrer des fichiers Google vers Microsoft 365 entreprise à l’aide de Mover.
-ms.openlocfilehash: 6791655f5ee8a9fc867266d5fe153cde6ec9adaa6148191c4c0eb3aedbfe0141
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4bec723d024468f76bdfcc60934eb42c445fe0f5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53843490"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194812"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrer des fichiers Google vers Microsoft 365 entreprise 
 
@@ -35,7 +35,7 @@ ms.locfileid: "53843490"
 Lorsque vous migrez vers Microsoft 365 entreprise, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover.](/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
-> Mover effectuera une copie des fichiers et déplacera les copies vers Microsoft 365 entreprise. Les fichiers d’origine restent également dans Google Drives.
+> Mover effectuera une copie des fichiers et déplacera les copies vers Microsoft 365 entreprise. Les fichiers d’origine resteront également dans Google Drives.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
@@ -45,7 +45,7 @@ Tous les utilisateurs doivent s’être Microsoft 365 pour les entreprises et co
 
 ### <a name="install-mover"></a>Installer Mover
 
-1. Connectez-vous à votre console d’administration Google Workspace [admin.google.com](https://admin.google.com).
+1. Connectez-vous à votre console d’administration Google Workspace [à l’admin.google.com](https://admin.google.com).
 
 1. Choose **Apps**  >  **Google Workspace Marketplace apps** Add app to Domain Install  >  **list**.
 

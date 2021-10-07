@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer vos données et utilisateurs de Google Workspace vers Microsoft 365 entreprise.
-ms.openlocfilehash: 9d5ec1ce6b9b13026f615c4135546505130fe7b3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bdfcebdf6da27376abec782435f93d477cd3cfb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202524"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192414"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Basculer à partir de Google Workspace - Vue d’ensemble
 

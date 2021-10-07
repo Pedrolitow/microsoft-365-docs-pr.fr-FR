@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f6f5c843d095875689a9af1a772af3de0f8e5083
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 955f62f1b14d04ad0346a0fcfe292285490d7cc7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202632"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192582"
 ---
 # <a name="contact-support-for-burundi"></a>Contacter le support technique pour Le Monde
 
@@ -29,7 +29,7 @@ ms.locfileid: "59202632"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 10h00 à 18h00
+Français : Mon-Fri 10H00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 

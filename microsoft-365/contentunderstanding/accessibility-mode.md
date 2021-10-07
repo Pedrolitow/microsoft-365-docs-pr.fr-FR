@@ -7,20 +7,20 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment utiliser le mode d’accessibilité lors de la formation d’un modèle SharePoint Syntex.
-ms.openlocfilehash: 73a867c3157d3debc584995708a337c36b6b0028
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a27615e0b676fdcefb617d76a206d9f47c6f882
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183480"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178994"
 ---
 # <a name="sharepoint-syntex-accessibility-mode"></a>Mode d’accessibilité Syntex de SharePoint
 
 Dans [SharePoint Syntex,](index.md)les utilisateurs peuvent activer le mode accessibilité à toutes les étapes de la formation au modèle (étiquette, formation, test) lorsque vous travaillez avec des exemples de documents. L’utilisation du mode d’accessibilité permet aux utilisateurs à faible vue d’avoir plus facilement accès au clavier à mesure qu’ils naviguent et étiquetent des éléments dans la visionneuse de documents.
 
-Cela permet aux utilisateurs d’utiliser leur clavier pour naviguer dans le texte de la visionneuse de documents et écouter une narration non seulement des valeurs sélectionnées, mais aussi des actions (telles que l’étiquetage ou la suppression de l’étiquetage du texte sélectionné) ou des valeurs d’étiquette prévues lorsque vous formez le modèle avec des exemples de documents supplémentaires. 
+Cela permet aux utilisateurs d’utiliser leur clavier pour parcourir du texte dans la visionneuse de documents et écouter une narration non seulement des valeurs sélectionnées, mais aussi des actions (telles que l’étiquetage ou la suppression de l’étiquetage du texte sélectionné) ou des valeurs d’étiquette prévues lorsque vous formez le modèle avec des exemples de documents supplémentaires. 
 
 
 ![Mode d’accessibilité.](../media/content-understanding/accessibility-mode.png)

@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b26d983bf73a968a06566f18c20d4df24b7763a8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163993"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179318"
 ---
 # <a name="plan-for-communication-compliance"></a>Planifier la conformité des communications
 
@@ -62,9 +62,9 @@ La création de stratégies de conformité des communications est rapide et faci
 
 Lorsque vous planifiez des stratégies de conformité des communications, prenez en compte les points suivants :
 
-- Envisagez d’ajouter tous les utilisateurs de votre organisation dans le cadre de vos stratégies de conformité des communications. L’identification d’utilisateurs spécifiques comme étant dans l’étendue des stratégies individuelles est utile dans certains cas, mais la plupart des organisations doivent inclure tous les utilisateurs dans les stratégies de conformité des communications optimisées pour la détection du harcèlement ou de la discrimination.
+- Envisagez d’ajouter tous les utilisateurs de votre organisation dans le cadre de vos stratégies de conformité des communications. L’identification d’utilisateurs spécifiques comme étant inclus dans le cadre de stratégies individuelles est utile dans certains cas, mais la plupart des organisations doivent inclure tous les utilisateurs dans les stratégies de conformité des communications optimisées pour la détection de harcèlement ou de discrimination.
 - Pour simplifier votre configuration, envisagez de créer des groupes pour les personnes qui ont besoin de révision de leurs communications. Si vous utilisez des groupes ; vous aurez peut-être besoin de plusieurs. Par exemple, si vous voulez analyser des communications entre deux groupes distincts de personnes, ou si vous voulez spécifier un groupe qui n’est pas supervisé.
-- Configurez le pourcentage de communications à examiner à 100 % pour vous assurer que les stratégies capturent tous les problèmes problématiques dans les communications de votre organisation.
+- Configurez le pourcentage de communications à réviser à 100 % pour vous assurer que les stratégies capturent tous les problèmes problématiques dans les communications de votre organisation.
 - Vous pouvez analyser les communications provenant de [sources](communication-compliance-feature-reference.md#supported-communication-types) tierces pour les données importées dans les boîtes aux lettres de Microsoft 365 organisation. Pour inclure la révision des communications dans ces plateformes, vous devez configurer un connecteur vers ces services avant que les messages qui rencontrent des conditions de stratégie soient surveillés par la stratégie de communication.
 - Les stratégies peuvent prendre en charge les langues de surveillance autres que l’anglais dans les stratégies de conformité des communications personnalisées. Créez [un dictionnaire de](communication-compliance-feature-reference.md#custom-keyword-dictionaries) mots clés personnalisé de mots choquants dans le langage de votre choix ou créez votre propre modèle d’apprentissage automatique à l’aide de classifieurs entraidables dans Microsoft 365. [](classifier-get-started-with.md)
 - Toutes les organisations ont des normes de communication et des besoins en matière de stratégie différents. Surveillez les mots clés spécifiques à l’aide des conditions de stratégie de conformité des [communications](communication-compliance-feature-reference.md#conditional-settings) ou surveillez les types spécifiques d’informations avec des types d’informations [sensibles personnalisés.](create-a-custom-sensitive-information-type.md)

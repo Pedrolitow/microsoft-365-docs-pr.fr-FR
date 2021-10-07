@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: 8aff58bfd37fbf4e8573546f84f7670424e6b4d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d44d285959e0529a694b2022d35f2b7e7a575fdc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176012"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192258"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activité
 
@@ -93,7 +93,7 @@ L’Explorateur d’activités collecte des informations d’activité à partir
 - protection supprimée
 - fichiers découverts 
 
-L’Explorateur d’activités rassemble également la stratégie **DLP** qui correspond aux événements provenant de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via la protection contre la perte de données **(DLP)** de point de terminaison. Voici quelques exemples d’événements Windows 10'appareils mobiles sont des fichiers :
+L’Explorateur d’activités rassemble également la stratégie DLP qui correspond aux **événements** de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via **endpoint protection contre la perte de données (DLP).** Voici quelques exemples d’événements Windows 10'appareils mobiles sont des fichiers :
 
 - suppressions
 - creations

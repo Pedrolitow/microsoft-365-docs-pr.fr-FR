@@ -8,20 +8,20 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: En savoir plus sur Listes Microsoft. Avec Listes Microsoft, vous pouvez suivre les détails des clients, tels que le type de client, l’avancement des commandes et l’avancement des commandes.
-ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: En savoir plus sur Listes Microsoft. Avec Listes Microsoft, vous pouvez suivre les détails du client, tels que le type de client, l’avancement des commandes et l’avancement des commandes.
+ms.openlocfilehash: d8d09549751efddf1c2d1576d5a7b3c75981562a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180580"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194728"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Utiliser Listes Microsoft pour suivre les informations professionnelles
 
@@ -40,7 +40,7 @@ Suivre les informations et organiser le travail avec Listes Microsoft. Créez un
 ### <a name="share-the-list-with-partners-or-coworkers"></a>Partager la liste avec des partenaires ou des collègues
 
 1. Au-dessus de la liste, sélectionnez **Partager.**
-1. Entrez les personnes avec qui vous souhaitez partager ; il peut s’agit d’un individu ou d’un groupe.
+1. Entrez les personnes avec qui vous souhaitez partager ; Il peut s’agit d’un individu ou d’un groupe.
 1. Choisissez les autorisations.
 1. Sélectionnez **Accorder l’accès.**
 
@@ -63,7 +63,7 @@ Mettez en forme une colonne pour mettre en évidence les détails qu’elle int 
 
 Vous pouvez hiérarchiser une liste de commandes de différentes manières :
 
-- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Plus ancien à Plus nouveau.
+- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Ancien à Nouveau.
 - Pour grouper les commandes par client, sélectionnez la colonne Type de client, puis grouper par type de client.
 
 ### <a name="update-an-items-status"></a>Mettre à jour l’état d’un élément

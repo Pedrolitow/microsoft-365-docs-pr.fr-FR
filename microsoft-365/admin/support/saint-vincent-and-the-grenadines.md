@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ff07f662cbcc6ed9f9bbe38bd4496652702e27d1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b8244a2b0d2447e132a4ae8c1f8c8e3a70380d40
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206659"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194932"
 ---
 # <a name="contact-support-for-saint-vincent-and-the-grenadines"></a>Contacter le support de Saint-Pierre-et-les-Grerès
 

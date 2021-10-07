@@ -1,7 +1,7 @@
 ---
 title: Obtenir les logiciels installés
 description: Récupère une collection de logiciels installés liés à un ID d’appareil donné.
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, logiciels installés par appareil, api de & gestion des vulnérabilités menace, api tvm Microsoft Defender pour endpoint
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, inventaire logiciel, logiciels installés par appareil, api & gestion des vulnérabilités de menace, api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 719f570e6f4b3cdb0afed6caa65a08bfb43cc3db
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 104121ee1a12f55eaecd68c736e9873018e94b8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209522"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192786"
 ---
 # <a name="get-installed-software"></a>Obtenir les logiciels installés
 

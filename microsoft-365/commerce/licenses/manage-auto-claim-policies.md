@@ -9,7 +9,7 @@ ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment créer et gérer des stratégies de revendication automatique qui attribuent automatiquement des licences à des utilisateurs pour certaines applications.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: b104700905b3753466036411368951f12a7012d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 41d11c6c67d35766e61106bd2beefd69462a42ff
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181600"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179678"
 ---
 # <a name="manage-auto-claim-policies"></a>Gérer les stratégies de revendication automatique
 
@@ -98,7 +98,7 @@ Lorsque vous désactiver une stratégie, plus aucun utilisateur ne peut demander
 
 1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez la stratégie à modifier.
-3. Dans le volet d’informations, dans la section **Nom de la** stratégie, sélectionnez **Modifier**.
+3. Dans le volet d’informations, dans la section **Nom de la** stratégie, sélectionnez **Modifier.**
 4. Entrez un nouveau nom de stratégie, puis sélectionnez **Enregistrer.**
 5. Sélectionnez **Enregistrer** pour fermer le volet d’informations.
 
@@ -145,7 +145,7 @@ Pour chaque produit de votre stratégie de revendication automatique, vous pouve
 
 Si des produits de sauvegarde sont affectés à la stratégie, vous pouvez modifier l’ordre dans lequel ils sont utilisés pour attribuer des licences lorsque les utilisateurs se connectent à l’application.
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Sélectionnez la stratégie à modifier.
 3. Dans le volet d’informations, dans la section **Licences** de produits, sélectionnez la  case à côté du produit que vous souhaitez déplacer, puis sélectionnez Monter ou **Descendre.**
 4. Répétez l’étape 3 pour chaque produit que vous souhaitez réorder.
@@ -153,7 +153,7 @@ Si des produits de sauvegarde sont affectés à la stratégie, vous pouvez modif
 
 ## <a name="view-an-auto-claim-policy-report"></a>Afficher un rapport de stratégie de revendication automatique
 
-1. Dans le Centre d’administration, allez sur la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
+1. Dans le Centre d’administration, allez à la page  \> **Licences de facturation,** puis sélectionnez l’onglet Stratégie de <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">revendication</a> automatique.
 2. Select **View report**. La page **rapport de stratégie de revendication** automatique répertorie toutes les licences attribuées à partir de chaque stratégie au cours des 90 derniers jours. Par défaut, la page affiche les 90 derniers jours.
 3. Pour modifier la période affichée, sélectionnez la liste de listes des **30** derniers jours. Vous pouvez afficher les rapports des 1, 7, 30 et 90 derniers jours.
 

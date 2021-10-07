@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: L’extension de la conformité Microsoft étend la surveillance et le contrôle des activités des fichiers et des actions de protection au navigateur Google Chrome
-ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff0df602e68338315becabd0c5b65f981fe4dd43
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183632"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179186"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>En savoir plus sur l’extension de la conformité Microsoft.
 
@@ -60,7 +60,7 @@ Consultez [Prise en main de l’extension de la conformité Microsoft](dlp-chrom
 - [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md)
 - [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
 - [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
-- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)

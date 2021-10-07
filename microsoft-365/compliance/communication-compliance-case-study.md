@@ -12,7 +12,7 @@ ms.custom: admindeeplinkMAC
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f674e21ecc83a24f641ae7e21361245cb18cdd4c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4085804b6d782a177f4a036421afa9460f3c0354
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164036"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179402"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de langage choquant pour Microsoft Teams, Exchange et Yammer communications
 
@@ -51,7 +51,7 @@ Les administrateurs informatiques et les spécialistes de la conformité de Cont
 
 ### <a name="licensing"></a>Licences
 
-La première étape consiste à vérifier que la licence Microsoft 365 contoso inclut la prise en charge de la solution de conformité des communications. Pour accéder à la conformité des communications et l’utiliser, les administrateurs informatiques de Contoso doivent vérifier que Contoso dispose de l’une des conditions suivantes :
+La première étape consiste à vérifier que la gestion des licences Microsoft 365 contoso inclut la prise en charge de la solution de conformité des communications. Pour accéder à la conformité des communications et l’utiliser, les administrateurs informatiques de Contoso doivent vérifier que Contoso dispose de l’une des conditions suivantes :
 
 - Microsoft 365 E5 abonnement (version payante ou d’essai)
 - Microsoft 365 E3 abonnement + le module Microsoft 365 E5 Conformité’abonnement
@@ -59,7 +59,7 @@ La première étape consiste à vérifier que la licence Microsoft 365 contoso i
 - Microsoft 365 A5 abonnement (version payante ou d’essai)
 - Microsoft 365 A3 abonnement + le module Microsoft 365 A5 conformité de l’application
 - Microsoft 365 A3 abonnement + le module Microsoft 365 A5 gestion des risques internes
-- Microsoft 365 Abonnement G5 (version payante ou d’essai)
+- Abonnement Microsoft 365 G5 (version payante ou d’essai)
 - Microsoft 365 Abonnement G5 + module Microsoft 365 conformité G5
 - Microsoft 365 Abonnement G5 + module Microsoft 365 G5 Gestion des risques internes
 - Office 365 Entreprise Abonnement E5 (version payante ou d’essai)
@@ -74,7 +74,7 @@ Les administrateurs informatiques de Contoso prennent les mesures suivantes pour
 
 1. Les administrateurs informatiques se connectent au Centre d'administration Microsoft 365 et Centre d'administration Microsoft 365 > <https://admin.microsoft.com>   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**licences de facturation.**</a>
 
-2. Ici, ils confirment qu’ils ont l’une des [options de licence](communication-compliance-configure.md#subscriptions-and-licensing) qui inclut la prise en charge de la conformité des communications.
+2. Ici, ils confirme qu’ils ont l’une des [options de licence](communication-compliance-configure.md#subscriptions-and-licensing) qui inclut la prise en charge de la conformité des communications.
 
 ![Gestion des licences de conformité des communications.](../media/communication-compliance-case-licenses.png)
 
@@ -82,17 +82,17 @@ Les administrateurs informatiques de Contoso prennent les mesures suivantes pour
 
 Il existe cinq groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des** communications disponible en tant qu’option de menu dans Centre de conformité Microsoft 365  et pour poursuivre ces étapes de configuration, le rôle Administrateur de conformité des communications est attribué aux administrateurs Contoso.
 
-Contoso décide d’utiliser le groupe de rôles Conformité des communications pour affecter tous les administrateurs de conformité des communications, analystes, enquêteurs et visionneuses au groupe.  Cela facilite la prise en charge rapide de Contoso et répond au mieux à ses besoins en matière de gestion de la conformité.
+Contoso décide d’utiliser le groupe de rôles Conformité des communications pour affecter au groupe tous les administrateurs, analystes, enquêteurs et visionneuses de conformité des communications.  Cela facilite la prise en charge rapide de Contoso et répond au mieux à ses besoins en matière de gestion de la conformité.
 
 |**Role**|**Autorisations de rôle**|
 |:-----|:-----|
 | **Conformité des communications** | Utilisez ce groupe de rôles pour gérer la conformité des communications pour votre organisation au sein d’un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et visionneuses désignés, vous pouvez configurer les autorisations de conformité des communications dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de conformité des communications. Cette configuration est le moyen le plus simple de se lancer rapidement dans la conformité des communications et convient parfaitement aux organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts. |
-| **Administrateur de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications, puis séparez les administrateurs de conformité des communications dans un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité des communications, des paramètres globaux et des attributions de groupe de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
+| **Administrateur de conformité des communications** | Utilisez ce groupe de rôles pour configurer initialement la conformité des communications, puis pour séparer les administrateurs de conformité des communications en un groupe défini. Les utilisateurs affectés à ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité des communications, des paramètres globaux et des attributions de groupe de rôles. Les utilisateurs affectés à ce groupe de rôles ne peuvent pas afficher les alertes de message. |
 | **Analyste de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’analystes de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les stratégies où ils sont affectés en tant que réviseurs, afficher les métadonnées des messages (et non le contenu du message), passer à des réviseurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
 | **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas Advanced eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
 | **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
 
-1. Les administrateurs informatiques de Contoso se connectent à la page d’autorisations [Centre de conformité Microsoft 365](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
+1. Les administrateurs informatiques contoso se connectent à la page d’autorisations [Centre de conformité Microsoft 365](https://compliance.microsoft.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
 2. Dans la **Centre de conformité Microsoft 365,** ils vont à Autorisations et sélectionnent le lien pour afficher et gérer les **rôles** dans Office 365.
 3. Les administrateurs sélectionnent le *groupe de rôles Conformité* des communications, puis **sélectionnent Modifier le groupe de rôles.**
 4. Les administrateurs **sélectionnent Choisir des membres** dans le volet de navigation de gauche, puis **sélectionnent Modifier.**
@@ -185,7 +185,7 @@ Une fois toutes les conditions préalables remplies, les administrateurs informa
     ![Modèle de langage choquant de conformité des communications.](../media/communication-compliance-case-template.png)
 
 2. Dans l’Assistant modèle de stratégie, les administrateurs informatiques et les spécialistes de la conformité de Contoso collaborent pour compléter les trois champs obligatoires : **Nom de la stratégie**, **Utilisateurs ou groupes à surveiller**, puis **Réviseurs**.
-3. Étant donné que l’Assistant de stratégie a déjà suggéré un nom pour la stratégie, les administrateurs informatiques et les spécialistes de la conformité décident de conserver le nom suggéré et de se concentrer sur les champs restants. Ils sélectionnent le groupe  Tous les utilisateurs pour le champ Utilisateurs ou groupes à surveiller et sélectionnent les spécialistes de la conformité qui doivent examiner et corriger les alertes de stratégie pour le champ **Relecteurs.**  La dernière étape pour configurer la stratégie et commencer à collecter des informations d’alerte consiste à sélectionner **Créer une stratégie.**
+3. Étant donné que l’Assistant de stratégie a déjà suggéré un nom pour la stratégie, les administrateurs informatiques et les spécialistes de la conformité décident de conserver le nom suggéré et de se concentrer sur les champs restants. Ils sélectionnent le groupe  *Tous* les utilisateurs pour le champ Utilisateurs ou groupes, puis sélectionnent les spécialistes de la conformité qui doivent examiner et corriger les alertes de stratégie pour le champ **Relecteurs.** La dernière étape pour configurer la stratégie et commencer à collecter des informations d’alerte consiste à sélectionner **Créer une stratégie.**
 
     ![Assistant Langage choquant de conformité des communications.](../media/communication-compliance-case-wizard.png)
 

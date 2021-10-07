@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les statistiques sur les fichiers
-description: Découvrez comment utiliser l’API Obtenir des statistiques de fichier pour récupérer les statistiques pour le fichier donné dans Microsoft Defender for Endpoint.
+description: Découvrez comment utiliser l’API Obtenir des statistiques de fichier pour récupérer les statistiques du fichier donné dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, fichier, statistiques
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e08f8379189bf221ae8eb450666084932a950b3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7056f42f059c6f33f2f84c7cf7b240dacead842a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192826"
 ---
 # <a name="get-file-statistics-api"></a>API Obtenir les statistiques sur les fichiers
 
@@ -70,7 +70,7 @@ GET /api/files/{id}/stats
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
