@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comment vous pouvez utiliser les étiquettes de rétention pour gérer le cycle de vie des documents dans SharePoint en utilisant des métadonnées pour classifier le contenu, appliquer automatiquement les étiquettes et utiliser la rétention basée sur les événements pour démarrer la période de rétention.
-ms.openlocfilehash: 8c34e8fe860f3704ac96e852393e6661115bb58a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fe24f13609752dd5a5e73f4631644bd1cf4d4e6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151349"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint
 
@@ -63,7 +63,7 @@ Chaque produit dispose d'un site SharePoint dédié qui contient une bibliothèq
 [ ![Bibliothèque de documents pour la documentation sur le produit.](../media/SPRetention3.png) ](../media/SPRetention3.png#lightbox)
 
 > [!NOTE]
-> Au lieu d'avoir un site SharePoint par produit, l'entreprise de fabrication dans ce scénario pourrait utiliser Team Microsoft par produit pour soutenir la collaboration entre les membres de l'équipe, par exemple par le biais d'un chat permanent, et utilise **l'onglet Fichiers** dans Teams pour la gestion des documents. Dans cet article, nous concentrons uniquement sur les documents, nous n'utiliserons donc qu'un site.
+> Au lieu d'avoir un site SharePoint par produit, l'entreprise de fabrication dans ce scénario pourrait utiliser une équipe Microsoft par produit pour soutenir la collaboration entre les membres de l'équipe, par exemple par le biais d'une conversation permanente, et utiliser l'onglet **Fichiers** dans Teams pour la gestion des documents. Dans cet article, nous nous concentrons uniquement sur les documents. Par conséquent, nous utiliserons un site uniquement.
 
 Voici un aperçu de la bibliothèque de documents pour le produit widget de rotation :
 
@@ -124,7 +124,7 @@ La capture d'écran suivante montre les paramètres lorsque vous créez l'étiqu
 
     ![Créer un type d'événement pour la boîte de dialogue de l’étiquette de spécification du produit.](../media/SPRetention6.png)
 
-3. Dans la page **Nommer votre type d’événement**, entrez **Arrêt du produit** et une description facultative. Sélectionnez ensuite **Suivant**, **Envoyer**, puis **Terminé**.
+3. Dans la page **Nommer votre type d’événement**, entrez **Arrêt du produit** et une description facultative. Sélectionnez ensuite **Suivant**, **Envoyer** et **Terminé**.
 
 4. Une fois de retour dans la page **Définir les paramètres de rétention**, pour **Démarrer la période de rétention sur la base de**, utilisez la zone déroulante pour sélectionner le type d’événement **Arrêt du produit** que vous avez créé.
 
@@ -168,7 +168,7 @@ La **propriété \_de type ows document\_x0020\_est la deuxième** propriété q
 
 Si les propriétés analysées que vous recherchez n'apparaissent pas dans la section Gérer le schéma de recherche dans le centre d'administration de SharePoint :
 
-- Peut-être que les documents n'ont pas été indexés. Vous pouvez forcer une réindexation de la bibliothèque en allant à **Paramètres de la bibliothèque de documents** > **Paramètres  avancés**.
+- Les documents ne sont peut-être pas indexés. Vous pouvez forcer une réindexation de la bibliothèque en allant à **Paramètres de la bibliothèque de documents** > **Paramètres avancés**.
 
 - Si la bibliothèque de documents se trouve sur un site moderne, assurez-vous que l’administrateur SharePoint est également un administrateur de collection de sites.
 
@@ -219,7 +219,7 @@ Maintenant que vérification a été faite que la requête KQL fonctionne, créo
 
    [ ![Sélectionnez « Auto-appliquer un label » sur la page Label](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
-2. Dans l’assistant de création de stratégie d’étiquetage automatique, sur la page **Nommer votre stratégie d’étiquetage automatique**, entrez un nom tel que **Application automatique d’étiquette Spécification du produit** et une description facultative. Ensuite, sélectionnez **Suivant**.
+2. Dans l’assistant Créer une stratégie d’étiquetage automatique, sur la page **Nommer votre stratégie d’étiquetage automatique**, entrez un nom tel que **Appliquer automatiquement des étiquettes de spécification du produit** et une description facultative. Sélectionnez ensuite **Suivant**.
 
 3. Dans la page **Choisir le type de contenu auquel vous voulez appliquer cette étiquette**, sélectionnez **Appliquer une étiquette au contenu incluant des mots ou des phrases spécifiques**, ou des propriétés, puis sélectionnez **Suivant**.
 
@@ -240,7 +240,7 @@ Maintenant que vérification a été faite que la requête KQL fonctionne, créo
 
 6. Dans la page **Choisir une étiquette à appliquer automatiquement**, sélectionnez **Ajouter une étiquette**.
 
-7. Dans la liste d’étiquettes de rétention, sélectionnez **Spécification du produit**. Sélectionnez ensuite **Ajouter** puis **Suivant**.
+7. Dans la liste des étiquettes, sélectionnez **Spécification de produit**, **Ajouter**, puis **Suivant**.
 
 8. Vérifiez vos paramètres :
 

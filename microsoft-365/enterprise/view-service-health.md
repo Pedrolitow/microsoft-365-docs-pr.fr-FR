@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Afficher l’état d’intégrité des services Microsoft 365 avant de contacter le support technique pour vérifier qu’aucune interruption de service n’est en cours.
-ms.openlocfilehash: 64a0d4816ce9afdd8ee4bf1c2a4522ef9fc56afc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202055"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166789"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Comment vérifier l’intégrité du service Microsoft 365
 
@@ -64,7 +64,7 @@ L’onglet **Historique** affiche tous les incidents et avis qui ont été réso
 
 Si vous rencontrez un problème avec un service Microsoft 365 et que vous ne le voyez pas dans la page d’**Intégrité des services**, faites-le nous savoir en sélectionnant **Signaler un problème** et en complétant le formulaire court. Nous allons examiner les données et rapports connexes d’autres organisations pour voir à quel point le problème est répandu et s’il provient de notre service. Si c’est le cas, nous l’ajouterons sous la forme d’un nouvel incident ou d’un nouvel avis sur la page d’**Intégrité des services**, où vous pouvez suivre sa résolution. La page **Problèmes signalés** affiche tous les problèmes signalés par votre locataire à partir de ce formulaire et l’état.
 
-Pour personnaliser votre affichage des services qui apparaissent sur le tableau de bord, sélectionnez **Préférences** > **Affichage personnalisé** et décochez les cases des services que vous souhaitez filtrer en dehors de votre affichage tableau de bord d’intégrité des services. Vérifiez que la case à cocher est cochée pour chaque service que vous souhaitez surveiller.
+Pour personnaliser votre affichage des services qui apparaissent sur le tableau de bord, sélectionnez **Préférences** > **Affichage personnalisé**, puis décochez les cases des services que vous souhaitez filtrer en dehors de votre affichage tableau de bord Intégrité des services. Vérifiez que la case est cochée pour tous les services que vous souhaitez surveiller.
 
 Pour vous inscrire aux notifications par e-mail des nouveaux incidents qui affectent votre locataire et les modifications d’état d’un incident actif, sélectionnez **Préférences** > **E-mail**, cliquez sur **M’envoyer des notifications d’intégrité du service par e-mail**, puis spécifiez :
 
@@ -142,7 +142,7 @@ En règle générale, les services apparaissent comme intègres, sans autres inf
 
 ### <a name="history"></a>Historique
 
-L’état du service vous permet d’examiner votre état d’intégrité actuel et d’afficher l’historique des avis de service et des incidents qui ont affecté votre locataire au cours des 30 derniers jours. Pour afficher l’intégrité passée de tous les services, sélectionnez l’affichage **Historique** .
+L’Intégrité des services vous permet d'examiner votre état d’intégrité actuel et d'afficher l'historique des avis et incidents liés aux services qui ont affecté votre client au cours des 30 derniers jours. Pour afficher l'intégrité passée de tous les services, sélectionnez l’affichage **Historique**.
 
 Pour plus d’informations sur notre engagement en matière de temps d’activité, consultez [Opérations transparentes de Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
 

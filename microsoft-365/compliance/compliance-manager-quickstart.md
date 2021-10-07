@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: 9697e638d29f61e70f01534d1fa0a5bfb2b80e48
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d70167341082c851ee25d94c3ee5b827d6e1492f
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192282"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223454"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
-**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, stratégies et normes.
+**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, les stratégies et les normes.
 
 Le Gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le Gestionnaire de conformité offre également des fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Les évaluations disponibles dépendent de votre contrat de licence . [en savoir plus.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
@@ -63,8 +63,8 @@ Lorsque vous êtes à l’aise avec la gestion des évaluations dans le Gestionn
 
 Vous pouvez également configurer des tests automatisés de l’ensemble ou d’un sous-ensemble d’actions d’amélioration. Consultez les liens ci-dessous pour comprendre les fonctionnalités plus avancées dans le Gestionnaire de conformité :
 
-- [Étendre un modèle gestionnaire de conformité en ajoutant vos propres contrôles et actions d’amélioration](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
-- [Créer votre propre modèle personnalisé](compliance-manager-templates.md#create-an-assessment-template)
-- [Modifier un modèle existant pour ajouter ou supprimer des contrôles et des actions](compliance-manager-templates.md#modify-a-template)
+- [Étendre un modèle gestionnaire de conformité en ajoutant vos propres contrôles et actions d’amélioration](compliance-manager-templates-extend.md)
+- [Créer votre propre modèle personnalisé](compliance-manager-templates-create.md)
+- [Modifier un modèle existant pour ajouter ou supprimer des contrôles et des actions](compliance-manager-templates-modify.md)
 - [Configurer des tests automatisés des actions d’amélioration](compliance-manager-setup.md#set-up-automated-testing)
 - [Réaffecter des actions d’amélioration à un autre utilisateur](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

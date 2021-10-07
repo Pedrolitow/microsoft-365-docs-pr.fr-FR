@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: 149d44ef8db0d21bf0cb64d1c0d09aaf5bf773d6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a425f144e2c98866d32f14d7a16829342c14ef74
+ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179258"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60223428"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -54,7 +54,7 @@ Voici des exemples de deux groupes et leurs évaluations sous-jacentes :
   - ISO 27001:2013
   - ISO 27018:2014
 
-Différentes évaluations au sein d’un ou de plusieurs groupes peuvent partager des actions d’amélioration. Les actions d’amélioration peuvent être des modifications apportées dans des solutions techniques mappées à votre client, telles que l’authentification à deux facteurs, ou des actions non techniques que vous effectuez en dehors du système, telles que l’élaboration d’une nouvelle stratégie d’espace de travail. Les mises à jour des détails ou de l’état que vous a faites d’une action d’amélioration technique seront prises en sur mesure par les évaluations de tous les groupes. Les mises à jour des actions d’amélioration non techniques sont reconnues par les évaluations au sein du groupe où vous les appliquez. Cela vous permet d’implémenter une action d’amélioration et de répondre simultanément à plusieurs exigences.
+Différentes évaluations au sein d’un ou de plusieurs groupes peuvent partager des actions d’amélioration. Les actions d’amélioration peuvent être des modifications apportées dans des solutions techniques mappées à votre client, telles que l’authentification à deux facteurs, ou des actions non techniques que vous effectuez en dehors du système, telles que l’élaboration d’une nouvelle stratégie d’espace de travail. Toutes les mises à jour détaillées ou d’état apportées à une action d’amélioration technique seront prises en jeu par les évaluations de tous les groupes. Les mises à jour des actions d’amélioration non techniques sont reconnues par les évaluations au sein du groupe où vous les appliquez. Cela vous permet d’implémenter une action d’amélioration et de répondre simultanément à plusieurs exigences.
 
 ### <a name="create-a-group"></a>Créer un groupe
 
@@ -87,9 +87,9 @@ Pour commencer à créer des évaluations, suivez ces étapes.
     - Go to your **assessments** page in Compliance Manager and select **Add assessment**; ou
     - Recherchez le modèle que vous souhaitez utiliser sous l’onglet **Modèles** d’évaluation, affichez ses détails et sélectionnez **Créer une évaluation.** Cela remplit le champ de sélection de modèle de l’Assistant pour vous.
 
-3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (voir [types](compliance-manager-templates.md#template-availability-and-licensing) de modèles pour plus d’informations). Sélectionnez la bouton d’radio en de côté du modèle choisi, puis sélectionnez **Suivant**.
+3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (voir [types](compliance-manager-templates.md#template-availability-and-licensing) de modèles pour plus d’informations). Sélectionnez la bouton d’radio en haut de votre modèle, puis sélectionnez **Suivant.**
 
-4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisissez le produit qu’elle va évaluer et affectez-la à un groupe.
+4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisir le produit qu’elle va évaluer et l’affecter à un groupe.
 
     - **Produit**: si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé existant que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner Microsoft 365 comme produit lors de l’utilisation d’un modèle universel. Si vous utilisez un modèle Microsoft 365, ce champ est rempli pour vous indiquer Microsoft 365 ne peut pas être modifié.
     - **Nom**: entrez un nom pour votre évaluation dans le champ Nom **de l’évaluation.** Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
@@ -97,11 +97,11 @@ Pour commencer à créer des évaluations, suivez ces étapes.
         - Sélectionnez **Utiliser un groupe existant** pour l’affecter à un groupe que vous avez déjà créé ; ou
         - Sélectionnez **Créer un groupe** pour créer un groupe et lui affecter cette évaluation :
             - Déterminez un nom pour votre groupe et entrez-le dans le champ sous la bouton d’radio.
-            - Vous pouvez copier des données à partir d’un groupe **existant,** comme les détails et les documents d’implémentation et de test, en sélectionnant les zones appropriées.
+            - Vous pouvez copier des données à partir d’un groupe **existant,** par exemple des détails et des documents d’implémentation et de test, en sélectionnant les zones appropriées.
 
     Lorsque vous avez terminé, sélectionnez **Suivant**.
 
-5. **Révision et fin :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
+5. **Examinez et terminez :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
 
 6. L’écran suivant confirme que vous avez bien créé votre nouvelle évaluation. Sélectionnez **Terminé** pour fermer l’Assistant et la page de détails de votre nouvelle évaluation s’affiche à l’écran.
 
@@ -161,7 +161,7 @@ Lorsqu’une mise à jour est disponible pour une évaluation, vous verrez une n
 
 ### <a name="what-causes-an-update"></a>Causes d’une mise à jour
 
-Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres conseils basés sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié),](compliance-manager-templates.md#modify-a-template)ainsi que de Microsoft.
+Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres instructions basées sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié),](compliance-manager-templates-modify.md)ainsi que de Microsoft.
 
 Si Microsoft met à jour un modèle gestionnaire de conformité que vous avez étendu, votre évaluation héritera de ces mises à jour une fois que vous les aurez acceptées. Votre évaluation conserve les attributs supplémentaires que vous avez appliqués à l’évaluation lorsque vous l’avez étendue.
 
@@ -188,7 +188,7 @@ Après avoir sélectionné la mise à **jour révision** dans la page détails d
 - Présentation de la mise à jour
 - Détails spécifiques sur les modifications, y compris l’impact sur votre score de conformité, la progression vers la fin de l’évaluation et le nombre spécifique de modifications apportées aux actions et contrôles d’amélioration.
 
-La sélection du **lien** du modèle mis à jour permet de télécharger un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
+La sélection du **lien** du modèle Mis à jour permet de télécharger un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
 
 Pour accepter la mise à jour et apporter les modifications à votre évaluation, **sélectionnez Accepter la mise à jour.** Les modifications acceptées sont permanentes.
 
@@ -222,7 +222,7 @@ Pour supprimer une évaluation, suivez les étapes ci-dessous :
 
 2. Sélectionnez **Supprimer l’évaluation** dans le coin supérieur droit de votre écran.
 
-3. Une fenêtre s’affiche vous demandant de confirmer la suppression définitive de l’évaluation. Sélectionnez **Supprimer l’évaluation** pour fermer la fenêtre. Vous recevrez une fenêtre de confirmation vous confirmant que votre évaluation a été supprimée du Gestionnaire de conformité.
+3. Une fenêtre s’affiche et vous demande de confirmer la suppression définitive de l’évaluation. Sélectionnez **Supprimer l’évaluation** pour fermer la fenêtre. Vous recevrez une fenêtre de confirmation vous confirmant que votre évaluation a été supprimée du Gestionnaire de conformité.
 
 Si vous supprimez la seule évaluation d’un groupe, ce groupe est également supprimé du Gestionnaire de conformité.
 
