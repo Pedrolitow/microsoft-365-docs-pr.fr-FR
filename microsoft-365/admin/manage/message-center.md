@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Obtenez une vue d’ensemble Microsoft 365 centre de messages et son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
-ms.openlocfilehash: 9eff7bb1e22107e80c1eefa9547ecb9ee6f0cb95
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: Obtenez une vue d’Microsoft 365 centre de messages et son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
+ms.openlocfilehash: d107231aa2ac0319f3fc871a3b2398caa9db9ee4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773175"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169370"
 ---
 # <a name="message-center"></a>Centre de messages
 
@@ -53,11 +53,11 @@ Pour ouvrir le Centre de messages :
 
 ::: moniker-end
 
-Vous pouvez également utiliser [l’application Administration Microsoft 365 sur](https://go.microsoft.com/fwlink/p/?linkid=627216) votre appareil mobile pour afficher le Centre de messages, ce qui est un excellent moyen de rester informé des notifications Push.
+Vous pouvez également utiliser [l’application Administration Microsoft 365 sur](https://go.microsoft.com/fwlink/p/?linkid=627216) votre appareil mobile pour afficher le centre de messages, ce qui est un excellent moyen de rester informé des notifications Push.
 
 Pour vous désabonner des e-mails du centre de messages, consultez [l’article Unsubscribe from Message center emails](#unsubscribe-from-message-center-emails) in this article.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 <br>
 
@@ -71,7 +71,7 @@ Pour vous désabonner des e-mails du centre de messages, consultez [l’article 
 |Puis-je prévisualiser les modifications ou les fonctionnalités avant qu’elles ne soient déployées dans mon organisation ?|Certaines modifications et nouvelles fonctionnalités peuvent être prévisualiser en optant pour le programme de publication ciblée. Pour vous y rendre, dans le Centre d’administration, Paramètres paramètres de l’organisation - Préférences de publication  >    >    >  **du profil d’organisation.** (Dans le Centre d’administration,  vous devrez peut-être sélectionner Afficher tout en bas du volet de navigation gauche pour afficher **Paramètres.)** Vous pouvez choisir la version ciblée pour l’ensemble de votre organisation ou uniquement pour les utilisateurs sélectionnés. Pour plus [d’informations](release-options-in-office-365.md) sur le programme, voir les options de publication standard ou ciblée dans Microsoft 365'informations sur le programme.|
 |Puis-je déterminer la date exacte à laquelle une modification sera disponible pour mon organisation ?|Malheureusement, nous ne pouvons pas vous indiquer la date exacte à laquelle une modification sera apporté à votre organisation. Dans notre billet de centre de messages, nous fournirons autant d’informations que possible sur le minutage de la publication, en fonction de notre niveau de confiance. Nous travaillons sur des améliorations pour améliorer ce niveau de détail.|
 |Ces messages sont-ils spécifiques à mon organisation ?|Nous faisons de notre mieux pour vous assurer que seuls les billets du Centre de messages affectent votre organisation. La Microsoft 365 comprend toutes les fonctionnalités que nous travaillons actuellement et que nous allons déployer, mais toutes ces fonctionnalités ne s’appliquent pas à toutes les organisations.|
-|Puis-je recevoir des messages du centre de messages par courrier électronique à la place ?|Oui. Vous pouvez choisir de vous envoyer un résumé hebdomadaire et jusqu’à deux autres adresses de messagerie. Le résumé hebdomadaire envoyé par courrier électronique est allumé par défaut. Si vous n’avez pas vos résumés hebdomadaires, vérifiez votre dossier de courrier indésirable. Pour plus [d’informations](#preferences) sur la façon de configurer le résumé hebdomadaire, voir la section Préférences de cet article.|
+|Puis-je recevoir des billets du centre de messages par courrier électronique à la place ?|Oui. Vous pouvez choisir de vous envoyer un résumé hebdomadaire et jusqu’à deux autres adresses de messagerie. Le résumé hebdomadaire envoyé par courrier électronique est allumé par défaut. Si vous n’avez pas vos résumés hebdomadaires, vérifiez votre dossier de courrier indésirable. Pour plus [d’informations](#preferences) sur la façon de configurer le résumé hebdomadaire, voir la section Préférences de cet article.|
 |Comment arrêter d’obtenir le résumé du centre de messages ?|Go to Message center in the admin center and select **Preferences**. Dans **l’onglet Courrier** électronique, désactiver l’option **m’envoyer des notifications par courrier électronique à partir du centre de messages.**|
 |Comment puis-je m’assurer que les notifications de confidentialité des données sont reçues par les contacts de mon organisation ?|En tant qu’administrateur global, vous recevrez des messages de confidentialité des données pour votre organisation. En outre, vous pouvez attribuer le rôle de lecteur confidentialité du Centre de messages aux personnes qui doivent voir les messages de confidentialité des données. Les autres rôles d’administrateur ayant accès au Centre de messages ne peuvent pas afficher les messages de confidentialité des données.   <br/><br/>Pour plus d’informations, voir [Préférences](#preferences) dans cet article.|
 |Pourquoi ne puis-je pas voir un message qui s’y trouvait précédemment ?|Pour gérer le nombre de messages dans le centre de messages, chaque message expire et est supprimé après un certain temps. En règle générale, les messages expirent 30 jours après la période décrite dans le corps du message.|
@@ -113,7 +113,7 @@ Vous pouvez sélectionner n’importe quel en-tête de colonne, sauf **Service**
 
 ### <a name="major-updates"></a>Mises à jour majeures
 
-Les mises à jour majeures  peuvent être examinées en sélectionnant la mise à jour majeure dans **la** liste des balises.
+Les mises à jour majeures peuvent être examinées en sélectionnant la mise à jour majeure **dans** **la** liste des balises.
 
 Les mises à jour majeures sont communiquées au moins 30 jours à l’avance lorsqu’une action est requise et peut inclure :
 
@@ -156,9 +156,9 @@ Si l’administration est distribuée au sein de votre organisation, il se peut 
 
 1. Sélectionnez **Modifier les préférences du centre de messages** en haut du centre de messages.
 
-2. Assurez-vous que la bascule est définie sur **On** pour chaque service que vous souhaitez surveiller. Utilisez le basculement pour modifier le paramètre **sur « Off** » pour les services que vous souhaitez filtrer en dehors de votre affichage Centre de messages.
+2. Assurez-vous que la bascule est définie sur **On** pour chaque service que vous souhaitez surveiller. Utilisez le basculement pour modifier le paramètre sur **« Off** » pour les services que vous souhaitez filtrer en dehors de votre affichage Centre de messages.
 
-3. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, modifiez le paramètre Envoyer un résumé hebdomadaire **de mes messages** sur **Off**.
+3. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, modifiez le **paramètre Envoyer un résumé** hebdomadaire de mes messages sur **Off**.
 
    La notification par courrier électronique pour les mises à jour majeures est un contrôle distinct. Si vous souhaitez recevoir des notifications par courrier électronique concernant les mises à jour majeures, vérifiez que les messages électroniques m’envoyer pour les mises à jour **majeures** sont **en cours.** Modifiez le paramètre sur **Off** pour arrêter d’obtenir des messages concernant les mises à jour majeures. 
 
@@ -176,7 +176,7 @@ Si l’administration est distribuée au sein de votre organisation, il se peut 
 
 2. Dans **l’onglet Affichage** personnalisé, assurez-vous que la case à cocher est sélectionnée pour chaque service que vous souhaitez surveiller. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, videz la case à cocher Envoyer **des notifications** par courrier électronique à partir du centre de messages dans **l’onglet Courrier électronique.**
+3. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, clear the **Send me email notifications from message center** check box in he Email **tab**.
 
    Vous pouvez également entrer jusqu’à deux adresses de messagerie, séparées par un point-virgule.
 
@@ -212,7 +212,7 @@ Voici une vue d’ensemble rapide des informations que vous verrez dans chaque c
 |Service|Les icônes indiquent l’application à laquelle s’applique le message.|
 |Plus d'options|D’autres options vous permet de faire disparaître un message, de le marquer comme lu ou non lu, ou de le partager avec un autre administrateur. Pour restaurer un message archivé, sélectionnez **l’onglet Archive,** cochez la coche en regard du message, puis sélectionnez **Restaurer**.|
 |Balises| Vous pouvez choisir des balises dans la drop-down Balise pour filtrer les messages. <br> <p> **Confidentialité des données**: notification de confidentialité des données (limitée aux rôles d’administrateur général et de lecteur de confidentialité du centre de messages). <p> **Mise à jour** majeure : modifications communiquées au moins 30 jours à l’avance [(mises à jour majeures).](#major-updates) <p> **Retrait :** retrait d’un service ou d’une fonctionnalité. <p> **Nouvelle fonctionnalité**: nouvelle fonctionnalité ou nouveau service. <p> **Mise à jour de** fonctionnalité : mise à jour vers une fonctionnalité existante. <p> **Impact sur l’administrateur**: lorsque la modification a un impact clair sur l’administrateur des manières suivantes : modification de l’interface utilisateur, modification du flux de travail, contrôle disponible et Action spécifique/potentielle. <p> **Impact sur l’utilisateur**: lorsque la modification du service a un impact clairement sur l’utilisateur : modification de l’interface utilisateur et modification du flux de travail. <p> **Message mis à jour**: lorsqu’un message est mis à jour.|
-|Catégorie| Cela n’est pas affiché par défaut, mais peut être spécifié dans le panneau Choisir **des colonnes.** Les messages sont identifiés par l’une des trois catégories suivantes : <p> **Éviter ou résoudre les problèmes**: vous informe des problèmes connus qui affectent votre organisation et peut vous obliger à prendre des mesures pour éviter les interruptions de service. La prévention ou la correction des problèmes sont différentes des messages d’état du service, car ils vous invitent à être proactif pour éviter les problèmes. <p> **Planifier le changement**: vous informe des modifications apportées aux Microsoft 365 qui peuvent vous obliger à agir pour éviter les interruptions de service. Par exemple, nous allons vous faire savoir sur les modifications apportées à la requise du système ou sur les fonctionnalités en cours de suppression. Nous essayons de fournir au moins 30 jours d’avis sur toute modification qui nécessite qu’un administrateur agisse pour que le service fonctionne normalement. <p> **Restez informé**: vous indique les fonctionnalités nouvelles ou mises à jour que nous sommes en train d’allumer dans votre organisation. Les fonctionnalités sont généralement annoncées en premier dans la [feuille Microsoft 365 feuille de route.](https://go.microsoft.com/fwlink/?linkid=2070821) <p> Peut également vous faire savoir sur la maintenance planifiée conformément à notre contrat de niveau de service. La maintenance planifiée peut entraîner un temps d’in Microsoft 365, une fonctionnalité spécifique ou un service tel que le courrier électronique ou les OneDrive Entreprise.|
+|Catégorie| Cela n’est pas affiché par défaut, mais peut être spécifié dans le panneau Choisir **des colonnes.** Les messages sont identifiés par l’une des trois catégories suivantes : <p> **Éviter ou résoudre les problèmes**: vous informe des problèmes connus qui affectent votre organisation et peut vous obliger à prendre des mesures pour éviter les interruptions de service. La prévention ou la correction des problèmes sont différentes des messages d’état du service, car ils vous invitent à être proactif pour éviter les problèmes. <p> **Planifier le changement**: vous informe des modifications apportées aux Microsoft 365 qui peuvent vous obliger à agir pour éviter les interruptions de service. Par exemple, nous allons vous faire savoir sur les modifications apportées à la requise du système ou sur les fonctionnalités qui sont supprimées. Nous essayons de fournir au moins 30 jours d’avis sur toute modification qui nécessite qu’un administrateur agisse pour que le service fonctionne normalement. <p> **Restez informé**: vous indique les fonctionnalités nouvelles ou mises à jour que nous sommes en train d’allumer dans votre organisation. Les fonctionnalités sont généralement annoncées en premier dans la [feuille Microsoft 365 feuille de route.](https://go.microsoft.com/fwlink/?linkid=2070821) <p> Peut également vous faire savoir sur la maintenance planifiée conformément à notre contrat de niveau de service. La maintenance planifiée peut entraîner un temps d’in Microsoft 365, une fonctionnalité spécifique ou un service tel que le courrier électronique ou les OneDrive Entreprise.|
 |Agir par|Nous n’avons de dates ici que si nous a faisons une modification qui nécessite que vous prenons une action avant un certain délai. Étant donné que nous utilisons rarement la loi **par** colonne, si vous voyez quelque chose ici, vous devez y prêter une attention particulière.|
 |Dernière mise à jour|Date à laquelle le message a été publié ou mis à jour pour la dernière fois.|
 |Message ID|Microsoft suit les publications de notre centre de messages par ID de message. Vous pouvez vous référer à cet ID si vous souhaitez envoyer des commentaires ou si vous appelez le support technique à propos d’un message particulier.|
@@ -292,12 +292,12 @@ De nombreuses informations utiles sur les changements apportés aux services Mic
 
 Pour une vue d’ensemble du Centre de messages, consultez [Centre de messages dans Microsoft 365](message-center.md). Pour découvrir comment définir vos préférences linguistiques afin d’activer la traduction automatique des publications du Centre de messages, consultez [Traduction pour les publications du Centre de messagerie](language-translation-for-message-center-posts.md). Si vous voulez programmer un autre moyen pour obtenir des informations en temps réel sur l’état du service et les communications du Centre de messages, veuillez consulter [Présentation de l’API de communications du service Microsoft 365](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).
 
-## <a name="unsubscribe-from-message-center-emails"></a>Se désabonner des e-mails du centre de messages
+## <a name="unsubscribe-from-message-center-emails"></a>Se désabonner des messages électroniques du centre de messages
 
 1. Les e-mails Digest sont allumés par défaut et sont envoyés à votre adresse de messagerie principale. Pour arrêter de recevoir le résumé hebdomadaire, sélectionnez **Préférences,** puis **Courrier électronique.**
     - Désélectez la **case Envoyer un résumé hebdomadaire de mes messages.**
     - La notification par courrier électronique pour les mises à jour majeures est un contrôle distinct. Si vous ne souhaitez pas recevoir de notifications par courrier électronique concernant les mises à jour majeures, vérifiez que la case à cocher Envoyer des courriers électroniques pour les mises à jour **majeures** n’est pas sélectionnée.
-    - Pour arrêter de recevoir des notifications par courrier électronique concernant les messages de confidentialité des données, vérifiez que la case à cocher Envoyer des **courriers** électroniques pour les messages de confidentialité des données n’est pas sélectionnée.  (Les messages de confidentialité des données ne sont pas inclus dans le résumé hebdomadaire.)
+    - Pour arrêter de recevoir des notifications  par courrier électronique concernant les messages de confidentialité des données, vérifiez que la case à cocher Envoyer des messages de confidentialité des données n’est pas sélectionnée.  (Les messages de confidentialité des données ne sont pas inclus dans le résumé hebdomadaire.)
 
 2. Sélectionnez **Enregistrer** pour conserver vos modifications.
 
@@ -305,4 +305,4 @@ Pour une vue d’ensemble du Centre de messages, consultez [Centre de messages d
 
 [Configurer les options de publication standard ou ciblée](../manage/release-options-in-office-365.md) (article)\
 [Gérer les Office qui apparaissent](../manage/show-hide-new-features.md) dans Nouveautés (article)\
-[Abonnements aux entreprises et documentation de facturation](../../commerce/index.yml) (page de liens)
+[Abonnements aux entreprises et documentation de facturation](../../commerce/index.yml) (page de lien)

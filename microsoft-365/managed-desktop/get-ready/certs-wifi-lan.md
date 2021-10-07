@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e09bcee08051663191a12c4e2916d7d6512eb514
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f9e621be3ca730c947437291359f6b650e558d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182080"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166729"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Préparer les certificats et les profils réseau pour le Bureau géré Microsoft  
  
@@ -44,7 +44,7 @@ Avant de déployer une configuration Wi-Fi sur Microsoft Manged Desktop, vous de
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>Exigences de connectivité câblé et authentification 802.1x 
  
-Si vous utilisez l’authentification 802.1x pour sécuriser l’accès à partir d’appareils à votre réseau local, vous devrez fournir les détails de configuration requis à Microsoft Manged Desktop périphériques. Microsoft Manged Desktop appareils exécutant Windows 10, version 1809 ou une ultérieure prise en charge du déploiement d’une configuration 802.1x via le fournisseur de services de configuration (CSP) WiredNetwork. Pour plus d’informations, voir la documentation [du programme CSP WiredNetwork.](/windows/client-management/mdm/wirednetwork-csp) 
+Si vous utilisez l’authentification 802.1x pour sécuriser l’accès à partir d’appareils à votre réseau local, vous devrez fournir les détails de configuration requis à Microsoft Manged Desktop périphériques. Microsoft Manged Desktop périphériques exécutant Windows 10, version 1809 ou une ultérieure prise en charge du déploiement d’une configuration 802.1x via le fournisseur de services de configuration WiredNetwork(CSP). Pour plus d’informations, voir la documentation [du programme CSP WiredNetwork.](/windows/client-management/mdm/wirednetwork-csp) 
  
 Avant de déployer un profil de configuration de réseau câblé sur Microsoft Manged Desktop, rassemblez les exigences de votre organisation pour votre réseau d’entreprise câblé. Pour ce faire, procédez comme suit : 
  
@@ -68,7 +68,7 @@ Pour plus d’informations, [voir Configurer un profil de certificat pour vos ap
  
 Une fois que votre profil laN a été exporté, vous pouvez préparer la stratégie pour Microsoft Manged Desktop en suivant les étapes suivantes :   
  
-1. Créez un profil personnalisé dans Microsoft Intune pour le profil LAN à l’aide des paramètres suivants (voir Utiliser des paramètres personnalisés pour les Windows 10 [dans Intune).](/intune/custom-settings-windows-10) Dans **OMA-URI Paramètres** personnalisé, **sélectionnez** Ajouter, puis entrez les valeurs suivantes : 
+1. Créez un profil personnalisé dans Microsoft Intune profil laN à l’aide des paramètres suivants (voir Utiliser des paramètres personnalisés pour Windows 10 [appareils dans Intune).](/intune/custom-settings-windows-10) Dans **OMA-URI Paramètres** personnalisé, **sélectionnez** Ajouter, puis entrez les valeurs suivantes : 
     - Name: *Modern Workplace-Windows 10 LAN Profile* 
     - Description : entrez une description qui donne une vue d’ensemble du paramètre, ainsi que d’autres détails importants. 
     - OMA-URI (sensible à la cas) : Enter *./Device/Vendor/MSFT/WiredNetwork/LanXML*

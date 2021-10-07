@@ -7,7 +7,7 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -19,12 +19,12 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: Le 10 octobre 2017, le support a pris fin pour Project Server 2007, Project Portfolio Server et Project 2007. Utilisez cet article pour planifier votre mise à niveau maintenant.
-ms.openlocfilehash: 12447eb2a021b3f92e3557b2c3ea87e859841346
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c492c7154006a139589cff1c768dd77c13804c07
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209192"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168457"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Project Server 2007
 
@@ -34,12 +34,12 @@ Le support a pris fin Office serveurs et applications 2007 en 2017, et vous deve
   
 |**Produit**|**Date de fin du support**|
 |:-----|:-----|
-|Project Server 2007  <br/> |10 octobre 2017  <br/> |
-|Project Portfolio Server 2007  <br/> |10 octobre 2017  <br/> |
-|Project 2007 Standard  <br/> |10 octobre 2017  <br/> |
-|Project 2007 Professional  <br/> |10 octobre 2017  <br/> |
+|Project Server 2007  <br/> |10 octobre 2017  <br/> |
+|Project Portfolio Server 2007  <br/> |10 octobre 2017  <br/> |
+|Project 2007 Standard  <br/> |10 octobre 2017  <br/> |
+|Project 2007 Professional  <br/> |10 octobre 2017  <br/> |
    
-Pour plus d’informations sur Office serveurs 2007 sur la mise à niveau vers la mise à Office [2007](upgrade-from-office-2007-servers-and-products.md)et sur les produits clients.
+Pour plus d’informations Office serveurs 2007 sur la mise à niveau vers la mise à Office [2007](upgrade-from-office-2007-servers-and-products.md)et sur les produits clients.
   
 ## <a name="what-does-end-of-support-mean"></a>*Qu’est-ce que la fin du support* signifie ?
 
@@ -82,7 +82,7 @@ Prenons les considérations suivantes lorsque vous prévoyez de migrer Project S
     
 ## <a name="migrate-to-project-online"></a>Migrer vers Project Online
 
-Si vous choisissez de migrer de Project Server 2007 vers Project Online, vous pouvez suivre les instructions suivantes pour migrer manuellement les données de votre plan de projet :
+Si vous choisissez de migrer de Project Server 2007 vers Project Online, vous pouvez faire les choses suivantes pour migrer manuellement les données de votre plan de projet :
   
 1. Enregistrez vos plans de projet Project Server 2003 au format .mpp.
     
@@ -141,9 +141,9 @@ Pour plus d’informations, [voir Upgrade to Project Server 2010](/previous-vers
     
   - **** Mise à niveau complète avec attachement de base de données : migre les données de projet stockées dans les bases de données Office Project Server 2007, ainsi que les données de site Microsoft Project Web App stockées dans une base de données de contenu SharePoint.
     
-  - **Mise à  niveau principale** avec attachement de base de données : migre uniquement les données de projet stockées dans les bases de données Project Server.
+  - **Mise à  niveau principale** avec attachement de base de données : migre uniquement les données de projet stockées dans les bases de données Project server.
     
-- **Mise à niveau sur place**: les données de configuration de la batterie de serveurs et tout le contenu de la batterie de serveurs sont mises à niveau sur le matériel existant dans un ordre fixe. Lorsque vous démarrez le processus de mise à niveau, le programme d’installation met l’ensemble de la batterie de serveurs hors connexion. Les sites web et Microsoft Project Web App sont indisponibles tant que la mise à niveau n’est pas terminée, puis le programme d’installation redémarre le serveur. Après avoir commencé une mise à niveau sur place, vous ne pouvez pas suspendre la mise à niveau ou revenir à la version précédente. Il est préférable de mettre en miroir votre environnement de production et d’effectuer la mise à niveau sur place vers cet environnement, et non dans votre environnement de production. 
+- **Mise à niveau sur place**: les données de configuration de la batterie de serveurs et tout le contenu de la batterie de serveurs sont mises à niveau sur le matériel existant dans un ordre fixe. Lorsque vous démarrez le processus de mise à niveau, le programme d’installation met l’ensemble de la batterie de serveurs hors connexion. Les sites web et les sites Microsoft Project Web App ne sont pas disponibles tant que la mise à niveau n’est pas terminée, puis le programme d’installation redémarre le serveur. Après avoir commencé une mise à niveau sur place, vous ne pouvez pas suspendre la mise à niveau ou revenir à la version précédente. Il est préférable de mettre en miroir votre environnement de production et d’effectuer la mise à niveau sur place vers cet environnement, et non dans votre environnement de production. 
     
 Ressources supplémentaires :
   
@@ -190,7 +190,7 @@ Ressources supplémentaires :
     
 ### <a name="step-3-migrate-to-project-server-2016"></a>Étape 3 : Migrer vers Project Server 2016
 
-Après avoir vérifié que vos données ont bien migré, l’étape suivante consiste à migrer vers Project Server 2016.
+Une fois que vous avez vérifié que vos données ont bien migré, l’étape suivante consiste à migrer vers Project Server 2016.
   
 Pour obtenir une description complète de ce que vous devez faire pour mettre à niveau Project Server 2013 vers Project Server 2016, voir Mise à niveau [vers Project Server 2016](//project/upgrading-to-project-server-2016).
   
@@ -198,12 +198,12 @@ Ressources clés :
   
 |**Ressource**|**Description**|
 |:-----|:-----|
-|[Vue d'ensemble du processus de mise à niveau vers Project Server 2016](/previous-versions/office/project-server-2010/ee662104(v=office.14)) <br/> |Vue d’ensemble de la mise à niveau de Project Server 2013 vers Project Server 2016 <br/> |
+|[Vue d'ensemble du processus de mise à niveau vers Project Server 2016](/previous-versions/office/project-server-2010/ee662104(v=office.14)) <br/> |Vue d’ensemble de ce que vous devez faire pour mettre à niveau Project Server 2013 vers Project Server 2016 <br/> |
 |[Planifier la mise à niveau vers Project Server 2016](/project/plan-for-upgrade-to-project-server-2016) <br/> |Considérations de planification lors de la mise à niveau Project Server 2013 vers Project Server 2016 <br/> |
    
 #### <a name="things-to-know-about-upgrading-to-this-version"></a>Éléments à savoir sur la mise à niveau vers cette version
 
-[Ce que vous devez savoir sur Project Server 2016 mise à niveau vous](/project/plan-for-upgrade-to-project-server-2016) indique quelques modifications importantes pour la mise à niveau pour cette version, notamment :
+[Ce que vous devez savoir sur Project Server 2016 mise à niveau vous](/project/plan-for-upgrade-to-project-server-2016) indique certaines modifications importantes pour la mise à niveau pour cette version, notamment :
   
 - Lorsque vous créez votre environnement Project Server 2016 vers lequel vous allez migrer vos données Project Server 2013, les fichiers d’installation Project Server 2016 sont inclus dans SharePoint Server 2016. Pour plus d’informations, voir [Déployer Project Server 2016](/project/deploy-project-server-2016).
     
@@ -211,7 +211,7 @@ Ressources clés :
     
 ## <a name="migrate-from-portfolio-server-2007"></a>Migrer à partir de Portfolio Server 2007
 
-Project Portfolio Server 2007 a été utilisé avec Project Server 2007 pour la stratégie de portefeuille, la hiérérisation et l’optimisation. Aucune version supplémentaire de Project Portfolio Server n’a été créée après cette version. Toutefois, les fonctionnalités de gestion de portefeuille sont disponibles dans Project Server 2016 et la version Premium de Project Online. Toutefois, les données Project Portfolio Server 2007 ne peuvent pas être migrées vers l’un ou l’autre. Les données telles que les pilotes d’entreprise devront être recréés.
+Project Portfolio Server 2007 a été utilisé avec Project Server 2007 pour la stratégie de portefeuille, la hiér donc et l’optimisation. Aucune version supplémentaire de Project Portfolio Server n’a été créée après cette version. Toutefois, les fonctionnalités de gestion de portefeuille sont disponibles dans Project Server 2016 et la version Premium de Project Online. Toutefois, les données Project Portfolio Server 2007 ne peuvent pas être migrées vers l’un ou l’autre. Les données telles que les pilotes d’entreprise devront être recréés.
   
 Autres ressources :
   

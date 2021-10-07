@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour définir des stratégies de sécurité des appareils et des règles d’accès.
-ms.openlocfilehash: 6a7706c4c5b571c9ff41e383efe2f4de2f512257
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 4fb1b8ca467d86259f2608af5140510a2a88b23a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775143"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165999"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -47,19 +48,19 @@ Voici un résumé des étapes :
 
 **Étape 2 :** Configurer La mobilité et la sécurité de base en créant, par exemple, un certificat APNs pour gérer les appareils iOS et en ajoutant un enregistrement DNS (Domain Name System) pour votre domaine afin de prendre en charge Windows téléphones.
 
-**Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous faites cela, vos utilisateurs obtiennent un message d’inscription sur leur appareil et une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez définies pour eux. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). 
+**Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous faites cela, vos utilisateurs obtiennent un message d’inscription sur leur appareil, et une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez définies pour eux. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). 
 
 :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base.":::
 
 ## <a name="device-management-tasks"></a>Tâches de gestion des appareils
 
-Une fois que vous avez installé basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des [appareils,](manage-enrolled-devices.md)notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits dans Gestion des appareils mobiles pour Microsoft 365 .
+Une fois que vous avez installé Basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des [appareils,](manage-enrolled-devices.md)notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits dans Gestion des appareils mobiles pour Microsoft 365 .
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>Autres façons de gérer les appareils et les applications
 
 Si vous avez simplement besoin de la gestion des applications mobiles (MAM), par exemple pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune propose une autre option en plus de l’inscription et de la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies MAM à l’aide du portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, voir [vue d’ensemble des stratégies de protection des applications.](/mem/intune/apps/app-protection-policy)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configurer la mobilité et la sécurité de](set-up.md) base (article)\
 [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md) (article)\

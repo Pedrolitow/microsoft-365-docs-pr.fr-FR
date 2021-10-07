@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
 author: dansimp
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 708d7d271e03b127460d5b2aa2745568d920a198
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: d4c029ee825299202b3d1a128c9fbee5986bf5cc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042877"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166527"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Évaluer l’accès contrôlé aux dossiers
 
@@ -67,7 +67,7 @@ ID d’événement | Description
  1123 | Événement d’accès contrôlé aux dossiers bloqué
 
 > [!TIP]
-> Vous pouvez configurer un abonnement [au Windows de](/windows/win32/wec/setting-up-a-source-initiated-subscription) l’événement pour collecter les journaux de manière centralisée. 
+> Vous pouvez configurer un abonnement [Windows de l’événement](/windows/win32/wec/setting-up-a-source-initiated-subscription) pour collecter les journaux de manière centralisée. 
 
 ## <a name="customize-protected-folders-and-apps"></a>Personnaliser les applications et les dossiers protégés
 

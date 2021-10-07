@@ -7,7 +7,7 @@ ms.date: 12/29/2016
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Résumé : Décrit les considérations pour la capacité du réseau, les accélérateurs wan et les périphériques d’équilibrage de charge utilisés pour se connecter à Office 365.'
-ms.openlocfilehash: e1209c13eb24d11a2cc9692957bc4ee5f6310f41
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38df9a64610c4b4d44014a142bf7d255aa0a0f46
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179716"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166777"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planifier les périphériques réseau qui se connectent aux services Office 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
   
-Certains matériels réseau peuvent avoir des limites sur le nombre de sessions simultanées qui sont pris en charge. Pour les organisations qui ont plus de 2 000 utilisateurs, il est recommandé qu’elles surveillent leurs périphériques réseau pour s’assurer qu’elles sont capables de gérer le trafic de service Office 365 supplémentaire. Le logiciel de surveillance SNMP (Simple Network Management Protocol) peut vous aider à le faire.
+Certains matériels réseau peuvent avoir des limites sur le nombre de sessions simultanées qui sont pris en charge. Pour les organisations qui ont plus de 2 000 utilisateurs, il est recommandé qu’elles surveillent leurs périphériques réseau pour s’assurer qu’elles sont en mesure de gérer le trafic de service Office 365 supplémentaire. Le logiciel de surveillance SNMP (Simple Network Management Protocol) peut vous aider à le faire.
 
 Cet article fait partie de la planification [réseau et de l’optimisation](./network-planning-and-performance.md)des performances pour Office 365 .
 
@@ -48,7 +48,7 @@ Les articles d Skype Entreprise d’aide suivants ont plus d’informations sur 
 
 Chaque périphérique réseau existant sur une connexion a sa limite de capacité. Ces appareils incluent les cartes réseau client et serveur, les routeurs, les commutateurs et les concentrateurs qui les interconnectent. Une capacité réseau adéquate signifie qu’aucun d’entre eux n’est saturé. La surveillance de l’activité réseau est essentielle pour garantir que les charges réelles sur tous les appareils réseau sont inférieures à leur capacité maximale. La capacité du réseau affecte les performances des périphériques proxy.
   
-Dans la plupart des cas, la bande passante de connexion Internet définit la limite du trafic. Les performances faibles pendant les heures de pointe du trafic sont probablement dues à une utilisation excessive du lien Internet. Cette situation s’applique également à un scénario de succursale, où les ordinateurs serveurs proxy de succursale sont connectés au périphérique proxy au siège social de la succursale sur une liaison de réseau large (WAN) lente.
+Dans la plupart des cas, la bande passante de connexion Internet définit la limite du trafic. Les performances faibles pendant les heures de trafic de pointe sont probablement dues à une utilisation excessive du lien Internet. Cette situation s’applique également à un scénario de succursale, où les ordinateurs serveurs proxy de succursale sont connectés au périphérique proxy au siège social de la succursale sur une liaison de réseau large (WAN) lente.
   
 Pour tester la capacité du réseau, surveillez l’activité réseau sur l’interface réseau proxy. S’il s’agit de plus de 75 % de la bande passante maximale d’une interface réseau, envisagez d’augmenter la bande passante de l’infrastructure réseau qui est insuffisante. Vous pouvez également utiliser des fonctionnalités avancées, telles que la compression HTTP.
   

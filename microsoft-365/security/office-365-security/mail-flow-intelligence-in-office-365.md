@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés renseignements sur le flux de messagerie).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd0d44ae991ec37cf76b664fd56ae9123c98eac8
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 84029f2f3387913b810c6886a2ac546e587aaca7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988966"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169490"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de courriers dans EOP
 
@@ -30,7 +30,7 @@ ms.locfileid: "59988966"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 pouvez pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
+Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
 
 Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cet article. Collectivement, les erreurs de mise en file d’accès et de notification pour les messages non transmis envoyés via des connecteurs sont appelées informations de _flux de messagerie._
 
@@ -66,7 +66,7 @@ En règle générale, cela signifie Microsoft 365 ne peut pas se connecter au se
 
 ## <a name="error-code-450-44316-connection-refused"></a>Code d’erreur : 450 4.4.316 Connexion refusée.
 
-En règle générale, cette erreur signifie Microsoft 365 une erreur de connexion lorsqu’elle a tenté de se connecter au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions à Microsoft 365 adresses IP. Ou bien, cette erreur peut se faire par conception si vous avez complètement migré votre système de messagerie local vers Microsoft 365 et arrêté votre environnement de messagerie local.
+En règle générale, cette erreur signifie Microsoft 365 a rencontré une erreur de connexion lors de la connexion au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions à Microsoft 365 adresses IP. Ou bien, cette erreur peut se faire par conception si vous avez complètement migré votre système de messagerie local vers Microsoft 365 et arrêté votre environnement de messagerie local.
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Comment corriger le code d’erreur 450 4.4.316 ?
 
@@ -80,7 +80,7 @@ En règle générale, cette erreur signifie Microsoft 365 une erreur de connexio
 
     2. Sélectionnez le  connecteur avec la valeur **De Office 365** et la valeur **À** du serveur de messagerie de votre organisation et faites **l’une** des étapes suivantes :
        - Supprimez le connecteur en cliquant sur **Supprimer** ![ l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-       - Désactivez le connecteur en cliquant sur **l’icône** ![ Modifier.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et désactiver **l’activer.**
+       - Désactivez le connecteur en cliquant sur **l’icône** ![ Modifier.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) et effacer **l’activer.**
 
   - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **Relais** interne à **Faisant autorité**. Pour obtenir des instructions, [voir Gérer les domaines acceptés dans Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
@@ -97,7 +97,7 @@ En règle générale, cette erreur signifie Microsoft 365 connecté au serveur d
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>Comment corriger le code d’erreur 450 4.4.317 ?
 
-- Vérifiez les paramètres et certificats TLS sur vos serveurs de messagerie locaux, ainsi que les paramètres TLS sur le connecteur.
+- Vérifiez les paramètres et les certificats TLS sur vos serveurs de messagerie locaux, ainsi que les paramètres TLS sur le connecteur.
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Code d’erreur : 450 4.4.318 La connexion a été interrompue brusquement

@@ -3,7 +3,7 @@ title: Désactivation de TLS 1.0 et 1.1 pour les Microsoft 365
 description: Décrit l’annulation et la désactivation de TLS 1.0 et 1.1 pour les Microsoft 365.
 author: workshay
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3084232f267a1180425d2daa3fcd2ba2fbcbd063
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205796"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167101"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Désactivation de TLS 1.0 et 1.1 pour les Microsoft 365
 
@@ -92,7 +92,7 @@ Vous devez mettre à jour les applications qui appellent Microsoft 365 API sur T
 
 Pour plus d’informations, voir Préparation de l’utilisation obligatoire de [TLS 1.2 dans Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 Les ressources suivantes fournissent des conseils pour vous assurer que vos clients utilisent TLS 1.2 ou une version ultérieure et pour désactiver TLS 1.0 et 1.1 :
 

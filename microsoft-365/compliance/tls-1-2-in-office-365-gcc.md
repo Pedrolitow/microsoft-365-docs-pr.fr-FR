@@ -3,7 +3,7 @@ title: Désactivation de TLS 1.0 et 1.1 dans Microsoft 365 Cloud de la communaut
 description: Explique comment Microsoft désactive la prise en charge de TLS 1.1 et 1.0 dans les environnements Cloud de la communauté du secteur public High et DoD dans Microsoft 365.
 author: kccross
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -14,12 +14,12 @@ ms.reviewer: krowley
 ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 16a02985107c5f578d6d6c21bf2efc6e80297951
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a1c2c733036dfc5a88ddf0abe73147c1b64542f4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167113"
 ---
 # <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>Désactivation de TLS 1.0 et 1.1 dans Microsoft 365 Cloud de la communauté du secteur public High et DoD
 
@@ -59,6 +59,6 @@ En plus des pannes que vous pouvez connaître si vous utilisez les clients répe
 
 - Téléphone Lync
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 Pour obtenir des conseils et des références pour vous assurer que vos clients utilisent TLS 1.2, voir Préparation de l’utilisation obligatoire de [TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)dans Office 365 .

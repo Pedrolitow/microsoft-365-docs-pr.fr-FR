@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: ''
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -18,12 +18,12 @@ ms.custom:
 - commerce_licensing
 description: Découvrez la nouvelle fonctionnalité d’allotments.
 ms.date: 03/17/2021
-ms.openlocfilehash: eacb738da3f2b2a3a76333040c945de7f26dee86862b87fcf10210b33e4ae835
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 4a908441dbdaa5ecafcd140233b75adca0c22e4a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53893126"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167725"
 ---
 # <a name="allotment-basics"></a>Informations de base sur l’allotment
 
@@ -49,7 +49,7 @@ Les produits suivants ne peuvent pas être utilisés avec des allotments :
 - Logiciels perpétuelles ou logiciels directement attribués à un utilisateur en l’absence de licence.
 - Ressources Azure
 
-Vous devez être un administrateur global ou un administrateur de licence pour prendre en compte une autorisation.
+Vous devez être un administrateur global ou un administrateur de licence pour commencer avec une autorisation.
 
 ## <a name="getting-started"></a>Prise en main
 

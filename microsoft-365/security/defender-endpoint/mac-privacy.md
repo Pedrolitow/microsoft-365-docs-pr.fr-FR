@@ -2,27 +2,25 @@
 title: Confidentialité pour Microsoft Defender pour point de terminaison sur Mac
 description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint sur Mac.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, confidentialité, diagnostic
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 087a5e416ce4f56f3cf4b8f96cc2e0109fe7ca49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d9ad9b3bfe8aec36a3fdf7db456ed6383c586176
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179244"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168325"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -38,7 +36,7 @@ Microsoft s’engage à vous fournir les informations et les contrôles dont vou
 
 Cette rubrique décrit les contrôles de confidentialité disponibles dans le produit, comment gérer ces contrôles avec des paramètres de stratégie et plus d’informations sur les événements de données collectés.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour endpoint sur macOS
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>Vue d’ensemble des contrôles de confidentialité dans Microsoft Defender pour point de terminaison sur macOS
 
 Cette section décrit les contrôles de confidentialité pour les différents types de données collectées par Microsoft Defender pour Endpoint sur macOS.
 
@@ -93,11 +91,11 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 |sense_guid|Identificateur unique associé à l’appareil. Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés.|
 |org_id|Identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier si les problèmes ont un impact sur un ensemble d’entreprises sélectionné et le nombre d’entreprises qui en sont touchées.|
 |hostname|Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés.|
-|product_guid|Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes gammes du produit.|
+|product_guid|Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes types de produit.|
 |app_version|Version de Microsoft Defender pour point de terminaison sur l’application macOS. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
 |sig_version|Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’elle puisse être correctement hiérarchisées.|
 |supported_compressions|Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application.|
-|release_ring|Sonner à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
+|release_ring|Sonnerie à l’appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d’identifier l’anneau de publication sur lequel un problème peut se produire afin qu’il puisse être correctement hiérarchisé.|
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 

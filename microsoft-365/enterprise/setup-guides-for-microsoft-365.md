@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenez des outils pas à pas pour planifier, migrer et implémenter les fonctionnalités des licences de votre client. Trouvez un guide pour configurer un service ou une application que vous devez exécuter.
-ms.openlocfilehash: 3d69484cf1899fbca8994e3abc89bd49876da5cf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b95437a3aed5409900d5006859b7099b1ff2443e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181162"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170198"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
@@ -61,7 +61,7 @@ Le [guide de configuration de](https://aka.ms/office365setup) la messagerie vous
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrer des contacts gmail et des éléments de calendrier
 
-Lorsque vous migrez la boîte aux lettres d’un utilisateur Gmail vers Microsoft 365, les messages électroniques sont migrés, mais pas les contacts et les éléments de calendrier. Le conseiller de calendrier et [les contacts Gmail](https://aka.ms/gmailcontactscalendar) fournissent des étapes pour importer des contacts Google et des éléments de calendrier Google vers Microsoft 365 à l’aide de méthodes d’importation et d’exportation avec Outlook.com, le client Outlook ou PowerShell.
+Lorsque vous migrez la boîte aux lettres d’un utilisateur Gmail vers Microsoft 365, les messages électroniques sont migrés, mais pas les contacts et les éléments de calendrier. Le conseiller de calendrier et [les contacts Gmail](https://aka.ms/gmailcontactscalendar) fournissent des étapes pour importer des contacts Google et des éléments de calendrier Google dans Microsoft 365 à l’aide de méthodes d’importation et d’exportation avec Outlook.com, le client Outlook ou PowerShell.
 
 ### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 de déploiement
 
@@ -85,21 +85,21 @@ Le [guide Windows Virtual Desktop](https://aka.ms/wvdsetupguide) fournit aux adm
 
 Microsoft Edge a été entièrement reconstruit pour vous apporter des performances et des compatibilités de premier niveau, la sécurité et la confidentialité que vous méritez, ainsi que de nouvelles fonctionnalités conçues pour vous donner le meilleur du web.
 
-Le guide d’installation de [Microsoft Edge](https://aka.ms/edgeadvisor) vous aidera à configurer la découverte de sites Enterprise pour voir quels sites accédés dans votre organisation devront peut-être utiliser le mode IE, examiner et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies de conformité pour répondre aux exigences de votre organisation et gérer l’accès web sur vos appareils. Vous pouvez télécharger des Microsoft Edge sur des appareils individuels, ou nous allons vous montrer comment déployer plusieurs utilisateurs dans votre organisation avec la stratégie de groupe, Configuration Manager ou Microsoft Intune.
+Le guide d’installation de [Microsoft Edge](https://aka.ms/edgeadvisor) vous aidera à configurer la découverte de sites Enterprise pour voir quels sites accédés dans votre organisation devront peut-être utiliser le mode IE, examiner et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies de conformité pour répondre aux besoins de votre organisation et gérer l’accès web sur vos appareils. Vous pouvez télécharger des Microsoft Edge sur des appareils individuels, ou nous allons vous montrer comment déployer plusieurs utilisateurs dans votre organisation avec la stratégie de groupe, Configuration Manager ou Microsoft Intune.
 
 ### <a name="configure-ie-mode-for-microsoft-edge"></a>Configurer le mode IE pour Microsoft Edge
 
-Si vous avez déjà déployé Microsoft Edge et que vous souhaitez uniquement configurer le mode [IE,](https://aka.ms/configureiemode) le guide Configurer le mode IE pour Microsoft Edge vous donne des scripts pour automatiser la configuration de la découverte de sites Enterprise. Vous recevrez également des recommandations en mode IE à partir d’un outil en nuage qui vous aidera à créer une liste des sites en mode Enterprise à déployer pour vos utilisateurs.
+Si vous avez déjà déployé Microsoft Edge et que vous souhaitez uniquement configurer le mode [IE,](https://aka.ms/configureiemode) le guide Configurer le mode IE pour Microsoft Edge vous donne des scripts pour automatiser la configuration de la découverte de sites Enterprise. Vous recevrez également des recommandations en mode IE à partir d’un outil basé sur le cloud qui vous aidera à créer une liste des sites en mode Enterprise à déployer pour vos utilisateurs.
 
 ### <a name="microsoft-search-setup-guide"></a>Recherche Microsoft de configuration
 
 Recherche Microsoft aide votre organisation à trouver ce dont elle a besoin pour effectuer ce sur quoi elle travaille. Qu’elle recherche des personnes, des fichiers, des organigrammes, des sites ou des réponses à des questions courantes, votre organisation peut utiliser Recherche Microsoft tout au long de leur journée de travail pour obtenir des réponses.
 
-Le [guide Recherche Microsoft](https://aka.ms/MicrosoftSearchSetup) configuration vous permet de configurer Recherche Microsoft si vous souhaitez le piloter pour un groupe d’utilisateurs ou le déployer à tous les membres de votre organisation. Vous allez affecter des administrateurs de recherche et des éditeurs de recherche, puis personnaliser l’expérience de recherche pour vos utilisateurs avec des réponses et d’autres options, comme l’ajout de l’extension Bing à Chrome ou la définition de Bing comme moteur de recherche par défaut.
+Le [guide Recherche Microsoft](https://aka.ms/MicrosoftSearchSetup) de configuration vous permet de configurer Recherche Microsoft si vous souhaitez le piloter pour un groupe d’utilisateurs ou le déployer à tous les membres de votre organisation. Vous allez affecter des administrateurs de recherche et des éditeurs de recherche, puis personnaliser l’expérience de recherche pour vos utilisateurs avec des réponses et d’autres options, comme l’ajout de l’extension Bing à Chrome ou la définition de Bing comme moteur de recherche par défaut.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guide de configuration de la cogestion d’Intune Configuration Manager
 
-Utilisez le guide de configuration de [cogestion d’Intune Configuration Manager](https://aka.ms/comanagementsetup) pour les périphériques clients Configuration Manager existants et les nouveaux appareils basés sur Internet que votre organisation souhaite co-gérer avec Microsoft Intune et Configuration Manager. Ce guide de déploiement de cogestion vous permet de gérer les appareils Windows 10 et d’ajouter de nouvelles fonctionnalités aux appareils de votre organisation, tout en profitant des avantages des deux solutions.
+Utilisez le guide de configuration de [la cogestion d’Intune Configuration Manager](https://aka.ms/comanagementsetup) pour les périphériques clients Configuration Manager existants et les nouveaux appareils basés sur Internet que votre organisation souhaite co-gérer avec Microsoft Intune et Configuration Manager. Ce guide de déploiement de cogestion vous permet de gérer les appareils Windows 10 et d’ajouter de nouvelles fonctionnalités aux appareils de votre organisation, tout en profitant des avantages des deux solutions.
 
 ## <a name="guides-for-authentication-and-access"></a>Guides d’authentification et d’accès
 
@@ -111,7 +111,7 @@ Il inclut également des informations essentielles sur l’activation des réini
 
 ### <a name="sync-users-from-your-windows-server-active-directory"></a>Synchronisez les utilisateurs à partir de votre Windows Server Active Directory
 
-Le [guide Synchroniser les utilisateurs de votre Windows Server Active Directory](https://aka.ms/directorysyncsetup) vous guide tout au long de l’personnalisation de la synchronisation d’annuaires. La synchronisation d’annuaires réunit vos identités locales et cloud pour faciliter l’accès et la gestion. Déverrouillez les nouvelles fonctionnalités, telles que l’personnalisation unique, les options en libre-service, la mise en service automatique des comptes, les contrôles d’accès conditionnel et les stratégies de conformité. Ces fonctionnalités garantissent que vos utilisateurs ont accès aux ressources dont ils ont besoin de n’importe où.
+Le [guide Synchroniser les utilisateurs de Windows Server Active Directory](https://aka.ms/directorysyncsetup) vous guide tout au long de l’personnalisation de la synchronisation d’annuaires. La synchronisation d’annuaires réunit vos identités locales et cloud pour faciliter l’accès et la gestion. Déverrouillez les nouvelles fonctionnalités, telles que l’personnalisation unique, les options en libre-service, la mise en service automatique des comptes, les contrôles d’accès conditionnel et les stratégies de conformité. Ces fonctionnalités garantissent que vos utilisateurs ont accès aux ressources dont ils ont besoin de n’importe où.
 
 ### <a name="plan-your-passwordless-deployment"></a>Planifier votre déploiement sans mot de passe
 
@@ -143,10 +143,10 @@ Avec le [guide Microsoft Intune](https://aka.ms/intunesetupguide)configuration, 
 
 ### <a name="microsoft-defender-for-endpoint-setup-guide"></a>Guide de configuration de Microsoft Defender for Endpoint
 
-Le [guide de configuration de Microsoft Defender for Endpoint](https://aka.ms/mdatpsetup) fournit des instructions qui aideront votre réseau d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Faites une évaluation éclairée de la vulnérabilité de votre organisation et déterminez le package de déploiement et les méthodes de configuration les plus pratiques.
+Le [guide d’installation](https://aka.ms/mdatpsetup) de Microsoft Defender for Endpoint fournit des instructions qui aideront votre réseau d’entreprise à prévenir, détecter, examiner et répondre aux menaces avancées. Faites une évaluation éclairée de la vulnérabilité de votre organisation et déterminez le package de déploiement et les méthodes de configuration les plus pratiques.
 
 >[!NOTE]
->Une licence en volume Microsoft est requise pour Microsoft Defender pour endpoint.
+>Une licence en volume Microsoft est requise pour Microsoft Defender pour le point de terminaison.
 
 ### <a name="exchange-online-protection-setup-guide"></a>Exchange Online Protection de configuration
 
@@ -190,7 +190,7 @@ Le [guide de](https://aka.ms/officeappguidance) configuration des applications m
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams de configuration
 
-Le guide de configuration de [Microsoft Teams](https://aka.ms/teamsguidance) fournit à votre organisation des conseils pour configurer des espaces de travail d’équipe qui hébergent des conversations en temps réel par messagerie, appels et réunions audio ou vidéo pour les communications d’équipe et privées. Utilisez les outils de ce guide pour configurer l’accès invité, définir qui peut créer des équipes et ajouter des membres d’équipe à partir d’un fichier .csv, sans avoir besoin d’ouvrir une session PowerShell. Vous obtenez également les meilleures pratiques pour déterminer les besoins réseau de votre organisation et garantir un déploiement Teams réussi.
+Le guide de configuration de [Microsoft Teams](https://aka.ms/teamsguidance) fournit à votre organisation des conseils pour configurer des espaces de travail d’équipe qui hébergent des conversations en temps réel par messagerie, appels et réunions audio ou vidéo pour les communications d’équipe et privées. Utilisez les outils de ce guide pour configurer l’accès invité, définir qui peut créer des équipes et ajouter des membres d’équipe à partir d’un fichier .csv, sans avoir à ouvrir une session PowerShell. Vous obtenez également les meilleures pratiques pour déterminer les besoins réseau de votre organisation et garantir un déploiement Teams réussi.
 
 ### <a name="microsoft-teams-for-education-setup-guide"></a>Microsoft Teams pour l'éducation de configuration
 
@@ -206,7 +206,7 @@ Utilisez le [guide OneDrive de configuration](https://aka.ms/ODfBquickstartguide
 
 ### <a name="yammer-deployment-advisor"></a>Yammer de déploiement
 
-Connecter et impliquer au sein de votre organisation avec Yammer. Le [conseiller Yammer de](https://aka.ms/yammerdeploymentguide) déploiement prépare votre réseau Yammer en ajoutant des domaines, en définissant des administrateurs et en combinant Yammer réseaux. Vous recevrez des conseils pour déployer Yammer, personnaliser l’apparence, configurer la sécurité et la conformité, et affiner les paramètres.
+Connecter et impliquer au sein de votre organisation avec Yammer. Le [Yammer de déploiement](https://aka.ms/yammerdeploymentguide) local prépare votre réseau Yammer en ajoutant des domaines, en définissant des administrateurs et en combinant Yammer réseaux. Vous recevrez des conseils pour déployer Yammer, personnaliser l’apparence, configurer la sécurité et la conformité, et affiner les paramètres.
 
 ## <a name="advanced-guides"></a>Guides avancés
 

@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment utiliser l’onglet Test après le calcul par lots dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.
-ms.openlocfilehash: 16f8004afb5a0731f684c0d35e55ebf2d06f91f0
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 0ea34ce101f6891670a0b646380c965a4391ea32
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58569536"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167185"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Tester l’analyse de pertinence dans Advanced eDiscovery
   
@@ -38,7 +38,7 @@ Ce test fournit des statistiques et une comparaison entre le jeu à réviser et 
   
 - Testez des exemples de statistiques sur le nombre de fichiers dans un exemple et identifiez les fichiers pertinents.
 
-- Comparaison tabulaire des paramètres Population du jeu à réviser et du reste, par exemple, le nombre de fichiers, le nombre estimé de fichiers pertinents, la richesse estimée et le coût moyen de recherche d’un autre fichier pertinent. Les paramètres de coût peuvent être définies par l’administrateur.
+- Comparaison tabulaire des paramètres Population du jeu à réviser et du reste, par exemple, nombre de fichiers, nombre estimé de fichiers pertinents, richesse estimée et coût moyen de recherche d’un autre fichier pertinent. Les paramètres de coût peuvent être définies par l’administrateur.
 
 Pour exécuter le test « Tester le reste » :
 
@@ -68,7 +68,7 @@ Pour exécuter le test « Tester le reste » :
 
     ![Testez les résultats restants.](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
-Dans la capture d’écran précédente, la section Exemples de **paramètres** du tableau contient des détails sur le nombre de fichiers dans l’exemple balisé par l’expert et le nombre de fichiers pertinents trouvés dans cet exemple.
+Dans la capture d’écran précédente, la section Exemples de **paramètres** du tableau contient des détails sur le nombre de fichiers dans l’exemple marqué par l’expert et le nombre de fichiers pertinents trouvés dans cet exemple.
   
 La section **Paramètres** de population du tableau contient les résultats des tests, y compris la population de fichiers du jeu à réviser avec un score inférieur au seuil sélectionné et la population de fichiers « Le reste » avec un score au-dessus du seuil sélectionné. Pour chaque population, les résultats suivants sont affichés :
   

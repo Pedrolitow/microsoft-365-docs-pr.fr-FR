@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour créer des stratégies d’appareil qui protègent les informations de votre organisation.
-ms.openlocfilehash: 06d377e86913cbacd781241d75765e6b6cc63b8b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: aabac06a8936728ad1b37ee69fa22cc74e1a712e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775179"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166131"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Créer des stratégies de sécurité des appareils dans Basic Mobility and Security
 
@@ -40,7 +41,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base pour créer des strat
 - Avant de déployer des stratégies, faites savoir à votre organisation les impacts potentiels de l’inscription d’un appareil dans Basic Mobility and Security. Selon la façon dont vous avez installé les stratégies, les appareils non conformes peuvent être bloqués pour accéder aux Microsoft 365 et aux données, y compris les applications installées, les photos et les informations personnelles sur un appareil inscrit, et les données peuvent être supprimées.
 
 > [!NOTE]
-> Les stratégies et règles d’accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplacent Exchange ActiveSync stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils créées dans Exchange centre d’administration Exchange. Une fois qu’un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d’appareil mobile Exchange ActiveSync ou règle d’accès à l’appareil appliquée à l’appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, voir [Exchange ActiveSync dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Les stratégies et règles d’accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplacent Exchange ActiveSync stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils créées dans le Centre d’administration Exchange. Une fois qu’un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d’appareil mobile Exchange ActiveSync ou règle d’accès à l’appareil appliquée à l’appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, voir [Exchange ActiveSync dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Étape 1 : Créer une stratégie d’appareil et déployer sur un groupe de test
 
@@ -119,7 +120,7 @@ Si vous souhaitez exclure certaines personnes des vérifications d’accès cond
 
 Lorsque vous appliquez une stratégie aux appareils des utilisateurs, l’impact sur chaque appareil varie légèrement d’un type d’appareil à l’autre. Consultez le tableau suivant pour obtenir des exemples de l’impact des stratégies sur les différents appareils.
 
-|**Stratégie de sécurité**|**Android 4 et version ultérieure**|**Samsung KNOX**|**iOS 6 et les ultérieures**|**Remarques**|
+|**Stratégie de sécurité**|**Android 4 et version ultérieure**|**Samsung KNOX**|**iOS 6 et les ultérieures**|**Notes**|
 |:-----|:-----|:-----|:-----|:-----|
 |Exiger la sauvegarde chiffrée|Non|Oui|Oui|Sauvegarde chiffrée iOS requise.|
 |Bloquer la sauvegarde sur le cloud|Oui|Oui|Oui|Sauvegarde Google bloquée sur Android (grisé), sauvegarde sur le cloud sous iOS.|
@@ -148,7 +149,7 @@ La stratégie est supprimée de l’appareil mobile pour chaque utilisateur que 
 
 Vous pouvez également effacer complètement un appareil ou effacer de manière sélective les informations organisationnelles de l’appareil. Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble de Basic Mobility and Security](overview.md) (article)\
 [Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)

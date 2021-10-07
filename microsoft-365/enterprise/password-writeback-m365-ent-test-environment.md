@@ -9,7 +9,7 @@ ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,22 +18,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé: Configurez l’écriture différée du mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 5bb1307888948e46a07068a2493591ff9b4dc96f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c0660008aea4a676da4be3c13e8d5c15cb3a51d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179723"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166837"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
 *Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les utilisateurs peuvent utiliser l’écriture écriture par mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué vers vos services de domaine Active Directory (AD DS) locaux. Avec l’écriture écriture par mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via les AD DS sur site où leurs comptes d’utilisateur d’origine sont stockés. Cela aide les utilisateurs itinérants ou distants qui n’ont pas de connexion à distance à leur réseau local.
+Les utilisateurs peuvent utiliser l’écriture écriture par mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué sur vos services de domaine Active Directory (AD DS) locaux. Avec l’écriture écriture par mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via les AD DS sur site où leurs comptes d’utilisateur d’origine sont stockés. Cela aide les utilisateurs itinérants ou distants qui n’ont pas de connexion d’accès à distance à leur réseau local.
 
 Cet article explique comment configurer votre environnement de test Microsoft 365 pour l’écriture par mot de passe.
 
-La configuration de votre environnement de test pour l’écriture écriture par mot de passe implique deux phases :
+La configuration de votre environnement de test pour l’écriture par mot de passe implique deux phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2 : Activer l’écriture différée de mot de passe pour le domaine TESTLAB AD DS.](#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain)
   
@@ -109,11 +109,11 @@ Ensuite, configurez de la Connexion Azure AD Connect sur APP1 pour écriture d
 
 4. Dans la page **Tâches supplémentaires,** sélectionnez **Personnaliser les options** de synchronisation, puis sélectionnez **Suivant.**
 
-5. Sur la page **Connecter azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
+5. Dans la page **Connecter azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
 
 6. Dans les **Connecter et** les pages de filtrage **domaine/ou,** sélectionnez **Suivant**.
 
-7. Dans la page **Fonctionnalités facultatives,** sélectionnez **Écriture écriture par** mot de passe, puis sélectionnez **Suivant**.
+7. Dans la page **Fonctionnalités facultatives,** sélectionnez **Écriture écriture par** mot de passe, puis **sélectionnez Suivant**.
 
 8. Dans la page **Prêt à configurer,** sélectionnez **Configurer** et attendez la fin du processus.
 

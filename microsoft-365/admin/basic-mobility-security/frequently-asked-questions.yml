@@ -9,21 +9,22 @@ metadata:
   audience: Admin
   ms.topic: reference
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection:
   - M365-subscription-management
   - Adm_O365
+  - Adm_TOC
   ms.custom:
   - AdminSurgePortfolio
   search.appverid:
   - MET150
   description: Questions fréquemment posées sur basic Mobility and Security.
-  ms.openlocfilehash: ad39687332a8448c405112c88d685409d07c98a8
-  ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+  ms.openlocfilehash: e08abac323b05287b1c3e942e4c640e3df9a1649
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/24/2021
-  ms.locfileid: "59773402"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60166047"
 title: Questions fréquemment posées sur la mobilité et la sécurité de base (FAQ)
 summary: Cet article contient des questions fréquemment posées sur Basic Mobility and Security, une fonctionnalité qui vous aide à gérer et sécuriser les appareils mobiles dans Microsoft 365. Si vous ne trouvez pas de réponse à votre question, faites-le nous savoir en laissant un commentaire sur la page afin que nous pouvons envisager d’ajouter votre question à cet article.
 sections:
@@ -49,7 +50,7 @@ sections:
   - question: >
       Quelle est la différence entre Intune et Basic Mobility and Security ?
     answer: >
-      Basic Mobility and Security est hébergé par le service Intune. Il s’agit d’un sous-ensemble de services Intune fournis en tant qu’avantage supplémentaire pour Microsoft 365 et d’une solution informatique intégrée pour la gestion des appareils de votre organisation. Pour obtenir une comparaison côte à côte des deux services pour vous aider à déterminer si l’utilisation d’Intune ou de Basic Mobility and Security pour Microsoft 365 vous convient le mieux, voir Choisir entre Basic Mobility Security et [Intune.](choose-between-basic-mobility-and-security-and-intune.md)
+      Basic Mobility and Security est hébergé par le service Intune. Il s’agit d’un sous-ensemble de services Intune fournis en tant qu’avantage supplémentaire pour Microsoft 365 et d’une solution cloud intégrée pour la gestion des appareils dans votre organisation. Pour obtenir une comparaison côte à côte des deux services pour vous aider à déterminer si l’utilisation d’Intune ou de Basic Mobility and Security pour Microsoft 365 vous convient le mieux, voir Choisir entre Basic Mobility Security et [Intune.](choose-between-basic-mobility-and-security-and-intune.md)
   - question: >
       Comment fonctionnent les stratégies pour la mobilité et la sécurité de base ? Comment les configurer ? Les désactiver ?
     answer: >
@@ -63,7 +64,7 @@ sections:
   - question: >
       Puis-je passer de la gestion Exchange ActiveSync des appareils à la mobilité et à la sécurité de base pour Microsoft 365 ?
     answer: >
-      Si vous utilisez déjà des stratégies Exchange ActiveSync pour gérer les appareils mobiles, vous pouvez commencer à utiliser Basic Mobility and Security en suivant les étapes de mise en place de Basic Mobility and Security. Pour plus d’informations, voir [Protéger l’accès](../../compliance/protect-access-to-data-and-services.md) des utilisateurs et des appareils et [Configurer la mobilité et la sécurité de base.](set-up.md)
+      Si vous utilisez déjà des stratégies Exchange ActiveSync pour gérer les appareils mobiles, vous pouvez commencer à utiliser Basic Mobility and Security en suivant les étapes de la procédure de mise en place de Basic Mobility and Security. Pour plus d’informations, voir [Protéger l’accès](../../compliance/protect-access-to-data-and-services.md) des utilisateurs et des appareils et [Configurer la mobilité et la sécurité de base.](set-up.md)
 
 
       Lorsque vous appliquez les stratégies que vous créez dans Basic Mobility and Security à des groupes d’utilisateurs Exchange ActiveSync, ces stratégies remplacent les stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils que vous avez précédemment créées dans le Centre d’administration Exchange pour ces utilisateurs.

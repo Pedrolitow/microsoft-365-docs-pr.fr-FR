@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Utilisez les scores de vos utilisateurs finaux (NPS) pour voir ce qu’ils pensent des produits et services Microsoft.
-ms.openlocfilehash: 967de32339c23cf277871102dfecc8c00a55d8e6
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: afde0abf85cca682a5cda3206fa78d24cafc8cb8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168121"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>Commentaires et informations NPS du produit Microsoft pour votre organisation
 
 En tant qu’administrateur d Microsoft 365 organisation, vous pouvez désormais voir les informations et les données générées par les utilisateurs de votre organisation.
 
-Les enquêtes NPS collectent les commentaires des utilisateurs et mesurent la tendance que les utilisateurs entent à recommander des produits et des services à leurs amis et collègues. Ces données peuvent être utilisées au niveau de l’organisation pour déterminer les stratégies d’adoption et de déploiement.
+Les enquêtes NPS collectent les commentaires des utilisateurs et mesurent la tendance des utilisateurs à recommander des produits et services à leurs amis et collègues. Ces données peuvent être utilisées au niveau de l’organisation pour déterminer les stratégies d’adoption et de déploiement.
 
 Nous utilisons les enquêtes NPS et les commentaires de vos utilisateurs finaux pour vous fournir des informations sur les produits et services Microsoft. Ces informations peuvent vous aider à déterminer les produits et services que les utilisateurs finaux de votre organisation utilisent, ainsi qu’à identifier les problèmes et à les résoudre rapidement. Avec ces informations, vous pouvez :
 
@@ -45,7 +45,7 @@ Vous devez être [](../add-users/about-admin-roles.md) administrateur pour affic
 ## <a name="survey-insights"></a>Informations sur les enquêtes
 
 1. Dans le Centre d’administration, allez à **l’aperçu** de l’enquête NPS de commentaires sur  >    >  **le produit d’état.**
-2. À partir de la page Informations sur les **enquêtes NPS,** accédez à la page pour voir les informations d’enquête relatives à NPS pour votre organisation.
+2. Dans la page Informations sur les **enquêtes NPS,** accédez à la page pour voir les informations d’enquête relatives à NPS pour votre organisation.
 
 :::image type="content" source="../../media/prosight-product-feedback.png" alt-text="Screenshot: Microsoft 365 Nps survey insights":::
 
@@ -68,7 +68,7 @@ Les rubriques sont des modèles d’apprentissage automatique qui permettent d�
 :::image type="content" source="../../media/prosight-top-topic-filters-2.png" alt-text="Screenshot: Top topic filters on NPS survey data":::
 
 > [!NOTE]
-> Nous publions une rubrique intelligente uniquement après qu’elle a rencontré une barre de qualité minimale définie en partenariat avec des experts techniques. Les mesures de précision et de rappel sont utilisées pour déterminer la même valeur.
+> Nous publions une rubrique intelligente uniquement une fois qu’elle a rencontré une barre de qualité minimale définie en partenariat avec des experts techniques. Les mesures de précision et de rappel sont utilisées pour déterminer la même valeur.
 
 **La précision détaillée est** la manière dont il est probable qu’un verbatim classé dans cette rubrique soit correct.
 
@@ -78,13 +78,13 @@ Les rubriques actuellement disponibles sont les suivantes :
 
 **La navigation** inclut les commentaires des clients sur la navigation et l’utilisation de l’application.
 
-- Précision détaillée - 93 %
+- Verbatim Precision - 93 %
 - Rappel verbatim - 98 %
 
 **La collaboration** fait référence à la facilité de collaboration des utilisateurs à l’aide des applications Microsoft.
 
 - Verbatim Precision - 92 %
-- Verbatim Recall-91%
+- Verbatim Recall-91 %
 
 **La valeur** fait référence aux perceptions des clients concernant des sujets tels que les préférences de tarification et de paiement.
 
@@ -103,7 +103,7 @@ Les rubriques actuellement disponibles sont les suivantes :
 
 **Les commentaires des utilisateurs** sur l’éducation incluent des commentaires des clients sur la documentation d’aide, des didacticiels, des guides et d’autres contenus d’apprentissage en ligne ou dans le produit.
 
-- Verbatim Precision- 83%
+- Verbatim Precision- 83 %
 - Rappel verbatim - 87 %
 
 **La complexité** fait référence aux commentaires des clients quant à la complexité ou à l’utilisation des applications.
@@ -111,9 +111,9 @@ Les rubriques actuellement disponibles sont les suivantes :
 - Verbatim Precision - 92 %
 - Rappel verbatim - 89 %
 
-**Les Compliment** font référence aux commentaires des clients qui ont un sentiment positif et qui ne correspondent à aucun autre sujet.
+**Les Compliment** se réfèrent aux commentaires des clients qui ont un sentiment positif et qui ne correspondent à aucun autre sujet.
 
-- Précision détaillée - 93 %
+- Verbatim Precision - 93 %
 - Rappel verbatim - 98 %
 
 ### <a name="export-to-csv-and-search"></a>Exporter vers le CSV et la recherche
@@ -127,7 +127,7 @@ Vous pouvez exporter des données brutes pour une analyse plus approfondie à l�
 
 Vous pouvez filtrer par **canaux,** **produits,** **plateformes** et **types de commentaires.**
 
-**Les canaux** sont un moyen pour les organisations de sélectionner la fréquence à quelle fréquence elles obtiennent des mises à jour de fonctionnalités pour Office. Pour plus d’informations, [découvrez la vue d’ensemble des canaux de mise à jour Microsoft 365 Apps.](/deployoffice/overview-update-channels) Ce filtre vous permet de filtrer jusqu’aux commentaires envoyés par un utilisateur sur un canal spécifique
+**Les canaux** sont un moyen pour les organisations de sélectionner la fréquence à quelle fréquence elles obtiennent des mises à jour de fonctionnalités pour Office. Pour plus d’informations, plus d’informations sur la [vue d’ensemble des canaux de mise Microsoft 365 Apps.](/deployoffice/overview-update-channels) Ce filtre vous permet de filtrer jusqu’aux commentaires envoyés par un utilisateur sur un canal spécifique
 
 Les commentaires peuvent être envoyés sur différentes **plateformes telles** qu’Android, iOS, Mac et Windows. Ce filtre vous permet de filtrer les commentaires en fonction de la plateforme sur qui il a été envoyé.
 

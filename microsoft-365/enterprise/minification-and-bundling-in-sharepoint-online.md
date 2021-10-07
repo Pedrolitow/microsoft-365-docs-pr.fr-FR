@@ -7,7 +7,7 @@ ms.date: 3/1/2017
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -20,13 +20,13 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: Découvrez comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire les demandes HTTP et le temps nécessaire pour charger des pages dans SharePoint Online.
-ms.openlocfilehash: 5ba1e174cbb016bdf88a1d4006a0b8aafd5ec042
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Découvrez comment utiliser les techniques de réduction et de regroupement avec Web Essentials pour réduire les demandes HTTP et le temps nécessaire au chargement des pages dans SharePoint Online.
+ms.openlocfilehash: 7214d396dc39147f6864144420f8fa3fd61195b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209239"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166957"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimisation et regroupement dans SharePoint Online
 
@@ -49,7 +49,7 @@ Web Essentials offre deux formes de regroupement :
     
 - .sprite : pour les images (disponible uniquement dans Visual Studio 2013)
     
-Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation référencés dans une page maître personnalisée, telles que :
+Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation qui sont référencés dans une page maître personnalisée, telle que :
   
 ![Capture d’écran de l’élément de marque dans la page maître personnalisée.](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
@@ -77,7 +77,7 @@ La figure suivante est le résultat du chargement des fichiers JavaScript et CSS
   
 ![Capture d’écran montrant 80 éléments en cours de téléchargement.](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
   
-Après avoir groupé les fichiers CSS et JavaScript, le nombre de demandes abandonnées à 74 et chaque fichier n’a pris que légèrement plus de temps que les fichiers d’origine à télécharger individuellement :
+Après avoir groupé les fichiers CSS et JavaScript, le nombre de demandes est passé à 74 et chaque fichier n’a pris que légèrement plus de temps que les fichiers d’origine à télécharger individuellement :
   
 ![Capture d’écran montrant 74 éléments en cours de téléchargement.](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   

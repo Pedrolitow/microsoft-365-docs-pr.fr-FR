@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook Business Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: 9b2e7293bdd5be4eaf0b478263645663395e522d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1707236a889d03f272c5cce527245cf2a83f8949
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183712"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170834"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>Déployer un connecteur pour archiver les données des pages Facebook Business
 
@@ -70,9 +70,9 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
     ![Cliquez sur Déployer sur Azure.](../media/FBCGithubApp.png)
 
-2. Une fois que **vous avez cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** **Paramètres** détails, puis cliquez sur **Acheter.**
+2. Une fois que **vous avez cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** et **Paramètres,** puis cliquez sur **Acheter.**
 
-   - **Abonnement :** Sélectionnez votre abonnement Azure vers qui vous souhaitez déployer le service web connecteur de pages Facebook Business.
+   - **Abonnement :** Sélectionnez votre abonnement Azure sur qui vous souhaitez déployer le service web connecteur de pages Facebook Business.
 
    - **Groupe de ressources :** Choisissez ou créez un groupe de ressources. Un groupe de ressources est un conteneur qui contient des ressources associées pour une solution Azure.
 
@@ -80,11 +80,11 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    - **Nom de l’application web :** Fournissez un nom unique pour l’application web du connecteur. La longueur du nom doit être de 3 à 18 caractères. Ce nom est utilisé pour créer l’URL du service d’application Azure ; par exemple, si vous fournissez le nom de l’application Web **fbconnector,** l’URL du service d’application Azure **sera fbconnector.azurewebsites.net**.
 
-   - **tenantId :** ID client de votre organisation Microsoft 365 que vous avez copiée après la création de l’application connecteur Facebook à l Azure Active Directory l’étape 1.
+   - **tenantId :** ID de client de votre organisation Microsoft 365 que vous avez copiée après la création de l’application connecteur Facebook à Azure Active Directory l’étape 1.
 
    - **APISecretKey :** Vous pouvez taper n’importe quelle valeur comme secret. Il permet d’accéder à l’application web de connecteur à l’étape 5.
 
-     ![Cliquez sur Créer un compte de stockage de ressources et de types.](../media/FBCimage12.png)
+     ![Cliquez sur Créer un compte de stockage de ressource et de type.](../media/FBCimage12.png)
 
 3. Une fois le déploiement réussi, la page ressemble à la capture d’écran suivante :
 
@@ -94,7 +94,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
 1. Go to <https://developers.facebook.com> , log in using the credentials for the account for your organization’s Facebook Business pages, and then click Add New **App**.
 
-   ![Ajouter une nouvelle page d’application pour les entreprises Facebook.](../media/FBCimage25.png)
+   ![Ajoutez une nouvelle page d’application pour Les entreprises Facebook.](../media/FBCimage25.png)
 
 2. Créez un ID d’application.
 
@@ -202,7 +202,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    - Dans la **zone** Nom, tapez un nom pour le connecteur, tel que la **page d’actualités facebook.**
 
-   - Dans la **zone URL de** connexion, tapez ou collez l’URL du service d’application Azure ; par `https://fbconnector.azurewebsites.net` exemple.
+   - Dans la **zone URL de** connexion, tapez ou collez l’URL du service d’application Azure . par `https://fbconnector.azurewebsites.net` exemple.
 
    - Dans la **zone Mot** de passe, tapez ou collez la valeur de l’APISecretKey que vous avez ajoutée à l’étape 2.
 

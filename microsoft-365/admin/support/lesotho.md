@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3749b51a25570045fe381db6d9136fa0e8d1b2fa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e0f37c9d9542c9fc09aa904d9688e1f0775b2b16
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167881"
 ---
 # <a name="contact-support-for-lesotho"></a>Contacter le support technique pour Le Monde
 

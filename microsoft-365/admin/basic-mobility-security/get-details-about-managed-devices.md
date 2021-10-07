@@ -8,21 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Utilisez Windows PowerShell pour obtenir des détails sur les périphériques de mobilité et de sécurité de base dans votre organisation.
-ms.openlocfilehash: ef9a98e4ce1df1e95716c36cf489b8e8ae500722
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 25c7f89dda32121306bfe2434620d17396f2e870
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773882"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166059"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par la mobilité et la sécurité de base
 
@@ -32,7 +33,7 @@ Voici une répartition des détails de l’appareil à votre disposition.
 
 |**Detail**|**Ce qu’il faut rechercher dans PowerShell**|
 |:----------------|:------------------------------------------------------------------------------|
-|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged est*   :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
+|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged*   est :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
 |L’appareil est conforme aux stratégies de sécurité de votre appareil. Pour plus d’informations, voir [Créer des stratégies de sécurité d’appareil](create-device-security-policies.md)|La valeur du *paramètre isCompliant*   est :<br/>**True**   = l’appareil est conforme aux stratégies.<br/>**False**   = l’appareil n’est pas conforme aux stratégies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base.":::
@@ -200,7 +201,7 @@ Tout d’abord, enregistrez le script sur votre ordinateur.
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécutez le script pour obtenir des informations sur l’appareil d’un groupe d’utilisateurs
+## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Exécuter le script pour obtenir des informations sur l’appareil d’un groupe d’utilisateurs
 
 1. Ouvrez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
@@ -224,7 +225,7 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 [Microsoft Connecter été retiré](/collaborate/connect-redirect)
 

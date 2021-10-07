@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Utilisez des mots clés et des conditions pour restreindre l’étendue de la recherche lors de la recherche de données à l’aide Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 00a5ab1c009f0c006aba251c770c87c1f7569fc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdd7fc29e134cc3310848507ffbc20d41d1b0d2f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164153"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167461"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>Créer des requêtes de recherche pour les collections dans Advanced eDiscovery
 
@@ -31,11 +31,11 @@ Lors de la configuration de la requête de recherche lors de la création d’un
 
 ## <a name="keyword-searches"></a>Recherches par mots clés
 
-Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique, telles que des dates d’envoi et de réception, ou des propriétés de document, telles que les noms de fichiers ou la date de la dernière fois où un document a été modifié. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents en SharePoint et OneDrive (pas dans les messages électroniques) ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mot clé** vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés est dans les résultats de recherche.
+Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique, telles que des dates d’envoi et de réception, ou des propriétés de document, telles que les noms de fichiers ou la date de la dernière fois où un document a été modifié. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents en SharePoint et OneDrive (pas dans les messages électroniques), ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mot clé** vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés est dans les résultats de recherche.
 
 ## <a name="keyword-list"></a>Liste de mots clés
 
-Vous pouvez également cocher la case Afficher la liste des mots clés et taper un mot clé ou une expression de mot clé dans chaque ligne.  Les mots clés de chaque ligne sont connectés par un opérateur logique (qui est représenté par *c:s* dans la syntaxe de requête de recherche) qui est similaire en fonctionnalité à l’opérateur **OR** dans la requête de recherche qui est créée. Cela signifie que les éléments qui contiennent un mot clé dans une ligne sont dans les résultats de la recherche. Vous pouvez ajouter jusqu’à 180 lignes dans la liste de mots clés dans Advanced eDiscovery requêtes de recherche.
+Vous pouvez également cocher la case Afficher la liste des mots clés et taper un mot clé ou une expression de mot clé dans chaque ligne.  Les mots clés de chaque ligne sont connectés par un opérateur logique (qui est représenté par *c:s* dans la syntaxe de requête de recherche) qui présente des fonctionnalités similaires à l’opérateur **OR** dans la requête de recherche créée. Cela signifie que les éléments qui contiennent un mot clé dans une ligne sont dans les résultats de la recherche. Vous pouvez ajouter jusqu’à 180 lignes dans la liste de mots clés dans Advanced eDiscovery requêtes de recherche.
 
 ![Utilisez la liste de mots clés pour obtenir des statistiques sur chaque mot clé dans la requête.](../media/KeywordListSearch.png)
 

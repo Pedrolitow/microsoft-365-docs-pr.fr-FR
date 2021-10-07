@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Conserver le contenu des boîtes aux lettres supprimées à l’aide de la fonctionnalité de boîtes aux lettres inactives Microsoft 365.
-ms.openlocfilehash: 95548710e0a0f737deec6e5dc49ebc217c9ac50c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bff4f3d1b835b0d79ec38e2dcb470987a3705a1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181295"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167341"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -37,13 +37,13 @@ Microsoft 365 permet de conserver le contenu des boîtes aux lettres supprimées
   
 ## <a name="preparations-before-creating-an-inactive-mailbox"></a>Préparations avant la création d’une boîte aux lettres inactive
 
-- Pour rendre une boîte aux lettres inactive, une licence Exchange Online Plan 2 doit lui être attribuée afin qu’une conservation pour litige ou une stratégie de rétention puisse être appliquée à la boîte aux lettres avant sa suppression. Exchange Online Les licences Plan 2 font partie d’un abonnement Office 365 Entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online Plan 1 ou Exchange Online Kiosk (qui font partie d’un abonnement Office 365 E1 et F1 respectivement), vous devez lui attribuer une licence Archivage Exchange Online distincte afin qu’une boîte aux lettres puisse être en attente avant sa suppression. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Pour rendre une boîte aux lettres inactive, une licence Exchange Online Plan 2 doit lui être attribuée afin qu’une conservation pour litige ou une stratégie de rétention puisse être appliquée à la boîte aux lettres avant sa suppression. Exchange Online Les licences Plan 2 font partie d’un abonnement Office 365 Entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online Plan 1 ou Exchange Online Kiosk (qui font partie d’un abonnement Office 365 E1 et F1 respectivement), vous devez lui attribuer une licence Archivage Exchange Online distincte afin qu’une boîte aux lettres puisse être appliquée à la boîte aux lettres avant qu’elle ne soit appliquée.  supprimé. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
 - Les licences associées à la boîte aux lettres Exchange Online supprimée seront disponibles après la suppression du compte d’utilisateur correspondant. Vous pouvez ensuite [attribuer ces licences à un autre utilisateur.](../admin/manage/assign-licenses-to-users.md)
 
 - Si une conservation pour litige ou une stratégie de rétention (configurée pour conserver ou conserver puis supprimer du contenu) n’est pas appliquée à une boîte aux lettres avant sa suppression, son contenu ne sera ni conservé ni découvrable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
 
-- Pour plus d’informations sur la attente pour litige, voir [La attente pour litige.](/exchange/security-and-compliance/in-place-and-litigation-holds) Pour plus d’informations sur les stratégies de rétention, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)
+- Pour plus d’informations sur la attente pour litige, [consultez la procédure de attente pour litige.](/exchange/security-and-compliance/in-place-and-litigation-holds) Pour plus d’informations sur les stratégies de rétention, voir [En savoir plus sur les stratégies de rétention et les étiquettes de rétention.](retention.md)
   
 ## <a name="create-an-inactive-mailbox"></a>Créer une boîte aux lettres inactive
 

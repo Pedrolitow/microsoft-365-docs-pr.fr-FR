@@ -8,24 +8,24 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40ee9f21f94d480ec0cd76a6d145b6d242921614
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205124"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170042"
 ---
-# <a name="new-microsoft-edge-app"></a>Nouvelle application Microsoft Edge’application
+# <a name="new-microsoft-edge-app"></a>Nouvelle Microsoft Edge application
 
-Le nouveau [navigateur Microsoft Edge fournit](https://www.microsoft.com/edge) des performances de niveau mondial avec plus de confidentialité, plus de productivité et plus de valeur pendant que vous naviguez. Microsoft Manged Desktop offre un aperçu public du déploiement du nouveau navigateur Edge dans votre environnement.
+Le nouveau [navigateur Microsoft Edge fournit](https://www.microsoft.com/edge) des performances de niveau mondial avec plus de confidentialité, plus de productivité et plus de valeur pendant que vous naviguez. Microsoft Manged Desktop offre une prévisualisation publique du déploiement du nouveau navigateur Edge dans votre environnement.
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour migrer vos appareils Microsoft Manged Desktop vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Microsoft Manged Desktop. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de conserver.
+Pour migrer vos appareils Microsoft Manged Desktop vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Microsoft Manged Desktop web. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
 
-Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Microsoft Manged Desktop déployera l’application selon les besoins des groupes Test et First afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du Portail d'entreprise
+Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Microsoft Manged Desktop déployer l’application selon les besoins pour les groupes Test et First afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du Portail d'entreprise
 
 ## <a name="updates-to-microsoft-edge"></a>Mises à jour de Microsoft Edge
 

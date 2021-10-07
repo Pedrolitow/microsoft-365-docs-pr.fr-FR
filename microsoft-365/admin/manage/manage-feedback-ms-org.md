@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérez les commentaires que vos utilisateurs peuvent envoyer à Microsoft concernant les produits Microsoft.
-ms.openlocfilehash: 9f6923f4f20ec445980a40aeb2d731f8b1a2085a
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 9b63a4046c9d1ab13ae6b3f4856a521d4c7a9b70
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168145"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gérer les commentaires de Microsoft pour votre organisation
 
@@ -35,7 +36,7 @@ Pour en savoir plus sur les types de commentaires et sur la façon dont Microsof
 
 Le tableau ci-dessous représente les applications et services actuellement connectés aux stratégies de commentaires indiquées dans le tableau des stratégies de commentaires ci-dessous. Voir ci-dessous le tableau pour obtenir des exemples de capture d’écran.
 
-|**Applications & Services**|**Commentaires sur le produit** <br> |**Enquêtes sur le produit** <br> |**Collection de métadonnées** <br> |**Implication des clients** <br> |
+|**Applications & Services**|**Commentaires sur le produit** <br> |**Enquêtes sur le produit** <br> |**Collection de métadonnées** <br> |**Engagement du client** <br> |
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|Oui|Oui|Oui|Oui|
 |**Excel**|Oui|Oui|Oui|Oui|
@@ -58,7 +59,7 @@ Le tableau ci-dessous représente les applications et services actuellement conn
 
 :::image type="content" source="../../media/feedback-metadata2.png" alt-text="Capture d’écran : page de commentaires montrant l’exemple de métadonnées":::
 
-**Implication des clients**
+**Engagement du client**
 
 :::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: In-product customer research question example":::
 
@@ -80,7 +81,7 @@ Vos appareils doivent avoir un numéro de build minimal pour utiliser ces strat�
 |**Nom de la stratégie**|**État par défaut**|**Résumé des contrôles**|
 |:-----|:-----|:-----|
 |Autoriser les utilisateurs à envoyer des commentaires à Microsoft|Activé|Contrôle les points d’entrée de commentaires entre les applications|
-|Autoriser les utilisateurs à recevoir et à répondre aux enquêtes in-product de Microsoft|Activé|Contrôle les invites d’enquête au sein du produit|
+|Autoriser les utilisateurs à recevoir et à répondre aux enquêtes dans le produit de Microsoft|Activé|Contrôle les invites d’enquête au sein du produit|
 |Autoriser les utilisateurs à inclure des captures d’écran et des pièces jointes lorsqu’ils envoient des commentaires à Microsoft|Désactivé|Détermine les métadonnées que l’utilisateur peut décider d’envoyer avec des commentaires/enquêtes|
 |Autoriser Microsoft à suivre les commentaires envoyés par les utilisateurs|Désactivé|Détermine si l’utilisateur peut partager des informations de contact avec des commentaires/enquêtes|
 |Autoriser les utilisateurs à inclure des fichiers journaux et des exemples de contenu lorsque les commentaires sont envoyés à Microsoft|Désactivé|Détermine les métadonnées que l’utilisateur peut décider d’envoyer avec des commentaires/enquêtes|
@@ -92,7 +93,7 @@ Vos appareils doivent avoir un numéro de build minimal pour utiliser ces strat�
 1. Sélectionnez **Créer**.
 1. Entrez **le nom** et la **description.**
 1. Choisissez les groupes Azure Active Directory que vous souhaitez configurer.
-1. Recherchez les **commentaires et** les **enquêtes.**
+1. Recherchez des **commentaires et** des **enquêtes.**
 1. Pour chaque stratégie répertoriée, définissez la valeur que vous souhaitez.
 
 Pour plus d’informations, voir [Vue d’ensemble Office service de stratégie cloud.](/deployoffice/overview-office-cloud-policy-service)

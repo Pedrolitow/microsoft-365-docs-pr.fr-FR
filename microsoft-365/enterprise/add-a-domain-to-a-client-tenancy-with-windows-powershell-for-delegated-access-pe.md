@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Résumé : Utilisez PowerShell pour Microsoft 365 ajouter un autre nom de domaine à un client existant.'
-ms.openlocfilehash: 6cb57814f2f1ce8a1cbf6a47b654f6492279faeb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a121407ebe242747a693084289e972e56e1cbee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207780"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170522"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Ajout d’un domaine à la location d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
@@ -54,7 +54,7 @@ Vous avez également besoin des informations suivantes :
  Vos clients vous demanderont probablement de créer des domaines supplémentaires à associer à leur location, car ils ne voudront probablement pas que le domaine\<domain>.onmicrosoft.comsoit le domaine principal qui représente leur identité d'entreprise aux yeux du monde entier. Cette procédure vous guide au fil du processus de création d'un domaine associé à la location de votre client.
 
 > [!NOTE]
-> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur Administration complète pour l’attribution d’un accès **administratif** aux sociétés que vous prendrez en charge et qui se trouvent dans les détails du compte d’administrateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.  Pour plus d’informations sur la gestion des rôles d’administrateur partenaire, voir [Partenaires : proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435)
+> Pour effectuer certaines de ces opérations, le compte d’administrateur partenaire avec qui vous vous connectez doit être définie sur Administration complète pour l’attribution d’un accès **administratif** aux sociétés que vous appuyez sur le paramètre trouvé dans les détails du compte d’administrateur dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>.  Pour plus d’informations sur la gestion des rôles d’administrateur partenaire, voir [Partenaires : proposer une administration déléguée.](https://go.microsoft.com/fwlink/p/?LinkId=532435)
 
 ### <a name="create-the-domain-in-azure-active-directory"></a>Création du domaine dans Azure Active Directory
 

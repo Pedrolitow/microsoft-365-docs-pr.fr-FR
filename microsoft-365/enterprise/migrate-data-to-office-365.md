@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Dans cet article, vous allez vous aider à migrer les données de votre organisation vers Microsoft 365.
-ms.openlocfilehash: 80efbafe17d0a35da323c6f6274e18af270c4985
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 800b4ad97508c447b747bd6cba48b08b12d6f4b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166945"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migrer les données de votre organisation vers Microsoft 365 Entreprise
 

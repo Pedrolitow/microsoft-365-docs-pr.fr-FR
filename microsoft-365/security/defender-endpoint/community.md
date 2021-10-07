@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 116a97946dc4f45be3030954d3d2fb217ac50b9c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c21bab2652b4f891f3e4c95b263d608411eade4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163761"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166587"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accéder au Centre de la communauté Microsoft Defender pour point de terminaison
 
@@ -38,9 +38,9 @@ Defender for Endpoint Community Center est un endroit où les membres de la comm
 
 Vous pouvez explorer plusieurs espaces pour en savoir plus sur des informations spécifiques :
 
-- Announcements
-- Nouveautés
-- Intelligence des menaces
+- Annonces
+- Quoi de neuf ?
+- Threat Intelligence
 
 Vous pouvez accéder au centre de Community de plusieurs façons :
 

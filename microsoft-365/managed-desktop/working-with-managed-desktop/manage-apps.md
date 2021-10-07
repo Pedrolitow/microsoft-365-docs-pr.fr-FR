@@ -9,21 +9,21 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b016d8458b4b4cc9f6b684d3b8a3c0a1e1322fef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad30f6647df4146efe81daec4b2bcaa506b7c8b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204899"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169886"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gérer les applications métier dans le bureau géré Microsoft
 
 <!--Application management -->
 
-Il existe plusieurs façons de gérer les mises à jour d’application pour les applications que vous avez intégrés à Microsoft Manged Desktop et déployés sur vos appareils Microsoft Manged Desktop. Vous pouvez effectuer des mises à jour d’application dans Microsoft Manged Desktop portail ou Intune. 
+Il existe deux façons de gérer les mises à jour d’application pour les applications que vous avez intégrés à Microsoft Manged Desktop et déployés sur vos appareils Microsoft Manged Desktop. Vous pouvez effectuer des mises à jour d’application dans Microsoft Manged Desktop portail ou Intune. 
 
 <span id="update-app-mmd" />
 
@@ -50,7 +50,7 @@ L’application mise à jour sera déployée sur les appareils de vos utilisateu
 2. Sélectionnez **Tous les services**  >  **Intune**. Intune se trouve dans la section **Analyse + Gestion.**
 3. Sélectionnez **applications clientes > applications.**
 4. Recherchez et sélectionnez votre application dans la liste des applications.
-5. Dans le tableau **de** présentation, sélectionnez **Propriétés.**
+5. Dans le tableau **de présentation,** sélectionnez **Propriétés.**
 6. Sélectionnez **le fichier de package d’application.**
 7. Sélectionnez l’icône du dossier et accédez à l’emplacement de votre fichier d’application mis à jour. Sélectionnez **Ouvrir**. Les informations de l’application sont mises à jour avec les informations de package.
 8. Vérifiez que la **version de l’application** reflète le package d’application mis à jour.
@@ -59,7 +59,7 @@ L’application mise à jour sera déployée sur les appareils de vos utilisateu
 
 ## <a name="roll-back-an-app-to-a-previous-version"></a>Revenir à une version antérieure d’une application
 
-Si une erreur est trouvée lors du déploiement d’une nouvelle version d’une application, vous pouvez revenir à une version précédente. Le processus décrit ici est pour les applications où le type est répertorié comme Windows application métier **MSI** ou **application Windows (Win 32) : prévisualisation**
+Si une erreur s’est produite lors du déploiement d’une nouvelle version d’une application, vous pouvez revenir à une version précédente. Le processus décrit ici est pour les applications où le type est répertorié comme Windows application métier **MSI** ou **application Windows (Win 32) : prévisualisation**
 
 **Pour revenir à une version antérieure d’une application métier**
 

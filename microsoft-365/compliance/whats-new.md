@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -16,21 +16,21 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
+description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7e4375c52bdf8f4a3dd8ba958b40de72351feae4
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: c341034169def6627d0b03c043bc32aa399f70c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167077"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
 Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microsoft 365,](microsoft-365-compliance-center.md)en mettant à jour les fonctionnalités existantes en fonction de vos commentaires ou en mettant en place une documentation actualisée et mise à jour, Microsoft 365 vous aide à rester informé du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 jour.
 
 > [!NOTE]
-> Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
+> Certaines fonctionnalités de conformité sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
 > Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :
@@ -59,7 +59,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Utilisez l’éditeur KQL](ediscovery-kql-editor.md) pour générer la prévisualisation publique des requêtes de recherche d’une nouvelle façon de créer des requêtes de recherche dans la recherche de contenu, la découverte électronique principale et Advanced eDiscovery ; L’éditeur KQL fournit lacompletion automatique pour les propriétés et conditions utilisables dans une recherche prise en charge et affiche des listes de valeurs pris en charge pour les propriétés et conditions standard ; L’éditeur KQL fournit également la détection des erreurs et des suggestions pour corriger les erreurs potentielles dans les requêtes de recherche
+- [Utilisez l’éditeur KQL](ediscovery-kql-editor.md) pour créer une prévisualisation publique des requêtes de recherche d’une nouvelle façon de créer des requêtes de recherche dans la recherche de contenu, la découverte électronique principale et Advanced eDiscovery ; L’éditeur KQL fournit lacompletion automatique pour les propriétés et conditions utilisables dans une recherche prise en charge et affiche des listes de valeurs pris en charge pour les propriétés et conditions standard ; L’éditeur KQL fournit également la détection des erreurs et des suggestions pour corriger les erreurs potentielles dans les requêtes de recherche
 
 ### <a name="retention-and-records-management"></a>Gestion des enregistrements et de la rétention
 - [La révision de disposition à plusieurs étapes](disposition.md) est désormais généralement disponible (GA), avec de nouveaux [événements d’audit.](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) La révision de disposition à plusieurs étapes vous permet de spécifier jusqu’à cinq étapes consécutives de révision de la disposition d’une étiquette de rétention, et les réviseurs peuvent ajouter d’autres utilisateurs à la phase de révision de leur disposition. Vous pouvez également personnaliser les rappels et les notifications par e-mail.
@@ -111,7 +111,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 - L’étiquetage automatique dans Office applications en tant que paramètre d’étiquette de sensibilité prend désormais en charge la correspondance exacte des données [(EDM).](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match)
 - Les étiquettes par défaut sont désormais étendues [Power BI (en prévisualisation).](/power-bi/admin/service-security-sensitivity-label-default-label-policy)
 - Les événements d’audit [](data-classification-activity-explorer-available-events.md) pour les Outlook sur le web qui s’surfacent dans l’Explorateur d’activités sont désormais entièrement déployés, ce qui signifie que l’activité des utilisateurs pour les étiquettes intégrées est désormais disponible pour toutes les applications Office sur toutes les plateformes.
-- Les [](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) tableaux des fonctionnalités pris en charge ont une nouvelle note de bas de page pour Windows afin de clarifier que les versions minimales sont pour le canal actuel et un conseil pour comparer plus facilement les versions antérieures qui omettent les zéros non non pris en compte par rapport aux versions plus récentes.
+- Les [](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) tableaux des fonctionnalités pris en charge ont une nouvelle note de bas de page pour Windows pour clarifier que les versions minimales sont pour le canal actuel et un conseil pour comparer plus facilement les versions antérieures qui omettent les zéros non obligatoires par rapport aux versions plus récentes.
 
 ## <a name="july-2021"></a>Juillet 2021
 
@@ -131,7 +131,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 ### <a name="compliance--service-assurance"></a>Certification du service & conformité
 
 - [Assurance de service](/compliance/) (mise à jour ; révision trimestrielle des mises à jour de contenu pour les certifications et déclarations d’applicabilité)
-    - Vérifications d’arrière-plan dans le cloud
+    - Vérifications des arrière-plan dans le cloud
     - Transfert d'& employé
     - Gouvernance
     - Ressources humaines
@@ -146,7 +146,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 
 ### <a name="data-classification"></a>Classification des données
 
-- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur de discrimination entra nements.
+- [En savoir plus sur la classification des données.](data-classification-overview.md) Mise à jour pour la version GA du classifieur entra nements entra mentables.
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 
@@ -154,7 +154,7 @@ Que ce soit en ajoutant de nouvelles solutions au [Centre de conformité Microso
 - [Mise en place du scanneur](dlp-on-premises-scanner-get-started.md) local de protection contre la perte de données mis à jour pour la version GA.
 - [En savoir plus sur la Microsoft 365 protection contre](dlp-on-premises-scanner-learn.md) la perte de données sur site mise à jour pour la version GA.
 - [Utilisez le Microsoft 365 protection contre](dlp-on-premises-scanner-use.md) la perte de données local mis à jour pour la version GA.
-- [Utilisez des stratégies de protection contre](dlp-use-policies-non-microsoft-cloud-apps.md) la perte de données pour les applications cloud non-Microsoft mises à jour pour la version GA et l’intégration MIP-MCAS.
+- [Utilisez des stratégies de protection contre la](dlp-use-policies-non-microsoft-cloud-apps.md) perte de données pour les applications cloud non Microsoft mises à jour pour la version GA et l’intégration MIP-MCAS.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
@@ -179,7 +179,7 @@ Les pages suivantes ont été ajoutées :
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 - Les classifieurs entraisables sont désormais généralement disponibles pour l’étiquetage automatique dans [Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) for Windows and the web (Office Online)
-- L’étiquetage obligatoire est désormais étendu aux [Power BI (en prévisualisation)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
+- L’étiquetage obligatoire est désormais étendu à Power BI [(en prévisualisation)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
 - Pour [la co-auteur]( sensitivity-labels-coauthoring.md)pour les fichiers chiffrés avec des étiquettes de confidentialité : déploiement de la prise en charge des stratégies DLP qui utilisent des étiquettes de confidentialité comme conditions et pièces jointes non chiffrées pour les e-mails
 - Les événements d’audit Outlook sont désormais disponibles pour macOS, iOS et Android, et sont également Outlook sur le web
 
@@ -196,7 +196,7 @@ Les pages suivantes ont été ajoutées :
 ### <a name="ediscovery"></a>eDiscovery
 
 - [Interroger et filtrer le contenu](review-set-search.md) d’un jeu à réviser (nouvelle fonctionnalité de requête et de filtrage dans un nouveau format d’UX pour filtrer et rechercher du contenu dans un jeu à réviser)
-- Baliser des documents dans un jeu à réviser dans [Advanced eDiscovery](tagging-documents.md) (nouvelle fonctionnalité de balise et expérience UX pour accélérer et faciliter le marquage des documents dans un jeu à réviser ; inclut une nouvelle fonctionnalité de marquage des documents à l’aide d’une requête et à l’aide de filtres pour rechercher ou exclure rapidement des éléments de jeu à réviser en fonction de la façon dont un élément est balisé)
+- Baliser des documents dans un jeu à réviser dans [Advanced eDiscovery](tagging-documents.md) (nouvelle fonctionnalité de balise et expérience UX pour accélérer et faciliter le marquage des documents dans un jeu à réviser ; inclut une nouvelle fonctionnalité de marquage des documents à l’aide d’une requête et de filtres pour rechercher ou exclure rapidement les éléments de jeu à réviser en fonction de la façon dont un élément est balisé)
 - Configurer des limites de conformité pour les enquêtes [eDiscovery](set-up-compliance-boundaries.md) (Microsoft a supprimé l’obligation de contacter le support MS pour demander qu’un attribut de conformité soit synchronisé avec les comptes OneDrive ; désormais, un filtre d’autorisations de recherche de boîte aux lettres est utilisé pour appliquer les limites de conformité pour OneDrive)
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
@@ -243,7 +243,7 @@ Les pages suivantes ont été ajoutées :
 ### <a name="data-connectors"></a>Connecteurs de données
 
 - [Configurer un connecteur pour archiver des données Cisco Jabber sur Oracle](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
-- [Configurer un connecteur pour archiver cisco Jabber sur les données PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
+- [Configurer un connecteur pour archiver des données Cisco Jabber sur PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 

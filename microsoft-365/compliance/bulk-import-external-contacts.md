@@ -9,18 +9,18 @@ ms.date: 6/29/2018
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d’adresses globale.
-ms.openlocfilehash: 0cb085be1c9ddf9fc3db47f3cd92ec7acf040251
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 399534a74a7245ebb71624b390343c81e692925e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59161369"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170858"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importation en bloc de contacts externes vers Exchange Online
 
@@ -44,7 +44,7 @@ Une fois que vous avez effectué ces étapes pour importer des contacts, vous po
 
 La première étape consiste à créer un fichier CSV qui contient des informations sur chaque contact externe que vous souhaitez importer dans Exchange Online. 
   
-1. Copiez le texte suivant dans un fichier texte dans le Bloc-notes et enregistrez-le sur votre bureau en tant que fichier CSV à l’aide du suffixe de nom de fichier .csv ; par exemple, ExternalContacts.csv.
+1. Copiez le texte suivant dans un fichier texte dans le Bloc-notes et enregistrez-le sur votre bureau en tant que fichier CSV à l’aide d’un suffixe de nom de fichier .csv ; par exemple, ExternalContacts.csv.
     
     > [!TIP]
     > Si votre langue contient des caractères spéciaux (par exemple, **å**, **ä** et **ö** en suédois), enregistrez le fichier CSV avec UTF-8 ou un autre codage Unicode lorsque vous enregistrez le fichier dans le Bloc-notes. 
@@ -71,9 +71,9 @@ La première étape consiste à créer un fichier CSV qui contient des informati
 
 L’étape suivante consiste à utiliser le fichier CSV que vous avez créé à l’étape 1 et PowerShell pour importer en bloc les contacts externes répertoriés dans le fichier CSV vers Exchange Online. 
   
-1.  Connecter PowerShell pour votre Exchange Online organisation. Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). N’oubliez pas d’utiliser le nom d’utilisateur et le mot de passe de votre compte d’administrateur général lorsque vous vous connectez à Exchange Online PowerShell. 
+1.  Connecter PowerShell pour votre Exchange Online organisation. Pour obtenir des instructions, consultez [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). N’oubliez pas d’utiliser le nom d’utilisateur et le mot de passe de votre compte d’administrateur général lorsque vous vous connectez Exchange Online PowerShell. 
     
-2. Après avoir connecté PowerShell à Exchange Online, allez dans le dossier de bureau où vous avez enregistré le fichier CSV à l’étape 1 . par `C:\Users\Administrator\desktop` exemple.
+2. Après avoir connecté PowerShell à Exchange Online, rendez-vous dans le dossier de bureau où vous avez enregistré le fichier CSV à l’étape 1 . par `C:\Users\Administrator\desktop` exemple.
     
 3. Exécutez la commande suivante pour créer les contacts externes :
 
@@ -117,7 +117,7 @@ Après avoir exécuté la commande à l’étape 2, les contacts externes sont c
     > [!NOTE]
     > Le  _paramètre Manager_ peut être problématique. Si la cellule est vide dans le fichier CSV, vous obtenez une erreur et aucune information sur la propriété n’est ajoutée au contact. Si vous n’avez pas besoin de spécifier un responsable, supprimez simplement  ` -Manager $_.Manager ` de la commande PowerShell précédente. 
   
-    Là encore, la mise à jour des contacts peut prendre un certain temps, en fonction du nombre d’importations à l’étape 1. 
+    Là encore, la mise à jour des contacts peut prendre un certain temps, selon le nombre d’importations que vous avez importées à l’étape 1. 
     
 4. Pour vérifier que les propriétés ont été ajoutées aux contacts : 
     

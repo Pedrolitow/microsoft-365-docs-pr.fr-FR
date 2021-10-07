@@ -9,22 +9,22 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Validez vos résultats de recherche en visualxant les statistiques générées après avoir exécuté une recherche de collection dans Advanced eDiscovery.
-ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ec339cd28fdd25457a668f992f20e59a4f10b289
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175772"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167233"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Statistiques de recherche dans Advanced eDiscovery
 
-Une façon de valider vos résultats de recherche consiste à examiner les statistiques relatives à vos résultats pour vous assurer qu’ils correspondent à vos attentes. Lorsqu’une recherche est terminée, des statistiques de haut niveau sont affichées dans le volant des détails de la recherche :
+Une façon de valider vos résultats de recherche consiste à examiner les statistiques relatives à vos résultats pour vous assurer qu’ils correspondent à vos attentes. Une fois la recherche terminée, des statistiques de haut niveau sont affichées dans le volant des détails de la recherche :
 
 - Nombre et volume d’éléments récupérés par la recherche
 
@@ -63,7 +63,7 @@ Si vous avez utilisé (c:s) des lignes de mot clé ou de mot clé dans votre req
 
 - Requête : composant de requête réel à qui la ligne fait référence. Si la partie est « Primaire », il s’agit de la requête entière ; Si la partie était « Mot clé », vous verrez l’un des composants de requête ici.
   
-  - Lorsque vous recherchez dans toutes les boîtes aux lettres de contenu (en ne spécifiant aucun mot clé), la requête réelle est (taille >= 0) afin que tous les éléments soient renvoyés.
+  - Lorsque vous recherchez dans toutes les boîtes aux lettres de contenu (en ne spécifiant aucun mot clé), la requête réelle est (taille >= 0) afin que tous les éléments soient renvoyés
   
   - Lorsque vous recherchez SharePoint online et OneDrive Entreprise sites web, les deux composants suivants sont ajoutés :
     

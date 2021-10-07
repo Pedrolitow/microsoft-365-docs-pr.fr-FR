@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 551eddb42f7b0bdbbd84f6294f3413b4435c1dc1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bf23229a530c84beab3f5f272f646c67d2ea06fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166479"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Évaluer Microsoft Defender pour point de terminaison 
 
@@ -38,14 +38,14 @@ ms.locfileid: "59209804"
 
 Vous pouvez évaluer Microsoft Defender pour endpoint dans votre organisation en commençant [votre version d’évaluation gratuite.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial)
 
-Vous pouvez également évaluer les différentes fonctionnalités de sécurité dans Microsoft Defender pour Point de terminaison à l’aide des instructions suivantes.
+Vous pouvez également évaluer les différentes fonctionnalités de sécurité dans Microsoft Defender pour point de terminaison en suivant les instructions suivantes.
 
 ## <a name="evaluate-attack-surface-reduction"></a>Évaluer la réduction de la surface d’attaque
 
 Ces fonctionnalités permettent d’empêcher les attaques et les exploitations d’infecter votre organisation.
 
 - [Évaluer la réduction de la surface d’attaque](./evaluate-attack-surface-reduction.md)
-- [Évaluer exploit protection](./evaluate-exploit-protection.md)
+- [Évaluer Exploit Protection](./evaluate-exploit-protection.md)
 - [Évaluer la protection du réseau](./evaluate-exploit-protection.md)
 - [Évaluer l’accès contrôlé aux dossiers](./evaluate-controlled-folder-access.md)
 - [Évaluer Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)

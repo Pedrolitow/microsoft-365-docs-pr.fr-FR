@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 11/18/2019
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom:
@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenir une vue d’ensemble de l’intégration du serveur SIEM (Security Information and Event Management) à vos applications et services cloud Microsoft 365 de sécurité
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 542c6a75282d32aa3b67d61f7236e82210174531
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 71fff15b1493f6e8e15becbd87ad55947c8eddc4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353609"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169418"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration de serveurs SIEM (Security Information and Event Management) avec Microsoft 365 services et applications
 
@@ -56,7 +56,7 @@ Un serveur SIEM peut recevoir des données à partir d’un large éventail Micr
 
 |Microsoft 365 Service ou application|Entrées/méthodes de serveur SIEM|Ressources pour en savoir plus|
 |---|---|---|
-|[Microsoft Defender pour Office 365](defender-for-office-365.md)|Journaux d'audit|[Intégration DE SIEM à Microsoft Defender pour Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender pour Office 365](defender-for-office-365.md)|Journaux d'audit|[Intégration DE SIEM à Microsoft Defender pour Office 365](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)|Point de terminaison HTTPS hébergé dans Azure <p> API REST|[Tirer des alertes vers vos outils SIEM](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Intégration des journaux|[Intégration DE SIEM à Microsoft Cloud App Security](/cloud-app-security/siem)|
 
@@ -67,7 +67,7 @@ Un serveur SIEM peut recevoir des données à partir d’un large éventail Micr
 
 Assurez-vous que la journalisation d’audit est allumée avant de configurer l’intégration de serveur SIEM.
 
-- Pour SharePoint online, OneDrive Entreprise et Azure Active Directory, voir Activer [ou désactiver l’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Pour SharePoint en ligne, OneDrive Entreprise et Azure Active Directory, voir Activer [ou désactiver l’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
 - Pour plus Exchange Online, voir [Gérer l’audit de boîte aux lettres.](../../compliance/enable-mailbox-auditing.md)
 
 ## <a name="more-resources"></a>Plus de ressources

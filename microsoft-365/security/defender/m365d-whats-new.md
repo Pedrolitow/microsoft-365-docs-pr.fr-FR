@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6076b701ace9c22c13225d41c26b1cd1e7690760a0dd7cf1a9b981ad6a20e9c
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c0681839521d8c95b294b431c17049185201b28c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53828498"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169598"
 ---
 # <a name="whats-new-in-microsoft-365-security"></a>Nouveautés de Sécurité Microsoft 365
 

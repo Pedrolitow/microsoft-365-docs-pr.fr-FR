@@ -8,21 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer les appareils mobiles.
-ms.openlocfilehash: 378ed7c8de95bce3da79e11e550994d19c590f88
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ef74aba7398867ad97748feba45647e7cf4aa609
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166023"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Basic Mobility and Security
 
@@ -45,4 +46,4 @@ Utilisez les étapes suivantes :
 
 5. Sélectionnez **Enregistrer.**
 
-Pour découvrir les appareils que La mobilité et la sécurité de base prend en charge, voir [Fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)
+Pour découvrir les appareils que Basic Mobility and Security prend en charge, voir [Fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)

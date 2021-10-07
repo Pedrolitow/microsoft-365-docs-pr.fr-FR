@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment détecter les erreurs et les fautes de frappe dans votre requête de mot clé pour les recherches de découverte électronique avant d’effectuer la recherche.
-ms.openlocfilehash: b99f7c3df052cf41543ab57c92eb6326c6d814d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c820b72ea54e338d4f2fde475568bf2b1c22ba3b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164113"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168673"
 ---
 # <a name="check-your-search-query-for-errors"></a>Vérifier la présence d’erreurs dans vos requêtes de recherche
   

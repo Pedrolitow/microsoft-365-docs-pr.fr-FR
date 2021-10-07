@@ -8,19 +8,20 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 search.appverid:
 - MET150
 description: Découvrez comment expliquer Microsoft 365 groupes à vos utilisateurs.
-ms.openlocfilehash: 96085502c0600b5d36472fa40728cd4558cee3ed
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b67f9b31e2128fcfb056934b79490661f37ae10c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774963"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165771"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>Expliquer Microsoft 365 groupes à vos utilisateurs
 
@@ -40,6 +41,6 @@ Si vous formez vos utilisateurs pour qu’ils utilisent toujours la méthode de 
 
 Vous pouvez utiliser le modèle [Microsoft 365 Groupes](https://www.microsoft.com/download/details.aspx?id=102396) d’utilisateurs PowerPoint Entreprise comme point de départ pour les présentations de formation pour vos utilisateurs.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
-[En savoir plus sur Microsoft 365 groupes](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Apprendre sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

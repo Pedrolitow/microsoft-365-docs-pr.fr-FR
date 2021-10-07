@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Résumé : '
-ms.openlocfilehash: 4dcd608fcd999c8d07fdedb569279980a943caa0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a50e1b561857a0630b32dc4c281cfe46fa4cbf29
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182199"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168469"
 ---
 # <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment opter pour une nouvelle migration de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans les nouvelles régions de centres de données allemandes
 
@@ -34,13 +34,13 @@ ms.locfileid: "59182199"
 
 ## <a name="how-to-request-migration"></a>Comment demander une migration
 
-Si vous étiez un client éligible avec votre service provisioné dans Microsoft Cloud Germany (Microsoft Cloud Deutschland) et que vous vous êtes déjà inscrit en tant qu’administrateur client (global), une page du <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d'administration Microsoft 365 vous a</a> permis d’opter pour la migration. La page Opt-In dans le Centre d'administration Microsoft 365 n’autorise plus l’inscription, mais le processus est décrit ci-dessous à des fins de référence.  
+Si vous étiez un client éligible avec votre service provisioné dans Microsoft Cloud Germany (Microsoft Cloud Deutschland) et que vous vous êtes déjà inscrit en tant qu’administrateur client (global), une page du <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d'administration Microsoft 365 vous a</a> permis d’opter pour la migration. La page Opt-In dans le Centre d'administration Microsoft 365 ne permet plus l’inscription, mais le processus est décrit ci-dessous à des fins de référence.  
 
 Pour accéder à la page, **développez Paramètres** dans le volet de navigation sur la gauche, puis cliquez sur **Profil de l’organisation.**
 
 Sur la page **Profil de l’organisation**, faites défiler vers le bas jusqu’à **Migrer de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans la nouvelle section de centres de données allemands**.
 
-Si vous souhaitez migrer votre service de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans les nouvelles régions de centres de données allemandes, cliquez sur **Opter pour**.
+Si vous souhaitez migrer votre service de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans les nouvelles régions de centres de données allemandes, cliquez sur **Choisir.**
  
 ![Présentation de l’option d’opt-in.](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
@@ -54,7 +54,7 @@ Une fois que vous avez choisi de vous rendre au nom de votre client, tous les ad
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>Que se passe-t-il après la migration ?
 
-Les migrations commenceront au début de 2021 pour les organisations qui optent pour l’approche pilotée par Microsoft et seront terminées avant la date de retrait de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft publiera des mises à jour tout au long du processus de migration dans le centre de messages. Consultez [ces articles](#more-information) pour en savoir plus.
+Les migrations commenceront au début de 2021 pour les organisations qui optent pour l’approche pilotée par Microsoft et seront terminées avant la date de retrait de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) le 29 octobre 2021.  Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.  Microsoft publiera des mises à jour tout au long du processus de migration dans le Centre de messages. Consultez [ces articles](#more-information) pour en savoir plus.
 
 ## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Que se passe-t-il si vous n’optez pas pour la migration dans le Centre d’administration ?
 

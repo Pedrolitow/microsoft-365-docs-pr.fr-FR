@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Découvrez les différents certificats, technologies et suites de chiffrement TLS (Transport Layer Security) utilisés pour le chiffrement dans Office 365 et Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b2257338ab214ccdaa08f1aa8f322aad98d7c8b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e5fb8bc724e25fb6dfd948d20fd5ea77cdbbcf4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203333"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167197"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Détails techniques de référence sur le chiffrement
 
@@ -41,7 +41,7 @@ Vous n’avez pas besoin d’acheter ou de gérer des certificats pour Office 36
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Normes de chiffrement actuelles et dépréciations planifiées
 
-Pour fournir un chiffrement de qualité supérieure, Office 365 examine régulièrement les normes de chiffrement pris en charge. Parfois, les anciennes normes sont dépréciées à mesure qu’elles deviennent plus anciennes et moins sécurisées. Cet article décrit les suites de chiffrement actuellement pris en charge, ainsi que d’autres normes et détails sur les déprédations planifiées.
+Pour fournir un chiffrement de qualité supérieure, Office 365 examine régulièrement les normes de chiffrement pris en charge. Parfois, les anciennes normes sont dépréciées à mesure qu’elles deviennent plus anciennes et moins sécurisées. Cet article décrit les suites de chiffrement actuellement pris en charge, ainsi que d’autres normes et détails sur les déprécations planifiées.
 
 ## <a name="fips-compliance-for-office-365"></a>Conformité FIPS pour les Office 365
 
@@ -76,7 +76,7 @@ TLS utilise *des suites de chiffrement,* des collections d’algorithmes de chif
 
 Office 365 répond à une demande de connexion en essayant d’abord de se connecter à l’aide de la suite de chiffrement la plus sécurisée. Si la connexion ne fonctionne pas, Office 365 la deuxième suite de chiffrement la plus sécurisée de la liste, et ainsi de suite. Le service continue dans la liste jusqu’à ce que la connexion soit acceptée. De même, lorsque Office 365 demande une connexion, le service de réception choisit si TLS sera utilisé et quelle suite de chiffrement utiliser.
 
-| Nom de suite de chiffrement | Algorithme/force d’échange de clés | Secret avant | Chiffrement/puissance | Algorithme/niveau d’authentification |
+| Nom de suite de chiffrement | Algorithme/force d’échange de clés | Secret avant | Chiffrement/force | Algorithme/niveau d’authentification |
 |:-----|:-----|:-----|:-----|:-----|
 | TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> | ECDH/192  <br/> | Oui  <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> | ECDH/128  <br/> | Oui  <br/> | AES/128  <br/> | RSA/112  <br/> |
@@ -87,9 +87,9 @@ Office 365 répond à une demande de connexion en essayant d’abord de se conne
 | TLS_RSA_WITH_AES_256_GCM_SHA384        <br/> | RSA/112   <br/> | Non   <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS_RSA_WITH_AES_128_GCM_SHA256        <br/> | RSA/112   <br/> | Non   <br/> | AES/256  <br/> | RSA/112  <br/> |
 
-Les suites de chiffrement suivantes ont pris en charge les protocoles TLS 1.0 et 1.1 jusqu’à leur date d’annulation. Pour Cloud de la communauté du secteur public environnements Haut et DoD dont la date de désintécation était le 15 janvier 2020. Pour les environnements Cloud de la communauté du secteur public et internationaux qui datent du 15 octobre 2020.
+Les suites de chiffrement suivantes ont pris en charge les protocoles TLS 1.0 et 1.1 jusqu’à leur date d’annulation. Pour Cloud de la communauté du secteur public environnements Haut et DoD dont la date de désinsion était le 15 janvier 2020. Pour les environnements Cloud de la communauté du secteur public et internationaux qui datent du 15 octobre 2020.
 
-| Protocoles | Nom de suite de chiffrement | Algorithme/force d’échange de clés | Secret avant | Chiffrement/puissance | Algorithme/niveau d’authentification | 
+| Protocoles | Nom de suite de chiffrement | Algorithme/force d’échange de clés | Secret avant | Chiffrement/force | Algorithme/niveau d’authentification | 
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | TLS 1.0, 1.1, 1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> | ECDH/192  <br/> | Oui  <br/> | AES/256  <br/> | RSA/112  <br/> |
 | TLS 1.0, 1.1, 1.2  <br/> | TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> | ECDH/128  <br/> | Oui  <br/> | AES/128  <br/> | RSA/112  <br/> |

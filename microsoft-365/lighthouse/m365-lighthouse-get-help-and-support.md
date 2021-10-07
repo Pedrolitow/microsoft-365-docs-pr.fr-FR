@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment obtenir de l’aide et du support.
-ms.openlocfilehash: 392eed01b5519c512c89460776ec9f4391b7bda2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 554747fa7360892c7ea8c52e31dc0f4e2bc18589
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179548"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170138"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Obtenir de l’aide et du support pour Microsoft 365 Lighthouse 
 
@@ -30,10 +30,10 @@ ms.locfileid: "59179548"
 
 Plusieurs options sont disponibles si vous avez besoin d’aide. Commencez par vérifier l’état actuel des services client client :
 
-1. Dans le volet de navigation gauche de l’écran de la barre de sécurité, sélectionnez **État du service.**
+1. Dans le volet de navigation gauche de l’écran de sélection, sélectionnez **État du service.**
 2. Afficher des informations détaillées sur les problèmes actuels et passés.
 
-Pour vérifier l’état actuel des services du locataire Du monde :
+Pour vérifier l’état d’état actuel des services du locataire Du monde :
 
 1. Go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 2. Dans le volet de navigation gauche, sélectionnez **l’état**  >  **d’état du service d’état d’santé.**
@@ -47,13 +47,13 @@ Si vous rencontrez un problème qui n’est répertorié dans aucun des tableaux
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour créer et gérer des demandes de service, vous devez avoir au moins un rôle Azure Active Directory (Azure AD) qui vous est affecté avec l’ensemble de propriétés suivant : **microsoft.office365.supportTickets/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference) Pour plus d’informations sur l’attribution de rôles, voir [Attribuer des rôles Azure AD aux utilisateurs.](/azure/active-directory/roles/manage-roles-portal)
+- Pour créer et gérer des demandes de service, vous devez avoir au moins un rôle Azure Active Directory (Azure AD) qui vous est affecté avec le jeu de propriétés suivant : **microsoft.office365.supportTickets/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference) Pour plus d’informations sur l’attribution de rôles, voir [Attribuer des rôles Azure AD aux utilisateurs.](/azure/active-directory/roles/manage-roles-portal)
 
 - Si vous devez créer une demande de service, rassemblez autant de détails que possible sur votre problème, tels que les journaux de diagnostic, l’ID de locataire et les ID d’utilisateur (si des utilisateurs spécifiques sont affectés).
 
 ## <a name="access-help-and-support"></a>Accéder à l’aide et au support
 
-1.  Dans l’île, sélectionnez **le ?** en haut du portail pour  ouvrir le volet d’aide, puis faites l’une des choses suivantes :
+1.  Dans Le Phare, sélectionnez **le ?** en haut du portail pour  ouvrir le volet d’aide, puis faites l’une des choses suivantes :
     
     -  Si vous êtes sur la page du portail où le problème s’est produit, sélectionnez **Afficher les diagnostics.**
 

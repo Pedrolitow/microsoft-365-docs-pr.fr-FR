@@ -10,15 +10,15 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
-ms.openlocfilehash: 30ab28c4a9c2431a63db976df13748de6b843fdc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b74aaca3df01b2e6f222605f3700066c980cd9bd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165233"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170114"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard-learn-ultra"></a>Utiliser Microsoft Teams classes avec Blackboard Learn Ultra
 
@@ -37,9 +37,9 @@ Vos classes peuvent inclure des conversations en temps réel, des réunions vid�
 
 Dans le cadre de l’évolution avec les intégrations  de fournisseurs cloud, Blackboard Learn Ultra a créé un nouveau champ Courrier électronique de l’établissement, à la fois dans l’intégration de Student Information System Framework et dans les API REST publiques, ce qui permet aux établissements de gérer efficacement le processus de synchronisation des données entre Blackboard Learn Ultra et AAD.
 
-### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Que signifie le courrier électronique de l’établissement et qu’est-ce qu’il prend en charge ?
+### <a name="what-does-the-institution-email-mean-and-what-does-it-support"></a>Qu’est-ce que la messagerie électronique de l’établissement signifie et qu’est-ce qu’elle prend en charge ?
 
-Le **champ Courrier électronique** de l’établissement permet de personnaliser les mappages de champs entre les sources de données d’un client pris en charge en externe et blackboard Learn Ultra. Si les sources de données sont des fournisseurs cloud, tels que Microsoft, le nom d’utilisateur principal (UPN) est un identificateur unique principal pour chaque utilisateur constitué d’un préfixe UPN (nom de compte de l’utilisateur) et d’un suffixe UPN (un nom de domaine DNS) associé à un symbole @. Cela crée une adresse e-mail unique pour chaque utilisateur spécifique au sein du Microsoft Azure Active Directory.
+Le **champ Courrier électronique** de l’établissement permet des mappages de champs personnalisés entre les sources de données d’un client pris en charge en externe et Blackboard Learn Ultra. Si les sources de données sont des fournisseurs cloud, tels que Microsoft, le nom d’utilisateur principal (UPN) est un identificateur unique principal pour chaque utilisateur constitué d’un préfixe UPN (nom de compte de l’utilisateur) et d’un suffixe UPN (un nom de domaine DNS) associé à un symbole @. Cela crée une adresse e-mail unique pour chaque utilisateur spécifique au sein du Microsoft Azure Active Directory.
 
 Pour garantir que les données sont exactes et que les inscriptions ou appartenances entre les classes Blackboard Learn Ultra et Microsoft Teams sont correctement obtenues, l’adresse e-mail d’un utilisateur doit correspondre entre les deux systèmes. Dans Blackboard Learn Ultra, les utilisateurs peuvent modifier ou remplacer leur adresse de messagerie existante dans l’interface utilisateur, ce qui peut entraîner des erreurs de synchronisation et l’ajout de l’utilisateur à une équipe de classe. Le **mappage** de champ Courrier électronique de l’établissement garantit que ce niveau de vérification de la sécurité et de la validation peut être géré correctement, que les utilisateurs ont modifié leur courrier électronique dans Blackboard Learn Ultra ou non.
 
@@ -49,10 +49,10 @@ Pour garantir que les données sont exactes et que les inscriptions ou appartena
   Ou
 - Un établissement peut définir un mappage de champ personnalisé dans son courrier électronique d’établissement, ce qui peut résoudre un conflit potentiel.
 
-Le **mappage de** champ Courrier électronique de l’établissement est désormais disponible pour tous les types d’intégration SIS existants dans advanced **Configuration Paramètres** Users Learn  >  **Object Type** Field  >  **Mapping**.
+Le **mappage de champ Courrier** électronique de l’établissement est désormais disponible pour tous les types d’intégration SIS existants dans advanced Configuration **Paramètres** Users Learn  >  **Object Type** Field  >  **Mapping**.
 
 > [!NOTE]
-> Il est important de noter que, par défaut,  la messagerie de **l’établissement** est définie sur Courrier de la personne pour tous les formats SIS et doit être unique pour chaque personne. Toutes les intégrations existantes qui sont définies et en cours d’exécution auront ce mappage de données en place, car SIS ne pourra pas importer les utilisateurs si leur courrier électronique est dupliqué. Si un établissement a besoin de la possibilité de modifier le courrier  électronique de l’établissement en courrier **personnalisé,** il devra le gérer via la configuration avancée Paramètres dans le SIS.
+> Il est important de noter que, par défaut,  la messagerie de **l’établissement** est définie sur Le courrier électronique de la personne pour tous les formats SIS et doit être unique pour chaque personne. Toutes les intégrations existantes qui sont définies et en cours d’exécution auront ce mappage de données en place, car SIS ne pourra pas importer les utilisateurs si leur courrier électronique est dupliqué. Si un établissement a besoin de la possibilité de modifier le courrier  électronique de l’établissement en courrier **personnalisé,** il devra le gérer via la configuration avancée Paramètres dans le SIS.
 
 ## <a name="requirements"></a>Conditions requises
 
@@ -92,7 +92,7 @@ L Microsoft Teams des classes est disponible uniquement pour les cours **Ultra C
 
 4. Examinez tous les paramètres qui ont été pré-remplis et dans l’état de l’outil, puis sélectionnez **Activé.**
 
-5. Dans **Stratégies d’établissement,** **sélectionnez Rôle dans le cours,** le nom et l’adresse e-mail, puis sélectionnez **Oui** pour les deux.
+5. Dans **stratégies d’établissement,** **sélectionnez Rôle dans le cours,** le nom et l’adresse e-mail, puis sélectionnez **Oui** pour les deux.
 
 6. Sélectionnez **Autoriser l’accès au service de qualité et** Autoriser **l’accès au service d’appartenance.**
 
@@ -146,13 +146,13 @@ L Microsoft Teams des classes est disponible uniquement pour les cours **Ultra C
 
 ## <a name="configure-and-approve-microsoft-teams-classes-integration"></a>Configurer et approuver l’intégration Microsoft Teams classes
 
-Pour intégrer correctement votre instance Blackboard Learn Ultra à des classes Microsoft Teams, vous devez vous assurer que l’application Blackboard Learn Ultra est approuvée pour l’accès au sein de votre client Microsoft Azure. Il s’agit d’un processus qui devra être effectué par l’administrateur Microsoft 365 de votre établissement.
+Pour intégrer correctement votre instance Blackboard Learn Ultra à des classes Microsoft Teams, vous devez vous assurer que l’application Blackboard Learn Ultra est approuvée pour l’accès au sein de votre client Microsoft Azure. Il s’agit d’un processus qui doit être effectué par l’administrateur Microsoft 365 de votre établissement.
 
 Ce processus peut être effectué avant ou après avoir configuré les applications LTI dans votre tableau noir Learn Ultra Instance.
 
 ### <a name="before-configuring-the-lti-applications"></a>Avant de configurer les applications LTI
 
-Si vous choisissez d’approuver l’application Azure Blackboard Learn Ultra Teams Classes avant de configurer les intégrations LTI, vous devez rediriger vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités **Microsoft.** L’URL s’affiche :
+Si vous choisissez d’approuver l’application Azure Classes Blackboard Learn Ultra Teams Classes avant de configurer les intégrations LTI, vous devez rediriger vers le point de terminaison de consentement de l’administrateur de la plateforme d’identités **Microsoft.** L’URL s’affiche :
 
 `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
@@ -171,7 +171,7 @@ Vous verrez une fenêtre d’autorisations qui explique que vous accordez l’au
 
 3. Ajoutez **votre ID de client Microsoft** dans le champ de texte disponible.
 
-4. Choisissez l’une des options suivantes :
+4. Sélectionnez l’une des options suivantes :
 
    - Si l’application dispose d’un consentement préalable, elle affiche une petite coche. Si la coche s’affiche, sélectionnez **Envoyer.**
 

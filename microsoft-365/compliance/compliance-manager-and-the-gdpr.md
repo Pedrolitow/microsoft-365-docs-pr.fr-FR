@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft est un outil gratuit d’évaluation des risques des flux de travail disponible dans le Portail d’approbation de services de Microsoft. Le Gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de mise en conformité réglementaires liées aux services de cloud computing Microsoft.
-ms.openlocfilehash: dc58bf9b38b08ddd7218dfe0be07013a72ad0608dec931a3a5992193f75b0a25
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
-ms.translationtype: HT
+ms.openlocfilehash: b4a648c43fb20f557b85e24e9e67de036cc4f2e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880544"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168661"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Gestionnaire de conformité Microsoft et RGPD
 

@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer & utiliser un connecteur natif pour importer des données à partir d’une page d’entreprise LinkedIn Microsoft 365.
-ms.openlocfilehash: 2d34a424b11c9489d54a87bfb9f81de9a74ed5e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70d17c0cf9eaeec7110ea178f1f3db56c3d3b553
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167497"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
@@ -68,4 +68,4 @@ Pour afficher plus de détails, sélectionnez le connecteur dans la liste de la 
 
 ## <a name="more-information"></a>Plus d’informations
 
-Les éléments LinkedIn sont importés dans le sous-foldeur LinkedIn dans la boîte de réception de la boîte aux lettres de stockage dans Microsoft 365. Ils s’affichent sous la mesure de messages électroniques.
+Les éléments LinkedIn sont importés dans le sous-foldeur LinkedIn dans la boîte de réception de la boîte aux lettres de stockage Microsoft 365. Ils s’affichent sous la mesure de messages électroniques.

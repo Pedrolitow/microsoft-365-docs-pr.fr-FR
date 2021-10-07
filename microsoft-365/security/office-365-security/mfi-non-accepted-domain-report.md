@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport de domaine non accepté dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les messages provenant de votre organisation sur site où le domaine de l’expéditeur n’est pas configuré dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b9bab55ddf23f991179245837f4ecb4e7d28b8f1
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 5b698600cb3fbc85ec86bed4da542d23fe5eb17e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988354"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169466"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Rapport de domaine non accepté dans le Centre de sécurité & conformité
 
@@ -38,9 +38,9 @@ Microsoft 365 peuvent limiter ces messages si nous avons des données pour prouv
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>Affichage du rapport pour le rapport de domaine non accepté
 
-Le fait de cliquer sur le graphique sur le widget **de** domaine non accepté vous permet d’avoir accès au **rapport de domaine** non accepté.
+Cliquez sur le graphique sur le widget **de** domaine non accepté pour vous rendre dans le **rapport de domaine** non accepté.
 
-Par défaut, l’activité de tous les connecteurs affectés est affichée. Si vous cliquez **sur Afficher les données pour**, vous pouvez sélectionner un connecteur spécifique dans la dropdown.
+Par défaut, l’activité de tous les connecteurs affectés est affichée. Si vous cliquez **sur Afficher les données pour**, vous pouvez sélectionner un connecteur spécifique dans ladown.
 
 Si vous pointez sur un point de données (jour) dans le graphique, vous verrez le nombre total de messages pour le connecteur.
 
@@ -68,10 +68,10 @@ Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec
 - **Nombre de messages**
 - **Exemples de messages**: vous pouvez cliquer sur Afficher les **exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un échantillon des messages concernés.
 
-![Détails volants après la sélection d’une ligne dans l’affichage De la table Détails dans le rapport de domaine non accepté.](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+![Détails volants après la sélection d’une ligne dans l’affichage Tableau Détails dans le rapport de domaine non accepté.](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

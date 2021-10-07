@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7a4176e5b375c32edb1e1fae3ab74f0760f28366
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ee78ead64f58cc90f43d556f5c1717753f672656
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180941"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169610"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Gérer l’accès aux Microsoft 365 Defender avec Azure Active Directory rôles globaux
 
@@ -46,7 +46,7 @@ Les comptes affectés aux rôles **Azure Active Directory global (AD)** suivants
 - Lecteur général
 - Lecteur de sécurité
 
-Pour passer en revue les comptes avec ces [rôles, affichez les autorisations](https://security.microsoft.com/permissions)dans le portail Microsoft 365 Defender.
+Pour passer en revue les comptes avec ces [rôles, affichez autorisations dans le portail Microsoft 365 Defender.](https://security.microsoft.com/permissions)
 
 **L’accès** aux rôles personnalisés est une nouvelle fonctionnalité de Microsoft 365 Defender et vous permet de gérer l’accès à des données, des tâches et des fonctionnalités spécifiques dans Microsoft Defender 365. Les rôles personnalisés offrent plus de contrôle que les rôles Azure AD globaux, fournissant aux utilisateurs uniquement l’accès dont ils ont besoin avec les rôles les moins permissifs nécessaires.  Les rôles personnalisés peuvent être créés en plus des rôles Azure AD globaux. [En savoir plus sur les rôles personnalisés.](custom-roles.md)
 
@@ -60,9 +60,9 @@ L’accès à des fonctionnalités spécifiques est déterminé par votre[rôle 
 [Un examen et correction automatisés](m365d-autoir-actions.md) peuvent prendre une action sur les e-mails, les règles de transfert, les fichiers, les mécanismes de persistance et d’autres artefacts détectés lors des examens. Pour approuver ou refuser les actions en attente qui nécessitent une autorisation explicite, vous devez avoir certains rôles affectés dans Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter[Autorisation du centre de notification](m365d-action-center.md#required-permissions-for-action-center-tasks).
 
 ## <a name="access-to-data"></a>Accès aux données
-L’accès Microsoft 365 Defender données peut être contrôlé à l’aide de l’étendue attribuée aux groupes d’utilisateurs dans Microsoft Defender for Endpoint role-based access control (RBAC). Si votre accès n’a pas été limité à un ensemble spécifique d’appareils dans Defender for Endpoint, vous aurez un accès total aux données dans Microsoft 365 Defender. Cependant, une fois votre compte étendu, vous verrez uniquement les données relatives aux appareils dans votre étendue.
+L’accès Microsoft 365 Defender données peut être contrôlé à l’aide de l’étendue attribuée aux groupes d’utilisateurs dans Microsoft Defender for Endpoint role-based access control (RBAC). Si votre accès n’a pas été limité à un ensemble spécifique d’appareils dans defender pour point de terminaison, vous aurez un accès total aux données dans Microsoft 365 Defender. Cependant, une fois votre compte étendu, vous verrez uniquement les données relatives aux appareils dans votre étendue.
 
-Par exemple, si vous n’appartenez qu’à un seul groupe d’utilisateurs avec un rôle Microsoft Defender pour point de terminaison et que ce groupe d’utilisateurs n’a accès qu’aux appareils commerciaux, vous ne verrez que les données relatives aux appareils de vente dans Microsoft 365 Defender. [En savoir plus sur les paramètres RBAC dans Microsoft Defender pour endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
+Par exemple, si vous n’appartenez qu’à un seul groupe d’utilisateurs avec un rôle Microsoft Defender pour point de terminaison et que ce groupe d’utilisateurs n’a accès qu’aux appareils commerciaux, vous ne verrez que les données relatives aux appareils de vente dans Microsoft 365 Defender. [En savoir plus sur les paramètres RBAC dans Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
 ### <a name="microsoft-cloud-app-security-access-controls"></a>Contrôles d'accès Microsoft Cloud App Security (MCAS)
 Pendant la prévisualisation, Microsoft 365 Defender n’applique pas les contrôles d’accès basés sur Sécurité des applications cloud paramètres. L’accès Microsoft 365 Defender données n’est pas affecté par ces paramètres.

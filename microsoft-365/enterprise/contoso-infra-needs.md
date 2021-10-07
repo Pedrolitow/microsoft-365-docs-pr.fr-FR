@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 entreprise.
-ms.openlocfilehash: aa0779cfadb12aa0213a74f2e348951be4eca4f5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f7a25a9a3bd23c5725be06af39dbd65a1d3a4e5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207708"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170354"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Infrastructure informatique de Contoso et besoins de l’entreprise
 
@@ -51,7 +51,7 @@ Dans la DMZ du siège social de Contoso, différents ensembles de serveurs fourn
 
 ## <a name="contoso-business-needs"></a>Besoins commerciaux de Contoso
 
-Les besoins commerciaux de Contoso sont en cinq catégories principales :
+Les besoins commerciaux de Contoso se comptent en cinq catégories principales :
 
 **Productivité**
 
@@ -91,9 +91,9 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
 - Réduire l’infrastructure d’accès distant pour les employés
 
-  Réduisez les coûts de maintenance et de support et améliorez les performances pour la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
+  Réduisez les coûts de maintenance et de support et améliorez les performances de la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
 
-- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la charge (B2B)
+- Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la vente (B2B)
 
   Remplacez un extranet partenaire coûteux et coûteux par une solution basée sur le cloud qui utilise l’authentification fédérée.
 
@@ -101,7 +101,7 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
 - Respecter les exigences réglementaires locales
 
-  Assurer la conformité avec les réglementations industrielles et régionales en matière de stockage de données, de chiffrement, de confidentialité des données et de réglementations relatives aux données personnelles, telles que le Règlement général sur la protection des données (R GDPR) pour l’Union européenne.
+  Assurer la conformité avec les réglementations industrielles et régionales en matière de stockage des données, de chiffrement, de confidentialité des données et de réglementations relatives aux données personnelles, telles que le Règlement général sur la protection des données (R GDPR) pour l’Union européenne.
 
 **Gestion**
 

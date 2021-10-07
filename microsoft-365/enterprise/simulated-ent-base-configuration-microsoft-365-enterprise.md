@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce Guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
-ms.openlocfilehash: e3576c5d7e1a00069dd5dd46d1b1e6063da217bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d335ed074adc6abe8bc1dabf58392d5b9051ccc6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179707"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170174"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
+*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
 
 Cet article explique comment créer un environnement simplifié pour Microsoft 365 entreprise qui inclut :
 
@@ -51,15 +51,15 @@ Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalit�
 
 Dans cette phase, créez un intranet simulé dans les services d’infrastructure Azure qui inclut un contrôleur de domaine Active Directory Domain Services (AD DS), un serveur d’applications et un ordinateur client.
 
-Vous utiliserez ces ordinateurs dans des Microsoft 365 pour les guides de laboratoire de [test](m365-enterprise-test-lab-guides.md) d’entreprise pour configurer et montrer l’identité hybride et d’autres fonctionnalités.
+Vous utiliserez ces ordinateurs dans des Microsoft 365 [de laboratoire](m365-enterprise-test-lab-guides.md) de test d’entreprise pour configurer et montrer l’identité hybride et d’autres fonctionnalités.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Méthode 1: Créer votre intranet simulé avec un Modèle de Gestion de Ressources Azure 
 
 Dans cette méthode, vous utilisez un modèle Azure Resource Manager pour créer l’intranet simulé. Les modèles Azure Resource Manager contiennent toutes les instructions pour créer l’infrastructure réseau Azure, les machines virtuelles et leur configuration.
 
-Avant de déployer le modèle, lisez la [page README du](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) modèle et préparez les informations suivantes :
+Avant de déployer le modèle, lisez la [page DU MODÈLE README](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) et préparez les informations suivantes :
 
-- Nom de domaine DNS public de votre environnement de test (testlab). \<*your public domain*> Vous devez entrer ce nom dans le champ Nom de **domaine** de la page **Déploiement** personnalisé.
+- Nom de domaine DNS public de votre environnement de test (testlab). \<*your public domain*> Vous devez entrer ce nom dans le champ **Nom de domaine** de la page **Déploiement** personnalisé.
 - Un préfixe d’étiquette DNS pour les URL d’adresses IP publiques de vos machines virtuelles. Vous devez entrer cette étiquette dans le **préfixe d’étiquette Dns** champ de la page **déploiement Personnalisé**.
 
 Après avoir lu les instructions, sélectionnez **Déployer sur Azure** sur la page DU MODÈLE [LISEZME](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) pour commencer.
@@ -339,7 +339,7 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
     
 2. Dans **Les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
     
-3. Dans la configuration de sécurité renforcée d’Internet **Explorer,** sélectionnez **Off** pour les administrateurs et les  **utilisateurs,** puis **sélectionnez OK**.
+3. Dans **la configuration de sécurité renforcée d’Internet Explorer,** sélectionnez **Off** pour les administrateurs et les **utilisateurs,** puis **sélectionnez OK**. 
     
 4. Dans l’écran d’accueil, **sélectionnez Internet Explorer,** puis **sélectionnez OK.**
     
@@ -381,7 +381,7 @@ Pour configurer un abonnement d’évaluation Office 365 E5, suivez les instru
 
 Si vous n’avez besoin Office 365 environnement de test, vous n’avez pas besoin de lire le reste de cet article.
 
-Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Microsoft 365 et Office 365, voir Microsoft 365 pour les guides de laboratoire de [test d’entreprise.](m365-enterprise-test-lab-guides.md)
+Pour d’autres guides de laboratoire de test qui s’appliquent à Microsoft 365 et Office 365, voir Microsoft 365 pour les guides de laboratoire de [test d’entreprise.](m365-enterprise-test-lab-guides.md)
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Ajouter un abonnement d’évaluation de Microsoft 365 E5.
 

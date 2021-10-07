@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft fournit des modèles pour la création d’évaluations qui s’alignent sur les réglementations, normes et lois nationales, régionales et industrielles.
-ms.openlocfilehash: 88d68e270990229164c442939cf93c6fa2d6781f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71367b7f88fd0b7cfdee243f4ed0101e88a21fce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181366"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167449"
 ---
 # <a name="compliance-manager-templates-list"></a>Liste des modèles de Gestionnaire de conformité
 
@@ -89,7 +89,7 @@ Ces modèles peuvent être achetés par votre organisation.
 - Liste de contrôle de la cybersécurité de la FINRA (Microsoft 365)
 - ITU X.1052 Information Security Management Framework (Microsoft 365)
 - Joint Commission Information Management Standard (Microsoft 365)
-- [Meilleures pratiques en matière](/compliance/regulatory/offering-mpaa) de sécurité du contenu de l’association de motion picture (Microsoft 365)
+- Meilleures pratiques en matière de sécurité du contenu [(MPA) motion Picture Association](/compliance/regulatory/offering-mpaa) (Microsoft 365)
 - [NERC CIP](/compliance/regulatory/offering-nerc-cip) (Microsoft 365)
 - Contrôles de sécurité client SWIFT (Microsoft 365)
 - OWASP ProActive Controls for Developers 2018 v3.0 (Microsoft 365)
@@ -123,7 +123,7 @@ Ces modèles peuvent être achetés par votre organisation.
 - [Loi Gramm-Leach-Bliley, titre V, sous-titre A, confidentialité financière](/compliance/regulatory/offering-GLBA) (Microsoft 365)
 - [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365, Intune)
 - [HITRUST](/compliance/regulatory/offering-hitrust) (Microsoft 365)
-- Directive 7 relative à la sécurité : Identification, hiérquisation et protection de l’infrastructure critique (Microsoft 365)
+- Directive 7 relative à la sécurité : identification, hiérquisation et protection de l’infrastructure critique (Microsoft 365)
 - IRS - Revenue Procedure 98-25 Automated Records (Microsoft 365)
 - IRS-P1075 (Microsoft 365)
 - Normes de risque acceptable minimales pour les échanges (MARS-E) 2.0 (Microsoft 365)
@@ -152,7 +152,7 @@ Ces modèles peuvent être achetés par votre organisation.
 - États-Unis : protection et sécurisation des installations de l’organisation contre les attaques d’attaques de Microsoft 365)
 
 ### <a name="us-states-and-territories"></a>États et territoires des États-Unis
-- Alabama - Stratégie 621 : Notification de violation de données - DRAFT (Microsoft 365)
+- Alabama - Stratégie 621 : Notification de violation de données - BROUILLON (Microsoft 365)
 - Alaska - Chapitre 48 - Loi sur la protection des informations personnelles (Microsoft 365)
 - Contrôle - Notification des violations dans les systèmes de sécurité (Microsoft 365)
 - Titre 4, sous-titre 7, chapitre 110, Loi sur la protection des informations personnelles (Microsoft 365)
@@ -207,11 +207,11 @@ Ces modèles peuvent être achetés par votre organisation.
 - Code administratif de la ville de New York - Notification de violation de sécurité (Microsoft 365)
 - New York General Business Law - Data Security Breach Notification and Data Security Protections (Microsoft 365)
 - New York Privacy Act - DRAFT (Microsoft 365)
-- North North North – Identity Theft Protection Act (Microsoft 365)
+- North Contrôle - Loi sur la protection contre le vol d’identité (Microsoft 365)
 - North Contrôle Chapter 51-30 Notice of Security Breach for Personal Information (Microsoft 365)
 - Contrôle - Notification de violation de sécurité (Microsoft 365)
 - Loi 2018 sur la protection des données (Microsoft 365)
-- Loi sur la notification des violations de sécurité (Microsoft 365)
+- Loi de notification de violation de la sécurité (Microsoft 365)
 - Oregon Consumer Identity Theft Information Protection Act (Microsoft 365)
 - Breach of Personal Information Notification Act (Microsoft 365)
 - Porto Rico - Citizen Information on Data Banks Security Act (Microsoft 365)
@@ -237,7 +237,7 @@ Ces modèles peuvent être achetés par votre organisation.
 - Australie - National Archives Act
 - Australie - Public Records Office Recordskeeping Standards (Microsoft 365)
 - Australie - Spam Act 2003 (Microsoft 365)
-- Australia Privacy (Credit Reporting) Code (Microsoft 365)
+- Code de confidentialité australien (rapports de solvabilité) (Microsoft 365)
 - Australia Privacy Act (Microsoft 365)
 - AESCSF (Australian Energy Sector Cyber Security Framework) (Microsoft 365)
 - Programme australien d’évaluation de la sécurité des informations [(IRAP) Version 3](/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365)
@@ -261,7 +261,7 @@ Ces modèles peuvent être achetés par votre organisation.
 - Loi coréenne sur la protection des informations personnelles (Microsoft 365)
 - Malaisie - Loi sur la protection des données personnelles (PDPA) (Microsoft 365)
 - Malaysia Risk Management in Technology (RMiT) (Microsoft 365)
-- Myanmar - Loi protégeant la confidentialité et la sécurité des citoyens
+- Myanmar : loi protégeant la confidentialité et la sécurité des citoyens
 - Népal - Loi sur le droit à l’information
 - Nouvelle-Zélande - Privacy Act/ 2020 (Microsoft 365)
 - Nouvelle-Zélande - Public Records Act (Microsoft 365)
@@ -338,7 +338,7 @@ Ces modèles peuvent être achetés par votre organisation.
 - Loi du Luxembourg (Microsoft 365)
 - Malte - Data Protection Act (Microsoft 365)
 - Loi de 2004 sur la protection des données mauricienne (Microsoft 365)
-- Loi de la République de Moldavie sur la protection des données personnelles (Microsoft 365)
+- Loi de La République de Moldavie sur la protection des données personnelles (Microsoft 365)
 - Macédoine - Loi sur la protection des données personnelles (Microsoft 365)
 - Règlement sur la protection des données (Microsoft 365)
 - Oman - Loi sur les transactions électroniques (Microsoft 365)
@@ -354,7 +354,7 @@ Ces modèles peuvent être achetés par votre organisation.
 - Espagne - Infrastructure de sécurité (Microsoft 365)
 - Suisse - Loi fédérale sur la protection des données (FADEP) (Microsoft 365)
 - Turquie - Protection KVKK des données personnelles 6698 (Microsoft 365)
-- Émirats arabes unis : loi sur la lutte contre la cybermenace (Microsoft 365)
+- Émirats arabes unis - Loi du gouvernement fédéral sur la lutte contre la cybermenace (Microsoft 365)
 - ÉMIRAT - Loi fédérale concernant les transactions électroniques et le commerce
 - ÉMIRAT - Loi fédérale n 2 de 2019 sur l’utilisation des technologies de l’information et de la communication (TIC) dans les champs de santé (Microsoft 365)
 - Émirats arabes unis - Normes d’assurance des informations de la NESA (Microsoft 365)

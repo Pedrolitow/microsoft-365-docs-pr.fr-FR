@@ -9,7 +9,7 @@ ms.date: 9/20/2021
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Maîtrisez les notions de base du chiffrement de la sécurité de données dans OneDrive Entreprise et SharePoint Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91bb261c25a1c4bf993deb0d12d1d1b8e9f5f874
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 25bebc8fd5ab9b820667f5220785b021230ca6e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460479"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170762"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Chiffrement de données dans OneDrive Entreprise et SharePoint Online
 
@@ -54,7 +54,7 @@ BitLocker est déployé pour OneDrive Entreprise et SharePoint Online sur l'ense
   
 Alors que BitLocker chiffre toutes les données sur un disque, le chiffrement par fichier va plus loin en ajoutant une clé de chiffrement unique pour chaque fichier. En outre, chaque mise à jour de chaque fichier est chiffrée à l’aide de sa propre clé de chiffrement. Les clés du contenu chiffré sont stockées dans un emplacement physiquement distinct du contenu. Chaque étape de ce chiffrement utilise la méthode AES (Advanced Encryption Standard) avec des clés 256 bits et est conforme à la norme FIPS (Federal Information Processing Standard) 140-2. Le contenu chiffré est réparti sur un certain nombre de conteneurs dans l’ensemble du centre de données, et chaque conteneur possède des informations d’identification uniques. Ces informations sont stockées dans un emplacement physique distinct du contenu ou des clés de contenu.
   
-Pour plus d’informations sur la conformité FIPS 140-2, consultez la conformité [FIPS 140-2.](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))
+Pour plus d’informations sur la conformité FIPS 140-2, voir [conformité FIPS 140-2](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
   
 Le chiffrement au niveau du fichier lors du stockage tire profit du stockage d'objets blob pour fournir une croissance de stockage virtuellement illimitée et pour permettre une protection sans précédent. L'ensemble du contenu client dans OneDrive Entreprise et SharePoint Online sera migré vers le stockage d'objets blob. Voici la façon dont les données sont sécurisées :
   

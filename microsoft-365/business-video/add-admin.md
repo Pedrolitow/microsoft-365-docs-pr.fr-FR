@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ajouter un autre administrateur.
-ms.openlocfilehash: 1e727f60d209f8d80edee38a21ce3992dd52d62c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 757a16da2b4bf73fbf905bb46ed6bc18f08b6d9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208308"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169117"
 ---
 # <a name="add-an-admin"></a>Ajouter un administrateur
 
@@ -52,9 +52,9 @@ S’il existe un responsable informatique externe qui vous aidera à gérer votr
 1. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs,**</a>puis **Ajoutez un utilisateur.**
 1. Dans la page Configurer les informations **de base,** entrez le nom, le nom d’affichage et le nom d’utilisateur de l’utilisateur.
 1. Cochez la **case Envoyer le** mot de passe par courrier électronique à la fin de l’envoi du mot de passe de l’utilisateur. Tapez leur adresse de messagerie. Séparez les adresses par des points-virgules. Sélectionnez **Suivant**.
-1. Dans la **liste de listes** de listes listes de sélection de l’emplacement, choisissez l’emplacement de l’utilisateur.
+1. Dans la **liste liste de** listes listes de sélection de l’emplacement, choisissez l’emplacement de l’utilisateur.
 1. Cochez **la case Créer un utilisateur sans licence** de produit. Vous n’avez pas besoin d’attribuer une licence à cet utilisateur, car il gère uniquement les services Microsoft 365 et ne les utilise pas. Sélectionnez **Suivant**.
-1. Développez la section **Rôles.** Cochez la case en regard du rôle actuel de l’utilisateur, puis choisissez **Administrateur général.** Sélectionnez **Suivant**.
+1. Développez la section **Rôles.** Clear the check box next to the user’s current role, and then choose **Global administrator**. Sélectionnez **Suivant**.
 1. Examinez vos paramètres, puis sélectionnez **Terminer l’ajout.**
 1. Sélectionnez **Fermer**.
 

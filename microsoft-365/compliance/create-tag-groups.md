@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 94bbcac31a3dd533ee589496989e60b739ca3b3f
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 2bd11d89214b82401daec214167778f60ecd3cbc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58575011"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170798"
 ---
 # <a name="create-tag-groups"></a>Créer des groupes de balises
 
@@ -47,7 +47,7 @@ Une fois à l’intérieur de la gestion des balises, des balises peuvent être 
 
 2. Entrez un titre et une description facultative. 
 
-3. Pour créer une balise dans ce groupe, cliquez sur les ellipses sur le nouveau groupe de balises pour créer des balises dans cette nouvelle section.
+3. Pour créer une balise au sein de ce groupe, cliquez sur les ellipses sur le nouveau groupe de balises pour créer des balises dans cette nouvelle section.
     
     ![Création de balises dans un groupe de balises.](../media/ED-createtag.png)
 

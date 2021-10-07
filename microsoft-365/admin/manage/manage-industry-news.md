@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -18,19 +18,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: bde55ffbd9bef2f8eac7db1a4d200aeb58f32f89
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: f53f9d7d52a68c29f1225dd38df90d9c4c3e72e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933506"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168109"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
 > [!NOTE] 
 > Bing actualités & les mises à jour du secteur sont disponibles uniquement pour en-US pour le moment.
 
-Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et Microsoft Edge page nouvel onglet.
+Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’Bing et de Microsoft Edge page nouvel onglet.
 
 ## <a name="what-your-users-will-see"></a>Ce que vos utilisateurs voient
 
@@ -98,11 +98,11 @@ Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérie
 
 1. In the Centre d'administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. Dans le **panneau Actualités,** cliquez **sur Microsoft Edge page nouvel onglet.**
-3. Sélectionnez **Autoriser Office 365 contenu sur la page nouvel onglet.** Lorsqu’il est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher des informations provenant de Office 365, notamment des fichiers recommandés et récents, ainsi que des sites SharePoint fréquemment utilisés et d’autres informations.
+3. Sélectionnez **Autoriser Office 365 contenu sur la page nouvel onglet.** Lorsque ce paramètre est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher des informations provenant de Office 365, notamment des fichiers recommandés et récents, ainsi que des sites SharePoint fréquemment utilisés et d’autres informations.
 4. Sélectionnez **Afficher les informations de l’entreprise et les actualités du secteur sur la page nouvel onglet.** Des articles d’actualités sur votre organisation et votre secteur d’activité s’affichent pour les utilisateurs qui choisissent de consulter les articles sous leur nouvel onglet.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
 - 
   [Recherche Microsoft](/microsoftsearch/)
-- [Gérer vos données et service](./index.yml)
+- [Gérer vos données et service](/admin)

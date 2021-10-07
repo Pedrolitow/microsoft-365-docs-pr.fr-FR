@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ff4d72f22faef32b1fabb52e10332af62e50bc7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203219"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170058"
 ---
 # <a name="localize-the-user-experience"></a>Localiser l’expérience utilisateur
 
@@ -51,7 +51,7 @@ Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 e
     - Langue d’affichage
     - Outils de preuve et de authoring
 
-Pour rendre les langues Microsoft 365 Apps pour Enterprise prise en charge disponibles pour vos [utilisateurs,](#supported-languages) ajoutez-les au groupe Espace de travail **Office-Language_Packs** moderne. Les langues seront disponibles dans le Portail d'entreprise Intune.
+Pour rendre les langues Microsoft 365 Apps pour Enterprise prise en charge disponibles pour vos [utilisateurs](#supported-languages) à installer, ajoutez-les au groupe Espace de travail **Office-Language_Packs** moderne. Les langues seront disponibles dans le Portail d'entreprise Intune.
 
 
 ## <a name="supported-languages"></a>Langues prises en charge

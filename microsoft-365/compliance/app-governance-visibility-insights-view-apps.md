@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Affichez vos applications.
-ms.openlocfilehash: 8e9ac5fda62e015bc1e2a5df11b618afa508a4a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d4de5916fc900c0a45996e3ad1dcb816cc5f94aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183784"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168877"
 ---
 # <a name="view-your-apps"></a>Afficher vos applications
 

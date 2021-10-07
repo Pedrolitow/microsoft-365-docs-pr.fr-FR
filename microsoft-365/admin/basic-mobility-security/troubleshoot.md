@@ -7,18 +7,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Suivez ces étapes pour suivre les problèmes de mobilité et de sécurité de base
-ms.openlocfilehash: 533e2d60d3c23809bdfbf6dda5a64e43082c739e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f625fbc642392ee575b35f225f5e65b942362c4a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775107"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165939"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Résoudre les problèmes de mobilité et de sécurité de base
 
@@ -52,13 +53,13 @@ Pour commencer, vérifiez ce qui suit :
 
 ## <a name="windows-rt"></a>Windows RT
 
-- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
+- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
     
 - Assurez-vous que l’utilisateur **choisit** Activer   plutôt que de participer. ****
 
 ## <a name="windows-10-pc"></a>Windows 10 PC
 
-- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec Basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
+- Assurez-vous que votre domaine est Microsoft 365 pour fonctionner avec basic Mobility and Security. Pour plus d’informations, voir [Configurer la mobilité et la sécurité de base.](set-up.md)
     
 - Sauf si vous avez Azure Active Directory Premium, assurez-vous que **** l’utilisateur choisit l’inscription à la gestion des appareils uniquement au lieu de   choisir **Connecter**.
 

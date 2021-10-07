@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment créer un modèle de codage prédictif dans Advanced eDiscovery. Il s’agit de la première étape de l’utilisation des fonctionnalités d’apprentissage automatique dans Advanced eDiscovery pour vous aider à identifier le contenu pertinent et non pertinent dans un jeu à réviser.
-ms.openlocfilehash: ed5092f2730ade5e349cec77e5c264e67d957927
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4366c5779aaca6973f5a2c0cc526086d0742d069
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177900"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170582"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Créer un modèle de codage prédictif (prévisualisation)
 
@@ -37,7 +37,7 @@ Pour passer en revue le flux de travail de codage prédictif, voir [En savoir pl
 
 ## <a name="create-a-model"></a>Créer un modèle
 
-1. Dans la Centre de conformité Microsoft 365, ouvrez un Advanced eDiscovery, puis sélectionnez l’onglet Ensembles **de révision.**
+1. Dans la Centre de conformité Microsoft 365, ouvrez un Advanced eDiscovery, puis sélectionnez l’onglet **Ensembles de révision.**
 
 2. Ouvrez un jeu à réviser, puis cliquez sur **Analyse** Gérer le  >  **codage prédictif (prévisualisation).**
 
@@ -59,8 +59,8 @@ Après avoir créé un modèle, les éléments suivants se produisent en arrièr
 
 - Le système calcule le nombre d’éléments du jeu de contrôles. Cette taille est basée sur le nombre d’éléments du jeu à réviser et sur les paramètres du niveau de confiance et de la marge d’erreur. Les éléments du jeu de contrôles sont sélectionnés de manière aléatoire et désignés comme éléments de jeu de contrôles. Le système inclut 10 éléments du jeu de contrôles de la première série de formation.
 
-- Le système sélectionne de manière aléatoire 40 éléments dans le jeu à réviser à inclure dans l’ensemble de formation pour la première série de formations. Par conséquent, la première série de formations inclut 50 éléments pour l’étiquetage : 40 éléments de l’ensemble de formations et 10 éléments de l’ensemble de contrôles.
+- Le système sélectionne de manière aléatoire 40 éléments dans le jeu à réviser à inclure dans l’ensemble de formation pour la première série de formations. Par conséquent, la première série de formations inclut 50 éléments pour l’étiquetage : 40 éléments de l’ensemble de formations et 10 éléments du jeu de contrôles.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir créé un modèle pour un groupe de révision, l’étape suivante consiste à effectuer des séries de formation pour « enseigner » le modèle afin d’identifier le contenu pertinent pour votre examen. Pour plus d’informations, [voir La formation d’un modèle de codage prédictif.](predictive-coding-train-model.md)
+Après avoir créé un modèle pour un groupe de révision, l’étape suivante consiste à effectuer des séries de formation pour « enseigner » le modèle afin d’identifier le contenu pertinent pour votre examen. Pour plus d’informations, [voir Formation d’un modèle de codage prédictif.](predictive-coding-train-model.md)

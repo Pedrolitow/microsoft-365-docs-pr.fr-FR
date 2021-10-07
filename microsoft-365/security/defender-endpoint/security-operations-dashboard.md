@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2612fc618c8bd3dd8362d86413bad386856a3063
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4007280a5225fea3c13904163e546f256e7ee217
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208988"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166289"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
 
@@ -33,7 +33,7 @@ ms.locfileid: "59208988"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-Le **tableau de bord Opérations** de sécurité est l’endroit protection évolutive des points de terminaison fonctionnalités de sécurité sont à l’écran. Il fournit une vue d’ensemble de l’endroit où les détections ont été détectées et met en évidence les cas où des actions de réponse sont nécessaires.
+Le **tableau de bord Opérations de** sécurité est l’endroit protection évolutive des points de terminaison fonctionnalités de sécurité sont à l’écran. Il fournit une vue d’ensemble de l’endroit où les détections ont été détectées et met en évidence les cas où des actions de réponse sont nécessaires.
 
 Le tableau de bord affiche une capture instantanée des éléments ci-dessous :
 
@@ -71,7 +71,7 @@ Chaque ligne inclut une catégorie de gravité d’alerte et une brève descript
 
 Cette vignette affiche la liste des appareils avec le plus grand nombre d’alertes actives. Le nombre total d’alertes pour chaque appareil est affiché dans un cercle en regard du nom de l’appareil, puis classé par niveaux de gravité à l’extrémité de la vignette (placez le pointage sur chaque barre de gravité pour voir son étiquette).
 
-![La vignette Appareils à risque affiche une liste des appareils avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/devices-at-risk-tile.png)
+![La vignette Appareils à risque affiche la liste des appareils avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/devices-at-risk-tile.png)
 
 Cliquez sur le nom de l’appareil pour voir les détails sur cet appareil. Pour plus d’informations, consultez la liste Examiner les appareils de la liste [Microsoft Defender pour les appareils de point de terminaison.](investigate-machines.md)
 
@@ -85,10 +85,10 @@ La **vignette Appareils avec problèmes** de capteur fournit des informations su
 
 Deux indicateurs d’état fournissent des informations sur le nombre d’appareils qui ne sont pas correctement signalés au service :
 
-- **Mal configurés**: ces appareils peuvent partiellement signaler des données de capteur au service Microsoft Defender for Endpoint et peuvent avoir des erreurs de configuration qui doivent être corrigées.
+- **Mal configuré :** ces appareils peuvent partiellement signaler des données de capteur au service Microsoft Defender for Endpoint et peuvent avoir des erreurs de configuration qui doivent être corrigées.
 - **Inactif**: appareils qui ont cessé de signaler au service Microsoft Defender for Endpoint pendant plus de sept jours au cours du mois précédent.
 
-Lorsque vous cliquez sur l’un des groupes, vous êtes dirigé vers la liste des appareils, filtré en fonction de votre choix. Pour plus d’informations, voir [Vérifier l’état du capteur](check-sensor-status.md) et Examiner les [appareils.](investigate-machines.md)
+Lorsque vous cliquez sur l’un des groupes, vous êtes dirigé vers la liste des appareils, filtré en fonction de votre choix. Pour plus d’informations, voir [Vérifier l’état du capteur](check-sensor-status.md) et examiner les [appareils.](investigate-machines.md)
 
 ## <a name="service-health"></a>L’intégrité du service
 
@@ -106,7 +106,7 @@ La **vignette Rapports quotidiens sur** les appareils affiche un graphique à ba
 
 ## <a name="active-automated-investigations"></a>Examens automatisés actifs
 
-Vous pouvez afficher le nombre global d’enquêtes automatisées des 30 derniers jours de votre réseau à partir de la **vignette Enquêtes automatisées actives.** Les examens sont regroupés en **action en attente,** en attente **d’appareil** et en **cours d’exécution.**
+Vous pouvez afficher le nombre global d’enquêtes automatisées des 30 derniers jours de votre réseau à partir de la **vignette Enquêtes automatisées actives.** Les examens sont regroupés en **action en attente,** **en attente de l’appareil** et en **cours d’exécution.**
 
 ![Inmage d’enquêtes automatisées actives.](images/atp-active-investigations-tile.png)
 
@@ -122,7 +122,7 @@ Vous pouvez cliquer sur **Examens** automatisés, **Examens** corrigés et **Ale
 
 La vignette affiche la liste des comptes d’utilisateurs avec les alertes les plus actives et le nombre d’alertes visibles sur les alertes élevées, moyennes ou faibles. 
 
-![La vignette Comptes d’utilisateur à risque affiche la liste des comptes d’utilisateurs avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/atp-users-at-risk.png)
+![La vignette Comptes d’utilisateurs à risque affiche une liste de comptes d’utilisateurs avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/atp-users-at-risk.png)
 
 Cliquez sur le compte d’utilisateur pour voir les détails sur le compte d’utilisateur. Pour plus d’informations, [voir Examiner un compte d’utilisateur.](investigate-user.md)
 

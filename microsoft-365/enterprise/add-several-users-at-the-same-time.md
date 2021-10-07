@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -24,17 +24,17 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: 'Découvrez comment ajouter plusieurs utilisateurs à Microsoft 365 entreprise à partir d’une liste dans une feuille de calcul ou un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Microsoft 365. À la fin de ce processus, chaque utilisateur ayant un compte aura une boîte Microsoft 365 aux lettres. '
-ms.openlocfilehash: 873a9ff27f85d63596f5e69db918c0c619b73539
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: "Découvrez comment ajouter plusieurs utilisateurs à Microsoft 365 entreprise à partir d’une liste dans une feuille de calcul ou un autre fichier au format CSV. Regardez une vidéo sur YouTube qui explique comment ajouter des comptes à Microsoft 365. À la fin de ce processus, chaque utilisateur ayant un compte aura une boîte aux lettres Microsoft 365'utilisateur. "
+ms.openlocfilehash: d9152ba8dfef21faeaba6f981c23359eb114b653
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207779"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170414"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Ajouter plusieurs utilisateurs en même temps à Microsoft 365 - Aide de l’administrateur
 
-Chaque personne de votre équipe a besoin d’un compte d’utilisateur pour pouvoir se Microsoft 365 services de messagerie et d’Office. Si votre équipe compte de nombreux membres, vous pouvez ajouter tous leurs comptes simultanément à partir d'une feuille de calcul Excel ou d'un autre fichier enregistré au format CSV. [Vous ne savez pas quel est le format CSV](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
+Chaque membres de votre équipe a besoin d’un compte d’utilisateur avant de se Microsoft 365 et d’accéder à des services de messagerie et de Office. Si votre équipe compte de nombreux membres, vous pouvez ajouter tous leurs comptes simultanément à partir d'une feuille de calcul Excel ou d'un autre fichier enregistré au format CSV. [Vous ne savez pas quel est le format CSV](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
   
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
@@ -97,7 +97,7 @@ Une fois le fichier enregistré, il est probable qu'un message indiquant que cer
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Conseils pour la mise en forme de votre feuille de calcul
 
-- **Ai-je besoin des mêmes en-têtes de colonne que dans l'exemple de feuille de calcul ?** Oui. La première ligne de l'exemple de feuille de calcul inclut les en-têtes de colonne. Ces en-têtes sont obligatoires. Pour chaque utilisateur que vous souhaitez ajouter à Microsoft 365, créez une ligne sous le titre. Si vous ajoutez, modifiez ou supprimez des en-Microsoft 365 colonne, il se peut que vous ne soyez pas en mesure de créer des utilisateurs à partir des informations du fichier.
+- **Ai-je besoin des mêmes en-têtes de colonne que dans l'exemple de feuille de calcul ?** Oui. La première ligne de l'exemple de feuille de calcul inclut les en-têtes de colonne. Ces en-têtes sont obligatoires. Pour chaque utilisateur que vous souhaitez ajouter à Microsoft 365, créez une ligne sous le titre. Si vous ajoutez, modifiez ou supprimez l’un des en-Microsoft 365 colonnes ne pourront peut-être pas créer d’utilisateurs à partir des informations du fichier.
 
 - **Que faire si je n'ai pas toutes les informations requises pour chaque utilisateur ?** Le nom de l'utilisateur et le nom d'affichage sont obligatoires. Vous ne pouvez pas ajouter un nouvel utilisateur sans ces informations. S'il vous manque d'autres informations, par exemple le numéro de télécopie, vous pouvez insérer un espace suivi d'une virgule pour indiquer que le champ est vide.
 

@@ -4,24 +4,24 @@ description: Comment spécifier le groupe de déploiement dans lequel vous souha
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 19465d2d2f077859490c106b9c01f08beb6e3906
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88445e3ce29084de6141930d36bbdc7f4b2e247d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182044"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166633"
 ---
 # <a name="assign-devices-to-a-deployment-group"></a>Affecter des appareils à un groupe de déploiement
 
 Microsoft Manged Desktop affectera des appareils aux différents groupes de déploiement, mais vous pouvez spécifier ou modifier le groupe pour qu’un appareil soit affecté à un appareil à l’aide du portail d’administration. Vous modifiez l’affectation après l’inscription d’un appareil ou après l’inscription d’un utilisateur.
 
 > [!IMPORTANT]
-> Si vous modifiez l’affectation, les stratégies spécifiques à ce groupe seront appliquées à l’appareil. La modification peut installer la dernière version de Windows 10 (y compris les nouvelles mises à jour de fonctionnalité ou de qualité). Il est préférable de déplacer quelques appareils au début, puis de vérifier l’expérience utilisateur qui en résulte. N’ignorez pas que certaines mises à jour redémarreront l’appareil. Vérifiez que vous avez sélectionné les appareils à affecter. L’affectation peut prendre effet jusqu’à 24 heures.
+> Si vous modifiez l’affectation, les stratégies spécifiques à ce groupe seront appliquées à l’appareil. La modification peut installer la dernière version de Windows 10 (y compris les nouvelles mises à jour de fonctionnalité ou de qualité). Il est préférable de déplacer quelques appareils au début, puis de vérifier l’expérience utilisateur résultante. N’ignorez pas que certaines mises à jour redémarreront l’appareil. Vérifiez que vous avez sélectionné les appareils à affecter. L’affectation peut prendre effet jusqu’à 24 heures.
 
 Pour affecter des appareils à un groupe de déploiement, suivez ces étapes. Si vous souhaitez déplacer des appareils distincts vers différents groupes, répétez ces étapes pour chaque groupe.
 

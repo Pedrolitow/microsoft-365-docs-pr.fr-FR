@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6453ce0607ed7dee66622b64705d88e91cd67bf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4834500830911025cb3639bbfbf8124ad78817e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165097"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168409"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Examiner les incidents dans Microsoft Defender pour point de terminaison
 
@@ -61,7 +61,7 @@ Vous pouvez examiner les alertes et voir comment elles ont été liées dans un 
 - Même fichier : les fichiers associés à l’alerte sont exactement les mêmes
 - MÊME URL : l’URL qui a déclenché l’alerte est exactement la même
 
-![Image de l’onglet Alertes avec page détails de l’incident indiquant les raisons pour lesquelles les alertes ont été liées dans cet incident.](images/atp-incidents-alerts-reason.png)
+![Image de l’onglet Alertes avec page détails de l’incident montrant les raisons pour lesquelles les alertes ont été liées dans cet incident.](images/atp-incidents-alerts-reason.png)
 
 Vous pouvez également gérer une alerte et voir les métadonnées d’alerte ainsi que d’autres informations. Pour plus d’informations, voir [Examiner les alertes.](investigate-alerts.md)
 
@@ -89,7 +89,7 @@ Chacune des entités analysées sera marquée comme infectée, corrigé ou suspe
 
 Microsoft Defender pour le point de terminaison regroupe les informations sur les menaces dans un incident afin que vous pouvez voir les modèles et corrélations provenant de différents points de données. Vous pouvez afficher cette corrélation via le graphique d’incident.
 
-### <a name="incident-graph"></a>Graphique de l’incident
+### <a name="incident-graph"></a>Graphique d’incident
 
 Le **Graph** l’article sur les attaques de cybersécurité. Par exemple, il vous montre quel était le point d’entrée, quel indicateur de compromission ou d’activité a été observé sur quel appareil. etc.
 

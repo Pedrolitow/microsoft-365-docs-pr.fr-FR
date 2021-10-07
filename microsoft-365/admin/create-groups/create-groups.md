@@ -8,10 +8,11 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Découvrez comment créer et supprimer Microsoft 365 groupes, ajouter et supprimer des membres du groupe et personnaliser le fonctionnement du groupe.
-ms.openlocfilehash: 5abe83570121ae6c1837e0037521be3d1da8580c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 32a79182efc021a5f95cc4ef7f53e722c76a1df2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775059"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165795"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le Centre d'administration Microsoft 365
   
@@ -43,7 +44,7 @@ Bien que les utilisateurs peuvent créer un groupe Microsoft 365 à partir de Ou
 
 2. Sélectionnez **Ajouter un groupe.**
   
-3. Dans la page **Choisir un type de groupe,** **sélectionnez Office 365**, puis sélectionnez **Suivant**.
+3. Dans la page **Choisir un type de groupe,** **sélectionnez Office 365,** puis sélectionnez **Suivant**.
 
 4. Dans la page **Informations de** base, tapez un nom pour le groupe et, éventuellement, une description. Sélectionnez **Suivant**.
     
@@ -85,7 +86,7 @@ Lorsqu’un message électronique est supprimé de la boîte aux lettres de grou
 
 Après avoir créé un groupe et ajouté des membres, vous pouvez configurer davantage votre groupe, par exemple en modifiant le nom ou la description du groupe, en modifiant les propriétaires ou les membres, et en spécifiant si les expéditeurs externes peuvent envoyer des messages électroniques au groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour [plus d’informations, voir Microsoft 365 groupe](manage-groups.md) de gestion.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer l’accès invité Microsoft 365 groupes de gestion](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
 [Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md) (article)\

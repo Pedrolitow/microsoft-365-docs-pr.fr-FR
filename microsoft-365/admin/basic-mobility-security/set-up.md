@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: Configurer la mobilité et la sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en faisant des actions telles que la wiping à distance d’un appareil.
-ms.openlocfilehash: 07f8283353432b06aea67ba9cf8bbc505d6c3012
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: bbf7cf84dd996a0e548a76978e8fbba58f40c070
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60165963"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
@@ -39,7 +40,7 @@ La gestion des appareils fait partie du Centre de sécurité & conformité. Vous
 
 2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
 
-   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui vous explique les étapes à suivre.
+   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui explique les étapes suivantes à suivre.
 
 ## <a name="set-up-mobile-device-management"></a>Configurer la gestion des appareils mobiles
 
@@ -94,7 +95,7 @@ L’authentification multifacteur permet de sécuriser la Microsoft 365 pour l�
 
 Pour savoir comment activer l’authentification multifacteur dans le portail Azure AD, voir [Configurer l’authentification multifacteur.](../security-and-compliance/set-up-multi-factor-authentication.md)
 
-Après avoir installé l’ation MFA, revenir au **** Centre de sécurité & conformité et accédez aux stratégies de périphérique de gestion des appareils de protection contre la perte de données pour passer à   >     >  ****   l’étape suivante.
+Après avoir installé l’ation MFA, revenir au **** Centre de sécurité & conformité et accédez aux stratégies de périphériques de gestion des appareils de protection contre la perte de données pour passer à   >     >  ****   l’étape suivante.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Étape 4 : (Recommandé) Gérer les stratégies de sécurité des appareils
 
@@ -127,7 +128,7 @@ Une fois que vous avez créé et déployé une stratégie de gestion des apparei
 
 Les utilisateurs avec des appareils Android ou iOS doivent installer l’application Portail d'entreprise dans le cadre du processus d’inscription.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)\
 [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)

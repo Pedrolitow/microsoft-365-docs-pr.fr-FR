@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Résumé : Utilisez PowerShell pour Microsoft 365 créer des rapports que vous ne pouvez pas produire dans le Centre d'administration Microsoft 365."
-ms.openlocfilehash: 9fe1b48bdb61d037a3b2bc49d017a16c3a6875cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 35c4e810dbbf0006a72c8073c3ead900812f5c66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202043"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166765"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Utilisation de PowerShell pour créer des rapports pour Microsoft 365
 

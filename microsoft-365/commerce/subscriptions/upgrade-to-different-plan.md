@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Le moyen le plus simple de mettre à niveau les plans consiste à utiliser l’onglet Mise à niveau dans le Centre d’administration. Toutefois, l’onglet Mise à niveau n’est pas toujours pris en charge.
 ms.date: 04/21/2021
-ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8d481ec0b5eb64fcc86ca331d9bde3cac746f177
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180116"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167545"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
 
@@ -38,11 +38,11 @@ Lorsque vous  utilisez l’onglet Mise à niveau, vous êtes dirigé tout au lon
 
 1. Dans le Centre d’administration, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
 2. Sélectionnez l’abonnement à mettre à niveau.
-3. Dans la page des détails de l’abonnement, sélectionnez **Mettre à niveau.**
+3. Dans la page détails de l’abonnement, sélectionnez **Mettre à niveau.**
 4. Recherchez le plan vers lequel vous souhaitez mettre à niveau, puis sélectionnez le bouton **Mettre à** niveau.
 5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis **sélectionnez Accéder à l’checkout**.
     > [!NOTE]
-    > Veillez à acheter suffisamment de licences pour couvrir tous vos utilisateurs.
+    > Assurez-vous d’acheter suffisamment de licences pour couvrir tous vos utilisateurs.
 6. Sur la page suivante, vérifiez l’adresse de **l’acheteur** et les informations de **facturation** ainsi que **les articles de cette commande**. Vous pouvez modifier le mode de paiement par défaut à cette étape. Si vous souhaitez modifier des informations, sélectionnez **modifier** en regard de la section applicable.
 7. Lorsque vous avez terminé, sélectionnez **Ordre des commandes.**
 

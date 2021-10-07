@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a25a0f6f7e1604d9652350606310e856d93ee5a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 52e8853a2027a7e72a68fb5c24ccdd50fe5cf78e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182607"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169081"
 ---
 # <a name="payment-information-for-french-guiana"></a>Informations de paiement pour la Guyane française
 

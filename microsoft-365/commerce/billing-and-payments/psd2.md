@@ -9,7 +9,7 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,18 +20,18 @@ search.appverid: MET150
 description: Depuis le 14 septembre 2019, les banques des 31 pays de l’Espace économique européen sont tenues de vérifier l’identité de la personne qui a effectué un achat en ligne avant que le paiement puisse être effectué. »
 keywords: directive 2 sur les services de paiement, authentification client forte, authentification multifacteur
 ms.date: 11/03/2020
-ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7b2fdec6a921979dc5f314c5441b42eac84f6f1d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208076"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167737"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directive 2 sur les services de paiement et authentification client forte pour les clients commerciaux
 
 Depuis le 14 septembre 2019, les banques des 31 pays de l’Espace économique européen doivent vérifier l’identité de la personne qui a effectué un achat en ligne avant que le paiement puisse être effectué. Cette vérification nécessite une authentification multifacteur pour garantir la sécurité et la protection de vos achats en ligne. La date de cette exigence de vérification sera retardée pour certains pays.
 
-Pour plus d’informations, voir le FAQ Microsoft sur la directive 2 des services de paiement [et l’authentification client forte.](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)
+Pour plus d’informations, consultez la FAQ Microsoft sur la directive 2 des services de paiement [et l’authentification client forte.](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)
 
 ## <a name="when-is-multi-factor-authentication-required"></a>Quand l’authentification multifacteur est-elle requise ?
 

@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.date: 09/30/2020
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Décrit la synchronisation d’annuaires avec Microsoft 365, le nettoyage des services de domaine Active Directory et l’outil Azure Active Directory Connecter’annuaire.
-ms.openlocfilehash: 5ad437e4f8abcf2a6d59d17ce41a2b1adeac0649
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01cf1477020b8e8ef43e36c57b0a761d1950dfaa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202121"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170306"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Synchronisation d’annuaires et d’identités hybrides pour Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "59202121"
 En fonction des besoins de votre entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires sont le choix le plus courant pour les clients d’entreprise qui adoptent Microsoft 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services de domaine Active Directory (AD DS) et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365.
 
 >[!Note]
->Lorsque les comptes d’utilisateurS AD DS sont synchronisés pour la première fois, ils ne se voit pas automatiquement attribuer une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
+>Lorsque les comptes d’utilisateurS AD DS sont synchronisés pour la première fois, ils ne se voit pas attribuer automatiquement une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
 >
 
 ## <a name="authentication-for-hybrid-identity"></a>Authentification pour l’identité hybride
@@ -58,7 +58,7 @@ Il existe deux types d’authentification gérée :
 
 - Authentification directe (PTA)
 
-  Azure AD permet aux AD DS d’effectuer l’authentification.
+  Azure AD dispose d’AD DS qui effectue l’authentification.
 
 
 #### <a name="password-hash-synchronization-phs"></a>Synchronisation de hachage de mot de passe (PHS)
@@ -108,7 +108,7 @@ La préparation de votre annuaire doit se concentrer sur les tâches suivantes :
 - Supprimez les caractères non valides et discutables dans les attributs **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname** et **userPrincipalName.** Pour plus d’informations sur la préparation des attributs, voir La liste des [attributs synchronisés](https://go.microsoft.com/fwlink/p/?LinkId=396719)par l’outil Azure Active Directory sync.
 
     > [!NOTE]
-    > Il s’agit des mêmes attributs qu’Azure AD Connecter synchronisés. 
+    > Il s’agit des mêmes attributs que les Connecter Azure AD. 
   
 ## <a name="multi-forest-deployment-considerations"></a>Considérations sur le déploiement à forêts multiples
 
@@ -116,12 +116,12 @@ Pour plusieurs forêts et options DSO, utilisez une installation personnalisée 
   
 Si votre organisation possède plusieurs forêts pour l’authentification (forêts d’authentification), nous vous recommandons vivement les points suivants :
   
-- **Envisagez de consolider vos forêts.** En règle générale, une surcharge supplémentaire est nécessaire pour gérer plusieurs forêts. À moins que votre organisation n’ait des contraintes de sécurité qui imposent la nécessité de forêts distinctes, envisagez de simplifier votre environnement local.
+- **Envisagez de consolider vos forêts.** En règle générale, une surcharge supplémentaire est nécessaire pour gérer plusieurs forêts. À moins que votre organisation ne possède des contraintes de sécurité qui imposent la nécessité de forêts distinctes, envisagez de simplifier votre environnement local.
 - **À utiliser uniquement dans votre forêt d' logo principale.** Envisagez de déployer Microsoft 365 uniquement dans votre forêt d’Microsoft 365. 
 
 Si vous ne pouvez pas consolider votre déploiement AD DS à forêts multiples ou si vous utilisez d’autres services d’annuaire pour gérer les identités, vous pourrez peut-être les synchroniser avec l’aide de Microsoft ou d’un partenaire.
   
-Pour [plus d’informations, voir Topologies for Azure AD Connecter.](/azure/active-directory/hybrid/plan-connect-topologies)
+Pour [plus d’informations, voir Topologies Connecter Azure AD.](/azure/active-directory/hybrid/plan-connect-topologies)
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>Fonctionnalités qui dépendent de la synchronisation d’annuaires
   
@@ -133,7 +133,7 @@ La synchronisation d’annuaires est requise pour les fonctionnalités suivantes
   - Liste d’adresses globale (LAL) entièrement partagée entre votre environnement Exchange local et Microsoft 365.
   - Synchronisation des informations GAL provenant de différents systèmes de messagerie.
   - Possibilité d’ajouter des utilisateurs à des offres de services Microsoft 365 et de les supprimer. Cette possibilité nécessite ce qui suit :
-  - La synchronisation double doit être configurée lors de la configuration de la synchronisation d’annuaires. Par défaut, les outils de synchronisation d’annuaires écrivent les informations d’annuaire uniquement dans le cloud. Lorsque vous configurez la synchronisation double, vous activez la fonctionnalité d’écriture inaltérable afin qu’un nombre limité d’attributs d’objet soient copiés à partir du cloud, puis écrits dans votre AD DS local. L’écriture en écriture arrière est également appelée Exchange mode hybride. 
+  - La synchronisation double doit être configurée lors de la configuration de la synchronisation d’annuaires. Par défaut, les outils de synchronisation d’annuaires écrivent les informations d’annuaire uniquement dans le cloud. Lorsque vous configurez la synchronisation à double sens, vous activez la fonctionnalité d’écriture/écriture de manière à ce qu’un nombre limité d’attributs d’objet soient copiés à partir du cloud, puis écrits dans votre AD DS local. L’écriture en écriture arrière est également appelée Exchange mode hybride. 
   - Déploiement hybride Exchange local
   - Possibilité de déplacer certaines boîtes aux lettres d’utilisateur vers Microsoft 365 tout en conservant d’autres boîtes aux lettres utilisateur en local.
   - Coffre expéditeurs et les expéditeurs bloqués locaux sont répliqués vers Microsoft 365.

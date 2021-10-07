@@ -10,7 +10,7 @@ ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment vérifier l’éligibilité de votre établissement Microsoft 365 Éducation tarifs scolaires.
 ms.date: 07/21/2020
-ms.openlocfilehash: 86bdb4338c316edf5b8bdb83a61a5a0fd2f411ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8fc3be02de01e2d37159162581276e7c9d3451f1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167538"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168901"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Vérifier l’éligibilité scolaire pour Microsoft 365 Éducation abonnements
 
@@ -91,7 +91,7 @@ Vous trouverez la date d’expiration de votre abonnement d’essai gratuit sur 
 
 ## <a name="my-school-isnt-eligible-what-do-i-do-now"></a>Mon établissement scolaire n’est pas éligible. Que dois-je faire maintenant ?
 
-Si votre établissement scolaire n’est pas éligible en tant qu’établissement scolaire  qualifié Microsoft, vous pouvez toujours acheter des offres commerciales dans le Centre d’administration sur la page Des services d’achat \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">de facturation.</a> Si votre organisation est un groupe à but non lucratif, il est possible que votre groupe soit éligible à des abonnements pour les organisations à but non lucratif. Pour en savoir plus, voir [Remises et dons pour les associations.](https://www.microsoft.com/nonprofits/eligibility)
+Si votre établissement scolaire n’est pas éligible en tant qu’établissement scolaire  qualifié Microsoft, vous pouvez toujours acheter des offres commerciales dans le Centre d’administration sur la page Des services d’achat \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">de facturation.</a> Si votre organisation est un groupe à but non lucratif, il est possible que votre groupe soit éligible à des abonnements à des associations à but non lucratif. Pour en savoir plus, voir [Remises et dons pour les associations.](https://www.microsoft.com/nonprofits/eligibility)
 
 Si vous avez des questions sur la décision d’éligibilité scolaire de votre établissement scolaire, [contactez le support technique.](../../business-video/get-help-support.md)
 

@@ -7,7 +7,7 @@ ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: b38c279bbbb763c8f0859d6d45cd838c8652ec5e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16c2e1f33e66f9b7d710a867c5c4467053e03c67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182175"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60166825"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -32,10 +32,10 @@ Les appareils joints à Azure AD et inscrits connectés à Microsoft Cloud Deuts
 ## <a name="azure-ad-joined-windows-10-devices"></a>Appareils joints à Azure AD Windows 10 appareils
 Si un Windows 10 est joint à Azure AD, il doit être déconnecté d’Azure AD et doit être connecté à nouveau.
 
-[![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Join Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-Si l’utilisateur est un administrateur sur l’appareil Windows 10, l’utilisateur peut désinsser l’appareil d’Azure AD et le réinsérez en trois étapes.
+Si l’utilisateur est un administrateur sur l’appareil Windows 10, l’utilisateur peut désinsser l’appareil d’Azure AD et le réinsèrer en trois étapes.
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>Étape 1 : Déterminer si l’appareil est joint à Azure ID
 
@@ -61,11 +61,11 @@ Si l’utilisateur est un administrateur sur l’appareil Windows 10, l’utilis
 6. Redémarrez l’appareil.
 7. Connectez-vous avec l’adresse e-mail et le mot de passe de votre compte de travail.
 
-Si l’utilisateur n’est pas administrateur de l’appareil, un  administrateur **Azure AD DC,** un administrateur d’application **cloud** ou un administrateur général peut créer le compte d’administrateur local sur l’appareil en suivant ce chemin de configuration et déjoinder l’appareil :
+Si l’utilisateur n’est pas administrateur de l’appareil, un  administrateur **Azure AD DC,** un administrateur d’application **cloud** ou un administrateur général peut créer le compte d’administrateur local sur l’appareil en suivant ce chemin de configuration et désjoinder l’appareil :
 
-*Paramètres > comptes > autres comptes > informations d’identification > ajouter un utilisateur sans compte Microsoft*
+*Paramètres > comptes > autres comptes > informations d’identification inconnues > ajouter un utilisateur sans compte Microsoft*
 
-Pour plus d’informations, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?).
+Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?).
 
 Pour rejoindre, les informations d’identification de n’importe quel compte de travail de votre organisation peuvent être utilisées dans cette étape.
 
@@ -76,7 +76,7 @@ Tout autre compte professionnel de l’organisation peut se connecter à l’app
 
 Si un Windows 10 est inscrit à Azure AD, il doit être déconnecté d’Azure AD et de nouveau connecté.
 
-[![Azure AD Device Re-Registration Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png)](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
+[![Azure AD Device Re-Registration Flow. ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>Étape 1 : Déterminer si l’appareil est inscrit sur Azure ID
 
@@ -113,9 +113,9 @@ Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs 
 
 Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide Microsoft Authenticator application :
 
-1. Ouvrez l Microsoft Authenticator appl; et Paramètres **.**
+1. Ouvrez l Microsoft Authenticator appappl; et Paramètres **.**
 2. Sélectionnez **Inscription de l’appareil.**
-3. Désinsinser l’appareil en sélectionnant **Désinsinsion**.
+3. Désinsister l’appareil en sélectionnant **Unregister**.
 4. Pour **l’inscription de** l’appareil, ré-inscrivez l’appareil en tapant votre adresse e-mail, puis sélectionnez **Enregistrer.**
 
 Pour désins inscrire et réenregistrer un appareil Android à l’Paramètres page :
@@ -123,20 +123,20 @@ Pour désins inscrire et réenregistrer un appareil Android à l’Paramètres p
 1. Ouvrez **Device Paramètres** et go to **Accounts**.
 2. Sélectionnez le compte de travail que vous souhaitez ré-inscrire et **sélectionnez Supprimer le compte.**
 3. Une fois le compte supprimé, dans la **page** Comptes, sélectionnez Ajouter un **compte > compte de travail.**
-4. For **Workplace Join**, type your email address and select **Join** to complete registering the device.
+4. Pour **Workplace Join,** tapez votre adresse e-mail et **sélectionnez Rejoindre** pour terminer l’inscription de l’appareil.
 
 Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d'entreprise :
 
 1. Lancez Portail d'entreprise et allez sur **l’onglet** Appareils.
 2. Sélectionnez l’appareil pour voir les détails de l’appareil.
-3. Dans le menu des points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
+3. Dans le menu points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
 4. Vous devez maintenant être déconnecté de l’application Portail d'entreprise’application. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
 
 Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Des informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
 
 ## <a name="ios"></a>iOS
 
-Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de l’Microsoft Authenticator, désinsister l’appareil et se dé dé connecter à partir de toutes les applications natives de l’appareil.
+Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de l’Microsoft Authenticator, désins inscrire l’appareil et se dé dé connecter à partir de toutes les applications natives de l’appareil.
 
 ### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Étape 1 : si elle est présente, supprimez le compte de l’application Microsoft Authenticator client
 
@@ -149,7 +149,7 @@ Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les compt
 
 1. Appuyez sur l’icône de menu dans le coin supérieur droit.
 2. Appuyez **Paramètres** puis inscription **de l’appareil.**
-3. Si votre compte s’affiche, **appuyez sur Désinsister l’appareil** et **continuez** dans la boîte de dialogue. Vous ne devriez voir aucun compte après cela.
+3. Si votre compte s’affiche, **appuyez sur Désinserrion de l’appareil** et **continuez** dans la boîte de dialogue. Vous ne devriez voir aucun compte après cela.
 
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Étape 3 : Se sortir des applications individuelles si nécessaire
 

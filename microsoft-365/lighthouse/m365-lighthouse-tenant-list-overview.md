@@ -1,5 +1,5 @@
 ---
-title: vue d Microsoft 365 Lighthouse liste des locataires
+title: Microsoft 365 Lighthouse liste des locataires
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la liste des clients.
-ms.openlocfilehash: 13481ecbaaf20c5886837e03f4a606531548145e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bff85a523d55cfeeacffc3024bb733a5c3fe2eb5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202817"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170102"
 ---
-# <a name="microsoft-365-lighthouse-tenant-list-overview"></a>vue d Microsoft 365 Lighthouse liste des locataires
+# <a name="microsoft-365-lighthouse-tenant-list-overview"></a>Microsoft 365 Lighthouse liste des locataires
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-La liste Microsoft 365 Lighthouse client fournit des informations sur les différents locataires avec lesquels vous avez un contrat, y compris l’état d’intégration du client par rapport à l’État de l’île. La liste des locataires vous permet également de baliser les locataires afin de fournir différents filtres tout au long du projet, et d’en savoir plus sur un client donné et l’état de son plan de déploiement.
+La Microsoft 365 Lighthouse client fournit des informations sur les différents locataires avec lesquels vous avez un contrat, y compris l’état d’intégration du client par rapport à l’État de l’île. La liste des locataires vous permet également de baliser les locataires afin de fournir différents filtres tout au long du projet, et d’en savoir plus sur un client donné et l’état de son plan de déploiement.
 
 Une fois que vos clients répondent aux [exigences d’intégration de Onboard,](m365-lighthouse-requirements.md)leur statut s’affiche **comme actif** dans la liste des clients.
 
@@ -54,7 +54,7 @@ Si vous décidez de réactiver un client, la réapparition des données peut pre
 
 ## <a name="tenant-tags"></a>Balises de client
 
-Vous pouvez baliser vos locataires clients avec une étiquette personnalisée dans Le Monde. Ces balises peuvent être utilisées pour organiser vos clients et peuvent également vous aider à filtrer facilement les affichages et informations existants disponibles pour les ensembles pertinents de clients. Vous pouvez également gérer vos balises et les locataires à qui elles sont affectées à partir de la page Locataires.
+Vous pouvez baliser vos locataires clients avec une étiquette personnalisée dans Le Sous-projet. Ces balises peuvent être utilisées pour organiser vos clients et peuvent également vous aider à filtrer facilement les affichages et informations existants disponibles pour les ensembles pertinents de clients. Vous pouvez également gérer vos balises et les locataires à qui elles sont affectées à partir de la page Locataires.
 
 ## <a name="related-content"></a>Contenu associé
 

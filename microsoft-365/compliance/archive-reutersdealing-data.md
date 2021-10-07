@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver les données de Traitement De Reuters à partir de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: a3c83d478e95cca1852409a98c44624ecf2c56c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8605316303e1c23045f432080f365300692fb5f0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180036"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167485"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>Configurer un connecteur pour archiver les données de la transaction De Reuters
 
 Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme De traitement de Reuters vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas vous fournit un connecteur de traitement [De Reuters](https://globanet.com/reuters-dealing/) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement), puis importer ces éléments dans Microsoft 365. Le connecteur convertit les communications de traitement à partir du compte Reuters Dealing au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
-Une fois que les données de l’opération De Reuters sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur de transaction De Reuters pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois que les données de l’opération De Reuters sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur de traitement De Reuters pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-reuters-dealing-data"></a>Vue d’ensemble de l’archivage des données de la transaction De Reuters
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour les données de traitement De Reuters.](../media/ReuetersDealingConnectorWorkflow.png)
 
-1. Votre organisation collabore avec Reuters Dealing pour configurer et configurer un site De transaction De Reuters.
+1. Votre organisation collabore avec Reuters Dealing pour configurer un site De traitement de Reuters.
 
 2. Une fois toutes les 24 heures, les éléments de la transaction De Reuters sont copiés sur le site Veritas Merge1. Le connecteur convertit également les éléments au format de message électronique.
 
@@ -77,7 +77,7 @@ Pour maîtr les utilisateurs et terminer la configuration du connecteur dans le 
 
 ## <a name="step-4-monitor-the-reuters-dealing-connector"></a>Étape 4 : Surveiller le connecteur de traitement de Reuters
 
-Après avoir créé le connecteur de traitement De Reuters, vous pouvez afficher l’état du connecteur dans la Centre de conformité Microsoft 365.
+Après avoir créé le connecteur de traitement De Reuters, vous pouvez afficher l’état du connecteur dans le Centre de conformité Microsoft 365.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 
@@ -87,4 +87,4 @@ Après avoir créé le connecteur de traitement De Reuters, vous pouvez afficher
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

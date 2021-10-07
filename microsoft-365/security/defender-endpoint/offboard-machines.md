@@ -1,27 +1,25 @@
 ---
 title: Hors-carte des appareils à partir du service Microsoft Defender for Endpoint
-description: Intégrer Windows 10, serveurs, appareils non Windows à partir du service Microsoft Defender for Endpoint
+description: Intégrer Windows, serveurs, appareils non Windows à partir du service Microsoft Defender for Endpoint
 keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ca3e2b5ca26a2d57d27d91d84493c927d6fb2021
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 8a84885f26273a731bbda72f81c51502aa137b21
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59353660"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60168217"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Hors-carte des appareils à partir du service Microsoft Defender for Endpoint
 
@@ -45,7 +43,7 @@ Suivez les instructions correspondantes en fonction de votre méthode de déploi
 > [!NOTE]
 > L’état d’un appareil passe à [Inactif](fix-unhealthy-sensors.md#inactive-devices) 7 jours après laboardage.
 >
-> Les données des appareils horsboard (par exemple, Chronologie, Alertes, Vulnérabilités, [](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) etc.) restent dans le portail jusqu’à l’expiration de la période de rétention configurée.
+> Les données des appareils horsboard (par exemple, Chronologie, Alertes, Vulnérabilités, etc.) restent dans le portail jusqu’à l’expiration de la période de [rétention](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) configurée.
 >
 > Le profil de l’appareil (sans [](machines-view-overview.md) données) reste dans la liste des appareils pendant 180 jours au plus.
 >
@@ -53,7 +51,7 @@ Suivez les instructions correspondantes en fonction de votre méthode de déploi
 >
 > Pour afficher uniquement les appareils [](machines-view-overview.md#health-state)actifs, vous pouvez filtrer par état d’état d’état, [balises d’appareil](machine-tags.md) ou groupes [d’ordinateurs.](machine-groups.md)
 
-## <a name="offboard-windows-10-devices"></a>Appareils hors Windows 10 d’appareil
+## <a name="offboard-windows-devices"></a>Appareils hors Windows
 
 - [Hors-carte des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Appareils de tableau de bord à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
