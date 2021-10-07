@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 29aa8008dc3674760e4e720f155d6df82068ab55
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 2ca1f3d257e40fab340972b3b0d96ce0f7b9977b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59402177"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194032"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST SIEM
 
@@ -40,7 +40,7 @@ ms.locfileid: "59402177"
 
 > [!NOTE]
 >
-> - [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) est composé d’une ou plusieurs détections.
+> - [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) se compose d’une ou de plusieurs détections.
 > - [Microsoft Defender pour la détection des points](api-portal-mapping.md) de terminaison est composé de l’événement suspect qui s’est produit sur l’appareil et de ses détails d’alerte associés.
 > s-The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 
@@ -59,7 +59,7 @@ Microsoft Defender pour le  point de terminaison prend en charge le flux d’oct
 
 Le _flux d’octroi d’autorisation_ utilise les informations d’identification de l’utilisateur pour obtenir un code d’autorisation, qui est ensuite utilisé pour obtenir un jeton d’accès.
 
-Le _flux d’informations d’identification_ du client utilise les informations d’identification du client pour s’authentifier par rapport à l’URL du point de terminaison microsoft Defender pour le point de terminaison. Ce flux convient aux scénarios lorsqu’un client OAuth crée des demandes à une API qui ne nécessite pas d’informations d’identification utilisateur.
+Le _flux d’informations d’identification_ du client utilise les informations d’identification du client pour s’authentifier par rapport à l’URL du point de terminaison microsoft Defender pour le point de terminaison. Ce flux convient aux scénarios où un client OAuth crée des demandes à une API qui ne nécessite pas d’informations d’identification utilisateur.
 
 Utilisez la méthode suivante dans l’API Microsoft Defender for Endpoint pour tirer les détections au format JSON.
 
@@ -106,7 +106,7 @@ La réponse inclura un jeton d’accès et des informations sur l’expiration.
 }
 ```
 
-Vous pouvez désormais utiliser la valeur du *champ access_token* dans une demande à l’API Defender for Endpoint.
+Vous pouvez désormais utiliser la valeur dans le *champ access_token* dans une demande à l’API Defender for Endpoint.
 
 ## <a name="request"></a>Demande
 
@@ -118,7 +118,7 @@ Méthode|URI de demande
 ---|---
 GET|Utilisez l’URI applicable pour votre région. <p> **Pour l’UE**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` <p> **Pour les États-Unis**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <p> **Pour le Royaume-Uni**: `https://wdatp-alertexporter-uk.windows.com/api/alerts`
 
-### <a name="request-header"></a>En-tête de requête
+### <a name="request-header"></a>En-tête de demande
 
 En-tête|Type|Description|
 ---|---|---
@@ -349,7 +349,7 @@ Code d’erreur HTTP|Description
 403|Exception non autorisée : l’un des domaines n’est pas géré par l’administrateur client ou l’état du client est supprimé.
 500|Erreur dans le service.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)

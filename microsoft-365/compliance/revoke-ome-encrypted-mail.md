@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 06/11/2020
 ms.collection:
 - Strat_O365_IP
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: En tant qu’administrateur et expéditeur de message, vous pouvez révoquer certains messages électroniques chiffrés avec Chiffrement avancé de messages Office 365.
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 86231857b01cc4f505f19063fe59cd58b75e263b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202301"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201816"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Révoquer le courrier électronique chiffré par le chiffrement de messages avancé
 
-La révocation des messages électroniques est proposée dans le cadre Chiffrement avancé de messages Office 365. Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs pour le personnel à but non lucratif), Office 365 Entreprise E5 (tarifs pour le personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas de Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module Microsoft 365 E5 Conformité SKU pour Microsoft 365 E3, Microsoft 365 E3 (tarifs pour le personnel à but non lucratif) ou le module Conformité avancée Office 365 SKU pour les SKU Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 SKU.
+La révocation des messages électroniques est proposée dans le cadre Chiffrement avancé de messages Office 365. Chiffrement avancé de messages Office 365 est inclus dans [Microsoft 365 Entreprise E5,](https://www.microsoft.com/microsoft-365/enterprise/home)Office 365 E5, Microsoft 365 E5 (tarifs pour le personnel à but non lucratif), Office 365 Entreprise E5 (tarifs pour le personnel à but non lucratif) et Office 365 Éducation A5. Si votre organisation dispose d’un abonnement qui n’inclut pas Chiffrement avancé de messages Office 365, vous pouvez l’acheter avec le module Microsoft 365 E5 Conformité SKU Microsoft 365 E3, Microsoft 365 E3 ( Les tarifs du personnel pour les associations) ou le module Conformité avancée Office 365 référence SKU pour Microsoft 365 E3, Microsoft 365 E3 (prix du personnel à but non lucratif) ou Office 365 références SKU.
 
 Cet article fait partie d’une série plus importante d’articles [sur chiffrement de messages Office 365](ome.md).
 
@@ -59,7 +59,7 @@ Pour révoquer un message chiffré que vous avez envoyé, complétez ces étapes
 
    Si le message est révocable, vous verrez le lien « Supprimer l’accès externe » en haut du message.
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran montrant les messages chiffrés que vous souhaitez révoquer dans Outlook sur le web.":::
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Capture d’écran montrant le courrier chiffré que vous souhaitez révoquer dans Outlook sur le web.":::
 
 2. Cliquez **sur Supprimer l’accès** externe pour révoquer le message.
 
@@ -73,11 +73,11 @@ Microsoft 365 administrateurs suivent les étapes générales suivantes pour ré
 
 - Obtenez l’ID de message de l’e-mail.
 - Vérifiez que vous pouvez révoquer le message.
-- Révoquer le courrier.
+- Révoquer le message.
 
 ### <a name="step-1-obtain-the-message-id-of-the-email"></a>Étape 1. Obtenir l’ID de message de l’e-mail
 
-Avant de révoquer un message chiffré, collectez l’ID de message du message. Le MessageId est généralement au format :
+Avant de pouvoir révoquer un courrier chiffré, collectez l’ID de message du message. Le MessageId est généralement au format :
 
 `<xxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.xxxx.prod.outlook.com>`  
 
@@ -155,6 +155,6 @@ Pour révoquer un e-mail à l’Windows PowerShell, utilisez la cmdlet Set-OMEMe
 
 - [Chiffrement de messages avancé Office 365](ome-advanced-message-encryption.md)
 
-- [Chiffrement avancé de messages Office 365 - expiration du courrier électronique](ome-advanced-expiration.md)
+- [Chiffrement avancé de messages Office 365 : expiration du courrier électronique](ome-advanced-expiration.md)
 
 - [Description du service de conformité et de stratégie de message](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

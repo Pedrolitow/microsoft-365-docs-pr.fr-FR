@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,19 +20,19 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explique comment utiliser PowerShell pour supprimer des licences Microsoft 365 précédemment attribuées à des utilisateurs.
-ms.openlocfilehash: e798eaaf18c39a026c5a2d5f5861689e5ddd3953
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4aa40b4405dda07eea34151bd2fddcde0030e8b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205355"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214140"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Supprimer Microsoft 365 licences d’utilisateur des comptes d’utilisateurs avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 >[!Note]
->[Découvrez comment supprimer des licences de comptes d’utilisateurs](../admin/manage/remove-licenses-from-users.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>[Découvrez comment supprimer des licences de comptes d’utilisateurs](../admin/manage/remove-licenses-from-users.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](/admin)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
@@ -57,7 +57,7 @@ $License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property Sku
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
-Pour supprimer toutes les licences d’un compte d’utilisateur spécifique, spécifiez le nom de la signature de l’utilisateur, supprimez les caractères « < » et « > » et exécutez ces commandes.
+Pour supprimer toutes les licences d’un compte d’utilisateur spécifique, spécifiez le nom de la signature de l’utilisateur, supprimez les caractères « < » et « > », puis exécutez ces commandes.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"

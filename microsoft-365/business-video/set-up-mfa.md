@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer l’authentification multifacteur, parfois appelée authentification à deux facteurs, sur votre téléphone.
-ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c70c353cb352eb3cb9130a1cea9ec5a4d181ea4f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203453"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202092"
 ---
 # <a name="set-up-multifactor-authentication-on-your-phone"></a>Configurer l’authentification multifacteur sur votre téléphone
 
@@ -51,4 +51,4 @@ L’authentification multifacteur offre une sécurité renforcée pour votre ent
 1. Une fois que le compte a été ajouté, sélectionnez **Got It**.
 1. Sur votre ordinateur, choisissez **Suivant,** puis choisissez **à nouveau Suivant.**
 1. Notez le code qui apparaît sur votre appareil mobile, entrez le code sur votre ordinateur dans la zone sous Étape **2,** puis choisissez **Vérifier**.
-1. Dans les zones de **l’étape 3,** entrez un numéro de téléphone de sauvegarde, tel que votre numéro de bureau, choisissez **Suivant,** puis choisissez **Terminé.**
+1. Dans les zones sous **Étape 3,** entrez un numéro de téléphone de sauvegarde, tel que votre numéro de bureau, choisissez **Suivant,** puis choisissez **Terminé.**

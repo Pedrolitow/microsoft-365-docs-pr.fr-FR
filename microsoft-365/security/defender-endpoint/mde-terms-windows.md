@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 9dd5eea4a0a05a063cd5eb130af956dee33921be
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 2751da63a023793c8935ae8fb673b6eb97378e1c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088386"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194080"
 ---
 # <a name="microsoft-defender-preview-application-license-terms"></a>Termes du contrat de licence de l’application Microsoft Defender Preview
 
@@ -45,7 +45,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     d) **Contrat de services Microsoft.** Certaines fonctionnalités du logiciel permettent d’accéder aux services en ligne ou de s’en appuyer. L’utilisation de ces services (mais pas du logiciel) est régie par les termes distincts et les politiques de confidentialité dans le contrat [de services Microsoft](https://go.microsoft.com/fwlink/?linkid=398923). Lisez-les attentivement. Les services peuvent ne pas être disponibles dans toutes les régions.
 
-    e) **Critères concurrentiels.** Si vous êtes un concurrent direct et que vous accédez ou utilisez le logiciel à des fins de test d’évaluation, d’analyse ou de collecte d’informations concurrentiels, vous vous soustez à Microsoft, à ses filiales et à ses sociétés affiliés (y compris de manière prospective) toute restriction d’utilisation, d’accès et de test d’évaluation concurrente dans les conditions régissant votre logiciel dans la mesure où vos conditions d’utilisation sont les suivants :  ou être, plus restrictif que les termes de Microsoft. Si vous n’écartez pas ces restrictions dans les conditions régissant votre logiciel, vous n’êtes pas autorisé à accéder à ce logiciel ou à l’utiliser, et vous ne le faites pas.
+    e) **Critères concurrentiels.** Si vous êtes un concurrent direct et que vous accédez ou utilisez le logiciel à des fins de test d’évaluation, d’analyse ou de collecte d’informations concurrentiels, vous vous soustez à Microsoft, à ses filiales et à ses sociétés affiliés (y compris de manière prospective) toute restriction d’utilisation, d’accès et de test d’évaluation concurrente dans les conditions régissant votre logiciel dans la mesure où vos conditions d’utilisation sont les suivants :  ou être, plus restrictif que les termes de Microsoft. Si vous n’écartez pas ces restrictions dans les conditions régissant votre logiciel, vous n’êtes pas autorisé à accéder à ce logiciel ou à l’utiliser et vous ne le faites pas.
 
 1. **PRÉ-VERSION DU LOGICIEL.** Si vous téléchargez une version pré-version ou bêta du logiciel, il se peut qu’il ne fonctionne pas correctement. Il peut être différent de la version commerciale.
 
@@ -61,7 +61,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     a) contourner les limitations techniques dans le logiciel qui vous permettent uniquement de l’utiliser de certaines manières ;
 
-    b) un ingénieur inverse, décompiler ou désassembler le logiciel, ou essayer de dériver le code source du logiciel, sauf dans la mesure requise par les termes de licence tiers régissant l’utilisation de certains composants open source qui peuvent être inclus dans le logiciel ;
+    b) l’ingénieur inverse, décompiler ou désassembler le logiciel, ou essayer de dériver le code source du logiciel, sauf dans la mesure requise par les termes de licence tiers régissant l’utilisation de certains composants open source qui peuvent être inclus dans le logiciel ;
 
     c) supprimer, réduire, bloquer ou modifier les notifications de Microsoft ou de ses fournisseurs dans le logiciel ;
 
@@ -69,7 +69,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     e) utiliser le logiciel d’une manière qui ne va pas à l’encontre de la loi ou pour créer ou propager des programmes malveillants ; ou
 
-    f) partager, publier, distribuer ou mettre en bail le logiciel, fournir le logiciel en tant qu’offre autonome pour que d’autres personnes l’utilisent ou transférer le logiciel ou le contrat à un tiers.
+    f) partager, publier, distribuer ou mettre en bail le logiciel, fournir le logiciel en tant qu’offre autonome pour que d’autres personnes l’utilisent, ou transférer le logiciel ou le contrat à un tiers.
 
 1. **ABONNEMENT COMMERCIAL MICROSOFT 365.**  L’utilisation du logiciel nécessite un Microsoft 365 commercial. Votre accès aux services fournis par le biais du logiciel doit être conforme aux conditions d’Microsoft 365 existantes qui s’appliquent à vous via votre abonnement ou l’abonnement de votre organisation. Vous risquez de perdre l’accès à ces services : i) si l’abonnement Microsoft 365 votre organisation expire ; ou ii) votre organisation décide de mettre fin à votre licence pour accéder aux services.
 
@@ -83,7 +83,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 1. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-1. **ARBITRAGE DE LIAISON ET RENONCIATION AUX ACTIONS DE CLASSE.** Cette section s’applique si vous habitez aux États-Unis (ou, si vous êtes une entreprise, votre lieu principal d’activité).  If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si vous et Microsoft ne le pouvez pas, vous et Microsoft acceptez de lier l’arbitrage individuel devant l’Association d’arbitrage américaine en vertu de la Loi d’arbitrage fédérale (FEDERAL Arbitration Act) et de ne pas poursuivre le tribunal devant un juge ou un jury. Instead, a neutral arbitrator will decide. Class action lawsuits, class-wide arbitrations, private attorney-general actions, and any other proceeding where someone acts in a representative capacity are not allowed; nor is combining individual proceedings without the consent of all parties. The complete Arbitration Agreement contains more terms and is at [https://aka.ms/arb-agreement-4](https://aka.ms/arb-agreement-4) . You and Microsoft agree to these terms.
+1. **ARBITRAGE DE LIAISON ET RENONCIATION AUX ACTIONS DE CLASSE.** Cette section s’applique si vous habitez aux États-Unis (ou, si vous êtes une entreprise, votre lieu principal d’activité).  If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si vous et Microsoft ne le pouvez pas, vous et Microsoft acceptez de lier l’arbitrage individuel devant l’Association d’arbitrage américaine en vertu de la federal Arbitration Act (« FAA ») et de ne pas intenter une action en justice devant un juge ou un jury. Instead, a neutral arbitrator will decide. Class action lawsuits, class-wide arbitrations, private attorney-general actions, and any other proceeding where someone acts in a representative capacity are not allowed; nor is combining individual proceedings without the consent of all parties. The complete Arbitration Agreement contains more terms and is at [https://aka.ms/arb-agreement-4](https://aka.ms/arb-agreement-4) . You and Microsoft agree to these terms.
 
 1. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 
@@ -105,7 +105,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
         Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence.
 1. **EXCLUSION DE GARANTIE.** LE LOGICIEL EST SOUS LICENCE « TEL QU’IL EST ». VOUS ASSUMEZ TOUS LES RISQUES LIÉS À SON UTILISATION. POUR LES UTILISATEURS APPLE, SI VOUS LE SOUHAITEZ, VOUS POUVEZ INFORMER APPLE D’UN REMBOURSEMENT DU PRIX D’ACHAT. DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE, APPLE N’AURA AUCUNE AUTRE OBLIGATION DE GARANTIE. MICROSOFT N’ACCORDE AUCUNE GARANTIE, GARANTIE OU CONDITION EXPRESS. YOU MAY HAVE ADDITIONAL CONSUMER RIGHTS OR STATUTORY GUARANTEES UNDER YOUR LOCAL LAWS THAT THIS AGREEMENT CANNOT CHANGE. TO THE EXTENT PERMITTED UNDER YOUR LOCAL LAWS, MICROSOFT EXCLUDES ALL IMPLIED WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
 
-1. LIMITATION ET EXCLUSION DE RECOURS ET DE DOMMAGES. SI VOUS AVEZ UNE BASE DE RÉCUPÉRATION DES DOMMAGES-INTÉRÊTS MALGRÉ LA CLAUSE D’EXCLUSION DE GARANTIE PRÉCÉDENTE, VOUS POUVEZ RÉCUPÉRER AUPRÈS DE MICROSOFT ET DE SES FOURNISSEURS UNIQUEMENT DES DOMMAGES DIRECTS JUSQU’À 5,00 DOLLARS AMÉRICAINS, SAUF SI VOUS ÊTES UN UTILISATEUR APPLE, AUQUEL CAS , VOUS POUVEZ RÉCUPÉRER AUPRÈS D’APPLE, DE MICROSOFT ET DES FOURNISSEURS DE MICROSOFT UNIQUEMENT DES DOMMAGES DIRECTS JUSQU’AU MONTANT QUE VOUS AVEZ PAYÉ POUR LE LOGICIEL. VOUS NE POUVEZ PAS RÉCUPÉRER D’AUTRES DOMMAGES, Y COMPRIS LES DOMMAGES INDIRECTS, SPÉCIAUX, INDIRECTS OU INCIDENTS.
+1. LIMITATION ET EXCLUSION DE RECOURS ET DE DOMMAGES. SI VOUS AVEZ UNE BASE POUR LA RÉCUPÉRATION DES DOMMAGES MALGRÉ LA CLAUSE D’EXCLUSION PRÉCÉDENTE DE GARANTIE, VOUS POUVEZ RÉCUPÉRER AUPRÈS DE MICROSOFT ET DE SES FOURNISSEURS UNIQUEMENT DES DOMMAGES DIRECTS JUSQU’À 5,00 DOLLARS AMÉRICAINS, SAUF SI VOUS ÊTES UN UTILISATEUR APPLE, AUQUEL CAS , VOUS POUVEZ RÉCUPÉRER AUPRÈS D’APPLE, DE MICROSOFT ET DES FOURNISSEURS DE MICROSOFT UNIQUEMENT DES DOMMAGES DIRECTS JUSQU’AU MONTANT QUE VOUS AVEZ PAYÉ POUR LE LOGICIEL. VOUS NE POUVEZ PAS RÉCUPÉRER D’AUTRES DOMMAGES, Y COMPRIS LES DOMMAGES INDIRECTS, SPÉCIAUX, INDIRECTS OU INCIDENTS.
 
 Cette limitation s’applique à (a) tout ce qui concerne le logiciel, les services, le contenu (y compris le code) sur des sites Internet tiers ou des applications tierces ; et (b) réclamations pour violation de contrat, de garantie, de garantie ou de condition ; responsabilité stricte, négligence ou autre délit ; ou toute autre revendication ; dans chaque cas, dans la mesure autorisée par la loi applicable. Elle s’applique également même si Microsoft ou Apple (pour Apple) connaît ou aurait dû connaître la possibilité de dommages. The above limitation or exclusion may not apply to you because your state, province, or country may not allow the exclusion or limitation of incidental, consequential, or other damages.
 

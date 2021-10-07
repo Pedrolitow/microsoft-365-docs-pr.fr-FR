@@ -1,7 +1,7 @@
 ---
 title: Essayer Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 description: Essayez les fonctionnalités de réponse aux incidents Microsoft 365 Defender pour hiérarchiser et gérer les incidents, automatiser les enquêtes et utiliser le repérage avancé dans la détection des menaces.
-keywords: Microsoft 365 Defender essai, essayez Microsoft 365 Defender, évaluez Microsoft 365 Defender, laboratoire d’évaluation Microsoft 365 Defender, pilote Microsoft 365 Defender, cybersécurité, menace avancée persistante, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
+keywords: Microsoft 365 Defender d’évaluation, essayer Microsoft 365 Defender, évaluer Microsoft 365 Defender, Microsoft 365 Defender laboratoire d’évaluation, Microsoft 365 Defender pilote, cyber sécurité, menace persistante avancée, sécurité d’entreprise, appareils, appareil, identité, utilisateurs, données, applications, incidents, examen et correction automatisés, recherche avancée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 57106e33f244ad1e549fcfd7f361c82863f9e3a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a075b653e3eeae9287f4fdbf83ed9e5e2133df99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202925"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208456"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Essayer Microsoft 365 Defender fonctionnalités de réponse aux incidents dans un environnement pilote
 
@@ -56,7 +56,7 @@ La section **Incidents et alertes** les plus récents présente un graphique du 
 
 Pour examiner la liste des incidents et hiérarchiser leur importance pour l’affectation et l’examen, vous pouvez : 
 
-- Configurez des colonnes personnalisables **(sélectionnez** Sélectionner des colonnes) pour vous donner une visibilité sur les différentes caractéristiques de l’incident ou des entités impactées. Cela vous permet de prendre une décision éclairée concernant la hiérquage des incidents à analyser.
+- Configurez des colonnes personnalisables (sélectionnez Sélectionner des colonnes) pour vous donner une visibilité sur les différentes caractéristiques de l’incident ou des entités impactées. Cela vous permet de prendre une décision éclairée concernant la hiérquage des incidents à analyser.
 
 - Utilisez le filtrage pour vous concentrer sur un scénario ou une menace spécifique. L’application de filtres à la file d’attente des incidents peut aider à déterminer les incidents qui nécessitent une attention immédiate. 
 
@@ -107,11 +107,11 @@ Pour plus d’informations, [voir Gérer les incidents.](manage-incidents.md)
 
 ## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>Examiner l’examen et la réponse automatisés avec le centre de gestion de l’action
 
-Selon la façon dont les fonctionnalités d’examen et de réponse automatisées sont configurées pour votre organisation, des mesures correctives sont prises automatiquement ou uniquement après approbation par votre équipe des opérations de sécurité. Toutes les actions, qu’elles soient en [](m365d-action-center.md)attente ou terminées, sont répertoriées dans le centre de mise en œuvre, qui répertorie les actions de correction en attente et terminées pour vos appareils, le contenu de collaboration des & de messagerie électronique et les identités dans un seul emplacement.
+Selon la façon dont les fonctionnalités d’examen et de réponse automatisées sont configurées pour votre organisation, des mesures correctives sont prises automatiquement ou uniquement après approbation par votre équipe des opérations de sécurité. Toutes les actions, qu’elles soient en attente ou terminées, sont répertoriées dans le centre de [actions,](m365d-action-center.md)qui répertorie les actions de correction en attente et terminées pour vos appareils, le contenu de collaboration des & de messagerie électronique et les identités dans un seul emplacement.
 
 Voici un exemple.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender.":::
 
 Dans le centre de l’action, vous pouvez sélectionner les actions en attente, puis les approuver ou les rejeter dans le volet volant. Voici un exemple.
 
@@ -184,7 +184,7 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
    1. Sélectionnez **Exécuter la requête**. Vous pouvez obtenir des résultats différents en fonction de votre environnement pilote.
 
       > [!NOTE]
-      > Consultez l’étape suivante pour les options de filtrage pour limiter le retour de données.
+      > Consultez l’étape suivante pour les options de filtrage afin de limiter le retour de données.
 
       ![Exemple de résultats de requête de recherche avancée.](../../media/mtp/fig19.png)
 
@@ -204,7 +204,7 @@ Une seule boîte aux lettres et périphérique interne est requis pour cette sim
 
 4. Maintenant que vous avez vérifié que vous pouvez voir le message électronique, ajoutez un filtre pour les pièces jointes. Concentrez-vous sur tous les e-mails avec pièces jointes dans l’environnement. Pour cette simulation, concentrez-vous sur les e-mails entrants, et non sur ceux envoyés à partir de votre environnement. Supprimez les filtres que vous avez ajoutés pour localiser votre message et ajoutez « | où **AttachmentCount > 0** et **EmailDirection**  ==  **« Entrant »**
 
-   La requête suivante affiche le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
+   La requête suivante vous montre le résultat avec une liste plus courte que votre requête initiale pour tous les événements de courrier électronique :
 
    ```console
    EmailEvents
@@ -320,4 +320,4 @@ Consultez [Obtenir une formation spécialisée sur la recherche avancée](advanc
 
 ### <a name="navigation-you-may-need"></a>Navigation dont vous aurez peut-être besoin
 
-[Créer l’environnement d Microsoft 365 Defender évaluation de l’environnement](eval-create-eval-environment.md)
+[Créer l’Microsoft 365 Defender d’évaluation de la sécurité](eval-create-eval-environment.md)

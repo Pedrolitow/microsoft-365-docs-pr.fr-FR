@@ -10,19 +10,19 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier les différents types de mise en attente qui peuvent être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: 1b7c8d2db782ca811e02783115b621ccba772066
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8696ab52fdb0826dddd9f1a186f56f853b6fae3d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181283"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201852"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -32,7 +32,7 @@ Microsoft 365 offre plusieurs façons pour votre organisation d’empêcher la s
 
 - **[Attente pour litige](create-a-litigation-hold.md):** Les conserves qui sont appliquées aux boîtes aux lettres des utilisateurs Exchange Online.
 
-- **[EDiscovery hold](create-ediscovery-holds.md):** Les dossiers qui sont associés à un cas eDiscovery principal dans le centre de sécurité et conformité. Les données de découverte électronique peuvent être appliquées aux boîtes aux lettres des utilisateurs et à la boîte aux lettres correspondante pour Microsoft 365 groupes et Microsoft Teams.
+- **[EDiscovery hold](create-ediscovery-holds.md):** Les dossiers qui sont associés à un cas eDiscovery principal dans le centre de sécurité et conformité. Les stratégies de découverte électronique peuvent être appliquées aux boîtes aux lettres des utilisateurs et à la boîte aux lettres correspondante pour Microsoft 365 groupes et Microsoft Teams.
 
 - **[In-Place Hold](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Les données qui sont appliquées aux boîtes aux lettres utilisateur à l’aide de l’outil In-Place eDiscovery & Hold dans le Centre d’administration Exchange dans Exchange Online. 
 
@@ -77,7 +77,7 @@ Le tableau suivant décrit comment identifier différents types de boîtes aux l
 | Type de conservation                                                          | Exemple de valeur                                                                                  | Comment identifier le hold                                                                                                                                                                                                                                                                                                                     |
 | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Conservation pour litige                                                    | `True`                                                                                         | La mise en attente pour litige est activée pour une boîte aux lettres lorsque la *propriété LitigationHoldEnabled* est définie sur `True` .                                                                                                                                                                                                                                         |
-| Hold eDiscovery                                                    | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`                                                     | La *propriété InPlaceHolds* contient le GUID de toute mise en attente associée à un cas eDiscovery dans le centre de sécurité et conformité. Vous pouvez indiquer qu’il s’agit d’une attente eDiscovery, car le GUID commence par le `UniH` préfixe (qui désigne une attente unifiée).                                                                                   |
+| Hold eDiscovery                                                    | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`                                                     | La *propriété InPlaceHolds* contient le GUID de toute mise en attente associée à un cas eDiscovery dans le centre de sécurité et conformité. Vous pouvez savoir qu’il s’agit d’une attente eDiscovery, car le GUID commence par le `UniH` préfixe (qui désigne une attente unifiée).                                                                                   |
 | Blocage local                                                      | `c0ba3ce811b6432a8751430937152491` <br/> ou <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`        | La *propriété InPlaceHolds* contient le GUID de la In-Place qui est placée sur la boîte aux lettres. Vous pouvez savoir qu’il s’agit d’une In-Place car le GUID ne commence pas par un préfixe ou par `cld` le préfixe.                                                                                                               |
 | Microsoft 365 rétention spécifiquement appliquée à la boîte aux lettres | `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> ou <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3` | La propriété InPlaceHolds contient les GUID de toute stratégie de rétention d’emplacement spécifique appliquée à la boîte aux lettres. Vous pouvez identifier les stratégies de rétention, car le GUID commence par `mbx` le `skp` préfixe ou le préfixe. Le préfixe indique que la stratégie de rétention est appliquée Skype Entreprise conversations dans la boîte aux lettres `skp` de l’utilisateur. |
 | Exclu d’une stratégie de rétention Microsoft 365 l’échelle de l’organisation  | `-mbxe9b52bf7ab3b46a286308ecb29624696`                                                         | Si une boîte aux lettres est exclue d’une stratégie de rétention Microsoft 365 à l’échelle de l’organisation, le GUID de la stratégie de rétention dont la boîte aux lettres est exclue s’affiche dans la propriété InPlaceHolds et est identifié par le `-mbx` préfixe.                                                                                                     |
@@ -119,7 +119,7 @@ Le tableau suivant définit les trois actions de rétention possibles :
 | **2** | Indique que la stratégie de rétention est configurée pour contenir des éléments. La stratégie ne supprime pas les éléments à l’expiration de la période de rétention. |
 | **3** | Indique que la stratégie de rétention est configurée pour conserver les éléments, puis les supprimer après l’expiration de la période de rétention.             |
 
-Pour plus d’informations sur les actions de rétention, consultez la section Conservation du contenu pour une [période spécifique.](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)
+Pour plus d’informations sur les actions de rétention, voir la section Conservation du contenu pour [une période spécifique.](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Étape 2 : Utiliser le GUID pour identifier le hold
 
@@ -153,7 +153,7 @@ Exécutez la commande suivante dans Exchange Online PowerShell pour identifier l
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
 
-Si le GUID de la In-Place d’attente commence par le préfixe, veillez à inclure le préfixe lors de `cld` l’exécution de la commande précédente.
+Si le GUID de la In-Place d’attente commence par le préfixe, veillez à inclure le préfixe lors de l’exécution `cld` de la commande précédente.
 
 > [!IMPORTANT]
 > À mesure que nous continuons d’investir de différentes façons pour conserver le contenu des boîtes aux lettres, nous andélisons le retrait des conservations In-Place dans le Centre d’administration Exchange (EAC). À compter du 1er juillet 2020, vous ne pourrez plus créer de In-Place de Exchange Online. Toutefois, vous pourrez toujours gérer les In-Place dans le EAC ou à l’aide de la cmdlet **Set-MailboxSearch** dans Exchange Online PowerShell. Toutefois, à compter du 1er octobre 2020, vous ne pourrez plus gérer les In-Place' Vous ne les supprimerez que dans le EAC ou à l’aide de la cmdlet **Remove-MailboxSearch.** Pour plus d’informations sur le retrait des In-Place, voir [Retrait des outils eDiscovery hérités.](legacy-ediscovery-retirement.md)
@@ -253,7 +253,7 @@ Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds
 
 ### <a name="get-the-mailbox-diagnostics-for-holdtracking"></a>Obtenir les diagnostics de boîte aux lettres pour HoldTracking
 
-Les journaux de diagnostics de boîte aux lettres de suivi de la boîte aux lettres de suivi de la boîte aux lettres
+Les journaux de diagnostics de boîte aux lettres de suivi de la boîte aux lettres en attente conservent un historique des attentes appliquées à une boîte aux lettres d’utilisateur.
 
 ```powershell
 $ht = Export-MailboxDiagnosticLogs <username> -ComponentName HoldTracking
@@ -262,7 +262,7 @@ $ht.MailboxLog | Convertfrom-Json
 
 ### <a name="review-the-results-of-the-mailbox-diagnostics-logs"></a>Passer en revue les résultats des journaux de diagnostic de boîte aux lettres
 
-Si vous collectez des données de l’étape précédente, les données qui en résultent peuvent ressembler à ceci :
+Si vous collectez des données de l’étape précédente, les données résultantes peuvent ressembler à ceci :
 
 > **ed** `  : 0001-01-01T00:00:00.0000000` 
 >   ` : mbx7cfb30345d454ac0a989ab3041051209:1` hid 

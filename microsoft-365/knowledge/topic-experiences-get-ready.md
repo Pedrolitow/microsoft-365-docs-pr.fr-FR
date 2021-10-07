@@ -9,13 +9,13 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
-ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: a2e6ffc768f52d3738b9389d460ddba2a156152e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207531"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214068"
 ---
 # <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Préparer votre environnement à la Sujets Microsoft Viva
 
@@ -29,7 +29,7 @@ Pour planifier des rubriques De Rubriques, vous devez :
     - L’indexation de rubrique inclut uniquement le contenu SharePoint sites web.
       - Dans la mesure du possible, migrez du contenu précieux vers SharePoint Online à partir de sources externes.
       - Hiérarchisez les sources de contenu avec un haut potentiel de connaissances en matière de savoir-faire.
-      - Mettez en évidence les avantages de Rubriques Desy pour encourager les utilisateurs à déplacer du contenu de OneDrive vers SharePoint sites.
+      - Mettez en évidence les avantages de Rubriques Deserr afin d’encourager les utilisateurs à déplacer du contenu de OneDrive vers SharePoint sites.
 
 2. [Connecter à Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - À l’avenir, le contenu externe peut être introduit dans le graphique de connaissances et devenir disponible.
@@ -67,14 +67,14 @@ Ez le meilleur de votre migration :
 
 - Migrez vers un site moderne, qui inclut Microsoft Teams. Bien que l’indexation puisse avoir lieu sur n’importe quel site SharePoint (classique ou moderne), l’affichage des rubriques aux utilisateurs via des mises en évidence et des cartes ne se produit que sur les pages modernes.
 - Conservez les noms d’utilisateurs : la plupart des outils de migration vous permettent de ma cartographier les identités des utilisateurs au cours de la migration, afin que les propriétés telles que Created By ou Modified By soient conservées après la migration. Ceci est important pour les rubriques, car la authorship de fichiers est utilisée pour identifier les experts qui sont ajoutés à une page de rubrique ou à une carte. 
-- Rendre les noms de compte de service descriptifs : dans certains cas, la maintenance des noms d’utilisateurs est impossible. Par exemple, si vous migrez du contenu créé par une personne qui n’est plus un employé de l’organisation. Dans ce cas, la plupart des outils de migration déplaceront un fichier comme s’il avait été créé par un compte administrateur ou un compte de service. Si cela se produit fréquemment, ce compte de service peut alors être répertorié par rapport à des rubriques en tant qu’expert. C’est là que l’attribution de noms à ce compte devient très importante. Si vous le faites descriptif, la présence de ces comptes non humains sera compréhensible par vos utilisateurs qui utilisent des rubriques.
+- Rendre les noms des comptes de service descriptifs : dans certains cas, la maintenance des noms d’utilisateurs est impossible. Par exemple, si vous migrez du contenu créé par une personne qui n’est plus un employé de l’organisation. Dans ce cas, la plupart des outils de migration déplaceront un fichier comme s’il avait été créé par un compte administrateur ou un compte de service. Si cela se produit fréquemment, ce compte de service peut alors être répertorié par rapport à des rubriques en tant qu’expert. C’est là que l’attribution de noms à ce compte devient très importante. Si vous le faites descriptif, la présence de ces comptes non humains sera compréhensible par vos utilisateurs qui utilisent des rubriques.
 
 ## <a name="2-connect-information-to-microsoft-graph"></a>2. Fournir Connecter informations à Microsoft Graph
 
 Si vous ne pouvez pas migrer du contenu, connectez-le au microsoft Graph :
 
 - Envisagez [d’implémenter Graph connecteurs de contenu.](/microsoftsearch/connectors-overview) À l’aide de connecteurs, le contenu externe peut être indexé dans le Graph Microsoft, où les utilisateurs peuvent ensuite le découvrir par le biais Recherche Microsoft.
-- Les développements futurs apporteront des données externes dans Rubriques Topics.
+- Les développements futurs apporteront des données externes dans Rubriques.
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. Moderniser SharePoint pages
 
@@ -84,7 +84,7 @@ Si vous avez beaucoup de sites classiques, donnez la priorité aux pages de haut
 
 ## <a name="4-secure-content-appropriately"></a>4. Sécuriser le contenu de manière appropriée
 
-Lorsque les utilisateurs interagissent avec une carte de sujet ou une page de rubrique, ils peuvent voir différentes ressources. Cela est dû au fait qu’ils ont accès à différents fichiers associés à la rubrique. Si vos autorisations sous-jacentes sont trop strictes, les aspects serendipitous de la découverte d’informations par le biais de rubriques pourraient être diminués. En revanche, s’ils sont trop larges, un sujet peut faire surface à un utilisateur que vous ne souhaitez pas voir.
+Lorsque les utilisateurs interagissent avec une carte de sujet ou une page de rubrique, ils peuvent voir différentes ressources. Cela est dû au fait qu’ils ont accès à différents fichiers associés à la rubrique. Si vos autorisations sous-jacentes sont trop strictes, les aspects serendipitous de la découverte d’informations par le biais de rubriques pourraient être diminués. En revanche, s’ils sont trop larges, une rubrique peut faire surface à un utilisateur dont vous ne souhaitez pas qu’il voie le contenu.
 Une bonne gestion des autorisations est essentielle ici. Et une bonne gestion des autorisations est basée sur un partenariat continu entre les administrateurs et les propriétaires de contenu. Bien qu’il puisse s’agit d’une activité continue, vous pouvez suivre certaines étapes pratiques lors de la préparation des rubriques :
 
 - Encouragez les propriétaires de sites à examiner le partage et les autorisations.
@@ -130,12 +130,12 @@ Selon votre organisation, vous pouvez avoir peu ou plusieurs personnes qui jouen
 
 Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte de leur travail, par exemple quand ils parcourent des pages modernes dans SharePoint. Vous contrôlez l’expérience utilisateur final pour les rubriques.
 
-- Qui pouvez-vous voir Rubriques ? La visibilité des rubriques est configurée dans le centre Administration Microsoft 365 données. Choisissez les groupes à autoriser à consulter les rubriques :
+- Qui pouvez-vous voir Rubriques ? La visibilité des rubriques est configurée dans le centre Administration Microsoft 365 de données. Choisissez les groupes à autoriser à consulter les rubriques :
   - Tous les membres de mon organisation. « Tout le monde » n’inclut pas les invités, il s’agit de tous les utilisateurs internes dans votre annuaire
   - Uniquement les personnes sélectionnées ou les groupes de sécurité (cette option est intéressante lorsque vous continuez à déployer Rubriques Topics, afin que vous pouvez tester avec un sous-ensemble d’utilisateurs). Si vous souhaitez que les invités visualisent les rubriques, vous devez utiliser l’option « Personnes ou groupes de sécurité sélectionnés » et leur octroyer une licence.
   - Personne.
 
-    Pour afficher l’expérience de sujet, une licence doit être appliquée à tous les utilisateurs, même les utilisateurs invités. N’oubliez pas que les autorisations contrôlent toujours ce qui peut être vu.
+    Pour afficher l’expérience de sujet, une licence doit être appliquée à tous les utilisateurs, même les utilisateurs invités. N’oubliez pas que les autorisations contrôlent toujours ce qui est visible.
 
 - Quels Rubriques sont visibles ? Vous pouvez :
   - Afficher tous les rubriques candidates.
@@ -143,5 +143,5 @@ Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte
 
 Maintenant que nous avons les responsables, les experts et les utilisateurs, nous pouvons parler des sujets eux-mêmes.
 
-- Il est pratique d’amorçage des rubriques dans votre liste de rubriques. La qualité et la quantité des rubriques sont basées sur votre contenu : elles ne seront créées en tant que rubrique que si elles sont incluses dans le contenu inclus dans l’étendue. S’il existe suffisamment d’informations et de preuves pour la rubrique, elle sera créée par l’IA. Les rubriques d’amorçage permettent au Gestionnaire de connaissances et aux experts techniques de vous aider. Combiner les connaissances humaines avec l’IA est la meilleur moyen d’avoir des rubriques de qualité. Par conséquent, s’il existe des rubriques que vous prévoyez de créer manuellement dans le centre de rubriques. Cela donnera à l’IA un signal fort de la pertinence de cette rubrique et identifiera les ressources et les personnes à associer à cette rubrique.
+- Il est bon d’amorçage de rubriques dans votre liste de rubriques. La qualité et la quantité des rubriques sont basées sur votre contenu : elles ne seront créées en tant que rubrique que si elles sont incluses dans le contenu inclus dans l’étendue. S’il existe suffisamment d’informations et de preuves pour la rubrique, elle sera créée par l’IA. Les rubriques d’amorçage permettent au Gestionnaire de connaissances et aux experts techniques de vous aider. Combiner les connaissances humaines avec l’IA est la meilleur moyen d’avoir des rubriques de qualité. Par conséquent, s’il existe des rubriques que vous prévoyez de créer manuellement dans le centre de rubriques. Cela donnera à l’IA un signal fort de la pertinence de cette rubrique et identifiera les ressources et les personnes à associer à cette rubrique.
 - Utilisez les taxonomies existantes pour faciliter la planification de votre rubrique, SharePoint ou ailleurs. Les taxonomies existantes incluent souvent des termes organisationnels, des produits, des sujets, etc. Les sources des rubriques peuvent également être des listes de projets, des signets de recherche existants, etc.

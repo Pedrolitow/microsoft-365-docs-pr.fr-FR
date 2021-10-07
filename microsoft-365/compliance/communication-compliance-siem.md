@@ -1,5 +1,5 @@
 ---
-title: Conformité des communications avec les solutions SIEM
+title: Conformité de la communication avec les solutions SIEM
 description: Découvrez l’intégration de la conformité des communications avec les solutions SIEM.
 f1.keywords:
 - NOCSH
@@ -11,29 +11,29 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 97401e58d5f75707d92325fc768d28d049e69b47
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0e49935ff1d280adf4c1567a2064496a475c6033
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484169"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216945"
 ---
-# <a name="communication-compliance-with-siem-solutions"></a>Conformité des communications avec les solutions SIEM
+# <a name="communication-compliance-with-siem-solutions"></a>Conformité de la communication avec les solutions SIEM
 
 [La conformité des communications](communication-compliance.md) est une solution à risque interne dans Microsoft 365 qui vous permet de minimiser les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les solutions de gestion des événements et des informations de sécurité (SIEM), telles [qu’Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) ou [Splunk,](https://www.splunk.com/) sont couramment utilisées pour agréger et suivre les menaces au sein d’une organisation.
 
-Les organisations ont souvent besoin d’intégrer des alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message choquant à un autre employé et ce message est détecté par un contrôle de stratégie de conformité des communications pour un langage choquant. Ces événements sont suivis dans le journal Microsoft 365 audit unifié par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM de l’organisation à partir d’événements surveillés dans les journaux d’audit unifiés Microsoft 365 associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis examinent et remédient à l’alerte dans la solution de conformité des communications.
+Les organisations ont souvent besoin d’intégrer des alertes de conformité des communications et ces solutions SIEM. Avec cette intégration, les organisations peuvent afficher les alertes de conformité des communications dans leur solution SIEM, puis corriger les alertes dans le flux de travail de conformité des communications et l’expérience utilisateur. Par exemple, un employé envoie un message choquant à un autre employé et ce message est détecté par un contrôle de stratégie de conformité des communications pour un langage choquant. Ces événements sont suivis dans Microsoft 365 audit (également appelé « journal d’audit unifié ») par la solution de conformité des communications et importés dans la solution SIEM. Une alerte est ensuite déclenchée dans la solution SIEM de l’organisation à partir d’événements surveillés dans Microsoft 365 Audit associés aux alertes de conformité des communications. Les enquêteurs sont avertis de l’alerte dans les solutions SIEM, puis examinent et remédient à l’alerte dans la solution de conformité des communications.
 
-## <a name="communication-compliance-alerts-in-the-microsoft-365-unified-audit-logs"></a>Alertes de conformité des communications dans les journaux d’audit Microsoft 365 unifiés
+## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertes de conformité des communications dans Microsoft 365 audit
 
-Toutes les correspondances de stratégie de conformité des communications sont capturées dans les journaux d’audit Microsoft 365 unifiés. Les exemples suivants montrent les détails disponibles pour les activités de correspondance de stratégie de conformité des communications sélectionnées :
+Toutes les correspondances de stratégie de conformité des communications sont capturées dans Microsoft 365 audit. Les exemples suivants montrent les détails disponibles pour les activités de correspondance de stratégie de conformité des communications sélectionnées :
 
 **Exemple d’entrée de journal d’audit pour une correspondance de modèle de stratégie de langage choquant :**
 
@@ -51,7 +51,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**Exemple d’entrée de journal d’audit pour une stratégie avec correspondance de mot clé personnalisée (type d’informations sensibles personnalisé) :**
+**Exemple d’une entrée Microsoft 365 journal d’audit pour une stratégie avec correspondance de mot clé personnalisée (type d’informations sensibles personnalisé) :**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -67,16 +67,16 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
->[!NOTE]
->Actuellement, il peut y avoir un délai de 24 heures entre l’enregistrement d’une correspondance de stratégie dans le journal d’audit unifié Microsoft 365 et le délai pendant lequel vous pouvez examiner les correspondances de stratégie dans la conformité des communications.
+> [!NOTE]
+> Actuellement, il peut y avoir un délai de 24 heures entre l’enregistrement d’une correspondance de stratégie dans Microsoft 365 Audit et l’heure à laquelle vous pouvez examiner les correspondances de stratégie dans la conformité des communications.
 
 ## <a name="configure-communication-compliance-and-azure-sentinel-integration"></a>Configurer la conformité des communications et l’intégration Azure Sentinel
 
-Lorsque vous utilisez Azure Sentinel pour agréger les correspondances de stratégie de conformité des communications, Sentinel utilise le journal d’audit unifié Microsoft 365 comme source de données. Pour intégrer des alertes de conformité des communications à Sentinel, complétez les étapes suivantes :
+Lorsque vous utilisez Azure Sentinel pour agréger les correspondances de stratégie de conformité des communications, Sentinel utilise Microsoft 365 Audit comme source de données. Pour intégrer des alertes de conformité des communications à Sentinel, complétez les étapes suivantes :
 
 1. [Intégration à Azure Sentinel](/azure/sentinel/quickstart-onboard). Dans le cadre du processus d’intégration, vous allez configurer vos sources de données.
-2. Configurez le connecteur de données Azure Sentinel [Microsoft Office 365 et](/azure/sentinel/data-connectors-reference#microsoft-office-365) sous la configuration du *connecteur,* sélectionnez Exchange .
-3. Configurez la requête de recherche pour récupérer les alertes de conformité des communications. Par exemple :
+2. Configurez le connecteur de données Azure Sentinel [Microsoft Office 365 et](/azure/sentinel/data-connectors-reference#microsoft-office-365) sous la configuration du *connecteur, sélectionnez Exchange*.
+3. Configurez la requête de recherche pour récupérer les alertes de conformité des communications. Par exemple :
 
     *| OfficeActivity | où OfficeWorkload == « Exchange » et Operation == « SupervisionRuleMatch » | trier par TimeGenerated*
 
@@ -84,7 +84,7 @@ Lorsque vous utilisez Azure Sentinel pour agréger les correspondances de strat�
 
     *| OfficeActivity | où OfficeWorkload == « Exchange » et Operation == « SupervisionRuleMatch » et UserId == « User1@Contoso.com » | trier par TimeGenerated*
 
-Pour plus d’informations sur les journaux d’audit Office 365 collectés par Azure Sentinel, consultez la référence des journaux [Azure Monitor.](/azure/azure-monitor/reference/tables/OfficeActivity)
+Pour plus d’informations sur les journaux Microsoft 365 audit pour les Office 365 collectés par Azure Sentinel, consultez la référence des journaux [Azure Monitor.](/azure/azure-monitor/reference/tables/OfficeActivity)
 
 ## <a name="configure-communication-compliance-and-splunk-integration"></a>Configurer la conformité des communications et l’intégration de Splunk
 
@@ -111,7 +111,7 @@ Le tableau suivant présente des exemples de résultats de recherche pour diffé
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configurer la conformité des communications avec d’autres solutions SIEM
 
-Pour récupérer les correspondances de stratégie de conformité des communications à partir Microsoft 365 journaux d’audit unifiés, vous pouvez utiliser PowerShell ou l’API de gestion [Office 365.](/office/office-365-management-api/office-365-management-activity-api-reference)
+Pour récupérer les correspondances de stratégie de conformité des communications à partir Microsoft 365 audit, vous pouvez utiliser PowerShell ou [l’API Office 365 gestion des communications.](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 Lorsque vous utilisez PowerShell, vous pouvez utiliser l’un de ces paramètres avec la cmdlet **Search-UnifiedAuditLog** pour filtrer les événements du journal d’audit pour les activités de conformité des communications.
 

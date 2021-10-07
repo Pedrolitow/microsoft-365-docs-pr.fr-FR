@@ -7,19 +7,19 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 6d0599d11dd5892b032bda1285b92fbc8a09354b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8dd5b5f94a8c418cc8d077d785c73c968c40c3bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204281"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202368"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Vers l’identité et au-delà : l’identité d’un architecte
 
@@ -40,7 +40,7 @@ Je vis à New York (la meilleure !) et j’aime vraiment la diversité de sa cul
 ## <a name="guiding-principles"></a>Principes directeurs
 
 - **La simplicité est souvent préférable**: vous pouvez (presque) tout faire avec la technologie, mais cela ne signifie pas que vous devriez le faire. En particulier dans l’espace de sécurité, de nombreux clients surenginent les solutions. [J’aime que cette vidéo](https://www.youtube.com/watch?v=SOQgABDSYZE) de la conférence Stripe de Google souligne ce point.
-- **Personnes, processus, technologie** [: concevez pour les](https://en.wikipedia.org/wiki/Human-centered_design) personnes afin d’améliorer les processus, et non pas d’abord les technologies. Il n’existe aucune solution « parfaite ». Nous devons trouver un équilibre entre différents facteurs de risque et les décisions seront différentes pour chaque entreprise. Trop de clients conçoivent une approche que leurs utilisateurs évitent par la suite.
+- **Personnes, processus, technologie** [: concevez pour que les personnes](https://en.wikipedia.org/wiki/Human-centered_design) améliorent les processus, et non pas au premier plan technique. Il n’existe aucune solution « parfaite ». Nous devons trouver un équilibre entre différents facteurs de risque et les décisions seront différentes pour chaque entreprise. Trop de clients conçoivent une approche que leurs utilisateurs évitent par la suite.
 - **Concentrez-vous sur**« pourquoi » tout d’abord et sur « comment » plus tard : soyez l’ennuyeux enfant de 7 ans avec un million de questions. Nous ne pouvons pas trouver la bonne réponse si nous ne connaissez pas les bonnes questions à poser. De nombreux clients se basent sur des hypothèses sur la façon dont les choses doivent fonctionner au lieu de définir le problème de l’entreprise. Il existe toujours plusieurs chemins d’accès qui peuvent être pris.
 - **Bonnes pratiques :** reconnaître que les meilleures pratiques changent à la vitesse de la lumière. Si vous avez examiné Azure AD il y a plus de trois mois, vous n’êtes probablement plus à jour. Tout ce qui est ici est sujet à modification après la publication. La « meilleure » option d’aujourd’hui peut ne pas être la même dans six mois.
 
@@ -54,19 +54,19 @@ La langue n’est pas un outil précis. Nous utilisons assez souvent le même mo
 
 <br>
 
-Lorsque vous apprenez à se sentir mieux, il est préférable de commencer dans le pool et non au milieu de l’océan. Je n’essaie pas d’être techniquement précis avec ce diagramme. Il s’agit d’un modèle pour aborder certains concepts de base.
+Lorsque vous apprenez à vous sentir mieux, il est préférable de commencer dans le pool et non au milieu de l’océan. Je n’essaie pas d’être techniquement précis avec ce diagramme. Il s’agit d’un modèle pour aborder certains concepts de base.
 
 Dans le schéma :
 
 - Client = une instance d’Azure AD. Il se trouve en « haut » d’une hiérarchie ou au niveau 1 dans le diagramme. Nous pouvons considérer qu’il s’agit de la «[limite](/azure/active-directory/users-groups-roles/licensing-directory-independence)» où tout le reste se produit[(Azure AD B2B](/azure/active-directory/b2b/what-is-b2b) mis à part). Tous les services cloud d’entreprise Microsoft font partie de l’un de ces clients. Les services grand public sont distincts. « Client » apparaît dans la documentation sous la forme Office 365 client Azure, client Azure, client WVD, etc. Je trouve souvent que ces variantes sont source de confusion pour les clients.
-- Les services/abonnements, niveau 2 dans le diagramme, appartiennent à un seul client. La plupart des services SaaS sont en 1:1 et ne peuvent pas se déplacer sans migration. Azure est différent, vous pouvez déplacer [la facturation](/azure/cost-management-billing/manage/billing-subscription-transfer) et/ou un [abonnement](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) vers un autre client. De nombreux clients doivent déplacer des abonnements Azure. Cela a différentes implications. Les objets qui existent en dehors de l’abonnement ne se déplacent pas (par exemple, le contrôle d’accès basé sur un rôle ou les objets Azure RBAC et Azure AD, y compris les groupes, les applications, les stratégies, et ainsi de suite). En outre, certains services (par exemple, Azure Key Vault, Data Bricks, et ainsi de suite). Ne migrez pas les services sans un bon besoin commercial. Certains scripts qui peuvent être utiles pour la migration sont [partagés sur GitHub](https://github.com/lwajswaj/azure-tenant-migration).
+- Les services/abonnements, niveau 2 dans le diagramme, appartiennent à un seul client. La plupart des services SaaS sont en 1:1 et ne peuvent pas se déplacer sans migration. Azure est différent, vous pouvez déplacer [la facturation](/azure/cost-management-billing/manage/billing-subscription-transfer) et/ou un [abonnement](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) vers un autre client. De nombreux clients doivent déplacer des abonnements Azure. Cela a différentes implications. Les objets qui existent en dehors de l’abonnement ne se déplacent pas (par exemple, le contrôle d’accès basé sur un rôle ou les objets Azure RBAC et Azure AD, y compris les groupes, les applications, les stratégies, et ainsi de suite). En outre, certains services (tels que Azure Key Vault, Data Bricks, et ainsi de suite). Ne migrez pas les services sans un bon besoin commercial. Certains scripts qui peuvent être utiles pour la migration sont [partagés sur GitHub](https://github.com/lwajswaj/azure-tenant-migration).
 - Un service donné a généralement une sorte de limite de « sous-niveau » ou de niveau 3 (L3). Cela est utile pour comprendre la répartition de la sécurité, des stratégies, de la gouvernance, etc. Malheureusement, il n’existe aucun nom uniforme que je connaisse. Voici quelques exemples de noms pour L3 : Azure Subscription = [ressource](/azure/azure-resource-manager/management/manage-resources-portal); Dynamics 365 CE = [instance](/dynamics365/admin/new-instance-management); Power BI = [espace de travail](/power-bi/service-create-the-new-workspaces); Power Apps = [environnement](/power-platform/admin/environments-overview); et ainsi de suite.
 - Le niveau 4 est l’endroit où se trouve les données réelles. Ce « plan de données » est un sujet complexe. Certains services utilisent Azure AD pour RBAC, d’autres non. Je vais aborder ce sujet un peu plus en détail lorsque nous aborderons les sujets de délégation.
 
 Voici quelques concepts supplémentaires que de nombreux clients (et employés de Microsoft) ne comprennent pas ou ont des questions :
 
 - Tout le monde [peut créer](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) de nombreux locataires [sans frais.](https://azure.microsoft.com/pricing/details/active-directory/) Vous n’avez pas besoin d’un service en son sein. J’en ai des dizaines. Chaque nom de client est unique dans le service cloud mondial de Microsoft (en d’autres termes, aucun client ne peut avoir le même nom). Elles sont toutes au format TenantName.onmicrosoft.com. Il existe également des processus qui créent automatiquement des locataires (locataires[nonmanagés).](/azure/active-directory/users-groups-roles/directory-self-service-signup) Par exemple, cela peut se produire lorsqu’un utilisateur s’ad commune à un service d’entreprise avec un domaine de messagerie qui n’existe dans aucun autre client.
-- Dans un client géré, de nombreux [domaines DNS](/azure/active-directory/fundamentals/add-custom-domain) peuvent y être inscrits. Cela ne modifie pas le nom du client d’origine. Il n’existe actuellement aucun moyen simple de renommer un client (autre que la migration). Bien que le nom du client ne soit techniquement pas critique ces jours-ci, certains peuvent trouver cela limité.
+- Dans un client géré, de nombreux [domaines DNS](/azure/active-directory/fundamentals/add-custom-domain) peuvent y être inscrits. Cela ne modifie pas le nom du client d’origine. Il n’existe actuellement aucun moyen simple de renommer un client (autre que la migration). Bien que le nom du client ne soit techniquement pas critique ces jours-ci, certains d’entre eux peuvent trouver cela limitant.
 - Vous devez réserver un nom de client pour votre organisation même si vous ne prévoyez pas encore de déployer de services. Sinon, quelqu’un peut vous le prendre et il n’existe aucun processus simple pour le reprendre (même problème que les noms DNS). J’entends cela trop souvent de la part des clients. Le nom de votre client doit également faire l’objet d’un thème.
 - Si vous possédez des espaces de noms DNS, vous devez les ajouter à vos locataires. Dans le cas contraire, [il est possible de](/azure/active-directory/users-groups-roles/directory-self-service-signup) créer un client non géré avec ce nom, ce qui entraîne une perturbation de sa [gestion.](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 - L’espace de noms DNS (tel que contoso.com) peut appartenir à un seul client. Cela a des conséquences sur différents scénarios (par exemple, le partage d’un domaine de messagerie lors d’une fusion ou d’une acquisition, et ainsi de suite). Il existe un moyen d’inscrire un sous-DNS (tel que div.contoso.com) dans un autre client, mais cela doit être évité. En enregistrant un nom de domaine de niveau supérieur, tous les sous-domaines sont supposés appartenir au même client. Dans les scénarios multi-locataires (voir ci-dessous), je recommande normalement d’utiliser un autre nom de domaine de niveau supérieur (par exemple, contoso.ch ou ch-contoso.com).
@@ -76,9 +76,9 @@ Voici quelques concepts supplémentaires que de nombreux clients (et employés d
 
 ## <a name="baseline-identity-topics"></a>Rubriques sur l’identité de base
 
-Il existe une documentation complète sur la plateforme d’identités de Microsoft Azure Active Directory (Azure AD). Pour ceux qui débutent, cela semble souvent difficile à faire. Même après l’avoir appris, il peut être difficile de suivre l’innovation et le changement constants. Dans mes interactions avec le client, je me retrouve souvent en tant que « traducteur » entre les objectifs de l’entreprise et les approches « Bonne, Meilleure, Meilleure » pour résoudre ces problèmes (et les « notes » humaines pour ces rubriques). Il existe rarement une réponse parfaite et la décision « droite » est un équilibre entre différents facteurs de risque. Voici quelques-unes des questions courantes et les domaines de confusion que j’ai tendance à aborder avec les clients.
+Il existe une documentation complète sur la plateforme d’identités de Microsoft Azure Active Directory (Azure AD). Pour ceux qui débutent, cela semble souvent difficile à faire. Même après l’avoir appris, il peut être difficile de suivre l’innovation et le changement constants. Dans mes interactions avec le client, je me retrouve souvent en tant que « traducteur » entre les objectifs de l’entreprise et les approches « Bonne, Meilleure, Meilleure » pour résoudre ces problèmes (et les « notes » humaines pour ces rubriques). Il existe rarement une réponse parfaite et la décision « à droite » est un équilibre entre différents facteurs de risque. Voici quelques-unes des questions courantes et les domaines de confusion que j’ai tendance à aborder avec les clients.
 
-### <a name="provisioning"></a>Mise en service
+### <a name="provisioning"></a>Approvisionnement
 
 Azure AD ne résout pas l’absence de gouvernance dans votre monde de l’identité ! [La gouvernance des identités](/azure/active-directory/governance/identity-governance-overview) doit être un élément critique indépendant des décisions cloud. Les exigences de gouvernance changent au fil du temps, c’est pourquoi il s’agit d’un programme et non d’un outil.
 
@@ -112,7 +112,7 @@ Je pars souvent à travers le flux d’authentification des clients pour clarifi
 
 Ce type de dessin de tableau blanc illustre l’endroit où les stratégies de sécurité sont appliquées dans le flux d’une demande d’authentification. Dans cet exemple, les stratégies appliquées via le service AD FS (Active Directory Federation Service) sont appliquées à la première demande de service, mais pas aux demandes de service suivantes. C’est au moins une raison pour déplacer les contrôles de sécurité dans le cloud autant que possible.
 
-Nous avons toujours été en mesure de nous souvenir de l' sign-on unique (SSO, [Single Sign-On).](/azure/active-directory/manage-apps/what-is-single-sign-on) Certains clients pensent pouvoir y parvenir en choisissant le fournisseur de fédération (STS) « de droite ». Azure AD peut vous aider considérablement à activer les [fonctionnalités d'](/azure/active-directory/manage-apps/plan-sso-deployment) cesso, mais aucun STS n’est magique. Il existe trop de méthodes d’authentification « héritées » qui sont toujours utilisées pour les applications critiques. L’extension d’Azure AD avec [des solutions](/azure/active-directory/saas-apps/tutorial-list) partenaires peut résoudre un grand nombre de ces scénarios. L' sso est une stratégie et un parcours. Vous ne pouvez pas y arriver sans passer aux [normes pour les applications.](/azure/active-directory/develop/v2-app-types) Cette rubrique est liée à un parcours vers l’authentification [sans](/azure/active-directory/authentication/concept-authentication-passwordless) mot de passe, qui n’a pas non plus de réponse magique.
+Nous avons toujours été en mesure de nous souvenir de l' sign-on unique (SSO, [Single Sign-On).](/azure/active-directory/manage-apps/what-is-single-sign-on) Certains clients pensent pouvoir y parvenir en choisissant le fournisseur de fédération (STS) « de droite ». Azure AD peut contribuer de manière significative à [activer les fonctionnalités d'](/azure/active-directory/manage-apps/plan-sso-deployment) utilisateurs uniques, mais aucun STS n’est magique. Il existe trop de méthodes d’authentification « héritées » qui sont toujours utilisées pour les applications critiques. L’extension d’Azure AD avec [des solutions](/azure/active-directory/saas-apps/tutorial-list) partenaires peut résoudre un grand nombre de ces scénarios. L' sso est une stratégie et un parcours. Vous ne pouvez pas y arriver sans passer aux [normes pour les applications.](/azure/active-directory/develop/v2-app-types) Cette rubrique est liée à un parcours vers l’authentification [sans](/azure/active-directory/authentication/concept-authentication-passwordless) mot de passe, qui n’a pas non plus de réponse magique.
 
 [L’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) est essentielle aujourd’hui[(ici pour](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) plus d’informations). Ajoutez-y [l’analyse](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) du comportement des utilisateurs et vous avez une solution qui empêche les cyberattaques les plus courantes. Même les services grand public sont en train de passer à l' mba. Toutefois, je rencontre toujours de nombreux clients qui ne souhaitent pas passer aux approches [d’authentification](../enterprise/hybrid-modern-auth-overview.md) moderne. Le principal argument que j’ai entendu est qu’il aura un impact sur les utilisateurs et les applications héritées. Parfois, un bon coup de pied peut aider les clients à se déplacer , Exchange Online [les modifications annoncées.](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-auth-and-exchange-online-february-2020-update/ba-p/1191282) De nombreux rapports Azure AD [sont](/azure/active-directory/fundamentals/concept-fundamentals-block-legacy-authentication) désormais disponibles pour aider les clients avec cette transition.
 
@@ -127,13 +127,13 @@ Le moteur de stratégie d’Azure AD est implémenté à l’aide de [stratégie
 La combinaison de tous ces signaux permet d’obtenir des stratégies dynamiques telles que celles-ci :
 
 - Si une menace est détectée sur votre appareil, votre accès aux données sera réduit au web uniquement sans possibilité de téléchargement.
-- Si vous téléchargez un volume anormalement élevé de données, tout ce que vous téléchargez sera chiffré et restreint.
+- Si vous téléchargez un volume de données anormalement élevé, tout ce que vous téléchargez sera chiffré et restreint.
 - Si vous accédez à un service à partir d’un appareil nonmanaté, vous serez bloqué contre les données hautement sensibles, mais vous serez autorisé à accéder aux données non restreintes sans pouvoir les copier vers un autre emplacement.
 
 Si vous êtes d’accord avec cette définition étendue de l’autorisation, vous devez implémenter des solutions supplémentaires. Les solutions que vous implémentez dépendent de la dynamique que vous souhaitez que la stratégie soit et des menaces que vous souhaitez hiérarchiser. Voici quelques exemples de ces systèmes :
 
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/)
-- [Microsoft Defender pour Identity](/azure-advanced-threat-protection/)
+- [Microsoft Defender pour l’identité](/azure-advanced-threat-protection/)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
@@ -180,7 +180,7 @@ De nombreux clients se retrouvent avec plusieurs clients de production après un
 
 Certains clients choisissent d’opter pour plusieurs clients. Il doit s’agit d’une décision très attentive et presque toujours pilotée par une raison professionnelle ! Voici quelques exemples :
 
-- Structure d’entreprise de type de holding où la collaboration facile entre les différentes entités n’est pas requise et où il existe de forts besoins d’administration et d’isolation.
+- Structure d’entreprise de type de holding où la collaboration facile entre les différentes entités n’est pas nécessaire et où il existe des besoins d’administration et d’autres besoins d’isolation forts.
 - Après une acquisition, une décision commerciale est prise de conserver deux entités distinctes.
 - Simulation de l’environnement d’un client qui ne modifie pas l’environnement de production du client.
 - Développement de logiciels pour les clients.
@@ -229,7 +229,7 @@ Parfois, les scénarios appellent l’ajout d’un utilisateur externe à un rô
 
 [Les autorisations](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) dans le Centre Office 365 sécurité et conformité & sont une collection de « groupes de rôles », qui sont distincts et distincts des rôles Azure AD. Cela peut prêter à confusion, car certains de ces groupes de rôles ont le même nom que les rôles Azure AD (par exemple, lecteur de sécurité), mais ils peuvent avoir des appartenances différentes. Je préfère utiliser les rôles Azure AD. Chaque groupe de rôles se compose d’un ou plusieurs « rôles » (voir ce que je veux dire sur la réutilisation du même mot ?) et ont des membres d’Azure AD, qui sont des objets à messagerie. En outre, vous pouvez créer un groupe de rôles avec le même nom qu’un rôle, qui peut contenir ou non ce rôle (évitez cette confusion).
 
-En un sens, il s’agit d’une évolution du modèle Exchange groupes de rôles. Toutefois, Exchange Online possède sa propre interface [de gestion des groupes de rôles.](/exchange/permissions-exo) Certains groupes de rôles dans Exchange Online sont verrouillés et gérés à partir d’Azure AD ou du Centre de sécurité & conformité, mais d’autres peuvent avoir des noms identiques ou similaires et sont gérés dans Exchange Online (ce qui ajoute à la confusion). Nous vous recommandons d’éviter d’utiliser Exchange Online interface utilisateur, sauf si vous avez besoin d’étendues pour Exchange gestion.
+En un sens, il s’agit d’une évolution du modèle Exchange groupes de rôles. Toutefois, Exchange Online possède sa propre interface [de gestion des groupes de rôles.](/exchange/permissions-exo) Certains groupes de rôles dans Exchange Online sont verrouillés et gérés à partir d’Azure AD ou du Centre de conformité des & de sécurité, mais d’autres peuvent avoir des noms identiques ou similaires et sont gérés dans Exchange Online (ce qui ajoute à la confusion). Nous vous recommandons d’éviter d’utiliser Exchange Online interface utilisateur, sauf si vous avez besoin d’étendues pour Exchange gestion.
 
 Vous ne pouvez pas créer de rôles personnalisés. Les rôles sont définis par les services créés par Microsoft et augmenteront à mesure que de nouveaux services seront introduits. Ce concept est similaire aux [rôles définis par les applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) dans Azure AD. Lorsque de nouveaux services sont activés, de nouveaux groupes de rôles doivent souvent être créés pour accorder ou déléguer l’accès à ces derniers (par [exemple,](../compliance/insider-risk-management-configure.md)la gestion des risques internes).
 
@@ -241,7 +241,7 @@ Il est important de noter que les contrôles actuellement gérés via le Centre 
 
 ### <a name="service-specific"></a>Spécifique au service
 
-Comme indiqué précédemment, de nombreux clients cherchent à obtenir un modèle de délégation plus granulaire. Exemple courant : « Gérer le service XYZ uniquement pour les utilisateurs et les emplacements de division X » (ou une autre dimension). La possibilité de le faire dépend de chaque service et n’est pas cohérente entre les services et fonctionnalités. En outre, chaque service peut avoir un modèle RBAC distinct et unique. Au lieu de discuter de tous ces éléments (cela prendra toujours du temps), j’ajoute des liens pertinents pour chaque service. Il ne s’agit pas d’une liste complète, mais elle vous aidera à démarrer.
+Comme indiqué précédemment, de nombreux clients cherchent à obtenir un modèle de délégation plus granulaire. Exemple courant : « Gérer le service XYZ uniquement pour les utilisateurs et les emplacements de division X » (ou une autre dimension). La possibilité de le faire dépend de chaque service et n’est pas cohérente entre les services et fonctionnalités. En outre, chaque service peut avoir un modèle RBAC distinct et unique. Au lieu de discuter de tous ces éléments (cela prendra indéfiniment), j’ajoute des liens pertinents pour chaque service. Il ne s’agit pas d’une liste complète, mais elle vous aidera à démarrer.
 
 - **Exchange Online** - (/exchange/permissions-exo/permissions-exo)
 - **SharePoint Online** - (/sharepoint/manage-site-collection-administrators)
@@ -264,7 +264,7 @@ Comme indiqué précédemment, de nombreux clients cherchent à obtenir un modè
   - **Power Automate** - (/power-automate/environments-overview-admin)
   - **Power BI** - (/power-bi/service-admin-governance)
 
-    Remarque : la sécurité et la délégation de plateforme de données (qui Power BI est un composant) sont un domaine complexe.
+    Remarque : la sécurité et la délégation de plateforme de données (qui Power BI est un composant) est un domaine complexe.
 
 - **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender pour le point de terminaison** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)

@@ -1,5 +1,5 @@
 ---
-title: Configurer les limites de conformité pour les enquêtes eDiscovery
+title: Configurer des limites de conformité pour les enquêtes eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f907e34bb7d266ead2441535856713dd0cbc5e49
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29596375263d52eb6156ddfa32330f08957ccd15
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205884"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216873"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurer les limites de conformité pour les enquêtes eDiscovery
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurer des limites de conformité pour les enquêtes eDiscovery
 
 Les instructions de cet article peuvent être appliquées lors de l’utilisation de core eDiscovery ou de Advanced eDiscovery pour gérer les enquêtes.
 
-Les limites de conformité créent des limites logiques au sein d’une organisation qui contrôlent les emplacements de contenu utilisateur (tels que les boîtes aux lettres, les comptes OneDrive et les sites SharePoint) que les gestionnaires eDiscovery peuvent rechercher. En outre, les limites de conformité contrôlent les personnes qui peuvent accéder aux cas eDiscovery utilisés pour gérer les enquêtes juridiques, des ressources humaines ou d’autres enquêtes au sein de votre organisation. La nécessité de frontières de conformité est souvent nécessaire pour les entreprises multinationales qui doivent respecter les réglementations et les réglementations géographiques et pour les gouvernements, qui sont souvent divisés en différentes agences. Dans Microsoft 365, les limites de conformité vous aident à répondre à ces exigences lors de recherches de contenu et de gestion d’enquêtes avec des cas eDiscovery.
+Les limites de conformité créent des limites logiques au sein d’une organisation qui contrôlent les emplacements de contenu utilisateur (tels que les boîtes aux lettres, les comptes OneDrive et les sites SharePoint) que les gestionnaires eDiscovery peuvent rechercher. En outre, les limites de conformité contrôlent les personnes qui peuvent accéder aux cas eDiscovery utilisés pour gérer les enquêtes juridiques, humaines ou autres au sein de votre organisation. La nécessité de frontières de conformité est souvent nécessaire pour les entreprises multinationales qui doivent respecter les réglementations et les réglementations géographiques et pour les gouvernements, qui sont souvent divisés en différentes agences. Dans Microsoft 365, les limites de conformité vous aident à répondre à ces exigences lorsque vous effectuez des recherches de contenu et que vous gérez des enquêtes avec des cas eDiscovery.
   
 Nous utilisons l’exemple de l’illustration suivante pour expliquer le fonctionnement des limites de conformité.
   
@@ -108,6 +108,9 @@ Pour créer les groupes de **rôles,** go to the Permissions page in the Centre 
   
 Pour répondre aux exigences du scénario de limites de  conformité  de Contoso, vous devez également supprimer les rôles de mise en attente et d’exportation des groupes de rôles d’enquêteurs pour empêcher les enquêteurs de placer des emplacements de contenu en attente et d’exporter du contenu à partir d’un cas.
 
+> [!IMPORTANT]
+> Si un rôle est ajouté ou supprimé d’un groupe de rôles que vous avez ajouté en tant que membre d’un cas, le groupe de rôles est automatiquement supprimé en tant que membre du cas (ou tout autre cas dont le groupe de rôles est membre). La raison en est que votre organisation ne fournit pas par inadvertance des autorisations supplémentaires aux membres d’un cas. De même, si un groupe de rôles est supprimé, il sera supprimé de tous les cas dont il était membre.
+
 ## <a name="step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Étape 3 : Créer un filtre d’autorisations de recherche pour appliquer la limite de conformité
 
 Une fois que vous avez créé des groupes de rôles pour chaque agence, l’étape suivante consiste à créer les filtres d’autorisations de recherche qui associent chaque groupe de rôles à son agence spécifique et définit la limite de conformité elle-même. Vous devez créer un filtre d’autorisations de recherche pour chaque agence. Pour plus d’informations sur la création de filtres d’autorisations de sécurité, voir Configurer le filtrage des [autorisations pour la recherche de contenu.](permissions-filtering-for-content-search.md)
@@ -154,20 +157,20 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 Voici comment les filtres d’autorisation de recherche sont appliqués pour chaque agence dans ce scénario.
 
-1. Le filtre est d’abord appliqué pour définir les emplacements de contenu que les gestionnaires `Mailbox` eDiscovery peuvent rechercher. Dans ce cas, les responsables eDiscovery de Coho Winery peuvent rechercher  uniquement les boîtes aux lettres et les comptes OneDrive des utilisateurs dont la propriété de boîte aux lettres Department a la valeur **FourthCoffee**; Les responsables eDiscovery de Coho Winery peuvent rechercher uniquement les boîtes aux lettres et les comptes OneDrive des utilisateurs dont la propriété de boîte aux lettres *Service* a la valeur **CohoWinery**. Le filtre est un filtre d’emplacement de contenu, car il spécifie les emplacements de contenu que les gestionnaires `Mailbox` eDiscovery peuvent rechercher.  Dans les deux filtres, les gestionnaires eDiscovery peuvent rechercher uniquement des emplacements de contenu avec une valeur de propriété de boîte aux lettres spécifique.
+1. Le filtre est d’abord appliqué pour définir les emplacements de contenu que les gestionnaires `Mailbox` eDiscovery peuvent rechercher. Dans ce cas, les responsables eDiscovery de Coho Winery peuvent rechercher  uniquement les boîtes aux lettres et les comptes OneDrive des utilisateurs dont la propriété de boîte aux lettres Department a la valeur **FourthCoffee**; Les gestionnaires eDiscovery de Coho Winery peuvent rechercher uniquement les boîtes aux lettres et les comptes OneDrive des utilisateurs dont la propriété de boîte aux lettres *Service* a la valeur **CohoWinery**. Le filtre est un filtre d’emplacement de contenu, car il spécifie les emplacements de contenu que les gestionnaires `Mailbox` eDiscovery peuvent rechercher.  Dans les deux filtres, les gestionnaires eDiscovery peuvent rechercher uniquement des emplacements de contenu avec une valeur de propriété de boîte aux lettres spécifique.
 
-2. Une fois que les emplacements de contenu qui peuvent être recherchés sont définis, la partie suivante du filtre définit le contenu que les gestionnaires eDiscovery peuvent rechercher. Le premier filtre permet aux gestionnaires eDiscovery Fourth Coffee de rechercher uniquement les documents dont la propriété de chemin d’accès au site contient `SiteContent` (ou commence par) `https://contoso.sharepoint.com/sites/FourthCoffee` ; Les responsables eDiscovery de Coho Winery peuvent uniquement rechercher des documents dont la propriété de chemin d’accès au site contient (ou commence par) `https://contoso.sharepoint.com/sites/CohoWinery` . Par conséquent, les deux `SiteContent` filtres sont des *filtres de* contenu, car ils définissent le contenu qui peut être recherché. Dans les deux filtres, les gestionnaires eDiscovery peuvent uniquement rechercher des documents avec une valeur de propriété de document spécifique. Tous SharePoint sont des filtres de contenu, car les propriétés de site utilisables dans une recherche sont estampillées sur tous les documents. Pour plus d’informations, voir Configurer le filtrage [des autorisations pour eDiscovery.](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)
+2. Une fois que les emplacements de contenu qui peuvent être recherchés sont définis, la partie suivante du filtre définit le contenu que les gestionnaires eDiscovery peuvent rechercher. Le premier filtre permet aux gestionnaires eDiscovery Fourth Coffee de rechercher uniquement les documents dont la propriété de chemin d’accès au site contient `SiteContent` (ou commence par) `https://contoso.sharepoint.com/sites/FourthCoffee` ; Les responsables eDiscovery de Coho Winery peuvent uniquement rechercher des documents dont la propriété de chemin d’accès au site contient (ou commence par) `https://contoso.sharepoint.com/sites/CohoWinery` . Par conséquent, les deux `SiteContent` filtres sont des *filtres de* contenu, car ils définissent le contenu qui peut être recherché. Dans les deux filtres, les gestionnaires eDiscovery peuvent uniquement rechercher des documents avec une valeur de propriété de document spécifique. Tous SharePoint sont des filtres de contenu, car les propriétés de site utilisables dans une recherche sont estampillées sur tous les documents. Pour plus d’informations, [voir Configurer le filtrage des autorisations pour eDiscovery.](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)
 
    > [!NOTE]
    > Bien que le scénario de cet article ne les utilise pas, vous pouvez également utiliser des filtres de contenu de boîte aux lettres pour spécifier le contenu que les gestionnaires eDiscovery peuvent rechercher. La syntaxe des filtres de contenu de boîte aux lettres `MailboxContent_<Property:value>` est . Par exemple, vous pouvez créer des filtres de contenu basés sur des plages de dates, des destinataires ou des domaines. Pour plus d’informations sur les filtres de contenu de boîte aux lettres, voir Configurer le filtrage [des autorisations de recherche.](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)
 
-3. Le filtre des autorisations de recherche est joint à la requête de recherche par **l’opérateur booléen AND.** Cela signifie que lorsqu’un gestionnaire eDiscovery dans l’une des agences exécute une recherche de découverte électronique, les éléments renvoyés par la recherche doivent correspondre à la requête de recherche et aux conditions définies dans le filtre des autorisations de recherche.
+3. Le filtre d’autorisations de recherche est joint à la requête de recherche par **l’opérateur booléen AND.** Cela signifie que lorsqu’un gestionnaire eDiscovery dans l’une des agences exécute une recherche de découverte électronique, les éléments renvoyés par la recherche doivent correspondre à la requête de recherche et aux conditions définies dans le filtre des autorisations de recherche.
 
 ## <a name="step-4-create-an-ediscovery-case-for-intra-agency-investigations"></a>Étape 4 : Créer un cas eDiscovery pour les enquêtes intra-agence
 
 L’étape finale consiste à créer un cas core eDiscovery ou un cas Advanced eDiscovery dans le Centre de conformité Microsoft 365, puis à ajouter le groupe de rôles que vous avez créé à l’étape 2 en tant que membre du cas. Cela se traduit par deux caractéristiques importantes de l’utilisation des limites de conformité :
   
-- Seuls les membres du groupe de rôles ajouté au cas pourront voir et accéder au cas dans le Centre de conformité Microsoft 365. Par exemple, si le groupe de rôles Enquêteurs fourth coffee est le seul membre d’un cas, les membres du groupe de rôles Fourth Coffee eDiscovery Managers (ou les membres d’un autre groupe de rôles) ne pourront pas voir ou accéder au cas.
+- Seuls les membres du groupe de rôles ajouté au cas pourront voir et accéder au cas dans le Centre de conformité Microsoft 365. Par exemple, si le groupe de rôles Fourth Coffee Investigators est le seul membre d’un cas, les membres du groupe de rôles Fourth Coffee eDiscovery Managers (ou les membres d’un autre groupe de rôles) ne pourront pas voir le cas ou y accéder.
 
 - Lorsqu’un membre du groupe de rôles affecté à un cas exécute une recherche associée au cas, il peut uniquement rechercher les emplacements de contenu au sein de son agence (qui est défini par le filtre d’autorisations de recherche que vous avez créé à l’étape 3).)
 
@@ -181,7 +184,7 @@ Pour créer un cas et affecter des membres :
 
    - [Ajouter des membres à un cas core eDiscovery](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
 
-   - [Ajouter des membres à un cas d Advanced eDiscovery un dossier](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+   - [Ajouter des membres à un cas de Advanced eDiscovery de groupe](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 > [!NOTE]
 > Lorsque vous ajoutez un groupe de rôles à un cas, vous ne pouvez ajouter que les groupes de rôles dont vous êtes membre.
@@ -190,7 +193,7 @@ Pour créer un cas et affecter des membres :
 
 Les filtres d’autorisations de recherche vous permettent également de contrôler l’emplacement où le contenu est acheminé pour l’exportation et le centre de données qui peut être recherché lors de la recherche d’emplacements de contenu [dans un environnement SharePoint Multi-Géo.](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)
   
-- **Exporter les résultats de recherche :** Vous pouvez exporter les résultats de la recherche à partir Exchange boîtes aux lettres, SharePoint sites et OneDrive comptes à partir d’un centre de données spécifique. Cela signifie que vous pouvez spécifier l’emplacement du centre de données à partir de quel emplacement les résultats de la recherche seront exportés.
+- **Exporter les résultats de recherche :** Vous pouvez exporter les résultats de la recherche à partir Exchange boîtes aux lettres, SharePoint sites et OneDrive comptes à partir d’un centre de données spécifique. Cela signifie que vous pouvez spécifier l’emplacement du centre de données à partir de quel résultat la recherche sera exportée.
 
     Utilisez le *paramètre Region* pour les cmdlets **New-ComplianceSecurityFilter** ou **Set-ComplianceSecurityFilter** pour créer ou modifier le centre de données par lequel l’exportation sera acheminée.
   
@@ -202,7 +205,7 @@ Les filtres d’autorisations de recherche vous permettent également de contrô
     |CAN <br/> |Canada|
     |||
 
-- **Router les recherches de contenu :** Vous pouvez router les recherches de contenu SharePoint sites et OneDrive comptes vers un centre de données satellite. Cela signifie que vous pouvez spécifier l’emplacement du centre de données où les recherches seront exécutés.
+- **Router les recherches de contenu :** Vous pouvez router les recherches de contenu SharePoint sites et OneDrive comptes de données vers un centre de données satellite. Cela signifie que vous pouvez spécifier l’emplacement du centre de données où les recherches seront exécutés.
 
     Utilisez l’une des valeurs suivantes pour le paramètre *Region* pour contrôler l’emplacement du centre de données où les recherches s’exécuteront lors de la recherche SharePoint sites et OneDrive comptes.
   
@@ -247,7 +250,7 @@ Gardez les points suivants à l’esprit lors de la recherche et de l’exportat
 
 - Lors de la recherche de contenu dans SharePoint et OneDrive, le paramètre *Region* dirige les recherches vers l’emplacement principal ou satellite où le gestionnaire eDiscovery effectuera des enquêtes eDiscovery. Si un gestionnaire eDiscovery recherche des sites SharePoint et OneDrive en dehors de la région spécifiée dans le filtre des autorisations de recherche, aucun résultat de recherche n’est renvoyé.
 
-- Lors de l’exportation des résultats de recherche à partir de core eDiscovery, le contenu de tous les emplacements de contenu (y compris les Exchange, Skype Entreprise, SharePoint, OneDrive et autres services que vous pouvez rechercher à l’aide de l’outil de recherche de contenu) est téléchargé vers l’emplacement stockage Azure dans le centre de données spécifié par le paramètre *Region.* Cela permet aux organisations de rester conformes en ne permettant pas l’exportation de contenu à travers des bordures contrôlées. Si aucune région n’est spécifiée dans le filtre des autorisations de recherche, le contenu est téléchargé vers le centre de données principal de l’organisation.
+- Lors de l’exportation des résultats de recherche à partir de core eDiscovery, le contenu de tous les emplacements de contenu (y compris les Exchange, Skype Entreprise, SharePoint, OneDrive et autres services que vous pouvez rechercher à l’aide de l’outil de recherche de contenu) est téléchargé vers l’emplacement stockage Azure dans le centre de données qui est spécifié par le *paramètre Region.* Cela permet aux organisations de rester conformes en ne permettant pas l’exportation de contenu à travers des bordures contrôlées. Si aucune région n’est spécifiée dans le filtre des autorisations de recherche, le contenu est téléchargé vers le centre de données principal de l’organisation.
 
   Lors de l’exportation de contenu Advanced eDiscovery, vous ne pouvez pas contrôler l’endroit où le contenu est téléchargé à l’aide du *paramètre Region.* Le contenu est téléchargé vers un emplacement stockage Azure dans un centre de données dans l’emplacement central de votre organisation. Pour obtenir la liste des emplacements géographiques en fonction de votre emplacement central, voir Microsoft 365 configuration de la découverte électronique [multigéogé.](../enterprise/multi-geo-ediscovery-configuration.md)
 
@@ -283,17 +286,17 @@ Gardez les limitations suivantes à l’esprit lors de la gestion des cas eDisco
 
     De plus, les statistiques de conservation s’appliquent uniquement aux emplacements de contenu au sein de l’agence.
 
-- Si un filtre d’autorisations de recherche vous est affecté (une boîte aux lettres ou un filtre de site) et que vous essayez d’exporter des éléments nonndex pour une recherche qui inclut tous les sites SharePoint de votre organisation, vous recevrez le message d’erreur suivant : `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` Si un filtre d’autorisations de recherche vous est affecté et que vous souhaitez exporter des éléments nonndex à partir de SharePoint, vous devez réexécuter la recherche et inclure des sites SharePoint spécifiques à rechercher. Sinon, vous pourrez uniquement exporter des éléments indexés à partir d’une recherche qui inclut tous SharePoint sites. Pour plus d’informations sur les options d’exportation des résultats de recherche, voir Exporter les résultats [de recherche de contenu.](export-search-results.md#step-1-prepare-search-results-for-export)
+- Si un filtre d’autorisations de recherche vous est affecté (boîte aux lettres ou filtre de site) et que vous essayez d’exporter des éléments nonndex pour une recherche qui inclut tous les sites SharePoint de votre organisation, vous recevrez le message d’erreur suivant : `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` Si un filtre d’autorisations de recherche vous est affecté et que vous souhaitez exporter des éléments nonndex à partir de SharePoint, vous devez réexécuter la recherche et inclure des sites SharePoint spécifiques à rechercher. Dans le cas contraire, vous pourrez uniquement exporter des éléments indexés à partir d’une recherche qui inclut tous SharePoint sites. Pour plus d’informations sur les options d’exportation des résultats de recherche, voir Exporter les résultats [de recherche de contenu.](export-search-results.md#step-1-prepare-search-results-for-export)
 
 - Les filtres d’autorisation de recherche ne sont pas appliqués aux dossiers publics Exchange.
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Si une boîte aux lettres est supprimée de licence ou de logiciel, l’utilisateur n’est plus pris en compte dans les limites de conformité. Si une conservation a été placée sur la boîte aux lettres lors de sa suppression, le contenu conservé dans la boîte aux lettres est toujours soumis à une limite de conformité ou à un filtre d’autorisations de recherche.
+- Si une boîte aux lettres est supprimée de licence ou de logiciel, l’utilisateur n’est plus pris en compte dans la limite de conformité. Si une conservation a été placée sur la boîte aux lettres lors de sa suppression, le contenu conservé dans la boîte aux lettres est toujours soumis à une limite de conformité ou à un filtre d’autorisations de recherche.
 
 - Si les limites de conformité et les filtres d’autorisations de recherche sont implémentés pour un utilisateur, nous vous recommandons de ne pas supprimer la boîte aux lettres d’un utilisateur et non OneDrive compte. En d’autres termes, si vous supprimez la boîte aux lettres d’un utilisateur, vous devez également supprimer le compte OneDrive de l’utilisateur, car mailbox_RecipientFilter est utilisé pour appliquer le filtre d’autorisation de recherche pour OneDrive.
 
-- Les limites de conformité et les filtres d’autorisations de recherche dépendent des attributs marqués sur le contenu dans Exchange, OneDrive et SharePoint et de l’indexation suivante de ce contenu marqué.
+- Les limites de conformité et les filtres d’autorisations de recherche dépendent des attributs marqués sur le contenu dans Exchange, OneDrive et SharePoint et de l’indexation ultérieure de ce contenu marqué.
 
 - Nous vous déconseillons d’utiliser des filtres d’exclusion (par exemple, dans un filtre d’autorisations de recherche) pour une limite de conformité `-not()` basée sur le contenu. L’utilisation d’un filtre d’exclusion peut avoir des résultats inattendus si le contenu avec des attributs récemment mis à jour n’a pas été indexé.
 
@@ -309,11 +312,11 @@ Le gestionnaire eDiscovery peut ajouter des paramètres à sa requête de recher
   
 **Que se passe-t-il si la valeur de l’attribut utilisé comme attribut de conformité dans un filtre d’autorisations de recherche est modifiée ?**
   
-Un filtre d’autorisations de recherche met jusqu’à trois jours pour appliquer la limite de conformité si la valeur de l’attribut utilisé dans le filtre est modifiée. Par exemple, dans le scénario Contoso, supposons qu’un utilisateur de l’agence Fourth Coffee est transféré vers l’agence Coho Winery. Par conséquent, la valeur de l’attribut **Department** sur l’objet utilisateur est modifiée de *FourthCoffee* à *CohoWinery*. Dans ce cas, fourth coffee eDiscovery et les investisseurs obtiennent les résultats de recherche pour cet utilisateur pendant trois jours après la changement de l’attribut. De même, il faut jusqu’à trois jours pour que les gestionnaires et enquêteurs eDiscovery de Coho Winery obtiennent les résultats de recherche de l’utilisateur.
+Un filtre d’autorisations de recherche met jusqu’à trois jours pour appliquer la limite de conformité si la valeur de l’attribut utilisé dans le filtre est modifiée. Par exemple, dans le scénario Contoso, supposons qu’un utilisateur de l’agence Fourth Coffee est transféré vers l’agence Coho Winery. Par conséquent, la valeur de l’attribut **Department** sur l’objet utilisateur est modifiée de *FourthCoffee* à *CohoWinery*. Dans ce cas, fourth coffee eDiscovery et les investisseurs obtiennent des résultats de recherche pour cet utilisateur pendant trois jours après la changement de l’attribut. De même, il faut jusqu’à trois jours pour que les gestionnaires et enquêteurs eDiscovery de Coho Winery obtiennent les résultats de recherche de l’utilisateur.
   
 **Un gestionnaire eDiscovery peut-il voir le contenu à partir de deux limites de conformité distinctes ?**
   
-Oui, cette opération peut être effectuée lors de la recherche Exchange boîtes aux lettres en ajoutant le gestionnaire eDiscovery à des groupes de rôles qui ont une visibilité pour les deux agences. Toutefois, lorsque vous recherchez des sites SharePoint et des comptes OneDrive, un gestionnaire eDiscovery peut rechercher du contenu dans différentes limites de conformité uniquement si les agences se trouve dans le même emplacement géographique ou régional. **Remarque :** Cette limitation pour les sites ne s’applique pas dans Advanced eDiscovery car la recherche de contenu dans SharePoint et OneDrive n’est pas liée par un emplacement géographique.
+Oui, cette opération peut être effectuée lors de la recherche Exchange boîtes aux lettres en ajoutant le gestionnaire eDiscovery à des groupes de rôles qui ont une visibilité pour les deux agences. Toutefois, lorsque vous recherchez des sites SharePoint et des comptes OneDrive, un gestionnaire eDiscovery peut rechercher du contenu dans différentes limites de conformité uniquement si les agences se trouve dans le même emplacement géographique ou régional. **Remarque :** Cette limitation pour les sites ne s’applique pas dans Advanced eDiscovery car la recherche de contenu dans SharePoint et OneDrive n’est pas liée par emplacement géographique.
   
 **Les filtres d’autorisations de recherche fonctionnent-ils pour les conservations de cas eDiscovery, Microsoft 365 stratégies de rétention ou DLP ?**
   

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54e060f1cc98f62ca048ce8d561247c47f189f24
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 069e74b8ad0aef33caab411b92c24c4d0b72f022
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207475"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194152"
 ---
 # <a name="investigation-resource-type"></a>Type de ressource Investigation
 
@@ -58,8 +58,8 @@ Propriété|Type|Description
 id|Chaîne|Identité de l’entité d’investigation. 
 startTime|DateTime Nullable|Date et heure de création de l’enquête.
 endTime|DateTime Nullable|Date et heure de fin de l’enquête.
-cancelledBy|String|ID de l’utilisateur/de l’application qui a annulé cet examen.
-état|Énum|État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+cancelledBy|Chaîne|ID de l’utilisateur/de l’application qui a annulé cet examen.
+state|Énum|État actuel de l’enquête. Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 statusDetails|Chaîne|Informations supplémentaires sur l’état de l’enquête.
 machineId|String|ID de l’appareil sur lequel l’enquête est exécutée.
 computerDnsName|Chaîne|Nom de l’appareil sur lequel l’enquête est exécutée.

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ description: Découvrez comment utiliser l’Explorateur de menaces et le rappor
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae46d8540ec0d2bd9ae8d906a9a44fd0e397ee2f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 959d3d676f07a7816b622d5db53252c846340d2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162450"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202440"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -40,7 +40,7 @@ ms.locfileid: "59162450"
 - Si vous avez [Microsoft Defender pour Office 365](defender-for-office-365.md) Plan 2, vous avez Explorer.
 - Si vous avez Microsoft Defender pour Office 365 Plan 1, vous avez des détections en temps réel.
 
-Lorsque vous ouvrez l’Explorateur pour la première fois (ou le rapport de détections en temps réel), l’affichage par défaut affiche les détections de programmes malveillants de messagerie électronique au cours des 7 derniers jours. Ce rapport peut également afficher microsoft Defender pour les détections de Office 365, telles que les URL malveillantes détectées par les liens [Coffre](safe-links.md)et les fichiers malveillants détectés par les pièces [jointes Coffre.](safe-attachments.md) Ce rapport peut être modifié pour afficher les données des 30 derniers jours (avec un abonnement Payant Microsoft Defender Office 365 P2). Les abonnements à la version d’essai incluent uniquement les données des sept derniers jours.
+Lorsque vous ouvrez l’Explorateur pour la première fois (ou le rapport de détections en temps réel), l’affichage par défaut affiche les détections de programmes malveillants de messagerie électronique au cours des 7 derniers jours. Ce rapport peut également afficher les détections de Microsoft Defender pour Office 365, telles que les URL malveillantes détectées par les liens [Coffre](safe-links.md)et les fichiers malveillants détectés par les pièces [jointes Coffre.](safe-attachments.md) Ce rapport peut être modifié pour afficher les données des 30 derniers jours (avec un abonnement Payant Microsoft Defender Office 365 P2). Les abonnements à la version d’essai incluent uniquement les données des sept derniers jours.
 
 ****
 
@@ -64,7 +64,7 @@ Une fois que vous avez sélectionné un affichage, vous pouvez appliquer des fil
 
 ## <a name="email--malware"></a>Courrier électronique > programmes malveillants
 
-Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les** programmes malveillants \> **de** \> **messagerie.** Cette vue affiche des informations sur les messages électroniques identifiés comme contenant des programmes malveillants.
+Pour afficher ce rapport, dans l’Explorateur (ou détections en temps réel), choisissez **Afficher les** programmes malveillants \> **de** \> **messagerie.** Cet affichage affiche des informations sur les messages électroniques identifiés comme contenant des programmes malveillants.
 
 ![Afficher les données relatives aux e-mails identifiés comme programmes malveillants.](../../media/detection-technology.png)
 
@@ -123,7 +123,7 @@ Pour afficher ce rapport, dans l’Explorateur, choisissez **Afficher tous** \> 
 > [!NOTE]
 > Si vous obtenez une erreur qui lit trop de données à **afficher,** ajoutez un filtre et, si nécessaire, réduisez la plage de dates que vous affichez.
 
-Pour appliquer un filtre, choisissez **Expéditeur,** sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé **la technologie de détection** comme filtre (plusieurs options sont disponibles). Afficher les informations par expéditeur, domaine de l’expéditeur, destinataires, objet, nom de fichier de pièce jointe, famille de programmes malveillants, état de protection (actions prises par vos fonctionnalités et stratégies de protection contre les menaces dans Office 365), technologie de détection (détection des programmes malveillants) et bien plus encore.
+Pour appliquer un filtre, choisissez **Expéditeur,** sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé **la technologie De détection** comme filtre (plusieurs options sont disponibles). Afficher les informations par expéditeur, domaine de l’expéditeur, destinataires, objet, nom de fichier de pièce jointe, famille de programmes malveillants, état de protection (actions prises par vos fonctionnalités et stratégies de protection contre les menaces dans Office 365), technologie de détection (détection des programmes malveillants) et bien plus encore.
 
 ![Afficher les données sur le courrier électronique détecté par la technologie de détection.](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -149,11 +149,11 @@ Le fait de **cliquer sur la déstonation atp** dans ce graphique entraîne une v
 
 ![Explorateur filtré pour afficher uniquement Defender pour les Office 365 de détonation.](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-Dans cette vue, nous regardons maintenant les données pour les fichiers qui ont été désaxtérées par [Coffre pièces jointes](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques dont des pièces jointes ont été détectées Coffre pièces jointes.
+Dans cette vue, nous regardons maintenant les données pour les fichiers qui ont été désaxtérées par [Coffre pièces jointes](safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques dont les pièces jointes ont été détectées Coffre pièces jointes.
 
 ![Détails spécifiques sur les messages électroniques avec pièces jointes détectées.](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 
-La sélection d’un ou de plusieurs éléments active le menu **Actions,** qui propose plusieurs choix parmi lesquels choisir pour les éléments sélectionnés.
+La sélection d’un ou de plusieurs éléments active le menu **Actions,** qui propose plusieurs choix parmi lesquels choisir les éléments sélectionnés.
 
 ![La sélection d’un élément active le menu Actions.](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
 

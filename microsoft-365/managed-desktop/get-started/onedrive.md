@@ -1,22 +1,22 @@
 ---
-title: Microsoft OneDrive
+title: Microsoft OneDrive
 description: Comment Microsoft Manged Desktop la OneDrive pour les appareils inscrits
 keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, applications, applications métier, applications métier
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 892dbcccfc8f224f80a538f9736405cb012b69ca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a599f36692cbca6cbf67ddfd4a6ca1c05e02351f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203208"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214032"
 ---
-# <a name="microsoft-onedrive"></a>Microsoft OneDrive
+# <a name="microsoft-onedrive"></a>Microsoft OneDrive
 
 Microsoft Manged Desktop utilise [OneDrive Entreprise](/onedrive/plan-onedrive-enterprise) service de stockage cloud pour tous les Microsoft Manged Desktop pour s’assurer que les appareils sont aussi sans état que possible. L’utilisateur peut trouver ses fichiers quel que soit l’appareil auquel il se connecte. Par exemple, si vous remplacez un Microsoft Manged Desktop par un nouvel appareil, les fichiers seront automatiquement synchronisés avec le nouvel appareil.
 
@@ -26,7 +26,7 @@ Nous configurons automatiquement ces paramètres par défaut sur les appareils g
 
 - La fonctionnalité Fichiers à la demande est activée pour permettre aux utilisateurs d’accéder aux fichiers à partir de leur stockage cloud dans OneDrive sans avoir à utiliser inutilement de l’espace disque. Pour plus d’informations, voir [Save disk space with OneDrive Files On-Demand for Windows 10](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e).
 
-- La fonctionnalité Déplacement de dossiers connus est activée en mode silencieux pour la protection des données des utilisateurs dans le cloud, ce qui leur permet d’accéder à leurs fichiers à partir de n’importe quel appareil. Pour plus d’informations, voir [Back up your Documents, Pictures, and Desktop folders with OneDrive](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057).
+- La fonctionnalité De déplacement de dossiers connus est activée en mode silencieux pour la protection des données des utilisateurs dans le cloud, ce qui leur permet d’accéder à leurs fichiers à partir de n’importe quel appareil. Pour plus d’informations, voir [Back up your Documents, Pictures, and Desktop folders with OneDrive](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057).
 
 - Les utilisateurs ne peuvent pas désactiver la fonctionnalité Déplacement de dossier connu ou modifier l’emplacement des dossiers connus pour garantir une expérience cohérente sur Microsoft Manged Desktop appareils.
 
@@ -42,7 +42,7 @@ Lorsque Microsoft Manged Desktop utilisateurs reçoivent un nouvel appareil, ils
 
 :::image type="content" source="media/onedrive-folders.png" alt-text="Notification lisant Votre service informatique a pris en compte vos dossiers importants. Les dossiers sont désormais pris en OneDrive et disponibles à partir d’autres appareils.":::
 
-3. Pour empêcher les icônes en double sur le bureau lorsque des appareils sont réinitialisés ou réinitialisés, le système supprime automatiquement les icônes Microsoft Edge et Microsoft Teams de l’Synchronisation OneDrive, comme illustré dans cet affichage dans l’Explorateur de fichiers.
+3. Pour éviter les icônes en double sur le Bureau lorsque des appareils sont réinitialisés ou réinitialisés, le système supprime automatiquement les icônes Microsoft Edge et Microsoft Teams de l’Synchronisation OneDrive, comme illustré dans cet affichage dans l’Explorateur de fichiers.
 
 :::image type="content" source="media/onedrive-teams.png" alt-text="Explorateur de fichiers affichant Teams listes Edge avec cases à cocher effacées et lecture de texte avec pointage exclu de la synchronisation.":::
 

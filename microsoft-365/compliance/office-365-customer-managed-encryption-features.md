@@ -8,19 +8,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous allez découvrir les technologies de chiffrement que vous pouvez gérer et configurer dans Microsoft 365.
-ms.openlocfilehash: 6a693c512100c59eef47414fdd6eab4a2924e835
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80a0726e112324a673fc964a9fabdbc3ba0ac42e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206131"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201804"
 ---
 # <a name="customer-managed-encryption-features"></a>Fonctionnalités de chiffrement gérées par le client
 
@@ -44,9 +44,9 @@ Azure RMS est intégré à Microsoft 365 et disponible pour tous les clients. Po
 
 Lorsque vous protégez les données client avec Azure RMS, Azure RMS utilise une clé asymétrique RSA 2048 bits avec algorithme de hachage SHA-256 pour l’intégrité afin de chiffrer les données. La clé symétrique pour Office documents et e-mails est AES 128 bits. Pour chaque document ou e-mail protégé par Azure RMS, Azure RMS crée une clé AES unique (la « clé de contenu ») et cette clé est incorporée dans le document et persiste par le biais des éditions du document. La clé de contenu est protégée avec la clé RSA de l’organisation (la « clé de client Azure Information Protection ») dans le cadre de la stratégie dans le document, et la stratégie est également signée par l’auteur du document. Cette clé de client est commune à tous les documents et messages électroniques protégés par Azure RMS pour l’organisation et cette clé ne peut être modifiée que par un administrateur Azure Information Protection si l’organisation utilise une clé de client gérée par le client. Pour plus d’informations sur les contrôles de chiffrement utilisés par Azure RMS, voir [Comment fonctionne Azure RMS ? Sous le capot](/information-protection/understand-explore/how-does-it-work).
 
-Dans une implémentation Azure RMS par défaut, Microsoft génère et gère la clé racine unique pour chaque client. Les clients peuvent gérer le cycle de vie de leur clé racine dans Azure RMS avec Azure Key Vault Services à l’aide d’une méthode de gestion de clé appelée [ByOK (Bring Your Own Key)](/azure/information-protection/plan-implement-tenant-key) qui vous permet de générer votre clé dans des HSM locaux (modules de sécurité matériels) et de garder le contrôle de cette clé après le transfert vers les HSM validés de niveau 2 fiPS 140-2 de Microsoft. L’accès à la clé racine n’est accordé à aucun personnel, car les clés ne peuvent pas être exportées ou extraites des HSM qui les protègent. En outre, vous pouvez accéder à un journal en temps quasi réel affichant tous les accès à la clé racine à tout moment. Pour plus d’informations, voir [Logging and Analyzing Azure Rights Management Usage .](/azure/information-protection/log-analyze-usage)
+Dans une implémentation Azure RMS par défaut, Microsoft génère et gère la clé racine unique pour chaque client. Les clients peuvent gérer le cycle de vie de leur clé racine dans Azure RMS à l’aide des services Azure Key Vault à l’aide d’une méthode de gestion de clé appelée [ByOK (Bring Your Own Key)](/azure/information-protection/plan-implement-tenant-key) qui vous permet de générer votre clé dans des HSM locaux (modules de sécurité matériels) et de garder le contrôle de cette clé après le transfert vers les HSM validés de niveau 2 fiPS 140-2 de Microsoft. L’accès à la clé racine n’est accordé à aucun personnel, car les clés ne peuvent pas être exportées ou extraites des HSM qui les protègent. En outre, vous pouvez accéder à un journal en temps quasi réel affichant tous les accès à la clé racine à tout moment. Pour plus d’informations, voir [Logging and Analyzing Azure Rights Management Usage .](/azure/information-protection/log-analyze-usage)
 
-Azure Rights Management contribue à atténuer les menaces telles que le coup de fil, les attaques de l’homme au milieu, le vol de données et les violations involontaires de stratégies de partage d’organisation. En même temps, tout accès non autorisé à des données client en transit ou au repos par un utilisateur non autorisé qui ne prend pas les autorisations appropriées est empêché via des stratégies qui suivent ces données, réduisant ainsi le risque que ces données tombent entre de mauvaises mains, en connaissance de cause ou sans le savoir, et en fournissant des fonctions de protection contre la perte de données. S’il est utilisé dans le cadre d’Azure Information Protection, Azure RMS fournit également des fonctionnalités de classification et d’étiquetage des données, de marquage de contenu, de suivi d’accès aux documents et de révocation d’accès. Pour en savoir plus sur ces fonctionnalités, voir Qu’est-ce [qu’Azure Information Protection](/information-protection/understand-explore/what-is-information-protection), feuille de route de déploiement Azure Information [Protection](/information-protection/plan-design/deployment-roadmap)et didacticiel de démarrage rapide pour Azure [Information Protection](/information-protection/get-started/infoprotect-quick-start-tutorial).
+Azure Rights Management contribue à atténuer les menaces telles que le coup de fil, les attaques de l’intermédiaire de l’utilisateur, le vol de données et les violations involontaires de stratégies de partage d’organisation. En même temps, tout accès non autorisé à des données client en transit ou au repos par un utilisateur non autorisé qui ne prend pas les autorisations appropriées est empêché via des stratégies qui suivent ces données, réduisant ainsi le risque que ces données tombent entre de mauvaises mains, en connaissance de cause ou sans le savoir, et en fournissant des fonctions de protection contre la perte de données. S’il est utilisé dans le cadre d’Azure Information Protection, Azure RMS fournit également des fonctionnalités de classification et d’étiquetage des données, de marquage de contenu, de suivi d’accès aux documents et de révocation d’accès. Pour en savoir plus sur ces fonctionnalités, voir Qu’est-ce [qu’Azure Information Protection](/information-protection/understand-explore/what-is-information-protection), feuille de route de déploiement Azure Information [Protection](/information-protection/plan-design/deployment-roadmap)et didacticiel de démarrage rapide pour Azure [Information Protection](/information-protection/get-started/infoprotect-quick-start-tutorial).
 
 ## <a name="secure-multipurpose-internet-mail-extension"></a>Secure Multipurpose Internet Mail Extension
 

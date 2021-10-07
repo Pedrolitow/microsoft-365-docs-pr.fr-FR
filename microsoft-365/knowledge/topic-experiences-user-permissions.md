@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment administrer les autorisations de rubrique dans Sujets Microsoft Viva.
-ms.openlocfilehash: 9a391d3a51d5ed7a8b4e17f4f310600284c87f54
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 40c573d8740a35923f649079920ce57b6c4ba2dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205236"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202762"
 ---
 # <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Gérer les autorisations de rubrique dans Sujets Microsoft Viva
 
@@ -23,7 +23,7 @@ Vous pouvez gérer les paramètres d’autorisations de rubrique dans [le Centre
 
 Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
-- Les utilisateurs qui peuvent créer et modifier des rubriques : Créez des rubriques qui n’ont pas été trouvées lors de la découverte ou modifiez les détails d’une rubrique existante.
+- Les utilisateurs qui peuvent créer et modifier des rubriques : créez des rubriques qui n’ont pas été trouvées lors de la découverte ou modifiez les détails d’une rubrique existante.
 - Les utilisateurs qui peuvent gérer les rubriques : accéder au centre de gestion des rubriques et consulter les commentaires sur les sujets, ainsi que déplacer des rubriques tout au long du cycle de vie.
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :

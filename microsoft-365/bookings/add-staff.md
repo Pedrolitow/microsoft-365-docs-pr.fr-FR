@@ -6,14 +6,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Cette page permet de créer votre liste de membres du personnel et de gérer les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: 3b61c2f3e5597208ace2a87a7d203e8d724e4f5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea9025edd20289aa404471f6c1d245e7bf5c7d4e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203526"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202152"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
@@ -51,7 +51,7 @@ Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Un e-mail de notification de Bookings.":::
 
-7. La sélection d’événements **Office 365 votre** calendrier affecte la disponibilité si vous souhaitez que les informations de disponibilité des calendriers des membres du personnel affectent la disponibilité des services bookings via Bookings.
+7. La sélection d’événements **Office 365 le calendrier** affecte la disponibilité si vous souhaitez que les informations de disponibilité des calendriers des membres du personnel affectent la disponibilité des services bookings via Bookings.
 
     Par exemple, si un membre du personnel a une réunion d’équipe ou un rendez-vous personnel prévu pour 15h00 le mercredi, Bookings indique que ce membre du personnel n’est pas disponible pour être réservé dans ce créneau horaire. Cette heure apparaîtra comme occupée ou provisoire dans l’affichage Calendrier Bookings, comme illustré dans l’exemple ci-dessous.
 
@@ -62,7 +62,7 @@ Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de
 
 8. Sélectionnez Utiliser **les** heures d’ouverture pour définir toutes les heures de réservation pour que les membres de votre personnel soient uniquement pendant les heures d’ouverture que vous avez définies dans la **section** Heures d’ouverture de la page Informations professionnelles.
 
-    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent davantage la durée de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement les mardis et mercredis sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
+    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent les heures de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement les mardis et mercredis sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
 
     > [!NOTE]
     > Seuls les 31 premiers membres du personnel que vous ajoutez à la page de votre personnel s’affichent lorsque vous affectez des membres du personnel à un service.

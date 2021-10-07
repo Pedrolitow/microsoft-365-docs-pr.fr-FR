@@ -1,13 +1,13 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
-description: Les règles de réduction de la surface d’attaque peuvent empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
+description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b006b5e402033bda44be35446dfb8b6253bae671
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7ba6f456ff97644d43157c433a1cec136c17270a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491098"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201480"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 
@@ -101,7 +101,7 @@ Les notifications et les alertes générées peuvent être vues dans le portail 
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Événements de réduction de la surface d’attaque et de recherche avancée
 
-Vous pouvez utiliser le hunting avancé pour afficher les événements de réduction de la surface d’attaque. Pour simplifier le volume des données entrantes, seuls les processus uniques pour chaque heure sont consultables avec le hunting avancé. L’heure d’un événement de réduction de la surface d’attaque est la première fois que cet événement est vu dans l’heure.
+Vous pouvez utiliser la recherche avancée pour afficher les événements de réduction de la surface d’attaque. Pour simplifier le volume des données entrantes, seuls les processus uniques pour chaque heure sont consultables avec le hunting avancé. L’heure d’un événement de réduction de la surface d’attaque est la première fois que cet événement est vu dans l’heure.
 
 Par exemple, supposons qu’un événement de réduction de la surface d’attaque se produise sur 10 appareils pendant l’heure de 14 h 00. Supposons que le premier événement s’est produit à 2:15 et le dernier à 2:45. Avec le hunting avancé, vous verrez une instance de cet événement (même si elle s’est réellement produite sur 10 appareils) et son timestamp sera 14:15 PM.
 
@@ -116,10 +116,10 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent [pas Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Les fonctionnalités avancées, disponibles uniquement dans Windows E5, sont les suivantes :
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas [Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Les fonctionnalités avancées, disponibles uniquement dans Windows E5, sont les suivantes :
 
 - Surveillance, analyse et flux de travail disponibles dans [Defender for Endpoint](microsoft-defender-endpoint.md)
-- Fonctionnalités de rapport et de configuration dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+- Fonctionnalités de rapport et de configuration [dans Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3. Toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 

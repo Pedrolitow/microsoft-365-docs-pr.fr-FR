@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-smandalika
 author: v-smandalika
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0ceb715549c208ccc7f961c115083c50e56dd526
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7c61f0fa0ac3e8017a96b9d5ed57fe7ec970af8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193984"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analyseur de performances pour les Antivirus Microsoft Defender
 
@@ -61,7 +61,7 @@ Pour commencer à enregistrer les événements système, ouvrez PowerShell en mo
 
 3. Appuyez **sur Entrée** pour arrêter et enregistrer l’enregistrement, ou **sur Ctrl+C** pour annuler l’enregistrement.
 
-4. Analysez les résultats à l’aide du paramètre de l’analyseur de `Get-MpPerformanceReport` performances. Par exemple, lors de l’exécution de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` les performances. 
+4. Analysez les résultats à l’aide du paramètre de l’analyseur `Get-MpPerformanceReport` de performances. Par exemple, lors de l’exécution de la commande, l’utilisateur est fourni avec une liste des dix premières analyses pour les 3 premiers fichiers affectant `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10` les performances. 
 
 Pour plus d’informations sur les paramètres de ligne de commande et les options, voir [New-MpPerformanceRecording](#new-mpperformancerecording) et [Get-MpPerformanceReport](#get-mpperformancereport).
 
@@ -89,7 +89,7 @@ Pour obtenir des exemples qui décrivent le processus d’exportation et de conv
 
 - **Pour convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions requises
 Antivirus Microsoft Defender’analyseur de performances présente les conditions préalables suivantes :
 
 - Versions Windows prise en charge : Windows 10, Windows 11 et versions Windows Server 2016 versions ultérieures
@@ -132,7 +132,7 @@ Windows Version 10 et ultérieures.
 
 #### <a name="examples-new-mpperformancerecording"></a>Exemples : New-MpPerformanceRecording
 
-##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Exemple 1 : Collecter un enregistrement des performances et l’enregistrer
+##### <a name="example-1-collect-a-performance-recording-and-save-it"></a>Exemple 1 : collecter un enregistrement des performances et l’enregistrer
 
 ```powershell
 New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-Spécifie le nombre de fichiers principaux à sortier pour chaque extension supérieure, triés par « Durée ».
+Spécifie le nombre de fichiers principaux à obtenir pour chaque extension supérieure, triés par « Durée ».
 
 
 ```yaml

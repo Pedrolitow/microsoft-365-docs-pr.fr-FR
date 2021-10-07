@@ -10,19 +10,19 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 09/17/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0809de7a30a624394103b8e6c3fb594e72c7cd77
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 4650bb23cd7b486ba608a47f99cdfa6cf5b05045
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043154"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213732"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
@@ -51,7 +51,7 @@ Le présent article contient les sections suivantes :
 > [!IMPORTANT]
 > Gardez les points suivants à l’esprit :
 >
-> - Les exclusions personnalisées sont prioritaires sur les exclusions automatiques.
+> - Les exclusions personnalisées prévalent sur les exclusions automatiques.
 > - Les exclusions automatiques s’appliquent uniquement à l’analyse de la protection en temps réel (RTP). Les exclusions automatiques ne sont pas honorées lors d’une analyse complète, d’une analyse rapide ou d’une analyse à la demande.
 > - Les exclusions personnalisées et dupliquées ne sont pas en conflit avec les exclusions automatiques.
 > - Antivirus Microsoft Defender utilise les outils gestion et maintenance des images de déploiement (DISM) pour déterminer les rôles installés sur votre ordinateur.
@@ -320,7 +320,7 @@ Cette section répertorie les exclusions de dossiers qui sont automatiquement li
 - `%systemroot%\SoftwareDistribution\Datastore`
 - `%systemroot%\SoftwareDistribution\Download`
 
-## <a name="opting-out-of-automatic-exclusions"></a>Refuser les exclusions automatiques
+## <a name="opting-out-of-automatic-exclusions"></a>Dés exclusions automatiques
 
 Dans Windows Server 2016 et ultérieures, les exclusions prédéfines livrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble des exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour de l’intelligence de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour Windows Server 2016 et ultérieures. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
 

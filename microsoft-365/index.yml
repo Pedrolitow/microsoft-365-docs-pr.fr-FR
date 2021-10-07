@@ -11,7 +11,7 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 06/08/2021
-  localization_priority: Priority
+  ms.localizationpriority: high
 highlightedContent:
   items:
     - title: Configurer votre infrastructure pour un travail hybride
@@ -212,7 +212,7 @@ additionalContent:
           links:
             - text: Outlook pour iOS et Android
               url: 'https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/'
-            - text: "Exchange\_Online"
+            - text: Exchange Online
               url: /Exchange/exchange-online
             - text: Plus concernant Exchange >
               url: /Exchange

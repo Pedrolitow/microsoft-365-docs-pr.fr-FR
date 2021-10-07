@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3b111fe66e35bcd87898eefa2d336b8031651098
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 22dcd3345e4a58a4ee38a4e9e8f20fb4d76f3f60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163595"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202560"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Mise en place de Microsoft 365 pour Defender
 
@@ -56,9 +56,9 @@ L’Microsoft 365 Defender et le déploiement de services vous donnent accès au
 
 | Fonctionnalité | Description |
 | ------ | ------ |
-| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyse cloud et d’intelligence des menaces |
+| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyses cloud et d’intelligence des menaces |
 |Microsoft Defender pour Office 365 | Protection avancée de vos applications et données dans Office 365, y compris la messagerie électronique et d’autres outils de collaboration |
-| Microsoft Defender pour Identity | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
+| Microsoft Defender pour l’identité | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
 | Microsoft Cloud App Security | Identifier et lutter contre les cybermenaces au sein de vos services cloud Microsoft et tiers |
 
 

@@ -7,7 +7,7 @@ ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Activités post-migration après le passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 3659ce8ffa3424c3521c8f8954be88c7d53d0a51
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 234631b9169b29a557ab3b08f29dd67788575eee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182168"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201612"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Activités post-migration pour la migration à partir de Microsoft Cloud Deutschland
 
-Les sections suivantes fournissent des activités post-migration pour plusieurs services après le passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemands.
+Les sections suivantes fournissent des activités post-migration pour plusieurs services après le déplacement de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemande.
 
 ## <a name="azure-ad"></a>Azure AD
 <!-- This AAD Endpoints comparison table could be added to the documentation, not finally decided.
@@ -65,7 +65,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Les demandes de joindre un groupe Azure AD au cours des 30 derniers jours avant la migration doivent être demandées à nouveau si la demande d’origine n’a pas été approuvée. | Les clients d’utilisateur final devront utiliser le panneau d’accès pour soumettre une demande de rejoindre à nouveau un groupe Azure AD si ces demandes n’ont pas été approuvées au cours des 30 derniers jours avant la migration. |  En tant qu’utilisateur final : <ol><li>Accédez au [panneau d’accès.](https://account.activedirectory.windowsazure.com/r#/joinGroups)</li><li>Recherchez un groupe Azure AD pour lequel l’approbation de l’appartenance était en attente pendant les 30 jours avant la migration.</li><li>Demandez à rejoindre à nouveau le groupe Azure AD.</li></ol> Les demandes de participation à un groupe actif moins de 30 jours avant la migration ne peuvent pas être approuvées, sauf si elles sont demandées à nouveau après la migration. |
+| Les demandes de joindre un groupe Azure AD au cours des 30 derniers jours avant la migration doivent être demandées à nouveau si la demande d’origine n’a pas été approuvée. | Les clients d’utilisateur final devront utiliser le panneau d’accès pour soumettre une demande de rejoindre à nouveau un groupe Azure AD si ces demandes n’ont pas été approuvées au cours des 30 derniers jours avant la migration. |  En tant qu’utilisateur final : <ol><li>Accédez au [panneau d’accès.](https://account.activedirectory.windowsazure.com/r#/joinGroups)</li><li>Recherchez un groupe Azure AD pour lequel l’approbation de l’appartenance était en attente pendant les 30 jours avant la migration.</li><li>Demande de rejoindre à nouveau le groupe Azure AD.</li></ol> Les demandes de participation à un groupe actif moins de 30 jours avant la migration ne peuvent pas être approuvées, sauf si elles sont demandées à nouveau après la migration. |
 ||||
 
 ## <a name="custom-dns-updates"></a>Mises à jour DNS personnalisées

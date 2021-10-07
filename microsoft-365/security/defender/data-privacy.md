@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 196c3d5ddcec082433d3e459a0b122e2f7052e9d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e90a1e8eed376fc267c044e54419e0de01934fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204534"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202584"
 ---
 # <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defender sécurité et confidentialité des données
 

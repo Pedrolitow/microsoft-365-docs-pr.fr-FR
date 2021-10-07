@@ -13,21 +13,21 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
-localization_priority: None
+ms.localizationpriority: ''
 description: Découvrez comment configurer des sources de contenu d’apprentissage pour Apprentissage Microsoft Viva (prévisualisation) dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 977589a9b9500f062edbd962ada895436c9b2c96
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3161841f3c69992d7cc532e86f99bed7704ba016
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182135"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208168"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurer des sources de contenu d’apprentissage Apprentissage Microsoft Viva (prévisualisation) dans le Centre d'administration Microsoft 365
 
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
 
-Les administrateurs de l’Centre d'administration Microsoft 365, soit par eux-mêmes, soit en attribuant le rôle d’administrateur des connaissances à des personnes sélectionnées dans votre organisation, peuvent gérer les paramètres liés à La Learning (prévisualisation) et configurer les sources de contenu d’apprentissage.
+Les administrateurs de l’Centre d'administration Microsoft 365, soit par eux-mêmes, soit en attribuant le rôle d’administrateur du savoir à des personnes sélectionnées dans votre organisation, peuvent gérer les paramètres liés à La Learning (prévisualisation) et configurer les sources de contenu d’apprentissage.
 
 L’administrateur sélectionne les autres sources de contenu d’apprentissage (par exemple, SharePoint ou les sources de fournisseurs de contenu tierces pris en charge) qui seront disponibles pour les utilisateurs de Learning (Prévisualisation). L’administrateur configure ensuite ces sources pour s’assurer que le contenu est disponible pour la recherche et la découverte et qu’il peut être consulté par les employés qui utilisent Learning (Prévisualisation).
 
@@ -43,11 +43,11 @@ Vous devez être un administrateur Microsoft 365 général pour effectuer ces t�
 
 ### <a name="add-a-knowledge-admin"></a>Ajouter un administrateur de connaissances
 
-Pour ajouter un administrateur de connaissances à Learning (prévisualisation), suivez les étapes suivantes :
+Pour ajouter un administrateur de connaissances pour Learning (prévisualisation), suivez les étapes suivantes :
 
-1. Dans le navigation gauche du Centre d'administration Microsoft 365, allez à **Rôles.**
+1. Dans le navigation gauche de la Centre d'administration Microsoft 365, allez à **Rôles**.
 
-2. Dans la page **Rôles,** sous **l’onglet Azure AD,** sélectionnez **Administrateur de la connaissance.**
+2. Dans la page **Rôles,** sous **l’onglet Azure AD,** sélectionnez **Administrateur de connaissances.**
  
 3. Dans le **panneau Administrateur des** connaissances, sélectionnez **Administrateurs affectés,** puis **ajoutez**.
 
@@ -61,7 +61,7 @@ Pour ajouter un administrateur de connaissances à Learning (prévisualisation),
 
 Pour supprimer un administrateur de connaissances pour Learning (prévisualisation), suivez les étapes suivantes :
 
-1. Dans le navigation gauche du Centre d'administration Microsoft 365, allez à **Rôles.**
+1. Dans le navigation gauche de la Centre d'administration Microsoft 365, allez à **Rôles**.
 
 2. Dans la page **Rôles,** sous **l’onglet Azure AD,** puis sélectionnez **Administrateur de connaissances.**
  
@@ -73,15 +73,15 @@ Pour supprimer un administrateur de connaissances pour Learning (prévisualisati
 
 Vous devez être administrateur général Microsoft 365 administrateur général ou administrateur du savoir pour effectuer ces tâches.
 
-Pour configurer les paramètres d’apprentissage des sources de contenu dans Learning, suivez les étapes suivantes :
+Pour configurer les paramètres des sources de contenu d’apprentissage dans Learning, suivez les étapes suivantes :
 
 1. Dans le navigation de gauche de la Centre d'administration Microsoft 365, Paramètres  >  **paramètres de l’organisation.**
 
-2. Dans la page **Paramètres de l’organisation,** sous l’onglet **Services,** **sélectionnez Learning (Aperçu).**
+2. Dans la page **Paramètres de l’organisation,** sous l’onglet **Services,** sélectionnez **Learning (Aperçu).**
 
-     ![Paramètres page de la Centre d'administration Microsoft 365 affichant l’application Learning répertoriée.](../media/learning/learning-sharepoint-configure1.png)
+     ![Paramètres page du Centre d'administration Microsoft 365 affichant l’application Learning répertoriée.](../media/learning/learning-sharepoint-configure1.png)
 
-3. Dans le **panneau Learning (Prévisualisation),** sélectionnez les sources de contenu d’apprentissage que vous souhaitez configurer pour l’organisation, puis sélectionnez **Enregistrer.**
+3. Dans le **panneau Learning (prévisualisation),** sélectionnez les sources de contenu d’apprentissage que vous souhaitez configurer pour l’organisation, puis sélectionnez **Enregistrer.**
 
      ![Learning panneau de la Centre d'administration Microsoft 365 des options de sources de contenu.](../media/learning/learning-sharepoint-configure2.png)
 
@@ -93,19 +93,19 @@ Parmi toutes les sources d’apprentissage existantes, certaines seront activée
 
 > [!NOTE]
 > Le contenu gratuit LinkedIn est fourni aux utilisateurs dans le cadre des politiques de confidentialité et du contrat utilisateur LinkedIn. LinkedIn recevra l’adresse IP de l’utilisateur, tous les cookies précédemment définies par LinkedIn, et définira un nouveau cookie pour suivre l’utilisation du contenu gratuit. Les utilisateurs n’ont pas besoin de se connecter avec LinkedIn pour recevoir du contenu gratuit.<br><br>
-Pour le contenu Premium LinkedIn, votre organisation a besoin d’un abonnement pour que votre équipe accède à ce contenu. Les utilisateurs devront se connecter à LinkedIn pour accéder à cette formation, qui est fournie dans les conditions des conditions d’utilisation et de votre organisation avec LinkedIn.<br><br> Pour le contenu non-Microsoft (à l’exception du contenu LinkedIn gratuit), assurez-vous que votre organisation dispose d’un abonnement pour que vos utilisateurs accèdent à ce contenu à l’aide d’un compte de travail avant de le connecter à Learning (Prévisualisation). Les abonnements personnels des utilisateurs à des fournisseurs d’apprentissage non-Microsoft ne seront pas intégrés à Learning (Prévisualisation). Les utilisateurs se connectent à des utilisateurs non-Microsoft et LinkedIn Learning Pro des connaissances dans un navigateur ou une visionneuse incorporée. Si les utilisateurs naviguent vers du contenu dans lequel ils n’ont pas d’abonnement professionnel, ils peuvent voir une page de fournisseur dans laquelle ils peuvent s’inscrire à un abonnement individuel. Tous les apprentissages non-Microsoft sont fournis dans le cadre des termes du fournisseur non-Microsoft et non dans le cadre de Learning. 
+Pour le contenu Premium LinkedIn, votre organisation a besoin d’un abonnement pour que votre équipe accède à ce contenu. Les utilisateurs devront se connecter à LinkedIn pour accéder à cette formation, qui est fournie dans les conditions des conditions d’utilisation et de votre organisation avec LinkedIn.<br><br> Pour le contenu non-Microsoft (à l’exception du contenu LinkedIn gratuit), assurez-vous que votre organisation dispose d’un abonnement pour que vos utilisateurs accèdent à ce contenu à l’aide d’un compte de travail avant de le connecter à Learning (Prévisualisation). Les abonnements personnels des utilisateurs à des fournisseurs d’apprentissage non-Microsoft ne seront pas intégrés à l’Learning (Prévisualisation). Les utilisateurs se connectent à des utilisateurs non-Microsoft et LinkedIn Learning Pro des connaissances dans un navigateur ou une visionneuse incorporée. Si les utilisateurs naviguent vers du contenu dans lequel ils n’ont pas d’abonnement professionnel, ils peuvent voir une page de fournisseur dans laquelle ils peuvent s’inscrire à un abonnement individuel. Tous les apprentissages non-Microsoft sont fournis dans le cadre des termes du fournisseur non-Microsoft et non dans le cadre de Learning. 
 
 Pour activer ou désactiver une source de contenu d’apprentissage, activez la case à cocher en regard de la source. Si une source est activée, une coche est visible.
 
 ## <a name="third-party-content-providers"></a>Fournisseurs de contenu tiers 
 
-L’ensemble des fournisseurs d’apprentissage connectés disponibles peut changer à tout moment. D’autres fournisseurs rejoignent le programme au fil de l’expansion du programme. Les fournisseurs disponibles peuvent également choisir d’interrompre leur connexion avec Learning (Prévisualisation).
+L’ensemble des fournisseurs d’apprentissage connectés disponibles peut changer à tout moment. D’autres fournisseurs participeront au programme au fil de l’expansion du programme. Les fournisseurs disponibles peuvent également choisir d’interrompre leur connexion avec Learning (Prévisualisation).
 
 ### <a name="skillsoft-as-a-content-source"></a>Skillsoft en tant que source de contenu  
 
-Pour Le Learning de Domaine (Prévisualisation), les utilisateurs qui ont Activé Skillsoft et choisissent d’afficher du contenu Skillsoft seront redép[s] sur une page Percipio qui leur demande d’entrer le nom du site Percipio de votre organisation. Une fois que les utilisateurs ont indiqué le nom du site de votre organisation, ils sont dirigés vers la page pour se connecter au site Percipio de votre organisation. Les utilisateurs se connectent à l’aide de leurs informations d’identification existantes et voient le contenu qu’ils ont initialement sélectionné. Les utilisateurs ne seront invités à saisir le nom du site Percipio qu’une seule fois, jusqu’à ce que leur cache de navigateur soit effacé. Pour simplifier cette expérience pour vos utilisateurs, nous vous recommandons d’inclure votre nom de site Percipio dans les communications internes que vous envoyez à propos de Learning (prévisualisation).
+Pour l’Learning De Domaine (Prévisualisation), les utilisateurs qui ont Activé Compétences et qui choisissent d’afficher du contenu Skillsoft seront redép[s] sur une page Percipio qui leur demande d’entrer le nom du site Percipio de votre organisation. Une fois que les utilisateurs ont indiqué le nom du site de votre organisation, ils sont dirigés vers la page pour se connecter au site Percipio de votre organisation. Les utilisateurs se connectent à l’aide de leurs informations d’identification existantes et voient le contenu qu’ils ont initialement sélectionné. Les utilisateurs ne seront invités à saisir le nom du site Percipio qu’une seule fois, jusqu’à ce que leur cache de navigateur soit effacé. Pour simplifier cette expérience pour vos utilisateurs, nous vous recommandons d’inclure votre nom de site Percipio dans les communications internes que vous envoyez à propos de Learning (prévisualisation).
 
-Il s’agit d’une expérience temporaire pour la prévisualisation, et nous travaillons avec Skillsoft pour permettre une intégration propre au client pour la disponibilité générale, ce qui contournera l’étape qui oblige les utilisateurs à fournir le nom du site Percipio de votre organisation. 
+Il s’agit d’une expérience temporaire pour la prévisualisation, et nous travaillons avec Skillsoft pour activer l’intégration propre au client pour la disponibilité générale, ce qui contournera l’étape qui oblige les utilisateurs à fournir le nom du site Percipio de votre organisation. 
 
 ### <a name="details-on-microsoft-substrate"></a>Détails sur le substrat Microsoft  
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e542a76e55e0ed9d75a1756026ff9a4f8c1d59ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e5616b74fd8fb3a5667244d3fa5c97b5a4fbd57f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179876"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201840"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gérer les dépositaires dans un Advanced eDiscovery de gestion
 
@@ -91,7 +91,7 @@ Pour mettre à jour les sources de données associées à un dépositaire :
 
     Pour plus d’informations sur les sources de données associées à un dépositaire, voir [Ajouter des dépositaires à un cas.](add-custodians-to-case.md) 
   
-6. Cliquez **sur Placer les conservations** pour activer ou désactiver la conservation pour le dépositaire.
+6. Cliquez **sur Placer les conservations** en conservation pour activer ou désactiver la conservation pour le dépositaire.
 
 ## <a name="re-index-custodian-data"></a>Ré-indexer les données des dépositaires
 
@@ -113,7 +113,7 @@ Pour déclencher le processus de ré-indexation afin de traiter les éléments p
 
 La ré-indexation des données des dépositaires est un processus de longue durée . la tâche correspondante créée est nommée **Re-indexation des données du dépositaire**. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou sous l’onglet **Dépositaires** en surveillant l’état dans la colonne État du travail **d’indexation.**
 
-Pour plus d’informations, consultez :
+Pour plus d'informations, voir :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 
@@ -121,7 +121,7 @@ Pour plus d’informations, consultez :
 
 ## <a name="release-a-custodian-from-a-case"></a>Libérer un dépositaire d’un cas
 
-Un dépositaire est libéré lorsqu’un cas est fermé, qu’il n’est plus tenu de conserver le contenu d’un cas, ou lorsque le dépositaire est considéré comme non pertinent pour le cas. 
+Un dépositaire est libéré lorsqu’un cas est fermé, qu’il n’est plus tenu de conserver le contenu d’un cas ou lorsque le dépositaire est considéré comme n’étant plus pertinent pour le cas. 
 
 Si vous relâchez un dépositaire après la publication d’une notification de conservation, une notification de publication est envoyée au dépositaire. En outre, les conservations placées sur les sources de données associées au dépositaire sont supprimées. Si le dépositaire *a* été placé en conservation silencieuse, où il n’a reçu aucune notification de conservation légale, aucune notification de publication n’est envoyée, mais les conservations placées sur les sources de données associées à ce dépositaire sont supprimées.
 

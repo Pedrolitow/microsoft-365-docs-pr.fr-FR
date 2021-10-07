@@ -2,7 +2,7 @@
 title: Cas de gestion des risques internes
 description: En savoir plus sur les cas de gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 55373830a351bc3bad40a4a492101c5ac011d8b0
-ms.sourcegitcommit: dd4214a309c71292490743752da728cec7bffe88
+ms.openlocfilehash: a8ab9bbc71924f7934ce9a21190323869a7238bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59479524"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188156"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
 
@@ -25,7 +25,7 @@ Les cas sont au cœur de la gestion des risques internes et vous permettent d’
 
 Après avoir ouvert une enquête sur les détails d’un cas, vous pouvez prendre des mesures en :
 
-- envoi d’un avis à l’utilisateur
+- envoi d’une notification à l’utilisateur
 - résolution du cas comme étant anodin
 - partage du cas avec votre instance ServiceNow ou avec un destinataire de courrier électronique
 - escalade du cas pour une enquête Advanced eDiscovery de recherche
@@ -37,7 +37,7 @@ Consultez la vidéo [Examen](https://www.youtube.com/watch?v=UONUSmkRC8s) et esc
 Le tableau de bord Cas **de** gestion des risques internes vous permet d’afficher les cas et d’agir sur ces cas. Chaque widget de rapport sur le tableau de bord affiche des informations pour les 30 derniers jours.
 
 - **Cas actifs**: nombre total de cas actifs en cours d’examen.
-- **Cas au cours des 30 derniers** jours : nombre total de cas créés, triés par *état Actif* *et* Fermé.
+- **Cas au cours des 30 derniers** jours : nombre total de cas créés, triés par *état actif* *et* fermé.
 - **Statistiques**: durée moyenne des cas actifs, répertoriée en heures, jours ou mois.
 
 La file d’attente répertorie tous les cas actifs et fermés pour votre organisation, en plus de l’état actuel des attributs de cas suivants :
@@ -48,11 +48,11 @@ La file d’attente répertorie tous les cas actifs et fermés pour votre organi
 - **Cas d’heure ouvert**: temps écoulé depuis l’ouverture du cas.
 - **Nombre total d’alertes de** stratégie : nombre de correspondances de stratégie incluses dans le cas. Ce nombre peut augmenter si de nouvelles alertes sont ajoutées au cas.
 - **Dernière mise à jour du** cas : le temps écoulé depuis l’ajout d’une note de cas ou d’une modification dans l’état du cas.
-- **Last updated by**: The name of the insider risk management analyst or investigator that last updated the case.
+- **Dernière mise à jour par**: nom de l’analyste ou de l’enquêteur de gestion des risques internes qui a mis à jour le cas pour la dernière fois.
 
 ![Tableau de bord Cas de gestion des risques internes.](../media/insider-risk-cases-dashboard.png)
 
-Utilisez le contrôle **de** recherche pour rechercher des noms de cas pour du texte spécifique et utiliser le filtre de cas pour trier les cas selon les attributs suivants :
+Utilisez le **contrôle de** recherche pour rechercher des noms de cas pour du texte spécifique et utiliser le filtre de cas pour trier les cas selon les attributs suivants :
 
 - Statut
 - Heure d'ouverture du cas, date de début et la date de fin
@@ -60,7 +60,7 @@ Utilisez le contrôle **de** recherche pour rechercher des noms de cas pour du t
 
 ## <a name="filter-cases"></a>Filtrer des cas
 
-Selon le nombre et le type de stratégies actives de gestion des risques internes dans votre organisation, l’examen d’une file d’attente de cas importante peut être difficile. L’utilisation de filtres de cas permet aux analystes et aux enquêteurs de trier les cas par plusieurs attributs. Pour filtrer les alertes dans le tableau de bord **Cas,** sélectionnez **le contrôle** Filtre. Vous pouvez filtrer les cas par un ou plusieurs attributs :
+Selon le nombre et le type de stratégies de gestion des risques internes actives dans votre organisation, l’examen d’une file d’attente de cas importante peut être difficile. L’utilisation de filtres de cas permet aux analystes et aux enquêteurs de trier les cas par plusieurs attributs. Pour filtrer les alertes dans le tableau de bord **Cas,** sélectionnez **le contrôle** Filtre. Vous pouvez filtrer les cas par un ou plusieurs attributs :
 
 - **État**: sélectionnez une ou plusieurs valeurs d’état pour filtrer la liste des cas. Les options sont *Active* et *Closed*.
 - **Cas d’heure ouvert**: sélectionnez les dates de début et de fin de l’ouverture du cas.
@@ -68,7 +68,7 @@ Selon le nombre et le type de stratégies actives de gestion des risques interne
 
 ## <a name="investigate-a-case"></a>Examiner un cas
 
-Un examen plus approfondi des alertes de gestion des risques internes est essentiel pour prendre des mesures correctives appropriées. Les cas de gestion des risques internes sont l’outil central de gestion permettant d’approfondir l’historique des activités des risques utilisateur, les détails des alertes, la séquence des événements de risque et d’explorer le contenu et les messages exposés aux risques. Les analystes et enquêteurs de risque utilisent également des cas pour centraliser les commentaires et les notes de révision et pour traiter la résolution des cas.
+Un examen plus approfondi des alertes de gestion des risques internes est essentiel pour prendre des mesures correctives appropriées. Les cas de gestion des risques internes sont l’outil central de gestion pour approfondir l’historique des activités des risques utilisateur, les détails des alertes, la séquence des événements de risque et explorer le contenu et les messages exposés aux risques. Les analystes et enquêteurs de risque utilisent également des cas pour centraliser les commentaires et les notes de révision et pour traiter la résolution des cas.
 
 La sélection d’un cas ouvre les outils de gestion des cas et permet aux analystes et aux enquêteurs d’approfondir les détails des cas.
 
@@ -103,9 +103,9 @@ La sélection d’un cas ouvre les outils de gestion des cas et permet aux analy
 
 Sélectionnez une alerte dans la file d’attente pour afficher la page **détails de l’alerte.**
 
-Utilisez le contrôle de recherche pour rechercher des noms d’alertes pour un texte spécifique et utilisez le filtre d’alerte pour trier les cas selon les attributs suivants :
+Utilisez le contrôle de recherche pour rechercher des noms d’alerte pour un texte spécifique et utilisez le filtre d’alerte pour trier les cas selon les attributs suivants :
 
-- Statut
+- État
 - Severity
 - Heure détectée, la date de début et la date de fin
 
@@ -122,13 +122,13 @@ L’onglet **Activité des utilisateurs** est l’un des outils les plus perform
 
 ![Activité des utilisateurs de gestion des risques internes.](../media/insider-risk-user-activities.png)
 
-1. **Filtres de** temps : par défaut, les six derniers mois d’alertes confirmées dans le cas sont affichés dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique en sélectionnant les onglets *6 mois,* *3* mois ou *1* mois sur le graphique en bulles.
+1. **Filtres d’heure**: par défaut, les six derniers mois d’alertes confirmées dans le cas sont affichés dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique en sélectionnant les onglets *6 mois,* *3* mois ou *1* mois sur le graphique en bulles.
 2. **Activité et détails** des alertes de risque : les activités de risque sont affichées visuellement sous forme de bulles de couleur dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risque et la taille des bulles est proportionnelle au nombre d’activités de risque pour la catégorie. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
     - **Date** de l’activité de risque.
     - Catégorie **d’activité de risque.** Par exemple, *e-mail(s) avec* des pièces jointes envoyées à l’extérieur de l’organisation ou fichiers *téléchargés* à partir de SharePoint Online .
     - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
     - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou e-mail associé à l’activité de risque sont également disponibles.
-3. **Séquence de risques (aperçu)**: l’ordre chronologique des activités risquées est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus importante. Cette vue des activités peut aider les enquêteurs à « connecter les points » pour les activités à risque qui auraient pu être vues comme des événements isolés ou isolés. Sélectionnez n’importe quelle bulle dans l’ordre pour afficher les détails de toutes les activités de risque associées. Les détails sont les suivants :
+3. **Séquence de risques (aperçu)**: l’ordre chronologique des activités risquées est un aspect important de l’examen des risques et l’identification de ces activités connexes est un élément important de l’évaluation du risque global pour votre organisation. Les activités d’alerte associées sont affichées avec des lignes de connexion pour souligner que ces activités sont associées à une zone de risque plus importante. Cette vue des activités peut aider les enquêteurs à « connecter les points » aux activités à risque qui auraient pu être vues comme des événements isolés ou isolés. Sélectionnez n’importe quelle bulle dans l’ordre pour afficher les détails de toutes les activités de risque associées. Les détails sont les suivants :
 
     - **Nom** de la séquence.
     - **Plage de** **dates ou de** dates de la séquence.
@@ -153,7 +153,7 @@ Pour plus d’informations sur l’Explorateur d’activités, consultez l’art
 
 **L’onglet Explorateur de** contenu permet aux enquêteurs de risque d’examiner les copies de tous les fichiers et messages électroniques associés aux alertes de risque. Par exemple, si une alerte est créée lorsqu’un utilisateur télécharge des centaines de fichiers à partir de SharePoint Online et que l’activité déclenche une alerte de stratégie, tous les fichiers téléchargés pour l’alerte sont capturés et copiés dans le cas de gestion des risques internes à partir des sources de stockage d’origine.
 
-L’Explorateur de contenu est un outil puissant avec des fonctionnalités de recherche et de filtrage de base et avancées. Pour en savoir plus sur l’utilisation de l’Explorateur de contenu, voir [l’Explorateur](insider-risk-management-content-explorer.md)de contenu de gestion des risques internes.
+L’Explorateur de contenu est un outil puissant avec des fonctionnalités de recherche et de filtrage de base et avancées. Pour en savoir plus sur l’utilisation de l’Explorateur de contenu, voir [l’Explorateur de](insider-risk-management-content-explorer.md)contenu de gestion des risques internes.
 
 ![Explorateur de contenu de cas de gestion des risques internes.](../media/insider-risk-content-explorer.png)
 
@@ -165,7 +165,7 @@ Le tableau de bord des notes de cas affiche les notes de l’utilisateur qui a c
 
 Pour ajouter une note à un cas :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Notes** de cas.
 3. Sélectionnez **Ajouter une note de cas.**
 4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou **sélectionnez Annuler** fermer sans enregistrer la note dans le cas.
@@ -182,25 +182,25 @@ L’accès temporaire à un cas peut être accordé en ajoutant un utilisateur e
 
 Pour ajouter un collaborateur à un cas :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Collaborateurs.**
 3. Sélectionnez **Ajouter un collaborateur.**
-4. Dans la **boîte de dialogue** Ajouter un collaborateur, commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir de la Azure Active Directory de votre abonnement client.
+4. Dans la **boîte de** dialogue Ajouter un collaborateur, commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir de la Azure Active Directory de votre abonnement client.
 5. Sélectionnez **Ajouter** pour ajouter l’utilisateur en tant que collaborateur ou sélectionnez **Annuler** fermer la boîte de dialogue sans ajouter l’utilisateur en tant que collaborateur.
 
 ## <a name="case-actions"></a>Actions de cas
 
-Les enquêteurs des risques peuvent agir sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
+Les enquêteurs des risques peuvent agir sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider avec la gestion de la résolution de bout en bout.
 
 ### <a name="send-email-notice"></a>Envoyer une notification par courrier électronique
 
-Dans la plupart des cas, les actions de l’utilisateur qui créent des alertes de risque internes sont accidentelles ou accidentelles. L’envoi d’une notification de rappel à l’utilisateur par courrier électronique est une méthode efficace pour documenter la révision et l’action des cas, et permet de rappeler aux utilisateurs les stratégies d’entreprise ou de les faire pointer vers une formation d’actualisation. Les avis sont générés à partir de [modèles d’avis](insider-risk-management-notices.md) que vous créez pour votre infrastructure de gestion des risques internes.
+Dans la plupart des cas, les actions de l’utilisateur qui créent des alertes de risque internes sont accidentelles ou accidentelles. L’envoi d’une notification de rappel à l’utilisateur par courrier électronique est une méthode efficace pour documenter la révision et l’action des cas, et une méthode pour rappeler aux utilisateurs les stratégies d’entreprise ou les faire pointer vers une formation d’actualisation. Les avis sont générés à partir de [modèles d’avis](insider-risk-management-notices.md) que vous créez pour votre infrastructure de gestion des risques internes.
 
 Il est important de se souvenir que l’envoi d’une notification par courrier électronique à un utilisateur ***** ne résout pas le cas comme _Closed*. Dans certains cas, vous pouvez laisser un cas ouvert après avoir envoyé une notification à un utilisateur pour rechercher d’autres activités à risque sans ouvrir de nouveau cas. Si vous voulez résoudre un cas après l’envoi d’une notification, vous devez sélectionner le **Résoudre un cas** sous la forme d’une étape de suivi après l’envoi d’une notification.
 
 Pour envoyer une notification à l’utilisateur affecté à un cas :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis sélectionnez le bouton Envoyer une notification par **courrier** électronique dans la barre d’outils de l’action de cas.
 3. Dans la boîte de dialogue Envoyer  un **avis** par courrier électronique, sélectionnez le contrôle de liste de listes des modèles d’avis pour sélectionner le modèle d’avis pour l’avis. Cette sélection pré-remplit les autres champs de l’avis.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
@@ -212,9 +212,9 @@ Faire passer le cas pour l’examen de l’utilisateur dans les situations où u
 
 Pour faire recaler un cas à un examen par un utilisateur :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
-2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils d’action de cas.
-3. Dans la **boîte de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
+2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils de l’action de cas.
+3. Dans la boîte **de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
 5. Sélectionnez **Confirmer** pour créer le cas d’enquête de l’utilisateur ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de nouveau cas d’enquête utilisateur.
 
@@ -241,7 +241,7 @@ Pour en savoir plus sur les Power Automate pour la gestion des risques internes,
 
 Lorsque Microsoft Teams pour la gestion des risques internes est activée dans les paramètres, une équipe Microsoft Teams est automatiquement créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Les enquêteurs des risques et les analystes peuvent rapidement ouvrir Microsoft Teams et accéder directement à l’équipe pour un cas en sélectionnant Afficher l’équipe **Microsoft Teams** dans la barre d’outils d’action du cas.
 
-Pour les cas ouverts avant d’activer l’intégration de Microsoft Team, les enquêteurs de risque et les analystes peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant Créer une équipe **Microsoft Teams** dans la barre d’outils de l’action de cas.
+Pour les cas ouverts avant d’activer l’intégration de Microsoft Team, les enquêteurs et analystes de risque peuvent créer une équipe Microsoft Teams pour un cas en sélectionnant Créer une équipe **Microsoft Teams** dans la barre d’outils d’action du cas.
 
 Lorsqu’un cas est résolu, l’équipe Microsoft associée est automatiquement archivée (masquée et en lecture seule).
 
@@ -258,6 +258,6 @@ Pour résoudre un cas :
 
 1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **Gestion** des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis sélectionnez le **bouton Résoudre** le cas dans la barre d’outils d’action de cas.
-3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez **résoudre** en tant que contrôle de la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
+3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez le contrôle **Résoudre** en tant que la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
 4. Dans la **boîte de dialogue Résoudre le cas,** entrez les raisons de la classification de résolution dans le champ de texte **Action** prise.
 5. Sélectionnez **Résoudre** pour fermer le cas ou **annuler** la boîte de dialogue sans résoudre le cas.

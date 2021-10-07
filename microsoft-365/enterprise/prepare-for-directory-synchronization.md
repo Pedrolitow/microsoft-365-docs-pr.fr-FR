@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -25,13 +25,13 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Décrit comment préparer la mise en service des utilisateurs Microsoft 365 l’aide de la synchronisation d’annuaires et les avantages à long terme de l’utilisation de cette méthode.
-ms.openlocfilehash: 389f0ca682538baed21432220c16ad7cb269daa0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Décrit comment préparer la mise en service des utilisateurs Microsoft 365 à l’aide de la synchronisation d’annuaires et les avantages à long terme de l’utilisation de cette méthode.
+ms.openlocfilehash: 4bd244edfa11df315f83e78c97ec7fe63b5c2d9d
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209210"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216885"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
@@ -49,6 +49,9 @@ Toutefois, la synchronisation d’annuaires nécessite une planification et une 
 
 Suivez ces étapes pour obtenir les meilleurs résultats.
 
+> [!NOTE]
+> Les caractères non ASCII ne sont synchronisés pour aucun attribut sur le compte d’utilisateur AD DS.
+
 ## <a name="1-directory-cleanup-tasks"></a>1. Tâches de nettoyage de l’annuaire
 
 Avant de synchroniser vos AD DS avec votre client Azure AD, vous devez nettoyer vos AD DS.
@@ -64,7 +67,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
 
 3. Si possible, assurez-vous d’une valeur valide et unique pour l’attribut **userPrincipalName** dans l’objet utilisateur de **l’utilisateur.** Pour une meilleure expérience de synchronisation, assurez-vous que l’UPN AD DS correspond à l’UPN Azure AD. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName,** l’objet utilisateur doit contenir une valeur valide et unique pour l’attribut **sAMAccountName.**  Supprimez les valeurs dupliquées dans **l’attribut userPrincipalName.**
 
-4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations des attributs suivants du compte d’utilisateur AD DS sont correctes :
+4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations dans les attributs suivants du compte d’utilisateur AD DS sont correctes :
 
    - givenName
    - surname
@@ -143,7 +146,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
 
 - **targetAddress**
 
-    Il est nécessaire que l’attribut **targetAddress** (par exemple, SMTP:tom@contoso.com) qui est rempli pour l’utilisateur apparaisse dans la Microsoft 365 LAL. Dans les scénarios de migration de messagerie tiers, cela nécessite l’extension Microsoft 365 schéma pour les services AD DS. L Microsoft 365 d’extension de schéma ajoute également d’autres attributs utiles pour gérer les objets Microsoft 365 qui sont remplis à l’aide d’un outil de synchronisation d’annuaires à partir d’AD DS. Par exemple, l’attribut **msExchHideFromAddressLists** pour gérer les boîtes aux lettres masquées ou les groupes de distribution est ajouté.
+    Il est nécessaire que l’attribut **targetAddress** (par exemple, SMTP:tom@contoso.com) qui est rempli pour l’utilisateur apparaisse dans la Microsoft 365 LAL. Dans les scénarios de migration de messagerie tiers, cela nécessite l’extension Microsoft 365 schéma pour les services AD DS. L Microsoft 365 d’extension de schéma ajoute également d’autres attributs utiles pour gérer les objets Microsoft 365 qui sont remplis à l’aide d’un outil de synchronisation d’annuaires à partir d’AD DS. Par exemple, l’attribut **msExchHideFromAddressLists** pour gérer les boîtes aux lettres masquées ou les groupes de distribution serait ajouté.
 
   - Nombre maximal de caractères : 256
   - La valeur d’attribut ne doit pas contenir d’espace.
@@ -162,7 +165,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Les lettres avec des marques diacritiques, telles que les umlauts, les accents et les tildes, sont des caractères non valides.
   - Le caractère @ est requis dans chaque **valeur userPrincipalName.**
   - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**.
-  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e ( ), un espace ou un &amp; signe at (@).
+  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e ( ), un espace ou &amp; un signe at (@).
   - Le nom d’utilisateur ne peut pas contenir d’espaces.
   - Les domaines routables doivent être utilisés ; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
   - Unicode est converti en caractères de trait de soulignement.

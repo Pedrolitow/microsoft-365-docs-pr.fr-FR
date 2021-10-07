@@ -11,19 +11,19 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques par consentement illicite dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 263bffc6eb0fc45725fa91895b7197bf40d9a956
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204449"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202409"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -37,7 +37,7 @@ ms.locfileid: "59204449"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-microsoft-365"></a>Qu’est-ce que l’attaque par consentement illicite Microsoft 365 ?
 
-Dans le cas d’une attaque par consentement illicite, l’attaquant crée une application enregistrée par Azure qui demande l’accès à des données telles que des informations de contact, des e-mails ou des documents. L’attaquant astuces ensuite un utilisateur final pour accorder à cette application l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site web approuvé. Une fois l’application illicite accordée, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte d’organisation. Les étapes de correction normales, telles que la réinitialisation des mots de passe pour les comptes en violation ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces externes à l’organisation.
+Dans le cas d’une attaque par consentement illicite, l’attaquant crée une application enregistrée par Azure qui demande l’accès à des données telles que des informations de contact, des e-mails ou des documents. L’attaquant astuces ensuite un utilisateur final pour accorder à cette application l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site web approuvé. Une fois que l’application illicite a obtenu son consentement, elle dispose d’un accès au niveau du compte aux données sans avoir besoin d’un compte d’organisation. Les étapes de correction normales, telles que la réinitialisation des mots de passe pour les comptes en violation ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces externes à l’organisation.
 
 Ces attaques tirent parti d’un modèle d’interaction qui suppose que l’entité qui appelle les informations est une automatisation et non une personne.
 
@@ -46,7 +46,7 @@ Ces attaques tirent parti d’un modèle d’interaction qui suppose que l’ent
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>À quoi ressemble une attaque d’octroi de consentement illicite dans Microsoft 365 ?
 
-Vous devez effectuer une recherche dans le journal **d’audit** pour trouver des signes, également appelés indicateurs de compromission (IOC) de cette attaque. Pour les organisations avec de nombreuses applications inscrites dans Azure et une base d’utilisateurs importante, la meilleure pratique consiste à examiner les octrois de consentement de votre organisation une fois par semaine.
+Vous devez effectuer une recherche dans le journal **d’audit** pour trouver des signes, également appelés indicateurs de compromission (IOC) de cette attaque. Pour les organisations avec de nombreuses applications inscrites dans Azure et une base d’utilisateurs importante, la meilleure pratique consiste à examiner les octrois de consentement de votre organisation sur une base hebdomadaire.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Étapes de recherche des signes de cette attaque
 
@@ -80,7 +80,7 @@ Si vous avez une ou plusieurs instances des CCI répertoriées ci-dessus, vous d
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>Inventaire des applications avec accès dans votre organisation
 
-Vous pouvez le faire pour vos utilisateurs avec le portail Azure Active Directory ou PowerShell, ou faire en sorte que vos utilisateurs émanent individuellement leur accès aux applications.
+Vous pouvez le faire pour vos utilisateurs avec le portail Azure Active Directory ou PowerShell ou faire en sorte que vos utilisateurs édent individuellement leur accès aux applications.
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>Étapes d’utilisation du portail Azure Active Directory web
 
@@ -94,9 +94,9 @@ Vous pouvez rechercher les applications pour lesquelles un utilisateur individue
 
 Cela vous indique les applications qui sont affectées à l’utilisateur et les autorisations dont elles ont.
 
-### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Étapes pour que vos utilisateurs émanent l’accès à leur application
+### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Étapes à suivre pour que vos utilisateurs éummentent l’accès à leur application
 
-Demande à vos utilisateurs d’y accéder et de consulter <https://myapps.microsoft.com> leur propre accès aux applications. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
+Demande à vos utilisateurs <https://myapps.microsoft.com> d’y accéder et de consulter leur propre accès à l’application. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre pour ce faire avec PowerShell
 
@@ -174,4 +174,4 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 - [L’intégration d’applications Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) est une vue d’ensemble générale du consentement et des autorisations.
 - [Les problèmes liés au développement de mon application](/azure/active-directory/active-directory-application-dev-development-content-map) fournissent des liens vers différents articles relatifs au consentement.
 - Les objets principaux d’application et de service dans [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) offrent une vue d’ensemble des objets principaux d’application et de service qui sont essentiels au modèle d’application.
-- [Gérer l’accès aux applications](/azure/active-directory/active-directory-managing-access-to-apps) est une vue d’ensemble des fonctionnalités dont les administrateurs ont besoin pour gérer l’accès des utilisateurs aux applications.
+- [La gestion de l’accès aux applications](/azure/active-directory/active-directory-managing-access-to-apps) est une vue d’ensemble des fonctionnalités dont les administrateurs ont besoin pour gérer l’accès des utilisateurs aux applications.

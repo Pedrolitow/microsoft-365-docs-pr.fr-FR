@@ -7,7 +7,7 @@ ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Cet article fournit des listes de contrôle et d’autres ressources à planifier pour Microsoft 365 Entreprise déploiement.
-ms.openlocfilehash: e914d5ea5f145197e348fd88fe7cf2b287a883f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7cec2c8eebb35d215bb46370de5a2019118d6310
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205612"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201684"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planifier les Microsoft 365 Entreprise
 
@@ -43,7 +43,7 @@ Lorsque vous déplacez une organisation vers Microsoft 365, il est important de 
 
 ## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planification du do-it-yourself pour Microsoft 365
 
-Pour planifier les Microsoft 365 vous-même, avancez pas à pas dans les décisions de planification et de conception pour ces domaines :
+Pour planifier des Microsoft 365 vous-même, avancez pas à pas dans les décisions de planification et de conception pour ces domaines :
 
 - Votre client Microsoft 365
 

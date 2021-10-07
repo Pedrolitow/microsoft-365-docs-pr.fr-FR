@@ -7,7 +7,7 @@ ms.date: 04/09/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: Liens vers des cours de formation, des blogs, des articles et d’autres ressources qui vous indiquent comment améliorer les performances des Microsoft 365.
-ms.openlocfilehash: 6e6e224eb1f08effeae6c6189f61699834897172
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3f4bd5127ab2d4d59f56f656b4a286329ead0e3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179644"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202726"
 ---
 # <a name="tune-microsoft-365-performance"></a>Optimiser les performances de Microsoft 365
 
@@ -32,6 +32,6 @@ Cet article fait partie de la planification réseau et de l’optimisation des p
    
 ## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a>Articles sur le réglage des performances Microsoft 365 et Office 365 performances
 
-Regardez les [10](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) premiers conseils pour optimiser et dépanner votre connectivité réseau Office 365 par Paul Collinge. 
+Regardez les [10](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) premiers conseils pour optimiser et dépanner votre Office 365 réseau par Paul Collinge. 
   
 Pour plus d’informations sur l’utilisation de la traduction d’adresses réseau avec Microsoft 365, voir la prise en charge [nat avec Microsoft 365](nat-support-with-microsoft-365.md).

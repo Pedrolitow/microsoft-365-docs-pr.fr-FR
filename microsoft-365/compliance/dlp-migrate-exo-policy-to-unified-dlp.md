@@ -1,5 +1,5 @@
 ---
-title: Migrer Exchange Online stratégies de protection contre la perte de données vers le Centre de conformité
+title: Migrer des stratégies de protection contre la perte de données Exchange Online vers le Centre de conformité
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -11,21 +11,21 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Découvrez comment planifier et migrer vos stratégies Exchange protection contre la perte de données en ligne vers Microsoft 365 DLP.
-ms.openlocfilehash: 2cf06b7aee9adb63ff85259427bcac818807cc7c
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c1929af423259de770d561421945d471c9022ab4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400521"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201876"
 ---
-# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Migrer Exchange Online stratégies de protection contre la perte de données vers le Centre de conformité
+# <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Migrer des stratégies de protection contre la perte de données Exchange Online vers le Centre de conformité
 
 Exchange Online stratégies de protection contre la perte de données [(DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) sont en cours d’precaté. [Des fonctionnalités DLP](dlp-learn-about-dlp.md)beaucoup plus riches, notamment Exchange Online DLP, sont proposées dans le centre [Microsoft 365 conformité.](https://compliance.microsoft.com/datalossprevention?viewid=policies) Vous pouvez utiliser l’Assistant Migration des stratégies DLP pour vous aider à faire migrer vos stratégies DLP Exchange Online vers le centre de conformité où vous les gérerez.
 
@@ -96,14 +96,14 @@ Une fois que vous avez évalué toutes vos stratégies DLP Exchange et du centre
 
 1. Ouvrez la console [DLP Microsoft 365 conformité.](https://compliance.microsoft.com/datalossprevention?viewid=policies)
 2. Si des stratégies Exchange DLP peuvent être migrées, une bannière s’affiche en haut de la page pour vous en faire savoir plus.
-3. Sélectionnez **Migrer des stratégies** dans la bannière pour ouvrir l’Assistant migration. Toutes les stratégies Exchange DLP sont répertoriées. Les stratégies précédemment migrées ne peuvent pas être sélectionnées.
-4. Sélectionnez les stratégies que vous souhaitez migrer. Vous pouvez les migrer individuellement ou en groupes à l’aide d’une approche par phases ou en même temps. Sélectionnez **Suivant**.
+3. Sélectionnez **Migrer des stratégies** dans la bannière pour ouvrir l’Assistant Migration. Toutes les stratégies Exchange DLP sont répertoriées. Les stratégies précédemment migrées ne peuvent pas être sélectionnées.
+4. Sélectionnez les stratégies que vous souhaitez migrer. Vous pouvez les migrer individuellement ou en groupes à l’aide d’une approche par phases ou en une seule fois. Sélectionnez **Suivant**.
 5. Examinez le volet volant pour obtenir des avertissements ou des messages. Résolvez les problèmes avant de poursuivre.
 6. Sélectionnez le mode dans qui vous souhaitez créer la nouvelle stratégie du Centre de conformité, **Active,** **Test** ou **Désactivé.**  La valeur par défaut **est Test**. Sélectionnez **Suivant**.
 7. Si vous le souhaitez, vous pouvez créer des stratégies supplémentaires basées sur les stratégies Exchange DLP pour d’autres emplacements DLP unifiés. Cela entraîne la génération d’une nouvelle stratégie DLP unifiée pour la stratégie Exchange migrée et d’une nouvelle stratégie DLP unifiée pour tous les emplacements supplémentaires que vous sélectionnez ici.
 
 > [!IMPORTANT]
-> Toutes les conditions et actions de stratégie DLP Exchange qui ne sont pas prises en charge par d’autres emplacements DLP, tels que périphériques, SharePoint, OneDrive, sur site, MCAS ou les messages de conversation et de canal Teams seront supprimés de la stratégie supplémentaire. En outre, un travail préalable doit être effectué pour les autres emplacements. Voir :
+> Toutes les conditions et actions de stratégie DLP Exchange qui ne sont pas prises en charge par d’autres emplacements DLP, tels que périphériques, SharePoint, OneDrive, sur site, MCAS ou les messages de conversation et de canal Teams seront supprimés de la stratégie supplémentaire. En outre, des travaux préalables doivent être effectués pour les autres emplacements. Voir :
 >- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 >- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 >- [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
@@ -121,7 +121,7 @@ Les stratégies migrées apparaissent désormais dans la liste des stratégies D
 
 Testez et examinez vos stratégies.
 
-1. Suivez les procédures [de stratégie Test a DLP.](create-test-tune-dlp-policy.md#test-a-dlp-policy)
+1. Suivez les [procédures de stratégie Test d’une stratégie DLP.](create-test-tune-dlp-policy.md#test-a-dlp-policy)
 2. Examinez les événements créés par la stratégie dans [l’Explorateur d’activités.](data-classification-activity-explorer.md)
 
 ## <a name="review-the-policy-matches-between-exchange-admin-center-dlp-and-microsoft-365-unified-dlp"></a>Passer en revue les correspondances de stratégie entre Exchange DLP du Centre d’administration Microsoft 365 la DLP unifiée
@@ -129,7 +129,7 @@ Testez et examinez vos stratégies.
 Pour vous assurer que les stratégies migrées se comportent comme prévu, vous pouvez exporter les rapports à partir des deux centres d’administration et comparer les correspondances de stratégie.
 
 1. Connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-2. Exportez le [rapport DLP du EAC.](/powershell/module/exchange/get-maildetaildlppolicyreport?view=exchange-ps) Vous pouvez copier cette cmdlet et insérer les valeurs appropriées :
+2. Exporter le [rapport DLP du EAC.](/powershell/module/exchange/get-maildetaildlppolicyreport?view=exchange-ps) Vous pouvez copier cette cmdlet et insérer les valeurs appropriées :
 
 ```powershell
 Get-MailDetailDlpPolicyReport -StartDate <dd/mm/yyyy -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, MessageId, DlpPolicy, TransportRule -Unique | Export-CSV <"C:\path\filename.csv"> 

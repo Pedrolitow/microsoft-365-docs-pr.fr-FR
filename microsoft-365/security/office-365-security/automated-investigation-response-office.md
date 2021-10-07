@@ -7,7 +7,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e91f0947f9622c81fb9340c09ea52c85ea567af6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e421f29ec1723ad724c64991e67bd0da31bb35b6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163548"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202488"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Fonctionnement de l’examen et de la réponse automatisés dans Microsoft Defender Office 365
 
@@ -66,7 +66,7 @@ Une fois l’examen racine terminé, le manuel fournit la liste des actions reco
 Ensuite, plusieurs étapes d’examen et de recherche des menaces sont exécutées :
 
 - Des messages électroniques similaires sont identifiés via des recherches de cluster de messagerie.
-- Le signal est partagé avec d’autres plateformes, telles que [Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- Le signal est partagé avec d’autres plateformes, telles [que Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - Il est déterminé si des utilisateurs ont cliqué sur des liens malveillants dans des messages électroniques suspects.
 - Une vérification est effectuée sur Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) et ([Microsoft Defender pour Office 365](defender-for-office-365.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
 - Une vérification est effectuée pour voir si un utilisateur a été compromis. Cette vérification exploite les signaux entre Office 365, [Microsoft Cloud App Security](/cloud-app-security)et [Azure Active Directory](/azure/active-directory), en corrélant les anomalies d’activité des utilisateurs connexes.

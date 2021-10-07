@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/11/2021
-ms.openlocfilehash: 79129d25c730f7948269c4291e53e3fc953af329
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ad1a58b47b6e84366cbaf7bceea19ec9fe6bc52
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177708"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213835"
 ---
 # <a name="configure-attack-surface-reduction-capabilities"></a>Configurer les fonctionnalités de la réduction de la surface d’attaque
 
@@ -55,7 +55,7 @@ Defender pour le point de terminaison inclut plusieurs fonctionnalités de rédu
 7. Configurer votre pare-feu réseau.
 
    1. Obtenez une vue d’ensemble [Windows Defender pare-feu avec une sécurité avancée.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-   2. Utilisez le guide [de Windows Defender pare-feu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour décider de la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
+   2. Utilisez le guide [Windows Defender pare-feu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) pour déterminer la façon dont vous souhaitez concevoir vos stratégies de pare-feu.
    3. Utilisez le [guide Windows Defender pare-feu](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) pour configurer le pare-feu de votre organisation avec une sécurité avancée.
 
 > [!TIP]

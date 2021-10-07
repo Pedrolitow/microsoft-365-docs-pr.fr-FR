@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Vue d’ensemble du processus de planification de la protection contre la perte de données
-ms.openlocfilehash: 130675ad15a872ed14041289fb24aeec471014ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 144f07a75bc7ab2ae5cd06b04328f91f06c9a91f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183535"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201900"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planifier la protection contre la perte de données (DLP)
 
@@ -51,7 +51,7 @@ Lorsqu’elles sont implémentées, les stratégies DLP peuvent être appliquée
 - décrire les réglementations, lois et normes industrielles soumises à votre organisation
 - catégories d’éléments sensibles à protéger ;
 - les processus d’entreprise dans
-- comportement à risque qui doit être limité ;
+- le comportement à risque qui doit être limité ;
 - hiérarchiser les données qui doivent être protégées en premier en fonction de la sensibilité des éléments et des risques impliqués
 - décrire le processus de révision et de correction des événements de correspondance de stratégie DLP 
  
@@ -134,7 +134,7 @@ Lorsque vous commencez à adopter la DLP, vous pouvez utiliser ces questions pou
 
 Une fois que votre organisation sait où elle se trouve en termes de exigences de conformité réglementaire, vous avez une idée des éléments sensibles qui doivent être protégés contre les fuites et de la façon dont vous souhaitez hiérarchiser l’implémentation de la stratégie pour les protéger. Cela vous aidera à choisir les modèles de stratégie DLP les plus appropriés. Microsoft 365 est livré avec des modèles DLP pré-configurés pour les données financières, médicales et médicales, la confidentialité, et vous pouvez créer vos propres modèles à l’aide du modèle personnalisé. Lorsque vous concevez et créez vos stratégies DLP réelles, le fait de connaître la réponse à cette question vous aidera également à choisir le [type d’informations sensibles qui vous est le plus utile.](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 
-**Exemple** Pour commencer rapidement, vous choisissez le modèle de stratégie, qui inclut les types d’informations sensibles `U.K. Financial Data` `Credit Card Number` et les types `EU Debit Card Number` `SWIFT Code` d’informations sensibles. 
+**Exemple** Pour commencer rapidement, vous sélectionnez le modèle de stratégie, qui inclut les types d’informations sensibles `U.K. Financial Data` `Credit Card Number` et les types `EU Debit Card Number` `SWIFT Code` d’informations sensibles. 
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>Où sont les éléments sensibles et dans quels processus d’entreprise sont-ils impliqués ?
 
@@ -152,16 +152,16 @@ Les éléments qui contiennent des informations sensibles de votre organisation 
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Quelle est la tolérance de votre organisation pour les fuites ?
 
-Différents groupes de votre organisation peuvent avoir différents affichages sur un niveau acceptable de fuite d’éléments sensibles et sur ce qui n’est pas le cas. L’obtention d’une fuite sans fuite peut avoir un coût trop élevé pour l’entreprise.
+Différents groupes de votre organisation peuvent avoir différents affichages sur le niveau acceptable de fuite d’éléments sensibles et sur ce qui ne l’est pas. L’obtention d’une fuite sans fuite peut avoir un coût trop élevé pour l’entreprise.
 
-**Exemple** Le groupe de sécurité de votre organisation, ainsi que l’équipe juridique, estiment qu’il ne doit pas y avoir de partage de numéros de carte de crédit avec des personnes extérieures à l’organisation et qu’ils ne doivent pas être en fuite. Toutefois, dans le cadre d’un examen régulier de l’activité des numéros de carte de crédit, les auditeurs internes doivent partager certains numéros de carte de crédit avec des auditeurs tiers. Si votre stratégie DLP interdit tout partage de numéros de carte de crédit en dehors de l’organisation, il y aura une perturbation importante du processus d’entreprise et un coût supplémentaire pour atténuer la perturbation afin que les auditeurs internes terminent leur suivi. Ce coût supplémentaire est inacceptable pour la direction. Pour résoudre ce problème, une conversation interne doit être nécessaire pour déterminer un niveau acceptable de fuite. Une fois cette stratégie décidée, elle peut fournir des exceptions pour que certaines personnes partagent les informations ou elle peut être appliquée en mode audit uniquement.
+**Exemple** Le groupe de sécurité de votre organisation, ainsi que l’équipe juridique, estiment qu’il ne doit pas y avoir de partage de numéros de carte de crédit avec des personnes extérieures à l’organisation et qu’ils ne doivent pas être en fuite. Toutefois, dans le cadre d’un examen régulier de l’activité des numéros de carte de crédit, les auditeurs internes doivent partager certains numéros de carte de crédit avec des auditeurs tiers. Si votre stratégie DLP interdit tout partage de numéros de carte de crédit en dehors de l’organisation, il y aura une perturbation importante du processus d’entreprise et un coût supplémentaire pour atténuer la perturbation afin que les auditeurs internes terminent leur suivi. Ce coût supplémentaire est inacceptable pour la direction. Pour résoudre ce problème, une conversation interne doit être nécessaire pour déterminer un niveau acceptable de fuite. Une fois cette décision prise, la stratégie peut fournir des exceptions pour que certaines personnes partagent les informations ou elle peut être appliquée en mode audit uniquement.
 
 #### <a name="planning-for-prerequisites"></a>Planification des conditions préalables
 
 Avant de pouvoir surveiller certains emplacements DLP, il existe des conditions préalables qui doivent être remplies. Consultez les sections **Avant de commencer** :
 
 - [Prise en main du scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-get-started.md#before-you-begin)
-- [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#before-you-begin)
+- [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#before-you-begin)
 - [Mise en place de l’extension de conformité Microsoft (prévisualisation)](dlp-chrome-get-started.md#before-you-begin)
 - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non-Microsoft (aperçu)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 
@@ -197,11 +197,11 @@ Les réglementations, les lois et les normes industrielles soumises à votre org
 
 ## <a name="approaches-to-deployment"></a>Approches du déploiement
 
-|Description des besoins commerciaux des clients  | approche  |
+|Description des besoins de l’entreprise client  | approche  |
 |---------|---------|
 |**Contoso Bank** se trouve dans un secteur hautement réglementé et dispose de nombreux types différents d’éléments sensibles dans de nombreux emplacements différents. </br> - sait quels types d’informations sensibles sont prioritaires. </br> - doit minimiser les perturbations de l’activité lors du programme de déployé des stratégies. </br> - dispose de ressources informatiques et peut faire appel à des experts pour vous aider à planifier et à concevoir le déploiement </br> - a un contrat de support premier avec Microsoft| - Prenez le temps de comprendre les réglementations qu’ils doivent respecter et la façon dont ils vont se conformer. </br> -Prenez le temps de comprendre la meilleure valeur ensemble de la pile Microsoft 365 protection des informations personnelles </br> - Développer un modèle d’étiquetage de niveau de sensibilité pour les éléments hiérarchisés et appliquer </br> - Impliquer les propriétaires de processus d’entreprise </br>- Stratégies de conception/code, déployer en mode test, former les utilisateurs </br>- répéter|
 |**TailSpin Toys** ne sait pas ce qu’ils ont ou où il se trouve, et ont peu ou pas de profondeur de ressources. Ils utilisent Teams, OneDrive Entreprise et Exchange de manière étendue.     |- Commencez par des stratégies simples sur les emplacements hiérarchisés. </br>- Surveiller ce qui est identifié </br>- Appliquer les étiquettes de niveau de sensibilité en conséquence </br>- Affiner les stratégies, former les utilisateurs       |
-|**Fabrikam est** un petit démarrage et souhaite protéger sa propriété intellectuelle et doit se déplacer rapidement. Ils sont prêts à dédier des ressources, mais ne peuvent pas se permettre d’engager des experts externes. </br>- Les éléments sensibles sont tous dans Microsoft 365 OneDrive Entreprise/SharePoint </br>- L’adoption de OneDrive Entreprise et SharePoint est lente, les employés/shadow IT utilisent DropBox et Google Drive pour partager/stocker des éléments </br>- Vitesse de travail des employés par rapport à la protection des données </br>- Le client s’est lancé et a acheté les 18 nouveaux appareils Windows 10 employés     |- Tirez parti de la stratégie DLP par défaut dans Teams </br>- Utiliser restreint par défaut pour les éléments de SharePoint </br>- Déployer des stratégies qui empêchent le partage externe </br>- Déployer des stratégies vers des emplacements hiérarchisés </br>- Déployer des stratégies sur Windows 10 périphériques </br>- Bloquer les téléchargements vers le stockage cloud OneDrive Entreprise non-stockage      |
+|**Fabrikam est** un petit démarrage et souhaite protéger sa propriété intellectuelle et doit se déplacer rapidement. Ils sont prêts à dédier des ressources, mais ne peuvent pas se permettre d’engager des experts externes. </br>- Les éléments sensibles sont tous Microsoft 365 OneDrive Entreprise/SharePoint </br>- L’adoption de OneDrive Entreprise et SharePoint est lente, les employés/shadow IT utilisent DropBox et Google Drive pour partager/stocker des éléments </br>- Vitesse de travail des employés par rapport à la protection des données </br>- Le client s’est lancé et a acheté les 18 nouveaux appareils Windows 10 employés     |- Tirez parti de la stratégie DLP par défaut dans Teams </br>- Utiliser restreint par défaut pour les éléments de SharePoint </br>- Déployer des stratégies qui empêchent le partage externe </br>- Déployer des stratégies vers des emplacements hiérarchisés </br>- Déployer des stratégies sur Windows 10 périphériques </br>- Bloquer les téléchargements vers le stockage cloud OneDrive Entreprise non-stockage      |
 
 <!--
 
@@ -223,4 +223,4 @@ Les réglementations, les lois et les normes industrielles soumises à votre org
 -->
 
 ## <a name="see-also"></a>Voir aussi
-- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)

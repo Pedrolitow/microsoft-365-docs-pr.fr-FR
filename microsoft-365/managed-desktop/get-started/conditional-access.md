@@ -4,17 +4,17 @@ description: Comment exclure certains comptes Microsoft
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e60abb0e8d3cd4d5124c5e82bf4aa0ce8bb1b08f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c46932ea1173e515d0c3b880cb20a80b247ae586
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205140"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202690"
 ---
 # <a name="adjust-settings-after-enrollment"></a>Ajuster les paramètres après l’inscription
 

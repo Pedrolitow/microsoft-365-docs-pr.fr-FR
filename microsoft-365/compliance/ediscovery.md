@@ -14,18 +14,18 @@ ms.collection:
 - m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
 description: Microsoft 365 propose trois outils eDiscovery que vous pouvez utiliser pour rechercher et exporter du contenu trouvé dans différents emplacements tels que les boîtes aux lettres Exchange, les sites SharePoint et OneDrive Entreprise, les groupes Microsoft 365, les Microsoft Teams et les conversations Skype Entreprise. Core eDiscovery et Advanced eDiscovery offrent de nombreuses fonctionnalités supplémentaires pour vous aider à gérer vos enquêtes.
-ms.openlocfilehash: 0dd8ca2e18f1388f4d8a5cdbbbbf401d1d579e10
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: f8419176e8307c6e87d376f04c8395f18c175740
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60087796"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216897"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Solutions eDiscovery dans Microsoft 365
 
@@ -82,7 +82,7 @@ Voici une description de chaque fonctionnalité eDiscovery.
 
 - **Statistiques de recherche.** Après avoir exécuté une recherche, vous pouvez afficher les statistiques des résultats estimés de la recherche, telles que le nombre et la taille totale des éléments correspondant à vos critères de recherche. Les autres statistiques incluent les principaux emplacements de contenu qui contiennent les résultats de recherche et le nombre d’éléments qui correspondent à différentes parties de la requête de recherche.
 
-- **Exporter les résultats de la recherche.** Exporter les résultats de recherche vers un ordinateur local de votre organisation en deux étapes. Lorsque vous exportez des résultats de recherche, les éléments sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 vers un emplacement de recherche stockage Azure Microsoft. Vous pouvez ensuite télécharger ces éléments sur un ordinateur local.
+- **Exporter les résultats de recherche.** Exporter les résultats de recherche vers un ordinateur local de votre organisation en deux étapes. Lorsque vous exportez des résultats de recherche, les éléments sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 vers un emplacement de recherche stockage Azure Microsoft. Vous pouvez ensuite télécharger ces éléments sur un ordinateur local.
 
 - **Autorisations basées sur les rôles.** Utilisez les autorisations d’accès basé sur un rôle (RBAC) pour contrôler les tâches liées à la découverte électronique que différents utilisateurs peuvent effectuer. Vous pouvez utiliser des groupes de rôles eDiscovery intégrés ou créer des groupes de rôles personnalisés qui attribuent des autorisations eDiscovery spécifiques.
 
@@ -90,7 +90,7 @@ Voici une description de chaque fonctionnalité eDiscovery.
 
 - **Placer les emplacements de contenu en attente légale.** Conservez le contenu pertinent pour votre examen en plaçant une conservation légale sur les emplacements de contenu dans un cas. Cela vous permet de sécuriser les informations stockées électroniquement contre toute suppression accidentelle (ou intentionnelle) au cours de votre enquête.
 
-- **Gestion des dépositaires**. Gérez les personnes que vous avez identifiées comme des personnes d’intérêt dans le cas *(appelés dépositaires)* et d’autres sources de données qui ne sont peut-être pas associées à un dépositaire. Lorsque vous ajoutez des dépositaires et des sources de données non privatives à un cas, vous pouvez placer ces sources de données en conservation légale, communiquer avec les dépositaires à l’aide du processus de notification de conservation légale, et rechercher des sources de données de dépositaire et de données sans conservation pour collecter du contenu pertinent pour le cas.
+- **Gestion des dépositaires**. Gérez les personnes que vous avez identifiées comme des personnes d’intérêt dans le cas *(appelés dépositaires)* et d’autres sources de données qui ne sont peut-être pas associées à un dépositaire. Lorsque vous ajoutez des dépositaires et des sources de données non privatives à un cas, vous pouvez placer une conservation légale sur ces sources de données, communiquer avec les dépositaires à l’aide du processus de notification de conservation légale, et rechercher des sources de données de dépositaire et de données sans conservation pour collecter du contenu pertinent pour le cas.
 
 - **Notifications de mise en attente légale.** Gérer le processus de communication avec les dépositaires de cas. Une notification de conservation légale demande aux dépositaires de conserver le contenu pertinent pour le cas. Vous pouvez suivre les notifications reçues, lues et reconnues par les dépositaires. Le flux de travail de communications Advanced eDiscovery vous permet de créer et d’envoyer des notifications initiales, des rappels et des escalades si les dépositaires ne parviennent pas à reconnaître une notification de conservation.
 
@@ -132,6 +132,7 @@ Les sections suivantes indiquent les exigences d’abonnement minimales pour la 
 - Microsoft 365 Abonnement G1
 - Microsoft 365 F1 abonnement F3, ou module de sécurité F5
 - Abonnement Office 365 Éducation A1
+- Office 365 E1 abonnement
 
 ### <a name="core-ediscovery"></a>Core eDiscovery
 
@@ -139,6 +140,7 @@ Les sections suivantes indiquent les exigences d’abonnement minimales pour la 
 - Microsoft 365 G3 abonnement
 - Microsoft 365 Module de conformité F5 ou module & conformité F5
 - Microsoft 365 Éducation Abonnement A3 ou Office 365 Éducation A3
+- Office 365 E3 abonnement
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 

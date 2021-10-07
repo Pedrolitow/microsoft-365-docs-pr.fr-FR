@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6f5cc923b5a18b1f45dd186e88228db8c3a891cc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a3b976accf1f86a96100efb9a890adab4ec3698
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205075"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201552"
 ---
 # <a name="app-control"></a>Contrôle des applications
 
@@ -43,7 +43,7 @@ L’exécution des applications ou des scripts non fiables par la stratégie de 
 
 ## <a name="managing-trust-in-applications"></a>Gestion de l’confiance dans les applications
 
-Microsoft Manged Desktop une stratégie de base qui fait confiance aux principaux composants des technologies Microsoft. Vous *ajoutez ensuite* une relation d’confiance pour vos propres applications et scripts en informant Microsoft Manged Desktop d’entre eux que vous avez déjà confiance.
+Microsoft Manged Desktop une stratégie de base qui fait confiance aux principaux composants des technologies Microsoft. Vous *ajoutez ensuite* l’confiance pour vos propres applications et scripts en informant Microsoft Manged Desktop d’entre eux que vous avez déjà confiance.
 
 ### <a name="base-policy"></a>Stratégie de base
 
@@ -53,11 +53,11 @@ La stratégie de base prend l’approche suivante pour restreindre l’exécutio
 
 - Les fichiers exécutés par les administrateurs seront autorisés à s’exécuter.
 - Les fichiers des emplacements qui *ne sont* pas dans des répertoires accessibles en création par l’utilisateur seront autorisés à s’exécuter.
-- Les fichiers sont signés par un signataire [approuvé.](#signer-requests)
+- Les fichiers sont signés par un [signataire approuvé.](#signer-requests)
 - La plupart des fichiers signés par Microsoft s’exécutent, mais certains d’entre eux sont bloqués pour empêcher les actions à risque élevé telles que la compilation du code.
 
 
-Si un utilisateur autre qu’un administrateur aurait pu ajouter une application ou un script à un appareil (autrement dit, dans un répertoire accessible en écriture par l’utilisateur), nous ne l’autoriserons pas à s’exécuter, sauf si elle a déjà été spécifiquement autorisée par un administrateur. Si un utilisateur est tenté d’installer un programme malveillant, si une vulnérabilité dans une application l’utilisateur tente d’installer un programme malveillant ou si un utilisateur tente intentionnellement d’exécuter une application ou un script non autorisé, notre stratégie arrête l’exécution.
+Si un utilisateur autre qu’un administrateur aurait pu ajouter une application ou un script à un appareil (c’est-à-dire, dans un répertoire accessible en écriture par l’utilisateur), nous ne l’autoriserons pas à s’exécuter, sauf s’il a déjà été spécifiquement autorisé par un administrateur. Si un utilisateur est tenté d’installer un programme malveillant, si une vulnérabilité dans une application l’utilisateur tente d’installer un programme malveillant ou si un utilisateur tente intentionnellement d’exécuter une application ou un script non autorisé, notre stratégie arrête l’exécution.
 
 ### <a name="signer-requests"></a>Demandes des signataires
 

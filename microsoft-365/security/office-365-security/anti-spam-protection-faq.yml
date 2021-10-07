@@ -8,7 +8,7 @@ metadata:
   manager: dansimp
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
@@ -20,12 +20,12 @@ metadata:
   description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre le courrier indésirable dans Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: efcca5d8834c8d4bf67dbf3ee98a07380733bf5f
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59207236"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60202524"
 title: FAQ sur la protection anti-courrier indésirable
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -132,7 +132,7 @@ sections:
   - question: >
       Puis-je utiliser un fournisseur tiers de blocage de courrier indésirable et de programme malveillant en association avec Exchange Online ?
     answer: >
-      Oui. Bien qu’il soit recommandé de pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons légitimes pour l’entreprise d’router votre courrier électronique vers un autre endroit que Microsoft.
+      Oui. Bien qu’il soit recommandé de pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons professionnelles légitimes d’router votre courrier électronique vers un autre endroit que Microsoft.
 
 
       - **Entrant :** modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, [voir Filtrage amélioré pour les connecteurs dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

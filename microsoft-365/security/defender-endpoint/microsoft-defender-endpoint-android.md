@@ -3,15 +3,13 @@ title: Microsoft Defender pour point de terminaison Android
 ms.reviewer: ''
 description: Décrit comment installer et utiliser Microsoft Defender pour endpoint sur Android
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, android, installation, déployer, désinstaller, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 242d0983913a646e34caf4766bcaec90c652fbd3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8da104ced882ae7c163aaea673aea93b9768f938
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203928"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216921"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -39,7 +37,7 @@ ms.locfileid: "59203928"
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Defender pour Endpoint sur Android.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection des points de terminaison tiers avec Defender for Endpoint sur Android est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Defender for Endpoint sur Android est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Comment installer Microsoft Defender pour le point de terminaison sur Android
 
@@ -53,12 +51,14 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 - **Pour les administrateurs**
    - Accès au portail Microsoft 365 Defender web.
-
+   - Accéder [Microsoft Endpoint Manager centre d’administration à](https://go.microsoft.com/fwlink/?linkid=2109431)
+        - Déployez l’application pour les groupes d’utilisateurs inscrits dans votre organisation.
+        - Configurez Microsoft Defender pour les signaux de risque de point de terminaison dans la stratégie de protection des applications.
+  
     > [!NOTE]
-    > - Microsoft Defender pour endpoint étend désormais la protection aux données d’une organisation au sein d’une application gérée pour ceux qui n’utilisent pas la gestion des périphériques mobiles (MDM) mais utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
-    > - En outre, Microsoft Defender pour endpoint prend déjà en charge les appareils inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune.
+    > - Microsoft Defender pour le point de terminaison étend désormais la protection aux données d’une organisation au sein d’une application gérée (MAM) pour les appareils qui ne sont pas inscrits à l’aide de la gestion des périphériques mobiles (MDM), mais qui utilisent Intune pour gérer les applications mobiles. Il étend également cette prise en charge aux clients qui utilisent d’autres solutions de gestion de la mobilité d’entreprise, tout en utilisant Intune pour la gestion des applications mobiles [(MAM).](/mem/intune/apps/mam-faq)
+    > - En outre, Microsoft Defender pour point de terminaison prend déjà en charge les appareils inscrits à l’aide de la gestion des périphériques mobiles (MDM) Intune.
 
-    - Accédez [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431)pour déployer l’application pour les groupes d’utilisateurs inscrits dans votre organisation.
 
 ### <a name="network-requirements"></a>Configuration réseau requise
 
@@ -71,9 +71,10 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ### <a name="installation-instructions"></a>Instructions d’installation
 
-Microsoft Defender pour Endpoint sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : l’administrateur d’appareil hérité et les modes Enterprise Android. **Actuellement, les appareils personnels avec profil de travail et les inscriptions d’appareils utilisateur entièrement gérées par l’entreprise sont pris en charge dans Android Enterprise. La prise en charge des autres modes Enterprise Android sera annoncée lorsque vous serez prêt.**
+Microsoft Defender pour le point de terminaison sur Android prend en charge l’installation sur les deux modes d’appareils inscrits : l’administrateur d’appareil hérité et les modes Enterprise Android. **Actuellement, les appareils personnels avec profil de travail et les inscriptions d’appareils utilisateur entièrement gérées par l’entreprise sont pris en charge dans Android Enterprise. La prise en charge d’autres modes Enterprise Android sera annoncée lorsque vous serez prêt.**
 
-Le déploiement de Microsoft Defender pour Endpoint sur Android s’effectue via Microsoft Intune (MDM). Pour plus d’informations, voir [Déployer Microsoft Defender pour endpoint sur Android avec Microsoft Intune](android-intune.md).
+- Le déploiement de Microsoft Defender pour Endpoint sur Android s’effectue via Microsoft Intune (MDM). Pour plus d’informations, voir [Déployer Microsoft Defender pour endpoint sur Android avec Microsoft Intune](android-intune.md).
+- Installation de Microsoft Defender pour endpoint sur les appareils qui ne sont pas inscrits à l’aide de la gestion des périphériques mobiles Intune (MDM), voir Configurer Microsoft Defender pour les signaux de risque de point de terminaison dans la stratégie de protection des applications [(MAM).](android-configure-mam.md)
 
 > [!NOTE]
 > **Microsoft Defender pour le point de terminaison sur Android est désormais disponible [sur Google Play.](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**

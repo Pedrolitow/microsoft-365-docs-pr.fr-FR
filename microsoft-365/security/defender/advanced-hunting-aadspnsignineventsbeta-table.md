@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a148e2fb1cc0e8fb88797b44ee4d08745728aa34
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82557f955626436236401f622de6f2dc19aba9c2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202973"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202666"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -33,7 +33,7 @@ ms.locfileid: "59202973"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de chercher des événements de signature d’identité gérée et de principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
+> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de faire la recherche dans les événements de signature d’identité gérée et de principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
 
 Le tableau dans le schéma de recherche avancée contient des informations sur Azure Active Directory principal de service et les `AADSpnSignInEventsBeta` sign-ins d’identité gérée. Vous pouvez en savoir plus sur les différents types de Azure Active Directory dans les rapports d’activité de Azure Active Directory de la signature [- aperçu.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
@@ -56,7 +56,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |`ServicePrincipalName`|string|Nom du principal de service à l’origine de la signature|
 |`ServicePrincipalId`|string|Identificateur unique du principal de service à l’origine de la signature|
 |`ResourceDisplayName`|string|Nom d’affichage de la ressource accessible|
-|`ResourceId`|string|Identificateur unique de la ressource à accès|
+|`ResourceId`|string|Identificateur unique de la ressource accessible|
 |`ResourceTenantId`|string|Identificateur unique du client de la ressource à accès|
 |`IPAddress`|string|Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées|
 |`Country`|string|Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé|

@@ -1,7 +1,7 @@
 ---
 title: Découverte et découverte de périphériques réseau gestion des vulnérabilités
 description: Les recommandations de sécurité et la détection des vulnérabilités sont désormais disponibles pour les systèmes d’exploitation des commutateurs, routeurs, contrôleurs WLAN et pare-feu.
-keywords: périphériques réseau, détection de vulnérabilité des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
+keywords: périphériques réseau, détection des vulnérabilités des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: ellevin
 author: levinec
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b67a2551e592e2fd1186985590759d44bdcc177b
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: d95a2d526dc9a696f52c75f9358e6cc56038c1f0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356800"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194092"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et découverte de périphériques réseau gestion des vulnérabilités
 
@@ -38,13 +38,13 @@ ms.locfileid: "59356800"
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]
-> Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la découverte des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte d’appareils réseau dans \) Defender pour endpoint.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour résoudre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
+> Le [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) blog sur les évaluations de la vulnérabilité et de la découverte des périphériques réseau publié le \( 13/04/2021 fournit des informations sur les nouvelles fonctionnalités de découverte d’appareils réseau dans \) Defender pour endpoint.  Cet article fournit une vue  d’ensemble du défi que la découverte de périphériques réseau est conçue pour répondre, ainsi que des informations détaillées sur la façon de commencer à utiliser ces nouvelles fonctionnalités.
 
 Les fonctionnalités de découverte de réseau sont disponibles dans la **section** Inventaire des appareils du centre de sécurité Microsoft 365 et des consoles Microsoft 365 Defender réseau.
 
-Un appareil Microsoft Defender for Endpoint désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités Gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.
+Un appareil Microsoft Defender pour point de terminaison désigné sera utilisé sur chaque segment réseau pour effectuer des analyses authentifiées périodiques des périphériques réseau préconfigurés. Une fois découvertes, les fonctionnalités Gestion des menaces et des vulnérabilités de Defender for Endpoint fournissent des flux de travail intégrés pour sécuriser les commutateurs découverts, les routeurs, les contrôleurs WLAN, les pare-feu et les passerelles VPN.
 
-Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
+Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
 
 ## <a name="approach"></a>Approche
 
@@ -57,7 +57,7 @@ Il y aura deux types d’appareils à garder à l’esprit :
 
 ### <a name="vulnerability-management-for-network-devices"></a>Gestion des vulnérabilités pour les périphériques réseau
 
-Une fois que les périphériques réseau ont été découverts et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
+Une fois les périphériques réseau détectés et classés, les administrateurs de sécurité pourront recevoir les dernières recommandations de sécurité et passer en revue les vulnérabilités récemment découvertes sur les périphériques réseau déployés au sein de leur organisation.
 
 ## <a name="operating-systems-that-are-supported"></a>Systèmes d’exploitation pris en charge
 
@@ -96,11 +96,11 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
     - \*.blob.core.windows.net/networkscannerstable/\*
 
     > [!NOTE]
-    > Toutes les URL ne sont pas spécifiées dans la liste de collecte de données autorisées de Defender for Endpoint.
+    > Toutes les URL ne sont pas spécifiées dans la liste documentée defender pour point de terminaison de collecte de données autorisées.
 
 ## <a name="permissions"></a>Autorisations
 
-Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l’autorisation en allant à **Paramètres** \> **rôles**. Pour plus d’informations, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](user-roles.md)
+Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l’autorisation en allant à **Paramètres** \> **rôles**. Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](user-roles.md)
 
 ## <a name="install-the-network-scanner"></a>Installer le scanneur réseau
 
@@ -184,7 +184,7 @@ Si les appareils ne sont toujours pas affichés, vérifiez que le service « Mda
 
 Si vous n’obtenez toujours pas de résultats après 5 minutes, redémarrez le service.
 
-### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>La durée de la dernière vue des appareils est de plus de 24 heures
+### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>L’heure de la dernière vue des appareils est plus de 24 heures
 
 Vérifier que le scanneur s’exécute correctement. Ensuite, allez à la définition d’analyse et sélectionnez « Exécuter le test ». Vérifiez quels messages d’erreur sont retournés à partir des adresses IP pertinentes.
 

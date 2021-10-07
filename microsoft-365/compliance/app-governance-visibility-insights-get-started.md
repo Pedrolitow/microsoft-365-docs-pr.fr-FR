@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec visibilité et insights.
-ms.openlocfilehash: 82c099c2955545f6546f978ded9e2d07a74b48cf
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: fc7a76154437b57876a52cad5de1f637b8da7bc0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941956"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201936"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Démarrage avec visibilité et insights
 

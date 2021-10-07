@@ -1,28 +1,26 @@
 ---
 title: Résoudre les problèmes sur Microsoft Defender pour le point de terminaison sur Android
-description: Résoudre les problèmes de Microsoft Defender pour point de terminaison sur Android
+description: Résoudre les problèmes de Microsoft Defender pour le point de terminaison sur Android
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mde, android, cloud, connectivité, communication
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 81be4d293398b264dfa72bbca0eb74b0429add71
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 7868b57b03a237a3cd65841040ee741b2cdd0c12
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934118"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60194308"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
@@ -34,7 +32,7 @@ ms.locfileid: "59934118"
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de connectez-vous après l’installation de l’application.
+Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de sign in après l’installation de l’application.
 
 Lors de l’intégration, vous pouvez rencontrer des problèmes de connectez-vous après l’installation de l’application sur votre appareil.
 
@@ -42,7 +40,7 @@ Cet article fournit des solutions pour vous aider à résoudre les problèmes d'
 
 ## <a name="sign-in-failed---unexpected-error"></a>Échec de la signature : erreur inattendue
 
-**Échec de la signature : erreur** *inattendue, essayez ultérieurement*
+**Échec de la signature : erreur** *inattendue, essayez plus tard*
 
 :::image type="content" alt-text="Image de l’erreur d’échec de la signature. Erreur inattendue." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
@@ -92,13 +90,13 @@ L’hameçonnage et les menaces web dangereuses détectées par Defender pour En
 
 Les appareils Demi incluent un nouveau modèle d’autorisation. Cela empêche Defender pour point de terminaison pour Android d’afficher des fenêtres pop-up alors qu’elle s’exécute en arrière-plan.
 
-Autorisation d’appareils : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
+Autorisation des appareils Demi : « Afficher les fenêtres pop-up en cours d’exécution en arrière-plan ».
 
 ![Image du paramètre de fenêtre pop-up.](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
 **Solution :**
 
-Activez l’autorisation requise sur les appareils DeMi.
+Activez l’autorisation requise sur les appareils Androidmi.
 
 - Afficher les fenêtres pop-up en cours d’exécution en arrière-plan.
 
@@ -112,11 +110,11 @@ Defender App demande l’autorisation Optimisation de la batterie/Protection per
 
 **Cause :**
 
-Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de la batterie.
+Il a modifié les autorisations d’optimisation de la batterie dans Android 11. Defender n’est pas autorisé à configurer ce paramètre pour ignorer les optimisations de batterie.
 
 **Solution :**
 
-Nous travaillons avec OEM pour trouver une solution permettant d’activer cette autorisation à partir de l’écran d’intégration de l’application. Nous mettreons à jour la documentation une fois ce problème résolu.
+Nous travaillons avec OEM pour trouver une solution permettant d’activer cette autorisation à partir de l’écran d’intégration de l’application. Nous allons mettre à jour la documentation une fois ce problème résolu.
 Les utilisateurs peuvent suivre ces étapes pour activer les mêmes autorisations à partir des paramètres de l’appareil : 
 
 1. Go to **Paramètres** on your device.
@@ -125,7 +123,7 @@ Les utilisateurs peuvent suivre ces étapes pour activer les mêmes autorisation
 
    ![Recherchez et sélectionnez « Optimisation de la batterie ».](images/search-battery-optimisation.png)
 
-3. Dans **l’accès spécial aux applications,** sélectionnez **Optimisation de la batterie.**
+3. Dans **l’accès spécial à l’application,** **sélectionnez Optimisation de la batterie.**
 
    ![Dans Accès spécial aux applications, sélectionnez « Optimisation de la batterie ».](images/special-app-access.png)
 
@@ -143,7 +141,7 @@ Revenir à l’écran d’intégration du point de terminaison Microsoft Defende
 
 ## <a name="send-in-app-feedback"></a>Envoyer des commentaires dans l’application
 
-Si un utilisateur est confronté à un problème qui n’est pas déjà résolu dans les sections **ci-dessus** ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données **de diagnostic**. Notre équipe peut ensuite examiner les journaux pour fournir la solution appropriée. Les utilisateurs peuvent suivre les étapes suivantes pour faire de même :
+Si un utilisateur rencontre un problème qui n’est pas déjà résolu dans les sections **ci-dessus** ou n’est pas en mesure de résoudre à l’aide des étapes répertoriées, l’utilisateur peut fournir des commentaires dans l’application ainsi que des données **de diagnostic.** Notre équipe peut ensuite examiner les journaux pour fournir la solution appropriée. Les utilisateurs peuvent suivre les étapes suivantes pour faire de même :
 
 1.  Ouvrez **l’application MDE** sur votre appareil et cliquez sur l’icône **de profil** dans le coin supérieur gauche.
 

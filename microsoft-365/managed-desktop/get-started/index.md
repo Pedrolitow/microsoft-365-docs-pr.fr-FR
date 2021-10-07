@@ -7,13 +7,13 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
-ms.openlocfilehash: c8d0c712a0d2e9c575f55041b3182e3c77b2c687
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: 4e0e701183463b6bee0685b7830fc294a248c594
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203225"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214008"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Prise en main du Bureau géré Microsoft
 

@@ -4,24 +4,24 @@ description: Cet article répertorie les spécifications d’appareil utilisées
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: df9bf273edd85fea08cd11838093a1287b0fff97
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5946a131424dd0bea70004c272a66c4e86cc4b1d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205059"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213900"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft Manged Desktop cycle de vie du produit
 
 > [!NOTE]
-> À compter du 18 septembre 2021, le cycle de vie de ce produit Microsoft Manged Desktop ne s’appliquera plus. Aucune des conditions requises répertoriées ici ne s’applique aux appareils du service. Seule la [configuration matérielle requise](device-requirements.md) sera pertinente. 
+> À compter du 18 septembre 2021, le cycle de vie de ce produit pour Microsoft Manged Desktop ne s’appliquera plus. Aucune des conditions requises répertoriées ici ne s’applique aux appareils du service. Seule la [configuration matérielle requise](device-requirements.md) sera pertinente. 
 
 
-Microsoft Manged Desktop aux utilisateurs en s’assurant qu’ils utilisent toujours les appareils qui offrent les meilleures performances, fiabilité, conception et sécurité (telles que la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, Microsoft Manged Desktop un petit catalogue d’appareils approuvés mis à jour en continu. Vous pouvez afficher les appareils approuvés en filtrant les Microsoft Manged Desktop sur le site [Shop Windows 10 Professionnel business devices.](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
+Microsoft Manged Desktop aux utilisateurs en s’assurant qu’ils utilisent toujours les appareils qui offrent les meilleures performances, fiabilité, conception et sécurité (telles que la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, Microsoft Manged Desktop un petit catalogue d’appareils approuvés mis à jour en continu. Vous pouvez afficher les appareils approuvés en filtrant les Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise.](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
  
 Cet article détaille le cycle de vie des appareils à mesure qu’ils sont ajoutés et supprimés du catalogue approuvé. 
 
@@ -58,7 +58,7 @@ Ce tableau montre des exemples de dates pour les appareils *théoriques*:
 |ID d’appareil  |Date d’inscription  |Date de retrait  |
 |---------|---------|---------|
 |Ordinateur portable #123412     |  2/3/2018       |  2/3/2021       |
-|Bureau #321513     | 6/2/2018        |  6/2/2021       |
+|Ordinateur de #321513     | 6/2/2018        |  6/2/2021       |
 
 
 ## <a name="product-release-and-evaluation"></a>Version et évaluation du produit
@@ -67,7 +67,7 @@ Le cycle de vie du produit démarre lorsqu’un fabricant publie publiquement le
 
 ![Chronologie du cycle de vie montrant la période de publication et d’évaluation.](../../media/non-dark3-edits.PNG)
 
-Au cours de cette étape, l’équipe Microsoft Manged Desktop’ingénierie locale fait l’évaluation et la certification d’un produit. L’équipe évalue des éléments tels que la fiabilité et les performances avec Windows, la conformité avec une base de référence matérielle, l’opinion du marché et la préparation des stocks et des canaux, entre autres choses. Ce processus prend généralement environ six semaines.
+Au cours de cette étape, l’équipe Microsoft Manged Desktop’ingénierie locale fait son évaluation et sa certification d’un produit. L’équipe évalue des éléments tels que la fiabilité et les performances avec Windows, la conformité avec une base de référence matérielle, l’opinion du marché et la préparation des stocks et des canaux, entre autres choses. Ce processus prend généralement environ six semaines.
   
 Microsoft Manged Desktop évaluera uniquement les appareils pour certification au cours de leurs six premiers mois de disponibilité. Cette stratégie garantit que nous concentrons toujours nos efforts sur la dernière génération de matériel.
  

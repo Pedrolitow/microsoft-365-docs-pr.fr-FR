@@ -1,5 +1,5 @@
 ---
-title: Gérer les rubriques dans le centre de rubriques Sujets Microsoft Viva
+title: Gérer les rubriques dans le centre de rubriques dans Sujets Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,16 +11,16 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: medium
+ms.localizationpriority: medium
 description: Découvrez comment gérer des rubriques dans le centre de rubriques Sujets Microsoft Viva.
-ms.openlocfilehash: a35e9db8f6d806f4212581be6ab609e40b46fd62
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: c2f5388a573f78569a0c1051e63a00d66a8f3a3c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126973"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214128"
 ---
-# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gérer les rubriques dans le centre de rubriques Sujets Microsoft Viva
+# <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gérer les rubriques dans le centre de rubriques dans Sujets Microsoft Viva
 
 </br>
 
@@ -40,11 +40,11 @@ Les gestionnaires de connaissances vous aident à guider les rubriques découver
 
 - **Suggérée** : une rubrique a été identifiée par l’IA et dispose de ressources de prise en charge, de connexions et de propriétés suffisantes. (Ils sont marqués comme **sujet suggéré dans** l’interface utilisateur.)
 
-- **Confirmé :** rubrique qui a été découverte par l’IA et qui a été validée. La validation de rubrique se produit dans les cas suivants :
+- **Confirmé :** une rubrique qui a été découverte par l’IA et qui a été validée. La validation de rubrique se produit dans les cas suivants :
 
    - Un gestionnaire de connaissances confirme une rubrique. Un gestionnaire de [connaissances confirme une rubrique dans](manage-topics.md#confirmed-topics) la page Gérer les **rubriques.**
 
-   - Plusieurs utilisateurs confirment une rubrique. Il doit y avoir un net de deux votes positifs reçus des utilisateurs qui ont voter à l’aide du mécanisme de commentaires sur la carte de sujet. Par exemple, si un utilisateur a exprimé un vote positif et un utilisateur a exprimé un vote négatif pour une rubrique particulière, vous aurez toujours besoin de deux autres votes positifs pour que la rubrique soit confirmée.
+   - Plusieurs utilisateurs confirment une rubrique. Il doit y avoir un net de deux votes positifs reçus des utilisateurs qui ont voter à l’aide du mécanisme de commentaires sur la carte de sujet. Par exemple, si un utilisateur a exprimé un vote positif et un utilisateur a exprimé un vote négatif pour une rubrique particulière, vous aurez besoin de deux autres votes positifs pour que la rubrique soit confirmée.
  
 - **Publié**: une rubrique qui a été organisée. Des modifications manuelles ont été réalisées pour améliorer sa qualité ou ont été créées par un utilisateur.
 
@@ -57,7 +57,7 @@ Les gestionnaires de connaissances vous aident à guider les rubriques découver
   Lorsqu’une rubrique publiée est supprimée, la page avec les détails organisés doit être supprimée manuellement via la bibliothèque de pages du centre de rubriques.
 
 > [!Note] 
-> Dans la page Gérer **les rubriques,** chaque gestionnaire de connaissances pourra uniquement consulter les rubriques dans laquelle il a accès aux fichiers et pages sous-jacents connectés à la rubrique. Ce suppression d’autorisation sera reflété dans la liste des rubriques qui apparaissent  dans les onglets **Suggéré,** **Confirmé,** Publié et Supprimé. Le nombre de rubriques, toutefois, indique le nombre total dans l’organisation, quelles que soient les autorisations.
+> Dans la page Gérer **les rubriques,** chaque gestionnaire de connaissances ne peut voir que les rubriques dans laquelle il a accès aux fichiers et pages sous-jacents connectés à la rubrique. Ce suppression d’autorisation sera reflété dans la liste des rubriques qui apparaissent  dans les onglets **Suggéré,** **Confirmé,** Publié et Supprimé. Le nombre de rubriques, toutefois, indique le nombre total dans l’organisation, quelles que soient les autorisations.
 
 ## <a name="requirements"></a>Conditions requises
 
@@ -88,7 +88,7 @@ Pour consulter une rubrique suggérée :
     
    - Sélectionnez **le x** si vous souhaitez supprimer la rubrique.
 
-    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** Confirmée.
+    Les rubriques confirmées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **la liste** confirmée.
 
     Les rubriques supprimées sont supprimées de la liste **Suggérée** et s’affichent désormais dans **l’onglet** Supprimé.
 
@@ -100,11 +100,11 @@ Le score de qualité peut aider à donner un aperçu des rubriques les plus pert
 
 ### <a name="impressions"></a>Impressions
 
-La **colonne Impressions** affiche le nombre de fois qu’une rubrique a été présentée aux utilisateurs finaux. Cela inclut les affichages par le biais de cartes de réponses de rubrique dans la recherche et par le biais des points forts de la rubrique. Il ne reflète pas le clic sur ces rubriques, mais le fait que la rubrique a été affichée. La **colonne Impressions** s’affiche pour les rubriques des  onglets **Suggéré,** **Confirmé,** Publié et Supprimé sur la page **Gérer les rubriques.**
+La **colonne Impressions** affiche le nombre de fois qu’une rubrique a été présentée aux utilisateurs finaux. Cela inclut les affichages par le biais de cartes de réponses de rubrique dans la recherche et par le biais des points forts de rubrique. Il ne reflète pas le clic sur ces rubriques, mais le fait que la rubrique a été affichée. La **colonne Impressions** s’affiche pour les rubriques des  onglets **Suggéré,** **Confirmé,** Publié et Supprimé sur la page **Gérer les rubriques.**
 
 ## <a name="confirmed-topics"></a>Rubriques confirmées.
 
-Dans la page Gérer les **rubriques,** les rubriques qui ont été découvertes dans les emplacements sources de votre SharePoint spécifié et qui ont été confirmées par un gestionnaire de connaissances ou «  en nombre » confirmées par une ou plusieurs personnes (équilibrage des votes d’utilisateur négatifs par rapport aux votes d’utilisateur positifs) via le mécanisme de commentaires de carte sont répertoriées dans l’onglet Confirmé. Si nécessaire, un utilisateur autorisé à gérer des rubriques peut passer en revue les rubriques confirmées et choisir de les rejeter.
+Dans la page Gérer les **rubriques,** les rubriques qui ont été découvertes dans les emplacements source SharePoint spécifiés et qui ont été confirmées par un gestionnaire de connaissances ou « en  nombre » confirmées par une ou plusieurs personnes (équilibrage des votes d’utilisateur négatifs par rapport aux votes d’utilisateur positifs) via le mécanisme de commentaires de carte sont répertoriées dans l’onglet Confirmé. Si nécessaire, un utilisateur autorisé à gérer des rubriques peut passer en revue les rubriques confirmées et choisir de les rejeter.
 
 Pour passer en revue une rubrique confirmée :
 
@@ -112,7 +112,7 @@ Pour passer en revue une rubrique confirmée :
 
 2. Dans la page de rubrique, examinez la page de rubrique, puis sélectionnez **Modifier** si vous devez apporter des modifications à la page.
 
-Notez que vous pouvez toujours choisir de rejeter une rubrique confirmée. Pour ce faire, sélectionnez la  rubrique sélectionnée sous l’onglet Confirmé, puis sélectionnez **le x** si vous souhaitez rejeter la rubrique.
+Notez que vous pouvez toujours choisir de rejeter une rubrique confirmée. Pour ce faire, allez à la  rubrique sélectionnée sous l’onglet Confirmé, puis sélectionnez **le x** si vous souhaitez rejeter la rubrique.
 
 ## <a name="published-topics"></a>Rubriques publiées
 
@@ -122,20 +122,20 @@ Dans la page Gérer **les rubriques,** les rubriques qui ont été découvertes 
 
 ## <a name="removed-topics"></a>Rubriques supprimées
 
-Dans la page Gérer **les rubriques,** les rubriques qui ont été découvertes dans SharePoint emplacements sources spécifiés sont répertoriées sous **l’onglet** Supprimé. Certaines rubriques suggérées peuvent apparaître ici en fonction des votes des utilisateurs finaux sur les cartes de sujet dans le centre de rubriques.
+Dans la page Gérer **les rubriques,** les rubriques qui ont été découvertes dans SharePoint emplacements sources spécifiés sont répertoriées sous **l’onglet** Supprimé. Certaines rubriques suggérées peuvent apparaître ici en fonction des votes de l’utilisateur final sur les cartes de sujet dans le centre de rubriques.
 
 Les rubriques supprimées peuvent être ajoutées ultérieurement en tant que rubriques consultables si nécessaire. Si vous souhaitez rajouter une rubrique supprimée en tant que rubrique consultable :
 
 1. Sous **l’onglet Supprimé,** sélectionnez la rubrique.
 
-2. Sélectionnez **Réviser et publier.**
+2. Sélectionnez **Révision et publication.**
 
    ![Capture d’écran de l’onglet Supprimé affichant l’option Révision et publication.](../media/knowledge-management/review-and-publish-removed-topic.png)
 
 ## <a name="topic-count-dashboard"></a>Tableau de bord nombre de rubriques
 
-Ce graphique dans l’affichage Tableau de bord vous permet de voir le nombre de rubriques dans votre centre de rubriques Rubriques. Le graphique présente le nombre de rubriques par étape du cycle de vie des rubriques et indique également la tendance des nombres de rubriques au fil du temps. Les gestionnaires de connaissances peuvent surveiller visuellement la fréquence à laquelle les nouvelles rubriques sont découvertes par l’IA et la fréquence à laquelle les rubriques sont confirmées ou publiées par le gestionnaire de connaissances ou les actions de l’utilisateur.
+Ce graphique dans l’affichage Tableau de bord vous permet de voir le nombre de rubriques dans votre centre de rubriques Rubriques. Le graphique présente le nombre de rubriques par étape de cycle de vie de rubrique et indique également la tendance des nombres de rubriques au fil du temps. Les gestionnaires de connaissances peuvent surveiller visuellement la fréquence à laquelle les nouvelles rubriques sont découvertes par l’IA et la fréquence à laquelle les rubriques sont confirmées ou publiées par le gestionnaire de connaissances ou les actions de l’utilisateur.
 
-Les gestionnaires de connaissances peuvent voir un nombre différent de rubriques représentées dans la liste des rubriques de la page Gérer les **rubriques** qu’ils ne voient dans le tableau de bord. Cela est dû au fait qu’un gestionnaire de connaissances n’a peut-être pas accès à toutes les rubriques. Le nombre présenté dans l’affichage tableau de bord est pris avant d’appliquer le contrôle d’autorisation. 
+Les gestionnaires de connaissances peuvent voir un nombre de rubriques représenté dans la liste des rubriques de la page Gérer les **rubriques** différent de celui qu’ils voient dans le tableau de bord. Cela est dû au fait qu’un gestionnaire de connaissances n’a peut-être pas accès à toutes les rubriques. Le nombre présenté dans l’affichage tableau de bord est pris avant d’appliquer le contrôle d’autorisation. 
 
    ![Capture d’écran du tableau de bord nombre de rubriques.](../media/knowledge-management/topic-count-dashboard.png)

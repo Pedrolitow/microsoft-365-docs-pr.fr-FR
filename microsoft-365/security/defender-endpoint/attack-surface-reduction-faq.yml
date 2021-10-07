@@ -8,7 +8,7 @@ metadata:
   ms.prod: m365-security
   ms.mktglfcycl: manage
   ms.sitesec: library
-  localization_priority: Normal
+  ms.localizationpriority: medium
   audience: ITPro
   author: martyav
   ms.author: v-maave
@@ -18,12 +18,12 @@ metadata:
   ms.topic: article
   ms.technology: mde
   ms.collection: M365-security-compliance
-  ms.openlocfilehash: 93fba9be41e8b04191600fd0c497bcbe3d98155f
-  ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+  ms.openlocfilehash: a319817a055a2061eb62b2a7460d2b394620025d
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "59491408"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60194236"
 title: 'Réduction de la surface d’attaque : forum aux questions (FAQ)'
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -58,7 +58,7 @@ sections:
       Toutes les règles prise en charge avec E3 sont également pris en charge avec E5.
 
 
-      E5 ajoute une meilleure intégration avec Defender pour endpoint. Avec E5, vous pouvez afficher les alertes en temps réel, affiner les exclusions de règles, configurer des règles de la asr, et afficher des listes de rapports d’événements.
+      E5 ajoute une meilleure intégration avec Defender pour Endpoint. Avec E5, vous pouvez afficher les alertes en temps réel, affiner les exclusions de règles, configurer des règles asr et afficher des listes de rapports d’événements.
   - question: >
       Quelles sont les règles de asr actuellement pris en charge ?
     answer: >
@@ -73,7 +73,7 @@ sections:
       Pour les règles de la asr, si vous ajoutez une exclusion, elle affecte toutes les règles de la asr.
 
 
-      Les exclusions de règles asr supportent les caractères génériques, les chemins d’accès et les variables environnementales. Pour plus d’informations sur l’utilisation des caractères génériques dans les règles asr, voir configurer et valider des exclusions en fonction de l’extension de fichier et de [l’emplacement du dossier.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
+      Les exclusions de règles asr supportent les caractères génériques, les chemins d’accès et les variables environnementales. Pour plus d’informations sur l’utilisation des caractères génériques dans les règles asr, voir configurer et valider des exclusions basées sur l’extension de fichier et [l’emplacement du dossier.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)
 
 
       N’ignorez pas les éléments suivants concernant les exclusions de règles asr (y compris les caractères génériques et les env. variables) :
@@ -107,7 +107,7 @@ sections:
       :::image type="content" source="images/asrfaq1.png" alt-text="bloquer le vol d’informations d’identification LSASS":::
 
 
-      En regardant l’exemple ci-dessus, si vous deviez vraiment créer une exception pour le processus de blocage du droit d’accès, l’ajout du nom de fichier avec le chemin d’accès complet l’exclurait du blocage et après avoir été autorisé à accéder à la mémoire du processus LSASS. La valeur 0 signifie que les règles asr ignoreront ce fichier/processus et ne le bloqueront pas/l’auditeront.
+      En regardant l’exemple ci-dessus, si vous deviez vraiment créer une exception pour le processus de blocage du droit d’accès, l’ajout du nom de fichier avec le chemin d’accès complet l’exclurait du blocage et après avoir été autorisé à accéder à la mémoire du processus LSASS. La valeur 0 signifie que les règles de asr ignorent ce fichier/processus et ne le bloquent pas/l’auditent.
 
 
       :::image type="content" source="images/asrfaq2.png" alt-text="exclure des fichiers asr":::
@@ -119,7 +119,7 @@ sections:
 
       Nous vous recommandons vivement de lire chaque information spécifique à la règle et/ou avertissements, qui sont disponibles dans notre [documentation publique.](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
-      couvrant plusieurs piliers de la protection, tels que les Office, les informations d’identification, les scripts, le courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
+      couvrant plusieurs piliers de la protection, tels que Office, informations d’identification, scripts, courrier électronique, etc. Toutes les règles asr, à l’exception de la persistance de blocage via l’abonnement aux événements WMI, sont Windows 1709 et ultérieures :
 
 
       * [Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
@@ -177,7 +177,7 @@ sections:
   - question: >
       La RSA prend-elle en charge les exclusions de fichiers ou de dossiers qui incluent des variables système et des caractères génériques dans le chemin d’accès ?
     answer: >
-      Oui. Pour plus d’informations sur l’exclusion des fichiers ou des dossiers des règles de la asr, voir Exclure des fichiers et des [dossiers](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) des règles de la asr. Pour plus d’informations sur l’utilisation de variables système et de caractères génériques dans les chemins d’accès aux fichiers exclus, voir Exclure des fichiers et des [dossiers](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) en fonction de l’extension de fichier et de l’emplacement des dossiers.
+      Oui. Pour plus d’informations sur l’exclusion des fichiers ou des [dossiers](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) des règles de la asr. Pour plus d’informations sur l’exclusion des fichiers ou des dossiers des règles de la asr, voir Exclusion de fichiers et dossiers, et Configurer et valider des [exclusions basées](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) sur l’extension de fichier et l’emplacement des dossiers pour plus d’informations sur l’utilisation de variables système et de caractères génériques dans les chemins d’accès aux fichiers exclus.
   - question: >
       Les règles DER couvrent-ils toutes les applications par défaut ?
     answer: >
@@ -187,9 +187,9 @@ sections:
     answer: >
       La asr utilise Antivirus Microsoft Defender pour bloquer les applications. Il n’est pas possible de configurer la asr pour qu’elle utilise une autre solution de sécurité pour le blocage pour le moment.
   - question: >
-      J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender for Endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
+      J’ai une licence E5 et j’ai activé certaines règles asr en association avec Defender pour endpoint. Est-il possible qu’un événement ASR ne s’affiche pas du tout dans la chronologie des événements de Defender for Endpoint ?
     answer: >
-      Chaque fois qu’une notification est déclenchée localement par une règle ASR, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements asr en visitant Go **to attack surface management**, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
+      Chaque fois qu’une notification est déclenchée localement par une règle asr, un rapport sur l’événement est également envoyé au portail Defender for Endpoint. Si vous avez des difficultés à trouver l’événement, vous pouvez filtrer la chronologie des événements à l’aide de la zone de recherche. Vous pouvez également afficher les événements asr en visitant Go **to attack surface management**, à partir de l’icône Gestion de la **configuration** dans la barre des tâches du Centre de sécurité. La page de gestion de la surface d’attaque inclut un onglet pour les détections de rapports, qui inclut la liste complète des événements de règle de la surface d’attaque signalés à Defender pour le point de terminaison.
   - question: >
       J’ai appliqué une règle à l’aide d’un GPO. Maintenant, lorsque j’essaie de vérifier les options d’indexation de la règle dans Microsoft Outlook, je reçois un message indiquant « Accès refusé ».
     answer: >
@@ -210,14 +210,14 @@ sections:
       Cette règle repose sur la réputation connue de chaque application, telle que mesurée par la prévalence, l’âge ou l’inclusion dans une liste d’applications de confiance. La décision de la règle de bloquer ou d’autoriser une application est déterminée par l’évaluation de ces critères par la protection cloud de Microsoft.
 
 
-      En règle générale, la protection cloud peut déterminer qu’une nouvelle version d’une application est suffisamment similaire aux versions précédentes qu’elle n’a pas besoin d’être réévaluée en longueur. Toutefois, la construction de la réputation de l’application après le changement de version peut prendre un certain temps, en particulier après une mise à jour majeure. En attendant, vous pouvez ajouter l’application à la liste d’exclusions, afin d’empêcher cette règle de bloquer les applications importantes. Si vous êtes fréquemment mis à jour et que vous travaillez avec de nouvelles versions d’applications, vous pouvez choisir d’exécuter cette règle en mode audit.
+      En règle générale, la protection cloud peut déterminer qu’une nouvelle version d’une application est suffisamment similaire aux versions précédentes qu’elle n’a pas besoin d’être réévaluée longuement. Toutefois, la construction de la réputation de l’application après le changement de version peut prendre un certain temps, en particulier après une mise à jour majeure. En attendant, vous pouvez ajouter l’application à la liste d’exclusions, afin d’empêcher cette règle de bloquer les applications importantes. Si vous êtes fréquemment mis à jour et que vous travaillez avec de nouvelles versions d’applications, vous pouvez choisir d’exécuter cette règle en mode audit.
   - question: >
       J’ai récemment activé la règle asr, « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » et j’ai reçu un grand nombre de notifications. Que se passe-t-il?
     answer: >
-      Une notification générée par cette règle n’indique pas nécessairement une activité malveillante ; Toutefois, cette règle est toujours utile pour bloquer les activités malveillantes, car les programmes malveillants ciblent souvent lsass.exe pour obtenir un accès illégal aux comptes. Le processus lsass.exe stocke les informations d’identification de l’utilisateur en mémoire après qu’un utilisateur s’est connecté. Windows utilise ces informations d’identification pour valider les utilisateurs et appliquer des stratégies de sécurité locales.
+      Une notification générée par cette règle n’indique pas nécessairement une activité malveillante ; toutefois, cette règle est toujours utile pour bloquer les activités malveillantes, car les programmes malveillants ciblent souvent lsass.exe pour obtenir un accès illicite aux comptes. Le processus lsass.exe stocke les informations d’identification de l’utilisateur en mémoire après qu’un utilisateur s’est connecté. Windows utilise ces informations d’identification pour valider les utilisateurs et appliquer des stratégies de sécurité locales.
 
 
-      Étant donné que de nombreux processus légitimes tout au long d’une journée classique appelleront lsass.exe informations d’identification, cette règle peut être particulièrement bruyante. Si une application légitime connue génère un nombre excessif de notifications pour cette règle, vous pouvez l’ajouter à la liste d’exclusions. La plupart des autres règles asr génèrent un nombre de notifications relativement plus petit, par rapport à celle-ci, car l’appel sur lsass.exe est caractéristique du fonctionnement normal de nombreuses applications.
+      Étant donné que de nombreux processus légitimes tout au long d’une journée classique appelleront lsass.exe informations d’identification, cette règle peut être particulièrement bruyante. Si une application légitime connue génère un nombre excessif de notifications pour cette règle, vous pouvez l’ajouter à la liste d’exclusions. La plupart des autres règles asr génèrent un nombre de notifications relativement plus petit, par rapport à celle-ci, étant donné que l’appel sur lsass.exe est caractéristique du fonctionnement normal de nombreuses applications.
   - question: >
       Est-il bon d’activer la règle « Bloquer le vol d’informations d’identification du sous-système de l’autorité de sécurité Windows locale (lsass.exe) » avec la protection LSA ?
     answer: >

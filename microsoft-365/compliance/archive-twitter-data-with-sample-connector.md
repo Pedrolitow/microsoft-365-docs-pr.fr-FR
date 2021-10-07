@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur natif pour importer des données Twitter dans Microsoft 365.
-ms.openlocfilehash: 1b55a9af001e2ed2f67e7847fc7b70eee974bb88
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff29ebf19f292a2d052c7172f31779ca48cae428
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179988"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201912"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configurer un connecteur pour archiver des données Twitter (aperçu)
 
@@ -45,7 +45,7 @@ Remplissez les conditions préalables suivantes avant de pouvoir configurer un c
     > [!NOTE]
     > [L’abonnement Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) gratuit inclus dans votre abonnement Microsoft 365 ne prend pas en charge les connecteurs dans le Centre de conformité Microsoft 365.
 
-- Le connecteur Twitter peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 éléments Twitter dans une journée, aucun de ces éléments n’est importé dans Microsoft 365.
+- Le connecteur Twitter peut importer un total de 200 000 éléments en une seule journée. S’il y a plus de 200 000 éléments Twitter par jour, aucun de ces éléments n’est importé dans Microsoft 365.
 
 - L’utilisateur qui définit le connecteur Twitter dans le Centre de conformité Microsoft 365 (à l’étape 5) doit se voir attribuer le rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
@@ -113,7 +113,7 @@ Au cours de cette étape (en suivant les instructions pas à pas), vous fournire
 
 - Jeton d’accès Twitter (obtenu à l’étape 3)
 
-- Secret de jeton d’accès Twitter (obtenu à l’étape 3)
+- Secret du jeton d’accès Twitter (obtenu à l’étape 3)
 
 - Azure Active Directory’ID d’application (ID d’application AAD obtenu à l’étape 1)
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a253d1224f1c7a0e0be0b5478efcc78204cb4a27
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 13fb928d9eed0349903d28d0aab55c223f4d3ea6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204575"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202618"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -34,13 +34,13 @@ ms.locfileid: "59204575"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Le repérage avancé est basé sur le [langage de requête Kusto](/azure/kusto/query/). Vous pouvez utiliser des opérateurs et des instructions Kusto pour créer des requêtes qui recherchent des informations dans un [schéma spécialisé.](advanced-hunting-schema-tables.md) Pour mieux comprendre ces concepts, exécutez votre première requête.
 
 ## <a name="try-your-first-query"></a>Essayez votre première requête
 
-Dans le portail Microsoft 365 Defender, recherchez **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit :
+Dans le Microsoft 365 Defender de recherche, allez sur **Hunting** pour exécuter votre première requête. Consultez l’exemple qui suit :
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -76,7 +76,7 @@ La requête elle-même commence généralement par un nom de table suivi de plus
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
-### <a name="set-the-time-range"></a>Définir la plage de temps
+### <a name="set-the-time-range"></a>Définir l’plage de temps
 Le premier élément canal est un filtre de temps dont l’étendue est limitée aux sept jours précédents. La limitation d’un intervalle de temps permet de s’assurer que les requêtes fonctionnent bien, renvoient des résultats gérables et n’expirent pas.
 
 ```kusto

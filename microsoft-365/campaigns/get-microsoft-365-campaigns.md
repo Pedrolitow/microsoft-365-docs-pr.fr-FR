@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenez Microsoft 365 campagnes pour protéger votre campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: 3d70fef721417dd823dc272bbb7b08c04c037f98
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e89be7c15cd00279a0b78323f992c1d3e2195f89
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180547"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202080"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtenir des Microsoft 365 campagnes
 
-Toute personne Microsoft 365 Business Premium peut utiliser ces conseils pour configurer une sécurité supplémentaire pour la messagerie électronique et la collaboration. Toutefois, les campagnes et les parties politiques aux États-Unis sont éligibles à des tarifs spéciaux pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour :
+Toute personne Microsoft 365 Business Premium peut utiliser ces conseils pour configurer une sécurité supplémentaire pour la messagerie électronique et la collaboration. Toutefois, les campagnes et les parties politiques aux États-Unis peuvent bénéficier de tarifs spéciaux pour Microsoft 365. Actuellement, cette tarification spéciale est disponible pour :
 
 - Les parties politiques au niveau national aux États-Unis, au Canada et en Nouvelle-Zélande
 - Campagnes électorales nationales ou fédérales aux États-Unis et en Nouvelle-Zélande
@@ -54,7 +54,7 @@ Cette configuration de Microsoft 365 Business Premium inclut des contrôles simp
 - **Protéger l’identité** des utilisateurs : assurez-vous que les utilisateurs sont bien ceux qu’ils ont dit être lorsqu’ils se connectent pour envoyer des messages électroniques ou accéder aux fichiers (authentification multifacteur).
 - **Protéger les informations sensibles**: protéger les informations sensibles pour surveiller les informations partagées en dehors de votre organisation (protection contre la perte de données).
 - **Protéger les appareils mobiles**: protéger les données sur les appareils mobiles (stratégie de protection des applications mobiles).
-- **Protection contre le contenu malveillant**: empêcher l’accès à du contenu malveillant en analysant les pièces jointes des e-mails (Defender for Office 365).
+- **Protection contre les contenus malveillants**: empêcher l’accès à du contenu malveillant en analysant les pièces jointes des e-mails (Defender for Office 365).
 - **Protéger les mots de passe**: définir des mots de passe pour qu’ils n’expirent jamais, ce qui est plus sécurisé et permet d’éviter les arrêts de travail (stratégie de mot de passe).
 - **AccountGuard Program Access**: Microsoft AccountGuard est un service de sécurité proposé sans frais supplémentaires aux clients dans l’espace politique. Le service est conçu pour informer et aider ces clients hautement ciblés à se protéger contre les menaces de cyber-sécurité au sein de leurs comptes de messagerie Microsoft professionnels et personnels. Pour plus [d’informations, voir Microsoft AccountGuard](https://www.microsoftaccountguard.com/).
 

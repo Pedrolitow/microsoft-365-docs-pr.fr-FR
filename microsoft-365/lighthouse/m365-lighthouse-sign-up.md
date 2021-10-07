@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés,découvrez comment s’inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 80e56055a89d73f53c025de05dfc1e8dabedda78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9a69b8a261d3a5faebd7ad7aa72336d0c9f5977c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207556"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213996"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -40,7 +40,7 @@ ms.locfileid: "59207556"
 
 1. Go to **Billing**  >  **Purchase Services** Other  >  **Services**.
 
-    Si Microsoft 365 Lighthouse ne figure pas dans la liste des services, sélectionnez **Voir tous les autres produits de services.**
+    Si Microsoft 365 Lighthouse n’est pas dans la liste des services, sélectionnez **Voir tous les autres produits de services.**
 
     Si vous rencontrez la page d’erreur Acheter des services, sélectionnez **Afficher** les produits en bas de la page.
 
@@ -51,7 +51,7 @@ ms.locfileid: "59207556"
     > [!NOTE]
     > Le permis de conduire nécessite une licence pour le client partenaire uniquement. Aucune licence par utilisateur supplémentaire n’est requise pour le partenaire et aucune licence n’est requise dans un client. 
 
-    Pour vérifier que Le Domaine a bien été ajouté à votre client, recherchez Microsoft 365 Lighthouse sous **Facturation > vos produits** dans le Centre d'administration Microsoft 365.
+    Pour vérifier que Le Domaine a bien été ajouté à votre client, recherchez les Microsoft 365 Lighthouse sous **Facturation > vos** produits dans le Centre d'administration Microsoft 365.
 
 1. Si vous n’êtes pas redirigé vers le portail de Lattérique, allez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
 

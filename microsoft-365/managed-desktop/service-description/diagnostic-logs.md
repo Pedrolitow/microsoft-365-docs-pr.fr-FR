@@ -4,21 +4,21 @@ description: Journaux qui peuvent être collectés à partir d’appareils lors 
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ef7d19fef989610c10323c2a9820a5314d5e1641
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5c890ea42da4bb13c163e7b8b123080e0264d025
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205011"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201528"
 ---
 # <a name="diagnostic-logs"></a>Journaux de diagnostic
 
-Lorsque nous dépannageons un problème sur un appareil géré par Microsoft Manged Desktop, qu’il s’agit d’un problème que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur dans les annuaires des utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
+Lorsque nous dépannageons un problème sur un appareil géré par Microsoft Manged Desktop, qu’il s’agit d’un problème que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur à partir des annuaires d’utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
 
 Nous stockons tous les journaux collectés pendant 28 jours, puis les supprimons. Nous traiterons tous les journaux collectés à partir d’un appareil en suivant nos normes [de gestion des données.](privacy-personal-data.md)
 
@@ -30,7 +30,7 @@ Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécu
 
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Services
 - HKLM \\ SOFTWARE \\ Microsoft \\ Surface
-- Stratégies \\ \\ logicielles \\ HKLM \\ microsoft Windows \\ WindowsUpdate
+- Stratégies logicielles HKLM \\ \\ microsoft Windows \\ \\ \\ WindowsUpdate
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ MUI \\ UILanguages
 - Stratégies logicielles HKLM \\ \\ Microsoft \\ \\ WindowsStore
 - HKLM \\ Software Microsoft Windows \\ \\ \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
@@ -99,7 +99,7 @@ Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécu
 - Microsoft-Windows-Bitlocker/Bitlocker Management
 - Microsoft-Windows-SENSE/Opérationnel
 - Microsoft-Windows-SenseIR/Operational
-- Installation
+- Configuration
 - Système
 
 ### <a name="files"></a>Fichiers

@@ -9,19 +9,19 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
   ms.custom:
   - seo-marvel-apr2020
   description: Obtenez des réponses aux questions générales les plus courantes sur le service de filtrage du courrier Exchange Online Protection (EOP) hébergé dans le cloud.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: d768d523a875be6b4db159e4b91f559cc4050ba4
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59207203"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60208375"
 title: Forum Aux Questions d’ordre général concernant Exchange Online Protection (EOP)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]

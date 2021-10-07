@@ -8,19 +8,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés de votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: d4d3658ad8c7533e2540dde6c390b4f2b4691cb8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 424b7c09a89b20d134654293a1e9c9abd69d6ff2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209209"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208228"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 entreprise
 
@@ -60,7 +60,7 @@ Avant de commencer à utiliser l’accès privilégié, déterminez qui aura l�
 
 #### <a name="step-2-enable-privileged-access"></a>[Étape 2 : Activer l’accès privilégié](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-L’accès privilégié doit être explicitement allumé dans Microsoft 365 avec le groupe d’approbation par défaut, et il doit inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès de gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
+L’accès privilégié doit être explicitement allumé dans Microsoft 365 avec le groupe d’approbations par défaut, et il doit inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès de gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Phase 3 : Vérifier que l’approbation est requise pour les tâches avec élévation de privilèges
 
@@ -122,7 +122,7 @@ Tout d’abord, connectez-vous à Exchange Management PowerShell avec les inform
 
 3. Sélectionnez **Gérer les stratégies et les demandes d’accès.**
 
-4. Sélectionnez **Nouvelle requête**. Dans les champs de la baisse, sélectionnez les valeurs appropriées pour votre organisation :
+4. Sélectionnez **Nouvelle requête.** Dans les champs de la baisse, sélectionnez les valeurs appropriées pour votre organisation :
 
     **Type de** requête : étendue **de** demande de tâche : Exchange **demande** pour : Nouvelle durée de règle de journal **(heures)**: **2** commentaires : demander l’autorisation de créer une règle de journal  
 

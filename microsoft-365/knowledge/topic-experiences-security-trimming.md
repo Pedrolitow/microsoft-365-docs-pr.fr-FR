@@ -1,5 +1,5 @@
 ---
-title: Le contrôle de sécurité dans Sujets Microsoft Viva
+title: Le trimming de sécurité dans Sujets Microsoft Viva
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -10,16 +10,16 @@ ms.service: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: enabler-strategic
-localization_priority: None
-description: Découvrez comment la sécurité est utilisée pour afficher les rubriques dans Rubriques Desy.
-ms.openlocfilehash: 25acd5ea96cb07a5974e10ec9763d1f20351d021
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: Découvrez comment la sécurité est utilisée pour afficher les rubriques dans rubriques Topics.
+ms.openlocfilehash: babf5cf6179df18bdf9f2cc1d68e5a6ed4b6b772
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205243"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214020"
 ---
-# <a name="security-trimming-in-microsoft-viva-topics"></a>Le contrôle de sécurité dans Sujets Microsoft Viva
+# <a name="security-trimming-in-microsoft-viva-topics"></a>Le trimming de sécurité dans Sujets Microsoft Viva
 
 Les utilisateurs de rubriques Topics ne peuvent pas afficher les informations dans les rubriques que leurs autorisations Office 365 existantes les empêchent de voir. Tout ce qu'un utilisateur voit sur une page thématique (par exemple, sites SharePoint, documents, fichiers) sera une information qu'il est déjà autorisé à consulter. Rubriques Viva n’a apporté aucune modification aux autorisations existantes.
 
@@ -33,7 +33,7 @@ Par exemple, lorsque l’utilisateur 1 affiche la page thématique Neptune, il p
 
 Toutefois, lorsque l’utilisateur 2 examine la même page de rubriques, son affichage diffère de celui de l’utilisateur 1.  L’utilisateur 2 peut voir le fichier de présentation du produit *DG-2000* dans la section Des fichiers et **des pages** épinglés de la page de rubrique, qui n’apparaît pas pour l’utilisateur 1. 
 
-![Rubrique de l’utilisateur 2.](../media/knowledge-management/user1-topic-view.png) </br> 
+![Rubrique « Topic » pour l’utilisateur 2.](../media/knowledge-management/user1-topic-view.png) </br> 
 
 La différence entre ce que les utilisateurs peuvent voir dans la même rubrique est que les utilisateurs peuvent ne pas avoir les autorisations Office 365 pour afficher un site ou un fichier associé.  Cette rubrique respecte les autorisations définies sur les éléments d’une rubrique et ne peut pas modifier l’accès à ces derniers. Dans notre exemple, l’utilisateur 1 n’est pas en mesure d’afficher le fichier de présentation du produit *DG-2000* dans sa page de rubriques, car l’utilisateur 1 ne Office 365 pas l’autorisation d’afficher le fichier.
 
