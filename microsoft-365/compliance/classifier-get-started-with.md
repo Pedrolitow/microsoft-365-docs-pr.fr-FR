@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Cet article vous montre comment créer et former un classifieur personnalisé et comment les former à nouveau pour améliorer la précision.
-ms.openlocfilehash: f8401193274f90ae90d773c6bb9a2a5a6a995169
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d67c4a6b3934500e3594b1021ffad7f291af5587
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164100"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193326"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs avec capacité d’apprentissage
 
@@ -81,19 +81,19 @@ Pour en savoir plus sur le flux de travail global de création de classifieurs e
 
 ### <a name="seed-content"></a>Contenu d’amorçage
 
-Lorsque vous souhaitez qu’un classifieur entraisable identifie de manière indépendante et précise un élément comme étant dans une catégorie particulière de contenu, vous devez d’abord le présenter avec de nombreux exemples du type de contenu de la catégorie. Cet amorçage d’échantillons au classifieur entraçable est appelé *amorçage.* Le contenu de amorçage est sélectionné par un humain et est jugé pour représenter la catégorie de contenu.
+Lorsque vous souhaitez qu’un classificateur entraisable identifie de manière indépendante et précise un élément comme étant dans une catégorie particulière de contenu, vous devez d’abord le présenter avec de nombreux exemples du type de contenu qui se trouverait dans la catégorie. Cet amorçage d’échantillons au classifieur entraçable est appelé *amorçage.* Le contenu de amorçage est sélectionné par un humain et est jugé pour représenter la catégorie de contenu.
 
 > [!TIP]
 > Vous devez avoir au moins 50 échantillons positifs et jusqu’à 500. Le classificateur entraçable traitera jusqu’aux 500 exemples créés les plus récents (par horodateur de date/heure de création de fichier). Plus vous fournissez d’exemples, plus les prédictions du classifieur seront précises.
 
 ### <a name="testing-content"></a>Test du contenu
 
-Une fois que le classifieur entraisable a traitée suffisamment d’échantillons positifs pour créer un modèle de prédiction, vous devez tester les prédictions qu’il effectue pour voir si le classifieur peut correctement faire la distinction entre les éléments qui correspondent à la catégorie et les éléments qui ne le sont pas. Pour ce faire, vous sélectionnez un autre ensemble de contenu sélectionné par l’être humain, avec un plus grand nombre d’échantillons qui doivent être placés dans la catégorie, et des exemples qui ne le seront pas. Vous devez tester avec des données différentes des données initiales initiales que vous avez fournies. Une fois qu’il les traite, vous allez manuellement à travers les résultats et vérifiez si chaque prédiction est correcte, incorrecte ou vous n’êtes pas sûr. Le classifieur entraisable utilise ce retour d’expérience pour améliorer son modèle de prédiction.
+Une fois que le classifieur entraisable a traitée suffisamment d’échantillons positifs pour créer un modèle de prédiction, vous devez tester les prédictions qu’il effectue pour voir si le classifieur peut correctement faire la distinction entre les éléments qui correspondent à la catégorie et les éléments qui ne le sont pas. Pour ce faire, vous sélectionnez un autre ensemble de contenu sélectionné par l’être humain, avec un plus grand nombre d’échantillons qui doivent être placés dans la catégorie et des exemples qui ne le seront pas. Vous devez tester avec des données différentes des données initiales initiales que vous avez fournies. Une fois qu’il les traite, vous allez manuellement à travers les résultats et vérifiez si chaque prédiction est correcte, incorrecte ou vous n’êtes pas sûr. Le classifieur entraisable utilise ce retour d’expérience pour améliorer son modèle de prédiction.
 
 > [!TIP]
 > Pour obtenir de meilleurs résultats, vous devez avoir au moins 200 éléments dans votre exemple de test avec une distribution équitable de correspondances positives et négatives.
 
-## <a name="how-to-create-a-trainable-classifier"></a>Comment créer un classifieur entra nementable
+## <a name="how-to-create-a-trainable-classifier"></a>Comment créer un classifieur entraisable
 
 1. Collectez entre 50 et 500 éléments de contenu d’amorçage. Il doit s’agit uniquement d’exemples qui représentent fortement le type de contenu que le classifieur entraçable doit identifier comme étant dans la catégorie de classification. Reportez-vous [aux extensions de](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) nom de fichier et aux types de fichiers analyse par défaut dans SharePoint Server pour les types de fichiers pris en charge.
 
@@ -120,7 +120,7 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 
 8. Examinez les paramètres et choisissez `Create trainable classifier` .
 
-9. Dans un délai de 24 heures, le classifieur entraçable traitera les données d’amorçage et créera un modèle de prédiction. L’état du classificateur est `In progress` pendant qu’il traite les données d’amorçage. Lorsque le classificateur a terminé le traitement des données de amorçage, l’état change en `Need test items` .
+9. Dans un délai de 24 heures, le classifieur entraçable traitera les données d’amorçage et créera un modèle de prédiction. L’état du classifieur `In progress` est pendant qu’il traite les données d’amorçage. Lorsque le classificateur a terminé le traitement des données de amorçage, l’état change en `Need test items` .
 
 10. Vous pouvez désormais afficher la page de détails en choisissant le classificateur.
 
@@ -155,7 +155,7 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
     > [!div class="mx-imgBorder"]
     > ![zone d’avis sur les éléments.](../media/classifier-trainable-review-detail.png)
 
-19. Passer *en revue au moins* 200 éléments. Une fois que le score de précision s’est stabilisé, l’option **de** publication devient disponible et l’état du classificateur le dit `Ready to use` .
+19. Passer *en revue au moins* 200 éléments. Une fois que le score  de précision s’est stabilisé, l’option de publication devient disponible et l’état du classificateur le dit `Ready to use` .
 
     > [!div class="mx-imgBorder"]
     > ![score de précision et prêt à être publié.](../media/classifier-trainable-review-ready-to-publish.png)

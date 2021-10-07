@@ -4,7 +4,7 @@ description: Décrit comment prendre des mesures pour améliorer votre score de 
 keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d67d92029ccb4da6711010b291dc2ad71bcaff70
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73f477e63d777a2de68a8ee06dcd6edd31024db7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207558"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans https://security.microsoft.com/securescore le portail [Microsoft 365 Defender.](overview-security-center.md)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](overview-security-center.md)
 
 Pour vous aider à trouver les informations dont vous avez besoin plus rapidement, les actions d’amélioration de Microsoft sont organisées en groupes :
 
@@ -54,7 +54,7 @@ En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, 
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global pour vous donner une image plus complète de votre score global :
 
-- **Score planifié :** afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
 - **Score de licence actuel**: afficher le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score réalisable :** afficher le score qui peut être obtenu avec vos licences Microsoft et l’acceptation actuelle des risques
 
@@ -78,7 +78,7 @@ Lorsque vous sélectionnez une action d’amélioration spécifique, un volant d
 
 Pour effectuer l’action, vous avez plusieurs options :
 
-- Sélectionnez **Gérer** pour passer à l’écran de configuration et apporter les changements. Vous gagnerez ensuite les points que l’action vaut, visibles dans le volant. La mise à jour des points prend généralement environ 24 heures.
+- Sélectionnez **Gérer** pour passer à l’écran de configuration et effectuer les changements. Vous gagnerez ensuite les points que l’action vaut, visibles dans le volant. La mise à jour des points prend généralement environ 24 heures.
 
 - Sélectionnez **Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que le courrier électronique, Microsoft Teams ou Microsoft Planner.
 

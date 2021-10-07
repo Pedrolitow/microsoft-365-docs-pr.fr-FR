@@ -5,17 +5,17 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20af244d14f8f29e0175fb5e8efdabff94ff9a2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c10d7f59f31b3cfbd8baf34247e9fc4288751dd9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204956"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208084"
 ---
 # <a name="service-changes-and-communication"></a>Modifications de service et communication
 
@@ -55,7 +55,7 @@ Microsoft Manged Desktop modifications et communications sont régies par deux s
 
 ## <a name="changes-you-make"></a>Modifications apportées
 
-Certaines modifications que vous pouvez apporter à votre environnement peuvent avoir un impact sur Microsoft Manged Desktop. Pour ces modifications majeures, nous vous demandons de nous envoyer une notification d’au moins 30 jours en envoyant une demande de service dans le portail Microsoft Manged Desktop administrateur. Pour [plus d’Microsoft Manged Desktop,](../working-with-managed-desktop/admin-support.md) consultez la prise en charge de l’administrateur. Cela nous laisse suffisamment de temps pour planifier et préparer la modification afin d’éviter les perturbations.
+Certaines modifications que vous pouvez apporter à votre environnement peuvent avoir un impact sur Microsoft Manged Desktop. Pour ces modifications majeures, nous vous demandons de nous envoyer une notification d’au moins 30 jours en envoyant une demande de service dans le portail Microsoft Manged Desktop administrateur. Pour [plus d’Microsoft Manged Desktop, consultez](../working-with-managed-desktop/admin-support.md) la prise en charge de l’administrateur. Cela nous laisse suffisamment de temps pour planifier et préparer la modification afin d’éviter les perturbations.
 
 Les principales modifications sont celles qui peuvent avoir un impact sur l’un de ces domaines :
 

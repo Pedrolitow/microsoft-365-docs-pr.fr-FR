@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 entreprise et la protection des données de travail sur les appareils de vos utilisateurs.
-ms.openlocfilehash: c235fc3cd604dc4995257695afb44a1dab44651c
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 32247f097b5e8759126fc6f06dd4d613b9a6b8db
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934076"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180412"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 entreprise
 

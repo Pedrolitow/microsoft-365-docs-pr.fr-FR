@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 56cbe59339c7e1fd93a3251c0b941c05602e152c
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: e68526f4a7e83295d8d0748651b07e35cfdaf5c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60008893"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176546"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Contrôler le forwarding automatique du courrier externe dans Microsoft 365
 
@@ -61,7 +61,7 @@ Pour obtenir des instructions sur la configuration de ces paramètres, voir Conf
 En tant qu’administrateur, vous avez peut-être déjà configuré d’autres contrôles pour autoriser ou bloquer le forwarding automatique du courrier électronique. Par exemple :
 
 - [Domaines distants permettant](/exchange/mail-flow-best-practices/remote-domains/remote-domains) d’autoriser ou de bloquer le forwarding automatique du courrier électronique vers tout ou partie des domaines externes.
-- Conditions et actions dans Exchange règles de flux de messagerie [(également](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) appelées règles de transport) pour détecter et bloquer les messages automatiquement transmis à des destinataires externes.
+- Conditions et actions dans Exchange règles de [flux](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de messagerie (également appelées règles de transport) pour détecter et bloquer les messages automatiquement transmis à des destinataires externes.
 
 Les paramètres de domaine distant et les règles de flux de messagerie sont indépendants des paramètres des stratégies de filtrage du courrier indésirable sortant. Par exemple :
 

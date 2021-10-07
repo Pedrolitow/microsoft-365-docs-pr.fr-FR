@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Découvrez comment utiliser une stratégie de protection contre la perte de données (DLP) pour protéger les documents qui ont des propriétés d’un système tiers.
-ms.openlocfilehash: 60440162834bbef34c6e3adc2a60053cd9015e9d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb8e1474666f016af3f6169f1a1d8d490a36f3c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209389"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200352"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
@@ -33,13 +33,13 @@ Microsoft 365 stratégies de protection contre la perte de données (DLP) peuven
 
 - Windows Propriétés de l’infrastructure de classification des fichiers de serveur (FCI)
 - SharePoint de document
-- propriétés de document du système tiers
+- propriétés de document système tierces
 
 ![Diagramme montrant Office 365 système de classification externe et externe.](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
 Par exemple, votre organisation peut utiliser l’IFCI du serveur Windows pour identifier les éléments avec des données personnelles telles que les  numéros de sécurité sociale, puis classer le document en fixant la propriété Informations d’identification personnelle sur Les informations d’identification personnelle sur **les** données d’identification personnelle élevées, moyennes, faibles, publiques ou non en fonction du type et du nombre d’occurrences de données personnelles trouvées dans le document.   
 
-Dans Microsoft 365, vous pouvez créer une stratégie DLP qui identifie les documents dont la propriété est définie sur des valeurs spécifiques, telles que High **et** **Medium,** puis prend une action telle que le blocage de l’accès à ces fichiers. La même stratégie peut disposer d’une autre règle qui exécute une action différente si la propriété est définie sur **Faible**, telle que l’envoi d’une notification par courrier électronique. De cette façon, DLP s’intègre à l’CI de Windows Server et peut aider à protéger les documents Office téléchargés ou partagés sur Microsoft 365 à partir de serveurs de fichiers Windows Server.
+Dans Microsoft 365, vous pouvez créer une stratégie DLP qui identifie les documents qui  ont cette propriété définie sur des valeurs spécifiques, telles que Élevé et **Moyen,** puis prendre une action telle que le blocage de l’accès à ces fichiers. La même stratégie peut disposer d’une autre règle qui exécute une action différente si la propriété est définie sur **Faible**, telle que l’envoi d’une notification par courrier électronique. De cette façon, DLP s’intègre à l’CI Windows Server et peut aider à protéger les documents Office téléchargés ou partagés sur Microsoft 365 à partir de serveurs de fichiers Windows Server.
 
 Une stratégie DLP recherche simplement une paire nom/valeur de propriété spécifique. N’importe quelle propriété de document peut être utilisée, tant que la propriété possède une propriété gérée correspondante pour la recherche SharePoint. Par exemple, une collection de sites SharePoint peut utiliser un type de contenu nommé **Relevé de voyage** avec un champ obligatoire nommé **Client**. Lorsqu’une personne crée un relevé de voyage, elle doit entrer le nom du client. Cette paire nom/valeur de propriété peut également être utilisée dans une stratégie DLP, par exemple,  si vous souhaitez une règle qui bloque l’accès au document pour les invités lorsque le champ Client contient **Contoso**.
 
@@ -54,7 +54,7 @@ Exemples
 > [!NOTE]
 > N’oubliez pas d’utiliser un nom de propriété gérée et non un nom de propriété analyse lors de la création de règles DLP à l’aide de la `ContentPropertyContainsWords` condition.
 
-Ceci est important car la DLP utilise le robot de recherche pour identifier et classer les informations sensibles sur vos sites, puis stocke ces informations sensibles dans une partie sécurisée de l’index de recherche. Lorsque vous chargez un document vers Office 365, SharePoint crée automatiquement les propriétés analysées basées sur les propriétés du document. En revanche, pour utiliser une ICF ou une autre propriété dans une stratégie DLP, la propriété analysée doit être mappée sur une propriété gérée afin que le contenu avec cette propriété soit conservé dans l’index.
+Ceci est important car DLP utilise le robot de recherche pour identifier et classer les informations sensibles sur vos sites, puis stocke ces informations sensibles dans une partie sécurisée de l’index de recherche. Lorsque vous chargez un document vers Office 365, SharePoint crée automatiquement les propriétés analysées basées sur les propriétés du document. En revanche, pour utiliser une ICF ou une autre propriété dans une stratégie DLP, la propriété analysée doit être mappée sur une propriété gérée afin que le contenu avec cette propriété soit conservé dans l’index.
 
 Pour plus d’informations sur la recherche et les propriétés gérées, voir Gérer le schéma de [recherche dans SharePoint Online.](/sharepoint/manage-search-schema)
 
@@ -84,7 +84,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
 
 8. Sous **Mappages aux propriétés** \> **analyser, ajoutez un mappage.**
 
-9. Dans  la boîte de dialogue de sélection des propriétés analyse, recherchez et sélectionnez la propriété analyse qui correspond à la propriété Windows Server FCI ou à une autre propriété que vous utiliserez dans votre stratégie \> DLP \> **OK.**
+9. Dans  la boîte de dialogue de sélection des propriétés analyse, recherchez et sélectionnez la propriété qui correspond à la propriété Windows Server FCI ou à une autre propriété que vous utiliserez dans votre stratégie \> DLP \> **OK.**
 
    ![boîte de dialogue de sélection de propriétés analyse.](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 

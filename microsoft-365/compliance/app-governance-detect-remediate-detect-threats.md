@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Corrigez les menaces liées aux applications.
-ms.openlocfilehash: 103616c9bee47455b75e0750194d876fc7a13600
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05106b9aaf790f92e8b69bfe14b393c45c934862
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181462"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193362"
 ---
 # <a name="remediate-app-threats"></a>Corriger les menaces liées aux applications
 

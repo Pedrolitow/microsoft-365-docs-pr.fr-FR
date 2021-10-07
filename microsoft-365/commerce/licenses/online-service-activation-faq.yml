@@ -10,18 +10,18 @@ metadata:
   ms.topic: article
   ms.service: o365-administration
   ms.custom: commerce_vl
-  localization_priority: Normal
+  ms.localizationpriority: medium
   description: Activation du service en ligne pour le programme Open - Questions fréquemment posées
-  ms.openlocfilehash: b00a5a06ba4f936811426d150542761ed4c5c08b
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: b8570097a056a574a638f2d3c6ed7a7dfe78fa99
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59181607"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60193518"
 title: Activation du service en ligne pour le programme Open - Questions fréquemment posées
 summary: ''
 sections:
-- name: Général
+- name: Généralités
   questions:
   - question: >
       Comment activer les services en ligne achetés via les programmes Ouverts (abonnement Open, Open Value et Open Value) ?
@@ -30,7 +30,7 @@ sections:
 
       - Après avoir commandé vos services en ligne via la famille de programmes Open, vous recevrez un courrier électronique avec un lien et des instructions pour activer vos services.
 
-      OU
+      OR
 
       - Dans le programme Open du Centre de gestion des licences en volume [(VLSC),](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) les clients peuvent se rendre dans la section Activation du service en ligne et sélectionner la licence à gérer :
 

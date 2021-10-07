@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: L’administrateur peut apprendre à utiliser le partage d’audit dans Microsoft 365 journal d’audit pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d6e25b4bc2be325061996cee61fd4d2c1ccb786
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ff05b655617608332b4b838e07a6af55e8b4d010
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205716"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193170"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Utiliser le partage d’audit dans le journal d’audit
 
@@ -34,9 +34,9 @@ Le partage est une activité clé dans SharePoint Online et OneDrive Entreprise,
   
 ## <a name="the-sharepoint-sharing-schema"></a>Schéma SharePoint partage de données
 
-Les événements de partage (sans les événements liés à la stratégie de partage et aux liens de partage) sont différents des événements liés aux fichiers et aux dossiers d’une manière principale : un utilisateur effectue une action qui a un effet sur un autre utilisateur. Par exemple, lorsqu’un utilisateur de ressource A donne à l’utilisateur B un accès à un fichier. Dans cet exemple, l’utilisateur A est *l’utilisateur agissant* et l’utilisateur B *l’utilisateur cible.* Dans le schéma SharePoint fichier, l’action de l’utilisateur agissant affecte uniquement le fichier lui-même. Lorsque l’utilisateur A ouvre un fichier, les seules informations nécessaires dans **l’événement FileAccessed** sont l’utilisateur agissant. Pour résoudre cette différence, il existe un schéma distinct, appelé schéma de partage *SharePoint,* qui capture plus d’informations sur les événements de partage. Cela garantit que les administrateurs ont une visibilité sur les personnes qui ont partagé une ressource et sur l’utilisateur avec qui la ressource a été partagée. 
+Les événements de partage (sans les événements liés à la stratégie de partage et aux liens de partage) sont différents des événements liés aux fichiers et aux dossiers d’une manière principale : un utilisateur effectue une action qui a un effet sur un autre utilisateur. Par exemple, lorsqu’un utilisateur de ressource A donne à l’utilisateur B un accès à un fichier. Dans cet exemple, l’utilisateur A est *l’utilisateur agissant* et l’utilisateur B *l’utilisateur cible.* Dans le schéma SharePoint fichier, l’action de l’utilisateur agissant affecte uniquement le fichier lui-même. Lorsque l’utilisateur A ouvre un fichier, les seules informations nécessaires dans l’événement **FileAccessed** sont l’utilisateur agissant. Pour résoudre cette différence, il existe un schéma distinct, appelé schéma de partage *SharePoint,* qui capture plus d’informations sur les événements de partage. Cela garantit que les administrateurs ont une visibilité sur les personnes qui ont partagé une ressource et sur l’utilisateur avec qui la ressource a été partagée. 
   
-Le schéma de partage fournit deux champs supplémentaires dans un enregistrement d’audit lié au partage d’événements : 
+Le schéma de partage fournit deux champs supplémentaires dans un enregistrement d’audit relatif au partage d’événements : 
   
 - **TargetUserOrGroupType :** Indique si l’utilisateur ou le groupe cible est membre, invité, sharepointgroup, groupe de sécurité ou partenaire.
 
@@ -44,7 +44,7 @@ Le schéma de partage fournit deux champs supplémentaires dans un enregistremen
 
 Ces deux champs, en plus des autres propriétés du schéma du journal d’audit, telles que  User, Operation et Date, peuvent indiquer l’utilisateur qui a partagé la ressource avec qui et quand *.*   
   
-Il existe une autre propriété de schéma qui est importante pour l’article de partage. Lorsque vous exportez les résultats de recherche du journal d’audit, la colonne **AuditData** dans le fichier CSV exporté stocke des informations sur les événements de partage. Par exemple, lorsqu’un utilisateur partage un site avec un autre utilisateur, cette action est réalisée en ajoutant l’utilisateur cible à un SharePoint groupe. La **colonne AuditData** capture ces informations pour fournir du contexte aux administrateurs. Consultez [l’étape 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) pour obtenir des instructions sur l’examen des informations dans la **colonne AuditData.**
+Il existe une autre propriété de schéma qui est importante pour l’article de partage. Lorsque vous exportez les résultats de recherche du journal d’audit, la colonne **AuditData** dans le fichier CSV exporté stocke des informations sur les événements de partage. Par exemple, lorsqu’un utilisateur partage un site avec un autre utilisateur, cette action est réalisée en ajoutant l’utilisateur cible à un SharePoint groupe. La **colonne AuditData** capture ces informations pour fournir un contexte aux administrateurs. Consultez [l’étape 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) pour obtenir des instructions sur l’examen des informations dans la **colonne AuditData.**
 
 ## <a name="sharepoint-sharing-events"></a>SharePoint événements de partage
 
@@ -52,7 +52,7 @@ Le partage est défini par lorsqu’un utilisateur (l’utilisateur *agissant)* 
 
 - **SharingInvitationCreated :** Un utilisateur de votre organisation a tenté de partager une ressource (probablement un site) avec un utilisateur externe. Cela entraîne l’envoi d’une invitation de partage externe à l’utilisateur cible. Aucun accès à la ressource n’est accordé à ce stade.
 
-- **SharingInvitationAccepted :** L’utilisateur externe a accepté l’invitation de partage envoyée par l’utilisateur agissant et a désormais accès à la ressource.
+- **SharingInvitationAccepted :** L’utilisateur externe a accepté l’invitation de partage envoyée par l’utilisateur en action et a désormais accès à la ressource.
 
 - **AnonymousLinkCreated :** Un lien anonyme (également appelé lien « Tout le monde » ) est créé pour une ressource. Étant donné qu’un lien anonyme peut être créé, puis copié, il est raisonnable de supposer que tout document ayant un lien anonyme a été partagé avec un utilisateur cible.
 
@@ -70,7 +70,7 @@ Lorsqu’un utilisateur (l’utilisateur agissant) souhaite partager une ressour
     
 - Envoie une notification de partage à l’adresse e-mail de l’utilisateur cible.
     
-- Enregistre un **événement SharingSet.** Cet événement a un nom convivial « Fichier partagé, dossier ou site » sous Activités de demande de partage et d’accès dans le s sélectionneur d’activités de l’outil de recherche du journal d’audit.  Consultez la capture [d’écran de l’étape 1.](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file) 
+- Enregistre un **événement SharingSet.** Cet événement a le nom convivial « Fichier partagé, dossier ou site » sous Activités de demande de partage et d’accès dans le s sélectionneur d’activités de l’outil de recherche du journal d’audit.  Consultez la capture [d’écran de l’étape 1.](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file) 
     
 Si un compte d’utilisateur de l’utilisateur cible n’est pas dans l’annuaire, SharePoint :: 
     

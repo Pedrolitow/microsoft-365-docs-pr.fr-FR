@@ -8,22 +8,22 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 66fff530d67e6211183ea5f9489dcc8497d4fb07
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 33d411abb13e1fe50365b353c59c61a53158bc48
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202349"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207234"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrer les recherches et les Centre de conformité Microsoft 365
 
-Le Centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une plus grande fiabilité, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment les cas d’organisation de votre contenu, les ensembles de révision pour examiner le contenu et l’analyse afin de faciliter la révision des données telles que le regroupement quasi-dupliqué, le thread de messagerie électronique, l’analyse des thèmes et le codage prédictif.
+Le Centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation d’eDiscovery, notamment : une plus grande fiabilité, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment les cas d’organisation de votre contenu, les ensembles de révision pour passer en revue le contenu et l’analyse afin d’aider à annuler les données pour révision telles que le regroupement quasi-dupliqué, le thread de messagerie, l’analyse des thèmes,  et codage prédictif.
 
 Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des instructions de base sur la migration des recherches et des Centre de conformité Microsoft 365 eDiscovery In-Place à partir du Centre d’administration Exchange.
 
@@ -148,7 +148,7 @@ Si vous migrez une recherche eDiscovery In-Place mais que vous ne l’associez p
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Pour plus d’informations In-Place'& eDiscovery dans le Centre d’administration Exchange, voir :
+- Pour plus d’informations In-Place'& eDiscovery dans le centre d Exchange’administration, voir :
   
   - [Découverte électronique locale](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 

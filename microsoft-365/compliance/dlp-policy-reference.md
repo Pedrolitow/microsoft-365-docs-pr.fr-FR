@@ -8,7 +8,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 972b5a628f434bdfb989191cf5fcd8ca9bfcc2d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b2cfc2e9387b9c29fd7bd6141046436254f88704
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208004"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201240"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -36,7 +36,7 @@ Les modèles de stratégie DLP sont pré-triés en quatre catégories :
 
 - ceux qui peuvent détecter et protéger les types **d’informations** financières
 - ceux qui peuvent détecter et protéger les types d’informations médicales **et médicales**
-- ceux qui peuvent détecter et protéger les types d’informations **de** confidentialité
+- ceux qui peuvent détecter et protéger les types **d’informations de** confidentialité
 - modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’un des autres ne répond pas aux besoins de votre organisation.
 
 Ce tableau répertorie tous les modèles de stratégie et les types d’informations sensibles qu’ils couvrent. 
@@ -107,12 +107,12 @@ Actuel depuis le 23/06/2021
 Une stratégie DLP peut rechercher et protéger des éléments qui contiennent des informations sensibles à plusieurs emplacements.
 
 
-|Emplacement  |Inclure/exclure l’étendue  |état des données  |conditions préalables supplémentaires |
+|Lieu  |Inclure/exclure l’étendue  |état des données  |conditions préalables supplémentaires |
 |---------|---------|---------|---------|
-|Exchange en ligne |groupe de distribution | data-in-motion| non |
-|SharePoint sites en ligne   |sites       | données au repos </br> données en cours d’utilisation | non|
-|Les comptes OneDrive Entreprise| compte ou groupe de distribution |données au repos </br> données en cours d’utilisation|non|
-|conversation et messages de canal Teams     | compte ou groupe de distribution |data-in-motion </br> données en cours d’utilisation |  non       |
+|Exchange en ligne |groupe de distribution | data-in-motion| Non |
+|SharePoint sites en ligne   |sites       | données au repos </br> données en cours d’utilisation | Non|
+|Les comptes OneDrive Entreprise| compte ou groupe de distribution |données au repos </br> données en cours d’utilisation|Non|
+|conversation et messages de canal Teams     | compte ou groupe de distribution |data-in-motion </br> données en cours d’utilisation |  Non       |
 |Microsoft Cloud App Security (MCAS)   | instance d’application cloud       |données au repos         | - [Utiliser des stratégies de protection contre la perte de données pour les applications cloud non Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Appareils  |utilisateurs ou groupe         |données au repos </br>  données en cours d’utilisation </br>  data-in-motion         |- [En savoir plus sur Microsoft 365 protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Mise en place de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurer les paramètres de proxy d’appareil et de connexion Internet pour le point de terminaison DLP](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
 |Référentiels locaux (partages de fichiers et SharePoint)    |référentiel         | données au repos         | - [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Mise en place du scanneur local de protection contre la perte de données](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
@@ -155,7 +155,7 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 - How do I tune the behavior of a Policy through the tuning of rules
 - what's in a rule-->
 
-Les règles sont la logique métier des stratégies DLP. Ils sont constitués des :
+Les règles sont la logique métier des stratégies DLP. Elles sont composées des :
 
 - [**Conditions**](#conditions) qui, lorsqu’elles correspondent, déclenchent la stratégie
 - [**Exceptions**](#exceptions) aux conditions
@@ -203,11 +203,11 @@ Les conditions sont inclusives et vous permet de définir ce que vous souhaitez 
 - [étiquettes de sensibilité](sensitivity-labels.md)
 - [étiquettes de rétention](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 
-en fonction des [emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
+en fonction [du ou des emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
 
 Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) Les sits ont également une plage prédéfingée d’occurrences d’un sit  qui doivent être trouvées pour correspondre à la règle, par exemple, si la plage de nombre d’instances est définie entre un et neuf, la sit doit se produire au moins une fois et jusqu’à neuf fois pour que la règle corresponde.
 
-La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de** rétention que vous choisissez. 
+La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de rétention** que vous choisissez. 
 
 #### <a name="condition-context"></a>Contexte de condition
 
@@ -425,7 +425,7 @@ Si vous sélectionnez Périphériques et Microsoft Cloud App Security, ces actio
 - Auditer ou restreindre les activités sur Windows appareils
 - Restreindre les applications tierces
 
-L’application ou non des actions dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant l’option Tester **en premier.** Vous choisissez d’exécuter la stratégie dès qu’une heure  après sa création en sélectionnant l’option Activer immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option  Désactiver. 
+L’application ou non des actions dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant la première **option** Tester. Vous choisissez d’exécuter la stratégie dès qu’une heure  après sa création en sélectionnant l’option Activer immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option  Désactiver. 
 
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
@@ -468,7 +468,7 @@ Vous pouvez activer/désactiver les notifications des utilisateurs pour différe
     - notifications par courrier électronique à l’utilisateur qui a envoyé, partagé ou modifié le contenu en dernier ;
     - avertir des personnes spécifiques
 
-vous pouvez également choisir de personnaliser le texte de l’e-mail, l’objet et le texte du conseil de stratégie.
+ainsi que le choix de personnaliser le texte du message électronique, l’objet et le texte du conseil de stratégie.
 
 ![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et MCAS](../media/dlp-user-notification-non-devices.png)
 
@@ -585,11 +585,11 @@ DLP n’analyse pas les messages électronique de la même façon que les élém
 
 ### <a name="additional-options"></a>Options supplémentaires
 
-Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options** supplémentaires pour contrôler le traitement supplémentaire des règles en cas de correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
+Si vous avez plusieurs règles dans une stratégie, vous pouvez utiliser les **options** supplémentaires pour contrôler d’autres traitements de règles s’il existe une correspondance avec la règle que vous modifiez et définir la priorité pour l’évaluation de la règle.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planifier la protection contre la perte de données (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
 - [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

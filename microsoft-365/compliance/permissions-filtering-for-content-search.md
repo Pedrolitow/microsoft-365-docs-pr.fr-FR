@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche pour autoriser les gestionnaires eDiscovery à rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6452f2dd17d93ce30065aa5636d6cacf2818b05d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 785fd1237cab66a898307724c5142a6baf4d6120
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177939"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200424"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configurer le filtrage des autorisations pour eDiscovery
 
@@ -87,7 +87,7 @@ Avant de pouvoir exécuter correctement le script dans cette section, vous devez
     .\ConnectEXO-SCC.ps1
     ```
 
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets de Exchange Online et security & Compliance PowerShell sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter les cmdlets powerShell du centre Exchange Online sécurité et sécurité & conformité. Par exemple, vous pouvez exécuter **et Get-Mailbox** et **Get-ComplianceSearch**.
+Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets de Exchange Online et security & Compliance PowerShell sont importées dans votre session Windows PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter les cmdlets PowerShell du centre Exchange Online sécurité et sécurité & conformité. Par exemple, vous pouvez exécuter **et Get-Mailbox** et **Get-ComplianceSearch**.
 
 Pour résoudre les erreurs de connexion PowerShell, voir :
 
@@ -189,7 +189,7 @@ Cet exemple permet aux membres du groupe de rôles « US Discovery Managers » d
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'"
 ```
 
-Cet exemple permet aux membres du groupe de rôles « Fourth Coffee eDiscovery Managers » de rechercher uniquement les boîtes aux lettres et les comptes OneDrive qui ont la valeur « FourthCoffee » pour la propriété de boîte aux lettres Department. Le filtre permet également aux membres du groupe de rôles de rechercher des documents dans le site fourth coffee SharePoint.
+Cet exemple permet aux membres du groupe de rôles « Fourth Coffee eDiscovery Managers » de rechercher uniquement les boîtes aux lettres et les comptes OneDrive qui ont la valeur « FourthCoffee » pour la propriété de boîte aux lettres Department. Le filtre permet également aux membres du groupe de rôles de rechercher des documents dans le site Fourth Coffee SharePoint.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "SiteContent_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee' -or SiteContent_Path -like 'https://contoso-my.sharepoint.com/personal'"
@@ -345,7 +345,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
   
 - **Le filtrage des autorisations de recherche fonctionne-t-il pour les dossiers publics ?** Non. Comme indiqué précédemment, le filtrage des autorisations de recherche ne peut pas être utilisé pour limiter les personnes autorisées à rechercher des dossiers publics dans Exchange. Par exemple, les éléments des emplacements de dossiers publics ne peuvent pas être exclus des résultats de la recherche par un filtre d’autorisations.
 
-- **Autoriser un utilisateur à rechercher tous les emplacements de contenu dans un service spécifique l’empêche-t-il également de rechercher des emplacements de contenu dans un autre service ?** Non. Comme indiqué précédemment, vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour permettre aux administrateurs SharePoint de rechercher uniquement des sites SharePoint, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
+- **Autoriser un utilisateur à rechercher tous les emplacements de contenu dans un service spécifique l’empêche-t-il également de rechercher des emplacements de contenu dans un autre service ?** Non. Comme indiqué précédemment, vous devez créer un filtre d’autorisations de recherche pour empêcher explicitement les utilisateurs de rechercher des emplacements de contenu dans un service spécifique (par exemple, empêcher un utilisateur de rechercher une boîte aux lettres Exchange ou un site SharePoint). En d’autres termes, la création d’un filtre d’autorisations de recherche qui permet à un utilisateur de rechercher tous les sites SharePoint de l’organisation n’empêche pas cet utilisateur de rechercher des boîtes aux lettres. Par exemple, pour autoriser SharePoint administrateurs à rechercher uniquement SharePoint sites, vous devez créer un filtre qui les empêche de rechercher des boîtes aux lettres. De même, pour autoriser Exchange administrateurs à rechercher uniquement des boîtes aux lettres, vous devez créer un filtre qui les empêche de rechercher des sites.
 
 - **Les filtres d’autorisations de recherche sont-ils comptabilisés dans les limites des caractères de requête de recherche ?** Oui. Les filtres d’autorisations de recherche comptent par rapport à la limite de caractères pour les requêtes de recherche. Pour plus d’informations, [voir Limites dans Advanced eDiscovery](limits-ediscovery20.md).
 

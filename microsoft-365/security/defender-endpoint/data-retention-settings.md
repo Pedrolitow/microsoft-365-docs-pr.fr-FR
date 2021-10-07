@@ -1,29 +1,27 @@
 ---
 title: Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données
-description: Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour endpoint
+description: Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour le point de terminaison
 keywords: données, stockage, paramètres, rétention, mise à jour
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbf9561e214be2180d57b3b4dcd2369061d7a7d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e58fc856cf1af6a51e4ded8c167e1d6b18d11f4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182020"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207928"
 ---
-# <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour endpoint
+# <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 05/05/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
@@ -16,12 +16,12 @@ description: Utilisez les détections de l’Explorateur ou en temps réel pour 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d0a9ba7ee40c8ad97df745a20d6b5b3314bb3d8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9cced68d084bb5f4625f745dfd0f19db16cece9c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182999"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176378"
 ---
 # <a name="explorer-and-real-time-detections-basics"></a>Informations de base sur les détections en temps réel et de l’Explorateur
 
@@ -35,7 +35,7 @@ Contenu de cet article :
 - [Licences et autorisations requises](#required-licenses-and-permissions)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3 articles** sur l’Explorateur (également appelé Explorateur de **menaces),** la sécurité du courrier électronique et les bases de détection en temps réel et de l’Explorateur **(telles** que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont le recherche de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) et la [sécurité de messagerie avec l’Explorateur.](email-security-in-microsoft-defender.md)
+> Cela fait partie d’une série de **3 articles** sur l’Explorateur (également appelé Explorateur de **menaces),** la sécurité du courrier électronique et les bases de détection en temps réel et de l’Explorateur **(telles** que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont le recherche de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) et la [sécurité du courrier électronique avec l’Explorateur.](email-security-in-microsoft-defender.md)
 
 Cet article explique la différence entre l’Explorateur et les rapports de détections en temps réel, ainsi que les licences et autorisations requises.
 
@@ -68,7 +68,7 @@ Vous devez avoir [Microsoft Defender](defender-for-office-365.md) pour Office 36
 
 Les équipes des opérations de sécurité doivent attribuer des licences à tous les utilisateurs qui doivent être protégés par Defender pour Office 365 et sachent que les détections d’Explorateur et en temps réel montrent les données de détection pour les utilisateurs sous licence.
 
-Pour afficher et utiliser *les* détections de l’Explorateur ou en temps réel, vous avez besoin des autorisations suivantes :
+Pour afficher et utiliser les détections *de* l’Explorateur ou en temps réel, vous avez besoin des autorisations suivantes :
 
 - Dans Defender pour Office 365 :
   - Gestion de l’organisation

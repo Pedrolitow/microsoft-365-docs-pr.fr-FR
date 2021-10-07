@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Découvrez comment résoudre les problèmes avec l’application Microsoft 365 d’analyse de l’utilisation.
-ms.openlocfilehash: b13ec0338c6ad48a5f5006528d77fbbdc290e7f5
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 5d1c6234f07f7d524ba2698720db8596474ce94d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774351"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200820"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Résolution des problèmes Microsoft 365'utilisation
 
@@ -53,9 +54,9 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
 
  **Code d'erreur :** 423 
   
- **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
- **Cause :** Lorsque vous [optez pour l’accès](enable-usage-analytics.md) aux données dans le modèle d’application à partir du Centre d’administration, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. Selon la taille de votre client, cette étape peut prendre entre deux et 48 heures. 
+ **Cause :** Lorsque vous [choisissez de](enable-usage-analytics.md) voir les données dans l’application modèle à partir du Centre d’administration, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. Selon la taille de votre client, cette étape peut prendre entre deux et 48 heures. 
   
  **Pour résoudre ce problème :** Soyez patient, mais si le message  n’est pas ajouté à Vos données, même 3 jours après l’initiation, contactez Microsoft 365 pour le [support technique.](../../business-video/get-help-support.md)
   
@@ -63,7 +64,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
 
  **Code d'erreur :** 400 
   
- **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
  **Cause :** L’ID de client est un GUID qui doit être au format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Si vous entrez une autre chaîne dans la zone d’entrée du client, vous obtenez cette erreur. 
   

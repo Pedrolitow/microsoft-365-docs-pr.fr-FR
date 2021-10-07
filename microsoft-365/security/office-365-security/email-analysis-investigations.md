@@ -7,7 +7,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79867d5d22a78fda9f5b2049688a8bc0b63e9feb
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: e0b93d3da939b8b6138033510f38cbc42f2818ec
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483254"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176558"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Analyse du courrier électronique dans les enquêtes pour Microsoft Defender pour Office 365
 
@@ -38,15 +38,15 @@ ms.locfileid: "59483254"
 
 Lors de l’examen automatisé des alertes, Microsoft Defender pour Office 365 analyse le courrier électronique d’origine pour identifier les menaces et identifie les autres messages électroniques liés à l’e-mail d’origine et potentiellement faisant partie d’une attaque. Cette analyse est importante, car les attaques de courrier électronique se composent rarement d’un seul e-mail.
 
-L’analyse de messagerie de l’examen automatisé identifie les clusters de messagerie à l’aide des attributs de l’e-mail d’origine pour interroger les messages électroniques envoyés et reçus par votre organisation. Cela est similaire à ce qu’un analyste d’opérations de sécurité recherche les e-mails associés dans l’Explorateur ou la recherche avancée. Plusieurs requêtes sont utilisées pour identifier les e-mails correspondants, car les attaquants morphiquent généralement les paramètres de messagerie pour éviter la détection de sécurité. L’analyse de clustering effectue ces vérifications pour déterminer comment gérer les messages électroniques impliqués dans l’examen :
+L’analyse de messagerie de l’examen automatisé identifie les clusters de messagerie à l’aide des attributs de l’e-mail d’origine pour interroger les messages électroniques envoyés et reçus par votre organisation. Cela est similaire à ce qu’un analyste d’opérations de sécurité recherche les e-mails associés dans l’Explorateur ou la recherche avancée. Plusieurs requêtes sont utilisées pour identifier les e-mails correspondants, car les attaquants morphiquent généralement les paramètres de messagerie pour éviter la détection de sécurité. L’analyse de clustering effectue ces vérifications pour déterminer comment gérer les e-mails impliqués dans l’examen :
 
-- L’analyse du courrier électronique crée des requêtes (clusters) d’e-mails à l’aide des attributs de l’e-mail d’origine : valeurs de l’expéditeur (adresse IP, domaine d’envoi) et contenu (objet, ID de cluster) afin de rechercher les e-mails associés.
-- Si l’analyse des URL et des fichiers du courrier électronique d’origine identifie que certaines d’entre elles sont malveillantes (programme malveillant ou hameçonnage), elle crée également des requêtes ou des clusters d’e-mails contenant l’URL ou le fichier malveillant.
+- L’analyse du courrier électronique crée des requêtes (clusters) de courriers électroniques à l’aide des attributs de l’e-mail d’origine : les valeurs de l’expéditeur (adresse IP, domaine d’envoi) et le contenu (objet, ID de cluster) afin de rechercher les e-mails associés.
+- Si l’analyse des URL et des fichiers du courrier électronique d’origine identifie que certains d’entre eux sont malveillants (programmes malveillants ou hameçonnages), il crée également des requêtes ou des clusters de messages électroniques contenant l’URL ou le fichier malveillant.
 - L’analyse du clustering de messagerie compte les menaces associées aux e-mails correspondants dans le cluster pour déterminer si les e-mails sont malveillants, suspects ou ne sont pas clairement dangereux. Si le cluster d’e-mails correspondant à la requête présente une quantité suffisante de courrier indésirable, de hameçonnage normal, de hameçonnage à haut niveau de confiance ou de menaces de programmes malveillants, le cluster de messagerie reçoit ce type de menace qui lui est appliqué.
 - L’analyse du clustering de messagerie vérifie également l’emplacement de remise le plus récent du courrier électronique d’origine et des e-mails dans les clusters de messagerie pour vous aider à identifier si les e-mails ont potentiellement encore besoin d’être suppression ou ont déjà été corrigés ou empêchés. Cette analyse est importante car les personnes malveillantes morphosent le contenu malveillant, ainsi que les stratégies de sécurité et la protection peuvent varier d’une boîte aux lettres à l’autre. Cette fonctionnalité entraîne des situations dans lesquelles du contenu malveillant peut toujours se trouver dans des boîtes aux lettres, même si un ou plusieurs e-mails malveillants ont été détectés et supprimés par une purge automatique d’heure zéro (ZAP).
-- Les clusters de messagerie considérés comme malveillants en raison d’un programme malveillant, d’un hameçonnage à haut niveau de confiance, de fichiers malveillants ou de menaces d’URL malveillantes obtiennent une action en attente pour supprimer les messages électroniques lorsqu’ils se trouveraient toujours dans la boîte aux lettres cloud (boîte de réception ou dossier indésirable). Si les messages malveillants ou les clusters de messagerie ne sont que « Non dans la boîte aux lettres » (bloqué, mis en quarantaine, échoué, supprimé (logiciel, etc.) ou « Local/Externe » sans aucune action dans la boîte aux lettres cloud, aucune action en attente n’est définie pour les supprimer.
-- Si l’un des clusters de messagerie est identifié comme malveillant, la menace identifiée par le cluster est appliquée de nouveau au courrier électronique d’origine impliqué dans l’enquête. Ce comportement est similaire à celui d’un analyste d’opérations de sécurité utilisant des résultats de recherche de courrier électronique pour déterminer le verdict d’un e-mail d’origine en fonction des e-mails correspondants. Ce résultat garantit que, que les URL, les fichiers ou les indicateurs de courrier source d’un e-mail d’origine soient détectés ou non, le système puisse identifier les e-mails malveillants susceptibles d’éviter toute détection par le biais de la personnalisation, de la morphose, de l’identité ou d’autres techniques d’attaque.
-- Dans l’examen de compromission de l’utilisateur, des clusters de messagerie supplémentaires sont créés pour identifier les problèmes potentiels de messagerie créés par la boîte aux lettres. Ce processus inclut un cluster de courriers électroniques nettoyé (messages électroniques de qualité provenant de l’utilisateur, exfiltration potentielle de données et messages électroniques de commande/contrôle potentiels), des clusters de messagerie suspects (e-mails contenant du courrier indésirable ou un hameçonnage normal) et des clusters de messagerie malveillants (e-mails contenant des programmes malveillants ou un hameçonnage à haut niveau de confiance). Ces clusters de messagerie fournissent des données d’analystes d’opérations de sécurité pour déterminer les autres problèmes qui peuvent être résolus à partir d’une compromission et la visibilité sur laquelle les e-mails peuvent avoir déclenché les alertes d’origine (par exemple, hameçonnage/courrier indésirable qui a déclenché des restrictions d’envoi d’utilisateurs)
+- Les clusters de messagerie considérés comme malveillants en raison d’un programme malveillant, d’un hameçonnage à haut niveau de confiance, de fichiers malveillants ou de menaces d’URL malveillantes obtiennent une action en attente pour supprimer les messages électroniques lorsqu’ils se trouveraient toujours dans la boîte aux lettres cloud (boîte de réception ou dossier indésirable). Si les messages malveillants ou les clusters de messagerie sont uniquement « Non dans la boîte aux lettres » (bloqué, mis en quarantaine, échoué, supprimé (logiciel, etc.) ou « Local/Externe » sans aucune action dans la boîte aux lettres cloud, aucune action en attente n’est définie pour les supprimer.
+- Si l’un des clusters de messagerie est identifié comme malveillant, la menace identifiée par le cluster est appliquée de nouveau au courrier électronique d’origine impliqué dans l’enquête. Ce comportement est similaire à celui d’un analyste d’opérations de sécurité utilisant des résultats de recherche de courrier électronique pour déterminer le verdict d’un e-mail d’origine en fonction des e-mails correspondants. Ce résultat garantit que, que les URL, les fichiers ou les indicateurs de courrier source d’un e-mail d’origine soient détectés ou non, le système puisse identifier les e-mails malveillants susceptibles d’éviter toute détection par le biais de la personnalisation, de la morphose, de l’éducation ou d’autres techniques d’attaque.
+- Dans l’examen de compromission de l’utilisateur, des clusters de messagerie supplémentaires sont créés pour identifier les problèmes potentiels de messagerie créés par la boîte aux lettres. Ce processus inclut un cluster de courriers électroniques nettoyé (courriers électroniques de qualité provenant de l’utilisateur, exfiltration potentielle de données et messages électroniques de commande/contrôle potentiels), des clusters de messagerie suspects (e-mails contenant du courrier indésirable ou un hameçonnage normal) et des clusters de messagerie malveillants (e-mails contenant des programmes malveillants ou un hameçonnage à haut niveau de confiance). Ces clusters de messagerie fournissent des données d’analystes d’opérations de sécurité pour déterminer les autres problèmes qui peuvent être résolus à partir d’une compromission et la visibilité sur laquelle les e-mails peuvent avoir déclenché les alertes d’origine (par exemple, hameçonnage/courrier indésirable qui a déclenché des restrictions d’envoi d’utilisateurs)
 
 L’analyse du clustering de courrier électronique via des requêtes de similarité et d’entité malveillante garantit que les problèmes de messagerie sont entièrement identifiés et nettoyés, même si un seul e-mail d’une attaque est identifié. Vous pouvez utiliser des liens à partir des vues du panneau latéral détails du cluster de messagerie pour ouvrir les requêtes dans l’Explorateur ou la recherche avancée pour effectuer une analyse plus approfondie et modifier les requêtes si nécessaire. Cette fonctionnalité permet l’affinement et la correction manuelles si vous trouvez que les requêtes du cluster de messagerie sont trop étroites ou trop larges (y compris les e-mails non liés).
 
@@ -80,7 +80,7 @@ Les preuves basées sur un e-mail dans l’onglet Preuve et réponse pour un inc
 
 1. Vous pouvez effectuer des actions de correction, en plus du centre **de correction.**
 2. Vous pouvez prendre des mesures correctives pour les clusters de messagerie avec **un** verdict malveillant (mais pas **suspect).**
-3. Pour le verdict du courrier indésirable, le hameçonnage est divisé en hameçonnage normal et à niveau de confiance élevé.
+3. Pour le verdict de courrier indésirable, le hameçonnage est divisé en hameçonnage normal et à niveau de confiance élevé.
 
    Pour un verdict malveillant, les catégories de menaces sont les programmes malveillants, le hameçonnage à haut niveau de confiance, l’URL malveillante et le fichier malveillant.
 
@@ -91,7 +91,7 @@ Les preuves basées sur un e-mail dans l’onglet Preuve et réponse pour un inc
 
 Pour les clusters de messagerie ou de messagerie dans l’onglet **Entités** d’un incident, **prevented** signifie qu’il n’y avait aucun courrier malveillant dans la boîte aux lettres pour cet élément (courrier ou cluster). Voici un exemple.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Exemple de message électronique interdit." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Exemple d’e-mail interdit." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 Dans cet exemple, le courrier électronique est malveillant, mais pas dans une boîte aux lettres.
 

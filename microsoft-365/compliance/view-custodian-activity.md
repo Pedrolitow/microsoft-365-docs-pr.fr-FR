@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Advanced eDiscovery gestion des dépositaires pour accéder facilement à l’activité des dépositaires dans votre cas et y effectuer des recherches.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4069b4ee61f15cfbe8f0f7f74cb42e9790f0106a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 561744ac803c99d06f811eb625db9ce4ab623fd2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205699"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200232"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit des consignataires
 
@@ -108,6 +108,6 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
       > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
         
 
-3. Après avoir sélectionné une option d’exportation, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir le fichier CSV, à l’enregistrer dans le dossier Téléchargements ou à l’enregistrer dans un dossier spécifique
+3. Une fois que vous avez sélectionné une option d’exportation, un message s’affiche en bas de la fenêtre pour vous demander d’ouvrir le fichier CSV, de l’enregistrer dans le dossier Téléchargements ou de l’enregistrer dans un dossier spécifique.
 
 Pour plus d’informations sur l’affichage, le filtrage ou l’exportation des résultats de recherche dans le journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md)

@@ -2,26 +2,24 @@
 title: Utiliser des autorisations de base pour accéder Centre de sécurité Microsoft Defender
 description: Découvrez comment utiliser les autorisations de base pour accéder au portail Microsoft Defender for Endpoint.
 keywords: attribuer des rôles d’utilisateur, attribuer un accès en lecture et en écriture, attribuer un accès en lecture seule, utilisateur, rôles d’utilisateur, rôles
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abdf9f72c4ae023cdc8bde76d96ce641b2e48b9a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05e9eadb9047fd4a2c8a4d01ecefc3ec2f73f9db
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222625"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207988"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Utiliser des autorisations de base pour accéder au portail
 
@@ -62,7 +60,7 @@ Vous pouvez affecter des utilisateurs avec l’un des niveaux d’autorisation s
   - **Accès total**: les utilisateurs ayant un accès total peuvent se connecter, afficher toutes les informations système et résoudre les alertes, soumettre des fichiers pour une analyse approfondie et télécharger le package d’intégration. L’attribution de droits d’accès total nécessite l’ajout des utilisateurs aux rôles intégrés AAD « Administrateur de la sécurité » ou « Administrateur général ».
   - **Accès en lecture seule**: les utilisateurs ayant un accès en lecture seule peuvent se connecter, afficher toutes les alertes et les informations connexes.
 
-    Ils ne seront pas en mesure de modifier les états d’alerte, d’envoyer des fichiers pour analyse approfondie ou d’effectuer des opérations de changement d’état.
+    Ils ne pourront pas modifier les états d’alerte, soumettre des fichiers pour analyse approfondie ou effectuer des opérations de changement d’état.
 
     L’attribution de droits d’accès en lecture seule nécessite l’ajout des utilisateurs au rôle intégré Azure AD « Lecteur de sécurité ».
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f8c6c289cca61e5a0891af04ef97831a27b341f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5875568c21fb9128e6d3edc8db31721f20d19b4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177660"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176894"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 
@@ -74,14 +74,14 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
 Nom|Type|Description
 :---|:---|:---
-tag|Chaîne|Nom de la balise. **Obligatoire**.
-useStartsWithFilter|Boolean|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
+tag|String|Nom de la balise. **Obligatoire**.
+useStartsWithFilter|Booléen|Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 
@@ -89,7 +89,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite - 200 OK avec la liste des ordinateurs dans le corps de la réponse.
+En cas de réussite : 200 - OK avec la liste des ordinateurs dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

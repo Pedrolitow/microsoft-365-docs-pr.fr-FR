@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interactions avec les services de groupes
-ms.openlocfilehash: 54d8cd0ff31bad9af4269b3a4d8af23ccb618e16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f20f8199811b8b34b4cb74ac18a989a79dde7759
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182959"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207462"
 ---
 # <a name="groups-services-interactions"></a>Interactions avec les services de groupes
 
@@ -85,7 +85,7 @@ Les services suivants permettent la création de groupes par les utilisateurs fi
 - Planificateur
 - Project pour le web
 - SharePoint
-- Flux
+- Stream
 - Microsoft Teams
 - Yammer
 
@@ -101,8 +101,8 @@ L’expérience de restriction de création de groupe varie selon les applicatio
 |Planificateur|**Le nouveau plan** explique que la création de groupe a été désactivée et propose d’ajouter le plan à un groupe existant|
 |Project web et feuille de route|**Le** menu Créer un groupe explique que la création de groupe est restreinte et suggère l’utilisation d’un groupe existant.|
 |SharePoint|Toujours en mesure de créer un site d’équipe qui n’est pas connecté à un groupe.|
-|Flux|**L’option** groupe n’apparaît pas sous **le menu Créer.**|
-|Équipes|L’utilisateur ne peut pas créer d’équipe avec un nouveau groupe, mais peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Créer un bouton d’équipe** est remplacé par **Créer une équipe à partir d’un groupe.**|
+|Stream|**L’option** groupe n’apparaît pas sous **le menu Créer.**|
+|Teams|L’utilisateur ne peut pas créer d’équipe avec un nouveau groupe, mais peut toujours créer une équipe qui utilise un groupe existant.<br><br>**Créer un bouton d’équipe** est remplacé par **Créer une équipe à partir d’un groupe.**|
 |Yammer|**L’option Créer un** groupe est supprimée de la navigation groupes/communautés principale.|
 
 ## <a name="services-interactions-with-groups"></a>Interactions des services avec les groupes
@@ -129,8 +129,8 @@ Le tableau suivant fournit une vue d’ensemble des interactions Microsoft 365 g
 |Project pour le web|Project plan|Oui|Oui|Non|
 |Feuille de route|Feuille de route|Oui|Oui|Non|
 |SharePoint|Site|Oui|Oui|Oui|
-|Flux|Canal, vidéo|Oui|Oui|Oui|
-|Équipes|Équipe|Non|Oui|Oui|
+|Stream|Canal, vidéo|Oui|Oui|Oui|
+|Teams|Équipe|Non|Oui|Oui|
 |Yammer|Group|Oui|Oui|Oui|
 
 Bien que le tableau ci-dessus offre une vue d’ensemble des interactions de groupe avec les services Microsoft 365, il existe un certain nombre de nuances et de complexités que vous devez comprendre. Les sections suivantes analysent de façon plus approfondie les charges de travail spécifiques et leurs interactions avec les groupes.
@@ -171,7 +171,7 @@ Non, Azure AD est la plateforme sous-jacente où les groupes existent.
 
 La suppression du groupe dans Azure AD supprimera les services et le contenu associés au groupe appropriés.
 
-## <a name="teams"></a>Équipes
+## <a name="teams"></a>Teams
 
 Teams est un espace de travail centré sur la conversation visant à améliorer la collaboration en fournissant une interface unique permettant d’interagir avec une variété de services Microsoft et tiers.
 
@@ -181,7 +181,7 @@ Par défaut, lorsqu’une équipe est créée, la boîte aux lettres et le calen
 
 - Conversations
 - Onglets & canaux
-- Meetings
+- Réunions
 
 **Pouvez Teams créer un groupe ?**
 
@@ -303,7 +303,7 @@ Non, le bloc-notes lui-même est associé au groupe et est directement accessibl
 
 **La suppression du bloc-notes supprime-t-elle le groupe ?**
 
-Non, toutefois, si le bloc-OneNote est supprimé, il se peut que des liens rompus soient rompus dans certains services associés à un groupe.
+Non, toutefois, si OneNote bloc-notes est supprimé, il se peut que des liens rompus soient rompus dans certains services associés à un groupe.
 
 ## <a name="planner"></a>Planificateur
 
@@ -473,7 +473,7 @@ Oui et non. Un espace de travail créé par Power BI ne peut être associé qu�
 
 **La suppression de l’espace de travail supprime-t-elle le groupe ?**
 
-Oui, la suppression de l’espace de travail dans Power BI supprimera le groupe et les services et le contenu associés au groupe.
+Oui, la suppression de l’espace de travail Power BI supprimera le contenu et les services associés au groupe et au groupe.
 
 ## <a name="project-for-the-web"></a>Project pour le web
 
@@ -572,7 +572,7 @@ Non, le site lui-même est associé au groupe, mais le contenu peut être dépla
 
 Oui, la suppression du site dans SharePoint supprimera les services et le contenu associés aux groupes et aux groupes.
 
-## <a name="stream"></a>Flux
+## <a name="stream"></a>Stream
 
 Microsoft Stream est une plateforme d’hébergement et de partage de vidéos.
 

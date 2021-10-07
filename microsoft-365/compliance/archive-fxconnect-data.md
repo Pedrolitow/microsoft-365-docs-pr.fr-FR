@@ -9,23 +9,23 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Veritas FX Connecter dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 2669ab21d0746d680a3029c2be998ab5d3ab6f82
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 045a53fe7a0433e56a7b6b4c04f04f6e39bd6e16
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206307"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193314"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Configurer un connecteur pour archiver les données de Connecter FX
 
-Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme de collaboration fx Connecter vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas fournit un connecteur [de Connecter FX](https://globanet.com/fx-connect/) qui est configuré pour capturer des éléments de Connecter FX et les importer dans Microsoft 365. Le connecteur convertit le contenu de FX Connecter, tel que les transactions, les messages et d’autres détails du compte FX Connecter de votre organisation, au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme de collaboration fx Connecter vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas fournit un connecteur [de Connecter FX](https://globanet.com/fx-connect/) qui est configuré pour capturer des éléments fx Connecter et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu de FX Connecter, tel que les transactions, les messages et d’autres détails du compte FX Connecter de votre organisation, au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
 Une fois que les données de Connecter FX sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur Connecter FX pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
-## <a name="overview-of-archiving-fx-connect-data"></a>Vue d’ensemble des données de Connecter FX d’archivage
+## <a name="overview-of-archiving-fx-connect-data"></a>Vue d’ensemble des données de Connecter fx d’archivage
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les informations de Connecter FX dans Microsoft 365.
 
@@ -45,7 +45,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - L’utilisateur qui crée le connecteur fx Connecter à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
-## <a name="step-1-set-up-the-fx-connect-connector"></a>Étape 1 : Configurer le connecteur d’Connecter FX
+## <a name="step-1-set-up-the-fx-connect-connector"></a>Étape 1 : Configurer le connecteur de Connecter FX
 
 La première étape consiste à accéder à la page **Connecteurs** de données dans le Centre de conformité Microsoft 365 et à créer un connecteur pour les données de Connecter FX.
 
@@ -61,7 +61,7 @@ La première étape consiste à accéder à la page **Connecteurs** de données 
 
 ## <a name="step-2-configure-the-fx-connect-connector-on-the-veritas-merge1-site"></a>Étape 2 : Configurer le connecteur de Connecter FX sur le site Veritas Merge1
 
-La deuxième étape consiste à configurer le connecteur de Connecter FX sur le site Merge1. Pour plus d’informations sur la configuration du connecteur de Connecter FX, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20FX%20Connect%20User%20Guide%20.pdf).
+La deuxième étape consiste à configurer le connecteur de Connecter FX sur le site Merge1. Pour plus d’informations sur la configuration du connecteur d’Connecter FX, voir le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20FX%20Connect%20User%20Guide%20.pdf).
 
 Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’utilisateur dans l’Assistant connecteur du Centre de conformité Microsoft 365 s’affiche.
 

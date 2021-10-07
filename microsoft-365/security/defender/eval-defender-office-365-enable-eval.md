@@ -1,6 +1,6 @@
 ---
 title: Activer l’environnement d’évaluation de Microsoft Defender pour Office 365 dans votre environnement de production
-description: Étapes pour activer Microsoft Defender pour l’évaluation Office 365, avec des licences d’évaluation, la gestion des enregistrement MX, & audit des domaines acceptés et des connexions entrantes.
+description: Étapes d’activation de Microsoft Defender pour l’évaluation Office 365, avec des licences d’évaluation, la gestion des enregistrement MX, & audit des domaines acceptés et des connexions entrantes.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 07/01/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: f00daf82a2b6090f6934aba12eb9227efdfa1422
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 72ee60efdfa93444d6f1fbde7d1c15dd203fdae8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163615"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176690"
 ---
 # <a name="enable-the-evaluation-environment"></a>Activer l’environnement d’évaluation
 
@@ -54,7 +54,7 @@ Connectez-vous à votre Microsoft Defender existant pour Office 365 environnemen
 
    :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="Cliquez sur Acheter des services dans le volet de navigation de Office 365.":::
 
-3. Faites défiler vers le bas jusquAdd-On section (ou recherchez « Defender ») pour localiser Microsoft Defender Office 365 plans.
+3. Faites défiler vers le bas jusquAdd-On section (ou recherchez « Defender ») pour localiser microsoft Defender Office 365 plans.
 4. Cliquez sur Détails à côté du plan que vous souhaitez évaluer.
 
    :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="Cliquez ensuite sur le bouton Détails.":::
@@ -107,7 +107,7 @@ Utilisez les instructions ci-après pour activer votre Microsoft Defender pour O
 
 4. Dans le tableau *de bord Règles & stratégie,* cliquez sur **Stratégies de menace.**
 
-   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="Image du tableau de bord Règles & stratégie et flèche pointant vers les stratégies de menace. Cliquez ensuite dessus !":::
+   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="Image du tableau de bord Règles & stratégie et flèche pointant vers les stratégies de menace. Cliquez sur ce bouton suivant !":::
 
 5. Faites défiler vers le bas *jusqu’à Stratégies* supplémentaires et sélectionnez **la vignette Évaluer Defender Office 365'évaluation.**
 
@@ -119,7 +119,7 @@ Utilisez les instructions ci-après pour activer votre Microsoft Defender pour O
 
 7. Si vous utilisez une passerelle tierce, sélectionnez le nom du fournisseur dans la liste sortante avec le connecteur entrant associé à cette solution. Lorsque vous avez répertorié vos réponses, cliquez sur Suivant.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="Dans cette boîte de dialogue, vous choisissez le service fournisseur tiers que votre organisation utilise, ou sélectionnez *Autre*. Dans la boîte de dialogue suivante, sélectionnez le connecteur entrant. Cliquez ensuite sur Suivant.":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="Dans cette boîte de dialogue, vous choisissez le service fournisseur tiers que votre organisation utilise, ou vous sélectionnez *Autre*. Dans la boîte de dialogue suivante, sélectionnez le connecteur entrant. Cliquez ensuite sur Suivant.":::
 
 8. Examinez vos paramètres et cliquez sur le bouton Créer **une** évaluation.
 

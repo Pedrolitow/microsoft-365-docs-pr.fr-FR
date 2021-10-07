@@ -2,26 +2,24 @@
 title: Rechercher les problèmes d’état d’intégrité de l’agent
 description: En savoir plus sur les valeurs renvoyées lors de l’exécution de la commande d’état d’état mdatp
 keywords: mdatp health, command, health, status, command, onboarding status
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1480e4322c59d841e4f24fecb55f2e5453471798
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f43905fe3487f44d3736e098c19964eaad3bf126
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206970"
 ---
 # <a name="investigate-agent-health-issues"></a>Rechercher les problèmes d’état d’intégrité de l’agent
 
@@ -41,7 +39,7 @@ Le tableau suivant fournit des informations sur les valeurs renvoyées lorsque v
 |---|---|
 |automatic_definition_update_enabled|True si les mises à jour automatiques des définitions antivirus sont activées, false dans le cas contraire.|
 |cloud_automatic_sample_submission_consent|Niveau d’envoi actuel de l’exemple. Peut être l’une des valeurs suivantes : <ul><li>**Aucun**: aucun échantillon suspect n’est envoyé à Microsoft.</li><li>**Coffre**: seuls les échantillons suspects qui ne contiennent pas d’informations d’identification personnelle (PII) sont envoyés automatiquement. Il s’agit de la valeur par défaut pour ce paramètre.</li><li>**Tous**: tous les échantillons suspects sont envoyés à Microsoft.</li></ul>|
-|cloud_diagnostic_enabled|True si la collecte de données de diagnostic facultative est activée, false dans le cas contraire. Pour plus d’informations sur Defender for Endpoint et d’autres produits et services tels que Antivirus Microsoft Defender et Windows 10, voir déclaration de confidentialité [Microsoft.](https://go.microsoft.com/fwlink/?linkid=827576)|
+|cloud_diagnostic_enabled|True si la collecte de données de diagnostic facultative est activée, false dans le cas contraire. Pour plus d’informations sur Defender for Endpoint et d’autres produits et services tels que Antivirus Microsoft Defender et Windows, voir déclaration de confidentialité [Microsoft.](https://go.microsoft.com/fwlink/?linkid=827576)|
 |cloud_enabled|True si la protection cloud est activée, false dans le cas contraire.|
 |conflicting_applications|Liste des applications qui peuvent être en conflit avec Microsoft Defender pour le point de terminaison. Cette liste inclut, sans s’y limiter, d’autres produits de sécurité et autres applications connues pour provoquer des problèmes de compatibilité.|
 |definitions_status|État des définitions antivirus.|

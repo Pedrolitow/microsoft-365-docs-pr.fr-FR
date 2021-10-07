@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d051666e481bcf74038dc5000ebaadbd142d429
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b4990c9713b1aec6b9f75c2a2ab87ea07cf18b6a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179459"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208048"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Recherche proactive des menaces avec le chasse avancée
 
@@ -43,7 +43,7 @@ Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer de
 > [!TIP]
 > Utilisez la recherche avancée [dans Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) pour la recherche de menaces à l’aide des données de Defender pour endpoint, Microsoft Defender pour Office 365, Microsoft Cloud App Security et Microsoft Defender pour l’identité. [Activer Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
-En savoir plus sur la façon de déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender dans Migrer des requêtes de recherche avancée à partir de [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+En savoir plus sur la façon de déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender dans Migrer des requêtes de recherche avancée à partir de [Microsoft Defender pour point de terminaison.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>Prise en main du repérage avancé
 
@@ -58,7 +58,7 @@ Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opér
 |Objectif d’apprentissage|Description|Ressource|
 |---|---|---|
 |**Découvrir la langue**|La recherche avancée est basée sur le langage de requête [Kusto,](/azure/kusto/query/)en charge de la même syntaxe et des mêmes opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête.|[Vue d'ensemble du language de requête](advanced-hunting-query-language.md)|
-|**Découvrez comment utiliser les résultats de la requête**|Découvrez les graphiques et les différentes façons d’afficher ou d’exporter vos résultats. Découvrez comment modifier rapidement les requêtes et explorer les détails pour obtenir des informations plus riches.|[Utiliser les résultats d’une requête](advanced-hunting-query-results.md)|
+|**Découvrez comment utiliser les résultats de la requête**|Découvrez les graphiques et les différentes façons d’afficher ou d’exporter vos résultats. Découvrez comment vous pouvez modifier rapidement les requêtes et explorer les différentes façons d’obtenir des informations plus riches.|[Utiliser les résultats d’une requête](advanced-hunting-query-results.md)|
 |**Comprendre le schéma**|Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes.|[Référence de schéma](advanced-hunting-schema-reference.md)|
 |**Utiliser des requêtes prédéfinies**|Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces.|[Requêtes partagées](advanced-hunting-shared-queries.md)|
 |**Optimiser les requêtes et gérer les erreurs**|Comprendre comment créer des requêtes efficaces et sans erreur.|[Meilleures pratiques en matière de requête](advanced-hunting-best-practices.md) <p> [Gestion des erreurs](advanced-hunting-errors.md)|

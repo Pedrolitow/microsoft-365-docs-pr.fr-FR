@@ -9,7 +9,7 @@ ms.date: 5/16/2014
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - WSU150
 - SPO160
@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser des stratégies de gestion des informations pour contrôler et suivre des éléments tels que la durée de rétention du contenu ou les actions que les utilisateurs peuvent prendre avec ce contenu.
-ms.openlocfilehash: fc3bfe1c0da54ccf4cb2c59589647cb396a5081e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 98eae2a08aa246a1f0ebe7d037103a82c132d060
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206211"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193290"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction aux stratégies de gestion des informations
 
@@ -45,7 +45,7 @@ Il existe quatre catégories de base de fonctionnalités de stratégie prédéfi
   
 La fonctionnalité de stratégie d’audit permet aux organisations d’analyser la façon dont leurs systèmes de gestion de contenu sont utilisés par la journalisation des événements et des opérations effectuées sur les documents et les éléments de liste. Vous pouvez configurer la fonctionnalité de stratégie d’audit pour journaliser les événements tels que la modification, l’affichage, l’audit, l’extrait, la suppression ou la modification des autorisations d’un document ou d’un élément. Toutes les informations d’audit sont stockées dans un journal d’audit unique sur le serveur, et les administrateurs de site peuvent y exécuter des rapports. 
   
-La fonctionnalité de stratégie d’expiration permet aux organisations de supprimer du contenu périmé de leurs sites de manière cohérente et accessible. Cela vous permet de gérer à la fois le coût et le risque associés à la rétention de contenu à jour. Vous pouvez configurer une stratégie d’expiration pour spécifier que certains types de contenu expirent à une date donnée ou dans un délai après la création ou la dernière modification du document.
+La fonctionnalité de stratégie d’expiration permet aux organisations de supprimer ou de supprimer du contenu périmé de leurs sites de manière cohérente et accessible. Cela vous permet de gérer à la fois le coût et le risque associés à la rétention de contenu à jour. Vous pouvez configurer une stratégie d’expiration pour spécifier que certains types de contenu expirent à une date donnée ou dans un délai après la création ou la dernière modification du document.
   
 Les organisations peuvent également créer et déployer des fonctionnalités de stratégie personnalisées afin de répondre à des besoins spécifiques. Par exemple, une organisation de fabrication peut définir une stratégie de gestion des informations pour tous les documents de spécification de conception de produit provisoires qui empêchent les utilisateurs d’imprimer des copies de ces documents sur des imprimantes non confidentielles. Pour définir ce type de stratégie de gestion des informations, vous pouvez créer et déployer une fonctionnalité de stratégie de restriction d’impression qui peut être ajoutée à la stratégie de gestion des informations pertinente pour le type de contenu de spécification de conception de produit.
   
@@ -70,9 +70,9 @@ Remarque : pour contrôler les stratégies utilisées dans une collection de sit
   
  **Créer une stratégie de gestion des informations pour une liste ou une bibliothèque** Si votre organisation doit appliquer une stratégie de gestion des informations spécifique à un ensemble de contenu très limité, vous pouvez créer une stratégie de gestion des informations qui s’applique uniquement à une liste ou bibliothèque individuelle. Cette méthode de création d’une stratégie de gestion des informations est la moins flexible, car elle ne s’applique qu’à un seul emplacement et ne peut pas être exportée ou réutilisée pour d’autres emplacements. Toutefois, il peut parfois être nécessaire de créer des stratégies de gestion des informations uniques avec une applicabilité limitée pour résoudre des situations spécifiques. 
   
-![Lien des stratégies de gestion des informations sur la page des paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Lien des stratégies de gestion des informations sur la page paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-Notes 
+Remarques 
   
 Vous pouvez créer une stratégie de gestion des informations pour une liste ou une bibliothèque uniquement si cette liste ou bibliothèque ne prend pas en charge plusieurs types de contenu. Si une liste ou une bibliothèque prend en charge plusieurs types de contenu, vous devez définir une stratégie de gestion des informations pour chaque type de contenu de liste associé à cette liste ou bibliothèque. (Les instances d’un type de contenu de site associées à une liste ou bibliothèque spécifique sont appelées types de contenu de liste.)
   

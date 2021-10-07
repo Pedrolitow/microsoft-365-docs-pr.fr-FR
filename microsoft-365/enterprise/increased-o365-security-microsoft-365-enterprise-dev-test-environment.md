@@ -9,19 +9,19 @@ ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour activer des paramètres Microsoft 365 de sécurité supplémentaires que Microsoft 365 pour l’environnement de test d’entreprise.
-ms.openlocfilehash: 7598ade331ae340ede52f4c47375aebba792eb84
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2042148c0738ab1304ec721cdb00ce22b427dc72
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200160"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Sécurité accrue Microsoft 365 pour votre environnement de test Microsoft 365 entreprise
 
@@ -68,7 +68,7 @@ Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects y
 
 1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
 
-2. Dans le volet de navigation de gauche, sous Gestion des menaces, cliquez sur **Stratégie,** puis cliquez sur Coffre **pièces jointes.** 
+2. Dans le volet de navigation de gauche, sous Gestion des menaces, cliquez sur **Stratégie,** puis cliquez Coffre **pièces jointes.** 
 
 3. Sous **Protéger les fichiers dans SharePoint, OneDrive et Microsoft Teams**. sélectionnez **Activer LAP pour SharePoint, OneDrive et Microsoft Teams**.
 
@@ -92,7 +92,7 @@ Pour vous assurer que le traitement anti-programme malveillant est effectué sur
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Phase 3 : Examiner le tableau de bord de sécurité
 
-La gestion des menaces dans Microsoft 365 peut vous aider à contrôler et gérer l’accès des appareils mobiles aux données de votre organisation, à protéger votre organisation contre la perte de données et à protéger les messages entrants et sortants contre les logiciels malveillants et le courrier indésirable. Vous utilisez également la gestion des menaces pour protéger la réputation de votre domaine et pour déterminer si les expéditeurs usurpent ou non des comptes malveillants à partir de votre domaine. 
+La gestion des menaces dans Microsoft 365 peut vous aider à contrôler et gérer l’accès des appareils mobiles aux données de votre organisation, à protéger votre organisation contre la perte de données et à protéger les messages entrants et sortants contre les logiciels malveillants et le courrier indésirable. Vous utilisez également la gestion des menaces pour protéger la réputation de votre domaine et pour déterminer si les expéditeurs usurpent des comptes malveillants à partir de votre domaine. 
 
 Pour voir le tableau de bord de sécurité :
 

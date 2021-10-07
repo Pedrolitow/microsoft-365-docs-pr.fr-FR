@@ -7,7 +7,7 @@ ms.date: 6/22/2018
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -17,12 +17,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: Cet article explique les aspects spécifiques à prendre en compte lors de la conception de pages pour de meilleures performances dans SharePoint Online.
-ms.openlocfilehash: d2653e1ee07309d2f31a24df2715bf7810beb65b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a9dc1b5a6d94fe3e2afec11aeeded8f27069bac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205539"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200136"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduction à l’optimisation des performances pour SharePoint Online
 
@@ -44,7 +44,7 @@ Les mesures générales suivantes pour SharePoint Online fournissent des donnée
 
 Les données nous indiquent :
   
-- La plupart des pages s’exécutent bien sur SharePoint Online.
+- La plupart des pages s’exécutent SharePoint Online.
     
 - Les pages non personnalisées se chargent très rapidement.
     
@@ -64,7 +64,7 @@ Pour évaluer correctement le fonctionnement d’une page pour les utilisateurs,
   
 ## <a name="connection-categories-for-performance-tuning"></a>Catégories de connexion pour l’optimisation des performances
 
-Vous pouvez classer les connexions entre le serveur et l’utilisateur en trois composants principaux. Prenons ces éléments lors de la conception SharePoint pages En ligne pour obtenir des informations sur les temps de chargement.
+Vous pouvez classer les connexions entre le serveur et l’utilisateur en trois composants principaux. Prenons ces points lors de la conception SharePoint pages en ligne pour obtenir des informations sur les temps de chargement.
   
 - **Serveur** Serveurs que Microsoft héberge dans les centres de données.
     
@@ -140,7 +140,7 @@ La visite de pages complexes aura une incidence sur les performances. La plupart
   
 La bande passante peut également être un problème. Par exemple, si un utilisateur regardera des vidéos dans une autre session, cela aura une incidence sur les performances de votre SharePoint page. Bien que vous ne pouvez pas empêcher les utilisateurs de diffuser des contenus multimédias en continu, vous pouvez contrôler la façon dont une page se charge pour les utilisateurs.
   
-Consultez les articles suivants pour découvrir différentes techniques de personnalisation de page SharePoint Online et d’autres meilleures pratiques pour obtenir des performances optimales.
+Consultez les articles suivants pour découvrir différentes techniques SharePoint personnalisation de page En ligne et d’autres meilleures pratiques pour obtenir des performances optimales.
   
 - [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
     

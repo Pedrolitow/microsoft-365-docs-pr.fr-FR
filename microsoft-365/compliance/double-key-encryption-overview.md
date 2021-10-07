@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: ed07361f8c433a318342ae3c8ad750549992c285
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8cdc4d71609430dd7bcb19edc3b55c49a3b9401d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203376"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200532"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Double key Encryption frequently asked questions
 
@@ -29,7 +29,7 @@ Le chiffrement à double clé Microsoft 365 permet aux clients de protéger leur
 
 Vous pouvez héberger le service de chiffrement à double clé utilisé pour demander votre clé, à l’emplacement de votre choix (serveur de gestion de clés local ou dans le cloud). Vous maintenez le service comme vous le feriez pour n’importe quelle autre application. Le chiffrement à double clé vous permet de contrôler l’accès au service de chiffrement à double clé. Vous pouvez stocker vos données hautement sensibles en local ou les déplacer vers le cloud. Vous pouvez être certain d’empêcher l’accès de tiers, car vous conservez un contrôle total de votre clé. Le chiffrement à double clé vous permet de stocker vos données et clé au même emplacement.
 
-Le DKE vous aide à répondre aux exigences réglementaires dans le cadre de plusieurs réglementations et normes telles que le Règlement général sur la protection des données (R GDPR), la loi HIPAA (Health Insurance Portability and Accountability Act), la loi Gramm-Leach-Bliley Act (GLBA), la loi russe sur la localisation des données ( Loi fédérale ndlr). 242-FZ, australia’s Federal Privacy Act 1988, and New Zealand’s Privacy Act 1993.
+Le DKE vous aide à répondre aux exigences réglementaires dans le cadre de plusieurs réglementations et normes telles que le Règlement général sur la protection des données (R GDPR), la loi HIPAA (Health Insurance Portability and Accountability Act), la loi Gramm-Leach-Bliley Act (GLBA), la loi russe sur la localisation des données ( loi fédérale ndlr). 242-FZ, australia’s Federal Privacy Act 1988, and New Zealand’s Privacy Act 1993.
 
 ## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>Puis-je utiliser le chiffrement à double clé Microsoft Office l’étiquetage de sensibilité intégré ?
 
@@ -47,11 +47,11 @@ Le chiffrement à double clé chiffre vos données avec deux clés. Votre clé d
 
 Vous pouvez partager des documents chiffrés à double clé avec des utilisateurs sur un client distinct tant que ces utilisateurs :
 
-- Avoir l’autorisation requise pour accéder à votre clé dans votre service de chiffrement à double clé.
+- Vous avez l’autorisation requise pour accéder à votre clé dans votre service de chiffrement à double clé.
 
 - Avoir l’autorisation requise pour accéder à votre clé dans Microsoft Azure.
 
-## <a name="what-happens-to-documents-that-are-protected-with-hyok"></a>Qu’advient-il des documents protégés avec HYOK ?
+## <a name="what-happens-to-documents-that-are-protected-with-hyok"></a>Qu’advient-il des documents protégés par HYOK ?
 
 Le déploiement du chiffrement à double clé n’affectera pas votre configuration HYOK existante. Toutefois, nous vous recommandons de commencer à utiliser le chiffrement à double clé en parallèle avec HYOK.
 

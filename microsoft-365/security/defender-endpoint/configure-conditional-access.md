@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0a0be19a974f7a065333ff0a5045512a2eb98a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75b74024b7f4e94d1b24b2f926bfe488a8e594b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222619"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60192990"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurer l’accès conditionnel dans Microsoft Defender pour le point de terminaison
 
@@ -51,7 +51,7 @@ Il existe des étapes que vous devrez suivre dans Microsoft 365 Defender, le por
 
 Il est important de noter les rôles requis pour accéder à ces portails et implémenter l’accès conditionnel :
 
-- **Microsoft 365 Defender** : vous devez vous connectez au portail avec un rôle d’administrateur général pour activer l’intégration.
+- **Microsoft 365 Defender** : vous devez vous inscrire au portail avec un rôle d’administrateur général pour activer l’intégration.
 - **Intune** : vous devez vous connectez au portail avec des droits d’administrateur de sécurité avec des autorisations de gestion.
 - **Portail Azure AD** : vous devez vous inscrire en tant qu’administrateur général, administrateur de sécurité ou administrateur d’accès conditionnel.
 
@@ -74,9 +74,9 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Étape 2 : Activer l’intégration de Defender for Endpoint dans Intune
 
-1. Connectez-vous au [Portail Azure](https://portal.azure.com).
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Sélectionnez **La conformité de** \> **l’appareil Microsoft Defender ATP**.
-3. Définissez **Connecter Windows 10.0.15063+** sur Microsoft Defender - Protection avancée contre les **menaces sur On**.
+3. Définissez **Connecter Windows 10.0.15063+** sur Microsoft Defender - Protection avancée contre les **menaces sur « On**».
 4. Cliquez sur **Enregistrer**.
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>Étape 3 : Créer la stratégie de conformité dans Intune
@@ -84,11 +84,11 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez **Tous les services,** filtrez sur **Intune** et sélectionnez **Microsoft Intune**.
 2. Sélectionnez **Stratégies de conformité** \> **des appareils** Créer une \> **stratégie.**
 3. Entrez un **nom et** une **description.**
-4. Dans **Plateforme,** sélectionnez **Windows 10 et ultérieures.**
+4. Dans **Plateforme,** **sélectionnez Windows 10 et ultérieures.**
 5. Dans les paramètres **d’état** de l’appareil, définissez Exiger que l’appareil soit à ou sous le niveau de menace de l’appareil **à** votre niveau préféré :
 
    - **Sécurisé :** ce niveau est le plus sécurisé. L’appareil ne peut pas avoir de menaces existantes et accéder aux ressources de l’entreprise. Si des menaces sont trouvées, l’appareil est évalué comme non conforme.
-   - **Faible**: l’appareil est conforme si seules les menaces de bas niveau existent. Les appareils avec des niveaux de menace moyen ou élevé ne sont pas conformes.
+   - **Faible**: l’appareil est conforme si seules les menaces de bas niveau existent. Les appareils avec des niveaux de menace moyennes ou élevées ne sont pas conformes.
    - **Moyen**: l’appareil est conforme si les menaces trouvées sur l’appareil sont faibles ou moyennes. Si des menaces de haut niveau sont détectées, l’appareil est déterminé comme non conforme.
    - **Élevé**: ce niveau est le moins sécurisé et autorise tous les niveaux de menace. Ainsi, les appareils dont les niveaux de menace sont élevés, moyens ou faibles sont considérés comme conformes.
 

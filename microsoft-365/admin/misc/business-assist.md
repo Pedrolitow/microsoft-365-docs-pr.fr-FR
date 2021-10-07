@@ -8,23 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez le programme Business Assist et comment il peut aider votre organisation à améliorer l’aide et l’utilisation Microsoft 365 entreprise.
-ms.openlocfilehash: f6c5b1ddfa6028d0748d3f01237e91dd4ac8507e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 01d4353fa24e5c9ace8e9e1d43853c5cbc3935e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774194"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180506"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Aide pour les entreprises pour Microsoft 365
 
-Obtenez le meilleur de votre abonnement avec les conseils d’experts des petites entreprises.
+Obtenez le meilleur de votre abonnement avec les conseils d’experts des spécialistes des petites entreprises.
 
 **Aide aux PME avec Microsoft 365** est conçu pour permettre aux petites entreprises et à vos employés d’accéder 24 heures sur 24 aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne.
 
@@ -36,7 +36,7 @@ Obtenez le meilleur de votre abonnement avec les conseils d’experts des petite
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|Travaillez avec un spécialiste en petite entreprise pour configurer des fonctionnalités Microsoft 365 qui protègent votre entreprise et lui donnent une apparence professionnelle. |Tous vos employés, et pas seulement la personne responsable de l’informatique, peuvent passer directement aux experts Microsoft pour obtenir un support continu plus rapide. |Découvrez les fonctionnalités sous-utilisées et obtenez des conseils sur les façons d’obtenir plus de valeur de votre abonnement. |
+|Travaillez en équipe avec un spécialiste en petite entreprise pour configurer Microsoft 365 fonctionnalités qui protègent votre entreprise et lui donnent une apparence professionnelle. |Tous vos employés, et pas seulement la personne responsable de l’informatique, peuvent passer directement aux experts Microsoft pour obtenir un support continu plus rapide. |Découvrez les fonctionnalités sous-utilisées et obtenez des conseils sur les façons d’obtenir plus de valeur de votre abonnement. |
 |**Accélérer votre migration dans le cloud** <br> Obtenez une aide personnalisée pour déplacer tous vos fichiers actuels (e-mail, stockage, documents et communication) vers Microsoft 365. |**Spécialistes d’accès en toute simplicité** <br> Notre équipe reprendra la conversation là où vous l’avez laissée en dernier. Pas de tickets à suivre, pas de robots, pas de longs temps d’attente. |**Restez à jour** <br> Des vérifications régulières qui vous aident à rester à jour à mesure que de nouvelles fonctionnalités de service sont ajoutées et que les besoins de votre entreprise évoluent. |
 | | | |
 

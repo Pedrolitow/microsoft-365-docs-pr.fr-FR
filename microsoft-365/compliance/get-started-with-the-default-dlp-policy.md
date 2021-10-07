@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le rapport pour affiner la stratégie de protection contre la perte de données (DLP) par défaut de votre organisation.
-ms.openlocfilehash: 95c4ebae431bea1db033826459ca1595614ab5cb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0e63648f78fd5adf2b0a354fa1a26abae4561ba8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182312"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200484"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
 
@@ -36,13 +36,13 @@ Vous pouvez utiliser ce widget pour afficher rapidement quand et combien d’inf
   
 ## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Afficher le rapport et affiner la stratégie DLP par défaut
 
-Lorsque le widget vous indique que les utilisateurs ont partagé des informations sensibles avec des personnes extérieures à votre organisation, sélectionnez Affiner la stratégie **DLP** en bas. 
+Lorsque le widget vous indique que les utilisateurs ont partagé des informations sensibles avec des personnes extérieures à votre organisation, choisissez Affiner la stratégie **DLP** en bas. 
   
 Le rapport détaillé vous indique quand et combien de contenu contenant des numéros de carte de crédit ont été partagés au cours des 30 derniers jours. Notez que l’exposition des correspondances de règles dans le widget peut prendre jusqu’à 48 heures.
   
 Pour protéger les informations sensibles, la stratégie DLP par défaut :
   
-- Détecte le moment où le contenu Exchange, SharePoint et OneDrive contenant au moins un numéro de carte de crédit est partagé avec des personnes extérieures à votre organisation.
+- Détecte le moment où le contenu des Exchange, SharePoint et OneDrive contenant au moins un numéro de carte de crédit est partagé avec des personnes extérieures à votre organisation.
     
 - Affiche un conseil de stratégie et envoie une notification par courrier électronique aux utilisateurs lorsqu’ils tentent de partager ces informations sensibles avec des personnes extérieures à votre organisation. Pour plus d’informations sur ces options, voir Envoyer des notifications par courrier électronique et afficher des conseils de stratégie [pour les stratégies DLP.](use-notifications-and-policy-tips.md)
     
@@ -80,7 +80,7 @@ Ce widget apparaît uniquement lorsque :
     
 - Le contenu contenant au moins une carte de crédit a été partagé avec une personne extérieure à votre organisation au cours des 30 derniers jours.
     
-Notez que les correspondances de règles peuvent prendre jusqu’à 48 heures pour être disponibles pour le widget. Ainsi, une fois les informations sensibles partagées en externe détectées, l’apparition de la recommandation peut prendre jusqu’à deux jours.
+Notez que les correspondances de règles peuvent prendre jusqu’à 48 heures pour être disponibles pour le widget. Ainsi, une fois que des informations sensibles partagées en externe sont détectées, la recommandation peut prendre jusqu’à deux jours.
   
 Enfin, une fois que vous avez utilisé le widget pour affiner la stratégie DLP par défaut, le widget disparaît de la page **d’accueil.** 
   

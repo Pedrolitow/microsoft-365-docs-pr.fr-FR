@@ -7,17 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux utilisateurs qui envoient des courriers électroniques dans le Centre de sécurité & conformité pour examiner quand les utilisateurs de leur organisation envoient des messages à de nouveaux domaines.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dedef9cdd407859b69a0d15571f3131138ddcccb
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 0e5ec29849c50f8d012de1886e997b67f1f191ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988930"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176534"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nouveaux utilisateurs qui envoient des informations sur le courrier électronique dans le Centre de sécurité & conformité
 
@@ -48,7 +48,7 @@ Vous pouvez cliquer sur le **rapport Voir associé au** lien d’informations po
 
 Le **rapport de modifications de forwarding** affiche des détails sur les messages qui sont automatiquement transmis par des expéditeurs de votre organisation :
 
-- Comptes nouvellement créés qui sont en cours de forwarding des messages vers des domaines externes.
+- Comptes nouvellement créés qui relaient des messages vers des domaines externes.
 - Comptes qui envoient des messages à des domaines externes qui n’ont jamais été transmis par d’autres expéditeurs de votre organisation.
 
 Ces types de messages transmis peuvent poser un risque de sécurité ou de conformité, et peuvent indiquer des comptes compromis.
@@ -74,7 +74,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
 Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
 
-### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Affichage du tableau détails pour le rapport de modifications de report
+### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vue de table Détails pour le rapport de modifications de report
 
 Si vous cliquez sur Afficher le tableau des **détails,** les informations affichées dépendent du graphique que vous regardiez :
 
@@ -112,6 +112,6 @@ Si vous sélectionnez une ligne dans le tableau, un volant **Détails** s’affi
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

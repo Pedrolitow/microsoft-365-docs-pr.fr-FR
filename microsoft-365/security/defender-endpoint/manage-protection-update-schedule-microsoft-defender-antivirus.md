@@ -8,7 +8,7 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bbb783921c5ec7f2390f085653c08af5853f1344
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f1a163b2f56e84b7c93be99972d5aa62894edfed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491552"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207750"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Gérer le calendrier de téléchargement et d’application des mises à jour de protection
 
@@ -33,7 +33,7 @@ ms.locfileid: "59491552"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Antivirus Microsoft Defender vous permet de déterminer quand rechercher et télécharger les mises à jour.
+Antivirus Microsoft Defender vous permet de déterminer quand il doit rechercher et télécharger les mises à jour.
 
 Vous pouvez planifier des mises à jour pour vos points de terminaison en :
 
@@ -41,7 +41,7 @@ Vous pouvez planifier des mises à jour pour vos points de terminaison en :
 - Spécification de l’intervalle de recherche des mises à jour de la protection
 - Spécification de l’heure de recherche des mises à jour de la protection
 
-Vous pouvez également aléatoirer les heures où chaque point de terminaison vérifie et télécharge les mises à jour de la protection. Pour plus [d’informations, voir](scheduled-catch-up-scans-microsoft-defender-antivirus.md) la rubrique Planifier les analyses.
+Vous pouvez également aléatoirer le moment où chaque point de terminaison vérifie et télécharge les mises à jour de la protection. Pour plus [d’informations, consultez](scheduled-catch-up-scans-microsoft-defender-antivirus.md) la rubrique Analyses de planification.
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>Utiliser Configuration Manager pour planifier des mises à jour de protection
 
@@ -57,7 +57,7 @@ Vous pouvez également aléatoirer les heures où chaque point de terminaison v�
 
 5. [Déployez la stratégie mise à jour comme d’habitude.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
-## <a name="use-group-policy-to-schedule-protection-updates"></a>Utiliser une stratégie de groupe pour planifier des mises à jour de la protection
+## <a name="use-group-policy-to-schedule-protection-updates"></a>Utiliser la stratégie de groupe pour planifier des mises à jour de la protection
 
 > [!IMPORTANT]
 > Par défaut, Antivirus Microsoft Defender recherche une mise à jour 15 minutes avant l’heure des analyses programmées. L’activation de ces paramètres remplace cette valeur par défaut.
@@ -70,9 +70,9 @@ Vous pouvez également aléatoirer les heures où chaque point de terminaison v�
 
 4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** mises à jour Signature Intelligence et \>  \>  configurez les paramètres suivants :
 
-    1. Double-cliquez sur **spécifier le jour de** la semaine pour vérifier le paramètre des mises à jour de l’intelligence de la sécurité et définir l’option **sur Activé**. Entrez le jour de la semaine pour vérifier les mises à jour. Cliquez sur **OK**.
-    2. Double-cliquez sur **spécifier l’intervalle pour vérifier** le paramètre des mises à jour de l’intelligence de la sécurité et définissez l’option **sur Activé.** Entrez le nombre d’heures entre les mises à jour. Cliquez sur **OK**.
-    3. Double-cliquez sur **le paramètre Spécifier l’heure** de vérification des mises à jour de l’intelligence de sécurité et définissez l’option **sur Activé.** Entrez l’heure à quel moment les mises à jour doivent être vérifiées. L’heure est basée sur l’heure locale du point de terminaison. Cliquez sur **OK**.
+    1. Double-cliquez sur **spécifier le jour de** la semaine pour vérifier le paramètre des mises à jour de l’intelligence de la sécurité et définir l’option **sur Activé**. Entrez le jour de la semaine pour vérifier les mises à jour. Cliquez sur **OK**.
+    2. Double-cliquez sur **spécifier l’intervalle pour vérifier** le paramètre des mises à jour de l’intelligence de la sécurité et définissez l’option **sur Activé.** Entrez le nombre d’heures entre les mises à jour. Cliquez sur **OK**.
+    3. Double-cliquez sur **le paramètre Spécifier l’heure** de vérification des mises à jour de l’intelligence de sécurité et définissez l’option **sur Activé.** Entrez l’heure à quel moment les mises à jour doivent être vérifiées. L’heure est basée sur l’heure locale du point de terminaison. Cliquez sur **OK**.
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>Utiliser les cmdlets PowerShell pour planifier des mises à jour de protection
 
@@ -84,7 +84,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>Utiliser Windows Management Instruction (WMI) pour planifier des mises à jour de la protection
 
@@ -104,7 +104,7 @@ Pour plus d’informations et les paramètres autorisés, voir les informations 
 
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

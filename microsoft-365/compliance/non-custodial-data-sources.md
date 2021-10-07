@@ -9,28 +9,28 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez ajouter des sources de données non privatives à un cas Advanced eDiscovery et placer une mise en attente sur la source de données. Les sources de données non privatives sont réindexées, de sorte que tout contenu marqué comme partiellement indexé est retrait pour le rendre entièrement et rapidement utilisable dans une recherche.
-ms.openlocfilehash: afa28ce8be5f7a051c84111c65d6b993b97b6c04
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a4702ebdfbd41b2541c51380a1d44dd133d506c9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193218"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Ajouter des sources de données non privatives à un Advanced eDiscovery de données
 
-Dans Advanced eDiscovery cas, il ne répond pas toujours à vos besoins d’associer une source de données Microsoft 365 à un dépositaire dans le cas. Toutefois, vous devrez peut-être associer ces données à un cas afin de pouvoir les rechercher, les ajouter à un groupe de révision, les analyser et les réviser. La fonctionnalité dans Advanced eDiscovery est appelée sources de données *non* privatives et vous permet d’ajouter des données à un cas sans avoir à les associer à un dépositaire. Il applique également la même fonctionnalité de Advanced eDiscovery aux données non privatives disponibles pour les données associées au dépositaire. L’une des choses les plus utiles que vous pouvez appliquer aux données non privatives est de les placer en attente et de les traiter à l’aide de [l’indexation avancée](indexing-custodian-data.md).
+Dans Advanced eDiscovery cas, il ne répond pas toujours à vos besoins d’associer une source de données Microsoft 365 à un dépositaire dans le cas. Toutefois, vous devrez peut-être associer ces données à un cas afin de pouvoir les rechercher, les ajouter à un groupe de révision, les analyser et les réviser. La fonctionnalité dans Advanced eDiscovery est appelée sources de données *non* privatives et vous permet d’ajouter des données à un cas sans avoir à les associer à un dépositaire. Il applique également la même fonctionnalité Advanced eDiscovery aux données non privatives disponibles pour les données associées au dépositaire. L’une des choses les plus utiles que vous pouvez appliquer aux données non privatives est de les placer en attente et de les traiter à l’aide de [l’indexation avancée](indexing-custodian-data.md).
 
 ## <a name="add-a-non-custodial-data-source"></a>Ajouter une source de données non privative
 
 Suivez ces étapes pour ajouter et gérer des sources de données non privatives dans Advanced eDiscovery cas.
 
-1. Dans la **Advanced eDiscovery** page d’accueil, cliquez sur le cas où vous souhaitez ajouter les données.
+1. Dans la **Advanced eDiscovery** d’accueil, cliquez sur la case à ajouter aux données.
 
 2. Cliquez sur **l’onglet Sources** de données, puis sur **Ajouter une source** de données Ajouter des  >  **emplacements de données.**
 
@@ -45,7 +45,7 @@ Suivez ces étapes pour ajouter et gérer des sources de données non privatives
    > [!NOTE]
    > Vous pouvez utiliser les sections **SharePoint** et **Exchange** pour ajouter des sites et des boîtes aux lettres associés à une équipe ou un groupe Yammer en tant que sources de données non privatives. Vous devez ajouter séparément la boîte aux lettres et le site associés à une équipe ou Yammer groupe.<br/><br/> En outre, l’ajout d’une URL de site racine (par exemple ou ) en tant que `https://contoso-my.sharepoint.com/personal/` source SharePoint de données `https://contoso-my.sharepoint.com/` n’est pas pris en charge. Vous devez ajouter des sites spécifiques.
 
-4. Après avoir ajouté des sources de données non privatives, vous avez la possibilité de placer ou non ces emplacements en attente. Cochez ou désélectionnez la case **à** cocher De hold en regard de la source de données pour la placer en attente.
+4. Après avoir ajouté des sources de données non privatives, vous avez la possibilité de placer ou non ces emplacements en attente. Sélectionnez ou désélectionnez la case à cocher **Mettre** en attente en regard de la source de données pour la placer en attente.
 
 5. Cliquez **sur Ajouter** au bas de la page volant Nouveaux emplacements de données **non** privatives pour ajouter les sources de données au cas.
 

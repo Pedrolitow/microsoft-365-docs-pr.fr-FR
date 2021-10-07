@@ -2,15 +2,13 @@
 title: Inscrire Microsoft Defender pour endpoint sur les appareils macOS dans Jamf Pro
 description: Inscrire Microsoft Defender pour endpoint sur les appareils macOS dans Jamf Pro
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, désinstallation, intune, jamfpro, macos, magasin, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 207c1334f91ecd22385ce281b3f10763afe57810
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: afe044e2f8cc495ce7f74bc482a99689af3e9482
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165060"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207834"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscrire Microsoft Defender pour endpoint sur les appareils macOS dans Jamf Pro
 
@@ -57,7 +55,7 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
     ![Fermeture d’une description de logo générée automatiquement.](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. Dans **Spécifier les destinataires de l'>** sous Adresses de messagerie, entrez les **adresses** de messagerie des destinataires.
+3. Dans **Spécifier les destinataires de l'>** sous **Adresses** de messagerie, entrez l’adresse de messagerie des destinataires.
 
     ![Image des paramètres de configuration2.](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
@@ -79,7 +77,7 @@ Pour obtenir la liste complète, voir [à propos de l’inscription de l’ordin
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Enrollment Method 2: Prestage Enrollments
 
-1. Dans le tableau de bord Pro Jamf, accédez à **Pré-étapes d’inscription.**
+1. Dans le tableau de bord Pro Jamf, accédez **à Pré-étapes d’inscription.**
 
     ![Image des paramètres de configuration9.](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 

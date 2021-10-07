@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,22 +16,22 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migrez vos Windows, Office applications clientes et Office serveurs d’Microsoft 365 client.
-ms.openlocfilehash: 9570a34c1c1884452ee9090ca0b7d280411e0016
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 86f244ba8d28c242b59296a4de8b63b4a07b50ad
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162413"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176186"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 4. Migration de vos Microsoft 365 pour les locataires d’entreprise
 
 La plupart des organisations d’entreprise ont un environnement hétérogène qui inclut plusieurs sorties de systèmes d’exploitation, de logiciels clients et de logiciels serveur. Microsoft 365 entreprise inclut les versions les plus sécurisées des composants clés de votre infrastructure informatique. Il inclut également des fonctionnalités de productivité conçues pour tirer parti des technologies cloud.
 
-Pour optimiser la valeur commerciale de la Microsoft 365 pour la suite intégrée de produits d’entreprise, commencez à planifier et implémenter une stratégie pour migrer ces produits :
+Pour optimiser la valeur commerciale de la Microsoft 365 pour la suite intégrée de produits d’entreprise, commencez à planifier et à implémenter une stratégie pour migrer ces mises à jour :
 
 | De | À |
 |:-------|:-----|
-| Windows 7 et Windows 8.1 | Windows 10 Entreprise |
+| Windows 7 et Windows 8.1 | Windows 10 Entreprise |
 | Office clients installés sur les appareils de vos travailleurs | Microsoft 365 Apps for enterprise |
 | Office serveurs installés sur des serveurs locaux | Leurs services cloud équivalents dans Microsoft 365 |
 |  |  |

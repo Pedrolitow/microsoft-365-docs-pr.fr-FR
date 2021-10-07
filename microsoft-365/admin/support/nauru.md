@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c094ca0970d7bd8cce077c8c89b04f0ab2aa8a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db8c4a282d48ce4b6c9782401e431768fe8b64f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201810"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201192"
 ---
 # <a name="contact-support-for-nauru"></a>Contacter le support pour Nauru
 

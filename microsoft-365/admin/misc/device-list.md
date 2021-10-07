@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Découvrez comment faire un fichier CSV pour AutoPilot dans Microsoft 365 entreprise.
-ms.openlocfilehash: d3785d85654c1e055d0f1b36dad50485d4e82fd9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: de29df41f60a1cf257291942eda70a776466c09c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178835"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180435"
 ---
 # <a name="device-list-csv-file"></a>Fichier CSV de liste d’appareils
 

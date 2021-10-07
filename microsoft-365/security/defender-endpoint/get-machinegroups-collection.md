@@ -1,6 +1,6 @@
 ---
 title: API obtenir la collection de groupes d’ordinateurs RBAC
-description: Découvrez comment utiliser l’API get KB collection pour récupérer une collection de groupes d’appareils RBAC dans Microsoft Defender pour Endpoint.
+description: Découvrez comment utiliser l’API obtenir la collection de ko pour récupérer une collection de groupes d’appareils RBAC dans Microsoft Defender pour endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, RBAC, groupe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: leonidzh
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: ca0c033a92f7607db2b1ad6e00f13cd33ad9c8f9
-ms.sourcegitcommit: 132b8dc316bcd4b456de33d6a30e90ca69b0f956
+ms.openlocfilehash: 7ce84e35f2a5ece81b1cb70436c6c75a940c99b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589545"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207018"
 ---
 # <a name="get-kb-collection-api"></a>API Obtenir une collection de ko
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment planifier un événement avec le planificateur Microsoft.
-ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e0df0cf7bef2e6452000c43475c27d242384e105
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181727"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200748"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Utiliser le Planificateur Microsoft pour planifier un événement
 
@@ -33,7 +33,7 @@ ms.locfileid: "59181727"
 
 ## <a name="try-it"></a>Essayez !
 
-Utilisez le Planificateur Microsoft pour planifier un événement, comme le suivi d’un lancement de produit.
+Utilisez le Planificateur Microsoft pour planifier un événement, tel que le suivi d’un lancement de produit.
 
 ### <a name="work-with-buckets"></a>Travailler avec des compartiments
 
@@ -62,6 +62,6 @@ Publiez un commentaire pour discuter d’une tâche avec les personnes à qui el
 Utilisez  **l’affichage**  **Graphiques**  et Tableau pour surveiller l’avancement de chaque membre de l’équipe et du projet global, ou pour trier et organiser les tâches.
 
 - Sélectionnez  **Graphiques,** **puis Groupez par** et enfin **date d’échéance**  pour voir quelle tâche arrive à échéance.
-- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression**  pour trier les tâches par progression.
+- Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression pour**  trier les tâches par progression.
 
 **Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  afin de savoir quand vous êtes prêt à lancer votre produit.

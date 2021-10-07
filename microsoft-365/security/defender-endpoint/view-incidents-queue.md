@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bdc8451d3f3885cb9704a954cae8f439cad1abf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e287f9a4713ba0ad96fd4b1b7f51e0fee948ec28
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181036"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207678"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Afficher et organiser la file d’attente d’incidents Microsoft Defender pour point de terminaison
 
@@ -36,7 +36,7 @@ ms.locfileid: "59181036"
 
 La **file d’attente Incidents** affiche un ensemble d’incidents qui ont été signalés à partir d’appareils de votre réseau. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité.
 
-Par défaut, la file d’attente affiche les incidents observés au cours des 30 derniers jours, avec l’incident le plus récent affiché en haut de la liste, ce qui vous aide à voir les incidents les plus récents en premier.
+Par défaut, la file d’attente affiche les incidents observés au cours des 30 derniers jours, le plus récent s’affichant en haut de la liste, ce qui vous aide à voir les incidents les plus récents en premier.
 
 Plusieurs options s’offrent à vous pour personnaliser l’affichage de file d’attente Incidents. 
 
@@ -58,7 +58,7 @@ Vous pouvez appliquer les filtres suivants pour limiter la liste des incidents e
 Gravité de l’incident | Description
 :---|:---
 Élevé </br>(Rouge) | Menaces souvent associées à des menaces avancées persistantes (APT). Ces incidents indiquent un risque élevé en raison de la gravité des dommages qu’ils peuvent causer sur les appareils.
-Moyen </br>(Orange) | Menaces rarement observées dans l’organisation, telles que la modification anormale du Registre, l’exécution de fichiers suspects et les comportements observés typiques des phases d’attaque.
+Moyenne </br>(Orange) | Menaces rarement observées dans l’organisation, telles que la modification anormale du Registre, l’exécution de fichiers suspects et les comportements observés typiques des phases d’attaque.
 Faible </br>(Jaune) | Menaces associées à des programmes malveillants et à des outils de piratage répandus qui n’indiquent pas nécessairement une menace avancée ciblant l’organisation.
 Informatif </br>(Gris) | Les incidents d’information peuvent ne pas être considérés comme dangereux pour le réseau, mais ils peuvent être utiles pour assurer le suivi.
 

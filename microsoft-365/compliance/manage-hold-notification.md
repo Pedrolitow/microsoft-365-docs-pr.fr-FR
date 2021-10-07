@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Utilisez le flux de travail de communications Advanced eDiscovery pour suivre l’état de vos notifications de mise en attente légale et, si nécessaire, les mettre à jour et les renvoyer.
-ms.openlocfilehash: 8852bfd1651e1855d276b60ba6fac35c378d4631
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 276771b2a22f6db3e3d0620ee429a16626107bcc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177963"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200436"
 ---
 # <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
@@ -70,7 +70,7 @@ Pour mettre à jour le contenu de l’avis de mise en attente initiale :
 
 2. Sélectionnez l’avis de conservation à mettre à jour, puis cliquez sur **Modifier** dans la page de **communication** du dépositaire.
 
-3. Dans **l’Assistant Modifier la communication,** cliquez sur Définir le contenu du portail dans le volet gauche de l’Assistant, puis mettez à jour le contenu de l’avis. 
+3. Dans **l’Assistant Modifier la communication,** cliquez sur Définir le contenu du portail dans le volet gauche de l’Assistant et mettez à jour le contenu de l’avis. 
 
 4. Cliquez sur **Enregistrer**.
 

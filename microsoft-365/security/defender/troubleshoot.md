@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c4bbc9cd47d3ceb8110a6a2f0e3136a364458abc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d2d26b58ad26b461f668e4d75f6d4504297ae50c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180905"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176606"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Résoudre les problèmes Microsoft 365 Defender service
 
@@ -39,7 +39,7 @@ Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez l
 
 ## <a name="i-dont-see-microsoft-365-defender-content"></a>Je ne vois pas Microsoft 365 Defender contenu
 
-Si vous ne voyez pas de fonctionnalités dans le volet de navigation, telles que les incidents, le centre de gestion des actions ou le hunting dans votre portail, vous devez vérifier que votre client dispose des licences appropriées.
+Si vous ne voyez pas de fonctionnalités dans le volet de navigation, telles que les incidents, le centre de action ou le hunting dans votre portail, vous devez vérifier que votre client dispose des licences appropriées.
 
 Si vous souhaitez en savoir plus, consultez la page[Conditions préalables](prerequisites.md).
 
@@ -51,7 +51,7 @@ Pour plus d’informations, [voir Microsoft Defender pour l’intégration de l�
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Où se trouve la page des paramètres pour l’ment du service ?
 
-Pour activer la Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation du portail Microsoft 365 Defender web. Cet élément de navigation n’est visible que si vous avez les autorisations et [licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+Pour activer la Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation du portail Microsoft 365 Defender web. Cet élément de navigation n’est visible que si vous avez les [autorisations et licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Comment créer une exception pour mon fichier/URL ?
 

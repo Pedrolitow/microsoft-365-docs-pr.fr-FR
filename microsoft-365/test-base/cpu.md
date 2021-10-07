@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9bb56263f9f6b1889d46daae759a33382071c626
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 935781e929c159918f8a0aec3b4a551ab974480f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207060"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180614"
 ---
 # <a name="intelligent-cpu-regression-analysis"></a>Analyse intelligente de la régression du processeur
 
@@ -42,7 +42,7 @@ L’utilisation du processeur n’est pas une comparaison comparable à 100 %, c
 
 Dans la capture instantanée ci-dessous, il existe deux version du système d’exploitation par rapport à laquelle les utilisations processeur sont comparées pour la même application. 
 -   L’onglet Utilisation du processeur affiche respectivement les limites supérieure et inférieure de l’utilisation pour les deux sorties au 90e et au 10e centile. 
--   Les graphiques indiquent la série de temps d’utilisation de l’UC ainsi que l’utilisation moyenne. 
+-   Les graphiques indiquent la série de temps d’utilisation du processeur ainsi que l’utilisation moyenne. 
 
 Les clients peuvent désormais utiliser cette fonctionnalité pour déterminer si l’utilisation processeur de leur application est impactée par les mises à jour du système d’exploitation et plus précisément les processus qui ont régressé par rapport à leur exécution précédente.
 

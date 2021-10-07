@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9d5f37d9085388963898267fcc9967da6223a73
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 107bed51ac0558bb0b81e20b6ea7070689dd42e3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222435"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207090"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accès des partenaires via les API microsoft Defender pour les points de terminaison
 
@@ -39,11 +39,11 @@ ms.locfileid: "59222435"
 
 Cette page décrit comment créer une application Azure Active Directory (Azure AD) pour obtenir un accès par programmation à Microsoft Defender pour endpoint pour le compte de vos clients.
 
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
 
-- Créez une application Azure AD **multi-locataire.**
+- Créez une application Azure AD à **plusieurs** locataires.
 - Obtenez l’autorisation (consentement) de votre administrateur client pour que votre application accède aux ressources Defender for Endpoint dont elle a besoin.
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à l’API Microsoft Defender for Endpoint.
@@ -52,7 +52,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 ## <a name="create-the-multi-tenant-app"></a>Créer l’application multi-client
 
-1. Connectez-vous à votre [client Azure avec](https://portal.azure.com) un utilisateur qui a le rôle **Administrateur** général.
+1. Connectez-vous à votre [client Azure avec](https://portal.azure.com) un utilisateur ayant le rôle **Administrateur** général.
 
 2. Accédez à **Azure Active Directory** \> **Inscription de l’application Nouvelle** \> **inscription.**
 
@@ -81,7 +81,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 Pour déterminer l’autorisation qui vous est nécessaire, appelez la section **Autorisations** de l’API que vous souhaitez appeler. Par exemple :
 
 - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-- Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
+- Pour [isoler un appareil,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
 
 Dans l’exemple suivant, nous allons utiliser **l’autorisation** « Lire toutes les alertes » :
 

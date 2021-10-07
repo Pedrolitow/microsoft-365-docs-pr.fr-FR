@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre l’infrastructure réseau contoso et la façon dont l’entreprise utilise sa technologie SD-WAN pour optimiser les performances réseau pour Microsoft 365 services cloud d’entreprise.
-ms.openlocfilehash: af2c68cb31450fe17449f95391dd3e5c298a2395
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 94c9c43e35f0f1a3d973529aa2b107cffe608693
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207692"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193110"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Mise en réseau de Contoso Corporation
 
@@ -56,7 +56,7 @@ Contoso a suivi les [principes de connectivité réseau Microsoft 365](microsof
 - Éviter les épingles de réseau
 - Ignorer les périphériques de sécurité réseau en double
 
-Il existe trois catégories de trafic réseau pour Microsoft 365 : *Optimiser,* Autoriser *et* *Par défaut*. Le trafic Optimiser et Autoriser est un trafic réseau approuvé chiffré et sécurisé aux points de terminaison et destiné au Microsoft 365 réseau.
+Il existe trois catégories de trafic réseau pour Microsoft 365 : *Optimiser,* Autoriser *et* *Par défaut.* Le trafic Optimiser et Autoriser est un trafic réseau approuvé chiffré et sécurisé aux points de terminaison et destiné au Microsoft 365 réseau.
 
 Contoso a décidé d’effectuer les opérations suivantes :
 
@@ -80,7 +80,7 @@ La figure 2 montre le pourcentage de capacité du trafic réseau utilisé lors d
  
 **Figure 2 : Infrastructure Contoso pour les applications internes**
 
-Pour les centres régionaux ou satellites, 60 % des ressources requises par les employés peuvent être servies par des serveurs de succursales et de centres régionaux. Les 40 % de demandes de ressources supplémentaires doivent passer par la liaison WAN vers le campus parisien.
+Pour les centres régionaux ou satellites, 60 % des ressources requises par les employés peuvent être servies par des serveurs de centres régionaux et satellites. Les 40 % de demandes de ressources supplémentaires doivent passer par la liaison WAN vers le campus parisien.
 
 ## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>Analyse et préparation du réseau pour Microsoft 365 entreprise
 
@@ -88,11 +88,11 @@ L’adoption Microsoft 365 pour les services d’entreprise par les utilisateurs
 
 1. Créer un diagramme de réseau WAN d’entreprise pour faciliter la planification
 
-   Pour commencer la planification du réseau, Contoso a créé un diagramme montrant ses bureaux, la connectivité réseau existante, les périphériques de périmètre réseau existants et les classes de service qui sont gérées sur le réseau. Ils ont utilisé ce diagramme pour chaque étape suivante de la planification et de l’implémentation de la connectivité réseau.
+   Pour commencer la planification du réseau, Contoso a créé un diagramme montrant les emplacements de bureau, la connectivité réseau existante, les périphériques de périmètre réseau existants et les classes de service gérées sur le réseau. Ils ont utilisé ce diagramme pour chaque étape suivante de la planification et de l’implémentation de la connectivité réseau.
 
 2. Créer un plan de Microsoft 365 pour la connectivité réseau d’entreprise
 
-   Contoso a utilisé les principes Microsoft 365 de connectivité réseau et des [exemples](microsoft-365-network-connectivity-principles.md) d’architectures réseau de référence pour identifier SD-WAN comme topologie préférée pour la Microsoft 365 réseau.
+   Contoso a utilisé les principes de connectivité Microsoft 365 réseau et des [exemples](microsoft-365-network-connectivity-principles.md) d’architectures réseau de référence pour identifier SD-WAN comme topologie préférée pour la Microsoft 365 réseau.
 
 3. Analyser l’utilisation de la connexion Internet et la bande passante MPLS-WAN à chaque bureau et augmenter la bande passante selon les besoins
 
@@ -100,7 +100,7 @@ L’adoption Microsoft 365 pour les services d’entreprise par les utilisateurs
 
 4. Optimiser les performances pour les services réseau Microsoft
 
-   Contoso a déterminé l’ensemble des points de terminaison Office 365, Intune et Azure, ainsi que des pare-feux, des périphériques de sécurité et d’autres systèmes configurés dans le chemin d’accès Internet pour obtenir des performances optimales. Les points de terminaison pour Office 365 trafic de catégorie Optimiser et Autoriser ont été configurés sur les périphériques SD-WAN pour le routage sur le circuit ISP.
+   Contoso a déterminé l’ensemble des points de terminaison Office 365, Intune et Azure, ainsi que des pare-feux, des périphériques de sécurité et d’autres systèmes configurés dans le chemin d’accès Internet pour des performances optimales. Les points de terminaison pour Office 365 trafic de catégorie Optimiser et Autoriser ont été configurés sur les périphériques SD-WAN pour le routage sur le circuit ISP.
 
 5. Configurer le DNS interne
 

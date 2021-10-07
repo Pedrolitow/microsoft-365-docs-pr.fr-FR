@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: En savoir plus sur la gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint.
-ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a0da02385e3fc325bb4f25b4ac8a538f950d820
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207450"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint
 
@@ -65,7 +65,7 @@ Vous pouvez gérer l’appartenance d’un groupe ou d’une équipe dynamiqueme
 
 - [Créer ou mettre à jour un groupe dynamique dans Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
-SharePoint sites permettent d’ajouter des propriétaires, des membres et des visiteurs en dehors de l’appartenance à un groupe ou à une équipe. En fonction de vos besoins, vous pouvez limiter les personnes qui peuvent inviter des personnes sur le site. En outre, en fonction de la sensibilité des informations dans un site donné, vous pouvez restreindre les personnes qui peuvent partager des fichiers et des dossiers. Ces restrictions sont configurées par l’équipe, le groupe ou le propriétaire du site :
+SharePoint sites permettent d’ajouter des propriétaires, des membres et des visiteurs en dehors de l’appartenance à un groupe ou à une équipe. En fonction de vos besoins, vous pouvez restreindre les personnes qui peuvent inviter des personnes sur le site. En outre, en fonction de la sensibilité des informations dans un site donné, vous pouvez restreindre les personnes qui peuvent partager des fichiers et des dossiers. Ces restrictions sont configurées par l’équipe, le groupe ou le propriétaire du site :
 
 - [Configurer et gérer les demandes d’accès](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)
 
@@ -89,7 +89,7 @@ Ressources supplémentaires :
 
 - [Planifier un déploiement d’accès conditionnel](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Microsoft Intune vue d’ensemble](/mem/intune/fundamentals/what-is-intune)
+- [Vue d’ensemble de Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
 - [Contrôler SharePoint’accès à partir d’appareils non utilisés](/sharepoint/control-access-from-unmanaged-devices)
 
@@ -102,7 +102,7 @@ Vous pouvez restreindre les invités en fonction du domaine de leur adresse de m
 
 - [Autoriser ou bloquer des invitations à des utilisateurs B2B à partir d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide de liens de partage *Tout le* monde. *Tous les* liens peuvent être transmis et toute personne ayant le lien peut accéder à l’élément partagé. En fonction de la sensibilité de vos  données, envisagez de régir la façon dont les liens Tout le monde sont utilisés, y compris de les éteindre entièrement, de restreindre les autorisations de lien en lecture seule ou de définir un délai d’expiration pour eux :
+Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide de *liens de* partage Tout le monde. *Tous les* liens peuvent être transmis et toute personne ayant le lien peut accéder à l’élément partagé. En fonction de la sensibilité de vos  données, envisagez de régir la façon dont les liens Tout le monde sont utilisés, y compris de les éteindre entièrement, de restreindre les autorisations de lien en lecture seule ou de définir un délai d’expiration pour eux :
 
 - [Désactiver les liens Tout le monde](./share-limit-accidental-exposure.md#turn-off-anyone-links)
 
@@ -126,7 +126,7 @@ Dans un environnement où vous invitez fréquemment des invités à des groupes 
 
 - [Configurer les révisions d’accès invité](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
 
-Microsoft 365 offre de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter la façon dont elles sont partagées, examinez les options de limitation du partage :
+Microsoft 365 offre de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter leur partage, examinez les options de limitation du partage :
 
 - [Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)
 

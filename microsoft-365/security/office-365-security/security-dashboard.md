@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.custom:
 description: Utilisez le nouveau tableau de bord de sécurité pour passer en revue Office 365 l’état de la protection contre les menaces, et afficher et agir sur les alertes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d239ffa2786b23465379de99a3e1ddc6865566f
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 977fc897ecee859648fb1097e573cd0a8289768e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988258"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180674"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Tableau de bord de sécurité dans le Centre de sécurité & conformité
 
@@ -33,7 +33,7 @@ ms.locfileid: "59988258"
 
 ## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Fonctions de base et ouverture du tableau de bord de sécurité
 
-Le Centre de sécurité & conformité permet à votre organisation de gérer la <https://protection.office.com> protection et la conformité des données. En supposant que vous avez les autorisations nécessaires, le tableau de bord de sécurité vous permet de passer en revue votre état de protection contre les menaces, ainsi que d’afficher et d’agir sur les alertes de sécurité.
+Le Centre de conformité & sécurité permet à votre organisation de gérer la <https://protection.office.com> protection et la conformité des données. En supposant que vous avez les autorisations nécessaires, le tableau de bord de sécurité vous permet de passer en revue votre état de protection contre les menaces, ainsi que d’afficher et d’agir sur les alertes de sécurité.
 
 Regardez la vidéo pour obtenir une vue d’ensemble, puis lisez cet article pour en savoir plus.
 
@@ -63,7 +63,7 @@ Les informations que vous verrez dans le résumé de la gestion des menaces dép
 |Messages de programmes malveillants bloqués<br>Messages de hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages de programmes malveillants bloqués<br>Messages de hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Programmes malveillants zero-day bloqués<br>Messages de hameçonnage avancés détectés<br>URL malveillantes bloquées|
 |
 
-Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez être autorisé à afficher Defender pour Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
+Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez être autorisé à afficher Defender pour les Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
 
 ## <a name="threat-protection-status"></a>État de la protection contre les menaces
 
@@ -83,7 +83,7 @@ Les détails varient selon que [](exchange-online-protection-overview.md) votre 
 |Microsoft Defender pour Office 365|Contenu malveillant et e-mail malveillant détectés et bloqués par EOP et Defender pour Office 365 <p> Nombre agrégé de messages électroniques uniques avec du contenu malveillant bloqué par le moteur [anti-programme](zero-hour-auto-purge.md)malveillant, purge automatique d’heure zéro et fonctionnalités de Defender pour Office 365 (y compris les liens [Coffre,](safe-links.md)les pièces [jointes Coffre](safe-attachments.md)et l’anti-hameçonnage dans [Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Voir [le rapport d’état de la protection contre les menaces.](view-reports-for-mdo.md#threat-protection-status-report)|
 |
 
-Pour afficher ou accéder au widget d’état de la protection contre les menaces, vous devez être autorisé à afficher Defender pour Office 365 rapports. Pour en savoir plus, [voir quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports) sont nécessaires pour afficher les rapports Defender for Office 365 ?
+Pour afficher ou accéder au widget d’état de la protection contre les menaces, vous devez être autorisé à afficher Defender pour Office 365 rapports. Pour en savoir plus, [voir quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports) sont nécessaires pour afficher les rapports defender pour Office 365 de recherche ?
 
 ## <a name="global-weekly-threat-detections"></a>Détections hebdomadaires globales des menaces
 
@@ -123,7 +123,7 @@ Par exemple, vous pouvez constater que les messages électroniques de hameçonna
 
 Si l’abonnement de votre organisation inclut Microsoft Defender pour [Office 365 Plan 2,](office-365-ti.md)votre tableau de bord de sécurité comporte une section qui inclut des outils avancés d’examen et de réponse aux menaces. Ces outils incluent [des fonctionnalités automatisées d’examen et de réponse.](automated-investigation-response-office.md) L’examen et la réponse automatisés peuvent être utiles dans des scénarios tels que la gestion rapide des comptes [d’utilisateur compromis.](address-compromised-users-quickly.md)
 
-Pour plus d’informations, voir [Commencer à utiliser l’investigation automatisée et la réponse (AIR) dans Office 365](office-365-air.md).
+Pour plus d’informations, voir [Commencer à utiliser l’investigation](office-365-air.md)et la réponse automatisées (AIR) dans Office 365 .
 
 ## <a name="trends"></a>Tendances
 

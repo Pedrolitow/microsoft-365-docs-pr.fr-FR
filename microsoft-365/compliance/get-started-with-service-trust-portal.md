@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Découvrez comment accéder au portail d’confiance des services Microsoft et l’utiliser pour vous aider avec les pratiques de sécurité, de confidentialité et de conformité.
-ms.openlocfilehash: 63901d6b71be98c0474b5ede840b6914b38609b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bbfc84b2ada1e75407ca8c1c42855bdbf336bbf2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202379"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207318"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Mise en place du portail d’confiance des services Microsoft
 
@@ -73,7 +73,7 @@ Le **lien Portail d’confiance des** services affiche la page d’accueil. Il o
 
 ### <a name="trust-documents"></a>Documents approuvés
 
-Fournit une multitude d’informations de conception et d’implémentation de sécurité dans le but de vous aider à atteindre plus facilement les objectifs de conformité réglementaire en comprenant la façon dont les services Microsoft Cloud assurent la sécurité de vos données. Pour consulter le contenu, sélectionnez l'une des options suivantes dans le menu déroulant **Documents de référence**.
+Fournit une multitude d’informations de conception et d’implémentation de sécurité dans le but de vous aider à atteindre plus facilement les objectifs de conformité réglementaire en comprenant comment les services Microsoft Cloud assurent la sécurité de vos données. Pour consulter le contenu, sélectionnez l'une des options suivantes dans le menu déroulant **Documents de référence**.
 
 - **Rapports d’audit :** Une liste de rapports d’audit et d’évaluation indépendants sur les services Cloud de Microsoft s’affiche. Ces rapports fournissent des informations sur la conformité des services Microsoft Cloud aux normes de protection des données et aux exigences réglementaires, telles que :
 
@@ -97,7 +97,7 @@ Fournit des informations de conformité propres au secteur et à la région sur 
 
 ### <a name="trust-center"></a>Centre de gestion de la confidentialité
 
-Liens vers le [Centre de confidentialité Microsoft,](https://www.microsoft.com/trust-center)qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans Microsoft Cloud. Cela inclut des informations sur les fonctionnalités des services Microsoft Cloud que vous pouvez utiliser pour répondre aux exigences spécifiques du R GDPR, de la documentation utile pour votre responsabilité dans le cadre du R GDPR et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge le R GDPR.
+Liens vers le [Centre de confidentialité Microsoft,](https://www.microsoft.com/trust-center)qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans le Cloud Microsoft. Cela inclut des informations sur les fonctionnalités des services Microsoft Cloud que vous pouvez utiliser pour répondre aux exigences spécifiques du R GDPR, de la documentation utile pour votre responsabilité dans le cadre du R GDPR et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge le R GDPR.
 
 ### <a name="my-library"></a>Ma bibliothèque
 
@@ -109,7 +109,7 @@ Accédez **à Plus > administrateur pour** accéder aux fonctions d’administra
 
 - **Paramètres :** Cette page vous permet d’attribuer des rôles d’utilisateur pour le Gestionnaire de conformité (classique).
 
-- **Confidentialité de l’Paramètres :** Cette page vous permet d’exporter un rapport qui contient les affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
+- **Paramètres de confidentialité Paramètres :** Cette page vous permet d’exporter un rapport qui contient les affectations d’éléments d’action dans le Gestionnaire de conformité (classique) pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer tout élément d’action affecté de l’utilisateur spécifié.
 
 ### <a name="search"></a>Rechercher
 
@@ -130,7 +130,7 @@ Pour lister les contrôles des évaluations dans le Gestionnaire de conformité 
 
 Utilisez la fonctionnalité Ma bibliothèque pour ajouter des documents et des ressources sur le portail d’confiance des services à votre page Ma bibliothèque. Cela vous permet d’accéder aux documents qui vous sont pertinents en un seul endroit.  Pour ajouter un document à votre bibliothèque My Library, cliquez sur le menu **...** à droite d’un document, puis **sélectionnez Enregistrer dans la bibliothèque.** Vous pouvez ajouter plusieurs documents à votre bibliothèque My Library en cliquant sur  la case à cocher en regard d’un ou plusieurs documents, puis en cliquant sur Enregistrer dans la bibliothèque en haut de la page.
 
-En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque My Library afin qu’un message électronique vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque My Library. Pour configurer les notifications, go to your My Library and click **Notification Paramètres**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse de messagerie dans votre organisation à laquelle envoyer des notifications. Les notifications par courrier électronique incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
+En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque My Library afin qu’un message électronique vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque My Library. Pour configurer des notifications, go to your My Library and click **Notification Paramètres**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse de messagerie dans votre organisation à laquelle envoyer des notifications. Les notifications par courrier électronique incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
 
 Notez également que nous identifions tous les documents de votre bibliothèque My Library qui ont été mis à jour au cours des 30 derniers jours, que vous turniez ou non les notifications. Une brève description de la mise à jour est également affichée dans une info-conseil.
 

@@ -11,7 +11,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Découvrez comment mettre à niveau Microsoft Teams gratuit vers un nouvel abonnement Microsoft 365 entreprise.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: ea80492344f76ead19aa5db1e504c2c52a9746c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1382ec4e272b7bede184f47ebbaf64780907b40e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59167550"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200628"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Mise à niveau Microsoft Teams gratuite vers Microsoft 365 entreprise
 

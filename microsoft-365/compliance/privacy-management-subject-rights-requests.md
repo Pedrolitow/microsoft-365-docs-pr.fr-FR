@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: La zone de demande de droits de l’objet dans la gestion de la confidentialité Microsoft vous permet de rechercher des données personnelles et de collaborer sur l’examen du contenu et la création de rapports.
-ms.openlocfilehash: 76c35bd7ad4ef557db75b61939ac5ebbaa001384
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: deb5bc50aa047cd336684e586ee3bf86286417c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481023"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207210"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Gérer les demandes de droits de l’objet dans la gestion de la confidentialité (aperçu)
 
-La gestion de la confidentialité offre de puissantes fonctionnalités de demandes de droits d’objet pour vous aider à gérer les demandes des personnes cherchant à gérer leurs données personnelles au sein de votre organisation. Ces demandes sont parfois également appelées demandes d’objet de données (DSR), demandes d’accès de la personne aux données (DSAR) ou demandes de droits du consommateur. La gestion de la confidentialité permet au personnel responsable de la réalisation des demandes de droits de l’objet d’identifier facilement les personnes responsables des données et de trouver leurs informations personnelles parmi les données de votre organisation dans Exchange, SharePoint, OneDrive et Teams.
+La gestion de la confidentialité offre de puissantes fonctionnalités de demandes de droits d’objet pour vous aider à gérer les demandes des personnes cherchant à gérer leurs données personnelles au sein de votre organisation. Ces demandes sont parfois également appelées demandes d’objet de données (DSR), demandes d’accès de la personne aux données (DSAR) ou demandes de droits du consommateur. La gestion de la confidentialité permet au personnel responsable de la réalisation des demandes de droits de l’objet d’identifier facilement les personnes qui y sont soumises et de trouver leurs informations personnelles parmi les données de votre organisation dans Exchange, SharePoint, OneDrive et Teams.
 
-La gestion de la confidentialité est unique pour vous aider à hiérarchiser les éléments à réviser dans les données que vous collectez pour ces demandes. La solution est sensible aux étiquettes Protection des données Microsoft confidentialité, qui indiquent le contenu potentiellement confidentiel et qui peuvent nécessiter une révision spéciale, et signale les éléments avec ces étiquettes. Pour plus d’informations sur les étiquettes de sensibilité, voir [En savoir plus sur les étiquettes de sensibilité.](sensitivity-labels.md) En outre, la gestion de la confidentialité peut détecter et indicateur des éléments contenant les données de plusieurs personnes, où vous devrez peut-être redacter le contenu avant de le fournir à la personne objet de données.
+La gestion de la confidentialité est unique pour vous aider à hiérarchiser les éléments à réviser dans les données que vous collectez pour ces demandes. La solution est sensible aux étiquettes Protection des données Microsoft confidentialité, qui indiquent le contenu potentiellement confidentiel et qui peuvent nécessiter une révision spéciale, et signale les éléments avec ces étiquettes. Pour plus d’informations sur les étiquettes de sensibilité, voir [En savoir plus sur les étiquettes de sensibilité.](sensitivity-labels.md) En outre, la gestion de la confidentialité peut détecter et indicateur des éléments contenant les données de plusieurs personnes, où vous devrez peut-être redacter le contenu avant de le fournir à la personne à l’objet de données.
 
 Une fois les données collectées et évaluées, vous pouvez sélectionner les éléments les plus pertinents à inclure dans vos rapports et exportations, et collaborer en toute sécurité avec d’autres membres de l’équipe pour déplacer les demandes vers la fin.
 
@@ -47,7 +47,7 @@ Les administrateurs de la gestion des droits de l’objet peuvent utiliser l’A
 
 Les quatre étapes principales sont les suivantes:
 
-### <a name="identify-the-data-subject"></a>Identifier la sujet des données
+### <a name="identify-the-data-subject"></a>Identifier la sujet de données
 
 Indiquez le nom de l’objet qui a effectué la demande et spécifiez leur relation avec votre société.
 
@@ -57,7 +57,7 @@ Choisissez un type de demande en fonction de ce que la personne à qui vous souh
 
 - **Access**: fournit un résumé des informations personnelles de la sujet de données détenues par votre organisation dans Microsoft 365.
 - **Export**: fournit un résumé et une exportation des informations personnelles de la sujet de données, telles que collectées et annotées lors de la révision.
-- **Liste marquée pour le suivi**: génère un résumé des fichiers qui peuvent nécessiter une action supplémentaire en dehors de la gestion de la confidentialité. Un exemple de scénario peut être si vous devez faciliter la suppression des informations personnelles de la personne objet de données selon leur demande.
+- **Liste marquée pour le suivi**: génère un résumé des fichiers qui peuvent nécessiter une action supplémentaire en dehors de la gestion de la confidentialité. Un exemple de scénario peut être si vous avez besoin de faciliter la suppression des informations personnelles de la personne objet de données selon leur demande.
 
 ### <a name="confirm-the-request-name"></a>Confirmer le nom de la demande
 
@@ -82,13 +82,13 @@ Les vignettes de cette page sont les suivantes :
 
 ### <a name="monitor-progress-and-complete-requests"></a>Surveiller l’avancement et les demandes terminées
 
-Les demandes de droits d’objet sont soumises à plusieurs étapes en cours d’exécution. Certaines étapes progressent automatiquement à mesure que la gestion de la confidentialité effectue l’évaluation des données, tandis que d’autres avancent lorsque les administrateurs et les collaborateurs en matière de droits de l’objet effectuent les étapes essentielles telles que la révision, la sélection et la préparation des fichiers.
+Les demandes de droits de l’objet sont soumises à plusieurs étapes en cours d’exécution. Certaines étapes progressent automatiquement à mesure que la gestion de la confidentialité effectue l’évaluation des données, tandis que d’autres avancent lorsque les administrateurs et les collaborateurs en matière de droits de l’objet effectuent les étapes essentielles telles que la révision, la sélection et la préparation des fichiers.
 
 Étant donné que les demandes peuvent avoir besoin d’être travaillées au fil du temps ou par plusieurs collaborateurs, la gestion de la confidentialité fournit des mises à jour continues sur l’état d’une demande et des conseils sur les étapes suivantes à suivre. Ces mises à jour peuvent être vues sur la page de présentation de la demande de droits d’objet. Les étapes de progression sont les suivantes.
 
 #### <a name="data-estimate"></a>Estimation des données
 
-L’estimation des données est l’étape initiale de l’évaluation des données. Une fois qu’une demande est créée, la gestion de la confidentialité identifie le nombre d’éléments dans les données de votre organisation qui incluent des correspondances potentielles avec votre personne objet de données et prend note de l’endroit où se trouve ces éléments Microsoft 365. Une fois l’estimation des données effectuée, vous pouvez afficher un aperçu des résultats et examiner les détails de votre requête de recherche d’origine. Si vous souhaitez modifier votre requête de recherche, consultez les instructions sous Afficher et [modifier les requêtes de recherche.](#view-and-edit-search-queries) Si vos résultats initiaux semblent satisfaisants, vous pouvez continuer à récupérer **des données.**
+L’estimation des données est l’étape initiale de l’évaluation des données. Une fois qu’une demande est créée, la gestion de la confidentialité identifie le nombre d’éléments dans les données de votre organisation qui incluent des correspondances potentielles avec votre personne objet de données et prend note de l’endroit où se trouve ces éléments Microsoft 365. Une fois l’estimation des données effectuée, vous pouvez prévisualiser les résultats et examiner les détails de votre requête de recherche d’origine. Si vous souhaitez modifier votre requête de recherche, consultez les instructions sous Afficher et [modifier les requêtes de recherche.](#view-and-edit-search-queries) Si vos résultats initiaux semblent satisfaisants, vous pouvez continuer à récupérer **des données.**
 
 - Jusqu’à 10 000 éléments individuels peuvent être récupérés à partir de n’importe quelle recherche. Les fichiers associés à un élément correspondant (par exemple, les pièces jointes d’un e-mail) peuvent être comptabilisés dans votre total. Si votre recherche dépasse le seuil de nombre de fichiers, essayez de la réviser pour affiner son étendue. Pour plus [d’informations, voir](#view-and-edit-search-queries) la section Afficher et modifier les requêtes de recherche. Vous ne pourrez pas modifier votre requête de recherche une fois que vous lancerez l’étape de récupération des données.
 
@@ -125,13 +125,13 @@ Lorsque vous avez terminé de modifier votre requête de recherche, une nouvelle
 
 ## <a name="collaborate-on-requests-with-teams"></a>Collaborer sur des demandes avec Teams
 
-La gestion de la confidentialité prend en charge la collaboration Microsoft Teams pour permettre à votre groupe de travailler ensemble sur des demandes de droits d’objet. Lorsque vous créez une demande, un canal Teams est automatiquement créé et associé à votre demande par défaut. Ici, vous pouvez discuter de la demande et partager en toute sécurité les entrées et les contributions à mesure qu’elle se déplace vers l’achèvement. Pour participer à la conversation, ouvrez votre demande et utilisez l’option **Conversation avec des** collaborateurs. Cela vous ouvre Microsoft Teams et vous place dans le canal Général pour le site d’équipe de votre demande de droits d’objet.
+La gestion de la confidentialité prend en charge la collaboration Microsoft Teams pour permettre à votre groupe de collaborer sur des demandes de droits d’objet. Lorsque vous créez une demande, un canal Teams est automatiquement créé et associé à votre demande par défaut. Ici, vous pouvez discuter de la demande et partager en toute sécurité les entrées et les contributions à mesure qu’elle se déplace vers l’achèvement. Pour participer à la conversation, ouvrez votre demande et utilisez l’option **Conversation avec des** collaborateurs. Cela vous ouvre Microsoft Teams et vous place dans le canal Général pour le site d’équipe de votre demande de droits d’objet.
 
 Pour consulter la liste des collaborateurs actifs qui peuvent afficher et contribuer à votre site d’équipe, dans votre demande de droits d’objet, ouvrez **l’onglet** Collaborateurs. Pour ajouter des utilisateurs supplémentaires afin de collaborer sur cette demande, sélectionnez l’option Ajouter un collaborateur.
 
 Pour modifier le comportement par défaut de la génération de sites Teams lors de la création d’une demande de droits d’objet, sélectionnez l’engrenage **Paramètres** dans le coin supérieur droit de la page de demande de droits d’objet et sélectionnez **Teams collaboration** pour modifier le paramètre.
 
-Vous pouvez également  utiliser l’option Partager en haut à droite dans une demande de droits d’objet pour mettre en boucle des personnes par Teams ou par courrier électronique, ou pour copier le lien vers la page dans la gestion de la confidentialité. Le partage via Teams vous permet de sélectionner un site Teams existant disponible pour votre compte et de sélectionner un canal spécifique au sein de ce site où il publiera le lien vers ce cas, ainsi que tout message que vous fournissez.
+Vous pouvez également  utiliser l’option Partager en haut à droite dans une demande de droits d’objet pour mettre en boucle des personnes par Teams ou par courrier électronique, ou pour copier le lien vers la page dans la gestion de la confidentialité. Le partage via Teams vous permet de sélectionner un site Teams existant disponible pour votre compte, et de sélectionner un canal spécifique au sein de ce site où il publiera le lien vers ce cas avec n’importe quel message que vous fournissez.
 
 ## <a name="automate-subject-rights-request-tasks"></a>Automatiser les tâches de demande de droits de l’objet
 
@@ -148,7 +148,7 @@ Les modèles de Power Automate suivants sont inclus dans la gestion de la confid
 
 Pour commencer, ouvrez la demande de droits d’objet avec qui vous souhaitez travailler, sélectionnez **Automatiser,** puis sélectionnez Gérer **Power Automate flux.** Le volet de flux s’ouvre. Utilisez l’option Nouveau et choisissez le modèle que vous souhaitez utiliser parmi les options disponibles. À partir de là, suivez les invites pour terminer l’installation.
 
-Après avoir enregistrez une instance du modèle, vous devez l’exécuter à partir de la page de détails de la demande de droits de l’objet afin que l’instance de flux dispose du contexte et de l’ID qui s’y rapportent. Ouvrez la demande, revenir au menu **Automatiser,** sélectionnez le modèle, puis **sélectionnez Exécuter le flux.** Vous pouvez voir vos activités passées en sélectionnant **Voir l’activité d’exécuter le flux.**
+Après avoir enregistrer une instance du modèle, vous devez l’exécuter à partir de la page de détails de la demande de droits de l’objet afin que l’instance de flux dispose du contexte et de l’ID qui lui sont indiqués. Ouvrez la demande, revenir au menu **Automatiser,** sélectionnez le modèle, puis **sélectionnez Exécuter le flux.** Vous pouvez voir vos activités passées en sélectionnant **Voir l’activité d’exécuter le flux.**
 
 ### <a name="share-a-power-automate-flow"></a>Partager un flux Power Automate de données
 
@@ -164,13 +164,13 @@ Pour supprimer entièrement le flux, utilisez **l’option Supprimer.** Il suppr
 
 ## <a name="data-matching"></a>Correspondance de données
 
-Grâce à la correspondance des données, les organisations peuvent activer la solution de gestion de la confidentialité pour identifier les personnes liées aux données en fonction des valeurs de données exactes fournies. Cela peut vous aider à améliorer la précision de la localisation du contenu de la sujet des données à la fois pour votre personnel interne et pour les utilisateurs externes avec qui vous interagissez. Il simplifie également la nécessité de fournir manuellement des champs lors de la création d’une demande de droits d’objet, et fournit du contexte dans les demandes de droits d’objet et pour la vignette Vue d’ensemble qui présente vos éléments avec le contenu de la personne ayant le plus de données. Pour en savoir plus sur cette vue, voir [Rechercher et visualiser vos données.](privacy-management-data-profile.md#items-with-the-most-data-subject-content)
+Grâce à la correspondance des données, les organisations peuvent activer la solution de gestion de la confidentialité pour identifier les personnes liées aux données en fonction des valeurs de données exactes fournies. Cela peut vous aider à améliorer la précision de la localisation du contenu de la sujet des données à la fois pour votre personnel interne et pour les utilisateurs externes avec qui vous interagissez. Il simplifie également la nécessité de fournir des champs manuellement lors de la création des demandes de droits d’objet, et fournit du contexte dans les demandes de droits de l’objet et pour la vignette Vue d’ensemble qui présente vos éléments avec le plus de contenu de sujet de données. Pour en savoir plus sur cette vue, voir [Rechercher et visualiser vos données.](privacy-management-data-profile.md#items-with-the-most-data-subject-content)
 
-Pour utiliser la fonctionnalité de correspondance de données, vous devez être membre du groupe de rôles Gestion de la confidentialité. Sélectionnez l’icône d’engrenage des paramètres dans le coin supérieur droit de la page principale des demandes de droits de l’objet, puis sélectionnez **Correspondance de données.** À partir de là, vous devrez définir le schéma de données personnelles et fournir un téléchargement de données personnelles, comme illustré ci-dessous. Notez que vous pouvez ajouter des éléments et supprimer des éléments que vous ajoutez via l’interface utilisateur. Toutefois, vous ne pouvez pas modifier un élément en place à partir de l’interface utilisateur pour le moment.
+Pour utiliser la fonctionnalité de correspondance de données, vous devez être membre du groupe de rôles Gestion de la confidentialité. Sélectionnez l’icône d’engrenage des paramètres dans le coin supérieur droit de la page principale des demandes de droits d’objet, puis sélectionnez **Correspondance de données.** À partir de là, vous devrez définir le schéma de données personnelles et fournir un téléchargement de données personnelles, comme illustré ci-dessous. Notez que vous pouvez ajouter des éléments et supprimer des éléments que vous ajoutez via l’interface utilisateur. Toutefois, vous ne pouvez pas modifier un élément en place à partir de l’interface utilisateur pour le moment.
 
 ### <a name="prepare-for-data-import"></a>Préparer l’importation de données
 
-Avant de définir le schéma ou de télécharger des données, vous devez identifier la source de vos informations de sujet de données. Le format de fichier requis est .csv, qui peut être lu par une application telle que Microsoft Excel. Structurez cette exportation de sorte que vos en-têtes de colonne apparaissent sur la première ligne. Ces en-têtes doivent inclure les noms des attributs de votre schéma de données personnelles. Vérifiez le format des données dans chaque champ. Si l’une des données contient des virgules, entourez ces valeurs de guillemets doubles pour vous assurer qu’elles ne seront pas séparées.
+Avant de définir le schéma ou de télécharger des données, vous devez identifier la source de vos informations de sujet de données. Le format de fichier requis est .csv, qui peut être lu par une application telle que Microsoft Excel. Structurez cette exportation de sorte que vos en-têtes de colonne apparaissent dans la première ligne. Ces en-têtes doivent inclure les noms des attributs de votre schéma de données personnelles. Vérifiez le format des données dans chaque champ. Si l’une des données contient des virgules, entourez ces valeurs de guillemets doubles pour vous assurer qu’elles ne seront pas séparées.
 
 ### <a name="define-the-personal-data-schema"></a>Définir le schéma de données personnelles
 
@@ -213,14 +213,14 @@ Lorsque vous définissez votre package de règles, veillez à référencer corre
 - **Datastore : ce** champ spécifie le magasin de données de recherche de correspondance de données personnelles à utiliser. Indiquez le nom datastore défini d’un schéma de données personnelles configuré.
 - **idMatch**: ce champ pointe vers l’élément principal de la correspondance de données personnelles.
   - **Correspondances**: spécifie le champ à utiliser dans la recherche exacte. Fournissez un nom de champ utilisable dans une recherche à partir du schéma de données personnelles.
-  - **Classification**: ce champ spécifie la correspondance de type sensible qui déclenche la recherche de correspondance de données personnelles. Vous pouvez fournir le nom ou le GUID d’un type d’informations sensibles intégré ou personnalisé. Afin d’éviter les problèmes de performances, si vous utilisez un type d’informations sensibles personnalisé comme élément classification dans la correspondance de données personnelles, n’utilisez pas un type d’informations sensibles personnalisé qui correspondra à un grand pourcentage de contenu (par exemple, « n’importe quel nombre » ou « tout mot de cinq lettres »). Nous vous recommandons d’ajouter des mots clés de prise en charge ou d’inclure la mise en forme dans la définition du type d’informations sensibles de classification personnalisée.
+  - **Classification**: ce champ spécifie la correspondance de type sensible qui déclenche la recherche de correspondance de données personnelles. Vous pouvez fournir le nom ou le GUID d’un type d’informations sensibles intégré ou personnalisé. Afin d’éviter les problèmes de performances, si vous utilisez un type d’informations sensibles personnalisé comme élément classification dans la correspondance de données personnelles, n’utilisez pas un type d’informations sensibles personnalisé qui correspondra à un grand pourcentage de contenu (par exemple, « n’importe quel nombre » ou « tout mot de cinq lettres »). Nous vous recommandons d’ajouter des mots clés de prise en charge ou d’inclure la mise en forme dans la définition du type d’informations sensibles de classification personnalisé.
 - **Correspondance**: ce champ pointe vers des preuves supplémentaires trouvées à proximité d’idMatch.
   - **Correspondances**: indiquez un nom de champ quelconque dans le schéma de données personnelles de DataStore.
 - **Ressource**: cette section spécifie le nom et la description du type sensible dans plusieurs paramètres régionaux.
   - **idRef**: fournir un GUID pour l’ID ExactMatch.
   - **Nom & descriptions :** personnaliser selon les besoins.
 
-Dans notre exemple de fichier XML de package de règles ci-dessous, nous faisons référence au fichier pdm.xml exemple de fichier de l’étape précédente qui crée le fichier XML de schéma de données personnelles :
+Dans notre exemple de fichier XML de package de règles ci-dessous, nous faisons référence à l’exemple de fichier pdm.xml de l’étape précédente qui crée le fichier XML de schéma de données personnelles :
 
 - **Datastore**: le nom de dataStore fait référence au fichier de schéma que nous avons créé précédemment : dataStore = « PatientRecords ».
 - **idMatch**: la valeur idMatch fait référence à un champ utilisable dans une recherche répertorié dans le fichier pdm.xml que nous avons créé précédemment : idMatch correspond à = « SSN ».

@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les scénarios de collaboration de gouvernance des communications.
-ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cc90130a9cb841291872898ca0ca53a4b515b4fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204287"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207426"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gouvernance des communications pour les scénarios de collaboration
 
@@ -34,11 +34,11 @@ Le tableau suivant fournit une référence rapide pour les contrôles de communi
 |Messagerie|||
 ||Gérez ce que les utilisateurs peuvent faire lors de la messagerie Teams.|[Gérer les stratégies de messagerie dans Teams](/microsoftteams/messaging-policies-in-teams)|
 ||Contrôler qui peut démarrer et répondre à des publications dans un canal.|[Configurer et gérer la modération des canaux dans Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
-|Meetings|||
+|Réunions|||
 ||Gérer ce que les participants à la réunion peuvent faire.|[Gérer les stratégies de réunion dans Teams](/microsoftteams/meeting-policies-in-teams)|
 ||Autoriser ou empêcher les utilisateurs anonymes de rejoindre des réunions.|[Autoriser les utilisateurs anonymes à participer à des réunions](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Conformité des communications|||
-||Surface et réponse à une communication d’insécurence et d’insécurence|[Conformité des communications dans Microsoft 365](../compliance/communication-compliance.md)|
+||Surface et réponse à la communication de l’insécurence et de l’insécurence|[Conformité des communications dans Microsoft 365](../compliance/communication-compliance.md)|
 
 ## <a name="messaging"></a>Messagerie
 
@@ -50,7 +50,7 @@ Vous pouvez contrôler qui peut démarrer de nouveaux billets et répondre à de
 
 [Configurer et gérer la modération des canaux dans Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
-## <a name="meetings"></a>Meetings
+## <a name="meetings"></a>Réunions
 
 Vous pouvez contrôler les fonctionnalités disponibles pour les participants Teams réunion, notamment la planification, le partage de contenu, les participants et les stratégies audio et vidéo.
 

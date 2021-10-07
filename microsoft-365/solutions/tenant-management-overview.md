@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Vue d’ensemble de la planification, du déploiement et du fonctionnement continu de vos Microsoft 365 client.
-ms.openlocfilehash: 5d98f715b9233a29c8710966099667075eae0020
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 915f71e6a8ab1f6f346940fccc0e15c5f8ce8d65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162401"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176162"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Gestion des locataires pour Microsoft 365 entreprise
 
@@ -37,13 +37,13 @@ Cette solution vous permet de suivre la configuration de ces bases dans les éta
 4. Migrer vos Windows, vos clients Office, ainsi que vos serveurs et données Office locaux
 5. Déployer la gestion des appareils et des applications
 
-Mais tout d’abord, nous allons prendre un moment pour comprendre ce qu’est un client et ce à quoi ressemble un client qui fournit une base solide.
+Mais tout d’abord, nous allons prendre le temps de comprendre ce qu’est un client et ce à quoi ressemble un client qui fournit une base solide.
 
 ## <a name="a-microsoft-365-tenant-defined"></a>Un Microsoft 365 défini
 
 Un Microsoft 365 client est une instance dédiée des services de Microsoft 365 et des données de votre organisation stockées dans un emplacement par défaut spécifique, comme l’Europe ou l’Amérique du Nord. Cet emplacement est spécifié lorsque vous créez le client pour votre organisation. Chaque Microsoft 365 client est distinct, unique et distinct de tous les autres Microsoft 365 client. Vous créez un Microsoft 365 client lorsque vous achetez un ou plusieurs produits Microsoft, tels que Microsoft 365 E3 ou E5, et un ensemble de licences pour chacun d’eux.
 
-Votre client Microsoft 365 inclut également un client Azure Active Directory (Azure AD), qui est une instance dédiée d’Azure AD pour les comptes d’utilisateurs, les groupes et d’autres objets. Chaque client Azure AD est distinct, unique et distinct de tous les autres locataires Azure AD. Bien que votre organisation puisse avoir plusieurs locataires Azure AD que vous pouvez configurer avec des abonnements Azure, les locataires Microsoft 365 ne peuvent utiliser qu’un seul client Azure AD, celui qui a été créé lors de la création du client.
+Votre client Microsoft 365 inclut également un client Azure Active Directory (Azure AD), qui est une instance dédiée d’Azure AD pour les comptes d’utilisateur, les groupes et d’autres objets. Chaque client Azure AD est distinct, unique et distinct de tous les autres locataires Azure AD. Bien que votre organisation puisse avoir plusieurs locataires Azure AD que vous pouvez configurer avec des abonnements Azure, les locataires Microsoft 365 ne peuvent utiliser qu’un seul client Azure AD, celui qui a été créé lors de la création du client.
 
 Voici un exemple :
 
@@ -95,7 +95,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 |Fonctionnalité|Description|Licence|
 |---|---|---|
 |Plusieurs clients|Chaque Microsoft 365 client est distinct, unique et distinct de tous les autres Microsoft 365 client. Avec plusieurs clients, il existe des restrictions et des considérations supplémentaires lors de leur gestion et de la fourniture de services à vos utilisateurs.|Microsoft 365 E3 ou E5|
-|Migration de boîtes aux lettres inter-clients|Les administrateurs client peuvent déplacer des boîtes aux lettres entre des locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela permet de supprimer la nécessité d’intégrer et d’intégrer des boîtes aux lettres.|Microsoft 365 E3 ou E5|
+|Migration de boîtes aux lettres inter-clients|Les administrateurs client peuvent déplacer des boîtes aux lettres entre des locataires avec des dépendances d’infrastructure minimales dans leurs systèmes locaux. Cela supprime la nécessité de supprimer les boîtes aux lettres d’intégration et d’intégration.|Microsoft 365 E3 ou E5|
 |Multi-Géo|Votre client peut stocker des données au repos dans les autres emplacements géographiques de centres de données que vous avez choisis pour répondre aux exigences de résidence des données.|Microsoft 365 E3 ou E5|
 |Déplacer les données principales vers une nouvelle géo de centres de données|Lorsque Microsoft ajoute de nouvelles géos de centres de données pour des ressources de calcul et de capacité supplémentaires, vous pouvez demander un déplacement géographique de centre de données pour la résidence des données dans la zone géographique pour vos données client principales.|Microsoft 365 E3 ou E5|
 ||||
@@ -130,7 +130,7 @@ Les sections et le tableau suivants listent les fonctionnalités clés et la ges
 
 ### <a name="device-and-app-management"></a>Données de gestion des appareils et des applications
 
-|Fonctionnalité|Description|Licence|
+|Fonctionnalité|Description|Gestion des licences|
 |---|---|---|
 |Microsoft Intune|Service basé sur le cloud qui fournit la gestion des périphériques mobiles (MDM) et la gestion des applications mobiles (MAM) pour contrôler la façon dont l’application de votre organisation et les appareils sont utilisés, y compris les téléphones mobiles, les tablettes et les ordinateurs portables.|Microsoft 365 E3 ou E5|
 |Mobility + Security de Base|Sécurisation et gestion des appareils mobiles de vos utilisateurs tels que les iPhone, iPad, Android et Windows avec ce service intégré.|Microsoft 365 E3 ou E5|

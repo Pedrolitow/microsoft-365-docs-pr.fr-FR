@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7d2c18c080f6f8fc313f17a5e2820b8a8b8a69fa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e7794f99b21939c3cf51f4b5afe2b9da50f9b933
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203190"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207066"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison
 
@@ -45,7 +45,7 @@ Cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée
 
 ![Capture d’écran de la vignette Appareils avec problèmes de capteur.](images/atp-devices-with-sensor-issues-tile.png)
 
-Dans **la liste Appareils,** vous pouvez filtrer la liste d’état en fonction de l’état suivant :
+Dans **la liste Appareils,** vous pouvez filtrer la liste d’état selon l’état suivant :
 
 - **Actif** : appareils qui font activement des rapports au service Defender for Endpoint.
 - **Mal configuré :** ces appareils peuvent partiellement signaler des données de capteur au service Defender for Endpoint, mais ont des erreurs de configuration qui doivent être corrigées. Les appareils mal configurés peuvent avoir l’un ou l’autre des problèmes suivants :

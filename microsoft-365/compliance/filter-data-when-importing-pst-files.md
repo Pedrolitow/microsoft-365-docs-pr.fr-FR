@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment filtrer des données à l’aide de la fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 lorsque vous importez des fichiers PST dans Microsoft 365.
-ms.openlocfilehash: b893c0678d2821855bfc09ee703e3aa4cb8119cb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0c321c4bcdb413c42c5a3edff1f19e2a34c093d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182360"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200508"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrer les données lors de l’importation de fichiers PST
 
@@ -56,9 +56,9 @@ Le graphique suivant illustre le processus d’importation intelligente et met e
     
   - [Utiliser l’expédition de disque pour importer des fichiers PST dans Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Après avoir créé une tâche d’importation à l’aide du chargement réseau, l’état de la tâche d’importation sur la page d’importation dans le Centre de sécurité & conformité est définie sur **Analyse** en cours, ce qui signifie que Microsoft 365 analyse les données dans les fichiers PST que vous avez téléchargés. Cliquez sur **Actualiser** ![ l’actualisation.](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour l’état de la tâche d’importation. 
+- Une fois que vous avez créé une tâche d’importation à l’aide du chargement réseau, l’état de la tâche d’importation sur la page d’importation dans le Centre de sécurité & conformité est définie sur **Analyse** en cours, ce qui signifie que Microsoft 365 analyse les données dans les fichiers PST que vous avez téléchargés. Cliquez sur **Actualiser** ![ l’actualisation.](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour l’état de la tâche d’importation. 
     
-- Pour les tâches d’importation d’expédition de disque, les données sont analysées par Microsoft 365 une fois que le personnel du centre de données Microsoft a reçu votre disque dur et chargé les fichiers PST dans l’espace de stockage Azure de votre organisation.
+- Pour les tâches d’importation d’expédition de disque, les données sont analysées par Microsoft 365 une fois que le personnel du centre de données Microsoft reçoit votre disque dur et télécharge les fichiers PST dans l’espace de stockage Azure de votre organisation.
   
 ## <a name="filter-data-that-gets-imported-to-mailboxes"></a>Filtrer les données importées dans les boîtes aux lettres
 
@@ -86,7 +86,7 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
   
     a. Cliquez **sur Oui, je souhaite le filtrer avant d’importer** pour découper les données que vous importez, puis cliquez sur **Suivant**.
   
-    La page **Importer des données Office 365 page** s’affiche avec des informations détaillées sur les données de l’analyse Microsoft 365 effectuée. 
+    La **page Importer des données Office 365 page** s’affiche avec des informations détaillées sur les données de l’analyse Microsoft 365 effectuée. 
   
     ![Microsoft 365 affiche des informations détaillées sur les données de son analyse des fichiers PST.](../media/4881205f-0288-4c32-a440-37e2160295f2.png)
   
@@ -125,24 +125,24 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
   
     b. Dans la page **Importer des données Office 365,** cliquez sur **Importer des données** pour démarrer l’importation. La quantité totale de données qui seront importées s’affiche. 
   
-6. Sous **l’onglet** Importer, cliquez sur **Actualiser** ![ l’actualisation. ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) L’état de la tâche d’importation s’affiche dans la **colonne État.**
+6. Sous **l’onglet** Importer, cliquez sur **Actualiser.** ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) L’état de la tâche d’importation s’affiche dans la **colonne État.**
   
 7. Cliquez sur l’importation du travail pour afficher des informations plus détaillées, telles que l’état de chaque fichier PST et les paramètres de filtre que vous avez configurés.
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Comment déterminer Microsoft 365 incréments du filtre d’âge ? Lorsque Microsoft 365 analyse un fichier PST, il examine l’horodaodaté envoyé ou reçu de chaque élément (si un élément possède un horodaté envoyé et reçu, la date la plus ancienne est sélectionnée). Ensuite, Microsoft 365 la valeur de l’année pour cet timestamp et la compare à la date actuelle pour déterminer l’âge de l’élément. Ces âges sont ensuite utilisés comme valeurs dans la liste liste de listes pour le **filtre Âge.** Par exemple, si un fichier PST a des messages de 2016, 2015  et 2014, les valeurs dans le filtre Âge sont **1 an,** **2 ans** et **3 ans**.
+- Comment déterminer Microsoft 365 incréments du filtre d’âge ? Lorsque Microsoft 365 analyse un fichier PST, il examine l’horodat d’envoi ou de réception de chaque élément (si un élément possède un horodaodaté envoyé et reçu, la date la plus ancienne est sélectionnée). Ensuite, Microsoft 365 la valeur de l’année pour cet timestamp et la compare à la date actuelle pour déterminer l’âge de l’élément. Ces âges sont ensuite utilisés comme valeurs dans la liste liste de listes pour le **filtre Âge.** Par exemple, si un fichier PST a des messages de 2016, 2015  et 2014, les valeurs dans le filtre Âge sont **1 an,** **2 ans** et **3 ans**.
   
 - Le tableau suivant répertorie les types de messages inclus dans la catégorie **Autre** dans le filtre **Type** de la page volante Autres **options** (voir l’étape 5b de la procédure précédente). Actuellement, vous ne pouvez pas exclure des éléments de la catégorie « Autre » lorsque vous importez des PST dans Office 365. 
   
     |**ID de la classe de message**|**Éléments de boîte aux lettres qui utilisent cette classe de message**|
     |:-----|:-----|
     |IPM. Activité  <br/> |Entrées de journal  <br/> |
-    |IPM.Document  <br/> |Documents et fichiers (non joints à un message électronique)  <br/> |
-    |IPM. Fichier  <br/> |(identique à IPM.Document)  <br/> |
+    |IPM. Document  <br/> |Documents et fichiers (non joints à un message électronique)  <br/> |
+    |IPM. Fichier  <br/> |(identique à IPM. Document)  <br/> |
     |IPM. Note.IMC.Notification  <br/> |Rapports envoyés par internet mail Connecter, qui est la passerelle Exchange Server internet  <br/> |
     |IPM. Note.Microsoft.Fax  <br/> |Messages de télécopie  <br/> |
-    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Messages d’autoreply d’in-office  <br/> |
+    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Messages d’autoreply de l’out-of-office  <br/> |
     |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Réponses envoyées par une règle de boîte de réception  <br/> |
     |IPM. OLE. Classe  <br/> |Exceptions pour une série périodique  <br/> |
     |IPM. Recall.Report  <br/> |Rapports de rappel de message  <br/> |

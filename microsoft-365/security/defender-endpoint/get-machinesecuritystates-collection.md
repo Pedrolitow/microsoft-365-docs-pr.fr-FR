@@ -10,17 +10,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: leonidzh
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a57e9b33cf581f274bc858729f17e2fb98ec696c0e4947d2a6386fcdfb3b6d41
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 320f2bfd06f7f01c15419f4bd6dc0eb5536079f0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53847258"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176810"
 ---
 # <a name="get-machines-security-states-collection-api"></a>API obtenir la collection d’états de sécurité des ordinateurs
 

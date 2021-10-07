@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: cb4de76bacc794805a79597c9088491f057e3ce0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1813ccdedb58efcaef491cb0242417121e937c15
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209702"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193038"
 ---
 # <a name="collect-investigation-package-api"></a>API collecter un package d’examen
 
@@ -88,7 +88,7 @@ Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse. Si une collection est déjà en cours d’exécution, cela renvoie 400 demandes non bonnes.
+Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse. Si une collection est déjà en cours d’exécution, cela renvoie 400 demandes non bonnes.
 
 ## <a name="example"></a>Exemple
 

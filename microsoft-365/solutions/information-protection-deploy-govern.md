@@ -9,7 +9,7 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez Microsoft 365 étiquettes et stratégies de rétention pour gérer les données personnelles dans votre environnement Microsoft 365 de rétention.
-ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b131c90e83a2ce211d51af444dd570f71f3b8263
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182927"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176306"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>Régir les informations soumises à la réglementation sur la confidentialité des données
 
@@ -56,7 +56,7 @@ Pour la gouvernance des informations, les réglementations en matière de confid
 
 Étant donné que les réglementations en matière de confidentialité des données ne sont pas très spécifiques en matière de rétention et de suppression des données, d’autres facteurs doivent être pris en compte pour dicter les instructions de gouvernance des informations relatives aux informations personnelles stockées dans votre abonnement Microsoft 365. Voici quelques exemples :
 
-- L’âge des comptes consommateur après 5 ans d’inactivité et nécessite la suppression ou l’anonymisation des données de compte après ce point, nécessitant une orchestration entre le système stockant les données et les flux de travail liés aux notifications et à d’autres automatisations.
+- L’âge des comptes consommateurs après 5 ans d’inactivité et nécessite la suppression ou l’anonymisation des données de compte après ce point, nécessitant une orchestration entre le système stockant les données et les flux de travail liés aux notifications et autres automatisations.
 - Configuration des règles de conservation des stratégies et procédures liées au R GDPR pendant trois ans après leur sur-place, ce qui s’aligne sur la planification de rétention de l’organisation pour les stratégies et procédures.
 - Maintien d’un abonnement distinct pour la communication avec les consommateurs via son organisation de support. Toutes les communications par courrier électronique ont été conservées et supprimées au bout de deux semaines afin de réduire l’endettement de confidentialité dans le système.
 
@@ -84,7 +84,7 @@ Gardez les éléments suivants à l’esprit :
 
 ### <a name="retention-policies-and-retention-labels"></a>Stratégies de rétention et étiquettes de rétention.
 
-Utilisez des [stratégies de rétention et](../compliance/retention.md) des étiquettes de rétention pour conserver ou supprimer du contenu Microsoft 365 contenant ou devant contenir des données personnelles.
+Utilisez des [stratégies de rétention et des étiquettes](../compliance/retention.md) de rétention pour conserver ou supprimer du contenu Microsoft 365 contenant ou devant contenir des données personnelles.
 
 ### <a name="records-management"></a>Gestion des enregistrements
 

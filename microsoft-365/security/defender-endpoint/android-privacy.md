@@ -1,27 +1,25 @@
 ---
 title: 'Microsoft Defender pour point de terminaison Android : informations sur la confidentialité'
-description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint sur Android.
+description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour point de terminaison sur Android.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, android, confidentialité, diagnostic
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6079c0d4a92f17c9c00fc3b3f060fec6858cb996
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 185ffab8d4fb67040d11dbf8b36459b94341a0d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59222661"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176906"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender pour point de terminaison Android : informations sur la confidentialité
 
@@ -41,7 +39,7 @@ Pour plus d’informations sur les questions de confidentialité les plus couran
 
 ## <a name="required-data"></a>Données requises
 
-Les données requises sont constituées de données qui sont nécessaires pour que Defender for Endpoint for Android fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. Voici une liste des types de données collectées :
+Les données requises sont constituées de données nécessaires pour que Defender for Endpoint for Android fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. Voici une liste des types de données collectées :
 
 ### <a name="app-information"></a>Informations sur l’application
 
@@ -66,7 +64,7 @@ Informations sur **les** packages d’application Android malveillants (APK) sur
   - Identificateur global unique (GUID) généré de manière aléatoire.
 
 - Informations sur le client, l’appareil et l’utilisateur
-  - Azure Active Directory (AD) Device ID et Azure User ID : identifie de manière unique l’appareil, Utilisateur, respectivement dans Azure Active Directory.
+  - Azure Active Directory (AD) ID d’appareil et ID utilisateur Azure : identifie de manière unique l’appareil, Utilisateur, respectivement dans Azure Active Directory.
   - ID de client Azure : GUID qui identifie votre organisation au sein Azure Active Directory.
   - ID d’organisation Microsoft Defender pour point de terminaison : identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier si les problèmes ont un impact sur un ensemble d’entreprises sélectionné et le nombre d’entreprises qui en sont touchées.
   - Nom d’utilisateur principal : ID de messagerie de l’utilisateur

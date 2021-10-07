@@ -9,7 +9,7 @@ titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -17,16 +17,16 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: Découvrez comment l’onglet Décider dans Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte du jeu de révision des fichiers de cas.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: deb47c0c795a828804722085f8cfa3b002580307
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 32682690c6febac247d67e3b78f56d1f71b9a2fb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58571361"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207354"
 ---
 # <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>Les décisions basées sur la pertinence entraînent Advanced eDiscovery
   
-Dans le module Pertinence de Advanced eDiscovery, l’onglet Décider fournit des informations supplémentaires pour l’affichage et l’utilisation des statistiques de prise de décision pour déterminer la taille du jeu de fichiers de cas de révision.
+Dans le module Pertinence de Advanced eDiscovery, l’onglet Décider fournit des informations supplémentaires pour l’affichage et l’utilisation des statistiques de prise de décision pour déterminer la taille du jeu de fichiers de cas à réviser.
   
 ## <a name="using-the-decide-tab"></a>Utilisation de l’onglet Décider
 
@@ -50,4 +50,4 @@ Cet onglet comprend les composants suivants :
 
   - **Répartition par score de pertinence**: les fichiers dans l’affichage gris foncé à gauche sont inférieurs au score de seuil. Une info-conseil affiche le score de pertinence et le pourcentage connexe de fichiers dans le jeu de fichiers de révision par rapport au nombre total de fichiers.
 
-Le volet **Détails développé** affiche plus de détails. Les fichiers des figures de collection n’incluent pas les fichiers vides ou les fichiers nebules. Les figures de fichiers de famille représentent des fichiers qui ne sont pas chargés en Pertinence, mais qui sont toujours comptés dans le cadre de la famille.
+Le volet **Détails développé** affiche plus de détails. Les fichiers dans les figures de collection n’incluent pas de fichiers vides ou nebules. Les figures de fichiers de famille représentent des fichiers qui ne sont pas chargés en Pertinence, mais qui sont toujours comptés dans le cadre de la famille.

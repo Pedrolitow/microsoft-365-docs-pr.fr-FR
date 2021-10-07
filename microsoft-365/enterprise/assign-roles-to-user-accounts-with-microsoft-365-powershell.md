@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,13 +19,13 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: Dans cet article, découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 attribuer des rôles d’administrateur à des comptes d’utilisateur.
-ms.openlocfilehash: 4174877bed9accacc3a61de576fa6e54060678bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Dans cet article, découvrez comment utiliser rapidement et facilement PowerShell pour Microsoft 365 rôles d’administrateur à des comptes d’utilisateur.
+ms.openlocfilehash: 0b0fc0a5da1a6b84d4f13f95ace4846e367ae111
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204096"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193134"
 ---
 # <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Attribuer des rôles d’administrateur Microsoft 365 comptes d’utilisateurs avec PowerShell
 
@@ -36,14 +36,14 @@ Vous pouvez facilement attribuer des rôles à des comptes d’utilisateurs à l
 >[!Note]
 >Découvrez comment attribuer [des rôles d’administrateur](../admin/add-users/assign-admin-roles.md) à des comptes d’utilisateurs à l’Centre d'administration Microsoft 365.
 >
->Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](/admin)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
 Tout d’abord, utilisez un administrateur Azure  **AD DC,** un administrateur d’application **cloud** ou un compte d’administrateur global pour vous connecter à Microsoft 365 [client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  
-Pour plus d’informations, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?).
+Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?).
 
 Ensuite, identifiez le nom de la signature du compte d’utilisateur que vous souhaitez ajouter à un rôle (exemple : fredsm \@ contoso.com). Il s’agit également du nom d’utilisateur principal (UPN).
 

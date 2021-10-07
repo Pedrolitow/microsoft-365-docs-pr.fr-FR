@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La gestion de la confidentialité Microsoft offre des solutions pour l’évaluation des données personnelles que votre organisation stocke dans Microsoft 365 et vous aide à identifier et à résoudre les risques de confidentialité.
-ms.openlocfilehash: 9eddf65236befb35df7927e1ff3f7e4ddf6f03e7
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: d760e8a943086fb33395e0d5a8544616ee2f8be3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988666"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207198"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Gestion de la confidentialité Microsoft (prévisualisation)
 
@@ -31,7 +31,7 @@ Comprendre les données privées que votre organisation contrôle et les gérer 
 
 Pour aider votre organisation à répondre à ces besoins, la gestion de la confidentialité Microsoft 365 fournit des solutions pour la gestion des données personnelles dans votre environnement Microsoft 365 et fournit à vos employés des outils pour une révision efficace des données, la correction des problèmes et la collaboration.
 
-## <a name="microsoft-365-privacy-management-solutions"></a>Microsoft 365 de gestion de la confidentialité
+## <a name="microsoft-365-privacy-management-solutions"></a>Microsoft 365 solutions de gestion de la confidentialité
 
 Microsoft 365 gestion de la confidentialité fournit des solutions qui vous permettent de :
 
@@ -54,7 +54,7 @@ Pour en savoir plus, voir [Rechercher et visualiser vos données personnelles.](
 
 Les environnements de données complexes peuvent présenter des scénarios potentiellement risqués pour les données personnelles. La gestion de la confidentialité permet de détecter facilement les risques dans les domaines suivants et d’établir des processus continus pour la gestion des scénarios essentiels, tels que :
 
-- **Données personnelles surexposées**: les sociétés peuvent collecter différents types d’informations qui peuvent être utilisés pour identifier des clients ou des employés individuels. Les droits d’accès à ces données doivent être gérés correctement pour protéger la confidentialité et empêcher toute utilisation inappropriée.
+- **Données personnelles surexposées**: les entreprises peuvent collecter différents types d’informations qui peuvent être utilisés pour identifier des clients ou des employés individuels. Les droits d’accès à ces données doivent être gérés correctement pour protéger la confidentialité et empêcher toute utilisation inappropriée.
 - Transferts **de** données : le transfert de données personnelles entre les services de votre organisation ou au-delà des frontières nationales ou régionales peut augmenter le risque d’exposition des données ou de ne pas respecter les réglementations et lois en matière de confidentialité.
 - **Réduction des données**: les sociétés peuvent collecter des informations superflues ou les conserver plus longtemps que nécessaire, ce qui entraîne le stockage des données personnelles inutilisées. Ces données doivent être réduites pour éviter les risques de confidentialité.
 
@@ -72,7 +72,7 @@ Pour plus d’informations, voir [Gérer les demandes de droits d’objet.](priv
 
 ## <a name="where-privacy-management-identifies-personal-data"></a>Où la gestion de la confidentialité identifie les données personnelles
 
-Microsoft 365 gestion de la confidentialité évalue les données et les fichiers stockés par votre organisation dans Microsoft 365 services cloud :
+Microsoft 365 gestion de la confidentialité évalue les données et les fichiers stockés par votre organisation dans Microsoft 365 services cloud de l’entreprise :
 
 - Microsoft Exchange
 - Microsoft SharePoint

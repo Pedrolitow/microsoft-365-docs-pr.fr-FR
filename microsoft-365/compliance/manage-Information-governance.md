@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
 description: Implémentez les fonctionnalités de gouvernance des informations de Microsoft pour gérer vos données en matière de conformité ou d’obligations réglementaires.
-ms.openlocfilehash: 7bbeefc07da1f620f8b22484ad399f87bb45f74e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 66b8bde34cefbb783e4de7c4c12f99b373bbe9b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177979"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200472"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gouvernance des informations dans Microsoft 365
 

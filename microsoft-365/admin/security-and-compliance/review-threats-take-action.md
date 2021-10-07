@@ -7,23 +7,24 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment examiner et gérer les menaces détectées par les Antivirus Microsoft Defender sur vos Windows 10 mobiles.
-ms.openlocfilehash: fe03b7a7a72b3908b19da71544853a671fc90f52
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 30c2114a3605c73214f773414fe64e18522d9093
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772781"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180400"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Examiner les menaces détectées et prendre des mesures
 
-Dès qu’un fichier ou un logiciel malveillant est détecté, Antivirus Microsoft Defender le bloque et l’empêche de s’exécute. De plus, avec la protection de cloud, les menaces nouvellement détectées sont ajoutées au moteur antivirus et anti-programme malveillant afin que vos autres appareils et utilisateurs soient également protégés.
+Dès qu’un fichier ou un logiciel malveillant est détecté, Antivirus Microsoft Defender le bloque et l’empêche de s’exécute. Une fois la protection cloud est désactivée, les menaces nouvellement détectées sont ajoutées au moteur antivirus et anti-programme malveillant afin que vos autres appareils et utilisateurs soient également protégés.
 
 Antivirus Microsoft Defender détection et protection contre les types de menaces suivants :
 

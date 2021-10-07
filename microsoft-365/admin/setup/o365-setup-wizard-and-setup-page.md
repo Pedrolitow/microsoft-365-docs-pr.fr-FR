@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez la différence entre l’Assistant Installation et la page Installation.
-ms.openlocfilehash: 85cf10d767655b1ff5b211b130cc0749558c350c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 29cf78d2a159e170c44091c1062e7c9bf5ea14d0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772812"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200964"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Différence entre l’Assistant Installation et la page Installation
 

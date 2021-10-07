@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce Messenger, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: 7e82f114138a8f1f8ac9eb4563ce1434e6c26167
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 5b6bbab9ff6ad54440fc84213d3e810c863ebef4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011235"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200184"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
 
@@ -48,7 +48,7 @@ L’illustration et la description suivantes expliquent le fonctionnement du pro
 
 ![Fonctionnement du processus d’importation de données tiers.](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
 
-1. Le client travaille avec son partenaire de choix pour configurer un connecteur qui extraira des éléments de la source de données tierce, puis importera ces éléments dans Microsoft 365.
+1. Le client travaille avec son partenaire de choix pour configurer un connecteur qui extraira des éléments de la source de données tierce, puis les importera dans Microsoft 365.
 
 2. Le connecteur partenaire se connecte à des sources de données tierces via une API tierce (sur une base programmée ou configurée) et extrait des éléments de la source de données. Le connecteur partenaire convertit le contenu d’un élément dans un format de message électronique. Consultez la section [Plus d’informations](#more-information) pour obtenir une description du schéma de format de message.
 
@@ -58,7 +58,7 @@ L’illustration et la description suivantes expliquent le fonctionnement du pro
 
    1. **Éléments dont l’ID d’utilisateur correspond à un compte d’utilisateur :** Si le connecteur partenaire peut ma cartographier l’ID utilisateur de l’élément de la source de données tierce sur un ID utilisateur spécifique dans Microsoft 365, l’élément est copié dans le dossier **Purges** du dossier Éléments récupérables de l’utilisateur. Les utilisateurs ne peuvent pas accéder aux éléments du dossier Purges. Toutefois, vous pouvez utiliser les outils eDiscovery pour rechercher des éléments dans le dossier Purges.
 
-   1. **Éléments qui n’ont pas d’ID d’utilisateur correspondant à un compte d’utilisateur :** Si le connecteur partenaire ne peut pas ma cartographier l’ID utilisateur d’un  élément sur un ID utilisateur spécifique, l’élément est copié dans le dossier Boîte de réception de la boîte aux lettres de données tierce. L’importation d’éléments dans la boîte de réception permet à un membre de votre organisation ou à vous-même de vous connecter à la boîte aux lettres tierce pour visualiser et gérer ces éléments, et de voir si des ajustements doivent être effectués dans la configuration du connecteur partenaire.
+   1. **Éléments qui n’ont pas d’ID d’utilisateur correspondant à un compte d’utilisateur :** Si le connecteur partenaire ne peut pas macher l’ID d’utilisateur d’un  élément sur un ID d’utilisateur spécifique, l’élément est copié dans le dossier Boîte de réception de la boîte aux lettres de données tierce. L’importation d’éléments dans la boîte de réception permet à un membre de votre organisation ou à vous-même de vous connecter à la boîte aux lettres tierce pour visualiser et gérer ces éléments, et de voir si des ajustements doivent être effectués dans la configuration du connecteur partenaire.
 
 ## <a name="step-1-find-a-third-party-data-partner"></a>Étape 1 : trouver un partenaire de données tierces
 
@@ -530,11 +530,11 @@ La dernière étape consiste à fournir à votre partenaire les informations sui
 
 - Informations d’identification de connexion (Microsoft 365'utilisateur et mot de passe) de la boîte aux lettres de données tierces que vous avez créée à l’étape 2. Ces informations d’identification sont requises pour que le connecteur partenaire puisse accéder aux éléments et les importer dans les boîtes aux lettres utilisateur et la boîte aux lettres de données tierces.
 
-## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Étape 5 : Inscrire le connecteur de données tiers dans Azure Active Directory
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Étape 5 : inscrire le connecteur de données tiers dans Azure Active Directory
 
 À compter du 30 septembre 2018, le service Azure dans Microsoft 365 commence à utiliser l’authentification moderne dans Exchange Online pour authentifier les connecteurs de données tiers qui tentent de se connecter à votre organisation pour importer des données. La raison de ce changement est que l’authentification moderne offre une sécurité plus renforcée que la méthode actuelle, qui était basée sur une liste d’applications pour les connecteurs tiers qui utilisent le point de terminaison décrit précédemment pour se connecter au service Azure.
 
-Pour permettre à un connecteur de données tiers de se connecter à Microsoft 365 à l’aide de la nouvelle méthode d’authentification moderne, un administrateur de votre organisation doit consentir à inscrire le connecteur en tant qu’application de service approuvé dans Azure Active Directory. Pour ce faire, acceptez une demande d’autorisation pour autoriser le connecteur à accéder aux données de votre organisation dans Azure Active Directory. Une fois que vous avez accepté cette demande, le connecteur de données tiers est ajouté en tant qu’application d’entreprise Azure Active Directory et représenté en tant que principal de service. Pour plus d’informations sur le processus de consentement, voir [Consentement de l’administrateur client.](/skype-sdk/trusted-application-api/docs/tenantadminconsent)
+Pour permettre à un connecteur de données tiers de se connecter à Microsoft 365 à l’aide de la nouvelle méthode d’authentification moderne, un administrateur de votre organisation doit consentir à inscrire le connecteur en tant qu’application de service approuvé dans Azure Active Directory. Pour ce faire, acceptez une demande d’autorisation pour autoriser le connecteur à accéder aux données de votre organisation dans Azure Active Directory. Une fois cette demande acceptée, le connecteur de données tiers est ajouté en tant qu’application d’entreprise Azure Active Directory et représenté en tant que principal de service. Pour plus d’informations sur le processus de consentement, voir [Consentement de l’administrateur client.](/skype-sdk/trusted-application-api/docs/tenantadminconsent)
 
 Voici les étapes à suivre pour accéder à la demande d’inscription du connecteur et l’accepter :
 
@@ -557,7 +557,7 @@ Une fois que votre organisation a accepté la demande d’autorisations pour ins
 
 Pour révoquer le consentement d’un connecteur de données tiers, vous pouvez supprimer l’application (en supprimant le principal de service correspondant) de Azure Active Directory à l’aide du portail **d’applications Enterprise** dans le portail Azure ou à l’aide de [Remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) dans Microsoft 365 PowerShell. Vous pouvez également utiliser [l’cmdlet Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) dans Azure Active Directory PowerShell.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - Comme indiqué précédemment, les éléments des sources de données tierces sont importés vers les boîtes aux lettres Exchange en tant que messages électroniques. Le connecteur partenaire importe l’élément à l’aide d’un schéma requis par Microsoft 365 API. Le tableau suivant décrit les propriétés de message d’un élément d’une source de données tierces après son importation vers une boîte aux lettres Exchange en tant que message électronique. Le tableau indique également si la propriété de message est obligatoire. Les propriétés obligatoires doivent être renseignées. Si une propriété obligatoire est manquante, un élément n’est pas importé dans Microsoft 365. Le processus d’importation renvoie un message d’erreur expliquant pourquoi un élément n’a pas été importé et quelle propriété est manquante.<br/><br/>
 

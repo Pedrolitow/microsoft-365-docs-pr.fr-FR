@@ -7,14 +7,14 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: de23054454a9e73ae429920450d71ed5b34a8045
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179500"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208072"
 ---
 # <a name="admin-support"></a>Support pour les administrateurs
 
@@ -31,7 +31,7 @@ Microsoft Manged Desktop prise en charge inclut :
 
 - Une équipe d’ingénieurs dédiée à Microsoft Manged Desktop appareils
 - Options de prise en charge pour les utilisateurs Microsoft Manged Desktop appareils mobiles
-- Accorde un accès administratif limité aux appareils Microsoft Manged Desktop pour les ingénieurs qui gèrent Microsoft Manged Desktop périphériques 
+- Accorde un accès administratif limité aux appareils Microsoft Manged Desktop pour les ingénieurs qui gèrent Microsoft Manged Desktop appareils 
 
 Produits pris en charge :
 
@@ -44,7 +44,7 @@ Détails du support :
 
 - Actuel : États-Unis, Canada (à l’exception de Australia), Royaume-Uni, Belgique, Luxembourg, Pays-Bas, Australie et Nouvelle-Zélande (24 x 7 x 365) 
 - L’anglais est la seule langue prise en charge pour les conversations téléphoniques et de conversation avec les clients 
-- Nous travaillons en partenariat avec votre aide d’entreprise, et non avec son remplacement. les applications métier, les ressources réseau, etc. sont toujours gérées par votre helpdesk 
+- Nous travaillons en partenariat avec le helpdesk de votre entreprise, et non avec son remplacement. les applications métier, les ressources réseau, etc. sont toujours gérées par votre helpdesk 
 - Microsoft Manged Desktop du groupe « Test » et les appareils qui ne font pas partie Microsoft Manged Desktop sont hors de portée 
 
 

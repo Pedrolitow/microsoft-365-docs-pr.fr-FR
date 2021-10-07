@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter dans Microsoft 365. Une fois ces données importées dans Microsoft 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
-ms.openlocfilehash: 52f5e426aa2f5fe90d067879fcf39f97d435a2a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 478731bc2855b199888311377c21f09aac17fcf1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183711"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193446"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Déployer un connecteur pour archiver des données Twitter
 
@@ -40,7 +40,7 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
    ![Créez une inscription d’application.](../media/TCimage03.png)
 
-4. Inscrivez l’application. Sous **URI de redirection (facultatif),** sélectionnez **Web** dans la liste rouge type d’application, puis tapez dans la zone de `https://portal.azure.com` l’URI.
+4. Inscrivez l’application. Sous **URI de redirection (facultatif),** sélectionnez **Web** dans la liste de listes des types d’application, puis tapez dans la zone de `https://portal.azure.com` l’URI.
 
    ![Tapez https://portal.azure.com l’URI de redirection.](../media/TCimage04.png)
 
@@ -67,9 +67,9 @@ Cet article contient le processus pas à pas pour déployer un connecteur qui ut
 
     ![Go to the Azure home page.](../media/FBCimage11.png)
 
-2. Une fois que **vous avez cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** **Paramètres** détails, puis cliquez sur **Acheter.**
+2. Une fois que **vous avez cliqué sur Déployer** vers Azure, vous êtes redirigé vers un portail Azure avec une page de modèle personnalisée. Remplissez les **informations de base** et **Paramètres,** puis cliquez sur **Acheter.**
 
-   ![Cliquez sur Créer un compte de stockage de ressources et de types.](../media/FBCimage12.png)
+   ![Cliquez sur Créer un compte de stockage de ressource et de type.](../media/FBCimage12.png)
 
     - **Abonnement :** Sélectionnez votre abonnement Azure sur qui vous souhaitez déployer le service web de connecteur Twitter.
 

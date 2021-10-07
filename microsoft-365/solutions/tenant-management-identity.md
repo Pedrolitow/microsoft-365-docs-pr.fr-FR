@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez le modèle d’identité correct pour vos Microsoft 365 client et appliquez des connecteurs utilisateur forts.
-ms.openlocfilehash: cd67db1c70c4f3aaa4ec9784e1de6992dd40300a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 10757c2fd88df9b9e30905f067432a1034c24421
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182872"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176282"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 3. Identité de votre Microsoft 365 pour les locataires d’entreprise
 
@@ -55,7 +55,7 @@ Dans cette illustration, les utilisateurs locaux et distants se connectent à le
 En fonction des besoins de votre entreprise et des exigences techniques, le modèle d’identité hybride et la synchronisation d’annuaires sont le choix le plus courant pour les clients d’entreprise qui adoptent Microsoft 365. La synchronisation d’annuaires vous permet de gérer les identités dans vos services AD DS et toutes les mises à jour des comptes d’utilisateur, des groupes et des contacts sont synchronisées avec le client Azure AD de votre client Microsoft 365.
 
 > [!NOTE]
-> Lorsque les comptes d’utilisateurS AD DS sont synchronisés pour la première fois, ils ne se voit pas automatiquement attribuer une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
+> Lorsque les comptes d’utilisateurS AD DS sont synchronisés pour la première fois, ils ne se voit pas attribuer automatiquement une licence Microsoft 365 et ne peuvent pas accéder aux services Microsoft 365, tels que la messagerie électronique. Vous devez d’abord leur attribuer un emplacement d’utilisation. Ensuite, attribuez une licence à ces comptes d’utilisateurs, individuellement ou dynamiquement par le biais de l’appartenance à un groupe.
 
 Voici les deux types d’authentification lors de l’utilisation du modèle d’identité hybride.
 
@@ -75,7 +75,7 @@ Pour renforcer la sécurité des utilisateurs qui se connectent, utilisez les fo
 |:-------|:-----|:-----|:-----|:-----|
 | Windows Hello Entreprise | Remplace les mots de passe par une authentification forte à deux facteurs lors de la signature sur Windows appareil. Les deux facteurs sont un nouveau type d’informations d’identification d’utilisateur qui est lié à un appareil et à un code biométrique ou PIN. | [Vue d’ensemble de Windows Hello Entreprise](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 ou E5 |
 | Protection par mot de passe Azure AD. | Détecte et bloque les mots de passe faibles connus et leurs variantes, et peut également bloquer d’autres termes faibles spécifiques à votre organisation. | [Configurer la protection par mot de passe Azure AD](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 ou E5 |
-| Utilisez l’authentification multifacteur (MFA) | L' validation de compte d’utilisateur exige que les utilisateurs se connectent à une vérification supplémentaire au-delà du mot de passe du compte d’utilisateur, telle qu’une vérification avec une application de smartphone ou un SMS envoyé à un smartphone. Regardez [cette vidéo](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) pour obtenir des instructions sur la façon dont les utilisateurs définissent l’famf. | [MFA pour les Microsoft 365 entreprise](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 ou E5 |
+| Utilisez l’authentification multifacteur (MFA) | L' validation de compte d’utilisateur exige que les utilisateurs se connectent à une vérification supplémentaire au-delà du mot de passe du compte d’utilisateur, telle qu’une vérification avec une application de smartphone ou un SMS envoyé à un smartphone. Regardez [cette vidéo](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) pour obtenir des instructions sur la façon dont les utilisateurs définissent l’famf. | [MFA pour Microsoft 365 entreprise](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 ou E5 |
 | Configurations des identités et de l’accès aux appareils | Paramètres et stratégies qui se composent de fonctionnalités prérequises recommandées et de leurs paramètres combinés aux stratégies d’accès conditionnel, Intune et Azure AD Identity Protection qui déterminent si une demande d’accès donnée doit être accordée et dans quelles conditions.  | [Configurations des identités et de l’accès aux appareils](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 ou E5 |
 | Azure AD Identity Protection | Protégez-vous contre la compromission des informations d’identification, où une personne malveillante détermine le nom de compte et le mot de passe d’un utilisateur pour accéder aux données et services cloud d’une organisation. | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 ou Microsoft 365 E3 avec le module & protection contre les menaces identity |
 |  |  |  |
@@ -97,7 +97,7 @@ Dans cette illustration, le client a :
 
 - Forêt AD DS synchronisée avec le client Azure AD à l’aide d’un serveur DirSync et d’Azure AD Connecter.
 - Copie des comptes d’utilisateur AD DS et d’autres objets de la forêt AD DS.
-- Un ensemble de stratégies d’accès conditionnel pour appliquer des informations de connectez-vous et un accès utilisateur sécurisés en fonction du compte d’utilisateur.
+- Ensemble de stratégies d’accès conditionnel pour appliquer la sécurisation des utilisateurs et l’accès en fonction du compte d’utilisateur.
 
 ## <a name="ongoing-maintenance-for-identity"></a>Maintenance continue de l’identité
 

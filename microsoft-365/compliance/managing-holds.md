@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -21,12 +21,12 @@ description: Découvrez comment placer des conservations sur les dépositaires e
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 12fdc5e6282358f96dcc1d454156a7fccf7518a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 72b62623aa45ffadf43b371ad811373d4e383885
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177955"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207246"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les Advanced eDiscovery
 
@@ -44,13 +44,13 @@ Pour afficher la stratégie de conservation des dépositaires :
 
 3. Go to the **Holds** tab and click **CustodianHold \<HoldId>**.
 
-4. Dans la page volante, vous pouvez voir les statistiques de la stratégie de hold. Vous pouvez également effectuer des actions telles que l’application d’une requête à votre conservation basée sur les dépositaires. Pour plus d’informations sur la création d’une requête de mise en attente et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
+4. Dans la page volante, vous pouvez voir les statistiques de la stratégie de hold. Vous pouvez également effectuer des actions telles que l’application d’une requête à votre conservation basée sur le dépositaire. Pour plus d’informations sur la création d’une requête de mise en attente et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
 
 ## <a name="manage-non-custodial-holds"></a>Gérer les placements non privatives
 
 Lorsque vous créez une attente, vous avez les options suivantes pour l’étendue du contenu qui est placé dans les emplacements de contenu spécifiés :
 
-- Vous créez une mise en attente infinie dans laquelle tout le contenu est mis en attente. Vous pouvez également créer une mise en attente basée sur une requête dans laquelle seul le contenu qui correspond à une requête de recherche est mis en attente.
+- Vous créez une attente infinie dans laquelle tout le contenu est placé en attente. Vous pouvez également créer une mise en attente basée sur une requête dans laquelle seul le contenu qui correspond à une requête de recherche est mis en attente.
   
 - Vous pouvez spécifier une plage de dates pour contenir uniquement le contenu qui a été envoyé, reçu ou créé dans cette plage de dates. Vous pouvez également conserver tout le contenu, quel que soit le moment où il a été envoyé, reçu ou créé.
 
@@ -94,11 +94,11 @@ Pour créer une mise en attente non privative pour Advanced eDiscovery cas :
 
      Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](/office365/SecurityCompliance/keyword-queries-and-search-conditions)
 
-11. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant.**
+11. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant**.
 
 12. Examinez vos paramètres, puis cliquez sur **Créer cette mise en attente.**
 
-## <a name="view-hold-statistics"></a>Afficher les statistiques de la attente
+## <a name="view-hold-statistics"></a>Afficher les statistiques de la prise en main
 
 Après un certain temps, les informations sur la nouvelle attente s’affichent dans le volet d’informations sous l’onglet **Attentes** pour la nouvelle attente sélectionnée. Ces informations incluent le nombre de boîtes aux lettres et de sites en attente, ainsi que les statistiques sur le contenu placé en attente, telles que le nombre total et la taille des éléments placés en attente et la dernière fois que les statistiques de mise en attente ont été calculées. Ces statistiques de la découverte électronique vous aident à identifier la quantité de contenu liée au cas eDiscovery.
 
@@ -120,7 +120,7 @@ Gardez les points suivants à l’esprit concernant les statistiques de la atten
 
 Microsoft Teams sont créés sur Office 365 groupes. Par conséquent, leur mise en attente Advanced eDiscovery est très similaire.
 
-- **Comment puis-je ma cartographier un Microsoft 365 groupes ou un site Microsoft Teams supplémentaire à un dépositaire ? Et qu’en est-il du placement d’une mise en attente Microsoft 365 groupes et Microsoft Teams ?** Microsoft Teams sont créés sur Microsoft 365 groupes. Par conséquent, les placer en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous placez Microsoft 365 groupes et Microsoft Teams en attente.
+- **Comment puis-je ma cartographier un Microsoft 365 groupes ou un site Microsoft Teams supplémentaire à un dépositaire ? Et qu’en est-il du placement d’une mise en attente Microsoft 365 groupes et Microsoft Teams ?** Microsoft Teams sont créés sur Microsoft 365 groupes. Par conséquent, les placer en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous Microsoft 365 groupes et Microsoft Teams en attente.
   - Pour placer le contenu situé dans les groupes Microsoft 365 et Microsoft Teams en attente, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou à une équipe.
   
   - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’Microsoft 365 groupe ou Microsoft Team. Il s’agit d’un bon moyen d’obtenir l’URL du site associé à un groupe Microsoft 365 ou Microsoft Team. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Microsoft 365 nommé Senior Leadership Team :

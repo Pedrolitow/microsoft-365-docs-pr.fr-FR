@@ -1,6 +1,6 @@
 ---
 title: Nouveautés de Microsoft 365 Defender
-description: Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defender
+description: Répertorie les nouvelles fonctionnalités de Microsoft 365 Defender
 keywords: nouveautés de Microsoft 365 Defender, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24e8dba9bf933286b325983a091785d6502d46df
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 74656a9f79fba0e81afcb9db207c83162b2dfd81
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126805"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176572"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 
 ## <a name="august-2021"></a>Août 2021
 - (Aperçu) Microsoft Defender pour les Office 365 disponibles dans le recherche avancée
-<br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide de la recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
+<br>Les nouvelles colonnes des tables de courrier électronique peuvent fournir plus d’informations sur les menaces basées sur le courrier électronique pour des examens plus approfondis à l’aide d’un recherche avancée. Vous pouvez désormais inclure la colonne dans `AuthenticationDetails` [EmailEvents,](./advanced-hunting-emailevents-table.md) `FileSize` [dans EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)et dans les `ThreatTypes` tables `DetectionMethods` [EmailPostDeliveryEvents.](./advanced-hunting-emailpostdeliveryevents-table.md) 
 
 - (Aperçu) Graphique de l’incident <br>  Un nouvel **onglet Graph** sous  l’onglet Résumé d’un incident affiche l’étendue complète de l’attaque, la façon dont l’attaque s’est propagée sur votre réseau au fil du temps, où elle a commencé et jusqu’à quel point l’attaquant est passé.
 
@@ -67,7 +67,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - (Aperçu) [Afficher les rapports par balise de menace](threat-analytics.md#view-reports-per-threat-tags)<br> Les balises de menace vous aident à vous concentrer sur des catégories de menaces spécifiques et à examiner les rapports les plus pertinents.
 - (Aperçu) [API de diffusion en continu](../defender-endpoint/raw-data-export.md)<br> Microsoft 365 Defender prend en charge la diffusion en continu de tous les événements disponibles via la recherche avancée vers un hub d’événements et/ou un compte de stockage Azure.
 - (Aperçu) [Prendre des mesures dans le recherche avancée](advanced-hunting-take-action.md)<br> Contiennez rapidement des menaces ou adressez les ressources compromises que vous trouvez dans le [recherche avancée.](advanced-hunting-overview.md)
-- (Aperçu) [Référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> Obtenez des informations sur les tableaux de schéma de recherche avancés directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
+- (Aperçu) [Référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> Obtenez des informations sur les tableaux de schéma de recherche avancée directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
 - (Aperçu) [Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)<br> Obtenir des informations sur les appareils qui ont été affectés à une ou plusieurs adresses IP spécifiques à une plage de temps donnée.
     
 

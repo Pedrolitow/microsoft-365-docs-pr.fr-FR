@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 5785d21d-1abd-4571-a04a-8cc5a65ca9b5
 ROBOTS: NOINDEX
 description: Découvrez comment bloquer l’accès aux Microsoft 365 lorsqu’un employé quitte votre organisation.
-ms.openlocfilehash: d9099f375af4d3fb6ff7c4583ec2bb925e7f0c342711ade8b8f83c4676cdc4d1
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: f883ed1a11b52b58b1a329c261e724e1d31008d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53824196"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180476"
 ---
 # <a name="compare-ways-to-block-access"></a>Comparer les méthodes de blocage d’accès
 

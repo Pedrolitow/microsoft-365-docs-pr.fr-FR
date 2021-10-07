@@ -9,7 +9,7 @@ ms.date: 9/11/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment générer un rapport qui contient des informations sur toutes les actuellement en cours associées à des cas eDiscovery.
-ms.openlocfilehash: 5ccb74960a7b0d051b0c7754710f35e81b3edae0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 953b2aaa1b133d79b82f17e5f75603947cc5d6d7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181312"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200568"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Créer un rapport sur les conservations définies dans les cas eDiscovery 
 
@@ -37,7 +37,7 @@ Consultez la section [Plus](#more-information) d’informations pour obtenir une
 
 - Pour générer un rapport sur tous les cas eDiscovery de votre organisation, vous devez être administrateur eDiscovery dans votre organisation. Si vous êtes gestionnaire eDiscovery, le rapport inclut uniquement des informations sur les cas accessibles. Pour plus d’informations sur les autorisations eDiscovery, voir [Attribuer des autorisations eDiscovery.](assign-ediscovery-permissions.md)
 
-- Le script de cet article présente une gestion des erreurs minimale. L’objectif principal est de créer rapidement un rapport sur les cas de découverte électronique associés à votre organisation.
+- Le script de cet article présente une gestion minimale des erreurs. L’objectif principal est de créer rapidement un rapport sur les cas de découverte électronique associés à votre organisation.
 
 - Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
@@ -184,4 +184,4 @@ Le rapport de cas qui est créé lorsque vous exécutez le script dans cet artic
 
 - Heure et date de création de la attente et de la personne qui l’a créée.
 
-- L’heure et la date de la dernière date et la personne qui l’a modifiée.
+- Heure et date de la dernière changement de la date et de la personne qui l’a modifiée.

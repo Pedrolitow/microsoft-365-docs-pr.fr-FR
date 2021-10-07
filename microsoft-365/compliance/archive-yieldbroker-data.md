@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données Yieldbroker de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: f2e5ce5e5bb9ee80fd57b61db2825b0e0d83c55e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ca6ef83374cdc95f3f761f884aaa8c563e2d142a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177988"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207378"
 ---
 # <a name="set-up-a-connector-to-archive-yieldbroker-data"></a>Configurer un connecteur pour archiver les données Yieldbroker
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour les données Yieldbroker.](../media/YieldbrokerConnectorWorkflow.png)
 
-1. Votre organisation collabore avec yieldbroker pour configurer un site Yieldbroker.
+1. Votre organisation collabore avec yieldbroker pour configurer et configurer un site Yieldbroker.
 
 2. Toutes les 24 heures, les éléments Yieldbroker sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu au format de message électronique.
 
@@ -79,7 +79,7 @@ Après avoir créé le connecteur Yieldbroker, vous pouvez afficher l’état du
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and click **Data connectors** in the left nav.
 
-2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur **Yieldbroker** pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le **connecteur Yieldbroker** pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 

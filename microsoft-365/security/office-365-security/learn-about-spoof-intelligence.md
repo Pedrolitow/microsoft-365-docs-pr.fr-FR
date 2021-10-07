@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les informations sur l’usurpation d’Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b84671da05fcd3c476f19aa61a7325ac9df4c263
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8e8f7513e9d4d175807fdb99e39353ffc531dec5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203747"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207510"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’usurpation d’intelligence dans EOP
 
@@ -59,7 +59,7 @@ En permettant aux expéditeurs connus d’envoyer des messages usurpés à parti
 
 De même, vous pouvez examiner les expéditeurs usurpés qui ont été autorisés par la veille contre l’usurpation d’informations et bloquer manuellement ces expéditeurs à partir de la veille contre l’usurpation d’informations.
 
-Le reste de cet article explique comment utiliser la veille contre l’usurpation d’informations dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
+Le reste de cet article explique comment utiliser les informations sur l’intelligence contre l’usurpation d’adresse dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP Autonome PowerShell pour les organisations sans Exchange Online boîtes aux lettres).
 
 > [!NOTE]
 >
@@ -71,7 +71,7 @@ Le reste de cet article explique comment utiliser la veille contre l’usurpatio
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com/>. Pour aller directement à l’onglet **Usurpation** d’accès dans la page Liste des locataires **autoriser/bloquer,** utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> . Pour aller directement à la page Informations sur **l’usurpation d’intelligence,** utilisez <https://security.microsoft.com/spoofintelligence> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com/>. Pour aller directement à l’onglet **Usurpation** d’usurpation dans la page Liste des locataires **autoriser/bloquer,** utilisez <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem> . Pour aller directement à la page Informations sur **l’usurpation d’intelligence,** utilisez <https://security.microsoft.com/spoofintelligence> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -132,7 +132,7 @@ Pour filtrer les résultats, vous avez les options suivantes :
 - Cliquez sur **le bouton** Filtrer. Dans le **flyout Filter** qui s’affiche, vous pouvez filtrer les résultats en :
   - **Type d’usurpation**
   - **Action**
-- Utilisez la **zone de** recherche pour entrer une liste séparée par des virgules de valeurs de domaine usurpées ou des valeurs d’infrastructure d’envoi pour filtrer les résultats.
+- Utilisez la **zone de** recherche pour entrer une liste séparée par des virgules de valeurs de domaine usurpées ou pour envoyer des valeurs d’infrastructure pour filtrer les résultats.
 
 ### <a name="view-details-about-spoofed-messages"></a>Afficher les détails sur les messages usurpés
 
@@ -148,7 +148,7 @@ Lorsque vous sélectionnez une entrée dans la liste, un volant de détails s’
 
 ### <a name="about-allowed-spoofed-senders"></a>À propos des expéditeurs usurpés autorisés
 
-Un expéditeur usurpé autorisé dans les informations sur l’usurpation d’informations ou un  expéditeur usurpé bloqué que vous avez modifié manuellement pour  autoriser l’usurpation d’adresse autorise uniquement les messages provenant de la combinaison du domaine usurpé et de l’infrastructure d’envoi. Il n’autorise pas le courrier électronique provenant du domaine usurpé d’aucune source, ni le courrier provenant de l’infrastructure d’envoi pour n’importe quel domaine.
+Un expéditeur usurpé autorisé dans l’aperçu de l’usurpation d’intelligence ou un  expéditeur usurpé bloqué que vous avez modifié manuellement pour  autoriser l’usurpation d’adresse autorise uniquement les messages provenant de la combinaison du domaine usurpé et de l’infrastructure d’envoi. Il n’autorise pas le courrier électronique provenant du domaine usurpé d’aucune source, ni le courrier provenant de l’infrastructure d’envoi pour n’importe quel domaine.
 
 Par exemple, l’expéditeur usurpé suivant est autorisé à usurper :
 
@@ -177,6 +177,6 @@ Soyez prudent sur l’usurpation d’informations et la protection contre le ham
 
 - Examinez votre configuration SPF (Sender Policy Framework). Pour consulter une brève présentation de SPF et le configurer rapidement, voir [Configurer SPF dans Microsoft 365 pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour consulter des informations plus approfondies sur l’utilisation de SPF par Office 365, la résolution des problèmes et les déploiements non standard tels que les déploiements hybrides, voir Comment Office 365 utilise SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité.
 
-- Examinez votre configuration DKIM (DomainKeys Identified Mail). Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les personnes malveillantes d’envoyer des messages qui semblent provenant de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Pour plus d’informations, [voir Utiliser DKIM pour valider](use-dkim-to-validate-outbound-email.md)les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365 .
+- Examinez votre configuration DKIM (DomainKeys Identified Mail). Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les attaquants d’envoyer des messages qui semblent provenant de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Pour plus d’informations, [voir Utiliser DKIM pour valider](use-dkim-to-validate-outbound-email.md)les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365 .
 
 - Examinez votre configuration DMARC (Domain-based Message Authentication, Reporting, and Conformance). L’implémentation de DMARC avec SPF et DKIM fournit une protection supplémentaire contre l’usurpation et les courriers de hameçonnage. DMARC permet aux systèmes de messagerie de réception de déterminer ce qu’ils doivent faire des messages envoyés à partir de votre domaine qui sont rejetés par les contrôles de SPF ou de DKIM. Pour plus d’informations, [voir Utiliser DMARC pour valider le courrier électronique Office 365](use-dmarc-to-validate-email.md).

@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options de conformité pour Microsoft 365 groupes, Teams et SharePoint collaboration.
-ms.openlocfilehash: 93bf2830d29f21f2239a17b9c2e381c46e85eea1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: acc32d6cff18e9535a29eeec773a5034480a3595
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179036"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207414"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Options de conformité pour Microsoft 365 groupes, Teams et la collaboration SharePoint de conformité
 
@@ -36,7 +36,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles de conform
 ||Conserver la conversation et les messages|[En savoir plus sur les stratégies de rétention dans Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Classification des informations|||
 ||Classifier les groupes et les équipes|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)|
+||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)|
 ||Chiffrer le contenu sensible|[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](../compliance/encryption-sensitivity-labels.md)|
 |Protection des informations|||
 ||Empêcher la perte d’informations sensibles|[En savoir plus sur la prévention des pertes de données](../compliance/dlp-learn-about-dlp.md)|
@@ -49,13 +49,13 @@ Le tableau suivant fournit une référence rapide pour les contrôles de conform
 
 ## <a name="information-retention"></a>Rétention des informations
 
-Les stratégies de rétention sont disponibles pour conserver ou supprimer des éléments utilisés pour la collaboration dans des groupes et des équipes, y compris des fichiers, des messages et du courrier. Les stratégies peuvent être définies pour conserver et supprimer, conserver uniquement ou supprimer uniquement. Les informations couvertes par une stratégie de rétention sont protégées en cas d’expiration ou de suppression du groupe ou de l’équipe.
+Les stratégies de rétention sont disponibles pour conserver ou supprimer des éléments utilisés pour la collaboration dans des groupes et des équipes, notamment des fichiers, des messages et des messages électroniques. Les stratégies peuvent être définies pour conserver et supprimer, conserver uniquement ou supprimer uniquement. Les informations couvertes par une stratégie de rétention sont protégées en cas d’expiration ou de suppression du groupe ou de l’équipe.
 
 La configuration d’une stratégie de rétention pour Microsoft 365 groupes couvre la boîte aux lettres de groupe et le site et les fichiers SharePoint associés.
 
 - [En savoir plus sur les stratégies de rétention dans SharePoint et OneDrive](../compliance/retention-policies-sharepoint.md)
 
-Les stratégies de rétention Teams conserver les messages de conversation et de canal. Bien que les messages de conversation et de canal soient stockés dans Exchange boîtes aux lettres, ils ne sont pas affectés Exchange stratégies de rétention. Vous devez définir vos stratégies de rétention pour qu’Teams conversations et Teams messages du canal de rétention. 
+Les stratégies de rétention Teams conserver les messages de conversation et de canal. Bien que les messages de conversation et de canal soient stockés dans Exchange boîtes aux lettres, ils ne sont pas affectés Exchange stratégies de rétention. Vous devez définir vos stratégies de rétention à appliquer Teams conversations et Teams messages de canal. 
 
 Les conversations utilisateur sont conservées indéfiniment, même si un compte d’utilisateur est supprimé. Si vous ne souhaitez pas conserver ces données indéfiniment, envisagez d’utiliser une stratégie de rétention pour supprimer les conversations utilisateur après une période spécifiée ou incluez cette suppression dans votre processus de suppression d’utilisateur.
 
@@ -79,9 +79,9 @@ Vous pouvez utiliser des étiquettes de confidentialité pour régir l’accès 
 
 Vous pouvez configurer des Microsoft 365 pour appliquer automatiquement des étiquettes de sensibilité aux fichiers et aux e-mails en fonction des critères que vous spécifiez, y compris la détection de types d’informations sensibles ou la correspondance de modèles avec des classifieurs entraidables.
 
-- [Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)
+- [Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)
 
-Vous pouvez utiliser des étiquettes de niveau de sensibilité pour chiffrer des fichiers, ce qui permet uniquement aux personnes autorisées de les déchiffrer et de les lire.
+Vous pouvez utiliser des étiquettes de niveau de sensibilité pour chiffrer des fichiers, en permettant uniquement à ceux qui ont des autorisations de les déchiffrer et de les lire.
 
 - [Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](../compliance/encryption-sensitivity-labels.md)
 
@@ -118,7 +118,7 @@ Avec les obstacles à l’information, vous pouvez segmenter vos données et vos
 
 ## <a name="data-residency"></a>Résidence de données
 
-Avec Microsoft 365 multigéogé, vous pouvez mettre en service et stocker des données au repos dans les emplacements géographiques que vous avez choisis pour répondre aux exigences de résidence des données. Dans un environnement Multi-Géo, votre client Microsoft 365 se compose d’un emplacement central (où votre abonnement Microsoft 365 a été initialement provisioné) et d’un ou plusieurs emplacements satellites où vous pouvez stocker des données.
+Avec Microsoft 365 Multi-Géo, vous pouvez mettre en service et stocker des données au repos dans les emplacements géographiques que vous avez choisis pour répondre aux exigences de résidence des données. Dans un environnement Multi-Géo, votre client Microsoft 365 se compose d’un emplacement central (où votre abonnement Microsoft 365 a été initialement provisioné) et d’un ou plusieurs emplacements satellites où vous pouvez stocker des données.
 
 - [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
 

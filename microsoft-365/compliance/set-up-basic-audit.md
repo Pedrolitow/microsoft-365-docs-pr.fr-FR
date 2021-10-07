@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-audit
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer l’audit de base afin de pouvoir commencer à rechercher les activités d’audit effectuées par les utilisateurs et les administrateurs de votre organisation.
-ms.openlocfilehash: caa87a34234597e36949a1a2c47b695a02b5c2b7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9190383fdfab8e4207186ca93895ec9ce23ec6d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200316"
 ---
 # <a name="set-up-basic-audit-in-microsoft-365"></a>Configurer l’audit de base dans Microsoft 365
 
@@ -76,6 +76,6 @@ Vous êtes maintenant prêt à effectuer une recherche dans le journal d’audit
 
 4. Cliquez **sur Rechercher** pour exécuter la recherche.
 
-Une nouvelle page s’affiche et indique que la recherche du journal d’audit est en cours d’exécution. Lorsque la recherche est terminée, les enregistrements d’audit sont affichés sur la page. Cliquez sur un enregistrement pour afficher une page volante avec des propriétés détaillées.
+Une nouvelle page s’affiche et indique que la recherche du journal d’audit est en cours d’exécution. Une fois la recherche terminée, les enregistrements d’audit sont affichés sur la page. Cliquez sur un enregistrement pour afficher une page volante avec des propriétés détaillées.
 
 Pour obtenir des instructions plus détaillées, consultez la recherche dans le journal [d’audit dans le centre de conformité.](search-the-audit-log-in-security-and-compliance.md)

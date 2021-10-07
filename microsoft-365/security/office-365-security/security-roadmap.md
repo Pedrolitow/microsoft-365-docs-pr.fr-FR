@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 08/20/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Recommandations principales de l’équipe de cybersécurité de Microsoft pour implémenter des fonctionnalités de sécurité pour protéger Microsoft 365 environnement.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a2e982f1da196185d466dfddfbbc61e98100070
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 7c3128482e9c8974ebb8938639ff3e27d400a418
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042793"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176402"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Feuille de route de sécurité : principales priorités pour les 30 premiers jours, 90 jours et au-delà
 
@@ -49,8 +49,8 @@ Ces recommandations de feuille de route sont organisées en trois phases dans un
 
 |Période|Résultats|
 |---|---|
-|30 jours|Configuration rapide : <ul><li>Protections d’administration de base.</li><li>Journalisation et analyse.</li><li>Protections d’identité de base.</li></ul> <p> Configuration du client. <p> Préparez les parties prenantes.|
-|90 jours|Protections avancées : <ul><li>Comptes d’administrateur.</li><li>Les données et les comptes d’utilisateur.</li></ul> <p> Visibilité de la conformité, des menaces et des besoins des utilisateurs. <p> Adaptez et implémentez des stratégies et des protections par défaut.|
+|30 jours|Configuration rapide : <ul><li>Protections d’administration de base.</li><li>Journalisation et analyse.</li><li>Protections d’identité de base.</li></ul> <p> Configuration du client. <p> Préparez les parties prenantes.|
+|90 jours|Protections avancées : <ul><li>Comptes d’administrateur.</li><li>Les données et les comptes d’utilisateur.</li></ul> <p> Visibilité de la conformité, des menaces et des besoins des utilisateurs. <p> Adaptez et implémentez les stratégies et protections par défaut.|
 |Au-delà|Ajuster et affiner les stratégies et les contrôles clés. <p> Étend les protections aux dépendances sur site. <p> Intégration aux processus d’entreprise et de sécurité (juridique, menace interne, etc.).|
 |
 
@@ -66,7 +66,7 @@ Ces tâches peuvent être accomplies rapidement et ont un faible impact sur les 
 |Gestion de la sécurité|<ul><li>Vérifiez le niveau de sécurisation et prenez note de votre score actuel ( <https://security.microsoft.com/securescore> ).</li><li>Activer la journalisation d’audit Office 365. Voir [Rechercher dans le journal d’audit.](../../compliance/search-the-audit-log-in-security-and-compliance.md)</li><li>[Configurez Microsoft 365 pour une sécurité accrue.](tenant-wide-setup-for-increased-security.md)</li><li>Examinez régulièrement les tableaux de bord et les rapports dans Microsoft 365 Defender portail et Sécurité des applications cloud.</li></ul>|
 |Protection contre les menaces|[Connecter Microsoft 365 à Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) commencer à surveiller les comportements anormaux à l’aide des stratégies de détection des menaces par défaut. La construction d’une base de référence pour la détection des anomalies prend sept jours. <p>  Implémenter la protection des comptes d’administrateur :<ul><li>Utilisez des comptes d’administrateur dédiés pour l’activité de l’administrateur.</li><li>Appliquer l’authentification multifacteur (MFA) pour les comptes d’administrateur.</li><li>Utilisez un appareil [de Windows hautement sécurisé pour l’activité](/windows-hardware/design/device-experiences/oem-highly-secure) de l’administrateur.</li></ul>|
 |Gestion des identités et des accès|<ul><li>[Activez Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection-enable).</li><li>Pour les environnements d’identité fédérée, appliquez la sécurité des comptes (longueur du mot de passe, âge, complexité, etc.).</li></ul>|
-|Protection des informations|Examinez les exemples de recommandations en matière de protection des informations. La protection des informations nécessite une coordination au sein de votre organisation. Commencez à utiliser ces ressources :<ul><li>[Protection des informations Office 365 pour le RGPD](/compliance/regulatory/gdpr)</li><li>[Configurer Teams avec trois niveaux](../../solutions/configure-teams-three-tiers-protection.md) de protection (notamment le partage, la classification, la protection contre la perte de données et Azure Information Protection)</li></ul>|
+|Protection des informations|Examinez les exemples de recommandations en matière de protection des informations. La protection des informations nécessite une coordination au sein de votre organisation. Commencez à utiliser ces ressources :<ul><li>[Protection des informations Office 365 pour le RGPD](/compliance/regulatory/gdpr)</li><li>[Configurer Teams avec trois niveaux de protection](../../solutions/configure-teams-three-tiers-protection.md) (notamment le partage, la classification, la protection contre la perte de données et Azure Information Protection)</li></ul>|
 |
 
 ## <a name="90-days--enhanced-protections"></a>90 jours : protections améliorées

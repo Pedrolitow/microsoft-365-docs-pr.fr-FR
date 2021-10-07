@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Découvrez les limites en vigueur pour la recherche de contenu et les fonctionnalités eDiscovery principales dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: db0f24d66fd7dc23a82a5ededfcfbc4d9edabad7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 207e9a71a1d178f841bf9a7561c279cf48dbed6a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179884"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193242"
 ---
 # <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery
 
@@ -43,20 +43,20 @@ Le tableau suivant répertorie les limites de recherche lors de l’utilisation 
 |Nombre maximal de boîtes aux lettres ou de sites dans le cas d’une recherche unique|Aucune limite <sup>1</sup>|
 |Nombre maximal de recherches qui peuvent s’exécuter en même temps dans votre organisation.|30|
 |Nombre maximal de recherches à l’échelle de l’organisation qui peuvent être exécutés en même temps.|3|
-|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. Cette limite est très probablement atteint lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **Get-ComplianceSearch \| Start-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell.|10 |
+|Nombre maximal de recherches qu’un seul utilisateur peut démarrer en même temps. Cette limite est très probablement atteint lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **Get-ComplianceSearch \| Start-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell.|10|
 |Nombre maximal d’éléments par boîte aux lettres d’utilisateur qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche de contenu.|100|
 |Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur pouvant éventuellement être affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche. Les éléments les plus récents sont affichés.|1 000 <sup>2</sup>|
-|Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S’il existe plus de 1 000 boîtes aux lettres contenant du contenu qui correspond à la requête de recherche, au maximum, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats de recherche seront disponibles en aperçu.|1,000|
+|Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S’il existe plus de 1 000 boîtes aux lettres contenant du contenu qui correspond à la requête de recherche, au maximum, seules les 1 000 boîtes aux lettres ayant le plus grand nombre de résultats de recherche seront disponibles en aperçu.|1 000|
 |Nombre maximal d’éléments trouvés dans SharePoint sites OneDrive Entreprise qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche. Les éléments les plus récents sont affichés.|200|
 |Nombre maximal de sites (en SharePoint et OneDrive Entreprise) qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 200 sites au total contiennent du contenu qui correspond à la requête de recherche, seuls les 200 premiers sites ayant le plus grand nombre de résultats de recherche seront disponibles en prévisualisation.|200|
 |Nombre maximal d’éléments par boîte aux lettres de dossiers publics qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche de contenu.|100|
 |Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres de dossiers publics qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de recherche de contenu.|200|
 |Nombre maximal de boîtes aux lettres de dossiers publics qui peuvent être prévisualiser pour les résultats de recherche. Si plus de 500 boîtes aux lettres de dossiers publics contiennent du contenu qui correspond à la requête de recherche, seules les 500 boîtes aux lettres de dossiers publics les plus populaires seront disponibles en aperçu.|500|
-|Nombre maximal de caractères pour la requête de recherche (y compris les opérateurs et les conditions) d’une recherche. <p> **Remarque :** Cette limite prend effet une fois la requête étendue et inclut les caractères de la requête de mot clé, les filtres d’autorisations de recherche appliqués à l’utilisateur et les URL de tous les emplacements du site. Cela signifie que la requête sera étendue par rapport à chacun des mots clés. Par exemple, si une requête de recherche a 15 mots clés et des paramètres et conditions supplémentaires, la requête est étendue 15 fois, chacune avec les autres paramètres et conditions dans la requête. Ainsi, même si le nombre de caractères dans la requête de recherche peut être inférieur à la limite, c’est la requête étendue qui peut contribuer au dépassement de cette limite.|**Boîtes aux lettres :** 10 000. <p> **Sites :** 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche de 20 sites au plus. <sup>3</sup>|
+|Nombre maximal de caractères pour la requête de recherche (y compris les opérateurs et les conditions) d’une recherche. <p> **Remarque :** Cette limite prend effet une fois la requête étendue et inclut les caractères de la requête par mot clé, les filtres d’autorisations de recherche appliqués à l’utilisateur et les URL de tous les emplacements du site. Cela signifie que la requête sera étendue par rapport à chacun des mots clés. Par exemple, si une requête de recherche a 15 mots clés et des paramètres et conditions supplémentaires, la requête est étendue 15 fois, chacune avec les autres paramètres et conditions dans la requête. Ainsi, même si le nombre de caractères dans la requête de recherche peut être inférieur à la limite, c’est la requête étendue qui peut contribuer au dépassement de cette limite.|**Boîtes aux lettres :** 10 000. <p> **Sites :** 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche de 20 sites au plus. <sup>3</sup>|
 |Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte dans une requête de recherche ou lors de l’utilisation d’un caractère générique de préfixe et de l’opérateur **booléen NEAR.**|10 000 <sup>4</sup>|
 |Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, `time*` , `one*` ou `set*` .|3|
 |Nombre maximal de boîtes aux lettres dans une recherche dans qui vous pouvez supprimer des éléments en faisant une action « rechercher et purger » (à l’aide de la commande **New-ComplianceSearchAction -Purge).** Si le nombre de boîtes aux lettres source de la recherche pour une action de purge est supérieur à cette limite, l’action de purge échouera. Pour plus d’informations sur la recherche et la purge, voir Rechercher et supprimer [des messages électroniques dans votre organisation.](search-for-and-delete-messages-in-your-organization.md)|50 000|
-|Nombre maximal d’emplacements d’une recherche à partir des éléments à partir de qui vous pouvez exporter des éléments. Si la recherche que vous exportez a plus d’emplacements que cette limite, l’exportation échoue. Pour plus d’informations, voir [Exporter les résultats de recherche de contenu.](export-search-results.md)|100 000|
+|Nombre maximal d’emplacements d’une recherche à partir des emplacements à partir de qui vous pouvez exporter des éléments. Si la recherche que vous exportez a plus d’emplacements que cette limite, l’exportation échoue. Pour plus d’informations, voir [Exporter les résultats de recherche de contenu.](export-search-results.md)|100 000|
 |||
 
 > [!NOTE]
@@ -66,7 +66,7 @@ Le tableau suivant répertorie les limites de recherche lors de l’utilisation 
 >
 > <sup>3</sup> Lors de la recherche SharePoint et OneDrive Entreprise emplacements, les caractères dans les URL des sites recherchés sont comptabilisés dans cette limite.
 >
-> <sup>4 Pour</sup> les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se trouve dans un document, mais pas là où il se trouve dans le document. Pour faire une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position des mots dans l’expression dans le document. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expressions. Dans ce cas, nous développeons la requête en interne avec tous les mots possibles que le préfixe développe ; par exemple, `"time*"` peut s’étendre à `"time OR timer OR times OR timex OR timeboxed OR ..."` . Le nombre maximal de variantes que le mot peut développer, et non le nombre de documents correspondant à la requête, est de 10 000. Il n’existe aucune limite supérieure pour les termes autres que des expressions.
+> <sup>4 Pour</sup> les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela nous indique qu’un mot se trouve dans un document, mais pas là où il se trouve dans le document. Pour faire une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position des mots dans l’expression dans le document. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expressions. Dans ce cas, nous étendons la requête en interne avec tous les mots possibles que le préfixe développe ; par exemple, `"time*"` peut s’étendre à `"time OR timer OR times OR timex OR timeboxed OR ..."` . Le nombre maximal de variantes que le mot peut développer, et non le nombre de documents correspondant à la requête, est de 10 000. Il n’existe aucune limite supérieure pour les termes autres que des expressions.
 
 ## <a name="search-times"></a>Temps de recherche
 
@@ -98,7 +98,7 @@ Le tableau suivant répertorie les limites lors de l’exportation des résultat
 |---|---|
 |Quantité maximale de données exportables à partir d’une seule recherche  <p> **Remarque :** Si les résultats de la recherche sont supérieurs à 2 To, envisagez d’utiliser des plages de dates ou d’autres types de filtres pour réduire la taille totale des résultats de la recherche.|2 To|
 |Maximum qu’une organisation peut exporter en une seule journée <p> **Remarque :** Cette limite est réinitialisée quotidiennement à 00:00 UTC|2 To|
-|Nombre maximal d’exportations simultanées qui peuvent être exécuter en même temps au sein de votre organisation <p> **Remarque :** L’exécution **d’une exportation** de rapport uniquement est comptabilisée par rapport au nombre total d’exportations simultanées pour votre organisation. Si trois utilisateurs effectuent 3 exportations chacune, une seule autre exportation peut être effectuée. Qu’il s’agit d’exporter un rapport ou des résultats de recherche, aucune autre exportation ne peut être effectuée tant qu’une exportation n’est pas terminée.|10 |
+|Nombre maximal d’exportations simultanées qui peuvent être exécuter en même temps au sein de votre organisation <p> **Remarque :** L’exécution **d’une exportation** de rapport uniquement est comptabilisée par rapport au nombre total d’exportations simultanées pour votre organisation. Si trois utilisateurs effectuent 3 exportations chacune, une seule autre exportation peut être effectuée. Qu’il s’agit d’exporter un rapport ou des résultats de recherche, aucune autre exportation ne peut être effectuée tant qu’une exportation n’est pas terminée.|10|
 |Nombre maximal d’exportations qu’un seul utilisateur peut exécuter à tout moment|3|
 |Nombre maximal de boîtes aux lettres pour les résultats de recherche qui peuvent être téléchargées à l’aide de l’outil d’exportation eDiscovery|100 000|
 |Taille maximale du fichier PST qui peut être exporté <p> **Remarque :** Si les résultats de recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche pour la boîte aux lettres sont exportés dans deux (ou plusieurs) fichiers PST distincts. Si vous choisissez d’exporter tous les résultats de la recherche dans un seul fichier PST, le fichier PST sera déposé dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Voir [Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery.](change-the-size-of-pst-files-when-exporting-results.md) Les résultats de la recherche provenant d’une boîte aux lettres spécifique ne sont pas répartis entre plusieurs fichiers PST, sauf si le contenu d’une seule boîte aux lettres est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST contenant tous les messages d’un même dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés dans l’ordre chronologique, de sorte qu’ils seront ajoutés dans des fichiers PST supplémentaires en fonction de la date d’envoi.|10 Go|

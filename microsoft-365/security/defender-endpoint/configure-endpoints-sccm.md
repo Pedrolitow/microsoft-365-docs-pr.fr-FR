@@ -8,25 +8,25 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: ae560e7072884d19f224df1af15e90d507826812
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: ff1863a24e352823fce6d1c9e57f228528cda016
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124708"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176882"
 ---
 # <a name="onboard-the-windows-devices-using-configuration-manager"></a>Intégrer les appareils Windows à l’aide de Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -65,7 +65,7 @@ Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001
     1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.
     2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     3. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    4. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
+    4. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
 
 2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -109,7 +109,7 @@ Où Type de clé est un D-WORD. Les valeurs possibles sont les suivantes :
 
 La valeur par défaut au cas où la clé de Registre n’existe pas est 1.
 
-Pour plus d’informations sur System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Pour plus d’informations System Center Configuration Manager conformité, voir Introduction aux paramètres de conformité dans [System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="other-recommended-configuration-settings"></a>Autres paramètres de configuration recommandés
 
@@ -164,17 +164,17 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Appareils de tableau de bord à l’Microsoft Endpoint Manager branche actuelle
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Appareils deboard à l’aide Microsoft Endpoint Manager branche actuelle
 
 Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
 
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
     1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \>   
     1. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
     1. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    1. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
+    1. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
 
 2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 

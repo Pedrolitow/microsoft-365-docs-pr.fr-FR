@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-lsaldanha
 author: lovina-saldanha
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aff42882b6727537cea194d16b9132e10461aedf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 954c5255ab8d0aee775b51e05e46f951c0f6c2ca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163608"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207582"
 ---
 # <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Activer et piloter Microsoft Defender pour Office 365
 
@@ -43,7 +43,7 @@ Le tableau suivant décrit les étapes de l’illustration.
 
 | |Étape  |Description  |
 |---------|---------|---------|
-|1|[Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-office-365-architecture.md)    | Comprenez l’architecture de Defender pour Office et assurez-vous que votre environnement Exchange Online répond aux conditions préalables de l’architecture.       |
+|1|[Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-office-365-architecture.md)    | Comprenez l’architecture de Defender Office et assurez-vous que votre environnement Exchange Online répond aux conditions préalables de l’architecture.       |
 |2|[Activer l’environnement d’évaluation](eval-defender-office-365-enable-eval.md)     |   Suivez les étapes de configuration de l’environnement d’évaluation.      |
 |3|[Configurer le pilote ](eval-defender-office-365-pilot.md)    |    Créez des groupes pilotes, configurez la protection et familiarisez-vous avec les fonctionnalités clés et les tableaux de bord.     |
 ||||

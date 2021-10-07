@@ -10,21 +10,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5bf6cad061818b0716f8b4b363c2cf32ce3631ea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7a8d4f7652e6d4670c94c5016b2c3f8f05d406e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206539"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193482"
 ---
 # <a name="payment-information-for-liechtenstein"></a>Informations de paiement pour le Liechtenstein
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-N’hésitez pas à payer en FONCTION DU MONTANT UNIQUEMENT et à référencer les numéro(s) de facture lors de votre paiement.
+N’hésitez pas à payer en FONCTION DU MONTANT UNIQUEMENT et à référencer les numéro(s) de facture(s) sur votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 

@@ -6,18 +6,18 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Configuration du Scheduler pour Microsoft 365.
-ms.openlocfilehash: bebb2befa6a24f8913b70aa77ca66ef7e664e9d2
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 3315c362a6e6ae1eb4fa9bf54d388a89dd667136
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042565"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208036"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuration du Planificateur pour Microsoft 365
 
-Les administrateurs clients doivent configurer une boîte aux lettres d’assistant de planification et obtenir des licences de scheduler pour les organisateurs de réunions afin d’activer le Scheduler pour Microsoft 365 service. 
+Les administrateurs clients doivent configurer une boîte aux lettres de l’Assistant Planification et obtenir des licences de scheduler pour les organisateurs de réunions afin d’activer le Scheduler pour Microsoft 365 service. 
 
 ## <a name="licensing"></a>Licences
 
@@ -26,17 +26,17 @@ En savoir plus : [Scheduler for Microsoft 365 licensing](https://www.microsoft.c
 > [!Note]
 > Les participants à la réunion n’ont pas besoin d’une licence scheduler Microsoft 365 licence. <br>La boîte aux lettres de l’Assistant Scheduler ne nécessite pas de licence Microsoft 365 ou scheduler.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 | Conditions préalables | Description |
 |-------------------|-------------|
-|Boîte aux lettres de l’Assistant Planification pour le client |Boîte aux Exchange ressource de type ressource de type équipement qui agit comme la boîte aux lettres de l’Assistant Planification pour que votre client envoie et reçoit des messages électroniques vers et depuis Cortana. Tous les e-mails envoyés Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention. La boîte aux lettres de l’Assistant Planification est généralement nommée « Cortana » ou « Cortana Scheduler », car tous les messages électroniques de l’Assistant seront signés Cortana.<ul><li>Créer un type d’Exchange boîte aux lettres de ressources</li><li>Nommez le nom complet de la boîte aux lettres et l’adresse SMTP `Cortana <cortana@yourdomain.com>` principale ou `Cortana Scheduler <cortana.scheduler@yourdomain.com>` .</li></ul>**Remarque :** La boîte aux lettres de l’Assistant Scheduler ne nécessite pas de licence Microsoft 365 ou scheduler.|
+|Boîte aux lettres de l’Assistant Planification pour le client |Boîte aux Exchange ressource de type ressource de type équipement qui agit comme la boîte aux lettres de l’Assistant Planification pour que votre client envoie et reçoit des messages électroniques vers et depuis Cortana. Tous les messages électroniques envoyés Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention. La boîte aux lettres de l’Assistant Planification est généralement nommée « Cortana » ou « Cortana Scheduler », car tous les messages électroniques de l’Assistant seront signés Cortana.<ul><li>Créer un type d’Exchange boîte aux lettres de ressources</li><li>Nommez le nom complet de la boîte aux lettres et l’adresse SMTP `Cortana <cortana@yourdomain.com>` principale ou `Cortana Scheduler <cortana.scheduler@yourdomain.com>` .</li></ul>**Remarque :** La boîte aux lettres de l’Assistant Scheduler ne nécessite pas de licence Microsoft 365 ou scheduler.|
 |Boîte aux lettres Exchange Online |Les organisateurs de réunion doivent avoir une boîte Exchange Online et un calendrier en général dans le cadre de leur licence Microsoft 365 réunion. En outre, les organisateurs de réunion doivent avoir une licence De planification. La licence Scheduler permet à l’Assistant Scheduler d’utiliser la boîte aux lettres et le calendrier de l’organisateur de la réunion pour planifier des réunions à leur place.<br/><br/> Voir Scheduler for Microsoft 365 for licensing and pricing information.  <br/><br/>**Remarque :** Les participants à la réunion n’ont pas besoin d’une licence scheduler Microsoft 365 licence. Les participants à la réunion peuvent être internes ou externes au client. Les participants à la réunion ont uniquement besoin d’accéder à une adresse de messagerie.|
 
 
 ## <a name="setting-up-the-scheduler-assistant-mailbox"></a>Configuration de la boîte aux lettres de l’Assistant Planification
 
-La boîte aux lettres de l’Assistant Exchange de planification est une boîte aux lettres de type équipement qui ne nécessite aucune licence Microsoft 365 ou scheduler supplémentaire. Le nom d’affichage et l’adresse SMTP principale de la boîte aux lettres doivent contenir Cortana, car tous les e-mails de l’Assistant Planification seront signés Cortana (c’est-à-dire, `Cortana <cortana@yourdomain.com>` ou `Cortana Scheduler <cortana.scheduler@yourdomain.com>` ). Une fois la boîte aux lettres de l’Assistant Planification créée, vous devez désigner la boîte aux lettres comme boîte aux lettres de l’Assistant Planification. Une fois que vous avez désigné la boîte aux lettres de l’Assistant Planification, Cortana sera disponible pour planifier des réunions pour le compte de vos utilisateurs.
+La boîte aux lettres de l’Assistant Exchange de planification est une boîte aux lettres de type équipement qui ne nécessite aucune licence Microsoft 365 ou scheduler supplémentaire. Le nom d’affichage et l’adresse SMTP principale de la boîte aux lettres doivent contenir Cortana, car tous les messages électroniques provenant de l’Assistant Planification seront signés Cortana (c’est-à-dire, `Cortana <cortana@yourdomain.com>` ou `Cortana Scheduler <cortana.scheduler@yourdomain.com>` ). Une fois la boîte aux lettres de l’Assistant Planification créée, vous devez la désigner comme boîte aux lettres de l’Assistant Planification. Une fois que vous avez désigné la boîte aux lettres de l’Assistant Planification, Cortana sera disponible pour planifier des réunions pour le compte de vos utilisateurs.
 
 - Utilisez le Centre d'administration Microsoft 365 pour créer une boîte aux lettres utilisateur. Une stratégie de rétention de 30 jours est recommandée. 
 - Utilisez le nom Cortana dans l’adresse SMTP principale de votre boîte aux lettres. Les noms tels `Cortana@yourdomain.com` que , ou sont `CortanaScheduler@contoso.com` `Cortana.Scheduler@yourdomain.com` recommandés.
@@ -64,7 +64,7 @@ New-Mailbox -Name Cortana -Organization $domain -DisplayName "Cortana Scheduler"
 Set-CalendarProcessing Cortana@$domain -DeleteNonCalendarItems $false 
 ```
     
-#### <a name="designate-the-scheduler-assistant-mailbox"></a>Désigner la boîte aux lettres de l’Assistant Planification
+#### <a name="designate-the-scheduler-assistant-mailbox"></a>Désigner la boîte aux lettres de l’Assistant De planification
 
 ```PowerShell
 Set-mailbox cortana@$domain -SchedulerAssistant:$true

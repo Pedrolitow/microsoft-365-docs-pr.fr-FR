@@ -7,9 +7,10 @@ author: kwekuako
 manager: scotv
 audience: Admin
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
+- Adm_TOC
 search.appverid:
 - BCS160
 - MET150
@@ -23,14 +24,14 @@ ms.custom:
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau Microsoft Office vers la dernière Office client pour les utilisateurs de votre organisation.
 ms.topic: article
-ms.openlocfilehash: 7e4b8ce182ff2eefea514fc8621e23e308658e47
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0dad3c22e9011dd0453f719178d94ef67138220c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776247"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200952"
 ---
-# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels vers le dernier client Office client
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau Microsoft 365 pour les utilisateurs professionnels vers le dernier client Office client
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 atteint la fin de la prise en charge
 
@@ -99,7 +100,7 @@ Passez à un abonnement qui inclut Office. Voir [Basculer vers une autre Microso
 
 ## <a name="step-3---uninstall-office"></a>Étape 3 : Désinstaller Office
 
-Avant d’installer la dernière version de Office, nous vous recommandons de désinstaller toutes les anciennes versions de Office. Toutefois, si vous changez d’avis sur la mise à niveau des Office, notez les instances suivantes où vous ne pourrez pas réinstaller Office après l’avoir désinstallée.
+Avant d’installer la dernière version de Office, nous vous recommandons de désinstaller toutes les anciennes versions de Office. Toutefois, si vous changez d’avis concernant la mise à niveau des Office, notez les instances suivantes où vous ne pourrez pas réinstaller Office après l’avoir désinstallée.
   
 Si vous avez des produits tiers, contactez le fabricant pour savoir s’il existe une mise à jour qui fonctionne avec la dernière version de Office.
 

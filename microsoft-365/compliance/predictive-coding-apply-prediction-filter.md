@@ -9,17 +9,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Utilisez un filtre de score de prédiction pour afficher les éléments qu’un modèle de codage prédictif est prévisible comme pertinent ou non pertinent.
-ms.openlocfilehash: 34a9b4da55443cae6c2334952f60b94953b0d9d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 04d0881e36c28a70df58a1aa7b054c641dfeeb2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177908"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200460"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Appliquer un filtre de score de prédiction à un jeu à réviser (aperçu)
 

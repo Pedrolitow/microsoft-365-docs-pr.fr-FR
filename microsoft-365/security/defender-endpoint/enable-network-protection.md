@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -15,18 +15,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7c27e1264de8673e1cc366df29ecd57e0cf8431a
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 130f9a3fdfcc7c5ace75c4ebe7bd19d26c7bccdd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099692"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207916"
 ---
 # <a name="turn-on-network-protection"></a>Activer la protection du réseau
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -55,7 +55,7 @@ Vérifiez si la protection réseau a été activée sur un appareil local à l�
 
     :::image type="content" alt-text="Clé de Registre protection du réseau." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
-## <a name="enable-network-protection"></a>Activer la protection réseau
+## <a name="enable-network-protection"></a>Activer la protection du réseau
 
 Activez la protection réseau à l’aide de l’une des méthodes ci-après :
 
@@ -89,7 +89,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anciennement Intune)
 
-1. Connectez-vous Microsoft Endpoint Manager centre d’administration ( https://endpoint.microsoft.com) .
+1. Connectez-vous au Microsoft Endpoint Manager’administration centrale ( https://endpoint.microsoft.com) .
 
 2. Go to **Devices**  >  **Configuration profiles** Create  >  **profile**.
 
@@ -126,7 +126,7 @@ Utilisez la procédure suivante pour activer la protection réseau sur des ordin
     - **Mode audit** : si un utilisateur visite une adresse IP ou un domaine malveillant, un événement est enregistré dans le journal Windows’événements malveillants. Toutefois, l’utilisateur ne sera pas empêché de visiter l’adresse.
 
    > [!IMPORTANT]
-   > Pour activer entièrement la protection réseau,  vous devez définir  l’option stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
+   > Pour activer entièrement la protection réseau,  vous devez définir  l’option de stratégie de groupe sur Activé et également sélectionner Bloquer dans le menu déroulant Options.
 
 Confirmez que la protection réseau est activée sur un ordinateur local à l’aide de l’éditeur du Registre :
 
@@ -148,7 +148,7 @@ Confirmez que la protection réseau est activée sur un ordinateur local à l’
 3. Sélectionnez **Créer une stratégie Exploit Guard** dans le ruban pour créer une stratégie.
    - Pour modifier une stratégie existante, sélectionnez-la, puis sélectionnez Propriétés dans le ruban ou le menu clic droit.  Modifiez **l’option Configurer la protection réseau** à partir de **l’onglet Protection** du réseau.  
 
-4. Dans la page **Général,** spécifiez un nom pour la nouvelle stratégie et vérifiez que l’option **de protection** du réseau est activée. 
+4. Dans la page **Général,** spécifiez un nom pour la nouvelle stratégie et vérifiez que l’option **Protection** du réseau est activée. 
 
 5. Dans la page **Protection du** réseau, sélectionnez l’un des paramètres suivants pour l’option Configurer la **protection réseau** :
    - **Bloquer**

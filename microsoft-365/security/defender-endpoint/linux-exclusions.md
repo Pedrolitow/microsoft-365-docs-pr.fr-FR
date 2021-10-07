@@ -2,27 +2,25 @@
 title: Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
 description: Fournir et valider des exclusions pour Microsoft Defender pour endpoint sur Linux. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, exclusions, analyses, antivirus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 269f74b0df2b0c51217d44bdb0cc2001d0f8a34d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: db2e25cb2d1690adeb581ece309e4a368471f192
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181114"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206946"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
 
@@ -85,7 +83,7 @@ mdatp exclusion
 > [!TIP]
 > Lorsque vous configurez des exclusions avec des caractères génériques, insérez le paramètre entre guillemets doubles pour empêcher le globbing.
 
-Exemples :
+Exemples :
 
 - Ajoutez une exclusion pour une extension de fichier :
 
@@ -135,7 +133,7 @@ Exemples :
     ```
 
     > [!NOTE]
-    > Cela exclut uniquement les chemins d’accès d’un niveau inférieur *à /var/*, mais pas les dossiers qui sont imbrmbrés plus profondément ; par exemple, */var/this-subfolder/but-not-this-subfolder*.
+    > Cela exclut uniquement les chemins d’accès d’un niveau inférieur *à /var/*, mais pas les dossiers imbrmbrés plus profondément ; par exemple, */var/this-subfolder/but-not-this-subfolder*.
 
     ```bash
     mdatp exclusion folder add --path "/var/"
@@ -179,7 +177,7 @@ Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `tes
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender pour point de terminaison sur Linux signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
+Si Defender pour point de terminaison sur Linux signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
 
 Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier de test EICAR. Écrivez la chaîne EICAR dans un nouveau fichier texte avec la commande Bash suivante :
 
@@ -187,7 +185,7 @@ Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="allow-threats"></a>Autoriser les menaces
 

@@ -1,13 +1,13 @@
 ---
 title: Collecter des données de diagnostic de Antivirus Microsoft Defender
-description: Utiliser un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
+description: Utilisez un outil pour collecter des données afin de résoudre les problèmes Antivirus Microsoft Defender
 keywords: résoudre les problèmes, erreur, corriger, mettre à jour la conformité, oms, surveiller, rapport, Microsoft Defender av, objet de stratégie de groupe, paramètre, données de diagnostic
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3edaf6f63e2d5f2ab312bc61591e95c91a58e4c0
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 3a4dc0b6a9faafe841efbd976b35631a8ac0febf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491074"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193074"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Collecter les données de diagnostic de l’Antivirus Microsoft Defender
 
@@ -44,14 +44,14 @@ Sur au moins deux appareils qui rencontrent le même problème, obtenez le fichi
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit **sur l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
 
     c. Spécifiez les informations d’identification de l’administrateur ou approuvez l’invite.
 
 2. Accédez au répertoire Microsoft Defender. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
    > [!NOTE]
-   > Si vous exécutez une version mise à jour de [la plateforme Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
+   > Si vous exécutez une version mise à jour de la plateforme [Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
 
 3. Tapez la commande suivante, puis appuyez sur **Entrée**
 
