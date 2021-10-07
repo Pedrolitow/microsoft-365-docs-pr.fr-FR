@@ -9,7 +9,7 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
@@ -20,12 +20,12 @@ description: Découvrez les nouvelles fonctionnalités de chiffrement de message
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 93fbd85ed75684d55ed45aec6821d86ed5e9c3f7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d76b350736ead1620f2dc52bfed607ec2c9f7893
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205859"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188096"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages
 
@@ -39,10 +39,10 @@ Les nouvelles fonctionnalités OME tirent parti des fonctionnalités de protecti
 
 La seule condition préalable à l’utilisation des nouvelles fonctionnalités OME est qu’[Azure Rights Management](/azure/information-protection/what-is-azure-rms) doit être activé dans le client de votre organisation. Si c’est le cas, Microsoft 365 active les nouvelles fonctionnalités OME automatiquement et vous n’avez rien à faire.
 
-Azure RMS est également activé automatiquement pour la plupart des offres éligibles, de sorte que vous n’avez probablement pas besoin d’effectuer quoi que ce soit à cet égard. Pour plus d’informations, reportez-vous à [Activation d’Azure Rights Management](/azure/information-protection/activate-service).
+Azure RMS est également activé automatiquement pour la plupart des offres éligibles, de sorte que vous n’avez probablement pas besoin d’effectuer quoi que ce soit à cet égard. Voir [Activation de Microsoft Azure Rights Management](/azure/information-protection/activate-service) pour plus d’informations.
 
 > [!IMPORTANT]
-> Si vous utilisez Active Directory Rights Management Services (AD RMS) avec Exchange Online, vous devez [migrer vers Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) avant de pouvoir utiliser les nouvelles fonctionnalités OME. OME n’est pas compatible avec AD RMS.
+> Si vous utilisez les services Active Directory Rights Management (AD RMS) avec Exchange Online, vous devez [migrer vers Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) avant de pouvoir utiliser les nouvelles fonctionnalités du modèle objet (OME). OME n’est pas compatible avec AD RMS.
 
 Pour plus d’informations, voir :
 

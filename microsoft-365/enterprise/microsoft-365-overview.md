@@ -9,16 +9,16 @@ ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 404670e42f46b249b748d0a54f882c631c6f91ee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: baa31d972a4722390e72798c582f41df5133a98b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165276"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152729"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -87,7 +87,7 @@ Cette affiche de deux pages est un moyen rapide d'inventorier vos infrastructure
 
 Ces produits ont atteint à la fin du support le **13 octobre 2020**:
 
-- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) arrive à la fin du support le **13 avril 2021**.
@@ -106,7 +106,7 @@ Trois méthodes s’offrent à vous pour déployer les produits, les fonctionnal
 
 - En partenariat avec FastTrack
 
-   Avec FastTrack, les ingénieurs Microsoft vous aident à migrer vers le cloud à votre rythme. Voir [FastTrack pour Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
+   Avec FastTrack, les ingénieurs Microsoft vous aident à migrer vers le cloud à votre rythme. Voir [Migrez en toute confiance vers le cloud avec FastTrack](https://fasttrack.microsoft.com/microsoft365).
 
 - Avec l'aide de Microsoft Consulting Services ou [d'un partenaire de Microsoft](https://partner.microsoft.com/)
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Si vous êtes chargé de la configuration des paramètres de messagerie pour tout le monde dans une entreprise, cette article explique comment configurer la Boîte de réception Prioritaire pour les utilisateurs.
-ms.openlocfilehash: 0b9a48a394f563d897217599daa2c1836e920d1e
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b2c315b6fb4a4c80f245bcf4731b93996753586a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774399"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176090"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurez la boîte de réception Prioritaire pour tous les membres de votre organisation
 
@@ -89,7 +90,7 @@ Lorsqu’un utilisateur décide d’utiliser la boîte de réception Prioritaire
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Activer ou désactiver la boîte de réception Prioritaire pour des utilisateurs spécifiques
 
-Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews, de l'organisation Contoso. Mais cela ne l'empêche pas d'y accéder. S'il le souhaite, il peut toujours réactiver la boîte de réception Prioritaire sur chacun de ses clients. 
+Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews, de l’organisation Contoso. Mais cela ne l’empêche pas d’y accéder. S’il le souhaite, il peut toujours réactiver la boîte de réception Prioritaire sur chacun de ses clients. 
   
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -121,7 +122,7 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
-2. Accédez à **Flux de messagerie** \> **Règles**. Sélectionnez ![ L’icône Ajouter du CAE.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) puis sélectionnez **Créer une règle...** 
+2. Naviguez vers **Flux de courrier** \> **Règles**. Cliquez sur ![Ajouter icône EAC](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif), puis sélectionnez **Créer une règle...** 
 
 3. Après avoir créé la règle, cliquez sur **Enregistrer** pour démarrer la règle.
 

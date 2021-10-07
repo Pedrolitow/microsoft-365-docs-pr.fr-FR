@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le scanneur local de protection contre la perte de données Microsoft 365 en local étend la surveillance des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint. Le scanneur Azure Information Protection (AIP) analyse, puis protège les fichiers.
-ms.openlocfilehash: c59c6b90f6c219528cbff8a4aadc6472a48ecd23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c696d4c4e8504d07ce69554c6ff52f264b8ba491
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183544"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207342"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>En savoir plus sur le scanner local de prévention des pertes de données Microsoft 365
 
-Le scanneur de protection contre la perte de données Microsoft Points de terminaison Protection contre la perte de données (Endpoint DLP) fait partie de la suite de fonctionnalités de protection contre la perte de données (DLP) Microsoft 365 que vous pouvez utiliser pour découvrir, puis protéger les éléments sensibles dans les services Microsoft 365. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
+Le scanner Microsoft de prévention des pertes de données sur site fait partie de la suite de fonctionnalités de prévention des pertes de données (DLP) de Microsoft 365 que vous pouvez utiliser pour découvrir et protéger les éléments sensibles à travers les services Microsoft 365. Pour plus d'informations sur toutes les offres DLP de Microsoft, voir[En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md).
 
 Le **scanneur local de protection contre la perte de données** analyse les données locales au repos dans les partages de fichiers, ainsi que dans les dossiers et bibliothèques de documents SharePoint pour y rechercher les éléments sensibles. En cas de fuite, ces éléments constitueraient un risque pour votre organisation ou un risque de violation de la stratégie de conformité. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour garantir une utilisation et une protection correctes de ces éléments, puis éviter tout comportement risqué susceptible de les compromettre. Le scanneur local de protection contre la perte de données détecte les informations sensibles à l’aide de types d’informations [intégrées](sensitive-information-type-entity-definitions.md) ou [sensibles personnalisées](create-a-custom-sensitive-information-type.md), d’[étiquettes de niveau de](sensitivity-labels.md) ou de propriétés de fichier. Les informations relatives aux actions des utilisateurs avec les éléments sensibles apparaissent dans [l’Explorateur d’activités](data-classification-activity-explorer.md), et vous pouvez appliquer des actions de protection à ces éléments via les [stratégies DLP](create-test-tune-dlp-policy.md).
 
@@ -56,7 +56,7 @@ Lorsqu’un fichier détecté présente un risque potentiel en cas de fuite ou d
 
 |Opération |Description  |
 |---------|---------|
-|**Empêcher ces personnes d’accéder à un fichier stocké dans un scanneur local : Tout le monde** | Cette action bloque l’accès à tous les comptes à l’exception du propriétaire du contenu, du dernier compte qui a modifié l’élément et de l’administrateur. Pour ce faire, le programme supprime tous les comptes des autorisations NTFS/SharePoint au niveau du fichier, à l’exception du propriétaire du fichier, du propriétaire du référentiel (défini dans le paramètre de [définition du propriétaire du référentiel](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) dans le travail d’analyse de contenu), du dernier modificateur (peut être identifié dans SharePoint uniquement) et de l’administrateur. Le compte du scanneur bénéficie également des droits FC sur le fichier.|
+|**Empêcher ces personnes d’accéder à un fichier stocké dans un scanneur local : Tout le monde** | Lorsqu’elle est appliquée, cette action bloque l’accès à tous les comptes, à l’exception du propriétaire du contenu, du dernier compte qui a modifié l’élément et de l’administrateur. Pour ce faire, il supprime tous les comptes des autorisations NTFS/SharePoint au niveau du fichier, à l’exception du propriétaire du fichier, du propriétaire du dépôt (défini dans le paramètre[Définir le propriétaire du dépôt](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) dans le travail d’analyse de contenu), du dernier modificateur (ne peut être identifié que dans SharePoint) et de l’administrateur. Le compte du scanneur dispose également de droits FC sur le fichier.|
 |**Empêcher ces personnes d’accéder à un fichier stocké dans un scanneur local : bloquer l’accès (public) à l’échelle de l’organisation**    |Cette action supprime les SID **_Tout le monde_*_, _*_NT AUTHORITY\utilisateurs identifiés_*_ et _*_Utilisateurs du domaine_** de la liste de contrôle d’accès au fichier (ACL). Seuls les utilisateurs et les groupes qui ont reçu explicitement les droits d’accès au fichier ou au dossier parent pourront accéder au fichier.|
 |**Définir des autorisations sur le fichier**|Cette action force le fichier à hériter des autorisations de son dossier parent. Par défaut, cette action n’est applicable que si les autorisations du dossier parent sont plus restrictives que celles déjà appliquées au fichier. Par exemple, si vous avez défini la liste de contrôle d'accès du fichier pour autoriser uniquement des **_utilisateurs spécifiques_*_ et que vous avez configuré le dossier parent pour autoriser le groupe _*_Utilisateurs du domaine_*_, le fichier n’héritera pas des autorisations du dossier parent. Vous pouvez remplacer ce comportement en sélectionnant l’option _* Inherit even if parent permissions are less restrictive** (Hériter, même si les autorisations parent sont moins restrictives).|
 |**Supprimer le fichier d’un emplacement incorrect**|Cette action remplace le fichier d’origine par un fichier stub avec l’extension .txt, puis place une copie du fichier d’origine dans un dossier de mise en quarantaine. 

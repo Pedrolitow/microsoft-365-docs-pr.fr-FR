@@ -11,19 +11,19 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: b8acad4520fc588517083574d41465e277b9c96a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6eef2485379544233db29fe94539c5c07499f9fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175932"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167257"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -289,7 +289,7 @@ dossier *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* et ajoute une 
 > [!NOTE]
 > La mise en quarantaine automatique DLP crée des sous-dossiers pour les fichiers de chaque application non autorisée. Par conséquent, si vous avez le *Bloc-notes* et *OneDrive* dans votre liste d’applications non autorisées, un sous-dossier sera créé pour **\OneDrive** et un autre sous-dossier pour **\Bloc-notes**.
 
-8. Choisissez **Remplacez les fichiers par un fichier .txt qui contient le texte suivant** et entrez le texte souhaité dans le fichier d’espace réservé. Par exemple, pour un fichier nommé *auto quar 1.docx*:
+8. Choisissez **Remplacer les fichiers par un fichier .txt qui contient le texte suivant**, puis entrez le texte souhaité dans le fichier d’espace réservé. Par exemple, pour un fichier appelé *auto quar 1.docx* :
     
 **%%FileName%% contient des informations sensibles que votre organisation protège avec la stratégie de protection contre la perte de données (DLP) %%PolicyName%% et a été déplacée vers le dossier de quarantaine : %%QuarantinePath%%.** 
 
@@ -322,7 +322,7 @@ laisse un fichier .txt qui contient ce message
     
 8. Choisissez **Enregistrer** et **Suivant**.
 
-9. Choisissez **L’activer immédiatement**. Cliquez sur **Suivant**.
+9. Choisissez **L’activer immédiatement**. Choisissez **Suivant**.
 
 10. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
 

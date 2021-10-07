@@ -8,11 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 monikerRange: o365-worldwide
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le Niveau de productivité Microsoft reflète les mesures de l’expérience utilisateur et technologique, et comparez-les aux organisations de taille similaire.
-ms.openlocfilehash: 0c0d260ebea02d57e099c84acdbc8960d58f3638
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a8d5ae03b624fd451e86d7b993479359fce2603c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774170"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197832"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 

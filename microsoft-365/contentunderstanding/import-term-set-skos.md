@@ -10,13 +10,13 @@ ms.topic: article
 ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
-localization_priority: Priority
-ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: high
+ms.openlocfilehash: 6f472754484d7bb41485b94d65689009d2c615fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202283"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189212"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes avec un format SKOS
 

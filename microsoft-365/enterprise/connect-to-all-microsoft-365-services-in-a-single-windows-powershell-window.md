@@ -7,7 +7,7 @@ ms.date: 02/02/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -18,16 +18,16 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Résumé : se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell.'
-ms.openlocfilehash: 82d623c0074a7cdb3b61d0e6380b779d55354809
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d7684debae5ba0cc6679acf7a0cb6f590cca11c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207763"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201708"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Se connecter à tous les services Microsoft 365 dans une seule fenêtre PowerShell
 
-Lorsque vous utilisez PowerShell pour gérer Microsoft 365, plusieurs sessions PowerShell peuvent être ouvertes en même temps. Vous avez peut-être des fenêtres PowerShell différentes pour gérer les comptes d’utilisateurs, SharePoint Online, Exchange Online, Skype Entreprise Online, Microsoft Teams et le centre de Sécurité &amp; de Conformité.
+Lorsque vous utilisez PowerShell pour gérer Microsoft 365, vous pouvez avoir plusieurs sessions PowerShell différentes ouvertes en même temps. Vous pouvez avoir différentes fenêtres PowerShell pour la gestion des comptes utilisateur, SharePoint Online, Exchange Online, Skype Entreprise Online, Microsoft Teams et le Centre de conformité &amp; de sécurité.
   
 Ce scénario n’est pas optimal pour gérer Microsoft 365, car vous ne pouvez pas échanger de données entre ces fenêtres pour effectuer une gestion interservices. Cet article décrit comment utiliser une instance unique de PowerShell pour gérer les comptes Microsoft 365, Skype Entreprise Online, Exchange Online, SharePoint Online, Microsoft Teams et le Centre de sécurité &amp; de conformité.
 
@@ -42,7 +42,7 @@ Avant de pouvoir gérer l’ensemble de Microsoft 365 à partir d’une seule in
     
 - Vous pouvez utiliser les versions 64 bits de Windows suivantes :
     
-  - Windows 10
+  - Windows 10
     
   - Windows 8.1 ou Windows 8
     
@@ -99,7 +99,7 @@ Voici les étapes à suivre pour vous connecter à tous les services dans une fe
    ```
 
    > [!Note]
-   > PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour le module Windows PowerShell et les cmdlets ayant *Msol* dans leur nom. Exécutez ces cmdlets à partir de PowerShell.
+   > PowerShell Core ne prend pas en charge le Module Microsoft Azure Active Directory pour Windows PowerShell et les cmdlets ayant *Msol* dans leur nom. Vous devez exécuter ces cmdlets à partir de PowerShell.
 
 4. Exécutez ces commandes pour vous connecter à SharePoint Online. Spécifiez le nom de l’organisation de votre domaine. Par exemple, pour « litwareinc\.onmicrosoft.com », la valeur nom de l’organisation est « litwareinc ».
     

@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: edeeb0fc0f93ae962b85e113734dea1844b11d04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208556"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213420"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
@@ -66,7 +66,7 @@ Pour créer une étiquette de confidentialité
 1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Donnez un nom à l’étiquette. Nous vous suggérons le terme **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
+4. Donnez un nom à l’étiquette. Nous vous suggérons **Sensible**, mais vous pouvez choisir un autre nom si celui-ci est déjà utilisé.
 5. Tapez un nom et une description, puis cliquez sur **Suivant**.
 6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
 7. Dans la page **Sélectionner les paramètres de protection pour les fichiers et les messages électroniques**, cliquez sur **Suivant**.

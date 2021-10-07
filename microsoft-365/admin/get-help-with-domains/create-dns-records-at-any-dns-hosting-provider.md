@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 search.appverid:
 - MET150
@@ -21,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-ms.openlocfilehash: f9af8ccf5a6a8cadfa192fdac5706de6c9d0890b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: ae8dc1c1d2f603e81d2affd723df2be460a873de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60164811"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -170,7 +171,7 @@ Exemple : `_sip._tls`
 
 Si votre fournisseur d’hébergement ne fournit pas ces champs pour les enregistrements SRV, vous devez spécifier ces valeurs dans le champs **Cible** de l’enregistrement. Remarque : selon votre fournisseur d’hébergement, le champ **Cible** peut être appelé différemment, comme **Contenu**, **Adresse IP** ou **Hôte cible**.
 
-Pour ajouter ces valeurs, créez une seule chaîne, en séparant les valeurs par des espaces, *ou parfois par un point*. Si vous n’êtes pas sûr, consultez votre fournisseur. Les valeurs doivent être incluses dans l’ordre suivant : Priority (Priorité), Weight (Poids), Port (Port), Target (Cible).
+Pour ajouter ces valeurs, créez une seule chaîne, en séparant les valeurs par des espaces, *ou parfois par un point*. Si vous n’êtes pas sûr, consultez votre fournisseur. Les valeurs doivent être incluses dans cet ordre : Priorité, Poids, Port, Cible.
 
 - Exemple 1 : `100 1 443 sipdir.online.lync.com.`
 - Exemple 2 : `100 1 443 sipdir.online.lync.com`
@@ -179,4 +180,4 @@ Pour ajouter ces valeurs, créez une seule chaîne, en séparant les valeurs par
 
 [Modifier les serveurs de noms de manière à configurer Microsoft 365 avec n'importe quel bureau d'enregistrement de domaines](change-nameservers-at-any-domain-registrar.md) (article)\
 [Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)\
-[Gérer des domaines](index.yml) (page de lien)
+[Gérer des domaines](/admin) (page de lien)

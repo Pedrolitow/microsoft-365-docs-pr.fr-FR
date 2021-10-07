@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: c5aaa27dee2aea6ea1c8383a0a729a7bd0465f8b
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 650a46c20acaf207f757ebbbe8f8b7179c29158f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773474"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60161797"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Rôles d'administration Intune dans le Centre d’administration Microsoft 365
 
@@ -55,7 +55,7 @@ Un partenaire peut attribuer ces rôles :
 
 - Administration limitée, dont les privilèges sont équivalents à ceux d’un administrateur du support technique.
 
-Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](../misc/add-partner.md).
+Pour que le partenaire puisse attribuer ces rôles aux utilisateurs, vous devez l'ajouter en tant qu'administrateur délégué à votre compte. Ce processus est initié par un partenaire agréé. Le partenaire vous envoie un e-mail pour vous demander l'autorisation d'agir en tant qu'administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenariat](../misc/add-partner.md).
   
 ## <a name="related-content"></a>Contenu associé
 

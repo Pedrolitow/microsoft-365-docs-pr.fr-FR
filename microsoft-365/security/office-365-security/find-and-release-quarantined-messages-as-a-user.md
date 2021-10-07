@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Consumer/IW
 ms.topic: how-to
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 - MEW150
@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fcd6cb3eb6aee387fd1e4943c837f855abc5f34
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 262ffa4cdb4aae7af0624fe3b51b10b9b088b3c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483662"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60213492"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -56,7 +56,7 @@ En tant qu’utilisateur ordinaire (et non administrateur), les fonctionnalités
 |Protection contre l’usurpation d’intelligence dans EOP|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
 |Protection contre l’emprunt d’identité de l’utilisateur dans Defender pour Office 365|![Marque de vérification.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |Protection contre l’usurpation de domaine dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|
-|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
+|Protection de la veille des boîtes aux lettres dans Defender pour Office 365|![Coche.](../../media/checkmark.png)|![Coche.](../../media/checkmark.png)|![Marque de vérification.](../../media/checkmark.png)|
 |**Stratégies anti-programme malveillant**||||
 |Messages électroniques avec pièces jointes mis en quarantaine en tant que programmes malveillants.||||
 |**Pièces jointes sécurisées dans Defender pour Office 365**||||
@@ -170,7 +170,7 @@ Pour donner suite au message, consultez la section suivante.
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
 > [!NOTE]
-> Votre capacité à prendre des mesures sur les messages mis en quarantaine est contrôlée par la [stratégie de mise en quarantaine](quarantine-policies.md) qui s’applique au type de message mis en quarantaine (qui peut être la [stratégie de mise en quarantaine par défaut pour la raison de mise en quarantaine](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). Cette section décrit toutes les actions disponibles.
+> Votre capacité à prendre des mesures sur les messages mis en quarantaine est contrôlée par la [stratégie de mise en quarantaine](quarantine-policies.md) qui s’applique au type de message mis en quarantaine (qui peut être la [stratégie de quarantaine par défaut pour la raison de mise en quarantaine](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). Cette section décrit toutes les actions disponibles.
 
 Après avoir sélectionné un message en quarantaine dans la liste, les actions suivantes sont disponibles dans le flyout des détails :
 

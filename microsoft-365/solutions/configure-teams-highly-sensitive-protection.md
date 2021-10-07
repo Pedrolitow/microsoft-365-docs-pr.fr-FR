@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 27d2183a3f6f5f43f4461bc83fe3b33ac9f4f56e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208563"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60169358"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -87,7 +87,7 @@ Pour créer une étiquette de confidentialité
 17. Cliquez sur **Suivant**.
 18. Dans la page **Définir les paramètres de partage externe et d’accès aux appareils**, sélectionnez **Contrôler le partage externe dans les sites étiquetés SharePoint**.
 19. Sous **Le contenu peut être partagé avec**, sélectionnez **Invités nouveaux et existants** si vous autorisez l’accès invité ou **Uniquement les membres de votre organisation** si ce n’est pas le cas.
-20. Sous **Accès à partir d’appareils non gérés**, sélectionnez **Bloquer l’accès**. (Si vous autorisez les invités et qu’ils n’ont pas d’appareils gérés, vous pouvez choisir **Autoriser l’accès limité, sites web uniquement**.)
+20. Sous **Accès à partir d’appareils non gérés**, choisissez **Bloquer l’accès**. (Si vous autorisez les invités et qu’ils n’ont pas d’appareils gérés, vous pouvez choisir **Autoriser l’accès limité, sites web uniquement**.)
 21. Cliquez sur **Suivant**.
 22. Dans la page **Étiquetage automatique pour les colonnes de base de données** , cliquez sur **Suivant**.
 23. Cliquez sur **Créer une étiquette**, puis sur **Terminé**.

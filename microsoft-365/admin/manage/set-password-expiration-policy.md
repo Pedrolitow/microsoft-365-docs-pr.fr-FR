@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Découvrez comment un administrateur peut définir une stratégie d’expiration des mots de passe pour votre entreprise, votre établissement scolaire ou votre association dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 48c4df727527000cf5e2676b52fd9b39e5da733d
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 53c4e1ac80606e4f2a895a4f008206070cafe3c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775851"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171782"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -59,7 +60,7 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
   
 1. Entrez la fréquence d'expiration des mots de passe. Choisissez un nombre de jours compris entre 14 et 730.
   
-6. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être avisés de l'expiration prochaine du mot de passe, puis sélectionnez **Enregistrer**. Choisissez un nombre de jours compris entre 1 et 30.
+6. Dans la seconde zone, indiquez à quel moment les utilisateurs doivent être notifiés de l'expiration du mot de passe, puis sélectionnez **Enregistrer**. Choisissez un nombre de jours compris entre 1 et 30.
 
 > [!NOTE]
 > Les notifications d’expiration de mot de passe ne sont plus prises en charge dans le portail Office 365 ou les applications Office à l’exception d’Outlook lors de l'utilisation de l'authentification de base. Outlook avec l’authentification moderne ne prend pas en charge les notifications d’expiration de mot de passe.
@@ -70,7 +71,7 @@ Les personnes qui utilisent uniquement l’application Outlook ne sont pas oblig
 
 ## <a name="prevent-last-password-from-being-used-again"></a>Empêcher la réutilisation du dernier mot de passe
 
-Si vous le souhaitez, vous pouvez empêcher vos utilisateurs de recycler d’anciens mots de passe en appliquant l’historique de mot de passe dans Active Directory (AD) local. Voir [Créer une stratégie de mot de passe personnalisée](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
+Si vous le souhaitez, vous pouvez empêcher vos utilisateurs de recycler d’anciens mots de passe en appliquant l’historique de mot de passe dans Active Directory (AD) local. Consultez [Créer une stratégie de mot de passe personnalisée](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
 Dans Azure AD, le dernier mot de passe ne peut pas être réutilisé lorsque l’utilisateur modifie un mot de passe. La stratégie de mot de passe est appliquée à tous les comptes d’utilisateurs qui sont créés et gérés directement dans Azure AD. Cette stratégie de mot de passe ne peut pas être modifiée. Consultez [Stratégies de mot de passe Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
 

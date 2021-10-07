@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Utilisez un script PowerShell qui exécute l’applet de commande Search-UnifiedAuditLog dans Exchange Online pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer les enregistrements d’un grand jeu d’audits (jusqu’à 50 000). Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f54924cf0f90b976c52c8ee7c53e151f50111b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164185"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60173546"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
 
@@ -165,7 +165,7 @@ Une fois que vous êtes connecté à Exchange Online PowerShell, l’étape suiv
    .\SearchAuditLog.ps1
    ```
 
-Le script affiche les messages de progression pendant son exécution. Une fois l’exécution du script terminée, il crée le fichier journal et le fichier CSV qui contient les enregistrements d’audit et les enregistre dans les dossiers définis par les variables `$logFile` et `$outputFile`.
+Le script affiche des messages de progression pendant l’exécution. Une fois l’exécution du script terminée, il crée le fichier journal et le fichier CSV qui contiennent les enregistrements d’audit et les enregistre dans les dossiers définis par les variables `$logFile` et `$outputFile`.
 
 > [!IMPORTANT]
 > Il existe une limite de 50 000 pour le nombre maximal d’enregistrements d’audit renvoyés chaque fois que vous exécutez ce script. Si vous exécutez ce script et qu’il renvoie 50 000 résultats, il est probable que les enregistrements d’audit pour les activités qui se sont produites dans la plage de dates n’ont pas été inclus. Dans ce cas, nous vous recommandons de diviser la plage de dates en plus petites durées, puis de réexécuter le script pour chaque plage de dates. Par exemple, si une plage de dates de 90 jours renvoie 50 000 résultats, vous pouvez réexécuter le script deux fois, une fois pour les 45 premiers jours de la plage de dates, puis de nouveau pour les 45 prochains jours.

@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec En savoir plus sur les stratégies d’application.
-ms.openlocfilehash: 72702dfb8962750a3e6161eaefa360f6189870e6
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: c015a8ef97bc16963b670ae00c9067f35dafc1e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941990"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188396"
 ---
 # <a name="get-started-with-app-policies"></a>Démarrage avec des stratégies d’application
 
@@ -67,7 +67,7 @@ Vous pouvez également :
 ## <a name="edit-an-existing-policy"></a>Modifier une stratégie existante
 
 1. Dans le portail de gouvernance des applications, sélectionnez l’onglet **Stratégies**.
-1. Sélectionnez la stratégie que vous souhaitez modifier. Un panneau s’ouvrira sur le côté droit avec les détails de la stratégie existante.
+1. Sélectionnez la stratégie à modifier. Un panneau s’ouvrira sur le côté droit avec les détails de la stratégie existante.
 1. Sélectionnez **Modifier**.
 1. Vous ne pouvez pas modifier le nom de la stratégie une fois créée, mais vous pouvez modifier la description et la gravité de la stratégie. Sélectionnez **Suivant**.
 1. Choisissez si vous souhaitez continuer à utiliser les paramètres de stratégie existants ou les personnaliser. Sélectionnez **Non. Je souhaite personnaliser la stratégie** pour apporter des modifications. Sélectionnez **Suivant**.

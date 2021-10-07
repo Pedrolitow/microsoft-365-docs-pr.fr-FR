@@ -9,18 +9,18 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Utiliser l’API REST pour créer une demande pour classifier un ou plusieurs fichiers à l’aide d’un modèle formé de compréhension de document.
-ms.openlocfilehash: 50aa406d25e6d598b568d7c21db6f56e04e111da
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 9f57799a9d1b631be5586dd285dc02cff1237b98
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776727"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186992"
 ---
 # <a name="create-file-classification-request"></a>Créer une demande de classification de fichiers
 
-Crée une demande pour classifier un ou plusieurs fichiers à l’aide d’un modèle formé de compréhension de document. (Pour plus d’informations, voir [l’exemple.)](rest-createclassificationrequest.md#examples)
+Crée une demande pour classifier un ou plusieurs fichiers à l’aide d’un modèle formé de compréhension de document. (Pour plus d’informations, voir [exemple](rest-createclassificationrequest.md#examples)).
 
 Le service REST de SharePoint Online (et SharePoint 2016 et versions ultérieures sur site) prend en charge la combinaison de plusieurs requêtes. Les demandes sont regroupées en un seul appel vers le service en utilisant l’option de requête OData $batch. Vous pouvez utiliser cette méthode pour placer en file d’attente des éléments de travail de classification pour des centaines de documents à la fois.
 

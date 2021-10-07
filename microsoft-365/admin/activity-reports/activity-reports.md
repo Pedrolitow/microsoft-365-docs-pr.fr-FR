@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: d4a0bed84e3a88b92fdb7def20fd5ea7dac03e28
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 15d2ac283f3687863355d44016a468f69d8efe7f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773690"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156089"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -58,7 +59,7 @@ Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les donn
 
 ::: moniker-end
 
-2. Cliquez sur le bouton **Afficher plus** à partir de la carte d’activité en un coup d’œil pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Différents rapports pour le service sont fournis dans les onglets.
+2. Cliquez sur le bouton **Afficher plus** à partir de la carte d’activité en un coup d’œil pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Les divers rapports du service s’affichent dans des onglets.
 
    :::image type="content" alt-text="Tableau de bord d'utilisation." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 

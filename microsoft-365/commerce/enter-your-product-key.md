@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,20 +22,19 @@ ms.custom:
 - AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
 ms.date: 11/13/2020
-ms.openlocfilehash: 5c9a1bba30f6c1b55688d2a36166651fe0b16a05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d872a61de9f2d704f6cee92234d3358ca0d1c26f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181631"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195868"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business Standard
 
 Si vous avez acheté Microsoft 365 Business Standard dans un magasin, cet article vous aide à activer votre abonnement.
   
- **Vous avez besoin d’autres informations ?**
- **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **Vous êtes un client de licences en volume ?** Si vous avez acheté Microsoft 365 pour les entreprises via un [Programme de licences Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), consultez l’article, [Entrer votre clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md).
+ **Besoin d’autre chose ?** **Pour obtenir de l’aide Microsoft 365 Famille ou Microsoft 365 Personnel**, voir [Utilisation des clés de produit avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Client du programme de licence en volume ?** Si vous avez acheté Microsoft 365 pour les entreprises via un [Programme de licences Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), consultez l’article, [Entrer votre clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activer un nouvel abonnement
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier un schéma EDM pour utiliser une correspondance configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d470b986d4a94206935efb832deec7171f8e404
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce02113cd8e6b0d0e2b2b5b950a78e2958b95004
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207836"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60167209"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
 
@@ -66,7 +66,7 @@ Voici un exemple de schéma qui simule la correspondance non sensible à la cass
 
 Dans l’exemple ci-dessus, les variantes de la colonne d’origine `PolicyNumber` ne sont plus nécessaires si `caseInsensitive` et `ignoredDelimiters` sont ajoutés.
 
-Pour mettre à jour ce schéma de façon à ce qu’EDM utilise la correspondance configurable, utilisez les indicateurs `caseInsensitive` et `ignoredDelimiters`.  Cela se présente comme suit :
+Pour mettre à jour ce schéma de façon à ce qu’EDM utilise la correspondance configurable, utilisez les indicateurs `caseInsensitive` et `ignoredDelimiters`. Voici à quoi cela ressemble :
 
 ```xml
 <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -104,7 +104,7 @@ L’indicateur `ignoredDelimiters` ne prend pas en charge :
 6. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
 > [!NOTE]
-> Si votre organisation a configuré une [Clé client pour Microsoft 365 au niveau du client (préversion publique)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Cette offre est disponible uniquement pour les clients sous licence E5 dans le cloud commercial.
+> Si votre organisation a configuré une [Clé client pour Microsoft 365 au niveau du client (préversion publique)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Elle est disponible pour les clients sous licence E5 uniquement dans le cloud commercial.
 
 7. Mettez à jour votre schéma en exécutant ces applets de commande une par une :
 

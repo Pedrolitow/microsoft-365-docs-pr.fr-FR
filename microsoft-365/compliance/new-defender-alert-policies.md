@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 130bcb9c8511de1f18a8711561bbe6a15544f810
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2983ab2affe3c938062442e53a8f14c5bb0caa57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202343"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190724"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
 
@@ -99,7 +99,7 @@ Les nouvelles alertes seront lancées et déclencheront les Enquêtes et répons
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Ce que vous devez faire pour vous préparer à ces changements
 
-La façon dont votre organisation utilise ces alertes déterminera ce que vous devez effectuer pour vous préparer. Si vous avez mis en œuvre des alertes et que vous les utilisez ou les consommez via une API, une notification d’alerte par courrier ou dans le Centre de conformité Microsoft 365 (`https://compliance.mmicrosoft.com/viewalerts`) ou le Centre de sécurité Microsoft (`https://security.microsoft.com/viewalerts`), vous devez modifier votre flux de travail.
+La façon dont votre organisation utilise ces alertes détermine ce que vous devez effectuer pour vous préparer. Si vous avez mis en œuvre des alertes et que vous les utilisez ou les consommez via une API, une notification d’alerte par courrier ou dans le Centre de conformité Microsoft 365 (`https://compliance.mmicrosoft.com/viewalerts`) ou le Centre de sécurité Microsoft (`https://security.microsoft.com/viewalerts`), vous devez modifier votre flux de travail.
 
 **Si vous n’avez pas mis en œuvre ces alertes, vous pouvez effectuer l’une des opérations suivantes :**
 
