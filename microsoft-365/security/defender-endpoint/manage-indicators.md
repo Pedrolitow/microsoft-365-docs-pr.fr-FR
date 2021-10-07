@@ -3,26 +3,24 @@ title: Créer des indicateurs
 ms.reviewer: ''
 description: Créez des indicateurs pour un hachage de fichier, une adresse IP, des URL ou des domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ea6519f18f91a6905e8fa3372aec2b2014b18ac
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6ddd0cbc8a8903ded4f95fc75e4a8ffcde7c5b2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204744"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159389"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
@@ -80,7 +78,7 @@ Vous pouvez créer un indicateur pour :
 ## <a name="public-preview-for-automated-investigation-and-remediation-engine"></a>Prévisualisation publique pour le moteur automatisé d’examen et de correction
 
 > [!IMPORTANT]
-> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’investigation et de correction) concernent les produits pré-publiés qui peuvent être considérablement modifiés avant leur commercialisation. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
+> Les informations de cette section **(prévisualisation publique** pour le moteur automatisé d’examen et de correction) concernent le produit pré-publié qui peut être considérablement modifié avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
 Lors de la création d’un indicateur (IoC), une ou plusieurs des actions suivantes sont désormais disponibles :
 
@@ -89,7 +87,7 @@ Lors de la création d’un indicateur (IoC), une ou plusieurs des actions suiva
 - Bloquer l’exécution : l’IoC n’est pas autorisé à s’exécuter.
 - Bloquer et corriger : l’IoC n’est pas autorisé à s’exécuter et une action de correction est appliquée à l’IoC.
 
-Le tableau ci-dessous indique exactement quelles actions sont disponibles par type d’indicateur (IoC) :
+Le tableau ci-dessous indique exactement les actions disponibles par type d’indicateur (IoC) :
 
 | Type IoC | Actions disponibles |
 |:---|:---|

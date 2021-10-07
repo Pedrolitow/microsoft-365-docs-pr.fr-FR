@@ -1,5 +1,5 @@
 ---
-title: Configurer un connecteur pour archiver les données réseau de Base de données dans Microsoft 365
+title: Configurer un connecteur pour archiver les données du réseau DeNte dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver les données réseau de Contrôle dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 52e200274ec74fc74e554d277bf8bd5323445015
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e46e62e02d35ff9d740f075c188f9ba8b5da41d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176148"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155249"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Configurer un connecteur pour archiver des données réseau
 
@@ -25,9 +25,9 @@ Utilisez le connecteur TeleMessage dans le Centre de conformité Microsoft 365 
 
 Une fois que les données du réseau mobile de Contrôle sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données. Par exemple, vous pouvez rechercher des MESSAGES SMS et MMS à partir du réseau mobile dePata à l’aide de la recherche de contenu ou d’une recherche associée à un cas core eDiscovery. L’utilisation d’un connecteur Archiveur réseau de Contrôle pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations de gouvernance d’entreprise et aux stratégies réglementaires.
 
-## <a name="overview-of-archiving-rogers-mobile-network-data"></a>Vue d’ensemble de l’archivage des données du réseau mobile Dems
+## <a name="overview-of-archiving-rogers-mobile-network-data"></a>Vue d’ensemble de l’archivage des données du réseau mobile de Lasa
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver des données SMS et MMS Dans Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver des données SMS et MMS dans Microsoft 365.
 
 ![Flux de travail d’archivage du réseau DeNte.](../media/RogersNetworkConnectorWorkflow.png)
 
@@ -35,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. En temps réel, les données du réseau mobile de Votre organisation sont copiées sur le site TeleMessage.
 
-3. Le connecteur Archiveur réseau DeNte que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 heures précédentes vers une zone stockage Azure sécurisée dans Microsoft Cloud.
+3. Le connecteur Archiveur réseau Dec que vous créez dans le Centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages électroniques des 24 heures précédentes vers une zone stockage Azure sécurisée dans Microsoft Cloud.
 
 4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé Archiveur réseau SMS/MMS Sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur fait le mappage à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur. Chaque message électronique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message électronique.
 
@@ -43,11 +43,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
-- Commandez [le service Archiver réseau DeNter à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous connectez à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
+- Commandez [le service Archiver réseau DeNter à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous inscrire à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
 
 - Enregistrez tous les utilisateurs qui ont besoin de l’archivage réseau DeNter dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
 
-- Vos employés doivent avoir des téléphones mobiles d’entreprise et responsables sur le réseau mobile O2. L’archivage des messages Microsoft 365 n’est pas disponible pour les appareils byoD (Bring Your Own Devices) ou « Apportez vos propres appareils ».
+- Vos employés doivent avoir des téléphones mobiles d’entreprise et de responsabilité d’entreprise sur le réseau mobile O2. L’archivage des messages Microsoft 365 n’est pas disponible pour les appareils byoD (Bring Your Own Devices) ou « Apportez vos propres appareils ».
 
 - Obtenez les coordonnées du compte Et du contact de facturation de votre organisation afin que vous pouvez remplir les formulaires d’intégration et commander le service d’archivage des messages auprès de Domaine.
 
@@ -61,7 +61,7 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 1. Go to <https://compliance.microsoft.com> and then click Data **connectors**  >  **Archiver Network Archiver**.
 
-2. Dans la page description du produit Archiveur réseau **de Archiveur** de réseau, cliquez sur **Ajouter un connecteur.**
+2. Dans la page de description du produit Archiveur réseau **DeNte,** cliquez sur **Ajouter un connecteur.**
 
 3. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
@@ -81,4 +81,4 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

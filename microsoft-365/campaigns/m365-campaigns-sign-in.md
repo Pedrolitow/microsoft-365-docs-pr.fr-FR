@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Connectez-vous Microsoft 365. Protégez votre entreprise, pratique ou campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
-ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Connectez-vous à Microsoft 365. Protégez votre entreprise, pratique ou campagne contre les menaces de cyber-sécurité à la messagerie, aux données et aux communications.
+ms.openlocfilehash: cd2433adad2563528242d119011afdca208f7424
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208163"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160603"
 ---
 # <a name="sign-in-to-microsoft-365"></a>Connectez-vous à Microsoft 365
 
@@ -38,7 +38,7 @@ Si vous vous êtes inscrit à Microsoft 365, vous êtes l’administrateur Micro
 
 1. Recherchez le nom d’utilisateur et le mot de passe que nous avons envoyés à l’adresse de messagerie que vous nous avez donnée à l’étape 2 des étapes [d’inscription.](m365-campaigns-sign-up.md#steps-to-sign-up)
 2. Dans le navigateur, go to the Centre d'administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
-3. Tapez votre nom d’utilisateur et votre mot de passe. Sélectionnez **Se connecter**.
+3. Tapez votre nom d’utilisateur et votre mot de passe. Sélectionnez **Connexion**.
 4. En haut à droite de la page, recherchez **l’aperçu sur le** contrôle. Sélectionnez **l’aperçu** afin de pouvoir utiliser tous les contrôles décrits dans La protection de haut [en haut pour votre campagne.](m365-campaigns-security-overview.md)
 
 ## <a name="for-staff"></a>Pour le personnel

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer et gérer des étiquettes de sensibilité.
-ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 35ec82702cd1a5be3f23698f90c8129fc5c7f6f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209450"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160835"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Protéger les documents avec des étiquettes de niveau de sensibilité
 
@@ -52,9 +52,9 @@ Les étiquettes de niveau de sensibilité vous permettent de classifier et de pr
 1. Examinez vos paramètres, puis sélectionnez **Créer.** Votre étiquette a été créée. Répétez ce processus pour les étiquettes supplémentaires que vous souhaitez.
 1. Par défaut, les étiquettes apparaissent Office applications dans cet ordre : **Confidentiel,** **Interne** et **Public**. Pour modifier l’ordre, pour chaque étiquette, sélectionnez les trois points (plus d’actions), puis déplacez l’étiquette vers le haut ou vers le bas. En règle générale, les autorisations sont répertoriées du niveau d’autorisation le plus bas au niveau le plus élevé.
 1. Pour ajouter une sous-étiquette à une étiquette, sélectionnez les trois points (plus d’actions), puis **ajoutez le sous-niveau**.
-1. Lorsque vous avez terminé, choisissez **Publier des étiquettes,** **choisissez les étiquettes à publier,** puis **Ajoutez**. Sélectionnez les étiquettes que vous souhaitez publier, puis sélectionnez **Ajouter,** **Terminé,** puis **Suivant**.
+1. Lorsque vous avez terminé, choisissez **Publier des étiquettes,** **choisissez les étiquettes à publier,** puis **Ajoutez**. Sélectionnez les étiquettes que vous souhaitez publier, puis **sélectionnez Ajouter,** **Terminé,** puis **Suivant**.
 1. Par défaut, la nouvelle stratégie d’étiquette est appliquée à tout le monde. Si vous souhaitez limiter l’application de la stratégie, sélectionnez Choisir des utilisateurs ou des **groupes,** puis **Ajoutez**. Sélectionnez à qui vous souhaitez que la stratégie s’applique, puis sélectionnez **Ajouter,** **Terminé,** puis **Suivant**.
-1. Si vous souhaitez une étiquette par défaut pour les documents et les e-mails, sélectionnez l’étiquette de votre choix dans la liste de listes. Examinez les paramètres restants, ajustez selon les besoins, puis sélectionnez **Suivant**.
+1. Si vous souhaitez une étiquette par défaut pour les documents et les e-mails, sélectionnez l’étiquette de votre choix dans la liste liste. Examinez les paramètres restants, ajustez selon les besoins, puis sélectionnez **Suivant**.
 1. Entrez un **nom et** une **description** pour votre stratégie. Sélectionnez **Suivant**.
 1. Examinez vos paramètres, puis sélectionnez **Publier.**
 

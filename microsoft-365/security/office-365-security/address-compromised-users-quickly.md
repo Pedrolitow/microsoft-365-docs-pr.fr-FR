@@ -1,12 +1,12 @@
 ---
-title: Résoudre les comptes d’utilisateur compromis grâce à un examen et à une réponse automatisés
+title: Résoudre les comptes d’utilisateur compromis grâce à un examen et une réponse automatisés
 keywords: AIR, autoIR, Microsoft Defender pour point de terminaison, automatisé, examen, réponse, correction, menaces, avancé, menace, protection, compromis
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -15,14 +15,14 @@ ms.date: 06/10/2021
 description: Découvrez comment accélérer le processus de détection et de traitement des comptes d’utilisateur compromis à l’aide de fonctionnalités automatisées d’examen et de réponse dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a90768038bde3126dd4ac3e5016f4d04aded9af
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 22531f529834b6d309853e3d219c608e6af03cbb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177412"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154589"
 ---
-# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis grâce à un examen et à une réponse automatisés
+# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Résoudre les comptes d’utilisateur compromis grâce à un examen et une réponse automatisés
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -69,7 +69,7 @@ Vous avez plusieurs options pour naviguer vers une liste d’utilisateurs restre
 
 1. Ouvrez le portail Microsoft 365 Defender ( ) et allez à <https://security.microsoft.com> **Incidents &** \> **alertes**. Ou, pour aller directement à la page **Alertes,** utilisez <https://security.microsoft.com/alerts> .
 
-2. Dans la page **Alertes,** filtrez les résultats par période et la stratégie nommée Utilisateur ne peut pas envoyer **de courrier électronique.**
+2. Dans la page **Alertes,** filtrez les résultats par période de temps et la stratégie nommée Utilisateur limité à **l’envoi de courrier électronique**.
 
    ![La page Alertes du portail Microsoft 365 Defender filtré pour les utilisateurs restreints.](../../media/m365-sc-alerts-page-with-restricted-user.png)
 

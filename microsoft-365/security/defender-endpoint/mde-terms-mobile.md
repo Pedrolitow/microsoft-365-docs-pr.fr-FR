@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: sunasing
 author: sunasing
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,14 +19,14 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 1d5a6a6f35a71481abf79901aed6d991fcee83fa
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 4b6bcadfa7f6bb51f48790460aeb0d034b1fbf65
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088389"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156226"
 ---
-# <a name="microsoft-defender-for-endpoint-application-license-terms"></a>Termes du contrat de licence de l’application Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-application-license-terms"></a> Conditions de licence de l'application Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,17 +47,17 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     d) **Contrat de services Microsoft.** Certaines fonctionnalités du logiciel permettent d’accéder aux services en ligne ou de s’en appuyer. L’utilisation de ces services (mais pas du logiciel) est régie par les termes distincts et les politiques de confidentialité dans le contrat [de services Microsoft](https://go.microsoft.com/fwlink/?linkid=398923). Lisez-les attentivement. Les services peuvent ne pas être disponibles dans toutes les régions.
 
-    e) **Critères concurrentiels.** Si vous êtes un concurrent direct et que vous accédez ou utilisez le logiciel à des fins de test d’évaluation, d’analyse ou de collecte d’informations concurrentiels, vous vous soustez à Microsoft, à ses filiales et à ses sociétés affiliés (y compris de manière prospective) toute restriction d’utilisation, d’accès et de test d’évaluation concurrente dans les conditions régissant votre logiciel dans la mesure où vos conditions d’utilisation sont les suivants :  ou être, plus restrictif que les termes de Microsoft. Si vous n’écartez pas ces restrictions dans les conditions régissant votre logiciel, vous n’êtes pas autorisé à accéder à ce logiciel ou à l’utiliser, et vous ne le faites pas.
+    e) **Critères concurrentiels.** Si vous êtes un concurrent direct et que vous accédez ou utilisez le logiciel à des fins d’évaluation, d’analyse ou de collecte d’informations concurrentes, vous vous soustez à Microsoft, à ses filiales et à ses sociétés affiliés (y compris de façon prospective) toute restriction d’utilisation, d’accès et de test d’évaluation concurrente dans les conditions régissant votre logiciel dans la mesure où vos conditions d’utilisation sont,  ou être, plus restrictif que les termes de Microsoft. Si vous n’écartez pas ces restrictions dans les conditions régissant votre logiciel, vous n’êtes pas autorisé à accéder à ce logiciel ou à l’utiliser, et vous ne le faites pas.
 
-1. **PRÉ-VERSION DU LOGICIEL.** Si vous téléchargez une version pré-version ou bêta du logiciel, il se peut qu’il ne fonctionne pas correctement. Il peut être différent de la version commerciale.
+1. **PRÉ-VERSION DU LOGICIEL.** Si vous téléchargez une version pré-publiée ou bêta du logiciel, il se peut qu’il ne fonctionne pas correctement. Il peut être différent de la version commerciale.
 
 1. **FEEDBACK.** If you give feedback about the software to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because Microsoft includes your feedback in them. These rights survive this agreement.
 
 1. **DONNÉES.**
 
-    a) **Collecte de données.** Le logiciel peut collecter des informations sur vous et votre utilisation du logiciel, et les envoyer à Microsoft. Microsoft peut utiliser ces informations pour fournir des services et améliorer nos produits et services. Vous pouvez refuser la plupart de ces scénarios, mais pas tous, comme décrit dans la documentation du produit.  Certaines fonctionnalités du logiciel peuvent également vous permettre de collecter des données auprès des utilisateurs de vos applications. Si vous utilisez ces fonctionnalités pour activer la collecte de données dans vos applications, vous devez vous conformer à la loi applicable, y compris fournir des notifications appropriées aux utilisateurs de vos applications. Pour en savoir plus sur la collecte et l’utilisation des données, voir la documentation d’aide et la déclaration de [https://aka.ms/privacy](https://aka.ms/privacy) confidentialité. Votre utilisation du logiciel fonctionne comme votre consentement à ces pratiques.
+    a) **Collecte de données.** Le logiciel peut collecter des informations sur vous et votre utilisation du logiciel, et les envoyer à Microsoft. Microsoft peut utiliser ces informations pour fournir des services et améliorer nos produits et services. Vous pouvez refuser la plupart de ces scénarios, mais pas tous, comme décrit dans la documentation du produit.  Certaines fonctionnalités du logiciel peuvent également vous permettre de collecter des données auprès des utilisateurs de vos applications. Si vous utilisez ces fonctionnalités pour activer la collecte de données dans vos applications, vous devez vous conformer aux lois applicables, notamment en fournissant des notifications appropriées aux utilisateurs de vos applications. Pour en savoir plus sur la collecte et l’utilisation des données, voir la documentation d’aide et la déclaration de [https://aka.ms/privacy](https://aka.ms/privacy) confidentialité. Votre utilisation du logiciel fonctionne comme votre consentement à ces pratiques.
 
-    b) **Traitement des données personnelles.** Dans la mesure où Microsoft est un sous-traitant ou un sous-traitant de données personnelles en relation avec le logiciel, Microsoft prend les engagements pris dans le règlement général sur la protection des données de l’Union européenne des Conditions d’utilisation des services en ligne pour tous les clients à compter du 25 mai 2018, à partir du [https://docs.microsoft.com/legal/gdpr](/legal/gdpr) .
+    b) **Traitement des données personnelles.** Dans la mesure où Microsoft est un sous-traitant ou un sous-traitant de données personnelles en relation avec le logiciel, Microsoft prend les engagements pris dans le règlement général sur la protection des données de l’Union européenne des Conditions d’utilisation des services en ligne pour tous les clients à compter du 25 mai 2018, [https://docs.microsoft.com/legal/gdpr](/legal/gdpr) à .
 
 1. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
 

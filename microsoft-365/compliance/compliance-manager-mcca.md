@@ -1,5 +1,5 @@
 ---
-title: Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité
+title: Analyseur de configuration de conformité Microsoft pour le Gestionnaire de conformité
 f1.keywords:
 - NOCSH
 ms.author: v-jgriffee
@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment utiliser l’Analyseur de configuration de conformité Microsoft pour être rapidement opérationnel avec le Gestionnaire de conformité Microsoft.
-ms.openlocfilehash: 9bf88a79de07accbf8487f09f642324efcbaf086
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7f90c011eab86341d08411bbef24213925489a75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181390"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158261"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analyseur de configuration de la conformité Microsoft pour le Gestionnaire de conformité (prévisualisation)
 
@@ -33,11 +33,11 @@ MCCA peut vous aider à voir rapidement quelles actions d’amélioration du Ges
 
 Une ressource supplémentaire pour comprendre MCCA consiste à consulter les [instructions README sur GitHub](https://github.com/OfficeDev/MCCA#overview). Cette page fournit des informations détaillées sur les conditions préalables et fournit des instructions d’installation complètes. Vous n’avez pas besoin d’un GitHub pour accéder à cette page.
 
-Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365 et pour les clients modérés, Cloud de la communauté du secteur public élevés et du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
+**Disponibilité**: MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365 et modérés Community (Cloud de la communauté du secteur public), Cloud de la communauté du secteur public Élevé et Clients du département de la Défense (DoD).
 
 ## <a name="install-mcca-and-run-a-report"></a>Installer MCCA et exécuter un rapport
 
-Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, il vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
+Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, elle vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
 
 #### <a name="step-1-install-windows-powershell"></a>Étape 1 : Installer Windows PowerShell
 Pour commencer, vous aurez besoin Exchange Online module PowerShell (v2.0.3 ou supérieur) disponible dans la galerie PowerShell. [Obtenir des instructions d’installation.](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)
@@ -94,7 +94,7 @@ Pour modifier les informations d’emplacement de votre rapport, vous devez four
 Suivez ces instructions pour exécuter un rapport basé sur un emplacement spécifique :
 
 1. Ouvrir PowerShell
-2. Pour spécifier une région, vous devez exécuter une cmdlet à l’aide des numéros du tableau ci-dessous qui correspondent au pays ou à la région. Entrez plusieurs nombres en les séparant par une virgule. Par exemple, la cmdlet ci-dessous exécute un rapport personnalisé pour Asia-Pacific et le Japon :
+2. Pour spécifier une région, vous devez exécuter une cmdlet à l’aide des numéros du tableau ci-dessous qui correspondent au pays ou à la région. Entrez plusieurs nombres en les séparant par une virgule. Par exemple, l’cmdlet ci-dessous exécute un rapport personnalisé pour Asia-Pacific et le Japon :
 
     ```powershell
     Get-MCCAReport -Geo @(1,7)
@@ -105,12 +105,12 @@ Suivez ces instructions pour exécuter un rapport basé sur un emplacement spéc
   | 2 | Australie |
   | 3 | Canada |
   | 4  | Europe (à l’exception de la France) / Moyen-Orient / Afrique |
-  | 5  | France |
+  | 5 | France |
   | 6  | Inde |
   | 7  | Japon |
   | 8  | Corée |
   | 9  | Amérique du Nord (à l’exception du Canada) |
-  | 10  | Amérique du Sud |
+  | 10 | Amérique du Sud |
   | 11 | Afrique du Sud |
   | 12  | Suisse |
   | 13 | Émirats arabes unis |
@@ -167,4 +167,4 @@ Sélectionnez la dropdown en face de **l’étiquette Recommandation** à droite
 
 Pour plus d’informations sur l’installation, la configuration et l’utilisation de MCCA, consultez les [instructions README](https://github.com/OfficeDev/MCCA#overview) sur GitHub (aucun compte GitHub requis).
 
-Pour plus d’informations Windows PowerShell, commencez par utiliser la [documentation PowerShell.](/powershell/scripting/how-to-use-docs) Voir aussi [Démarrage Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).
+Pour plus d’informations Windows PowerShell, commencez par utiliser [la documentation PowerShell.](/powershell/scripting/how-to-use-docs) Voir aussi [Démarrage Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).

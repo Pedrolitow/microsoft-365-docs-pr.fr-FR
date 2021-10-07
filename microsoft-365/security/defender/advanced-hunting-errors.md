@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f3b87dc127a1cf5d19d1e310ac4b31b60f690499
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202932"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154574"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gérer les erreurs de recherche avancée
 
@@ -34,7 +34,7 @@ ms.locfileid: "59202932"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 
 Le recherche avancée affiche des erreurs pour signaler les erreurs de syntaxe et chaque fois que les requêtes touchent des quotas et des [paramètres d’utilisation prédéfinies.](advanced-hunting-limits.md) Reportez-vous au tableau ci-dessous pour obtenir des conseils sur la façon de résoudre ou d’éviter les erreurs.

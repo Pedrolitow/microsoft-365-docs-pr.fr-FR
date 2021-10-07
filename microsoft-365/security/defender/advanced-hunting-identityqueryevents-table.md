@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 89f6f83112bc6bea57a3b5f7703353adb9d87a30
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 58809ea13b725a7ee7aa9b4098d221b02fe6d35c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163635"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159125"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -45,30 +45,30 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
-| `Application` | chaîne | Application qui a effectué l’action enregistrée |
-| `QueryType` | chaîne | Type de requête, tel que QueryGroup, QueryUser ou EnumerateUsers |
-| `QueryTarget` | chaîne | Nom de l’utilisateur, du groupe, de l’appareil, du domaine ou tout autre type d’entité interrogé |
-| `Query` | chaîne | Chaîne utilisée pour exécuter la requête |
-| `Protocol` | chaîne | Protocole utilisé pendant la communication |
-| `AccountName` | chaîne | Nom d’utilisateur du compte |
-| `AccountDomain` | chaîne | Domaine du compte |
-| `AccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte |
-| `AccountSid` | chaîne | Identificateur de sécurité (SID) du compte |
-| `AccountObjectId` | chaîne | Identificateur unique du compte dans Azure AD |
-| `AccountDisplayName` | chaîne | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
-| `DeviceName` | chaîne | Nom de domaine complet (FQDN) du point de terminaison |
-| `IPAddress` | chaîne | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `Port` | chaîne | Port TCP utilisé pendant la communication |
-| `DestinationDeviceName` | chaîne | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationIPAddress` | chaîne | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
-| `DestinationPort` | chaîne | Port de destination des communications réseau associées |
-| `TargetDeviceName` | chaîne | Nom de domaine complet (FQDN) de l’appareil à qui l’action enregistrée a été appliquée |
-| `TargetAccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte à qui l’action enregistrée a été appliquée |
-| `TargetAccountDisplayName` | chaîne | Nom complet du compte à qui l’action enregistrée a été appliquée |
-| `Location` | chaîne | Ville, pays ou autre emplacement géographique associé à l’événement |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `Application` | string | Application qui a effectué l’action enregistrée |
+| `QueryType` | string | Type de requête, tel que QueryGroup, QueryUser ou EnumerateUsers |
+| `QueryTarget` | string | Nom de l’utilisateur, du groupe, de l’appareil, du domaine ou tout autre type d’entité interrogé |
+| `Query` | string | Chaîne utilisée pour exécuter la requête |
+| `Protocol` | string | Protocole utilisé pendant la communication |
+| `AccountName` | string | Nom d’utilisateur du compte |
+| `AccountDomain` | string | Domaine du compte |
+| `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
+| `AccountSid` | string | Identificateur de sécurité (SID) du compte |
+| `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `DeviceName` | string | Nom de domaine complet (FQDN) du point de terminaison |
+| `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
+| `Port` | string | Port TCP utilisé lors de la communication |
+| `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationIPAddress` | string | Adresse IP du périphérique exécutant l’application serveur qui a traitée l’action enregistrée |
+| `DestinationPort` | string | Port de destination des communications réseau associées |
+| `TargetDeviceName` | string | Nom de domaine complet (FQDN) de l’appareil à qui l’action enregistrée a été appliquée |
+| `TargetAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte à qui l’action enregistrée a été appliquée |
+| `TargetAccountDisplayName` | string | Nom complet du compte à qui l’action enregistrée a été appliquée |
+| `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
 | `ReportId` | long | Identificateur unique de l’événement |
-| `AdditionalFields` | chaîne | Informations supplémentaires sur l’entité ou l’événement |
+| `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
 ## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

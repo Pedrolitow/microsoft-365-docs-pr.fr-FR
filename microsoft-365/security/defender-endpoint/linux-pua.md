@@ -2,27 +2,25 @@
 title: Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour Endpoint sur Linux
 description: Détecter et bloquer les applications potentiellement indésirables (PUA) à l’aide de Microsoft Defender pour endpoint sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, pua, pus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e3484d07263063c9fab04a056cd09ac9b5d67a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73ddc6e4ec4c114a86c88c62287e15e7fa051175
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154793"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Détecter et bloquer les applications potentiellement indésirables avec Microsoft Defender pour Endpoint sur Linux
 
@@ -45,7 +43,7 @@ Ces applications peuvent augmenter le risque d’infection de votre réseau par 
 
 Defender pour le point de terminaison sur Linux peut détecter et signaler des fichiers PUA. Lorsqu’ils sont configurés en mode de blocage, les fichiers PUA sont placés en quarantaine.
 
-Lorsqu’une PUA est détectée sur un point de terminaison, Defender for Endpoint sur Linux conserve un enregistrement de l’infection dans l’historique des menaces. L’historique peut être visualisé à partir du Microsoft 365 Defender centre de gestion ou via l’outil `mdatp` en ligne de commande. Le nom de la menace contient le mot « Application ».
+Lorsqu’une puA est détectée sur un point de terminaison, Defender for Endpoint sur Linux conserve un enregistrement de l’infection dans l’historique des menaces. L’historique peut être visualisé à partir du portail Microsoft 365 Defender ou via l’outil `mdatp` en ligne de commande. Le nom de la menace contient le mot « Application ».
 
 ## <a name="configure-pua-protection"></a>Configurer la protection PUA
 
@@ -70,7 +68,7 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Utilisez la console de gestion pour configurer la protection PUA :
 
-Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle qu’une console de jeu ou ansible, de la même manière que d’autres paramètres de produit sont configurés. Pour plus d’informations, voir la section [Paramètres](linux-preferences.md#threat-type-settings) du type de menace de l’article Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
+Dans votre entreprise, vous pouvez configurer la protection PUA à partir d’une console de gestion, telle qu’Unetem ou Ansible, de la même manière que d’autres paramètres de produit sont configurés. Pour plus d’informations, voir la section [Paramètres](linux-preferences.md#threat-type-settings) du type de menace de l’article Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

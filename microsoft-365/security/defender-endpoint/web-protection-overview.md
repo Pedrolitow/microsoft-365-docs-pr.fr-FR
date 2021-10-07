@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8adc45741bfecfce7373ba23303803f90aea65ab
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 4e1f4f75971f70f97766af1ace967dfecc461cd2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159233"
 ---
 # <a name="web-protection"></a>Protection Web
 
@@ -38,7 +38,7 @@ ms.locfileid: "60010092"
 
 ## <a name="about-web-protection"></a>À propos de la protection web
 
-La protection web dans Microsoft Defender pour point de terminaison est une fonctionnalité de protection contre les menaces [web,](web-threat-protection.md)de filtrage de contenu [Web](web-content-filtering.md)et [d’indicateurs personnalisés.](manage-indicators.md) La protection Web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le portail Microsoft 365 Defender en allant à **Rapports > protection Web.**
+La protection web dans Microsoft Defender pour point de terminaison est une fonctionnalité de protection contre les menaces [web,](web-threat-protection.md)de filtrage de contenu [Web](web-content-filtering.md)et [d’indicateurs personnalisés.](manage-indicators.md) La protection web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le portail Microsoft 365 Defender en allant à **Rapports > protection Web.**
 
 :::image type="content" alt-text="Image de toutes les cartes de protection web." source="images/web-protection.png" lightbox="images/web-protection.png":::
 
@@ -56,7 +56,7 @@ Pour plus d’informations, voir [Protection contre les menaces web.](web-threat
 
 ### <a name="custom-indicators"></a>Indicateurs personnalisés
 
-Les détections d’indicateurs personnalisés sont également résumées dans les rapports sur les menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
+Les détections d’indicateurs personnalisés sont également résumées dans les rapports de menaces web de votre organisation sous détections de **menaces Web** au fil du temps et résumé **des menaces Web.**
 
 L’indicateur personnalisé inclut :
 
@@ -72,7 +72,7 @@ Le filtrage de contenu **Web inclut l’activité Web par catégorie,** le résu
 
 Le filtrage de contenu Web inclut :
 
-- Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite.
+- Les utilisateurs ne peuvent pas accéder aux sites web dans des catégories bloquées, qu’ils naviguent en local ou en de suite.
 - Vous pouvez déployer des stratégies variées sur différents ensembles d’utilisateurs à l’aide des groupes d’appareils définis dans les paramètres de contrôle d’accès basés sur les rôles Microsoft Defender for [Endpoint.](/microsoft-365/security/defender-endpoint/rbac)
 - Vous pouvez accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
@@ -117,7 +117,7 @@ Les adresses IP internes ne sont pas pris en charge par les indicateurs personna
 
 ## <a name="protect-browsers"></a>Protéger les navigateurs
 
-Dans tous les scénarios de protection web, SmartScreen et la Protection du réseau peuvent être utilisés ensemble pour assurer la protection des navigateurs et processus internes et tiers. SmartScreen est intégré directement à Microsoft Edge, tandis que la Protection du réseau surveille le trafic dans les navigateurs et processus tiers. Le diagramme ci-dessous illustre ce concept. Ce diagramme des deux clients travaillant ensemble pour fournir plusieurs couvertures de navigateur/d’application est précis pour toutes les fonctionnalités de protection Web (indicateurs, menaces web, filtrage de contenu).
+Dans tous les scénarios de protection web, SmartScreen et la Protection du réseau peuvent être utilisés ensemble pour assurer la protection des navigateurs et processus internes et tiers. SmartScreen est intégré directement à Microsoft Edge, tandis que la Protection du réseau surveille le trafic dans les navigateurs et processus tiers. Le diagramme ci-dessous illustre ce concept. Ce diagramme des deux clients travaillant ensemble pour fournir plusieurs couvertures de navigateur/d’application est précis pour toutes les fonctionnalités de protection web (indicateurs, menaces web, filtrage de contenu).
 
 :::image type="content" alt-text="Utilisation de SmartScreen et de la Protection du réseau ensemble." source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
 
@@ -125,7 +125,7 @@ Dans tous les scénarios de protection web, SmartScreen et la Protection du rés
 
 Les réponses du cloud SmartScreen sont normalisées. Des outils tels que Fiddler peuvent être utilisés pour inspecter la réponse du service cloud, ce qui permet de déterminer la source du bloc.
 
-Lorsque le service cloud SmartScreen répond avec une réponse d’avertissement, de blocage ou d’avertissement, une catégorie de réponse et un contexte de serveur sont relayés au client. Dans Microsoft Edge, la catégorie de réponse est utilisée pour déterminer la page de blocage appropriée à afficher (malveillant, hameçonnage, stratégie organisationnelle).
+Lorsque le service cloud SmartScreen répond avec une réponse d’avertissement, de blocage ou d’avertissement, une catégorie de réponse et un contexte de serveur sont relayés au client. Dans Microsoft Edge, la catégorie de réponse est utilisée pour déterminer la page de blocage appropriée à afficher (malveillant, hameçonnage, stratégie d’organisation).
 
 Le tableau ci-dessous présente les réponses et leurs fonctionnalités corrélées.
 
@@ -168,7 +168,7 @@ Pour lister les blocs qui sont dus à d’autres fonctionnalités (comme les ind
 
 ## <a name="user-experience"></a>Expérience utilisateur
 
-Si un utilisateur visite une page web qui présente un risque de programmes malveillants, d’hameçonnage ou d’autres menaces web, Microsoft Edge déclenche une page de blocage qui indique « Ce site a été signalé comme non sécurisé » avec des informations relatives à la menace.
+Si un utilisateur visite une page web qui présente un risque de programmes malveillants, de hameçonnage ou d’autres menaces web, Microsoft Edge déclenche une page de blocage qui indique « Ce site a été signalé comme non sécurisé » avec des informations relatives à la menace.
 
 > [!div class="mx-imgBorder"]
 > ![Page bloquée par Microsoft Edge.](../../media/web-protection-malicious-block.png)

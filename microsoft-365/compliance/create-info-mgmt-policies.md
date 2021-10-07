@@ -9,7 +9,7 @@ ms.date: 5/16/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une stratégie de gestion des informations pour contrôler la durée de la gestion des informations et suivre les personnes qui utilisent ces informations.
-ms.openlocfilehash: eb5d493cfc8f442c5210b99ec394ebf72f30086e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7307e496349360777e7f5aa7b49948f113d91387
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163953"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156497"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -79,7 +79,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
 3. Dans la page Type de contenu Paramètres site, sélectionnez le type de contenu à ajouter une stratégie.
 
-4. Dans la page Type de contenu de site, sous **Paramètres** \> **stratégie de gestion des informations.**
+4. Dans la page Type de contenu de site, **sous Paramètres** stratégie de gestion \> **des informations.**
 
 5. Dans la page Modifier la stratégie, entrez un nom et une description pour la stratégie, puis écrivez une brève description qui explique aux utilisateurs à quoi la stratégie est dédiée.
 
@@ -135,7 +135,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 
    3. Choisissez **OK** pour appliquer la fonctionnalité de code-barres à la stratégie.
 
-   La stratégie de code-barres génère des codes-barres standard code 39. Chaque image de code-barres contient du texte sous le symbole de code-barres qui représente la valeur du code-barres. Cela permet d’utiliser les données de code-barres même lorsque le matériel d’analyse n’est pas disponible. Les utilisateurs peuvent taper manuellement le numéro de code-barres dans la zone de recherche pour localiser l’élément sur un site.  <br/> |
+   La stratégie de code-barres génère des codes-barres standard code 39. Chaque image de code-barres inclut du texte sous le symbole de code-barres qui représente la valeur du code-barres. Cela permet d’utiliser les données de code-barres même lorsque le matériel d’analyse n’est pas disponible. Les utilisateurs peuvent taper manuellement le numéro de code-barres dans la zone de recherche pour localiser l’élément sur un site.  <br/> |
 
 10. Pour exiger que les documents soumis à cette stratégie ont des étiquettes, sélectionnez Activer les étiquettes, puis spécifiez les paramètres que vous souhaitez pour les étiquettes.
 
@@ -179,13 +179,13 @@ Si vous souhaitez définir une stratégie de gestion des informations autre que 
 
 Si, à un moment donné, vous décidez de passer d’un type de contenu à une stratégie basée sur l’emplacement pour une liste ou une bibliothèque, seule la stratégie de rétention sera utilisée comme stratégie basée sur l’emplacement. Toutes les autres stratégies de gestion (audits, codes-barres et codes-barres) sont héritées des types de contenu associés.
 
-Les stratégies basées sur l’emplacement peuvent être désactivées pour une collection de sites en désactivant la fonctionnalité Rétention basée sur la bibliothèque et les dossiers. Cela permet aux administrateurs de collections de sites de s’assurer que leurs stratégies de type de contenu ne sont pas overrides par les stratégies d’emplacement d’un administrateur de liste.
+Les stratégies basées sur l’emplacement peuvent être désactivées pour une collection de sites en désactivant la fonctionnalité de rétention basée sur la bibliothèque et les dossiers. Cela permet aux administrateurs de collections de sites de s’assurer que leurs stratégies de type de contenu ne sont pas overrides par les stratégies d’emplacement d’un administrateur de liste.
 
 Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier les paramètres de stratégie de gestion des informations d’une liste ou d’une bibliothèque.
 
 1. Accédez à la liste ou à la bibliothèque pour laquelle vous souhaitez spécifier une stratégie de gestion des informations.
 
-2. Dans le ruban, choisissez **l’onglet** Bibliothèque **ou** Liste bibliothèque \> **Paramètres** ou Liste **Paramètres**.
+2. Dans le ruban, choisissez **l’onglet** Bibliothèque **ou** Liste \> **bibliothèque Paramètres** ou Liste **Paramètres**.
 
    Dans SharePoint Online, cliquez sur **Paramètres,** puis sur **Paramètres** de liste ou **Paramètres de bibliothèque.**
 
@@ -193,7 +193,7 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
    ![Lien des stratégies de gestion des informations sur la page des paramètres de la bibliothèque de documents.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
-4. Dans la page Stratégie de gestion des Paramètres, assurez-vous que la source de rétention de la liste ou de la bibliothèque est définie sur Bibliothèque et Dossiers.
+4. Dans la page Stratégie de gestion Paramètres informations, assurez-vous que la source de rétention de la liste ou de la bibliothèque est définie sur Bibliothèque et Dossiers.
 
    Si **le type de contenu** apparaît en tant que source, cliquez sur Modifier la **source,** puis cliquez sur **Bibliothèque et dossiers.** Vous êtes averti que les stratégies de rétention de type de contenu seront ignorées. Sélectionnez **OK**.
 
@@ -214,7 +214,7 @@ Vous avez besoin au moins de l’autorisation Gérer les listes pour modifier le
 
    - Sous **Action,** spécifiez ce que vous souhaitez faire à l’expiration du document ou de l’élément. Pour activer une action spécifique sur le document ou l’élément (par exemple, la suppression), sélectionnez une action dans la liste.
 
-8. **L’option** Démarrer un flux de travail n’est disponible que si vous définissez une stratégie pour une liste, une bibliothèque ou un type de contenu qui possède déjà un flux de travail qui lui est associé. Vous aurez alors le choix entre les flux de travail.
+8. **L’option** Démarrer un flux de travail est disponible uniquement si vous définissez une stratégie pour une liste, une bibliothèque ou un type de contenu qui a déjà un flux de travail associé à celui-ci. Vous aurez alors le choix entre les flux de travail.
 
 9. Sous **Récurrence,** **sélectionnez Répéter l’action de cette étape...** et entrez la fréquence de récurrisation de l’action.
 
@@ -232,7 +232,7 @@ Si des stratégies de gestion des informations ont déjà été créées pour vo
 
 1. Accédez à la liste ou à la bibliothèque qui contient le type de contenu auquel vous souhaitez appliquer une stratégie.
 
-2. Dans le ruban, choisissez **l’onglet** Bibliothèque **ou** Liste bibliothèque \> **Paramètres** ou Liste **Paramètres**.
+2. Dans le ruban, choisissez **l’onglet** Bibliothèque **ou** Liste \> **bibliothèque Paramètres** ou Liste **Paramètres**.
 
    Dans SharePoint Online, cliquez sur **Paramètres,** puis sur **Paramètres** de liste ou **Paramètres de bibliothèque.**
 
@@ -286,7 +286,7 @@ Vous pouvez définir une stratégie de gestion des informations, puis créer un 
 
 L’importation d’une stratégie de gestion des informations vous permet de l’appliquer à plusieurs types de contenu au niveau du site ou de la liste au sein d’une collection de sites donnée. Les avantages de cette modification sont doubles : vous n’avez pas besoin de re-définir et d’appliquer la stratégie sur chaque type de contenu, et vous pouvez plus facilement gérer les modifications de stratégie en a apporter des modifications à la stratégie au même endroit.
 
-1. Sur la page d’accueil de la collection de sites à laquelle vous souhaitez appliquer la stratégie, choisissez **Paramètres** Engrenage de petite Paramètres qui a pris la place de ![ Site Paramètres. Site ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Paramètres**.
+1. Sur la page d’accueil de la collection de sites à laquelle vous souhaitez appliquer la stratégie, choisissez **Paramètres** Engrenage petite Paramètres qui a pris la place de ![ Site Paramètres. Site ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Paramètres**.
 
    In a SharePoint group-connected site, click **Paramètres,** click **Site Contents,** and then click **Site Paramètres**.
 

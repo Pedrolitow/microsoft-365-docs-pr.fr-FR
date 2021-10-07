@@ -2,7 +2,7 @@
 title: Conformité des communications dans Microsoft 365
 description: Découvrez comment configurer la conformité des communications dans Microsoft 365.
 keywords: Microsoft 365, risques internes, conformité
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 46ddc7584b0299a7098b3fbe0758bdd9d4ee914c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a59954ba862122b27f2c2fb4bc87f1cff73eacc8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163985"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155057"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité des communications dans Microsoft 365
 

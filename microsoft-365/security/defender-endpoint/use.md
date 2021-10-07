@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05bfd6652395b7a1687320ec78d49caba67dc160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ba63747b93bab97a987f2ab8b400bea9583d332d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157745"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Vue d’ensemble du Centre de sécurité Microsoft Defender
 
@@ -52,7 +52,7 @@ Dans ce guide interactif, vous allez découvrir comment examiner les menaces qui
 
 Rubrique | Description
 :---|:---
-[Vue d’ensemble du portail](portal-overview.md) | Comprendre la disposition du portail et les descriptions de la zone.
+[Vue d’ensemble du portail](portal-overview.md) | Comprendre la disposition du portail et les descriptions de zone.
 [Afficher le tableau de bord Opérations de sécurité](security-operations-dashboard.md) | Le tableau de bord Des opérations microsoft Defender pour la sécurité  **des** points de terminaison fournit un instantané de votre réseau. Vous pouvez afficher des agrégats d’alertes, l’état global du service des appareils sur votre réseau, examiner des appareils, des fichiers et des URL, et afficher des instantanés des menaces vues sur les appareils.
 [Afficher le tableau de bord gestion & des menaces et des vulnérabilités](tvm-dashboard-insights.md) | Le  tableau de bord gestion des vulnérabilités de & menaces vous permet d’afficher l’exposition et le Degré de sécurisation Microsoft pour les appareils côte à côte avec les recommandations de sécurité les plus importantes, la vulnérabilité logicielle, les activités de correction et les appareils exposés.
 [Afficher le tableau de bord Analyse des menaces et prendre les mesures de prévention recommandées](threat-analytics.md) | Le tableau **de bord Analyse des menaces** vous permet d’évaluer et de contrôler en permanence l’exposition des risques aux menaces. Utilisez les graphiques pour identifier rapidement les appareils pour la présence ou l’absence d’atténuations.

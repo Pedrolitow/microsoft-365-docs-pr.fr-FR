@@ -8,18 +8,18 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment effectuer l’implémentation et les tests sur les contrôles dans le Gestionnaire de conformité Microsoft. Affecter des rapports de travail, stocker de la documentation et exporter des rapports.
-ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b8c85b4d22fdd8161300d250d7322f68959f808
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181396"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156533"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Affecter et effectuer des actions d’amélioration dans le Gestionnaire de conformité
 
@@ -117,7 +117,7 @@ Pour modifier l’état d’une action d’amélioration, sélectionnez **Modifi
     - **Échec du risque faible :** échec du test, faible risque
     - **Échec du risque moyen :** échec du test, risque moyen
     - **Échec d’un risque élevé** : échec du test, risque élevé
-    - **Hors de portée :** l’action n’est pas étendue pour l’évaluation et ne contribue pas à votre score
+    - **Hors de portée :** l’action est hors de portée de l’évaluation et ne contribue pas à votre score
 - **Date de test**: basculez dans la fenêtre pop-up du calendrier pour sélectionner la date
 
 Les actions courantes sont synchronisées entre les groupes. Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action se synchronisent automatiquement avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.

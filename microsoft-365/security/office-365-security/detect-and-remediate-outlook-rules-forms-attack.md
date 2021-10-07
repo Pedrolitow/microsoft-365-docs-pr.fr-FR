@@ -11,26 +11,26 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les règles de Outlook et les attaques par injections de formulaires personnalisés dans Office 365
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0846051b65b34ec26358f87bb4ca49302573e6e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c715552fedeefeb87206d889aa448609e8d7f60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163528"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157637"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et corriger les Outlook et les attaques par injection de formulaires personnalisés
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-**Résumé** Découvrez comment reconnaître et corriger les règles de Outlook et les attaques par injections de formulaires personnalisées dans Office 365.
+**Résumé** Découvrez comment reconnaître et corriger les règles de Outlook et les attaques par injection de formulaires personnalisées dans Office 365.
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Qu’est-ce que l Outlook d’injection de formulaires personnalisés et de règles de sécurité ?
 
@@ -140,11 +140,11 @@ Vous devez avoir des droits d’administrateur général pour exécuter le scrip
 
 3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans qui vous avez enregistré le script.
 
-4. Exécutez cette ligne de commande PowerShell comme `.\Get-AllTenantRulesAndForms.ps1` suit.\Get-AllTenantRulesAndForms.ps1
+4. Exécutez cette ligne de commande PowerShell comme suit `.\Get-AllTenantRulesAndForms.ps1` :\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interprétation de la sortie
 
-- **MailboxRulesExport-*yyyy-mm-dd*.csv**: examinez les règles (une par ligne) pour les conditions d’action qui incluent des applications ou des exécutables :
+- **MailboxRulesExport-*yyyy-mm-dd*.csv**: examiner les règles (une par ligne) pour les conditions d’action qui incluent des applications ou des exécutables :
 
   - **ActionType (colonne A)**: si vous voyez la valeur « ID_ACTION_CUSTOM », la règle est probablement malveillante.
 
@@ -166,7 +166,7 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 3. Si vous n’êtes pas sûr de la présence d’autres programmes malveillants, vous pouvez formater et réinstaller tous les logiciels sur l’appareil. Pour les appareils mobiles, vous pouvez suivre les étapes des fabricants pour réinitialiser l’appareil à l’image d’usine.
 
-4. Installez les versions les plus récentes de Outlook. N’oubliez pas que la version actuelle de Outlook bloque les deux types d’attaque par défaut.
+4. Installez les versions les plus récentes de Outlook. N’oubliez pas que la version actuelle Outlook bloque les deux types d’attaque par défaut.
 
 5. Une fois toutes les copies hors connexion de la boîte aux lettres supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une copie de haute qualité) et suivez les étapes de l’authentification [multifacteur](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) du programme d’installation pour les utilisateurs si l’authentification multifacteur n’a pas encore été activée. Cela garantit que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, hameçonnage ou nouvelle utilisation du mot de passe).
 
@@ -204,7 +204,7 @@ La meilleure façon de protéger vos comptes d’utilisateur, et en particulier 
 
   - **Voyage impossible**: cette stratégie profile votre environnement et déclenche des alertes lorsque des activités sont détectées par le même utilisateur à différents emplacements dans une période plus courte que le temps de déplacement prévu entre les deux emplacements. Cela peut indiquer qu’un autre utilisateur utilise les mêmes informations d’identification. La détection de ce comportement anormal nécessite une période d’apprentissage initiale de sept jours au cours de laquelle elle apprend le modèle d’activité d’un nouvel utilisateur.
 
-  - Activité d’emprunt d’identité inhabituelle **(par utilisateur)**: cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités usurpées d’identité dans une seule session par rapport à la ligne de base acquise, ce qui peut indiquer une tentative de violation.
+  - Activité d’emprunt d’identité inhabituelle **(par utilisateur)**: cette stratégie profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités usurpées d’identité dans une même session en respectant la ligne de base acquise, ce qui peut indiquer une tentative de violation.
 
 - Utilisez un outil tel que [Office 365 Secure Score](https://securescore.office.com/) pour gérer les configurations et comportements de sécurité des comptes.
 

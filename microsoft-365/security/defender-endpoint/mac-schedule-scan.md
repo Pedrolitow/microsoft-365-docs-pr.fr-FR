@@ -2,15 +2,13 @@
 title: Planifier des analyses avec Microsoft Defender pour Endpoint sur macOS
 description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender pour Endpoint dans macOS afin de mieux protéger les ressources de votre organisation.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, analyses, antivirus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9ec708ee24d33765203730412ddfc7eea5cc2e37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1d785f88160a7e0ffd17285b384f54ba4f2f74a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203028"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156225"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Planifier des analyses avec Microsoft Defender pour endpoint sur macOS
 

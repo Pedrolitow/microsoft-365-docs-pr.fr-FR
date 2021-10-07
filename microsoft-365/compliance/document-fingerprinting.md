@@ -10,14 +10,14 @@ ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. La création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés au sein de votre organisation. Cette rubrique décrit les concepts sous-tels que la création d’une empreinte numérique de document et explique comment en créer une à l’aide de PowerShell.
-ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6661fd52bfe94ab23a38eaa42eca45a3e609c565
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183495"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155045"
 ---
 # <a name="document-fingerprinting"></a>Création d’une empreinte numérique de document
 
@@ -53,7 +53,7 @@ Par exemple, vous pouvez configurer une stratégie DLP qui empêche les employé
   
 ### <a name="supported-file-types"></a>Types de fichiers pris en charge
 
-L’empreinte numérique de document prend en charge les mêmes types de fichiers que les règles de flux de messagerie (également appelées règles de transport). Pour obtenir la liste des types de fichiers pris en charge, voir Types de fichiers pris en charge [pour l’inspection](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)du contenu des règles de flux de messagerie. Remarque rapide sur les types de fichiers : ni les règles de flux de messagerie, ni l’empreinte numérique de document ne prend en charge le type de fichier .dotx, ce qui peut prêter à confusion car il s’agit d’un fichier modèle dans Word. Lorsque vous voyez le mot « template » dans cette rubrique et dans d’autres rubriques sur la création d’empreintes digitales document, il fait référence à un document que vous avez établi en tant que formulaire standard, et non en tant que type de fichier modèle.
+L’empreinte numérique de document prend en charge les mêmes types de fichiers que les règles de flux de messagerie (également appelées règles de transport). Pour obtenir la liste des types de fichiers pris en charge, voir Types de fichiers pris en charge [pour l’inspection](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)du contenu des règles de flux de messagerie. Remarque rapide sur les types de fichiers : ni les règles de flux de messagerie, ni l’empreinte numérique de document ne prend en charge le type de fichier .dotx, ce qui peut prêter à confusion car il s’agit d’un fichier modèle dans Word. Lorsque vous voyez le mot « modèle » dans cette rubrique et dans d’autres rubriques sur l’empreinte numérique de document, il fait référence à un document que vous avez établi en tant que formulaire standard, et non en tant que type de fichier modèle.
   
 #### <a name="limitations-of-document-fingerprinting"></a>Limites de l’empreinte numérique de document
 

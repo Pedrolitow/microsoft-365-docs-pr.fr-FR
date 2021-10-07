@@ -8,10 +8,11 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés de Office » dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 357993a3a907edcccdc74d29d13a6eab464690aa
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 53372a4075de6d6a4790d49dc23e79e0ca60d65d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773099"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155993"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office’affiche dans Nouveautés
 
@@ -44,7 +45,7 @@ Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisa
 1. Lorsque vous cliquez sur le nom de la fonctionnalité, un panneau volant apparaît avec les informations suivantes :
      - Brève description de la fonctionnalité.
      - Lien vers un article pour en savoir plus sur la fonctionnalité.
-     - Les Office applications dans qui la fonctionnalité apparaît.
+     - Le Office applications dans qui la fonctionnalité apparaît.
      - La première version (publication) dans qui la fonctionnalité est disponible pour ce canal.
 1. Choose **Hide from users**. Ou, si vous avez précédemment caché la fonctionnalité, choisissez **Afficher aux utilisateurs.**
 
@@ -58,9 +59,9 @@ Vous pouvez également sélectionner plusieurs fonctionnalités dans la page Gé
 
 ## <a name="list-of-features"></a>Liste des fonctionnalités
 
-Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer les Office **qui apparaissent dans** la page Nouveautés. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
+Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer les Office **qui apparaissent dans la** page Nouveautés. Vous pouvez filtrer par canal, application ou état, ou par combinaison d’entre eux.
 
-De nouvelles fonctionnalités apparaissent sur la page en fonction de la planification suivante :
+De nouvelles fonctionnalités apparaissent sur la page selon la planification suivante :
 
 <br>
 

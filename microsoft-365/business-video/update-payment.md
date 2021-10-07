@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment mettre à jour votre mode de paiement pour Microsoft 365 entreprise.
-ms.openlocfilehash: a5c6c5082c5d4236b5eb7ab9e6c3af45793e16cb
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: a43f60201a282c8735480aa98f33054edbf59313
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401529"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160635"
 ---
 # <a name="update-the-payment-method-for-your-subscription"></a>Mettre à jour le mode de paiement de votre abonnement
 
@@ -38,7 +38,7 @@ Vous pouvez facilement mettre à jour le mode de paiement de votre abonnement Mi
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles).
+Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="try-it"></a>Essayez !
 

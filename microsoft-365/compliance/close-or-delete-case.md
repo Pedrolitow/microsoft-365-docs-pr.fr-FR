@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez ce qui se produit lorsqu’un examen ou un dossier juridique pris en charge par un Advanced eDiscovery est fermé ou supprimé.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1096223c3bc6d0648aa45207595c816e26e70da8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 88e0892bec3f220d9c405f3886c37fa89ad2c647
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164073"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158345"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Fermer ou supprimer un cas Advanced eDiscovery dossier
 
@@ -32,7 +32,7 @@ Lorsque le dossier juridique ou l’examen pris en charge par un Advanced eDisco
 
 Voici ce qui se produit lorsque vous fermez Advanced eDiscovery cas :
 
-- Si le cas contient des emplacements de contenu en attente, ces conservations sont désactivées. Une fois la attente désactivée, une période de grâce de 30 jours (appelée attente différée) est appliquée aux emplacements de contenu qui étaient en attente. Cela permet d’empêcher la suppression immédiate du contenu et donne aux administrateurs la possibilité de rechercher ou de récupérer du contenu qui sera définitivement supprimé après l’expiration de la période de retard. Pour plus d’informations, voir [Suppression d’emplacements de contenu d’une attente eDiscovery.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
+- Si le cas contient des emplacements de contenu en attente, ces conservations sont désactivées. Une fois la période d’attente désactivée, une période de grâce de 30 jours (appelée attente différée) est appliquée aux emplacements de contenu qui étaient en attente. Cela permet d’empêcher la suppression immédiate du contenu et donne aux administrateurs la possibilité de rechercher ou de récupérer du contenu qui sera définitivement supprimé après l’expiration de la période de retard. Pour plus d’informations, voir [Suppression d’emplacements de contenu d’une attente eDiscovery.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
 
 - La fermeture d’un cas désactive uniquement les conservations associées à ce cas. Si d’autres sont conservées sur un emplacement de contenu (par exemple, une attente pour litige, une découverte électronique principale ou une attente d’un autre cas de Advanced eDiscovery), celles-ci sont conservées.
 
@@ -54,7 +54,7 @@ Pour fermer un cas :
 
 ## <a name="reopen-a-closed-case"></a>Rouvrir un cas fermé
 
-Lorsque vous rouvrez un Advanced eDiscovery, les cas de non-remise en vigueur lors de la fermeture du cas ne sont pas automatiquement rétablis. Une fois le cas rouvert, vous devez passer à l’onglet **Holds** et activer les précédentes. Pour activer une conservation, sélectionnez-la pour afficher la page de menu volant, puis réglez la bascule **État** sur **Activer**.
+Lorsque vous rouvrez un Advanced eDiscovery, les cas de non-remise en vigueur lors de la fermeture du cas ne sont pas rétablis automatiquement. Une fois le cas rouvert, vous devez passer à l’onglet **Holds** et activer les précédentes. Pour activer une conservation, sélectionnez-la pour afficher la page de menu volant, puis réglez la bascule **État** sur **Activer**.
 
 Pour rouvrir un cas fermé :
 
@@ -73,7 +73,7 @@ Vous pouvez supprimer les cas d’Advanced eDiscovery actifs et fermés. Lorsque
 > [!NOTE]
 > Dans les scénarios de débordement de données, la seule façon de supprimer des éléments d’un jeu à réviser consiste à supprimer Advanced eDiscovery cas. Les autres méthodes de « recherche et purge » ne suppriment pas les éléments d’un jeu à réviser.
 
-Avant de pouvoir supprimer un cas (qu’il soit  actif ou fermé), vous devez d’abord supprimer toutes les ententes associées au cas. Cela inclut la suppression des maintiens avec l’état **« Off**».
+Avant de pouvoir supprimer un cas (qu’il soit actif ou fermé), vous devez d’abord supprimer toutes les *réserves* associées au cas. Cela inclut la suppression des maintiens avec l’état **« Off**».
 
 Pour supprimer les cas associés à un cas :
 
@@ -89,5 +89,5 @@ Pour supprimer un cas :
 
 2. Sous l’onglet **Paramètres**, sous **Informations de cas**, cliquez sur **Sélectionner**.
 
-3. En bas de la page volant **Informations** sur la cas, cliquez sur **Actions,** puis cliquez **sur Supprimer le cas.**
+3. En bas de la page volant **Informations** sur la cas, cliquez sur **Actions,** puis sur **Supprimer le cas.**
 

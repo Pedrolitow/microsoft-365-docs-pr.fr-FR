@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur 17a-4 Fuze DataParser pour importer et archiver des données De fuze dans Microsoft 365.
-ms.openlocfilehash: 6dafd773586a179fd652504b291173d881361d4b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 6c65fef3bf5b8a3133ba20d02a141c6ae5a953b8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401517"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155297"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>Configurer un connecteur pour archiver les données de la fusion
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec 17a-4 pour configurer l’analyseur de données En cours.
 
-2. Régulièrement, les éléments de l’analyseur de données sont collectés par l’analyseur de données. DataParser convertit également le contenu d’un message au format de message électronique.
+2. Régulièrement, les éléments Fuze sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
 3. Le connecteur DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 

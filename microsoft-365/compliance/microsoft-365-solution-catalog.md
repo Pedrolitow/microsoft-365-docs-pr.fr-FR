@@ -8,19 +8,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 description: En savoir plus sur Microsoft 365 catalogue de solutions, y compris ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7b7c7f299201a25518b187eed1bd78e7f67d678b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a0b6d6ac32f9dfcc81a93deddc081dcb77acd973
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206179"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158201"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
-Vous recherchez un moyen de commencer rapidement les tâches de conformité dans Microsoft 365 ? Consultez le catalogue [Microsoft 365 solutions](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et démarrer rapidement avec les solutions de gestion des risques et de la conformité.
+Vous recherchez un moyen de commencer rapidement les tâches de conformité dans Microsoft 365 ? Consultez le catalogue [Microsoft 365 solutions](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et démarrer rapidement avec les solutions de gestion des risques et de conformité.
 
 Les solutions de conformité Microsoft 365 sont des ensembles de fonctionnalités intégrées que vous pouvez utiliser pour vous aider à gérer des scénarios de conformité de bout en bout. Les fonctionnalités et outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports, et bien plus encore.
 
@@ -32,7 +32,7 @@ Le catalogue de solutions est organisé en sections qui contiennent des cartes d
 
 ![Microsoft 365 page d’accueil du catalogue de solutions.](../media/m365-solution-catalog-home.png)
 
-Lorsque vous **sélectionnez Afficher** pour une carte de solution, vous verrez des informations détaillées sur la solution de conformité et sur la façon de commencer. Ces informations incluent une vue d’ensemble, des exigences préalables à la configuration, des ressources d’apprentissage, des contrôles qui vous permettent d’épingler la carte au volet de navigation et une option de partage de la solution sous forme de lien, de courrier électronique ou de message Microsoft Teams message électronique.
+Lorsque vous **sélectionnez Afficher** pour une carte de solution, vous verrez des informations détaillées sur la solution de conformité et sur la façon de commencer. Ces informations incluent une vue d’ensemble, des exigences préalables à la configuration, des ressources d’apprentissage, des contrôles qui vous permettent d’épingler la carte au volet de navigation et une option de partage de la solution sous forme de lien, d’e-mail ou de message Microsoft Teams message électronique.
 
 ![Microsoft 365 de conformité des communications.](../media/m365-solution-catalog-communication-compliance.png)
 
@@ -60,7 +60,7 @@ La section **Gestion des** risques internes sur la page d’accueil vous montre 
 - [Conformité des communications](communication-compliance.md): réduit les risques de communication en vous aidant à capturer automatiquement les messages inappropriés, à examiner les éventuelles violations de stratégie et à prendre des mesures pour minimiser les dommages.
 - [Gestion des risques internes :](insider-risk-management.md)détecter les activités risquées au sein de votre organisation pour vous aider à identifier, examiner et prendre des mesures rapidement sur les risques internes et les menaces.
 
-## <a name="discovery--response-section"></a>Section détection & réponse
+## <a name="discovery--response-section"></a>Section Détection & réponse
 
 La section **De détection & réponse** sur la page d’accueil vous montre d’un coup d’œil comment votre organisation peut rapidement rechercher, examiner et répondre aux problèmes de conformité avec les données pertinentes.
 
@@ -68,7 +68,7 @@ La section **De détection & réponse** sur la page d’accueil vous montre d’
 
 À partir de là, vous verrez des cartes pour les solutions suivantes :
 
-- [Audit](search-the-audit-log-in-security-and-compliance.md): enregistre l’activité des utilisateurs et des administrateurs de votre organisation afin que vous pouvez effectuer des recherches dans le journal d’audit et examiner une liste complète des activités dans tous les emplacements et services.
+- [Audit :](search-the-audit-log-in-security-and-compliance.md)enregistre les activités des utilisateurs et des administrateurs de votre organisation afin que vous pouvez effectuer des recherches dans le journal d’audit et examiner une liste complète des activités dans tous les emplacements et services.
 - [Demandes des personnes responsables](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)des données : recherche et exporte les données personnelles d’un utilisateur pour vous aider à répondre aux demandes des personnes objet de données concernant le R GDPR.
 - [eDiscovery](manage-legal-investigations.md)
     - [Core eDiscovery](./get-started-core-ediscovery.md): recherche dans les emplacements de contenu pour identifier, conserver et exporter des données en réponse à des demandes de découverte légale et des cas eDiscovery.

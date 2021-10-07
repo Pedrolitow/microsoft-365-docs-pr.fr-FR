@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 ms.date: 05/01/2021
-ms.openlocfilehash: d93b45258b9004d0ae19795886d31ce1e7141601
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c4fae8b0139a647e2dcecd7eed576fdad042a35b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176171"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155309"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>Vous avez des problèmes avec Microsoft 365 clé de produit pour les entreprises ?
 
@@ -34,7 +34,7 @@ S’il existe un message d’erreur lorsque vous essayez d’échanger une clé 
   
  **Vous avez besoin d’aide immédiatement ?** [Appelez le Support Microsoft](../business-video/get-help-support.md).
   
- **Pour obtenir de l’aide Microsoft 365 Famille une clé Microsoft 365 Personnel** produit, voir Utilisation des clés de produit avec [Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
+ **Pour obtenir de l’aide Microsoft 365 Famille une clé Microsoft 365 Personnel produit,** voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
 ## <a name="product-key-error-help-with-microsoft-365-for-business"></a>Aide sur les erreurs de clé de produit Microsoft 365 entreprise
 

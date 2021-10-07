@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
-ms.openlocfilehash: 2840b427dd19fbd129f7d4de6372fea2c0bdeeba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d54e424f326c42ac92ec5f0fc71a22e06351b7a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206347"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158429"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiver les données de CellTrust SL2 vers Microsoft 365
 
@@ -77,11 +77,11 @@ L’étape suivante consiste à se connecter à un compte d’administrateur pou
 
    En règle générale, vous devriez voir une option représentant votre environnement. Toutefois, si vous avez des domaines dans plusieurs environnements, vous verrez des options pour chaque environnement. Après avoir fait une sélection, vous êtes redirigé vers la page de connexion SL2.
 
-2. Connectez-vous avec vos informations d’identification de compte d’administrateur de domaine ou d’utilisateur.
+2. Connectez-vous avec vos informations d’identification de compte d’administrateur de domaine ou d’administrateur d’une ou de l’autre.
 
    Si vous vous connectez en tant qu’administrateur de domaine SL2, vous verrez le nom de votre domaine et les O dans ce domaine. Si vous n’avez pas d’O, vous voyez uniquement le nom de votre domaine. Si vous vous connectez en tant qu’administrateur d’ou, vous ne voyez que le nom de votre ou.
 
-3. Activez les unités métier que vous souhaitez archiver. La sélection du domaine ne sélectionne pas automatiquement les O. Vous devez activer chaque ouo séparément pour l’archiver.
+3. Activez les unités métier que vous souhaitez archiver. La sélection du domaine ne sélectionne pas automatiquement les O. Vous devez activer chaque OU séparément pour l’archiver.
 
    ![Activez les OUS pour les archiver.](../media/EnableCellTrustOUs.png)
 
@@ -111,4 +111,4 @@ Consultez la page Du support client [CellTrust](https://www.celltrust.com/contac
 
 - De nombreuses lois et réglementations exigent que la communication électronique soit conservée de telle sorte que, lorsqu’elle est demandée, elle puisse être produite en tant que preuve. La découverte électronique (eDiscovery) est utilisée pour se conformer à la production de communications électroniques. Enterprise Les solutions d’archivage des informations (EIA) sont conçues pour effectuer la découverte électronique et fournissent des fonctionnalités telles que la gestion des stratégies de rétention, la classification des données et la surveillance du contenu. Microsoft 365 offre une solution de rétention à long terme pour se conformer aux réglementations et normes qui affectent votre organisation.
 
-- Le terme *archivage* tel qu’utilisé dans ce document fait référence à l’archivage dans le contexte d’une utilisation dans une solution eIA (Enterprise Information Archiving). Les solutions EIA disposent de fonctionnalités eDiscovery qui produisent des documents pour des procédures juridiques, des litiges, des audits et des enquêtes. L’archivage dans le contexte de la sauvegarde et de la restauration utilisées pour la récupération d’urgence et la continuité d’activité n’est pas l’utilisation prévue du terme dans ce document.
+- Le terme *archivage* tel qu’utilisé dans ce document fait référence à l’archivage dans le contexte d’une utilisation au sein d’une solution eIA (Enterprise Information Archiving). Les solutions EIA disposent de fonctionnalités eDiscovery qui produisent des documents pour des procédures juridiques, des litiges, des audits et des enquêtes. L’archivage dans le contexte de la sauvegarde et de la restauration utilisées pour la récupération d’urgence et la continuité d’activité n’est pas l’utilisation prévue du terme dans ce document.

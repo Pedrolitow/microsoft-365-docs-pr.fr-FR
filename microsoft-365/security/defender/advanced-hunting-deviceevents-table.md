@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 63a2d41714329918192caccd384587a4e4f04112
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 747b299ed391ac8ee4a96903e58a64dba6fb3683
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181019"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157733"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,9 +33,9 @@ ms.locfileid: "59181019"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
-Le tableau ou les événements divers du périphérique dans le schéma de recherche avancée contiennent des informations sur différents types d’événements, y compris les événements déclenchés par des contrôles de sécurité, tels que Antivirus Windows Defender et `DeviceEvents` Exploit Protection. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau ou les événements divers de périphérique dans le schéma de recherche avancée contient des informations sur différents types d’événements, y compris les événements déclenchés par des contrôles de sécurité, tels que Antivirus Windows Defender et `DeviceEvents` Exploit Protection. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
 > Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
@@ -65,7 +65,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ProcessCreationTime` | DateHeure | Date et heure de création du processus |
 | `ProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus nouvellement créé |
 | `LogonId` | string | Identificateur d’une session d’ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
-| `RegistryKey` | string | Clé de Registre à l’application de l’action enregistrée |
+| `RegistryKey` | string | Clé de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |

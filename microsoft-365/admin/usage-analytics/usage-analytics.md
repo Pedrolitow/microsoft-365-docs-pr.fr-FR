@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte Microsoft 365 services pour communiquer et collaborer.
-ms.openlocfilehash: 10d5d50b8f4d3f734c4812da082ebd29652a1b9c
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 1db5444c5d7829e5f55a961827122817f4d5885e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775923"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155717"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -47,19 +48,19 @@ Le résumé exécutif est une vue d’un coup d’œil de haut niveau de l’ado
 
 Ce résumé vous permet de comprendre rapidement les modèles d’utilisation Office et comment et où vos employés collaborent.
 
-![Image du résumé de Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
+![Image du résumé exécutif Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Aperçu
 
 Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous pouvez les afficher en choisissant l’onglet en haut de la page du rapport. Toutes les valeurs du mois affichées dans la section supérieure du rapport font référence au dernier mois complet.
 
-- **Adoption** &ndash; Offre un résumé complet des tendances d’adoption. Utilisez les rapports de cette section pour découvrir comment vos utilisateurs ont adopté Microsoft 365, ainsi que la façon dont l’utilisation globale des services individuels a changé au fil des mois. Vous pouvez voir comment les utilisateurs peuvent être activés, combien de personnes de votre organisation utilisent activement Microsoft 365, combien retournent des utilisateurs et combien utilisent le produit pour la première fois.
+- **Adoption** &ndash; Offre un résumé complet des tendances d’adoption. Utilisez les rapports de cette section pour découvrir comment vos utilisateurs ont adopté Microsoft 365, ainsi que la façon dont l’utilisation globale des services individuels a changé au fil des mois. Vous pouvez voir comment les utilisateurs peuvent être activés, combien de personnes de votre organisation utilisent activement Microsoft 365, combien sont ceux qui retournent des utilisateurs et combien utilisent le produit pour la première fois.
 
 - **Utilisation** &ndash; Offre une vue d’drill-down du volume d’utilisateurs actifs et des activités clés de chaque produit au cours des 12 derniers mois. Utilisez les rapports de cette section pour découvrir comment les membres de votre organisation utilisent Microsoft 365.
 
 - **Communication** &ndash; Vous pouvez voir d’un coup d’œil si les membres de votre organisation préfèrent rester en contact en utilisant Teams, Yammer, e-mail ou Skype appels. Vous pouvez observer s’il existe des changements de modèles dans l’utilisation des outils de communication entre vos employés. 
 
-- **Collaboration** &ndash; Découvrez comment les membres de votre organisation utilisent OneDrive et SharePoint pour stocker des documents et collaborer les uns avec les autres, et comment ces tendances évoluent mois après mois. Vous pouvez également voir le nombre d’utilisateurs qui ont partagé des documents en interne ou en externe, ainsi que le nombre d’utilisateurs qui ont utilisé des sites SharePoint ou des comptes OneDrive, décomposés par des propriétaires et d’autres collaborateurs.
+- **Collaboration** &ndash; Découvrez comment les membres de votre organisation utilisent OneDrive et SharePoint pour stocker des documents et collaborer les uns avec les autres, et comment ces tendances évoluent mois après mois. Vous pouvez également voir combien d’utilisateurs ont partagé des documents en interne ou en externe et combien d’utilisateurs ont utilisé des sites SharePoint ou des comptes OneDrive, décomposés par des propriétaires et d’autres collaborateurs.
 
 - **Stockage** &ndash; Utilisez ce rapport pour suivre le stockage cloud pour les boîtes aux lettres, OneDrive et SharePoint sites.
 
@@ -79,7 +80,7 @@ Ce rapport contient un rapport distinct pour chaque service Microsoft 365, notam
 
 ## <a name="user-activity"></a>Activité utilisateur
 
-Les rapports d’activité des utilisateurs sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau de l’utilisateur jointes aux attributs Active Directory. En outre, le rapport Adoption du service vous permet de découper par attributs Active Directory afin de pouvoir voir les utilisateurs actifs dans tous les services individuels. Toutes les mesures sont agrégées pour le dernier mois complet. Pour afficher la date du contenu, accédez à la page du tableau et sélectionnez la table UserActivity où la valeur sous TimeFrame fournit la période de rapport. 
+Les rapports d’activité des utilisateurs sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau de l’utilisateur jointes à des attributs Active Directory. En outre, le rapport Adoption du service vous permet de découper par attributs Active Directory afin de pouvoir voir les utilisateurs actifs dans tous les services individuels. Toutes les mesures sont agrégées pour le dernier mois complet. Pour afficher la date du contenu, accédez à la page du tableau et sélectionnez la table UserActivity où la valeur sous TimeFrame fournit la période de rapport. 
 
 ## <a name="faq"></a>FAQ
 
@@ -160,9 +161,9 @@ La version actuelle de l’application de modèle inclut l’utilisation de Outl
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>Quand une version mise à jour de l’application de modèle sera-t-elle disponible ?
 
-Des modifications majeures de l’application de modèle seront publiées deux fois par an, ce qui peut inclure de nouveaux rapports ou de nouvelles données. Les modifications mineures apportées aux rapports peuvent être publiées plus fréquemment.
+Les principales modifications apportées à l’application de modèle sont publiées deux fois par an, ce qui peut inclure de nouveaux rapports ou de nouvelles données. Les modifications mineures apportées aux rapports peuvent être publiées plus fréquemment.
 
-### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>Est-il possible d’intégrer les données de l’application de modèle dans des solutions existantes ? 
+### <a name="is-it-possible-to-integrate-the-data-from-the-template-app-into-existing-solutions"></a>Est-il possible d’intégrer les données de l’application modèle dans des solutions existantes ? 
 
 Les données dans l’application de modèle peuvent être récupérées via les API Microsoft 365 de données (en prévisualisation). Lorsqu’ils sont produits en production, ils sont fusionnés dans les API de création de rapports [Graph Microsoft.](https://go.microsoft.com/fwlink/p/?linkid=848843) 
 
@@ -206,13 +207,13 @@ Vous pouvez utiliser le bouton commentaires dans la page de [](../../business-vi
 
 ### <a name="how-can-partners-access-the-data"></a>Comment des partenaires peuvent-ils accéder aux données ?
 
-Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle pour le compte de son client.
+Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle au nom de son client.
 
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>Puis-je masquer des informations d'identification personnelle telles que l'utilisateur, les groupes et les noms de site dans des rapports ?
 
 Oui, voir [Rendre anonymes les données collectées.](enable-usage-analytics.md#make-the-collected-data-anonymous)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Activer l'analyse de l'utilisation de Microsoft 365](enable-usage-analytics.md) (article)\
 [Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation](navigate-and-utilize-reports.md) (article)\

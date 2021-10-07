@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le Yammer d’activité et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, aimer ou lire un message.
-ms.openlocfilehash: d938052da82c1f1a0c038813dd7a0d02bbb510e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4de77e432e1b72286d28ae742783f2c5324e35fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177188"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158885"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer activité de gestion
 
 En tant Microsoft 365, le tableau de bord **Rapports** vous présente les données sur l’utilisation des produits au sein de votre organisation. Consultez les [rapports d’activité dans le Centre d’administration.](activity-reports.md) Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
  
 ## <a name="how-do-i-get-to-the-yammer-activity-report"></a>Comment puis-je obtenir le rapport Yammer’activité de l’entreprise ?
 
@@ -46,9 +46,9 @@ Vous pouvez afficher les activités dans le rapport Yammer en choisissant **l’
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité : choisissez des colonnes.](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l' sign-on unique. <br/> |
@@ -57,7 +57,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |Date de changement d’état (UTC)  <br/> |Date à laquelle l’état de l’utilisateur a été modifié Yammer.  <br/> |
 |Date de la dernière activité (UTC)  <br/> | Date de la dernière fois que l’utilisateur a publié, lu ou aimé un message.  <br/> |
 |Publié  <br/> |Nombre de messages publiés par l’utilisateur pendant la période que vous avez spécifiée. <br/>|
-|Lire  <br/> |Nombre de conversations lues par l’utilisateur pendant la période que vous avez spécifiée.  <br/> |
+|Lecture  <br/> |Nombre de conversations lues par l’utilisateur pendant la période que vous avez spécifiée.  <br/> |
 |Aimé  <br/> |Nombre de messages que l’utilisateur a aimés pendant la période que vous avez spécifiée.  <br/>|
 |Produit affecté  <br/> |Produits affectés à cet utilisateur.|
 |||

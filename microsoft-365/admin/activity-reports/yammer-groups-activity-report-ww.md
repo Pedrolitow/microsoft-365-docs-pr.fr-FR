@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez le rapport Yammer d’activité des groupes de Yammer qui sont créés et utilisés dans votre organisation, ainsi que leur activité.
-ms.openlocfilehash: 18ed4519a0f7859d8084f2144a58f4a726db530a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a06dfef0863683f0b8b4d97d8c06c09d57a15add
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177179"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158861"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer’activité des groupes
 
@@ -48,18 +48,18 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom du groupe  <br/> |Nom du groupe. <br/> |
 |Administrateur de groupe  <br/> |Nom de l’administrateur ou du propriétaire du groupe.  <br/> |
-|Deleted  <br/> |Nombre de groupes Yammer supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true.  <br/> |
+|Supprimé  <br/> |Nombre de groupes Yammer supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true.  <br/> |
 |Type  <br/> |Type de groupe, public ou privé. <br/> |
 |Connecté à Office 365  <br/> |Indique si le groupe Yammer est également un groupe Microsoft 365 groupe. <br/> |
 |Date de la dernière activité (UTC)  <br/> | Date à laquelle un message a été lu, publié ou aimé au plus tard par le groupe.  <br/> |
 |Members  <br/> | Nombre de membres du groupe.  <br/> |
 |Publié  <br/> |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. <br/>|
-|Lire  <br/> |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport.  <br/> |
+|Lecture  <br/> |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport.  <br/> |
 |Aimé  <br/> |Nombre de messages aimés dans le groupe Yammer au cours de la période de rapport. <br/>|
 |Nom du réseau  <br/> |Nom complet du réseau à qui appartient le groupe. |
 |||

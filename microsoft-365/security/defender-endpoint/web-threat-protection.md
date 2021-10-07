@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18243e1d8ad908572c0dccc4cd2a3bdfefa47d46
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 90775af14d78092159d2b92736abce56a961416e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009408"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159173"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Protéger votre organisation contre les menaces web
 
@@ -38,7 +38,7 @@ La protection contre les menaces web fait partie de [la protection Web](web-prot
 > [!NOTE]
 > La réception de nouveaux indicateurs personnalisés peut prendre jusqu’à une heure.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 La protection web utilise la protection réseau pour assurer la sécurité de la navigation web sur Microsoft Edge navigateurs web tiers.
 
@@ -75,7 +75,7 @@ La procédure suivante décrit comment configurer la protection contre les menac
 
 8. Sous **l’onglet Révision + créer,** examinez vos paramètres de stratégie, puis choisissez **Créer.**
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble de la protection web](web-protection-overview.md)
 - [Protection contre les menaces web](web-threat-protection.md)

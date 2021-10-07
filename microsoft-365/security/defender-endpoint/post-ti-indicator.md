@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4ab36313b25ab61ece35041f7cc6de1064465ecb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 299a6fff547c921dfdc02d4c23bfd8947b878875
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204671"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157877"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’indicateur d’soumission ou de mise à jour
 
@@ -40,7 +40,7 @@ ms.locfileid: "59204671"
 
 ## <a name="api-description"></a>Description de l’API
 
-Envoie ou met à jour une nouvelle [entité d’indicateur.](ti-indicator.md)
+Envoie ou met à jour la nouvelle [entité d’indicateur.](ti-indicator.md)
 
 La notation CIDR pour les IPs n’est pas prise en charge.
 
@@ -86,7 +86,7 @@ title|Chaîne|Titre de l’alerte de l’indicateur. **Obligatoire**
 description|String|Description de l’indicateur. **Obligatoire**
 expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur. **Optional**
 Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions|String|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+recommendedActions|Chaîne|Actions recommandées pour l’alerte d’indicateur TI. **Optional**
 rbacGroupNames|Chaîne|Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 
 ## <a name="response"></a>Réponse

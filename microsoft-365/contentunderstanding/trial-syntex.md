@@ -15,14 +15,14 @@ ms.custom:
 - Adopt
 - admindeeplinkMAC
 search.appverid: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment planifier et exécuter un programme pilote d’essai pour SharePoint Syntex votre organisation.
-ms.openlocfilehash: 51854dafb7ae9c1de350f5f9f29eedc191b8c2aa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 74b44c14140f26e0744aac73fd948e58d9d33e24
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156377"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Exécuter une version d’essai de Microsoft SharePoint Syntex
 
@@ -61,7 +61,7 @@ Vous devez être un administrateur Microsoft 365 général ou un administrateur 
 
 Pour planifier correctement une version d SharePoint Syntex d’essai, prenons en compte les facteurs suivants :
 
-- Les tests les plus significatifs sont effectués sur les scénarios et données « réels ».
+- Les tests les plus significatifs sont effectués sur des scénarios et des données « réels ».
 - Vous ne pouvez activer une version d SharePoint Syntex d’essai qu’une seule fois par client.
 
 Un client de test ou de démonstration peut servir de « test » pour parcourir les étapes d’activation et les contrôles d’administration. Mais il est probablement préférable d’évaluer la construction d’un modèle sur un client de production.
@@ -80,7 +80,7 @@ Pour chacun des cas d’utilisation planifiés, identifiez les utilisateurs qui 
 
 Lorsque vous lancez une version d’essai, vous devez :
 
-- Attribuez des licences aux utilisateurs concernés.
+- Attribuer des licences aux utilisateurs concernés.
 - Effectuer [une configuration supplémentaire de SharePoint Syntex](set-up-content-understanding.md).
   - Vous souhaitez [peut-être créer des centres de contenu supplémentaires.](create-a-content-center.md)
 
@@ -96,7 +96,7 @@ En fonction du résultat de l’essai, vous pouvez décider s’il faut passer �
 
 ### <a name="proceed-to-production-use"></a>Passer à l’utilisation de la production
 
-Pour garantir la continuité du service, vous devez acheter le nombre requis de licences et attribuer ces licences aux utilisateurs. Les utilisateurs d’essai qui ne sont pas titulaires d’une licence complète à la fin de la période d’essai ne pourront pas utiliser entièrement SharePoint Syntex.
+Pour garantir la continuité du service, vous devez acheter le nombre requis de licences et les attribuer aux utilisateurs. Les utilisateurs d’essai qui ne sont pas titulaires d’une licence complète à la fin de la période d’essai ne pourront pas utiliser entièrement SharePoint Syntex.
 
 Vous de devez peut-être estimer l’utilisation prévue du traitement des formulaires et planifier le montant prévu des crédits du Générateur d’IA. Pour obtenir de l’aide, voir Estimer la capacité du Générateur d’IA qui [est la bonne pour vous.](https://powerapps.microsoft.com/ai-builder-calculator/)
 
@@ -108,7 +108,7 @@ Si vous n’achetez pas de licences à la suite de la version d’essai :
 - Les bibliothèques qui étaient des modèles en cours d’exécution ne classifient plus automatiquement les fichiers ou n’extraient plus les modèles.
 - Les fichiers précédemment classifiés ou les métadonnées extraites ne seront pas affectés.
 - Les centres de contenu et les modèles de compréhension des documents ne seront pas automatiquement supprimés. Ceux-ci resteront disponibles si vous décidez d’acheter des licences à l’avenir.
-- Les modèles de traitement des formulaires sont stockés dans l’instance Dataverse (précédemment appelée Common Data Service [CDS]) de l’environnement de plateforme Power Platform par défaut. Ceux-ci peuvent être utilisés avec les futures licences pour SharePoint Syntex ou avec les fonctionnalités du Générateur d’IA dans la plateforme Power.
+- Les modèles de traitement des formulaires sont stockés dans l’instance Dataverse (précédemment appelée Common Data Service [CDS]) de l’environnement de plateforme Power Platform par défaut. Ceux-ci peuvent être utilisés avec des licences futures pour SharePoint Syntex ou avec les fonctionnalités du Générateur d’IA dans la plateforme Power.
 
 ## <a name="see-also"></a>Voir aussi
 

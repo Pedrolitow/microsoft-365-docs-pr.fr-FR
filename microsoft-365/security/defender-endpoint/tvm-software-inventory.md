@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 333cacf1bce50463fdfbac4023ae724a7564809c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 10e5c062af839142db0b12f562739fd2fb603d42
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208924"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157829"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : Gestion des menaces et des vulnérabilités
 
@@ -46,12 +46,12 @@ Dans la mesure où il s’agit d’un temps réel, en quelques minutes, vous ver
 
 ## <a name="navigate-to-the-software-inventory-page"></a>Accéder à la page Inventaire logiciel
 
-Accédez à la page  Inventaire logiciel en sélectionnant Inventaire logiciel dans le menu de navigation Gestion des menaces et des vulnérabilités dans le [portail Microsoft 365 Defender.](portal-overview.md)
+Accédez à la page  Inventaire logiciel en sélectionnant Inventaire logiciel dans le menu Gestion des menaces et des vulnérabilités navigation dans le [portail Microsoft 365 Defender.](portal-overview.md)
 
 Afficher les logiciels sur des appareils spécifiques dans les pages des appareils individuels à partir de la [liste des appareils.](machines-view-overview.md)
 
->[!NOTE]
->Si vous recherchez des logiciels à l’aide de la recherche globale de Microsoft Defender for Endpoint, veillez à placer un trait de soulignement au lieu d’un espace. Par exemple, pour obtenir les meilleurs résultats de recherche, vous devez écrire « windows_10 » au lieu de « Windows 10 ».
+> [!NOTE]
+> Si vous recherchez des logiciels à l’aide de la recherche globale de Microsoft Defender for Endpoint, veillez à placer un trait de soulignement au lieu d’un espace. Par exemple, pour obtenir les meilleurs résultats de recherche, vous devez écrire « windows_10 » au lieu de « Windows 10 ».
 
 ## <a name="software-inventory-overview"></a>Vue d’ensemble de l’inventaire logiciel
 
@@ -104,7 +104,7 @@ Vous pouvez afficher les pages logicielles de différentes manières :
 
  Une page complète s’affiche avec tous les détails d’un logiciel spécifique et les informations suivantes :
 
-- Panneau latéral avec des informations sur le fournisseur, la prévalence du logiciel dans l’organisation (y compris le nombre d’appareils sur lesquels il est installé et les appareils exposés qui ne sont pas corrigés), si et exploit est disponible et impact sur votre score d’exposition.
+- Panneau latéral avec les informations du fournisseur, la prévalence du logiciel dans l’organisation (y compris le nombre d’appareils sur lesquels il est installé et les appareils exposés qui ne sont pas corrigés), si et exploit est disponible et impact sur votre score d’exposition.
 - Visualisations de données montrant le nombre et la gravité des vulnérabilités et des mauvaises configurations. En outre, les graphiques avec le nombre d’appareils exposés.
 - Onglets affichant des informations telles que :
   - Recommandations de sécurité correspondantes pour les faiblesses et vulnérabilités identifiées.

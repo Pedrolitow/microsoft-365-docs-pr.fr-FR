@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment le Gestionnaire de conformité Microsoft calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ef0f73a8da9403c2d1fd8248f828d6faf7f6e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b3b250391d04a8bf7388c761bcb00fe7cf99a4a5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176084"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156509"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
 
@@ -41,7 +41,7 @@ Une valeur de score est affectée à trois niveaux :
     - **L’état d’implémentation** **est égal à Implémenté** ou **Autre implémentation** et
     - **Le résultat du** test est égal **à Réussi**.
 
-3. **Score d’évaluation**: ce score est la somme de vos scores de contrôle. Elle est calculée à l’aide de scores d’action. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptabilisées une seule fois, quelle que soit la fréquence de référencement dans un contrôle.
+3. **Score d’évaluation**: ce score est la somme des scores de votre contrôle. Elle est calculée à l’aide de scores d’action. Chaque action Microsoft et chaque action d’amélioration gérée par votre organisation sont comptabilisées une seule fois, quelle que soit la fréquence de référencement dans un contrôle.
 
 Le score de conformité global est calculé à l’aide de scores d’action, où chaque action Microsoft est comptée une fois, chaque action technique que vous gérez est comptée une seule fois et chaque action non technique que vous gérez est comptée une fois par groupe. Cette logique est conçue pour fournir la comptabilité la plus précise de la façon dont les actions sont implémentées et testées dans votre organisation. Vous remarquerez peut-être que votre score de conformité global peut différer de la moyenne de vos scores d’évaluation. En savoir plus [ci-dessous sur le score des actions.](#action-types-and-points)
 
@@ -84,7 +84,7 @@ Les actions sont regroupées selon qu’elles sont de nature technique ou non te
 
 Supposons que vous avez une action technique de 3 points qui existe dans 5 groupes et que vous avez une action non technique de 3 points qui existe dans les 5 mêmes groupes.
 
-Si vous avez correctement implémenté l’action technique, le nombre total de points que vous recevez est de 3. Cela est dû au fait que vous n’avez besoin d’implémenter l’action qu’une seule fois pour votre client. L’état d’implémentation et de test de l’action technique sera identique dans toutes les instances de cette action, dans chaque groupe à qui elle appartient.
+Si vous avez correctement implémenté l’action technique, le nombre total de points que vous recevez est 3. Cela est dû au fait que vous n’avez besoin d’implémenter l’action qu’une seule fois pour votre client. L’état d’implémentation et de test de l’action technique sera identique dans toutes les instances de cette action, dans chaque groupe à qui elle appartient.
 
 Si vous avez correctement implémenté l’action non technique dans chacun des 5 groupes, le nombre total de points que vous recevez est de 15. Cela est dû au fait que vous devez implémenter l’action dans chaque groupe. L’état d’implémentation et de test de l’action non technique varie selon les groupes, car l’action est implémentée séparément au sein de chacun de ses groupes.
 

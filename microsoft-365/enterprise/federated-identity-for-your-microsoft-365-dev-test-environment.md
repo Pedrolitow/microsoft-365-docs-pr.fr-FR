@@ -9,7 +9,7 @@ ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 1cca1b0b5f7b345d7d9ed5f5cd23f9b742542529
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6553590c06df4caf099c7b4db47d253bd37b39fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207580"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158033"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
@@ -213,7 +213,7 @@ Ensuite, utilisez ces étapes pour enregistrer le nouveau certificat auto-signé
     
 7. Dans la page **d’accueil,** sélectionnez **Suivant.**
     
-8. Dans la page **Exporter la clé privée,** sélectionnez **Oui,** puis Sélectionnez **Suivant.**
+8. Dans la page **Exporter la clé privée,** sélectionnez **Oui,** puis Sélectionnez **Suivant**.
     
 9. Dans la page **Exporter le format de fichier,** sélectionnez Exporter toutes les **propriétés** étendues, puis sélectionnez **Suivant**.
     
@@ -237,7 +237,7 @@ Attendez la fin de l’installation.
   
 Ensuite, configurez le service AD FS en suivant ces étapes :
   
-1. Sélectionnez **Démarrer,** puis **l’icône Gestionnaire de** serveur.
+1. Sélectionnez **Démarrer,** puis l’icône **Gestionnaire de** serveur.
     
 2. Dans le volet d’arborescence du Gestionnaire de serveur, sélectionnez **AD FS**.
     
@@ -257,7 +257,7 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
     
 7. Dans la page **Spécifier un compte de service,** **sélectionnez Sélectionner** **le nom du compte.**
     
-8. Dans **Sélectionner un compte d’utilisateur ou de service,** entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
+8. Dans **Sélectionner un compte d’utilisateur ou** de service, entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
     
 9. Dans **mot de passe** du compte, entrez le mot de passe du ADFS-Service, puis sélectionnez **Suivant.**
     
@@ -265,11 +265,11 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
     
 11. Dans la page **Options de** révision, sélectionnez **Suivant.**
     
-12. Dans la page **Vérifications préalables,** sélectionnez **Configurer.**
+12. Dans la page **Vérifications préalables,** **sélectionnez Configurer.**
 
 13. Dans la page **Résultats,** sélectionnez **Fermer.**
     
-14. Sélectionnez **Démarrer,** sélectionnez l’icône d’alimentation, **sélectionnez Redémarrer,** puis **continuez.**
+14. Sélectionnez **Démarrer,** sélectionnez l’icône d’alimentation, **redémarrez,** puis **continuez.**
     
 À partir du [portail Azure](https://portal.azure.com), connectez-vous à PROXY1 avec les informations d’identification du compte CORP\\User1.
   
@@ -297,7 +297,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
     
 11. Dans la page **Fin de l’exécution,** sélectionnez **Terminer.**
     
-12. Dans la page **Magasin de certificats,** sélectionnez **Suivant.**
+12. Dans la page **Magasin de certificats,** sélectionnez **Suivant**.
     
 13. Lorsque vous y invitez, **sélectionnez OK**.
     
@@ -305,7 +305,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
     
 15. Sélectionnez et maintenez (ou cliquez avec le bouton droit) le certificat, puis sélectionnez **Copier**.
     
-16. Dans le volet d’arborescence, **ouvrez Certificats autorités** de certification  >  **racines de confiance.**
+16. Dans le volet d’arborescence, **ouvrez Certificats autorités de certification**  >  **racines de confiance.**
     
 17. Déplacez votre pointeur de souris sous la liste des certificats installés, sélectionnez et maintenez le curseur (ou cliquez avec le bouton droit), puis sélectionnez **Coller**.
     
@@ -339,7 +339,7 @@ Suivez ces étapes pour configurer le service de proxy d’application web de ma
     
 6. Dans la page Certificat **de proxy AD FS,** sélectionnez la flèche vers le bas, sélectionnez le certificat avec votre nom de service de fédération, puis sélectionnez **Suivant**.
     
-7. Dans la page **Confirmation,** sélectionnez **Configurer.**
+7. Dans la page **Confirmation,** **sélectionnez Configurer.**
     
 8. Dans la page **Résultats,** sélectionnez **Fermer.**
     
@@ -363,7 +363,7 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Microso
     
 7. Lorsque vous y invitez des informations d’identification de serveur, entrez les informations d’identification du compte CORP \\ User1, puis sélectionnez **OK**.
     
-8. Dans la page Des informations d’identification  **d’administrateur** de domaine,  entrez **CORP \\ User1** dans la zone Nom d’utilisateur, entrez le mot de passe du compte dans la zone Mot de passe, puis sélectionnez **Suivant**.
+8. Dans la page **Des** informations d’identification  d’administrateur de domaine,  entrez **CORP \\ User1** dans la zone Nom d’utilisateur, entrez le mot de passe du compte dans la zone Mot de passe, puis sélectionnez **Suivant**.
     
 9. Dans la page compte de **service AD FS,**  entrez **CORP \\ ADFS-Service**  dans la zone Nom d’utilisateur du domaine, entrez le mot de passe du compte dans la zone Mot de passe de l’utilisateur du domaine, puis sélectionnez **Suivant**.
     
@@ -381,13 +381,13 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
   
 1. Ouvrez une nouvelle instance privée de votre navigateur sur votre ordinateur local et accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
     
-2. Pour les informations d’identification de connexion, entrez **user1@** \<*the domain created in Phase 1*> .
+2. Pour les informations d’identification de connexion, **entrez user1@** \<*the domain created in Phase 1*> .
     
     Par exemple, si votre domaine de test **est testlab.contoso.com,** vous entrez « user1@testlab.contoso.com ». Appuyez sur **la touche** de tabulation ou Microsoft 365 pour vous rediriger automatiquement.
     
     Une page **Votre connexion n’est pas privée** devrait s’afficher. Vous voyez cela, car vous avez installé un certificat auto-signé sur ADFS1 que votre ordinateur de bureau ne peut pas valider. Dans un déploiement de production d’authentification fédérée, vous utiliseriez un certificat provenant d’une autorité de certification approuvée et vos utilisateurs ne verraient pas cette page.
     
-3. Sur la **page Votre connexion n’est pas** privée, sélectionnez **Avancé,** puis Continuer **à \<*your federation service FQDN*>**. 
+3. Sur la page **Votre connexion n’est pas** privée, sélectionnez **Avancé,** puis **Sélectionnez Continuer à \<*your federation service FQDN*>**. 
     
 4. Sur la page contenant le nom de votre organisation fictive, connectez-vous avec les éléments suivants :
     

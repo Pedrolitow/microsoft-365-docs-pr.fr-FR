@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de l’archivage à extension automatique
+title: Aperçu de l'archivage en auto-expansion
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez l’archivage à extension automatique, qui fournit un stockage d’archivage supplémentaire pour Exchange Online boîtes aux lettres.
-ms.openlocfilehash: 80c8ac2abd7dda63e8661dd82a145163c5a8d98d
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: e3c203b7c29732d09adedf6282880f7e2805d428
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015469"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155081"
 ---
-# <a name="overview-of-auto-expanding-archiving"></a>Vue d’ensemble de l’archivage à extension automatique
+# <a name="overview-of-auto-expanding-archiving"></a>Aperçu de l'archivage en auto-expansion
 
 Dans Office 365, les boîtes aux lettres d’archivage fournissent aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu’à 100 Go de stockage supplémentaire sont disponibles. Dans le passé, lorsque le quota de stockage de 100 Go était atteint, les organisations deviez contacter Microsoft pour demander de l’espace de stockage supplémentaire pour une boîte aux lettres d’archivage. Ce n’est plus le cas.
 
@@ -112,6 +112,6 @@ Cette section explique la fonctionnalité entre l’archivage à extension autom
 
 - **Service d’importation :** Vous pouvez utiliser le service d Office 365 pour importer des fichiers PST dans l’archive à extension automatique d’un utilisateur. Vous pouvez importer jusqu’à 100 Go de données à partir de fichiers PST dans la boîte aux lettres d’archivage de l’utilisateur.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Pour plus d’informations techniques sur l’archivage à extension automatique, voir [Microsoft 365: Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).

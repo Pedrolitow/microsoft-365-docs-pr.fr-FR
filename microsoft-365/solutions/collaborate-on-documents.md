@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir comment collaborer avec des invités sur un document SharePoint et OneDrive.
-ms.openlocfilehash: db7e619e674a270745b783e85bca803b85ee54ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e51ec7e9695c564b2994089f0a827ca7ea4b67c6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208571"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158957"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Collaborer avec des invités sur un document
 
@@ -110,7 +110,7 @@ Pour définir des autorisations pour les liens qui autorisent le partage avec to
     1. À partir **de la** liste de listes de listes 
         - Sélectionnez **Afficher et modifier** si vous souhaitez autoriser les utilisateurs non authentifiés à apporter des modifications aux fichiers.
         - Sélectionnez **Afficher** si vous ne souhaitez pas que les utilisateurs non authentifiés modifient les fichiers.
-    2. À partir de la liste de listes de **dossiers,**
+    2. Dans la liste de listes de **dossiers,**
         - Sélectionnez **Afficher, modifier et charger** si vous souhaitez autoriser les utilisateurs non authentifiés à apporter des modifications aux dossiers.
         - Sélectionnez **Afficher** si vous ne souhaitez pas que les utilisateurs non authentifiés modifient les dossiers.
 
@@ -125,7 +125,7 @@ Pour définir les paramètres au niveau du site
 1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez sur **Sites actifs**.
 2. Sélectionnez le site sur lequel vous souhaitez partager des fichiers et des dossiers avec des invités.
 3. Faites défiler vers la droite la ligne (dans laquelle le site sélectionné est présent) et cliquez n’importe où dans la **colonne de partage** externe.
-4. Dans la page qui s’apparaît, cliquez sur **l’onglet Stratégies.**
+4. Dans la page qui s’insérait, cliquez sur **l’onglet Stratégies.**
 5. Sous le **volet de partage** externe, cliquez sur **Modifier.**
 6. Assurez-vous que le partage est paramétré sur **Tout le monde** ou **Invités nouveaux et existants**.
 7. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.

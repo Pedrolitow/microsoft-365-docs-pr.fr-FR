@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 31ff698a6094e72cea32b7db19db8edf947a1326
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c2b94dfee30e447aed553e2fdaca62af8ec82f8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157949"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Rechercher des appareils par API IP interne
 
@@ -81,7 +81,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite - 200 OK avec la liste des ordinateurs dans le corps de la réponse.
+En cas de réussite : 200 - OK avec la liste des ordinateurs dans le corps de la réponse.
 Si l’timestamp n’est pas dans les 30 derniers jours - 400 demande mauvaise.
 
 ## <a name="example"></a>Exemple

@@ -3,26 +3,24 @@ title: Créer des indicateurs basés sur des certificats
 ms.reviewer: ''
 description: Créez des indicateurs basés sur des certificats qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: ioc, certificat, certificats, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b471bcfa1c4a42ddf5c49c2a0bc2129c99fd9297
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0e74fd5a0ffc62d077f9110b014af5d3b0813afd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043346"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154841"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
@@ -46,7 +44,7 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 
 - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Windows Defender protection basée sur le cloud est activée. Pour plus d’informations, [voir Gérer la protection basée sur le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
-- Pris en charge sur les ordinateurs Windows 10, version 1703 ou ultérieure, Windows server 2016, 2019 et Windows Server 2022.
+- Pris en charge sur les ordinateurs Windows 11, Windows 10, version 1703 ou ultérieure, Windows server 2016, 2019 et Windows Server 2022.
 - Les définitions de protection contre les virus et menaces doivent être à jour.
 - Cette fonctionnalité prend actuellement en charge l’entrée. CER ou . Extensions de fichier PEM.
 
@@ -72,7 +70,7 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 
 4. Consultez les détails de l’onglet Résumé, puis cliquez sur **Enregistrer.**
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Créer des indicateurs](manage-indicators.md)
 - [Créer des indicateurs pour les fichiers](indicator-file.md)

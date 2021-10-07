@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b3fa8c7c919edc438bb63fe4baaeca6711a3a045
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a96296f09a82fe2b2c8d5c4d5d250c48f89ffc4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203136"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156293"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
@@ -63,7 +63,7 @@ Les types personnalisés sont ceux que vous définissez et sont conçus pour pro
 
 Lorsqu’un fichier est créé ou modifié sur un Windows, Defender for Endpoint analyse le contenu pour évaluer s’il contient des informations sensibles.
 
-Activer l’intégration Azure Information Protection de sorte que lorsqu’un fichier contenant des informations sensibles est découvert par Defender for Endpoint à l’aide d’étiquettes ou de types d’informations, il est automatiquement transmis à Azure Information Protection à partir de l’appareil.
+Activer l’intégration Azure Information Protection de sorte que lorsqu’un fichier contenant des informations sensibles est découvert par Defender pour le point de terminaison à l’aide d’étiquettes ou de types d’informations, il est automatiquement transmis à Azure Information Protection à partir de l’appareil.
 
 ![Image de la page de paramètres avec Azure Information Protection.](images/atp-settings-aip.png)
 
@@ -97,7 +97,7 @@ InformationProtectionLogs_CL
 | where Workload_s == "Windows Defender"
 ```
 
-### <a name="prerequisites"></a>Configuration requise
+### <a name="prerequisites"></a>Conditions préalables
 
 - Les clients doivent avoir un abonnement à Azure Information Protection.
 - Activez l’intégration Azure Information Protection dans Centre de sécurité Microsoft Defender :

@@ -7,18 +7,18 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 6ab911fa9ad4e39a59b7acc58cae7686dd330ed4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 519f3035040f563a6f3663198be3952830cb21cb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182920"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158945"
 ---
 # <a name="networking-up-to-the-cloudone-architects-viewpoint"></a>Mise en réseau (vers le cloud) : une architecture se fait une place
 
@@ -42,7 +42,7 @@ Lorsque ce genre de chose est resserrée pour moi, j’accepte généralement de
 
 Commençons par quelques règles de base relatives à ce que nous faisons ici. Nous abordons la façon de se connecter en toute sécurité aux services cloud pour garantir la complexité minimale et les performances maximales, tout en conservant une sécurité réelle. Rien de ce qui suit n’est contredessant tout cela, même si vous ou votre client, n’êtes pas en mesure d’utiliser votre serveur proxy favori pour tout.
 
-- **Ce n’est pas** parce que vous le pouvez que vous devez : ou pour parrasesser Dr. Dr. Dr. ContrôleSe à partir du film Parcage De Park « ... Oui, oui, mais votre équipe de sécurité était si préoccupé par le fait qu’il pouvait ou non ne pas s’arrêter de penser s’il le devrait. »
+- **Ce n’est pas** parce que vous le pouvez que vous devez : Ou pour parrasser Dr. Dr. Films à partir du film Parcage De Park « ... Oui, oui, mais votre équipe de sécurité était si préoccupé par le fait qu’il pouvait ou non ne pas s’arrêter de penser s’il le devrait. »
 - **La sécurité ne signifie pas de** la complexité : vous n’êtes pas plus sécurisé simplement parce que vous dépensez plus d’argent, que vous passez par plusieurs appareils ou que vous cliquez sur d’autres boutons.
 - **Office 365 est accessible sur Internet**: mais ce n’est pas la même chose qu’Office 365'internet. Il s’agit d’un service SaaS géré par Microsoft et géré par vous. Contrairement aux sites web que vous visitez sur Internet, vous êtes en réalité en train de jeter un œil à la réalité et vous pouvez appliquer les contrôles dont vous avez besoin pour respecter vos stratégies et vos normes de conformité, tant que vous comprenez que même si vous pouvez atteindre vos objectifs, vous devrez peut-être simplement les faire d’une autre manière.
 - Les points de terminaison sont mauvais, les **coupures localisées** sont bonnes : tout le monde veut toujours retourner tout son trafic Internet pour tous ses utilisateurs vers un point central, généralement pour pouvoir la surveiller et appliquer la stratégie, mais souvent parce qu’il est moins coûteux que de mettre en service l’accès à Internet à tous ses emplacements, ou c’est simplement la façon dont ils le font. Mais ces points de terminaison sont exactement cela... points où le trafic se pointe. Il n’y a rien de mal à empêcher vos utilisateurs de naviguer vers Streaming ou de diffuser en continu des vidéos cat, mais ne traitez pas votre trafic d’application métier critique de la même manière.
@@ -70,7 +70,7 @@ Bien entendu, pour qu’un client trouve un point de terminaison, il doit utilis
 
 ### <a name="to-proxy-or-not-to-proxy-that-is-the-question"></a>Pour proxyer ou non proxy, c’est la question
 
-L’une des premières choses à prendre en compte est de savoir s’il faut proxyer les connexions des utilisateurs Office 365. Celui-ci est facile ; ne pas proxy. Office 365 est accessible via Internet, mais il ne s’agit pas d’Internet. Il s’agit d’une extension de vos services principaux et doit être traitée comme telle. Tout ce que vous souhaitez peut-être qu’un proxy, comme la DLP, le logiciel anti-programme malveillant ou l’inspection du contenu, soit déjà disponible dans le service, soit utilisé à grande échelle et sans avoir à déchiffrer les connexions chiffrées par TLS. Mais si vous souhaitez vraiment proxy trafic que vous ne pouvez pas autrement contrôler, faites attention à nos conseils et les [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) catégories de trafic à [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) . Nous avons trois catégories de trafic pour Office 365. Optimiser et autoriser doit vraiment aller directement et contourner votre proxy. La valeur par défaut peut être resserée par proxi. Les détails sont dans ces documents... lisez-les.
+L’une des premières choses à prendre en compte est de savoir s’il faut proxyer les connexions des utilisateurs Office 365. Celui-ci est facile ; ne pas proxy. Office 365 est accessible via Internet, mais il ne s’agit pas d’Internet. Il s’agit d’une extension de vos services principaux et doit être traitée comme telle. Tout ce que vous souhaitez peut-être qu’un proxy, comme la DLP, le logiciel anti-programme malveillant ou l’inspection du contenu, soit déjà disponible dans le service, soit utilisé à grande échelle et sans avoir à déchiffrer les connexions chiffrées par TLS. Mais si vous souhaitez vraiment proxy trafic que vous ne pouvez pas autrement contrôler, faites attention à nos conseils et les [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) catégories de trafic à [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) . Nous avons trois catégories de trafic pour Office 365. Optimiser et autoriser doit vraiment aller directement et contourner votre proxy. La valeur par défaut peut être parxied. Les détails sont dans ces documents... lisez-les.
 
 La plupart des clients qui demandent l’utilisation d’un proxy, lorsqu’ils voient réellement ce qu’ils font, se rendent compte que lorsque le client effectue une demande HTTP CONNECT au proxy, le proxy n’est plus qu’un routeur supplémentaire coûteux. Les protocoles utilisés tels que MAPI et RTC ne sont même pas des protocoles que les proxies web comprennent. Ainsi, même avec la fissuration TLS, vous n’êtes pas vraiment en mesure d’obtenir une sécurité supplémentaire. Vous *avez une* latence supplémentaire. Pour [https://aka.ms/pnc](../enterprise/microsoft-365-network-connectivity-principles.md) plus d’informations, notamment sur les catégories Optimiser, Autoriser et Par défaut, Microsoft 365 trafic.
 
@@ -80,9 +80,9 @@ Inspection TLS signifie SÉCURITÉ ! Mais pas vraiment ! De nombreux clients aya
 
 ### <a name="streaming-isnt-important-except-that-it-is"></a>La diffusion en continu n’est pas importante, sauf que *c’est le cas*
 
-Les seuls services dans Office 365 qui utilisent UDP sont Skype (bientôt retiré) et Microsoft Teams. Teams utilise UDP pour le trafic de diffusion en continu, y compris l’audio, la vidéo et le partage de présentation. Le trafic de diffusion en continu est en direct, par exemple lorsque vous avez une réunion en ligne avec des présentations vocales, vidéo et des présentations ou des démonstrations. Ceux-ci utilisent UDP car si des paquets sont supprimés ou arrivent dans l’ordre, il est pratiquement insérezable par l’utilisateur et le flux peut simplement continuer.
+Les seuls services dans Office 365 qui utilisent UDP sont Skype (bientôt retiré) et Microsoft Teams. Teams utilise UDP pour le trafic de diffusion en continu, y compris l’audio, la vidéo et le partage de présentation. Le trafic de diffusion en continu est en direct, par exemple lorsque vous avez une réunion en ligne avec des présentations vocales, vidéo et des présentations ou des démonstrations. Ces derniers utilisent UDP car si des paquets sont supprimés ou arrivent dans l’ordre, l’utilisateur peut pratiquement ne pas y parvenir et le flux peut continuer.
 
-Lorsque vous n’autorisez pas le trafic UDP sortant des clients vers le service, ils peuvent revenir au protocole TCP. Toutefois, si un paquet TCP est *supprimé,* tout s’arrête jusqu’à ce que le délai d’expiration de la retransmission expire et que le paquet manquant puisse être retransmis. Si un paquet arrive dans l’ordre, tout s’arrête jusqu’à ce que les autres paquets arrivent et peuvent être réassemblés dans l’ordre. Les deux entraînent des problèmes perceptibles dans l’audio (vous vous souvenez de Max Headroom ?) et de la vidéo (avez-vous cliqué sur quelque chose... Il en est ainsi) et entraîne des performances médiocres et une mauvaise expérience utilisateur. Et vous souvenez-vous de ce que j’ai placé ci-dessus sur les proxies ? Lorsque vous forcez un client Teams à utiliser un proxy, vous le forcez à utiliser le protocole TCP. Vous êtes donc deux fois à l’origine d’un impact négatif sur les performances.
+Lorsque vous n’autorisez pas le trafic UDP sortant des clients vers le service, ils peuvent revenir au protocole TCP. Toutefois, si un paquet TCP est *supprimé,* tout s’arrête jusqu’à ce que le délai d’expiration de la retransmission expire et que le paquet manquant puisse être retransmis. Si un paquet arrive dans l’ordre, tout s’arrête jusqu’à ce que les autres paquets arrivent et peuvent être réassemblés dans l’ordre. Les deux entraînent des problèmes perceptibles dans l’audio (vous vous souvenez de Max Headroom ?) et de la vidéo (avez-vous cliqué sur quelque chose... Il en est ainsi) et entraîne des performances médiocres et une mauvaise expérience utilisateur. Et rappelez-vous ce que j’ai mentionné ci-dessus à propos des proxies ? Lorsque vous forcez un client Teams à utiliser un proxy, vous le forcez à utiliser le protocole TCP. Vous êtes donc deux fois à l’origine d’un impact négatif sur les performances.
 
 ### <a name="split-tunneling-may-seem-scary"></a>La tunnellation fractionner peut sembler sombre
 
@@ -108,7 +108,7 @@ Si vous comptez autoriser la tunnelisation fractionnée, mais également utilise
 
 Des dizaines de milliers d’organisations, y compris la quasi-totalité du Classement 500, utilisent Office 365 tous les jours pour leurs fonctions critiques de mission. Ils le font en toute sécurité, et sur Internet.
 
-Quels que soient les objectifs de sécurité que vous avez en jeu, il existe des moyens de les atteindre qui ne nécessitent pas de connexions VPN, de serveurs proxy, d’analyse et d’inspection TLS ou de sortie Internet centralisée pour récupérer le trafic de vos utilisateurs hors de votre réseau et sur le notre aussi rapidement que possible, ce qui offre les meilleures performances, que votre réseau soit le siège social de l’entreprise,  un bureau à distance ou cet utilisateur travaillant à la maison ; Nos instructions sont basées sur la façon dont les services Office 365 sont créés et pour garantir une expérience utilisateur sécurisée et performante.
+Quels que soient les objectifs de sécurité que vous avez en jeu, il existe des moyens d’y parvenir qui ne nécessitent pas de connexions VPN, de serveurs proxy, d’analyse et d’inspection TLS ou de sortie Internet centralisée pour obtenir le trafic de vos utilisateurs hors de votre réseau et sur le notre aussi rapidement que possible, ce qui offre les meilleures performances, que votre réseau soit le siège social de l’entreprise,  un bureau à distance ou cet utilisateur travaillant à la maison ; Nos instructions sont basées sur la façon dont les services Office 365 sont créés et pour garantir une expérience utilisateur sécurisée et performante.
 
 ## <a name="further-reading"></a>Lecture supplémentaire
 

@@ -8,19 +8,19 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: Trouvez les derniers conseils, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
-ms.openlocfilehash: 2e2ce2c9b7e204a56a0deccc758ba19d7239c632
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Trouvez les derniers conseils, conseils, ressources et conseils sur le travail à distance pour les entreprises qui utilisent Microsoft 365.
+ms.openlocfilehash: bff6e8b54262ab4bc71f219ccfe401877269d0ee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178819"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158729"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Permettre à votre petite entreprise de travailler à distance 
 
@@ -39,7 +39,7 @@ ms.locfileid: "59178819"
 
 Pour plus d’informations, voir [Prendre en Microsoft Teams dans votre petite entreprise.](../../business-video/get-started-teams-small-business.md)
 
-Vous avez déjà un abonnement, mais vous devez vous y installer ? Consultez [Microsoft 365 formation pour les petites entreprises.](../../business-video/index.yml)
+Vous avez déjà un abonnement, mais vous devez vous y installer ? Voir [Microsoft 365 formation pour les petites entreprises.](../../business-video/index.yml)
 
 ## <a name="connect-with-employees-and-customers"></a>Connecter avec les employés et les clients
 
@@ -81,7 +81,7 @@ Pour plus d’informations, voir [Gérer les appareils.](../../business-video/se
 
 ### <a name="more-for-admins-and-partners"></a>En savoir plus pour les administrateurs et les partenaires
 
-Le concentrateur de documentation technique Microsoft 365 Business est mis à jour avec de nouvelles instructions de travail à distance sécurisé.
+Le hub de documentation technique Microsoft 365 Business est mis à jour avec de nouvelles instructions de travail à distance sécurisé.
 
 Pour plus d’informations, [voir Microsoft 365 Ressources métiers.](/microsoft-365/business)
 

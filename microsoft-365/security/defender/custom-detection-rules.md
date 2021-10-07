@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1d0095860242492dc8dd5e370f8583aaed7cff4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a267921468bfc72513a54b11d9ca58b539848ac8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183223"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157709"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -34,7 +34,7 @@ ms.locfileid: "59183223"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Les règles de détection personnalisées sont des règles que vous pouvez concevoir et modifier à l’aide de requêtes [de repérage](advanced-hunting-overview.md) avancé. Ces règles vous permet de surveiller de manière proactive différents événements et états système, y compris les activités suspectées de violation et les points de terminaison mal configurés. Vous pouvez les définir pour qu’ils s’exécutent à intervalles réguliers, en générant des alertes et en effectuant des actions de réponse chaque fois qu’il y a des correspondances.
 
@@ -44,7 +44,7 @@ Pour gérer les détections personnalisées, vous devez disposer de l’un des r
 
 - **Administrateur de sécurité**: les utilisateurs ayant [ce rôle Azure Active Directory gérer](/azure/active-directory/roles/permissions-reference#security-administrator) les paramètres de sécurité dans le portail Microsoft 365 Defender et d’autres portails et services.
 
-- **Opérateur de** sécurité : les utilisateurs dotés de ce [rôle Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du portail Microsoft 365 Defender. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
+- **Opérateur de sécurité**: les utilisateurs dotés de ce [rôle Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) peuvent gérer les alertes et avoir un accès global en lecture seule aux fonctionnalités liées à la sécurité, y compris toutes les informations du portail Microsoft 365 Defender. Ce rôle est suffisant pour la gestion des détections personnalisées uniquement si le contrôle d’accès basé sur un rôle (RBAC) est désactivé dans Microsoft Defender pour point de terminaison. Si vous avez configuré RBAC, vous avez également besoin de l’autorisation gérer les **paramètres** de sécurité pour Defender for Endpoint.
 
 Vous pouvez également gérer les détections personnalisées qui s’appliquent aux données de solutions Microsoft 365 Defender spécifiques si vous avez des autorisations pour elles. Si vous avez uniquement des autorisations de gestion des Microsoft 365 Defender pour Office, par exemple, vous pouvez créer des détections personnalisées à l’aide de tableaux, mais `Email` pas de `Identity` tableaux.  
 
@@ -59,7 +59,7 @@ Pour gérer les autorisations requises, un **administrateur général** peut :
 ## <a name="create-a-custom-detection-rule"></a>Créer une règle de détection personnalisée
 ### <a name="1-prepare-the-query"></a>1. Préparez la requête.
 
-Dans le portail Microsoft 365 Defender' recherche  avancée, sélectionnez une requête existante ou créez une nouvelle requête. Lorsque vous utilisez une nouvelle requête, exécutez la requête pour identifier les erreurs et comprendre les résultats possibles.
+Dans le portail Microsoft 365 Defender, allez  à la recherche avancée et sélectionnez une requête existante ou créez une nouvelle requête. Lorsque vous utilisez une nouvelle requête, exécutez la requête pour identifier les erreurs et comprendre les résultats possibles.
 
 >[!IMPORTANT]
 >Pour empêcher le service de retourner trop d’alertes, chaque règle est limitée à la génération de 100 alertes uniquement chaque fois qu’il s’exécute. Avant de créer une règle, ajustez votre requête pour éviter les alertes pour une activité quotidienne normale.
@@ -88,7 +88,7 @@ Pour créer une règle de détection personnalisée, le de requête doit retourn
 >[!NOTE]
 >La prise en charge d’entités supplémentaires est ajoutée lorsque de nouvelles tables sont ajoutées au schéma de [recherche avancé.](advanced-hunting-schema-tables.md)
 
-Les requêtes simples, telles que celles qui n’utilisent pas l’opérateur ou l’opérateur pour personnaliser ou agréger des résultats, retournent généralement `project` `summarize` ces colonnes courantes.
+Les requêtes simples, telles que celles qui n’utilisent pas l’opérateur ou l’opérateur pour personnaliser ou agréger les résultats, retournent généralement `project` `summarize` ces colonnes courantes.
 
 Il existe plusieurs façons de s’assurer que les requêtes plus complexes retournent ces colonnes. Par exemple, si vous préférez agréger et compter par entité sous une colonne telle que , vous pouvez toujours renvoyer et en l’obtenant à partir de l’événement le plus récent impliquant `DeviceId` `Timestamp` chaque unique `ReportId` `DeviceId` .
 
@@ -97,7 +97,7 @@ Il existe plusieurs façons de s’assurer que les requêtes plus complexes reto
 > Évitez de filtrer les détections personnalisées à l’aide `Timestamp` de la colonne. Les données utilisées pour les détections personnalisées sont pré-filtrées en fonction de la fréquence de détection.
 
 
-L’exemple de requête ci-dessous compte le nombre d’appareils uniques ( ) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise l’opérateur `summarize` avec la `arg_max` fonction.
+L’exemple de requête ci-dessous compte le nombre d’appareils uniques ( ) avec détections antivirus et utilise ce nombre pour rechercher uniquement les appareils avec plus de `DeviceId` cinq détections. Pour renvoyer la dernière `Timestamp` et la `ReportId` correspondante, elle utilise `summarize` l’opérateur avec la `arg_max` fonction.
 
 ```kusto
 DeviceEvents
@@ -120,7 +120,7 @@ Avec la requête dans l’éditeur  de requête, sélectionnez Créer une règle
 - **Gravité :** risque potentiel du composant ou de l’activité identifié par la règle
 - **Catégorie :** composant ou activité de menace identifié par la règle
 - **MITRE ATT&techniques CK**: une ou plusieurs techniques d’attaque identifiées par la règle, comme documenté dans l’infrastructure [MITRE ATT&CK.](https://attack.mitre.org/) Cette section est masquée pour certaines catégories d’alertes, notamment les programmes malveillants, les ransomware, les activités suspectes et les logiciels indésirables
-- **Description**: plus d’informations sur le composant ou l’activité identifié par la règle 
+- **Description :** plus d’informations sur le composant ou l’activité identifié par la règle 
 - **Actions recommandées**: actions supplémentaires que les répondeurs peuvent prendre en réponse à une alerte
 
 #### <a name="rule-frequency"></a>Fréquence de la règle
@@ -150,7 +150,7 @@ Votre règle de détection personnalisée peut effectuer automatiquement des act
 
 #### <a name="actions-on-devices"></a>Actions sur des appareils
 Ces actions sont appliquées aux appareils dans la colonne `DeviceId`des résultats de la requête:
-- **Isoler l’appareil**: utilise Microsoft Defender pour le point de terminaison pour appliquer une isolation complète du réseau, ce qui empêche l’appareil de se connecter à n’importe quelle application ou service. [En savoir plus sur l’isolation des ordinateurs Microsoft Defender pour Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Isoler l’appareil**: utilise Microsoft Defender pour point de terminaison pour appliquer une isolation complète du réseau, ce qui empêche l’appareil de se connecter à n’importe quelle application ou service. [En savoir plus sur l’isolation des ordinateurs Microsoft Defender pour Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Collecter un package d’examen**: collecte des informations sur l’appareil dans un fichier ZIP. [En savoir plus sur le package d’examen Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **Exécuter une analyse antivirus**: effectue une analyse complète Antivirus Windows Defender sur l’appareil
 - **Lancer une enquête**: lance une [enquête automatisée](m365d-autoir.md) sur l’appareil
@@ -180,7 +180,7 @@ Après avoir examiné la règle, sélectionnez **Créer** pour l’enregistrer. 
 
 
 >[!Important] 
->Les détections personnalisées doivent être régulièrement examinées pour plus d’efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de la procédure De gestion des règles de [détection personnalisées existantes.](#manage-existing-custom-detection-rules) <br>  
+>Les détections personnalisées doivent être régulièrement examinées pour des raisons d’efficacité et d’efficacité. Pour vous assurer que vous créez des détections qui déclenchent de vraies alertes, prenez le temps de passer en revue vos détections personnalisées existantes en suivant les étapes de gestion des règles de [détection personnalisées existantes.](#manage-existing-custom-detection-rules) <br>  
 Vous conservez le contrôle sur l’étendue ou la spécificité de vos détections personnalisées afin que les fausses alertes générées par les détections personnalisées indiquent la nécessité de modifier certains paramètres des règles.
 
 
@@ -192,7 +192,7 @@ Vous pouvez afficher la liste des règles de détection personnalisées existant
 
 ### <a name="view-existing-rules"></a>Afficher les règles existantes
 
-Pour afficher toutes les règles de détection personnalisées existantes, **accédez à**  >  **Détections personnalisées de repérage.** La page répertorie toutes les règles avec les informations d’exécution suivantes:
+Pour afficher toutes les règles de détection personnalisées existantes, **accédez à Repérage**  >  **de détections personnalisées.** La page répertorie toutes les règles avec les informations d’exécution suivantes:
 
 - **Dernière série**: lorsqu’une règle a été exécuté pour la dernière fois pour vérifier les correspondances de requête et générer des alertes
 - **État de la dernière fois**: si une règle s’est correctement exécuté
@@ -201,7 +201,7 @@ Pour afficher toutes les règles de détection personnalisées existantes, **acc
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>Afficher les détails de la règle, modifier la règle et exécuter la règle
 
-Pour afficher des informations complètes sur une règle de détection personnalisée, sélectionnez  >  **détections personnalisées** de repérage, puis sélectionnez le nom de la règle. Vous pouvez ensuite afficher des informations générales sur la règle, y compris des informations sur son état d’exécution et son étendue. La page fournit également la liste des alertes et actions déclenchées.
+Pour afficher des informations complètes sur une règle de détection personnalisée, sélectionnez **détections** personnalisées de repérage, puis  >   sélectionnez le nom de la règle. Vous pouvez ensuite afficher des informations générales sur la règle, y compris des informations sur son état d’exécution et son étendue. La page fournit également la liste des alertes et actions déclenchées.
 
 ![Page de détails de règle de détection personnalisée.](../../media/custom-detection-details.png)<br>
 *Détails des règles de détection personnalisées*

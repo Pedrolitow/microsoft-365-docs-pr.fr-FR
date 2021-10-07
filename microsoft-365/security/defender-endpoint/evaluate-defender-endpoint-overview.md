@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b100ddc7abb64e5f73acce29edd1eecc2bd31af1
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 948ebe7de82b4c187e5674bf5ed7042dedf7beb9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043226"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157985"
 ---
 # <a name="evaluate-microsoft-365-defender-for-endpoint-overview"></a>Évaluation de Microsoft 365 Defender vue d’ensemble du point de terminaison
 

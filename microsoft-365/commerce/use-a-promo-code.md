@@ -9,7 +9,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150 S
 description: Découvrez comment appliquer un code promotionnel à votre abonnement Microsoft 365 pour réduire le prix et comment résoudre les problèmes de code promotionnel en cas d’erreur.
 ms.date: 03/17/2021
-ms.openlocfilehash: 01a185229f7ca07b7f665fa0515ed479490b92f4e8499787711bb847e2cb51e9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ac7d07406ff25c5f32d269567e418cd94f540d0f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53872658"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160097"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Utiliser votre code promotionnel pour réduire le prix
 
@@ -38,7 +38,7 @@ Lorsque vous achetez un abonnement, vous pouvez utiliser un code promotionnel po
 3. Sélectionnez **Appliquer un code promotionnel.** Vous devriez voir la confirmation qu’elle a été correctement appliquée. Si un autre message apparaît, voir [Dépannage des codes promotionnels](#troubleshooting-promo-codes) pour en déterminer la raison.
 4. Poursuivez l’enregistrement. Dans la page de confirmation de commande, votre code de remise est inclus avec le montant.
 
-Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, voir [Afficher votre](billing-and-payments/view-your-bill-or-invoice.md).
+Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, [consultez Afficher votre](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Conditions d'utilisation des codes promotionnels
 
@@ -58,7 +58,7 @@ Vous pouvez recevoir un message d'erreur après avoir entré votre code promotio
 - **Le code promotionnel a expiré.** Les campagnes sont définies pour une durée limitée. Les codes promotionnels ont une date d’expiration. Si le code promotionnel que vous essayez d’utiliser dépasse la date d’expiration, il n’est plus utilisable. Il n’existe aucun moyen d’accepter ou de remplacer les codes promotionnels expirés, mais vous pouvez toujours acheter un abonnement sans un.
 - **Le code promotionnel que vous utilisez ne correspond pas à votre région géographique.** Certains codes promotionnels ne sont valides que pour un pays ou une région. Les codes promotionnels ne fonctionnent pas dans un pays ou une région autre que celui ou celle pour lequel ou laquelle ils ont été créés.
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Acheter un abonnement à partir de votre version d’essai](./try-or-buy-microsoft-365.md) gratuite (article)\  
 [Acheter un autre abonnement](./try-or-buy-microsoft-365.md) (article)\  

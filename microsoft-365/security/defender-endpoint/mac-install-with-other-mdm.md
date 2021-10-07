@@ -2,15 +2,13 @@
 title: Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur Mac
 description: Installez Microsoft Defender pour point de terminaison sur Mac sur d’autres solutions de gestion.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, macos, principal, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: mavel
 author: maximvelichko
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26c7e53a6dd28264374d19acb68fd27e27507b0f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d89d98e6e972707266f3b3ed95db3b78b8a5d161
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203046"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159437"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement avec un autre système de gestion des périphériques mobiles (MDM) pour Microsoft Defender pour Endpoint sur macOS
 
@@ -104,7 +102,7 @@ Configurer une stratégie d’extension système. Utilisez **l’identificateur 
 
 Accordez un accès disque total aux composants suivants :
 
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
     - Identificateur : `com.microsoft.wdav`
     - Type d’identificateur : ID d’offre groupée
     - Conditions requises pour le code : `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`

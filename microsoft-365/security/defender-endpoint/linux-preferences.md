@@ -3,27 +3,25 @@ title: Définir des préférences pour Microsoft Defender pour le point de termi
 ms.reviewer: ''
 description: Décrit comment configurer Microsoft Defender pour endpoint sur Linux dans les entreprises.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36d4c90eb02bc9fb147ed0a28481444508be068e
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 15dd2d09746ad934e50376c1d4a9172011983cde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483518"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154817"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -185,7 +183,7 @@ Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au
 
 ##### <a name="path-type-file--directory"></a>Type de chemin d’accès (fichier/répertoire)
 
-Indique si la propriété *de chemin d’accès* fait référence à un fichier ou un répertoire.
+Indique si la propriété *du chemin d’accès* fait référence à un fichier ou un répertoire.
 
 <br>
 
@@ -225,7 +223,7 @@ Spécifie un processus pour lequel toute l’activité de fichier est exclue de 
 
 |Description|Valeur|
 |---|---|
-|**Clé**|nom|
+|**Clé**|name|
 |**Type de données**|Chaîne|
 |**Valeurs possibles**|n’importe quelle chaîne|
 |**Comments**|Applicable uniquement *si $type* est *excluFileName*|
@@ -296,7 +294,7 @@ Type de menace pour lequel le comportement est configuré.
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
 - **Audit**: l’appareil n’est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloc**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Bloquer**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Off**: l’appareil n’est pas protégé contre ce type de menace et rien n’est enregistré.
 
 <br>
@@ -322,7 +320,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |---|---|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -388,7 +386,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -445,7 +443,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA) sont** bloquées
+  - **Les applications potentiellement indésirables (PUA)** sont bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud

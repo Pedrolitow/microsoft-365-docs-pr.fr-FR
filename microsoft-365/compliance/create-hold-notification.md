@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil Communications dans Advanced eDiscovery cas pour envoyer, collecter et suivre des notifications de mise en attente légale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cc9e8c424550c2be12711d7ef098c95230b0b1a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3d4f8529486a4e17a1c21cc861b8d3694e6486c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163961"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158225"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notification de non-droit
 
@@ -42,7 +42,7 @@ La première étape consiste à spécifier les détails appropriés pour les not
 
 2. Sélectionnez un cas, cliquez sur **l’onglet Communications,** puis sur **Nouvelle communication.**
 
-3. Dans la page **Communication du** nom, spécifiez les détails de communication suivants (obligatoires).
+3. Dans la page **Communication de** nom, spécifiez les détails de communication suivants (obligatoires).
 
     - **Nom**: il s’agit du nom de la communication.
 
@@ -75,7 +75,7 @@ Pour créer le contenu du portail :
 
 Une fois que vous avez défini le contenu de l’avis de mise en attente, vous pouvez configurer les flux de travail autour de l’envoi et de la gestion du processus de notification. Les notifications sont des messages électroniques envoyés pour avertir et suivre les dépositaires. Chaque dépositaire ajouté à la communication reçoit la même notification.
 
-Pour configurer et envoyer un avis de mise en attente, vous devez inclure des notifications d’émission, de nouvelle émission et de publication.
+Pour configurer et envoyer un avis de mise en attente, vous devez inclure des notifications d’émission, de rééd envoy e et de publication.
 
 ### <a name="issuance-notification"></a>Notification d’émission
 
@@ -114,7 +114,7 @@ Pour créer une notification de nouvelle émission :
 
 ### <a name="release-notification"></a>Notification de publication
 
-Une fois qu’un problème est résolu ou si un dépositaire n’est plus soumis à la conservation du contenu, vous pouvez libérer le dépositaire d’un cas. Si le dépositaire a déjà émis un avis de mise en attente, la notification de publication peut être utilisée pour avertir les dépositaires qu’ils ont été libérés de leur obligation.
+Une fois qu’un problème est résolu ou si un dépositaire n’est plus soumis à la conservation du contenu, vous pouvez libérer le dépositaire d’un cas. Si le dépositaire a déjà émis un avis de conservation, la notification de publication peut être utilisée pour avertir les dépositaires qu’ils ont été libérés de leur obligation.
 
 Pour créer une notification de publication :
 
@@ -144,7 +144,7 @@ Pour planifier des rappels :
 
 2. Activez le **flux de** travail Rappel en **activé** le basculement d’état (obligatoire).
 
-3. Spécifiez **l’intervalle de rappel (en jours)** (obligatoire). Il s’agit du nombre de jours à attendre avant d’envoyer la première notification de rappel et de suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel sera envoyé sept jours après l’émission initiale de la notification de mise en attente. Tous les rappels suivants sont également envoyés tous les sept jours.
+3. Spécifiez **l’intervalle de rappel (en jours)** (obligatoire). Il s’agit du nombre de jours d’attente avant l’envoi de la première notification de rappel et du suivi. Par exemple, si vous définissez l’intervalle de rappel sur sept jours, le premier rappel sera envoyé sept jours après l’émission initiale de la notification de mise en attente. Tous les rappels suivants sont également envoyés tous les sept jours.
 
 4. Spécifiez **le nombre de rappels** (obligatoire). Ce champ spécifie le nombre de rappels à envoyer aux dépositaires qui ne répond pas. Par exemple, si vous définissez le nombre de rappels sur 3, un dépositaire reçoit un maximum de trois rappels. Une fois qu’un dépositaire a reconnu la notification de conservation, les rappels ne sont plus envoyés à cet utilisateur.
 
@@ -152,7 +152,7 @@ Pour planifier des rappels :
 
 6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de rappel.
 
-7. Cliquez **sur Enregistrer** et allez à l’étape suivante.
+7. Cliquez **sur Enregistrer** et passer à l’étape suivante.
 
 ### <a name="escalations"></a>Escalades
 
@@ -202,7 +202,7 @@ Le tableau suivant décrit les événements dans le processus de gestion des cas
 |Type de communication|Déclencher |
 |:---------|:---------|
 |Avis d’émission|Création initiale de la notification. Vous pouvez également renvoyer manuellement une notification de mise en attente. |
-|Notifications de réé émission|Mise à jour du contenu du portail sur la page **Définir le contenu du** portail dans **l’Assistant Modifier la communication.**|
+|Notifications de réé émission|Mise à jour du contenu du portail sur la page **Définir le** contenu du portail dans **l’Assistant Modifier la communication.**|
 |Avis de publication|Le dépositaire est libéré du cas.|
 |Reminders|Intervalle et nombre de rappels configurés pour le rappel.|
 |Escalades|Intervalle et nombre de rappels configurés pour l’escalade.|

@@ -12,13 +12,13 @@ metadata:
   author: mjcaparas
   ms.author: macapara
   ms.date: 09/13/2019
-  localization_priority: Priority
-  ms.openlocfilehash: e2aa6e0546af05d9265d2aece406f18bd498c997
-  ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+  ms.localizationpriority: high
+  ms.openlocfilehash: 422e2caef35706289a6f6e55c9734ac3678a1663
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/24/2021
-  ms.locfileid: "59497768"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60157673"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -110,5 +110,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Microsoft 365 Defender API
+    - text: API Microsoft 365 Defender
       url: api-overview.md

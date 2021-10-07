@@ -9,15 +9,15 @@ ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment utiliser les Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: 1de8c0c5ed25ee9934077d015f4e66c43e07c7c8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 205a61638f4dcca235e301111fe2028c3a74ed1c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202266"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159591"
 ---
 # <a name="step-3-use-power-automate-to-create-the-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer le flux pour traiter vos contrats
 
@@ -27,7 +27,7 @@ Pour votre solution de gestion des contrats, vous souhaitez créer un flux Power
 
 -  Une fois qu’un contrat a été classé par votre modèle SharePoint Syntex, modifiez l’état du contrat sur **En révision.**
 - Le contrat est ensuite examiné et approuvé ou rejeté.
-- Pour les contrats approuvés, les informations de contrat sont publiées dans un onglet pour le traitement des paiements.
+- Pour les contrats approuvés, les informations sur le contrat sont publiées dans un onglet pour le traitement des paiements.
 - Pour les contrats rejetés, l’équipe est avertie pour analyse approfondie. 
 
 Le diagramme suivant illustre le flux Power Automate pour la solution de gestion des contrats.
@@ -137,7 +137,7 @@ Dans votre flux, vous devez ensuite créer une condition dans laquelle votre con
 
 Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
-- Sous **l’onglet Contrats,** l’état de la carte de contrat passe à **Approuvé**.
+- Sous l’onglet **Contrats,** l’état de la carte de contrat passe à **Approuvé**.
 
    ![État de la carte approuvé.](../media/content-understanding/approved-contracts-tab.png)
 

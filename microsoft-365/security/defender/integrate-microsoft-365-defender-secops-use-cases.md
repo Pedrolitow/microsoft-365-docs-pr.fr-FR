@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 710e2adef0d04d9a7c45506f8b1bd4ec00d1d044
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 79a5b1ea36e6a18d880d7fec7681f826cacac48f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158981"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Étape 5. Développer et tester des cas d’utilisation
 
@@ -38,7 +38,7 @@ ms.locfileid: "59208724"
 
 Les méthodes recommandées pour déployer des Microsoft 365 Defender dans votre centre des opérations de sécurité (SOC) dépendent de l’ensemble actuel d’outils, de processus et de compétences de l’équipe SOC. La maintenance de la cybersécurité sur les plateformes peut être difficile en raison de la grande quantité de données provenant de dizaines voire de centaines de sources de sécurité. 
 
-Les outils de sécurité sont interdépendants. L’activer dans une technologie de sécurité ou modifier un processus peut à son tour en rompre une autre. Pour cette raison, Microsoft recommande à votre équipe SOC de formaliser une méthode de définition et de définition des priorités des cas d’utilisation. Les cas d’utilisation permettent de définir les exigences et les processus de test pour les opérations SOC au sein de différentes équipes. Il crée une méthodologie pour capturer des mesures afin de déterminer si les rôles et la combinaison de tâches qui s’offrent à vous sont alignés sur l’équipe qui correspond aux compétences requises. 
+Les outils de sécurité sont interdépendants. L’activer dans une technologie de sécurité ou modifier un processus peut à son tour en rompre une autre. Pour cette raison, Microsoft recommande à votre équipe SOC de formaliser une méthode de définition et de définition des priorités des cas d’utilisation. Les cas d’utilisation permettent de définir les exigences et les processus de test pour les opérations SOC au sein de différentes équipes. Il crée une méthodologie pour capturer des mesures afin de déterminer si les rôles et la combinaison de tâches qui s’offrent à vous sont alignés sur la bonne équipe avec les compétences requises. 
 
 ## <a name="develop-and-formalize-use-case-process"></a>Développer et formaliser le processus de cas d’utilisation
 
@@ -88,7 +88,7 @@ Voici un exemple de processus pour l’analyse des menaces et des vulnérabilit�
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analyser la sortie du cas d’utilisation et les leçons apprises
 
-Une fois qu’un cas d’utilisation a été approuvé et testé, les lacunes entre vos équipes de sécurité doivent être identifiées, ainsi que les personnes, les processus et les technologies Microsoft 365 Defender impliquées. Microsoft 365 Defender technologies doivent être analysées pour déterminer si elles sont capables d’atteindre les résultats souhaités. Celles-ci peuvent être suivis via une liste de contrôle ou une matrice. 
+Une fois qu’un cas d’utilisation a été approuvé et testé, les lacunes entre vos équipes de sécurité doivent être identifiées, ainsi que les personnes, les processus et les technologies Microsoft 365 Defender impliquées. Microsoft 365 Defender technologies doivent être analysées pour déterminer si elles sont capables d’obtenir les résultats souhaités. Celles-ci peuvent être suivis via une liste de contrôle ou une matrice. 
 
 Par exemple, dans l’exemple de scénario anti-hameçonnage, les équipes SOC auraient pu faire les découvertes de ce tableau.
 
@@ -105,7 +105,7 @@ En outre, les équipes SOC auraient pu faire les découvertes décrites dans le 
 | Équipe SOC | Conditions requises | Personnes pour répondre aux exigences | Processus pour répondre aux exigences | Technologie pertinente | Intervalle identifié | Utiliser le journal des changements de cas | Exempt (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Supervision SOC | Tous les biens connectés à des réseaux approuvés sont identifiés et catégorisés | Supervision SOC, propriétaires de la bu, propriétaires d’applications, propriétaires de biens, etc. | Système de gestion des biens centralisé pour découvrir et lister les catégories et attributs des biens en fonction des risques. | ServiceNow ou d’autres ressources. <br><br>[Microsoft 365 Inventaire des appareils](/security/defender-endpoint/device-discovery) | Seuls 70 % des biens ont été découverts. Microsoft 365 Defender correction effective uniquement pour les ressources connues | Des services de gestion du cycle de vie des biens Microsoft 365 Defender une couverture de 100 % | N |
-| Engineering & SecOps Teams | Les ressources dont l’impact et les vulnérabilités critiques sont élevés sont corrigés conformément à la stratégie | Ingénieurs SecOps, analystes SOC : Conformité des &, Ingénierie de la sécurité | Processus défini pour la catégorisation des vulnérabilités critiques et à risque élevé | [Tableaux de bord de gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender pour le point de terminaison a identifié un impact élevé, des périphériques d’alerte élevés sans plan de correction ou implémentation de l’activité recommandée par Microsoft | Ajoutez un flux de travail pour avertir les propriétaires de biens lorsque l’activité de correction est requise dans un délai de 30 jours par stratégie . Implémenter un système de gestion des tickets pour informer les propriétaires de biens des étapes de correction. | N |
+| Engineering & SecOps Teams | Les ressources dont l’impact et les vulnérabilités critiques sont élevés sont corrigés conformément à la stratégie | Ingénieurs SecOps, analystes SOC : Conformité des &, Ingénierie de la sécurité | Processus défini pour catégoriser les vulnérabilités à risque élevé et critique | [Tableaux de bord de gestion des menaces et des vulnérabilités](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Defender pour le point de terminaison a identifié un impact élevé, des périphériques d’alerte élevés sans plan de correction ou implémentation de l’activité recommandée par Microsoft | Ajoutez un flux de travail pour avertir les propriétaires de biens lorsque l’activité de correction est requise dans un délai de 30 jours par stratégie . Implémenter un système de gestion des tickets pour informer les propriétaires de biens des étapes de correction. | N |
 | Analyse Teams | L’état des menaces et des vulnérabilités est signalé via le portail intranet de l’entreprise | Analyste SOC de niveau 2 | Rapports générés automatiquement à partir de Microsoft 365 Defender la progression de la correction des biens | [Alertes dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/alerts) <br><br> Surveillance du score de sécurisation | Aucun affichage ou rapport de tableau de bord n’est communiqué aux propriétaires de biens concernant l’état des menaces et des vulnérabilités des biens. | Créez un script d’automatisation pour remplir l’état de correction des vulnérabilités de ressources critiques et à risque élevé pour l’organisation. | N |
 |||||||||
 
@@ -115,7 +115,7 @@ Dans ces exemples d’utilisation, le test a révélé plusieurs lacunes dans le
 
 Une fois que les tests de cas d’utilisation ont été corrigés pour toutes les lacunes, les leçons apprises et les mesures collectées dans ces derniers peuvent être incorporées dans les runbooks de production (processus d’exploitation) et les manuels de votre équipe SOC (réponses aux incidents et procédures d’escalade). 
 
-La maintenance des runbooks et des playbooks de l’équipe SOC peut être organisée de nombreuses façons. Chaque équipe SOC peut être responsable de sa propre version, ou il peut y avoir une version centralisée unique que toutes les équipes peuvent partager dans un référentiel central. La gestion des runbooks et des playbooks pour des organisations individuelles est basée sur la taille, les jeux de compétences, les rôles et la répartition des tâches. Une fois qu’un runbook a été mis à jour, le processus de mise à jour du manuel doit suivre. 
+La maintenance des runbooks et des manuels d’équipe SOC peut être organisée de nombreuses façons. Chaque équipe SOC peut être responsable de sa propre version, ou il peut y avoir une version centralisée unique que toutes les équipes peuvent partager dans un référentiel central. La gestion des runbooks et des playbooks pour des organisations individuelles est basée sur la taille, les jeux de compétences, les rôles et la répartition des tâches. Une fois qu’un runbook a été mis à jour, le processus de mise à jour du manuel doit suivre. 
 
 ## <a name="use-a-standard-framework-for-escalation"></a>Utiliser une infrastructure standard pour l’escalade
 

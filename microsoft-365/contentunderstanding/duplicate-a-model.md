@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: Apprenez comment et pourquoi dupliquer un modèle dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 882340198ec17402caa30d9e1e34b4e37b0096a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: dc8668ccf407e881bb2114cb679b1ed2049c256e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183471"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156437"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Dupliquer un modèle dans Microsoft SharePoint Syntex
 

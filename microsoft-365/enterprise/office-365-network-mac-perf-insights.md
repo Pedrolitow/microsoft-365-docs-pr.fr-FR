@@ -7,19 +7,19 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Réseau Informations
-ms.openlocfilehash: e5b46b4a19a52807a0690722e9a5f5f46727c7ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d8f021ee543b41d3e53a5f12f9ba3d6c83da8757
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205396"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155009"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 Réseau Informations
 
@@ -29,7 +29,7 @@ Informations sont conçus pour vous aider à concevoir des périmètres réseau 
 
 Il existe six informations réseau spécifiques qui peuvent être affichées pour chaque emplacement de bureau :
 
-- [Sortie réseau backhauled](#backhauled-network-egress)
+- [Sortie du réseau backhauled](#backhauled-network-egress)
 - [Périphérique intermédiaire réseau](#network-intermediary-device)
 - [Meilleures performances détectées pour les clients proches de chez vous](#better-performance-detected-for-customers-near-you)
 - [Utilisation d’une porte d’Exchange Online service non optimale](#use-of-a-non-optimal-exchange-online-service-front-door)
@@ -56,7 +56,7 @@ Cette information est abrégée en « Egress » dans certains affichages récapi
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
-Cela indique que la distance entre l’emplacement du bureau et la sortie réseau est de plus de 500 km (800 kilomètres). L’emplacement du bureau est identifié par un emplacement d’ordinateur client obscurci et l’emplacement de sortie réseau est identifié à l’aide de l’adresse IP inversée pour les bases de données d’emplacements. L’emplacement du bureau peut être incorrect si Windows services de localisation sont désactivés sur les ordinateurs. L’emplacement de sortie réseau peut être incorrect si les informations de la base de données d’adresses IP inverses sont inexactes.
+Cela indique que la distance entre l’emplacement du bureau et la sortie réseau est de plus de 500 km (800 kilomètres). L’emplacement du bureau est identifié par un emplacement d’ordinateur client obscurci et l’emplacement de sortie réseau est identifié à l’aide de l’adresse IP inversée pour les bases de données d’emplacement. L’emplacement du bureau peut être incorrect si Windows services de localisation sont désactivés sur les ordinateurs. L’emplacement de sortie réseau peut être incorrect si les informations de la base de données d’adresses IP inverses sont inexactes.
 
 Ces informations incluent l’emplacement du bureau, le pourcentage estimé du nombre total d’utilisateurs locataires sur l’emplacement, l’emplacement de sortie du réseau actuel, la pertinence de l’emplacement de sortie, la distance entre l’emplacement et le point de sortie actuel, la date à laquelle la condition a été détectée pour la première fois et la date à laquelle la condition a été résolue.
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur la résolution de ce problème, voir Egress [conn
 
 Cette information s’affiche si nous avons détecté des appareils entre vos utilisateurs et le réseau de Microsoft, ce qui peut avoir un impact sur Office 365 l’expérience utilisateur. Il est recommandé de les contourner pour des Microsoft 365 réseau spécifiques destinés aux centres de données Microsoft. Cette recommandation est également décrite dans Microsoft 365 [principes de connectivité réseau.](microsoft-365-network-connectivity-principles.md) 
 
-L’une des informations intermédiaires du réseau que nous montrons est la coupure SSL et l’inspection lorsque des points de terminaison réseau Office 365 critiques pour les Exchange, SharePoint et Teams sont interceptés et déchiffrés par des périphériques intermédiaires réseau.
+L’une des informations intermédiaires du réseau que nous montrons est la coupure SSL et l’inspection lorsque les points de terminaison réseau Office 365 critiques pour les Exchange, SharePoint et Teams sont interceptés et déchiffrés par des périphériques intermédiaires réseau.
 
 ### <a name="what-does-this-mean"></a>Qu’est-ce que cela signifie ?
 
@@ -196,6 +196,6 @@ Activez la visibilité de la connectivité réseau de l’emplacement du bureau 
 
 [Microsoft 365'évaluation réseau (prévisualisation)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 de test de connectivité réseau (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 de test de connectivité réseau (prévisualisation)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Services de localisation de connectivité réseau (prévisualisation)](office-365-network-mac-location-services.md)

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment la liste des utilisateurs invités est remplie dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 3afc1c3de5a56def6e6bcf1fa9b9711bdff0d4e8
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f2a8de5b4e9c00361aa0cb2113185fa07d8885a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773654"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60158741"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Utilisateurs invités dans Centre d'administration Microsoft 365
 
@@ -65,7 +66,7 @@ Une fois que vous avez terminé de collaborer avec un utilisateur invité, vous 
 
 Pour supprimer des utilisateurs dans le portail Azure AD, voir [supprimer un utilisateur invité et des ressources.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [utilisateurs invités dans le Centre d’administration Microsoft 365](about-guest-users.md)
 

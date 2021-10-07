@@ -6,10 +6,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -17,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Découvrez un utilisateur actif de l’analyse Microsoft 365'utilisation, des rapports d’activité et des mesures d’adoption.
-ms.openlocfilehash: ddbfc487089aed89c8dde8fe60b25e13dc94d4d0
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a535430281eb73542808ff75d507a700c9354ca2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776679"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160963"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Utilisateur actif dans les rapports Microsoft 365'utilisation
 

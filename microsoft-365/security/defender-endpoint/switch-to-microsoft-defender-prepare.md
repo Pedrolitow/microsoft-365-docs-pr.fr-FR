@@ -2,8 +2,6 @@
 title: Basculer vers Microsoft Defender pour le point de terminaison - Préparer
 description: Préparez-vous à passer à Microsoft Defender pour le point de terminaison. Mettez à jour vos appareils et configurez vos connexions réseau.
 keywords: migration, Microsoft Defender pour point de terminaison, meilleure pratique
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 436b6725db916fdbf4497988343b4fc1b8ec9110
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: e265c319f8574a9de02d1f7f7f782e07fb105f91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042998"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154601"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 1 : Préparer
 
@@ -88,7 +86,7 @@ Maintenant que vous avez mis à jour les appareils de votre organisation, l’é
 À ce stade, vous êtes prêt à accorder l’accès à vos administrateurs de sécurité et opérateurs de sécurité qui utiliseront le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
 > [!NOTE]
-> Le portail Microsoft 365 Defender est parfois appelé portail Defender pour point de terminaison et est accessible à l':. [https://security.microsoft.com](https://security.microsoft.com) L’ancien Centre de sécurité Microsoft Defender ( https://securitycenter.windows.com) redirigera bientôt vers le portail Microsoft 365 Defender web. Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overview.md)
+> Le portail Microsoft 365 Defender est parfois appelé portail Defender pour point de terminaison et est accessible à l':. [https://security.microsoft.com](https://security.microsoft.com) L’Centre de sécurité Microsoft Defender ( https://securitycenter.windows.com) redirigera bientôt vers le portail Microsoft 365 Defender web. Pour plus d’informations, [voir Microsoft 365 Defender portail.](portal-overview.md)
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>Accorder l’accès au portail Microsoft 365 Defender web
 

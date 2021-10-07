@@ -10,31 +10,31 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06de4468d0737fbdc8e0b847c5671256d00b5acd
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 0a92cf747142dbb01908b1ea3931d9b7a6bfa115
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124756"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159161"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles (GA) dans la dernière version de Microsoft Defender pour endpoint et les fonctionnalités de sécurité dans Windows 10 et Windows Server.
+Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint et les fonctionnalités de sécurité dans Windows 10 et Windows Server.
 
 Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionnalités d’aperçu.](preview.md)
 
@@ -55,7 +55,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
 - [Nouveautés de la Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres systèmes d’exploitation :
-- [Nouveautés de Defender pour Endpoint sur macOS](mac-whatsnew.md)
+- [Nouveautés de Defender pour Point de terminaison sur macOS](mac-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
 

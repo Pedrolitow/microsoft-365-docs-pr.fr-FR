@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données XSLT/XML à partir de Veritas Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: f2cd501334718f7b2e056d96d5b07392459b441e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a7220d12a444754e1cdb67facac085452b2f6a7c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177995"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155069"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configurer un connecteur pour archiver les données XSLT/XML
 
@@ -33,11 +33,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec la source XSLT/XML pour configurer un site XSLT/XML.
 
-2. Une fois toutes les 24 heures, les messages de conversation de la source XSLT/XML sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu au format de message électronique.
+2. Toutes les 24 heures, les messages de conversation provenant de la source XSLT/XML sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu au format de message électronique.
 
 3. Le connecteur XSLT/XML que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
-4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier boîte de réception nommé **XSLT/XML** est créé dans les boîtes aux lettres utilisateur et les éléments de message sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque message contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message.
+4. Le connecteur importe les éléments de message convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape 3. Un nouveau sous-dossier dans le dossier Boîte de réception nommé **XSLT/XML** est créé dans les boîtes aux lettres utilisateur et les éléments de message sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque message contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -85,4 +85,4 @@ Après avoir créé le connecteur XSLT/XML, vous pouvez afficher l’état du co
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

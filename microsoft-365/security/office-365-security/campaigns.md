@@ -9,7 +9,7 @@ ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.collection:
 description: Découvrez les affichages campagne dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bc2bb1adc39aae70f8ace89bf0efaaf5a7a5c5a
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 0af72653a8f180728b71b05fa044627012282c8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482839"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157697"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -43,16 +43,16 @@ Campaign Views vous permet de voir la présentation d’une attaque plus rapidem
 
 ## <a name="what-is-a-campaign"></a>Qu’est-ce qu’une campagne ?
 
-Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent pour arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
+Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent afin d’arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
 
-Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source de l’attaque**: adresses IP sources et domaines de messagerie de l’expéditeur.
 - **Propriétés du** message : le contenu, le style et le ton des messages.
 - **Destinataires du message**: lien entre les destinataires. Par exemple, les domaines des destinataires, les fonctions de travail des destinataires (administrateurs, cadres, etc.), les types d’entreprise (grandes, petites, publiques, privées, etc.) et les secteurs d’activité.
 - **Charge utile d’attaque**: liens malveillants, pièces jointes ou autres charges utiles dans les messages.
 
-Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée contre votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
+Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée sur votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
 
 ## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Affichages des campagnes dans le portail Microsoft 365 Defender web
 
@@ -60,7 +60,7 @@ Les affichages de campagne sont disponibles dans le portail Microsoft 365 Defend
 
 ![Vue d’ensemble des campagnes dans Microsoft 365 Defender portail.](../../media/campaigns-overview.png)
 
-Vous pouvez également obtenir les affichages de campagne à partir des pages :
+Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
 
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Campagnes**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Tous les e-mails** \> **Onglet Campagne**
@@ -88,11 +88,11 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Type**: cette valeur est **hameçonnage** ou **programme malveillant.**
 
-- **Sous-type**: cette valeur contient plus de détails sur la campagne. Par exemple :
+- **Sous-type**: cette valeur contient plus de détails sur la campagne. Par exemple :
   - **Hameçonnage**: si disponible, marque faisant l’objet d’un hameçonnage par cette campagne. Par exemple, `Microsoft` , `365` , ou `Unknown` `Outlook` `DocuSign` .
   - **Programme** malveillant : par exemple, `HTML/PHISH` ou `HTML/<MalwareFamilyName>` .
 
-  Si disponible, la marque faisant l’objet d’un hameçonnage par cette campagne. Lorsque la détection est pilotée par Defender pour la Office 365, le préfixe **ATP est** ajouté à la valeur de sous-type.
+  Si disponible, la marque faisant l’objet d’un hameçonnage par cette campagne. Lorsque la détection est pilotée par Defender pour Office 365 technologie, le préfixe **ATP-** est ajouté à la valeur de sous-type.
 
 - **Destinataires** : nombre d’utilisateurs qui ont été ciblés par cette campagne.
 
@@ -100,23 +100,23 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Clicked**: nombre d’utilisateurs qui ont cliqué sur l’URL ou ouvert la pièce jointe dans le message d’hameçonnage.
 
-- **Taux de** clic : pourcentage calculé par «**Boîte de**  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
+- **Taux de** clic : pourcentage tel que calculé par «**Boîte** de  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
 
   Notez que **le taux de clics** n’est pas utilisé dans les campagnes anti-programme malveillant.
 
 - **Visité :** nombre d’utilisateurs qui ont réellement effectué l’accès au site web de charge utile. S’il existe **des valeurs Clicked,** mais Coffre liens ont bloqué l’accès au site web, cette valeur est zéro.
 
-**L’onglet Origine de** la campagne affiche les sources des messages sur une carte du monde.
+**L’onglet Origine** de la campagne affiche les sources des messages sur une carte du monde.
 
 ### <a name="filters-and-settings"></a>Filtres et paramètres
 
-En haut de la page **Campagne,** plusieurs paramètres de filtre et de requête vous permettent de rechercher et d’isoler des campagnes spécifiques.
+En haut de la page **Campagne,** il existe plusieurs paramètres de filtre et de requête pour vous aider à rechercher et isoler des campagnes spécifiques.
 
 ![Filtres de campagne.](../../media/campaign-filters-and-settings.png)
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
-Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser**.
+Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser.**
 
 Les propriétés filtrables de campagne disponibles dans le bouton **Type** de campagne sont décrites dans la liste suivante :
 
@@ -223,7 +223,7 @@ Le diagramme contient les informations suivantes :
   |**Date de publication**|`SFV:SKQ`|Le message a ignoré le filtrage du courrier indésirable car il a été libéré de la quarantaine.|
   |**Autoriser le client**<sup>\*</sup>|`SFV:SKA`|Le message a ignoré le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Bloc de client**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
-  |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des Coffre d’un utilisateur.|
+  |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs Coffre’un utilisateur.|
   |**Blocage de l’utilisateur**<sup>\*\*</sup>|`SFV:BLK`|Le message a été bloqué par le filtrage du courrier indésirable car l’expéditeur se trouvait dans la liste des expéditeurs bloqués d’un utilisateur.|
   |**ZAP**|s/o|[La purge automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) a déplacé le message remis dans le dossier Courrier indésirable ou mis en quarantaine. Vous configurez l’action dans les [stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)|
   |

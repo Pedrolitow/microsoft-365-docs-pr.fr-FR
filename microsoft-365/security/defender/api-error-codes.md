@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa85de2f9dc6a5cbc8a7f22660fd96487f7d8aaf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154560"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codes d’Microsoft 365 Defender l’API REST courants
 
@@ -64,7 +64,7 @@ NotFound | In found (404) | Message d’erreur Général in trouvé.
 ResourceNotFound | In found (404) | Ressource \<the requested resource\> in trouvée.
 InternalServerError | Erreur interne du serveur (500) | *Remarque : aucun message d’erreur, retenter l’opération ou [contacter Microsoft](/microsoft-365/business-video/get-help-support) si elle n’est pas résolue*
 
-## <a name="examples"></a>範例
+## <a name="examples"></a>Exemples
 
 ```json
 {

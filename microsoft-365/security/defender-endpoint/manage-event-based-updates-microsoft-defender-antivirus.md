@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3edca602d9e49d8ddc67da0e740c862364b0d6b4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: ca814b93b3d36695e980fb560d1267ca9ded762e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491348"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159401"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
@@ -33,7 +33,7 @@ ms.locfileid: "59491348"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Antivirus Microsoft Defender vous permet de déterminer si des mises à jour doivent (ou ne doivent pas) se produire après certains événements, par exemple au démarrage ou après la réception de rapports spécifiques du service de protection livré par le cloud.
+Antivirus Microsoft Defender vous permet de déterminer si des mises à jour doivent (ou ne doivent pas) se produire après certains événements, par exemple au démarrage ou après la réception de rapports spécifiques du service de protection cloud.
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>Vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser les Microsoft Endpoint Configuration Manager, la stratégie
 
 2. Go to the **Scheduled scans** section and set **Check for the latest security intelligence updates before running a scan** to **Yes**.
 
-3. Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
 4. [Déployez la stratégie mise à jour comme d’habitude.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
@@ -61,7 +61,7 @@ Vous pouvez utiliser les Microsoft Endpoint Configuration Manager, la stratégie
 
 5. Double-cliquez sur Vérifier les dernières définitions de virus et de **logiciels espions** avant d’exécutez une analyse programmée et définissez l’option **sur Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-check-for-protection-updates-before-running-a-scan"></a>Utiliser les cmdlets PowerShell pour vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
@@ -97,7 +97,7 @@ Vous pouvez utiliser la stratégie de groupe pour forcer Antivirus Microsoft Def
 
 5. Double-cliquez sur Vérifier les dernières définitions de virus et de **logiciels espions** au démarrage et définissez l’option **sur Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour configurer des Antivirus Microsoft Defender pour vérifier les mises à jour au démarrage, même lorsqu’elle n’est pas en cours d’exécution.
 
@@ -105,7 +105,7 @@ Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
-2. À l’aide **de l’Éditeur de gestion des stratégies de** groupe, go to **Computer configuration**.
+2. À l’aide **de l’Éditeur de gestion des stratégies** de groupe, go to **Computer configuration**.
 
 3. Cliquez **sur Stratégies** **puis Modèles d’administration.**
 
@@ -113,7 +113,7 @@ Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour
 
 5. Double-cliquez sur **Lancer la mise à jour de l’intelligence** de sécurité au démarrage et définissez l’option sur **Activé.**
 
-6. Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-download-updates-when-microsoft-defender-antivirus-is-not-present"></a>Utiliser les cmdlets PowerShell pour télécharger les mises à jour lorsque Antivirus Microsoft Defender n’est pas présent
 
@@ -155,7 +155,7 @@ Si vous avez activé la protection cloud, l’Antivirus Microsoft Defender envoi
 
 5. Double-cliquez sur Autoriser les mises à jour d’informations de sécurité en temps réel **basées** sur les rapports de Microsoft MAPS et définissez l’option **sur Activé.** Cliquez ensuite sur **OK**.
 
-6. **Autoriser les notifications à désactiver les rapports** basés sur des définitions pour Microsoft MAPS et définir l’option sur **Activé**. Cliquez ensuite sur **OK**.
+6. **Autoriser les notifications pour désactiver les rapports** basés sur des définitions pour Microsoft MAPS et définir l’option sur **Activé**. Cliquez ensuite sur **OK**.
 
 > [!NOTE]
 > **Autoriser les notifications à désactiver les** rapports basés sur des définitions permet à Microsoft MAPS de désactiver ces définitions connues pour provoquer des rapports faux positifs. Vous devez configurer votre ordinateur pour qu’il rejoigne Microsoft MAPS pour que cette fonction fonctionne.
@@ -164,7 +164,7 @@ Si vous avez activé la protection cloud, l’Antivirus Microsoft Defender envoi
 
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

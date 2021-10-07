@@ -3,7 +3,7 @@ title: Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
 description: Comment préparer l’utilisation de TLS 1.2 pour toutes les combinaisons client-serveur et navigateur-serveur dans Office 365 et Office 365 GCC après la désactivation de la prise en charge de TLS 1.0 et 1.1.
 author: kccross
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 audience: ITPro
@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: b09ffa936ef7395bd16df37378db2d7de4a253f8
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 2ae758ef9e5c36b2406527e2a10c43f57986ea1f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480735"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159753"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
 
@@ -39,7 +39,7 @@ Nous avons déjà commencé la dépréciation des versions 1.0 et 1.1 de TLS en 
 Assurez-vous que toutes les combinaisons client-serveur et navigateur-serveur utilisent le protocole TLS 1.2 (ou une version plus récente) pour maintenir la connexion aux services Office 365. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur.
 
   > [!NOTE]
-  > Pour le flux de messagerie entrant SMTP, après l’utilisation de TLS 1.0 et 1.1, nous n’accepterons que la connexion TLS 1.2. Toutefois, nous continuerons à accepter la connexion SMTP non chiffrée sans TLS. Bien que nous ne recommandons pas la transmission de courrier sans chiffrement. 
+  > Pour le flux de messagerie entrant SMTP, après l’utilisation de TLS 1.0 et 1.1, nous n’accepterons que la connexion TLS 1.2. Toutefois, nous continuerons à accepter la connexion SMTP qui n’est pas chiffrée sans TLS. Bien que nous ne recommandons pas la transmission de courrier sans chiffrement. 
 
 Vous devez mettre à jour les applications qui appellent Microsoft 365 API sur TLS 1.0 ou TLS 1.1 pour utiliser TLS 1.2. Par défaut, .NET 4.5 est TLS 1.1. Pour mettre à jour votre configuration .NET, voir [Comment activer TLS (Transport Layer Security) 1.2 sur les clients.](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 

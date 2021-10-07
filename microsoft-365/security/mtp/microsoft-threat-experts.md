@@ -11,16 +11,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 4fcab8abd4f1a5a45ff2700b01abc7fe67b8563f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e47783d2308ca4b94360dd4fa06341d18f8973bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164697"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154661"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Spécialistes des menaces Microsoft vue d’Microsoft 365'ensemble
 
@@ -70,7 +70,7 @@ Vous pouvez également contacter des experts microsoft en matière de menaces di
 
 L’option de **consulter un expert en menaces** est disponible à plusieurs endroits dans le portail :
 
-- <i>**Menu Actions de la page d’appareil**</i><BR>
+- <i>**Menu Actions de page d’appareil**</i><BR>
 ![Capture d’écran de l’option de menu MTE-EOD dans le menu d’action de la page Appareil.](../../media/mte/device-actions-mte-highlighted.png)
 
 - <i>**Menu volant de la page d’inventaire des appareils**</i><BR>
@@ -80,7 +80,7 @@ L’option de **consulter un expert en menaces** est disponible à plusieurs end
 ![Capture d’écran de l’option de menu MTE-EOD sur la page d’alerte.](../../media/mte/alerts-actions-mte-highlighted.png)
 
 - <i>**Menu Actions de la page Incidents**</i><BR>
-![Capture d’écran de l’option de menu MTE-EOD sur la page Incidents.](../../media/mte/incidents-action-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page incidents.](../../media/mte/incidents-action-mte-highlighted.png)
 
 - <i>**Page d’inventaire des incidents**</i><BR>
 ![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des incidents.](../../media/mte/incidents-inventory-mte-highlighted.png)

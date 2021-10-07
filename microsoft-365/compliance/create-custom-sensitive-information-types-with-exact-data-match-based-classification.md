@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a8ebc2aedc624028cf0b5144d434185c20243b9
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 141178db0ba221d6e8ef9c5f3d4d85bb90607fb1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460463"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160063"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -171,7 +171,7 @@ L’indicateur `ignoredDelimiters` ne prend pas en charge :
 
 Dans cet exemple, où `caseInsensitive` et `ignoredDelimiters` sont utilisés ensemble, EDM considère **FOO-1234** et **fOo#1234** comme étant identiques et classifie l’élément comme un type d’informations sensibles de dossier de patient.
 
-1. Connecter au Centre de sécurité & conformité PowerShell à l’aide des procédures de Connecter au Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Connecter au Centre de sécurité & conformité PowerShell à l’aide des procédures Connecter dans le Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Pour charger le schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 

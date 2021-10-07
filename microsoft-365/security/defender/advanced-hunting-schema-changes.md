@@ -1,5 +1,5 @@
 ---
-title: Changements d’appellation dans le Microsoft 365 Defender de recherche avancée
+title: Changements de nom dans le schéma Microsoft 365 Defender de recherche avancée
 description: Suivre et passer en revue les tables et colonnes de modifications d’attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4082dbe9964c115df279f04d4a25ce5fbeb2cec2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60159113"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
@@ -62,15 +62,15 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 | `DetectionSource` | CustomerTI | Ti personnalisée | Changement de nom |
 | `DetectionSource` | OfficeATP | Microsoft Defender pour Office 365 | Changement de nom |
 | `DetectionSource` | MTP | Microsoft 365 Defender | Changement de nom |
-| `DetectionSource` | AzureATP | Microsoft Defender pour Identity | Changement de nom |
+| `DetectionSource` | AzureATP | Microsoft Defender pour l’identité | Changement de nom |
 | `DetectionSource` | CustomDetection | Détection personnalisée | Changement de nom |
 | `DetectionSource` | AutomatedIgoigation |Examen automatisé | Changement de nom |
 | `DetectionSource` | ThreatExperts | Spécialistes des menaces Microsoft | Changement de nom |
 | `DetectionSource` | Ti tiers | Capteurs tiers | Changement de nom |
-| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
 |`ServiceSource` |Protection Microsoft contre les menaces | Microsoft 365 Defender | Changement de nom |
 | `ServiceSource` | Office 365 – Protection avancée contre les menaces |Microsoft Defender pour Office 365 | Changement de nom |
-| `ServiceSource` |Azure ATP |Microsoft Defender pour Identity | Changement de nom |
+| `ServiceSource` |Azure ATP |Microsoft Defender pour l’identité | Changement de nom |
 
 `DetectionSource`est disponible dans la table [AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`est disponible dans les tables [AlertEvidence](advanced-hunting-alertevidence-table.md) et [AlertInfo.](advanced-hunting-alertinfo-table.md) 
 
@@ -86,7 +86,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
     | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inclure d’autres types de menaces |
 
 
-2. Dans les `EmailAttachmentInfo` `EmailEvents` tableaux et les tableaux, la colonne a été ajoutée pour fournir plus `ThreatNames` d’informations sur la menace de courrier électronique. Cette colonne contient des valeurs telles que le courrier indésirable ou le hameçonnage.
+2. Dans les `EmailAttachmentInfo` `EmailEvents` tableaux et les tableaux, la colonne a été ajoutée pour fournir plus `ThreatNames` d’informations sur la menace de messagerie. Cette colonne contient des valeurs telles que le courrier indésirable ou le hameçonnage.
 
 3. Dans la table [DeviceInfo,](advanced-hunting-deviceinfo-table.md) la colonne a été remplacée par la colonne en fonction `DeviceObjectId` des commentaires des `AadDeviceId` clients.
 
@@ -99,7 +99,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
     | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Commentaires des clients. |
     | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Commentaires des clients. |
 
-## <a name="march-2021"></a>Mars 2021
+## <a name="march-2021"></a>mars 2021
 
 La `DeviceTvmSoftwareInventoryVulnerabilities` table a été dépréciée. Les tables et les tables le `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` remplacent.
 

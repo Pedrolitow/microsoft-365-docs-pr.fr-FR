@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fe1379db88d23a1a9b7555add1d54f6587fa573
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: ac0d6cf4ff2dab75809525e5c49fc5c12eec670b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009384"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60157661"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs sûrs dans EOP
 
@@ -42,7 +42,7 @@ Les listes d’expéditeurs sûrs disponibles sont décrites dans la liste suiva
 3. Liste d’adresses IP permises (filtrage des connexions)
 4. Listes d’expéditeurs autorisés ou listes de domaines autorisés (stratégies anti-courrier indésirable)
 
-Les règles de flux de messagerie permettent de faire en sorte que seuls les messages autorisés soient autorisés. L’expéditeur autorisé et les listes de domaines autorisés dans les stratégies anti-courrier indésirable ne sont pas aussi sécurisés que la liste d’adresses IP autorisées, car le domaine de messagerie de l’expéditeur est facilement usurpé. Toutefois, la liste d’adresses IP  permises présente également un risque, car les messages électroniques provenant de n’importe quel domaine envoyé à partir de cette adresse IP contournent le filtrage du courrier indésirable.
+Les règles de flux de messagerie permettent de faire en sorte que seuls les messages autorisés soient autorisés. Les listes d’expéditeurs autorisés et de domaines autorisés dans les stratégies anti-courrier indésirable ne sont pas aussi sécurisées que la liste d’adresses IP autorisées, car le domaine de messagerie de l’expéditeur est facilement usurpé. Toutefois, la liste d’adresses IP  permises présente également un risque, car les messages électroniques provenant de n’importe quel domaine envoyé à partir de cette adresse IP contournent le filtrage du courrier indésirable.
 
 > [!IMPORTANT]
 >
@@ -70,7 +70,7 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
 
 2. Configurez l’un des paramètres suivants :
 
-   - **Condition de règle de flux de** messagerie : un **en-tête** de message inclut l’un de ces mots Nom d’en-tête : \>  \>  `Authentication-Results` \> **Valeur d’en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
+   - **Condition de règle de flux** de messagerie : un en-tête de **message** inclut l’un de ces mots Nom d’en-tête : \>  \>  `Authentication-Results` \> **valeur d’en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
 
      Cette condition vérifie l’état d’authentification de messagerie du domaine de courrier d’envoi pour s’assurer que le domaine d’envoi n’est pas usurpé. Pour plus d’informations sur l’authentification de messagerie, voir [SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC.](use-dmarc-to-validate-email.md)
 
@@ -88,7 +88,7 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
 
 3. **Conditions facultatives**:
 
-   - **L’expéditeur** \> **est interne/externe** \> **En dehors de** l’organisation : cette condition est implicite, mais il est possible de l’utiliser pour prendre en compte les serveurs de messagerie locaux qui peuvent ne pas être correctement configurés.
+   - **L’expéditeur** \> **est interne/externe** \> **En dehors de** l’organisation : cette condition est implicite, mais vous pouvez l’utiliser pour prendre en compte les serveurs de messagerie locaux qui ne sont peut-être pas correctement configurés.
 
    - **Objet ou corps** \> **l’objet ou le corps inclut l’un de ces mots** \> : si vous pouvez limiter davantage les messages par mots clés ou expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces \<keywords\> mots comme condition.
 
@@ -107,11 +107,11 @@ L’exemple suivant suppose que vous avez besoin d’e-contoso.com pour ignorer 
 ## <a name="use-outlook-safe-senders"></a>Utiliser Outlook Coffre expéditeurs
 
 > [!CAUTION]
-> Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés ; toutefois, les listes Coffre expéditeurs ou domaines Coffre de l’utilisateur n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
+> Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés . toutefois, les listes Coffre expéditeurs ou domaines Coffre de l’utilisateur n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
 
 Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste Coffre expéditeurs dans la boîte aux lettres. Pour obtenir des instructions, voir [Configurer les paramètres](configure-junk-email-settings-on-exo-mailboxes.md)de courrier indésirable Exchange Online boîtes aux lettres dans Office 365 . Cela n’est pas souhaitable dans la plupart des cas, car les expéditeurs contournent certaines parties de la pile de filtrage. Bien que vous faites confiance à l’expéditeur, l’expéditeur peut toujours être compromis et envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis signaler le [faux positif/négatif](report-junk-email-messages-to-microsoft.md) à Microsoft si nos filtres se sont mal produits. Le contournement de la pile de filtrage interfère également avec [ZAP](zero-hour-auto-purge.md).
 
-Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs Coffre d’un utilisateur, le champ **d’en-tête X-Forefront-Antispam-Report** contient la valeur, ce qui indique que le filtrage du courrier indésirable, de l’usurpation d’informations et du hameçonnage a été `SFV:SFE` contourné.
+Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs Coffre d’un utilisateur, le champ **d’en-tête X-Forefront-Antispam-Report** contient la valeur, ce qui indique que le filtrage du courrier indésirable, de l’usurpation d’adresse et du hameçonnage a été `SFV:SFE` contourné.
 
 ## <a name="use-the-ip-allow-list"></a>Utiliser la liste d’adresses IP permises
 
@@ -119,7 +119,7 @@ Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit p
 
 **Remarques** :
 
-- Il est important que vous maintenez le nombre d’adresses IP autorisées au minimum, donc évitez d’utiliser des plages d’adresses IP entières autant que possible.
+- Il est important que vous maintenez le nombre d’adresses IP autorisées au minimum, donc évitez d’utiliser des plages d’adresses IP entières chaque fois que possible.
 
 - N’utilisez pas de plages d’adresses IP appartenant aux services grand public (par exemple, outlook.com) ou aux infrastructures partagées.
 
@@ -132,11 +132,11 @@ Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit p
 
 L’option la moins souhaitable consiste à utiliser la liste des expéditeurs autorisés ou la liste des domaines autorisés dans les stratégies anti-courrier indésirable. Vous devez éviter cette option si *possible,* car les expéditeurs contournent la protection contre le courrier indésirable, l’usurpation d’identité et l’authentification des expéditeurs (SPF, DKIM, DMARC). Cette méthode est idéale pour les tests temporaires uniquement. Les étapes détaillées se trouvent dans la rubrique Configurer les stratégies [anti-courrier indésirable dans la rubrique EOP.](configure-your-spam-filter-policies.md)
 
-La limite maximale pour ces listes est d’environ 1 000 entrées ; Bien que vous ne soyez en mesure d’entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
+La limite maximale pour ces listes est d’environ 1 000 entrées ; cependant, vous ne pourrez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
 > [!CAUTION]
 >
-> - Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés ; toutefois, les listes des expéditeurs autorisés ou des domaines autorisés n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
+> - Cette méthode crée un risque élevé de remettre correctement des messages électroniques à la boîte de réception qui seraient autrement filtrés . toutefois, les listes des expéditeurs autorisés ou des domaines autorisés n’empêchent pas le filtrage des programmes malveillants ou des messages de hameçonnage à haut niveau de confiance.
 >
 > - N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) dans les listes de domaines autorisés.
 
@@ -146,15 +146,15 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).** Si le message ne peut pas être remis, il s’agit du destinataire de la non-remise (également appelée NDR ou message de non-remise).
 
-- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
+- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
 
 Souvent, `5321.MailFrom` les adresses et les `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes. Cela se produit le plus souvent pour les messages électroniques en masse.
 
-Par exemple, supposons que Blue Yonder Airlines ait embauché Margie’s Travel pour envoyer ses messages électroniques publicitaires. Le message que vous recevez dans votre boîte de réception a les propriétés suivantes :
+Par exemple, supposons que Blue Yonder Airlines a embauché Margie’s Travel pour envoyer ses messages électroniques publicitaires. Le message que vous recevez dans votre boîte de réception a les propriétés suivantes :
 
 - `5321.MailFrom`L’adresse est blueyonder.airlines@margiestravel.com.
 
-- L’adresse est blueyonder@news.blueyonderairlines.com, ce qui est ce que vous `5322.From` verrez dans Outlook.
+- L’adresse est blueyonder@news.blueyonderairlines.com, ce qui est ce que vous verrez `5322.From` dans Outlook.
 
 Coffre listes des expéditeurs et des listes de domaines sûrs dans les stratégies anti-courrier indésirable dans EOP inspectent uniquement les adresses, ce qui est similaire à celui des expéditeurs Outlook Coffre qui utilisent `5322.From` `5322.From` l’adresse.
 
@@ -162,6 +162,6 @@ Pour empêcher le filtrage de ce message, vous pouvez suivre les étapes suivant
 
 - Ajoutez blueyonder@news.blueyonderairlines.com `5322.From` (l’adresse) en tant qu Outlook Coffre’expéditeur.
 
-- [Utilisez une règle de flux de](#recommended-use-mail-flow-rules) messagerie avec une condition qui recherche les messages provenant de blueyonder@news.blueyonderairlines.com (l’adresse, blueyonder.airlines@margiestravel.com `5322.From` (le ), ou les `5321.MailFrom` deux.
+- [Utilisez une règle de flux de](#recommended-use-mail-flow-rules) messagerie avec une condition qui recherche des messages à partir de blueyonder@news.blueyonderairlines.com (l’adresse, blueyonder.airlines@margiestravel.com `5322.From` (le ), ou les `5321.MailFrom` deux.
 
 Pour plus d’informations, voir [Créer des listes d’expéditeurs sûrs dans EOP.](create-safe-sender-lists-in-office-365.md)

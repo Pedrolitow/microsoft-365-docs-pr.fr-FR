@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,16 +18,16 @@ ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez un fichier CSV d’une recherche de contenu existante pour créer une recherche de liste d’ID qui renvoie des éléments de courrier spécifiques.
-ms.openlocfilehash: 3fc43f410d6361ac655f7f839b6b4f8752483ef9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 574c130f7ec7c4f47569179ca6fc0712d76c395c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156485"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Préparer un fichier CSV pour une recherche de contenu de liste d’ID
 
-Vous pouvez rechercher des messages électroniques de boîte aux lettres spécifiques et d’autres éléments de boîte aux lettres à l’aide d’Exchange ID de boîte aux lettres. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour ce fichier CSV, vous utilisez le fichier **Results.csv** ou le fichier Items.csv **nonndexé** inclus lorsque vous exportez les résultats de recherche de contenu ou exportez un rapport de recherche de contenu à partir d’une recherche de contenu existante. Ensuite, vous modifiez l’un de ces fichiers pour indiquer les éléments spécifiques à rechercher, créez une recherche de liste d’ID et soumettez le fichier CSV.
+Vous pouvez rechercher des messages électroniques de boîte aux lettres spécifiques et d’autres éléments de boîte aux lettres à l’aide d’une liste Exchange ID de boîte aux lettres. Pour créer une recherche de liste d'identification, vous soumettez un fichier CSV (valeur séparée par des virgules) qui identifie les éléments spécifiques de la boîte aux lettres à rechercher. Pour ce fichier CSV, vous utilisez le fichier **Results.csv** ou le fichier Items.csv **nonndexé** inclus lorsque vous exportez les résultats de recherche de contenu ou exportez un rapport de recherche de contenu à partir d’une recherche de contenu existante. Ensuite, vous modifiez l’un de ces fichiers pour indiquer les éléments spécifiques à rechercher, créez une recherche de liste d’ID et soumettez le fichier CSV.
 
 **Pourquoi créer une recherche de liste d’ID ?** Si vous ne parvenez pas à déterminer si un élément répond à une demande eDiscovery en fonction des métadonnées dans les fichiers **Results.csv** ou **non** Items.csv, vous pouvez utiliser une recherche de liste d’ID pour rechercher, afficher un aperçu, puis exporter cet élément pour déterminer s’il répond au cas que vous examinez. Les recherches de liste d’ID sont généralement utilisées pour rechercher et renvoyer un ensemble spécifique d’éléments nonndex.
 
@@ -35,7 +35,7 @@ Voici une vue d’ensemble rapide du processus de création d’une recherche de
 
 1. Créez et exécutez une nouvelle recherche dans le Centre de conformité Microsoft 365.
 
-2. Exporter les résultats de recherche de contenu ou le rapport de recherche de contenu. Pour plus d’informations, consultez :
+2. Exporter les résultats de recherche de contenu ou le rapport de recherche de contenu. Pour plus d'informations, voir :
 
     - [Exporter les résultats de la recherche de contenu](export-search-results.md)
 

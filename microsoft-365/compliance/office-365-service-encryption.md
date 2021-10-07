@@ -9,17 +9,17 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 10/3/2019
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : Comprendre la résilience des données dans Microsoft Office 365.'
-ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b83b55afab2d9901e03a311d603b5b316531580a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206115"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60156461"
 ---
 # <a name="service-encryption"></a>Chiffrement de service
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les fonctionnalités de sécurité incluses dans Microsoft 365 entreprise.
-ms.openlocfilehash: 686ced4c4612470d25ab3a39fdd824b576bbeab7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 118c69356e7e12bfab69770f6ee1dc15bd58525e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181744"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60160679"
 ---
 # <a name="overview-of-security"></a>Vue d’ensemble de la sécurité
 
@@ -39,7 +39,7 @@ Microsoft 365 Business Premium offre des fonctionnalités de protection contre l
 
 ## <a name="threat-protection"></a>Protection contre les menaces
 
-Microsoft 365 Business Premium inclut Office 365 protection avancée contre les menaces [( ATP),](safe-links.md)un service de filtrage du courrier électronique basé sur le cloud qui vous protège contre les programmes malveillants, les ransomware, les liens dangereux, etc. Les liens Coffre protection contre les menaces vous protègent contre les URL malveillantes dans les e-mails ou Office documents. AtP Coffre pièces jointes vous protège contre les programmes malveillants et les virus joints à des messages ou des documents.
+Microsoft 365 Business Premium inclut Office 365 protection avancée contre les menaces [( ATP),](safe-links.md)un service de filtrage du courrier électronique basé sur le cloud qui vous protège contre les programmes malveillants, les ransomware, les liens dangereux, etc. Les liens Coffre protection contre les menaces vous protègent contre les URL malveillantes dans les e-mails ou Office documents. Les pièces jointes Coffre protection contre les menaces vous protègent contre les programmes malveillants et les virus joints à des messages ou des documents.
 
 [L’authentification multifacteur (MFA),](turn-on-mfa.md)ou vérification en deux étapes, nécessite que vous présentiez une deuxième forme d’authentification, telle qu’un code de vérification, pour confirmer votre identité avant de pouvoir accéder aux ressources.
 
@@ -49,7 +49,7 @@ Microsoft 365 Business Premium inclut Office 365 protection avancée contre les 
 
 Les fonctionnalités de protection des Microsoft 365 Business Premium permettent de s’assurer que les données importantes restent sécurisées et que seules les personnes autorisées y ont accès.
 
-Vous pouvez utiliser des stratégies de protection contre la perte de données [(DLP)](set-up-dlp.md) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin de ne pas les partager par erreur.
+Vous pouvez utiliser des stratégies de protection contre la perte de données [(DLP)](set-up-dlp.md) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin qu’elles ne sont pas partagées par erreur.
 
 [chiffrement de messages Office 365](/microsoft-365/compliance/ome) combine les fonctionnalités de chiffrement et de droits d’accès pour garantir que seuls les destinataires prévus peuvent afficher le contenu des messages. chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
 

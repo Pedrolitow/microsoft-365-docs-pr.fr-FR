@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3e2a5da916b8d69a7dfb3d14a3c70560d205cb73
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ee01f9462c52d3327442a203c3bc8e56a5b0c43d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164268"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60155477"
 ---
 # <a name="payment-information-for-romania"></a>Informations de paiement pour la Roumanie
 
