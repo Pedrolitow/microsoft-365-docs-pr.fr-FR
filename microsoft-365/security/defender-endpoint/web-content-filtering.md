@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a394fadc5728258208abe2e9de5e94f849dd921e
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: feb05a19264564d98b1b7a79993c1be6d61237a3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009576"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195220"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -34,11 +34,11 @@ ms.locfileid: "60009576"
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](web-protection-overview.md) de Microsoft Defender pour Point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
-Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section conditions préalables.
+Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge du navigateur, consultez la section des conditions préalables.
 
 ## <a name="benefits-of-web-content-filtering"></a>Avantages du filtrage de contenu web
 
@@ -83,7 +83,7 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Nudity**: sites qui fournissent des images ou vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
 
-**Politique / explicitement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu sexuelle est également répertoriée ici.
+**Forcément explicite / sexuellement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu sexuelle est également répertoriée ici.
 
 Éducation sexuelle : sites qui traitent de la violence et de la violence d’une manière informative et non-sexuelle, y compris les sites qui fournissent une éducation sur la reproduction humaine et la santé humaine, les sites qui fournissent des conseils sur la prévention des infections sexuelles et les sites qui fournissent des conseils sur les sujets de santé sexuelle.
 
@@ -111,11 +111,11 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Images d’abus enfants**: sites qui incluent des images d’abus ou des images d’abus enfants. 
 
-**Activités pénales**: sites qui donnent des instructions sur, des conseils sur ou la promotion d’activités illégales.
+**Activités pénales**: sites qui donnent des instructions sur, des conseils ou la promotion d’activités illégales.
 
 **Piratage :** sites qui fournissent des ressources pour une utilisation illégale ou discutable de logiciels informatiques ou de matériel, y compris les sites qui distribuent des documents protégés par des droits d’auteur qui ont été déchiffrés.
 
-**Violence &**: sites qui promeuvent des opinions agressives, dégradées ou abusives sur n’importe quelle section de la population qui peut être identifiée par la course, le genre, l’âge, la nationalité, le handicap physique, la situation économique, les préférences sexuelles ou tout autre choix de style de vie.
+**Les &** de violence : sites qui promeuvent des opinions agressives, dégradées ou abusives sur n’importe quelle section de la population qui peuvent être identifiées par la course, le genre, l’âge, la nationalité, le handicap physique, la situation économique, les préférences sexuelles ou tout autre choix de style de vie.
 
 **Consommation illégale :** sites qui vendent des produits illicites/contrôlés, promeuvent des abus ou vendent des accessoires connexes.
 
@@ -125,7 +125,7 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Auto-nuire :** sites qui promeuvent les auto-dommages, y compris les sites de cyberintimidation qui contiennent des messages abusifs et/ou offensants à l’égard des utilisateurs.
 
-**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’errs, à la chasse et à la chasse.
+**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’histoire, à la chasse et à la défense.
 
 </details>
 

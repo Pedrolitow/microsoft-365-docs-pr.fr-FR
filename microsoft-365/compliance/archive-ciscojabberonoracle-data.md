@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de Cisco Jabber sur Oracle Microsoft 365.
-ms.openlocfilehash: 34096f06d3516470fb203b87efa98e0bde2ec669
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f398c63b8af08de2c04401cb9a3de4fb77b2a9fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206356"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195700"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Configurer un connecteur pour archiver des données Cisco Jabber sur Oracle
 
@@ -25,11 +25,11 @@ Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour
 
 Une fois que les données Cisco Jabber sur Oracle sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies de rétention et les étiquettes de rétention. L’utilisation d’un connecteur Cisco Jabber sur Oracle pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
-## <a name="overview-of-archiving-cisco-jabber-on-oracle-data"></a>Vue d’ensemble de l’archivage de Cisco Jabber sur les données Oracle
+## <a name="overview-of-archiving-cisco-jabber-on-oracle-data"></a>Vue d’ensemble de l’archivage des données Cisco Jabber sur Oracle
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données Cisco Jabber sur Oracle dans Microsoft 365.
 
-![Flux de travail d’archivage pour Cisco Jabber sur les données Oracle.](../media/CiscoJabberOnOracleConnectorWorkflow.png)
+![Flux de travail d’archivage pour Cisco Jabber sur des données Oracle.](../media/CiscoJabberOnOracleConnectorWorkflow.png)
 
 1. Votre organisation collabore avec Cisco Jabber sur Oracle pour configurer un Cisco Jabber sur un site Oracle.
 
@@ -69,7 +69,7 @@ Une fois que vous avez **cliqué sur &** terminé, la **page** Mappage de l’ut
 
 Pour maîtr les utilisateurs et terminer la configuration du connecteur dans le Centre de conformité Microsoft 365, suivez les étapes suivantes :
 
-1. Dans la page **Mappage des utilisateurs Cisco Jabber sur Oracle Microsoft 365 utilisateurs,** activez le mappage automatique des utilisateurs. Les éléments Cisco Jabber on Oracle incluent une propriété appelée *Email*, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
+1. Dans la page **Mappage des utilisateurs Cisco Jabber sur Oracle Microsoft 365 utilisateurs,** activez le mappage automatique des utilisateurs. Les éléments Cisco Jabber sur Oracle incluent une propriété appelée *Email*, qui contient les adresses de messagerie des utilisateurs de votre organisation. Si le connecteur peut associer cette adresse à un utilisateur Microsoft 365, les éléments sont importés dans la boîte aux lettres de cet utilisateur.
 
 2. Cliquez **sur** Suivant, examinez vos paramètres, puis allez à la page **Connecteurs** de données pour voir la progression du processus d’importation pour le nouveau connecteur.
 
@@ -85,4 +85,4 @@ Après avoir créé cisco Jabber sur le connecteur Oracle, vous pouvez afficher 
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

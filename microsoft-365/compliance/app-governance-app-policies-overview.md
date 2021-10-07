@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies d’application.
-ms.openlocfilehash: 437ad69799edc45f21512cf60f385b86a9266fc3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1f0690eb0c420c6eb3a80655981879dab5708981
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181480"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195736"
 ---
 # <a name="learn-about-app-policies"></a>Découvrir les stratégies d’application
 

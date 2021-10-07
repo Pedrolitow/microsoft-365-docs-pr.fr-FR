@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 23e89bd4aee02299e0710ff65fbe496fd8535b8f
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 234e79a599e24a3b3a0905e1cbba9848aec261fc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490116"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195210"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
@@ -73,7 +73,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sélectionnez **les mises à jour & protection contre les virus et menaces.** La version actuellement installée s’affiche avec des informations sur le moment où elle a été téléchargée. Vous pouvez vérifier votre version actuelle par rapport à la dernière version disponible pour le téléchargement manuel ou consulter le journal des changements pour cette version. Consultez les mises à jour de l’intelligence [de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft.](https://www.microsoft.com/wdsi/defenderupdates)
+3. Sélectionnez **les mises à jour & protection contre les virus contre les menaces.** La version actuellement installée s’affiche avec des informations sur le moment où elle a été téléchargée. Vous pouvez vérifier votre version actuelle par rapport à la dernière version disponible pour le téléchargement manuel ou consulter le journal des changements pour cette version. Consultez les mises à jour de l’intelligence [de sécurité pour Antivirus Microsoft Defender logiciel anti-programme malveillant Microsoft.](https://www.microsoft.com/wdsi/defenderupdates)
 
 4. Sélectionnez **Vérifier les mises à jour pour** télécharger les nouvelles mises à jour de la protection (le cas caser).
 
@@ -97,7 +97,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sous les **paramètres Gérer,** sélectionnez Paramètres de protection contre & virus et **menaces.**
+3. Sous les **paramètres Gérer,** sélectionnez **Paramètres de protection contre & virus.**
 
 4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.**
 
@@ -110,8 +110,8 @@ Le tableau suivant récapitule les types d’exclusion et ce qui se produit :
 ****
 |Type d’exclusion|Défini par|Action exécutée|
 |---|---|---|
-|**Fichier**|Emplacement <br/>Exemple : `c:\sample\sample.test`|Le fichier spécifique est ignoré par Antivirus Microsoft Defender.|
-|**Folder**|Emplacement <br/>Exemple : `c:\test\sample`|Tous les éléments du dossier spécifié sont ignorés par Antivirus Microsoft Defender.|
+|**Fichier**|Lieu <br/>Exemple : `c:\sample\sample.test`|Le fichier spécifique est ignoré par Antivirus Microsoft Defender.|
+|**Folder**|Lieu <br/>Exemple : `c:\test\sample`|Tous les éléments du dossier spécifié sont ignorés par Antivirus Microsoft Defender.|
 |**Type de fichier**|Extension de fichier <br/>Exemple : `.test`|Tous les fichiers avec `.test` l’extension n’importe où sur votre appareil sont ignorés par Antivirus Microsoft Defender.|
 |**Processus**|Chemin d’accès au fichier exécutable <br>Exemple : `c:\test\process.exe`|Le processus spécifique et tous les fichiers ouverts par ce processus sont ignorés par Antivirus Microsoft Defender.|
 |

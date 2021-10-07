@@ -1,5 +1,5 @@
 ---
-title: Accepter une invitation par courrier électronique à une organisation Microsoft 365 Business Standard abonnement à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte (utilisateur)
+title: Accepter une invitation par courrier électronique à une organisation Microsoft 365 Business Standard abonnement à l’aide d’Outlook, Yahoo, Gmail ou d’un autre compte (utilisateur)
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -8,21 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Acceptez une invitation par courrier électronique pour rejoindre une organisation Microsoft 365 Business Standard à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte.
-ms.openlocfilehash: 7bbf6565b71be3c6741f9b6637599560550497e9
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 2faea6a0d9089eb1a9f42d3d52bc877636ead50a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59774375"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196120"
 ---
-# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Accepter une invitation par courrier électronique à une organisation Microsoft 365 Business Standard abonnement à l’aide d’un compte Outlook, Yahoo, Gmail ou un autre compte (utilisateur)
+# <a name="accept-an-email-invitation-to-a-microsoft-365-business-standard-subscription-organization-using-an-outlook-yahoo-gmail-or-other-account-user"></a>Accepter une invitation par courrier électronique à une organisation Microsoft 365 Business Standard abonnement à l’aide d’Outlook, Yahoo, Gmail ou d’un autre compte (utilisateur)
 
-Lorsqu’une personne vous ajoute à un Microsoft 365 entreprise, vous recevez une invitation par courrier électronique avec les étapes à suivre pour vous joindre. Dans ce scénario, vous rejoignez une organisation qui n’a pas de courrier professionnel différent pour les utilisateurs. Vous vous connectez avec votre compte de messagerie habituel.
+Lorsqu’une personne vous ajoute à un Microsoft 365 entreprise, vous recevez une invitation par courrier électronique avec les étapes à suivre pour vous joindre. Dans ce scénario, vous rejoignez une organisation qui n’a pas de courrier professionnel différent pour les utilisateurs. Vous vous connectez avec votre compte de messagerie ordinaire.
 
 > [!IMPORTANT]
 > Si vous êtes un administrateur et que vous recherchez des étapes sur la façon d’envoyer à un utilisateur une invitation à votre abonnement Microsoft 365 Business Standard, consultez La page Inviter des utilisateurs à [Microsoft 365 Business Standard (administrateur).](admin-invite-business-standard.md)
@@ -49,9 +50,9 @@ Votre courrier électronique ressemble à ceci pour configurer votre compte d’
 
 Téléchargez et commencez à [utiliser Office applications pour les entreprises.](https://support.microsoft.com/office/install-office-apps-from-office-365-dcf2d841-dac7-455b-9a77-fc8f7ee92702)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
-### <a name="the-webpage-is-asking-me-to-agree-that-my-business-has-access-to-my-name-sign-in-and-other-information--what-does-that-mean"></a>La page web me demande d’accepter que mon entreprise a accès à mon nom, ma signature et d’autres informations : qu’est-ce que cela signifie ?
+### <a name="the-webpage-is-asking-me-to-agree-that-my-business-has-access-to-my-name-sign-in-and-other-information--what-does-that-mean"></a>La page web m’demande d’accepter que mon entreprise a accès à mon nom, ma connectez-vous et d’autres informations : qu’est-ce que cela signifie ?
 
 Dans pratiquement tous les cas, les documents et conversations que vous enregistrez dans le cloud Microsoft 365 (OneDrive, Teams) à **l’aide** de votre compte de messagerie Gmail, Outlook, Yahoo ou autre ne seront pas accessibles par votre administrateur technique. Vous êtes propriétaire de vos documents et conversations.
 
@@ -68,7 +69,7 @@ Il existe deux options dans ce cas :
 2. Vous pouvez vous supprimer en suivant les étapes ci-dessous :
 
     1. Accédez à https://myapps.microsoft.com/.
-    2. Connectez-vous à votre compte, puis sélectionnez vos initiales de profil.
+    2. Connectez-vous à votre compte, puis sélectionnez les initiales de votre profil.
     3. Sélectionnez **Afficher le compte Gérer** les organisations  >  **quitter**  >  **l’organisation**
     4. Sélectionnez   >  **Laisser OK**.
 
@@ -76,7 +77,7 @@ Il existe deux options dans ce cas :
 
 Vous devez d’abord quitter votre abonnement Microsoft 365 Entreprise. Demandez à votre administrateur technique ou à votre chef d’entreprise de vous supprimer. Vous pouvez également consulter [https://myaccount.microsoft.com/](https://myaccount.microsoft.com/) et suivre les étapes ci-dessous.
 
-1. Connectez-vous à votre compte, puis sélectionnez vos initiales de profil.
+1. Connectez-vous à votre compte, puis sélectionnez les initiales de votre profil.
 2. Sélectionnez **Afficher le compte Gérer** les organisations  >  **quitter**  >  **l’organisation**
 3. Sélectionnez   >  **Laisser OK**.
 
@@ -88,7 +89,7 @@ Contactez nos experts du support technique pour les petites entreprises qui peuv
 
 **Non**. Les documents ou conversations que vous avez enregistrés dans le cloud Microsoft 365 (OneDrive, Teams) sous votre ancien compte de messagerie Gmail, Outlook, Yahoo ou autre ne seront pas **accessibles** par votre administrateur.  Vous êtes propriétaire de vos documents et conversations.
 
-Les seules données qui seront accessibles à votre administrateur sont les informations de votre compte, telles que votre nom, votre image de profil, votre adresse e-mail, ainsi que les détails et l’activité de votre inscription.
+Les seules données accessibles à votre administrateur sont les informations de votre compte, telles que votre nom, votre image de profil, votre adresse e-mail, ainsi que les détails et l’activité de votre inscription.
 
 ### <a name="does-the-way-i-login-to-windows-change"></a>La façon dont je me connecte à Windows change-t-elle ?
 

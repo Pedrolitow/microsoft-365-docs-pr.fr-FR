@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: medium
 description: Apprenez comment et pourquoi renommer un extracteur dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: a34420872b6dfdf684a1a640dd8b98261e86ae22
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
-ms.translationtype: HT
+ms.openlocfilehash: 0b5c52e00b287b6f4b41e7c8c3070261bccfda96
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209720"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195448"
 ---
 # <a name="rename-an-extractor-in-microsoft-sharepoint-syntex"></a>Renommer un extracteur dans Microsoft SharePoint Syntex
 

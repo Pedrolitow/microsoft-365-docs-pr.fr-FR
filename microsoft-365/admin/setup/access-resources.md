@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un Azure Active Directory joint Windows 10 appareil.
-ms.openlocfilehash: 5895223fedfbd1791be35455a1909ddc5f697c80
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 311f49b340a6a66af22729c0ebe11bb9adb264a6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786195"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195124"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources sur site à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -62,7 +62,7 @@ Si le Windows que vous avez joint à Azure-AD était précédemment joint au dom
 
 - Lorsqu’un appareil Joint Azure AD, il crée un utilisateur sans référencer un profil existant. Les profils doivent être migrés manuellement. Un profil utilisateur contient des informations telles que les favoris, les fichiers locaux, les paramètres de navigateur et menu Démarrer paramètres. Une meilleure approche consiste à trouver un outil tiers pour ma map les fichiers et paramètres existants au nouveau profil.
 
-- Si l’appareil utilise des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe peuvent ne pas avoir de fournisseur de services de [configuration](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) comparable dans Intune. Exécutez [l’outil MMAT](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher des CSP comparables pour les GME existants.
+- Si l’appareil utilise des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe peuvent ne pas avoir de fournisseur de services de [configuration](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) comparable dans Intune. Exécutez [l’outil MMAT](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher des CSP comparables pour les GGP existants.
 
 - Les utilisateurs peuvent ne pas être en mesure de s’authentifier aux applications qui dépendent de l’authentification Active Directory. Évaluez l’application héritée et envisagez de la mettre à jour vers une application qui utilise l’th moderne, si possible.
 

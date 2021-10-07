@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application Microsoft 365 d’analyse de l’utilisation dans Power BI.
-ms.openlocfilehash: 77e4a9bb7953435cd209a2e71ba2a76bc2b916d0
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 805ce4afd5a486b54bf0a441adb0755b95e14237
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776331"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195940"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -55,7 +56,7 @@ Pour activer l’application de modèle, vous devez être administrateur **gén�
 
 Pour plus [d’informations, voir](../add-users/about-admin-roles.md) les rôles d’administrateur.
 
-1. Dans le centre d’administration, allez dans **l’onglet Paramètres** Services des \> **paramètres** \>  de l’organisation.
+1. Dans le Centre d’administration, allez dans **l’onglet Paramètres** \> **Services des paramètres** \> **de l’organisation.**
 
 2. Sous **l’onglet Services,** sélectionnez **Rapports.**
 
@@ -81,7 +82,7 @@ Pour démarrer l’application de modèle, vous devez être un administrateur **
 
 6. Choisissez **Connecter**, sur l’écran d’analyse de l’utilisation Connecter à **Microsoft 365,** puis tapez l’ID de locataire (sans tirets) que vous avez copié à l’étape (1), puis sélectionnez Suivant **.**
 
-7. Dans l’écran suivant, sélectionnez **OAuth2 en** tant que méthode **d’authentification,** \> **connectez-vous.** Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échoue.
+7. Dans l’écran suivant, sélectionnez **OAuth2 en** tant que méthode **d’authentification,** \> **connectez-vous.** Si vous choisissez une autre méthode d’authentification, la connexion au modèle d’application échoue.
 
     ![Choisissez un compte Microsoft comme méthode d’authentification.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
@@ -103,7 +104,7 @@ Les administrateurs globaux peuvent inverser cette modification pour leur client
   
 L’application de ces modifications peut prendre quelques minutes. L’affichage des informations utilisateur identifiables est un événement enregistré dans le journal d’audit du Centre de conformité Microsoft 365.   
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [À propos de l’analyse de l’utilisation](usage-analytics.md) (article)\
 [Obtenir la dernière version de l’analyse de l’utilisation](get-the-latest-version-of-usage-analytics.md) (article)\

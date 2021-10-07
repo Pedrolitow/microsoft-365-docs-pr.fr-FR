@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment laisser les utilisateurs réinitialiser leur mot de passe dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 815c35098253f7286a1ab99ad99cb0d23009473c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b593421946488200b0df25929a1e302204456a5f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203448"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195928"
 ---
 # <a name="set-up-self-service-password-reset"></a>Utiliser la réinitialisation de mot de passe en libre-service
 
@@ -42,7 +42,7 @@ Pour laisser vos utilisateurs réinitialiser leurs propres mots de passe sans av
 1. Dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis sur la page Utilisateurs **-** Tous les utilisateurs, sélectionnez Réinitialiser le mot **de passe.**
 1. Sélectionnez **Tout** pour activer la réinitialisation du mot de passe libre-service, puis sélectionnez **Enregistrer.**
 
-La prochaine fois qu’un utilisateur se signe à son compte, son ID d’utilisateur et son mot de passe lui sont demandés. Ils **sélectionnent Suivant,** puis choisissent s’il faut s’authentifier avec leur téléphone, leur courrier électronique ou les deux. Ils entrent le code qu’ils reçoivent, **sélectionnent Vérifier,** puis **terminer.** Lorsqu’ils ont terminé, ils peuvent réinitialiser leur mot de passe.
+La prochaine fois qu’un utilisateur se signe à son compte, son ID d’utilisateur et son mot de passe lui sont demandés. Ils **sélectionnent Suivant,** puis choisissent s’il faut s’authentifier avec leur téléphone, leur courrier électronique ou les deux. Ils entrent le code qu’ils reçoivent, **sélectionnent Vérifier,** puis **terminent.** Lorsqu’ils ont terminé, ils peuvent réinitialiser leur mot de passe.
 
 ## <a name="related-content"></a>Contenu associé
 

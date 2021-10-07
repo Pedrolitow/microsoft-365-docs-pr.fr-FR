@@ -9,18 +9,18 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
 description: Utilisez ces étapes pour protéger les comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: d9de3cb42a7473167c5e8c6dda5489aca2241909
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e529304b9f897e4cac7a0cec5f32821b88cd297d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203273"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195316"
 ---
 # <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Protéger les comptes d’administrateur général dans votre environnement de test Microsoft 365 entreprise
 
@@ -28,7 +28,7 @@ ms.locfileid: "59203273"
 
 Vous pouvez empêcher les attaques numériques sur votre organisation en vous assurant que vos comptes d’administrateur sont aussi sécurisés que possible. 
 
-Cet article explique comment utiliser des stratégies d Azure Active Directory d’accès conditionnel (Azure AD) pour protéger les comptes d’administrateur général.
+Cet article explique comment utiliser des stratégies d Azure Active Directory conditionnel (Azure AD) pour protéger les comptes d’administrateur général.
 
 La protection des comptes d’administrateur général dans votre Microsoft 365 environnement de test d’entreprise implique deux phases :
 - [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
@@ -58,7 +58,7 @@ Tout d’abord, créez un compte d’utilisateur en tant qu’administrateur gé
 4. Sélectionnez **Mot** de passe, **Sélectionnez Me laisser créer le** mot de passe, puis entrez un mot de passe fort. Enregistrez le mot de passe de ce nouveau compte dans un emplacement sécurisé.
 5. Sélectionnez **Suivant**.
 6. Dans le **volet Attribuer des licences de** produits, **sélectionnez Microsoft 365 E5,** puis sélectionnez **Suivant.**
-7. Dans le **volet Paramètres facultatifs,** sélectionnez **Rôles**  >  **Admin Center access** Global  >  **admin**  >  **Next**.
+7. Dans le **volet Paramètres facultatifs,** sélectionnez **Rôles**  >  **Admin center access** Global  >  **admin**  >  **Next**.
 8. Dans le **volet Vous avez presque terminé,** sélectionnez Terminer **l’ajout,** puis **fermez**.
 
 Ensuite, créez un groupe nommé GlobalAdmins et ajoutez-y le compte DedicatedAdmin.
@@ -67,7 +67,7 @@ Ensuite, créez un groupe nommé GlobalAdmins et ajoutez-y le compte DedicatedAd
 2. Sélectionnez **Ajouter un groupe.**
 3. Dans le **volet Choisir un type de groupe,** sélectionnez **Sécurité,** puis Sélectionnez **Suivant**.
 4. Dans le **volet Configurer les informations** de base, sélectionnez Créer un groupe, puis **fermez.** 
-5. Dans le **volet Révision et fin de l’ajout de** groupes, entrez **GlobalAdmins,** puis sélectionnez **Suivant.**
+5. Dans le **volet Révision et fin de** l’ajout de groupes, entrez **GlobalAdmins,** puis sélectionnez **Suivant.**
 7. Dans la liste des groupes, sélectionnez le **groupe GlobalAdmins.**
 8. Dans le **volet GlobalAdmins,** sélectionnez **Membres,** puis afficher **tout et gérer les membres.**
 9. Dans le **volet GlobalAdmins,** sélectionnez Ajouter des **membres,** sélectionnez le compte **DedicatedAdmin** et votre compte d’administrateur global, puis **sélectionnez Enregistrer**  >  **fermer.**  >  
@@ -79,17 +79,17 @@ Cette première stratégie nécessite que tous les comptes d’administrateur g�
 1. Dans un nouvel onglet de votre navigateur, allez à [https://portal.azure.com](https://portal.azure.com) .
 2. Cliquez **sur Azure Active Directory** accès  >  **conditionnel à** la  >  **sécurité.**
 3. Dans le **volet Accès conditionnel – Stratégies,** sélectionnez Stratégie de référence : Exiger l’pertinence de l’élection de l’élection **(prévisualisation) pour les administrateurs.**
-4. Dans le **volet Stratégie de** référence, **sélectionnez Utiliser la stratégie immédiatement > Enregistrer.**
+4. Dans le **volet Stratégie** de référence, **sélectionnez Utiliser la stratégie immédiatement > Enregistrer**.
 
 Cette deuxième stratégie bloque l’accès à l’authentification de compte d’administrateur général lorsque le risque de se connecte est moyen ou élevé.
 
-1. Dans le **volet Accès conditionnel – Stratégies,** sélectionnez **Nouvelle stratégie.**
+1. Dans le **volet Accès conditionnel – Stratégies,** **sélectionnez Nouvelle stratégie.**
 2. Dans le **nouveau volet,** entrez **Administrateurs globaux** dans **Nom.**
 3. Dans la section **Affectations,** sélectionnez **Utilisateurs et groupes.**
 4. Dans **l’onglet**  Inclure du volet Utilisateurs et groupes, sélectionnez Sélectionner des utilisateurs et des **groupes**  >  **Utilisateurs et groupes**  >  **Sélectionner.**
 5. Dans le **volet** Sélectionner, sélectionnez le **groupe GlobalAdmins,** puis **sélectionnez**  >  **Terminé.**
 6. Dans la section **Affectations,** sélectionnez **Conditions.**
-7. Dans le **volet Conditions,** sélectionnez Risque  de se connectez, sélectionnez Oui pour Configurer, Sélectionnez Élevé et **Moyen,** puis Sélectionnez Sélectionner **et** **Terminé.**   
+7. Dans le **volet Conditions,** sélectionnez Risque  de se connectez, sélectionnez Oui pour Configurer, Sélectionner Élevé et **Moyen,** puis Sélectionnez Sélectionner **et** **Terminé.**   
 8. Dans la section **Contrôles d’accès** du **nouveau** volet, sélectionnez **Accorder**.
 9. Dans le **volet Accorder,** sélectionnez Bloquer **l’accès,** puis sélectionnez **Sélectionner.**
 10. Dans le **volet** Nouveau, sélectionnez **Activer** pour **activer** la stratégie, puis sélectionnez **Créer.**

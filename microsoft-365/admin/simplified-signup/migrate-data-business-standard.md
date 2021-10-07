@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Migrez vos données Outlook, OneDrive et Teams vers Microsoft 365 Business Standard
-ms.openlocfilehash: 2cec4a98172fe472d48c7726cb8b0c1887d88a6f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: fcd3047014204c1115481dfd411be502a7409fb9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775947"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196160"
 ---
 # <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migrer des données vers mon abonnement Microsoft 365 Business Standard
 
@@ -36,7 +37,7 @@ Cette section décrit comment déplacer les fichiers stockés dans votre compte 
     :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Screenshot: Select white cloud icon in the Windows notification area":::
 
     > [!NOTE]
-    > Vous devrez peut-être sélectionner la flèche Afficher les **icônes masquées** en regard de la zone de notification pour afficher OneDrive icône. Si l’icône n’apparaît pas dans la zone de notification, OneDrive’est peut-être pas en cours d’exécution. Sélectionnez **Démarrer,** tapez OneDrive dans la zone de recherche, puis sélectionnez OneDrive dans les résultats de la recherche.
+    > Vous devrez peut-être sélectionner la flèche Afficher les **icônes** masquées en regard de la zone de notification pour afficher OneDrive icône. Si l’icône n’apparaît pas dans la zone de notification, OneDrive’est peut-être pas en cours d’exécution. Sélectionnez **Démarrer,** tapez OneDrive dans la zone de recherche, puis sélectionnez OneDrive dans les résultats de la recherche.
 
 2. Pour ajouter votre nouveau compte d’entreprise, sélectionnez Aide **& Paramètres**  >  **Paramètres**.
 
@@ -115,7 +116,7 @@ Vous pouvez également utiliser le Centre d’administration Exchange pour impor
 
 1. Ouvrez Microsoft Teams, sélectionnez votre icône de profil, puis **ajoutez un compte scolaire ou scolaire.**
 
-2. Suivez les étapes pour ajouter votre nouveau compte à Teams travail. Pour plus [d’informations, Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) connectez-vous et Teams plus d’informations.
+2. Suivez les étapes pour ajouter votre nouveau compte à Teams travail. Pour plus [d’informations, consultez La](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) Teams et la mise en place.
 
 ### <a name="access-teams-chats"></a>Accéder aux Teams conversations
 
@@ -129,7 +130,7 @@ Une fois votre nouveau compte Microsoft Teams travail installé, vous pouvez rec
 
 Pour migrer vos contacts à partir de votre compte Teams personnel, recherchez l’adresse e-mail du contact et ajoutez l’utilisateur à votre nouveau compte Teams pour le travail.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Importer ou migrer du courrier à partir de Gmail ou d’un autre fournisseur de messagerie vers Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les balises intelligentes vous permet d’appliquer les fonctionnalités d’apprentissage automatique lors de l’examen du contenu dans Advanced eDiscovery cas. Utilisez des groupes de balises intelligentes pour afficher les résultats des modèles de détection d’apprentissage automatique, tels que le modèle de privilège client-avocat.
-ms.openlocfilehash: 3d3852a13410a3aa57932e19031cc5d00ce52a96
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c47db0c38c13820013615ff986517a86236f186b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207796"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195544"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurer des balises intelligentes dans Advanced eDiscovery
 
@@ -48,4 +48,4 @@ Les fonctionnalités d’apprentissage automatique (ML) dans Advanced eDiscovery
 
 ## <a name="how-to-use-smart-tags"></a>Comment utiliser des balises intelligentes
 
-Lors de la révision d’un document, les résultats du modèle s’affichent à côté de la balise enfant appropriée. Par exemple, si vous avez un groupe de balises intelligentes pour la détection des privilèges client-avocat et que vous examinez un document potentiellement privilégié, la raison de cette conclusion s’affiche à côté de la balise appropriée. Il est important de noter que la balise n’est pas appliquée automatiquement au document. Le réviseur décide de la façon de baliser le document.
+Lors de la révision d’un document, les résultats du modèle s’affichent à côté de la balise enfant appropriée. Par exemple, si vous avez un groupe de balises intelligentes pour la détection des privilèges client-avocat et que vous examinez un document potentiellement privilégié, la raison de cette conclusion s’affiche à côté de la balise appropriée. Il est important de noter que la balise n’est pas appliquée automatiquement au document. Le réviseur prend la décision de baliser le document.

@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour La France
+title: Informations de support pour LaPétade
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 65c99efd51ebe79eac04301765c78a94f16d01d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8ebb3b2bff35b0f53bfdb3936a32fc1d32364990
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206844"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196060"
 ---
 # <a name="contact-support-for-guadeloupe"></a>Contacter le support technique dePérs
 
@@ -35,7 +35,7 @@ Anglais : Mon-Fri 6 h-13 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 18h00 à 13h00
+Français : Mon-Fri 6 h-13 h
 
 Anglais : 24h/24, 7j/7
 

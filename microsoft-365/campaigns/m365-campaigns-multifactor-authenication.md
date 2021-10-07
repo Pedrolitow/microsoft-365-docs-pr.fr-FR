@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurer l’authentification multifacteur.
-ms.openlocfilehash: 81a6ff75cfa5ea0250962f3e21da7890ed795ccb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 60e44b28a235dc3dfca82c05e567fcedbb3f7d68
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180507"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60195880"
 ---
 # <a name="set-up-multifactor-authentication-on-your-mobile-device"></a>Configurer l’authentification multifacteur sur votre appareil mobile
 
