@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui prend en charge la partie informatique pour vous.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 0a31ce38a0ef6b04be5ad9af90e9e4c54e7b256b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 683c45c4f88dbd45ed810fe16b4932b7f40e5c43
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208204"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191048"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 

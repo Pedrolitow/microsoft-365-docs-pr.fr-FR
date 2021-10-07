@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ab658009d5459093477dede8fdab5e8da4186eb6
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: b06c0cbe5fd9158b6793d3d8b1079c365016914a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491156"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209392"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -38,7 +38,7 @@ ms.locfileid: "59491156"
 
 La protection du réseau permet de protéger les appareils contre les événements Basés sur Internet. La protection réseau est une fonctionnalité de réduction de la surface d’attaque. Cela permet d’empêcher les employés d’accéder à des domaines dangereux par le biais d’applications. Les domaines qui hébergent des tentatives de hameçonnage, des attaques et d’autres contenus malveillants sur Internet sont considérés comme dangereux. La protection du réseau étend l’étendue des [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) pour bloquer tout le trafic HTTP sortant qui tente de se connecter à des sources de faible réputation (en fonction du domaine ou du nom d’hôte).
 
-La protection du réseau étend la protection dans [la protection Web](web-protection-overview.md) au niveau du système d’exploitation. Il fournit des fonctionnalités de protection web dans Edge à d’autres navigateurs et applications non-navigateur pris en charge. En outre, la protection réseau offre une visibilité et un blocage des indicateurs de compromission (IOCs) lorsqu’elle est utilisée avec la détection et la réponse des [points de terminaison.](overview-endpoint-detection-response.md) Par exemple, la protection du réseau fonctionne avec vos indicateurs [personnalisés que](manage-indicators.md) vous pouvez utiliser pour bloquer des domaines ou des noms d’hôte spécifiques.
+La protection du réseau étend la protection dans [la protection Web](web-protection-overview.md) au niveau du système d’exploitation. Il fournit des fonctionnalités de protection web dans Edge à d’autres navigateurs et applications non-navigateur pris en charge. En outre, la protection réseau offre une visibilité et un blocage des indicateurs de compromission (IOCs) lorsqu’elle est utilisée avec la détection et la réponse des [points de terminaison.](overview-endpoint-detection-response.md) Par exemple, la protection réseau fonctionne avec vos indicateurs [personnalisés que](manage-indicators.md) vous pouvez utiliser pour bloquer des domaines ou des noms d’hôte spécifiques.
 
 > [!TIP]
 > Consultez le site testground de Microsoft Defender for Endpoint [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour voir comment fonctionne la protection réseau.
@@ -63,19 +63,19 @@ Après avoir activé les services, vous devrez peut-être configurer votre rése
 
 ## <a name="configuring-network-protection"></a>Configuration de la protection réseau
 
-Pour plus d’informations sur la façon d’activer la protection réseau, voir **[Activer la protection réseau.](enable-network-protection.md)** Utilisez une stratégie de groupe, PowerShell ou des CSP de gestion des stratégies de groupe pour activer et gérer la protection réseau dans votre réseau.
+Pour plus d’informations sur la façon d’activer la protection réseau, voir **[Activer la protection réseau.](enable-network-protection.md)** Utilisez la stratégie de groupe, PowerShell ou les CSP mdM pour activer et gérer la protection réseau dans votre réseau.
 
 ## <a name="viewing-network-protection-events"></a>Affichage des événements de protection réseau
 
-La protection du réseau fonctionne mieux avec [Microsoft Defender pour point](microsoft-defender-endpoint.md)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs Exploit Protection dans le cadre de scénarios d’investigation [d’alerte.](investigate-alerts.md)
+La protection réseau fonctionne mieux avec [Microsoft Defender pour point](microsoft-defender-endpoint.md)de terminaison, qui vous fournit des rapports détaillés sur les événements et les blocs Exploit Protection dans le cadre de scénarios d’investigation [d’alerte.](investigate-alerts.md)
 
 Lorsque la protection réseau bloque une connexion, une notification s’affiche à partir du centre de notifications. Votre équipe des opérations de sécurité [peut personnaliser la notification](customize-attack-surface-reduction.md#customize-the-notification) avec les détails et les informations de contact de votre organisation. En outre, les règles de réduction de la surface d’attaque individuelles peuvent être activées et personnalisées en fonction de certaines techniques à surveiller.
 
-Vous pouvez également utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de la protection réseau sur votre organisation si elle était activée.
+Vous pouvez également utiliser le [mode audit](audit-windows-defender.md) pour évaluer l’impact de la protection réseau sur votre organisation si elle était activée.
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements de protection réseau dans le Microsoft 365 Defender web
 
-Microsoft Defender pour le point de terminaison fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios d’investigation d’alerte.](investigate-alerts.md) Vous pouvez afficher ces détails dans le portail Microsoft 365 Defender ( ) dans la file d’attente des alertes ou à l’aide de [https://security.microsoft.com](https://security.microsoft.com) [la recherche avancée.](advanced-hunting-overview.md) [](review-alerts.md) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir l’impact des paramètres de protection réseau sur votre environnement s’ils étaient activés.
+Microsoft Defender pour le point de terminaison fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios d’investigation d’alerte.](investigate-alerts.md) Vous pouvez afficher ces détails dans le portail Microsoft 365 Defender ( ) dans la file d’attente des alertes ou à l’aide de [https://security.microsoft.com](https://security.microsoft.com) [la recherche avancée.](advanced-hunting-overview.md) [](review-alerts.md) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir comment les paramètres de protection réseau affecteraient votre environnement s’ils étaient activés.
 
 Voici un exemple de requête de recherche avancée :
 
@@ -86,7 +86,7 @@ DeviceEvents
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
 
-Vous pouvez consulter le journal des Windows pour voir les événements créés lorsque la protection réseau bloque (ou audite) l’accès à une adresse IP ou un domaine malveillant :
+Vous pouvez consulter le journal Windows événements pour voir les événements créés lorsque la protection réseau bloque (ou audite) l’accès à une adresse IP ou un domaine malveillant :
 
 1. [Copiez le XML directement.](event-views.md)
 
@@ -105,7 +105,7 @@ Cette procédure crée un affichage personnalisé qui filtre pour afficher uniqu
 |1126|Événement lorsque la protection réseau se déclenche en mode blocage|
 |
 
-## <a name="network-protection-and-the-tcp-three-way-handshake"></a>Protection du réseau et protocole d’handshake triple TCP
+## <a name="network-protection-and-the-tcp-three-way-handshake"></a>Protection du réseau et protocole d’auto-transport TCP triple
 
 Avec la protection du réseau, la décision d’autoriser ou de bloquer l’accès à un site est prise après la fin de l’accord triple [via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Par conséquent, lorsqu’un site est bloqué par la protection réseau, vous pouvez voir un type d’action en dessous dans le portail Microsoft 365 Defender, même si le `ConnectionSuccess` site a été réellement `NetworkConnectionEvents` bloqué. `NetworkConnectionEvents` sont signalés à partir de la couche TCP, et non à partir de la protection réseau. Une fois l’handshake triple terminée, l’accès au site est autorisé ou bloqué par la protection du réseau.
 
@@ -113,15 +113,15 @@ Voici un exemple de fonctionnement :
 
 1. Supposons qu’un utilisateur tente d’accéder à un site web sur son appareil. Le site est hébergé sur un domaine dangereux et il doit être bloqué par la protection du réseau.  
 
-2. La négociation triple via TCP/IP commence. Avant qu’elle ne se termine, une action est enregistrée `NetworkConnectionEvents` et est `ActionType` répertoriée comme `ConnectionSuccess` . Toutefois, dès que le processus d’handshake triple se termine, la protection du réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); C’est lorsque l’poignée de main triple est terminée qu’une détermination est prise et que l’accès à un site est bloqué ou autorisé.
+2. La négociation triple via TCP/IP commence. Avant qu’elle ne se termine, une action est enregistrée `NetworkConnectionEvents` et est `ActionType` répertoriée comme `ConnectionSuccess` . Toutefois, dès que le processus d’handshake triple est terminé, la protection du réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); C’est lorsque l’poignée de main triple est terminée qu’une détermination est prise et que l’accès à un site est bloqué ou autorisé.
 
 3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la file [d’attente des alertes.](alerts-queue.md) Les détails de cette alerte sont les deux `NetworkConnectionEvents` et `AlertEvents` . Vous pouvez voir que le site a été bloqué, même si vous avez également un élément `NetworkConnectionEvents` avec l’actionType de `ConnectionSuccess` .
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Considérations à prendre en compte Windows de bureau virtuel exécutant Windows 10 Entreprise multisess session
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Considérations à prendre en compte Windows de bureau virtuel s’exécutant Windows 10 Entreprise multisess session
 
 En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les points suivants à l’esprit :
 
-1. La protection réseau est une fonctionnalité à l’échelle de l’appareil qui ne peut pas être ciblée sur des sessions utilisateur spécifiques.
+1. La protection réseau est une fonctionnalité à l’échelle de l’appareil et ne peut pas être ciblée sur des sessions utilisateur spécifiques.
 
 2. Les stratégies de filtrage de contenu Web sont également à l’échelle de l’appareil.
 
@@ -152,5 +152,5 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>Voir aussi
 
 - [Évaluer les niveaux de protection](evaluate-network-protection.md) | Entreprendre un scénario rapide qui illustre le fonctionnement de la fonctionnalité et les événements qui seraient généralement créés.
-- [Activer la protection réseau](enable-network-protection.md) | Utilisez une stratégie de groupe, PowerShell ou des CSP de gestion des stratégies de groupe pour activer et gérer la protection réseau dans votre réseau.
+- [Activer la protection réseau](enable-network-protection.md) | Utilisez la stratégie de groupe, PowerShell ou les CSP mdM pour activer et gérer la protection réseau dans votre réseau.
 - [Configuration des fonctionnalités de réduction de la surface d’attaque dans Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

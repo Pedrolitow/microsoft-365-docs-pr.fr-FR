@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: dansimp
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: efdc9114398151cbb939f3cb88f29a7fa71d4a0a
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: b6b39dfe3a080b339ca5f4bbaf91c3db7d84c8d9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124832"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209332"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Intégrer Windows plusieurs sessions dans Azure Virtual Desktop
 
@@ -91,7 +91,7 @@ Ce scénario utilise un script central et l’exécute à l’aide d’une strat
 
 4. Dans la fenêtre Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou le** groupe, puis tapez SYSTEM. Cliquez **sur Vérifier les noms,** puis sur OK. NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-5. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
+5. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
 
 6. Go to the **Actions** tab and click **New**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ Action. Entrez les informations suivantes :
 

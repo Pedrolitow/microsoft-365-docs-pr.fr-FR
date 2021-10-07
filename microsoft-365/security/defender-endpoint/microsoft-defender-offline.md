@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1465d733f60844b49add49a878775e00695c3bdb
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 829f908d4b7cde6713cd6443100a15284d305eca
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491134"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209428"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Exécuter et examiner les résultats d’une analyse en mode Microsoft Defender hors ligne
 
@@ -60,7 +60,7 @@ Microsoft Defender hors ligne utilise les mises à jour de protection les plus r
 > [!NOTE]
 > Avant d’exécution d’une analyse hors connexion, vous devez essayer de mettre à jour la protection de l’Antivirus Microsoft Defender. Vous pouvez forcer une mise à jour à l’aide de la stratégie de groupe ou toutefois déployer normalement des mises à jour sur les points de terminaison, ou vous pouvez télécharger et installer manuellement les dernières mises à jour de la protection à partir du [Centre de protection Microsoft contre les programmes malveillants](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-Pour plus [d’informations, consultez](manage-protection-updates-microsoft-defender-antivirus.md) la rubrique Gérer Antivirus Microsoft Defender d’informations sur la sécurité.
+Consultez la [rubrique Gérer Antivirus Microsoft Defender mises à](manage-protection-updates-microsoft-defender-antivirus.md) jour de l’intelligence de la sécurité pour plus d’informations.
 
 ## <a name="usage-scenarios"></a>Scénarios d'utilisation
 
@@ -107,7 +107,7 @@ Utilisez les cmdlets suivantes :
 Start-MpWDOScan
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Utiliser Windows Management Instruction (WMI) pour exécuter une analyse hors connexion
 
@@ -127,7 +127,7 @@ Pour plus d’informations, voir les informations suivantes :
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
-2. Cliquez sur la **vignette & protection** contre les virus contre les menaces (ou sur l’icône de bouclier dans la barre de menus de gauche), puis sur l’étiquette **d’analyse** avancée :
+2. Cliquez sur la **vignette & protection** antivirus contre les menaces (ou sur l’icône de bouclier dans la barre de menus de gauche), puis sur l’étiquette **d’analyse** avancée :
 
 3. Sélectionnez **Microsoft Defender hors ligne scan,** puis cliquez **sur Analyser maintenant.**
 
@@ -136,7 +136,7 @@ Pour plus d’informations, voir les informations suivantes :
 
 ## <a name="review-scan-results"></a>Passer en revue les résultats de l’analyse
 
-Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la section Historique [d’analyse de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
+Microsoft Defender hors ligne résultats de l’analyse sont répertoriés dans la section Historique d’analyse [de l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
 
 ## <a name="related-articles"></a>Articles connexes
 

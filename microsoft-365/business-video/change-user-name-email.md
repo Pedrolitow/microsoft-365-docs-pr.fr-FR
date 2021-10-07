@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment modifier le nom ou l’adresse e-mail d’un utilisateur en modifiant un nom d’affichage, un alias ou une adresse e-mail.
-ms.openlocfilehash: af91a9597cba44762b009f3946aca889a2ab5a11
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e75046c53b8194d2f3fc386668263b9e1d97ee1a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208268"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191096"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Modifier le nom ou l’adresse e-mail d’un utilisateur
 
@@ -47,7 +47,7 @@ Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un uti
 1. Sélectionnez **Gérer les informations de contact.**
 1. Modifiez le nom complet, puis sélectionnez **Enregistrer les modifications.**
 
-    Le nouveau nom s’affiche désormais dans Outlook et d’autres Microsoft 365 applications.
+    Le nouveau nom s’affiche désormais dans Outlook applications Microsoft 365 applications.
 
 ### <a name="add-an-email-alias"></a>Ajouter un alias de messagerie
 

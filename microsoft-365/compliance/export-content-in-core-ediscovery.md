@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Décrit comment exporter et télécharger du contenu à partir d’un cas core eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 68535f8623b26aa4f2b30dc88362f4550c256162
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c6b5ac0d8bb6b555dc4720e90e045672cdb2439d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190904"
 ---
 # <a name="export-content-from-a-core-ediscovery-case"></a>Exporter le contenu à partir d'une affaire d' eDiscovery de base
 
@@ -34,7 +34,7 @@ Une fois qu’une recherche associée à un cas core eDiscovery a été correcte
 
 2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
 
-3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas où vous souhaitez créer la attente.
+3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas dans qui vous souhaitez créer la attente.
 
 4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Recherches.**
 

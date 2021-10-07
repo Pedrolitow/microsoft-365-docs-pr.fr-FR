@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -18,12 +18,12 @@ ms.custom: nextgen
 ms.technology: mde
 ms.date: 09/23/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 75b19373cbdecfe73c9b41b6bcbdbaa2050fcf53
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 352cf74b85ed24eba47fd6973702dd4eb7f73a40
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042853"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209320"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Protéger les paramètres de sécurité avec la protection contre la falsifiation
 
@@ -39,7 +39,7 @@ La protection contre la falsification est disponible pour les appareils qui exé
 - Windows Serveur, version 1803 ou ultérieure
 - Windows Server 2016
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Aperçu
 
 Pendant certains types de cyberattaques, les acteurs malveillants tentent de désactiver les fonctionnalités de sécurité, telles que la protection antivirus, sur vos ordinateurs. Les acteurs malveillants aiment désactiver vos fonctionnalités de sécurité pour accéder plus facilement à vos données, installer des programmes malveillants ou exploiter vos données, votre identité et vos appareils. La protection contre la falsification permet d’éviter ce genre d’événements.
 
@@ -79,7 +79,7 @@ La protection contre la falsification ne vous empêche pas d’afficher vos para
 |Consulter la liste des questions fréquemment posées (FAQ)|[Parcourir les FAQ](#view-information-about-tampering-attempts)|
 |
 
-En fonction de la méthode ou de l’outil de gestion que vous utilisez pour activer la protection contre la falsification, il peut y avoir une dépendance sur la protection livrée par le cloud.
+Selon la méthode ou l’outil de gestion que vous utilisez pour activer la protection contre la falsification, il peut y avoir une dépendance sur la protection livrée par le cloud.
 
 Le tableau suivant fournit des détails sur les méthodes, les outils et les dépendances.
 
@@ -205,7 +205,7 @@ Consultez les ressources suivantes :
 - [Paramètres profil d’expérience Sécurité Windows client dans Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
 - [Blog tech Community : Annonce de la protection contre la falsification pour les clients avec attachement de client Configuration Manager](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
-## <a name="manage-tamper-protection-on-an-individual-device"></a>Gérer la protection contre la falsification sur un appareil individuel
+## <a name="manage-tamper-protection-on-an-individual-device"></a>Gérer la protection contre les falsifications sur un appareil individuel
 
 > [!NOTE]
 > La protection contre la falsification bloque les tentatives de modification Antivirus Microsoft Defender paramètres de protection par le biais du Registre.
@@ -230,11 +230,11 @@ Voici ce que vous voyez dans l’application Sécurité Windows:
 
 Les tentatives de falsification indiquent généralement des cyberattaques plus importantes. Les acteurs mauvais tentent de modifier les paramètres de sécurité afin de les rendre persistants et non détectés. Si vous faites partie de l’équipe de sécurité de votre organisation, vous pouvez afficher des informations sur ces tentatives, puis prendre les mesures appropriées pour atténuer les menaces.
 
-Lorsqu’une tentative de falsification est détectée, une alerte est détectée dans le [portail Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ( [https://security.microsoft.com](https://security.microsoft.com) ).
+Lorsqu’une tentative de falsification est détectée, une alerte est détectée dans le [portail Microsoft 365 Defender (](/microsoft-365/security/defender-endpoint/portal-overview) [https://security.microsoft.com](https://security.microsoft.com) ).
 
 ![Microsoft 365 Defender.](images/tamperattemptalert.png)
 
-À [l’protection évolutive des points de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) et aux fonctionnalités de recherche avancées dans Microsoft Defender pour le point de terminaison, votre équipe des opérations de sécurité peut examiner et résoudre ces tentatives.
+À [l’protection évolutive des points de terminaison](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) des fonctionnalités de recherche avancées dans Microsoft Defender pour point de terminaison, votre équipe des opérations de sécurité peut examiner et résoudre ces tentatives.
 
 ## <a name="review-your-security-recommendations"></a>Passer en revue vos recommandations en matière de sécurité
 
@@ -242,7 +242,7 @@ La protection contre la falsification s’intègre aux fonctionnalités [& gesti
 
 ![Activer la protection contre la falsification.](images/tamperprotectsecurityrecos.png)
 
-Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, voir [Threat & Vulnerability Management dans Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
+Pour en savoir plus sur la gestion & des menaces et des vulnérabilités, consultez [threat & Vulnerability Management dans Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
@@ -270,7 +270,7 @@ Si vous êtes une organisation qui utilise [Microsoft Defender pour le](/microso
 - [Gérer la protection contre les falsifications à l’aide de Configuration Manager, version 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 - [Gérer la protection contre la falsification à l’aide Microsoft 365 Defender portail](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)
 
-### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Comment la configuration de la protection contre la falsification dans Intune affecte-t-elle la façon dont je Antivirus Microsoft Defender avec la stratégie de groupe ?
+### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Comment la configuration de la protection contre les falsifications dans Intune affecte-t-elle la façon dont je Antivirus Microsoft Defender avec la stratégie de groupe ?
 
 La stratégie de groupe ne s’applique pas à la protection contre la falsification. Les modifications apportées Antivirus Microsoft Defender paramètres de protection sont ignorées lorsque la protection contre la falsification est en cours.
 

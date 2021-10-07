@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - SPO_Content
 ms.custom: AdminSurgePortfolio
 search.appverid:
@@ -20,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation de Microsoft 365 services.  '
-ms.openlocfilehash: a99ee64715d9fdfa27b0f0feb8900dd301ebdaac
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 986a7c7b7f07fca9275f4d7d2d4171ae464158c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775611"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191114"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Données des tables d’analyse Microsoft 365'utilisation
 
-Microsoft 365'analyse de l’utilisation se connecte à une API qui expose un modèle de données multidimensionnel. Les API qui sont Microsoft 365 l’analyse de l’utilisation pour générer ses données sont à partir des différentes API Graph disponibles en général. La fonction de l’API Microsoft 365'analyse de l’utilisation n’est généralement pas disponible.
+Microsoft 365'analyse de l’utilisation se connecte à une API qui expose un modèle de données multidimensionnel. Les API qui sont Microsoft 365 l’analyse de l’utilisation pour générer ses données sont à partir des différentes API Graph disponibles. La fonction de l’API Microsoft 365'analyse de l’utilisation n’est généralement pas disponible.
   
 > [!NOTE]
 > Pour plus d’informations, voir [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report). 
@@ -49,7 +50,7 @@ Cette API fournit des informations sur la tendance mensuelle d’utilisation des
 |Utilisation du client par les locataires  <br/> |Contient des données sur le nombre d'utilisateurs qui utilisent activement un client ou des appareils spécifiques pour se connecter à Exchange Online, Skype Entreprise et Yammer.  <br/> |Contient des données mensuelles agrégées pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Utilisation de SharePoint Online par les locataires  <br/> |Contient des données sur les sites SharePoint. Celles-ci couvrent les sites d'équipe ou les sites de groupe, avec notamment le nombre total de sites, le nombre de documents stockés sur un site, le nombre de fichiers par type d'activité et l'espace de stockage utilisé.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Utilisation de OneDrive Entreprise par les locataires  <br/> |Contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
-|Utilisation des groupes Microsoft 365 client  <br/> |Contient des données sur Microsoft 365 l’utilisation des groupes de messagerie, notamment mailbox, SharePoint et Yammer.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
+|Utilisation des groupes Microsoft 365 client  <br/> |Contient des données sur Microsoft 365'utilisation des groupes de messagerie, notamment mailbox, SharePoint et Yammer.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Activation d'Office par les locataires  <br/> |Contient des données sur le nombre d’activations d’abonnement Office, le nombre d’activations par appareil (Android/iOS/Mac/PC), les activations par plan de service, par exemple, Applications Microsoft 365 pour les grandes entreprises, Visio, Project.  <br/> |Contient des données d’état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |État utilisateur  <br/> |Contient des métadonnées sur les utilisateurs, comme le nom d'affichage, les produits attribués, l'emplacement, le service, le titre et la société. Ces données sont relatives aux utilisateurs qui ont obtenu une licence au cours du dernier mois complet. Chaque utilisateur est représenté de manière unique par un ID d’utilisateur.  <br/> |Ces données concernent les utilisateurs qui disposaient d'une licence au cours du mois complet écoulé.  <br/> |
 |Activité utilisateur  <br/> |Contient des informations par utilisateur sur les activités effectuées par les utilisateurs sous licence.  <br/> Voir [Définition d'un utilisateur actif](active-user-in-usage-reports.md) pour plus d'informations sur les activités produit renvoyées dans cette table de données.  <br/> |Ces données concernent les utilisateurs ayant effectué une activité au cours du mois complet écoulé, tous services confondus.  <br/> |
@@ -108,7 +109,7 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |ODB_FileSynched  <br/> |Nombre de fichiers synchronisés par l'utilisateur, toutes instances de OneDrive Entreprise confondues.  <br/> |
 |ODB_FileSharedInternally  <br/> |Nombre de fichiers partagés en interne par cet utilisateur à partir de n’importe quel OneDrive Entreprise ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |ODB_FileSharedExternally  <br/> |Nombre de fichiers partagés en externe par l'utilisateur, toutes instances de OneDrive Entreprise confondues.  <br/> |
-|ODB_AccessedByOwner  <br/> |Nombre de sites avec qui l’utilisateur a interagi sur son propre OneDrive Entreprise.  <br/> |
+|ODB_AccessedByOwner  <br/> |Nombre de sites avec qui l’utilisateur a interagi et qui résident sur leur propre OneDrive Entreprise.  <br/> |
 |ODB_AccessedByOthers  <br/> |Nombre de sites avec lesquels cet utilisateur a interagi et qui résident sur le compte d’un OneDrive Entreprise.  <br/> |
 |SPO_GroupFileViewedModified  <br/> |Nombre de fichiers avec qui cet utilisateur a interagi sur n’importe quel site de groupe.  <br/> |
 |SPO_GroupFileSynched  <br/> |Nombre de fichiers synchronisés par l'utilisateur, tous sites de groupe confondus.  <br/> |
@@ -135,7 +136,7 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |Teams_HasOtherAction  <br/> |Valeur booléle si l’utilisateur a effectué d’autres actions dans Microsoft Teams.  <br/> |
 |YAM_MessagePost  <br/> |Nombre de Yammer messages publiés par cet utilisateur.  <br/> |
 |YAM_MessageLiked  <br/> |Nombre de messages Yammer que cet utilisateur a aimés.  <br/> |
-|YAM_MessageRead  <br/> |Nombre de messages Yammer que cet utilisateur a lus.  <br/> |
+|YAM_MessageRead  <br/> |Nombre de messages Yammer lus par cet utilisateur.  <br/> |
 |SFB_P2PSummary  <br/> |Nombre de sessions P2P auxquelles l'utilisateur a participé.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Nombre de sessions de conférence organisées par l'utilisateur.  <br/> |
 |SFB_ConfPartSummary  <br/> |Nombre de sessions de conférence auxquelles l'utilisateur a participé.  <br/> |
@@ -205,7 +206,7 @@ Ce tableau fournit des données récapitulatifs mensuelles sur les clients que l
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>Table de données - Utilisation de SharePoint Online par les locataires
 
-Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisation ou l’activité des sites SharePoint Online. Cela concerne uniquement les sites d’équipe et les sites de groupe. L’état de fin de mois des sites SharePoint Online est représenté dans cette colonne, par exemple, si un utilisateur a créé cinq documents et utilisé 10 Mo pour le stockage total, puis supprimé certains fichiers, puis ajouté d’autres fichiers afin qu’à l’état de fin de mois pour les fichiers soit sept au total qui utilisent cinq Mo de stockage,  la valeur représentée dans ce tableau est l’état de fin du mois. Cette table est masquée pour éviter le nombre d’agrégations en double et est utilisée comme source pour créer deux tables de référence.
+Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisation ou l’activité des sites SharePoint Online. Cela concerne uniquement les sites d’équipe et les sites de groupe. L’état de fin de mois des sites SharePoint Online est représenté dans cette colonne, par exemple, si un utilisateur a créé cinq documents et utilisé 10 Mo pour le stockage total, puis supprimé certains fichiers, puis ajouté d’autres fichiers afin qu’à l’état de fin de mois pour les fichiers soit sept au total qui utilisent cinq Mo de stockage,  la valeur représentée dans ce tableau est l’état de fin du mois. Cette table est masquée pour éviter le nombre de doublons d’agrégations et est utilisée comme source pour créer deux tables de référence.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|
@@ -222,7 +223,7 @@ Ce tableau se compose de données récapitulatifs mois par mois sur l’utilisat
    
 ### <a name="data-table---tenant-onedrive-usage"></a>Table de données - Utilisation OneDrive client
 
-Cette table contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité. L'état de fin de mois des comptes OneDrive Entreprise y est représenté. Par exemple, si un utilisateur a créé cinq documents qui ont utilisé 10 Mo de stockage, puis en a supprimés quelques-uns et ajouté d’autres fichiers de sorte qu’à la fin du mois, ils ont sept fichiers qui utilisent cinq Mo de stockage, alors la valeur de fin de mois est représentée dans ce tableau à la fin du mois.
+Cette table contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité. L'état de fin de mois des comptes OneDrive Entreprise y est représenté. Par exemple, si un utilisateur a créé cinq documents qui ont utilisé 10 Mo de stockage, puis en a supprimés quelques-uns et ajouté d’autres fichiers de sorte qu’à la fin du mois, ils ont sept fichiers qui utilisent cinq Mo de stockage, alors la valeur de fin du mois est représentée dans ce tableau à la fin du mois.
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|

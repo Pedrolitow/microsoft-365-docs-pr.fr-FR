@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: Découvrez comment acheter et gérer des modules pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/02/2021
-ms.openlocfilehash: c9b552ebc6b23bf01816fee197641caf5c6a43c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 316692bb514285dc177397d7b8f61c4dcd0dcf7c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181649"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190953"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acheter ou gérer des modules complémentaires
 
@@ -35,7 +35,7 @@ De Microsoft 365 pour les entreprises ont des modules de développement que vous
 Il existe deux types d’modules :
 
 1. **Les modules add-on traditionnels** sont liés à un abonnement spécifique. Si vous annulez l’abonnement, le module add-on associé est également annulé.
-2. Les abonnements de modules **add-on autonomes** apparaissent en tant qu’abonnements distincts sur la **page** De vos produits et ont leur propre date d’expiration. Contrairement aux modules add-on traditionnels, les abonnements de modules add-on autonomes ne sont pas liés à un abonnement spécifique. Vous gérez un abonnement de modules add-on autonomes de la même manière que tout autre abonnement.
+2. Les abonnements de modules **add-on autonomes** apparaissent en tant qu’abonnements distincts sur la **page** Vos produits et ont leur propre date d’expiration. Contrairement aux modules add-on traditionnels, les abonnements de modules add-on autonomes ne sont pas liés à un abonnement spécifique. Vous gérez un abonnement de modules add-on autonomes de la même manière que tout autre abonnement.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -56,7 +56,7 @@ Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, vo
 
 ## <a name="manage-an-add-on"></a>Gérer un module add-on
 
-Vous gérez un abonnement de modules add-on autonomes de la même façon que vous gérez tout autre abonnement ( dans la page **Vos produits).** Par exemple, vous pouvez acheter ou supprimer des [licences,](licenses/buy-licenses.md)gérer la facturation périodique [et](subscriptions/renew-your-subscription.md)modifier ou remplacer des modes de paiement pour les [abonnements](billing-and-payments/manage-payment-methods.md) de modules modules logiciels autonomes.
+Vous gérez un abonnement de modules add-on autonomes de la même façon que vous gérez tout autre abonnement ( dans la page **Vos produits).** Par exemple, vous pouvez acheter ou supprimer des [licences,](licenses/buy-licenses.md)gérer la facturation périodique [et](subscriptions/renew-your-subscription.md)modifier ou remplacer des modes de paiement pour les [abonnements](billing-and-payments/manage-payment-methods.md) de modules add-on autonomes.
 
 Pour gérer un module add-on traditionnel, vous devez passer à l’abonnement qui le contient et y apporter des modifications. Utilisez les étapes suivantes pour gérer un module add-on traditionnel.
   

@@ -4,24 +4,24 @@ description: Résumé de la configuration matérielle et logicielle minimale req
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f51208b8376ef160fe83a41e5a2ac74eb843c2f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ce5f0c3782b8e8082d0e1ede53339a190b7259f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205044"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209464"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Microsoft Manged Desktop évalue régulièrement les besoins de l’appareil à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtrer les Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices)
+Microsoft Manged Desktop évalue régulièrement les besoins de l’appareil à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtre des Microsoft Manged Desktop sur le site [Windows Pro d’entreprise](https://www.microsoft.com/en-us/windows/business/devices)
 
 > [!NOTE]
-> Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par **\*** . 
+> Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par <b>\*</b> . 
 
 ## <a name="check-hardware-requirements"></a>Vérifier la configuration matérielle requise
 
@@ -45,13 +45,11 @@ L’appareil doit avoir été effectué par l’un de ces fabricants :
 
 Ce logiciel doit être préinstallé sur l’appareil :
 
-- Windows 10 Entreprise, Pro ou version Pro Workstation
+- <b>\*</b>Windows 10 ou Windows 11 : édition Enterprise, Pro ou Pro Workstation
 - la version 64 bits de Applications Microsoft 365 pour les grandes entreprises 
 - Tous les pilotes de périphérique applicables
 
-> [!NOTE]
-> Windows 11 sera une option supplémentaire pour les logiciels préinstallés une fois qu’il aura atteint la disponibilité générale.
->
+
 ### <a name="physical-features"></a>Fonctionnalités physiques
 
 Les appareils doivent avoir les fonctionnalités ci-après :
@@ -65,7 +63,7 @@ Pour plus d’informations sur ces fonctionnalités et les technologies qui y so
 
 > [!NOTE]
 >- ARM processeurs ne sont pas pris en charge.
->- Windows 11 présente une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
+>- <b>\*</b>Windows 11 présente une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
 
 Les appareils doivent respecter ou dépasser les limites suivantes pour le stockage et la mémoire :
 
@@ -79,7 +77,7 @@ Si l’appareil a été effectué après le 1er juillet 2020, il doit également
 
 Vos utilisateurs auront une bien meilleure expérience si vous choisissez les appareils qui disposent de ces fonctionnalités :
 
-- Soit un processeur intel vPro-platform, soit un processeur de Pro AMD Ryzen
+- Soit un processeur intel vPro-platform, soit un processeur Pro AMD Ryzen
 - Lecteur de démarrage du type SSD avec une capacité d’au moins 256 Go
 - Mémoire ram (RAM) interne d’au moins 16 Go
 - Prise en charge de la veille moderne

@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33df420b8b480b6957e2ec71b3bb5494f61fce63
-ms.sourcegitcommit: 7be84e7940c63b4c958b9da875d323bead9aae95
+ms.openlocfilehash: 0d2da96b421dfa594836698f2849f615e8f0ccf5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59453615"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209440"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
@@ -44,7 +44,7 @@ ms.locfileid: "59453615"
 |---|---|---|
 |[List MachineActions](get-machineactions-collection.md)|[Action de l’ordinateur](machineaction.md)|Liste des [entités d’action](machineaction.md) de l’ordinateur.|
 |[Obtenir MachineAction](get-machineaction-object.md)|[Action de l’ordinateur](machineaction.md)|Obtenir une seule [entité d’action](machineaction.md) de l’ordinateur.|
-|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir [d’un ordinateur.](machine.md)|
+|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir d’un [ordinateur.](machine.md)|
 |[Obtenir SAS de l’URI du package d’examen](get-package-sas-uri.md)|[Action de l’ordinateur](machineaction.md)|Obtenez l’URI pour télécharger le package d’enquête.|
 |[Isoler l’ordinateur](isolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Isoler [l’ordinateur](machine.md) du réseau.|
 |[Libérer la machine de l’isolation](unisolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Libérer [l’ordinateur](machine.md) de l’isolation.|
@@ -66,12 +66,12 @@ ms.locfileid: "59453615"
 |ID|Guid|Identité de [l’entité Action](machineaction.md) de l’ordinateur.|
 |type|Énum|Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « Live Response », « CollectConditionigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « IsolaterictCodeExecution ».|
 |étendue|string|Étendue de l’action. « Complète » ou « Sélective » pour l’isolation, « Rapide » ou « Complète » pour l’analyse antivirus.|
-|demandeur|Chaîne|Identité de la personne qui a exécuté l’action.|
-|externalID|Chaîne|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
+|demandeur|String|Identité de la personne qui a exécuté l’action.|
+|externalID|String|ID que le client peut envoyer dans la demande de corrélation personnalisée.|
 |requestSource|string|Nom de l’utilisateur/de l’application qui a soumis l’action.|
 |Commandes |tableau|Commandes à exécuter. Les valeurs autorisées sont PutFile, RunScript, GetFile.|
 |cancellationRequestor|Chaîne|Identité de la personne qui a annulé l’action.|
-|requestorComment|Chaîne|Commentaire écrit lors de l’émission de l’action.|
+|requestorComment|String|Commentaire écrit lors de l’émission de l’action.|
 |cancellationComment|Chaîne|Commentaire écrit lors de l’annulation de l’action.|
 |statut|Énum|État actuel de la commande. Les valeurs possibles sont : « En attente », « InProgress », « Succeeded », « Failed », « TimeOut » et « Cancelled ».|
 |machineId|Chaîne|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4724b18a88893fbe77aa912037e370dbd830951d
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 9a16abdcbc219a950eff6ddc8bb48018c4ba3279
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498075"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209308"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur
 
@@ -64,9 +64,9 @@ Dans les versions antérieures de Windows 10, le paramètre masque l’interface
 
 4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender >'interface client.**
 
-5. Double-cliquez sur le **paramètre Activer le mode d’interface** utilisateur sans en-tête et définissez l’option sur **Activé.** Cliquez sur **OK**.
+5. Double-cliquez sur le **paramètre Activer le mode d’interface** utilisateur sans en-tête et définissez l’option sur **Activé.** Cliquez sur **OK**.
 
-Voir [Empêcher les utilisateurs de modifier localement](configure-local-policy-overrides-microsoft-defender-antivirus.md) les paramètres de stratégie pour plus d’options pour empêcher les utilisateurs de modifier la protection sur leurs PC.
+Voir [Empêcher les utilisateurs de modifier localement](configure-local-policy-overrides-microsoft-defender-antivirus.md) les paramètres de stratégie pour plus d’options pour empêcher les utilisateurs de modifier la protection sur leur PC.
 
 ## <a name="prevent-users-from-pausing-a-scan"></a>Empêcher les utilisateurs de mettre une analyse en pause
 
@@ -75,7 +75,7 @@ Vous pouvez empêcher les utilisateurs de mettre en pause les analyses, ce qui p
 > [!NOTE]
 > Ce paramètre n’est pas pris en charge Windows 10.
 
-### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Utiliser une stratégie de groupe pour empêcher les utilisateurs de mettre une analyse en pause
+### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>Utiliser la stratégie de groupe pour empêcher les utilisateurs de mettre une analyse en pause
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
@@ -85,7 +85,7 @@ Vous pouvez empêcher les utilisateurs de mettre en pause les analyses, ce qui p
 
 4. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **Scan**.
 
-5. Double-cliquez sur le **paramètre Autoriser les utilisateurs à suspendre** l’analyse et définissez l’option **sur Désactivé.** Cliquez sur **OK**.
+5. Double-cliquez sur le **paramètre Autoriser les utilisateurs à suspendre** l’analyse et définissez l’option **sur Désactivé.** Cliquez sur **OK**.
 
 ## <a name="related-articles"></a>Articles connexes
 

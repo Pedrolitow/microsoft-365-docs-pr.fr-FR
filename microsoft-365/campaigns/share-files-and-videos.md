@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Partagez des fichiers et des vidéos au sein de votre campagne avec Microsoft Teams et SharePoint.
-ms.openlocfilehash: 20e232f1ca8a8392efa236d21b26259f47382148
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fa76261377f4ae52a53a4ff2375afc670086a449
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178236"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191012"
 ---
 # <a name="share-files-and-videos"></a>Partager des fichiers et des vidéos
 
@@ -47,7 +47,7 @@ Vous pouvez également utiliser Microsoft Stream pour stocker et partager des vi
 Utilisez ces méthodes pour partager des fichiers et des vidéos en toute sécurité :
 
 1. Stockez des fichiers Microsoft Teams ou SharePoint et assurez-vous que seules les personnes qui ont besoin d’accéder à ces fichiers en ont.
-2. Lorsque vous souhaitez partager, n’attachez pas de fichiers à un e-mail. Au lieu de cela, choisissez **Obtenir un** lien à partir Microsoft Teams ou SharePoint et envoyez le lien par courrier électronique.
+2. Lorsque vous souhaitez partager, ne joignez pas de fichiers à un e-mail. Au lieu de cela, choisissez **Obtenir un** lien à partir Microsoft Teams ou SharePoint et envoyez le lien par courrier électronique.
 3. Pour partager un fichier en externe, ajoutez l’utilisateur en tant qu’invité à votre équipe ou utilisez SharePoint pour obtenir un lien sécurisé pour partager uniquement ce fichier.
 4. Utilisez Microsoft Stream pour héberger des vidéos que vous souhaitez voir dans votre campagne.
 5. Utilisez Microsoft Teams ou SharePoint pour stocker les fichiers vidéo sur qui votre équipe doit collaborer ou partager.
