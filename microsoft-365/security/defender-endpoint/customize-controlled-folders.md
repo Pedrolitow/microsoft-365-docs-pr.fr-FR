@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 77df84645785da8944a47d0fb9501c95a5842969
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 88ecdbdc5055a954a2bd163697eac144edf0b2bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041659"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178466"
 ---
 # <a name="customize-controlled-folder-access"></a>Personnaliser l’accès contrôlé aux dossiers
 
@@ -44,13 +44,13 @@ L’accès contrôlé aux dossiers vous permet de protéger les données précie
 
 ## <a name="protect-additional-folders"></a>Protéger des dossiers supplémentaires
 
-L’accès contrôlé aux dossiers s’applique à de nombreux dossiers système et emplacements par défaut, y compris aux dossiers tels que **Documents,** **Images** et **Films.** Vous pouvez ajouter d’autres dossiers à protéger, mais vous ne pouvez pas supprimer les dossiers par défaut dans la liste par défaut.
+L’accès contrôlé aux dossiers s’applique à de nombreux dossiers système et emplacements par défaut, y compris les dossiers tels que **Documents,** **Images** et **Films.** Vous pouvez ajouter d’autres dossiers à protéger, mais vous ne pouvez pas supprimer les dossiers par défaut dans la liste par défaut.
 
 L’ajout d’autres dossiers à l’accès contrôlé aux dossiers peut être utile dans les cas où vous ne stockez pas de fichiers dans les bibliothèques Windows par défaut ou lorsque vous avez modifié l’emplacement par défaut de vos bibliothèques.
 
 Vous pouvez également spécifier des partages réseau et des lecteurs mappés. Les variables d’environnement et les caractères génériques sont pris en charge. Pour plus d’informations sur l’utilisation de caractères génériques, voir Utiliser des caractères génériques dans les listes d’exclusions de nom de fichier et de dossier ou [d’extension.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe, les cmdlets PowerShell ou les fournisseurs de services de configuration de gestion des périphériques mobiles pour ajouter et supprimer des dossiers protégés.
+Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe, les cmdlets PowerShell ou les fournisseurs de services de configuration de gestion des appareils mobiles pour ajouter et supprimer des dossiers protégés.
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>Utiliser l’Sécurité Windows pour protéger des dossiers supplémentaires
 
@@ -70,11 +70,11 @@ Vous pouvez utiliser l’application Sécurité Windows, la stratégie de groupe
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
 3. Dans votre Éditeur **de gestion des stratégies de** groupe, allez aux modèles d’administration des stratégies de **configuration** \>  \> **ordinateur.**
 
-4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
+4. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard. <br/>**REMARQUE**: sur les versions antérieures Windows, vous pouvez voir Antivirus Windows Defender **au** lieu de **Antivirus Microsoft Defender**.
 
 5. Double-cliquez **sur Dossiers protégés configurés,** puis définissez l’option **sur Activé.** Sélectionnez **Afficher** et spécifiez chaque dossier à protéger.
 
@@ -107,7 +107,7 @@ Vous pouvez spécifier si certaines applications sont toujours considérées com
 > [!IMPORTANT]
 > Par défaut, Windows ajoute des applications qui sont considérées comme conviviales à la liste autorisée. Ces applications ajoutées automatiquement ne sont pas enregistrées dans la liste affichée dans l’application Sécurité Windows ou à l’aide des cmdlets PowerShell associées. Il n’est pas nécessaire d’ajouter la plupart des applications. Ajoutez uniquement des applications si elles sont bloquées et que vous pouvez vérifier leur fiabilité.
 
-Lorsque vous ajoutez une application, vous devez spécifier son emplacement. Seule l’application à cet emplacement sera autorisée à accéder aux dossiers protégés. Si l’application (avec le même nom) se trouve à un autre emplacement, elle n’est pas ajoutée à la liste d’applications et peut être bloquée par l’accès contrôlé aux dossiers.
+Lorsque vous ajoutez une application, vous devez spécifier son emplacement. Seule l’application à cet emplacement sera autorisée à accéder aux dossiers protégés. Si l’application (du même nom) se trouve à un autre emplacement, elle n’est pas ajoutée à la liste d’applications et peut être bloquée par un accès contrôlé aux dossiers.
 
 Une application ou un service autorisé dispose uniquement d’un accès en écriture à un dossier contrôlé après son démarrage. Par exemple, un service de mise à jour continue de déclencher des événements une fois autorisé jusqu’à ce qu’il soit arrêté et redémarré.
 
@@ -129,7 +129,7 @@ Une application ou un service autorisé dispose uniquement d’un accès en écr
 
 2. Dans l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard.
+3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender** Windows Defender’accès contrôlé aux \>  \>  \> **dossiers** Exploit Guard.
 
 4. Double-cliquez sur le **paramètre Configurer les applications autorisées** et définissez l’option sur **Activé.** Sélectionnez **Afficher** et entrez chaque application.
 
@@ -164,7 +164,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 Les indicateurs de certificat et de fichier Microsoft Defender pour point de terminaison peuvent autoriser les fichiers exécutables signés à accéder aux dossiers protégés. Pour plus d’informations sur l’implémentation, voir [Créer des indicateurs basés sur des certificats.](indicator-certificates.md)
 
 > [!Note]
-> Cela ne s’applique pas aux moteurs de script, y compris PowerShell
+> Cela ne s’applique pas aux moteurs de script, y compris Powershell
 
 ## <a name="customize-the-notification"></a>Personnaliser la notification
 

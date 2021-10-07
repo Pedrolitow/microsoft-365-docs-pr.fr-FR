@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 028723dfb41f8e4cca71ea67aea5a88a46c9bb50
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 600ff555762112222769fde0372716f4a89a12b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180953"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209176"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtenir des notifications d’incident par courrier électronique
 
@@ -57,7 +57,7 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
 
 1. Dans le volet de navigation, sélectionnez Paramètres > Microsoft 365 Defender > **notifications d’incident par courrier électronique.**
 2. Sélectionnez **Ajouter un élément.**
-3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant.**
+3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant**.
 4. Dans la **page Paramètres de** notification, configurez :
     - **Gravité de l’alerte** : choisissez les gravités d’alerte qui déclencheront une notification d’incident. Par exemple, si vous souhaitez uniquement être informé des incidents de gravité élevée, sélectionnez **Élevé**.
     - **Étendue du groupe d’appareils** : vous pouvez spécifier tous les groupes d’appareils ou sélectionner dans la liste des groupes d’appareils de votre client.

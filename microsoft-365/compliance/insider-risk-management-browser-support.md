@@ -2,7 +2,7 @@
 title: En savoir plus et configurer la détection du signal du navigateur de gestion des risques internes (aperçu)
 description: En savoir plus sur la détection du signal du navigateur de gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ed4fe1e24a4414c4dad8f596df75705d1f6231a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f25664c0ca9cffa3a54e0bb9fb734bb506dfdf5b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182223"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190760"
 ---
 # <a name="learn-about-and-configure-insider-risk-management-browser-signal-detection-preview"></a>En savoir plus et configurer la détection du signal du navigateur de gestion des risques internes (aperçu)
 
@@ -46,7 +46,7 @@ Le tableau suivant récapitule les activités détectées et la prise en charge 
 
 Avant d’installer *l’extension microsoft Insider Risk extension* ou l’extension de conformité *Microsoft,* les clients doivent s’assurer que les appareils des utilisateurs de stratégies dans l’étendue répondent aux exigences suivantes :
 
-- La Windows 10 version x64 la plus récente est recommandée, au minimum Windows 10 version 1809 de x64 pour la prise en charge de la détection de signal. La détection du signal du navigateur n’est actuellement pas prise en charge sur les appareils Windows navigateur.
+- La Windows 10 version x64 la plus récente est recommandée, au minimum Windows 10 version x64 1809 pour la prise en charge de la détection de signal. La détection du signal du navigateur n’est actuellement pas prise en charge sur les appareils Windows navigateur.
 - Abonnement actuel [Microsoft 365 avec prise](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) en charge de la gestion des risques internes.
 - Les appareils doivent [être intégrés](/microsoft-365/compliance/insider-risk-management-settings#enable-device-indicators-and-onboard-devices) au portail Microsoft 365 conformité.
 
@@ -57,7 +57,7 @@ Pour des exigences de configuration de navigateur spécifiques, voir les section
 ### <a name="microsoft-edge-browser-requirements"></a>Microsoft Edge navigateur requis
 
 - Répondre aux exigences courantes
-- Microsoft Edge version x64, 91.0.864.41 ou version supérieure
+- Microsoft Edge version x64, 91.0.864.41 ou supérieure
 - *Extension de* risque Microsoft Insider version 1.0.0.44 ou supérieure
 - Edge.exe n’est pas configuré comme un navigateur nonallé
 
@@ -70,7 +70,7 @@ Pour l’option de configuration de base, effectuer les étapes suivantes :
 1. Accédez à [Microsoft Insider Risk Extension](https://microsoftedge.microsoft.com/addons/detail/microsoft-insider-risk-ex/lcmcgbabdcbngcbcfabdncmoppkajglo).
 2. Installez l’extension.
 
-### <a name="option-2-intune-setup-for-edge"></a>Option 2 : Configuration d’Intune pour Edge
+### <a name="option-2-intune-setup-for-edge"></a>Option 2 : configuration d’Intune pour Edge
 
 Utilisez cette option pour configurer l’extension et les conditions requises pour votre organisation à l’aide d’Intune.
 
@@ -83,7 +83,7 @@ Pour l’option d’installation d’Intune, effectuer les étapes suivantes :
 5. Sélectionnez **Modèles d’administration** *en tant que type de profil,* puis **sélectionnez Créer.**
 6. Sélectionnez l’onglet **Paramètres**.
 7. Sélectionnez **Edge version 77 et ultérieures.**
-8. Recherchez **des extensions** qui vous donnent une vue d’ensemble de tous les paramètres liés à l’extension.
+8. Recherchez **des extensions** qui vous donnent une vue d’ensemble de tous les paramètres liés aux extensions.
 9. Sélectionnez le paramètre **Contrôler les extensions installées en mode silencieux.**
 10. Sélectionnez **Activé.**
 11. Ajoutez l’ID d’extension à l’invite : *lcmcgbabdcbngcbcfabdncmoppkajglo***.**
@@ -95,7 +95,7 @@ Utilisez cette option pour configurer l’extension et la configuration requise 
 
 Pour l’option de configuration de la stratégie de groupe, effectuer les étapes suivantes :
 
-**Étape 1 : Importez le dernier fichier Microsoft Edge modèle d’administration (.admx).**
+**Étape 1 : Importez la dernière Microsoft Edge fichier de modèle d’administration (.admx).**
 
 Les appareils doivent être gérables à l’aide de stratégies de groupe et tous [Microsoft Edge modèles](https://www.microsoft.com/edge/business/download) d’administration doivent être importés dans le magasin central de stratégie de groupe. Pour plus d’informations, reportez-vous à l’article [Comment créer et gérer le magasin central des modèles d’administration de stratégie de groupe dans Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
@@ -158,7 +158,7 @@ Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Conf
 ```
 
 2. Connectez-vous au [Microsoft Endpoint Manager Admin Center.](https://endpoint.microsoft.com)
-3. Accédez  à \> **Scripts d’appareils** et sélectionnez **Ajouter.**
+3. Accédez  à \> **Périphériques Scripts et** sélectionnez **Ajouter.**
 4. Accédez à l’emplacement du script créé lorsque vous y avez été invité.
 5. Sélectionnez les paramètres suivants :
 
@@ -208,7 +208,7 @@ Vos appareils doivent être gérables à l’aide de la stratégie de groupe et 
 2. Ouvrez la **Console de gestion des stratégies de groupe** et accédez à votre unité d’organisation.
 3. Cliquez avec le bouton droit et **sélectionnez Créer un GPO dans ce domaine et l’lier ici.** Lorsque vous y invitez, attribuez un nom descriptif à cet objet de stratégie de groupe (GPO). Par exemple, *DLP Chrome Immediate PowerShell Script*.
 4. Après avoir créé l’GPO, cliquez avec le bouton droit et sélectionnez **Modifier.** Cette sélection vous prend à l’objet de stratégie de groupe.
-5. Accédez **aux paramètres** du panneau de configuration \>  \> **Préférences de configuration de l’ordinateur** \> **Tâches programmées.**
+5. Accédez **aux paramètres** du panneau de configuration \>  \> **Préférences de l’ordinateur Tâches** \> **programmées.**
 6. Cliquez avec le bouton droit sur la zone vierge sous **Tâches** programmées et sélectionnez **Nouvelle** tâche immédiate \> **(au moins Windows 7).**
 7. Entrez un nom *et une* description de *tâche.*
 8. Choisissez le compte correspondant pour exécuter la tâche immédiate. Par exemple, *NT Authority*.

@@ -4,17 +4,17 @@ description: Services et processus fournis par le Centre des opérations de séc
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 600755c15ce6da94481ef4d84732991e5006cce1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b575bb506c2d70a73b858560a6fc10f931e95ba1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204972"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178550"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Opérations de sécurité dans Microsoft Manged Desktop
 
@@ -26,7 +26,7 @@ Le SOC fournit les services ci-après :
 - Réponse rapide et précise aux événements détectés, avec analyse des données pour identifier l’impact et évaluer le risque global pour un appareil ou votre environnement
 - Actions de gestion et d’isolation des appareils pour protéger votre environnement contre les compromissions connues ou suspectes, réduisant ainsi les risques en empêchant la propagation
 - Piloter le processus de réponse aux incidents de sécurité, en assurant une communication rapide et précise avec votre équipe de sécurité
-- Analyse et recommandations basées sur les données de menace et de vulnérabilité pour identifier et résoudre les risques avant qu’ils ne sont exploités
+- Analyse et recommandations basées sur les données de menace et de vulnérabilité pour identifier et résoudre les risques avant qu’ils ne soit exploités
 - Recherche avancée sur les appareils gérés pour identifier les indicateurs et entités pour les menaces connues et potentielles
 
 ## <a name="processes"></a>Processus

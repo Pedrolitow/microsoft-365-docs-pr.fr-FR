@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: df2effa41977624530b5f9ea8881f7f5aaeef82f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207292"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209104"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Corriger les faux positifs ou les faux négatifs dans Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Les sections suivantes décrivent comment effectuer ces tâches.
 
 |Élément manqué ou détecté de manière erronée |Service  |Procédure  |
 |---------|---------|---------|
-|- Message électronique <br/>- Pièce jointe d’un e-mail <br/>- URL dans un message électronique<br/>- URL dans un fichier Office de données      |[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et de fichiers à Microsoft pour analyse](../office-365-security/admin-submission.md)         |
+|- Message électronique <br/>- Pièce jointe d’un e-mail <br/>- URL dans un message électronique<br/>- URL dans un fichier Office de données      |[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et de fichiers à Microsoft pour analyse](../office-365-security/admin-submission.md)         |
 |Fichier ou application sur un appareil    |[Microsoft Defender pour point de terminaison](/windows/security/threat-protection)         |[Envoyer un fichier à Microsoft pour analyse des programmes malveillants](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajuster une alerte pour éviter que les faux positifs ne se répètent

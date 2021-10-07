@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -24,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Gérer les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: 5dd51435a67cb26353c6794bc9fe01509ef283a1
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+description: Gérez les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
+ms.openlocfilehash: 566cf595365a578f0e92d7e41e8ed7c7764c0cf4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776463"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197797"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
@@ -45,7 +46,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Créer une signature qui s'applique à tous les messages
 
 > [!TIP]
-> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir simplement d’une signature, ou inclure votre adresse, votre clause d’exclusion de responsabilité juridique ou d’autres informations que vous souhaitez.
+> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir simplement d’une signature ou inclure votre adresse, une clause d’exclusion de responsabilité juridique ou d’autres informations de votre part.
     
 ::: moniker range="o365-worldwide"
 
@@ -65,7 +66,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 ::: moniker-end
 
-1. Sélectionnez le lanceur d’applications L’icône du lanceur d’applications, ![ puis ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) sélectionnez **Administrateur.**
+1. Sélectionnez le lanceur d’applications ![ L’icône du lanceur d’applications, ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) puis sélectionnez **Administrateur.**
    
     Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
@@ -115,9 +116,9 @@ Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des 
   
 ## <a name="more-resources"></a>Plus de ressources
 
-Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes des messages à l’échelle de l’Exchange Online .
+Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes de message à l’échelle de l’Exchange Online .
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)\
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\

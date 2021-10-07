@@ -1,12 +1,12 @@
 ---
 title: Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender
 description: En savoir plus sur la protection et les Antivirus Microsoft Defender
-keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, soumission d’exemples antivirus, antivirus de nouvelle génération, machine learning, anti-programme malveillant, sécurité, defender, cloud, protection livrée par le cloud
+keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, soumission d’exemples antivirus, antivirus de nouvelle génération, machine learning, anti-programme malveillant, sécurité, defender, cloud, protection cloud
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 946027419feca235442476db41533fb29adc6007
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f23ff6ccbde512b8c8b3f1da36e86ede1c2d0324
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490750"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208564"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protection cloud et soumission d’exemples dans Antivirus Microsoft Defender
 
@@ -54,7 +54,7 @@ Antivirus Microsoft Defender protection cloud bloquent automatiquement la plupar
 
 4. Une protection avancée basée sur le cloud est fournie pour les cas où Antivirus Microsoft Defender en cours d’exécution sur le point de terminaison a besoin d’une plus grande intelligence pour vérifier l’intention d’un fichier suspect.
 
-   1. Dans le cas Antivirus Microsoft Defender impossible de déterminer clairement, les métadonnées de fichier sont envoyées au service de protection cloud. En quelques millisecondes, le service de protection cloud peut déterminer en fonction des métadonnées si le fichier est malveillant ou non une menace.  
+   1. Dans le cas Antivirus Microsoft Defender impossible de déterminer clairement, les métadonnées de fichier sont envoyées au service de protection cloud. Souvent, en millisecondes, le service de protection cloud peut déterminer en fonction des métadonnées si le fichier est malveillant ou non une menace.  
 
       - La requête cloud de métadonnées de fichier peut être le résultat d’un comportement, d’une marque du site web ou d’autres caractéristiques dans le cas où un verdict clair n’est pas déterminé.
       - Une petite charge utile de métadonnées est envoyée, dans le but d’atteindre un verdict de programmes malveillants ou pas de menace. Les métadonnées n’incluent pas d’informations d’identification personnelle (PII). Les informations telles que les noms de fichiers sont hachées.
@@ -63,9 +63,9 @@ Antivirus Microsoft Defender protection cloud bloquent automatiquement la plupar
 
    2. Après avoir examiné les métadonnées, si Antivirus Microsoft Defender protection cloud ne peut pas parvenir à un verdict de première classe, elle peut demander un échantillon du fichier pour une inspection plus approfondie. Cette demande honore la configuration des paramètres pour l’envoi d’exemples :
 
-      1. **Envoyer automatiquement des échantillons sécurisés** (par défaut)
+      1. **Envoyer automatiquement des échantillons sûrs** (par défaut)
          - Coffre exemples sont des exemples considérés comme ne contenant pas fréquemment des données d’informations d'.bat, .scr, .dll, .exe.
-         - Si le fichier est susceptible de contenir des pii, l’utilisateur reçoit une demande d’autoriser l’envoi d’exemples de fichiers.
+         - Si le fichier est susceptible de contenir des pii, l’utilisateur reçoit une demande d’autoriser l’envoi d’exemples de fichier.
          - Cette option est la valeur par défaut sur Windows, macOS et Linux.
 
       2. **Always Prompt**
@@ -115,7 +115,7 @@ Le tableau suivant répertorie des exemples de métadonnées envoyées pour anal
 
 ## <a name="samples-are-treated-as-customer-data"></a>Les exemples sont traités comme des données client
 
-Juste au cas où vous vous demanderiez ce qui se passe avec les soumissions d’exemples, Defender for Endpoint traite tous les exemples de fichiers comme des données client. Microsoft honore les choix géographiques et de rétention des données que votre organisation a sélectionnés lors de l’intégration à Defender for Endpoint. 
+Juste au cas où vous vous demanderiez ce qu’il advient des soumissions d’exemples, Defender for Endpoint traite tous les exemples de fichiers comme des données client. Microsoft honore les choix géographiques et de rétention des données que votre organisation a sélectionnés lors de l’intégration à Defender for Endpoint. 
 
 En outre, Defender pour point de terminaison a reçu plusieurs certifications de conformité, ce qui démontre l’adhésion continue à un ensemble sophistiqué de contrôles de conformité :
 

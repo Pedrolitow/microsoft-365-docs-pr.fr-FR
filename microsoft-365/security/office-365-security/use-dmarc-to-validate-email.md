@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 05/10/2021
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68a3f9bc2b7752ee59c040ebaca54e58008479e9
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 242c0e7573c9f5c61ba23b8a99ed27793ea58019
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099742"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208948"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 

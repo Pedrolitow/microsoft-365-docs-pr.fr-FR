@@ -9,15 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 923e3ed22b00b95f751f140397c22631ba3025b5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c7a455c1b7642f83cf81874807dce510cbbc8432
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208419"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189823"
 ---
 # <a name="contact-support-for-turkmenistan"></a>Contacter le support technique pour le Turkménistan
 

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1e04c9a817bfe799c15e3609e190980bfc4145e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da2f7b17725c7acb54b50a6280492e8f45fa6215
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209893"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208660"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>API Microsoft Defender pour point de terminaison - Hello World
 
@@ -57,7 +57,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec votre **utilisateur administrateur** général.
 
-2. Accédez à **Azure Active Directory** \> **Inscription de l’application Nouvelle** \> **inscription.**
+2. Accédez à **Azure Active Directory** \> **inscription de l’application Nouvelle** \> **inscription.**
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application.](images/atp-azure-new-app2.png)
 

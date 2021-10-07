@@ -9,19 +9,19 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
 description: Feuille de route de l’identité pour Microsoft 365.
-ms.openlocfilehash: 27abe04da2fed0eaae09fa0ed42a83286fe74f5d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5f0584ef9a14c81ba3a81491a5ef79d32d44d6e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165324"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178790"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
 
@@ -60,7 +60,7 @@ Pour déployer votre implémentation d’identité :
 
 ### <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 
-Pour garantir un personnel sécurisé et productif, Microsoft fournit un ensemble de recommandations pour l’accès aux identités [et aux appareils.](../security/office-365-security/microsoft-365-policies-configurations.md) Pour l’identité, utilisez les recommandations et les paramètres des articles suivants :
+Pour garantir un personnel sécurisé et productif, Microsoft fournit un ensemble de recommandations pour l’accès aux identités [et appareils.](../security/office-365-security/microsoft-365-policies-configurations.md) Pour l’identité, utilisez les recommandations et les paramètres des articles suivants :
 
 - [Conditions préalables](../security/office-365-security/identity-access-prerequisites.md)
 - [Stratégies communes pour les identités et l’accès aux appareils](../security/office-365-security/identity-access-policies.md)

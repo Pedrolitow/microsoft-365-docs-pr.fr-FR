@@ -7,19 +7,20 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment Antivirus Microsoft Defender protéger vos appareils Windows contre les menaces logicielles, telles que les virus, les programmes malveillants et les logiciels espions.
-ms.openlocfilehash: 7894a1f2a3947a3d71f46bf0ca3797370db078f4
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 969cd707e40c9c7f665089cc1b9b6ddd45583982
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772733"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178070"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Menaces détectées par l’antivirus Microsoft Defender
 
@@ -55,7 +56,7 @@ Si vous désinstallez la solution antivirus non Microsoft, Antivirus Microsoft D
 
 > [!TIP]
 > - Si vous utilisez Microsoft 365, envisagez d’Antivirus Microsoft Defender comme solution antivirus principale. L’intégration peut fournir une meilleure protection. Voir [mieux ensemble : Antivirus Microsoft Defender et Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
-> - Veillez à maintenir Antivirus Microsoft Defender à jour, même si vous utilisez une solution antivirus non-Microsoft.
+> - Veillez à maintenir Antivirus Microsoft Defender jour, même si vous utilisez une solution antivirus non Microsoft.
 
 ## <a name="what-to-expect-when-threats-are-detected"></a>À quoi s’attendre lorsque des menaces sont détectées
 
@@ -80,7 +81,7 @@ Pour en savoir plus sur les différentes menaces, visitez <a href="https://www.m
 - Afficher les dernières menaces pour une région spécifique.
 - Recherchez des détails sur une menace spécifique dans la menace.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Secure Windows 10 devices](/misc/secure-windows-10-devices.md) (article)\
 [Évaluer Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (article)\

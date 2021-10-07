@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les notifications de courrier indésirable pour les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 029c48dd2986a55b1b2eb723c12f629a75b14efa
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 31cfebba6d7bde610ac855dc4c7985d2432fabe3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483030"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190244"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>Utiliser les notifications de mise en quarantaine pour libérer et signaler les messages mis en quarantaine
 
@@ -39,7 +39,7 @@ ms.locfileid: "59483030"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Pour plus d’informations, [voir Messages mis en quarantaine dans EOP.](quarantine-email-messages.md)
 
-_Les stratégies de_ mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les fonctionnalités pris en charge). Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md) Les polices de mise en quarantaine contrôlent également si les destinataires affectés (y compris les boîtes aux lettres partagées) obtiennent des _notifications périodiques_ de mise en quarantaine concernant leurs messages mis en quarantaine. Les notifications de mise en quarantaine remplacent les notifications de courrier indésirable pour toutes les fonctionnalités de protection prise en charge (et pas seulement les verdicts de stratégie anti-courrier indésirable).
+_Les stratégies de_ mise en quarantaine définissent ce que les utilisateurs sont autorisés à faire pour les messages mis en quarantaine en fonction de la raison pour laquelle le message a été mis en quarantaine (pour les fonctionnalités pris en charge). Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md). Les polices de mise en quarantaine contrôlent également si les destinataires affectés (y compris les boîtes aux lettres partagées) obtiennent des _notifications périodiques_ de mise en quarantaine concernant leurs messages mis en quarantaine. Les notifications de mise en quarantaine remplacent les notifications de courrier indésirable pour toutes les fonctionnalités de protection prise en charge (et pas seulement les verdicts de stratégie anti-courrier indésirable).
 
 Les administrateurs peuvent également utiliser les paramètres globaux des stratégies de mise en quarantaine pour personnaliser le nom complet de l’expéditeur, le texte de la clause d’exclusion de responsabilité dans différentes langues et le logo de l’entreprise utilisé dans les notifications. Pour obtenir des instructions, voir [Configurer les paramètres globaux](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal)de notification de mise en quarantaine dans Microsoft 365 Defender portail.
 
@@ -67,4 +67,4 @@ Par défaut, les actions suivantes sont disponibles dans la notification de mise
 ![Exemple de notification de mise en quarantaine.](../../media/end-user-spam-notification.png)
 
 > [!NOTE]
-> Un expéditeur bloqué peut toujours vous envoyer des messages électroniques. Tous les messages provenant de cet expéditeur qui parviennent à votre boîte aux lettres sont immédiatement déplacés vers le dossier Courrier indésirable. Les futurs messages de cet expéditeur seront placés dans votre dossier Courrier indésirable ou mis en quarantaine. Si vous souhaitez supprimer ces messages à l’arrivée au lieu de les mettre en quarantaine, utilisez des règles de flux de messagerie [(également](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) appelées règles de transport) pour supprimer les messages à l’arrivée.
+> Un expéditeur bloqué peut toujours vous envoyer des messages électroniques. Tous les messages provenant de cet expéditeur qui se déplacent vers votre boîte aux lettres sont immédiatement déplacés vers le dossier Courrier indésirable. Les futurs messages de cet expéditeur seront placés dans votre dossier Courrier indésirable ou mis en quarantaine. Si vous souhaitez supprimer ces messages à l’arrivée au lieu de les mettre en quarantaine, utilisez des règles de flux de messagerie [(également](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) appelées règles de transport) pour supprimer les messages à l’arrivée.

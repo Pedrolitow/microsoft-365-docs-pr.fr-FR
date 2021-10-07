@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365initiative-coredeploy
@@ -22,22 +22,22 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Cet article fournit des informations sur la protection de l’accès administrateur général à Microsoft 365 abonnement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3a43c8b6ac5389be99581302c249e431853ba99b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9693a8321643539e21ff10f3c624a0558916eb29
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205387"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198348"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes Microsoft 365 administrateur général
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’Microsoft 365 compte d’administrateur général. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
+Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement dues à la compromissation des informations d’identification d’un Microsoft 365 d’administrateur général. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
   
-- Les services cloud de Microsoft reposent sur une base de confiance et de sécurité. Microsoft vous fournit des contrôles de sécurité et des fonctionnalités pour vous aider à protéger vos données et applications.
+- Les services de cloud computing Microsoft reposent sur la confiance et la sécurité. Microsoft met à votre disposition des contrôles et fonctionnalités de sécurité pour vous aider à protéger vos données et applications.
     
-- Vous êtes propriétaire de vos données et identités, ainsi que de la responsabilité de les protéger, de la sécurité de vos ressources locales et de la sécurité des composants cloud que vous contrôlez.
+- Il est de votre responsabilité de protéger vos données et votre identité, ainsi que d’assurer la sécurité de vos ressources locales et des composants cloud que vous contrôlez.
     
 Microsoft fournit des fonctionnalités pour aider à protéger votre organisation, mais elles ne sont efficaces que si vous les utilisez. Si vous ne les utilisez pas, vous risquez d’être vulnérable aux attaques. Pour protéger vos comptes d’administrateur général, Microsoft est là pour vous aider avec des instructions détaillées pour :
   
@@ -89,7 +89,7 @@ Les résultats doivent être :
 À partir de maintenant, vous vous connectez avec les comptes d’administrateur général dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur général. Toutes les autres Microsoft 365 administration doivent être réalisées en attribuant d’autres rôles d’administration à des comptes d’utilisateurs.
   
 > [!NOTE]
-> Cela nécessite des étapes supplémentaires pour vous dé connectez en tant que compte d’utilisateur quotidien et avec un compte d’administrateur général dédié. Toutefois, cette opération ne doit être effectuée qu’occasionnellement pour les opérations d’administrateur général. La récupération de votre abonnement Microsoft 365 suite à une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
+> Cela nécessite des étapes supplémentaires pour vous dé connectez en tant que compte d’utilisateur quotidien et avec un compte d’administrateur général dédié. Toutefois, cette opération ne doit être effectuée qu’occasionnellement pour les opérations d’administrateur général. Considérez que la récupération de votre abonnement Microsoft 365 suite à une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
   
 ## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Étape 2. Configurer l’authentification multifacteur pour vos comptes Microsoft 365 administrateur général dédiés
 
@@ -113,7 +113,7 @@ Si vous êtes une petite entreprise qui utilise des comptes d’utilisateurs sto
     
 Si vous êtes une grande organisation qui utilise un modèle Microsoft 365 identité hybride, vous avez davantage d’options de vérification. Si vous avez déjà mis en place l’infrastructure de sécurité pour une méthode d’authentification secondaire plus [forte,](../admin/security-and-compliance/set-up-multi-factor-authentication.md) configurez l’authentification multifacteur et configurez chaque compte d’administrateur général dédié pour la méthode de vérification appropriée.
   
-Si l’infrastructure de sécurité pour la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes d’administrateur général dédiés avec l’appelez-moi à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification de message texte envoyé à un smartphone pour vos comptes d’administrateur général comme mesure de sécurité intermédiaire. Ne laissez pas vos comptes d’administrateur général dédiés sans la protection supplémentaire fournie par l’mf.
+Si l’infrastructure de sécurité de la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes d’administrateur général dédiés avec l’appelez-moi à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification de message texte envoyé à un smartphone pour vos comptes d’administrateur général comme sécurité intermédiaire . Ne laissez pas vos comptes d’administrateur général dédiés sans la protection supplémentaire fournie par l’mf.
   
 Pour plus d’informations, [consultez l’mf pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   

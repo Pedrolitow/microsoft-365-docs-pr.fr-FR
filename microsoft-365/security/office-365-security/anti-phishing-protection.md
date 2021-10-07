@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 296f5cbea567860411a9eb093d0547670bf80c62
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207260"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190376"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "59207260"
 
 Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
 
-- **Le harponnage** utilise du contenu ciblé et personnalisé qui est spécifiquement adapté aux destinataires ciblés (généralement, après la reconnaissance des destinataires par l’attaquant).
+- **Le harponnage** utilise du contenu ciblé et personnalisé spécifiquement adapté aux destinataires ciblés (généralement, après la reconnaissance des destinataires par l’attaquant).
 
 - **Le harponnage de cadre** est dirigé vers les cadres ou d’autres cibles à valeur élevée au sein d’une organisation pour un effet maximal.
 
@@ -67,7 +67,7 @@ Microsoft Defender pour Office 365 contient des fonctionnalités supplémentaire
 
 - Stratégies **anti-hameçonnage** dans Microsoft Defender pour Office 365 : configurer les paramètres de protection contre l’emprunt d’identité pour des expéditeurs et domaines d’expéditeur de messages spécifiques, des paramètres d’intelligence de boîte aux lettres et des seuils d’hameçonnage avancés réglables. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md). Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage dans EOP et les stratégies anti-hameçonnage dans Defender pour Office 365, voir stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md)dans Microsoft 365 .
 - **Affichages campagne**: l’apprentissage automatique et d’autres heuristiques identifient et analysent les messages impliqués dans des attaques par hameçonnage coordonnées contre l’ensemble du service et de votre organisation. Pour plus d’informations, [voir Affichages des campagnes dans Microsoft Defender pour Office 365](campaigns.md).
-- **Formation sur la simulation d’attaques**: les administrateurs peuvent créer des messages de hameçonnage factices et les envoyer à des utilisateurs internes en tant qu’outil d’éducation. Pour plus d’informations, voir [Simuler une attaque par hameçonnage.](attack-simulation-training.md)
+- **Formation à la simulation d’attaques**: les administrateurs peuvent créer des messages de hameçonnage factices et les envoyer à des utilisateurs internes en tant qu’outil d’éducation. Pour plus d’informations, voir [Simuler une attaque par hameçonnage.](attack-simulation-training.md)
 
 ## <a name="other-anti-phishing-resources"></a>Autres ressources anti-hameçonnage
 

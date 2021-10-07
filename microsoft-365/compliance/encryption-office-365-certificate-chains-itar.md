@@ -9,20 +9,20 @@ ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Affichez la liste complète des certificats DOD et Cloud de la communauté du secteur public autorités de certification et de certificat racine élevés dans Microsoft 365.
-ms.openlocfilehash: ae8954ecb80cdcef0a62cbf4f928f7ffe6b8c4d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Affichez la liste complète des autorités de certification et des certificats DOD et Cloud de la communauté du secteur public les autorités de certification et les certificats racines élevés dans Microsoft 365.
+ms.openlocfilehash: 5db850f59223238bdd9e749f442caf9eab93ea29
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197604"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 de chiffrement - DOD et Cloud de la communauté du secteur public High
 
@@ -124,7 +124,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert High Assurance EV Root CA**
 
-| **Sujet** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Subject** | CN=DigiCert High Assurance EV Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Numéro de série** | 02:AC:5C:26:6A:0B:40:9B:8F:0B:79:F2:AE:46:25:77 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -139,7 +139,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 Extended Validation Server CA**
 
-| **Sujet** | CN=DigiCert SHA2 Extended Validation Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Subject** | CN=DigiCert SHA2 Extended Validation Server CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Numéro de série** | 0C:79:A9:44:B0:8C:11:95:20:92:61:5F:E2:6B:1D:83 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -170,7 +170,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **Sujet** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
+| **Subject** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Issuer** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Numéro de série** | 02:74:2E:AA:17:CA:8E:21:C7:17:BB:1F:FC:FD:0C:A0 |
@@ -187,7 +187,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
 
-| **Sujet** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
+| **Subject** | CN=DigiCert TLS RSA SHA256 2020 CA1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Issuer** | CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US |
 | **Numéro de série** | 0A:35:08:D5:5C:29:2B:01:7D:F8:AD:65:C0:0F:F7:E4 |
@@ -246,7 +246,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-certification-authority---l1c"></a>**Autorité de certification de confiance - L1C**
 
-| **Subject** | CN=Autorité de certification de confiance - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa est incorporé par référence<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Sujet** | CN=Autorité de certification de confiance - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa est incorporé par référence<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Issuer** | CN=Autorité de certification Entrust.net (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. par référence. (limites liab.)<br>O=Entrust.net |
 | **Numéro de série** | 4C:0E:8C:39 |
@@ -283,7 +283,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Autorité de certification de confiance - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Issuer** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **Numéro de série** | 0E:E9:4C:C3:00:00:00:00:51:D3:77:85 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -301,7 +301,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Autorité de certification de confiance - L1M, OU= &quot; (c) 2014 , Inc. - pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Issuer** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Issuer** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | **Numéro de série** | 61:A1:E7:D2:00:00:00:00:51:D3:66:A6 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -386,7 +386,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 08:B8:7A:50:1B:BE:9C:DA:2D:16:4D:3E:39:51:BF:55 |
 | **Longueur de clé publique** | RSA 4096 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -402,9 +402,9 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **Sujet** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 0F:2C:10:C9:5B:06:C0:93:7F:B8:D4:49:F8:3E:85:69 |
 | **Longueur de clé publique** | RSA 4096 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |
@@ -420,9 +420,9 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **Subject** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
+| **Sujet** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 0B:6A:B3:B0:3E:B1:A9:F6:C4:60:92:6A:A8:CD:FE:B3 |
 | **Longueur de clé publique** | RSA 4096 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |

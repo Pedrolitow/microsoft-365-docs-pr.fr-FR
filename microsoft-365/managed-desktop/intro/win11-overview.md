@@ -7,28 +7,28 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7a99ca8d5f56fd5614dc27e3a28efe905ba30e46
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f0ab88b647b3fb7311d9adfdc6e9dc6758755b30
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205083"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198300"
 ---
 # <a name="microsoft-managed-desktop-and-windows-11"></a>Microsoft Managed Desktop et Windows 11
 
-Après l’annonce de Windows 11, vous avez peut-être commencé à planifier des migrations Windows 11 dans le cadre de vos efforts pour maintenir Windows 10 à jour. Cet article décrit les considérations importantes et la façon Microsoft Manged Desktop de prendre en charge les transitions fluides dans vos environnements. Pour plus d’informations Windows 11 lui-même, voir [Windows vue d’ensemble de 11.](/windows/whats-new/windows-11)
+Après l’annonce de Windows 11, vous avez peut-être commencé à planifier des migrations Windows 11 dans le cadre de vos efforts pour maintenir Windows 10 à jour. Cet article décrit les considérations importantes et la façon Microsoft Manged Desktop la prise en charge des transitions fluides dans vos environnements. Pour plus d’informations sur Windows 11 lui-même, voir [Windows vue d’ensemble de 11.](/windows/whats-new/windows-11)
 
 Pour obtenir les étapes spécifiques à suivre pour installer Windows 11 sur vos appareils Microsoft Manged Desktop, consultez La prévisualisation et testez Windows [11](../working-with-managed-desktop/test-win11-mmd.md)avec Microsoft Manged Desktop .
 
 ## <a name="timeline-for-windows-11"></a>Chronologie pour Windows 11
 
-Windows 11 builds d’aperçu sont disponibles à partir du 28 juin 2021 [jusqu’au Windows programme Insider.](/windows-insider/) Nous prévoyons que les builds de publication seront généralement disponibles d’ici la fin de l’année civile 2021.
+Windows 11 builds d’aperçu sont disponibles à partir du 28 juin 2021 jusqu’au Windows [programme Insider.](/windows-insider/) Nous prévoyons que les builds de publication seront généralement disponibles d’ici la fin de l’année civile 2021.
 
 Vous pouvez installer les builds d’aperçu sur les appareils, qu’ils soient gérés Microsoft Manged Desktop ou non. Nous continuerons à prendre en charge Windows 10 en parallèle jusqu’à ce qu’il atteigne la fin de la prise en charge de l’entreprise. Consultez les [Windows 10 de publication pour](/windows/release-health/release-information) les informations de cycle de vie.
 
-Lorsque Windows 11 est généralement disponible, nous allons tester davantage de validation. Nous prévoyons que janvier 2022 sera le plus tôt Windows 11 sera proposé aux Microsoft Manged Desktop de production via nos groupes de déploiement standard.
+Lorsque Windows 11 est généralement disponible, nous allons faire d’autres tests de validation. Nous prévoyons que janvier 2022 sera le plus tôt Windows 11 sera proposé aux Microsoft Manged Desktop de production via nos groupes de déploiement standard.
 
 Nous consulterons et conseillons aux administrateurs de développer et d’implémenter des plans de migration pour chaque client en fonction de la préparation technique et des considérations de votre entreprise.
 
@@ -36,7 +36,7 @@ Nous consulterons et conseillons aux administrateurs de développer et d’impl�
 
 Plus de 95 % des appareils Microsoft Manged Desktop sont éligibles pour Windows 11. Vous pouvez donc prévisualiser la mise à niveau sur les périphériques de test avant le déploiement de production. Pour plus d’informations Windows 11 système requis, voir [Windows 11.](/windows/whats-new/windows-11-requirements) Vous pouvez demander des détails sur l’état d’éligibilité de vos appareils Microsoft Manged Desktop.
 
-Pour Microsoft Manged Desktop, vous pouvez demander d’ajouter des périphériques de test à l’espace de travail moderne **- Windows 11 groupes** d’appareils de test pré-version. Ce groupe reçoit les Windows version d’évaluation 11, ainsi qu’une configuration Microsoft Manged Desktop base de référence. Microsoft Manged Desktop ne gère pas la cadence de publication des builds d’aperçu Windows 11, de sorte que les membres de ce groupe d’appareils peuvent recevoir des mises à jour plus fréquemment que Windows 10 groupes d’appareils.
+Pour Microsoft Manged Desktop, vous pouvez demander d’ajouter des périphériques de test à l’espace de travail moderne - Windows groupe d’appareils de **test pré-version 11.** Ce groupe reçoit les Windows version d’évaluation 11, ainsi qu’une configuration Microsoft Manged Desktop base de référence. Microsoft Manged Desktop ne gère pas la cadence de publication des builds d’aperçu Windows 11, de sorte que les membres de ce groupe d’appareils peuvent recevoir des mises à jour plus fréquemment que Windows 10 groupes d’appareils.
 
 Pour vos appareils qui ne sont pas gérés par Microsoft Manged Desktop, vous pouvez rejoindre le programme [Windows Insider](/windows-insider/) pour télécharger les builds d’aperçu et obtenir des conseils sur le déploiement de Windows 11 vous-même. Si des appareils exécutent des builds pré Windows 11 et les inscrivent ultérieurement dans Microsoft Manged Desktop, ils ne reviennent pas à Windows 10.
 

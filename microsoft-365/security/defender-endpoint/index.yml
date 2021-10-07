@@ -12,13 +12,13 @@ metadata:
   author: mjcaparas
   ms.author: macapara
   ms.date: 08/30/2021
-  localization_priority: Priority
-  ms.openlocfilehash: e5f759f923e5099058730311ccbbaa5ce32dfe2d
-  ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+  ms.localizationpriority: high
+  ms.openlocfilehash: c87acc0d7fe1a9b1853986d472e4160d6a2e1a00
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/16/2021
-  ms.locfileid: "59399561"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60198219"
 landingContent:
 - title: Microsoft Defender pour point de terminaison
   linkLists:

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4c5cf3c759d0ea779e8070ad3474013a765fee95
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bcd09c1a2f828545243d1f4d56c9e2cab49356ab
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209792"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190556"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser les API Microsoft Defender pour les points de terminaison
 
@@ -40,11 +40,11 @@ ms.locfileid: "59209792"
 
 Cette page explique comment créer une application pour obtenir l’accès par programme à Defender for Endpoint pour le compte d’un utilisateur.
 
-Si vous avez besoin d’un accès par programmation à Microsoft Defender pour endpoint sans utilisateur, reportez-vous à Access Microsoft Defender pour Endpoint avec le [contexte de l’application.](exposed-apis-create-app-webapp.md)
+Si vous avez besoin d’un accès par programmation à Microsoft Defender pour le point de terminaison sans utilisateur, reportez-vous à Access Microsoft Defender pour point de terminaison avec le [contexte de l’application.](exposed-apis-create-app-webapp.md)
 
 Si vous n’êtes pas sûr de l’accès dont vous avez besoin, lisez la [page Introduction.](apis-intro.md)
 
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
 
@@ -94,8 +94,8 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
 4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et attribuez-lui l’autorisation « Lire les alertes » :
 
-   - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon \>  \>  organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
-   - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
+   - Dans la page de votre application, sélectionnez **Autorisations api** Ajouter des API d’autorisation que mon \>  \>  organisation utilise > type **WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
+   - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
 
      ![ajouter une autorisation.](images/add-permission.png)
 
@@ -108,10 +108,10 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
      Par exemple,
 
      - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
-     - Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
+     - Pour [isoler un appareil,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
      - Pour déterminer l’autorisation qui vous est nécessaire, consultez la section **Autorisations** dans l’API que vous souhaitez appeler.
 
-   - Sélectionner **Accorder le consentement**
+   - Sélectionnez **Accorder le consentement**
 
       **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner accordez **l’autorisation** pour que la nouvelle autorisation prenne effet.
 
@@ -182,7 +182,7 @@ Vérifiez que vous avez reçu un jeton correct :
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
 
-- Choisissez l’API que vous souhaitez utiliser : API [Microsoft Defender pour point de terminaison prise en charge](exposed-apis-list.md)
+- Choisissez l’API que vous souhaitez utiliser - API [Microsoft Defender pour point de terminaison prise en charge](exposed-apis-list.md)
 - Définissez l’en-tête Authorization dans la requête HTTP que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
 - Le délai d’expiration du jeton est de 1 heure (vous pouvez envoyer plusieurs demandes avec le même jeton)
 

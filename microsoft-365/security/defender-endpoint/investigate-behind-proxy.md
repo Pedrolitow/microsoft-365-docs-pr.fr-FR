@@ -1,6 +1,6 @@
 ---
 title: Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
-description: Découvrez comment utiliser la surveillance avancée au niveau HTTP par le biais de la protection réseau dans Microsoft Defender pour point de terminaison, qui surfaces une cible réelle, au lieu d’un proxy.
+description: Découvrez comment utiliser la surveillance avancée au niveau HTTP par le biais de la protection réseau dans Microsoft Defender pour Endpoint, qui utilise une cible réelle au lieu d’un proxy.
 keywords: proxy, protection réseau, proxy avant, événements réseau, audit, bloc, noms de domaine, domaine
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 86a447ba3a5dca129d1044e5df83dd2ab81cbe74
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5a5fd36d57a1892189b4a5e9c4d13ad9d0ac6923
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165105"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198204"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Examiner des événements de connexion qui se produisent d’arrière vers l’avant des proxys
 

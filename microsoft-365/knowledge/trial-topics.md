@@ -10,14 +10,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: ''
 search.appverid: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment planifier et exécuter un programme pilote d’essai pour Sujets Microsoft Viva votre organisation.
-ms.openlocfilehash: 783c84e0b7d14c51269672bc49902f02bdedd0e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9e0aff8f2c4ce339af44261becc1b0ebd0a39445
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181132"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178718"
 ---
 # <a name="run-a-trial-of-microsoft-viva-topics"></a>Exécuter une version d’Sujets Microsoft Viva
 
@@ -54,7 +54,7 @@ Vous devez être un administrateur Microsoft 365 général ou un administrateur 
 
 La planification est essentielle pour une version d’essai efficace de Topics. La période d’essai est limitée et doit inclure la découverte et l’exploration de la qualité, de la gestion et des expériences des utilisateurs finux.
 
-#### <a name="discovery"></a>Discovery
+#### <a name="discovery"></a>Découverte
 
 Il existe deux options de stratégie de haut niveau pour la configuration de la découverte de sujets au cours d’une version d’essai :
 
@@ -99,7 +99,7 @@ Vous aurez toujours besoin d’une combinaison de rubriques définies par l’IA
 
 Lorsque vous lancez une version d’essai, vous devez :
 
-- Attribuez des licences aux utilisateurs concernés.
+- Attribuer des licences aux utilisateurs concernés.
 - Effectuez [une configuration](set-up-topic-experiences.md) supplémentaire de Rubriques.
 
 Lorsque la version d’évaluation est activée, le processus de découverte de sujet commence.
@@ -133,7 +133,7 @@ Si vous n’achetez pas de licences à la suite de la version d’essai :
 - Les utilisateurs ne voient plus les points forts ou les cartes des rubriques.
 - Le centre de rubriques ne sera pas supprimé, mais les rubriques suggérées et les expériences de gestion des rubriques ne seront pas disponibles.
 - Toutes les rubriques définies par l’IA seront perdues.
-- Les rubriques qui ont été modifiées par un collaborateur de rubrique resteront dans la bibliothèque de pages du centre de rubriques. Seul le contenu fourni manuellement reste sur ces pages, pas sur tout contenu suggéré par l’IA.
+- Les rubriques qui ont été modifiées par un collaborateur de rubrique resteront dans la bibliothèque de pages du centre de rubriques. Seul le contenu fourni manuellement reste sur ces pages, pas sur le contenu suggéré par l’IA.
 
 ## <a name="see-also"></a>Voir aussi
 

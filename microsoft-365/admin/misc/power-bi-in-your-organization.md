@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Découvrez comment Power BI et comment les utilisateurs de votre organisation peuvent utiliser ce service d’analyse métier.
-ms.openlocfilehash: 5301d3cd6b10101543741637014455aa2b2a207a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4b9a8df06cbb486afa878054c24d820bcb2af2e1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178795"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190112"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI dans votre organisation
 
@@ -48,7 +48,7 @@ Par ailleurs, il est possible que les utilisateurs dans votre organisation puiss
 
 Trois scénarios peuvent s'appliquer aux utilisateurs de votre organisation :
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scénario 1 : votre organisation dispose déjà d’un environnement Microsoft 365 existant et l’utilisateur qui s’Power BI possède déjà un compte Microsoft 365 client.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scénario 1 : votre organisation dispose déjà d’un environnement Microsoft 365 existant et l’utilisateur qui s’Power BI a déjà un compte Microsoft 365 client.
 
 Dans ce scénario, si un utilisateur possède déjà un compte professionnel ou scolaire dans le client (par exemple, contoso.com) mais n'a pas encore Power BI, Microsoft activera simplement l'offre pour ce compte et l'utilisateur sera automatiquement informé en relation avec l'utilisation du service Power BI.
   
@@ -101,7 +101,7 @@ Si un client a été créé par Microsoft, vous pouvez le revendiquer et le gér
 
 4. Sélectionnez l’icône du lanceur d’applications située en haut à gauche et choisissez **Administrateur**.
 
-    ![Lanceur d’applications avec l’application Admin mise en surbrillen.](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![Lanceur d’applications avec l’application Admin en surbrillant.](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Lisez les instructions de la page Devenir **l’administrateur,** puis sélectionnez **Oui, je veux être l’administrateur.**
 
@@ -124,7 +124,7 @@ Si vous voulez regrouper tous les utilisateurs dans un seul client quelle que so
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>Comment empêcher les utilisateurs de rejoindre mon client existant ?
 
-En tant qu’administrateur, vous pouvez prendre des mesures pour empêcher les utilisateurs de rejoindre votre client existant. Si vous bloquez l’accès des utilisateurs au client, les tentatives des utilisateurs de se connecter échouent et ils sont dirigés vers l’administrateur de leur organisation. Vous n’avez pas besoin de répéter ce processus si vous avez déjà désactivé la distribution automatique des licences (par exemple, Office 365 Éducation pour les étudiants, les enseignants et le personnel).
+En tant qu’administrateur, vous pouvez prendre des mesures pour empêcher les utilisateurs de rejoindre votre client existant. Si vous bloquez l’accès des utilisateurs au client, les tentatives de se connectant des utilisateurs échouent et ils sont dirigés vers l’administrateur de leur organisation. Vous n’avez pas besoin de répéter ce processus si vous avez déjà désactivé la distribution automatique des licences (par exemple, Office 365 Éducation pour les étudiants, les enseignants et le personnel).
   
 Cette procédure requiert l'utilisation de Windows PowerShell. Pour prendre en main Windows PowerShell, voir le [guide de prise en main de PowerShell](/powershell/scripting/overview).
   
@@ -196,7 +196,7 @@ Si un utilisateur s’est inscrit à Power BI, mais que vous ne souhaitez plus q
 
 Les utilisateurs qui ont rejoint votre client dans le cadre de ce programme se voient attribuer une licence unique, que vous pouvez filtrer dans votre volet d'utilisateur actif dans le tableau de bord d'administration.
   
-Pour créer cette vue, dans le Centre d’administration, suivez les étapes pour créer [un affichage utilisateur personnalisé.](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view) Sous **Licence de produit attribuée,** **sélectionnez Microsoft Power BI**. Une fois la nouvelle vue créée, vous pourrez voir tous les utilisateurs de votre client qui ont inscrit ce programme.
+Pour créer cette vue, dans le Centre d’administration, suivez les étapes de la procédure de création [d’un affichage utilisateur personnalisé.](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view) Sous **Licence de produit attribuée,** **sélectionnez Microsoft Power BI**. Une fois la nouvelle vue créée, vous pourrez voir tous les utilisateurs de votre client inscrits à ce programme.
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>Quels sont les éventuels autres aspects auxquels je dois être préparé ?
 

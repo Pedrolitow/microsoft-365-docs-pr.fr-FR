@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Découvrez comment protéger vos informations sensibles à l’aide Microsoft 365 stratégies et outils de protection contre la perte de données et faire une visite guidée du cycle de vie DLP.
-ms.openlocfilehash: b1a310a5ea9eea37930dbbc7ea84a8a48577af7e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 690791369f40c4c73e837ce872428978632881f3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183560"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197640"
 ---
 # <a name="learn-about-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données
 
@@ -38,13 +38,13 @@ Microsoft 365 détecte les éléments sensibles à l’aide d’une analyse appr
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>La DLP fait partie de l’offre plus Microsoft 365 conformité
 
-Microsoft 365 DLP n’est qu’un des outils de conformité Microsoft 365 que vous utiliserez pour protéger vos éléments sensibles où qu’ils habitent ou se déplacent. Vous devez comprendre les autres outils de l’ensemble Microsoft 365 conformité, la façon dont ils s’interaraient et fonctionnent mieux ensemble.  Consultez la [Microsoft 365 conformité pour](protect-information.md) en savoir plus sur le processus de protection des informations.
+Microsoft 365 DLP n’est qu’un des outils de conformité Microsoft 365 que vous utiliserez pour protéger vos éléments sensibles où qu’ils habitent ou se déplacent. Vous devez comprendre les autres outils de l’ensemble Microsoft 365 conformité, la façon dont ils s’interaraient et fonctionnent mieux ensemble.  Consultez les [Microsoft 365 conformité pour](protect-information.md) en savoir plus sur le processus de protection des informations.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Actions de protection des stratégies DLP
 
 Microsoft 365 Les stratégies DLP sont la manière dont vous surveillez les activités que les utilisateurs prennent sur les éléments sensibles au repos, les éléments sensibles en transit ou les éléments sensibles en cours d’utilisation et vous prenez des mesures de protection. Par exemple, lorsqu’un utilisateur tente d’agir de la sorte, par exemple en copiant un élément sensible vers un emplacement non approbé ou en partageant des informations médicales dans un e-mail ou d’autres conditions prévues dans une stratégie, la DLP peut :
 
-- afficher un conseil de stratégie de fenêtre pop-up à l’utilisateur l’avertissant qu’il essaie peut-être de partager un élément sensible de manière inappropriée
+- afficher un conseil de stratégie de fenêtre pop-up à l’utilisateur l’avertissant qu’il essaie peut-être de partager un élément sensible de manière inappropriée ;
 - bloquer le partage et, via un conseil de stratégie, permettre à l’utilisateur de remplacer le bloc et de capturer la justification des utilisateurs ;
 - bloquer le partage sans l’option de remplacement
 - pour les données au repos, les éléments sensibles peuvent être verrouillés et déplacés vers un emplacement de mise en quarantaine sécurisé
@@ -77,7 +77,7 @@ Les stratégies DLP peuvent bloquer les activités interdites, telles que le par
 
 **Planification de la culture organisationnelle pour la DLP**
 
-Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement des conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
+Une implémentation réussie de la protection contre la perte de données dépend autant de la formation et de l’familiarisation de vos utilisateurs aux pratiques de protection contre la perte de données que de la mise en place de stratégies bien planifiées et bien mises au point. Étant donné que vos utilisateurs sont très impliqués, n’oubliez pas de planifier leur formation. Vous pouvez utiliser stratégiquement les conseils de stratégie pour sensibiliser vos utilisateurs avant de modifier l’application de la stratégie du mode test à des modes plus restrictifs.
 
 <!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
 
@@ -90,7 +90,7 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 - Comptes OneDrive
 - conversation et messages de canal Teams
 - Microsoft Cloud App Security
-- Appareils Windows 10
+- Appareils Windows 10
 - Référentiels locaux
 
 Chacune d’elles a des conditions préalables différentes. Les éléments sensibles dans certains emplacements, tels que Exchange en ligne, peuvent être placés sous le cadre de la DLP en configurant simplement une stratégie qui s’applique à eux. D’autres, telles que les référentiels de fichiers locaux, nécessitent un déploiement du scanneur Azure Information Protection (AIP). Vous devez préparer votre environnement, les stratégies de brouillon de code et les tester minutieusement avant d’activer les actions de blocage.
@@ -132,7 +132,7 @@ Vous avez la flexibilité nécessaire pour créer et configurer vos stratégies 
 1. **Choisissez ce que vous souhaitez** surveiller : Microsoft 365 est livré avec de nombreux modèles de stratégie prédéfincis pour vous aider à commencer ou vous pouvez créer une stratégie personnalisée.
     - Modèle de stratégie prédéféré : données financières, données médicales et médicales, données de confidentialité pour différents pays et régions.
     - Une stratégie personnalisée qui utilise les types d’informations sensibles disponibles, les étiquettes de rétention et les étiquettes de confidentialité.
-2. **Choisissez l’emplacement à surveiller :** sélectionnez un ou plusieurs emplacements que DLP doit surveiller pour les informations sensibles. Vous pouvez surveiller :
+2. **Choisissez l’emplacement à surveiller :** sélectionnez un ou plusieurs emplacements que la DLP doit surveiller pour les informations sensibles. Vous pouvez surveiller :
 
 emplacement | Inclure/exclure par|
 |---------|---------|

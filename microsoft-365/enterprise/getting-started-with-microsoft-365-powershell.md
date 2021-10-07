@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Résumé : Comprenez la valeur de PowerShell pour Microsoft 365, comment vous connecter à votre client Microsoft 365 et où obtenir de l’aide.'
-ms.openlocfilehash: 3f9bb352a198ba5491063ee4475611a49d21c31b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c0d2020235c1f00797a28bab3e30dca7c8a2198
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205611"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198468"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Prise en main de PowerShell pour Microsoft 365
 

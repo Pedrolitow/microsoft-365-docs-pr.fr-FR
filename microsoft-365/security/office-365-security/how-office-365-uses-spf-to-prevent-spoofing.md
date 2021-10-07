@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 12/15/2016
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment Microsoft 365 utilise l’enregistrement TXT SPF (Sender Policy Framework) dans DNS pour s’assurer que les systèmes de messagerie de destination font confiance aux messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 972f283f6138bafcebd877a19f0bfc429e0eed03
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad620c1c1c08cbe92e6ad6b98c6554c4c5cd93b1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204407"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190328"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Comment Microsoft 365 utilise SPF (Sender Policy Framework) pour éviter l’usurpation
 
@@ -45,7 +45,7 @@ Un enregistrement TXT SPF est un enregistrement DNS qui permet d'éviter l' usur
 Les administrateurs de domaine publient des informations SPF dans les enregistrements TXT au sein du système DNS. Les informations SPF identifient les serveurs de messagerie sortants autorisés. Les systèmes de messagerie électronique de destination vérifient que les messages proviennent de serveurs de messagerie sortants autorisés. Si vous êtes déjà familiarisé avec SPF, ou si vous avez un déploiement simple et que vous avez simplement besoin de savoir ce qu’il faut inclure dans votre enregistrement TXT SPF dans DNS pour Microsoft 365, vous pouvez passer à Configurer [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)dans Microsoft 365 pour éviter l’usurpation. Si vous n’avez pas de déploiement entièrement hébergé dans Microsoft 365, ou si vous souhaitez plus d’informations sur le fonctionnement de SPF ou sur la résolution des problèmes de SPF pour Microsoft 365, continuez à lire.
 
 > [!NOTE]
-> Auparavant, vous deviez ajouter un autre enregistrement TXT SPF à votre domaine personnalisé si vous utilisiez également SharePoint Online. Cela n'est plus nécessaire. Ce changement doit réduire le risque que les messages de notification SharePoint Online terminent dans le dossier Courrier indésirable. Vous n’avez pas besoin d’apporter des modifications immédiatement, mais si vous recevez l’erreur « Trop de recherche », modifiez votre enregistrement TXT SPF comme décrit dans Configurer [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)dans Microsoft 365 pour éviter l’usurpation.
+> Auparavant, vous deviez ajouter un autre enregistrement TXT SPF à votre domaine personnalisé si vous utilisiez également SharePoint Online. Cela n'est plus nécessaire. Ce changement doit réduire le risque que les messages de notification SharePoint Online terminent dans le dossier Courrier indésirable. Vous n’avez pas besoin d’apporter de modifications immédiatement, mais si vous recevez l’erreur « Trop de recherche », modifiez votre enregistrement TXT SPF comme décrit dans Configurer [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)dans Microsoft 365 pour éviter l’usurpation.
 
 ## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365"></a>Fonctionnement de SPF pour empêcher l’usurpation et le hameçonnage dans Microsoft 365
 <a name="HowSPFWorks"> </a>
@@ -59,11 +59,11 @@ Chaque enregistrement TXT SPF contient trois parties : la déclaration indiquant
 
 Examinez la syntaxe de base pour une règle SPF :
 
-v=spf1 \<IP\>\<enforcement rule\>
+v=spf1 \<IP\> \<enforcement rule\>
 
 Par exemple, supposons que la règle SPF suivante existe pour contoso.com :
 
-v=spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\>\<enforcement rule\>
+v=spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\> \<enforcement rule\>
 
 Dans cet exemple, la règle SPF demande au serveur de messagerie de réception d'accepter uniquement les messages provenant de ces adresses IP pour le domaine contoso.com :
 
@@ -119,7 +119,7 @@ En plus des adresses IP, vous pouvez également configurer votre enregistrement 
 v=spf1 include:contoso.net include:contoso.org -all
 ```
 
-Lorsque le serveur de réception voit cet enregistrement dans DNS, il effectue également une recherche DNS sur l’enregistrement TXT SPF pour contoso.net puis pour contoso.org. S’il trouve une instruction Include supplémentaire dans les enregistrements pour contoso.net ou contoso.org, elle suivra également ces instructions. Afin d’empêcher le refus d’attaque de service, le nombre maximal de recherches DNS pour un seul message est de 10. Chaque instruction Include représente une recherche DNS supplémentaire. Si un message dépasse la limite de 10, le message échoue lors de la vérification SPF. Une fois qu’un message atteint cette limite, en fonction de la façon dont le serveur de réception est configuré, l’expéditeur peut obtenir un message qui indique que le message a généré « trop de recherches » ou que le « nombre maximal de sauts pour le message a été dépassé » (ce qui peut se produire lorsque les recherches bouclent et dépassent le délai d’attente DNS). Pour obtenir des conseils sur la façon d’éviter cela, voir Résolution des problèmes : Meilleures pratiques [pour SPF dans Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Lorsque le serveur de réception voit cet enregistrement dans DNS, il effectue également une recherche DNS sur l’enregistrement TXT SPF pour contoso.net puis pour contoso.org. S’il trouve une instruction Include supplémentaire dans les enregistrements pour contoso.net ou contoso.org, elle les suivra également. Afin d’empêcher le refus d’attaque de service, le nombre maximal de recherches DNS pour un seul message est de 10. Chaque instruction Include représente une recherche DNS supplémentaire. Si un message dépasse la limite de 10, le message échoue lors de la vérification SPF. Une fois qu’un message atteint cette limite, en fonction de la façon dont le serveur de réception est configuré, l’expéditeur peut obtenir un message qui indique que le message a généré « trop de recherches » ou que le « nombre maximal de sauts pour le message a été dépassé » (ce qui peut se produire lorsque les recherches bouclent et dépassent le délai d’attente DNS). Pour obtenir des conseils sur la façon d’éviter cela, voir Résolution des problèmes : Meilleures pratiques [pour SPF dans Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
 
 ## <a name="requirements-for-your-spf-txt-record-and-microsoft-365"></a>Conditions requises pour votre enregistrement TXT SPF et votre Microsoft 365
 <a name="SPFReqsinO365"> </a>

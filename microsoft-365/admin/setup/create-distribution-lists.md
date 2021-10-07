@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: Créez des groupes de distribution ou des listes dans le Centre d'administration Microsoft 365 de sorte que vous pouvez envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
-ms.openlocfilehash: 43453f54a9ae6c8bea90f58a2a3774b5c8cdca91
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 4eb98e0be0dcfef8d1648aabe4c9a35106814e52
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59775359"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197820"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d'administration Microsoft 365
   
@@ -58,7 +58,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 1. Sélectionnez l'icône du lanceur d'applications , puis **Administrateur**.
     
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **Groupes** \> **dans** le volet de navigation gauche, puis **sélectionnez Ajouter un groupe.** 
       
@@ -74,7 +74,7 @@ Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le web da
   
 Consultez les [problèmes de groupe de](/office365/troubleshoot/groups/distribution-list-issues) distribution pour obtenir de l’aide sur les problèmes de liste de distribution. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\
 [Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d'administration Microsoft 365 (article)\

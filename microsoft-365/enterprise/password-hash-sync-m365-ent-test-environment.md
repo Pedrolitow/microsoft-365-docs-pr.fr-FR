@@ -9,7 +9,7 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: dbf4b2ca694ee9dc81a5b02ebd0f7cf3820d0f1d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 746a0e1112df6ebf99569bfed58d08d0a4519d7a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204071"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198396"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -102,7 +102,7 @@ Tout d’abord, installez et configurez Azure AD Connecter sur APP1.
     
 6. Dans la page **Paramètres** Express, **sélectionnez Utiliser les paramètres express.**
     
-7. Dans la page Connecter azure **AD,** entrez le nom de votre compte d’administrateur général dans nom d’utilisateur, entrez son mot de passe dans  **Mot** de passe, puis sélectionnez **Suivant**.
+7. Dans la page Connecter Azure **AD,** entrez le nom de votre compte d’administrateur général dans Nom d’utilisateur, entrez son mot de passe dans  **Mot** de passe, puis sélectionnez **Suivant**.
     
 8. Dans la page **Connecter AD DS,** entrez **TESTLAB \\ User1** dans Nom d’utilisateur, entrez son mot de passe dans **Mot** de passe, puis sélectionnez **Suivant**. 
     

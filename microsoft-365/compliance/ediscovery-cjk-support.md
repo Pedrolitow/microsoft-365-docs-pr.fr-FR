@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Advanced eDiscovery en Microsoft 365 prend en charge les langues chinoise, japonaise et coréenne (JCK), qui utilisent un jeu de caractères sur deux sur deux caractères.
-ms.openlocfilehash: bcab34e8232a77cecf7d7331d75d140f73e4db37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0d6287afb373c6c1c51ea61de3906ce994590e87
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207947"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197616"
 ---
 # <a name="cjk-language-support-for-advanced-ediscovery"></a>Prise en charge linguistique DE LASK pour Advanced eDiscovery
 
@@ -49,9 +49,9 @@ Cela dépend de votre scénario de recherche.
 
 - Lorsque vous [interrogez des données dans un jeu à réviser Advanced eDiscovery,](review-set-search.md) vous pouvez rechercher plusieurs langues.
 
-- Lorsque vous [créez une recherche pour collecter des données,](create-search-to-collect-data.md)créez une recherche distincte pour chaque langue que vous ciblez. Par exemple, si vous recherchez un document qui contient à la fois le chinois et le coréen, sélectionnez Chinois pour votre première requête et sélectionnez Coréen pour votre deuxième requête.
+- Lorsque vous [créez une recherche pour collecter des données,](create-search-to-collect-data.md)créez une recherche distincte pour chaque langue que vous ciblez. Par exemple, si vous recherchez un document qui contient du chinois et du coréen, sélectionnez Chinois pour votre première requête et coréen pour votre deuxième requête.
 
-**Je ne vois pas l’icône langue-pays/région de la requête pour sélectionner une langue pour les requêtes dans un jeu à réviser. Comment puis-je spécifier une langue de requête dans une recherche de jeu à réviser ?**
+**Je ne vois pas l’icône langue-pays/région de la requête pour sélectionner une langue pour les requêtes dans un jeu à réviser. Comment puis-je spécifier un langage de requête dans une recherche de jeu à réviser ?**
 
 Pour les requêtes de jeu à réviser, il n’est pas nécessaire de spécifier une langue de document. Advanced eDiscovery détecte automatiquement les langues de document lorsque vous ajoutez du contenu à un jeu à réviser. Cela vous permet d’optimiser les résultats de votre requête dans un jeu à réviser.
 
@@ -65,7 +65,7 @@ Non, vous ne pouvez pas filtrer, trier ou rechercher par langues de document dan
 
 **Cette version DEMCS pour les scénarios d’ensemble de révision affectera-t-elle l’une de mes recherches et jeux de révision existants ?**
 
-Non, aucune de vos recherches et jeux de révision existants ne change. Vous n’avez pas besoin de réindexer des données existantes et les résultats de recherche pour le texte en anglais seront identiques.
+Non, aucune de vos recherches et jeux de révision existants ne change. Vous n’avez pas besoin de réindexer des données existantes et les résultats de recherche pour le texte en anglais seront les mêmes.
 
 **Comment modifier ma langue d’affichage en chinois, japonais ou coréen ?**
 
@@ -75,10 +75,10 @@ Pour plus d’informations sur la modification de la langue d’affichage et du 
 
 - OcR ne prend pas en charge les caractères DE LASK à partir de fichiers image
 
-- Les fichiers e-mail (tels que *.eml et *.msg) en affichage [Annotate](view-documents-in-review-set.md#annotate-view) ne sont pas pris en charge pour les langues DE LATA.
+- Les fichiers e-mail (tels que *.eml et *.msg) en affichage [Annotate](view-documents-in-review-set.md#annotate-view) ne sont pas pris en charge pour les langues DUKCO.
 
 - La mise en surbrillance des résultats de recherche [en affichage Texte](view-documents-in-review-set.md#text-view) n’est pas prise en charge pour les langues DUKS.
 
-- Le [module de pertinence utilisé](using-relevance.md) pour analyser les données ne prend pas en charge les langues DUKCO.
+- Le [module de pertinence](using-relevance.md) utilisé pour analyser les données ne prend pas en charge les langues DUKCO.
 
 - [Les prises en charge basées sur](managing-holds.md#manage-non-custodial-holds) des requêtes ne sont pas prises en charge pour les langues DUKS.

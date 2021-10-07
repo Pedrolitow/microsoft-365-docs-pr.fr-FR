@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 05/25/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5e2588361cfc416b8d7aa8b51b8e12ded8a7ceca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef91bf7b4d3cdb2e4e335215a3b4f068ccdfe645
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208764"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198108"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloter Microsoft Defender pour Office 365
 **S’applique à :**
@@ -59,7 +59,7 @@ Les groupes de distribution peuvent être créés et définis directement Exchan
 
 :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="Ajoutez des groupes dans le panneau Groupes.":::
 
-4. Pour le type de groupe, *sélectionnez Distribution* et cliquez sur Suivant.
+4. Pour le type de groupe, *sélectionnez Distribution,* puis cliquez sur Suivant.
 
 :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="Choisissez un type de groupe de distribution ici.":::
 
@@ -73,7 +73,7 @@ Certaines fonctionnalités de Defender pour Office 365 sont configurées et sont
 
 Certaines fonctionnalités ne *sont pas encore* configurées. Vous avez trois options pour configurer la protection :
 
-- **Attribuer automatiquement des stratégies** de sécurité prédéfinies : les stratégies de sécurité prédéfinies sont fournies en tant que méthode pour affecter rapidement un niveau uniforme de protection à l’ensemble des fonctionnalités. [](../office-365-security/preset-security-policies.md) Vous pouvez choisir entre **_standard_*_ ou _*_strict_**. Une bonne approche consiste à commencer par des stratégies de sécurité prédéfinies, puis à affiner les stratégies à mesure que vous en apprendrez plus sur les fonctionnalités et votre propre environnement de menaces unique. L’avantage ici est que vous protégez les groupes d’utilisateurs aussi rapidement que possible, avec la possibilité d’ajuster la protection par la suite. (Cette méthode est recommandée.)
+- **Attribuer automatiquement des stratégies** de sécurité prédéfinies : les stratégies de sécurité prédéfinies sont fournies en tant que méthode pour affecter rapidement un niveau uniforme de protection à toutes les fonctionnalités. [](../office-365-security/preset-security-policies.md) Vous pouvez choisir entre **_standard_*_ ou _*_strict_**. Une bonne approche consiste à commencer par des stratégies de sécurité prédéfinies, puis à affiner les stratégies à mesure que vous en apprendrez plus sur les fonctionnalités et votre propre environnement de menaces unique. L’avantage ici est que vous protégez les groupes d’utilisateurs aussi rapidement que possible, avec la possibilité d’ajuster la protection par la suite. (Cette méthode est recommandée.)
 - **Configurez manuellement** la protection de référence : si vous préférez  configurer l’environnement vous-même, vous pouvez rapidement obtenir une ligne de base de protection en suivant les instructions de la procédure De protection contre [les menaces.](../office-365-security/protect-against-threats.md) Cette approche vous permet d’en savoir plus sur les paramètres configurables. Et bien entendu, vous pourrez affiner les stratégies ultérieurement.
 - **Configurer des *stratégies de* protection personnalisées** : vous pouvez également créer et affecter des stratégies de protection personnalisées dans le cadre de votre évaluation. Avant de commencer à personnaliser des stratégies, il est important de comprendre la priorité dans laquelle ces stratégies de protection sont appliquées et appliquées. Les opérations de sécurité doivent créer certaines stratégies même si le prédéfin ment est appliqué, afin spécifiquement de définir des stratégies de sécurité pour les liens Coffre et Coffre pièces jointes.
 
@@ -122,7 +122,7 @@ Il est *important de* prendre en compte la priorité que prennent ces stratégie
 
 Le tableau ci-dessous fournit des références et des instructions supplémentaires pour la configuration et l’affectation de stratégies de protection personnalisées :
 
-|Politique   |Description  |Référence  |
+|Stratégie   |Description  |Référence  |
 |:---------:|---------|---------|
 |Filtrage des connexions     |    Identifiez les serveurs de messagerie source bons ou mauvais par leurs adresses IP.     |     [Configurer la stratégie de filtrage des connexions par défaut dans EOP](../office-365-security/configure-the-connection-filter-policy.md)    |
 |Logiciel anti-programme malveillant    |    Protéger les utilisateurs contre les programmes malveillants de messagerie, y compris les actions à prendre et les personnes à avertir si des programmes malveillants sont détectés.     |    [Configurer des stratégies anti-programme malveillant dans EOP](../office-365-security/configure-anti-malware-policies.md)     |
@@ -138,7 +138,7 @@ Maintenant que votre pilote est configuré et configuré, il est utile de se fam
 
 |Fonctionnalité  |Description  |Plus d’informations  |
 |---------|---------|---------|
-|Threat Explorer     | L’Explorateur de menaces est un outil puissant en temps quasi réel qui permet aux équipes des opérations de sécurité d’examiner les menaces et de répondre aux menaces et d’afficher des informations sur les programmes malveillants et le hameçonnage suspectés dans les e-mails et les fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.        | [Affichages dans l’Explorateur de menaces et détections en temps réel ](../office-365-security/threat-explorer-views.md)       | 
+|Threat Explorer     | L’Explorateur de menaces est un outil puissant en temps quasi réel qui permet aux équipes des opérations de sécurité d’examiner les menaces et de répondre aux menaces et d’afficher des informations sur les programmes malveillants et le hameçonnage suspectés dans le courrier électronique et les fichiers dans Office 365, ainsi que d’autres menaces et risques de sécurité pour votre organisation.        | [Affichages dans l’Explorateur de menaces et détections en temps réel ](../office-365-security/threat-explorer-views.md)       | 
 |Simulateur d’attaques     | Vous pouvez utiliser la formation sur la simulation d’attaques dans le portail Microsoft Defender 365 pour exécuter des scénarios d’attaque réaliste dans votre organisation, ce qui vous permet d’identifier et de trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre environnement.        |  [Simulateur d’attaques dans Microsoft Defender pour Office 365](../office-365-security/attack-simulator.md)       |
 |Tableau de bord rapports     | Dans le menu de navigation de gauche, cliquez sur Rapports et développez l’en-tête & collaboration. Les rapports de collaboration de l'& de messagerie permettent de détecter les tendances de sécurité. Certains d’entre eux vous permettront d’agir (via des boutons tels que « Go to submissions », et d’autres qui afficheront des tendances, comme le résumé de l’état du flux de messagerie, les principaux programmes malveillants, les détections d’usurpation d’adresse, les utilisateurs compromis, la latence de messagerie, les liens Coffre et les rapports de pièces jointes Coffre. Ces mesures sont générées automatiquement.  |    [Afficher les rapports](../office-365-security/view-email-security-reports.md)     |
 

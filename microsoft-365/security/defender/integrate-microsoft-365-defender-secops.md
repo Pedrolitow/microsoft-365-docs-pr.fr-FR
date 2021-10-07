@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0e1fa33358dbaa63e99e4e0645a04766ab72477b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 302317cd71921333b2fab8fd987f170bc7b69591
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208723"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197940"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Intégration de Microsoft 365 Defender dans vos opérations de sécurité
 
@@ -56,7 +56,7 @@ Si votre organisation a déjà implémenté certains aspects de Microsoft 365 De
 Ce contenu est conçu pour les raisons suivantes :
 
 - DevOps et opérations de sécurité (SecOps)
-- Équipes d’ingénierie de sécurité
+- Équipes techniques de sécurité
 - Équipes de l’équipe de l
 - ICSO et CTOS
 - Rouge, Bleu et Violet Teams

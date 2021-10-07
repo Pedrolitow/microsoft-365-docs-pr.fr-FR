@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bed6a3bfdbad66a8eb9979aea997d33a060fd134
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: c1c93f659d284124a33c12cb08109a609778073c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010256"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209068"
 ---
 # <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-defender"></a>Redirection des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 

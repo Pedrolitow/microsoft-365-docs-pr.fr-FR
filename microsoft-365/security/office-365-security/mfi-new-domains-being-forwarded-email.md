@@ -7,17 +7,17 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux domaines qui sont transmis par courrier électronique dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour déterminer si leurs utilisateurs ont transmis des messages à des domaines externes qui n’ont jamais été transmis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae1d7ce0bb62082797afc0d4a2bee77fbc24c982
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 25440898dfd29097985ddf1ffc0c17aa9c017793
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988510"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190256"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Informations sur les nouveaux domaines transmis par courrier électronique dans le Centre de sécurité & conformité
 
@@ -36,7 +36,7 @@ Cette condition peut indiquer que les comptes d’utilisateur sont compromis. Si
 
 Cette information apparaît uniquement lorsque le problème est détecté et apparaît sur la page du rapport [de forwarding.](view-mail-flow-reports.md#forwarding-report)
 
-![Informations sur les nouveaux domaines transmis par courrier électronique.](../../media/mfi-new-domains-being-forwarded.png)
+![Informations sur les nouveaux domaines qui sont transmis par courrier électronique.](../../media/mfi-new-domains-being-forwarded.png)
 
 Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trouverez plus de détails sur les messages transmis, y compris un lien vers le rapport [de forwarding.](view-mail-flow-reports.md#forwarding-report)
 
@@ -46,6 +46,6 @@ Vous pouvez également vous rendre sur cette page de  détails lorsque vous sél
 
 Pour empêcher le transmission automatique de messages à des domaines externes, configurez un domaine distant pour certains domaines externes ou tous. Pour plus d’informations, voir [Gérer les domaines distants dans Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

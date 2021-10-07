@@ -1,6 +1,6 @@
 ---
 title: Table DeviceNetworkInfo dans le schéma de recherche avancé
-description: En savoir plus sur les informations de configuration réseau dans le tableau DeviceNetworkInfo du schéma de recherche avancée
+description: En savoir plus sur les informations de configuration réseau dans la table DeviceNetworkInfo du schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, machinenetworkinfo, DeviceNetworkInfo, device, machine, mac, ip, adapter, dns, dhcp, gateway, tunnel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5b7bd42a8d9cbfd93a45d36a8236fb858eeb0436
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209248"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -34,7 +34,7 @@ ms.locfileid: "59164724"
 
 **S’applique à :**
 - Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 
 
@@ -48,16 +48,16 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `NetworkAdapterName` | string | Nom de la carte réseau |
-| `MacAddress` | chaîne | Adresse MAC de la carte réseau |
-| `NetworkAdapterType` | chaîne | Type de carte réseau. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `NetworkAdapterStatus` | chaîne | État opérationnel de la carte réseau. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.operationalstatus) |
-| `TunnelType` | chaîne | Protocole tunneling, si l’interface est utilisée à cet effet, par exemple 6to4, Teredo, ISATAP, PPTP, SSTP et SSH |
-| `ConnectedNetworks` | chaîne | Réseaux connectés à l’adaptateur. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
-| `DnsAddresses` | chaîne | Adresses de serveur DNS au format de tableau JSON |
-| `IPv4Dhcp` | chaîne | Adresse IPv4 du serveur DHCP |
-| `IPv6Dhcp` | chaîne | Adresse IPv6 du serveur DHCP |
-| `DefaultGateways` | chaîne | Adresses de passerelle par défaut au format de tableau JSON |
-| `IPAddresses` | chaîne | Tableau JSON contenant toutes les adresses IP affectées à la carte, ainsi que leur préfixe de sous-réseau et espace d’adressace IP respectifs, tels que public, privé ou liaison locale |
+| `MacAddress` | string | Adresse MAC de la carte réseau |
+| `NetworkAdapterType` | string | Type de carte réseau. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterStatus` | string | État opérationnel de la carte réseau. Pour les valeurs possibles, reportez-vous [à cette éumération](/dotnet/api/system.net.networkinformation.operationalstatus) |
+| `TunnelType` | string | Protocole tunneling, si l’interface est utilisée à cet effet, par exemple 6to4, Teredo, ISATAP, PPTP, SSTP et SSH |
+| `ConnectedNetworks` | string | Réseaux connectés à l’adaptateur. Chaque tableau JSON contient le nom du réseau, la catégorie (public, privé ou domaine), une description et un indicateur indiquant s’il est connecté publiquement à Internet |
+| `DnsAddresses` | string | Adresses de serveur DNS au format de tableau JSON |
+| `IPv4Dhcp` | string | Adresse IPv4 du serveur DHCP |
+| `IPv6Dhcp` | string | Adresse IPv6 du serveur DHCP |
+| `DefaultGateways` | string | Adresses de passerelle par défaut au format de tableau JSON |
+| `IPAddresses` | string | Tableau JSON contenant toutes les adresses IP affectées à la carte, ainsi que leur préfixe de sous-réseau et espace d’adressace IP respectifs, tels que public, privé ou liaison locale |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 
 ## <a name="related-topics"></a>Rubriques connexes

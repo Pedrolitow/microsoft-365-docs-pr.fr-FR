@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les e-mails provenant de serveurs de messagerie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6edcbbe885f8271b073afdff248106ce0d209960
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5b59e7a5ed37cb4694ae72759815b46b1248c09f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180893"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208996"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
@@ -36,15 +36,15 @@ ms.locfileid: "59180893"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres en Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier, la stratégie de filtrage des connexions par défaut) pour identifier les serveurs de messagerie source bons ou mauvais par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
+Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier, la stratégie de filtrage des connexions par défaut) pour identifier la source bonne ou mauvaise serveurs de messagerie par adresse IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
 
 - **Liste d’adresses IP** permises : ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios où le filtrage du courrier indésirable peut encore se produire sur les messages provenant de ces sources, consultez la section [Scénarios](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) dans lequel les messages provenant de sources de la liste d’adresses IP sont toujours filtrés plus loin dans cet article. Pour plus d’informations sur la façon dont la liste d’adresses IP permises doit s’intégrer dans votre stratégie globale d’expéditeurs sûrs, voir Créer des listes d’expéditeurs sûrs [dans EOP.](create-safe-sender-lists-in-office-365.md)
 
 - **Liste d’adresses IP** bloqués : bloquez tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Les messages entrants sont rejetés, ne sont pas marqués comme courrier indésirable et aucun filtrage supplémentaire ne se produit. Pour plus d’informations sur la façon dont la liste d’adresses IP bloquées doit tenir dans votre stratégie globale d’expéditeurs bloqués, voir Créer des listes d’expéditeurs bloqués [dans EOP.](create-block-sender-lists-in-office-365.md)
 
-- **Coffre :** la *liste* sécurisée est une liste d’utilisateurs dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
+- **Coffre liste :** la *liste sécurisée* est une liste d’utilisateurs autoriser dynamiques dans le centre de données Microsoft qui ne nécessite aucune configuration client. Microsoft identifie ces sources de courriers électroniques de confiance à partir d’abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste sécurisée ; vous ne pouvez pas configurer les serveurs de messagerie source dans la liste fiable. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste sécurisée.
 
-Cet article explique comment configurer la stratégie de filtrage des connexions par défaut dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez la [protection anti-courrier indésirable.](anti-spam-protection.md)
+Cet article explique comment configurer la stratégie de filtrage des connexions par défaut dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations n’Exchange Online boîtes aux lettres). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez la [protection anti-courrier indésirable.](anti-spam-protection.md)
 
 > [!NOTE]
 > La liste d’adresses IP permises, la liste d’adresses IP sécurisées et la liste d’adresses IP bloqués font partie de votre stratégie globale pour autoriser ou bloquer le courrier électronique dans votre organisation. Pour plus d’informations, voir [Créer des listes d’expéditeurs](create-safe-sender-lists-in-office-365.md) sûrs et [Créer des listes d’expéditeurs bloqués.](create-block-sender-lists-in-office-365.md)

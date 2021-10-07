@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,21 +16,21 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Gestion des menaces.
-ms.openlocfilehash: 7f8a5ef0ebea7204b0463b921946362acfed17d9
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 6eb5ed0c37295a7683b2eb16068f96f912aefb91
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59443970"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178670"
 ---
 # <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page Gestion des menaces 
 
 > [!NOTE]
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas Microsoft 365 Lighthouse, [consultez s’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et sont uniquement disponibles pour les partenaires qui répondent aux [exigences.](m365-lighthouse-requirements.md) Si votre organisation n’a pas de Microsoft 365 Lighthouse, voir [S’inscrire pour Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 **S’applique à :**
 
-- Windows 10
+- Windows 10
 
 Antivirus Microsoft Defender protège les clients, les utilisateurs et les appareils contre les menaces logicielles, notamment les virus, les programmes malveillants et les logiciels espions. Il s’agit d’une protection robuste et continue intégrée à Windows 10 et incluse avec Microsoft 365 Business Premium et Microsoft &nbsp; 365 &nbsp; E3.  
   
@@ -62,10 +62,10 @@ Le tableau suivant répertorie les différents états des menaces et leur défin
 | Actif | La menace est active sur l’appareil. |
 | Aucun état | L’état de la menace n’est pas disponible. Exécutez une analyse complète sur l’appareil pour Antivirus Microsoft Defender la menace. |
 | Échec de l’action | L’appareil n’est pas en danger. Une action a échoué, mais une menace potentielle a été arrêtée et n’est pas active sur l’appareil. Exécutez une analyse complète sur l’appareil. |
-| Étapes manuelles requises | La menace a été arrêtée, mais elle nécessite une étape manuelle, telle qu’une analyse complète ou un redémarrage de l’appareil. |
+| Étapes manuelles requises | La menace a été arrêtée, mais une étape manuelle doit être effectuée, telle qu’une analyse complète ou un redémarrage de l’appareil. |
 | Analyse complète requise | Une analyse complète de l’appareil est requise. |
 | Redémarrage requis | Un redémarrage de l’appareil est requis. |
-| Correction avec défaillances non critiques | La menace a été corrigé et aucune autre action n’est nécessaire. |
+| Correction en cas d’échecs non critiques | La menace a été corrigé et aucune autre action n’est nécessaire. |
 | Mis en quarantaine | La menace a été mise en quarantaine. Aucune autre action n’est nécessaire. |
 | Supprimé | La menace a été correctement supprimée de l’appareil. Aucune autre action n’est nécessaire. |
 | Nettoyé | Antivirus Microsoft Defender des fichiers récupérés et inextérés. Aucune autre action n’est nécessaire. |

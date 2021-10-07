@@ -9,7 +9,7 @@ ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: aa332b2778aefa84948a9bc57d20d28f117a4df3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9aa55f42ca295577bf3b1c81ee54b1160adf3d27
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204060"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198372"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -76,7 +76,7 @@ Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d�
 5. Fermez le volet **Groupes**.
 6. Dans le volet Azure Active Directory, sélectionnez **Réinitialiser** le mot de passe dans le volet de navigation gauche.
 7. Sur la page **Propriétés–Réinitialiser le mot de passe**, sous l’option **Réinitialisation du mot de passe en libre-service activée**, choisissez **Sélectionné**.
-8. Sélectionnez **Sélectionner un** groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
+8. Sélectionnez **Sélectionner** un groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
 9. Fermez l’instance privée du navigateur.
 
 Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 3.

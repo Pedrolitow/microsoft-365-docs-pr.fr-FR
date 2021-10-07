@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-overview
@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment régir les fonctionnalités associées dans Microsoft 365 groupes, Teams, SharePoint et Yammer.
-ms.openlocfilehash: fefda518d9864984d7fb8ee6f82e57ad14ff7b6e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31b97403b955cb92a7e4cf4b79bb2cd31927b73b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179083"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190232"
 ---
 # <a name="what-is-collaboration-governance"></a>Qu'est-ce que la gouvernance de collaboration ?
 
@@ -54,7 +54,7 @@ Microsoft 365 groupes incluent une suite de ressources liées que les utilisateu
 
 ![Diagramme montrant Microsoft 365 groupes et services associés.](../media/microsoft-365-groups-hub-spoke.png)
 
-|Resource|Description|
+|Ressource|Description|
 |:------|:----------|
 |[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|Pour la planification des événements liés au groupe|
 |[Boîte de réception](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Pour les conversations par e-mail entre les membres du groupe. Cette boîte de réception a une adresse e-mail et peut être définie pour accepter des messages provenant de personnes extérieures au groupe et même externes à votre organisation, à l’exemple d’une liste de distribution classique.|
@@ -62,7 +62,7 @@ Microsoft 365 groupes incluent une suite de ressources liées que les utilisateu
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Pour affecter et gérer des tâches de projet entre les membres de votre groupe|
 |[Power BI Espace de travail](/power-bi/collaborate-share/service-new-workspaces)|Un espace de collaboration de données avec des tableaux de bord et des rapports|
 |[Project et feuille de route](https://support.microsoft.com/project)|Outils de gestion de projet web|
-|[site d’équipe SharePoint ;](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Un référentiel central pour les informations, les liens et le contenu relatifs à votre groupe|
+|[site d’équipe SharePoint ;](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Référentiel central pour les informations, liens et contenus relatifs à votre groupe|
 |[Stream](https://support.microsoft.com/microsoft-stream)|Un service de diffusion en continu vidéo|
 |[Teams](https://support.microsoft.com/teams)|Un espace de travail basé sur la conversation dans Microsoft 365|
 |[Yammer groupe](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)|Un lieu commun pour avoir des conversations et partager des informations|
@@ -87,7 +87,7 @@ Il existe trois méthodes de communication principales qui sont Microsoft 365 :
   - Ajouter des onglets, des connecteurs et des bots
   - Conversation en direct, conférence audio/vidéo, réunions enregistrées
 
-- Yammer : se connecter dans l’organisation (réseau social d’entreprise) - boucle externe
+- Yammer : se connecter dans l’organisation (réseau social d’entreprise) – boucle externe
   - Communautés de pratiques : groupes fonctionnels croisés de personnes qui partagent un intérêt ou une expertise communs, mais qui ne travaillent pas nécessairement ensemble au quotidien
   - Connexion de direction, communautés d’apprentissage, communautés basées sur les rôles
 
@@ -116,13 +116,13 @@ Lorsque vous démarrez votre processus de planification de gouvernance, gardez c
 - **Incorporer des** décisions de gouvernance directement dans les Microsoft 365 solutions que vous créez : de nombreuses décisions de gouvernance peuvent être implémentées en 2013, en 2013, en 2013, en 2013.
 
 
-- **Utilisez une approche progressive :** déployer d’abord les fonctionnalités de collaboration à un petit groupe d’utilisateurs. Obtenez des commentaires de leur part, recherchez des tickets du service d’aide et mettez à jour les paramètres ou processus nécessaires avant de passer à un groupe plus important.
+- **Utilisez une approche progressive :** déployer d’abord les fonctionnalités de collaboration à un petit groupe d’utilisateurs. Obtenez des commentaires de leur part, recherchez les tickets du service d’aide et mettez à jour les paramètres ou processus nécessaires avant de passer à un groupe plus important.
 
 - **Renforcer avec la formation** : adaptez des solutions telles que [Microsoft 365](/office365/customlearning) parcours d’apprentissage pour vous assurer que les attentes propres à votre organisation sont renforcées par la formation fournie par Microsoft.
 
 - **Vous avez** une stratégie pour communiquer les stratégies de gouvernance et les instructions de votre organisation : créez un Centre d’adoption Microsoft 365 dans un site de communication SharePoint pour communiquer des stratégies et des procédures.
 
-- **Définissez** les rôles et les responsabilités : identifiez d’abord votre équipe de base de gouvernance et déterminez les décisions de gouvernance clés relatives à l’approvisionnement et à l’attribution de noms, ainsi qu’à l’accès externe, puis à prendre les décisions restantes.
+- **Définissez** les rôles et les responsabilités : identifiez votre équipe principale de gouvernance et déterminez d’abord les décisions de gouvernance clés relatives à l’approvisionnement et à l’attribution de noms et à l’accès externe, puis déterminez les décisions restantes.
 
 - **Revenir sur vos décisions à mesure que l’entreprise et les** technologies changent: rendez-vous régulièrement pour examiner les nouvelles fonctionnalités et les nouvelles attentes de l’entreprise.
 
@@ -172,25 +172,25 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 
 #### <a name="information-protection"></a>Protection des informations
 
-|Formation :|Gérer la protection et gouvernance des informations|
+|Formation :|Gérer la protection et gouvernance des informations|
 |:---|:---|
-|![Icône de formation sur la protection des informations.](../media/information-protection-governance.svg)|La quantité de données générées aujourd’hui croît plus rapidement que jamais, les employés souhaitent travailler partout et le paysage réglementaire évolue en permanence. Les solutions de Microsoft pour la protection et la gouvernance des informations aident les organisations à obtenir le bon équilibre entre la protection de leurs données et la productivité de leurs employés. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>5 h 13 min - Learning chemin d’accès - 7 modules|
+|![Icône formation sur la protection des informations.](../media/information-protection-governance.svg)|La quantité de données générées aujourd’hui croît plus rapidement que jamais, les employés souhaitent travailler partout et le paysage réglementaire évolue en permanence. Les solutions de Microsoft pour la protection et la gouvernance des informations aident les organisations à obtenir le bon équilibre entre la protection de leurs données et la productivité de leurs employés. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>5 h 13 min - Learning chemin d’accès - 7 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
-|Formation :|Protéger les informations d’entreprise avec Microsoft 365|
+|Formation :|Protéger les informations d’entreprise avec Microsoft 365|
 |:---|:---|
-|![Teams de formation.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à vous préparer à la certification Microsoft 365 certification : associé administrateur de sécurité et Microsoft 365 certifié : Enterprise certifications expertes en administration.<br><br>1 h - chemin Learning - 5 modules|
+|![Teams de formation.](../media/protect-enterprise-information-microsoft-365.svg)|Plus que jamais, la protection et la sécurisation des informations de votre organisation constituent un défi. Le chemin d’apprentissage pour protéger les informations d’entreprise avec Microsoft 365 explique comment protéger vos informations sensibles contre tout partage excessif accidentel ou utilisation incorrecte, comment découvrir et classifier des données, comment les protéger à l’aide d’étiquettes de confidentialité et comment surveiller et analyser vos informations sensibles pour les protéger contre la perte. Ce parcours d’apprentissage peut vous aider à vous préparer à la certification Microsoft 365 certification : associé administrateur de sécurité et Microsoft 365 certifié : Enterprise certifications expertes en administration.<br><br>1 h - chemin d Learning - 5 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Sécurité et conformité
 
-|Formation :|Faire preuve de connaissances fondamentales des fonctionnalités de sécurité et de conformité Microsoft 365|
+|Formation :|Faire preuve de connaissances fondamentales des fonctionnalités de sécurité et de conformité Microsoft 365|
 |:---|:---|
 |![Icône formation sur la sécurité et la conformité.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Découvrez les domaines des solutions de sécurité et de conformité Microsoft 365 et les fonctionnalités disponibles pour aider les entreprises à sécuriser leur entreprise et à respecter les obligations réglementaires. Si vous ne connaissez pas les concepts de cloud computing de base, nous vous recommandons de prendre les concepts cloud - [Principes du cloud computing.](/learn/modules/principles-cloud-computing/index)<br><br>3 h 11 min - Learning chemin d’accès - 8 modules|
 
@@ -215,7 +215,7 @@ L’architecture logique de services de productivité dans Microsoft 365, foncti
 |:-----|:-----|
 |[![Image miniature de l’Teams’architecture logique.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Mise à jour d’avril 2019   |Microsoft fournit une suite de services de productivité qui fonctionnent ensemble pour fournir une expérience de collaboration avec la gouvernance des données, la sécurité et la conformité. <br/> <br/>Cette série d’illustrations fournit une visibilité de l’architecture logique de services de productivité pour les architectes d’entreprise, fonctionnant avec Microsoft Teams.|
 
-### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 fonctionnalités de protection et de conformité des informations
+### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 protection et conformité des informations
 
 Microsoft 365 inclut un large éventail de fonctionnalités de protection et de conformité des informations. Avec les outils de productivité de Microsoft, ces fonctionnalités sont conçues pour aider les organisations à collaborer en temps réel tout en respectant les cadres stricts de conformité réglementaire. 
 
@@ -230,7 +230,7 @@ Cet ensemble d’illustrations utilise l’un des secteurs les plus réglementé
 
 Regardez ces sessions de conférence pour en savoir plus sur la gouvernance Microsoft 365 groupes et Teams.
 
-**Principes fondamentaux de la navigation**
+**Principes fondamentaux**
 
 Découvrez les principes de base et les nouvelles innovations des groupes Microsoft 365, notamment la gestion et la gouvernance à grande échelle, les meilleures pratiques en matière d’utilisation et d’adoption et le libre-service.
 

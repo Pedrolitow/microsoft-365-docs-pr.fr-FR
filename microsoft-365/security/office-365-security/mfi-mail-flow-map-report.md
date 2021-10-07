@@ -1,5 +1,5 @@
 ---
-title: Carte du flux de courriers
+title: Carte du flux de messagerie
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le plan de flux de messagerie dans le tableau de bord du flux de messagerie dans le Centre de sécurité & conformité pour visualiser et suivre la façon dont les messages circulent vers et depuis leur organisation via des connecteurs et sans utiliser de connecteurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 45182b6da5a20780673f5e84aeffaa9c3e6a6fe5
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 03a8b6199adec6df5471f7537bc28809142c6550
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988582"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197892"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Carte de flux de messagerie dans le Centre de sécurité & conformité
 
@@ -34,15 +34,15 @@ Le plan de [](mail-flow-insights-v2.md) flux de **messagerie** dans le tableau d
 
 ![Widget de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité.](../../media/mfi-mail-flow-map-widget.png)
 
-Par défaut, le widget affiche le modèle de flux de messagerie du jour précédent dans un graphique appelé *diagramme Sankey.* Vous pouvez utiliser la flèche ![ gauche.](../../media/scc-left-arrow.png) et flèche droite ![ droite pour afficher les informations de différents ](../../media/scc-right-arrow.png) jours. Chaque couleur représente le flux de messagerie sur un connecteur entrant ou sortant différent (ou sans utiliser de connecteurs). Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
+Par défaut, le widget affiche le modèle de flux de messagerie du jour précédent dans un graphique appelé *diagramme Sankey.* Vous pouvez utiliser la flèche ![ gauche.](../../media/scc-left-arrow.png) flèche droite pour afficher les ![ ](../../media/scc-right-arrow.png) informations de différents jours. Chaque couleur représente le flux de messagerie sur un connecteur entrant ou sortant différent (ou sans utiliser de connecteurs). Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
 ## <a name="report-view-for-the-mail-flow-map"></a>Affichage de rapport pour le plan de flux de messagerie
 
-Un clic sur le widget **de carte de flux** de messagerie vous permet d’accès au rapport de carte de flux **de** messagerie.
+En cliquant sur le widget de **carte de flux** de messagerie, vous allez dans le rapport de carte de flux **de** messagerie.
 
 Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
-- **Afficher les données pour : Vue d’ensemble**: il s’agit essentiellement d’une vue plus grande du widget. Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
+- **Afficher les données pour : Vue** d’ensemble : il s’agit essentiellement d’une vue plus grande du widget. Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
   ![Vue d’ensemble dans le rapport de carte de flux de messagerie.](../../media/mfi-mail-flow-map-report-overview.png)
 
@@ -50,7 +50,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
   ![Affichage détaillé dans le rapport de carte de flux de messagerie.](../../media/mfi-mail-flow-map-report-detail.png)
 
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
+Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Télécharger la demande.**
 
@@ -66,7 +66,7 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 - **Domaine de l’expéditeur/du destinataire**
 - **Nombre de messages**
 
-Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
+Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
 
 Si vous sélectionnez une ligne, des détails similaires sont affichés dans un volant :
 

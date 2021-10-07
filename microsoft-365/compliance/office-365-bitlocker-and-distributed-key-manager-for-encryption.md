@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Découvrez comment Office 365 chiffrement BitLocker, réduisant ainsi le risque de vol de données en raison de la perte ou du vol d’ordinateurs et de disques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc329a053544ba6cf1753ae07caac642546cad11
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 343a5966dc24954e98d7d31977aacbc09daaba11
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206140"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197568"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker et Distributed Key Manager (DKM) pour le chiffrement
 
@@ -46,6 +46,6 @@ BitLocker prend en charge les clés qui se trouvent dans deux catégories de ges
 
 - Les clés gérées par BitLocker, qui sont généralement éphémères et liées à la durée de vie d’une instance de système d’exploitation installée sur un serveur ou sur un disque donné. Ces clés sont supprimées et réinitialisées pendant la réinstallation du serveur ou la mise en forme du disque.
 
-- Clés de récupération BitLocker, qui sont gérées en dehors de BitLocker, mais utilisées pour le déchiffrement du disque. BitLocker utilise les clés de récupération pour le scénario dans lequel un système d’exploitation est réinstallé et les disques de données chiffrés existent déjà. Les clés de récupération sont également utilisées par les sondes de surveillance de la disponibilité gérée dans Exchange Online où un répondeur peut avoir besoin de déverrouiller un disque.
+- Les clés de récupération BitLocker, qui sont gérées en dehors de BitLocker mais utilisées pour le déchiffrement du disque. BitLocker utilise les clés de récupération pour le scénario dans lequel un système d’exploitation est réinstallé et les disques de données chiffrés existent déjà. Les clés de récupération sont également utilisées par les sondes de surveillance de la disponibilité gérée dans Exchange Online où un répondeur peut avoir besoin de déverrouiller un disque.
 
 Les volumes protégés par BitLocker sont chiffrés avec une clé de chiffrement de volume complète, qui est à son tour chiffrée avec une clé principale de volume. BitLocker utilise des algorithmes conformes FIPS pour s’assurer que les clés de chiffrement ne sont jamais stockées ou envoyées sur le réseau en clair. L’implémentation Microsoft 365 de la protection des données client au repos ne diffère pas de l’implémentation par défaut de BitLocker.

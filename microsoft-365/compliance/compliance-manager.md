@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft permet aux organisations de simplifier et d’automatiser les évaluations des risques, et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: e0e8d4595f883f33dc7714cd41c8cb49002321a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0b506e184c3ab6e387ac02a203fca0f58bd3f877
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181360"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197664"
 ---
 # <a name="microsoft-compliance-manager"></a>Gestionnaire de conformité Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "59181360"
 
 ## <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire de vos risques de protection des données à la gestion des complexités de l’implémentation des contrôles, à la mise à jour des réglementations et des certifications et à la gestion des rapports aux auditeurs.
+[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire des risques de protection de vos données à la gestion des complexités de l’implémentation de contrôles, la mise à jour des réglementations et des certifications et la création de rapports aux auditeurs.
 
 Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conformité peut simplifier la gestion de la conformité par votre organisation :
 <br>
@@ -125,7 +125,7 @@ Les actions d’amélioration permettent de centraliser vos activités de confor
 
 Le Gestionnaire de conformité est disponible dans les langues suivantes :
 
-- Français
+- Anglais
 - Bahasa indonésien
 - Bahasa Malais
 - Chinois (simplifié)
@@ -136,8 +136,8 @@ Le Gestionnaire de conformité est disponible dans les langues suivantes :
 - Finnois
 - Français
 - Allemand
-- Hebrew
-- Hungarian
+- Hébreu
+- Hongrois
 - Italien
 - Japonais
 - Coréen

@@ -6,14 +6,14 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Vue d’ensemble du Scheduler pour Microsoft 365.
-ms.openlocfilehash: 0b87555075bd9ac147579156897f545fbfe33020
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75e6cc4e44dd15ce7c023d96861598ce8167c650
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207515"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178514"
 ---
 # <a name="welcome-to-scheduler-for-microsoft-365"></a>Bienvenue dans scheduler pour Microsoft 365
 
@@ -26,24 +26,24 @@ Scheduler :
 - Communique avec l’organisateur de la réunion et les participants par courrier électronique en langage naturel.
 - Trouve un moment où se réunir lorsque tout le monde est disponible.
 - Coordonnées entre participants externes en fonction de la disponibilité de l’organisateur.
-- Informe l’organisateur de la réunion de la progression de la planification et demande des conseils à l’organisateur si nécessaire.
-- Négocie les heures de la rencontre dans deux fuseaux horaires différents.
+- Informe l’organisateur de la réunion de la progression de la planification et lui demande des conseils si nécessaire.
+- Négocie les heures de la rencontre sur deux fuseaux horaires différents.
 - Envoie l’invitation à la réunion à partir de l’organisateur.
 - Ajoute un lien Teams à chaque réunion.
 - Reprogramme ou annule les réunions réservées par Cortana.
 - Fonctionne à partir de n’importe quel appareil ayant accès à la messagerie électronique.
 
-## <a name="who-can-benefit-from-scheduler-for-microsoft-365"></a>Qui pouvez-vous bénéficier de Scheduler pour Microsoft 365 ?
+## <a name="who-can-benefit-from-scheduler-for-microsoft-365"></a>Qui pouvez-vous utiliser Scheduler pour Microsoft 365 ?
 
 Le programmeur s’occupe des tâches fastidieuses de planification des réunions afin que les utilisateurs se concentrent sur des choses plus importantes. 
 
 Si vous organisez régulièrement de petites réunions avec moins de cinq participants, vous gagnerez du temps avec le Scheduler.  Les services tels que le recrutement, les ventes, l’approvisionnement et le service juridique peuvent tirer parti de la délégation de la coordination des réunions au Programmeur.
 
-## <a name="how-does-scheduler-for-microsoft-365-work"></a>Comment fonctionne Scheduler for Microsoft 365 ?
+## <a name="how-does-scheduler-for-microsoft-365-work"></a>Comment fonctionne le Programmeur Microsoft 365'équipe ?
 
 Le programme de planification utilise une combinaison d’intelligence artificielle et d’intelligence humaine pour effectuer des demandes de planification reçues par Cortana (Cortana@yourdomain.com).  
 
-Pour utiliser scheduler, ajoutez l’adresse de messagerie Cortana à un e-mail avec les personnes que vous souhaitez rencontrer et demandez à Cortana de réserver une réunion en langage naturel. 
+Pour utiliser le Scheduler, ajoutez l’adresse de messagerie Cortana à un e-mail avec les personnes que vous souhaitez rencontrer et demandez à Cortana de réserver une réunion en langage naturel. 
 
 Dans votre demande, indiquez Cortana combien de temps et quand vous souhaitez vous réunir. Par exemple, **« Cortana, recherchez 45 minutes** pour nous réunir la semaine prochaine. »
 

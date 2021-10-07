@@ -4,17 +4,17 @@ description: Cet article répertorie les technologies et applications utilisées
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: dd8293f05a5b88bbd17a3b6760c9a535737fd439
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d149a9d6cf983bbf5be7e251ddb2c182b6d0a34b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205084"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198312"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies associées de Bureau géré Microsoft
 
@@ -31,11 +31,11 @@ Cet article récapitule les composants inclus dans les licences Enterprise requi
 
 | Produit |Informations |
 --- |--- 
-Applications Microsoft 365 pour les grandes entreprises (64 bits) | Ces Office applications seront livrées avec l’appareil : Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise, OneNote.<br><br>Les versions complètes 64 bits Microsoft Project et Microsoft Visio ne sont pas incluses. Toutefois, étant donné que l’installation de ces applications dépend de l’installation de Applications Microsoft 365 pour les grandes entreprises, Microsoft Manged Desktop a créé des déploiements Microsoft Intune par défaut et des groupes de sécurité que vous pouvez ensuite utiliser pour déployer ces applications pour les utilisateurs sous licence. Pour plus d’informations, [voir Install Microsoft Project ou Microsoft Visio sur Microsoft Manged Desktop appareils.](../get-started/project-visio.md)
-OneDrive |Azure Active Directory L' signer unique est activée pour les utilisateurs lorsqu’ils se connectent pour la première fois à OneDrive.<br><br>La redirection de dossiers connue pour les dossiers « Bureau », « Document » et « Images » est incluse ; activées et configurées par Microsoft Manged Desktop.
+Applications Microsoft 365 pour les grandes entreprises (64 bits) | Ces Office applications seront livrées avec l’appareil : Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Entreprise, OneNote.<br><br>Les versions complètes 64 bits Microsoft Project et Microsoft Visio ne sont pas incluses. Toutefois, étant donné que l’installation de ces applications dépend de l’installation Applications Microsoft 365 pour les grandes entreprises, Microsoft Manged Desktop a créé des déploiements Microsoft Intune par défaut et des groupes de sécurité que vous pouvez ensuite utiliser pour déployer ces applications aux utilisateurs titulaires d’une licence. Pour plus d’informations, [voir Install Microsoft Project ou Microsoft Visio sur Microsoft Manged Desktop appareils.](../get-started/project-visio.md)
+OneDrive |Azure Active Directory L' sign on unique est activée pour les utilisateurs lorsqu’ils se connectent pour la première fois à OneDrive.<br><br>La redirection de dossiers connue pour les dossiers « Bureau », « Document » et « Images » est incluse ; activées et configurées par Microsoft Manged Desktop.
 Store Apps | Microsoft Sway et Power BI ne sont pas livrés avec l’appareil. Ces applications sont disponibles en téléchargement à partir Microsoft Store.
-Win32 Applications | Teams n’est pas fourni avec l’appareil, mais est empaqueté et fourni par Microsoft pour Microsoft Manged Desktop appareils. Le client Azure Information Protection n’est pas livré avec l’appareil, mais vous pouvez le faire empaqueté pour le déploiement.
-Applications Web | Yammer, Office dans un navigateur, Delve, Flow, StaffHub, Power Apps et planner ne sont pas livrés avec l’appareil. Les utilisateurs peuvent accéder à la version web de ces applications avec un navigateur.
+Win32 Applications | Teams n’est pas fourni avec l’appareil, mais il est empaqueté et fourni par Microsoft pour Microsoft Manged Desktop appareils. Le client Azure Information Protection n’est pas livré avec l’appareil, mais vous pouvez le faire empaqueté pour le déploiement.
+Applications Web | Yammer, Office dans un navigateur, Delve, Flow, StaffHub, Power Apps et Planner ne sont pas livrés avec l’appareil. Les utilisateurs peuvent accéder à la version web de ces applications avec un navigateur.
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Entreprise E5 ou E3 avec Microsoft Defender pour le point de terminaison
 
@@ -55,7 +55,7 @@ Chiffrement de lecteur BitLocker | Le chiffrement de lecteur BitLocker est utili
 Windows Defender System Guard | Protège l’intégrité du système au démarrage et confirme que l’intégrité du système a réellement été conservée. Pour plus d’informations, [voir Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
 Windows Defender Credential Guard | Windows Defender Credential Guard utilise la sécurité basée sur la virtualisation pour isoler les secrets afin que seuls les logiciels système privilégiés y accèdent. Pour plus d’informations, [voir Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
 Microsoft Defender pour le point de terminaison - Détection et réponse des points de terminaison | Microsoft Manged Desktop Les opérations de sécurité répondent aux alertes et prennent des mesures pour corriger les menaces à l’aide de la détection et de la réponse des points de terminaison. Pour plus d’informations, [voir Microsoft Defender pour point de terminaison - Détection et réponse des points de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
-Microsoft Defender pour le point de terminaison - Experts en menaces | Microsoft Manged Desktop s’intègre aux informations et données des experts en menaces par le biais de notifications d’attaque ciblées. Vous devez fournir un consentement supplémentaire avant d’activer ce service. Pour plus d’informations, [voir Microsoft Defender for Endpoint - Threat Experts](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
+Microsoft Defender pour le point de terminaison - Experts en menaces | Microsoft Manged Desktop s’intègre aux informations et aux données des experts en menaces par le biais de notifications d’attaque ciblées. Vous devez fournir un consentement supplémentaire avant d’activer ce service. Pour plus d’informations, [voir Microsoft Defender for Endpoint - Threat Experts](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 Microsoft Defender pour le point de terminaison - Gestion des menaces et des vulnérabilités | Obligatoire pour une utilisation future dans le plan Microsoft Manged Desktop service. Pour plus d’informations, voir Microsoft Defender pour le point de terminaison - Gestion des [menaces et des vulnérabilités.](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
 Microsoft Defender pour le point de terminaison - Réduction de la surface d’attaque | La réduction de la surface d’attaque cible les comportements logiciels à risque qui sont souvent abusés par les attaquants. Pour plus d’informations, [voir Microsoft Defender pour le point de terminaison - Réduction de la surface d’attaque.](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 Microsoft Defender pour le point de terminaison - Exploit Protection | Protège contre les programmes malveillants qui utilisent des attaques pour infecter les appareils et se propager en appliquant automatiquement des techniques d’atténuation des attaques aux processus et applications du système d’exploitation. Pour plus d’informations, [voir Microsoft Defender for Endpoint - Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).

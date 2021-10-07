@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c30d9918e4e61973dc03e6a2e621ffda5e7e01e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 703b1df0bbe58874295e809ebe94ec748678e401
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177499"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209224"
 ---
-# <a name="update-incidents-api"></a>API mettre à jour les incidents
+# <a name="update-incidents-api"></a>API de mise à jour des incidents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -84,7 +84,7 @@ statut|Énum|Spécifie l’état actuel de l’incident. Les valeurs possibles `
 assignedTo|string|Propriétaire de l’incident.
 classification|Énum|Spécification de l’incident. Les valeurs possibles sont `Unknown`, `FalsePositive` et `TruePositive`.
 détermination|Énum|Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware` et `Other`.
-étiquettes|liste de chaînes|Liste des balises d’incident.
+étiquettes|string List|Liste des balises d’incident.
 comment|string|Commentaire à ajouter à l’incident.
 
 ## <a name="response"></a>Réponse

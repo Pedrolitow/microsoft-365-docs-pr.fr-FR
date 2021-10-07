@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: f90f38546cce24d5bef11d7fb0ab7bc88a824bca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f6aa013d20cfedcc8d61d005e21db11c58cb5f6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773218"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197807"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -37,7 +38,7 @@ Vous pouvez ajouter ou mettre à jour un thème par défaut qui s’applique à 
   
 ## <a name="add-or-update-your-organizations-theme"></a>Ajouter ou mettre à jour le thème de votre organisation
 
-1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis choisissez l’onglet Profil de \>  **l’organisation.**
+1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis sélectionnez l’onglet Profil de \>  **l’organisation.**
 
 2. Sous **l’onglet Profil de** l’organisation, sélectionnez **Thèmes personnalisés.**
 
@@ -90,7 +91,7 @@ Sélectionnez **Enregistrer** pour enregistrer vos modifications.
 
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="Capture d’écran : onglet Logos affichant les options de logo":::
 
-Vous pouvez supprimer vos logos à tout moment. Revenons simplement à la page **Logos** et sélectionnez **Supprimer.**
+Vous pouvez supprimer vos logos à tout moment. Il vous suffit de **revenir à** la page Logos et de sélectionner **Supprimer.**
   
 ## <a name="colors-choose-theme-colors"></a>Couleurs : choisir les couleurs de thème
 
@@ -103,7 +104,7 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Capture d’écran : onglet Couleurs affichant les couleurs de thème par défaut pour votre organisation":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 
@@ -124,7 +125,7 @@ Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs gro
 > [!NOTE]
 > Vous pouvez convertir des [groupes de distribution en Microsoft 365 groupes dans](../manage/upgrade-distribution-lists.md) Outlook.
 
-### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Puis-je attribuer manuellement un thème indépendant de Microsoft 365 Groupes ?  
+### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Puis-je attribuer manuellement un thème indépendamment de Microsoft 365 groupes ?  
 
 Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs Microsoft 365 groupes. Les utilisateurs membres du groupe Microsoft 365 rechercheront le thème appliqué à leur groupe. Vous pouvez [créer et ajouter de nouveaux](../create-groups/create-groups.md) membres à **** un groupe Microsoft 365 en allant aux groupes Paramètres   >  **dans** le Centre d’administration.
 
@@ -148,7 +149,7 @@ Le coefficient de contraste recommandé entre le texte, la couleur de l’icône
 
 Tout thème apparaît dans la barre de navigation supérieure pour tous les membres de l’organisation dans le cadre de l’en-tête Microsoft 365 suite.  
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Ajouter des vignettes personnalisées à la page Mes applications et](../manage/customize-the-app-launcher.md) au lanceur d’applications (article)\
+[Ajouter des vignettes personnalisées à la page Mes applications et au lanceur d’applications](../manage/customize-the-app-launcher.md) (article)\
 [Vue d’ensemble Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)

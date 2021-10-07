@@ -9,21 +9,21 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Découvrez comment commencer à utiliser le module de codage prédictif dans Advanced eDiscovery. Cet article vous explique le processus de bout en bout d’utilisation du codage prédictif pour identifier le contenu d’un jeu à réviser le plus pertinent pour votre enquête.
-ms.openlocfilehash: 0ca9e4ff8b42ced962b68fff9073e892d8ea5d4e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 38607459057ff06a2ce74364b752130467deaddd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197592"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Démarrage rapide : codage prédictif dans Advanced eDiscovery (aperçu)
 
-Cet article présente un démarrage rapide pour l’utilisation du codage prédictif dans Advanced eDiscovery. Le module de codage prédictif dans Advanced eDiscovery utilise les fonctionnalités intelligentes d’apprentissage automatique dans Advanced eDiscovery pour vous aider à réduire la quantité de contenu à réviser. Le codage prédictif vous permet de réduire et de réduire les volumes importants de contenu de cas à un ensemble pertinent d’éléments que vous pouvez hiérarchiser pour révision. Pour ce faire, vous devez créer et former vos propres modèles de codage prédictifs qui vous permettent de hiérarchiser l’examen des éléments les plus pertinents d’un jeu à réviser.
+Cet article présente un démarrage rapide pour l’utilisation du codage prédictif dans Advanced eDiscovery. Le module de codage prédictif dans Advanced eDiscovery utilise les fonctionnalités intelligentes d’apprentissage automatique dans Advanced eDiscovery pour vous aider à réduire la quantité de contenu à réviser. Le codage prédictif vous permet de réduire et de réduire les volumes importants de contenu de cas à un ensemble pertinent d’éléments que vous pouvez hiérarchiser pour révision. Pour ce faire, vous devez créer et former vos propres modèles de codage prédictifs qui vous aident à hiérarchiser l’examen des éléments les plus pertinents d’un jeu à réviser.
 
 Voici un aperçu rapide du processus de codage prédictif :
 
@@ -91,7 +91,7 @@ Après avoir effectué une série de formation en bail, vous pouvez appliquer le
 
       ![Filtre de score de prédiction dans la section Analyse & codage prédictif.](..\media\PredictionScoreFilter1.png)
 
-   La convention d’attribution de noms pour les filtres de score de prédiction est **le score de prédiction (nom du modèle).** Par exemple, le nom de filtre du score de prédiction pour un modèle nommé **Modèle A** est Le score de **prédiction (modèle A).**
+   La convention d’attribution de noms pour les filtres de score de prédiction est **le score de prédiction (nom du modèle).** Par exemple, le nom du filtre de score de prédiction pour un modèle nommé **Modèle A** est Le score de **prédiction (modèle A).**
 
 4. Sélectionnez le filtre de score de prédiction à utiliser, puis cliquez sur **Terminé.**
 
@@ -105,9 +105,9 @@ Après avoir effectué une série de formation en bail, vous pouvez appliquer le
 
 Pour obtenir des instructions plus détaillées, voir Appliquer un filtre de prédiction [à un jeu à réviser.](predictive-coding-apply-prediction-filter.md)
 
-## <a name="step-4-perform-more-training-rounds"></a>Étape 4 : Effectuer d’autres séries de formation
+## <a name="step-4-perform-more-training-rounds"></a>Étape 4 : Effectuer d’autres séries de formations
 
-Il est plus probable que vous dedessiez plusieurs séries de formation pour former le module afin de mieux prévoir les éléments pertinents et non pertinents dans l’ensemble de révision. En règle générale, vous allez entraîner le modèle suffisamment de fois jusqu’à ce qu’il soit suffisamment stabilisé pour répondre à vos besoins.
+Il est plus probable que vous de dû effectuer davantage de séries de formation pour former le module afin de mieux prévoir les éléments pertinents et non pertinents dans l’ensemble de révision. En règle générale, vous allez entraîner le modèle suffisamment de fois jusqu’à ce qu’il soit suffisamment stabilisé pour répondre à vos besoins.
 
 Pour plus d’informations, voir [Effectuer des séries de formation supplémentaires](predictive-coding-train-model.md#perform-additional-training-rounds)
 

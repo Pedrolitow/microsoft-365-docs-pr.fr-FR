@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer les autoriser dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 977cd2d099d9c5be7fc0db9ef61f31f28afdc9fe
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 411fc860ad59c214000936486d3c0456c732df19
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202770"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190316"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Ajouter des autorisations dans la liste verte/rouge du client
 
@@ -48,7 +48,7 @@ Autorisez les fichiers, les URL et les expéditeurs dans la section Soumissions 
 
 5. Activer **l’option Autoriser les messages comme celle-ci.** 
 
-6. Dans la **liste supprimée après** la liste, spécifiez la durée de fonctionnement de l’option d’option d’autoriser.
+6. Dans la **liste supprimée après** la liste, spécifiez la durée de fonctionnement de l’option d’autoriser.
 
 7. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
@@ -73,7 +73,7 @@ Autorisez les fichiers, les URL et les expéditeurs dans la section Soumissions 
    - **Type d’usurpation**: sélectionnez l’une des valeurs suivantes :
      - **Interne**: l’expéditeur usurpé se trouve dans un domaine appartenant à votre organisation [(un domaine accepté).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Externe**: l’expéditeur usurpé se trouve dans un domaine externe.
-   - **Action**: **sélectionnez Autoriser** ou **Bloquer**.
+   - **Action**: **sélectionnez Autoriser** ou **Bloquer.**
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
@@ -89,5 +89,5 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Soumissions d’administrateur](admin-submission.md)
+- [Envois par l’administrateur](admin-submission.md)
 - [Signaler les faux positifs et les faux négatifs](report-false-positives-and-false-negatives.md)

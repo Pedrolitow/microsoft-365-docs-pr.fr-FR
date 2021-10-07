@@ -1,5 +1,5 @@
 ---
-title: Purge automatique d’heure zéro dans Microsoft Defender pour Office 365
+title: Purge automatique sans heure dans Microsoft Defender pour Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 06/22/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -19,15 +19,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: La purge automatique (ZAP) de zéro heure déplace de manière identité les messages remis dans une boîte aux lettres Exchange Online vers le dossier Courrier indésirable ou la mise en quarantaine qui sont détectés comme du courrier indésirable, du hameçonnage ou qui contiennent des programmes malveillants après leur remise.
+description: La purge automatique (ZAP) d’une heure zéro déplace de manière identité les messages remis dans une boîte aux lettres Exchange Online vers le dossier Courrier indésirable ou la mise en quarantaine qui sont détectés comme du courrier indésirable, du hameçonnage ou qui contiennent des programmes malveillants après leur remise.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14d3378ccc2693a62fbc90ce393073199e603931
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: ebfe8bd2eec176b57cfa55400525c8379f9ef4c8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483110"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197856"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purge automatique de zéro heure (ZAP) dans Exchange Online
 
@@ -40,7 +40,7 @@ ms.locfileid: "59483110"
 
 ## <a name="zero-hour-auto-purge-zap-basics"></a>Principes de base de la purge automatique d’heure zéro (ZAP)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online, la purge automatique d’heure zéro (ZAP) est une fonctionnalité de protection du courrier électronique qui détecte et s’attaque de manière ident nouvelle aux messages malveillants de hameçonnage, de courrier indésirable ou de programmes malveillants qui ont déjà été remis à des boîtes aux lettres Exchange Online.
+Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online, la purge automatique d’heure zéro (ZAP) est une fonctionnalité de protection du courrier électronique qui détecte et s’attaque de manière ichchance aux messages malveillants de hameçonnage, de courrier indésirable ou de programmes malveillants qui ont déjà été remis à des boîtes aux lettres Exchange Online.
 
 ZAP ne fonctionne pas dans les environnements Exchange Online Protection autonomes (EOP) qui protègent les boîtes aux lettres Exchange en local.
 
@@ -54,13 +54,13 @@ L’action ZAP est transparente pour l’utilisateur . Ils ne sont pas avertis s
 
 ### <a name="zero-hour-auto-purge-zap-for-malware"></a>Purge automatique en heure zéro (ZAP) pour les programmes malveillants
 
-Pour **les messages lus ou non** lus qui contiennent des programmes malveillants après remise, ZAP met en quarantaine le message qui contient la pièce jointe des programmes malveillants. Par défaut, seuls les administrateurs peuvent afficher et gérer les messages de programmes malveillants mis en quarantaine. Toutefois, les administrateurs  peuvent créer et utiliser des stratégies de mise en quarantaine pour définir ce que les utilisateurs sont autorisés à faire aux messages mis en quarantaine en tant que programmes malveillants. Pour plus d’informations, voir [Stratégies de mise en quarantaine.](quarantine-policies.md)
+Pour **les messages lus ou non** lus qui contiennent des programmes malveillants après remise, ZAP met en quarantaine le message qui contient la pièce jointe des programmes malveillants. Par défaut, seuls les administrateurs peuvent afficher et gérer les messages de programmes malveillants mis en quarantaine. Toutefois, les administrateurs  peuvent créer et utiliser des stratégies de mise en quarantaine pour définir ce que les utilisateurs sont autorisés à faire aux messages mis en quarantaine en tant que programmes malveillants. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
 
 ZaP pour les programmes malveillants est activé par défaut dans les stratégies anti-programme malveillant. Pour plus d’informations, voir [Configurer des stratégies anti-programme malveillant dans EOP.](configure-anti-malware-policies.md)
 
-### <a name="zero-hour-auto-purge-zap-for-phishing"></a>Purge automatique sans heure (ZAP) pour hameçonnage
+### <a name="zero-hour-auto-purge-zap-for-phishing"></a>Purge automatique d’heure zéro (ZAP) pour hameçonnage
 
-Pour les **messages** lus ou non lus identifiés comme étant du hameçonnage après  la remise, le résultat ZAP dépend de l’action configurée pour un verdict de filtrage du courrier de hameçonnage dans la stratégie anti-courrier indésirable applicable. Les actions de verdict de filtrage disponibles pour le hameçonnage et leurs résultats ZAP possibles sont décrits dans la liste suivante :
+Pour les **messages** lus ou non lus identifiés comme étant du hameçonnage après  la remise, le résultat ZAP dépend de l’action configurée pour un verdict de filtrage du courrier de hameçonnage dans la stratégie anti-courrier indésirable applicable. Les actions de verdict de filtrage disponibles pour le hameçonnage et leurs résultats ZAP possibles sont décrites dans la liste suivante :
 
 - **Ajouter un en-tête X,** ajouter **une** ligne d’objet avec du texte, rediriger **le message** vers l’adresse e-mail, supprimer **le message**: ZAP ne prend aucune mesure sur le message.
 
@@ -116,13 +116,13 @@ Coffre expéditeurs, règles de flux de messagerie ou bloquer et autoriser les p
 
 ### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>Quelles sont les conditions de licence requises pour que la purge automatique sans heure (ZAP) fonctionne ?
 
-Les licences ne sont pas limitées. ZAP fonctionne sur toutes les boîtes aux lettres hébergées sur Exchange en ligne. ZAP ne fonctionne pas dans les environnements Exchange Online Protection autonomes (EOP) qui protègent les boîtes aux lettres Exchange en local.
+Les licences ne sont pas limitées. ZAP fonctionne sur toutes les boîtes aux lettres hébergées Exchange en ligne. ZAP ne fonctionne pas dans les environnements Exchange Online Protection autonomes (EOP) qui protègent les boîtes aux lettres Exchange en local.
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Que se passe-t-il si un message est déplacé vers un autre dossier (par exemple, règles de boîte de réception) ?
 
 La purge automatique heure zéro fonctionne toujours tant que le message n’a pas été supprimé, ou tant que la même action, ou plus forte, n’a pas encore été appliquée. Par exemple, si la stratégie anti-hameçonnage est mise en quarantaine et que le message se trouve déjà dans le courrier indésirable, ZAP prendra des mesures pour mettre le message en quarantaine.
 
-### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Comment la zap affecte-t-elle les boîtes aux lettres en attente ?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Comment zap affecte-t-elle les boîtes aux lettres en attente ?
 
 La purge automatique d’heure zéro met en quarantaine les messages des boîtes aux lettres placées en attente. ZAP peut déplacer des messages vers le dossier Courrier indésirable en fonction de l’action configurée pour un verdict de courrier indésirable ou de hameçonnage dans les stratégies anti-courrier indésirable.
 

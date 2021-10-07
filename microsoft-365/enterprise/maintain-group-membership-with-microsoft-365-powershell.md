@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -18,12 +18,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Découvrez comment utiliser PowerShell pour maintenir l’appartenance à Microsoft 365 groupes.
-ms.openlocfilehash: 0a66db0748c50d296ff9d26969ae8b3caa7f310f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3637fb7d2e68091c43e624e9b6780d032c1930bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203321"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208792"
 ---
 # <a name="maintain-security-group-membership-with-powershell"></a>Conserver l’appartenance à un groupe de sécurité avec PowerShell
 
@@ -32,7 +32,7 @@ ms.locfileid: "59203321"
 Vous pouvez utiliser PowerShell pour Microsoft 365 comme alternative à la Centre d'administration Microsoft 365 pour conserver l’appartenance à un groupe de sécurité dans Microsoft 365. 
 
 >[!Note]
->[Découvrez comment maintenir l’appartenance Microsoft 365 groupe](../admin/create-groups/add-or-remove-members-from-groups.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>[Découvrez comment maintenir l’appartenance Microsoft 365 groupe](../admin/create-groups/add-or-remove-members-from-groups.md) avec le Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](/admin)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph

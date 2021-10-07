@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: fa046aa0a488b11f172d9ac7182b67e705aad69b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3bb6ef605d360e259ef9fa91ed51da35506a2942
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208816"
 ---
 # <a name="step-6-review-your-selections-to-create-your-package"></a>Étape 6 : examinez vos sélections pour créer votre package.
 
@@ -27,7 +27,7 @@ ms.locfileid: "59164564"
 
     Un **message de validation** réussi ou de **validation** a échoué indique si vous pouvez passer aux étapes suivantes ou non.
 
-2. Examinez vos détails de test et, si vous êtes satisfait, cliquez sur le **bouton** Créer.
+2. Examinez les détails de votre test et, si vous êtes satisfait, cliquez sur le **bouton** Créer.
 
     :::image type="content" alt-text="Afficher la validation." source="Media/validation.png" lightbox="Media/validation.png":::
 
@@ -48,7 +48,7 @@ ms.locfileid: "59164564"
   
     - En cas d’échec des tests, vous devez télécharger un nouveau package. 
 
-      Vous pouvez télécharger les **journaux de test pour une** analyse plus approfondie à partir des pages de résultats des mises à jour de sécurité et des mises à jour des **fonctionnalités.** 
+      Vous pouvez télécharger les **journaux** de  test pour une analyse plus approfondie à partir des pages de résultats des mises à jour de sécurité et des mises à jour des **fonctionnalités.**
 
     - Si vous faites face à des échecs de test répétés, contactez testbasepreview@microsoft.com avec les détails de votre erreur.
 

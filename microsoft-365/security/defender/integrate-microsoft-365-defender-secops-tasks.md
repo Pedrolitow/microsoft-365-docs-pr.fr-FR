@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 229dbfd12ddca4e3a1444e2e9ca5771896ba07e0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96f7c95f645f0544b0bcd80a0cd0e3f9b595733e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204492"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197976"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>Étape 6. Identifier les tâches de maintenance SOC
 

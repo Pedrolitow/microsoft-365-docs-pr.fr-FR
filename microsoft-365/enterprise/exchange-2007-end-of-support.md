@@ -7,19 +7,19 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Découvrez vos options après Exchange Server 2007 et commencez à planifier la migration vers Microsoft 365, Office 365 ou Exchange 2016.
-ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d5e79666c0e8e9804a63c89a0095a8725f14cd35
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207612"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178778"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour Exchange 2007
 
@@ -104,7 +104,7 @@ Dans une migration à cutover, vous migrez toutes vos boîtes aux lettres, group
   
 La migration à cutover est très efficace pour les petites organisations qui n’ont pas beaucoup de boîtes aux lettres, qui souhaitent Microsoft 365 rapidement et qui ne souhaitent pas gérer certaines des complexités des autres méthodes. Toutefois, il doit s’achever dans une semaine ou moins et nécessite que les utilisateurs reconfigurent Outlook profils. La migration à cutover peut gérer jusqu’à 2 000 boîtes aux lettres, mais nous vous recommandons vivement de l’utiliser pour migrer un maximum de 150 boîtes aux lettres. Si vous essayez de migrer davantage, vous risquez de ne plus pouvoir transférer toutes les boîtes aux lettres avant l’échéance, et votre personnel de support technique risque d’être submergé par les demandes d’aide aux utilisateurs pour reconfigurer les Outlook.
   
-Si vous envisagez d’une migration àover, voici les éléments à prendre en compte :
+Si vous envisagez d’une migration à bas point, voici les éléments à prendre en compte :
   
 - Microsoft 365 vous connecter à vos serveurs Exchange 2007 à l’aide de Outlook Anywhere sur le port TCP 443.
     
@@ -132,7 +132,7 @@ Pour plus d’informations sur la migration à cutover, voir :
 
 Dans une migration par étapes, vous avez quelques centaines ou quelques milliers de boîtes aux lettres que vous souhaitez migrer vers Microsoft 365, vous devez prendre une semaine ou plus pour effectuer la migration et vous n’avez pas besoin de fonctionnalités de migration hybride avancées telles que les informations de calendrier de libre/occupé partagées.
   
-La migration par étapes est très bien pour les organisations qui ont besoin de plus de temps pour migrer leurs boîtes aux lettres vers Microsoft 365 mais qui prévoient de terminer la migration dans un délai de quelques semaines. Vous pouvez migrer des boîtes aux lettres par lots. Vous contrôlez le nombre et les boîtes aux lettres migrées à un moment donné. Vous pouvez par exemple lotr des boîtes aux lettres d’utilisateurs dans le même service pour vous assurer qu’elles sont toutes déplacées en même temps. Vous pouvez également laisser des boîtes aux lettres de direction jusqu’au dernier lot. Comme avec les migrations à cutover, vos utilisateurs devront recréer leurs profils Outlook de migration.
+La migration par étapes est très bien pour les organisations qui ont besoin de plus de temps pour migrer leurs boîtes aux lettres vers Microsoft 365 mais qui prévoient de terminer la migration dans un délai de quelques semaines. Vous pouvez migrer des boîtes aux lettres par lots. Vous contrôlez le nombre et les boîtes aux lettres migrées à un moment donné. Vous pouvez par exemple lotr des boîtes aux lettres d’utilisateurs dans le même service pour vous assurer qu’elles sont toutes déplacées en même temps. Vous pouvez également laisser les boîtes aux lettres de direction jusqu’au dernier lot. Comme avec les migrations à cutover, vos utilisateurs devront recréer leurs profils Outlook de migration.
   
 Si vous envisagez d’une migration par étapes, voici les éléments à prendre en compte :
   
@@ -160,7 +160,7 @@ Pour plus d’informations sur la migration par étapes, voir :
 
 Dans une migration hybride complète, votre organisation dispose de plusieurs centaines, jusqu’à des dizaines de milliers, de boîtes aux lettres et vous souhaitez déplacer une partie ou la totalité d’entre elles vers Microsoft 365. Étant donné que ces migrations sont généralement à plus long terme, les migrations hybrides rendent possible :
   
-- Affichez les informations de calendrier des utilisateurs locaux pour les utilisateurs dans Microsoft 365, et vice versa.
+- Affichez les informations de calendrier des utilisateurs locaux pour les utilisateurs Microsoft 365, et vice versa.
     
 - Consultez une liste d’adresses globale unifiée qui contient des destinataires à la fois en local et Microsoft 365.
     
@@ -182,7 +182,7 @@ Si vous envisagez d’une migration hybride complète, voici les éléments à p
     
 - Vous devez déployer au moins un serveur Exchange 2013 dans votre organisation Exchange 2007 pour agir en tant que « serveur hybride ». Ce serveur communiquera avec Microsoft 365 de la part de vos serveurs Exchange 2007.
     
-- Microsoft 365 vous connecter au « serveur hybride » à l’aide de Outlook Anywhere sur le port TCP 443.
+- Microsoft 365 devez se connecter au « serveur hybride » à l’aide de Outlook Anywhere sur le port TCP 443.
     
 - Vous devez configurer la synchronisation d’annuaires à l’aide de Azure Active Directory (Azure AD) Connecter entre vos serveurs Active Directory locaux et Microsoft 365.
     
@@ -228,7 +228,7 @@ Nous vous recommandons de supposer initialement que vous allez migrer vers Excha
 |Coexistence de version  <br/> | Lors de la migration vers...  <br/> **Exchange 2016** : Exchange 2016 ne peut pas être installé dans une organisation qui inclut un serveur Exchange 2007. Vous devez d’abord migrer vers Exchange 2010 ou 2013 (nous vous recommandons vivement Exchange 2013), supprimer tous les serveurs Exchange 2007, puis migrer vers Exchange 2016.  <br/> **Exchange 2010 ou Exchange 2013 :** Vous pouvez installer Exchange 2010 ou Exchange 2013 dans une organisation Exchange 2007 existante. Cela vous permet d’installer un ou Exchange serveurs 2010 ou 2013 et d’effectuer votre migration.  <br/> |
 |Matériel serveur  <br/> | La configuration matérielle requise pour le serveur Exchange 2007. Assurez-vous que votre matériel est compatible. Pour obtenir des informations détaillées, voir :  <br/> [Exchange system requirements 2016](/Exchange/plan-and-deploy/system-requirements) <br/> [Exchange system requirements 2013](/exchange/exchange-2013-system-requirements-exchange-2013-help) <br/> [Exchange system requirements 2010](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141)) <br/>  Vous verrez que les améliorations significatives des performances de Exchange et l’augmentation de la puissance informatique et de la capacité de stockage sur les serveurs plus nouveaux signifient que vous aurez probablement besoin de moins de serveurs pour prendre en charge le même nombre de boîtes aux lettres.  <br/> |
 |Version du système d'exploitation  <br/> | Les versions minimales de système d’exploitation pris en charge pour chaque version sont les :  <br/> **Exchange 2016** - Windows Server 2012  <br/> **Exchange 2013** - Windows Server 2008 R2 SP1  <br/> **Exchange 2010** - Windows Server 2008 SP2  <br/>  Pour plus d’informations sur la prise en charge du système [d’exploitation, Exchange Matrice de prise en charge.](/Exchange/plan-and-deploy/supportability-matrix)  <br/> |
-|Niveau fonctionnel de la forêt Active Directory  <br/> | Les niveaux fonctionnels minimaux de forêt Active Directory pris en charge pour chaque version sont :  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Pour plus d’informations sur la prise en charge du niveau fonctionnel de la forêt, [voir Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
+|Niveau fonctionnel de la forêt Active Directory  <br/> | Les niveaux fonctionnels minimaux de forêt Active Directory pris en charge pour chaque version sont les :  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Pour plus d’informations sur la prise en charge du niveau fonctionnel de la forêt, [voir Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
 |Office versions clientes  <br/> | Les versions minimales Office client pour chaque version sont les Office les plus récentes :  <br/> **Exchange 2016** - Office 2010 (avec les dernières mises à jour)  <br/> **Exchange 2013** - Office 2007 SP3  <br/> **Exchange 2010** - Office 2003  <br/>  Pour plus d’informations sur Office prise en charge du client, [voir Exchange Matrice de prise en charge.](/Exchange/plan-and-deploy/supportability-matrix)  <br/> |
    
 #### <a name="how-do-i-migrate"></a>Comment migrer ?
@@ -255,4 +255,4 @@ Si vous avez des problèmes lors de votre migration vers Microsoft 365 et que vo
     
 ## <a name="related-topics"></a>Rubriques connexes
 
-[Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007](upgrade-from-office-2007-servers-and-products.md)
+[Ressources pour vous aider à mettre à niveau vos serveurs et clients Office 2007](upgrade-from-office-2007-servers-and-products.md)

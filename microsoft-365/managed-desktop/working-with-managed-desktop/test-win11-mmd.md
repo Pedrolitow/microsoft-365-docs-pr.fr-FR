@@ -7,14 +7,14 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: de608fa58d0267050b510ef8308d716b608f8e37
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f138d6c53c56ce83777a65095c85fb3bdeb45128
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204852"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208696"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Prévisualiser et tester Windows 11 avec Microsoft Managed Desktop
 
@@ -22,7 +22,7 @@ ms.locfileid: "59204852"
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>Ajouter des appareils au groupe de test Windows 11
 
-Sur demande, nous allons créer le groupe d’appareils (**Modern Workplace - Windows 11 Pre-Release Test Devices**) pour tester et évaluer Windows 11. Les appareils de ce groupe obtiennent de nouvelles builds Windows 11 et Microsoft Manged Desktop configurations de base dès qu’elles sont disponibles et sont surveillés pour les problèmes de fiabilité.
+Sur demande, nous allons créer le groupe d’appareils (**Modern Workplace - Windows 11 Pre-Release Test Devices**) pour tester et évaluer Windows 11. Les appareils de ce groupe obtiennent de nouvelles builds Windows 11 et Microsoft Manged Desktop configurations de base dès qu’elles sont disponibles, et sont surveillés pour les problèmes de fiabilité.
 
 Vous pouvez choisir n’importe quel appareil existant ou nouveau pour le test Windows 11, mais vous ne devez pas inscrire d’appareils de production dans ce groupe en raison du risque élevé de défauts ou de problèmes de compatibilité dans les builds pré-publiées. Les affectations de groupe d’appareils précédentes sont supprimées lors de l’affectation à ce groupe.
 
@@ -59,4 +59,4 @@ Si vous rencontrez Windows 11 problèmes de compatibilité avec vos applications
     - Sous-catégorie : mise à Windows/mise à jour
 3. Décrivez le comportement et la façon dont il risque d’entraver votre activité dans un environnement de production.
 
-Microsoft Manged Desktop trie et gère les problèmes avec les builds pré-publiées en fonction de l’impact sur la productivité. Bien que la description de notre service ne couvre pas les problèmes avec les builds pré-publiées, nous allons nous entretenir avec les administrateurs des clients pour nous assurer que les problèmes qui bloquent la productivité des utilisateurs sont résolus avant de commencer la migration au sein d’un client donné.
+Microsoft Manged Desktop trie et gère les problèmes avec les builds pré-publiées en fonction de l’impact sur la productivité. Bien que la description de notre service ne couvre pas les problèmes de builds pré-publiées, nous allons nous entretenir avec les administrateurs des clients pour nous assurer que les problèmes qui bloquent la productivité des utilisateurs sont résolus avant de commencer la migration au sein d’un client donné.

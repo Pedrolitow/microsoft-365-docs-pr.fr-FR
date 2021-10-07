@@ -4,7 +4,7 @@ description: Examiner les utilisateurs à la recherche d’un incident dans Micr
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, surveiller, signaler, identités, données, appareils, applications, incident, analyser, réponse
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d7decb3e566f8bb0abf4a3aec12e2e3a43ae3511
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f7145d2668f6c724644bf719dfd6414550af43c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207307"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209164"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Pour obtenir un résumé rapide d’un compte d’utilisateur pour l’incident,
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple de volet récapitulatif du compte d’utilisateur pour un incident dans le portail Microsoft 365 Defender utilisateur":::
 
 > [!NOTE]
-> La page Utilisateur affiche Azure Active Directory organisation (Azure AD) ainsi que des groupes, vous aidant à comprendre les groupes et les autorisations associés à un utilisateur.
+> La page Utilisateur affiche Azure Active Directory organisation (Azure AD), ainsi que des groupes, pour vous aider à comprendre les groupes et les autorisations associés à un utilisateur.
 
 Dans cette page volante, vous pouvez passer en revue les informations sur les menaces des utilisateurs, notamment les incidents actuels, les alertes actives et le niveau de risque, ainsi que l’exposition des utilisateurs, les comptes, les appareils, etc.
 
@@ -61,7 +61,7 @@ Vous pouvez voir l’appartenance à un groupe pour l’utilisateur, en sélecti
 
 En sélectionnant l’icône sous **Responsable,** vous pouvez voir où se trouve l’utilisateur dans l’arborescence de l’organisation.
 
-La page Microsoft 365 Defender’utilisateur du portail d’entreprise combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence).
+La page Microsoft 365 Defender’utilisateur du portail d’entreprise combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence).
 
 Cette page affiche des informations spécifiques au risque de sécurité d’un compte d’utilisateur. Cela inclut un score qui permet d’évaluer les risques et les événements et alertes récents qui ont contribué au risque global de l’utilisateur.
 
@@ -91,7 +91,7 @@ En sélectionnant  l’onglet Chemins de déplacement latéral, vous pouvez affi
 
 La carte vous fournit une liste du nombre de sauts entre les ordinateurs ou les utilisateurs qu’un utilisateur malveillant doit utiliser pour compromettre un compte sensible, et si l’utilisateur dispose d’un compte sensible, vous pouvez voir le nombre de ressources et de comptes directement connectés.
 
-Si un chemin de mouvement latéral potentiel n’a pas été détecté pour l’entité au cours des deux derniers jours, le graphique ne s’affiche pas. Sélectionnez une date différente à l’aide de l’affichage d’une autre date pour afficher les graphiques des chemins de déplacement latéral précédents découverts pour cette entité. Le rapport de déplacement latéral est toujours disponible pour vous fournir des informations sur les chemins de déplacement latéral potentiels découverts et peut être personnalisé par heure.
+Si un chemin de mouvement latéral potentiel n’a pas été détecté pour l’entité au cours des deux derniers jours, le graphique ne s’affiche pas. Sélectionnez une date différente à l’aide de l’affichage d’une autre date pour afficher les graphiques des chemins de déplacement latéral précédents découverts pour cette entité. Le rapport de déplacement latéral est toujours disponible pour vous fournir des informations sur les chemins de déplacement latéral potentiels détectés et peut être personnalisé par heure.
 
 :::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Exemple de chemin de déplacement latéral pour un utilisateur dans le portail Microsoft 365 Defender gauche":::
 

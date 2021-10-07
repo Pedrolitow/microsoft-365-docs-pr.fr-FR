@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez comment développer votre présence Microsoft 365 dans plusieurs régions géographiques avec Microsoft 365 Multigéographie.
-ms.openlocfilehash: 0b421be44711172729e228083b6682ac387473e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5122979fc79ce9aebe542a80ed614e7dcad70d03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209257"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198420"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

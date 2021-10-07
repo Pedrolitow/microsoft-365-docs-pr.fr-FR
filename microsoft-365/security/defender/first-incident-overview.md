@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f13569c8995433e0d629a3ce060d6c855f78700a
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: be0d0070f094a238114dd5d483e2a8ed29e043a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477598"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198024"
 ---
 # <a name="responding-to-your-first-incident"></a>Réponse à votre premier incident
 

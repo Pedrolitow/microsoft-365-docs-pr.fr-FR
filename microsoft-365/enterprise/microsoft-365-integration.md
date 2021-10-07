@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Dans cet article, découvrez comment intégrer des Microsoft 365 à vos services d’annuaire et environnements locaux existants.
-ms.openlocfilehash: 87b456a0b44e4b38df6cec8e72713c6573917805
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 06e6ff598d064f14ffb89bcf88e78932cc621225
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205467"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198432"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365'intégration aux environnements locaux
 
@@ -66,19 +66,19 @@ Un utilisateur se connecte à son environnement local avec son compte d’utilis
 
 Pour configurer la synchronisation d’annuaires, utilisez Azure AD Connecter. Pour obtenir des instructions, voir Configurer la synchronisation d’annuaires [pour Microsoft 365](set-up-directory-synchronization.md) et [Azure AD Connecter avec des paramètres express.](/azure/active-directory/hybrid/how-to-connect-install-express)
 
-En savoir plus sur la préparation de la synchronisation [d’annuaires Microsoft 365](prepare-for-directory-synchronization.md).
+En savoir plus [sur la préparation de la synchronisation d’annuaires Microsoft 365](prepare-for-directory-synchronization.md).
 
 ### <a name="directory-synchronization-with-sso"></a>Synchronisation d’annuaires avec sso
 
 Un utilisateur se connecte à son environnement local avec son compte d’utilisateur. Lorsqu’ils se connectent à Microsoft 365, ils sont connectés automatiquement ou ils se connectent à l’aide des mêmes informations d’identification qu’ils utilisent pour leur environnement local (domaine \nom d’utilisateur).
 
-Pour configurer l' ssO, vous utilisez également Azure AD Connecter. Pour obtenir des instructions, voir [Installation personnalisée d’Azure AD Connecter](/azure/active-directory/hybrid/how-to-connect-install-custom).
+Pour configurer l' sso, vous utilisez également Azure AD Connecter. Pour obtenir des instructions, voir [Installation personnalisée d’Azure AD Connecter](/azure/active-directory/hybrid/how-to-connect-install-custom).
 
 Pour plus d’informations, [voir l' sign-on unique.](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
 
-Azure AD Connecter versions antérieures des outils d’intégration d’identité tels que DirSync et Azure AD Sync. Si vous souhaitez mettre à jour Azure Active Directory synchronisation avec Azure AD Connecter, consultez [les instructions de](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started)mise à niveau. 
+Azure AD Connecter versions antérieures des outils d’intégration d’identité tels que DirSync et Azure AD Sync. Si vous souhaitez mettre à jour Azure Active Directory synchronisation avec Azure AD Connecter, consultez les instructions de mise [à niveau.](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started) 
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -2,14 +2,13 @@
 title: Phases de déploiement
 description: Découvrez comment déployer Microsoft Defender pour endpoint en préparation, configuration et intégration de points de terminaison à ce service
 keywords: déployer, préparer, configurer, intégrer, phase, déploiement, déploiement, adoption, configuration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b5d7f7384d60a5353ce4c0363e07d3451e146598
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b7c9c4389506e59998609f7d960016abf694ebc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209137"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190532"
 ---
 # <a name="deployment-phases"></a>Phases de déploiement
 
@@ -37,7 +36,7 @@ ms.locfileid: "59209137"
 
 Découvrez comment déployer Microsoft Defender pour endpoint afin que votre entreprise puisse tirer parti de la protection préventive, de la détection post-violation, de l’examen automatisé et de la réponse.
 
-Ce guide vous aide à travailler entre les parties prenantes pour préparer votre environnement, puis intégrer les appareils d’une manière méthodique, en passant de l’évaluation à un projet pilote significatif vers un déploiement complet.
+Ce guide vous aide à travailler au sein des parties prenantes pour préparer votre environnement, puis intégrer les appareils d’une manière méthodique, en passant de l’évaluation à un projet pilote significatif vers un déploiement complet.
 
 Chaque section correspond à un article distinct de cette solution.
 
@@ -52,7 +51,7 @@ Chaque section correspond à un article distinct de cette solution.
 
 |Phase|Description|
 |---|---|
-|[Phase 1 : préparation](prepare-deployment.md)|Découvrez ce que vous devez prendre en compte lors du déploiement de Defender for Endpoint, telles que les approbations des parties prenantes, les considérations sur l’environnement, les autorisations d’accès et l’ordre d’adoption des fonctionnalités.|
+|[Phase 1 : préparation](prepare-deployment.md)|Découvrez ce que vous devez prendre en compte lors du déploiement de Defender for Endpoint, comme les approbations des parties prenantes, les considérations sur l’environnement, les autorisations d’accès et l’ordre d’adoption des fonctionnalités.|
 |[Phase 2 : configuration](production-deployment.md)|Obtenez des conseils sur les étapes initiales à suivre pour accéder au portail, telles que la validation des licences, l’exécution de l’Assistant Configuration et la configuration du réseau.|
 |[Phase 3 : intégration](onboarding.md)|Découvrez comment utiliser les anneaux de déploiement, les outils d’intégration pris en charge en fonction du type de point de terminaison et la configuration des fonctionnalités disponibles.|
 |

@@ -6,14 +6,14 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Scheduler for Microsoft 365 FAQs
-ms.openlocfilehash: 423660785e51a61cbff9fa2849b9466feddfc1c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: da00bf841c41d1bda589142a680d948796db3b45
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163825"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178538"
 ---
 # <a name="scheduler-for-microsoft-365-faqs"></a>Scheduler for Microsoft 365 FAQs
 
@@ -23,7 +23,7 @@ Le scheduler est un service indépendant des autres fonctionnalités Cortana de 
 **Question :** Cela fonctionne-t-il uniquement avec Outlook ? D’autres produits de messagerie sont-ils pris en charge ?</br>
 Tant que vous avez une licence autre que les trois conditions ci-dessus, les utilisateurs peuvent envoyer des cortana@yourdomain.com à partir de n’importe quel client de messagerie sur n’importe quel appareil.
 
-**Question :** Les contacts peuvent-ils se trouver dans une liste de contacts personnelle sur Outlook la liste d’Outlook la liste d’attente ou une autre liste d’coordonnées équivalente à la société ?</br>
+**Question :** Les contacts peuvent-ils se trouver dans une liste de contacts personnelle Outlook la liste d’Outlook la liste d’informations d’entreprise ou une autre entreprise équivalente ?</br>
 Les participants à la réunion peuvent être n’importe qui ayant une adresse de messagerie à l’intérieur ou à l’extérieur de l’entreprise. Malheureusement, scheduler ne peut pas traduire automatiquement les noms en adresses e-mail /alias en le regardant dans la liste d’adresses gal aujourd’hui.
 
 **Question :** Puis-je utiliser Scheduler avec ma version installée (sur site) de Outlook ?</br>
@@ -41,7 +41,7 @@ Le programme de planification utilise Scheduling Intelligence (IA) enrichi d’a
 Les assistants de planification sont des fournisseurs Microsoft Security and Privacy Assurance (SSPA) certifiés pour les informations personnelles et hautement confidentielles.
 
 **Question :** Que peuvent afficher les Assistants SSPA ?</br>
-Le programmeur et les assistants de la SSPA peuvent afficher les messages électroniques adressés à Cortana. Dans un échange de courriers électroniques à thread, seuls les e-mails qui incluent l’adresse de messagerie de Cortana seront traitées, et non les messages électroniques précédents dans le thread avant l’ajout Cortana'
+Le programmeur et les assistants de la SSPA peuvent afficher les messages électroniques adressés aux Cortana. Dans un échange de courriers électroniques à thread, seuls les messages électroniques qui incluent l’adresse de messagerie de Cortana seront traitées, et non les e-mails précédents dans le thread avant l’ajout Cortana'
 
 **Question :** Les données client sont-elles conservées dans la base de données du Flow ? </br>
 Le programme de planification stocke tout le contenu client dans les limites du client et conserve les données conformément aux directives du R GDPR, aux stratégies de confidentialité Microsoft 365 & de confiance et aux stratégies de messagerie du client.
@@ -49,7 +49,7 @@ Le programme de planification stocke tout le contenu client dans les limites du 
 **Question :** Comment le Scheduler traitera-t-il les données de libre/occupé des participants internes ? </br>
 L’automatisation du scheduler utilise le service *findMeetingTimes* pour identifier les heures qui sont mutuellement disponibles pour les participants et l’organisateur. Ce service alimente d’Outlook expériences telles que *les* heures suggérées dans Outlook formulaire de réunion. Les informations de participant de la période de libre/occupé ne sont pas consommées explicitement en tant que blocs de libre/occupé.
 
-**Question :** Scheduler est-il conforme au R GDPR ? </br>
+**Question :** Le programme de planification est-il conforme au R GDPR ? </br>
 Oui.
 
 **Question : Qui’accès** à la boîte aux lettres Cortana’utilisateur ? </br>

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Le marquage de documents dans un jeu à réviser permet de supprimer du contenu inutile et d’identifier le contenu pertinent dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 83d8814a1cbc35e461c5bd459390a507bd675f5d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 43b0bf42bcd94f0bc3ade169ee5b41ee33dcbc5a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209755"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190712"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Baliser des documents dans un jeu à réviser dans Advanced eDiscovery
 
@@ -110,7 +110,7 @@ Une fois la structure de balises en place, les réviseurs peuvent appliquer des 
    > [!NOTE]
    > Le fait d’inclure des éléments de conversation  ou de famille associés ne modifie pas le nombre d’éléments affichés dans la balise éléments sélectionnés ou marque tous les éléments dans les options **de liste.** En d’autres termes, le nombre d’éléments associés qui seront marqués n’est pas affiché.
 
-   - **Attribuer des balises**: cette section affiche les balises (organisées par groupes de balises) que vous pouvez appliquer aux documents. Vous ne pouvez appliquer qu’une seule balise de choix unique (identifiée par une option) par groupe de balises. Toutefois, vous pouvez appliquer plusieurs balises à choix multiples (identifiées par une case à cocher).
+   - **Attribuer des balises**: cette section affiche les balises (organisées par groupes de balises) que vous pouvez appliquer aux documents. Vous ne pouvez appliquer qu’une seule balise à choix unique (identifiée par une option) par groupe de balises. Toutefois, vous pouvez appliquer plusieurs balises à choix multiples (identifiées par une case à cocher).
 
 3. Cliquez **sur Appliquer des balises** pour appliquer les balises en fonction de vos paramètres.
 

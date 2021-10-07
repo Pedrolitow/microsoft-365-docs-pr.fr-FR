@@ -9,7 +9,7 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger les stratégies de sécurité qui se trouvent sous les paramètres dans protection standard et protection stricte dans les stratégies de sécurité prédéfines.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b732922cf0a7d9f1d44a24d3b7b6f025f3c2a27
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b537da88199f9b565833c74fb94c233459970557
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208651"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197916"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analyseur de configuration des stratégies de protection dans EOP et Microsoft Defender pour Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "59208651"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-L’analyseur de configuration dans le portail Microsoft 365 Defender fournit un emplacement central pour rechercher et corriger les stratégies de sécurité où les paramètres se trouvent en dessous des paramètres de profil de protection standard et strict dans les stratégies de sécurité prédéfines. [](preset-security-policies.md)
+L’analyseur de configuration dans le portail Microsoft 365 Defender fournit un emplacement central pour rechercher et corriger les stratégies de sécurité où les paramètres sont inférieurs aux paramètres de profil de protection standard et strict dans les stratégies de sécurité prédéfines. [](preset-security-policies.md)
 
 Les types de stratégies suivants sont analysés par l’analyseur de configuration :
 
@@ -43,7 +43,7 @@ Les types de stratégies suivants sont analysés par l’analyseur de configurat
   - [Stratégies anti-programme malveillant.](configure-anti-malware-policies.md)
   - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations ayant des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
+- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
   - Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365, qui incluent :
     - Paramètres [d’usurpation disponibles](set-up-anti-phishing-policies.md#spoof-settings) dans les stratégies anti-hameçonnage EOP.
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -86,7 +86,7 @@ Par défaut, l’analyseur de configuration s’ouvre sous **l’onglet Recomman
 
 ![Paramètres et recommandations dans l’analyseur de configuration.](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-La première section de l’onglet affiche le nombre de paramètres de chaque type de stratégie qui doivent être améliorés par rapport à Protection standard ou stricte. Les types de stratégies sont :
+La première section de l’onglet affiche le nombre de paramètres de chaque type de stratégie qui ont besoin d’être améliorés par rapport à protection standard ou stricte. Les types de stratégies sont :
 
 - **Anti-courrier indésirable**
 - **Anti-hameçonnage**
@@ -114,10 +114,10 @@ Sous **l’onglet Protection standard** ou **Protection stricte** de l’analyse
 - **Afficher la stratégie**
 - **Actualiser**:
 
-Si vous sélectionnez une ligne et cliquez sur Appliquer la **recommandation,** une boîte de dialogue de confirmation (avec la possibilité de ne plus afficher la boîte de dialogue) s’affiche. Si vous cliquez sur **OK,** les choses suivantes se produisent :
+Si vous sélectionnez une ligne et cliquez sur Appliquer **la recommandation,** une boîte de dialogue de confirmation (avec la possibilité de ne plus afficher la boîte de dialogue) s’affiche. Si vous cliquez sur **OK,** les choses suivantes se produisent :
 
 - Le paramètre est mis à jour à la valeur recommandée.
-- La **recommandation Appliquer et** la stratégie **d’affichage** disparaissent (seul le bouton **Actualiser** reste).
+- La **stratégie Appliquer la recommandation** et **Afficher** disparaît (seul le bouton **Actualiser** reste).
 - La **valeur d’état** de la ligne est **terminée.**
 
 Si vous sélectionnez  une ligne et cliquez sur Afficher la stratégie, vous êtes conduit au volant des détails de la stratégie concernée dans le portail Microsoft 365 Defender où vous pouvez mettre à jour manuellement le paramètre.
@@ -134,7 +134,7 @@ Cet onglet vous permet d’assurer le suivi des modifications apportées à vos 
 - **Stratégie**: nom de la stratégie concernée.
 - **Type**: Anti-spam, Anti-phishing, Anti-malware, Coffre Links, or Coffre Attachments.
 - **Modification de configuration**: l’ancienne valeur et la nouvelle valeur du paramètre
-- **Dérive de configuration**: valeur **Augmentation** **ou** diminution qui indique que le paramètre a augmenté ou diminué la sécurité par rapport au paramètre Standard ou Strict recommandé.
+- **Dérive de configuration**:  valeur **d’augmentation** ou de diminution qui indique que le paramètre a augmenté ou diminué la sécurité par rapport au paramètre Standard ou Strict recommandé.
 
 Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le menu volant **Filtres** qui s’affiche, vous pouvez sélectionner parmi les filtres suivants:
 
@@ -145,6 +145,6 @@ Lorsque vous avez terminé, cliquez sur **Appliquer**.
 
 Pour exporter les résultats vers un fichier .csv, cliquez sur **Exporter.**
 
-Pour filtrer les résultats en fonction d’une modification spécifique par , **nom de paramètre** ou valeur de **type,** utilisez la **zone de** recherche.
+Pour filtrer les résultats en fonction d’une modification spécifique par **,** **nom de paramètre** ou valeur de **type,** utilisez la **zone de** recherche.
 
 ![Analyse de dérive de configuration et affichage historique dans l’analyseur de configuration.](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b8912ee40c090522a0b6228643f37b161dbde14
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c6c3cedffb1b827d441d37cc8beb53b20f3521f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401229"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190400"
 ---
 # <a name="streaming-api"></a>API de diffusion en continu
 
@@ -42,12 +42,12 @@ Pour plus d’informations sur Microsoft 365 Defender API de diffusion en contin
 
 Rubrique | Description
 :---|:---
-[Flux d’événements dans les Hubs d’événements Azure](streaming-api-event-hub.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser [en](../defender/advanced-hunting-overview.md) continu le chasse avancée aux hubs d’événements.
+[Flux d’événements dans les Hubs d’événements Azure](streaming-api-event-hub.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser en continu [la](../defender/advanced-hunting-overview.md) recherche avancée vers les hubs d’événements.
 [Flux d’événements sur votre compte de stockage Azure](streaming-api-storage.md)| Découvrez comment activer l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser en continu la recherche avancée [sur](advanced-hunting-overview.md) votre compte de stockage Azure.
 [Types d’événements pris en charge](supported-event-types.md) | Découvrez les types d’événements de recherche avancée que l’API de diffusion en continu prend en charge.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du chasse avancée](../defender/advanced-hunting-overview.md)
 - [Documentation Azure Event Hubs](/azure/event-hubs/)
 - [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)

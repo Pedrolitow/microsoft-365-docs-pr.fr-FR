@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une équipe à l’échelle de l’organisation dans Microsoft Teams.
-ms.openlocfilehash: fa24457bbe34136c793fd0e7a5856ba57e345ca1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3a9955520dd50d251fb5984f1c6dcfc8c48d83dc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180660"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189776"
 ---
 # <a name="create-an-org-wide-team"></a>Créer une équipe à l’échelle de l’organisation dans Teams
 

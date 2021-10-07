@@ -9,19 +9,19 @@ metadata:
   ms.date: 
   audience: ITPro
   ms.topic: troubleshooting
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
   ms.custom:
   - seo-marvel-apr2020
-  description: Trouvez des réponses aux questions les plus fréquentes sur les messages mis en file d’attente, différés ou renvoyés pendant le processus de filtrage Exchange Online Protection (EOP).
+  description: Trouvez des réponses aux questions les plus fréquentes sur les messages mis en file d’attente, différés ou renvoyés au cours du processus de filtrage Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: c9c3343de6e61d660cf07e920661af8d996c3039
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 4de909072409b1ee01adb79ecb8f324b76c6a2fd
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59202794"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60190352"
 title: Questions fréquemment posées sur les messages mis en file d’attente, différés et retournés dans EOP
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -51,7 +51,7 @@ sections:
   - question: >
       Combien de temps un message reste-t-il en attente et quel est l’intervalle des nouvelles tentatives ?
     answer: >
-      Les messages en attente resteront dans nos files d’attente pendant 1 jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. Les premiers reports sont de 15 minutes ou moins, avec des tentatives suivantes (au cours de la demi-dizaine suivante) augmentant l’intervalle sur plusieurs tentatives jusqu’à un maximum de 60 minutes. L’expansion de la durée d’intervalle est dynamique, en tenant compte de plusieurs variables telles que la taille des files d’attente et la priorité des messages internes. En base, il faut 15 minutes (ou moins) pour commencer, puis développer à partir de là au cours des prochaines heures à 60 minutes max.
+      Les messages de report resteront dans nos files d’attente pendant 1 jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. Les premiers reports sont de 15 minutes ou moins, avec des tentatives suivantes (au cours de la demi-dizaine suivante) augmentant l’intervalle sur plusieurs tentatives jusqu’à un maximum de 60 minutes. L’expansion de la durée d’intervalle est dynamique, en tenant compte de plusieurs variables telles que la taille des files d’attente et la priorité des messages internes. En base, il faut 15 minutes (ou moins) pour commencer, puis développer à partir de là au cours des prochaines heures à 60 minutes max.
   - question: >
       Après la restauration du serveur de messagerie, comment les messages mis en file d’attente sont-ils distribués ?
     answer: Une fois que votre serveur de messagerie est restauré, tous les messages mis en file d'attente sont automatiquement traités dans l'ordre dans lequel ils ont été reçus et mis en file d'attente lorsque le serveur est devenu indisponible.

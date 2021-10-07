@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 85b162cce8655c7942a341326ff08ec112ace100
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 637c56e5c02283e4efee5a456c21f4a74fcda40d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59356560"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178286"
 ---
 # <a name="software-resource-type"></a>Type de ressource logicielle
 
@@ -69,8 +69,8 @@ ms.locfileid: "59356560"
 |Nom|String|Nom du logiciel|
 |Fournisseur|Chaîne|Nom du fournisseur de logiciels|
 |Faiblesses|Entier long|Nombre de vulnérabilités découvertes|
-|publicExploit|Boolean|Une exploitation publique existe pour certaines vulnérabilités|
-|activeAlert|Boolean|L’alerte active est associée à ce logiciel|
+|publicExploit|Booléen|Une exploitation publique existe pour certaines vulnérabilités|
+|activeAlert|Booléen|L’alerte active est associée à ce logiciel|
 |exposedMachines|Entier long|Nombre d’appareils exposés|
 |impactScore|Double|Impact du score d’exposition de ce logiciel|
 |

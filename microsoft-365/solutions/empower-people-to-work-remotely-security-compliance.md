@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs hybrides.
-ms.openlocfilehash: aa43b2b30395def36d1c1210ef07edd379996b15
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 063b8dd4db66c93a4ed4433cae66e8112c182bed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179060"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190160"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs hybrides
 
@@ -51,7 +51,7 @@ Protégez vos applications et données grâce aux fonctionnalités de sécurité
 |---|---|---|
 |Microsoft Defender pour Office 365|Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. <p> Microsoft Defender pour Office 365 collecte et analyse les signaux de vos applications pour la détection, l’investigation et la correction des risques de sécurité, et protège votre organisation contre les menaces malveillantes posées par les courriers électroniques, les liens (URL) et les outils de collaboration. Il fournit également des outils automatisés d’évaluation et de configuration de la configuration des locataires pour des postures de sécurité standard et strictes.|Microsoft 365 E3 ou E5|
 |Protection contre les programmes malveillants|‎Les antivirus Microsoft Defender et Device Guard fournissent une protection contre les programmes malveillants basée sur l’appareil. <p> SharePoint‎ Online analyse automatiquement les chargements de fichiers pour détecter les programmes malveillants connus. <p> Exchange Online Protection‎ (‎EOP‎) sécurise les boîtes aux lettres cloud.|Microsoft 365 E3 ou E5|
-|Microsoft Defender pour point de terminaison|Protégez les appareils de votre organisation contre les cyber-menaces et les violations de données. Détectez, examinez et répondez aux menaces avancées.|Microsoft 365 E5|
+|Microsoft Defender pour point de terminaison|Protégez les appareils de votre organisation contre les cyber-menaces et les violations de données. Détectez, examinez et répondez aux menaces avancées.|Microsoft 365 E5|
 |Cloud App Security|Protégez vos services cloud (Microsoft 365 et autres applications SaaS) contre les attaques.|Microsoft 365 E5 ou licences de sécurité d’application cloud individuelles|
 |Azure AD Identity Protection|Automatisez la détection et la correction des risques basés sur l’identité. <p>Créez des stratégies d’accès conditionnel basées sur le risque qui requièrent l’authentification multifacteur (MFA) pour les connexions à risque.|Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2|
 ||||

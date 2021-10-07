@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer Microsoft Defender pour Office 365 et protéger les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: 92b4ca45e03995fb3586f1abce9301de7ec33570
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 60a84b972618444fcddc4165235eef909f4341c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934046"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178166"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -44,7 +44,7 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
 
 1. Connectez-vous [https://protection.office.com](https://protection.office.com) avec vos informations d’identification de compte d’administrateur.
 
-2. Dans le Centre de conformité de sécurité, dans le volet de navigation de gauche, sous Gestion des menaces, choisissez Stratégie &amp;   \> **anti-programme malveillant.**
+2. Dans le Centre de conformité de sécurité, dans le volet de navigation de gauche, sous Gestion des menaces, choisissez &amp; **Stratégie**  \> **anti-programme malveillant.**
 
 3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
 
@@ -66,7 +66,7 @@ Un ransomware limite l’accès aux données en chiffrant des fichiers ou en ver
 
 Pour vous protéger contre les ransomware, créez une ou plusieurs règles de flux de messagerie pour bloquer les extensions de fichier couramment utilisées pour les ransomware. (Vous avez ajouté ces règles dans l’augmentation du niveau de protection contre les programmes malveillants [à l’étape de messagerie.)](#raise-the-level-of-protection-against-malware-in-mail) Vous pouvez également avertir les utilisateurs qui reçoivent ces pièces jointes par courrier électronique.
 
-Outre les fichiers que vous avez bloqués à l’étape précédente, il est bon de créer une règle pour avertir les utilisateurs avant d’ouvrir des pièces jointes de fichier Office qui incluent des macros. Les ransomware peuvent être masqués dans les macros. Avertissez donc les utilisateurs de ne pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
+Outre les fichiers que vous avez bloqués à l’étape précédente, il est bon de créer une règle pour avertir les utilisateurs avant d’ouvrir des pièces jointes de fichier Office qui incluent des macros. Les ransomware peuvent être masqués dans les macros, donc avertissez les utilisateurs de ne pas ouvrir ces fichiers à partir de personnes qu’ils ne connaissent pas.
 
 Pour créer une règle de transport de messagerie :
 
@@ -141,13 +141,13 @@ Pour créer une stratégie anti-hameçonnage dans Microsoft Defender pour Office
 
 5. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le tableau suivant. Pour plus d’informations, voir La stratégie [anti-hameçonnage](../../security/office-365-security/set-up-anti-phishing-policies.md)dans Microsoft Defender pour Office 365 options.
 
-6. Une fois que vous avez examiné vos paramètres, **sélectionnez Créer cette** stratégie ou **Enregistrer,** le cas échéant.
+6. Une fois que vous avez examiné vos paramètres, choisissez **Créer cette** stratégie ou **Enregistrer,** le cas échéant.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
 |Nom|Domaine et personnel de campagne le plus précieux|
 |Description|Assurez-vous que le personnel le plus important et notre domaine ne sont pas usurpés.|
-|Ajouter des utilisateurs à protéger|Select **+ Add a condition, The recipient is**. Tapez les noms des utilisateurs ou entrez l’adresse e-mail du candidat, du responsable de campagne et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
+|Ajouter des utilisateurs à protéger|Sélectionnez **+ Ajoutez une condition, le destinataire est**. Tapez les noms des utilisateurs ou entrez l’adresse e-mail du candidat, du responsable de campagne et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
 |Ajouter des domaines à protéger|Sélectionnez **+ Ajoutez une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.|
 |Choisir des actions|Si un message électronique est envoyé par un utilisateur dont l’identité est usurpée : sélectionnez **Rediriger le message** vers une autre adresse de messagerie, puis tapez l’adresse de messagerie de l’administrateur de la sécurité . par exemple, *Alice <span> <span> @contoso.com*. Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.|
 |Veille des boîtes aux lettres|Par défaut, la veille des boîtes aux lettres est activée lorsque vous créez une stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.|
@@ -176,7 +176,7 @@ Pour créer une stratégie Coffre pièces jointes, regardez cette [courte](../..
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Bloquez les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
+|Nom|Bloquer les messages électroniques actuels et futurs avec les programmes malveillants détectés.|
 |Description|Bloquer les messages électroniques et pièces jointes actuels et futurs avec les programmes malveillants détectés.|
 |Enregistrer les pièces jointes d’une réponse anti-programme malveillant inconnue|Select **Block - Block the current and future emails and attachments with detected malware**.|
 |Rediriger la pièce jointe lors de la détection|Activer la redirection (sélectionnez cette zone) Entrez le compte d’administrateur ou une boîte aux lettres configurée pour la mise en quarantaine.          Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces jointes arrive à son moment ou si une erreur se produit (sélectionnez cette zone).|
@@ -231,7 +231,7 @@ Pour plus d’informations, [voir Coffre liens.](../../security/office-365-secur
 
 1. Connectez-vous au [portail Azure.](https://portal.azure.com/)
 
-2. Sélectionnez **Tous les services** et tapez in *Intune* dans la **zone de recherche.**
+2. Sélectionnez **Tous les services** et tapez *Intune* dans la **zone de recherche.**
 
 3. Une fois que les résultats apparaissent, sélectionnez le début en **Microsoft Intune** pour en faire un favori et facile à trouver ultérieurement.
 

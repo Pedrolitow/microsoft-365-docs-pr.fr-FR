@@ -7,19 +7,19 @@ ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Résumé : Configurez l’infrastructure Microsoft Azure pour héberger l’authentification fédérée haute disponibilité pour Microsoft 365.'
-ms.openlocfilehash: 6f9e06f74b2ce635b05faa0da6cb2eae3d430c31
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b8a1bd473a84c382f8e609508298aaba44d0c85e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205595"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198444"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Authentification fédérée haute disponibilité, phase 1 : Configurer Azure
 
@@ -29,7 +29,7 @@ Azure doit être provisioné avec les composants de base ci-après :
   
 - Groupes de ressources
     
-- Un réseau virtuel Azure entre sites avec des sous-réseaux pour l’hébergement des machines virtuelles Azure
+- Un réseau virtuel Azure entre plusieurs locaux avec des sous-réseaux pour l’hébergement des machines virtuelles Azure
     
 - Groupes de sécurité réseau pour effectuer l'isolation des sous-réseaux
     
@@ -283,7 +283,7 @@ Ensuite, définissez les noms de trois groupes à haute disponibilité. Rempliss
   
 Vous aurez besoin de ces noms lorsque vous créerez les machines virtuelles aux phases 2, 3 et 4.
   
-Créez les nouveaux groupes à haute disponibilité à l’Azure PowerShell commandes.
+Créez les nouveaux groupes à haute disponibilité avec Azure PowerShell commandes.
   
 ```powershell
 $locName="<the Azure location for your new resource group>"

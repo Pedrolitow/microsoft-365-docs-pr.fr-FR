@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 04/18/2016
 audience: ITPro
 ms.topic: troubleshooting
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
@@ -20,12 +20,12 @@ ms.custom:
 description: Dans cet article, vous allez apprendre à utiliser le portail Supprimer de la liste pour vous supprimer de la liste Microsoft 365 les expéditeurs bloqués.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e825c859253b759e5436dbc5419f98f0c863fa3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 78e25da9a8f04d1ad730cd049ca38df596ab2f03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203706"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190220"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utiliser le portail Retirer d’une liste pour vous supprimer de la liste des expéditeurs bloqués
 
@@ -66,7 +66,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
 
 5. Dans le portail Supprimer de la liste, cliquez sur **Supprimer l'adresse IP de la liste**.
 
-    Une fois l’adresse IP supprimée de la liste des expéditeurs bloqués, les messages électroniques provenant de cette adresse IP sont remis aux destinataires qui utilisent Microsoft 365. Assurez-vous donc que les messages électroniques envoyés à partir de cette adresse IP ne seront pas abusifs ou malveillants ; Dans le cas contraire, l’adresse IP risque d’être de nouveau bloquée.
+    Une fois l’adresse IP supprimée de la liste des expéditeurs bloqués, les messages électroniques provenant de cette adresse IP sont remis aux destinataires qui utilisent Microsoft 365. Assurez-vous donc que les messages électroniques envoyés à partir de cette adresse IP ne seront ni abusifs ni malveillants . Dans le cas contraire, l’adresse IP risque d’être de nouveau bloquée.
 
     > [!NOTE]
     > Cela peut prendre jusqu’à 24 heures ou les résultats peuvent varier considérablement avant la suppression des restrictions.

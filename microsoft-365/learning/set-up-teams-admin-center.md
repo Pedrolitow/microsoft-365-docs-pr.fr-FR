@@ -14,21 +14,21 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 ms.custom: admindeeplinkTEAMS
-localization_priority: None
+ms.localizationpriority: ''
 description: Découvrez comment configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration.
-ms.openlocfilehash: 55376371361ffb54b567ce9c3e7e12cd462b162b
-ms.sourcegitcommit: 1ef30b82d97bd998149235dc69d3c0e450e95285
+ms.openlocfilehash: 4a54bc478c22d7a7ba3cb64c7efe69153882e308
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59477646"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198324"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurer Apprentissage Microsoft Viva (prévisualisation) dans le centre Teams’administration
 
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
 
-L Teams administrateur doit effectuer certaines étapes pour activer Learning (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
+L’administrateur Teams doit effectuer certaines étapes pour activer Learning (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
 
 ## <a name="public-preview-tenants"></a>Locataires de la prévisualisation publique
 
@@ -51,7 +51,7 @@ L Teams administrateur doit effectuer certaines étapes pour activer Learning (P
 3. Avertissez les utilisateurs qui testent Le Learning (prévisualisation) de basculer leur client de build vers la [prévisualisation](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)publique pour Teams .
 
 > [!IMPORTANT]
-> Pour les locataires de la prévisualisation publique, Learning  (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver La Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
+> Pour les locataires de la prévisualisation publique, Learning  (prévisualisation) ne sera pas affiché dans les applications gérées dans le Centre d’administration Teams jusqu’à la publication finale du produit. Toutefois, les utilisateurs de la prévisualisation publique activée peuvent trouver Domaine Learning (prévisualisation) dans le magasin d’applications Teams et l’utiliser, une fois que les stratégies et autorisations correctes ont été définies.
 
 ### <a name="user-steps-for-public-preview-tenants"></a>Étapes utilisateur pour les locataires de la prévisualisation publique
 
@@ -73,7 +73,7 @@ Les utilisateurs qui ont été activés pour le test [](/microsoftteams/public-p
 
 Pour les locataires de la prévisualisation privée, aucune stratégie supplémentaire ne doit être activée. Toutefois, Le Learning (prévisualisation) doit être mis à la disposition des utilisateurs de votre organisation.
 
-1. Dans le navigation gauche du centre d Teams d’administration, Teams **applications Gérer**  >  <a href="https://go.microsoft.com/fwlink/?linkid=2172960" target="_blank">**les applications.**</a>
+1. Dans le navigation gauche du centre d’administration Teams, Teams **applications Gérer**  >  <a href="https://go.microsoft.com/fwlink/?linkid=2172960" target="_blank">**les applications.**</a>
 
    ![Navigation gauche dans le centre d Teams d’administration affichant Teams applications et la section Gérer les applications.](../media/learning/learning-app-teams-manage-apps-nav.png)
 

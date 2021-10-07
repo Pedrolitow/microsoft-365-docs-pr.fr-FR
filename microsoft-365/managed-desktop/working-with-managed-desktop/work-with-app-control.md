@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31cc897fe28f557a65cba9c99e5dcecbf7c2b0e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1600381062aa61b79ba757d530afef07aca26e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204844"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208672"
 ---
 # <a name="work-with-app-control"></a>Utiliser le contrôle d’application
 

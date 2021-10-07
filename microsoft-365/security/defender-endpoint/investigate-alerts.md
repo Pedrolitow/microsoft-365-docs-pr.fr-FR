@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 45bf3204a092bac6597c4e43f4ca29dbc06cd631
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f41be6057f1e66eb13001d4ed7d304d76e895c3d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198228"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Examiner les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -48,7 +48,7 @@ L’article d’alerte explique pourquoi l’alerte a été déclenchée, les é
 
 Les entités sont cliquables et chaque entité qui n’est pas une alerte peut être étendue à l’aide de l’icône développer sur le côté droit de la carte de cette entité. L’entité en cours d’utilisation est indiquée par une bande bleue sur le côté gauche de la carte de cette entité, avec l’alerte dans le titre en cours de mise au point au premier abord.
 
-Développez les entités pour afficher les détails en un coup d’œil. La sélection d’une entité basculera le contexte du volet d’informations sur cette entité et vous permettra de passer en revue d’autres informations, ainsi que de gérer cette entité. La sélection *de...* à droite de la carte d’entité révélera toutes les actions disponibles pour cette entité. Ces mêmes actions apparaissent dans le volet d’informations lorsque cette entité est en focus.
+Développez les entités pour afficher les détails en un coup d’œil. La sélection d’une entité bascule le contexte du volet d’informations vers cette entité et vous permet de passer en revue d’autres informations, ainsi que de gérer cette entité. La sélection *de...* à droite de la carte d’entité révélera toutes les actions disponibles pour cette entité. Ces mêmes actions apparaissent dans le volet d’informations lorsque cette entité est en focus.
 
 > [!NOTE]
 > La section de l’article sur l’alerte peut contenir plusieurs alertes, avec des alertes supplémentaires liées à la même arborescence d’exécution apparaissant avant ou après l’alerte que vous avez sélectionnée.
@@ -57,7 +57,7 @@ Développez les entités pour afficher les détails en un coup d’œil. La sél
 
 ## <a name="take-action-from-the-details-pane"></a>Action à partir du volet d’informations
 
-Une fois que vous avez sélectionné une entité d’intérêt, le volet d’informations change pour afficher les informations sur le  type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et propose aux contrôles d’agir sur cette entité directement à partir de la page d’alerte.
+Une fois que vous avez sélectionné une entité d’intérêt, le volet d’informations change pour afficher les informations sur le  type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et proposer aux contrôles d’agir sur cette entité directement à partir de la page d’alerte.
 
 Une fois que vous avez terminé d’examiner, revenir à l’alerte que vous avez commencée, marquez l’état de l’alerte comme résolu et classez-le comme alerte **False** ou **Alerte True**.  La classification des alertes permet d’affiner cette fonctionnalité pour fournir davantage d’alertes vraies et moins de fausses alertes.
 

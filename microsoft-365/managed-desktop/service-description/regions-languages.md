@@ -7,17 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 99f44398bc95958ca890ddcd4203b50ff95034b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c239f86413fdbe033fd72e86720a19ac749616f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204980"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178574"
 ---
 # <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft Manged Desktop régions pris en charge
 

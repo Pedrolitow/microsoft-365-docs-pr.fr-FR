@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui la prise en charge de l’authentification multifacteur pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8749c05e3f7ce5dacf7d3ed1eaa46a46a20482d5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2b96e25355bf5dde302bf400fec25f4bafb6b0a6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205491"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178766"
 ---
 # <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Prise en charge des applications clientes : authentification multifacteur
 
@@ -36,7 +36,7 @@ En savoir plus sur [l’authentification multifacteur.](/azure/active-directory/
 
 ## <a name="supported-clients--platforms"></a>Clients pris en charge & plateformes
 
-Les dernières versions des plateformes et des clients suivants prisent en charge l’authentification multifacteur. Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
+Les dernières versions des plateformes et des clients suivants prisent en charge l’authentification multifacteur. Pour plus d’informations sur la prise en charge des plateformes dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 

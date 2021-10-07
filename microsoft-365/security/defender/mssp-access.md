@@ -4,7 +4,7 @@ description: En savoir plus sur les modifications apportées Centre de sécurit�
 keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: macapara
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: f5ef47fd03614c34e9cb459442e8c1f2a144f4b8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9750fc75e5fc90a0f5ea0c308870a4342070a427
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163555"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209032"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Fournir un accès au fournisseur de services de sécurité gérés (MSSP) 
 
@@ -52,7 +52,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     - Analyste de niveau 1
     - Analyste de niveau 2
-    - Approbations d’analyste MSSP  
+    - Approuveurs d’analyste MSSP  
 
 2. Créez des rôles Defender pour les points de terminaison pour les niveaux d’accès appropriés dans Customer Defender for Endpoint dans Microsoft 365 Defender rôles et groupes portail.
 
@@ -84,7 +84,7 @@ Pour implémenter une solution d’accès délégué multi-locataire, prenez les
 
     Les catalogues de ressources sont une collection logique de packages d’accès, créés dans le client Client AD.
 
-    Pour ce faire, dans le client AD client, accédez à La gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**.
+    Pour ce faire, dans le client AD client, accédez à Gouvernance des identités : catalogues et ajoutez **nouveau catalogue**. Dans notre exemple, nous l’appeller **MSSP Accesses**.
 
     ![Image du nouveau catalogue.](../../media/goverance-catalog.png)
 

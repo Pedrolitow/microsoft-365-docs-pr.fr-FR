@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un client non pris en charge créé par une inscription utilisateur en libre-service dans Microsoft 365.
-ms.openlocfilehash: f6378c708e0533c2da2d38bfe5eb8009515423c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5d1ab003d9a114046ee0bc5e403bb44beac2df79
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178844"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178262"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer une prise de contrôle d’administrateur interne
 
@@ -47,7 +47,7 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 
 2. Inscrivez-vous avec un compte d’utilisateur qui utilise le nom de domaine de votre organisation (comme `powerbiadmin@contoso.com` ). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 
-3. Recherchez le **code de vérification dans votre** courrier électronique et entrez le code pour valider votre adresse de messagerie.
+3. Recherchez le **code de vérification dans votre** courrier électronique et entrez-le pour valider votre adresse de messagerie.
     
 ## <a name="step-2-create-a-new-account"></a>Étape 2 : Créer un compte
 
@@ -66,7 +66,7 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 4. Une fois que vous avez ajouté l’enregistrement TXT à votre site de bureau d’enregistrement, revenir à l’Assistant et sélectionnez **Ok, j’ai ajouté l’enregistrement**.
     
 > [!NOTE]
-> Le fait de prendre le contrôle du client de secours n’aura aucun impact sur les informations ou les services existants. Toutefois, si des utilisateurs du domaine se sont inscrits aux services qui nécessitent une licence, vous serez invité à acheter des licences pour eux dans le cadre de la prise de contrôle du rôle d’administrateur. Vous pouvez acheter ou supprimer des licences une fois le processus de configuration de l’administrateur terminé.
+> Le fait de prendre le contrôle du client de secours n’aura aucun impact sur les informations ou les services existants. Toutefois, si des utilisateurs du domaine se sont inscrits aux services qui nécessitent une licence, vous serez invité à acheter des licences pour eux dans le cadre de la prise en compte du rôle d’administrateur. Vous pouvez acheter ou supprimer des licences une fois le processus de configuration de l’administrateur terminé.
   
 ## <a name="related-content"></a>Contenu associé
 

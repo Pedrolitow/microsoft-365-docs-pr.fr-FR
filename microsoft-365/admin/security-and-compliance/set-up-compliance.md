@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
-ms.openlocfilehash: a7241c4abe3236b14935e42ab518c629a2558d21
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 09e9e0fda6969cc89a4eb6b5a106e7db5166e869
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934178"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178094"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
@@ -42,15 +42,15 @@ DLP est livré avec de nombreux modèles de stratégie prêts à l’emploi pour
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurer la rétention du courrier électronique avec Archivage Exchange Online
 
- **Archivage Exchange Online** de licence permettent de maintenir les normes réglementaires et de conformité en conservant le contenu des e-mails pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
+ **Archivage Exchange Online** licences permettent de maintenir les normes réglementaires et de conformité en conservant le contenu du courrier électronique pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
   
-**Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en attente pour litige. 
+**Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en conservation pour litige. 
     
 Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’administration :
     
 1. Dans le navigation gauche, allez à **Utilisateurs** \> **actifs.**
     
-2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres** de messagerie, puis en plus des **paramètres,** choisissez **Modifier Exchange propriétés.**
+2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres** de messagerie et, en plus des **paramètres,** choisissez Modifier **Exchange propriétés.**
     
 3. Dans la page de boîte aux lettres de l’utilisateur, choisissez ** fonctionnalités de boîte aux lettres ** dans le navigation gauche, puis choisissez le lien Activer sous Attente pour **litige.** 
     

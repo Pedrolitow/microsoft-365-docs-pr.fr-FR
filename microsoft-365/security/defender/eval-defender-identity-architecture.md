@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d7474a3cb2f04627c5da16f84dbde6d195021551
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2a3e2949cd05a72c949bad4a55c10fcb84b1f4f2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183207"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198084"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Passer en revue les exigences en matière d’architecture et les concepts clés de Microsoft Defender pour l’identité
 
@@ -50,7 +50,7 @@ Le diagramme suivant illustre l’architecture de base de Defender for Identity.
 
 Dans cette illustration :
 - Les capteurs installés sur les contrôleurs de domaine AD analysent les journaux et le trafic réseau et les envoient à Microsoft Defender pour identité pour analyse et rapport.
--  Les capteurs peuvent également utiliser les services AD FS (Active Directory Federation Services) lorsque Azure AD est configuré pour utiliser l’authentification fédérée (ligne pointillée dans l’illustration). 
+-  Les capteurs peuvent également utiliser les services AD FS (Active Directory Federation Services) lorsque Azure AD est configuré pour utiliser l’authentification fédérée (ligne en pointillés dans l’illustration). 
 - Microsoft Defender pour l’identité partage des signaux Microsoft 365 Defender pour la détection et la réponse étendues (XDR).
 
 
@@ -72,7 +72,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 | Activités surveillées | Defender for Identity surveille les signaux générés au sein de votre organisation pour détecter les activités suspectes ou malveillantes et vous aide à déterminer la validité de chaque menace potentielle afin de pouvoir trier et répondre efficacement.  |  [Activités surveillées de Microsoft Defender pour l’identité](/defender-for-identity/monitored-activities)       |
 | Alertes de sécurité    | Les alertes de sécurité Defender for Identity expliquent les activités suspectes détectées par les capteurs sur votre réseau, ainsi que les acteurs et ordinateurs impliqués dans chaque menace.   | [Microsoft Defender pour les alertes de sécurité des identités](/defender-for-identity/suspicious-activity-guide?tabs=external)    |
 | Profils d’entité    | Les profils d’entité fournissent une enquête approfondie complète sur les utilisateurs, les ordinateurs, les appareils et les ressources, ainsi que leur historique d’accès.   | [Comprendre les profils d’entité](/defender-for-identity/entity-profiles)  |
-| Chemins de déplacement latéral    | Un composant clé des informations de sécurité MDI consiste à identifier les chemins de déplacement latéral dans lesquels un attaquant utilise des comptes non sensibles pour accéder à des comptes ou des ordinateurs sensibles dans l’ensemble de votre réseau.  | [Microsoft Defender pour les chemins de déplacement latéral d’identité (LMP)](/defender-for-identity/use-case-lateral-movement-path)  |
+| Chemins de déplacement latéral    | Un composant clé des informations de sécurité MDI consiste à identifier les chemins de déplacement latéral dans lesquels un attaquant utilise des comptes non sensibles pour accéder à des comptes ou des ordinateurs sensibles dans l’ensemble de votre réseau.  | [Microsoft Defender for Identity Lateral Movement Paths (LMP)](/defender-for-identity/use-case-lateral-movement-path)  |
 | Résolution des noms réseau    |  La résolution de noms réseau (NNR) est un composant de la fonctionnalité MDI qui capture les activités basées sur le trafic réseau, les événements Windows, ETW, etc. et met en corrélation ces données brutes avec les ordinateurs concernés impliqués dans chaque activité.       | [Qu’est-ce que la résolution de noms réseau ?](/defender-for-identity/nnr-policy)      |
 | Rapports    | Les rapports Defender for Identity vous permettent de planifier ou de générer et de télécharger immédiatement des rapports qui fournissent des informations sur l’état du système et de l’entité.  Vous pouvez créer des rapports sur l’état du système, les alertes de sécurité et les chemins de déplacement latéral potentiels détectés dans votre environnement.   | [Microsoft Defender pour les rapports d’identité ](/defender-for-identity/reports)       |
 | Groupes de rôles    | Defender pour l’identité offre des groupes basés sur des rôles et un accès délégué pour protéger les données en fonction des besoins spécifiques de votre organisation en matière de sécurité et de conformité, notamment les administrateurs, les utilisateurs et les visiteurs.        |  [Groupes de rôles dans Microsoft Defender pour Identity](/defender-for-identity/role-groups)       |
@@ -83,7 +83,7 @@ Le tableau suivant a identifié les concepts clés à comprendre lors de l’év
 
 ## <a name="review-prerequisites"></a>Examiner les conditions préalables
 
-Defender pour l’identité nécessite un travail prérequis pour vous assurer que vos composants d’identité et de mise en réseau locaux répondent aux exigences minimales. Utilisez cet article comme liste de vérification pour vous assurer que votre environnement est prêt : Microsoft Defender pour les conditions [préalables pour l’identité.](/defender-for-identity/prerequisites)
+Defender pour l’identité nécessite un travail prérequis pour vous assurer que vos composants d’identité et de réseau locaux répondent aux exigences minimales. Utilisez cet article comme liste de vérification pour vous assurer que votre environnement est prêt : Microsoft Defender pour les conditions [préalables pour l’identité.](/defender-for-identity/prerequisites)
 
 
 ## <a name="next-steps"></a>Étapes suivantes

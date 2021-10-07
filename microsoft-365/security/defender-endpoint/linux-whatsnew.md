@@ -2,15 +2,13 @@
 title: Nouveautés de Microsoft Defender pour Endpoint sur Linux
 description: Liste des principales modifications apportées à Microsoft Defender pour Endpoint sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, whatsnew, release
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 506b8103946d16c5ec85cc6d3cb449ef67f340f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cc24857adacf3b6fbb787030136f5ebb53f00937
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209077"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178346"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
@@ -74,11 +72,11 @@ ms.locfileid: "59209077"
 
 ## <a name="1010476"></a>101.04.76
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1010348"></a>101.03.48
 
-- Résolutions de bogues
+- Correctifs de bogue
 
 ## <a name="1010255"></a>101.02.55
 
@@ -88,7 +86,7 @@ ms.locfileid: "59209077"
 ## <a name="1010075"></a>101.00.75
 
 - Prise en charge supplémentaire pour les types de système de fichiers suivants `ecryptfs` : , , , , , , , `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf` et `vfat`
-- Nouvelle syntaxe de [l’outil en ligne de commande.](linux-resources.md#configure-from-the-command-line)
+- Nouvelle syntaxe pour [l’outil en ligne de commande.](linux-resources.md#configure-from-the-command-line)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1009070"></a>100.90.70

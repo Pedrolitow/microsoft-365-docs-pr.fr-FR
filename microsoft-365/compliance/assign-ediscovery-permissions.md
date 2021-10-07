@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ description: Attribuez les autorisations requises pour effectuer des tâches li�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 8fda81c4318525744eaa51c8904a465e87159675
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2ff6a589ce8b4db6adf00a820eaf00b20f9f7bcc
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164217"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60217149"
 ---
 # <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Attribuer des autorisations eDiscovery dans le Centre de conformité Microsoft 365
 
@@ -33,9 +33,9 @@ Si vous souhaitez que les personnes utilisent l’un des outils liés à [eDisco
   
 Le groupe de rôles principal lié à eDiscovery dans Centre de conformité Microsoft 365 est appelé **gestionnaire eDiscovery**. Ce groupe de rôles comprend deux sous-groupes.
   
-- Gestionnaires **eDiscovery** : un gestionnaire eDiscovery peut utiliser les outils de recherche eDiscovery pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que la prévisualisation et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas dans Core eDiscovery et Advanced eDiscovery, ajouter et supprimer des membres à un cas, créer des cas en tant que cas, exécuter des recherches associées à un cas et accéder aux données de cas. Les gestionnaires eDiscovery peuvent uniquement consulter et gérer les incidents qu’ils créent. Ils ne peuvent pas accéder aux cas créés par d’autres gestionnaires eDiscovery, ni les gérer.
+- **Gestionnaire eDiscovery** : un gestionnaire eDiscovery peut utiliser les outils de recherche eDiscovery pour rechercher des emplacements de contenu dans l’organisation et effectuer diverses actions liées à la recherche, telles que la prévisualisation et l’exportation des résultats de recherche. Les membres peuvent également créer et gérer des cas dans Core eDiscovery et Advanced eDiscovery, ajouter et supprimer des membres à un cas, créer des cas en tant que cas, exécuter des recherches associées à un cas et accéder aux données de cas. Les gestionnaires eDiscovery peuvent uniquement consulter et gérer les incidents qu’ils créent. Ils ne peuvent pas accéder aux cas créés par d’autres gestionnaires eDiscovery, ni les gérer.
   
-- **Administrateurs eDiscovery** : ils sont membre du groupe de rôles Gestionnaire eDiscovery et peuvent effectuer la même recherche de contenu et les mêmes tâches liées à la gestion des cas que les gestionnaires eDiscovery. De plus, un administrateur de découverte électronique peut :
+- Administrateur **eDiscovery** : un administrateur eDiscovery est membre du groupe de rôles Gestionnaire eDiscovery et peut effectuer les mêmes tâches liées à la recherche de contenu et à la gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
   
   - Accédez à tous les cas répertoriés dans les pages **core eDiscovery** **et Advanced eDiscovery** dans le Centre de conformité Microsoft 365.
 
@@ -56,7 +56,7 @@ Le groupe de rôles principal lié à eDiscovery dans Centre de conformité Micr
   
 ## <a name="assign-ediscovery-permissions"></a>Attribution d’autorisations de eDiscovery
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centre de conformité Microsoft 365</a> and sign in using an account that can assign permissions.
+1. Go to <https://compliance.microsoft.com> and sign in using an account that can assign permissions.
   
 2. Dans le volet gauche, sélectionnez **Autorisations.**
 
@@ -64,9 +64,9 @@ Le groupe de rôles principal lié à eDiscovery dans Centre de conformité Micr
 
 4. Dans la page **Rôles du Centre de** conformité, sélectionnez **gestionnaire eDiscovery.**
   
-5. Dans la page volant **eDiscovery Manager,** faites l’une des opérations suivantes en fonction des autorisations eDiscovery que vous souhaitez attribuer.
+5. Dans la page de flyout du Gestionnaire **eDiscovery,** faites l’une des opérations suivantes en fonction des autorisations eDiscovery que vous souhaitez attribuer.
   
-    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En plus **du Gestionnaire eDiscovery,** sélectionnez **Modifier.** Dans la page **Choisir l’Assistant Gestionnaire** de découverte électronique, cliquez sur ![ Icône Ajouter.](../media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **Terminé**. Ensuite, dans la page Modifier l’Assistant Choisir le gestionnaire **eDiscovery,** sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
+    **Pour faire d’un utilisateur un gestionnaire eDiscovery :** En plus **du Gestionnaire eDiscovery,** sélectionnez **Modifier.** Dans la page **Choisir l’Assistant Gestionnaire eDiscovery,** cliquez sur ![ Icône Ajouter.](../media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant que gestionnaire eDiscovery, puis sélectionnez **Ajouter**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **Terminé**. Ensuite, dans la page Modifier l’Assistant Choisir le gestionnaire **eDiscovery,** sélectionnez **Enregistrer** pour enregistrer les modifications apportées à l’appartenance au gestionnaire eDiscovery.
   
     **Pour faire d’un utilisateur un administrateur eDiscovery :** En plus **de l’administrateur eDiscovery,** sélectionnez **Modifier.** Dans la page **Choisir un administrateur eDiscovery,** cliquez sur ![ Icône Ajouter.](../media/ITPro-EAC-AddIcon.gif) **Ajouter**. Sélectionnez l’utilisateur (ou les utilisateurs) que vous souhaitez ajouter en tant qu’administrateur **eDiscovery,** puis  **ajoutez**. Lorsque vous avez terminé d’ajouter des utilisateurs, sélectionnez **Terminé**. Ensuite, dans la page Modifier l’Assistant Choisir  l’administrateur **eDiscovery,** sélectionnez Enregistrer pour enregistrer les modifications apportées à l’appartenance à l’administrateur eDiscovery.
   
@@ -81,13 +81,13 @@ Le tableau suivant répertorie les rôles RBAC liés à eDiscovery dans le Centr
   
 | Role | Administrateur de conformité | Gestionnaire eDiscovery & administrateur | Gestion de l’organisation | Relecteur |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Gestion des cas <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
-|Communication <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Recherche de conformité <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
-|Consignataire <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Exporter <br/> | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Suspension <br/>  |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |
-|Aperçu <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Gestion des cas <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Communication <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Recherche de conformité <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Consignataire <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Exporter <br/> | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Suspension <br/>  |![Marque de vérification.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> |
+|Aperçu <br/>  | <br/> |![Coche.](../media/checkmark.png) <br/> | <br/> | <br/> |
 |Révision <br/>  | <br/> |![Marque de vérification.](../media/checkmark.png) <br/> | <br/> |![Coche](../media/checkmark.png) <br/> |
 |Déchiffrement RMS <br/>  ||![Coche](../media/checkmark.png) <br/> |||
 |Recherche et purge <br/> | <br/> | <br/> |![Coche](../media/checkmark.png)           <br/> | <br/> |
@@ -99,7 +99,7 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à eDiscovery ré
 
 Ce rôle permet aux utilisateurs de créer, modifier, supprimer et contrôler l’accès à core eDiscovery et Advanced eDiscovery cas dans le Centre de conformité Microsoft 365. Comme indiqué précédemment, un utilisateur doit se voir attribuer le rôle Gestion des cas avant de pouvoir utiliser la cmdlet **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery.
 
-Pour plus d’informations, consultez :
+Pour plus d'informations, voir :
 
 - [Prise en main de la découverte électronique de base](get-started-core-ediscovery.md)
 
@@ -107,7 +107,7 @@ Pour plus d’informations, consultez :
 
 ### <a name="communication"></a>Communication
 
-Ce rôle permet aux utilisateurs de gérer toutes les communications avec les dépositaires identifiés dans Advanced eDiscovery cas. Cela inclut la création de notifications de mise en attente, de rappels de mise en attente et d’escalades vers la direction. L’utilisateur peut également suivre l’accusé de réception des notifications de conservation et gérer l’accès au portail des dépositaires utilisé par chaque dépositaire pour suivre les communications dans les cas où ils ont été identifiés comme dépositaires.
+Ce rôle permet aux utilisateurs de gérer toutes les communications avec les dépositaires identifiés dans Advanced eDiscovery cas. Cela inclut la création de notifications de mise en attente, de rappels de mise en attente et d’escalades vers la direction. L’utilisateur peut également suivre l’accusé de réception des notifications de conservation et gérer l’accès au portail des dépositaires utilisé par chaque dépositaire pour suivre les communications pour les cas où ils ont été identifiés comme dépositaires.
 
 Pour plus d’informations, voir [Travailler avec les communications dans Advanced eDiscovery](managing-custodian-communications.md).
 
@@ -117,13 +117,13 @@ Ce rôle permet aux utilisateurs d’exécuter l’outil de recherche de contenu
 
 Dans la recherche de contenu et la découverte électronique principale, les utilisateurs qui ont le rôle de recherche de conformité mais qui n’ont pas le rôle Aperçu peuvent afficher un aperçu des résultats d’une recherche dans laquelle l’action d’aperçu a été initiée par un utilisateur auquel le rôle Aperçu est attribué. L’utilisateur sans le rôle Aperçu peut afficher un aperçu des résultats pendant deux semaines après la création de l’action d’aperçu initiale.
 
-De même, les utilisateurs de la recherche de contenu et de la découverte électronique principale qui ont le rôle de recherche de conformité mais n’ont pas le rôle Exporter peuvent télécharger les résultats d’une recherche dans laquelle l’action d’exportation a été initiée par un utilisateur auquel le rôle d’exportation est attribué. L’utilisateur sans le rôle d’exportation peut télécharger les résultats d’une recherche pendant deux semaines après la création de l’action d’exportation initiale. Après cela, ils ne peuvent pas télécharger les résultats, sauf si une personne ayant le rôle Export redémarre l’exportation.
+De même, les utilisateurs de la recherche de contenu et de la découverte électronique principale qui ont le rôle de recherche de conformité mais n’ont pas le rôle Exporter peuvent télécharger les résultats d’une recherche dans laquelle l’action d’exportation a été initiée par un utilisateur auquel le rôle d’exportation est attribué. L’utilisateur sans le rôle d’exportation peut télécharger les résultats d’une recherche pendant deux semaines après la création de l’action d’exportation initiale. Après cela, ils ne peuvent pas télécharger les résultats, sauf si une personne avec le rôle Export redémarre l’exportation.
 
 La période de grâce de deux semaines pour l’aperçu et l’exportation des résultats de recherche (sans les rôles de recherche et d’exportation correspondants) ne s’applique pas aux Advanced eDiscovery. Les rôles Aperçu et Exportation doivent être attribués aux utilisateurs pour afficher un aperçu et exporter du contenu dans Advanced eDiscovery.
 
 ### <a name="custodian"></a>Consignataire
 
-Ce rôle permet aux utilisateurs d’identifier et de gérer les dépositaires des cas Advanced eDiscovery et d’utiliser les informations de Azure Active Directory et d’autres sources pour rechercher des sources de données associées aux dépositaires. L’utilisateur peut associer d’autres sources de données telles que des boîtes aux lettres, SharePoint sites et Teams des dépositaires dans un cas. L’utilisateur peut également placer en conservation légale les sources de données associées aux dépositaires pour conserver le contenu dans le contexte d’un cas.
+Ce rôle permet aux utilisateurs d’identifier et de gérer les dépositaires pour les cas Advanced eDiscovery et d’utiliser les informations provenant de Azure Active Directory et d’autres sources pour rechercher des sources de données associées aux dépositaires. L’utilisateur peut associer d’autres sources de données telles que des boîtes aux lettres, SharePoint sites et Teams des dépositaires dans un cas. L’utilisateur peut également placer une conservation légale sur les sources de données associées aux dépositaires pour conserver le contenu dans le contexte d’un cas.
 
 Pour plus d’informations, [voir Travailler avec les dépositaires dans Advanced eDiscovery](managing-custodians.md).
 
@@ -131,7 +131,7 @@ Pour plus d’informations, [voir Travailler avec les dépositaires dans Advance
 
 Le rôle permet aux utilisateurs d’exporter les résultats d’une recherche de contenu vers un ordinateur local. Il leur permet également de préparer les résultats de recherche pour analyse dans Advanced eDiscovery.
 
-Pour plus d’informations sur l’exportation des résultats de recherche, voir Exporter les résultats de recherche [à partir Centre de conformité Microsoft 365](export-search-results.md).
+Pour plus d’informations sur l’exportation des résultats de recherche, voir Exporter les résultats de la recherche [Centre de conformité Microsoft 365](export-search-results.md).
 
 ### <a name="hold"></a>Suspension
 
@@ -149,7 +149,7 @@ Ce rôle permet aux utilisateurs d’afficher une liste d’éléments qui ont �
 
 ### <a name="review"></a>Révision
 
-Ce rôle permet aux utilisateurs d’accéder aux jeux de révision [dans Advanced eDiscovery](overview-ediscovery-20.md). Les utilisateurs affectés à ce rôle peuvent voir et ouvrir la liste des cas sur la page **eDiscovery > Advanced** dans le Centre de conformité Microsoft 365 dont ils sont membres. Une fois que l’utilisateur a accédé Advanced eDiscovery cas, il peut sélectionner les ensembles de révision **pour** accéder aux données de cas. Ce rôle ne permet pas à l’utilisateur d’afficher un aperçu des résultats d’une recherche de collection associée au cas ou d’effectuer d’autres tâches de recherche ou de gestion des cas. Les utilisateurs ayant ce rôle peuvent uniquement accéder aux données d’un jeu à réviser.
+Ce rôle permet aux utilisateurs d’accéder aux jeux de révision [Advanced eDiscovery](overview-ediscovery-20.md). Les utilisateurs affectés à ce rôle peuvent voir et ouvrir la liste des cas sur la page **eDiscovery > Advanced** dans le Centre de conformité Microsoft 365 dont ils sont membres. Une fois que l’utilisateur a accédé Advanced eDiscovery cas, il peut sélectionner les ensembles de révision **pour** accéder aux données de cas. Ce rôle ne permet pas à l’utilisateur d’afficher un aperçu des résultats d’une recherche de collection associée au cas ou d’effectuer d’autres tâches de recherche ou de gestion des cas. Les utilisateurs ayant ce rôle peuvent uniquement accéder aux données d’un jeu à réviser.
 
 ### <a name="rms-decrypt"></a>Déchiffrement RMS
 
@@ -158,6 +158,30 @@ Ce rôle permet aux utilisateurs d’afficher des messages électroniques proté
 ### <a name="search-and-purge"></a>Recherche et purge
 
 Ce rôle permet aux utilisateurs d’effectuer une suppression en bloc de données correspondant aux critères d’une recherche de contenu. Pour plus d’informations, [voir Rechercher et supprimer des messages électroniques dans votre organisation.](search-for-and-delete-messages-in-your-organization.md)
+
+## <a name="adding-role-groups-as-members-of-ediscovery-cases"></a>Ajout de groupes de rôles en tant que membres de cas eDiscovery
+
+Vous pouvez ajouter des groupes de rôles en tant que membres de core eDiscovery et Advanced eDiscovery cas afin que les membres des groupes de rôles peuvent accéder aux groupes de rôles et effectuer des tâches dans les cas affectés. Les rôles attribués au groupe de rôles définissent ce que les membres du groupe de rôles peuvent faire. Ensuite, l’ajout d’un groupe de rôles en tant que membre du cas permet aux membres d’accéder à ces tâches et d’effectuer ces tâches dans un cas spécifique. Pour plus d’informations sur l’ajout de groupes de rôles en tant que membres de cas, voir :
+
+- [Prise en main de la découverte électronique de base](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+
+- [Ajouter ou supprimer des membres d’Advanced eDiscovery cas](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+
+Dans cet esprit, il est important de savoir que si un rôle est ajouté ou supprimé d’un groupe de rôles, ce groupe de rôles sera automatiquement supprimé en tant que membre de n’importe quel cas dont le groupe de rôles est membre. La raison en est que votre organisation ne fournit pas par inadvertance des autorisations supplémentaires aux membres d’un cas. De même, si un groupe de rôles est supprimé, il sera supprimé de tous les cas dont il était membre.
+
+Avant d’ajouter ou de supprimer des rôles à un groupe de rôles qui peut être membre d’un cas eDiscovery, vous pouvez exécuter les commandes suivantes dans [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) pour obtenir la liste des cas dont le groupe de rôles est membre. Après avoir mis à jour le groupe de rôles, vous rajoutez le groupe de rôles en tant que membre de ces cas.
+
+### <a name="get-a-list-of-role-groups-assigned-to-core-ediscovery-cases"></a>Obtenir la liste des groupes de rôles affectés à des cas eDiscovery principaux
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group"
+```
+
+### <a name="get-a-list-of-role-groups-assigned-to-advanced-ediscovery-cases"></a>Obtenir la liste des groupes de rôles affectés à Advanced eDiscovery cas
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
+```
 
 ## <a name="more-information"></a>Plus d’informations
 
@@ -173,7 +197,7 @@ Ce rôle permet aux utilisateurs d’effectuer une suppression en bloc de donné
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange groupes de distribution et Microsoft 365 groupes de distribution ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security` . Vous pouvez également créer un groupe de sécurité à messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). L’ajout d’une nouvelle sécurité à messagerie au groupe de rôles gestionnaires eDiscovery peut prendre jusqu’à 60 minutes après sa création. 
+    Exchange groupes de distribution et Microsoft 365 de distribution ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à messagerie, que vous pouvez créer dans Exchange Online PowerShell en exécutant `New-DistributionGroup -Type Security` . Vous pouvez également créer un groupe de sécurité à messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le [Centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). L’ajout d’une nouvelle sécurité à messagerie au groupe de rôles gestionnaires eDiscovery peut prendre jusqu’à 60 minutes après sa création. 
 
     Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à messagerie un administrateur eDiscovery à l’aide de la cmdlet **Add-eDiscoveryCaseAdmin** dans le Centre de sécurité & conformité PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery.
 

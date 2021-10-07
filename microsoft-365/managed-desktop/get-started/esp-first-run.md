@@ -8,14 +8,14 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3037225e2d628345b672bfae145bcba570cbbc23
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8c73ff558165a370e5709a1e43482d689dd7953d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179515"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178610"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Expérience de première exécution avec le pilote automatique et la page état d’inscription
 
@@ -110,7 +110,7 @@ Après le redémarrage, l’appareil affiche l’écran d’état vert, avec un 
 > - ESP ne s’exécute pas à nouveau après Autopilot pour la fonction de réapprovisionnement de déploiement pré-mise en service.
 > - L’appareil n’est pas renommé par Autopilot pour le déploiement pré-mis en service. L’appareil sera renommé uniquement après avoir passé par le flux utilisateur ESP.
 
-## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modifier les paramètres Autopilot et Page d’état de l’inscription
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modification des paramètres Autopilot et Page d’état de l’inscription
 
 Si la configuration utilisée par Microsoft Manged Desktop ne correspond pas exactement à vos besoins, vous pouvez déposer un ticket de support via le portail [d’administration.](https://portal.azure.com/) Voici quelques exemples des types de configuration dont vous pourriez avoir besoin :
 

@@ -1,13 +1,13 @@
 ---
 title: Définir la façon dont les appareils mobiles sont mis à jour par Antivirus Microsoft Defender
 description: Gérer la façon dont les appareils mobiles, tels que les ordinateurs portables, doivent être mis à jour avec Antivirus Microsoft Defender de protection.
-keywords: updates, protection, schedule updates, battery, mobile device, laptop, notebook, opt-in, microsoft update, wsus, override
+keywords: mises à jour, protection, planification des mises à jour, batterie, appareil mobile, ordinateur portable, bloc-notes, opt-in, microsoft update, wsus, override
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 212a746e217e071c4770e4830bd101f18bb27f3e
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 5e95167e5493e55e375dc5827531a6f22b139023
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491180"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60178334"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Gérer les mises à jour pour les appareils mobiles et les machines virtuelles
 
@@ -41,7 +41,7 @@ Deux paramètres sont utiles pour ces appareils :
 
 Les articles suivants peuvent également être utiles dans les situations suivantes :
 - [Configuration des analyses de rattrapage et de planification](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Opter pour Microsoft Update sur des ordinateurs mobiles sans connexion WSUS
@@ -88,13 +88,13 @@ Vous pouvez configurer Antivirus Microsoft Defender pour télécharger les mises
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Utiliser la stratégie de groupe pour empêcher les mises à jour des informations de sécurité sur l’alimentation de la batterie
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, choisissez l’objet de stratégie de groupe que vous souhaitez configurer et ouvrez-le pour modification.
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, choisissez l’objet de stratégie de groupe que vous souhaitez configurer et ouvrez-le pour modification.
 
 2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration ordinateur.**
 
 3. Sélectionnez **stratégies** **puis modèles d’administration.**
 
-4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des \>  \> **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez une batterie sur **Désactivé.** Puis sélectionnez **OK**.
+4. Développez l’arborescence **Windows composants** Antivirus Microsoft Defender mises à jour des \>  \> **signatures,**  puis définissez Autoriser les mises à jour d’informations de sécurité lorsque vous exécutez l’alimentation sur batterie **sur Désactivé.** Puis sélectionnez **OK**.
 
 Cette action empêche le téléchargement des mises à jour de protection lorsque le PC est sur batterie.
 

@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les étapes Microsoft 365 configuration requises pour configurer un site SharePoint pour la collaboration avec des invités.
-ms.openlocfilehash: 5cb1b34832c8a7b4c5152efd5ab151218de1cd36
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aac548381b8b56ef753f762e9ef7bf0c07cf9163
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202674"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190208"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
 Si vous avez besoin de collaborer avec des invités dans des documents, des données et des listes, vous pouvez utiliser un site SharePoint web. Les sites SharePoint modernes sont connectés à des groupes Microsoft 365 et peuvent gérer l’appartenance au site et fournir des outils de collaboration supplémentaires tels qu’une boîte aux lettres partagée et un calendrier.
 
-Dans cet article, nous allons passer en revue les étapes de configuration Microsoft 365 nécessaires pour configurer un site SharePoint collaboration avec des invités.
+Dans cet article, nous allons passer en revue les étapes de configuration Microsoft 365 nécessaires pour configurer un site SharePoint pour la collaboration avec les invités.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -76,7 +76,7 @@ Pour définir les paramètres invités des groupes Microsoft 365
 
 Pour que les invités ont accès à SharePoint sites web, les paramètres SharePoint de partage au niveau de l’organisation doivent autoriser le partage avec des invités.
 
-Les paramètres au niveau de l’organisation déterminent les paramètres qui seront disponibles pour les sites individuels. Les paramètres de site ne peuvent pas être plus permissifs que les paramètres au niveau de l’organisation.
+Les paramètres au niveau de l’organisation déterminent les paramètres qui seront disponibles pour des sites individuels. Les paramètres de site ne peuvent pas être plus permissifs que les paramètres au niveau de l’organisation.
 
 Si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifiés, choisissez **Tout le monde.** Si vous souhaitez vous assurer que toutes les personnes extérieures à votre organisation doivent s’authentifier, choisissez Invités nouveaux **et existants.** Choisissez le paramètre le plus permissif qui sera nécessaire pour n’importe quel site de votre organisation.
 
@@ -128,7 +128,7 @@ Les paramètres de partage d’invités sont désormais configurés, afin que vo
 
 Pour inviter des utilisateurs internes à un groupe
 1. Accédez au site où vous souhaitez ajouter des utilisateurs.
-2. Cliquez **sur Lien** Membres dans le coin supérieur droit qui indique le nombre de membres.
+2. Cliquez **sur le** lien Membres dans le coin supérieur droit qui indique le nombre de membres.
 3. Cliquez sur **Ajouter des membres**.
 4. Tapez les noms ou adresses e-mail des utilisateurs que vous souhaitez inviter sur le site, puis cliquez sur **Enregistrer**.
 

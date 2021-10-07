@@ -7,18 +7,18 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment signaler les faux positifs et les faux négatifs dans Outlook à l’aide de la fonctionnalité Signaler un message.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34afd8d8e15bc301f42850763d39e1846a66e6d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef5a4be293c41135dcba00bcd02ab7c337192626
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190268"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Signaler les faux positifs et les faux négatifs dans Outlook
 
@@ -57,7 +57,7 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Onli
 
 Pour les messages dans la boîte de réception ou tout autre dossier de courrier électronique à l’exception du courrier indésirable, utilisez la méthode suivante pour signaler le courrier indésirable et les messages de hameçonnage :
 
-1. Sélectionnez les ellipses Autres **actions** dans le coin supérieur droit du message sélectionné, sélectionnez Signaler **le message** dans le menu déroulant, puis sélectionnez Courrier indésirable ou **Hameçonnage.** 
+1. Sélectionnez les **ellipses** Autres actions dans le coin supérieur droit du message sélectionné, sélectionnez Signaler **le message** dans le menu déroulant, puis sélectionnez Courrier indésirable ou **Hameçonnage.** 
 
    ![Message de rapport - Plus d’actions.](../../media/report-message-more-actions.png)
 

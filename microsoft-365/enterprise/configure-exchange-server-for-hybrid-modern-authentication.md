@@ -7,7 +7,7 @@ ms.date: 06/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment configurer un environnement Exchange Server local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7a24e2c9d1e3d2fd2d1d83d9743b6f4e19e9701
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef3e584103906ec649df052897e5facdfabd8086
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209372"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190568"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -71,7 +71,7 @@ L’ment HMA signifie :
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Ajouter des URL de service web local en tant que SSN dans Azure AD
 
-Exécutez les commandes qui affectent vos URL de service web local en tant que SSN Azure AD. Les SSN sont utilisés par les ordinateurs clients et les appareils lors de l’authentification et de l’autorisation. Toutes les URL qui peuvent être utilisées pour se connecter de l’environnement local à Azure Active Directory (Azure AD) doivent être enregistrées dans Azure AD (cela inclut les espaces de noms internes et externes).
+Exécutez les commandes qui affectent vos URL de service web local en tant que SSN Azure AD. Les SSN sont utilisés par les appareils et les ordinateurs clients lors de l’authentification et de l’autorisation. Toutes les URL qui peuvent être utilisées pour se connecter de l’environnement local à Azure Active Directory (Azure AD) doivent être enregistrées dans Azure AD (cela inclut les espaces de noms internes et externes).
 
 Tout d’abord, rassemblez toutes les URL que vous devez ajouter dans AAD. Exécutez les commandes ci-après en local :
 
@@ -173,7 +173,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 Une fois que vous avez activé HMA, la connexion suivante d’un client utilise le nouveau flux d’authentification. Notez que le simple fait d’allumer HMA ne déclenche pas de réauthentication pour un client et que la sélection des nouveaux paramètres par Exchange peut prendre un certain temps.
 
-Vous devez également maintenir la touche CTRL en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type « Authn » de « Bearer » qui représente le jeton du porteur utilisé dans \* OAuth.
+Vous devez également maintenir la touche Ctrl en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type « Authn » de « Bearer » qui représente le jeton du porteur utilisé dans \* OAuth.
 
 > [!NOTE]
 > Vous devez configurer Skype Entreprise avec HMA ? Vous aurez besoin de deux articles : un qui répertorie les [topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)pris en charge et un qui vous montre comment [faire la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des ressources pour les utilisateurs qui utilisent Office 2007 ou Office 2010 pour les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 1e4379510ba6c4cf36200a6f49f56aa11a151140
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f5a8c3e4f1e3576684ea037609c39ff8511186e2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179708"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208768"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planifiez votre mise à jour des serveurs et clients Office 2007 et Office 2010
 
@@ -44,7 +44,7 @@ Microsoft 365 inclut les licences et fonctionnalités pour vous assurer que votr
   
 Microsoft 365 est la façon de transformer numériquement votre entreprise en améliorant constamment les appareils et les expériences de productivité activés et sécurisés par le cloud Microsoft.
  
-|Resource|Description|
+|Ressource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Obtenez des informations sur les versions de Microsoft 365.|
 |[documentation Microsoft 365 entreprise](../admin/index.yml)|Obtenez des informations détaillées sur la version de Microsoft 365 pour les petites et moyennes entreprises.|
@@ -91,7 +91,7 @@ Si vous utilisez Office 2007 ou Office 2010 à la maison, envisagez les options 
 
 - **Utilisez Office dans un navigateur gratuitement.** Créez, affichez et modifiez des Office dans votre navigateur. Accédez à ces fichiers à partir de n’importe quel appareil dispose d’un accès à Internet. 
 
-  [Office sur le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote sur le Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway,](https://go.microsoft.com/fwlink/p/?linkid=746675) [e-mail,](https://go.microsoft.com/fwlink/p/?linkid=746676)calendrier [et OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). [](https://go.microsoft.com/fwlink/p/?linkid=746678) Pour commencer, visitez [Office.com](https://office.com) et connectez-vous à l’aide de [votre compte Microsoft.](https://account.microsoft.com/account) Si vous n’avez pas de compte Microsoft, vous pouvez en créer un [sur Office.com.](https://office.com)
+  [Office sur le Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclut [Word sur le Web,](https://go.microsoft.com/fwlink/p/?linkid=746664) [Excel sur le Web,](https://go.microsoft.com/fwlink/p/?linkid=746665) [PowerPoint sur le Web,](https://go.microsoft.com/fwlink/p/?linkid=746666) [OneNote sur le Web,](https://go.microsoft.com/fwlink/p/?linkid=746674) [Sway,](https://go.microsoft.com/fwlink/p/?linkid=746675) [e-mail,](https://go.microsoft.com/fwlink/p/?linkid=746676) [calendrier](https://go.microsoft.com/fwlink/p/?linkid=746678)et [ OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Pour commencer, visitez [Office.com](https://office.com) et connectez-vous à l’aide de [votre compte Microsoft.](https://account.microsoft.com/account) Si vous n’avez pas de compte Microsoft, vous pouvez en créer un [sur Office.com.](https://office.com)
 
 - **Essayez Microsoft 365 Famille.** Démarrez une version [d Microsoft 365 Famille](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) pour voir comment elle fonctionne pour vous. Avec Microsoft 365 Famille, vous pourrez profiter du stockage cloud avec OneDrive.
 

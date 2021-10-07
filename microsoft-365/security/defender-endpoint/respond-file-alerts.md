@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3169464afe92a8af80df1b6dedfd9f7eb806a402
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 816e08c4c6ba3b2a50c981401163531d2b5d63c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042625"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198159"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -144,7 +144,7 @@ Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez détermi
    > Defender for Endpoint restaure tous les fichiers bloqués personnalisés mis en quarantaine sur cet appareil au cours des 30 derniers jours.
 
 > [!IMPORTANT]
-> Il est possible qu’un fichier mis en quarantaine comme menace réseau ne soit pas récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
+> Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
 ## <a name="download-or-collect-file"></a>Télécharger ou collecter un dossier
 
@@ -158,7 +158,7 @@ Par défaut, vous devez être en mesure de télécharger les fichiers en quarant
 
 Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés conformément à vos [exemples de configurations d’envoi.](enable-cloud-protection-microsoft-defender-antivirus.md) Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité d’aperçu est « allumée » par défaut.**
 
-L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services sur https://aka.ms/STP .
+L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services à https://aka.ms/STP l’aide de .
 
 Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fichiers potentiellement dangereux et examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce  paramètre, Paramètres les fonctionnalités avancées des points de terminaison téléchargent les fichiers mis en quarantaine pour \>  \>  \>  ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
 
@@ -225,7 +225,7 @@ Pour [plus d’informations, consultez un expert](/microsoft-365/security/defend
 
 ## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le Centre de notifications
 
-Le **centre de sécurité fournit** des informations sur les actions qui ont été prises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
+Le **centre de données fournit** des informations sur les actions qui ont été entreprises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
 
 - Collection de packages d’examen
 - Analyse antivirus
@@ -281,7 +281,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
    Une barre de progression s’affiche et fournit des informations sur les différentes étapes de l’analyse. Vous pouvez ensuite afficher le rapport une fois l’analyse effectuée.
 
 > [!NOTE]
-> En fonction de la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a Windows 10 de rapports sur l’appareil à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
+> En fonction de la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a pas de Windows 10'appareil en ligne à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
 
 ### <a name="view-deep-analysis-reports"></a>Afficher des rapports d’analyse approfondie
 
@@ -324,8 +324,8 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
 
 6. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Prendre des mesures de réponse sur un appareil](respond-machine-alerts.md)
 - [Examiner des fichiers](investigate-files.md)
-- [Actions de réponse manuelles dans Microsoft Defender pour Endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Actions de réponse manuelles dans Microsoft Defender pour endpoint Plan 1 (prévisualisation)](defender-endpoint-plan-1.md#manual-response-actions)

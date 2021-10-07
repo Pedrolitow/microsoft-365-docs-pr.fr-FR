@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365-security-compliance
@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 171a28eceecc03239c06410191c781a4400b2ef7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164025"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197676"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
@@ -41,7 +41,7 @@ Avant de commencer à vous conformer à la conformité des communications, vous 
 - Microsoft 365 A5 abonnement (version payante ou d’essai)
 - Microsoft 365 A3 abonnement + le module Microsoft 365 A5 conformité de l’application
 - Microsoft 365 A3 abonnement + le module Microsoft 365 A5 gestion des risques internes
-- Microsoft 365 Abonnement G5 (version payante ou d’essai)
+- Abonnement Microsoft 365 G5 (version payante ou d’essai)
 - Microsoft 365 Abonnement G5 + module Microsoft 365 conformité G5
 - Microsoft 365 Abonnement G5 + module Microsoft 365 G5 Gestion des risques internes
 - Office 365 Entreprise Abonnement E5 (version payante ou d’essai)
@@ -51,7 +51,7 @@ Avant de commencer à vous conformer à la conformité des communications, vous 
 L’une des licences ci-dessus doit être attribuée aux utilisateurs inclus dans les stratégies de conformité des communications.
 
 > [!IMPORTANT]
-> Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
+> Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités supplémentaires.
 
 Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essayer la conformité des [](https://www.microsoft.com/microsoft-365/enterprise) communications, vous pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’essai de Office 365 Entreprise E5.
 
@@ -62,7 +62,7 @@ Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essa
 
 Il existe cinq groupes de rôles utilisés pour configurer les autorisations pour gérer les fonctionnalités de conformité des communications. Pour rendre **la conformité des** communications disponible en tant qu’option de menu dans  Centre de conformité Microsoft 365  et pour poursuivre ces étapes de configuration, vous devez être affecté aux groupes de rôles Conformité des communications ou Administrateur de la conformité des communications. Pour accéder aux fonctionnalités de conformité des communications et les gérer après la configuration initiale, les utilisateurs doivent être membres d’au moins un groupe de rôles de conformité des communications.
 
-Selon la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devez affecter des utilisateurs à des groupes de rôles spécifiques. Vous avez la possibilité d’affecter des utilisateurs ayant différentes responsabilités de conformité à des groupes de rôles spécifiques pour gérer différents domaines des fonctionnalités de conformité des communications. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les administrateurs, analystes, enquêteurs et visionneuses désignés au groupe de rôles *Conformité* des communications. Utilisez un ou plusieurs groupes de rôles pour mieux vous adapter à vos exigences de gestion de la conformité.
+Selon la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devez affecter des utilisateurs à des groupes de rôles spécifiques. Vous avez la possibilité d’affecter des utilisateurs ayant différentes responsabilités de conformité à des groupes de rôles spécifiques pour gérer différents domaines des fonctionnalités de conformité des communications. Vous pouvez également décider d’affecter tous les comptes d’utilisateur pour les  administrateurs, analystes, enquêteurs et visionneuses désignés au groupe de rôles Conformité des communications. Utilisez un ou plusieurs groupes de rôles pour mieux vous adapter à vos exigences de gestion de la conformité.
 
 Choisissez parmi ces options de groupe de rôles lors de la configuration de la conformité des communications :
 
@@ -171,7 +171,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Étape 4 (facultative) : vérifiez que votre client Yammer est en mode natif
 
-En mode natif, tous les Yammer utilisateurs sont en Azure Active Directory (Azure AD), tous les groupes sont des groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre client Yammer doit être en mode natif pour les stratégies de conformité des communications afin d’analyser et d’identifier les conversations à risque dans les messages privés et les conversations de la communauté Yammer.
+En mode natif, tous les Yammer utilisateurs sont en Azure Active Directory (Azure AD), tous les groupes sont des groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre client Yammer doit être en mode natif pour les stratégies de conformité des communications afin d’analyser et d’identifier les conversations à risque dans les messages privés et les conversations de la communauté dans Yammer.
 
 Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 
@@ -222,7 +222,7 @@ Pour plus d’informations sur la configuration Yammer en mode natif, voir :
 
     - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter un langage inapproprié et des images envoyées ou reçues dans le corps des messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace,* blasphémité, harcèlement *ciblé,* *images* pour adultes, *images racy* et *images de requête.*
 
-    - Activez [la reconnaissance optique de caractères (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie. Pour les stratégies personnalisées, un ou plusieurs paramètres conditionnels associés à du texte, des mots clés, des classifieurs ou des types d’informations sensibles doivent être configurés dans la stratégie pour permettre la sélection de l’analyse optique de la reconnaissance de caractères.
+    - Activez la reconnaissance optique de [caractères (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) pour analyser les images incorporées ou jointes dans les messages pour le texte imprimé ou manuscrit qui correspond aux conditions de stratégie. Pour les stratégies personnalisées, un ou plusieurs paramètres conditionnels associés à du texte, des mots clés, des classifieurs ou des types d’informations sensibles doivent être configurés dans la stratégie pour permettre la sélection de l’analyse optique de la reconnaissance de caractères.
 
     - Définissez le Pourcentage de communications à réviser.
 

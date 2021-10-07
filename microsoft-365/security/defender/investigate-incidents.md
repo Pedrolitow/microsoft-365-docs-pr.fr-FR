@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dd0b33ca6c2045a0f709e94e4c59f89b99b58bc7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 31dbc29d2aca019c2b2553bb7ffa3082e410aab9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202908"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209200"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -46,7 +46,7 @@ Au sein d’un incident, vous analysez les alertes qui affectent votre réseau, 
 
 ## <a name="initial-investigation"></a>Examen initial
 
-Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l’incident.
+Avant de vous plonger dans les détails, jetez un œil aux propriétés et au résumé de l’incident.
 
 Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. Voici un exemple.
 
@@ -147,7 +147,7 @@ Découvrez comment afficher des informations utilisateur supplémentaires et gé
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Exemple de page Boîtes aux lettres pour un incident.":::
 
-Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir d’autres détails sur la boîte aux lettres dans la page Explorateur de Microsoft Defender pour Office 365.
+Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des alertes actives. Sélectionnez le nom de la boîte aux lettres pour voir des détails supplémentaires sur la page Explorateur de Microsoft Defender pour Office 365.
 
 ## <a name="investigations"></a>Enquêtes
 
@@ -160,7 +160,7 @@ Sélectionnez un examen pour accéder à sa page de détails pour obtenir des in
 Il existe également un onglet **Graphique d’investigation** qui indique :
 
 - La connexion des alertes aux biens touchés dans votre organisation.
-- Les entités liées aux alertes et à la façon dont elles font partie de l’article de l’attaque.
+- Entités liées aux alertes et à la façon dont elles font partie de l’article de l’attaque.
 - Alertes pour l’incident.
 
 Le graphique d’enquête vous permet de comprendre rapidement l’étendue complète de l’attaque en connectant les différentes entités suspectes faisant partie de l’attaque avec leurs biens connexes tels que les utilisateurs, les périphériques et les boîtes aux lettres. 

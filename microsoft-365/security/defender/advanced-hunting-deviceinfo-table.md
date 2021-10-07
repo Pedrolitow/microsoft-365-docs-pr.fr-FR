@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 88d91e2434871014cf286bbb27812e60036cb5cb
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 2e71699e35339fe6fcf81b9eeaa93e84737e026d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042721"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60190424"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -52,7 +52,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 11, Windows 10 et Windows 7. |
 | `OSBuild` | string | Version de build du système d’exploitation en cours d’exécution sur l’ordinateur |
-| `IsAzureADJoined` | booléen | Indicateur booléen pour savoir si l’ordinateur est joint au Azure Active Directory |
+| `IsAzureADJoined` | valeur booléenne | Indicateur booléen pour savoir si l’ordinateur est joint au Azure Active Directory |
 | `AadObjectId` | string | Identificateur unique de l’appareil dans Azure AD |
 | `LoggedOnUsers` | string | Liste de tous les utilisateurs connectés à l’ordinateur au moment de l’événement au format de tableau JSON |
 | `RegistryDeviceTag` | string | Balise d’ordinateur ajoutée via le Registre |
@@ -82,7 +82,7 @@ DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId 
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
