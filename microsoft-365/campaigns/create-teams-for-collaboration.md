@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un espace de collaboration pour votre équipe avec Microsoft Teams.
-ms.openlocfilehash: c787f2c493643dcba2bbd5985fa518210aa8a5c6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ad0c9c938d7c5766bffc6fc960197b0568eb9cb5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178284"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189704"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Créer des équipes pour la collaboration dans Microsoft Teams
 
@@ -53,9 +53,9 @@ Les campagnes peuvent également créer les équipes suivantes pour communiquer 
 
 1. **Une équipe de directeurs de campagne :** Définissez-la en tant qu’équipe privée afin que seuls les membres de votre campagne clé y accèdent et discutent de problèmes potentiellement sensibles.
 2. **Une équipe de campagne générale :** Tout le monde peut l’utiliser pour les communications et le travail au quotidien. Les individus, les groupes ou les comités peuvent configurer des canaux dans cette équipe pour faire leur travail. Par exemple, les personnes qui planifient des événements peuvent configurer un canal pour discuter et coordonner la logistique des événements de campagne.
-3. **Une équipe partenaires :** Coordonnez-vous avec vos fournisseurs, partenaires ou volontaires sans leur permettre d’entrer en ligne de compte.
+3. **Une équipe partenaire :** Coordonnez-vous avec vos fournisseurs, partenaires ou volontaires sans leur permettre d’entrer en ligne de compte.
 
-![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes permettant une communication et une collaboration sécurisées au sein d’une campagne.](../media/m365-democracy-teams-collab.png)
+![Diagramme d’une fenêtre Microsoft Teams avec trois équipes distinctes pour assurer une communication et une collaboration sécurisées au sein d’une campagne.](../media/m365-democracy-teams-collab.png)
 
 Lorsque vous créez une équipe, voici les autres choses qui sont créées :
 

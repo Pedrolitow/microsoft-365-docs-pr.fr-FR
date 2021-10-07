@@ -7,7 +7,7 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
 description: Microsoft 365 Services de localisation de connectivité réseau
-ms.openlocfilehash: 025a4a158378335271ac50e6cd8199d2b9f36106
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71908e5c0f697aac3068af205adc998f88a00c85
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205403"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199920"
 ---
 # <a name="microsoft-365-network-connectivity-location-services"></a>Microsoft 365 Services de localisation de connectivité réseau
 

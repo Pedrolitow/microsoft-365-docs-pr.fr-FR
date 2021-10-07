@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cd0fac1d4dec536d33f811f5c494127a52f746c3
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: eb1b28b49bbf684f0f1845eafb1332c7fb00be12
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491038"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205630"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>Configurer des exclusions pour les fichiers ouverts par des processus
 
@@ -48,13 +48,13 @@ Lorsque vous ajoutez un processus à la liste d’exclusions de processus, Antiv
 
 Les exclusions s’appliquent uniquement à la protection et à la surveillance en temps [réel toujours en temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Elles ne s’appliquent pas aux analyses programmées ou à la demande.
 
-Les modifications apportées avec  la stratégie de groupe aux listes d’exclusions s’afficheront dans les listes de [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées à l Sécurité Windows’application **ne s’afficheront pas** dans les listes de stratégie de groupe.
+Les modifications apportées avec la stratégie de groupe aux **listes** d’exclusions s’afficheront dans les listes de [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées dans l Sécurité Windows appapplment de groupe **ne s’afficheront** pas dans les listes de stratégie de groupe.
 
 Vous pouvez ajouter, supprimer et examiner les listes pour les exclusions dans la stratégie de groupe, Microsoft Endpoint Configuration Manager, Microsoft Intune et avec l’application Sécurité Windows, et vous pouvez utiliser des caractères génériques pour personnaliser davantage les listes.
 
 Vous pouvez également utiliser les cmdlets PowerShell et WMI pour configurer les listes d’exclusions, y compris la révision de vos listes.
 
-Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur, les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégies de groupe sont prioritaire en cas de conflit.
+Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur , les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégies de groupe sont prioritaire en cas de conflit.
 
 Vous pouvez [configurer la façon dont les listes d’exclusions définies](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) localement et globalement sont fusionnées pour permettre aux modifications locales de remplacer les paramètres de déploiement géré.
 
@@ -81,7 +81,7 @@ Découvrez comment créer et déployer des stratégies de logiciel [anti-program
     2. Sous la section **Options,** cliquez sur **Afficher...**.
     3. Entrez chaque processus sur sa propre ligne sous la **colonne Nom de** la valeur. Consultez l’exemple de tableau pour les différents types d’exclusions de processus. Entrez **0 dans** la colonne **Valeur** pour tous les processus.
 
-5. Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
 ### <a name="use-powershell-cmdlets-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser les cmdlets PowerShell pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 
@@ -163,17 +163,17 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou version ultérieure.
+> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou ultérieure.
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences Antivirus Microsoft Defender à l’aide de PowerShell
 
-Utilisez la cmdlet suivante :
+Utilisez l’cmdlet suivante :
 
 ```PowerShell
 Get-MpPreference
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Récupérer une liste d’exclusions spécifique à l’aide de PowerShell
 
@@ -184,7 +184,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender) Antivirus Microsoft Defender et Defender.
 
 ## <a name="related-articles"></a>Articles connexes
 

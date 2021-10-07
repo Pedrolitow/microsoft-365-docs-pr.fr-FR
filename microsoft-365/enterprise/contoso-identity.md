@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: b8943f0af678ed3d86d1428fe44cd6ab67554470
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 73b58f21ef24465332b902a36bba3d100d06d5b6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207715"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202918"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
@@ -27,7 +27,7 @@ Microsoft fournit l’identité en tant que service (IDaaS) dans ses offres clou
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Forêt des services de domaine Active Directory contoso
 
-Contoso utilise une seule forêt AD DS (Active Directory Domain Services) pour contoso com avec sept sous-domaines, un pour chaque région \. du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
+Contoso utilise une forêt AD DS (Active Directory Domain Services) unique pour contoso com avec sept sous-domaines, un pour chaque région \. du monde. Le siège social, les centres régionaux et les succursales disposent de contrôleurs de domaine pour l’authentification locale et l’autorisation.
 
 Voici la forêt Contoso avec des domaines régionaux pour les différentes régions du monde qui contiennent des centres régionaux.
 
@@ -58,7 +58,7 @@ PHS synchronise la forêt AD DS sur site avec le client Azure AD de son Microsof
 
 Pour la synchronisation d’annuaires, Contoso a déployé l’outil Connecter Azure AD sur un serveur dans son centre de données parisien.
 
-Voici le serveur exécutant Azure AD Connecter la forêt Contoso AD DS pour les modifications, puis la synchronisation de ces modifications avec le client Azure AD.
+Voici le serveur exécutant Azure AD pour Connecter la forêt Contoso AD DS pour les modifications, puis la synchronisation de ces modifications avec le client Azure AD.
 
 ![Infrastructure de synchronisation d’annuaires PHS Contoso.](../media/contoso-identity/contoso-identity-fig4.png)
  

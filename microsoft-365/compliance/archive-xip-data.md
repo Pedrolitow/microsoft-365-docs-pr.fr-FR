@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données sources XIP à partir de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 7782685694ccf26939a1bae44428374c20169736
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 08a50981f80afe78f4f484c6c7ca079b7b8903f6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178012"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204490"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>Configurer un connecteur pour archiver les données sources XIP
 
 Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme source XIP vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas fournit un [connecteur XIP](https://globanet.com/xip/) qui permet à l’aide d’un fichier XIP d’importer des éléments vers Microsoft 365. Un fichier XIP est similaire à un fichier ZIP, mais permet l’utilisation d’une signature numérique. La signature numérique est vérifiée par Veritas Merge 1 avant l’extraction du fichier source XIP. Le connecteur convertit le contenu du fichier source XIP au format de message électronique, puis importe ces éléments dans les boîtes aux lettres de l’utilisateur Microsoft 365.
 
-Une fois que les données sources XIP sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur XIP pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données sources XIP sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur XIP pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-the-xip-source-data"></a>Vue d’ensemble de l’archivage des données sources XIP
 

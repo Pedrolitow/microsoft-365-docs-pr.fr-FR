@@ -10,13 +10,13 @@ f1.keywords:
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
-ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: f6df4ed3568be232927b7c427341d16eb869b7ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203213"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199824"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
@@ -48,7 +48,7 @@ Microsoft Manged Desktop ne prend pas en charge le déploiement de la version 32
 
 ## <a name="updates-to-microsoft-365-apps"></a>Mises à jour de Microsoft 365 Apps
 
-Microsoft 365 Apps sont définies pour être mises à jour sur le [canal Enterprise mensuel.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Cette pratique fournit à vos utilisateurs de nouvelles fonctionnalités de Office chaque mois, mais ils ne reçoivent qu’une seule mise à jour par mois selon un calendrier de publication prévisible. Les mises à jour sont publiées le deuxième mardi du mois . Ces mises à jour peuvent inclure des mises à jour de fonctionnalité, de sécurité et de qualité. Ces mises à jour se produisent automatiquement et sont directement tirées du Office CDN pour ce canal spécifique.
+Microsoft 365 Apps sont définies pour être mises à jour sur le [canal Enterprise mensuel.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Cette pratique fournit à vos utilisateurs de nouvelles fonctionnalités Office chaque mois, mais ils ne reçoivent qu’une seule mise à jour par mois selon un calendrier de publication prévisible. Les mises à jour sont publiées le deuxième mardi du mois . Ces mises à jour peuvent inclure des mises à jour de fonctionnalité, de sécurité et de qualité. Ces mises à jour se produisent automatiquement et sont directement tirées du Office CDN pour ce canal spécifique.
 
 Microsoft Manged Desktop chaque version afin d’identifier les problèmes potentiels dans votre environnement. Nous avons terminé le déploiement 28 jours après la publication du groupe de produits Microsoft 365 App. Microsoft Manged Desktop les mises à jour de différents groupes afin de laisser le temps à la validation et aux tests de la manière suivante : 
 
@@ -67,7 +67,7 @@ Au cours d’une publication, Microsoft Manged Desktop les taux d’erreur de to
 
 ### <a name="delivery-optimization"></a>Optimisation de la distribution
 
-L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation peut aider à réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
+L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation permet de réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
 
 [L’optimisation de](/deployoffice/delivery-optimization) la distribution est activée par défaut sur les appareils exécutant Windows 10 Entreprise ou Windows 10 Éducation éditions. 
 
@@ -110,11 +110,11 @@ Le paramètre « Masquer les notifications de mise à jour » est définie [](/d
 
 **Valeur par défaut**: Canal Enterprise mensuel
 
-Une combinaison des **stratégies UpdatePath** et **UpdateChannel** est utilisée selon les besoins pour réaliser la planification des mises à jour. Ces stratégies sont définies pour garantir que tous les appareils Office reçoivent les mises à jour directement du CDN pour le canal Enterprise mensuel.
+Une combinaison des **stratégies UpdatePath** et **UpdateChannel** est utilisée selon les besoins pour atteindre la planification des mises à jour. Ces stratégies sont définies pour garantir que tous les appareils Office reçoivent les mises à jour directement du CDN pour le canal Enterprise mensuel.
 
 ### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Spécifier la version cible de Microsoft 365 Apps
 
-La stratégie de version cible est parfois utilisée par les Microsoft Manged Desktop afin de revenir en arrière ou épingler une version spécifique de Office. 
+La stratégie de version cible est parfois utilisée par les Microsoft Manged Desktop pour revenir en arrière ou épingler une version spécifique d Office. 
 
 
 ### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Masquer l’option permettant d’activer ou de désactiver Office mises à jour automatiques
@@ -141,13 +141,13 @@ La première fois qu’un utilisateur ouvre Outlook il est invité à installer 
 
 ## <a name="other-settings"></a>Autres paramètres
 
-Il existe d’Microsoft 365 de l’application que vous Microsoft Manged Desktop éventuellement configurer en votre nom. 
+Il existe d’Microsoft 365 de l’application que Microsoft Manged Desktop pouvez éventuellement configurer en votre nom. 
 
 ### <a name="disable-personal-onedrive"></a>Désactiver les OneDrive
 
 **Valeur par défaut**: Disabled
 
-Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l’Microsoft Manged Desktop operations qui demande l’activer. 
+Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l Microsoft Manged Desktop des opérations de l’utilisateur afin que ce paramètre soit activé. 
 
 ## <a name="settings-you-manage"></a>Paramètres vous gérez
 
@@ -160,7 +160,7 @@ Il existe de nombreuses autres stratégies que Microsoft Manged Desktop n’a pa
     - Fournissez une description (facultative).
     - Dans **les affectations,** choisissez si cette stratégie s’applique à tous les utilisateurs de Applications Microsoft 365 pour les grandes entreprises ou uniquement aux utilisateurs qui accèdent anonymement aux documents à l’aide de Office sur le Web.
     - Sélectionnez le groupe de sécurité basé sur AAD affecté à la configuration de la stratégie. Chaque configuration de stratégie ne peut être affectée qu’à un seul groupe, et chaque groupe ne peut être affecté qu’à une seule configuration de stratégie.
-    - Configurez les paramètres de stratégie à inclure dans la configuration de la stratégie. Vous pouvez effectuer une recherche sur le nom du paramètre de stratégie pour trouver le paramètre de stratégie que vous souhaitez configurer. Vous pouvez également filtrer l’application, si la stratégie est une ligne de base de sécurité recommandée et si la stratégie a été configurée. La colonne de plateforme indique si la stratégie est appliquée à Applications Microsoft 365 pour les grandes entreprises pour Windows appareils, Office sur le Web ou tous.
+    - Configurez les paramètres de stratégie à inclure dans la configuration de stratégie. Vous pouvez effectuer une recherche sur le nom du paramètre de stratégie pour trouver le paramètre de stratégie que vous souhaitez configurer. Vous pouvez également filtrer l’application, si la stratégie est une ligne de base de sécurité recommandée et si la stratégie a été configurée. La colonne de plateforme indique si la stratégie est appliquée à Applications Microsoft 365 pour les grandes entreprises pour Windows appareils, Office sur le Web ou tous.
 4. Une fois que vous avez effectué vos sélections, choisissez **Créer.**
 
 > [!NOTE]

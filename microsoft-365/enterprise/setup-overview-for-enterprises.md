@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Ces étapes de vue d’ensemble sont conçues pour vous aider à configurer votre réseau, à créer vos identités, à déployer Microsoft 365 Apps et à migrer vos données.
-ms.openlocfilehash: ce19d135b46bb848aecb557610bc1ed1703fc686
-ms.sourcegitcommit: e269371de759a1a747c9f292775463aa11415f25
+ms.openlocfilehash: 9ace2ce08a48600f20b5e04111a4b2e67d82e8d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "58355867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205820"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Déployer Microsoft 365 Entreprise pour votre organisation
 
@@ -41,7 +41,7 @@ Cet article décrit deux options de déploiement, que vous vouliez de l’aide o
 Pour accéder à une série de guides d’installation, connectez-vous à votre abonnement Microsoft 365, puis accédez aux conseils [d’installation.](https://aka.ms/o365fasttrack)
 
 >[!Note]
->Vous pouvez également obtenir de l’aide [d’un partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
+>Vous pouvez également obtenir de l’aide d’un [partenaire Microsoft.](https://www.microsoft.com/solution-providers/home)
 >
 
 ## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Déploiement guidé de do-it-yourself de Microsoft 365 Entreprise
@@ -64,7 +64,7 @@ Pour déployer Microsoft 365 Entreprise vous-même après avoir terminé votre p
  
 4. [Déployer le logiciel client](/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Inclut le déploiement de Applications Microsoft 365 pour les grandes entreprises (précédemment nommé Office 365 ProPlus), la version mise à jour dans le cloud et toujours actuelle de la suite Office (Word, Excel, PowerPoint, etc.) sur vos appareils. Chaque Microsoft 365 licence client inclut une licence pour Applications Microsoft 365 pour les grandes entreprises.
+   Inclut le déploiement Applications Microsoft 365 pour les grandes entreprises (précédemment nommé Office 365 ProPlus), la version mise à jour dans le cloud et toujours actuelle de la suite Office (Word, Excel, PowerPoint, etc.) sur votre appareils. Chaque Microsoft 365 licence client inclut une licence pour Applications Microsoft 365 pour les grandes entreprises.
  
 5. [Configurer la gestion des appareils mobiles](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
@@ -80,5 +80,5 @@ Pour déployer Microsoft 365 Entreprise vous-même après avoir terminé votre p
  
 
 >[!Note]
->Ces étapes sont également pour les entreprises [et](https://go.microsoft.com/fwlink/?LinkId=627221) les organisations à but non lucratif qui souhaitent commencer par un déploiement personnalisé de Microsoft 365 Entreprise. 
+>Ces étapes sont également pour les entreprises [et](https://go.microsoft.com/fwlink/?LinkId=627221) les associations qui souhaitent commencer par un déploiement personnalisé de Microsoft 365 Entreprise. 
 >

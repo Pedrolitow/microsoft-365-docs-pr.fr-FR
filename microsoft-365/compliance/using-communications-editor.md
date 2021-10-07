@@ -9,20 +9,20 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez l’Éditeur de communications pour modifier le texte et fusionner des variables de champ lors de la mise en forme de votre contenu.
+description: Utilisez l’Éditeur de communications pour modifier du texte et fusionner des variables de champ lors de la mise en forme de votre contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aceebf9f8a19448c05c137f668c2bca5db2d99bd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205707"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205976"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
 

@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: cb1588a1f4740839fd08949a4f2a79fcc95e32ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 71be198b6ad96b6131680c41130a2debfd89693c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203322"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210340"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 pour entreprise
 
@@ -45,7 +45,7 @@ Pour obtenir une carte visuelle de tous les articles de la pile de guides de lab
 
 Tout d’abord, créez un environnement de test [pour Microsoft 365 entreprise.](/microsoft-365-enterprise/) Vous pouvez créer deux types différents de configurations de base :
 
-- [Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) de base légère : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire la démonstration de Microsoft 365 pour les fonctionnalités et fonctionnalités d’entreprise dans un environnement cloud uniquement, qui n’inclut aucun composant local.
+- [Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) de base légère : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise et les fonctionnalités dans un environnement cloud uniquement, qui n’inclut aucun composant local.
 
 - Configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) d’entreprise simulée : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise dans un environnement cloud hybride, qui utilise des composants locaux tels qu’un domaine AD DS (Active Directory Domain Services).
 

@@ -7,18 +7,18 @@ ms.date: 10/22/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 et comparaisons de score réseau
-ms.openlocfilehash: b57055155505423118a9f51bca328add29dc8fdaa9a1c804acf222689209f6a9
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 008e3a1d8106f0e28072f7b80e6a9cbe46cdf83b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53858446"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199932"
 ---
 # <a name="office-365-network-score-benchmarks-and-comparisons"></a>Office 365 et comparaisons de score réseau

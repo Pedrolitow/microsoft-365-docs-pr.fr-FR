@@ -2,15 +2,13 @@
 title: Exemples de stratégies de contrôle d’appareil pour Intune
 description: Découvrez comment utiliser des stratégies de contrôle d’appareil à l’aide d’exemples qui peuvent être utilisés avec Intune.
 keywords: microsoft, defender, Microsoft Defender pour endpoint, mac, appareil, contrôle, usb, amovible, média, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9a0bd7bcb45e4ddf2a36cefb8906e1e5c5dd75d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 76befd49bea5429baee388b7cfc5d2b4693fb644
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179275"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205402"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Exemples de stratégies de contrôle d’appareil pour Intune
 
@@ -323,7 +321,7 @@ L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restreindre des appareils spécifiques identifiés par l’ID du fournisseur, l’ID de produit et le numéro de série
 
-L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID du fournisseur, l’ID de produit `fff0` et les numéros de série et `1000` `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
+L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID du `fff0` fournisseur, l’ID de produit `1000` et les numéros de série et `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

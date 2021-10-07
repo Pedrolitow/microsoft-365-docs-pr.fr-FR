@@ -7,7 +7,7 @@ ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -21,16 +21,16 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Découvrez comment améliorer les performances en remplaçant le partie Web De requête de contenu par le partie Web De recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
-ms.openlocfilehash: 270019b59666c3f52d67648a88c453278149fccd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d41983a5771e42d357ae4d2adb5864e2a74fdd57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202037"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210232"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Utilisation du service Web De recherche de contenu au lieu du partie Web De requête de contenu pour améliorer les performances dans SharePoint Online
 
-Cet article explique comment améliorer les performances en remplaçant le volet Web De requête de contenu par le service Web De recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
+Cet article explique comment améliorer les performances en remplaçant le partie Web Part de requête de contenu par le partie Web Part de recherche de contenu dans SharePoint Server 2013 et SharePoint Online.
   
 L’une des nouvelles fonctionnalités les plus puissantes de SharePoint Server 2013 et SharePoint Online est le service Web De recherche de contenu (CSWP). Ce partie Web Part utilise l’index de recherche pour récupérer rapidement les résultats qui sont affichés à l’utilisateur. Utilisez le partie Web Part de recherche de contenu au lieu du partie Web De requête de contenu (CQWP) dans vos pages pour améliorer les performances pour vos utilisateurs.
   

@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4a3aac06f19c7ed86af67f3b72bac8bf367628a8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2014b28635076c11179284b7d90d09707aafa2c1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204516"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206648"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
@@ -46,9 +46,9 @@ Une licence Microsoft 365 E5, sécurité E5, A5 ou A5 ou une combinaison valide 
 
 | Service pris en charge | Description |
 | ------ | ------ |
-| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyse cloud et d’intelligence des menaces |
+| Microsoft Defender pour point de terminaison | Suite de protection des points de terminaison conçue autour de puissants capteurs comportementaux, d’analyses cloud et d’intelligence des menaces |
 |Microsoft Defender pour Office 365 | Protection avancée de vos applications et données dans Office 365, y compris la messagerie électronique et d’autres outils de collaboration |
-| Microsoft Defender pour Identity | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
+| Microsoft Defender pour l’identité | Se défendre contre les menaces avancées, les identités compromises et les insiders malveillants à l’aide de signaux Active Directory corrélés |
 | Microsoft Cloud App Security | Identifier et lutter contre les cybermenaces au sein de vos services cloud Microsoft et tiers |
 
 ## <a name="deployed-services-and-functionality"></a>Services et fonctionnalités déployés
@@ -67,9 +67,9 @@ Le tableau ci-dessous répertorie la façon dont chaque service pris en charge f
 
 | Service | Données (signaux & des informations corrélées) | Correction et & de réponse |
 | ------ | ------ | ------ |
-| Microsoft Defender pour point de terminaison | - États de point de terminaison et événements bruts<br />- Détections et alertes de point de terminaison, notamment antivirus, PEPT, réduction de la surface d’attaque<br />- Informations sur les fichiers et autres entités observées sur les points de terminaison | Points de terminaison |
+| Microsoft Defender pour point de terminaison | - États de point de terminaison et événements bruts<br />- Détections et alertes de point de terminaison, y compris antivirus, PEPT, réduction de la surface d’attaque<br />- Informations sur les fichiers et autres entités observées sur les points de terminaison | Points de terminaison |
 |Microsoft Defender pour Office 365 | - États de messagerie et de boîte aux lettres et événements bruts<br />- Détections de messages électroniques, de pièces jointes et de liens | - Boîtes aux lettres<br />- Microsoft 365 comptes |
-| Microsoft Defender pour Identity | - Signaux Active Directory, y compris les événements d’authentification<br />- Détections comportementales liées à l’identité | Identités |
+| Microsoft Defender pour l’identité | - Signaux Active Directory, y compris les événements d’authentification<br />- Détections comportementales liées à l’identité | Identités |
 | Microsoft Cloud App Security | - Détection d’applications et de services cloud non locaux (shadow IT)<br />- Exposition des données aux applications cloud<br />- Activité contre les menaces associée aux applications cloud | Applications cloud |
 
 ## <a name="deploy-the-services"></a>Déployer les services

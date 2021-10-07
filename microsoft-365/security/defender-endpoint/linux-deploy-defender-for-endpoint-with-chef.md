@@ -2,26 +2,24 @@
 title: Comment déployer Defender pour endpoint sur Linux avec Chef
 description: Découvrez comment déployer Defender pour Endpoint sur Linux avec Chef
 keywords: microsoft, defender, atp, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-lsaldanha
 author: lovina-saldanha
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d0ef13f9718c82c920ab7bd4a151f77b1162208f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f8f71f4cafc7034a8d5cc5485989f0cab472a855
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204821"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188864"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -116,7 +114,7 @@ end
 Veillez à mettre à jour le nom du chemin d’accès à l’emplacement du fichier d’intégration.
 Pour tester son déploiement sur la station de travail Chef, exécutez simplement ``sudo chef-client -z -o mdatp`` .
 Après votre déploiement, vous devez envisager de créer et de déployer un fichier de configuration sur les serveurs en fonction des préférences définies pour [Microsoft Defender pour Endpoint sur Linux.](/linux-preferences.md)
-Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier de guide/mdatp/fichiers où vous avez également placé le package d’intégration. Vous pouvez ensuite créer un fichier settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
+Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier de guide/mdatp/fichiers où vous avez également placé le package d’intégration. Vous pouvez ensuite créer un settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
 
 ```powershell
 #Copy the configuration file

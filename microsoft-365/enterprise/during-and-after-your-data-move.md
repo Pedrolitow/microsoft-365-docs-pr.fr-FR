@@ -10,18 +10,18 @@ ms.service: o365-administration
 ms.collection: SPO_Content
 search.appverid:
 - MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f90957447e9d301594f50e67ff51ae495464b63e
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 68c73d8931f0f1813ebecfa0415b037f91065626
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491086"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189152"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -30,7 +30,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le centre Microsoft 365 message de confirmation lorsque les déplacements pour chacun des services Exchange Online, SharePoint Online et Teams de conversation sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géographique de centre de données.   
+Regardez le centre Microsoft 365 message de confirmation lorsque les déplacements pour chacun des services Exchange Online, SharePoint Online et Teams de conversation sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géo de centres de données.   
 
 |**Clients dont le pays d’inscription est**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
@@ -119,7 +119,7 @@ Teams services de conversation déplace chaque thread individuellement.  Le thre
 
 Skype Entreprise déplacements ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette date, le service ne sera plus accessible. 
   
-## <a name="related-topics"></a>Sujets associés 
+## <a name="related-topics"></a>Rubriques connexes 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

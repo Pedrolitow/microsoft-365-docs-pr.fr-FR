@@ -7,15 +7,15 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9fd46410877012d92e847ba7ff8b60cd5acceb1e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af5470d0993c54c1593526a7e0e3ae0b6e239065
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203207"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199788"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installer Microsoft Project ou Microsoft Visio sur Microsoft Manged Desktop appareils
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans Microsoft 365 centres de données.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75df83b5827fa3c2b5832c634c1de15ab7d619dd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204420"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205018"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de livraison sortante
 
@@ -42,12 +42,12 @@ Pour éviter cela, tous les messages sortants provenant de serveurs de centres d
 
 Le pool de remise à risque élevé est un pool d’adresses IP distinct pour les messages sortants qui est uniquement utilisé pour envoyer des messages de « faible qualité » (par exemple, courrier indésirable et [backscatter).](backscatter-messages-and-eop.md) L’utilisation du pool de remise à risque élevé permet d’empêcher le pool d’adresses IP normal pour le courrier sortant d’envoyer du courrier indésirable. Le pool d’adresses IP normal pour le courrier sortant conserve la réputation d’envoi de messages de « haute qualité », ce qui réduit la probabilité que ces adresses IP apparaissent sur les listes d’adresses IP bloqués.
 
-La possibilité réelle que les adresses IP du pool de remise à risque élevé soient placées sur des listes d’adresses IP bloqués demeure, mais cela est tout à fait possible. La remise aux destinataires prévus n’est pas garantie, car de nombreuses organisations de messagerie n’acceptent pas les messages provenant du pool de remise à risque élevé.
+La possibilité très réelle que les adresses IP du pool de remise à risque élevé soient placées sur des listes d’adresses IP bloqués demeure, mais cela est tout à fait possible. La remise aux destinataires prévus n’est pas garantie, car de nombreuses organisations de messagerie n’acceptent pas les messages provenant du pool de remise à risque élevé.
 
 Pour plus d’informations, voir [Contrôler le courrier indésirable sortant.](outbound-spam-controls.md)
 
 > [!NOTE]
-> Les messages pour lequel le domaine de messagerie source n’a pas d’enregistrement A et aucun enregistrement MX défini dans le DNS public sont toujours acheminés via le pool de remise à risque élevé, quel que soit leur courrier indésirable ou leur disposition de limite d’envoi.
+> Les messages dans lequel le domaine de messagerie source n’a pas d’enregistrement A et aucun enregistrement MX défini dans le DNS public sont toujours acheminés via le pool de remise à risque élevé, quel que soit leur courrier indésirable ou leur disposition de limite d’envoi.
 
 ### <a name="bounce-messages"></a>Messages de non-rebond
 
@@ -73,7 +73,7 @@ Le message transmis/relayé doit répondre à l’un des critères suivants pour
 
 - L’expéditeur sortant se trouve dans [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
 - SPF passe lorsque le message s’Microsoft 365.
-- DKIM sur le domaine de l’expéditeur est passé lorsque le message est envoyé Microsoft 365.
+- DKIM sur le domaine de l’expéditeur est passé lorsque le message arrive Microsoft 365.
  
 Vous pouvez savoir qu’un message a été envoyé via le pool de relais en regardant l’adresse IP du serveur sortant (le pool de relais sera compris dans la plage 40.95.0.0/16) ou en regardant le nom du serveur sortant (le nom du pool de relais sera « rly »).
 

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu pour le labling ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: 086ca0575bc701deccbb7c49dbc7c71bdd838d5a
-ms.sourcegitcommit: 835dcaf5d5e0b485dc3ac485ded8943046afe36c
+ms.openlocfilehash: b218fea598049e8a3b621b4b6711550227e3cbd4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942012"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204466"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -34,7 +34,7 @@ La classification et l’étiquetage du contenu afin qu’il puisse être proté
 
 Cette méthode nécessite un juge humain et une action. Un administrateur peut utiliser les étiquettes et les types d’informations sensibles pré-existants ou créer les leurs, puis les publier. Les utilisateurs et les administrateurs les appliquent au contenu à mesure qu’ils le rencontrent. Vous pouvez ensuite protéger le contenu et gérer sa disposition.
 
-## <a name="automated-pattern-matching"></a>Correspondance de modèle automatisée
+## <a name="automated-pattern-matching"></a>Correspondance automatique des modèles
 
 Cette catégorie de mécanismes de classification inclut la recherche de contenu par :
 
@@ -100,9 +100,9 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 > [!NOTE]
 > Le code source est formé pour détecter quand l’essentiel du texte est du code source. Il ne détecte pas le texte de code source qui est entrecoupé de texte simple.
 
-- **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés à une conduite choquante ciblant un ou plusieurs individus en fonction des caractéristiques suivantes : course, ancienneté, genre, origine nationale, sexe, orientation sexuelle, âge, handicap/invalidité
+- **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés à une conduite choquante ciblant un ou plusieurs individus en fonction des caractéristiques suivantes : course, ancienneté, genre, origine nationale, sexe, orientation sexuelle, âge, invalidité
 - **Blasphémité**: détecte une catégorie spécifique d’éléments de texte de langage choquant qui contiennent des expressions qui gênent la plupart des personnes
-- **Menace**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés aux menaces de violence ou d’atteinte physique ou de dommages à une personne ou à une propriété
+- **Menace**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés aux menaces de violence ou d’atteinte physique à une personne ou à une propriété
 - **Discrimination**: détecte un langage explicite de discrimination et est particulièrement sensible au langage de discrimination à l’encontre des communautés américaine/noire d’Afrique par rapport aux autres communautés.
 
 > [!IMPORTANT]

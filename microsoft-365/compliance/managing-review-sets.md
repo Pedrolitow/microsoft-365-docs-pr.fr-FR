@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment gérer les ensembles de révision afin de pouvoir analyser, interroger, afficher, baliser et exporter des données dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 51362fa23af1c0a8b232fe5fc026ac1a87803c3a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 16c6e8aa5f3cf278b90ab7fd338bcac203b7489a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202361"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206096"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gérer les ensembles de révision dans Advanced eDiscovery
 
@@ -50,7 +50,7 @@ Dans la page **Ajouter un jeu à réviser,** tapez un nom pour le jeu à révise
 
 Il existe trois façons différentes d’ajouter des données à un groupe de révision dans Advanced eDiscovery cas.
 
-![Trois méthodes d’ajout à un ensemble de révision.](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![Trois façons d’ajouter à un ensemble de révision.](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md)
 

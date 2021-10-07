@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 52da535c376af5775f2c75d9259529d2a011791a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d1d3a6cb3b861641fde2c3f6455cf9bbe84ff7e9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207299"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210626"
 ---
 # <a name="the-action-center"></a>Centre de notifications
 
@@ -47,7 +47,7 @@ Le centre de sécurité fournit une expérience de « volet unique » pour les t
 
 Le centre de actions unifié répertorie les actions de correction en attente et terminées pour vos appareils, les & contenu de collaboration et les identités dans [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) un seul emplacement.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender.":::
 
 Par exemple : 
 
@@ -64,19 +64,19 @@ Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisat
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
-> Pour plus d’informations, voir [Requirements](./prerequisites.md).
+> Pour en savoir plus, consultez [La réglementation requise.](./prerequisites.md)
 
 ## <a name="using-the-action-center"></a>Utilisation du centre de l’action
 
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-Lorsque vous visitez le centre de l’action, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
+Lorsque vous visitez le centre de actions, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
 
 |Tab  |Description  |
 |---------|---------|
 |**En attente**     | Affiche une liste d’actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, un fichier de mise en quarantaine). <p>**CONSEIL**: veillez à examiner et à approuver (ou rejeter) les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu.       |
-|**Historique**     | Sert de journal d’audit pour les actions qui ont été entreprises, telles que : <br/>- Mesures correctives prises suite à des enquêtes automatisées <br/>- Mesures correctives qui ont été prises sur des messages électroniques suspects ou malveillants, des fichiers ou des URL<br/>- Actions de correction approuvées par votre équipe des opérations de sécurité <br/>- Commandes qui ont été exécutés et actions de correction appliquées pendant les sessions Live Response<br/>- Mesures correctives prises par votre protection antivirus <p>Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées).](m365d-autoir-actions.md#undo-completed-actions)        |
+|**Historique**     | Sert de journal d’audit pour les actions qui ont été entreprises, telles que : <br/>- Mesures correctives prises à la suite d’enquêtes automatisées <br/>- Mesures correctives qui ont été prises sur des messages électroniques suspects ou malveillants, des fichiers ou des URL<br/>- Actions de correction approuvées par votre équipe des opérations de sécurité <br/>- Commandes qui ont été exécutés et actions de correction appliquées pendant les sessions Live Response<br/>- Mesures correctives prises par votre protection antivirus <p>Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées).](m365d-autoir-actions.md#undo-completed-actions)        |
 
 Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion des actions.
 
@@ -109,9 +109,9 @@ En plus des actions de correction qui [](m365d-autoir.md)sont prises automatique
 
 (**NOUVEAU !**) Le centre de l’action amélioré inclut désormais une colonne **source Action** qui vous indique d’où chaque action vient. Le tableau suivant décrit les valeurs possibles de **la source d’action** :
 
-| Valeur de la source de l’action | Description |
+| Valeur de la source d’action | Description |
 |:-----|:---|
-| **Action manuelle de l’appareil** | Action manuelle sur un appareil. Par exemple, [l’isolation de l’appareil ou](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [la mise en quarantaine du fichier](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files). |
+| **Action manuelle de l’appareil** | Action manuelle sur un appareil. Par exemple, [l’isolation de l’appareil](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) ou [la mise en quarantaine des fichiers.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
 | **Action de messagerie manuelle** | Action manuelle sur le courrier électronique. Un exemple inclut la suppression de messages électroniques ou la [correction d’un message électronique.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Action automatisée sur l’appareil** | Action automatisée entreprise sur une entité, telle qu’un fichier ou un processus. L’envoi d’un fichier en quarantaine, l’arrêt d’un processus et la suppression d’une clé de Registre sont des exemples d’actions automatisées. (Voir [les actions de correction dans Microsoft Defender pour le point de terminaison.)](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
 | **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
@@ -122,7 +122,7 @@ En plus des actions de correction qui [](m365d-autoir.md)sont prises automatique
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Autorisations requises pour les tâches du centre de notifications
 
-Pour effectuer des tâches, telles que l’approbation ou le rejet des actions en attente dans le centre de actions, vous devez avoir des autorisations attribuées comme répertorié dans le tableau suivant :
+Pour effectuer des tâches, telles que l’approbation ou le rejet des actions en attente dans le centre de actions, vous devez avoir des autorisations attribuées comme répertoriés dans le tableau suivant :
 
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
@@ -130,7 +130,7 @@ Pour effectuer des tâches, telles que l’approbation ou le rejet des actions e
 |Microsoft Defender pour la correction Office 365 (contenu Office courrier électronique)  |**Rôle d’administrateur** de la sécurité attribué dans Azure AD ( ) ou dans [https://portal.azure.com](https://portal.azure.com) le Centre d'administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- et --- <br/>**Rôle de recherche et** de purge attribué dans le Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne serez pas en mesure d’accéder aux fonctionnalités du centre de Microsoft 365 Defender de [https://protection.office.com](https://protection.office.com) sécurité. Le rôle Administrateur de la sécurité **doit** être attribué dans Azure AD ou le Centre d'administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Rôles intégrés Azure AD](/azure/active-directory/roles/permissions-reference)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> Les utilisateurs qui ont le **rôle Administrateur général** attribué dans Azure AD peuvent approuver ou rejeter toute action en attente dans le centre de gestion des actions. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du Centre de sécurité.
+> Les utilisateurs qui ont le **rôle Administrateur général** attribué dans Azure AD peuvent approuver ou rejeter toute action en attente dans le centre de gestion des actions. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du centre de gestion des actions.
 
 ## <a name="next-step"></a>Étape suivante 
 

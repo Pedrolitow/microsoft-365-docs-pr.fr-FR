@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
 ms.custom:
@@ -23,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: a40c623448b8af526be0ef16be15efcde22aedca
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e33bc36170200e5650b09bfcb51015ad301f4140
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773143"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188732"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 

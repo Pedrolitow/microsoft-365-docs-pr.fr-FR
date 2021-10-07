@@ -7,7 +7,7 @@ audience: ITPro
 ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
-description: 'Résumé : Décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l’ation sso utilisant AD FS, les services Exchange Online et les services web Exchange.'
-ms.openlocfilehash: f2ad14bd35d68067cdc462706bed763e894455f8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 'Résumé : Décrit les certificats SSL nécessaires pour Exchange sur site et hybride, l’ation sso à l’aide d’AD FS, des services Exchange Online et des services web Exchange.'
+ms.openlocfilehash: 8c0bf69090abb87e71f2d51b73405ccf4e54d4bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179715"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202834"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-microsoft-365"></a>Planifier les certificats SSL tiers pour Microsoft 365
 

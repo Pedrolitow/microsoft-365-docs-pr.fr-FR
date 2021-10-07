@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Examinez les alertes de détection d’anomalies.
-ms.openlocfilehash: 69f0f3cee8c818ac071204baa10cb2be8aae6336
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: add90085634571608d0b7aceff85439898bb9fef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401781"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204562"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Examiner les alertes de détection d’anomalie
 

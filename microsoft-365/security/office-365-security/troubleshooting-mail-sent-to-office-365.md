@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
@@ -19,12 +19,12 @@ ms.custom:
 description: Cet article fournit des informations de dépannage pour les problèmes d’envoi de courrier électronique à des boîtes de réception Microsoft 365 & meilleures pratiques en matière de publipostage en bloc Microsoft 365 clients.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e51173e589bac06fb4ca1ba92657137e77ade92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177339"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203806"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Résolution des problèmes d’e-mails envoyés à Microsoft 365
 
@@ -86,7 +86,7 @@ Vous avez reçu une notification d'échec de remise car une activité suspecte a
 
  Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, [voir Exchange Online Protection adresses IP.](../../enterprise/urls-and-ip-address-ranges.md)
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques en matière d’envoi en bloc de messages Microsoft 365 utilisateurs
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques en matière d’envoi de courrier électronique en Microsoft 365 utilisateurs
 
 Si vous effectuez souvent des campagnes de messagerie en nombre à l’Microsoft 365 et que vous souhaitez vous assurer que vos messages électroniques arrivent en toute sécurité et en temps voulu, suivez les conseils de cette section.
 

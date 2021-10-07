@@ -1,31 +1,29 @@
 ---
-title: Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
+title: Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour endpoint sur Linux à l’aide d’Ansible.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dc4986f5ef71f7080c3296448c1b85a717336940
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 0ecc13693a043602885e8f221e6967bd44eb0da8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205438"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +34,7 @@ ms.locfileid: "59460291"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cet article explique comment déployer Defender pour endpoint sur Linux à l’aide d’Ansible. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
+Cet article explique comment déployer Defender pour point de terminaison sur Linux à l’aide d’Ansible. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
 - [Télécharger le package d’intégration](#download-the-onboarding-package)
 - [Créer des fichiers YAML ansibles](#create-ansible-yaml-files)
@@ -74,7 +72,7 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
 Téléchargez le package d’intégration à partir Microsoft 365 Defender portail :
 
 1. Dans Microsoft 365 Defender portail, go to **Paramètres > Endpoints > Device management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
     ![Microsoft 365 Defender capture d’écran du portail.](images/portal-onboarding-linux-2.png)
@@ -127,9 +125,9 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
       when: not mdatp_onboard.stat.exists
     ```
 
-- Ajoutez la clé et le référentiel Defender pour points de terminaison : `add_apt_repo.yml`
+- Ajoutez la clé et le référentiel Defender pour points de terminaison `add_apt_repo.yml` :
 
-    Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+    Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
     Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -177,7 +175,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     when: ansible_os_family == "RedHat"
   ```
 
-- Créez les fichiers YAML d’installation et de désinstallation Ansible.
+- Créez les fichiers YaML d’installation et de désinstallation Ansible.
 
     - Pour les distributions basées sur apt, utilisez le fichier YAML suivant :
 
@@ -273,7 +271,7 @@ Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la 
 
 Lors de la mise à niveau de votre système d’exploitation vers une nouvelle version majeure, vous devez d’abord désinstaller Defender pour Endpoint sur Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint sur Linux sur votre appareil.
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 - [Ajouter ou supprimer des référentiels YUM](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 

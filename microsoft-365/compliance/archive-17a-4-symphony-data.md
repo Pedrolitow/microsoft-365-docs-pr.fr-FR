@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 En savoir plus pour importer et archiver des données dans Microsoft 365.
-ms.openlocfilehash: 4bff017a3bb29062011d6d7e63cf5328c7fc5f98
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: f26fe081708ca6130a63338261144e98691e269a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401493"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188324"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>Configurer un connecteur pour archiver des données à partir de Usby
 
 Utilisez [l’analyseur](https://www.17a-4.com/Symphony-dataparser/) de données de 17a-4 LLC afin d’importer et d’archiver des données de communications à des boîtes aux lettres d’utilisateurs dans Microsoft 365 organisation. DataParser inclut un connecteur Deparsy configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur DeParser de données deLyser convertit les données de Lassy au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
-Une fois les données stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la découverte électronique, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la découverte électronique, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur de Typey pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-symphony-data"></a>Vue d’ensemble de l’archivage des données
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec 17a-4 pour configurer l’analyseur de données DeParser.
 
-2. Régulièrement, les éléments de Lassy sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
+2. Régulièrement, les éléments de la collection Sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 
 3. Le connecteur DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 

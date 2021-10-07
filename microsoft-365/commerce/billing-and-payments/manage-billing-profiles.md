@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - MACBillingBillsPaymentsBillingProfiles
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment les profils de facturation supportent les factures.
 ms.date: 04/02/2021
-ms.openlocfilehash: ecea09a9ceea12fa92b92eac3e5a7595b2510042
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8407e3855a8e497c730925a424b999ed07da6228
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208116"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188552"
 ---
 # <a name="understand-billing-profiles"></a>Comprendre les profils de facturation
 
@@ -37,7 +37,7 @@ Un profil de facturation contient un mode de paiement, des informations de factu
 >
 > Les profils de facturation ne sont pas disponibles pour les clients qui achètent des produits et des services Microsoft.com ou sur la page Acheter des **services** du Centre d'administration Microsoft 365.
 
-## <a name="what-are-billing-profile-roles"></a>Qu’est-ce que les rôles de profil de facturation ?
+## <a name="what-are-billing-profile-roles"></a>Quels sont les rôles de profil de facturation ?
 
 Les rôles sur les profils de facturation sont autorisés à contrôler les achats et à afficher et gérer les factures. Attribuez ces rôles aux utilisateurs qui s’en chargent du suivi, de l’organisation et du paiement des factures. Par exemple, les membres de l’équipe d’approvisionnement de votre organisation.
 
@@ -60,7 +60,7 @@ Les rôles sur les profils de facturation sont autorisés à contrôler les acha
 Chaque profil de facturation inclut les informations suivantes :
 
 - **Nom et état du profil de facturation** &ndash; Nom unique du profil de facturation et si le profil de facturation est actif ou désactivé pour l’achat.
-- **Paramètres de facture** &ndash; Devise basée sur le pays du compte de facturation, les informations sur la fréquence et la date de facturation, l’option de réception de factures en pièces jointes et un champ de numéro de bon de visite facultatif
+- **Paramètres de facture** &ndash; Devise en fonction du pays du compte de facturation, des informations sur la fréquence et la date de facturation, l’option de réception de factures en pièces jointes et un champ de numéro de bon de visite facultatif
 - **Modes de paiement** &ndash; Indique le mode de paiement principal et de sauvegarde, le caser, pour le profil
 - **Compte de facturation** &ndash; Nom du compte de facturation lié au profil. Pour plus d’informations sur les comptes de facturation, voir [Comprendre les comptes de facturation.](../manage-billing-accounts.md)
 - **Informations de contact** &ndash; Adresse de facturation, nom de contact et adresse e-mail
@@ -70,7 +70,7 @@ Chaque profil de facturation inclut les informations suivantes :
 >
 > Vous ne pouvez attribuer des rôles de profil de facturation qu’aux utilisateurs de votre organisation.
 
-## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
+## <a name="need-help-contact-support"></a>Vous avez besoin d’aide ? Contacter le support technique
 
 Si vous avez des questions ou avez besoin d’aide sur vos frais Azure, créez une demande de <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">support avec le support Azure.</a>
 

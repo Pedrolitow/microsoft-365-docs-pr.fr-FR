@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender API de recherche avancée
-description: Découvrez comment exécuter des requêtes de recherche avancées à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
+description: Découvrez comment exécuter des requêtes de recherche avancée à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
 keywords: Recherche avancée, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208851"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206636"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de recherche avancée
 
@@ -52,7 +52,7 @@ Les conditions suivantes concernent toutes les requêtes.
 6. Un code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps `429` d’exécution alloué. Lisez le corps de la réponse pour comprendre la limite que vous avez atteinte. 
 
 > [!NOTE]
-> Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont de taille par client. Ces quotas sont au minimum.
+> Tous les quotas répertoriés ci-dessus (par exemple, 15 appels par minute) sont par taille de client. Ces quotas sont au minimum.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -88,7 +88,7 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Paramètre | Type | Description
 -|-|-
-Requête | Texte | Requête à exécuter. **Remarque : obligatoire**
+Requête | Text | Requête à exécuter. **Remarque : obligatoire**
 
 ## <a name="response"></a>Réponse
 
@@ -98,7 +98,7 @@ L’objet de réponse contient trois propriétés de niveau supérieur :
 
 1. Statistiques : dictionnaire des statistiques de performances des requêtes.
 2. Schéma : schéma de la réponse, liste des Name-Type pour chaque colonne.
-3. Résultats : liste des événements de recherche avancée.
+3. Résultats : liste des événements de recherche avancés.
 
 ## <a name="example"></a>Exemple
 

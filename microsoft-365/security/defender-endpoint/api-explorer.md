@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f57a186c49b44d007d93cba6610865b5a4e7f47f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3235ed9e3b4f51b9156267e324573f04443eccc6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210040"
 ---
 # <a name="api-explorer"></a>Explorateur d’API
 
@@ -34,7 +34,7 @@ ms.locfileid: "59209894"
 
 L’Explorateur d’API Microsoft Defender pour point de terminaison est un outil qui vous permet d’explorer différentes API Defender pour endpoint de manière interactive.
 
-L’Explorateur d’API facilite la construction et l’envoi de requêtes API, de test et d’envoi de requêtes pour n’importe quel point de terminaison de l’API Defender for Endpoint disponible. Utilisez l’Explorateur d’API pour prendre des mesures ou rechercher des données qui ne sont peut-être pas encore disponibles via l’interface utilisateur.
+L’Explorateur d’API facilite la construction et l’envoi de requêtes API, de test et d’envoi de requêtes pour n’importe quel point de terminaison de l’API Defender pour endpoint disponible. Utilisez l’Explorateur d’API pour prendre des mesures ou rechercher des données qui ne sont peut-être pas encore disponibles via l’interface utilisateur.
 
 L’outil est utile lors du développement d’applications. Il vous permet d’effectuer des requêtes API qui respectent vos paramètres d’accès utilisateur, ce qui réduit la nécessité de générer des jetons d’accès.
 
@@ -44,7 +44,7 @@ Avec l’Explorateur d’API, vous pouvez :
 
 - Exécuter des demandes pour n’importe quelle méthode et voir les réponses en temps réel
 - Parcourez rapidement les exemples d’API et découvrez les paramètres qu’ils supportent
-- Effectuer des appels d’API en toute simplicité ; pas besoin de s’authentifier au-delà de la signature du portail de gestion
+- Effectuer facilement des appels d’API ; pas besoin de s’authentifier au-delà de la signature du portail de gestion
 
 ## <a name="access-api-explorer"></a>Explorateur d’API Access
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,23 +19,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Vue d’ensemble de Microsoft 365 vous aide à travailler n’importe où.
-ms.openlocfilehash: 1b8bfe4f452b1a7d9501ba7b92554f86492a36e6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Vue d’ensemble Microsoft 365 vous aide à travailler n’importe où.
+ms.openlocfilehash: 7312f74bb27ba166650356ed6fa835c079ce0b76
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208196"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188564"
 ---
 # <a name="work-from-anywhere---overview"></a>Travailler n’importe où : vue d’ensemble
 
 Vous n’avez pas de bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Traitez votre travail de n’importe où Office sur votre téléphone ou tablette.
 
-**Pro conseil :** Maintenez votre équilibre entre vie professionnelle et vie privée en cocher les notifications pour vos applications de travail sur vos appareils personnels.
+**Pro conseil :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
 
 Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouveriez.
 
-Téléchargez une infographie pour obtenir des conseils pour travailler où que vous soyez : 
+Téléchargez une infographie pour obtenir des conseils pour travailler n’importe où : 
 
 [PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
@@ -71,7 +71,7 @@ Vous avez besoin d’aide ? Obtenez des conseils [sur l’endroit](store-files.m
 
 ### <a name="work-on-your-phone-or-tablet"></a>Travailler sur votre téléphone ou tablette
 
-Installez les Office sur un téléphone ou une tablette et travaillez où que vous se trouvez. Téléchargez les applications, puis lancez,connectez-vous et définissez votre compte.
+Installez les Office sur un téléphone ou une tablette et travaillez où que vous vous trouvez. Téléchargez les applications, puis lancez,connectez-vous et définissez votre compte.
 
 En savoir plus sur l’installation application Office sur : [Android](install-apps-android.md)  |  [iOS](install-apps-ios.md).
 

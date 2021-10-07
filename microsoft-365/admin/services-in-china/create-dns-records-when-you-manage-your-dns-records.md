@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: 'Apprenez à créer des enregistrements DNS Office 365 gérés par 21Vianet lorsque vous gérez vos enregistrements DNS. '
 monikerRange: o365-21vianet
-ms.openlocfilehash: 8cd021c204424910d88133076ce0ce7af9a240952d116dbf9e9f4d4562fe41ec
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0b84926dbedf90752c994e76695c2d18d92fb9c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53822426"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60191197"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS
 

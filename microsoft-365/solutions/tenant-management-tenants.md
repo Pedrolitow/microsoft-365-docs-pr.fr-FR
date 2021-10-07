@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Déployez et gérez un ou plusieurs Microsoft 365 client, avec des options pour les emplacements multigé géographiques et les emplacements de déplacement.
-ms.openlocfilehash: 5dee78835de1e3e64f52f653f52ea4f32dcf6547
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 149dd4274e43d085f2c454774c4499a12561b766
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203651"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206432"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Étape 1. Votre Microsoft 365 pour les locataires d’entreprise
 
@@ -114,7 +114,7 @@ Votre Microsoft 365 client est créé lorsque vous achetez votre premier produit
 La détermination de l’ensemble des produits et du nombre de licences pour chacun d’eux nécessite une planification pour :
 
 - Assurez-vous que vous disposez de suffisamment de licences pour les comptes d’utilisateur qui ont besoin de fonctionnalités avancées.
-- Vous empêchez d’être à court de licences ou d’avoir trop de licences non inscrites, en fonction des modifications apportées au personnel de votre organisation.
+- Vous empêchez de ne plus disposer de licences ou d’avoir trop de licences non inscrites, en fonction des modifications apportées au personnel de votre organisation.
 
 
 ## <a name="results-of-step-1"></a>Résultats de l’étape 1

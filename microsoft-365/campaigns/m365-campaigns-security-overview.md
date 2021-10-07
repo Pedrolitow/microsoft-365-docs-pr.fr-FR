@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment protéger votre campagne ou votre entreprise en augmentant votre sécurité avec Microsoft 365.
-ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 14582edff3153649a36bf12b3fd25212c6c1543d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208164"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204742"
 ---
 # <a name="bump-up-security-protection-for-your-campaign-or-business"></a>Protection renforcée de la sécurité pour votre campagne ou votre entreprise
 

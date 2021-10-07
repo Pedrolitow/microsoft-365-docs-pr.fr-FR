@@ -2,14 +2,13 @@
 title: Déployer Microsoft Defender pour le point de terminaison dans des anneaux
 description: Découvrez comment déployer Microsoft Defender pour le point de terminaison dans les anneaux
 keywords: déployer, anneaux, évaluer, pilote, insider fast, insider slow, setup, onboard, phase, deployment, deploying, adoption, configuring
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9b7d78893f91242f5570a0df9fcbc3cab55bd4b
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 5894fa9fea9a6970981f1d1171af9097daa697e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399297"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209973"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Déployer Microsoft Defender pour le point de terminaison dans des anneaux
 
@@ -69,7 +68,7 @@ Le tableau 1 fournit un exemple des anneaux de déploiement que vous pouvez util
 
 Voici un exemple de critères de sortie pour ces anneaux :
 
-- Les appareils s’affiche dans la liste d’inventaire des appareils
+- Les appareils s’affichent dans la liste d’inventaire des appareils
 - Les alertes apparaissent dans le tableau de bord
 - [Exécuter un test de détection](run-detection-test.md)
 - [Exécuter une attaque simulée sur un appareil](attack-simulations.md)
@@ -90,7 +89,7 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 |Point de terminaison|Outil de déploiement|
 |---|---|
-|**Windows**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <p> **REMARQUE**: si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode de stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous. <p> [Stratégie de groupe](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
+|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <p> **REMARQUE**: si vous souhaitez déployer plus de 10 appareils dans un environnement de production, utilisez plutôt la méthode de stratégie de groupe ou les autres outils pris en charge répertoriés ci-dessous. <p> [Stratégie de groupe](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [Scripts VDI](configure-endpoints-vdi.md) <p> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
 |**MacOS**|[Script local](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JamF Pro](mac-install-with-jamf.md) <p> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)|
 |**Serveur Linux**|[Script local](linux-install-manually.md) <p> [Sondent](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
 |**iOS**|[Basée sur l’application](ios-install.md)|
@@ -103,9 +102,9 @@ Le tableau suivant présente les points de terminaison pris en charge et l’out
 
 Utilisez les documents suivants pour sélectionner l’architecture microsoft Defender pour point de terminaison appropriée qui convient le mieux à votre organisation.
 
-|**Élément**|**Description**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Image miniature de microsoft Defender pour la stratégie de déploiement de point de terminaison.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li></ul>
+|[![Image miniature de la stratégie de déploiement de Point de terminaison Microsoft Defender.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | Le matériel architectural vous aide à planifier votre déploiement pour les architectures suivantes : <ul><li> Cloud-natif </li><li> Cogestion </li><li> Sur site</li><li>Évaluation et intégration locale</li></ul>
 
 ## <a name="existing-deployments"></a>Déploiements existants
 
@@ -113,7 +112,7 @@ Utilisez les documents suivants pour sélectionner l’architecture microsoft De
 
 Pour Windows serveurs et/ou Windows, vous sélectionnez plusieurs ordinateurs à tester à l’avance (avant le correctif de mardi) à l’aide du programme DE VALIDATION de mise à jour de sécurité **(PROGRAMME).**
 
-Pour plus d’informations, voir :
+Pour plus d'informations, voir :
 
 - [Qu’est-ce que le programme de validation des mises à jour de sécurité ?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Programme de validation de mise à jour logicielle et établissement Centre de protection Microsoft contre les programmes malveillants - Chronologie interactive TwC partie 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)

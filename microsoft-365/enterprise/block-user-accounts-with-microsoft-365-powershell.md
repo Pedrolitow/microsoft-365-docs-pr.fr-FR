@@ -7,7 +7,7 @@ ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Comment utiliser PowerShell pour bloquer et débloquer l’accès Microsoft 365 comptes.
-ms.openlocfilehash: fd9eba96b09a73b2fb6e87b30096dbf8186caceb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0ecfdfb8f99175ce5312769593c7637a7d1ae25b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181234"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189188"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquer Microsoft 365 comptes d’utilisateurs avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Lorsque vous bloquez l’accès à un compte Microsoft 365, vous empêchez quiconque d’utiliser le compte pour se connecter et accéder aux services et données de votre organisation Microsoft 365. Vous pouvez utiliser PowerShell pour bloquer l’accès à des comptes d’utilisateur individuels ou multiples.
+Lorsque vous bloquez l’accès à un compte Microsoft 365, vous empêchez quiconque d’utiliser le compte pour se connecter et accéder aux services et données de votre organisation Microsoft 365. Vous pouvez utiliser PowerShell pour bloquer l’accès à des comptes d’utilisateurs individuels ou multiples.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
@@ -67,7 +67,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-Cet exemple affiche l’UPN du compte d’utilisateur pour  *l’utilisateur Caleb Sills*.
+Cet exemple affiche l’UPN du compte d’utilisateur  *pour l’utilisateur Caleb Sills*.
 
 ```powershell
 $userName="Caleb Sills"
@@ -116,7 +116,7 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach {Set-AzureADUser -ObjectID 
 
 Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-### <a name="block-individual-user-accounts"></a>Bloquer des comptes d’utilisateur individuels
+### <a name="block-individual-user-accounts"></a>Bloquer des comptes d’utilisateurs individuels
 
 Utilisez la syntaxe suivante pour bloquer l’accès à un compte d’utilisateur individuel :
 

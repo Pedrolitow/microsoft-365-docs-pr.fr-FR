@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser l’outil Diagnostic de page pour optimiser le poids des pages dans SharePoint sites modernes en ligne.
-ms.openlocfilehash: 04c3e94abef062bbd37db268da56f21c2dd7dc65
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c7221befc89fd0385b3e96a31fc7721f012628d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181168"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210280"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimiser le poids des pages de sites modernes SharePoint Online
 

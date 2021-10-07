@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: 87508d47e5124f55a0302ca305b0dbd9de07e841
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9c14849d09dc4adb75630dffd86d00d7bc766545
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207691"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189176"
 ---
 # <a name="overview-of-contoso-corporation"></a>Vue d’ensemble de Contoso Corporation
 
@@ -45,7 +45,7 @@ Contoso possède trois niveaux de bureaux :
 
   Les bureaux hub servent une région spécifique du monde avec 60 % de chiffre d’affaires et de personnel de support technique. Chaque hub régional est connecté au siège social parisien via une liaison WAN à bande passante élevée.
 
-  Les centres régionaux ont en moyenne 2 000 travailleurs.
+  Les centres régionaux ont en moyenne 2 000 employés.
 
 - Succursales
 
@@ -53,7 +53,7 @@ Contoso possède trois niveaux de bureaux :
 
   Les succursales ont en moyenne 250 employés.
 
-Environ 25 % des employés de Contoso sont mobiles uniquement. Les centres régionaux et les succursales ont un pourcentage plus élevé de ces travailleurs. La fourniture d’une meilleure prise en charge des travailleurs mobiles uniquement est un objectif commercial important pour Contoso.
+Environ 25 % des employés de Contoso sont mobiles uniquement. Les centres régionaux et les succursales ont un pourcentage plus élevé de ces employés. La fourniture d’une meilleure prise en charge des travailleurs mobiles uniquement est un objectif commercial important pour Contoso.
 
 ## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations de conception pour Microsoft 365 entreprise
 

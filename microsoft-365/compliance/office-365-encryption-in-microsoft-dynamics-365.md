@@ -8,26 +8,26 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: ''
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: Découvrez comment Microsoft utilise la technologie de chiffrement pour protéger les données client dans Microsoft Dynamics 365 au repos dans une base de données Microsoft et en transit.
+description: Découvrez comment Microsoft utilise la technologie de chiffrement pour protéger les données client dans Microsoft Dynamics 365 lorsqu’il est au repos dans une base de données Microsoft et en transit.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e2691a2f02ecee5b346fcda3335ca7e5d4becc2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6fc07bba7ceccdfd2b215e29ef48dbd1f23c0cdf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163945"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206072"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Chiffrement dans Microsoft Dynamics 365
 
 Microsoft utilise la technologie de chiffrement pour protéger les données client dans Dynamics 365 pendant qu’elles sont au repos dans une base de données Microsoft et pendant qu’elles sont en transit entre les appareils des utilisateurs et nos centres de données. Les connexions établies entre les clients et les centres de données Microsoft sont chiffrées, et tous les points de terminaison publics sont sécurisés à l’aide de TLS standard. TLS établit efficacement une connexion de navigateur à serveur améliorée pour garantir la confidentialité et l’intégrité des données entre les bureaux et les centres de données. Une fois le chiffrement des données activé, il ne peut pas être désactivé. Pour plus d’informations, voir [Chiffrement des données au](/previous-versions/dynamicscrm-2016/developers-guide/dn481562(v=crm.8))niveau du champ.
 
-Dynamics 365 utilise le chiffrement au niveau Microsoft SQL Server cellule standard pour un ensemble d’attributs d’entité par défaut qui contiennent des informations sensibles, telles que des noms d’utilisateur et des mots de passe de messagerie. Cette fonctionnalité peut aider les organisations à respecter les exigences de conformité associées à LA FIPS 140-2. Le chiffrement des données au niveau du champ est particulièrement important dans les scénarios qui exploitent le routeur de messagerie [Microsoft Dynamics CRM,](/previous-versions/dynamicscrm-2016/administering-dynamics-365/hh699800(v=crm.8))qui doit stocker les noms d’utilisateur et les mots de passe pour permettre l’intégration entre une instance Dynamics 365 et un service de messagerie.
+Dynamics 365 utilise le chiffrement au niveau Microsoft SQL Server cellule standard pour un ensemble d’attributs d’entité par défaut qui contiennent des informations sensibles, telles que les noms d’utilisateur et les mots de passe de messagerie. Cette fonctionnalité peut aider les organisations à respecter les exigences de conformité associées à LA FIPS 140-2. Le chiffrement des données au niveau du champ est particulièrement important dans les scénarios qui exploitent le routeur de messagerie [Microsoft Dynamics CRM,](/previous-versions/dynamicscrm-2016/administering-dynamics-365/hh699800(v=crm.8))qui doit stocker les noms d’utilisateur et les mots de passe pour permettre l’intégration entre une instance Dynamics 365 et un service de messagerie.
 
-Toutes les instances de Dynamics 365 utilisent [Microsoft SQL Server Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption) (TDE) pour effectuer un chiffrement en temps réel des données lorsqu’elles sont écrites sur disque (au repos). TDE chiffre les fichiers SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Par défaut, Microsoft stocke et gère les clés de chiffrement de base de données pour vos instances de Dynamics 365. (Les clés utilisées par Dynamics 365 for Financials sont générées par l’API .NET Framework protection des données.)
+Toutes les instances de Dynamics 365 utilisent [Microsoft SQL Server Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption) (TDE) pour effectuer le chiffrement en temps réel des données lorsqu’elles sont écrites sur disque (au repos). TDE chiffre les fichiers SQL Server, Azure SQL Database et Azure SQL Data Warehouse. Par défaut, Microsoft stocke et gère les clés de chiffrement de base de données pour vos instances de Dynamics 365. (Les clés utilisées par Dynamics 365 for Financials sont générées par l’API .NET Framework protection des données.)
 
 La fonctionnalité gérer les clés dans le Centre d’administration Dynamics 365 permet aux administrateurs de gérer eux-mêmes les clés de chiffrement de base de données associées à des instances de Dynamics 365. (Les clés de chiffrement de base de données auto-gérées sont disponibles uniquement dans la mise à jour de janvier 2017 pour Microsoft Dynamics 365 et peuvent ne pas être disponibles pour les versions ultérieures. Pour plus d’informations, voir Gérer les clés de chiffrement pour votre [instance Dynamics 365 (en ligne).](/dynamics365/customer-engagement/admin/manage-encryption-keys-instance) La fonctionnalité de gestion des clés prend en charge les fichiers de clés de chiffrement PFX et BYOK, tels que ceux stockés dans un HSM. (Pour plus d’informations sur la génération et le transfert d’une clé protégée par HSM sur Internet, voir Comment générer et transférer des clés protégées par [HSM](/azure/key-vault/key-vault-hsm-protected-keys)pour Azure Key Vault.)
 

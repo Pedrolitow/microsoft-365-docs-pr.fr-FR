@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à identifier les raisons et la façon dont un message de hameçonnage a été envoyé dans Microsoft 365 et ce qu’il faut faire pour empêcher d’autres messages de hameçonnage à l’avenir.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 299488a7ed8a891d870efb3ace618178c36552f1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203711"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206468"
 ---
 # <a name="tune-anti-phishing-protection"></a>Régler la protection anti-hameçonnage
 
@@ -50,11 +50,11 @@ Vérifiez que ces fonctionnalités Office 365 Defender sont allumées.
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>Signaler le message de hameçonnage à Microsoft
 
-La signalement de messages de hameçonnage est utile pour ajuster les filtres utilisés pour protéger tous les clients Microsoft 365. Pour obtenir des instructions, [reportez-vous aux messages et fichiers envoyés à Microsoft.](report-junk-email-messages-to-microsoft.md)
+La signalement de messages de hameçonnage est utile pour ajuster les filtres utilisés pour protéger tous les clients Microsoft 365. Pour obtenir des instructions, [reportez-vous aux messages et fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
 ## <a name="inspect-the-message-headers"></a>Inspecter les en-têtes de message
 
-Vous pouvez examiner les en-têtes du message d’hameçonnage pour voir si vous pouvez vous-même faire quelque chose pour éviter que d’autres messages de hameçonnage ne arrivent. En d’autres termes, l’examen des en-têtes de messages peut vous aider à identifier les paramètres de votre organisation qui étaient chargés d’autoriser les messages de hameçonnage.
+Vous pouvez examiner les en-têtes du message d’hameçonnage pour voir s’il existe une chose que vous pouvez faire vous-même pour éviter que d’autres messages de hameçonnage ne s’en approchent. En d’autres termes, l’examen des en-têtes de messages peut vous aider à identifier les paramètres de votre organisation qui étaient chargés d’autoriser les messages de hameçonnage.
 
 Plus précisément, vous devez vérifier le champ **d’en-tête X-Forefront-Antispam-Report** dans les en-têtes de message pour obtenir des indications sur le filtrage ignoré pour le courrier indésirable ou le hameçonnage dans la valeur SFV (Spam Filtering Verdict). Les messages qui ignorent le filtrage auront une entrée de , ce qui signifie que l’un de vos paramètres a autorisé ce message en remplacement des verdicts de courrier indésirable ou de hameçonnage qui ont été déterminés par `SCL:-1` le service. Pour plus d’informations sur la façon d’obtenir des en-têtes de message et la liste complète de tous les en-têtes de messages anti-courrier indésirable et anti-hameçonnage disponibles, consultez les [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md)dans Microsoft 365 .
 
@@ -64,7 +64,7 @@ Plus précisément, vous devez vérifier le champ **d’en-tête X-Forefront-Ant
 
 - Pour les messages qui sont mis en quarantaine par erreur ou pour les messages autorisés, nous vous recommandons de rechercher ces messages dans l’Explorateur de menaces et les [détections en temps réel.](threat-explorer.md) Vous pouvez effectuer une recherche par expéditeur, destinataire ou ID de message. Après avoir localisé le message, consultez les détails en cliquant sur l’objet. Pour un message mis en quarantaine, recherchez la « technologie de détection » afin de pouvoir utiliser la méthode appropriée pour remplacer. Pour un message autorisé, recherchez la stratégie qui a autorisé le message.
 
-- Le courrier électronique provenant d’expéditeurs usurpés (l’adresse De du message ne correspond pas à la source du message) est classé comme hameçonnage dans Defender for Office 365. Parfois, l’usurpation d’adresse est anodin, et parfois les utilisateurs ne veulent pas que les messages provenant d’expéditeurs usurpés spécifiques soient mis en quarantaine. Pour minimiser l’impact sur les utilisateurs, examinez  régulièrement les informations sur l’usurpation d’informations sur l’usurpation d’informations, [](learn-about-spoof-intelligence.md)l’onglet Usurpation dans la liste d’attente [des](tenant-allow-block-list.md)clients et le rapport sur les détections d’usurpation [d’informations.](view-email-security-reports.md#spoof-detections-report) Une fois que vous avez examiné les expéditeurs usurpés autorisés et bloqués et effectué les substitutions nécessaires,  vous pouvez être certain de configurer la veille contre l’usurpation d’informations dans les stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings) pour mettre en quarantaine les messages suspects au lieu de les remettre dans le dossier Courrier indésirable de l’utilisateur.
+- Le courrier électronique provenant d’expéditeurs usurpés (l’adresse De du message ne correspond pas à la source du message) est classé comme hameçonnage dans Defender for Office 365. Parfois, l’usurpation d’adresse est anodin, et parfois les utilisateurs ne veulent pas que les messages provenant d’expéditeurs usurpés spécifiques soient mis en quarantaine. Pour minimiser l’impact sur les [](learn-about-spoof-intelligence.md)utilisateurs, examinez  régulièrement les informations sur l’usurpation d’informations, l’onglet Usurpation dans la liste d’attente [des](tenant-allow-block-list.md)clients et le rapport sur les détections d’usurpation [d’informations.](view-email-security-reports.md#spoof-detections-report) Une fois que vous avez examiné les expéditeurs usurpés autorisés et bloqués et effectué les substitutions nécessaires,  vous pouvez être certain de configurer la veille contre l’usurpation d’informations dans les stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings) pour mettre en quarantaine les messages suspects au lieu de les remettre dans le dossier Courrier indésirable de l’utilisateur.
 
 - Vous pouvez répéter l’étape ci-dessus pour l’emprunt d’identité (domaine ou utilisateur) dans Microsoft Defender pour Office 365. Le rapport d’emprunt d’identité se trouve sous tableau de bord **de gestion** \>  \> **des menaces Informations**.
 

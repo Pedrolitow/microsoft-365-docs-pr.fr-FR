@@ -7,7 +7,7 @@ ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Découvrez comment utiliser PowerShell pour Microsoft 365 gérer les utilisateurs, les groupes et les groupes de sites.
-ms.openlocfilehash: 6bf6fe8a47f8a5fb8309c24836da614e95dd5bf2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 22276453c1d95cc7799da9082a8cd4b71229511d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210256"
 ---
 # <a name="manage-sharepoint-with-powershell"></a>Gérer SharePoint avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-SharePoint administrateurs doivent gérer les sites, les groupes de sites et les utilisateurs. Bien que vous pouvez effectuer certaines de ces tâches dans le Centre d'administration Microsoft 365, d’autres sont plus simples dans PowerShell. Pour plus d’informations, voir les articles suivants :
+SharePoint administrateurs doivent gérer les sites, les groupes de sites et les utilisateurs. Bien que vous pouvez effectuer certaines de ces tâches dans le Centre d'administration Microsoft 365, d’autres sont plus simples dans PowerShell. Si vous souhaitez en savoir plus, consultez les articles suivants :
 
 - [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 

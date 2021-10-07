@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaa1c8cf1d54fe589adfd06939fc3f4c4398b18e
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 79bf9503b94b6d3c1f1a8bcd9203c381aad9e90f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009492"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206852"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Créer et afficher des exceptions pour les recommandations de sécurité - Gestion des menaces et des vulnérabilités
 
@@ -98,8 +98,8 @@ Sélectionnez votre justification pour l’exception que vous devez déposer au 
 
 La liste suivante détaille les justifications des options d’exception :
 
-- **Contrôle tiers** : un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre niveau de sécurité, car votre risque est réduit
-- **Atténuation de** remplacement : un outil interne répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
+- **Contrôle tiers** - Un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
+- **Atténuation de remplacement** : un outil interne répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d’exposition et augmente votre score de sécurité car votre risque est réduit
 - **Risque accepté :** pose un risque faible et/ou l’implémentation de la recommandation est trop coûteuse
 - **Correction planifiée (grâce)** : déjà planifiée mais en attente d’exécution ou d’autorisation
 
@@ -137,7 +137,7 @@ L’impact (après les exceptions) indique l’impact restant sur le score d’e
 
 ![Affichage des colonnes dans le tableau.](images/tvm-after-exceptions-table.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Corriger des vulnérabilités](tvm-remediation.md)

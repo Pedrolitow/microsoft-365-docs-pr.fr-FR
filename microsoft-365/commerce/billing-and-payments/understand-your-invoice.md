@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - MACBillingBillsPaymentsInvoices
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 keywords: comptes de facturation, informations sur l’organisation, factures
 ms.date: 05/04/2021
-ms.openlocfilehash: b780b2f0379e9e1f1866c22139a7ac3504a23b53
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6b36d547bfa1610339c2818969d0164a585eeb2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208067"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203482"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -145,7 +145,7 @@ Les instructions de paiement dépendent de votre mode de paiement et sont dispon
 
 Le paiement anticipé Azure est disponible comme mode de paiement uniquement pour les produits et services Azure éligibles
 
-## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
+## <a name="need-help-contact-support"></a>Vous avez besoin d’aide ? Contacter le support technique
 
 Si vous avez des questions ou si vous avez besoin d’aide relativement à vos crédits Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créer une demande de support avec support Azure</a>.
 

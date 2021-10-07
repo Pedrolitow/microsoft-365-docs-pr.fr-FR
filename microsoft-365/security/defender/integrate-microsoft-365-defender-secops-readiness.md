@@ -1,6 +1,6 @@
 ---
 title: Étape 2. Effectuer une évaluation de la préparation à l’intégration SOC à l’aide de l’infrastructure De confiance zéro
-description: Principes de base de l’évaluation de la préparation à l’intégration SOC à l’aide de l’infrastructure de confiance zéro lors de l’intégration Microsoft 365 Defender vos opérations de sécurité.
+description: Les principes de base de l’évaluation de la préparation à l’intégration SOC à l’aide de l’infrastructure de confiance zéro lors de l’intégration Microsoft 365 Defender vos opérations de sécurité.
 keywords: incidents, alertes, examiner, corrélation, attaque, appareils, utilisateurs, identités, identité, boîte aux lettres, e-mail, 365, microsoft, m365, réponse aux incidents, cyber-attaque, secops, opérations de sécurité, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 27cbc0ec7286812cebc500952bc68adad3586eb8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f67d276465bc23306446bc80f1c9e77eaa098b4b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183128"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206576"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Étape 2. Effectuer une évaluation de la préparation à l’intégration SOC à l’aide de l’infrastructure De confiance zéro
 
@@ -38,7 +38,7 @@ ms.locfileid: "59183128"
 
 Une fois que les principales fonctions de l’équipe du Centre des opérations de sécurité (SOC) sont définies, l’étape suivante pour votre organisation consiste à préparer l’adoption de Microsoft Defender par le biais d’une approche de confiance [zéro](/security/zero-trust/). L’adoption peut vous aider à déterminer les conditions requises pour le déploiement d’Microsoft 365 Defender à l’aide de pratiques modernes de pointe du secteur, tout en évaluant les fonctionnalités de Defender par rapport à votre environnement. 
 
-Cette approche repose sur une base solide de protections et inclut des domaines clés tels que l’identité, les points de terminaison (appareils), les données, les applications, l’infrastructure et la mise en réseau. L’équipe d’évaluation de la préparation déterminera les domaines où une condition fondamentale pour l’activation de Microsoft 365 Defender n’a pas encore été remplie et devra être mise à jour. 
+Cette approche repose sur une base solide de protections et inclut des domaines clés tels que l’identité, les points de terminaison (appareils), les données, les applications, l’infrastructure et la mise en réseau. L’équipe d’évaluation de la préparation déterminera les domaines où une exigence fondamentale pour l’activation de Microsoft 365 Defender n’a pas encore été satisfaite et devra être mise à jour. 
 
 Voici quelques-uns des éléments qui devront être corrigés pour que la SOC optimise pleinement les processus dans le SOC :
 

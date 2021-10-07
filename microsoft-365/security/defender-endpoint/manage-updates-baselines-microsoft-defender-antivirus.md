@@ -1,13 +1,13 @@
 ---
 title: Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 description: Gérer la façon dont Antivirus Microsoft Defender reçoit les mises à jour de protection et de produit.
-keywords: mises à jour, bases de référence de sécurité, protection, planifier des mises à jour, forcer les mises à jour, mises à jour mobiles, wsus
+keywords: mises à jour, bases de référence de sécurité, protection, planification des mises à jour, forcer les mises à jour, mises à jour mobiles, wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -18,16 +18,16 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/04/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 794c735ecf84efe57b9bb4c88f20f599f25a6a8a
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 881711359313bb0b22870ce15bbbc7ff2d91d1b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099632"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205306"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
@@ -52,7 +52,7 @@ Antivirus Microsoft Defender utilise la protection fournie par le [cloud](cloud-
 
 La protection cloud est toujours active et nécessite une connexion active à Internet pour fonctionner. Les mises à jour des informations de sécurité se produisent à une cadence programmée (configurable via une stratégie). Pour plus d’informations, voir Utiliser la protection fournie par le [cloud microsoft dans Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
-Pour obtenir la liste des mises à jour récentes de l’intelligence de sécurité, voir Les mises à jour d’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/en-us/wdsi/defenderupdates)malveillant Microsoft.
+Pour obtenir la liste des mises à jour récentes de l’intelligence de sécurité, voir Les mises à jour de l’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/en-us/wdsi/defenderupdates)malveillant Microsoft.
 
 Les mises à jour du moteur sont incluses dans les mises à jour de l’intelligence de sécurité et sont publiées à une cadence mensuelle.
 
@@ -73,11 +73,11 @@ Pour plus d’informations, [voir Gérer les sources pour les mises à jour Anti
 > - Les mises à jour mensuelles sont publiées par phases, ce qui entraîne la mise à jour de plusieurs packages dans vos services de mise à jour [de serveur Window.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 > - Cet article répertorie les modifications incluses dans le canal de publication large. [Consultez la dernière version de canal étendu ici.](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)
 > - Pour en savoir plus sur le processus de déploiement progressif et pour en savoir plus sur la prochaine version, voir Gérer le processus de déploiement progressif pour les mises à jour [de Microsoft Defender.](manage-gradual-rollout.md)
-> - Pour en savoir plus sur les mises à jour de l’intelligence de sécurité, consultez les mises à jour d’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/wdsi/defenderupdates)malveillant Microsoft.
+> - Pour en savoir plus sur les mises à jour de l’intelligence de sécurité, consultez les mises à jour de l’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/wdsi/defenderupdates)malveillant Microsoft.
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versions mensuelles de la plateforme et du moteur
 
-Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de plateforme, voir Mise à [jour Windows Defender plateforme anti-programme malveillant.](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)
+Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de la plateforme, voir [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 Toutes nos mises à jour contiennent
 
@@ -94,7 +94,7 @@ Toutes nos mises à jour contiennent
 &ensp;Moteur : **1.1.18500.10**<br/>
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 - Améliorations apportées au moteur d’analyse du comportement
 - Publication d’un nouvel [analyseur de performances pour Antivirus Microsoft Defender](tune-performance-defender-antivirus.md)
 - Antivirus Microsoft Defender contre le chargement de DLLs malveillantes
@@ -114,9 +114,9 @@ Aucun problème connu
 &ensp;Moteur : **1.1.18400.4**<br/>
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 - Prise en charge des contrôles d’appareil ajoutée Windows appareils portables
-- La protection des applications potentiellement indésirables (PUA) est désactivée par défaut pour les consommateurs (voir Applications potentiellement indésirables bloquées [par défaut)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
+- La protection des applications potentiellement indésirables (PUA) est désactivée par défaut pour les consommateurs (voir applications potentiellement indésirables bloquées [par défaut)](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)
 - Les analyses programmées pour les systèmes gérés par l’objet de stratégie de groupe respecteront la durée d’analyse configurée par l’utilisateur
 - Améliorations apportées au moteur d’analyse du comportement
 
@@ -132,7 +132,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.18300.4**<br/>
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 - Nouveaux contrôles pour la gestion du processus de déploiement progressif des mises à jour De Microsoft Defender. Voir [Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender.](manage-gradual-rollout.md)
 - Amélioration du moteur d’analyse du comportement
 - Améliorations apportées au déploiement des définitions de logiciels anti-programme malveillant
@@ -155,7 +155,7 @@ Après la publication d’une nouvelle version de package, la prise en charge de
 &ensp;Moteur : **1.1.18200.4**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 - Améliorations apportées à la [surveillance du comportement](client-behavioral-blocking.md)
 - Fonctionnalité de [filtrage des](network-protection.md) notifications de protection réseau fixe
 
@@ -171,7 +171,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.18100.5**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 - Logique d’analyse de comportement plus accrue
 - Détection améliorée de l’enregistreur de clés en mode noyau
 - Ajout de nouveaux contrôles pour gérer le processus de déploiement progressif pour [les mises à jour de Microsoft Defender](manage-gradual-rollout.md)
@@ -189,7 +189,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.18000.5**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Amélioration du moteur d’analyse du comportement
 - Préventions d’attaques par force brute du réseau étendu
@@ -207,7 +207,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17900.7**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Amélioration de la récupération du service par le biais [de la protection contre la falsification](prevent-changes-to-security-settings-with-tamper-protection.md)
 - Étendre l’étendue de la protection contre la falsification
@@ -224,7 +224,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17800.5**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Améliorations de la détection d’exploits shellcode
 - Visibilité accrue des tentatives de vol d’informations d’identification
@@ -244,7 +244,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17700.4**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Amélioration de la [journalisation de la prise en](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) charge de l’état SmartScreen
 
@@ -260,11 +260,11 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17600.5**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Nouvelles descriptions pour les catégories de menaces spéciales
 - Fonctionnalités d’émulation améliorées
-- Fonctionnalités améliorées d’autoriser/bloquer l’adresse hôte
+- Fonctionnalités améliorées d’autoriser/de bloquer l’adresse hôte
 - Nouvelle option dans le programme CSP Defender pour ignorer la fusion des exclusions des utilisateurs locaux
 
 ### <a name="known-issues"></a>Problèmes connus
@@ -280,7 +280,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17500.4**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Des autorisations d’administrateur sont requises pour restaurer les fichiers en quarantaine
 - Les événements au format XML sont désormais pris en charge
@@ -290,7 +290,7 @@ Aucun problème connu
    - Protection du réseau sur Server 2019
    - Exclusions d’adresses IP pour la protection du réseau
 - Meilleure visibilité des mesures du TPM
-- Amélioration de Office module VBA
+- Amélioration de l Office de module VBA
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -306,7 +306,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17400.5**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Ajouter d’autres événements de télémétrie
 - Télémétrie améliorée des événements d’analyse
@@ -330,7 +330,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17300.4**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Télémétrie améliorée pour BITS
 - Validation améliorée du certificat de signature de code Authenticode
@@ -349,11 +349,11 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17200.2**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Possibilité de spécifier [l’emplacement des journaux de support](./collect-diagnostic-data.md)
 - Ignorer l’analyse de rattrapage agressive en mode passif.
-- Autoriser Defender à mettre à jour les connexions avec des compteurs
+- Autoriser Defender à se mettre à jour sur les connexions à connexions avec des compteurs
 - Réglage des performances fixes lorsque la mise en cache est désactivée
 - Requête de Registre fixe
 - Randomisation du scantime fixe dans ADMX
@@ -372,9 +372,9 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17100.2**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
-- Journalisation améliorée des événements d’analyse
+- Enregistrement amélioré pour les événements d’analyse
 - Amélioration de la gestion des incidents en mode utilisateur.
 - Suivi des événements ajouté pour la protection contre la falsification
 - Soumission d’exemple AMSI fixe
@@ -395,8 +395,8 @@ Aucun problème connu
 &ensp;Moteur : **1.1.17000.2**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
-- Améliorations de WDfilter
+### <a name="whats-new"></a>Quoi de neuf ?
+- Améliorations apportées aux filtres WDfilter
 - Ajouter des données d’événements actionnables à des événements de détection de réduction de la surface d’attaque
 - Informations de version fixes dans les données de diagnostic et WMI
 - Version de plateforme incorrecte corrigée dans l’interface utilisateur après la mise à jour de la plateforme
@@ -418,7 +418,7 @@ Aucun problème connu
 &ensp;Moteur : **1.1.16900.4**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Option de limitation du processeur ajoutée à [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md)
 - Améliorer les fonctionnalités de diagnostic
@@ -439,11 +439,11 @@ Aucun problème connu
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.311.4.0**<br/>
 &ensp;Publication : **25 février 2020**<br/>
-&ensp;Plateforme/Client : **-**<br/>
+&ensp;Plateforme/client : **-**<br/>
 &ensp;Moteur : **1.1.16800.2**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 
 ### <a name="known-issues"></a>Problèmes connus
@@ -461,13 +461,13 @@ Plateforme/Client : **4.18.2001.10**<br/>
 Moteur : **1.1.16700.2**<br/>
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Correction du BSOD sur WS2016 avec Exchange
 - Prise en charge des mises à jour de plateforme lorsque le TMP est redirigé vers le chemin d’accès réseau
-- Les versions de plateforme et de moteur sont ajoutées [à WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
+- Les versions de plateforme et de moteur sont [ajoutées à WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - étendre la mise à jour des signatures d’urgence [en mode passif](./microsoft-defender-antivirus-compatibility.md)
-- Correction du hang 4.18.1911.3
+- Correction du problème de 4.18.1911.3
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -492,7 +492,7 @@ Plateforme : **4.18.1911.3**<br/>
 Moteur : **1.1.17000.7**<br/>
 Phase de support : **aucune prise en charge**<br/>
 
-### <a name="whats-new"></a>Nouveautés
+### <a name="whats-new"></a>Quoi de neuf ?
 
 - Niveau de suivi MpCmdRun fixe
 - Informations de version de WDFilter fixes
@@ -580,7 +580,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -594,7 +594,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.339.1923.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -622,7 +622,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.335.232.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -631,12 +631,12 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 <summary>1.1.2103.01</summary>
 
 &ensp;Version du package **: 1.1.2103.01**<br/>
-&ensp;Version de plateforme **: 4.18.2101.9**<br/>
+&ensp;Version de la plateforme **: 4.18.2101.9**<br/>
 &ensp;Version du moteur **: 1.1.17800.5**<br/>
 &ensp;Version de signature **: 1.331.2302.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Aucun
@@ -709,7 +709,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 - Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
-- Aucune
+- Aucun
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -720,7 +720,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 &ensp;Version de signature **: 1.327.2216.0**<br/>
 
 ### <a name="fixes"></a>Correctifs
-- Aucune
+- Aucun
 
 ### <a name="additional-information"></a>Informations supplémentaires
 - Ajout de la prise en charge Windows 10 images d’installation du système d’exploitation RS1 ou ultérieure.

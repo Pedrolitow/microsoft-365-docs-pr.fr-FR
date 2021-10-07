@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 205b24ac09bd49201daa9ee7b6243159e77bbad4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 098edd5b0857e7bd771be7d28fee965934b9bc67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181984"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205450"
 ---
 # <a name="get-software-by-id"></a>Obtenir le logiciel par ID
 
@@ -58,7 +58,7 @@ GET /api/Software/{Id}
 
 Nom|Type|Description
 ---|---|---
-Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
+Autorisation|String|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

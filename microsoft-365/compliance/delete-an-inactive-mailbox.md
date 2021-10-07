@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Lorsque vous n’avez plus besoin de conserver le contenu d’Microsoft 365 boîte aux lettres inactive, vous pouvez supprimer définitivement la boîte aux lettres inactive.
-ms.openlocfilehash: 077a71bfdd82721e0992e5d14073aa037b7cfd1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f0f60952db4b4a63dd0c72d1cd467e918a1a68c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183727"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203170"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Suppression d’une boîte aux lettres inactive
 
@@ -40,7 +40,7 @@ Consultez la section [Plus d'informations](#more-information) pour obtenir une d
 
 - Vous pouvez copier le contenu d'une boîte aux lettres inactive vers une autre boîte aux lettres avant de supprimer la conservation et de supprimer une boîte aux lettres inactive. Pour plus d’informations, voir [Restaurer une boîte aux lettres inactive dans Office 365](restore-an-inactive-mailbox.md).
 
-- Si vous supprimez la stratégie de conservation ou de rétention d’une boîte aux lettres inactive et que la période de rétention de la boîte aux lettres supprimée (suppression temporaire) de la boîte aux lettres a expiré, la boîte aux lettres est définitivement supprimée. Après sa suppression, elle ne peut pas être récupérée. Avant de supprimer la conservation, vérifiez que vous n'avez plus besoin du contenu de la boîte aux lettres. Si vous souhaitez réactiver une boîte aux lettres inactive, vous pouvez la récupérer. Pour plus d’informations, [voir Récupérer une boîte aux lettres inactive dans Office 365](recover-an-inactive-mailbox.md).
+- Si vous supprimez la stratégie de conservation ou de rétention d’une boîte aux lettres inactive et que la période de rétention de la boîte aux lettres supprimée (suppression définitive) de la boîte aux lettres a expiré, la boîte aux lettres est définitivement supprimée. Après sa suppression, elle ne peut pas être récupérée. Avant de supprimer la conservation, vérifiez que vous n'avez plus besoin du contenu de la boîte aux lettres. Si vous souhaitez réactiver une boîte aux lettres inactive, vous pouvez la récupérer. Pour plus d’informations, [voir Récupérer une boîte aux lettres inactive dans Office 365](recover-an-inactive-mailbox.md).
 
 - Pour plus d’informations sur les boîtes aux lettres inactives, consultez [la Office 365](inactive-mailboxes-in-office-365.md).
 
@@ -71,7 +71,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, mbxba6f4ba25b62490aaa
 ```
 
 > [!TIP]
-> Si un grand nombre In-Place conservations ou stratégies de rétention sont placées sur une boîte aux lettres inactive, tous les In-Place de conservation ne seront pas affichés. Vous pouvez exécuter la commande suivante pour afficher tous les GUID dans la propriété InPlaceHolds :  `Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
+> Si un grand nombre de conservations In-Place ou de stratégies de rétention sont placées sur une boîte aux lettres inactive, tous les In-Place de conservation ne seront pas affichés. Vous pouvez exécuter la commande suivante pour afficher tous les GUID dans la propriété InPlaceHolds :  `Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
   
 Pour plus d’informations sur l’identification des mises en attente, voir Comment identifier le type de mise en attente [placée sur une boîte aux lettres](identify-a-hold-on-an-exchange-online-mailbox.md).
 
@@ -106,7 +106,7 @@ Exécutez la commande suivante dans Exchange Online PowerShell pour exclure une 
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
 ```
 
-Pour plus d’informations sur l’identification des stratégies de rétention à l’échelle de l’organisation appliquées à une boîte aux lettres inactive et l’obtention du GUID d’une stratégie de rétention, consultez la section « Get-OrganizationConfig » dans Comment identifier le [type](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig)de conservation placé sur une boîte aux lettres.
+Pour plus d’informations sur l’identification des stratégies de rétention à l’échelle de l’organisation appliquées à une boîte aux lettres inactive et sur l’obtention du GUID d’une stratégie de rétention, consultez la section « Get-OrganizationConfig » dans comment identifier le [type](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig)de conservation placé sur une boîte aux lettres.
 
 Vous pouvez également exécuter la commande suivante pour supprimer la boîte aux lettres inactive de toutes les stratégies à l’échelle de l’organisation :
 

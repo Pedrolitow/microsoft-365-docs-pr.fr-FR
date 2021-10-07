@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Recherchez du contenu qui peut être pertinent pour un cas core eDiscovery.
-ms.openlocfilehash: 1637d5dafcf088dd2b069cda5e951aef3a2fcd1e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fdf623ec56f3f40ba3316fd546f044610829bbc2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175796"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189284"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Rechercher du contenu dans un cas core eDiscovery
 
-Une fois qu’un cas core eDiscovery est créé et que les personnes qui l’intéressent sont placées en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinent pour le cas. Les recherches associées à un cas core eDiscovery ne sont pas répertoriées dans la **page** de recherche de contenu du Centre de conformité Microsoft 365. Ces recherches sont répertoriées dans la page **Recherches** du cas core eDiscover à qui les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
+Une fois qu’un cas core eDiscovery est créé et que les personnes qui l’intéressent sont placées en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu pertinents pour le cas. Les recherches associées à un cas core eDiscovery ne sont pas répertoriées dans la **page** de recherche de contenu du Centre de conformité Microsoft 365. Ces recherches sont répertoriées dans la page **Recherches** du cas core eDiscover à qui les recherches sont associées. Cela signifie également que les recherches associées à un cas sont accessibles uniquement par les membres du cas.
 
 Pour créer une recherche de découverte électronique principale :
   

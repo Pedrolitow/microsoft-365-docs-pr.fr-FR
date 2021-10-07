@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7f18d72907ec8f2775ee258906c9185672bfa9be
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: a81fa60b1b66c8eb735da72e1e2108df804b2ef1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041695"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206804"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Exécuter des commandes de réponse en direct sur un appareil
 
@@ -228,7 +228,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [API Obtenir l’action de l’ordinateur](get-machineaction-object.md)
 - [Obtenir le résultat de la réponse en direct](get-live-response-result.md)

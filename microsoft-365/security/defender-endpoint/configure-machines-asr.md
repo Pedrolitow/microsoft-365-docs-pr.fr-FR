@@ -1,7 +1,7 @@
 ---
 title: Optimiser le déploiement et les détections des règles ASR
 description: Optimisez vos règles de réduction de la surface d’attaque (ASR) pour identifier et empêcher les attaques de programmes malveillants classiques.
-keywords: intégration, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
+keywords: intégré, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a1f51fcf497db0ca36a06fdcb5554e5cdc2861d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 612a68e4b0804ed6419511ee7505ed13a49883bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209683"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205666"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>Optimiser le déploiement et les détections des règles ASR
 
@@ -40,10 +40,10 @@ ms.locfileid: "59209683"
 <br>
 *Carte de gestion de la surface d’attaque*
 
-La *carte de gestion de la surface d’attaque* est un point d’entrée vers les outils Microsoft 365 centre de sécurité que vous pouvez utiliser pour :
+La *carte de gestion de la surface* d’attaque est un point d’entrée des outils Microsoft 365 centre de sécurité que vous pouvez utiliser pour :
 
 * Comprendre comment les règles de la asr. sont actuellement déployées dans votre organisation.
-* Examinez les détections de la résurv et identifiez les détections éventuellement incorrectes.
+* Passer en revue les détections de la résurv et identifier les détections incorrectes possibles.
 * Analysez l’impact des exclusions et générez la liste des chemins d’accès aux fichiers à exclure.
 
 Sélectionnez **Go to attack surface management** \> **Reports** Attack surface \> **reduction rules** Add \> **exclusions**. À partir de là, vous pouvez accéder à d’autres sections du centre Microsoft 365 sécurité.

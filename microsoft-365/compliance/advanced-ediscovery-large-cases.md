@@ -10,18 +10,18 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Utilisez de grands cas dans Advanced eDiscovery pour ajouter d’autres éléments aux jeux de révision et tirer parti d’autres limites accrues.
-ms.openlocfilehash: 43211dbeed7621de64d696e21fa647d5023350bb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9481f268e47f10955d4438a0088d7153ebf9d21b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182439"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203338"
 ---
 # <a name="use-large-cases-in-advanced-ediscovery-preview"></a>Utiliser de grands cas dans Advanced eDiscovery (prévisualisation)
 
@@ -35,7 +35,7 @@ Pour créer un cas important :
 
 2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur **eDiscovery > Advanced**.
 
-3. Dans la page **Advanced eDiscovery,** cliquez sur l’onglet **Cas,** puis cliquez **sur Créer un cas.**
+3. Dans la page **Advanced eDiscovery,** cliquez sur **l’onglet Cas,** puis cliquez **sur Créer un cas.**
 
    La page de présentation du nouveau cas **eDiscovery** s’affiche. La section **Format de** cas offre la possibilité de créer un cas important. Choisissez ce type de cas si vous devez collecter une grande quantité de contenu sur une courte période de temps.
 
@@ -51,7 +51,7 @@ Voici une liste des autres avantages des cas importants dans Advanced eDiscovery
 
 - **Collection**: dans le format grand format, vous pouvez collecter jusqu’à 1 To de données pour une seule collection. 
 
-   Pour chaque grand cas, les paramètres de collection collectent par défaut les pièces jointes cloud et les Teams et Yammer contenu. Ces paramètres permettent de recueillir l’image complète des communications numériques au sein d’une enquête. Pour les conversations contextuelles Teams et Yammer, le format de cas élevé convertit les captures instantanées basées sur le temps de 1:1, 1 : N et les conversations de canal en transcriptions html afin de fournir du contexte aux conversations et de réduire le nombre total d’éléments produits par le contenu basé sur la conversation.  
+   Pour chaque cas volumineux, les paramètres de collection collectent par défaut les pièces jointes cloud et les Teams et Yammer contenu. Ces paramètres permettent de recueillir l’image complète des communications numériques au sein d’une enquête. Pour les conversations contextuelles Teams et Yammer, le format de cas élevé convertit les captures instantanées basées sur le temps de 1:1, 1 : N et les conversations de canal en transcriptions html pour fournir du contexte des conversations et réduire le nombre total d’éléments produits par le contenu basé sur la conversation.  
 
 - **Révision**: chaque ensemble de révision prendra en charge jusqu’à 1 To de contenu de pré-expansion. Des métadonnées supplémentaires seront disponibles pour les filtres et les requêtes, notamment le nom de l’équipe, le nom du canal et le nom de conversation pour Teams contenu. Chaque transcription inclut un contenu basé sur le temps avant et après l’élément réactif. Pour les conversations de canal, le billet racine et toutes les réponses sont collectés pour le contenu réactif.  
 

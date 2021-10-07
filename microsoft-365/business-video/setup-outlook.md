@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer des Outlook pour votre Microsoft 365 courrier électronique.
-ms.openlocfilehash: 9dc0ed41df4aaadee060e0c7606600ba5512df09
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa098383371737e9f792acdc0478500cfff9fea0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203441"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204766"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configurer la messagerie Outlook pour Microsoft 365 entreprise 
 
@@ -40,6 +40,6 @@ Après avoir installé les applications Office, vous&#39;configurer Outlook pour
 3. Entrez les adresses de messagerie supplémentaires que vous souhaitez utiliser, telles que votre adresse e-mail précédente ou personnelle. Sélectionnez  **Suivant**.
 4. Si vous y êtes invité, entrez un mot de passe, puis sélectionnez **Se connectez.**
 5. Une fois tous vos comptes ajoutés, choisissez si vous souhaitez configurer Outlook mobile ou attendre plus tard.
-6. Sélectionnez  **Terminé**. Le téléchargement de votre courrier électronique et d’autres données peut prendre plusieurs minutes avant Outlook’utilisateurs.
+6. Sélectionnez  **Terminé**. Le téléchargement de votre courrier électronique et d’autres données peut prendre plusieurs minutes avant Outlook’utilisateur.
 
 Vous pouvez désormais afficher le courrier électronique pour les comptes que vous avez ajoutés. Vous pouvez également afficher votre calendrier, vos contacts et vos tâches.

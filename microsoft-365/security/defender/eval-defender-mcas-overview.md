@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: bcarter
 author: brendacarter
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 43792367d4ec1cd31c2122badd74a32bc7ae8a19
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 61b3f7f0e687ca2736180a6a353d90c214ee48db
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180982"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210686"
 ---
 # <a name="evaluate-microsoft-cloud-app-security"></a>Évaluer Microsoft Cloud App Security
 
@@ -39,13 +39,13 @@ Cet article décrit le processus d’Microsoft Cloud App Security et de Microsof
 
 Utilisez les étapes suivantes pour activer et piloter la sécurité des applications cloud de Microsoft.
 
-![Étapes de l’ajout de Microsoft Defender Office à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-office-eval-steps.png)
+![Étapes d’ajout de Microsoft Defender pour Office’environnement d’évaluation Defender.](../../media/defender/m365-defender-office-eval-steps.png)
 
 
 
 |Étape  |Description  |
 |---------|---------|
-|[Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-mcas-architecture.md)    | Comprendre l’architecture Sécurité des applications cloud et la façon dont elle s’intègre à Microsoft 365 Defender, Microsoft Defender pour endpoint et Azure Active Directory.        |
+|[Passer en revue les exigences en matière d’architecture et les concepts clés](eval-defender-mcas-architecture.md)    | Comprendre l’architecture Sécurité des applications cloud et comment elle s’intègre à Microsoft 365 Defender, Microsoft Defender pour le point de terminaison et Azure Active Directory.        |
 |[Activer l’environnement d’évaluation](eval-defender-mcas-enable-eval.md)     | Connecter au portail, configurez l’intégration avec Defender pour l’identité et/ou les périphériques réseau de votre organisation, et commencez à afficher et gérer les applications cloud.         |
 |[Configurer le pilote ](eval-defender-mcas-pilot.md)    | Limitez votre déploiement à certains groupes d’utilisateurs, configurez le contrôle d’application d’accès conditionnel et essayez des didacticiels pour protéger votre environnement.       |
 

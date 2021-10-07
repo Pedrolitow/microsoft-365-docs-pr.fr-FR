@@ -10,7 +10,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: M365-subscription-management
   ms.custom:
   - AdminSurgePortfolio
@@ -20,12 +20,12 @@ metadata:
   - MET150
   description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
   ms.date: 09/15/2020
-  ms.openlocfilehash: 7dcf16ff51854b595f61c2797a62632a3003b7c9
-  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.openlocfilehash: 603f50b95ef16e7484f87bcb437416f258073165
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59180140"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60188408"
 title: FAQ sur l’achat en libre-service
 summary: >
   L’achat en libre-service permet aux utilisateurs d’essayer de nouvelles technologies et de développer des solutions qui, en fin de compte, profitent à leurs grandes organisations. Les équipes d’approvisionnement centralisée et les équipes techniques ont une visibilité pour tous les utilisateurs qui achètent et déploient des solutions d’achat en libre-service via <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">le Centre d'administration Microsoft 365</a>. Les administrateurs peuvent désactiver les achats en libre-service par produit via PowerShell. Pour plus d’informations, voir [Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce.](allowselfservicepurchase-powershell.md)
@@ -86,7 +86,7 @@ sections:
   - question: >
       Quelles fonctionnalités un administrateur a-t-il pour les achats en libre-service ?
     answer: >
-      Les administrateurs peuvent afficher tous les achats en libre-service effectués dans leur organisation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Dans le Centre d’administration Power Platform, les administrateurs peuvent également afficher la capacité des achats en libre-service. Si nécessaire pour leur organisation, les administrateurs peuvent désactiver les achats en libre-service par produit via PowerShell. Les administrateurs ont les mêmes stratégies de gestion des données et d’accès que les produits achetés via un achat en libre-service ou de manière centralisée.
+      Les administrateurs peuvent afficher tous les achats en libre-service effectués dans leur organisation dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration Microsoft 365</a>. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Dans le Centre d’administration Power Platform, les administrateurs peuvent également afficher la capacité des achats en libre-service. Si nécessaire pour leur organisation, les administrateurs peuvent désactiver les achats en libre-service par produit via PowerShell. Les administrateurs ont les mêmes stratégies d’accès et de gestion des données que les produits achetés via un achat en libre-service ou de manière centralisée.
 
 
       Les administrateurs peuvent également contrôler si les utilisateurs de leur organisation peuvent effectuer des achats en libre-service. Pour plus d’informations, voir [Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce.](allowselfservicepurchase-powershell.md)
@@ -126,7 +126,7 @@ sections:
   - question: >
       Qu’advient-il d’un achat en libre-service si un utilisateur quitte l’organisation ?
     answer: >
-      Si la personne qui a acheté à l’origine le produit d’achat en libre-service quitte l’organisation, les utilisateurs valides continuent à utiliser entièrement le produit pendant toute la durée de l’abonnement. L’abonnement reste actif jusqu’à ce que l’acheteur l’annule directement ou qu’un administrateur demande l’annulation de l’abonnement par le biais du support client. Les administrateurs peuvent également choisir d’attribuer une licence achetée de manière centralisée aux utilisateurs de l’abonnement annulé.
+      Si la personne qui a acheté à l’origine le produit d’achat en libre-service quitte l’organisation, les utilisateurs valides continuent d’utiliser entièrement le produit pendant toute la durée de l’abonnement. L’abonnement reste actif jusqu’à ce que l’acheteur l’annule directement ou qu’un administrateur demande l’annulation de l’abonnement par le biais du support client. Les administrateurs peuvent également choisir d’attribuer une licence achetée de manière centralisée aux utilisateurs de l’abonnement annulé.
 - name: Partenaires
   questions:
   - question: >

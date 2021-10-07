@@ -1,5 +1,5 @@
 ---
-title: Conditions préalables & autorisations - Gestion des menaces et des vulnérabilités
+title: 'Conditions préalables & autorisations : Gestion des menaces et des vulnérabilités'
 description: Avant de commencer à utiliser Gestion des menaces et des vulnérabilités, assurez-vous que vous avez les configurations et autorisations pertinentes.
 keywords: conditions préalables & gestion des vulnérabilités sur les autorisations de Gestion des menaces et des vulnérabilités menace, conditions préalables pour les autorisations d’Gestion des menaces et des vulnérabilités, conditions préalables pour les autorisations TVM de Microsoft Defender pour les points de terminaison, gestion des vulnérabilités
 search.product: eADQiWindows 10XVcnh
@@ -10,20 +10,20 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9fde7ed4c7a3b621730e2b6cd73370d87ea9c92c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c3bb52686c43afca710dbe8842463c493a15e140
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181042"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206732"
 ---
-# <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Conditions préalables & autorisations - Gestion des menaces et des vulnérabilités
+# <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Conditions préalables & autorisations : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,9 +43,9 @@ Assurez-vous que vos appareils :
 
 - Installez et déployez les mises à jour obligatoires suivantes dans votre réseau pour augmenter les taux de détection de l’évaluation des vulnérabilités :
 
-  > Débloquer | Numéro et lien de la mise à jour de sécurité de la KB
+  > Version | Numéro et lien de la mise à jour de sécurité de la KB
   > :---|:---
-  > Windows 10 Version 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) et [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+  > Windows 10 Version 1709 | [KB4493441 et](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
   > Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) et [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
   > Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
   > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
@@ -64,7 +64,7 @@ Assurez-vous que vos appareils :
 1. Connectez-vous au Microsoft 365 Defender à l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
 2. Dans le volet de navigation, sélectionnez Paramètres > points de terminaison **> rôles.**
 
-Pour plus d’informations, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](user-roles.md)
+Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](user-roles.md)
 
 ### <a name="view-data"></a>Afficher les données
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -19,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6561a052-02bb-479d-93ca-5a0f16faf2ee
 description: Obtenez la dernière version de l’analyse Microsoft 365'utilisation.
-ms.openlocfilehash: abcfd8a8a20de6b510b7fb3735952416187d10eb
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: a94c1fdf81b224d86ba3eb54b3b65d26f38ba1bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776451"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204850"
 ---
 # <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a>Obtenir la dernière version de l’analyse Microsoft 365'utilisation
 

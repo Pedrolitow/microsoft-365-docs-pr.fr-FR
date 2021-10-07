@@ -9,24 +9,24 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment configurer & utiliser un connecteur dans le Centre de conformité Microsoft 365 pour importer des données d’archivage & des pages Facebook Business vers Microsoft 365.
-ms.openlocfilehash: 766f7858c6e5117190712d3daad68b2b7b4e37c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b78a2ae168c896d525ad57bc986105e891f7dde9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206324"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204502"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configurer un connecteur pour archiver les données Facebook (aperçu)
 
 Utilisez un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de pages Facebook Business vers Microsoft 365. Après avoir configuré et configuré le connecteur, il se connecte à la page Facebook Business (de manière programmée), convertit le contenu des éléments Facebook au format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 
-Une fois les données Facebook importées, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données Facebook. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige ou affectée à une stratégie de rétention, les données Facebook sont conservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données Facebook sont stockées à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur pour importer et archiver des données Facebook dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données Facebook importées, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu, l’archivage In-Place, l’audit, la conformité des communications et les stratégies de rétention Microsoft 365 aux données Facebook. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige ou affectée à une stratégie de rétention, les données Facebook sont conservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données Facebook sont stockées à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur pour importer et archiver des données Facebook dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Conditions préalables à la configuration d’un connecteur pour les pages Facebook Business
 
@@ -53,7 +53,7 @@ La première étape consiste à inscrire une nouvelle application dans Azure Act
 
 Pour obtenir des instructions détaillées, voir [Créer une application dans Azure Active Directory](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory).
 
-À la fin de cette étape (en suivant les instructions pas à pas précédentes), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs sont utilisées dans les étapes ultérieures du processus de déploiement.
+À la fin de cette étape (en utilisant les instructions pas à pas précédentes), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs sont utilisées dans les étapes ultérieures du processus de déploiement.
 
 - ID d’application AAD
 
@@ -91,7 +91,7 @@ Pour obtenir des instructions détaillées, voir [Enregistrer l’application Fa
 
 ## <a name="step-4-configure-the-facebook-connector-app"></a>Étape 4 : Configurer l’application connecteur Facebook
 
-L’étape suivante consiste à ajouter des paramètres de configuration à l’application connecteur Facebook que vous avez téléchargée lorsque vous avez créé la ressource Azure Web App à l’étape 1. Pour ce faire, vous allez sur la page d’accueil de votre application de connecteur et la configurez.
+L’étape suivante consiste à ajouter des paramètres de configuration à l’application de connecteur Facebook que vous avez téléchargée lorsque vous avez créé la ressource d’application web Azure à l’étape 1. Pour ce faire, vous allez sur la page d’accueil de votre application de connecteur et la configurez.
 
 Pour obtenir des instructions détaillées, voir [Configurer l’application connecteur Facebook.](archive-facebook-data-with-sample-connector.md#step-4-configure-the-facebook-connector-app)
 

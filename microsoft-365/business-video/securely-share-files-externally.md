@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment partager en toute sécurité vos fichiers d’entreprise avec des personnes extérieures à votre organisation avec un lien sécurisé.
-ms.openlocfilehash: 17875dc403c96caac55a5487cf5649d6778ec160
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8881040da7074a6d348698b4b0ac5d005517efc8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203460"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188624"
 ---
 # <a name="securely-share-files-externally"></a>Partager en toute sécurité des fichiers en externe
 
@@ -44,4 +44,4 @@ Dans Microsoft 365 entreprise, il est facile de partager des fichiers avec des p
 1. Dans la **fenêtre Lien d’envoi,** cliquez sur la liste en haut, choisissez Des personnes spécifiques, sélectionnez Autoriser la **modification,** puis sélectionnez **Appliquer**. 
 1. Dans la **fenêtre Lien d’envoi,** entrez l’adresse e-mail de votre client, tapez un message, puis choisissez **Envoyer.**
 
-    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas le courrier électronique, il doit vérifier son dossier De courrier indésirable.
+    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas l’e-mail, il doit vérifier son dossier de courrier indésirable.

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment gérer les stratégies de protection contre la perte de données.
-ms.openlocfilehash: 04dbbcfd39186b8161fb497b72ddb070fbfb7471
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a2e22e11a60953b882c088dd9e51dcde77695252
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203454"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188600"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Empêcher la perte de données avec DLP
 
@@ -38,8 +38,8 @@ Les stratégies de protection contre la perte de données permettent d’identif
 
 1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 1. Faites défiler vers le bas **pour configurer la** protection contre la perte de données, puis **sélectionnez Afficher,** puis **Gérer**.
-1. Pour modifier une stratégie, sélectionnez-la, choisissez **Modifier la stratégie,** puis sélectionnez ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
-1. Pour activer l’analyse du contenu Microsoft Teams, activez le bouton bascule à la **position** Sur, puis sélectionnez **Enregistrer.**
+1. Pour modifier une stratégie, sélectionnez-la, sélectionnez **Modifier la stratégie,** puis ce qu’il faut modifier. Par exemple, sélectionnez **Emplacements** pour modifier ce qui est analysé.
+1. Pour activer l’analyse du contenu Microsoft Teams, activez le bouton bascule en **position** Activé, puis sélectionnez **Enregistrer.**
 1. Pour modifier les paramètres de stratégie, sélectionnez **Modifier.**
 1. Vous devez définir des règles distinctes qui s’appliquent aux petites et grandes quantités de contenu sensible détecté. Développez votre règle de faible volume. Choose **Edit rule**.
 1. Examinez vos paramètres et ajustez-les selon vos besoins. Par exemple, vous pouvez choisir de personnaliser **le texte** du message électronique et le texte du conseil **de stratégie.** Sélectionnez **Enregistrer**.

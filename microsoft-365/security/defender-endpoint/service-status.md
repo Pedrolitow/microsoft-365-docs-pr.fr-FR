@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aa98826605ef1af62ec720c06baa844260ddc9ae
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7be50f2a0e83b5a69bb0529bf2ba227d0bb2d81d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204636"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206780"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Vérifier l’état du service Point de terminaison Microsoft Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59204636"
 
 **L’état** du service fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels. S’il existe des problèmes, vous verrez des informations telles que le moment où le problème a été détecté, la cause racine préliminaire et le temps de résolution attendu.
 
-Vous verrez également des informations sur les problèmes historiques qui ont été résolus et des détails tels que la date et l’heure de résolution du problème. Lorsqu’il n’y a aucun problème sur le service, vous voyez un état d’état sain.
+Vous verrez également des informations sur les problèmes historiques qui ont été résolus et des détails tels que la date et l’heure de résolution du problème. Lorsqu’il n’y a aucun problème sur le service, vous voyez un état sain.
 
 Vous pouvez afficher des détails sur l’état  du service en cliquant sur la vignette à partir du tableau de bord Opérations de sécurité ou en sélectionnant le menu d’état du **service** dans le volet de navigation.
 

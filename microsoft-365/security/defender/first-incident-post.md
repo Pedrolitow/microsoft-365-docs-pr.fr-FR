@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8219192416bc286714b3fddc3878ce8ed5de949b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183159"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210674"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer un examen post-incident de votre premier incident
 
@@ -38,9 +38,9 @@ ms.locfileid: "59183159"
 
 Le National Institute of Standards and Technology (NIST) recommande qu’une fois que toutes les mesures ont été prises pour récupérer après l’attaque, les organisations doivent passer en revue l’incident pour en savoir plus et améliorer la posture ou les processus de sécurité. L’évaluation des différents aspects de la gestion des incidents devient importante lors de la préparation du prochain incident.
 
-Microsoft 365 Defender pouvez vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquettent les attaques conformément à une technique ou une&CK att. 
+Microsoft 365 Defender pouvez vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquetent les attaques conformément à une tactique ou une technique att&CK. 
 
-En m mappage d’alertes à cette infrastructure du secteur, vous pouvez :
+En m mappage des alertes à cette infrastructure du secteur, vous pouvez :
 
 - Effectuer une analyse des lacunes dans la couverture de sécurité.
 - Déterminer l’adversaire et l’attribution de la campagne.

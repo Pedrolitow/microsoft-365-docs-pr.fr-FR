@@ -7,7 +7,7 @@ ms.date: 4/20/2015
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: Cet article explique la différence entre l’utilisation du cache d’objets dans SharePoint Server 2013 local et SharePoint Online.
-ms.openlocfilehash: 40863ccf375620cf4b38d231fa0a86336c4826cc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5d35ae0668641dd698a7e6bfc2c2573acf251e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202031"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199836"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Utilisation du cache d’objets avec SharePoint Online
 
@@ -34,13 +34,13 @@ L’utilisation du cache d’objets dans le déploiement SharePoint Online a un 
   
 ## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Fonctionnement SharePoint cache d’objets SharePoint Server 2013
 
-Lorsque SharePoint Server 2013 est hébergé en local, le client dispose de serveurs web frontaux privés qui hébergent le cache d’objets. Cela signifie que le cache est dédié à un client et est limité uniquement par la quantité de mémoire disponible et allouée au cache d’objets. Étant donné qu’un seul client est servi dans le scénario local, les serveurs web frontaux ont généralement des utilisateurs qui font des demandes aux mêmes sites plusieurs fois. Cela signifie que le cache est rapidement plein et qu’il reste plein des résultats de requête de liste et SharePoint objets que vos utilisateurs demandent régulièrement.
+Lorsque SharePoint Server 2013 est hébergé en local, le client dispose de serveurs web frontaux privés qui hébergent le cache d’objets. Cela signifie que le cache est dédié à un client et est limité uniquement par la quantité de mémoire disponible et allouée au cache d’objets. Étant donné qu’un seul client est servi dans le scénario local, les serveurs web frontaux ont généralement des utilisateurs qui font des demandes aux mêmes sites plusieurs fois. Cela signifie que le cache est rapidement plein et qu’il reste plein des résultats de requête de liste et des objets SharePoint que vos utilisateurs demandent régulièrement.
   
 ![Affiche le trafic et la charge vers les serveurs web frontaux locaux.](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
 Par conséquent, la deuxième fois qu’un utilisateur visite une page, le temps de chargement de la page s’améliore. Après au moins quatre chargements de la même page, la page est mise en cache sur tous les serveurs web frontux.
   
-En revanche, dans SharePoint Online, il y a beaucoup plus de serveurs, mais aussi beaucoup plus de sites. Chaque utilisateur peut se connecter à un autre serveur web frontal dont le cache n’est pas rempli. Ou bien, le cache est peut-être rempli pour un serveur, mais l’utilisateur suivant de ce serveur web frontal demande une page à partir d’un autre site. Ou, même si l’utilisateur suivant demande la même page que lors de sa visite précédente, il est à charge équilibrée vers un autre serveur web frontal qui n’a pas cette page dans son cache. Dans ce dernier cas, la mise en cache n’aide pas du tout les utilisateurs.
+En revanche, dans SharePoint Online, il y a beaucoup plus de serveurs, mais aussi beaucoup plus de sites. Chaque utilisateur peut se connecter à un autre serveur web frontal dont le cache n’est pas rempli. Ou peut-être le cache est-il rempli pour un serveur, mais l’utilisateur suivant de ce serveur web frontal demande une page à partir d’un autre site. Ou, même si l’utilisateur suivant demande la même page que lors de sa visite précédente, il est à charge équilibrée vers un autre serveur web frontal qui n’a pas cette page dans son cache. Dans ce dernier cas, la mise en cache n’aide pas du tout les utilisateurs.
   
 Dans la figure suivante, chaque point représente une page qu’un utilisateur demande et où il est mis en cache. Différentes couleurs représentent différents clients qui utilisent l’infrastructure SaaS.
   

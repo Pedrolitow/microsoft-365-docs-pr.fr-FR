@@ -1,29 +1,27 @@
 ---
 title: Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 ms.reviewer: ''
-description: Décrit les informations de confidentialité de Microsoft Defender pour Endpoint sur iOS
+description: Décrit les informations de confidentialité de Microsoft Defender pour endpoint sur iOS
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, stratégie, vue d’ensemble
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e1983e023a0236ea1e0ad9ac82b8d089e120cd7d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dcfa13256807e5a3f55d2f26fb5c7bafd4645cda
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209107"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188888"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 
@@ -36,7 +34,7 @@ ms.locfileid: "59209107"
 > [!NOTE]
 > Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l’appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
 
-Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender for Endpoint sur iOS sécurisé, à jour, en cours d’évaluation et pour prendre en charge le service.
+Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender pour point de terminaison sur iOS sécurisé, à jour, en cours d’évaluation et pour prendre en charge le service.
 
 Pour plus d’informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
 
@@ -54,7 +52,7 @@ Voici la liste des types de données collectées :
 
 ### <a name="device-and-account-information"></a>Informations sur l’appareil et le compte
 
-- Informations sur l’appareil telles que l'& date, la version d’iOS, les informations sur l’UC et l’identificateur de l’appareil, où l’identificateur d’appareil est l’un des éléments suivants :
+- Informations sur l’appareil telles que l'& date, la version d’iOS, les informations sur le processeur et l’identificateur de l’appareil, où l’identificateur d’appareil est l’un des éléments suivants :
   - Wi-Fi'adaptateur MAC
   - Identificateur global unique (GUID) généré de manière aléatoire
 - Informations sur le client, l’appareil et l’utilisateur
@@ -86,4 +84,4 @@ Les données de commentaires sont collectées par le biais de commentaires dans 
 - Adresse de messagerie de l’utilisateur, s’il choisit de la fournir.
 - Type de commentaires (souris, frown, idée) et tous les commentaires envoyés par l’utilisateur.
 
-Pour plus d’informations, [voir plus d’informations sur la confidentialité.](https://aka.ms/mdatpiosprivacystatement)
+Pour plus d’informations, [voir Plus d’informations sur la confidentialité.](https://aka.ms/mdatpiosprivacystatement)

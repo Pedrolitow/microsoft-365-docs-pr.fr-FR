@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4158541714807c67ae446435b6d1234ddc5a3c7f
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 6f5cc7bb514001666bc1223630738faa2f94e8df
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043118"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204034"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
@@ -96,7 +96,7 @@ Si vous rencontrez des problèmes avec des règles détectant des fichiers qui, 
 
 Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d’attaque pour plus d’informations sur chaque règle.
 
-### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser la stratégie de groupe pour exclure des fichiers et des dossiers
+### <a name="use-group-policy-to-exclude-files-and-folders"></a>Utiliser une stratégie de groupe pour exclure des fichiers et des dossiers
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](https://technet.microsoft.com/library/cc731212.aspx), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
@@ -129,9 +129,9 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 ## <a name="customize-the-notification"></a>Personnaliser la notification
 
-Vous pouvez personnaliser la notification pour le déclenchement d’une règle et bloquer une application ou un fichier. Consultez [l’article](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) Sécurité Windows’article.
+Vous pouvez personnaliser la notification lorsqu’une règle est déclenchée et bloque une application ou un fichier. Consultez [l’article](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) Sécurité Windows’article.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 - [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)

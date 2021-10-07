@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2b6d88f7cd443c7fb093d791a7904baafeb9c1d
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 8e705c868dfc4bd5bba71d21d73fc112c6a54673
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010128"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210876"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planifier les versions logicielles et logicielles de fin de prise en charge avec Gestion des menaces et des vulnérabilités
 
@@ -63,7 +63,7 @@ Pour afficher la liste des versions qui ont atteint la fin de la prise en charge
 
     ![Capture d’écran du lien de distribution de version.](images/eos-upcoming-eos.png)
 
-2. Sélectionnez **le lien de distribution** de version pour aller à la page d’accès au logiciel. Vous pouvez y voir une liste filtrée de versions avec des balises les identifiant comme fin de support ou fin de support à venir.
+2. Sélectionnez le **lien de distribution** de version pour aller à la page d’accès au logiciel. Vous pouvez y voir une liste filtrée de versions avec des balises les identifiant comme fin de support ou fin de support à venir.
 
     ![Capture d’écran de la page d’drilldown logicielle avec le logiciel de fin de support.](images/software-drilldown-eos.png)
 
@@ -73,7 +73,7 @@ Pour afficher la liste des versions qui ont atteint la fin de la prise en charge
 
 Une fois que vous avez identifié les logiciels et les versions logicielles vulnérables en raison de leur statut de fin de support, vous devez décider s’il faut les mettre à jour ou les supprimer de votre organisation. Cela réduit l’exposition de votre organisation aux vulnérabilités et aux menaces persistantes avancées.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)

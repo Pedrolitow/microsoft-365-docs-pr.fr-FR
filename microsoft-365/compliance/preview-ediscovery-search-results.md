@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Afficher l’aperçu d’un exemple de résultats renvoyés par une recherche de contenu ou une recherche de découverte électronique principale dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: ac9929ee8639c4d653f8e9dfe680a5df5c6c3a7d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: af0811d0c442d6f064fd336d4261d1f7b2337dc8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206044"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189344"
 ---
 # <a name="preview-ediscovery-search-results"></a>Afficher un aperçu des résultats de la recherche de découverte électronique
 

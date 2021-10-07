@@ -7,7 +7,7 @@ ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Utilisez l’outil Diagnostic de page pour SharePoint pour analyser le portail moderne et les pages de publication classiques SharePoint Online par rapport à un ensemble prédéfin défini de critères de performances.
-ms.openlocfilehash: e741e8e2da62d2361578e31edcb6dbbafafbb7dc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e1931b7cdc661b5e0a6ed8751a26f8a77e4bc2e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204065"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199968"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Utiliser l’outil Diagnostic de page pour SharePoint de page
 
@@ -47,7 +47,7 @@ L’outil Diagnostic de page est conçu pour analyser SharePoint pages de site u
 > [!div class="mx-imgBorder"]
 > ![Doit s’exécuter sur une SharePoint page.](../media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
 
-Il ne s’agit pas d’une erreur dans l’outil, car il n’y a aucune valeur à évaluer les bibliothèques ou les pages système. Accédez à une page SharePoint site pour utiliser l’outil. Si cette erreur se produit sur une page SharePoint, vérifiez la page maître pour vous assurer que les métatags SharePoint n’ont pas été supprimés.
+Il ne s’agit pas d’une erreur dans l’outil, car il n’y a aucune valeur à évaluer les bibliothèques ou les pages système. Accédez à une page SharePoint site web pour utiliser l’outil. Si cette erreur se produit sur une page SharePoint, vérifiez la page maître pour vous assurer que les métatags SharePoint n’ont pas été supprimés.
 
 Pour fournir des commentaires sur l’outil, sélectionnez les ellipses dans le coin supérieur droit de l’outil, puis [sélectionnez Commentaires.](https://go.microsoft.com/fwlink/?linkid=874109)
 
@@ -61,12 +61,12 @@ La procédure d’installation de cette section fonctionne pour les navigateurs 
 > [!IMPORTANT]
 > Microsoft ne lit pas les données ou le contenu de page analysés par l’outil Diagnostic de page pour SharePoint et nous ne capturons pas d’informations personnelles, de site web ou de téléchargement d’informations. Les seules informations identifiables consignées dans Microsoft par l’outil sont le nom du client, le nombre de règles qui ont échoué et la date et l’heure d’utilisation de l’outil. Ces informations sont utilisées par Microsoft pour mieux comprendre les tendances d’utilisation des sites de portail et de publication modernes et les problèmes courants de performances.
 
-1. Installez l’outil Diagnostic de page SharePoint pour **Microsoft Edge** [(extension Edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) ou **Chrome** [(extension Chrome).](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) Consultez la politique de confidentialité de l’utilisateur fournie sur la page de description du Store. Lorsque vous ajoutez l’outil à votre navigateur, vous verrez l’avis d’autorisations suivant.
+1. Installez l’outil Diagnostic de page SharePoint pour **Microsoft Edge** [(extension Edge)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) ou **Chrome** [(extension Chrome).](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) Veuillez consulter la politique de confidentialité de l’utilisateur fournie sur la page de description du Store. Lorsque vous ajoutez l’outil à votre navigateur, vous verrez l’avis d’autorisations suivant.
 
     > [!div class="mx-imgBorder"]
     > ![Autorisations d’extension.](../media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
-    Cette notification est en place, car une page peut contenir du contenu provenant d’emplacements en dehors de SharePoint en fonction des composants Web Parts et des personnalisations de la page. Cela signifie que l’outil lit les demandes et les réponses lorsque l’utilisateur clique sur le bouton Démarrer et uniquement pour l’onglet SharePoint sur lequel l’outil est en cours d’exécution. Ces informations sont capturées localement par le navigateur web et  sont disponibles via le bouton  Exporter vers **JSON** ou Exporter vers le har de l’onglet Suivi réseau de l’outil. Les informations ne sont pas envoyées à Microsoft ou capturées par **Microsoft.** (L’outil respecte la politique de confidentialité Microsoft accessible [ici.)](https://go.microsoft.com/fwlink/p/?linkid=857875)
+    Cette notification est en place, car une page peut contenir du contenu provenant d’emplacements en dehors de SharePoint en fonction des composants Web Parts et des personnalisations de la page. Cela signifie que l’outil lit les demandes et les réponses lorsque l’utilisateur clique sur le bouton Démarrer et uniquement pour l’onglet SharePoint sur lequel l’outil est en cours d’exécution. Ces informations sont capturées localement par le navigateur web et  sont disponibles via le bouton  Exporter vers **JSON** ou Exporter vers le har dans l’onglet Suivi réseau de l’outil. Les informations ne sont pas envoyées à Microsoft ou capturées par **Microsoft.** (L’outil respecte la politique de confidentialité Microsoft accessible [ici.)](https://go.microsoft.com/fwlink/p/?linkid=857875)
 
     L’autorisation Gérer _vos téléchargements_ couvre l’utilisation de la fonctionnalité **Exporter vers JSON** de l’outil. Suivez les instructions de confidentialité de votre entreprise avant de partager le fichier JSON en dehors de votre organisation, car les résultats contiennent des URL et peuvent être classés en tant qu’informations personnelles d’identification personnelle.
 1. Si vous souhaitez utiliser l’outil en mode Incognito ou InPrivate, suivez la procédure pour votre navigateur :
@@ -75,7 +75,7 @@ La procédure d’installation de cette section fonctionne pour les navigateurs 
 1. Accédez à la page SharePoint site web sur SharePoint Online que vous souhaitez consulter. Nous avons autorisé le « chargement différé » des éléments sur les pages ; par conséquent, l’outil ne s’arrête pas automatiquement (il s’agit par conception de prendre en charge tous les scénarios de chargement de page). Pour arrêter la collecte, sélectionnez **Arrêter.** Assurez-vous que le chargement de la page est terminé avant d’arrêter la collecte de données ou que vous ne capturez qu’un suivi partiel.
 1. Cliquez sur le bouton de barre d’outils de l’extension ![Diagnostics de page pour SharePoint logo.](../media/page-diagnostics-for-spo/pagediag-icon32.png) pour charger l’outil, la fenêtre d’extension suivante apparaît :
 
-    ![Fenêtre popup de l’outil Diagnostics de page.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
+    ![Fenêtre popup de l’outil Diagnostic de page.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
 
 Sélectionnez **Démarrer** pour commencer à collecter des données pour analyse.
 
@@ -131,7 +131,7 @@ Les résultats en rouge ou en jaune peuvent également indiquer des composants W
 
 1. **Recherchez les temps de chargement des éléments marqués en rouge.** Chaque requête et réponse est codée en couleur pour indiquer son impact sur les performances globales de la page à l’aide des mesures de latence suivantes :
     - Vert : \< 500 ms
-    - Jaune : 500-1000 ms
+    - Jaune : 500-1 000 ms
     - Rouge : \> 1000 ms
 
     > [!div class="mx-imgBorder"]
@@ -139,7 +139,7 @@ Les résultats en rouge ou en jaune peuvent également indiquer des composants W
 
     Dans l’image ci-dessus, l’élément rouge se rapporte à la page par défaut. Elle s’affiche toujours en rouge, sauf si la page se charge \< en 1000 ms (moins d’une seconde).
 
-2. **Temps de chargement des éléments de test.** Dans certains cas, il n’y aura aucun indicateur de temps ou de couleur, car les éléments ont déjà été mis en cache par le navigateur. Pour le tester correctement, ouvrez la page,  ouvrez le cache du navigateur, puis cliquez sur Démarrer car cela forcera un chargement de page « à froid » et sera une véritable réflexion du chargement initial de la page. Il doit ensuite être comparé au chargement de page « chaud », car cela vous aidera également à déterminer quels éléments sont mis en cache sur la page.
+2. **Temps de chargement des éléments de test.** Dans certains cas, il n’y aura aucun indicateur de temps ou de couleur, car les éléments ont déjà été mis en cache par le navigateur. Pour le tester correctement, ouvrez la page,  ouvrez le cache du navigateur, puis cliquez sur Démarrer car cela forcera un chargement de page « à froid » et sera une véritable réflexion du chargement initial de la page. Il doit ensuite être comparé au chargement de page « chaud », car cela vous aidera également à déterminer les éléments mis en cache sur la page.
 
 3. **Partagez des détails pertinents avec d’autres personnes qui peuvent vous aider à examiner les problèmes.** Pour partager les détails ou les informations fournis dans l’outil avec vos développeurs ou une personne du support technique, l’approche recommandée consiste à utiliser l’outil Activer l’exportation vers l’archive **HTTP( HAR).** 
 
@@ -152,7 +152,7 @@ Ce paramètre doit être activé avant de cliquer sur Démarrer, ce qui active e
 > ![Suivi réseau.](../media/page-diagnostics-for-spo/pagediag-networktracehar.png)
 
 > [!IMPORTANT]
-> Ces résultats contiennent des URL qui peuvent être classées en tant qu’informations d’identification personnelle (PII). Veillez à suivre les instructions de votre organisation avant de distribuer ces informations.
+> Ces résultats contiennent des URL qui peuvent être classées en tant qu’informations d’identification personnelle (PiI). Veillez à suivre les instructions de votre organisation avant de distribuer ces informations.
 
 ## <a name="engaging-with-microsoft-support"></a>Impliquer le support Microsoft
 
@@ -169,7 +169,7 @@ Aucune modification n’est visible, sauf que vous serez averti que vous l’ave
    > [!div class="mx-imgBorder"]
    > ![Option de support activée.](../media/page-diagnostics-for-spo/pagediag-support.png)
   
-    Vous devez noter le CorrelationID (affiché en haut de l’outil) et le fournir à votre représentant du support technique pour lui permettre de recueillir des informations supplémentaires sur la session de diagnostic.
+    Notez le CorrelationID (affiché en haut de l’outil) et fournissez-le à votre représentant du support technique pour lui permettre de recueillir des informations supplémentaires sur la session de diagnostic.
 
 ## <a name="related-topics"></a>Voir aussi
 

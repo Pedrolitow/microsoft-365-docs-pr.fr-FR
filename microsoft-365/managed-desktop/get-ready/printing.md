@@ -5,23 +5,23 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: feba220d4e31443c85e600a7ab367a5f3c970e16
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 81de89a704c8ff8717439d83e70504ba2fe8e410
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205212"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188912"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Préparer des ressources d’impression pour le Bureau géré Microsoft
 
 Lorsque vous êtes prêt à vous inscrire à Microsoft Manged Desktop, vous devez évaluer vos besoins d’impression et déterminer l’approche qui convient à votre environnement. Vous avez trois options :
 
-- Déployez la solution d’impression universelle Microsoft pour faciliter la découverte des imprimantes Microsoft Manged Desktop appareils. Pour plus d’informations, voir [Qu’est-ce que l’impression universelle](/universal-print/fundamentals/universal-print-whatis).
+- Déployez la solution Impression universelle Microsoft pour faciliter la découverte des imprimantes Microsoft Manged Desktop appareils. Pour plus d’informations, voir [Qu’est-ce que l’impression universelle](/universal-print/fundamentals/universal-print-whatis).
 - Déployez les imprimantes directement à l’aide d’un script PowerShell personnalisé. Suivez les étapes de la section Configurer [les imprimantes locales.](#set-up-local-printers)
 - Utilisez une solution d’impression cloud non Microsoft compatible avec Windows 10 appareils joints à un domaine Azure Active Directory microsoft. La solution doit répondre aux exigences logicielles requises pour Microsoft Manged Desktop. Pour plus d’informations, [voir Microsoft Manged Desktop’application requise.](../service-description/mmd-app-requirements.md)
  
@@ -39,7 +39,7 @@ Si vous avez décidé de déployer des imprimantes à l’aide d’un script Pow
 4. Vous devez tester et vérifier si la configuration fonctionne comme prévu. Répondez à **l’aide de l’onglet Discussion** dans la demande de support pour nous faire savoir quand vous avez terminé vos tests.
 5. Nous allons ensuite déployer la configuration sur les autres groupes de déploiement.
 
-## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
+## <a name="steps-to-get-ready"></a>Étapes de préparation
 
 1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
 2. Exécutez les [outils d’évaluation de la préparation](readiness-assessment-tool.md).

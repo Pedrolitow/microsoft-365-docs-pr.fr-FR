@@ -7,7 +7,7 @@ ms.date: 12/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,13 +17,13 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Résumé : Informations supplémentaires Azure Active Directory lors du déplacement de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 88a151b61a93b4b65e16bbd100a126d44282e513
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: 'Résumé : Informations supplémentaires Azure Active Directory lors du déplacement de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemande.'
+ms.openlocfilehash: 349df1366c76eb23c8aaaf0447ef90a031e6e52d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182152"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189056"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations Azure Active Directory supplémentaires pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -79,11 +79,11 @@ Une application peut être l’une des suivantes :
  
 **Qu’en est-il des applications que je publie ?**
 
-Si vous publiez une application disponible pour les utilisateurs extérieurs à votre client, vous devrez peut-être modifier votre inscription d’application pour garantir la continuité. D’autres locataires qui utilisent votre application peuvent être déplacés à un moment différent de celui de votre client. Pour vous assurer qu’ils ne perdent jamais l’accès à votre application, vous devez consentir à ce que votre application soit synchronisée d’Azure Germany vers Azure Public.
+Si vous publiez une application disponible pour les utilisateurs extérieurs à votre client, vous devrez peut-être modifier votre inscription d’application pour garantir la continuité. D’autres locataires qui utilisent votre application peuvent être déplacés à un moment différent de celui de votre client. Pour vous assurer qu’ils ne perdent jamais l’accès à votre application, vous devez consentir à la synchronisation de votre application d’Azure Germany vers Azure public.
 
 **Qu’en est-il de l’ajout de nouvelles applications multi-locataires lors de la migration ?**
 
-Si vous souhaitez utiliser une nouvelle application publiée par une autre organisation (application multi-client), vous ne pourront pas ajouter cette application pendant le processus de migration (phases 2 à 9).  Vous pouvez exécuter cette tâche lorsque votre organisation termine la phase 9 et est entièrement transition vers l’instance publique Azure.
+Si vous souhaitez utiliser une nouvelle application publiée par une autre organisation (application multi-client), vous ne pourz pas ajouter cette application pendant le processus de migration (phases 2 à 9).  Vous pouvez exécuter cette tâche lorsque votre organisation termine la phase 9 et est entièrement transition vers l’instance publique Azure.
 
 ## <a name="additional-considerations"></a>Considérations supplémentaires
 
@@ -93,7 +93,7 @@ Voici quelques considérations supplémentaires pour Azure AD :
 
   - Vous ne devez pas créer, promouvoir ou rétrograder un domaine fédéré pendant la transition du client. Une fois la migration vers le service Azure AD terminée (le client est entièrement terminé), vous pouvez reprendre la gestion des domaines fédérés.
 
-  - Si vous utilisez l’authentification fédérée avec les services AD FS (Active Directory Federation Services), vous ne devez pas apporter de modifications aux URIs d’émetteur utilisés pour toutes les authentifications avec vos services de domaine Active Directory (AD DS) locaux lors de la migration. La modification des AUTHENTIFICATIONs d’émetteur entraîne des échecs d’authentification pour les utilisateurs du domaine. Les URIs d’émetteur peuvent être modifiés directement dans AD FS ou lorsqu’un domaine est converti de géré en fédéré et inversement. Microsoft recommande aux clients de ne pas ajouter, supprimer ou convertir un domaine fédéré dans le client Azure AD en cours de migration. Les URL de l’émetteur peuvent être modifiées une fois la migration terminée.
+  - Si vous utilisez l’authentification fédérée avec les services AD FS (Active Directory Federation Services), vous ne devez pas apporter de modifications aux URIs d’émetteur utilisés pour toutes les authentifications avec vos services de domaine Active Directory (AD DS) locaux lors de la migration. La modification des AUTHENTIFICATIONs d’émetteur entraîne des échecs d’authentification pour les utilisateurs du domaine. Les URIs d’émetteur peuvent être modifiés directement dans AD FS ou lorsqu’un domaine est converti de géré en fédéré et vice versa. Microsoft recommande aux clients de ne pas ajouter, supprimer ou convertir un domaine fédéré dans le client Azure AD en cours de migration. Les URL de l’émetteur peuvent être modifiées une fois la migration terminée.
 
 - Pour la mise en réseau :
 
@@ -104,7 +104,7 @@ Voici quelques considérations supplémentaires pour Azure AD :
 
 - Pour l’accès conditionnel : 
 
-  - Les stratégies d’accès conditionnel avec les contrôles d’octroi suivants ne sont pas pris en charge tant que la migration vers Office 365 services est terminée (après la phase finaliser la migration [d’Azure AD)](ms-cloud-germany-transition.md#how-is-the-migration-organized) :
+  - Les stratégies d’accès conditionnel avec les contrôles d’octroi suivants ne sont pas pris en charge tant que la migration vers Office 365 services n’est pas terminée (après la phase finaliser la migration [d’Azure AD)](ms-cloud-germany-transition.md#how-is-the-migration-organized) :
 
     - Exiger un appareil conforme
     - Exiger une application approuvée
@@ -114,14 +114,14 @@ Voici quelques considérations supplémentaires pour Azure AD :
 
 - Les scénarios Intune sont pris en charge uniquement par rapport aux points de terminaison internationaux une fois la migration des clients terminée, y compris toutes les migrations de charges de travail Office.
 
-- Les utilisateurs de Microsoft Cloud Deutschland qui utilisent la méthode de notification d’application mobile pour les demandes MFA voient l’ObjectId de l’utilisateur (guid) au lieu du nom d’utilisateur principal (UPN) dans l’application Microsoft Authenticator. Une fois la migration du client Azure AD terminée et hébergée dans les services Office 365, les nouvelles activations Microsoft Authenticator afficheront les UPN des utilisateurs. Les comptes Microsoft Authenticator existants continueront d’afficher l’ObjectId de l’utilisateur, mais ils continueront à fonctionner pour les notifications d’application mobile. 
+- Les utilisateurs de Microsoft Cloud Deutschland qui utilisent la méthode de notification d’application mobile pour les demandes MFA voient l’ObjectId (un GUID) de l’utilisateur au lieu du nom d’utilisateur principal (UPN) dans l’application Microsoft Authenticator. Une fois la migration du client Azure AD terminée et hébergée dans les services Office 365, les nouvelles activations Microsoft Authenticator affichent les UPN des utilisateurs. Les comptes Microsoft Authenticator existants continueront d’afficher l’ObjectId de l’utilisateur, mais ils continueront à fonctionner pour les notifications d’application mobile. 
 
 - Pour les clients créés après le 22 octobre 2019, les paramètres de sécurité par défaut peuvent être activés automatiquement pour le client lors de sa migration vers le service Office 365. Les administrateurs client peuvent choisir de laisser les paramètres de sécurité par défaut activés et de s’inscrire à l’mf, ou ils peuvent désactiver la fonctionnalité. Pour plus d’informations, voir [Désactiver les paramètres de sécurité par défaut.](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#disabling-security-defaults) 
 
   > [!NOTE]
   > Les organisations qui ne sont pas activées automatiquement lors de la migration peuvent toujours être inscrites automatiquement à l’avenir, car la fonctionnalité permettant d’activer les paramètres de sécurité par défaut est déployée dans le service Office 365. Les administrateurs qui choisissent de désactiver ou d’activer explicitement les paramètres de sécurité par défaut peuvent le faire en mettant à jour la fonctionnalité **sous Azure Active Directory > propriétés.** Une fois que la fonctionnalité est explicitement activée par l’administrateur, elle ne sera pas activée automatiquement.
 
-- Un avertissement s’est produit sur la version d’Azure AD Connecter sur le portail Office 365 Germany, ainsi que sur le portail Office 365 une fois que le client est en migration. Cela peut être ignoré si l’avertissement de version n’affiche plus l’avertissement une fois la migration terminée. En cas d’avertissement, avant ou après la migration, dans l’un des portails, Azure AD Connecter être mis à jour. Le message d’avertissement indique : « Nous avons détecté que vous utilisez un outil de synchronisation d’annuaires obsolète. Nous vous recommandons d’aller au Centre de téléchargement Microsoft pour obtenir la dernière version d’Azure AD Connecter. »
+- Un avertissement s’est produit sur la version d’Azure AD Connecter sur le portail Office 365 Germany, ainsi que sur le portail Office 365 une fois que le client est en migration. Cela peut être ignoré si l’avertissement de version n’affiche plus l’avertissement une fois la migration terminée. En cas d’avertissement, avant ou après la migration, dans l’un ou l’autre portail, Azure AD Connecter être mis à jour. Le message d’avertissement indique : « Nous avons détecté que vous utilisez un outil de synchronisation d’annuaires obsolète. Nous vous recommandons d’aller au Centre de téléchargement Microsoft pour obtenir la dernière version d’Azure AD Connecter. »
 
 ## <a name="more-information"></a>Plus d’informations
 

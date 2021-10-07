@@ -1,7 +1,7 @@
 ---
 title: 'Rapport sur les appareils vulnérables : Gestion des menaces et des vulnérabilités'
 description: Rapport présentant les tendances des appareils vulnérables et les statistiques actuelles. L’objectif est que vous compreniez le bruit et l’étendue de l’exposition de votre appareil.
-keywords: Microsoft Defender pour les appareils vulnérables endpoint-tvm, Microsoft Defender pour point de terminaison, tvm, réduire les menaces & exposition aux vulnérabilités, réduire les menaces et vulnérabilités, surveiller la configuration de la sécurité
+keywords: Microsoft Defender pour les appareils vulnérables endpoint-tvm, Microsoft Defender pour le point de terminaison, tvm, réduire les menaces & exposition aux vulnérabilités, réduire les menaces et les vulnérabilités, surveiller la configuration de la sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6118b461d615002423712dc931962c8ab21778c2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 23e0ab99f2272759e7e1c75f9eb3d36e7da4d925
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208923"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206744"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Rapport sur les appareils vulnérables : Gestion des menaces et des vulnérabilités
 
@@ -46,7 +46,7 @@ Il existe deux colonnes :
 - Tendances (au fil du temps). Peut afficher les 30 derniers jours, 3 mois, 6 mois ou une plage de dates personnalisée.
 - État (informations actuelles)
 
-**Filtre :** vous pouvez filtrer les données par niveaux de gravité de vulnérabilité, disponibilité d’exploit, âge de vulnérabilité, plateforme du système d’exploitation, version Windows 10 ou groupe d’appareils.
+**Filtre :** vous pouvez filtrer les données par niveaux de gravité de vulnérabilité, disponibilité d’exploitation, âge de vulnérabilité, plateforme du système d’exploitation, version Windows 10 ou groupe d’appareils.
 
 **Exploration :** s’il existe un aperçu que vous souhaitez explorer plus en détail, sélectionnez le graphique à barres approprié pour afficher une liste filtrée d’appareils dans la page d’inventaire des appareils. À partir de là, vous pouvez exporter la liste.
 

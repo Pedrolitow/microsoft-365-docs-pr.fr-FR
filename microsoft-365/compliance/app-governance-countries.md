@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Liste des pays dans lesquels la gouvernance des applications est disponible.
-ms.openlocfilehash: 926c2069a0fb53cb6211c6c686e2afc5b8bdc10b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5a49f5eceabcd3ad2b4150bcf11dbeb89b6e1e8e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181475"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204514"
 ---
 # <a name="app-governance-supported-countries"></a>Pays pris en charge par la gouvernance des applications
 

@@ -10,25 +10,25 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1c8e5fa990e37f4812b8e5429fdbf2fcbfa7b71
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 775db5f94cacbca08993b0cb9aac67019515174a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124732"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210028"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -63,17 +63,13 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 
 ## <a name="offboard-non-windows-devices"></a>Appareils non-Windows par carte
 
-1. Suivez la documentation du tiers pour déconnecter la solution tierce de Microsoft Defender for Endpoint.
+Pour les appareils macOS et Linux, vous pouvez choisir de passer par Microsoft Defender for Endpoint. Dans le volet de navigation, sélectionnez **Paramètres** Horsboard Sélectionner le système d’exploitation pour démarrer le processus \>  \> **deboarding.**
 
-2. Supprimez les autorisations pour la solution tierce dans votre client Azure AD.
-   1. Connectez-vous au [portail Azure](https://portal.azure.com).
-   2. Sélectionnez **Azure Active Directory > Enterprise applications.**
-   3. Sélectionnez l’application que vous souhaitez horsboard.
-   4. Sélectionnez **le bouton** Supprimer.
+Vous pouvez également désinserrez les appareils Windows en désactivant l’intégration tierce. Activer la couverture pour les appareils exécutant des plateformes Windows en intégrant des [solutions tierces.](https://securitycenter.windows.com/interoperability/partners) 
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-- [Appareils Windows intégrés](configure-endpoints.md)
+- [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)
 - [Résolution des problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

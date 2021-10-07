@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Découvrez comment utiliser le Gestionnaire de conformité dans le portail d’approbation de services Microsoft pour satisfaire les exigences en matière de protection des données et de réglementation.
 ms.custom: seo-marvel-apr2020
 ROBOTS: NOINDEX
-ms.openlocfilehash: fa4ed459f713761e648454c42c8ded91391f7cff
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: a4d38c827fb2941516c2d84389204723599db44b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58556167"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203218"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
@@ -98,8 +98,8 @@ Le tableau suivant décrit chaque autorisation du Gestionnaire de conformité et
 
 |Autorisation|Gestionnaire de conformité - Lecteur|Gestionnaire de conformité - Contributeur|Gestionnaire de conformité - Analyste|Gestionnaire de conformité - Administrateur|Administrateur du portail|
 |---|:---:|:---:|:---:|:---:|:---:|
-|**Lire les données** : les utilisateurs peuvent consulter les données sans pouvoir les modifier.|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|
-|**Modifier les données** : les utilisateurs peuvent modifier tous les champs à l’exception des champs Résultat de test et Date du test.||![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|
+|**Lire les données** : les utilisateurs peuvent consulter les données sans pouvoir les modifier.|![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|
+|**Modifier les données** : les utilisateurs peuvent modifier tous les champs à l’exception des champs Résultat de test et Date du test.||![Marque de vérification.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Coche.](../media/checkmark.png)|![Marque de vérification.](../media/checkmark.png)|
 |**Modifier les résultats de test** : les utilisateurs peuvent modifier les champs Résultat de test et Date du test.|||![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**Gérer les évaluations** : les utilisateurs peuvent créer, archiver et supprimer des évaluations.||||![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|
 |**Gérer les utilisateurs** : les utilisateurs peuvent ajouter d’autres utilisateurs de leur organisation aux rôles Lecteur, Contributeur, Évaluateur et Administrateur. Seuls les utilisateurs ayant le rôle Administrateur général dans votre organisation peuvent ajouter ou supprimer des utilisateurs du rôle Administrateur du Portail.  |||||![Coche](../media/checkmark.png)|
@@ -264,8 +264,8 @@ En fonction de la gravité du contrôle, le contrôle obtient un score de confor
 |Niveau de risque|Score du contrôle|
 |---|:---:|
 |Faible|1-3|
-|Modéré|6|
-|Élevé|8|
+|Modéré|6 |
+|Élevé|8 |
 |Grave|10|
 
 En hiérarchisant les contrôles d’évaluation selon la valeur du score de conformité, l’organisation peut se concentrer sur les éléments qui présentent le risque le plus élevé. Ainsi, plus de points sont ajoutés au score de conformité total de l’évaluation pour chaque évaluation de contrôle terminée.

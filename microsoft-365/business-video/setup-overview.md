@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez ce dont vous avez besoin pour configurer Microsoft 365 Business Premium.
-ms.openlocfilehash: 70d0bf00afaa1a504097ac80598f9c1b1a184b05
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 82b8a1739451db9e93cb1006d77614cd1bd61443
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203436"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189728"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Vue d’ensemble de Microsoft 365 Business Premium configuration
 
@@ -38,7 +38,7 @@ Pour commencer, laissez-&#39;examiner ce que vous&#39;obtenir :
 - Office applications telles que Word, Excel, PowerPoint et Outlook.
 - Adresse de messagerie personnalisée pour vous et vos employés, telle que rob@contoso.com.
 - Stockage de documents dans le cloud (OneDrive et Microsoft Teams), et bien plus encore.
-- Mises à niveau vers Windows 10 Professionnel à Windows 7 Professionnel , Windows 8 Professionnel ou Windows 8.1 Professionnel.
+- Mises à niveau vers Windows 10 Professionnel à partir Windows 7 Professionnel , Windows 8 Professionnel ou Windows 8.1 Professionnel.
 - Protection de vos fichiers de travail sur tous vos appareils iOS, Android et Windows 10 avec une sécurité de niveau entreprise.
 
 Vous&#39;pas d’applications pour la comptabilité, la paie, crm ou un site web public.
@@ -61,7 +61,7 @@ Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le 
 
 ## <a name="2-add-a-domain-name"></a>2. Ajouter un nom de domaine
 
-- Un nom de domaine fournit à votre organisation une identité en ligne professionnelle et facile à mémoriser, telle que _rob@contoso.com_. Si vous en avez déjà un, vous pouvez l’Microsoft 365 ou Microsoft 365 : nous vous&#39;vous aider dans la transition.
+- Un nom de domaine fournit à votre organisation une identité en ligne professionnelle et facile à mémoriser, telle que _rob@contoso.com_. Si vous en avez déjà un, vous pouvez l’Microsoft 365 ou Microsoft 365 : nous&#39;vous aiderons dans la transition.
 - Vous&#39;pas de domaine ? Il est&#39;d’en obtenir un en même temps que vous vous inscrivez pour Microsoft 365 ou Microsoft 365.
 
 **Remarque :**  En plus de votre courrier électronique, vous pouvez utiliser le domaine avec un site web sur différents hôtes, tels que WordPress, GoDaddy ou Wix.
@@ -98,7 +98,7 @@ Lorsque vous choisissez un abonnement cloud pour votre entreprise, vous avez le 
 
 - Commencez à utiliser toutes les applications Office disponibles, telles que Word, Excel et PowerPoint. S'&#39;n’est pas déjà installé, vous pouvez facilement l’installer à partir [du Microsoft Office web.](https://www.office.com/)
 - L’une des premières choses que&#39;vous allez faire est d’ouvrir Outlook pour la première fois. Vous&#39;entrer votre adresse de messagerie Microsoft 365 mot de passe et avoir un accès immédiat à votre courrier électronique, votre calendrier et vos contacts.
-- En outre, vous pouvez ouvrir Microsoft Teams, Word, Excel, PowerPoint et le reste Office applications. Il se peut que vous soyez invité à nous envoyer votre adresse e-mail et votre mot de passe la première fois que vous ouvrez chaque application.
+- En outre, vous pouvez ouvrir Microsoft Teams, Word, Excel, PowerPoint et le reste Office applications. Il se peut que vous soyez invité à utiliser votre adresse e-mail et votre mot de passe la première fois que vous ouvrez chaque application.
 
 ## <a name="9-migrate-old-email-and-files"></a>9. Migrer les anciens messages électroniques et fichiers
 

@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online.
-ms.openlocfilehash: 22129cb831cc1346f428aadd7d1308f63b7e3112
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 6493f140a1335b5439707fed94372760ac6fab50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565921"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60200028"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des extensions personnalisées dans les pages de sites modernes SharePoint Online
 
@@ -42,7 +42,7 @@ Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de p
 Les résultats possibles sont les suivants :
 
 - **Attention requise** (en rouge) : une extension _personnalisée_ qui prend plus de **une** seconde pour charger. Le temps de chargement total tel qu’il apparaît dans les résultats des tests est subdivisé en : chargement de module, chargement différé, initialisation et rendu. En outre, s’il y a trop d’extensions sur une page,  elles peuvent avoir un impact sur le temps de chargement de la page, ce qui sera mis en surbrillrillant si sept extensions ou plus sont utilisées sur la page.
-- Opportunités d’amélioration  **(jaune)** Si cinq extensions ou plus sont utilisées, elles seront mises en surbrillrillation dans cette section sous la mesure d’un avertissement jusqu’à ce que sept extensions ou plus soient utilisées, qui seront ensuite mises en surbrillation comme attention requise.
+- Possibilités d’amélioration  **(jaune)** Si cinq extensions ou plus sont utilisées, elles seront mises en évidence dans cette section sous la mesure d’un avertissement jusqu’à ce que sept extensions ou plus soient utilisées, qui seront ensuite mises en évidence comme étant obligatoires.
 - **Aucune action requise** (en vert) : aucune extension ne prend plus d’une seconde pour charger.
 
 Si une extension a un impact sur le temps de chargement de la page ou s’il y a trop d’extensions sur la page, le résultat apparaît dans la section **Attention** requise des résultats. Cliquez sur le résultat pour voir les détails sur l’extension qui se charge lentement ou si un trop grand nombre d’extensions a été mis en évidence. Les mises à jour ultérieures de l’outil Diagnostic de page pour SharePoint peuvent inclure des mises à jour des règles d’analyse. Vérifiez donc que vous disposez toujours de la dernière version de l’outil.
@@ -54,7 +54,7 @@ Les informations disponibles dans les résultats incluent les éléments suivant
 - **Nom et ID** affiche les informations d’identification qui peuvent vous aider à trouver l'extension sur la page
 - **Total** indique la durée totale de chargement et d’initialisation de l’extension du module. Il s’agit du temps relatif total pris par l’extension pour s’exécuter sur la page, du début à la fin.
 - **Le chargement du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
-- **Init indique** le temps que prend l’extension pour initialiser les données.
+- **Init** indique le temps que prend l’extension pour initialiser les données.
 
   Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
 

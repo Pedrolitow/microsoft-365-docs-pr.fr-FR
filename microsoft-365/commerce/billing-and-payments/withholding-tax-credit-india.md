@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: ''
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 1856f9b7d56f39dbc4326c9175c2e70fc8c7c0c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cf4e742dfae6866a20690b900604042a1c411503
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181654"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189632"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients en Inde)
 
@@ -49,7 +49,7 @@ Envoyez la demande WHT en ouvrant un ticket avec le support Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Pour les clients qui paient par carte de crédit
 
-Si votre mode de paiement est une carte bancaire et que vous avez effectué un paiement complet au service MRS et que vous avez également payé wht au service fiscal du revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
+Si votre mode de paiement est une carte de crédit et que vous avez effectué un paiement complet au service MRS et que vous avez également payé l’IFF au service d’impôt sur le revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
 
 Votre requête WHT doit inclure les éléments suivants :
 
@@ -58,7 +58,7 @@ Votre requête WHT doit inclure les éléments suivants :
 
 Envoyer la demande WHT en ouvrant un ticket avec le support Microsoft
 
-## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>Chronologies de soumission du certificat TDS avec le formulaire de crédit d’impôt sur la retenue d’impôt
+## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>Chronologies pour envoyer le certificat TDS avec le formulaire de crédit d’impôt sur la retenue d’impôt
 
 Le tableau suivant indique les dates d’échéance et les chronologies pour envoyer des formulaires de certificat TDS signés numériquement (formulaire 16A) pour chaque trimestre.
 

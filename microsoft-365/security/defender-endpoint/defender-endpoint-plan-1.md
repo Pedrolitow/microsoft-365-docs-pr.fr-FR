@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
-description: Obtenez une vue d’ensemble de Defender pour Endpoint Plan 1. Découvrez les fonctionnalités incluses dans cet abonnement à la protection des points de terminaison.
+description: Obtenez une vue d’ensemble de Defender pour Endpoint Plan 1. Découvrez les fonctionnalités incluses dans cet abonnement de protection des points de terminaison.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,16 +10,16 @@ ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mdep1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5edc3db69c8c1f0f6f0a5f79a0838d2b054c9e91
-ms.sourcegitcommit: e686e64e846c26a9f4def7c145cbb140e6427076
+ms.openlocfilehash: 17026088cc10b5ace84cbab31f0a383661e2484b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60069112"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204046"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1-preview"></a>Vue d’ensemble de Microsoft Defender pour Endpoint Plan 1 (prévisualisation)
 
@@ -59,7 +59,7 @@ Defender pour endpoint Plan 1 (prévisualisation) inclut les fonctionnalités su
 Les sections suivantes fournissent plus de détails sur ces fonctionnalités. 
 
 > [!IMPORTANT]
-> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, express ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender pour Endpoint Plan 1 (prévisualisation).
+> Certaines informations de cet article concernent les produits/services pré-publiés qui peuvent être considérablement modifiés avant leur publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, pour les informations fournies ici. Ce guide inclut des liens vers du contenu en ligne qui peut décrire ou décrire certaines fonctionnalités qui ne sont pas incluses dans Defender for Endpoint Plan 1 (prévisualisation).
 
 ## <a name="next-generation-protection"></a>Protection de nouvelle génération
 
@@ -99,7 +99,7 @@ Les surfaces d’attaque de votre organisation sont tous les endroits où vous �
 - [Pare-feu réseau](#network-firewall)
 - [Contrôle d’application](#application-control)
 
-Pour en savoir plus sur les fonctionnalités de réduction de la surface d’attaque dans Defender pour le point de terminaison, voir Vue d’ensemble [de la réduction de la surface d’attaque.](overview-attack-surface-reduction.md)
+Pour en savoir plus sur les fonctionnalités de réduction de la surface d’attaque dans Defender pour le point de terminaison, voir Vue d’ensemble de la [réduction de la surface d’attaque.](overview-attack-surface-reduction.md)
 
 ### <a name="attack-surface-reduction-rules"></a>Règles de réduction de la surface d’attaque
 
@@ -123,7 +123,7 @@ Pour plus d’informations, voir [Protéger les dossiers importants avec un acc�
 
 Parfois, les menaces qui pèsent sur les appareils de votre organisation se font sous la forme de fichiers sur des lecteurs amovibles, tels que des lecteurs USB. Defender pour le point de terminaison inclut des fonctionnalités qui permettent d’empêcher les menaces provenant de périphériques non autorisés de compromettre vos appareils. Vous pouvez configurer Defender pour le point de terminaison pour bloquer ou autoriser les appareils et fichiers amovibles sur les appareils amovibles. 
 
-Pour plus d’informations, [voir Contrôler les périphériques USB et les supports amovibles.](control-usb-devices-using-intune.md)
+Pour en savoir plus, [consultez Les périphériques USB de contrôle et les supports amovibles.](control-usb-devices-using-intune.md)
 
 ### <a name="web-protection"></a>Protection Web
 
@@ -173,8 +173,8 @@ Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du co
 Le portail Microsoft 365 Defender ( ) fournit un accès facile aux informations sur les menaces détectées et les actions à prendre pour [https://security.microsoft.com](https://security.microsoft.com) y remédier. 
 
 - La page **d’accueil** inclut des cartes pour afficher en un coup d’œil les utilisateurs ou appareils à risque, le nombre de menaces détectées et les alertes/incidents qui ont été créés.
-- La **section Incidents & alertes** répertorie tous les incidents qui ont été créés suite à des alertes déclenchées. Les alertes et les incidents sont générés lorsque des menaces sont détectées sur plusieurs appareils.
-- Le centre **de mise en œuvre répertorie** les actions correctives qui ont été prises. Par exemple, si un fichier est mis en quarantaine ou qu’une URL est bloquée, chaque action est répertoriée dans le centre de l’action sous **l’onglet** Historique.
+- La section **Incidents & alertes** répertorie tous les incidents qui ont été créés suite à des alertes déclenchées. Les alertes et les incidents sont générés lorsque des menaces sont détectées sur plusieurs appareils.
+- Le centre **de mise en œuvre répertorie** les actions correctives qui ont été prises. Par exemple, si un fichier est mis en quarantaine ou qu’une URL est bloquée, chaque action est répertoriée dans le centre de actions sous **l’onglet** Historique.
 - La section **Rapports** inclut des rapports qui indiquent les menaces détectées et leur état. 
 
 Pour en savoir plus, [consultez La mise en place de Microsoft Defender pour Endpoint Plan 1 (prévisualisation).](mde-plan1-getting-started.md)
@@ -194,7 +194,7 @@ La plupart des organisations utilisent différents appareils et systèmes d’ex
 - iOS
 - Système d’exploitation Android
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Comparer Microsoft Defender pour Endpoint Plan 1 (prévisualisation) à Plan 2](defender-endpoint-plan-1-2.md)
 - [Configurer Defender pour Endpoint Plan 1 (prévisualisation)](mde-p1-setup-configuration.md)

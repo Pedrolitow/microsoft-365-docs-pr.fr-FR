@@ -7,19 +7,19 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365'évaluation du réseau
-ms.openlocfilehash: 00ce0bb2f0f6b93df9f0eeb8e8bd63629edae9d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18a175f0eef62793cb2aba8e0ed46ce08eea8e9f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205388"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202870"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365'évaluation du réseau
 
@@ -38,7 +38,7 @@ Une très faible valeur d’évaluation réseau suggère que Microsoft 365 clien
 | 80                 | Répond aux recommandations    |
 | 60                 | Acceptable               |
 | 40                 | Les utilisateurs peuvent être en situation de problèmes |
-| 20                 | Les utilisateurs peuvent se plaindra peut-être       |
+| 20                 | Les utilisateurs peuvent se plaindr       |
 | 0                  | Problèmes réseau : sujet de discussion courant |
 
 >[!IMPORTANT]
@@ -93,7 +93,7 @@ L SharePoint en ligne est réalisée à l’aide du tableau suivant. Tout numér
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Par Microsoft Teams la qualité du réseau est mesurée en tant que latence UDP, gigue UDP et perte de paquets UDP. UDP est utilisé pour la connectivité multimédia audio et vidéo d’appel et de conférence pour Microsoft Teams. Cela peut être impacté par les mêmes facteurs que pour la latence et la vitesse de téléchargement, en plus des lacunes de connectivité dans la prise en charge UDP d’un réseau, car UDP est configuré séparément sur le protocole TCP le plus courant. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents. 
+Par Microsoft Teams la qualité du réseau est mesurée en tant que latence UDP, gigue UDP et perte de paquets UDP. UDP est utilisé pour la connectivité multimédia audio et vidéo d’appel et de conférence pour Microsoft Teams. Cela peut être impacté par les mêmes facteurs que pour la latence et la vitesse de téléchargement en plus des lacunes de connectivité dans la prise en charge UDP d’un réseau dans la mesure où UDP est configuré séparément sur le protocole TCP le plus courant. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents. 
 
 Nous calculons un score d’opinion moyenne à partir de ces mesures UDP pour une échelle de 1 à 5. Ensuite, nous mions cela à l’échelle de 0 à 100 points pour l’évaluation Microsoft Teams réseau.  La valeur globale est de plus de 87,5 points et la valeur globale est inférieure à 50 points.
 

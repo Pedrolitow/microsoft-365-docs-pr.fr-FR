@@ -7,7 +7,7 @@ ms.date: 06/04/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
-ms.openlocfilehash: 30c5d301af6e4ca20646c46cc63cde38f2b28aed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f0794c16188c6a020df56914adf0619a1688c052
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205411"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199980"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 réseau de distribution de contenu (CDN) Démarrage rapide
 
@@ -50,14 +50,14 @@ Lorsque vous exécutez l’outil Diagnostic de page pour SharePoint sur une page
 
 ## <a name="cdn-overview"></a>CDN Vue d’ensemble
 
-Le Office 365 CDN est conçu pour optimiser les performances pour les utilisateurs en distribuant des objets fréquemment utilisés tels que des images et des fichiers javascript sur un réseau global à haut débit, en réduisant le temps de chargement des pages et en fournissant l’accès aux objets hébergés aussi près que possible de l’utilisateur. Le CDN récupère vos biens à partir d’un emplacement appelé _origine._ Une origine peut être un site SharePoint, une bibliothèque de documents ou un dossier accessible par une URL.
+Le Office 365 CDN est conçu pour optimiser les performances pour les utilisateurs en distribuant des objets fréquemment utilisés tels que des images et des fichiers javascript sur un réseau global à haut débit, ce qui réduit le temps de chargement des pages et donne accès aux objets hébergés aussi près que possible de l’utilisateur. Le CDN récupère vos biens à partir d’un emplacement appelé _origine._ Une origine peut être un site SharePoint, une bibliothèque de documents ou un dossier accessible par une URL.
 
 Le Office 365 CDN est séparé en deux types de base :
 
 - **La CDN** publique est conçue pour être utilisée pour JS (JavaScript), CSS (Feuilles de style), le fichier de police web (WOFF, WOFF2) et les images non propriétaires comme les logos d’entreprise.
 - **La CDN** privée est conçue pour être utilisée pour les images (PNG, JPG, JPEG, etc.).
 
-Vous pouvez choisir d’avoir des origines publiques ou privées pour votre organisation. La plupart des organisations choisiront d’implémenter une combinaison des deux. Les options publiques et privées offrent des gains de performances similaires, mais chacune possède des attributs et des avantages uniques. Pour plus d’informations sur les origines des CDN publiques et privées, voir Choisir si chaque origine doit [être publique ou privée.](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
+Vous pouvez choisir d’avoir des origines publiques ou privées pour votre organisation. La plupart des organisations choisiront d’implémenter une combinaison des deux. Les options publiques et privées offrent des gains de performances similaires, mais chacune possède des attributs et des avantages uniques. Pour plus d’informations sur les origines des CDN publics et privés, voir Choisir si chaque origine doit [être publique ou privée.](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate)
 
 ## <a name="how-to-enable-public-and-private-cdn-with-the-default-configuration"></a>Comment activer les CDN public et privé avec la configuration par défaut
 Avant d’apporter des modifications aux paramètres de CDN client, vous devez vérifier qu’il répond aux stratégies de conformité, de sécurité et de confidentialité de votre organisation.

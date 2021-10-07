@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Déterminez la posture de conformité de votre application.
-ms.openlocfilehash: 4cc54e5ea0fdaf0a8a196b90b09e2e8be970c7c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 01225c167a1293dd849848da1b641b48a53d7f0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181426"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189536"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Déterminer la posture de conformité de votre application
 

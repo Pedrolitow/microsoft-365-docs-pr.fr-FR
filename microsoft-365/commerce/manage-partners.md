@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire.
 ms.date: 04/13/2021
-ms.openlocfilehash: f7fd5cda68ce5312f284e7f86e1cfbd3716cc8d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 19068c87693fbcda06a520b4e41baaad3fef651b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181577"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203446"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations de partenariat
 
@@ -37,7 +37,7 @@ Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifi�
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur global ou administrateur de facturation pour suivre ces étapes. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>Que peut faire un partenaire pour mon organisation ou mon établissement scolaire ?
 
@@ -82,7 +82,7 @@ Si vous avez déjà un partenaire mais que vous n’avez pas encore signé de co
 4. Sélectionnez **Accepter**.
 5. La liste des partenaires avec qui vous travaillez s’affiche. Sélectionnez n’importe quel partenaire pour voir les détails.
 
-## <a name="remove-partner-admin-roles"></a>Supprimer les rôles d’administrateur partenaire
+## <a name="remove-partner-admin-roles"></a>Supprimer des rôles d’administrateur partenaire
 
 Selon la demande du partenaire, lorsque vous acceptez l’invitation, vous acceptez de lui donner des rôles d’administrateur global et d’administrateur du helpdesk. Lorsque vous accordez ces rôles d’administrateur à un partenaire, vous lui accordez automatiquement des privilèges d’administrateur délégués dans Azure AD. Pour plus d’informations, voir [Privilèges d’administrateur délégués dans Azure AD.](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
 

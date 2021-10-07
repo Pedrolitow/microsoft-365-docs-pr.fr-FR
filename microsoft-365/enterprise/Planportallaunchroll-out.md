@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -16,13 +16,13 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: Cet article décrit comment planifier le lancement de votre portail dans SharePoint Online et les étapes à suivre pour un lancement réussi
-ms.openlocfilehash: 82c4db0ccf544c66746c2a8b01e9b932a7f64564
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Cet article décrit comment planifier le lancement de votre portail dans SharePoint Online et les étapes à suivre pour réussir le lancement
+ms.openlocfilehash: 064870dd2748c6e936b12c2f333ab1d873b572cd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186788"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planification de votre plan de déploiement de lancement de portail dans SharePoint Online
 
@@ -36,7 +36,7 @@ L’approche de déploiement est mise en évidence ci-dessous.
 
 ## <a name="portal-launch-scheduler"></a>Programme de lancement du portail
 
-Utilisez le programme de lancement du portail pour publier votre portail pour les utilisateurs de votre organisation au cours des phases programmées. En savoir plus : 
+Utilisez le programme de lancement du portail pour publier votre portail pour les utilisateurs de votre organisation en phases programmées. En savoir plus : 
 
 ![Calendar icon](https://docs.microsoft.com/Office/media/icons/calendar.png "Programme de lancement du portail")  [Portal Launch Scheduler](https://docs.microsoft.com/microsoft-365/enterprise/portallaunchscheduler)
 
@@ -72,9 +72,9 @@ Comme illustré dans l’image suivante, le nombre d’utilisateurs invités est
   
 ![Graph utilisateurs invités et actifs.](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
-Lors de la phase pilote, il est bon d’obtenir des commentaires des utilisateurs que l’organisation a confiance et sait qu’elles seront en engagement. Ainsi, il est possible d’évaluer la façon dont le système est utilisé et son fonctionnement.
+Lors de la phase pilote, il est bon d’obtenir des commentaires des utilisateurs que l’organisation a confiance et sait qu’elles seront ent resserr. Ainsi, il est possible d’évaluer la façon dont le système est utilisé et son fonctionnement.
   
-Pendant chacune des vagues, rassemblez les commentaires des utilisateurs sur les fonctionnalités et les performances pendant chaque vague de déploiement. La collecte de commentaires a l’avantage d’introduire lentement le système et d’apporter des améliorations à mesure que le système est de plus en plus utilisé. Cela nous permet également de réagir à la charge accrue à mesure que le site est déployé pour un plus grand nombre d’utilisateurs et combiné à la suite des instructions pour l’optimisation des pages garantit une expérience positive pour vos utilisateurs.
+Pendant chacune des vagues, rassemblez les commentaires des utilisateurs sur les fonctionnalités et les performances pendant chaque vague de déploiement. La collecte de commentaires a l’avantage d’introduire lentement le système et d’apporter des améliorations à mesure que le système est de plus en plus utilisé. Cela nous permet également de réagir à l’augmentation de la charge à mesure que le site est déployé pour un plus grand nombre d’utilisateurs et combiné à la suite des instructions pour l’optimisation des pages garantit une expérience positive pour vos utilisateurs.
 
 ### <a name="what-to-do"></a>Que faire :
 - Déterminez le calendrier de chaque phase et assurez-vous que vous avez une opportunité d’urgence/de pause, si vous devez effectuer des ajustements avant de continuer

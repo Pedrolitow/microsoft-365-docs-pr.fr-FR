@@ -2,15 +2,13 @@
 title: Passer de la protection de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
 description: Passez à Microsoft Defender pour le point de terminaison, qui inclut Antivirus Microsoft Defender pour votre solution de protection des points de terminaison.
 keywords: migration, windows defender, protection avancée des points de terminaison, antivirus, logiciel anti-programme malveillant, mode passif, mode actif
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -24,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: e9562ae976e4eeac1197c5280caebef449ae0180
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: e7b6777970102b71f61fcaed7a8a13daf8d73fa7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776763"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205198"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passer de la protection de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
 
@@ -55,7 +53,7 @@ Le processus de migration vers Defender pour Endpoint peut être divisé en troi
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Qu’est-ce qui est inclus dans Microsoft Defender pour le point de terminaison ?
 
-Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nous concentrons sur les fonctionnalités de [protection](microsoft-defender-antivirus-in-windows-10.md) et de protection évolutive des points de terminaison nouvelle génération comme point de départ pour passer à Defender pour endpoint. Toutefois, Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Defender pour point de terminaison est une plateforme unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Defender for Endpoint.
+Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nous concentrons sur les fonctionnalités de [protection](microsoft-defender-antivirus-in-windows-10.md) et de protection évolutive des points de terminaison nouvelle génération comme point de départ pour passer à Defender pour endpoint. Toutefois, Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Defender for Endpoint est une plateforme unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Defender for Endpoint.
 
 <br/><br/>
 
@@ -66,7 +64,7 @@ Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nou
 |[Protection de nouvelle génération](microsoft-defender-antivirus-in-windows-10.md)|La protection nouvelle génération inclut des Antivirus Microsoft Defender pour bloquer les menaces et les programmes malveillants.|
 |[Détection et réponse du point de terminaison](overview-endpoint-detection-response.md)|Les fonctionnalités de détection et de réponse des points de terminaison détectent, examinent et répondent aux tentatives d’intrusion et aux violations actives.|
 |[Repérage avancé](advanced-hunting-overview.md)|Les fonctionnalités de recherche avancées permettent à votre équipe des opérations de sécurité de localiser des indicateurs et des entités de menaces connues ou potentielles.|
-|[Blocage et confinement comportementaux](behavioral-blocking-containment.md)|Les fonctionnalités de blocage du comportement et de contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution.|
+|[Blocage et confinement comportementaux](behavioral-blocking-containment.md)|Les fonctionnalités de blocage du comportement et de blocage du contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution.|
 |[Examen et correction automatisés](automated-investigations.md)|Les fonctionnalités d’examen et de réponse automatisées examinent les alertes et prennent des mesures correctives immédiates pour résoudre les violations.|
 |[Service de recherche de menaces](microsoft-threat-experts.md) (Spécialistes des menaces Microsoft)|Les services de recherche de menace fournissent aux équipes des opérations de sécurité une surveillance et une analyse de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées.|
 
@@ -74,4 +72,4 @@ Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nou
 
 ## <a name="next-step"></a>Étape suivante
 
-- Continuez à [préparer votre migration.](switch-to-microsoft-defender-prepare.md)
+- Procédez à [la préparation de votre migration.](switch-to-microsoft-defender-prepare.md)

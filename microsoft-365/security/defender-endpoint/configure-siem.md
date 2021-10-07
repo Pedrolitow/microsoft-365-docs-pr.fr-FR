@@ -1,5 +1,5 @@
 ---
-title: Pull detections to your SIEM tools from Microsoft Defender for Endpoint
+title: Tirer les détections vers vos outils SIEM à partir de Microsoft Defender for Endpoint
 description: Découvrez comment utiliser l’API REST et configurer les outils de gestion des événements et des informations de sécurité pris en charge pour recevoir et tirer des détections.
 keywords: configurer siem, outils de gestion des informations de sécurité et des événements, splunk, arcsight, indicateurs personnalisés, api rest, définitions d’alerte, indicateurs de compromis
 search.product: eADQiWindows 10XVcnh
@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 018b432ec792610c2f3d232a7ead4dfc8c75639f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 80a56ac33b11962028e6735a28d8a4692226d306
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204041"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209956"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>Tirer les détections vers vos outils SIEM
 
@@ -37,7 +37,7 @@ ms.locfileid: "59204041"
 
 > [!NOTE]
 >
-> - [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) est composé d’une ou plusieurs détections.
+> - [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) se compose d’une ou de plusieurs détections.
 > - [Microsoft Defender pour la détection des points](api-portal-mapping.md) de terminaison est composé de l’événement suspect qui s’est produit sur l’appareil et de ses détails d’alerte associés.
 > -The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 

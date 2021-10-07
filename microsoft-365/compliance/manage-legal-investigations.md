@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez les cas eDiscovery dans le Centre de conformité Microsoft 365 gérer l’enquête juridique de votre organisation.
-ms.openlocfilehash: 9eb41a67ae4ddfd39e1d40219861e0bd279fc7b8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fc4e89645ef1912c33ab89ec190c87dc9c8a8965
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177956"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189380"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes judiciaires dans Microsoft 365
 
@@ -42,7 +42,7 @@ Les cas eDiscovery vous permet de contrôler qui peut créer, consulter et gére
 
 - [Recherchez du contenu](search-for-content.md) dans votre organisation.
 
-### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
+### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
 
 Comme dans la section précédente qui a répertorié des scripts pour les scénarios de recherche de contenu, nous avons également créé des scripts powerShell du Centre de sécurité & conformité pour vous aider à gérer les cas eDiscovery.
   
@@ -72,6 +72,6 @@ Voici une vue d’ensemble rapide du flux de travail intégré dans Advanced eDi
 
 - [Analyser les données de cas à](analyzing-data-in-review-set.md) l’aide d’outils d’analyse avancés.
 
-- [Exporter des données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
+- [Exporter les données de cas pour](exporting-data-ediscover20.md) révision par un conseiller externe.
 
 - [Gérer les travaux de longue durée](managing-jobs-ediscovery20.md) dans Advanced eDiscovery.

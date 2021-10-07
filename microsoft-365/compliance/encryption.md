@@ -9,7 +9,7 @@ ms.date: 8/15/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Avec Office 365, votre contenu est chiffré au repos et en transit avec le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: c54508434c5ae5126a79eba1cb6dab3851d8f746
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e250970afa709cdd328506ea350ab2d886a985b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175956"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204346"
 ---
 # <a name="encryption"></a>Chiffrement
 
@@ -35,9 +35,9 @@ Le chiffrement est une partie importante de votre stratégie de protection des f
 
 - Pour plus d’informations sur la configuration ou la configuration du chiffrement pour votre organisation, voir Configurer le chiffrement [dans Office 365 Entreprise](set-up-encryption.md).
 
-## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>Qu’est-ce que le chiffrement et comment fonctionne-t-il dans Office 365 ?
+## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>Qu’est-ce que le chiffrement et comment fonctionne-t-il Office 365 ?
 
-Le processus de chiffrement code vos données (appelées texte brut) en texte chiffré. Contrairement au texte brut, le texte chiffré ne peut pas être utilisé par des personnes ou des ordinateurs, sauf si le texte chiffré est déchiffré. Le déchiffrement nécessite une clé de chiffrement dont seuls les utilisateurs autorisés ont besoin. Le chiffrement permet de s’assurer que seuls les destinataires autorisés peuvent déchiffrer votre contenu. Le contenu inclut des fichiers, des messages électroniques, des entrées de calendrier, etc.
+Le processus de chiffrement encode vos données (appelées texte brut) en texte chiffré. Contrairement au texte brut, le texte chiffré ne peut pas être utilisé par des personnes ou des ordinateurs, sauf si le texte chiffré est déchiffré. Le déchiffrement nécessite une clé de chiffrement dont seuls les utilisateurs autorisés ont besoin. Le chiffrement permet de s’assurer que seuls les destinataires autorisés peuvent déchiffrer votre contenu. Le contenu inclut des fichiers, des messages électroniques, des entrées de calendrier, etc.
   
 Le chiffrement seul n’empêche pas l’interception du contenu. Le chiffrement fait partie d’une stratégie de protection des informations plus importante pour votre organisation. Le chiffrement vous permet de vous assurer que seules les parties autorisées peuvent utiliser les données chiffrées.
   

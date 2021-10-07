@@ -7,21 +7,21 @@ ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 09/14/2021
+ms.date: 10/05/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e629cfa55467bc7f5f0a021e52cc8ade5118c8c4
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 7936c7023801a5eab75b9b39c69ad0d0568281de
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491588"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205654"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier
 
@@ -30,7 +30,7 @@ ms.locfileid: "59491588"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
 
-Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui [](run-scan-microsoft-defender-antivirus.md)s’appliquent aux analyses [programmées,](schedule-antivirus-scans.md)aux analyses à la demande et à la protection et à la surveillance en temps réel toujours en temps [réel.](configure-real-time-protection-microsoft-defender-antivirus.md) **En règle générale, il n’est pas nécessaire d’appliquer des exclusions.** Si vous devez appliquer des exclusions, vous pouvez choisir parmi différents types :
+Vous pouvez définir des exclusions pour les Antivirus Microsoft Defender qui s’appliquent aux analyses [programmées,](schedule-antivirus-scans.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la [protection](configure-real-time-protection-microsoft-defender-antivirus.md)et à la surveillance en temps réel toujours en cours. **En règle générale, il n’est pas nécessaire d’appliquer des exclusions.** Si vous devez appliquer des exclusions, vous pouvez choisir parmi différents types :
 
 - Exclusions basées sur les extensions de fichiers et les emplacements de dossiers (décrits dans cet article)
 - [Exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
@@ -69,7 +69,7 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 ## <a name="important-notes-about-exclusions-based-on-file-extensions-and-folder-locations"></a>Remarques importantes sur les exclusions basées sur les extensions de fichiers et les emplacements de dossiers
 
-- L’utilisation de caractères génériques tels que l’astérisque ( ) modifie l’interprétation \* des règles d’exclusion. Pour plus d’informations sur le fonctionnement des [caractères génériques,](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) voir la section Utiliser des caractères génériques dans la section des listes d’exclusions de nom de fichier et de dossier ou d’extension.
+- L’utilisation de caractères génériques tels que l’astérisque ( ) modifie l’interprétation des règles \* d’exclusion. Pour plus d’informations sur le fonctionnement des [caractères génériques,](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) voir la section Utiliser des caractères génériques dans la section des listes d’exclusions de nom de fichier et de dossier ou d’extension.
 
 - N’excluez pas les lecteurs réseau mappés. Spécifiez le chemin d’accès réseau réel.
 
@@ -77,7 +77,7 @@ Le tableau suivant répertorie quelques exemples d’exclusions basées sur l’
 
 - Les exclusions s’appliquent [](run-scan-microsoft-defender-antivirus.md)aux analyses [programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande et à la [protection](configure-real-time-protection-microsoft-defender-antivirus.md)en temps réel, mais pas à Travers Defender pour le point de terminaison. Pour définir des exclusions dans Defender pour le point de terminaison, utilisez [des indicateurs personnalisés.](manage-indicators.md)
 
-- Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur, y compris les modifications apportées avec PowerShell et WMI) seront fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégie de groupe prévalent en cas de conflit. En outre, les modifications apportées à la liste d’exclusions avec la stratégie de groupe sont visibles dans [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
+- Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur, y compris les modifications apportées avec PowerShell et WMI) seront fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégie de groupe sont prioritaire en cas de conflit. En outre, les modifications apportées à la liste d’exclusions avec la stratégie de groupe sont visibles dans [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
 
 - Pour permettre aux modifications locales de remplacer les paramètres de déploiement géré, configurez la façon dont les [listes d’exclusions définies](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists)localement et globalement sont fusionnées.
 
@@ -96,7 +96,7 @@ Consultez les articles suivants :
 
 Découvrez comment créer et déployer des stratégies de logiciel [anti-programme](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) malveillant : paramètres d’exclusion pour plus d’informations sur la configuration Microsoft Endpoint Manager (branche actuelle).
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Utiliser une stratégie de groupe pour configurer des exclusions de dossiers ou d’extensions de fichiers
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Utiliser une stratégie de groupe pour configurer des exclusions de dossier ou d’extension de fichier
 
 > [!NOTE]
 > Si vous spécifiez un chemin d’accès complet à un fichier, seul ce fichier est exclu. Si un dossier est défini dans l’exclusion, tous les fichiers et sous-répertoires de ce dossier sont exclus.
@@ -136,7 +136,7 @@ Le format des cmdlets est le suivant :
 
 Le tableau suivant répertorie les cmdlets que vous pouvez utiliser dans la `<cmdlet>` partie de l’cmdlet PowerShell :
 
-<br>
+<br/><br/>
 
 |Action de configuration|Cmdlet PowerShell|
 |:---|:---|
@@ -146,7 +146,7 @@ Le tableau suivant répertorie les cmdlets que vous pouvez utiliser dans la `<cm
 
 Le tableau suivant répertorie les valeurs que vous pouvez utiliser dans la `<exclusion list>` partie de l’cmdlet PowerShell :
 
-<br>
+<br/><br/>
 
 |Type d’exclusion|Paramètre PowerShell|
 |---|---|
@@ -189,7 +189,7 @@ Pour [plus d’instructions, voir Ajouter des exclusions Sécurité Windows’ap
 
 ## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Utiliser des caractères génériques dans les listes d’exclusion de nom de fichier et de dossier ou d’extension
 
-Vous pouvez utiliser l’astérisque, le point d’interrogation ou les variables d’environnement `*` `?` (par exemple) comme caractères génériques lors de la définition d’éléments dans la liste d’exclusion du nom de fichier ou du chemin d’accès du `%ALLUSERSPROFILE%` dossier. La façon dont ces caractères génériques sont interprétés diffère de leur utilisation habituelle dans d’autres applications et langues. Veillez à lire cette section pour comprendre leurs limitations spécifiques.
+Vous pouvez utiliser l’astérisque, le point d’interrogation ou les variables d’environnement (par exemple) comme caractères génériques lors de la définition d’éléments dans la liste d’exclusion du nom de fichier ou du chemin `*` `?` `%ALLUSERSPROFILE%` d’accès du dossier. La façon dont ces caractères génériques sont interprétés diffère de leur utilisation habituelle dans d’autres applications et langues. Veillez à lire cette section pour comprendre leurs limitations spécifiques.
 
 > [!IMPORTANT]
 > Il existe des limitations clés et des scénarios d’utilisation pour ces caractères génériques :
@@ -205,12 +205,12 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 
 |Caractère générique|Exemples|
 |---|---|
-|`*` (astérisque) <p> Dans **les inclusions** de nom de fichier et d’extension de fichier, l’astérisque remplace un nombre quelconque de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** l’astérisque remplace un dossier unique. Utilisez plusieurs `*` dossiers avec barres obliques `\` pour indiquer plusieurs dossiers imbrmbrés. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier et ses `C:\somepath\Archives\Data` sous-dossiers, `C:\somepath\Authorized\Data` ainsi que ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier et ses `C:\Serv\Primary\Denied\Backup` sous-dossiers `C:\Serv\Secondary\Allowed\Backup` et ses sous-dossiers|
+|`*` (astérisque) <p> Dans **les inclusions** de nom de fichier et d’extension de fichier, l’astérisque remplace un nombre quelconque de caractères et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de** dossiers, l’astérisque remplace un dossier unique. Utilisez plusieurs `*` dossiers avec barres obliques `\` pour indiquer plusieurs dossiers imbrmbrés. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` inclut n’importe quel fichier et ses `C:\somepath\Archives\Data` sous-dossiers, `C:\somepath\Authorized\Data` ainsi que ses sous-dossiers <p> `C:\Serv\*\*\Backup` inclut n’importe quel fichier et ses `C:\Serv\Primary\Denied\Backup` sous-dossiers `C:\Serv\Secondary\Allowed\Backup` et ses sous-dossiers|
 |`?` (point d’interrogation)  <p> Dans **les inclusions de** nom de fichier et d’extension de fichier, le point d’interrogation remplace un seul caractère et s’applique uniquement aux fichiers du dernier dossier défini dans l’argument. <p> Dans **les exclusions de dossiers,** le point d’interrogation remplace un seul caractère dans un nom de dossier. Après la correspondance du nombre de dossiers avec caractères wild carded et nommés, tous les sous-dossiers sont également inclus.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` inclut `C:\somepath\P\Data` n’importe quel fichier dans et ses sous-dossiers  <p> `C:\somepath\test0?\Data` inclut n’importe `C:\somepath\test01\Data` quel fichier et ses sous-dossiers|
 |Variables d’environnement <p> La variable définie est remplie en tant que chemin d’accès lorsque l’exclusion est évaluée.|`%ALLUSERSPROFILE%\CustomLogFiles` inclut `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
 > [!IMPORTANT]
-> Si vous mélangez un argument d’exclusion de fichier avec un argument d’exclusion de dossier, les règles s’arrêteront à la correspondance d’argument de fichier dans le dossier de correspondance et ne rechercheront pas de correspondances de fichiers dans les sous-dossiers.
+> Si vous mélangez un argument d’exclusion de fichier avec un argument d’exclusion de dossier, les règles s’arrêtent à la correspondance de l’argument de fichier dans le dossier de correspondance et ne recherchent aucune correspondance de fichier dans les sous-dossiers.
 >
 > Par exemple, vous pouvez exclure tous les fichiers qui commencent par « date » dans les dossiers et à l’aide de `c:\data\final\marked` `c:\data\review\marked` l’argument de règle `c:\data\*\marked\date*` .
 >
@@ -220,7 +220,8 @@ Le tableau suivant décrit comment les caractères génériques peuvent être ut
 
 ### <a name="system-environment-variables"></a>Variables d’environnement système
 
-Le tableau suivant répertorie et décrit les variables d’environnement de compte système.<br/><br/>
+Le tableau suivant répertorie et décrit les variables d’environnement de compte système.
+    <br/><br/>
     
 |Cette variable d’environnement système...|Redirige vers cette|
 |---|---|
@@ -280,10 +281,10 @@ Le tableau suivant répertorie et décrit les variables d’environnement de com
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Windows\System32\config\systemprofile`|
-|`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Users\UserName`|
+|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
 
 ## <a name="review-the-list-of-exclusions"></a>Passer en revue la liste des exclusions
 
@@ -321,7 +322,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences Antivirus Microsoft Defender à l’aide de PowerShell
 
-Utilisez la cmdlet suivante :
+Utilisez l’cmdlet suivante :
 
 ```PowerShell
 Get-MpPreference
@@ -361,7 +362,7 @@ Dans l’extrait de code PowerShell suivant, remplacez-le par un fichier conform
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-Si Antivirus Microsoft Defender un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://www.eicar.org/86-0-Intended-use.html)
+Si Antivirus Microsoft Defender signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour confirmer que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://www.eicar.org/86-0-Intended-use.html)
 
 Vous pouvez également utiliser le code PowerShell suivant, qui appelle la classe WebClient .NET pour télécharger le fichier de test , comme avec l’cmdlet ; remplacer par un fichier conforme à la règle que vous validez `Invoke-WebRequest` `c:\test.txt` :
 
@@ -376,7 +377,7 @@ Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier
 [io.file]::WriteAllText("test.txt",'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*')
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="see-also"></a>Voir aussi
 

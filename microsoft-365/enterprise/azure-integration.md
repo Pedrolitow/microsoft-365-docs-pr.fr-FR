@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Intégrez Microsoft 365 Azure AD si vous souhaitez synchroniser le mot de passe ou l' sign-on unique avec votre environnement local.
-ms.openlocfilehash: de971ee857e955fc4ddb8a059da23974965e81e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a4c239dba50535b254c2f014292feb6b2fc9c2fd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183463"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204195"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Intégration d’Azure avec Microsoft 365
 
@@ -59,7 +59,7 @@ Pour plus d’informations sur Microsoft 365 et Azure AD, voir [Microsoft 365 mo
 
 |**Fonctionnalité**|**Description**|
 |:-----|:-----|
-|Applications intégrées  <br/> |Vous pouvez accorder à des applications individuelles l’accès à Microsoft 365 données de messagerie, de calendriers, de contacts, d’utilisateurs, de groupes, de fichiers et de dossiers. Vous pouvez également autoriser ces applications au niveau  administrateur **Azure AD DC** ou administrateur global et les rendre accessibles à l’ensemble de votre entreprise en enregistrant les applications dans Azure AD. Pour plus d’informations, voir [Applications intégrées et Azure AD pour Microsoft 365 administrateurs.](integrated-apps-and-azure-ads.md)<br/> Pour plus d’informations, consultez [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?). <br/> Voir aussi [1 000 000 000](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
+|Applications intégrées  <br/> |Vous pouvez accorder à des applications individuelles l’accès à Microsoft 365 données de messagerie, de calendriers, de contacts, d’utilisateurs, de groupes, de fichiers et de dossiers. Vous pouvez également autoriser ces applications au niveau  administrateur **Azure AD DC** ou administrateur global et les rendre accessibles à l’ensemble de votre entreprise en enregistrant les applications dans Azure AD. Pour plus d’informations, voir [Applications intégrées et Azure AD pour Microsoft 365 administrateurs.](integrated-apps-and-azure-ads.md)<br/> Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](/microsoft-365/admin/add-users/about-admin-roles?). <br/> Voir aussi [1 000 000 000](/azure/active-directory/manage-apps/what-is-single-sign-on).  <br/> |
 |Power Apps  <br/> | Power Apps sont des applications axées sur les appareils mobiles qui peuvent se connecter à vos sources de données existantes, telles que SharePoint listes et autres applications de données. Pour [plus d’informations,](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) voir Créer une application Power App pour une liste SharePoint Online [et Power Apps page.](https://powerapps.microsoft.com/)  <br/> |
    
 ## <a name="see-also"></a>Voir aussi

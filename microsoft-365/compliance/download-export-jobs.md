@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exportez des documents dans un jeu à réviser sur un compte stockage Azure puis utilisez Explorateur Stockage Azure pour les télécharger sur un ordinateur local.
-ms.openlocfilehash: 352bce7134f92a7f6759673f28d388aac4957d1c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8f3110ef386fd5c5d8adc641aa223435caf0da67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207955"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203122"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exporter des documents dans un jeu à réviser vers un compte stockage Azure client
 
@@ -33,7 +33,7 @@ Lorsque vous exportez des documents à partir d’un groupe de révision dans un
 
   - **Jeton SAS**: assurez-vous d’obtenir le jeton SAS pour votre compte stockage Azure (et non pour le conteneur). Vous pouvez générer un jeton SAS pour votre compte dans stockage Azure. Pour ce faire, accédez au compte stockage Azure, puis sélectionnez Partager la **signature** d’accès sous **les paramètres Paramètres** dans le blade du compte de stockage. Utilisez les paramètres par défaut et autorisez tous les types de ressources lorsque vous générez le jeton SAS.
 
-  - **URL du conteneur**: vous devez créer un conteneur vers qui télécharger les documents du jeu à réviser, puis obtenir une copie de l’URL du conteneur. par exemple, `https://ediscoverydata.blob.core.windows.net/exportdata` . Pour obtenir l’URL, go to the container in stockage Azure, and select **Properties** under the **Paramètres** section in the container blade.
+  - **URL du conteneur**: vous devez créer un conteneur vers qui télécharger les documents du jeu à réviser, puis obtenir une copie de l’URL du conteneur . par exemple, `https://ediscoverydata.blob.core.windows.net/exportdata` . Pour obtenir l’URL, go to the container in stockage Azure, and select **Properties** under the **Paramètres** section in the container blade.
 
 - Téléchargez et installez le Explorateur Stockage Azure. Pour obtenir des instructions, [voir Explorateur Stockage Azure’outil.](https://go.microsoft.com/fwlink/p/?LinkId=544842) Vous utilisez cet outil pour vous connecter au conteneur dans votre compte stockage Azure et télécharger les documents que vous avez exportés à l’étape 1.
 
@@ -74,7 +74,7 @@ L’étape suivante consiste à obtenir l’URL SAS générée après la créati
 
 ## <a name="step-3-connect-to-the-azure-storage-container"></a>Étape 3 : Connecter au conteneur stockage Azure’accès
 
-La dernière étape consiste à utiliser les Explorateur Stockage Azure et l’URL SAS pour se connecter au conteneur dans votre compte stockage Azure et télécharger les documents exportés sur un ordinateur local.
+La dernière étape consiste à utiliser le Explorateur Stockage Azure et l’URL SAS pour se connecter au conteneur dans votre compte stockage Azure et télécharger les documents exportés sur un ordinateur local.
 
 1. Démarrez la Explorateur Stockage Azure que vous avez téléchargée et installée.
 
@@ -90,7 +90,7 @@ La dernière étape consiste à utiliser les Explorateur Stockage Azure et l’U
 
     ![Collez l’URL SAS dans la zone URI.](../media/AzureStorageConnect3.png)
 
-    Notez que le nom du conteneur s’affiche dans la zone Nom **complet.** Vous pouvez modifier ce nom.
+    Notez que le nom du conteneur s’affiche dans la **zone Nom complet.** Vous pouvez modifier ce nom.
 
 6. Cliquez **sur Suivant** pour afficher la page **récapitulatif,** puis cliquez **sur Connecter**.
 
@@ -98,7 +98,7 @@ La dernière étape consiste à utiliser les Explorateur Stockage Azure et l’U
 
     ![Exporter des travaux dans le nœud conteneurs Blobs.](../media/AzureStorageConnect5.png)
 
-    Il contient un conteneur nommé avec le nom complet de l’étape 5. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez téléchargée vers le conteneur dans stockage Azure compte. Ces dossiers sont nommés avec un ID qui correspond à l’ID de la tâche d’exportation. Vous pouvez trouver ces ID d’exportation (et  le nom de l’exportation) sous les informations  de support sur la page volante pour chaque tâche de préparation de l’exportation répertoriée sous l’onglet Travaux dans le cas Advanced eDiscovery. 
+    Il contient un conteneur nommé avec le nom complet de l’étape 5. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez téléchargée vers le conteneur dans votre stockage Azure client. Ces dossiers sont nommés avec un ID qui correspond à l’ID de la tâche d’exportation. Vous pouvez trouver ces ID d’exportation (et  le nom de l’exportation) sous les informations  de support sur la page volante pour chaque tâche de préparation de l’exportation répertoriée sous l’onglet Travaux dans le cas Advanced eDiscovery. 
 
 7. Double-cliquez sur le dossier du travail d’exportation pour l’ouvrir.
 

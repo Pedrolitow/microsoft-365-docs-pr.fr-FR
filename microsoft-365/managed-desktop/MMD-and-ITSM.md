@@ -7,13 +7,13 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
-ms.openlocfilehash: f51c99ed39e9f647f3e069c22eb3e37441f57be5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: ced0b27b5d9a47923b9738a3db50c2a8df0a5cbf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209185"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205760"
 ---
 # <a name="microsoft-managed-desktop-and-itil"></a>Bureau géré Microsoft et ITIL
 
@@ -33,8 +33,8 @@ Ce tableau est lié aux phases et processus ITIL clés pour Microsoft Manged Des
 |Processus ITIL |Description  |Documentation |
 |---------|---------|---------|
 |Gestion au niveau du service     | Les temps de réponse sont définis pour les demandes de support et les incidents de l’administrateur.  |  [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md)  |
-|Gestion du catalogue de services     | La description du service détaillant les composants du service reste vraie pour l’état du service, disponible pour tous les clients actuels et intéressés.<br><br>Conditions préalables détaillées pour comprendre ce qui est nécessaire au fonctionnement du service.  | - [Microsoft Manged Desktop description du service](service-description/index.md)<br><br>- [Préparez-vous à l’inscription dans Microsoft Manged Desktop](get-ready/index.md)  |
-|Gestion de la sécurité des informations     | Informations de sécurité, y compris la sécurité des informations pour le service.<br><br> Stratégies de sécurité et autres informations sur la configuration des appareils.   | - [Sécurité dans Microsoft Manged Desktop](service-description/security.md)<br><br>- [Configuration de l’appareil](service-description/device-policies.md)  |
+|Gestion du catalogue de services     | La description du service détaillant les composants du service reste vraie selon l’état du service, disponible pour tous les clients actuels et intéressés.<br><br>Conditions préalables détaillées pour comprendre ce qui est nécessaire au fonctionnement du service.  | - [Microsoft Manged Desktop description du service](service-description/index.md)<br><br>- [Préparez-vous à l’inscription dans Microsoft Manged Desktop](get-ready/index.md)  |
+|Gestion de la sécurité des informations     | Informations de sécurité, y compris la sécurité des informations pour le service.<br><br> Stratégies liées à la sécurité et autres informations sur la configuration des appareils.   | - [Sécurité dans Microsoft Manged Desktop](service-description/security.md)<br><br>- [Configuration de l’appareil](service-description/device-policies.md)  |
 |Gestion de la disponibilité     |  Microsoft Manged Desktop équilibre la responsabilité avec votre organisation pour garantir la disponibilité du service.<br><br>Les administrateurs et les utilisateurs ont des itinéraires vers le support respectif en cas de problèmes de service ou de disponibilité. | - [Microsoft Manged Desktop et surveillance](service-description/operations-and-monitoring.md)<br><br>- [Prise en charge des administrateurs pour Microsoft Manged Desktop](working-with-managed-desktop/admin-support.md)<br>- [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md)  |
 
 

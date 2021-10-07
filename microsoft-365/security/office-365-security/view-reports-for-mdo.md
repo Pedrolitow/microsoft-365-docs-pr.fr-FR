@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,14 +20,14 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da89b5421171eefe56363f38e1959cede2ef5afb
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 522abcdc22a17555eab6f0c2e46a424529a15b99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988495"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203845"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports defender pour Office 365 dans le portail Microsoft 365 Defender web
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de Office 365 Defender dans le portail Microsoft 365 Defender web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -47,7 +47,7 @@ Microsoft Defender pour les organisations Office 365 (par exemple, les abonnemen
 
 ### <a name="download-reports"></a>Télécharger des rapports existants
 
-1. Dans le portail Microsoft 365 Defender, go to **Reports**  >  **Email & collaboration**.
+1. Dans le portail Microsoft 365 Defender, go to **Reports**  >  **Email & collaboration.**
 
 2. Sélectionnez **rapports pour le téléchargement.**
 
@@ -128,7 +128,7 @@ Pour afficher le rapport, ouvrez [le portail Microsoft 365 Defender,](https://se
 Les vues disponibles sur la page du rapport **de protection des URL** sont décrites dans les sections suivantes.
 
 > [!NOTE]
-> Il s’agit *d’un rapport de tendance de protection,* ce qui signifie que les données représentent des tendances dans un jeu de données plus important. Par conséquent, les données des graphiques ne sont pas disponibles en temps réel ici, mais les données du tableau de détails le sont, de sorte que vous pouvez voir une légère différence entre les deux. Les graphiques sont actualisé toutes les quatre heures et contiennent des données pour les 90 derniers jours.
+> Il s’agit *d’un rapport de tendance de protection,* ce qui signifie que les données représentent des tendances dans un jeu de données plus important. Par conséquent, les données des graphiques ne sont pas disponibles en temps réel ici, mais les données du tableau de détails le sont, vous pouvez donc voir une légère différence entre les deux. Les graphiques sont actualisé toutes les quatre heures et contiennent des données pour les 90 derniers jours.
 
 ### <a name="view-data-by-url-click-protection-action"></a>Afficher les données par action de protection par clic d’URL
 
@@ -141,7 +141,7 @@ Les vues disponibles sur la page du rapport **de protection des URL** sont décr
 - **Bloqué et cliqué :** l’utilisateur a choisi de continuer à accéder à l’URL.
 - **Clicked through during scan**: The user has clicked on the link before the scan was complete.
 
-Un clic indique que l’utilisateur a cliqué sur la page d’accès au site web malveillant (les administrateurs peuvent désactiver le clic dans les stratégies de liens Coffre web).
+Un clic indique que l’utilisateur a cliqué sur la page de blocage vers le site web malveillant (les administrateurs peuvent désactiver le clic dans les stratégies de liens Coffre web).
 
 Si vous cliquez sur **Filtres,** vous pouvez modifier le rapport et le tableau des détails en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
@@ -210,9 +210,9 @@ Outre les rapports décrits dans cet article, plusieurs autres rapports sont dis
 
 |Rapport|Rubrique|
 |---|---|
-|**Explorateur** (Microsoft Defender pour Office 365 Plan 2) ou **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
+|**Détections** de l’Explorateur (Microsoft Defender  Office 365 Plan 2) ou en temps réel (Microsoft Defender Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
 |Rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365|[Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)|
-|Rapports de flux de messagerie dans le Centre Exchange’administration Centrale (EAC)|[Rapports de flux de messagerie dans le nouveau centre d Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|Rapports de flux de messagerie dans le Centre Exchange’administration Centrale (EAC)|[Rapports de flux de messagerie dans le nouveau centre Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |
 
 Cmdlets de rapports PowerShell :
@@ -248,7 +248,7 @@ Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 3
 
 Si vous ne voyez pas de données dans votre defender pour Office 365 rapports, vérifiez que vos stratégies sont correctement définies. Votre organisation doit avoir défini [des stratégies Coffre](set-up-safe-links-policies.md) liens et des stratégies Coffre pièces [jointes](set-up-safe-attachments-policies.md) pour que Defender pour Office 365 protection soit en place. Consultez également La protection contre [le courrier indésirable et les programmes malveillants.](anti-spam-and-anti-malware-protection.md)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports intelligents et informations sur le portail Microsoft 365 Defender web](reports-and-insights-in-security-and-compliance.md)
 

@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
-localization_priority: normal
+ms.localizationpriority: medium
 description: Découvrez comment administrer les Exchange Online multigéogé dans votre environnement Microsoft 365 avec PowerShell.
-ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2e4be2fd506f89579866c61bbf4a8a41aadc0d03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202236"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189200"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administration des boîtes aux lettres Exchange Online dans un environnement multigéographique
 
@@ -146,7 +146,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 ### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Déplacer une boîte aux lettres inactive vers une géo spécifique
 
-Vous ne pouvez pas déplacer les boîtes aux lettres inactives qui sont conservées à des fins de conformité (par exemple, les boîtes aux lettres en conservation pour litige) en modifiant leur valeur **PreferredDataLocation.** Pour déplacer une boîte aux lettres inactive vers une autre géo, faites les étapes suivantes :
+Vous ne pouvez pas déplacer les boîtes aux lettres inactives qui sont conservées à des fins de conformité (par exemple, les boîtes aux lettres en conservation pour litige) en modifiant leur valeur **PreferredDataLocation.** Pour déplacer une boîte aux lettres inactive vers une autre géo, vous pouvez suivre les étapes suivantes :
 
 1. Récupérez la boîte aux lettres inactive. Pour obtenir des instructions, [voir Récupérer une boîte aux lettres inactive.](../compliance/recover-an-inactive-mailbox.md)
 

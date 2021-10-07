@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd43fc2bfb8ef83eff988481a87dd48b1b53566b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dc687a18df0c23e993a72c081e4f67eceb7efd40
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181054"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204022"
 ---
 # <a name="restrict-app-execution-api"></a>API Restreindre l’exécution de l’application
 
@@ -41,7 +41,7 @@ ms.locfileid: "59181054"
 
 ## <a name="api-description"></a>Description de l’API
 
-Limiter l’exécution de toutes les applications sur l’appareil à l’exception d’un ensemble prédéféré.
+Restreindre l’exécution de toutes les applications sur l’appareil à l’exception d’un ensemble prédéféré.
 
 ## <a name="limitations"></a>Limites
 
@@ -68,7 +68,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.RestrictExecution|« Rest
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >
-> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (pour plus d’informations, voir Créer et gérer [des](user-roles.md) rôles)
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
 > - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
@@ -94,7 +94,7 @@ Commentaire|Chaîne|Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 Si vous envoyez plusieurs appels d’API pour restreindre l’exécution de l’application pour le même appareil, elle renvoie « Action de l’ordinateur en attente » ou HTTP 400 avec le message « L’action est déjà en cours ».
 

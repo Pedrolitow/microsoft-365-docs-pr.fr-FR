@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2f4cfd4cb55d6a89acf8f78d60006851c14e603f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 668631563b35a848df5bfbdfd930be17efce8c04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208524"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203662"
 ---
 # <a name="test-base-faq"></a>Test Base FAQ
 
@@ -33,11 +33,11 @@ Consultez le guide de l’utilisateur d’intégration pour plus d’information
 
 **Q : Que sont les tests OOB ( Out-of-Box) ?**
 
-**R :** Les tests prêts à l’emploi (OOB) sont standardisés, les tests par défaut s’exécutent lorsque les packages d’application sont installés, lancés et fermés trente (30) fois, puis désinstallés. 
+**R :** Les tests OOB (Out-of-Box) sont standardisés, les tests par défaut s’exécutent là où les packages d’application sont installés, lancés et fermés trente (30) fois, puis désinstallés. 
 
 Les packages créés pour la base de test auront les scripts de test suivants : installer, lancer, fermer et éventuellement le script de désinstallation. 
 
-Les tests OOB (Out-of-Box) vous fournissent une télémétrie normalisée sur votre application à comparer entre Windows builds.
+Les tests OOB (Out-of-Box) vous fournissent une télémétrie normalisée sur votre application à comparer entre les builds Windows de données.
 
 **Q : Pouvons-nous soumettre des tests en dehors des tests pré-box (installer, lancer, fermer, désinstaller des scripts de test) ?**
 
@@ -67,7 +67,7 @@ Consultez le guide de l’utilisateur d’intégration pour plus d’information
 
 **R :** Nous supportons toutes les langues et toutes les infrastructure. Nous appelons tous les scripts via PowerShell. 
 
-Vous devrez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
+Vous devez également fournir (télécharger) les fichiers binaires dépendants de l’infrastructure requise.
 
 **Q : À combien de temps la Base de test fournit-elle les résultats des tests ?**
 
@@ -87,7 +87,7 @@ Pour les tests fonctionnels, vous pouvez spécifier si un redémarrage est requi
 
 **Q : Quelles versions Windows-vous prise en charge ?**
 
-**R :** Nous ons actuellement Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019 et Windows Server 2019 Core.
+**R :** Nous prise en charge actuellement Windows 10 clients, Windows Server 2016, Windows Server 2016 Version principale, Windows Server 2019 et Windows Server 2019 Core.
 
 **Q : Quelle est la différence entre les tests de mise à jour de sécurité et les tests de mise à jour des fonctionnalités ?**
 
@@ -107,7 +107,7 @@ Nous pouvons également fournir des vidages mémoire pour le débogage sur incid
 
 Nous travaillons toujours en étroite collaboration avec nos clients pour résoudre les problèmes. 
 
-**Q : Microsoft tient-il la publication du correctif de sécurité jusqu’à ce que le problème soit résolu ? Quelles résolutions alternatives sont disponibles ?**
+**Q : Microsoft tient-il la publication du correctif de sécurité jusqu’à ce que le problème soit résolu ? Quelles autres résolutions sont disponibles ?**
 
 **R :** L’objectif de la base de test est de s’assurer que nos clients finaux conjoints ne rencontrent aucun problème. Nous travaillerons en dur avec les éditeurs de logiciels pour résoudre les problèmes avant la publication, mais au cas où le correctif ne serait pas réalisable, nous avons d’autres résolutions telles que les shims et les blocs.
 
@@ -123,7 +123,7 @@ Nous travaillons toujours en étroite collaboration avec nos clients pour résou
 
 **Q : Ce service prend-il en charge les applications web, mobiles ou de bureau ?**
 
-**R :** Pour l’instant, nous nous concentrons sur les applications de bureau, mais nous envisageons d’intégrer des applications web à l’avenir, mais nous ne prisent pas en charge les applications mobiles pour le moment.
+**R :** Pour l’instant, nous nous concentrons sur les applications de bureau. Toutefois, nous envisageons d’intégrer des applications web à l’avenir, mais nous ne prisent pas en charge les applications mobiles pour le moment.
 
 **Q : Quelle est la différence entre Base de test et LAPX ?**
 

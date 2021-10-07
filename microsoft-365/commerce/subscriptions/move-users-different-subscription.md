@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 07/01/2020
-ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5cbbdb79d291b89c2f62e44e44239ea5e2791f57
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209426"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206156"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
@@ -59,9 +59,9 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 3. Dans la partie supérieure, sélectionnez **Gérer des licences de produits**.
 
-4. Dans le **volet Gérer les licences de** produits, sélectionnez Remplacer et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs. 
+4. Dans le **volet Gérer les licences de** produits, sélectionnez **Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
 
-5. At the bottom, select **Save Changes** \> **Close**.
+5. En bas, sélectionnez **Enregistrer les modifications** \> **fermer.**
 
 ## <a name="next-steps"></a>Étapes suivantes
 

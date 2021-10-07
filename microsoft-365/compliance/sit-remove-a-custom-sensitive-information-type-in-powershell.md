@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment supprimer un type d’informations sensibles personnalisé à l’aide de PowerShell
-ms.openlocfilehash: 9365eeff6100b16c94b9fa09b06dc51b272b60a6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4bb42bdc80cba64bc8970753b77160afc6720523
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207812"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189260"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>Supprimer un type d’informations sensibles personnalisé à l’aide de PowerShell
 

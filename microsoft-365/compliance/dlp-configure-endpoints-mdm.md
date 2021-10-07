@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
-ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7d1d51ef048c619f700f5c04d30804ec15f4c15d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183624"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204370"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) 
 
 
 ## <a name="before-you-begin"></a>Avant de commencer
-Si vous utilisez Microsoft Intune, l’appareil doit être inscrit À la gestion des périphériques. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
+Si vous utilisez Microsoft Intune, l’appareil doit être inscrit À la gestion des appareils. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
 
 Pour plus d’informations sur l’activation de la gestion des périphériques Microsoft Intune, voir [Inscription d’appareil (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
@@ -49,7 +49,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenez le package de mise hors programme à partir du [Centre de conformité Microsoft.](https://compliance.microsoft.com/)
+1. Obtenez le package deboarding à partir du [Centre de conformité Microsoft.](https://compliance.microsoft.com/)
 
 2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **l’intégration**  >  **de l’appareil.**
 
@@ -68,7 +68,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 Pour plus d’informations Microsoft Intune paramètres de stratégie, voir [Windows 10 paramètres de](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)stratégie dans Microsoft Intune .
 
 > [!NOTE]
-> La **stratégie État d’état d’état des appareils** déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
+> La **stratégie État d’état d’état des** appareils déboardés utilise des propriétés en lecture seule et ne peut pas être corrigé.
 
 > [!IMPORTANT]
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.

@@ -7,19 +7,19 @@ ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Résumé : Utilisez PowerShell pour gérer vos propriétés Skype Entreprise compte d’utilisateur En ligne avec des stratégies.'
-ms.openlocfilehash: aea57c836403918e4c236f766ed211a31ea2ceec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 674ea6daba498279537f7c302f4bf4d791ee00f5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181187"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189080"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Gestion des stratégies Skype Entreprise Online avec PowerShell
 

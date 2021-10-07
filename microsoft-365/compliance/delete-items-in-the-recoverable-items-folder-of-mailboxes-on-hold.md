@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Découvrez comment les administrateurs peuvent supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente légale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01242e2c5f00cd1e5aef0ac0f6f7f6e1d47a56ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aedd887caed1ffd4484ea55561aa77562869726a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183719"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189428"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud
 
-Le dossier Éléments récupérables d’Exchange Online boîte aux lettres de sécurité existe pour vous protéger contre les suppressions accidentelles ou malveillantes. Il est également utilisé pour stocker les éléments qui sont conservés et accessibles par les fonctionnalités de conformité, telles que les rétentions et les recherches eDiscovery. Toutefois, dans certains cas, les organisations peuvent avoir des données qui ont été involontairement conservées dans le dossier Éléments récupérables qu’elles doivent supprimer. Par exemple, un utilisateur peut sans le savoir envoyer ou transmettre un message électronique contenant des informations sensibles ou des informations qui peuvent avoir de graves conséquences professionnelles. Même si le message est définitivement supprimé, il peut être conservé indéfiniment car une mise en attente légale a été placée sur la boîte aux lettres. Ce scénario est appelé *débordement* de données, car les données ont été accidentellement répandus *dans* Office 365. Dans ces situations, vous pouvez supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente avec l’une des différentes fonctionnalités de mise en attente dans Office 365. Ces types de conservations incluent les conservations pour litige, les conservations In-Place, les conservations eDiscovery et les stratégies de rétention créées dans le centre de sécurité et conformité dans Office 365 ou Microsoft 365.
+Le dossier Éléments récupérables d’Exchange Online boîte aux lettres de sécurité existe pour vous protéger contre les suppressions accidentelles ou malveillantes. Il est également utilisé pour stocker les éléments qui sont conservés et accessibles par les fonctionnalités de conformité, telles que les rétentions et les recherches eDiscovery. Toutefois, dans certains cas, les organisations peuvent avoir des données qui ont été involontairement conservées dans le dossier Éléments récupérables qu’elles doivent supprimer. Par exemple, un utilisateur peut sans le savoir envoyer ou transmettre un message électronique contenant des informations sensibles ou des informations qui peuvent avoir de graves conséquences professionnelles. Même si le message est définitivement supprimé, il peut être conservé indéfiniment car une mise en attente légale a été placée sur la boîte aux lettres. Ce scénario est appelé *débordement de* données, car les données ont été accidentellement répandus *dans* Office 365. Dans ces situations, vous pouvez supprimer des éléments dans le dossier Éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en attente avec l’une des différentes fonctionnalités de mise en attente dans Office 365. Ces types de conservations incluent les conservations pour litige, les conservations In-Place, les conservations eDiscovery et les stratégies de rétention créées dans le centre de sécurité et conformité dans Office 365 ou Microsoft 365.
 
-Cet article explique comment les administrateurs peuvent supprimer des éléments du dossier Éléments récupérables pour les boîtes aux lettres informatiques en attente. Cette procédure implique la désactivation de l’accès à la boîte aux lettres et la désactivation de la récupération d’élément unique, la désactivation du traitement de la boîte aux lettres par l’Assistant Dossier géré, la suppression temporaire de la mise en attente, la suppression des éléments du dossier Éléments récupérables, puis le rétablissement de la configuration précédente de la boîte aux lettres. Voici le processus :
+Cet article explique comment les administrateurs peuvent supprimer des éléments du dossier Éléments récupérables pour les boîtes aux lettres informatiques en attente. Cette procédure implique la désactivation de l’accès à la boîte aux lettres et la désactivation de la récupération d’élément unique, la désactivation du traitement de la boîte aux lettres par l’Assistant Dossier géré, la suppression temporaire de la mise en attente, la suppression d’éléments du dossier Éléments récupérables, puis le rétablissement de la configuration précédente de la boîte aux lettres. Voici le processus :
   
 [Étape 1 : Collecter des informations sur la boîte aux lettres](#step-1-collect-information-about-the-mailbox)
 
@@ -66,7 +66,7 @@ Cette première étape consiste à collecter les propriétés sélectionnées de
 
 En outre, vous devez obtenir les paramètres d’accès client de boîte aux lettres afin de pouvoir les désactiver temporairement afin que le propriétaire (ou d’autres utilisateurs) ne puisse pas accéder à la boîte aux lettres au cours de cette procédure. Enfin, vous pouvez obtenir la taille actuelle et le nombre d’éléments dans le dossier Éléments récupérables. Après avoir supprimé des éléments du dossier Éléments récupérables à l’étape 5, vous utiliserez ces informations pour vérifier que les éléments ont été supprimés.
   
-1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). N’oubliez pas d’utiliser un nom d’utilisateur et un mot de passe pour un compte administrateur qui a reçu les rôles de gestion appropriés dans Exchange Online.
+1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). N’oubliez pas d’utiliser un nom d’utilisateur et un mot de passe pour un compte d’administrateur qui a reçu les rôles de gestion appropriés dans Exchange Online.
 
 2. Exécutez la commande suivante pour obtenir des informations sur la récupération d’élément unique et la période de rétention des éléments supprimés.
 
@@ -132,7 +132,7 @@ En outre, vous devez obtenir les paramètres d’accès client de boîte aux let
 
 Après avoir collecté et enregistrement des informations sur la boîte aux lettres, l’étape suivante consiste à préparer la boîte aux lettres en effectuer les tâches suivantes :
   
-- **Désactivez l’accès client** à la boîte aux lettres afin que le propriétaire de la boîte aux lettres ne puisse pas accéder à sa boîte aux lettres et apporter des modifications aux données de la boîte aux lettres au cours de cette procédure.
+- **Désactivez l’accès client à** la boîte aux lettres afin que le propriétaire de la boîte aux lettres ne puisse pas accéder à sa boîte aux lettres et apporter des modifications aux données de la boîte aux lettres au cours de cette procédure.
 
 - Augmentez la période **de** rétention des éléments supprimés à 30 jours (la valeur maximale dans Exchange Online) afin que les éléments ne sont pas purgés du dossier Éléments récupérables avant de pouvoir être supprimés à l’étape 5.
 
@@ -212,7 +212,7 @@ Après avoir identifié la stratégie de rétention, go to the **Information gov
   
 ### <a name="organization-wide-retention-policies"></a>Stratégies de rétention à l’échelle de l’organisation
   
-Les stratégies de rétention Exchange à l’échelle Teams et à l’échelle de l’organisation sont appliquées à toutes les boîtes aux lettres de l’organisation. Elles sont appliquées au niveau de l’organisation (et non au niveau de la boîte aux lettres) et sont renvoyées lorsque vous exécutez la cmdlet **Get-OrganizationConfig** à l’étape 1. Exécutez la commande suivante dans [le Centre de sécurité & conformité PowerShell](/powershell/exchange/exchange-online-powershell) pour identifier les stratégies de rétention à l’échelle de l’organisation. Utilisez le GUID (sans le préfixe) pour les stratégies de rétention à l’échelle de l’organisation que vous avez identifiées  `mbx` à l’étape 1.
+Les stratégies de rétention à l’échelle Exchange, à l’échelle Teams et à l’échelle de l’organisation sont appliquées à chaque boîte aux lettres de l’organisation. Elles sont appliquées au niveau de l’organisation (et non au niveau de la boîte aux lettres) et sont renvoyées lorsque vous exécutez la cmdlet **Get-OrganizationConfig** à l’étape 1. Exécutez la commande suivante dans [le Centre de sécurité & conformité PowerShell](/powershell/exchange/exchange-online-powershell) pour identifier les stratégies de rétention à l’échelle de l’organisation. Utilisez le GUID (sans le préfixe) pour les stratégies de rétention à l’échelle de l’organisation que vous avez identifiées  `mbx` à l’étape 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -222,7 +222,7 @@ Après avoir identifié les stratégies de rétention à l’échelle de l’org
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
-Chaque fois qu’un utilisateur applique une étiquette configurée pour conserver du contenu ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considérée comme étant en conservation pour litige ou affectée à une stratégie de rétention.
+Chaque fois qu’un utilisateur applique une étiquette configurée pour conserver du contenu ou conserver, puis supprimer le contenu d’un dossier ou d’un élément de sa boîte aux lettres, la propriété de boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considérée comme placée en conservation pour litige ou affectée à une stratégie de rétention.
 
 Pour afficher la valeur de la *propriété ComplianceTagHoldApplied,* exécutez la commande suivante dans Exchange Online PowerShell :
 
@@ -274,19 +274,19 @@ Vous devez avoir le rôle de Exchange Online pour utiliser le paramètre *Remove
 
 Vous êtes maintenant prêt à supprimer des éléments dans le dossier Éléments récupérables à l’aide des cmdlets [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) et [New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) dans le Centre de sécurité & conformité PowerShell.
 
-Pour rechercher des éléments qui se trouvent dans le dossier Éléments récupérables, nous vous recommandons d’effectuer une *collection ciblée.* Cela signifie que vous limitez l’étendue de votre recherche uniquement aux éléments situés dans le dossier Éléments récupérables. Pour ce faire, exécutez le script dans l’article Utiliser la recherche de contenu [pour les collections ciblées.](use-content-search-for-targeted-collections.md) Ce script renvoie la valeur de la propriété d’ID de dossier pour tous les sous-dossiers du dossier Éléments récupérables cible. Ensuite, vous utilisez l’ID de dossier dans une requête de recherche pour renvoyer les éléments situés dans ce dossier.
+Pour rechercher des éléments situés dans le dossier Éléments récupérables, nous vous recommandons d’effectuer une *collection ciblée.* Cela signifie que vous limitez l’étendue de votre recherche uniquement aux éléments situés dans le dossier Éléments récupérables. Pour ce faire, exécutez le script dans l’article Utiliser la recherche de contenu [pour les collections ciblées.](use-content-search-for-targeted-collections.md) Ce script renvoie la valeur de la propriété d’ID de dossier pour tous les sous-dossiers du dossier Éléments récupérables cible. Ensuite, vous utilisez l’ID de dossier dans une requête de recherche pour renvoyer les éléments situés dans ce dossier.
 
 Voici une vue d’ensemble du processus de recherche et de suppression d’éléments dans le dossier Éléments récupérables d’un utilisateur :
 
-1. Exécutez le script de collecte ciblée qui renvoie les ID de dossier de tous les dossiers de la boîte aux lettres de l’utilisateur cible. Le script se connecte à Exchange Online PowerShell et sécurité & conformité PowerShell dans la même session PowerShell. Pour plus d’informations, [voir Exécuter le script pour obtenir la liste des dossiers d’une boîte aux lettres.](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site)
+1. Exécutez le script de collecte ciblée qui renvoie les ID de dossier pour tous les dossiers de la boîte aux lettres de l’utilisateur cible. Le script se connecte à Exchange Online PowerShell et sécurité & conformité PowerShell dans la même session PowerShell. Pour plus d’informations, [voir Exécuter le script pour obtenir la liste des dossiers d’une boîte aux lettres.](use-content-search-for-targeted-collections.md#step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site)
 
 2. Copiez les ID de dossier pour tous les sous-dossiers du dossier Éléments récupérables. Vous pouvez également rediriger la sortie du script vers un fichier texte.
 
    Voici une liste et une description des sous-dossiers du dossier Éléments récupérables à partir des éléments que vous pouvez rechercher et supprimer :
 
-   - **Suppressions :** contient les éléments supprimés (supprimés( ou supprimés) dont la période de rétention des éléments supprimés n’a pas expiré. Les utilisateurs peuvent récupérer des éléments supprimés (récupérables) à partir de ce sous-fichier à l’aide de l’outil Récupérer les éléments supprimés Outlook.
+   - **Suppressions :** contient les éléments supprimés (supprimés( ou supprimés) dont la période de rétention des éléments supprimés n’a pas expiré. Les utilisateurs peuvent récupérer des éléments supprimés (récupérables) à partir de ce sous-Outlook.
 
-   - **Purges**: contient les éléments supprimés définitivement dont la période de rétention des éléments supprimés a expiré. Les utilisateurs peuvent également supprimer définitivement des éléments en purgeant les éléments de leur dossier Éléments récupérables. Si la boîte aux lettres est en conservation, les éléments supprimés définitivement sont conservés. Ce sous-folder n’est pas visible pour les utilisateurs finaux.
+   - **Purges :** contient les éléments supprimés définitivement dont la période de rétention des éléments supprimés a expiré. Les utilisateurs peuvent également supprimer définitivement des éléments en purgeant les éléments de leur dossier Éléments récupérables. Si la boîte aux lettres est en conservation, les éléments supprimés définitivement sont conservés. Ce sous-folder n’est pas visible pour les utilisateurs finaux.
 
    - **DiscoveryHolds**: contient les éléments supprimés définitivement qui ont été conservés par une conservation eDiscovery ou une stratégie de rétention. Ce sous-folder n’est pas visible pour les utilisateurs finaux.
 
@@ -309,7 +309,7 @@ Voici une vue d’ensemble du processus de recherche et de suppression d’élé
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-5. Un maximum de 10 éléments par boîte aux lettres sont supprimés lorsque vous exécutez la commande précédente. Cela signifie que vous de devez exécuter la commande plusieurs fois pour supprimer tous les éléments que vous souhaitez supprimer dans le dossier `New-ComplianceSearchAction -Purge` Éléments récupérables. Pour supprimer des éléments supplémentaires, vous devez d’abord supprimer l’action précédente de purge de la recherche de conformité. Pour ce faire, exécutez la `Remove-ComplianceSearchAction` cmdlet. Par exemple, pour supprimer l’action de purge qui a été exécuté à l’étape précédente, exécutez la commande suivante :
+5. Un maximum de 10 éléments par boîte aux lettres sont supprimés lorsque vous exécutez la commande précédente. Cela signifie que vous de devez exécuter la commande plusieurs fois pour supprimer tous les éléments que vous souhaitez supprimer dans le dossier `New-ComplianceSearchAction -Purge` Éléments récupérables. Pour supprimer des éléments supplémentaires, vous devez d’abord supprimer l’action précédente de purge de la recherche de conformité. Pour ce faire, exécutez `Remove-ComplianceSearchAction` l’cmdlet. Par exemple, pour supprimer l’action de purge qui a été exécuté à l’étape précédente, exécutez la commande suivante :
 
    ```powershell
    Remove-ComplianceSearchAction "RecoverableItems_Purge"
@@ -384,7 +384,7 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
 
     **In-Place Hold**
 
-    Utilisez le EAC (ou Exchange Online PowerShell) pour rajouter la boîte aux lettres à la In-Place de la boîte aux lettres.
+    Utilisez le EAC (ou Exchange Online PowerShell) pour rajouter la boîte aux lettres au In-Place de la boîte aux lettres.
 
     **Stratégies de rétention appliquées à des boîtes aux lettres spécifiques**
 

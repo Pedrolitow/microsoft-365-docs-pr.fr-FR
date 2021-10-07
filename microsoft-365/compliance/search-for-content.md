@@ -9,14 +9,14 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: 577b3af2bbeb1856f55de31123b71f2597c6604a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a49dffccb701958912fb0185eec4a8312f22429
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175788"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203002"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
@@ -70,7 +70,7 @@ La recherche de contenu est facile à utiliser, mais il s’agit également d’
 
 - [Dédoplication dans les résultats de recherche](de-duplication-in-ediscovery-search-results.md) que vous pouvez activer lorsque vous exportez des messages électroniques qui sont les résultats d’une recherche
 
-## <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour des scénarios avancés
+## <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
 
 Parfois, vous devez effectuer des tâches de recherche de contenu plus avancées, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d’utiliser les commandes dans le Centre de sécurité & conformité PowerShell. Pour faciliter cette tâche, nous avons créé un certain nombre de scripts powerShell du Centre de sécurité et conformité & pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
 

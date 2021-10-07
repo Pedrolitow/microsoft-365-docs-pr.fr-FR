@@ -7,14 +7,14 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: ec56158a8ccf0c1014b847b04a62db6a14fe992b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea2e6e95ec76965e01d73bb1ecbd53c798eeca71
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204931"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205712"
 ---
 # <a name="user-support"></a>Support pour les utilisateurs
 
@@ -28,11 +28,11 @@ Vos Microsoft Manged Desktop utilisateurs peuvent obtenir un support de votre or
 
 ## <a name="roles-and-responsibilities"></a>Rôles et responsabilités
 
-Pour garantir la qualité de service sans compromettre la sécurité, le fournisseur de support, les administrateurs informatiques et les administrateurs Microsoft Manged Desktop ont chacun des rôles et des responsabilités différents.
+Pour garantir la qualité de service sans compromettre la sécurité, le fournisseur de support, les administrateurs informatiques et Microsoft Manged Desktop ont chacun des rôles et des responsabilités différents.
 
 ### <a name="support-provider"></a>Fournisseur de support
 
-Toute personne qui fournit un support (vous pour le support dirigé par le client ou un partenaire pour les partenaires) est responsable des éléments ci-après :
+Toute personne qui fournit un support (vous pour le support client ou un partenaire pour un partenaire) est responsable des éléments ci-après :
 
 - Fourniture de toute l’assistance technique et de l’assistance technique du premier contact jusqu’à la résolution de l’utilisateur
 - Respect de tous les contrats de niveau de service pour le support utilisateur établi par votre organisation ou en partenariat avec le fournisseur de support choisi
@@ -50,8 +50,8 @@ Toute personne qui fournit un support (vous pour le support dirigé par le clien
 Votre administrateur informatique est responsable des éléments ci-après :
 
 - Collaborer avec le fournisseur de support pour définir et gérer les contrats de niveau de service pour la prise en charge des utilisateurs
-- Gestion des privilèges d’accès élevés pour le personnel de support approuvé. Pour plus d’informations, voir [Activer les fonctionnalités de support utilisateur](../get-started/enable-support.md)
-- S’il existe des problèmes d’appareil affectant les utilisateurs, escaladez-les à l’aide Microsoft Manged Desktop processus de support de l’administrateur. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop.](../working-with-managed-desktop/admin-support.md)
+- Gestion des privilèges d’accès élevés pour le personnel de support approuvé. Pour plus d’informations, voir [Activer les fonctionnalités de prise en charge des utilisateurs](../get-started/enable-support.md)
+- S’il existe des problèmes d’appareil affectant les utilisateurs, escaladez-les à l’aide Microsoft Manged Desktop processus de support de l’administrateur. Pour plus d’informations, [consultez la prise en charge de Microsoft Manged Desktop](../working-with-managed-desktop/admin-support.md).
 - Router les problèmes liés au matériel vers le fournisseur ou le fournisseur approprié
 - Conservez et protégez les paramètres de stratégie de sécurité des Microsoft Manged Desktop appareils en empêchant les stratégies que nous avons définies d’être modifiées.
 
@@ -68,13 +68,13 @@ En tant que fournisseur de services, nous sommes responsables des éléments ci-
 
 Que le support soit dirigé par le client ou par un partenaire, le flux d’activité pour une demande de support utilisateur suit ce chemin d’accès :
 
-:::image type="content" source="../../media/mmd-support-flow.png" alt-text="Lorsqu’un utilisateur contacte le support technique, il passe par votre système de personnel à plusieurs niveaux comme vous l’avez conçu. Il est important de désigner un groupe de personnel de support technique qui aura les capacités d’élévation et d’escalade, appelée équipe d’escalade de support. Pour des Microsoft Manged Desktop spécifiques, ils peuvent resserrez l’équipe des opérations. Ou pour d’autres problèmes de Microsoft, ils peuvent être acheminés vers votre canal de support existant, Unifié ou Premier. Les problèmes matériels doivent toujours être acheminés vers votre fournisseur ou fournisseur établi.":::
+:::image type="content" source="../../media/mmd-support-flow.png" alt-text="Lorsqu’un utilisateur contacte le support, il passe par votre système de personnel à plusieurs niveaux comme vous l’avez conçu. Il est important de désigner un groupe de personnel de support technique qui aura les capacités d’élévation et d’escalade, appelée équipe d’escalade de support. Pour des Microsoft Manged Desktop spécifiques, ils peuvent s’en prendre à notre équipe des opérations. Ou pour d’autres problèmes de Microsoft, ils peuvent être acheminés vers votre canal de support existant, Unifié ou Premier. Les problèmes matériels doivent toujours être acheminés vers votre fournisseur ou fournisseur établi.":::
 
 L’intégration de vos processus existants à ce flux de travail Microsoft Manged Desktop les appareils mobiles est flexible, de sorte que les détails peuvent être différents. En règle générale, le fournisseur de support suit une approche de niveau ou de passage existante, en désignant des utilisateurs spécifiques qui ont la possibilité d’élever les autorisations ou de réamorcer les problèmes Microsoft Manged Desktop opérations. Il est préférable de maintenir ce groupe plus petit que l’équipe de support technique la plus large.
 
 Si un problème d’utilisateur doit être Microsoft Manged Desktop, il est utile d’identifier l’équipe vers laquelle le problème doit être dirigé. Nous pouvons transférer des cas de manière appropriée, mais cela permet de gagner du temps pour les router au bon endroit dès le début.
 
-- Problèmes spécifiques à Microsoft Manged Desktop (par exemple, une stratégie ou un paramètre déployé par le service lui-même) : relaient directement à l’équipe des opérations en créant une demande de support. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
+- Problèmes spécifiques à Microsoft Manged Desktop (par exemple, une stratégie ou un paramètre déployé par le service lui-même) : faire directement une escalade vers l’équipe des opérations en créant une demande de support. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
 - Problèmes matériels : directement à votre fournisseur ou fournisseur de matériel
 - Autres problèmes : faire passer les canaux de support existants, qu’il s’agit d’un abonnement Unifié ou Premier.
 
@@ -83,7 +83,7 @@ Si un problème d’utilisateur doit être Microsoft Manged Desktop, il est util
 
 ### <a name="elevation-portal"></a>Portail d’élévation 
 
-Étant donné Microsoft Manged Desktop’appareils s’exécutent sur l’utilisateur standard par défaut, certaines tâches nécessitent l’élévation de privilèges. Pour plus d’informations sur le contrôle de compte d’utilisateur, voir [Contrôle de compte d’utilisateur.](/windows/security/identity-protection/user-account-control/user-account-control-overview) Afin que le personnel de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) support puisse effectuer des tâches tout en dépannage des problèmes pour les utilisateurs, nous fournissons un accès « juste-à-temps » à un compte d’administrateur. Ce mot de passe est accessible en toute sécurité uniquement par ceux que vous désignez et pivote toutes les deux heures.  
+Étant donné Microsoft Manged Desktop’appareils s’exécutent sur l’utilisateur standard par défaut, certaines tâches nécessitent l’élévation de privilèges. Pour plus d’informations sur le contrôle de compte d’utilisateur, voir [Contrôle de compte d’utilisateur.](/windows/security/identity-protection/user-account-control/user-account-control-overview) Pour permettre au personnel de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) support technique d’effectuer des tâches tout en dépannage des problèmes pour les utilisateurs, nous fournissons un accès « juste-à-temps » à un compte d’administrateur. Ce mot de passe est accessible en toute sécurité uniquement par ceux que vous désignez et pivote toutes les deux heures.  
 
 Pour savoir comment configurer les utilisateurs pour l’accès à ce portail, voir Activer les fonctionnalités [de support utilisateur.](../get-started/enable-support.md)
 

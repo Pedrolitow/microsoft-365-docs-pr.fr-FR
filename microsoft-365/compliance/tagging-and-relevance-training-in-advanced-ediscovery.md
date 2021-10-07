@@ -10,19 +10,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez les étapes à suivre pour baliser, puis travailler avec un exemple de formation de 40 fichiers pendant la phase de formation Pertinence de Advanced eDiscovery.
-ms.openlocfilehash: 8cb1de2b2f02ec9c2fd94e07574b638a001ec235
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c21ec89896dbd67bd348abd317d1389f8e105fda
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205876"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202990"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Formation sur le marquage et la pertinence dans Advanced eDiscovery
   
@@ -34,11 +34,11 @@ Une fois l’évaluation Advanced eDiscovery terminée et que vous entrez dans l
 
 1. Dans **l’onglet \> Balise** de pertinence, le volet Marquage s’affiche par défaut dans le volet gauche et les exemples de fichiers s’affichent, un par un pour le marquage.
 
-    ![Panneau Balise de pertinence.](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Panneau balise de pertinence.](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     Dans **l’onglet** Balise, le nom complet du fichier s’affiche. Cela peut être le chemin d’accès, l’objet de l’e-mail, le titre ou le nom défini par l’utilisateur. L’ID, le chemin d’accès au fichier ou le chemin de texte peuvent être copiés en cliquant avec le bouton droit sur le chemin d’accès du fichier.
 
-    Les  statistiques de marquage de l’onglet Balise indiquent le numéro d’exemple de fichier (en haut du volet gauche), le nombre de fichiers actuellement affichés en dehors du nombre total de fichiers dans l’exemple (en bas du volet droit) et le nombre total actuel de fichiers marqués dans l’exemple (en bas du volet gauche), qui change lorsque vous marquez des fichiers. Cela s’applique à tout marquage de pertinence effectué, que ce soit lors de l’évaluation, de l’entraînement, du rattrapage ou du test.
+    Les  statistiques de marquage de l’onglet Balise indiquent le numéro d’exemple de fichier (en haut du volet gauche), le nombre de fichiers actuellement affichés en dehors du nombre total de fichiers dans l’exemple (en bas du volet droit) et le nombre total actuel de fichiers marqués dans l’exemple (en bas du volet gauche), qui change à mesure que vous marquez des fichiers. Cela s’applique à tout marquage de pertinence effectué, que ce soit lors de l’évaluation, de l’entraînement, du rattrapage ou du test.
 
     Les icônes indiquant l’existence de commentaires, de balises et de fichiers de famille sont affichées dans l’affichage fichier dans une barre au-dessus du fichier.
 
@@ -75,9 +75,9 @@ Une fois l’évaluation Advanced eDiscovery terminée et que vous entrez dans l
 
 ## <a name="working-with-the-sample-files-list"></a>Travailler avec la liste d’exemples de fichiers
 
-La liste des exemples de fichiers vous permet d’afficher une liste des fichiers d’un exemple de formation et d’effectuer différentes actions sur un ou plusieurs fichiers. Dans **l’onglet** Balise de pertinence, le volet gauche des exemples de fichiers affiche une liste d’exemples de fichiers à traiter avec des processus d’évaluation, de formation, de rattrapage et \> d’incohérences.  
+La liste des exemples de fichiers vous permet d’afficher une liste des fichiers dans un exemple de formation et d’effectuer différentes actions sur un ou plusieurs fichiers. Dans **l’onglet** Balise de pertinence, le volet gauche des exemples de fichiers affiche une liste d’exemples de fichiers à traiter avec des processus d’évaluation, de formation, de rattrapage et \> d’incohérences.  
   
-1. Dans **l’onglet \> Balise de** pertinence, sélectionnez les exemples de fichiers dans la liste de listes de listes de gauche du volet. Les exemples de fichiers sont répertoriés dans le volet gauche.
+1. Dans **l’onglet \> Balise de** pertinence, sélectionnez les exemples de fichiers dans la liste de listes de listes listes de gauche du volet. Les exemples de fichiers sont répertoriés dans le volet gauche.
 
     ![Liste d’exemples de fichiers de balise de pertinence.](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
@@ -87,7 +87,7 @@ La liste des exemples de fichiers vous permet d’afficher une liste des fichier
 
    - Un clic sur une ligne de fichier affiche son contenu dans le volet droit.
 
-   - Naviguez entre les fichiers de l’exemple actuel à l’aide des options de barre de menus inférieure. En outre, des raccourcis clavier de navigation sont disponibles :
+   - Naviguez entre les fichiers de l’exemple actuel à l’aide des options de la barre de menus inférieure. En outre, des raccourcis clavier de navigation sont disponibles :
   
      - Pour aller au premier fichier de l’exemple : `Shift + Ctrl + <`
 

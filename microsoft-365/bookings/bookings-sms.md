@@ -6,18 +6,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment configurer les notifications par SMS pour les clients, les clients et les partenaires dans Microsoft Bookings.
-ms.openlocfilehash: 2b23ed2bd39cd301bfa1df3e15f325c676f1462d
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: be5d1d93754707be8217c5c3e17ec7d9f158e501
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491630"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204838"
 ---
 # <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>Configurer les notifications par SMS et les rappels dans Microsoft Bookings
 
-Avec Microsoft Bookings, vous pouvez configurer des notifications par SMS à envoyer à la personne qui a rendez-vous. Vous pouvez configurer des notifications PAR SMS dans Bookings dans l’application web Bookings ou l’application Bookings dans Teams. Les participants, clients ou partenaires peuvent également choisir d’obtenir ou non des notifications PAR SMS sur la page de réservation libre-service. Ils peuvent également refuser de recevoir des notifications PAR SMS en répondant **à STOP** à l’expéditeur.
+Avec Microsoft Bookings, vous pouvez configurer des notifications par SMS à envoyer à la personne qui a rendez-vous. Vous pouvez configurer des notifications PAR SMS dans Bookings dans l’application web Bookings ou l’application Bookings dans Teams. Les participants, clients ou partenaires peuvent également choisir d’obtenir ou non des notifications PAR SMS sur la page de réservation en libre-service. Ils peuvent également refuser de recevoir des notifications PAR SMS en répondant **à STOP** à l’expéditeur.
 
 Les notifications PAR SMS incluent le lien Teams réunion pour les rendez-vous de réservation virtuels.
 
@@ -49,7 +49,7 @@ Vous pouvez suivre les données clés sur l’utilisation des notifications PAR 
 
     :::image type="content" source="../media/analytics-reporting.png" alt-text="Screenshot: SMS text notifications Analytics and reporting page in the Teams admin center":::
 
-Contenu connexe
+Contenu associé
 
 [Microsoft Bookings](bookings-overview.md)\
 [Activer ou désactiver Microsoft Bookings](turn-bookings-on-or-off.md)\

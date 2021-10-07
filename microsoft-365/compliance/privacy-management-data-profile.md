@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la vue d’ensemble et le profil de données dans la gestion de la confidentialité et découvrez comment obtenir des informations sur les données personnelles dans l’environnement Microsoft 365 de votre organisation.
-ms.openlocfilehash: 2d0b72aff73649ff4a34952de5a915dcd28dc670
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 058ca5253b034a409aa1fe994f9c8258fb99e1e0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480591"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206036"
 ---
 # <a name="find-and-visualize-personal-data-in-privacy-management-preview"></a>Rechercher et visualiser des données personnelles dans la gestion de la confidentialité (aperçu)
 
@@ -29,7 +29,7 @@ Microsoft 365 gestion de la confidentialité vous offre des fonctionnalités pou
 
 ### <a name="overview-page"></a>Page Vue d’ensemble
 
-La page Vue d’ensemble sert de tableau de bord global pour la solution de gestion de la confidentialité, qui présente des informations dynamiques sur l’écosystème de données personnelles de votre organisation. Les administrateurs de confidentialité peuvent surveiller les tendances et les activités des données, identifier et examiner les risques potentiels sur les données personnelles et se baser sur des activités clés telles que la gestion des stratégies ou les actions de demande de droits de l’objet. Pour plus d’informations sur la page vue d’ensemble, voir [Explorer la page vue d’ensemble.](#explore-the-overview-page)
+La page Vue d’ensemble sert de tableau de bord global pour la solution de gestion de la confidentialité, qui présente des informations dynamiques sur l’écosystème de données personnelles de votre organisation. Les administrateurs de confidentialité peuvent surveiller les tendances et les activités des données, identifier et examiner les risques potentiels sur les données personnelles et se baser sur des activités clés telles que la gestion des stratégies ou les actions de demande de droits de l’objet. Pour plus d’informations sur la page vue d’ensemble, voir [Explorer la page de vue d’ensemble.](#explore-the-overview-page)
 
 ### <a name="data-profile-page"></a>Page de profil de données
 
@@ -51,7 +51,7 @@ Pour voir les fonctionnalités de découverte automatisée de la solution de ges
 
 #### <a name="subject-rights-requests"></a>Demandes de droits de l’objet
 
-Les principales vignettes de la page de vue d’ensemble comprennent deux vignettes liées aux demandes de droits de l’objet. La première indique le nombre de demandes créées au cours des sept derniers jours. La deuxième vignette mesure les demandes en retard et peut avoir besoin d’une attention immédiate. Le fait de cliquer sur ces vignettes permet aux utilisateurs ayant les autorisations appropriées d’accès à la page de demande de droits de l’objet de la gestion de la confidentialité.
+Les vignettes principales de la page de vue d’ensemble incluent deux vignettes liées aux demandes de droits de l’objet. La première indique le nombre de demandes créées au cours des sept derniers jours. La deuxième vignette mesure les demandes en retard et peut avoir besoin d’une attention immédiate. Le fait de cliquer sur ces vignettes permet aux utilisateurs ayant les autorisations appropriées d’accès à la page de demande de droits de l’objet de la gestion de la confidentialité.
 
 ### <a name="key-insights"></a>Informations clés
 
@@ -63,9 +63,9 @@ Sélectionnez Afficher le résumé pour un affichage récapitulatif des élémen
 
 #### <a name="policies-with-the-most-matches-in-the-last-week"></a>Stratégies ayant le plus de correspondances au cours de la semaine dernière
 
-Cet aperçu présente les stratégies les plus fréquemment mise en correspondance au cours des sept derniers jours, que ce soit en mode « On » ou « Testing ». Cela permet d’illustrer à la fois les performances de vos stratégies et les effets du travail en cours lorsque vos utilisateurs de gestion de la confidentialité reçoivent une formation et sont habilités à résoudre les problèmes de contenu et à affiner leurs comportements de confidentialité.
+Cet aperçu présente les stratégies qui ont été les plus fréquemment mise en correspondance au cours des sept derniers jours, que ce soit en mode « On » ou « Testing ». Cela permet d’illustrer à la fois les performances de vos stratégies et les effets du travail en cours lorsque vos utilisateurs de gestion de la confidentialité reçoivent une formation et sont habilités à résoudre les problèmes de contenu et à affiner leurs comportements de confidentialité.
 
-Sélectionnez Afficher le résumé pour un résumé des 10 principales stratégies associées et des propriétaires de contenu du contenu associé. Vous verrez également le nombre de notifications utilisateur envoyées en raison de ces correspondances de stratégie et le nombre d’actions entreprises par l’utilisateur. Sélectionnez Examiner pour afficher la page des stratégies dans la gestion de la confidentialité, filtrée pour afficher les stratégies dans l’affichage récapitulatif. Cette vue d’investigation affiche des statistiques pour la durée de vie complète de la stratégie. Sélectionnez-le pour voir des détails tels que le moment où les éléments qui ont été détectés ont été détectés initialement.
+Sélectionnez Afficher le résumé pour un résumé des 10 principales stratégies associées et des propriétaires de contenu du contenu associé. Vous verrez également le nombre de notifications utilisateur envoyées en raison de ces correspondances de stratégie et le nombre d’actions entreprises par l’utilisateur. Sélectionnez Examiner pour afficher la page des stratégies dans la gestion de la confidentialité, filtrée pour afficher les stratégies dans l’affichage récapitulatif. Cette vue d’investigation affiche des statistiques pour la durée de vie complète de la stratégie. Sélectionnez-le pour voir des détails tels que la détection initiale des éléments qui correspondent.
 
 #### <a name="users-with-the-most-policy-matched-in-the-last-week"></a>Utilisateurs ayant le plus de correspondances de stratégie au cours de la semaine dernière
 
@@ -73,7 +73,7 @@ Cette information traite également des correspondances à partir de stratégies
 
 #### <a name="items-with-the-most-data-subject-content"></a>Éléments ayant le plus de contenu de sujet de données
 
-Cet aperçu concerne les informations de la fonctionnalité de correspondance des données dans les demandes de droits de l’objet et présente les éléments découverts dans les Microsoft 365 qui contiennent le plus de sujets de données dans leur contenu. Pour en savoir plus sur ce paramètre, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
+Cet aperçu concerne les informations de la fonctionnalité de correspondance des données dans les demandes de droits de l’objet et présente les éléments découverts au sein de Microsoft 365 qui contiennent le plus de sujets de données dans leur contenu. Pour en savoir plus sur ce paramètre, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
 
 Ces éléments peuvent vous aider à confirmer votre configuration de correspondance de données et à atténuer les risques de confidentialité liés à ces éléments. Sélectionnez Afficher le résumé pour un affichage récapitulatif. Sélectionnez Explorer pour obtenir une vue détaillée de 100 de ces éléments au plus. Ici, vous pouvez afficher un aperçu de ces éléments et déterminer la pertinence et exporter la liste au .csv format.
 
@@ -105,17 +105,17 @@ Ce graphique est lié aux stratégies de surexpossure des données. Il peut vous
 
 #### <a name="subject-rights-requests-by-regulation"></a>Demandes de droits d’objet par réglementation
 
-Cet affichage fournit des informations sur les réglementations les plus répandues qui pilotent vos demandes de droits d’objet au fil du temps. La légende de ce graphique illustre les différentes réglementations. Le fait de pointer sur les lignes de tendance indique le nombre total de demandes de droits d’objet ouvertes pour cette réglementation pendant l’heure sélectionnée.
+Cette vue fournit des informations sur les réglementations qui pilotent le plus vos demandes de droits d’objet au fil du temps. La légende de ce graphique illustre les différentes réglementations. Le fait de pointer sur les lignes de tendance indique le nombre total de demandes de droits d’objet ouvertes pour cette réglementation pendant l’heure sélectionnée.
 
 #### <a name="subject-rights-requests-by-status"></a>Demandes de droits de l’objet par état
 
-Ce graphique indique comment votre organisation se porte sur l’exécution des demandes de droits d’objet, décomposées en demandes actives, fermées ou en retard. Les résultats de cette recherche peuvent vous aider à indiquer où vous pouvez tirer parti de l’allocation de ressources supplémentaires pour fermer vos demandes et vos objectifs de réunion.
+Ce graphique montre comment votre organisation se porte sur l’exécution des demandes de droits de l’objet, décomposées en demandes actives, fermées ou en retard. Les résultats de cette recherche peuvent vous aider à indiquer où vous pouvez tirer parti de l’allocation de ressources supplémentaires pour fermer vos demandes et vos objectifs de réunion.
 
 ### <a name="additional-data-views"></a>Affichages de données supplémentaires
 
 #### <a name="subject-rights-requests-at-a-glance"></a>Demandes de droits de l’objet en un coup d’œil
 
-Cette vue fournit une vue d’ensemble des demandes de droits de l’objet actives, y compris le temps restant à effectuer les demandes à l’échéance définie. Il récapitule le nombre total de demandes dont vous avez, le nombre d’entre elles sont actives et le nombre de demandes fermées. Sélectionnez Afficher toutes les demandes pour aller à la page de demande des droits de l’objet, où vous pouvez afficher d’autres détails et travailler sur les demandes actives pour les faire passer à la fin.
+Cette vue fournit une vue d’ensemble des demandes de droits de sujet actives, y compris le temps restant à effectuer les demandes à l’échéance définie. Il récapitule le nombre total de demandes dont vous avez, le nombre d’entre elles sont actives et le nombre de demandes fermées. Sélectionnez Afficher toutes les demandes pour aller à la page de demande des droits de l’objet, où vous pouvez afficher d’autres détails et travailler sur les demandes actives pour les faire passer à la fin.
 
 #### <a name="subject-rights-requests-by-residency"></a>Demandes de droits d’objet par résidence
 
@@ -127,7 +127,7 @@ Cet affichage de carte vous permet de visualiser votre volume de demandes de dro
 
 Cette vignette vous permet de visualiser la quantité de données personnelles présentes dans votre environnement Microsoft 365 et la façon dont ces données sont distribuées entre Exchange, OneDrive, SharePoint et Teams.
 
-Le graphique à barres indique le nombre approximatif d’instances de type de données personnelles uniques trouvées dans votre contenu. Des exemples de types de données peuvent inclure des éléments tels que des numéros de carte de crédit et des numéros de sécurité sociale. Par conséquent, un fichier découvert qui contient trois numéros de carte de crédit et un numéro de sécurité sociale contiendrait deux types de données personnelles uniques et quatre instances. La partie inférieure de cette vignette affiche les types de données personnelles uniques dans chaque Microsoft 365 emplacement. Il offre une vue d’ensemble de la diversité des types de données personnelles détectés dans le contenu de votre organisation.
+Le graphique à barres indique le nombre approximatif d’instances de type de données personnelles uniques trouvées dans votre contenu. Des exemples de types de données peuvent inclure des éléments tels que des numéros de carte de crédit et des numéros de sécurité sociale. Par conséquent, un fichier découvert qui contient trois numéros de carte de crédit et un numéro de sécurité sociale contiendrait deux types de données personnelles uniques et quatre instances. La partie inférieure de cette vignette affiche les types de données personnelles uniques dans chaque Microsoft 365'emplacement. Il offre une vue d’ensemble de la diversité des types de données personnelles détectés dans le contenu de votre organisation.
 
 ### <a name="top-personal-data-types-across-your-organization"></a>Principaux types de données personnelles au sein de votre organisation
 
@@ -139,4 +139,4 @@ Pour les environnements multigé géographiques, cette vignette regroupe au nive
 
 ### <a name="exploring-content"></a>Exploration de contenu
 
-La sélection **d’Explorer** sur n’importe quelle vignette de profil de données ouvre l’explorateur de contenu. Pour l’instant, vous ne pouvez pas rechercher un élément de contenu spécifique et vous ne verrez pas Teams données dans cet affichage. Cela signifie que les nombres dans l’explorateur de contenu peuvent ne pas correspondre aux nombres affichés sur la page de profil de données, étant donné que la page de profil de données Teams contenu. Les administrateurs de confidentialité qui souhaitent obtenir des informations supplémentaires sur leurs données de confidentialité peuvent le faire ici en fonction du type de données personnelles (type d’informations sensibles) ou de l’emplacement (Exchange, OneDrive ou SharePoint).
+Si vous **sélectionnez Explorer** sur n’importe quelle vignette de profil de données, l’explorateur de contenu s’ouvre. Pour l’instant, vous ne pouvez pas rechercher un élément de contenu spécifique et vous ne verrez pas Teams données dans cet affichage. Cela signifie que les nombres dans l’explorateur de contenu peuvent ne pas correspondre aux nombres affichés sur la page de profil de données, étant donné que la page de profil de données Teams contenu. Les administrateurs de confidentialité qui souhaitent obtenir des informations supplémentaires sur leurs données de confidentialité peuvent le faire ici en fonction du type de données personnelles (type d’informations sensibles) ou de l’emplacement (Exchange, OneDrive ou SharePoint).

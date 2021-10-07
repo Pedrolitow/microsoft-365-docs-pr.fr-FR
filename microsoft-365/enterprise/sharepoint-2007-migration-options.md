@@ -7,7 +7,7 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations pour les utilisateurs qui utilisent SharePoint Server 2007 pour les aider à planifier leur mise à niveau.
-ms.openlocfilehash: 38c4713b7dfb705c99d970c5f68a37b031c951a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9f374e3e4f2282a7740575c60eb52e7095321c92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202103"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210196"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint options de migration 2007 à prendre en compte
 
@@ -77,11 +77,11 @@ Les méthodes telles que « côte à côte » sont importantes dans le schéma d
   
 1. Vous pouvez sauvegarder vos bases de données Microsoft Office SharePoint Server 2007 pour les mettre à niveau séparément, à l’aide de l’attachement de base de données.
     
-2. Si vous vous rendez compte qu’un petit nombre de bibliothèques de documents critiques et d’autres informations sont en cours d’utilisation sur votre batterie de serveurs Microsoft Office SharePoint Server 2007, vous pouvez choisir de déplacer manuellement les données de Microsoft Office SharePoint Server 2007 vers SharePoint Server 2010, ou d’effectuer uniquement des sites et des sites web spécifiques vers la version suivante (ce qui peut faciliter votre travail).
+2. Si vous savez qu’un petit nombre de bibliothèques de documents critiques et d’autres informations sont en cours d’utilisation sur votre batterie de serveurs Microsoft Office SharePoint Server 2007, vous pouvez choisir de déplacer manuellement des données de Microsoft Office SharePoint Server 2007 vers SharePoint Server 2010, ou d’utiliser uniquement sites et sites web spécifiques vers la version suivante (ce qui peut faciliter votre travail).
     
 3. Moins vous faites pour la batterie de serveurs Microsoft Office SharePoint Server 2007, plus les données que contient la batterie de serveurs sont sûres au cours de la mise à niveau.
     
-Les méthodes telles que la mise à niveau In-Place agissent directement sur votre batterie de serveurs Microsoft Office SharePoint Server 2007, ce qui vous offre moins d’options faciles pour abandonner un chemin d’accès et recommencer avec votre environnement d’environnement. Dans la mesure du possible, créez certaines mesures de sécurité (par exemple, prendre et tester des sauvegardes de l’environnement d’origine). Par exemple, si votre batterie de serveurs Microsoft Office SharePoint Server 2007 est virtuelle et est dupliquée à des fins de sauvegarde et de restauration, sauvegardez et restituer les bases de données les plus à jour avant votre fenêtre de service pour la mise à niveau. Le fait de savoir que vous avez la possibilité de restaurer des sauvegardes de base de données ne vous donnera pas seulement une sécurité d’échec, mais peut vous donner l’esprit.
+Les méthodes telles que la mise à niveau In-Place agissent directement sur votre batterie de serveurs Microsoft Office SharePoint Server 2007, ce qui vous offre moins d’options faciles pour abandonner un chemin d’accès et recommencer avec votre environnement d’environnement. Dans la mesure du possible, créez certaines mesures de sécurité (par exemple, prendre et tester des sauvegardes de l’environnement d’origine). Par exemple, si votre batterie de serveurs Microsoft Office SharePoint Server 2007 est virtuelle et est dupliquée à des fins de sauvegarde et de restauration, sauvegardez et restituer les bases de données les plus actuelles avant votre fenêtre de service pour la mise à niveau. Le fait de savoir que vous avez la possibilité de restaurer des sauvegardes de base de données ne vous donnera pas seulement une sécurité d’échec, mais peut vous donner l’esprit.
   
 > [!TIP]
 > Les documents de meilleures pratiques pour la mise à niveau existent pour [Microsoft Office SharePoint Server 2007,](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)) [SharePoint Server 2010,](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14)) [SharePoint Server 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)et [SharePoint Server 2016.](/SharePoint/upgrade-and-update/best-practices-for-upgrade) Vous pouvez également rechercher des [partenaires Microsoft qui](https://partnercenter.microsoft.com/pcv/search) ont de l’expérience avec les mises à niveau ou Microsoft 365 migrations. 

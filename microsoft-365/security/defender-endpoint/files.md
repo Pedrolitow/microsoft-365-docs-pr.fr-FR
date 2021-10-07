@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9dffc5d2b7badba0a2f0e0b986973841ad488683
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4e7cbc65971c2f916d362e6a997d73e5581c9022
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209113"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205498"
 ---
 # <a name="file-resource-type"></a>Type de ressource Fichier
 
@@ -42,7 +42,7 @@ Représente une entité de fichier dans Defender pour le point de terminaison.
 
 Méthode|Type renvoyé |Description
 :---|:---|:---
-[Obtenir un fichier](get-file-information.md) | [fichier](files.md) | Obtenir un fichier unique 
+[Obtenir un fichier](get-file-information.md) | [file](files.md) | Obtenir un fichier unique 
 [Liste des alertes associées au fichier](get-file-related-alerts.md) | collection[alert](alerts.md) | Obtenez les [entités](alerts.md) d’alerte associées au fichier.
 [List file related machines](get-file-related-machines.md) | [collection d’ordinateurs](machine.md) | Obtenez les [entités de](machine.md) l’ordinateur associées à l’alerte.
 [statistiques de fichier](get-file-statistics.md) | Résumé des statistiques | Récupère la prévalence du fichier donné.
@@ -58,14 +58,14 @@ Méthode|Type renvoyé |Description
 |globalFirstObserved | DateTimeOffset | Première observation du fichier |
 |globalLastObserved | DateTimeOffset | Dernière observation du fichier |
 |taille | Nullable long | Taille du fichier |
-|fileType | String | Type du fichier |
-|isPeFile | Boolean | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
+|fileType | Chaîne | Type du fichier |
+|isPeFile | Booléen | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
 |filePublisher | Chaîne | Éditeur de fichiers |
-|fileProductName | String | Nom du produit |
+|fileProductName | Chaîne | Nom du produit |
 |signataire | String | Signataire de fichiers |
 |émetteur | Chaîne | Émetteur de fichier |
 |signerHash | String | Hachage du certificat de signature |
-|isValidCertificate | Boolean | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
+|isValidCertificate | Booléen | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
 |determinationType | String | Type de détermination du fichier |
 |determinationValue | Chaîne | Valeur de détermination |
 

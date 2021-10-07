@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae2e7fb960dd8ce2a42ce62fe0b8da7675e00ce5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 44f7ebba62f4c21ab3ad4cb55f0ca70302857d33
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181024"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206696"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -44,7 +44,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
 
 ## <a name="general-optimization-tips"></a>Conseils généraux d’optimisation
 
-- **Dimensioniser les nouvelles requêtes**— Si vous pensez qu’une requête retournera un jeu de résultats important, évaluez-la d’abord à l’aide de [l’opérateur de nombre.](/azure/data-explorer/kusto/query/countoperator) Utilisez [limit](/azure/data-explorer/kusto/query/limitoperator) ou son synonyme pour éviter les `take` jeux de résultats importants.
+- **Dimensionnez les nouvelles requêtes**— Si vous pensez qu’une requête retournera un jeu de résultats important, évaluez-la d’abord à l’aide de [l’opérateur de nombre.](/azure/data-explorer/kusto/query/countoperator) Utilisez [limit](/azure/data-explorer/kusto/query/limitoperator) ou son synonyme pour éviter les `take` jeux de résultats importants.
 - Appliquer des filtres tôt — Appliquer des filtres de temps et d’autres filtres pour réduire le jeu de données, en particulier avant d’utiliser des fonctions de transformation et d’analyse, telles que sous-string() , [replace()](/azure/data-explorer/kusto/query/replacefunction), [](/azure/data-explorer/kusto/query/substringfunction) [trim()](/azure/data-explorer/kusto/query/trimfunction), [toupper()](/azure/data-explorer/kusto/query/toupperfunction)ou [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Dans l’exemple ci-dessous, la fonction d’recherche [extractjson()](/azure/data-explorer/kusto/query/extractjsonfunction) est utilisée après que les opérateurs de filtrage ont réduit le nombre d’enregistrements.
 
     ```kusto
@@ -127,7 +127,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
 
 - **Utiliser des conseils pour les performances**: utilisez des conseils avec l’opérateur pour indiquer au système backend de répartir la charge lors de l’exécution d’opérations qui utilisent beaucoup `join` de ressources. [En savoir plus sur les conseils d’adhésion](/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
-    Par exemple, **[](/azure/data-explorer/kusto/query/shufflequery)** le conseil de mélange permet d’améliorer les performances des requêtes lors de la jointation de tables à l’aide d’une clé avec une cardinalité élevée (clé avec de nombreuses valeurs uniques), comme dans la requête ci-dessous `AccountObjectId` :
+    Par exemple, le conseil **[de](/azure/data-explorer/kusto/query/shufflequery)** mélange permet d’améliorer les performances des requêtes lors de la jointation de tables à l’aide d’une clé avec une cardinalité élevée (clé avec de nombreuses valeurs uniques), comme dans la requête ci-dessous `AccountObjectId` :
 
     ```kusto
     IdentityInfo
@@ -150,7 +150,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
 ## <a name="optimize-the-summarize-operator"></a>Optimiser `summarize` l’opérateur
 [L’opérateur de synthèse](/azure/data-explorer/kusto/query/summarizeoperator) agrège le contenu d’un tableau. Appliquez ces conseils pour optimiser les requêtes qui utilisent cet opérateur.
 
-- **Rechercher des valeurs distinctes**: en général, utilisez cette recherche pour `summarize` trouver des valeurs distinctes qui peuvent être répétitives. Il peut être inutile de l’utiliser pour agréger des colonnes qui n’ont pas de valeurs répétitives.
+- **Rechercher des valeurs distinctes**: en général, utilisez cette recherche pour `summarize` rechercher des valeurs distinctes qui peuvent être répétitives. Il peut être inutile de l’utiliser pour agréger des colonnes qui n’ont pas de valeurs répétitives.
 
     Bien qu’un seul e-mail puisse faire  partie de plusieurs événements, l’exemple ci-dessous n’est pas une utilisation efficace, car un ID de message réseau pour un message électronique individuel est toujours fourni avec une adresse d’expéditeur `summarize` unique.
 
@@ -174,7 +174,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
     | summarize by SenderFromAddress, RecipientEmailAddress
     ```
 
-- **Mélangez la requête .** Bien qu’il soit préférable d’utiliser les colonnes avec des valeurs répétitives, les mêmes colonnes peuvent également avoir une cardinalité élevée ou un grand nombre `summarize` de valeurs uniques.  Comme l’opérateur, vous pouvez également appliquer le conseil de mélange avec pour répartir la charge de traitement et potentiellement améliorer les performances lorsque vous fonctionnez sur des colonnes avec `join` une [](/azure/data-explorer/kusto/query/shufflequery) `summarize` cardinalité élevée.
+- **Mélangez la requête —** Bien qu’il soit préférable d’utiliser les colonnes avec des valeurs répétitives, les mêmes colonnes peuvent également avoir une cardinalité élevée ou un grand nombre `summarize` de valeurs uniques.  Comme l’opérateur, vous pouvez également appliquer le conseil de mélange avec pour répartir la charge de traitement et potentiellement améliorer les performances lorsque vous fonctionnez sur des colonnes avec `join` une [](/azure/data-explorer/kusto/query/shufflequery) `summarize` cardinalité élevée.
 
     La requête ci-dessous permet de compter des adresses de messagerie de destinataire distinctes, qui peuvent s’exécuter par centaines de `summarize` milliers dans les grandes organisations. Pour améliorer les performances, elle intègre `hint.shufflekey` :
 
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>Parse strings
 Il existe différentes fonctions que vous pouvez utiliser pour gérer efficacement les chaînes qui doivent être traitées ou converties.
 
-| Chaîne | Fonction | Exemple d'utilisation |
+| String | Fonction | Exemple d'utilisation |
 |--|--|--|
 | Lignes de commande | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extraire la commande et tous les arguments. |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extraire les sections d’un chemin d’accès à un fichier ou un dossier. |

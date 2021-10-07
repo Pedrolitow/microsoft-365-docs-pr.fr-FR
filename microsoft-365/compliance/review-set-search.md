@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser le contenu pour une révision plus efficace dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4e4d2603cc9f26925b65ebeb654ad366d245e8e8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f1f7fa8f811f5a2bda526454ae8b03163cfed187
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202319"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206060"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
 
@@ -67,7 +67,7 @@ Développez chaque section et sélectionnez ou désélectionnez des filtres pour
 > [!NOTE]
 > Lorsque vous développez une section dans le panneau de filtrage, vous remarquerez que les types de filtres par défaut sont sélectionnés. Vous pouvez conserver ces éléments sélectionnés ou les désélectionner et les supprimer du jeu de filtres. 
 
-## <a name="filter-types"></a>Types de filtre
+## <a name="filter-types"></a>Types de filtres
 
 Chaque champ utilisable dans une recherche dans un jeu à réviser possède un filtre correspondant que vous pouvez utiliser pour filtrer des éléments en fonction d’un champ spécifique.
 

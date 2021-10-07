@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les rapports de flux
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a049a0d78bff8b86c84e89f616662e00f984c778
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: ab85d7825d7ecda7abf58391cb400e10692d5821
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484130"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203878"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord Rapports du Centre de sécurité & conformité
 
@@ -41,7 +41,7 @@ ms.locfileid: "59484130"
 > - [Rapports de flux de messagerie dans le nouveau centre Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)
 
-Outre les rapports de flux de [](mail-flow-insights-v2.md) messagerie disponibles dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité, plusieurs rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord Rapports pour vous aider à surveiller votre organisation Microsoft 365.
+Outre les rapports de flux de [](mail-flow-insights-v2.md) messagerie disponibles dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité, plusieurs rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord Rapports pour vous aider à surveiller votre organisation Microsoft 365.
 
 Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité [& conformité](https://protection.office.com) en allant au Tableau de bord **des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
@@ -60,7 +60,7 @@ Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https
 
 ![Exchange widget de règle de transport dans le tableau de bord Rapports.](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Affichage du rapport pour le rapport Exchange règles de transport
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Affichage du rapport pour le rapport Exchange règle de transport
 
 Les graphiques suivants sont disponibles en affichage état :
 
@@ -68,7 +68,7 @@ Les graphiques suivants sont disponibles en affichage état :
 
 - **Afficher les données par : Exchange transport** \> **Décomposez par : Gravité :** ce  graphique affiche le nombre de messages de gravité élevée, moyenne et **faible.** Vous définissez le niveau de gravité en tant qu’action dans la règle (**Auditez** cette règle avec le niveau de gravité _ou SetAuditSeverity_). Pour plus d’informations, voir [Actions de règle de flux](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)de messagerie dans Exchange Online .
 
-- Afficher les données par : règles de transport **Exchange DLP** \> **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport de protection contre la perte de données (DLP). Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
+- **Afficher les données par : règles de transport Exchange DLP** \> **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport de protection contre la perte de données (DLP). Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
 
   - **Afficher les données pour : toutes les règles de transport DLP**
   - **Afficher les données pour : utilisateurs compromis**
@@ -92,11 +92,11 @@ Si vous cliquez **sur Filtres** dans un affichage de rapport, vous pouvez modifi
 
 Si vous cliquez sur Afficher le tableau des **détails,** les informations affichées dépendent du graphique que vous regardiez :
 
-- **Afficher les données par : Exchange transport :**
+- **Afficher les données par : Exchange de transport**:
 
   - **Date**
   - **Règle de transport**
-  - **Sujet**
+  - **Subject**
   - **Adresse de l’expéditeur**
   - **Adresse du destinataire**
   - **Gravité**
@@ -107,7 +107,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
   - **Date**
   - **Stratégie DLP**
   - **Règle de transport**
-  - **Sujet**
+  - **Subject**
   - **Adresse de l’expéditeur**
   - **Adresse du destinataire**
   - **Gravité**
@@ -128,8 +128,8 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
 ## <a name="mailflow-status-report"></a>Rapport d’état du flux de messagerie
 
-Le **rapport d’état du** flux de messagerie est similaire au rapport de courrier électronique envoyé et reçu, avec des informations supplémentaires sur le courrier électronique autorisé ou bloqué sur le edge. [](#sent-and-received-email-report) Il s’agit du seul rapport qui contient des informations sur la protection edge et qui indique la quantité de messages électroniques bloqués avant d’être autorisé à entrer dans le service pour évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
-Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports et sélectionnez Rapport d’état du \>  flux **de messagerie.** Pour aller directement au rapport d’état du **flux de messagerie,** ouvrez <https://protection.office.com/mailflowStatusReport> .
+Le **rapport d’état du** flux de messagerie est similaire au rapport de courrier électronique envoyé et reçu, avec des informations supplémentaires sur le courrier électronique autorisé ou bloqué sur le edge. [](#sent-and-received-email-report) Il s’agit du seul rapport qui contient des informations sur la protection edge et qui indique la quantité de messages électroniques bloqués avant d’être autorisé dans le service pour évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
+Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)allez au tableau de bord rapports et sélectionnez Rapport d’état du \>  flux **de messagerie.** Pour aller directement au rapport d’état du **flux de messagerie,** ouvrez <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget de rapport d’état du flux de messagerie dans le tableau de bord Rapports.](../../media/mail-flow-status-report-widget.png)
 
@@ -146,7 +146,7 @@ Lorsque vous ouvrez l’état, **l’onglet Type** est sélectionné par défaut
 
 - **Tapez**:
 
-  - **Bon courrier**
+  - **Courrier électronique de qualité**
   - **Programme malveillant**
   - **Courrier indésirable**
   - **Protection Edge**
@@ -165,7 +165,7 @@ La table de données contient les informations suivantes :
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
 Si vous cliquez **sur Choisir une catégorie pour plus d’informations,** vous pouvez sélectionner l’une des valeurs suivantes :
 
@@ -204,7 +204,7 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de c
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Affichage en entonnoir pour le rapport d’état du flux de messagerie
 
-La **vue Entonnoir** vous montre comment les fonctionnalités de protection contre les menaces de courrier électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Il fournit des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, y compris la protection edge, la protection contre les programmes malveillants, l’anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’accès affectent ce nombre.
+La **vue Entonnoir** vous montre comment les fonctionnalités de protection contre les menaces de courrier électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Il fournit des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, y compris la protection edge, les logiciels anti-programme malveillant, l’anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’accès affectent ce nombre.
 
 Si vous  cliquez sur l’onglet Entonnoir, par défaut, cet affichage contient un graphique et une table de données configurés avec les filtres suivants :
 
@@ -223,8 +223,8 @@ Si vous cliquez **sur Filtre,** vous pouvez filtrer le graphique et la table de 
 Ce graphique indique le nombre de messages électroniques organisés par :
 
 - **Nombre total de messages électroniques**
-- **Courrier électronique après protection edge**
-- **Courrier électronique après anti-programme malveillant, réputation du fichier, bloc de type de fichier**
+- **E-mail après protection edge**
+- **Courrier électronique après anti-programme malveillant, réputation de fichier, bloc de type de fichier**
 - **Courrier électronique après anti-hameçonnage, réputation d’URL, emprunt d’identité de marque, anti-usurpation d’identité**
 - **Courrier électronique après filtrage du courrier indésirable en bloc**
 - **Courrier électronique après l’emprunt d’identité d’utilisateur et de**<sup>domaine 1</sup>
@@ -322,7 +322,7 @@ Si vous sélectionnez une ligne dans la table de données, une répartition supp
 
 **Exporter**:
 
-En cliquant sur **Exporter,** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
+En cliquant **sur Exporter,** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
 
 - **Résumé (avec des données pour les 90 derniers jours au maximum)**
 - **Détails (avec des données pour les 30 derniers jours au maximum)**
@@ -360,7 +360,7 @@ La composition du graphique en secteurs change en fonction de ces sélections.
 
 Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nombre de messages envoyés ou reçus.
 
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
+Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 ![Graphique en secteurs en affichage Rapport dans le rapport Des principaux expéditeurs et destinataires.](../../media/top-senders-and-recipients-report-view.png)
 
@@ -390,7 +390,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
 
 - **Afficher les données \> des principaux destinataires de programmes malveillants (Defender pour Office 365)**
 
-  - **Principaux destinataires de programmes malveillants (Defender pour Office 365)**
+  - **Principaux destinataires des programmes malveillants (Defender pour Office 365)**
   - **Count**
 
 Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
@@ -411,7 +411,7 @@ Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de
 > [!NOTE]
 > L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises dans le centre de sécurité et de conformité _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
 
@@ -419,4 +419,4 @@ Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
 
-[Afficher des rapports pour Microsoft Defender pour Office 365](view-reports-for-mdo.md)
+[Afficher les rapports de Microsoft Defender pour Office 365](view-reports-for-mdo.md)

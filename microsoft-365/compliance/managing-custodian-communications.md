@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale en avertissant les dépositaires dans le cadre d’enquêtes juridiques.
-ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d29b3af8efe83e0f4ce02979142587c61807b9cd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179868"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189368"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Travailler avec les communications dans Advanced eDiscovery
 
@@ -39,7 +39,7 @@ Avec Advanced eDiscovery, les équipes juridiques peuvent créer et personnalise
 
 1. **Avis d’émission :** Une notification de conservation légale est émise (ou initiée) par une notification du service juridique aux dépositaires qui peuvent avoir des informations pertinentes sur le cas. Cet avis enjoint aux consignataires de conserver les informations qui peuvent être nécessaires à la découverte.
 
-2. **Avis de ré-émission :** Dans un cas, les dépositaires peuvent être tenus de conserver du contenu supplémentaire (ou moins de contenu) que ce qui a été demandé précédemment. Pour ce scénario, vous pouvez mettre à jour l’avis de conservation existant et le ré-émettre aux dépositaires.
+2. **Avis de réé émission :** Dans un cas, les dépositaires peuvent être tenus de conserver du contenu supplémentaire (ou moins de contenu) que ce qui a été demandé précédemment. Pour ce scénario, vous pouvez mettre à jour l’avis de conservation existant et le ré-émettre aux dépositaires.
 
 3. **Avis de publication :** Une fois qu’un problème est résolu et que le dépositaire n’est plus soumis à une obligation de conservation, le dépositaire peut être libéré du cas. En outre, vous pouvez informer le dépositaire qu’il n’est plus tenu de conserver le contenu et fournir des instructions sur la façon de reprendre son activité de travail normale en ce qui concerne ses données.
 

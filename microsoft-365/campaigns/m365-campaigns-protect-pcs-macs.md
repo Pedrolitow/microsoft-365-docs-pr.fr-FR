@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Protégez les appareils BYOD (ByOD) non utilisés ou apportez-les avec Microsoft 365.
-ms.openlocfilehash: 40e94e2f961ab34827de4ce5e43e100af53a7340
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Protégez les appareils BYOD (ByOD) non utilisés ou apportez-les à l’Microsoft 365.
+ms.openlocfilehash: 0f14112356313dcbad56f5a78bd2c837987d234f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208171"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204754"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protéger les PC Windows 10 et les Mac non gérés
 
@@ -63,13 +63,13 @@ Windows Update télécharge automatiquement les mises à jour de sécurité Win
 
 Si vous avez une version antérieure de Windows et que vous utilisez Microsoft Security Essentials, il est bon de passer à Sécurité Windows. Pour plus d’informations, [voir l’aide pour protéger mon appareil avec Sécurité Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
-**Activer le pare-feu Windows de sécurité**<p>
+**Activer le Pare-feu Windows**<p>
 Vous devez toujours exécuter Windows pare-feu même si un autre pare-feu est allumé. La dés Windows pare-feu peut rendre votre appareil (et votre réseau, si vous en avez un) plus vulnérable aux accès non autorisés. Pour [plus d’Windows, voir](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) Activer ou désactiver le pare-feu.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
 **Utiliser FileVault pour chiffrer votre disque Mac**<p>
-Le chiffrement de disque protège les données en cas de perte ou de vol d’appareils. Le chiffrement de disque intégral FileVault permet d’empêcher l’accès non autorisé aux informations sur votre disque de démarrage. Voir [utiliser FileVault pour chiffrer le disque de démarrage sur votre Mac pour](https://support.apple.com/HT204837) obtenir des instructions.
+Le chiffrement de disque protège les données en cas de perte ou de vol d’appareils. Le chiffrement de disque intégral FileVault permet d’empêcher l’accès non autorisé aux informations sur votre disque de démarrage. Voir [utiliser FileVault pour chiffrer le disque de démarrage sur votre Mac](https://support.apple.com/HT204837) pour obtenir des instructions.
 
 **Protéger votre mac contre les programmes malveillants**<p>
 Microsoft vous recommande d’installer et d’utiliser des logiciels antivirus fiables sur votre Mac. Consultez l’article suivant pour obtenir la liste des choix : [Best Mac antivirus 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).

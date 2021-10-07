@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b7b8f6ad115ae5fadfd993f51d1427f02d181028
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 9a71a641940be6b3acd3fbf6070ec907299c15ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490188"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209972"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et signaler les Antivirus Microsoft Defender
 
@@ -67,5 +67,5 @@ Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, en 
 Rubrique | Description
 ---|---
 [Déployer et activer la protection Antivirus Microsoft Defender de sécurité](deploy-microsoft-defender-antivirus.md) | Bien que le client soit installé en tant que partie intégrante de Windows 10 et que le déploiement classique ne s’applique pas, vous devrez quand même activer le client sur vos points de terminaison avec les objets de stratégie de groupe, Microsoft Endpoint Configuration Manager, Microsoft Intune ou.
-[Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md) | La mise à jour des Antivirus Microsoft Defender se fait en deux parties : la mise à jour du client sur les points de terminaison (mises à jour des produits) et la mise à jour de l’intelligence de sécurité (mises à jour de la protection). Vous pouvez mettre à jour les informations de sécurité de différentes manières, à l’aide de Microsoft Endpoint Configuration Manager, de la stratégie de groupe, de PowerShell et de WMI.
+[Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md) | La mise à jour des Antivirus Microsoft Defender se fait en deux parties : la mise à jour du client sur les points de terminaison (mises à jour des produits) et la mise à jour de l’intelligence de sécurité (mises à jour de la protection). Vous pouvez mettre à jour les informations de sécurité de plusieurs façons, à l’aide de Microsoft Endpoint Configuration Manager, d’une stratégie de groupe, de PowerShell et de WMI.
 [Surveiller et signaler la protection Antivirus Microsoft Defender données](report-monitor-microsoft-defender-antivirus.md) | Vous pouvez utiliser Microsoft Intune, Microsoft Endpoint Configuration Manager, le module de conformité des mises à jour pour Microsoft Operations Management Suite ou un produit SIEM tiers (en consommant des journaux d’événements Windows) pour surveiller l’état de la protection et créer des rapports sur la protection des points de terminaison.

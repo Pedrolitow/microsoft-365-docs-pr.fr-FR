@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: ''
 description: Utilisez cet article pour en savoir plus sur l’activation et la configuration de la gestion des accès privilégiés dans Office 365.
-ms.openlocfilehash: e66a7e66c3505145b1fa4eb3e16db9ec63c3c1e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28e1e6a399f4491ad63094ac5e589c9746dd58cf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209419"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189332"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Prise en main de la gestion des accès privilégiés
 
@@ -49,7 +49,7 @@ Avant de commencer à gérer les accès privilégiés, vous devez confirmer votr
 Les utilisateurs qui envoient des demandes de gestion des accès privilégiés et y répondent doivent se voir attribuer l’une des licences ci-dessus.
 
 > [!IMPORTANT]
-> Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
+> Conformité avancée Office 365 n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels expirent, les clients doivent passer à l’un des abonnements ci-dessus, qui contient les mêmes fonctionnalités de conformité ou des fonctionnalités supplémentaires.
 
 Si vous n’avez pas de plan Office 365 Entreprise E5 et que vous souhaitez essayer la gestion des accès privilégiés, [](https://www.microsoft.com/microsoft-365/enterprise) vous pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou vous inscrire à une version d’essai de Microsoft 365 Entreprise E5.
 
@@ -195,7 +195,7 @@ Les demandes d’accès privilégié sont valables pendant 24 heures après l’
 
     **Demande pour** : sélection parmi les stratégies disponibles
 
-    **Durée (heures)** : nombre d’heures d’accès demandé. Le nombre d’heures qui peuvent être demandées n’est pas limité.
+    **Durée (heures)** : nombre d’heures d’accès demandé. Il n’existe pas de limite au nombre d’heures qui peuvent être demandées.
 
     **Commentaires :** champ texte pour les commentaires liés à votre demande d’accès
 

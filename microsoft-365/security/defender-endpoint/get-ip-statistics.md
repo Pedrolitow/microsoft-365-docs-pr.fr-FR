@@ -1,6 +1,6 @@
 ---
 title: API Obtenir des statistiques IP
-description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour endpoint.
+description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, ip, statistiques, prévalence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6bcabc069bd79444802ca7487de93719cb2bee00
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 48b0f40f6d995e2a197c6220b71192d5179eb5ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209509"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204058"
 ---
 # <a name="get-ip-statistics-api"></a>API Obtenir des statistiques IP
 
@@ -67,7 +67,7 @@ GET /api/ips/{ip}/stats
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
@@ -81,7 +81,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-En cas de réussite et si ip existe - 200 OK avec des données statistiques dans le corps. L’adresse IP est valide mais n’existe pas - organizationPrevalence 0, IP n’est pas valide - HTTP 400.
+En cas de réussite et si ip existe : 200 - OK avec des données statistiques dans le corps. L’adresse IP est valide mais n’existe pas - organizationPrevalence 0, IP n’est pas valide - HTTP 400.
 
 ## <a name="example"></a>Exemple
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un téléphone iPhone ou Android, et vos fichiers de travail dans Office applications seront protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: b60fc1e0d228e66e4403a932426000b44e4b9354
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: f50126363722b5c1b2a988c6ec0707e2e2c6b7ac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59785950"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188828"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les Microsoft 365 pour les utilisateurs professionnels
 
@@ -86,7 +86,7 @@ Pour commencer l’installation sur votre téléphone Android, go to the Play St
   
 ![Sur l’écran d’accueil Android, appuyez sur Play Store.](../../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Entrez Microsoft Outlook dans la zone de recherche Google Play, puis appuyez sur **Installer.** Une Outlook l’installation, appuyez sur **Ouvrir.**
+Entrez Microsoft Outlook dans la zone de recherche Google Play, puis appuyez sur **Installer.** Une fois Outlook l’installation, appuyez sur **Ouvrir.**
   
 ![Appuyez sur Ouvrir pour ouvrir Outlook’application.](../../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
@@ -106,7 +106,7 @@ Ouvrez Outlook à nouveau, et entrez et confirmez un code confidentiel. Vous pou
   
 ![Définissez le code confidentiel Outlook’application dans Android.](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vidéos de formation Microsoft 365 Entreprise](../../business-video/index.yml)
 

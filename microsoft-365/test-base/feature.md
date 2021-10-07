@@ -9,17 +9,17 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: a0a60a061959a5aff038c3e74da7e1775f66e237
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f6e7cfffb92f64d92a4ad68d93d1d51dccc0f4bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208523"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206384"
 ---
 # <a name="windows-feature-update-validation"></a>Windows Validation de la mise à jour des fonctionnalités
 
@@ -43,7 +43,7 @@ Vous trouverez ci-dessous les étapes à suivre lorsque vous remplissez les **d�
 
 ![Validation de la mise à jour des fonctionnalités. Choix du canal insider bêta.](Media/Feature-update-validation-02.png)
 
-3. Sélectionnez une version commercialisée de Windows 10 ou Windows 11 comme référence pour votre test (et les informations résultantes!) et fournissez les autres détails nécessaires pour intégrer correctement votre package.
+3. Sélectionnez une version commercialisée de Windows 10 ou Windows 11 comme référence pour votre test (et informations résultantes!) et fournissez les autres détails nécessaires pour intégrer correctement votre package.
 
 ![Validation de la mise à jour des fonctionnalités avec les versions Windows 10 et Windows 11.](Media/Feature-update-validation-03.png)
 

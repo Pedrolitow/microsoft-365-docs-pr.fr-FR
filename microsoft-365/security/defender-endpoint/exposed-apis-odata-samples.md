@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 31fe51aac9262e5d3bcfa9d6a9c757ddeb30f42a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 18da838cf57b330d5015f535fefcbd2db42b73ef
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209125"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209896"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
 
@@ -44,7 +44,7 @@ Toutes les propriétés ne sont pas filtrables.
 ## <a name="properties-that-support-filter"></a>Propriétés qui la prise en charge $filter
 
 - [Alerte](alerts.md): `alertCreationTime` , , , et `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
-- [Machine](machine.md): `ComputerDnsName` , , , et `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
+- [Ordinateur](machine.md): `ComputerDnsName` , , , et `LastSeen` `HealthStatus` `OsPlatform` `onboardingStatus` `RiskScore` `RbacGroupId` .
 - [MachineAction](machineaction.md): `Status` , `MachineId` et `Type` `Requestor` `CreationDateTimeUtc` .
 - [Indicateur](ti-indicator.md): `indicatorValue` , , et `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
 
@@ -195,7 +195,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### <a name="example-2"></a>Exemple 2
 
-Obtenez toutes les alertes de la dernière mise à jour après 2019-11-22 00:00:00 :
+Obtenez toutes les alertes de la dernière mise à jour après le 11-11-22 00:00:00 :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z

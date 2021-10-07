@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment administrer la découverte de rubriques dans Sujets Microsoft Viva.
-ms.openlocfilehash: 2316df8df7a1d8fb2b8e0951e12810398bcb2e40
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fb26bccc7feb00611f46c278dd85a3f75a8c4a50
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207532"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188996"
 ---
 # <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Gérer la découverte de rubriques dans Sujets Microsoft Viva
 
@@ -42,12 +42,12 @@ Si vous souhaitez inclure ou exclure une liste spécifique de sites, vous pouvez
 Site name,URL
 ```
 
-Si vous ajoutez des sites à l'aide du sélecteur de sites, ils sont ajoutés à la liste existante des sites à inclure ou à exclure. Si vous téléchargez un fichier .csv, il remplace toute liste existante. Si vous avez précédemment inclus ou exclu des sites spécifiques, vous et téléchargez la liste en tant que fichier .csv, a apporté des modifications et chargez la nouvelle liste.
+Si vous ajoutez des sites à l'aide du sélecteur de sites, ils sont ajoutés à la liste existante des sites à inclure ou à exclure. Si vous téléchargez un fichier .csv, il remplace toute liste existante. Si vous avez précédemment inclus ou exclu des sites spécifiques, vous et téléchargez la liste sous la forme d’un fichier .csv, a apporté des modifications et chargez la nouvelle liste.
 
 Pour choisir des sites pour la découverte de rubriques
 
 1. Sous l’onglet **Découverte de rubrique** , sous **Sélectionner les sources de rubrique SharePoint**, sélectionnez **Modifier**.
-2. Dans la page **Sélectionner SharePoint sources** de rubriques, sélectionnez les sites SharePoint seront analyser en tant que sources pour vos rubriques lors de la découverte. Cela inclut les opérations suivantes :
+2. Dans la page **Sélectionner SharePoint sources** de rubrique, sélectionnez les sites SharePoint qui seront analyser en tant que sources pour vos rubriques lors de la découverte. Cela inclut les opérations suivantes :
     - **Tous les sites**: tous SharePoint sites de votre client. Cela capture les sites actuels et futurs.
     - **Tous, sauf les sites sélectionnés**: tapez les noms des sites que vous souhaitez exclure.  Vous pouvez également charger une liste de sites que vous souhaitez refuser de découvrir. Les sites créés dans le futur seront inclus comme sources pour la découverte de rubriques. 
     - **Seuls les sites** sélectionnés : tapez les noms des sites que vous souhaitez inclure. Vous pouvez également charger une liste de sites. Les sites créés dans le futur ne seront pas inclus comme sources pour la découverte de rubriques.
@@ -62,8 +62,8 @@ Pour choisir des sites pour la découverte de rubriques
 Vous pouvez exclure des rubriques de la découverte en téléchargeant une liste à l'aide d'un fichier .csv. Si vous avez précédemment exclu des sujets, vous pouvez télécharger le fichier .csv, apporter des modifications , puis le télécharger à nouveau.
 
 1. Sous l’onglet **Découverte de rubrique**, sous **Exclure les rubriques**, sélectionnez **Modifier**.
-2. Cliquez **sur Exclure des rubriques par nom.**
-3. Si vous avez besoin de créer une liste, téléchargez le modèle .csv et ajoutez les rubriques que vous souhaitez exclure (voir Utiliser le modèle *.csv ci-dessous).* Lorsque le fichier est prêt, cliquez sur **Parcourir** et téléchargez le fichier. S’il existe une liste, vous pouvez télécharger le .csv contenant la liste.
+2. Cliquez **sur Exclure les rubriques par nom.**
+3. Si vous avez besoin de créer une liste, téléchargez le modèle .csv et ajoutez les rubriques que vous souhaitez exclure (voir Utiliser le modèle *.csv ci-dessous).* Lorsque le fichier est prêt, cliquez **sur Parcourir** et téléchargez le fichier. S’il existe une liste, vous pouvez télécharger le .csv contenant la liste.
 4. Cliquez sur **Enregistrer**.
 
     ![Capture d’écran de l’interface utilisateur exclure des rubriques.](../media/km-manage-exclude-topics.png)

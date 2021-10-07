@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e6c1fec6eea7bf1335eec061d6812d02df16556
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 936f92b796db275eaaf697a4028e670b902c6e5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776835"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205078"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements Azure
 
@@ -39,13 +39,13 @@ ms.locfileid: "59776835"
 
 2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> inscrivez-vous à Microsoft.Informations**.
 
-3. Créez un espace de noms Hub d’événements, sélectionnez Hub d’événements **>** Ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique en fonction de la charge attendue. Pour plus d’informations, [voir la tarification des Hubs d’événements.](https://azure.microsoft.com/pricing/details/event-hubs/)
+3. Créez un espace de noms Hub d’événements, sélectionnez hub d’événements **>** ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique adaptée à la charge attendue. Pour plus d’informations, [voir la tarification des Hubs d’événements.](https://azure.microsoft.com/pricing/details/event-hubs/)
 
 ### <a name="add-contributor-permissions"></a>Ajouter des autorisations de collaborateur
 
 Une fois l’espace de noms Hub d’événements créé, vous devez :
 
-1. Définissez l’utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur.
+1. Définissez l’utilisateur qui se connectera à Microsoft 365 Defender en tant que Collaborateur.
 
 2. Si vous vous connectez à une application, ajoutez le principal du service d’inscription de l’application en tant que lecteur, récepteur de données Azure Event Hub (cette procédure peut également être effectuée au niveau du groupe de ressources ou de l’abonnement).
 
@@ -65,7 +65,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 6. Vous pouvez choisir d’exporter les données d’événement vers un hub d’événements unique ou d’exporter chaque table d’événements vers un hub d’événements différent dans votre espace de noms Event Hub.
 
-7. Pour exporter les données d’événement vers un hub d’événements unique, entrez votre nom de Hub d’événements **et** **votre ID de ressource Hub d’événements.**
+7. Pour exporter les données d’événement vers un hub d’événements unique, entrez le nom de votre Hub d’événements **et** votre **ID de ressource Event Hub.**
 
    Pour obtenir votre ID de ressource **Event Hub,** rendez-vous sur votre page d’espace de noms Azure Event Hub sous l’onglet [Propriétés Azure](https://ms.portal.azure.com/)> copier le texte sous  >   **L’ID de ressource**:
 
@@ -75,7 +75,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 9. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
 
-## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Schéma des événements dans Le Hub d’événements Azure
+## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Schéma des événements dans Azure Event Hub
 
 ```JSON
 {
@@ -93,7 +93,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 - Chaque message Event Hub dans Azure Event Hub contient la liste des enregistrements.
 
-- Chaque enregistrement contient le nom de l’événement, l’heure à Microsoft 365 Defender reçu l’événement, le client qu’il appartient (vous obtenez uniquement des événements de votre client) et l’événement au format JSON dans une propriété appelée «**properties**».
+- Chaque enregistrement contient le nom de l’événement, l’heure à Microsoft 365 Defender reçu l’événement, le client qu’il appartient (vous obtenez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
 
 - Pour plus d’informations sur le schéma des événements Microsoft 365 Defender, voir [vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
@@ -117,7 +117,7 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 
   ![Image de l’ID2 de la ressource Hub d’événements.](../defender-endpoint/images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [API Microsoft 365 Defender diffusion en continu](streaming-api.md)

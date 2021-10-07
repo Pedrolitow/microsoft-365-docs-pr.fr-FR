@@ -8,14 +8,14 @@ audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Cet article traite des étiquettes Azure Active Directory classification et de sensibilité.
-ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0a8c12d3d133000a880c58366a9f2b13ed8cbf49
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177940"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203026"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Azure Active Directory classification et les étiquettes de sensibilité pour Microsoft 365 groupes
 
@@ -44,7 +44,7 @@ Tableau 1. Comportement des charges de travail compatibles et non compatibles :
 |Charge de travail|Quelle liste d’étiquettes l’utilisateur voit-il dans la fenêtre de groupe ?|Créer un groupe |Modifier un groupe |Delete group |
 |:-------|:-------|:--------|:--------|:--------|   
 |Compatible   |étiquettes de sensibilité. |Aucun changement de comportement. |Aucun changement de comportement. |Aucun changement de comportement. |
-|Non compatible |Aucune étiquette de sensibilité n’est visible. |L’utilisateur peut créer un groupe sans sélectionner d’étiquette de sensibilité. <br><br> Notez que l’administrateur peut exécuter des cmdlets pour appliquer des étiquettes de niveau de sensibilité en arrière-plan. |**Cas 1 :** aucune étiquette de niveau de sensibilité précédemment sélectionnée. L’utilisateur peut modifier un groupe.<br><br> **Cas 2 :** étiquette de sensibilité appliquée précédemment en arrière-plan à l’aide de la cmdlet. L’utilisateur peut modifier un groupe avec succès, en excluant le cas où l’utilisateur sélectionne une combinaison non valide de paramètres de confidentialité par rapport à l’étiquette. |Aucun changement de comportement.|
+|Non compatible |Aucune étiquette de sensibilité n’est visible. |L’utilisateur peut créer un groupe sans sélectionner d’étiquette de sensibilité. <br><br> Notez que l’administrateur peut exécuter des cmdlets pour appliquer des étiquettes de niveau de sensibilité en arrière-plan. |**Cas 1 :** aucune étiquette de niveau de sensibilité précédemment sélectionnée. L’utilisateur peut modifier un groupe.<br><br> **Cas 2 :** étiquette de sensibilité appliquée précédemment en arrière-plan à l’aide de la cmdlet. L’utilisateur peut modifier un groupe avec succès, à l’exclusion du cas où l’utilisateur sélectionne une combinaison non valide de paramètres de confidentialité par rapport à l’étiquette. |Aucun changement de comportement.|
 
 > [!NOTE]
 > Dans le cas d’un client de bureau Outlook (Win 32), une fois que l’administrateur a activé les étiquettes de niveau de sensibilité sur son client et que son utilisateur est sur une version antérieure du client de bureau Outlook (Win 32) :

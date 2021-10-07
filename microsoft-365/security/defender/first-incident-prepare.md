@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 79a8c8f20b2db4f1b3604c5e652c98a6c9898868
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b73103dee0b20abbebc9c10834ba918c71f9c01b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163605"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210650"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Préparer votre posture de sécurité pour votre premier incident
 
@@ -57,7 +57,7 @@ L’automatisation est un élément essentiel de l’implémentation et de la ma
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Étape 2. Déterminer la position de sécurité de votre organisation
 
-Ensuite, les organisations peuvent utiliser le niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
+Ensuite, les organisations peuvent utiliser le Niveau de sécurité [Microsoft](microsoft-secure-score.md) dans Microsoft 365 Defender pour déterminer votre posture de sécurité actuelle et prendre en compte des recommandations sur la façon de l’améliorer. Plus le score est élevé, plus l’organisation a mis en place de recommandations de sécurité et d’actions d’amélioration. Les recommandations de niveau de sécurité peuvent être prises sur différents produits et permettre aux organisations d’augmenter leurs scores encore plus élevés. 
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Exemple de Niveau de sécurité Microsoft dans le Centre de sécurité Microsoft.":::
  
@@ -71,7 +71,7 @@ Pour vérifier l’avancement des correctifs logiciels, consultez la [page](../d
  
 ## <a name="4-understand-emerging-threats"></a>4. Comprendre les menaces émergentes
 
-Utilisez [l’analyse](threat-analytics.md) des menaces dans Microsoft 365 Defender portail pour rester à jour avec le paysage actuel des menaces de sécurité. Des chercheurs spécialisés en matière de sécurité Microsoft créent des rapports qui décrivent en détail les dernières cybermenaces afin que vous compreniez en quoi elles peuvent affecter votre abonnement Microsoft 365, les appareils et les utilisateurs. Ces rapports peuvent inclure les éléments suivants :
+Utilisez [l’analyse](threat-analytics.md) des menaces dans Microsoft 365 Defender portail pour rester à jour avec le paysage actuel des menaces de sécurité. Des chercheurs spécialisés en matière de sécurité Microsoft créent des rapports qui décrivent en détail les dernières cybermenaces afin que vous compreniez en quoi elles peuvent affecter votre abonnement Microsoft 365, vos appareils et vos utilisateurs. Ces rapports peuvent inclure les éléments suivants :
 
 - Acteurs actifs contre les menaces et leurs campagnes
 - Techniques d’attaques nouvelles et populaires
@@ -79,7 +79,7 @@ Utilisez [l’analyse](threat-analytics.md) des menaces dans Microsoft 365 Defen
 - Surface d'attaque courantes
 - Programmes malveillants répandus
 
-L’analyse des menaces examine également votre configuration et vos alertes pour déterminer la façon dont vous êtes à risque et si des alertes actives s’appliquent à un rapport.
+L’analyse des menaces examine également votre configuration et vos alertes pour déterminer la manière dont vous êtes à risque et si des alertes actives s’appliquent à un rapport.
 
 Vous pouvez implémenter les recommandations d’une menace émergente pour renforcer votre posture de sécurité et réduire la surface d’attaque.
 

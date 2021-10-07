@@ -12,15 +12,15 @@ ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
 search.appverid: ''
-localization_priority: None
+ms.localizationpriority: medium
 ROBOTS: ''
 description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint Syntex, SharePoint listes, Microsoft Teams et Power Automate.
-ms.openlocfilehash: 632a1cbe76c213c0bdb263bcb564fc7303c4780f
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 86ccbeef283b165e178b12debd3ae99f982afc04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776235"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189236"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer des contrats en utilisant la solution Microsoft 365
 
@@ -62,15 +62,15 @@ Cette solution de gestion des contrats comprend quatre composants de Microsoft 3
 
   ![Diagramme de la solution montrant le flux de travail pour télécharger des documents, extraire des données, avertir les parties prenantes et approuver ou rejeter le contrat.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Les documents sont téléchargés vers une bibliothèque SharePoint documents. Un SharePoint Syntex de compréhension de document a été appliqué à la bibliothèque de documents. Il vérifie chaque fichier pour voir s’il y a une correspondance avec un type de contenu « contrat » qu’il est entraîné à rechercher. S’il trouve une correspondance, il classifie le fichier en tant que « contrat » et met à jour le type de contenu pour le document.
+1. Les documents sont téléchargés vers une bibliothèque SharePoint documents. Un SharePoint Syntex de compréhension de document a été appliqué à la bibliothèque de documents. Il vérifie chaque fichier pour voir si un type de contenu « contrat » correspond à ce qu’il est entraîné à rechercher. S’il trouve une correspondance, il classifie le fichier en tant que « contrat » et met à jour le type de contenu pour le document.
 
-2. Le modèle retire également des données spécifiques à partir de chaque fichier de contrat que les parties prenantes sont intéressées à voir, telles que le *client,* *le* coût et le montant *des frais.*
+2. Le modèle tire également des données spécifiques de chaque fichier de contrat que les parties prenantes souhaitent voir, telles que le *client,* le coût et le montant *des frais.*
 
     La page suivante est un exemple de contrat que le modèle est formé pour identifier.
 
       ![Exemple de contrat.](../media/content-understanding/contract.png)
 
-3. Dans Microsoft Teams, toutes les parties prenantes sont membres d’un canal Teams sécurisé dans lequel tous les contrats de la bibliothèque de documents sont visibles pour approbation ou rejet. À l’Teams, toutes les parties prenantes sont averties lorsque de nouveaux contrats doivent être révisés.
+3. Dans Microsoft Teams, toutes les parties prenantes sont membres d’un canal Teams sécurisé dans lequel tous les contrats dans la bibliothèque de documents sont visibles pour approbation ou rejet. À l’Teams, toutes les parties prenantes sont averties lorsque de nouveaux contrats doivent être révisés.
 
 4. À l’Power Automate, les contrats sont déplacés via le processus d’approbation dans Teams canal. Lorsqu’un membre approuve un contrat, l’état du contrat passe à approuvé, tous les membres sont avertis par le biais d’un billet de Teams et un élément de ligne est créé pour montrer que le contrat est prêt pour le paiement. Ce processus peut être étendu pour écrire directement dans une application financière tierce pour paiement.
 
@@ -90,7 +90,7 @@ Cette solution s’appuie sur les fonctionnalités suivantes, disponibles dans l
 
 ### <a name="learn-how-to-use-sharepoint-syntex"></a>Découvrez comment utiliser les SharePoint Syntex
 
-Vous n’SharePoint Syntex ? Découvrez comment utiliser les SharePoint Syntex pour gérer du contenu à l’aide de l’IA.
+Vous n’SharePoint Syntex ? Découvrez comment utiliser les SharePoint Syntex pour gérer le contenu à l’aide de l’IA.
 
 La prise en charge de [l’apprentissage SharePoint Syntex](/learn/paths/syntex-get-started) vous montre comment utiliser les modèles de compréhension et de traitement des formulaires pour classifier des documents, extraire du texte et étiqueter vos documents pour une gestion rapide et facile des connaissances.
 

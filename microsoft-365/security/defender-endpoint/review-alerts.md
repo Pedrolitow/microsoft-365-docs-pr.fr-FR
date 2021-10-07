@@ -8,7 +8,7 @@ f1.keywords:
 - NOCSH
 ms.author: daniha
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: 01b9fb5a3483d287f4d43db0a95af6add284b023
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cb4a30c527034ed95ca0c4c3c5c3a16912ca7e1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179212"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205222"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Passer en revue les alertes dans Microsoft Defender pour le point de terminaison
 
@@ -46,7 +46,7 @@ La sélection du nom d’une alerte dans Defender pour le point de terminaison v
 
 1. **Le titre de l’alerte** affiche le nom de l’alerte et est là pour vous rappeler quelle alerte a démarré votre enquête en cours, indépendamment de ce que vous avez sélectionné sur la page.
 2. [**Les ressources affectées**](#review-affected-assets) répertorient les cartes d’appareils et d’utilisateurs affectés par cette alerte qui peuvent être cliquées pour obtenir plus d’informations et d’actions.
-3. **L’article d’alerte** affiche toutes les entités liées à l’alerte, interconnectées par une arborescence. L’alerte dans le titre est celle qui est sélectionnée lorsque vous vous pointez pour la première fois sur la page de votre alerte sélectionnée. Les entités dans l’article d’alerte sont ex expandables et cliquables, pour fournir des informations supplémentaires et accélérer la réponse en vous permettant d’agir directement dans le contexte de la page d’alerte. Utilisez l’article d’alerte pour lancer votre enquête. Découvrez comment examiner [les alertes dans Microsoft Defender pour point de terminaison.](/microsoft-365/security/defender-endpoint/investigate-alerts)
+3. **L’article d’alerte** affiche toutes les entités liées à l’alerte, interconnectées par une arborescence. L’alerte dans le titre est celle qui est sélectionnée lorsque vous vous pointez pour la première fois sur la page de votre alerte sélectionnée. Les entités dans l’article d’alerte sont ex expandables et cliquables, pour fournir des informations supplémentaires et accélérer la réponse en vous permettant d’agir directement dans le contexte de la page d’alerte. Utilisez l’article d’alerte pour lancer votre enquête. Découvrez comment examiner [les alertes dans Microsoft Defender pour le point de terminaison.](/microsoft-365/security/defender-endpoint/investigate-alerts)
 4. Le **volet d’informations** affiche d’abord les détails de l’alerte sélectionnée, avec les détails et les actions associés à cette alerte. Si vous sélectionnez l’une des ressources ou entités affectées dans l’article d’alerte, le volet d’informations change pour fournir des informations contextuelles et des actions pour l’objet sélectionné.
 
 Notez l’état de détection de votre alerte.
@@ -63,11 +63,11 @@ Notez l’état de détection de votre alerte.
 
   ![Page d’alerte indiquant que la menace a été détectée.](images/detstat-detected.png)
 
-Vous pouvez ensuite consulter les *détails* de l’enquête automatisée dans le volet d’informations de votre alerte, pour voir quelles actions ont déjà été entreprises, ainsi que lire la description de l’alerte pour les actions recommandées.
+Vous pouvez ensuite consulter les *détails* de l’enquête automatisée dans le volet d’informations de votre alerte pour voir quelles actions ont déjà été entreprises, ainsi que lire la description de l’alerte pour les actions recommandées.
 
 ![Extrait du volet d’informations avec la description de l’alerte et les sections d’examen automatique mises en évidence.](images/alert-air-and-alert-description.png)
 
-Les autres informations disponibles dans le volet d’informations lors de l’ouverture de l’alerte incluent les techniques MITRE, la source et des détails contextuels supplémentaires.
+Les autres informations disponibles dans le volet d’informations à l’ouverture de l’alerte incluent les techniques MITRE, la source et des détails contextuels supplémentaires.
 
 ## <a name="review-affected-assets"></a>Passer en revue les biens affectés
 

@@ -9,21 +9,21 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver cisco Jabber sur MS SQL données de Veritas dans Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: a34bf267373e09f94c28bba243fb39d2ba932baf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 84f7ebcbbf99751aa91342e0a4e815c159188afc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206363"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189512"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>Configurer un connecteur pour archiver cisco Jabber sur MS SQL données
 
-Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme Cisco Jabber vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas vous fournit un connecteur [Cisco Jabber](https://globanet.com/jabber/) qui est configuré pour capturer des éléments du SQL Database MS de Jabber, tels que les messages de conversation 1:1 et les conversations de groupe, puis importer ces éléments dans Microsoft 365. Le connecteur récupère les données du SQL Database MS de Cisco Jabber, les traite et convertit le contenu du compte Cisco Jabber d’un utilisateur au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
+Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme Cisco Jabber vers des boîtes aux lettres utilisateur dans Microsoft 365 organisation. Veritas vous fournit un connecteur [Cisco Jabber](https://globanet.com/jabber/) qui est configuré pour capturer des éléments du SQL Database MS de Jabber, tels que les messages de conversation 1:1 et les conversations de groupe, puis importer ces éléments dans Microsoft 365. Le connecteur récupère les données du SQL Database MS de Cisco Jabber, les traite et convertit le contenu du compte Cisco Jabber d’un utilisateur au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
-Une fois les données Cisco Jabber stockées dans les boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Cisco Jabber pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois les données Cisco Jabber stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur Cisco Jabber pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-cisco-jabber-data"></a>Vue d’ensemble de l’archivage des données Cisco Jabber
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour les données Cisco Jabber.](../media/CiscoJabberonMSSQLConnectorWorkflow.png)
 
-1. Votre organisation collabore avec Cisco pour installer et configurer un Cisco Jabber sur MS SQL Database.
+1. Votre organisation collabore avec Cisco pour configurer un Cisco Jabber sur MS SQL Database.
 
 2. Une fois toutes les 24 heures, les éléments Cisco Jabber sont copiés du SQL Database MS vers le site Veritas Merge1. Le connecteur convertit également le contenu des messages de conversation au format de message électronique.
 
@@ -87,4 +87,4 @@ Après avoir créé cisco Jabber sur le connecteur SQL MS, vous pouvez afficher 
 
 ## <a name="known-issues"></a>Problèmes détectés
 
-- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0147071c79acd29db52f86aebdff2dfcf5762f0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d6ce6d8f081141214c8d10ea21898fb66e3e0c10
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205367"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Gérer les alertes microsoft Defender pour les points de terminaison
 
@@ -38,7 +38,7 @@ Defender pour le point de terminaison vous avertit des événements malveillants
 
 Vous pouvez gérer les alertes en sélectionnant une alerte dans la file d’attente des **alertes** ou l’onglet **Alertes** de la page Appareil pour un appareil individuel.
 
-La sélection d’une alerte dans l’un de ces lieux fait monter le volet **de gestion des alertes.**
+La sélection d’une alerte à l’un de ces endroits fait monter le volet **de gestion des alertes.**
 
 ![Image du volet de gestion des alertes et de la file d’attente des alertes.](images/atp-alerts-selected.png)
 
@@ -76,7 +76,7 @@ Vous pouvez utiliser les exemples du tableau suivant pour vous aider à choisir 
 
 Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous serez en mesure de configurer l’action et l’étendue de l’alerte.
 
-1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet Gestion  des alertes s’en charge.
+1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet gestion  des alertes s’en charge.
 
 2. Sélectionnez **Créer une règle de suppression.**
 
@@ -111,7 +111,7 @@ Pour plus d’informations sur la gestion des règles de suppression, voir [Gér
 
 ## <a name="change-the-status-of-an-alert"></a>Modifier l’état d’une alerte
 
-Vous pouvez catégoriser les alertes **(nouvelle,** en cours ou **résolue)** en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la façon dont votre équipe peut répondre aux alertes.
+Vous pouvez catégoriser les alertes **(comme Nouveau,** **En cours** ou **Résolu)** en modifiant leur état au fur et à mesure de l’avancement de votre enquête. Cela vous permet d’organiser et de gérer la façon dont votre équipe peut répondre aux alertes.
 
 Par exemple, un responsable  d’équipe peut passer en revue  toutes les nouvelles alertes et décider de les affecter à la file d’attente En cours pour analyse approfondie.
 
@@ -119,7 +119,7 @@ Le responsable de l’équipe peut  également affecter l’alerte à la file d�
 
 ## <a name="alert-classification"></a>Classification de l’alerte
 
-Vous pouvez choisir de ne pas définir de classification ou de spécifier si une alerte est une alerte vraie ou une fausse alerte. Il est important de fournir la classification du vrai positif/faux positif. Cette classification est utilisée pour surveiller la qualité des alertes et améliorer la précision des alertes. Le champ « détermination » définit une fidélité supplémentaire pour une classification « vrai positif ».
+Vous pouvez choisir de ne pas définir de classification ou de spécifier si une alerte est une alerte vraie ou une fausse alerte. Il est important de fournir la classification du vrai positif/faux positif. Cette classification permet de surveiller la qualité des alertes et d’améliorer la précision des alertes. Le champ « détermination » définit une fidélité supplémentaire pour une classification « vrai positif ».
 
 ## <a name="add-comments-and-view-the-history-of-an-alert"></a>Ajouter des commentaires et afficher l’historique d’une alerte
 

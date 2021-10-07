@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5300552fdd2b33986c96ad5f59e827e3e309ca47
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1a9de7e58f243460effe8ce45448cf79fb2bfce4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202512"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206276"
 ---
 # <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>Informations de paiement par dépôt ou transfert électronique (uniquement pour le Mexique)
 
@@ -39,5 +39,5 @@ Pour payer par dépôt ou transfert électronique :
 
 ## <a name="important-information"></a>Informations importantes
 
-1. Le paiement par dépôt ou transfert électronique n’est disponible que pour les montants supérieurs à 3 500 MXN.
+1. Le paiement par dépôt ou transfert électronique n’est disponible que pour les montants supérieurs à 3 500 dollars MXN.
 2. Le paiement doit être effectué dans un délai de 30 jours . Sinon, la commande est automatiquement annulée.

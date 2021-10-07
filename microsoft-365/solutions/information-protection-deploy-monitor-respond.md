@@ -9,7 +9,7 @@ ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez des stratégies d’audit et d’alerte, ainsi que des demandes des personnes qui répondent aux incidents de données personnelles.
-ms.openlocfilehash: 4070cd772d243bcfba33bfb164fd05e1f0911b3b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 74efff60bb8e0ad6f170b57c86e384d3b689eee1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203688"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204987"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveiller et répondre aux incidents de confidentialité des données dans votre organisation
 
@@ -47,7 +47,7 @@ Voici un exemple de liste des réglementations de confidentialité des données 
 - HIPAA-HITECH (45 C.F.R. 164.312(b))
 - CCPA (1798.105(c))
 
-Pour plus d’informations, voir [Évaluer les risques de confidentialité des données et identifier les informations sensibles.](information-protection-deploy-assess.md)
+Pour plus d’informations, voir Évaluer les risques de confidentialité des données [et identifier les informations sensibles.](information-protection-deploy-assess.md)
 
 Les réglementations en matière de confidentialité des données demandent généralement les informations suivantes pour la surveillance et la réponse :
 
@@ -58,8 +58,8 @@ Votre organisation peut également effectuer des activités de surveillance et d
 
 Pour vous aider à démarrer avec un schéma de surveillance et de réponse dans Microsoft 365 pour les réglementations en matière de confidentialité des données, cet article répertorie les fonctionnalités utiles dans Microsoft 365 pour répondre à des questions telles que : 
 
-- Quels types de techniques de surveillance, d’investigation et de rapports au quotidien sont disponibles pour les différents types de données et sources ?
-- Les mécanismes qui seront nécessaires pour gérer les demandes des personnes qui traitent des données (DSR) et les mesures correctives, telles que l’anonymisation, la suppression et la suppression.
+- Quels types de techniques de surveillance, d’investigation et de rapport au quotidien sont disponibles pour les différents types de données et sources ?
+- Les mécanismes nécessaires pour gérer les demandes des personnes qui traitent des données (DSR) et les mesures correctives, telles que l’anonymisation, la suppression et la suppression.
 
 ## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’audit et d’alerte dans le Centre de sécurité et conformité
 
@@ -76,8 +76,8 @@ Pour [plus d’informations](/compliance/regulatory/gdpr-dsr-Office365) sur la r
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Gérer les utilisateurs supprimés dans Microsoft Stream
 
-Pour Microsoft Stream, lorsqu’un utilisateur est supprimé de Azure Active Directory (Azure AD), si son nom était associé à une vidéo Stream publiée avant ce point, son adresse de messagerie reste associée à la vidéo. Pour [le supprimer, voir](/stream/managing-deleted-users) Gérer les utilisateurs supprimés de Microsoft Stream.
+Pour Microsoft Stream, lorsqu’un utilisateur est supprimé de Azure Active Directory (Azure AD), si son nom était associé à une vidéo Stream publiée avant ce point, son adresse de messagerie reste associée à la vidéo. Pour [le supprimer, voir Gérer](/stream/managing-deleted-users) les utilisateurs supprimés de Microsoft Stream.
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Gestion des risques internes en tant qu’outil d’investigation
 
-La gestion des risques internes dans [Microsoft 365](../compliance/insider-risk-management.md) est une fonctionnalité du Centre d’administration de la conformité Microsoft qui vous permet de minimiser les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités à risque dans votre organisation.
+La gestion des risques internes dans [Microsoft 365](../compliance/insider-risk-management.md) est une fonctionnalité du Centre d’administration de conformité Microsoft pour vous aider à minimiser les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités à risque dans votre organisation.

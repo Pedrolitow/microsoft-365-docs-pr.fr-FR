@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos Microsoft 365 client.
-ms.openlocfilehash: 4bf988aca4145d52d8e5e1bb68c6e8cf134be534
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: dc31a1e400de0d428076406b100eb0a52c705546
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179028"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203698"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 
@@ -39,13 +39,13 @@ Pour optimiser l’accès réseau pour votre client, vous devez :
 
 Pour les réseaux d’entreprise, vous devez optimiser l’expérience utilisateur final en activant l’accès réseau le plus performant entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams sur une faible latence afin que les appels téléphoniques des utilisateurs, les conférences et les collaborations à l’écran partagé soient sans problème.
 
-L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les appareils clients et le réseau mondial Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence et des points d’entrée d’application cloud haute disponibilité, appelés « portes d’entrée » dans le monde entier.
+L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les appareils clients et le réseau global Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence, des points d’entrée d’application cloud haute disponibilité, appelés portes d’entrée, répartis dans le monde entier.
 
 Voici un exemple de réseau d’entreprise traditionnel.
 
 ![Un réseau d’entreprise traditionnel avec un accès centralisé à Internet.](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
-Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou de proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans des régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement de paquets supplémentaire et la sécurité du trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
+Dans cette illustration, les succursales se connectent à un bureau central par le biais de périphériques de réseau large (WAN) et d’une dorsale de base du réseau wan. L’accès à Internet s’fait par le biais d’un périphérique de sécurité ou d’un proxy au niveau du périmètre réseau du siège social et d’un fournisseur de services Internet (ISP). Sur Internet, microsoft Global Network dispose d’une série de portes d’entrée dans les régions du monde entier. Les organisations peuvent également utiliser des emplacements intermédiaires pour le traitement de paquets supplémentaire et la sécurité du trafic. Le client Microsoft 365 d’une organisation se trouve dans le réseau global Microsoft.
 
 Les problèmes liés à cette configuration pour les services Microsoft 365 cloud sont les Microsoft 365 :
 
@@ -64,7 +64,7 @@ Si vous implémentez ces principes, vous obtenez un réseau d’entreprise optim
 
 ![Un réseau d’entreprise optimisé pour Microsoft 365.](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte d’entrée la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
+Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte frontale la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
 
 Voici comment la configuration optimisée résout les problèmes de latence d’un réseau d’entreprise traditionnel :
 
@@ -105,7 +105,7 @@ Il existe deux informations réseau au niveau du client qui peuvent être affich
 
 Voici les informations réseau spécifiques pour chaque emplacement de bureau :
 
-- [Sortie réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
+- [Sortie du réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Meilleures performances détectées pour les clients proches de chez vous](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
 - [Utilisation d’une porte d’Exchange Online service non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Utilisation d’une porte d’entrée du service SharePoint Online non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
@@ -123,7 +123,7 @@ Un système informatique réseau de distribution de contenu (CDN) vous permet de
 
 Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger  dans le Office 365 CDN, vous pouvez ajouter des origines publiques,  des origines privées ou les deux.
 
-Lorsqu’elle est déployée et configurée, la Office 365 CDN charge les ressources à partir d’origines publiques et privées et les rend disponibles pour un accès rapide aux utilisateurs situés sur Internet.
+Lorsqu’elle est déployée et configurée, la Office 365 CDN télécharge les ressources à partir d’origines publiques et privées et les rend disponibles pour un accès rapide aux utilisateurs situés sur Internet.
 
 ![Office 365 CDN déployés pour les utilisateurs.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN pour les utilisateurs")
 
@@ -165,7 +165,7 @@ Dans cette illustration, le client de cette organisation d’entreprise a :
 
 - Accès Internet local pour chaque succursale avec un appareil SDWAN qui Microsoft 365 trafic vers une porte d’entrée locale.
 - Aucune épingle de réseau.
-- Les périphériques de sécurité et de proxy du siège social qui Microsoft 365 le trafic approuvé vers une porte d’entrée locale.
+- Les périphériques de sécurité et de proxy du siège social qui Microsoft 365 trafic approuvé vers une porte d’entrée locale.
 
 ## <a name="ongoing-maintenance-for-optimal-networking"></a>Maintenance continue pour une mise en réseau optimale
 

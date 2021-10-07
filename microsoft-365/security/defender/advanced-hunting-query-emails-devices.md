@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 237d665f14a34d990ec514735ad5a2dbc9020d92
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9058d0e80d2c37009ad340f7b50424ea1bbb6ab7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204576"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210756"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 
@@ -66,7 +66,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>Fusionner la table IdentityInfo
 
-Vous pouvez obtenir des noms de compte et d’autres informations de compte en fusionnant ou en rejoignant la [table IdentityInfo.](advanced-hunting-identityinfo-table.md) La requête ci-dessous obtient la liste des détections de hameçonnage et de programmes malveillants à partir de la [table EmailEvents,](advanced-hunting-emailevents-table.md) puis joint ces informations au tableau pour obtenir des informations détaillées sur chaque `IdentityInfo` destinataire. 
+Vous pouvez obtenir des noms de compte et d’autres informations de compte en fusionnant ou en rejoignant la [table IdentityInfo](advanced-hunting-identityinfo-table.md). La requête ci-dessous obtient la liste des détections de hameçonnage et de programmes malveillants à partir de la [table EmailEvents,](advanced-hunting-emailevents-table.md) puis joint ces informations au tableau pour obtenir des informations détaillées sur chaque `IdentityInfo` destinataire. 
 
 ```kusto
 EmailEvents

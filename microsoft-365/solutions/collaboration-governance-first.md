@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment créer votre plan de gouvernance de collaboration
-ms.openlocfilehash: cd6da85f43d3dc72ee7b9ccd763872dbccfbeb78
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cce044aecfdc8c905ecd7aa9d87236db5c8f07ea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203693"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206420"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Créer votre plan de gouvernance de collaboration
 
@@ -59,7 +59,7 @@ La planification de la gouvernance Microsoft 365 consiste à vous assurer que vo
 
 - **Assurance des résultats** : diriger les propriétaires de sites ou d’équipes autonomes dans la bonne direction pour obtenir des résultats commerciaux. L’assurance des résultats consiste en grande partie à fournir des conseils aux auteurs de contenu et aux propriétaires de sites, de groupes et d’équipes, en veillant à ce que la formation appropriée soit disponible pour s’assurer qu’ils savent faire de bons choix pour obtenir les résultats souhaités dans les normes et pratiques globales de l’organisation.
 
-La planification de la gouvernance doit être la première, mais la gouvernance doit être un point que vous réexistez en permanence dans un processus itératif. À mesure que votre patrimoine de données change au fil du temps, vous voudrez revoir vos décisions de gouvernance afin de vous adapter à l’évolution des besoins de l’entreprise et de la disponibilité des fonctionnalités. Vous devrez peut-être mieux surveiller pour garantir la conformité. Vous aurez peut-être besoin de moins de supervision pour encourager une application plus créative des fonctionnalités de base. Il se peut que vous trouviez que les rôles et les responsabilités doivent être mis à jour pour refléter les modifications apportées à la solution ou la façon dont les utilisateurs utilisent différentes applications.
+La planification de la gouvernance doit être la première, mais la gouvernance doit être un point que vous réexistez en permanence dans un processus itératif. À mesure que votre patrimoine de données change au fil du temps, vous voudrez revoir vos décisions de gouvernance pour vous adapter à l’évolution des besoins de l’entreprise et de la disponibilité des fonctionnalités. Vous devrez peut-être mieux surveiller pour garantir la conformité. Vous aurez peut-être besoin de moins de supervision pour encourager une application plus créative des fonctionnalités de base. Il se peut que vous trouviez que les rôles et les responsabilités doivent être mis à jour pour refléter les modifications apportées à la solution ou la façon dont les utilisateurs utilisent différentes applications.
 
 Par exemple, l’une des principales fonctionnalités d’Microsoft 365 est la possibilité de travailler facilement en collaboration avec des personnes extérieures à votre organisation. Certaines organisations de certains secteurs choisissent de bloquer tout partage externe. D’autres permettent le partage externe dans des scénarios spécifiques ou avec des organisations spécifiques. Il n’existe aucune décision de gouvernance bonne ou erronée en matière de partage externe, et il existe de nombreux scénarios différents dans lequel vous pouvez activer différents paramètres dans Microsoft 365 pour autoriser le partage dans certains cas et le bloquer dans d’autres. Toutefois, si vous débutez à partir d’un environnement local vers le cloud, il est important de réfléchir aux décisions de partage externe et de comprendre les avantages et les risques associés aux différentes options disponibles.
 
@@ -69,7 +69,7 @@ Votre investissement dans Microsoft 365 n’est aussi bon que la valeur du conte
 
 La réflexion sur la gouvernance vous permet d’abord :
 
-- **Équilibrez les risques et les avantages.** L’examen approfondi des décisions de gouvernance au début du déploiement permet aux organisations de comprendre l’environnement complet (business, regulatory, legal, compliance) et de planifier une solution qui optimise tous les résultats (équilibrage des risques avec des avantages), acceptant parfois les risques et d’autres fois, en choisissant de ne pas accepter le risque. Si vous prendre des décisions éclairées à l’avance, vous obtenez de meilleurs résultats sans se laisser aller à du contenu insérable et non ingérable.
+- **Équilibrez les risques et les avantages.** L’examen approfondi des décisions de gouvernance dès le début du déploiement permet aux organisations de comprendre l’environnement complet (business, regulatory, legal, compliance) et de planifier une solution qui optimise tous les résultats (équilibrage des risques avec des avantages), acceptant parfois les risques et d’autres fois, en choisissant de ne pas accepter le risque. Si vous prendre des décisions éclairées à l’avance, vous obtenez de meilleurs résultats sans se laisser aller à du contenu insérable et non ingérable.
 
 - **S’adapter à différentes organisations et différents types de contenu et de scénarios.** Les décisions de gouvernance sont des décisions uniques pour chaque organisation : une taille ne convient pas à toutes. Non seulement chaque organisation a des besoins de gouvernance différents, mais les décisions de gouvernance ne sont souvent pas les mêmes pour chaque type de contenu dans Microsoft 365. Par exemple, la gouvernance du contenu d’équipe peut être différente de la gouvernance du contenu intranet et du contenu individuel dans OneDrive.
 
@@ -77,7 +77,7 @@ La réflexion sur la gouvernance vous permet d’abord :
 
 ## <a name="how-should-we-be-communicating-about-governance"></a>Comment communiquer sur la gouvernance ?
 
-De nombreuses décisions de gouvernance peuvent être implémentées en 2013, en Microsoft 365 2013, en 2013, en 2013. Cela peut vous aider à appliquer vos normes de gouvernance, mais cela peut ne pas aider les membres de votre organisation à comprendre ce qui leur est disponible et pourquoi (ou pourquoi pas). 
+De nombreuses décisions de gouvernance peuvent être implémentées en Microsoft 365 2013, en 2013, en 2013, en 2013. Cela peut vous aider à appliquer vos normes de gouvernance, mais cela peut ne pas aider les membres de votre organisation à comprendre ce qui leur est disponible et pourquoi (ou pourquoi pas). 
 
 Traditionnellement, les équipes de gouvernance ont créé de longs documents décrivant chaque décision de gouvernance. Malheureusement, ces documents longs ont rarement été lus, ce qui signifie que les exigences de gouvernance qui s’appuient sur les personnes pour appliquer ont rarement fonctionné. Essayez d’éviter de créer des documents longs destinés à plusieurs audiences lorsque vous réfléchissez à la façon de communiquer vos décisions de gouvernance clés. Au lieu de cela, réfléchissez à ces alternatives :
 
@@ -85,7 +85,7 @@ Traditionnellement, les équipes de gouvernance ont créé de longs documents d�
 
 - **Renforcer avec la formation**. Adaptez des solutions telles [Microsoft 365 parcours](/office365/customlearning) d’apprentissage pour vous assurer que les attentes spécifiques à votre organisation sont renforcées par la formation fournie par Microsoft.
 
-- **Fournir en tant que site, et non en tant que document.** Créez votre propre Centre d’adoption Microsoft 365 dans un site de communication SharePoint pour vous assurer que vos auteurs de contenu et propriétaires de site et d’équipe comprennent non seulement « comment » mais également « comment ». Créez des pages spécifiques à une rubrique qui s’adressent à différents scénarios d’entreprise afin de fournir des conseils et des meilleures pratiques pour tirer parti ou activer différentes fonctionnalités dans SharePoint et Teams et d’autres applications afin d’atteindre les objectifs de l’entreprise.
+- **Fournir en tant que site, et non en tant que document.** Créez votre propre Centre d’adoption Microsoft 365 dans un site de communication SharePoint pour vous assurer que vos auteurs de contenu et propriétaires de site et d’équipe comprennent non seulement « comment » mais également « comment ». Créez des pages spécifiques à une rubrique qui s’adressent à différents scénarios d’entreprise pour fournir des conseils et des meilleures pratiques pour tirer parti ou activer différentes fonctionnalités dans SharePoint et Teams et d’autres applications afin d’atteindre des objectifs commerciaux.
 
 ## <a name="what-are-the-key-success-factors"></a>Quels sont les facteurs de réussite clés ?
 
@@ -93,15 +93,15 @@ Incorporez ces facteurs de réussite clés pour garantir la réussite de la plan
 
 ### <a name="identify-your-governance-core-team"></a>Identifier votre équipe de base de gouvernance
 
-La gouvernance est un sport d’équipe. Assurez-vous que votre équipe de planification de gouvernance principale inclut des représentants de l’entreprise et de l’équipe it. Votre équipe devra probablement se réunir plus fréquemment au début de votre déploiement, puis régulièrement pour passer en revue les nouvelles fonctionnalités et les nouvelles attentes de l’entreprise.
+La gouvernance est un sport d’équipe. Assurez-vous que votre équipe de planification de gouvernance principale inclut des représentants de l’entreprise et du secteur de l’entreprise. Votre équipe devra probablement se réunir plus fréquemment au début de votre déploiement, puis régulièrement pour passer en revue les nouvelles fonctionnalités et les nouvelles attentes de l’entreprise.
 
 Travaillez dans les décisions de gouvernance clés, mais n’essayez pas de prendre toutes les décisions en même temps. Prendre les décisions critiques relatives à l’approvisionnement et à l’attribution de noms, ainsi qu’à l’accès externe, puis prendre les décisions restantes.
 
 Outre le partage externe, abordé précédemment, une autre décision clé pour chaque organisation consiste à mettre en service des sites et des groupes. Par exemple, tenez compte des éléments suivants :
 
-- Étant donné qu’il est si facile pour les utilisateurs de créer des groupes Microsoft 365, vous pouvez ouvrir la création de groupes afin qu’elle ne soit pas inondée de demandes de création pour le compte d’autres personnes. Pour éviter les « activités de groupe », vous pouvez créer un flux de travail personnalisé qui envoie un courrier électronique avec la gouvernance, la formation et d’autres informations aux créateurs du groupe peu de temps après la création du groupe. (Par exemple, « Vous avez créé un site/une équipe, une communauté, etc., voici vos responsabilités et vos liens vers la formation... » En revanche, en fonction de votre activité, vous pouvez contrôler qui a la possibilité de créer des groupes.
+- Étant donné qu’il est si facile pour les utilisateurs de créer des groupes Microsoft 365, vous pouvez ouvrir la création de groupes afin qu’elle ne soit pas inondée de demandes de création pour le compte d’autres personnes. Pour éviter les « activités de groupe », vous pouvez créer un flux de travail personnalisé qui envoie un courrier électronique avec la gouvernance, la formation et d’autres informations aux créateurs du groupe peu de temps après la création du groupe. (Par exemple, « Vous vient de créer un site/une équipe, une communauté, etc. - voici vos responsabilités et vos liens vers la formation...) En revanche, en fonction de votre activité, vous pouvez contrôler qui a la possibilité de créer des groupes.
 
-- Si vous souhaitez contrôler la façon dont SharePoint sites sont créés, vous pouvez masquer le lien Créer un **site** sur la SharePoint page d’accueil. Créez un formulaire personnalisé ou créez un script de site et une conception de site personnalisés pour automatiser la mise en service de nouveaux sites SharePoint modernes à l’aide d’une structure de site prédéfinie qui peut inclure des liens vers vos meilleures pratiques de gouvernance et de formation.
+- Si vous souhaitez contrôler la façon dont SharePoint sites sont créés, vous pouvez masquer le lien Créer un **site** sur SharePoint page d’accueil. Créez un formulaire personnalisé ou créez un script de site et une conception de site personnalisés pour automatiser la mise en service de nouveaux sites SharePoint modernes à l’aide d’une structure de site prédéfinie qui peut inclure des liens vers vos meilleures pratiques de gouvernance et de formation.
 
 ### <a name="align-decisions-to-business-goals"></a>Aligner les décisions sur les objectifs de l’entreprise
 
@@ -117,7 +117,7 @@ Les objectifs de résultat commercial doivent être le principal facteur de vos 
 
 ### <a name="define-roles-and-responsibilities"></a>Définir les rôles et les responsabilités
 
-En plus de votre équipe de gouvernance, il existe plusieurs autres rôles clés ou équipes que vous souhaitez positionner pour réussir avec Microsoft 365. Certains rôles peuvent être combinés ou remplis par la même personne et d’autres peuvent ne pas être appropriés pour toutes les organisations. La plupart des organisations ont un sponsor exécutif pour Microsoft 365 dans son ensemble et certaines ont également un comité directeur ou une équipe pour Microsoft 365 dans son ensemble ou uniquement pour l’intranet. [En savoir plus sur les rôles d’administrateur complets et les autorisations disponibles dans Microsoft 365](../admin/add-users/admin-roles-page.md).
+En plus de votre équipe de gouvernance, il existe plusieurs autres rôles clés ou équipes que vous souhaitez positionner pour réussir avec Microsoft 365. Certains rôles peuvent être combinés ou remplis par la même personne et d’autres peuvent ne pas être appropriés pour toutes les organisations. La plupart des organisations ont un sponsor exécutif pour Microsoft 365 dans son ensemble et certaines ont également un comité directeur ou une équipe pour Microsoft 365 dans son ensemble ou uniquement pour l’intranet. [En savoir plus sur les rôles et autorisations](../admin/add-users/admin-roles-page.md)d’administrateur complets disponibles dans Microsoft 365 .
 
 ### <a name="revisit-as-business-and-technology-changes"></a>Revenir en tant que changement d’entreprise et de technologie
 
@@ -125,13 +125,13 @@ La gouvernance de Microsoft 365 n’est pas « une seule fois et effectuée ». 
 
 ### <a name="have-a-strategy-for-communicating-governance-policies-and-guidelines"></a>Avoir une stratégie pour communiquer les stratégies et les directives de gouvernance
 
-En fin de compte, la réussite de vos efforts de planification de gouvernance dépend de la façon dont vous avez communiqué les attentes aux membres de votre organisation. Outre les suggestions décrites précédemment, prenons en compte les questions suivantes :
+En fin de compte, la réussite de vos efforts de planification de gouvernance dépend de la façon dont vous avez communiqué les attentes aux membres de votre organisation. Outre les suggestions décrites précédemment, prenons en compte les considérations suivantes :
 
-- Pouvez-vous incorporer « comment » à votre formation ? En d’autres termes, pouvez-vous créer un « centre de ressources utilisateur » pour Microsoft 365 où vous pouvez fournir des ressources et une formation pour vous aider à fournir des conseils et des formations qui aideront les utilisateurs à adopter Microsoft 365 efficacement ? Le meilleur contenu de gouvernance fournit des conseils qui permettent à tous les utilisateurs d’adopter et d’obtenir le meilleur Microsoft 365.
+- Pouvez-vous incorporer « comment » dans votre formation ? En d’autres termes, pouvez-vous créer un « centre de ressources utilisateur » pour Microsoft 365 où vous pouvez fournir des ressources et une formation pour vous aider à fournir des conseils et des formations qui aideront les utilisateurs à adopter Microsoft 365 efficacement ? Le meilleur contenu de gouvernance fournit des conseils qui permettent à tous les utilisateurs d’adopter et d’obtenir le meilleur Microsoft 365.
 
 - Devez-vous créer une certification et une nouvelle certification pour les propriétaires de sites et d’équipes ?
 
-- Pouvez-vous créer un programme Microsoft 365 Champions pour votre organisation ? En outre, envisagez de rejoindre le programme des champions du [Microsoft 365](https://aka.ms/O365Champions) mondial pour obtenir des idées et des approches pour votre propre programme de champions et pour vous connecter avec des personnes et des responsables réfléchis semblables, au sein et autour de Microsoft.
+- Pouvez-vous créer un programme Microsoft 365 Champions pour votre organisation ? En outre, envisagez de rejoindre le programme des champions du [Microsoft 365](https://aka.ms/O365Champions) mondial pour obtenir des idées et des approches pour votre propre programme d’champions et pour vous connecter avec des personnes et des responsables réfléchis semblables, au sein et autour de Microsoft.
 
 ## <a name="related-topics"></a>Rubriques connexes
 

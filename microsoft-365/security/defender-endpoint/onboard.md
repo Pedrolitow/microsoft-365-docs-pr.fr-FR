@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 946be62b418e3162de8ee6d51edb3114e6f81ca7
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 75b19ca8b6df0038d7835783d2f3dac38faa6805
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124475"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206792"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Configurer et gérer les fonctionnalités de Microsoft Defender pour les points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -38,15 +38,15 @@ ms.locfileid: "60124475"
 
 Découvrez comment configurer et gérer les fonctionnalités de Defender for Endpoint pour obtenir la meilleure protection de sécurité pour votre organisation.
 
-Pour obtenir des conseils pratiques sur la connexion de nouveaux appareils dans votre organisation, voir Appareils intégrés [au service Microsoft Defender for Endpoint.](./onboard-configure.md)
+Pour obtenir des conseils pratiques sur la connexion de nouveaux appareils dans votre organisation, voir Appareils intégrés au [service Microsoft Defender for Endpoint.](./onboard-configure.md)
 
 ## <a name="in-this-section"></a>Dans cette section
 
 Rubrique | Description
 :---|:---
-[Configurer les Centre de sécurité Microsoft Defender de configuration](preferences-setup.md) | Configurez les paramètres liés au portail tels que les paramètres généraux, les fonctionnalités avancées ou activez l’expérience d’aperçu.
+[Configurer les Centre de sécurité Microsoft Defender de configuration](preferences-setup.md) | Configurez les paramètres relatifs au portail tels que les paramètres généraux, les fonctionnalités avancées ou activez l’expérience d’aperçu.
 [Configurer les fonctionnalités de la réduction de la surface d’attaque](configure-attack-surface-reduction.md) | Configurez les fonctionnalités de réduction de la surface d’attaque pour vous assurer que les paramètres sont correctement appliqués et que les techniques d’atténuation des attaques sont définies.
 [Configurer la protection de nouvelle génération](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configurez la protection nouvelle génération pour capturer tous les types de menaces émergentes.
-[Configurer les fonctionnalités Spécialistes des menaces Microsoft de gestion](configure-microsoft-threat-experts.md) | Configurer et gérer les renseignements sur les menaces de cybersécurité à partir Spécialistes des menaces Microsoft.
+[Configurer les fonctionnalités Spécialistes des menaces Microsoft de gestion](configure-microsoft-threat-experts.md) | Configurez et gérez les renseignements sur les menaces de cybersécurité à partir Spécialistes des menaces Microsoft.
 [Configurer l’intégration Microsoft 365 Defender des données](/microsoft-365/security/defender-endpoint/threat-protection-integration) | Configurez d’autres solutions qui s’intègrent à Defender for Endpoint.
 [Prise en charge de la gestion et de l’API](/microsoft-365/security/defender-endpoint/management-apis) | Tirez des alertes vers votre siEM (Security Information and Event Management) ou utilisez des API pour créer des alertes personnalisées. Créez et créez Power BI rapports.

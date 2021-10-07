@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: bcarter
 author: brendacarter
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d0d452c0e9a5dbc3a9060c42921f180da7c42b90
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9b48d5ec4ee8586af05a514f8e5531dd0ac31085
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180970"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210698"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Pilote Microsoft Cloud App Security avec Microsoft 365 Defender
 

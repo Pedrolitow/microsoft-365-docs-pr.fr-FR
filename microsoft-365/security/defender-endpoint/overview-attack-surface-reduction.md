@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -19,12 +19,12 @@ ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/02/2021
-ms.openlocfilehash: 336fbbbbbe07747a8dbe12c46fd3bbe2483c08b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5950dba146260f69256f5b64a2a44f666060a18b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183304"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204008"
 ---
 # <a name="overview-of-attack-surface-reduction-capabilities"></a>Vue d’ensemble des fonctionnalités de réduction de la surface d’attaque
 

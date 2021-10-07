@@ -8,25 +8,25 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: En savoir plus sur la gestion des autorisations dans le Centre de conformité Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 717b8cd312aad805107536b174b3a9cd58e72a55
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 8eed2bf7fb1bf2861fe3b138933ef5e2314d1325
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206195"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203074"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Autorisations dans le Centre de conformité Microsoft 365
 
-Le Centre de conformité Microsoft 365 a été récemment mis à jour et prend désormais en charge la gestion directe des autorisations pour les utilisateurs qui effectuent des tâches de conformité dans Microsoft 365. Cette mise à jour signifie que vous n’aurez plus besoin d’utiliser le Centre Office 365 sécurité et conformité & pour gérer les autorisations pour les solutions de conformité. À l’aide de la nouvelle page Autorisations dans le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations accordées aux utilisateurs pour les tâches de conformité dans des **fonctionnalités telles** que la gestion des appareils, la protection contre la perte de données, eDiscovery, la gestion des risques internes, la rétention, etc. Les utilisateurs peuvent effectuer uniquement les tâches de conformité à qui vous leur accordez explicitement l’accès.
+Le Centre de conformité Microsoft 365 a été récemment mis à jour et prend désormais en charge la gestion directe des autorisations pour les utilisateurs qui effectuent des tâches de conformité dans Microsoft 365. Cette mise à jour signifie que vous n’aurez plus besoin d’utiliser le Centre Office 365 sécurité et conformité & pour gérer les autorisations pour les solutions de conformité. À l’aide de la nouvelle page Autorisations du Centre de conformité Microsoft 365, vous pouvez gérer les autorisations accordées aux utilisateurs pour les tâches de conformité dans des **fonctionnalités telles** que la gestion des appareils, la protection contre la perte de données, eDiscovery, la gestion des risques internes, la rétention et bien d’autres encore. Les utilisateurs peuvent effectuer uniquement les tâches de conformité à qui vous leur accordez explicitement l’accès.
 
 Pour afficher l’onglet Autorisations dans le Centre de conformité Microsoft 365, les utilisateurs doivent être  administrateur général ou avoir le  rôle Gestion des rôles (un rôle est attribué uniquement au groupe de **rôles** Gestion de l’organisation). Le *rôle Gestion des* rôles permet aux utilisateurs d’afficher, de créer et de modifier des groupes de rôles.
 
 ![Page Autorisations dans Centre de conformité Microsoft 365.](../media/m365-compliance-center-permissions.png)
 
-Les autorisations dans le Centre de conformité Microsoft 365 sont basées sur le modèle d’autorisations de contrôle d’accès basé sur un rôle (RBAC). Le RBAC est le même modèle d’autorisations que celui utilisé par la plupart des services Microsoft 365. Ainsi, si vous êtes familiarisé avec la structure des autorisations de ces services, l’octroi d’autorisations dans le Centre de conformité Microsoft 365 sera familier. Il est important de se souvenir que les autorisations gérées dans le Centre de conformité Microsoft 365 ne couvrent pas la gestion de toutes les autorisations nécessaires dans chaque service individuel. Vous devrez toujours gérer certaines autorisations spécifiques au service dans le Centre d’administration pour le service spécifique. Par exemple, si vous devez attribuer des autorisations pour les stratégies d’archivage, d’audit et de rétention MRM, vous devez gérer ces autorisations dans le Centre d’administration Exchange.
+Les autorisations dans le Centre de conformité Microsoft 365 sont basées sur le modèle d’autorisations de contrôle d’accès basé sur un rôle (RBAC). Le RBAC est le même modèle d’autorisations que celui utilisé par la plupart des services Microsoft 365. Ainsi, si vous êtes familiarisé avec la structure des autorisations dans ces services, l’octroi d’autorisations dans le Centre de conformité Microsoft 365 sera familier. Il est important de se souvenir que les autorisations gérées dans le Centre de conformité Microsoft 365 ne couvrent pas la gestion de toutes les autorisations nécessaires dans chaque service individuel. Vous devrez toujours gérer certaines autorisations spécifiques au service dans le Centre d’administration pour le service spécifique. Par exemple, si vous devez attribuer des autorisations pour les stratégies d’archivage, d’audit et de rétention MRM, vous devez gérer ces autorisations dans le Centre d’administration Exchange.
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relation entre les membres, les rôles et les groupes de rôles
 

@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: e39a1833157210e3d5e4c6a5bcc77deede295f3c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 03d3535ec972522313bbabeebc1743db3fb55009
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59201965"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209848"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Liste du score d’exposition par groupe d’appareils
 
@@ -68,7 +68,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie 200 OK, avec une liste de score d’exposition par données de groupe d’appareils dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 200 OK, avec une liste de score d’exposition par groupe d’appareils dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

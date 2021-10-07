@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer des autorisations de gestion de la confidentialité et attribuer des utilisateurs à des groupes de rôles.
-ms.openlocfilehash: 6caf786a99e08c2f5c6abfd4c2dbabc438151d06
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b1db7a9fd0bef1429172fe9afef262be4808c164
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206036"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206012"
 ---
 # <a name="set-user-permissions-and-assign-roles-in-privacy-management-preview"></a>Définir des autorisations utilisateur et attribuer des rôles dans la gestion de la confidentialité (aperçu)
 
@@ -42,7 +42,7 @@ Pour accorder aux membres de votre organisation les autorisations d’utiliser l
 
 Les membres doivent être affectés à des groupes de rôles en fonction des tâches qu’ils doivent accomplir et du niveau d’accès approprié aux fichiers. Chaque groupe de rôles comprend un ou plusieurs rôles. Ces rôles peuvent concerner des tâches de gestion de la confidentialité spécifiques ou des fonctions clés qui sont activées ou restreintes pour les membres de ce groupe.  
 
-Les groupes de rôles peuvent être personnalisés si nécessaire. Pour éviter toute perte accidentelle d’accès, nous vous recommandons de créer une copie du groupe de rôles existant que vous souhaitez personnaliser, d’attribuer à la copie un nom identifiable, d’apporter et de vérifier vos modifications au nouveau groupe et d’y affecter des personnes, le cas échéant.
+Les groupes de rôles peuvent être personnalisés si nécessaire. Pour éviter toute perte accidentelle d’accès, nous vous recommandons de créer une copie du groupe de rôles existant que vous souhaitez personnaliser, d’attribuer un nom identifiable à la copie, d’apporter et de vérifier vos modifications au nouveau groupe et d’y affecter des personnes selon le cas.
 
 ## <a name="privacy-management-role-group"></a>Groupe de rôles Gestion de la confidentialité
 
@@ -64,7 +64,7 @@ Les rôles sont les suivants :
 
 ## <a name="privacy-management-administrators-role-group"></a>Groupe de rôles Administrateurs de la gestion de la confidentialité
 
-Les membres de ce groupe de rôles ont un large accès aux fonctions de gestion de la confidentialité, notamment la création, la lecture, la mise à jour et la suppression de stratégies de gestion de la confidentialité, les demandes de droits de l’objet, les autorisations de gestion de la confidentialité et les paramètres de gestion de la confidentialité.
+Les membres de ce groupe de rôles ont un large accès aux fonctions de gestion de la confidentialité, notamment la création, la lecture, la mise à jour et la suppression de stratégies de gestion de la confidentialité, les demandes des droits de l’objet, les autorisations de gestion de la confidentialité et les paramètres de gestion de la confidentialité.
 
 Les rôles sont les suivants :
 

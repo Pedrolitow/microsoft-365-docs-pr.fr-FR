@@ -13,18 +13,18 @@ ms.collection:
 - Ent_O365
 - GDPR
 - M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c40078626948e51c0e43f06dd567967f3cff516
-ms.sourcegitcommit: c2d752718aedf958db6b403cc12b972ed1215c00
+ms.openlocfilehash: 778bfbd1f9e2353a7cf9c7099dcfe4740571e676
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58565647"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206516"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 

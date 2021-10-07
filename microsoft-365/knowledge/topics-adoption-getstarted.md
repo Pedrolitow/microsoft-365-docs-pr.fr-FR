@@ -10,19 +10,19 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
-localization_priority: Normal
-ms.openlocfilehash: a8e95586dc5e3d2da2cbd6ace9369e4b2d17afed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+ms.openlocfilehash: 9d33687f23954216371f4e827e92246b3d63e61c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205228"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205784"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Commencer à piloter l’adoption de Sujets Microsoft Viva
 
-Avant de commencer l’adoption, vous devez comprendre les concepts impliqués dans la gestion des connaissances et rubriques. Le diagramme suivant illustre ce qui se produit lors de la découverte et de la curation des rubriques :
+Avant de commencer l’adoption, vous devez comprendre les concepts impliqués dans la gestion des connaissances et les rubriques De rubriques. Le diagramme suivant illustre ce qui se produit lors de la découverte et de la curation des rubriques :
 
-![Architecture de Rubriques.](../media/knowledge-management/topic-management-architecture.png)
+![Architecture des rubriques.](../media/knowledge-management/topic-management-architecture.png)
 
 - **Découverte** : les utilisateurs peuvent découvrir des connaissances dans les applications qu'ils utilisent tous les jours grâce à des cartes de sujets – ils peuvent également découvrir des sujets dans Microsoft Search.
 - **Curation** : les experts en la matière (PME) affinent les sujets par le biais de pages thématiques, et l'IA apprend à partir de leurs données. Le centre de rubriques contient des pages de rubriques que les utilisateurs peuvent explorer et que les experts peuvent gérer.
@@ -50,7 +50,7 @@ Examinez cette liste de conditions préalables pour tirer le meilleur parti de S
 |Produit ou fonctionnalité |Description |
 |:-------|:--------|
 |SharePoint Online avec des pages SharePoint modernes |L’exploration de rubriques inclut uniquement le contenu SharePoint sites web, et les cartes de sujet ne peuvent être pointées que sur des pages modernes.|
-|Microsoft Graph |Vous pouvez contrôler l'inclusion ou l'exclusion des sujets dans la recherche ou la Delve à l'aide des paramètres Microsoft Graph. |
+|Microsoft Graph |Vous pouvez contrôler l'inclusion ou l'exclusion des sujets dans la recherche ou la Delve à l'aide des paramètres Microsoft Graph. |
 
 ## <a name="plan-for-adoption"></a>Planifier l’adoption
 
@@ -64,12 +64,12 @@ Pour planifier l’adoption de Topics, vous devez :
     - Déterminer l’impact sur l’entreprise que vous souhaitez atteindre et la façon dont vous allez mesurer [la réussite.](#create-a-success-plan)
 
 2. Impliquez votre organisation :
-    - Identifiez les groupes d’entreprise et les équipes d’entreprise qui doivent être impliqués et alignez-les sur ceux-ci et les scénarios que vous planifiez.
+    - Identifiez les groupes d’entreprise et les équipes d’entreprise qui doivent être impliqués et alignez-les entre ceux-ci et les scénarios que vous planifiez.
     - Commencez à réfléchir à la façon de faire participer certains utilisateurs précoces pour obtenir des commentaires critiques en avant-première afin d’itérer et d’obtenir la meilleure solution.
     - Commencez à créer la communauté et réfléchissez à la façon dont Topics peut être utilisé au sein de votre organisation par ces différents groupes.
 
 3. Formez votre organisation : la plupart des personnes comprendront intuitivement le concept des rubriques et la façon dont les fiches de rubrique compilent les informations pertinentes, comprennent et voient la valeur. Toutefois, vous souhaitez peut-être créer une formation adaptée à votre propre culture et organisation, afin de montrer comment vous souhaitez utiliser Topics. Ressources de formation :
-    - [Projet Cortex de ressources.](https://aka.ms/projectcortex) Inclut des vues d’ensemble et des informations sur les fonctionnalités, des vidéos et des présentations d’heures bureau enregistrées, ainsi que des informations sur les partenaires et leurs offres.
+    - [Projet Cortex de ressources.](https://aka.ms/projectcortex) Inclut des vues d’ensemble et des informations sur les fonctionnalités, des vidéos et des présentations enregistrées pour les heures d’bureau, ainsi que des informations sur les partenaires et leurs offres.
     - Bientôt disponible, des vidéos de formation et de l’aide pour les utilisateurs finaux.
 
 4. [Créez un réseau champion](#build-a-champion-network):
@@ -91,7 +91,7 @@ Par exemple :
 
 - Un employé (Jordanie) prend un nouveau rôle ou vient d’être embauché et ne fait que commencer par un rôle. La Jordanie souhaite être impliquée et productive aussi rapidement que possible. Toutefois, la Jordanie a également besoin d’aide pour trouver un point de départ.
 - Collègue (Kim) qui était dans le rôle avant que la Jordanie ne crée des pages de rubriques qui peuvent aider les nouveaux employés et toute autre personne à la recherche de ces informations.
-- Kim était un SME et avait l’autorisation d’examiner les pages de rubrique non confirmées. Les pages de rubriques non confirmées sont d’excellents points de départ pour ce que l’IA a découvert et créé, et Kim a pu les modifier pour ajouter des ressources d’experts, des définitions et épingler d’autres ressources.
+- Kim était un SME et avait les autorisations d’examiner les pages de sujet non confirmées. Les pages de rubriques non confirmées sont d’excellents points de départ pour ce que l’IA a découvert et créé, et Kim a pu les modifier pour ajouter des ressources d’experts, des définitions et épingler d’autres ressources.
 - À mesure que la Jordanie lit un nouveau billet sur SharePoint, un sujet est mis en surbrillant et survolé pour obtenir rapidement une définition du terme et qui contacter avec d’autres questions. Auparavant, Jordan aurait peut-être dû chercher ces informations et contacter des collègues pour savoir à qui s’adresser.
 - Le fait d’exposer ces informations par le biais de rubriques peut s’avérer très efficace, car même si ces informations étaient disponibles auparavant, elles étaient peut-être cloisonnées et difficiles à trouver. L’amener dans les applications que la Jordanie utilise et les aider à trouver ces experts peut également stimuler l’implication et la communauté. Cela peut également lui permettre de se sentir plus autonome face à son nouveau rôle.
 
@@ -167,7 +167,7 @@ Créez un réseau champion dans votre organisation. Les champions sont important
 
 Vous pouvez recrutementr des champions de différents rôles : gestionnaires de connaissances et experts techniques.
 
-De nombreux réseaux champion utilisent Yammer comme plateforme. Dans Yammer, les personnes peuvent publier des questions et obtenir des réponses, et partager des témoignages. Il est difficile de passer le mot seul, afin que vous pouvez vous appuyer sur le réseau de personnes dans toute votre entreprise pour donner des conseils à leurs homologues et montrer comment leur équipe utilise Rubriques Afin que les autres équipes peuvent réfléchir à leurs propres scénarios.
+De nombreux réseaux champion utilisent Yammer comme plateforme. Dans Yammer, les personnes peuvent publier des questions et obtenir des réponses, et partager des témoignages. Il est difficile de faire passer le mot seul, afin que vous pouvez vous appuyer sur le réseau de personnes dans toute votre entreprise pour donner des conseils à leurs homologues et montrer comment leur équipe utilise Des rubriques De manière à ce que les autres équipes peuvent réfléchir à leurs propres scénarios.
 
 Certaines organisations utilisent des piratages (formels ou informels, virtuels ou en personne) pour rassembler des groupes de personnes pour travailler sur un projet spécifique. Par exemple, vous pouvez rassembler vos experts techniques et les faire collaborer pour organiser un ensemble de pages de rubriques.
 

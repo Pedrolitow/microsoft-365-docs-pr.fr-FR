@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment déplacer votre domaine de Google Workspace vers Microsoft 365 entreprise.
-ms.openlocfilehash: 550a94614c9cc2b05f46bf2490c8866e8fc4a478
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b41fdf304d0f0b9680f87f40a4564573593d6e75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183887"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204778"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Ajoutez votre domaine Google Workspace à Microsoft 365
 
@@ -41,7 +41,7 @@ Ajoutez votre domaine Google Workspace à Microsoft 365 entreprise afin de conti
 1. Dans la Centre d'administration Microsoft 365, dans le navigation de gauche, sélectionnez **Afficher**  >  **tous Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**domaines.**</a>
 1. Choisissez **Ajouter un domaine,** entrez votre nom de domaine, puis **sélectionnez Utiliser ce domaine.** 
 1. Choose, **Add a TXT record to the domains DNS records,** select **Continue**, and copy the TXT value. 
-1. Revenir à la [console d’administration Google,](https://admin.google.com)choisissez **Domaines,** Gérer les domaines, Afficher les **détails,** Gérer le domaine, **DNS,** puis faites défiler vers le bas jusqu’aux enregistrements de ressources **personnalisés.**   
+1. Revenir à la [console d’administration Google,](https://admin.google.com)choisissez **Domaines,** Gérer les domaines, Afficher les **détails,** **Gérer** le domaine, **DNS,** puis faites défiler vers le bas jusqu’aux enregistrements de ressources **personnalisés.**  
 1. Ouvrez la drop-down du type d’enregistrement, choisissez **TXT**, collez la valeur TXT que vous avez copiée, puis sélectionnez **Ajouter**. 
 
     La mise à jour prend généralement quelques minutes, mais peut prendre jusqu’à 48 heures. 
@@ -50,4 +50,4 @@ Ajoutez votre domaine Google Workspace à Microsoft 365 entreprise afin de conti
 1. Choisissez un utilisateur, sélectionnez Gérer le nom **d’utilisateur** et le courrier électronique, **Modifier,** sélectionner votre domaine dans la liste modifiable, puis sélectionnez Terminé **et** Enregistrer **les modifications.** 
 1. Répétez ce processus pour chaque utilisateur. 
 
-    Lorsque vous avez terminé, vous serez prêt à installer Office applications et à migrer vos éléments de courrier et de calendrier vers Microsoft 365. 
+    Lorsque vous avez terminé, vous serez prêt à installer Office applications et à migrer vos éléments de courrier électronique et de calendrier vers Microsoft 365. 

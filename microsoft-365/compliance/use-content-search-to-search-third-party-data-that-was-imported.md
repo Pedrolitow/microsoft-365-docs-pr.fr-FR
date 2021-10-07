@@ -10,19 +10,19 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utilisez l’outil eDiscovery de recherche de contenu pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce en créant des requêtes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afed5e519b789baffca4f16b95c842ccfe575b4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 068a6e3164154129ba9148b41138d50c518042ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205771"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202978"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées par un connecteur partenaire personnalisé
 
@@ -53,7 +53,7 @@ Au lieu de rechercher tous les types de données tierces, vous pouvez créer des
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-Par exemple, pour rechercher des données Facebook contenant le mot « contoso » dans la propriété Subject, utilisez la requête suivante :
+Par exemple, pour rechercher des données Facebook contenant le mot « contoso » dans la propriété Subject, vous devez utiliser la requête suivante :
   
 ```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
@@ -77,7 +77,7 @@ Le tableau suivant répertorie les types de données tierces que vous pouvez rec
 |Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|Journaux d’appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|Journaux des appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
 |Code confidentiel BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
@@ -140,6 +140,6 @@ Le tableau suivant répertorie les types de données tierces que vous pouvez rec
 |WinMX  <br/> | `ipm.externaldata.WinMX*` <br/> |
 |Winny  <br/> | `ipm.externaldata.Winny*` <br/> |
 |Yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
-|Protester  <br/> | `ipm.externaldata.Yammer*` <br/> |
+|Yammer  <br/> | `ipm.externaldata.Yammer*` <br/> |
 |YellowJacket  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
 |YouTube  <br/> | `ipm.externaldata.YouTube*` <br/> |

@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 6286df3fa7b099df9cbe3f910434e0da99f521607148d872ed13e6b97a5d26a6
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 6ada32650a01f3303a9c3c9011f5465dab5f5184
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53867990"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206876"
 ---
 # <a name="threat-protection"></a>Protection contre les menaces
 
@@ -70,7 +70,7 @@ L’ensemble de fonctionnalités de réduction de la surface d’attaque fournit
 - [Contrôle d’application](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Contrôle des appareils](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Exploit Protection](exploit-protection.md)
-- [Protection réseau](network-protection.md), [protection web](web-protection-overview.md)
+- [Protection du réseau,](network-protection.md) [protection web](web-protection-overview.md)
 - [Accès contrôlé aux dossiers](controlled-folders.md)
 - [Pare-feu réseau](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Règles de réduction de la surface d’attaque](attack-surface-reduction.md)
@@ -83,7 +83,7 @@ Pour renforcer davantage le périmètre de sécurité de votre réseau, Microsof
 - [Surveillance du comportement](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [Protection basée sur le cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
 - [Apprentissage automatique](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Protection d’URL](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [URL Protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 - [Service bac à sable automatisé](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
@@ -132,7 +132,7 @@ Intégrez Microsoft Defender pour point de terminaison à vos flux de travail ex
 **[Intégration aux solutions Microsoft](threat-protection-integration.md)** <br>
  Microsoft Defender pour point de terminaison s’intègre directement à différentes solutions Microsoft, notamment :
 - Intune
-- Microsoft Defender pour Office 365
+- Microsoft Defender pour Office 365
 - Microsoft Defender pour l’identité
 - Azure Defender
 - Skype Entreprise

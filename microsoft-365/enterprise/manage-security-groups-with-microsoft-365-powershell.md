@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer les groupes de sécurité.
-ms.openlocfilehash: e9842585fbb88711c0efa6e515ca8b54c124338e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d07296b88e626e854c57152a079cc96e1e23e8d3
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209305"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202882"
 ---
 # <a name="manage-security-groups-with-powershell"></a>Gérer les groupes de sécurité avec PowerShell
 
@@ -38,7 +38,7 @@ Lorsqu’un bloc de commandes dans cet article nécessite que vous spécifiant d
 2. Remplissez les valeurs des variables et supprimez les caractères « < » et « > ».
 3. Exécutez les commandes dans la fenêtre PowerShell ou powerShell ISE.
 
-Voir [Gérer l’appartenance à un groupe de](maintain-group-membership-with-microsoft-365-powershell.md) sécurité pour gérer l’appartenance à un groupe avec PowerShell.
+Voir [Gérer l’appartenance à un groupe de](maintain-group-membership-with-microsoft-365-powershell.md) sécurité pour gérer l’appartenance au groupe avec PowerShell.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 

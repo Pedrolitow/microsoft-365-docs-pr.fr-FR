@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,22 +18,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: f6fb0ac24f571c329070dd1667f6370c2067d4fd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4a420da5251ecef900f2efe9573db1d51a6bd597
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179700"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202822"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
+*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
 
 Azure AD Seamless Single Sign-On (Seamless SSO) connecte automatiquement les utilisateurs lorsqu’ils se connectent à leur PC ou appareils connectés au réseau de leur organisation. Azure AD Seamless SSO fournit aux utilisateurs un accès facile aux applications basées sur le cloud sans avoir besoin de composants locaux supplémentaires.
 
 Cet article explique comment configurer votre environnement de test Microsoft 365 pour l' sso transparente Azure AD.
 
-La configuration de l' ssO transparente Azure AD implique deux phases :
+La configuration de l' sso transparente Azure AD implique deux phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Phase 2 : Configuration de l’authentification unique transparente Azure AD pour Azure AD Connect sur APP1](#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso)
    
@@ -54,7 +54,7 @@ Cette configuration se compose des éléments suivants :
   
 - Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.
-- Azure AD Connecter s’exécute sur APP1 pour synchroniser périodiquement le domaine des services de domaine Active Directory (AD DS) TESTLAB avec le client Azure AD de votre abonnement Microsoft 365 client.
+- Azure AD Connecter s’exécute sur APP1 pour synchroniser régulièrement le domaine des services de domaine Active Directory (AD DS) TESTLAB avec le client Azure AD de votre abonnement Microsoft 365 client.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Phase 2 : Configuration de l’authentification unique transparente Azure AD pour Azure AD Connect sur APP1
 
@@ -70,7 +70,7 @@ Dans cette phase, configurez Azure AD Connecter sur APP1 pour azure AD Seamless 
 
 4. Dans la page **Tâches supplémentaires,** sélectionnez Modifier la **connectez-vous** de l’utilisateur, puis sélectionnez **Suivant**.
 
-5. Sur la page **Connecter azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
+5. Dans la page **Connecter azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
 
 6. Dans la page **De la page De l’utilisateur,** **sélectionnez Activer l' sign-on unique,** puis sélectionnez **Suivant**.
 
@@ -92,7 +92,7 @@ Ensuite, testez la possibilité de vous inscrire à votre abonnement avec le <st
 
 3. Sélectionnez **Intranet local,** puis **Sites**.
 
-4. Dans **l’intranet local,** sélectionnez **Avancé**.
+4. Dans **l’intranet local,** sélectionnez **Avancé.**
 
 5. Dans **Ajouter ce site web à la zone,** entrez **https <span>://</span>autologon.microsoftazuread-sso.com**, **sélectionnez Ajouter**  >  **Fermer**  >    >  **OK**.
 

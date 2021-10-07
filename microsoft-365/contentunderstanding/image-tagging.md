@@ -11,15 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Présentation du balisage d’image dans SharePoint Syntex
-ms.openlocfilehash: 2e0f3e9dea8ca7d640db906715a39448eb024b2b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 79df10f80dd02930dc49f56274b00664c6f1d3d2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202284"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205928"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>Balisage d’image dans SharePoint Syntex
 

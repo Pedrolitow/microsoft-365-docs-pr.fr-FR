@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Déployez le package de configuration sur un appareil vDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données Microsoft 365 point de terminaison.
-ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9b61ee4095065010a7924031493e2810e624e1a7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183607"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204358"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Intégrer des périphériques d’infrastructure de bureau virtuel non persistants
 
@@ -29,7 +29,7 @@ ms.locfileid: "59183607"
 - Périphériques VDI (Virtual Desktop Infrastructure)
 
 > [!WARNING]
-> Microsoft 365 Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Les scénarios de sessions multiples sur Windows Virtual Desktop ne sont actuellement pas pris en charge.
+> Microsoft 365 Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Les scénarios multisess session sur Windows Virtual Desktop ne sont actuellement pas pris en charge.
 
 ## <a name="onboard-vdi-devices"></a>Appareils VDI intégrés
 
@@ -43,7 +43,7 @@ Il peut y avoir des difficultés associées lors de l’intégration des VDIs. L
 - Intégration anticipée instantanée d’une session de courte durée, qui doit être intégré à Microsoft 365 protection contre la perte de données du point de terminaison avant la mise en service réelle.
 - Le nom de l’appareil est généralement réutilisé pour les nouvelles sessions.
 
-Les périphériques VDI peuvent apparaître dans le centre de conformité Microsoft 365 les deux :
+Les appareils VDI peuvent apparaître dans le centre Microsoft 365 conformité sous la forme :
 
 - Entrée unique pour chaque appareil.
 Notez que dans  ce cas, le même nom d’appareil doit être configuré lors de la création de la session, par exemple à l’aide d’un fichier de réponses sans surveillance.
@@ -56,7 +56,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 1. Ouvrez le fichier de package de configuration VDI .zip (*DeviceCompliancePackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** intégration de  >    >  **l’appareil.**
+2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration de**  >  **l’appareil.**
 
 3. Dans le **champ Méthode de** déploiement, sélectionnez les **scripts d’intégration VDI pour les** points de terminaison non persistants.
 
@@ -98,7 +98,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 12. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images VDI (Virtual Desktop Infrastructure) non persistantes
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images DDI (Virtual Desktop Infrastructure) non persistantes
 
 En tant que meilleure pratique, nous vous recommandons d’utiliser des outils de maintenance hors connexion pour mettre à jour les images de base/de base.
 

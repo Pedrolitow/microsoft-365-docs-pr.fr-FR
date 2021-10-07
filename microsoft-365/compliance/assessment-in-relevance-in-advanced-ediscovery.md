@@ -10,7 +10,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -18,12 +18,12 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenez une vue d’ensemble de l’étape d’évaluation et de son rôle dans la détermination de la richesse des problèmes lors de l’entraînement Pertinence Microsoft 365 Advanced eDiscovery.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3965d15f64559da51b2071679913f02979d89f83db6124703c0d393608effe4
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 80ec4f0c362ff403f45123bf837e82c5d2f6ed7e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53808571"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189476"
 ---
 # <a name="assessment-in-the-relevance-module-in-advanced-ediscovery"></a>Évaluation dans le module de pertinence dans Advanced eDiscovery
   
@@ -35,9 +35,9 @@ Dans Évaluation, l’expert examine un ensemble aléatoire d’au moins 500 fic
   
 Plus le nombre de fichiers pertinents dans l’ensemble d’évaluations est élevé, plus les statistiques et l’efficacité de l’algorithme de stabilité sont précises. Le nombre de fichiers pertinents dans les fichiers d’évaluation dépend de la richesse du problème. La richesse est le pourcentage estimé de fichiers pertinents dans l’ensemble pertinent pour un problème. Les problèmes avec une richesse plus élevée atteindront un nombre de fichiers pertinents plus rapidement que les problèmes moins riches. Les problèmes de très faible richesse (par exemple, 2 % ou moins) nécessitent un ensemble d’évaluations très important pour atteindre un nombre significatif de fichiers pertinents.
   
-Les statistiques, qui sont présentées dans les onglets Suivi et Décision lors de la formation et après le calcul par lot, incluent des estimations de rappel pour différents ensembles de révision. Dans les statistiques, les estimations basées sur un ensemble d’exemples (dans ce cas, les fichiers d’évaluation) incluent la marge d’erreur et le niveau de confiance de cette marge d’erreur. Par exemple, le rappel estimé de 80 % peut avoir une marge d’erreur de plus ou moins 5 % avec un niveau de confiance de 95 %. Cela signifie que le rappel estimé est en réalité de 75 % à 85 % et que cette estimation a une confiance de 95 %. Plus l’ensemble d’évaluations est important, plus la marge d’erreur est faible et les statistiques sont plus précises. 
+Les statistiques, qui sont présentées dans les onglets Suivi et Décision lors de la formation et après le calcul par lot, incluent des estimations de rappel pour différents ensembles de révision. Dans les statistiques, les estimations basées sur un ensemble d’exemples (dans ce cas, les fichiers d’évaluation) incluent la marge d’erreur et le niveau de confiance de cette marge d’erreur. Par exemple, le rappel estimé à 80 % peut avoir une marge d’erreur de plus ou moins 5 % avec un niveau de confiance de 95 %. Cela signifie que le rappel estimé est en réalité de 75 % à 85 % et que cette estimation a une confiance de 95 %. Plus l’ensemble d’évaluations est important, plus la marge d’erreur est faible et les statistiques sont plus précises. 
   
-Une fois que l’expert a passé en revue un ensemble initial de 500 fichiers d’évaluation, Pertinence peut déterminer la marge d’erreur actuelle des valeurs de rappel. La pertinence recommande également une marge d’erreur par défaut à atteindre pour optimiser l’ensemble d’évaluations. Voici quelques exemples :
+Une fois que l’expert a passé en revue un ensemble initial de 500 fichiers d’évaluation, Pertinence peut déterminer la marge d’erreur actuelle des valeurs de rappel. La pertinence recommande également une marge d’erreur par défaut à atteindre pour optimiser l’ensemble d’évaluations. Voici quelques exemples :
   
 - Si l’ensemble d’évaluations a déjà produit une marge d’erreur de plus ou moins 10 %, Pertinence vous recommande de passer à la formation (aucune révision d’évaluation supplémentaire n’est nécessaire). 
 

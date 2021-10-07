@@ -7,32 +7,32 @@ ms.author: jaimeo
 author: jaimeo
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: e438e9a84b86bd4c3360022c0558480f317144e7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0444b1ad169619f2dfbe79b7b42ad8849f4736d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183399"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188900"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
 Votre passerelle vers le service Microsoft Manged Desktop est [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Si vous ne connaissez pas les fonctionnalités de ce portail pour la gestion des appareils, consultez [la documentation Microsoft Endpoint Manager.](/mem/)
 
 > [!NOTE]
-> Dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) les navigateurs suivants sont pris en charge :
+> Dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) navigateurs suivants sont pris en charge :
 > - Microsoft Edge (dernière version)
 > - Safari (dernière version, Mac uniquement)
 > - Chrome (dernière version)
 > - Firefox (dernière version)
 
-Votre compte d’administration aura besoin d’autorisations spécifiques pour accéder aux fonctionnalités Microsoft Manged Desktop d’administration dans Microsoft Endpoint Manager. Vous pouvez gérer l’accès administrateur à ces fonctionnalités au sein de votre organisation à l’aide du contrôle d’accès basé sur les rôles. Plusieurs rôles Azure Active Directory administrateur (Azure AD) et des rôles Microsoft Manged Desktop intégrés sont disponibles pour fournir un contrôle plus granulaire aux différentes fonctionnalités dans le portail d’administration Microsoft Manged Desktop. Pour plus d’informations sur Azure Active Directory rôles intégrés, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference) Contrairement aux rôles d’administrateur Azure AD qui s’appliquent à différents produits et services Microsoft, les rôles intégrés sont spécifiques à Microsoft Manged Desktop et garantissent uniquement l’accès aux fonctionnalités d’administration de ce service. Les administrateurs peuvent attribuer des rôles intégrés aux utilisateurs individuellement ou en combinaison avec les rôles d’administrateur Azure AD pour ajouter des autorisations Microsoft Manged Desktop aux comptes d’administrateur existants.
+Votre compte d’administration aura besoin d’autorisations spécifiques pour accéder aux fonctionnalités Microsoft Manged Desktop d’administration dans Microsoft Endpoint Manager. Vous pouvez gérer l’accès administrateur à ces fonctionnalités au sein de votre organisation à l’aide du contrôle d’accès basé sur les rôles. Plusieurs rôles Azure Active Directory administrateur (Azure AD) et des rôles Microsoft Manged Desktop intégrés sont disponibles pour fournir un contrôle plus granulaire aux différentes fonctionnalités dans le portail d’administration Microsoft Manged Desktop. Pour plus d’informations Azure Active Directory rôles intégrés, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference) Contrairement aux rôles d’administrateur Azure AD qui s’appliquent à différents produits et services Microsoft, les rôles intégrés sont spécifiques à Microsoft Manged Desktop et garantissent uniquement l’accès aux fonctionnalités d’administration de ce service. Les administrateurs peuvent attribuer des rôles intégrés aux utilisateurs individuellement ou en combinaison avec les rôles d’administrateur Azure AD pour ajouter des autorisations Microsoft Manged Desktop aux comptes d’administrateur existants.
 
 ## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Azure Active Directory rôles avec accès Microsoft Manged Desktop’accès
 
-|Rôle Azure AD  |Microsoft Manged Desktop d’autorisations  |
+|Rôle Azure AD  |Microsoft Manged Desktop autorisations  |
 |---------|---------|
 |Administrateur général     | Les administrateurs dotés de ce rôle disposeront d’autorisations de lecture et d’écriture sur toutes les **fonctionnalités** du portail Microsoft Manged Desktop’administration.         |
 |Lecteur général     | Les administrateurs dotés de ce rôle disposeront **d’autorisations** en lecture seule sur toutes les fonctionnalités du portail Microsoft Manged Desktop’administration.         |
@@ -49,7 +49,7 @@ Si vous avez besoin d’aide pour Azure Active Directory rôles intégrés, cons
 ## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Rôles intégrés fournis par Microsoft Manged Desktop
 
 
-|Rôle intégré  |Microsoft Manged Desktop d’autorisations  |
+|Rôle intégré  |Microsoft Manged Desktop autorisations  |
 |---------|---------|
 |Microsoft Manged Desktop Administrateur de service  | Lorsqu’il est attribué à un utilisateur, ce rôle donne à l’administrateur des autorisations de lecture et d’écriture sur les fonctionnalités non **liées** à la sécurité dans le portail d Microsoft Manged Desktop’administration.  |
 |Microsoft Manged Desktop Lecteur de services | Lorsqu’il est attribué à un utilisateur, ce rôle donne à l’administrateur des autorisations en lecture seule sur les fonctionnalités non **liées** à la sécurité dans le portail d Microsoft Manged Desktop’administration. |
@@ -63,7 +63,7 @@ Si vous avez besoin d’aide pour Azure Active Directory rôles intégrés, cons
 Pour faciliter la gestion des rôles intégrés, il existe un groupe de sécurité pour chaque rôle personnalisé nommé « Modern Workplace Roles - _Role Name_» (par exemple, « Modern Workplace Roles – Security Manager »). Pour affecter des utilisateurs à l’un de ces groupes de sécurité, suivez les étapes suivantes :
 1. Go the Microsoft Endpoint Manager portal.
 2. Sélectionnez **Groupes** sur le côté gauche.
-3. Recherchez **les rôles de l’espace** de travail moderne, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
+3. Recherchez **les rôles d’espace** de travail modernes, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
 4. Sélectionnez **Membres** sur le côté gauche, puis **sélectionnez + Ajouter des membres** dans la barre de commandes.
 5. Entrez l’e-mail de la personne ajoutée. S’ils sont invités, vous devez les inviter avant de pouvoir affecter le groupe.
 6. Sélectionnez **Sélectionner** en bas.

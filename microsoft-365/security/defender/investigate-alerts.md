@@ -1,6 +1,6 @@
 ---
 title: Examiner les alertes dans Microsoft 365 Defender
-description: Examinez les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
+description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18f7436c974ab9b976980861ae93bd4b3ea1fc2e
-ms.sourcegitcommit: e001934654119e15149ed29b3079b1019849f59c
+ms.openlocfilehash: cde5f6e00260710416266fd6f4113def9c7baf6f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934688"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206600"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ Dans Microsoft 365 Defender, les alertes associées sont regroupées pour former
 
 La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous arrivez à la file d’attente des alertes à partir **d’incidents & alertes** > alertes sur le lancement rapide du portail Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente d’alertes dans Microsoft 365 Defender portail.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente d’alertes dans le Microsoft 365 Defender web.":::
 
 Les alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
@@ -78,7 +78,7 @@ Vous devez avoir l’un des rôles suivants pour accéder à Microsoft Defender 
 
    - Lecteur de sécurité
 
-- Office 365 Groupes de rôles de sécurité & conformité
+- Office 365 Groupes de rôles de conformité & sécurité
 
    - Administrateur de conformité
 
@@ -109,11 +109,11 @@ Microsoft 365 Defender alertes peuvent être issues de solutions telles que Micr
 > - Le caractère précédé ne modifie pas le GUID de l’alerte. La seule modification du GUID est le composant prédépendant.<br>
 
 
-Source de l’alerte | Caractère prédépendé 
+Source de l’alerte | Caractère en prédépendant 
 :---|:---
 Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> 
-Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 ### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
@@ -141,9 +141,10 @@ Pour gérer une alerte, sélectionnez l’alerte dans la file d’attente des al
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Exemple du volet récapitulatif d’une alerte dans le portail Microsoft 365 Defender web.":::
 
-Le **volet Gérer les** alertes vous permet de spécifier :
+Le **volet Gérer les** alertes vous permet d’afficher ou de spécifier :
 
 - État de l’alerte (Nouveau, Résolu, En cours).
+- Compte d’utilisateur qui a reçu l’alerte
 - Classification de l’alerte (non définie, alerte True, Fausse alerte).
 - Pour la classification en tant qu’alerte réelle, le type de menace pour l’alerte dans le **champ Détermination.**
 - Commentaire de l’alerte.

@@ -10,17 +10,17 @@ ms.service: o365-solutions
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéogé et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9c7ad267dcb32e055038e5186595db5776999263
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 44f6b8323f99419706378ff963259cf5c5fa85e9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203280"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60209668"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 

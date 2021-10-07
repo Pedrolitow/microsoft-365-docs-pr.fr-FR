@@ -9,17 +9,17 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Utilisez ce guide de laboratoire de test pour inscrire des appareils dans Microsoft 365 environnement de test et les gérer à distance.
-ms.openlocfilehash: 5e27f2eecc9edda0a0fe7225d4ed47c7431eee77
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Utilisez ce Guide de laboratoire de test pour inscrire des appareils dans Microsoft 365 environnement de test et les gérer à distance.
+ms.openlocfilehash: 7610348febcc8c2054c50d7f7a6f1433e9b62306
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181192"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189116"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 entreprise
 
@@ -44,7 +44,7 @@ Si vous souhaitez inscrire les appareils iOS/iPadOS et Android de manière lég�
 Si vous souhaitez inscrire des appareils iOS/iPadOS et Android dans une entreprise simulée, suivez les instructions de l’authentification [directe.](pass-through-auth-m365-ent-test-environment.md)
   
 > [!NOTE]
-> Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option pour que vous pouvez tester les licences automatisées et l’appartenance à un groupe, et vous pouvez l’expérimenter dans un environnement qui représente une organisation classique.
+> Le test de la gestion automatisée des licences et de l’appartenance à un groupe ne nécessite pas l’environnement de test d’entreprise simulée, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt AD DS (Active Directory Domain Services). Il est fourni ici en tant qu’option pour que vous pouvez tester les licences automatisées et l’appartenance à un groupe, et vous pouvez l’expérimenter dans un environnement qui représente une organisation classique.
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Phase 2 : Inscrire vos appareils iOS et Android
 
@@ -53,12 +53,12 @@ Si vous envisagez d’utiliser une solution de gestion des périphériques mobil
 Dans Intune, il existe plusieurs façons d’inscrire vos appareils iOS/iPadOS et Android. Vous pouvez choisir l’option d’inscription qui fonctionne le mieux pour votre organisation. Pour plus d’informations et de conseils, consultez les articles suivants :
 
 - [Guide de déploiement : Inscrire des appareils iOS et iPadOS dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
-- [Guide de déploiement : Inscrire des appareils Android dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
+- [Guide de déploiement : inscrire des appareils Android dans Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
 
 Si vous êtes prêt à utiliser Intune pour la gestion des appareils et que vous souhaitez obtenir des conseils, les informations suivantes peuvent vous aider :
 
 - [Vue d’ensemble de la gestion des appareils](/mem/intune/fundamentals/what-is-device-management)
-- [Didacticiel : Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
+- [Tutoriel : Procédure pas à pas Intune dans Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
 - [Guide de déploiement : installation ou déplacement vers Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Phase 3 : Gérer vos appareils iOS et Android à distance
@@ -72,7 +72,7 @@ Pour les autres tâches que vous pouvez exécuter à distance, consultez les [ac
     
 ## <a name="next-step"></a>Étape suivante
 
-Explorez [d’autres fonctionnalités de gestion des](m365-enterprise-test-lab-guides.md#mobile-device-management) appareils mobiles dans votre environnement de test.
+Explorez [d’autres fonctionnalités de gestion](m365-enterprise-test-lab-guides.md#mobile-device-management) des appareils mobiles dans votre environnement de test.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment rejoindre une équipe en tant qu’invité dans Microsoft Teams.
-ms.openlocfilehash: acd5c68a7ed3e03f39037784a08cb4dce86f8163
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 62a123767fabd4bbaef6dc16c7aba0d30eec9217
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933962"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203542"
 ---
 # <a name="join-a-team-as-a-guest"></a>Rejoindre une équipe en tant qu’invité
 
@@ -40,7 +40,7 @@ ms.locfileid: "59933962"
 Si vous recevez une invitation Microsoft Teams rejoindre une équipe, vous devez suivre deux étapes pour accepter l’invitation.
 
 1. Ouvrez l’invitation par courrier électronique, puis sélectionnez **Ouvrir Microsoft Teams**. Si vous ne voyez pas l’invitation, vérifiez votre dossier de courrier indésirable ou de courrier indésirable.
-  1. Si votre adresse de messagerie n’a pas été précédemment utilisée pour créer un compte Microsoft, vous devez en créer un.
+  1. Si votre adresse de messagerie n’a pas été utilisée précédemment pour créer un compte Microsoft, vous devez en créer un.
 
      Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis **sélectionnez Suivant.**
   1. Pour vérifier votre adresse e-mail, ouvrez l’e-mail de vérification et copiez le code de sécurité.

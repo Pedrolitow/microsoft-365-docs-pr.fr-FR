@@ -1,5 +1,5 @@
 ---
-title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec accès contrôlé aux dossiers
+title: Protéger les dossiers importants contre les ransomware contre le chiffrement de vos fichiers avec un accès contrôlé aux dossiers
 description: Les fichiers des dossiers par défaut peuvent être protégés contre les changements par des applications malveillantes. Empêcher les ransomware de chiffrer vos fichiers.
 keywords: accès contrôlé aux dossiers, windows 10, windows defender, ransomware, protéger, fichiers, dossiers
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 325859d8bbaed92baafebf81c1f38c8100dd4bbe
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 0c2d4fad95371f2529fb2c8ec3e430995d1c6627
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043142"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205570"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Protéger les dossiers importants avec accès contrôlé aux dossiers
 
@@ -63,7 +63,7 @@ L’accès contrôlé aux dossiers est particulièrement utile pour protéger vo
 
 Les [dossiers protégés incluent les dossiers](#review-controlled-folder-access-events-in-windows-event-viewer) système courants (y compris les secteurs de démarrage) et vous pouvez [ajouter d’autres dossiers.](customize-controlled-folders.md#protect-additional-folders) Vous pouvez également [autoriser les applications](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) à leur donner accès aux dossiers protégés.
 
-Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également visiter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
+Vous pouvez utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de l’accès contrôlé aux dossiers sur votre organisation s’il était activé. Vous pouvez également consulter le site web Windows Defender test au [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
 
 L’accès contrôlé aux dossiers est pris en charge sur les versions suivantes Windows :
 
@@ -90,13 +90,13 @@ Windows système sont protégés par défaut, ainsi que plusieurs autres dossier
 
 ## <a name="requirements-for-controlled-folder-access"></a>Conditions requises pour l’accès contrôlé aux dossiers
 
-L’accès contrôlé aux dossiers [nécessite l’activation Antivirus Microsoft Defender protection en temps réel.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+L’accès contrôlé aux dossiers [nécessite l Antivirus Microsoft Defender protection en temps réel.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Microsoft 365 Defender portail
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements d’accès contrôlé aux dossiers dans Microsoft 365 Defender web
 
 Defender for Endpoint fournit des rapports détaillés sur les événements et les blocages dans le cadre de ses [scénarios](investigate-alerts.md) d’investigation d’alerte dans Microsoft 365 Defender portail. (Voir [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender.)](../defender/microsoft-365-security-center-mde.md)
 
-Vous pouvez interroger Microsoft Defender pour obtenir des données de point de terminaison à l’aide du [recherche avancée.](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés. [](advanced-hunting-overview.md)
+Vous pouvez interroger Microsoft Defender pour obtenir des données de point de terminaison à l’aide [de la recherche avancée.](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection) Si vous utilisez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour voir comment les paramètres d’accès contrôlé aux dossiers auraient une incidence sur votre environnement s’ils étaient activés. [](advanced-hunting-overview.md)
 
 Exemples de requête :
 

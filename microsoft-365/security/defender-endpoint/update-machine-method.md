@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7ffd136bd770369248b2f0735deb42e62f372632
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 12e4935c38a2c4748b05226237c5e31be756676c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203771"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203986"
 ---
 # <a name="update-machine"></a>Mettre à jour l’ordinateur 
 
@@ -61,7 +61,7 @@ Déléguée (compte professionnel ou scolaire)|Machine.ReadWrite|« Lire et écr
 > [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 > - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Investigation des alertes ». Pour plus d’informations, voir [Créer et gérer des rôles.](user-roles.md)
-> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres du groupe d’appareils. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,7 +73,7 @@ PATCH /api/machines/{machineId}
 
 Nom|Type|Description
 :---|:---|:---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 Content-Type|String|application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande

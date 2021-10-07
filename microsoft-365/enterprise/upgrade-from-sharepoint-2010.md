@@ -7,7 +7,7 @@ ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Trouvez des informations et des ressources à mettre à niveau depuis SharePoint 2010 et SharePoint Server 2010. Le support pour les deux se termine le 13 avril 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da824abb7575a509cb988c474e667d0475e821c1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7ce6b333e39d02000514c174579a1ad0fa816771
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205275"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205808"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Mise à jour à jour de SharePoint 2010
 
@@ -136,19 +136,19 @@ Le suivi de l’intégralité du chemin d’accès entre SharePoint 2010 et Shar
 
 N’oubliez pas de passer en revue les *chemins de* mise à niveau pris en charge et non pris en charge :
 
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
 
 Si vous avez *des personnalisations,* il est essentiel de planifier chaque étape du chemin de migration :
 
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
 
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
 
 |Avantage local|Inconvénient local|
 |---|---|
-|Contrôle total de tous les aspects de votre batterie de serveurs SharePoint (et de ses SQL), à partir du matériel du serveur.|Toutes les interruptions et correctifs sont la responsabilité de votre entreprise. Toutefois, vous pouvez engager le Support Microsoft payant si votre produit n’a pas passé la fin du support.|
+|Contrôle total de tous les aspects de votre batterie de serveurs SharePoint (et de ses SQL), à partir du matériel du serveur.|Toutes les interruptions et correctifs sont la responsabilité de votre entreprise. Toutefois, vous pouvez engager le Support Microsoft payant si votre produit n’a pas fini de prendre en charge.|
 |Ensemble complet de fonctionnalités SharePoint Server local avec la possibilité de connecter votre batterie de serveurs sur site à un abonnement SharePoint Online via un abonnement hybride.|La mise à niveau, les correctifs, les correctifs de sécurité, les mises à niveau matérielles et toute la maintenance de SharePoint Server et de sa batterie de serveurs SQL sont gérés en local.|
 |Accès complet pour des options de personnalisation plus importantes qu’avec SharePoint Online.|[Les offres de conformité Microsoft](/compliance/regulatory/offering-home) doivent être configurées manuellement en local.|
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués sur votre site sous votre contrôle.|Microsoft 365 pouvez mettre à la disposition de SharePoint Online qui n’interaront pas avec SharePoint Server local.|
@@ -177,7 +177,7 @@ Vous pouvez décider de déplacer certains de vos sites vers le matériel « per
 
 Une configuration hybride offre le meilleur des configurations en local et en ligne pour certains besoins de migration. Vous pouvez connecter SharePoint batteries de serveurs server 2013, 2016 ou 2019 à SharePoint Online pour créer un environnement SharePoint hybride : découvrez SharePoint [solutions hybrides.](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
 
-Si une batterie de serveurs SharePoint hybride est votre objectif de migration, vous devez déterminer les sites et les utilisateurs à déplacer en ligne et qui doivent rester en local. Le classement du SharePoint de votre batterie de serveurs avec un impact élevé, moyen ou faible sur votre entreprise peut vous aider à prendre cette décision. Vous devrez peut-être partager des comptes d’utilisateur uniquement pour la connexion et l’index de recherche SharePoint Server avec SharePoint Online. Toutefois, ce facteur n’est peut-être pas clair tant que vous n’avez pas d’examiner la façon dont vos sites sont utilisés. Si votre entreprise décide ultérieurement de migrer tout votre contenu vers SharePoint Online, vous pouvez déplacer tous les comptes et données restants en ligne et désaffecter votre batterie de serveurs sur site. La gestion/l’administration SharePoint batterie de serveurs sera effectuée via Microsoft 365 consoles à partir de ce moment- là.
+Si une batterie de serveurs SharePoint hybride est votre objectif de migration, vous devez déterminer les sites et les utilisateurs à déplacer en ligne et qui doivent rester en local. Le classement du SharePoint de votre batterie de serveurs avec un impact élevé, moyen ou faible sur votre entreprise peut vous aider à prendre cette décision. Vous devrez peut-être uniquement partager des comptes d’utilisateur pour la connexion et l’index de recherche SharePoint Server avec SharePoint Online. Toutefois, ce facteur n’est peut-être pas clair tant que vous n’avez pas d’examiner la façon dont vos sites sont utilisés. Si votre entreprise décide ultérieurement de migrer tout votre contenu vers SharePoint Online, vous pouvez déplacer tous les comptes et données restants en ligne et désaffecter votre batterie de serveurs sur site. La gestion/l’administration SharePoint batterie de serveurs sera effectuée via Microsoft 365 consoles à partir de ce moment- là.
 
 N’oubliez pas de vous familiariser avec les types d’hybrides existants et de configurer la connexion entre votre batterie de serveurs SharePoint sur site et votre abonnement Microsoft 365 local.
 
@@ -208,7 +208,7 @@ N’oubliez pas de passer en revue les *chemins de* mise à niveau pris en charg
 - 
   [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
 
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
 
@@ -216,17 +216,17 @@ Si vous avez *des personnalisations,* il est essentiel de planifier votre mise �
 
 - [SharePoint 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263203(v=office.12))
 
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
 
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
 
 |Professionnel local|Con local|
 |---|---|
-|Contrôle total de tous les aspects de votre batterie de SharePoint, à partir du matériel du serveur.|Toutes les interruptions et correctifs sont la responsabilité de votre entreprise. (Mais vous pouvez engager le Support Microsoft payant si votre produit n’a pas fini de prendre en charge.)|
+|Contrôle total de tous les aspects de SharePoint batterie de serveurs, à partir du matériel du serveur.|Toutes les interruptions et correctifs sont la responsabilité de votre entreprise. (Mais vous pouvez engager le Support Microsoft payant si votre produit n’a pas fini de prendre en charge.)|
 |Ensemble complet de fonctionnalités SharePoint Server local avec la possibilité de connecter votre batterie de serveurs sur site à un abonnement SharePoint Online via un abonnement hybride.|Mise à niveau, correctifs, correctifs de sécurité et maintenance SharePoint Server géré en local.|
 |Accès complet pour une personnalisation plus importante.|[Les offres de conformité Microsoft](/compliance/regulatory/offering-home) doivent être configurées manuellement en local.|
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués sur votre site sous votre contrôle.|Microsoft 365 pouvez mettre à la disposition de SharePoint Online qui ne fonctionnent pas avec SharePoint Server local.|
-|Les partenaires peuvent vous aider à migrer les données vers la prochaine version de SharePoint Server (et au-delà).|Vos sites SharePoint Server n’utiliseront pas automatiquement les certificats [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) comme le permet SharePoint Online.|
+|Les partenaires peuvent vous aider à migrer les données vers la prochaine version de SharePoint Server (et au-delà).|Vos sites SharePoint Server n’utiliseront pas automatiquement les certificats [SSL/TLS,](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) comme le permet SharePoint Online.|
 |Contrôle total des conventions d’attribution de noms, de la sauvegarde et de la restauration et d’autres options de récupération dans SharePoint Server local.|SharePoint Le serveur local est sensible aux cycles de vie des produits.|
 
 ### <a name="upgrade-resources"></a>Mettre à niveau les ressources
@@ -256,7 +256,7 @@ Vous pouvez créer un environnement de Microsoft 365/test, que vous pouvez confi
 > [!NOTE]
 > Pour utiliser l’option hybride, votre batterie de serveurs SharePoint Server 2010 doit d’abord être mise à niveau en local vers SharePoint Server 2013 ou 2016. SharePoint Foundation 2010 et SharePoint Foundation 2013 ne prisent pas en charge les connexions hybrides avec SharePoint Online.
 
-## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client Office 2010 et les serveurs et Windows 7
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour Office client et serveurs 2010 et Windows 7
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](../downloads/Office2010Windows7EndOfSupport.pdf).
 

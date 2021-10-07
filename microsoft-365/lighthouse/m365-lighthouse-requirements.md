@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés, obtenez la liste des conditions requises pour utiliser Microsoft 365 Lighthouse.
-ms.openlocfilehash: 610b8cee89576b1112e9b5e3e49d59fa4becd3a3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70aaefc7e19268a5ad4c33c50b2e165361f2c362
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179539"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60188924"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Conditions requises pour Microsoft 365 Lighthouse
 
@@ -62,7 +62,7 @@ Antivirus Microsoft Defender fait partie du système d Windows d’exploitation 
 
 ## <a name="related-content"></a>Contenu associé   
 
-[Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
+[Configurer la Microsoft 365 Lighthouse du portail d’entreprise](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse page de conformité des appareils](m365-lighthouse-device-compliance-page-overview.md) (article)\
 [Microsoft 365 Lighthouse de la page Utilisateurs](m365-lighthouse-users-page-overview.md) (article)\
 [Microsoft 365 Lighthouse de la page Gestion des menaces](m365-lighthouse-threat-management-page-overview.md) (article)\

@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble protection évolutive des points de terminaison fonctionnalités de gestion
+title: Vue d’ensemble protection évolutive des points de terminaison fonctionnalités
 ms.reviewer: ''
 description: En savoir plus sur protection évolutive des points de terminaison fonctionnalités de microsoft Defender pour le point de terminaison
 keywords: Microsoft Defender pour le point de terminaison, protection évolutive des points de terminaison, réponse, détection, cybersécurité, protection
@@ -11,18 +11,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23f093ba5f93bd8763ae27526dbeb77a16f3c5cd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f1461cc9871e57cf422c261191723d8d229cc3c9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183288"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60205210"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Vue d’ensemble de la détection et de la réponse des points de terminaison
 

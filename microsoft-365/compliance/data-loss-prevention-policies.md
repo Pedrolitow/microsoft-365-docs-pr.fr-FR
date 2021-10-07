@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: ''
+ms.localizationpriority: ''
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -24,12 +24,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: 1eba9c425e66c61e63133d39a844010a499b3eb4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cce8aa10f0ae84daa3a89881b689b93a212ef472
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206259"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204418"
 ---
 # <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
 
@@ -522,7 +522,7 @@ Au fur et à mesure de l’ajout ou de la modification de documents dans ses sit
 La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Pour empêcher le partage de documents avant que les stratégies DLP n’ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué tant que son contenu n’a pas été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default).
+> Afin d’empêcher le partage de documents avant que les stratégies DLP n’ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce que son contenu ait été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default).
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 
@@ -544,7 +544,7 @@ Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams comme emplacem
 
 ## <a name="permissions"></a>Autorisations
 
-Par défaut, les administrateurs globaux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations pour le Centre de conformité &amp; de sécurité. Par défaut, votre administrateur client aura accès à cet emplacement et peut accorder aux responsables de la mise en conformité et aux autres personnes l’accès au Centre de conformité de sécurité, sans leur donner toutes les autorisations d’un administrateur &amp; client. Pour ce faire, nous vous recommandons de :
+Par défaut, les administrateurs globaux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations pour le Centre de &amp; conformité de sécurité. Par défaut, votre administrateur client aura accès à cet emplacement et peut accorder aux responsables de la mise en conformité et aux autres personnes l’accès au Centre de conformité de sécurité, sans leur donner toutes les autorisations d’un administrateur &amp; client. Pour ce faire, nous vous recommandons de :
 
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
 

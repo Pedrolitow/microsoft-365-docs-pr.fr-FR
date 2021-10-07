@@ -9,7 +9,7 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Empêcher les violations de données personnelles avec des services de protection contre les identités, appareils et menaces Microsoft 365.
-ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a5aa97637b0d44b762d1a1146effdefb932ab47d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207051"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204970"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Utiliser la protection des identités, des appareils et des menaces pour la réglementation sur la confidentialité des données
 
@@ -32,7 +32,7 @@ Microsoft 365 offre un certain nombre de fonctionnalités de protection contre l
 
 Bien que les réglementations en matière de confidentialité des données varient en fonction de leur spécificité, la nature de ce qu’elles appellent est incorporée dans l’article 5(1)(f) du R GDPR, qui stipule que :
 
-- Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).
+- Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).
 
 Étant donné que les violations de données personnelles sont souvent dues à une compromission de compte d’administration ou d’utilisateur final et à un accès malveillant au système. Par exemple, un piratage de compte d’administrateur peut entraîner l’exfiltration de numéros de carte de crédit client ou d’autres informations personnelles. Toutes les protections généralement conseillées en matière d’identité, d’appareil et de menaces disponibles avec Microsoft 365 doivent potentiellement être implémentées, ce qui sera reflété dans votre score de conformité, disponible dans le Gestionnaire de conformité.
 
@@ -60,7 +60,7 @@ Utilisez [Azure Active Directory (Azure AD)](https://azure.microsoft.com/service
 
 Utilisez [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) pour les appareils et la catégorie **Gérer** les appareils, avec laquelle vous pouvez :
 
-- Bloquez les appareils mobiles rompus et racines de la cellule.
+- Bloquez les appareils mobiles rompus et racines.
 - Configurez Intune pour la gestion des appareils mobiles.
 - Créez des stratégies de conformité pour les appareils Android, iOS, macOS Windows mobiles.
 - Créez un profil de configuration d’appareil pour les appareils Android, iOS, macOS Windows appareils mobiles.

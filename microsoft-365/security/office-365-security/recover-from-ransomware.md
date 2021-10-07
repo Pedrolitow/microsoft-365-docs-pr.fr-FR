@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administrateurs peuvent apprendre à récupérer d’une attaque par ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9659a68e69f732203a20853320b2e35cd268a7c8
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: d2bb99111142be683c6504010576253784d3cd68
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099748"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60210400"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer d’une attaque par ransomware dans Microsoft 365
 
@@ -55,7 +55,7 @@ Le point clé ici est d’arrêter la propagation du chiffrement des données pa
 
 Si vous pensez que le courrier électronique est une cible du chiffrement de ransomware, désactivez temporairement l’accès des utilisateurs aux boîtes aux lettres. Exchange ActiveSync synchronise les données entre les appareils et Exchange Online boîtes aux lettres.
 
-Pour désactiver la Exchange ActiveSync d’une boîte aux lettres, voir Comment désactiver la Exchange ActiveSync pour les utilisateurs [dans Exchange Online](https://support.microsoft.com/help/2795303).
+Pour désactiver la Exchange ActiveSync d’une boîte aux lettres, voir Comment désactiver les Exchange ActiveSync pour les utilisateurs [dans Exchange Online](https://support.microsoft.com/help/2795303).
 
 Pour désactiver d’autres types d’accès à une boîte aux lettres, voir :
 
@@ -111,7 +111,7 @@ Une fois que vous avez récupéré, vous pouvez empêcher les clients OneDrive E
 
 ### <a name="contact-law-enforcement"></a>Contacter l’application de la loi
 
-Vous devez contacter vos autorités judiciaires locales ou fédérales. Par exemple, si vous êtes aux États-Unis, vous pouvez contacter le [bureau local DE LASV](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) ou [le service secret](http://www.secretservice.gov/).
+Vous devez contacter vos autorités judiciaires locales ou fédérales. Par exemple, si vous êtes aux États-Unis, vous pouvez contacter le [bureau local DUTN](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) ou [le service secret](http://www.secretservice.gov/).
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Envoyer un rapport sur le site web de signalement des fraudes de votre pays
 
@@ -153,7 +153,8 @@ Informations clés de Microsoft :
 
 Microsoft 365 :
 
-- [Déployer la protection contre les rançongiciels pour votre client Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Déployer la protection contre les rançongiciels pour votre client Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Optimiser la résilience des ransomware avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Protection contre les rançongiciels et programmes malveillants](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protéger votre PC Windows contre les ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Gérer les rançongiciels dans SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
@@ -165,6 +166,7 @@ Microsoft 365 Defender :
 Microsoft Azure :
 
 - [Défenses Azure pour les attaques par rançongiciel](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Optimiser la résilience des ransomware avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de sauvegarde et de restauration pour se protéger contre les rançongiciels](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Protéger contre les ransomware avec Microsoft Azure sauvegarde](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)
