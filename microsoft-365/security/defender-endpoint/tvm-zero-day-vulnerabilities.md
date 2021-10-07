@@ -1,7 +1,7 @@
 ---
 title: 'Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités'
 description: Découvrez comment rechercher et atténuer les vulnérabilités « zero-day » dans votre environnement à l’Gestion des menaces et des vulnérabilités.
-keywords: Vulnérabilités microsoft Defender pour endpoint tvm zero day, tvm, menaces & gestion des vulnérabilités, jour zéro, 0 jour, atténuer les vulnérabilités de 0 jour, vulnérabilités CVE vulnérables
+keywords: Vulnérabilités microsoft Defender pour endpoint tvm zero day, tvm, threat & gestion des vulnérabilités, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ad582fe34f4fa3b7943dc90ffd6fd12e7615c618
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: 197dba88c8944559f152772b20935450b6f30c9b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010208"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193900"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
@@ -70,7 +70,7 @@ Recherchez la vulnérabilité nommée « zero-day » ainsi qu’une description 
 
 ### <a name="software-inventory-page"></a>Page Inventaire logiciel
 
-Recherchez des logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
+Recherchez les logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
 
 :::image type="content" alt-text="Exemple de jour zéro Windows Server 2016 dans la page d’inventaire logiciel." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
 
@@ -82,7 +82,7 @@ Recherchez une balise « zero-day » pour chaque logiciel affecté par la vulné
 
 ### <a name="security-recommendations-page"></a>Page Recommandations en matière de sécurité
 
-Affichez des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités « zero-day ».
+Affichez des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités zero-day.
 
 S’il existe un logiciel avec une vulnérabilité zéro jour et des vulnérabilités supplémentaires à résoudre, vous recevrez une recommandation sur toutes les vulnérabilités.
 
@@ -100,7 +100,7 @@ Ouvrez les options de correction et choisissez le type d’attention. Une option
 
 ## <a name="track-zero-day-remediation-activities"></a>Suivre les activités de correction du jour zéro
 
-Go to the Gestion des menaces et des vulnérabilités [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, par exemple « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d’activité dans la même catégorie.
+Go to the Gestion des menaces et des vulnérabilités [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, tel que « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d’activité dans la même catégorie.
 
 ## <a name="patching-zero-day-vulnerabilities"></a>Correction des vulnérabilités du jour zéro
 

@@ -7,7 +7,7 @@ ms.date: 11/9/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Cet article décrit les points de terminaison et les URL que Office pour Mac applications tentent d’atteindre, ainsi que les services fournis.
-ms.openlocfilehash: abb744d4ee75b06e66ac6a9aa43c7fd18d8a452f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 37071b0aaf9e6f172d99a10cb4a1506f1627ef03
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177748"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177074"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Requêtes réseau dans Office pour Mac
 
@@ -234,7 +234,7 @@ Le point de terminaison réseau suivant s’applique à toutes Office applicatio
    
  **Rapports d’incident**
   
-Le point de terminaison réseau suivant s’applique à toutes les applications Office pour les activations d’abonnement Microsoft 365 et de licences commerciales/en volume. Lorsqu’un processus se crashe de façon inattendue, un rapport est généré et envoyé au service Watson.
+Le point de terminaison réseau suivant s’applique à toutes les applications Office pour les activations Microsoft 365 abonnement et les activations de licence en volume/au détail. Lorsqu’un processus se crashe de façon inattendue, un rapport est généré et envoyé au service Watson.
   
 |**URL**|**Type**|**Description**|
 |:-----|:-----|:-----|
@@ -276,11 +276,11 @@ Pour rétablir toutes les fonctionnalités pour l’utilisateur, définissez la 
   
 ### <a name="telemetry"></a>Télémétrie
   
-Office pour Mac des informations de télémétrie à Microsoft à intervalles réguliers. Les données sont téléchargées vers le point de terminaison « Nexus ». Les données de télémétrie aident l’équipe d’ingénierie à évaluer l’état d’application Office. Il existe deux catégories de télémétrie :
+Office pour Mac des informations de télémétrie à Microsoft à intervalles réguliers. Les données sont téléchargées vers le point de terminaison « Nexus ». Les données de télémétrie permettent à l’équipe d’ingénierie d’évaluer l’état d’application Office. Il existe deux catégories de télémétrie :
   
 - **Heartbeat contient** des informations sur la version et la licence. Ces données sont envoyées immédiatement au lancement de l’application. 
     
-- **L’utilisation** contient des informations sur l’utilisation des applications et les erreurs non fatales. Ces données sont envoyées toutes les 60 minutes. 
+- **L’utilisation** contient des informations sur l’utilisation des applications et des erreurs non fatales. Ces données sont envoyées toutes les 60 minutes. 
     
 Microsoft prend votre confidentialité très au sérieux. Vous pouvez en savoir plus sur la stratégie de collecte de données de Microsoft sur [https://privacy.microsoft.com](https://privacy.microsoft.com) . Pour empêcher les applications d’envoyer la télémétrie « Utilisation » , la préférence **SendAllTelemetryEnabled** peut être ajustée. La préférence est par application et peut être définie via les profils de configuration macOS, ou manuellement à partir de Terminal : 
   
@@ -304,7 +304,7 @@ La télémétrie pulsation est toujours envoyée et ne peut pas être désactiv�
   
 Lorsqu’une erreur d’application fatale se produit, l’application se termine et charge inopinément un rapport d’incident vers le service « Watson ». Le rapport d’incident se compose d’une pile d’appels, qui est la liste des étapes que l’application a traitées avant le crash. Ces étapes aident l’équipe d’ingénierie à identifier la fonction exacte qui a échoué et pourquoi.
   
-Dans certains cas, le contenu d’un document entraîne le crash de l’application. Si l’application identifie le document comme cause, elle demande à l’utilisateur s’il est possible d’envoyer également le document avec la pile d’appels. Les utilisateurs peuvent faire un choix informé à cette question. Les administrateurs informatiques peuvent avoir des exigences strictes en matière de transmission des documents et décider au nom de l’utilisateur de ne jamais envoyer de documents. La préférence suivante peut être définie pour empêcher l’envoi de documents et pour supprimer l’invite à l’utilisateur :
+Dans certains cas, le contenu d’un document entraîne le crash de l’application. Si l’application identifie le document comme cause, elle demande à l’utilisateur s’il est possible d’envoyer également le document avec la pile d’appels. Les utilisateurs peuvent faire un choix informé à cette question. Les administrateurs informatiques peuvent avoir des exigences strictes en matière de transmission des documents et décider de la part de l’utilisateur de ne jamais envoyer de documents. La préférence suivante peut être définie pour empêcher l’envoi de documents et pour supprimer l’invite à l’utilisateur :
   
 ```defaults write com.microsoft.errorreporting IsAttachFilesEnabled -bool FALSE```
 
@@ -319,7 +319,7 @@ Microsoft publie Office pour Mac mises à jour à intervalles réguliers (géné
 
 ### <a name="blocking-requests-with-a-firewallproxy"></a>Blocage des demandes avec un pare-feu/proxy
   
-Si votre organisation bloque les demandes d’URL via un pare-feu ou un serveur proxy, assurez-vous de configurer les URL répertoriées dans ce document comme étant autorisées ou de bloquer avec une réponse 40X (par exemple, 403 ou 404). Une réponse 40X permet aux applications Office d’accepter normalement l’impossibilité d’accéder à la ressource et offre une expérience utilisateur plus rapide, plutôt que de simplement abandonner la connexion, ce qui entraîne une nouvelle tentative du client.
+Si votre organisation bloque les demandes d’URL via un pare-feu ou un serveur proxy, assurez-vous de configurer les URL répertoriées dans ce document comme étant autorisées ou à bloquer avec une réponse 40X (par exemple, 403 ou 404). Une réponse 40X permet aux applications Office d’accepter normalement l’impossibilité d’accéder à la ressource et offre une expérience utilisateur plus rapide, plutôt que de simplement abandonner la connexion, ce qui entraîne une nouvelle tentative du client.
   
 Si votre serveur proxy nécessite une authentification, une réponse 407 est renvoyée au client. Pour une expérience de qualité, assurez-vous que vous utilisez Office pour Mac builds 15.27 ou ultérieures, car elles incluent des correctifs spécifiques pour l’utilisation de serveurs NTLM et Kerberos.
   

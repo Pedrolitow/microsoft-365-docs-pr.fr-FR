@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b2b5ef1857c246629c5d5fb9da067ccaa6a5339e
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 9061299034371f8ff2175f3c8a04d50068c43811
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482822"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181138"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "59482822"
 **S’applique à :**
 - Microsoft 365 Defender
 
-> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
+> Voulez-vous faire l'expérience de Microsoft 365 Defender? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Microsoft 365 Defender est une suite de défense d’entreprise pré-et post-violation unifiée qui coordonne en natif la détection, la prévention, les examens et la réponse sur les points de terminaison, les identités, les messages électroniques et les applications pour fournir une protection intégrée contre les attaques sophistiquées.
@@ -75,7 +75,7 @@ Microsoft 365 Defender’une couche unique entre produits complète les composan
 - Automatisez la réponse à la compromission en déclenchant la réparation automatique des biens touchés par le biais de corrections automatisées.
 - Permettre aux équipes de sécurité d’effectuer une recherche détaillée et efficace des menaces sur les points de terminaison et Office données.
 
-Voici un exemple de la façon dont le portail Microsoft 365 Defender met en corrélation toutes les alertes associées dans la suite de produits en un incident unique.
+Voici un exemple de la façon dont le portail Microsoft 365 Defender met en corrélation toutes les alertes associées dans la suite de produits en un seul incident.
 
 ![Exemple de page de présentation d’incident.](../../media/overview-incident.png) <br>
 
@@ -99,7 +99,7 @@ Microsoft 365 Defender fonctionnalités entre produits sont les suivantes :
 
 ## <a name="get-started"></a>Prise en main
 
-Microsoft 365 Defender licences doivent être remplies avant de pouvoir activer le service dans le portail Microsoft 365 Defender à [l’security.microsoft.com](https://security.microsoft.com). Pour plus d’informations, voir :
+Microsoft 365 Defender licences doivent être remplies avant de pouvoir activer le service dans le portail Microsoft 365 Defender à [l’security.microsoft.com](https://security.microsoft.com). Pour plus d'informations, voir :
 
 - [Conditions de licence](prerequisites.md#licensing-requirements)
 - [Activer Microsoft 365 Defender](m365d-enable.md)
@@ -117,4 +117,4 @@ Grâce à ce parcours d’apprentissage de Microsoft Learn, vous pouvez comprend
 
 
 ## <a name="see-also"></a>Voir aussi
-- [Déployer la protection contre les rançongiciels pour votre client Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Déployer la protection contre les rançongiciels pour votre client Microsoft 365](/microsoft-365/solutions/ransomware-protection-microsoft-365)

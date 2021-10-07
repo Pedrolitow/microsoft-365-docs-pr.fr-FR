@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: macapara
 author: mjcaparas
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e4c3f6d96c1b161274c1ae00c8e372e1f93bcdb7
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: ddf7af50edd8f86ec7bc176d851ae2ba98b8fa51
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043046"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181150"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Activer Microsoft Defender pour l’environnement d’évaluation des points de terminaison
 
@@ -64,7 +64,7 @@ Vous devez d’abord vérifier l’état de la licence pour vérifier qu’elle 
 
 Après avoir vérifié que l’état de la licence a été correctement mis en service, vous pouvez commencer à intégrer des appareils au service. 
 
-Dans le but d’évaluer Microsoft Defender pour endpoint, nous vous recommandons de choisir quelques appareils Windows pour effectuer l’évaluation.
+Dans le but d’évaluer Microsoft Defender pour le point de terminaison, nous vous recommandons de choisir quelques appareils Windows pour effectuer l’évaluation.
 
 Vous pouvez choisir d’utiliser l’un des outils de gestion pris en charge, mais Intune offre une intégration optimale. Pour plus d’informations, [voir Configurer Microsoft Defender pour le point](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)de terminaison dans Microsoft Intune .
 

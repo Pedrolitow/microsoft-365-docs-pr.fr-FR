@@ -11,7 +11,7 @@ metadata:
   author: twerner
   ms.author: twernermsft
   ms.date: 12/16/2020
-  localization_priority: Priority
+  ms.localizationpriority: high
 productDirectory:
   items:
     - title: Prise en main

@@ -4,7 +4,7 @@ description: Afficher les niveaux de risque et d’exposition d’un appareil de
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, Microsoft 365 Defender, centre de sécurité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour identité, page appareil, profil d’appareil, page ordinateur, profil de l’ordinateur
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: v-maave
 author: martyav
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: f33b16cb08f7573a579f46327f126071ed726e42
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9838d7f3ffed46c62891822c6e3761e36d49baf5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183208"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181210"
 ---
 # <a name="device-profile-page"></a>Page de profil d’appareil
 
@@ -48,11 +48,11 @@ Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison
 
 À côté de la zone de contenu principale de la page de profil d’appareil se trouve la barre latérale.
 
-![Image de l’onglet de barre latérale pour le profil de l’appareil.](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+![Image de l’onglet de la barre latérale pour le profil de l’appareil.](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
 La barre latérale répertorie le nom complet et le niveau d’exposition de l’appareil. Il fournit également des informations de base importantes dans les petites sous-sections qui peuvent être ouvertes ou fermées, telles que :
 
-* **Balises** : tout Microsoft Defender pour point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
+* **Balises** : tout Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
 * **Informations de sécurité** : ouvrir les incidents et les alertes actives. Les appareils inscrits dans Microsoft Defender pour le point de terminaison affichent également le niveau d’exposition et le niveau de risque.
 
 > [!TIP]
@@ -75,7 +75,7 @@ Les actions de réponse offrent un moyen rapide de se défendre contre les menac
 Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 
 * **Gérer les balises** : met à jour les balises personnalisées que vous avez appliquées à cet appareil.
-* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en conservant sa connexion à Microsoft Defender pour endpoint. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise’exécuter pendant que l’appareil est isolé, à des fins de communication.
+* **Isoler l’appareil** : isole l’appareil du réseau de votre organisation tout en conservant sa connexion à Microsoft Defender pour endpoint. Vous pouvez choisir d’autoriser Outlook, Teams et Skype Entreprise à s’exécuter lorsque l’appareil est isolé, à des fins de communication.
 * **Centre de actions** : afficher l’état des actions envoyées. Disponible uniquement si une autre action a déjà été sélectionnée.
 * **Restreindre l’exécution de** l’application : empêche l’exécution des applications qui ne sont pas signées par Microsoft.
 * **Exécuter une analyse antivirus** : met à jour Antivirus Windows Defender définitions et exécute immédiatement une analyse antivirus. Choisissez entre l’analyse rapide ou l’analyse complète.
@@ -92,13 +92,13 @@ Les appareils inscrits dans Microsoft Defender pour le point de terminaison affi
 
 ### <a name="overview-tab"></a>Onglet Overview
 
-L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide des faits de sécurité les plus importants concernant l’appareil.
+L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide des faits de sécurité les plus importants sur l’appareil.
 
 ![Image de l’onglet Vue d’ensemble pour le profil d’appareil.](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
-Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et de tous les utilisateurs actuellement connectés.
+Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et des utilisateurs actuellement connectés.
 
-Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
+Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations en matière de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
 
 ### <a name="alerts-tab"></a>Onglet Alertes
 
@@ -110,7 +110,7 @@ Vous pouvez personnaliser le nombre d’éléments affichés, ainsi que les colo
 
 Les colonnes de cet onglet incluent des informations sur la gravité de la menace ayant déclenché l’alerte, ainsi que sur l’état, l’état de l’enquête et la personne à qui l’alerte a été affectée.
 
-La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau concernés.
+La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau affectés.
 
 La sélection d’un élément dans cette liste ouvre un volant contenant encore plus d’informations sur l’alerte sélectionnée.
 
@@ -130,7 +130,7 @@ La sélection d’un élément dans cette liste ouvre un écran volant affichant
 
 La liste peut être filtrée par type d’événement spécifique ; par exemple, les événements du Registre ou les événements d’écran intelligent.
 
-La liste peut également être exportée vers un fichier CSV, en téléchargement. Bien que le fichier ne soit pas limité par le nombre d’événements, la période maximale que vous pouvez choisir d’exporter est de sept jours.
+La liste peut également être exportée vers un fichier CSV, pour téléchargement. Bien que le fichier ne soit pas limité par le nombre d’événements, la période maximale que vous pouvez choisir d’exporter est de sept jours.
 
 ### <a name="security-recommendations-tab"></a>Onglet Recommandations de sécurité
 
@@ -142,7 +142,7 @@ Comme avec les onglets précédents, le nombre d’éléments affichés par page
 
 L’affichage par défaut inclut des colonnes qui détaillent les faiblesses de sécurité traitées, la menace associée, le composant ou le logiciel associé affecté par la menace, et bien plus encore. Les éléments peuvent être filtrés selon l’état de la recommandation.
 
-### <a name="software-inventory"></a>Inventaire des logiciels
+### <a name="software-inventory"></a>Inventaire de logiciels
 
 **L’onglet Inventaire** logiciel répertorie les logiciels installés sur l’appareil.
 

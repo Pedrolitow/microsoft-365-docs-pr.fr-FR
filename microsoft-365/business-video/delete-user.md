@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment supprimer des utilisateurs Microsoft 365 entreprise.
-ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1577e8f52161ab5190f89d65a1af2a8a893d9ce1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180668"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193660"
 ---
 # <a name="delete-a-user"></a>Supprimer un utilisateur
 
@@ -36,7 +36,7 @@ Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le Centre d’administration, **sélectionnez Utilisateurs** et choisissez **Utilisateurs actifs.**
+1. Dans le Centre d’administration, **sélectionnez Utilisateurs** et sélectionnez **Utilisateurs actifs.**
 1. Sélectionnez l’utilisateur à supprimer, puis sélectionnez **Supprimer l’utilisateur.**
 1. Cochez la case pour supprimer leur licence, puis cochez la case pour supprimer leurs alias de messagerie.
 1. Si l’utilisateur avait des autorisations de boîte aux lettres déléguées, vous pouvez les supprimer ici.
@@ -45,7 +45,7 @@ Lorsqu’un employé quitte l’entreprise, vous devez le supprimer de Microsoft
 1. Cet utilisateur a maintenant 30 jours pour déplacer les fichiers vers un nouvel emplacement.
 1. Cochez la case pour accorder à un autre utilisateur l’accès à la messagerie de l’ancien employé, puis sélectionnez Sélectionner un utilisateur **et définir les options de courrier électronique.**
 1. Choisissez l’utilisateur, puis sélectionnez **Suivant.**
-1. Si vous le souhaitez, vous pouvez créer un nom d’affichage qui indique que la boîte aux lettres appartient à un ancien employé, puis sélectionner **Suivant**.
+1. Si vous le souhaitez, vous pouvez créer un nom complet qui indique que la boîte aux lettres appartient à un ancien employé, puis sélectionner **Suivant**.
 1. Activer les réponses automatiques et modifier le texte de réponse si vous le souhaitez.
 1. Choisissez à qui envoyer des réponses automatiques, des personnes à l’intérieur ou à l’extérieur de votre entreprise et si la même réponse est envoyé aux personnes extérieures à votre société, puis sélectionnez **Suivant**.
 1. Pour supprimer les alias de messagerie associés, **sélectionnez X** en côté de leurs alias.

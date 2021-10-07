@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: dc5cd2b57ce3c282c69b5a1cfac77baf27717416
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 211c450b718414608e9e16890f7e080db5bda111
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490894"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201456"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>Gérer Antivirus Microsoft Defender dans votre entreprise
 
@@ -43,7 +43,7 @@ Vous pouvez gérer et configurer les Antivirus Microsoft Defender à l’aide de
 - [Windows Management Instrumentation (WMI)](./use-wmi-microsoft-defender-antivirus.md)
 - Utilitaire de ligne de commande microsoft de protection contre les programmes [malveillants](./command-line-arguments-microsoft-defender-antivirus.md) (appelé *utilitairempcmdrun.exe* logiciel
 
-Les articles suivants fournissent des informations supplémentaires, des liens et des ressources sur l’utilisation de ces outils pour gérer et configurer Antivirus Microsoft Defender.
+Les articles suivants fournissent des informations supplémentaires, des liens et des ressources pour l’utilisation de ces outils pour gérer et configurer Antivirus Microsoft Defender.
 
 |Article|Description|
 |:---|:---|

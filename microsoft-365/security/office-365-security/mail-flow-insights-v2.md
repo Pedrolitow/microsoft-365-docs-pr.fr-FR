@@ -7,20 +7,20 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur les informations et les rapports disponibles dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 060cbc7a55257a0fbb1510fd8b2f5d325a396a86
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 81313744f8c5f14abed59b77182f64e410f9d588
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988942"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60180876"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,11 +37,11 @@ Les informations disponibles sont les :
 
 - [Aperçu des messages transférés automatiquement](mfi-auto-forwarded-messages-report.md)
 
-- [Résoudre les problèmes de boucle de courrier 1](mfi-mail-loop-insight.md)<sup></sup>
+- [Résoudre les problèmes de boucle de messagerie possibles 1](mfi-mail-loop-insight.md)<sup></sup>
 
 - [Corriger les règles de flux de messagerie lentes Insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Carte du flux de courriers](mfi-mail-flow-map-report.md)
+- [Carte du flux de messagerie](mfi-mail-flow-map-report.md)
 
 - [Nouveaux domaines en cours de forwarded email insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
 
@@ -53,9 +53,9 @@ Les informations disponibles sont les :
 
 - [Informations sur le flux de courrier entrant et sortant](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Aperçu des files d’attente](mfi-queue-alerts-and-queues.md)
+- [Informations sur les files d’attente](mfi-queue-alerts-and-queues.md)
 
-- [Aperçu et rapport sur les clients utilisant l’authentification SMTP](mfi-smtp-auth-clients-report.md)
+- [Informations et rapports sur les clients SMTP AUTH](mfi-smtp-auth-clients-report.md)
 
 - [Informations sur l’état du flux de courrier des principaux domaines](mfi-domain-mail-flow-status-insight.md)
 
@@ -71,12 +71,12 @@ Le tableau de bord de flux de messagerie est disponible pour les membres des gro
 
 - **[Exchange administrateur dans](/azure/active-directory/roles/permissions-reference#exchange-administrator)** Azure Active Directory.
 
-- **Administrateur de flux de messagerie** dans le Centre de sécurité & conformité. Si le compte n’est pas également membre des groupes de rôles Gestion de l’organisation ou Administrateur Exchange, prenons en compte les problèmes suivants :
+- **Administrateur de flux de** messagerie dans le Centre de sécurité & conformité. Si le compte n’est pas également membre des groupes de rôles Gestion de l’organisation ou Administrateur Exchange, prenons en compte les problèmes suivants :
   - L’utilisateur doit se connecter au Centre de sécurité & conformité directement sur <https://protection.office.com> .
   - L’utilisateur aura uniquement une autorisation en lecture seule sur le tableau de bord de flux de messagerie.
   - L’utilisateur n’aura pas accès au Centre d'administration Microsoft 365.
 
-Pour plus d’informations sur les [autorisations,](permissions-in-the-security-and-compliance-center.md) voir Autorisations dans le Centre de sécurité & conformité et autoriser les utilisateurs à accéder au Centre de sécurité [& conformité.](grant-access-to-the-security-and-compliance-center.md)
+Pour plus d’informations sur les [autorisations,](permissions-in-the-security-and-compliance-center.md) voir Autorisations dans le Centre de sécurité & conformité et accorder aux utilisateurs l’accès au Centre de sécurité [& conformité.](grant-access-to-the-security-and-compliance-center.md)
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de messagerie
 

@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b630c1b10722056c3d201eb300aba8f68a38bbca
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 26edfdad43cc701ecc64a304ec54b968d89fa6d1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208772"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181114"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Vue d’ensemble de l’évaluation de Microsoft Defender for Endpoint
 

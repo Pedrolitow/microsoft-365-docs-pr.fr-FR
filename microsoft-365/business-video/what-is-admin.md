@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les rôles d’administrateur dans Microsoft 365 entreprise.
-ms.openlocfilehash: 47fe5628bb8464053111078891fc1038fcdd8fa6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d63a8728ef3f4989d2753238d749371abff587ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180564"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193576"
 ---
 # <a name="what-is-a-microsoft-365-admin"></a>Qu’est-ce qu Microsoft 365 administrateur de serveur ?
 
@@ -34,7 +34,7 @@ ms.locfileid: "59180564"
 
 Dans chaque abonnement Microsoft 365 Entreprise, il doit y avoir au moins un compte d’administrateur. L’administrateur gère le service, les comptes d’utilisateur et les appareils. Si vous êtes celui qui s’est inscrit à l’abonnement, vous êtes l’administrateur global de votre abonnement. Vous pouvez également devenir administrateur si un autre administrateur vous en fait un.
 
-Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour votre abonnement, il peut s’agit d’un risque de sécurité si le compte d’administrateur est compromis par un tiers. Nous vous recommandons d’attribuer uniquement le rôle d’administrateur à ceux qui en ont réellement besoin et d’attribuer le rôle d’utilisateur à la plupart des personnes.
+Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour votre abonnement, il peut s’agit d’un risque de sécurité si le compte d’administrateur est compromis par un tiers. Nous vous recommandons d’attribuer le rôle d’administrateur uniquement à ceux qui en ont réellement besoin et d’attribuer le rôle d’utilisateur à la plupart des personnes.
 
 ## <a name="try-it"></a>Essayez !
 

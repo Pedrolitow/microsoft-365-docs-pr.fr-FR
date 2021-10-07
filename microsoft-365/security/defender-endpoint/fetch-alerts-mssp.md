@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a8e67bda0a33699f3d1934d943dd52db5a3354be
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51e0f8dacff3eb7a1e360fd999913f33619c4a56
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203988"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201420"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP client
 
@@ -87,7 +87,7 @@ Cette section vous guide sur l’utilisation d’un script PowerShell pour obten
 
 Après avoir fourni vos informations d’identification, vous devez donner votre consentement à l’application afin que l’application soit mise en service dans le client du client.
 
-1. Créez un dossier et nommez-le `MsspTokensAcquisition` :
+1. Créez un dossier et nommez-le : `MsspTokensAcquisition` .
 
 2. Téléchargez [le module LoginBrowser.psm1](https://github.com/shawntabrizi/Microsoft-Authentication-with-PowerShell-and-MSAL/blob/master/Authorization%20Code%20Grant%20Flow/LoginBrowser.psm1) et enregistrez-le dans le `MsspTokensAcquisition` dossier.
 
@@ -179,7 +179,7 @@ Vous pouvez maintenant télécharger le fichier de configuration approprié pour
 
 ## <a name="fetch-alerts-from-mssp-customers-tenant-using-apis"></a>Récupérer des alertes à partir du client MSSP client à l’aide des API
 
-Pour plus d’informations sur la récupération d’alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
+Pour plus d’informations sur la récupération des alertes à l’aide de l’API REST, voir [Extraire des alertes à l’aide de l’API REST.](pull-alerts-using-rest-api.md)
 
 ## <a name="see-also"></a>Voir aussi
 

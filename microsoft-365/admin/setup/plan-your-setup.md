@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez les exigences et les considérations à prendre en compte pour effectuer le déplacement vers Microsoft 365 entreprise.
-ms.openlocfilehash: bda849f6337ed2cc9b9c5b2bc5a192e7ac016e03
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 7e7d3a56d58c19e36372a4e3d8f32788bf19771d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786346"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193828"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier votre installation de Microsoft 365 pour les entreprises
 
@@ -54,7 +54,7 @@ L’Assistant Installation vous permet d’installer les applications Microsoft 
 > [!NOTE]
 > Si vous devez attribuer des rôles d’administrateur [dans Microsoft 365](../add-users/assign-admin-roles.md) entreprise aux utilisateurs que vous ajoutez dans l’Assistant, vous pouvez le faire ultérieurement sur la page **Utilisateurs.** 
   
-Si vous n’avez pas terminé l’Assistant Installation, vous pouvez effectuer les tâches d’installation à tout moment à partir du programme d’installation [du Centre d’administration.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >   À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser des mots de passe et faire d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la **page** d’installation, voir Différences entre l’Assistant Microsoft 365 configuration et la [page d’installation.](o365-setup-wizard-and-setup-page.md)
+Si vous n’avez pas terminé l’Assistant Installation, vous pouvez effectuer les tâches d’installation à tout moment à partir du programme d’installation [du Centre d’administration.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >   À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser les mots de passe et faire d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la **page** d’installation, voir Différences entre l’Assistant Microsoft 365 configuration et la [page d’installation.](o365-setup-wizard-and-setup-page.md)
 
 Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là pour vous aider.](../../business-video/get-help-support.md)
   
@@ -62,7 +62,7 @@ Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là 
 
 Il existe quelques scénarios qui incluent la migration de données ou d’utilisateurs à partir d’environnements locaux ou la configuration d’un système hybride qui inclut la synchronisation d’annuaires. Si vous êtes dans l’une ou l’autre catégorie, suivez les instructions des articles suivants :
   
-- Pour configurer la synchronisation d’annuaires avec votre annuaire Active Directory local, consultez Configurer la synchronisation d’annuaires pour [Microsoft 365](../../enterprise/set-up-directory-synchronization.md)et pour comprendre les différents modèles d’identité dans Microsoft 365, lisez Comprendre l’identité Microsoft 365 et les [Azure Active Directory](../../enterprise/about-microsoft-365-identity.md).
+- Pour configurer la synchronisation d’annuaires avec votre annuaire Active Directory local, voir Configurer la synchronisation d’annuaires pour [Microsoft 365](../../enterprise/set-up-directory-synchronization.md)et pour comprendre les différents modèles d’identité dans Microsoft 365, lisez Comprendre l’identité Microsoft 365 et [les Azure Active Directory](../../enterprise/about-microsoft-365-identity.md).
 
 - Pour configurer un déploiement Exchange hybride, les instructions relatives aux différentes étapes (dont la configuration des enregistrements DNS) sont disponibles ici : [Assistant de déploiement Exchange Server](/exchange/exchange-deployment-assistant)
 
@@ -74,7 +74,7 @@ Il existe quelques scénarios qui incluent la migration de données ou d’utili
 
 - **Voulez-vous passer à Microsoft 365 progressivement ?** Si vous souhaitez passer à Microsoft 365 par étapes, ignorez l’exécution de l’Assistant Installation de Microsoft 365 et envisagez d’adopter Microsoft 365 fonctionnalités dans l’ordre suivant :
 
-    1. [Ajoutez vos employés à Microsoft 365](../add-users/add-users.md) pour qu’ils téléchargent et installent les Office applications.
+    1. [Ajoutez vos employés à Microsoft 365](../add-users/add-users.md) afin qu’ils peuvent télécharger et installer les Office applications.
 
     2. [Téléchargez et installez les applications Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) afin d'utiliser Word, Excel et PowerPoint sur votre ordinateur et vos appareils.
 
@@ -102,11 +102,11 @@ Si vous comptez utiliser Microsoft 365 pour votre courrier électronique :
 
 - Une fois votre hôte de domaine mis à jour, les modifications prennent généralement effet après une heure ou deux. Toutefois, sachez que la mise à jour sur Internet des modifications peut prendre jusqu’à 72 heures.
 
-- Étant donné que vous pouvez avoir un temps d’arrêt du courrier électronique, nous vous recommandons de passer à la messagerie Microsoft le soir ou le week-end lorsque vous recevez moins d’e-mails.
+- Étant donné que vous pouvez avoir un temps d’arrêt du courrier électronique, nous vous recommandons de passer à la messagerie Électronique Microsoft le soir ou le week-end lorsque vous recevez moins d’e-mails.
 
 ### <a name="plan-to-move-your-existing-email-contacts-and-calendar"></a>Planifier le déplacement de vos courriers, contacts et calendrier existants
   
-Si vous comptez utiliser Microsoft 365 pour votre compte de messagerie, vous pouvez apporter votre courrier électronique, vos contacts et votre calendrier existants avec vous. La page **Installation** vous aide à déplacer vos messages électroniques et contacts existants pour la plupart des scénarios. Nous proposons également des guides détaillés pour le déplacement d'une ou plusieurs boîtes aux lettres.
+Si vous comptez utiliser Microsoft 365 pour votre compte de messagerie, vous pouvez apporter votre courrier électronique, vos contacts et votre calendrier existants avec vous. La page **Installation** vous aide à déplacer votre courrier électronique et vos contacts existants pour la plupart des scénarios. Nous proposons également des guides détaillés pour le déplacement d'une ou plusieurs boîtes aux lettres.
   
 |**Nombre de boîtes aux lettres ?**|**Recommandation**|
 |:-----|:-----|
@@ -115,7 +115,7 @@ Si vous comptez utiliser Microsoft 365 pour votre compte de messagerie, vous pou
 
 ## <a name="plan-for-file-storage-and-migration"></a>Planifier le stockage et la migration de fichiers
 
-Microsoft 365 offre un stockage cloud pour les individus, les petites organisations et les entreprises. Pour obtenir des instructions sur les l’endroit où stocker, voir Où stocker [des documents dans Microsoft 365](../../business-video/store-files.md).
+Microsoft 365 offre un stockage cloud pour les individus, les petites organisations et les entreprises. Pour obtenir des instructions sur les l’endroit où stocker, voir [Où stocker des documents dans Microsoft 365](../../business-video/store-files.md).
   
 - **Vous pouvez déplacer des centaines de fichiers vers** [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) ou vers un [site d SharePoint’équipe.](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242) Vous pouvez charger jusqu'à 100 fichiers à la fois. Évitez de charger des fichiers d'une taille supérieure à 2 Go, soit la taille de fichier maximale par défaut.
   
@@ -123,15 +123,15 @@ Microsoft 365 offre un stockage cloud pour les individus, les petites organisati
   
 ## <a name="plan-for-teams"></a>Planifier les Teams
 
-Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide Teams sans configuration spéciale. Pour plus d’informations, [consultez La mise en Microsoft Teams](/MicrosoftTeams/get-started-with-teams-quick-start).
+Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide Teams sans configuration spéciale. Pour plus d’informations, [consultez La](/MicrosoftTeams/get-started-with-teams-quick-start)mise en Microsoft Teams .
 
 Pour les grandes organisations ou si vous débutez à partir de déploiements Skype Entreprise, locaux ou hybrides, voir comment déployer [Microsoft Teams](/MicrosoftTeams/how-to-roll-out-teams).
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>Planifier l'intégration avec Active Directory ou d'autres logiciels
 
-- **Vous voulez opérer une intégration avec votre Active Directory en local ?** Vous pouvez intégrer votre annuaire Active Directory local à Microsoft 365 à l’aide Azure Active Directory Connecter. Pour obtenir des instructions, voir Configurer la synchronisation [d’annuaires pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
+- **Vous voulez opérer une intégration avec votre Active Directory en local ?** Vous pouvez intégrer votre annuaire Active Directory local à Microsoft 365 à l’aide de Azure Active Directory Connecter. Pour obtenir des instructions, voir Configurer la synchronisation [d’annuaires pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
   
-- **Souhaitez-vous intégrer des Microsoft 365 logiciels d’autres entreprises ?** Si vous devez intégrer des Microsoft 365 à d’autres logiciels de votre organisation, nous vous recommandons d’envisager d’engager un partenaire pour vous aider dans votre déploiement. [](https://go.microsoft.com/fwlink/?linkid=391089)
+- **Souhaitez-vous intégrer des Microsoft 365 logiciels d’autres entreprises ?** Si vous devez intégrer des Microsoft 365 à d’autres logiciels de votre organisation, nous vous recommandons d’envisager d’engager un [partenaire](https://go.microsoft.com/fwlink/?linkid=391089) pour vous aider dans votre déploiement.
   
 ## <a name="do-you-want-someone-to-help-you-set-up-microsoft-365"></a>Voulez-vous que quelqu’un vous aide à configurer Microsoft 365 ?
 

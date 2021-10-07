@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: bcarter
 author: brendacarter
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c36e0f9841d0b1e95d17734047a1ad9f35d3739c
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 09a1613b82cfd6d88aae76784d59f99d58c48a07
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042589"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181090"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-cloud-app-security"></a>Activer l’environnement d’évaluation pour Microsoft Cloud App Security
 
@@ -87,7 +87,7 @@ Le tableau de bord de découverte cloud est conçu pour vous donner plus d’inf
 
 Pour commencer à utiliser le tableau de bord de découverte cloud, voir [Utilisation des applications découvertes.](/cloud-app-security/discovered-apps)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Étape 3 sur 3 : [Pilote Microsoft Cloud App Security](eval-defender-mcas-pilot.md)
 

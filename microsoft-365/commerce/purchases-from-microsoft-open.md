@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid: MET150
 ROBOTS: NOINDEX
 description: Découvrez comment activer, renouveler ou ajouter des licences à un abonnement Microsoft 365 entreprise.
 ms.date: 10/21/2020
-ms.openlocfilehash: 78524b47b32d1b827cc6d525e4aa8e3feb499557
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e93638bfc8a5f88ff3575a2f0bccc2ab75171fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183791"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177626"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Entrer votre clé de produit achetée auprès de Microsoft Open
 
@@ -33,7 +33,7 @@ Si vous avez acheté Microsoft 365 entreprise dans le cadre d’un programme de 
   
  **Vous avez besoin d’aide immédiatement ?** [Appelez le support Microsoft.](..//business-video/get-help-support.md) 
   
- **Vous avez besoin d'autres informations ?**
+ **Vous avez besoin d’autres informations ?**
  
  **Pour obtenir de l’aide Microsoft 365 famille ou personnel,** voir Utilisation des clés de produit [avec Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).
   
@@ -65,4 +65,4 @@ Les partenaires peuvent consulter la rubrique [Partenaires : utiliser une clé d
   
 Les clients ayant acquis des licences en volume peuvent en apprendre davantage en visitant le site [Ressources et formation sur le Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Ou, si vous souhaitez parler à une personne, [appelez le Support Microsoft.](../business-video/get-help-support.md)
+Ou, si vous souhaitez parler à une personne, [appelez le Support Microsoft](../business-video/get-help-support.md).

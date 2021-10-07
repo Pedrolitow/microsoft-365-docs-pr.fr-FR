@@ -12,13 +12,13 @@ metadata:
   author: mjcaparas
   ms.author: macapara
   ms.date: 02/05/2021
-  localization_priority: Priority
-  ms.openlocfilehash: 7e068e1431ad1d0e03c50050cb45eb91fc947e62
-  ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+  ms.localizationpriority: high
+  ms.openlocfilehash: 170f0ffff578bd1dd72a0b20d62cba34ffb35787
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/16/2021
-  ms.locfileid: "59401169"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60180970"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:

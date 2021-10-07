@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6a89c0e9d9b8b66048ddd50ab967520987a152a9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 966ccb0437f47b35c376c5ad4926464610871c92
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183199"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181126"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Activer l’environnement d’évaluation pour Microsoft Defender pour l’identité
 
@@ -42,7 +42,7 @@ Utilisez les étapes suivantes pour configurer votre environnement Microsoft Def
 - [Étape 1. Configurer Defender pour l’instance d’identité](#step-1-set-up-the-defender-for-identity-instance)
 - [Étape 2. Installer et configurer le capteur](#step-2-install-and-configure-the-sensor)
 - [Étape 3. Configurer les paramètres du journal des événements et du proxy sur les ordinateurs avec le capteur](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
-- [Étape 4. Autoriser Defender pour l’identité à identifier les administrateurs locaux sur d’autres ordinateurs](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
+- [Étape 4. Autoriser Defender for Identity à identifier les administrateurs locaux sur d’autres ordinateurs](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
 
 ## <a name="step-1-set-up-the-defender-for-identity-instance"></a>Étape 1. Configurer Defender pour l’instance d’identité
 
@@ -80,7 +80,7 @@ Sur les ordinateurs sur qui vous avez installé le capteur, configurez Windows c
 
 La détection du chemin de déplacement latéral de Microsoft Defender pour l’identité s’appuie sur des requêtes qui identifient les administrateurs locaux sur des ordinateurs spécifiques. Ces requêtes sont effectuées avec le protocole SAM-R, à l’aide du compte Defender for Identity Service. 
 
-Pour vous assurer que les clients et serveurs Windows autorisent votre compte Defender for Identity à effectuer sam-R, une modification de la stratégie de groupe doit être apportée pour ajouter le compte de service Defender for Identity en plus des comptes configurés répertoriés dans la stratégie d’accès réseau. Veillez à appliquer des stratégies de groupe à tous les **ordinateurs à l’exception des contrôleurs de domaine.**
+Pour vous assurer que Windows clients et serveurs autorisent votre compte Defender for Identity à effectuer sam-R, une modification de la stratégie de groupe doit être apportée pour ajouter le compte de service Defender for Identity en plus des comptes configurés répertoriés dans la stratégie d’accès réseau. Veillez à appliquer des stratégies de groupe à tous les **ordinateurs à l’exception des contrôleurs de domaine.**
 
 Pour obtenir des instructions sur la façon de faire, voir Configurer Microsoft Defender pour l’identité pour effectuer des [appels distants à SAM](/defender-for-identity/install-step8-samr). 
 

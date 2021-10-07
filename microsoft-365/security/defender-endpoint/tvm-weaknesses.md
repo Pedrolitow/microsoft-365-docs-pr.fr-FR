@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13391bb906f2d056d4c554d52ffcf1ed8b6a6e2b
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 5395ae9452dae6ffc170ee294c59fce4942000a0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60042745"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193936"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : Gestion des menaces et des vulnérabilités
 
@@ -79,7 +79,7 @@ Affichez les informations sur les violations et menaces associées dans la colon
  > [!NOTE]
  > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l’icône d’informations sur les menaces ![ Simple dessin d’un bogue rouge.](images/tvm_bug_icon.png) et l’icône d’informations sur la violation, dessin ![ simple d’une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .
 
-L’icône Informations sur les violations est mise en surbrill valeur si une vulnérabilité est trouvée dans votre organisation.
+L’icône Informations sur les violations est mise en surbrillant si une vulnérabilité est trouvée dans votre organisation.
 ![Exemple de texte d’informations sur la violation qui pourrait s’afficher lorsque vous placez le pointage sur l’icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
 
 L’icône Informations sur les menaces est mise en évidence si la vulnérabilité trouvée dans votre organisation est associée à des exploits. Le pointage sur l’icône indique si la menace fait partie d’un kit d’exploitation ou est connectée à des campagnes avancées persistantes ou à des groupes d’activités spécifiques. Lorsqu’il est disponible, il existe un lien vers un rapport d’analyse des menaces avec les actualités sur l’exploitation zéro jour, les divulgations ou les conseils de sécurité associés.
@@ -90,7 +90,7 @@ L’icône Informations sur les menaces est mise en évidence si la vulnérabili
 
 Si vous sélectionnez un contrôle CVE, un panneau volant s’ouvre avec plus d’informations, telles que la description de la vulnérabilité, les détails, les informations sur les menaces et les appareils exposés.
 
-- La catégorie « Fonctionnalité du système d’exploitation » est affichée dans les scénarios pertinents
+- La catégorie « Fonctionnalité du système d’exploitation » s’affiche dans les scénarios pertinents
 - Vous pouvez passer à la recommandation de sécurité associée pour chaque CVE avec appareil exposé
 
  ![Exemple de volant de faiblesse.](images/tvm-weakness-flyout400.png)
@@ -123,7 +123,7 @@ Les informations sur l’appareil exposé ne seront pas disponibles pour les VC 
 
 Afficher les informations sur les faiblesses associées dans la page de l’appareil.
 
-1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. La page **d’inventaire des** appareils s’ouvre.
+1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. La page **Inventaire des** appareils s’ouvre.
 
 2. Dans la page **Inventaire des** appareils, sélectionnez le nom de l’appareil que vous souhaitez examiner.
 

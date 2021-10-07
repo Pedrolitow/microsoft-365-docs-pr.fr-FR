@@ -4,18 +4,18 @@ description: Explique les deux outils, les vérifications qu’ils exécutent et
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: cc06faa8a5a18f8f63a984e6ce3f7b6bfb6cbc4b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c584632a625ecb8597aa0c9319063e6f9198bec3
+ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205172"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60216933"
 ---
 # <a name="readiness-assessment-tools"></a>Outils d’évaluation de la préparation
 
@@ -27,10 +27,13 @@ Pour plus d’informations sur l’utilisation de l’outil de vérification de 
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Outil d’évaluation de la préparation en ligne pour les paramètres de gestion
 
-L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Manged Desktop. [](https://aka.ms/mmdart) Microsoft Manged Desktop conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Après 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
+L’outil en ligne vérifie les paramètres dans Microsoft Endpoint Manager (en particulier, Microsoft Intune), Azure Active Directory (Azure AD) et Microsoft 365 pour s’assurer qu’ils fonctionneront avec Microsoft Manged Desktop. [](https://aka.ms/mmdart) Microsoft Manged Desktop conserve les données associées à ces vérifications pendant 12 mois après la dernière vérification dans votre organisation Azure AD (client). Au bout de 12 mois, nous le conservons sous forme d’identification. Vous pouvez choisir de supprimer les données que nous collectons.
 
 Toute personne ayant au moins le rôle Lecteur global ou Administrateur Intune pourra exécuter cet outil, mais deux des vérifications[(](readiness-assessment-fix.md#conditional-access-policies) les stratégies d’accès conditionnel et l’authentification [multifacteur](readiness-assessment-fix.md#multifactor-authentication) nécessitent des autorisations supplémentaires.
- 
+
+> [!IMPORTANT]  
+> L’outil d’évaluation de la préparation en ligne vous permet de vérifier votre disponibilité pour vous inscrire à Microsoft Manged Desktop pour la première fois. Si votre organisation est déjà inscrite dans Microsoft Manged Desktop, n’utilisez pas cet outil.
+
 L’outil d’évaluation vérifie les éléments ci-après :
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune paramètres
@@ -59,7 +62,7 @@ L’outil d’évaluation vérifie les éléments ci-après :
 
 |Chèque  |Description  |
 |---------|---------|
-|Abonnements « ad hoc » pour l’itinérance Enterprise’état     | Indique comment vérifier un paramètre qui (s’il est « false ») risque d’empêcher Enterprise’itinérance d’état de fonctionner correctement  |
+|Abonnements « ad hoc » pour Enterprise’itinérance d’état     | Indique comment vérifier un paramètre qui (s’il est « false ») risque d’empêcher Enterprise’itinérance d’état de fonctionner correctement  |
 |Itinérance du statut Entreprise     | Indique comment vérifier que l’itinérance Enterprise’état est activée       |
 |Licences     | Vérifie que vous avez obtenu les [licences nécessaires](prerequisites.md#more-about-licenses)         |
 |Authentification multifacteur     | Vérifie que l’authentification multifacteur n’est pas appliquée à tous les utilisateurs (l’authentification multifacteur ne doit pas être appliquée accidentellement Microsoft Manged Desktop comptes de service.)|
@@ -74,7 +77,7 @@ L’outil d’évaluation vérifie les éléments ci-après :
 
 |Chèque  |Description  |
 |---------|---------|
-|OneDrive Entreprise     | Vérifie si OneDrive Entreprise utilise des paramètres non pris en OneDrive Entreprise.        |
+|OneDrive Entreprise     | Vérifie si OneDrive Entreprise utilise des paramètres non pris en OneDrive Entreprise.        |
 
 
 Pour chaque vérification, l’outil signalera l’un des quatre résultats possibles :

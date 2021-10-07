@@ -8,18 +8,18 @@ manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer un incident de débordement de données dans votre organisation et y répondre.
-ms.openlocfilehash: 340bf10dc57737c024d1ffcb3a441ba53bc917d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 51fe6119acff7007f879b2ef323f263865458dfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204125"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177614"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Série de solutions eDiscovery : scénario de débordement de données : recherche et purge
 
@@ -64,7 +64,7 @@ Voici comment gérer un incident de débordement de données :
 
 Selon votre pratique organisationnelle, vous devez contrôler qui peut accéder au cas eDiscovery utilisé pour examiner un incident de débordement de données et configurer des limites de conformité. Le moyen le plus simple de le faire consiste à ajouter des enquêteurs en tant que membres d’un groupe de rôles existant dans le Centre de conformité Microsoft 365, puis à ajouter le groupe de rôles en tant que membre du cas eDiscovery. Pour plus d’informations sur les groupes de rôles eDiscovery intégrés et sur la façon d’ajouter des membres à un cas [eDiscovery, voir Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md).
   
-Vous pouvez également créer un groupe de rôles qui corresponde aux besoins de votre organisation. Par exemple, vous souhaitez peut-être qu’un groupe d’enquêteurs de débordement de données dans l’organisation accède à tous les cas de débordement de données et collabore sur ceux-là. Pour ce faire, créez un groupe de rôles « Enquêteur de débordement de données », attribuez les rôles appropriés (Exportation, Déchiffrement RMS, Révision, Aperçu, Recherche de conformité et Gestion des cas), ajoutez les enquêteurs de débordement de données au groupe de rôles, puis ajoutez le groupe de rôles en tant que membre du cas de découverte électronique de débordement de données. Pour obtenir des instructions détaillées sur la façon de faire, voir Configurer les limites de conformité pour les enquêtes [eDiscovery](set-up-compliance-boundaries.md) dans Office 365 pour obtenir des instructions détaillées sur la façon de le faire. 
+Vous pouvez également créer un groupe de rôles qui corresponde aux besoins de votre organisation. Par exemple, vous souhaitez peut-être qu’un groupe d’enquêteurs de débordement de données dans l’organisation accède à tous les cas de débordement de données et collabore sur ceux-là. Pour ce faire, créez un groupe de rôles « Enquêteur de débordement de données », attribuez les rôles appropriés (Exportation, Déchiffrement RMS, Révision, Aperçu, Recherche de conformité et Gestion des cas), ajoutez les enquêteurs de débordement de données au groupe de rôles, puis ajoutez le groupe de rôles en tant que membre du cas eDiscovery de débordement de données. Pour obtenir des instructions détaillées sur la façon de faire, voir Configurer les limites de conformité pour les enquêtes [eDiscovery](set-up-compliance-boundaries.md) dans Office 365 pour obtenir des instructions détaillées sur la façon de le faire. 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Étape 2 : Créer un cas eDiscovery
 
@@ -133,7 +133,7 @@ Une fois que vous avez passé en revue et validé que les résultats de la reche
 
 Il existe deux façons de collecter une liste d’adresses de messagerie de boîtes aux lettres avec des données surdessées.
 
-**Option 1 : Obtenir une liste d’adresses de boîtes aux lettres avec des données surdessées**
+**Option 1 : obtenir une liste d’adresses de boîtes aux lettres avec des données surdessées**
 
 1. Ouvrez le cas eDiscovery, allez sur la page **De** recherche et sélectionnez la recherche de contenu appropriée. 
     
@@ -159,7 +159,7 @@ Si la récupération d’élément unique est activée ou si une boîte aux lett
 
 - Pour obtenir des instructions sur la façon de vérifier si la récupération d’élément unique est activée ou si la boîte aux lettres est placée en conservation ou si une stratégie de rétention est affectée à une stratégie de rétention, voir « Étape 1 : Collecter des informations sur la boîte aux lettres » dans Supprimer les éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) des boîtes aux lettres en nuage. 
 
-- Voir « Étape 2 : Préparer la boîte aux lettres » dans Supprimer des éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) des boîtes aux lettres en nuage en attente pour obtenir des instructions sur la désactivation de la récupération d’élément unique. 
+- Voir « Étape 2 : Préparer la boîte aux lettres » dans Supprimer les éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) des boîtes aux lettres en nuage en attente pour obtenir des instructions sur la désactivation de la récupération d’élément unique. 
 
 - Voir « Étape 3 : Supprimer toutes les conservations de la boîte aux lettres » dans Supprimer les éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) des boîtes aux lettres en nuage en attente pour obtenir des instructions sur la suppression d’une conservation ou d’une stratégie de rétention d’une boîte aux lettres. 
 
@@ -176,7 +176,7 @@ Veillez à revenir aux configurations précédentes de la boîte aux lettres apr
 
 Pour supprimer les messages déversés, voir [Rechercher et supprimer des messages électroniques.](search-for-and-delete-messages-in-your-organization.md)
 
-Gardez les limites suivantes à l’esprit lors de la suppression des données déversées :
+Gardez les limites suivantes à l’esprit lors de la suppression des données surdessées :
 
 - Le nombre maximal de boîtes aux lettres dans une recherche que vous pouvez utiliser pour supprimer des éléments en faisant une action de recherche et de purge est de 50 000. Si la recherche que vous créez à l’étape 3 recherche plus de 50 000 boîtes aux lettres, l’action de purge échouera. Une recherche de plus de 50 000 boîtes aux lettres au cours d’une même recherche est probable, généralement lorsque la configuration de la recherche prend en compte toutes les boîtes aux lettres de votre organisation. Cette restriction s’applique même si moins de 50 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche.
 
@@ -191,7 +191,7 @@ L’étape finale du flux de travail pour gérer un incident de débordement de 
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Reconnextage des boîtes aux lettres à leur état précédent
 
-Si vous avez modifié une configuration de boîte aux lettres à l’étape 6 pour préparer les boîtes aux lettres avant la suppression des données supprimées, vous devez les revenir à leur état précédent. Voir « Étape 6 : Rétablir l’état précédent de la boîte aux lettres » dans Supprimer des éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)des boîtes aux lettres en nuage en attente.
+Si vous avez modifié une configuration de boîte aux lettres à l’étape 6 pour préparer les boîtes aux lettres avant la suppression des données supprimées, vous devrez les revenir à leur état précédent. Voir « Étape 6 : Rétablir l’état précédent de la boîte aux lettres » dans Supprimer des éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)des boîtes aux lettres en nuage en attente.
   
 ### <a name="deleting-the-search-query"></a>Suppression de la requête de recherche
 
@@ -205,7 +205,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’examen de débordement de données
 
-Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées au cours de l’examen. Vous pouvez également effectuer une recherche dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction -Purge** que vous avez mise en place à l’étape 7 pour supprimer les données surdessinées. Pour plus d’informations, consultez :
+Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées au cours de l’examen. Vous pouvez également effectuer une recherche dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction -Purge** que vous avez mise en place à l’étape 7 pour supprimer les données surdessinées. Pour plus d'informations, voir :
 
 - [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 

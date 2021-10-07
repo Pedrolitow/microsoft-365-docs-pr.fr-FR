@@ -15,14 +15,14 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment Teams fonctionne avec Microsoft 365 multigéogé.
-ms.openlocfilehash: 6df7d20b8541ec6aefca1f30d7fbfe6bf7c3f6c9
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: e561332052f226fe98d0304bd6a76d6b76cfd1c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043010"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177278"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Fonctionnalités multigé géographiques dans Microsoft Teams
 
@@ -57,9 +57,9 @@ Lorsqu’un utilisateur crée une équipe, le PDL de cet utilisateur détermine 
 
 Pour les équipes existantes, si un administrateur ajoute ou modifie le PDL pour le groupe Microsoft 365 qui assure le soutien d’une équipe, les données de messagerie de canal de cette équipe sont ajoutées à une file d’attente de migration pour être déplacées vers l’emplacement géographique spécifié.
 
-La modification du PDL du groupe de Microsoft 365 place en file d’attente Teams données à migrer vers l’emplacement choisi. Toutefois, cela ne migre pas le site SharePoint ou les fichiers associés au groupe automatiquement. Vous devez déplacer le site séparément en suivant les procédures dans Déplacer un [site SharePoint vers un autre emplacement géographique.](/microsoft-365/enterprise/move-sharepoint-between-geo-locations) N’oubliez pas de suivre les deux étapes pour Teams données et SharePoint données d’un groupe à différents emplacements.
+La modification du PDL du groupe de Microsoft 365 place en file d’attente Teams données à migrer vers l’emplacement choisi. Toutefois, cela ne migre pas le site SharePoint ou les fichiers associés au groupe automatiquement. Vous devez déplacer le site séparément en suivant les procédures de déplacement [d’un site SharePoint vers un autre emplacement géographique.](/microsoft-365/enterprise/move-sharepoint-between-geo-locations) N’oubliez pas de suivre les deux étapes pour Teams données et SharePoint données d’un groupe à différents emplacements.
 
-Pour rechercher l’emplacement actuel des données d’une équipe, connectez-vous [Teams PowerShell](/powershell/module/teams/connect-microsoftteams) et exécutez la commande suivante :
+Pour rechercher l’emplacement actuel des données d’une équipe, connectez-vous [à Teams PowerShell](/powershell/module/teams/connect-microsoftteams) et exécutez la commande suivante :
 
 ```PowerShell
 Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
@@ -67,7 +67,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 ## <a name="user-experience"></a>Expérience de l’utilisateur
 
-Teams Multi-Géo est transparent pour l’utilisateur final. Une fois que vous modifiez la PDL d’un utilisateur ou d’un groupe, les données respectives sont en file d’attente pour la migration et la migration se produit automatiquement sans impact sur l’utilisateur ou son client Teams même s’ils sont actifs pendant la migration.
+Teams Multi-Géo est transparent pour l’utilisateur final. Une fois que vous modifiez le PDL d’un utilisateur ou d’un groupe, les données respectives sont en file d’attente pour la migration et la migration se produit automatiquement sans impact sur l’utilisateur ou son client Teams, même s’ils sont actifs pendant la migration.
 
 ## <a name="see-also"></a>Voir aussi
 

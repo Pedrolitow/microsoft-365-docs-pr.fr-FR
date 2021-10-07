@@ -7,7 +7,7 @@ ms.date: 2/14/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Dans cet article, vous allez découvrir Azure ExpressRoute pour Office 365 et comment l’utiliser pour la planification réseau.
-ms.openlocfilehash: 440d4fafadd7e9b504dc4ffdac1123a2956ed798
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e087afee52893b0be48e4024c619e3599f54338d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202139"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177062"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planification du réseau avec ExpressRoute pour Office 365
 
@@ -80,7 +80,7 @@ Toutes nos recommandations sur le type de traitement réseau recommandé s’app
   
 ## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>Application de contrôles de sécurité à Azure ExpressRoute pour Office 365 scénarios
 
-La sécurisation de la connectivité Azure ExpressRoute commence par les mêmes principes que la sécurisation de la connectivité Internet. De nombreux clients choisissent de déployer des contrôles de réseau et de périmètre le long du chemin ExpressRoute connectant leur réseau local à Office 365 et autres clouds Microsoft. Ces contrôles peuvent inclure des pare-feux, des proxies d’application, la prévention des fuites de données, la détection des intrusions, des systèmes de prévention des intrusions, etc. Dans de nombreux cas, les clients appliquent différents niveaux de contrôles au trafic initié à partir d’un site local vers Microsoft, par opposition au trafic initié par Microsoft vers le réseau local du client, ou au trafic initié à partir d’un site local vers une destination Internet générale.
+La sécurisation de la connectivité Azure ExpressRoute commence par les mêmes principes que la sécurisation de la connectivité Internet. De nombreux clients choisissent de déployer des contrôles de réseau et de périmètre le long du chemin ExpressRoute connectant leur réseau local à Office 365 et autres clouds Microsoft. Ces contrôles peuvent inclure des pare-feu, des proxies d’application, la prévention des fuites de données, la détection des intrusions, des systèmes de prévention des intrusions, etc. Dans de nombreux cas, les clients appliquent différents niveaux de contrôles au trafic initié à partir d’un site local vers Microsoft, par opposition au trafic initié par Microsoft vers le réseau local du client, ou au trafic initié à partir d’un site local vers une destination Internet générale.
   
 Voici quelques exemples d’intégration de la sécurité au modèle de connectivité [ExpressRoute](/azure/expressroute/expressroute-connectivity-models) que vous choisissez de déployer.
 
@@ -96,7 +96,7 @@ Lorsque vous envisagez de placer la topologie des options de périmètre de rés
   
 - Les contrôles de profondeur et de sécurité de type et de réseau peuvent avoir un impact sur les performances et l’évolutivité de Office 365 l’expérience utilisateur.
 
-- Les flux sortants (locaux- Microsoft) et \> entrants (Microsoft sur site) [s’ils sont activés] peuvent avoir des \> exigences différentes. Ils sont probablement différents des destinations Internet générales sortantes.
+- Les flux sortants (locaux- Microsoft) et \> entrants (Microsoft sur site) [s’ils sont activés] peuvent avoir des \> exigences différentes. Ceux-ci sont probablement différents des destinations Internet générales sortantes.
 
 - Office 365 requises pour les ports/protocoles et les sous-réseaux IP nécessaires sont les mêmes que le trafic soit acheminé via ExpressRoute pour Office 365 ou via Internet.
 
@@ -187,13 +187,13 @@ Vous avez toujours des questions sur la façon de planifier et d’implémenter 
 ## <a name="working-with-azure-expressroute-providers"></a>Travailler avec des fournisseurs Azure ExpressRoute
 <a name="BKMK_high-availability"> </a>
 
-Choisissez les emplacements de vos circuits en fonction de votre planification de la bande passante, de la latence, de la sécurité et de la haute disponibilité. Une fois que vous connaissez les emplacements optimaux que vous souhaitez placer, examinez la liste actuelle des [fournisseurs par région.](/azure/expressroute/expressroute-locations)
+Choisissez les emplacements de vos circuits en fonction de votre planification de la bande passante, de la latence, de la sécurité et de la haute disponibilité. Une fois que vous connaissez les emplacements optimaux que vous souhaitez placer, examinez la liste actuelle des fournisseurs [par région.](/azure/expressroute/expressroute-locations)
   
 Travaillez avec votre fournisseur ou fournisseur pour sélectionner les meilleures options de connectivité, point à point, multi-point ou hébergé. N’oubliez pas que vous pouvez combiner et faire correspondre les options de connectivité tant que la bande passante et d’autres composants redondants peuvent prendre en charge votre conception de routage et de haute disponibilité.
   
 Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/planningexpressroute365]()
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 <a name="BKMK_high-availability"> </a>
 
 [Évaluation de la connectivité réseau Office 365](assessing-network-connectivity.md)

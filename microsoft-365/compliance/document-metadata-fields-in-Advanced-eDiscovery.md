@@ -9,19 +9,19 @@ ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents d’un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: ed7652ecf720e32a7ddfaffbd0ff2db29b582b69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0dd0c11360a1e815c950e6e01448d95a79a8e266
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207972"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177542"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -42,7 +42,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 
 ****
 
-|Nom du champ et nom de champ d’affichage|Nom du champ utilisable dans une recherche|Nom du champ exporté|Description|
+|Nom du champ et nom du champ d’affichage|Nom du champ utilisable dans une recherche|Nom du champ exporté|Description|
 |---|---|---|---|
 |ID de contenu de pièce jointe|AttachmentContentId||ID de contenu de pièce jointe de l’élément.|
 |Score de privilège client avocat|AttorneyClientPrivilegeScore||Score de contenu du modèle de privilège client-avocat.|
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Cc|Cc|Email_cc|Champ Cc pour les types de messages. Le format **est \<SMTPAddress\> DisplayName**.|
 |Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](retention.md) appliquées au contenu Office 365.|
 |Chemin composé|CompoundPath|Compound_path|Chemin lisible par l’homme qui décrit la source de l’élément.|
-|Content*|Contenu||Texte extrait de l’élément.|
+|Content*|Content||Texte extrait de l’élément.|
 |Corps de la conversation|ConversationBody||Corps de conversation de l’élément.|
 |Conversation ID|ConversationId|Conversation_ID|ID de conversation du message. Pour Teams 1:1 et les conversations de groupe, tous les fichiers de transcription et leurs éléments de famille dans la même conversation partagent le même ID de conversation. Pour plus d’informations, [voir Advanced eDiscovery flux de travail pour le contenu Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Conversation Index||Conversation_index|Index de conversation du message.|
@@ -63,7 +63,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Contient un message modifié|ContainsEditedMessage|ContainsEditedMessage|Indique si la transcription Teams conversation inclut un message modifié
 |||Converted_file_path|Chemin d’accès du fichier d’exportation converti. Pour une utilisation interne à Microsoft uniquement.|
 |Consignataire|Consignataire|Consignataire|Nom du dépositaire à qui l’élément a été associé.|
-|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>Courrier électronique : date d’envoi<br>Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br>Documents SPO (pièces jointes modernes) : SharePoint date de dernière modification ; si non disponible, date de la dernière modification des documents<br>Documents non Office 365 : Date de la dernière modification<br>Réunions : date de début de la réunion<br>Messagerie vocale : date d’envoi<br>Messagerie instantanée : date d’envoi<br>Teams : date d’envoi|
+|Date|Date|Date|Date est un champ calculé qui dépend du type de fichier.<p>Courrier électronique : date d’envoi<br>Pièces jointes : date de dernière modification du document ; si elle n’est pas disponible, date d’envoi du parent<br>Documents incorporés : date de la dernière modification du document ; si elle n’est pas disponible, date de la dernière modification du parent<br>Documents SPO (pièces jointes modernes) : SharePoint date de dernière modification ; si non disponible, date de la dernière modification des documents<br>Documents non Office 365 : date de dernière modification<br>Réunions : date de début de la réunion<br>Messagerie vocale : date d’envoi<br>Messagerie instantanée : date d’envoi<br>Teams : date d’envoi|
 |Commentaires sur le document|DocComments|Doc_comments|Commentaires des métadonnées du document.|
 |Société de documents||Doc_company|Société à partir des métadonnées du document.|
 |Date de création du document|CreatedTime|Doc_date_created|Créer une date à partir des métadonnées du document.|
@@ -93,7 +93,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |||Extracted_text_path|Chemin d’accès au fichier texte extrait dans l’exportation.|
 |ExtractedTextLength*||Extracted_text_length|Nombre de caractères dans le texte extrait.|
 |FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les uns des autres (même contenu et toutes les mêmes pièces jointes).|
-|ID de famille|FamilyId|Family_ID|Rassemble les pièces jointes et les éléments extraits des e-mails et conversations avec son élément parent. Cela inclut la conversation ou l’e-mail, ainsi que toutes les pièces jointes et éléments extraits.|
+|ID de famille|FamilyId|Family_ID|Rassemble les pièces jointes et les éléments extraits des e-mails et des conversations avec son élément parent. Cela inclut la conversation ou l’e-mail, ainsi que toutes les pièces jointes et éléments extraits.|
 |Taille de la famille||Family_size|Nombre de documents de la famille.|
 |Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**. <br>Pour le contenu de Exchange : **e-mail** ou **pièce jointe**. <br>Pour le contenu de Teams ou Yammer : **Conversations**.|
 |ID de fichier|FileId|File_ID|Identificateur de document unique dans le cas.|
@@ -117,7 +117,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par le serveur Exchange ; par exemple, **IPM. Remarque**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de la dernière modification à partir des métadonnées du document.|
 |ID de chargement|LoadId|Load_ID|ID du jeu de chargement dans lequel l’élément a été ajouté à un jeu à réviser.|
-|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement d’origine des documents.<p>**Données importées** : données non Office 365 données<br>**Teams** - Microsoft Teams<br>**Exchange** - boîtes aux lettres Exchange boîtes aux lettres<br>**SharePoint** - SharePoint sites<br>**OneDrive** - OneDrive comptes|
+|Lieu|Lieu|Lieu|Chaîne qui indique le type d’emplacement d’origine des documents.<p>**Données importées** : données non Office 365 données<br>**Teams** - Microsoft Teams<br>**Exchange** - boîtes aux lettres Exchange boîtes aux lettres<br>**SharePoint** - SharePoint sites<br>**OneDrive** - OneDrive comptes|
 |Nom de l’emplacement|LocationName|Location_name|Chaîne qui identifie la source de l’élément. Pour exchange, il s’adressera à l’adresse SMTP de la boîte aux lettres . pour SharePoint et OneDrive, l’URL de la collection de sites.|
 |||Marked_as_pivot|Ce fichier est le tableau croisé dynamique d’un jeu quasiment en double.|
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque ensemble de doublons exacts est marqué comme représentant.|

@@ -7,7 +7,7 @@ ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Cet article décrit les sites d’options de navigation avec SharePoint publication activée dans SharePoint Online.
-ms.openlocfilehash: 7c890f61beae9ae98045861bbb08e3f6752d0037
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c59006db8505991bd41d29714caae144b284f07d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202157"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177134"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
@@ -63,7 +63,7 @@ L’option la plus appropriée pour votre site dépend des besoins de votre site
 
 [L’outil Diagnostic de](./page-diagnostics-for-spo.md) page pour SharePoint est une extension de navigateur pour les navigateurs Microsoft Edge et Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication classiques. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur SharePoint page système.
 
-L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfiny de règles et affiche des informations détaillées lorsque les résultats d’un test sont en dehors de la valeur de référence. SharePoint Les administrateurs et concepteurs en ligne peuvent utiliser l’outil pour résoudre les problèmes de performances afin de s’assurer que les nouvelles pages sont optimisées avant la publication.
+L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfiny de règles et affiche des informations détaillées lorsque les résultats d’un test se produisent en dehors de la valeur de référence. SharePoint Les administrateurs et concepteurs en ligne peuvent utiliser l’outil pour résoudre les problèmes de performances afin de s’assurer que les nouvelles pages sont optimisées avant la publication.
 
 **SPRequestDuration, en** particulier, est le temps qu’il faut SharePoint pour traiter la page. La navigation lourde (par exemple, inclure des pages dans la navigation), les hiérarchies de sites complexes et d’autres options de configuration et de topologie peuvent contribuer considérablement à des durées plus longues.
 
@@ -119,9 +119,9 @@ Un exemple de fournisseur de données consiste à utiliser une **navigation** pi
 
 Il existe d’autres options populaires pour créer **des fournisseurs de navigation personnalisés.** Consultez les solutions de navigation pour SharePoint Online pour obtenir des [instructions](/sharepoint/dev/solution-guidance/portal-navigation) supplémentaires sur la création d’un fournisseur de navigation personnalisé.
 
-À l’aide de la recherche, vous pouvez tirer parti des index qui sont créés en arrière-plan à l’aide de l’analyse continue. Les résultats de la recherche sont obtenus à partir de l’index de recherche et les résultats sont découpés en sécurité. Cela est généralement plus rapide que les fournisseurs de navigation pré-requis lorsque le tri de sécurité est requis. L’utilisation de la recherche pour la navigation structurelle, en particulier si vous avez une structure de site complexe, accélérera considérablement le temps de chargement des pages. Le principal avantage de cette navigation gérée est que vous bénéficiez du trimming de sécurité.
+À l’aide de la recherche, vous pouvez tirer parti des index qui sont créés en arrière-plan à l’aide de l’analyse continue. Les résultats de la recherche sont obtenus à partir de l’index de recherche et les résultats sont découpés en sécurité. Cela est généralement plus rapide que les fournisseurs de navigation pré-requis lorsque le contrôle de sécurité est requis. L’utilisation de la recherche pour la navigation structurelle, en particulier si vous avez une structure de site complexe, accélérera considérablement le temps de chargement des pages. Le principal avantage de cette navigation gérée est que vous bénéficiez du trimming de sécurité.
 
-Cette approche implique la création d’une page maître personnalisée et le remplacement du code de navigation pré-personnalisé par du code HTML personnalisé. Suivez cette procédure décrite dans l’exemple suivant pour remplacer le code de navigation dans le `seattle.html` fichier. Dans cet exemple, vous allez ouvrir le `seattle.html` fichier et remplacer l’élément entier par du code HTML `id="DeltaTopNavigation"` personnalisé.
+Cette approche implique la création d’une page maître personnalisée et le remplacement du code de navigation pré-personnalisé par du code HTML personnalisé. Suivez cette procédure décrite dans l’exemple suivant pour remplacer le code de navigation dans le `seattle.html` fichier. Dans cet exemple, vous allez ouvrir le `seattle.html` fichier et remplacer l’élément entier `id="DeltaTopNavigation"` par du code HTML personnalisé.
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exemple : Remplacer le code de navigation pré-encadré dans une page maître
 

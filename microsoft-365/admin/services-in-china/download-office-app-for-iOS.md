@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur l’application Microsoft Office pour iOS pour Office 365 21Vianet et comment la télécharger pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: f1179b21b8db9b6ba7ff9016d575e687d802fbda
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f2156c83ce312da42de864c8df8d00a84e05d02c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178579"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193888"
 ---
 # <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>application Office pour iOS pour Office 365 géré par 21Vianet
 

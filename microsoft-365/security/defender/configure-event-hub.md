@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 29a369c2813cfe3c9c17b6b11f765d4d6162f8bf
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ce8f931f0d400c967b3312fe6cfafcadb3a715c7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181001"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60181234"
 ---
 # <a name="configure-your-event-hub"></a>Configurer votre Hub d’événements
 
@@ -38,9 +38,9 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurer le fournisseur de ressources requis dans l’abonnement Event Hub
 
-1. Connectez-vous au [Portail Azure](https://portal.azure.com).
+1. Connectez-vous au [portail Azure](https://portal.azure.com).
 1. Select **Subscriptions** \> { Select the subscription the event hub will be ***deployed to***} Resource \> **providers**.
-1. Vérifiez que **le fournisseur Microsoft.Informations** est inscrit. Sinon, inscrivez-le.
+1. Vérifiez que **le fournisseur Microsoft.Informations** est enregistré. Sinon, inscrivez-le.
 
 ![Image des fournisseurs de ressources dans Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
 
@@ -72,7 +72,7 @@ Découvrez comment configurer votre Hub d’événements afin qu’il puisse ing
     > [!NOTE]
     > Vous pouvez utiliser un hub d’événements existant, mais le débit et la mise à l’échelle sont définies au niveau de l’espace de noms. Il est donc recommandé de placer un hub d’événements dans son espace de noms.
 
-   ![Image de l’espace de noms du Hub d’événements.](../../media/ebc4ca37c342ad1da75c4aee4018e51a.png)
+   ![Image de l’espace de noms Du Hub d’événements.](../../media/ebc4ca37c342ad1da75c4aee4018e51a.png)
 
 1. Vous aurez également besoin de l’ID de ressource de cet espace de noms Event Hub. Go to your Azure Event Hubs namespace page \> Properties. Copiez le texte sous L’ID de ressource et enregistrez-le pour l’utiliser dans la section Microsoft 365 configuration ci-dessous.
 
@@ -103,7 +103,7 @@ Par exemple :
 
 ![Image de l’exemple de Hub d’événements.](../../media/005c1f6c10c34420d387f594987f9ffe.png)
 
-Si vous choisissez cette option, vous pouvez passer à la section Configurer [Microsoft 365 Defender pour envoyer des tables de courrier](#configure-microsoft-365-defender-to-send-email-tables) électronique.
+Si vous choisissez cette option, vous pouvez passer à la section [Configurer Microsoft 365 Defender pour envoyer des tables de courrier](#configure-microsoft-365-defender-to-send-email-tables) électronique.
 
 Créez un Hub d’événements dans votre espace de noms en sélectionnant **Hubs d’événements** \> **+ Hub d’événements.**
 
@@ -121,7 +121,7 @@ Pour ce Hub d’événements (et non un espace de noms), vous devez configurer u
 
 1. Connectez-vous Microsoft 365 Defender avec un compte qui répond à <https://security.microsoft.com> toutes les exigences de rôle suivantes :
 
-    - Rôle de collaborateur au niveau de la ressource d’espace de noms *du* Hub d’événements ou supérieur pour le Hub d’événements vers qui vous allez exporter. Sans cette autorisation, vous recevez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
+    - Rôle de collaborateur  au niveau de la ressource d’espace de noms du Hub d’événements ou supérieur pour le Hub d’événements vers qui vous allez exporter. Sans cette autorisation, vous recevez une erreur d’exportation lorsque vous essayez d’enregistrer les paramètres.
 
     - Rôle d’administrateur global ou d’administrateur de sécurité sur le client lié à Microsoft 365 Defender azure.
 
@@ -141,7 +141,7 @@ Pour ce Hub d’événements (et non un espace de noms), vous devez configurer u
 
     Si vous choisissez de laisser Microsoft 365 Defender créer des hubs d’événements par types d’événements (Tables) pour vous, laissez ce champ vide.
 
-    **Types** d’événements : sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont de Microsoft Defender pour point de terminaison (PEPT) et les tables de messagerie sont de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. L’URL (Coffre Links), attachment (Coffre Attachments) et les événements de remise (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
+    **Types** d’événements : sélectionnez les tables de recherche avancée que vous souhaitez faire suivre au Hub d’événements, puis à votre application personnalisée. Les tables d’alerte sont Microsoft 365 Defender, les tables Périphériques sont issues de Microsoft Defender pour le point de terminaison (PEPT) et les tables e-mail sont de Microsoft Defender pour Office 365. Les événements de messagerie enregistrent toutes les transactions de messagerie. L’URL (Coffre Links), attachment (Coffre Attachments) et les événements de remise (ZAP) sont également enregistrés et peuvent être joints aux événements de messagerie sur le champ NetworkMessageId.
 
     ![Image des paramètres de l’API de diffusion en continu.](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
 
@@ -160,7 +160,7 @@ EmailEvents
 |count
 ```
 
-Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure, joints à tous les autres tableaux. Elle vous indique également si vous voyez des événements qui peuvent être exportés vers le hub d’événements. Si ce nombre indique 0, vous ne verrez aucune donnée sortante vers le Hub d’événements.
+Cela vous indique le nombre d’e-mails reçus au cours de la dernière heure, joints dans toutes les autres tables. Elle vous indique également si vous voyez des événements qui peuvent être exportés vers le hub d’événements. Si ce nombre indique 0, vous ne verrez aucune donnée sortante vers le Hub d’événements.
 
 ![Image de recherche avancée.](../../media/c305e57dc6f72fa9eb035943f244738e.png)
 

@@ -7,7 +7,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,18 +17,18 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Utilisez les alertes du service d’utilisation des boîtes aux lettres pour surveiller les boîtes aux lettres en attente qui atteignent leur quota de boîte aux lettres.
-ms.openlocfilehash: 32536cf8a034867ecb82e44487f34280a9b591ac
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: c131ef58cbad2e2f57c1e97de6c2da6b3b52a707
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011463"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177302"
 ---
 # <a name="service-alerts-for-mailbox-utilization-in-exchange-online-monitoring"></a>Alertes de service pour l’utilisation des boîtes aux lettres dans la surveillance Exchange Online
 
 Nous avons publié une nouvelle alerte de service Exchange Online qui vous informe des boîtes aux lettres en attente qui risquent d’atteindre ou de dépasser leur quota. Ces alertes de service fournissent une visibilité sur le nombre de boîtes aux lettres dans votre organisation qui peuvent nécessiter une intervention de l’administrateur.
 
-Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, Exchange Online l’onglet Problèmes  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >   actifs.  Voici un exemple d’alerte de service d’utilisation de boîte aux lettres.
+Ces alertes de service sont affichées dans le Centre d'administration Microsoft 365. Pour afficher ces alertes de service, consultez la Exchange Online d’état du service d’état, puis cliquez sur  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >   **l’onglet Problèmes** actifs. Voici un exemple d’alerte de service d’utilisation de boîte aux lettres.
 
 :::image type="content" alt-text="Alerte du service d’utilisation des boîtes aux lettres." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
@@ -78,7 +78,7 @@ Les administrateurs doivent également s’assurer qu’une stratégie d’archi
 
 ### <a name="mrm-retention-policies-in-your-organization"></a>Stratégies de rétention MRM dans votre organisation
 
-Les alertes de service pour l’utilisation des boîtes aux lettres peuvent également contenir un tableau contenant des informations sur les stratégies de rétention MRM de votre organisation et indiquent si les boîtes aux lettres qui sont une stratégie de rétention ont une boîte aux lettres d’archivage. Pour plus d’informations sur les stratégies de rétention, voir [Balises et stratégies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)de rétention dans Exchange Online .
+Les alertes de service pour l’utilisation des boîtes aux lettres peuvent également contenir un tableau contenant des informations sur les stratégies de rétention MRM de votre organisation et indiquent si les boîtes aux lettres qui sont une stratégie de rétention ont une boîte aux lettres d’archivage. Pour plus d’informations sur les stratégies de rétention, voir [Balises et](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)stratégies de rétention dans Exchange Online .
 
 | RetentionPolicyGuid | MailboxType | HasMoveDumpsterToArchiveTag | HasMovePrimaryToArchiveTag | HasPersonalArchiveTag |  Boîtes aux lettres |
 |:--------------|:--------------|:---------------|:---------------|:---------------|:--------------- |
@@ -115,7 +115,7 @@ La liste suivante décrit chaque colonne du tableau précédent.
 
 Si vous ne prenez aucune mesure pour résoudre les problèmes de quota, vous pouvez vous attendre à voir ce type d’alerte de service tous les quatre jours. Les alertes de service suivantes peuvent contenir des nombres de boîtes aux lettres plus élevés pour les autres boîtes aux lettres qui approchent de leur quota. Si vous prenez des mesures pour résoudre les problèmes de quota, cette alerte de service se produit uniquement lorsqu’une autre boîte aux lettres avec des problèmes de quota est identifiée.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - Pour plus d’informations sur le dépannage et la résolution des problèmes de boîte aux lettres d’archivage, voir [Microsoft 365 de conformité.](/office365/troubleshoot/microsoft-365-compliance-welcome)
 

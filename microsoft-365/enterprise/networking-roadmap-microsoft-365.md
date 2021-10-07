@@ -1,5 +1,5 @@
 ---
-title: Feuille de route réseau pour Microsoft 365
+title: Feuille de route réseau pour les Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -9,20 +9,20 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Feuille de route pour l’Microsoft 365 réseau.
-ms.openlocfilehash: 3fb9c99bd0381730a41bd65012efe5488b85509d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 192cdec7b789cc4159265fa3f411c55913c388b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177747"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177050"
 ---
-# <a name="networking-roadmap-for-microsoft-365"></a>Feuille de route réseau pour Microsoft 365
+# <a name="networking-roadmap-for-microsoft-365"></a>Feuille de route réseau pour les Microsoft 365
 
 Microsoft 365 entreprise inclut des services cloud de collaboration et de productivité, des Microsoft Intune et de nombreux services d’identité et de sécurité Microsoft Azure. Tous ces services cloud s’appuient sur la sécurité, les performances et la fiabilité des connexions à partir d’appareils clients via Internet ou des circuits dédiés. Pour héberger ces services et les rendre accessibles aux clients dans le monde entier, Microsoft a conçu une infrastructure réseau qui met en évidence les performances et l’intégration. 
 

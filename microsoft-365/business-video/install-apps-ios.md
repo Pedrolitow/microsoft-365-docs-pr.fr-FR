@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment installer des applications Office sur des appareils iOS.
-ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 26a507122d86f16a48d5a96593607e7fd8002a0a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182655"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193588"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>Installer des Outlook et Office sur des appareils iOS
 
-Une fois&#39;avez Microsoft 365 Business Premium, vous pouvez installer Office applications sur votre iPhone. Après avoir installé les applications,&#39;êtes invité à créer un code confidentiel pour sécuriser vos Office données.
+Une fois&#39;avez Microsoft 365 Business Premium, vous pouvez installer Office applications sur votre iPhone. Après avoir installé les applications,&#39;serez invité à créer un code confidentiel pour sécuriser vos Office données.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n?autoplay=false]
 
@@ -38,7 +38,7 @@ Une fois&#39;avez Microsoft 365 Business Premium, vous pouvez installer Office a
 1. Sur votre iPhone, ouvrez l’App Store.
 2. Sélectionnez **Rechercher,** **tapez Outlook** dans la barre de recherche, puis sélectionnez-le.
 3. Choose **Get**   >   **Install**.
-4. Entrez votre mot de passe d’ID Apple, **sélectionnez Ouvrir**  >   **la signature.**
+4. Entrez votre mot de passe d’ID Apple, **sélectionnez Ouvrir la**  >   **signature.**
 5. Entrez votre adresse e-mail de travail.
 6. Sélectionnez **Ajouter un** compte, entrez votre mot de passe, puis choisissez **Se connectez.**
 7. (Facultatif), sélectionnez **Nous allons le faire ** pour ajouter d’autres comptes, ou sélectionnez  **Peut-être**  plus tard pour ignorer cette étape.

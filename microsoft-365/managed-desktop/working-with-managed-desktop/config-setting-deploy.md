@@ -4,19 +4,19 @@ description: Déployez et suivez les modifications des paramètres configurables
 keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, déployer, déploiement par étapes, paramètres configurables
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: aad4995f9c329b0fd8fcbcc8b1d13379453c2a76
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9a541ccf5a7bcd4197e1b24a2a6667995c08ea7f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182033"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177014"
 ---
-# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables - Microsoft Manged Desktop
+# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables : Microsoft Manged Desktop
 
 Après avoir apporté des modifications à vos catégories de paramètres et organisé un déploiement, la page État du déploiement vous permet de commencer à déployer vos paramètres dans des groupes. Cette page affiche un résumé de chaque paramètre configurable. En ouvrant une catégorie de paramètres, vous pouvez déployer des paramètres sur des groupes et suivre la progression de ces déploiements.
 
@@ -64,7 +64,7 @@ Nous allons vous montrer les étapes à suivre pour inverser une modification à
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Microsoft Manged Desktop, sélectionnez **Paramètres**.
-3. Dans **l’espace** de travail État du déploiement, sélectionnez le paramètre que vous souhaitez inverser, puis sélectionnez le déploiement par étapes à inverser.
+3. Dans **l’espace** de travail État du déploiement, sélectionnez le paramètre à revenir, puis sélectionnez le déploiement par étapes à inverser.
 4. Under **Need to revert this change?**, select **Revert deployment**.
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->

@@ -9,7 +9,7 @@ ms.date: 8/2/2018
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez comment Exchange Online et Microsoft 365 transport TLS (Transport Layer Security) et FS (Transport Layer Security) pour sécuriser les communications électroniques. Obtenez également des informations sur le certificat émis par Microsoft pour Exchange Online.
-ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 27b6022b421fce40935def19f614680b7196fd86
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59175907"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177518"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie
 

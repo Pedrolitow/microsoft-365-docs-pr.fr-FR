@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer une adresse de messagerie de groupe.
-ms.openlocfilehash: 0854c41a4af52649c09fc8e5e3d121282e615d8e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 490e84c68a03cccfde52e8967b126b6e00b9be67
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182679"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60193624"
 ---
 # <a name="create-a-group-email-address"></a>Créer une adresse e-mail de groupe
 

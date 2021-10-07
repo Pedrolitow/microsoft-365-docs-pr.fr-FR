@@ -7,7 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Cet article contient des liens vers des informations sur la planification, les tests et la migration réseau vers Office 365.
-ms.openlocfilehash: aed8bacd4dc08aa6d77ad0c530e721ac9d383bf5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 21bd36395f6ceb6a13b3180a26f8dbf7f197f134
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202151"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60177086"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planification du réseau et de la migration pour Office 365
 
@@ -62,14 +62,14 @@ Pour estimer la bande passante, utilisez les étapes suivantes :
     
 - [Analyseur de connectivité à distance Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): teste la connectivité dans votre environnement Exchange Online de connexion.
     
-- Utilisez [l’Assistant Support et récupération Microsoft Office 365](https://diagnostics.office.com/#/Download?env=SOC) pour résoudre Outlook problèmes Office 365 problèmes. 
+- Utilisez le [microsoft Assistant Support et récupération pour Office 365](https://diagnostics.office.com/#/Download?env=SOC) résoudre les problèmes Outlook et Office 365 problèmes. 
     
 ## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>Meilleures pratiques en matière de planification réseau et d’amélioration des performances de migration pour Office 365
 <a name="BestPractices"> </a>
 
 Approfondissez ces meilleures pratiques pour plus d’informations sur l’amélioration Office 365 expérience utilisateur.
   
-1. Vous souhaitez commencer à aider vos utilisateurs immédiatement ? Consultez les meilleures pratiques pour l’utilisation de [Office 365](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) sur un réseau lent pour obtenir des conseils sur l’utilisation de Office 365, notamment SharePoint Online, Exchange Online et Lync Online, lorsque votre réseau n’est pas en train de s’en servir. Cet article propose des liens vers des chargements de contenu sur TechNet et Support.office.com pour optimiser votre expérience Office 365 et inclut des informations sur les méthodes simples de personnalisation de vos pages web et la définition de vos paramètres Internet Explorer pour une expérience Office 365 optimisée. 
+1. Vous souhaitez commencer à aider vos utilisateurs immédiatement ? Consultez les meilleures pratiques pour l’utilisation de [Office 365](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) sur un réseau lent pour obtenir des conseils sur l’utilisation de Office 365, notamment SharePoint Online, Exchange Online et Lync Online, lorsque votre réseau n’est pas en train de s’en délationr. Cet article propose des liens vers des chargements de contenu sur TechNet et Support.office.com pour optimiser votre expérience Office 365 et inclut des informations sur les méthodes simples de personnalisation de vos pages web et la définition de vos paramètres Internet Explorer pour une expérience Office 365 optimisée. 
     
 2. Lisez [Office 365 principes](./microsoft-365-network-connectivity-principles.md) de connectivité réseau pour comprendre les principes de connectivité pour gérer en toute sécurité Office 365 trafic et obtenir les meilleures performances possibles. Cet article vous aidera à mieux comprendre les instructions les plus récentes pour vous permettre d’optimiser en toute sécurité la connectivité réseau Office 365. 
     
@@ -77,7 +77,7 @@ Approfondissez ces meilleures pratiques pour plus d’informations sur l’amél
     
 4. Office 365 trafic réseau est plus performant lorsqu’il est traité comme un service Internet approuvé et autorisé à contourner une grande partie du filtrage et de l’analyse traditionnels que certaines organisations placent sur le trafic réseau vers des services Internet non fiables. Cela inclut généralement la suppression du traitement sortant tel que l’authentification des utilisateurs proxy et l’inspection des paquets, ainsi que la garantie d’une sortie locale vers Internet avec la traduction d’adresses réseau (NAT) appropriée et une capacité de bande passante suffisante pour gérer les demandes réseau accrues. [Reportez-vous](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)à La gestion Office 365 points de terminaison pour obtenir des instructions supplémentaires sur la configuration de votre réseau pour gérer les Office 365 en tant que service Internet approuvé sur votre réseau.
     
-1. [Assurez-vous de Office 365 points de terminaison.](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) Le trafic supplémentaire à Office 365 entraîne une augmentation des connexions proxy sortantes, ainsi qu’une augmentation du trafic sécurisé sur TLS/SSL.
+1. Assurez [la gestion Office 365 de terminaison.](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) Le trafic supplémentaire à Office 365 entraîne une augmentation des connexions proxy sortantes, ainsi qu’une augmentation du trafic sécurisé sur TLS/SSL.
     
 2. Si vos proxies sortants nécessitent l’authentification de l’utilisateur, vous risquez de voir une connectivité lente ou une perte de fonctionnalités. Le contournement de l’exigence d’authentification pour Office 365 domaines peut réduire cette surcharge.
     
