@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment exécuter un script pour ajouter des boîtes aux lettres & OneDrive Entreprise sites à une nouvelle boîte aux lettres associée à un cas eDiscovery dans le Centre de conformité Microsoft 365.
-ms.openlocfilehash: f64ada92bdfc3081f1695e11cd4ee21fd2995c40
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: c2b73fdb665acde92676270f0a32918a6072eb5c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483038"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150869"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery
 
@@ -83,7 +83,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
   
 - **Vos informations d’identification d’utilisateur :** Le script utilise vos informations d’identification pour se connecter au Centre de sécurité & conformité avec PowerShell. Il utilisera également ces informations d’identification pour accéder à SharePoint Online afin d’obtenir OneDrive Entreprise URL pour la liste des utilisateurs.
 
-- **Nom de votre domaine SharePoint :** Le script vous invite à entrer ce nom pour qu’il puisse se connecter SharePoint centre d’administration. Il utilise également le nom de domaine pour OneDrive URL de votre organisation. Par exemple, si l’URL de votre centre d’administration est et que l’URL de OneDrive est , vous devez entrer lorsque le script vous invite à entrer votre nom `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` de `contoso` domaine.
+- **Nom de votre SharePoint :** Le script vous invite à entrer ce nom pour qu’il puisse se connecter SharePoint centre d’administration. Il utilise également le nom de domaine pour OneDrive URL de votre organisation. Par exemple, si l’URL de votre centre d’administration est et que l’URL de OneDrive est , vous devez entrer lorsque le script vous invite à entrer votre nom `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` de `contoso` domaine.
 
 - **Nom du cas :** Nom d’un cas existant. Le script crée une nouvelle attente associée à ce cas.
 
@@ -91,7 +91,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 - **Requête de recherche pour une attente basée sur une requête :** Vous pouvez créer une mise en attente basée sur une requête afin que seul le contenu qui répond aux critères de recherche spécifiés soit mis en attente. Pour placer tout le contenu en attente, appuyez simplement sur **Entrée** lorsque vous êtes invité à effectuer une requête de recherche.
 
-- **En 2013, vous tenez ou non en attente :** Le script peut être mis en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de conformité Microsoft 365 ou en exécutant les commandes PowerShell suivantes :
+- **En tenez-vous ou non en attente :** Vous pouvez laisser le script activer la mise en attente après sa création ou le script peut créer la mise en attente sans l’activer. Si le script n’est pas en attente, vous pouvez l’activer ultérieurement dans le Centre de conformité Microsoft 365 ou en exécutant les commandes PowerShell suivantes :
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true

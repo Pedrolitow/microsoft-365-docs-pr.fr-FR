@@ -8,22 +8,23 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer vos appareils mobiles.
-ms.openlocfilehash: e2a8661766aa5d5ae7f257cc7c76d67949d9cffe
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: b5c2abf9fe261521d5b22a98dc56abf4885693e6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773942"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153941"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
@@ -49,7 +50,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base pour sécuriser et g�
 
 <sup>2</sup> Le contrôle d’Windows 10 nécessite un abonnement qui inclut Azure AD Premium et l’appareil doit être joint à Azure Active Directory.
 
-<sup>3</sup> Après juin 2020, les versions d’Android ultérieures à 9 ne peuvent pas gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
+<sup>3</sup> Après juin 2020, les versions d’Android ultérieures à 9 ne peuvent plus gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
 
 > [!NOTE]
 > Les appareils déjà inscrits avec des versions antérieures du système d’exploitation continuent de fonctionner même si les fonctionnalités peuvent changer sans préavis.
@@ -68,7 +69,7 @@ Les applications prise en charge pour les différents types d’appareils mobile
 > [!NOTE]
 >
 > - La prise en charge d’iOS 10.0 et des versions ultérieures inclut iPhone et iPad appareils.
-> - La gestion des appareils blackBerry OS n’est pas prise en charge par la sécurité et la mobilité de base. Utilisez blackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils blackBerry OS. Les appareils Blackberry exécutant le système d’exploitation Android sont pris en charge en tant qu’appareils Android standard
+> - La gestion des appareils du système d’exploitation BlackBerry n’est pas prise en charge par la sécurité de base et la mobilité. Utilisez blackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils blackBerry OS. Les appareils Blackberry exécutant le système d’exploitation Android sont pris en charge en tant qu’appareils Android standard
 > - Les utilisateurs ne seront pas invités à s’inscrire et ne seront pas bloqués ou signalés pour violation de stratégie s’ils utilisent le navigateur mobile pour accéder aux sites Microsoft 365 SharePoint, aux documents dans Office Online ou à la messagerie électronique dans Outlook Web App.
 
 Le diagramme suivant illustre ce qui se produit lorsqu’un utilisateur avec un nouvel appareil se connecté à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. L’utilisateur ne peut pas accéder Microsoft 365 ressources de l’application jusqu’à ce qu’il inscrive son appareil.
@@ -92,7 +93,7 @@ Les paramètres qui peuvent empêcher les utilisateurs d’accéder Microsoft 36
 
 - Profil de messagerie géré
 
-Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L’utilisateur se signe à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. Ils ne peuvent pas accéder Microsoft 365 ressources de l’application tant que leur appareil n’est pas conforme au paramètre de sécurité.
+Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L’utilisateur se signe à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. Ils ne peuvent pas accéder aux Microsoft 365 de l’application tant que leur appareil n’est pas conforme au paramètre de sécurité.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Message de conformité de sécurité et de mobilité de base.":::
 
@@ -141,8 +142,8 @@ L’option suivante peut empêcher les utilisateurs d’accéder à Microsoft 36
 |Bloquer la sauvegarde sur le cloud |Oui|Non|Non|
 |Bloquer la synchronisation de documents |Oui|Non|Non|
 |Bloquer la synchronisation de photos  |Oui|Non|Non|
-|Autoriser la sauvegarde Google  |N/A|Non|Oui|
-|Autoriser la synchronisation automatique des comptes Google  |N/A|Non|Oui|
+|Autoriser la sauvegarde Google  |S/O|Non|Oui|
+|Autoriser la synchronisation automatique des comptes Google  |S/O|Non|Oui|
 
 ## <a name="system-settings"></a>Paramètres système
 
@@ -239,7 +240,7 @@ Si un appareil est perdu ou volé, vous pouvez supprimer des données organisati
 
 Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Vue d’ensemble de basic Mobility and Security for Microsoft 365](overview.md) (article)\
 [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)

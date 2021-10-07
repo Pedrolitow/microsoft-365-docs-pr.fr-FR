@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f0695f406bdc2063c58d87c61032d120442928e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4f15bf358d180e30ab34abff3105ba77edb6fa0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183167"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149830"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Exemple d’attaque basée sur l’identité
 
@@ -40,7 +40,7 @@ Microsoft Defender pour l’identité peut vous aider à détecter les tentative
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>Analyse de l’attaque dans Microsoft Defender pour l’identité
 
-Microsoft 365 Defender permet aux analystes de filtrer les alertes par source de détection dans l’onglet **Alertes** de la page Incidents. Dans l’exemple suivant, la source de détection est filtrée sur **Defender for Identity**. 
+Microsoft 365 Defender permet aux analystes de filtrer les alertes par source de détection sous l’onglet **Alertes** de la page Incidents. Dans l’exemple suivant, la source de détection est filtrée sur **Defender for Identity**. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Exemple de filtrage de la source de détection pour Defender for Identity.":::
 
@@ -64,13 +64,13 @@ Chaque processus peut être étendu pour afficher des détails supplémentaires.
  
 En sélectionnant **Voir dans la** chronologie, un analyste peut aller encore plus loin pour déterminer l’heure exacte de la compromission. 
 
-Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillante. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure pour déterminer la source ou l’heure d’origine de l’attaque qui, sinon, est masquée par l’activité courante du système de fichiers et des utilisateurs. 
+Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillant. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure pour déterminer la source ou l’heure d’origine de l’attaque qui, sinon, est masquée par l’activité courante du système de fichiers et des utilisateurs. 
 
 Pour ce faire, un analyste commence au moment de la détection de l’alerte (en rouge) et fait défiler vers le bas dans le temps pour déterminer à quel moment l’activité d’origine qui a conduit à l’activité malveillante a réellement commencé. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Exemple de démarrage au moment de la détection de l’alerte."::: 
 
-Il est important de comprendre et de distinguer les activités courantes telles que les connexions Windows Update, le trafic d’activation de logiciels de confiance Windows, d’autres connexions communes aux sites Microsoft, l’activité Internet tierce, l’activité Microsoft Endpoint Configuration Manager et toute autre activité faible contre les activités suspectes. Une façon d’y parvenir consiste à utiliser des filtres de chronologie. Il existe de nombreux filtres qui peuvent mettre en évidence une activité spécifique tout en filtrant tout ce que l’analyste ne souhaite pas afficher. 
+Il est important de comprendre et de distinguer les activités courantes telles que les connexions de mise à jour Windows, le trafic d’activation de logiciels Windows approuvé, d’autres connexions communes aux sites Microsoft, l’activité Internet tierce, l’activité Microsoft Endpoint Configuration Manager et toute autre activité faible contre une activité suspecte. Une façon d’y parvenir consiste à utiliser des filtres de chronologie. De nombreux filtres peuvent mettre en évidence une activité spécifique tout en filtrant tout ce que l’analyste ne souhaite pas afficher. 
 
 Dans l’image ci-dessous, l’analyste a filtré pour afficher uniquement les événements réseau et de traitement. Cela permet à l’analyste de voir les connexions réseau et les processus qui entourent l’événement où Bloc-notes a établi une connexion avec une adresse IP, ce que nous avons également vu dans l’arborescence des processus. 
 

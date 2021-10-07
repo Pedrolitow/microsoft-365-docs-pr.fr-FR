@@ -8,24 +8,24 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4779a0c40cd8282d8e05fde84ae72827531810d9
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: fcfce563a177dd90e312da2da3bc578ec39b15b5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124264"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152045"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -42,7 +42,7 @@ Certaines conditions minimales sont requises pour l’intégration d’appareils
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Microsoft Defender pour le point de terminaison nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender for Endpoint nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 - Windows 11 Enterprise E5
 - Windows 11 Éducation A5
@@ -145,7 +145,7 @@ Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vo
 ### <a name="diagnostic-data-settings"></a>Paramètres de données de diagnostic
 
 > [!NOTE]
-> Microsoft Defender pour point de terminaison ne nécessite aucun niveau de diagnostic spécifique tant qu’il est activé.
+> Microsoft Defender pour le point de terminaison ne requiert aucun niveau de diagnostic spécifique tant qu’il est activé.
 
 Assurez-vous que le service de données de diagnostic est activé sur tous les appareils de votre organisation.
 Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez des données de capteur à partir de ces données.
@@ -192,13 +192,13 @@ La connectivité Internet sur les appareils est requise directement ou par proxy
 
 Le capteur Defender pour point de terminaison peut utiliser une bande passante moyenne quotidienne de 5 Mo pour communiquer avec le service cloud Defender for Endpoint et signaler les cyber-données. Les activités non limitées, telles que les téléchargements de fichiers et la collecte de packages d’enquête, ne sont pas incluses dans cette bande passante moyenne quotidienne.
 
-Pour plus d’informations sur les paramètres de configuration proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
+Pour plus d’informations sur les paramètres de configuration de proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
 
 Avant d’intégrer des appareils, le service de données de diagnostic doit être activé. Le service est activé par défaut dans Windows 10 et Windows 11.
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Antivirus Microsoft Defender configuration requise
 
-L’agent Defender for Endpoint dépend de la capacité de l’Antivirus Microsoft Defender analyser les fichiers et de fournir des informations les concernant.
+L’agent Defender for Endpoint dépend de la capacité des Antivirus Microsoft Defender à analyser des fichiers et à fournir des informations les concernant.
 
 Configurez les mises à jour d’intelligence de sécurité sur les appareils Defender for Endpoint, Antivirus Microsoft Defender est le logiciel anti-programme malveillant actif ou non. Pour plus d’informations, [voir Gérer Antivirus Microsoft Defender mises à jour et appliquer les lignes de base.](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
 

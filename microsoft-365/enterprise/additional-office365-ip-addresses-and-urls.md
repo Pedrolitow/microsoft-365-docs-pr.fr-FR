@@ -7,7 +7,7 @@ ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Résumé : Le nouveau service web de point de terminaison n’inclut pas certains points de terminaison pour des scénarios spécifiques.'
 hideEdit: true
-ms.openlocfilehash: e01bf3522d148e71fd4968029e1bbc9204ef9a6a
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 1313bc4dd10afe07f82fdc2c1b5df9d9d9bd0f2a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150821"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Points de terminaison supplémentaires non inclus dans le service web pour URL et adresses IP Office 365
 
@@ -64,7 +64,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
 |13|Connectivité de serveur local hybride Skype Entreprise à Skype Entreprise Online|13.107.64.0/18, 52.112.0.0/14 <br> Ports UDP 50,000-59,999 <br> Ports TCP 50,000-59,999 ; 5061|Connectivité sortante de serveur local Skype Entreprise|
 |14 |Le RTC sur le cloud avec une connectivité hybride locale nécessite une connectivité réseau ouverte aux hôtes locaux. Pour plus d’informations sur les configurations hybrides pour Skype Entreprise Online|Consultez la rubrique [Planification de la connectivité hybride entre Skype Entreprise Server et Office 365](/skypeforbusiness/hybrid/plan-hybrid-connectivity).|Entrée hybride locale pour Skype Entreprise|
 |15 |**Noms de domaine complets d’authentification et d’identité** <p> Le nom de domaine complet `secure.aadcdn.microsoftonline-p.com` doit apparaître dans la zone de sites Internet Explorer ou Edge approuvés de votre client pour fonctionner.||Sites de confiance|
-|16 |**Noms de domaine complets Microsoft Teams** <p> Si vous utilisez Internet Explorer ou Microsoft Edge, vous devez activer les cookies propriétaires et tiers, et ajouter les noms de domaine complets des équipes à vos sites de confiance. Cela s’ajoute aux noms de domaine complets, aux CDN et à la télémétrie répertoriés à la ligne 14. Reportez-vous à la rubrique [Problèmes connus pour Microsoft Teams](/microsoftteams/known-issues) pour plus d’informations.||Sites de confiance|
+|16|**Noms de domaine complets Microsoft Teams** <p> Si vous utilisez Internet Explorer ou Microsoft Edge, vous devez activer les cookies propriétaires et tiers, et ajouter les noms de domaine complets des équipes à vos sites de confiance. Cela s’ajoute aux noms de domaine complets, aux CDN et à la télémétrie répertoriés à la ligne 14. Reportez-vous à la rubrique [Problèmes connus pour Microsoft Teams](/microsoftteams/known-issues) pour plus d’informations.||Sites de confiance|
 |17 |**Noms de domaine complets Sharepoint Online et OneDrive Entreprise** <p> Tous les noms de domaine complets « .sharepoint.com » comportant « \<tenant\> » doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner. Outre les noms de domaine complets, les CDN et la télémétrie répertoriés à la ligne 14, vous devrez également ajouter ces points de terminaison.||Sites de confiance|
 |18 |**Yammer**  <br> Yammer est uniquement disponible dans le navigateur et nécessite que l’utilisateur soit authentifié via un proxy. Tous les FQDN Yammer doivent se trouver dans la zone de sites Internet Explorer ou Edge de confiance de votre client pour fonctionner.||Sites de confiance|
 |19|Utilisez [Azure AD Connect](/azure/active-directory/hybrid/) pour synchroniser les comptes d’utilisateurs locaux avec Azure AD.|Consultez [Ports et protocoles nécessaires pour l’identité hybride](/azure/active-directory/hybrid/reference-connect-ports), [Résoudre les problèmes de connectivité Azure AD](/azure/active-directory/hybrid/tshoot-connect-connectivity) et [Installation de l’agent Azure AD Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints).|Trafic serveur sortant uniquement|
@@ -86,7 +86,7 @@ Certains points de terminaison réseau ont été publiés précédemment et n’
   
 [Plages d’adresses IP et balises de service Azure – Cloud public](https://www.microsoft.com/download/details.aspx?id=56519)
 
-[Plages d’adresses IP azure et balises de service – Cloud pour le gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063)
+[Plages d’adresses IP et balises de service Azure – Cloud pour le gouvernement des États-Unis](https://www.microsoft.com/download/details.aspx?id=57063)
 
 [Plages IP Azure et balises de service – Cloud allemagne](https://www.microsoft.com/download/details.aspx?id=57064)
 

@@ -7,19 +7,19 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport de non-remise dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour surveiller les codes d’erreur les plus fréquemment rencontrés dans les rapports de non-remise (également appelés rapports de non-remise ou de non-remise) des expéditeurs de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02b745943b57965941e38c4e5c5ec6ae503972ec
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 00efa42dbe9f3ca119d407c74d3711d99d6c0d5c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988522"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154385"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Rapport de non-remise dans le Centre de conformité & sécurité
 
@@ -53,7 +53,7 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 - **Count**
 - **Exemples de messages**: ID de message d’un échantillon de messages affectés.
 
-Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
+Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
 
 Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Télécharger la demande.**
 
@@ -66,6 +66,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec
 
 ![Volant de détails après la sélection d’une ligne dans l’affichage De la table Détails dans le rapport de non-remise.](../../media/mfi-non-delivery-report-details-flyout.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur d’autres informations dans le tableau de bord de flux de messagerie, voir Informations sur le flux de messagerie dans le Centre de sécurité [& conformité.](mail-flow-insights-v2.md)

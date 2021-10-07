@@ -4,22 +4,22 @@ description: Vérifie les paramètres du périphérique et du réseau, y compris
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: ba233cf780ad428a9ecfdb6c4a3466b4ec4282da
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 57739b657f3aa296b92b67c16b7b7c5c3628e8b9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205204"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152441"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Vérifier la préparation d’évaluation téléchargeable
 
-Pour fonctionner avec Microsoft Manged Desktop, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Microsoft Manged Desktop.
+Pour fonctionner avec Microsoft Manged Desktop, les appareils doivent répondre à certaines exigences en matière de matériel et de paramètres. En outre, chaque appareil doit être en mesure d’atteindre les points de terminaison clés. Téléchargez et exécutez cet outil pour obtenir un rapport HTML, afficher les résultats, puis prendre des mesures. Vous devrez télécharger l’outil et les fichiers de prise en charge, puis l’exécuter manuellement sur chaque appareil que vous souhaitez inscrire dans Microsoft Manged Desktop.
 
 Pour chaque vérification, l’outil signalera l’un des trois résultats possibles :
 
@@ -42,7 +42,7 @@ Téléchargez le .zip à partir https://aka.ms/mmddratoolv0 de .
 1. Copiez le fichier .zip téléchargé sur chaque appareil que vous souhaitez vérifier.
 2. Extrayez tous les fichiers dans le téléchargement compressé.
 3. Exécutez **Microsoft.MMD.DeviceReadinessAssessmentTool.exe**.
-4. Lorsque l’invite de contrôle d’accès utilisateur s’affiche, **sélectionnez Oui.** L’outil s’exécute et ouvre un rapport dans votre navigateur par défaut.
+4. Lorsque l’invite de contrôle d’accès utilisateur s’affiche, **sélectionnez Oui**. L’outil s’exécute et ouvre un rapport dans votre navigateur par défaut.
 
 Vous pouvez également télécharger et extraire l’archive .zip  à un emplacement partagé, accéder auxMicrosoft.MMD.DeviceReadinessAssessmentTool.exeà partir de chaque appareil, puis l’exécuter localement.
 
@@ -71,11 +71,11 @@ Un **résultat d’avis** signifie que vous utilisez certains profils Wi-Fi qui 
 
 #### <a name="lan-profiles"></a>Profils LAN
 
-Un **résultat d’avis** signifie que vous avez des lans qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Un **résultat d’avis** signifie que vous avez des lans qui ont besoin de certificats et de profils pour fonctionner correctement. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 #### <a name="vpn-profiles"></a>Profils VPN
 
-Un **résultat d’avis** signifie que vous utilisez un réseau privé virtuel (VPN). Créez un profil VPN qui déploie des certificats intégrés à Microsoft Intune. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Un **résultat d’avis** signifie que vous utilisez un réseau privé virtuel (VPN). Créez un profil VPN qui déploie des certificats intégrés à Microsoft Intune. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 #### <a name="mapped-drives"></a>Lecteurs mappés
 

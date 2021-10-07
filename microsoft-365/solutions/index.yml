@@ -13,13 +13,13 @@ metadata:
   manager: bcarter
   audience: ITPro
   ms.date: 11/08/2019
-  localization_priority: Priority
-  ms.openlocfilehash: 70bc99dd449dd4c03e8d42d466cc283fdbfd5bb6
-  ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+  ms.localizationpriority: high
+  ms.openlocfilehash: a57eef415b24f7bce0387182a29c9954842425c8
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/04/2021
-  ms.locfileid: "60087916"
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "60154289"
 landingContent:
 - title: Guides des solutions de base
   linkLists:

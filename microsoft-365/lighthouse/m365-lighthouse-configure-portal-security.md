@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment configurer la sécurité du portail.
-ms.openlocfilehash: 9701ecc002144f791be6caad1e93230be5a83bf0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: fadff316b98b57960179214d3d895ecad6467a69
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182104"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152477"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise
 
@@ -42,7 +42,7 @@ Lorsque les utilisateurs accèdent à l’mf pour la première fois, ils sont in
 
 L’accès aux données et paramètres du client dans le Centre d’administration est limité aux rôles Agent d’administration et Agent d’assistance du programme Fournisseur de solutions Cloud (CSP).
 
-Vous pouvez vérifier quels utilisateurs du client partenaire ont les rôles Agent d’administration et Agent du helpdesk en vérifiant les appartenances aux groupes de sécurité sur la page [Azure AD – Tous](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) les groupes. Pour découvrir comment attribuer des rôles de programme CSP et d’autres autorisations aux utilisateurs, voir Attribuer des rôles et des [autorisations aux utilisateurs.](/partner-center/permissions-overview) En tant que MSP, si vous n’avez pas encore délégué des privilèges d’accès aux clients, découvrez comment les obtenir dans l’article Obtenir des autorisations pour gérer le service ou [l’abonnement d’un](/partner-center/customers-revoke-admin-privileges)client.
+Vous pouvez vérifier quels utilisateurs du client partenaire ont les rôles Agent d’administration et Agent du helpdesk en vérifiant les appartenances aux groupes de sécurité sur la page [Azure AD – Tous](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) les groupes. Pour savoir comment attribuer des rôles de programme CSP et d’autres autorisations aux utilisateurs, voir Attribuer des rôles et des [autorisations aux utilisateurs.](/partner-center/permissions-overview) En tant que MSP, si vous n’avez pas encore délégué des privilèges d’accès aux clients, découvrez comment les obtenir dans l’article Obtenir des autorisations pour gérer le service ou [l’abonnement d’un](/partner-center/customers-revoke-admin-privileges)client.
 
 Le tableau suivant répertorie les différentes pages Dupers et les autorisations requises pour afficher et agir sur les données et paramètres du client pour les rôles Agent d’administration et Agent d’assistance.<br><br>
 
@@ -59,7 +59,7 @@ Le tableau suivant répertorie les différentes pages Dupers et les autorisation
 > [!NOTE]
 > Actuellement, pour prendre les actions marquées avec * dans le tableau, les utilisateurs doivent également avoir le rôle Azure AD dans le client partenaire avec la propriété suivante définie : **microsoft.office365.serviceHealth/allEntities/allTasks**. Pour obtenir la liste des rôles Azure AD, voir [rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference)
 
-Étant donné les autorisations étendues associées au rôle Agent d’administration, nous vous suggérons d’adhérer au principe d’accès le moins privilégié lors de la désignation d’un utilisateur client partenaire en tant qu’agent administrateur ou agent du helpdesk. [](/azure/active-directory/develop/secure-least-privileged-access) Pour ce faire, vous pouvez attribuer le rôle d’agent du helpdesk aux utilisateurs du client partenaire requis. Cela leur permet d’afficher les données et les paramètres des clients, mais pas d’apporter de grandes modifications. Ensuite, si nécessaire, utilisez les fonctionnalités d’approbation d’accès juste-à-temps d’Azure AD Privileged Identity Management (PIM) pour donner aux utilisateurs un rôle d’agent d’administration limité dans le temps.
+Étant donné les autorisations étendues associées au rôle Agent d’administration, nous vous suggérons d’adhérer au principe d’accès le moins privilégié lors de la désignation d’un utilisateur client partenaire en tant qu’agent administrateur ou agent du helpdesk. [](/azure/active-directory/develop/secure-least-privileged-access) Pour ce faire, vous pouvez attribuer le rôle d’agent du helpdesk aux utilisateurs du client partenaire requis. Cela leur permet d’afficher les données et paramètres des clients, mais pas d’apporter de grandes modifications. Ensuite, si nécessaire, utilisez les fonctionnalités d’approbation d’accès juste-à-temps d’Azure AD Privileged Identity Management (PIM) pour donner aux utilisateurs un rôle d’agent d’administration limité dans le temps.
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Configurer Azure AD Privileged Identity Management (PIM)
 

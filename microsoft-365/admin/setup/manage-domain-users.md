@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Synchronisez les utilisateurs contrôlés par domaine avec Microsoft 365 entreprise.
-ms.openlocfilehash: 09a625bb882cfe654a92294cc35d62c3ad9e38b6
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 9b15179a48905e6ab9f8e6a44ebd7a0d62dc2bea
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786233"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153905"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Synchroniser les utilisateurs de domaine avec Microsoft 365
 
@@ -63,7 +63,7 @@ Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Dir
 
 Voir [Configurer la synchronisation d’annuaires pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md) pour en savoir plus.
 
-Lorsque vous configurez vos options pour Azure AD Connecter, nous vous recommandons d’activer la  synchronisation de mot de **passe,** l' **sign-on** unique transparente et la fonctionnalité d’écriture/écriture de mot de passe, qui est également prise en charge dans Microsoft 365 entreprise.
+Lorsque vous configurez vos options pour Azure AD Connecter, nous vous recommandons d’activer la  synchronisation de mot de **passe,** l’personnalisation transparente et la fonctionnalité d’écriture écriture par mot de passe, qui est également prise en charge dans Microsoft 365 entreprise.
 
 > [!NOTE]
 > Il existe quelques étapes supplémentaires pour l’écriture de mot de passe au-delà de la case à cocher dans Azure AD Connecter. Pour plus d’informations, [voir How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 

@@ -9,7 +9,7 @@ ms.date: 12/13/2017
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la Gestion des droits de l’information (IRM) dans Exchange Online pour utiliser un serveur AD RMS (Active Directory Rights Management Service).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64d89d52b4e835c81ed1e2c8bbd54eaaae6f1823
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 89ef25adf41c80abfd04ffdc51a32ba2cbef0c5d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176068"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153185"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configuration de la Gestion des droits relatifs à l’information (IRM) pour utiliser un serveur AD RMS local
 
 Pour une utilisation avec des déploiements locaux, la Gestion des droits de l’information (IRM) dans Exchange Online utilise services AD RMS (Active Directory Rights Management Services) (AD RMS), une technologie de protection des informations dans Windows Server 2008 et les ultérieures. La protection IRM permet d'appliquer un modèle de stratégie de droits AD RMS à un message électronique. Les droits sont attachés au message lui-même afin que la protection se produise en ligne et hors connexion, ainsi qu’à l’intérieur et à l’extérieur du pare-feu de votre organisation.
 
-Cette rubrique décrit la configuration de la gestion des droits relatifs à l'information de manière à utiliser un serveur AD RMS. Pour plus d’informations sur l’utilisation des nouvelles fonctionnalités pour chiffrement de messages Office 365 avec Azure Active Directory et Azure Rights Management, voir la faq chiffrement de messages Office 365 [de l’chiffrement de messages Office 365.](./ome-faq.yml)
+Cette rubrique décrit la configuration de la gestion des droits relatifs à l'information de manière à utiliser un serveur AD RMS. Pour plus d’informations sur l’utilisation des nouvelles fonctionnalités chiffrement de messages Office 365 avec Azure Active Directory et Azure Rights Management, consultez la [chiffrement de messages Office 365 FAQ](./ome-faq.yml).
 
 Pour en savoir plus sur la Gestion des droits relatifs à l'information dans Exchange Online, consultez la rubrique [Gestion des droits relatifs à l'information (IRM) dans Exchange Online](information-rights-management-in-exchange-online.md).
 

@@ -9,7 +9,7 @@ ms.date: 07/08/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment créer un type d’informations sensibles personnalisé qui vous permettra d’utiliser des règles répondant aux besoins de votre organisation.
-ms.openlocfilehash: da79c525a268ff686c2edaf777cedf447335ed27
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b535d24bc295a28f2aebf5152c3771cc3e999202
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176019"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153149"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 

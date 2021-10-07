@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez les comptes de facturation et leur utilisation pour gérer les paramètres de compte, les factures, les modes de paiement et les achats.
 ms.date: 03/17/2021
-ms.openlocfilehash: 551165a9ddcde03f96b6a2d03e5b1f5cd6e93eec
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 07997e8001ee753de2693b62d693e3dc2e2261c9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181582"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151325"
 ---
 # <a name="understand-billing-accounts"></a>Comprendre les comptes de facturation
 
@@ -52,11 +52,11 @@ Le tableau suivant répertorie les termes importants que vous voyez dans la page
 | Segment | Champ en lecture seule qui identifie le segment commercial de votre organisation (commercial, éducation, secteur public ou à but non lucratif). |
 | État du compte | Champ en lecture seule qui spécifie l’état de votre compte commercial auprès de Microsoft. |
 | ID de taxe | Si vous êtes en dehors des États-Unis, vous devez fournir une TVA ou un équivalent local. Si vous souhaitez en savoir plus, consultez l’article [Information sur les taxes](billing-and-payments/tax-information.md). |
-| Contrat | Lorsqu’un compte de facturation est créé, soit par le biais d’un achat direct, soit d’un accord de licence en volume, une entreprise accepte, ou signe, un contrat qui décrit les conditions d'& du compte. Le cas échéant, cet affichage répertorie un historique des contrats. Si vous devez accepter les termes mis à jour, un lien pour **approuver** le contrat s’affiche. |
+| Contrat | Lorsqu’un compte de facturation est créé, par le biais d’un achat direct ou d’un accord de licence en volume, une entreprise accepte, ou signe, un contrat qui décrit les conditions d'& du compte. Le cas échéant, cet affichage répertorie un historique des contrats. Si vous devez accepter les termes mis à jour, un lien pour **approuver** le contrat s’affiche. |
 | Profils de facturation | Un profil de facturation définit les propriétés de votre facture, telles que la personne qui reçoit la facture, la manière dont la facture est livrée, les conditions de paiement et un numéro de bon de réception. Pour distribuer la facturation au sein de votre organisation, vous pouvez créer plusieurs profils de facturation et identifier le profil de facturation approprié au moment de l’achat. Pour plus d’informations sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, [comprenez les profils de facturation.](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Si vous devez modifier le nom ou l’adresse «  Vendu à [](../business-video/get-help-support.md) » mais que vous ne voyez pas de lien Modifier, vous devez contacter le support technique pour le modifier.  Les demandes de modification **de nom** « Vendu à » nécessitent une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
+> Si vous devez modifier le nom ou l’adresse «  Vendu à [](../business-video/get-help-support.md) » mais que vous ne voyez pas de lien Modifier, vous devez contacter le support technique pour le modifier.  Les demandes de modification **de nom de** vente nécessiteront une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
 >
 > - Document émis par le gouvernement ou lettre d’inscription
 > - Imprimer à partir du Registre de la société locale

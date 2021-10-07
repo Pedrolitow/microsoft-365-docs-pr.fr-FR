@@ -11,17 +11,17 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 8597cc951c5a6d9cc587eaee957beb304fb35311
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75698e7ba0d0fd36459701f13a22ebe70762870e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181966"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150021"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Devenir un partenaire Microsoft Defender pour point de terminaison
 
@@ -43,7 +43,7 @@ Abonnez-vous [à la licence Microsoft Defender for Endpoint Developer](https://w
 
 La meilleure façon pour les partenaires technologiques de certifier que leur intégration fonctionne consiste  à faire en sorte qu’un client commun approuve la conception d’intégration suggérée (le client peut utiliser l’option Recommander un partenaire dans la [page](https://securitycenter.microsoft.com/interoperability/partners) Application partenaire de l’Centre de sécurité Microsoft Defender) et faire en sorte qu’elle soit testée et rétrogradée à l’équipe Microsoft Defender pour le point de terminaison.
 
-Une fois que l’équipe Microsoft Defender pour le point de terminaison a examiné et approuvé l’intégration, nous vous dirigerons vers l’intégration en tant que partenaire auprès de l’Association de sécurité intelligente de Microsoft.
+Une fois que l’équipe Microsoft Defender pour le point de terminaison a examiné et approuvé l’intégration, nous vous dirigeons vers l’intégration en tant que partenaire auprès de l’Association de sécurité intelligente de Microsoft.
 
 ## <a name="step-3-become-a--microsoft-intelligent-security-association-member"></a>Étape 3 : devenir membre de l’Association de sécurité intelligente Microsoft
 

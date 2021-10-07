@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/06/2021
 ms.technology: mde
-ms.openlocfilehash: 02c6ecefc5d6393508382c436a9fe82e31200b76
-ms.sourcegitcommit: 6c342a956b2dbc32be33bac1a23a5038490f1b40
+ms.openlocfilehash: f4fd2046e9fdeb7e0832577effb8d445232bb543
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58533494"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150257"
 ---
 # <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>Compatibilité des solutions antivirus avec Microsoft Defender pour le point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "58533494"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
-L’agent Microsoft Defender pour endpoint dépend Antivirus Microsoft Defender certaines fonctionnalités telles que l’analyse de fichiers.
+L’agent Microsoft Defender for Endpoint dépend Antivirus Microsoft Defender certaines fonctionnalités telles que l’analyse de fichiers.
 
 > [!IMPORTANT]
 > Defender pour le point de terminaison ne respecte pas les paramètres Antivirus Microsoft Defender Exclusions.

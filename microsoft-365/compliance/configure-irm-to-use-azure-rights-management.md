@@ -9,7 +9,7 @@ ms.date: 12/13/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 1b1f8c8b-f3b4-439b-910c-cf2f89a07a15
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations sur les nouvelles fonctionnalités de chiffrement de messages Office 365 (OME).
-ms.openlocfilehash: 726e6e62543a0c22a1d9ebb6693f9ab32396037236cb5854fc35421d85e30581
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: ec60ceb2843c03f3d91c95c2c4eca2d56e393a44
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53880406"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153173"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurer IRM pour utiliser Azure Rights Management
 

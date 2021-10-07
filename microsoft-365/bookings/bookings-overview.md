@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: Vue d’ensemble de l’application Microsoft Bookings, qui inclut un calendrier de réservation basé sur le web et s’intègre à Outlook pour optimiser le calendrier de votre personnel et donner à vos clients la flexibilité nécessaire pour prendre des rendez-vous.
-ms.openlocfilehash: c1bc36ea7724cdb29394b60fafa0178a08aab117
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0db665a0eb080d76bd90f24887ca7043b00b0dde
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203514"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153677"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
@@ -23,7 +23,7 @@ Microsoft Bookings facilite la planification et la gestion des rendez-vous. Book
 > [!NOTE]
 > Le calendrier Bookings est une boîte aux lettres dans Exchange Online.
 
-Utilisez Bookings pour rendre virtuelles les réunions de votre organisation avec des réunions en ligne via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) et Skype Entreprise. Chaque rendez-vous réservé en tant que réunion en ligne crée un lien de réunion unique qui est envoyé aux participants afin qu’ils peuvent y participer via un navigateur web, un rendez-vous téléphonique ou l’application Skype ou Teams. Bookings est également disponible en tant qu’application dans Teams, ce qui vous permet de créer des calendriers Bookings, d’affecter du personnel et de planifier de nouveaux rendez-vous et de gérer des rendez-vous existants sans jamais quitter Teams.
+Utilisez Bookings pour rendre virtuelles les réunions de votre organisation avec des réunions en ligne via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) et Skype Entreprise. Chaque rendez-vous réservé en tant que réunion en ligne crée un lien de réunion unique qui est envoyé aux participants afin qu’ils peuvent y participer via un navigateur web, un numéro de téléphone ou l’application Skype ou Teams. Bookings est également disponible en tant qu’application dans Teams, ce qui vous permet de créer des calendriers Bookings, d’affecter du personnel et de planifier de nouveaux rendez-vous et de gérer des rendez-vous existants sans jamais quitter Teams.
 
 Bookings présente trois composants principaux :
 

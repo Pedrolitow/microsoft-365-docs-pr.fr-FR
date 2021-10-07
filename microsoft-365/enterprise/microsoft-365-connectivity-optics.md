@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Cet article contient des informations sur Microsoft 365 Connectivity Optics.
-ms.openlocfilehash: e4020fc21492f3c261e10b8fad3c60c43c64bad24d12f1b1145773489f2fa3b0
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: c1ee14966f13ff50ff809ebbdf4c578bf949e956
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53854890"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150544"
 ---
 # <a name="microsoft-365-connectivity-optics"></a>Microsoft 365 Optique de connectivité
 
@@ -47,7 +47,7 @@ Les optiques sont actuellement collectées à l’aide de l’échantillonnage p
 
 Chaque mesure est généralement associée à des informations supplémentaires, qui peuvent inclure les éléments suivants :
 
-| Item | Description |
+| Élément | Description |
 | --- | --- |
 | ID client | Identificateur unique du client Azure Active Directory client associé à l’appareil de l’utilisateur final. |
 | ID du moniteur | Identificateur de l’application générant la demande (par exemple, Outlook, OneDrive, etc.), fourni par l’application cliente qui effectue la mesure. |
@@ -61,7 +61,7 @@ Chaque mesure est généralement associée à des informations supplémentaires,
 
 ## <a name="measurement-process"></a>Processus de mesure
 
-Chaque appareil de l’utilisateur final effectue généralement une mesure sur une base programmée (pour les applications installées) ou sur la base de l’action de chargement des pages du navigateur (pour les applications web). Les activités de mesure sont effectuées en tant qu’opérations en arrière-plan et n’ont pas d’impact sur l’expérience des applications pour les utilisateurs. Comme les types de mesure et les destinations qui seront utilisés pour une itération particulière de ce processus sont aléatoires, les clients peuvent remarquer des demandes aux points de terminaison de service Microsoft dans leur région qui sont similaires aux demandes classiques effectuées par les appareils des utilisateurs finaux pour une connectivité d’application normale. En outre, les clients peuvent remarquer des demandes aux points de terminaison de service Microsoft qui se trouveraient bien en dehors de leur région locale. Ces mesures sont souvent utilisées pour assurer un routage optimal des demandes des clients vers le meilleur point de terminaison de service, car les modifications apportées au client et à l’infrastructure des fournisseurs de services Web peuvent obliger Microsoft à modifier régulièrement nos stratégies de routage des demandes. En savoir plus sur la façon dont Microsoft a route le trafic vers le meilleur point de terminaison de service et comment optimiser la connectivité aux services Microsoft 365 dans la vue d’ensemble Microsoft 365 connectivité [réseau.](microsoft-365-networking-overview.md)
+Chaque appareil de l’utilisateur final effectue généralement une mesure sur une base programmée (pour les applications installées) ou sur la base de l’action de chargement des pages du navigateur (pour les applications web). Les activités de mesure sont effectuées en tant qu’opérations en arrière-plan et n’ont pas d’impact sur l’expérience de l’application pour les utilisateurs. Comme les types de mesure et les destinations qui seront utilisés pour une itération particulière de ce processus sont aléatoires, les clients peuvent remarquer des demandes aux points de terminaison de service Microsoft dans leur région qui sont similaires aux demandes classiques effectuées par les appareils des utilisateurs finaux pour une connectivité d’application normale. En outre, les clients peuvent remarquer des demandes aux points de terminaison de service Microsoft qui se trouveraient bien en dehors de leur région locale. Ces mesures sont souvent utilisées pour assurer un routage optimal des demandes des clients vers le meilleur point de terminaison de service, car les modifications apportées au client et à l’infrastructure des fournisseurs de services Web peuvent obliger Microsoft à modifier régulièrement nos stratégies de routage des demandes. En savoir plus sur la façon dont Microsoft a route le trafic vers le meilleur point de terminaison de service et comment optimiser la connectivité aux services Microsoft 365 dans la vue d’ensemble Microsoft 365 connectivité [réseau.](microsoft-365-networking-overview.md)
 
 ## <a name="service-endpoints"></a>Points de terminaison de service
 

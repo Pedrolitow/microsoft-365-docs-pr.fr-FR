@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Votre organisation peut avoir besoin de plusieurs domaines pour que les clients vous trouvent. Découvrez comment ajouter un autre domaine à votre abonnement.
-ms.openlocfilehash: fb8af781f68cddd5780d27724134910a28db8bf2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6e994bfdb50995d9a75c36eb831e35daf58561d4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208300"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153665"
 ---
 # <a name="add-another-domain"></a>Ajouter un autre domaine
 

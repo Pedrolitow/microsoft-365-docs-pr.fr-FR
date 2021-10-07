@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: Découvrez comment utiliser PowerShell pour gérer les mots de passe.
-ms.openlocfilehash: 40091d7add7f7adf9c560a90c00ad22e6c333c60
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 64c46f774db2ae2153ea336b8afb1f1aa7536d94
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209306"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150533"
 ---
 # <a name="manage-passwords-with-powershell"></a>Gérer les mots de passe avec PowerShell
 

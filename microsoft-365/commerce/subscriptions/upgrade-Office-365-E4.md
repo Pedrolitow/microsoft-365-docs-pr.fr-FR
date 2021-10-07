@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Découvrez comment mettre à niveau un abonnement Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5741588fddcddbfca47b39cada2fed7dca56afd8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1b909a6a40359e5d3f73b79bfd28ddff1037ea53
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180139"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151277"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Mise à niveau à partir d Office 365 abonnement E4
 
@@ -89,11 +89,11 @@ Voici quelques points importants à retenir avant de commencer.
 4. Recherchez l’abonnement que vous souhaitez acheter, puis sélectionnez **Mettre à niveau.**
 5. Dans la page **Panier,** vérifiez que tout est correct. Sélectionnez s’il faut payer mensuellement ou chaque année, et vérifiez le nombre de licences sous **Quantité**.
     > [!NOTE]
-    > Tous les abonnements de modules Office 365 votre abonnement E4, tels que Stockage de fichiers supplémentaire Office 365 sont également répertoriés. Toutefois, si vous avez des abonnements à des modules modules qui sont inclus dans l’abonnement vers qui vous êtes en train de mettre à niveau, nous allons les supprimer.
+    > Tous les abonnements de modules Office 365 votre abonnement E4, tels que Stockage de fichiers supplémentaire Office 365 sont également répertoriés. Toutefois, si vous avez des abonnements à des modules modules qui sont inclus dans l’abonnement vers qui vous allez mettre à niveau, nous allons les supprimer.
 6. Une fois que vous avez passé en revue votre commande, **sélectionnez Go to checkout**.
 7. Dans la page **De la commande,** **consultez La vente** à , **Facturé** à et Éléments dans **cet ordre**. Sélectionnez **Modifier** à côté de l’un de ces éléments pour modifier les informations.
     > [!NOTE]
-    > L’option d’utilisation de la facture comme mode de paiement est disponible uniquement pour les commandes dont le coût est supérieur à un certain montant. La sélection de l’option de paiement par facture peut retarder le processus de mise à niveau de deux jours ou plus si une vérification de solvabilité est requise.
+    > L’option d’utilisation de la facture comme mode de paiement est disponible uniquement pour les commandes dont le coût dépasse un certain montant. La sélection de l’option de paiement par facture peut retarder le processus de mise à niveau de deux jours ou plus si une vérification de solvabilité est requise.
 8. Lorsque vous avez terminé, sélectionnez **Ordre des commandes.**
 
 > [!NOTE]
@@ -119,7 +119,7 @@ Si vous avez déjà un abonnement, continuez à l’étape suivante.
 Avant de passer à l’étape suivante, il est important de s’assurer que tous les services au sein de votre nouvel abonnement ont été mis en place. Si l’abonnement n’est pas prêt lors de la première vérification, essayez à nouveau ultérieurement.
 
 > [!NOTE]
-> Si vous avez choisi de payer le nouvel abonnement par facture, une vérification de solvabilité peut être nécessaire. L’abonnement peut prendre jusqu’à deux jours ou moins avant d’être disponible.
+> Si vous avez choisi de payer le nouvel abonnement par facture, une vérification de solvabilité peut être nécessaire. L’abonnement peut prendre jusqu’à deux jours ou jours ou moins avant d’être disponible.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Dans la **drop-down État** de l’abonnement, sélectionnez **Active**.

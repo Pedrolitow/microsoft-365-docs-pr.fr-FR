@@ -4,23 +4,23 @@ description: Informations sur les paramètres configurables avec Microsoft Mange
 keywords: Microsoft Manged Desktop, Microsoft 365, service, documentation, paramètres, paramètres configurables
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bf8672ee6c3332ea6f8522f5086d72e58d1b9048
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a83181d6b0fa33b0eb432627530099b316ebb617
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182032"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150353"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Paramètres configurables : Bureau géré Microsoft
 
 Microsoft Manged Desktop déploie des paramètres et des stratégies qui sont appliqués à tous les appareils gérés par Microsoft Manged Desktop. Pour plus d’informations, voir [Configuration de l’appareil.](../service-description/device-policies.md)
 
-Les paramètres configurables dans Microsoft Manged Desktop offrent aux administrateurs informatiques un moyen de personnaliser et de déployer des paramètres propres à leur organisation et aux besoins de leur entreprise. Ces paramètres s’ajoutent aux paramètres de configuration des appareils et aux stratégies qui sont gérés par Microsoft Manged Desktop.  
+Les paramètres configurables dans Microsoft Manged Desktop offrent aux administrateurs informatiques un moyen de personnaliser et de déployer des paramètres propres à leur organisation et aux besoins de leur entreprise. Ces paramètres s’ajoutent aux paramètres de configuration d’appareil et aux stratégies qui sont gérés par Microsoft Manged Desktop.  
 
 Les modifications de paramètre configurables sont apportées dans le cloud et appliquées à vos Microsoft Manged Desktop dans des groupes de déploiement définis. Ce processus est similaire à la façon dont Microsoft Manged Desktop les modifications apportées aux paramètres et stratégies de configuration des appareils qui sont définis et gérés par le service. En utilisant le même processus que celui Microsoft Manged Desktop pour le déploiement des modifications, vous continuez à faire avancer votre organisation à l’aide des pratiques de gestion des technologies de l’entreprise modernes.
 
@@ -37,7 +37,7 @@ Il existe plusieurs fois des paramètres configurables.
 Voici les catégories de paramètres configurables que vous pouvez personnaliser :
 - [Image d’arrière-plan du](config-setting-ref.md#desktop-background-picture) bureau : personnaliser l’image d’arrière-plan du bureau Microsoft Manged Desktop appareils. 
 - [Pages de démarrage du navigateur](config-setting-ref.md#browser-start-pages) : ajoutez des pages de démarrage à utiliser avec Microsoft Edge. Voir la page de démarrage du navigateur
-- [Enterprise de sites en mode d’ajout](config-setting-ref.md#enterprise-mode-site-list-location) : ajoutez des sites et leur mode de compatibilité. Les sites de la liste démarrent dans Internet Explorer. 
+- [Enterprise de sites en mode d’ajout](config-setting-ref.md#enterprise-mode-site-list-location) – Ajouter des sites et leur mode de compatibilité. Les sites de la liste démarrent dans Internet Explorer. 
 - [Sites de confiance](config-setting-ref.md#trusted-sites) : ajoutez des sites de confiance et définissez des zones de sécurité pour chaque site. 
 - [Exceptions de site proxy](config-setting-ref.md#proxy) : configurer le numéro d’adresse et le numéro de port de votre serveur proxy, et ajouter des exceptions de site proxy.
 
@@ -45,7 +45,7 @@ Chaque catégorie de paramètres peut être personnalisée et déployée seule. 
 
 Par exemple :
 - Vous pouvez déployer les modifications apportées à l’image d’arrière-plan du bureau et aux sites de confiance, chacun en tant que son propre déploiement, en même temps. 
-- Vous ne pouvez pas déployer deux déploiements sur les pages de démarrage du navigateur en même temps. Le déploiement le plus récent arrête les déploiements précédents en cours.
+- Vous ne pouvez pas déployer deux déploiements sur les pages de démarrage du navigateur en même temps. Le déploiement le plus récent arrête les déploiements précédents qui sont toujours en cours.
 
 ## <a name="configurable-setting-process"></a>Processus de paramètre configurable
 
@@ -71,7 +71,7 @@ Tous les paramètres configurables sont gérés à l’aide Microsoft Manged Des
 
 Si un déploiement a échoué ou si vous ne pouvez pas revenir à une modification, ouvrez une demande de [support](admin-support.md) avec Microsoft Manged Desktop Operations. 
 
-Pour plus d’informations, [voir Déployer et suivre les paramètres configurables.](config-setting-deploy.md)
+Pour plus d’informations, voir [Déployer et suivre les paramètres configurables.](config-setting-deploy.md)
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 - [Référence des paramètres configurables](config-setting-ref.md) 

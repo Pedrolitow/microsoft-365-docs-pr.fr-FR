@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données YouTube à partir de Veritas vers Microsoft 365. Ce connecteur vous permet d’archiver des données provenant de sources de données tierces Microsoft 365. Après avoir archivé ces données, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, eDiscovery et les stratégies de rétention pour gérer des données tierces.
-ms.openlocfilehash: 48354460a79cbb8c23086962d17482a3d3419044
-ms.sourcegitcommit: 88c3b9758214936d283bad0321b826fb40a2e7e9
+ms.openlocfilehash: 6205e9a8425b4d9eeea2278a131881045b6e6bac
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "60088240"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153233"
 ---
 # <a name="set-up-a-connector-to-archive-youtube-data"></a>Configurer un connecteur pour archiver les données YouTube
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour les données YouTube.](../media/YouTubeConnectorWorkflow.png)
 
-1. Votre organisation collabore avec YouTube pour configurer un site YouTube.
+1. Votre organisation travaille avec YouTube pour configurer et configurer un site YouTube.
 
 2. Une fois toutes les 24 heures, les éléments YouTube sont copiés sur le site Veritas Merge1. Le connecteur convertit également les éléments YouTube au format de message électronique.
 
@@ -81,7 +81,7 @@ Après avoir créé le connecteur YouTube, vous pouvez afficher l’état du con
 
 1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
 
-2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur **YouTube** pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur **YouTube** pour afficher la page volante, qui contient les propriétés et les informations sur le connecteur.
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 

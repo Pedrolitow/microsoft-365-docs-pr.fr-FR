@@ -6,23 +6,23 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: adf4809e0d8dc29f170475435b19092abf2062fd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aaf364d4244afaff86f532486597e864cd77209b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207516"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150365"
 ---
 # <a name="device-names"></a>Noms de l’appareil
 
-Microsoft Manged Desktop utilise Windows Autopilot, Azure Active Directory et Microsoft Intune. Pour que ces services fonctionnent ensemble en toute transparence, les appareils ont besoin de noms cohérents et normalisés. Microsoft Manged Desktop un format de nom standardisé (au format *MMD-%RAND11)* lorsque les appareils sont inscrits. Windows Autopilot attribue ces noms. Pour plus d’informations sur Autopilot, voir l’expérience de première expérience avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
+Microsoft Manged Desktop utilise Windows Autopilot, Azure Active Directory et Microsoft Intune. Pour que ces services fonctionnent ensemble en toute transparence, les appareils ont besoin de noms cohérents et normalisés. Microsoft Manged Desktop un format de nom standardisé (au format *MMD-%RAND11)* lorsque les appareils sont inscrits. Windows Autopilot affecte ces noms. Pour plus d’informations sur Autopilot, voir l’expérience de première expérience avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
 
-## <a name="automated-name-changes"></a>Modifications automatiques de nom
+## <a name="automated-name-changes"></a>Modifications automatiques de noms
 
 Si un appareil est renommé ultérieurement, Microsoft Manged Desktop le renommera automatiquement en un nouveau nom au format standardisé. Ce processus se produit toutes les quatre heures. Le changement de nom a lieu lors du prochain redémarrage de l’appareil par l’utilisateur.
 

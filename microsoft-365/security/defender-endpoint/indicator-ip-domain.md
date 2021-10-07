@@ -3,26 +3,24 @@ title: Créer des indicateurs pour les IP et URL/domaines
 ms.reviewer: ''
 description: Créez des indicateurs pour les adresses IPS et les URL/domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: ip, url, domaine, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b28d4088b8475794989d777bf58ccc7550b3f7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0aaeb4a290c43b8fc725fe806014acfe61a939e8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179315"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150022"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines
 
@@ -42,7 +40,7 @@ Le jeu de données d’intelligence contre les menaces a été géré par Micros
 En créant des indicateurs pour les adresses IP, les URL ou les domaines, vous pouvez désormais autoriser ou bloquer des adresses IP, des URL ou des domaines en fonction de vos propres renseignements sur les menaces. Vous pouvez également avertir les utilisateurs à l’invite s’ils ouvrent une application à risque. L’invite ne les empêche pas d’utiliser l’application, mais vous pouvez fournir un message personnalisé et des liens vers une page d’entreprise qui décrit l’utilisation appropriée de l’application. Les utilisateurs peuvent toujours ignorer l’avertissement et continuer à utiliser l’application s’ils en ont besoin.
 
 
-Vous pouvez le faire via la page des paramètres ou par groupes d’ordinateurs si vous estez d’après certains groupes plus ou moins à risque que d’autres.
+Pour ce faire, vous pouvez utiliser la page des paramètres ou des groupes d’ordinateurs si vous estez d’après certains groupes plus ou moins à risque que d’autres.
 
 > [!NOTE]
 > La notation CIDR (Classless Inter-Domain Routing) pour les adresses IP n’est pas prise en charge.
@@ -52,7 +50,7 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 - Url/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. Pour plus d’informations sur la protection du réseau et les instructions de configuration, voir [Activer la protection réseau.](enable-network-protection.md)
 - La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure.
-- Pris en charge sur les ordinateurs Windows 10 version 1709 ou ultérieure.
+- Pris en charge sur les ordinateurs Windows 10, version 1709 ou ultérieure, ou Windows 11.
 - **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Microsoft 365 Defender > Paramètres > points de terminaison > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
 - Pour la prise en charge des indicateurs sur iOS, voir [Configurer des indicateurs personnalisés.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
@@ -65,7 +63,7 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 > Pour tous les autres processus, les scénarios de protection web tirent parti de la Protection du réseau pour l’inspection et l’application :
 >
 > - L’adresse IP est prise en charge pour les trois protocoles
-> - Seules les adresses IP sont pris en charge (pas de blocs CIDR ou de plages IP)
+> - Seules les adresses IP individuelles sont pris en charge (pas de blocs CIDR ou de plages IP)
 > - Les URL chiffrées (chemin d’accès complet) ne peuvent être bloquées que sur les navigateurs de première partie (Internet Explorer, Edge)
 > - Les URL chiffrées (FQDN uniquement) peuvent être bloquées en dehors des navigateurs de première partie (Internet Explorer, Edge)
 > - Les blocs de chemin d’accès d’URL complète peuvent être appliqués au niveau du domaine et à toutes les URL non chiffrées
@@ -74,12 +72,12 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 Lorsque vous utilisez le mode avertissement, vous pouvez configurer les contrôles suivants :
 
-**Contourner la capacité**:
+**Contournement :**
 
 - Bouton Autoriser dans Edge
 - Bouton Autoriser sur le toast (navigateurs autres que Microsoft)
 - Contourner le paramètre de durée sur l’indicateur
-- Contourner l’application sur les navigateurs Microsoft et non-Microsoft
+- Contourner l’application dans les navigateurs Microsoft et non-Microsoft
 
 **URL de redirection**:
 

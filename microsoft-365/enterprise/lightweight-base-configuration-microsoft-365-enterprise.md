@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Utilisez ce guide de laboratoire de test pour créer un environnement de test léger pour les tests Microsoft 365 entreprise.
-ms.openlocfilehash: 0b8e0a71c8708d2faec0e263c220e3f3d91931f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 742fc93b64d2e3c1d858931eb7dbc591ebcd8e9d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202218"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152717"
 ---
 # <a name="the-lightweight-base-configuration"></a>Configuration de base légère
 
@@ -170,7 +170,7 @@ Tout d’abord, ajoutez l’abonnement d’évaluation Microsoft 365 E5 et attr
 
 7. Dans la Centre d'administration Microsoft 365, sélectionnez **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**actifs.**</a>
 
-8. Dans **les utilisateurs** actifs, sélectionnez votre compte d’administrateur.
+8. Dans **les utilisateurs actifs,** sélectionnez votre compte d’administrateur.
 
 9. Sélectionnez **licences et applications.**
 
@@ -188,7 +188,7 @@ Votre environnement de test comporte maintenant :
 - Un abonnement d’évaluation de Microsoft 365 E5.
 - Tous vos comptes d’utilisateur appropriés (l’administrateur général ou tous les cinq comptes d’utilisateur) sont activés pour utiliser Microsoft 365 E5.
     
-Votre configuration résultante, qui ajoute des Microsoft 365 E5, ressemble à ceci :
+Votre configuration résultante, qui ajoute des Microsoft 365 E5, se ressemble à ceci :
   
 ![Phase 3 de l’environnement de test microsoft 3656 Enterprise test.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -309,7 +309,7 @@ Cela inclut l’ordinateur WIN10 avec :
 - été inscrit en tant que périphérique Azure AD dans Microsoft Intune (EMS) ;
 - Applications Microsoft 365 pour les grandes entreprises installé.
   
-Vous êtes maintenant prêt à expérimenter des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
+Vous êtes maintenant prêt à tester des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Étapes suivantes
 

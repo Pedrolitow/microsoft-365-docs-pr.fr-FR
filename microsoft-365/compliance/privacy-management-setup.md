@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - M365-privacy-management
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer la gestion de la confidentialité pour votre organisation, définir des rôles et des autorisations et configurer des paramètres importants.
-ms.openlocfilehash: 229d4bec78424858cd7034c8953313f8593e90e3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d75054c76a20ec622813d022c9de0218ea5f7b6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177835"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151025"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Prise en charge de la gestion de la confidentialité (aperçu)
 
@@ -42,7 +42,7 @@ Pour commencer à gérer la confidentialité, obtenez d’abord votre licence d�
 
 ### <a name="get-free-trial-license"></a>Obtenir une licence d’essai gratuite
 
-Pour commencer la prévisualisation publique, votre administrateur général peut obtenir la licence d’essai de gestion de la confidentialité gratuite à partir du [Centre d’administration.](https://aka.ms/purchasem365privacy) Sélectionnez « Démarrer la version d’essai » pour commencer. Votre licence dure un mois et vous pouvez la renouveler sans frais selon vos besoins lors de la prévisualisation publique.
+Pour commencer à utiliser la prévisualisation publique, votre administrateur général peut obtenir la licence d’essai gratuite de gestion de la confidentialité à partir du [Centre d’administration.](https://aka.ms/purchasem365privacy) Sélectionnez « Démarrer la version d’essai » pour commencer. Votre licence dure un mois et vous pouvez la renouveler sans frais selon vos besoins lors de la prévisualisation publique.
 
 Après avoir obtenu votre abonnement, autorisez son activation pendant 30 minutes. Revenir ensuite à la gestion de la confidentialité dans le centre de conformité pour commencer.
 
@@ -60,7 +60,7 @@ Pour en savoir plus sur les groupes de rôles et sur la façon d’accorder l’
 
 ### <a name="manage-settings"></a>Gérer les paramètres
 
-La Paramètres page est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles dans la gestion de la confidentialité, telles que les paramètres globaux pour l’anonymisation, les notifications par courrier électronique, etc.
+La Paramètres page est accessible via la roulette d’engrenage dans le coin supérieur droit des pages principales de la gestion de la confidentialité. Il permet aux administrateurs de gestion de la confidentialité de configurer les propriétés essentielles au sein de la gestion de la confidentialité, telles que les paramètres globaux pour l’anonymisation, les notifications par courrier électronique, etc.
 
 Vous pouvez passer en revue la configuration par défaut et effectuer les ajustements souhaités avant de commencer. Pour en savoir plus sur vos options, voir [Gérer les paramètres de gestion de la confidentialité.](privacy-management-settings.md)
 

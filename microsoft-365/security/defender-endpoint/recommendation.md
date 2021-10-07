@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d3c29e5112a2cf68452bcb830681dac853eb8e1b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e938eb9a743b6e63a2836d71c96692e1e7d43f66
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209000"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152057"
 ---
 # <a name="recommendation-resource-type"></a>Type de ressource Recommendation
 
@@ -46,7 +46,7 @@ ms.locfileid: "59209000"
 
 |Méthode|Type renvoyé|Description|
 |---|---|---|
-|[Répertorier toutes les actions d’amélioration](get-all-recommendations.md)|Collection Recommendation|Récupère une liste de toutes les recommandations de sécurité affectant l’organisation|
+|[Répertorier toutes les actions d’amélioration](get-all-recommendations.md)|Collection Recommendation|Récupère la liste de toutes les recommandations de sécurité affectant l’organisation|
 |[Obtenir les actions d’amélioration par ID](get-recommendation-by-id.md)|Recommandation|Récupère une recommandation de sécurité par son ID|
 |[Obtenir un logiciel de recommandation](list-recommendation-software.md)|[Logiciels](software.md)|Récupère une recommandation de sécurité liée à un logiciel spécifique|
 |[Obtenir des appareils de recommandation](get-recommendation-machines.md)|Collection MachineRef|Récupère la liste des appareils associés à la recommandation de sécurité|
@@ -66,21 +66,21 @@ ms.locfileid: "59209000"
 |recommendationName|Chaîne|Nom de la recommandation|
 |Faiblesses|Entier long|Nombre de vulnérabilités découvertes|
 |Fournisseur|Chaîne|Nom du fournisseur associé|
-|recommendedVersion|String|Version recommandée|
-|recommendedProgram|String|Programme recommandé|
+|recommendedVersion|Chaîne|Version recommandée|
+|recommendedProgram|Chaîne|Programme recommandé|
 |recommendedVendor|String|Fournisseur recommandé|
 |recommendationCategory|Chaîne|Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityControls »|
-|sous-catégorie|String|Sous-catégorie de recommandation|
+|sous-catégorie|Chaîne|Sous-catégorie de recommandation|
 |severityScore|Double|Impact potentiel de la configuration sur le Score de sécurité Microsoft pour les appareils de l’organisation (1-10)|
-|publicExploit|Boolean|Une exploitation publique est disponible|
-|activeAlert|Boolean|L’alerte active est associée à cette recommandation|
+|publicExploit|Booléen|Une exploitation publique est disponible|
+|activeAlert|Booléen|L’alerte active est associée à cette recommandation|
 |associatedThreats|String collection|Le rapport d’analyse des menaces est associé à cette recommandation|
-|remediationType|Chaîne|Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »|
-|État|Énum|État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »|
+|remediationType|String|Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »|
+|Statut|Énum|État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »|
 |configScoreImpact|Double|Impact du Score de sécurisation Microsoft pour les appareils|
 |exposureImpact|Double|Impact du score d’exposition|
 |totalMachineCount|Entier long|Nombre d’appareils installés|
-|exposedMachinesCount|Entier long|Nombre d’appareils installés exposés aux vulnérabilités|
+|exposedMachinesCount|Entier long|Nombre d’appareils installés exposés à des vulnérabilités|
 |nonProductivityImpactedAssets|Entier long|Nombre d’appareils qui ne sont pas affectés|
 |relatedComponent|Chaîne|Composant logiciel associé|
 |

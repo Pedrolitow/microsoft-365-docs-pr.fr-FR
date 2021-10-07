@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Prise en charge de la définition et de la gestion des alertes pour les stratégies de protection contre la perte de données.
-ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 601442336cb6ba2a913f3c64eb8345030d0f8209
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183671"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151097"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Prise en main du tableau de bord des alertes de protection contre la perte de données
 
@@ -45,14 +45,14 @@ Avant de commencer, assurez-vous que vous avez les conditions préalables néces
 
 Tous les locataires éligibles pour Office 365 DLP peuvent accéder au tableau de bord de gestion des alertes DLP. Pour commencer, vous devez être éligible à la Office 365 DLP pour Exchange Online, SharePoint Online et OneDrive Entreprise. Pour plus d’informations sur les conditions de licence requises pour Office 365 DLP, voir [quelles licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)fournissent les droits d’un utilisateur pour bénéficier du service ? .
 
-Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) et qui sont éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
+Les clients qui utilisent le point de terminaison [DLP](endpoint-dlp-learn-about.md) éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
 
 La **fonctionnalité d’aperçu** de contenu est disponible uniquement pour les licences ci-après :
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
-- Ajout de la conformité avancée (E5)
-- Microsoft 365 E5/A5 Information Protection and Governance
+- Ajout de conformité avancée (E5)
+- Microsoft 365 E5/A5 Protection de l’information et Gouvernance
 - Conformité microsft 365 E5/A5
 
 ### <a name="licensing-for-alert-configuration-options"></a>Gestion des licences pour les options de configuration des alertes

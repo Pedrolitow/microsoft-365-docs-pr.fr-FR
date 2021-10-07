@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365-security-compliance
@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a4ed6e53712ac3aa4b99e991d5fbbbb2bee31b80
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 46ba59bc1e9e2d137c254939847c5de8a68a861a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176092"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153221"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>En savoir plus sur la conformité des communications dans Microsoft 365
 
@@ -108,7 +108,7 @@ De nouveaux tableaux de bord interactifs pour les alertes, correspondances de st
 - **Tableaux de bord interactifs** : les nouveaux tableaux de bord affichent les correspondances de stratégie, les actions en attente et résolues, et les tendances des utilisateurs et de la stratégie.
 - **Prise en charge de** l’audit : un journal complet des activités de stratégie et de révision est facilement exporté à partir du Centre de conformité Microsoft 365 pour aider à prendre en charge les demandes de révision d’audit.
 
-## <a name="integration-with-microsoft-365-services"></a>Intégration avec les services Microsoft 365 services
+## <a name="integration-with-microsoft-365-services"></a>Intégration aux services Microsoft 365 de sécurité
 
 Les stratégies de conformité des communications analysent et capturent les messages sur plusieurs canaux de communication pour vous aider à examiner et résoudre rapidement les problèmes de conformité :
 
@@ -137,7 +137,7 @@ Dans cette étape du flux de travail, vous identifiez vos exigences de conformit
 
 Vous pouvez choisir l’un des modèles de stratégie suivants dans le Centre de conformité Microsoft 365 :
 
-- **Langage choquant ou choquant**: utilisez ce modèle pour créer rapidement une stratégie qui utilise des classifieurs intégrés pour détecter automatiquement le contenu qui peut être considéré comme abusif ou choquant.
+- **Langage choquant ou** choquant : utilisez ce modèle pour créer rapidement une stratégie qui utilise des classifieurs intégrés pour détecter automatiquement le contenu qui peut être considéré comme abusif ou choquant.
 - **Informations sensibles**: utilisez ce modèle pour créer rapidement une stratégie pour analyser les communications contenant des mots clés ou des types d’informations sensibles définis afin de vous assurer que les données importantes ne sont pas partagées avec des personnes qui ne doivent pas y avoir accès.
 - **Conformité réglementaire :** utilisez ce modèle pour créer rapidement une stratégie pour analyser les communications afin de trouver des références aux conditions financières standard associées aux normes réglementaires.
 - **Conflit d’intérêt**: utilisez ce modèle pour créer rapidement une stratégie pour surveiller les communications entre deux groupes ou deux utilisateurs afin d’éviter les conflits d’intérêts.
@@ -149,7 +149,7 @@ Dans cette étape, vous étudiez plus en détail les problèmes détectés comme
 
 - **Alertes**: lorsqu’un message correspond à une condition de stratégie, une alerte est générée automatiquement. Pour chaque alerte, vous pouvez voir l’état, la gravité, l’heure détectée et si un cas Advanced eDiscovery est affecté et son état. Les nouvelles alertes sont affichées sur la page d’accueil de conformité des communications et la page **Alertes** et sont répertoriées par ordre de gravité.
 - **Gestion des problèmes** : pour chaque alerte, vous pouvez prendre des mesures d’examen afin de résoudre le problème détecté dans le message.
-- **Révision de document**: au cours de l’examen d’un problème, vous pouvez utiliser plusieurs vues du message pour vous aider à évaluer correctement le problème détecté. Les affichages incluent un résumé des conversations, un texte, des annotations et des affichages de détails dans la conversation de communication.
+- **Révision de document**: pendant l’examen d’un problème, vous pouvez utiliser plusieurs vues du message pour vous aider à évaluer correctement le problème détecté. Les affichages incluent un résumé des conversations, un texte, des annotations et des affichages de détails dans la conversation de communication.
 - **Examen de l’historique des** activités des utilisateurs : affichez l’historique des activités des messages utilisateur et les actions de correction, telles que les notifications passées et les escalades, pour les correspondances de stratégie.
 - **Filtres**: utilisez des filtres tels que l’expéditeur, le destinataire, la date et l’objet pour affiner rapidement les alertes de message que vous souhaitez examiner.
 
@@ -157,12 +157,12 @@ Dans cette étape, vous étudiez plus en détail les problèmes détectés comme
 
 L’étape suivante consiste à résoudre les problèmes de conformité des communications que vous avez examinés à l’aide des options suivantes :
 
-- **Résoudre** : une fois que vous avez révisé un problème, vous pouvez résoudre le problème en résolvant l’alerte. La résolution d’une alerte la supprime de la file d’attente d’alertes en attente et l’action est conservée en tant qu’entrée dans la file d’attente résolue pour la stratégie correspondante.  Les alertes sont automatiquement résolues après le marquage de l’alerte comme étant mal classé, l’envoi d’une notification à un utilisateur concernant l’alerte ou l’ouverture d’un nouveau cas pour l’alerte.
+- **Résoudre** : une fois que vous avez révisé un problème, vous pouvez résoudre le problème en résolvant l’alerte. La résolution d’une alerte la supprime de la file d’attente des  alertes en attente et l’action est conservée en tant qu’entrée dans la file d’attente résolue pour la stratégie correspondante. Les alertes sont automatiquement résolues après le marquage de l’alerte comme étant mal classé, l’envoi d’une notification à un utilisateur concernant l’alerte ou l’ouverture d’un nouveau cas pour l’alerte.
 - **Marquer un message** : dans le cadre de la résolution d’un problème, vous pouvez baliser le message détecté comme étant conforme ou non conforme, ou comme il est lié aux stratégies et normes de votre organisation. La balise peut vous aider à microfiltrer des alertes de stratégie pour les réaffectations ou dans le cadre d’autres processus de révision interne.
 - **Avertir l’utilisateur :** souvent, les utilisateurs violent accidentellement ou par inadvertance une stratégie de conformité des communications. Vous pouvez utiliser la fonctionnalité Notification pour avertir l’utilisateur et résoudre le problème.
 - **Réaffecter à un autre réviseur** : parfois, le réviseur initial d’un problème doit être saisi par d’autres réviseurs pour résoudre l’incident. Vous pouvez facilement transmettre les problèmes de message aux réviseurs d’autres zones de votre organisation dans le cadre du processus de résolution.
 - **Signaler une erreur de classification**: les messages détectés de manière incorrecte comme des correspondances de stratégies de conformité peuvent parfois passer au processus de révision. Vous pouvez marquer ces types d’alertes comme étant mal classés, envoyer des commentaires à Microsoft sur l’erreur de classification afin d’améliorer les classifieurs globaux et résoudre automatiquement le problème.
-- **Supprimer le message dans Teams (aperçu)**: les messages inappropriés peuvent être supprimés de l’affichage dans les canaux Microsoft Teams ou les messages de conversation personnels et de groupe. Les messages inappropriés supprimés sont remplacés par une notification de suppression du message en cas de violation de stratégie.
+- **Supprimer un message dans Teams (aperçu)**: les messages inappropriés peuvent être supprimés de l’affichage dans les canaux Microsoft Teams ou les messages de conversation personnels et de groupe. Les messages inappropriés supprimés sont remplacés par une notification de suppression du message pour violation de stratégie.
 - **Réamorcer pour examen**: dans les situations les plus graves, vous devrez peut-être partager des informations de conformité des communications avec d’autres réviseurs de votre organisation. La conformité des communications est étroitement intégrée aux autres fonctionnalités de conformité Microsoft 365 pour vous aider à résoudre les problèmes de bout en bout. La réaffectation d’un cas pour l’examen vous permet de transférer des données et de gérer le cas vers Advanced eDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Surveiller
@@ -174,5 +174,5 @@ Le suivi et la gestion des problèmes de conformité identifiés par les straté
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
 - Pour plus d’informations sur la planification, [voir Planifier la conformité des communications.](communication-compliance-plan.md)
-- Consultez l’étude de cas pour [Contoso](communication-compliance-case-study.md) et découvrez comment il a configuré rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans les communications Microsoft Teams, Exchange Online et Yammer communications.
+- Consultez l’étude de cas pour [Contoso](communication-compliance-case-study.md) et découvrez comment il a rapidement configuré une stratégie de conformité des communications pour surveiller le langage choquant dans les communications Microsoft Teams, Exchange Online et Yammer communications.
 - Pour configurer la conformité des communications pour votre organisation Microsoft 365, voir Configurer la conformité des [communications pour Microsoft 365](communication-compliance-configure.md).

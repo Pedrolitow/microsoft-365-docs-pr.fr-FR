@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3f4a0c8fbcfe58a252bb393fdba837e6ecad85ab
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: 6c9b334f2da04c3ad55f8c1faedad5f823c2571a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60041647"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151901"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Signaler sur l’antivirus Microsoft Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "60041647"
 
 Antivirus Microsoft Defender est intégré à Windows 10, Windows Server 2019, Windows Server 2022 et Windows Server 2016. Antivirus Microsoft Defender est de votre nouvelle génération de protection dans Microsoft Defender for Endpoint. La protection nouvelle génération permet de protéger vos appareils contre les menaces logicielles telles que les virus, les programmes malveillants et les logiciels espions dans le courrier électronique, les applications, le cloud et le web.
 
-Avec Antivirus Microsoft Defender, vous avez plusieurs options pour passer en revue l’état et les alertes de protection. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller Antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou créer [des alertes par courrier électronique.](/configmgr/protect/deploy-use/endpoint-configure-alerts) Vous pouvez également surveiller la protection à [l’aide Microsoft Intune](/intune/introduction-intune).
+Avec Antivirus Microsoft Defender, vous avez plusieurs options pour passer en revue l’état et les alertes de la protection. Vous pouvez utiliser Microsoft Endpoint Manager pour [surveiller les Antivirus Microsoft Defender](/configmgr/protect/deploy-use/monitor-endpoint-protection) ou créer des [alertes par courrier électronique.](/configmgr/protect/deploy-use/endpoint-configure-alerts) Vous pouvez également surveiller la protection à [l’aide Microsoft Intune](/intune/introduction-intune).
 
 Microsoft Operations Management [](/windows/deployment/update/update-compliance-get-started) Suite dispose d’un module de conformité des mises à jour qui signale les Antivirus Microsoft Defender problèmes clés, notamment les mises à jour de la protection et les paramètres de protection en temps réel.
 

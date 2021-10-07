@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 06e7c1bc2fec29ad679ea12194f83a22954a5a02
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: e2cb2f915726289474826a3b4aa41da847152212
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043058"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154541"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Passer en revue les exigences d’architecture et les concepts clés de Microsoft Defender pour l’architecture des points de terminaison
 
@@ -42,7 +42,7 @@ Avant d’activer Microsoft Defender pour endpoint, veillez à bien comprendre l
 
 Le diagramme suivant illustre l’architecture et les intégrations de Microsoft Defender pour les points de terminaison. 
 
-![Étapes de l’ajout de Microsoft Defender Office à l’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-architecture.png)
+![Étapes d’ajout de Microsoft Defender pour Office’environnement d’évaluation Defender.](../../media/defender/m365-defender-endpoint-architecture.png)
 
 Le tableau suivant décrit l’illustration.
 
@@ -78,7 +78,7 @@ Vous pouvez intégrer Microsoft Defender pour point de terminaison à Azure Sent
 Microsoft Defender pour point de terminaison peut également être intégré à d’autres solutions de gestion des événements et des informations de sécurité (SIEM). Pour plus d’informations, voir [Enable SIEM integration in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/enable-siem-integration).
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 [Activer l’évaluation](eval-defender-endpoint-enable-eval.md)
 
 Revenir à la vue d’ensemble [de l’évaluation de Microsoft Defender pour le point de terminaison](eval-defender-endpoint-overview.md)

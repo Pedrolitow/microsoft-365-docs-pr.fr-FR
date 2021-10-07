@@ -9,7 +9,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 01/29/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cc1ddac10ddea4ea50ab1fc339db77a3240552b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c1097107aac85edc9a757f42d3502f7cbb51c758
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204378"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154313"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Examen et réponse automatisés (AIR) dans Microsoft Defender pour Office 365
 
@@ -50,7 +50,7 @@ Cet article décrit les aspects suivants :
 
 Cet article inclut également [les étapes suivantes](#next-steps)et des ressources pour en savoir plus.
 
-## <a name="the-overall-flow-of-air"></a>Flux global d’AIR
+## <a name="the-overall-flow-of-air"></a>Le flux global d’AIR
 
 Une alerte est déclenchée et un manuel de sécurité démarre une enquête automatisée, ce qui permet de trouver les résultats et les actions recommandées. Voici le flux global d’AIR, étape par étape :
 
@@ -60,9 +60,9 @@ Une alerte est déclenchée et un manuel de sécurité démarre une enquête aut
 2. Pendant qu’une enquête automatisée s’exécute, elle collecte des données sur le courrier électronique en question et les entités associées à ce courrier électronique. Ces entités peuvent inclure des fichiers, des URL et des destinataires. La portée de l’enquête peut augmenter à mesure que de nouvelles alertes et des alertes associées sont déclenchées.
 3. Pendant et après un examen automatisé, des [détails et des résultats](air-view-investigation-results.md) peuvent être consultables. Les résultats [incluent des actions recommandées](air-remediation-actions.md) qui peuvent être prises pour répondre aux menaces trouvées et y remédier.
 4. Votre équipe des opérations de sécurité examine les résultats et les [recommandations](air-view-investigation-results.md)de l’examen, et approuve ou rejette [les actions de correction.](air-review-approve-pending-completed-actions.md)
-5. Lorsque les actions de correction en attente sont approuvées (ou rejetées), l’examen automatisé se termine.
+5. Comme les actions de correction en attente sont approuvées (ou rejetées), l’examen automatisé se termine.
 
-Dans Microsoft Defender pour Office 365, aucune action de correction n’est prise automatiquement. Les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation. Les fonctionnalités AIR font gagner du temps à votre équipe des opérations de sécurité en identifiant les actions de correction et en fournissant les détails nécessaires pour prendre une décision éclairée.
+Dans Microsoft Defender pour Office 365, aucune action de correction n’est prise automatiquement. Les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation. Les fonctionnalités AIR font gagner du temps à votre équipe en matière d’opérations de sécurité en identifiant les actions de correction et en fournissant les détails nécessaires pour prendre une décision éclairée.
 
 Pendant et après chaque examen automatisé, votre équipe des opérations de sécurité peut :
 
@@ -129,7 +129,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Des modifications seront bientôt apportées à votre portail Microsoft 365 Defender web
 
-Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir certaines modifications dans le portail Microsoft 365 Defender [amélioré.](../defender/overview-security-center.md)
+Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir des modifications dans le portail Microsoft 365 Defender [amélioré.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée.":::
 
@@ -151,15 +151,15 @@ Le tableau suivant répertorie les modifications et améliorations apportées à
 
 ****
 
-|Item|Qu’est-ce qui change ?|
+|Élément|Qu’est-ce qui change ?|
 |---|---|
 |**Page Enquêtes**|La page **Enquêtes** mise à jour est plus cohérente avec ce que vous voyez [dans Microsoft Defender pour point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Vous verrez des modifications générales de mise en forme et de style qui s’alignent sur le nouvel affichage **Examens** unifié. Par exemple, le graphique d’investigation a un format plus unifié.|
 |**Onglet Utilisateurs**|**L’onglet** Utilisateurs est désormais **l’onglet Boîtes aux** lettres. Les détails sur les utilisateurs sont répertoriés sous **l’onglet Boîte aux** lettres.|
 |**Onglet Courrier** électronique|**L’onglet** Courrier a été supprimé . consultez **l’onglet Entités** pour voir la liste des éléments de cluster de messagerie et de messagerie.|
-|**Onglet Entités**|**L’onglet Entités** possède un style onglet dans l’onglet qui inclut un affichage récapitulatif et la possibilité de filtrer par type d’entité. **L’onglet Entités** inclut désormais une option de **recherche** de go en plus de l’option Ouvrir **dans l’Explorateur.** Vous pouvez désormais utiliser [l’Explorateur](threat-explorer.md) ou la [recherche avancée pour](../defender-endpoint/advanced-hunting-overview.md) rechercher des entités et des menaces, et filtrer les résultats.|
+|**Onglet Entités**|**L’onglet Entités** possède un style onglet dans l’onglet qui inclut un affichage récapitulatif et la possibilité de filtrer par type d’entité. **L’onglet Entités** inclut désormais une option de **recherche** d’accès en plus de l’option Ouvrir **dans l’Explorateur.** Vous pouvez désormais utiliser [l’Explorateur](threat-explorer.md) ou la [recherche avancée pour](../defender-endpoint/advanced-hunting-overview.md) rechercher des entités et des menaces, et filtrer les résultats.|
 |**Onglet Actions**|L’onglet **Actions mis** à jour inclut désormais un onglet Actions en **attente** et un onglet Historique **des actions.** Les actions peuvent être approuvées (ou rejetées) dans un volet latéral qui s’ouvre lorsque vous sélectionnez une action en attente.|
 |**Onglet Preuve**|Un nouvel **onglet Preuves** affiche les principales conclusions d’entité liées aux actions. Les actions liées à chaque élément de preuve peuvent être approuvées (ou rejetées) dans un volet latéral qui s’ouvre lorsque vous sélectionnez une action en attente.|
-|**Centre de notifications**|Le centre **de actions** mis à jour regroupe les actions en attente et terminées sur le courrier <https://security.microsoft.com/action-center> électronique, les appareils et les identités. Pour en savoir plus, consultez le Centre de l’action. (Pour en savoir plus, [consultez le centre de l’action.)](../defender/m365d-action-center.md)|
+|**Centre de notifications**|Le centre **de actions** mis à jour regroupe les actions en attente et terminées sur le courrier <https://security.microsoft.com/action-center> électronique, les appareils et les identités. Pour en savoir plus, consultez le Centre de l’action. (Pour en savoir plus, [consultez le centre de actions.)](../defender/m365d-action-center.md)|
 |**Page Incidents**|La page **Incidents** met désormais en corrélation plusieurs enquêtes afin de fournir une meilleure vue consolidée des enquêtes. ([En savoir plus sur les incidents.)](../defender/incidents-overview.md)|
 |
 

@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e77cecfe06606f974c4e488bcec14e12c9ce0de
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: fdce3a978d79f3ba87455f67d058185f740972ce
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043334"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150043"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -34,7 +34,7 @@ ms.locfileid: "60043334"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion shell distante. Vous avez ainsi la puissance d’un travail d’investigation approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
+La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion Shell distante. Vous avez ainsi la puissance d’un travail d’investigation approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
 
 La réponse dynamique est conçue pour améliorer les enquêtes en permettant à votre équipe des opérations de sécurité de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 
@@ -82,7 +82,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   > [!NOTE]
   > Seuls les utilisateurs ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
 
-- **Assurez-vous que le niveau de correction Automation** est affecté à l’appareil.
+- **Assurez-vous qu’un niveau de correction Automation** est affecté à l’appareil.
 
   Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir de session Live Response à un membre de ce groupe.
 
@@ -102,7 +102,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   Seuls les utilisateurs qui ont été mis en service avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
 
   > [!IMPORTANT]
-  > L’option de téléchargement d’un fichier dans la bibliothèque est disponible uniquement pour les utilisateurs ayant l’autorisation « Gérer Paramètres sécurité ».
+  > L’option de téléchargement d’un fichier dans la bibliothèque est uniquement disponible pour les utilisateurs ayant l’autorisation « Gérer Paramètres sécurité ».
   > Le bouton est grisé pour les utilisateurs ayant uniquement des autorisations déléguées.
 
   Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations des utilisateurs sont contrôlées par le rôle personnalisé RBAC.
@@ -128,7 +128,7 @@ Le tableau de bord vous donne également accès à :
 
 2. Accédez **aux points de terminaison >'inventaire des** appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
 
-3. Lancez la session de réponse en direct en sélectionnant **Lancer la session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
+3. Lancez la session de réponse en direct en sélectionnant **Lancer une session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
 
 4. Utilisez les commandes intégrées pour faire des enquêtes. Pour plus d’informations, voir [commandes de réponse en direct.](#live-response-commands)
 
@@ -157,7 +157,7 @@ Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui on
 |`connections`|Affiche toutes les connexions actives.|
 |`dir`|Affiche une liste de fichiers et de sous-répertoires dans un répertoire.|
 |`drivers`|Affiche tous les pilotes installés sur l’appareil.|
-|`fg <command ID>`|Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel. <p> **REMARQUE**: fg prend un « ID de commande » disponible à partir des travaux, et non un piD|
+|`fg <command ID>`|Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel. <p> **REMARQUE**: fg prend un « ID de commande » disponible à partir des travaux, et non un PID|
 |`fileinfo`|Récupération d’informations sur un fichier.|
 |`findfile`|Localise les fichiers d’un nom donné sur l’appareil.|
 |`getfile <file_path>`|Télécharge un fichier.|
@@ -185,7 +185,7 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 |`run`|Exécute un script PowerShell à partir de la bibliothèque sur l’appareil.|
 |`library`|Répertorie les fichiers qui ont été chargés dans la bibliothèque de réponses en direct.|
 |`putfile`|Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut.|
-|`remediate`|Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : <ul><li>Fichier : supprimer</li><li>Processus : arrêter, supprimer un fichier image</li><li>Service : arrêter, supprimer un fichier image</li><li>Entrée de Registre : supprimer</li><li>Tâche programmée : supprimer</li><li>Élément de dossier de démarrage : supprimer un fichier</li></ul> <p> **REMARQUE**: cette commande est une commande prérequise. Vous pouvez utiliser la `-auto` commande conjointement pour `remediate` exécuter automatiquement la commande prérequise.
+|`remediate`|Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : <ul><li>Fichier : supprimer</li><li>Processus : arrêter, supprimer un fichier image</li><li>Service : arrêter, supprimer un fichier image</li><li>Entrée de Registre : supprimer</li><li>Tâche programmée : supprimer</li><li>Élément de dossier de démarrage : supprimer un fichier</li></ul> <p> **REMARQUE**: cette commande est une commande prérequise. Vous pouvez utiliser la commande conjointement pour exécuter automatiquement la `-auto` `remediate` commande prérequise.
 |`undo`|Restaure une entité qui a été corrigé.|
 |
 
@@ -248,7 +248,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 6. Cliquez sur **Confirmer.**
 
-7. (Facultatif) Pour vérifier que le fichier a été chargé dans la bibliothèque, exécutez la `library` commande.
+7. (Facultatif) Pour vérifier que le fichier a été téléchargé vers la bibliothèque, exécutez la `library` commande.
 
 ### <a name="cancel-a-command"></a>Annuler une commande
 
@@ -263,7 +263,7 @@ Avant de pouvoir exécuter un script PowerShell, vous devez d’abord le téléc
 
 Après avoir téléchargé le script dans la bibliothèque, utilisez `run` la commande pour exécuter le script.
 
-Si vous envisagez d’utiliser un script non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités avancées.](advanced-features.md)
+Si vous prévoyez d’utiliser un script non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités avancées.](advanced-features.md)
 
 > [!WARNING]
 > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -302,7 +302,7 @@ Si vous envisagez d’utiliser un script non signé dans la session, vous devez 
 
 ## <a name="supported-output-types"></a>Types de sortie pris en charge
 
-La réponse en direct prend en charge les types de sortie de tableau et de format JSON. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
+La réponse en direct prend en charge les types de sortie au format JSON et tableau. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
 
 - `-output json`
 - `-output table`
@@ -327,7 +327,7 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 - ID
 - Ligne de commande
 - Durée
-- Barre côté état et entrée ou sortie
+- Barre d’état et d’entrée ou de sortie
 
 ## <a name="limitations"></a>Limites
 

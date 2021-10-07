@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Découvrez comment gérer les mots de passe Microsoft 365 compte d’utilisateur.
-ms.openlocfilehash: 85d3c42a7aca977472e44fce63af3968fc8e9705
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a0d4298f3d6c46ab067795bccf01123605ce1aa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209342"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150737"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>Gérer les Microsoft 365 de compte d’utilisateur
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer Microsoft 365 mots de passe de compte d’utilisateur de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateurs dans [Centre d'administration Microsoft 365,](../admin/add-users/index.yml)dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration Azure Active Directory (Azure AD).
+Vous pouvez gérer Microsoft 365 mots de passe de compte d’utilisateur de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateurs dans [Centre d'administration Microsoft 365,](/admin)dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planifier l’endroit et la façon dont vous allez gérer les mots de passe de votre compte d’utilisateur
 
@@ -43,7 +43,7 @@ L’endroit où et comment vous pouvez gérer vos comptes d’utilisateur dépen
 
 Vous gérez les mots de passe de compte d’utilisateur dans :
 
-- [Le Centre d’administration Microsoft 365](../admin/add-users/index.yml)
+- [Le Centre d’administration Microsoft 365](/admin)
 - Centre d’administration Azure AD
     
 ### <a name="hybrid"></a>Hybride
@@ -87,6 +87,6 @@ Pour obtenir plus d’informations et les instructions de configuration, consult
 
 ## <a name="simplify-password-resets"></a>Simplifiez les réinitialisations du mot de passe
 
-La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leur mot de passe ou leur compte. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer la [réinitialisation du mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
+La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leur mot de passe ou leur compte. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer [l’écriture écriture par mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
 
 Reportez-vous aux [Instructions pour activer la réinitialisation de mot de passe](/azure/active-directory/authentication/howto-sspr-deployment).

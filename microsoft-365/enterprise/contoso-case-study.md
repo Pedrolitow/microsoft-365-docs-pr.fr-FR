@@ -8,26 +8,26 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Comment une organisation globale fictive mais représentative a adopté Microsoft 365 entreprise.
-ms.openlocfilehash: 90d8e0c9d0cd81d415fc8ca9751b0cecd4331623
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9598464e982d5f5804056f9c9ddb782bd438aa87
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181222"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152765"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 entreprise pour Contoso Corporation
 
 Microsoft 365 entreprise est l’offre cloud de premier niveau de Microsoft qui combine des applications et services de productivité locaux et basés sur le cloud avec des fonctionnalités Windows 10 Entreprise de sécurité avancées. Il s’agit d’une solution complète et intelligente qui permet à tout le monde de collaborer de façon créative et sécurisée.
 
-Contoso Corporation est un conglomérat de production international fictif mais représentatif dont le siège social est à Paris. L’entreprise a déployé Microsoft 365 entreprise et a pris des décisions de conception majeures et des détails d’implémentation pour la mise en réseau, l’identité, les Windows 10 Entreprise, les Applications Microsoft 365 pour les grandes entreprises, la gestion des appareils mobiles, la protection des informations et la sécurité.
+Contoso Corporation est un conglomérat de production international fictif mais représentatif dont le siège social est à Paris. L’entreprise a déployé Microsoft 365 entreprise et a pris des décisions de conception majeures et des détails d’implémentation pour la mise en réseau, l’identité, les Windows 10 Entreprise, les Applications Microsoft 365 pour les grandes entreprises, la gestion des appareils mobiles, la protection des informations et sécurité.
 
-L’objectif global de l’entreprise pour Microsoft 365 entreprise est d’accélérer sa transformation numérique à l’aide des services cloud pour rassembler ses employés, partenaires, données et processus pour créer une valeur client et maintenir son avantage concurrentiel dans un monde avant tout numérique.
+L’objectif global de l’entreprise pour Microsoft 365 entreprise est d’accélérer sa transformation numérique en utilisant les services cloud pour rassembler ses employés, partenaires, données et processus afin de créer une valeur client et de maintenir son avantage concurrentiel dans un monde avant tout numérique.
 
 Reportez-vous aux articles suivants pour plus d’informations :
 
@@ -39,13 +39,13 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
   Contoso passe d’une infrastructure informatique centralisée locale à une configuration cloud qui intègre des charges de travail de productivité personnelles basées sur le cloud, des applications et des scénarios hybrides.
 
-- [Mise en réseau](contoso-networking.md)
+- [Réseau](contoso-networking.md)
 
   Les ingénieurs réseau de Contoso ont optimisé le trafic pour leurs utilisateurs locaux vers leur périphérie intranet et vers l’emplacement réseau Microsoft le plus proche sur Internet.
 
 - [Identité](contoso-identity.md)
 
-  La solution d’identité Contoso dans le cloud exploite la forêt des services de domaine Active Directory (AD DS) sur site de l’entreprise. Il inclut l’authentification fédérée avec leurs fournisseurs d’identité tiers et de confiance existants.
+  La solution d’identité Contoso dans le cloud tire parti de la forêt des services de domaine Active Directory (AD DS) sur site de l’entreprise. Il inclut l’authentification fédérée avec leurs fournisseurs d’identité tiers et de confiance existants.
 
 - [Windows 10 Entreprise](contoso-win10.md)
 
@@ -87,7 +87,7 @@ Consultez les scénarios et configurations supplémentaires suivants :
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez [Contoso Corporation et](contoso-overview.md) les considérations de conception qui ont été traitées lors du déploiement Microsoft 365 entreprise.
+Découvrez [Contoso Corporation et](contoso-overview.md) les considérations de conception qui ont été traitées lors du déploiement de Microsoft 365 entreprise.
 
 
 ## <a name="see-also"></a>Voir aussi

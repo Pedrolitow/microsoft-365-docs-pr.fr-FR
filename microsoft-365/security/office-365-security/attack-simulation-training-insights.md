@@ -6,18 +6,18 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les administrateurs peuvent découvrir comment la formation sur la simulation d’attaques dans le portail Microsoft 365 Defender affecte les employés et peut obtenir des informations sur les résultats de la simulation et de la formation.
 ms.technology: mdo
-ms.openlocfilehash: 725b5c0310d4412f0901526a8111c686f69898a2
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9376ef78ef6349bbd595ec0c48fccd394e0cd869
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163538"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154352"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Découvrez les formations à la simulation d’attaque
 
@@ -36,7 +36,7 @@ Dans le graphique, vous pouvez voir :
 - **Taux de compromission** prévu qui reflète le taux moyen de compromission pour les simulations utilisant le même type de charge utile pour d’autres locataires Microsoft 365 qui utilisent une formation sur la simulation d’attaques.
 - **Le taux de compromission** réel reflète le pourcentage d’employés qui ont diminué pour la simulation.
 
-En outre, reflète la différence entre le nombre réel d’employés compromis par l’attaque et le `<number> less susceptible to phishing` taux de compromission prévu. Ce nombre d’employés est moins susceptible d’être compromis par des attaques similaires à l’avenir, tout en indique la façon dont les employés ont globalement fait, contrairement au taux de `<percent%> better than predicted rate` compromission prévu.
+En outre, reflète la différence entre le nombre réel d’employés compromis par l’attaque et le `<number> less susceptible to phishing` taux de compromission prévu. Ce nombre d’employés est moins susceptible d’être compromis par des attaques similaires à l’avenir, tout en indique la façon dont les employés ont globalement fait, contrairement au taux de `<percent%> better than predicted rate` compromis prévu.
 
 > [!div class="mx-imgBorder"]
 > ![Vue d’ensemble de la carte d’impact sur le comportement sur la formation de simulation d’attaque.](../../media/attack-sim-preview-behavior-impact-card.png)

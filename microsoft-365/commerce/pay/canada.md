@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b553c543989798f46e3e0301c36cfe6b5de80546
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d14fd6e6035d681c0accc482065e073cac75a6c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180387"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153641"
 ---
 # <a name="payment-information-for-canada"></a>Informations de paiement pour le Canada
 
@@ -26,7 +26,7 @@ ms.locfileid: "59180387"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en CAD et référencer vos numéro(s) de facture lors de votre paiement.**
+**Veuillez payer en CAD et référencer vos numéro(s) de facture à votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Corporation,** utilisez les informations bancaires ci-après :
 
@@ -34,6 +34,6 @@ Si vous avez une facture facturée par **Microsoft Corporation,** utilisez les i
 
 Si vous avez une facture facturée par **Microsoft Canada Inc.** pour les commandes et la consommation à compter du 1er mars 2021, utilisez les informations bancaires ci-après :
 
-**Banque :** N.A.Bank, numéro de routage des succursales du Canada **:** 032820012 **BIC/SWIFT Code :** Numéro de compte CITICATTBCH  : 3003600001 **nom** du compte : MICROSOFT
+**Banque :** Numéro de routage des succursales du CanadaBank 2016 **:** 032820012 **BIC/SWIFT Code :** Numéro de compte CITICATTBCH  : 3003600001 de compte **:** MICROSOFT
 
 Les factures émises à partir d’une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.

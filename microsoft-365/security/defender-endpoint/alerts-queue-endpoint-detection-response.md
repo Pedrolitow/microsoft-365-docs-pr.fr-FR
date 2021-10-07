@@ -11,19 +11,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: c67f5ff58ab62e6a2a4c42446f66b753d774dfbb
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 60e4b251ad14824f22cb7dbe0a27f0dfc48afe58
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179420"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150286"
 ---
 # <a name="alerts-queue-in-microsoft-365-defender"></a>File d’attente des alertes dans Microsoft 365 Defender
 
@@ -34,14 +34,14 @@ ms.locfileid: "59179420"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Découvrez comment afficher et gérer la file d’attente afin de pouvoir enquêter efficacement sur les menaces visibles sur des entités telles que des appareils, des fichiers ou des comptes d’utilisateur.
+Découvrez comment afficher et gérer la file d’attente afin de pouvoir enquêter efficacement sur les menaces vues sur des entités telles que des appareils, des fichiers ou des comptes d’utilisateur.
 
 ## <a name="in-this-section"></a>Dans cette section
 
 Rubrique|Description
 :---|:---
 [Afficher et organiser la file d’attente des alertes](alerts-queue.md)|Affiche la liste des alertes qui ont été signalées dans votre réseau.
-[Gérer des alertes](manage-alerts.md)|Découvrez comment gérer des alertes telles que modifier son état, l’affecter à un membre des opérations de sécurité et consulter l’historique d’une alerte.
+[Gérer des alertes](manage-alerts.md)|Découvrez comment gérer des alertes, telles que modifier son état, l’affecter à un membre des opérations de sécurité et consulter l’historique d’une alerte.
 [Examiner des alertes](investigate-alerts.md)|Examinez les alertes qui affectent votre réseau, comprenez ce qu’elles signifient et comment les résoudre.
 [Examiner des fichiers](investigate-files.md)|Examinez les détails d’un fichier associé à une alerte, un comportement ou un événement spécifique.
 [Examiner des appareils](investigate-machines.md)|Examinez les détails d’un appareil associé à une alerte, un comportement ou un événement spécifique.

@@ -3,27 +3,25 @@ title: Microsoft Defender pour point de terminaison sur la découverte de proxy 
 ms.reviewer: ''
 description: Décrit comment configurer Microsoft Defender pour endpoint sur Linux, pour la découverte de proxy statique.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, proxy
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 09ec44a90c93272da814fd1deba49c364cd8776e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d05cf31ab773aa1b2b6583aca290514077621b3a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204816"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152213"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurer Microsoft Defender pour le point de terminaison sur Linux pour la découverte de proxy statique
 
@@ -35,7 +33,7 @@ ms.locfileid: "59204816"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender pour point de terminaison peut découvrir un serveur proxy à l’aide de `HTTPS_PROXY` la variable d’environnement. Ce paramètre doit être configuré **à** la fois au moment de l’installation et après l’installation du produit.
+Microsoft Defender pour le point de terminaison peut découvrir un serveur proxy à l’aide de `HTTPS_PROXY` la variable d’environnement. Ce paramètre doit être configuré **à** la fois au moment de l’installation et après l’installation du produit.
 
 ## <a name="installation-time-configuration"></a>Configuration de l’heure d’installation
 

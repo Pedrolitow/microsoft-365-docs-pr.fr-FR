@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ba47c83a81797f30c956ca16023b299e167566e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6d48398e3d6e91f257b3e813bc1caee5feec8be5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180347"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153605"
 ---
 # <a name="payment-information-for-china-prc"></a>Informations de paiement pour la Chine (RPC)
 
@@ -34,4 +34,4 @@ Veuillez payer en CNY et référencer le nom de votre société et le ou les num
 **Code CNAP :** 989584000600  
 **Numéro de compte :** 1199527009  
 **Nom du compte :** MICROSOFT REGIONAL SALES CORP  
-**Remarque : Payez via le canal RTGS DE LAS RTGS dans HK.**
+**Remarque : Payez par le biais du canal RTGS DE LAS DANS HK.**

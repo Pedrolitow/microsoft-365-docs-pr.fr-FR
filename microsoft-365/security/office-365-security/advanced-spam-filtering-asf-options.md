@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
@@ -18,12 +18,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtrage avancé du courrier indésirable (ASF) disponibles dans les stratégies anti-courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 012eec6aea888cc68a11f585e88b0d610382cc53
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: c3bb500ff27ca4d9dfe3b17e42ba1c254962a32c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399285"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154337"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres de filtrage avancé du courrier indésirable (ASF) dans EOP
 
@@ -44,7 +44,7 @@ Dans toutes Microsoft 365 organisations, les paramètres de filtrage avancé du 
 >
 > - Notifications périodiques de mise en quarantaine du courrier indésirable pour l’utilisateur final.
 > - La présence de messages filtrés en quarantaine.
-> - Champs `X-CustomSpam:` d’en-tête X spécifiques ajoutés aux messages, comme décrit dans cet article.
+> - Champs `X-CustomSpam:` d’en-tête X spécifiques ajoutés aux messages comme décrit dans cet article.
 
 Les sections suivantes décrivent les paramètres et options ASF disponibles dans les stratégies anti-courrier indésirable dans le portail Microsoft 365 Defender et dans Exchange Online PowerShell ou EOP PowerShell autonome ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) et [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
@@ -67,7 +67,7 @@ Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stra
     - **Enregistrement SPF : échec en dur** (*MarkAsSpamSpfRecordHardFail*)
   - La même action en mode test est appliquée à *tous les* paramètres ASF qui sont définies sur **Test**. Vous ne pouvez pas configurer différentes actions de mode test pour différents paramètres ASF.
 
-## <a name="increase-spam-score-settings"></a>Augmenter les paramètres de score de courrier indésirable
+## <a name="increase-spam-score-settings"></a>Augmenter les paramètres du score de courrier indésirable
 
 Les paramètres ASF suivants définissent le niveau de confiance du courrier indésirable (SCL) des messages détectés sur 5 ou 6, ce qui correspond au verdict du filtre anti-courrier indésirable et à l’action correspondante dans les stratégies anti-courrier indésirable. 
 

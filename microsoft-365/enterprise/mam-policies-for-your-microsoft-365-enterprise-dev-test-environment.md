@@ -9,17 +9,17 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à Microsoft 365 environnement de test d’entreprise.
-ms.openlocfilehash: 590af404a5c026cfe82afb314eec395aaa0560d3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre Microsoft 365 environnement de test d’entreprise.
+ms.openlocfilehash: ec73211a21e9e064b729b93d9e88b7c5c69b21fe
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209371"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150809"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement Microsoft 365 de test d’entreprise
 
@@ -50,11 +50,11 @@ Si vous souhaitez configurer des stratégies MAM dans une entreprise simulée, s
 
 Dans cette phase, vous allez créer une stratégie de conformité des appareils Windows 10 appareils. Cette phase utilise Microsoft Intune et le [centre d Microsoft Endpoint Manager’administration](https://go.microsoft.com/fwlink/?linkid=2109431) pour ajouter un groupe et créer une stratégie de conformité.
 
-1. Go to the [Centre d'administration Microsoft 365,](https://admin.microsoft.com)sign in to your Microsoft 365 test lab subscription with your global administrator account, and select the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">Endpoint Manager admin center</a>.
+1. Go to the [Centre d'administration Microsoft 365](https://admin.microsoft.com), sign in to your Microsoft 365 test lab subscription with your global administrator account, and select the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">Endpoint Manager admin center</a>.
 
     Si un message similaire à **Vous n’avez** pas encore activé la gestion des appareils s’affiche, sélectionnez Intune comme autorité de gestion des périphériques. Pour les étapes spécifiques, voir [Définir l’autorité de gestion des appareils mobiles.](/mem/intune/fundamentals/mdm-authority-set)
 
-    Le Centre Endpoint Manager’administration de l’entreprise se concentre sur la gestion des appareils et des applications. Pour une visite guidée de ce centre d’administration, voir [Didacticiel : Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)pas à pas dans Microsoft Endpoint Manager .
+    Le Centre Endpoint Manager’administration de l’entreprise se concentre sur la gestion des appareils et des applications. Pour une visite guidée de ce centre d’administration, voir didacticiel : [Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)pas à pas dans Microsoft Endpoint Manager .
 
 2. Dans **groupes,** ajoutez un  nouveau groupe **Microsoft 365** ou de sécurité nommé **Utilisateurs** Windows 10'appareil géré, avec un type **d’appartenance** affecté. Dans les étapes suivantes, vous allez affecter votre stratégie de conformité à ce groupe. 
 

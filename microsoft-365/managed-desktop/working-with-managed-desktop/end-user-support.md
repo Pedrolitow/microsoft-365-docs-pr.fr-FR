@@ -4,17 +4,17 @@ description: Comment les utilisateurs peuvent obtenir de l’aide sur le service
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ad3b53a9936fb40c8d699f656f88bf5a3fff20b9
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1e7d616f9644c7f81e4a0abf55e2d33d54016c55
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204908"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150305"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
@@ -25,9 +25,9 @@ Si vous avez atteint le [](../service-description/user-support.md) point dans le
 
 ## <a name="elevation-requests"></a>Demandes d’élévation
 
-Avant de demander un accès élevé à un appareil, il est préférable de passer en revue les actions qui conviennent le mieux.
+Avant de demander un accès élevé à un appareil, il est préférable de passer en revue les actions les mieux adaptées.
 
-- **Ce processus** est généralement destiné à des actions qui seraient effectuées régulièrement lors de la résolution des problèmes liés Microsoft Manged Desktop appareils mobiles. Les exemples incluent :
+- **Ce processus** vise généralement à effectuer des actions qui seraient régulièrement effectuées lors de la résolution des problèmes liés Microsoft Manged Desktop appareils mobiles. Les exemples incluent :
     - Élévation des niveaux des dépannages du système intégrés, de l’invite de commandes ou des Windows PowerShell
     - Résolution des problèmes des applications métier
     - Utilisation d’une solution de contournement pour corriger quelque chose qui doit fonctionner par conception (par exemple, l’activation de BitLocker ou le temps système non mis à jour)

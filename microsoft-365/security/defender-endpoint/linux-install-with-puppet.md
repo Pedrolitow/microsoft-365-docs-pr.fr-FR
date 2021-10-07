@@ -1,29 +1,27 @@
 ---
 title: Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 ms.reviewer: ''
-description: Décrit comment déployer Microsoft Defender pour point de terminaison sur Linux à l’aide de Laso.
+description: Décrit comment déployer Microsoft Defender pour le point de terminaison sur Linux à l’aide de L’Atelier.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6029fbb2f00cde1346dc2661486ae494015a753f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4309155fa078b4a851838e528f4c47f2ef6569eb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203093"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152238"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux avec l’ment
 
@@ -81,7 +79,7 @@ Téléchargez le package d’intégration à partir Microsoft 365 Defender porta
 
 Vous devez créer un manifeste de Manifest pour le déploiement de Defender for Endpoint sur Linux sur des appareils gérés par un serveur De jeu. Cet exemple utilise les modules *apt* et *yumrepo* disponibles à partir delabs, et part du principe que les modules ont été installés sur votre serveur Dupont.
 
-Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environments/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.jssur le fichier créé ci-dessus dans *le dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
+Créez les dossiers *install_mdatp/fichiers* et *install_mdatp/manifestes* sous le dossier modules de votre installation de Latre. Ce dossier se trouve généralement dans */etc/spamlabs/code/environnements/production/modules* sur votre serveur Der. Copiez le mdatp_onboard.json créé ci-dessus dans le *dossier install_mdatp/fichiers.* Créer *un init.pp* qui contient les instructions de déploiement :
 
 ```bash
 pwd
@@ -103,7 +101,7 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>Contenu de `install_mdatp/manifests/init.pp`
 
-Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -194,7 +192,7 @@ node "default" {
 }
 ```
 
-Les périphériques d’agent inscrits sondent périodiquement le serveur de contrôle d’accès et installent de nouveaux profils et stratégies de configuration dès qu’ils sont détectés.
+Les appareils d’agent inscrits sondent périodiquement le serveur de contrôle d’accès et installent de nouveaux profils et stratégies de configuration dès qu’ils sont détectés.
 
 ## <a name="monitor-puppet-deployment"></a>Surveiller le déploiement de l’écran de surveillance
 

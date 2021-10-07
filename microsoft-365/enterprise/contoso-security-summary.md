@@ -9,18 +9,18 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comment Contoso utilise les fonctionnalités de sécurité de Microsoft 365 entreprise.
-ms.openlocfilehash: 581314b34ab8f60533f1e2de99d4d1097086d1a0
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: f4d35ef3c5b862b42bf0a995f25b29c26eedd408
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207676"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152741"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé des Microsoft 365 pour la sécurité de l’entreprise pour Contoso Corporation
 
@@ -40,11 +40,11 @@ Contoso a suivi ces étapes pour préparer sa sécurité pour son déploiement d
 
 1. Limiter les comptes d’administrateur pour le cloud
 
-   Contoso a réalisé un examen approfondi de ses comptes d’administrateur des services de domaine Active Directory (AD DS) existants et a mis en place une série de groupes et de comptes d’administrateur cloud dédiés.
+   Contoso a réalisé un examen approfondi de ses comptes d’administrateur des services de domaine Active Directory (AD DS) existants et a mis en place une série de groupes et comptes d’administrateur cloud dédiés.
 
 2. Classer les données en trois niveaux de sécurité
 
-   Contoso a fait un examen approfondi et déterminé les trois niveaux, qui ont été utilisés pour identifier les Microsoft 365 pour les fonctionnalités d’entreprise afin de protéger les données les plus précieuses.
+   Contoso a fait un examen approfondi et a déterminé les trois niveaux, qui ont été utilisés pour identifier les Microsoft 365 pour les fonctionnalités d’entreprise afin de protéger les données les plus précieuses.
 
 3. Déterminer les stratégies d’accès, de rétention et de protection des informations pour les niveaux de données
 
@@ -77,7 +77,7 @@ Pour respecter les meilleures pratiques et les Microsoft 365 de sécurité pour 
 
 - Windows Hello Entreprise
 
-  Contoso a déployé [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) entreprise pour finir par éliminer le besoin de mots de passe par le biais d’une authentification forte à deux facteurs sur les PC et les appareils mobiles exécutant Windows 10 Entreprise.
+  Contoso a déployé [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) entreprise pour éliminer le besoin de mots de passe par le biais d’une authentification forte à deux facteurs sur les PC et les appareils mobiles exécutant Windows 10 Entreprise.
 
 - Windows Defender Credential Guard
 
@@ -129,7 +129,7 @@ Pour respecter les meilleures pratiques et les Microsoft 365 de sécurité pour 
 
 - Tableau de bord central de sécurité pour les services informatiques avec Azure Defender
 
-  Contoso utilise [Azure Defender](https://azure.microsoft.com/services/security-center/) pour présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité au sein de ses charges de travail et pour répondre aux cyberattaques.
+  Contoso utilise [Azure Defender](https://azure.microsoft.com/services/security-center/) pour présenter une vue unifiée de la sécurité et de la protection contre les menaces, pour gérer les stratégies de sécurité sur toutes ses charges de travail et pour répondre aux cyberattaques.
 
 - Tableau de bord central de sécurité pour les utilisateurs utilisant le Centre de sécurité Windows Defender
 

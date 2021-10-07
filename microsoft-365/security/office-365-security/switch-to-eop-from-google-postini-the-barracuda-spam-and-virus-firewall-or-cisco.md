@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir comment basculer vers Exchange Online Protection (EOP) à partir d’un équipement d’hygiène de messagerie local ou d’un service de protection en nuage.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9b1bd7eb869c410ccbda51ad88b105ff0315fadd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182983"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149580"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculer vers EOP depuis Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -37,7 +37,7 @@ Si vous débutez avec EOP et que vous souhaitez lire une vue d’ensemble de ses
 
 Avant de passer à EOP, il est important que vous déterminiez si vous voulez héberger vos boîtes aux lettres protégées par EOP dans le nuage avec Exchange Online, localement ou dans un scénario hybride (hybride signifie que certaines boîtes aux lettres sont hébergées localement, et d'autres avec Exchange Online). Chacun de ces scénarios d'hébergement (en nuage, local et hybride) est possible, mais les étapes de configuration peuvent varier. Voici quelques considérations pour vous aider à choisir le déploiement approprié :
 
-- Protection EOP avec boîtes aux lettres **locales**: ce scénario est approprié si vous avez une infrastructure d’hébergement de messagerie existante que vous souhaitez utiliser, ou si vous avez des exigences professionnelles pour conserver des boîtes aux lettres locales et que vous souhaitez utiliser EOP comme protection de messagerie électronique en nuage. Pour plus d'informations sur ce scénario, consultez la rubrique [Passage à EOP autonome](#switch-to-eop-standalone).
+- Protection EOP avec boîtes aux lettres **locales**: ce scénario est approprié si vous avez une infrastructure d’hébergement de messagerie existante que vous souhaitez utiliser, ou si vous avez des exigences professionnelles pour conserver des boîtes aux lettres locales et que vous souhaitez utiliser EOP comme protection de messagerie en nuage. Pour plus d'informations sur ce scénario, consultez la rubrique [Passage à EOP autonome](#switch-to-eop-standalone).
 
 - **Protection EOP avec Exchange Online boîtes** aux lettres : ce scénario est approprié si vous souhaitez une protection EOP et toutes vos boîtes aux lettres hébergées dans le cloud. Il peut s'avérer plus simple, car il ne nécessite pas le maintien de serveurs de messagerie locaux. La rubrique [Passage à Exchange Online](#switch-to-exchange-online) décrit ce scénario.
 
@@ -67,7 +67,7 @@ Si vous décidez de passer à EOP, soyez particulièrement attentif aux aspects 
 
 - **Listes** d’adresses IP et listes d’adresses IP bloqués : si vous avez des listes d’adresses ip et des listes d’adresses IP bloqués par utilisateur, laissez le temps de copier les listes dans EOP dans le cadre de votre processus de configuration. Pour plus d’informations sur la liste d’adresses IP permises et la liste d’adresses IP bloqués, voir [Configurer la stratégie de filtrage des connexions.](configure-the-connection-filter-policy.md)
 
-- **Communication sécurisée**: si vous avez un partenaire qui nécessite une messagerie chiffrée, nous vous recommandons de configurer cette solution dans le Centre d’administration Exchange’administration. Pour configurer ce scénario, voir Configurer des connecteurs pour un flux [de messagerie sécurisé avec une organisation partenaire.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
+- **Communication sécurisée**: si vous avez un partenaire qui nécessite une messagerie chiffrée, nous vous recommandons de le configurer dans le Centre d Exchange’administration. Pour configurer ce scénario, voir Configurer des connecteurs pour un flux [de messagerie sécurisé avec une organisation partenaire.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
 
 > [!TIP]
 > Lorsque vous passez d'un équipement local à EOP, vous pouvez conserver votre équipement ou un serveur pour effectuer les contrôles de règle d'entreprise. Par exemple, si votre appliance effectue un filtrage personnalisé sur le courrier sortant et que vous souhaitez qu’elle continue de le faire, vous pouvez configurer EOP pour qu’il envoie des messages directement à l’appliance pour un filtrage supplémentaire, avant qu’il ne soit acheminé vers Internet.

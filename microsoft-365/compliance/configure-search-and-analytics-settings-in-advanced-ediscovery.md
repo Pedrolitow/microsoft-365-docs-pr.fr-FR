@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurez Advanced eDiscovery paramètres qui s’appliquent à tous les ensembles de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: 4d46ca4dfb5897c7b262858ab7c955221016e3c7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 65175950a430dd6b43cac207e16a17cf02d1bbbf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59176059"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153197"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurer les paramètres de recherche et d’analyse dans Advanced eDiscovery
 
@@ -50,9 +50,9 @@ Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et thread de courrier
 
-Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des quasi-doublons et le thread de messagerie. Pour plus d’informations, voir Détection des [quasi-doublons et](near-duplicate-detection-in-advanced-ediscovery.md) [thread de messagerie.](email-threading-in-advanced-ediscovery.md)
+Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des quasi-doublons et le thread de courrier électronique. Pour plus d’informations, voir Détection des [quasi-doublons et](near-duplicate-detection-in-advanced-ediscovery.md) [thread de messagerie.](email-threading-in-advanced-ediscovery.md)
 
-- **Quasi-doublons/thread de courrier électronique :** Lorsqu’il est allumé, la détection des doublons, la détection des quasi-doublons et le thread de messagerie électronique sont inclus dans le flux de travail lorsque vous exécutez des analyses sur les données dans un jeu à réviser.
+- **Quasi-doublons/thread de messagerie électronique :** Lorsqu’il est allumé, la détection des doublons, la détection des quasi-doublons et le thread de messagerie électronique sont inclus dans le flux de travail lorsque vous exécutez des analyses sur les données dans un jeu à réviser.
 
 - **Seuil de similarité des documents et des e-mails :** Si le niveau de similarité de deux documents est supérieur au seuil, les deux documents sont placés dans le même jeu de quasi-doublons.
 
@@ -86,11 +86,11 @@ Dans certains cas, certains textes diminuent la qualité de l’analyse, par exe
 
 Lorsque ce paramètre est désactivé, le traitement ocr est exécuté sur les fichiers image. Le traitement ocr est exécuté dans les situations suivantes :
 
-- Lorsque des dépositaires et des sources de [données non privatives](non-custodial-data-sources.md) sont ajoutés à un cas. Lorsque l’ocr est appliqué aux fichiers image, le texte de ces fichiers est utilisable dans une recherche au cours d’une collection. Le traitement ocr est effectué pendant le [processus d’indexation](indexing-custodian-data.md) avancée. L’ocr est uniquement exécuté sur les éléments qui sont traitées pendant l’indexation avancée. Par exemple, si un fichier PDF de grande taille partiellement indexé ou avec d’autres erreurs d’indexation est traitée pendant l’indexation avancée, l’ocr est également appliqué au fichier. En d’autres termes, le traitement ocr se produit uniquement sur les fichiers qui sont ré-indexés au cours du processus d’indexation avancée. Cela signifie qu’il peut y avoir des situations dans lesquelles des dépositaires sont ajoutés à un cas, mais certaines pièces jointes de courrier électronique ne sont pas traitées pour l’ocr, car ces fichiers ne sont pas traitées pendant l’indexation avancée.
+- Lorsque des dépositaires et des sources de [données non privatives](non-custodial-data-sources.md) sont ajoutés à un cas. Lorsque l’ocr est appliqué aux fichiers image, le texte de ces fichiers est utilisable dans une recherche au cours d’une collection. Le traitement ocr est effectué pendant le [processus d’indexation](indexing-custodian-data.md) avancée. L’ocr est uniquement exécuté sur les éléments qui sont traitées pendant l’indexation avancée. Par exemple, si un fichier PDF de grande taille partiellement indexé ou avec d’autres erreurs d’indexation est traitée pendant l’indexation avancée, l’ocr est également appliqué au fichier. En d’autres termes, le traitement ocr se produit uniquement sur les fichiers qui sont ré-indexés au cours du processus d’indexation avancée. Cela signifie qu’il peut y avoir des situations dans lesquelles des dépositaires sont ajoutés à un cas, mais que certaines pièces jointes de courrier ne sont pas traitées pour l’ocr, car ces fichiers ne sont pas traitées pendant l’indexation avancée.
 
 - Lorsque du contenu provenant d’autres sources de données (qui ne sont pas associés à un dépositaire et ajoutés au cas dans une source de données non liée à la conservation) est ajouté à un groupe de révision.
 
-Une fois les données ajoutées à un jeu à réviser, le texte de l’image peut être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu à réviser. Pour plus d’informations, consultez :
+Une fois les données ajoutées à un jeu à réviser, le texte de l’image peut être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans le jeu à réviser. Pour plus d'informations, voir :
 
 - [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 

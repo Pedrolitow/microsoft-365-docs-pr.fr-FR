@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les différences entre le courrier indésirable (courrier indésirable) et le courrier en masse (courrier gris) dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc9c94946c3da2f9a14f45070a86c557a5c7dc85
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e8a896ac3360ccf799dbe34c7e298f76140ee6d5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162412"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154301"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre le courrier indésirable et le courrier en masse dans EOP ?
 
@@ -43,7 +43,7 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online
 
   - Si vous n’êtes pas d’accord avec le verdict de filtrage du courrier indésirable, vous pouvez signaler les messages que vous considérez comme courrier indésirable ou non à Microsoft de plusieurs manières, comme décrit dans Signaler les messages et les fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-- **Les messages électroniques** en nombre (également appelés _messages_ gris) sont plus difficiles à classer. Alors que le courrier indésirable est une menace constante, les courriers électroniques en masse sont souvent des publicités ou des messages marketing. Certains utilisateurs souhaitent recevoir des messages électroniques en nombre (et en fait, ils se sont délibérément inscrits pour les recevoir), tandis que d’autres considèrent les messages électroniques en nombre comme du courrier indésirable. Par exemple, certains utilisateurs souhaitent recevoir des messages publicitaires de Contoso Corporation ou des invitations à une prochaine conférence sur la cybersécurité, tandis que d’autres considèrent ces mêmes messages comme du courrier indésirable.
+- **Les messages électroniques** en nombre (également appelés _messages_ gris) sont plus difficiles à classer. Alors que le courrier indésirable est une menace constante, les courriers électroniques en masse sont souvent des publicités ou des messages marketing. Certains utilisateurs souhaitent des messages électroniques en nombre (et en fait, ils se sont délibérément inscrits pour les recevoir), tandis que d’autres considèrent les messages électroniques en masse comme du courrier indésirable. Par exemple, certains utilisateurs souhaitent recevoir des messages publicitaires de Contoso Corporation ou des invitations à une prochaine conférence sur la cybersécurité, tandis que d’autres considèrent ces mêmes messages comme du courrier indésirable.
 
   Pour plus d’informations sur la façon dont les messages électroniques en nombre sont identifiés, voir Le niveau de réclamation en bloc [(BCL) dans EOP.](bulk-complaint-level-values.md)
 
@@ -57,4 +57,4 @@ Les polices anti-courrier indésirable ont un seuil BCL par défaut qui est util
 
 - [Paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
-Une autre option est facile à ignorer : si un utilisateur se plaindra de recevoir des messages électroniques en masse, mais que les messages sont provenant d’expéditeurs dignes de confiance qui passent le filtrage du courrier indésirable dans EOP, l’utilisateur doit vérifier qu’une option de désabonnement est disponible dans le message électronique en masse.
+Une autre option facile à ignorer : si un utilisateur se plaindra de recevoir des messages électroniques en masse, mais que les messages sont des expéditeurs dignes de confiance qui passent le filtrage du courrier indésirable dans EOP, l’utilisateur doit vérifier qu’une option de désabonnement est disponible dans le message électronique en masse.

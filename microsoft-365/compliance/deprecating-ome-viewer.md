@@ -9,7 +9,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: L chiffrement de messages Office 365 visionneuse (OME) a été supprimée des magasins Android et Apple en 2018.
-ms.openlocfilehash: dc12eaa783c43fb80fb8ecbe984ecbcd0cda315f33b2cd1d3bc65e8932d77bda
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0eded17f4da5347e1f1a88031a780cee5f8b1dee
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53892086"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152981"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>Application Deprecating Message Encryption Viewer
 
@@ -32,13 +32,13 @@ Le 15 août 2018, nous avons supprimé l’application mobile chiffrement de mes
   
 ## <a name="changes-from-august-2018"></a>Modifications d’août 2018
 
-Comme annoncé en septembre 2017, nous avons publié une nouvelle version de [chiffrement de messages Office 365](https://aka.ms/ome2017) afin que les utilisateurs peuvent envoyer des messages chiffrés et protégés à toute personne à l’intérieur ou à l’extérieur de l’organisation sans l’exigence de l’application mobile. Depuis, nous avons ajouté des fonctionnalités supplémentaires :
+Comme annoncé en septembre 2017, nous avons publié une nouvelle version de [chiffrement de messages Office 365](https://aka.ms/ome2017) afin que les utilisateurs peuvent envoyer des messages chiffrés et protégés à toute personne à l’intérieur ou à l’extérieur de l’organisation sans l’application mobile requise. Depuis, nous avons ajouté des fonctionnalités supplémentaires :
   
 - [Modèle chiffrer uniquement](https://aka.ms/encryptonly)
 
 - [Contrôle pour déchiffrer les pièces jointes](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
 
-Avec cette modification, les utilisateurs ne pourront plus télécharger l’application Visionneuse de chiffrement des messages Office 365 mobile à partir du 1er août. Par conséquent, les destinataires de courrier peuvent ne pas être en mesure de lire les messages chiffrés avec la version précédente d’OME sur certains appareils mobiles Android et Apple. Toutefois, ils pourront toujours lire ces messages sur les ordinateurs personnels (via les navigateurs de bureau). Les utilisateurs qui ont déjà téléchargé l’application continueront à l’utiliser.
+Avec cette modification, les utilisateurs ne pourront plus télécharger l’application Visionneuse de chiffrement des messages Office 365 mobile à partir du 1er août. Par conséquent, les destinataires de courrier peuvent ne pas être en mesure de lire les messages chiffrés avec la version précédente d’OME sur certains appareils mobiles Android et Apple. Toutefois, ils pourront toujours lire ces messages sur des ordinateurs personnels (via les navigateurs de bureau). Les utilisateurs qui ont déjà téléchargé l’application continueront à l’utiliser.
   
 ## <a name="why-this-change-was-made"></a>Pourquoi cette modification a-t-elle été réalisée ?
 
@@ -48,7 +48,7 @@ Exiger que les utilisateurs téléchargent une application mobile est une autre 
   
 ## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>Puis-je toujours utiliser la version précédente de chiffrement de messages Office 365
 
-La version précédente d’chiffrement de messages Office 365 n’est pas dépréciée pour le moment, mais nous avons apporté des améliorations importantes à la nouvelle version de chiffrement de messages Office 365, ce qui facilite le chiffrement et la protection des données sensibles pour tout le monde et sur n’importe quel appareil, y compris la possibilité pour les utilisateurs de lire les messages protégés directement dans Outlook (bureau, mobile et web). 
+La version précédente d’chiffrement de messages Office 365 n’est pas dépréciée pour l’instant, mais nous avons apporté des améliorations importantes à la nouvelle version de chiffrement de messages Office 365, ce qui facilite le chiffrement et la protection des droits des données sensibles pour tout le monde et sur n’importe quel appareil, y compris la possibilité pour les utilisateurs de lire les professionnels messages tected directement dans Outlook (bureau, mobile et web). 
   
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Que dois-je faire pour me préparer à cette modification ?
 
@@ -56,6 +56,6 @@ Si votre organisation envoie actuellement des pièces jointes chiffrées à des 
   
 Nous vous recommandons de mettre à jour Exchange règles de flux de messagerie pour utiliser la version actuelle d’OME afin que votre organisation puisse tirer parti des fonctionnalités nouvelles et améliorées. Une fois que vous avez installé les nouvelles fonctionnalités OME, les destinataires n’ont pas besoin de l’application Visionneuse OME pour lire les messages chiffrés sur les appareils mobiles.
   
-Microsoft vous recommande d’effectuer un plan pour passer aux nouvelles fonctionnalités OME dès qu’il est raisonnable pour votre organisation. Pour obtenir des instructions, voir [Configurer de nouvelles fonctionnalités chiffrement de messages Office 365 de gestion.](set-up-new-message-encryption-capabilities.md) Si vous souhaitez en savoir plus sur le fonctionnement des nouvelles fonctionnalités en premier, voir [chiffrement de messages Office 365](ome.md).
+Microsoft vous recommande d’effectuer un plan pour passer aux nouvelles fonctionnalités OME dès qu’il est raisonnable pour votre organisation. Pour obtenir des instructions, voir [Configurer de chiffrement de messages Office 365 nouvelles fonctionnalités.](set-up-new-message-encryption-capabilities.md) Si vous souhaitez en savoir plus sur le fonctionnement des nouvelles fonctionnalités en premier, voir [chiffrement de messages Office 365](ome.md).
   
 

@@ -8,7 +8,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: En savoir plus sur Office 365 Allemagne.
-ms.openlocfilehash: 9aa7fc76be39f9ea0aee373ebbecb72387f47610
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 0496eae485f3be8298f0ab77d066a23fa87f9389
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773954"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154085"
 ---
 # <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
 
@@ -46,7 +46,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
   
 - Applications Microsoft 365 pour les grandes entreprises, Office 2016 et Office 2013<sup>1</sup>. Notez que Office 2013 nécessite l’utilisation [Office 365'authentification](../../enterprise/modern-auth-for-office-2013-and-2016.md)moderne avec Office clients.
     
-- Exchange Online
+- Exchange Online
     
 - SharePoint Online
     
@@ -88,7 +88,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
   
 ## <a name="general-information"></a>Informations générales
 
-|Item|Informations|
+|Élément|Informations|
 |-----|-----|
 |Portail de connexion  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Support technique, sur les abonnements et la facturation  <br/> |Support basé sur l’Allemagne disponible en allemand et en anglais Pour plus d’informations, voir contacter le support pour les produits [d’entreprise - Aide de l’administrateur](../../business-video/get-help-support.md).  <br/> |

@@ -9,15 +9,15 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur pour importer et archiver des données à partir de Veritas Zoom Meetings Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: 1ee2ede9005f502523a3b298248b0bf1fb1716d6
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 640cfddc2992b0327433a91c81294128054f7ca1
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164233"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153245"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configurer un connecteur pour archiver les données de Zoom Meetings
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec Zoom Meetings pour configurer un site Zoom Meetings.
 
-2. Toutes les 24 heures, les éléments de réunion de Zoom Meetings sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
+2. Une fois toutes les 24 heures, les éléments de réunion de Zoom Meetings sont copiés sur le site Veritas Merge1. Le connecteur convertit également le contenu des réunions au format de message électronique.
 
 3. Le connecteur Zoom Meetings que vous créez dans le Centre de conformité Microsoft 365, se connecte à Veritas Merge1 tous les jours et transfère les messages de réunion vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -53,7 +53,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
   Après avoir créé ces applications, la plateforme Zoom génère un ensemble d’informations d’identification uniques utilisées pour générer les jetons. Ces jetons sont utilisés pour authentifier le connecteur lorsqu’il se connecte à votre compte Zoom et copie les éléments sur le site Merge1. Vous utiliserez ces jetons lorsque vous configurerez le connecteur Zoom à l’étape 2.
 
-  Pour obtenir des instructions détaillées sur la création des applications OAuth et JWT, consultez le Guide de l’utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
+  Pour obtenir des instructions détaillées sur la création des applications OAuth et JWT, consultez le guide utilisateur [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf).
 
 - L’utilisateur qui crée le connecteur Zoom Meetings à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs** de données dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 

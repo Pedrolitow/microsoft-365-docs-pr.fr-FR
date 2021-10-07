@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9e3ccce5c5955418e3e1243b96d51e5999f0f585
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 77d0bfb569837a508221d78d811c985153533ed7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209594"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152225"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel par appareil
 
@@ -82,7 +82,7 @@ GET /api/machines/SoftwareInventoryByMachine
 
 > [!NOTE]
 >
-> - Chaque enregistrement représente environ 0,5 KB de données. Vous devez prendre cela en compte lors du choix du paramètre pageSize approprié pour vous.
+> - Chaque enregistrement représente environ 0,5 To de données. Vous devez prendre cela en compte lors du choix du paramètre pageSize approprié pour vous.
 > - Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété. Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
 > - Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
 
@@ -97,7 +97,7 @@ DeviceName|string|Nom de domaine complet (FQDN) de l’appareil.|johnlaptop.euro
 DiskPaths|Array[string]|Preuve disque que le produit est installé sur l’appareil.|[ « C: \\ Program Files (x86) \\ Microsoft \\ Silverlight \\ Application \\silverlight.exe » ]
 EndOfSupportDate|string|Date à laquelle la prise en charge de ce logiciel a ou va se terminer.|2020-12-30
 EndOfSupportStatus|string|État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software.|EOS à venir
-ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp!
+ID|string|Identificateur unique de l’enregistrement.|123ABG55_573AG&mnp !
 NumberOfWeaknesses|int|Nombre de faiblesses sur ce logiciel sur cet appareil|3
 OSPlatform|string|Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.|Windows 10
 RbacGroupName|string|Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».|Serveurs
@@ -288,4 +288,4 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 Autres associés
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

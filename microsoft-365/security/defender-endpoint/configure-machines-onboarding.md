@@ -2,26 +2,24 @@
 title: Obtenir des appareils intégrés à Microsoft Defender pour le point de terminaison
 description: Suivez l’intégration des appareils gérés par Intune à Microsoft Defender pour endpoint et augmentez le taux d’intégration.
 keywords: intégration, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, gestion de la configuration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8c296ab7f5f01c62b7342d2027ab90a894e1e55c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 620a04fa7426ea349cbf0311ff1817faedca8b93
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209677"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152429"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtenir des appareils intégrés à Microsoft Defender pour le point de terminaison
 
@@ -42,18 +40,18 @@ Avant de pouvoir suivre et gérer l’intégration d’appareils :
 
 ## <a name="discover-and-track-unprotected-devices"></a>Découvrir et suivre les appareils non protégés
 
-La  carte d’intégration fournit une vue d’ensemble de votre taux d’intégration en comparant le nombre d’appareils Windows 10 réellement intégrés à Defender for Endpoint et le nombre total d’appareils Windows 10 gérés par Intune.
+La  carte d’intégration fournit une vue d’ensemble de votre taux d’intégration en comparant le nombre d’appareils Windows réellement intégrés à Defender for Endpoint et le nombre total d’appareils Windows gérés par Intune.
 
 ![Carte d’intégration de gestion de la configuration des appareils.](images/secconmgmt_onboarding_card.png)
 
-*Carte affichant les appareils intégrés par rapport au nombre total d’appareils gérés Windows 10 Intune*
+*Carte montrant les appareils intégrés par rapport au nombre total d’appareils gérés Windows Intune*
 
 > [!NOTE]
 > Si vous avez utilisé Le Gestionnaire de configuration du Centre de sécurité, le script d’intégration ou d’autres méthodes d’intégration qui n’utilisent pas les profils Intune, vous pouvez rencontrer des incohérences de données. Pour résoudre ces incohérences, créez un profil de configuration Intune correspondant pour l’intégration de Defender for Endpoint et affectez ce profil à vos appareils.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Intégrer d’autres appareils avec des profils Intune
 
-Defender pour le point de terminaison fournit plusieurs options pratiques pour [l’intégration Windows 10 appareils.](onboard-configure.md) Toutefois, pour les appareils gérés par Intune, vous pouvez tirer parti des profils Intune pour déployer facilement le capteur Defender for Endpoint afin de sélectionner des appareils, ce qui permet d’intégrer efficacement ces appareils au service.
+Defender pour le point de terminaison fournit plusieurs options pratiques pour [l’intégration Windows appareils.](onboard-configure.md) Toutefois, pour les appareils gérés par Intune, vous pouvez tirer parti des profils Intune pour déployer facilement le capteur Defender for Endpoint afin de sélectionner des appareils, ce qui permet d’intégrer efficacement ces appareils au service.
 
 À partir de **la carte d’intégration,** sélectionnez **Intégrer d’autres appareils** pour créer et affecter un profil sur Intune. Le lien vous permet d’utiliser la page de conformité des appareils sur Intune, qui fournit une vue d’ensemble similaire de votre état d’intégration.
 

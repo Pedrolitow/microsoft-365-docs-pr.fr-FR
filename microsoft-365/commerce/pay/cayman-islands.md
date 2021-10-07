@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a6fe01ddb5d601ffe75a22a408ea1241e67d402a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 32031f01541f6c607233f59e1bbf82a8fc6253bb
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180355"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153617"
 ---
 # <a name="payment-information-for-cayman-islands"></a>Informations de paiement pour les îles Caïmans
 

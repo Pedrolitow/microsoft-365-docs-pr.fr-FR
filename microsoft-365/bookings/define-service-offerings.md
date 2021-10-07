@@ -6,15 +6,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instructions pour entrer des informations sur les offres de services, notamment le nom du service, la description, l’emplacement, la durée et la tarification. Vous pouvez également marquer les employés qualifiés pour fournir le service.
-ms.openlocfilehash: aad627a164b7f33b82bfa29db6224b8c5206b5e1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6b276d9ec2d943527f1a6d8ab310fc91406f216c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181774"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151553"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Définir vos offres de services dans Bookings
 
@@ -56,9 +56,9 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
    L’heure sera bloquée sur le calendrier du personnel et aura un impact sur les informations de libre/occupé. Cela signifie que si un rendez-vous se termine à 15 h 00 et que 10 minutes de temps tampon ont été ajoutées à la fin de la réunion, le calendrier du personnel s’affiche comme occupé et non réservé jusqu’à 15 h 10. Cela peut être utile si votre personnel a besoin de temps avant une réunion pour se préparer, tel qu’un médecin qui examine le graphique d’un patient ou un conseiller financier qui prépare les informations de compte pertinentes. Il peut également être utile après une réunion, par exemple lorsque quelqu’un a besoin de temps pour se déplacer vers un autre emplacement.
 
-   **Prix non fixe**: sélectionnez les options de prix qui s’afficheront sur Self-Service page. Si **le prix non définie** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaîtra.
+   **Prix non fixe**: sélectionnez les options de prix qui s’afficheront sur Self-Service page. Si **le prix non fixé** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaît.
 
-   **Remarques**: ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier de l’application web Bookings.
+   **Remarques**: ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier dans l’application web Bookings.
 
    **Nombre maximal de** participants par événement : ce paramètre vous permet de créer des services qui nécessitent la possibilité pour plusieurs personnes de réserver la même heure de rendez-vous et le même personnel (par exemple, un cours de mise en forme). Le créneau horaire du rendez-vous pour le service, le personnel et l’heure sélectionnés pourra être réservé jusqu’à ce que le nombre maximal de participants, spécifié par vous, soit atteint. La capacité actuelle des rendez-vous et les participants peuvent être vus dans l’onglet Calendrier de l’application Web Bookings.
 
@@ -84,11 +84,11 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
      Nous vous recommandons de désactiver ce paramètre si vous souhaitez limiter l’accès à Self-Service page. En outre, nous vous suggérons d’ajouter du texte à vos e-mails de confirmation et de rappel qui indique à vos clients comment apporter des modifications à leur réservation par d’autres moyens, par exemple en appelant le bureau ou en appelant le service d’aide.
 
-4. Dans la page **Options** de disponibilité, vous pouvez voir les options que vous avez sélectionnées dans votre **page** Réservation pour votre stratégie de planification et la disponibilité de votre personnel. Pour plus d’informations, [voir Définir vos stratégies de planification.](set-scheduling-policies.md)
+4. Dans la page **Options** de disponibilité, vous pouvez voir les options que vous avez sélectionnées dans votre **page** réservation pour votre stratégie de planification et la disponibilité de votre personnel. Pour plus d’informations, [voir Définir vos stratégies de planification.](set-scheduling-policies.md)
 
     :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exemple de définition du nombre maximal de participants dans Bookings.":::
 
-5. **Prix par défaut**  Il s’agit du prix qui s’affiche sur Self-Service page. Si **le prix non définie** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaîtra.
+5. **Prix par défaut**  Il s’agit du prix qui s’affiche sur Self-Service page. Si **le prix non fixé** est sélectionné, aucun prix ou référence au coût ou à la tarification n’apparaît.
 
 6. **Remarques** Ce champ apparaît dans l’événement de réservation pour le personnel réservé, ainsi que dans l’événement qui apparaît sous l’onglet Calendrier dans l’application web Bookings.
 
@@ -100,7 +100,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
    :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un e-mail de confirmation de Bookings.":::
 
-   Vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur la planification ou sur ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, visible dans le champ Informations supplémentaires pour la **confirmation du** courrier électronique :
+   Vous pouvez inclure tout texte supplémentaire que vous souhaitez ici, par exemple des informations sur la planification ou sur ce que les clients doivent apporter pour le rendez-vous. Voici un exemple de texte personnalisé ajouté à l’e-mail de confirmation d’origine, visible dans le champ Informations supplémentaires pour la **confirmation du courrier** électronique :
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings.":::
 

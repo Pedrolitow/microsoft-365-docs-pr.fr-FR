@@ -8,17 +8,17 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Les administrateurs peuvent en savoir plus sur les informations sur le flux de messagerie sortant et entrant dans le tableau de bord flux de messagerie du Centre de sécurité & conformité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 278f9620b0416a1bdc23ba1efaa1581a5318b6a7
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: acd1b46dfd93e2baee7861daae7b24daa42a324b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988462"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154373"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Informations sur le flux de messagerie sortant et entrant dans le Centre de sécurité & conformité
 
@@ -39,7 +39,7 @@ Les informations du widget sont liées aux connecteurs et à la protection des m
 
 - [Configurer le flux de messagerie à l’aide des connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
-- [Informations de référence technique sur le chiffrement dans Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
+- [Détails de référence technique sur le chiffrement dans Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Message protégé en transit (par TLS)
 
@@ -49,7 +49,7 @@ Lorsque vous cliquez sur Afficher les **détails** sur le widget, le volant Mess
 
 Actuellement, TLS 1.2 est la version de TLS la plus sécurisée proposée par Microsoft 365. Souvent, vous devez connaître le chiffrement TLS utilisé pour les audits de conformité. Vous n’avez probablement pas de relation directe avec la plupart des serveurs de messagerie source et de destination (vous ne les possédez pas, et Microsoft non plus), vous n’avez donc pas beaucoup d’options pour améliorer le chiffrement TLS utilisé par ces serveurs.
 
-Toutefois, vous pouvez utiliser des [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) pour garantir la meilleure protection TLS disponible pour les messages envoyés entre vos serveurs de messagerie et Microsoft 365. Le flux de messagerie entre Microsoft 365 et vos propres serveurs de messagerie ou serveurs qui appartiennent à vos partenaires est souvent plus important et sensible que les messages ordinaires. Vous pouvez donc appliquer une sécurité et un niveau de sécurité supplémentaires à ces messages.
+Toutefois, vous pouvez utiliser des [connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) pour garantir la meilleure protection TLS disponible pour les messages envoyés entre vos serveurs de messagerie et Microsoft 365. Le flux de messagerie entre Microsoft 365 et vos propres serveurs de messagerie ou serveurs qui appartiennent à vos partenaires est souvent plus important et sensible que les messages ordinaires. Vous devez donc appliquer une sécurité et un niveau de sécurité supplémentaires à ces messages.
 
 Vous pouvez mettre à niveau ou corriger vos propres serveurs de messagerie pour améliorer le chiffrement TLS utilisé, ou contactez vos partenaires pour en faire de même. Le **rapport connecteur affiche** le volume de flux de messagerie et le chiffrement TLS pour les messages qui utilisent Microsoft 365 connecteurs.
 

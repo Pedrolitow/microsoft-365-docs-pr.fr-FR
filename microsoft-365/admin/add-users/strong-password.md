@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -20,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment définir des exigences de mot de passe strictes pour vos utilisateurs, à l’aide Windows PowerShell.
-ms.openlocfilehash: e9bf4fc81cf788ab51ef174d73a7c6086ebb9d46
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 90ce3949b88a186c573d2a7718ede10b1a955c2c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59773414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154116"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Désactiver les exigences de mot de passe strictes pour les utilisateurs
 
@@ -55,7 +56,7 @@ Vous devez également vous connecter à Microsoft 365 avec PowerShell.
 > [!NOTE]
 > L’userPrincipalName doit être au format de connexion de style Internet où le nom d’utilisateur est suivi du signe at (@) et d’un nom de domaine. Par exemple : user@contoso.com.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Comment se connecter à Microsoft 365 avec PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 

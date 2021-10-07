@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a8efc37b3ae5177540242bca5fdbeab5f4e613ba
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: cd86f7c958e4e6912c18ddb3c345bfbcc6b6242e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208771"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149801"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Pilote Microsoft Defender pour le point de terminaison
 
@@ -39,7 +39,7 @@ Utilisez les étapes suivantes pour configurer le pilote de Microsoft Defender p
 - Étape 1. Vérifier le groupe pilote
 - Étape 2. Tester les fonctionnalités
 
-Lorsque vous pilotez Microsoft Defender pour Endpoint, vous pouvez choisir d’intégrer quelques appareils au service avant d’intégrer l’ensemble de votre organisation.  
+Lorsque vous pilotez Microsoft Defender pour endpoint, vous pouvez choisir d’intégrer quelques appareils au service avant d’intégrer l’ensemble de votre organisation.  
 
 Vous pouvez ensuite tester les fonctionnalités disponibles, telles que l’exécution de simulations d’attaques et l’analyse de la façon dont Defender pour le point de terminaison surface les activités malveillantes et vous permet d’effectuer une réponse efficace. 
 
@@ -49,14 +49,14 @@ Après avoir effectué les étapes d’intégration décrites dans la [section](
 Lorsque vous voyez vos appareils intégrés, vous pouvez passer aux fonctionnalités d’essai. 
 
 ## <a name="step-2-try-out-capabilities"></a>Étape 2. Tester les fonctionnalités
-Maintenant que vous avez terminé l’intégration de certains appareils et vérifié qu’ils sont en rapport avec le service, familiarisez-vous avec le produit en essayant les fonctionnalités puissantes qui sont disponibles immédiatement.
+Maintenant que vous avez terminé l’intégration de certains appareils et vérifié qu’ils font des rapports au service, familiarisez-vous avec le produit en essayant les fonctionnalités puissantes qui sont disponibles immédiatement.
 
 Pendant le projet pilote, vous pouvez facilement commencer à essayer certaines fonctionnalités pour voir le produit en action sans passer par des étapes de configuration complexes.
 
 Commençons par consulter les tableaux de bord.
 
 ### <a name="view-the-device-inventory"></a>Afficher l’inventaire des appareils
-L’inventaire des appareils vous permet de voir la liste des points de terminaison, des périphériques réseau et des périphériques IoT dans votre réseau. Non seulement elle vous fournit une vue des appareils de votre réseau, mais elle fournit également des informations détaillées sur ces appareils, telles que le domaine, le niveau de risque, la plateforme de système d’exploitation et d’autres détails pour faciliter l’identification des appareils les plus exposés.
+L’inventaire des appareils vous permet de voir la liste des points de terminaison, des périphériques réseau et des appareils IoT dans votre réseau. Non seulement elle vous fournit une vue des appareils de votre réseau, mais elle fournit également des informations détaillées sur ces appareils, telles que le domaine, le niveau de risque, la plateforme de système d’exploitation et d’autres détails pour faciliter l’identification des appareils les plus exposés.
 
 ### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>Afficher le tableau de bord Menaces gestion des vulnérabilités tableau de bord 
 Les menaces et gestion des vulnérabilités vous aident à vous concentrer sur les faiblesses qui posent le risque le plus urgent et le plus élevé pour l’organisation. À partir du tableau de bord, obtenez une vue d’ensemble du score d’exposition de l’organisation, du Degré de sécurisation Microsoft pour les appareils, de la distribution de l’exposition des appareils, des principales recommandations en matière de sécurité, des logiciels les plus vulnérables, des principales activités de correction et des données d’appareils les plus exposées. 
@@ -81,7 +81,7 @@ Pour exécuter l’une des simulations fournies, vous avez besoin d’au moins [
 4. Exécutez le fichier ou le script de simulation sur le périphérique de test comme indiqué dans le document pas à pas.
 
 > [!NOTE]
-> Les fichiers ou scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
+> Les fichiers ou les scripts de simulation imitent l’activité d’attaque, mais sont en réalité anodins et ne compromettent pas ou ne compromettent pas le périphérique de test.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Évaluer Microsoft Cloud App Security](eval-defender-mcas-overview.md)

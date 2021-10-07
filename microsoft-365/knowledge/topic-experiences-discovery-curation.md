@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: None
-description: Vue d’ensemble de la façon dont les rubriques sont découvertes dans Les rubriques Topics.
-ms.openlocfilehash: 378bdae4ad4b8104d28da7f884f42580d29eabcc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.localizationpriority: medium
+description: Vue d’ensemble de la façon dont les rubriques sont découvertes dans Les rubriques de Topics.
+ms.openlocfilehash: ef9bb8db55182475641020fddabf5654acfb9d0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207540"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150509"
 ---
 # <a name="topic-discovery-and-curation-in-microsoft-viva-topics"></a>Découverte et curation de rubriques dans Sujets Microsoft Viva 
 
@@ -53,7 +53,7 @@ En outre, les utilisateurs pourront également trouver des rubriques par Recherc
 
 ## <a name="topic-curation-and-feedback"></a>Curation de rubrique et commentaires
 
-Topics se souhaite une contribution humaine pour améliorer la qualité de vos rubriques. Alors que l’IA identifie et suggère initialement des rubriques, les modifications manuelles du contenu des collaborateurs, l’ajout manuel de rubriques, la confirmation des utilisateurs pour les propriétés et le contenu découverts par l’IA et les commentaires sur l’utilité des rubriques sont tous essentiels.
+Cette rubrique vous permet d’apporter une contribution humaine pour améliorer la qualité de vos rubriques. Alors que l’IA identifie et suggère initialement des rubriques, les modifications manuelles du contenu des collaborateurs, l’ajout manuel de rubriques, la confirmation des utilisateurs pour les propriétés et le contenu découverts par l’IA et les commentaires sur l’utilité des rubriques sont tous essentiels.
 
 - Les rubriques peuvent être examinées par **les responsables de connaissances** de votre organisation. Le gestionnaire de connaissances peut consulter les rubriques qu’il est autorisé à consulter. Dans la page Gérer les rubriques dans le centre de **rubriques,** ils peuvent choisir de confirmer les rubriques générées par l’IA (« sujets suggérés ») comme valides, de rejeter les rubriques pour empêcher que le contenu ne soit considéré comme une rubrique, de créer des rubriques qui n’ont pas été découvertes par l’IA ou d’identifier les rubriques qui pourraient bénéficier de quelques modifications par des experts techniques pour être plus utiles ou précises. Pour plus d’informations, [voir Gérer les rubriques dans le centre de rubriques.](manage-topics.md)
 
@@ -61,9 +61,9 @@ Topics se souhaite une contribution humaine pour améliorer la qualité de vos r
 
 - Même les utilisateurs qui ont uniquement accès en lecture à des rubriques (visionneuses de rubriques) sont invités à vérifier l’utilité de rubriques spécifiques. Les questions de commentaires sont posées sur la carte **récapitulatif rubrique** pour améliorer la valeur de la rubrique et ses informations. Les questions sur la qualité et l’utilité des suggestions d’IA sont présentées une par une aux utilisateurs. Les questions sont les suivantes :
 
-    1. L’identification de la rubrique dans la page SharePoint a été utile. Vous avez la possibilité de supprimer la mise en surbrill valeur si elle n’est pas précise ou utile. Si suffisamment de personnes indiquent qu’une rubrique n’est pas correctement identifiée sur une page particulière, ce surbrillant sera finalement supprimé pour tous les utilisateurs. 
+    1. Si l’identification de la rubrique dans la page SharePoint a été utile. Vous avez la possibilité de supprimer la mise en surbrill valeur si elle n’est pas précise ou utile. Si suffisamment de personnes indiquent qu’une rubrique n’est pas correctement identifiée sur une page particulière, ce surbrillant sera finalement supprimé pour tous les utilisateurs. 
 
-    2. Indique si la rubrique suggérée est utile pour l’organisation. Si suffisamment de personnes indiquent que la rubrique suggérée est utile, la rubrique est automatiquement confirmée. Sinon, si la rubrique suggérée n’est pas utile, la rubrique est automatiquement rejetée. Le gestionnaire de connaissances peut observer cette activité dans la page **Gérer les rubriques.**
+    2. Indique si la rubrique suggérée est utile pour l’organisation. Si suffisamment de personnes indiquent que la rubrique suggérée est utile, la rubrique est automatiquement confirmée. Sinon, si la rubrique suggérée n’est pas utile, elle est automatiquement rejetée. Le gestionnaire de connaissances peut observer cette activité dans la page **Gérer les rubriques.**
 
     3. Si les suggestions de personnes et de ressources sont utiles.
 

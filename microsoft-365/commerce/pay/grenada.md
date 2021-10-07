@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cd28a2e55baddc81dba43be8d4facdf07c8ccda4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6a3fa39e018315919cbeef8bf7e20750af3dd6a2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182575"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60153449"
 ---
 # <a name="payment-information-for-grenada"></a>Informations de paiement pour la Ville deGrenada
 

@@ -4,17 +4,17 @@ description: Définition de catégories pour les paramètres configurables dans 
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1245268b6128aa022a972fd0282009573558ec47
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 344fe8ff79976f2517e5b9b7e790193b5000803e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204924"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150317"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables : Microsoft Manged Desktop
 
@@ -57,9 +57,9 @@ Vous devez fournir le nom de domaine complet (FQDN) pour les sites intranet ou I
 6. Répétez les étapes 1 à 5 pour les pages de démarrage de navigateur supplémentaires. 
 7. Sélectionnez **Le déploiement par** étapes pour enregistrer vos modifications et les déployer dans le groupe test.
 
-## <a name="enterprise-mode-site-list-location"></a>Enterprise de liste des sites en mode d’Enterprise
+## <a name="enterprise-mode-site-list-location"></a>Enterprise de la liste des sites en mode d’accès
 
-Si vous avez des sites web et des applications spécifiques qui rencontrent des problèmes de compatibilité avec Microsoft Edge, vous pouvez utiliser la liste des sites en mode Enterprise afin que les sites web s’ouvrent automatiquement à l’aide d’Internet Explorer 11. En outre, si vous savez que vos sites intranet ne fonctionneront pas correctement avec Microsoft Edge, vous pouvez configurer tous les sites intranet pour qu’ils s’ouvrent automatiquement à l’aide d’Internet Explorer 11. L’utilisation du mode Enterprise signifie que vous pouvez continuer à utiliser Microsoft Edge comme navigateur par défaut, tout en vous assurant que vos applications continuent de fonctionner sur Internet Explorer 11. Pour plus d’informations sur les listes des sites en mode entreprise, voir Enterprise Mode d’Enterprise listes des sites en [mode Entreprise.](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode) 
+Si vous avez des sites web et des applications spécifiques qui rencontrent des problèmes de compatibilité avec Microsoft Edge, vous pouvez utiliser la liste des sites en mode Enterprise afin que les sites web s’ouvrent automatiquement à l’aide d’Internet Explorer 11. En outre, si vous savez que vos sites intranet ne fonctionneront pas correctement avec Microsoft Edge, vous pouvez configurer tous les sites intranet pour qu’ils s’ouvrent automatiquement à l’aide d’Internet Explorer 11. L’utilisation du mode Enterprise signifie que vous pouvez continuer à utiliser Microsoft Edge comme navigateur par défaut, tout en vous assurant que vos applications continuent de fonctionner sur Internet Explorer 11. Pour plus d’informations sur les listes de sites en mode entreprise, voir Enterprise Mode d’Enterprise listes des sites en [mode Entreprise.](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode) 
 
 Vous pouvez spécifier un https:// ou l’emplacement d’un partage interne dans lequel vous avez hébergé votre liste des sites en mode entreprise. 
 
@@ -68,12 +68,12 @@ Vous pouvez spécifier un https:// ou l’emplacement d’un partage interne dan
 Ces conditions doivent être remplies pour le fichier de liste des sites en mode Entreprise :
 - Format de fichier : fichier XML qui répond aux exigences [de fichier](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
 - Emplacement du fichier : fichier hôte sur un emplacement https interne. 
-- Non autorisé - L’hébergement sur un partage de fichiers interne, comme *//sharename,* n’est pas autorisé.
+- Non autorisé : l’hébergement sur un partage de fichiers interne, comme *//sharename,* n’est pas autorisé.
 
 ### <a name="best-practices"></a>Meilleures pratiques
 
 Ces meilleures pratiques sont proposées pour aider les clients à prendre des décisions pour moderniser leur infrastructure informatique :
-- **Choisissez un nombre limité** de sites : Microsoft Manged Desktop utilise Microsoft Edge comme navigateur préféré pour améliorer la sécurité globale de votre organisation et la convivialité pour vos utilisateurs. La plupart des sites de cette liste sont pour les applications web héritées qui ont besoin d’une version antérieure d’un navigateur qui n’inclut pas autant de fonctionnalités de sécurité. 
+- **Choisissez un nombre limité** de sites : Microsoft Manged Desktop utilise Microsoft Edge comme navigateur préféré pour améliorer la sécurité globale de votre organisation et la convivialité pour vos utilisateurs. La plupart des sites de cette liste sont pour les applications web héritées qui ont besoin d’une version antérieure d’un navigateur qui n’inclura pas autant de fonctionnalités de sécurité. 
 - **Envisagez une autre solution** : envisagez un autre site ou une application web qui ne nécessite pas de navigateur plus ancien. Vous pouvez également mettre à jour le site afin qu’il puisse utiliser des navigateurs plus récents. Les navigateurs plus récents utilisent la dernière technologie et contribuent à améliorer la sécurité.
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>Personnaliser et déployer un Enterprise de liste en mode site
@@ -82,7 +82,7 @@ Ces meilleures pratiques sont proposées pour aider les clients à prendre des d
 
 1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
 2. Recherchez la section Microsoft Manged Desktop, sélectionnez **Paramètres**.
-3. Dans **Paramètres’espace** de travail, **sélectionnez Enterprise’emplacement de la liste des sites en mode d’accès.** 
+3. Dans **Paramètres** espace de travail, sélectionnez **Enterprise’emplacement de la liste des sites en mode d’accès.** 
 4. Entrez l’emplacement https de votre liste des sites. 
 5. Sélectionnez **Le déploiement par** étapes pour enregistrer vos modifications et les déployer dans le groupe test.
 

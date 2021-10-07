@@ -9,7 +9,7 @@ ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -27,12 +27,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 6347b4775bd018a72ac06d0eb9c9c9f7ee5d2306
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: 946482d5aceca7d5b92829649988072fbcf54d36
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933710"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154073"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
@@ -110,7 +110,7 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
     > [!NOTE]
-    > L’adresse de messagerie que vous entrez ici est différente de votre adresse Microsoft 365 de messagerie électronique (votre nom de logo, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
+    > L’adresse e-mail que vous entrez ici est différente de votre adresse Microsoft 365 de messagerie électronique (votre nom de logo, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
   
 - **Nom de la signature (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse Microsoft 365 initiale, juste pour vous aider à démarrer rapidement.
 

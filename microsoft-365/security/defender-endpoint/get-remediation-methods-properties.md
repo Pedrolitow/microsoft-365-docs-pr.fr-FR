@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ca1bc84d5e8cf5498ed3dc19cba3928823796ff
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: aa40768a2ed11c112bd6fc57575dce3e4db1146a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182003"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152261"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Méthodes et propriétés des activités de correction
 
@@ -59,22 +59,22 @@ ID de propriété|Type de données|Description
 category|String|Catégorie de l’activité de correction (configuration logicielle/sécurité)
 completerEmail|Chaîne|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique
 completerId|Chaîne|Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet
-completionMethod|String|Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé ».
+completionMethod|Chaîne|Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé ».
 createdOn|Date/heure|Heure de création de cette activité de correction
 description|String|Description de cette activité de correction
 dueOn|Date/heure|Date d’échéance définie par le créateur pour cette activité de correction
 fixedDevices||Nombre d’appareils qui ont été corrigés
-id|String|ID de cette activité de correction
+id|Chaîne|ID de cette activité de correction
 nameId|String|Nom du produit associé
 priorité|String|Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible)
 productId|String|ID de produit associé
-productivityImpactRemediationType|String|Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ».
+productivityImpactRemediationType|Chaîne|Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ».
 rbacGroupNames|String|Noms de groupes d’appareils associés
 recommendedProgram|String|Programme recommandé pour la mise à niveau vers
-recommendedVendor|String|Fournisseur recommandé pour la mise à niveau vers
-recommendedVersion|Chaîne|Version recommandée pour la mise à jour/mise à niveau vers
+recommendedVendor|Chaîne|Fournisseur recommandé pour la mise à niveau vers
+recommendedVersion|String|Version recommandée pour la mise à jour/mise à niveau vers
 relatedComponent|String|Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité)
-requesterEmail|Chaîne|Adresse de messagerie du créateur
+requesterEmail|String|Adresse de messagerie du créateur
 requesterId|Chaîne|ID d’objet Creator
 requesterNotes|Chaîne|Notes (texte libre) ajoutées par le créateur pour cette activité de correction
 scid|Chaîne|SCID de la recommandation de sécurité associée
@@ -82,7 +82,7 @@ status|Chaîne|État de l’activité de correction (actif/terminé)
 statusLastModifiedOn|Date/heure|Date de mise à jour du champ d’état
 targetDevices|Entier long|Nombre d’appareils exposés pour qui cette correction s’applique
 title|Chaîne|Titre de cette activité de correction
-type|String|Type de correction
+type|Chaîne|Type de correction
 vendorId|Chaîne|Nom du fournisseur associé
 
 ## <a name="see-also"></a>Voir aussi
@@ -95,4 +95,4 @@ vendorId|Chaîne|Nom du fournisseur associé
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

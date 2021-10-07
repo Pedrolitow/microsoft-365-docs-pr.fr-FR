@@ -2,26 +2,24 @@
 title: Microsoft 365 Defender de fuseau horaire
 description: Utilisez les informations contenues ici pour configurer les paramètres Microsoft 365 Defender fuseau horaire et afficher les informations de licence.
 keywords: paramètres, Microsoft Defender, veille contre les menaces de cybersécurité, Microsoft Defender pour le point de terminaison, fuseau horaire, utc, heure locale, licence
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65ed76f115b9e9f39e18d69a50e736c561d18c7c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 461b87750b40e37493ff88acfa2b4a5521494841
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164892"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151817"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de fuseau horaire
 
@@ -59,7 +57,7 @@ Vous pouvez choisir que Microsoft Defender pour le point de terminaison utilise 
 
 Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour Endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
 
-Choisir d’utiliser l’heure locale peut être utile si les analystes se trouvent dans un emplacement unique. Dans ce cas, il peut être plus facile de corréler les événements à l’heure locale, par exemple, lorsqu’un utilisateur local clique sur un lien de courrier suspect.
+Choisir d’utiliser l’heure locale peut être utile si les analystes se trouvent dans un emplacement unique. Dans ce cas, il peut être plus facile de mettre en corrélation les événements avec l’heure locale, par exemple, lorsqu’un utilisateur local clique sur un lien de courrier suspect.
 
 ### <a name="set-the-time-zone"></a>Définir le fuseau horaire
 
@@ -81,7 +79,7 @@ IE et Microsoft Edge utiliser  les paramètres de région configurés dans l’o
 
 #### <a name="known-issues-with-regional-formats"></a>Problèmes connus avec les formats régionaux
 
-##### <a name="date-and-time-formats"></a>Formats de date et d’heure
+##### <a name="date-and-time-formats"></a>Formats de date et d'heure
 
 Il existe des problèmes connus avec les formats d’heure et de date. Si vous configurez vos paramètres régionaux dans d’autres formats que les formats pris en charge, le portail risque de ne pas refléter correctement vos paramètres.
 
@@ -97,7 +95,7 @@ Les formats de date et d’heure suivants ne sont actuellement pas pris en charg
 - Date format dd-MMM-yy
 - Format de date j/MM/aa
 - Format de date MM/j/j/aa
-- Format de date avec yy. Affiche uniquement yyyy.
+- Format de date avec aa. Affiche uniquement yyyy.
 - Format d’heure HH:mm:ss (format 24 heures)
 
 ##### <a name="decimal-symbol-used-in-numbers"></a>Symbole décimal utilisé dans les nombres

@@ -2,15 +2,13 @@
 title: Contrôle d’appareil pour macOS
 description: Découvrez comment configurer Microsoft Defender pour endpoint sur Mac afin de réduire les menaces liées au stockage amovible tel que les périphériques USB.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, appareil, contrôle, usb, amovible, média
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 612c9a717ae10c97c91a183418e36fa87e2f7ba8
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1be1598f1ff960a90e65de13ead5d1fd79b63173
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204786"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150106"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
@@ -241,7 +239,7 @@ Pour chaque produit, vous pouvez spécifier le niveau d’autorisation souhaité
 
 En outre, vous pouvez spécifier un ensemble facultatif de numéros de série pour lesquels des autorisations plus granulaires sont définies.
 
-Le `serialNumbers` dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par le numéro de série.
+Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `serialNumbers` identifiée par le numéro de série.
 
 <br>
 
@@ -356,11 +354,11 @@ Pour rechercher l’ID du fournisseur, l’ID de produit et le numéro de série
 
     ![Détails d’un périphérique USB.](images/mac-device-control-lookup-4.png)
 
-1. L’ID du fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
+1. L’ID de fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
 
 #### <a name="discover-usb-devices-in-your-organization"></a>Découvrir les périphériques USB de votre organisation
 
-Vous pouvez afficher les événements de montage, de démontage et de modification de volume provenant de périphériques USB dans Microsoft Defender pour le recherche avancée de point de terminaison. Ces événements peuvent être utiles pour identifier une activité d’utilisation suspecte ou effectuer des enquêtes internes.
+Vous pouvez afficher les événements de montage, de démontage et de modification de volume provenant de périphériques USB dans Microsoft Defender pour le hunting avancé de point de terminaison. Ces événements peuvent être utiles pour identifier une activité d’utilisation suspecte ou effectuer des enquêtes internes.
 
 ```bash
 DeviceEvents
@@ -370,7 +368,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Déploiement de stratégie de contrôle d’appareil
 
-La stratégie de contrôle d’appareil doit être incluse en plus des autres paramètres du produit, comme décrit dans Définir les préférences de [Microsoft Defender pour endpoint sur macOS.](mac-preferences.md)
+La stratégie de contrôle d’appareil doit être incluse en plus des autres paramètres du produit, comme décrit dans Définir les préférences pour [Microsoft Defender pour endpoint sur macOS.](mac-preferences.md)
 
 Ce profil peut être déployé à l’aide des instructions répertoriées dans le déploiement de [profil de configuration.](mac-preferences.md#configuration-profile-deployment)
 

@@ -6,7 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Dans cet article, découvrez comment effectuer des tâches de gestion courantes pour Microsoft 365 groupes dans PowerShell.
-ms.openlocfilehash: 82617a33695135a8ad2fa6cce65c60d435d7d180
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 603d28ce04515d70633894cab7baab62a5f1581e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209359"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150785"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Gérer Microsoft 365 groupes avec PowerShell
 
@@ -70,11 +70,11 @@ Une fois la cmdlet exécutée, les utilisateurs peuvent passer à Outlook ou Out
 Vous pouvez créer des étiquettes de niveau de sensibilité que les utilisateurs de votre organisation peuvent définir lorsqu’ils créent un Microsoft 365 de données. Si vous souhaitez classer des groupes, nous vous recommandons d’utiliser des étiquettes de niveau de sensibilité plutôt que la fonctionnalité de classification des groupes précédente. Pour plus d’informations sur l’utilisation des étiquettes de sensibilité, voir Utiliser des étiquettes de sensibilité pour protéger le contenu dans [Microsoft Teams, Microsoft 365 groupes](../compliance/sensitivity-labels-teams-groups-sites.md)et sites SharePoint sites.
 
 > [!IMPORTANT]
-> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de sensibilité activées.
+> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de niveau de sensibilité activées.
 
-Vous pouvez toujours utiliser la fonctionnalité de classification des groupes précédente. Vous pouvez créer des classifications que les utilisateurs de votre organisation peuvent définir lorsqu’ils créent Microsoft 365 groupe. Par exemple, vous pouvez autoriser les utilisateurs à définir « Standard », « Secret » et « Top Secret » sur les groupes qu’ils créent. Les classifications de groupe ne sont pas définies par défaut et vous devez la créer pour que vos utilisateurs la définissent. Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour Microsoft 365 groupes.
+Vous pouvez toujours utiliser la fonctionnalité de classification de groupes précédente. Vous pouvez créer des classifications que les utilisateurs de votre organisation peuvent définir lorsqu’ils créent Microsoft 365 groupe. Par exemple, vous pouvez autoriser les utilisateurs à définir « Standard », « Secret » et « Top Secret » sur les groupes qu’ils créent. Les classifications de groupe ne sont pas définies par défaut et vous devez la créer pour que vos utilisateurs la définissent. Utilisez Azure Active Directory PowerShell pour faire pointer vos utilisateurs vers les instructions d’utilisation de votre organisation pour Microsoft 365 groupes.
 
-Consultez [Azure Active Directory cmdlets](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) pour configurer les paramètres de groupe et suivez les étapes de la procédure Créer des **paramètres** au niveau de l’annuaire pour définir la classification des groupes Microsoft 365 de groupe.
+Consultez [Azure Active Directory cmdlets](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) pour configurer les paramètres de groupe et suivez les étapes de la procédure Créer des **paramètres** au niveau du répertoire pour définir la classification des groupes Microsoft 365 de groupe.
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
@@ -86,7 +86,7 @@ Pour associer une description à chaque classification, vous pouvez utiliser l�
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
-où Classification correspond aux chaînes de ClassificationList.
+où Classification correspond aux chaînes dans ClassificationList.
 
 Exemple :
 
@@ -149,7 +149,7 @@ En plus de l’tip de courrier, vous pouvez également définir MailTipTranslati
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
 ```
 
-## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Modifier le nom d’affichage du groupe Microsoft 365 groupe
+## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Modifier le nom complet du groupe de Microsoft 365
 
 Le nom complet spécifie le nom du groupe Microsoft 365 groupe. Vous pouvez voir ce nom dans votre centre d’administration Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">ou Centre d'administration Microsoft 365</a>. Vous pouvez modifier le nom complet du groupe ou attribuer un nom complet à un groupe Microsoft 365 existant en exécutant la commande Set-UnifiedGroup :
 
@@ -157,7 +157,7 @@ Le nom complet spécifie le nom du groupe Microsoft 365 groupe. Vous pouvez voir
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ```
 
-## <a name="change-the-default-setting-of-microsoft-365-groups-for-outlook-to-public-or-private"></a>Modifier le paramètre par défaut de Microsoft 365 Groupes de Outlook sur Public ou Privé
+## <a name="change-the-default-setting-of-microsoft-365-groups-for-outlook-to-public-or-private"></a>Modifier le paramètre par défaut de Microsoft 365 groupes pour Outlook public ou privé
 <a name="BKMK_CreateClassification"> </a>
 
 Microsoft 365 Les groupes dans Outlook sont créés comme privés par défaut. Si votre organisation souhaite créer Microsoft 365 groupes publics par défaut (ou de nouveau en privé), utilisez la syntaxe de l’cmdlet PowerShell suivante :

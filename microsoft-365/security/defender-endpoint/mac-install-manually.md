@@ -2,15 +2,13 @@
 title: Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 description: Installez Microsoft Defender pour le point de terminaison sur macOS manuellement, à partir de la ligne de commande.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6cf8777a5dd3614cb5649eb4c95f6d69d14540fd
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5e94467557df7cefc5e1adaddc5a1ae515ef508a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203081"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152189"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
@@ -65,7 +63,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
 
 1. Accédez au wdav.pkg téléchargé dans Finder et ouvrez-le.
 
-    ![Capture d’écran de l’installation de l’application 1.](images/mdatp-28-appinstall.png)
+    ![Capture d’écran d’installation de l’application 1.](images/mdatp-28-appinstall.png)
 
 2. Sélectionnez **Continuer,** acceptez les termes du contrat de licence, puis entrez le mot de passe lorsque vous y invitez.
 
@@ -83,7 +81,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d’administrateur
    L’installation se poursuit.
 
    > [!CAUTION]
-   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations](mac-support-kext.md) sur la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
+   > Si vous ne sélectionnez pas **Autoriser,** l’installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d’informations sur](mac-support-kext.md) la résolution de ce problème, voir Résoudre les problèmes d’extension du noyau.
 
 > [!NOTE]
 > MacOS peut demander à redémarrer l’appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel n’est pas disponible tant que l’appareil n’est pas redémarrage.

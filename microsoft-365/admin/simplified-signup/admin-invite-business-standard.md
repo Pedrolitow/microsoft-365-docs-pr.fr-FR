@@ -8,17 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: ''
+ms.localizationpriority: medium
+ms.collection:
+- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 description: Inviter des utilisateurs à rejoindre Microsoft 365 Business Standard organisation
-ms.openlocfilehash: e3fa00edd87f98dd67159e4fa6f7c9c3ba916876
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: f4170cee2e389665d59bd516b100143e62674281
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776619"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151793"
 ---
 # <a name="invite-users-to-microsoft-365-business-standard-admin"></a>Inviter des utilisateurs à Microsoft 365 Business Standard (administrateur)
 
@@ -45,9 +46,9 @@ Assurez-vous que vous êtes déjà inscrit à [Microsoft 365 Business Standard](
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Suivez vos utilisateurs et assurez-vous qu’ils ont reçu l’invitation par courrier électronique que vous avez envoyée concernant le partage de Microsoft 365 Business Standard abonnement.
+Suivez vos utilisateurs et assurez-vous qu’ils ont reçu l’invitation par courrier électronique que vous avez envoyée sur le partage de Microsoft 365 Business Standard abonnement.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="i-shared-an-email-invite-but-the-user-didnt-receive-the-email"></a>J’ai partagé une invitation par courrier électronique, mais l’utilisateur n’a pas reçu l’e-mail ?
 
@@ -64,7 +65,7 @@ Il existe deux options dans ce cas :
 2. Ils peuvent se supprimer eux-mêmes en suivant les étapes ci-dessous :
 
     1. Accédez à https://myapps.microsoft.com/.
-    2. Connectez-vous à votre compte et sélectionnez vos initiales de profil.
+    2. Connectez-vous à votre compte et sélectionnez les initiales de votre profil.
     3. Sélectionnez **Afficher le compte Gérer** les organisations  >  **quitter**  >  **l’organisation**
     4. Sélectionnez   >  **Laisser OK**.
 
@@ -72,7 +73,7 @@ Il existe deux options dans ce cas :
 
 Envoyez-leur cet article pour les aider à installer Office : Télécharger et installer Microsoft 365 Office ou [Office 2019](https://support.microsoft.com/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658)sur un PC ou un MAC .
 
-### <a name="how-do-i-meet-common-gdpr-general-data-protection-regulation-obligations-for-my-organization"></a>Comment puis-je respecter les obligations communes du R GDPR (Règlement général sur la protection des données) pour mon organisation ?
+### <a name="how-do-i-meet-common-gdpr-general-data-protection-regulation-obligations-for-my-organization"></a>Comment respecter les obligations communes du R GDPR (Règlement général sur la protection des données) pour mon organisation ?
 
 En vertu du R GDPR, un employé ou un client peut vous demander de récupérer ou de supprimer toutes les informations les concernant dans votre cloud Microsoft. Pour plus d’informations, consultez demandes des [personnes à l’aide des données.](/compliance/regulatory/gdpr-data-subject-requests)
 
@@ -83,7 +84,7 @@ En fonction de la façon dont vous et d’autres utilisateurs enregistrez des do
 > [!NOTE]
 > Une fois que vous avez attaché un domaine et que vous et vos utilisateurs avez utilisé des comptes d’entreprise pour enregistrer des données dans le cloud Microsoft, vous pouvez effectuer des demandes de la part de tous les utilisateurs en suivant les instructions de la rubrique [Office 365 Data Subject Requests for the GDPR and CCPA.](/compliance/regulatory/gdpr-dsr-office365)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configurer Microsoft 365 Business Standard](../setup/setup-business-standard.md)
 

@@ -8,17 +8,17 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4ee0affc301500d3ebebd8d17ff13f569356c123
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204426"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149589"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -67,7 +67,7 @@ Pour plus d’informations sur la façon dont le support Premier peut aider votr
 
 1. Connectez-vous au Centre d'administration Microsoft 365.
 
-2. Pour les problèmes généraux du produit, allez au **support** technique Demander un support technique pour \>  \> **le support technique.**
+2. Pour les problèmes généraux du produit, allez au **support** \> **technique Demander l’assistance** technique du support \> **technique.**
 
    Pour des questions préalables à l'achat d'EOP ou ayant trait à la facturation et aux abonnements, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support de facturation et d'abonnement**.
 

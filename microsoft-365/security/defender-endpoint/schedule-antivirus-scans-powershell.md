@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1c9dc7f6b5b34fbfd2eb2c6b76b62650d0d213ca
-ms.sourcegitcommit: 584445b62cb82218597b62495fb76fcb5b12af9d
+ms.openlocfilehash: 18a949c4f08992d25ef42b69f885ae2febfb34a6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59498231"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60149813"
 ---
 # <a name="schedule-antivirus-scans-using-powershell"></a>Planifier des analyses antivirus à l’aide de PowerShell
 
@@ -30,7 +30,7 @@ ms.locfileid: "59498231"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Cet article explique comment configurer des analyses programmées à l’aide des cmdlets PowerShell. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, voir Configurer des analyses rapides ou [complètes Antivirus Microsoft Defender planification.](schedule-antivirus-scans.md) 
+Cet article explique comment configurer des analyses programmées à l’aide d’cmdlets PowerShell. Pour en savoir plus sur la planification des analyses et sur les types d’analyse, voir Configurer des analyses rapides ou [complètes Antivirus Microsoft Defender planification.](schedule-antivirus-scans.md) 
 
 ## <a name="use-powershell-cmdlets-to-schedule-scans"></a>Utiliser les cmdlets PowerShell pour planifier des analyses
 

@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez les suivis des menaces, y compris les nouveaux suivis à prendre en compte, pour aider votre organisation à rester au fait des problèmes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ab8cf03b7ceb1ec01e6b30d3b0c11bbb7223b6f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 63673247e6e818459207634d68e18c7adb019e41
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162409"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60154325"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivis des menaces : nouveautés et remarques
 
@@ -38,13 +38,13 @@ ms.locfileid: "59162409"
 > [!IMPORTANT]
 > Office 365 Threat Intelligence est désormais Microsoft Defender pour Office 365 Plan 2, ainsi que des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez Microsoft Defender pour [connaître Office 365 et](https://products.office.com/exchange/advance-threat-protection) les tarifs, ainsi que la description du [service Microsoft Defender Office 365 service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-## <a name="what-are-threat-trackers"></a>Qu’est-ce que les suivis des menaces ?
+## <a name="what-are-threat-trackers"></a>Que sont les suivis des menaces ?
 
 Les suivis des menaces sont des widgets et des vues informatifs qui vous fournissent des renseignements sur différents problèmes de cybersécurité qui peuvent avoir un impact sur votre entreprise. Par exemple, vous pouvez afficher des informations sur les tendances des campagnes anti-programme malveillant à l’aide des suivis des menaces.
 
 ![Exemple de suivi des menaces affichant les campagnes anti-programme malveillant.](../../media/a883b5ac-8e2b-469a-90e0-f8ad39bb63b7.png)
 
-La plupart des pages de suivi incluent des numéros de tendance mis à jour régulièrement, des widgets pour vous aider à comprendre les problèmes les plus importants ou les plus importants, ainsi qu’un lien rapide dans la colonne **Actions** qui vous permet d’explorer, où vous pouvez afficher des informations plus détaillées.
+La plupart des pages de suivi incluent des numéros de tendance mis à jour régulièrement, des widgets pour vous aider à comprendre les problèmes les plus importants ou les plus importants, ainsi qu’un lien rapide dans la colonne **Actions** qui vous permet d’afficher des informations plus détaillées.
 
 ![Exemple d’informations de campagne dans l’Explorateur.](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
 
@@ -65,13 +65,13 @@ En règle générale, des suivis notables sont publiés pendant quelques semaine
 
 Les suivis de tendance (anciennement appelés campagnes) mettent en évidence les nouvelles menaces reçues dans le courrier électronique de votre organisation au cours de la semaine précédente.
 
-![Exemple de widget de campagnes anti-programme malveillant à tendance.](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
+![Exemple de widget de campagnes anti-programme malveillant de tendance.](../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png)
 
 Les suivis de tendance vous donnent une idée des nouvelles menaces que vous devez examiner pour vous assurer que votre environnement d’entreprise plus large est préparé contre les attaques.
 
 ### <a name="tracked-queries"></a>Requêtes de suivi
 
-Les requêtes de suivi tirent parti de vos requêtes enregistrées pour évaluer régulièrement Microsoft 365 activité au niveau de votre organisation. Cela vous donne une tendance des événements, et d’autres sont à venir dans les mois à venir. Le suivi des requêtes s’exécute automatiquement, ce qui vous donne des informations à jour sans avoir à vous souvenir de ré-exécuter vos requêtes.
+Les requêtes de suivi tirent parti de vos requêtes enregistrées pour évaluer régulièrement Microsoft 365 activité au niveau de votre organisation. Cela vous donne une tendance des événements, avec d’autres informations à venir dans les mois à venir. Le suivi des requêtes s’exécute automatiquement, ce qui vous donne des informations à jour sans avoir à vous souvenir de ré-exécuter vos requêtes.
 
 ![Exemple de requêtes de suivi avec une requête sélectionnée.](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
 
@@ -97,13 +97,13 @@ Avec notre menace importante, nous allons mettre en évidence les menaces de pro
 
 ![Microsoft Defender pour Office 365 dans le portail Microsoft 365 Defender web.](../../media/policies.png)
 
-Dans le monde actuel aux menaces, l’exécution des analyses anti-programme malveillant traditionnelles uniquement signifie que vous n’êtes pas suffisamment protégé contre les attaques. Aujourd’hui, les attaquants plus sophistiqués utilisent des outils couramment disponibles pour créer des attaques nouvelles, obscurcies ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur les signatures traditionnels. La fonctionnalité Coffre pièces jointes prend les pièces jointes des e-mails et les détone dans un environnement virtuel pour déterminer s’ils sont sûrs ou malveillants. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis surveille ce qui se produit une fois le fichier ouvert. Qu’il s’agit d’un fichier PDF et compressé, ou d’un document Office, du code malveillant peut être masqué dans un fichier, en l’activant uniquement une fois que la victime l’ouvre sur son ordinateur. En détonant et en analysant le fichier dans le flux de messagerie, les fonctionnalités de Defender for Office 365 trouvent ces menaces en fonction des comportements, de la réputation du fichier et d’un certain nombre de règles heuristiques.
+Dans le monde actuel aux menaces, l’exécution des analyses anti-programme malveillant traditionnelles uniquement signifie que vous n’êtes pas suffisamment protégé contre les attaques. Aujourd’hui, les attaquants plus sophistiqués utilisent des outils couramment disponibles pour créer des attaques nouvelles, obscurcies ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur les signatures traditionnels. La fonctionnalité Coffre pièces jointes prend les pièces jointes des e-mails et les détone dans un environnement virtuel pour déterminer s’ils sont sûrs ou malveillants. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis surveille ce qui se produit après l’ouverture du fichier. Qu’il s’agit d’un fichier PDF et compressé, ou d’un document Office, du code malveillant peut être masqué dans un fichier, en l’activant uniquement une fois que la victime l’ouvre sur son ordinateur. En détonant et en analysant le fichier dans le flux de messagerie, les fonctionnalités de Defender for Office 365 trouvent ces menaces en fonction des comportements, de la réputation des fichiers et d’un certain nombre de règles heuristiques.
 
-Le nouveau filtre contre les menaces à noter met en évidence les éléments qui ont été récemment détectés Coffre pièces jointes. Ces détections représentent des éléments qui sont de nouveaux fichiers malveillants, non trouvés précédemment par les Microsoft 365 dans votre flux de messagerie ou dans les e-mails d’autres clients. Faites attention aux éléments du suivi des menaces à prendre en compte, consultez les personnes ciblées par ces derniers et consultez les détails de détonation affichés sous l’onglet Analyse avancée (en cliquant sur l’objet de l’e-mail dans l’Explorateur). Notez que vous ne trouverez cet onglet que sur les e-mails détectés par la fonctionnalité pièces jointes Coffre . Ce suivi important inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
+Le nouveau filtre contre les menaces à noter met en évidence les éléments qui ont été récemment détectés Coffre pièces jointes. Ces détections représentent des éléments qui sont de nouveaux fichiers malveillants, non trouvés précédemment par les Microsoft 365 dans votre flux de messagerie ou dans les e-mails d’autres clients. Faites attention aux éléments du suivi des menaces à prendre en compte, consultez les personnes ciblées par ces derniers et consultez les détails de détonation affichés sous l’onglet Analyse avancée (en cliquant sur l’objet de l’e-mail dans l’Explorateur). Notez que vous trouverez cet onglet uniquement sur les e-mails détectés par la fonctionnalité pièces jointes Coffre . Ce suivi important inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Si votre organisation ne Office 365 pas ces fonctionnalités d’investigation et de réponse aux menaces, voir comment obtenir les fonctionnalités Office 365 d’investigation et de réponse aux [menaces ?](office-365-ti.md)
+- Si votre organisation ne Office 365 pas ces fonctionnalités d’investigation et de réponse aux menaces, voir comment obtenir Office 365 fonctionnalités d’investigation et de réponse aux [menaces ?](office-365-ti.md)
 
 - Assurez-vous que les rôles et autorisations corrects sont attribués à votre équipe de sécurité. Vous devez être un administrateur général ou avoir le rôle Administrateur de la sécurité ou Rechercher et vider dans le portail Microsoft 365 Defender web. Voir [Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 

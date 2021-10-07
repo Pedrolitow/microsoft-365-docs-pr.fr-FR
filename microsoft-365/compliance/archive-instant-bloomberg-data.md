@@ -9,18 +9,18 @@ ms.date: ''
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur de données pour importer et archiver des données à partir de l’outil de conversation Instant Bloomberg dans Microsoft 365.
-ms.openlocfilehash: 98c9cd9077a8c2e11f8d51db983cbfbd0620c6f3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7e7f955745b3c0b95040561497ee29228a150c5e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151253"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver des données Instant Bloomberg
 
@@ -84,7 +84,7 @@ La première étape consiste à obtenir une copie des clés publiques pour PGP (
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
-2. Dans la page **Connecteurs de données** sous **Instant Bloomberg,** cliquez sur **Afficher.**
+2. Dans la page **Connecteurs de données** sous **Instant Bloomberg**, cliquez sur **Afficher**.
 
 3. Dans la page de description du produit **Instant Bloomberg,** cliquez **sur Ajouter un connecteur**
 
@@ -108,12 +108,12 @@ La première étape consiste à obtenir une copie des clés publiques pour PGP (
 
 7. Cliquez **sur Annuler** pour fermer l’Assistant. Vous revenir à cet Assistant à l’étape 3 pour créer le connecteur.
 
-### <a name="step-2-configure-the-bloomberg-sftp-site"></a>Étape 2 : Configurer le site Bloomberg SFTP
+### <a name="step-2-configure-the-bloomberg-sftp-site"></a>Étape 2 : Configurer le site SFTP Bloomberg
 
 L’étape suivante consiste à utiliser les clés publiques PGP et SSH et l’adresse IP obtenue à l’étape 1 pour configurer le chiffrement PGP et l’authentification SSH pour le site SFTP Bloomberg. Cela permet au connecteur Instant Bloomberg que vous créez à l’étape 3 de se connecter au site Bloomberg SFTP et de transférer des données Instant Bloomberg vers Microsoft 365. Vous devez travailler avec le support client Bloomberg pour configurer votre site SFTP Bloomberg. Contactez [le support client Bloomberg pour](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) obtenir de l’aide. 
 
 > [!IMPORTANT]
-> Bloomberg recommande d’associer les trois fichiers téléchargés à l’étape 1 à un message électronique et de les envoyer à leur équipe de support technique lorsque vous travaillez avec eux pour configurer votre site SFTP Bloomberg.
+> Bloomberg vous recommande d’associer les trois fichiers téléchargés à l’étape 1 à un message électronique et de l’envoyer à leur équipe de support technique lorsque vous travaillez avec eux pour configurer votre site SFTP Bloomberg.
 
 ### <a name="step-3-create-an-instant-bloomberg-connector"></a>Étape 3 : Créer un connecteur Instant Bloomberg
 
@@ -153,7 +153,7 @@ Les étapes de cette section vous montrent comment configurer un connecteur Inst
 ### <a name="step-1-obtain-an-ip-address-to-configure-the-bloomberg-sftp-site"></a>Étape 1 : Obtenir une adresse IP pour configurer le site SFTP Bloomberg
 
 > [!NOTE]
-> Si votre organisation a précédemment configuré un site SFTP Bloomberg pour archiver les données de message Bloomberg à l’aide de clés privées PGP et SSH, vous n’avez pas besoin d’en configurer un autre. Vous pouvez spécifier le même site SFTP lorsque vous créez le connecteur à l’étape 2.
+> Si votre organisation a précédemment configuré un site SFTP Bloomberg pour archiver des données de message Bloomberg à l’aide de clés privées PGP et SSH, vous n’avez pas besoin d’en configurer un autre. Vous pouvez spécifier le même site SFTP lorsque vous créez le connecteur à l’étape 2.
 
 Si votre organisation a utilisé des clés privées PGP et SSH pour configurer un site SFTP Bloomberg, vous devez obtenir une adresse IP et la fournir au support client Bloomberg. Le site SFTP Bloomberg doit être configuré pour accepter les demandes de connexion de cette adresse IP. La même adresse IP est utilisée par le connecteur Instant Bloomberg pour se connecter au site SFTP et transférer des données Instant Bloomberg vers Microsoft 365.
 
@@ -179,7 +179,7 @@ Vous devez travailler avec le support client Bloomberg pour configurer votre sit
 
 ### <a name="step-2-create-an-instant-bloomberg-connector"></a>Étape 2 : Créer un connecteur Instant Bloomberg
 
-Une fois votre site SFTP Bloomberg configuré, l’étape suivante consiste à créer un connecteur Instant Bloomberg dans le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site Bloomberg SFTP et transférer des messages électroniques vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365. Pour effectuer cette étape, assurez-vous d’avoir des copies des mêmes clés privées et phrases clés que vous avez utilisées pour configurer votre site Bloomberg SFTP.
+Une fois votre site SFTP Bloomberg configuré, l’étape suivante consiste à créer un connecteur Instant Bloomberg dans le Centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site Bloomberg SFTP et transférer des messages électroniques vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365. Pour effectuer cette étape, assurez-vous d’avoir des copies des mêmes clés privées et phrases clés que vous avez utilisées pour configurer votre site SFTP Bloomberg.
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 

@@ -10,19 +10,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 1219497a2b9145c19ec316e20bb4bd58056a4e67ccbc71a4c2f9c9f9e49994d8
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: db114ab17f5e60b9f7660adc71bdc7dd441242b2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53794005"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60150173"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API Microsoft Defender pour point de terminaison à l’aide de PowerShell
 
@@ -62,7 +62,7 @@ Pour plus d’informations, [voir la documentation PowerShell](/powershell/modul
 Exécutez la commande suivante :
 
 - $tenantId : ID du client pour le compte duquel vous souhaitez exécuter la requête (c’est-à-dire, la requête sera exécuté sur les données de ce client)
-- $appId : ID de votre application AAD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender pour le point de terminaison)
+- $appId : ID de votre application AAD (l’application doit avoir l’autorisation « Exécuter des requêtes avancées » sur Defender for Endpoint)
 - $appSecret : secret de votre application Azure AD
 
 - $suspiciousUrl : URL

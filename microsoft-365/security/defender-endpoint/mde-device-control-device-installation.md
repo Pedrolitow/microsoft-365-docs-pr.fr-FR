@@ -9,18 +9,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-lsaldanha
 author: lovina-saldanha
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea7f520fffa7efc7c16a61184f7f5ceb15123978
-ms.sourcegitcommit: e5de03d4bd669945fec0d25a3f5eae56f86c9dcc
+ms.openlocfilehash: b226d91dd14787ffd9fad45c16b959c3837ef17b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60043094"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60152069"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender for Endpoint Device Control Device Installation 
 
@@ -34,7 +34,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 |Privilège|Autorisation|
 |---|---|
-|Access|Installation de l’appareil |
+|Accès|Installation de l’appareil |
 |Action Mode|Autoriser, Empêcher |
 |Prise en charge du programme CSP|Oui|
 |Prise en charge des GPO|Oui|
@@ -59,7 +59,7 @@ Les propriétés d’appareil suivantes sont pris en charge par la prise en char
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-ids"></a>Autoriser l’installation d’appareils qui correspondent à l’un de ces ID d’appareil
 
-Ce paramètre de stratégie vous permet de spécifier une liste d’ID matériels Plug-and-Play et d’ID compatibles pour les appareils que Windows est autorisé à installer. Ce paramètre de stratégie est destiné à être utilisé uniquement lorsque l’ordre d’évaluation Appliquer une couche d’évaluation pour les stratégies **d’installation** d’appareil Autoriser et Empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil est activé.
+Ce paramètre de stratégie vous permet de spécifier une liste d’ID matériels Plug-and-Play et d’ID compatibles pour les appareils que Windows est autorisé à installer. Ce paramètre de stratégie est destiné à être utilisé uniquement lorsque l’ordre d’évaluation Appliquer une couche d’évaluation pour les stratégies **d’installation** d’appareil Autoriser et empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil est activé.
 
 Lorsque ce paramètre de stratégie est activé avec l’ordre d’évaluation Appliqué en couches pour les stratégies **d’installation** d’appareil autoriser et empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil, Windows est autorisé à installer ou mettre à jour tout appareil dont l’ID matériel plug-and-play ou l’ID compatible apparaît dans la liste que vous créez, sauf si un autre paramètre de stratégie de la même couche ou d’une couche supérieure de la hiérarchie empêche spécifiquement cette installation,  tels que les paramètres de stratégie suivants :
 
@@ -73,7 +73,7 @@ Si l’ordre d’évaluation Appliquer en couches pour les stratégies **d’ins
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Autoriser l’installation d’appareils qui correspondent à l’un de ces ID d’instance d’appareil 
 
-Ce paramètre de stratégie vous permet de spécifier une liste d’ID d’instance d’appareil Plug-and-Play pour les Windows que vous êtes autorisé à installer. Ce paramètre de stratégie est destiné à être utilisé uniquement lorsque l’ordre d’évaluation Appliquer une couche d’évaluation pour les stratégies **d’installation** d’appareil Autoriser et Empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil est activé. 
+Ce paramètre de stratégie vous permet de spécifier une liste d’ID d’instance d’appareil Plug-and-Play pour les Windows que vous êtes autorisé à installer. Ce paramètre de stratégie est destiné à être utilisé uniquement lorsque l’ordre d’évaluation Appliquer une couche d’évaluation pour les stratégies **d’installation** d’appareil Autoriser et empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil est activé. 
 
 Lorsque ce paramètre de stratégie est activé avec l’ordre d’évaluation Appliquer en couches pour les stratégies **d’installation** d’appareil Autoriser et empêcher l’installation sur tous les paramètres de stratégie de correspondance de périphérique, Windows est autorisé à installer ou mettre à jour tout appareil dont l’ID d’instance plug-and-play apparaît dans la liste que vous créez, sauf si un autre paramètre de stratégie au même niveau de la hiérarchie ou une couche supérieure empêche spécifiquement cette installation,  tels que les paramètres de stratégie suivants :
 
@@ -83,7 +83,7 @@ Si l’ordre d’évaluation Appliquer en couches pour les stratégies **d’ins
 
 ### <a name="allow-installation-of-devices-using-drivers-that-match-these-device-setup-classes"></a>Autoriser l’installation d’appareils à l’aide de pilotes qui correspondent à ces classes de configuration d’appareil 
 
-Ce paramètre de stratégie vous permet de spécifier une liste d’identificateurs globaux uniques (GUID) de la classe d’installation d’appareil pour les packages de pilotes que Windows est autorisé à installer. Ce paramètre de stratégie est destiné à être utilisé uniquement lorsque l’ordre d’évaluation Appliquer une couche d’évaluation pour les stratégies **d’installation** d’appareil Autoriser et Empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil est activé.
+Ce paramètre de stratégie vous permet de spécifier une liste d’identificateurs globaux uniques (GUID) de la classe d’installation d’appareil pour les packages de pilotes que Windows est autorisé à installer. Ce paramètre de stratégie est destiné à être utilisé uniquement lorsque l’ordre d’évaluation Appliquer une couche d’évaluation pour les stratégies **d’installation** d’appareil Autoriser et empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil est activé.
 
 Lorsque ce paramètre de stratégie est activé avec l’ordre d’évaluation Appliquer en couches pour les stratégies **d’installation** d’appareil autoriser et empêcher l’installation sur tous les paramètres de stratégie de correspondance d’appareil, Windows est autorisé à installer ou mettre à jour des packages de pilotes dont les GUI de classe d’installation de périphérique apparaissent dans la liste que vous créez, sauf si un autre paramètre de stratégie au même niveau ou une couche supérieure de la hiérarchie empêche spécifiquement cette installation,  tels que les paramètres de stratégie suivants : 
 
@@ -136,7 +136,7 @@ Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les appare
 
 Ce paramètre de stratégie vous permet de spécifier une liste d’ID d’instance d’appareil Plug-and-Play pour les appareils dont l Windows’installation est empêchée. Ce paramètre de stratégie est prioritaire sur tout autre paramètre de stratégie qui permet Windows installer un appareil. 
 
-Si vous activez ce paramètre de stratégie, Windows ne peut pas installer un appareil dont l’ID d’instance d’appareil apparaît dans la liste que vous créez. Si vous activez ce paramètre de stratégie sur un serveur bureau à distance, le paramètre de stratégie affecte la redirection des appareils spécifiés d’un client bureau à distance vers le serveur de bureau à distance. 
+Si vous activez ce paramètre de stratégie, Windows’installation d’un appareil dont l’ID d’instance d’appareil apparaît dans la liste que vous créez. Si vous activez ce paramètre de stratégie sur un serveur bureau à distance, le paramètre de stratégie affecte la redirection des appareils spécifiés d’un client bureau à distance vers le serveur de bureau à distance. 
 
 Si vous désactivez ou ne configurez pas ce paramètre de stratégie, les appareils peuvent être installés et mis à jour comme autorisé ou interdit par d’autres paramètres de stratégie. 
 
@@ -158,7 +158,7 @@ Ce paramètre de stratégie vous permet d’empêcher les Windows d’installer 
 > [!NOTE]
 > Pour activer l’installation d’appareils à l’aide de pilotes qui correspondent à ces **classes** d’installation d’appareil, autoriser l’installation d’appareils qui correspondent à l’un de ces **ID** d’appareil et autoriser l’installation d’appareils qui correspondent à l’un de ces **paramètres** de stratégie d’instance d’appareil pour prendre le pas sur ce paramètre de stratégie pour les appareils applicables, activez l’ordre d’évaluation en couches des stratégies **d’installation** d’appareils autoriser et empêcher l’installation sur tous les paramètres de stratégie de correspondance de périphérique.
 
-Si vous activez ce paramètre de stratégie, Windows l’installation de périphériques amovibles est empêchée et les pilotes des appareils amovibles existants ne peuvent pas être mis à jour. Si vous activez ce paramètre de stratégie sur un serveur bureau à distance, le paramètre de stratégie affecte la redirection des appareils amovibles d’un client bureau à distance vers le serveur de bureau à distance.
+Si vous activez ce paramètre de stratégie, Windows ne peut pas installer d’appareils amovibles et les pilotes des appareils amovibles existants ne peuvent pas être mis à jour. Si vous activez ce paramètre de stratégie sur un serveur bureau à distance, le paramètre de stratégie affecte la redirection des appareils amovibles d’un client bureau à distance vers le serveur de bureau à distance.
 
 Si vous désactivez ou ne configurez pas ce paramètre de stratégie, Windows peut installer et mettre à jour des packages de pilotes pour les appareils amovibles comme cela est autorisé ou interdit par d’autres paramètres de stratégie.
 
@@ -206,7 +206,7 @@ Dans Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoi
 
 3. Activez l’application d’un ordre d’évaluation en couches pour les stratégies d’installation d’appareil autoriser et empêcher **l’installation sur tous les critères de correspondance d’appareil.**
 
-    - ne prise en charge que pour l’instant **OMA-URI**: profils de configuration > appareils > Créer un profil > Plateforme : Windows 10 (et & profil : personnalisé
+    - uniquement la prise en charge de **l’OMA-URI** pour le moment : profils de configuration > appareils > Créer un profil > Plateforme : Windows 10 (et & profil ) : personnalisé
     
       :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="modifier la ligne":::
 
@@ -225,7 +225,7 @@ Dans Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoi
     :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="contrôle d’appareil":::
 
     > [!NOTE]
-    > Certains appareils du système ont plusieurs couches de connectivité pour définir leur installation sur le système. Les lecteurs USB sont de tels périphériques. Par conséquent, lorsque vous cherchez à les bloquer ou les autoriser sur un système, il est important de comprendre le chemin de connectivité de chaque appareil. Il existe plusieurs ID d’appareil génériques couramment utilisés dans les systèmes et peuvent fournir un bon démarrage pour créer une « liste d’appareils acceptés » dans ce cas. Voici un exemple (ce n’est pas toujours le même pour tous les usbs ; vous devez comprendre l’arborescence PnP de l’appareil que vous souhaitez gérer via le Gestionnaire de périphériques) :
+    > Certains appareils du système ont plusieurs couches de connectivité pour définir leur installation sur le système. Les lecteurs USB sont de tels périphériques. Par conséquent, lorsque vous cherchez à les bloquer ou les autoriser sur un système, il est important de comprendre le chemin d’accès de la connectivité pour chaque appareil. Il existe plusieurs ID d’appareil génériques couramment utilisés dans les systèmes et peuvent fournir un bon démarrage pour créer une « liste d’appareils acceptés » dans ce cas. Voici un exemple (ce n’est pas toujours le même pour tous les usbs ; vous devez comprendre l’arborescence PnP de l’appareil que vous souhaitez gérer via le Gestionnaire de périphériques) :
     >
     > PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (pour les contrôleurs d’hôte)/ USB\ROOT_HUB30; USB\ROOT_HUB20 (pour les concentrateurs racine USB)/ USB\USB20_HUB (pour les concentrateurs USB génériques)/ 
     >
@@ -282,7 +282,7 @@ DeviceRegistryEvents
 ```
 
 ## <a name="why-the-allow-policy-doesnt-work"></a>Pourquoi la stratégie Autoriser ne fonctionne pas ?
-Il ne suffit pas d’activer un seul ID matériel pour activer une seule clé USB. Assurez-vous que tous les périphériques USB qui précèdent la cible ne sont pas bloqués (autorisés).
+Il ne suffit pas d’activer un seul ID matériel pour activer une seule clé USB. Assurez-vous que tous les périphériques USB qui précèdent la cible 1 ne sont pas bloqués (autorisés).
 
 :::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="Faq sur l’installation des appareils":::
 

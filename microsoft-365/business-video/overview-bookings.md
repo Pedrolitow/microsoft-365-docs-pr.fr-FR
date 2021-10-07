@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez Microsoft Bookings, une application mobile et en ligne pour les petites entreprises qui fournit des rendez-vous à vos clients.
-ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 05a43a08001b38d086b86c24c4bfb2d84db5fc1e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180652"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151469"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Vue d’ensemble de Microsoft Bookings
 
@@ -38,7 +38,7 @@ Microsoft Bookings est une application mobile et en ligne pour les petites entre
 ## <a name="get-started-with-bookings"></a>Mise en place de Bookings
 
 1. Pour commencer, connectez-vous Microsoft 365 et sélectionnez **Bookings** dans le lanceur d’applications.
-1. Sélectionnez **Obtenir maintenant sur** la page **Réservations.**
+1. Sélectionnez **Obtenir maintenant** sur la page **Réservations.**
 1. Ajoutez vos informations professionnelles et vous êtes prêt à commencer à utiliser Bookings.
 
     Pour gérer vos réservations sur votre appareil mobile, téléchargez Bookings à partir de votre app store.
