@@ -9,7 +9,7 @@ ms.topic: overview
 f1.keywords:
 - NOCSH
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.openlocfilehash: e66f9133959ce7f09915361e7583ae809e33647e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4fb4b548d71cf3e1da11e3c861a16929ac7073d8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209414"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197520"
 ---
 # <a name="learn-about-privileged-access-management"></a>En savoir plus sur la gestion des accès privilégiés
 
@@ -41,7 +41,7 @@ La gestion de l’accès privilégié complète les autres protections de foncti
 
 La gestion des accès privilégiés  est définie et étendue au niveau des tâches, tandis qu’Azure AD Privileged Identity Management applique une protection au niveau du rôle avec la possibilité d’exécuter plusieurs tâches.  Azure AD Privileged Identity Management permet principalement de gérer les accès aux rôles et aux groupes de rôles Azure AD, tandis que la gestion de l’accès privilégié dans Microsoft 365 s’applique uniquement au niveau de la tâche.
 
-- **Activation de la gestion des accès privilégiés lors de l’utilisation d’Azure AD Privileged Identity Management :** L’ajout de la gestion des accès privilégiés fournit une autre couche granulaire de fonctionnalités de protection et d’audit pour l’accès privilégié Microsoft 365 données.
+- **Activation de la gestion des accès privilégiés lors de l’utilisation d’Azure AD Privileged Identity Management :** L’ajout de la gestion des accès privilégiés fournit une couche granulaire de fonctionnalités de protection et d’audit pour l’accès privilégié Microsoft 365 données.
 
 - **Activation d’Azure AD Privileged Identity Management tout en utilisant déjà** la gestion des accès privilégiés dans Office 365 :  L’ajout d’Privileged Identity Management Azure AD à la gestion des accès privilégiés peut étendre l’accès privilégié aux données en dehors des Microsoft 365 principalement définies par les rôles d’utilisateur ou l’identité.  
 

@@ -17,7 +17,7 @@ ms.custom:
 - AppDefToBDC
 - seo-marvel-apr2020
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: La prise en charge SharePoint Server 2007 a pris fin en octobre 2017. Dans cet article, découvrez les options de mise à niveau, de migration et de support.
-ms.openlocfilehash: b653bcec6992834bba9f469753d8a3d13277b239
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d09e0cf58ef814a76cdac28f6029189eaf655efc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202109"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197268"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Feuille de route pour la fin de l’assistance pour SharePoint Server 2007
 
@@ -62,7 +62,7 @@ SharePoint Le serveur, comme la plupart des produits Microsoft, a un cycle de vi
     
 - Mises à jour de fuseau horaire.
     
-Votre batterie de serveurs SharePoint Server 2007 sera toujours opérationnelle après le 10 octobre 2017, mais aucune mise à jour, correctifs ou correctifs supplémentaires ne sera publié pour le produit, y compris les correctifs/correctifs de sécurité. Le support Microsoft a entièrement déplacé ses efforts de support vers des versions plus récentes du produit. Étant donné que votre installation n’est plus prise en charge ou corrigé, vous devez mettre à niveau le produit ou migrer des données importantes.
+Votre batterie de serveurs SharePoint Server 2007 sera toujours opérationnelle après le 10 octobre 2017, mais aucune mise à jour, correctifs ou correctifs supplémentaires ne sera publié pour le produit, y compris les correctifs/correctifs de sécurité. Le Support Microsoft a entièrement déplacé ses efforts de support vers des versions plus récentes du produit. Étant donné que votre installation n’est plus prise en charge ou corrigé, vous devez mettre à niveau le produit ou migrer des données importantes.
   
 > [!TIP]
 > Si vous n’avez pas encore planifié la mise à niveau ou la migration, voir : [SharePoint 2007 migration options to consider](sharepoint-2007-migration-options.md) for some examples of where to begin. Vous pouvez également rechercher des [partenaires Microsoft qui](https://go.microsoft.com/fwlink/?linkid=841249) peuvent vous aider avec la mise à niveau ou Microsoft 365 migration (ou les deux).
@@ -76,13 +76,13 @@ Votre premier arrêt doit être le [site cycle de vie du produit.](/lifecycle/pr
 |**Good**|**Meilleure**|**Idéale**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
-||Environnement hybride Microsoft Office SharePoint Online  <br/> |SharePoint Server 2016  <br/> |
+||Environnement hybride Microsoft Office SharePoint Online  <br/> |SharePoint Server 2016  <br/> |
 | | |Environnement hybride Microsoft Office SharePoint Online  <br/> |
    
 Si vous choisissez une option « suffisamment bonne », vous devrez bientôt commencer la planification d’une autre mise à niveau une fois la migration à partir de SharePoint Server 2007 terminée. 
 
 >[!NOTE] 
->Les dates de fin de support sont sujettes à modification. Vérifiez le [site Cycle de vie du produit.](https://support.microsoft.com/lifecycle)
+>Les dates de fin de prise en charge sont sujettes à modification. Vérifiez le [site Cycle de vie du produit.](https://support.microsoft.com/lifecycle)
   
 ## <a name="where-can-i-go-next"></a>Que faire ensuite ?
 
@@ -118,8 +118,8 @@ Vous ne pouvez pas migrer directement de SharePoint 2007 vers SharePoint Online.
   
 |**Professionnel en ligne**|**Con en ligne**|
 |:-----|:-----|
-|Microsoft fournit le matériel SPO et l’administration de tout le matériel.  <br/> |Les fonctionnalités disponibles peuvent différer entre SharePoint server local et SPO.  <br/> |
-|Vous êtes l’administrateur SharePoint ou l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.  <br/> |Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas ou ne sont pas nécessairement incluses dans le rôle Administrateur SharePoint dans Microsoft 365.  <br/> |
+|Microsoft fournit le matériel SPO et l’administration de tout le matériel.  <br/> |Les fonctionnalités disponibles peuvent différer entre SharePoint Server local et SPO.  <br/> |
+|Vous êtes l’administrateur SharePoint ou l’administrateur général de votre abonnement et pouvez affecter des administrateurs à des sites SPO.  <br/> |Certaines actions disponibles pour un administrateur de batterie de serveurs dans SharePoint Server local n’existent pas ou ne sont pas nécessairement incluses dans le rôle administrateur SharePoint dans Microsoft 365.  <br/> |
 |Microsoft applique des correctifs, des correctifs et des mises à jour au matériel et aux logiciels sous-jacents. <br/> |Étant donné qu’il n’y a pas d’accès au système de fichiers sous-jacent dans le service, la personnalisation est limitée.  <br/> |
 |Microsoft publie des [contrats de niveau de](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) service et se déplace rapidement pour résoudre les incidents au niveau du service. <br/> |Les options de sauvegarde et de restauration et d’autres options de récupération sont automatisées par le service dans SharePoint Online. Les sauvegardes sont écrasées si elles ne sont pas utilisées. <br/> |
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués régulièrement dans le service par Microsoft. <br/> |Les modifications apportées à l’interface utilisateur et aux autres fonctionnalités SharePoint sont installées par le service et peuvent avoir besoin d’être togged ou off. <br/> |
@@ -128,7 +128,7 @@ Vous ne pouvez pas migrer directement de SharePoint 2007 vers SharePoint Online.
 |Les partenaires peuvent vous aider à migrer vos données vers SharePoint Online.  <br/> ||
 |Les produits en ligne sont mis à jour automatiquement. Bien que les fonctionnalités peuvent se déprécier, il n’existe pas de véritable fin de prise en charge. <br/> ||
    
-Si vous avez décidé de créer un site Microsoft 365 et migrez manuellement les données vers ce site si nécessaire, vérifiez vos [options Microsoft 365 de migration.](https://www.microsoft.com/microsoft-365/)
+Si vous avez décidé de créer un site Microsoft 365 et migrez manuellement les données vers ce site selon vos besoins, vérifiez vos [options Microsoft 365 de migration.](https://www.microsoft.com/microsoft-365/)
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>Mettre à SharePoint serveur local
 
@@ -141,14 +141,14 @@ Passer de SharePoint 2007 à SharePoint Server 2016 représente un investissemen
 > [!NOTE]
 > Il est possible de maintenir votre batterie de serveurs SharePoint 2007 en fin de vie, d’installer une batterie de serveurs SharePoint Server 2016 sur un nouveau matériel (de sorte que les batteries de serveurs distinctes s’exécutent côte à côte), puis de planifier et d’exécuter une migration manuelle du contenu (pour télécharger et télécharger à nouveau du contenu, par exemple). Mais attention à certains des pièges des déplacements manuels, tels que les déplacements de documents remplaçant le compte de dernière modification par l’alias du compte qui a fait le déplacement manuel. Prenez également en compte le travail à faire à l’avance, comme la recréation de sites, de sous-sites, d’autorisations et de structures de liste. Envisagez à l’avance les données que vous pouvez déplacer dans le stockage ou la suppression pour réduire l’impact de la migration.
   
-Il est important de nettoyer votre environnement avant de mettre à niveau. Veillez à ce que votre batterie de serveurs existante soit fonctionnelle avant la mise à niveau et avant de la désaffecter !
+Il est important de nettoyer votre environnement avant de mettre à niveau. Veillez à ce que votre batterie de serveurs existante soit fonctionnelle avant la mise à niveau et avant de la désaffecter .
   
 N’oubliez pas de passer en revue les *chemins de* mise à niveau pris en charge et non pris en charge : 
   
 - 
   [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
     
@@ -156,7 +156,7 @@ Si vous avez des personnalisations, il est essentiel d’avoir un plan pour chaq
   
 - [SharePoint 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263203(v=office.12))
     
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
     
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
     
@@ -165,7 +165,7 @@ Si vous avez des personnalisations, il est essentiel d’avoir un plan pour chaq
 |Contrôle total de tous les aspects de votre batterie de SharePoint, à partir du matériel du serveur.  <br/> |Toutes les interruptions et correctifs sont la responsabilité de votre entreprise (vous pouvez engager le Support Microsoft payant si votre produit n’a pas fini de prendre en charge).  <br/> |
 |Ensemble complet de fonctionnalités SharePoint Server local avec la possibilité de connecter votre batterie de serveurs sur site à un abonnement SharePoint Online via un abonnement hybride.  <br/> |Mise à niveau, correctifs, correctifs de sécurité et maintenance SharePoint Server géré en local.  <br/> |
 |Accès complet pour une personnalisation plus importante.  <br/> |[Les offres de conformité Microsoft](/compliance/regulatory/offering-home) doivent être configurées manuellement en local.  <br/> |
-|Les tests de sécurité et le réglage des performances du serveur sont effectués sur votre site (sous votre contrôle).  <br/> |Microsoft 365 pouvez mettre à la disposition de SharePoint Online qui ne fonctionnent pas avec SharePoint Server local.  <br/> |
+|Les tests de sécurité et le réglage des performances du serveur sont effectués sur votre site (sous votre contrôle).  <br/> |Microsoft 365 pouvez mettre à la disposition de SharePoint Online qui n’interaront pas avec SharePoint Server local.  <br/> |
 |Les partenaires peuvent vous aider à migrer des données vers la prochaine version de SharePoint Server (et au-delà).  <br/> |Vos sites SharePoint Server n’utiliseront pas automatiquement les certificats [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) comme le permet SharePoint Online.  <br/> |
 |Contrôle total des conventions d’attribution de noms, de la back up et de la restauration, ainsi que d’autres options de récupération dans SharePoint Server local.  <br/> |SharePoint Le serveur local est sensible aux cycles de vie des produits.  <br/> |
    
@@ -187,7 +187,7 @@ Assurez-vous que votre environnement répond à la configuration matérielle et 
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Créer une solution SharePoint hybride entre SharePoint Online et en local
 
-Si la réponse à vos besoins de migration se situe entre le contrôle autonome proposé en local et le coût de possession inférieur proposé par SharePoint Online, vous pouvez connecter des batteries de serveurs SharePoint Server 2013 ou 2016 à SharePoint Online via des hybrides. [En savoir plus sur SharePoint solutions hybrides.](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+Si la réponse à vos besoins de migration se situe quelque part entre le contrôle autonome proposé en local et le coût de possession inférieur proposé par SharePoint Online, vous pouvez connecter des batteries de serveurs SharePoint Server 2013 ou 2016 à SharePoint Online via des hybrides. [En savoir plus sur SharePoint solutions hybrides.](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
 Si vous décidez qu’une batterie de serveurs SharePoint hybride bénéficiera à votre entreprise, familiarisez-vous avec les types d’hybrides existants et comment configurer la connexion entre votre batterie de serveurs SharePoint sur site et votre abonnement Microsoft 365.
   
@@ -196,7 +196,7 @@ Si vous décidez qu’une batterie de serveurs SharePoint hybride bénéficiera 
 [Offres pour la conformité Microsoft](/compliance/regulatory/offering-home)  <br/> |[FastTrack’aide](https://www.microsoft.com/fasttrack/microsoft-365) à la migration est limitée.  <br/> La majeure partie de la mise à niveau sera manuelle, ou via l’API de migration SPO décrite dans la feuille de route de contenu de migration SharePoint Online et [OneDrive migration.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)  <br/> |
 |Les ingénieurs du support Microsoft et les employés du centre de données n’ont pas un accès administrateur illimité à votre abonnement.<br/> |Il peut y avoir des coûts supplémentaires si l’infrastructure matérielle doit être mise à niveau pour prendre en charge la nouvelle version de SharePoint ou si une batterie secondaire est requise pour la mise à niveau.  <br/> |
 |Les partenaires peuvent vous aider à migrer vos données vers SharePoint Online.  <br/> ||
-|Les produits en ligne sont mis à jour automatiquement dans l’ensemble du service. Bien que les fonctionnalités peuvent être déprécié, il n’y a pas de véritable fin de prise en charge.<br/> ||
+|Les produits en ligne sont mis à jour automatiquement dans l’ensemble du service. Bien que les fonctionnalités peuvent être dépréciables, il n’existe pas de véritable fin de prise en charge.<br/> ||
    
 Si vous avez décidé de créer un site Microsoft 365 et migrez manuellement les données vers ce site si nécessaire, vérifiez vos [options Microsoft 365 de migration.](https://www.microsoft.com/microsoft-365/)
   
@@ -218,7 +218,7 @@ N’oubliez pas de passer en revue les *chemins de* mise à niveau pris en charg
 - 
   [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
     
@@ -226,13 +226,13 @@ Si vous avez *des personnalisations,* il est essentiel de planifier votre mise �
   
 - [SharePoint 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263203(v=office.12))
     
-- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
     
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
     
 |**Local Pro**|**Con local**|
 |:-----|:-----|
-|Contrôle total de tous les aspects de votre batterie de SharePoint, à partir du matériel du serveur.  <br/> |Toutes les interruptions et correctifs sont la responsabilité de votre entreprise. (Vous pouvez engager le Support Microsoft payant si votre produit n’a pas fini de prendre en charge.)  <br/> |
+|Contrôle total de tous les aspects de votre batterie de SharePoint, à partir du matériel du serveur.  <br/> |Toutes les interruptions et correctifs sont la responsabilité de votre entreprise. (Vous pouvez engager le Support Microsoft payant si votre produit n’a pas passé la fin du support.)  <br/> |
 |Ensemble complet de fonctionnalités SharePoint Server local avec la possibilité de connecter votre batterie de serveurs sur site à un abonnement SharePoint Online via un abonnement hybride.  <br/> |Mise à niveau, correctifs, correctifs de sécurité et maintenance SharePoint Server géré en local.  <br/> |
 |Accès complet pour une personnalisation plus importante.  <br/> |[Les offres de conformité Microsoft](/compliance/regulatory/offering-home) doivent être configurées manuellement en local.  <br/> |
 |Les tests de sécurité et l’optimisation des performances du serveur sont effectués sur votre site sous votre contrôle.  <br/> |Microsoft 365 mettre à la disposition de SharePoint Online qui ne fonctionnent pas avec SharePoint Server local  <br/> |
@@ -257,7 +257,7 @@ Assurez-vous que votre environnement répond à la configuration matérielle et 
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Créer une solution SharePoint hybride entre SharePoint Online et en local
 
-Si la réponse à vos besoins de migration se situe entre le contrôle autonome proposé en local et le coût de possession inférieur proposé par SharePoint Online, vous pouvez connecter des batteries de serveurs SharePoint Server 2013 ou 2016 à SharePoint Online via des hybrides. [En savoir plus sur SharePoint solutions hybrides](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+Si la réponse à vos besoins de migration se situe quelque part entre le contrôle autonome proposé en local et le coût de possession inférieur proposé par SharePoint Online, vous pouvez connecter des batteries de serveurs SharePoint Server 2013 ou 2016 à SharePoint Online via des hybrides. [En savoir plus sur SharePoint solutions hybrides](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
 Si vous décidez qu’une batterie de serveurs SharePoint hybride bénéficiera à votre entreprise, familiarisez-vous avec les types d’hybrides existants et comment configurer la connexion entre votre batterie de serveurs SharePoint sur site et votre abonnement Microsoft 365.
   

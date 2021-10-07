@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d7fe37cfb4dc923bd7ddc73db9ff8443bca0a0a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96f5f043ba49e01bd03f23c8eb430e56f88a5856
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179403"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197148"
 ---
 # <a name="alert-resource-type"></a>Type de ressource Alerte
 
@@ -50,7 +50,7 @@ ms.locfileid: "59179403"
 |[Alertes de mise à jour par lot](batch-update-alerts.md)||Mettre à jour un lot [d’alertes.](alerts.md)|
 |[Créer une alerte](create-alert-by-reference.md)|[Alerte](alerts.md)|Créez une alerte basée sur les données d’événement obtenues à partir [de la recherche avancée](run-advanced-query-api.md).|
 |[Liste des domaines associés](get-alert-related-domain-info.md)|Collection de domaines|Ré lister les URL associées à l’alerte.|
-|[Liste des fichiers associés](get-alert-related-files-info.md)|[Collection de](files.md) fichiers|Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)|
+|[Lister les fichiers associés](get-alert-related-files-info.md)|[Collection de](files.md) fichiers|Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)|
 |[Liste des IP associées](get-alert-related-ip-info.md)|Collection d’adresses IP|List IPs that are associated with the alert.|
 |[Obtenir les ordinateurs associés](get-alert-related-machine-info.md)|[Ordinateur](machine.md)|[L’ordinateur](machine.md) associé à [l’alerte](alerts.md).|
 |[Obtenir des utilisateurs associés](get-alert-related-user-info.md)|[Utilisateur](user.md)|Utilisateur [associé](user.md) à [l’alerte.](alerts.md)|
@@ -64,7 +64,7 @@ ms.locfileid: "59179403"
 
 |Propriété|Type|Description|
 |---|---|---|
-|id|Chaîne|ID d’alerte.|
+|id|String|ID d’alerte.|
 |title|String|Titre de l’alerte.|
 |description|String|Description de l’alerte.|
 |alertCreationTime|Nullable DateTimeOffset|Date et heure (au UTC) de création de l’alerte.|
@@ -78,7 +78,7 @@ ms.locfileid: "59179403"
 |assignedTo|Chaîne|Propriétaire de l’alerte.|
 |rbacGroupName|Chaîne|Nom du groupe d’appareils RBAC.|
 |mitreTechniques|Chaîne|ID Enterprise technique mitre.|
-|relatedUser|Chaîne|Détails de l’utilisateur associé à une alerte spécifique.|
+|relatedUser|String|Détails de l’utilisateur associé à une alerte spécifique.|
 |Sévérité |Énum|Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).|
 |statut|Énum|Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).|
 |classification|Nullable, enum|Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).|
@@ -86,7 +86,7 @@ ms.locfileid: "59179403"
 |category|String|Catégorie de l’alerte.|
 |detectionSource|Chaîne|Source de détection.|
 |threatFamilyName|Chaîne|Famille de menaces.|
-|threatName|Chaîne|Nom de la menace.|
+|threatName|String|Nom de la menace.|
 |machineId|Chaîne|ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.|
 |computerDnsName|Chaîne|[nom complet](machine.md) de l’ordinateur.|
 |aadTenantId|Chaîne|ID Azure Active Directory de l’ID de l’ID de l’Azure Active Directory.|

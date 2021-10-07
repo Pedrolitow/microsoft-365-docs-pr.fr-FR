@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -17,12 +17,12 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3bb844437bde35e202b177aeba3439f50bf14766
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 3392653aab996ef62f05664a33c82f55639003c4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59490128"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196962"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Configurer la correction pour la détection d’antivirus Microsoft Defender
 
@@ -35,7 +35,7 @@ Lorsque Antivirus Microsoft Defender exécute une analyse, il tente de corriger 
 
 Cet article explique comment configurer ces paramètres à l’aide de la stratégie de groupe, mais vous pouvez également utiliser Microsoft Endpoint Configuration Manager [et](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) [Microsoft Intune](/intune/device-restrictions-configure).
 
-Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/powershell/module/defender/set-mppreference) ou [ `MSFT_MpPreference` la classe WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) pour configurer ces paramètres.
+Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/powershell/module/defender/set-mppreference) ou la [ `MSFT_MpPreference` classe WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) pour configurer ces paramètres.
 
 ## <a name="configure-remediation-options"></a>Configurer les options de correction
 
@@ -51,12 +51,12 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 
 <br/><br/>
 
-|Emplacement|Paramètre|Description|Paramètre par défaut (s’il n’est pas configuré)|
+|Lieu|Paramètre|Description|Paramètre par défaut (s’il n’est pas configuré)|
 |---|---|---|---|
 |Analyser|Créer un point de restauration du système|Un point de restauration système est créé chaque jour avant la tentative de nettoyage ou d’analyse|Désactivé|
 |Analyser|Activer la suppression des éléments du dossier d’historique d’analyse|Spécifier le nombre de jours pendant combien d’éléments doivent être conservés dans l’historique d’analyse|30 jours|
 |Root|Désactiver la correction de routine|Vous pouvez spécifier si Antivirus Microsoft Defender les menaces sont automatiquement corrigés ou s’il doit demander à l’utilisateur du point de terminaison ce qu’il doit faire.|Désactivé (les menaces sont automatiquement corrigés)|
-|Quarantaine|Configurer la suppression des éléments du dossier de mise en quarantaine|Spécifier le nombre de jours pendant combien d’éléments doivent être mis en quarantaine avant d’être supprimés|90 jours|
+|Quarantaine|Configurer la suppression des éléments du dossier De quarantaine|Spécifier le nombre de jours pendant combien d’éléments doivent être mis en quarantaine avant d’être supprimés|90 jours|
 |Menaces|Spécifier les niveaux d’alerte contre les menaces pour lesquels aucune action par défaut ne doit être prise lorsqu’elle est détectée|Chaque menace détectée par le Antivirus Microsoft Defender est affectée à un niveau de menace (faible, moyen, élevé ou grave). Vous pouvez utiliser ce paramètre pour définir comment toutes les menaces pour chacun des niveaux de menace doivent être corrigés (mis en quarantaine, supprimés ou ignorés)|Non applicable|
 |Menaces|Spécifier les menaces sur lesquelles l’action par défaut ne doit pas être prise lorsqu’elle est détectée|Spécifiez comment les menaces spécifiques (à l’aide de leur ID de menace) doivent être corrigés. Vous pouvez spécifier si la menace spécifique doit être mise en quarantaine, supprimée ou ignorée|Non applicable|
 
@@ -67,7 +67,7 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 >
 > Pour éviter ce problème à l’avenir, vous pouvez exclure des fichiers des analyses. Voir [Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses.](configure-exclusions-microsoft-defender-antivirus.md)
 
-Consultez également Configurer des analyses complètes Antivirus Microsoft Defender de correction [requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour plus de paramètres liés à la correction.
+Voir également Configurer des analyses complètes Antivirus Microsoft Defender des [corrections requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour la correction.
 
 ## <a name="see-also"></a>Voir aussi
 

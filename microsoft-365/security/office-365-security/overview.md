@@ -6,7 +6,7 @@ manager: dansimp
 ms.date: 07/21/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -16,12 +16,12 @@ ms.collection:
 description: La sécurité dans Office 365, de EOP à Defender pour Office 365 Plans 1 et 2, les configurations de sécurité Standard vs Strict, et plus encore. Comprenez ce que vous avez et comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb20146625b0e6d42394e82c6cdd70595f18ba13
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: bc444ee36cabf7d148c51d1bceac02f299d89ad9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59483242"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196464"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Vue d’ensemble de la sécurité Office 365 Microsoft Defender for Office 365
 
@@ -85,7 +85,7 @@ Ce qui fait de l'ajout des plans Microsoft Defender pour Office 365 un avantage
 
 |Prévention/détection|Examiner|Répondre|
 |---|---|---|
-|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique en heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
+|Les technologies comprennent :<ul><li>courrier indésirable</li><li>hameçonnage</li><li>programme malveillant</li><li>courrier en nombre</li><li>veille contre l'usurpation d'identité</li><li>détection d’emprunt d’identité</li><li>Mise en quarantaine de l’administrateur</li><li>Envois de faux positifs et de faux négatifs par l’administrateur et l’utilisateur</li><li>Autoriser/Bloquer pour les URL et fichiers</li><li>Rapports</li></ul>|<li>Recherche de journal d’audit</li><li>Suivi des messages</li>|<li>Purge automatique d’heure zéro (ZAP)</li><li>Affinement et test des listes d’autoriser et de blocage</li>|
 |
 
 Si vous souhaitez approfondir EOP, **[passez à cet article](exchange-online-protection-overview.md)**.

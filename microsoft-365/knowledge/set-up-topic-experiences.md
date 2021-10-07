@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: medium
+ms.localizationpriority: medium
 description: Découvrez comment configurer Sujets Microsoft Viva.
-ms.openlocfilehash: ba0bf7c9bec785f359e3a5f9a43ee0f7063b25dd
-ms.sourcegitcommit: d1a93f25323a0e6ce3b898bf9dc57dcef27eda67
+ms.openlocfilehash: 2a662640c765cc970483e73ed42971e73067e614
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60126841"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197256"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurer Sujets Microsoft Viva
 
@@ -46,7 +46,7 @@ Pour attribuer des licences :
 
 1. Dans le Centre d’administration Microsoft 365, sous **Utilisateurs**, cliquez sur **Utilisateurs actifs**.
 
-2. Sélectionnez les utilisateurs que vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
+2. Sélectionnez les utilisateurs dont vous souhaitez obtenir une licence, puis cliquez **sur Licences et applications.**
 
 3. Sous **Licences,** **sélectionnez Rubriques Titre.**
 
@@ -72,7 +72,7 @@ Pour configurer des rubriques
 
 3. Dans la page **Connecter personnes à la** connaissance, cliquez sur **Commencer** pour vous aider dans le processus de configuration.
 
-    ![Commencer.](../media/k-get-started.png) 
+    ![Get started.](../media/k-get-started.png) 
 
 4. Dans la page Choisir la façon dont Topics peut trouver des **rubriques,** vous allez configurer la découverte de rubriques. Dans la section **Sélectionner SharePoint sources** de rubriques, sélectionnez les sites SharePoint à analyser en tant que sources pour vos rubriques lors de la découverte. Choisissez parmi les autorisations suivantes :
     - **Tous les sites** : tous les sites SharePoint dans votre organisation. Cela inclut les sites actuels et futurs.
@@ -108,12 +108,12 @@ Pour configurer des rubriques
     
     Sélectionnez **Suivant**.
 
-6. Sur la Qui pouvez voir les **rubriques** et où peuvent-elles les voir, vous allez configurer la visibilité des rubriques. Dans la Qui pouvez voir les paramètres des **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner:
+6. Sur la Qui pouvez voir les **rubriques** et où peuvent-elles les voir, vous allez configurer la visibilité des rubriques. Dans la Qui pouvez voir les paramètres des **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en surbrill plan, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner:
     - **Tous les membres de mon organisation**
     - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
 
-    ![Qui pouvez voir des rubriques.](../media/ksetup2.png)  
+    ![Qui pouvez voir les rubriques.](../media/ksetup2.png)  
 
     > [!Note] 
     > Bien que ce paramètre vous permet de sélectionner n’importe quel utilisateur de votre organisation, seuls les utilisateurs qui ont des licences Expériences des rubriques qui leur sont attribuées pourront afficher les rubriques.

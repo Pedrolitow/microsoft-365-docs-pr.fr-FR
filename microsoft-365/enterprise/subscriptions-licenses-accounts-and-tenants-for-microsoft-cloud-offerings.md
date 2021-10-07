@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Comprendre les relations des organisations, des abonnements, des licences, des comptes d’utilisateur et des clients dans les offres cloud Microsoft.
-ms.openlocfilehash: 64ca4d69d0792dbe3751bffff95841409767aa4f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: c8f6fca0a5c9ce56c3565612e0de9b40d6e0254c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179668"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197196"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, licences, comptes et clients des offres de cloud de Microsoft
 

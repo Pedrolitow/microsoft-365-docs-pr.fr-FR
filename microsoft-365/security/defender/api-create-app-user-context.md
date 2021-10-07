@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 720707ab58ff5de8ddc64ac1df717d9812227735
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e97ed3b7b11eeded5919e963a3175782d3a7d088
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208836"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60184371"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Créer une application pour accéder Microsoft 365 Defender API au nom d’un utilisateur
 
@@ -75,14 +75,14 @@ Cet article explique comment :
    ![Image de la fenêtre Créer une application.](../../media/nativeapp-create2.PNG)
 
    - **Type d’application :** Client public
-   - **URI de redirection :**https://portal.azure.com
+   - **URI de redirection :** https://portal.azure.com
 
 4. Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon organisation utilise >, tapez Protection Microsoft contre les menaces, puis sélectionnez  >    >   Protection **Microsoft contre les menaces.**  Votre application peut désormais accéder à Microsoft 365 Defender.
 
    > [!TIP]
    > *La Protection Microsoft contre les* menaces est un ancien nom Microsoft 365 Defender et n’apparaît pas dans la liste d’origine. Vous devez commencer à écrire son nom dans la zone de texte pour qu’il apparaisse.
 
-   ![Image de la sélection d’autorisation d’API.](../../media/apis-in-my-org-tab.PNG)
+   ![Image de la sélection des autorisations d’API.](../../media/apis-in-my-org-tab.PNG)
 
    - Choisissez **Autorisations déléguées.** Choisissez les autorisations pertinentes pour votre scénario (par exemple **Incident.Read),** puis **sélectionnez Ajouter des autorisations.**
 
@@ -132,7 +132,7 @@ Dans l’image suivante, vous pouvez voir un jeton décodé acquis à partir d�
 
 ![Image de validation de jeton.](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender de connexion
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Utiliser le jeton pour accéder à l’API Microsoft 365 Defender
 
 1. Choisissez l’API que vous souhaitez utiliser (incidents ou recherche avancée). Pour plus d’informations, [voir API Microsoft 365 Defender pris en charge.](api-supported.md)
 2. Dans la requête HTTP que vous êtes sur le point d’envoyer, définissez l’en-tête d’autorisation sur , le porteur étant le schéma d’autorisation et le jeton comme jeton `"Bearer" <token>` validé.  

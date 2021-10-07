@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae325d2d6c776c41ef12164ba48da9240e0e628b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 93b547718bca2fb157c3b4e0a4b08d383ec92e4f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59163740"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196992"
 ---
 # <a name="enable-conditional-access-to-better-protect-users-devices-and-data"></a>Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données
 

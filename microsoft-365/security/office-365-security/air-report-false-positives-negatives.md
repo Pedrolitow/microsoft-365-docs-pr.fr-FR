@@ -1,6 +1,6 @@
 ---
 title: Comment signaler des faux positifs ou des faux négatifs à la suite d’un examen automatisé dans Microsoft Defender pour Office 365
-description: Un problème a-t-il été manqué ou détecté à tort par AIR dans Microsoft Defender Office 365 ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
+description: Un problème a-t-il été manqué ou détecté à tort par AIR dans Microsoft Defender pour Office 365 ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
 keywords: automatisé, examen, alerte, déclencheur, action, correction, faux positif, faux négatif
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 ms.prod: m365-security
 ms.date: 01/29/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0096cb5f8c0d878ecc888de74f1548c77ed0dda9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208684"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196644"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse
 
@@ -37,7 +37,7 @@ ms.locfileid: "59208684"
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) dans Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut prendre pour résoudre ce problème. Ces actions sont les suivantes :
+Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut suivre pour résoudre ce problème. Ces actions sont les suivantes :
 
 - [Signalement d’un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Ajustement des alertes](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si nécessaire) ; et
@@ -90,5 +90,5 @@ Dans le centre de correction, vous pouvez voir les actions de correction qui ont
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Microsoft Defender pour Office 365](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365](defender-for-office-365.md)
 - [Examens automatisés dans Microsoft Defender pour Office 365](office-365-air.md)

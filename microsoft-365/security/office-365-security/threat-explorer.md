@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Utilisez les détections De l’Explorateur et en temps réel dans 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94a7fb847eca7f46f543399d8de1b2d3d12e1908
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 96004add9efe4fac033518f32b357044bdb7588f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164617"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196512"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Détections en temps réel et de l’Explorateur de menaces
 
@@ -59,7 +59,7 @@ Avec ce rapport, vous pouvez :
 
 ### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Introduction de l’ID d’alerte pour Defender pour Office 365 alertes dans les détections En temps réel/Explorateur
 
-Aujourd’hui, si vous naviguez d’une alerte vers l’Explorateur de menaces, il ouvre une vue filtrée dans l’Explorateur, avec l’affichage filtré par l’ID de stratégie d’alerte (ID de stratégie étant un identificateur unique pour une stratégie d’alerte).
+Aujourd’hui, si vous naviguez d’une alerte vers l’Explorateur de menaces, elle ouvre une vue filtrée dans l’Explorateur, avec l’affichage filtré par l’ID de stratégie d’alerte (ID de stratégie étant un identificateur unique pour une stratégie d’alerte).
 Nous rendons cette intégration plus pertinente en introduisant l’ID d’alerte (voir un exemple d’ID d’alerte ci-dessous) dans l’Explorateur de menaces et les détections en temps réel afin que vous voyez les messages qui sont pertinents pour l’alerte spécifique, ainsi qu’un nombre de messages électroniques. Vous pourrez également voir si un message faisait partie d’une alerte, ainsi que naviguer de ce message vers l’alerte spécifique.
 
 L’ID d’alerte est disponible dans l’URL lorsque vous affichez une alerte individuelle . exemple `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` :
@@ -68,7 +68,7 @@ L’ID d’alerte est disponible dans l’URL lorsque vous affichez une alerte i
 > ![Filtrage de l’ID d’alerte.](../../media/AlertID-Filter.png)
 
 > [!div class="mx-imgBorder"]
-> ![ID d’alerte dans le volant de détails.](../../media/AlertID-DetailsFlyout.png)
+> ![ID d’alerte dans le volant d’informations.](../../media/AlertID-DetailsFlyout.png)
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 à 30 jours
 
@@ -150,7 +150,7 @@ Vous pouvez maintenant voir la menace spécifique pour une URL sous l’onglet *
 
 L’affichage Chronologie identifie tous les événements de remise et de post-remise. Il inclut des informations sur la menace identifiée à ce moment-là pour un sous-ensemble de ces événements. L’affichage Chronologie fournit également des informations sur toute action supplémentaire prise (par exemple, ZAP ou la correction manuelle), ainsi que le résultat de cette action. Les informations d’affichage de chronologie incluent :
 
-- **Source :** Source de l’événement. Il peut s’y trouver en administrateur/système/utilisateur.
+- **Source :** Source de l’événement. Il peut s’qu’il s’adresse à l’administrateur/au système/à l’utilisateur.
 - **Événement :** Inclut les événements de niveau supérieur tels que la remise d’origine, la correction manuelle, ZAP, les soumissions et la remise dynamique.
 - **Action :** Action spécifique qui a été prise dans le cadre de l’action ZAP ou de l’administrateur (par exemple, suppression possible).
 - **Menaces :** Couvre les menaces (programme malveillant, hameçonnage, courrier indésirable) identifiées à ce moment-là.
@@ -180,14 +180,14 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 *Des actions supplémentaires ont* été appliquées après la remise du courrier électronique. Elles peuvent inclure *zap* *,* correction manuelle (action entreprise par un administrateur telle que la suppression *possible),* remise dynamique et *retrait* (pour un e-mail détecté comme bon).
 
 > [!NOTE]
-> Dans le cadre des modifications en attente, la valeur « Supprimé par ZAP » actuellement mise en avant dans le filtre Action de remise va disparaître. Vous pourrez rechercher tous les e-mails avec la tentative ZAP via des **actions supplémentaires.**
+> Dans le cadre des modifications en attente, la valeur « Supprimé par ZAP » actuellement mise en avant dans le filtre Action de remise va disparaître. Vous pouvez rechercher tous les e-mails avec la tentative ZAP via des **actions supplémentaires.**
 
 > [!div class="mx-imgBorder"]
 > ![Actions supplémentaires dans l’Explorateur.](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Remplacements système
 
-*Les substitutions système* vous permettent d’effectuer des exceptions à l’emplacement de remise prévu d’un message. Vous remplacez l’emplacement de remise fourni par le système, en fonction des menaces et autres détections identifiées par la pile de filtrage. Les substitutions système peuvent être définies par le biais d’une stratégie de client ou d’utilisateur pour remettre le message comme suggéré par la stratégie. Les remplacements peuvent identifier la remise involontaire de messages malveillants en raison de lacunes de configuration, telles qu’une stratégie d’expéditeur de Coffre trop large définie par un utilisateur. Ces valeurs de remplacement peuvent être :
+*Les substitutions système* vous permettent d’effectuer des exceptions à l’emplacement de remise prévu d’un message. Vous remplacez l’emplacement de remise fourni par le système, en fonction des menaces et autres détections identifiées par la pile de filtrage. Les substitutions système peuvent être définies par le biais d’une stratégie de client ou d’utilisateur pour remettre le message comme suggéré par la stratégie. Les remplacements peuvent identifier la remise involontaire de messages malveillants en raison de lacunes de configuration, telles qu’une stratégie d’expéditeur de Coffre trop large définie par un utilisateur. Ces valeurs de substitution peuvent être :
 
 - Autorisé par la stratégie utilisateur : un utilisateur crée des stratégies au niveau de la boîte aux lettres pour autoriser les domaines ou les expéditeurs.
 
@@ -204,7 +204,7 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 > [!div class="mx-imgBorder"]
 > ![Le système remplace la grille dans l’Explorateur.](../../media/System_Overrides_Grid.png)
 
-### <a name="improvements-for-the-url-and-clicks-experience"></a>Améliorations de l’URL et expérience de clics
+### <a name="improvements-for-the-url-and-clicks-experience"></a>Améliorations apportées à l’URL et aux clics
 
 Les améliorations sont les suivantes :
 
@@ -306,7 +306,7 @@ Vous pourrez voir le GUID et le nom des règles de transport qui ont été appli
 
 ### <a name="inbound-connectors"></a>Connecteurs entrants
 
-Les connecteurs sont un ensemble d’instructions qui personnalisent la façon dont vos messages électroniques circulent vers et depuis Microsoft 365 ou Office 365 organisation. Elles vous permettent d’appliquer des restrictions ou des contrôles de sécurité. Dans l’Explorateur de menaces, vous pouvez désormais afficher les connecteurs associés à un e-mail et rechercher des e-mails à l’aide de noms de connecteur.
+Les connecteurs sont un ensemble d’instructions qui personnalisent la façon dont vos messages électroniques circulent vers et depuis Microsoft 365 ou Office 365 organisation. Elles vous permettent d’appliquer des restrictions ou contrôles de sécurité. Dans l’Explorateur de menaces, vous pouvez désormais afficher les connecteurs associés à un e-mail et rechercher des e-mails à l’aide de noms de connecteur.
 
 La recherche de connecteurs est de nature « contient », ce qui signifie que les recherches partielles par mots clés doivent également fonctionner. Dans l’affichage Grille principale, le volant Détails et le fichier CSV exporté, les connecteurs sont affichés au format Nom/GUID, comme illustré ici :
 
@@ -338,9 +338,9 @@ Cet exemple utilise l’Explorateur de menaces.
 
    Par exemple, recherchez des noms de domaine protégés tels que *contoso,* *contoso.com* ou *contoso.com.au*.
 
-4. Sélectionnez l’objet d’un message sous l’onglet Courrier > onglet Détails pour voir des informations supplémentaires sur l’emprunt d’identité, telles que l’emprunt d’identité domaine /emplacement détecté.
+4. Sélectionnez l’objet d’un message sous l’onglet Courrier >'onglet Détails pour voir des informations supplémentaires sur l’emprunt d’identité, telles que domaine usurpé/emplacement détecté.
 
-    **OU**
+    **OR**
 
     Sélectionnez **Utilisateur dont l’identité** est usurpée et tapez l’adresse e-mail d’un utilisateur protégé dans la boîte de texte.
 
@@ -356,7 +356,7 @@ Cet exemple utilise l’Explorateur de menaces.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Afficher un aperçu de l’en-tête du courrier électronique et télécharger le corps de l’e-mail
 
-Vous pouvez désormais afficher un aperçu d’un en-tête d’e-mail et télécharger le corps de l’e-mail dans l’Explorateur de menaces. Les administrateurs peuvent analyser les en-têtes/messages électroniques téléchargés pour les menaces. Étant donné que le téléchargement de messages électroniques peut risque d’exposer des informations, ce processus est contrôlé par le contrôle d’accès basé sur un rôle (RBAC). Un nouveau rôle, *Preview,* doit être ajouté à un autre groupe de rôles (par exemple, Opérations de sécurité ou Administrateur de la sécurité) pour accorder la possibilité de télécharger des messages électroniques dans l’affichage des messages électroniques. Toutefois, l’affichage de l’en-tête de courrier électronique ne nécessite aucun rôle supplémentaire (autre que celui requis pour afficher les messages dans l’Explorateur de menaces).
+Vous pouvez désormais afficher un aperçu d’un en-tête d’e-mail et télécharger le corps de l’e-mail dans l’Explorateur de menaces. Les administrateurs peuvent analyser les en-têtes/messages électroniques téléchargés pour les menaces. Étant donné que le téléchargement de messages électroniques peut exposer des informations, ce processus est contrôlé par le contrôle d’accès basé sur un rôle (RBAC). Un nouveau rôle, *Preview,* doit être ajouté à un autre groupe de rôles (par exemple, Opérations de sécurité ou Administrateur de la sécurité) pour accorder la possibilité de télécharger des messages électroniques dans l’affichage des messages électroniques. Toutefois, l’affichage de l’en-tête de courrier électronique ne nécessite aucun rôle supplémentaire (autre que celui requis pour afficher les messages dans l’Explorateur de menaces).
 
 Les détections de l’explorateur et du temps réel obtiennent également de nouveaux champs qui fournissent une image plus complète de l’endroit où vos messages électroniques sont envoyés. Ces modifications facilitent le recherche pour les opérations de sécurité. Mais le résultat principal est que vous pouvez connaître l’emplacement des messages électroniques problématiques en un coup d’œil.
 
@@ -373,7 +373,7 @@ Comment cela se fait-il ? L’état de remise est maintenant divisé en deux col
 
 |Remis|Junked|Blocked|Remplacé|
 |---|---|---|---|
-|Le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur, et l’utilisateur peut y accéder.|Le courrier électronique a été envoyé au dossier Courrier indésirable ou Supprimé de l’utilisateur, et l’utilisateur peut y accéder.|Messages électroniques mis en quarantaine, qui ont échoué ou ont été supprimés. Ces messages ne sont pas accessibles à l’utilisateur.|Le courrier électronique avait des pièces jointes malveillantes remplacées .txt fichiers qui d’état de la pièce jointe était malveillant.|
+|Le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur, et l’utilisateur peut y accéder.|Le courrier électronique a été envoyé au dossier Courrier indésirable ou Supprimé de l’utilisateur, et l’utilisateur peut y accéder.|Messages électroniques mis en quarantaine, qui ont échoué ou ont été supprimés. Ces messages ne sont pas accessibles à l’utilisateur.|Le courrier électronique avait des pièces jointes malveillantes remplacées par .txt qui daient la pièce jointe malveillante.|
 |
 
 Voici ce que l’utilisateur peut et ne peut pas voir :
@@ -493,7 +493,7 @@ Dans les volants d’e-mail ou d’URL, les clics principaux ainsi que dans nos 
 - **Verdict en attente :** La page en attente de détonation s’est présentée à l’utilisateur.
 - **Blocked overridden:** L’utilisateur ne peut pas accéder directement à l’URL. Toutefois, l’utilisateur a overrode le bloc pour accéder à l’URL.
 - **Verdict en attente contourné :** La page de détonation s’est présentée à l’utilisateur. Toutefois, l’utilisateur a overrode le message pour accéder à l’URL.
-- **Erreur :** La page d’erreur s’est présentée à l’utilisateur, ou une erreur s’est produite lors de la capture du verdict.
+- **Erreur :** La page d’erreur s’est présentée à l’utilisateur ou une erreur s’est produite lors de la capture du verdict.
 - **Échec :** Une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur a peut-être cliqué sur l’URL.
 
 ## <a name="review-email-messages-reported-by-users"></a>Passer en revue les messages électroniques signalés par les utilisateurs

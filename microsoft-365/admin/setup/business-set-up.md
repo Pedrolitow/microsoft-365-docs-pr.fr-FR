@@ -11,7 +11,7 @@ f1_keywords:
 - O365E_M365SetupBanner
 - BCS365_M365SetupBanner
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -31,12 +31,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 3336b75e1810f5f1323e69d2a1ba7feee36ec7c8
-ms.sourcegitcommit: 24bff8a546491ff32ebf04d1f51abb3197035706
+ms.openlocfilehash: 9c2c9da3e9427f77f067001c5f244e7c6d4e247f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59786358"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196200"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer des Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -82,7 +82,7 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 #### <a name="add-users-in-the-wizard"></a>Ajouter des utilisateurs dans l’Assistant
 
-Tous les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatiquement une licence Microsoft 365 Business Premium’utilisateur.
+Tous les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatiquement une licence Microsoft 365 Business Premium licence.
 
 ![Capture d’écran de la page Ajouter de nouveaux utilisateurs dans l’Assistant.](../../media/addnewuserspage.png)
 
@@ -119,7 +119,7 @@ Les stratégies que vous avez définies dans l’Assistant sont appliquées auto
 
 3. Dans la page Protéger les données **dans Office** pour appareils mobiles, laissez la gestion des applications mobiles en place, développez les paramètres et examinez-les, puis sélectionnez Créer une stratégie de gestion des applications **mobiles.**
 
-    ![Capture d’écran de protéger les données Office page mobile.](../../media/protectdatainmobile.png)
+    ![Capture d’écran de La protection des Office pour la page mobile.](../../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
@@ -128,7 +128,7 @@ Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se **co
 
 ## <a name="deploy-office-365-client-apps"></a>Déployer Office 365 applications clientes
 
-Si vous avez choisi d’installer automatiquement des applications Office lors de l’installation, les applications s’installent sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
+Si vous avez choisi d’installer automatiquement des applications Office lors de l’installation, elles s’installeront sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
 
 Pour installer Office sur des appareils mobiles iOS ou Android, voir Configurer des appareils [mobiles pour Microsoft 365 Business Premium utilisateurs.](set-up-mobile-devices.md)
 

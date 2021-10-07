@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: En savoir plus sur Azure Information Protection (AIP) pour Office 365 géré par 21Vianet et comment le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 8b85ae43df31bb1947b841d616cc83c3a0b614e4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3235bf77ec8cd7be96910614bdde41fb60f9f556
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178572"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199236"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Prise en charge d’Azure Information Protection pour Office 365 géré par 21Vianet
 
@@ -137,7 +137,7 @@ Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine
 
 Téléchargez et installez le client d’étiquetage unifié AIP à partir du [Centre de téléchargement Microsoft.](https://www.microsoft.com/download/details.aspx?id=53018)
 
-Pour plus d’informations, consultez :
+Pour plus d'informations, voir :
 
 - [Documentation AIP](/azure/information-protection/)
 - [Historique des versions AIP et stratégie de support](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
@@ -189,7 +189,7 @@ Pour plus d’informations, consultez l’analyseur d’étiquetage unifié [Azu
 
     Le service installé est nommé **Scanneur Azure Information Protection et** est configuré pour s’exécuter à l’aide du compte de service de scanneur que vous avez créé.
 
-1. Obtenez un jeton Azure à utiliser avec votre scanneur. Un jeton Azure AD permet au scanneur de s’authentifier au service Azure Information Protection, ce qui permet au scanneur de s’exécuter de manière non interactive. 
+1. Obtenez un jeton Azure à utiliser avec votre scanneur. Un jeton Azure AD permet au scanneur de s’authentifier au service Azure Information Protection, ce qui lui permet de s’exécuter de manière non interactive. 
 
     1. Ouvrez le portail Azure et créez une application Azure AD pour spécifier un jeton d’accès pour l’authentification. Pour plus d’informations, voir [Comment étiqueter des fichiers de](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)manière non interactive pour Azure Information Protection .
     
@@ -237,7 +237,7 @@ Pour plus d’informations, consultez l’analyseur d’étiquetage unifié [Azu
     - Définit les types d’informations à découvrir en fonction de la stratégie d’étiquetage de confidentialité
     - *N’applique pas* une stratégie d’étiquetage de confidentialité
     - Étiquettes automatiques des fichiers en fonction du contenu, à l’aide de l’étiquette par défaut définie pour la stratégie d’étiquetage de confidentialité
-    - *N’autorise* pas l’éliodage des fichiers
+    - Ne *permet pas* l’élisage des fichiers
     - Conserve les détails du fichier lors de l’analyse et de l’étiquetage automatique, y compris la *date de* modification, la dernière *modification* et la modification par *des valeurs*
     - Définit le scanneur pour exclure les fichiers .msg et .tmp lors de l’exécution
     - Définit le propriétaire par défaut sur le compte que vous souhaitez utiliser lors de l’exécution du scanneur
@@ -281,7 +281,7 @@ Le tableau suivant répertorie les cmdlets PowerShell pertinentes pour l’insta
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Définit les paramètres d’un référentiel existant dans votre travail d’analyse de contenu. |
 | | |
 
-Pour plus d’informations, consultez :
+Pour plus d'informations, voir :
 
 - [Qu’est-ce que le scanneur d’étiquetage unifié Azure Information Protection ?](/azure/information-protection/deploy-aip-scanner)
 - [Configuration et installation du scanneur d’étiquetage unifié Azure Information Protection (AIP)](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)

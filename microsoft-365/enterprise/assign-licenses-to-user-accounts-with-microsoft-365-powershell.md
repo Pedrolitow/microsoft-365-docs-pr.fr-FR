@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Dans cet article, découvrez comment utiliser PowerShell pour attribuer une licence Microsoft 365 aux utilisateurs sans licence.
-ms.openlocfilehash: 2af81099b2771c69b642308fb50500b358d64780
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b9f076e4856820d9f10e4cf92718dd6ddd3971c5
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204108"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186776"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Attribuer Microsoft 365 licences d’utilisateur à des comptes d’utilisateur avec PowerShell
 
@@ -43,7 +43,7 @@ Les comptes synchronisés à partir de vos services de domaine Active Directory 
  - Le [portail Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Utilisateurs Active Directory**> compte d’utilisateur > informations de contact du profil Pays ou  >     >    >  **région**).
 
 >[!Note]
->[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) à l’Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
+>[Découvrez comment attribuer des licences à des comptes d’utilisateurs](../admin/manage/assign-licenses-to-users.md) à l’Centre d'administration Microsoft 365. Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](/admin)
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph

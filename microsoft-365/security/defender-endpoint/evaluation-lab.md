@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5ddd486bb062c86b21891c8a1678a5f2cc8226dd
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: df517e07242bfd15ec0feccbd0de9d682c74d381
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124504"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60184700"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,7 +41,7 @@ Le laboratoire d’évaluation de Microsoft Defender pour points de terminaison 
 
 Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concentrer sur l’exécution de vos propres scénarios de test et des simulations pré-réalisées pour voir les résultats de Defender for Endpoint.
 
-Vous disposez d’un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permet de tester la pile de protection complète de Defender for Endpoint.
+Vous aurez un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permettra de tester la pile de protection complète que Defender pour Endpoint offre.
 
 Vous pouvez ajouter des appareils Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022 qui sont pré-configurés pour que les dernières versions du système d’exploitation et les composants de sécurité qui s’y rapportent, ainsi que Office 2019 Standard soit installé.
 
@@ -186,7 +186,7 @@ Vous pouvez simuler des scénarios d’attaque à l’aide des outils suivants :
 - Scénarios [d’attaque « Faites-le vous-même »](https://security.microsoft.com/tutorials/all)
 - Simulateurs de menaces
 
-Vous pouvez également utiliser le service [de recherche avancée](advanced-hunting-overview.md) pour interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
+Vous pouvez également utiliser la recherche [avancée pour](advanced-hunting-overview.md) interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Scénarios d’attaques do-it-yourself
 

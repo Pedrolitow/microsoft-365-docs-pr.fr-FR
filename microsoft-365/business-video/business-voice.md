@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur Microsoft 365 Business Voice.
-ms.openlocfilehash: edffbbe615b7098377297f96a6015929d5825694
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef3c0d08ac2a419e8d15b825272f6689f6cd3eaf
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209473"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199056"
 ---
 # <a name="overview-of-business-voice"></a>Vue d’ensemble de Business Voice
 
@@ -52,7 +52,7 @@ Business Voice est partout où vous allez, car il fait partie Microsoft Teams. A
 1. Lorsque vous configurerez Business Voice, vous recevrez de nouveaux numéros de téléphone pour votre entreprise et vos employés. Vous devez le faire même si vous prévoyez d’importer vos numéros d’entreprise existants ultérieurement.
 1. Si vous souhaitez des numéros gratuits ou la possibilité d’appeler n’importe quel numéro à l’international, achetez des crédits de communication pour votre entreprise, qui fournit des minutes d’appel au-delà de ce qui est inclus dans Business Voice.
 1. Créez un message d’accueil pour vos clients en téléchargeant un enregistrement ou en tapant un message et nous convertirons le texte en texte par reconnaissance vocale pour vous.
-1. Ensuite, créez un menu de routage des appels à partir de votre numéro d’entreprise principal qui dirige les clients vers la bonne personne ou service par voix ou par les touches de leur téléphone. Vous pouvez planifier un message d’accueil et un menu différents pour les congés ou les heures supplémentaires.
+1. Créez ensuite un menu de routage des appels à partir de votre numéro d’entreprise principal qui dirige les clients vers la bonne personne ou service par voix ou par les clés de leur téléphone. Vous pouvez planifier un message d’accueil et un menu différents pour les congés ou les heures supplémentaires.
 1. Enfin, transférez vos numéros de téléphone existants vers Microsoft Teams.
 1. Lorsque les numéros deviennent disponibles sur Teams, affectez-les à vos employés et à votre numéro d’entreprise principal. Vous êtes maintenant prêt à utiliser votre nouveau téléphone d’entreprise avec l’application Teams sur n’importe quel ordinateur, téléphone ou tablette.
 
@@ -60,4 +60,4 @@ Business Voice est partout où vous allez, car il fait partie Microsoft Teams. A
 
 Pour effectuer un appel téléphonique, ouvrez l’application Teams sur votre ordinateur, tablette ou téléphone, puis choisissez Appels. Vous verrez votre numéro de téléphone affecté et le pavé de numérotation que vous pouvez utiliser pour appeler n’importe quel numéro. Vous pouvez également sélectionner l’un de vos contacts Outlook ou votre téléphone et les appeler directement.
 
-Vous êtes invité à accepter ou à ignorer l’appel, de la même manière que sur n’importe quel téléphone normal. Si nécessaire, faites passer des appels ou sonner plusieurs appareils pour vous assurer que vous ne manquez aucun appel important de vos clients.
+Un appel arrive, vous êtes invité à accepter ou à ignorer l’appel, comme c’est le cas sur n’importe quel téléphone normal. Si nécessaire, faites passer des appels ou sonner plusieurs appareils pour vous assurer que vous ne manquez aucun appel important de vos clients.

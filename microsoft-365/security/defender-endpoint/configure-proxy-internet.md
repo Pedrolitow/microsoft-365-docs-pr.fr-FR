@@ -10,25 +10,25 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d00bfa4b9a595725ed689c33dff096b3a96bd2d5
-ms.sourcegitcommit: d78553deeba23d2f8238f10e64c2e27f235dc37f
+ms.openlocfilehash: 68d69f45820dd014ead07a7a9f2f6bbcb82a7d3a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60124744"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186619"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -60,7 +60,7 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurer le serveur proxy manuellement en utilisant un proxy statique basé sur le registre
 
-Configurez un proxy statique basé sur le Registre pour le capteur defender de détection et de réponse de point de terminaison (PEPT) pour signaler les données de diagnostic et communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
+Configurez un proxy statique basé sur le Registre pour le capteur de détection et de réponse des points de terminaison (PEPT) Defender pour signaler les données de diagnostic et communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
 
 > [!NOTE]
 > Lorsque vous utilisez cette option sur Windows 10, Windows 11, Windows Server 2019 ou Windows Server 2022, il est recommandé d’avoir la version suivante (ou version ultérieure) et le cumul des mises à jour cumulatives :
@@ -77,7 +77,7 @@ Le proxy statique est également configurable par le biais de la stratégie de g
 
 - **Modèles d’administration > Windows composants >** collecte de données et builds d’aperçu > Configurer l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et télémétrie.
 
-  Définissez-le **sur Activé et** sélectionnez Désactiver l’utilisation du proxy **authentifié.**
+  Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié.**
 
   ![Image du paramètre de stratégie de groupe 1.](images/atp-gpo-proxy1.png)
 
@@ -119,7 +119,7 @@ Configurez le proxy statique à l’aide de la stratégie de groupe trouvée ici
 >
 > À des fins de résilience et de nature en temps réel de la protection cloud, Antivirus Microsoft Defender mettre en cache le dernier proxy de travail connu. Assurez-vous que votre solution proxy n’effectue pas d’inspection SSL, car cela va rompre la connexion cloud sécurisée. 
 >
-> Antivirus Microsoft Defender n’utilisera pas le proxy statique pour se connecter à Windows update ou Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilise un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update ou la source de mise à jour interne configurée en fonction de l’ordre de remplacement [configuré.](manage-protection-updates-microsoft-defender-antivirus.md) 
+> Antivirus Microsoft Defender n’utilisera pas le proxy statique pour se connecter à Windows update ou Microsoft Update pour télécharger les mises à jour. Au lieu de cela, il utilisera un proxy à l’échelle du système s’il est configuré pour utiliser Windows Update ou la source de mise à jour interne configurée en fonction de l’ordre de remplacement [configuré.](manage-protection-updates-microsoft-defender-antivirus.md) 
 >
 > Si nécessaire, vous pouvez utiliser des modèles d’administration > Windows Composants > Antivirus Microsoft Defender > Définir la configuration automatique du **proxy (.pac)** pour vous connecter au réseau si vous devez configurer des configurations avancées avec plusieurs **proxys.** Utilisez modèles d’administration > Windows Composants > Antivirus Microsoft Defender > Définir des adresses pour contourner le serveur proxy afin d’empêcher les Antivirus Microsoft Defender d’utiliser un serveur proxy pour ces destinations. 
 >
@@ -169,7 +169,7 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 **** 
 |Liste de feuilles de calcul de domaines|Description|
 |---|---|
-|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 Si l’analyse HTTPS (inspection SSL) est activée pour un proxy ou un pare-feu, excluez les domaines répertoriés dans le tableau ci-dessus de l’analyse HTTPS.
@@ -275,5 +275,5 @@ Toutefois, si les résultats du contrôle de la connectivité indiquent un éche
 
 - [Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)
 - [Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
-- [Appareils Windows intégrés](configure-endpoints.md)
+- [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Résoudre les problèmes d’intégration de Microsoft Defender pour les points de terminaison](troubleshoot-onboarding.md)

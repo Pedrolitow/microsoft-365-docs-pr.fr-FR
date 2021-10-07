@@ -7,7 +7,7 @@ ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -20,19 +20,19 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement des images et des éléments JavaScript non essentiels.
-ms.openlocfilehash: 7be256db8bce115b130322d1dd34131d845ef165
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Découvrez comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement des images et du JavaScript non essentiel.
+ms.openlocfilehash: 6b8eb479ae33b47081e33e45338c02d46f36e055
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207619"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197424"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Différer le chargement des images et des éléments JavaScript dans SharePoint Online
 
 Cet article explique comment réduire le temps de chargement des pages SharePoint Online à l’aide de JavaScript pour retarder le chargement des images et en attendant de charger du JavaScript non essentiel jusqu’au chargement de la page.
   
-Les images peuvent avoir une incidence négative sur les vitesses de chargement des pages sur SharePoint Online. Par défaut, la plupart des navigateurs Internet modernes pré-récupèrent les images lors du chargement d’une page HTML. Cela peut ralentir inutilement le chargement de la page si les images ne sont pas visibles à l’écran jusqu’à ce que l’utilisateur défile vers le bas. Les images peuvent empêcher le navigateur de charger la partie visible de la page. Pour contourner ce problème, vous pouvez utiliser JavaScript pour ignorer d’abord le chargement des images. En outre, le chargement de JavaScript non essentiels peut ralentir les temps de téléchargement sur SharePoint pages. Cette rubrique décrit certaines méthodes que vous pouvez utiliser pour améliorer les temps de chargement de page avec JavaScript dans SharePoint Online.
+Les images peuvent avoir une incidence négative sur les vitesses de chargement des pages sur SharePoint Online. Par défaut, la plupart des navigateurs Internet modernes pré-récupèrent les images lors du chargement d’une page HTML. Cela peut ralentir inutilement le chargement de la page si les images ne sont pas visibles à l’écran jusqu’à ce que l’utilisateur défile vers le bas. Les images peuvent empêcher le navigateur de charger la partie visible de la page. Pour contourner ce problème, vous pouvez utiliser JavaScript pour ignorer d’abord le chargement des images. En outre, le chargement de JavaScript non essentiel peut ralentir les temps de téléchargement sur SharePoint pages. Cette rubrique décrit certaines méthodes que vous pouvez utiliser pour améliorer les temps de chargement de page avec JavaScript dans SharePoint Online.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Améliorer les temps de chargement de page en retardant le chargement d’image dans SharePoint pages en ligne à l’aide de JavaScript
 
@@ -42,7 +42,7 @@ Vous pouvez utiliser JavaScript pour empêcher un navigateur web de pré-récup�
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-À l’aide de cette méthode, le navigateur ne télécharge pas les images immédiatement. Si l’image se trouve déjà dans la fenêtre d’affichage, JavaScript indique au navigateur de récupérer l’URL de l’attribut de données et de l’insérer en tant que valeur pour l’attribut src. L’image se charge uniquement à mesure que l’utilisateur défile et qu’elle s’affiche.
+À l’aide de cette méthode, le navigateur ne télécharge pas immédiatement les images. Si l’image se trouve déjà dans la fenêtre d’affichage, JavaScript indique au navigateur de récupérer l’URL de l’attribut de données et de l’insérer en tant que valeur pour l’attribut src. L’image se charge uniquement à mesure que l’utilisateur défile et qu’elle s’affiche.
   
 Pour que tout cela se produise, vous devez utiliser JavaScript.
   
@@ -99,7 +99,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Enregistrez le fichier texte en tant que fichier JavaScript avec l’extension .js, par exemple delayLoadImages.js.
   
-Une fois que vous avez terminé delayLoadImages.js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, ajoutez un lien de script à l’en-tête de la page maître. Une fois qu’il est dans une page maître, le JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page maître. Sinon, si vous avez l’intention de l’utiliser uniquement sur une page de votre site, utilisez le script éditeur de web part pour incorporer le JavaScript dans la page. Consultez ces rubriques pour plus d’informations :
+Une fois que vous avez terminé delayLoadImages.js, vous pouvez ajouter le contenu du fichier à une page maître dans SharePoint Online. Pour ce faire, ajoutez un lien de script à l’en-tête dans la page maître. Une fois qu’il est dans une page maître, le JavaScript est appliqué à toutes les pages de votre site SharePoint Online qui utilisent cette mise en page maître. Sinon, si vous avez l’intention de l’utiliser uniquement sur une page de votre site, utilisez le script éditeur de web part pour incorporer le JavaScript dans la page. Consultez ces rubriques pour plus d’informations :
   
 - [Comment appliquer une page maître à un site dans SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 

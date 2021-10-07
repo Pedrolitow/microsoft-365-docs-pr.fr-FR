@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 95b4b82b87fc633afe716c9c7b403808bedac65d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 9218ba1c104f2792362f566850c584f0cf5dc795
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203813"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196780"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Résoudre des problèmes d’intégration de l’outil SIEM
 
@@ -57,7 +57,7 @@ Si votre secret client expire ou si vous avez mal placé la copie fournie lorsqu
 
 7. Copiez la valeur et enregistrez-la dans un endroit sûr.
 
-## <a name="error-when-getting-a-refresh-access-token"></a>Erreur lors de l’obtention d’un jeton d’accès actualisé
+## <a name="error-when-getting-a-refresh-access-token"></a>Erreur lors de l’obtention d’un jeton d’accès d’actualisation
 
 Si vous rencontrez une erreur lors de la tentative d’obtenir un jeton d’actualisation lors de l’utilisation de l’API d’intelligence des menaces ou des outils SIEM, vous devez ajouter une URL de réponse pour l’application pertinente dans Azure Active Directory.
 
@@ -78,13 +78,13 @@ Si vous rencontrez une erreur lors de la tentative d’obtenir un jeton d’actu
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>Erreur lors de l’activation de l’application de connecteur SIEM
 
-Si vous rencontrez une erreur lors de la tentative d’activer l’application de connecteur SIEM, vérifiez les paramètres du bloqueur de fenêtres d’accès rapide de votre navigateur. Il peut bloquer l’ouverture de la nouvelle fenêtre lorsque vous activez la fonctionnalité.
+Si vous rencontrez une erreur lors de la tentative d’activer l’application de connecteur SIEM, vérifiez les paramètres du bloqueur de fenêtres int gr es de votre navigateur. Il peut bloquer l’ouverture de la nouvelle fenêtre lorsque vous activez la fonctionnalité.
 
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troubleshootsiem-belowfoldlink)
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-- [Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison](enable-siem-integration.md)
+- [Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
 - [Tirer les détections vers vos outils SIEM](configure-siem.md)
 - [Champs Microsoft Defender pour la détection des points de terminaison](api-portal-mapping.md)

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61368c5a2f6a54f58505760f42f14cb46a1ae832
-ms.sourcegitcommit: d1eb1c26609146ff5a59b2a1b005dd7ac43ae64e
+ms.openlocfilehash: 4a3c08ad2492437ec5b489e8bc8915ef4a402ba9
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60099776"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196308"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -399,4 +399,4 @@ Bien que DKIM soit conçu pour empêcher l’usurpation d’identité, DKIM fonc
 
 Rotation des clés via PowerShell : [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Utiliser DMARC pour valider les messages électroniques](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Utiliser DMARC pour valider les messages électroniques](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)

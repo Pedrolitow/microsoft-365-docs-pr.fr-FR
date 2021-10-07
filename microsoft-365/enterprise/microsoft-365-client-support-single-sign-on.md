@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui la prise en charge de l' sign-on unique pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 560196694e1c2aaf924e02a882e0c8a3454bf667
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0726ce603bdebc56a69fbf0dda308df9e9045e0d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205484"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197340"
 ---
 # <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365 Prise en charge des applications clientes : Sign-On
 
@@ -33,7 +33,7 @@ En savoir plus [sur l' sign-on unique.](/azure/active-directory/manage-apps/what
 
 ## <a name="supported-clients--platforms"></a>Clients pris en charge & plateformes
 
-Les versions les plus récentes des plateformes et des clients suivants prisent en charge l' sign-on unique. Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
+Les versions les plus récentes des plateformes et des clients suivants prisent en charge l' sign-on unique. Pour plus d’informations sur la prise en charge des plateformes dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 

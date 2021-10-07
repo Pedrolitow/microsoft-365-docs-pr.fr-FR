@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 903176b8c163dcd47e1e11c6c5a82c1ff7363540
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4cd7bc06a7a541278d305547bd3f9446b6bedcbc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209552"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196956"
 ---
 # <a name="get-exposure-score"></a>Obtenir un score d'exposition
 
@@ -60,7 +60,7 @@ GET /api/exposureScore
 
 Nom|Type|Description
 ---|---|---
-Autorisation|String|Porteur {token}. **Obligatoire**.
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: The Centre d'administration Microsoft 365 - learn about the features that were added this month.
-ms.openlocfilehash: fa3589c27547dcf965f965031d30b09a3afc2646
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: 397efac0067aa46ffc29e9ac3e5dc61bff4d10e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59772919"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199116"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -48,7 +49,7 @@ Et si vous souhaitez savoir quelles sont les nouveautés des autres services clo
 - [Nouveautés de Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Nouveautés du Centre d’administration SharePoint de gestion](/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](/OfficeUpdates/)
-- [Comment vérifier l’état Windows de publication](/windows/deployment/update/check-release-health)
+- [Comment vérifier l’Windows de publication](/windows/deployment/update/check-release-health)
 
 ## <a name="july-2021"></a>Juillet 2021
 
@@ -135,7 +136,7 @@ Bienvenue dans Microsoft Ignite. Nous espérons que vous avez pu participer à c
 
 ### <a name="message-center"></a>Centre de messages
 
-Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s’applique un message et à filtrer les messages par service et d’autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter les commentaires sur les billets du centre de messages.
+Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s’applique un message et à filtrer les messages par service et d’autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter l’avis sur les publications du centre de messages.
 
 :::image type="content" source="../media/message-center.png" alt-text="Capture d’écran : page d’accueil du centre de messages affichant la boîte de réception et les messages":::
 
@@ -159,7 +160,7 @@ Nous avons développé un ensemble de fonctionnalités pour les administrateurs 
 
 - **Vos locataires :** basculez rapidement entre les locataires que vous gérez.
 - **Tous** les clients : nouvelle page où vous pouvez voir rapidement l’état de tous les services de vos clients, les demandes de service ouvertes, vos produits et facturation, les tâches de configuration recommandées et le nombre d’utilisateurs dans ce client.
-- **Programme d’installation**: la page d’installation multi-locataires vous donne un affichage liste de la page d’installation, mais organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l’adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
+- **Programme d’installation**: la page d’installation multi-client vous donne un affichage liste de la page d’installation, mais elle est organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l’adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
 - **État du** service : l’affichage d’état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés. Sélectionnez simplement un incident pour obtenir plus d’informations sous l’onglet Vue d’ensemble, puis basculez vers l’onglet Locataires affectés pour descendre et prendre en charge ce client.
 - **Les migrations** de boîtes aux lettres entre clients sont un nouveau service, désormais en prévisualisation publique, qui vous permet de déplacer des boîtes aux lettres entre des clients sans avoir à retenter les boîtes aux lettres, puis à les intégrer. 
 - **Partage de domaine entre** locataires : bientôt, vous pouvez rejoindre un aperçu privé pour les fonctionnalités qui vous permettent de partager un domaine entre plusieurs locataires. Par exemple, si Contoso acquiert Wingtip Toys, Contoso peut partager le domaine avec Wingtip Toys afin que les personnes des deux locataires peuvent utiliser « contoso.com » comme adresses de messagerie.
@@ -175,7 +176,7 @@ Les comptes de priorité sont disponibles uniquement pour les organisations qui 
 - Office 365 E3 ou Microsoft 365 E3, ou Office 365 E5 ou Microsoft 365 E5.
 - Au moins 10 000 licences et au moins 50 utilisateurs actifs Exchange Online mois.
 
-![Page d’installation de la fonctionnalité : surveillez vos comptes les plus importants.](../media/MAC-WN-PriorityAccounts.png)
+![Page de configuration de la fonctionnalité : surveillez vos comptes les plus importants.](../media/MAC-WN-PriorityAccounts.png)
 
 Il existe deux façons de commencer :
 
@@ -191,30 +192,30 @@ Nous avons commencé à déployer une nouvelle expérience de recherche pour le 
 - La zone de recherche a été déplacée vers la zone d’en-tête dans laquelle elle indique « Centre d'administration Microsoft 365 » pour que vous recherchez maintenant à partir de n’importe quelle page, et pas seulement de la page d’accueil. Nous avons même un raccourci : **Alt+S**.
 - La recherche est plus intelligente et vous donne de meilleurs résultats, encore plus rapidement. Essayez de taper « 2fa » pour commencer.
 - Les résultats de la recherche sont organisés selon le type d’élément ou d’action que vous pouvez effectuer.
-  - **Utilisateurs**: sélectionnez le nom de l’utilisateur et vous pouvez le modifier directement ici. Si vous sélectionnez le menu à trois points (plus d’actions) à côté de leur nom, vous pouvez réinitialiser leur mot de passe. Vous pouvez effectuer une recherche par nom d’affichage, nom, prénom, nom d’utilisateur ou adresse de messagerie principale et alias de messagerie. Toutefois, pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
+  - **Utilisateurs**: sélectionnez le nom de l’utilisateur et vous pouvez le modifier directement ici. Si vous sélectionnez le menu à trois points (plus d’actions) à côté de leur nom, vous pouvez réinitialiser leur mot de passe. Vous pouvez effectuer une recherche par nom d’affichage, nom, prénom, nom d’utilisateur ou adresse de messagerie principale, et alias de messagerie. Toutefois, pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
   - **Groupes**: modifiez le groupe à partir de n’importe quelle page, ajoutez des membres, attribuez des propriétaires.
   - **Actions**: comme vous pouvez rechercher un utilisateur, puis réinitialiser son mot de passe, vous pouvez également rechercher « réinitialiser le mot de passe » à partir de n’importe quelle page, puis réinitialiser un ou plusieurs mots de passe pour les utilisateurs.
   - **Navigation**: les résultats sous Navigation peuvent rapidement vous aider à obtenir rapidement une page dans le Centre d’administration. Par exemple, la recherche de « rôles » vous permettra d’accès à la page Rôles pour les rôles Azure AD.
   - **Paramètres**: recherchez tous les paramètres liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité. 
-  - **Domaines :** vous trouverez des liens rapides vers vos domaines, puis le lien vous permettra d’utiliser la page Vue d’ensemble et d’état de ce domaine.
-  - **Documentation**: si nous ne pouvons pas trouver de résultat pour vous, nous allons essayer de trouver de la documentation pour vous aider. Il faut un peu plus de temps à la liste organisée d’articles pour trouver une correspondance, donc patientez une seconde pour que la recherche trouve les résultats. 
-  - **Commentaires**: Vous n’avez pas trouvé ce que vous recherchiez ? Envoyez-nous des commentaires à partir de la recherche. Nous allons ajouter des fonctionnalités de recherche pour d’autres pages et d’autres fonctionnalités dans le Centre d’administration.
+  - **Domaines :** vous pouvez trouver des liens rapides vers vos domaines, puis le lien vous permet d’obtenir la page vue d’ensemble et d’état de ce domaine.
+  - **Documentation**: si nous ne pouvons pas trouver de résultat pour vous, nous allons essayer de trouver de la documentation pour vous aider. Il faut un peu plus de temps pour que la liste organisée d’articles trouve une correspondance, donc patientez une seconde pour que la recherche trouve les résultats. 
+  - **Commentaires**: Vous n’avez pas trouvé ce que vous recherchiez ? Envoyez-nous des commentaires à partir de la recherche. Nous allons ajouter des fonctionnalités de recherche pour plus de pages et d’autres fonctionnalités dans le Centre d’administration.
 
 ### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 application mobile admin
 
-[L’application mobile d’administration](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)Microsoft 365, incluse dans votre abonnement, vous permet de gérer les Microsoft 365 à partir de votre appareil mobile afin de pouvoir vous absent de votre bureau pour effectuer des tâches quotidiennes. En fait, l’application comporte plus de 90 fonctionnalités et nous venons d’en ajouter quelques-unes :
+[L’application mobile admin Microsoft 365,](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)incluse dans votre abonnement, vous permet de gérer les Microsoft 365 à partir de votre appareil mobile afin de pouvoir vous absent de votre bureau pour effectuer des tâches quotidiennes. En fait, l’application comporte plus de 90 fonctionnalités et nous venons d’en ajouter quelques-unes :
 
 - Prise en charge des stratégies de gestion des applications mobiles et **d’accès** conditionnel de Microsoft Intune : vous pouvez désormais utiliser votre appareil personnel pour gérer les Microsoft 365 même si votre organisation a désactivé les stratégies de gestion des applications mobiles et d’accès conditionnel d’Intune.
 - **Notifications du centre de messages**: activer les notifications du centre de messages **Paramètres** notifications si vous souhaitez être averti des nouvelles publications du centre  >   de messages. Par le biais de notifications, nous voulons vous assurer que vous restez informé des informations et des événements importants au sein de votre client.
 - **Alertes de facturation**: vous pouvez également activer les notifications de facturation sur **Paramètres** Notifications si vous souhaitez obtenir des notifications de facturation sur votre appareil si un abonnement est sur le point d’expirer.  >  
 - **Mode sombre**: bienvenue sur le côté sombre de l’application mobile. Il s’agissait de l’une de nos fonctionnalités les plus demandées. Go to **Paramètres**  >  **Themes** to turn it on.
-- **Signalez un problème**: vous pouvez maintenant signaler un problème dans l’application ou afficher les problèmes signalés par d’autres administrateurs. Visitez **l’état du** service pour l’consulter.
+- **Signalez un problème**: vous pouvez maintenant signaler un problème dans l’application ou afficher les problèmes signalés par d’autres administrateurs. Consultez **l’état du** service pour l’consulter.
 
 ![Page État d’Microsoft 365'application d’administration avec des notifications pour le centre de messages, l’état du service et les alertes de facturation.](../media/MAC-WN-AdminMobileApp.png)
 
 ### <a name="usage-recommendations-for-small-and-medium-businesses"></a>Recommandations d’utilisation pour les petites et moyennes entreprises
 
-Les petites et moyennes entreprises peuvent obtenir une recommandation sur la **page** d’accueil si certaines personnes de l’organisation n’utilisent pas activement des applications Teams, OneDrive ou Office. Lorsque vous affichez la recommandation, vous pouvez rapidement envoyer un e-mail de formation Microsoft aux utilisateurs inactifs pour les aider à démarrer avec l’application et vous assurer que vous obtenez la valeur complète de vos abonnements.
+Les petites et moyennes entreprises peuvent obtenir une recommandation sur la **page** d’accueil si certaines des personnes de l’organisation n’utilisent pas activement des applications Teams, OneDrive ou Office web. Lorsque vous affichez la recommandation, vous pouvez rapidement envoyer un e-mail de formation Microsoft aux utilisateurs inactifs pour les aider à démarrer avec l’application et vous assurer que vous obtenez la valeur complète de vos abonnements.
 
 ### <a name="remote-work-collection"></a>Collection de travail à distance
 
@@ -237,9 +238,9 @@ Nous allons également déployer l’expérience de support nouvelle et amélior
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Gérer les modifications avec le Planificateur Microsoft
 
-En mai, nous avons annoncé que vous serez bientôt en mesure de synchroniser les publications du Centre de messages avec le Planificateur Microsoft et qu’elle est désormais disponible pour tout le monde.  Vous pouvez désormais créer des tâches à partir de messages, les affecter et les suivre jusqu’à leur achèvement. La première fois, vous sélectionnez **la synchronisation du** planificateur dont vous aurez besoin pour vous connecter au plan approprié.
+En mai, nous avons annoncé que vous serez bientôt en mesure de synchroniser les publications du Centre de messages avec le Planificateur Microsoft et qu’elle sera désormais disponible pour tout le monde.  Vous pouvez désormais créer des tâches à partir de messages, les affecter et les suivre jusqu’à leur achèvement. La première fois, vous sélectionnez **la synchronisation du** planificateur dont vous aurez besoin pour vous connecter au plan approprié.
 
-![Page centre de messages avec « synchronisation du planificateur » mise en évidence dans la barre de commandes en face du bouton préférences.](../media/MAC-WN-MCPlannerSync.png)
+![Page centre de messages avec « synchronisation du planificateur » mise en évidence dans la barre de commandes à côté du bouton préférences.](../media/MAC-WN-MCPlannerSync.png)
 
 Pour en savoir plus à ce sujet, consultez cet article et cette vidéo pour voir comment cela fonctionne : Suivre les billets de votre centre [de messages dans le Planificateur](/Office365/Planner/track-message-center-tasks-planner)
 
@@ -255,7 +256,7 @@ Pour en savoir plus à ce sujet, consultez cet article et cette vidéo pour voir
 
 ### <a name="getting-ready-for-ignite-2020"></a>Préparation pour Ignite 2020
 
-Dans la mesure où nous allons passer à la période Ignite chez Microsoft, nous ne publions pas autant de fonctionnalités que nous avons beaucoup à discuter au cours de nos sessions.
+Dans la mesure où nous allons passer à la période Ignite chez Microsoft, nous ne publions pas autant de fonctionnalités que nous avons beaucoup de choses à parler au cours de nos sessions.
 
 La prochaine mise à jour de cet article aura lieu le jour d’ouverture de notre premier ignite en ligne uniquement. Et cette année, il est gratuit ! Check it out, get signed up: [Microsoft Ignite 2020](https://www.microsoft.com/ignite).
 
@@ -265,7 +266,7 @@ La gestion des abonnements a fait beaucoup de travail pour accélérer le charge
 
 - **Nouvelle conception du** tableau : le tableau a été repensé afin de pouvoir grouper des abonnements similaires. Go to **Billing**  >  **Your products**.
 - **Détails du produit**: obtenez plus de détails que jamais sur vos abonnements en sélectionnant le produit dans la liste.
-- **Faites tout à partir d’ici**: et vous n’avez pas besoin de vous déplacer sur plusieurs pages pour gérer un produit. Par exemple, si vous avez besoin d’annuler un abonnement, le panneau s’ouvre pour y faire l’action.
+- **Faites tout à partir d’ici**: et vous n’avez pas besoin de vous déplacer sur plusieurs pages pour gérer un produit. Par exemple, si vous devez annuler un abonnement, le panneau s’ouvre pour y faire l’action.
 
 ![Page Produits avec le panneau Annuler l’abonnement ouvert.](../media/MAC-WN-SubscrDetails.png)
 
@@ -277,7 +278,7 @@ La gestion de domaine peut être compliquée et nous avons publié une nouvelle 
 
 ### <a name="docs-training-and-videos-july-2020"></a>Documentation, formation et vidéos (juillet 2020)
 
-Nouveautés de la série de vidéos Microsoft 365 : ce mois-ci, nous abordons la nouvelle expérience Yammer pour le web et l’appareil mobile, l’intégration de [l’application](https://youtu.be/m1Nu8WJgCDY) communautés Yammer pour Microsoft Teams, les nouveaux packages de stratégie pour prendre en charge les employés et responsables de première ligne, et bien plus encore.
+Nouveautés de la série de vidéos [Microsoft 365 :](https://youtu.be/m1Nu8WJgCDY) ce mois-ci, nous abordons la nouvelle expérience Yammer pour le web et l’appareil mobile, l’intégration de l’application communautés Yammer pour Microsoft Teams, les nouveaux packages de stratégie pour prendre en charge les employés et responsables de première ligne, et bien plus encore.
 
 ## <a name="june-2020"></a>Juin 2020
 
@@ -313,14 +314,14 @@ Pour en savoir plus sur ces rôles, voir [à propos des rôles d’administrateu
 
 ### <a name="export-groups-list"></a>Exporter la liste des groupes
 
-De nombreux administrateurs nous ont dit qu’ils ont besoin de partager des informations sur les groupes et leur utilisation aux personnes qui n’ont pas accès aux centres d’administration. Vous pouvez maintenant exporter la liste groupes vers un fichier CSV à des fins d’audit, ce qui signifie que vous pouvez faire sortir cet ancien script PowerShell. Pour l’essayer, sélectionnez **Groupes** de groupes, puis  >  sélectionnez Exporter **des groupes** dans la barre de commandes.
+De nombreux administrateurs nous ont dit qu’ils ont besoin de partager des informations sur les groupes et leur utilisation aux personnes qui n’ont pas accès aux centres d’administration. Vous pouvez maintenant exporter la liste groupes vers un fichier CSV à des fins d’audit, ce qui signifie que vous pouvez faire sortir cet ancien script PowerShell. Pour l’essayer, sélectionnez **Groupes** de groupes, puis sélectionnez  >  Exporter **des groupes** dans la barre de commandes.
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Centre de solutions et d'architecture Microsoft 365
 
 Ce mois-ci, nous avons publié un nouveau site sur docs.microsoft.com appelé centre d’architecture et de [solution Microsoft 365,](../solutions/index.yml)qui regroupe les conseils techniques dont vous avez besoin pour comprendre, planifier et implémenter des solutions Microsoft 365 intégrées pour une collaboration sécurisée et conforme. Dans ce centre, vous trouverez :
 
 - Recommandations sur les solutions de base
-- Solutions de charge de travail et conseils sur les scénarios
+- Solutions de charge de travail et aide sur les scénarios
 - Illustrations de solution et d’architecture (affiches!!!)
 - Conseils spécifiques au secteur
 - Enterprise principaux de conception d’architecture
@@ -342,13 +343,13 @@ Nous l’avons fait ! Nous avons pris la deuxième étape vers une expérience d
 
 ### <a name="sync-message-center-posts-to-planner"></a>Synchroniser les publications du Centre de messages avec le Planificateur
 
-À partir du mois de mai, les administrateurs qui sont dans la version ciblée commenceront à voir le bouton « Synchronisation du planificateur » dans le centre de messages. Vous pouvez désormais suivre les messages qui ont besoin d’une action, sélectionner le type de messages que vous souhaitez suivre, affecter des messages à suivre en tant que tâches et marquer les messages pour une attention ultérieure.
+À partir du mois de mai, les administrateurs qui sont dans la version ciblée commenceront à voir le bouton « Synchronisation du planificateur » dans le centre de messages. Vous pouvez désormais effectuer le suivi des messages qui ont besoin d’une action, sélectionner le type de messages que vous souhaitez suivre, affecter des messages à suivre en tant que tâches et baliser les messages pour une attention ultérieure.
 
 [Rejoignez la publication ciblée](manage/release-options-in-office-365.md) pour commencer !
 
-### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>« Vous avez besoin d’aide ? » lancé dans le Centre d Teams’administration & centre de sécurité et conformité
+### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>« Vous avez besoin d’aide ? » lancé dans le centre d Teams d’administration & de sécurité et conformité
 
-Le Teams d’administration, le Centre de sécurité et le Centre de conformité utilisent désormais le même « Besoin d’aide ? » que le <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Centre d'administration Microsoft 365</a> utilise pour trouver de l’aide et contacter le support technique. Nous avons reçu de nombreux commentaires d’administrateurs qui vous ont fait part de votre souhait d’obtenir le même niveau d’aide et de support, et nous sommes heureux de vous en faire part. Essayez et faites-nous part de vos commentaires !
+Le Teams d’administration, le Centre de sécurité et le Centre de conformité utilisent désormais le même « Besoin d’aide ? » que <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">l’Centre d'administration Microsoft 365</a> utilise pour trouver de l’aide et contacter le support technique. Nous avons reçu de nombreux commentaires d’administrateurs qui vous ont fait part de votre souhait d’obtenir le même niveau d’aide et de support, et nous sommes heureux de vous en faire part. Essayez et faites-nous part de vos commentaires !
 
 #### <a name="need-chat"></a>Vous avez besoin d’une conversation ?
 
@@ -438,7 +439,7 @@ Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s’agit d
 |Nom actuel |Nouveau nom  |
 |---------|---------|
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
 |Applications Microsoft 365 pour les PME     |    Applications Microsoft 365 pour les entreprises       |
 |Office 365 ProPlus    |   Microsoft 365 applications pour entreprise      |
@@ -451,7 +452,7 @@ Nouveautés de la série [web Microsoft 365](https://go.microsoft.com/fwlink/p/?
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>Correctif des commentaires mis en avant : s’il s’est multi-organisation
 
-Nous avons reçu de nombreux commentaires de partenaires et d’administrateurs sur les défis liés à la gestion de plusieurs organisation cloud Microsoft. L’une de nos premières fonctionnalités de gestion multi-organisation est le commutateur **Organization,** qui vous permet de basculer entre les organisations que vous gérez en 2 clics seulement.
+Nous avons reçu de nombreux commentaires de partenaires et d’administrateurs sur les défis liés à la gestion de plusieurs organisation cloud Microsoft. L’une de nos premières fonctionnalités de gestion multi-organisation est le s **switcher Organization,** qui vous permet de basculer entre les organisations que vous gérez en seulement 2 clics.
 > [!TIP]
 > Vous n’avez rien à faire pour faire apparaître le commutateur d’organisation tant que vous êtes le partenaire de registre d’au moins une organisation.
 
@@ -467,11 +468,11 @@ C’est littéralement cela!!!
 
 Quelques modifications dans la zone des groupes ce mois-ci :
 
-- **Trier par nom de groupe**: vous pouvez trier la liste des groupes par ordre alphabétique, en sélectionnant la colonne Nom **du** groupe.
+- **Trier par nom de groupe**: vous pouvez trier les groupes par ordre alphabétique, en sélectionnant la colonne Nom **du** groupe.
 - **Restaurer les groupes Microsoft 365** supprimés : vous n’avez plus besoin d’aller au Centre d’administration Exchange pour restaurer les groupes Microsoft 365 supprimés. Go to **Centre d'administration Microsoft 365** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. Il rétablit le groupe  dans la liste Groupes et restaure le courrier électronique, les conversations, le bloc-notes, les fichiers et le calendrier du groupe.
 
 ### <a name="videos-training-and-docs-february"></a>Vidéos, formation et documents (février)
 
-- Nouveautés de la série de vidéos **Microsoft 365 :** ce mois-ci, nous nous concentrons sur les fonctionnalités de recherche personnalisées pour SharePoint Online, la fonctionnalité de gestion « Nouveautés » de Office qui vous permet d’afficher ou de masquer des fonctionnalités spécifiques aux utilisateurs finaux via le volet d’aide dans l’application, les dernières mises à jour de sécurité et de conformité dans Yammer, et bien plus encore. Voici le dernier épisode : [Nouveautés](https://go.microsoft.com/fwlink/p/?linkid=2118096) de Microsoft 365
+- Nouveautés de la série de vidéos **Microsoft 365 :** ce mois-ci, nous nous concentrons sur les fonctionnalités de recherche personnalisées pour SharePoint Online, la fonctionnalité de gestion « Nouveautés » de Office qui vous permet d’afficher ou de masquer des fonctionnalités spécifiques aux utilisateurs finaux via le volet d’aide dans l’application, les dernières mises à jour de sécurité et de conformité dans Yammer, et bien plus encore. Voici le dernier épisode : [Nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
-- **Déplacement de documents**: nous avons combiné les articles web Office 365'administrateur avec le contenu Microsoft 365 et vous avez peut-être remarqué la nouvelle URL. Par exemple, cet article était hébergé sur : **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, mais l’URL est maintenant **: docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Si vous avez des pages avec signet, vous devez mettre à jour vos liens . toutefois, les liens de contenu sont redirigés vers le nouveau repo de contenu.
+- **Déplacement de documents**: nous avons combiné les articles web Office 365'administrateur avec le contenu Microsoft 365 et vous avez peut-être remarqué la nouvelle URL. Par exemple, cet article était hébergé sur **: docs.microsoft.com/Office365/Admin/whats-new-in-preview**, mais l’URL est maintenant **: docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Si vous avez des pages avec signet, vous devez mettre à jour vos liens . toutefois, les liens de contenu sont redirigés vers le nouveau repo de contenu.

@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -16,18 +16,18 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment empêcher l’ajout d’invités à un groupe spécifique
-ms.openlocfilehash: 83fb123a3512e767270cf69f6ff56813e27903d4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 68f404cf86d6e8fe797b22fdf2a64f5d86162b56
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203681"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196224"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Empêcher l’ajout d’invités à un groupe Microsoft 365 ou une équipe Microsoft Teams spécifique
 
 Si vous souhaitez autoriser l’accès invité à la plupart des groupes et équipes, mais que vous souhaitez en empêcher l’accès, vous pouvez bloquer l’accès invité pour des groupes et des équipes individuels. (Le blocage de l’accès invité à une équipe s’fait en bloquant l’accès invité au groupe associé.) Cela empêche l’ajout de nouveaux invités, mais ne supprime pas les invités qui sont déjà dans le groupe ou l’équipe.
 
-Si vous utilisez des étiquettes de niveau de sensibilité dans votre organisation, nous vous recommandons de les utiliser pour contrôler l’accès invité par groupe. Pour plus d’informations sur la façon de faire, utilisez des étiquettes de niveau de sensibilité pour protéger le contenu dans [Microsoft Teams, Microsoft 365 groupes](../compliance/sensitivity-labels-teams-groups-sites.md)et SharePoint sites. Il s’agit de l’approche recommandée.
+Si vous utilisez des étiquettes de niveau de sensibilité dans votre organisation, nous vous recommandons de les utiliser pour contrôler l’accès invité par groupe. Pour plus d’informations sur la façon de faire, utilisez des étiquettes de sensibilité pour protéger le contenu dans [Microsoft Teams, Microsoft 365 groupes](../compliance/sensitivity-labels-teams-groups-sites.md)et SharePoint sites. Il s’agit de l’approche recommandée.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Modifier les paramètres de groupe à l’aide de Microsoft PowerShell
 
@@ -85,7 +85,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Autoriser ou bloquer l’accès invité en fonction de son domaine
 
-Vous pouvez autoriser ou bloquer les invités qui utilisent un domaine spécifique. Par exemple, si votre entreprise (Contoso) a un partenariat avec une autre entreprise (Fabrikam), vous pouvez ajouter Fabrikam à votre liste d’invités pour permettre à vos utilisateurs d’ajouter ces invités à leurs groupes.
+Vous pouvez autoriser ou bloquer les invités qui utilisent un domaine spécifique. Par exemple, si votre entreprise (Contoso) a un partenariat avec une autre entreprise (Fabrikam), vous pouvez ajouter Fabrikam à votre liste d’invités autoriser afin que vos utilisateurs peuvent ajouter ces invités à leurs groupes.
 
 Pour plus d’informations, voir Autoriser ou bloquer les invitations à [des utilisateurs B2B d’organisations spécifiques.](/azure/active-directory/b2b/allow-deny-list)
 
@@ -99,7 +99,7 @@ Recherchez l’ObjectID de l’invité en exécutant :
 Get-AzureADUser -Filter "userType eq 'Guest'"
 ```
 
-Exécutez ensuite ce qui suit en utilisant les valeurs appropriées pour ObjectID, GivenName, Surname, DisplayName et TelephoneNumber.
+Exécutez ensuite ce qui suit à l’aide des valeurs appropriées pour ObjectID, GivenName, Surname, DisplayName et TelephoneNumber.
 
 ```PowerShell
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'

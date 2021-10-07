@@ -8,19 +8,19 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50558ef4ff9c4f05f0e7833ef8a1697330c35362
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1ff58fb8ebb64c36ab157484fd0dbace9e9c0dfa
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177363"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196476"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -37,7 +37,7 @@ Le reste de cet article décrit les stratégies de sécurité prédéfinie et la
 
 ## <a name="what-preset-security-policies-are-made-of"></a>En quoi les stratégies de sécurité prédéfines sont-elles
 
-Les stratégies de sécurité prédéfinës sont composées des éléments suivants :
+Les stratégies de sécurité prédéfines sont composées des éléments suivants :
 
 - Profils
 - Stratégies
@@ -72,7 +72,7 @@ Les stratégies de sécurité prédéfines utilisent les stratégies corresponda
   - [Stratégies anti-programme malveillant](configure-anti-malware-policies.md) nommées Stratégie de sécurité **prédéfinë standard** et **Stratégie de sécurité prédéfinë stricte.**
   - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings) nommées Stratégie de sécurité prédéfini **standard** et Stratégie de sécurité prédéfini stricte **(paramètres** d’usurpation).
 
-- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
+- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations ayant des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
 
   - Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365 nommés **Stratégie** de sécurité prédéfinë standard et Stratégie de sécurité prédéfinë **stricte,** qui incluent :
 
@@ -90,7 +90,7 @@ Notez que vous pouvez appliquer des protections EOP à différents utilisateurs 
 
 Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les **valeurs des** paramètres de stratégie Standard et **Strict** sont décrites dans les [paramètres recommandés](recommended-settings-for-eop-and-office365.md)pour EOP et Microsoft Defender pour Office 365 sécurité.
 
-### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et autres stratégies
+### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et les autres stratégies
 
 Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suivant est appliqué de la priorité la plus élevée à la priorité la plus faible :
 
@@ -117,7 +117,7 @@ Par exemple, si un paramètre de sécurité existe dans la **protection standard
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
-  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d'administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Utiliser le portail Microsoft 365 Defender pour affecter des stratégies de sécurité prédéfines aux utilisateurs
 
@@ -125,7 +125,7 @@ Par exemple, si un paramètre de sécurité existe dans la **protection standard
 
 2. Sous **Protection standard ou** Protection **stricte,** cliquez sur **Modifier.**
 
-3. **L’Assistant Appliquer une protection standard** ou Appliquer une **protection** stricte démarre. Sur la page **des protections EOP,** identifiez les destinataires internes à qui s’appliquent les [protections EOP](#policies-in-preset-security-policies) (conditions de destinataire) :
+3. **L’Assistant Appliquer une protection standard** ou Appliquer une **protection** stricte démarre. Sur la page **des protections EOP,** identifiez les destinataires internes à qui les [protections EOP](#policies-in-preset-security-policies) s’appliquent (conditions de destinataire) :
    - **Utilisateurs**
    - **Groupes**
    - **Domaines**
@@ -150,12 +150,12 @@ Par exemple, si un paramètre de sécurité existe dans la **protection standard
 
 Les étapes de modification de l’attribution de la stratégie de **sécurité Protection standard** ou **Protection** stricte sont les mêmes que lorsque vous avez initialement affecté les stratégies de sécurité prédéfines [aux utilisateurs.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)
 
-Pour désactiver les stratégies de sécurité de **protection standard** ou stricte tout en conservant  les conditions et les exceptions existantes, faites glisser le basculement vers  ![ Désactivé. ](../../media/scc-toggle-off.png) Pour activer les stratégies, faites  glisser le basculement sur ![ ](../../media/scc-toggle-on.png) Activé.
+Pour désactiver les stratégies de sécurité de **protection standard** ou stricte tout en conservant  les conditions et les exceptions existantes, faites glisser le basculement vers  ![ Désactivé. ](../../media/scc-toggle-off.png) Pour activer les stratégies, faites glisser le **basculement** sur ![ ](../../media/scc-toggle-on.png) Activé.
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
-Pour vérifier que vous avez bien  affecté la stratégie de sécurité **Protection standard** ou Protection stricte à un utilisateur, utilisez un paramètre de protection dont la valeur par défaut est différente de celle de la **protection standard,** ce qui est différent du paramètre **Strict Protection.**
+Pour vérifier que vous avez bien  affecté la stratégie de sécurité **Protection standard** ou Protection stricte à un utilisateur, utilisez un paramètre de protection dont la valeur par défaut est différente de celle de la **protection standard,** ce qui est différent du paramètre Strict **Protection.**
 
 Par exemple, pour les e-mails détectés comme courrier indésirable (et non comme courrier indésirable à niveau de confiance élevé), vérifiez que le message est remis dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard** et mis en quarantaine pour les utilisateurs à **protection** stricte.
 
-Ou, pour le courrier en [nombre,](bulk-complaint-level-values.md)vérifiez que la valeur BCL 6 ou supérieure fournit le message dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard,** et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de la **protection** stricte.
+Ou, pour le courrier en [nombre,](bulk-complaint-level-values.md)vérifiez que la valeur BCL 6 ou supérieure place le message dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard,** et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de la **protection** stricte.

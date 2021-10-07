@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 028c099dc046d6402d187e5bde0a1536e44657a4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 7eaf3c7f1b712bc6b3f0c1d17869ccf434a74d89
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207291"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199488"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Détails et résultats d’une enquête automatisée
 
@@ -56,7 +56,7 @@ Vous pouvez ouvrir une vue Détails de l’examen avant impression comme suit :
 
 ### <a name="select-an-item-in-the-action-center"></a>Sélectionnez un élément dans le centre de notifications
 
-Le centre de [mesures](m365d-action-center.md) amélioré regroupe les actions de correction sur vos appareils, la messagerie & le contenu [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) de collaboration et les identités. [](m365d-remediation-actions.md) Les actions répertoriées incluent des actions de correction qui ont été prises automatiquement ou manuellement. Dans le centre de actions, vous pouvez afficher les actions en attente d’approbation et les actions qui ont déjà été approuvées ou terminées. Vous pouvez également accéder à d’autres détails, tels qu’une page d’enquête.
+Le centre de [mesures](m365d-action-center.md) amélioré regroupe les actions de correction sur vos appareils, la messagerie & le contenu [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) de collaboration et les identités. [](m365d-remediation-actions.md) Les actions répertoriées incluent les actions de correction qui ont été prises automatiquement ou manuellement. Dans le centre de actions, vous pouvez afficher les actions en attente d’approbation et les actions qui ont déjà été approuvées ou terminées. Vous pouvez également accéder à d’autres détails, tels qu’une page d’enquête.
 
 > [!TIP]
 > Vous devez avoir [certaines autorisations pour](m365d-action-center.md#required-permissions-for-action-center-tasks) approuver, rejeter ou annuler des actions.

@@ -8,14 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez comment modifier le nom du centre de rubriques dans Sujets Microsoft Viva.
-ms.openlocfilehash: 262ae46fadf8fc390a4ccf591aa97175ff63a68f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: b91b86a06a4e482c97df82e9680bc7b2ca6c8ad4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207547"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197172"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Modifier le nom du centre de rubriques dans Sujets Microsoft Viva
 

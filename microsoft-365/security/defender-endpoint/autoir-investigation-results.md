@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,23 +21,23 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 49c5dcacc12e6811fa692aade9cf6d462fc963fe
-ms.sourcegitcommit: ea4bc3b005d86b029700e56015a47b8cc6dca2a1
+ms.openlocfilehash: e089a38d0a9abc6a6713b82a77d3678d781ed456
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58509880"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197076"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
 **S’applique à :**
 - Microsoft Defender pour point de terminaison
 
-Avec Microsoft Defender pour le [](automated-investigations.md) point de terminaison, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente.
+Avec Microsoft Defender pour point [](automated-investigations.md) de terminaison, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente.
 
 ## <a name="new-unified-investigation-page"></a>(NOUVEAU!) Page Examen unifié
 
-La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les enquêtes automatiques dans Microsoft Defender pour [Endpoint](microsoft-defender-endpoint.md) et [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp).
+La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les examens automatiques dans Microsoft Defender pour [Endpoint](microsoft-defender-endpoint.md) et [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp).
 
 > [!TIP]
 > Pour en savoir plus sur ce qui change, voir [(NOUVEAU!) Page d’examen unifié](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -51,7 +51,7 @@ Vous pouvez ouvrir une vue Détails de l’examen avant impression comme suit :
 
 ### <a name="select-an-item-in-the-action-center"></a>Sélectionnez un élément dans le centre de notifications
 
-Le centre de [mesures amélioré](auto-investigation-action-center.md) regroupe des [actions](manage-auto-investigation.md#remediation-actions) de correction sur vos appareils, des & de collaboration et des identités. Les actions répertoriées incluent des actions de correction qui ont été prises automatiquement ou manuellement. Dans le centre de actions, vous pouvez afficher les actions en attente d’approbation et les actions qui ont déjà été approuvées ou terminées. Vous pouvez également accéder à d’autres détails, tels qu’une page d’enquête.
+Le centre de [mesures amélioré](auto-investigation-action-center.md) regroupe des [actions](manage-auto-investigation.md#remediation-actions) de correction sur vos appareils, des & de collaboration et des identités. Les actions répertoriées incluent les actions de correction qui ont été prises automatiquement ou manuellement. Dans le centre de actions, vous pouvez afficher les actions en attente d’approbation et les actions qui ont déjà été approuvées ou terminées. Vous pouvez également accéder à d’autres détails, tels qu’une page d’enquête.
 
 1. Accédez à <https://security.microsoft.com> et connectez-vous.
 2. Dans le volet de navigation, choisissez **Centre de notifications**.
@@ -84,7 +84,7 @@ Dans la vue Détails de l’examen, vous pouvez consulter des informations sur l
 |Tab|Description|
 |---|---|
 |**Graphique de l'examen**|Fournit une représentation visuelle de l’examen. Décrit les entités et répertorie de menaces détectées, ainsi que les alertes et l’attente d’une approbation. <p> Vous pouvez sélectionner un élément sur le graphique pour afficher plus de détails. Par exemple, la sélection de l’icône **Preuve** vous permet d’utiliser l’onglet Preuves, où vous pouvez voir les entités détectées et leurs verdicts. |
-|**Alertes**|Répertorie les alertes associées à l’examen. Les alertes peuvent être dues à des fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans des applications Office, des Sécurité des applications cloud et d’autres fonctionnalités Microsoft 365 Defender de sécurité.|
+|**Alertes**|Répertorie les alertes associées à l’examen. Les alertes peuvent provenir des fonctionnalités de protection contre les menaces sur l’appareil d’un utilisateur, dans les applications Office, Cloud App Security et d’autres fonctionnalités Microsoft 365 Defender.|
 |**Appareils**|Répertorie les appareils inclus dans l’examen, ainsi que leur niveau de correction. (Les niveaux de correction correspondent au niveau [d’automatisation des groupes d’appareils.)](automation-levels.md)|
 |**Boîtes aux lettres**|Répertorie les boîtes aux lettres qui sont touchées par les menaces détectées.|
 |**Utilisateurs**|Répertorie les comptes d’utilisateurs qui sont touchés par les menaces détectées.|

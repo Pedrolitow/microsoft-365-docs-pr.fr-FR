@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le Centre de conformité Microsoft 365 pour activer ou désactiver la possibilité pour les administrateurs d’effectuer des recherches dans le journal d’audit.
-ms.openlocfilehash: 2c9331534035d0f0cf23a2dbec09f338a6f6a32b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1f5b9f6c63d98718af2ddb54aab73c4d7e423d2d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59205787"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198648"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activer ou désactiver la fonctionnalité d’audit
 
@@ -43,7 +43,7 @@ Lorsque l’audit dans le Centre de conformité Microsoft 365 est allumé, les 
     > [!NOTE]
     > Des autorisations doivent être attribuées aux utilisateurs Exchange Online pour activer ou désactiver l’audit. Si vous attribuez aux utilisateurs le rôle Journaux d’audit sur la page **Autorisations** de la Centre de conformité Microsoft 365, ils ne pourront pas activer ou désactiver l’audit. Cela est dû au fait que l’cmdlet sous-jacente est Exchange Online cmdlet PowerShell.
 
-- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API activité Microsoft 365 gestion, voir Prise en [Microsoft 365 API de gestion des données.](/office/office-365-management-api/get-started-with-office-365-management-apis)
+- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, voir [Rechercher dans le journal d’audit.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API activité Microsoft 365 gestion des données, voir Prise en [Microsoft 365 API de gestion des données.](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 ## <a name="verify-the-auditing-status-for-your-organization"></a>Vérifier l’état d’audit de votre organisation
 

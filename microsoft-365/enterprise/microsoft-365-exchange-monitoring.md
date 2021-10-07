@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,12 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Si vous souhaitez en savoir plus sur les incidents d’e-mail ou les conseils dans Microsoft 365, utilisez la surveillance d’Exchange Online.
-ms.openlocfilehash: 2c97e161c46998f9a78e14b1efc2eb0e701e5b01
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: e6b6749b88644b65768a04696a6e6363661ceec8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988246"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197328"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Déployer Exchange Online pour Microsoft 365 Éducation
 

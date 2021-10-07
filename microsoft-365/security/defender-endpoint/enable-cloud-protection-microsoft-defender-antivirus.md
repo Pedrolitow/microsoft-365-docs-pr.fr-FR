@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 36e773a2d0ff865703bd796492df81d2f1647372
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: 68a98b3ddcc12d185d8b06827ed68044ab062257
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59491528"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196944"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>Activer la protection cloud dans Antivirus Microsoft Defender
 
@@ -45,7 +45,7 @@ Vous pouvez également activer ou désactiver la protection cloud sur des points
 Pour plus d’informations sur les exigences de connectivité réseau spécifiques pour vous assurer que vos points de terminaison peuvent se connecter au service de protection cloud, voir Configurer et valider les [connexions réseau.](configure-network-connections-microsoft-defender-antivirus.md)
 
 > [!NOTE]
-> Dans Windows 10, il n’existe aucune  différence  entre les options de rapports de base et avancées décrites dans cette rubrique. Il s’agit d’une distinction héritée et le choix de l’un ou l’autre des paramètres entraîne le même niveau de protection cloud. Il n’existe aucune différence dans le type ou la quantité d’informations partagées. Pour plus d’informations sur ce que nous collectons, voir la déclaration [de confidentialité de Microsoft.](https://go.microsoft.com/fwlink/?linkid=521839)
+> Dans Windows 10, il n’existe aucune  différence  entre les options de rapports de base et avancées décrites dans cette rubrique. Il s’agit d’une distinction héritée et le choix de l’un ou l’autre des paramètres entraîne le même niveau de protection cloud. Il n’existe aucune différence dans le type ou la quantité d’informations partagées. Pour plus d’informations sur ce que nous collectons, consultez la déclaration [de confidentialité de Microsoft.](https://go.microsoft.com/fwlink/?linkid=521839)
 
 ## <a name="use-intune-to-turn-on-cloud-protection"></a>Utiliser Intune pour activer la protection cloud
 
@@ -61,7 +61,7 @@ Pour plus d’informations sur les exigences de connectivité réseau spécifiqu
 
 6. Dans la demande **d’utilisateurs avant la** soumission d’exemples, **sélectionnez Envoyer toutes les données automatiquement.**
 
-Pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, voir Quelles sont Microsoft Intune [profils d’appareil ?](/intune/device-profiles)
+Pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, voir Quelles sont les [Microsoft Intune’appareil ?](/intune/device-profiles)
 
 ## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>Utiliser Microsoft Endpoint Manager pour activer la protection cloud
 
@@ -71,7 +71,7 @@ Pour plus d’informations sur les profils d’appareil Intune, notamment sur la
 
 3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
-4. Sélectionnez **les propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
+4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
 5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
    - **Élevé**: applique un niveau élevé de détection.
@@ -101,7 +101,7 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Configuration
 
    >[!NOTE]
    > **L’option Envoyer des échantillons sûrs** (1) signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles seront toujours invités et nécessitent une confirmation supplémentaire.
-   > Définir l’option **sur Always Prompt** (0) réduit l’état de protection de l’appareil. Le fait de la définir sur [](configure-block-at-first-sight-microsoft-defender-antivirus.md) **Ne** jamais envoyer (2) signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de terminaison ne fonctionne pas.
+   > La définition de **l’option sur Always Prompt** (0) réduit l’état de protection de l’appareil. Le fait de la définir sur [](configure-block-at-first-sight-microsoft-defender-antivirus.md) **Ne** jamais envoyer (2) signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de terminaison ne fonctionne pas.
 
 7. Sélectionnez **OK**.
 
@@ -131,10 +131,10 @@ SubmitSamplesConsent
 
 Pour plus d’informations sur les paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’Sécurité Windows client
+## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’application Sécurité Windows cloud
 
 > [!NOTE]
-> Si le paramètre Configurer le paramètre local de remplacement pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé,** le paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
+> Si le paramètre Configurer le remplacement de paramètre local pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé,** le paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
 
 1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
@@ -142,7 +142,7 @@ Pour plus d’informations sur les paramètres autorisés, [voir Windows Defende
 
     :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Capture d’écran des paramètres de protection contre & virus":::
 
-3. Confirmez que **la protection basée sur le cloud** et **l’envoi automatique** d’échantillons sont **activés.**
+3. Confirmez que **la protection basée sur le cloud et** **l’envoi** automatique d’échantillons sont **activés.**
 
    > [!NOTE]
    > Si l’envoi automatique d’échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.

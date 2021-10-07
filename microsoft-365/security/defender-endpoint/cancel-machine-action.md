@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 22b0a82d8101c0a2a9e21c05413b64cd7dca4e9a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d21ee0365d27c990e1e96422a67e201443f73eba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197004"
 ---
 # <a name="cancel-machine-action-api"></a>API Annuler l’action de l’ordinateur
 
@@ -45,7 +45,7 @@ ms.locfileid: "59177724"
 
 ## <a name="api-description"></a>Description de l’API
 
-Annuler une action d’ordinateur déjà lancée qui n’est pas encore dans l’état final (terminé, annulé, échoué).
+Annuler une action de l’ordinateur déjà lancée qui n’est pas encore dans l’état final (terminé, annulé, échoué).
 
 ## <a name="limitations"></a>Limites
 
@@ -70,7 +70,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |Nom|Type|Description|
 |---|---|---|
-|Autorisation|Chaîne|Porteur {token}. Obligatoire.|
+|Autorisation|String|Porteur {token}. Obligatoire.|
 |Content-Type|string|application/json. Obligatoire.|
 
 ## <a name="request-body"></a>Corps de la demande

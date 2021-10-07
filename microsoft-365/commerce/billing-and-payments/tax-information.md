@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -21,12 +21,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
-ms.openlocfilehash: 2ea5db8cbd68a6c0dd600730fac408dc4bb75e2a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1d0c8c007a9e1e06980f06c7db0add1830c28ae0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208083"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198936"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -110,7 +110,7 @@ Lorsque vous achetez Microsoft 365 services dans la région EMEA, cet achat peut
 
 - Pour les clients de l’UE, avant de pouvoir valider votre numéro de TVA, celui-ci doit être disponible pour vérification dans le système d’informations sur la TVA Exchange (VIES). Si votre numéro de TVA ne peut pas être vérifié, contactez votre autorité fiscale locale.
 
-Vous pouvez être éligible à la TVA avec un taux de tva nul si :
+Vous pouvez bénéficier d’une tva à taux zéro si :
   
 - **Vous êtes dans un État membre de l’Union européenne en dehors de l’Irlande :** Vous pouvez fournir votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. de tvar la transaction. Toutefois, vous pouvez avoir une obligation de comptabilité de TVA locale. Si vous avez des préoccupations, consultez vos conseillers fiscaux. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
 
@@ -120,7 +120,7 @@ Vous pouvez être éligible à la TVA avec un taux de tva nul si :
 
 ## <a name="asia-pacific-countries-apac"></a>Pays d'Asie-Pacifique (APAC)
 
-Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée, ventes ou taxes similaires applicables.
+Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée applicable, ventes ou taxes similaires.
   
 Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe locale actuelle est appliquée. L’emplacement est inclus [sur votre facture](view-your-bill-or-invoice.md):
   
@@ -166,7 +166,7 @@ Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez
 | Chili | État IVA/CAS (Registro Unico Atio) |
 | Colombie | État IVA/CAS (Registro Unico Atio) |
 | Organisations internationales qui détiennent une exonération fiscale | Certification /confirmation par courrier des autorités fiscales locales |
-| Irlande | 13B/56A Certificat d’exonération fiscale|
+| Irlande | Certificat d’exonération fiscale 13B/56A|
 | États-Unis | Certificat d’exonération fiscale |
 | Porto Rico | Certificado de Compras Exentas |
   

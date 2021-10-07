@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 05/05/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
@@ -16,12 +16,12 @@ description: Utilisez l’Explorateur de menaces ou les détections en temps ré
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de652c8a93e1b51e5184f6de2d1076885de5d4f7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 28da09d799b035a79a661eaf28912de29ad2f43f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164604"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196356"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Recherche de menaces dans l’Explorateur de menaces pour Microsoft Defender Office 365
 
@@ -59,7 +59,7 @@ Dans Microsoft Defender pour Office 365, il existe deux plans d’abonnement : P
 
 Defender pour Office 365 Plan 1 utilise les détections en temps réel, qui est un *sous-ensemble* de l’outil de repérage de l’Explorateur de menaces *(également* appelé *Explorateur)* dans le Plan 2. Dans cette série d’articles, la plupart des exemples ont été créés à l’aide de l’Explorateur de menaces complet. Les administrateurs doivent tester les étapes des détections en temps réel pour voir où elles s’appliquent.
 
-Une fois que vous êtes dans l’Explorateur, par défaut,  vous arrivez sur la **page** Programmes malveillants, mais utilisez la page d’affichage pour vous familiariser avec vos options.  Si vous recherchez du hameçonnage ou si vous êtes en train d’entrer dans une campagne contre les menaces, choisissez ces affichages.
+Une fois que vous êtes passé à l’Explorateur, par  défaut, vous arrivez sur la **page** Programmes malveillants, mais utilisez la page d’affichage pour vous familiariser avec vos options.  Si vous recherchez du hameçonnage ou si vous êtes en train d’entrer dans une campagne contre les menaces, choisissez ces affichages.
 
 > [!div class="mx-imgBorder"]
 > ![Afficher la vue du bas dans l’Explorateur de menaces.](../../media/view-drop-down.png)
@@ -169,7 +169,7 @@ Lorsque les analystes voient la colonne **Balises** dans la grille de courrier, 
 
 #### <a name="filtering"></a>Filtrage
 
-Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes prioritaires uniquement ou utilisez des scénarios de balises utilisateur spécifiques de cette façon. Vous pouvez également exclure les résultats qui ont certaines balises. Combinez les balises avec d’autres filtres et plages de dates pour affiner votre portée d’enquête.
+Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes prioritaires uniquement ou utilisez des scénarios de balises utilisateur spécifiques de cette façon. Vous pouvez également exclure les résultats qui ont certaines balises. Combinez les balises avec d’autres filtres et plages de dates pour affiner votre portée d’examen.
 
 [![Balises de filtre.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -178,7 +178,7 @@ Les balises peuvent être utilisées comme filtres. Recherchez parmi les comptes
 
 #### <a name="email-detail-flyout"></a>Flyout des détails des e-mails
 
-Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé,** les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles pour l’expéditeur et le destinataire peuvent être exportées en tant que données CSV.
+Pour afficher les balises individuelles de l’expéditeur et du destinataire, sélectionnez un e-mail pour ouvrir le volant des détails du message. Sous **l’onglet Résumé,** les balises de l’expéditeur et du destinataire sont affichées séparément. Les informations relatives aux balises individuelles de l’expéditeur et du destinataire peuvent être exportées en tant que données CSV.
 
 > [!div class="mx-imgBorder"]
 > ![Balises de détails du courrier électronique.](../../media/tags-flyout.png)
@@ -196,7 +196,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=UoV
 
 ### <a name="top-targeted-users"></a>Utilisateurs les plus ciblés
 
-Les principales familles de programmes malveillants indiquent **les utilisateurs les plus ciblés** dans la section Programmes malveillants. Les utilisateurs les plus ciblés seront également étendus via les affichages Hameçonnage et Tous les e-mails. Les analystes pourront voir les cinq premiers utilisateurs ciblés, ainsi que le nombre de tentatives pour chaque utilisateur dans chaque affichage.
+Les principales familles de programmes malveillants **indiquent les utilisateurs les plus ciblés** dans la section Programmes malveillants. Les utilisateurs les plus ciblés seront également étendus via les affichages Hameçonnage et Tous les e-mails. Les analystes pourront voir les cinq premiers utilisateurs ciblés, ainsi que le nombre de tentatives pour chaque utilisateur dans chaque affichage.
 
 Les opérations de sécurité peuvent exporter la liste des utilisateurs ciblés, jusqu’à une limite de 3 000, ainsi que le nombre de tentatives réalisées, pour l’analyse hors connexion pour chaque affichage de courrier électronique. En outre, la sélection du nombre de tentatives (par exemple, 13 tentatives dans l’image ci-dessous) ouvre une vue filtrée dans l’Explorateur de menaces, afin que vous pouvez voir plus de détails sur les messages électroniques et les menaces pour cet utilisateur.
 
@@ -205,7 +205,7 @@ Les opérations de sécurité peuvent exporter la liste des utilisateurs ciblés
 
 ### <a name="exchange-transport-rules"></a>Exchange transport
 
-L’équipe des opérations de sécurité pourra voir toutes les règles de transport Exchange (ou règles de flux de messagerie) appliquées à un message, dans l’affichage Grille de messagerie. Sélectionnez **les options Colonne** dans la grille, puis Exchange règle de transport **à** partir des options de colonne. L Exchange des règles de transport est également visible dans le volant **Détails** de l’e-mail.
+L’équipe des opérations de sécurité pourra voir toutes les règles de transport Exchange (ou règles de flux de messagerie) appliquées à un message, dans l’affichage Grille de messagerie. Sélectionnez **les options Colonne** dans la grille, puis **ajoutez Exchange de transport à** partir des options de colonne. L Exchange des règles de transport est également visible dans le volant **Détails** de l’e-mail.
 
 Les noms et les GUID des règles de transport appliquées au message s’affichent. Les analystes pourront rechercher des messages à l’aide du nom de la règle de transport. Il s’agit d’une recherche CONTAINS, ce qui signifie que vous pouvez également effectuer des recherches partielles.
 

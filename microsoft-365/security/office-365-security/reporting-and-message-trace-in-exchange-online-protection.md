@@ -8,19 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez découvrir les rapports et les outils de dépannage disponibles pour les administrateurs Microsoft Exchange Online Protection des données (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 619b8376c6c9d5d733799b4350c308fc4c57f62b
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: d4f0289054baec0e5bcedf4e9e3d434ab51ef92b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010280"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199356"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapports et suivi des messages dans EOP
 
@@ -36,7 +36,7 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online
 ## <a name="usage-reports"></a>Rapports d’utilisation
 
 - **Microsoft 365 groupes :** afficher des informations sur le nombre de groupes Microsoft 365 créés et utilisés. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Microsoft 365 groupes.](../../admin/activity-reports/office-365-groups.md)
-- **Activité de** messagerie : afficher des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation et par des utilisateurs spécifiques. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Activité de messagerie.](../../admin/activity-reports/email-activity.md)
+- **Activité de messagerie**: affichez des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation et par des utilisateurs spécifiques. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Activité de messagerie.](../../admin/activity-reports/email-activity.md)
 - **Utilisation de l’application de messagerie**: afficher des informations sur les applications de messagerie utilisées. Cela inclut le nombre total de connexions pour chaque application et les versions des Outlook qui se connectent. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Utilisation des applications de messagerie.](../../admin/activity-reports/email-apps-usage.md)
 - **Utilisation des boîtes aux** lettres : afficher les informations sur le stockage utilisé, la consommation de quota, le nombre d’éléments et la dernière activité (activité d’envoi ou de lecture) pour les boîtes aux lettres. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Utilisation des boîtes aux lettres.](../../admin/activity-reports/mailbox-usage.md)
 
@@ -47,7 +47,7 @@ Ces rapports améliorés offrent une expérience de rapport interactive pour les
 - **Defender pour Office 365**: afficher des informations sur les liens Coffre et les pièces jointes Coffre qui font partie de Microsoft Defender pour Office 365. Pour plus d’informations, [voir View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender.](view-reports-for-mdo.md)
 - **EOP**: afficher des informations sur les détections de programmes malveillants, la messagerie usurpée, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation. Pour plus d’informations, voir Afficher les rapports de sécurité de messagerie [dans le portail Microsoft 365 Defender.](view-email-security-reports.md)
 
-## <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de courriers dans le Centre de sécurité et de conformité
+## <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
 Pour plus d’informations, voir Informations sur le flux de messagerie dans le [Centre de sécurité & conformité.](mail-flow-insights-v2.md)
 

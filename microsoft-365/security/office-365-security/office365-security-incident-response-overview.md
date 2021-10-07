@@ -11,7 +11,7 @@ ms.topic: overview
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 description: Cette solution vous indique à quoi peuvent ressembler les attaques de cybersécurité les plus courantes dans Microsoft 365 et comment y répondre
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65ff75253f45ae2d0f051dafe73c6e665f89827a
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ef36caca62935dbeca6640c5fa9ed2edaae9528b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204366"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196488"
 ---
 # <a name="security-incident-response"></a>Réponse aux incidents de sécurité
 
@@ -35,7 +35,7 @@ ms.locfileid: "59204366"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Résumé :** Cette solution vous indique quels sont les indicateurs des attaques de cybersécurité les plus courantes dans Office 365, comment confirmer les attaques données et comment y répondre.
+ **Résumé :** Cette solution vous indique quels sont les indicateurs des attaques de cybersécurité les plus courantes dans Office 365, comment confirmer positivement toute attaque donnée et comment y répondre.
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>Découvrez comment répondre aux cyberattaques
 

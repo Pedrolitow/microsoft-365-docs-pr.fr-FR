@@ -1,10 +1,10 @@
 ---
 title: Degré de sécurisation Microsoft
-description: Décrit le Niveau de sécurité Microsoft dans le portail Microsoft 365 Defender, comment améliorer votre posture de sécurité et ce à quoi les administrateurs de sécurité peuvent s’attendre.
+description: Décrit le niveau de sécurité Microsoft dans le portail Microsoft 365 Defender, comment améliorer votre posture de sécurité et ce à quoi les administrateurs de sécurité peuvent s’attendre.
 keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, Microsoft 365 Defender portail, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b81671d2421400dd1b168b67b323d38fb85b19f
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: bfe3718a6e8c82c516a395e2d2c7f43d21ceda04
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59933266"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196668"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "59933266"
 
 Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore portail [Microsoft 365 Defender.](overview-security-center.md)
 
-En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 de sécurité.
+En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le portail Microsoft 365 Defender, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 données.
 
 Score sécurisé aide les organisations :  
 

@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b383cbdac20f3197cd95c5419252582f4e0099b3
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 75d0466b53e07855aaef0da46b93b605f158307a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180404"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198900"
 ---
 # <a name="payment-information-for-bulgaria"></a>Informations de paiement pour la Bulgarie
 

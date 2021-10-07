@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les considérations de déploiement et les questions fréquemment posées concernant la simulation d’attaque et la formation dans Microsoft 365 E5 ou Microsoft Defender pour Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 239d1e4bf28a93627a80ea40375e6791e1a3a5a8
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 19b8997a5f2d1f8df40c740fb996432b13a21d3b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988438"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196596"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Considérations et forum aux questions sur le déploiement de la formation de simulation d’attaque
 
@@ -39,7 +39,7 @@ Bien que l’ensemble de l’expérience de création et de planification de sim
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>URL de simulation de hameçonnage bloquées par la navigation google Coffre
 
-Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par la formation à la simulation d’attaque comme non sûres. Google Coffre navigation dans Google Chrome bloque certaines URL de hameçonnage simulée avec un message d’avance **de site.** Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
+Un service de réputation d’URL peut identifier une ou plusieurs URL utilisées par la formation à la simulation d’attaque comme non sûres. Google Coffre navigation dans Google Chrome bloque certaines URL de hameçonnage simulées avec un message d’avance **de site.** Bien que nous travaillions avec de nombreux fournisseurs de réputation d’URL pour toujours autoriser nos URL de simulation, nous n’avons pas toujours une couverture complète.
 
 ![Avertissement d’avance du site dans Google Chrome.](../../media/attack-sim-chrome-deceptive-site-message.png)
 
@@ -47,17 +47,17 @@ Notez que ce problème n’affecte pas Microsoft Edge.
 
 Dans le cadre de la phase de planification, veillez à vérifier la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne de hameçonnage. Si les URL sont bloquées par la navigation google [Coffre,](https://support.google.com/chrome/a/answer/7532419) suivez ces instructions de Google pour autoriser l’accès aux URL.
 
-[Reportez-vous à La](attack-simulation-training-get-started.md) formation sur la simulation d’attaque pour obtenir la liste des URL actuellement utilisées par la formation sur la simulation d’attaque.
+[Reportez-vous à La](attack-simulation-training-get-started.md) formation sur la simulation d’attaque pour obtenir la liste des URL actuellement utilisées par la formation sur la simulation d’attaques.
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>Simulation de hameçonnage et URL d’administrateur bloquées par les solutions proxy réseau et les pilotes de filtre
 
-Les URL de simulation d’hameçonnage et les URL d’administrateur peuvent être bloquées ou abandonnées par vos filtres ou périphériques de sécurité intermédiaires. Par exemple :
+Les URL de simulation de hameçonnage et les URL d’administrateur peuvent être bloquées ou abandonnées par vos filtres ou périphériques de sécurité intermédiaires. Par exemple :
 
 - Pare-feu
 - Solutions de pare-feu d’application web (WAF)
 - Pilotes de filtre tiers (par exemple, filtres en mode noyau)
 
-Même si peu de clients ont été bloqués au niveau de cette couche, cela se produit. Si vous rencontrez des problèmes, envisagez de configurer les URL suivantes pour contourner l’analyse par vos périphériques ou filtres de sécurité si nécessaire :
+Même si nous avons vu peu de clients bloqués au niveau de cette couche, cela se produit. Si vous rencontrez des problèmes, envisagez de configurer les URL suivantes pour contourner l’analyse par vos périphériques ou filtres de sécurité si nécessaire :
 
 - URL de hameçonnage simulée, comme décrit dans La mise en place à l’aide de la formation de [simulation d’attaque.](attack-simulation-training-get-started.md)
 - <https://security.microsoft.com/attacksimulator>
@@ -80,7 +80,7 @@ Seuls les utilisateurs non invités valides avec une boîte aux lettres valide s
 
 La formation sur la simulation d’attaques int mente des informations riches et actionnables qui vous informent de la progression de la préparation aux menaces de vos employés. Si les rapports de formation sur la simulation d’attaque ne sont pas remplis avec des données, vérifiez que la recherche dans le journal d’audit est allumée dans votre organisation (elle est allumée par défaut).
 
-La recherche dans le journal d’audit est requise par la formation à la simulation d’attaque afin que les événements soient capturés, enregistrés et lus. La fin de la recherche dans le journal d’audit a les conséquences suivantes pour la formation à la simulation d’attaque :
+La recherche dans le journal d’audit est requise par la simulation d’attaque afin que les événements soient capturés, enregistrés et lus. La fin de la recherche dans le journal d’audit a les conséquences suivantes pour la formation à la simulation d’attaque :
 
 - Les données de rapport ne sont pas disponibles dans tous les rapports. Les rapports apparaissent vides.
 - Les affectations de formation sont bloquées, car les données ne sont pas disponibles.
@@ -146,9 +146,9 @@ Nous avons découvert que les campagnes où les utilisateurs ciblés sont identi
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>Q : Existe-t-il des limites dans le ciblage des utilisateurs lors de l’importation à partir d’un CSV ou de l’ajout d’utilisateurs ?
 
-R : la limite pour importer des destinataires à partir d’un fichier CSV ou ajouter des destinataires individuels à une simulation est de 40 000.
+R : la limite pour l’importation de destinataires à partir d’un fichier CSV ou l’ajout de destinataires individuels à une simulation est de 40 000.
 
-Un destinataire peut être un utilisateur individuel ou un groupe. Un groupe peut contenir des centaines ou des milliers de destinataires, de sorte qu’une limite réelle n’est pas placée sur le nombre d’utilisateurs individuels.
+Un destinataire peut être un utilisateur individuel ou un groupe. Un groupe peut contenir des centaines ou des milliers de destinataires, de sorte qu’aucune limite réelle n’est placée sur le nombre d’utilisateurs individuels.
 
 La gestion d’un fichier CSV de grande taille ou l’ajout de nombreux destinataires individuels peuvent être fastidieux. L’utilisation de groupes Azure AD simplifie la gestion globale de la simulation.
 
@@ -184,4 +184,4 @@ R : La remise sensible à la région utilise l’attribut TimeZone de la boîte 
 
 À 9 h 00 le même jour, le message de simulation est envoyé à UserB. Avec la remise de région, le message n’est pas envoyé à UserA le même jour, car l’heure de 9:00 AM Pacifique est 12:00 PM Est. Au lieu de cela, le message est envoyé à UserA à 9h00 heure de l’Est le jour suivant.
 
-Ainsi, lors de l’exécution initiale d’une campagne avec une remise de région activée, il peut sembler que le message de simulation a été envoyé uniquement aux utilisateurs dans un fuseau horaire spécifique. Toutefois, à mesure que le temps passe et que de plus en plus d’utilisateurs entrent en ligne de compte, les utilisateurs ciblés augmentent.
+Ainsi, lors de l’exécution initiale d’une campagne avec la remise en fonction de la région activée, il peut sembler que le message de simulation a été envoyé uniquement aux utilisateurs dans un fuseau horaire spécifique. Toutefois, à mesure que le temps passe et que de plus en plus d’utilisateurs entrent en ligne de compte, les utilisateurs ciblés augmentent.

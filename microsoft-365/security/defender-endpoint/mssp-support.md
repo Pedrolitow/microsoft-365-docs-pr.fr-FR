@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a84a3ec88cb4eb0fa3b4e04f3ce0c62b73dd7fb5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: a58da36cfe0abd88a615e81d96360a6f789ad638
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59209048"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196920"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Opportunités de partenariat avec un fournisseur de services de sécurité gérés
 
@@ -35,7 +35,7 @@ ms.locfileid: "59209048"
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
 
 
-La sécurité est reconnue comme un composant clé dans l’exécution d’une entreprise. Toutefois, certaines organisations peuvent ne pas avoir la capacité ou l’expertise d’avoir une équipe dédiée aux opérations de sécurité pour gérer la sécurité de leurs points de terminaison et de leur réseau, tandis que d’autres peuvent avoir un second regard pour examiner les alertes dans leur réseau.
+La sécurité est reconnue comme un composant clé dans l’exécution d’une entreprise, mais certaines organisations peuvent ne pas avoir la capacité ou l’expertise d’avoir une équipe dédiée aux opérations de sécurité pour gérer la sécurité de leurs points de terminaison et de leur réseau, tandis que d’autres peuvent avoir un deuxième groupe d’yeux pour examiner les alertes dans leur réseau.
 
 
 Pour répondre à cette demande, les fournisseurs de services de sécurité gérée (MSSP) proposent de fournir des services de détection et de réponse gérées (MDR) en plus de Defender for Endpoint. 
@@ -43,7 +43,7 @@ Pour répondre à cette demande, les fournisseurs de services de sécurité gér
 
 Defender pour le point de terminaison ajoute des opportunités de partenariat pour ce scénario et permet aux MSSP d’agir comme suit :
 
-- Accéder au portail d’Centre de sécurité Microsoft Defender du client MSSP
+- Accéder au portail Centre de sécurité Microsoft Defender client MSSP
 - Obtenir des notifications par courrier électronique et 
 - Récupérer des alertes via les outils de gestion des événements et des informations de sécurité (SIEM)
 

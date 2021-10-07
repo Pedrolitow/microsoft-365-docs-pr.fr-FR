@@ -2,15 +2,13 @@
 title: Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 description: Découvrez comment configurer les stratégies Microsoft Defender for Endpoint sur macOS dans Jamf Pro
 keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, defender, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cecc6cd9be841043c2f3cc55977c56f14386cd2d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 0bc0b09bcb834c67cb5da13469139875037440b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59177580"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198684"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurer microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro
 
@@ -38,7 +36,7 @@ Cette page vous guide à travers les étapes à suivre pour configurer des strat
 
 Vous devez suivre les étapes suivantes :
 
-1. [Obtenir le package d’intégration Microsoft Defender for Endpoint](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+1. [Obtenir le package d’intégration De Microsoft Defender pour point de terminaison](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 2. [Créer un profil de configuration dans Jamf Pro à l’aide du package d’intégration](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 3. [Configurer les paramètres de Microsoft Defender pour les points de terminaison](#step-3-configure-microsoft-defender-for-endpoint-settings)
 4. [Configurer microsoft Defender pour les paramètres de notification de point de terminaison](#step-4-configure-notifications-settings)
@@ -134,7 +132,7 @@ Notez que vous devez utiliser exact comme domaine de préférence , Microsoft De
 
 ### <a name="gui-method"></a>Méthode GUI
 
-1. Téléchargez schema.jsfichier à partir du référentiel [GitHub Defender](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) et enregistrez-le dans un fichier local :
+1. Téléchargez le fichier schema.json à partir du référentiel [GitHub](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) defender et enregistrez-le dans un fichier local :
 
     ```bash
     curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
@@ -154,11 +152,11 @@ Notez que vous devez utiliser exact comme domaine de préférence , Microsoft De
 
     ![Ajoutez un schéma personnalisé.](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. Entrez comme domaine de préférence, cliquez sur Ajouter un schéma et Télécharger le schema.jssur le fichier téléchargé à `com.microsoft.wdav` l’étape  1.  Cliquez sur **Enregistrer**.
+4. Entrez comme domaine de préférence, cliquez sur Ajouter un schéma et Télécharger fichier `com.microsoft.wdav` schema.json téléchargé à l’étape 1.   Cliquez sur **Enregistrer**.
 
     ![Télécharger schéma.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. Vous pouvez voir tous les paramètres de configuration de Microsoft Defender pris en charge ci-dessous, sous **Propriétés de domaine de préférence.** Cliquez **sur Ajouter/Supprimer des** propriétés pour sélectionner les paramètres à gérer, puis cliquez sur **OK** pour enregistrer vos modifications. (Paramètres non sélectionné ne sera pas inclus dans la configuration gérée, un utilisateur final pourra configurer ces paramètres sur ses ordinateurs.)
+5. Vous pouvez voir tous les paramètres de configuration de Microsoft Defender pris en charge ci-dessous, sous **Propriétés de domaine de préférence.** Cliquez **sur Ajouter/Supprimer des propriétés** pour sélectionner les paramètres à gérer, puis cliquez sur **OK** pour enregistrer vos modifications. (Paramètres non sélectionné ne sera pas inclus dans la configuration gérée, un utilisateur final pourra configurer ces paramètres sur ses ordinateurs.)
 
     ![Sélectionnez les paramètres gérés.](images/817b3b760d11467abe9bdd519513f54f.png)
 
@@ -385,7 +383,7 @@ Il vous suffit de télécharger un schéma mis à jour, de modifier  le profil d
 
     ![Image des paramètres de configuration addsav.](images/cf30438b5512ac89af1d11cbf35219a6.png)
 
-    ![Image de l’ajout des paramètres de configuration.](images/6f093e42856753a3955cab7ee14f12d9.png)
+    ![Image des paramètres de configuration enregistrer ajouter.](images/6f093e42856753a3955cab7ee14f12d9.png)
 
 16. Sélectionnez **Terminé**. Vous verrez le nouveau profil **de configuration.**
 
@@ -600,7 +598,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
     ![Image de l’image addimage du paramètre de configuration.](images/57cef926d1b9260fb74a5f460cee887a.png)
 
-14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de > sélectionnez Groupe machine de **Contoso.**
+14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de groupe > sélectionnez Groupe MachineGroup de **Contoso.**
 
     ![Image du paramètre de configuration contoso machinegrp.](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
@@ -610,7 +608,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
 17. Sélectionnez **Terminé**.
 
-    ![Image de donimg de paramètre de configuration.](images/809cef630281b64b8f07f20913b0039b.png)
+    ![Image de donimg des paramètres de configuration.](images/809cef630281b64b8f07f20913b0039b.png)
 
     ![Image du paramètre de configuration donimg2.](images/6c8b406ee224335a8c65d06953dc756e.png)
 
@@ -662,7 +660,7 @@ Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/
 
 9. Sélectionnez **Enregistrer**.
 
-    ![Image de la sauvegarde des paramètres de configuration.](images/0add8019b85a453b47fa5c402c72761b.png)
+    ![Image de l’économiserie des paramètres de configuration.](images/0add8019b85a453b47fa5c402c72761b.png)
 
 10. Sélectionnez **Terminé**.
 
@@ -705,7 +703,7 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 5. Sélectionnez **l’onglet** Étendue.
 
-    ![Image de scopeimage des paramètres de configuration.](images/0df36fc308ba569db204ee32db3fb40a.png)
+    ![Image de l’étendue des paramètres de configuration.](images/0df36fc308ba569db204ee32db3fb40a.png)
 
 6. Sélectionnez **+ Ajouter**.
 

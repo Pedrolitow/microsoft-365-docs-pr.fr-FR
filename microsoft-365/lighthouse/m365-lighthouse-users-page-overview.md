@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez la page Utilisateurs.
-ms.openlocfilehash: 102dcca973fed7a883dead0212a6f2965457cf9f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 365b40e863b15b762fb391ef39eb523811981c99
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203261"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197160"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse Vue d’ensemble de la page Utilisateurs 
 
@@ -30,7 +30,7 @@ ms.locfileid: "59203261"
 
 Microsoft 365 Lighthouse vous permet de gérer les utilisateurs sur  plusieurs comptes clients en sélectionnant Utilisateurs dans le volet de navigation de gauche pour ouvrir la page Utilisateurs. À partir de cette page, vous pouvez rechercher des utilisateurs, évaluer et agir sur l’état de sécurité de vos comptes d’utilisateurs. Vous pouvez également afficher des informations sur les utilisateurs à risque et l’état de l’authentification multifacteur et de la réinitialisation du mot de passe en libre-service.  
   
-## <a name="search-users-tab"></a>Onglet Rechercher des utilisateurs  
+## <a name="search-users-tab"></a>Onglet Utilisateurs de la recherche  
   
 À partir de l’onglet Utilisateurs de recherche, vous pouvez rapidement rechercher des utilisateurs spécifiques dans différents clients et effectuer des actions de gestion des utilisateurs de base, telles que la réinitialisation d’un mot de passe de compte.
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment les paramètres de sécurité par défaut peuvent aider à protéger votre organisation contre les attaques liées aux identités en fournissant des paramètres de sécurité préconfigurés.
-ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 49b20e4880774ce97d99dc95e60c0cb417b213bc
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180508"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198977"
 ---
 # <a name="turn-on-security-defaults"></a>Activer les paramètres de sécurité par défaut
 
@@ -37,7 +37,7 @@ Les paramètres de sécurité par défaut contribuent à protéger votre organis
 
 Pour plus d’informations sur les paramètres de sécurité par défaut et les stratégies qu’ils appliquent, voir [Quelles sont les valeurs par défaut de sécurité ?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-Si votre abonnement a été créé le 22 octobre 2019 ou après, les paramètres de sécurité par défaut ont peut-être été automatiquement activés pour vous, vous devez vérifier vos paramètres pour &mdash; vérifier.
+Si votre abonnement a été créé le ou après le 22 octobre 2019, les paramètres de sécurité par défaut ont peut-être été automatiquement activés pour vous, vous devez vérifier vos paramètres pour &mdash; vérifier.
 
 Pour activer les paramètres de sécurité par défaut dans votre Azure Active Directory (Azure AD) ou pour vérifier s’ils sont déjà activés :
 
@@ -66,7 +66,7 @@ Si votre organisation a des exigences de sécurité complexes ou si vous avez be
 
 L’accès conditionnel vous permet de créer et de définir des stratégies qui réagissent aux événements de connectez-vous et de demander des actions supplémentaires avant qu’un utilisateur ne soit autorisé à accéder à une application ou un service. Les stratégies d’accès conditionnel peuvent être granulaires et spécifiques, permettant aux utilisateurs d’être productifs où et quand, mais aussi de protéger votre organisation.
 
-Les paramètres de sécurité par défaut sont disponibles pour tous les clients, tandis que l’accès conditionnel nécessite une licence pour l’un des plans suivants :
+Les valeurs par défaut de sécurité sont disponibles pour tous les clients, tandis que l’accès conditionnel nécessite une licence pour l’un des plans suivants :
 
 - Azure Active Directory Premium P1 ou P2
 - Microsoft 365 Business Premium

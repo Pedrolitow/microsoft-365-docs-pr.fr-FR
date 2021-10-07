@@ -9,7 +9,7 @@ ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Déterminez les réglementations en matière de confidentialité des données, les scénarios pertinents, votre préparation et les types d’informations sensibles qui se Microsoft 365 environnement.
-ms.openlocfilehash: eefa80d85a9b03317b2021c73152e2e63f772cea
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ebad5531ddd0343bb262fde1569811fcc02b993b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182936"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199284"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles à l’Microsoft 365
 
@@ -50,7 +50,7 @@ D’autres réglementations importantes en matière de confidentialité des donn
 
 Aux États-Unis, il s’agit notamment du[CCPA](/compliance/regulatory/ccpa-faq)(California Consumer Protection Act), HIPAA-HITECH (Loi américaine sur la confidentialité des soins de santé) et de la loi GlBA (Leach Bliley Act). D’autres réglementations spécifiques à l’état sont également en place ou en cours de développement.
 
-Dans le monde entier, d’autres exemples incluent la loi d’implémentation du RGPD (National GDPR Implementation Act) allemande, le LGPD (Brazil Data Protection Act) et bien d’autres encore.
+Dans le monde entier, d’autres exemples incluent la Loi d’implémentation du RGPD (National GDPR Implementation Act) de l’Allemagne, le LGPD (Brazil Data Protection Act) et bien d’autres encore.
 
 ## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Mappage des réglementations Microsoft 365 catégories de contrôle technique
 
@@ -60,9 +60,9 @@ Pour référence ultérieure dans les articles de cette solution globale, ce tab
 
 |Règlement|Article/section|Extrait|Catégories de contrôle technique applicables|
 |---|---|---|---|
-|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).|(Tous) <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
+|RGPD|Article 5(1)(f)|Les données personnelles doivent être traitées d’une manière qui garantit la sécurité appropriée des données à caractère personnel, y compris la protection contre le traitement non autorisé ou illégal et contre les pertes, destructions ou dommages accidentels, à l’aide de mesures techniques ou organisationnelles appropriées (intégrité et confidentialité).|(Tous) <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
 ||Article (32)(1)(a)|En tenant compte de l’état de l’art, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que du risque de probabilité et de gravité variables pour les droits et libertés des personnes physiques, le responsable du traitement et le sous-traitant doivent mettre en œuvre des mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié au risque,  y compris, le cas échéant : (a) la pseudonymisation et le chiffrement des données personnelles.|Protéger les informations|
-||Article (13)(2)(a)|"... le responsable du traitement doit, au moment où les données à caractère personnel sont obtenues, fournir à la sujet des données les informations supplémentaires suivantes nécessaires pour garantir un traitement équitable et transparent : (a) la période pendant laquelle les données à caractère personnel seront stockées, ou si cela n’est pas possible, les critères utilisés pour déterminer cette période.|Gérer les informations|
+||Article (13)(2)(a)|"... le responsable du traitement doit, au moment où les données à caractère personnel sont obtenues, fournir à la objet des données les informations supplémentaires suivantes nécessaires pour garantir un traitement équitable et transparent : (a) la période pendant laquelle les données à caractère personnel seront stockées, ou si cela n’est pas possible, les critères utilisés pour déterminer cette période.|Gérer les informations|
 ||Article (15)(1)(e)|La objet de données a le droit d’obtenir auprès du responsable du traitement la confirmation que des données personnelles la concernant sont en cours de traitement, et dans ce cas, l’accès aux données à caractère personnel et les informations suivantes : (e) l’existence du droit de demander au responsable du traitement la rectification ou l’effacement de données à caractère personnel ou la restriction du traitement des données à caractère personnel concernant la sujet des données ou de s’y objecter traitement|Découvrir et répondre|
 |LGPD|Article 46|Les agents de traitement adoptent des mesures de sécurité, techniques et administratives capables de protéger les données personnelles contre les accès non autorisés et les situations accidentelles ou illégales de destruction, perte, modification, communication ou tout type de traitement inapproprié ou illégal.|Protéger les informations <br> Gérer les informations <br> Découvrir et répondre|
 ||Article 48|Le responsable du traitement doit informer l'autorité nationale et la personne concernée de la survenance d'un incident de sécurité susceptible de créer des risques ou des dommages importants pour les personnes concernées.|Découvrir et répondre|
@@ -106,7 +106,7 @@ Si vous n’avez pas déjà évalué votre préparation globale et les risques a
 
 ## <a name="step-1-develop-a-foundational-understanding-of-your-organizations-personal-data-scenarios"></a>Étape 1 : Développer une compréhension de base des scénarios de données personnelles de votre organisation
 
-Vous devez évaluer l’exposition au risque de confidentialité des données en fonction du type de données personnelles qu’elle gère actuellement, de l’endroit où elle est stockée, des contrôles de protection qui lui sont placés, de la façon dont son cycle de vie est géré et des personnes qui y ont accès.
+Vous devez évaluer l’exposition au risque de confidentialité des données en fonction du type de données personnelles qu’il gère actuellement, de l’endroit où elle est stockée, des contrôles de protection qui y sont placés, de la façon dont son cycle de vie est géré et des personnes qui y ont accès.
 
 Comme point de départ, il est important d’inventorier les types de données personnelles qui existent dans Microsoft 365 environnement. Utilisez les catégories suivantes :
 
@@ -170,9 +170,9 @@ Bien qu’une recommandation d’une organisation externe ou d’un ensemble de 
 
 La plupart des organisations seront exposées à l’un des scénarios ci-dessus. Il est important d’adopter une approche globale de l’évaluation.
 
-## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Étape 2 : Évaluer votre préparation pour vous conformer aux réglementations en matière de confidentialité des données
+## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>Étape 2 : évaluer votre préparation pour vous conformer aux réglementations en matière de confidentialité des données
 
-Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale à la confidentialité des données.
+Bien que spécifiques au R GDPR, les questions posées dans l’outil d’évaluation gratuit de [Microsoft R GDPR](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) fournissent un bon départ pour comprendre la préparation globale de la confidentialité des données.
 
 Les organisations soumises à d’autres réglementations en matière de confidentialité des données, telles que le CCPA aux États-Unis ou le LGPD du Brésil, peuvent également bénéficier de l’inventaire de préparation de cet outil en raison de dispositions qui se chevauchent avec le RGPD.
 
@@ -190,7 +190,7 @@ L’évaluation R GDPR se compose des sections suivantes :
 
 Cette étape implique l’identification de types d’informations sensibles particuliers soumis à des contrôles réglementaires spécifiques, ainsi que leur occurrence dans votre environnement Microsoft 365.
 
-La recherche de contenu dans votre environnement contenant des données personnelles peut être une tâche formidable, impliquant auparavant une combinaison d’utilisation de la recherche de conformité, de la découverte électronique, de la Advanced eDiscovery, de la DLP et de l’audit.
+La recherche de contenu dans votre environnement contenant des données personnelles peut être une tâche formidable, impliquant auparavant une combinaison d’utilisation de la recherche de conformité, eDiscovery, Advanced eDiscovery, DLP et audit.
 
 Avec la nouvelle solution de **classification** des données dans le [](../compliance/data-classification-content-explorer.md) Centre d’administration de conformité Microsoft, cela est devenu beaucoup plus facile avec la fonctionnalité Explorateur de contenu, qui fonctionne avec les types d’informations sensibles intégrés ou personnalisés, y compris ceux liés aux données personnelles.
 
@@ -206,7 +206,7 @@ Si vous devez identifier et protéger un type régional ou spécifique à l’or
 
 Vous pouvez également personnaliser un type d’informations sensibles intégré existant.
 
-Pour plus d’informations, voir les articles suivants :
+Pour plus d’informations, consultez les articles suivants :
 
 - [Personnaliser un type d’informations sensibles intégré](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [En savoir plus sur les types d’informations confidentielles](../compliance/sensitive-information-type-learn-about.md).

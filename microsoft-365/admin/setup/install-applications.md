@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
+- Adm_TOC
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 description: Maintenant que vous avez Microsoft 365, découvrez comment installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles.
-ms.openlocfilehash: a8d6aa4624285503340b5a22392c601c57acc439
-ms.sourcegitcommit: aebcdbef52e42f37492a7f780b8b9b2bc0998d5c
+ms.openlocfilehash: da2a91d682d5bd565db65b86226a90d47a84d51b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59776019"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199212"
 ---
 # <a name="install-office-applications"></a>Installer les applications Office
 
@@ -51,6 +52,6 @@ Si vous avez acheté Azure Active Directory Premium (AADP) Plan 1 ou Plan 2, vou
 
 ::: moniker-end
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
   
 [Résoudre les problèmes d’installation Office et Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2) (article)

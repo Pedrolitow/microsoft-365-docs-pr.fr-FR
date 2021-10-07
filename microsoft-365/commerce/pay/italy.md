@@ -10,15 +10,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b11b5897dad07407b4381af69c124faf2299265f
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 966341af3000d78a66328ccfc194ead6c15228b2
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59183847"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198864"
 ---
 # <a name="payment-information-for-italy"></a>Informations de paiement pour l’Italie
 

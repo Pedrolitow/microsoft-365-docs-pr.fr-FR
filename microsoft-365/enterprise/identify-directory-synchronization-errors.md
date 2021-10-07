@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -24,12 +24,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Découvrez comment afficher les erreurs de synchronisation d’annuaires et les correctifs possibles dans Centre d'administration Microsoft 365.
-ms.openlocfilehash: 081bf3c0b531acbbe3fe81e8d200e1e03827dfd1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2b832cff65aad0ae7327f440a565e12c7cba66f4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165337"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197376"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Afficher les erreurs de synchronisation d’annuaires dans Microsoft 365
 

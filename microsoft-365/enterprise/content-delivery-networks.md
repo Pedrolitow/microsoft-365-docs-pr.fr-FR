@@ -7,7 +7,7 @@ ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Utilisez ces informations pour découvrir comment Office 365 réseaux de distribution de contenu (CDN) pour améliorer les performances.
-ms.openlocfilehash: d50fc51307cdddb6e77a661ca5319d81ad1a0afc
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 1aecd8b23502ed8626979d258f7d26a90b4d3d51
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59207723"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186692"
 ---
 # <a name="content-delivery-networks-cdns"></a>Réseaux de distribution de contenu (CDN)
 
@@ -37,7 +37,7 @@ Les CDN permettent de Office 365 rapides et fiables pour les utilisateurs finaux
 
 Un CDN est un réseau distribué géographiquement constitué de serveurs proxy et de fichiers dans des centres de données connectés par des réseaux de dorsale dorsale haute vitesse. Les CDN sont utilisés pour réduire la latence et les temps de chargement d’un ensemble spécifié de fichiers et d’objets dans un site web ou un service. Un CDN peut avoir plusieurs milliers de points de terminaison pour une maintenance optimale des demandes entrantes en provenance de n’importe quel emplacement.
 
-Les CDN sont couramment utilisés pour fournir des téléchargements plus rapides de contenu générique pour un site web ou un service tel que des fichiers Javascript, des icônes et des images, et peuvent également fournir un accès privé au contenu des utilisateurs, tels que des fichiers dans des bibliothèques de documents SharePoint Online, des fichiers multimédias de diffusion en continu et du code personnalisé.
+Les CDN sont couramment utilisés pour fournir des téléchargements plus rapides de contenu générique pour un site web ou un service tel que des fichiers Javascript, des icônes et des images, et peuvent également fournir un accès privé au contenu des utilisateurs, tels que des fichiers dans des bibliothèques de documents SharePoint Online, des fichiers multimédias en continu et du code personnalisé.
 
 Les CDN sont utilisés par la plupart des services cloud d’entreprise. Les services cloud tels que Office 365 des millions de clients téléchargent un mélange de contenu propriétaire (comme les e-mails) et de contenu générique (par exemple, des icônes) à la fois. Il est plus efficace de placer les images que tout le monde utilise, comme les icônes, aussi près que possible de l’ordinateur de l’utilisateur. Comme il n’est pas pratique pour chaque service cloud de créer des centres de données CDN qui stockent ce contenu générique dans toutes les régions métropolitaines, ou même dans tous les principaux centres Internet du monde entier, certains de ces CDN sont partagés.
 
@@ -53,7 +53,7 @@ Les CDN permettent d’améliorer les performances du service cloud de plusieurs
 
 ## <a name="the-office-365-cdn"></a>Le Office 365 CDN
 
-Le Office 365 réseau de distribution de contenu intégré (CDN) permet aux administrateurs Office 365 d’offrir de meilleures performances aux pages SharePoint Online de leur organisation en achant les ressources statiques plus près des navigateurs qui les demandent, ce qui permet d’accélérer les téléchargements et de réduire la latence. Le Office 365 CDN utilise [le protocole HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) pour améliorer les vitesses de compression et de téléchargement.
+Le Office 365 réseau de distribution de contenu intégré (CDN) permet aux administrateurs de Office 365 d’améliorer les performances des pages SharePoint Online de leur organisation en achant les ressources statiques plus près des navigateurs qui les demandent, ce qui permet d’accélérer les téléchargements et réduire la latence. Le Office 365 CDN utilise [le protocole HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) pour améliorer les vitesses de compression et de téléchargement.
 
 > [!NOTE]
 > Le Office 365 CDN est uniquement disponible pour les clients dans le cloud **de production** (dans le monde). Les locataires du gouvernement des États-Unis, de la Chine et de l’Allemagne ne sont actuellement pas en charge Office 365 CDN.
@@ -127,10 +127,10 @@ Vous pouvez également lire Office 365 [principes](./microsoft-365-network-conne
 
 Les CDN utilisés par les Office 365 sont toujours sujets à modification et, dans de nombreux cas, plusieurs partenaires CDN sont configurés dans le cas où l’un d’eux est indisponible. Les CDN principaux utilisés par les Office 365 sont les Office 365 :
 
-|CDN  |Company  |Utilisation  |Liens  |
+|CDN  |Company  |Utilisation  |Lien  |
 |---------|---------|---------|---------|
 |Office 365 CDN     |Microsoft Azure         |Ressources génériques dans les origines publiques, SharePoint contenu utilisateur dans les origines privées         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Azure CDN.     |Microsoft         |Code personnalisé, solutions SharePoint Framework personnalisées         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Azure CDN.     |Microsoft         |Code personnalisé, SharePoint Framework solutions         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (lecture seule)     |Microsoft         |Bibliothèques courantes pour Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js, etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>Quels gains de performances un CDN-t-il ?
@@ -156,7 +156,7 @@ Nous prenons soin de protéger les données qui gèrent votre entreprise. Les do
 Pour vous assurer que vos données restent sécurisées, nous vous recommandons de ne jamais stocker de contenu utilisateur ou d’autres données sensibles dans une CDN. Étant donné que l’accès aux données dans une CDN publique est anonyme, les CDN publics doivent uniquement être utilisés pour héberger du contenu générique tel que des fichiers de script web, des icônes, des images et d’autres ressources non sensibles.
 
 > [!NOTE]
-> Les fournisseurs CDN tiers peuvent avoir des normes de confidentialité et de conformité qui diffèrent des engagements décrits par le Centre de Office 365 de confidentialité. Les données mises en cache par le biais du service CDN peuvent ne pas être conformes aux conditions de traitement des données Microsoft (DPT) et se trouver en dehors des limites de conformité Office 365 du Centre de gestion de la confiance.
+> Les fournisseurs CDN tiers peuvent avoir des normes de confidentialité et de conformité qui diffèrent des engagements décrits par le Centre de Office 365 de confidentialité. Les données mises en cache par le biais du service CDN peuvent ne pas être conformes aux conditions de traitement des données Microsoft (DPT) et se trouver en dehors des limites de conformité du Centre de gestion de la Office 365.
 
 Pour obtenir des informations détaillées sur la confidentialité et la protection des données Office 365 CDN fournisseurs de données, consultez les informations suivantes :  
 

@@ -7,7 +7,7 @@ ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment configurer l Skype Entreprise local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9695815d0a085931b10f7f64b9fca2e997af9077
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 21fc7bc3d79d4714f8892fe214e338bba3bffa55
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179724"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197436"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Skype Entreprise en local pour utiliser l’authentification moderne hybride
 
@@ -64,7 +64,7 @@ Ce résumé décompose le processus en étapes qui pourraient sinon être perdue
 
 1. Activer l’authentification moderne hybride Exchange local.
 
-1. Activer l’authentification moderne hybride Skype Entreprise en local.
+1. Activer l’authentification moderne hybride pour Skype Entreprise local.
 
 Ces étapes allument MA pour SFB, SFBO, EXCH et EXO, c’est-à-dire tous les produits qui peuvent participer à une configuration HMA de SFB et SFBO (y compris les dépendances sur EXCH/EXO). En d’autres termes, si vos utilisateurs sont des boîtes aux lettres d’accueil ou ont été créées dans une partie de l’hybride (EXO + SFBO, EXO + SFB, EXCH + SFBO ou EXCH + SFB), votre produit terminé ressemblera à ceci :
 
@@ -104,7 +104,7 @@ Si vous utilisez un serveur Édition Standard, l’URL interne est vide. Dans ce
 
 ## <a name="turn-on-modern-authentication-for-exo"></a>Activer l’authentification moderne pour EXO
 
-Suivez les instructions ci-après [: Exchange Online : comment activer votre client pour l’authentification moderne.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
+Suivez les instructions [ci-après : Exchange Online : comment activer votre client pour l’authentification moderne.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
 
 ## <a name="turn-on-modern-authentication-for-sfbo"></a>Activer l’authentification moderne pour SFBO
 
@@ -173,10 +173,10 @@ Vous devez également vérifier les « Informations de configuration » Skype En
 
 ![Les informations de configuration d’Skype Entreprise client utilisant l’authentification moderne indiquent une URL d’autorité OAUTH Lync et EWS de https://login.windows.net/common/oauth2/authorize .](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
 
-Vous devez également maintenir la touche CTRL en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type AuthN de « Bearer » qui représente le jeton du porteur utilisé \* dans OAuth.
+Vous devez également maintenir la touche Ctrl en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type AuthN de « Bearer » qui représente le jeton du porteur utilisé \* dans OAuth.
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Lien vers la vue d’ensemble de l’authentification moderne.](hybrid-modern-auth-overview.md)
+[Revenir à la vue d’ensemble de l’authentification moderne.](hybrid-modern-auth-overview.md)
 
 Avez-vous besoin de savoir comment utiliser l’authentification moderne (ADAL) pour vos clients Skype Entreprise client ? Nous avons des étapes [à suivre ici.](./hybrid-modern-auth-overview.md)

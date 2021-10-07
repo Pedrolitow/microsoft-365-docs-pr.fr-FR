@@ -10,24 +10,24 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b092db48a27407bd5e3ef3fdfd6c6eda02ef0c34
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 655ed51ae6ca6110bf86657a32be95a4084f5c9a
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59401937"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60184724"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control Removable Stockage Protection
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-La protection du stockage amovible des contrôles d’appareil dans Microsoft Defender pour point de terminaison empêche les utilisateurs, les points de terminaison ou les deux d’utiliser des supports de stockage amovibles non autorisés.
+La protection du stockage amovible des contrôles d’appareil dans Microsoft Defender pour point de terminaison empêche les utilisateurs, les points de terminaison ou les deux d’utiliser un support de stockage amovible non autorisé.
 
 ## <a name="protection-policies"></a>Stratégies de protection
 
@@ -42,7 +42,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 
 - Appliqué au niveau de l’appareil, au niveau de l’utilisateur. ou les deux. Autorisez uniquement des personnes spécifiques qui effectuent un accès en lecture/écriture/exécution à un stockage amovible spécifique sur un ordinateur spécifique.
 - Prise en charge de MEM OMA-URI et GPO.
-- Propriétés[d’appareil « pris](#device-properties)en charge » comme répertoriés.
+- Propriétés[d’appareil « prise](#device-properties)en charge » telles que répertoriées.
 - Pour plus d’Windows, voir [Contrôle d’accès au stockage amovible.](device-control-removable-storage-access-control.md)
 
 **Plateforme prise en charge** : Windows 10
@@ -63,7 +63,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 
 - Appliqué au niveau de l’appareil : la même stratégie s’applique à tout utilisateur connecté.
 - Prend en charge Microsoft Endpoint Manager et les objets de stratégie de groupe.
-- Propriétés[d’appareil « pris](#device-properties)en charge » comme répertoriés.
+- Propriétés[d’appareil « prise](#device-properties)en charge » telles que répertoriées.
 - Pour plus d’informations Windows, voir Comment contrôler des périphériques USB et d’autres supports amovibles à l’aide de [Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
 
 **Plateforme prise en charge** : Windows 10
@@ -87,7 +87,7 @@ La protection du stockage amovible des contrôles d’appareil dans Microsoft De
 
 **Fonctionnalités**:
 
-- Bloquez les données à écrire sur les lecteurs amovibles qui ne sont pas protégés par BitLocker.
+- Bloquer les données à écrire sur des lecteurs amovibles qui ne sont pas protégés par BitLocker.
 - Bloquer l’accès aux lecteurs amovibles, sauf s’ils ont été chiffrés sur un ordinateur de votre organisation
 
 **Description** - Pour plus d’informations sur Windows, voir [BitLocker - Paramètres](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).

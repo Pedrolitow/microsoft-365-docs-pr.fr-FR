@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -17,12 +17,12 @@ ms.collection:
 description: En savoir plus sur le paramètre sécurisé par défaut dans Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a688953d320eb16f140d631f6231f642819fa89
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 240cfe9d73f1fb339d38cc0f9ca91e89890022f8
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482838"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196428"
 ---
 # <a name="secure-by-default-in-office-365"></a>Sécurisé par défaut dans Office 365
 
@@ -59,7 +59,7 @@ Pour plus d’informations sur EOP, voir [Exchange Online Protection vue d’ens
 Pour plus d’informations sur ces remplacements, voir [Créer des listes d’expéditeurs sûrs.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> Nous avons supprimé l’action Déplacer le **message** vers le dossier Courrier indésirable pour un **verdict** de courrier de hameçonnage à haut niveau de confiance dans les stratégies EOP anti-courrier indésirable. Les stratégies anti-courrier indésirable qui utilisent cette action pour les messages de hameçonnage à haut niveau de confiance seront converties en message de mise **en quarantaine.** **L’action de redirection vers l’adresse de** messagerie pour les messages de hameçonnage à haut niveau de confiance n’est pas affectée.
+> Nous avons supprimé l’action Déplacer le **message** vers le dossier Courrier indésirable pour un **verdict** de courrier de hameçonnage à haut niveau de confiance dans les stratégies EOP anti-courrier indésirable. Les stratégies anti-courrier indésirable qui utilisent cette action pour les messages de hameçonnage à haut niveau de confiance seront converties en message de mise **en quarantaine.** **L’action de redirection vers l’adresse e-mail** pour les messages de hameçonnage à haut niveau de confiance n’est pas affectée.
 
 La sécurité par défaut n’est pas un paramètre qui peut être allumé ou désactivé, mais la façon dont notre filtrage est prêt à l’emploi pour empêcher les messages potentiellement dangereux ou indésirables de sortir de vos boîtes aux lettres. Les programmes malveillants et les messages de hameçonnage à haut niveau de confiance doivent être mis en quarantaine. Par défaut, seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants ou hameçonnage à haut niveau de confiance, et ils peuvent également signaler des faux positifs à Microsoft à partir de là. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 
@@ -67,9 +67,9 @@ La sécurité par défaut n’est pas un paramètre qui peut être allumé ou d�
 
 L’objectif de la sécurité par défaut est le suivant : nous prenons la même action sur le message que si vous connaissiez le message malveillant, même lorsqu’une exception configurée autoriserait sinon la livraison du message. Il s’agit de la même approche que nous avons toujours utilisée sur les programmes malveillants, et maintenant, nous étendons ce comportement aux messages de hameçonnage à haut niveau de confiance.
 
-Nos données indiquent qu’un utilisateur a 30 fois plus de chances de cliquer sur un lien malveillant dans les messages du dossier Courrier indésirable que de mettre en quarantaine. Nos données indiquent également que le taux de faux positifs (messages positifs marqués comme faux) pour les messages de hameçonnage à niveau de confiance élevé est très faible, et que les administrateurs peuvent résoudre les faux positifs avec des envois d’administrateur.
+Nos données indiquent qu’un utilisateur a 30 fois plus de chances de cliquer sur un lien malveillant dans les messages du dossier Courrier indésirable que de mettre en quarantaine. Nos données indiquent également que le taux de faux positifs (messages positifs marqués comme faux) pour les messages de hameçonnage à niveau de confiance élevé est très faible et que les administrateurs peuvent résoudre les faux positifs avec des envois d’administrateur.
 
-Nous avons également déterminé que les listes d’expéditeurs et de domaines autorisés dans les stratégies anti-courrier indésirable et les expéditeurs Coffre dans Outlook étaient trop larges et causaient plus de dommages que de bien.
+Nous avons également déterminé que les listes d’expéditeurs et de domaines autorisés dans les stratégies anti-courrier indésirable et les expéditeurs Coffre dans Outlook étaient trop larges et causaient plus de dommages que de bon.
 
 Autrement dit : en tant que service de sécurité, nous agissant en votre nom pour empêcher la compromissions vos utilisateurs.
 
@@ -80,4 +80,4 @@ Vous ne devez envisager d’utiliser des substitutions que dans les scénarios s
 - Simulations de hameçonnage : les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
 - Boîtes aux lettres De sécurité/SecOps : boîtes aux lettres dédiées utilisées par les équipes de sécurité pour obtenir des messages non filtrés (bonnes et mauvaises). Teams peuvent ensuite passer en revue pour voir s’ils contiennent du contenu malveillant.
 - Filtres tiers : la sécurité par défaut ne s’applique pas lorsque l’enregistrement MX du domaine ne pointe pas vers Office 365.
-- Faux positifs : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft [via des envois d’administrateur.](admin-submission.md) Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.
+- Faux positifs : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft [via des envois d’administrateurs.](admin-submission.md) Comme pour toutes les substitutions, il est recommandé qu’elles soient temporaires.

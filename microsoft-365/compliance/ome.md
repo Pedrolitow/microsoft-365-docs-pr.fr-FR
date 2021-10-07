@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 02/07/2020
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation.
-ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 04c2ddd3bfb77199f924a10e29f23dc3d27cc38b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206076"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198696"
 ---
 # <a name="message-encryption"></a>Chiffrement des messages
 
@@ -44,7 +44,7 @@ En tant qu’administrateur, vous pouvez également définir des règles de flux
 
 Contrairement à la version précédente d’OME, les nouvelles fonctionnalités offrent une expérience d’expéditeur unifiée, que vous envoyiez des messages à l’intérieur de votre organisation ou à des destinataires en dehors de Microsoft 365. En outre, les destinataires qui reçoivent un message électronique protégé envoyé à un compte Microsoft 365 dans Outlook 2016 ou Outlook sur le web n’ont aucune autre action à prendre pour afficher le message. Il fonctionne en toute transparence. Les destinataires qui utilisent d’autres clients de messagerie et fournisseurs de services de messagerie ont également une expérience améliorée. Pour plus d’informations, voir En savoir plus sur les messages protégés [dans Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) et comment ouvrir un message [protégé](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
 
-Pour obtenir la liste détaillée des différences entre la version précédente d’OME et les nouvelles fonctionnalités OME, voir Comparer les [versions d’OME.](ome-version-comparison.md)
+Pour obtenir une liste détaillée des différences entre la version précédente d’OME et les nouvelles fonctionnalités OME, voir Comparer les [versions d’OME.](ome-version-comparison.md)
 
 Lorsqu’une personne envoie un message électronique qui correspond à une règle de flux de messagerie de chiffrement, le message est chiffré avant d’être envoyé. Tous les utilisateurs finaux Microsoft 365 qui utilisent des clients Outlook pour lire les messages reçoivent des expériences de lecture natives de première classe pour les messages chiffrés et protégés par des droits, même s’ils ne font pas partie de la même organisation que l’expéditeur. Les clients Outlook pris en charge incluent Outlook bureau, Outlook Mac, Outlook mobile sur iOS et Android et Outlook sur le web (anciennement Outlook Web App).
 

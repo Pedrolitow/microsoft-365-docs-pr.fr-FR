@@ -1,5 +1,5 @@
 ---
-title: Afficher et gérer les actions dans le centre de gestion des actions
+title: Afficher et gérer les actions dans le centre de gestion de l’action
 description: Utiliser le centre de gestion des actions pour afficher et gérer les actions de correction
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,14 +21,14 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: daedba79bb2fd9ac452cbef08d74d4d876122478
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 949fbfa6b34fe78e7d5a575756547fdadfef8c8f
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203754"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199500"
 ---
-# <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion des actions
+# <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion de l’action
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -53,7 +53,7 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Dans le centre de l’action, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
+3. Dans le centre de actions, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
 
    ![Approuver ou rejeter une action.](../../media/air-actioncenter-itemselected.png)
 

@@ -12,31 +12,31 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3bbcdbcc8dae41d9de2071e90b0bec877cef63ba
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182271"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198720"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>En savoir plus sur les obstacles aux informations Microsoft 365
 
 Les services de cloud computing Microsoft incluent des fonctionnalités enrichies de communication et de collaboration. Toutefois, supposons que vous vouliez restreindre la communication et la collaboration entre deux groupes pour éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Ou, peut-être souhaitez-vous restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 la communication et la collaboration entre les groupes et les organisations, existe-t-il un moyen de restreindre la communication et la collaboration entre des groupes d’utilisateurs spécifiques si nécessaire ? Avec les obstacles à l’information, vous pouvez !
 
-Microsoft Teams, SharePoint Online et OneDrive Entreprise les obstacles aux informations. En [supposant](#required-licenses-and-permissions) que votre abonnement inclut des obstacles à l’information, un administrateur de conformité ou un administrateur des obstacles à l’information peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs Microsoft Teams. Les stratégies de obstacle à l’information peuvent être utilisées dans des situations comme celles-ci :
+Microsoft Teams, SharePoint Online et OneDrive Entreprise les obstacles aux informations. En [supposant](#required-licenses-and-permissions) que votre abonnement inclut des obstacles à l’information, un administrateur de conformité ou un administrateur des obstacles à l’information peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs dans Microsoft Teams. Les stratégies de obstacle à l’information peuvent être utilisées dans des situations comme celles-ci :
 
 - L’utilisateur du jour ne doit pas communiquer ou partager des fichiers avec l’équipe marketing
 - Le personnel financier travaillant sur des informations confidentielles sur l’entreprise ne doit pas communiquer ou partager des fichiers avec certains groupes au sein de leur organisation
 - Une équipe interne avec du matériel de secret commercial ne doit pas appeler ou discuter en ligne avec des personnes de certains groupes au sein de leur organisation
 - Une équipe de recherche doit uniquement appeler ou discuter en ligne avec une équipe de développement de produits
-- Un site pour le groupe d’informations d’une journée ne doit pas être partagé ou accessible par toute personne extérieure au groupe de veille du jour
+- Un site pour le groupe d’informations d’une journée ne doit pas être partagé ou accessible par quiconque en dehors du groupe de veille du jour
 
 > [!IMPORTANT]
-> Obstacles à l’information ***prend uniquement en charge** les restrictions _ à double sens. Les restrictions à sens seul, telles que le marketing, peuvent communiquer et collaborer avec des courtiers de jour, mais les courtiers ne peuvent pas communiquer et collaborer avec marketing __*_ n’est pas pris en charge **.
+> Obstacles à l’information ***prend uniquement en charge** les restrictions _ à double sens. Les restrictions à sens seul, telles que le marketing, peuvent communiquer et collaborer avec les courtiers du jour, mais les courtiers ne peuvent pas communiquer et collaborer avec marketing __*_ n’est pas pris en charge **.
 
 Pour tous ces exemples de scénarios (et bien plus encore), des stratégies d’obstacle à l’information peuvent être définies pour empêcher ou autoriser les communications et la collaboration dans Microsoft Teams, SharePoint Online et OneDrive. De telles stratégies peuvent empêcher les personnes d’appeler ou de discuter avec celles qu’elles ne devraient pas, ou permettre aux utilisateurs de communiquer uniquement avec des groupes spécifiques Microsoft Teams. Avec les stratégies de obstacle à l’information en vigueur, chaque fois que les utilisateurs couverts par ces stratégies tentent de communiquer et de collaborer avec d’autres personnes dans Microsoft Teams, des vérifications SharePoint Online ou OneDrive sont réalisées pour empêcher (ou autoriser) la communication et la collaboration (telles que définies par les stratégies d’obstacle à l’information).
 
@@ -69,7 +69,7 @@ Si les personnes impliquées sont incluses dans une stratégie de cloisonnement 
 
 Pour en savoir plus sur l’expérience utilisateur avec les obstacles à l’information, consultez les [obstacles aux](/MicrosoftTeams/information-barriers-in-teams)informations Microsoft Teams .
 
-Dans SharePoint online et OneDrive, les stratégies d’obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
+Dans SharePoint online et OneDrive, les stratégies de obstacle à l’information déterminent et empêchent les types de collaborations non autorisées suivants :
 
 - Ajout d’un membre à un site
 - Accès au site ou au contenu par un utilisateur
@@ -97,15 +97,15 @@ Pour [définir ou modifier des stratégies de obstacle aux](information-barriers
 - Administrateur de conformité
 - Gestion de la conformité IB
 
-(Pour en savoir plus sur les rôles et les [autorisations,](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)voir Autorisations dans le Centre Office 365 sécurité & conformité.)
+(Pour en savoir plus sur les rôles et les [autorisations,](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)voir Autorisations dans le Centre Office 365 sécurité et conformité &.)
 
-Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que des paramètres, pour votre organisation.
+Vous devez être familiarisé avec les cmdlets PowerShell pour définir, valider ou modifier des stratégies d’obstacle aux informations. Bien que nous fournissions plusieurs exemples d’cmdlets PowerShell dans [l’article](information-barriers-policies.md), vous devez connaître d’autres détails, tels que les paramètres, pour votre organisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [En savoir plus sur les obstacles aux informations dans Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [En savoir plus sur les obstacles aux informations dans SharePoint Online](/sharepoint/information-barriers)
 - [En savoir plus sur les obstacles aux informations dans OneDrive](/onedrive/information-barriers)
-- [Voir les attributs qui peuvent être utilisés pour les stratégies d’obstacle à l’information](information-barriers-attributes.md)
+- [Voir les attributs qui peuvent être utilisés pour les stratégies de obstacle à l’information](information-barriers-attributes.md)
 - [Définir des stratégies pour les obstacles à l’information](information-barriers-policies.md)
 - [Modifier (ou supprimer) des stratégies de cloisonnement de l’information](information-barriers-edit-segments-policies.md)

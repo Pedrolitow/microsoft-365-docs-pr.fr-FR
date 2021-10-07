@@ -8,7 +8,7 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -19,12 +19,12 @@ description: Découvrez les actions de correction dans les fonctionnalités d’
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 987771616acfd2f2faf425e525505b320155388e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4d81fe5e2baa4146136d7e55461290a31ef2462b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59202847"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196620"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
@@ -36,10 +36,10 @@ Comme des enquêtes automatisées sur & de collaboration  entraînent des verdic
 - Suppression de messages électroniques ou de clusters de suppression (soft)
 - Turning off external mail forwarding
 
-Ces mesures correctives ne sont prises que si votre équipe en charge des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Dans certains cas, vous pouvez reconsidérer les actions envoyées.  Vous devez faire partie du rôle De recherche & purge avant d’effectuer des actions.
+Ces mesures correctives ne sont prises que si votre équipe en charge des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Dans certains cas, vous pouvez reconsidérer les actions envoyées.  Vous devez faire partie du rôle de & de recherche avant d’effectuer des actions.
 
 ## <a name="approve-or-reject-pending-actions"></a>Approuver (ou rejeter) les actions en attente
-Il existe quatre façons de rechercher et d’agir sur des enquêtes automatiques :
+Il existe quatre méthodes différentes pour rechercher et prendre des mesures d’investigation automatique :
 
 - [File d’attente des incidents](https://security.microsoft.com/incidents)
 - [Centre de notifications](https://security.microsoft.com/action-center/pending)
@@ -58,7 +58,7 @@ Il existe quatre façons de rechercher et d’agir sur des enquêtes automatique
 ## <a name="investigation-queue"></a>File d’attente d’examen
 
 1. Ouvrez le Microsoft 365 Defender <https://security.microsoft.com> () et connectez-vous.
-2. Naviguez à partir de la page alertes/incident.
+2. Accédez à la page alertes/incident.
 3. Dans la page Examen, allez dans **l’onglet Actions en** attente.
 4. Sélectionnez un élément dans la liste. Son volet latéral s’ouvre.
 5. Dans le volet latéral, prenez des mesures d’approbation ou de rejet.
@@ -87,7 +87,7 @@ Il existe deux façons de reconsidérer les actions envoyées :
 - Via le centre [de l’action unifiée.](https://security.microsoft.com/action-center)
 - Bien que le [centre Office actions .](https://security.microsoft.com/threatincidents)
 
-## <a name="change-or-undo-through-the-unified-action-center"></a>Modifier ou annuler via le centre de l’action unifiée
+## <a name="change-or-undo-through-the-unified-action-center"></a>Modifier ou annuler par le biais du centre de l’action unifiée
 
 1. Go to the [unified action center](https://security.microsoft.com/action-center) and sign in.
 2. Sous **l’onglet** Historique, sélectionnez une action que vous souhaitez modifier ou annuler.

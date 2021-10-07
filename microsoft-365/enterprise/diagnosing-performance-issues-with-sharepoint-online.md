@@ -7,7 +7,7 @@ ms.date: 7/9/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Cet article vous montre comment diagnostiquer des problèmes courants avec votre site SharePoint Online à l’aide des outils de développement Internet Explorer.
-ms.openlocfilehash: 44e60a2144b1a9a8ecc9ef5572e5cfd988c4b8af
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 5910e1164ffdf892ffc7252e0e887a6633598c3c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59165409"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198516"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostic des problèmes de performances avec SharePoint Online
 
@@ -75,7 +75,7 @@ Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navi
 
 ### <a name="to-view-sharepoint-response-header-information"></a>Pour afficher les SharePoint’en-tête de réponse
   
-1. Assurez-vous que les outils F12 sont installés. Pour plus d’informations sur le téléchargement et l’installation de ces outils, voir Nouveautés [des outils F12.](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
+1. Assurez-vous que les outils F12 sont installés. Pour plus d’informations sur le téléchargement et l’installation de ces outils, voir [Nouveautés des outils F12.](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 
 2. Dans les outils F12, sous **l’onglet** Réseau, appuyez sur le bouton vert pour charger une page.
 
@@ -90,8 +90,8 @@ Dans SharePoint Online, vous pouvez accéder aux informations renvoyées au navi
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Qu’est-ce qui provoque des problèmes de performances dans SharePoint Online ?
 <a name="F12ToolInfo"> </a>
 
-L’article Options de navigation pour [SharePoint Online](navigation-options-for-sharepoint-online.md) montre un exemple d’utilisation de la valeur SPRequestDuration pour déterminer que la navigation structurelle compliquée a provoqué un long processus de la page sur le serveur. En prenant une valeur pour un site de référence (sans personnalisation), il est possible de déterminer si le chargement d’un fichier donné prend beaucoup de temps. L’exemple utilisé dans [les options de navigation SharePoint Online](navigation-options-for-sharepoint-online.md) est le fichier .aspx principal. Ce fichier contient la plupart du code ASP.NET qui s’exécute pour le chargement de votre page. Selon le modèle de site que vous utilisez, il peut s’agit de start.aspx, home.aspx, default.aspx ou d’un autre nom si vous personnalisez la page d’accueil. Si ce nombre est beaucoup plus élevé que votre site de référence, cela indique qu’un problème de performances est à l’origine d’un problème dans votre page.
+L’article Options de navigation pour [SharePoint Online](navigation-options-for-sharepoint-online.md) montre un exemple d’utilisation de la valeur SPRequestDuration pour déterminer que la navigation structurelle complexe a provoqué un long processus de la page sur le serveur. En prenant une valeur pour un site de référence (sans personnalisation), il est possible de déterminer si le chargement d’un fichier donné prend beaucoup de temps. L’exemple utilisé dans [les options de navigation SharePoint Online](navigation-options-for-sharepoint-online.md) est le fichier .aspx principal. Ce fichier contient la plupart du code ASP.NET qui s’exécute pour le chargement de votre page. Selon le modèle de site que vous utilisez, il peut s’agit de start.aspx, home.aspx, default.aspx ou d’un autre nom si vous personnalisez la page d’accueil. Si ce nombre est beaucoup plus élevé que votre site de référence, cela indique qu’un problème de performances est à l’origine d’un problème dans votre page.
   
 Une fois que vous avez identifié qu’un problème spécifique à votre site est identifié, la meilleure façon de déterminer ce qui provoque des performances médiocres consiste à éliminer toutes les causes possibles, telles que les personnalisations de page, puis à les rajouter un par un au site. Une fois que vous avez supprimé suffisamment de personnalisations pour que la page s’exécute bien, vous pouvez rajouter des personnalisations spécifiques une par une.
   
-Par exemple, si vous avez une navigation très complexe, essayez de modifier la navigation pour ne pas afficher les sous-sites, puis vérifiez les outils de développement pour voir si cela fait une différence. Ou si vous avez une grande quantité de roll-ups de contenu, essayez de les supprimer de votre page et de voir si cela améliore les choses. Si vous éliminez toutes les causes possibles et que vous les ajoutez une par une, vous pouvez facilement identifier les fonctionnalités qui sont le problème le plus important, puis travailler à une solution.
+Par exemple, si vous avez une navigation très complexe essayez de modifier la navigation pour ne pas afficher les sous-sites, vérifiez les outils de développement pour voir si cela fait une différence. Ou si vous avez une grande quantité de roll-ups de contenu, essayez de les supprimer de votre page et de voir si cela améliore les choses. Si vous éliminez toutes les causes possibles et que vous les ajoutez une par une, vous pouvez facilement identifier les fonctionnalités qui sont le problème le plus important, puis travailler à une solution.

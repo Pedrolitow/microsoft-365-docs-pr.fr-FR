@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,12 +16,12 @@ ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f3f2a2bb49900a65f89925b5cc6aab94db42ad50
-ms.sourcegitcommit: 6968594dc8cf8b30a4c958df6d65dfd0cd2cfae1
+ms.openlocfilehash: f2e1945f3fce3445c6bbed18aaf676c5df1e2486
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59489528"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60185000"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Activer et configurer la protection antivirus Microsoft Defender pour qu’il soit toujours activé dans les stratégies de groupe
 
@@ -44,7 +44,7 @@ Pour activer et configurer la protection toujours active :
 
     1. Dans votre zone Windows 10 de recherche de la barre des tâches, tapez **gpedit**.
 
-    2. Sous **La meilleure correspondance,** **sélectionnez Modifier la stratégie de groupe** pour lancer **l’Éditeur de stratégie de groupe local.**
+    2. Sous **La meilleure correspondance,** **sélectionnez Modifier la stratégie de** groupe pour lancer **l’Éditeur de stratégie de groupe local.**
     
        ![Résultat de recherche de la barre des tâches GPEdit.](images/gpedit-search.png)
 
@@ -59,7 +59,7 @@ Pour activer et configurer la protection toujours active :
       |Paramètre|Valeur par défaut|
       |---|---|
       |Autoriser le démarrage du service anti-programme malveillant avec une priorité normale <p> Vous pouvez réduire la priorité du moteur Antivirus Microsoft Defender de recherche. La réduction de la priorité peut être utile dans les cas où vous souhaitez avoir un processus de démarrage aussi fin que possible ; toutefois, cette action peut affecter la protection des points de terminaison. Procédez avec précaution.|Activé
-      |Autoriser le service anti-programme malveillant à rester toujours en cours d’exécution <p> Si les mises à jour de la protection ont été désactivées, vous pouvez configurer Antivirus Microsoft Defender pour qu’elles s’exécutent toujours. La désactivation des mises à jour de la protection réduit la protection des points de terminaison.|Désactivé|
+      |Autoriser le service anti-programme malveillant à rester en cours d’exécution <p> Si les mises à jour de la protection ont été désactivées, vous pouvez configurer Antivirus Microsoft Defender pour qu’elles s’exécutent toujours. La désactivation des mises à jour de la protection réduit la protection des points de terminaison.|Désactivé|
 
    2. Configurez le paramètre comme il convient, puis sélectionnez **OK.**
 
@@ -77,7 +77,7 @@ Pour activer et configurer la protection toujours active :
 
 5. Configurez le paramètre de stratégie Antivirus Microsoft Defender’analyse, comme suit :
 
-    1. Dans **l’Antivirus Microsoft Defender’arborescence** du volet gauche, sélectionnez **Analyse.**
+    1. Dans **l’arborescence Antivirus Microsoft Defender** sur le volet gauche, sélectionnez **Analyse.**
     
        ![Antivirus Microsoft Defender Options d’analyse.](images/gpedit-windows-defender-antivirus-scan.png)
 
@@ -110,7 +110,7 @@ Pour activer et configurer la protection toujours active :
 |Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur <p> Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers et des programmes sur votre ordinateur. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.|Activé|
 |Configurer le remplacement de paramètre local pour activer la protection en temps réel <p> Configurez une substitution locale pour la configuration afin d’activer la protection en temps réel. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.|Activé|
 |Configurer le remplacement de paramètre local pour la surveillance de l’activité des fichiers entrants et sortants <p> Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers entrants et sortants. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.|Activé|
-|Configurer la surveillance de l’activité des fichiers et des programmes entrants et sortants <p> Spécifiez si la surveillance doit se produire sur les directions entrantes, sortantes, à la fois ou non. Cette action est pertinente pour les installations Windows Server où vous avez défini des serveurs ou des rôles serveur spécifiques qui voient de grandes quantités de modifications de fichiers dans un seul sens et que vous souhaitez améliorer les performances du réseau. Les points de terminaison (et serveurs) entièrement mis à jour sur un réseau ne voient que peu d’impact sur les performances, quel que soit le nombre ou la direction des modifications apportées aux fichiers.|Activé (dans les deux directions)|
+|Configurer la surveillance pour l’activité des fichiers et des programmes entrants et sortants <p> Spécifiez si la surveillance doit se produire sur les directions entrantes, sortantes, à la fois ou non. Cette action est pertinente pour les installations de Windows Server où vous avez défini des serveurs ou des rôles serveur spécifiques qui voient de grandes quantités de modifications de fichiers dans un seul sens et que vous souhaitez améliorer les performances du réseau. Les points de terminaison (et serveurs) entièrement mis à jour sur un réseau ne voient que peu d’impact sur les performances, quel que soit le nombre ou la direction des modifications apportées aux fichiers.|Activé (dans les deux directions)|
 
 ## <a name="disable-real-time-protection-in-group-policy"></a>Désactiver la protection en temps réel dans la stratégie de groupe
 
@@ -124,7 +124,7 @@ La fonctionnalité de protection en temps réel principale est activée par déf
 1. Ouvrez **l’Éditeur de stratégie de groupe local.**
 
    1. Dans votre zone Windows 10 de recherche de la barre des tâches, tapez **gpedit**.
-   2. Sous **La meilleure correspondance,** **sélectionnez Modifier la stratégie de groupe** pour lancer **l’Éditeur de stratégie de groupe local.**
+   2. Sous **La meilleure correspondance,** **sélectionnez Modifier la stratégie de** groupe pour lancer **l’Éditeur de stratégie de groupe local.**
 
 2. Dans le volet gauche de l’Éditeur de  stratégie de groupe **local,** développez l’arborescence modèles d’administration de configuration ordinateur \>  \> **Windows composants** Antivirus Microsoft Defender \>  \> **protection en temps réel**.
 

@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-collabgovernance
@@ -15,13 +15,13 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: En savoir plus sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
-ms.openlocfilehash: 5421f12109fb40e4e5cc6f68568a3b5f1873c7ce
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: Informations sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
+ms.openlocfilehash: c1389b7dd787df6b4aab4cd5bb00377e05b99ff6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59203676"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199272"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier la gouvernance de l’organisation et du cycle de vie Microsoft 365 groupes et Microsoft Teams
 
@@ -72,7 +72,7 @@ Une fois que vous avez fixé l’expiration des groupes :
 - Les propriétaires du groupe sont avertis de renouveler le groupe à mesure que l’expiration approche.
 - Les groupes actifs sont renouvelés automatiquement.
 - Tout groupe qui n’est pas renouvelé est supprimé.
-- Tout groupe supprimé peut être restauré dans les 30 jours par les propriétaires du groupe ou l’administrateur.
+- Tout groupe supprimé peut être restauré dans un délai de 30 jours par les propriétaires du groupe ou l’administrateur.
 
 Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, voir [Microsoft 365 stratégie d’expiration de groupe.](microsoft-365-groups-expiration-policy.md)
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - OWC150
 - MET150
@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les types d’adress
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a02313bf8c36fe0be91340e421c69a8dc5c0842
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 412b6eb7045051c21a88c8b4b2ba5e80a06832dd
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164673"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60199428"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse De pour empêcher le hameçonnage
 
@@ -57,7 +57,7 @@ L’adresse De est définie en détail sur plusieurs RFC (par exemple, les secti
 
 - **Nom complet**: expression facultative qui décrit le propriétaire de l’adresse e-mail.
 
-  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme indiqué. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
+  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme illustré. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
   - Si l’adresse De comprend un nom complet, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
   - Microsoft recommande vivement d’insérer un espace entre le nom complet et l’adresse e-mail.
 
@@ -100,7 +100,7 @@ Les adresses de messagerie De suivantes ne sont pas valides :
 
 - `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Texte après l’adresse e-mail.)
 
-- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entouré de guillemets doubles.)
+- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entre guillemets doubles.)
 
 - `From: "Microsoft 365 <sender@contoso.com>"` (La valeur entière est incorrectement entourée de guillemets doubles.)
 

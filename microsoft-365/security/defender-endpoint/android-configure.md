@@ -2,27 +2,25 @@
 title: Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android
 description: Décrit comment configurer Microsoft Defender pour endpoint sur Android
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mde, android, configuration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: afff05ac0e18ac41b1e2ba70b59ed4dfd0c6a22a
-ms.sourcegitcommit: e685fafd6dde4901c378685b423883faed7b4fe7
+ms.openlocfilehash: 4db57a39d6270608a5107a77f41ce11fdd139c78
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "59460315"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60186631"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Configurer Defender pour le point de terminaison sur les fonctionnalités Android
 
@@ -61,7 +59,7 @@ Le contrôle de confidentialité du rapport sur les menaces de programmes malvei
 
 Pour l’activer pour des utilisateurs ciblés, utilisez les étapes suivantes :
 
-1. Dans [Microsoft Endpoint Manager centre d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431) allez **sur** Profils de configuration des appareils Créer un profil  >    >   et entrez les paramètres suivants :
+1. Dans [Microsoft Endpoint Manager d’administration,](https://go.microsoft.com/fwlink/?linkid=2109431) allez **sur** Profils de configuration des appareils Créer un profil et entrez les  >    >   paramètres suivants :
 
    - **Plateforme :** sélectionner un administrateur d’appareil Android
    - **Profil**: sélectionnez « Personnalisé », puis cliquez sur Créer
@@ -78,7 +76,7 @@ Pour l’activer pour des utilisateurs ciblés, utilisez les étapes suivantes :
 
 L’activation du contrôle de confidentialité ci-dessus n’aura pas d’impact sur la vérification de la conformité de l’appareil ou l’accès conditionnel, par exemple, les appareils avec une application malveillante auront toujours un niveau de risque « Moyen ».
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 - [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 - [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)
