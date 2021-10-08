@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 10/06/2021
+ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 52c1c4ba86f596e7832b5cb3feaaa65688ba452d
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 3ce62eb9019b233bf2c52f9ce990813650ac4bbe
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239587"
+ms.locfileid: "60245704"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 3 : Intégration
 
@@ -38,12 +38,12 @@ ms.locfileid: "60239587"
 |--|--|--|
 || |*Vous êtes là !* |
 
-**Bienvenue dans la phase 3 du [passage à Defender pour point de terminaison.](switch-to-microsoft-defender-migration.md#the-migration-process)** Cette phase de migration comprend les étapes suivantes :
+**Bienvenue dans la phase 3 du [passage à Defender pour Point de terminaison.](switch-to-microsoft-defender-migration.md#the-migration-process)** Cette phase de migration comprend les étapes suivantes :
 
 1. [Intégrer des appareils à Defender pour le point de terminaison.](#onboard-devices-to-microsoft-defender-for-endpoint)
 2. [Exécutez un test de détection.](#run-a-detection-test)
 3. [Confirmez que Antivirus Microsoft Defender est en mode passif sur vos points de terminaison.](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints)
-4. [Obtenir les mises à jour de Antivirus Microsoft Defender](#get-updates-for-microsoft-defender-antivirus).
+4. [Obtenir les mises à jour Antivirus Microsoft Defender](#get-updates-for-microsoft-defender-antivirus).
 5. [Désinstallez votre solution non-Microsoft.](#uninstall-your-non-microsoft-solution)
 6. [Assurez-vous que Defender pour le point de terminaison fonctionne correctement.](#make-sure-defender-for-endpoint-is-working-correctly)
 
@@ -66,13 +66,13 @@ Les méthodes de déploiement varient en fonction du système d’exploitation e
 
 |Systèmes d’exploitation  |Méthodes  |
 |---------|---------|
-|<ul><li> Windows 10</li> <li>Windows Server 1803 et 2019</li> <li>Windows Server 2012 R2 et 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br>   [Stratégie de groupe](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Gestion des périphériques mobiles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.
-|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) ou [Azure Defender](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
-|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Professionnel </li> <li> Windows 8.1 Entreprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
-| <ul><li> macOS :<p>11.3.1 (Big Sur) <p>10.15 (Îles)<p>10.14 (Mojave) | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JamF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)   |
-| <ul><li>Linux :<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS ou un LTS supérieur<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |  [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|  
-| <ul><li>iOS | [Microsoft Endpoint Manager](ios-install.md)     |
-|<ul><li> Android  | [Microsoft Endpoint Manager](android-intune.md)               | 
+|Windows 10 ou ultérieure<br/><br/>Windows Server 2019 ou une ultérieure<br/><br/>Windows Serveur, version 1803 ou ultérieure<br/><br/>Windows Server 2012 R2 et 2016 <sup> [[1](#fn1)]<sup>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br><br/>   [Stratégie de groupe](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Gestion des périphériques mobiles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE**: un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) ou [Azure Defender](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
+|Windows 8.1 Entreprise<br/><br/>Windows 8.1 Professionnel<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
+| macOS :<br/>11.3.1 (Big Sur)<br/>10.15 (Îles)<br/>10.14 (Mojave) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JamF Pro](mac-install-with-jamf.md)<br/><br/>[Gestion des appareils mobiles](mac-install-with-other-mdm.md)   |
+| Linux :<br/>RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS ou un LTS supérieur<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2 |  [Script local](linux-install-manually.md) <br><br/> [Sondent](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
+| iOS | [Microsoft Endpoint Manager](ios-install.md)     |
+|Android  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
 
@@ -88,9 +88,9 @@ Pour vérifier que vos appareils intégrés sont correctement connectés à Defe
 
 |Système d’exploitation|Aide|
 |---|---|
-|Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windows Serveur, version 1803 ou ultérieure <p> Windows Server 2016 <p> Windows Server 2012 R2|Voir [Exécuter un test de détection.](run-detection-test.md) <p> Visitez le site des scénarios de démonstration defender pour point de terminaison () et <https://demo.wd.microsoft.com> essayez un ou plusieurs des scénarios. Par exemple, essayez le scénario de démonstration **de la protection** livrée par le cloud.|
-|macOS : 11.3.1 (Big Sur) ; 10.15 (Île); 10.14 (Mojave)|Téléchargez et utilisez l’application CASER sur <https://aka.ms/mdatpmacosdiy> . <p> Pour plus d’informations, [voir Defender pour point de terminaison sur macOS.](microsoft-defender-endpoint-mac.md)|
-|Linux : RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS ou un LTS supérieur ; SLES 12+; Debian 9+; Oracle Linux 7.2|1. Exécutez la commande suivante et recherchez un résultat **de 1**: `mdatp health --field real_time_protection_enabled` .<br/><br/>2. Ouvrez une fenêtre Terminal et exécutez la commande suivante `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` :<br/><br/>3. Exécutez la commande suivante pour lister les menaces détectées : `mdatp threat list` .<br/><br/>Pour plus d’informations, [voir Defender for Endpoint sur Linux.](microsoft-defender-endpoint-linux.md)|
+|Windows 10 ou ultérieure<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Serveur, version 1803 ou ultérieure<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Voir [Exécuter un test de détection.](run-detection-test.md)<br/><br/>Visitez le site de démonstration Defender for Endpoint () et essayez un ou <https://demo.wd.microsoft.com> plusieurs des scénarios. Par exemple, essayez le scénario de démonstration **de la protection** livrée par le cloud.|
+|macOS :<br/> 11.3.1 (Big Sur)<br/>10.15 (Îles)<br/>10.14 (Mojave)|Téléchargez et utilisez l’application CASER sur <https://aka.ms/mdatpmacosdiy> . <br/><br/> Pour plus d’informations, [voir Defender pour point de terminaison sur macOS.](microsoft-defender-endpoint-mac.md)|
+|Linux :<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS ou un LTS supérieur<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|1. Exécutez la commande suivante et recherchez un résultat **de 1**: `mdatp health --field real_time_protection_enabled` .<br/><br/>2. Ouvrez une fenêtre Terminal et exécutez la commande suivante `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt` :<br/><br/>3. Exécutez la commande suivante pour lister les menaces détectées : `mdatp threat list` .<br/><br/>Pour plus d’informations, [voir Defender for Endpoint sur Linux.](microsoft-defender-endpoint-linux.md)|
 
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Vérifier que Antivirus Microsoft Defender est en mode passif sur vos points de terminaison
@@ -135,7 +135,7 @@ Si vous utilisez Windows Server 2016, vous de devez démarrer Antivirus Microsof
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtenir les mises à jour de Antivirus Microsoft Defender
 
-Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque, même si Antivirus Microsoft Defender s’exécute en mode passif. (Voir [Antivirus Microsoft Defender compatibilité.)](microsoft-defender-antivirus-compatibility.md)
+Maintenir Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque, même si Antivirus Microsoft Defender s’exécute en mode passif. (Voir [Antivirus Microsoft Defender compatibilité.)](microsoft-defender-antivirus-compatibility.md)
 
 Il existe deux types de mises à jour liées à la mise Antivirus Microsoft Defender jour :
 
@@ -165,7 +165,7 @@ Maintenant que vous avez intégré Defender pour le point de terminaison et que 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-**Félicitations**! Vous avez terminé votre [migration vers Defender pour le point de terminaison](switch-to-microsoft-defender-migration.md#the-migration-process)!
+**Félicitations**! Vous avez terminé votre [migration vers Defender pour endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
 
 - [Visitez votre tableau de bord des opérations](security-operations-dashboard.md) de sécurité dans le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
 - [Gérer Defender pour le point de terminaison, après la migration.](manage-atp-post-migration.md)

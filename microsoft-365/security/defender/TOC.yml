@@ -146,7 +146,7 @@
               href: investigate-users.md
             - name: Répondre à votre premier incident
               items:
-                - name: Introduction
+                - name: Présentation
                   href: first-incident-overview.md
                 - name: Préparation
                   href: first-incident-prepare.md
@@ -166,6 +166,8 @@
               href: /security/compass/incident-response-playbooks
             - name: Recevoir des notifications d’incident par e-mail
               href: get-incident-notifications.md
+            - name: "Utiliser Power\_Automate pour le tri de menaces"
+              href: use-power-automate.md
         - name: Gérer des enquêtes et réponses automatisées
           items:
             - name: Vue d’ensemble
@@ -306,24 +308,22 @@
               href: ../mtp/microsoft-threat-experts.md
             - name: Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
               href: ../mtp/configure-microsoft-threat-experts.md
-        - name: "Intégration de SecOps pour Microsoft\_365\_Defender"
-          items:
-            - name: Vue d’ensemble
-              href: integrate-microsoft-365-defender-secops.md
-            - name: Étape 1. La préparation des opérations.
-              href: integrate-microsoft-365-defender-secops-plan.md
-            - name: Étape 2. Évaluation de la préparation à l’aide de la confiance zéro
-              href: integrate-microsoft-365-defender-secops-readiness.md
-            - name: Étape 3. Intégration à vos services SOC
-              href: integrate-microsoft-365-defender-secops-services.md
-            - name: 'Étape 4. Rôles, responsabilités et supervision'
-              href: integrate-microsoft-365-defender-secops-roles.md
-            - name: Étape 5. Cas d’utilisation de test
-              href: integrate-microsoft-365-defender-secops-use-cases.md
-            - name: Étape 6. Tâches de maintenance SOC
-              href: integrate-microsoft-365-defender-secops-tasks.md
-        - name: "Utiliser Power\_Automate pour le tri de menaces"
-          href: use-power-automate.md
+    - name: Intégration de SecOps
+      items:
+        - name: Vue d’ensemble
+          href: integrate-microsoft-365-defender-secops.md
+        - name: Étape 1. La préparation des opérations.
+          href: integrate-microsoft-365-defender-secops-plan.md
+        - name: Étape 2. Évaluation de la préparation à l’aide de la confiance zéro
+          href: integrate-microsoft-365-defender-secops-readiness.md
+        - name: Étape 3. Intégration à vos services SOC
+          href: integrate-microsoft-365-defender-secops-services.md
+        - name: 'Étape 4. Rôles, responsabilités et supervision'
+          href: integrate-microsoft-365-defender-secops-roles.md
+        - name: Étape 5. Cas d’utilisation de test
+          href: integrate-microsoft-365-defender-secops-use-cases.md
+        - name: Étape 6. Tâches de maintenance SOC
+          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Guides pratiques
       items:
         - name: Créer un laboratoire d’évaluation ou un environnement pilote

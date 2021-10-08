@@ -18,12 +18,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/07/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ea87ef0acbcd0cda0fb9d4861042ac1e181ff7fb
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: a5f5428ce3c710cc99c7c86306a64501419ae60f
+ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239623"
+ms.locfileid: "60245668"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -84,8 +84,26 @@ Toutes nos mises à jour contiennent
 - améliorations des performances ;
 - améliorations en matière de serviceabilité ; et
 - améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
+<summary> Septembre-2021 (plateforme : 4.18.2109.6 | Moteur : 1.1.18600.4)</summary>
+
+&ensp;Version de mise à jour des informations de sécurité **: 1.351.7.0**<br/>
+&ensp;Publication : **7 octobre 2021**<br/>
+&ensp;Plateforme : **4.18.2109.6**<br/>
+&ensp;Moteur : **1.1.18600.4**<br/>
+&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
+
+Version du moteur : 1.1.18600.4 Version de mise à jour de l’intelligence de sécurité : mise à jour
+
+### <a name="whats-new"></a>Nouveautés
+- Nouveau délai pour les mises à jour Antivirus Microsoft Defender moteur et de plateforme. Les appareils qui optent pour cette sonnerie recevront des mises à jour avec un délai de 48 heures. La nouvelle sonnerie de délai est suggérée pour les environnements critiques uniquement. Voir [Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender.](manage-gradual-rollout.md)
+- Améliorations apportées au processus de déploiement progressif de mise à jour de Microsoft Defender
+
+### <a name="known-issues"></a>Problèmes connus
+Aucun problème connu
+<br/>
+</details><details>
 <summary> Août-2021 (plateforme : 4.18.2108.7 | Moteur : 1.1.18500.10)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.349.22.0**<br/>
@@ -123,14 +141,19 @@ Aucun problème connu
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédente : prise en charge de la mise à niveau technique uniquement
+
+Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
+<details>
 <summary> Juin-2021 (plateforme : 4.18.2106.5 | Moteur : 1.1.18300.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.343.17.0**<br/>
 &ensp;Publication : **28 juin 2021**<br/>
 &ensp;Plateforme : **4.18.2106.5**<br/>
 &ensp;Moteur : **1.1.18300.4**<br/>
-&ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**<br/>
+&ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**<br/>
 
 ### <a name="whats-new"></a>Nouveautés
 - Nouveaux contrôles pour la gestion du processus de déploiement progressif des mises à jour De Microsoft Defender. Voir [Gérer le processus de déploiement progressif pour les mises à jour de Microsoft Defender.](manage-gradual-rollout.md)
@@ -141,12 +164,7 @@ Aucun problème connu
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Mises à jour de version précédente : prise en charge de la mise à niveau technique uniquement
-
-Après la publication d’une nouvelle version de package, la prise en charge des deux versions précédentes est réduite au support technique uniquement. Les versions antérieures à celles répertoriées dans cette section sont fournies uniquement pour la prise en charge de la mise à niveau technique.
-<details>
+</details><details>
 <summary> Mai-2021 (plateforme : 4.18.2105.4 | Moteur : 1.1.18200.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.341.8.0**<br/>
@@ -290,7 +308,7 @@ Aucun problème connu
    - Protection du réseau sur Server 2019
    - Exclusions d’adresses IP pour la protection du réseau
 - Meilleure visibilité des mesures du TPM
-- Amélioration de Office module VBA
+- Amélioration de l Office de module VBA
 
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -377,7 +395,7 @@ Aucun problème connu
 - Enregistrement amélioré pour les événements d’analyse
 - Amélioration de la gestion des incidents en mode utilisateur.
 - Suivi des événements ajouté pour la protection contre la falsification
-- Envoi d’exemples AMSI fixes
+- Soumission d’exemple AMSI fixe
 - Blocage du cloud AMSI fixe
 - Journal d’installation des mises à jour de sécurité fixes
 
@@ -479,7 +497,7 @@ Moteur : **1.1.16700.2**<br/>
 > - a un indicateur de redémarrage pour les systèmes qui ont des problèmes en suspension ;
 > - est re-publiée en avril 2020 et ne sera pas recalée par les mises à jour plus nouvelles pour conserver la disponibilité future ;
 > - est classée en tant que mise à jour en raison de l’exigence de redémarrage ; et
-> - est uniquement proposée avec [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).
+> - est uniquement proposé avec [la mise à jour Windows.](https://support.microsoft.com/help/4027667/windows-10-update)
 <br/>
 </details>
 
@@ -535,19 +553,19 @@ Le tableau ci-dessous fournit les versions Antivirus Microsoft Defender de plate
 |1703 (RS2) |4.11.15603.2 |1.1.13504.0 | Prise en charge de la mise à niveau technique (uniquement) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Prise en charge de la mise à niveau technique (uniquement) |
 
-Pour Windows 10 de publication, consultez la [Windows de faits sur le cycle de vie.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
+Pour Windows 10 de publication, consultez la [Windows de faits sur](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)le cycle de vie.
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Mises à jour pour la gestion et la maintenance des images de déploiement (DISM)
 
 Nous vous recommandons de mettre à jour vos images d’installation de Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019, Windows Server 2022 et Windows Server 2016 OS avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection.
 
-Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
+Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
 <summary>1.1.2110.01</summary>
 
 &ensp;Version du package **: 1.1.2110.01**<br/>
-&ensp;Version de plateforme **: 4.18.2109.6**<br/>
+&ensp;Version de la plateforme **: 4.18.2109.6**<br/>
 &ensp;Version du moteur **: 1.1.18500.10**<br/>
 &ensp;Version de signature **: 1.349.2103.0**<br/>
 
@@ -589,7 +607,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 <summary>1.1.2107.02</summary>
 
 &ensp;Version du package **: 1.1.2107.02**<br/>
-&ensp;Version de la plateforme **: 4.18.2105.5**<br/>
+&ensp;Version de plateforme **: 4.18.2105.5**<br/>
 &ensp;Version du moteur **: 1.1.18300.4**<br/>
 &ensp;Version de signature **: 1.343.658.0**<br/>
 
@@ -631,7 +649,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 <summary>1.1.2104.01</summary>
 
 &ensp;Version du package **: 1.1.2104.01**<br/>
-&ensp;Version de la plateforme **: 4.18.2102.4**<br/>
+&ensp;Version de plateforme **: 4.18.2102.4**<br/>
 &ensp;Version du moteur **: 1.1.18000.5**<br/>
 &ensp;Version de signature **: 1.335.232.0**<br/>
 
@@ -687,7 +705,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 <summary>1.1.2012.01</summary>
 
 &ensp;Version du package **: 1.1.2012.01**<br/>
-&ensp;Version de la plateforme **: 4.18.2010.7**<br/>
+&ensp;Version de plateforme **: 4.18.2010.7**<br/>
 &ensp;Version du moteur **: 1.1.17600.5**<br/>
 &ensp;Version de signature **: 1.327.1991.0**<br/>
 
@@ -701,7 +719,7 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 <summary>1.1.2011.02</summary>
 
 &ensp;Version du package **: 1.1.2011.02**<br/>
-&ensp;Version de la plateforme **: 4.18.2010.7**<br/>
+&ensp;Version de plateforme **: 4.18.2010.7**<br/>
 &ensp;Version du moteur **: 1.1.17600.5**<br/>
 &ensp;Version de signature **: 1.327.658.0**<br/>
 
@@ -745,9 +763,9 @@ Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Window
 
 | Article | Description  |
 |:---|:---|
-|[Mise à jour de Microsoft Defender Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Passer en revue les packages de mise à jour anti-programme malveillant pour vos images d’installation du système d’exploitation (fichiers WIM et VHD). Obtenez Antivirus Microsoft Defender mises à jour de Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019, Windows Server 2022 et Windows Server 2016 images d’installation.  |
-|[Gérer le téléchargement et l’application des mises à jour de protection](manage-protection-updates-microsoft-defender-antivirus.md) | Les mises à jour de la protection peuvent être livrées via de nombreuses sources. |
-|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Vous pouvez planifier le téléchargement des mises à jour de la protection. |
+|[Mise à jour de Microsoft Defender Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Passer en revue les packages de mise à jour anti-programme malveillant pour vos images d’installation du système d’exploitation (fichiers WIM et VHD). Obtenez Antivirus Microsoft Defender mises à jour pour Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019, Windows Server 2022 et Windows Server 2016 images d’installation.  |
+|[Gérer le téléchargement et l’application des mises à jour de protection](manage-protection-updates-microsoft-defender-antivirus.md) | Les mises à jour de protection peuvent être mises à jour via de nombreuses sources. |
+|[Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Vous pouvez planifier le téléchargement des mises à jour de la protection. |
 |[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un point de terminaison manque une mise à jour ou une analyse programmée, vous pouvez forcer une mise à jour ou une analyse la prochaine fois qu’un utilisateur se signe. |
 |[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) | Vous pouvez définir des mises à jour de protection à télécharger au démarrage ou après certains événements de protection livrés par le cloud. |
 |[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Vous pouvez spécifier des paramètres, par exemple si des mises à jour doivent être mises à jour sur l’alimentation de la batterie, qui sont particulièrement utiles pour les appareils mobiles et les ordinateurs virtuels. |
