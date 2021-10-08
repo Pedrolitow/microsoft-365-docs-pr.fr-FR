@@ -14,18 +14,18 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 193afd61509b7361ac18dd32d827182752fb61ed
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: e2b38179556c8658cf6619e40f87bb803fec80e4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59204324"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60208390"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -61,7 +61,7 @@ Les utilisateurs peuvent remarquer et signaler une activité inhabituelle dans l
 
 Si un utilisateur rapporte un des symptômes ci-dessus, vous devez lancer un examen approfondi. Le [Microsoft 365 Defender](https://security.microsoft.com) et le Portail Azure proposent des outils pour vous aider à examiner l’activité d’un compte d’utilisateur que vous suspectez d’être compromis.
 
-- **Journaux d’audit unifiés dans le portail Microsoft 365 Defender**: passez en revue toutes les activités du compte suspect en filtrant les résultats de la plage de dates comprise entre immédiatement avant l’activité suspecte et la date actuelle. Ne pas filtrer sur les activités au cours de la recherche.
+- **journaux d’audit unifiés dans le portail Microsoft 365 Defender**: passez en revue toutes les activités du compte suspect en filtrant les résultats de la plage de dates comprise entre immédiatement avant l’activité suspecte et la date actuelle. Ne filtrez pas sur les activités pendant la recherche.
 
 - **Journaux d’audit de l’administrateur dans le Centre d'administration Exchange** : vous pouvez utiliser le Centre d’administration Exchange (EAC) dans Exchange Online pour rechercher et afficher les entrées dans le journal d’audit de l’administrateur. Le journal d’audit de l’administrateur enregistre des actions spécifiques, basées sur les cmdlets Exchange Online PowerShell, effectuées par les administrateurs, et les utilisateurs disposant de privilèges d’administration. Les entrées du journal d’audit de l’administrateur vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l’utilisateur qui a exécuté la cmdlet et les objets concernés.
 
@@ -101,7 +101,7 @@ Suivez les procédures décrites dans [Réinitialiser un mot de passe d’entrep
 
 1. Ouvrez le Centre d’administration Microsoft 365 à <https://admin.microsoft.com>.
 
-2. Accédez à **Utilisateurs** \> **Utilisateurs actifs**. Recherchez le compte de l’utilisateur en question, puis sélectionnez l’utilisateur (ligne) sans activer la case à cocher.
+2. Accédez à **Utilisateurs**\>**utilisateurs actifs**. Recherchez le compte d’utilisateur en question, puis sélectionnez l’utilisateur (ligne) sans cocher la case.
 
 3. Dans le menu volant de détails qui s’affiche, sélectionnez l’onglet **Courrier**.
 
@@ -159,7 +159,7 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 
 2. Ouvrez le portail Microsoft 365 Defender à <https://security.microsoft.com> et procédez comme suit :
    1. Accédez à **Autorisations et rôles** \> **E-mail et rôles de collaboration** \> **Rôles**.
-   2. Dans la page **Autorisations**, sélectionnez chaque groupe de rôles dans la liste et recherchez le compte d’utilisateur dans la section **Membres** du menu volant détails qui s’affiche. Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
+   2. Dans la page **Autorisations** , sélectionnez chaque groupe de rôles dans la liste et recherchez le compte d’utilisateur dans la section **Membres** du menu volant des détails qui s’affiche. Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
       1. Dans la section **Membres**, cliquez sur **Modifier**.
       2. Dans le menu volant **Modification des membres choisis** qui apparaît, cliquez sur **Modifier**.
       3. Dans le menu volant **Choisissez des membres** qui s’affiche, cliquez sur **Supprimer**.
