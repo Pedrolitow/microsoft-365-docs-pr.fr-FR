@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 5c270e3b03c8c8373cc3fcb204f5f5a654eeb001
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 6c77268133440e4f067d42d66f4c99f76034e735
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182375"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60201144"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
@@ -70,25 +70,25 @@ Toutes les colonnes à l’exception du **Nom** de l’étiquette peuvent être 
 
 - **État** indique si l’étiquette est incluse dans une stratégie d’étiquette ou une stratégie d’application automatique (**Active**) ou non (**Inactive**).
 
-- **Basée sur** identifie la date de début de la période de rétention ou la façon dont la période de rétention débute. Valeurs valides :
+- **Sur la base de** identifie la date de début ou la façon dont la période de rétention débute. Valeurs valides :
     - Événement
     - Date de création
     - Dernière modification
     - Date d’étiquetage
 
-- **Est un enregistrement** identifie si l’élément est marqué comme enregistrement lorsque l’étiquette est appliquée. Valeurs valides :
+- **Est un enregistrement** identifie si l’élément est marqué comme enregistrement lorsque l’étiquette est appliquée. Valeurs valides :
     - Non
     - Oui
     - Oui (réglementaire)
 
-- **Durée de rétention** identifie la période de rétention. Valeurs valides :
+- **Durée de rétention** identifie la période de rétention. Valeurs valides :
     - Jours
     - Mois
     - Années
     - Pour toujours
     - Aucune
 
-- **Type de destruction** détermine ce qu’il advient du contenu à la fin de la période de rétention. Valeurs valides :
+- **Type de destruction** détermine ce qu’il advient du contenu à la fin de la période de rétention. Valeurs valides :
     - Aucune action
     - Suppression automatique
     - Révision requise
@@ -109,7 +109,7 @@ Exemple de descripteurs de plan de gestion de fichiers lorsque vous créez ou mo
 
 ![Descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention.](../media/file-plan-descriptors.png)
 
-Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultatifs, vous pouvez sélectionner l’une des valeurs out-of-box, ou créer les vôtres, puis les sélectionner. Par exemple : 
+Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultatifs, vous pouvez sélectionner l’une des valeurs out-of-box, ou créer les vôtres, puis les sélectionner. Par exemple : 
 
 ![Créer un descripteur de plan de fichier pour l’approvisionnement/citation.](../media/file-plan-descriptors-create.png)
 
@@ -161,10 +161,10 @@ Dans le plan de gestion de fichiers, vous pouvez importer en bloc de nouvelles �
    |Catégorie|String|Non|Cette propriété spécifie la valeur affichée dans la **Catégorie** du descripteur du plan de gestion de fichiers.|
    |Sous-catégorie|Chaîne|Non|Cette propriété spécifie la valeur affichée dans la **Sous-catégorie** du descripteur du plan de gestion de fichiers.|
    |AuthorityType|Chaîne|Non|Cette propriété spécifie la valeur affichée dans le **Type d’autorité** du descripteur du plan de gestion de fichiers.|
-   |CitationName|Chaîne|Non|Cette propriété spécifie le nom de la citation affiché dans le descripteur de plan de gestion de fichiers **Clause/citation**. Par exemple, « Loi Sarbanes-Oxley de 2002 ». |
+   |CitationName|Chaîne|Non|Cette propriété spécifie le nom de la citation affichée dans la **Clause/citation** du descripteur du plan de fichiers ; par exemple, « Loi Sarbanes-Oxley ou 2002 ». |
    |CitationUrl|Chaîne|Non|Cette propriété spécifie l’URL affichée dans la **Clause/citation** du descripteur du plan de gestion de fichiers.|
    |CitationJurisdiction|Chaîne|Non|Cette propriété spécifie la juridiction ou l’agence qui apparaît dans la **Clause/citation** du descripteur du plan de fichiers. Par exemple, « U.S. Securities and Exchange Commission (SEC) ».|
-   |Réglementaire|Chaîne|Non|Cette propriété spécifie si l’étiquette marque le contenu comme un enregistrement réglementaire, ce qui est [plus restrictif](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) qu’un enregistrement. Pour utiliser cette configuration d’étiquette, votre client doit être configuré pour [afficher l’option permettant de marquer le contenu comme un enregistrement réglementaire](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record), sinon la validation de l’importation échouera. Les valeurs valides sont les suivantes : </br>**TRUE**: l’étiquette marque l’élément comme un enregistrement réglementaire. Vous devez également définir la propriété **IsRecordLabel** sur TRUE.</br>**FALSE** : l’étiquette ne marque pas le contenu comme un enregistrement réglementaire. Ceci est la valeur par défaut.|
+   |Réglementaire|Chaîne|Non|Cette propriété spécifie si l’étiquette marque le contenu comme un enregistrement réglementaire, ce qui est [plus restrictif](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) qu’un enregistrement. Pour utiliser cette configuration d’étiquette, votre client doit être configuré pour [afficher l’option permettant de marquer le contenu comme un enregistrement réglementaire](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record), sinon la validation de l’importation échouera. Les valeurs valides sont les suivantes : </br>**TRUE**: l’étiquette marque l’élément comme un enregistrement réglementaire. Vous devez également définir la propriété **IsRecordLabel** sur TRUE.</br>**FALSE** : l’étiquette ne marque pas le contenu comme un enregistrement réglementaire. Il s’agit de la valeur par défaut.|
    |EventType|Chaîne|Non, sauf si **RetentionType** est **EventAgeInDays**|Cette propriété spécifie un type d’événement utilisé pour la [rétention basée sur les événements](event-driven-retention.md). Spécifiez un type d’événement existant qui s’affiche dans **Gestion des enregistrements** > **Événements** > **Gérer les types d’événements**. Vous pouvez également utiliser l’applet de commande [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) pour afficher les types d’événements disponibles. Bien qu’il existe certains types d’événements intégrés, tels que **Activité de l’employé** et **Durée de vie du produit**, vous pouvez également créer vos propres types d’événements. </br> </br> Si vous spécifiez votre propre type d’événement, il doit exister avant l’importation, car le nom est validé dans le cadre du processus d’importation.|
    |||
 

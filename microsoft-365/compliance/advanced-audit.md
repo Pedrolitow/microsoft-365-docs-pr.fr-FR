@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 5892932bc3fe35cfc6739c266db9f6379d08ee6b
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: bca5495b60bcd3fe84c7faf05ec124f2eb037994
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182448"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151289"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -135,7 +135,7 @@ Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, v
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez activer la journalisation de SearchQueryInitiatedExchange pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> Vous devez activer la journalisation de SearchQueryInitiatedExchange pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir les instructions, consultez [Configurer les Audits avancés](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -158,7 +158,7 @@ Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vo
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez activer la journalisation de SearchQueryInitiatedSharePoint pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+> Vous devez activer la journalisation de SearchQueryInitiatedSharePoint pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez [Configurer les Audits avancés](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
 
 ### <a name="other-advanced-audit-events-in-microsoft-365"></a>Autres événements d’audit avancé dans Microsoft 365
 

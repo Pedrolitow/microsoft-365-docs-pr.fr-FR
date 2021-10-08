@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 352c66ad34508d06d4673dab4ebc2b98a27649d7
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ea1638b3dd97c97354eff64d0e33d6a4b84a0313
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59206011"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175106"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -64,7 +64,7 @@ Ces dossiers masqués ne sont pas conçus pour être directement accessibles aux
 > 
 > Toutefois, une copie du message d’origine est toujours disponible dans le dossier masqué de la boîte aux lettres du groupe de communauté et accessible avec les recherches eDiscovery à des fins de conformité.
 
-Les messages Yammer ne sont pas affectés par les stratégies de rétention configurées pour les boîtes aux lettres Exchange. Même si les messages Yammer sont stockés dans Exchange, ces données Yammer sont incluses uniquement par une stratégie de rétention configurée pour les **messages de la communauté Yammer** et les emplacements des **messages utilisateur Yammer**.
+Les messages Yammer ne sont pas affectés par les stratégies de rétention configurées pour les boîtes aux lettres Exchange. Même si les messages Yammer sont stockés dans Exchange, ces données Yammer sont incluses uniquement par une stratégie de rétention configurée pour les **emplacements des messages de la communauté Yammer** et **des messages utilisateur Yammer**.
 
 > [!NOTE]
 > Si un utilisateur est inclus dans une stratégie de rétention active qui conserve les données Yammer et que vous supprimez une boîte aux lettres d’un utilisateur inclus dans cette stratégie, la boîte aux lettres est convertie en [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Yammer. Si vous n’avez pas besoin de conserver ces données Yammer pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
@@ -93,7 +93,7 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
 
-1. **Si un message Yammer est édité ou supprimé**:Une copie du message original est immédiatement créée dans le dossier SubstrateHolds et y est conservée jusqu'à l'expiration de la période de conservation. Ensuite, le message est définitivement supprimé du dossier SubstrateHolds.
+1. **Si un message Yammer est modifié ou supprimé** : une copie du message d'origine est immédiatement créée dans le dossier SubstrateHolds et y est conservée jusqu'à l'expiration de la période de rétention. Ensuite, le message est immédiatement supprimé définitivement du dossier SubstrateHolds.
 
 2. **Si le message Yammer n'est pas modifié ou supprimé** et pour les messages courants après édition pendant la période de rétention : Rien ne se passe avant et après la période de rétention ; le message reste dans son emplacement d'origine.
 

@@ -9,19 +9,19 @@ ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 38dc7110c44b3b9acf20283a4156b3eccc0f2165
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 29b97c570972527ef30f3333797a213bf2722932
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59162400"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176318"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurer une équipe avec une isolation des problèmes de sécurité dans un environnement de test/développement
 
@@ -46,7 +46,7 @@ Dans cette phase, vous créez et vous configurez le groupe et les utilisateurs A
 
 Créez tout d’abord un groupe de sécurité à l’aide du portail Microsoft Azure.
 
-1. Créez un onglet distinct dans votre navigateur, puis accédez au portail Microsoft Azure sous [https://portal.azure.com](https://portal.azure.com). Si nécessaire, connectez-vous avec les informations d’identification du compte d’administrateur général de votre abonnement ou essai Microsoft 365 E5.
+1. Créez un onglet distinct dans votre navigateur, puis accédez au portail Azure à l'adresse [https://portal.azure.com](https://portal.azure.com). Si nécessaire, connectez-vous avec les informations d'identification du compte d'administrateur global pour votre essai ou abonnement payant Microsoft 365 E5.
 
 2. Dans le portail Azure, cliquez sur **Azure Active Directory > Groupes**.
 
@@ -145,11 +145,7 @@ Procédez comme suit :
 4. Tapez **Stratégie d’entreprise** comme nom d’étiquette.
 5. Tapez **Documents de stratégie de la direction de l’entreprise** sous forme d’info-bulle, puis cliquez **Suivant**.
 6. Sur la page **Chiffrement**, dans le menu déroulant **Chiffrement**, sélectionnez **Appliquer**.
-7. Pour ajouter des autorisations d’équipe :<br>
-  a. Cliquez sur **Attribuer des autorisations**.<br>
-  b. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez l’équipe que vous avez créée, puis cliquez sur **Stratégie d’entreprise**, enfin cliquez sur **Ajouter**.<br>
-  c. Cliquez sur **Choisir les autorisations**.<br>
-  d. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.<br>
+7. Pour ajouter des autorisations d’équipe :<br>a. Cliquez sur **Attribuer des autorisations**.<br>b. Cliquez sur **Ajouter des utilisateurs ou des groupes**, sélectionnez **La stratégie de l’entreprise**, enfin cliquez sur **Ajouter**.<br>c. Cliquez sur **Choisir les autorisations**.<br>d. Sélectionnez **Co-auteur** dans la liste déroulante, puis cliquez sur **Enregistrer**.<br>
 8. Cliquez sur **Suivant**.
 9. Dans la page **Marque de contenu**, cliquez sur **Suivant**.
 10. Dans la page **Paramètres de site et de groupe**, configurez **Paramètres de site et de groupe** sur **Activé**.

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: bf722e665950be87ed652f4df7fa7e5b2298959c
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d05b642455369cda3897733044727719e671a619
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59178804"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60171758"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -113,7 +113,7 @@ En revanche, voici quelques recommandations favorisant une variété des mots de
   
 ### <a name="ban-common-passwords"></a>Interdire les mots de passe courants
 
-L’exigence de mot de passe la plus importante à imposer à vos utilisateurs lors de la création de mots de passe consiste à interdire l’utilisation de mots de passe communs afin de limiter la vulnérabilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent : **abcdefg**, **motdepasse** et **singe**.
+L'exigence de mot de passe la plus importante que vous devez imposer à vos utilisateurs lors de la création de mots de passe est d'interdire l'utilisation de mots de passe courants afin de réduire la susceptibilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent : **abcdefg**, **password**, **monkey**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Apprenez à vos utilisateurs à ne pas réutiliser ailleurs les mots de passe d’organisation
 

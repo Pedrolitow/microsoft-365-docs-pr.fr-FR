@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d9980240f0c45eb708a668dfea028ce5259fcab
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: d0ea3c4a9749219060de10bdc988d8a2ba8cf02c
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180899"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196632"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -50,7 +50,7 @@ Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
   ![Vérifications anti-usurpation d’identité EOP](../../media/eop-anti-spoofing-protection.png)
 
-- **Informations sur la veille contre l’usurpation d’identité** : au cours des 7 derniers jours, passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
+- **Informations sur la veille contre l’usurpation d’identité** : passez en revue les messages des 7 derniers jours usurpant une identité provenant des expéditeurs dans les domaines internes et externes, puis autorisez ou bloquez ces expéditeurs. Pour plus d’informations, voir [Informations sur la veille sur l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
 
 - **Autoriser ou bloquer les expéditeurs usurpés dans la liste verte/rouge du client** : lorsque vous remplacez le obstacle dans les informations sur la veille contre l’usurpation d’identité, l’expéditeur usurpé devient une entrée manuelle d’autoriser ou de bloquer une entrée qui n’apparaît que dans l’onglet **Usurper une identité** dans la liste verte/rouge du client. Vous pouvez également créer manuellement des entrées d'autorisation ou de blocage pour les faux expéditeurs avant qu'ils ne soient détectés par la veille contre l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](tenant-allow-block-list.md).
 
@@ -65,7 +65,7 @@ Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
 - **Rapport sur les détections d’usurpation d’identité** : pour plus d’informations, consultez le [rapport sur les détections d’usurpation d’identité](view-email-security-reports.md#spoof-detections-report).
 
-  **Remarque** : les organisations Defender pour Office 365 peuvent également utiliser la détection en temps réel (plan 1) ou l’Explorateur de menaces (plan 2) pour afficher des informations sur les tentatives de hameçonnage. Si vous souhaitez en savoir plus, consultez la page [Examen et réponse contre les menaces Microsoft 365](office-365-ti.md).
+  **Remarque** : les organisations Defender pour Office 365 peuvent également utiliser la détection en temps réel (plan 1) ou l’Explorateur de menaces (plan 2) pour afficher des informations sur les tentatives de hameçonnage. Pour plus d’informations, voir [Examen et réponse contre les menaces de Microsoft 365](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Comment l’usurpation est utilisée dans les attaques par hameçonnage
 
@@ -97,7 +97,7 @@ Les messages d'usurpation d'identité ont les conséquences négatives suivantes
 
 Microsoft distingue deux types de messages usurpant une identité :
 
-- **Usurpation intra-organisationnelle** : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
+- **Usurpation intra-organisationnelle** : également connue sous le nom d’usurpation d’identité _self-to-self_. Par exemple :
 
   - L’expéditeur et le destinataire figurent dans le même domaine :
     > De : chris@contoso.com <br> À : michelle@contoso.com
@@ -120,7 +120,7 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .11 indique une usurpation intra-organisationnelle.
 
-- **Usurpation inter-domaines** : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
+- **Usurpation inter-domaines** : les domaines de l’expéditeur et du destinataire sont différents et n’ont aucune relation entre eux (également appelés domaines externes). Par exemple :
     > De : chris@contoso.com <br> À : michelle@tailspintoys.com
 
   Les messages qui échouent à l’[authentification composite](email-validation-and-authentication.md#composite-authentication) en raison d’une usurpation inter-domaines contiennent les valeurs d’en-têtes suivantes :
@@ -134,7 +134,7 @@ Microsoft distingue deux types de messages usurpant une identité :
   - `SFTY` est le niveau de sécurité du message. 9 indique un hameçonnage, .22 indique une usurpation inter-domaines.
 
 > [!NOTE]
-> Si vous avez reçu un message du type ***compauth=fail reason=###** _ et que vous souhaitez en savoir plus sur l'authentification composite (compauth) et les valeurs liées à l'usurpation, consultez la section [_En-têtes de message anti-spam dans Microsoft 365*](anti-spam-message-headers.md). Ou accédez directement aux codes [*raison*](anti-spam-message-headers.md).
+> Si vous avez reçu un message du type ***compauth=fail reason=###** _ et que vous souhaitez en savoir plus sur l'authentification composite (compauth) et les valeurs liées à l'usurpation, consultez la section [_En-têtes de message anti-spam dans Microsoft 365*](anti-spam-message-headers.md). Ou accédez directement aux codes [*reason*](anti-spam-message-headers.md).
 
 Si vous souhaitez en savoir plus sur DMARC, consultez la page [Utiliser DMARC pour valider les messages électroniques dans Microsoft 365](use-dmarc-to-validate-email.md).
 
@@ -144,11 +144,11 @@ Les listes de diffusion (également connues sous le nom de listes de discussion)
 
 Par exemple, Gabriela Laureano (glaureano@contoso.com) s'intéresse à l'observation des oiseaux. Elle s'inscrit à la liste de diffusion birdwatchers@fabrikam.com et envoie le message suivant à la liste :
 
-> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br> **Objet :** Superbe observation de geais bleus au sommet du Mont Rainier. Rainier cette semaine <p> Quelqu'un veut vérifier la vue cette semaine depuis le Mt. Rainier ?
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br> **Objet :** Superbe observation de geais bleus au sommet du Mont Rainier.<p> Quelqu'un veut vérifier la vue cette semaine depuis le Mt. Rainier ?
 
 Le serveur de liste de diffusion reçoit le message, modifie son contenu et le rediffuse aux membres de la liste. Le message rediffusé a la même adresse De (glaureano@contoso.com), mais une balise est ajoutée à la ligne d’objet, et un pied de page est ajouté au bas du message. Ce type de modification est courant dans les listes de diffusion et peut entraîner des faux positifs en matière d’usurpation d'identité.
 
-> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <p> Quelqu'un veut vérifier la vue cette semaine depuis le Mt. Rainier ? <p> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine <p> Quelqu'un veut vérifier la vue cette semaine depuis le Mt. Rainier ? <p> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
 
 Pour aider les messages de la liste de diffusion à passer les vérifications d’usurpation d’identité, procédez comme suit selon que vous contrôlez ou non la liste de diffusion :
 
@@ -178,6 +178,6 @@ Vous pouvez également contacter votre administrateur qui peut ouvrir un ticket 
 
 Si vous êtes un administrateur qui envoie actuellement des messages à Microsoft 365, vous devez vous assurer que votre messagerie électronique est correctement authentifiée. Dans le cas contraire, il peut être marqué comme courrier indésirable ou hameçonnage. Pour plus d’informations, voir [Solutions pour les expéditeurs légitimes qui envoient du courrier électronique non authentifié](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
-Les expéditeurs de la liste des expéditeurs approuvés d’un utilisateur (ou d’un administrateur) contournent certains éléments de la pile de filtrage, y compris la protection contre l’usurpation d’identité. Pour plus d’informations, voir [Expéditeurs approuvés d’Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
+Les expéditeurs de la liste des expéditeurs approuvés d’un utilisateur (ou d’un administrateur) contournent certains éléments de la pile de filtrage, y compris la protection contre l’usurpation d’identité. Pour plus d’informations, voir [Expéditeurs approuvés Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 
 Les administrateurs doivent éviter (si possible) d’utiliser des listes d’expéditeurs autorisés ou des listes de domaines autorisés. Ces expéditeurs contournent toutes les protections contre le courrier indésirable, l’usurpation d’identité et le hameçonnage, ainsi que l’authentification de l’expéditeur (SPF, DKIM, DMARC). Pour plus d’informations, voir [Utiliser des listes d’expéditeurs autorisés ou de domaines autorisés](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists).

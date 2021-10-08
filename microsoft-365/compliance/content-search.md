@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: beee298e18fd46adfc11925de51274a60328a3a5
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 873a6e10117f1573b4679c14f054dd15c2c16949
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59208011"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60175370"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
@@ -45,7 +45,7 @@ Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l
 
 ## <a name="create-and-run-a-search"></a>Créer et exécuter une recherche
 
-Pour accéder à la page **Recherche de contenu** dans le Centre de conformité Microsoft 365 (pour effectuer des recherches et afficher un aperçu des résultats et exporter les résultats), un administrateur, un officier de conformité ou un gestionnaire d’eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans le Centre de conformité & de sécurité Microsoft 365. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
+Pour accéder à la page **Recherche de contenu** dans le centre de conformité Microsoft 365 (pour exécuter des recherches et prévisualiser les résultats et exporter les résultats), un administrateur, un responsable de la conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles eDiscovery Manager dans le centre de conformité Microsoft 365 . Pour plus d'informations, consultez [Attribuer des autorisations de découverte électronique](assign-ediscovery-permissions.md).
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l’aide des informations d’identification d’un compte avec les autorisations appropriées.
 

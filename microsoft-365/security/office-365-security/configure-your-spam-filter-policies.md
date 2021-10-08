@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2510ca3289cf6b6f7ed774b1d87aa2692e8b3f5d
-ms.sourcegitcommit: 0ed93816e2c1e6620e68bd1c0f00390062911606
+ms.openlocfilehash: 91549fcbc4c528c0aeebe107d2f97b3bb8b52d41
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59484058"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176623"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -74,7 +74,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
   **Remarques** :
 
-  - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  - L'ajout d'utilisateurs au rôle Azure Active Directory Domain Services correspondant dans le centre d'administration Microsoft 365 donne aux utilisateurs les autorisations _et_ autorisations requises pour d'autres fonctionnalités dans Microsoft 365. Pour plus d'informations, consultez [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
 - Si vous souhaitez connaître les paramètres recommandés pour l’utilisation des stratégies anti-courrier indésirable, veuillez consulter la section [Paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
@@ -87,7 +87,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
 2. Dans la page **Stratégies anti-courrier indésirable**, cliquez sur l’![icône Créer.](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
 
-3. L’assistant d'application de stratégies s’ouvre. Sur la page **Nommer votre stratégie**, configurez les paramètres suivants :
+3. L'assistant de stratégie s'ouvre. Sur la **page Nommez votre stratégie**, configurez ces paramètres :
    - **Nom** Entrez un nom unique et descriptif pour la stratégie.
    - **Description** Entrez une description facultative pour la stratégie.
 
@@ -100,11 +100,11 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
    Cliquez dans la zone appropriée, commencez à taper une valeur et sélectionnez la valeur souhaitée dans les résultats. Répétez cette opération autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Supprimer.](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-   Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identificateurs (nom, nom d’affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant apparaît dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour afficher toutes les valeurs disponibles.
+   Pour les utilisateurs ou les groupes, vous pouvez utiliser la plupart des identifiants (nom, nom d'affichage, alias, adresse e-mail, nom de compte, etc.), mais le nom d'affichage correspondant est affiché dans les résultats. Pour les utilisateurs, entrez un astérisque (\*) seul pour voir toutes les valeurs disponibles.
 
    Plusieurs valeurs dans la même condition utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
-   - **Exclure ces utilisateurs, groupes et domaines** : pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s’applique (exceptions pour les destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
+   - **Exclure ces utilisateurs, groupes et domaines** : Pour ajouter des exceptions pour les destinataires internes auxquels la stratégie s'applique (exceptions des destinataires), sélectionnez cette option et configurez les exceptions. Les paramètres et le comportement sont exactement comme les conditions.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -154,13 +154,13 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      |**Ajouter la ligne d’objet avec le texte**: ajoute du texte au début de la ligne d’objet du message. Le message est remis à la boîte aux lettres et déplacé vers le dossier Courrier indésirable.<sup>1, 2</sup> <p> Vous devez entrer le texte plus loin dans la zone **Ligne d’objet préfixe avec ce texte**.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
      |**Rediriger le message vers une adresse e-mail**: envoie le message à une adresse e-mail spécifiée au lieu des destinataires prévus. <p> Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse de messagerie**.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
      |**Supprimer le message**: supprime le message entier, pièces jointes comprises.|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
-     |**Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. <p> Vous pouvez spécifier la durée de la mise en quarantaine ultérieure du message dans la boîte de dialogue de la mise en **Quarantaine**. <p> Vous spécifiez la [stratégie de mise en quarantaine](quarantine-policies.md) qui s’applique aux messages mis en quarantaine pour le verdict de filtrage du courrier indésirable dans la zone **Sélectionner une stratégie** qui s’affiche. Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).<sup>3</sup>|![Marque de vérification.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|
+     |**Mettre en quarantaine le message**: Envoie le message en quarantaine au lieu de le remettre à ses destinataires. <p> Vous pouvez spécifier la durée de la mise en quarantaine ultérieure du message dans la boîte de dialogue de la mise en **Quarantaine**. <p> Vous spécifiez la [stratégie de quarantaine](quarantine-policies.md) qui s'applique aux messages mis en quarantaine pour le verdict du filtre anti-spam dans la zone **Sélectionner une stratégie** qui s'affiche. Pour plus d'informations, voir [Stratégies de quarantaine](quarantine-policies.md).<sup>3</sup>|![Coche.](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)<sup>\*</sup>|![Coche](../../media/checkmark.png)|
      |**Aucune action**|||||![Coche](../../media/checkmark.png)|
      |
 
-     > <sup>1</sup>Dans Exchange Online, le message est déplacé vers le dossier Courrier indésirable si la règle de courrier indésirable est activée sur la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> Dans Exchange Online, le message est déplacé vers le dossier Courrier indésirable si la règle de courrier indésirable est activée sur la boîte aux lettres (elle est activée par défaut). Pour plus d'informations, voir [Configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
      >
-     > Dans les environnements hybrides où Exchange Online Protection protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable Exchange Online Protection de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer Exchange Online Protection (EOP) pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+     > Dans les environnements hybrides où EOP protège les boîtes aux lettres Exchange sur site, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans Exchange sur site pour traduire le verdict de filtrage du courrier indésirable EOP afin que la règle de courrier indésirable puisse déplacer le message vers le courrier indésirable. Dossier de courrier électronique. Pour plus de détails, consultez [Configurer EOP pour envoyer du spam dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> Vous pouvez utiliser cette valeur comme condition dans les règles de flux de courrier (ou règles de transport) pour filtrer ou acheminer le message.
      >
@@ -179,7 +179,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
 
      Si vous entrez une valeur qui contient des espaces ou des deux-points ( :), la valeur que vous entrez est ignorée et l’en-tête X par défaut est ajouté au message (`X-This-Is-Spam: This message appears to be spam.`).
 
-   - **Ajouter la ligne d’objet avec ce texte**: cette zone est obligatoire et disponible uniquement si vous avez sélectionné **Ajouter une ligne d’objet avec un texte** comme action pour le filtrage du courrier indésirable. Entrez le texte à ajouter au début de la ligne d’objet du message.
+   - **Ajouter la ligne d'objet avec ce texte** : cette case est obligatoire et disponible uniquement si vous avez sélectionné **Ajouter la ligne d'objet avec du texte** comme action pour un verdict de filtrage anti-spam. Saisissez le texte à ajouter au début de la ligne d'objet du message.
 
    - **Rediriger vers cette adresse de courrier**: cette zone est obligatoire et disponible uniquement si vous avez sélectionné le message de redirection **Rediriger vers l’adresse de courrier** comme action pour le verdict de filtrage du courrier indésirable. Entrez l’adresse de courrier à laquelle vous voulez envoyer le message. Vous pouvez saisir plusieurs valeurs séparées par des points-virgules (;).
 
@@ -193,7 +193,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
      - **Activer ZAP pour les courriers indésirables** : par défaut, l’option ZAP est activée pour les détections de courrier indésirable, mais vous pouvez la désactiver en désactivant la case à cocher.
 
    > [!NOTE]
-   > Les notifications de courrier indésirable de l’utilisateur final ont été remplacées par des _notifications de mise en quarantaine_ dans les stratégies de mise en quarantaine qui contiennent des informations sur les messages mis en quarantaine pour toutes les fonctionnalités de protection prises en charge (et pas seulement les verdicts de stratégie anti-courrier indésirable). Pour plus d’informations, voir [Stratégies de mise en quarantaine](quarantine-policies.md).
+   > Les notifications de spam de l'utilisateur final ont été remplacées par _des notifications de quarantaine_ dans les politiques de quarantaine qui contiennent des informations sur les messages mis en quarantaine pour toutes les fonctionnalités de protection prises en charge (pas seulement les verdicts de politique anti-spam). Pour plus d'informations, voir [Stratégies de quarantaine](quarantine-policies.md).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -295,7 +295,7 @@ De retour sur la page principale de la stratégie, la valeur **État** de la str
 
 Par défaut, les stratégies anti-courrier indésirable reçoivent une priorité qui dépend de l'ordre dans lequel elles ont été créées (les stratégies plus récentes sont moins prioritaires que les stratégies plus anciennes). Un numéro de priorité peu élevé indique une plus grande priorité (0 est le plus élevé), et les stratégies sont traitées par ordre de priorité (les stratégies à haute priorité sont traitées avant les stratégies de moindre priorité). Deux stratégies ne peuvent pas avoir la même priorité et le traitement de la stratégie s’arrête après l’application de la première stratégie.
 
-Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro **Priorité** dans le Portail Microsoft 365 Defender). La modification de la priorité d’une stratégie n’a de sens que si vous avez plusieurs stratégies.
+Pour modifier la priorité d'une stratégie, vous cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro de **priorité** dans le portail Microsoft 365 Defender). Changer la priorité d'une stratégie n'a de sens que si vous avez plusieurs stratégies.
 
  **Remarques** :
 
@@ -337,7 +337,7 @@ Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell autonom
 
 Les paramètres de stratégie anti-courrier indésirable suivants sont disponibles uniquement dans PowerShell :
 
-- Le paramètre _MarkAsSpamBulkMail_ est `On` par défaut. Les effets de ce paramètre ont été expliqués dans la section [Utiliser le Portail Microsoft 365 Defender pour créer des stratégies anti-courrier indésirable](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) plus haut dans cet article.
+- Le paramètre _MarkAsSpamBulkMail_ qui est `On` par défaut. Les effets de ce paramètre ont été expliqués dans la section [Utiliser le portail Microsoft 365 Defender pour créer des stratégies anti-spam](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) plus haut dans cet article.
 - Les paramètres suivants pour les notifications de quarantaine de courrier indésirable de l’utilisateur final :
   - Le paramètre _DownloadLink_ qui affiche ou masque le lien vers l’Outil de création de rapports de Courrier indésirable pour Outlook.
   - Le paramètre _EndUserSpamNotificationCustomSubject_ que vous pouvez utiliser pour personnaliser la ligne d’objet de la notification.
@@ -479,7 +479,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>Utiliser PowerShell pour modifier les règles de filtrage du courrier indésirable
 
-Le seul paramètre non disponible lorsque vous modifiez une règle de filtrage du courrier indésirable dans PowerShell est le paramètre _Activé_ qui vous permet de créer une règle désactivée. Pour activer ou désactiver les règles de filtrage de courrier indésirable existantes, consultez la section suivante.
+Le seul paramètre qui n'est pas disponible lorsque vous modifiez une règle de filtre anti-spam dans PowerShell est le paramètre _Enabled_ qui vous permet de créer une règle désactivée. Pour activer ou désactiver les règles de filtre anti-spam existantes, consultez la section suivante.
 
 Dans le cas contraire, aucun paramètre supplémentaire n’est disponible lorsque vous modifiez une règle de filtrage du courrier indésirable dans PowerShell. Les mêmes paramètres sont disponibles lorsque vous créez une règle, comme décrit dans la section [Étape 2 : utiliser PowerShell pour créer une règle de filtrage du courrier indésirable](#step-2-use-powershell-to-create-a-spam-filter-rule) plus haut dans cet article.
 

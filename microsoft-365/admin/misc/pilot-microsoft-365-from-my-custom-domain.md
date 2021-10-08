@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment piloter la fonctionnalité de messagerie depuis mon domaine personnalisé vers une boîte aux lettres Microsoft 365 à l’aide de deux comptes de test uniquement.
-ms.openlocfilehash: 95939aa0ae967ba74861e631d6abfc6ecd50dbaf
-ms.sourcegitcommit: 34259ec9b6cccc8f6e29808dbe4796d9f72b651b
+ms.openlocfilehash: c428d070d0d4c20034a5a2a6ab94c8896549ea90
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59934010"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60176126"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Piloter Microsoft 365 depuis mon domaine personnalisé
 
@@ -117,11 +117,11 @@ Voici les deux étapes à suivre :
 
 Assurez-vous que vous avez effectué les opérations suivantes dans Microsoft 365 ou Office 365 :
 
-1. Pour configurer des connecteurs, vous avez besoin d’autorisations attribuées avant de commencer. Pour vérifier les autorisations dont vous avez besoin, consultez l’entrée sur les connecteurs Microsoft 365 et Office 365 dans la rubrique [Autorisations de fonctionnalité dans Exchange Online](/exchange/permissions-exo/feature-permissions).
+1. Pour configurer des connecteurs, vous avez besoin d'autorisations attribuées avant de pouvoir commencer. Pour vérifier les autorisations dont vous avez besoin, consultez l'entrée Connecteurs Microsoft 365 et Office 365 dans la rubrique [Autorisations de fonctionnalité dans Exchange Online](/exchange/permissions-exo/feature-permissions).
 
 2. Si vous voulez que vos courriers électroniques soient relayés par EOP ou Exchange Online de vos serveurs de messagerie vers Internet, deux solutions sont possibles :
 
-   - Vous pouvez utiliser un certificat configuré avec un nom d’objet qui correspond à un domaine accepté dans Microsoft 365 ou Office 365. Nous recommandons que le nom commun ou l’autre nom d’objet de votre certificat corresponde au domaine SMTP principal de votre organisation. Pour obtenir des détails, voir [Conditions requises pour votre environnement de messagerie locale](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+   - Utilisez un certificat configuré avec un nom de sujet qui correspond à un domaine accepté dans Microsoft 365 ou Office 365. Nous vous recommandons que le nom commun ou le nom alternatif du sujet de votre certificat corresponde au domaine SMTP principal de votre organisation. Pour plus de détails, voir [Conditions préalables pour votre environnement de messagerie sur site](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
 
    - OU -
 
@@ -132,17 +132,17 @@ Assurez-vous que vous avez effectué les opérations suivantes dans Microsoft 36
 3. Indiquez si vous souhaitez utiliser des règles de flux de courrier (également appelées règles de transport) ou des noms de domaine pour remettre le courrier de Microsoft 365 ou Office 365 vers vos serveurs de courrier. La plupart des entreprises choisit de remettre les messages pour tous les domaines acceptés. Pour plus d'informations, consultez la rubrique [Scénario : routage des messages conditionnels dans Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
 
 > [!NOTE]
-> Vous pouvez configurer des règles de flux de courrier, comme décrit dans [Actions de règle de flux de courrier dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). Par exemple, vous pouvez utiliser des règles de flux de courrier avec des connecteurs si votre courrier électronique est actuellement redirigé via des listes de distribution vers plusieurs sites.
+> Vous pouvez configurer des règles de flux de messagerie comme décrit dans [Actions des règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions). Par exemple, vous pouvez utiliser des règles de flux de messagerie avec des connecteurs si votre courrier est actuellement dirigé via des listes de distribution vers plusieurs sites.
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurer un connecteur depuis Microsoft 365 ou Office 365 vers votre serveur de messagerie.
 
-Pour créer un connecteur dans Microsoft 365 ou Office 365, cliquez sur **Administrateur**, puis sur **Exchange** pour accéder au Centre d'administration Exchange. Cliquez ensuite sur **flux de messagerie**, puis sur **connecteurs**.
+Pour créer un connecteur dans Microsoft 365 ou Office 365, cliquez sur **Admin**, puis sur **Exchange** pour accéder au centre d'administration Exchange. Ensuite, cliquez sur **flux de messagerie**, puis sur **connecteurs**.
 
 Configuration de connecteurs à l’aide de l’Assistant.
 
 Pour démarrer l’Assistant, cliquez sur le signe plus **+**. Dans le premier écran, sélectionnez **De** Office 365 et **À** votre serveur de courrier de l’organisation.
 
-Cliquez sur **Suivant**, et suivez les instructions de l’Assistant. Cliquez sur les liens « **Aide** » ou « **En savoir plus** » pour plus d’informations. L’Assistant vous guidera à chaque étape de la configuration. À la fin, vérifiez que votre connecteur est validé. Si le connecteur n’est pas validé, double-cliquez sur le message affiché pour obtenir plus d’informations, et consultez la rubrique [Valider des connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) pour obtenir de l’aide afin de résoudre les problèmes.
+Cliquez sur **Suivant**, et suivez les instructions de l'Assistant. Cliquez sur les liens **Aide** ou **En savoir plus** si vous avez besoin de plus d'informations. L'Assistant vous guide pour la configuration. À la fin, vérifiez que votre connecteur est validé. Si le connecteur n'est pas validé, double-cliquez sur le message affiché pour obtenir plus d'informations, et consultez [Valider les connecteurs](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) pour obtenir de l'aide et résoudre les problèmes.
 
 
 
@@ -189,6 +189,6 @@ Une fois cette étape terminée, tous les messages envoyés à usera@yourcompany
 
 ### <a name="step-10-move-mailbox-contents"></a>Étape 10 : déplacez le contenu de la boîte aux lettres
 
-Étant donné que vous déplacez uniquement deux utilisateurs de test, et que l’utilisateur A et l’utilisateur B utilisent Outlook, vous pouvez déplacer le courrier électronique en ouvrant l’ancien fichier .PST dans le nouveau profil Outlook et en copiant les messages, les éléments de calendrier, les contacts, etc. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Importer le courrier, les contacts et le calendrier à partir d’un fichier .pst Outlook](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Étant donné que vous ne déplacez que deux utilisateurs de test et que l'utilisateur A et l'utilisateur B utilisent tous les deux Outlook, vous pouvez déplacer l'e-mail en ouvrant l'ancien fichier .PST dans le nouveau profil Outlook et en copiant les messages, les éléments de calendrier, les contacts, etc. . Pour plus d'informations, voir [Importer des e-mails, des contacts et un calendrier à partir d'un fichier Outlook .pst](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 Une fois que vous les avez importés aux emplacements appropriés dans la boîte aux lettres Microsoft 365, ces éléments sont accessibles à partir de n’importe quel appareil, où que vous soyez.

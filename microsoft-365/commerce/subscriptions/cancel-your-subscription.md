@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Si vous avez moins de 25 licences d'utilisateur, vous pouvez annuler votre version d'essai ou votre abonnement payant de Microsoft 365 pour entreprise dans le centre d'administration.
 ms.date: 09/16/2021
-ms.openlocfilehash: 932cac44b9bf1b8632116d544cf4b33c0cb19a27
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 942953f586a65659609660363593c0f6e86c8ca6
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59481035"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204574"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
@@ -43,37 +43,37 @@ ms.locfileid: "59481035"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, voir [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="steps-to-cancel-your-subscription"></a>Étapes d’annulation d’un abonnement
 
-Si vous avez ajouté votre propre nom de domaine pour l’utiliser avec votre abonnement, vous devez retirer le domaine avant d'annuler votre abonnement. Pour plus d'informations, consultez la rubrique [Retirer un domaine](../../admin/get-help-with-domains/remove-a-domain.md).
+Si vous avez ajouté votre propre nom de domaine pour l’utiliser avec votre abonnement, vous devez retirer le domaine avant d'annuler votre abonnement. Pour plus d’informations, voir [Supprimer un domaine](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 
 ::: moniker-end
 
-2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
+2. Recherchez l'abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l’abonnement**.
 
 3. Dans le volet **Annuler l'abonnement**, choisissez la raison pour laquelle vous annulez. Si vous le souhaitez, vous pouvez fournir des commentaires.
 
 4. Sélectionnez **Enregistrer**.
 
-Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)
+Votre abonnement s’affiche à présent dans un état **Désactivé** et dispose de fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 Entreprise, consultez [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Entreprise ?](what-if-my-subscription-expires.md)
 
 > [!NOTE]
 > Si vous supprimez explicitement un abonnement, cela ignore les étapes Expiré et Désactivé, et les données et le contenu SharePoint Online, dont OneDrive, sont supprimés immédiatement.

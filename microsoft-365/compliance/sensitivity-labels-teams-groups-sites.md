@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 5e8e18d85a0161542d988107c450a6abb9f7c7d4
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: fff0326df591ad5cd414be73afe9f365b1bc04b0
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60010328"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60151001"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md) pour classifier et protéger les documents et les messages électroniques, vous pouvez également utiliser des étiquettes de confidentialité pour protéger du contenu dans les conteneurs suivants : sites Microsoft Teams, Microsoft 365 Groups ([anciennement les groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) et les sites SharePoint. Pour la classification et la protection au niveau du conteneur, utilisez les paramètres d’étiquette suivants :
+Outre l’utilisation d' [étiquettes de confidentialité](sensitivity-labels.md) pour classifier et protéger les documents et les messages électroniques, vous pouvez également utiliser des étiquettes de confidentialité pour protéger du contenu dans les conteneurs suivants : sites Microsoft Teams, Microsoft 365 Groups ([anciennement les groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) et les sites Microsoft Office SharePoint Online. Pour cette protection au niveau du conteneur, utilisez les paramètres d’étiquettes suivants : 
 
 - Confidentialité (privée ou publique) de sites Teams et groupes Microsoft 365
 - Accès des utilisateurs externes
@@ -106,7 +106,7 @@ Une fois les étiquettes de confidentialité activées pour les conteneurs, comm
     
     - **Contrôler le partage externe à partir de sites SharePoint étiquetés** : sélectionnez cette option pour ensuite sélectionner soit partage externe pour tout le monde, pour des invités nouveaux et existants, pour des invités existants ou pour les personnes de votre organisation uniquement. Pour plus d’informations sur cette configuration et sur les paramètres, consultez la documentation SharePoint [Activer ou désactiver le partage externe pour un site](/sharepoint/change-external-sharing-site).
     
-    - **Utiliser l’accès conditionnel Azure AD pour protéger les sites SharePoint étiquetés** : sélectionnez cette option uniquement si votre organisation a configuré et utilise l’[Accès conditionnel Azure Active Directory](/azure/active-directory/conditional-access/overview). Sélectionnez ensuite l’un des paramètres suivants :
+    - **Utiliser l’accès conditionnel Azure AD pour protéger les sites Microsoft Office SharePoint Online étiquetés** : sélectionnez cette option uniquement si votre organisation a configuré et utilise l’[Azure Active Directory Domain Services](/azure/active-directory/conditional-access/overview) d’accès conditionnel. Sélectionnez ensuite l’un des paramètres suivants :
     
         - **Déterminer si les utilisateurs peuvent accéder à des sites SharePoint à partir d’appareils non gérés** : cette option utilise la fonctionnalité SharePoint qui utilise l’accès conditionnel Azure AD pour bloquer ou limiter l’accès aux contenus SharePoint et OneDrive provenant d’appareils non gérés. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices) dans la documentation SharePoint. L’option spécifiée pour ce paramètre d’étiquette correspond à l’exécution d’une commande PowerShell pour un site, comme décrit dans les étapes 3 à 5 de la section [Bloquer ou limiter l’accès à un site SharePoint ou OneDrive spécifique](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) des instructions de SharePoint.
             
@@ -209,7 +209,7 @@ Exemples PowerShell, où le GUID de l’étiquette de sensibilité est **8faca7b
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Conseils PowerShell pour la spécification des paramètres avancés
 
-Bien que vous puissiez spécifier l’étiquette de niveau de sensibilité par son nom, nous vous recommandons d’utiliser le GUID de l’étiquette pour éviter toute confusion par rapport à la spécification du nom d’étiquette ou du nom complet. Pour trouver le GUID :
+Bien que vous puissiez spécifier l’étiquette de niveau de sensibilité par son nom, nous vous recommandons d’utiliser le GUID de l’étiquette pour éviter toute confusion par rapport à la spécification du nom d’étiquette ou du nom complet. Pour trouver le GUID :
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
@@ -317,7 +317,7 @@ Lorsque l’étiquette est appliquée et que les utilisateurs accèdent au site,
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>Utiliser PowerShell pour appliquer une étiquette de confidentialité à plusieurs sites
 
-Vous pouvez utiliser l’applet de commande [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) et [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) avec le paramètre *SensitivityLabel* à partir de l’instance en cours de [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) pour appliquer une étiquette de confidentialité à de nombreux sites. Il peut s’agir de n’importe quelle collection de sites SharePoint ou d’un site OneDrive.
+Vous pouvez utiliser l’applet de commande [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) et [Set-SPOTenant a](/powershell/module/sharepoint-online/set-spotenant) avec le paramètre *SensitivityLabel* à partir de l’instance en cours de [Microsoft Office SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) actuel pour appliquer une étiquette de confidentialité à de nombreux sites.Les sites peuvent être n’importe quelle collection de sites Microsoft Office SharePoint Online ou un site OneDrive.
 
 Vérifiez que vous disposez de la version 16.0.19418.12000 ou ultérieure de SharePoint Online Management Shell.
 
@@ -329,7 +329,7 @@ Vérifiez que vous disposez de la version 16.0.19418.12000 ou ultérieure de Sha
    Get-Label |ft Name, Guid
    ```
 
-3. À présent, [connectez-vous à Exchange Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable. Par exemple :
+3. À présent, [connectez-vous Microsoft Office SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et stockez votre GUID d’étiquette en tant que variable.Par exemple :
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -351,7 +351,7 @@ Cette série de commandes vous permet d’étiqueter plusieurs sites de votre cl
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Afficher et gérer les étiquettes de confidentialité dans le Centre d’administration SharePoint
 
-Pour afficher, trier et effectuer une recherche sur les étiquettes de confidentialité appliquées, utilisez la page **Sites actifs** dans le nouveau Centre d’administration SharePoint. Il se peut que vous deviez tout d’abord ajouter la colonne de **Confidentialité** :
+Pour afficher, trier et effectuer une recherche sur les étiquettes de confidentialité appliquées, utilisez la page **Sites actifs** dans le nouveau Centre d’administration SharePoint. Vous devrez peut-être d’abord ajouter la colonne **sensibilité** :
 
 ![Colonne Confidentialité de la page Sites actifs.](../media/manage-site-sensitivity-labels.png)
 

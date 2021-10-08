@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkMAC
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: ac98276e79679d2917a955f02318132c96e2863b
-ms.sourcegitcommit: b295c60d5aa69781a20c59b9cdf2ed91c62b21af
+ms.openlocfilehash: 1b34ac4d8c9afead9ed72b060f8417affc2062b7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "59480867"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179234"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -32,7 +32,7 @@ Utilisez la page **Destruction** de **Gestion des enregistrements** dans le Cent
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Conditions préalables pour l’affichage des suppressions de contenu
 
-Pour gérer les révisions de destruction et vérifier que les enregistrements ont été supprimés, vous devez disposer d’autorisations suffisantes et l’audit doit être activé. Tenez également compte des [limites](retention-limits.md#maximum-number-of-items-for-disposition)pour la destruction.
+Pour gérer les révisions de disposition et confirmer que les enregistrements ont été supprimés, vous devez disposer des autorisations suffisantes et l'audit doit être activé. Soyez également conscient des [limites](retention-limits.md#maximum-number-of-items-for-disposition) de disposition.
 
 ### <a name="permissions-for-disposition"></a>Autorisations pour la destruction
 
@@ -47,9 +47,9 @@ Pour obtenir des instructions pour ajouter des utilisateurs aux rôles par défa
 
 En outre :
 
-- Pour afficher le contenu des éléments pendant le processus de destruction, ajoutez des utilisateurs au groupe de rôle **Visionneuse de contenu de l’Explorateur de contenu**. Si les utilisateurs n’ont pas les autorisations de ce groupe de rôle, ils peuvent toujours sélectionner une action de révision de destruction pour achever la révision de destruction, mais vous devez le faire sans avoir la possibilité d’afficher le contenu de l’élément à partir du volet de mini-préversion dans le Centre de conformité.
+- Pour afficher le contenu des éléments pendant le processus de disposition, ajoutez des utilisateurs au groupe de rôles **Content Explorer Content Viewer**. Si les utilisateurs ne disposent pas des autorisations de ce groupe de rôles, ils peuvent toujours sélectionner une action de révision de la disposition pour terminer la révision de la disposition, mais doivent le faire sans pouvoir afficher le contenu de l'élément à partir du mini-volet d'aperçu du centre de conformité.
 
-- Par défaut, chaque personne qui accède à la page de **Disposition** voit uniquement les éléments qu’elle est affectée à réviser. Pour qu’un administrateur de gestion des enregistrements puissent afficher tous les éléments affectés à l’ensemble des utilisateurs et toutes les étiquettes de rétention qui sont configurées pour la révision avant destruction : naviguez vers **Paramètres de gestion des enregistrements** > **Général** > **Groupe de sécurité du gestionnaire des enregistrements** pour activer ensuite un groupe de sécurité à extension messagerie qui contient les comptes d’administrateur.
+- Par défaut, chaque personne qui accède à la page **Disposition** ne voit que les éléments qu'elle est chargée de réviser. Pour qu'un administrateur de gestion des enregistrements puisse voir tous les éléments attribués à tous les utilisateurs et toutes les étiquettes de rétention qui sont configurées pour l'examen de disposition : accédez à **Paramètres de gestion des enregistrements** > **Groupe de** > **sécurité général pour que le gestionnaire d'enregistrements** sélectionne, puis active un groupe de sécurité à extension messagerie qui contient le comptes administrateur.
     
     Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un nouveau groupe de sécurité compatible avec la messagerie, utilisez le lien vers le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d'administration de Microsoft 365</a> pour créer le nouveau groupe. 
     
@@ -60,9 +60,9 @@ En outre :
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Activation d’un autre groupe de sécurité pour sa disposition
 
-Après avoir activé un groupe de sécurité pour sa disposition à partir du **Paramètres de gestion des enregistrements** dans le Centre de conformité Microsoft 365, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le Centre de conformité. Toutefois, vous pouvez activer un autre groupe de sécurité à extension messagerie en utilisant la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+Après avoir activé un groupe de sécurité pour la disposition à partir des **paramètres de gestion des enregistrements** dans le centre de conformité Microsoft 365, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le centre de conformité. Cependant, vous pouvez activer un autre groupe de sécurité à extension messagerie à l'aide de la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
 
-Par exemple : 
+Par exemple : 
 
 ```PowerShell
 Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
@@ -82,7 +82,7 @@ Lorsque le contenu atteint la fin de la période de rétention, vous souhaiterez
 
 - Déplacez le contenu de son emplacement existant vers un emplacement d’archivage, par exemple, si ce contenu a des valeurs d’historique ou de recherche.
 
-Lorsqu’une révision de disposition est déclenchée à la fin de la période de rétention, les relecteurs que vous choisissez reçoivent une notification par courrier électronique leur avertissant qu’ils ont du contenu à réviser. Ces relecteur peuvent être des utilisateurs individuels ou des groupes de sécurité à extension messagerie.
+Lorsqu'une révision de disposition est déclenchée à la fin de la période de conservation, les réviseurs que vous choisissez reçoivent une notification par e-mail indiquant qu'ils ont du contenu à réviser. Ces réviseurs peuvent être des utilisateurs individuels ou des groupes de sécurité à extension messagerie.
 
 Vous pouvez personnaliser l’e-mail qu’ils reçoivent, notamment les instructions dans d’autres langues. Pour un support multilingue, vous devez vous-même spécifier les traductions et ce texte personnalisé s’affiche pour tous les réviseurs indépendamment de leurs paramètres régionaux.
 
@@ -101,11 +101,11 @@ Une révision de destruction peut inclure du contenu dans les boîtes aux lettre
 > [!NOTE]
 > Une boîte aux lettres doit avoir au moins 10 Mo de données pour prendre en charge les révisions de suppression.
 
-Les administrateurs peuvent voir une vue d’ensemble de toutes les destructions en attente dans l’onglet **Vue d’ensemble**. Les réviseurs voient uniquement leurs éléments en attente de destruction. Par exemple :
+Les administrateurs peuvent voir un aperçu de toutes les dispositions en attente dans l'onglet **Aperçu**. Les réviseurs ne voient que leurs éléments en attente de disposition. Par exemple :
 
 ![Dispositions en attente dans la vue d’ensemble de la Gestion des enregistrements](../media/dispositions-overview.png)
 
-Lorsque vous sélectionnez l’option **Afficher toutes les destructions en attente**, vous êtes redirigé vers la page **Destruction** . Par exemple :
+Lorsque vous sélectionnez l’option **Afficher toutes les dispositions en attente**, vous êtes redirigé vers la page **Disposition**. Par exemple :
 
 ![Page de destruction dans le centre de conformité Microsoft 365.](../media/disposition-tab.png)
 
@@ -177,7 +177,7 @@ Lorsqu’un réviseur est averti par courrier électronique que le contenu est p
 
 ![Ouvrir dans une nouvelle fenêtre pour la révision de destruction.](../media/open-in-new-window.png)
 
-À partir de la page **Destructions en attente**, ils peuvent afficher toutes les destructions en attente pour cette étiquette. Lorsqu’un ou plusieurs éléments sont sélectionnés, ils peuvent utiliser le volet de mini-visualisation et les onglets **Source**, **Détails** et **Historique** pour inspecter le contenu avant d’agir dessus :
+Sur la page **Dispositions en attente**, ils voient toutes les dispositions en attente pour cette étiquette. Lorsqu'un ou plusieurs éléments sont sélectionnés, ils peuvent utiliser le volet de mini-aperçu et les onglets **Source**, **Détails**, et **Historique** pour inspecter le contenu avant de prendre des mesures :
 
 ![Options de destruction.](../media/retention-disposition-options.png)
 
@@ -209,14 +209,14 @@ Utilisez l’onglet **Destruction** à partir de la page **Gestion des enregistr
 - Éléments supprimés suite à une révision avant destruction.
 - Les éléments marqués comme enregistrement ou enregistrement réglementaire qui ont été automatiquement supprimés à la fin de leur période de rétention.
 
-Ces éléments affichent **Enregistrements supprimés** dans la colonne **Type**. Par exemple :
+Ces éléments affichent **Records Disposed** dans la colonne **Type**. Par exemple :
 
 ![Éléments supprimés sans révision avant destruction](../media/records-disposed2.png)
 
 > [!NOTE]
 > Cette fonctionnalité est basée sur les informations du [Journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [Activé et accessible à la recherche](turn-audit-log-search-on-or-off.md) pour la capture des événements correspondants.
 
-Pour auditer les éléments supprimés marqués comme enregistrements ou enregistrements réglementaires, recherchez **Fichier supprimé marqué comme enregistrement** dans la catégorie **Activités des fichiers et pages**. Cet événement d’audit est applicable aux documents et messages électroniques.
+Pour l'audit des éléments supprimés qui ont été marqués comme enregistrements ou enregistrements réglementaires, recherchez **Fichier supprimé marqué comme enregistrement** dans la catégorie **Activités de fichier et de page**. Cet événement d'audit s'applique aux documents et aux e-mails.
 
 ## <a name="filter-and-export-the-views"></a>Filtrer et exporter les affichages
 

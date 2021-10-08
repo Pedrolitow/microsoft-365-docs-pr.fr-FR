@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser PowerShell pour la création et la publication d’étiquettes de rétention à partir de la ligne de commande, indépendamment du Centre de conformité Microsoft 365.
-ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 3f64fc7aede06e512d735908b8f06b7a8cb3e032
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59164132"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60170894"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Créer et publier des étiquettes de rétention à l’aide de PowerShell
 
@@ -32,7 +32,7 @@ ms.locfileid: "59164132"
 
 Après avoir décidé d’utiliser les [étiquettes de rétention](retention.md) pour vous permettre de conserver ou de supprimer des documents et messages électroniques dans Microsoft 365, vous vous êtes peut-être rendu compte que vous avez de nombreuses étiquettes de rétention, voire des centaines, à créer et à publier. Pour créer des étiquettes de rétention à l’échelle, nous vous conseillons d’utiliser [plan de fichiers](file-plan-manager.md) depuis le Centre de conformité Microsoft 365. Cependant, vous pouvez également utiliser les applets de commande [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
-Utilisez les informations, les fichiers de modèles et les exemples, ainsi que les scripts inclus dans cet article pour vous permettre de créer des étiquettes de rétention en bloc et les publier dans des stratégies d’étiquette de rétention. Les étiquettes de rétention peuvent ensuite être [appliquées par les administrateurs et les utilisateurs](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
+Utilisez les informations, les fichiers modèles, les exemples et le script de cet article pour vous aider à créer en bloc des étiquettes de rétention et à les publier dans des stratégies d'étiquette de rétention. Ensuite, les étiquettes de rétention peuvent être [appliquées par les administrateurs et les utilisateurs](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
 Les instructions fournies ne prennent pas en charge les étiquettes de rétention qui sont automatiquement appliquées.
 
@@ -54,7 +54,7 @@ Les exemples de script fournis dans cet article ne sont pris en charge dans aucu
 
 2. Remplacez les exemples par des entrées pour vos propres étiquettes et paramètres de rétention. Si vous souhaitez en savoir plus sur les valeurs de paramètre, consultez l’article [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
-3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : C :\>Scripts\Labels.csv
+3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : C : \>Scripts\Labels.csv
 
   
 Remarques :
@@ -103,7 +103,7 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 1. Copiez et collez le script PowerShell suivant dans le bloc-notes.
 
-2. Enregistrez le fichier à l’aide d’une extension de nom de fichier **.ps1** dans un emplacement facile à trouver. Par exemple : `<path>CreateRetentionSchedule.ps1`
+2. Enregistrez le fichier en utilisant une extension de nom de fichier **.ps1** dans un emplacement facile à trouver. Par exemple : `<path>CreateRetentionSchedule.ps1`
 
 Remarques :
 
@@ -741,7 +741,7 @@ Tout d’abord, [Se connecter à l’interface PowerShell du Centre de sécurit�
 
 Puis exécutez le script qui permet de créer et de publier les étiquettes de rétention :
   
-1. Dans votre session dans le Centre de sécurité et conformité PowerShell, saisissez le chemin d’accès suivi des caractères `.\` et le nom de fichier du script, puis appuyez sur ENTRÉE pour exécuter le script. Par exemple :
+1. Dans votre session PowerShell Security & Compliance Center, entrez le chemin, suivi des caractères `.\` et du nom de fichier du script, puis appuyez sur ENTRÉE pour exécuter le script. Par exemple :
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
