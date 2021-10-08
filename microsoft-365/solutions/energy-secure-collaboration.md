@@ -10,15 +10,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 description: Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: a9e104516b203d81ef69058b2d31d4b4c97df39e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 70be71b33c471d31207215be6c518f3429b31bf7
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180838"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60206408"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Principales considérations en matière de conformité et de sécurité pour le secteur de l’énergie
 ![Illustration métaphorique pour une vue globale de plusieurs industries utilisant le cloud.](../media/solution-arch-center/MSC17_global_016.png)
@@ -86,7 +86,7 @@ Microsoft 365 fournit des fonctionnalités de stratégie commune pour Microsoft 
 
 **Les stratégies de dénomination des groupes Office 365** permettent de garantir que les groupes Office 365, et par conséquent les équipes Microsoft, sont nommés conformément à la stratégie d’entreprise. Le nom d’une équipe peut présenter des difficultés si celle-ci n’est pas nommée de manière appropriée. Par exemple, les employés peuvent ne pas savoir dans quelles équipes travailler ou partager des informations si elles ne sont pas nommées correctement. Les stratégies de dénomination de groupe peuvent imposer une bonne hygiène et peuvent également empêcher l’utilisation de mots spécifiques, comme des mots réservés ou une terminologie inappropriée. 
 
-**Les stratégies d’expiration des groupes Office 365** permettent de garantir que les groupes Office 365, et par conséquent les équipes Microsoft, ne sont pas conservés au-delà des délais requis par l’organisation. Cette fonctionnalité permet d’éviter deux problèmes de gestion des informations essentielles :
+**Stratégies d’expiration de groupe Office 365** permet de s’assurer que les groupes Office 365 et, par conséquent, Microsoft Teams, ne sont pas conservés pendant des périodes plus longues que celles requises par l’organisation. Cette fonctionnalité permet d’éviter deux problèmes de gestion des informations clés :
 - la prolifération des équipes Microsoft qui ne sont pas nécessaires ou utilisées
 - la conservation excessive de données qui n’est plus requise par l’organisation
 
@@ -130,7 +130,7 @@ Microsoft 365 fournit une plateforme d’identité sécurisée dans **Azure Acti
 
 **Microsoft Cloud App Security (MCAS)** offre aux organisations la possibilité d’appliquer davantage de politiques à un niveau granulaire et de détecter les anomalies de comportement en fonction de profils d’utilisateurs individuels qui sont automatiquement définis à l’aide de Machine Learning. MCAS peut s’appuyer sur les stratégies d’accès conditionnel Azure pour protéger davantage les ressources sensibles en évaluant des signaux supplémentaires liés au comportement des utilisateurs et aux propriétés des documents consultés. Avec le temps, MCAS apprend le comportement typique de chaque employé, en ce qui concerne les données auxquelles ils accèdent et les applications qu’ils utilisent. En se basant sur les modèles de comportement appris, les stratégies peuvent automatiquement appliquer les contrôles de sécurité si un employé change de comportement. Par exemple, si un employé accède en général à une application de comptabilité de 9 heures à 17 heures du lundi au vendredi, mais que ce même utilisateur accède à cette application de façon intensive le dimanche soir, MCAS peut appliquer des stratégies de façon dynamique pour exiger la ré-authentification de l’utilisateur. Cela permet de s’assurer que les informations d’identification n’ont pas été compromises. De plus, le MCAS peut aider à découvrir et à identifier l’informatique fantôme dans l’organisation, aidant les équipes InfoSec à s’assurer que les employés utilisent des outils approuvés lorsqu’ils travaillent avec des données sensibles. Enfin, le MCAS peut protéger les données sensibles n’importe où dans le cloud, même en dehors de la plateforme Microsoft 365. Il permet aux organisations d’approuver (ou de désapprouver) des applications cloud externes spécifiques, en contrôlant l’accès et en surveillant les utilisateurs qui travaillent sur ces applications.
 
-**Azure Active Directory** et les services de sécurité Microsoft 365 associés constituent la base sur laquelle une plateforme de collaboration cloud moderne peut être déployée auprès des organisations du secteur de l’énergie afin que l’accès aux données et aux applications puisse être fortement sécurisé et que les obligations de conformité réglementaire soient respectées. Pour résumé, ces outils offrent les fonctionnalités clés suivantes :
+**Azure Active Directory** et les services de sécurité Microsoft 365 associés constituent la base sur laquelle une plateforme de collaboration cloud moderne peut être déployée auprès des organisations du secteur de l’énergie afin que l’accès aux données et aux applications puisse être fortement sécurisé et que les obligations de conformité réglementaire soient respectées. Pour résumer, ces outils fournissent les fonctionnalités essentielles suivantes:
 - stocker et gérer de façon sécurisée les identités des utilisateurs.
 - utiliser un protocole d’authentification élevé, notamment une authentification multifacteur, pour authentifier les utilisateurs sur les demandes d’accès et offrir une expérience d’authentification cohérente et fiable pour toutes les applications.
 - valider dynamiquement les stratégies sur toutes les demandes d’accès, en intégrant plusieurs signaux dans le processus de prise de décision de la stratégie, y compris l’identité, l’adhésion de l’utilisateur ou du groupe, l’application, l’appareil, le réseau, l’emplacement et le score de risque en temps réel

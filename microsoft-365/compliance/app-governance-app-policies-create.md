@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Créer des stratégies d’application.
-ms.openlocfilehash: 4029a7eeac53a23ad4d0b12556d6c9d0a71ba920
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 25aa33fad47abd5faebb90b28b47564f32d6b008
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181492"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60204538"
 ---
 # <a name="create-app-policies"></a>Créer des stratégies d’application
 
@@ -107,8 +107,7 @@ Dans la page **Choisir les paramètres et conditions de stratégie**, pour **Cho
 - Toutes les applications
 - Choisir des applications spécifiques
 
-  Un volet vous permet de sélectionner une ou plusieurs applications.
-  Cliquez sur **Ajouter**.
+  Un volet vous permet de sélectionner une ou plusieurs applications. Sélectionnez **Ajouter**.
 
 Sélectionnez **Suivant**.
 
@@ -162,7 +161,7 @@ La gouvernance des applications fournit quelques modèles de base qui facilitent
 1. Dans la page Gouvernance des applications, sélectionnez **l’onglet Stratégie.**
 1. Sélectionnez **Créer**.
 1. Sous **Catégories**, sélectionnez **Personnalisé**. Sous **Modèles,** sélectionnez **Stratégie personnalisée.** Sélectionnez **Suivant**.
-1. Entrez un nom pour votre stratégie, tapez **une description**, puis, dans la liste de listes de gravité de la stratégie, sélectionnez une gravité. Sélectionnez **Suivant**.
+1. Saisissez un nom pour votre stratégie, tapez une description, puis dans la liste déroulante de **gravité de la stratégie**, sélectionnez une gravité. Sélectionnez **Suivant**.
 1. Sélectionnez **Non, je souhaite personnaliser la stratégie,** puis sélectionnez **Suivant.**
 1. Choisissez si vous souhaitez que cette stratégie s’applique à toutes les applications de votre client ou choisissez des applications spécifiques. Si vous choisissez des applications **spécifiques pour cette stratégie, sélectionnez** Ajouter des applications et sélectionnez les applications souhaitées dans la liste. Dans le volet Choisir **des** applications, vous pouvez sélectionner plusieurs applications à laquelle cette stratégie sera appliquée, puis sélectionner **Ajouter.** Sélectionnez **Suivant** lorsque vous êtes satisfait de la liste.
 1. Sélectionnez **Définir de nouvelles conditions pour la stratégie,** puis **sélectionnez Modifier les conditions.** Sélectionnez **Ajouter une condition** et choisissez une condition dans la liste, puis sélectionnez la condition à appliquer. Répétez l’ajout de conditions. Sélectionnez **Enregistrer** pour enregistrer la règle, puis lorsque vous avez terminé d’ajouter des règles, sélectionnez **Suivant**.
@@ -172,7 +171,7 @@ La gouvernance des applications fournit quelques modèles de base qui facilitent
     - **Actif** : l’évaluation et l’action de la stratégie sont actives.
     - **Inactif :** l’évaluation et l’action de la stratégie sont désactivées.
   
-    Vous devez utiliser le mode Audit pour tester une nouvelle stratégie. Sélectionnez **Suivant**.
+    Vous devriez utiliser le mode Audit pour tester une nouvelle stratégie. Sélectionnez **Suivant**.
 1. Examinez attentivement tous les paramètres de votre stratégie personnalisée. Sélectionnez **Envoyer** lorsque vous êtes satisfait. Vous pouvez également revenir en arrière et modifier les paramètres en sélectionnant **Modifier** sous l’un des paramètres.
 
 ## <a name="test-and-monitor-your-new-app-policy"></a>Tester et surveiller votre nouvelle stratégie d’application
