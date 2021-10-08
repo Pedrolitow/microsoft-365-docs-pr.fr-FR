@@ -9,17 +9,17 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
 description: Implémentez les fonctionnalités de gouvernance des applications Microsoft pour régir vos applications.
-ms.openlocfilehash: 379da2e2ff894b2f6355c14db93b339518dfca02
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: ca1a77c4f5a1543a000b563dde98238136b3115d
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59181427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60189548"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Module complémentaire de gouvernance des applications pour Microsoft Cloud App Security (en préversion)
 
@@ -50,7 +50,7 @@ La gouvernance des applications est une solution basée sur une plateforme qui f
 
 ## <a name="a-first-glimpse-at-app-governance"></a>Un premier aperçu de la gouvernance des applications
 
-Pour afficher le tableau de bord de gouvernance des applications, accédez à [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Notez que votre compte de connexion doit avoir l’un des [rôles d’administrateur](app-governance-get-started.md#administrator-roles) pour afficher les données de gouvernance des applications.
+Pour voir le tableau de bord de la gouvernance des applications, allez à [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Notez que votre compte de connexion doit avoir l'un des [rôles d'administrateur](app-governance-get-started.md#administrator-roles) pour voir toutes les données de gouvernance des applications.
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Intégration de la gouvernance des applications à Azure AD et Microsoft Cloud App Security
 

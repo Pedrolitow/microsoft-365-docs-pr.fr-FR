@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 1986140e2aa809e81415a8e581ce626c5100809d
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 775a5f1376df1bca553bc1b3b9cd92072736ac60
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179075"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60203734"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -168,7 +168,7 @@ Pour restreindre l'accès des invités au web uniquement pour les groupes et Mic
 8. Dans le panneau **Sélectionner**, sélectionnez **Microsoft Teams**, et **Outlook Groups**, puis cliquez sur **Sélectionner**.
 9. Sous **Affectations**, cliquez sur **Conditions**.
 10. Dans le panneau **Conditions**, cliquez sur **Applications clientes**.
-11. Dans le panneau **Applications clientes**, cliquez sur **Oui** pour **Configurer**, puis sélectionnez les paramètres **Applications mobiles et clients de bureau**, **Clients Exchange ActiveSync** et **Autres clients**. Désactivez la case à cocher **Navigateur**.
+11. Dans le panneau **Applications clientes**, cliquez sur **Oui** pour **Configurer**, puis sélectionnez les paramètres **Applications mobiles et clients de bureau**, **Clients Exchange ActiveSync**, et **Autres clients**. Décochez la case **Navigateur**.
 
     ![Capture d'écran des paramètres des applications clientes à accès conditionnel d'Azure AD.](../media/azure-ad-conditional-access-client-mobile.png)
 

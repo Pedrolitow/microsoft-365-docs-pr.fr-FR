@@ -13,16 +13,16 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: ''
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: c3769239951b409afe7596b6f4fecf83c87a9131
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 4c60f77f7f7807395a503ce083795e76398d99b4
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182888"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60196248"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation
 
@@ -36,7 +36,7 @@ Si des membres de votre organisation doivent effectuer un partage non authentifi
 
 Nous vous recommandons de laisser les liens *Tout le monde* activés pour le contenu approprié parce qu’il s’agit de la manière la plus simple de partager des documents et de réduire le risque que des utilisateurs recherchent d’autres solutions en dehors du contrôle de votre service informatique. Les liens *Tout le monde* peuvent être transférés à d’autres personnes mais l’accès aux fichiers est disponible uniquement pour les personnes qui dispose du lien.
 
-Si vous voulez toujours que les personnes extérieures à votre organisation s’authentifient lors de l’accès au contenu dans SharePoint, les groupes ou Teams, vous pouvez désactiver le partage *Tout le monde*. Cela permet d’éviter que les utilisateurs ne partagent le même contenu.
+Si vous souhaitez que les personnes extérieures à votre organisation s'authentifient toujours lorsqu'elles accèdent au contenu dans Microsoft Office SharePoint Online, les groupes ou les équipes, vous pouvez désactiver le partage avec *tout le monde*. Cela empêchera les utilisateurs de partager du contenu non authentifié.
 
 Si vous désactivez les liens *Tout le monde*, les utilisateurs peuvent tout de même partager facilement du contenu avec des invités à l’aide de liens *Personnes spécifiques*. Dans ce cas, toutes les personnes extérieures à votre organisation devront s’authentifier avant de pouvoir accéder au contenu partagé.
 

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie
 description: Utilisez les lignes de base de sécurité pour protéger vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: c2e461e5b4236738909a61c30d5bfde060f372cb
-ms.sourcegitcommit: 7e7effd8ef4ffe75cdee7bb8517fec8608e4c230
+ms.openlocfilehash: 662e4097f4d6fd868810ba889c99d58fd0dc2f75
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "59444583"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202308"
 ---
 # <a name="step-1-configure-security-baselines"></a>Étape 1. Configurer les lignes de base de sécurité
 
@@ -38,7 +38,7 @@ Ces lignes de base contiennent des paramètres de configuration et des règles c
 
 Tout d’abord, évaluez et mesurez votre niveau de sécurité à l’aide du [Niveau de sécurité Microsoft](/microsoft-365/security/defender/microsoft-secure-score), puis suivez les instructions pour l’améliorer selon vos besoins.
 
-Ensuite, utilisez les [règles de réduction de la surface d’attaque](/microsoft-365/security/defender-endpoint/attack-surface-reduction) pour bloquer les activités suspectes et le contenu vulnérable. Ces règles comprennent la prévention de :
+Ensuite, utilisez [des règles de réduction de la surface d'attaque](/microsoft-365/security/defender-endpoint/attack-surface-reduction) pour aider à bloquer les activités suspectes et le contenu vulnérable. Ces règles comprennent la prévention :
 
 - Création de processus enfants par toutes les applications Office
 - Contenu exécutable à partir du client de messagerie et du courrier web

@@ -9,15 +9,15 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Découvrez comment les établissements financiers peuvent gérer la conformité de la sécurité financière et collaborer efficacement à l’aide de Microsoft 365 et Teams.
 f1.keywords: NOCSH
-ms.openlocfilehash: 0e3fada6a74776e4edf2c8c41ef9026ce17871ad
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 073f24bc751bcb9f11a415d4ef142172fd5387ed
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59180832"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60207522"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -83,7 +83,7 @@ Microsoft 365 fournit d’autres fonctionnalités de stratégie courantes pour 
 
 **Les stratégies d’attribution de nom de groupe Microsoft 365** permettent de s’assurer que les groupes Microsoft 365, et par conséquent, les équipes, sont nommés selon la stratégie de l’entreprise. Les noms peuvent être problématiques s’ils ne sont pas appropriés. Par exemple, les employés peuvent ne pas savoir avec quelles équipes travailler ou partager des informations si les noms ne sont pas correctement appliqués. Les stratégies de noms de groupes (notamment la prise en charge des stratégies basées sur les préfixes/suffixe et les mots bloqués personnalisés) peuvent renforcer « l’hygiène » et empêcher l’utilisation de mots spécifiques, tels que les mots réservés ou la terminologie inappropriée.
   
-**Les stratégies d’expiration de groupe Microsoft 365** garantissent que les groupes Microsoft 365 et, par conséquent, les équipes, ne sont pas conservés au-delà des délai requis ou nécessaires pour l’organisation. Cette fonctionnalité permet d’éviter deux problèmes de gestion des informations clés :
+**Les stratégies d’expiration de groupe Microsoft 365** garantissent que les groupes Microsoft 365 et, par conséquent, les équipes, ne sont pas conservés au-delà des délai requis ou nécessaires pour l’organisation. Cette fonctionnalité permet d’éviter deux importants problèmes de gestion des informations :
 
 * Prolifération des équipes qui ne sont pas nécessaires ou qui ne sont pas utilisées.
 * Dépassement de la rétention des données qui ne sont plus nécessaires ou utilisées par l’organisation (sauf en cas de conservation ou de conservation légale).
@@ -256,7 +256,7 @@ Enfin, la règle 17a-4 impose aux organisations de conserver les enregistrements
  
 Sur demande, Microsoft fournira une lettre d'attestation de conformité avec la SEC 17a-4 si une organisation l'exige.
 
-De plus, ces fonctionnalités aident également Microsoft 365 à respecter les exigences en matière de stockage pour [règle CFTC 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) de la **Commodity Futures Trading Commission des États-Unis** et [FINRA série de règles 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) de la **Financial Industry Regulatory Authority.** Collectivement, ces règles représentent les directives les plus normatives au monde pour les institutions financières en matière de conservation des documents.
+De plus, ces fonctionnalités aident également Microsoft 365 à respecter les exigences en matière de stockage pour [Règle CFTC 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) de la **Commodity Futures Trading Commission des États-Unis** et [FINRA série de règles 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) de la **Financial Industry Regulatory Authority.** Collectivement, ces règles constituent le guide le plus normatif du monde pour la conservation d’enregistrements par les institutions financières.
 
 Vous trouverez des informations supplémentaires sur la conformité de Microsoft 365 avec les règles SEC 17a-4 et d’autres réglementations sur l’[Évaluation de la règles SEC 17a-4(f) / CFTC 1.31(c)-(d) d’Office 365 Exchange Online par Cohasset Associates](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
 
@@ -284,7 +284,7 @@ Les cloisonnements de l’information dans Microsoft 365 prennent en charge les 
 
 Les institutions financières sont généralement tenues d'établir et de maintenir une fonction de surveillance au sein de leur organisation afin de contrôler les activités des employés et de l'aider à se conformer aux lois sur les valeurs mobilières applicables. Plus précisément, la FINRA a établi ces exigences de surveillance :
  
-* [La règle 3110 de la FINRA (Surveillance)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) impose aux entreprises de faire part de procédures de contrôle rédigées (WSP) aux activités de surveillance de ses employés et de leurs types d’entreprises. Outre les autres conditions requises, les procédures doivent comprendre les éléments suivants :
+* [La règle 3110 de la FINRA (Surveillance)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) impose aux entreprises de faire part de procédures de contrôle rédigées (WSP) aux activités de surveillance de ses employés et de leurs types d’entreprises. Outre d’autres exigences, les procédures doivent inclure :
    - Surveillance des membres du personnel de supervision
    - Examen des activités de banque d'investissement, des opérations sur titres, des communications internes et des examens internes d'une entreprise
    - Examen des transactions pour délit d'initié

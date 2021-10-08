@@ -12,14 +12,14 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkMAC
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: Microsoft Office SharePoint Online
-ms.openlocfilehash: 2f77176e2bfd90b4f912379b3b2dcf15b62c7cf4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 50a38a172a2904a649d4f4c31aa293c3c085bd31
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179796"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60202930"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
@@ -96,7 +96,7 @@ Pour plus d’informations sur les licences SharePoint Syntex, voir [Gestion des
 
     1. Dans le champ **Nom du site**, tapez le nom souhaité pour votre site de centre de contenu.
     
-    1. Le champ **Adresse du site** affiche l’URL de votre site, en fonction du nom de site choisi. Si vous souhaitez le modifier, cliquez sur **Modifier**.
+    1. **L'adresse du site** affichera l'URL de votre site, en fonction de ce que vous avez sélectionné pour le nom du site. Si vous souhaitez le modifier, cliquez sur **Modifier**.
 
        > [!div class="mx-imgBorder"]
        > ![Créer un centre de contenu.](../media/content-understanding/admin-cu-create-cc.png)</br>
@@ -121,7 +121,7 @@ Pour attribuer des licences :
 
 3. Sélectionnez **Applications** dans le menu déroulant.
 
-4. Sélectionnez **Afficher les applications pour SharePoint Syntex**. Sous **Applications**, assurez-vous que **service de données commun pour SharePoint Syntex**, **SharePoint Syntex** et **SharePoint Syntex-SPO type** sont tous sélectionnés.
+4. Sélectionnez **Afficher les applications pour Microsoft Office Sharepoint Online Syntex**. Sous **Applications**, assurez-vous que les types **Common Data Service pour SharePoint Syntex**, **Microsoft Office SharePoint Online Syntex**, et **Microsoft Office SharePoint Online Syntex – SPO** sont tous sélectionnés.
 
     > [!div class="mx-imgBorder"]
     > ![Licences de SharePoint Syntex dans le Centre d’administration Microsoft 365.](../media/content-understanding/sharepoint-syntex-licenses.png)

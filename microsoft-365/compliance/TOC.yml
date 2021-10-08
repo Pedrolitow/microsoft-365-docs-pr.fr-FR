@@ -978,8 +978,16 @@
           href: compliance-manager-setup.md
         - name: Créer et gérer des évaluations
           href: compliance-manager-assessments.md
-        - name: Travailler avec des modèles d'évaluation
+        - name: En savoir plus sur les modèles d’évaluation
           href: compliance-manager-templates.md
+        - name: Créer des modèles d’évaluation
+          href: compliance-manager-templates-create.md
+        - name: Étendre les modèles d’évaluation
+          href: compliance-manager-templates-extend.md
+        - name: Modifier les modèles d’évaluation
+          href: compliance-manager-templates-modify.md
+        - name: Mettre en forme des données de modèle dans Excel
+          href: compliance-manager-templates-format-excel.md
         - name: Liste des modèles de Gestionnaire de conformité
           href: compliance-manager-templates-list.md
         - name: Affectation et exécution d’actions d’amélioration

@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment la rétention fonctionne pour SharePoint et OneDrive.
-ms.openlocfilehash: 406cb6f0f9fb31aad21c918db213b2f2f4a054e0
-ms.sourcegitcommit: f9e038dd8420e7af2d1b0244d3567b376475c641
+ms.openlocfilehash: 9e70ecd26eabad62e93901d0c6a296c068717b73
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011427"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60197496"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Découvrir la rétention pour SharePoint et OneDrive
 
@@ -72,7 +72,7 @@ Pour conserver ce contenu lorsqu'un utilisateur tente de le modifier ou de le su
   
 Un travail du minuteur nettoie périodiquement la bibliothèque de conservation et de préservation des documents. Pour le contenu ayant passé plus de 30 jours dans la bibliothèque de conservation et de préservation des documents, ce travail compare le contenu à toutes les requêtes utilisées par les paramètres de rétention de ce contenu. Un contenu antérieur à la période de rétention configurée est alors supprimé de la bibliothèque de conservation et de préservation des documents, et de l’emplacement d’origine si celui-ci existe encore. Ce travail de timer s’exécute tous les sept jours, ce qui signifie qu’avec un minimum de 30 jours, la suppression du contenu de la bibliothèque de conservation et de préservation des documents peut prendre jusqu’à 37 jours.
 
-Ce comportement pour la copie de fichiers dans la bibliothèque de conservation et de préservation des documents s’applique au contenu qui existe lorsque les paramètres de rétention ont été appliqués. En outre, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son ajout à la stratégie est conservé dans la bibliothèque de conservation et de préservation des documents. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver toutes les versions d’un fichier, vous devez activer le [contrôle de version](#how-retention-works-with-document-versions).
+Ce comportement de copie de fichiers dans la bibliothèque Preservation Hold s'applique au contenu qui existe lorsque les paramètres de conservation ont été appliqués. De plus, pour les stratégies de rétention, tout nouveau contenu créé ou ajouté au site après son inclusion dans la stratégie sera conservé dans la bibliothèque de conservation. Cependant, le nouveau contenu n'est pas copié dans la bibliothèque Preservation Hold la première fois qu'il est modifié, uniquement lorsqu'il est supprimé. Pour conserver toutes les versions d'un fichier, vous devez activer la gestion des [versions](#how-retention-works-with-document-versions).
   
 Les utilisateurs voient un message d'erreur s'ils essaient de supprimer une bibliothèque, une liste, un dossier ou un site qui est soumis à la conservation. Ils peuvent supprimer un dossier s'ils déplacent ou suppriment d'abord tous les fichiers du dossier qui sont soumis à la conservation.
 
@@ -87,7 +87,7 @@ Lorsque les paramètres de la stratégie de rétention consistent à conserver e
     > [!NOTE]
     > Pour éviter toute perte de données par inadvertance, nous ne supprimons plus définitivement le contenu de la bibliothèque de conservation. Au lieu de cela, nous ne supprimons définitivement que le contenu de la corbeille de façon à ce que tout le contenu de la bibliothèque de conservation et de préservation passe transmis par la corbeille second niveau .
     
-2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, le travail de minuteur déplace le contenu vers la corbeille de premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation.
+2. **Si le contenu n'est pas modifié ou supprimé** pendant la période de rétention, le travail du minuteur déplace ce contenu vers la Corbeille de première étape à la fin de la période de rétention. Si un utilisateur en supprime le contenu ou vide cette corbeille (également appelée purge), le document est déplacé vers la corbeille secondaire. Une période de rétention de 93 jours couvre à la fois les corbeilles de recyclage de première et de deuxième étape. Au bout de 93 jours, le document est définitivement supprimé où qu'il se trouve, dans la corbeille de première ou de deuxième étape. La Corbeille n'est pas indexée et donc indisponible pour la recherche. Par conséquent, une recherche eDiscovery ne peut trouver aucun contenu de la corbeille sur lequel placer une conservation.
 
 > [!NOTE]
 > En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence), la suppression définitive est toujours suspendue si le même élément doit être retenu à cause d’une autre stratégie de rétention ou d’une étiquette de rétention ou qu’il est bloqué pour des raisons juridiques ou d’enquête.
@@ -104,7 +104,7 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 1. **Si le contenu est supprimé** pendant la période configurée : le document est déplacé vers la corbeille de premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille, le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). Si le contenu est modifié pendant la période configurée, il suit le même chemin de suppression après la période configurée.
 
-2. **Si le contenu n’est pas supprimé** pendant la période configurée : à la fin de la période configurée dans la stratégie de rétention, le document est déplacé vers la corbeille de premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation.
+2. **Si le contenu n'est pas supprimé** pendant la période configurée : À la fin de la période configurée dans la politique de rétention, le document est déplacé vers la Corbeille de première étape. Si un utilisateur supprime le document à partir de là ou vide cette corbeille (également appelée purge), le document est déplacé vers la corbeille secondaire. Une période de rétention de 93 jours couvre à la fois les corbeilles de recyclage de première et de deuxième étape. Au bout de 93 jours, le document est définitivement supprimé de l'endroit où il se trouve, dans la corbeille de première étape ou de deuxième étape. La Corbeille n'est pas indexée et donc indisponible pour la recherche. Par conséquent, une recherche eDiscovery ne peut trouver aucun contenu de la corbeille sur lequel placer une conservation.
 
 ## <a name="how-retention-works-for-onenote-content"></a>Fonctionnement de la rétention pour le contenu OneNote
 
@@ -112,16 +112,13 @@ Lorsque vous appliquez une stratégie de rétention à un emplacement qui inclut
 
 ## <a name="how-retention-works-with-document-versions"></a>Fonctionnement de la rétention avec des versions de documents
 
-Le contrôle de version est une fonctionnalité présente dans toutes listes et les bibliothèques de documents dans SharePoint et OneDrive. Par défaut, le contrôle de version conserve au moins les 500 versions principales, même si vous pouvez augmenter cette limite. Pour plus d’informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
+La gestion des versions est une fonctionnalité de toutes les listes de documents et bibliothèques dans Microsoft Office SharePoint Online et OneDrive. Par défaut, la gestion des versions conserve un minimum de 500 versions majeures, bien que vous puissiez augmenter cette limite. Pour plus d'informations, consultez [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) et [Fonctionnement du contrôle de version dans les listes et les bibliothèques](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
 Lorsqu’un document avec plusieurs versions est soumis à des paramètres de rétention pour conserver le contenu, les versions copiées dans la bibliothèque de conservation et de préservation des documents sont des éléments distincts. Si vous avez configuré les paramètres de rétention pour suppression à la fin de la période de rétention :
 
 - Si la période de rétention est basée sur la date de création du contenu, chaque version comporte la même date d’expiration que le document d’origine. Le document d’origine et toutes ses versions expirent en même temps.
 
 - Si la période de rétention est basée sur la date de la dernière modification du contenu, chaque version possède sa propre date d’expiration basée sur la date à laquelle le document d’origine a été modifié pour créer cette version. Le document d’origine et ses versions expirent séparément l’un de l’autre.
-
-> [!NOTE]
-> Les versions conservées des documents SharePoint et OneDrive ne sont pas consultables par les outils eDiscovery.
 
 Lorsque l’action de rétention consiste à supprimer le document, elle supprime simultanément toutes les versions absentes de la bibliothèque de conservation et de préservation des documents, en fonction de la version actuelle.
 

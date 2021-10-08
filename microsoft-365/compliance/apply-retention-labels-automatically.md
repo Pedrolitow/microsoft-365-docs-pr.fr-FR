@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: c6aede6ba25ebd7f28008e4c52450bd3e4b74c2d
-ms.sourcegitcommit: 4ea16de333421e24b15dd1f164963bc9678653fb
+ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60009456"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60198768"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Ce scénario n’est pas pris en charge pour les [enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d’organisation telle qu’un ensemble de documents ou une bibliothèque dans SharePoint ou un dossier dans Exchange.  Ces scénarios nécessitent une [stratégie d’étiquette de rétention publiée](create-apply-retention-labels.md#step-2-publish-retention-labels).
+> Ce scénario n'est pas pris en charge pour [les enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d'organisation telle qu'un ensemble de documents ou une bibliothèque dans Microsoft Office SharePoint Online, ou un dossier dans Exchange. Ces scénarios nécessitent une [stratégie d'étiquette de rétention publiée](create-apply-retention-labels.md#step-2-publish-retention-labels).
 
 L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions spécifiques. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
   
@@ -44,7 +44,7 @@ Les étiquettes de rétention appliquées automatiquement sont puissantes pour l
 Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci contient des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md).
 
 > [!TIP]
-> Utilisez les propriétés de recherche pour identifier [Les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings).
+> Utilisez des propriétés de recherche pour identifier [les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings) et [les éléments auxquels une étiquette de confidentialité est appliquée](#identify-files-and-emails-that-have-a-sensitivity-label).
 
 Les processus d’application automatique d’une étiquette de rétention sont fonction des conditions suivantes :
 
@@ -69,9 +69,9 @@ L’administrateur général de votre organisation dispose de toutes les autoris
 
 Tout d’abord, créez votre étiquette de rétention. Créez ensuite une stratégie automatique pour appliquer l’étiquette. Si vous avez déjà créé votre étiquette de rétention, passez à [Création d’une stratégie automatique](#step-2-create-an-auto-apply-policy).
 
-Les instructions de navigation varient selon que vous utilisez la [gestion des enregistrements](records-management.md) ou non. Des instructions sont fournies pour les deux scénarios.
+Les instructions de navigation varient selon que vous utilisez ou non [la gestion des enregistrements](records-management.md). Des instructions sont fournies pour les deux scénarios.
 
-### <a name="step-1-create-a-retention-label"></a>Étape 1 : créer une étiquette de rétention
+### <a name="step-1-create-a-retention-label"></a>Étape 1 : créer une étiquette de rétention
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), accédez à l’un des emplacements suivants :
     
@@ -115,7 +115,7 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
 
 Pour modifier une stratégie d’application automatique d’étiquettes existante, sélectionnez-la pour démarrer l’assistant à la modification de stratégie de rétention qui vous permet de modifier l’étiquette de rétention sélectionnée et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
-Une fois que le contenu est étiqueté au moyen d'une politique d'étiquetage automatique, l'étiquette appliquée ne peut pas être automatiquement retirée ou modifiée en changeant le contenu ou la politique, ou par une nouvelle politique d'étiquetage automatique. Pour plus d'informations, voir [Une seule étiquette de conservation à la fois](retention.md#only-one-retention-label-at-a-time).
+Une fois le contenu étiqueté à l'aide d'une stratégie d'étiquette d'application automatique, l'étiquette appliquée ne peut pas être automatiquement supprimée ou modifiée en modifiant le contenu ou la stratégie, ou par une nouvelle stratégie d'étiquette d'application automatique. Pour plus d'informations, voir [Une seule étiquette de rétention à la fois](retention.md#only-one-retention-label-at-a-time).
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configuration des conditions d’application automatique des étiquettes de rétention
 
@@ -150,7 +150,7 @@ En outre, les éléments SharePoint qui sont dans les brouillons ou qui n’ont 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Application automatique d’étiquettes au contenu incluant des types spécifiques d’informations sensibles
 
 > [!IMPORTANT]
-> Pour les e-mails que vous appliquez automatiquement en identifiant des informations sensibles, il n’est pas pris en charge de définir l’étendue de la stratégie pour inclure ou exclure des destinataires spécifiques ; Cette configuration de stratégie prend uniquement en charge le paramètre Tous les **destinataires.** Spécifique à cette configuration de stratégie, tous les **destinataires** incluent des boîtes aux lettres de Microsoft 365 groupes.
+> Pour les e-mails que vous appliquez automatiquement en identifiant des informations sensibles, il n'est pas possible d'étendre la stratégie pour inclure ou exclure des destinataires spécifiques ; cette configuration de stratégie prend uniquement en charge le paramètre **Tous les destinataires**. Spécifique à cette configuration de stratégie, **Tous les destinataires** incluent les boîtes aux lettres des groupes Microsoft 365.
 > 
 > Également spécifique à cette configuration de stratégie, si vous sélectionnez l’emplacement des groupes **Microsoft 365,** seuls les sites SharePoint connectés à un groupe Microsoft 365 sont inclus et non les boîtes aux lettres des groupes Microsoft 365.
 
@@ -162,7 +162,7 @@ Pour plus d’informations sur les types d’informations sensibles, voir les [d
 
 Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tous les types d’informations sensibles, et vous pouvez modifier le niveau de confiance et le nombre d’instances. Dans l’exemple de capture d’écran précédent, ces options ont été modifiées afin qu’une étiquette de rétention soit appliquée automatiquement uniquement lorsque :
   
-- Le type d’informations sensibles détecté a une précision de correspondance (ou [niveau de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels)) d’au moins **confiance moyenne** pour deux des types d’informations sensibles, et **confiance élevée** pour un. De nombreux types d’informations sensibles sont définis avec plusieurs modèles. Un modèle définissant une précision de correspondance élevée impose davantage de critères (par exemple, mots clés, dates ou adresses) qu’un modèle définissant une précision de correspondance moindre. Plus le niveau de confiance est faible, plus il est facile pour le contenu de correspondre à la condition, mais avec le risque d’avoir plus de faux positifs.
+- Le type d'informations sensibles détectées a une précision de correspondance (ou [niveau de confiance](sensitive-information-type-learn-about.md#more-on-confidence-levels)) d'au moins **une confiance moyenne** pour deux des types d'informations sensibles et **une confiance élevée** pour un. De nombreux types d'informations sensibles sont définis avec plusieurs modèles, où un modèle avec une précision de correspondance plus élevée nécessite plus de preuves à trouver (comme des mots-clés, des dates ou des adresses), tandis qu'un modèle avec une précision de correspondance plus faible nécessite moins de preuves. Plus le niveau de confiance est bas, plus il est facile pour le contenu de correspondre à la condition, mais avec un potentiel de plus de faux positifs.
 
 - Le contenu comprend entre 1 et 9 instances de n’importe quel de ces trois types d’informations sensibles. La valeur par défaut de **à** est **N’importe lequel**.
 
@@ -198,7 +198,7 @@ Les stratégies d’application automatique basées sur une requête utilisent l
 
 - Les recherches par caractères génériques suffixées (telles que `*cat`) ou les recherches par caractères génériques de sous-chaîne (telles que `*cat*`) ne sont pas prises en charge. Cependant, les recherches par caractères génériques suffixées (telles que `cat*`) sont prises en charge.
 
-- N’oubliez pas que les éléments partiellement indexés peuvent être responsables du non étiquetage des éléments attendus, ou de l’étiquetage des éléments que vous souhaitez exclure de l’étiquetage lorsque vous utilisez l’opérateur non. Si vous souhaitez en savoir plus, consultez  [Éléments partiellement indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md).
+- Sachez que les éléments partiellement indexés peuvent être responsables du fait de ne pas étiqueter les éléments que vous attendez, ou d'étiqueter des éléments que vous pensez être exclus de l'étiquetage lorsque vous utilisez l'opérateur NOT. Pour plus d'informations, voir [Éléments partiellement indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md).
 
 
 Exemples de requêtes :
@@ -258,6 +258,19 @@ ProgID:Media AND ProgID:Meeting
 
 La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive, mais pour les réunions de canal, ils sont enregistrés dans SharePoint.
 
+##### <a name="identify-files-and-emails-that-have-a-sensitivity-label"></a>Identifiez les fichiers et les e-mails qui ont une étiquette de sensibilité
+
+Pour identifier les fichiers dans les e-mails Microsoft Office SharePoint Online ou OneDrive et Exchange auxquels une [étiquette de confidentialité](sensitivity-labels.md) spécifique est appliquée, spécifiez les éléments suivants pour **l'éditeur de requêtes par mot-clé** :
+
+```
+InformationProtectionLabelId:<GUID>
+```
+
+Pour trouver le GUID, utilisez [l'applet de commande](/powershell/module/exchange/get-label) Get-Label de [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) :
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
 
@@ -291,9 +304,9 @@ Si les étiquettes attendues n’apparaissent pas après sept jours, consultez l
 
 2. Exécutez la commande suivante :
     
-    ``` PowerShell
+    ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    ```
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Mise à jour des étiquettes de rétention et de leurs stratégies
 

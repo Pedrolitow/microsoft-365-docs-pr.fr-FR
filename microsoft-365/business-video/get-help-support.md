@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir une assistance téléphonique ou en ligne pour votre abonnement Microsoft 365 entreprise. Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support.
-ms.openlocfilehash: e224b5a6224dc182d36a99f0b7943a586c64b08a
-ms.sourcegitcommit: 4b1bf6e4f4a0c016d148cdde7f7880dd774403d1
+ms.openlocfilehash: 965038e883378aa754a5a4b3957644340feaca8b
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59988606"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60179726"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -48,7 +48,7 @@ Commencez par [vérifier l’état d’intégrité actuel de vos services](../en
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecterons avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration?](admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Allez dans le centre d'administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration?](admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. Dans le coin inférieur droit de la page, sélectionnez **Aide & support technique.**
 3. Tapez une question ou un mot clé dans la zone de texte. Si vous obtenez une liste de listes, sélectionnez celle qui est la plus proche de votre question, ou continuez à taper votre question, puis appuyez sur **Entrée**.
 4. Si les résultats ne vous aident pas, en bas, sélectionnez **Contacter le support technique.**
@@ -82,7 +82,7 @@ Si le numéro de téléphone du support que vous recherchez ne figure pas dans l
 
 Obtenez le meilleur de votre abonnement avec les conseils d’experts des spécialistes des petites entreprises.
 
-Aide aux PME avec Microsoft 365 est conçu pour les petites entreprises afin de vous permettre, ainsi qu’à vos employés, d’accéder à toute heure aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne. Pour en savoir plus, consultez [Business Assist](../admin/misc/business-assist.md).
+Aide aux PME avec Microsoft 365 est conçu pour les petites entreprises afin de vous permettre, ainsi qu’à vos employés, d’accéder à toute heure aux spécialistes des petites entreprises à mesure que vous développez votre entreprise, de l’intégration à l’utilisation quotidienne. Pour en savoir plus, voir [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 
 | Catégorie d’assistance | Exemples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation et configuration | Exchange Online<ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul><br /> SharePoint Online<ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul><br />Skype Entreprise Online<ul><li>Installation et création de contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation et configuration</li></ul> |
+| Installation et configuration | Exchange Online<ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul><br /> SharePoint Online<ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul><br />Skype Entreprise Online<ul><li>Installation et création de contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation et configuration</li></ul> |
 | Configuration | Problèmes de configuration de service<ul><li>Authentification unique (SSO)</li><li>Synchronisation Active Directory</li></ul> |
 
 > [!NOTE]
@@ -165,7 +165,7 @@ Gravité B/C : 9h00 ~ 24h00 [heure de Pékin (Beijing)] par jour, 365 jours.
 
 ### <a name="open-an-online-request"></a>Ouvrir une demande en ligne
 
-Gagnez du temps en créant votre demande de service en ligne. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, choisissez **Support** \> **Nouvelle demande de service**.
+Gagnez du temps en créant votre demande de service en ligne. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre d’administration Office 365</a>, sélectionnez **Assistance** \> **nouvelle demande de service**.
 
 ### <a name="call-support"></a>Appeler le support technique
 
@@ -233,7 +233,7 @@ En tant qu'administrateur pour Office 365 Germany pour les entreprises, vous pou
 
 Les options d’assistance ne concernent que les administrateurs des organisations ayant souscrit à Office 365 Germany. Si vous utilisez Office 365 Germany mais vous n’êtes pas un administrateur, vous pouvez toujours obtenir une assistance dans les forums de la Communauté ou contacter votre administrateur.
 
-- **Ouvrir une demande en ligne.** Gagnez du temps en créant votre demande de service en ligne. Dans le Centre d’administration, sélectionnez **Support** \> **Nouvelle demande de service**. Nous vous aiderons à trouver une solution, ou nous vous mettrons en relation avec un spécialiste qui vous contactera par e-mail ou téléphone.
+- **Ouvrez une demande en ligne.** Gagnez du temps en créant votre demande de service en ligne. Dans le centre  d’administration, sélectionnez **Assistance**\> **Nouvelle demande de service.** Nous vous aiderons à trouver une solution ou à communiquer avec un expert qui vous contactera par email ou téléphone.
 
 - **Appelez l’assistance.** Nous sommes ici pour vous aider. En tant qu’administrateur, vous devez avoir vos informations de compte prêtes lorsque vous appelez l’assistance.
 
