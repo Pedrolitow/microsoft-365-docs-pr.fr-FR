@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c2d590445265d1189463312f969f7b8b57b5eed5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e490123a06c2384568e4aabe9119936ed618b2c2
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210888"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240479"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
@@ -54,7 +54,9 @@ Pour plus d’informations sur les méthodes d’intégration, consultez les art
 
 - Configurer Azure Log Analytics (anciennement appelé passerelle OMS) pour qu’il agisse en tant que proxy ou hub :
   - [Azure Log Analytics Agent](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d’espace de travail Defender for Endpoint & ID
+  - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vers la clé d’espace de travail Defender for Endpoint & ID
+
+[Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 
 - Appareils hors connexion dans le même réseau d’Azure Log Analytics
   - Configurez MMA pour qu’il pointe vers :
@@ -63,15 +65,14 @@ Pour plus d’informations sur les méthodes d’intégration, consultez les art
 
 ## <a name="azure-virtual-machines"></a>Machines virtuelles Azure
 
-- Configurer et activer [l’espace de travail Azure Log Analytics](/azure/azure-monitor/platform/gateway)
-  - Configurer Azure Log Analytics Gateway (anciennement passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
+- Configurer Azure Log Analytics Gateway (anciennement appelé passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
     - [Passerelle Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-    - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d’espace de travail Defender for Endpoint & ID
-    - Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS
-      - Configurer l’adresse IP Azure Log Analytics en tant que proxy
-      - ID de clé d’espace de travail Azure Log Analytics & ID
-    - Azure Defender
-      - [Espace de travail \> Analyse des journaux de stratégie de sécurité](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [Détection des \> menaces : autoriser Defender pour le point de terminaison à accéder à mes données](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) vers la clé d’espace de travail Defender for Endpoint & ID
+- Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS
+    - Configurer l’adresse IP Azure Log Analytics en tant que proxy
+    - ID de clé d’espace de travail Azure Log Analytics & ID
+- Azure Defender
+    - [Espace de travail \> Analyse des journaux de stratégie de sécurité](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Détection des \> menaces : autoriser Defender pour le point de terminaison à accéder à mes données](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-        Pour plus d’informations, voir [Working with security policies](/azure/security-center/tutorial-security-policy).
+    Pour plus d’informations, voir [Working with security policies](/azure/security-center/tutorial-security-policy).

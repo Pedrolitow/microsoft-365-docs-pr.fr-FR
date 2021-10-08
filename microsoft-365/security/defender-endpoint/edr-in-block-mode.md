@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 41c51657d748ef1503c5540b1162d7ea43722b9f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 25b5aa85bc11cf7819c6a878aebdf2cbcdeeb237
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205546"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239863"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
@@ -129,7 +129,7 @@ Pour vérifier si Antivirus Microsoft Defender est en cours d’exécution en mo
 |Méthode|Procedure|
 |---|---|
 |PowerShell|<ol><li>Sélectionnez la menu Démarrer, commencez à taper, puis `PowerShell` ouvrez Windows PowerShell dans les résultats.</li><li>Tapez `Get-MpComputerStatus`.</li><li>Dans la liste des résultats, dans la ligne **AMRunningMode,** recherchez l’une des valeurs suivantes :<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> Pour plus d’informations, [voir Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
-|Invite de commandes|<ol><li>Sélectionnez le menu Démarrer, commencez à taper, puis ouvrez Windows’invite de commandes `Command Prompt` dans les résultats.</li><li>Tapez `sc query windefend`.</li><li>Dans la liste des résultats, dans la **ligne STATE,** confirmez que le service est en cours d’exécution.</li></ol>|
+|Invite de commandes|<ol><li>Sélectionnez le menu Démarrer, commencez à taper, puis ouvrez Windows invite de commandes `Command Prompt` dans les résultats.</li><li>Tapez `sc query windefend`.</li><li>Dans la liste des résultats, dans la **ligne STATE,** confirmez que le service est en cours d’exécution.</li></ol>|
 
 ### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Comment puis-je confirmer que PEPT en mode bloc est Antivirus Microsoft Defender en mode passif ?
 
@@ -149,15 +149,14 @@ Vous pouvez utiliser PowerShell pour vérifier que les PEPT en mode bloc sont An
 Si Antivirus Microsoft Defender est en cours d’exécution en mode actif ou passif, PEPT en mode bloc est pris en charge des versions suivantes de Windows :
 
 - Windows 10 (toutes les publications)
-- Windows Serveur, version 1803 ou plus récente
-- Windows Server 2019
+- Windows Serveur, version 1803 ou plus récente 
 - Windows Server 2022
+- Windows Server 2019 
+- Windows Server 2016
+- Windows Server 2012 R2
 
-#### <a name="what-about-windows-server-2016"></a>Qu’en est-il Windows Server 2016 ?
-
-Si Windows Server 2016 a Antivirus Microsoft Defender en mode actif et que le point de terminaison est intégré à Defender pour le point de terminaison, PEPT en mode bloc est techniquement pris en charge. Toutefois, PEPT en mode blocage est conçu pour être une protection supplémentaire lorsque Antivirus Microsoft Defender n’est pas la solution antivirus principale sur un point de terminaison. Dans ce cas, Antivirus Microsoft Defender s’exécute en mode passif.
-
-Actuellement, l’exécution Antivirus Microsoft Defender en mode passif n’est pas prise en charge sur Windows Server 2016. Pour plus d’informations, voir [Mode passif et Windows server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server) et Antivirus Microsoft Defender [compatibilité.](microsoft-defender-antivirus-compatibility.md)
+>[!NOTE]
+>Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md) pour que cette fonctionnalité fonctionne. 
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Combien de temps faut-il pour que PEPT en mode bloc soit désactivé ?
 

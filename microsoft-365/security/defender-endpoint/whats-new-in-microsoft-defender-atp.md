@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a92cf747142dbb01908b1ea3931d9b7a6bfa115
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ac6aa01877b7b4968b01b5a16c931079e2b4360e
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159161"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239575"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "60159161"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint et les fonctionnalités de sécurité dans Windows 10 et Windows Server.
+Les fonctionnalités suivantes sont en prévisualisation ou généralement disponibles (GA) dans la dernière version de Microsoft Defender for Endpoint.
 
 Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionnalités d’aperçu.](preview.md)
 
@@ -59,17 +59,20 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 - [Nouveautés de Defender pour Endpoint sur iOS](ios-whatsnew.md)
 - [Nouveautés de Defender pour Endpoint sur Linux](linux-whatsnew.md)
 
+
 ## <a name="october-2021"></a>Octobre 2021
+
+- [Intégration mise à jour et parité des fonctionnalités pour Windows Server 2012 R2 et Windows Server 2016 (prévisualisation)](configure-server-endpoints.md)<br> Le nouveau package de solution unifiée facilite l’intégration des serveurs en supprimant les dépendances et les étapes d’installation. En outre, ce package de solution unifiée est livré avec de nombreuses nouvelles améliorations de fonctionnalités.
 
 - Windows 11 prise en charge ajoutée à Microsoft Defender pour les points de terminaison et les Microsoft 365 Defender.
 
 ## <a name="september-2021"></a>Septembre 2021
 
-- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non catégorisation. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web.](web-content-filtering.md)
+- [Filtrage du contenu web](web-content-filtering.md) <br/>Dans le cadre des fonctionnalités de protection web de Microsoft Defender pour point de terminaison, le filtrage de contenu web permet à l’équipe de sécurité de votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. Les catégories incluent le contenu pour adultes, la bande passante élevée, la responsabilité juridique, la société et la non-catégorie. Bien que de nombreux sites web qui se classent dans une ou plusieurs de ces catégories ne soient pas malveillants, ils peuvent être problématiques en raison de réglementations de conformité, d’utilisation de la bande passante ou d’autres problèmes. [En savoir plus sur le filtrage de contenu web.](web-content-filtering.md)
 
 ## <a name="august-2021"></a>Août 2021
 
-- (Aperçu) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (prévisualisation) est une solution de protection de point de terminaison qui inclut une protection nouvelle génération, la réduction de la surface d’attaque, une gestion et des rapports centralisées et des API. Defender pour endpoint Plan 1 (prévisualisation) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, ont des Microsoft 365 E3 et n’ont pas encore Microsoft 365 E5. 
+- (Aperçu) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (prévisualisation) est une solution de protection de point de terminaison qui inclut la protection nouvelle génération, la réduction de la surface d’attaque, la gestion centralisée et la génération de rapports, ainsi que les API. Defender pour endpoint Plan 1 (prévisualisation) est une nouvelle offre pour les clients qui souhaitent essayer nos fonctionnalités de protection des points de terminaison, ont des Microsoft 365 E3 et n’ont pas encore Microsoft 365 E5. 
 
    Pour en savoir plus, [consultez Microsoft Defender pour Endpoint Plan 1 (prévisualisation).](defender-endpoint-plan-1.md) Les fonctionnalités [de Defender pour point](microsoft-defender-endpoint.md) de terminaison existantes seront appelées Defender pour Endpoint Plan 2. 
 
@@ -81,7 +84,7 @@ Pour plus d’informations sur Microsoft Defender for Endpoint sur d’autres sy
 
 ## <a name="june-2021"></a>Juin 2021
 
-- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exporter les évaluations des vulnérabilités et des [configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
+- [Évaluation des vulnérabilités logicielles d’exportation delta](get-assessment-methods-properties.md#31-methods) API <br> Ajout de la collection d’API Exportation des évaluations des vulnérabilités et [des configurations sécurisées.](get-assessment-methods-properties.md) <br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel d’API d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées » ou « combien de nouvelles vulnérabilités ont été ajoutées à une organisation ».
 
 - [Exporter les évaluations des vulnérabilités et des configurations sécurisées](get-assessment-methods-properties.md) API <br> Ajoute une collection d’API qui Gestion des menaces et des vulnérabilités données par appareil. Il existe différents appels d’API pour obtenir différents types de données : évaluation de la configuration sécurisée, évaluation de l’inventaire logiciel et évaluation des vulnérabilités logicielles. Chaque appel d’API contient les données requises pour les appareils de votre organisation.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 680171f2edc23b1d41a0665287c141e2a36d839e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 26f4789ed5c44a2a3380476c78cea67daab84917
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150285"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240504"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Outils et méthodes d’intégration pour les Windows dans Defender for Endpoint
 
@@ -37,8 +37,22 @@ ms.locfileid: "60150285"
 
 Les appareils de votre organisation doivent être configurés pour que le service Defender for Endpoint puisse obtenir des données de capteur de leur part. Il existe différentes méthodes et outils de déploiement que vous pouvez utiliser pour configurer les appareils de votre organisation.
 
-Les méthodes et outils de déploiement suivants sont pris en charge :
+En règle générale, vous identifiez l’appareil Windows que vous intégrerez, puis suivez l’outil correspondant approprié à l’appareil ou à votre environnement.
 
+![Image des outils et méthodes d’intégration](images/onboarding-config-tools.png)
+
+## <a name="endpoint-onboarding-tools"></a>Outils d’intégration de point de terminaison
+Selon le point Windows que vous souhaitez intégrer, utilisez l’outil ou la méthode correspondant décrit dans le tableau suivant.
+
+Windows appareil | Outil ou méthode d’intégration
+:---|:---
+|<ul><li> Windows 10</li> <li>Windows Server 1803 et 2019 et 2022</li> <li>Windows Server 2012 R2 et 2016 <sup> [[1](#fn1)]<sup></li></ul>  |   [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md)<br>   [Stratégie de groupe](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Gestion des périphériques mobiles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Intégrer les versions précédentes de Windows](onboard-downlevel.md) [ou Azure Defender](/azure/security-center/security-center-wdatp) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Professionnel </li> <li> Windows 8.1 Entreprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)
+
+
+
+(<a id="fn1">1</a>) les Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
 
 Rubrique|Description
 :---|:---

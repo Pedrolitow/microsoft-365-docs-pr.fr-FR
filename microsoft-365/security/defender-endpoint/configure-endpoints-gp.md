@@ -1,6 +1,6 @@
 ---
 title: Intégrer Windows appareils à Microsoft Defender pour le point de terminaison via la stratégie de groupe
-description: Utilisez la stratégie de groupe pour déployer le package de configuration sur les Windows afin qu’ils soient intégrés au service.
+description: Utilisez la stratégie de groupe pour déployer le package de configuration sur Windows afin qu’ils soient intégrés au service.
 keywords: configurer des appareils à l’aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,16 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
-ms.openlocfilehash: cac2cb06478d115b28163cb8c0aa6575d900be93
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d0f97dcbde929c7661fd3bf3a2aba8eb9f69c3c1
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158081"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239947"
 ---
-# <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des Windows à l’aide de la stratégie de groupe
+# <a name="onboard-windows-devices-using-group-policy"></a>Intégrer des Windows à l’aide de la stratégie de groupe 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 **S’applique à :**
 
@@ -39,15 +41,23 @@ ms.locfileid: "60158081"
 >
 > Pour Windows Server 2019 et Windows Server 2022, vous devrez peut-être remplacer NT AUTHORITY\Known-System-Account par NT AUTHORITY\SYSTEM du fichier XML créé par la préférence de stratégie de groupe.
 
-## <a name="onboard-devices-using-group-policy"></a>Intégrer des appareils à l’aide d’une stratégie de groupe
+> [!NOTE]
+> Si vous utilisez la nouvelle solution unifiée Microsoft Defender for Endpoint pour Windows Server 2012 R2 et 2016, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 
 
 Consultez le [fichier PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [ou Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
-1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
-    1. Dans le volet de navigation, sélectionnez **Paramètres** \> **Endpoints** \> **Device Management** \> **Onboarding**.  
-    2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
-    3. Dans le **champ Méthode de déploiement,** sélectionnez **Stratégie de groupe.**
-    4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
+
+1. Ouvrez le package de configuration gp .zip fichier (*WindowsDefenderATPOnboardingPackage. zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
+ 
+    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**   >  **Onboarding**.
+
+    1. Sélectionnez le système d’exploitation.
+    
+    1. Dans le **champ Méthode de déploiement,** sélectionnez **Stratégie de groupe.**
+
+    1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
+
+     
 
 2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un dossier appelé *OptionalParamsPolicy* et le fichier *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -193,10 +203,14 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
 1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
-    1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils \> **endpoints.** \>  \> 
-    2. Sélectionnez Windows 10 ou Windows 11 comme système d’exploitation.
-    3. Dans le **champ Méthode de déploiement,** sélectionnez **Stratégie de groupe.**
-    4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
+
+    1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils  >  **endpoints.**  >    >  
+
+    1. Sélectionnez le système d’exploitation.
+    
+    1. Dans le **champ Méthode de déploiement,** sélectionnez **Stratégie de groupe.**
+
+    1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
 2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par l’appareil. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -208,7 +222,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Choisissez le compte d’utilisateur SYSTÈME local (BUILTIN\SYSTEM) sous **Options de sécurité.**
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les privilèges les plus **élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec les privilèges les plus **élevés.**
 
 8. Dans le champ Nom, tapez un nom approprié pour la tâche programmée (par exemple, Defender pour le déploiement de point de terminaison).
 
@@ -221,7 +235,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 
@@ -290,7 +304,7 @@ Accédez à **Modèles d’administration** des stratégies de configuration ord
 
 ### <a name="check-for-signature-update"></a>Vérifier la mise à jour des signatures
 
-Accédez aux **modèles d’administration** des stratégies de configuration \>  \>  \> **ordinateur Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
+Accédez aux **modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **mises à jour des signatures**
 
 :::image type="content" source="images/signature-update-1.png" alt-text="mise à jour de signature.":::
 
@@ -299,14 +313,13 @@ Accédez aux **modèles d’administration** des stratégies de configuration \>
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurer le délai d’out de livraison cloud et le niveau de protection
 
 Accédez à **Modèles d’administration** des stratégies de configuration ordinateur \>  \>  \> **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
-Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender stratégie de blocage par **défaut,** la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur les fenêtres par défaut.
+Lorsque vous configurez la stratégie de niveau de protection cloud Antivirus Microsoft Defender stratégie de blocage par **défaut,** la stratégie est désactivée. C’est ce qui est nécessaire pour définir le niveau de protection sur la valeur par défaut de Windows.
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="vérification étendue du cloud.":::
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="niveau de protection cloud de la config.":::
 
 ## <a name="related-topics"></a>Rubriques connexes
-
 - [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer des Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)

@@ -1,6 +1,6 @@
 ---
 title: Intégrer des Windows à l’aide des outils de gestion des appareils mobiles
-description: Utilisez les outils de gestion des appareils mobiles pour déployer un package de configuration sur les appareils afin qu’ils sont intégrés au service.
+description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service Defender for Endpoint.
 keywords: intégrer des appareils à l’aide de mdm, gestion des appareils, intégration de Microsoft Defender pour les appareils Endpoint, mdm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6aaa510df9b3155015979f4d3a5278c601b56223
-ms.sourcegitcommit: afee35210f8d68a7f20676ff2a829464b0b0adb2
+ms.openlocfilehash: a92b663eeddfcfb8ccf17bad204074764711685d
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60217125"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239875"
 ---
-# <a name="onboard-the-windows-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows à l’aide des outils de gestion des périphériques mobiles
+# <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>Intégrer des Windows à l’aide des outils de gestion des appareils mobiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,8 @@ ms.locfileid: "60217125"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
-Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer des appareils. Defender for Endpoint prend en charge les appareils mobiles en fournissant des OMA-URIs pour créer des stratégies pour gérer les appareils.
+Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) pour configurer Windows 10 appareils mobiles. Defender for Endpoint prend en charge les appareils mobiles en fournissant des OMA-URIs pour créer des stratégies pour gérer les appareils.
+
 
 Pour plus d’informations sur l’utilisation du programme CSP Defender for Endpoint, voir le fichier DDF [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) et [WindowsAdvancedThreatProtection.](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)
 
@@ -94,7 +95,6 @@ Pour plus d’informations Microsoft Intune paramètres de stratégie, voir Wind
 > Laboarding empêche l’appareil d’envoyer des données de capteur au portail, mais les données de l’appareil, y compris la référence aux alertes qu’il a eues, seront conservées pendant 6 mois.
 
 ## <a name="related-topics"></a>Rubriques connexes
-
 - [Intégrer des Windows à l’aide de la stratégie de groupe](configure-endpoints-gp.md)
 - [Intégrer Windows appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer Windows appareils à l’aide d’un script local](configure-endpoints-script.md)

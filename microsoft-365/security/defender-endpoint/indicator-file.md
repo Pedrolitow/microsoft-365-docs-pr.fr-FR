@@ -1,7 +1,7 @@
 ---
 title: Créer des indicateurs pour les fichiers
 ms.reviewer: ''
-description: Créez des indicateurs pour un hachage de fichier qui définissent la détection, la prévention et l’exclusion des entités.
+description: Créez des indicateurs pour un hachage de fichier qui définit la détection, la prévention et l’exclusion des entités.
 keywords: fichier, hachage, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 493a76d430f508976ba261d9e78bb4b8087be15e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e6e8d03002675ce3c4b9c1e79f0a340f64633036
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211164"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239647"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -50,7 +50,10 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Pris en charge sur les appareils Windows 11, Windows 10 version 1703 ou ultérieure, Windows Server 2016, 2019 et Windows Server 2022.
+- Pris en charge sur les appareils Windows 10, version 1703 ou ultérieure, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 et Windows Server 2022.
+    
+   >[!NOTE]
+    >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
 
 - Pour commencer à bloquer les fichiers, vous devez d’abord [activer](advanced-features.md) la fonctionnalité « bloquer ou autoriser » dans Paramètres.
 
@@ -60,7 +63,7 @@ Cette fonctionnalité est conçue pour empêcher le téléchargement de programm
 
 1. Dans le volet de navigation, sélectionnez  **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
-2. Sélectionnez **l’onglet Hchéths fichier.**  
+2. Sélectionnez **l’onglet Haits**   fichier.
 
 3. Sélectionnez **Ajouter un indicateur**.
 
@@ -140,7 +143,7 @@ Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-d
 - Sinon, si le fichier est bloqué ou averti par un blocage ou un avertissement de fichier IoC, **puis Bloquer/Avertir**
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier autorisé, **autorisez**
 - Sinon, si le fichier est bloqué par les règles de la asr, LFA, AV, SmartScreen, puis **Bloquer**
-- Else **Allow** (passe Windows Defender Application Control & AppLocker, aucune règle IoC ne s’applique à elle)
+- Else **Allow** (passe Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0aaeb4a290c43b8fc725fe806014acfe61a939e8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e90495ee1f803731296cc1df6b55ddf99bbdad35
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150022"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240480"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines
 
@@ -49,9 +49,13 @@ Pour ce faire, vous pouvez utiliser la page des paramètres ou des groupes d’o
 Il est important de comprendre les conditions préalables suivantes avant de créer des indicateurs pour IPS, URL ou domaines :
 
 - Url/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. Pour plus d’informations sur la protection du réseau et les instructions de configuration, voir [Activer la protection réseau.](enable-network-protection.md)
-- La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure.
-- Pris en charge sur les ordinateurs Windows 10, version 1709 ou ultérieure, ou Windows 11.
-- **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Microsoft 365 Defender > Paramètres > points de terminaison > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
+- La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure. 
+- Pris en charge sur les ordinateurs sur Windows 10, version 1709 ou ultérieure, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019 et Windows Server 2022.
+   
+    >[!NOTE]
+    >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
+
+- **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Centre de sécurité Microsoft Defender > Paramètres > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
 - Pour la prise en charge des indicateurs sur iOS, voir [Configurer des indicateurs personnalisés.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
 > [!IMPORTANT]

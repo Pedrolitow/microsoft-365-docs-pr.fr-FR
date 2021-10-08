@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e74fd5a0ffc62d077f9110b014af5d3b0813afd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b87c249fad5f3d6e2dd4f5ce7076a7f1b00506c7
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154841"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240091"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
@@ -44,7 +44,11 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 
 - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Windows Defender protection basée sur le cloud est activée. Pour plus d’informations, [voir Gérer la protection basée sur le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
-- Pris en charge sur les ordinateurs Windows 11, Windows 10, version 1703 ou ultérieure, Windows server 2016, 2019 et Windows Server 2022.
+- Pris en charge sur les ordinateurs Windows 10, version 1703 ou ultérieure, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 et Windows Server 2022.
+    
+    >[!NOTE]
+    >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) pour que cette fonctionnalité fonctionne. 
+
 - Les définitions de protection contre les virus et menaces doivent être à jour.
 - Cette fonctionnalité prend actuellement en charge l’entrée. CER ou . Extensions de fichier PEM.
 
@@ -57,7 +61,7 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 ## <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Créez un indicateur pour les certificats à partir de la page paramètres :
 
 > [!IMPORTANT]
-> La création et la suppression d’un certificat IoC peuvent prendre jusqu’à 3 heures.
+> La création et la suppression d’un IoC de certificat peut prendre jusqu’à 3 heures.
 
 1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 

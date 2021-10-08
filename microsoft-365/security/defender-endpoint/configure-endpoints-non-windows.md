@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 775db5f94cacbca08993b0cb9aac67019515174a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d403005c66a636e5e485fb396d055b5d94b4106
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210028"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239851"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "60210028"
 
 Defender for Endpoint offre une expérience centralisée des opérations de sécurité pour les plateformes Windows et non Windows de sécurité. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Microsoft 365 Defender et mieux protéger le réseau de votre organisation.
 
-Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d'informations, voir :
+Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d’informations, voir :
 
 - [Microsoft Defender pour point de terminaison sur la demande système Linux](microsoft-defender-endpoint-linux.md#system-requirements)
 - [Microsoft Defender pour point de terminaison sur macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
@@ -51,7 +51,7 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 
 1. Sélectionnez votre méthode d’intégration préférée :
 
-   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour Endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour Endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - Pour les autres appareils non Windows choisissez Intégrer des appareils non Windows par le biais **d’une intégration tierce.**
     1. Dans le volet de navigation, sélectionnez **Partenaires et API** Applications \> **partenaires.** Assurez-vous que la solution tierce est répertoriée.
@@ -68,7 +68,6 @@ Pour les appareils macOS et Linux, vous pouvez choisir de passer par Microsoft D
 Vous pouvez également désinserrez les appareils Windows en désactivant l’intégration tierce. Activer la couverture pour les appareils exécutant des plateformes Windows en intégrant des [solutions tierces.](https://securitycenter.windows.com/interoperability/partners) 
 
 ## <a name="related-topics"></a>Rubriques connexes
-
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Serveurs intégrés](configure-server-endpoints.md)
 - [Configurer les paramètres de proxy et de connectivité Internet](configure-proxy-internet.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ffc1e8b7872f399a03e09b8f6b2b0f65b4ed3eac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7266a92c43e87b6ccf1bda5d78451c54066297cd
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205270"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240187"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer au service Microsoft Defender pour point de terminaison
 
@@ -36,18 +36,15 @@ ms.locfileid: "60205270"
 
 Découvrez les différentes phases du déploiement de Microsoft Defender pour Endpoint et comment configurer les fonctionnalités au sein de la solution.
 
-Le déploiement de Defender pour endpoint est un processus en trois phases :
-
-|[![phase de déploiement : préparer.](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Phase 1 : préparation](prepare-deployment.md)|[![phase de déploiement : configuration](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Phase 2 : configuration](production-deployment.md)|![phase de déploiement : intégration](images/phase-diagrams/onboard.png) <br> Phase 3 : intégration|
-|---|---|---|
-|||*Vous êtes là !*|
-
-Vous êtes actuellement en phase d’intégration.
 
 Voici les étapes à suivre pour déployer Defender pour Endpoint :
 
 - Étape 1 : Intégrer des points de terminaison au service
 - Étape 2 : Configurer les fonctionnalités
+
+![Illustration des étapes de déploiement](images/deployment-steps.png)
+
+
 
 ## <a name="step-1-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Étape 1 : Intégrer des points de terminaison à l’aide de l’un des outils de gestion pris en charge
 
@@ -64,15 +61,26 @@ Après avoir identifié votre architecture, vous devez choisir la méthode de d�
 
 Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison que vous devez intégrer.
 
-|Point de terminaison|Options de l’outil|
-|---|---|
-|**Fenêtres**|[Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
-|**MacOS**|[Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JamF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md)|
-|**Serveur Linux**|[Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-|**iOS**|[Basée sur l’application](ios-install.md)|
-|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
+| Point de terminaison     | Options de l’outil                       |
+|--------------|------------------------------------------|
+| **Fenêtres**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration à Azure Defender](azure-server-integration.md) |
+| **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JamF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
+| **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
+
 
 ## <a name="step-2-configure-capabilities"></a>Étape 2 : Configurer les fonctionnalités
+Après avoir intégré les points de terminaison, vous allez configurer les fonctionnalités. Le tableau suivant répertorie les composants que vous pouvez configurer. Choisissez les composants que vous souhaitez utiliser et supprimez ceux qui ne s’appliquent pas.
+
+| Fonctionnalité | Description |
+|-|-|
+| [Endpoint Detection & Response (PEPT)](overview-endpoint-detection-response.md) | Les fonctionnalités de protection évolutive des points de terminaison de Defender for Endpoint fournissent des détections d’attaques avancées quasiment en temps réel et actionnables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’étendue d’une faille et prendre des mesures correctives pour remédier aux menaces. |
+| [Gestion & des menaces et des vulnérabilités (TVM)](next-gen-threat-and-vuln-mgt.md) | La gestion des vulnérabilités des & menaces est un composant de Microsoft Defender pour point de terminaison et fournit aux administrateurs de sécurité et aux équipes d’opérations de sécurité une valeur unique, notamment : - Informations de protection évolutive des points de terminaison en temps réel (PEPT) corrélées avec les vulnérabilités de point de terminaison - Contexte de vulnérabilité de périphérique précieux pendant l’incident enquêtes : processus de correction intégrés par Microsoft Intune et Microsoft System Center Configuration Manager.  |
+| [Protection de nouvelle génération (NGP)](microsoft-defender-antivirus-windows.md) | Antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants :<br> <br>-Protection cloud pour la détection et le blocage quasi instantanés des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.<br> <br> - Analyse toujours continue à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelée « protection en temps réel »).<br><br> - Mises à jour de protection dédiées basées sur l’apprentissage automatique, l’analyse humaine et automatisée du Big Data, ainsi que des recherches approfondies sur la résistance aux menaces. |
+| [Réduction de la surface d’attaque (ASR)](overview-attack-surface-reduction.md) | Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. |
+| [Auto Investigation & Remediation (AIR)](automated-investigations.md) | Microsoft Defender pour le point de terminaison utilise des examens automatisés pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée exploite divers algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures correctives immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. |
+| [Spécialistes des menaces Microsoft (MTE)](microsoft-threat-experts.md) | Spécialistes des menaces Microsoft est un service de recherche géré qui fournit des centres d’opérations de sécurité (SOC) avec une analyse et une surveillance de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées.      |
 
 Après avoir intégré les points de terminaison, vous allez configurer les différentes fonctionnalités telles que protection évolutive des points de terminaison, la protection nouvelle génération et la réduction de la surface d’attaque.
 
