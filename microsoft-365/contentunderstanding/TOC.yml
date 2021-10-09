@@ -78,25 +78,5 @@
       href: push-content-type-to-hub.md
     - name: Rapports de banque de termes
       href: term-store-analytics.md
-- name: API REST
-  items:
-    - name: Vue d’ensemble
-      href: rest-api/syntex-model-rest-api.md
-    - name: Créer un modèle
-      href: rest-api/rest-createmodel-method.md
-    - name: GetByUniqueId
-      href: rest-api/rest-getbyuniqueid-method.md
-    - name: GetByTitle
-      href: rest-api/rest-getbytitle-method.md
-    - name: Appliquer un modèle
-      href: rest-api/rest-applymodel-method.md
-    - name: Obtenir des informations sur un modèle et une bibliothèque
-      href: rest-api/rest-getmodelandlibraryinfo.md
-    - name: UpdateModelSettings
-      href: rest-api/rest-updatemodelsettings-method.md
-    - name: BatchDelete
-      href: rest-api/rest-batchdelete-method.md
-    - name: Créer une demande de classification de fichiers
-      href: rest-api/rest-createclassificationrequest.md
-    - name: Créer une demande de classification de dossiers
-      href: rest-api/rest-createfolderclassificationrequest.md
+- name: Extensibilité
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api.md

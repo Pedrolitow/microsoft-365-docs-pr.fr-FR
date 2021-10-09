@@ -31,32 +31,46 @@
 #### [Anneaux de déploiement](deployment-rings.md)
 #### [Intégration à l'aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 #### [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
-#### [Intégration des appareils pris en charge](onboard-configure.md)
 
 ## [Guides de migration](migration-guides.md)
 ### [Passer d’une protection de point de terminaison non-Microsoft à Defender pour point de terminaison](switch-to-microsoft-defender-migration.md)
 #### [Phase 1 : préparation](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2 : configuration](switch-to-microsoft-defender-setup.md)
 #### [Phase 3 : intégration](switch-to-microsoft-defender-onboard.md)
+
+
+
 ### [Gérer Defender pour Point de terminaison après la migration](manage-atp-post-migration.md)
 #### [Utiliser Intune (recommandé)](manage-atp-post-migration-intune.md)
 #### [Utiliser le Gestionnaire de configuration](manage-atp-post-migration-configuration-manager.md)
 #### [Utiliser la stratégie de groupe](manage-atp-post-migration-group-policy-objects.md)
 #### [Utiliser PowerShell, WMI ou MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+#### [Scénarios de migration de serveur](server-migration.md)
 
 ## [Configurer et intégrer des appareils]()
+### [Intégrer des appareils et configurer les fonctionnalités de Microsoft Defender pour point de terminaison](onboard-configure.md)
+
+
 ### [Microsoft Defender pour point de terminaison sur Windows et Windows Server]()
-#### [Intégrer des appareils à Microsoft Defender pour point de terminaison](onboard-configure.md)
-#### [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
-#### [Intégrer des appareils Windows 10]()
-##### [Outils et méthodes d’intégration](configure-endpoints.md)
-##### [Intégrer des appareils à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
-##### [Intégrer des appareils à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-##### [Intégrer des appareils à l’aide des outils de Gestion des appareils mobiles](configure-endpoints-mdm.md)
-##### [Intégrer des appareils en utilisant un script local](configure-endpoints-script.md)
-##### [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
-##### [Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop](onboard-windows-multi-session-device.md)
-#### [Intégrer des serveurs Windows](configure-server-endpoints.md)
+#### [Outils et méthodes d’intégration pour les points de terminaison Windows](configure-endpoints.md)
+#### [Intégrer des appareils Windows et des serveurs Windows]()
+
+##### [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
+
+
+##### [Intégrer des appareils Windows et des serveurs Windows]()
+###### [Intégrer Windows Server 2012 R2, 2016, Canal semi-annuel, 2019 et 2022](configure-server-endpoints.md)
+###### [Intégrer les appareils Windows utilisant un script local](configure-endpoints-script.md)
+###### [Intégrer des appareils Windows à l’aide d’une stratégie de groupe](configure-endpoints-gp.md)
+###### [Intégrer des appareils Windows à l’aide de Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+###### [Intégrer les appareils Windows à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
+###### [Intégrer les ordinateurs virtuels d’infrastructure de bureau (VDI) non persistants](configure-endpoints-vdi.md)
+###### [Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+
+
+
+
+#### [Intégration à Azure Defender](azure-server-integration.md)
 
 #### [Intégrer des appareils sans accès à Internet](onboard-offline-machines.md)
 #### [Exécuter un test de détection sur un appareil nouvellement intégré](run-detection-test.md)

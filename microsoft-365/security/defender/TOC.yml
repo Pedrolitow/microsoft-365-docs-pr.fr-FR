@@ -138,12 +138,6 @@
               href: incident-queue.md
             - name: Gérer les incidents
               href: manage-incidents.md
-            - name: Examiner des incidents
-              href: investigate-incidents.md
-            - name: Examiner des alertes
-              href: investigate-alerts.md
-            - name: Examiner des utilisateurs
-              href: investigate-users.md
             - name: Répondre à votre premier incident
               items:
                 - name: Présentation
@@ -162,6 +156,14 @@
                       href: first-incident-path-phishing.md
                     - name: Identité
                       href: first-incident-path-identity.md
+            - name: Examiner des incidents
+              items:
+                - name: Incidents
+                  href: investigate-incidents.md
+                - name: Alertes
+                  href: investigate-alerts.md
+                - name: Utilisateurs
+                  href: investigate-users.md
             - name: Playbooks de réponse aux incidents
               href: /security/compass/incident-response-playbooks
             - name: Recevoir des notifications d’incident par e-mail
@@ -324,14 +326,6 @@
           href: integrate-microsoft-365-defender-secops-use-cases.md
         - name: Étape 6. Tâches de maintenance SOC
           href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: Guides pratiques
-      items:
-        - name: Créer un laboratoire d’évaluation ou un environnement pilote
-          href: eval-overview.md
-        - name: Exécuter le guide opérationnel du pilote
-          href: eval-overview.md
-        - name: Activer la FAQ
-          href: m365d-enable-faq.md
     - name: Référence
       items:
         - name: Paramètres & paramètres
