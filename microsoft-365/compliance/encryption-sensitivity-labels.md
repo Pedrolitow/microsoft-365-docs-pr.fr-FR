@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba6e8e44a3f41bcd64257faf62c597d3b019e359
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 05e09bbd07bb8b4d15ce9bb82b64f49b49d88ffd
+ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206180"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60239959"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -52,6 +52,29 @@ Les paramètres de chiffrement sont disponibles lorsque vous [créez une étique
 Le chiffrement utilise le service Azure Rights Management (Azure RMS) à partir d’Azure Information Protection. Cette solution de protection utilise les stratégies de chiffrement, d’identité et d’autorisation. Pour plus d’informations, consultez [Qu’est-ce que Azure Rights Management ?](/azure/information-protection/what-is-azure-rms) dans la documentation Azure Information Protection. 
 
 Lorsque vous utilisez cette solution de chiffrement, la fonctionnalité **super utilisateur** s'assurer que les personnes et services autorisés peuvent toujours consulter et examiner les données qui ont été cryptées pour votre organisation. Le chiffrement peut ensuite être supprimé ou modifié si nécessaire. Pour plus d’informations, consultez la [Configuration de super utilisateurs pour les services Azure Information Protection et les services de découverte ou de la récupération de données](/azure/information-protection/configure-super-users).
+
+## <a name="important-prerequisites"></a>Conditions préalables importantes
+
+Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de configuration. Lorsque vous configurez les paramètres de chiffrement, il n’est pas vérifié que ces conditions préalables sont remplies.
+
+- Activer la protection à partir d’Azure Information Protection
+    
+    Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](/azure/information-protection/activate-service).
+
+- Vérifier la configuration réseau requise
+    
+    Vous devrez peut-être apporter quelques modifications sur vos appareils réseau tels que les pare-feux. Pour obtenir des détails, voir [Pare-feu et infrastructure réseau](/azure/information-protection/requirements#firewalls-and-network-infrastructure) dans la documentation Azure Information Protection.
+
+- Configurer Exchange pour Azure Information Protection
+    
+    Il n’est pas indispensable de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs e-mails. Toutefois, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
+    
+    Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management. 
+    
+    Pour vous assurer qu’Exchange est en mesure de prendre en charge ces scénarios supplémentaires, reportez-vous aux rubriques suivantes :
+    
+    - Pour Exchange Online, consultez les instructions de la section [Exchange Online : configuration de la gestion des droits relatifs à l’information](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](/azure/information-protection/deploy-rms-connector). 
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>La configuration d’une étiquette pour le chiffrement
 
@@ -167,7 +190,7 @@ Lorsque vous attribuez des autorisations, vous pouvez choisir :
 
 - Tous les membres de votre organisation (tous les membres du client). Ce paramètre exclut les comptes Invité.
 
-- Tous les utilisateurs authentifiés. Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
+- Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
 
 - Tout utilisateur spécifique ou groupe de sécurité à extension messagerie, groupe de distribution ou groupe Microsoft 365 ([auparavant groupe Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) dans Azure AD. Le groupe Microsoft 365 peut avoir un abonnement [dynamique](/azure/active-directory/users-groups-roles/groups-create-rule). Notez qu’il n’est pas possible d’utiliser un [groupe de distribution dynamique d’Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups), car ce type de groupe n’est pas synchronisé avec Azure AD et vous ne pouvez pas utiliser de groupe de sécurité non activé par e-mail.
 
@@ -273,7 +296,7 @@ Dans Outlook, quand un utilisateur applique une étiquette de confidentialité q
 
 Lorsque l’une de ces options est appliquée à un e-mail, celui-ci est chiffré et les destinataires doivent être authentifiés. Les destinataires ont automatiquement des droits d’utilisation limités :
 
-- **Ne pas transférer**: les destinataires ne peuvent pas transférer l’e-mail, l’imprimer ou le copier. Par exemple, dans le client Outlook, le bouton Transférer n’est pas disponible, les options de menu Enregistrer sous et Imprimer ne sont pas disponibles et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones À, Cc ou Cci.
+- **Ne pas transférer**: les destinataires ne peuvent pas transférer l'e-mail, l'imprimer ou le copier. Par exemple, dans le client Outlook, le bouton transférer n’est pas disponible, les options du menu enregistrer sous et imprimer ne sont pas disponibles, et vous ne pouvez pas ajouter ou modifier des destinataires dans les zones à, CC ou CCI.
     
     Pour plus d’informations sur le fonctionnement de cette option, consultez l’[option Ne pas transférer pour les e-mail](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
@@ -335,7 +358,7 @@ Cette étiquette ne peut pas être utilisée pour des courriers électroniques.
 
 4. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter des adresses de courrier ou des domaines spécifiques**.
 
-5. Dans la zone de texte, entrez le nom de domaine de l’autre organisation, par exemple, **fabrikam.com**.Puis sélectionner **Ajouter**.
+5. Dans la zone de texte, entrez le nom de domaine de l’autre organisation, par exemple, **fabrikam.com**. Puis sélectionnez **Ajouter**.
 
 6. Sélectionnez **Choisir les autorisations**.
 
@@ -369,7 +392,7 @@ Les nouveaux utilisateurs que vous ajoutez pourront ouvrir des documents et des 
 
 Cette configuration présente l’avantage de ne pas avoir à spécifier des utilisateurs, groupes ou domaines pour chiffrer un courrier électronique ou un document. Le contenu reste chiffré et vous pouvez spécifier les droits d’utilisation, la date d’expiration et l’accès hors connexion.
 
-Utilisez cette configuration uniquement lorsque vous n’avez pas besoin de restreindre les personnes autorisées à ouvrir le document ou l’e-mail protégé. [Informations supplémentaires sur ce paramètre](#requirements-and-limitations-for-add-any-authenticated-users)
+Utilisez seulement cette configuration lorsque vous n’avez pas besoin de restreindre les utilisateurs autorisés à ouvrir le document ou le courrier protégé. [Plus d’informations sur ce paramètre](#requirements-and-limitations-for-add-any-authenticated-users)
 
 1. Sur la page de **Chiffrement** : pour **Attribuer des autorisations maintenant ou autoriser les utilisateurs à choisir ?** assurez-vous que l'option **Attribuer maintenant des autorisations est sélectionnée**.
 
@@ -397,16 +420,16 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
   - Recherche, eDiscovery et Delve ne seront pas opérationnels avec les fichiers chiffrés.
   - Les stratégies de protection contre la perte de données DLP fonctionnent avec les métadonnées de ces fichiers chiffrés (notamment les informations de l'étiquette de rétention), mais pas avec leur contenu (comme des numéros de carte de crédit dans des fichiers).
-  - Les utilisateurs ne peuvent pas ouvrir des fichiers chiffrés à l’aide d’Office sur le web. Lorsque des étiquettes de confidentialité sont activées pour les fichiers Office dans SharePoint et OneDrive, les utilisateurs peuvent se servir d’Office sur le web pour ouvrir des fichiers chiffrés, avec certaines [restrictions](sensitivity-labels-sharepoint-onedrive-files.md#limitations) qui incluent le chiffrement appliqué avec une clé locale (HYOK, Hold Your Own Key), [le chiffrement à double clé](#double-key-encryption) et le chiffrement appliqué indépendamment d’une étiquette de confidentialité.
+  - Lorsque des étiquettes de confidentialité sont activées pour les fichiers Office dans SharePoint et OneDrive, les utilisateurs peuvent se servir d’Office sur le web pour ouvrir des fichiers chiffrés, avec certaines [restrictions](sensitivity-labels-sharepoint-onedrive-files.md#limitations) qui incluent le chiffrement appliqué avec une clé locale (HYOK, Hold Your Own Key), le [chiffrement à double clé](#double-key-encryption) et le chiffrement appliqué indépendamment d’une étiquette de confidentialité.
 
-- Si vous partagez des documents chiffrés avec des personnes extérieures à votre organisation, vous devrez peut-être créer des comptes invités et modifier les stratégies d’accès conditionnel. Pour plus d’informations, consultez [Partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
+- Si vous partagez des documents chiffrés avec des personnes extérieures à votre organisation, vous devrez peut-être créer des comptes invités et modifier les stratégies d’accès conditionnel. Pour plus d’informations, voir le [partage de documents chiffrés avec des utilisateurs externes](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
 - Lorsque les utilisateurs autorisés ouvrent des documents chiffrés dans leurs applications Office, ils voient le nom et la description de l’étiquette dans une barre de messages jaune en haut de leur application. Lorsque les autorisations de chiffrement s’étendent à des personnes extérieures à votre organisation, examinez attentivement les noms d’étiquettes et les descriptions qui seront visibles dans cette barre de messages lors de l’ouverture du document.
 
 - Pour permettre à plusieurs utilisateurs de modifier un fichier chiffré au même moment, ils doivent tous utiliser Office pour le web.  Ou, pour Windows et Mac, vous avez [activé la co-création pour les fichiers chiffrés avec des étiquettes de sensibilité](sensitivity-labels-coauthoring.md) et les utilisateurs ont les [versions minimales requises](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel et PowerPoint. Si ce n’est pas le cas et que le fichier est déjà ouvert :
 
   - Dans les applications Office (Windows, Mac, Android et iOS), les utilisateurs remarquent le message **Fichier en cours d'utilisation** incluant le nom de la personne ayant extrait le fichier. Ils peuvent ensuite afficher une copie en lecture seule, enregistrer et modifier une copie du fichier, et recevoir une notification lorsque le fichier est disponible.
-  - Dans Office pour le web, les utilisateurs voient un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Ils peuvent ensuite sélectionner **Ouvrir en Mode Lecture**.
+  - Dans Office pour le web, les utilisateurs remarquent un message d’erreur indiquant qu’ils ne peuvent pas modifier le document avec d’autres personnes. Puis, ils peuvent sélectionner **Ouvrir en Mode Lecture**.
 
 - La fonctionnalité [d'enregistrement automatique](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) dans les applications Office pour iOS et Android est désactivée pour les fichiers cryptés. Cette fonctionnalité est également désactivée pour les fichiers chiffrés sur Windows et Mac si vous n’avez pas activé la [co-auteur pour les fichiers chiffrés avec des étiquettes de sensibilité](sensitivity-labels-coauthoring.md). Un message s'affiche indiquant aux utilisateurs que le fichier dispose d'autorisations restreintes qui doivent être supprimées avant que l’Enregistrement automatique puisse être activé.
 
@@ -416,34 +439,12 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Les actions suivantes pour les fichiers chiffrés ne sont pas prises en charge dans les applications Office (Windows, Mac, Android et iOS), et un message d'erreur s'affiche aux utilisateurs indiquant qu’un problème s’est produit. Les fonctionnalités de SharePoint peuvent toutefois être utilisées en tant qu'alternative :
 
-  - Afficher, restaurer et enregistrer des copies des versions précédentes. Comme alternative, les utilisateurs peuvent également effectuer ces actions à l’aide d’Office sur le web lorsque vous [activez et configurez le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
-  - Modifier le nom ou l’emplacement des fichiers. En guise d’alternative, les utilisateurs peuvent [renommer un fichier, un dossier ou un lien dans une bibliothèque de documents](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) dans SharePoint.
+  - Les utilisateurs peuvent également effectuer ces actions à l’aide d’Office sur le web lorsque vous [activez et configurez le contrôle de version d'une liste ou d'une bibliothèque](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
+  - Les utilisateurs peuvent également [renommer un fichier, un dossier ou un lien dans une bibliothèque de documents](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) dans SharePoint.
 
 Pour bénéficier d’une expérience de collaboration optimale en ce qui concerne les fichiers chiffrés par une étiquette de confidentialité, nous vous recommandons d’utiliser les [étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) et Office pour le web.
 
 
-## <a name="important-prerequisites"></a>Conditions préalables importantes
-
-Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de configuration.
-
-- Activer la protection à partir d’Azure Information Protection
-    
-    Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](/azure/information-protection/activate-service).
-
-- Vérifier la configuration réseau requise
-    
-    Vous devrez peut-être apporter quelques modifications sur vos appareils réseau tels que les pare-feux. Pour obtenir des détails, voir [Pare-feu et infrastructure réseau](/azure/information-protection/requirements#firewalls-and-network-infrastructure) dans la documentation Azure Information Protection.
-
-- Configurer Exchange pour Azure Information Protection
-    
-    Il n’est pas indispensable de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs e-mails. Toutefois, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
-    
-    Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management. 
-    
-    Pour vous assurer qu’Exchange est en mesure de prendre en charge ces scénarios supplémentaires, reportez-vous aux rubriques suivantes :
-    
-    - Pour Exchange Online, consultez les instructions de la section [Exchange Online : configuration de la gestion des droits relatifs à l’information](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - Pour Exchange en local, vous devez déployer le [connecteur RMS et configurer vos serveurs Exchange](/azure/information-protection/deploy-rms-connector). 
 
 ## <a name="next-steps"></a>Prochaines étapes
 
