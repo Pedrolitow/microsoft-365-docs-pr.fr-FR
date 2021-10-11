@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender API de recherche avancée
-description: Découvrez comment exécuter des requêtes de recherche avancée à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
+description: Découvrez comment exécuter des requêtes de recherche avancées à l’aide Microsoft 365 Defender’API de recherche avancée de l’utilisateur
 keywords: Recherche avancée, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2752de976329f3fbef047557e6a626afd05a520f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a7be2c43a2ff97fddfa9db0a6d02bcc611e13173
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206636"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264863"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de recherche avancée
 
@@ -46,7 +46,7 @@ Les conditions suivantes concernent toutes les requêtes.
 
 1. Les requêtes explorent et retournent des données des 30 derniers jours.
 2. Les résultats peuvent renvoyer jusqu’à 100 000 lignes.
-3. Vous pouvez effectuer jusqu’à 15 appels par minute et par client.
+3. Vous pouvez effectuer jusqu’à 45 appels par minute et par client.
 4. Les requêtes sont bloquées si le client a atteint 100 % jusqu’au terme du cycle de 15 minutes suivant.
 5. Si une seule demande s’exécute pendant plus de 10 minutes, elle prend du temps et retourne une erreur.
 6. Un code de réponse HTTP indique que vous avez atteint un quota, soit par nombre de demandes envoyées, soit par temps `429` d’exécution alloué. Lisez le corps de la réponse pour comprendre la limite que vous avez atteinte. 

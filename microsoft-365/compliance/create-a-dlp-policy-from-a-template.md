@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous allez découvrir comment créer des stratégies DLP à l’aide de l’un des modèles inclus dans Office 365.
-ms.openlocfilehash: 4f3647d5f1d320f57243570b58d10cb1726728b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7ea3e320a75953f51315579549a6dd5086706d12
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167377"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264885"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
@@ -40,7 +40,7 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
 
 1. Connectez-vous à <https://compliance.microsoft.com> .
 
-2. Dans le Centre de conformité, navigation gauche Stratégie de protection contre la perte \> \>  \> **de** \> **données + Créer une stratégie**.
+2. Dans le Centre de conformité, \> navigation gauche \> **Solutions** \> **Stratégies** \>  \> de protection contre la perte de données + Créer une stratégie .
 
     ![Créez un bouton de stratégie.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -54,14 +54,14 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
 
     ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-5. Pour choisir les emplacements que la stratégie DLP doit protéger et accepter l’étendue par défaut pour chaque emplacement ou personnaliser l’étendue. Voir [emplacements pour](dlp-policy-reference.md#locations) les options d’portée.
+5. Pour choisir les emplacements que la stratégie DLP doit protéger et accepter l’étendue par défaut pour chaque emplacement ou personnaliser l’étendue. Voir [Emplacements pour](dlp-policy-reference.md#locations) les options d’portée.
 
 6. Cliquez sur \> **Suivant**.
  
 1. <!-->, faites l’une des choses suivantes :
 
    - Choisissez **tous les emplacements dans Office 365** \> **suivant**.
-   - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, choisissez ceci.
+   - Choose **Let me choose specific locations** \> **Next**. Pour cet exemple, sélectionnez ceci.
 
    Pour inclure ou exclure un emplacement entier tel que tous les e-mails  Exchange ou tous les comptes OneDrive de messagerie, mettez l’état de cet emplacement sur ou hors service.
 
@@ -69,7 +69,7 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
 
    ![Options pour les emplacements où une stratégie DLP peut être appliquée.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
-   Dans cet exemple, pour protéger les informations sensibles stockées dans  tous les comptes OneDrive Entreprise, désactiver l’état pour  les sites de messagerie **Exchange** et **SharePoint** et laisser l’état pour les comptes **OneDrive**.-->
+   Dans cet exemple, pour protéger les informations sensibles stockées dans  tous les comptes OneDrive Entreprise, désactiver l’état pour  les sites de messagerie **Exchange** et **SharePoint** et laisser l’état pour les comptes **OneDrive**.->
 
 7. Choose **Review and customize default settings from the template** \> **Next**.
 

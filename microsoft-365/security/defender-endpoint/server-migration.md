@@ -1,7 +1,7 @@
 ---
 title: Scénarios de migration de serveur pour la nouvelle version de Microsoft Defender for Endpoint
 description: Lisez cet article pour obtenir une vue d’ensemble de la migration de vos serveurs de la solution MMA précédente vers le package de solution unifiée Defender for Endpoint actuel.
-keywords: migrer serveur, serveur, 2012r2, 2016, migration de serveur, gestion des appareils, configurer Microsoft Defender pour les serveurs endpoint, intégrer Microsoft Defender pour les serveurs endpoint
+keywords: migrer serveur, serveur, 2012r2, 2016, migration de serveur, gestion des appareils, configurer Microsoft Defender pour les serveurs endpoint, intégrer Microsoft Defender pour les serveurs Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d40ed80bdbf77e6cbc2c9489462c734840755cd
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: 50077baad1bb028e9686cf29105ec2c05eb25024
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240605"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264779"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>Scénarios de migration de serveur de la solution Microsoft Defender pour point de terminaison MMA précédente
 
@@ -35,7 +35,7 @@ ms.locfileid: "60240605"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 > [!NOTE]
-> Assurez-vous toujours Antivirus Microsoft Defender mise à jour complète sur Windows Server 2016 avant de poursuivre l’installation ou la mise à niveau. Pour recevoir des correctifs et des améliorations régulières du produit pour le composant capteur PEPT, assurez-vous que la mise à jour Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliquée ou approuvée. En outre, pour que les composants de protection restent à jour, veuillez référencer Gérer Antivirus Microsoft Defender mises à jour [et appliquer les lignes de base.](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
+> Assurez-vous toujours Antivirus Microsoft Defender mise à jour complète sur Windows Server 2016 avant de poursuivre l’installation ou la mise à niveau. Pour recevoir des correctifs et des améliorations régulières du produit pour le composant capteur PEPT, assurez-vous que la mise à jour Windows [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliquée ou approuvée. En outre, pour maintenir les composants de protection à jour, veuillez référencer Gérer Antivirus Microsoft Defender mises à jour [et appliquer les lignes de base.](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
 
 Ces instructions s’appliquent à la nouvelle solution unifiée et au nouveau package d’installation de Microsoft Defender for Endpoint pour Windows Server 2012 R2 et Windows Server 2016. Cet article contient des instructions de haut niveau pour différents scénarios de migration possibles de la solution précédente à la solution actuelle. Ces étapes de haut niveau sont destinées à être ajustées aux outils de déploiement et de configuration disponibles dans votre environnement.
 
@@ -49,19 +49,23 @@ Ces instructions s’appliquent à la nouvelle solution unifiée et au nouveau p
 
 Pour faciliter les mises à niveau lorsque Microsoft Endpoint Configuration Manager ou Azure Defender ne sont pas en cours d’utilisation ou ne sont pas encore disponibles pour effectuer la mise à niveau, vous pouvez utiliser ce [script de mise à niveau.](https://github.com/microsoft/mdefordownlevelserver) Elle peut vous aider à automatiser les étapes requises suivantes :
 
-1. Supprimer l’espace de travail OMS pour Microsoft Defender pour le point de terminaison (FACULTATIF)
-2. Supprimer System Center Endpoint Protection client s’il est installé
-3. Télécharger et installer (Windows Server 2012 [R2)](configure-server-endpoints.md#prerequisites) si nécessaire
-4. Installer Microsoft Defender pour le point de terminaison
+1. Supprimez l’espace de travail OMS pour Microsoft Defender pour le point de terminaison (FACULTATIF).
+2. Supprimez System Center Endpoint Protection client s’il est installé.
+3. Téléchargez et installez (Windows Server 2012 [R2)](configure-server-endpoints.md#prerequisites) si nécessaire.
+4. Installez Microsoft Defender pour le point de terminaison.
 5. Appliquez le script **d’intégration à utiliser avec la** stratégie de groupe téléchargée à partir [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com).
 
-Pour utiliser le script, téléchargez-le dans un répertoire d’installation où vous avez également placé les packages d’installation et d’intégration (voir Configurer les points de terminaison [du serveur.](configure-server-endpoints.md)
+Pour utiliser le script, téléchargez-le dans un répertoire d’installation où vous avez également placé les packages d’installation et d’intégration (voir Configurer les points de terminaison [du serveur).](configure-server-endpoints.md)
 
 EXEMPLE : .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript « .\WindowsDefenderATPOnboardingScript.cmd »
 
 ## <a name="microsoft-endpoint-configuration-manager-migration-scenarios"></a>Microsoft Endpoint Configuration Manager de migration 
 
 ### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-including-system-center-endpoint-protection-scep-and-are-running-the-microsoft-monitoring-agent-mma-based-sensor-you-want-to-upgrade-to-the-microsoft-defender-for-endpoint-unified-solution-preview"></a>Vous utilisez actuellement Microsoft Endpoint Configuration Manager pour gérer vos serveurs, notamment System Center Endpoint Protection (SCEP) et exécutez le capteur Microsoft Monitoring Agent (MMA). Vous souhaitez mettre à niveau vers l’aperçu de **solution** unifiée Microsoft Defender for Endpoint.
+
+>[!NOTE]
+>Vous aurez besoin Microsoft Endpoint Configuration Manager, version 2107.
+
 
 Étapes de migration : 
 
@@ -133,7 +137,7 @@ CONSEIL : vous pouvez utiliser le [script d’installation](server-migration.md#
 ## <a name="azure-defender-scenarios"></a>Scénarios Azure Defender
 
 ### <a name="youre-using-azure-defender-the-microsoft-monitoring-agent-mma-andor-microsoft-antimalware-for-azure-scep-are-installed-and-you-want-to-upgrade"></a>Vous utilisez Azure Defender. Les Microsoft Monitoring Agent (MMA) et/ou Microsoft Antimalware pour Azure (SCEP) sont installés et vous souhaitez mettre à niveau.
-Si vous utilisez Azure Defender, vous pouvez tirer parti du processus de mise à niveau automatisée. Voir [Protéger vos points de terminaison à l’aide](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration)de la solution PEPT intégrée du Centre de sécurité : Microsoft Defender pour point de terminaison.
+Si vous utilisez Azure Defender, vous pouvez tirer parti du processus de mise à niveau automatisée. Voir [Protéger vos points de terminaison à l’aide](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration)de la solution PEPT intégrée du Centre de sécurité : Microsoft Defender for Endpoint .
 
 ## <a name="group-policy-configuration"></a>Configuration de la stratégie de groupe
 Pour la configuration à l’aide de la stratégie de groupe, assurez-vous que vous utilisez les derniers fichiers ADMX de votre magasin central pour accéder aux options de stratégie Microsoft Defender correctes. Veuillez [référencer comment créer et](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) gérer le magasin central pour les modèles d’administration de stratégie de groupe dans Windows et télécharger les fichiers les plus récents à utiliser avec **Windows 10**. 

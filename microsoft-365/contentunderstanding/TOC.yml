@@ -79,4 +79,4 @@
     - name: Rapports de banque de termes
       href: term-store-analytics.md
 - name: Extensibilité
-  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api.md
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

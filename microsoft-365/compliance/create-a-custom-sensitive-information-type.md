@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fa6527c2c33eb4bf245f6e1a54a1d6995d074b1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1856d0019a95f200b6be33f3f29ae3e471685e
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167401"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264923"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -57,7 +57,7 @@ Il existe deux façons de créer un type d’informations sensibles :
 
 Utilisez cette procédure pour créer un type d’informations sensibles que vous définissez entièrement. 
 
-1. Dans le Centre de conformité, accédez à **Classification des données** \> **Types d’informations sensibles** puis sélectionnez **Créer un type d’informations**.
+1. Dans le Centre de conformité, go to **Data classification** Sensitive \> **info types** and choose Create sensitive info **type**.
 2. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
 3. Choisissez **Créer un motif**. Vous pouvez créer plusieurs motifs, chacun avec des éléments et des niveaux de confiance différents, lorsque vous définissez votre nouveau type d’informations sensibles.
 4. Choisissez le niveau de confiance par défaut pour le motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
@@ -162,7 +162,7 @@ Si une valeur de date incorporée dans une expression régulière fait partie d�
 
 ### <a name="functional-processors-as-validators"></a>Processeurs fonctionnels en tant que validateurs
 
-Vous pouvez utiliser des processeurs de fonctions pour certains des sits les plus couramment utilisés comme validateurs. Cela vous permet de définir votre propre expression régulière tout en vous assurant qu’elle passe les vérifications supplémentaires requises par la sit. Par exemple, Func_India_Aadhar vous assurer que l’expression régulière personnalisée définie par vous transmet la logique de validation requise pour la carte Aadhar indien. Pour plus d’informations sur les fonctions DLP qui peuvent être utilisées comme validateurs, voir ce que les fonctions [DLP recherchent.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
+Vous pouvez utiliser des processeurs de fonctions pour certains des sits les plus couramment utilisés comme validateurs. Cela vous permet de définir votre propre expression régulière tout en vous assurant qu’elle passe les vérifications supplémentaires requises par la sit. Par exemple, Func_India_Aadhar s’assure que l’expression régulière personnalisée définie par vous transmet la logique de validation requise pour la carte Aadhar indien. Pour plus d’informations sur les fonctions DLP qui peuvent être utilisées comme validateurs, voir ce que les fonctions [DLP recherchent.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
 
 ### <a name="luhn-check-validator"></a>Validateur de vérification Luhn
 

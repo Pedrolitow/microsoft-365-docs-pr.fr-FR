@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Référence de configuration et composant de stratégie DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: b2cfc2e9387b9c29fd7bd6141046436254f88704
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5b4c4f99d146ceff683a4fbf6dcb36018d40a16
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201240"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264770"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Référence de stratégie de protection contre la perte de données
 
@@ -35,8 +35,8 @@ Les stratégies de protection contre la perte de données (DLP) ont de nombreux 
 Les modèles de stratégie DLP sont pré-triés en quatre catégories :
 
 - ceux qui peuvent détecter et protéger les types **d’informations** financières
-- ceux qui peuvent détecter et protéger les types d’informations médicales **et médicales**
-- ceux qui peuvent détecter et protéger les types **d’informations de** confidentialité
+- ceux qui peuvent détecter et protéger les types d’informations **médicales et médicales**
+- ceux qui peuvent détecter et protéger les types d’informations **de** confidentialité
 - modèle **personnalisé** que vous pouvez utiliser pour créer votre propre stratégie si l’un des autres ne répond pas aux besoins de votre organisation.
 
 Ce tableau répertorie tous les modèles de stratégie et les types d’informations sensibles qu’ils couvrent. 
@@ -69,7 +69,7 @@ Actuel depuis le 23/06/2021
 |Santé et médical| U.S. Health Insurance Act (HIPAA)| - [Classification internationale des maladie (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [Classification internationale des maladie (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
 |Confidentialité| Amélioration de la loi sur la protection de la vie privée en Australie|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
 |Confidentialité| Australia Privacy Act|- [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number)|
-|Confidentialité| Australia Personally Identifiable Information (PII) Data|- [Numéro de fichier fiscal australie](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)|
+|Confidentialité| Australia Personally Identifiable Information (PII) Data|- [Numéro de fichier fiscal australien](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Numéro de permis de conduire australien](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)|
 |Confidentialité| Canada Personally Identifiable Information (PII) Data|- [Numéro de permis de conduire canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number)</br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Confidentialité| Canada Personal Information Protection Act (PIPA)|- [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |Confidentialité| Canada Personal Information Protection and Electronic Documents Act (PIPEDA)|- [Numéro de passeport australien](sensitive-information-type-entity-definitions.md#australia-passport-number) </br> [Numéro de permis de conduire canada](sensitive-information-type-entity-definitions.md#canada-drivers-license-number) </br> - [Numéro de compte bancaire canada](sensitive-information-type-entity-definitions.md#canada-bank-account-number) </br> - [Numéro de passeport canada](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [Numéro d’assurance sociale canada](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [Numéro de service de santé canada](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [Numéro d’identification personnelle de santé canada](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
@@ -128,7 +128,7 @@ Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive sp
 Les stratégies DLP détectent les éléments sensibles en les faisant correspondre à un type d’informations sensibles (SIT), à une étiquette de confidentialité ou à une étiquette de rétention. Chaque emplacement prend en charge différentes méthodes de définition de contenu sensible. En outre, lorsque vous combinez des emplacements dans une stratégie, la façon dont le contenu peut être défini peut changer par rapport à la façon dont il peut être défini par un seul emplacement. 
 
 > [!IMPORTANT]
-> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez des sites SharePoint uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs valeurs SIT, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez SharePoint ***sites*** et Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT. 
+> Lorsque vous sélectionnez plusieurs emplacements pour une stratégie, une valeur « non » pour une catégorie de définition de contenu est prioritaire sur la valeur « oui ». Par exemple, lorsque vous sélectionnez SharePoint sites uniquement, la stratégie prendra en charge la détection d’éléments sensibles par une ou plusieurs de sit, par étiquette de confidentialité ou par étiquette de rétention. Toutefois, lorsque vous sélectionnez SharePoint ***sites*** et Teams les emplacements des messages de conversation et de canal, la stratégie ne prendra en charge que la détection d’éléments sensibles par SIT. 
 
 |location|  le contenu peut être défini par SIT|  le contenu peut être défini sur une étiquette de sensibilité|   le contenu peut être défini par une étiquette de rétention|
 |---------|---------|---------|---------|
@@ -137,7 +137,7 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 |Les comptes OneDrive Entreprise|    oui|    oui|    oui|
 |Teams Messages de conversation et de canal |  Oui|    Non| Non|
 |Appareils    |oui |  Oui|    Non|
-|Microsoft Cloud App Security|  oui|    oui|    oui|
+|Microsoft Cloud App Security|  Oui|    oui|    oui|
 |Référentiels locaux|  oui|    Oui|    Non|
 
 > [!NOTE]
@@ -155,7 +155,7 @@ Les stratégies DLP détectent les éléments sensibles en les faisant correspon
 - How do I tune the behavior of a Policy through the tuning of rules
 - what's in a rule-->
 
-Les règles sont la logique métier des stratégies DLP. Elles sont composées des :
+Les règles sont la logique métier des stratégies DLP. Ils sont constitués des :
 
 - [**Conditions**](#conditions) qui, lorsqu’elles correspondent, déclenchent la stratégie
 - [**Exceptions**](#exceptions) aux conditions
@@ -190,7 +190,7 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
 
 ### <a name="conditions"></a>Conditions
 
-Les conditions sont inclusives et vous permet de définir ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un élément qui ressemble à ceci et qui est utilisé comme ceci *&#8212;* il s’agit d’une correspondance et le reste des actions de la stratégie doivent être prises sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
+Les conditions sont inclusives et vous permet de définir ce que vous souhaitez que la règle recherche et le contexte dans lequel ces éléments sont utilisés. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un élément qui ressemble à ceci et qui est utilisé comme ceci *&#8212;* il s’agit d’une correspondance et les autres actions de la stratégie doivent être prises sur celui-ci. Vous pouvez utiliser les conditions pour affecter différentes actions à différents niveaux de risque. Par exemple, un contenu sensible partagé en interne peut être moins risqué et nécessiter moins d’actions qu’un contenu sensible partagé avec des personnes extérieures à l’organisation.
 
 > [!NOTE]
 > Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation. 
@@ -205,9 +205,9 @@ Les conditions sont inclusives et vous permet de définir ce que vous souhaitez 
 
 en fonction [du ou des emplacements que](#location-support-for-how-content-can-be-defined) vous choisissez d’appliquer à la stratégie. 
 
-Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) Les sits ont également une plage prédéfingée d’occurrences d’un sit  qui doivent être trouvées pour correspondre à la règle, par exemple, si la plage de nombre d’instances est définie entre un et neuf, la sit doit se produire au moins une fois et jusqu’à neuf fois pour que la règle corresponde.
+Les TS ont un niveau de [**confiance**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) prédéfiny que vous pouvez modifier si nécessaire. Pour plus d’informations, [voir Plus sur les niveaux de confiance.](sensitive-information-type-learn-about.md#more-on-confidence-levels) Les sits ont également une plage prédéfingée d’occurrences d’un sit  qui doivent être trouvées pour correspondre à la règle, par exemple, si la plage de nombre d’instances est définie d’une à neuf, la sit doit avoir lieu au moins une fois et jusqu’à neuf fois pour que la règle corresponde.
 
-La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de rétention** que vous choisissez. 
+La règle recherche uniquement la présence des étiquettes **de sensibilité** et des étiquettes **de** rétention que vous choisissez. 
 
 #### <a name="condition-context"></a>Contexte de condition
 
@@ -312,17 +312,17 @@ Pour la **loi américaine HIPPA (Health Insurance Act),** les conditions sont re
 
 ![Conditions de stratégie HIPPA](../media/dlp-rules-condition-groups-booleans.png)
 
-Le premier groupe contient les sits qui identifient et identifient les individus, et le deuxième groupe contient les SIT qui identifient le diagnostic médical.
+Le premier groupe contient les sits qui identifient et individuels, et le deuxième groupe contient les SIT qui identifient le diagnostic médical.
 
 ### <a name="exceptions"></a>Exceptions
 
 Dans les règles, les exceptions définissent les conditions utilisées pour exclure un élément de la stratégie. Logiquement, conditions exclusives évaluées après les conditions inclusives et le contexte. Ils indiquent à l'&#8212; de règle lorsque  vous trouvez un  élément qui ressemble à ceci et qui est utilisé comme ceci et qu’il s’agit d’une correspondance et que le reste des actions de la stratégie doivent être prises sur celui-ci, sauf si ***...***&#8212; 
 
-Par exemple, en respectant la stratégie HIPPA, nous pouvons modifier la règle pour exclure tout élément contenant un numéro de permis de conduire en Belgique, comme ceci :
+Par exemple, en respectant la stratégie HIPPA, nous pouvons modifier la règle pour exclure tout élément contenant un numéro de permis de conduire belgique, comme ceci :
 
 ![Stratégie HIPPA avec exclusions](../media/dlp-rule-exceptions.png)
 
-Les conditions d’exceptions qui sont pris en charge par l’emplacement sont identiques à toutes les conditions d’inclusion, la seule différence étant la pré-attente de « Sauf si » pour chaque condition prise en charge.
+Les conditions d’exceptions qui sont pris en charge par l’emplacement sont identiques à toutes les conditions d’inclusion, la seule différence étant la pré-attente de « Sauf si » pour chaque condition prise en charge. Si une règle contient uniquement des exceptions, elle s’applique à tous les messages électroniques ou fichiers qui ne répondent pas aux critères d’exclusion.
 
 Tout comme tous les emplacements, la condition inclusive est prise en charge :
 
@@ -425,7 +425,7 @@ Si vous sélectionnez Périphériques et Microsoft Cloud App Security, ces actio
 - Auditer ou restreindre les activités sur Windows appareils
 - Restreindre les applications tierces
 
-L’application ou non des actions dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant la première **option** Tester. Vous choisissez d’exécuter la stratégie dès qu’une heure  après sa création en sélectionnant l’option Activer immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option  Désactiver. 
+L’application ou non des actions dépend de la façon dont vous configurez le mode de la stratégie. Vous pouvez choisir d’exécuter la stratégie en mode test avec ou sans afficher de conseil de stratégie en sélectionnant l’option Tester **en premier.** Vous choisissez d’exécuter la stratégie dès qu’une heure  après sa création en sélectionnant l’option Activer immédiatement, ou vous pouvez choisir de simplement l’enregistrer et d’y revenir ultérieurement en sélectionnant l’option  Désactiver. 
 
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
@@ -442,7 +442,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-Lorsqu’un utilisateur tente une action sur un élément sensible dans un contexte qui répond aux conditions et aux exceptions d’une règle, vous pouvez lui en faire part par le biais d’e-mails de notification utilisateur et dans des fenêtres contextibles de conseil de stratégie de contexte. Ces notifications sont utiles car elles permettent d’accroître la sensibilisation et d’informer les personnes sur les stratégies DLP de votre organisation. 
+Lorsqu’un utilisateur tente une action sur un élément sensible dans un contexte qui répond aux conditions et aux exceptions d’une règle, vous pouvez lui en faire part par courrier électronique de notification de l’utilisateur et dans des fenêtres contextibles de conseil de stratégie de contexte. Ces notifications sont utiles car elles permettent d’accroître la sensibilisation et d’informer les personnes sur les stratégies DLP de votre organisation. 
 
 Par exemple, le contenu tel qu’un Excel de travail sur un site OneDrive Entreprise qui contient des informations d’identification personnelle (PII) et qui est partagé avec un utilisateur externe.
 
@@ -470,9 +470,9 @@ Vous pouvez activer/désactiver les notifications des utilisateurs pour différe
 
 ainsi que le choix de personnaliser le texte du message électronique, l’objet et le texte du conseil de stratégie.
 
-![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et MCAS](../media/dlp-user-notification-non-devices.png)
+![Options de configuration des conseils de stratégie et de notification utilisateur disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et canal et MCAS](../media/dlp-user-notification-non-devices.png)
 
-Si vous avez sélectionné périphériques uniquement, vous obtenez toutes les options disponibles pour Exchange, SharePoint, OneDrive, Teams Chat et Canal et MCAS, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
+Si vous avez sélectionné périphériques uniquement, vous obtenez les mêmes options que pour Exchange, SharePoint, OneDrive, Teams Chat et Canal et MCAS, ainsi que la possibilité de personnaliser le titre et le contenu de la notification qui s’affiche sur l’appareil Windows 10.
 
 ![Options de configuration de notification utilisateur et de conseil de stratégie disponibles pour les appareils](../media/dlp-user-notification-devices.png)  
 
@@ -483,7 +483,7 @@ Vous pouvez personnaliser le titre et le corps du texte à l’aide de ces param
 |nom du fichier     |%%FileName%% | Contoso doc 1 |
 |nom du processus     |%%ProcessName%% | Word |
 |nom de la stratégie     |%%PolicyName%%| Contoso hautement confidentiel |
-|action | %%AppliedActions%% | pasting document content from the clipboard to another app |
+|action | %%AppliedActions%% | pasting document content from the Clipboard to another app |
 
 **%%AppliedActions%%** remplace ces valeurs dans le corps du message :
 
@@ -506,7 +506,7 @@ Utilisation de ce texte personnalisé
 
 produit ce texte dans la notification personnalisée :
 
-*le pasting à partir du nom de fichier du Presse-papiers : Contoso doc 1 via WINWORD.EXE n’est pas autorisé par votre organisation. Cliquez sur le bouton Autoriser si vous souhaitez ignorer la stratégie Contoso hautement confidentiel*
+*le pasting à partir du nom de fichier du Presse-papiers : Contoso doc 1 via WINWORD.EXE n’est pas autorisé par votre organisation. Cliquez sur le bouton Autoriser si vous souhaitez ignorer la stratégie Contoso hautement confidentielle*
  
 
 
@@ -517,7 +517,7 @@ produit ce texte dans la notification personnalisée :
 > [!NOTE]
 > Uniquement le conseil de stratégie de la priorité la plus élevée, la règle la plus restrictive est affichée. Par exemple, un conseil de stratégie à partir d’une règle qui bloque l’accès au contenu est affiché sur un conseil de stratégie à partir d’une règle qui envoie simplement une notification. Cela évite que les personnes voient une cascade de conseils de stratégie.
 
-Pour en savoir plus sur la configuration et l’utilisation des conseils de stratégie et de notification utilisateur, notamment sur la personnalisation de la notification et du texte du conseil, voir 
+Pour en savoir plus sur la configuration et l’utilisation des notifications utilisateur et des conseils de stratégie, notamment sur la personnalisation de la notification et du texte du conseil, voir 
 - [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.

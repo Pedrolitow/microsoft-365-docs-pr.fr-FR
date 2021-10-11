@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 141178db0ba221d6e8ef9c5f3d4d85bb90607fb1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98dae682c8837a87d7c757b25111f4985e6e6489
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160063"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264803"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -37,12 +37,12 @@ ms.locfileid: "60160063"
 
 Mais que se passe-t-il si vous voulez utiliser un type d’informations sensibles personnalisé qui utilise des valeurs de données exactes, au lieu d’un type qui établissait des correspondances avec des modèles génériques ? Une classification Exact Data Match (EDM) vous permet de créer un type d’informations sensibles personnalisé conçu pour :
 
-- être dynamique et actualisé facilement ;
-- être plus évolutif ;
-- entraîner moins de faux positifs ;
-- utiliser des données sensibles structurées ;
-- gérer les informations sensibles de manière plus sécurisée ;
-- être utilisé avec différents services de cloud computing Microsoft.
+- dynamiques et facilement actualisables.
+- sont plus évolutifs.
+- nombre de faux positifs.
+- travailler avec des données sensibles structurées;
+- gérer les informations sensibles de manière plus sécurisée.
+- être utilisé avec plusieurs services de cloud computing de Microsoft.
 
 ![Classification basée sur EDM.](../media/EDMClassification.png)
 
@@ -62,9 +62,9 @@ La classification EDM vous permet de créer des types d’informations sensibles
 
 Pour effectuer les tâches décrites dans cet article, vous devez être un administrateur général, un administrateur de conformité ou un administrateur Exchange Online. Pour en avoir plus sur les autorisations DLP, consultez la section[Autorisations](data-loss-prevention-policies.md#permissions).
 
-La classification EDM est incluse dans ces abonnements
+La classification basée sur EDM est incluse dans les abonnements suivants :
 
-- Office 365 E5
+- Office 365 E5
 - Microsoft 365 E5
 - Microsoft 365 E5 Conformité
 - Microsoft E5/A5 Information Protection et gouvernance
@@ -89,11 +89,11 @@ La classification EDM est incluse dans ces abonnements
 
 La configuration de la classification basée sur EDM inclut les étapes suivantes :
 
-1. [Enregistrement de données sensibles au format .csv ou .tsv](#save-sensitive-data-in-csv-or-tsv-format)
-2. [Définition de votre schéma de base de données d’informations sensibles](#define-the-schema-for-your-database-of-sensitive-information)
-3. [Création d’un package de règles](#set-up-a-rule-package)
+1. [Enregistrement de données sensibles au .csv format .tsv](#save-sensitive-data-in-csv-or-tsv-format).
+2. [Définissez votre schéma de base de données d’informations sensibles.](#define-the-schema-for-your-database-of-sensitive-information)
+3. [Créez un package de règles.](#set-up-a-rule-package)
 
-#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Enregistrer des données sensibles au format .csv format .tsv ou .tsv
+#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Enregistrer des données sensibles au format .csv ou .tsv
 
 1. Identifiez les informations sensibles que vous voulez utiliser. Exportez les données vers une application, telle que Microsoft Excel, et enregistrez le fichier dans un fichier texte. Le fichier peut être enregistré au format .csv (valeurs séparées par des virgules), .tsv (valeurs séparées par des tabulations) ou séparés par des |. Le format .tsv est recommandé dans les cas où vos valeurs de données peuvent inclure des virgules, telles que des adresses postales.
 Le fichier de données peut inclure au maximum :
@@ -101,7 +101,7 @@ Le fichier de données peut inclure au maximum :
    - 32 colonnes (champs) par source de données
    - 5 colonnes (champs) marquées comme pouvant faire l’objet d’une recherche
 
-2. Structurez les données sensibles dans le fichier .csv ou .tsv afin que la première ligne comprenne les noms des champs utilisés pour la classification EDM. Dans votre fichier, vous pouvez avoir des noms de champ tels que « ssn », « birthdate », « firstname », « lastname ». Les noms d’en-tête de colonne ne peuvent pas contenir des espaces ni des traits de soulignement. Par exemple, le fichier .csv utilisé dans cet exemple est appelé *PatientRecords.csv*. Ses colonnes incluent *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, etc.
+2. Structurez les données sensibles dans le fichier .csv ou .tsv afin que la première ligne inclut les noms des champs utilisés pour la classification EDM. Dans votre fichier, vous pouvez avoir des noms de champ tels que « ssn », « birthdate », « firstname », « lastname ». Les noms d’en-tête de colonne ne peuvent pas contenir des espaces ni des traits de soulignement. Par exemple, le fichier .csv utilisé dans cet exemple est appelé *PatientRecords.csv*. Ses colonnes incluent *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, etc.
 
 3. Prêtez attention au format des champs de données sensibles. En particulier, les champs qui peuvent contenir des virgules dans leur contenu, par exemple, une adresse de rue qui contient la valeur « Seattle,WA » sera évaluée en tant que deux champs distincts lors de l'.csv si le format .csv est sélectionné. Pour éviter cela, utilisez le format .tsv ou entourez la virgule contenant des valeurs par des guillemets doubles dans la table de données sensibles. Si des virgules contenant des valeurs contiennent également des espaces, vous devez créer un sit personnalisé qui correspond au format correspondant. Par exemple, un SIT qui détecte une chaîne à plusieurs mots avec des virgules et des espaces.
 
@@ -171,7 +171,7 @@ L’indicateur `ignoredDelimiters` ne prend pas en charge :
 
 Dans cet exemple, où `caseInsensitive` et `ignoredDelimiters` sont utilisés ensemble, EDM considère **FOO-1234** et **fOo#1234** comme étant identiques et classifie l’élément comme un type d’informations sensibles de dossier de patient.
 
-1. Connecter au Centre de sécurité & conformité PowerShell à l’aide des procédures Connecter dans le Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Connecter au Centre de sécurité & conformité PowerShell à l’aide des procédures de Connecter au Centre de sécurité [& conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Pour charger le schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
@@ -269,21 +269,21 @@ Rappelez-vous que la procédure précédente de notre schéma PatientRecords dé
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
+  <Pattern confidenceLevel="65">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+  </Pattern>
+  <Pattern confidenceLevel="75">
+    <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+    <Any minMatches ="3" maxMatches ="100">
+      <match matches="PatientID" />
+      <match matches="MRN"/>
+      <match matches="FirstName"/>
+      <match matches="LastName"/>
+      <match matches="Phone"/>
+      <match matches="DOB"/>
+    </Any>
+  </Pattern>
+</ExactMatch>
 ```
 
 À partir de cet exemple, notez les points suivants :
@@ -376,14 +376,14 @@ Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte cl
 
 #### <a name="prerequisites"></a>Configuration requise
 
-- Un compte professionnel ou scolaire pour Microsoft 365 qui sera ajouté au groupe de sécurité **EDM\_DataUploaders**
-- Un ordinateur Windows 10 ou Windows Server 2016 avec .NET version 4.6.2 pour l’exécution d’EDMUploadAgent
+- un compte scolaire ou Microsoft 365 qui sera ajouté au groupe de sécurité **\_ DataUploaders EDM.**
+- un Windows 10 ou Windows Server 2016 avec .NET version 4.6.2 pour l’exécution d’EDMUploadAgent.
 - Un répertoire sur votre ordinateur de téléchargement pour :
-  - EDMUploadAgent
-  - votre fichier d’élément sensible au format .csv .tsv ou .tsv, **PatientRecords.csv** dans nos exemples
-  - fichiers de hachage et salt de sortie
-  - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
-- Si vous avez utilisé l’[Assistant de schéma de correspondance exacte des données et de type d’informations sensibles](sit-edm-wizard.md), vous ***devez*** le télécharger.
+  - EDMUploadAgent.
+  - votre fichier d’élément sensible au format .csv .tsv ou .tsv, **PatientRecords.csv** dans nos exemples.
+  - fichiers de hachage et salt de sortie.
+  - nom du datastore du **fichieredm.xml** ; pour cet exemple, il s’agit `PatientRecords` de .
+- Si vous avez utilisé [l’Assistant Correspondance](sit-edm-wizard.md)exacte des données et type d’informations sensibles, ***vous devez le*** télécharger.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
 
@@ -399,7 +399,7 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 >
 > Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité **EDM\_DataUploaders**.
 >
-> Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier .csv .tsv ou .tsv avant de télécharger en exécutant :
+> Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier .csv .tsv ou .tsv avant le téléchargement en exécutant :
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -433,25 +433,25 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
    FACULTATIF : si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, exécutez la commande suivante dans une fenêtre Invite de commandes :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
    ```
 
 5. Pour hacher et charger les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
    Exemple : **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
    Le format par défaut du fichier de données sensibles est les valeurs séparées par des virgules. Vous pouvez spécifier un fichier séparé par des tabulations en indiquant l’option « {Tab} » avec le paramètre /ColumnSeparator, ou vous pouvez spécifier un fichier séparé par un canal en indiquant l’option « | ».
-   Si votre table d’informations sensibles a des valeurs mal formatées, mais que vous souhaitez importer les données restantes tout en ignorant les lignes non valides, vous pouvez utiliser le paramètre /AllowedBadLinesPercentage dans la commande. L’exemple ci-dessus spécifie un seuil de cinq pour cent. Cela signifie que l’outil va hachage et télécharger la table des informations sensibles même si jusqu’à cinq pour cent des lignes ne sont pas valides. La valeur par défaut de ce paramètre est 1 pour cent. 
+   Si votre table d’informations sensibles a des valeurs mal formatées, mais que vous souhaitez importer les données restantes tout en ignorant les lignes non valides, vous pouvez utiliser le paramètre **/AllowedBadLinesPercentage** dans la commande. L’exemple ci-dessus spécifie un seuil de cinq pour cent. Cela signifie que l’outil va hachage et télécharger la table des informations sensibles même si jusqu’à cinq pour cent des lignes ne sont pas valides. Dans les versions de l’outil qui la prise en charge de ce paramètre, le seuil par défaut est zéro pour cent. Ainsi, toutes les lignes incorrectes provoquent une erreur. 
    Cette commande ajoute automatiquement une valeur salt générée de manière aléatoire au hachage pour une sécurité accrue. Si vous voulez utiliser votre propre valeur salt, vous pouvez également ajouter **/Salt <saltvalue>** à la commande. Cette valeur doit comporter 64 caractères et ne peut contenir que les caractères allant de a à z et de 0 à 9.
 
 6. Vérifiez l’état du chargement en exécutant la commande suivante :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
@@ -465,23 +465,23 @@ Effectuez le hachage sur un ordinateur dans un environnement sécurisé.
 
 FACULTATIF : si vous avez utilisé l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles pour créer vos fichiers de schéma et de modèle, exécutez la commande suivante dans une fenêtre Invite de commandes :
 
-```dos
+```console
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
 ````
 
 1. À l’invite de commandes, exécutez la commande suivante :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    Par exemple :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-   Cela génère un fichier haché et un fichier salt avec les extensions suivantes si vous n’avez pas spécifié l’option **/Salt <saltvalue>**  :
+   Cela génère un fichier haché et un fichier salt avec les extensions suivantes si vous n’avez pas spécifié l’option **/Salt \<saltvalue\>**  :
 
    - .EdmHash
    - .EdmSalt
@@ -490,19 +490,19 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    Pour charger les données hachées, exécutez la commande suivante dans l’invite de commandes Windows :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
    ```
 
    Par exemple :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
    ```
 
    Pour vérifier que vos données sensibles ont été téléchargées, exécutez la commande suivante dans l’invite de commandes Windows :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetDataStore
    ```
 
@@ -510,7 +510,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    Si vous voulez afficher toutes les données téléchargées vers un magasin particulier, exécutez la commande suivante dans une invite de commandes Windows :
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
 
@@ -526,8 +526,8 @@ Vous pouvez actualiser quotidiennement votre base de données d’informations s
 
 2. Réexportez les données sensibles vers une application, telle que Microsoft Excel, et enregistrez le fichier au format .csv ou .tsv. Conservez le même nom de fichier et l’emplacement que vous avez utilisé lorsque vous avez suivi les étapes décrites dans[Hachage et téléchargement des données sensibles](#part-2-hash-and-upload-the-sensitive-data).
 
-      > [!NOTE]
-      > Si aucune modification n’est apportée à la structure (noms de champs) du fichier .csv ou .tsv, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence.
+    > [!NOTE]
+    > Si aucune modification n’est apportée à la structure (noms de champs) du fichier .csv ou .tsv, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence.
 
 3. Utilisez [le planificateur de tâches](/windows/desktop/TaskSchd/task-scheduler-start-page) pour automatiser les étapes 2 et 3 dans la procédure[hacher et télécharger les données sensibles](#part-2-hash-and-upload-the-sensitive-data). Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
 
@@ -650,7 +650,7 @@ Ces emplacements prennent en charge les types d’informations sensibles EDM :
 
 10. Dans la section **conditions**, dans la liste **+ ajouter une condition**, sélectionnez **le contenu contient un type de contenu sensible**.
 
-      ![Le contenu contient des types d’informations sensibles.](../media/edm-dlp-newrule-conditions.png)
+    ![Le contenu contient des types d’informations sensibles.](../media/edm-dlp-newrule-conditions.png)
 
 11. Recherchez le type d’informations sensibles que vous avez créé lorsque vous avez configuré votre package de règles, puis sélectionnez **+ ajouter**.
     Sélectionnez **Terminer**.

@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: d44d285959e0529a694b2022d35f2b7e7a575fdc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 113fd3ec196ec6b16c49435e14ed213cd193e5db
+ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192258"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60264743"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activité
 
-La [vue d’ensemble](data-classification-overview.md) de la classification des données et les onglets de l’Explorateur de contenu vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que sur l’endroit où il se trouve. [](data-classification-content-explorer.md) L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L’Explorateur d’activités fournit un affichage historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir Microsoft 365 journaux d’audit unifiés, transformées et disponibles dans l’interface utilisateur de l’Explorateur d’activités. 
+La [vue d’ensemble](data-classification-overview.md) de la classification des données et les onglets de l’Explorateur de contenu vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que sur l’endroit où il se trouve. [](data-classification-content-explorer.md) L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L’Explorateur d’activités fournit un affichage historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir Microsoft 365 journaux d’audit unifiés, transformées et disponibles dans l’interface utilisateur de l’Explorateur d’activités. L’Explorateur d’activités signale jusqu’à 30 jours de données.
 
 ![capture d’écran de l’explorateur d’activités d’espace réservé.](../media/data-classification-activity-explorer-1.png)
 
@@ -74,6 +74,7 @@ Chaque compte qui accède et utilise la classification de données doit posséde
 
 - Administrateur de conformité
 - Administrateur de sécurité
+- Lecteur de sécurité
 
 ## <a name="activity-types"></a>Types d’activité
 
@@ -93,7 +94,7 @@ L’Explorateur d’activités collecte des informations d’activité à partir
 - protection supprimée
 - fichiers découverts 
 
-L’Explorateur d’activités rassemble également la stratégie DLP qui correspond aux **événements** de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via **endpoint protection contre la perte de données (DLP).** Voici quelques exemples d’événements Windows 10'appareils mobiles sont des fichiers :
+L’Explorateur d’activités rassemble également la stratégie DLP qui correspond aux **événements** provenant de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via **endpoint protection contre la perte de données (DLP).** Voici quelques exemples d’événements Windows 10'appareils mobiles sont des fichiers :
 
 - suppressions
 - creations
