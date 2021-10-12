@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15dd2d09746ad934e50376c1d4a9172011983cde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 704c9c11ee12d9e08d5ede73440f5fde7de3d51b
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154817"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268709"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "60154817"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
 > Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
@@ -113,9 +113,41 @@ Spécifie s’il faut démarrer une analyse de processus après le téléchargem
 |---|---|
 |**Clé**|scanAfterDefinitionUpdate|
 |**Type de données**|Valeur booléenne|
-|**Valeurs possibles**|false (par défaut) <p> true|
-|**Comments**|Disponible dans Defender pour Endpoint version 101.41.51 ou supérieure.|
+|**Valeurs possibles**|true (par défaut) <p> false|
+|**Comments**|Disponible dans Defender pour Endpoint version 101.45.00 ou supérieure.|
 |
+
+#### <a name="scan-archives-on-demand-antivirus-scans-only"></a>Analyser les archives (analyses antivirus à la demande uniquement)
+
+Spécifie s’il faut analyser les archives pendant les analyses antivirus à la demande.
+
+<br>
+
+****
+
+|Description|Valeur|
+|---|---|
+|**Clé**|scanArchives|
+|**Type de données**|Valeur booléenne|
+|**Valeurs possibles**|true (par défaut) <p> false|
+|**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.45.00 ou supérieure.|
+|||
+
+#### <a name="degree-of-parallelism-for-on-demand-scans"></a>Degré de parallélisme pour les analyses à la demande
+
+Spécifie le degré de parallélisme pour les analyses à la demande. Cela correspond au nombre de threads utilisés pour effectuer l’analyse et a une incidence sur l’utilisation du processeur, ainsi que sur la durée de l’analyse à la demande.
+
+<br>
+
+****
+
+|Description|Valeur|
+|---|---|
+|**Clé**|maximumOnDemandScanThreads|
+|**Type de données**|Entier|
+|**Valeurs possibles**|2 (valeur par défaut). Les valeurs autorisées sont desgers entre 1 et 64.|
+|**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.45.00 ou supérieure.|
+|||
   
 
 #### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
@@ -130,7 +162,7 @@ Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une 
 |---|---|
 |**Clé**|exclusionsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -183,7 +215,7 @@ Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au
 
 ##### <a name="path-type-file--directory"></a>Type de chemin d’accès (fichier/répertoire)
 
-Indique si la propriété *du chemin d’accès* fait référence à un fichier ou un répertoire.
+Indique si la propriété *de chemin d’accès* fait référence à un fichier ou un répertoire.
 
 <br>
 
@@ -294,7 +326,7 @@ Type de menace pour lequel le comportement est configuré.
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
 - **Audit**: l’appareil n’est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloquer**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Bloc**: l’appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Off**: l’appareil n’est pas protégé contre ce type de menace et rien n’est enregistré.
 
 <br>
@@ -320,7 +352,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |---|---|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -352,7 +384,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |---|---|
 |**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments.|
+|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments.|
 |**Comments**|Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure.|
 |
 
@@ -443,7 +475,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA)** sont bloquées
+  - **Les applications potentiellement indésirables (PUA) sont** bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud
@@ -485,7 +517,9 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
-      "maximumOnDemandScanThreads":1,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
       "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",

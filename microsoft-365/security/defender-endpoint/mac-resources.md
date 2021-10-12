@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6b74732a54d875dfe08469b15e35fda9f59a8351
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7a4438d564fd414d40c6c42b1265b13bcb13b983
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156257"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268710"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -41,7 +41,7 @@ Si vous pouvez reproduire un problème, augmentez le niveau de journalisation, e
 1. Augmenter le niveau de journalisation :
 
    ```bash
-   mdatp log level set --level verbose
+   mdatp log level set --level debug
    ```
 
    ```Output
@@ -95,7 +95,7 @@ Il existe plusieurs façons de désinstaller Microsoft Defender pour Endpoint su
 
 Les tâches importantes, telles que le contrôle des paramètres du produit et le déclenchement d’analyses à la demande, peuvent être réalisées à partir de la ligne de commande :
 
-|Group|Scénario|Commande|
+|Groupe|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled/disabled]`|
 |Configuration|Activer/désactiver la protection cloud|`mdatp config cloud --value [enabled/disabled]`|
@@ -103,7 +103,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Configuration|Activer/désactiver l’envoi automatique d’échantillons|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
 |Configuration|Ajouter un nom de menace à la liste autorisée|`mdatp threat allowed add --name [threat-name]`|
 |Configuration|Supprimer un nom de menace de la liste autorisée|`mdatp threat allowed remove --name [threat-name]`|
-|Configuration|Liste de tous les noms de menace autorisés|`mdatp threat allowed list`|
+|Configuration|Liste de tous les noms de menaces autorisés|`mdatp threat allowed list`|
 |Configuration|Activer la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |Configuration|Désactiver la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |Configuration|Activer le mode audit pour la protection PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
@@ -154,10 +154,10 @@ Pour activer lacompletion automatique dans zsh :
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender pour point de terminaison
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender for Endpoint
 
 `/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp` . Les fichiers sont nommés d’après l’threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list` .
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informations du portail Microsoft Defender pour les points de terminaison
 
-PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour point de terminaison, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans Microsoft Defender pour le Centre de sécurité des points de terminaison.
+PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour endpoint, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans le Centre de sécurité Microsoft Defender pour Endpoint.

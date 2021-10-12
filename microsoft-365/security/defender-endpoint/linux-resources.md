@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 89178fc9c8ec44da0f9f51e2c4bfc6b1dfbab138
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d7de5d6b897d93b0112745ed566879a451e5448
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211068"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268553"
 ---
 # <a name="resources"></a>Ressources
 
@@ -33,7 +33,7 @@ ms.locfileid: "60211068"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="collect-diagnostic-information"></a>Collecter des informations de diagnostic
 
@@ -75,7 +75,7 @@ Si vous pouvez reproduire un problème, augmentez d’abord le niveau de journal
 
 ## <a name="log-installation-issues"></a>Journal des problèmes d’installation
 
-Si une erreur se produit lors de l’installation, le programme d’installation signale uniquement un échec général.
+Si une erreur se produit pendant l’installation, le programme d’installation signale uniquement un échec général.
 
 Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp/install.log` .
 Si vous avez des problèmes lors de l’installation, envoyez-nous ce fichier afin que nous aidions à diagnostiquer la cause.
@@ -86,8 +86,8 @@ Il existe plusieurs façons de désinstaller Defender pour Endpoint sur Linux. S
 
 ### <a name="manual-uninstallation"></a>Désinstallation manuelle
 
-- `sudo yum remove mdatp` pour RHEL et ses variantes (CentOS et Oracle Linux).
-- `sudo zypper remove mdatp` pour SLES et variantes.
+- `sudo yum remove mdatp` pour RHEL et les variantes (CentOS et Oracle Linux).
+- `sudo zypper remove mdatp` pour SLES et les variantes.
 - `sudo apt-get purge mdatp` pour les systèmes Ubuntu et Debian.
 
 ## <a name="configure-from-the-command-line"></a>Configurer à partir de la ligne de commande
@@ -106,7 +106,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 
 ****
 
-|Group|Scénario|Commande|
+|Groupe|Scénario|Commande|
 |---|---|---|
 |Configuration|Activer/désactiver la protection en temps réel|`mdatp config real-time-protection --value [enabled\|disabled]`|
 |Configuration|Activer/désactiver la surveillance du comportement|`mdatp config behavior-monitoring --value [enabled\|disabled]`
@@ -121,10 +121,13 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Configuration|Liste de toutes les exclusions antivirus|`mdatp exclusion list`|
 |Configuration|Ajouter un nom de menace à la liste autorisée|`mdatp threat allowed add --name [threat-name]`|
 |Configuration|Supprimer un nom de menace de la liste autorisée|`mdatp threat allowed remove --name [threat-name]`|
-|Configuration|Liste de tous les noms de menace autorisés|`mdatp threat allowed list`|
+|Configuration|Liste de tous les noms de menaces autorisés|`mdatp threat allowed list`|
 |Configuration|Activer la protection PUA|`mdatp threat policy set --type potentially_unwanted_application --action block`|
 |Configuration|Désactiver la protection PUA|`mdatp threat policy set --type potentially_unwanted_application --action off`|
 |Configuration|Activer le mode audit pour la protection PUA|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|Configuration|Configurer le degré de parallélisme pour les analyses à la demande|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Configuration|Activer/désactiver les analyses après les mises à jour des informations de sécurité|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuration|Activer/désactiver l’analyse d’archivage (analyses à la demande uniquement)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Modifier le niveau de journal|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |Diagnostics|Générer des journaux de diagnostic|`mdatp diagnostic create --path [directory]`|
 |Intégrité|Vérifier l’état du produit|`mdatp health`|
@@ -132,7 +135,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Protection|Faire une analyse rapide|`mdatp scan quick`|
 |Protection|Faire une analyse complète|`mdatp scan full`|
 |Protection|Annuler une analyse à la demande en cours|`mdatp scan cancel`|
-|Protection|Demander une mise à jour de l’intelligence de la sécurité|`mdatp definitions update`|
+|Protection|Demander une mise à jour des informations de sécurité|`mdatp definitions update`|
 |Historique de la protection|Imprimer l’historique complet de la protection|`mdatp threat list`|
 |Historique de la protection|Obtenir les détails sur les menaces|`mdatp threat get --id [threat-id]`|
 |Gestion de la mise en quarantaine|Liste de tous les fichiers mis en quarantaine|`mdatp threat quarantine list`|
@@ -142,37 +145,6 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Gestion de la mise en quarantaine|Restaurer un fichier de la quarantaine|`mdatp threat quarantine restore --id [threat-id]`|
 |Détection et réponse des points de terminaison|Définir la prévisualisation (inutilisée)|`mdatp edr early-preview [enable|disable]`|
 |Détection et réponse des points de terminaison|Définir l’ID de groupe|`mdatp edr group-ids --group-id [group-id]`|
-|Détection et réponse des points de terminaison|Balise Set/Remove uniquement `GROUP` prise en charge|`mdatp edr tag set --name GROUP --value [tag]`|
-|Détection et réponse des points de terminaison|exclusions de liste (racine)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|Détection et réponse des points de terminaison|Définir/supprimer une balise, uniquement `GROUP` prise en charge|`mdatp edr tag set --name GROUP --value [tag]`|
+|Détection et réponse des points de terminaison|Exclusions de liste (racine)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
-
-## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informations du portail Microsoft Defender pour les points de terminaison
-
-Dans le portail Defender pour points de terminaison, deux catégories d’informations s’offrent à vous :
-
-- Alertes antivirus, notamment :
-  - Severity
-  - Type d’analyse
-  - Informations sur l’appareil (nom d’hôte, identificateur d’appareil, identificateur client, version de l’application et type de système d’exploitation)
-  - Informations sur le fichier (nom, chemin d’accès, taille et hachage)
-  - Informations sur les menaces (nom, type et état)
-- Informations sur l’appareil, notamment :
-  - Identificateur d’appareil
-  - Identificateur de client
-  - Version de l’application.
-  - Nom d'hôte
-  - Type de système d’exploitation
-  - Version du système d’exploitation
-  - Modèle ordinateur
-  - Architecture du processeur
-  - Si l’appareil est une machine virtuelle
-
-### <a name="known-issues"></a>Problèmes détectés
-
-- Vous pouvez voir « Aucune donnée de capteur, communications altérées » dans la page d’informations de l’ordinateur du portail Microsoft 365 Defender, même si le produit fonctionne comme prévu. Nous travaillons à résoudre ce problème.
-- Les utilisateurs connectés n’apparaissent pas sur le Microsoft 365 Defender web.
-- Dans les distributions SUSE, si l’installation de *libatomic1* échoue, vous devez vérifier que votre système d’exploitation est enregistré :
-
-   ```bash
-   sudo SUSEConnect --status-text
-   ```
