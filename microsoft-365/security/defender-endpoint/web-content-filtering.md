@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: feb05a19264564d98b1b7a79993c1be6d61237a3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3afc71b226bb7858caed439f13c55aee44d81a63
+ms.sourcegitcommit: 11855e904e7f4e57aff302852546a93526cad4dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195220"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60275687"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -34,11 +34,11 @@ ms.locfileid: "60195220"
 > [!TIP]
 > Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+Le filtrage de contenu Web fait partie des fonctionnalités de [protection Web](web-protection-overview.md) de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 Configurez des stratégies sur vos groupes d’appareils pour bloquer certaines catégories. Le blocage d’une catégorie empêche les utilisateurs au sein de groupes d’appareils spécifiés d’accéder aux URL associées à la catégorie. Pour toute catégorie qui n’est pas bloquée, les URL sont automatiquement auditées. Vos utilisateurs peuvent accéder aux URL sans interruption, et vous allez collecter des statistiques d’accès pour vous aider à créer une décision de stratégie plus personnalisée. Vos utilisateurs voient une notification de blocage si un élément de la page qu’ils voient appelle une ressource bloquée.
 
-Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge du navigateur, consultez la section des conditions préalables.
+Le filtrage de contenu Web est disponible sur les principaux navigateurs web, avec des blocs exécutés par Windows Defender SmartScreen (Microsoft Edge) et la Protection du réseau (Chrome, Firefox, Firefox et Opera). Pour plus d’informations sur la prise en charge des navigateurs, consultez la section conditions préalables.
 
 ## <a name="benefits-of-web-content-filtering"></a>Avantages du filtrage de contenu web
 
@@ -48,7 +48,7 @@ Le filtrage de contenu Web est disponible sur les principaux navigateurs web, av
 
 - Votre équipe de sécurité peut accéder aux rapports web dans le même emplacement central, avec une visibilité sur les blocs réels et l’utilisation du web.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des conditions suivantes :
 
@@ -66,7 +66,7 @@ Les données sont stockées dans la région sélectionnée dans le cadre de vos 
 
 ## <a name="turn-on-web-content-filtering"></a>Activer le filtrage de contenu web
 
-Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison \> **fonctionnalités** \>  \> **générales avancées**. Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
+Dans le menu de navigation de gauche, sélectionnez **Paramètres** points de terminaison \> **fonctionnalités** \>  \> **générales avancées.** Faites défiler vers le bas jusqu’à ce que vous voyez l’entrée pour le **filtrage de contenu Web.** Basculez sur Les préférences **d’on** et **d’enregistrer.**
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurer des stratégies de filtrage de contenu web
 
@@ -81,9 +81,9 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Jeux :** jeux en ligne et sites qui favorisent les compétences et la pratique en matière de jeux.
 
-**Nudity**: sites qui fournissent des images ou vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
+**Nudity**: sites qui fournissent des images ou des vidéos pleines frontales et semi-intégrales, généralement sous forme d’illustrations, et qui peuvent autoriser le téléchargement ou la vente de ces documents.
 
-**Forcément explicite / sexuellement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu sexuelle est également répertoriée ici.
+**Politique / explicitement :** sites contenant du contenu explicitement explicite sous forme d’image ou de texte. Toute forme de contenu sexuelle est également répertoriée ici.
 
 Éducation sexuelle : sites qui traitent de la violence et de la violence d’une manière informative et non-sexuelle, y compris les sites qui fournissent une éducation sur la reproduction humaine et la santé humaine, les sites qui fournissent des conseils sur la prévention des infections sexuelles et les sites qui fournissent des conseils sur les sujets de santé sexuelle.
 
@@ -125,12 +125,12 @@ Les stratégies peuvent être déployées pour bloquer l’une des catégories p
 
 **Auto-nuire :** sites qui promeuvent les auto-dommages, y compris les sites de cyberintimidation qui contiennent des messages abusifs et/ou offensants à l’égard des utilisateurs.
 
-**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’histoire, à la chasse et à la défense.
+**Les armes**: tout site qui vend des armes ou qui fait la défense de l’utilisation d’armes, y compris, mais sans s’y limiter, à l’errs, à la chasse et à la chasse.
 
 </details>
 
 <details>
-<summary>Sons</summary>
+<summary>Resoe</summary>
 
 **Conversation**: sites qui sont principalement des salles de conversation web.
 
@@ -197,13 +197,13 @@ Pour définir un indicateur personnalisé, suivez les étapes suivantes :
 
 Si vous rencontrez un domaine qui a été classé de manière incorrecte, vous pouvez la disputer directement à partir du portail.
 
-Pour disputer la catégorie d’un domaine, accédez à **Reports** \> **Web Protection** Web Content \> **Filtering Details** \> **Domains**. Sous l’onglet Domaines des rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et sélectionnez **Catégorie litige.**
+Pour litiger la catégorie d’un domaine, accédez à **Reports** \> **Web Protection** Web Content \> **Filtering Details** \> **Domains**. Sous l’onglet Domaines des rapports de filtrage de contenu Web, vous verrez des ellipses à côté de chacun des domaines. Pointez sur ces ellipses et sélectionnez **Catégorie litige.**
 
 Un panneau s’ouvre où vous pouvez sélectionner la priorité et ajouter des détails, tels que la catégorie suggérée pour la catégorisation. Une fois que vous avez terminé le formulaire, sélectionnez **Envoyer.** Notre équipe examine la demande dans un jour ou deux. Pour un déblocage immédiat, créez un [indicateur d’autoriser personnalisé.](indicator-ip-domain.md)
 
 ### <a name="url-category-lookup"></a>Recherche de catégorie d’URL
 
-Pour déterminer la catégorie d’un site web, vous pouvez utiliser la fonction de recherche d’URL disponible sur le portail Microsoft 365 Defender ( ) sous <https://security.microsoft.com> **Endpoints** \> **Search**. Dans les résultats de recherche d’URL, la catégorie de filtrage de contenu web apparaît sous **URL/Détails du domaine.** Les administrateurs peuvent également s’en prendre à la catégorie du domaine directement à partir de cette page, comme illustré dans l’image suivante. Si le résultat de catégorie n’est pas affiché, l’URL n’est pas actuellement affectée à une catégorie de filtrage de contenu web existante.
+Pour déterminer la catégorie d’un site web, vous pouvez utiliser la fonction de recherche d’URL disponible sur le portail Microsoft 365 Defender ( ) sous <https://security.microsoft.com> **Endpoints** \> **Search**. Dans les résultats de recherche d’URL, la catégorie de filtrage de contenu web apparaît sous **URL/Détails du domaine.** Les administrateurs peuvent également en litige la catégorie du domaine directement à partir de cette page, comme illustré dans l’image suivante. Si le résultat de catégorie n’est pas affiché, l’URL n’est pas actuellement affectée à une catégorie de filtrage de contenu web existante.
 
 ![Image des résultats de recherche de catégorie de filtrage de contenu web.](../../media/web-content-filtering-category-lookup.png)
 
@@ -219,7 +219,7 @@ Au cours des 30 premiers jours d’utilisation de cette fonctionnalité, il se p
 
 ![Image de l’activité web par carte de catégorie.](images/web-activity-by-category600.png)
 
-### <a name="web-content-filtering--summary-card"></a>Carte récapitulatif du filtrage du contenu Web
+### <a name="web-content-filtering--summary-card"></a>Fiche récapitulatif du filtrage du contenu Web
 
 Cette carte affiche la distribution des tentatives d’accès bloqué entre les différentes catégories de contenu web parent. Sélectionnez l’une des barres de couleur pour afficher plus d’informations sur une catégorie web parente spécifique.
 
@@ -237,7 +237,7 @@ Vous pouvez accéder aux **détails du rapport** pour chaque carte en sélection
 
 ![Image des détails du rapport de protection web.](images/web-protection-report-details.png)
 
-- **Catégories Web :** répertorie les catégories de contenu web qui ont connu des tentatives d’accès dans votre organisation. Sélectionnez une catégorie spécifique pour ouvrir un résumé volant.
+- **Catégories Web :** répertorie les catégories de contenu web qui ont connu des tentatives d’accès dans votre organisation. Sélectionnez une catégorie spécifique pour ouvrir un volant de synthèse.
 
 - **Domaines :** répertorie les domaines web qui ont été accédés ou bloqués dans votre organisation. Sélectionnez un domaine spécifique pour afficher des informations détaillées sur ce domaine.
 
@@ -248,6 +248,8 @@ Utilisez le filtre de plage de temps en haut à gauche de la page pour sélectio
 ### <a name="known-issues-and-limitations"></a>Problèmes connus et conseils
 
 Seul Microsoft Edge est pris en charge si la configuration du système d’exploitation de votre appareil est Server (**cmd** \> **Systeminfo** \> **OS Configuration**). La protection du réseau est uniquement prise en charge en mode Inspect sur les appareils serveur, qui est responsable de la sécurisation du trafic sur les navigateurs tiers pris en charge.
+
+La Protection du réseau ne prend actuellement pas en charge l’inspection SSL, ce qui peut entraîner le blocage normal de certains sites par le filtrage de contenu Web. Les sites seraient autorisés en raison d’un manque de visibilité sur le trafic chiffré une fois que l’accord TLS a eu lieu et parce qu’il n’est pas en mesure d’en savoir plus sur certaines redirections.  Cela inclut les redirections de certaines pages de connexion de messagerie web vers la page de boîte aux lettres. En tant que solution de contournement acceptée, vous pouvez créer un indicateur de blocage personnalisé pour la page de connexion afin de vous assurer qu’aucun utilisateur n’est en mesure d’accéder au site. Gardez à l’esprit que cela peut bloquer leur accès à d’autres services associés au même site web. 
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Examinez les alertes de détection d’anomalies.
-ms.openlocfilehash: 5d19a5c5dc1b07b0851ec70ada5111ecf5166ab5
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: bc82c0a8145b783ea914dd7eec32f3a5f7c6d05e
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264719"
+ms.locfileid: "60268873"
 ---
 # <a name="investigate-anomaly-detection-alerts"></a>Examiner les alertes de détection d’anomalie
 
@@ -38,7 +38,7 @@ Ce guide fournit des informations sur l’examen et la correction des alertes de
 - Fraude à la défense
 - Accès informations d'identification
 - Discovery
-- Déplacement ultérieur
+- Mouvement latéral
 - Collection
 - Exfiltration
 - Impact

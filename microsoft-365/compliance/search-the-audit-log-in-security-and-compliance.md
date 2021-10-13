@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b50e320752f64360132410c50f454fbfbfd27a82
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
+ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195616"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268753"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -127,8 +127,9 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 - Si vous voulez télécharger par programme les données du journal d’audit, nous recommandons d’utiliser l’API Activité de gestion Office 365 au lieu d’un script PowerShell. L’API Activité de gestion Office 365 est un service web REST que vous pouvez utiliser pour développer des solutions de surveillance des opérations, de la sécurité et de la conformité pour votre organisation. Pour plus d’informations, consultez [Référence de l’API d’activité de gestion d’Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- Après la survenue d’un événement, le renvoi de l'enregistrement de journal d’audit correspondant dans les résultats de la recherche d'un journal peut prendre jusqu’à 30 minutes, voir 24 heures. Le tableau suivant répertorie les délais en fonction des services dans Microsoft 365.
+- Azure Active Directory (Azure AD) est le service d’annuaire pour Microsoft 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
+- Après la survenue d’un événement, le renvoi de l'enregistrement de journal d’audit correspondant dans les résultats de la recherche d'un journal peut prendre jusqu’à 30 minutes, voir 24 heures. Le tableau suivant répertorie les délais en fonction des services dans Microsoft 365.
 
   |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
   |---|:---:|:---:|
@@ -151,8 +152,6 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   |Yammer||![Coche.](../media/checkmark.png)|
   |Microsoft Forms|![Coche.](../media/checkmark.png)||
   ||||
-
-- Azure Active Directory (Azure AD) est le service d’annuaire pour Microsoft 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 - L’enregistrement d’audit pour Power BI n’est pas activé par défaut. Pour rechercher des activités Power BI dans le journal d’audit, vous devez activer l’audit dans le portail d’administration Power BI. Pour consulter des instructions, voir la section «journaux d’audit» du [portail d’administration Power BI](/power-bi/service-admin-portal#audit-logs).
 
@@ -425,7 +424,6 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
         
     :::column-end:::
 :::row-end:::
-
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
 
@@ -826,8 +824,13 @@ Analyse du temps de travail explique comment les groupes collaborent au sein de 
 |Paramètres d’accès aux données mis à jour|UpdatedDataAccessSetting|Un administrateur a mis à jour les paramètres d’accès aux données.|
 |Paramètre de confidentialité mis à jour|UpdatedPrivacySetting|Paramètres de confidentialité mis à jour par l’administrateur; par exemple, taille de groupe minimale.|
 |Données d’organisation téléchargées|UploadedOrgData|Fichier de données d’organisation téléchargé par l’administrateur.|
+|Utilisateur connecté<sup>*</sup>| Utilisateur connecté |Un utilisateur connecté à son compte d'utilisateur Microsoft 365.|
+|Utilisateur déconnecté<sup>*</sup>| UserLoggedOff |Un utilisateur s'est déconnecté de son compte d'utilisateur Microsoft 365.
 |Exploration de la consultation|ViewedExplore|Un analyste a consulté les visualisations dans un ou plusieurs onglets de page exploration.|
 ||||
+
+> [!NOTE]
+> <sup>*</sup>Il s'agit des activités de connexion et de déconnexion Azure Active Directory Domain Services. Ces activités sont enregistrées même si Workplace Analytics n'est pas activé dans votre organisation. Pour plus d'informations sur les activités de connexion des utilisateurs, consultez [Journaux de connexion dans Azure Active Directory Domain Services](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 ### <a name="microsoft-teams-activities"></a>Activités dans Microsoft Teams 
 
