@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: eeeda9a41f35f6380d2d20adf80b00bc80ba4c4e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ed123a772d3c3db23f4519beeb32903bb43267a7
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198768"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335765"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -31,9 +31,9 @@ ms.locfileid: "60198768"
 > [!NOTE]
 > Ce scénario n'est pas pris en charge pour [les enregistrements réglementaires](records-management.md#records) ou les étiquettes par défaut pour une structure d'organisation telle qu'un ensemble de documents ou une bibliothèque dans Microsoft Office SharePoint Online, ou un dossier dans Exchange. Ces scénarios nécessitent une [stratégie d'étiquette de rétention publiée](create-apply-retention-labels.md#step-2-publish-retention-labels).
 
-L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions spécifiques. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
+L’une des fonctionnalités les plus puissantes des [étiquettes de rétention](retention.md) est la possibilité de les appliquer automatiquement au contenu qui remplit les conditions spécifiées. Dans ce cas, les membres de votre organisation n’ont pas besoin d’appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
   
-Les étiquettes de rétention appliquées automatiquement sont puissantes pour les raisons suivantes :
+Les étiquettes de rétention appliquées automatiquement sont puissantes pour les raisons suivantes :
   
 - Vous n’avez pas besoin de former les utilisateurs concernant l’ensemble de vos classifications.
     
@@ -41,7 +41,7 @@ Les étiquettes de rétention appliquées automatiquement sont puissantes pour l
     
 - Les utilisateurs n’ont plus besoin de connaître les stratégies de gouvernance des données : ils peuvent se concentrer sur leur travail.
     
-Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci contient des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md).
+Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci ne contient pas encore d’étiquette de rétention appliquée et des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md).
 
 > [!TIP]
 > Utilisez des propriétés de recherche pour identifier [les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings) et [les éléments auxquels une étiquette de confidentialité est appliquée](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -83,15 +83,16 @@ Les instructions de navigation varient selon que vous utilisez ou non [la gestio
     
     Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
-2. Suivez les invites de l’Assistant. Si vous utilisez la gestion des enregistrements :
+2. Suivez les invites pour la configuration. Si vous utilisez la gestion des enregistrements :
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, consultez [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)
     
     - Pour utiliser l’étiquette de rétention pour déclarer des enregistrements, sélectionnez **Marquer les éléments comme enregistrements**, ou **Marquer les éléments comme enregistrements réglementaires**. Pour plus d’information, voir [Configuration d’étiquettes de rétention pour déclarer des enregistrements](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu**, puis sélectionnez **Terminé** pour démarrer l’assistant à la création d’attribution automatique d’étiquettes qui vous conduit directement à l’étape 2 de la procédure suivante.
+3. Une fois l’étiquette créée, les options permettant de la publier s’affichent. Appliquez automatiquement l’étiquette, ou enregistrez-la simplement : sélectionnez **Appliquer automatiquement cette étiquette à un type spécifique de contenu**, puis sélectionnez **Terminé**. 
+4.  configuration qui vous permet d’aller directement à l’étape 2 de la procédure suivante.
 
-Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez **Modifier l’étiquette** pour démarrer l’assistant à l’édition de rétention qui vous permet de modifier les descriptions d’étiquettes et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
+Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez l’option **Modifier l’étiquette** pour démarrer la configuration **Modifier l’étiquette de rétention** qui vous permet de modifier les descriptions d’étiquettes et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>Étape 2 : créer une stratégie d’application automatique
 
@@ -107,15 +108,18 @@ Lorsque vous créez une stratégie d’application automatique, vous sélectionn
     
     Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
 
-2. Suivez les invites de l’assistant à la création d’attribution automatique d’étiquettes.
+2. Suivez les invites de configuration de la Création automatique d’étiquettes.
     
     Pour plus d’informations sur la configuration des conditions qui appliquent automatiquement l’étiquette de rétention, voir la section [Configuration des conditions d’application automatique des étiquettes de rétention](#configuring-conditions-for-auto-apply-retention-labels) sur cette page.
     
     Pour plus d’informations sur la prise en charge des emplacements par des étiquettes de rétention, voir la section [Étiquettes de rétention et emplacements](retention.md#retention-label-policies-and-locations).
 
-Pour modifier une stratégie d’application automatique d’étiquettes existante, sélectionnez-la pour démarrer l’assistant à la modification de stratégie de rétention qui vous permet de modifier l’étiquette de rétention sélectionnée et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
+Pour modifier une stratégie d’application automatique d’étiquettes existante, sélectionnez-la pour démarrer la configuration **Modifier une stratégie de rétention** qui vous permet de modifier l’étiquette de rétention sélectionnée et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
 
 Une fois le contenu étiqueté à l'aide d'une stratégie d'étiquette d'application automatique, l'étiquette appliquée ne peut pas être automatiquement supprimée ou modifiée en modifiant le contenu ou la stratégie, ou par une nouvelle stratégie d'étiquette d'application automatique. Pour plus d'informations, voir [Une seule étiquette de rétention à la fois](retention.md#only-one-retention-label-at-a-time).
+
+> [!NOTE]
+> Une stratégie d’application automatique des étiquettes de rétention ne remplacera jamais une étiquette de rétention existante appliquée au contenu. Si vous souhaitez réétiqueter du contenu à l’aide des conditions que vous configurez, vous devez supprimer manuellement l’étiquette de rétention actuelle du contenu existant.
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configuration des conditions d’application automatique des étiquettes de rétention
 
