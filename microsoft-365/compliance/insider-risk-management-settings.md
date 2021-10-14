@@ -3,7 +3,7 @@ title: Paramètres de gestion des risques internes
 description: En savoir plus sur les paramètres de gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ea91263cf6f466f718d30d8cfdc303611bf755ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89a6947aa9ada34df0e60ed2d552254edb6719a5
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204298"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335309"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en charge des paramètres de gestion des risques internes
 
@@ -34,7 +34,7 @@ Les paramètres de gestion des risques internes s’appliquent à toutes les str
 - Groupes d’utilisateurs prioritaires (aperçu)
 - Ressources physiques prioritaires (prévisualisation)
 - Power Automate flux de données (prévisualisation)
-- Microsoft Teams (aperçu)
+- Microsoft Teams (prévisualisation)
 - Analytics (préversion)
 
 Avant de commencer et de créer des stratégies de gestion des risques internes, il est important de comprendre ces paramètres et de choisir les niveaux de configuration les mieux conformes aux besoins de conformité de votre organisation.
@@ -46,7 +46,7 @@ La protection de la confidentialité des utilisateurs disposant de correspondanc
 - **Afficher les versions anonymisées** des noms d’utilisateur : les noms des utilisateurs sont rendus anonymes pour empêcher les administrateurs, les enquêteurs de données et les réviseurs de voir qui est associé aux alertes de stratégie. Par exemple, un utilisateur « Grace à Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans toutes les zones de l’expérience de gestion des risques internes. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans l’alerte de risque interne et les détails du cas ne seront pas disponibles lorsque cette option sera choisie. Toutefois, les noms d’utilisateur s’affichent lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelles ou passées.
 
     >[!IMPORTANT]
-    >Pour conserver l’intégrité référence pour les utilisateurs qui ont des alertes ou des cas de risque internes dans Microsoft 365 ou d’autres systèmes, l’anonymisation des noms d’utilisateurs n’est pas conservée pour les alertes exportées. Les alertes exportées affichent les noms d’utilisateur de chaque alerte.
+    >Pour maintenir l’intégrité référence des utilisateurs qui ont des alertes ou des cas de risque internes dans Microsoft 365 ou d’autres systèmes, l’anonymisation des noms d’utilisateur n’est pas conservée pour les alertes exportées. Les alertes exportées affichent les noms d’utilisateur de chaque alerte.
 
 - **Ne pas afficher les versions rendues anonymes** des noms d’utilisateur : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelles et passées pour les alertes et les cas. Les informations de profil utilisateur (nom, titre, alias et organisation ou service) s’affichent pour l’utilisateur pour tous les cas et alertes de gestion des risques internes.
 
@@ -63,12 +63,12 @@ Les alertes sont déclenchées par des stratégies lorsque les utilisateurs effe
 
 Les indicateurs de stratégie sont segmentés dans les zones suivantes. Vous pouvez choisir les indicateurs pour activer et personnaliser les limites des événements d’indicateurs pour chaque niveau d’indicateur lors de la création d’une stratégie de risque interne :
 
-- **Office suivants**: il s’agit notamment d’indicateurs de stratégie pour SharePoint sites, Microsoft Teams et la messagerie électronique.
+- **Office :** il s’agit notamment d’indicateurs de stratégie pour SharePoint sites, Microsoft Teams et la messagerie électronique.
 - **Indicateurs d’appareil**: il s’agit notamment d’indicateurs de stratégie pour les activités telles que le partage de fichiers sur le réseau ou avec des appareils. Les indicateurs incluent les activités impliquant tous les types de fichiers, à l’exception de l’activité de fichier exécutable (.exe) et de bibliothèque de liens dynamiques (.dll). Si vous sélectionnez Indicateurs d’appareil, l’activité est traitée uniquement pour les appareils avec Windows 10 build 1809 ou supérieure et vous devez d’abord intégrer les appareils au centre de conformité. Les indicateurs de périphérique incluent également la détection du signal du navigateur pour aider votre organisation à détecter et à agir sur les signaux d’exfiltration pour les fichiers non exécutables qui sont consultables, copiés, partagés ou imprimés dans Microsoft Edge et Google Chrome. Pour plus d’informations sur la configuration des appareils pour l’intégration aux risques internes, voir la section Activer les indicateurs d’appareil et les appareils [intégrés](insider-risk-management-settings.md#OnboardDevices) dans cet article. Pour plus d’informations sur la détection du signal du navigateur, voir Découvrir et configurer la détection du signal du navigateur de gestion des risques internes [(aperçu).](insider-risk-management-browser-support.md)
 - Indicateur de violation de stratégie de sécurité **(prévisualisation)**: il s’agit des indicateurs de Microsoft Defender pour le point de terminaison liés à l’installation de logiciels non désapprouvés ou malveillants ou au contournement des contrôles de sécurité. Pour recevoir des alertes dans la gestion des risques internes, vous devez avoir activé une licence Active Defender for Endpoint et l’intégration des risques internes. Pour plus d’informations sur la configuration de Defender pour Endpoint pour l’intégration de la gestion des risques internes, voir Configurer des fonctionnalités avancées [dans Microsoft Defender pour Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
 - **Indicateurs d’accès physique (aperçu)**: il s’agit des indicateurs de stratégie pour l’accès physique aux biens sensibles. Par exemple, les tentatives d’accès à une zone restreinte dans vos journaux du système de gestion des risques internes peuvent être partagées avec les stratégies de gestion des risques internes. Pour recevoir ces types d’alertes dans la gestion des risques internes, les ressources physiques prioritaires doivent être activées dans la gestion des risques internes et le connecteur de données de [badging](import-physical-badging-data.md) physique configuré. Pour en savoir plus sur la configuration de l’accès physique, consultez la [section Accès physique prioritaire](#priority-physical-assets-preview) de cet article.
-- **Microsoft Cloud App Security (prévisualisation)**: il s’agit des indicateurs de stratégie provenant d’alertes partagées de Sécurité des applications cloud. La détection d’anomalies activée automatiquement dans Sécurité des applications cloud commence immédiatement à détecter et à rassembler les résultats, en ciblant de nombreuses anomalies comportementales au sein de vos utilisateurs et des ordinateurs et périphériques connectés à votre réseau. Pour inclure ces activités dans les alertes de stratégie de gestion des risques internes, sélectionnez un ou plusieurs indicateurs dans cette section. Pour en savoir plus sur Sécurité des applications cloud détection des anomalies et des analyses, voir [Obtenir l’analyse comportementale et la détection des anomalies.](/cloud-app-security/anomaly-detection-policy)
-- Score de risque : il **s’agit notamment** d’augmenter le score de risque pour les activités inhabituelles ou les violations de stratégie passées. L’activation des score de risque augmente les scores de risque et la probabilité d’alertes pour ces types d’activités. Pour les activités inhabituelles, les scores sont élevés si l’activité détectée s’écarte du comportement classique de l’utilisateur. Par exemple, une augmentation significative des téléchargements de fichiers quotidiens. Une activité inhabituelle est présentée comme une augmentation du pourcentage (par exemple, « 100 % au-dessus de l’activité habituelle » ) et aura un impact différent sur le score de risque en fonction de l’activité. Pour les utilisateurs avec des violations de stratégie précédentes, les scores sont élevés si un utilisateur a résolu plusieurs cas précédemment comme une violation de stratégie confirmée. Les marqueurs de score de risque ne peuvent être sélectionnés que si un ou plusieurs indicateurs sont sélectionnés.
+- **Microsoft Cloud App Security (prévisualisation)**: il s’agit des indicateurs de stratégie provenant d’alertes partagées Sécurité des applications cloud. La détection d’anomalies activée automatiquement dans Sécurité des applications cloud commence immédiatement à détecter et à rassembler les résultats, en ciblant de nombreuses anomalies comportementales au sein de vos utilisateurs et des ordinateurs et périphériques connectés à votre réseau. Pour inclure ces activités dans les alertes de stratégie de gestion des risques internes, sélectionnez un ou plusieurs indicateurs dans cette section. Pour en savoir plus sur Sécurité des applications cloud détection des anomalies et des analyses, voir [Obtenir l’analyse comportementale et la détection des anomalies.](/cloud-app-security/anomaly-detection-policy)
+- Score de risque : il **s’agit notamment** d’augmenter le score de risque pour les activités inhabituelles ou les violations de stratégie passées. L’activation des score de risque augmente les scores de risque et la probabilité d’alertes pour ces types d’activités. Pour les activités inhabituelles, les scores sont élevés si l’activité détectée s’écarte du comportement classique de l’utilisateur. Par exemple, une augmentation significative des téléchargements de fichiers quotidiens. Une activité inhabituelle est présentée comme une augmentation du pourcentage (par exemple, « 100 % au-dessus de l’activité habituelle » par exemple) et aura un impact différent sur le score de risque en fonction de l’activité. Pour les utilisateurs avec des violations de stratégie précédentes, les scores sont élevés si un utilisateur a résolu plusieurs cas précédemment comme une violation de stratégie confirmée. Les marqueurs de score de risque ne peuvent être sélectionnés que si un ou plusieurs indicateurs sont sélectionnés.
 
 Dans certains cas, vous pouvez limiter les indicateurs de stratégie de risque interne qui sont appliqués aux stratégies de risques internes de votre organisation. Vous pouvez désactiver les indicateurs de stratégie pour des zones spécifiques en les désactivant de toutes les stratégies de risque internes. Le déclenchement d’événements ne peut pas être modifié pour les modèles de stratégie de risque internes.
 
@@ -87,7 +87,7 @@ Pour activer la surveillance des activités de risque sur les appareils et inclu
 Assurez-vous que les appareils Windows 10 que vous prévoyez de signaler dans la gestion des risques internes répondent à ces exigences.
 
 1. Doit être en cours d’exécution Windows 10 x64 build 1809 ou ultérieure et avoir installé la mise à jour [Windows 10 (os Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) à partir du 20 février 2020.
-2. Le compte d’utilisateur utilisé pour se connecter à Windows 10 appareil doit être un compte Azure Active Directory (AAD) actif. Le Windows 10 peut être [AAD,](/azure/active-directory/devices/concept-azure-ad-join)AAD hybride, joint à Active Directory ou enregistré par AAD.
+2. Le compte d’utilisateur utilisé pour se connecter à Windows 10 appareil doit être un compte Azure Active Directory (AAD) actif. Le Windows 10 peut être [AAD,](/azure/active-directory/devices/concept-azure-ad-join)hybride, AAD joint à Active Directory ou être AAD enregistré.
 3. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison pour surveiller les actions de l’activité de chargement dans le cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Étape 2 : Intégration d’appareils
@@ -109,7 +109,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 
 3. Sélectionnez **Gestion des appareils** pour ouvrir la liste des **Appareils**. La liste est vide tant que vous n’avez pas intégré de périphériques.
 4. Sélectionnez **Intégration** pour lancer le processus d’intégration.
-5. Choisissez la façon dont vous souhaitez  déployer sur ces autres appareils dans la liste des méthodes de déploiement, puis **téléchargez le package.**
+5. Choisissez la façon dont vous souhaitez  déployer sur ces autres appareils à partir de la liste des méthodes de déploiement, puis **téléchargez le package.**
 6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
@@ -182,7 +182,7 @@ Pour définir un niveau de fichier minimal avant que les alertes d’activité s
 
 ### <a name="alert-volume"></a>Volume d’alerte
 
-Les activités des utilisateurs détectées par les stratégies de risque internes se voit attribuer un score de risque spécifique, qui à son tour détermine la gravité de l’alerte (faible, moyenne, élevée). Par défaut, nous allons générer une certaine quantité d’alertes de gravité faible, moyenne et élevée, mais vous pouvez augmenter ou diminuer le volume en fonction de vos besoins. Pour ajuster le volume des alertes pour toutes les stratégies de gestion des risques internes, choisissez l’un des paramètres suivants :
+Les activités des utilisateurs détectées par les stratégies de risque interne se voit attribuer un score de risque spécifique, qui à son tour détermine la gravité de l’alerte (faible, moyenne, élevée). Par défaut, nous allons générer une certaine quantité d’alertes de gravité faible, moyenne et élevée, mais vous pouvez augmenter ou diminuer le volume en fonction de vos besoins. Pour ajuster le volume des alertes pour toutes les stratégies de gestion des risques internes, choisissez l’un des paramètres suivants :
 
 - **Moins d’alertes**: vous verrez toutes les alertes de gravité élevée, moins d’alertes de gravité moyenne et aucune alerte de faible gravité. Ce niveau de paramètre signifie que vous pouvez manquer certains vrais positifs.
 - **Volume par défaut**: vous verrez toutes les alertes de gravité élevée et une quantité équilibrée d’alertes de gravité moyenne et faible.
@@ -201,7 +201,7 @@ En fonction des types de signaux qui vous intéressent, vous pouvez choisir d’
 
 Les alertes de Defender for Endpoint sont importées quotidiennement. En fonction de l’état de triage que vous choisissez, vous pouvez voir plusieurs activités utilisateur pour la même alerte lorsque l’état de triage change dans Defender pour le point de terminaison.
 
-Par exemple, si vous sélectionnez  Nouveau *,* En cours et Résolu pour ce paramètre, lorsqu’une alerte Microsoft Defender pour le point de terminaison est générée et que l’état est Nouveau *,* une activité d’alerte initiale est importée pour l’utilisateur en cas de risque interne. Lorsque l’état de triage Defender pour le point de terminaison passe à En *cours*, une deuxième activité pour cette alerte est importée pour l’utilisateur en cas de risque interne. Lorsque l’état de triage  Final Defender pour le point de terminaison est résolu, une troisième activité de cette alerte est importée pour l’utilisateur à risque interne. Cette fonctionnalité permet aux enquêteurs de suivre la progression des alertes defender pour point de terminaison et de choisir le niveau de visibilité nécessaire à leur examen.
+Par exemple, si vous sélectionnez  Nouveau *,* En cours et Résolu pour ce paramètre, lorsqu’une alerte Microsoft Defender pour le point de terminaison est générée et que l’état est Nouveau *,* une activité d’alerte initiale est importée pour l’utilisateur en cas de risque interne. Lorsque l’état de triage Defender pour le point de terminaison passe à En *cours,* une deuxième activité de cette alerte est importée pour l’utilisateur en cas de risque interne. Lorsque l’état de triage  Final Defender pour le point de terminaison est résolu, une troisième activité de cette alerte est importée pour l’utilisateur à risque interne. Cette fonctionnalité permet aux enquêteurs de suivre la progression des alertes defender pour point de terminaison et de choisir le niveau de visibilité nécessaire à leur examen.
 
 > [!IMPORTANT]
 > Microsoft Defender pour point de terminaison doit être configuré dans votre organisation et vous devez activer Microsoft Defender pour point de terminaison pour l’intégration de la gestion des risques internes dans le Centre de sécurité Microsoft Defender pour importer les alertes de violation de la sécurité. Pour plus d’informations sur la configuration de Microsoft Defender pour point de terminaison pour l’intégration de la gestion des risques internes, consultez [Configurer des fonctionnalités avancées dans Defender pour le point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
@@ -214,7 +214,7 @@ Utilisez Ajouter un domaine pour définir un domaine pour chacun des paramètres
 
 Pour chacun des paramètres de domaine suivants, vous pouvez entrer jusqu’à 500 domaines :
 
-- **Domaines nonallés :** En spécifiant des domaines nonallés, l’activité qui a lieu avec ces domaines aura des *scores* de risque plus élevés. Voici quelques exemples d’activités impliquant le partage de contenu avec quelqu’un (par exemple, l’envoi de messages électroniques à une personne avec une adresse gmail.com) et lorsque les utilisateurs téléchargent du contenu sur un appareil à partir de l’un de ces domaines nonallués.
+- **Domaines nonallés :** En spécifiant des domaines nonallés, l’activité qui a lieu avec ces domaines aura des *scores* de risque plus élevés. Voici quelques exemples d’activités impliquant le partage de contenu avec quelqu’un (par exemple, l’envoi de courriers électroniques à une personne avec une adresse gmail.com) et lorsque les utilisateurs téléchargent du contenu sur un appareil à partir de l’un de ces domaines nonallés.
 - **Domaines autorisés :** Certaines activités liées aux domaines autorisés sont ignorées par vos stratégies et ne génèrent pas d’alertes. Ces activités sont les suivantes :
 
     - Courrier électronique envoyé à des domaines externes
@@ -230,7 +230,7 @@ Pour chacun des paramètres de domaine suivants, vous pouvez entrer jusqu’à 5
 Les informations d’alerte de gestion des risques internes peuvent être exportées vers les services de gestion des événements et des informations de sécurité (SIEM) via le schéma de l’API activité Office 365 gestion des risques [internes.](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) Vous pouvez utiliser les API activité de gestion Office 365 pour exporter des informations d’alerte vers d’autres applications que votre organisation peut utiliser pour gérer ou agréger des informations sur les risques internes. Les informations d’alerte sont exportées et disponibles toutes les 60 minutes via Office 365 API Activité de gestion.
 
 >[!IMPORTANT]
->Pour conserver l’intégrité référence pour les utilisateurs qui ont des alertes ou des cas de risque internes dans Microsoft 365 ou d’autres systèmes, l’anonymisation des noms d’utilisateurs n’est pas conservée pour les alertes exportées. Les alertes exportées affichent les noms d’utilisateur de chaque alerte.
+>Pour maintenir l’intégrité référence des utilisateurs qui ont des alertes ou des cas de risque internes dans Microsoft 365 ou d’autres systèmes, l’anonymisation des noms d’utilisateur n’est pas conservée pour les alertes exportées. Les alertes exportées affichent les noms d’utilisateur de chaque alerte.
 
 Pour utiliser les API pour passer en revue les informations d’alerte de risque interne :
 
@@ -249,13 +249,13 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | AlertType | Type de l’alerte est *Personnalisé*.  |
 | AlertId | GUID de l’alerte. Les alertes de gestion des risques internes sont mutables. À mesure que l’état de l’alerte change, un nouveau journal avec le même ID d’alerte est généré. Ce AlertID peut être utilisé pour corréler les mises à jour d’une alerte. |
 | Catégorie | La catégorie de l’alerte *est InsiderRiskManagement*. Cette catégorie peut être utilisée pour distinguer ces alertes des autres alertes de sécurité & conformité. |
-| Commentaires | Commentaires par défaut pour l’alerte. Les valeurs *sont Nouvelle* alerte (consignée lors de la création d’une alerte) et Alerte mise à jour *(consignée* lorsqu’une alerte est mise à jour). Utilisez alertID pour corréler les mises à jour d’une alerte. |
-| Data | Les données de l’alerte incluent l’ID d’utilisateur unique, le nom d’utilisateur principal et la date et l’heure (UTC) de déclenchement de l’utilisateur dans une stratégie. |
+| Comments | Commentaires par défaut pour l’alerte. Les valeurs *sont Nouvelle alerte* (consignée lors de la création d’une alerte) et Alerte mise à jour (consignée lorsqu’une alerte est mise à jour).  Utilisez alertID pour corréler les mises à jour d’une alerte. |
+| Données | Les données de l’alerte incluent l’ID d’utilisateur unique, le nom d’utilisateur principal et la date et l’heure (UTC) de déclenchement de l’utilisateur dans une stratégie. |
 | Nom | Nom de la stratégie de gestion des risques internes qui a généré l’alerte. |
 | PolicyId | GUID de la stratégie de gestion des risques internes qui a déclenché l’alerte. |
 | Severity | Gravité de l’alerte. Les valeurs *sont Élevée,* *Moyenne* ou *Faible*. |
 | Source | Source de l’alerte. La valeur est *Office 365 security & compliance*. |
-| État | État de l’alerte. Les valeurs sont *Active* *(révision* nécessaire en cas de risque *interne),* Examen *(confirmé* en cas de risque interne), *Résolu* *(résolu* en cas de risque *interne),* Rejeté *(rejeté* en cas de risque interne). |
+| Statut | État de l’alerte. Les valeurs sont *Active* *(révision* nécessaire en cas de risque *interne),* Examen *(confirmé* en cas de risque interne), *Résolu* *(résolu* en cas de risque *interne),* Rejeté *(rejeté* en cas de risque interne). |
 | Version | Version du schéma d’alerte de sécurité et de conformité. |
 
 Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le schéma commun de l Office 365'API Activité [de gestion.](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)
@@ -277,7 +277,7 @@ Les utilisateurs de votre organisation peuvent avoir différents niveaux de risq
 
 Au lieu d’être ouverts à la révision par tous les analystes et enquêteurs, les groupes d’utilisateurs prioritaires peuvent également avoir besoin de restreindre les activités de révision à des utilisateurs spécifiques ou à des groupes de rôles à risque interne. Vous pouvez choisir d’affecter des utilisateurs individuels et des groupes de rôles pour passer en revue les utilisateurs, les alertes, les cas et les rapports pour chaque groupe d’utilisateurs prioritaires. Les groupes d’utilisateurs prioritaires peuvent avoir des autorisations de révision attribuées aux groupes de rôles intégrés De gestion des risques *internes,* analystes de gestion des risques internes et Enquêteurs de gestion des risques internes, un ou plusieurs de ces groupes de rôles, ou à une sélection personnalisée d’utilisateurs. 
 
-Par exemple, vous devez vous protéger contre les fuites de données pour un projet hautement confidentiel dans lequel les utilisateurs ont accès à des informations sensibles. Vous choisissez de créer un groupe d’utilisateurs Project priorité Utilisateurs confidentiels pour les utilisateurs de votre organisation qui travaillent sur ce projet.   En outre, ce groupe d’utilisateurs prioritaire ne doit pas avoir d’utilisateurs, d’alertes, de cas et de rapports associés à un groupe visibles par tous les administrateurs, analystes et enquêteurs de gestion des risques internes par défaut. Dans **Paramètres,** vous créez le groupe Confidentiel *Project* Utilisateurs prioritaires et affectez deux utilisateurs en tant que réviseurs qui peuvent afficher les données liées aux groupes. À l’aide de l’Assistant Stratégie et des *fuites* de données par modèle de stratégie utilisateurs prioritaires, vous créez une stratégie et affectez le groupe d’utilisateurs priorité utilisateurs *confidentiels Project* utilisateurs à la stratégie. Les activités examinées par la stratégie pour les membres du groupe d’utilisateurs priorité confidentiel *Project* Les utilisateurs prioritaires sont plus sensibles aux risques et les activités de ces utilisateurs seront plus susceptibles de générer une alerte et d’avoir des alertes avec des niveaux de gravité plus élevés.
+Par exemple, vous devez vous protéger contre les fuites de données pour un projet hautement confidentiel dans lequel les utilisateurs ont accès à des informations sensibles. Vous choisissez de créer un groupe d’utilisateurs Project priorité Utilisateurs confidentiels pour les utilisateurs de votre organisation qui travaillent sur ce projet.   En outre, ce groupe d’utilisateurs prioritaire ne doit pas avoir d’utilisateurs, d’alertes, de cas et de rapports associés à un groupe visibles par tous les administrateurs, analystes et enquêteurs de gestion des risques internes par défaut. Dans **Paramètres,** vous créez le groupe Confidentiel *Project* Utilisateurs prioritaires et affectez deux utilisateurs en tant que réviseurs qui peuvent afficher les données liées aux groupes. À l’aide de l’Assistant Stratégie et des fuites de  données par modèle de stratégie utilisateurs prioritaires, vous créez une stratégie et affectez le groupe d’utilisateurs prioritaires *Utilisateurs* Project Confidentiel à la stratégie. Les activités examinées par la stratégie pour les membres du groupe d’utilisateurs priorité confidentiel *Project* Les utilisateurs prioritaires sont plus sensibles aux risques et les activités de ces utilisateurs seront plus susceptibles de générer une alerte et d’avoir des alertes avec des niveaux de gravité plus élevés.
 
 ### <a name="create-a-priority-user-group"></a>Créer un groupe d’utilisateurs prioritaire
 
@@ -299,7 +299,7 @@ Pour créer un groupe d’utilisateurs prioritaire, complétez les étapes suiva
 10. Dans la page **Révision,** examinez les paramètres que vous avez choisis pour le groupe d’utilisateurs prioritaire. Sélectionnez **les liens modifier** pour modifier les valeurs de groupe ou sélectionnez **Envoyer** pour créer et activer le groupe d’utilisateurs prioritaire.
 11. Dans la page de confirmation, **sélectionnez Terminé** pour quitter l’Assistant.
 
-### <a name="update-a-priority-user-group"></a>Mettre à jour un groupe d’utilisateurs prioritaires
+### <a name="update-a-priority-user-group"></a>Mettre à jour un groupe d’utilisateurs prioritaire
 
 Pour mettre à jour un groupe d’utilisateurs prioritaires existant, vous utiliserez des contrôles de paramètres dans la **solution** de gestion des risques internes dans le Centre de conformité Microsoft 365. Pour mettre à jour un groupe d’utilisateurs prioritaires, vous devez être membre du groupe de rôles Gestion des risques internes ou Administrateur de la gestion *des* risques internes. 
 
@@ -309,7 +309,7 @@ Pour modifier un groupe d’utilisateurs prioritaires, complétez les étapes su
 2. Sélectionnez la page **Groupes d’utilisateurs prioritaires (prévisualisation).**
 3. Sélectionnez le groupe d’utilisateurs prioritaire que vous souhaitez modifier et **sélectionnez Modifier le groupe.**
 4. Dans la page **Nom et description,** mettez à jour le champ Description si nécessaire. Vous ne pouvez pas mettre à jour le nom du groupe d’utilisateurs prioritaire. Sélectionnez **Suivant** pour continuer.
-5. Dans la page **Choisir des membres,** ajoutez de nouveaux membres au groupe à l’aide du **contrôle Choisir les membres.** Pour supprimer un utilisateur du groupe, sélectionnez le « X » en côté de l’utilisateur que vous souhaitez supprimer. Sélectionnez **Suivant** pour continuer.
+5. Dans la page **Choisir des membres,** ajoutez de nouveaux membres au groupe à l’aide du contrôle Choisir **des membres.** Pour supprimer un utilisateur du groupe, sélectionnez le « X » en côté de l’utilisateur que vous souhaitez supprimer. Sélectionnez **Suivant** pour continuer.
 6. Dans **la** page Choisir qui peut afficher ce groupe, ajoutez ou supprimez des utilisateurs ou des groupes de rôles qui peuvent passer en revue des utilisateurs, des alertes, des cas et des rapports pour le groupe d’utilisateurs prioritaire.
 7. Sélectionnez **Suivant** pour continuer.
 8. Dans la page **Révision,** examinez les paramètres de mise à jour que vous avez choisis pour le groupe d’utilisateurs prioritaire. Sélectionnez **les liens Modifier** pour modifier l’une des valeurs du groupe ou **sélectionnez Envoyer** pour mettre à jour le groupe d’utilisateurs prioritaires.
@@ -335,7 +335,7 @@ L’identification de l’accès aux ressources physiques prioritaires et la mis
 
 Une fois que les ressources physiques de priorité sont activées et que le connecteur de données de [badging](import-physical-badging-data.md) physique est configuré, la gestion des risques internes intègre les signaux de vos systèmes de contrôle physique et d’accès à d’autres activités de risque utilisateur. En examinant les modèles de comportement sur les systèmes d’accès physique et en corrélant ces activités avec d’autres événements de risque internes, la gestion des risques internes peut aider les enquêteurs et les analystes de conformité à prendre des décisions de réponse plus éclairées pour les alertes. L’accès aux ressources physiques prioritaires est marqué et identifié dans les informations différemment de l’accès aux ressources non prioritaires.
 
-Par exemple, votre organisation dispose d’un système de mauvaise gestion pour les utilisateurs qui surveille et approuve l’accès physique aux zones de projet normales et sensibles. Plusieurs utilisateurs travaillent sur un projet sensible et ces utilisateurs reviennent à d’autres zones de votre organisation une fois le projet terminé. Lorsque le projet sensible est sur le point d’être terminé, vous souhaitez vous assurer que le travail du projet reste confidentiel et que l’accès aux zones de projet est étroitement contrôlé.
+Par exemple, votre organisation dispose d’un système de mauvaise gestion pour les utilisateurs qui surveille et approuve l’accès physique aux zones de projet normales de travail et sensibles. Plusieurs utilisateurs travaillent sur un projet sensible et ces utilisateurs reviennent à d’autres zones de votre organisation une fois le projet terminé. Lorsque le projet sensible est sur le point d’être terminé, vous souhaitez vous assurer que le travail du projet reste confidentiel et que l’accès aux zones de projet est étroitement contrôlé.
 
 Vous choisissez d’activer le connecteur de données de badging physique dans Microsoft 365 pour importer les informations d’accès à partir de votre système de mauvaise gestion physique et spécifier les ressources physiques prioritaires dans la gestion des risques internes. En important des informations à partir de votre système de corruption et en corrélant les informations d’accès physique avec d’autres activités de risque identifiées dans la gestion des risques internes, vous remarquez qu’un des utilisateurs du projet accède aux bureaux du projet après des heures de travail normales et exporte également de grandes quantités de données vers un service de stockage cloud personnel à partir de leur zone de travail normale. Cette activité d’accès physique associée à l’activité en ligne peut pointer vers un vol possible de données et les enquêteurs et analystes de conformité peuvent prendre les mesures appropriées selon les circonstances de cet utilisateur.
 
@@ -343,7 +343,7 @@ Vous choisissez d’activer le connecteur de données de badging physique dans M
 
 ### <a name="configure-priority-physical-assets"></a>Configurer les ressources physiques prioritaires
 
-Pour configurer les ressources physiques prioritaires, vous devez configurer le connecteur de gestion des problèmes physiques et utiliser les contrôles de paramètre dans la **solution** de gestion des risques internes dans le Centre de conformité Microsoft 365. Pour configurer les ressources physiques prioritaires, vous  devez être membre du groupe de rôles Gestion des risques internes ou Administrateur de la gestion des risques *internes.*
+Pour configurer les ressources physiques prioritaires, vous devez configurer le connecteur de gestion des problèmes physiques et utiliser des contrôles de paramètre dans la **solution** de gestion des risques internes dans le Centre de conformité Microsoft 365. Pour configurer les ressources physiques prioritaires, vous  devez être membre du groupe de rôles Gestion des risques internes ou Administrateur de la gestion des risques *internes.*
 
 Pour configurer les ressources physiques prioritaires, complétez les étapes suivantes :
 
@@ -352,7 +352,7 @@ Pour configurer les ressources physiques prioritaires, complétez les étapes su
     > [!IMPORTANT]
     > Pour que les stratégies de gestion des risques internes utilisent et corrélent les données de signal liées aux utilisateurs qui quittent et se terminent par des données d’événement à partir de vos plateformes de contrôle physique et d’accès, vous devez également configurer le connecteur RH Microsoft 365. Si vous activez le connecteur de badging physique sans activer le connecteur RH Microsoft 365, les stratégies de gestion des risques internes ne traitera que les événements des activités d’accès physique pour les utilisateurs de votre organisation.
 
-2. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez à **Gestion** des risques internes et sélectionnez **Paramètres** de risque internes  >  **Priorité des ressources physiques.**
+2. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez à **La** gestion des risques internes et sélectionnez **Paramètres** de risque internes  >  **Priorité des ressources physiques.**
 3. Dans la **page** Ressources physiques de priorité, vous pouvez ajouter manuellement les ID d’actifs physiques que vous souhaitez surveiller pour les événements de bien importés par le connecteur de badging physique ou importer un fichier .csv de tous les ID de biens physiques importés par le connecteur de badging physique : a) Pour ajouter manuellement des ID de ressources physiques, choisissez Ajouter des ressources physiques **prioritaires,**  entrez un ID de bien physique, puis sélectionnez **Ajouter.** Entrez d’autres ID de ressources physiques, puis **sélectionnez** Ajouter des ressources physiques de priorité pour enregistrer tous les biens entrés.
     b) To add a list of physical asset IDs from a .csv file, choose **Import priority physical assets**. Dans la boîte de dialogue Explorateur de fichiers, sélectionnez le fichier .csv que vous souhaitez importer, puis sélectionnez **Ouvrir.** Les ID de ressources physiques des fichiers .csv sont ajoutés à la liste.
 4. Accédez à la page **Indicateurs de stratégie** dans **Paramètres**.
@@ -368,20 +368,20 @@ Pour supprimer un bien physique de priorité existant, vous utiliserez des contr
 
 Pour supprimer un bien physique prioritaire, vous devez effectuer les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez à **Gestion** des risques internes et sélectionnez **Paramètres** de risque internes  >  **Priorité des ressources physiques.**
+1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez à **La** gestion des risques internes et sélectionnez **Paramètres** de risque internes  >  **Priorité des ressources physiques.**
 2. Dans la page **Ressources physiques de priorité,** sélectionnez le bien que vous souhaitez supprimer.
 3. Sélectionnez **Supprimer** dans le menu Action pour supprimer le bien.
 
-## <a name="power-automate-flows-preview"></a>Power Automate flux (prévisualisation)
+## <a name="power-automate-flows-preview"></a>Power Automate flux de données (prévisualisation)
 
-[Microsoft Power Automate](/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux à partir de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez Power Automate de gestion des risques internes, vous pouvez automatiser des tâches importantes pour les cas et les utilisateurs. Vous pouvez configurer des flux Power Automate pour récupérer des informations sur les utilisateurs, les alertes et les cas, et partager ces informations avec les parties prenantes et d’autres applications, ainsi qu’automatiser les actions de gestion des risques internes, telles que la publication dans des notes de cas. Power Automate flux sont applicables pour les cas et tout utilisateur dans l’étendue d’une stratégie.
+[Microsoft Power Automate](/power-automate/getting-started) est un service de flux de travail qui automatise les actions entre les applications et les services. En utilisant des flux à partir de modèles ou créés manuellement, vous pouvez automatiser les tâches courantes associées à ces applications et services. Lorsque vous activez Power Automate de gestion des risques internes, vous pouvez automatiser des tâches importantes pour les cas et les utilisateurs. Vous pouvez configurer des flux Power Automate pour récupérer des informations sur les utilisateurs, les alertes et les cas, et partager ces informations avec les parties prenantes et d’autres applications, et automatiser les actions de gestion des risques internes, telles que la publication dans des notes de cas. Power Automate flux sont applicables pour les cas et tout utilisateur dans l’étendue d’une stratégie.
 
 Les clients titulaires Microsoft 365 abonnements qui incluent la gestion des risques internes n’ont pas besoin de licences Power Automate supplémentaires pour utiliser les modèles recommandés de gestion des risques internes Power Automate. Ces modèles peuvent être personnalisés pour prendre en charge votre organisation et couvrir les principaux scénarios de gestion des risques internes. Si vous choisissez d’utiliser des fonctionnalités Power Automate premium dans ces modèles, de créer un modèle personnalisé à l’aide du connecteur de conformité Microsoft 365 ou d’utiliser des modèles Power Automate pour d’autres domaines de conformité dans Microsoft 365, vous aurez peut-être besoin de plus de licences Power Automate.
 
 Les modèles Power Automate suivants sont fournis aux clients pour prendre en charge l’automatisation des processus pour les utilisateurs et les cas de gestion des risques internes :
 
 - Informez les utilisateurs lorsqu’ils sont ajoutés à une stratégie de risque interne : ce modèle est pour les organisations qui ont des stratégies internes, la confidentialité ou des exigences réglementaires que les utilisateurs doivent être avertis **lorsqu’ils** sont soumis à des stratégies de gestion des risques internes. Lorsque ce flux est configuré et sélectionné pour un utilisateur dans la **page** Utilisateurs, les utilisateurs et leurs responsables sont envoyés par courrier électronique lorsque l’utilisateur est ajouté à une stratégie de gestion des risques internes. Ce modèle prend également en charge la mise à jour d’une liste SharePoint hébergée sur un site SharePoint pour vous aider à suivre les détails des messages de notification tels que la date/l’heure et le destinataire du message. Si vous avez choisi d’anonymiser les utilisateurs dans les paramètres de confidentialité, les flux **créés** à partir de ce modèle ne fonctionneront pas comme prévu afin que la confidentialité de l’utilisateur soit conservée. Power Automate flux à l’aide de ce modèle sont disponibles dans le tableau de bord **Utilisateurs.**
-- Demander des informations auprès des ressources humaines ou de l’entreprise sur un utilisateur dans un cas de risque interne : lors de l’action sur un cas, les analystes et enquêteurs des risques internes peuvent avoir besoin de consulter les ressources humaines ou d’autres parties prenantes pour comprendre le contexte des activités du cas. Lorsque ce flux est configuré et sélectionné pour un cas, les analystes et enquêteurs envoient un message électronique aux parties prenantes et aux ressources humaines configurées pour ce flux. Chaque destinataire reçoit un message avec des options de réponse pré-configurées ou personnalisables. Lorsque les destinataires sélectionnent une option de réponse, la réponse est enregistrée en tant que note de cas et inclut les informations de destinataire et de date/heure. Si vous avez choisi d’anonymiser les utilisateurs dans les paramètres de confidentialité, les flux **créés** à partir de ce modèle ne fonctionneront pas comme prévu afin que la confidentialité de l’utilisateur soit conservée. Power Automate flux à l’aide de ce modèle sont disponibles dans le tableau de bord **Cas.**
+- Demander des informations auprès des ressources humaines ou de l’entreprise sur un utilisateur dans un cas de risque interne : lorsque vous agissez sur un cas, les analystes et enquêteurs des risques internes peuvent avoir besoin de consulter les ressources humaines ou d’autres parties prenantes pour comprendre le contexte des activités du cas. Lorsque ce flux est configuré et sélectionné pour un cas, les analystes et enquêteurs envoient un message électronique aux parties prenantes et aux ressources humaines configurées pour ce flux. Chaque destinataire reçoit un message avec des options de réponse pré-configurées ou personnalisables. Lorsque les destinataires sélectionnent une option de réponse, la réponse est enregistrée en tant que note de cas et inclut les informations de destinataire et de date/heure. Si vous avez choisi d’anonymiser les utilisateurs dans les paramètres de confidentialité, les flux **créés** à partir de ce modèle ne fonctionneront pas comme prévu afin que la confidentialité de l’utilisateur soit conservée. Power Automate flux à l’aide de ce modèle sont disponibles dans le tableau de bord **Cas.**
 - **Avertir le responsable lorsqu’un utilisateur** a une alerte de risque interne : certaines organisations peuvent avoir besoin d’une notification de gestion immédiate lorsqu’un utilisateur a une alerte de gestion des risques internes. Lorsque ce flux est configuré et sélectionné, le responsable de l’utilisateur du cas est envoyé un message électronique avec les informations suivantes sur toutes les alertes de cas :
     - Stratégie applicable pour l’alerte
     - Date/heure de l’alerte
@@ -394,17 +394,17 @@ Les modèles Power Automate suivants sont fournis aux clients pour prendre en ch
 
 Pour créer un flux Power Automate à partir d’un modèle de gestion des risques internes recommandé, vous allez utiliser les contrôles de paramètres dans la **solution** de gestion des risques internes dans le Centre de conformité Microsoft 365 ou l’option Gérer les flux **Power Automate** à partir du contrôle **Automatiser** lorsque vous travaillez directement dans le **Tableaux de** bord Cas **ou Utilisateurs.**
 
-Pour créer un flux Power Automate dans la zone des paramètres,  vous devez  être membre du groupe de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes. Pour créer un flux Power Automate avec l’option Gérer Power Automate **flux,** vous devez être membre d’au moins un groupe de rôles de gestion des risques internes.
+Pour créer un flux Power Automate dans la zone des paramètres,  vous devez  être membre du groupe de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes. Pour créer un flux Power Automate  avec l’option Gérer les flux Power Automate, vous devez être membre d’au moins un groupe de rôles de gestion des risques internes.
 
 Pour créer un flux de Power Automate à partir d’un modèle de gestion des risques internes recommandé, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com/)sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux,** sélectionnez un modèle recommandé dans les **modèles** de gestion des risques internes que vous souhaitez peut-être voir dans la section de la page.
 3. Le flux répertorie les connexions incorporées nécessaires au flux et note si les états de connexion sont disponibles. Si nécessaire, mettez à jour les connexions qui ne sont pas affichées comme disponibles. Cliquez sur **Continuer**.
 4. Par défaut, les flux recommandés sont pré-configurés avec les champs de données de service Microsoft 365 et de gestion des risques internes recommandés requis pour effectuer la tâche affectée au flux. Si nécessaire, personnalisez les composants de flux à l’aide du contrôle Afficher les **options** avancées et en configurant les propriétés disponibles pour le composant de flux.
 5. Si nécessaire, ajoutez d’autres étapes au flux en sélectionnant le **bouton Nouvelle étape.** Dans la plupart des cas, cela ne doit pas être nécessaire pour les modèles par défaut recommandés.
 6. Sélectionnez **Enregistrer le** brouillon pour enregistrer le flux pour une configuration supplémentaire ou **sélectionnez Enregistrer** pour terminer la configuration du flux.
-7. Sélectionnez **Fermer** pour revenir à la page **Power Automate flux.** Le nouveau modèle est répertorié sous  la forme d’un flux sous les onglets Mes flux et est automatiquement disponible à partir du contrôle de listes de listes d’attente **Automatiser** lorsque vous travaillez avec des cas de gestion des risques internes pour l’utilisateur qui crée le flux.
+7. Sélectionnez **Fermer** pour revenir à la page **Power Automate flux.** Le nouveau modèle sera répertorié sous  la forme d’un flux dans les onglets Mes flux et est automatiquement disponible à partir du contrôle de listes d’attente **Automatiser** lorsque vous travaillez avec des cas de gestion des risques internes pour l’utilisateur qui crée le flux.
 
 > [!IMPORTANT]
 > Si d’autres utilisateurs de votre organisation ont besoin d’accéder au flux, le flux doit être partagé.
@@ -436,7 +436,7 @@ Pour partager un flux Power Automate dans la zone des paramètres,  vous devez  
 
 Pour partager un flux de Power Automate, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux,** sélectionnez l’onglet Mes **flux ou** **Flux d’équipe.**
 3. Sélectionnez le flux à partager, puis **sélectionnez Partager dans** le menu options de flux.
 4. Sur la page de partage de flux, entrez le nom de l’utilisateur ou du groupe que vous souhaitez ajouter en tant que propriétaire du flux.
@@ -446,11 +446,11 @@ Pour partager un flux de Power Automate, complétez les étapes suivantes :
 
 Pour modifier un flux, vous allez utiliser les contrôles de paramètres de la **solution** de gestion des risques internes dans le  Centre de conformité Microsoft 365 ou l’option Gérer les flux **Power Automate** à partir du contrôle **Automatiser** lorsque vous travaillez directement dans les tableaux de bord Cas ou **Utilisateurs.**
 
-Pour modifier un flux Power Automate dans la zone des paramètres, vous  devez être membre du groupe de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes.  Pour modifier un flux Power Automate à l’aide de l’option Gérer **Power Automate flux,** vous devez être membre d’au moins un groupe de rôles de gestion des risques internes.
+Pour modifier un flux Power Automate dans la zone paramètres,  vous devez  être membre du groupe de rôles Gestion des risques internes ou Administrateur de la gestion des risques internes. Pour modifier un flux Power Automate à l’aide de l’option Gérer Power Automate **flux,** vous devez être membre d’au moins un groupe de rôles de gestion des risques internes.
 
 Pour modifier un flux de Power Automate, Power Automate les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux,** sélectionnez un flux à modifier et sélectionnez **Modifier** dans le menu de contrôle de flux.
 3. Sélectionnez **les éléments de Paramètres** pour modifier un paramètre de composant de flux ou supprimer des  >   **ellipses** pour supprimer un composant  >   de flux.
 4. Sélectionnez **Enregistrer,** **puis Fermez** pour terminer la modification du flux.
@@ -463,7 +463,7 @@ Pour supprimer un flux Power Automate dans la zone des paramètres,  vous devez 
 
 Pour supprimer un flux de Power Automate, vous devez effectuer les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez **Gestion** des risques internes et sélectionnez **Paramètres** des risques internes  >  **Power Automate flux.** Vous pouvez également accéder à partir des pages de **tableaux** de bord Cas ou **Utilisateurs** en choisissant **Automatiser**  >  **Power Automate flux.**
 2. Dans la page **Power Automate flux,** sélectionnez un flux à supprimer et sélectionnez **Supprimer** dans le menu de contrôle de flux.
 3. Dans la boîte de dialogue de confirmation de suppression, sélectionnez **Supprimer** pour supprimer le flux ou sélectionnez **Annuler** pour quitter l’action de suppression.
 
@@ -475,13 +475,13 @@ Les analystes et enquêteurs de conformité peuvent facilement utiliser Microsof
 - Partager et stocker en toute sécurité des fichiers et des preuves liés à des cas individuels
 - Suivre et examiner les activités de réponse des analystes et des enquêteurs
 
-Une Microsoft Teams est activée pour la gestion des risques internes, une équipe Microsoft Teams est créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Par défaut, l’équipe inclut automatiquement tous les membres des groupes de rôles Insider *Risk Management,* *Insider Risk Management Analysts* et Insider Risk Management Investigators (jusqu’à 100 *utilisateurs* initiaux). Des collaborateurs d’organisation supplémentaires peuvent être ajoutés à l’équipe après sa création et selon les cas. Pour les cas existants créés avant d’activer Microsoft Teams, les analystes et enquêteurs peuvent choisir de créer une équipe Microsoft Teams lorsque vous travaillez dans un cas si nécessaire.  Une fois que vous avez résolu le cas associé dans la gestion des risques internes, l’équipe est automatiquement archivée (déplacée vers masquée et en lecture seule).
+Une Microsoft Teams est activée pour la gestion des risques internes, une équipe Microsoft Teams dédiée est créée chaque fois qu’une alerte est confirmée et qu’un cas est créé. Par défaut, l’équipe inclut automatiquement tous les membres des groupes de rôles Insider *Risk Management,* *Insider Risk Management Analysts* et Insider Risk Management Investigators (jusqu’à 100 *utilisateurs* initiaux). Des collaborateurs d’organisation supplémentaires peuvent être ajoutés à l’équipe après sa création et selon les cas. Pour les cas existants créés avant d’activer Microsoft Teams, les analystes et enquêteurs peuvent choisir de créer une équipe Microsoft Teams lorsque vous travaillez dans un cas si nécessaire.  Une fois que vous avez résolu le cas associé dans la gestion des risques internes, l’équipe est automatiquement archivée (déplacée vers masquée et en lecture seule).
 
 Pour plus d’informations sur l’utilisation des équipes et des canaux dans Microsoft Teams, voir vue d’ensemble des équipes et des canaux [dans Microsoft Teams](/MicrosoftTeams/teams-channels-overview).
 
 L’activation Microsoft Teams prise en charge des cas est rapide et facile à configurer. Pour activer Microsoft Teams gestion des risques internes, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez aux paramètres de risques internes **de gestion** des  >  **risques** internes.
+1. In the [Centre de conformité Microsoft 365](https://compliance.microsoft.com), go to **Insider risk management** Insider risk  >  **settings**.
 2. Sélectionnez **la Microsoft Teams** page.
 3. Activez Microsoft Teams’intégration pour la gestion des risques internes.
 4. Sélectionnez **Enregistrer** pour configurer et quitter.
@@ -507,7 +507,7 @@ Selon le nombre d’utilisateurs affectés à des groupes de rôles de gestion d
 
 L’analyse des risques internes vous permet d’effectuer une évaluation des risques internes potentiels au sein de votre organisation sans aucune configuration de stratégie des risques internes. Cette évaluation peut permettre à votre organisation d’identifier des zones potentielles plus élevées de risque utilisateur et vous aider à déterminer le type et l’étendue des stratégies de gestion des risques internes que vous pouvez envisager de configurer. Les analyses d’analyse offrent les avantages suivants pour votre organisation :
 
-- Facile à configurer : pour commencer à utiliser les analyses d’analyse, vous pouvez sélectionner Exécuter l’analyse lorsque vous y êtes invité par la recommandation d’analyse ou passer à l’analyse des **paramètres** de risque insider et activer  >   l’analyse.
+- Facile à configurer : pour commencer à utiliser les analyses d’analyse, vous pouvez sélectionner Exécuter l’analyse lorsque vous y êtes invité par la recommandation d’analyse ou passer à l’analyse des **paramètres** des risques internes et activer  >   l’analyse.
 - Exigences de confidentialité minimales : les résultats de l’analyse et les informations sont renvoyés en tant qu’activité utilisateur rendue anonyme, les noms d’utilisateur individuels ne sont pas identifiables par les réviseurs.
 - Comprenez les risques potentiels par le biais d’informations consolidées : les résultats de l’analyse peuvent vous aider à identifier rapidement les zones de risque potentielles pour vos utilisateurs et la stratégie la mieux à même d’atténuer ces risques.
 
@@ -520,7 +520,7 @@ L’analyse recherche les événements d’activité à risque provenant de plus
 - **Azure Active Directory**: inclus dans toutes les analyses, Azure Active Directory’historique permet d’identifier les activités à risque associées aux utilisateurs avec des comptes d’utilisateur supprimés.
 - **Microsoft 365 connecteur** de données RH : s’ils sont configurés, les événements de connecteur RH permettent d’identifier les activités à risque associées aux utilisateurs qui ont des dates de résiliation anticipées ou à venir.
 
-Les analyses des analyses sont basées sur les mêmes signaux d’activité de risque utilisés par les stratégies de gestion des risques internes et signalent les résultats en fonction des activités des utilisateurs à une seule et de la séquence. Toutefois, l’évaluation des risques pour l’analyse est basée sur 30 jours d’activité au plus, tandis que les stratégies de risque internes utilisent l’activité quotidienne pour obtenir des informations. Lorsque vous activez et exécutez l’analyse pour la première fois dans votre organisation, les résultats de l’analyse s’offrent à vous pendant un jour. Si vous laissez l’analyse activée, vous verrez les résultats de chaque analyse quotidienne ajoutés aux rapports d’analyse pour une plage maximale des 30 jours d’activité précédents.
+Les analyses des analyses sont basées sur les mêmes signaux d’activité de risque utilisés par les stratégies de gestion des risques internes et signalent les résultats en fonction des activités d’utilisateurs simples et séquentaux. Toutefois, l’évaluation des risques pour l’analyse est basée sur 30 jours d’activité au plus, tandis que les stratégies de risque internes utilisent l’activité quotidienne pour obtenir des informations. Lorsque vous activez et exécutez l’analyse pour la première fois dans votre organisation, les résultats de l’analyse s’offrent à vous pendant un jour. Si vous laissez l’analyse activée, vous verrez les résultats de chaque analyse quotidienne ajoutés aux rapports d’analyse pour une plage maximale des 30 jours d’activité précédents.
 
 ### <a name="enable-analytics-and-start-your-scan"></a>Activer l’analyse et démarrer votre analyse
 
@@ -567,7 +567,7 @@ Les notifications d’administrateur envoient automatiquement une notification p
 
 Si vous préférez désactiver les notifications d’administrateur, complétez les étapes suivantes :
 
-1. Dans la [Centre de conformité Microsoft 365](https://compliance.microsoft.com), allez aux paramètres de risques internes **de gestion** des  >  **risques** internes.
+1. In the [Centre de conformité Microsoft 365](https://compliance.microsoft.com), go to **Insider risk management** Insider risk  >  **settings**.
 2. Sélectionnez la page **Notifications de l’administrateur.**
 3. Clear the **Send a notification email when the first alert is generated for a new policy** checkbox.
 4. Sélectionnez **Enregistrer** pour configurer et quitter.

@@ -3,7 +3,7 @@ title: Explorateur de contenu de gestion des risques internes
 description: En savoir plus sur l’Explorateur de contenu de gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 30600241881ccb4203c3ea1015d8c54a680458ff
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d60726b7fbf68ecbeb8af2d40c4c18e2bb9aaa7c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190736"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335901"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorateur de contenu de gestion des risques internes
 
@@ -53,7 +53,7 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente de c
 | **ID de famille** | L’ID de famille rassemble tous les éléments ; pour le courrier électronique, cette colonne inclut le message et toutes les pièces jointes ; pour les documents, cette colonne inclut le document et tous les éléments incorporés. |
 | **Classe de fichier** | Pour le contenu de SharePoint et OneDrive : **Document**; pour le contenu de Exchange : **e-mail** ou **pièce jointe**. |
 | **ID de fichier** | Identificateur de document unique dans le cas. |
-| **Icône de type de fichier** | Extension d’un fichier ; par exemple, docx, one, pptx ou xlsx. Ce champ est la même propriété que la propriété de site FileExtension. |
+| **Icône de type de fichier** | Extension d’un fichier ; par exemple, docx, 1, pptx ou xlsx. Ce champ est la même propriété que la propriété de site FileExtension. |
 | **ID** | Identificateur GUID du fichier. |
 | **ID non modifiable** | ID non permutable tel qu’il est stocké dans Office 365. |
 | **Type d’inclusion** | Type d’inclusion calculé pour **l’analyse : 0** - non inclus ; **1** - inclus ; **2** - inclus moins ; **3** : copie incluse. |

@@ -3,7 +3,7 @@ title: Stratégies de gestion des risques internes
 description: Découvrez les stratégies de gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ce78ca3459088907b497c540f438fdc960d3d350
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9bc29db2ffd4914093b7045241395732f49a8b16
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204286"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335645"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -287,7 +287,7 @@ Achevez les étapes suivantes pour créer une stratégie :
     - **Étiquette de confidentialité** : sélectionnez **Ajouter une étiquette de confidentialité**, puis les étiquettes que vous souhaitez classer. Par exemple, *« Confidentiel »* et *« Secret »*.
 
     >[!NOTE]
-    >Les utilisateurs qui configurent la stratégie et sélectionnent des sites Share Point prioritaires peuvent sélectionner SharePoint sites à qui ils sont autorisés à accéder. Si SharePoint sites ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur avec les autorisations requises peut sélectionner les sites pour la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
+    >Les utilisateurs qui configurent la stratégie et sélectionnent des sites Share Point prioritaires peuvent sélectionner SharePoint sites à qui ils ont l’autorisation d’accéder. Si SharePoint sites ne sont pas disponibles pour la sélection dans la stratégie par l’utilisateur actuel, un autre utilisateur avec les autorisations requises peut sélectionner les sites pour la stratégie ultérieurement ou l’utilisateur actuel doit avoir accès aux sites requis.
 
 12. Sélectionnez **Suivant** pour continuer.
 13. Sur la page **Indicateurs et événements déclencheurs**, les [indicateurs](insider-risk-management-settings.md#indicators) définis s’affichent comme disponibles sur la page **Paramètres de risque interne** > **Indicateurs**. Si vous avez sélectionné le modèle *Fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP à partir de la liste déroulante **Stratégie DLP** pour activer les indicateurs déclencheurs pour la stratégie ou sélectionner l’événement déclencheur intégré.

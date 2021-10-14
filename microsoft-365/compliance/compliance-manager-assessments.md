@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: a425f144e2c98866d32f14d7a16829342c14ef74
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 536b153a847ef038c4dee25d3dcd23aa638049ee
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223428"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335925"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -54,7 +57,7 @@ Voici des exemples de deux groupes et leurs évaluations sous-jacentes :
   - ISO 27001:2013
   - ISO 27018:2014
 
-Différentes évaluations au sein d’un ou de plusieurs groupes peuvent partager des actions d’amélioration. Les actions d’amélioration peuvent être des modifications apportées dans des solutions techniques mappées à votre client, telles que l’authentification à deux facteurs, ou des actions non techniques que vous effectuez en dehors du système, telles que l’élaboration d’une nouvelle stratégie d’espace de travail. Toutes les mises à jour détaillées ou d’état apportées à une action d’amélioration technique seront prises en jeu par les évaluations de tous les groupes. Les mises à jour des actions d’amélioration non techniques sont reconnues par les évaluations au sein du groupe où vous les appliquez. Cela vous permet d’implémenter une action d’amélioration et de répondre simultanément à plusieurs exigences.
+Différentes évaluations au sein d’un ou de plusieurs groupes peuvent partager des actions d’amélioration. Les actions d’amélioration peuvent être des modifications apportées dans des solutions techniques mappées à votre client, telles que l’authentification à deux facteurs, ou des actions non techniques que vous effectuez en dehors du système, telles que l’élaboration d’une nouvelle stratégie d’espace de travail. Les mises à jour des détails ou de l’état que vous a faites d’une action d’amélioration technique seront prises en sur mesure par les évaluations de tous les groupes. Les mises à jour des actions d’amélioration non techniques sont reconnues par les évaluations au sein du groupe où vous les appliquez. Cela vous permet d’implémenter une action d’amélioration et de répondre simultanément à plusieurs exigences.
 
 ### <a name="create-a-group"></a>Créer un groupe
 
@@ -74,7 +77,7 @@ Vous pouvez créer un groupe lors de la création d’une évaluation. Les group
 
 ## <a name="create-assessments"></a>Créer des évaluations
 
-Pour créer une évaluation, vous allez utiliser un Assistant pour sélectionner le modèle qu’il doit utiliser et définir les propriétés de l’évaluation. Les modèles contiennent les contrôles et les recommandations d’action pour l’évaluation, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que tous les modèles premium supplémentaires que vous avez achetés. Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 et une version universelle qui peut être adaptée à d’autres produits que vous utilisez. Pour en savoir plus sur les modèles, voir [Utiliser des modèles d’évaluation.](compliance-manager-templates.md)
+Pour créer une évaluation, vous allez utiliser un Assistant pour sélectionner le modèle qu’il doit utiliser et définir les propriétés de l’évaluation. Les modèles contiennent les contrôles et les recommandations d’action pour l’évaluation, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que les modèles premium supplémentaires que vous avez achetés. Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 et une version universelle qui peut être adaptée à d’autres produits que vous utilisez. Pour en savoir plus sur les modèles, voir [Utiliser des modèles d’évaluation.](compliance-manager-templates.md)
 
 > [!NOTE]
 > Seuls les utilisateurs qui détiennent un rôle d’administrateur général, d’administration du Gestionnaire de conformité ou d’évaluateur du Gestionnaire de conformité peuvent créer et modifier des évaluations. En savoir plus sur [les rôles et les autorisations.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
@@ -161,7 +164,7 @@ Lorsqu’une mise à jour est disponible pour une évaluation, vous verrez une n
 
 ### <a name="what-causes-an-update"></a>Causes d’une mise à jour
 
-Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres instructions basées sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié),](compliance-manager-templates-modify.md)ainsi que de Microsoft.
+Une mise à jour de l’évaluation se produit lorsqu’il existe des modifications de modèle sous-jacentes qui ont une incidence sur le score. Les modifications peuvent impliquer l’ajustement du mappage des contrôles ou d’autres conseils basés sur les modifications réglementaires ou les modifications apportées aux produits. Les mises à jour d’évaluation peuvent provenir de votre organisation (par exemple, lorsqu’un modèle personnalisé est [modifié),](compliance-manager-templates-modify.md)ainsi que de Microsoft.
 
 Si Microsoft met à jour un modèle gestionnaire de conformité que vous avez étendu, votre évaluation héritera de ces mises à jour une fois que vous les aurez acceptées. Votre évaluation conserve les attributs supplémentaires que vous avez appliqués à l’évaluation lorsque vous l’avez étendue.
 
@@ -174,7 +177,7 @@ Les évaluations personnalisées que vous créez ne reçoivent aucune mise à jo
 
 La page détails de l’évaluation affiche également une **étiquette de** mise à jour en attente en plus de l’évaluation avec une mise à jour. Sélectionnez cette évaluation pour obtenir sa page de détails.
 
-Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la mise** à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
+Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la** mise à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
 
 La page de détails de l’évaluation peut également lister les actions d’amélioration qui ont une **étiquette** de mise à jour en attente à côté d’elles. Ces mises à jour sont pour des modifications spécifiques apportées aux actions d’amélioration elles-mêmes et doivent être acceptées séparément. Pour en [savoir plus, consultez](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) Accepter les mises à jour pour les actions d’amélioration.
 
@@ -188,7 +191,7 @@ Après avoir sélectionné la mise à **jour révision** dans la page détails d
 - Présentation de la mise à jour
 - Détails spécifiques sur les modifications, y compris l’impact sur votre score de conformité, la progression vers la fin de l’évaluation et le nombre spécifique de modifications apportées aux actions et contrôles d’amélioration.
 
-La sélection du **lien** du modèle Mis à jour permet de télécharger un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
+La sélection du **lien** du modèle mis à jour permet de télécharger un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
 
 Pour accepter la mise à jour et apporter les modifications à votre évaluation, **sélectionnez Accepter la mise à jour.** Les modifications acceptées sont permanentes.
 
@@ -212,7 +215,7 @@ Le rapport est un instantané de l’évaluation à la date et à l’heure de l
 
 La suppression d’une évaluation la supprime de la liste de votre page d’évaluations. Notez ces points importants sur la suppression des évaluations :
 
-- **La suppression d’une évaluation est permanente . vous ne pouvez pas la récupérer.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
+- **La suppression d’une évaluation est permanente . vous ne pouvez pas l’obtenir.** Si vous souhaitez utiliser à nouveau la même évaluation, vous devez la créer à nouveau.
 - Si les actions d’amélioration de l’évaluation n’apparaissent dans aucune autre évaluation, elles seront supprimées lors de la suppression de l’évaluation.
 - Nous vous [recommandons d’exporter un rapport de](#export-an-assessment-report) l’évaluation avant de le supprimer définitivement.
 

@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment effectuer l’implémentation et les tests sur les contrôles dans le Gestionnaire de conformité Microsoft. Affecter des rapports de travail, stocker de la documentation et exporter des rapports.
-ms.openlocfilehash: 6b8c85b4d22fdd8161300d250d7322f68959f808
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0f1faa6ede05358eeafa8740fcf3cd79613b39c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156533"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335997"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Affecter et effectuer des actions d’amélioration dans le Gestionnaire de conformité
 
@@ -33,7 +36,7 @@ Toutes vos actions d’amélioration sont répertoriées sur la page Actions d�
 
 ## <a name="improvement-actions-details-page"></a>Page détails des actions d’amélioration
 
-Chaque action d’amélioration possède une page de détails indiquant son état actuel, les normes et exigences réglementaires associées, ainsi que les recommandations d’implémentation recommandées. [Les actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent un **lien Lancer maintenant** qui vous permet d’obtenir la solution appropriée pour l’implémentation. Vous pouvez joindre la documentation d’implémentation et de test directement dans la page de détails d’une action d’amélioration.
+Chaque action d’amélioration possède une page de détails indiquant son état actuel, les normes et exigences réglementaires associées, ainsi que les recommandations d’implémentation recommandées. [Les actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent **un lien Lancer maintenant** qui vous permet d’obtenir la solution appropriée pour l’implémentation. Vous pouvez joindre la documentation d’implémentation et de test directement dans la page de détails d’une action d’amélioration.
 
 Pour afficher la page de détails d’une action d’amélioration :
 
@@ -67,7 +70,7 @@ L’utilisateur affecté peut ensuite effectuer les actions recommandées.
 Vous pouvez affecter plusieurs actions d’amélioration à un utilisateur en suivant les étapes suivantes :
 
 1. Go to your Improvement actions page.
-2. Sélectionnez la zone à gauche du nom de l’action d’amélioration. Une icône de vérification arrondie s’affiche indiquant que vous avez sélectionné cette action. Vérifiez toutes les actions que vous souhaitez affecter.
+2. Sélectionnez la zone à gauche du nom de l’action d’amélioration. Une icône de vérification arrondie s’affiche pour indiquer que vous avez sélectionné cette action. Vérifiez toutes les actions que vous souhaitez affecter.
 3. Sélectionnez le **lien Affecter à l’utilisateur** en haut du tableau des actions d’amélioration.
 4. Une fenêtre contextuelle apparaît. Dans le **champ Affecter à,** commencez à taper le nom de la personne à qui vous souhaitez affecter les actions. Vous pouvez également choisir dans la liste des personnes suggérées.
 5. Une fois que vous avez rempli le **champ Affecter à** avec le nom de la personne assignée, sélectionnez **Affecter**.
@@ -88,13 +91,13 @@ La section **Notes et documentation** contient des champs pour les documents té
     - Vidéo (.mkv)
     - Fichiers compressés (.zip, .rar)
 - Une fois votre fichier résolu dans le volet, sélectionnez **Fermer,** qui enregistre automatiquement la pièce jointe du fichier. Vous verrez ensuite le fichier répertorié sous **les documents téléchargés.**
-- Pour télécharger ou supprimer le document, sélectionnez **Gérer les documents** sous la liste des documents. Dans le volet volant, sélectionnez la ligne du document pour la mettre en surbrillon, puis sélectionnez **Télécharger** ou **Supprimer.**
+- Pour télécharger ou supprimer le document, sélectionnez **Gérer les documents** sous la liste des documents. Dans le volet volant, sélectionnez la ligne de document pour la mettre en surbrillon, puis sélectionnez **Télécharger** ou **Supprimer.**
 
 #### <a name="implementation-notes-test-notes-and-additional-notes"></a>Notes d’implémentation, notes de test et notes supplémentaires
 
-- Pour ajouter des notes dans l’un de ces trois champs, sélectionnez Modifier les **notes** d’implémentation sous l’un de ces champs.
+- Pour ajouter des notes dans l’un de ces trois champs, sélectionnez Modifier les **notes d’implémentation** sous l’un de ces champs.
 - Lorsque le volet volant s’ouvre, entrez des notes dans le champ de texte, puis **sélectionnez Enregistrer et fermer.**
-- Pour modifier des notes, **sélectionnez Modifier les notes** d’implémentation, a apporter vos modifications, puis **sélectionnez Enregistrer et fermer.**
+- Pour modifier des notes, **sélectionnez Modifier les notes d’implémentation,** a apporter vos modifications, puis **sélectionnez Enregistrer et fermer.**
 
 Il n’existe aucune limite de caractères dans les champs de notes. Nous vous recommandons de garder les notes brèves afin de pouvoir facilement les afficher et les modifier à partir de la page de détails des actions d’amélioration.
 
@@ -117,10 +120,10 @@ Pour modifier l’état d’une action d’amélioration, sélectionnez **Modifi
     - **Échec du risque faible :** échec du test, faible risque
     - **Échec du risque moyen :** échec du test, risque moyen
     - **Échec d’un risque élevé** : échec du test, risque élevé
-    - **Hors de portée :** l’action est hors de portée de l’évaluation et ne contribue pas à votre score
+    - **Hors de portée :** l’action n’est pas étendue pour l’évaluation et ne contribue pas à votre score
 - **Date de test**: basculez dans la fenêtre pop-up du calendrier pour sélectionner la date
 
-Les actions courantes sont synchronisées entre les groupes. Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action se synchronisent automatiquement avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
+Les actions courantes sont synchronisées entre les groupes. Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action sont automatiquement synchronisées avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
 
 ## <a name="assign-improvement-action-to-assessor-for-completion"></a>Affecter une action d’amélioration à l’évaluateur pour l’achèvement
 

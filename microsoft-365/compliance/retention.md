@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 858149ce169d335924a643e3c90b895906d28d9b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1c06cdf9492fa18797bfbf25f8153fa347137ced
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170630"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335597"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -209,7 +209,7 @@ Pour les étiquettes de rétention standard (les éléments ne sont pas marqués
 
 - Les administrateurs et les utilisateurs finaux peuvent modifier ou supprimer manuellement une étiquette de rétention existante appliquée au contenu. 
 
-- Lorsqu’une étiquette de rétention est déjà appliquée au contenu, celle-ci n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à une exception près : l’étiquette existante a été appliquée comme étiquette par défaut.
+- Lorsqu’une étiquette de rétention est déjà appliquée au contenu, celle-ci n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à une exception près : l’étiquette existante a été appliquée comme étiquette par défaut. Lorsque vous utilisez une étiquette par défaut, il existe certains scénarios où elle peut être remplacée par une autre étiquette par défaut ou automatiquement supprimée. 
     
     Pour plus d’informations sur le comportement des étiquettes lorsqu’elles sont appliquées à l’aide d’une étiquette par défaut :
     - Étiquette par défaut de SharePoint : [le comportement des étiquettes lorsque vous utilisez une étiquette par défaut pour SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
@@ -526,4 +526,4 @@ Si vous avez configuré des sites SharePoint pour des stratégies de type de con
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Consultez [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md). Cet article présente des informations sur les abonnements, les autorisations, et des liens vers des instructions de configuration de bout en bout pour des scénarios de rétention.
+Consultez [Démarrage avec les stratégies de rétention et les étiquettes de rétention](get-started-with-retention.md). Cet article contient des informations sur les abonnements, les autorisations et des liens vers des conseils de configuration de bout en bout pour les scénarios de rétention.

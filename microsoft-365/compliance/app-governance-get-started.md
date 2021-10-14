@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: 74a9a9ad29e9d99740500d7dd249fd69cbbc6547
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bb5fa0e54eadec89124c39a350b7591be82b7583
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189572"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335877"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
-[![S’inscrire à l’essai gratuit de gouvernance d’application](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+[![S’inscrire à l’essai gratuit de gouvernance d’application](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
 Pour commencer à utiliser le module complémentaire de gouvernance des applications pour Microsoft Cloud App Security, vous devez effectuer trois étapes:
 
@@ -37,7 +37,7 @@ Pour commencer à utiliser le module complémentaire de gouvernance des applicat
 
 Pour les clients Microsoft 365 existants :
 
-1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
+1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://aka.ms/appgovernancetrial).
 1. Effectuez les étapes pour ajouter la gouvernance des applications. L’inscription est simple, comme illustré dans le graphique suivant.
 
 <!--

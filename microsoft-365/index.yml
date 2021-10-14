@@ -157,7 +157,7 @@ additionalContent:
             - text: Centre d’administration Microsoft 365
               url: admin/index.yml
             - text: Microsoft 365 Business Premium
-              url: admin/index.yml
+              url: business/index.yml
             - text: Microsoft 365 pour entreprise
               url: enterprise/index.yml
             - text: Conformité Microsoft 365
@@ -180,7 +180,7 @@ additionalContent:
               url: /MicrosoftTeams
         - title: Déployer Office
           links:
-            - text: Microsoft 365 Apps
+            - text: "Microsoft\_365 Apps"
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office pour Mac
               url: /DeployOffice/mac
@@ -212,7 +212,7 @@ additionalContent:
           links:
             - text: Outlook pour iOS et Android
               url: 'https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/'
-            - text: Exchange Online
+            - text: "Exchange\_Online"
               url: /Exchange/exchange-online
             - text: Plus concernant Exchange >
               url: /Exchange
@@ -267,3 +267,6 @@ additionalContent:
         - title: Communauté technique
           summary: 'Rejoignez la communauté technique Microsoft 365 pour partager vos expériences, participer et apprendre auprès d’experts.'
           url: 'https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365'
+        - title: Contenu de la communauté de Microsoft 365
+          summary: 'Trouvez des solutions et des conseils de scénario pour les utilisateurs de Microsoft 365, grâce à la contribution de la communauté des professionnels et des administrateurs de l''informatique.'
+          url: /microsoft-365/community/

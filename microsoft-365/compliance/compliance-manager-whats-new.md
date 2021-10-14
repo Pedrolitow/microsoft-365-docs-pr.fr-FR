@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez les nouveautés du gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
-ms.openlocfilehash: e449cfdac56b9a22a571e1a6672bd274616508d9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Découvrez les nouveautés du Gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
+ms.openlocfilehash: 6082f008dd3290ba396796e5d0ae7c3ad940db79
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179246"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335549"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Nouveautés du Gestionnaire de conformité Microsoft
 
@@ -27,7 +30,7 @@ ms.locfileid: "60179246"
 
 ## <a name="july-2021"></a>Juillet 2021
 
-Nous avons ajouté la possibilité de créer des évaluations pour des produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez par [utiliser les modèles d’évaluation.](compliance-manager-templates.md)
+Nous avons ajouté la possibilité de créer des évaluations pour des produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez [par utiliser les modèles d’évaluation.](compliance-manager-templates.md)
 
 ## <a name="may-2021"></a>Mai 2021
 

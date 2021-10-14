@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment créer et gérer des stratégies de gestion des données personnelles de votre organisation dans Microsoft 365, répondre aux alertes et résoudre les problèmes.
-ms.openlocfilehash: dec7fd3692330dc267bace22451f1dc65ccd8fd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78a446851a0ce964e5685b8cfab760214cdf3536
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179018"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335973"
 ---
 # <a name="create-and-manage-policies-in-privacy-management-preview"></a>Créer et gérer des stratégies dans la gestion de la confidentialité (aperçu)
 
@@ -43,10 +43,10 @@ La gestion de la confidentialité peut vous aider à détecter et gérer les sit
 
 ### <a name="data-transfer"></a>Transfert de données
 
-Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple si elles sont envoyées via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
+Le transfert de données entre départements ou frontières régionales peut augmenter le risque d’exposition des données, par exemple s’ils sont envoyés via des e-mails non chiffrés ou à des destinataires non autorisés. De telles actions peuvent avoir un impact réglementaire ou aller à l’encontre des pratiques établies en matière de confidentialité. L’utilisation du modèle de transfert de données pour créer des stratégies de gestion de la confidentialité peut repérer et limiter ces transferts.
 
 > [!NOTE]
-> Pendant la prévisualisation publique, certains clients exécutant des stratégies de transfert de données pour détecter les transferts entre régions peuvent rencontrer des problèmes de synchronisation qui ont un impact sur la visibilité des correspondances de stratégie dans les données Exchange et Teams données. Nous vous recommandons de vous concentrer sur SharePoint données OneDrive lors de l’aperçu de ce type de stratégie.
+> Pendant la prévisualisation publique, certains clients exécutant des stratégies de transfert de données pour détecter les transferts entre régions peuvent rencontrer des problèmes de synchronisation qui ont un impact sur la visibilité des correspondances de stratégie dans les données Exchange et Teams données. Nous vous recommandons de vous concentrer sur SharePoint et OneDrive données lors de l’aperçu de ce type de stratégie.
 
 ### <a name="data-minimization"></a>Réduction des données
 
@@ -64,7 +64,7 @@ Il existe deux chemins d’accès pour créer des stratégies de gestion de la c
 
 Pour commencer immédiatement avec une stratégie, sélectionnez l’un des trois types de stratégie pré-définies. Pour passer en revue les détails de l’un d’eux, vous pouvez sélectionner les paramètres d’affichage pour afficher les propriétés spécifiques qui sont à l’origine de la stratégie, y compris les types de données, les emplacements de données et les conditions qui déclenchent des correspondances de stratégie.
 
-Lorsque vous créez une stratégie directement à partir d’un modèle, de nombreux paramètres sont automatiquement choisis. Cela inclut l’option d’option par défaut de la stratégie. Si vous souhaitez afficher un aperçu de la stratégie en action avant de l’activer entièrement, recherchez-la dans votre liste après sa création, modifiez la stratégie et basculez-la en mode test. Pour plus d’informations, voir [Tester votre stratégie.](#test-your-policy)
+Lorsque vous créez une stratégie directement à partir d’un modèle, de nombreux paramètres sont automatiquement choisis. Il démarre en mode test, puis peut être mis sous l’état actif complet. Pour plus d’informations, voir [Tester votre stratégie.](#test-your-policy)
 
 ### <a name="create-custom-policy"></a>Créer une stratégie personnalisée
 
@@ -99,7 +99,7 @@ Lors de la configuration d’une stratégie personnalisée, vous serez invité �
   - U.S. Patriot Act Enhanced
   - Données d’informations d’identification personnelle (PII) améliorées pour les États-Unis
   - U.S. State Breach Notification Laws Enhanced
-- Types d’informations sensibles individuels : en choisissant vous-même des types d’informations sensibles spécifiques, tels que des numéros de sécurité sociale ou des informations de permis de conduire, vous pouvez personnaliser votre propre groupe ou groupe de données à rechercher. Cet Assistant vous permet de sélectionner dans la liste complète des types d’informations sensibles dans la gestion de la confidentialité. Chaque type d’informations possède ses propres propriétés. Utilisez le bouton d’informations à côté de l’un d’eux pour obtenir des détails et des remarques sur les paramètres recommandés. Si vous créez plusieurs groupes, l’Assistant vous permet d’appliquer des opérateurs booléens pour les relier et définir leur ordre d’opération.
+- Types d’informations sensibles individuels : en choisissant vous-même des types d’informations sensibles spécifiques, tels que des numéros de sécurité sociale ou des informations de permis de conduire, vous pouvez personnaliser votre propre groupe ou groupe de données à rechercher. Cet Assistant vous permet de sélectionner dans la liste complète des types d’informations sensibles dans la gestion de la confidentialité. Chaque type d’informations possède ses propres propriétés. Utilisez le bouton d’informations en dehors de l’un d’eux pour obtenir des détails et des remarques sur les paramètres recommandés. Si vous créez plusieurs groupes, l’Assistant vous permet d’appliquer des opérateurs booléens pour les relier et définir leur ordre d’opération.
 
 Si vous utilisez des groupes de classification pré-définies, vous ne pouvez pas également sélectionner des types individuels ou créer vos propres groupes. Pour une plus grande flexibilité, choisissez des types d’informations sensibles individuels. Pour utiliser les normes les plus courantes, choisissez parmi les groupes de classification.
 
@@ -137,9 +137,9 @@ Après avoir évalué une alerte dans la  liste, vous pouvez utiliser l’action
 
 ### <a name="issues"></a>Problèmes
 
-Comme décrit dans la section Alertes, des problèmes sont créés lors de l’évaluation des alertes concernant les correspondances de stratégie. Pour suivre et résoudre les problèmes indiqués, visitez la page Problèmes. À partir de là, vous pouvez examiner les problèmes individuels, examiner les conditions d’analyse, examiner les données et prendre les mesures nécessaires pour fermer le cas.
+Comme décrit dans la section Alertes, des problèmes sont créés lors de l’évaluation des alertes concernant les correspondances de stratégie. Pour suivre et résoudre les problèmes indiqués, visitez la page Problèmes. À partir de là, vous pouvez examiner les problèmes individuels, examiner les conditions d’origine, examiner les données et prendre les mesures nécessaires pour fermer le cas.
 
-Cette page fournit la liste de tous les problèmes d’ouverture. Les problèmes sont répertoriés par nom et triés par gravité pour vous aider à hiérarchiser les cas, y compris les catégories élevée, moyenne et faible, ainsi que les catégories non classées. Sélectionnez un problème dans la liste pour examiner son contenu et prendre des mesures pour le résoudre. Vous pouvez évaluer la gravité des problèmes non signés au cours de l’examen.
+Cette page fournit la liste de tous les problèmes d’ouverture. Les problèmes sont répertoriés par nom et triés par gravité pour vous aider à hiérarchiser les cas, y compris les catégories élevée, moyenne et faible, ainsi que les catégories non classées. Sélectionnez un problème dans la liste pour examiner son contenu et prendre des mesures pour le résoudre. Vous pouvez évaluer la gravité des problèmes non signés lors de l’examen.
 
 #### <a name="issue-overview"></a>Vue d’ensemble du problème
 
@@ -161,7 +161,7 @@ Utilisez le **bouton Corriger** pour prendre vos propres décisions de gestion d
 
 - **Avertir**: informer le propriétaire du contenu du problème détecté.
 - **Appliquer une étiquette de rétention**: ajoutez une étiquette sur la rétention des données pour cet élément. 
-- **Appliquer une étiquette de niveau de** sensibilité : ajoutez une étiquette sur la sensibilité des données de cet élément.
+- **Appliquer une étiquette de niveau de sensibilité**: ajoutez une étiquette sur la sensibilité des données de cet élément.
 - **Marquer comme n’étant pas une correspondance**: identifiez un résultat de recherche comme faux positif pour supprimer l’élément de contenu de la considération.
 
 **Réduction des données**

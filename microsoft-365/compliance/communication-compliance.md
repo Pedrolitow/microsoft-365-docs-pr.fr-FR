@@ -20,16 +20,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 46ba59bc1e9e2d137c254939847c5de8a68a861a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 71dfd68ce690491497e6926eb1046d1c31f41408
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153221"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335937"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>En savoir plus sur la conformité des communications dans Microsoft 365
 
-La conformité des communications est une solution à risque interne dans Microsoft 365 qui vous aide à réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les messages électroniques, les Microsoft Teams, les Yammer ou les communications tierces analysés dans votre organisation et prendre les mesures appropriées pour s’assurer qu’elles sont conformes aux normes de message de votre organisation.
+La conformité des communications est une solution à risque interne dans Microsoft 365 qui vous aide à réduire les risques de communication en vous aidant à détecter, capturer et agir sur des messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications relatives aux correspondances de stratégie internes et externes pour les examiner par des réviseurs désignés. Les réviseurs peuvent examiner les communications analysées par e-mail, Microsoft Teams, Yammer ou tierces dans votre organisation et prendre les mesures appropriées pour s’assurer qu’elles sont conformes aux normes de message de votre organisation.
 
 Les stratégies de conformité des communications dans Microsoft 365 vous aident à surmonter de nombreux défis modernes liés à la conformité et aux communications internes et externes, notamment :
 
@@ -44,7 +44,7 @@ Pour les dernières présentations Ignite pour la conformité des communications
 - [Favoriser une culture de sécurité et d’inclusion avec la conformité des communications](https://www.youtube.com/watch?v=oLVzxcaef3w)
 - [Découvrez comment réduire les risques de communication au sein de votre organisation](https://www.youtube.com/watch?v=vzARb1YaxGo)
 - [Respecter les exigences de conformité réglementaire en matière de conformité des communications](https://www.youtube.com/watch?v=gagOhtCBfgU)
-- [Mieux avec Microsoft Teams - En savoir plus sur les dernières fonctionnalités intégrées Teams en matière de conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
+- [Une meilleure Microsoft Teams - En savoir plus sur les dernières fonctionnalités intégrées Teams en matière de conformité des communications](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Pour obtenir une vue d’ensemble rapide de la conformité des communications, consultez la vidéo Détecter le harcèlement au travail et répondre à la conformité des communications dans [Microsoft 365](https://youtu.be/z33ji7a7Zho) vidéo sur le canal [Microsoft Mechanics.](https://www.youtube.com/user/OfficeGarageSeries)
 
@@ -60,7 +60,7 @@ Les stratégies de conformité des communications peuvent vous aider à passer e
 
 - **Gestion des risques**
 
-    Les organisations sont responsables de toutes les communications distribuées dans l’ensemble de leur infrastructure et de leurs systèmes réseau d’entreprise. L’utilisation de stratégies de conformité des communications pour identifier et gérer l’exposition juridique et les risques potentiels peut contribuer à réduire les risques avant qu’ils ne endommagent les opérations de l’entreprise. Par exemple, vous pouvez analyser les messages de votre organisation pour les communications non autorisées et les conflits d’intérêt concernant des projets confidentiels, tels que les acquisitions à venir, les fusions, la divulgation de revenus, les réorganisations ou les changements d’équipe de direction.
+    Les organisations sont responsables de toutes les communications distribuées dans l’ensemble de leur infrastructure et de leurs systèmes réseau d’entreprise. L’utilisation de stratégies de conformité des communications pour identifier et gérer l’exposition juridique et les risques potentiels peut contribuer à réduire les risques avant qu’ils ne endommagent les opérations de l’entreprise. Par exemple, vous pouvez analyser les messages de votre organisation pour les communications non autorisées et les conflits d’intérêt concernant les projets confidentiels, tels que les acquisitions à venir, les fusions, la divulgation de revenus, les réorganisations ou les changements d’équipe de direction.
 
 - **Conformité réglementaire**
 
@@ -113,16 +113,16 @@ De nouveaux tableaux de bord interactifs pour les alertes, correspondances de st
 Les stratégies de conformité des communications analysent et capturent les messages sur plusieurs canaux de communication pour vous aider à examiner et résoudre rapidement les problèmes de conformité :
 
 - **Microsoft Teams**: les communications de [](/MicrosoftTeams/Teams-overview) conversation pour les canaux Microsoft Teams publics et privés et les conversations individuelles sont pris en charge dans la conformité des communications en tant que source de canal autonome ou avec d’Microsoft 365 services. Vous devez ajouter manuellement des utilisateurs individuels, des groupes de distribution ou des canaux Microsoft Teams spécifiques lorsque vous sélectionnez des utilisateurs et des groupes à superviser dans une stratégie de conformité des communications.
-- **Exchange Online**: toutes les boîtes aux lettres hébergées [sur Exchange Online](/Exchange/exchange-online) votre organisation Microsoft 365 sont éligibles pour l’analyse. Les messages électroniques et pièces jointes correspondant aux conditions de stratégie de conformité des communications sont immédiatement disponibles pour la surveillance et dans les rapports de conformité. Exchange Online est désormais un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
+- **Exchange Online**: toutes les boîtes aux lettres hébergées [sur Exchange Online](/Exchange/exchange-online) votre organisation Microsoft 365 sont éligibles pour l’analyse. Les courriers électroniques et pièces jointes correspondant aux conditions de stratégie de conformité des communications sont immédiatement disponibles pour la surveillance et dans les rapports de conformité. Exchange Online est désormais un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
 - **Yammer** : les messages privés et les conversations de la communauté publique dans [Yammer](/yammer/yammer-landing-page) sont pris en charge dans les stratégies de conformité des communications. Yammer est un canal facultatif qui doit être en [mode natif](/yammer/configure-your-yammer-network/overview-native-mode) pour prendre en charge l’analyse de messages et de pièces jointes.
 - **Skype Entreprise Online : les stratégies** de conformité des communications la prise en charge de l’analyse des communications de conversation et des pièces jointes associées [dans Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online).
 - **Sources tierces**: vous pouvez analyser les messages provenant de [sources](archiving-third-party-data.md) tierces pour les données importées dans les boîtes aux lettres de Microsoft 365 organisation. La conformité des communications prend en charge les connexions à plusieurs plateformes populaires, notamment Instant Bloomberg.
 
-Pour en savoir plus sur la prise en charge des canaux de messagerie dans les stratégies de conformité des communications, consultez les [types de communication pris en charge.](communication-compliance-feature-reference.md#supported-communication-types)
+Pour en savoir plus sur la prise en charge des canaux de messagerie dans les stratégies de conformité des communications, voir Détecter les signaux de [canal avec la conformité des communications.](communication-compliance-channels.md)
 
 ## <a name="workflow"></a>Flux de travail
 
-La conformité des communications vous aide à résoudre les problèmes courants associés à la conformité aux stratégies internes et aux exigences de conformité réglementaire. Avec des modèles de stratégie axés et un flux de travail flexible, vous pouvez utiliser des informations actionnables pour résoudre rapidement les problèmes de conformité détectés.
+La conformité des communications vous aide à résoudre les problèmes courants associés à la conformité avec les stratégies internes et les exigences de conformité réglementaire. Avec des modèles de stratégie axés et un flux de travail flexible, vous pouvez utiliser des informations actionnables pour résoudre rapidement les problèmes de conformité détectés.
 
 L’identification et la résolution des problèmes de conformité avec la conformité des communications dans Microsoft 365 utilise le flux de travail suivant :
 
@@ -149,7 +149,7 @@ Dans cette étape, vous étudiez plus en détail les problèmes détectés comme
 
 - **Alertes**: lorsqu’un message correspond à une condition de stratégie, une alerte est générée automatiquement. Pour chaque alerte, vous pouvez voir l’état, la gravité, l’heure détectée et si un cas Advanced eDiscovery est affecté et son état. Les nouvelles alertes sont affichées sur la page d’accueil de conformité des communications et la page **Alertes** et sont répertoriées par ordre de gravité.
 - **Gestion des problèmes** : pour chaque alerte, vous pouvez prendre des mesures d’examen afin de résoudre le problème détecté dans le message.
-- **Révision de document**: pendant l’examen d’un problème, vous pouvez utiliser plusieurs vues du message pour vous aider à évaluer correctement le problème détecté. Les affichages incluent un résumé des conversations, un texte, des annotations et des affichages de détails dans la conversation de communication.
+- **Révision de document**: au cours de l’examen d’un problème, vous pouvez utiliser plusieurs vues du message pour vous aider à évaluer correctement le problème détecté. Les affichages incluent un résumé des conversations, un texte, des annotations et des affichages de détails dans la conversation de communication.
 - **Examen de l’historique des** activités des utilisateurs : affichez l’historique des activités des messages utilisateur et les actions de correction, telles que les notifications passées et les escalades, pour les correspondances de stratégie.
 - **Filtres**: utilisez des filtres tels que l’expéditeur, le destinataire, la date et l’objet pour affiner rapidement les alertes de message que vous souhaitez examiner.
 
@@ -157,22 +157,22 @@ Dans cette étape, vous étudiez plus en détail les problèmes détectés comme
 
 L’étape suivante consiste à résoudre les problèmes de conformité des communications que vous avez examinés à l’aide des options suivantes :
 
-- **Résoudre** : une fois que vous avez révisé un problème, vous pouvez résoudre le problème en résolvant l’alerte. La résolution d’une alerte la supprime de la file d’attente des  alertes en attente et l’action est conservée en tant qu’entrée dans la file d’attente résolue pour la stratégie correspondante. Les alertes sont automatiquement résolues après le marquage de l’alerte comme étant mal classé, l’envoi d’une notification à un utilisateur concernant l’alerte ou l’ouverture d’un nouveau cas pour l’alerte.
+- **Résoudre** : une fois que vous avez révisé un problème, vous pouvez résoudre le problème en résolvant l’alerte. La résolution d’une alerte la supprime de la file d’attente d’alertes en attente et l’action est conservée en tant qu’entrée dans la file d’attente résolue pour la stratégie correspondante.  Les alertes sont automatiquement résolues après le marquage de l’alerte comme étant mal classé, l’envoi d’une notification à un utilisateur concernant l’alerte ou l’ouverture d’un nouveau cas pour l’alerte.
 - **Marquer un message** : dans le cadre de la résolution d’un problème, vous pouvez baliser le message détecté comme étant conforme ou non conforme, ou comme il est lié aux stratégies et normes de votre organisation. La balise peut vous aider à microfiltrer des alertes de stratégie pour les réaffectations ou dans le cadre d’autres processus de révision interne.
 - **Avertir l’utilisateur :** souvent, les utilisateurs violent accidentellement ou par inadvertance une stratégie de conformité des communications. Vous pouvez utiliser la fonctionnalité Notification pour avertir l’utilisateur et résoudre le problème.
 - **Réaffecter à un autre réviseur** : parfois, le réviseur initial d’un problème doit être saisi par d’autres réviseurs pour résoudre l’incident. Vous pouvez facilement transmettre les problèmes de message aux réviseurs d’autres zones de votre organisation dans le cadre du processus de résolution.
 - **Signaler une erreur de classification**: les messages détectés de manière incorrecte comme des correspondances de stratégies de conformité peuvent parfois passer au processus de révision. Vous pouvez marquer ces types d’alertes comme étant mal classés, envoyer des commentaires à Microsoft sur l’erreur de classification afin d’améliorer les classifieurs globaux et résoudre automatiquement le problème.
-- **Supprimer un message dans Teams (aperçu)**: les messages inappropriés peuvent être supprimés de l’affichage dans les canaux Microsoft Teams ou les messages de conversation personnels et de groupe. Les messages inappropriés supprimés sont remplacés par une notification de suppression du message pour violation de stratégie.
+- **Supprimer un message dans Teams (aperçu)**: les messages inappropriés peuvent être supprimés de l’affichage dans les canaux Microsoft Teams ou les messages de conversation personnels et de groupe. Les messages inappropriés supprimés sont remplacés par une notification de suppression du message en cas de violation de stratégie.
 - **Réamorcer pour examen**: dans les situations les plus graves, vous devrez peut-être partager des informations de conformité des communications avec d’autres réviseurs de votre organisation. La conformité des communications est étroitement intégrée aux autres fonctionnalités de conformité Microsoft 365 pour vous aider à résoudre les problèmes de bout en bout. La réaffectation d’un cas pour l’examen vous permet de transférer des données et de gérer le cas vers Advanced eDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Surveiller
 
 Le suivi et la gestion des problèmes de conformité identifiés par les stratégies de conformité des communications couvrent l’ensemble du processus de flux de travail. Lorsque des alertes sont générées et que des actions d’examen et de correction sont implémentées, les stratégies existantes peuvent avoir besoin d’être revue et mises à jour, et de nouvelles stratégies peuvent être créées.
 
-- **Surveiller et signaler**: utilisez les widgets de tableau de bord de conformité des communications, les journaux d’exportation et les événements enregistrés dans les journaux d’audit unifiés pour évaluer et améliorer continuellement votre posture de conformité.
+- **Surveiller et signaler**: utilisez des widgets de tableau de bord de conformité des communications, des journaux d’exportation et des événements enregistrés dans les journaux d’audit unifiés pour évaluer et améliorer continuellement votre posture de conformité.
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
 - Pour plus d’informations sur la planification, [voir Planifier la conformité des communications.](communication-compliance-plan.md)
-- Consultez l’étude de cas pour [Contoso](communication-compliance-case-study.md) et découvrez comment il a rapidement configuré une stratégie de conformité des communications pour surveiller le langage choquant dans les communications Microsoft Teams, Exchange Online et Yammer communications.
+- Consultez l’étude de cas pour [Contoso](communication-compliance-case-study.md) et découvrez comment il a configuré rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans les communications Microsoft Teams, Exchange Online et Yammer communications.
 - Pour configurer la conformité des communications pour votre organisation Microsoft 365, voir Configurer la conformité des [communications pour Microsoft 365](communication-compliance-configure.md).

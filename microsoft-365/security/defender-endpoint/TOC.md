@@ -176,6 +176,7 @@
 
 ##### [Configurer]()
 ###### [Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+###### [configurer les signaux de risque Microsoft Defender pour point de terminaison à l’aide de la stratégie de protection des applications](android-configure-mam.md)
 
 ##### [Confidentialité]()
 ###### [Microsoft Defender pour point de terminaison Android : informations sur la confidentialité](android-privacy.md)

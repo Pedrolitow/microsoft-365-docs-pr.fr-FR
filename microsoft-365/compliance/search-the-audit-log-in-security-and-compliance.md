@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5fa3ad73ffbc869a700776319477c5ab3128cae5
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 3edb4307937bcf76a87f9bbdf8930a646794156e
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268753"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335829"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -418,10 +418,10 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
         [Activités de conformité des communications](#communication-compliance-activities)
     :::column-end:::
     :::column:::
-        [Activités administrateur Exchange](#exchange-admin-audit-log)
+        [Activités de rapport](#report-activities)
     :::column-end:::
     :::column:::
-        
+        [Activités administrateur Exchange](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
 
@@ -1026,7 +1026,7 @@ Le tableau suivant répertorie les activités de l’e-mail de Récapitulatif de
 - [Configurer le courrier électronique de récapitulatif des tâches](/Briefing/be-admin)
 
 |**Nom convivial**|**Opération**|**Description**|
-|:-----|:-----|:-----|
+|:----|:-----|:-----|
 |Paramètres de confidentialité de l’organisation mis à jour|UpdatedOrganizationBriefingSettings|Un administrateur met à jour les paramètres de confidentialité de l’organisation pour le courrier de récapitulatif des tâches. |
 |Paramètres de confidentialité de l’utilisateur mis à jour|UpdatedUserBriefingSettings|Un administrateur met à jour les paramètres de confidentialité de l’utilisateur pour le courrier de récapitulatif des tâches.
 ||||
@@ -1073,6 +1073,15 @@ Le tableau suivant répertorie les activités de conformité de la communication
 |Mise à jour de stratégie|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|Un administrateur de conformité des communications a effectué une mise à jour de stratégie.|
 |Correspondance de stratégie|SupervisionRuleMatch|Un utilisateur a envoyé un message qui correspond à la condition d’une stratégie.|
 |Balise appliquée aux messages|SupervisoryReviewTag|Les balises sont appliquées aux messages ou les messages sont résolus.|
+||||
+
+### <a name="report-activities"></a>Activités de rapport
+
+Le tableau suivant répertorie les activités des rapports d’utilisation enregistrés dans le journal d’audit Microsoft 365.
+
+|**Nom convivial**|**Opération**|**Description**|
+|:-----|:-----|:-----|
+|Mise à jour des paramètres de confidentialité du rapport d’utilisation|UpdateUsageReportsPrivacySetting|Les paramètres de confidentialité des rapports d’utilisation ont été mis à jour par l’administrateur. |
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange

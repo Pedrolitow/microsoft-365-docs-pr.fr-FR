@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 57f17cf798d92eeb5fcd22f12029f9d8d36a82fa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 78bcb88ffba87cbdb09b4c47293bfc420d4140e2
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196848"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335573"
 ---
 # <a name="next-generation-protection-overview"></a>Vue d’ensemble de la protection nouvelle génération
+
+- [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
 Microsoft Defender pour point de terminaison inclut une protection nouvelle génération pour renforcer le périmètre de sécurité de votre réseau. La protection de nouvelle génération a été conçue pour intercepter tous les types de menaces émergentes. Outre Antivirus Microsoft Defender, vos services de protection nouvelle génération incluent les fonctionnalités suivantes :
 

@@ -9,21 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: d70167341082c851ee25d94c3ee5b827d6e1492f
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+ms.openlocfilehash: 40453034c169c5969694425bea25f6f6b3ec4f84
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223454"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335741"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
-**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, les stratégies et les normes.
+**Dans cet article :** Utilisez ce guide de démarrage rapide pour vous aider tout au long de votre parcours d’utilisation du Gestionnaire de conformité Microsoft pour gérer la conformité de votre organisation avec les réglementations, stratégies et normes.
 
 Le Gestionnaire de conformité fournit des données intelligentes et actionnables lors de votre première visite. Le Gestionnaire de conformité offre également des fonctionnalités avancées pour la mise à l’échelle de votre conformité lorsque vous êtes prêt. Les évaluations disponibles dépendent de votre contrat de licence . [en savoir plus.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu pour le labling ou l’application de stratégie en lui donnant des exemples positifs et négatifs à examiner.
-ms.openlocfilehash: b218fea598049e8a3b621b4b6711550227e3cbd4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 91944d4d0d958c71232e2c9ea461eab9bf21c0cc
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204466"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335865"
 ---
 # <a name="learn-about-trainable-classifiers"></a>En savoir plus sur les classifieurs avec capacité d’apprentissage
 
@@ -34,7 +34,7 @@ La classification et l’étiquetage du contenu afin qu’il puisse être proté
 
 Cette méthode nécessite un juge humain et une action. Un administrateur peut utiliser les étiquettes et les types d’informations sensibles pré-existants ou créer les leurs, puis les publier. Les utilisateurs et les administrateurs les appliquent au contenu à mesure qu’ils le rencontrent. Vous pouvez ensuite protéger le contenu et gérer sa disposition.
 
-## <a name="automated-pattern-matching"></a>Correspondance automatique des modèles
+## <a name="automated-pattern-matching"></a>Correspondance de modèle automatisée
 
 Cette catégorie de mécanismes de classification inclut la recherche de contenu par :
 
@@ -75,7 +75,7 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 langages de programmation informatique les plus utilisés sur GitHub
     - ActionScript
     - C
-    - C#
+    - C #
     - C++
     - Îlesjure
     - CoffeeScript
@@ -100,13 +100,10 @@ Microsoft 365 est livré avec cinq classifieurs pré-formés :
 > [!NOTE]
 > Le code source est formé pour détecter quand l’essentiel du texte est du code source. Il ne détecte pas le texte de code source qui est entrecoupé de texte simple.
 
-- **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés à une conduite choquante ciblant un ou plusieurs individus en fonction des caractéristiques suivantes : course, ancienneté, genre, origine nationale, sexe, orientation sexuelle, âge, invalidité
+- **Harcèlement**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés à une conduite choquante ciblant un ou plusieurs individus en fonction des caractéristiques suivantes : course, ancienneté, genre, origine nationale, sexe, orientation sexuelle, âge, handicap/invalidité
 - **Blasphémité**: détecte une catégorie spécifique d’éléments de texte de langage choquant qui contiennent des expressions qui gênent la plupart des personnes
-- **Menace**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés aux menaces de violence ou d’atteinte physique à une personne ou à une propriété
+- **Menace**: détecte une catégorie spécifique d’éléments de texte de langage choquant liés aux menaces de violence ou d’atteinte physique ou de dommages à une personne ou à une propriété
 - **Discrimination**: détecte un langage explicite de discrimination et est particulièrement sensible au langage de discrimination à l’encontre des communautés américaine/noire d’Afrique par rapport aux autres communautés.
-
-> [!IMPORTANT]
-> Le classifieur ne peut être formé qu’en tant que prévisualisation publique pour les clients dont Microsoft 365 clients sont hébergements dans des centres de données en Amérique du Nord. Pour voir où votre client Microsoft 365 est homed, ouvrez le Centre d'administration Microsoft 365 et accédez à Paramètres Emplacement des données de l’onglet Profil d’organisation des  >  **paramètres** de  >  [](https://go.microsoft.com/fwlink/p/?linkid=2067339)  >  **l’organisation.** 
 
 Ceux-ci apparaissent dans **la Centre de conformité Microsoft 365** classification des données  >    >  **avec** l’état de `Ready to use` .
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: a59954ba862122b27f2c2fb4bc87f1cff73eacc8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5333b198413c25aed4b894721803c5fa4772b439
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155057"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334689"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité des communications dans Microsoft 365
 
@@ -35,9 +35,8 @@ Pour configurer la conformité des communications pour votre organisation, utili
 
 1. En savoir plus [sur la conformité des communications](communication-compliance.md) dans Microsoft 365
 2. Planifier la conformité [des communications et](communication-compliance-plan.md) vérifier les [licences](communication-compliance-configure.md#subscriptions-and-licensing)
-3. Examiner les [fonctionnalités de référence et de solution](communication-compliance-feature-reference.md)
-4. Configurer les [conditions préalables et](communication-compliance-configure.md#step-2-required-enable-the-audit-log) [les autorisations](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-5. Créer et configurer des stratégies [de conformité des communications](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
+3. Configurer les [conditions préalables et](communication-compliance-configure.md#step-2-required-enable-the-audit-log) [les autorisations](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+4. Créer et configurer des stratégies [de conformité des communications](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
 
 ## <a name="more-information-about-communication-compliance"></a>Plus d’informations sur la conformité des communications
 

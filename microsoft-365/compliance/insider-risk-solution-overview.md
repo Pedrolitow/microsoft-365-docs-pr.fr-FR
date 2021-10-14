@@ -3,7 +3,7 @@ title: Solutions aux risques internes
 description: Découvrez comment réduire les risques dans votre organisation à l’aide de solutions à risque internes Microsoft 365.
 keywords: Microsoft 365, risques internes, conformité
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: ab7f0b26770c78298d620fa1f7d991dc5c7cae4b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5028b2f577d5eb67a3e1316048878d1020a7e53c
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175238"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60334673"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Solutions de risque interne dans Microsoft 365
 
@@ -84,7 +84,7 @@ La gestion des risques internes est disponible dans les abonnements suivants :
 - Abonnement Microsoft 365 G3 + le module complémentaire Microsoft 365 G5 Gestion des risques internes
 - Abonnement Office 365 E3 + Enterprise Mobility and Security E3 + le module complémentaire Microsoft 365 E5 Conformité
 
-### <a name="information-barriers"></a>Obstacles aux informations
+### <a name="information-barriers"></a>Cloisonnement de l’information
 
 Les obstacles à l’information vous permettent de restreindre la communication et la collaboration entre deux groupes internes afin d’éviter tout conflit d’intérêt dans votre organisation.
 
@@ -145,5 +145,5 @@ Microsoft 365 fournit les ressources suivantes pour informer et former ces utili
 | Gérer les risques internes dans Microsoft 365 |[Parcours d’apprentissage complet](/learn/paths/m365-compliance-insider) <br> Ce parcours d’apprentissage inclut tous les modules de solution individuels pour la conformité des communications, la gestion des risques internes, les obstacles à l’information et la gestion des accès privilégiés. Sélectionnez ce parcours d’apprentissage pour terminer tous les modules. |
 | Conformité des communications | [Learning module : préparer la conformité des communications dans Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Ce module vous aide à découvrir les bases sur la façon d’identifier et de corriger les violations de stratégie de code de conduite avec la conformité des communications, de couvrir les conditions préalables requises avant de créer des stratégies de conformité des communications et d’en savoir plus sur les types de modèles de stratégie prédéfinits intégrés dans la conformité des communications. |
 | Gestion des risques internes | [Learning module : gestion des risques internes dans Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Ce module vous aide à découvrir comment la gestion des risques internes dans Microsoft 365 peut vous aider à prévenir, détecter et contenir des risques internes dans une organisation, à en savoir plus sur les types de modèles de stratégie prédéfinits intégrés, à comprendre les conditions préalables de base nécessaires avant de créer des stratégies de risque internes et à expliquer les types d’actions que vous pouvez prendre sur les cas de gestion des risques internes. |
-| Obstacles aux informations | [Learning module : planifier les obstacles à l’information](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Ce module vous aide à découvrir comment les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations du secteur pertinentes, répertorie les types de situations dans lesquelles des obstacles à l’information seraient applicables, explique le processus de création d’une stratégie de obstacle à l’information et explique comment résoudre les problèmes inattendus une fois les obstacles à l’information en place. |
+| Cloisonnement de l’information | [Learning module : planifier les obstacles à l’information](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Ce module vous aide à découvrir comment les stratégies d’obstacle à l’information peuvent aider votre organisation à maintenir la conformité avec les normes et réglementations du secteur pertinentes, répertorie les types de situations dans lesquelles des obstacles à l’information seraient applicables, explique le processus de création d’une stratégie d’obstacle à l’information et explique comment résoudre les problèmes inattendus une fois les obstacles à l’information en place. |
 | Gestion des accès privilégiés | [Learning module : implémenter la gestion des accès privilégiés](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Ce module vous aide à comprendre la différence entre la gestion des accès privilégiés et la gestion des identités privilégiées, à comprendre le flux de processus de gestion des accès privilégiés et à comprendre les principes de base de la configuration et de l’utilisation de la gestion des accès privilégiés. |

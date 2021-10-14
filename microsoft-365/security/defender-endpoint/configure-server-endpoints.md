@@ -1,5 +1,5 @@
 ---
-title: Intégrer Windows serveurs au service Microsoft Defender for Endpoint
+title: Intégrer Windows serveurs d’accès au service Microsoft Defender for Endpoint
 description: Intégrer Windows serveurs afin qu’ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint.
 keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31f8d4343f425369f842122c3dfd483edeefe3d9
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: b180cedbad90082fa548e0dbd41af7313bc9e5b8
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60239892"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335777"
 ---
-# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs au service Microsoft Defender for Endpoint
+# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs d’accès au service Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,9 +32,9 @@ ms.locfileid: "60239892"
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Canal Semi-Annual serveur
-- Windows Server 2019 et les ultérieures
+- Windows Server 2019 et ultérieur
 - Windows Server 2019 Core Edition
-- Windows Server 2022
+- Windows Server 2022
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -71,7 +71,7 @@ L’implémentation précédente de l’intégration Windows Server 2012 R2 et W
 
 Le nouveau package de solution unifiée facilite l’intégration des serveurs en supprimant les dépendances et les étapes d’installation. En outre, ce package de solution unifiée présente les principales améliorations suivantes :
 
-- [Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows) protection [nouvelle génération](/microsoft-365/security/defender-endpoint/next-generation-protection) pour Windows Server 2012 R2
+- [Antivirus Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows) protection [nouvelle génération pour](/microsoft-365/security/defender-endpoint/next-generation-protection) Windows Server 2012 R2
 - [Règles de réduction de la surface d’attaque (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
 - [Protection du réseau](/microsoft-365/security/defender-endpoint/network-protection)
 - [Accès contrôlé aux dossiers](/microsoft-365/security/defender-endpoint/controlled-folders)
@@ -91,9 +91,9 @@ Si vous avez précédemment intégré vos serveurs à l’aide de MMA, suivez le
 #### <a name="known-issues-and-limitations"></a>Problèmes connus et conseils
 Les spécificités suivantes s’appliquent au nouveau package de solution unifiée Windows Server 2012 R2 et 2016 :
 - Assurez-vous que les exigences de connectivité spécifiées dans Enable [access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. Ils sont équivalents à ceux de Windows Server 2019. 
-- Auparavant, l’utilisation de la Microsoft Monitoring Agent (MMA) sur Windows Server 2016 et en dessous était autorisée pour la passerelle OMS afin de fournir la connectivité aux services cloud de Defender. La nouvelle solution, telle que Microsoft Defender pour endpoint sur Windows Server 2019, Windows Server 2022 et Windows 10, ne prend pas en charge cette passerelle.
+- Auparavant, l’utilisation de la Microsoft Monitoring Agent (MMA) sur Windows Server 2016 et en dessous était autorisée pour la passerelle OMS afin de fournir une connectivité aux services cloud de Defender. La nouvelle solution, telle que Microsoft Defender pour endpoint sur Windows Server 2019, Windows Server 2022 et Windows 10, ne prend pas en charge cette passerelle.
 - Sur Windows Server 2016, vérifiez que Antivirus Microsoft Defender est installé, qu’il est actif et à jour. Vous pouvez télécharger et installer la dernière version de la plateforme à l’aide Windows Update. Vous pouvez également télécharger le package de mise à jour manuellement à partir du catalogue [Microsoft Update ou](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) de [MMPC.](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64)  
-- Sur Windows Server 2012 R2, il n’existe aucune interface utilisateur pour Antivirus Microsoft Defender. En outre, l’interface utilisateur sur Windows Server 2016 autorise uniquement les opérations de base. Pour effectuer des opérations localement sur un appareil, reportez-vous à Gérer Microsoft Defender pour le point de terminaison avec [PowerShell, WMI et MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). Par conséquent, les fonctionnalités qui s’appuient spécifiquement sur l’interaction utilisateur, telles que l’endroit où l’utilisateur est invité à prendre une décision ou à effectuer une tâche spécifique, risquent de ne pas fonctionner comme prévu. Il est généralement recommandé de désactiver ou de ne pas activer l’interface utilisateur, ni d’exiger une interaction utilisateur sur un serveur géré, car cela peut avoir un impact sur la fonctionnalité de protection.
+- Sur Windows Server 2012 R2, il n’existe aucune interface utilisateur pour Antivirus Microsoft Defender. En outre, l’interface utilisateur sur Windows Server 2016 autorise uniquement les opérations de base. Pour effectuer des opérations localement sur un appareil, reportez-vous à Gérer Microsoft Defender pour le point de terminaison avec [PowerShell, WMI et MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). Par conséquent, les fonctionnalités qui s’appuient spécifiquement sur l’interaction de l’utilisateur, telles que l’endroit où l’utilisateur est invité à prendre une décision ou à effectuer une tâche spécifique, risquent de ne pas fonctionner comme prévu. Il est généralement recommandé de désactiver ou de ne pas activer l’interface utilisateur, ni d’exiger une interaction utilisateur sur un serveur géré, car cela peut avoir un impact sur la fonctionnalité de protection.
 - Toutes les règles de Réduction de la surface d’attaque ne sont pas disponibles sur tous les systèmes d’exploitation. Veuillez consulter les [règles de réduction de la surface d’attaque (ASR).](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
 - Pour activer la [Protection du réseau,](/microsoft-365/security/defender-endpoint/network-protection)une configuration supplémentaire est requise :   
     -- Set-MpPreference -EnableNetworkProtection Enabled  
@@ -101,11 +101,11 @@ Les spécificités suivantes s’appliquent au nouveau package de solution unifi
     -- Set-MpPreference -AllowNetworkProtectionDownLevel 1  
     -- Set-MpPreference -AllowDatagramProcessingOnWinServer 1  
   En outre, sur les ordinateurs avec un volume élevé de trafic réseau, les tests de performances dans votre environnement sont vivement recommandés avant d’activer cette fonctionnalité à grande étendue. Vous devrez peut-être tenir compte de la consommation supplémentaire de ressources.
- - Sur Windows Server 2012 R2, les événements réseau peuvent ne pas être remplis dans la chronologie. This issue requires a Windows KB4645768 released as part of the October 12th patch Tuesday.
- - Les mises à niveau du système d’exploitation ne sont pas pris en charge. Désinstallez-le avant la mise à niveau.
+ - Sur Windows Server 2012 R2, les événements réseau peuvent ne pas être remplis dans la chronologie. This issue requires a Windows Update KB4645768 released as part of the October 12th patch Tuesday.
+ - Les mises à niveau du système d’exploitation ne sont pas pris en charge. Désinstallez-le avant de le mettre à niveau.
 
 ## <a name="integration-with-azure-defender"></a>Intégration à Azure Defender
-Microsoft Defender pour point de terminaison s’intègre parfaitement à Azure Defender. Vous pouvez intégrer automatiquement des serveurs, faire en effet apparaître les serveurs surveillés par Azure Defender dans Defender for Endpoint et mener des enquêtes détaillées en tant que client Azure Defender. 
+Microsoft Defender pour point de terminaison s’intègre de façon transparente à Azure Defender. Vous pouvez intégrer automatiquement des serveurs, faire en effet apparaître les serveurs surveillés par Azure Defender dans Defender for Endpoint et mener des enquêtes détaillées en tant que client Azure Defender. 
 
 Pour plus d’informations, voir [Intégration avec Azure Defender.](azure-server-integration.md)
 
@@ -118,7 +118,7 @@ Pour plus d’informations, voir [Intégration avec Azure Defender.](azure-serve
 > Bien que cette méthode d’intégration Windows Server 2012 R2 et Windows Server 2016 soit en prévisualisation, vous pouvez choisir de continuer à utiliser la méthode d’intégration précédente à l’aide de Microsoft Monitoring Agent (MMA). Pour plus d’informations, voir Installer et configurer des points de [terminaison à l’aide de MMA.](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)
 
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Conditions préalables
 
 **Conditions préalables pour Windows Server 2012 R2** Si vous avez entièrement mis à jour vos ordinateurs avec le [dernier](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package de déploiement mensuel, aucune condition préalable supplémentaire **n’est** requise.
 
@@ -133,7 +133,7 @@ Vérifiez que Antivirus Microsoft Defender est installé, qu’il est actif et �
 
 **Nouveau package de mise à jour pour Microsoft Defender pour endpoint Windows Server 2012 R2 et 2016**
 
-Pour recevoir des améliorations et des correctifs de produit réguliers pour le composant capteur PEPT, assurez-vous Windows mise à jour [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliquée ou approuvée. En outre, pour maintenir les composants de protection à jour, veuillez référencer Gérer Antivirus Microsoft Defender mises à jour [et appliquer les lignes de base.](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
+Pour recevoir des améliorations et des correctifs de produit réguliers pour le composant capteur PEPT, assurez-vous Windows mise à jour [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) est appliquée ou approuvée. En outre, pour que les composants de protection restent à jour, veuillez référencer Gérer Antivirus Microsoft Defender mises à jour [et appliquer les lignes de base.](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)
 
 ### <a name="download-installation-and-onboarding-packages"></a>Télécharger les packages d’installation et d’intégration 
 
@@ -179,7 +179,7 @@ Le `/quiet` commutateur supprime toutes les notifications.
 > Antivirus Microsoft Defender ne passe pas automatiquement en mode passif. Vous pouvez choisir de définir Antivirus Microsoft Defender à exécuter en mode passif si vous exécutez une solution antivirus/anti-programme malveillant non-Microsoft. Pour les installations de ligne de commande, l’option facultative définit immédiatement `FORCEPASSIVEMODE=1` le Antivirus Microsoft Defender en mode passif.
 >
 > Pour plus d’informations, [voir Need to set Antivirus Microsoft Defender to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
-> - Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à Microsoft Endpoint Manager actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, voir [Packages et programmes dans Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
+> - Le package d’intégration pour Windows Server 2019 et Windows Server 2022 à Microsoft Endpoint Manager est actuellement un script. Pour plus d’informations sur le déploiement de scripts dans Configuration Manager, voir [Packages et programmes dans Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
 > - Un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser une stratégie de groupe ou Microsoft Endpoint Configuration Manager.
 
 La prise en charge de Windows Server fournit des informations plus approfondies sur les activités du serveur, la couverture de la détection des attaques du noyau et de la mémoire, et permet des actions de réponse.
@@ -242,25 +242,8 @@ Vérifiez que Antivirus Microsoft Defender et Microsoft Defender pour le point d
 
 Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’un appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Microsoft Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
 
-## <a name="offboard-windows-servers"></a>Serveurs de Windows de tableau de bord
-
-Vous pouvez déboarder Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition dans la même méthode que pour les appareils clients Windows 10.
-
-- [Boarding à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Hors-carte des appareils à l’aide de Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Utiliser les outils de gestion des périphériques mobiles pour les appareils mobiles pour les hors-bord et les surveiller](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
-- [Hors-carte des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
-Pour les autres versions Windows serveur, vous avez deux options pour Windows serveurs à partir du service :
-
-- Désinstaller l’agent MMA
-- Supprimer la configuration de l’espace de travail Defender pour le point de terminaison
-
->[!NOTE]
->*Ces instructions de déboardage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez le précédent Microsoft Defender for Endpoint pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
-
 > [!NOTE]
-> L’Antivirus Microsoft Defender n’est pas requise, mais elle est recommandée. Si un autre produit fournisseur antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est en cours d’exécution après avoir vérifié que le capteur Sense (Microsoft Defender for Endpoint) est en cours d’exécution. 
+> L’Antivirus Microsoft Defender n’est pas requise, mais elle est recommandée. Si un autre produit fournisseur antivirus est la solution de protection de point de terminaison principale, vous pouvez exécuter l’Antivirus Defender en mode passif. Vous pouvez uniquement confirmer que le mode passif est actif après avoir vérifié que le capteur SENSE (Microsoft Defender for Endpoint Sensor) est en cours d’exécution. 
 
 1. Exécutez la commande suivante pour vérifier que Antivirus Microsoft Defender est installé :
 
@@ -283,10 +266,28 @@ Pour les autres versions Windows serveur, vous avez deux options pour Windows se
 Suivez les étapes de [l’étape Exécuter](run-detection-test.md) un test de détection sur un appareil nouvellement intégré pour vérifier que le serveur fait des rapports à Defender pour le service Endpoint.
 
 
-## <a name="next-steps"></a>Étapes suivantes
-Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender pour le point de terminaison. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
+## <a name="next-steps"></a>Prochaines étapes
+Une fois les appareils intégrés au service, vous devez configurer les composants individuels de Microsoft Defender for Endpoint. Suivez [l’ordre d’adoption](prepare-deployment.md#adoption-order) pour être guidé sur l’activation des différents composants.
 
-## <a name="related-topics"></a>Rubriques connexes
+
+## <a name="offboard-windows-servers"></a>Serveurs de Windows de tableau de bord
+
+Vous pouvez déboarder Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition dans la même méthode que pour les appareils clients Windows 10.
+
+- [Boarding à l’aide de la stratégie de groupe](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Hors-carte des appareils à l’aide de Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Utiliser les outils de gestion des périphériques mobiles pour les appareils mobiles pour les hors-bord et les surveiller](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Hors-carte des appareils à l’aide d’un script local](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
+Pour les autres versions Windows serveur, vous avez deux options pour Windows serveurs à partir du service :
+
+- Désinstaller l’agent MMA
+- Supprimer la configuration de l’espace de travail Defender pour le point de terminaison
+
+>[!NOTE]
+>*Ces instructions de déboardage pour d’autres versions de serveur Windows s’appliquent également si vous exécutez le précédent Microsoft Defender for Endpoint pour Windows Server 2016 et Windows Server 2012 R2 qui nécessite le MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+
+## <a name="related-topics"></a>Voir aussi
 - [Intégrer des versions antérieures de Windows](onboard-downlevel.md)
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)

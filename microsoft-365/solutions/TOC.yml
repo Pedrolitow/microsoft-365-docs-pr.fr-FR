@@ -289,7 +289,7 @@
         - name: Configurations des identités et de l’accès aux appareils
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
         - name: Déployer Microsoft Defender pour point de terminaison
-          href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+          href: /microsoft-365/security/defender-endpoint/deployment-phases.md
         - name: Migrer de Symantec vers Microsoft Defender pour point de terminaison
           href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
         - name: Passer de McAfee à Microsoft Defender pour point de terminaison

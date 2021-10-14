@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: b93469fe1cb60dd1f0b86d34e23c49faa5c9e373
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae6d9ab0017ed4d4a33fc57be74ac0ea4aa955a4
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205030"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335949"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
@@ -91,7 +91,7 @@ Pour activer les fonctionnalités de Microsoft 365 pour vos travailleurs hybride
 |Proxy d’application Azure AD|Fournir un accès à distance sécurisé pour les applications web hébergées sur les serveurs intranet.|Nécessite un abonnement Azure payé séparément|
 |VPN point à site Azure|Créer une connexion sécurisée à partir de l’appareil d’un employé distant sur votre intranet via un réseau virtuel Azure.|Nécessite un abonnement Azure payé séparément|
 |Windows Virtual Desktop|Prise en charge de travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés avec des bureaux virtuels exécutés dans Azure.|Nécessite un abonnement Azure payé séparément|
-|Services Bureau à distance (RDS)|Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet.|Microsoft 365 E3 ou E5|
+|Bureau à distance |Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet.|Microsoft 365 E3 ou E5|
 |Passerelle des services Bureau à distance|Chiffrer les communications et empêcher les hôtes RDS d’être directement exposés à Internet.|Nécessite des licences Windows Server distinctes|
 |Microsoft Intune|Gérer les appareils et les applications.|Microsoft 365 E3 ou E5|
 |Configuration Manager|Gérer les installations, mises à jour et paramètres logiciels de vos appareils|Nécessite des licences de gestionnaire de configuration distinctes|
