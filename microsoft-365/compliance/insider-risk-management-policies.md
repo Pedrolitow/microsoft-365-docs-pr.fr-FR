@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9bc29db2ffd4914093b7045241395732f49a8b16
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 3548f23964f50740ce8c3adb96d82a2f0cbafddd
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335645"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364602"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -127,13 +127,13 @@ Le tableau suivant répertorie les événements déclencheurs et les conditions 
 
 | **Modèle de stratégie** | **Événements déclencheurs pour les stratégies** | **Conditions préalables** |
 | :------------------ | :--------------------------------- | :---------------- |
-| Vol de données par des employés quittant votre organisation | Indicateur de date de démission ou de licenciement du connecteur RH | (facultatif) Connecteur Microsoft 365 RH configuré pour les indicateurs de date de démission ou de licenciement ou l’intégration Azure Active Directory activée |
-| Fuites de données générales | Activité de stratégie de fuite de données qui crée une alerte de gravité élevée | (facultatif) Stratégie DLP configurée pour les alertes de gravité élevée ou un événement déclencheur d’exfiltration des données intégré |
+| Vol de données par des employés quittant votre organisation | Indicateur de date de départ ou de résiliation à partir d’un connecteur RH Azure Active Directory suppression de compte | (facultatif) Connecteur Microsoft 365 RH configuré pour les indicateurs de date de démission ou de licenciement |
+| Fuites de données générales | L’activité de stratégie de fuite de données qui crée une alerte de *Gravité élevée* ou des événements déclencheurs d’exfiltration intégrés | (facultatif) Stratégie DLP configurée pour les alertes de gravité élevée |
 | Fuites de données par des utilisateurs prioritaires | L’activité de stratégie de fuite de données qui crée une alerte de *Gravité élevée* ou des événements déclencheurs d’exfiltration intégrés | (facultatif) Stratégie DLP configurée pour les alertes de gravité élevée <br><br> Groupes d’utilisateurs prioritaires configurés dans les paramètres de risque interne |
 | Fuites de données provoquées par un utilisateur mécontent | Amélioration des performances, performances médiocres ou indicateurs de changement du niveau des tâches à partir du connecteur RH | Connecteur Microsoft 365 RH configuré pour les indicateurs de mécontentement |
-| Violations générales de la stratégie de sécurité | Évasion défensive des contrôles de sécurité ou programme indésirable détecté par Microsoft Defender pour point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> Intégration de Microsoft Defender pour point de terminaison avec le Centre de conformité Microsoft 365 configuré |
+| Violations générales de la stratégie de sécurité | Défense contre les contrôles de sécurité ou les logiciels indésirables détectés par Microsoft Defender pour le point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> Intégration de Microsoft Defender pour point de terminaison avec le Centre de conformité Microsoft 365 configuré |
 | Violations de stratégie de sécurité par des utilisateurs quittant l’entreprise | Indicateurs de date de démission ou de licenciement du connecteur RH ou suppression de compte Azure Active Directory | (facultatif) Connecteur Microsoft 365 RH configuré pour les indicateurs de date de démission ou de licenciement <br><br> Abonnement actif Microsoft Defender pour point de terminaison <br><br> Intégration de Microsoft Defender pour point de terminaison avec le Centre de conformité Microsoft 365 configuré |
-| Violations de la stratégie de sécurité par des utilisateurs prioritaires | Évasion défensive des contrôles de sécurité ou programme indésirable détecté par Microsoft Defender pour point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> Intégration de Microsoft Defender pour point de terminaison avec le Centre de conformité Microsoft 365 configuré <br><br> Groupes d’utilisateurs prioritaires configurés dans les paramètres de risque interne |
+| Violations de la stratégie de sécurité par des utilisateurs prioritaires | Défense contre les contrôles de sécurité ou les logiciels indésirables détectés par Microsoft Defender pour le point de terminaison | Abonnement actif Microsoft Defender pour point de terminaison <br><br> Intégration de Microsoft Defender pour point de terminaison avec le Centre de conformité Microsoft 365 configuré <br><br> Groupes d’utilisateurs prioritaires configurés dans les paramètres de risque interne |
 | Violations de stratégie de sécurité par un utilisateur mécontent | Amélioration des performances, performances médiocres ou indicateurs de changement du niveau des tâches à partir du connecteur RH | Connecteur Microsoft 365 RH configuré pour les indicateurs de mécontentement <br><br> Abonnement actif Microsoft Defender pour point de terminaison <br><br> Intégration de Microsoft Defender pour point de terminaison avec le Centre de conformité Microsoft 365 configuré |
 
 ## <a name="prioritize-content-in-policies"></a>Hiérarchiser le contenu dans les stratégies
@@ -271,7 +271,7 @@ Achevez les étapes suivantes pour créer une stratégie :
     - **Description (facultatif)** : entrez une description pour la stratégie.
 
 6. Sélectionnez **Suivant** pour continuer.
-7. Sur la page **Utilisateurs et groupes**, sélectionnez **Inclure tous les utilisateurs et groupes** ou **Inclure des utilisateurs et groupes spécifiques** pour définir les utilisateurs ou groupes inclus dans la stratégie ou, si vous avez choisir un modèle basé sur les utilisateurs prioritaires, sélectionnez **Ajouter ou modifier des groupes d’utilisateurs prioritaires**. La sélection de **Inclure tous les utilisateurs et groupes** permettra de rechercher les événements déclencheurs pour tous les utilisateurs et groupes dans votre organisation pour commencer à établir des scores de risque pour la stratégie. La sélection de **Inclure des utilisateurs et groupes spécifiques** vous permettra de définir les utilisateurs et groupes à affecter à la stratégie.
+7. Sur la page **Utilisateurs et groupes**, sélectionnez **Inclure tous les utilisateurs et groupes** ou **Inclure des utilisateurs et groupes spécifiques** pour définir les utilisateurs ou groupes inclus dans la stratégie ou, si vous avez choisir un modèle basé sur les utilisateurs prioritaires, sélectionnez **Ajouter ou modifier des groupes d’utilisateurs prioritaires**. La sélection de **Inclure tous les utilisateurs et groupes** permettra de rechercher les événements déclencheurs pour tous les utilisateurs et groupes dans votre organisation pour commencer à établir des scores de risque pour la stratégie. La sélection de **Inclure des utilisateurs et groupes spécifiques** vous permettra de définir les utilisateurs et groupes à affecter à la stratégie. Les comptes d’utilisateur invité ne sont pas pris en charge.
 8. Sélectionnez **Suivant** pour continuer.
 9. Sur la page **Contenu à prioriser**, vous pouvez attribuer (le cas échéant) les sources à hiérarchiser, ce qui augmente les possibilités de générer une alerte de gravité élevée pour ces sources. Sélectionnez l'une des options suivantes :
 

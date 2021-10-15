@@ -11,16 +11,16 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: e07b5fda65a457ab38cf5d2387bbec0aaa039248
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2b3ba016e5a205ddb6eaccc4df71bdc4ad612085
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211380"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364614"
 ---
 # <a name="validate-new-devices"></a>Valider les nouveaux appareils
 
-Que vous débutiez avec Microsoft Manged Desktop ou un abonné de longue durée, il est préférable de tester un exemple de tout modèle d’appareil que vous inscrivez pour la première fois dans le service. Cela est vrai si vous commandez de nouveaux appareils ou que vous en utilisez des appareils existants, y compris les appareils recommandés pour Microsoft Manged Desktop sur le site Shop [Windows 10 Professionnel business devices.](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) Sur ce site, affichez les appareils recommandés  pour une  utilisation avec le service en développez les fonctionnalités dans la zone Filtrer par **zone,** puis sélectionnez Microsoft Manged Desktop . La validation des appareils garantit qu’ils offrent l’expérience utilisateur que vous attendez.
+Que vous débutiez avec Microsoft Manged Desktop ou un abonné de longue durée, il est préférable de tester un exemple de tout modèle d’appareil que vous inscrivez pour la première fois dans le service. Cela est vrai si vous commandez de nouveaux appareils ou que vous en utilisez des appareils existants, y compris les appareils recommandés pour Microsoft Manged Desktop sur le site Shop [Windows Pro business devices.](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) Sur ce site, affichez les appareils recommandés  pour une  utilisation avec le service en développez les fonctionnalités dans la zone Filtrer par **zone,** puis sélectionnez Microsoft Manged Desktop . La validation des appareils garantit qu’ils offrent l’expérience utilisateur que vous attendez.
 
 ## <a name="validate-devices"></a>Valider les appareils
 

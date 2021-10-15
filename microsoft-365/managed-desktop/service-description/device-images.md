@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 84caa800657ee33d4bb44f81eda0acf433a7e227
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 193fed7b4e211fa1389902d7da9f92b96977a118
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212664"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364157"
 ---
 # <a name="device-images"></a>Images d’appareil
 
@@ -31,7 +31,7 @@ Lorsque vous commandez un nouvel appareil auprès d’un fabricant [approuvé,](
 Travaillez directement avec le représentant commercial Dell, qui s’assure que l’image approuvée par Microsoft Manged Desktop est appliquée aux appareils pour votre commande. Pour plus de questions sur les appareils Dell, l’image et le processus de commande, contactez MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé sur le site d’appareils [métiers Shop Windows 10 Professionnel](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) (filtrez l’affichage pour afficher les appareils Microsoft Manged Desktop).
+Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé sur le site d’appareils [métiers Shop Windows Pro](https://www.microsoft.com/windows/business/devices#view-all-filter) (filtrez l’affichage pour afficher les appareils Microsoft Manged Desktop).
 
 Si vous commandez un appareil à partir de HP qui a été approuvé comme [exception](customizing.md) mais qui n’est pas répertorié dans la page Liste des appareils, n’oubliez pas de demander la référence SKU à utiliser pour votre modèle. Nous allons travailler avec HP pour vous obtenir ces informations à l’aide de votre demande d’exception. Vous pouvez également contacter HP directement pour toute question sur les appareils et les instructions de commande des appareils à l’aide des adresses suivantes :
  
@@ -41,10 +41,10 @@ Si vous commandez un appareil à partir de HP qui a été approuvé comme [excep
 - Global : mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Microsoft Manged Desktop, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MmD Enablement*». Travaillez en partenariat avec votre représentant commercial Lenovo ou votre partenaire de canal Lenovo pour les services recommandés, le support et les services d’imagerie.
+Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Microsoft Manged Desktop, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MMD Enablement*». Travaillez avec votre représentant commercial Lenovo ou votre partenaire de canal Lenovo pour les services recommandés, le support et les services d’imagerie.
 
 ### <a name="microsoft"></a>Microsoft
-Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont avec une image qui fonctionne avec Microsoft Manged Desktop. Aucune autre étape n’est requise.
+Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont produits avec une image qui fonctionne avec Microsoft Manged Desktop. Aucune autre étape n’est requise.
 
 Pour obtenir la dernière image disponible dans l’usine sur un appareil Microsoft, faites appel à votre spécialiste Surface pour utiliser le processus « Po à basculement » surface.
 
@@ -52,7 +52,7 @@ Pour obtenir la dernière image disponible dans l’usine sur un appareil Micros
 
 Vous pouvez réutiliser des appareils existants [](device-requirements.md#minimum-requirements) tant qu’ils répondent à la fois aux exigences de l’appareil et aux [logiciels.](device-requirements.md#installed-software) Suivez les étapes pertinentes pour votre fabricant.
 
-Vous pouvez réimager des appareils avec une image du fabricant ou à l’aide Microsoft Manged Desktop « image universelle ». Pour obtenir une image de fabricant appropriée, vous pouvez commander au moins un [nouvel appareil](#new-devices) du modèle que vous reutilisez. Vous pouvez ensuite obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
+Vous pouvez réimager des appareils avec une image du fabricant ou à l’aide Microsoft Manged Desktop « image universelle ». Pour obtenir une image de fabricant appropriée, vous pouvez commander au moins un nouvel [appareil](#new-devices) du modèle que vous reutilisez. Vous pouvez ensuite obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
 
 > [!NOTE]
 > Il vous incombe de créer, tester et déployer des images. Nous vous recommandons également d’utiliser les images appropriées fournies par le fabricant autant que possible au lieu d’images personnalisées, y compris l'« image universelle ».
@@ -69,7 +69,7 @@ Ces étapes suppriment toutes les données sur l’appareil. Avant de commencer,
     - DÉPLOYER. CMD
     - ReCreatePartitions.txt
 3. [Démarrage de l’appareil vers WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) Lecteur USB.
-4. Dans une invite de commandes, exécutez [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references).
+4. Dans une invite de commandes, [ exécutezDiskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references).
 5. Dans Diskpart, exécutez, puis notez le numéro de disque de stockage `list disk` principal (généralement, Disque 0).
 6. Quittez Diskpart en tapant `exit` .
 7. Dans l’invite de commandes, exécutez , où sys_disk est le numéro de disque du disque de stockage principal que vous avez déterminé et recovery_wim est le nom de fichier `deploy.cmd <sys_disk> <recovery_wim>` du .   Fichier WIM que vous avez copié précédemment.
@@ -83,7 +83,7 @@ Ces images utilisent l Windows de récupération (WinRE) et il s’agit d’un p
 
 
 ### <a name="universal-image"></a>Image universelle
-Microsoft Manged Desktop a créé une image contenant des Windows 10 Professionnel et des Microsoft 365 Apps pour Enterprise que vous pouvez utiliser avec Microsoft Manged Desktop. Toutefois, il est préférable d’utiliser des images adaptées aux Microsoft Manged Desktop fournies par le fabricant autant que possible, même si cela signifie une version Windows plus ancienne qui doit ensuite être mise à jour une fois que l’utilisateur s’est signé. L’utilisation Microsoft Manged Desktop’image universelle doit être une option finale.
+Microsoft Manged Desktop a créé une image contenant des Windows Pro et des Microsoft 365 Apps pour Enterprise que vous pouvez utiliser avec Microsoft Manged Desktop. Toutefois, il est préférable d’utiliser des images appropriées aux Microsoft Manged Desktop fournies par le fabricant chaque fois que possible, même si cela signifie une version Windows plus ancienne qui doit ensuite être mise à jour une fois que l’utilisateur se signe. L’utilisation Microsoft Manged Desktop’image universelle doit être une option finale.
 
 - Nous mettez à jour l’image avec les dernières mises Windows qualité mensuelles tous les 30 à 60 jours et Microsoft 365 Apps pour Enterprise mises à jour au moins deux fois par an.
 - L’image contient un package d’approvisionnement de récupération pour s’assurer que Microsoft 365 Apps pour Enterprise est restaurée après Windows scénarios de récupération.
@@ -92,7 +92,7 @@ Microsoft Manged Desktop a créé une image contenant des Windows 10 Professionn
 - Les pilotes et les mises à jour qualité sont ajoutés à Windows lors du déploiement à partir du lecteur USB.
 
 > [!NOTE]
-> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournissons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
+> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournirons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
 
 Envoyez des demandes pour le contenu et la documentation de l’image universelle en créant une demande de modification sur le [portail d’administration.](../get-started/access-admin-portal.md)
 

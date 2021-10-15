@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel géré par les humains, rançongiciel géré par l’homme, HumOR, attaque par extorsion, attaque par rançongiciel, chiffrement, cryptovirologie
 description: Utilisez l’accès contrôlé aux dossiers, MIP, DLP et Microsoft Cloud App Security pour protéger vos données sensibles Microsoft 365.
-ms.openlocfilehash: 392a86ef736adb258f131515a855d21ca29fe438
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3085afe91449c8c368a0f8622c26ceb1581b331a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149537"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364807"
 ---
 # <a name="step-5-protect-information"></a>Étape 5 : Vérifier les informations
 
@@ -117,12 +117,12 @@ Informations clés de Microsoft :
 - [Menace croissante des rançongiciels](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), billet de blog Microsoft On the Issues du 20 juillet 2021
 - [Rançongiciel géré par l’humain](/security/compass/human-operated-ransomware)
 - [Se protéger rapidement contre les rançongiciels et les attaques](/security/compass/protect-against-ransomware)
-- [Dernier rapport de la Veille de sécurité Microsoft](https://www.microsoft.com/securityinsights/) (voir les pages 22 à 24)
+- [Rapport de défense numérique Microsoft 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (voir les pages 10 à 19)
 - **Rançongiciel : rapport sur les menaces constantes et omniprésentes** dans le nœud **d’analyse des menaces** du portail Microsoft 365 Defender (consultez ces [exigences en matière de licences](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365 :
 
-- [Optimiser la résilience des rançongiciels avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
+- [Optimisez la résilience aux ransomwares avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Récupérer après une attaque par rançongiciel](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Protection contre les rançongiciels et programmes malveillants](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protéger votre PC Windows 10 contre les rançongiciels](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
@@ -135,7 +135,7 @@ Microsoft 365 Defender :
 Microsoft Azure :
 
 - [Défenses Azure pour les attaques par rançongiciel](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [Optimiser la résilience des rançongiciels avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
+- [Optimisez la résilience aux ransomwares avec Azure et Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de sauvegarde et de restauration pour se protéger contre les rançongiciels](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Se protéger contre les rançongiciels avec la Sauvegarde Microsoft Azure](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vidéo de 26 minutes)
 - [Récupération d’une compromission d’identité systémique](/azure/security/fundamentals/recover-from-identity-compromise)

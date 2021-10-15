@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c10d7f59f31b3cfbd8baf34247e9fc4288751dd9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6542769d203604738f863af7da211bfc21ba8ac7
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208084"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364674"
 ---
 # <a name="service-changes-and-communication"></a>Modifications de service et communication
 
@@ -25,7 +25,7 @@ Parfois, Microsoft peut avoir besoin de modifier les détails de la façon dont 
 
 ## <a name="changes-made-by-microsoft"></a>Modifications apportées par Microsoft
 
-Nous vous fournirons une notification au moins 30 jours à l’avance pour toute modification majeure nécessitant une action. Nous vous en faire part à l’aide Microsoft Manged Desktop système de messagerie du portail d’administration.
+Nous vous fournirons une notification au moins 30 jours à l’avance pour toute modification majeure nécessitant une action. Nous vous le faire savoir à l’aide Microsoft Manged Desktop de messagerie du portail d’administration.
 
 **Les principales modifications** sont celles qui peuvent avoir un impact sur l’un de ces domaines :
 - Modifications affectant la productivité quotidienne
@@ -45,7 +45,7 @@ Nous apporterons régulièrement d’autres modifications au service pour améli
 
 - Installation des mises à jour Windows et Office jour
 - Mises à jour de la ligne de base de sécurité appliquée aux appareils
-- Appareils pris en charge. Pour voir les appareils recommandés, filtrez les Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise.](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+- Appareils pris en charge. Pour voir les appareils recommandés, filtrez les Microsoft Manged Desktop sur le site [Windows Pro d’entreprise.](https://www.microsoft.com/windows/business/devices)
 
 Nous communiquerons ces modifications à l’aide de canaux établis. Si vous avez des questions sur les modifications, contactez l’équipe Microsoft Manged Desktop [Operations](../working-with-managed-desktop/admin-support.md). Les modifications apportées au service sont également documentées selon les besoins dans [l’historique des modifications.](../change-history-managed-desktop.md)
 

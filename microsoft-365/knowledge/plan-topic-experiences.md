@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Découvrez comment planifier les Sujets Microsoft Viva.
-ms.openlocfilehash: dd7b56342a3881c25be65a62028d024aa55c35ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61729eeaa4a30a3f7e0faf50ab40320d88f3d78a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163191"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364578"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
@@ -36,7 +36,7 @@ Pour en savoir plus sur la technologie d’IA derrière Topics, consultez La rub
 
 Gardez à l’esprit que Topics Doit accéder aux sites et fichiers que vos utilisateurs utilisent tous les jours. Le déploiement de rubriques Dans un environnement de test ou de développement peut ne pas produire de résultats utiles.
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d'administration Microsoft 365 et configurer Rubriques.
 
@@ -71,9 +71,7 @@ Nous vous recommandons de créer un processus pour que les utilisateurs ou les g
 
 ### <a name="multi-geo"></a>Multi-Géo
 
-Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Topics utilise tout le site dans l’emplacement central.)
-
-Tout le traitement et le stockage du contenu sont effectués à l’emplacement central.
+Si votre organisation a déployé [Microsoft 365 multigéogé,](/microsoft-365/enterprise/microsoft-365-multi-geo)Rubriques de Rubriques respecte la indépendance des données en veillant à ce que les données des rubriques sont toujours stockées dans l’emplacement géographique correct. Le centre de rubriques est mise en service dans l’emplacement central et le contenu de tous les emplacements géographiques y est traitée. Les rubriques découvertes qui en résultent sont stockées dans le même emplacement géographique que le contenu source. Si les données sources de la rubrique se déplacent entre les emplacements géographiques, les propriétés de rubrique correspondantes, telles que la description, se déplacent également.
 
 ## <a name="user-permissions"></a>Autorisations utilisateur
 
@@ -108,7 +106,7 @@ Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parm
 - **Personnes ou groupes de sécurité sélectionnés uniquement**
 - **Personne**
 
-Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les personnes à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
+Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les utilisateurs à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
 
 ## <a name="knowledge-rules"></a>Règles de connaissance
 
@@ -119,7 +117,7 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 Le .csv doit contenir les paramètres suivants :
 
 - **Nom** : tapez le nom de la rubrique à exclure. Il existe deux méthodes pour y parvenir :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.

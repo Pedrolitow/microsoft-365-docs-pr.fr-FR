@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: bb5fa0e54eadec89124c39a350b7591be82b7583
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 8998a0e4f6cf01a7394e44695cd06f0b60915c7e
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335877"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364734"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
@@ -101,7 +101,6 @@ L'un des rôles d'administrateur suivants est requis pour voir les pages de gouv
 - Administrateur de la société
 - Administrateur de conformité
 - Administrateur de conformité des données
-- Lecteur de conformité (en lecture seule)
 - Lecteur général
 - Administrateur de sécurité
 - Opérateur de sécurité

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment modifier un schéma EDM pour utiliser une correspondance configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a409b8bad43b6a6ade81c96ae14f691289e11cec
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: a7d401c89ccff96615c4b367341542bf0ab5c697
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60336045"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364698"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable
 
@@ -48,81 +48,81 @@ La classification EDM (Exact Data Match) vous permet de créer des types d’inf
 
 5. Personnalisez le schéma de sorte que chaque colonne utilise « caseInsensitive » et/ou « ignoredDelimiters ».  La valeur par défaut de « caseInsensitive » est « false » et « ignoredDelimiters » est une chaîne vide. 
 
-> [!NOTE]
-> Le type d’informations sensibles personnalisé sous-jacent ou le type d’informations sensibles intégré utilisé pour détecter le modèle regex général doivent prendre en charge la détection des entrées de variantes indiquées avec ignoredDelimiters. Par exemple, le type d’informations sensibles intégré Numéro de sécurité sociale (SSN) américain permet de détecter les variantes des données qui incluent des tirets, des espaces ou une absence d’espace entre les numéros groupés qui composent le numéro de sécurité sociale. Par conséquent, les seuls délimiteurs pertinents à inclure dans ignoredDelimiters EDM pour les données SSN sont : les tirets et les espaces.
-
-Voici un exemple de schéma qui simule la correspondance non sensible à la casse en créant les colonnes supplémentaires nécessaires pour identifier les variations de casse dans les données sensibles.
-
-```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-  <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
-           <Field name="PolicyNumber" searchable="true" />
-           <Field name="PolicyNumberLowerCase" searchable="true" />
-           <Field name="PolicyNumberUpperCase" searchable="true" />
-           <Field name="PolicyNumberCapitalLetters" searchable="true" />
-  </DataStore>
-</EdmSchema>
-```
-
-Dans l’exemple ci-dessus, les variantes de la colonne d’origine `PolicyNumber` ne sont plus nécessaires si `caseInsensitive` et `ignoredDelimiters` sont ajoutés.
-
-Pour mettre à jour ce schéma de façon à ce qu’EDM utilise la correspondance configurable, utilisez les indicateurs `caseInsensitive` et `ignoredDelimiters`. Voici à quoi cela ressemble :
-
-```xml
-<EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-  <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
-         <Field name="PolicyNumber" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
-  </DataStore>
-</EdmSchema>
-```
-
-L’indicateur `ignoredDelimiters` prend en charge tous les caractères non alphanumériques. Voici quelques exemples :
-- \.
-- \-
-- \/
-- \_
-- \*
-- \^
-- \#
-- \!
-- \?
-- \[
-- \]
-- \{
-- \}
-- \\
-- \~
-- \;
-
-L’indicateur `ignoredDelimiters` ne prend pas en charge :
-- Les caractères 0 à 9
-- A-Z
-- a-z
-- \"
-- \,
-- |
+    > [!NOTE]
+    > Le type d’informations sensibles personnalisé sous-jacent ou le type d’informations sensibles intégré utilisé pour détecter le modèle regex général doivent prendre en charge la détection des entrées de variantes indiquées avec ignoredDelimiters. Par exemple, le type d’informations sensibles intégré Numéro de sécurité sociale (SSN) américain permet de détecter les variantes des données qui incluent des tirets, des espaces ou une absence d’espace entre les numéros groupés qui composent le numéro de sécurité sociale. Par conséquent, les seuls délimiteurs pertinents à inclure dans ignoredDelimiters EDM pour les données SSN sont : les tirets et les espaces.
+    
+    Voici un exemple de schéma qui simule la correspondance non sensible à la casse en créant les colonnes supplémentaires nécessaires pour identifier les variations de casse dans les données sensibles.
+    
+    ```xml
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
+               <Field name="PolicyNumber" searchable="true" />
+               <Field name="PolicyNumberLowerCase" searchable="true" />
+               <Field name="PolicyNumberUpperCase" searchable="true" />
+               <Field name="PolicyNumberCapitalLetters" searchable="true" />
+      </DataStore>
+    </EdmSchema>
+    ```
+    
+    Dans l’exemple ci-dessus, les variantes de la colonne d’origine `PolicyNumber` ne sont plus nécessaires si `caseInsensitive` et `ignoredDelimiters` sont ajoutés.
+    
+    Pour mettre à jour ce schéma de façon à ce qu’EDM utilise la correspondance configurable, utilisez les indicateurs `caseInsensitive` et `ignoredDelimiters`. Voici à quoi cela ressemble :
+    
+    ```xml
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+      <DataStore name="PatientRecords" description="Schema for patient records policy" version="1">
+             <Field name="PolicyNumber" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
+      </DataStore>
+    </EdmSchema>
+    ```
+    
+    L’indicateur `ignoredDelimiters` prend en charge tous les caractères non alphanumériques. Voici quelques exemples :
+    - \.
+    - \-
+    - \/
+    - \_
+    - \*
+    - \^
+    - \#
+    - \!
+    - \?
+    - \[
+    - \]
+    - \{
+    - \}
+    - \\
+    - \~
+    - \;
+    
+    L’indicateur `ignoredDelimiters` ne prend pas en charge :
+    - Les caractères 0 à 9
+    - A-Z
+    - a-z
+    - \"
+    - \,
+    - |
 
 6. Connectez-vous au Centre de sécurité et conformité en utilisant la procédure [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-> [!NOTE]
-> Si votre organisation a configuré une [Clé client pour Microsoft 365 au niveau du client (préversion publique)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Elle est disponible pour les clients sous licence E5 uniquement dans le cloud commercial.
+    > [!NOTE]
+    > Si votre organisation a configuré une [Clé client pour Microsoft 365 au niveau du client (préversion publique)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Elle est disponible pour les clients sous licence E5 uniquement dans le cloud commercial.
 
 7. Mettez à jour votre schéma en exécutant ces applets de commande une par une :
 
-`$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
-
-`Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
+    `$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0`
+    
+    `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
 8. Si nécessaire, mettez à jour le fichier de données pour qu’il corresponde à la nouvelle version du schéma.
 
-> [!TIP]
-> Si vous le souhaitez, vous pouvez exécuter une validation par rapport à votre fichier CSV avant de charger en exécutant :
->
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
->
->Pour plus d’informations sur tous les paramètres pris en charge par EdmUploadAgent.exe
->
-> `EdmUploadAgent.exe /?`
+    > [!TIP]
+    > Si vous le souhaitez, vous pouvez exécuter une validation par rapport à votre fichier CSV avant de charger en exécutant :
+    >
+    >`EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    >
+    >Pour plus d’informations sur tous les paramètres pris en charge par EdmUploadAgent.exe
+    >
+    > `EdmUploadAgent.exe /?`
 
 9. Ouvrez la fenêtre Invite de commandes (en tant qu’administrateur), puis exécutez la commande suivante pour hacher et charger vos données sensibles :
 

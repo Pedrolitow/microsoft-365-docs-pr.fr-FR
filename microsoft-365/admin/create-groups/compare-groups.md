@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: f62fd8f05231589edefdc131e35bd2113a129e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 655b90ca13631c1df7937443e37d1bf904814e14
+ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165807"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60335417"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -72,7 +72,7 @@ Les groupes de distribution conviennent aux situations dans lesquelles vous deve
 
 Les groupes de distribution peuvent être [mis à niveau vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md).
 
-Des groupes de distribution peuvent être ajoutés à une équipe dans Microsoft Teams.
+Les groupes de distribution peuvent être ajoutés à une équipe dans Microsoft Teams, bien que seuls les membres soient ajoutés et non le groupe lui-même.
 
 Les groupes Microsoft 365 ne peuvent pas être membres des groupes de distribution.
 

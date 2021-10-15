@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c1e2b871c8b8dfb8229482d43ca02898f6adb852
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: fc76ad5e41610c23f60392c2f13655049018a1eb
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208132"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364590"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
@@ -56,7 +56,7 @@ Les administrateurs informatiques bénéficient des fonctionnalités suivantes :
 ## <a name="device-management"></a>Gestion des appareils
 Bureau géré Microsoft prend en charge la gestion des appareils enregistrés et des logiciels Microsoft utilisés.
 
-- **Matériel :** Nous avons dispensé votre service de la recherche de compatibilité des appareils au service en fournissant des conditions, des outils et des processus pour simplifier la sélection de sorte que vous pouvez choisir des appareils en toute confiance. Vous pouvez trouver les appareils recommandés en appliquant le filtre pour Microsoft Managed Desktop sur le site [Acheter des appareils Windows 10 Professionnel](https://www.microsoft.com/windowsforbusiness/view-all-devices). Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs.
+- **Matériel :** Nous avons dispensé votre service de la recherche de compatibilité des appareils au service en fournissant des conditions, des outils et des processus pour simplifier la sélection de sorte que vous pouvez choisir des appareils en toute confiance. Vous pouvez trouver les appareils recommandés en filtrant les Microsoft Manged Desktop sur le site [Windows Pro d’entreprise.](https://www.microsoft.com/windows/business/devices) Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs.
 
 - **Mises à jour :** Bureau géré Microsoft configure et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalités de Windows 10, les pilotes, les micrologiciels, les définitions des anti-virus et les mises à jour de Microsoft 365 Apps for enterprise. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
 
