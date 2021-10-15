@@ -380,7 +380,7 @@
                       href: streaming-api-event-hub.md
                     - name: Événements de repérage avancé Stream vers votre compte de stockage
                       href: streaming-api-storage.md
-                    - name: Types d’événements pris en charge
+                    - name: Types d’événements de diffusion en continu pris en charge
                       href: supported-event-types.md
                     - name: Configurer votre hub d’événements
                       href: configure-event-hub.md
