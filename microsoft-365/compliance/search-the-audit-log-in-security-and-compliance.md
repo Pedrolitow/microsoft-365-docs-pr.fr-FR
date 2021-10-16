@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 3edb4307937bcf76a87f9bbdf8930a646794156e
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: dd79e0c74e2313855e2bf698053c99a50e5aaefd
+ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335829"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "60400058"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -125,7 +125,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Si vous voulez télécharger par programme les données du journal d’audit, nous recommandons d’utiliser l’API Activité de gestion Office 365 au lieu d’un script PowerShell. L’API Activité de gestion Office 365 est un service web REST que vous pouvez utiliser pour développer des solutions de surveillance des opérations, de la sécurité et de la conformité pour votre organisation. Pour plus d’informations, consultez [Référence de l’API d’activité de gestion d’Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+- Si vous souhaitez télécharger des données par programmation à partir du journal d’audit, nous vous recommandons d’utiliser l’API Activité de gestion Office 365 au lieu d’utiliser un script PowerShell. L’API Activité de gestion Office 365 est un service web REST que vous pouvez utiliser pour développer des solutions de surveillance des opérations, de la sécurité et de la conformité pour votre organisation. Pour plus d’informations, consultez [Référence de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 - Azure Active Directory (Azure AD) est le service d’annuaire pour Microsoft 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
@@ -646,6 +646,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |Source de résultats activée pour les recherches de personnes|PeopleResultsScopeSet|Un administrateur de site crée l’origine des résultats pour les recherches de personnes pour un site.|
 |Flux RSS activés|NewsFeedEnabledSet|L'administrateur ou le propriétaire du site active les flux RSS d'un site. Les administrateurs généraux peuvent activer les flux RSS pour l'ensemble de l'organisation dans le Centre d'administration SharePoint.|
 |Site joint au site concentrateur|HubSiteJoined|Un propriétaire de site associe son site à un site concentrateur.|
+|Quota de collection de sites modifié|SiteCollectionQuotaModified|L’administrateur de site modifie le quota d’une collection de sites.|
 |Site hub inscrit|HubSiteRegistered|Un administrateur SharePoint ou global crée un site concentrateur. Le résultat est que le site est inscrit pour être un site concentrateur.|
 |Emplacement des données autorisées supprimé|AllowedDataLocationDeleted|Un administrateur SharePoint ou général a supprimé un emplacement de données autorisé dans un environnement à plusieurs emplacements géographiques.|
 |Administrateur d’emplacement géographique supprimé|GeoAdminDeleted|Un administrateur SharePoint ou général a supprimé un utilisateur en tant qu’administrateur géo d’un emplacement.|
@@ -1093,7 +1094,7 @@ La journalisation d’audit de l’administrateur Exchange (activée par défaut
 
 Voici quelques conseils pour rechercher des activités d’administrateur Exchange dans le journal d’audit :
 
-- Pour renvoyer des entrées du journal d’audit de l’administrateur Exchange, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utiliser les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de recherche des cmdlets exécutées par un administrateur Exchange spécifique à une plage de dates donnée.
+- Pour renvoyer les entrées du journal d'audit de l'administrateur Exchange, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utilisez les zones de plage de dates et la liste **Utilisateurs** pour affiner les résultats de la recherche des cmdlets exécutées par un administrateur Exchange spécifique dans une plage de dates spécifique.
 
 - Pour afficher des événements du journal d’audit de l’administrateur Exchange, filtrez les résultats de la recherche, puis tapez **-** (tiret) dans la zone de filtre **activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
 
