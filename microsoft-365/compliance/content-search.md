@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l'outil eDiscovery de recherche de contenu dans le centre de conformité pour rechercher du contenu dans différents services Microsoft 365.
-ms.openlocfilehash: 873a6e10117f1573b4679c14f054dd15c2c16949
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e3d8ee540ab403eb2e3ebeaf930d498599be530a
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175370"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364686"
 ---
 # <a name="create-a-content-search"></a>Créer une recherche de contenu
 
-Vous pouvez utiliser l'outil de recherche de contenu eDiscovery dans le Centre de conformité Microsoft 365 pour rechercher du contenu en place tels que des e-mails, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher du contenu dans ces sources de données Microsoft 365 :
+Vous pouvez utiliser l'outil de recherche de contenu eDiscovery dans le Centre de conformité Microsoft 365 pour rechercher du contenu en place tels que des e-mails, des documents et des conversations de messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher du contenu dans ces sources de données basées sur le cloud de Microsoft 365 :
   
 - Echange de boîtes aux lettres en ligne
 
@@ -43,13 +43,17 @@ Vous pouvez utiliser l'outil de recherche de contenu eDiscovery dans le Centre d
 
 Après avoir exécuté une recherche, le nombre d’emplacements de contenu et l’estimation du nombre de résultats de recherche sont affichés sur la page de menu déroulant de recherche. Vous pouvez afficher rapidement des statistiques, telles que les emplacements de contenu qui ont le plus grand nombre d’éléments qui correspondent à la requête de recherche. Une fois que vous avez effectué une recherche, vous pouvez afficher un aperçu des résultats ou les exporter sur un ordinateur local.
 
-## <a name="create-and-run-a-search"></a>Créer et exécuter une recherche
+## <a name="before-you-run-a-search"></a>Avant d’exécuter une recherche
 
-Pour accéder à la page **Recherche de contenu** dans le centre de conformité Microsoft 365 (pour exécuter des recherches et prévisualiser les résultats et exporter les résultats), un administrateur, un responsable de la conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles eDiscovery Manager dans le centre de conformité Microsoft 365 . Pour plus d'informations, consultez [Attribuer des autorisations de découverte électronique](assign-ediscovery-permissions.md).
+- Pour accéder à la page Recherche de contenu dans le centre de conformité Microsoft 365 (pour exécuter des recherches et prévisualiser les résultats et exporter les résultats), un administrateur, un responsable de la conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles eDiscovery Manager dans le centre de conformité Microsoft 365 . Pour plus d'informations, consultez [Attribuer des autorisations de découverte électronique](assign-ediscovery-permissions.md).
+
+- Dans un déploiement Exchange hybride, vous ne pouvez pas utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres sur site. Vous pouvez uniquement utiliser l’outil pour rechercher des boîtes mail dans le cloud.
+
+## <a name="create-and-run-a-search"></a>Créer et exécuter une recherche
   
 1. Accédez à <https://compliance.microsoft.com> et connectez-vous à l’aide des informations d’identification d’un compte avec les autorisations appropriées.
 
-2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout** , puis sur **Recherche de contenu**.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Recherche de contenu**.
 
 3. Sur la **page de recherche** de contenu, cliquez **sur Nouvelle recherche**.
 
@@ -62,7 +66,7 @@ Pour accéder à la page **Recherche de contenu** dans le centre de conformité 
 
     ![Choisissez les emplacements de contenu à mettre sous conservation.](../media/ContentSearchLocations.png)
   
-   1. **Boîtes aux lettres Exchange** : définissez le bouton bascule sur **Activé**, puis cliquez sur **Sélectionner des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer les boîtes aux lettres des membres du groupe en conservation) à placer en conservation. Vous pouvez également effectuer une recherche dans la boîte aux lettres associée à une équipe Microsoft (pour les messages de canal), le groupe Office 365 et le groupe Yammer. Pour plus d’informations sur les données d’application stockées dans les boîtes aux lettres, consultez [Contenu stocké dans les boîtes aux lettres pour eDiscovery](what-is-stored-in-exo-mailbox.md).
+   1. **Boîtes aux lettres Exchange** : définissez le bouton bascule sur **Activé**, puis cliquez sur **Sélectionner des utilisateurs, des groupes ou des équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes mail d’utilisateur et des groupes de distribution. Vous pouvez également effectuer une recherche dans la boîte aux lettres associée à une équipe Microsoft (pour les messages de canal), le groupe Office 365 et le groupe Yammer. Pour plus d’informations sur les données d’application stockées dans les boîtes aux lettres, consultez [Contenu stocké dans les boîtes aux lettres pour eDiscovery](what-is-stored-in-exo-mailbox.md).
 
    2. **Sites SharePoint** : définissez le bouton bascule sur **Activé** puis cliquez sur **Sélectionner des sites** pour spécifier les sites SharePoint et les comptes OneDrive à conserver. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint d’une équipe Microsoft, d’un groupe Office 365 ou d’un groupe Yammer.
   
@@ -83,7 +87,7 @@ Pour accéder à la page **Recherche de contenu** dans le centre de conformité 
       > [!NOTE]
       > Pour réduire les problèmes liés aux longues listes de mots clés, vous êtes limité à 20 lignes au maximum dans la liste de mots clés.
 
-   3. Vous pouvez ajouter des conditions dans une requête de recherche pour affiner une recherche et obtenir un ensemble de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur logique (**c:c**), qui est similaire dans son fonctionnement à l’opérateur **ET**. Cela signifie que les éléments doivent satisfaire la requête de mot-clé et une ou plusieurs conditions pour être inclus dans les résultats. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez la rubrique [Conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions).
+   3. Vous pouvez ajouter des conditions de recherche pour affiner une recherche et retourner un ensemble plus affiné de résultats. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est connectée logiquement à la requête de mot clé (spécifiée dans la zone de mot clé) par un opérateur logique (**c:c**) qui est similaire en termes de fonctionnalité à l’opérateur **AND** . Cela signifie que les éléments doivent satisfaire à la fois à la requête de mot clé et à une ou plusieurs conditions à inclure dans les résultats. C’est ainsi que les conditions aident à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez [Conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions).
 
 7. Examinez les paramètres de recherche (et modifiez-les si nécessaire), puis envoyez la recherche pour la démarrer.
   

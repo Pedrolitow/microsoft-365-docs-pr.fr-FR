@@ -21,20 +21,23 @@
           href: service-description/regions-languages.md
         - name: Cycle de vie du produit
           href: service-description/device-lifecycle.md
-        - name: Configuration requise de l’appareil
-          href: service-description/device-requirements.md
-        - name: Images d’un appareil
-          href: service-description/device-images.md
-        - name: Noms de l’appareil
-          href: service-description/device-names.md
-        - name: Services d’appareils
-          href: service-description/device-services.md
-        - name: Profils d’appareil
-          href: service-description/profiles.md
-        - name: Groupes de déploiement d’appareils
-          href: service-description/deployment-groups.md
-        - name: Configuration des appareils
-          href: service-description/device-policies.md
+        - name: Appareils
+          href: null
+          items:
+            - name: Configuration requise de l’appareil
+              href: service-description/device-requirements.md
+            - name: Images d’un appareil
+              href: service-description/device-images.md
+            - name: Noms de l’appareil
+              href: service-description/device-names.md
+            - name: Services d’appareils
+              href: service-description/device-services.md
+            - name: Profils d’appareil
+              href: service-description/profiles.md
+            - name: Groupes de déploiement d’appareils
+              href: service-description/deployment-groups.md
+            - name: Configuration des appareils
+              href: service-description/device-policies.md
         - name: Technologies de sécurité
           href: service-description/security.md
         - name: Opérations de sécurité
@@ -140,7 +143,7 @@
               href: get-started/m365-apps.md
             - name: Microsoft Teams
               href: get-started/teams.md
-            - name: Microsoft OneDrive
+            - name: "Microsoft\_OneDrive"
               href: get-started/onedrive.md
     - name: Utilisation du Bureau géré Microsoft
       href: working-with-managed-desktop/index.md
@@ -154,6 +157,8 @@
               href: working-with-managed-desktop/device-status-report.md
             - name: Rapport des mises à jour de sécurité Windows
               href: working-with-managed-desktop/security-updates-report.md
+            - name: Rapport d'utilisation de l'application
+              href: working-with-managed-desktop/app-usage-report.md
         - name: Support pour les administrateurs
           href: working-with-managed-desktop/admin-support.md
         - name: Support pour les utilisateurs

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: be83c796312a61e4411d8cd7107d0330678f95de
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9d1577cff0cc06589c833a568af214c99059e829
+ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159813"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60364530"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -74,6 +74,10 @@ Si vous souhaitez surveiller les données des correspondances de stratégie uniq
 
 > [!NOTE]
 > Si le paramètre **Toujours auditer l’activité du fichier pour les appareils** est activé, les activités sur les fichiers Word, PowerPoint, Excel, PDF, et .csv sont toujours auditées, même si l’appareil n’est ciblé par aucune stratégie.
+
+> [!TIP]
+> Pour vous assurer que les activités sont auditées pour tous les types de fichiers pris en charge, créez une [stratégie DLP personnalisée](create-test-tune-dlp-policy.md) à côté de la stratégie par défaut.
+
 
 Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée.
 
@@ -166,7 +170,7 @@ Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochai
 
 - [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
 - [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
-- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
