@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: dd79e0c74e2313855e2bf698053c99a50e5aaefd
-ms.sourcegitcommit: 53a4ee148348010444f7deb0590d34e6a298adb8
+ms.openlocfilehash: b1cb482b478259177044a1af84bf865b8f8ec882
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "60400058"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432708"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -1006,13 +1006,17 @@ Le tableau suivant décrit les activités de configuration des [stratégies de r
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
+| Appartenance à l’étendue adaptative modifiée |ApplicableAdaptiveScopeChange |Des utilisateurs, des sites ou des groupes ont été ajoutés ou supprimés de l’étendue adaptative. Ces modifications sont le résultat de l’exécution de la requête de l’étendue. Étant donné que les modifications sont initiées par le système, l’utilisateur signalé s’affiche en tant que GUID plutôt qu’en tant que compte d’utilisateur.|
 | Paramètres configurés pour une stratégie de rétention |NewRetentionComplianceRule |L’administrateur a configuré les paramètres de rétention pour une nouvelle stratégie de rétention. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule).|
+| Étendue adaptative créée |NewAdaptiveScope |L’administrateur a créé une étendue adaptative.|
 | Étiquette de rétention créée |NewComplianceTag |Un administrateur a créé une étiquette de rétention.|
 | Stratégie de rétention créée |NewRetentionCompliancePolicy|Un administrateur a créé une stratégie de rétention.|
+| Étendue adaptative supprimée | RemoveAdaptiveScope| L’administrateur a supprimé une étendue adaptative.|
 | Paramètres supprimés d’une stratégie de rétention| RemoveRetentionComplianceRule<br/>| Un administrateur a supprimé les paramètres de configuration d’une stratégie de rétention. Cette activité est probablement enregistrée lorsqu’un administrateur supprime une stratégie de rétention ou exécute le cmdlet [Remove-RetentionComplianceRule](/powershell/module/exchange/Remove-RetentionComplianceRule).|
 | Étiquette de rétention supprimée |RemoveComplianceTag | Un administrateur a supprimé une étiquette de rétention.|
 | Stratégie de rétention supprimée |RemoveRetentionCompliancePolicy<br/> |Un administrateur a supprimé une stratégie de rétention. |
 | Option d’enregistrement réglementaire activée pour les étiquettes de rétention<br/> |SetRestrictiveRetentionUI |Un administrateur a exécuté le cmdlet [RegulatoryComplianceUI](/powershell/module/exchange/set-regulatorycomplianceui) afin qu’un administrateur puisse ensuite sélectionner l’option de configuration de l’interface utilisateur pour une étiquette de rétention et identifier le contenu en tant qu’enregistrement réglementaire.|
+| Étendue adaptative mise à jour | SetAdaptiveScope | L’administrateur a modifié la description ou la requête pour une étendue adaptative existante. |
 | Paramètres mis à jour pour une stratégie de rétention | SetRetentionComplianceRule | L’administrateur a modifié les paramètres de rétention d’une stratégie de rétention existante. Les paramètres de rétention incluent la durée de conservation des éléments et ce qu’il advient des éléments à l’expiration de la période de rétention (comme la suppression d’éléments, la conservation des éléments ou leur conservation puis leur suppression). Cette activité correspond également à l’exécution du cmdlet [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule). |
 | Étiquette de rétention mise à jour |SetComplianceTag  | Un administrateur a mis à jour une étiquette de rétention existante.|
 | Stratégie de rétention mise à jour |SetRetentionCompliancePolicy |Un administrateur a mis à jour une stratégie de rétention existante. Les mises à jour qui déclenchent cet événement incluent l’ajout ou l’exclusion d’emplacements de contenu auxquels la stratégie de rétention est appliquée.|
