@@ -15,24 +15,24 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: Découvrez comment configurer des sources de contenu d’apprentissage pour Apprentissage Microsoft Viva (prévisualisation) dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 3161841f3c69992d7cc532e86f99bed7704ba016
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 82b26e01928bf62c443545a045c64ae585fddcb3
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208168"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478751"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurer des sources de contenu d’apprentissage Apprentissage Microsoft Viva (prévisualisation) dans le Centre d'administration Microsoft 365
 
 > [!NOTE]
-> Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
+> Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. La prévisualisation n’est pas actuellement ouverte aux nouveaux participants.
 
-Les administrateurs de l’Centre d'administration Microsoft 365, soit par eux-mêmes, soit en attribuant le rôle d’administrateur du savoir à des personnes sélectionnées dans votre organisation, peuvent gérer les paramètres liés à La Learning (prévisualisation) et configurer les sources de contenu d’apprentissage.
+Les administrateurs de l’Centre d'administration Microsoft 365, soit par eux-mêmes, soit en attribuant le rôle d’administrateur des connaissances à des personnes sélectionnées dans votre organisation, peuvent gérer les paramètres liés à La Learning (prévisualisation) et configurer les sources de contenu d’apprentissage.
 
-L’administrateur sélectionne les autres sources de contenu d’apprentissage (par exemple, SharePoint ou les sources de fournisseurs de contenu tierces pris en charge) qui seront disponibles pour les utilisateurs de Learning (Prévisualisation). L’administrateur configure ensuite ces sources pour s’assurer que le contenu est disponible pour la recherche et la découverte et qu’il peut être consulté par les employés qui utilisent Learning (Prévisualisation).
+L’administrateur sélectionne les autres sources de contenu d’apprentissage (par exemple, SharePoint ou les sources de fournisseurs de contenu tierces pris en charge) qui seront disponibles pour les utilisateurs de Learning (Prévisualisation). L’administrateur configure ensuite ces sources pour s’assurer que le contenu est disponible pour la recherche et la découverte et qu’il peut être consulté par les employés qui utilisent Le Learning (Prévisualisation).
 
 > [!NOTE]
->  Les utilisateurs se connectent à des utilisateurs non-Microsoft et LinkedIn Learning Pro des connaissances dans un navigateur ou une visionneuse incorporée. Cette formation configurée est soumise aux termes distincts de licence, de confidentialité et de service entre votre organisation et le tiers, et non aux termes du contrat Learning (prévisualisation). Avant de sélectionner ce type d’apprentissage, vérifiez que vous avez un contrat en place pour votre organisation et les utilisateurs.
+> Les utilisateurs se connectent à des utilisateurs non-Microsoft et LinkedIn Learning Pro des connaissances dans un navigateur ou une visionneuse incorporée. Cette formation configurée est soumise aux termes distincts de licence, de confidentialité et de service entre votre organisation et le tiers, et non aux termes de l’Learning (prévisualisation). Avant de sélectionner ce type d’apprentissage, vérifiez que vous avez un contrat en place pour votre organisation et les utilisateurs.
 
 ## <a name="assign-the-knowledge-admin-role-optional"></a>Attribuer le rôle d’administrateur de connaissances (facultatif)
 
@@ -43,9 +43,9 @@ Vous devez être un administrateur Microsoft 365 général pour effectuer ces t�
 
 ### <a name="add-a-knowledge-admin"></a>Ajouter un administrateur de connaissances
 
-Pour ajouter un administrateur de connaissances pour Learning (prévisualisation), suivez les étapes suivantes :
+Pour ajouter un administrateur de connaissances à Learning (prévisualisation), suivez les étapes suivantes :
 
-1. Dans le navigation gauche de la Centre d'administration Microsoft 365, allez à **Rôles**.
+1. Dans le navigation gauche du Centre d'administration Microsoft 365, allez à **Rôles.**
 
 2. Dans la page **Rôles,** sous **l’onglet Azure AD,** sélectionnez **Administrateur de connaissances.**
  
@@ -61,7 +61,7 @@ Pour ajouter un administrateur de connaissances pour Learning (prévisualisation
 
 Pour supprimer un administrateur de connaissances pour Learning (prévisualisation), suivez les étapes suivantes :
 
-1. Dans le navigation gauche de la Centre d'administration Microsoft 365, allez à **Rôles**.
+1. Dans le navigation gauche du Centre d'administration Microsoft 365, allez à **Rôles.**
 
 2. Dans la page **Rôles,** sous **l’onglet Azure AD,** puis sélectionnez **Administrateur de connaissances.**
  
@@ -73,7 +73,7 @@ Pour supprimer un administrateur de connaissances pour Learning (prévisualisati
 
 Vous devez être administrateur général Microsoft 365 administrateur général ou administrateur du savoir pour effectuer ces tâches.
 
-Pour configurer les paramètres des sources de contenu d’apprentissage dans Learning, suivez les étapes suivantes :
+Pour configurer les paramètres d’apprentissage des sources de contenu dans Learning, suivez les étapes suivantes :
 
 1. Dans le navigation de gauche de la Centre d'administration Microsoft 365, Paramètres  >  **paramètres de l’organisation.**
 

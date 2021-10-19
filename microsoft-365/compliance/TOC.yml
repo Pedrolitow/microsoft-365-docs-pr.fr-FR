@@ -367,6 +367,8 @@
               href: retention-policies-yammer.md
             - name: La rétention pour Exchange
               href: retention-policies-exchange.md
+            - name: Paramètres courants pour la rétention
+              href: retention-settings.md
             - name: Limites de rétention
               href: retention-limits.md
         - name: Prise en main de la rétention
@@ -1012,22 +1014,10 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Sécurité et conformité pour le secteur de l’énergie
           href: ../solutions/energy-secure-collaboration.md
-- name: Gérer les risques liés à la confidentialité
+- name: Gestion de la confidentialité
   items:
     - name: En savoir plus sur la gestion de la confidentialité
-      href: privacy-management.md
-    - name: Prise en main de la gestion des enregistrements
-      href: privacy-management-setup.md
-    - name: Configurer les autorisations utilisateur dans la gestion de la confidentialité
-      href: privacy-management-permissions.md
-    - name: Gestion des paramètres de confidentialité
-      href: privacy-management-settings.md
-    - name: Rechercher et visualiser des données personnelles dans la gestion de la confidentialité
-      href: privacy-management-data-profile.md
-    - name: Créer et gérer des stratégies dans la gestion de la confidentialité
-      href: privacy-management-policies.md
-    - name: Gérer les demandes de droits d’objet dans la gestion de la confidentialité
-      href: privacy-management-subject-rights-requests.md
+      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Fonctionnalités de conformité hybrides
   items:
     - name: Chiffrement du courrier Exchange Online avec AD RMS

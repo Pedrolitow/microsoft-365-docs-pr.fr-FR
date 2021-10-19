@@ -139,6 +139,8 @@
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: 7. Supprimer le compte d'utilisateur d'un ancien employé
                   href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Migrer votre contenu vers Microsoft 365
+          href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Migration de partages de fichiers vers Microsoft 365
           items:
             - name: Présentation
@@ -268,6 +270,8 @@
           href: ../compliance/insider-risk-solution-overview.md
         - name: Solutions d’audit
           href: ../compliance/auditing-solutions-overview.md
+        - name: Solutions eDiscovery dans Microsoft 365
+          href: ../compliance/ediscovery.md
         - name: Microsoft 365 advanced eDiscovery
           href: ../compliance/overview-ediscovery-20.md
         - name: Plans d’action de conformité aux réglementations
@@ -288,14 +292,18 @@
           href: ../security/microsoft-365-security-for-bdm.md
         - name: Configurations des identités et de l’accès aux appareils
           href: ../security/office-365-security/microsoft-365-policies-configurations.md
+        - name: Évaluer et piloter Microsoft 365 Defender
+          href: ../security/defender/eval-overview.md
+        - name: Répondre à votre premier incident
+          href: ../security/defender/first-incident-overview.md
         - name: Déployer Microsoft Defender pour point de terminaison
           href: /microsoft-365/security/defender-endpoint/deployment-phases.md
-        - name: Migrer de Symantec vers Microsoft Defender pour point de terminaison
-          href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
-        - name: Passer de McAfee à Microsoft Defender pour point de terminaison
-          href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
         - name: Passer d’une protection de point de terminaison non-Microsoft à Microsoft Defender pour point de terminaison
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+        - name: Recommandations de sécurité pour les comptes prioritaires dans Microsoft 365
+          href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+        - name: Supprimer un ancien employé et sécuriser les données
+          href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
     - name: Études de cas Contoso
       items:
         - name: Solutions Microsoft 365 pour Contoso Corporation

@@ -15,22 +15,22 @@ ms.collection:
 - m365initiative-viva-learning
 ms.localizationpriority: ''
 description: Découvrez les Apprentissage Microsoft Viva (prévisualisation) dans votre environnement Microsoft 365 de travail.
-ms.openlocfilehash: 41a10fe0e4179e9d56fbf8eca3793d0c41ad339b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 563b808a55efcbdba08119d721e52f73873cd9ea
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205772"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478852"
 ---
-# <a name="overview-of-microsoft-viva-learning-preview"></a>Vue d’Apprentissage Microsoft Viva (prévisualisation) 
+# <a name="overview-of-microsoft-viva-learning-preview"></a>Vue d’Apprentissage Microsoft Viva (prévisualisation)
 
 > [!NOTE]
-> Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
+> Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. La prévisualisation n’est pas actuellement ouverte aux nouveaux participants.
 
-Learning (prévisualisation) est un hub d’apprentissage centralisé dans Microsoft Teams qui vous permet d’intégrer en toute transparence l’apprentissage et le développement de compétences dans votre journée. Dans Learning (prévisualisation), votre équipe peut découvrir, partager, affecter et apprendre à partir des bibliothèques de contenu fournies par votre organisation et vos partenaires. Ils peuvent tout faire sans quitter Microsoft Teams.
+Learning (prévisualisation) est un hub d’apprentissage centralisé dans Microsoft Teams qui vous permet d’intégrer en toute transparence l’apprentissage et le développement de compétences dans votre journée. Dans La Learning (prévisualisation), votre équipe peut découvrir, partager, affecter et apprendre à partir des bibliothèques de contenu fournies par votre organisation et vos partenaires. Ils peuvent tout faire sans quitter Microsoft Teams.
 
    ![Capture d’écran de la page d’Learning (prévisualisation) dans Teams.](../media/learning/learning-home-teams.png)
- 
+
 Les employés sont plus susceptibles de se déclarer satisfaits et de rester au niveau d’une organisation plus longtemps lorsqu’ils ont des opportunités d’apprentissage et de croissance. Learning (prévisualisation) facilite la création de ces opportunités pour votre organisation sans avoir à vous éloigner des outils de communication que vous utilisez déjà.
 
 ## <a name="learn-while-working"></a>Apprendre tout en travaillant
@@ -49,11 +49,11 @@ Learning (prévisualisation) facilite l’intégration de l’apprentissage dans
 
 ### <a name="managers"></a>Managers
 
-Maintenez votre équipe engagée et à jour avec les compétences nécessaires sans avoir à coordonner l’apprentissage sur plusieurs plateformes. Vous pouvez affecter du contenu d’apprentissage à des individus ou des groupes, partager du contenu avec votre équipe et suivre l’état d’achèvement de l’apprentissage que vous avez affecté.
+Maintenez votre équipe engagée et à jour avec les compétences nécessaires sans avoir besoin de coordonner l’apprentissage sur plusieurs plateformes. Vous pouvez affecter du contenu d’apprentissage à des individus ou des groupes, partager du contenu avec votre équipe et suivre l’état d’achèvement de l’apprentissage que vous avez affecté.
 
 ## <a name="admin-roles"></a>Rôles d’administrateurs
 
-Les administrateurs définissent des autorisations et autorisent les sources de contenu d’apprentissage pour Learning (prévisualisation). Pour configurer Learning (prévisualisation), vous aurez besoin d’autorisations comme :
+Les administrateurs définissent des autorisations et autorisent les sources de contenu d’apprentissage pour Learning (prévisualisation). Pour configurer Le Learning (prévisualisation), vous aurez besoin d’autorisations comme :
 
 - Microsoft Teams administrateur
 - Microsoft 365 administrateur général ou administrateur SharePoint général
@@ -61,9 +61,9 @@ Les administrateurs définissent des autorisations et autorisent les sources de 
 
 ### <a name="knowledge-admin"></a>Administrateur d’informations
 
-L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à n’importe qui dans l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [voir rôles intégrés Azure AD.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
+L’administrateur du savoir est un nouveau rôle Azure Active Directory (Azure AD) dans le Centre d'administration Microsoft 365 qui peut être attribué à tous les membres de l’organisation. Ce rôle gère les sources de contenu d’apprentissage de l’organisation via le Centre d'administration Microsoft 365. Pour plus d’informations, [voir Azure AD rôles intégrés.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
 
-L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint administrateur. L’administrateur du savoir doit être bien au fait de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
+L’administrateur du savoir doit être modérément technique et avoir des informations d’identification SharePoint’administrateur. L’administrateur du savoir doit être bien familiar avec l’expérience de l’éducation, de l’apprentissage, de la formation ou de l’expérience des employés au niveau de l’organisation.
 
 ## <a name="get-started"></a>Prise en main
 

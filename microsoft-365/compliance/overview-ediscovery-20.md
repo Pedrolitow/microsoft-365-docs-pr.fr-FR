@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez la solution Advanced eDiscovery dans Microsoft 365. Cet article fournit une vue d’Advanced eDiscovery dans Microsoft 365, un outil qui vous aide à gérer les enquêtes internes et externes. Il encadre également les raisons professionnelles de l’utilisation Advanced eDiscovery pour gérer vos enquêtes juridiques.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40ff0b39f71dd124f641a60e4431aebbc2c08793
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 769f88b6bd2f3348061a759655c8169e9a8310f5
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201012"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478813"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Vue d’ensemble Microsoft 365 Advanced eDiscovery
 
@@ -33,7 +33,7 @@ La Advanced eDiscovery solution Microsoft 365 s’appuie sur les fonctionnalité
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery fonctionnalités
 
-Advanced eDiscovery peut aider votre organisation à répondre à des questions juridiques ou à des enquêtes internes en découvrant les données où elle se trouve. Vous pouvez gérer en toute transparence les flux de travail eDiscovery en identifiant les personnes concernées et leurs sources de données, en appliquant en toute transparence des conservations pour conserver les données, puis en gérant le processus de communication de conservation légale. En collectant des données à partir de la source, vous pouvez effectuer des recherches sur la plateforme Microsoft 365 live pour trouver rapidement ce dont vous avez besoin. Les fonctionnalités intelligentes et d’apprentissage automatique telles que l’indexation approfondie, le thread de courrier électronique et la détection de quasi-doublons vous aident également à réduire les volumes de données importants dans un jeu de données pertinent.
+Advanced eDiscovery peut aider votre organisation à répondre à des questions juridiques ou à des enquêtes internes en découvrant les données où elle se trouve. Vous pouvez gérer en toute transparence les flux de travail eDiscovery en identifiant les personnes concernées et leurs sources de données, en appliquant en toute transparence des conservations pour conserver les données, puis en gérant le processus de communication de conservation légale. En collectant des données à partir de la source, vous pouvez effectuer des recherches sur la plateforme Microsoft 365 live pour trouver rapidement ce dont vous avez besoin. Les fonctionnalités intelligentes d’apprentissage automatique telles que l’indexation approfondie, le thread de courrier électronique et la détection de quasi-doublons vous aident également à réduire les volumes importants de données dans un jeu de données pertinent.
 
 Les sections suivantes décrivent comment ces fonctionnalités Advanced eDiscovery peuvent aider votre organisation.
 
@@ -41,7 +41,7 @@ Les sections suivantes décrivent comment ces fonctionnalités Advanced eDiscove
 
 ### <a name="discover-and-collect-data-in-place"></a>Découvrir et collecter des données sur place
 
-En général, les organisations qui s’appuient sur plusieurs solutions eDiscovery tierces nécessitent la copie de grands volumes de données hors de Microsoft 365 pour traiter et avoir à héberger des données en double. Cette nécessité augmente le temps nécessaire pour trouver des données pertinentes, ainsi que les risques, les coûts et la complexité de la gestion de plusieurs solutions.
+En général, les organisations qui s’appuient sur plusieurs solutions eDiscovery tierces nécessitent la copie de grands volumes de données hors de Microsoft 365 pour traiter et héberger des données en double. Cette nécessité augmente le temps nécessaire pour trouver des données pertinentes, ainsi que les risques, les coûts et la complexité de la gestion de plusieurs solutions.
 
 Advanced eDiscovery dans Microsoft 365 vous permet de découvrir les données au niveau de la source et de rester à l’intérieur Microsoft 365 limites de sécurité et de conformité.  En collectant des données sur place à partir du système en direct, Advanced eDiscovery réduit la friction de revenir à la source et réduit le travail inutile d’avoir à trouver le contenu manquant, ce qui se produit souvent lorsque la journaling est en retard dans les solutions eDiscovery traditionnelles.
 
@@ -53,27 +53,27 @@ Les fonctionnalités natives de recherche et de collecte de données dans Teams,
 
 - Dispose d’une prise en charge intégrée pour des centaines de types de Microsoft 365 non complets.
 
-- Collecte des données à partir de sources tierces (comme Bloomberg, Facebook, Slack et Zoom Meetings) importées et archivées dans Microsoft 365 par des connecteurs de [données.](archiving-third-party-data.md)
+- Collecte des données à partir de sources tierces (par exemple, Bloomberg, Facebook, Slack et Zoom Meetings) qui sont importées et archivées dans Microsoft 365 par des connecteurs de [données.](archiving-third-party-data.md)
 
 ### <a name="manage-ediscovery-workflow-in-one-platform"></a>Gérer le flux de travail eDiscovery dans une plateforme
 
 Advanced eDiscovery peut vous aider à réduire le nombre de solutions eDiscovery dont vous avez besoin. Il fournit un flux de travail simplifié de bout en bout, qui se produit tous au sein Microsoft 365. Advanced eDiscovery permet de réduire la friction entre l’identification et la collecte des sources potentielles d’informations pertinentes en m mappage automatique des sources de données uniques et partagées avec la personne d’intérêt (appelée *dépositaire)* et en fournissant des rapports et des analyses sur les données potentiellement pertinentes avant de les collecter pour analyse et révision.
 
-En outre, les API microsoft Graph peuvent vous aider à automatiser le flux de travail eDiscovery et à étendre Advanced eDiscovery pour les solutions personnalisées.
+En outre, les API Microsoft Graph peuvent vous aider à automatiser le flux de travail eDiscovery et à étendre Advanced eDiscovery pour les solutions personnalisées.
 
 ### <a name="cull-data-intelligently"></a>Annuler les données de manière intelligente
 
-Les fonctionnalités intelligentes d’apprentissage automatique Advanced eDiscovery vous aident à réduire la quantité de données à réviser. Ces fonctionnalités intelligentes vous aident à réduire et à réduire les volumes de données importants dans un ensemble pertinent. Par exemple, une requête d’ensemble de révision intégrée permet de filtrer uniquement le contenu unique en identifiant les quasi-doublons. Cette fonctionnalité peut considérablement réduire la quantité de données à réviser.
+Les fonctionnalités intelligentes d’apprentissage automatique Advanced eDiscovery vous aident à réduire la quantité de données à réviser. Ces fonctionnalités intelligentes vous aident à réduire et à réduire les volumes de données importants vers un ensemble pertinent. Par exemple, une requête d’ensemble de révision intégrée permet de filtrer uniquement le contenu unique en identifiant les quasi-doublons. Cette fonctionnalité peut considérablement réduire la quantité de données à réviser.
 
-D’autres fonctionnalités d’apprentissage automatique peuvent affiner et identifier les données pertinentes à l’aide de balises intelligentes et d’outils d’examen assisté par la technologie tels que les modules de pertinence.
+D’autres fonctionnalités d’apprentissage automatique peuvent affiner et identifier les données pertinentes à l’aide de balises intelligentes et d’outils d’examen avec assistance technologique tels que les modules de pertinence.
 
 ## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery avec le modèle de référence de découverte électronique
 
 Le flux de travail intégré de Advanced eDiscovery dans Microsoft 365 s’aligne sur le processus eDiscovery décrit par le modèle de référence de découverte électronique (EDRM).
 
-![Modèle de référence de découverte électronique (EDRM).](../media/EDRMv1.png)
+![Modèle de référence de découverte électronique (EDRM).](../media/EDRMv2.png)
 
-(Image source fournie par edrm.net. L’image source a été rendue disponible sous Creative Commons Attribution 3.0 Unported License.)
+(Image basée sur le modèle EDRM sur edrm.net)
 
 À un niveau élevé, voici comment eDiscovery avancée prend en charge le flux de travail EDRM :
 
@@ -107,11 +107,11 @@ La gestion des Advanced eDiscovery nécessite l’abonnement d’organisation ap
 
    Si vous n’avez pas de plan Microsoft 365 E5 existant et que vous souhaitez essayer Advanced eDiscovery, vous [](https://www.microsoft.com/microsoft-365/enterprise) pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’essai de Microsoft 365 E5.
 
-- **Licences par utilisateur :** Pour ajouter un utilisateur en tant que dépositaire dans un cas de découverte électronique anticipée, l’une des licences suivantes doit lui être attribuée, en fonction de l’abonnement de votre organisation :
+- **Licences par utilisateur :** Pour ajouter un utilisateur en tant que dépositaire dans un cas advance eDiscovery, cet utilisateur doit se voir attribuer l’une des licences suivantes, en fonction de l’abonnement de votre organisation :
 
   - Microsoft 365 : l’une des tâches suivantes doit être attribuée aux utilisateurs :
   
-    - Microsoft 365 E5 licence, une licence de module de conformité E5 ou un module de découverte électronique E5 et un module d’audit
+    - Microsoft 365 E5 licence, une licence de module de conformité E5 ou une eDiscovery E5 et un module d’audit
 
     - Microsoft 365 Un module de conformité F5 ou F5 security & compliance doit être affecté aux utilisateurs en situation de situation de groupe
 
@@ -152,4 +152,4 @@ Voici un diagramme d’architecture Advanced eDiscovery qui montre le flux de tr
 
 ## <a name="training"></a>Formation
 
-La formation de vos administrateurs informatiques, responsables eDiscovery et équipes d’examen de conformité sur les bases de Advanced eDiscovery peut aider votre organisation à démarrer plus rapidement à l’aide des outils eDiscovery Microsoft 365. Microsoft 365 fournit la ressource suivante pour aider les utilisateurs de votre organisation à démarrer avec eDiscovery : décrire les fonctionnalités [eDiscovery et d’audit](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)de Microsoft 365 .
+La formation de vos administrateurs informatiques, responsables eDiscovery et équipes d’examen de conformité sur les bases de Advanced eDiscovery peut aider votre organisation à démarrer plus rapidement à l’aide des outils eDiscovery Microsoft 365. Microsoft 365 fournit la ressource suivante pour aider les utilisateurs de votre organisation à commencer avec eDiscovery : décrire les fonctionnalités [eDiscovery et d’audit](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)de Microsoft 365 .

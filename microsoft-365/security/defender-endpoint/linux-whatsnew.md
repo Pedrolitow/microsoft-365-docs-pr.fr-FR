@@ -16,27 +16,33 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 722d446a9b8dcde216c8dd26b51ca3a4d13fe54d
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: 779f77b39eeaf58918c115582f62fb08199f1b91
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386202"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478888"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Nouveautés de Microsoft Defender pour Endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
+- À partir de cette version, nous apportons la prise en charge de Microsoft Defender for Endpoint aux distros suivantes : 
+  -  Versions RHEL6.7-6.10 et CentOS6.7-6.10.
+  - Amazon Linux 2
+  - Fedora 33 ou supérieure
 - Correctifs de bogue
+
 
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
 
 - Ajout de nouveaux commutateurs à l’outil en ligne de commande :
-  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré via `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` . Par défaut, un degré de parallélisme `2` est utilisé.
-  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré via `mdatp config scan-after-definition-update --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
-  - Contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré via `mdatp config scan-archives --value [enabled/disabled]` . Par défaut, cette valeur est définie sur `enabled` .
+  - Contrôler le degré de parallélisme pour les analyses à la demande. Cela peut être configuré par le biais `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` de . Par défaut, un degré de parallélisme `2` est utilisé.
+  - Contrôler si les analyses après l’actualisation des informations de sécurité sont activées ou désactivées. Cela peut être configuré par le biais `mdatp config scan-after-definition-update --value [enabled/disabled]` de . Par défaut, cette valeur est définie sur `enabled` .
+  - Contrôler si les archives sont analysées pendant les analyses à la demande. Cela peut être configuré par le biais `mdatp config scan-archives --value [enabled/disabled]` de . Par défaut, cette valeur est définie sur `enabled` .
 - La modification du niveau du journal des produits nécessite désormais une élévation
 - Correctifs de bogue
 
@@ -75,7 +81,7 @@ ms.locfileid: "60386202"
 ## <a name="1011853"></a>101.18.53
 
 - PEPT linux est désormais [généralement disponible](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions av lors `--ignore-exclusions` des analyses personnalisées ( `mdatp scan custom` )
+- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions antivirus lors des `--ignore-exclusions` analyses personnalisées ( `mdatp scan custom` )
 - Étendu avec un nouveau paramètre ( ) qui permet d’enregistrer les journaux de diagnostic dans `mdatp diagnostic create` `--path [directory]` un autre répertoire
 - Améliorations des performances & résolutions de bogues
 
@@ -99,7 +105,7 @@ ms.locfileid: "60386202"
 ## <a name="1010075"></a>101.00.75
 
 - Ajout de la prise en charge des types de système de fichiers suivants `ecryptfs` : , , , , , , , `fuse` `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf` et `vfat`
-- Nouvelle syntaxe pour [l’outil en ligne de commande.](linux-resources.md#configure-from-the-command-line)
+- Nouvelle syntaxe de [l’outil en ligne de commande.](linux-resources.md#configure-from-the-command-line)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1009070"></a>100.90.70

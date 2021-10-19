@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: 8998a0e4f6cf01a7394e44695cd06f0b60915c7e
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 78e9570c1c5a19353eb9868a649eba958d23067b
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364734"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478792"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
@@ -29,16 +29,16 @@ ms.locfileid: "60364734"
 Pour commencer à utiliser le module complémentaire de gouvernance des applications pour Microsoft Cloud App Security, vous devez effectuer trois étapes:
 
 1. [Vérifiez les conditions préalables pour les licences et les administrateurs.](#licensing-and-administrator-role-prerequisites)
-1. [Inscrivez-vous à la version d’essai de gouvernance des applications.](#sign-up-for-free-trial-of-app-governance)
+1. [Inscrivez-vous à la gouvernance des applications](#sign-up-for-app-governance).
 1. [Ajoutez l’intégration MCAS](#add-integration-with-mcas).
 
 
-## <a name="sign-up-for-free-trial-of-app-governance"></a>Inscrivez-vous à un essai gratuit de la gouvernance des applications
+## <a name="sign-up-for-app-governance"></a>Inscrivez-vous à la gouvernance des applications.
 
 Pour les clients Microsoft 365 existants :
 
 1. Accédez à la [page d’inscription pour version d’évaluation gratuite](https://aka.ms/appgovernancetrial).
-1. Effectuez les étapes pour ajouter la gouvernance des applications. L’inscription est simple, comme illustré dans le graphique suivant.
+1. Effectuez les étapes pour ajouter la gouvernance des applications. 
 
 <!--
 :::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
@@ -49,6 +49,8 @@ Si vous n’êtes pas déjà client Microsoft 365, vous pouvez vous inscrire à 
 1. En haut de cette page, sélectionnez le bouton  **Compte gratuit** .
 1. Sous  **Essayez Microsoft 365 pour les entreprises** sélectionnez **Essai gratuit d’un mois**.
 1. Effectuez les étapes de l’inscription.
+
+Pour acheter un abonnement à la gouvernance des applications, veuillez contacter votre équipe de vente.
 
 ## <a name="add-integration-with-mcas"></a>Ajouter une intégration à MCAS
 
@@ -131,7 +133,7 @@ Si vous n'avez pas participé à la préversion privée et que vous souhaitez an
 1. Dans le Centre d’administration Microsoft 365, accédez à **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Vos produits**</a>.
 1. Accédez à la version d’évaluation de la gouvernance des applications, cliquez sur les trois points, puis sélectionnez **Annuler l’abonnement**.
 1. Dans le volet volant qui en résulte, indiquez la raison de l’annulation, les commentaires supplémentaires, puis sélectionnez **Annuler l’abonnement**.
-1. Sélectionnez **Annuler l’abonnement** dans l’écran contextuel qui en résulte. Votre version d’évaluation est annulée, vous perdrez l’accès à la gouvernance des applications et vos données de gouvernance d’application seront supprimées (les données de journal utilisées pour créer les détections et les insights de gouvernance des applications , aucun e-mail ou autre fichier ne sera affecté).
+1. Sélectionnez **Annuler l’abonnement** dans l’écran contextuel qui en résulte. Votre version d’évaluation est annulée, vous perdrez l’accès à la gouvernance des applications et vos données de gouvernance d’application seront supprimées (les données de journal utilisées pour créer les détections et les informations de gouvernance des applications ; aucun e-mail ou autre fichier ne sera affecté).
 
 ## <a name="known-issues-for-the-public-preview"></a>Problèmes connus dans la préversion publique
 
