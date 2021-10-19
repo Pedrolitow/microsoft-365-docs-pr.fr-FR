@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer et publier des étiquettes de rétention afin de pouvoir les appliquer dans les applications afin de conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: bfe4fa129488595e6e9713d909c2c4020a2b5bb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f86692d07f7636f35ba700b9750510219a6ef380
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175358"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432636"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Créer des étiquettes de rétention et les appliquer dans les applications
 
@@ -49,6 +49,8 @@ Utilisez les instructions suivantes pour les deux étapes d’administration.
 
 L’administrateur général de votre organisation dispose de toutes les autorisations pour créer et gérer les étiquettes de rétention et leurs stratégies. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des stratégies et des étiquettes de confidentialité](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
+Déterminez avant de créer votre stratégie d’étiquette de rétention si elle sera **adaptative** ou **statique**. Pour plus d’informations, consultez [Étendues de stratégie adaptative ou statique pour la rétention.](retention.md#adaptive-or-static-policy-scopes-for-retention) Si vous décidez d’utiliser une stratégie adaptative, vous devez créer une ou plusieurs étendues adaptatives avant de créer votre stratégie d’étiquette de rétention, puis les sélectionner au cours du processus de création de stratégie d’étiquette de rétention. Pour obtenir des instructions, consultez [Informations de configuration pour les étendues adaptatives.](retention-settings.md#configuration-information-for-adaptive-scopes)
+
 ## <a name="how-to-create-and-publish-retention-labels"></a>Comment créer et publier des étiquettes de rétention
 
 Tout d’abord, créez vos étiquettes de rétention. Créez ensuite une stratégie d’étiquette pour rendre les étiquettes disponibles à appliquer dans les applications.
@@ -65,9 +67,13 @@ L’emplacement dans lequel vous créez et configurez vos étiquettes de rétent
     - Si vous n’utilisez pas la gestion des enregistrements :
        - **Solutions** > **Gouvernance d’informations** > **Étiquettes** onglet > + **Créer une étiquette**
     
-    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 
 
-2. Suivez les invites de l’Assistant. Si vous utilisez la gestion des enregistrements :
+2. Suivez les invites de l’Assistant.
+    
+    Si vous souhaitez en savoir plus sur les paramètres de rétention, consultez [Paramètres pour la conservation et la suppression du contenu](retention-settings.md#settings-for-retaining-and-deleting-content).
+    
+    Si vous utilisez la gestion des enregistrements :
     
     - Pour plus d’informations sur les descripteurs de plan de fichier, voir [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md).
     
@@ -91,14 +97,25 @@ Publiez des étiquettes de rétention pour qu’elles puissent être appliquées
     - Si vous n’utilisez pas la gestion des enregistrements :
         - **Solutions** > **Gouvernance d’informations** > **Stratégies d’étiquette** onglet > **Publier des étiquettes**
     
-    Votre option ne s’affiche pas immédiatement ? Sélectionnez tout d’abord **Afficher tout**. 
+    Vous ne voyez pas immédiatement votre solution dans le volet de navigation ? Sélectionnez tout d’abord **Afficher tout**. 
 
-2. Suivez les invites de l’Assistant.
+2. Utilisez le lien pour sélectionner les étiquettes de rétention à publier, puis sélectionnez **Suivant**.
+
+3. Pour la page **Choisir le type de stratégie de rétention à créer**, sélectionnez **Adaptative** ou **Statique**, en fonction du choix que vous avez effectué à partir des instructions [Avant de commencer](#before-you-begin). Si vous n’avez pas encore créé d’étendues adaptatives, vous pouvez sélectionner **Adaptive**, mais comme il n’y aura aucune étendue adaptative à sélectionner, vous ne pourrez pas terminer l’Assistant avec cette option.
+
+4. En fonction de l’étendue sélectionnée :
     
-    Pour plus d’informations sur la prise en charge des emplacements par des étiquettes de rétention, voir la section [Étiquettes de rétention et emplacements](retention.md#retention-label-policies-and-locations). 
+    - Si vous avez choisi **Adaptative** : sur la page **Choisir les étendues et les emplacements de stratégie adaptative**, sélectionnez **Ajouter des étendues** et sélectionnez une ou plusieurs étendues adaptatives qui ont été créées. Sélectionnez ensuite un ou plusieurs emplacements. Les emplacements que vous pouvez sélectionner dépendent des [types d’étendue](retention-settings.md#configuration-information-for-adaptive-scopes) ajoutés. Par exemple, si vous avez uniquement ajouté un type d’étendue d’**Utilisateur**, vous pourrez sélectionner **Courrier Exchange**, mais pas **Sites SharePoint**. 
+    
+    - Si vous avez choisi **Statique** : sur la page **Choisir des emplacements**, activez ou désactivez l’un des emplacements. Vous pouvez laisser pour chaque emplacement la valeur par défaut [Appliquer la stratégie à l’intégralité de l’emplacement](retention-settings.md#a-policy-that-applies-to-entire-locations) ou [Spécifier des inclusions et des exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
+    
+    Pour plus d’informations sur les choix d’emplacement, consultez [Emplacements](retention-settings.md#locations).
 
-Pour modifier une stratégie d’étiquettes de rétention existante (le type de stratégie est **Publier**), sélectionnez-la, puis sélectionnez l’option **Modifier** pour démarrer la stratégie de modification de rétention. Cet assistant vous permet de modifier la description de la stratégie et les [paramètres éligibles](#updating-retention-labels-and-their-policies) à partir de l’étape 2.
+5.  Suivez les invites de l’Assistant pour nommer votre stratégie, passer en revue et soumettre vos choix de configuration.
+    
+    Pour plus d’informations sur les choix d’emplacement, consultez [Emplacements](retention-settings.md#locations). 
 
+Pour modifier une stratégie d’étiquettes de rétention existante (le type de stratégie est **Publier**), sélectionnez-la, puis sélectionnez l’option **Modifier** pour démarrer la stratégie de modification de rétention. Cet assistant vous permet de modifier la description de la stratégie et les [paramètres éligibles](#updating-retention-labels-and-their-policies).
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Lorsque les étiquettes de rétention sont disponibles à l’application
 
