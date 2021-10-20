@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: 881aa208036bab4fe476bb424e42ff16dbb5344f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52318fb2f8ae81022734bb1f620b220830214ad7
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195568"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432648"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -47,9 +47,23 @@ Dans cette limite de 10 000 stratégies, il existe également des limites sur le
 
 Bien que les stratégies de rétention pour Microsoft Teams et Yammer utilisent des boîtes aux lettres pour stocker des données à des fins de rétention, le nombre maximal de stratégies pour Exchange Online exclut les stratégies de rétention pour Teams et Yammer.
 
+## <a name="maximums-for-adaptive-policy-scopes"></a>Maximums pour les étendues de stratégie adaptative
+
+Il n’existe aucune limite au nombre d’étendues de stratégie adaptative [que](retention.md#adaptive-or-static-policy-scopes-for-retention) vous pouvez ajouter à une stratégie de rétention, mais il existe certaines limites maximales pour la requête qui définit chaque étendue adaptative :
+
+- Longueur de chaîne pour les valeurs d’attribut ou de propriété : 200
+- Nombre d’attributs ou de propriétés sans groupe ou au sein d’un groupe : 10
+- Nombre de groupes de sécurité : 10
+- Nombre de caractères dans une requête avancée : 10 000
+
+Le regroupement d’attributs ou de propriétés au sein d’un groupe n’est pas pris en charge. Cela signifie que le nombre maximal de propriétés ou d’attributs pris en charge dans une seule étendue adaptative est de 100.
+
 ## <a name="maximum-number-of-items-per-policy"></a>Nombre maximal d’éléments par stratégie
 
-Si vous utilisez la configuration optionnelle pour étendre vos paramètres de rétention à des utilisateurs spécifiques, des groupes Microsoft 365 spécifiques ou des sites spécifiques, il faut tenir compte de certaines limites par politique : 
+> [!IMPORTANT]
+> Applicable uniquement si vous utilisez des [étendues de stratégie statiques plutôt que des étendues de stratégie adaptatives.](retention.md#adaptive-or-static-policy-scopes-for-retention)
+
+Si vous utilisez des étendues statiques et la configuration optionnelle pour inclure ou exclure des utilisateurs spécifiques, des groupes Microsoft 365 spécifiques ou des sites spécifiques, il y a certaines limites par stratégie à connaître. 
 
 Nombre maximal d’éléments par stratégie pour la rétention :
 
@@ -66,14 +80,11 @@ Skype Entreprise doit être étendu à des utilisateurs spécifiques et le nombr
 
 Ces limitations s'appliquent à chaque police, donc si vous devez utiliser des inclusions ou des exclusions spécifiques qui entraînent un dépassement de ces chiffres, vous pouvez créer des politiques de rétention supplémentaires qui ont les mêmes paramètres de rétention. Voir la section suivante pour quelques[exemples de scénarios et de solutions](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) qui utilisent plusieurs politiques de rétention pour cette raison.
 
-Les politiques de rétention multiples entraînent des frais administratifs plus élevés. Il faut donc toujours se demander si vous avez vraiment besoin d'inclusions et d'exclusions. Rappelez-vous que la configuration par défaut qui s'applique à l'ensemble du site n'a pas de limites, et que ce choix de configuration peut être une meilleure solution que la création et la maintenance de plusieurs politiques.
-
-> [!TIP]
-> Si vous devez créer et maintenir plusieurs politiques de rétention pour ce scénario, pensez à utiliser [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) pour une configuration plus efficace.
+Les stratégies de rétention multiples entraînent des frais administratifs plus élevés. Il faut donc toujours se demander si vous avez vraiment besoin d'inclusions et d'exclusions. Envisagez d’utiliser des étendues adaptatives plutôt que de créer et de gérer plusieurs stratégies avec des inclut et des exclusions.
 
 ### <a name="examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers"></a>Exemples d’utilisation de plusieurs stratégies pour éviter le dépassement des nombres maximum
 
-Les exemples suivants fournissent quelques solutions de conception pour les cas où vous ne pouvez pas spécifier uniquement l'emplacement d'une politique de conservation, et doivent tenir compte des limites documentées dans la section précédente.
+Les exemples suivants concernent des étendues statiques et fournissent quelques solutions de conception lorsque vous ne pouvez pas spécifier uniquement l'emplacement d'une politique de conservation et que vous devez prendre en compte le nombre maximum d'éléments documentés dans la section précédente.
 
 Exemple d'échange :
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 1c06cdf9492fa18797bfbf25f8153fa347137ced
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: c8c5fc71cc7f6757cb40cc5ae649021ba020dcc2
+ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335597"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60432693"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -63,7 +63,7 @@ Utilisez ces sections pour en savoir plus sur le fonctionnement des stratégies 
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Fonctionnement des paramètres de rétention avec le contenu en place
 
-Lorsqu’un contenu est soumis à des paramètres de rétention, ce contenu demeure à son emplacement d’origine. Les contacts peuvent invariablement continuer à travailler avec leurs documents ou mails. Mais s’ils modifient ou suppriment du contenu inclus dans la stratégie de rétention, une copie du contenu est automatiquement conservée.
+Lorsque des paramètres de conservation sont attribués à un contenu, ce dernier reste à son emplacement d'origine. La plupart du temps, les gens continuent à travailler avec leurs documents ou leur courrier comme si rien n'avait changé. Mais s'ils modifient ou suppriment un contenu inclus dans la politique de conservation, une copie de ce contenu est automatiquement conservée.
   
 - Pour les sites SharePoint et OneDrive : la copie est conservée dans la bibliothèque de **Conservation et préservation**.
 
@@ -272,6 +272,61 @@ Vous ne devez pas choisir entre les stratégies de rétention uniquement et les 
 
 Pour plus d’informations sur la façon dont les stratégies et les étiquettes de rétention fonctionnent conjointement, et sur la manière de déterminer le résultat de leur combinaison, voir la section suivante, qui explique les principes de la rétention et l’application des priorités.
 
+## <a name="adaptive-or-static-policy-scopes-for-retention"></a>Étendues de stratégie adaptatives ou statiques pour la rétention
+
+> [!NOTE]
+> Les étendues de stratégie adaptative en tant que nouvelle fonctionnalité sont actuellement en prévisualisation et peuvent faire l’objet de changements. L’autre option est une étendue statique, qui offre le même comportement avant l’introduction des étendues adaptatives et peut être utilisée si les étendues adaptatives ne répondent pas aux besoins de votre entreprise.
+
+Lorsque vous créez une stratégie de rétention ou une stratégie d’étiquette de rétention, vous devez choisir entre adaptatif et statique pour définir l’étendue de la stratégie.
+
+- Une **étendue adaptative** utilise une requête que vous spécifiez, de sorte que l’appartenance n’est pas statique mais dynamique en s’exécutant quotidiennement sur les attributs ou propriétés que vous spécifiez pour les emplacements sélectionnés. Vous pouvez utiliser plusieurs étendues adaptatives avec une seule stratégie.
+    
+    Exemple : les messages électroniques et les documents OneDrive pour les cadres nécessitent une période de rétention plus longue que les utilisateurs standard. Vous créez une stratégie de rétention avec une étendue adaptative qui utilise la fonction d’attribut Azure AD « Executive », puis sélectionnez les emplacements des comptes de messagerie Exchange et OneDrive pour la stratégie. Il n’est pas nécessaire de spécifier des adresses e-mail ou des URL OneDrive pour ces utilisateurs, car l’étendue adaptative récupère automatiquement ces valeurs. Pour les nouveaux cadres, il n’est pas nécessaire de reconfigurer la stratégie de rétention, car ces nouveaux utilisateurs avec leurs valeurs correspondantes pour les e-mails et les OneDrive sont automatiquement pris en compte.
+
+- Une **étendue statique** n’utilise pas de requêtes et est limitée dans la configuration dans la façon dont elle peut s’appliquer à toutes les instances pour un emplacement spécifié, ou utiliser l’inclusion et les exclusions pour des instances spécifiques pour cet emplacement. Ces trois choix sont parfois appelés « à l’échelle de l’organisation », « inclut » et « exclut » respectivement.
+    
+    Exemple : les messages électroniques et les documents OneDrive pour les cadres nécessitent une période de rétention plus longue que les utilisateurs standard. Vous créez une stratégie de rétention avec une étendue statique qui sélectionne les Exchange et les OneDrive de comptes pour la stratégie. Pour l’emplacement de messagerie Exchange, vous pouvez identifier un groupe qui contient uniquement les cadres. Vous spécifiez donc ce groupe pour la stratégie de rétention, et l’appartenance au groupe avec les adresses de messagerie respectives est récupérée lors de la création de la stratégie. Pour l'emplacement des comptes OneDrive, vous devez identifier et ensuite spécifier des URL OneDrive individuels pour chaque cadre. Pour les nouveaux cadres, vous devez reconfigurer la stratégie de rétention pour ajouter les nouvelles adresses e-mail et OneDrive URL. Vous devez également mettre à jour les URL OneDrive chaque fois qu'il y a un changement dans l'UPN d'un cadre.
+    
+    OneDrive Les URL sont particulièrement difficiles à spécifier de manière fiable, car par défaut, ces URL ne sont pas créées tant que l’utilisateur n’a pas accédé à sa OneDrive pour la première fois. Et si l’UPN d’un utilisateur change, ce que vous ne connaissez peut-être pas, son URL OneDrive change automatiquement.
+
+Avantages de l’utilisation des étendues adaptatives :
+
+- Aucune limite sur le nombre [d’éléments par stratégie.](retention-limits.md#maximum-number-of-items-per-policy) Bien que les stratégies adaptatives soient toujours soumises au [nombre maximal](retention-limits.md#maximum-number-of-policies-per-tenant) de stratégies par client, une configuration plus flexible entraîne probablement beaucoup moins de stratégies.
+
+- Ciblage plus puissant pour vos besoins de rétention Par exemple, vous pouvez affecter différents paramètres de rétention aux utilisateurs en fonction de leur emplacement géographique en utilisant des attributs Azure AD existants sans la surcharge administrative de création et de maintenance de groupes à cet effet.
+
+- L’appartenance basée sur une requête offre une résilience contre les changements d’entreprise qui peuvent ne pas être reflétés de manière fiable dans l’appartenance à un groupe ou les processus externes qui reposent sur la communication entre les services.
+
+- Une stratégie de rétention unique peut inclure des emplacements pour Microsoft Teams et Yammer, alors que lorsque vous utilisez une étendue statique, ces emplacements nécessitent leur propre stratégie de rétention.
+
+Avantages de l’utilisation d’étendues statiques :
+
+- Configuration plus simple si vous souhaitez que toutes les instances soit automatiquement sélectionnées pour une charge de travail.
+    
+    Pour « inclut » et « exclut », ce choix peut être une configuration plus simple initialement si le nombre d’instances que vous devez spécifier est faible et ne change pas. Toutefois, lorsque le nombre d’instances commence à augmenter et que votre organisation est régulièrement modifiée et que vous devez reconfigurer vos stratégies, les étendues adaptatives peuvent être plus simples à configurer et beaucoup plus faciles à gérer.
+
+- Les **emplacements Skype Entreprise** et **Exchange dossiers** publics ne sont pas adaptés aux étendues adaptatives. Pour ces emplacements, vous devez utiliser une étendue statique. 
+
+Pour plus d’informations sur la configuration, voir [Configuration des étendues adaptatives.](retention-settings.md#configuration-information-for-adaptive-scopes)
+
+Pour regarder un webinaire enregistré (nécessite une inscription), visitez [Deep Dive sur les étendues adaptatives.](https://mipc.eventbuilder.com/event/45703)
+
+> [!IMPORTANT]
+> Actuellement, les scopes adaptatifs ne prennent pas en charge [le verrouillage de la conservation pour restreindre les modifications des stratégies de conservation et des stratégies d'étiquetage de conservation](#use-preservation-lock-to-restrict-changes-to-policies).
+
+## <a name="policy-lookup"></a>Recherche de la stratégie
+
+> [!NOTE]
+> La consultation des stratégies est actuellement en cours de préparation et est sujette à modification.
+
+Vous pouvez configurer plusieurs stratégies de rétention pour Microsoft 365 de rétention, ainsi que plusieurs stratégies d’étiquette de rétention que vous publiez ou appliquez automatiquement. Pour rechercher les stratégies de rétention affectées à des utilisateurs, **des sites et des groupes Microsoft 365 spécifiques**, utilisez la recherche de stratégie à partir de la **solution** de gouvernance des informations dans la Centre de conformité Microsoft 365 :
+
+![Recherche de stratégie pour rechercher les stratégies de rétention affectées à des utilisateurs, sites et groupes Microsoft 365 spécifiques ](../media/policy-lookup.png)
+
+Vous devez spécifier l’adresse e-mail exacte d’un utilisateur, l’URL exacte d’un site ou l’adresse e-mail exacte de Microsoft 365 groupe.
+
+L’option pour les sites inclut OneDrive comptes. Pour plus d’informations sur la spécification de l’URL du compte OneDrive d’un utilisateur, voir Obtenir la liste de toutes les URL de OneDrive [utilisateur dans votre organisation.](/onedrive/list-onedrive-urls)
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principes de rétention et priorité
 
 Contrairement aux étiquettes de rétention, vous pouvez appliquer plusieurs stratégies de rétention au même contenu. Chaque stratégie de rétention peut engendrer une action de conservation et une action de suppression. De plus, cet élément peut également être soumis à ces actions à partir d’une étiquette de rétention.
@@ -327,17 +382,17 @@ Explication des quatre principes différents :
         
         Le document est définitivement supprimé après sept ans, car l’action de suppression de l’étiquette de rétention est prioritaire.
     
-    2. Lorsque vous disposez de stratégies de rétention uniquement : si une stratégie de rétention pour un emplacement est définie pour l’utilisation d’une configuration d’inclusion (par exemple, des utilisateurs spécifiques à la courrier Exchange), la stratégie de rétention a la priorité sur les stratégies de rétention non étendues pour le même emplacement.
+    2. Lorsque vous avez des stratégies de rétention uniquement : si une stratégie de rétention pour un emplacement utilise une étendue adaptative ou une étendue statique qui inclut des instances spécifiques (telles que des utilisateurs spécifiques pour la messagerie Exchange), cette stratégie de rétention est prioritaire sur une étendue statique configurée pour toutes les instances pour le même emplacement.
         
-        Une stratégie de rétention non étendue est où un emplacement est sélectionné sans spécifier d’instances spécifiques. Par exemple, Courrier Exchange et le paramètre par défaut Tous les destinataires est une stratégie de rétention non étendue. Ou les sites SharePoint et le paramètre par défaut Tous les sites. Lorsque les stratégies de rétention sont étendues, elles ont une priorité égale à ce niveau.
+        Une étendue statique configurée pour toutes les instances d’un emplacement est parfois appelée « stratégie à l’échelle de l’organisation ». Par exemple, **Courrier Exchange** et le paramètre par défaut **Tous les destinataires**. Ou, **sites SharePoint** et le paramètre par défaut de **Tous les sites**. Lorsque les stratégies de rétention ne sont pas à l’échelle de l’organisation, mais qu’elles ont été configurées avec une étendue adaptative ou une étendue statique qui inclut des instances spécifiques, elles ont la même priorité à ce niveau.
         
         **Exemple 1 pour ce troisième principe (stratégies)** : un courrier électronique est soumis à deux stratégies de rétention. La première stratégie de rétention est non étendue et supprime les éléments après dix ans. La deuxième stratégie de rétention est étendue aux boîtes aux lettres spécifiques et supprime les éléments après cinq ans.
         
-        Le courrier électronique est définitivement supprimé après cinq ans, car l’action de suppression de la stratégie de rétention étendue a la priorité sur la stratégie de rétention non étendue.
+        Le courrier électronique est définitivement supprimé après cinq ans, car l’action de suppression de la stratégie de rétention étendue a la priorité sur la stratégie de rétention à l’échelle de l’organisation.
         
         **Exemple 2 pour ce troisième principe (stratégies)** : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après 10 ans. La seconde stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après sept ans.
         
-        Le moment où ce document sera définitivement supprimé ne peut pas être déterminé à ce niveau, car les deux stratégies de rétention sont délimitées.
+        Le moment où ce document sera définitivement supprimé ne peut pas être déterminé à ce niveau, car les deux stratégies de rétention sont délimitées pour inclure des instances spécifiques.
 
 4. **La période de rétention la plus courte est gagnante.** Applicable pour déterminer quand les éléments seront supprimés des stratégies de rétention et que les résultats n’ont pas pu être résolus à partir du niveau précédent : le contenu est supprimé définitivement à la fin de la période de rétention la plus courte pour l’élément.
     
@@ -366,8 +421,8 @@ Les exemples suivants sont pour complexes pour illustrer les principes de réten
 
 2.  Ces paramètres de rétention sont appliqués à un élément :
     
-    - Une stratégie de rétention non étendue qui supprime uniquement après dix ans
-    - Une stratégie de rétention étendue qui conserve pendant cinq ans, puis supprime
+    - Une stratégie de rétention à l’échelle de l’organisation qui supprime uniquement après dix ans.
+    - Une stratégie de rétention étendue qui conserve pendant cinq ans, puis supprime.
     - Une étiquette de rétention qui conserve pendant trois ans, puis supprime
     
     **Résultat** : l’élément est conservé pendant cinq ans parce qu’il s’agit de la période de rétention la plus longue pour l’élément. À la fin de cette période de rétention, l’élément est définitivement supprimé en raison de l’action de suppression de trois ans de l’étiquette de rétention. La suppression des étiquettes de rétention a la priorité sur la suppression de toutes les stratégies de rétention. Dans cet exemple, tous les conflits sont résolus au troisième niveau.
