@@ -162,6 +162,7 @@
 ###### [Résoudre des problèmes d’installation](linux-support-install.md)
 ###### [Rechercher les problèmes d’état d’intégrité de l’agent](health-status.md)
 ###### [Résoudre des problèmes de connectivité cloud](linux-support-connectivity.md)
+###### [Résoudre des problèmes d’installation de RHEL 6](linux-support-rhel.md)
 ###### [Résoudre des problèmes de performance](linux-support-perf.md)
 ###### [Résoudre des problèmes d’événements manquants](linux-support-events.md)
 

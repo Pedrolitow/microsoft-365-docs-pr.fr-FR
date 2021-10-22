@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Assurez-vous que vos employés à distance peuvent accéder aux ressources locales tout en optimisant l’accès aux services cloud de Microsoft 365.
-ms.openlocfilehash: e9f5bbe04120cd2e49a56ec0fbe47e4ecdb0778e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7266db5ba0149caaeb5057ad2ca1c3d082760c15
+ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190184"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60478768"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Étape 2 : fournir l’accès à distance aux applications et services locaux
 
@@ -91,16 +91,16 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de P2S VPN](/
 > [!NOTE]
 > Azure P2S VPN n’est pas inclus dans l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Déployer l’application de Windows Virtual Desktop pour fournir l’accès distant aux travailleurs à distance en utilisant des appareils personnels
+## <a name="deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Déployer l’application de Azure Virtual Desktop pour fournir l’accès distant aux travailleurs à distance en utilisant des appareils personnels
 
-Pour prendre en charge les travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés, utilisez l’application de Windows Virtual Desktop dans Azure pour créer et attribuer des bureaux virtuels à vos utilisateurs pour qu’ils les utilisent à partir de leur domicile. Les PC virtualisés peuvent agir exactement comme des PC connectés au réseau de votre organisation.
+Pour prendre en charge les travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés, utilisez l’application d’Azure Virtual Desktop pour créer et attribuer des bureaux virtuels à vos utilisateurs pour qu’ils les utilisent à partir de leur domicile. Les PC virtualisés peuvent agir exactement comme des PC connectés au réseau de votre organisation.
 
-![Composants d’Azure Windows Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Composants d’Azure Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de Windows Virtual Desktop](/azure/virtual-desktop/overview).
+Si vous souhaitez en savoir plus, consultez la page [Présentation d’Azure Virtual Desktop](/azure/virtual-desktop/overview).
 
 > [!NOTE]
->Windows Virtual Desktop n’est pas inclus dans l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
+> Azure Virtual Desktop n’est pas inclus dans l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Protéger vos connexions aux Services Bureau à distance avec la Passerelle des services Bureau à distance
 
@@ -124,7 +124,7 @@ Après le déploiement d’une solution d’accès à distance pour vos employé
 | Une solution VPN d’accès à distance est en place | Vous avez configuré votre client VPN d’accès distant pour la segmentation de tunnel et pour la catégorie Optimiser des points de terminaison Microsoft 365. |
 | Aucune solution VPN d’accès à distance et vous avez besoin d’un accès à distance uniquement pour les applications web locales | Vous avez configuré l’application proxy Azure. |
 | Aucune solution VPN d’accès à distance et vous avez besoin d’accéder à des applications locales, dont certaines ne sont pas basées sur le web | Vous avez configuré Azure P2S VPN. |
-| Les employés à distance utilisent leurs appareils personnels chez eux | Vous avez configuré Windows Virtual Desktop. |
+| Les employés à distance utilisent leurs appareils personnels chez eux | Vous avez configuré Azure Virtual Desktop. |
 | Les employés distants utilisent les connexions aux services Bureau à distance vers des systèmes locaux | Vous avez déployé une passerelle des services Bureau à distance sur votre réseau de périmètre. |
 |||
 
