@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: rançongiciel, rançongiciel contrôlé par l’homme, rançongiciel contrôlé par l’homme, HumOR, attaque par attaque par attaque de rançongiciel, chiffrement, cryptovirologie
 description: Protection pas à pas de vos ressources Microsoft 365 contre les attaques par rançongiciel.
-ms.openlocfilehash: 57f79f82f5032c4e1706a8f71eb5eae8a38c0e98
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 04ce78802b24ed286ebf34fa404c17f53fef340b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364746"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556147"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Déployer la protection contre les rançongiciels pour votre client Microsoft 365
 
@@ -232,7 +232,7 @@ Informations clés de Microsoft :
 - [Rançongiciel géré par l’humain](/security/compass/human-operated-ransomware)
 - [Se protéger rapidement contre les rançongiciels et les attaques](/security/compass/protect-against-ransomware)
 - [Rapport de défense numérique Microsoft 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (voir les pages 10 à 19)
-- **Rançongiciel : rapport sur les menaces constantes et omniprésentes** dans le nœud **d’analyse des menaces** du portail Microsoft 365 Defender (consultez ces [exigences en matière de licences](/microsoft-365/security/defender/prerequisites#licensing-requirements))
+- [Rançongiciel : rapport d’analyses sur les menaces constantes et omniprésentes](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) dans le portail Microsoft 365 Defender
 
 Microsoft 365 :
 
@@ -241,6 +241,8 @@ Microsoft 365 :
 - [Protection contre les rançongiciels et programmes malveillants](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protéger votre PC Windows 10 contre les rançongiciels](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Gérer les rançongiciels dans SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Rapports d’analyse sur les menaces pour les rançongiciels](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) dans le portail Microsoft 365 Defender
+
 
 Microsoft 365 Defender :
 

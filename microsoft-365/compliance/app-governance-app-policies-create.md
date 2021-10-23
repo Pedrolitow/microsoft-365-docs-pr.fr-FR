@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des stratégies d’application.
-ms.openlocfilehash: 25aa33fad47abd5faebb90b28b47564f32d6b008
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 61394e280478e7d240fd035c569e17b85e45a076
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204538"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554347"
 ---
 # <a name="create-app-policies"></a>Créer des stratégies d’application
 
@@ -69,6 +69,8 @@ La gouvernance des applications inclut ces modèles pour générer des alertes p
 |---|---|
 |Applications sur-privilégiées|Met en évidence toutes les applications avec plus d’autorisations accordées que celles utilisées par ces applications pour identifier les opportunités de réduction potentielle des autorisations. <p> Par défaut, cette stratégie signale toutes les applications marquées comme étant sur-privilégiées si elles ne sont pas utilisées pendant 90 jours. Ce filtre de période peut être personnalisé avec plus de conditions et d’actions.|
 |Nouvelle application avec des autorisations à privilèges élevés|Met en évidence toutes les nouvelles applications disposant d’autorisations à privilèges élevés pour identifier les applications potentielles à encombrement élevé qui peuvent nécessiter une investigation plus approfondie. <p> Par défaut, cette stratégie signalera toutes les applications enregistrées au cours des sept derniers jours qui disposent d’autorisations étendues.|
+ |Nouvelle application avec des autorisations non-Graph|Met en évidence toutes les nouvelles applications avec des autorisations pour les API non Graph afin d’identifier et d’examiner des API qui risquent de ne pas recevoir les dernières mises à jour de sécurité ou qui ne sont peut-être pas prises en charge à l’avenir.
+ <p> Par défaut, cette stratégie signalera toutes les applications enregistrées au cours des sept derniers jours qui disposent d’autorisations non-Graph.|
 |||
 
 ### <a name="m365-certification"></a>Certification M365
@@ -130,6 +132,7 @@ Voici les conditions disponibles pour une stratégie d’application personnalis
 |Autorisation déléguée|Sélectionnez une ou plusieurs entrées dans la liste.|[Référence des autorisations de Microsoft Graph](/graph/permissions-reference)|
 |Privilège élevé|Oui ou Non|Il s’agit d’une désignation interne basée sur la même logique que celle utilisée par MCAS.|
 |Application avec trop de privilèges|Oui ou Non|Applications avec plus d’autorisations accordées que celles utilisées par ces applications.|
+|Autorisations de l'API non-Graph|Oui ou Non|Applications qui ont des autorisations d’API non-Graph.|
 |Accès aux données de l’application|Accès aux données supérieur à X Go par heure||
 |Tendance d’accès aux données de l’application|Augmentation de X % de l’utilisation des données au cours des 7 derniers jours||
 |Accès à l’API de l’application|Appels d’API supérieurs à X par heure||
