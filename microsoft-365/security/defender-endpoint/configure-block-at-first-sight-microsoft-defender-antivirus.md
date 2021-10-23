@@ -2,7 +2,6 @@
 title: Activer Bloquer à la première consultation pour la détection d’un programme malveillant en quelques secondes
 description: Activer la fonctionnalité Bloquer à la première consultation pour la détection et le blocage d’un programme malveillant en quelques secondes.
 keywords: analyser, bloquer à la première consultation, programme malveillant, à la première consultation, cloud, defender, antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,16 +11,16 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 07/29/2021
+ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fe20298dbfbea1b81f82864beb5d2ccb66ef66d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 53ef056a61da1dca83c1c6bdf611e37a50dc9008
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193002"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552835"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -199,7 +198,7 @@ Si vous n’êtes pas un administrateur d’entreprise ou un professionnel de l�
 
 Si vous disposez d’un appareil personnel qui n’est pas géré par une organisation, vous n’aurez peut-être pas à vous demander comment activer ou désactiver la fonctionnalité Bloquer à la première consultation. Vous pouvez utiliser l’application Sécurité Windows pour gérer la fonctionnalité Bloquer à la première consultation.
 
-1. Sur votre ordinateur Windows 10, ouvrez l’application Sécurité Windows.
+1. Sur votre ordinateur Windows 10 ou Windows 11, ouvrez l’application Sécurité Windows.
 
 2. Sélectionnez **Protection contre les virus et les menaces**.
 
