@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des évaluations dans le Gestionnaire de conformité Microsoft pour vous aider à répondre aux exigences de réglementations et de certifications importantes pour votre organisation.
-ms.openlocfilehash: 536b153a847ef038c4dee25d3dcd23aa638049ee
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 5bc96e6b1fdeec4c7da7f18a199f66d64c093c52
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335925"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554743"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Créer et gérer des évaluations dans le Gestionnaire de conformité
 
@@ -75,9 +75,17 @@ Vous pouvez créer un groupe lors de la création d’une évaluation. Les group
 - La suppression d’une évaluation rompt la relation entre cette évaluation et le groupe.
 - Les groupes ne peuvent pas être supprimés manuellement.
 
+## <a name="understand-templates-before-creating-assessments"></a>Comprendre les modèles avant de créer des évaluations
+
+Les modèles d’évaluation contiennent les contrôles et les recommandations d’action pour les évaluations, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que les modèles premium supplémentaires que vous avez achetés.
+
+Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 et une version universelle qui peut être adaptée pour évaluer les autres produits que vous utilisez. Vous pouvez choisir le type de modèle approprié pour le produit que vous souhaitez évaluer.
+
+Pour en savoir plus sur les modèles, voir [Utiliser des modèles d’évaluation.](compliance-manager-templates.md)
+
 ## <a name="create-assessments"></a>Créer des évaluations
 
-Pour créer une évaluation, vous allez utiliser un Assistant pour sélectionner le modèle qu’il doit utiliser et définir les propriétés de l’évaluation. Les modèles contiennent les contrôles et les recommandations d’action pour l’évaluation, en fonction des certifications pour les différentes réglementations et normes en matière de confidentialité. Les modèles disponibles de votre organisation peuvent inclure un ou plusieurs modèles inclus dans le cadre de votre contrat de licence, ainsi que les modèles premium supplémentaires que vous avez achetés. Chaque modèle, qu’il soit inclus ou premium, existe dans deux versions : une pour une utilisation avec Microsoft 365 et une version universelle qui peut être adaptée à d’autres produits que vous utilisez. Pour en savoir plus sur les modèles, voir [Utiliser des modèles d’évaluation.](compliance-manager-templates.md)
+Pour créer une évaluation, vous allez utiliser un Assistant pour sélectionner le modèle qu’il doit utiliser et définir les propriétés de l’évaluation.
 
 > [!NOTE]
 > Seuls les utilisateurs qui détiennent un rôle d’administrateur général, d’administration du Gestionnaire de conformité ou d’évaluateur du Gestionnaire de conformité peuvent créer et modifier des évaluations. En savoir plus sur [les rôles et les autorisations.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
@@ -90,11 +98,11 @@ Pour commencer à créer des évaluations, suivez ces étapes.
     - Go to your **assessments** page in Compliance Manager and select **Add assessment**; ou
     - Recherchez le modèle que vous souhaitez utiliser sous l’onglet **Modèles** d’évaluation, affichez ses détails et sélectionnez **Créer une évaluation.** Cela remplit le champ de sélection de modèle de l’Assistant pour vous.
 
-3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (voir [types](compliance-manager-templates.md#template-availability-and-licensing) de modèles pour plus d’informations). Sélectionnez la bouton d’radio en haut de votre modèle, puis sélectionnez **Suivant.**
+3. **Sélectionnez un modèle**: si vous n’avez pas encore choisi de modèle à l’étape 2, choisissez un modèle qui servira de base à votre évaluation. Vous verrez la liste des modèles divisés en catégories incluses et premium (pour plus d’informations, voir Disponibilité et [gestion](compliance-manager-templates.md#template-availability-and-licensing) des licences des modèles). Sélectionnez la bouton d’radio en haut de votre modèle, puis sélectionnez **Suivant.**
 
 4. **Produit, nom et groupe :** Définissez ces propriétés pour identifier votre évaluation, choisir le produit qu’elle va évaluer et l’affecter à un groupe.
 
-    - **Produit**: si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé existant que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner Microsoft 365 comme produit lors de l’utilisation d’un modèle universel. Si vous utilisez un modèle Microsoft 365, ce champ est rempli pour vous indiquer Microsoft 365 ne peut pas être modifié.
+    - **Produit**: sélectionnez le produit à appliquer à votre évaluation. Si vous utilisez un modèle Microsoft 365, ce champ est rempli pour vous indiquer Microsoft 365 ne peut pas être modifié. Si vous utilisez un modèle universel, sélectionnez si vous créez cette évaluation pour un nouveau produit ou un produit personnalisé que vous avez déjà défini dans le Gestionnaire de conformité. Si vous choisissez un nouveau produit, entrez son nom. Notez que vous ne pouvez pas sélectionner Microsoft 365 comme produit lors de l’utilisation d’un modèle universel.
     - **Nom**: entrez un nom pour votre évaluation dans le champ Nom **de l’évaluation.** Les noms des évaluations doivent être uniques au sein des groupes. Si le nom de votre évaluation correspond au nom d’une autre évaluation dans un groupe donné, vous recevrez une erreur vous demandant de créer un autre nom.
     - **Groupe**: affectez votre évaluation à un groupe. Vous pouvez :
         - Sélectionnez **Utiliser un groupe existant** pour l’affecter à un groupe que vous avez déjà créé ; ou

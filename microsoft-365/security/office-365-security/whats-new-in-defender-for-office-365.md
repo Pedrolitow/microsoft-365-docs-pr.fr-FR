@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: adde107d9259999a231ec4940c762a13d40dfbc0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5980d01dfb15a019aec9dd39cf6ceae7a1682753
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211800"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555271"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -57,7 +57,7 @@ Pour plus d’informations sur les nouveautés des autres produits de sécurité
   - [Vidéo de l’expérience de l’administrateur](https://youtu.be/vnar4HowfpY)
   - [Vidéo de l’expérience de l’utilisateur final](https://youtu.be/s-vozLO43rI)
   - D’autres nouvelles fonctionnalités mises en quarantaine sont décrites dans ce billet de blog : Simplification de l’expérience de mise [en quarantaine.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388)
-  - La redirection du portail commence par défaut, redirigeant les utilisateurs de la sécurité & conformité vers Microsoft 365 Defender <https://security.microsoft.com> . Pour plus d’informations à ce sujet, voir : [Redirection](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
+- La redirection du portail commence par défaut, redirigeant les utilisateurs de la sécurité & conformité vers Microsoft 365 Defender <https://security.microsoft.com> . Pour plus d’informations à ce sujet, voir : [Redirection](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) des comptes du Centre Office 365 sécurité et conformité vers Microsoft 365 Defender
 
 ## <a name="august-2021"></a>Août 2021
 

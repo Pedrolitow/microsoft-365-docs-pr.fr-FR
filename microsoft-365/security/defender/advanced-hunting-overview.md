@@ -2,8 +2,6 @@
 title: Vue d’ensemble - Recherche avancée
 description: En savoir plus sur les requêtes de repérage avancés dans Microsoft 365 et leur utilisation pour rechercher de manière proactive les menaces et faiblesses de votre réseau
 keywords: repérage avancé, repérage de menace, repérage de cybermenace, Microsoft 365 Defender, microsoft 365, m365, recherche, requête, télémétrie, détections personnalisées, schéma, kusto
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: f2bee83b4529a37d5685f98c1b779f96cc71625f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eb29c2f30e19acb3733f5512f2cba7d666d3df21
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208444"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554611"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherchez de manière proactive les menaces avec le recherche avancée dans Microsoft 365 Defender
 
@@ -46,7 +44,7 @@ Le recherche avancée est un outil de recherche de menace basé sur une requête
 
 Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour vérifier et répondre aux activités suspectées de violation, aux ordinateurs mal configurés et à d’autres conclusions.
 
-Cette fonctionnalité est similaire au [recherche avancée dans Microsoft Defender pour point](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) de terminaison et prend en charge les requêtes qui vérifient un jeu de données plus large à partir de :
+Cette fonctionnalité est similaire au recherche avancée [dans Microsoft Defender pour point](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) de terminaison et prend en charge les requêtes qui vérifient un jeu de données plus large à partir de :
 
 - Microsoft Defender pour point de terminaison
 - Microsoft Defender pour Office 365
@@ -65,8 +63,8 @@ Nous vous recommandons de suivre plusieurs étapes pour commencer rapidement le 
 |--|--|--|
 | **Découvrir la langue** | La recherche avancée est basée sur le langage de requête [Kusto,](/azure/kusto/query/)en charge de la même syntaxe et des mêmes opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
 | **Découvrez comment utiliser les résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter vos résultats. Découvrez comment modifier rapidement les requêtes, explorer pour obtenir des informations plus riches et prendre des mesures de réponse. | - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)<br /> - [Prendre des mesures sur les résultats de la requête](advanced-hunting-take-action.md) |
-| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | - [Référence de schéma](advanced-hunting-schema-tables.md) <br />- [Transition à partir de Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md) |
-| **Obtenir des conseils et des exemples d’experts** | Formez-vous gratuitement avec des guides d’experts Microsoft. Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Obtenir une formation d’expert](advanced-hunting-expert-training.md) <br />- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md) <br />- [Aller à la recherche](advanced-hunting-go-hunt.md) <br />- [Recherchez les menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md) |
+| **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Découvrez où rechercher des données lors de la construction de vos requêtes. | - [Référence de schéma](advanced-hunting-schema-tables.md) <br />- [Transition de Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md) |
+| **Obtenir des conseils et des exemples d’experts** | Formez gratuitement avec des guides d’experts Microsoft. Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Obtenir une formation d’expert](advanced-hunting-expert-training.md) <br />- [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md) <br />- [Aller à la recherche](advanced-hunting-go-hunt.md) <br />- [Recherchez les menaces sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md) |
 | **Optimiser les requêtes et gérer les erreurs** | Comprendre comment créer des requêtes efficaces et sans erreur. | - [Meilleures pratiques en matière de requête](advanced-hunting-best-practices.md)<br />- [Gérer les erreurs](advanced-hunting-errors.md) |
 | **Créer les règles de détection personnalisées** | Comprendre comment utiliser des requêtes de recherche avancées pour déclencher des alertes et prendre des actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md) <br />- [Règles de détection personnalisées](custom-detection-rules.md) |
 

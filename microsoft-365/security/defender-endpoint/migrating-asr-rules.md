@@ -2,7 +2,6 @@
 title: Migration d’un hips tiers vers des règles asr
 description: Décrit comment aborder une migration d’une solution hips (Host Intrusion Prevention System) tierce vers des règles asr.
 keywords: Règles de réduction de la surface d’attaque, règles asr, règles d’attaque, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison
-search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,16 +15,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ec28153c25b6c9108a62ea7d3c63336d4ff1ddb7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 559b0689a4bf6c5507e37ad228894781f1bccf56
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210912"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555948"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles asr
 
-Cet article vous aide à ma map point de terminaison des règles communes à Microsoft Defender.
+Cet article vous aide à ma cartographier des règles communes à Microsoft Defender pour endpoint.
 
 ## <a name="scenarios-when-migrating-from-a-third-party-hips-product-to-asr-rules"></a>Scénarios lors de la migration d’un produit HIPS tiers vers des règles asr
 
@@ -97,7 +96,7 @@ Cet article vous aide à ma map point de terminaison des règles communes à Mic
 - **Opération**- Lecture de fichier
 - Exemples de **fichiers/dossiers, clés/valeurs de Registre, processus, services**- C:\Users *\AppData**.js, C:\Users*\Downloads**.js
 - **Règles de** réduction de la surface d’attaque : en raison de problèmes de fiabilité et de performances, les règles de réduction de la surface d’attaque n’ont pas la possibilité d’empêcher un processus spécifique de lire un certain type de fichier de script. Nous avons une règle pour empêcher les vecteurs d’attaque qui peuvent provenir de ces scénarios. Le nom de la règle est « Empêcher JavaScript ou VBScript de lancer le contenu exécutable téléchargé » (GUID " d3e037e1-3eb8-44c8-a917-5792794759 « Bloquer l’exécution de scripts potentiellement obscurcis » (GUID « 5beb7efe-fd9a-4556-801d-275e5ffc04cc »).
-- Autres fonctionnalités recommandées : bien qu’il existe des règles asr spécifiques qui atténuent certains vecteurs d’attaque dans ces scénarios, il est important de mentionner que l’Antivirus peut par défaut inspecter les scripts (PowerShell, Windows Script Host, JavaScript, VBScript, et bien plus encore) en temps réel, via l’interface AMSI (Antimalware Scan Interface). Plus d’informations sont disponibles ici : Interface d’analyse [anti-programme malveillant (AMSI).](/windows/win32/amsi/antimalware-scan-interface-portal)
+- Autres fonctionnalités recommandées : bien qu’il existe des règles asr spécifiques qui atténuent certains vecteurs d’attaque dans ces scénarios, il est important de mentionner que l’Antivirus est en mesure par défaut d’inspecter les scripts (PowerShell, hôte de script Windows, JavaScript, VBScript, et bien plus encore) en temps réel, via l’interface AMSI (Antimalware Scan Interface). Plus d’informations sont disponibles ici : Interface d’analyse [anti-programme malveillant (AMSI).](/windows/win32/amsi/antimalware-scan-interface-portal)
 
 ### <a name="block-launch-of-child-processes"></a>Bloquer le lancement des processus enfants
 
@@ -123,7 +122,7 @@ Cet article vous aide à ma map point de terminaison des règles communes à Mic
 - **Processus**- *
 - **Opération**: arrêt du processus
 - Exemples de **fichiers/dossiers, clés/valeurs de Registre, processus, services**- MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe, etc.
-- **Règles de réduction** de la surface d’attaque : les règles de réduction de la surface d’attaque ne sont pas pris en charge dans ces scénarios, car elles sont protégées Windows 10 protections de sécurité intégrées.
+- **Règles de** réduction de la surface d’attaque : les règles de réduction de la surface d’attaque ne sont pas pris en charge dans ces scénarios, car elles sont protégées Windows protections de sécurité intégrées.
 - **Autres fonctionnalités recommandées**: ELAM (logiciel anti-programme malveillant à lancement précoce), PPL (Protection Process Light), PPL AntiMalware Light et System Guard.
 
 ### <a name="block-specific-launch-process-attempt"></a>Bloquer une tentative de processus de lancement spécifique

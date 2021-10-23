@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment sécuriser les WINDOWS 10 une fois que vous avez Microsoft 365 Business Premium.
-ms.openlocfilehash: e89dbd21edc05c7f930f57bdef59ad5242041c9e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 11b91796d5c838cdcba656de430b875327be3db4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60155969"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554359"
 ---
 # <a name="secure-windows-10-computers"></a>Sécuriser des ordinateurs Windows 10
 
@@ -45,10 +45,9 @@ Une fois [que](business-set-up.md) vous avez Microsoft 365 Business Premium, il 
 
     On the top of the page, choose **Get started**.
 
-4. Dans le **volet Sécuriser Windows 10 ordinateurs,** sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, voir [Secure Windows 10 devices](../misc/secure-windows-10-devices.md) (article)\
-). 
+4. Dans le **volet Sécuriser Windows 10 ordinateurs,** sélectionnez les options que vous souhaitez activer. Pour plus d’informations sur les paramètres, voir [Secure Windows 10 devices](../misc/secure-windows-10-devices.md) (article). 
     
-    Pour la plupart des organisations, les options proposées ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des lignes de base de sécurité prédéfinëes pour sécuriser vos appareils Windows 10. Pour plus d’informations, [voir les lignes de base de sécurité pour Windows 10 appareils mobiles.](/mem/intune/protect/security-baselines)   
+    Pour la plupart des organisations, les options proposées ici offrent un bon niveau de sécurité. Toutefois, si votre organisation a des besoins de sécurité plus complexes, vous pouvez également utiliser des lignes de base de sécurité prédéfinëes pour sécuriser vos appareils Windows 10. Pour plus d’informations, voir [les lignes de base de sécurité pour Windows 10 appareils mobiles.](/mem/intune/protect/security-baselines)   
 
 1. Sélectionnez **Appliquer les paramètres.**
 

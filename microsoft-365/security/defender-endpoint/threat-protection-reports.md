@@ -2,8 +2,6 @@
 title: Rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison
 description: Suivre les détections, catégories et gravité des alertes à l’aide du rapport de protection contre les menaces
 keywords: détection d’alerte, source, alerte par catégorie, gravité de l’alerte, classification des alertes, détermination
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4413c536eb5ee1b748996c21891a9801c6488fc2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb9a45313c099ba30537bde061ef0f2a90012e9b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159341"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553627"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Rapport sur la protection contre les menaces dans Microsoft Defender pour point de terminaison
 
@@ -48,7 +46,7 @@ Section|Description
 ## <a name="alert-trends"></a>Tendances des alertes
 Par défaut, les tendances des alertes affichent les informations d’alerte de la période de 30 jours se terminant par la dernière journée entière. Pour mieux prendre en compte les tendances qui se produisent dans votre organisation, vous pouvez affiner la période de rapport en ajustant la période indiquée. Pour ajuster la période, sélectionnez une plage de temps dans les options de la baisse :
 
-- 30 jours
+- 30 jours
 - 3 mois
 - 6 mois
 - Personnalisé
@@ -63,7 +61,7 @@ Alors que les tendances des alertes indiquent les tendances des alertes, le rés
  Le résumé des alertes vous permet d’aller jusqu’à une file d’attente d’alertes particulière avec le filtre correspondant qui lui est appliqué. Par exemple, si vous cliquez sur la barre PEPT dans la carte sources de détection, la file d’attente des alertes affiche uniquement les alertes générées à partir PEPT détections.
 
 > [!NOTE]
-> Les données reflétées dans la section récapitulatif sont limitées à 180 jours avant la date actuelle. Par exemple, si la date du jour est le 5 novembre 2019, les données de la section récapitulatif reflétera les numéros du 5 mai 2019 au 5 novembre 2019.
+> Les données reflétées dans la section récapitulatif sont limitées à 180 jours avant la date actuelle. Par exemple, si la date du jour est le 5 novembre 2019, les données de la section récapitulatif reflétera les chiffres du 5 mai 2019 au 5 novembre 2019.
 >
 > Le filtre appliqué à la section tendances n’est pas appliqué à la section récapitulatif.
 
@@ -72,7 +70,7 @@ Alors que les tendances des alertes indiquent les tendances des alertes, le rés
 Le rapport est composé de cartes qui affichent les attributs d’alerte suivants :
 
 - **Sources de détection**: affiche des informations sur les capteurs et les technologies de détection qui fournissent les données utilisées par Microsoft Defender pour le point de terminaison pour déclencher des alertes.
-- **Catégories de menaces**: affiche les types de menace ou d’activité d’attaque qui ont déclenché des alertes, indiquant les zones de focus possibles pour vos opérations de sécurité.
+- **Catégories de menaces**: indique les types d’activité de menace ou d’attaque qui ont déclenché des alertes, indiquant les zones de focus possibles pour vos opérations de sécurité.
 - **Gravité :** indique le niveau de gravité des alertes, indiquant l’impact potentiel des menaces collectives sur votre organisation et le niveau de réponse nécessaire pour les résoudre.
 - **État**: affiche l’état de résolution des alertes, indiquant l’efficacité de vos réponses d’alerte manuelles et de la correction automatisée (si activée).
 - **Classification &** détermination : indique comment vous avez classé les alertes lors de leur résolution, si vous les avez classées comme menaces réelles (alertes vraies) ou comme détections incorrectes (fausses alertes). Ces cartes indiquent également la détermination des alertes résolues, fournissant des informations supplémentaires telles que les types de menaces réelles détectées ou les activités légitimes détectées de manière incorrecte.

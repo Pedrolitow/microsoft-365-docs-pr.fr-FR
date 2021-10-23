@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fdce3a978d79f3ba87455f67d058185f740972ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c7a078fdd618cd3b5070063d4fa7529c9c7f6216
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150043"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553795"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Examiner les entités sur les appareils à l’aide de la réponse en direct
 
@@ -34,7 +34,7 @@ ms.locfileid: "60150043"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion Shell distante. Vous avez ainsi la puissance d’un travail d’investigation approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
+La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion shell distante. Vous avez ainsi la puissance d’un travail d’investigation approfondi et d’actions de réponse immédiates pour contenir rapidement les menaces identifiées en temps réel.
 
 La réponse dynamique est conçue pour améliorer les enquêtes en permettant à votre équipe des opérations de sécurité de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.
 
@@ -56,18 +56,27 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
 
   Les appareils doivent être en cours d’exécution dans l’une des versions suivantes Windows
 
-  - **Windows 10**
+  - **Windows 10 & 11**
     - [Version 1909 ou](/windows/whats-new/whats-new-windows-10-version-1909) ultérieure
     - [Version 1903 avec](/windows/whats-new/whats-new-windows-10-version-1903) [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) avec [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) avec [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) avec [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Server 2019 - Applicable uniquement pour la prévisualisation publique**
+  - **macOS** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.43.84 
+  
+  - **Linux** : applicable uniquement pour la prévisualisation publique, version minimale requise : 101.45.13 
+    
+  - **Windows Server 2012 R2** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  
+  - **Windows Server 2016** - avec [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+
+  - **Windows Server 2019**
     - Version 1903 ou (avec [KB4515384)](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)ultérieure
     - Version 1809 [(avec KB4537818)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     
   - **Windows Server 2022**
+
        
 
 - **Activez la réponse en direct à partir de la page paramètres avancés.**
@@ -82,7 +91,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   > [!NOTE]
   > Seuls les utilisateurs ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
 
-- **Assurez-vous qu’un niveau de correction Automation** est affecté à l’appareil.
+- **Assurez-vous que le niveau de correction Automation** est affecté à l’appareil.
 
   Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir de session Live Response à un membre de ce groupe.
 
@@ -91,6 +100,9 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   ![Image du message d’erreur.](images/live-response-error.png)
 
 - **Activer l’exécution de script non signé de réponse en** direct (facultatif).
+
+  >[!IMPORTANT]
+  >La vérification de signature s’applique uniquement aux scripts PowerShell. 
 
   > [!WARNING]
   > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -102,7 +114,7 @@ Avant de lancer une session sur un appareil, veillez à respecter les conditions
   Seuls les utilisateurs qui ont été mis en service avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md)
 
   > [!IMPORTANT]
-  > L’option de téléchargement d’un fichier dans la bibliothèque est uniquement disponible pour les utilisateurs ayant l’autorisation « Gérer Paramètres sécurité ».
+  > L’option de téléchargement d’un fichier dans la bibliothèque est disponible uniquement pour les utilisateurs ayant l’autorisation « Gérer Paramètres sécurité ».
   > Le bouton est grisé pour les utilisateurs ayant uniquement des autorisations déléguées.
 
   Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations des utilisateurs sont contrôlées par le rôle personnalisé RBAC.
@@ -128,7 +140,7 @@ Le tableau de bord vous donne également accès à :
 
 2. Accédez **aux points de terminaison >'inventaire des** appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
 
-3. Lancez la session de réponse en direct en sélectionnant **Lancer une session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
+3. Lancez la session de réponse en direct en sélectionnant **Lancer la session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
 
 4. Utilisez les commandes intégrées pour faire des enquêtes. Pour plus d’informations, voir [commandes de réponse en direct.](#live-response-commands)
 
@@ -148,28 +160,26 @@ Les commandes suivantes sont disponibles pour les rôles  d’utilisateur qui on
 <br>
 
 ****
-
-|Command|Description|
-|---|---|
-|`cd`|Modifie le répertoire actuel.|
-|`cls`|Cette commande permet d’effacer l’écran de la console.|
-|`connect`|Lance une session de réponse en direct sur l’appareil.|
-|`connections`|Affiche toutes les connexions actives.|
-|`dir`|Affiche une liste de fichiers et de sous-répertoires dans un répertoire.|
-|`drivers`|Affiche tous les pilotes installés sur l’appareil.|
-|`fg <command ID>`|Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel. <p> **REMARQUE**: fg prend un « ID de commande » disponible à partir des travaux, et non un PID|
-|`fileinfo`|Récupération d’informations sur un fichier.|
-|`findfile`|Localise les fichiers d’un nom donné sur l’appareil.|
-|`getfile <file_path>`|Télécharge un fichier.|
-|`help`|Fournit des informations d’aide pour les commandes de réponse en direct.|
-|`jobs`|Indique les travaux en cours d’exécution, leur ID et leur état.|
-|`persistence`|Affiche toutes les méthodes de persistance connues sur l’appareil.|
-|`processes`|Affiche tous les processus en cours d’exécution sur l’appareil.|
-|`registry`|Affiche les valeurs du Registre.|
-|`scheduledtasks`|Affiche toutes les tâches programmées sur l’appareil.|
-|`services`|Affiche tous les services sur l’appareil.|
-|`trace`|Définit le mode de journalisation du terminal pour le débogage.|
-|
+| Command  | Description  | Windows et Windows Server  | macOS  | Linux  |
+|---|---|---|---|---|
+| cd  | Modifie le répertoire actuel.  | v  | v | v |
+| cls  | Cette commande permet d’effacer l’écran de la console.  | v  | v  | v  |
+| connect  | Lance une session de réponse en direct sur l’appareil.  | v  | v  | v  |
+| connexions  | Affiche toutes les connexions actives.  | v  | N | N |
+| dir  | Affiche une liste de fichiers et de sous-répertoires dans un répertoire.  | v  | v  |v  |
+| drivers  | Affiche tous les pilotes installés sur l’appareil.  | v |  N | N  |
+| fg `<command ID>`  | Placez le travail spécifié au premier plan au premier plan, ce qui en fait le travail actuel.  REMARQUE : fg prend un « ID de commande » disponible à partir des travaux, et non un piD  | v  | v  | v  |
+| fileinfo  | Récupération d’informations sur un fichier.  |v  | v  | v  |
+| findfile  | Localise les fichiers d’un nom donné sur l’appareil.  | v | v  | v  |
+| getfile <file_path>  | Télécharge un fichier.  | v  | v  | v  |
+| Aide  | Fournit des informations d’aide pour les commandes de réponse en direct.  |v  | v | v  |
+| tâches  | Indique les travaux en cours d’exécution, leur ID et leur état.  | v  | v | v |
+| persistance  | Affiche toutes les méthodes de persistance connues sur l’appareil.  | v  | N | N |
+| Processus  | Affiche tous les processus en cours d’exécution sur l’appareil.  | v  | v  | v  |
+| registre  | Affiche les valeurs du Registre.  | v  | N | N |
+| scheduledtasks  | Affiche toutes les tâches programmées sur l’appareil.  | v | N | N |
+| services  | Affiche tous les services sur l’appareil.  | v  | N | N |
+| trace  | Définit le mode de journalisation du terminal pour le débogage.  | v  | v  |v  |
 
 ### <a name="advanced-commands"></a>Commandes avancées
 
@@ -179,15 +189,19 @@ Les commandes suivantes sont disponibles pour les rôles d’utilisateur qui ont
 
 ****
 
-|Command|Description|
-|---|---|
-|`analyze`|Analyse l’entité avec différents moteurs d’incrimination pour parvenir à un verdict.|
-|`run`|Exécute un script PowerShell à partir de la bibliothèque sur l’appareil.|
-|`library`|Répertorie les fichiers qui ont été chargés dans la bibliothèque de réponses en direct.|
-|`putfile`|Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut.|
-|`remediate`|Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : <ul><li>Fichier : supprimer</li><li>Processus : arrêter, supprimer un fichier image</li><li>Service : arrêter, supprimer un fichier image</li><li>Entrée de Registre : supprimer</li><li>Tâche programmée : supprimer</li><li>Élément de dossier de démarrage : supprimer un fichier</li></ul> <p> **REMARQUE**: cette commande est une commande prérequise. Vous pouvez utiliser la commande conjointement pour exécuter automatiquement la `-auto` `remediate` commande prérequise.
-|`undo`|Restaure une entité qui a été corrigé.|
-|
+| Command  | Description  | Windows et Windows Server  | macOS  | Linux  |
+|---|---|---|---|---|
+| analyser  | Analyse l’entité avec différents moteurs d’incrimination pour parvenir à un verdict.  | v  | N  | N  |
+| collect  | Collecte le package d’investigation à partir de l’ordinateur  | N  | v  | v  |
+| isolate  | Déconnecte l’appareil du réseau tout en conservant la connectivité au service Defender for Endpoint  | N  | v  | N  |
+| release  | Libère un appareil de l’isolation réseau  | N  | v  | N  |
+| run  | Exécute un script PowerShell à partir de la bibliothèque sur l’appareil.  | v  | v  | v  |
+| library  | Répertorie les fichiers qui ont été chargés dans la bibliothèque de réponses en direct.  | v  | v  | v  |
+| putfile  | Place un fichier de la bibliothèque sur l’appareil. Les fichiers sont enregistrés dans un dossier de travail et supprimés lorsque l’appareil redémarre par défaut.  | v  | v  | v  |
+| corriger  | Remédie à une entité sur l’appareil. L’action de correction varie en fonction du type d’entité : File: delete Process: stop, delete image file Service: stop, delete image file Registry entry: delete Scheduled task: remove Startup folder item: delete file NOTE: This command has a prerequisite command. Vous pouvez utiliser la commande -auto conjointement avec la correction pour exécuter automatiquement la commande prérequise.  | v  | v  | v  |
+| analyse  | Déconnecte l’appareil du réseau tout en conservant la connectivité au service Defender for Endpoint  | N  | v  | v  |
+| annuler  | Restaure une entité qui a été corrigé.  | v  | v  | v  |
+
 
 ## <a name="use-live-response-commands"></a>Utiliser des commandes de réponse en direct
 
@@ -248,7 +262,7 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 
 6. Cliquez sur **Confirmer.**
 
-7. (Facultatif) Pour vérifier que le fichier a été téléchargé vers la bibliothèque, exécutez la `library` commande.
+7. (Facultatif) Pour vérifier que le fichier a été chargé dans la bibliothèque, exécutez la `library` commande.
 
 ### <a name="cancel-a-command"></a>Annuler une commande
 
@@ -257,13 +271,13 @@ Vous pouvez avoir une collection de scripts PowerShell qui peuvent s’exécuter
 > [!WARNING]
 > L’utilisation de ce raccourci n’arrête pas la commande côté agent. Il annule uniquement la commande dans le portail. Ainsi, la modification des opérations telles que la « correction » peut se poursuivre, pendant l’annulation de la commande.
 
-## <a name="run-a-powershell-script"></a>Exécuter un script PowerShell
+## <a name="run-a-script"></a>Exécuter un script
 
-Avant de pouvoir exécuter un script PowerShell, vous devez d’abord le télécharger dans la bibliothèque.
+Avant de pouvoir exécuter des scripts PowerShell/Bash, vous devez d’abord le télécharger dans la bibliothèque.
 
 Après avoir téléchargé le script dans la bibliothèque, utilisez `run` la commande pour exécuter le script.
 
-Si vous prévoyez d’utiliser un script non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités avancées.](advanced-features.md)
+Si vous prévoyez d’utiliser un script PowerShell non signé dans la session, vous devez activer le paramètre dans la page Paramètres des [fonctionnalités](advanced-features.md) avancées.
 
 > [!WARNING]
 > Autoriser l’utilisation de scripts non signés peut augmenter votre exposition aux menaces.
@@ -302,7 +316,7 @@ Si vous prévoyez d’utiliser un script non signé dans la session, vous devez 
 
 ## <a name="supported-output-types"></a>Types de sortie pris en charge
 
-La réponse en direct prend en charge les types de sortie au format JSON et tableau. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
+La réponse en direct prend en charge les types de sortie de tableau et de format JSON. Pour chaque commande, il existe un comportement de sortie par défaut. Vous pouvez modifier la sortie dans votre format de sortie préféré à l’aide des commandes suivantes :
 
 - `-output json`
 - `-output table`
@@ -327,7 +341,7 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 - ID
 - Ligne de commande
 - Durée
-- Barre d’état et d’entrée ou de sortie
+- Barre côté état et entrée ou sortie
 
 ## <a name="limitations"></a>Limites
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: ae6d9ab0017ed4d4a33fc57be74ac0ea4aa955a4
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: 296c8ccd3373d7b23b187f60b1a93318538ec8fe
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335949"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554515"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
@@ -114,7 +114,7 @@ Vous pouvez permettre à tous vos employés de rester productifs où que vous so
 
 - Un appareil moderne, tel qu’un ordinateur portable surface et Windows 10, qui dispose des fonctionnalités, de la sécurité et des performances pour accéder aux applications et services Cloud de Microsoft 365 directement sur le Web.
 
-- Tout appareil, y compris les ordinateurs portables ou bureaux plus anciens utilisés à domicile, qui peuvent accéder indirectement aux applications et services cloud Microsoft 365 via un [bureau virtuel Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices) rapidement déployé. Cette option offre des performances élevées, une sécurité renforcée et une gestion informatique simplifiée.
+- Tout appareil, y compris les ordinateurs portables ou bureaux plus anciens utilisés à domicile, qui peuvent accéder indirectement aux applications et services cloud Microsoft 365 via un [bureau virtuel Windows 10](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices) rapidement déployé. Cette option offre des performances élevées, une sécurité renforcée et une gestion informatique simplifiée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: 942cd3b942cc8aa3b51b1eddf40ad238341ea036
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d619438a8fdf2eb0da2a5b2f55b43bb064d3cea4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168193"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552739"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -54,26 +54,23 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
+1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **applications intégrées.**
 
-    > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+2. Sélectionnez le add-in déployé, puis sélectionnez **l’onglet Configuration.**
 
-2. Sélectionnez le add-in déployé.
+3. Dans le **volet Configuration,** go to **Advanced Paramètres**  >  **Add-ins**.
 
-3. Cliquez sur **Supprimer le add-in.** Supprimez le bouton de la fonction de la fonction dans le coin inférieur droit.
+4. Sélectionnez de nouveau le module dans la liste.
 
-4. Validez vos sélections, puis sélectionnez **Supprimer le complément**.
+5. Choose **Remove Add-In**. Supprimez le bouton du complément dans le coin inférieur droit.
+
+6. Validez vos sélections, puis choisissez **Supprimer.**
 
 ## <a name="edit-add-in-access"></a>Modification de l’accès d’un complément
 
 Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins.
 
-1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
-
-    > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
-
+1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **applications intégrées.**
 
 2. Sélectionnez le add-in déployé.
 
@@ -90,15 +87,11 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
   
 **Pour désactiver l’acquisition d’un add-in**
   
-1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> [Services &amp; Compléments](https://go.microsoft.com/fwlink/p/?linkid=2053743).
+1. Dans le Centre d’administration, allez à la page **Paramètres** \> [paramètres de l’organisation.](https://go.microsoft.com/fwlink/p/?linkid=2053743)
 
-    > [!NOTE]
-    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
-
+2. Sélectionnez **Applications et services appartenant aux utilisateurs**.
     
-3. Sélectionnez **Applications et services appartenant aux utilisateurs**.
-    
-4. Désactivez l’option pour permettre aux utilisateurs d’accéder à Office Store.
+3. Désactivez l’option pour permettre aux utilisateurs d’accéder à Office Store.
 
     Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le Store.
       
@@ -106,7 +99,7 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
         
       - Windows
       - Mac
-      - Office
+      - Bureau
         
         
     - Acquisitions à partir **d’AppSource**
@@ -137,7 +130,7 @@ Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office.](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
+Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
@@ -165,8 +158,5 @@ Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Déployer des add-ins dans le Centre d’administration](./manage-deployment-of-add-ins.md) (article)\
-En savoir plus sur la création et la [création de Office de développement](/office/dev/add-ins/overview/office-add-ins) (article)\
-[Utiliser les cmdlets PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de déploiement centralisé pour gérer les add-ins (article)\
-[Résolution des problèmes : l’utilisateur ne voit pas les modules](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)\
-[Mineurs et acquisition de Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (article)
+[Mineurs et acquisition de Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+

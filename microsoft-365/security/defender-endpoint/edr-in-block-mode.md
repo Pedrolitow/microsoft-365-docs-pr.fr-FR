@@ -1,8 +1,7 @@
 ---
 title: Détection et réponse des points de terminaison en mode blocage
 description: En savoir plus sur protection évolutive des points de terminaison en mode bloc
-keywords: Microsoft Defender pour le point de terminaison, mde, PEPT en mode bloc, blocage du mode passif
-search.product: eADQiWindows 10XVcnh
+keywords: Microsoft Defender pour le point de terminaison, mde, PEPT en mode bloc, blocage en mode passif
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -20,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 9ab524d58e318625773291a9d206ff32753eca91
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 2c463da937222939586029a970439b05134315a3
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245692"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554575"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Détection et réponse de point de terminaison (EDR) en mode bloc
 
@@ -37,13 +36,13 @@ ms.locfileid: "60245692"
 
 ## <a name="what-is-edr-in-block-mode"></a>Qu’est-ce PEPT en mode bloc ?
 
-[La](overview-endpoint-detection-response.md) détection et la réponse des points de terminaison (PEPT) en mode bloc offrent une protection supplémentaire contre les artefacts malveillants lorsque Antivirus Microsoft Defender n’est pas le produit antivirus principal et s’exécute en mode passif. PEPT en mode bloc fonctionne en arrière-plan pour corriger les artefacts malveillants détectés par PEPT fonctionnalités. Ces artefacts ont peut-être été manqués par le produit antivirus principal non Microsoft. Pour les appareils exécutant Antivirus Microsoft Defender comme antivirus principal, la PEPT en mode blocage fournit une couche supplémentaire de défense en permettant aux Antivirus Microsoft Defender d’agir automatiquement sur les détections de PEPT comportemental post-violation.
+[La](overview-endpoint-detection-response.md) détection et la réponse des points de terminaison (PEPT) en mode bloc offrent une protection supplémentaire contre les artefacts malveillants lorsque Antivirus Microsoft Defender n’est pas le produit antivirus principal et s’exécute en mode passif. PEPT en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés par PEPT fonctionnalités. Ces artefacts ont peut-être été manqués par le produit antivirus principal non Microsoft. Pour les appareils exécutant Antivirus Microsoft Defender comme antivirus principal, la PEPT en mode blocage fournit une couche supplémentaire de défense en permettant aux Antivirus Microsoft Defender d’agir automatiquement sur les détections de PEPT comportemental post-violation.
 
 > [!IMPORTANT]
-> PEPT en mode blocage ne fournit pas toute la protection disponible lorsque Antivirus Microsoft Defender protection en temps réel est activée. Toutes les fonctionnalités qui dépendent Antivirus Microsoft Defender être la solution antivirus active ne fonctionneront pas, y compris les exemples clés suivants :
+> PEPT en mode bloc ne fournit pas toute la protection disponible lorsque Antivirus Microsoft Defender protection en temps réel est activée. Toutes les fonctionnalités qui dépendent Antivirus Microsoft Defender être la solution antivirus active ne fonctionneront pas, y compris les exemples clés suivants :
 >
-> - La protection en temps réel, y compris l’analyse à l’accès, n’est pas disponible lorsque Antivirus Microsoft Defender est en mode passif. Pour en savoir plus sur les paramètres de stratégie de protection en temps réel, voir Activer et **[configurer Antivirus Microsoft Defender protection toujours active.](configure-real-time-protection-microsoft-defender-antivirus.md)**
-> - Les fonctionnalités telles **[que les règles de protection](network-protection.md)** réseau et de réduction de la **[surface](attack-surface-reduction.md)** d’attaque sont disponibles uniquement lorsque Antivirus Microsoft Defender est en cours d’exécution en mode actif.
+> - La protection en temps réel, y compris l’analyse sur accès, n’est pas disponible lorsque Antivirus Microsoft Defender est en mode passif. Pour en savoir plus sur les paramètres de stratégie de protection en temps réel, voir Activer et **[configurer Antivirus Microsoft Defender protection toujours active.](configure-real-time-protection-microsoft-defender-antivirus.md)**
+> - Les fonctionnalités telles **[que les règles de protection](network-protection.md)** du réseau et de réduction de la **[surface](attack-surface-reduction.md)** d’attaque sont disponibles uniquement lorsque Antivirus Microsoft Defender est en cours d’exécution en mode actif.
 >
 > Votre solution antivirus non-Microsoft devrait fournir ces fonctionnalités.
 
@@ -66,7 +65,7 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 ## <a name="enable-edr-in-block-mode"></a>Activer PEPT en mode bloc
 
 > [!TIP]
-> Assurez-vous que [les conditions requises](#requirements-for-edr-in-block-mode) sont remplies avant d’PEPT en mode bloc.
+> Assurez-vous que [les conditions](#requirements-for-edr-in-block-mode) requises sont remplies avant d’PEPT en mode bloc.
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com/](https://security.microsoft.com/) ) and sign in.
 2. Choose **Paramètres** \> **Endpoints** \> **General** \> **Advanced features**.
@@ -80,8 +79,8 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 |Conditions requises|Détails|
 |---|---|
 |Autorisations|Le rôle Administrateur général ou Administrateur de la sécurité doit être attribué [dans Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). Pour plus d’informations, voir [Autorisations de base.](basic-permissions.md)|
-|Système d’exploitation|Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <br/>- Windows 10 (toutes les publications)<br/>- Windows Server, version 1803 ou plus récente<br/>- Windows Server 2019<br/>- Windows Server 2022<br/>- Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)|
-|Microsoft Defender pour point de terminaison|Les appareils doivent être intégrés à Defender for Endpoint. Consultez [la conditions minimales requises pour Microsoft Defender pour le point de terminaison.](minimum-requirements.md)|
+|Système d’exploitation|Les appareils doivent être en cours d’exécution dans l’une des versions Windows : <br/>- Windows 10 (toutes les releases)<br/>- Windows Server, version 1803 ou plus récente<br/>- Windows Server 2019<br/>- Windows Server 2022<br/>- Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)|
+|Microsoft Defender pour point de terminaison|Les appareils doivent être intégrés à Defender for Endpoint. Voir [conditions minimales requises pour Microsoft Defender pour le point de terminaison.](minimum-requirements.md)|
 |Antivirus Microsoft Defender|Les appareils doivent être Antivirus Microsoft Defender et s’exécutent en mode actif ou passif. [Confirmez Antivirus Microsoft Defender est en mode actif ou passif.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)|
 |Protection fournie par le cloud|Antivirus Microsoft Defender doivent être configurées de telle manière que la protection cloud [soit activée.](enable-cloud-protection-microsoft-defender-antivirus.md)|
 |Antivirus Microsoft Defender plateforme|Les appareils doivent être à jour. Pour confirmer, à l’aide de PowerShell, exécutez l’cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) en tant qu’administrateur. Dans la **ligne AMProductVersion,** vous devriez voir **4.18.2001.10** ou version supérieure. <p> Pour plus d’informations, consultez [Gérer les mises à jour Antivirus Microsoft Defender et appliquer des lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md).|
@@ -113,10 +112,10 @@ La protection cloud est nécessaire pour activer la fonctionnalité sur l’appa
 
 ### <a name="what-is-the-difference-between-active-and-passive-mode"></a>Quelle est la différence entre le mode actif et le mode passif ?
 
-Pour les points de terminaison exécutant Windows 10, Windows Server, version 1803 ou ultérieure, Windows Server 2019 ou Windows Server 2022 lorsque Antivirus Microsoft Defender est en mode actif, il est utilisé comme antivirus principal sur l’appareil. Lors de l’exécution en mode passif, Antivirus Microsoft Defender n’est pas le produit antivirus principal. Dans ce cas, les menaces ne sont pas Antivirus Microsoft Defender en temps réel.
+Pour les points de terminaison exécutant Windows 10, Windows 11, Windows Server, version 1803 ou ultérieure, Windows Server 2019 ou Windows Server 2022 lorsque Antivirus Microsoft Defender est en mode actif, il est utilisé comme antivirus principal sur l’appareil. Lors de l’exécution en mode passif, Antivirus Microsoft Defender n’est pas le produit antivirus principal. Dans ce cas, les menaces ne sont pas Antivirus Microsoft Defender en temps réel.
 
 > [!NOTE]
-> Antivirus Microsoft Defender peut s’exécuter en mode passif uniquement lorsque l’appareil est intégré à Microsoft Defender pour endpoint.
+> Antivirus Microsoft Defender peut s’exécuter en mode passif uniquement lorsque l’appareil est intégré à Microsoft Defender pour Endpoint.
 
 Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](microsoft-defender-antivirus-compatibility.md)
 
@@ -129,7 +128,7 @@ Pour vérifier si Antivirus Microsoft Defender est en cours d’exécution en mo
 |Méthode|Procedure|
 |---|---|
 |PowerShell|1. Sélectionnez le menu Démarrer, commencez à taper, puis `PowerShell` ouvrez Windows PowerShell dans les résultats.<br/><br/>2. `Get-MpComputerStatus` Tapez .<br/><br/>3. Dans la liste des résultats, dans la ligne **AMRunningMode,** recherchez l’une des valeurs suivantes :<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>Pour plus d’informations, [voir Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
-|Invite de commandes|1. Sélectionnez le menu Démarrer, commencez à taper, puis ouvrez Windows invite de commandes `Command Prompt` dans les résultats.<br/><br/>2. `sc query windefend` Tapez .<br/><br/>3. Dans la liste des résultats, dans la ligne **STATE,** confirmez que le service est en cours d’exécution. |
+|Invite de commandes|1. Sélectionnez le menu Démarrer, commencez à taper, puis Windows invite de commandes `Command Prompt` dans les résultats.<br/><br/>2. `sc query windefend` Tapez .<br/><br/>3. Dans la liste des résultats, dans la **ligne STATE,** confirmez que le service est en cours d’exécution. |
 
 ### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>Comment puis-je confirmer que PEPT en mode bloc est Antivirus Microsoft Defender en mode passif ?
 
@@ -154,6 +153,7 @@ Si Antivirus Microsoft Defender est en cours d’exécution en mode actif ou pas
 - Windows Server 2019 
 - Windows Server 2016
 - Windows Server 2012 R2
+- Windows 11
 
 >[!NOTE]
 >Windows Server 2016 et Windows Server 2012 R2 doivent être intégrés à l’aide des instructions des serveurs Windows [intégrés](configure-server-endpoints.md) pour que cette fonctionnalité fonctionne. 

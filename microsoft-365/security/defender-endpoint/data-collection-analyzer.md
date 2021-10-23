@@ -2,8 +2,6 @@
 title: Collecte de données pour la résolution avancée des problèmes sur Windows
 description: Découvrez comment utiliser l’analyseur client pour collecter des données pour des scénarios de dépannage complexes
 keywords: analzyer, collecter des données, dépannage de mdeclientanalyzer, résolution avancée des problèmes
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7fa72bc6e96199fb7773e4df385e3527ac14938e
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 469e1cd227e83facb678c85bd123f4ea250cd08c
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59182026"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555907"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>Collecte de données pour la résolution avancée des problèmes sur Windows
 
@@ -43,7 +41,7 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 **-h** : appelle [l’enregistreur Windows performance](/windows-hardware/test/wpt/wpr-command-line-options) pour collecter un suivi détaillé des performances générales en plus du jeu de journaux standard.
 
-**-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut être utile lors du diagnostic des problèmes de dégradation des performances lents qui se produisent au fil du temps mais qui sont difficiles à reproduire à la demande.
+**-l** - Appels dans l’Windows [Performance Monitor](/windows-server/remote/remote-desktop-services/rds-rdsh-performance-counters) pour collecter un suivi perfmon léger. Cela peut s’avérer utile lors du diagnostic de problèmes de dégradation des performances lents qui se produisent au fil du temps, mais qui sont difficiles à reproduire à la demande.
 
 **-c** - Appels dans le [moniteur](/sysinternals/downloads/procmon) de processus pour la surveillance avancée de l’activité en temps réel du système de fichiers, du Registre et des processus/threads. Cela est particulièrement utile lors du dépannage de différents scénarios de compatibilité d’application.
 
@@ -68,7 +66,7 @@ Exécuter '**MDEClientAnalyzer.cmd /?**' pour voir la liste des paramètres disp
 
 \* Maintenez la touche Ctrl la plus à droite, puis appuyez deux fois sur la touche DE VERROUILLAGE DE DÉFILEMENT.
 
-**-k** - Utilise [l’outil NotMyFault](/sysinternals/downloads/notmyfault) pour forcer le système à se crasher et générer un vidage de mémoire de l’ordinateur. Cela serait utile pour l’analyse de divers problèmes de stabilité du système d’exploitation.
+**-k** - Utilise [l’outil NotMyFault](/sysinternals/downloads/notmyfault) pour forcer le système à se crasher et à générer un vidage de mémoire de l’ordinateur. Cela serait utile pour l’analyse de divers problèmes de stabilité du système d’exploitation.
 
 L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lancés à distance en exécutant « RemoteMDEClientAnalyzer.cmd » qui est également regroupé dans l’ensemble d’outils de l’analyseur :
 
@@ -77,8 +75,8 @@ L’analyseur et tous les indicateurs de scénario ci-dessus peuvent être lanc�
 > [!NOTE]
 >
 > - Lorsque vous utilisez RemoteMDEClientAnalyzer.cmd, il appelle psexec pour télécharger l’outil à partir du partage de fichiers configuré, puis l’exécuter localement via PsExec.exe.
-    Le script CMD utilise l’indicateur « -r » pour spécifier qu’il est en cours d’exécution à distance dans le contexte SYSTÈME et qu’aucune invite ne sera donc présentée à l’utilisateur.
-> - Ce même indicateur peut être utilisé avec MDEClientAnalyzer.cmd pour éviter une invite à l’utilisateur qui demande de spécifier le nombre de minutes pour la collecte de données. Par exemple :
+    Le script CMD utilise l’indicateur « -r » pour spécifier qu’il s’exécute à distance dans le contexte SYSTÈME et qu’aucune invite ne sera donc présentée à l’utilisateur.
+> - Ce même indicateur peut être utilisé avec MDEClientAnalyzer.cmd pour éviter une invite à l’utilisateur qui demande de spécifier le nombre de minutes pour la collecte de données. Par exemple :
 >
 >    **MDEClientAnalyzer.cmd -r -i -m 5**
 >

@@ -22,23 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Obtenez le OneDrive Entreprise d’utilisation de l’ordinateur pour connaître le nombre total de fichiers et de stockage utilisés au sein de votre organisation. '
-ms.openlocfilehash: 5e69791057eae44ec2b9565c73b61c4b8c2131a1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 66e9cb7774f9f35a7d720e71062b90a85c2e6026
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157253"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553051"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365 Rapports dans le Centre d’administration : OneDrive Entreprise’utilisation
 
 Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
 Par exemple, la carte OneDrive du tableau de bord offre une vue d'ensemble de ce que vous apporte OneDrive Entreprise en termes de nombre total de fichiers et d'espace de stockage utilisé au sein de votre organisation. Vous pouvez l'explorer pour connaître les tendances des comptes OneDrive actifs, le nombre de fichiers avec lesquels les utilisateurs interagissent ainsi que l'espace de stockage utilisé. Elle vous fournit également des détails pour chaque utilisateur OneDrive.
-  
-> [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
- 
-## <a name="how-do-i-get-to-the-onedrive-activity-report"></a>Comment accéder au Rapport Activité OneDrive ?
+
+## <a name="how-do-i-get-to-the-onedrive-usage-report"></a>Comment puis-je obtenir le rapport d OneDrive d’utilisation de l’ordinateur ?
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
 2. Dans la page d’accueil du tableau de bord, cliquez sur **le** bouton Afficher plus sur OneDrive carte.
@@ -47,18 +44,20 @@ Par exemple, la carte OneDrive du tableau de bord offre une vue d'ensemble de ce
 
 Vous pouvez afficher l’utilisation dans le rapport OneDrive en choisissant **l’onglet** Utilisation.<br/>![Microsoft 365 rapports d’Microsoft OneDrive d’utilisation.](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
-Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![OneDrive d’utilisation : choisissez des colonnes.](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![OneDrive d’utilisation : choisissez des colonnes.](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+
+Le **rapport OneDrive Entreprise’utilisation** des données peut être pris en compte pour les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
   
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |URL  <br/> |Adresse web de l’utilisateur OneDrive. <br/> |
-|Supprimé  <br/> |État de suppression du OneDrive. La suppression effective des comptes prend au minimum 7 jours.  <br/> |
+|Deleted  <br/> |État de suppression du OneDrive. La suppression effective des comptes prend au minimum 7 jours.  <br/> |
 |Propriétaire  <br/> |Nom d’utilisateur de l’administrateur principal du OneDrive.   <br/> |
 |Nom principal du propriétaire  <br/> |Adresse de messagerie du propriétaire du OneDrive. <br/> |
-|Date de la dernière activité (UTC)  <br/> | Date à laquelle une activité de fichier a été effectuée au plus tard dans le OneDrive. Si le OneDrive ne présente aucune activité de fichier, la valeur sera vide.  <br/> |
+|Date de la dernière activité (UTC)  <br/> | Date à laquelle une activité de fichier a été effectuée au plus tard dans la OneDrive. Si le OneDrive ne présente aucune activité de fichier, la valeur sera vide.  <br/> |
 |Fichiers  <br/> |Nombre de fichiers dans la OneDrive. <br/>|
 |Fichiers actifs  <br/> | Nombre de fichiers actifs au cours de la période.<br/> REMARQUE : si des fichiers ont été supprimés pendant la période spécifiée pour le rapport, le nombre de fichiers actifs affichés dans le rapport peut être supérieur au nombre actuel de fichiers dans le OneDrive. >  Les utilisateurs supprimés continueront d'apparaître dans les rapports pendant 180 jours.  <br/> |
 |Stockage utilisé (Mo)  <br/> |Quantité de stockage que le OneDrive utilise en Mo. |

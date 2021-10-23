@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment étendre les solutions Microsoft 365 conformité à l’aide de connecteurs de données tiers et d’API Microsoft Graph.
-ms.openlocfilehash: bc812a6cdc051daf64b14f60db32f360ceee7bd4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 04bffeb43a001ab94ffb96504b64ffbf4bf566c5
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204406"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555367"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>extensibilité Microsoft 365 conformité des données
 
@@ -55,7 +55,7 @@ Vous trouverez les exigences en matière de licences pour les connecteurs de don
 
 Microsoft 365 api de conformité sont disponibles dans le SDK Protection des données Microsoft, l’API Microsoft Graph et l’API activité Office 365 gestion des données. Certaines API de conformité font partie d’un nouvel ensemble d’API de sécurité et de conformité qui permettent aux développeurs pour les clients Microsoft 365, les éditeurs de logiciels indépendants, les intégrateurs de système et les fournisseurs de services de sécurité gérés de créer des solutions de sécurité et de conformité de grande valeur.
 
-Pour en savoir plus sur l’accès Graph API, voir [Vue d’ensemble](/graph/overview)de Microsoft Graph .
+Pour en savoir plus sur la façon d’accéder Graph API, voir [Vue d’ensemble](/graph/overview)de Microsoft Graph .
 
 ### <a name="microsoft-information-protection-mip-sdk"></a>SDK Protection des données Microsoft (MIP)
 
@@ -73,7 +73,7 @@ Pour en savoir plus sur le SDK MIP, les conditions préalables, les scénarios s
 
 ### <a name="microsoft-graph-api-for-teams-dlp"></a>API Graph Microsoft pour Teams DLP
 
-Les fonctionnalités de protection contre la perte de données [(DLP)](dlp-microsoft-teams.md) sont largement utilisées dans Microsoft Teams en particulier lorsque les organisations ont été décalées vers le travail à distance. Plus tôt cette [année,](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) nous avons annoncé la prévisualisation publique de l’API de notification de modification Graph Microsoft pour les messages Teams. Cette API permet aux développeurs de créer des applications qui peuvent écouter Microsoft Teams messages en temps quasi réel, puis d’implémenter des scénarios DLP pour les clients et les partenaires. En outre, Microsoft Graph API patch vous permet d’appliquer des actions DLP à Teams messages.
+Les fonctionnalités de protection contre la perte de données [(DLP)](dlp-microsoft-teams.md) sont largement utilisées dans Microsoft Teams en particulier lorsque les organisations ont été décalées vers le travail à distance. Plus tôt cette [année,](https://developer.microsoft.com/graph/blogs/announcing-change-notifications-for-microsoft-teams-messages/) nous avons annoncé la prévisualisation publique de l’API de notification de modification Graph Microsoft pour les messages Teams. Cette API permet aux développeurs de créer des applications qui peuvent écouter Microsoft Teams messages en temps quasi réel, puis d’implémenter des scénarios DLP pour les clients et les partenaires. En outre, Microsoft Graph API patch vous permet d’appliquer des actions DLP Teams messages.
 
 Ces deux API forment l’API microsoft Graph pour Teams DLP. Vous pouvez commencer en essayant [l’exemple d’application.](https://github.com/microsoftgraph/csharp-webhook-with-resource-data) Pour plus d’informations sur Microsoft Teams webhooks de messagerie, consultez la [documentation.](/graph/api/subscription-post-subscriptions)
 
@@ -89,9 +89,9 @@ Le premier ensemble d’API Graph pour eDiscovery sont disponibles en prévisual
 
 Pour les conditions de licence requises pour Advanced eDiscovery et l’API, consultez la section « eDiscovery » dans les conseils de licence Microsoft 365 pour la conformité & [sécurité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery)
 
-### <a name="microsoft-graph-api-for-teams-export-preview"></a>API microsoft Graph pour l Teams exporter (prévisualisation)
+### <a name="microsoft-graph-api-for-teams-export"></a>API microsoft Graph pour l Teams exporter
 
-Enterprise L’archivage des informations (EIA) pour Microsoft Teams est un scénario clé pour nos clients, car il leur permet de résoudre les exigences réglementaires. Outre nos fonctionnalités intégrées d’archivage de contenu dans Microsoft Teams, les clients et les partenaires peuvent désormais utiliser les API d’exportation Teams pour résoudre les scénarios d’application et d’intégration personnalisés. Le Teams’API Export permet l’exportation en bloc (jusqu’à 200 demandes par seconde/par application/par client) de messages Teams et de pièces jointes de message. Les messages supprimés sont également accessibles par l’API pendant 30 jours après leur suppression. Pour plus d’informations sur ces Teams exporter des API et comment les utiliser dans vos applications, voir Exporter du contenu avec les [API d Microsoft Teams exporter.](/microsoftteams/export-teams-content)
+Enterprise L’archivage des informations (EIA) pour Microsoft Teams est un scénario clé pour nos clients, car il leur permet de résoudre les exigences réglementaires. Outre nos fonctionnalités intégrées d’archivage de contenu dans Microsoft Teams, les clients et les partenaires peuvent désormais utiliser les API d’exportation Teams pour résoudre les scénarios d’application et d’intégration personnalisés. Le Teams’API Export permet l’exportation en bloc (jusqu’à 200 demandes par seconde/par application/par client) de messages Teams et de pièces jointes de message. Les messages supprimés sont également accessibles par l’API pendant 30 jours après leur suppression. Pour plus d’informations sur ces Teams exporter des API et sur la façon de les utiliser dans vos applications, voir Exporter du contenu avec Microsoft Teams [exporter des API.](/microsoftteams/export-teams-content)
 
 Pour les conditions de licence requises pour l’utilisation des API d’exportation Teams, voir Microsoft 365 recommandations en matière de licences pour la sécurité [& conformité.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 89a6947aa9ada34df0e60ed2d552254edb6719a5
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: f87879eb4d89f330a8e1b3fe30619ca7954f3057
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335309"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554188"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en charge des paramètres de gestion des risques internes
 
@@ -164,7 +164,7 @@ Pour le premier niveau d’événement quotidien, vous définissez le seuil à *
 Les délais de stratégie vous permettent de définir les périodes passées et futures qui sont déclenchées après les correspondances de stratégie basées sur les événements et les activités des modèles de stratégie de gestion des risques internes. En fonction du modèle de stratégie que vous choisissez, les délais de stratégie suivants sont disponibles :
 
 - **Fenêtre d’activation**: disponible pour tous les modèles de stratégie, la fenêtre *Activation* est le nombre défini de jours d’activation de la fenêtre après **un** événement déclencheur. La fenêtre s’active pendant 1 à 30 jours après qu’un événement déclencheur se produit pour tout utilisateur affecté à la stratégie. Par exemple, vous avez configuré une stratégie de gestion des risques internes et définissez la fenêtre *d’activation* sur 30 jours. Plusieurs mois se sont écoulés depuis la configuration de la stratégie et un événement déclencheur se produit pour l’un des utilisateurs inclus dans la stratégie. L’événement déclencheur active la fenêtre *Activation* et la stratégie est active pour cet utilisateur pendant 30 jours après que l’événement déclencheur s’est produit.
-- **Détection des activités passées**: disponible  pour tous les modèles de stratégie,  la détection de l’activité passée est le nombre défini de jours d’activation de la fenêtre avant un événement déclencheur. La fenêtre s’active pendant 0 à 180 jours avant qu’un événement déclencheur ne se produise pour tout utilisateur affecté à la stratégie. Par exemple, vous avez configuré une stratégie de gestion des risques internes et définissez la détection des activités *passées* sur 90 jours. Plusieurs mois se sont écoulés depuis la configuration de la stratégie et un événement déclencheur se produit pour l’un des utilisateurs inclus dans la stratégie. L’événement déclencheur active  la détection de l’activité passée et la stratégie collecte les activités historiques de cet utilisateur pendant 90 jours avant l’événement déclencheur.
+- **Détection des activités passées**: disponible  pour tous les modèles de stratégie,  la détection de l’activité passée est le nombre défini de jours d’activation de la fenêtre avant un événement déclencheur. La fenêtre s’active pendant 0 à 90 jours avant qu’un événement déclencheur ne se produise pour tout utilisateur affecté à la stratégie. Par exemple, vous avez configuré une stratégie de gestion des risques internes et définissez la détection des activités *passées* sur 90 jours. Plusieurs mois se sont écoulés depuis la configuration de la stratégie et un événement déclencheur se produit pour l’un des utilisateurs inclus dans la stratégie. L’événement déclencheur active  la détection de l’activité passée et la stratégie collecte les activités historiques de cet utilisateur pendant 90 jours avant l’événement déclencheur.
 
 ![Paramètres de délai de gestion des risques internes.](../media/insider-risk-settings-timeframes.png)
 
@@ -255,7 +255,7 @@ Les champs et valeurs suivants sont exportés pour les alertes de gestion des ri
 | PolicyId | GUID de la stratégie de gestion des risques internes qui a déclenché l’alerte. |
 | Severity | Gravité de l’alerte. Les valeurs *sont Élevée,* *Moyenne* ou *Faible*. |
 | Source | Source de l’alerte. La valeur est *Office 365 security & compliance*. |
-| Statut | État de l’alerte. Les valeurs sont *Active* *(révision* nécessaire en cas de risque *interne),* Examen *(confirmé* en cas de risque interne), *Résolu* *(résolu* en cas de risque *interne),* Rejeté *(rejeté* en cas de risque interne). |
+| État | État de l’alerte. Les valeurs sont *Active* *(révision* nécessaire en cas de risque *interne),* Examen *(confirmé* en cas de risque interne), *Résolu* *(résolu* en cas de risque *interne),* Rejeté *(rejeté* en cas de risque interne). |
 | Version | Version du schéma d’alerte de sécurité et de conformité. |
 
 Les champs et valeurs suivants sont exportés pour les alertes de gestion des risques internes pour le schéma commun de l Office 365'API Activité [de gestion.](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)

@@ -2,7 +2,6 @@
 title: Résoudre les problèmes liés aux règles de réduction de la surface d’attaque
 description: Ressources et exemple de code pour résoudre les problèmes avec les règles de réduction de la surface d’attaque dans Microsoft Defender for Endpoint.
 keywords: résoudre les problèmes, erreur, corriger, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -18,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6afbb3b84d9a2fe30a9ac6547ba87f407596076b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a35c6f8044bda5372c01f97d92042ed2fa3fd099
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149861"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553699"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Résoudre les problèmes de règles de réduction de la surface d’attaque
 
@@ -66,7 +65,7 @@ Si ces conditions préalables ont toutes été remplies, procédez à l’étape
 
 Vous pouvez consulter le site web de base de test Windows Defender à [l’adresse demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que les règles de réduction de la surface d’attaque fonctionnent généralement pour les scénarios et processus pré-configurés sur un appareil, ou vous pouvez utiliser le mode audit, qui permet aux règles de signaler uniquement.
 
-Suivez ces instructions dans l’outil de démonstration pour voir comment fonctionnent les règles de réduction de [la surface](evaluate-attack-surface-reduction.md) d’attaque pour tester la règle spécifique avec qui vous rencontrez des problèmes.
+Suivez ces instructions dans l’outil de démonstration pour voir comment fonctionnent les règles de réduction de [la surface](evaluate-attack-surface-reduction.md) d’attaque afin de tester la règle spécifique avec qui vous rencontrez des problèmes.
 
 1. Activez le mode audit pour la règle spécifique que vous souhaitez tester. Utilisez la stratégie de groupe pour définir la règle sur **le mode Audit** (valeur : **2**), comme décrit dans activer les règles de réduction [de la surface d’attaque.](enable-attack-surface-reduction.md) Le mode audit permet à la règle de signaler le fichier ou le processus, tout en lui permettant de s’exécuter.
 
@@ -82,7 +81,7 @@ Si vous avez testé la règle avec l’outil de démonstration et avec le mode a
 
 1. Si la règle de réduction de la surface d’attaque bloque quelque chose qu’elle ne doit pas bloquer (également appelé faux positif), vous pouvez d’abord ajouter une exclusion de règle de réduction de la [surface d’attaque.](#add-exclusions-for-a-false-positive)
 
-2. Si la règle de réduction de la surface d’attaque ne bloque pas quelque chose qu’elle doit bloquer (également appelé faux négatif), vous pouvez passer immédiatement à la dernière étape, en collectant les données de [diagnostic](#collect-diagnostic-data-for-file-submissions)et en nous envoyant le problème.
+2. Si la règle de réduction de la surface d’attaque ne bloque pas quelque chose qu’elle doit bloquer (également appelé faux négatif), vous pouvez passer immédiatement à la dernière étape, en collectant des données de [diagnostic](#collect-diagnostic-data-for-file-submissions)et en nous envoyant le problème.
 
 ## <a name="add-exclusions-for-a-false-positive"></a>Ajouter des exclusions pour un faux positif
 

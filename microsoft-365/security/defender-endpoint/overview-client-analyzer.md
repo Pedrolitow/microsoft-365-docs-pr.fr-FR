@@ -2,8 +2,6 @@
 title: Résoudre les problèmes d’état du capteur à l’aide de Microsoft Defender pour Endpoint Client Analyzer
 description: Dépanner l’état du capteur sur les appareils afin d’identifier un problème potentiel de configuration, d’environnement, de connectivité ou de télémétrie affectant les données ou fonctionnalités du capteur.
 keywords: capteur, état du capteur, mal configuré, inactif, aucune donnée de capteur, données du capteur, communications altérées, communication
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bf37f1229712ba94539a8f493a5661fab61657c2
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 7f816c9762fd884431deb6fd61beeb02657e300b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59399177"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554563"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Résoudre les problèmes d’état du capteur à l’aide de Microsoft Defender pour Endpoint Client Analyzer
 

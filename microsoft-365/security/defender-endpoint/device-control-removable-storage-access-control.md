@@ -15,13 +15,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/05/2021
-ms.openlocfilehash: c42e79317371419367cef5375f7f0aeaeba1fe1f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.date: 10/21/2021
+ms.openlocfilehash: bc73ab308fed1d420815d894c5e8c6fbeb4aaa34
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60184736"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553639"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 |Privilège|Autorisation|
 |---|---|
-|Accès|Lecture, Écriture, Exécution|
+|Access|Lecture, Écriture, Exécution|
 |Action Mode|Auditer, autoriser, empêcher|
 |Prise en charge du programme CSP|Oui|
 |Prise en charge des GPO|Oui|
@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 
 Déployez le contrôle d Stockage’accès amovible sur Windows 10 qui ont un client anti-programme malveillant version **4.18.2103.3** ou ultérieure.
 
-- **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur des chemins d’fichiers, ComputerSid
+- **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur filepath, ComputerSid
 - **4.18.2105** ou version ultérieure : ajouter la prise en charge des caractères génériques pour HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinaison d’un utilisateur spécifique sur un ordinateur spécifique, la prise en charge du SSD (Un SSD Extrême SanDisk)/USB Attached SCSI (UAS)
 - **4.18.2107** ou ultérieur : ajouter la prise en charge Windows appareil portable (WPD) (pour les appareils mobiles, tels que les tablettes) ; ajouter AccountName dans le [recherche avancée](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
@@ -62,7 +62,7 @@ Déployez le contrôle d Stockage’accès amovible sur Windows 10 qui ont un cl
 Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockage amovible :
 
 > [!NOTE]
-> Les commentaires utilisant la notation de commentaire XML peuvent être utilisés dans les fichiers XML de règle et de groupe, mais ils doivent se trouver à l’intérieur de la première balise XML, et non de la première ligne du fichier `<!-- COMMENT -->` XML.
+> Les commentaires utilisant la notation de commentaire XML peuvent être utilisés dans les fichiers XML de règle et de groupe, mais ils doivent se trouver à l’intérieur de la première balise XML, et non de la première ligne du `<!-- COMMENT -->` fichier XML.
 
 ### <a name="removable-storage-group"></a>Groupe de Stockage amovible
 
@@ -82,12 +82,12 @@ Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockag
 |---|---|---|
 | **PolicyRuleId** | [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), un ID unique, représente la stratégie et sera utilisé dans le rapport et la résolution des problèmes. | |
 | **IncludedIdList** | Groupe(s) à appliquer à la stratégie. Si plusieurs groupes sont ajoutés, la stratégie est appliquée à n’importe quel média de tous ces groupes.|L’ID de groupe/GUID doit être utilisé à cette instance. <p> L’exemple suivant illustre l’utilisation de GroupID : <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| **ExcludedIDList** | Les groupes à qui la stratégie ne sera pas appliquée. | L’ID de groupe/GUID doit être utilisé à cette instance. |
+| **ExcludedIDList** | Groupes à qui la stratégie ne sera pas appliquée. | L’ID de groupe/GUID doit être utilisé à cette instance. |
 | **ID d’entrée** | Un policyRule peut avoir plusieurs entrées ; chaque entrée avec un GUID unique indique à Device Control une restriction.| |
-| **Type** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <ul><li>Application : autoriser ou refuser </li><li>Audit : AuditAllowed ou AuditDenied</ul></li> | <ul><li>Autoriser</li><li>Refuser </li><li>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé</li><li>AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.</li></ul> <p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**. |
-| **Sid** | Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
+| **Type (Type)** | Définit l’action pour les groupes de stockage amovibles dans IncludedIDList. <ul><li>Application : autoriser ou refuser </li><li>Audit : AuditAllowed ou AuditDenied</ul></li> | <ul><li>Autoriser</li><li>Refuser </li><li>AuditAllowed : définit la notification et l’événement lorsque l’accès est autorisé</li><li>AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.</li></ul> <p> Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**. |
+| **Sid** | Le sid de l’ordinateur local ou le sid de l’objet AD définit s’il faut appliquer cette stratégie sur un utilisateur ou un groupe d’utilisateurs spécifique ; une entrée peut avoir un maximum d’un Sid et d’une entrée sans sid signifie appliquer la stratégie sur l’ordinateur. |  |
 | **ComputerSid** | Sid de l’ordinateur local ou sid de l’objet AD, définit s’il faut appliquer cette stratégie sur un ordinateur ou un groupe d’ordinateurs spécifique ; une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée. |  |
-| **Options** | Définit si les notifications sont affichées ou non |**0-4 : lorsque** le type Autoriser ou Refuser est sélectionné. <ul><li>0 : rien</li><li>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </li></ul> <p> Lorsque type **AuditAllowed ou** **AuditDenied** est sélectionné : <ul><li>0 : rien</li><li>1 : afficher la notification</li><li>2 : événement d’envoi</li><li>3 : afficher la notification et envoyer un événement </li></ul>|
+| **Options** | Définit si les notifications sont affichées ou non |**0 ou 4 :** lorsque le type Autoriser ou Refuser est sélectionné. <ul><li>0 : rien</li><li>4 : désactivez **AuditAllowed** et **AuditDenied** pour cette entrée. Même si **le blocage** se produit et que le paramètre AuditDenied est configuré, le système n’affiche pas de notification. </li></ul> <p> Lorsque type **AuditAllowed est** sélectionné : <ul><li>0 : rien</li><li>1 : rien</li><li>2 : événement d’envoi</li><li>3 : événement d’envoi </li></ul><p> Lorsque type **AuditDenied** est sélectionné : <ul><li>0 : rien</li><li>1 : afficher la notification</li><li>2 : événement d’envoi</li><li>3 : afficher la notification et envoyer un événement </li></ul>|
 |AccessMask|Définit l’accès. | **1-7**: <ol><li>Lecture</li><li>Écriture</li><li>Lecture et écriture</li><li>Exécuter</li><li>Lecture et exécution</li><li>Écriture et exécution </li><li>Lecture et écriture et exécution</li></ol> |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Scénarios courants Stockage contrôle d’accès des périphériques amovibles
@@ -99,7 +99,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 1. Créer des groupes
 
     1. Groupe 1 : Tout stockage amovible et CD/DVD. Un exemple de stockage amovible et cd/DVD est le groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Stockage amovible et [cd-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
-    2. Groupe 2 : approbation de base de données américaines en fonction des propriétés de l’appareil. Voici un exemple de ce cas d’utilisation : ID d’instance - Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier Group.xmlde base de données approuvé. [](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    2. Groupe 2 : approbations de base de données basées sur les propriétés de l’appareil. Voici un exemple de ce cas d’utilisation : ID d’instance - Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier Group.xmlde base de données approuvé. [](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
 
     > [!TIP]
     > Remplacez `&` `&amp;` par dans la valeur.
@@ -113,7 +113,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 
 1. Créer des groupes
 
-    1. Groupe 1 : Tout stockage amovible et CD/DVD. Voici un exemple de ce cas d’utilisation : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Stockage amovible et [de CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. Groupe 1 : Tout stockage amovible et CD/DVD. Voici un exemple de ce cas d’utilisation : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Stockage amovible et de [CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
     2. Groupe 2 : listes de contrôle d’appareil non désapprouvées en fonction des propriétés de l’appareil, par exemple, ID fournisseur/ID de produit, Nom convivial – Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier Group.xmlde base de données des [états-Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) non accepté.
 
     > [!TIP]
@@ -122,7 +122,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 2. Création d’une stratégie
 
     1. Stratégie 1 : bloquer l’accès en écriture et en cours d’exécution à tous les usbs non désapprouvés spécifiques, sauf à les bloquer. Voici un exemple de ce cas d’utilisation : PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** dans l’exemple Scénario [2 Auditer](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) l’accès à l’écriture et à l’exécution de tous les fichiers USBs.xmlnon désapprouvés, sauf bloquer.
-    2. Stratégie 2 : auditer l’accès en écriture et exécuter l’accès à d’autres personnes. Voici un exemple de ce cas d’utilisation : PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** dans l’exemple Scénario [2 Auditer](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) l’accès en écriture et exécution au fichier others.xml.
+    2. Stratégie 2 : auditer l’écriture et exécuter l’accès à d’autres personnes. Voici un exemple de ce cas d’utilisation : PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** dans l’exemple Scénario [2 Auditer](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) l’accès en écriture et exécution au fichier others.xml.
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>Déploiement et gestion d’une stratégie via une stratégie de groupe
 
@@ -144,7 +144,7 @@ Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez co
 
     Si vous souhaitez limiter un utilisateur spécifique, utilisez la propriété SID dans l’entrée. S’il n’existe aucun SID dans l’entrée de stratégie, l’entrée est appliquée à l’instance de connexion de tout le monde pour l’ordinateur.
 
-    L’image suivante illustre l’utilisation de la propriété SID et un exemple de scénario 1 : empêcher l’accès en écriture et en exécution à tous les [usbs approuvés spécifiques,](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)sauf autoriser.
+    L’image suivante illustre l’utilisation de la propriété SID et un exemple de scénario 1 : Empêcher l’accès en écriture et en exécution à tous les [usbs approuvés spécifiques,](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)sauf autoriser.
 
     :::image type="content" source="images/usage-sid-property.png" alt-text="Écran affichant un code qui indique l’utilisation de l’attribut de propriété SID.":::
 

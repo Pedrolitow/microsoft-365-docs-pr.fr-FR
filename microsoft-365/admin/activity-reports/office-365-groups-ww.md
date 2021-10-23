@@ -21,19 +21,16 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport Microsoft 365 groupes de recherche pour connaître les groupes et leurs activités.
-ms.openlocfilehash: 332ffc9c570994de364f6559218d7bfa78d532db
-ms.sourcegitcommit: be095345257225394674698beb3feeb0696ec86d
+ms.openlocfilehash: aa757fd70cec700e18196a11df522529e6fdc6fc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240331"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553075"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes
 
-Le tableau Microsoft 365 **de rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport Microsoft 365 groupes, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
-  
-> [!NOTE]
-> Pour afficher les rapports, vous devez être administrateur général et lecteur global dans Microsoft 365, lecteur de rapports dans Azure ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise.  
+Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md). Dans le rapport Microsoft 365 groupes, vous pouvez obtenir des informations sur l’activité des groupes dans votre organisation et voir combien de groupes sont créés et utilisés.
   
 ## <a name="how-to-get-to-the-groups-report"></a>Comment obtenir le rapport des groupes
 
@@ -53,10 +50,12 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
+Le **rapport des** groupes permet d’afficher les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
+
 |Métrique|Définition|
 |:-----|:-----|
 |Nom du groupe |Nom du groupe. |
-|Supprimé |Nombre de groupes supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true. |
+|Deleted |Nombre de groupes supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true. |
 |Propriétaire du groupe |Nom du propriétaire du groupe. |
 |Date de la dernière activité (UTC) |Date à laquelle un message a été reçu au plus tard par le groupe. Il s'agit de la date la plus récente à laquelle une activité a eu lieu dans une conversation par courrier, dans Yammer ou sur le site. |
 |Type |Type de groupe. Il peut être privé ou public. |
@@ -66,7 +65,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |SharePoint fichiers (total) |Nombre de fichiers stockés dans SharePoint sites de groupe. |
 |SharePoint fichiers (actifs) |Nombre de fichiers du site de groupe SharePoint qui ont été modifiés (vues ou modifiées, synchronisés, partagés en interne ou en externe) pendant la période de rapport. |
 |Stockage total du site utilisé pour SharePoint (Mo) |Quantité de stockage en Mo utilisée pendant la période de rapport. |
-|Messages en Yammer (publié) |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. |
+|Messages dans Yammer (publié) |Nombre de messages publiés dans le groupe Yammer au cours de la période de rapport. |
 |Messages en Yammer (lecture) |Nombre de conversations lues dans le groupe Yammer au cours de la période de rapport. |
 |Messages en Yammer (aimé) |Nombre de messages aimés dans le groupe Yammer au cours de la période de rapport. |
 |Members |Nombre de membres du groupe. |

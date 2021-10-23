@@ -2,8 +2,6 @@
 title: Vérifier l’état du service Point de terminaison Microsoft Defender
 description: Vérifiez l’état du service Point de terminaison dans Microsoft Defender, vérifiez si le service rencontre des problèmes et examinez les problèmes précédents qui ont été résolus.
 keywords: tableau de bord, service, problèmes, état du service, état actuel, historique des statuts, résumé de l’impact, cause racine préliminaire, résolution, temps de résolution, temps de résolution attendu
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7be50f2a0e83b5a69bb0529bf2ba227d0bb2d81d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 728d152d8c755464669d59e11746566472acd737
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206780"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553867"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Vérifier l’état du service Point de terminaison Microsoft Defender
 
@@ -35,7 +33,7 @@ ms.locfileid: "60206780"
 
 **L’état** du service fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels. S’il existe des problèmes, vous verrez des informations telles que le moment où le problème a été détecté, la cause racine préliminaire et le temps de résolution attendu.
 
-Vous verrez également des informations sur les problèmes historiques qui ont été résolus et des détails tels que la date et l’heure de résolution du problème. Lorsqu’il n’y a aucun problème sur le service, vous voyez un état sain.
+Vous verrez également des informations sur les problèmes historiques qui ont été résolus et des détails tels que la date et l’heure de résolution du problème. Lorsqu’il n’y a aucun problème sur le service, vous voyez un état d’état sain.
 
 Vous pouvez afficher des détails sur l’état  du service en cliquant sur la vignette à partir du tableau de bord Opérations de sécurité ou en sélectionnant le menu d’état du **service** dans le volet de navigation.
 
@@ -53,7 +51,7 @@ La page **Détails de l’état** du service possède les onglets suivants :
 - Heure de mise à jour
 - Résumé de l’impact
 - Cause première préliminaire
-- Étapes suivantes
+- Prochaines étapes
 - Temps de résolution attendu
 
 Les mises à jour de la progression d’un problème sont reflétées sur la page à mesure que le problème est résolu. Vous verrez des mises à jour sur des informations telles qu’une estimation du temps de résolution mise à jour ou les étapes suivantes.

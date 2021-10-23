@@ -26,12 +26,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multi-facteurs pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 0dddf5cbc1bcf921d239c7a93031be6cce419eb6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 824eefed4dbda14edab7608324a317b0f504b7ef
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178082"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554155"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multi-facteurs.
 
@@ -98,14 +98,6 @@ Pour la plupart des abonnements, l’authentification moderne est automatiquemen
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a>, dans le menu de gauche, sélectionnez **Paramètres** \> **Paramètres d’organisation**.
 2. Sous l’onglet **Services**, sélectionnez **Authentification moderne**, puis dans le volet **Authentification moderne**, vérifiez que l’option **Activer l’authentification moderne** est sélectionnée. Choisissez **Enregistrer les modifications**.
 
-
-### <a name="turn-off-legacy-per-user-mfa"></a>Désactiver l’authentification multifacteur par utilisateur héritée
-
-Si vous avez déjà activé l’authentification multifacteur (MFA) par utilisateur, vous devez désactiver cette fonctionnalité avant d’activer les paramètres de Sécurité par défaut.
-
-1. Dans le Centre d’administration Microsoft 365, dans le menu de gauche, sélectionnez **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Utilisateurs actifs**</a>.
-1. Sur la page **Utilisateurs actifs**, sélectionnez **Authentification multifacteur**.
-1. Sur la page d'authentification multifacteur, sélectionnez chaque utilisateur et définissez son état d'authentification multifacteur sur **Désactivé**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

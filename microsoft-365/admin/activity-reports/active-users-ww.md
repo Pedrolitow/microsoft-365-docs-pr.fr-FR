@@ -22,21 +22,18 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Découvrez comment obtenir un rapport Utilisateurs actifs à l’aide du tableau de bord rapports Microsoft 365 dans le Centre d'administration Microsoft 365 et découvrez le nombre de licences de produits utilisées.
-ms.openlocfilehash: abb2c4459ac52151fbf1af5712e52ac49f0d5762
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 793f83e28c396add9046f2c464efbdfef2b291f8
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156065"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553363"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Évaluer le rapport Microsoft 365 utilisateurs actifs
 
-Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
+Le tableau Microsoft 365 de rapports de gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
 Par exemple, vous pouvez utiliser le rapport **Utilisateurs actifs** pour déterminer le nombre des licences de produit utilisées par les membres de votre organisation, et approfondir votre recherche pour obtenir des informations sur les utilisateurs et les produits utilisés. Ce rapport peut aider les administrateurs à identifier les produits sous-utilisés ou les utilisateurs nécessitant une formation ou des informations supplémentaires. 
-  
-> [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Accéder au rapport Utilisateurs actifs
 
@@ -47,7 +44,7 @@ Par exemple, vous pouvez utiliser le rapport **Utilisateurs actifs** pour déter
 
 Vous pouvez afficher les utilisateurs actifs dans le rapport Office 365 en choisissant **l’onglet Utilisateurs** actifs.<br/>![Microsoft 365 rapports : Microsoft Office 365 utilisateurs actifs.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
 
-- Le rapport Utilisateurs actifs peut être consulté pour connaître les tendances enregistrées au cours des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous affichez un jour particulier dans le rapport, le tableau (7) affiche les données pendant 28 jours au plus à partir de la date actuelle (et non la date à laquelle le rapport a été généré).
+- Le rapport Utilisateurs actifs peut être consulté pour connaître les tendances enregistrées au cours des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous affichez un jour particulier dans le rapport, le tableau affiche les données jusqu’à 28 jours à partir de la date du jour (et non la date à laquelle le rapport a été généré).
 
 - Les données de chaque rapport couvrent généralement jusqu’aux dernières 24 à 48 heures.
 

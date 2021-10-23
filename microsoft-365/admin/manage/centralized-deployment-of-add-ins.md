@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: fa2532539a09f74331f4129ab73cde367ed070b6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9f428dc011d98d446f32f009345d5df30337c4f2
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164511"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552751"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -37,7 +37,7 @@ Une déploiement centralisé offre les avantages suivants :
 
 - Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
 
-- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
+- Lorsque l’application Office pertinente démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
 
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -47,8 +47,8 @@ L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 2
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium (et sont inscrits à Office à l’aide de leur ID d’organisation) et ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
-Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
+Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des références Microsoft 365 Entreprise : E3/E5/F3, références Office 365 Entreprise : E3/E5/F3 ou références professionnelles : Business Basic, Business Standard, Business Premium (et sont inscrits à Office à l’aide de leur ID d’organisation) et ont Exchange Online boîtes aux lettres Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
+Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité [de déploiement centralisé.](#centralized-deployment-compatibility-checker)
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
@@ -62,7 +62,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
 ### <a name="office-requirements"></a>Office Conditions requises
 
-- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
+- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des valeurs suivantes :
   - Sur un appareil Windows, version 1704 ou ultérieure des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium.
   - Sur un Mac, version 15.34 ou ultérieure.
 
@@ -103,7 +103,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
+   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_Les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
 
    > [!NOTE]
    > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 
@@ -116,7 +116,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 
 - Déploiement centralisé prêt - Si les autres éléments sont vérifiés
 
-- Office plan : le plan de Office dont ils sont titulaires d’une licence
+- Office plan : le plan de Office leur licence
 
 - Activation d'Office - Si l'utilisateur a activé Office
 
@@ -157,7 +157,7 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
 
 | Plateforme | Informations de débogage |
 |:-----|:-----|
-|Office | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
+|Bureau | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
 |Clients riches (Windows, Mac) | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)** |
 
 ## <a name="related-content"></a>Contenu associé

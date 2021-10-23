@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ac6031e793d36bd51c84b2cd94517f81ab4e649
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: aeb78768db5426c249ab71f01a4e4d5d1fc154e0
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156269"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552593"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -36,7 +36,7 @@ ms.locfileid: "60156269"
 
 ## <a name="summary"></a>Résumé
 
-Dans les organisations d’entreprise, Microsoft Defender pour Endpoint sur macOS peut être géré via un profil de configuration déployé à l’aide de l’un des outils de gestion. Les préférences gérées par votre équipe des opérations de sécurité prévalent sur les préférences définies localement sur l’appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n’est pas disponible pour les utilisateurs sans autorisations administratives.
+Dans les organisations d’entreprise, Microsoft Defender pour endpoint sur macOS peut être géré via un profil de configuration déployé à l’aide de l’un des outils de gestion. Les préférences gérées par votre équipe des opérations de sécurité prévalent sur les préférences définies localement sur l’appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n’est pas disponible pour les utilisateurs sans autorisations administratives.
 
 Cet article décrit la structure du profil de configuration, inclut un profil recommandé que vous pouvez utiliser pour commencer et fournit des instructions sur la façon de déployer le profil.
 
@@ -151,7 +151,7 @@ Spécifie le degré de parallélisme pour les analyses à la demande. Cela corre
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|maximumOnDemandScanThreads|
 |**Type de données**|Entier|
-|**Valeurs possibles**|2 (par défaut). Les valeurs autorisées sont des integers entre 1 et 64.|
+|**Valeurs possibles**|2 (valeur par défaut). Les valeurs autorisées sont des integers entre 1 et 64.|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.41.10 ou supérieure.|
 |||
 
@@ -233,7 +233,7 @@ Le tableau suivant indique les types d’exclusion pris en charge par Defender p
 |Exclusion|Définition|Exemples|
 |---|---|---|
 |Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’appareil|`.test`|
-|Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
+|File|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`|
 |Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`|
 |Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`|
 ||||
@@ -289,7 +289,7 @@ Spécifiez le contenu exclu de l’analyse par extension de fichier.
 
 ### <a name="process-excluded-from-the-scan"></a>Processus exclu de l’analyse
 
-Spécifiez un processus pour lequel toute l’activité de fichier est exclue de l’analyse. Le processus peut être spécifié par son nom (par exemple) ou son chemin d’accès complet `cat` (par exemple, `/bin/cat` ).
+Spécifiez un processus pour lequel toute l’activité de fichier est exclue de l’analyse. Le processus peut être spécifié par son nom (par exemple) ou son chemin `cat` d’accès complet (par exemple, `/bin/cat` ).
 
 <br>
 
@@ -401,7 +401,7 @@ Spécifiez la stratégie de fusion pour les paramètres de type de menace. Il pe
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure.|
 |||
 
@@ -435,7 +435,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |**Domaine**|`com.microsoft.wdav`|
 |**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments.|
+|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments.|
 |**Comments**|Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure.|
 |||
 
@@ -797,7 +797,7 @@ Les modèles suivants contiennent des entrées pour tous les paramètres décrit
         <key>scanArchives</key>
         <true/>
         <key>maximumOnDemandScanThreads</key>
-        <integer>1</integer>
+        <integer>2</integer>
         <key>exclusions</key>
         <array>
             <dict>

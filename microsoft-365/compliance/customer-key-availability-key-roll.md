@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment déployer les clés racine du client stockées dans Azure Key Vault qui sont utilisées avec la clé client. Les services incluent Exchange Online, Skype Entreprise, SharePoint Online, OneDrive Entreprise et Teams fichiers.
-ms.openlocfilehash: a3968485a807aae03abb0dfa14d26d94db0445f9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22cf7d1ee9635a92684d377d05a4c53a909eb4bb
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175322"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553963"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Echanger ou alterner entre une clé client ou de disponibilité
 
@@ -35,7 +35,7 @@ Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux cl
 
 Lorsque vous rollez une clé, vous demandez une nouvelle version d’une clé existante. Pour demander une nouvelle version d’une clé existante, utilisez la même cmdlet, [Add-AzKeyVaultKey,](/powershell/module/az.keyvault/add-azkeyvaultkey)avec la même syntaxe que celle utilisée pour créer la clé. Une fois que vous avez terminé le déploiement d’une clé associée à une stratégie de chiffrement de données ( DEP), vous exécutez une autre cmdlet pour vous assurer que la clé client commence à utiliser la nouvelle clé. Faites cette étape dans chaque coffre de clés Azure (AKV).
 
-Par exemple :
+Par exemple :
 
 1. Connectez-vous à votre abonnement Azure avec Azure PowerShell. Pour obtenir des instructions, [voir Se Azure PowerShell](/powershell/azure/authenticate-azureps).
 
@@ -45,7 +45,7 @@ Par exemple :
    Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
    ```
 
-   Dans cet exemple, étant donné qu’une clé nommée **Contoso-CK-EX-NA-VaultA1-Key001** existe dans le coffre **Contoso-CK-EX-NA-VaultA1,** l’cmdlet crée une nouvelle version de la clé. Cette opération conserve les versions de clé précédentes dans l’historique des versions de la clé. Vous avez besoin de la version précédente de la clé pour déchiffrer les données qu’elle chiffre toujours. Une fois que vous avez terminé le déploiement d’une clé associée à une dep, exécutez une cmdlet supplémentaire pour vous assurer que la clé client commence à utiliser la nouvelle clé. Les sections suivantes décrivent les cmdlets plus en détail.
+   Dans cet exemple, étant donné qu’une clé nommée **Contoso-CK-EX-NA-VaultA1-Key001** existe dans le coffre **Contoso-CK-EX-NA-VaultA1,** l’cmdlet crée une nouvelle version de la clé. Cette opération conserve les versions de clé précédentes dans l’historique des versions de la clé. Vous avez besoin de la version de clé précédente pour déchiffrer les données qu’elle chiffre toujours. Une fois que vous avez terminé le déploiement d’une clé associée à une dep, exécutez une cmdlet supplémentaire pour vous assurer que la clé client commence à utiliser la nouvelle clé. Les sections suivantes décrivent les cmdlets plus en détail.
   
 ## <a name="update-the-keys-for-multi-workload-deps"></a>Mettre à jour les clés pour les ppp multi-charges de travail
 
@@ -53,7 +53,7 @@ Lorsque vous rollez l’une des clés Azure Key Vault associées à un dep utili
 
 Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer plusieurs charges de travail, complétez les étapes suivantes :
 
-1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans Windows PowerShell fenêtre.
+1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
 2. Exécutez lSet-M365DataAtRestEncryptionPolicy cmdlet.
   
@@ -81,7 +81,7 @@ Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer les 
    Set-DataEncryptionPolicy -Identity <DataEncryptionPolicyID> -Refresh
    ```
 
-2. Pour vérifier la valeur de la propriété DataEncryptionPolicyID pour la boîte aux lettres, utilisez les étapes de la procédure de déterminer le [deP](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)affecté à une boîte aux lettres . La valeur de cette propriété change une fois que le service applique la clé mise à jour.
+2. Pour vérifier la valeur de la propriété DataEncryptionPolicyID pour la boîte aux lettres, utilisez les étapes de déterminer le [dep](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox)affecté à une boîte aux lettres . La valeur de cette propriété change une fois que le service applique la clé mise à jour.
   
 ## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Mettre à jour les clés pour SharePoint en ligne, OneDrive Entreprise et Teams fichiers
 
@@ -90,15 +90,15 @@ SharePoint Online ne vous permet de déployer qu’une seule clé à la fois. Si
 1. Exécutez la cmdlet Update-SPODataEncryptionPolicy suivante :
   
    ```powershell
-   Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
+   Update-SPODataEncryptionPolicy  <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
-   Bien que cette cmdlet démarre l’opération de SharePoint En ligne et OneDrive Entreprise, l’action ne se termine pas immédiatement.
+   Bien que cette cmdlet démarre l’opération de SharePoint Online et OneDrive Entreprise, l’action ne se termine pas immédiatement.
 
 2. Pour voir la progression de l’opération de roulis de touches, exécutez Get-SPODataEncryptionPolicy cmdlet comme suit :
 
    ```powershell
-   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy  <SPOAdminSiteUrl>
    ```
 
 ## <a name="related-articles"></a>Articles connexes

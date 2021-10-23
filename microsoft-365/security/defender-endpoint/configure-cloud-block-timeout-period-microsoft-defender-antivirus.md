@@ -2,7 +2,6 @@
 title: Configurer le délai d’Antivirus Microsoft Defender cloud
 description: Vous pouvez configurer la durée pendant Antivirus Microsoft Defender’exécution d’un fichier en attendant une détermination du cloud.
 keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, cloud, délai d’attente, bloc, période, secondes
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,14 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/04/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 104f385a48def9a62d668f6ef6c3f79a37fd5335
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b00c631a3eeaddb4fa66fe6d58fd40418b188bec
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207054"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552727"
 ---
 # <a name="configure-the-cloud-block-timeout-period"></a>Configurer le délai de blocage du cloud
 
@@ -62,7 +61,7 @@ Vous pouvez utiliser la stratégie de groupe pour spécifier un délai d’accè
 
 2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
-3. Dans **l’Éditeur de gestion des stratégies** de groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
+3. Dans **l’Éditeur de gestion des stratégies de** groupe, sélectionnez **Configuration** ordinateur, puis sélectionnez **Modèles d’administration.**
 
 3. Développez l’arborescence **Windows composants** \> **Antivirus Microsoft Defender** \> **MpEngine**.
 

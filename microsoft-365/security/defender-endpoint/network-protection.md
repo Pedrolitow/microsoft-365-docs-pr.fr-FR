@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b06c0cbe5fd9158b6793d3d8b1079c365016914a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c6540847d6861b5d4f07d3b542afe8ceb3fcf413
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60209392"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553452"
 ---
 # <a name="protect-your-network"></a>Protéger votre réseau
 
@@ -80,8 +80,8 @@ Microsoft Defender pour le point de terminaison fournit des rapports détaillés
 Voici un exemple de requête de recherche avancée :
 
 ```kusto
-DeviceEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+DeviceNetworkEvents
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Passer en revue les événements de protection réseau dans Windows’observateur d’événements
@@ -113,7 +113,7 @@ Voici un exemple de fonctionnement :
 
 1. Supposons qu’un utilisateur tente d’accéder à un site web sur son appareil. Le site est hébergé sur un domaine dangereux et il doit être bloqué par la protection du réseau.  
 
-2. La négociation triple via TCP/IP commence. Avant qu’elle ne se termine, une action est enregistrée `NetworkConnectionEvents` et est `ActionType` répertoriée comme `ConnectionSuccess` . Toutefois, dès que le processus d’handshake triple est terminé, la protection du réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); C’est lorsque l’poignée de main triple est terminée qu’une détermination est prise et que l’accès à un site est bloqué ou autorisé.
+2. La négociation triple via TCP/IP commence. Avant qu’elle ne se termine, une action est enregistrée `NetworkConnectionEvents` et est `ActionType` répertoriée comme `ConnectionSuccess` . Toutefois, dès que le processus d’handshake triple se termine, la protection du réseau bloque l’accès au site. Tout cela se produit très rapidement. Un processus similaire se produit avec [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); C’est lorsque l’poignée de main triple est terminée qu’une détermination est prise et que l’accès à un site est bloqué ou autorisé.
 
 3. Dans le portail Microsoft 365 Defender, une alerte est répertoriée dans la file [d’attente des alertes.](alerts-queue.md) Les détails de cette alerte sont les deux `NetworkConnectionEvents` et `AlertEvents` . Vous pouvez voir que le site a été bloqué, même si vous avez également un élément `NetworkConnectionEvents` avec l’actionType de `ConnectionSuccess` .
 
@@ -121,7 +121,7 @@ Voici un exemple de fonctionnement :
 
 En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les points suivants à l’esprit :
 
-1. La protection réseau est une fonctionnalité à l’échelle de l’appareil et ne peut pas être ciblée sur des sessions utilisateur spécifiques.
+1. La protection réseau est une fonctionnalité à l’échelle de l’appareil qui ne peut pas être ciblée sur des sessions utilisateur spécifiques.
 
 2. Les stratégies de filtrage de contenu Web sont également à l’échelle de l’appareil.
 
@@ -133,7 +133,7 @@ En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les po
 
 ### <a name="alternative-option-for-network-protection"></a>Autre option pour la protection du réseau
 
-Pour Windows 10 Entreprise multisession 1909 et plus, utilisée dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
+Pour Windows 10 Entreprise multisession 1909 et plus, utilisé dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
 
 1. Utilisez [Activer la protection réseau et](enable-network-protection.md) suivez les instructions pour appliquer votre stratégie.
 

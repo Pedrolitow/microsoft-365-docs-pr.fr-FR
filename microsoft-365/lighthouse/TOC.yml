@@ -26,6 +26,10 @@
   items:
     - name: Vue d’ensemble de la page Utilisateurs
       href: m365-lighthouse-users-page-overview.md
+    - name: Gérer l’authentification multifacteur
+      href: m365-lighthouse-manage-mfa.md
+    - name: Gérer la réinitialisation du mot de passe libre-service
+      href: m365-lighthouse-manage-sspr.md
 - name: Gestion des appareils
   items:
     - name: Vue d’ensemble de la page de conformité des appareils
@@ -36,9 +40,9 @@
   items:
     - name: Vue d’ensemble de la page Gestion des menaces
       href: m365-lighthouse-threat-management-page-overview.md
-- name: Obtenir de l’aide et du support
+- name: Obtenir de l’aide et de l’assistance
   items:
-    - name: Obtenir de l’aide et du support
+    - name: Obtenir de l’aide et de l’assistance
       href: m365-lighthouse-get-help-and-support.md
     - name: Questions fréquemment posées (FAQ)
       href: m365-lighthouse-faq.yml

@@ -2,8 +2,6 @@
 title: Contacter le support Microsoft Defender pour point de terminaison
 description: Découvrez comment contacter microsoft Defender pour la prise en charge des points de terminaison
 keywords: support, contact, support premier, solutions, problèmes, cas
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d67be887a2efa3735665eedc6cdd7522b4f1f1f7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86a0f1fda29fff47e81b77827daca82597cef3bd
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205618"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555139"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -39,7 +37,7 @@ Defender for Endpoint a récemment mis à niveau le processus de support pour of
 Le nouveau widget permet aux clients de :
 
 - Trouver des solutions aux problèmes courants
-- Soumettre un dossier de support à l’équipe de support Microsoft
+- Soumettre un dossier de support à l’équipe de support Technique Microsoft
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -47,7 +45,7 @@ Il est important de connaître les rôles spécifiques qui sont autorisés à ou
 
 Au minimum, vous devez avoir un rôle d’administrateur du support technique **OU** d’administrateur du support technique.
 
-Pour plus d’informations sur les rôles qui ont des autorisations, consultez les [autorisations d’administrateur de sécurité.](/azure/active-directory/roles/permissions-reference#security-administrator) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
+Pour plus d’informations sur les rôles qui ont des autorisations, voir les [autorisations d’administrateur de sécurité.](/azure/active-directory/roles/permissions-reference#security-administrator) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
 
 Pour obtenir des informations générales sur les rôles d’administrateur, voir [à propos des rôles d’administrateur.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
 
@@ -78,10 +76,10 @@ Si les articles suggérés ne sont pas suffisants, vous pouvez ouvrir une demand
 
 ## <a name="open-a-service-request"></a>Ouvrir une demande de service
 
-Découvrez comment ouvrir des tickets de support en contactant Defender pour le support technique Endpoint.
+Découvrez comment ouvrir des tickets de support en contactant le support de Defender pour Endpoint.
 
 > [!NOTE]
-> Si vous avez un contrat de support Premier avec Microsoft, vous verrez la balise premier sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.
+> Si vous avez un contrat de support premier avec Microsoft, la balise Premier s’affiche sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.
 
 ### <a name="contact-support"></a>Contacter l’assistance
 
@@ -89,11 +87,11 @@ Découvrez comment ouvrir des tickets de support en contactant Defender pour le 
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="contacter le support technique 2":::
 
-1. Remplissez un titre et une description du problème auquel vous êtes confronté, ainsi qu’un numéro de téléphone et une adresse de messagerie où nous pouvons vous joindre.
-2. (Facultatif) Inclure jusqu’à cinq pièces jointes pertinentes pour le problème afin de fournir un contexte supplémentaire pour le cas de support.
-3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support Technique Microsoft. L’équipe répondra prochainement à votre demande de service.
+1. Remplissez un titre et une description pour le problème auquel vous êtes confronté, le numéro de téléphone et l’adresse de messagerie où nous pouvons vous joindre.
+2. (Facultatif) Inclure jusqu’à cinq pièces jointes pertinentes pour fournir un contexte supplémentaire pour le cas de support technique.
+3. Sélectionnez votre fuseau horaire et une autre langue, le cas échéant. La demande est envoyée à l’équipe de support technique Microsoft. L’équipe répondra prochainement à votre demande de service.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Résoudre des problèmes de service](troubleshoot-mdatp.md)
 - [Vérifier l’état du service](service-status.md)

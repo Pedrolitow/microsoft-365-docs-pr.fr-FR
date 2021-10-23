@@ -3,7 +3,6 @@ title: Vue d’ensemble de la protection des informations dans Windows
 ms.reviewer: ''
 description: Découvrez comment fonctionne la protection des informations dans Windows pour identifier et protéger les informations sensibles
 keywords: information, protection, dlp, données, perte, prévention, protéger
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a96296f09a82fe2b2c8d5c4d5d250c48f89ffc4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 878bef057161b8235d6547e2f946c205b4657a69
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156293"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555019"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
@@ -63,7 +62,7 @@ Les types personnalisés sont ceux que vous définissez et sont conçus pour pro
 
 Lorsqu’un fichier est créé ou modifié sur un Windows, Defender for Endpoint analyse le contenu pour évaluer s’il contient des informations sensibles.
 
-Activer l’intégration Azure Information Protection de sorte que lorsqu’un fichier contenant des informations sensibles est découvert par Defender pour le point de terminaison à l’aide d’étiquettes ou de types d’informations, il est automatiquement transmis à Azure Information Protection à partir de l’appareil.
+Activer l’intégration Azure Information Protection de sorte que lorsqu’un fichier contenant des informations sensibles est découvert par Defender for Endpoint à l’aide d’étiquettes ou de types d’informations, il est automatiquement transmis à Azure Information Protection à partir de l’appareil.
 
 ![Image de la page de paramètres avec Azure Information Protection.](images/atp-settings-aip.png)
 
@@ -97,7 +96,7 @@ InformationProtectionLogs_CL
 | where Workload_s == "Windows Defender"
 ```
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Configuration requise
 
 - Les clients doivent avoir un abonnement à Azure Information Protection.
 - Activez l’intégration Azure Information Protection dans Centre de sécurité Microsoft Defender :

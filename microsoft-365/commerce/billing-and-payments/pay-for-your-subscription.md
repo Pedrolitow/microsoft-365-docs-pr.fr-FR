@@ -22,12 +22,12 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: 9add2523eeedb9accdbc864979721fa7a3b99ac5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e947a4f73db3832abe4a02178a4e6161c86081bb
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158633"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554623"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -120,7 +120,7 @@ Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le r
 > - [Cap-Vert](../pay/cape-verde.md)
 > - [Îles Caïmans](../pay/cayman-islands.md)
 > - [Chili](../pay/chile.md)
-> - [Chine (RPC)](../pay/china-prc.md)
+> - [Chine](../pay/china-prc.md)
 > - [Colombie](../pay/colombia.md)
 > - [Costa Rica](../pay/costa-rica.md)
 > - [Côte d'Ivoire](../pay/cote-divoire.md)

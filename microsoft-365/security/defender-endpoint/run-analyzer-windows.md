@@ -2,8 +2,6 @@
 title: Exécuter l’analyse du client sur Windows
 description: Découvrez comment exécuter Microsoft Defender for Endpoint Client Analyzer sur Windows.
 keywords: analyseur client, capteur de dépannage, analyseur, mdeanalyzer, windows
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a0d715bd9c51f73eb58e06d68892ba955bdb7d1d
-ms.sourcegitcommit: 4740e69326eb7f8302eec7bab5bd516d498e4492
+ms.openlocfilehash: 29b414ac9dcab9a9c32b5ba09d45d5d9b9ce67de
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "59400809"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554683"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Exécuter l’analyse du client sur Windows
 
@@ -56,7 +54,7 @@ ms.locfileid: "59400809"
 En plus des informations ci-dessus, il existe également une option pour collecter les journaux de prise en charge de l’analyseur [à l’aide de la réponse en direct.](troubleshoot-collect-support-log.md)
 
 > [!NOTE]
-> Sur windows 10, Windows Server 2019 ou les éditions ultérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter les tests de connectivité vers les URL de `MDEClientAnalyzer.exe` service cloud.
+> Sur Windows 10, Windows Server 2019 ou les éditions ultérieures du système d’exploitation, ou Windows 11, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter les tests de connectivité vers les URL de `MDEClientAnalyzer.exe` service cloud.
 >
 > Sur Windows 8.1, Windows Server 2016 ou des éditions antérieures du système d’exploitation, le script de l’analyseur client appelle un fichier exécutable appelé pour exécuter des tests de connectivité pour les URL de commande et de contrôle (CnC) tout en appelant l’outil de connectivité Microsoft Monitoring Agent pour les URL de canal de `MDEClientAnalyzerPreviousVersion.exe` `TestCloudConnection.exe` cyber-données.
 
@@ -91,7 +89,7 @@ Par défaut, le fichier MDEClientAnalyzerResult.zip décompressé contient les �
 
     - dsregcmd.txt
 
-      Description : Sortie de l’exécution [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l’état Azure AD de l’ordinateur.
+      Description : Sortie de l’exécution [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Cela fournit des détails sur l Azure AD de l’ordinateur.
 
     - IFEO.txt
 

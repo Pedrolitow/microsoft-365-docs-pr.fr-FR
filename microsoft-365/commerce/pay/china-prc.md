@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour la Chine (RPC)
+title: Informations de paiement pour la Chine
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,14 +13,14 @@ ms.custom: commerce_billing_payinfo
 ms.localizationpriority: medium
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d48398e3d6e91f257b3e813bc1caee5feec8be5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 07d6bdec585625da6e3399a1235178af0edc24bc
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153605"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554467"
 ---
-# <a name="payment-information-for-china-prc"></a>Informations de paiement pour la Chine (RPC)
+# <a name="payment-information-for-china"></a>Informations de paiement pour la Chine
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
@@ -34,4 +34,4 @@ Veuillez payer en CNY et référencer le nom de votre société et le ou les num
 **Code CNAP :** 989584000600  
 **Numéro de compte :** 1199527009  
 **Nom du compte :** MICROSOFT REGIONAL SALES CORP  
-**Remarque : Payez par le biais du canal RTGS DE LAS DANS HK.**
+**Remarque : Payez via le canal RTGS DE LAS RTGS dans HK.**

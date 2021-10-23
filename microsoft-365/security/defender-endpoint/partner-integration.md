@@ -1,10 +1,8 @@
 ---
 title: Scénarios et opportunités de partenaire Microsoft Defender pour point de terminaison
 ms.reviewer: ''
-description: Découvrez comment étendre les offres de sécurité existantes en plus de l’infrastructure ouverte et d’un ensemble riche d’API pour créer des extensions et des intégrations avec Microsoft Defender pour endpoint
+description: Découvrez comment étendre les offres de sécurité existantes en plus de l’infrastructure ouverte et d’un ensemble riche d’API pour créer des extensions et des intégrations avec Microsoft Defender for Endpoint
 keywords: API, partenaire, étendre, ouvrir une infrastructure, api, extensions, intégrations, détection, gestion, réponse, vulnérabilités, intelligence
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2d97cb0ea1a83b5c5c2e3ad6389cbde688e30272
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: baed391128976e8c700d936d7031a721dcb433d4
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196826"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556243"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Scénarios et opportunités de partenaire Microsoft Defender pour point de terminaison
 
@@ -46,7 +44,7 @@ Defender pour le point de terminaison offre des fonctionnalités d’investigati
 
 L’intégration de la fonctionnalité d’examen et de réponse automatisée à d’autres solutions telles que des produits de sécurité réseau ou d’autres produits de sécurité de point de terminaison permettra de résoudre les alertes. L’intégration réduit également les complexités autour de la corrélation de signal réseau et de périphérique, rationalisant efficacement les actions d’examen et de correction des menaces sur les appareils.
 
-Defender pour le point de terminaison ajoute la prise en charge de ce scénario sous les formes suivantes :
+Defender for Endpoint ajoute la prise en charge de ce scénario sous les formes suivantes :
 
 - Les alertes externes peuvent être poussées dans Defender pour point de terminaison et présentées côte à côte avec des alertes supplémentaires basées sur l’appareil de Defender pour le point de terminaison. Cette vue fournit le contexte complet de l’alerte, avec le processus réel et l’article complet de l’attaque.
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Cet article vous montre comment créer et former un classifieur personnalisé et comment les former à nouveau pour améliorer la précision.
-ms.openlocfilehash: d67c4a6b3934500e3594b1021ffad7f291af5587
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 89229a8c6f4eb5ac04fcb4f956c233e34b40806d
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193326"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554863"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs avec capacité d’apprentissage
 
@@ -81,7 +81,7 @@ Pour en savoir plus sur le flux de travail global de création de classifieurs e
 
 ### <a name="seed-content"></a>Contenu d’amorçage
 
-Lorsque vous souhaitez qu’un classificateur entraisable identifie de manière indépendante et précise un élément comme étant dans une catégorie particulière de contenu, vous devez d’abord le présenter avec de nombreux exemples du type de contenu qui se trouverait dans la catégorie. Cet amorçage d’échantillons au classifieur entraçable est appelé *amorçage.* Le contenu de amorçage est sélectionné par un humain et est jugé pour représenter la catégorie de contenu.
+Lorsque vous souhaitez qu’un classifieur entraisable identifie de manière indépendante et précise un élément comme étant dans une catégorie particulière de contenu, vous devez d’abord le présenter avec de nombreux exemples du type de contenu de la catégorie. Cet amorçage d’échantillons au classifieur entraçable est appelé *amorçage.* Le contenu de amorçage est sélectionné par un humain et est jugé pour représenter la catégorie de contenu.
 
 > [!TIP]
 > Vous devez avoir au moins 50 échantillons positifs et jusqu’à 500. Le classificateur entraçable traitera jusqu’aux 500 exemples créés les plus récents (par horodateur de date/heure de création de fichier). Plus vous fournissez d’exemples, plus les prédictions du classifieur seront précises.
@@ -93,12 +93,9 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 > [!TIP]
 > Pour obtenir de meilleurs résultats, vous devez avoir au moins 200 éléments dans votre exemple de test avec une distribution équitable de correspondances positives et négatives.
 
-## <a name="how-to-create-a-trainable-classifier"></a>Comment créer un classifieur entraisable
+## <a name="how-to-create-a-trainable-classifier"></a>Comment créer un classifieur entra nementable
 
 1. Collectez entre 50 et 500 éléments de contenu d’amorçage. Il doit s’agit uniquement d’exemples qui représentent fortement le type de contenu que le classifieur entraçable doit identifier comme étant dans la catégorie de classification. Reportez-vous [aux extensions de](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) nom de fichier et aux types de fichiers analyse par défaut dans SharePoint Server pour les types de fichiers pris en charge.
-
-   > [!IMPORTANT]
-   > Les exemples d’amorçage et de test ne doivent pas être chiffrés et doivent être en anglais.
 
    > [!IMPORTANT]
    > Assurez-vous que les éléments de votre jeu de valeurs sont **des exemples** forts de la catégorie. Le classifieur entraçable crée initialement son modèle en fonction de ce avec quoi vous l’amorçez. Le classificateur suppose que tous les échantillons de amorçage sont des positifs forts et n’a aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
@@ -128,9 +125,6 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
     > ![Classifieur entraisable prêt pour le test.](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. Collectez au moins 200 éléments de contenu de test (10 000 max) pour obtenir de meilleurs résultats. Il doit s’agit d’un mélange d’éléments qui sont de forts positifs, de négatifs forts et d’autres qui sont un peu moins évidents dans leur nature. Reportez-vous [aux extensions de](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) nom de fichier et aux types de fichiers analyse par défaut dans SharePoint Server pour les types de fichiers pris en charge.
-
-    > [!IMPORTANT]
-    > Les exemples d’éléments ne doivent pas être chiffrés et doivent être en anglais.
 
 12. Placez le contenu de test dans un dossier SharePoint Online dédié à la mise en place du *contenu de test uniquement.* Notez l’URL SharePoint site, bibliothèque et dossier en ligne.
 

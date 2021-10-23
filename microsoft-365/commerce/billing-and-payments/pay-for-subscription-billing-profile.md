@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 04/02/2021
-ms.openlocfilehash: 61409b8c648819ae4782b3f6077873687a43a6e2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 67767a7594d16e9f448e01cad6e58254607968ff
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160523"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554215"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
 
@@ -41,7 +41,7 @@ Si la facturation périodique est désactivée pour  un profil de facturation, v
 
 ## <a name="paying-by-invoice"></a>Payer par facture
 
-Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez régler votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
+Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez payer votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
 
 Pour disposer de cette option, vous devez :
 
@@ -93,7 +93,7 @@ Si votre profil de facturation est dosé par une facture, vous recevez un e-mail
 > - [Cap-Vert](../pay/cape-verde.md)
 > - [Îles Caïmans](../pay/cayman-islands.md)
 > - [Chili](../pay/chile.md)
-> - [Chine (RPC)](../pay/china-prc.md)
+> - [Chine](../pay/china-prc.md)
 > - [Colombie](../pay/colombia.md)
 > - [Costa Rica](../pay/costa-rica.md)
 > - [Côte d'Ivoire](../pay/cote-divoire.md)
@@ -219,7 +219,7 @@ Si votre profil de facturation est dosé par une facture, vous recevez un e-mail
 
 ## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
 
-Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte bancaire pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le **bouton Payer maintenant** sur votre facture dans le Centre d'administration Microsoft 365. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
+Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte de crédit pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le **bouton Payer maintenant** sur votre facture dans le Centre d'administration Microsoft 365. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Puis-je changer le mode de paiement actuel pour régler par facture ?
 

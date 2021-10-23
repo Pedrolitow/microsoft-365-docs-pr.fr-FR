@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: cf63609bf978dd205796d54432e143edbb6c6b87
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b6f4df0dcd8f12b7a2d8475954583573616a6fd9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174278"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554767"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -89,16 +89,16 @@ Ces détails sont spécifiques aux pièces jointes et URL des e-mails. Les utili
 
 Les utilisateurs voient des détails de détonation enrichis pour les pièces jointes ou URL malveillantes connues trouvées dans leurs e-mails, qui ont été détonées pour leur client spécifique. Il comprend la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonée.
 
-1. *Chaîne de détonation*. Une détonation de fichier ou d’URL unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL qui ont été causés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.  
+1. *Chaîne de détonation*. Une détonation de fichier ou d’URL unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL qui ont été impactés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.  
 
     > [!NOTE]
-    > Cela peut afficher uniquement l’élément de niveau supérieur si aucune des entités liées à celui-ci n’a été trouvée problématique ou a été désaxée.
+    > Cela peut uniquement afficher l’élément de niveau supérieur si aucune des entités liées à celui-ci n’a été trouvée problématique ou a été désaxée.
 
 1. Le résumé de la détonation fournit un résumé de base pour la détonation, tel que le temps d’analyse, l’heure à laquelle la *détonation* s’est produite, le système d’exploitation et l’application, le système d’exploitation et l’application dans lesquels la détonation s’est produite, la taille du fichier et la raison du verdict.
 1. *Les captures d’écran* montrent les captures d’écran capturées lors de la détonation. Il peut y avoir plusieurs captures d’écran pendant la détonation. Aucune capture d’écran n’est capturée pour
     - Fichiers de type conteneur tels .zip ou .rar.
     - Si une URL s’ouvre dans un lien qui télécharge directement un fichier. Toutefois, vous verrez le fichier téléchargé dans la chaîne de détonation.
-1. Les *détails* du comportement sont une exportation qui affiche des détails de comportement tels que des événements exacts qui ont eu lieu lors de la détonation et des éléments observables qui contiennent des URL, des adresses IP, des domaines et des fichiers trouvés lors de la détonation (et qui peuvent être problématiques ou indésirables). Sachez qu’il n’y a peut-être pas de détails de comportement pour :
+1. Les *détails* du comportement sont une exportation qui affiche des détails de comportement tels que des événements exacts qui ont eu lieu lors de la détonation et des éléments observables qui contiennent des URL, des adresses IP, des domaines et des fichiers qui ont été trouvés lors de la détonation (et qui peuvent être problématiques ou indésirables). Sachez qu’il n’y a peut-être pas de détails de comportement pour :
     - Fichiers de conteneur tels .zip ou .rar contenant d’autres fichiers.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Capture d’écran du résumé de la détonation montrant la chaîne, le résumé, les détails de la détonation et la capture d’écran sous le titre *Analyse approfondie*.":::
@@ -114,10 +114,6 @@ Les utilisateurs voient des détails de détonation enrichis pour les pièces jo
 - *Exchange de transport (également appelées* règles de flux de messagerie ou ETR) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Ils peuvent uniquement être créés et modifiés dans le Centre d’administration Exchange, mais si une etr s’applique à un message, le nom et le GUID ETR s’afficheront ici. Informations précieuses à des fins de suivi.
 
 - *Remplacements système*: il s’agit d’un moyen d’effectuer des exceptions à l’emplacement de remise prévu pour un message en remplacement de l’emplacement de remise donné par le système (selon la technologie de détection et de menace).
-
-- *Règle de boîte aux* lettres indésirable : « Courrier indésirable » est une règle de boîte de réception masquée qui est activée par défaut dans chaque boîte aux lettres.
-  - Lorsque la règle de courrier indésirable est activée sur la boîte aux lettres, Exchange Online Protection (EOP) est en mesure de déplacer des messages vers le courrier indésirable en fonction de certains critères. Le déplacement peut être basé sur l’action de verdict de filtrage du courrier indésirable Déplacer *le message* vers le dossier Courrier indésirable ou sur la liste des expéditeurs bloqués de la boîte aux lettres. La désactivation de la règle de courrier indésirable empêche la remise de messages dans le dossier Courrier indésirable en fonction de la liste Coffre *expéditeurs* de la boîte aux lettres.
-  - Lorsque la règle  de courrier indésirable est désactivée sur la boîte aux lettres, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le *message* vers le dossier Courrier indésirable ou de la collection de listes sécurisées de la boîte aux lettres.
 
 - *Niveau de réclamation en bloc (BCL)*: niveau de réclamation en bloc (BCL) du message. Une valeur BCL supérieure indique qu’un message en nombre est plus susceptible de générer des réclamations (résultat naturel si le courrier électronique est susceptible d’être du courrier indésirable).
 
@@ -147,10 +143,10 @@ Les utilisateurs voient des détails de détonation enrichis pour les pièces jo
   - Échec (raison) : indique que la vérification DKIM pour le message a échoué et pourquoi. Par exemple, parce que le message n’a pas été signé ou que la signature n’a pas été vérifiée.
   - Aucun : indique que le message n’a pas été signé. Cela n’indique pas forcément que le domaine a un enregistrement DKIM ou que l’évaluation de l’enregistrement DKIM ne donne pas de résultat, mais simplement que ce message n’a pas été signé.
 
-- **DMARC**(Domain-based Message Authentication, Reporting, and Conformance) :
+- Domain-based Message Authentication, Reporting, and Conformance (**DMARC**) :
   - Pass : indique la vérification DMARC pour le message passé.
   - Échec : indique que la vérification DMARC du message a échoué.
   - Bestguesspass : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine, mais que s’il en existait un, la vérification DMARC aurait réussi.
   - Aucun : indique qu’il n’existe aucun enregistrement TXT DMARC pour le domaine d’envoi dans le DNS.
 
-*Authentification* composite : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification de messagerie électronique telle que SPF, DKIM et DMARC, afin de déterminer si le message est authentique. Il utilise le *domaine De :* du courrier comme base d’évaluation.
+*Authentification* composite : il s’agit d’une valeur utilisée par Microsoft 365 pour combiner l’authentification de messagerie comme SPF, DKIM et DMARC, afin de déterminer si le message est authentique. Il utilise le *domaine De :* du courrier comme base d’évaluation.

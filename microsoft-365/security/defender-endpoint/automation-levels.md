@@ -2,8 +2,6 @@
 title: Niveaux d’automatisation dans l’examen et la correction automatisés
 description: Obtenir une vue d’ensemble des niveaux d’automatisation et de leur fonctionnement dans Microsoft Defender for Endpoint
 keywords: automatisé, examen, niveau, Microsoft Defender pour point de terminaison
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -21,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: e93de754ae07585dd08f9c3e24230f87d146f040
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 01b57b0ad376758363e3ce515c53f503d7c409ae
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163095"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555427"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Niveaux d’automatisation dans les fonctionnalités d’investigation et de correction automatisées
 
@@ -53,9 +51,9 @@ Le tableau suivant décrit chaque niveau d’automatisation et son fonctionnemen
 
 |Niveau d’automatisation|Description|
 |---|---|
-|**Complète : corriger automatiquement les menaces** <br> (également appelé *automatisation complète)*|Avec l’automatisation complète, les actions de correction sont effectuées automatiquement. Toutes les actions correctives prises peuvent être vues dans le centre [de](auto-investigation-action-center.md) actions sous **l’onglet** Historique. Si nécessaire, une action de correction peut être annulée. <p> **_L’automatisation_* complète est recommandée et est sélectionnée par défaut pour les clients qui ont été créés le 16 août 2020 avec Microsoft Defender pour endpoint, sans groupe d’appareils défini pour le moment.*|
+|**Complète : corriger automatiquement les menaces** <br> (également appelé *automatisation complète)*|Avec l’automatisation complète, les actions de correction sont effectuées automatiquement. Toutes les actions correctives prises peuvent être vues dans le centre [de](auto-investigation-action-center.md) actions sous **l’onglet** Historique. Si nécessaire, une action de correction peut être annulée. <p> **_L’automatisation_* complète est recommandée et sélectionnée par défaut pour les clients qui ont été créés le 16 août 2020 avec Microsoft Defender pour endpoint, sans groupe d’appareils défini pour le moment.*|
 |**Semi - exiger l’approbation de toutes les corrections** <br> (également appelé *semi-automatisation)*|Avec ce niveau de semi-automatisation, une approbation est requise pour toute action *de* correction. Ces actions en attente peuvent être vues et approuvées dans le centre [de](auto-investigation-action-center.md)actions, sous **l’onglet En** attente. <p> *Ce niveau de semi-automatisation est sélectionné par défaut pour les clients qui ont été créés avant le 16 août 2020 avec Microsoft Defender pour Endpoint, sans aucun groupe d’appareils défini.*|
-|**Semi - exiger l’approbation pour la correction des dossiers principaux** <br> (également un type de *semi-automatisation*)|Avec ce niveau de semi-automatisation, l’approbation est requise pour toutes les actions de correction nécessaires sur les fichiers ou les fichiers exécutables qui se trouve dans des dossiers principaux. Les dossiers principaux incluent les répertoires du système d’exploitation, tels que **Windows** ( `\windows\*` ). <p> Des actions de correction peuvent être prises automatiquement sur des fichiers ou des fichiers exécutables qui se trouver dans d’autres dossiers (non essentiels). <p> Les actions en attente pour les fichiers ou les fichiers exécutables dans les dossiers principaux peuvent être vues et approuvées dans le Centre de [actions,](auto-investigation-action-center.md)sous **l’onglet En** attente. <p> Les actions qui ont été prises sur des fichiers ou des fichiers exécutables dans d’autres dossiers peuvent être vues dans le Centre de [actions,](auto-investigation-action-center.md)sous **l’onglet** Historique.|
+|**Semi - exiger l’approbation pour la correction des dossiers principaux** <br> (également un type de *semi-automatisation*)|Avec ce niveau de semi-automatisation, l’approbation est requise pour toutes les actions de correction nécessaires sur les fichiers ou les exécutables qui se trouve dans des dossiers principaux. Les dossiers principaux incluent les répertoires du système d’exploitation, tels que **Windows** ( `\windows\*` ). <p> Des actions de correction peuvent être prises automatiquement sur des fichiers ou des fichiers exécutables qui se trouver dans d’autres dossiers (non essentiels). <p> Les actions en attente pour les fichiers ou les fichiers exécutables dans les dossiers principaux peuvent être vues et approuvées dans le Centre de [actions,](auto-investigation-action-center.md)sous **l’onglet En** attente. <p> Les actions qui ont été prises sur des fichiers ou des fichiers exécutables dans d’autres dossiers peuvent être vues dans le Centre de [actions,](auto-investigation-action-center.md)sous **l’onglet** Historique.|
 |**Semi - exiger l’approbation de la correction des dossiers non temporaires** <br> (également un type de *semi-automatisation*)|Avec ce niveau de semi-automatisation, l’approbation est requise pour toutes  les actions de correction nécessaires sur les fichiers ou les fichiers exécutables qui ne se trouve pas dans des dossiers temporaires. <p> Les dossiers temporaires peuvent inclure les exemples suivants : <ul><li>`\users\*\appdata\local\temp\*`</li><li>`\documents and settings\*\local settings\temp\*`</li><li>`\documents and settings\*\local settings\temporary\*`</li><li>`\windows\temp\*`</li><li>`\users\*\downloads\*`</li><li>`\program files\`</li><li>`\program files (x86)\*`</li><li>`\documents and settings\*\users\*`</li></ul> <p> Des actions de correction peuvent être prises automatiquement sur des fichiers ou des fichiers exécutables qui se trouver dans des dossiers temporaires. <p> Les actions en attente pour les fichiers ou les fichiers exécutables qui ne sont pas dans des dossiers temporaires peuvent être vues et approuvées dans le Centre de [actions,](auto-investigation-action-center.md)sous l’onglet **En** attente. <p> Les actions qui ont été prises sur des fichiers ou des fichiers exécutables dans des dossiers temporaires peuvent être vues et approuvées dans le Centre de [actions,](auto-investigation-action-center.md)sous **l’onglet** Historique.|
 |**Aucune réponse automatisée** <br> (également appelé aucune *automatisation)*|Sans automatisation, l’examen automatisé ne s’exécute pas sur les appareils de votre organisation. Par conséquent, aucune action de correction n’est prise ou en attente à la suite d’un examen automatisé. Toutefois, d’autres fonctionnalités de protection contre les menaces, telles que la protection contre les [applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)potentiellement indésirables, peuvent être en vigueur, selon la configuration de votre antivirus et des fonctionnalités de protection nouvelle génération. <p> ****L’utilisation de l’option*** Sans automatisation n’est pas recommandée, car elle réduit la posture de sécurité des appareils de votre organisation. [Envisagez de définir votre niveau d’automatisation sur l’automatisation complète (ou au moins semi-automation).](/microsoft-365/security/defender-endpoint/machine-groups)|
 |
@@ -70,7 +68,7 @@ Le tableau suivant décrit chaque niveau d’automatisation et son fonctionnemen
 
 - Vous pouvez conserver vos paramètres d’automatisation par défaut ou les modifier en fonction des besoins de votre organisation. Pour modifier vos paramètres, [définissez votre niveau d’automatisation.](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Configurer les fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour le point de terminaison](configure-automated-investigations-remediation.md)
 - [Visiter le centre de travail](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)

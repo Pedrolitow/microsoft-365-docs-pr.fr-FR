@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4faa3c7edcdbf9e7d4eae7b19746b7aaa43e1d6
-ms.sourcegitcommit: e3b0515fd8f2aad7b8cb308159c7bcecc2bcaa24
+ms.openlocfilehash: 856fc5b076189e68669c75d740c7320f418597f9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60264755"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555259"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis, intégré à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour endpoint dans Azure Commercial.
+Microsoft Defender for Endpoint for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
 Cette offre est disponible pour les clients Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD et est basée sur les mêmes prévention, détection, examen et correction que la version commerciale. Toutefois, il existe certaines différences dans la disponibilité des fonctionnalités de cette offre.
 
@@ -37,7 +37,7 @@ Cette offre est disponible pour les clients Cloud de la communauté du secteur p
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender pour endpoint pour les clients du gouvernement des États-Unis nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 ### <a name="desktop-licensing"></a>Licences de bureau
 
@@ -93,7 +93,7 @@ Les versions de système d’exploitation suivantes sont pris en charge :
 Version du système d’exploitation|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows 11|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows 10, version 21H1 et versions supérieures|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows 10 version 21H1 et versions supérieures|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 20H2 (avec [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows 10, version 1909 (avec [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -103,7 +103,7 @@ Windows 10, version 1803 (avec [KB4598245](https://support.microsoft.com/help/45
 Windows 10, version 1709|![Non.](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Oui ](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Remarque : [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge
 Windows 10, version 1703 et antérieures|![Non.](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge|![Non](images/svg/check-no.svg) <br /> Remarque : ne sera pas pris en charge
 Windows Server 2022|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
-Windows Server 2019 (avec [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
+Windows Server 2019 (avec [KB4586839](https://support.microsoft.com/help/4586839) <sup>1)</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
 Windows Server 2016 (moderne) <sup>2</sup>|![Oui.](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique
 Windows Server 2012 R2 (moderne) <sup>2</sup>|![Oui.](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique|![Oui](images/svg/check-yes.svg) <br /> Préversion publique
 Windows Server 2016 (Hérité) <sup>3</sup>|![Oui.](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)
@@ -151,9 +151,9 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 
 Liste de feuilles de calcul de domaines|Description
 :-----|:-----
-![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour point de terminaison.](images/mdatp-urls.png)|Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <p> [Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
-Pour plus d’informations, voir [Configurer les paramètres de proxy d’appareil et de connectivité Internet.](configure-proxy-internet.md)
+Pour plus d’informations, voir [Configurer les paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
 
 > [!NOTE]
 > La feuille de calcul contient également des URL commerciales, veillez à vérifier les onglets « US Gov ».
@@ -177,7 +177,7 @@ Au lieu des URIs publics répertoriés dans la documentation de notre [API,](api
 
 ## <a name="feature-parity-with-commercial"></a>Parité des fonctionnalités avec commercial
 
-Defender for Endpoint for US Government customers doesn’t have complete parity with the commercial offering. Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales à nos clients du gouvernement des États-Unis, certaines fonctionnalités ne sont pas encore disponibles que nous voulons mettre en évidence.
+Defender for Endpoint for US Government customers doesn’t have complete parity with the commercial offering. Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales à nos clients du gouvernement des États-Unis, certaines fonctionnalités qui ne sont pas encore disponibles sont à mettre en évidence.
 
 Voici les lacunes connues :
 
@@ -190,5 +190,5 @@ Voici les lacunes connues :
 |Découverte du réseau|![Oui](images/svg/check-yes.svg)|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Filtrage du contenu web|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|![Non](images/svg/check-no.svg) En cours de développement|
 |Intégrations : Azure Sentinel|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Alertes <br /> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|![Oui](images/svg/check-yes.svg) Alertes <br /> ![Oui](images/svg/check-yes.svg) Incidents & données brutes : en prévisualisation privée|
-|Intégrations : Microsoft Power Automate & Azure Logic Apps|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg) Azure Logic Apps <br /> ![Non](images/svg/check-no.svg) Power Automate : en développement|
+|Intégrations : Microsoft Power Automate & Azure Logic Apps|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|![Oui](images/svg/check-yes.svg)|
 |Spécialistes des menaces Microsoft|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog|![Non](images/svg/check-no.svg) On engineering backlog|

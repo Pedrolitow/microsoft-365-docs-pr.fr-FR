@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 704c9c11ee12d9e08d5ede73440f5fde7de3d51b
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: 72f8b5e32f02ccef028e6d1bccb7bec942ce5d48
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268709"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556327"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -32,7 +32,7 @@ ms.locfileid: "60268709"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
 > Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
@@ -162,7 +162,7 @@ Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une 
 |---|---|
 |**Clé**|exclusionsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -352,7 +352,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |---|---|
 |**Clé**|threatTypeSettingsMergePolicy|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|merge (par défaut) <p> admin_only|
+|**Valeurs possibles**|merge (valeur par défaut) <p> admin_only|
 |**Comments**|Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure.|
 |
 
@@ -384,7 +384,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |---|---|
 |**Clé**|scanHistoryMaximumItems|
 |**Type de données**|Chaîne|
-|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments.|
+|**Valeurs possibles**|10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments.|
 |**Comments**|Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure.|
 |
 
@@ -418,7 +418,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 |**Valeurs possibles**|true (par défaut) <p> false|
 |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par le produit à Microsoft.
 
@@ -475,7 +475,7 @@ Le profil de configuration suivant :
 
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA) sont** bloquées
+  - **Les applications potentiellement indésirables (PUA)** sont bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans les journaux du produit
 - Activer les mises à jour automatiques des informations de sécurité
 - Protection fournie par le cloud
@@ -521,7 +521,6 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
       "passiveMode":false,
-      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {

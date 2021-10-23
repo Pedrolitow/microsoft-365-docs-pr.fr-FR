@@ -2,8 +2,6 @@
 title: Comprendre le rapport HTML de l’analyseur client
 description: Découvrez comment analyser le rapport HTML de Microsoft Defender for Endpoint Client Analyzer
 keywords: rapport de l’analyseur client, rapport HTML, analyseur client
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 735b2a0331e399fa7bf3444ff8e5326898c038b4
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+ms.openlocfilehash: 2c866f6b7cd5c357c7b11db22ef5ecc10a0818ed
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59179395"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60556255"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprendre le rapport HTML de l’analyseur client
 
@@ -40,7 +38,7 @@ Utilisez l’exemple suivant pour comprendre le rapport.
 
 ![Image du résultat de l’analyseur client.](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
-- En haut, la version de script et le runtime du script sont répertoriés pour référence
+- En haut, la version de script et le runtime de script sont répertoriés pour référence
 - La section **Informations sur l’appareil** fournit des identificateurs de système d’exploitation et d’appareil de base pour identifier de manière unique l’appareil sur lequel l’analyseur s’est exécuté.
 - Les **détails de sécurité des** points de terminaison fournissent des informations générales sur Microsoft Defender pour les processus liés aux points de terminaison, notamment les Antivirus Microsoft Defender et le processus de capteur. Si les processus importants ne sont pas en ligne comme prévu, la couleur est rouge.
 
@@ -52,7 +50,7 @@ Utilisez l’exemple suivant pour comprendre le rapport.
 
 -   Lors **de la vérification du résumé** des résultats, vous aurez un nombre agrégé d’erreurs, d’avertissements ou d’événements d’information détectés par l’analyseur.
 
--   Dans les **résultats détaillés,** vous verrez une liste (triée par gravité) avec les résultats et les instructions basées sur les observations réalisées par l’analyseur.
+-   Dans **résultats détaillés,** vous verrez une liste (triée par gravité) avec les résultats et les instructions basées sur les observations réalisées par l’analyseur.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Ouvrir un ticket de support pour Microsoft et inclure les résultats de l’analyseur
 

@@ -2,8 +2,6 @@
 title: Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison
 description: Vérifiez l’état du capteur sur les appareils pour identifier ceux qui sont mal configurés, inactifs ou qui ne rapportent pas de données de capteur.
 keywords: capteur, état du capteur, mal configuré, inactif, aucune donnée de capteur, données du capteur, communications altérées, communication
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e7794f99b21939c3cf51f4b5afe2b9da50f9b933
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e980cc5dd2f164acf8c63aab5511423d5a38d46b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207066"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554995"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Vérifier l’état d’état du capteur dans Microsoft Defender pour le point de terminaison
 
@@ -45,7 +43,7 @@ Cliquer sur l’un des groupes vous dirige vers la liste **Appareils,** filtrée
 
 ![Capture d’écran de la vignette Appareils avec problèmes de capteur.](images/atp-devices-with-sensor-issues-tile.png)
 
-Dans **la liste Appareils,** vous pouvez filtrer la liste d’état selon l’état suivant :
+Dans **la liste Appareils,** vous pouvez filtrer la liste d’état en fonction de l’état suivant :
 
 - **Actif** : appareils qui font activement des rapports au service Defender for Endpoint.
 - **Mal configuré :** ces appareils peuvent partiellement signaler des données de capteur au service Defender for Endpoint, mais ont des erreurs de configuration qui doivent être corrigées. Les appareils mal configurés peuvent avoir l’un ou l’autre des problèmes suivants :

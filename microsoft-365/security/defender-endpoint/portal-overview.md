@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3450eebd549589f20b074f025d581783acdb23c1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c53cce4cb12d08d59b09b041883531b4dee11ce9
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60168349"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60554935"
 ---
 # <a name="microsoft-365-defender-portal-overview"></a>Vue d’ensemble du portail Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "60168349"
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Enterprise équipes de sécurité peuvent utiliser Microsoft 365 Defender pour surveiller et aider à répondre aux alertes de menaces avancées persistantes ou de violations de données.
+Enterprise équipes de sécurité peuvent utiliser Microsoft 365 Defender pour surveiller les alertes de menaces persistantes ou de violations de données potentielles et y répondre.
 
 Vous pouvez [utiliser](https://security.microsoft.com) Microsoft 365 Defender pour :
 
@@ -59,24 +59,25 @@ Vous pouvez naviguer dans le portail à l’aide des options de menu disponibles
 
 Zone|Description
 :---|:---
-**(1) Volet de navigation**|Utilisez le volet de navigation pour naviguer entre les tableaux de bord, les incidents, la liste des **périphériques,** la file d’attente des **alertes,** les enquêtes automatisées, la recherche **avancée,** les RAPPORTS **,** les API partenaires **&**, la gestion des **vulnérabilités** des **menaces &,** l’évaluation et les **didacticiels,** l’état du **service,** la gestion de la **configuration** et **Paramètres**. Sélectionnez les lignes horizontales en haut du volet de navigation pour les afficher ou les masquer.
-**Tableaux de bord**|Accéder aux enquêtes automatisées actives, aux alertes actives, aux statistiques d’enquête automatisée, aux appareils à risque, aux utilisateurs à risque, aux appareils avec des problèmes de capteur, à l’état du service, aux sources de détection et aux tableaux de bord de rapports quotidiens des appareils.
-**Incidents**|Afficher les alertes qui ont été agrégées en tant qu’incidents.
-**Liste des appareils**|Affiche la liste des appareils intégrés à Defender pour le point de terminaison, certaines informations les concernant, ainsi que leurs niveaux d’exposition et de risque.
-**File d’attente des alertes**|Afficher les alertes générées à partir des appareils de votre organisation.
-**Enquêtes automatisées**|Affiche les enquêtes automatisées qui ont été menées sur le réseau, le déclenchement d’une alerte, l’état de chaque examen et d’autres détails tels que le début de l’enquête et la durée de l’enquête.
-**Repérage avancé**|Le recherche avancée vous permet de rechercher et d’examiner de manière proactive au sein de votre organisation à l’aide d’un puissant outil de recherche et de requête.
-**Rapports**|Affichez des graphiques détaillant la protection contre les menaces, l’état et la conformité des appareils, la protection web et la vulnérabilité.
-**Partenaires et API**|Afficher les connexions partenaires prise en charge, ce qui améliore les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme. Vous pouvez également afficher les applications connectées, l’explorateur d’API, la vue d’ensemble de l’utilisation de l’API et les paramètres d’exportation des données.
-**Gestion des & menaces**|Affichez votre score de sécurité Microsoft pour les appareils, le score d’exposition, les appareils exposés, les logiciels vulnérables et prenez des mesures sur les recommandations de sécurité les plus importantes.
-**Évaluation et didacticiels**|Gérer les périphériques de test, les simulations d’attaques et les rapports. Découvrez et découvrez les fonctionnalités de Defender for Endpoint par le biais d’une procédure pas à pas guidée dans un environnement d’évaluation.
-**Intégrité des services**|Fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels.
-**Gestion de la configuration**|Affiche les appareils sur site, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
-**Paramètres**|Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
-**(2) Recherche, centre Community, localisation, aide et support, commentaires**|**Recherche** : recherche par appareil, fichier, utilisateur, URL, ADRESSE IP, vulnérabilité, logiciel et recommandation. <p> **Community -** Accédez au centre Community pour découvrir, collaborer et partager des expériences sur le produit. <p> **Localisation :** définir des fuseaux horaires. <p> Aide **et support** : accédez au guide Defender pour point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces. <p> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
+**(1) Volet de navigation** | Utilisez le volet de navigation pour naviguer entre les tableaux de bord, les incidents, la liste des **périphériques,** la file d’attente des **alertes,** les enquêtes automatisées, la recherche **avancée,** les RAPPORTS **,** les API partenaires **&**, la gestion des **vulnérabilités** des **menaces &,** l’évaluation et les **didacticiels,** l’état du **service,** la gestion de la **configuration** et **Paramètres**. Sélectionnez les lignes horizontales en haut du volet de navigation pour les afficher ou les masquer.
+**Tableaux de bord** | Accéder aux enquêtes automatisées actives, aux alertes actives, aux statistiques d’enquête automatisée, aux appareils à risque, aux utilisateurs à risque, aux appareils avec des problèmes de capteur, à l’état du service, aux sources de détection et aux tableaux de bord de rapports quotidiens des appareils.
+**Incidents** | Afficher les alertes qui ont été agrégées en tant qu’incidents.
+**Liste des appareils** | Affiche la liste des appareils intégrés à Defender pour le point de terminaison, certaines informations les concernant, ainsi que leurs niveaux d’exposition et de risque.
+**File d’attente des alertes** | Afficher les alertes générées à partir des appareils de votre organisation.
+**Enquêtes automatisées** | Affiche les enquêtes automatisées qui ont été menées sur le réseau, le déclenchement d’une alerte, l’état de chaque examen et d’autres détails tels que le début de l’enquête et la durée de l’enquête.
+**Repérage avancé** | Le recherche avancée vous permet de rechercher et d’examiner de manière proactive au sein de votre organisation à l’aide d’un puissant outil de recherche et de requête.
+**Rapports** | Affichez des graphiques détaillant la protection contre les menaces, l’état et la conformité des appareils, la protection web et la vulnérabilité.
+**Partenaires et API** | Afficher les connexions partenaires prise en charge, ce qui améliore les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme. Vous pouvez également afficher les applications connectées, l’explorateur d’API, la vue d’ensemble de l’utilisation de l’API et les paramètres d’exportation des données.
+**Gestion des & menaces** | Affichez votre score de sécurité Microsoft pour les appareils, le score d’exposition, les appareils exposés, les logiciels vulnérables et prenez des mesures sur les recommandations de sécurité les plus importantes.
+**Évaluation et didacticiels** | Gérer les périphériques de test, les simulations d’attaques et les rapports. Découvrez et découvrez les fonctionnalités de Defender for Endpoint par le biais d’une procédure pas à pas guidée dans un environnement d’évaluation.
+**Intégrité des services** | Fournit des informations sur l’état actuel du service Defender for Endpoint. Vous serez en mesure de vérifier que l’état du service est sain ou s’il existe des problèmes actuels.
+**Gestion de la configuration** | Affiche les appareils sur site, la ligne de base de sécurité de votre organisation, l’analyse prédictive, la couverture de la protection web et vous permet d’effectuer la gestion de la surface d’attaque sur vos appareils.
+**Settings** | Affiche les paramètres que vous avez sélectionnés lors de l’intégration et vous permet de mettre à jour vos préférences du secteur et la période de stratégie de rétention. Vous pouvez également définir d’autres paramètres de configuration tels que les autorisations, les API, les règles, la gestion des appareils, la gestion des services informatiques et les évaluations réseau.
+**(2) Recherche, centre Community, localisation, aide et support, commentaires** |  Effectuer une recherche par appareil, fichier, utilisateur, URL, ADRESSE IP, vulnérabilité, logiciel et recommandation. La recherche prend en charge l’utilisation des formats de hachage de chiffrement SHA1 et SHA256. <p> **Community -** Accédez au centre Community pour découvrir, collaborer et partager des expériences sur le produit. <p> **Localisation :** définir des fuseaux horaires. <p> Aide **et support** : accédez au guide De Defender pour point de terminaison, au support Microsoft et Microsoft Premier, aux informations de licence, aux simulations & didacticiels, au laboratoire d’évaluation de Defender for Endpoint, consultez un expert en menaces. <p> **Commentaires** : fournissez des commentaires sur ce que vous aimez ou ce que nous pouvons faire de mieux.
 
 > [!NOTE]
-> Pour les appareils avec des problèmes de mise à l’échelle DPI haute résolution, consultez Windows problèmes de mise à l’échelle pour les appareils haute résolution [pour](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) les solutions possibles.
+>
+> Pour les appareils avec des problèmes de mise à l’échelle [DPI](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) haute résolution, consultez Windows problèmes de mise à l’échelle pour les appareils haute résolution pour les solutions possibles.
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Icônes De Microsoft Defender pour point de terminaison
 
@@ -90,7 +91,7 @@ Icône|Description
 ![Icône Menace active.](images/active-threat-icon.png)|Menace active : menaces qui s’exécutent activement au moment de la détection.
 ![Icône1 corrigé.](images/remediated-icon.png)|Corrigé : menace supprimée de l’appareil.
 ![Icône non corrigé.](images/not-remediated-icon.png)|Non corrigé : menace non supprimée de l’appareil.
-![Icône Thunderbolt.](images/atp-thunderbolt-icon.png)|Indique les événements qui ont déclenché une alerte dans **l’arborescence du processus d’alerte.**
+![Icône Thunderbolt.](images/atp-thunderbolt-icon.png)|Indique les événements qui ont déclenché une alerte dans l’arborescence **du processus d’alerte.**
 ![Icône De l’appareil.](images/atp-machine-icon.png)|Icône d’appareil
 ![Icône événements de l’Antivirus Microsoft Defender.](images/atp-windows-defender-av-events-icon.png)|Antivirus Microsoft Defender événements
 ![Icône d’événements Application Guard.](images/atp-Application-Guard-events-icon.png)|Protection d'application Windows Defender événements
@@ -129,7 +130,7 @@ Icône|Description
 ![Icône d’alerte active possible.](images/tvm_alert_icon.png)|Gestion des & des menaces : alerte active possible
 ![Icône Informations sur les recommandations.](images/tvm_insight_icon.png)|Gestion des & des menaces : recommandations
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 - [Vue d’ensemble Microsoft 365 Defender](use.md)
 - [Afficher le tableau de bord Opérations de sécurité](security-operations-dashboard.md)
