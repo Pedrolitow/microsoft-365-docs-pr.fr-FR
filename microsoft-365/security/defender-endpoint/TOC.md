@@ -122,22 +122,6 @@
 ##### [Resources](mac-resources.md)
 ##### [ Conditions de la licence d'application](mde-terms-mac.md)
 
-#### [Microsoft Defender pour point de terminaison iOS]()
-##### [Vue d’ensemble de Microsoft Defender pour point de terminaison iOS](microsoft-defender-endpoint-ios.md)
-##### [Nouveautés](ios-whatsnew.md)
-
-##### [Déployer]()
-###### [Déployer Microsoft Defender pour point de terminaison iOS via Intune](ios-install.md)
-###### [Déployer Microsoft Defender pour point de terminaison sur iOS pour les appareils non inscrits](ios-install-unmanaged.md)
-
-##### [Configurer]()
-###### [Configurer des fonctionnalités iOS](ios-configure-features.md)
-
-##### [FAQ et résolution des problèmes](ios-troubleshoot.md)
-
-##### [Confidentialité](ios-privacy.md)
-
-
 #### [Microsoft Defender pour point de terminaison Linux]()
 ##### [Vue d’ensemble de Microsoft Defender pour point de terminaison Linux](microsoft-defender-endpoint-linux.md)
 ##### [Nouveautés](linux-whatsnew.md)
@@ -169,21 +153,38 @@
 ##### [Confidentialité](linux-privacy.md)
 ##### [Resources](linux-resources.md)
 
-#### [Microsoft Defender pour point de terminaison Android]()
-##### [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
+#### [Défense contre les menaces mobiles]()
+##### [Présentation de la défense contre les menaces mobiles](mtd.md)
 
-##### [Déployer]()
-###### [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)
+##### [Microsoft Defender pour point de terminaison Android]()
+###### [Vue d’ensemble de Microsoft Defender pour point de terminaison Android](microsoft-defender-endpoint-android.md)
 
-##### [Configurer]()
-###### [Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
-###### [configurer les signaux de risque Microsoft Defender pour point de terminaison à l’aide de la stratégie de protection des applications](android-configure-mam.md)
+###### [Déployer]()
+####### [Déployer Microsoft Defender pour point de terminaison Android via Microsoft Intune](android-intune.md)
 
-##### [Confidentialité]()
-###### [Microsoft Defender pour point de terminaison Android : informations sur la confidentialité](android-privacy.md)
+###### [Configurer]()
+####### [Configurer Microsoft Defender pour point de terminaison pour des fonctionnalités Android](android-configure.md)
+####### [configurer les signaux de risque Microsoft Defender pour point de terminaison à l’aide de la stratégie de protection des applications](android-configure-mam.md)
 
-##### [Résoudre des problèmes]()
-###### [Difficultés avec la résolution de problèmes](android-support-signin.md)
+###### [Confidentialité]()
+####### [Microsoft Defender pour point de terminaison Android : informations sur la confidentialité](android-privacy.md)
+
+###### [Résoudre des problèmes]()
+####### [Difficultés avec la résolution de problèmes](android-support-signin.md)
+
+##### [Microsoft Defender pour point de terminaison iOS]()
+###### [Vue d’ensemble de Microsoft Defender pour point de terminaison iOS](microsoft-defender-endpoint-ios.md)
+###### [Nouveautés](ios-whatsnew.md)
+
+###### [Déployer]()
+####### [Déployer Microsoft Defender pour point de terminaison iOS via Intune](ios-install.md)
+####### [Déployer Microsoft Defender pour point de terminaison sur iOS pour les appareils non inscrits](ios-install-unmanaged.md)
+
+###### [Configurer des fonctionnalités iOS](ios-configure-features.md)
+
+###### [FAQ et résolution des problèmes](ios-troubleshoot.md)
+
+###### [Confidentialité](ios-privacy.md)
 
 ##### [ Conditions de licence de l'application Microsoft Defender pour point de terminaison](mde-terms-mobile.md) 
 

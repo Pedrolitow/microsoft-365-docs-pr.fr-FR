@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui prend en charge la partie informatique pour vous.
 feedback_system: None
-ms.date: 7/28/2020
-ms.openlocfilehash: 683c45c4f88dbd45ed810fe16b4932b7f40e5c43
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.date: 10/20/2021
+ms.openlocfilehash: c1514be3cb1f8aa19a78a5a2c2ef37b80dada217
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191048"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555379"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -45,7 +45,7 @@ Lorsque vous souscrivez un abonnement à Microsoft 365 Business Premium, vous b�
 | Protéger contre les menaces | Microsoft 365 Business Premium contribue à vous protéger contre les menaces grâce à une protection avancée contre les menaces, ainsi qu’avec la protection avec les pièces jointes fiables et liens fiables. |
 | Sécuriser les données professionnelles | Vos données personnelles sont protégées sur les appareils personnels avec accès par code confidentiel, ainsi que par la limitation de la copie et de l’enregistrement. Vous pouvez également ajouter la protection des informations afin de vous assurer que seules les personnes autorisées peuvent accéder aux informations sensibles. |
 | Sécuriser vos appareils | Vous pouvez protéger vos fichiers de travail sur les appareils en restreignant l’accès mobile (par exemple, les actions Copier et Coller). Vous pouvez également effacer de façon sélective les données professionnelles provenant d’appareils mobiles inscrits en cas de perte ou de vol. |
-| Autres fonctionnalités de sécurité | Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles. Les fonctionnalités incluent Office 365 – Protection avancée contre les menaces, les stratégies de protection contre la perte de données (DLP), l’archivage Exchange Online, Azure Information Protection et Intune. |
+| Autres fonctionnalités de sécurité | Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles. Les fonctionnalités incluent Microsoft Defender pour Office 365 Plan 1, les stratégies de prévention des pertes de données (DLP), l'archivage Exchange Online, Azure Information Protection et Intune. |
 
 Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués. 
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a3c08ad2492437ec5b489e8bc8915ef4a402ba9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1906d9bbb7e36c95ed74c7eea2b66d3afb70e5a3
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196308"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555523"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -313,7 +313,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```powershell
    $p = Get-DkimSigningConfig -Identity contoso.com
@@ -393,7 +393,17 @@ Par exemple, l’enregistrement DKIM se présente comme suit :
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>Étapes suivantes : après avoir configuré DKIM pour Microsoft 365
 <a name="DKIMNextSteps"> </a>
 
-Bien que DKIM soit conçu pour empêcher l’usurpation d’identité, DKIM fonctionne mieux avec SPF et DMARC. Une fois que vous avez configuré DKIM, si vous n’avez pas encore configuré SPF, vous devez le faire. Pour une présentation rapide de SPF et pour le configurer rapidement, consultez [**Configurer SPF dans Microsoft 365 pour empêcher l’usurpation d’identité**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour une compréhension plus approfondie de la façon dont Microsoft 365 utilise SPF, ou pour la résolution des problèmes ou les déploiements non standard tels que les déploiements hybrides, commencez par [Comment Microsoft 365 utilise le SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité](how-office-365-uses-spf-to-prevent-spoofing.md). Consultez ensuite [**Utiliser DMARC pour valider les**](use-dmarc-to-validate-email.md)d’e-mail. [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) inclut la syntaxe et les champs d’en-tête utilisés par Microsoft 365 pour les vérifications DKIM.
+**Bien que DKIM soit conçu pour éviter l’usurpation, DKIM fonctionne mieux avec SPF et DMARC.**
+
+Une fois que vous avez configuré DKIM, si vous n'avez pas encore configuré SPF, vous devez le faire. Pour une introduction rapide à SPF et pour le configurer rapidement, voir [**Configurer SPF dans Microsoft 365 pour aider à prévenir l'usurpation d'identité**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour une compréhension plus approfondie de la façon dont Microsoft 365 utilise SPF, ou pour le dépannage ou les déploiements non standard tels que les déploiements hybrides, commencez par [Comment Microsoft 365 utilise Sender Policy Framework (SPF) pour empêcher l'usurpation d'identité](how-office-365-uses-spf-to-prevent-spoofing.md). 
+
+Ensuite, consultez [**Utiliser DMARC pour valider l'e-mail**](use-dmarc-to-validate-email.md). [Les en-têtes des messages anti-courrier indésirable](anti-spam-message-headers.md) incluent la syntaxe et les champs d’en-tête utilisés par Microsoft 365 pour les contrôles DKIM.
+
+**Ce test validera** que la configuration de signature DKIM a été correctement configurée et que les entrées DNS appropriées ont été publiées.
+
+<div class="nextstepaction">
+<p><a href="https://aka.ms/diagdkim" data-linktype="external">Exécuter des tests : DKIM</a></p>
+</div>
 
 ## <a name="more-information"></a>Plus d’informations
 

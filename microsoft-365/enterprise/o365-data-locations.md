@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Déterminer l’emplacement de stockage des données client Microsoft 365 dans le monde
-ms.openlocfilehash: 430ec1fe58f8b62ce558f2367e0dac67972e8868
-ms.sourcegitcommit: 1e990628d72b6d392500ea564859543e7c8bc632
+ms.openlocfilehash: adab62809b8533c255ce390cd40818b8373b3a6b
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60386241"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60552619"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Emplacement de stockage des données client de Microsoft 365
 
@@ -89,6 +89,10 @@ Consultez la page [Produits disponibles par région](https://go.microsoft.com/fw
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) est disponible pour Exchange Online, OneDrive for Entreprise, SharePoint Online et Teams.
 
+### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>Pourquoi est-ce que je vois mes demandes de service Microsoft 365 pour mes données au repos se connecter à des serveurs dans des pays en dehors de ma région ?
+
+À l'occasion, une demande client peut être traitée par des serveurs situés dans une région différente de celle où vos données sont stockées au repos. Cela peut se produire lorsque les décisions de routage réseau choisissent un serveur différent pour le traitement de la demande, mais dans ces cas, vos données ne sont pas déplacées vers un nouvel emplacement de repos.
+
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Quelles sont les exceptions pour les emplacements de données Intune ?
 
 Microsoft ne stocke pas les données clientes Intune au repos en dehors de la zone géographique indiquée. sauf si :
@@ -102,7 +106,7 @@ Microsoft ne stocke pas les données clientes Intune au repos en dehors de la zo
    
   - Version d’évaluation, bêta ou autres services de mise à jour, qui stockent généralement les données client aux États-Unis, mais peuvent les stocker dans le monde entier.
 
-Quoi qu’il en soit, Microsoft ne contrôle pas ou ne limite pas la géolocalisation à partir de laquelle les clients ou les utilisateurs finaux peuvent accéder aux données des clients. De même, lorsque les données des clients d'autres services sont ensuite intégrées dans Intune, les données des clients d'origine continueront d'être stockées sous réserve des engagements Geo propres à l'autre service (le cas échéant) ; seule la copie des données des clients intégrée dans Intune sera stockée dans le Geo indiqué pour Intune.  
+Quoi qu'il en soit, Microsoft ne contrôle ni ne limite les données géographiques à partir desquelles les clients ou leurs utilisateurs finaux peuvent accéder aux données des clients. De même, lorsque les données client d'autres services sont ensuite intégrées dans Intune, les données client d'origine continueront d'être stockées sous réserve des propres engagements géographiques de l'autre service (le cas échéant) ; seule la copie des données client intégrées dans Intune sera stockée dans le Geo indiqué pour Intune.  
 
 ## <a name="data-center-locations"></a>Emplacements des centres de données
 

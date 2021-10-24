@@ -4,6 +4,8 @@
   items:
     - name: Vue d’ensemble de Formations Microsoft Viva (préversion)
       href: overview-viva-learning.md
+    - name: Comprendre les termes et conditions
+      href: terms-and-conditions.md
 - name: Configuration et administration
   items:
     - name: Configurer dans le Centre d’administration Teams

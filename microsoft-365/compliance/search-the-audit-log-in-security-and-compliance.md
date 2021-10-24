@@ -21,12 +21,12 @@ description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 87df624f35231a43cd8d9e2d34912d2bc48a5252
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: 5840368c8d73bcafd486db9c3aa982fa03896b5e
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60478960"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60555031"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -544,6 +544,7 @@ Le tableau suivant décrit les activités liées à la façon dont les utilisate
 |Élément de liste mis à jour|ListItemUpdated|Un utilisateur a mis à jour un élément de liste SharePoint en modifiant une ou plusieurs propriétés.|
 |Colonne de site mise à jour|SiteColumnUpdated|Un utilisateur a mis à jour une colonne de site SharePoint en modifiant une ou plusieurs propriétés.|
 |Type de contenu de site mis à jour|SiteContentTypeUpdated|Un utilisateur a mis à jour un type de contenu de site en modifiant une ou plusieurs propriétés.|
+|Élément de liste consulté|ListItemViewed|Un utilisateur a affiché un élément de liste Microsoft Office SharePoint Online.|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>Activités de demande d’accès et de partage
@@ -589,10 +590,10 @@ Le tableau suivant décrit les activités de synchronisation dans SharePoint Onl
 |:-----|:-----|:-----|
 |Ordinateur autorisé à synchroniser des fichiers|ManagedSyncClientAllowed|Un utilisateur a réussi à établir une relation de synchronisation avec un site. La relation de synchronisation est établie, car l'ordinateur de l'utilisateur est membre d'un domaine qui a été ajouté à la liste des domaines (*liste des destinataires approuvés*) pouvant accéder aux bibliothèques de documents dans votre organisation. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
 |Ordinateur non autorisé à synchroniser des fichiers|UnmanagedSyncClientBlocked|L'utilisateur essaie d'établir une relation de synchronisation avec un site à partir d'un ordinateur qui n'est pas membre du domaine de votre organisation ou qui est membre d'un domaine qui n'a pas été ajouté à la liste des domaines (appelée *liste des destinataires approuvés*) qui peuvent accéder aux bibliothèques de documents de votre organisation. La relation de synchronisation n'est pas autorisée et l'ordinateur de l'utilisateur ne peut pas synchroniser, télécharger ou charger des fichiers sur une bibliothèque de documents.<br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
-|Fichiers téléchargés sur l’ordinateur|FileSyncDownloadedFull|Un utilisateur établit une relation de synchronisation et télécharge des fichiers pour la première fois sur son ordinateur à partir d’une bibliothèque de documents.|
-|Modifications du fichier téléchargées sur l’ordinateur|FileSyncDownloadedPartial|Un utilisateur télécharge des modifications apportées à des fichiers à partir d’une bibliothèque de documents. Cette activité indique que les modifications apportées à des fichiers dans la bibliothèque de documents ont été téléchargées sur l’ordinateur de l’utilisateur. Seules les modifications ont été téléchargées, car la bibliothèque de documents a été téléchargée précédemment par l’utilisateur (comme indiqué par l’activité **Fichiers téléchargés sur l’ordinateur**).|
-|Fichiers téléchargés dans la bibliothèque de documents|FileSyncUploadedFull|Un utilisateur établit une relation de synchronisation et charge des fichiers pour la première fois à partir de son ordinateur dans une bibliothèque de documents.|
-|Modifications du fichier téléchargées dans la bibliothèque de documents|FileSyncUploadedPartial|L'utilisateur réussit à télécharger les modifications apportées aux fichiers dans une bibliothèque de documents. Cet événement indique que toutes les modifications apportées à la version locale d'un fichier à partir d'une bibliothèque de documents sont téléchargées avec succès dans la bibliothèque de documents. Seules les modifications sont téléchargées car ces fichiers ont été précédemment téléchargés par l'utilisateur (comme indiqué par l'activité **Fichiers téléchargés vers la bibliothèque de documents**).|
+|Fichiers téléchargés sur l’ordinateur|FileSyncDownloadedFull|L’utilisateur télécharge un fichier sur son ordinateur à partir d’une bibliothèque de documents SharePoint ou de OneDrive Entreprise à l’aide de l’application de synchronisation OneDrive (OneDrive.exe).|
+|Modifications du fichier téléchargées sur l’ordinateur|FileSyncDownloadedPartial|Cet événement a été déprécié avec l’ancienne application de synchronisation OneDrive Entreprise (Groove.exe).|
+|Fichiers téléchargés dans la bibliothèque de documents|FileSyncUploadedFull|Un utilisateur charge un nouveau fichier ou les modifications apportées à un fichier dans SharePoint bibliothèque de documents ou de OneDrive Entreprise à l’aide de l’application de synchronisation OneDrive (OneDrive.exe).|
+|Modifications du fichier téléchargées dans la bibliothèque de documents|FileSyncUploadedPartial|Cet événement a été déprécié avec l’ancienne application de synchronisation OneDrive Entreprise (Groove.exe).|
 ||||
 
 ### <a name="site-permissions-activities"></a>Activités d’autorisations de site

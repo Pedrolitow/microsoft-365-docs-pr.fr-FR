@@ -22,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 15d2ac283f3687863355d44016a468f69d8efe7f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 10c2fdeae19746358745308d3b5171afb0647ebd
+ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156089"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60553351"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
-Vous pouvez facilement voir comment les personnes de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier les personnes qui utilisent beaucoup un service et qui atteignent les quotas, ou qui n’ont pas vraiment besoin d’une licence Microsoft 365. 
+Vous pouvez facilement voir comment les personnes de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier qui utilise beaucoup un service et atteint des quotas, ou qui n'a peut-être pas du tout besoin d'une licence Microsoft 365. Le modèle de licence perpétuelle ne sera pas inclus dans les rapports. 
   
 Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
   
@@ -160,7 +160,7 @@ Votre liste d’utilisateurs se présente comme suit :
 ![Rapports : liste d’utilisateurs rendus anonymes.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 
-Si vous souhaitez afficher des informations au niveau de l’utilisateur lorsque vous générez vos rapports, un administrateur général peut rapidement apporter cette modification dans le Centre d’administration.
+Si vous souhaitez afficher les informations au niveau de l'utilisateur lorsque vous générez vos rapports, un **administrateur général** peut rapidement effectuer cette modification dans le centre d'administration.
 
 Les rapports fournissent des informations sur les données d’utilisation de votre organisation. Par défaut, les rapports affichent des informations avec des noms identifiables pour les utilisateurs, les groupes et les sites. À compter du 1er septembre 2021, nous masquons les informations utilisateur par défaut pour tous les rapports dans le cadre de notre engagement continu à aider les entreprises à prendre en charge leurs lois locales sur la confidentialité.
 
@@ -185,9 +185,9 @@ Il faudra quelques minutes pour que ces modifications prennent effet sur les rap
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 
-Lorsque vous fermez un compte utilisateur, Microsoft supprime les données d’utilisation de celui-ci dans un délai de 30 jours. Cet utilisateur reste inclus dans les totaux des graphiques Activité (voir numéro 1) pour les périodes pendant lesquelles il était actif, mais n’apparaît pas dans la tableau Détails utilisateur (voir numéro 2).
+Lorsque vous fermez un compte utilisateur, Microsoft supprime les données d’utilisation de celui-ci dans un délai de 30 jours. Cet utilisateur sera toujours inclus dans les totaux du graphique d'activité pour les périodes au cours desquelles il a été actif, mais n'apparaîtra pas dans le tableau Détails de l'utilisateur.
   
-Toutefois, lorsque vous sélectionnez un jour particulier (voir numéro 3), jusqu’à 28 jours à partir de la date du jour, le rapport affiche l’utilisation de l’utilisateur pour ce jour dans la tableau Détails de l’utilisateur (voir numéro 2).
+Cependant, lorsque vous sélectionnez un jour particulier, jusqu'à 28 jours à compter de la date actuelle, le rapport affiche l'utilisation de l'utilisateur pour ce jour dans le tableau Détails de l'utilisateur.
   
 ## <a name="related-content"></a>Contenu associé
 
